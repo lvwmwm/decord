@@ -1,12 +1,12 @@
-// Module ID: 10122
-// Function ID: 10123
+// Module ID: 13946
+// Function ID: 13947
 // Name: ForwardFailedAlertModal
-// Dependencies: [19, 21, 10056, 10123, 1112, 2]
+// Dependencies: [19, 21, 8798, 13947, 1112, 2]
 // Exports: default
 
-// Module 10122 (ForwardFailedAlertModal)
+// Module 13946 (ForwardFailedAlertModal)
 import Fragment from "Fragment" /* 21 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 10056 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 8798 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

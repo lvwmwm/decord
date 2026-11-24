@@ -1,16 +1,16 @@
-// Module ID: 10960
-// Function ID: 10961
+// Module ID: 10245
+// Function ID: 10246
 // Name: useIsVideoMode
-// Dependencies: [6400, 4762, 2131, 4816, 5561, 504, 2]
+// Dependencies: [6687, 4766, 2131, 4820, 5565, 504, 2]
 // Exports: default, isVideoMode
 
-// Module 10960 (useIsVideoMode)
+// Module 10245 (useIsVideoMode)
 import get_initialized from "get initialized" /* 504 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
-import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
+import VoiceStateStore from "VoiceStateStore" /* 5565 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video_calls/native/useIsVideoMode.tsx");

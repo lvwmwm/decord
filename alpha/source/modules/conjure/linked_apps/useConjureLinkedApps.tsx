@@ -1,14 +1,14 @@
-// Module ID: 18328
-// Function ID: 18329
+// Module ID: 18367
+// Function ID: 18368
 // Name: useConjureLinkedApps
-// Dependencies: [5, 32, 19, 6621, 504, 18329, 1112, 4190, 2]
+// Dependencies: [5, 32, 19, 6808, 504, 18368, 1112, 4192, 2]
 // Exports: default
 
-// Module 18328 (useConjureLinkedApps)
+// Module 18367 (useConjureLinkedApps)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6621 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,10 +73,10 @@ export default function useConjureLinkedApps(projectId, arg1) {
   let items1 = [ConjureProjectStore];
   const items2 = [projectId];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
-    const f132445 = (id) => id.id;
+    const f132651 = (id) => id.id;
     const items = [...ConjureProjectStore.getOwnedProjects(), ...ConjureProjectStore.getSharedWithMeProjects(), ...ConjureProjectStore.getRailProjects()];
-    const items1 = [...new Set(items.map(f132445))];
-    new Set(items.map(f132445));
+    const items1 = [...new Set(items.map(f132651))];
+    new Set(items.map(f132651));
     const found = items1.filter((item) => item !== current);
     return found.sort();
   }, items2);
@@ -475,7 +475,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
   if (name == null) {
     let intl = tmp29(tmp30[6]).intl;
     let obj5 = { projectId };
-    name = intl.formatToPlainString(require("module_4190").HHCa93, obj5);
+    name = intl.formatToPlainString(require("module_4192").HHCa93, obj5);
   }
   const obj8 = { name, project: stateFromStores, live: null, hasPreview: null, callers, targets: first1, projects: stateFromStoresObject, names: memo, failed: first2, saved: first3, setBuild: callback, remove: callback2 };
   if (stateFromStores == null) {

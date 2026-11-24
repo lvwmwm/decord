@@ -1,22 +1,22 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18023
+// Function ID: 18024
 // Name: VoicePanelDockGlow
-// Dependencies: [32, 19, 17, 11768, 21, 11749, 1653, 5123, 5477, 575, 17985, 7865, 10598, 13309, 13308, 13311, 4910, 11775, 5468, 2]
+// Dependencies: [32, 19, 17, 11658, 21, 11634, 1653, 5127, 5481, 575, 18024, 7813, 8478, 13235, 13234, 13237, 4914, 11665, 5472, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
-// Module 17984 (VoicePanelDockGlow)
+// Module 18023 (VoicePanelDockGlow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import ColorUtils from "ColorUtils" /* 4910 */;
-import timing_timing from "timing/timing" /* 5123 */;
-import inlineStyles from "inlineStyles" /* 7865 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10598 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
-import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 13308 */;
-import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13309 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13311 */;
+import ColorUtils from "ColorUtils" /* 4914 */;
+import timing_timing from "timing/timing" /* 5127 */;
+import inlineStyles from "inlineStyles" /* 7813 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8478 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11634 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11658 */;
+import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 13234 */;
+import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13235 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13237 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,7 +30,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 const _modDef1653 = tmp(1653);
-const LinearGradientDefault = tmp(5468);
+const LinearGradientDefault = tmp(5472);
 const StyleSheet = react_native.StyleSheet;
 const getDockInset = VoicePanelDockConstants.getDockInset;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -329,7 +329,7 @@ export function VoicePanelDockBottomLine(micLive) {
   micLive = micLive.micLive;
   const context = react.useContext(VoicePanelStateContextDefault);
   ({ dockContentSwap, dockMinimizeProgress, dockPressProgress, isDockConnected, isDockExpanding, sheetExitProgress, wrapperDimensions, dockSheetWidth } = context);
-  let obj = token(5477);
+  let obj = token(5481);
   token = obj.useToken(nativeDefault.colors.ICON_VOICE_SPEAKING);
   items = [token];
   const memo = react.useMemo(() => {
@@ -341,12 +341,12 @@ export function VoicePanelDockBottomLine(micLive) {
     items[2] = obj2.hexWithOpacity(token, 0);
     return items;
   }, items);
-  let obj2 = token(13309);
+  let obj2 = token(13235);
   const voicePanelDockGlowLevelProps = obj2.useVoicePanelDockGlowLevelProps();
   const items1 = [closure_21, getDockInset, dockPressProgress, isDockConnected, wrapperDimensions, , , , , , , ];
   const useAnimatedStyle = token(1653).useAnimatedStyle;
   const tmp7 = token(1653);
-  items1[5] = token(11775).getDockRowOpacity;
+  items1[5] = token(11665).getDockRowOpacity;
   items1[6] = dockMinimizeProgress;
   items1[7] = isDockExpanding;
   items1[8] = dockContentSwap;

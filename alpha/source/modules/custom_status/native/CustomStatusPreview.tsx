@@ -1,19 +1,19 @@
-// Module ID: 14197
-// Function ID: 14198
+// Module ID: 9662
+// Function ID: 9663
 // Name: CustomStatusPreview
-// Dependencies: [19, 17, 7564, 21, 4913, 575, 8072, 8198, 8180, 8197, 8191, 5098, 5127, 14198, 2119, 4974, 8202, 8212, 9050, 9051, 14200, 9013, 2]
+// Dependencies: [19, 17, 7431, 21, 4917, 575, 6036, 9362, 9344, 9346, 9348, 5102, 5131, 9663, 2119, 4978, 9369, 9379, 9384, 9386, 9666, 9329, 2]
 // Exports: default
 
-// Module 14197 (CustomStatusPreview)
+// Module 9662 (CustomStatusPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ChatInputUtils from "ChatInputUtils" /* 5098 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ChatInputUtils from "ChatInputUtils" /* 5102 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7564 */;
+import Constants from "Constants" /* 7431 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -72,7 +72,7 @@ export default function CustomStatusPreview(user) {
     obj.dismissKeyboard();
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji };
-    obj2.openLazy(asyncRequire(14198, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(9663, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj3, "stack");
   }, items);
   let obj2 = { theme, primaryColor, secondaryColor, children: closure_8(View, obj3) };
   obj3 = { style: tmp7.profileContainer, children: items1 };

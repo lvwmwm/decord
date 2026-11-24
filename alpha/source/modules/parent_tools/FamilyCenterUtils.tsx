@@ -1,16 +1,16 @@
-// Module ID: 9139
-// Function ID: 9140
+// Module ID: 8077
+// Function ID: 8078
 // Name: FamilyCenterUtils
-// Dependencies: [8335, 8336, 1112, 2824, 2168, 8337, 2]
+// Dependencies: [8071, 8072, 1112, 2824, 2168, 8073, 2]
 // Exports: formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 9139 (FamilyCenterUtils)
+// Module 8077 (FamilyCenterUtils)
 import intl5 from "intl" /* 1112 */;
 import _modDef2168 from "module_2168" /* 2168 */;
 import _modDef2824 from "module_2824" /* 2824 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8337 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8335 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8336 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8073 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8071 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8072 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f94536 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f92349 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 ({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: hasOwnProperty, FamilyCenterFailureCode: metroRequire, TeenActionDisplayType: metroImportDefault, UserLinkStatus: metroImportAll, UserLinkType: c9 } = FamilyCenterConstants);
 let c10 = 86400;
 let c11 = 172800;
@@ -134,8 +134,8 @@ export function isPurchase(action) {
 export function isGift(action) {
   return action.display_type === metroImportDefault.GIFTS;
 }
-export function getFailureCodeForAPIError(arg0) {
-  let GENERIC_ERROR = hasOwnProperty[arg0.code];
+export function getFailureCodeForAPIError(code) {
+  let GENERIC_ERROR = hasOwnProperty[code.code];
   if (GENERIC_ERROR == null) {
     GENERIC_ERROR = metroRequire.GENERIC_ERROR;
   }
@@ -181,11 +181,11 @@ export function getOrFetchLinkedUsers() {
 }
 export function hasActiveParentLinks() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f94536);
+  return values.some(f92349);
 }
 export function isParentallyControlled() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f94536);
+  return values.some(f92349);
 }
 export function getTopUserOrGuildDescription(dms_sent, call_count) {
   let formatToPlainStringResult;

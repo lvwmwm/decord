@@ -1,26 +1,26 @@
-// Module ID: 17126
-// Function ID: 17127
+// Module ID: 17160
+// Function ID: 17161
 // Name: OrbsFlowTestModal
-// Dependencies: [32, 19, 17, 21, 8638, 7092, 8561, 10538, 4913, 575, 5929, 5504, 17127, 5127, 9445, 2119, 1112, 7221, 5511, 9434, 9444, 5488, 5491, 17130, 2]
+// Dependencies: [32, 19, 17, 21, 8906, 7229, 8863, 11273, 4917, 575, 5989, 5508, 17161, 5131, 9317, 2119, 1112, 7148, 5515, 9303, 9313, 5492, 5495, 17164, 2]
 
-// Module 17126 (OrbsFlowTestModal)
+// Module 17160 (OrbsFlowTestModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5488 */;
-import LayerScope2 from "LayerScope" /* 5491 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import Stack_Stack from "Stack/Stack" /* 5929 */;
-import HeaderShared from "HeaderShared" /* 8561 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10538 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17127 */;
-import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 17130 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5492 */;
+import LayerScope2 from "LayerScope" /* 5495 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import Stack_Stack from "Stack/Stack" /* 5989 */;
+import HeaderShared from "HeaderShared" /* 8863 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11273 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17161 */;
+import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 17164 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 8638 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import NativeStackView from "NativeStackView" /* 8906 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

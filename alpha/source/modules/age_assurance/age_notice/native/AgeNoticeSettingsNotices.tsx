@@ -1,35 +1,35 @@
-// Module ID: 16117
-// Function ID: 16118
+// Module ID: 16150
+// Function ID: 16151
 // Name: AgeNoticeSettingsNotices
-// Dependencies: [19, 17, 1386, 6422, 6504, 21, 4913, 575, 15984, 10526, 7762, 1112, 3476, 16024, 7793, 6414, 6423, 5575, 6411, 16118, 10192, 2]
+// Dependencies: [19, 17, 1386, 6710, 7707, 21, 4917, 575, 16017, 12007, 7808, 1112, 3478, 16057, 7737, 6702, 6711, 5579, 6699, 16151, 8069, 2]
 // Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled, useMessageRequestsNoticeVariant
 
-// Module 16117 (AgeNoticeSettingsNotices)
+// Module 16150 (AgeNoticeSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3476 from "module_3476" /* 3476 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6414 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6422 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7793 */;
-import useUserIsTeen from "useUserIsTeen" /* 10192 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10526 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 15984 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16024 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16118 */;
+import _modDef3478 from "module_3478" /* 3478 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5579 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6699 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6702 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6710 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7737 */;
+import useUserIsTeen from "useUserIsTeen" /* 8069 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 12007 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16017 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16057 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16151 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import Constants from "Constants" /* 6504 */;
-import createStyles from "createStyles" /* 4913 */;
+import Constants from "Constants" /* 7707 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const AgeNoticeExperiment = tmp(6423);
+const AgeNoticeExperiment = tmp(6711);
 function TeenNotice(noticeType) {
   let intl;
   noticeType = noticeType.noticeType;
@@ -48,13 +48,13 @@ function TeenNotice(noticeType) {
     const result1 = obj2.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.LEARN_MORE);
   }, items1);
   let obj2 = { type: "info", message: intl.format(message, { handleOnAgeGatedContentHook: callback }), role: "status" };
-  const InlineNotice = noticeType(7762).InlineNotice;
+  const InlineNotice = noticeType(7808).InlineNotice;
   intl = noticeType(1112).intl;
   return <View style={tmp.container}>{null}</View>;
 }
 class MessageRequestsTeenNotice {
   constructor() {
-    return <TeenNotice message={_modDef3476["5KHq55"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />;
+    return <TeenNotice message={_modDef3478["5KHq55"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />;
   }
 }
 function UnconfirmedNotice(message) {
@@ -85,7 +85,7 @@ function UnconfirmedNotice(message) {
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
   }, items2);
   let obj2 = { type: "info", message: intl.format(message, { handleOnAgeGatedContentHook: callback }), role: "status", action: obj3 };
-  const InlineNotice = AGE_CONFIRMATION_NOTICE(7762).InlineNotice;
+  const InlineNotice = AGE_CONFIRMATION_NOTICE(7808).InlineNotice;
   intl = AGE_CONFIRMATION_NOTICE(1112).intl;
   obj3 = { text: intl2.string(AGE_CONFIRMATION_NOTICE(1112).t.FDSSia), onPress: callback1 };
   intl2 = AGE_CONFIRMATION_NOTICE(1112).intl;
@@ -93,7 +93,7 @@ function UnconfirmedNotice(message) {
 }
 class MessageRequestsUnconfirmedNotice {
   constructor() {
-    return <UnconfirmedNotice message={_modDef3476.tGsCdS} />;
+    return <UnconfirmedNotice message={_modDef3478.tGsCdS} />;
   }
 }
 const View = react_native.View;
@@ -106,11 +106,11 @@ let closure_10 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/age_assurance/age_notice/native/AgeNoticeSettingsNotices.tsx");
 
 export function ContentFiltersTeenNotice() {
-  return <TeenNotice message={_modDef3476.HBnyJM} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />;
+  return <TeenNotice message={_modDef3478.HBnyJM} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />;
 }
 export { MessageRequestsTeenNotice };
 export function ContentFiltersUnconfirmedNotice() {
-  return <UnconfirmedNotice message={_modDef3476.HGJo1F} />;
+  return <UnconfirmedNotice message={_modDef3478.HGJo1F} />;
 }
 export { MessageRequestsUnconfirmedNotice };
 export function useIsEnabled() {

@@ -1,12 +1,12 @@
-// Module ID: 15827
-// Function ID: 15828
+// Module ID: 15855
+// Function ID: 15856
 // Name: ProfileCustomizationSetting
-// Dependencies: [1071, 11937, 1112, 15828, 2]
+// Dependencies: [1071, 11815, 1112, 15856, 2]
 
-// Module 15827 (ProfileCustomizationSetting)
+// Module 15855 (ProfileCustomizationSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ const obj = {
   screen: {
     route: UserSettingsSections.PROFILE_CUSTOMIZATION,
     getComponent() {
-      return require("ProfileCustomizationSettingScreen").default;
+      return require("ProfileCustomizationSettingScreenExperimentWrapper").default;
     }
   }
 };

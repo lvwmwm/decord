@@ -1,21 +1,21 @@
-// Module ID: 8401
-// Function ID: 8402
+// Module ID: 8221
+// Function ID: 8222
 // Name: AdDeliveryStore
-// Dependencies: [1088, 8402, 559, 6565, 504, 6564, 572, 2]
+// Dependencies: [1088, 8222, 559, 6752, 504, 6751, 572, 2]
 
-// Module 8401 (AdDeliveryStore)
+// Module 8221 (AdDeliveryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import AdPlacement from "AdPlacement" /* 6564 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 8402 */;
+import AdPlacement from "AdPlacement" /* 6751 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 8222 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const AdCreativeType = tmp(6565);
+const AdCreativeType = tmp(6752);
 let closure_9 = [];
 let closure_10 = 30 * DurationsDefault.Millis.SECOND;
 let closure_11 = 10 * DurationsDefault.Millis.MINUTE;
@@ -54,8 +54,8 @@ class AdDeliveryStore extends Store {
     }
     return tmp3;
   }
-  getAdDecisionsForPlacement(MOBILE_HOME_DOCK_AREA) {
-    let value = map1.get(MOBILE_HOME_DOCK_AREA);
+  getAdDecisionsForPlacement(QUEST_HOME_BANNER_DESKTOP) {
+    let value = map1.get(QUEST_HOME_BANNER_DESKTOP);
     if (value == null) {
       value = closure_9;
     }

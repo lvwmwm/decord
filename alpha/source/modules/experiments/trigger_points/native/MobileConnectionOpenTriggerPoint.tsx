@@ -1,11 +1,11 @@
-// Module ID: 14975
-// Function ID: 14976
+// Module ID: 15014
+// Function ID: 15015
 // Name: MobileConnectionOpenTriggerPoint
-// Dependencies: [5531, 9239, 2]
+// Dependencies: [5535, 9119, 2]
 
-// Module 14975 (MobileConnectionOpenTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 5531 */;
-import Helpers from "Helpers" /* 9239 */;
+// Module 15014 (MobileConnectionOpenTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 5535 */;
+import Helpers from "Helpers" /* 9119 */;
 import size from "module_2" /* 2 */;
 
 const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration([], ExperimentConstants.CommonTriggerPoints.CONNECTION_OPEN_MOBILE, { location: "app open mobile" });

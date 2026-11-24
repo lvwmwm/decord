@@ -1,15 +1,15 @@
-// Module ID: 10448
-// Function ID: 10449
+// Module ID: 9916
+// Function ID: 9917
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [4855, 1386, 5937, 2117, 5565, 1112, 5529, 10449, 7737, 8250, 2]
+// Dependencies: [4859, 1386, 6947, 2117, 5569, 1112, 5533, 9917, 7714, 8103, 2]
 
-// Module 10448 (application_commands/ApplicationCommandBuiltIns)
+// Module 9916 (application_commands/ApplicationCommandBuiltIns)
 import Server from "Server" /* 2117 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5565 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8250 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5569 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6947 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8103 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = {
     let intl4;
     channel = channel.channel;
     if (null != channel) {
-      const obj4 = channel(5529);
+      const obj4 = channel(5533);
       const channelName = obj4.computeChannelName(channel, UserStore, RelationshipStore);
       const intl5 = channel(1112).intl;
       const obj2 = { name: channelName };
@@ -69,8 +69,8 @@ let obj = {
             }
           }
       };
-      const openLeaveGroupDMConfirmationAlert = channel(10449).openLeaveGroupDMConfirmationAlert;
-      channel(10449);
+      const openLeaveGroupDMConfirmationAlert = channel(9917).openLeaveGroupDMConfirmationAlert;
+      channel(9917);
       intl3 = tmp5(1112).intl;
       intl4 = tmp5(1112).intl;
       const result = openLeaveGroupDMConfirmationAlert(obj6);

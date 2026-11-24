@@ -27,7 +27,7 @@ export function startIdleSpan(mcpServerSpanConfig) {
   let closure_12;
   let closure_13;
   let trimIdleSpanEndTimestamp;
-  const f120619 = () => {
+  const f120807 = () => {
     const tmp = !c2 && 0 === map.size && closure_4;
     if (tmp) {
       idleTimeout = "idleTimeout";
@@ -318,7 +318,7 @@ export function startIdleSpan(mcpServerSpanConfig) {
               timeout = undefined;
             }
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f120619, tmp6);
+            timeout = setTimeout(f120807, tmp6);
           }
         }
       }));
@@ -333,7 +333,7 @@ export function startIdleSpan(mcpServerSpanConfig) {
             timeout = undefined;
           }
           const _setTimeout = setTimeout;
-          timeout = setTimeout(f120619, idleTimeout);
+          timeout = setTimeout(f120807, idleTimeout);
           if (map.size) {
             const _setTimeout2 = setTimeout;
             timeout = setTimeout(() => {
@@ -354,7 +354,7 @@ export function startIdleSpan(mcpServerSpanConfig) {
           _require = undefined;
         }
         let _setTimeout = setTimeout;
-        _require = setTimeout(f120619, idleTimeout);
+        _require = setTimeout(f120807, idleTimeout);
       }
       let _setTimeout2 = setTimeout;
       const timerId = setTimeout(() => {

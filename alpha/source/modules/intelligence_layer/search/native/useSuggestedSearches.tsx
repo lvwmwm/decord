@@ -1,76 +1,39 @@
-// Module ID: 18728
-// Function ID: 18729
+// Module ID: 18769
+// Function ID: 18770
 // Name: useSuggestedSearches
-// Dependencies: [19, 13198, 13199, 13237, 504, 13221, 13219, 2]
+// Dependencies: [19, 18770, 13141, 13139, 2]
 // Exports: useSuggestedSearches
 
-// Module 18728 (useSuggestedSearches)
-import SuggestedSearchStore2 from "SuggestedSearchStore" /* 13198 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13199 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13219 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13221 */;
+// Module 18769 (useSuggestedSearches)
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13139 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13141 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const SuggestedSearchStore = SuggestedSearchStore2;
 let _require, dependencyMap;
 
-const EMPTY_SUGGESTED_SEARCHES = SuggestedSearchStore2.EMPTY_SUGGESTED_SEARCHES;
-let closure_6 = SmartSearchConstants.SUGGESTED_SEARCHES_WINDOW_SIZE;
 let result = size.fileFinishedImporting("modules/intelligence_layer/search/native/useSuggestedSearches.tsx");
 
-export function useSuggestedSearches(memo1, source) {
+export function useSuggestedSearches(smartSearchQuery, source) {
   let closure_2;
-  let smartSearchQuery;
-  let suggestedSearches;
-  _require = memo1;
+  _require = smartSearchQuery;
   source = source.source;
   const trackShown = source.trackShown;
   let tmp = undefined !== trackShown && trackShown;
   dependencyMap = tmp;
-  let tmp2 = _require;
-  let guildId;
-  const useIsNlpSearchEnabled = require("SmartSearchExperiments").useIsNlpSearchEnabled;
-  const tmp4 = require("SmartSearchExperiments");
-  if (memo1 != null) {
-    guildId = memo1.guildId;
-  }
-  const isNlpSearchEnabled = useIsNlpSearchEnabled(guildId, source);
-  const items = [suggestedSearches];
-  const items1 = [memo1, isNlpSearchEnabled];
-  const tmp2Result = tmp2(504);
-  suggestedSearches = tmp2Result.useStateFromStoresArray(items, () => {
-    if (null != smartSearchQuery) {
-      let nextSuggestions;
-      const tmp2 = isNlpSearchEnabled;
-      if (tmp2) {
-        nextSuggestions = SuggestedSearchStore.getNextSuggestions(tmp, closure_6);
-      }
-      return nextSuggestions;
-    }
-    nextSuggestions = EMPTY_SUGGESTED_SEARCHES;
-  }, items1);
-  const items2 = [suggestedSearches];
-  const items3 = [memo1, isNlpSearchEnabled];
-  const items4 = [suggestedSearches, memo1, source, tmp];
-  const tmp2Result2 = tmp2(504);
-  const isLoadingSuggestedSearches = tmp2Result2.useStateFromStores(items2, () => {
-    let tmp2 = null == smartSearchQuery;
-    const tmp = smartSearchQuery;
-    if (!tmp2) {
-      tmp2 = !isNlpSearchEnabled;
-    }
-    const result = !tmp2 && SuggestedSearchStore.isLoadingSuggestedSearches(tmp);
-    return result;
-  }, items3);
-  const effect = isNlpSearchEnabled.useEffect(() => {
+  let obj = require("search/useSuggestedSearches");
+  const suggestedSearches1 = obj.useSuggestedSearches(smartSearchQuery, { source });
+  const suggestedSearches = suggestedSearches1.suggestedSearches;
+  const items = [suggestedSearches, smartSearchQuery, source, tmp];
+  const isLoadingSuggestedSearches = suggestedSearches1.isLoadingSuggestedSearches;
+  const effect = suggestedSearches.useEffect(() => {
     const tmp = closure_2 && null != smartSearchQuery && 0 !== suggestedSearches.length;
     if (tmp) {
       const obj2 = { smartSearchQuery, suggestedSearches, suggestionSource: source };
       const obj = SmartSearchAnalyticsManagerDefault;
       const result = obj.trackSuggestedSearchesShownDeduped(obj2, SearchSessionAnalyticsManagerDefault);
     }
-  }, items4);
+  }, items);
   return { suggestedSearches, isLoadingSuggestedSearches };
 }

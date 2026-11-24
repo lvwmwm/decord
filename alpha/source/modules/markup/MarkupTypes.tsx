@@ -1,9 +1,9 @@
-// Module ID: 5934
-// Function ID: 5935
+// Module ID: 5994
+// Function ID: 5995
 // Name: MarkupTypes
 // Dependencies: [2]
 
-// Module 5934 (MarkupTypes)
+// Module 5994 (MarkupTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup/MarkupTypes.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 11011
+// Function ID: 11012
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 8137, 1386, 1112, 2920, 9483, 504, 4945, 4746, 8070, 8142, 2]
+// Dependencies: [19, 6257, 1386, 1112, 2920, 11012, 504, 4949, 4750, 6012, 6262, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, useGiftingBadgeCoachmarkVariant
 
-// Module 9482 (GiftingBadgesUtils)
+// Module 11011 (GiftingBadgesUtils)
 import intl2 from "intl" /* 1112 */;
 import _modDef2920 from "module_2920" /* 2920 */;
-import BadgeId from "BadgeId" /* 8070 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8137 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
+import BadgeId from "BadgeId" /* 6012 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 6257 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 6262 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;

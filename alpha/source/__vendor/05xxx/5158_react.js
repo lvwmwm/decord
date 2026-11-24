@@ -8,5 +8,5 @@ import react from "react" /* 19 */;
 
 const context = react.createContext(null);
 
-export const BottomSheetModalContext = context;
-export const BottomSheetModalProvider = context.Provider;
+export const BottomSheetInternalContext = context;
+export const BottomSheetInternalProvider = context.Provider;

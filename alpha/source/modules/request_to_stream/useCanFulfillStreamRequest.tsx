@@ -1,19 +1,19 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12153
+// Function ID: 12154
 // Name: useCanFulfillStreamRequest
-// Dependencies: [2139, 6400, 502, 4762, 4784, 4845, 5651, 5654, 10932, 7074, 1378, 8529, 5652, 504, 2]
+// Dependencies: [2139, 6687, 502, 4766, 4788, 4849, 5888, 5725, 10209, 7635, 1378, 12130, 5889, 504, 2]
 // Exports: default
 
-// Module 12211 (useCanFulfillStreamRequest)
-import ActivityTypes from "ActivityTypes" /* 5652 */;
+// Module 12153 (useCanFulfillStreamRequest)
+import ActivityTypes from "ActivityTypes" /* 5889 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import PresenceStore from "PresenceStore" /* 5651 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
+import PresenceStore from "PresenceStore" /* 5888 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,19 +53,19 @@ function canFulfillStreamRequest(channel_id, flag, ApplicationStreamingStore, Ch
     const application = channel_id.application;
     id = undefined;
     const tmp16 = null != obj.getCurrentUserActiveStream();
-    const obj8 = flag(10932);
+    const obj8 = flag(10209);
     const videoPermission = obj8.getVideoPermission(channel);
     if (application != null) {
       id = application.id;
     }
-    tmp17(7074).ActivityGamePlatforms.DESKTOP;
+    tmp17(7635).ActivityGamePlatforms.DESKTOP;
     const tmp17Result = flag(1378);
     const isAndroidResult = tmp17Result.isAndroid();
-    const ActivityGamePlatforms = tmp17(7074).ActivityGamePlatforms;
+    const ActivityGamePlatforms = tmp17(7635).ActivityGamePlatforms;
     dependencyMap = isAndroidResult ? ActivityGamePlatforms.ANDROID : ActivityGamePlatforms.IOS;
     let tmp4 = id;
     const obj5 = { guildId: channel.guild_id, location: "canFulfillStreamRequest" };
-    const obj6 = id(8529);
+    const obj6 = id(12130);
     const tmp5 = obj6.getConfig(obj5).enabled && null == id;
     if (null == id) {
       if (!tmp5) {

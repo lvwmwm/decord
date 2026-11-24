@@ -1,15 +1,15 @@
-// Module ID: 8517
-// Function ID: 8518
+// Module ID: 8041
+// Function ID: 8042
 // Name: ApplicationCommandStore
-// Dependencies: [32, 6640, 4816, 8314, 504, 572, 2]
+// Dependencies: [32, 6826, 4820, 8042, 504, 572, 2]
 
-// Module 8517 (ApplicationCommandStore)
+// Module 8041 (ApplicationCommandStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8314 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8042 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6640 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6826 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, currentSidebarChannelId;

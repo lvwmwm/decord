@@ -1,22 +1,22 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 14506
+// Function ID: 14507
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4914, 21, 4913, 575, 504, 4910, 5504, 1112, 7322, 4776, 2]
+// Dependencies: [19, 17, 4918, 21, 4917, 575, 504, 4914, 5508, 1112, 6926, 4780, 2]
 // Exports: default
 
-// Module 10354 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 14506 (InAppReportsGuildDiscoveryPreviewElement)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
-import ColorUtils from "ColorUtils" /* 4910 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import GuildIconDefault from "GuildIcon" /* 7322 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4780 */;
+import ColorUtils from "ColorUtils" /* 4914 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import GuildIconDefault from "GuildIcon" /* 6926 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

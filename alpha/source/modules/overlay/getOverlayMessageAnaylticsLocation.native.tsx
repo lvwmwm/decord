@@ -1,10 +1,10 @@
-// Module ID: 8528
-// Function ID: 8529
+// Module ID: 6666
+// Function ID: 6667
 // Name: getOverlayMessageAnaylticsLocation
 // Dependencies: [2]
 // Exports: default
 
-// Module 8528 (getOverlayMessageAnaylticsLocation)
+// Module 6666 (getOverlayMessageAnaylticsLocation)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/overlay/getOverlayMessageAnaylticsLocation.native.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 8191
-// Function ID: 8192
+// Module ID: 9348
+// Function ID: 9349
 // Name: useUserProfileColors
-// Dependencies: [4914, 1082, 5122, 7541, 504, 5477, 575, 8182, 1089, 2]
+// Dependencies: [4918, 1082, 5126, 7408, 504, 5481, 575, 9273, 1089, 2]
 // Exports: useUserProfileColors
 
-// Module 8191 (useUserProfileColors)
+// Module 9348 (useUserProfileColors)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
-import useThemeDefault from "useTheme" /* 5122 */;
-import useToken from "useToken" /* 5477 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7541 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8182 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import useThemeDefault from "useTheme" /* 5126 */;
+import useToken from "useToken" /* 5481 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7408 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 9273 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;

@@ -1,10 +1,10 @@
-// Module ID: 18567
-// Function ID: 18568
+// Module ID: 18608
+// Function ID: 18609
 // Name: conjurePlanFormat
 // Dependencies: [1071, 2117, 2]
 // Exports: conjurePlanCommandPrefix, conjurePlanPermissionLabel, formatConjurePlanRequirementLabel
 
-// Module 18567 (conjurePlanFormat)
+// Module 18608 (conjurePlanFormat)
 import Constants from "Constants" /* 1071 */;
 import Server from "Server" /* 2117 */;
 import size from "module_2" /* 2 */;

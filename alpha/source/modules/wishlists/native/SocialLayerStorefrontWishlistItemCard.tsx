@@ -1,17 +1,17 @@
-// Module ID: 13936
-// Function ID: 13937
+// Module ID: 11522
+// Function ID: 11523
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [19, 2164, 13934, 21, 4913, 575, 504, 9035, 5600, 8981, 2]
+// Dependencies: [19, 2164, 11520, 21, 4917, 575, 504, 11027, 5604, 11021, 2]
 // Exports: default
 
-// Module 13936 (SocialLayerStorefrontWishlistItemCard)
+// Module 11522 (SocialLayerStorefrontWishlistItemCard)
 import nativeDefault from "native" /* 575 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9035 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 11027 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
-import SentGiftsStore from "SentGiftsStore" /* 13934 */;
+import SentGiftsStore from "SentGiftsStore" /* 11520 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -20,7 +20,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp4;
-const FastImageDefault = tmp4(5600);
+const FastImageDefault = tmp4(5604);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { applicationIcon: size, nestedCard: obj2 };

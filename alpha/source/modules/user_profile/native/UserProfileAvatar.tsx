@@ -1,16 +1,16 @@
-// Module ID: 8212
-// Function ID: 8213
+// Module ID: 9379
+// Function ID: 9380
 // Name: UserProfileAvatar
-// Dependencies: [19, 17, 8069, 7564, 21, 8197, 8213, 8135, 8216, 1112, 2]
+// Dependencies: [19, 17, 6011, 7431, 21, 9346, 9380, 6255, 9383, 1112, 2]
 // Exports: OpenableUserProfileAvatar
 
-// Module 8212 (UserProfileAvatar)
+// Module 9379 (UserProfileAvatar)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 7564 */;
-import Constants2 from "Constants" /* 8069 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8197 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8213 */;
-import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 8216 */;
+import Constants from "Constants" /* 6011 */;
+import Constants2 from "Constants" /* 7431 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9346 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 9380 */;
+import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 9383 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
@@ -47,8 +47,8 @@ class UserProfileAvatar {
   }
 }
 const View = react_native.View;
-const TrackUserProfileActions = Constants2.TrackUserProfileActions;
-const AVATAR_SIZE_VARIANT = Constants.AVATAR_SIZE_VARIANT;
+const TrackUserProfileActions = Constants.TrackUserProfileActions;
+const AVATAR_SIZE_VARIANT = Constants2.AVATAR_SIZE_VARIANT;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAvatar.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 18907
-// Function ID: 18908
+// Module ID: 18949
+// Function ID: 18950
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1386, 4759, 21, 4913, 504, 2173, 1112, 3248, 9087, 18908, 2]
+// Dependencies: [19, 17, 1386, 4763, 21, 4917, 504, 2173, 1112, 3250, 9427, 18950, 2]
 // Exports: default
 
-// Module 18907 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 18949 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 18908 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 18950 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -45,7 +45,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const result = obj2.canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1112).intl;
   const string = intl.string;
-  const tmp6 = markAsDismissed(3248);
+  const tmp6 = markAsDismissed(3250);
   const tmp4 = markAsDismissed;
   if (result) {
     stringResult = string(tmp6.h6sykk);
@@ -55,7 +55,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   dependencyMap = stringResult;
   const intl2 = tmp(1112).intl;
   const string2 = intl2.string;
-  const tmp4Result = tmp4(3248);
+  const tmp4Result = tmp4(3250);
   if (result) {
     string2Result = string2(tmp4Result.TyUdka);
   } else {
@@ -77,7 +77,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return closure_1_7(closure_1_9, {});
     }
   }), items2);
-  const tmpResult = visible(9087);
+  const tmpResult = visible(9427);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return null;
 };

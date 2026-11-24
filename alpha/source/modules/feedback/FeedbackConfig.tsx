@@ -1,19 +1,17 @@
-// Module ID: 19499
-// Function ID: 19500
+// Module ID: 19541
+// Function ID: 19542
 // Name: FeedbackConfig
-// Dependencies: [5654, 10553, 8038, 19500, 2]
+// Dependencies: [5725, 12019, 7436, 2]
 
-// Module 19499 (FeedbackConfig)
-import HotspotStore from "HotspotStore" /* 8038 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 19500 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
-import Constants from "Constants" /* 10553 */;
+// Module 19541 (FeedbackConfig)
+import HotspotStore from "HotspotStore" /* 7436 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
+import Constants from "Constants" /* 12019 */;
 import size from "module_2" /* 2 */;
 
 let FeedbackGroup;
 let FeedbackType;
 let items;
-let items1;
 ({ FeedbackGroup, FeedbackType } = Constants);
 let obj = { chance: 0.2, cooldown: 86400000 };
 const obj2 = {};
@@ -43,15 +41,9 @@ obj2[FeedbackType.ACTIVITY] = { cooldown: 0, chance: 0.5, group: FeedbackGroup.A
 ({ cooldown: 0, chance: 0.5, group: FeedbackGroup.AV, hotspot: HotspotStore.HotspotLocations.POST_ACTIVITY_FEEDBACK, storageKey: "lastActivityFeedback", feedbackType: FeedbackType.ACTIVITY });
 obj2[FeedbackType.IN_APP_REPORTS] = { cooldown: 172800000, chance: 0.5, group: FeedbackGroup.SAFETY, hotspot: HotspotStore.HotspotLocations.IN_APP_REPORTS_FEEDBACK, storageKey: "inAppReportsFeedback", feedbackType: FeedbackType.IN_APP_REPORTS };
 const SEARCH_RESULTS = FeedbackType.SEARCH_RESULTS;
-const obj8 = { group: FeedbackGroup.SEARCH, hotspot: HotspotStore.HotspotLocations.SEARCH_RESULTS_FEEDBACK, storageKey: "searchResultsFeedback", feedbackType: FeedbackType.SEARCH_RESULTS, eligibilityChecks: items1 };
+const obj8 = { group: FeedbackGroup.SEARCH, hotspot: HotspotStore.HotspotLocations.SEARCH_RESULTS_FEEDBACK, storageKey: "searchResultsFeedback", feedbackType: FeedbackType.SEARCH_RESULTS };
 ({ cooldown: 172800000, chance: 0.5, group: FeedbackGroup.SAFETY, hotspot: HotspotStore.HotspotLocations.IN_APP_REPORTS_FEEDBACK, storageKey: "inAppReportsFeedback", feedbackType: FeedbackType.IN_APP_REPORTS });
 const merged3 = Object.assign(obj);
-items1 = [
-  function searchResultsEligibilityCheck() {
-    const obj = SearchResultsFeedbackExperiment;
-    return obj.getIsSearchResultsFeedbackExperimentEnabled({ location: "FeedbackManager" });
-  }
-];
 obj2[SEARCH_RESULTS] = obj8;
 obj2[FeedbackType.CONJURE] = { cooldown: 3600000, chance: 1, group: FeedbackGroup.BUILDER, hotspot: HotspotStore.HotspotLocations.CONJURE_FEEDBACK, storageKey: "lastConjureFeedback", feedbackType: FeedbackType.CONJURE };
 ({ cooldown: 3600000, chance: 1, group: FeedbackGroup.BUILDER, hotspot: HotspotStore.HotspotLocations.CONJURE_FEEDBACK, storageKey: "lastConjureFeedback", feedbackType: FeedbackType.CONJURE });

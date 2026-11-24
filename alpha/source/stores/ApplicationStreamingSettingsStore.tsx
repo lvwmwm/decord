@@ -1,13 +1,13 @@
-// Module ID: 5837
-// Function ID: 5838
+// Module ID: 5903
+// Function ID: 5904
 // Name: ApplicationStreamingSettingsStore
-// Dependencies: [5754, 5658, 504, 572, 2]
+// Dependencies: [5817, 5729, 504, 572, 2]
 
-// Module 5837 (ApplicationStreamingSettingsStore)
+// Module 5903 (ApplicationStreamingSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 5658 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5754 */;
+import Constants from "Constants" /* 5729 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5817 */;
 import size from "module_2" /* 2 */;
 
 let ApplicationStreamFPS;
@@ -19,6 +19,7 @@ let PRESET_VIDEO = ApplicationStreamPresets.PRESET_VIDEO;
 let RESOLUTION_720 = ApplicationStreamResolutions.RESOLUTION_720;
 let FPS_30 = ApplicationStreamFPS.FPS_30;
 let soundshareEnabled = true;
+let streamDrawingEnabled = true;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class ApplicationStreamingSettingsStore extends PersistedStore {
   initialize(preset) {
@@ -31,10 +32,15 @@ class ApplicationStreamingSettingsStore extends PersistedStore {
       if (soundshareEnabled == null) {
         soundshareEnabled = true;
       }
+      let flag = preset.streamDrawingEnabled;
+      if (flag == null) {
+        flag = true;
+      }
+      streamDrawingEnabled = flag;
     }
   }
   getState() {
-    return { preset: PRESET_VIDEO, resolution: RESOLUTION_720, fps: FPS_30, soundshareEnabled };
+    return { preset: PRESET_VIDEO, resolution: RESOLUTION_720, fps: FPS_30, soundshareEnabled, streamDrawingEnabled };
   }
 }
 const prototype = ApplicationStreamingSettingsStore.prototype;
@@ -75,7 +81,7 @@ const obj = {
     let frameRate;
     let preset;
     let resolution;
-    ({ preset, resolution, frameRate, soundshareEnabled } = arg0);
+    ({ preset, resolution, frameRate, soundshareEnabled, streamDrawingEnabled } = arg0);
     let flag = false;
     const tmp = null != preset && preset !== PRESET_VIDEO;
     if (tmp) {
@@ -94,6 +100,10 @@ const obj = {
     }
     const tmp7 = null != soundshareEnabled && soundshareEnabled !== soundshareEnabled;
     if (tmp7) {
+      flag = true;
+    }
+    const tmp9 = null != streamDrawingEnabled && streamDrawingEnabled !== streamDrawingEnabled;
+    if (tmp9) {
       flag = true;
     }
     return flag;

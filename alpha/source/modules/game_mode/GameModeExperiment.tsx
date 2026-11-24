@@ -1,10 +1,10 @@
-// Module ID: 4917
-// Function ID: 4918
+// Module ID: 4921
+// Function ID: 4922
 // Name: GameModeExperiment
 // Dependencies: [1450, 2]
 // Exports: getGameModeExperimentConfig, useGameModeExperimentConfig
 
-// Module 4917 (GameModeExperiment)
+// Module 4921 (GameModeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

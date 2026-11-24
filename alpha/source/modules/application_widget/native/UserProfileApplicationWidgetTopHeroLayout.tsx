@@ -1,21 +1,21 @@
-// Module ID: 10277
-// Function ID: 10278
+// Module ID: 14434
+// Function ID: 14435
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 7564, 21, 4913, 575, 10278, 8197, 10321, 10322, 10325, 2]
+// Dependencies: [32, 19, 17, 7431, 21, 4917, 575, 14435, 9346, 14478, 14479, 14482, 2]
 // Exports: default
 
-// Module 10277 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 14434 (UserProfileApplicationWidgetTopHeroLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 7564 */;
-import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8197 */;
-import _mod10278 from "module_10278" /* 10278 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 10321 */;
-import UserProfileApplicationWidgetHeroImageDefault from "UserProfileApplicationWidgetHeroImage" /* 10325 */;
+import Constants from "Constants" /* 7431 */;
+import UserProfileSharedStyles from "UserProfileSharedStyles" /* 9346 */;
+import _mod14435 from "module_14435" /* 14435 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 14478 */;
+import UserProfileApplicationWidgetHeroImageDefault from "UserProfileApplicationWidgetHeroImage" /* 14482 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -67,20 +67,20 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   if (tmp19Result3) {
     tmp19Result3 = null != tmp5;
   }
-  const obj = _mod10278;
+  const obj = _mod14435;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  const obj2 = _mod10278;
+  const obj2 = _mod14435;
   const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  const obj3 = _mod10278;
+  const obj3 = _mod14435;
   const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
   const hero_image = topConfig.components.hero_image;
   let image;
-  const obj4 = _mod10278;
+  const obj4 = _mod14435;
   const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (hero_image != null) {
     image = hero_image.fields.image;
   }
-  const items = [_mod10278.ResolvedValueType.MEDIA];
+  const items = [_mod14435.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   const obj5 = { style: tmp.root, children: items1 };
   items1 = [header, , ];
@@ -94,7 +94,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   tmp19Result = null == fieldValue || !tmp19Result3;
   if (tmp19Result) {
     const obj9 = { style: tmp.heroImageSkeleton };
-    tmp19Result = tmp19(tmp8(10322).ImageSkeleton, obj9);
+    tmp19Result = tmp19(tmp8(14479).ImageSkeleton, obj9);
   }
   items3[1] = metroRequire(View, obj8);
   items1[1] = metroImportDefault(View, obj6);

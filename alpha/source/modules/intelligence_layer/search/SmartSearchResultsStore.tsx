@@ -1,16 +1,16 @@
-// Module ID: 13201
-// Function ID: 13202
+// Module ID: 13115
+// Function ID: 13116
 // Name: SmartSearchResultsStore
-// Dependencies: [4855, 1386, 13199, 1454, 13202, 504, 572, 2]
+// Dependencies: [4859, 1386, 13113, 1454, 13116, 504, 572, 2]
 
-// Module 13201 (SmartSearchResultsStore)
+// Module 13115 (SmartSearchResultsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 13202 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 13116 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13199 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13113 */;
 import size from "module_2" /* 2 */;
 
 let MAX_CACHED_ANSWER_GUILDS;
@@ -56,11 +56,11 @@ class SmartSearchResultsStore extends Store {
     }
     return status;
   }
-  hasAnswer(guildId, requestKey) {
-    const peekResult = closure_6.peek(guildId);
+  hasAnswer(arg0, arg1) {
+    const peekResult = closure_6.peek(arg0);
     let peekResult1;
     if (peekResult != null) {
-      peekResult1 = peekResult.peek(requestKey);
+      peekResult1 = peekResult.peek(arg1);
     }
     if (peekResult1 == null) {
       peekResult1 = null;

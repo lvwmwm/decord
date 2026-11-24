@@ -1,14 +1,14 @@
-// Module ID: 10616
-// Function ID: 10617
+// Module ID: 9849
+// Function ID: 9850
 // Name: MobileQuestVideoWatchCtaCopy
-// Dependencies: [6558, 8427, 1112, 10617, 2]
+// Dependencies: [6745, 8248, 1112, 9850, 2]
 // Exports: getBountyWatchCtaText, getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10616 (MobileQuestVideoWatchCtaCopy)
+// Module 9849 (MobileQuestVideoWatchCtaCopy)
 import intl5 from "intl" /* 1112 */;
-import QuestConstants from "QuestConstants" /* 6558 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8427 */;
-import VQRemainingTimeTruncationExperimentDefault from "VQRemainingTimeTruncationExperiment" /* 10617 */;
+import QuestConstants from "QuestConstants" /* 6745 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8248 */;
+import VQRemainingTimeTruncationExperimentDefault from "VQRemainingTimeTruncationExperiment" /* 9850 */;
 import size from "module_2" /* 2 */;
 
 function formatWatchRemainingDurationShort(percentComplete, truncate) {

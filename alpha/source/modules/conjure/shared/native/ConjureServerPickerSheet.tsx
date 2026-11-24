@@ -1,17 +1,23 @@
-// Module ID: 12301
-// Function ID: 12302
+// Module ID: 11309
+// Function ID: 11310
 // Name: ConjureServerPickerSheet
-// Dependencies: [32, 19, 17, 21, 4913, 575, 7553, 7515, 7427, 1112, 4190, 5145, 5504, 7347, 5127, 7349, 7322, 2]
+// Dependencies: [32, 19, 17, 21, 4917, 575, 7420, 7381, 7280, 1112, 4192, 5149, 5508, 7125, 5131, 7127, 6926, 2]
 // Exports: default
 
-// Module 12301 (ConjureServerPickerSheet)
+// Module 11309 (ConjureServerPickerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import intl4 from "intl" /* 1112 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import GuildIcon from "GuildIcon" /* 6926 */;
+import TableRadioRow2 from "TableRadioRow" /* 7127 */;
+import SearchBar2 from "SearchBar" /* 7280 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7381 */;
+import ActionSheet2 from "ActionSheet" /* 7420 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let name;
@@ -20,7 +26,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -29,91 +35,133 @@ obj2 = { paddingBottom: nativeDefault.space.PX_64 };
 createStyles = createStyles.createStyles;
 obj3 = { alignItems: "center", paddingVertical: nativeDefault.space.PX_24 };
 let closure_8 = createStyles(obj);
+const other = "other";
 const result = size.fileFinishedImporting("modules/conjure/shared/native/ConjureServerPickerSheet.tsx");
 
 export default function ConjureServerPickerSheet(selectedGuildId) {
   let Text;
-  let c3;
+  let c4;
   let guilds;
   let intl;
   let intl2;
   let intl3;
-  let items1;
+  let items3;
+  let items4;
   let obj5;
+  let otherOption;
   let str;
   let title;
   let tmp4;
-  let tmp9Result;
   ({ sheetKey: require, title, guilds } = selectedGuildId);
   selectedGuildId = selectedGuildId.selectedGuildId;
   if (selectedGuildId === undefined) {
     selectedGuildId = null;
   }
-  const onPick = selectedGuildId.onPick;
-  _slicedToArray = undefined;
+  ({ onPick: dependencyMap, otherOption } = selectedGuildId);
+  react = undefined;
   const tmp2 = closure_8();
-  [str, tmp4] = _slicedToArray(react.useState(""), 2);
-  const tmp3 = _slicedToArray(react.useState(""), 2);
+  [str, tmp4] = otherOption(react.useState(""), 2);
+  const tmp3 = otherOption(react.useState(""), 2);
   const trimmed = str.trim();
   let toLocaleLowerCaseResult = trimmed.toLocaleLowerCase();
-  _slicedToArray = toLocaleLowerCaseResult;
+  react = toLocaleLowerCaseResult;
   const items = [guilds, toLocaleLowerCaseResult];
   const memo = react.useMemo(() => {
     let found;
-    if ("" === c3) {
+    if ("" === c4) {
       found = guilds;
     } else {
       found = guilds.filter((name) => {
         name = name.name;
         const toLocaleLowerCaseResult = name.toLocaleLowerCase();
-        return toLocaleLowerCaseResult.includes(closure_1_3);
+        return toLocaleLowerCaseResult.includes(closure_1_4);
       });
     }
     return found;
   }, items);
-  let obj = { scrollable: true, startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_6(require("BottomSheetTitleHeader").BottomSheetTitleHeader, { title }), children: items1 };
-  const ActionSheet = require("ActionSheet").ActionSheet;
-  let obj2 = { size: "md", round: true, grow: false, accessibilityLabel: intl.string(guilds(onPick[10])["+g5NWE"]), placeholder: intl2.string(guilds(onPick[10])["+g5NWE"]), onChange: tmp4 };
-  const SearchBar = require("SearchBar").SearchBar;
-  intl = require("intl").intl;
-  intl2 = require("intl").intl;
-  items1 = [closure_6(SearchBar, obj2), ];
-  const obj3 = { style: tmp2.scroll, contentContainerStyle: tmp2.list, keyboardShouldPersistTaps: "handled", children: tmp9Result };
-  const BottomSheetScrollView = require("BottomSheetModal").BottomSheetScrollView;
-  const tmp6 = closure_7;
-  if (0 === memo.length) {
-    const obj4 = { style: tmp2.empty, children: closure_6(Text, obj5) };
-    obj5 = { variant: "body-md/normal", color: "text-muted", children: intl3.string(require("intl").t.V6nAfF) };
-    Text = tmp7(tmp8[12]).Text;
-    intl3 = tmp7(tmp8[9]).intl;
-    tmp9Result = tmp9(View, obj4);
-  } else {
-    const TableRadioGroup = tmp7(tmp8[13]).TableRadioGroup;
-    const obj6 = {
-      hasIcons: true,
-      value: selectedGuildId,
-      onChange: function handlePick(arg0) {
-          require = arg0;
-          const found = guilds.find((id) => id.id === closure_0);
-          if (null != found) {
-            const obj = ActionSheetActionCreatorsDefault;
-            obj.hideActionSheet(require);
-            onPick(found);
-          }
-        },
-      accessibilityLabel: title,
-      children: memo.map((guild) => {
-          let obj2;
-          let tmp;
-          const obj = { value: guild.id, label: guild.name, labelLineClamp: 1, icon: closure_1_6(tmp, obj2) };
-          const TableRadioRow = require("TableRadioRow").TableRadioRow;
-          obj2 = { guild, size: require("GuildIcon").GuildIconSizes.SMALL_32 };
-          tmp = guilds(onPick[16]);
-          return closure_1_6(TableRadioRow, obj, guild.id);
-        })
-    };
-    tmp9Result = tmp9(TableRadioGroup, obj6);
+  let tmp6 = null;
+  if (null != otherOption) {
+    const label = otherOption.label;
+    tmp6 = null;
+    const toLocaleLowerCaseResult1 = label.toLocaleLowerCase();
+    if (toLocaleLowerCaseResult1.includes(toLocaleLowerCaseResult)) {
+      tmp6 = otherOption;
+    }
   }
-  items1[1] = closure_6(BottomSheetScrollView, obj3);
-  return tmp6(ActionSheet, obj);
+  let obj = { scrollable: true, startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_6(BottomSheetTitleHeader.BottomSheetTitleHeader, { title }), children: null };
+  const ActionSheet = ActionSheet2.ActionSheet;
+  let obj2 = { size: "md", round: true, grow: false, accessibilityLabel: intl.string(guilds(4192)["+g5NWE"]), placeholder: intl2.string(guilds(4192)["+g5NWE"]), onChange: tmp4 };
+  const SearchBar = SearchBar2.SearchBar;
+  intl = intl4.intl;
+  intl2 = intl4.intl;
+  const items1 = [closure_6(SearchBar, obj2), ];
+  let obj3 = { style: tmp2.scroll, contentContainerStyle: tmp2.list, keyboardShouldPersistTaps: "handled", children: null };
+  const tmp7 = closure_7;
+  if (0 === memo.length) {
+    let tmp10Result;
+    if (null == tmp6) {
+      const obj4 = { style: tmp2.empty, children: closure_6(Text, obj5) };
+      obj5 = { variant: "body-md/normal", color: "text-muted", children: intl3.string(intl4.t.V6nAfF) };
+      Text = tmp8(5508).Text;
+      intl3 = tmp8(1112).intl;
+      tmp10Result = tmp10(View, obj4);
+    }
+    obj3.children = tmp10Result;
+    items1[1] = closure_6(tmp11, obj3);
+    obj.children = items1;
+    return tmp7(ActionSheet, obj);
+  }
+  let selected;
+  const TableRadioGroup = tmp8(7125).TableRadioGroup;
+  if (otherOption != null) {
+    selected = otherOption.selected;
+  }
+  if (true === selected) {
+    selectedGuildId = other;
+  }
+  const obj6 = {
+    hasIcons: true,
+    value: selectedGuildId,
+    onChange: function handlePick(arg0) {
+      require = arg0;
+      if (arg0 === other) {
+        const obj2 = ActionSheetActionCreatorsDefault;
+        obj2.hideActionSheet(require);
+        const obj3 = otherOption;
+        if (otherOption != null) {
+          obj3.onPick();
+        }
+      } else {
+        const found = guilds.find((id) => id.id === closure_0);
+        if (null != found) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet(require);
+          dependencyMap(found);
+        }
+      }
+    },
+    accessibilityLabel: title,
+    children: items4
+  };
+  if (null != tmp6) {
+    const obj8 = { value: other, label: null, labelLineClamp: 1, icon: null };
+    ({ label: obj7.label, icon: obj7.icon } = tmp6);
+    const items2 = [tmp10(tmp8(7127).TableRadioRow, obj8, other)];
+    items3 = items2;
+  } else {
+    items3 = [];
+  }
+  items4 = [
+    ...items3,
+    ...memo.map((guild) => {
+      let obj2;
+      let tmp;
+      const obj = { value: guild.id, label: guild.name, labelLineClamp: 1, icon: closure_1_6(tmp, obj2) };
+      const TableRadioRow = TableRadioRow2.TableRadioRow;
+      obj2 = { guild, size: GuildIcon.GuildIconSizes.SMALL_32 };
+      tmp = guilds(dependencyMap[16]);
+      return closure_1_6(TableRadioRow, obj, guild.id);
+    })
+  ];
+  tmp10Result = tmp10(TableRadioGroup, obj6);
 };

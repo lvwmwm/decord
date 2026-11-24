@@ -1,21 +1,21 @@
-// Module ID: 10611
-// Function ID: 10612
+// Module ID: 9844
+// Function ID: 9845
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 10612, 3, 10609, 10613, 10614, 2]
+// Dependencies: [5, 9845, 3, 9842, 9846, 9847, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 10611 (IosAttributionImpressionRegistry)
+// Module 9844 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 10609 */;
-import IosAttributionFramework from "IosAttributionFramework" /* 10612 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 10613 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 9842 */;
+import IosAttributionFramework from "IosAttributionFramework" /* 9845 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 9846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let impressionToken;
 
 let obj3;
-const f98013 = () => {
+const f96219 = () => {
 
 };
 function isCurrentImpression(arg0, arg1) {
@@ -31,7 +31,7 @@ function endImpressionToken(arg0) {
   if (null != arg0) {
     obj = IosAttributionNativeModule;
     const endImpressionResult = obj.endImpression(arg0);
-    endImpressionResult.catch(f98013);
+    endImpressionResult.catch(f96219);
   }
 }
 let obj = function _startNativeImpression() {
@@ -413,7 +413,7 @@ export function endImpression(arg0) {
     if (null != token) {
       const obj2 = IosAttributionNativeModule;
       const endImpressionResult = obj2.endImpression(token);
-      endImpressionResult.catch(f98013);
+      endImpressionResult.catch(f96219);
     }
   }
 }

@@ -1,19 +1,19 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7423
+// Function ID: 7424
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4913, 1378, 7045, 5504, 7063, 7557, 2]
+// Dependencies: [32, 19, 17, 21, 4917, 1378, 6018, 5508, 6035, 7424, 2]
 // Exports: TableSwitchRow
 
-// Module 7556 (TableSwitchRow)
+// Module 7423 (TableSwitchRow)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import TableRow2 from "TableRow" /* 7045 */;
-import TableRowBadge from "TableRowBadge" /* 7063 */;
-import FormSwitch from "FormSwitch" /* 7557 */;
+import TableRow2 from "TableRow" /* 6018 */;
+import TableRowBadge from "TableRowBadge" /* 6035 */;
+import FormSwitch from "FormSwitch" /* 7424 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -88,7 +88,7 @@ export function TableSwitchRow(value) {
     const tmp15 = View;
     if (!obj2.isValidElement(label)) {
       let str = "mobile-text-heading-primary";
-      const Text = tmp3(5504).Text;
+      const Text = tmp3(5508).Text;
       if ("danger" === variant) {
         str = "text-feedback-critical";
       }

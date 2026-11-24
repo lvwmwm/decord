@@ -1,16 +1,16 @@
-// Module ID: 12286
-// Function ID: 12287
+// Module ID: 12226
+// Function ID: 12227
 // Name: useConjureSharedProject
-// Dependencies: [19, 2164, 1386, 6621, 11970, 504, 11976, 2]
+// Dependencies: [19, 2164, 1386, 6808, 11847, 504, 11855, 2]
 // Exports: default
 
-// Module 12286 (useConjureSharedProject)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;
-import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11976 */;
+// Module 12226 (useConjureSharedProject)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6808 */;
+import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11855 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11970 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11847 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,6 @@ export default function useConjureSharedProject(arg0) {
   let stateFromStores3;
   let closure_7;
   let tmp2 = _require;
-  const tmp3 = stateFromStores;
   let obj = require("get initialized");
   const items = [ConjureSharedProjectStore];
   const items1 = [arg0, tmp];
@@ -59,7 +58,7 @@ export default function useConjureSharedProject(arg0) {
   }
   const items4 = [stateFromStores3];
   const items5 = [projectId];
-  const tmp2Result = tmp2(tmp3[5]);
+  const tmp2Result = tmp2(stateFromStores[5]);
   stateFromStores2 = tmp2Result.useStateFromStores(items4, () => {
     let tmp2 = null;
     if (null != projectId) {
@@ -72,7 +71,7 @@ export default function useConjureSharedProject(arg0) {
     return tmp2;
   }, items5);
   const items6 = [stateFromStores2];
-  const tmp2Result2 = tmp2(tmp3[5]);
+  const tmp2Result2 = tmp2(stateFromStores[5]);
   stateFromStores3 = tmp2Result2.useStateFromStores(items6, () => {
     const currentUser = stateFromStores2.getCurrentUser();
     let id;
@@ -114,7 +113,7 @@ export default function useConjureSharedProject(arg0) {
                 obj = { type: "loading" };
               } else {
                 obj = { type: "ready", application: stateFromStores1, project: stateFromStores2, canRemix: ticketValid };
-                ticketValid = tmp.ticketValid || canRemixProject(tmp3);
+                ticketValid = tmp.ticketValid || canRemixProject(tmp2);
               }
             }
           }

@@ -1,13 +1,13 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12717
+// Function ID: 12718
 // Name: useCheckpointCompletionSurvey
-// Dependencies: [19, 572, 6483, 6490, 2]
+// Dependencies: [19, 572, 7722, 7729, 2]
 // Exports: default
 
-// Module 12800 (useCheckpointCompletionSurvey)
+// Module 12717 (useCheckpointCompletionSurvey)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import QualtricsActionCreators from "QualtricsActionCreators" /* 6483 */;
-import SurveyActionTypes from "SurveyActionTypes" /* 6490 */;
+import QualtricsActionCreators from "QualtricsActionCreators" /* 7722 */;
+import SurveyActionTypes from "SurveyActionTypes" /* 7729 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

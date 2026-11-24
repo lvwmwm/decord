@@ -1,9 +1,18 @@
 // Module ID: 15585
 // Function ID: 15586
-// Dependencies: [15586]
+// Dependencies: []
 
 // Module 15585
-import _mod15586 from "module_15586" /* 15586 */;
-
-
-export default (arg0) => _mod15586(arg0.length);
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
+}
+if (undefined === all) {
+  let fn;
+  if (undefined !== all) {
+    fn = (fn) => typeof fn === "function" || fn === all;
+  }
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

@@ -1,11 +1,11 @@
-// Module ID: 14570
-// Function ID: 14571
+// Module ID: 14838
+// Function ID: 14839
 // Name: WidgetEmptyStateSuggestionUtils
-// Dependencies: [14571, 6961, 6957, 2]
+// Dependencies: [14839, 6048, 6044, 2]
 // Exports: getWidgetEmptyStateSuggestions
 
-// Module 14570 (WidgetEmptyStateSuggestionUtils)
-import ApplicationWidgetConstants from "ApplicationWidgetConstants" /* 14571 */;
+// Module 14838 (WidgetEmptyStateSuggestionUtils)
+import ApplicationWidgetConstants from "ApplicationWidgetConstants" /* 14839 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -16,7 +16,7 @@ let c3;
 const result = size.fileFinishedImporting("modules/user_profile/WidgetEmptyStateSuggestionUtils.tsx");
 
 export function getWidgetEmptyStateSuggestions(addableWidgets) {
-  const f129557 = (type) => type.type === WANT_TO_PLAY_GAMES;
+  const f129890 = (type) => type.type === WANT_TO_PLAY_GAMES;
   addableWidgets = addableWidgets.addableWidgets;
   const prop = addableWidgets.applicationAffinityData;
   const items = [];
@@ -75,7 +75,7 @@ export function getWidgetEmptyStateSuggestions(addableWidgets) {
   if (hasClips) {
     let tmp2 = addableWidgets;
     const CLIPS_GALLERY = addableWidgets(items[2]).WidgetType.CLIPS_GALLERY;
-    const found1 = addableWidgets.find(f129557);
+    const found1 = addableWidgets.find(f129890);
     if (null != found1) {
       if (!set.has(found1.getUniqueKey())) {
         items.push(found1);
@@ -84,7 +84,7 @@ export function getWidgetEmptyStateSuggestions(addableWidgets) {
     }
   }
   const FAVORITE_GAMES = addableWidgets(items[2]).WidgetType.FAVORITE_GAMES;
-  const found2 = addableWidgets.find(f129557);
+  const found2 = addableWidgets.find(f129890);
   if (null != found2) {
     if (!set.has(found2.getUniqueKey())) {
       items.push(found2);
@@ -92,7 +92,7 @@ export function getWidgetEmptyStateSuggestions(addableWidgets) {
     }
   }
   const PLAYED_GAMES = tmp7(tmp8[2]).WidgetType.PLAYED_GAMES;
-  const found3 = addableWidgets.find(f129557);
+  const found3 = addableWidgets.find(f129890);
   if (null != found3) {
     if (!set.has(found3.getUniqueKey())) {
       items.push(found3);
@@ -111,7 +111,7 @@ export function getWidgetEmptyStateSuggestions(addableWidgets) {
     }
   }
   const CURRENT_GAMES = tmp7(tmp8[2]).WidgetType.CURRENT_GAMES;
-  const found5 = addableWidgets.find(f129557);
+  const found5 = addableWidgets.find(f129890);
   if (null != found5) {
     if (!set.has(found5.getUniqueKey())) {
       items.push(found5);
@@ -119,7 +119,7 @@ export function getWidgetEmptyStateSuggestions(addableWidgets) {
     }
   }
   const WANT_TO_PLAY_GAMES = tmp7(tmp8[2]).WidgetType.WANT_TO_PLAY_GAMES;
-  const found6 = addableWidgets.find(f129557);
+  const found6 = addableWidgets.find(f129890);
   if (null != found6) {
     if (!set.has(found6.getUniqueKey())) {
       items.push(found6);

@@ -1,12 +1,12 @@
-// Module ID: 7989
-// Function ID: 7990
+// Module ID: 7937
+// Function ID: 7938
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1386, 2118, 1071, 7985, 7842, 1241, 1378, 7981, 7982, 1255, 5575, 5662, 2]
+// Dependencies: [32, 5, 1386, 2118, 1071, 7933, 7786, 1241, 1378, 7938, 7929, 7930, 1255, 5579, 5701, 2]
 // Exports: beginAppStoreAgeSignalReport, isAppStoreAgeSignalColdLaunch, isAppStoreAgeSignalLaunchPending, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport, startPendingAppStoreAgeSignalReport
 
-// Module 7989 (AppStoreAgeSignalReport)
+// Module 7937 (AppStoreAgeSignalReport)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7842 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7786 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -15,7 +15,7 @@ import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _null, _require, c0, c1, c2, c5, c6, closure_12, dependencyMap;
+let _null, _require, c1, c2, c5, c6, closure_12, dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
@@ -105,9 +105,7 @@ let obj = function _collectAgeSignal() {
 };
 obj = function _performAgeCheck() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj10;
     let obj2;
-    let obj7;
     let closure_0 = arg0;
     if (c6 === 2) {
       c6 = 3;
@@ -125,11 +123,13 @@ obj = function _performAgeCheck() {
       let c4;
       let closure_3;
       try {
+        let c0;
         let closure_1;
         let closure_2;
         let closure_4;
         let closure_5;
         let closure_6;
+        let PARENTAL_CONSENT_CHECKED;
         c6 = 2;
         if (0 === c5) {
           if (arg0 === 1) {
@@ -140,6 +140,8 @@ obj = function _performAgeCheck() {
             const obj5 = { value, done: true };
             return obj5;
           } else {
+            let tmp45 = closure_0;
+            c0 = undefined;
             closure_1 = undefined;
             closure_2 = undefined;
             closure_3 = undefined;
@@ -147,20 +149,27 @@ obj = function _performAgeCheck() {
             closure_5 = undefined;
             closure_6 = undefined;
             c4 = 1;
-            const obj18 = require("AppStoreAgeSignalAttestation");
-            const result = obj18.warmAgeSignalAttestation();
+            const obj20 = require("AppStoreConsentReinstateEndpointExperiment");
+            if (obj20.getIsAppStoreConsentReinstateEndpointEnabled("appStoreAgeSignalReport", false)) {
+              tmp45 = null;
+            }
+            c0 = tmp45;
+            const obj15 = require("AppStoreAgeSignalAttestation");
+            const result = obj15.warmAgeSignalAttestation();
             const items = [collectAgeSignal(), ];
-            const obj19 = require("AppStoreAgeSignalAttestation");
-            items[1] = obj19.getAgeSignalChallenge();
+            const obj16 = require("AppStoreAgeSignalAttestation");
+            items[1] = obj16.getAgeSignalChallenge();
+            PARENTAL_CONSENT_CHECKED = all(items);
             c5 = 2;
             c6 = 1;
-            const obj6 = { value: all(items), done: false };
+            const obj6 = { value: PARENTAL_CONSENT_CHECKED, done: false };
             return obj6;
           }
         } else {
           if (1 === c5) {
             c4 = 0;
             let closure_7 = closure_3;
+            PARENTAL_CONSENT_CHECKED = closure_7;
             const obj8 = { tags: { source: "parental_consent_manager", step: "perform_age_check" } };
             const obj13 = closure_130_1(closure_130_2[7]);
             obj13.captureException(closure_7, obj8);
@@ -178,10 +187,11 @@ obj = function _performAgeCheck() {
               closure_2 = closure_130_3(closure_1, 2);
               closure_3 = closure_2[0];
               closure_4 = closure_2[1];
+              const obj10 = closure_130_0(closure_130_2[10]);
+              PARENTAL_CONSENT_CHECKED = obj10.getAgeSignalIntegrityToken(closure_4, closure_3);
               c5 = 3;
               c6 = 1;
-              const obj11 = { value: obj10.getAgeSignalIntegrityToken(closure_4, closure_3), done: false };
-              obj10 = closure_130_0(closure_130_2[9]);
+              const obj11 = { value: PARENTAL_CONSENT_CHECKED, done: false };
               return obj11;
             }
           } else if (3 === c5) {
@@ -195,10 +205,11 @@ obj = function _performAgeCheck() {
               return obj12;
             } else {
               closure_5 = value;
+              const obj7 = closure_130_0(closure_130_2[10]);
+              PARENTAL_CONSENT_CHECKED = obj7.getAppStoreAgeSignalAssertion(closure_3, c0);
               c5 = 4;
               c6 = 1;
-              const obj14 = { value: obj7.getAppStoreAgeSignalAssertion(closure_3, closure_0), done: false };
-              obj7 = closure_130_0(closure_130_2[9]);
+              const obj14 = { value: PARENTAL_CONSENT_CHECKED, done: false };
               return obj14;
             }
           } else if (4 === c5) {
@@ -208,15 +219,16 @@ obj = function _performAgeCheck() {
             } else if (arg0 === 2) {
               c4 = 0;
               c6 = 3;
-              const obj15 = { value, done: true };
-              return obj15;
+              const obj17 = { value, done: true };
+              return obj17;
             } else {
               closure_6 = value;
-              const obj4 = closure_130_0(closure_130_2[10]);
+              const obj4 = closure_130_0(closure_130_2[11]);
+              PARENTAL_CONSENT_CHECKED = obj4.submitAgeSignal(closure_3, closure_5, c0, "app_start", closure_6);
               c5 = 5;
               c6 = 1;
-              const obj16 = { value: obj4.submitAgeSignal(closure_3, closure_5, closure_0, "app_start", closure_6), done: false };
-              return obj16;
+              const obj18 = { value: PARENTAL_CONSENT_CHECKED, done: false };
+              return obj18;
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -224,13 +236,13 @@ obj = function _performAgeCheck() {
           } else if (arg0 === 2) {
             c4 = 0;
             c6 = 3;
-            const obj17 = { value, done: true };
-            return obj17;
+            const obj19 = { value, done: true };
+            return obj19;
           } else {
+            PARENTAL_CONSENT_CHECKED = closure_130_7.PARENTAL_CONSENT_CHECKED;
             obj = { platform: obj2.getNativePlatform() };
-            const track = closure_130_1(closure_130_2[11]).track;
-            const PARENTAL_CONSENT_CHECKED = closure_130_7.PARENTAL_CONSENT_CHECKED;
-            const tmp8 = closure_130_1(closure_130_2[11]);
+            const track = closure_130_1(closure_130_2[12]).track;
+            const tmp8 = closure_130_1(closure_130_2[12]);
             obj2 = closure_130_0(closure_130_2[8]);
             track(PARENTAL_CONSENT_CHECKED, obj);
             c4 = 0;
@@ -238,11 +250,11 @@ obj = function _performAgeCheck() {
           c6 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp46) {
-        closure_3 = tmp46;
+      } catch (tmp52) {
+        closure_3 = tmp52;
         if (0 === c4) {
           c6 = 3;
-          throw tmp46;
+          throw tmp52;
         } else {
           c5 = 1;
         }
@@ -260,7 +272,7 @@ function startAgeSignalReport(isColdLaunch, connection) {
     let result = obj.isAppStoreAgeSignalSupported();
     const tmp2 = _require;
     if (result) {
-      const tmp2Result = tmp2(5575);
+      const tmp2Result = tmp2(5579);
       result = tmp2Result.shouldCollectAppStoreSignal();
     }
     tmp = result;
@@ -637,7 +649,7 @@ export function resumeAppStoreAgeSignalReport() {
       obj = AppStoreAgeSignalSupport;
       let result = obj.isAppStoreAgeSignalSupported();
       if (result) {
-        const tmp3Result = tmp3(5575);
+        const tmp3Result = tmp3(5579);
         result = tmp3Result.shouldCollectAppStoreSignal();
       }
       tmp6 = result;

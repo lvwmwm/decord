@@ -1,10 +1,10 @@
-// Module ID: 10440
-// Function ID: 10441
+// Module ID: 9910
+// Function ID: 9911
 // Name: ApplicationCommandIndexActionCreators
 // Dependencies: [5, 1071, 572, 1284, 1088, 1255, 1254, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 10440 (ApplicationCommandIndexActionCreators)
+// Module 9910 (ApplicationCommandIndexActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;

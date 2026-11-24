@@ -1,24 +1,24 @@
-// Module ID: 8561
-// Function ID: 8562
+// Module ID: 8863
+// Function ID: 8864
 // Name: HeaderShared
-// Dependencies: [19, 17, 8562, 21, 4913, 575, 5477, 7096, 5504, 7030, 1378, 8563, 8568, 1628, 1501, 8570, 558, 8573, 14376, 1186, 2]
+// Dependencies: [19, 17, 8864, 21, 4917, 575, 5481, 7066, 5508, 6026, 1378, 8865, 8870, 1628, 1501, 8872, 558, 8875, 13912, 1186, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 8561 (HeaderShared)
+// Module 8863 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import useToken2 from "useToken" /* 5477 */;
-import Pressables from "Pressables" /* 7030 */;
-import react_native from "react-native" /* 8562 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 8568 */;
-import ChannelActionsDefault from "ChannelActions" /* 8573 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14376 */;
+import useToken2 from "useToken" /* 5481 */;
+import Pressables from "Pressables" /* 6026 */;
+import react_native from "react-native" /* 8864 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 8870 */;
+import ChannelActionsDefault from "ChannelActions" /* 8875 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13912 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5504);
+const Text_Text = tmp2(5508);
 class GenericHeaderTitle {
   constructor(subtitleColor) {
     let children;
@@ -78,7 +78,7 @@ class GenericHeaderTitle {
     }
     const tmp6 = closure_8();
     closure_5 = tmp6;
-    const tmp7 = tmp5(7096)("os-drawn");
+    const tmp7 = tmp5(7066)("os-drawn");
     if (null == subtitle) {
       let renderTitleContainerResult;
       if (null == tmp7) {

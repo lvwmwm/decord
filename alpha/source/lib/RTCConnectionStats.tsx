@@ -1,13 +1,13 @@
-// Module ID: 5759
-// Function ID: 5760
+// Module ID: 5822
+// Function ID: 5823
 // Name: RTCConnectionStats
-// Dependencies: [1071, 5662, 12, 5760, 2]
+// Dependencies: [1071, 5701, 12, 5823, 2]
 
-// Module 5759 (RTCConnectionStats)
+// Module 5822 (RTCConnectionStats)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
-import TimeUtils from "TimeUtils" /* 5662 */;
-import zipWithNextDefault from "zipWithNext" /* 5760 */;
+import TimeUtils from "TimeUtils" /* 5701 */;
+import zipWithNextDefault from "zipWithNext" /* 5823 */;
 import size from "module_2" /* 2 */;
 
 const RTCConnectionStates = Constants.RTCConnectionStates;
@@ -52,7 +52,7 @@ class StateHistory {
     let obj7;
     let obj8;
     let obj9;
-    const f123252 = (state) => {
+    const f123616 = (state) => {
       let num = 0;
       if (state.state === RTC_DISCONNECTED) {
         num = state.durationMs;
@@ -65,7 +65,7 @@ class StateHistory {
     }
     const stateDurations = this.getStateDurations(nowResult);
     const AWAITING_ENDPOINT = RTCConnectionStates.AWAITING_ENDPOINT;
-    const obj2 = { state_awaiting_endpoint_ms: obj3.sumBy(stateDurations, f123252), state_authenticating_ms: obj4.sumBy(stateDurations, f123252), state_connecting_ms: obj5.sumBy(stateDurations, f123252), state_disconnected_ms: obj6.sumBy(stateDurations, f123252), state_ice_checking_ms: obj7.sumBy(stateDurations, f123252), state_no_route_ms: obj8.sumBy(stateDurations, f123252), state_rtc_connecting_ms: obj9.sumBy(stateDurations, f123252), state_rtc_disconnected_ms: obj10.sumBy(stateDurations, f123252) };
+    const obj2 = { state_awaiting_endpoint_ms: obj3.sumBy(stateDurations, f123616), state_authenticating_ms: obj4.sumBy(stateDurations, f123616), state_connecting_ms: obj5.sumBy(stateDurations, f123616), state_disconnected_ms: obj6.sumBy(stateDurations, f123616), state_ice_checking_ms: obj7.sumBy(stateDurations, f123616), state_no_route_ms: obj8.sumBy(stateDurations, f123616), state_rtc_connecting_ms: obj9.sumBy(stateDurations, f123616), state_rtc_disconnected_ms: obj10.sumBy(stateDurations, f123616) };
     const AUTHENTICATING = RTCConnectionStates.AUTHENTICATING;
     obj3 = _modDef12;
     const CONNECTING = RTCConnectionStates.CONNECTING;

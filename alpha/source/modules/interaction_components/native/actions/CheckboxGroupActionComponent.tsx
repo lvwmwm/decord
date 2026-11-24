@@ -1,9 +1,9 @@
-// Module ID: 19543
-// Function ID: 19544
+// Module ID: 19584
+// Function ID: 19585
 // Name: CheckboxGroupActionComponent
-// Dependencies: [19, 21, 8248, 7348, 7335, 2]
+// Dependencies: [19, 21, 8683, 6014, 7055, 2]
 
-// Module 19543 (CheckboxGroupActionComponent)
+// Module 19584 (CheckboxGroupActionComponent)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 15097
-// Function ID: 15098
+// Module ID: 15118
+// Function ID: 15119
 // Name: OAuthConstants
 // Dependencies: [2]
 
-// Module 15097 (OAuthConstants)
+// Module 15118 (OAuthConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/OAuthConstants.tsx");

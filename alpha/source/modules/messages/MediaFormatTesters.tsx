@@ -1,11 +1,11 @@
-// Module ID: 5953
-// Function ID: 5954
+// Module ID: 6277
+// Function ID: 6278
 // Name: MediaFormatTesters
-// Dependencies: [32, 1378, 5954, 2]
+// Dependencies: [32, 1378, 6278, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isGifLikeFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 5953 (MediaFormatTesters)
-import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 5954 */;
+// Module 6277 (MediaFormatTesters)
+import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 6278 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;

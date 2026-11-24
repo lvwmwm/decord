@@ -1,8 +1,8 @@
-// Module ID: 16371
-// Function ID: 16372
+// Module ID: 16404
+// Function ID: 16405
 // Dependencies: [2]
 
-// Module 16371
+// Module 16404
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/quests/bounties/starfield_bg.mp4.js");

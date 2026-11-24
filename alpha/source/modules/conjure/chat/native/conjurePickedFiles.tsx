@@ -1,15 +1,15 @@
-// Module ID: 18593
-// Function ID: 18594
+// Module ID: 18634
+// Function ID: 18635
 // Name: conjurePickedFiles
-// Dependencies: [5, 8475, 8469, 8445, 18432, 8474, 8442, 2]
+// Dependencies: [5, 7996, 7985, 7986, 18473, 7995, 7987, 2]
 // Exports: pickConjurePhotos, pickedName, uploadConjurePickedFile
 
-// Module 18593 (conjurePickedFiles)
-import UploadPlatform from "UploadPlatform" /* 8445 */;
-import UploadDefault from "Upload" /* 8469 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8474 */;
-import ImagePickerDefault from "ImagePicker" /* 8475 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 18432 */;
+// Module 18634 (conjurePickedFiles)
+import UploadDefault from "Upload" /* 7985 */;
+import UploadPlatform from "UploadPlatform" /* 7986 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7995 */;
+import ImagePickerDefault from "ImagePicker" /* 7996 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 18473 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

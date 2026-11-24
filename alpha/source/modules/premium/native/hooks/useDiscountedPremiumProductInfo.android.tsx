@@ -1,12 +1,12 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9116
+// Function ID: 9117
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1082, 9236, 8170, 6856, 2]
+// Dependencies: [19, 1082, 9117, 8972, 6199, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 9235 (useDiscountedPremiumProductInfo)
+// Module 9116 (useDiscountedPremiumProductInfo)
 import Constants from "Constants" /* 1082 */;
-import ProductIds from "ProductIds" /* 8170 */;
+import premium_ProductIds from "premium/ProductIds" /* 8972 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ export function useDiscountedPremiumProductInfo(premiumDiscountOffer, items3) {
     discountedPriceString: react.useMemo(() => {
       if (null != closure_0) {
         if (null != discountedProduct) {
-          const tmp8 = ProductIds.DiscountIdToProductOfferId[tmp.discountId];
+          const tmp8 = premium_ProductIds.DiscountIdToProductOfferId[tmp.discountId];
           let tmp2;
           const tmp6 = require;
           if (tmp8 != null) {
@@ -54,7 +54,7 @@ export function useDiscountedPremiumProductInfo(premiumDiscountOffer, items3) {
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    const tmp6Result = tmp6(6856);
+                    const tmp6Result = tmp6(6199);
                     return tmp6Result.formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }

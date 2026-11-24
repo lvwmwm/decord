@@ -1,14 +1,14 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8874
+// Function ID: 8875
 // Name: useActiveTheme
-// Dependencies: [1193, 4937, 1237, 1194, 504, 5088, 2]
+// Dependencies: [1193, 4941, 1237, 1194, 504, 5092, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 8572 (useActiveTheme)
+// Module 8874 (useActiveTheme)
 import get_initialized from "get initialized" /* 504 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5088 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5092 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4941 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1237 */;
 import ThemeConstants from "ThemeConstants" /* 1194 */;
 import size from "module_2" /* 2 */;

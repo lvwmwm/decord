@@ -1,22 +1,22 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12045
+// Function ID: 12046
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 4913, 575, 5141, 5600, 8783, 1186, 12112, 5504, 1112, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 5145, 5604, 12043, 1186, 12046, 5508, 1112, 2]
 // Exports: default
 
-// Module 12111 (PublicGuildAnnouncementProfile)
+// Module 12045 (PublicGuildAnnouncementProfile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8783 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12112 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5145 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 12043 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12046 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

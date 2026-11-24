@@ -1,12 +1,12 @@
-// Module ID: 11255
-// Function ID: 11256
+// Module ID: 10639
+// Function ID: 10640
 // Name: ChatRestrictions
-// Dependencies: [1071, 11256, 1112, 2]
+// Dependencies: [1071, 10640, 1112, 2]
 
-// Module 11255 (ChatRestrictions)
+// Module 10639 (ChatRestrictions)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import MentionGuardUtilsDefault from "MentionGuardUtils" /* 11256 */;
+import MentionGuardUtilsDefault from "MentionGuardUtils" /* 10640 */;
 import size from "module_2" /* 2 */;
 
 const TOKEN_REGEX = Constants.TOKEN_REGEX;
@@ -58,7 +58,7 @@ let obj = {
     }
   },
   analyticsType: "@Everyone Warning",
-  animation: "disabled"
+  animation: "channel_id"
 };
 const items = [
   obj,

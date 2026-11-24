@@ -1,26 +1,30 @@
-// Module ID: 14934
-// Function ID: 14935
+// Module ID: 14971
+// Function ID: 14972
 // Name: LocalVoiceStateManager
-// Dependencies: [6395, 502, 4762, 2131, 5753, 1071, 6397, 14932, 4738, 1404, 14880, 6401, 2]
+// Dependencies: [5724, 5903, 502, 4766, 4788, 2131, 5816, 1071, 6688, 14969, 4742, 1404, 14181, 6690, 14972, 14973, 2]
 
-// Module 14934 (LocalVoiceStateManager)
+// Module 14971 (LocalVoiceStateManager)
 import FlagUtils from "FlagUtils" /* 1404 */;
-import UserSettings from "UserSettings" /* 4738 */;
-import Constants2 from "Constants" /* 6397 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
-import isClipsEnabled from "isClipsEnabled" /* 14880 */;
-import PassTheControllerStore from "PassTheControllerStore" /* 6395 */;
+import UserSettings from "UserSettings" /* 4742 */;
+import Constants2 from "Constants" /* 6688 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6690 */;
+import isClipsEnabled from "isClipsEnabled" /* 14181 */;
+import StreamDrawingChannel from "StreamDrawingChannel" /* 14972 */;
+import StreamDrawingExperiment from "StreamDrawingExperiment" /* 14973 */;
+import PassTheControllerStore from "PassTheControllerStore" /* 5724 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5903 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCRegionStore from "RTCRegionStore" /* 5753 */;
+import RTCRegionStore from "RTCRegionStore" /* 5816 */;
 import Constants from "Constants" /* 1071 */;
-import StateManager from "StateManager" /* 14932 */;
+import StateManager from "StateManager" /* 14969 */;
 import size from "module_2" /* 2 */;
 
-let metroImportAll;
-let metroImportDefault;
-({ ChannelTypes: metroImportDefault, VoiceFlags: metroImportAll } = Constants);
+let c10;
+let c9;
+({ ChannelTypes: c9, VoiceFlags: c10 } = Constants);
 const StreamTypes = Constants2.StreamTypes;
 class LocalVoiceStateManager extends StateManager {
   constructor(socket) {
@@ -32,20 +36,21 @@ class LocalVoiceStateManager extends StateManager {
     const ClipsAllowVoiceRecording = UserSettings.ClipsAllowVoiceRecording;
     const setting = ClipsAllowVoiceRecording.getSetting();
     const obj = FlagUtils;
-    const setFlagResult = obj.setFlag(0, metroImportAll.ALLOW_VOICE_RECORDING, setting);
+    const setFlagResult = obj.setFlag(0, constants2.ALLOW_VOICE_RECORDING, setting);
     const setFlag = FlagUtils.setFlag;
-    const CLIPS_ENABLED = metroImportAll.CLIPS_ENABLED;
+    const CLIPS_ENABLED = constants2.CLIPS_ENABLED;
     FlagUtils;
     const obj2 = isClipsEnabled;
     let result = null != channelId;
     const setFlagResult1 = setFlag(setFlagResult, CLIPS_ENABLED, obj2.isClipsEnabled());
     const setFlag2 = FlagUtils.setFlag;
-    const PASS_THE_CONTROLLER_HOST = metroImportAll.PASS_THE_CONTROLLER_HOST;
+    const PASS_THE_CONTROLLER_HOST = constants2.PASS_THE_CONTROLLER_HOST;
     FlagUtils;
+    const tmp4 = constants2;
     if (result) {
       let CALL;
       const isSelfPassingController = PassTheControllerStore.isSelfPassingController;
-      const encodeStreamKey = tmp(6401).encodeStreamKey;
+      const encodeStreamKey = StreamKeyUtils.encodeStreamKey;
       StreamKeyUtils;
       if (null != guildId) {
         CALL = StreamTypes.GUILD;
@@ -55,7 +60,22 @@ class LocalVoiceStateManager extends StateManager {
       const obj3 = { streamType: CALL, guildId, channelId, ownerId: AuthenticationStore.getId() };
       result = isSelfPassingController(encodeStreamKey(obj3));
     }
-    return setFlag2(setFlagResult1, PASS_THE_CONTROLLER_HOST, result);
+    const setFlag2Result = setFlag2(setFlagResult1, PASS_THE_CONTROLLER_HOST, result);
+    const setFlag3 = FlagUtils.setFlag;
+    const ALLOW_STREAM_DRAWING = tmp4.ALLOW_STREAM_DRAWING;
+    FlagUtils;
+    const supportsStreamDrawing = StreamDrawingChannel.supportsStreamDrawing;
+    StreamDrawingChannel;
+    const channel = ChannelStore.getChannel(channelId);
+    let streamDrawingEnabled = supportsStreamDrawing(channel, GuildStore.getGuild(guildId));
+    if (streamDrawingEnabled) {
+      const tmpResult6 = StreamDrawingExperiment;
+      streamDrawingEnabled = tmpResult6.getIsStreamDrawingEnabled(channelId, "LocalVoiceStateManager", false);
+    }
+    if (streamDrawingEnabled) {
+      streamDrawingEnabled = ApplicationStreamingSettingsStore.getState().streamDrawingEnabled;
+    }
+    return setFlag3(setFlag2Result, ALLOW_STREAM_DRAWING, streamDrawingEnabled);
   }
   getInitialState() {
     const obj = { guildId: null, channelId: null, selfMute: MediaEngineStore.isSelfMute(), selfDeaf: MediaEngineStore.isSelfDeaf(), selfVideo: MediaEngineStore.isVideoEnabled(), preferredRegion: null, preferredRegions: null, videoStreamParameters: null, flags: 0 };
@@ -93,7 +113,7 @@ class LocalVoiceStateManager extends StateManager {
       if (channel != null) {
         type = channel.type;
       }
-      if (type === metroImportDefault.GUILD_STAGE_VOICE) {
+      if (type === constants.GUILD_STAGE_VOICE) {
         const socket2 = self.socket;
         const obj = { guildId, channelId, selfMute, selfDeaf, selfVideo, preferredRegion, preferredRegions, videoStreamParameters, flags };
         socket2.voiceStateUpdate(obj);

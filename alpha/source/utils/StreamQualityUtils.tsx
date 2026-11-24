@@ -1,23 +1,23 @@
-// Module ID: 5836
-// Function ID: 5837
+// Module ID: 5902
+// Function ID: 5903
 // Name: StreamQualityUtils
-// Dependencies: [19, 5837, 502, 4784, 5654, 1386, 1071, 5754, 1388, 5658, 1112, 504, 5838, 1255, 2]
+// Dependencies: [19, 5903, 502, 4788, 5725, 1386, 1071, 5817, 1388, 5729, 1112, 504, 5904, 1255, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 5836 (StreamQualityUtils)
+// Module 5902 (StreamQualityUtils)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import Constants2 from "Constants" /* 5658 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5838 */;
+import Constants2 from "Constants" /* 5729 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5904 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5837 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5903 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
 import UserStore from "UserStore" /* 1386 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5754 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5817 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -152,13 +152,16 @@ export function useMaxQuality(participant) {
     return tmp3;
   }, items3);
 }
-export function trackStreamSettingsUpdate(preset, resolution, frameRate, sound) {
+export function trackStreamSettingsUpdate(preset, resolution, fps, sound, streamDrawingEnabled) {
   let guildPremiumTier;
   let premiumTier;
-  let tmp10;
+  let tmp11;
+  if (streamDrawingEnabled === undefined) {
+    streamDrawingEnabled = ApplicationStreamingSettingsStore.getState().streamDrawingEnabled;
+  }
   let closure_0 = preset;
   let closure_1 = resolution;
-  let closure_2 = frameRate;
+  let closure_2 = fps;
   const found = authStore2.find((preset) => (null == preset.preset || preset.preset === closure_0) && preset.resolution === closure_1 && preset.fps === closure_2);
   const currentUser = UserStore.getCurrentUser();
   const guildId = RTCConnectionStore.getGuildId();
@@ -173,7 +176,7 @@ export function trackStreamSettingsUpdate(preset, resolution, frameRate, sound) 
   if (currentUser != null) {
     premiumType = currentUser.premiumType;
   }
-  const obj = { user_premium_tier: premiumType, guild_premium_tier: premiumTier, stream_quality_user_premium_tier: tmp10, stream_quality_guild_premium_tier: guildPremiumTier, stream_quality_preset: preset, stream_quality_resolution: resolution, stream_quality_frame_rate: frameRate, soundshare_enabled: sound };
+  const obj = { user_premium_tier: premiumType, guild_premium_tier: premiumTier, stream_quality_user_premium_tier: tmp11, stream_quality_guild_premium_tier: guildPremiumTier, stream_quality_preset: preset, stream_quality_resolution: resolution, stream_quality_frame_rate: fps, soundshare_enabled: sound, stream_drawing_enabled: streamDrawingEnabled };
   premiumTier = undefined;
   if (guild != null) {
     premiumTier = guild.premiumTier;
@@ -182,9 +185,9 @@ export function trackStreamSettingsUpdate(preset, resolution, frameRate, sound) 
   if (found != null) {
     quality = found.quality;
   }
-  tmp10 = null;
+  tmp11 = null;
   if (null != quality) {
-    tmp10 = closure_15[found.quality];
+    tmp11 = closure_15[found.quality];
   }
   guildPremiumTier = undefined;
   if (found != null) {

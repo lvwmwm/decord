@@ -1,20 +1,20 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 16990
+// Function ID: 16991
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1071, 21, 560, 1262, 1377, 1116, 1150, 1112, 1378, 1284, 5595, 5617, 11937, 16957, 16144, 2]
+// Dependencies: [5, 17, 1071, 21, 560, 1262, 1377, 1116, 1150, 1112, 1378, 1284, 5599, 5621, 11815, 16991, 16177, 2]
 
-// Module 16956 (UploadIntlDataSetting)
+// Module 16990 (UploadIntlDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AssetJsonUtils from "AssetJsonUtils" /* 1116 */;
 import AssetRegistry from "AssetRegistry" /* 1150 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16144 */;
-import FileUpIcon from "FileUpIcon" /* 16957 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16177 */;
+import FileUpIcon from "FileUpIcon" /* 16991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
 import module_560 from "module_560" /* 560 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

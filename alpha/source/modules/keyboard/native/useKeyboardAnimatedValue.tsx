@@ -1,14 +1,14 @@
-// Module ID: 7077
-// Function ID: 7078
+// Module ID: 6923
+// Function ID: 6924
 // Name: useKeyboardAnimatedValue
-// Dependencies: [19, 1653, 1378, 5123, 7078, 2]
+// Dependencies: [19, 1653, 1378, 5127, 6924, 2]
 // Exports: default
 
-// Module 7077 (useKeyboardAnimatedValue)
+// Module 6923 (useKeyboardAnimatedValue)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5123 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 7078 */;
+import timing_timing from "timing/timing" /* 5127 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6924 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 9130
-// Function ID: 9131
+// Module ID: 9009
+// Function ID: 9010
 // Name: useCheckoutPlanPriceString
-// Dependencies: [19, 9112, 1378, 9131, 2]
+// Dependencies: [19, 8977, 1378, 9010, 2]
 // Exports: useCheckoutPlan, useCheckoutPlanDiscountPrices, useCheckoutPlanPriceString
 
-// Module 9130 (useCheckoutPlanPriceString)
-import NativeCheckoutStore from "NativeCheckoutStore" /* 9112 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 9131 */;
+// Module 9009 (useCheckoutPlanPriceString)
+import NativeCheckoutStore from "NativeCheckoutStore" /* 8977 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 9010 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f94501 = (orderRequired) => orderRequired.orderRequired;
-const f94502 = (getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord();
+const f94645 = (orderRequired) => orderRequired.orderRequired;
+const f94646 = (getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord();
 let react = react_mod;
 const useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
 const result = size.fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");
@@ -25,8 +25,8 @@ export function useCheckoutPlan(arg0) {
   let closure_2;
   let items;
   _require = arg0;
-  const tmp = useNativeCheckoutStore(f94501);
-  const tmp2 = useNativeCheckoutStore(f94502);
+  const tmp = useNativeCheckoutStore(f94645);
+  const tmp2 = useNativeCheckoutStore(f94646);
   dependencyMap = tmp2;
   const obj = require("PlatformUtils");
   const tmp3 = obj.isIOS() && tmp;
@@ -57,8 +57,8 @@ export function useCheckoutPlanDiscountPrices(productId, discountedPriceString) 
   let closure_1;
   let closure_2;
   _require = productId;
-  let tmp = useNativeCheckoutStore(f94501);
-  const tmp2 = useNativeCheckoutStore(f94502);
+  let tmp = useNativeCheckoutStore(f94645);
+  const tmp2 = useNativeCheckoutStore(f94646);
   let obj = require("PlatformUtils");
   const tmp3 = obj.isIOS() && tmp;
   react = tmp3;
@@ -121,8 +121,8 @@ export function useCheckoutPlanPriceString(productId, stateFromStores) {
     priceString = null;
   }
   _require = productId;
-  let tmp2 = useNativeCheckoutStore(f94501);
-  const tmp3 = useNativeCheckoutStore(f94502);
+  let tmp2 = useNativeCheckoutStore(f94645);
+  const tmp3 = useNativeCheckoutStore(f94646);
   dependencyMap = tmp3;
   let obj = require("PlatformUtils");
   const tmp4 = obj.isIOS() && tmp2;

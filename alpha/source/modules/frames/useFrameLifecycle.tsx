@@ -1,14 +1,14 @@
-// Module ID: 18699
-// Function ID: 18700
+// Module ID: 18740
+// Function ID: 18741
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6624, 10622, 18700, 18701, 6659, 2150, 5554, 2]
+// Dependencies: [32, 5, 19, 6811, 9855, 18741, 18742, 6845, 2150, 5558, 2]
 // Exports: default
 
-// Module 18699 (useFrameLifecycle)
+// Module 18740 (useFrameLifecycle)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6624 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -67,8 +67,8 @@ export default function useFrameLifecycle(applicationId) {
       obj10 = { state: obj.Loading, frame: tmp3 };
       const obj7 = { state: obj.Loading, frame: tmp3 };
     } else if (isLoading) {
-      obj10 = { state: obj.Loading, frame: "r" };
-      const obj8 = { state: obj.Loading, frame: "r" };
+      obj10 = { state: obj.Loading, frame: "Array" };
+      const obj8 = { state: obj.Loading, frame: "Array" };
     } else {
       if (null != data) {
         if (tmp7) {

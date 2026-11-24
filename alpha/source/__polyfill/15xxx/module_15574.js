@@ -1,26 +1,21 @@
 // Module ID: 15574
 // Function ID: 15575
-// Dependencies: [15563, 15538]
+// Dependencies: [15575]
 
 // Module 15574
-import _mod15538 from "module_15538" /* 15538 */;
-import module_15563 from "module_15563" /* 15563 */;
+import _mod15575 from "module_15575" /* 15575 */;
 
-let _moduleResult = module_15563(_mod15538.document);
-if (_moduleResult) {
-  const _module1 = module_15563;
-  _moduleResult = _module1(_mod15538.document.createElement);
-}
-let c2 = _moduleResult;
 
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod15538.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
+export default (arg0, arg1) => {
+  let tmp3 = _mod15575[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod15575;
+    if (!arg1) {
+      obj = {};
+    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
   }
-  return element;
+  return tmp3;
 };

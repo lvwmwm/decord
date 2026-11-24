@@ -1,29 +1,29 @@
-// Module ID: 9903
-// Function ID: 9904
+// Module ID: 14050
+// Function ID: 14051
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 9776, 21, 8997, 9904, 7388, 9798, 9906, 9908, 9788, 4913, 575, 5592, 9910, 9911, 9809, 1112, 2117, 4735, 9912, 5504, 2]
+// Dependencies: [19, 17, 8620, 21, 8617, 13181, 7198, 8642, 14051, 14053, 8632, 4917, 575, 5596, 14055, 14056, 8653, 1112, 2117, 4739, 14057, 5508, 2]
 // Exports: default
 
-// Module 9903 (GameProfileDetails)
+// Module 14050 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1112 */;
 import Server from "Server" /* 2117 */;
-import DateUtilsAll from "DateUtils" /* 4735 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import LinkingDefault from "Linking" /* 5592 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7388 */;
-import PlatformType from "PlatformType" /* 8997 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 9776 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9788 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9798 */;
-import SKUUtils from "SKUUtils" /* 9809 */;
-import ScreenIcon from "ScreenIcon" /* 9904 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9906 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9908 */;
+import DateUtilsAll from "DateUtils" /* 4739 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import LinkingDefault from "Linking" /* 5596 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7198 */;
+import PlatformType from "PlatformType" /* 8617 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8620 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 8632 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 8642 */;
+import SKUUtils from "SKUUtils" /* 8653 */;
+import ScreenIcon from "ScreenIcon" /* 13181 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 14051 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 14053 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c9;

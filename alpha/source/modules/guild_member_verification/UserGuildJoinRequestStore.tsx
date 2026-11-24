@@ -1,14 +1,14 @@
-// Module ID: 4947
-// Function ID: 4948
+// Module ID: 4951
+// Function ID: 4952
 // Name: UserGuildJoinRequestStore
-// Dependencies: [1386, 4948, 504, 4776, 572, 2]
+// Dependencies: [1386, 4952, 504, 4780, 572, 2]
 // Exports: joinRequestFromServer
 
-// Module 4947 (UserGuildJoinRequestStore)
+// Module 4951 (UserGuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4948 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4780 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4952 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

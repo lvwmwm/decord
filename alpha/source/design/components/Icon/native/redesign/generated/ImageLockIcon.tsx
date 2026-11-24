@@ -1,14 +1,14 @@
-// Module ID: 7686
-// Function ID: 7687
+// Module ID: 7025
+// Function ID: 7026
 // Name: ImageLockIcon
-// Dependencies: [19, 21, 575, 5599, 7666, 2]
+// Dependencies: [19, 21, 575, 5603, 7005, 2]
 // Exports: ImageLockIcon
 
-// Module 7686 (ImageLockIcon)
+// Module 7025 (ImageLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 7666 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 7005 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 19553
-// Function ID: 19554
+// Module ID: 19597
+// Function ID: 19598
 // Name: JankNavigationReporter
-// Dependencies: [5090, 17526, 17530, 17531, 5092, 2]
+// Dependencies: [5094, 17564, 17568, 17569, 5096, 2]
 
-// Module 19553 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 5090 */;
-import getJankScreenName from "getJankScreenName" /* 17526 */;
-import react_nativeDefault from "react-native" /* 17530 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 17531 */;
+// Module 19597 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 5094 */;
+import getJankScreenName from "getJankScreenName" /* 17564 */;
+import react_nativeDefault from "react-native" /* 17568 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 17569 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "disabled", _screensBeforeDispatch: "isArray" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "sa", _screensBeforeDispatch: "isArray" });
   }
   attach() {
     const self = this;
@@ -102,7 +102,7 @@ class JankNavigationReporter {
         }
         let isChatLockedOpen = null != chatScreens && _screensBeforeDispatch.chatScreens === chatScreens2.chatScreens && _screensBeforeDispatch.expectedScreenIds === chatScreens2.expectedScreenIds;
         if (!isChatLockedOpen) {
-          const tmp4Result = tmp4(5092);
+          const tmp4Result = tmp4(5096);
           isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
         }
         tmp6 = isChatLockedOpen;
@@ -116,4 +116,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.native.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "disabled", _screensBeforeDispatch: "isArray" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "sa", _screensBeforeDispatch: "isArray" });

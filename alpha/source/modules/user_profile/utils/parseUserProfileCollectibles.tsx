@@ -1,10 +1,10 @@
-// Module ID: 6964
-// Function ID: 6965
+// Module ID: 6051
+// Function ID: 6052
 // Name: parseUserProfileCollectibles
 // Dependencies: [2112, 2]
 // Exports: default
 
-// Module 6964 (parseUserProfileCollectibles)
+// Module 6051 (parseUserProfileCollectibles)
 import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles1 = collectibles.collectibles;
   }
   if (null == collectibles1) {
-    return { collectibles: "np", profileEffect: "channelId", profileFrame: "getCurrentUser" };
+    return { collectibles: "sa", profileEffect: "isArray", profileFrame: "isArray" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;

@@ -1,22 +1,22 @@
-// Module ID: 18142
-// Function ID: 18143
+// Module ID: 18181
+// Function ID: 18182
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1386, 21, 14462, 8010, 14467, 18093, 575, 504, 6342, 9456, 6864, 11958, 9765, 9774, 8012, 18143, 2119, 10043, 10058, 18145, 1112, 18147, 5504, 4969, 6638, 11, 671, 7030, 5600, 18148, 2]
+// Dependencies: [19, 17, 1386, 21, 14731, 8447, 14736, 18132, 575, 504, 6645, 8572, 7389, 8701, 8604, 8613, 8449, 18182, 2119, 8782, 8800, 18184, 1112, 18186, 5508, 4973, 6824, 11, 671, 6026, 5604, 18187, 2]
 // Exports: default
 
-// Module 18142 (GamingLikeEntryRow)
+// Module 18181 (GamingLikeEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import utils from "utils" /* 8010 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8012 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
-import BadgesAll from "Badges" /* 14462 */;
-import TrendingType from "TrendingType" /* 14467 */;
+import utils from "utils" /* 8447 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8449 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8782 */;
+import BadgesAll from "Badges" /* 14731 */;
+import TrendingType from "TrendingType" /* 14736 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18093 */;
+import createICYMIStyles from "createICYMIStyles" /* 18132 */;
 import size_mod from "module_2" /* 2 */;
 
 let Badge, GameShareModal;
@@ -165,7 +165,7 @@ export default function GamingLikeEntryRow(content) {
   }, items2);
   const items3 = [content];
   const callback1 = react.useCallback(() => {
-    const promise = asyncRequire(18143, dependencyMap.paths);
+    const promise = asyncRequire(18182, dependencyMap.paths);
     promise.then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {

@@ -1,21 +1,21 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 13961
+// Function ID: 13962
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4913, 575, 1653, 10165, 5123, 1186, 10168, 5173, 1706, 7017, 5476, 10169, 10149, 2]
+// Dependencies: [32, 19, 17, 21, 4917, 575, 1653, 11860, 5127, 1186, 13962, 5177, 1706, 7354, 5480, 13963, 13953, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 10167 (MediaModalOverlayFooter)
+// Module 13961 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5123 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 10165 */;
+import timing_timing from "timing/timing" /* 5127 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5177 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11860 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let closure_0, closure_1, closure_2, flag, flag2, flag3, num3, obj1, result2, result3, set, str, str2, tmp23, tmp39, translationY;
@@ -28,7 +28,7 @@ let tmp3;
 const _mod1653 = tmp(1653);
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "channel" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "analyticsLocations" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "Array" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;

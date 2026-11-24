@@ -1,29 +1,29 @@
-// Module ID: 17249
-// Function ID: 17250
+// Module ID: 17287
+// Function ID: 17288
 // Name: UserSettingsDesignSystemNavigator
-// Dependencies: [32, 19, 17, 21, 4913, 575, 7813, 5504, 7811, 7348, 7045, 7102, 12249, 15286, 6545, 5511, 7092, 7095, 6429, 17250, 7029, 5929, 7347, 7349, 2]
+// Dependencies: [32, 19, 17, 21, 4917, 575, 7757, 5508, 7755, 6014, 6018, 7072, 11468, 15307, 6737, 5515, 7229, 7065, 6004, 17288, 7618, 5989, 7125, 7127, 2]
 // Exports: default
 
-// Module 17249 (UserSettingsDesignSystemNavigator)
+// Module 17287 (UserSettingsDesignSystemNavigator)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
-import ButtonGroup2 from "ButtonGroup" /* 6545 */;
-import TableRow from "TableRow" /* 7045 */;
-import Navigator from "Navigator" /* 7092 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 7095 */;
-import _mod7102 from "module_7102" /* 7102 */;
-import TableRowGroup2 from "TableRowGroup" /* 7348 */;
-import ModalScreen2 from "ModalScreen" /* 7811 */;
-import ModalContent2 from "ModalContent" /* 7813 */;
-import ModalFooter2 from "ModalFooter" /* 12249 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 15286 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
+import TableRowGroup2 from "TableRowGroup" /* 6014 */;
+import TableRow from "TableRow" /* 6018 */;
+import ButtonGroup2 from "ButtonGroup" /* 6737 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7065 */;
+import _mod7072 from "module_7072" /* 7072 */;
+import Navigator from "Navigator" /* 7229 */;
+import ModalScreen2 from "ModalScreen" /* 7755 */;
+import ModalContent2 from "ModalContent" /* 7757 */;
+import ModalFooter2 from "ModalFooter" /* 11468 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 15307 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let screen;
@@ -58,7 +58,7 @@ function HomeScreen(navigation) {
   let obj = { children: closure_7(DemoScreen, obj2) };
   obj2 = { title: "Header variants", description: "Each row opens a screen with a different header setup.", children: closure_7(closure_6, obj3) };
   obj3 = { style: closure_9().fullWidth, children: closure_7(TableRowGroup, obj4) };
-  const ModalScreen = navigation(7811).ModalScreen;
+  const ModalScreen = navigation(7755).ModalScreen;
   obj4 = {
     hasIcons: false,
     children: items.map((screen) => {
@@ -74,7 +74,7 @@ function HomeScreen(navigation) {
       return closure_1_7(navigation(dependencyMap[10]).TableRow, obj, screen);
     })
   };
-  TableRowGroup = navigation(7348).TableRowGroup;
+  TableRowGroup = navigation(6014).TableRowGroup;
   return closure_7(ModalScreen, obj);
 }
 function SimpleScreen(arg0) {
@@ -88,7 +88,7 @@ function SimpleScreen(arg0) {
 function FullscreenScreen() {
   let obj3;
   const tmp = closure_9();
-  const obj = _mod7102;
+  const obj = _mod7072;
   const headerHeight = obj.useHeaderHeight();
   const obj2 = { children: metroImportDefault(metroRequire, obj3) };
   obj3 = { style: items, children: metroImportDefault(DemoScreen, obj4) };
@@ -342,7 +342,7 @@ export default function UserSettingsDesignSystemNavigator() {
   [first1, tmp7] = react.useState("center");
   let obj = { children: closure_8(Stack, obj2) };
   obj2 = { spacing: first1(575).space.PX_16, style: tmp.container, children: items };
-  Stack = value(5929).Stack;
+  Stack = value(5989).Stack;
   const obj3 = {
     title: "Gradient",
     value,
@@ -353,11 +353,11 @@ export default function UserSettingsDesignSystemNavigator() {
       return closure_1_7(first(dependencyMap[23]).TableRadioRow, { label: label.label, value }, value);
     })
   };
-  const TableRadioGroup = value(7347).TableRadioGroup;
+  const TableRadioGroup = value(7125).TableRadioGroup;
   items = [closure_7(TableRadioGroup, obj3), , ];
   obj4 = { title: "Title alignment", value: first1, onChange: tmp7, hasIcons: false, children: items1 };
-  const TableRadioGroup2 = value(7347).TableRadioGroup;
-  items1 = [closure_7(value(7349).TableRadioRow, { label: "Center", value: "center" }), closure_7(value(7349).TableRadioRow, { label: "Left", value: "left" })];
+  const TableRadioGroup2 = value(7125).TableRadioGroup;
+  items1 = [closure_7(value(7127).TableRadioRow, { label: "Center", value: "center" }), closure_7(value(7127).TableRadioRow, { label: "Left", value: "left" })];
   items[1] = closure_8(TableRadioGroup2, obj4);
   const obj5 = {
     onPress: function openNavigator() {
@@ -373,6 +373,6 @@ export default function UserSettingsDesignSystemNavigator() {
     },
     text: "Show Navigator"
   };
-  items[2] = closure_7(value(5511).Button, obj5);
+  items[2] = closure_7(value(5515).Button, obj5);
   return closure_7(closure_5, obj);
 };

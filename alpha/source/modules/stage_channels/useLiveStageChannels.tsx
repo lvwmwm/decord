@@ -1,15 +1,15 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17740
+// Function ID: 17741
 // Name: useLiveStageChannels
-// Dependencies: [4762, 4845, 4767, 4770, 504, 1254, 11, 2]
+// Dependencies: [4766, 4849, 4771, 4774, 504, 1254, 11, 2]
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 17702 (useLiveStageChannels)
+// Module 17740 (useLiveStageChannels)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import StageInstanceStore from "StageInstanceStore" /* 4767 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
+import StageInstanceStore from "StageInstanceStore" /* 4771 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

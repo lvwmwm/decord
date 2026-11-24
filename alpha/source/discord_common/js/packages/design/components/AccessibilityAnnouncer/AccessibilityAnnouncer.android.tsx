@@ -1,11 +1,11 @@
-// Module ID: 4922
-// Function ID: 4923
+// Module ID: 4926
+// Function ID: 4927
 // Name: AccessibilityAnnouncer
-// Dependencies: [17, 4923, 2]
+// Dependencies: [17, 4927, 2]
 
-// Module 4922 (AccessibilityAnnouncer)
+// Module 4926 (AccessibilityAnnouncer)
 import react_native from "react-native" /* 17 */;
-import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4923 */;
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 4927 */;
 import size from "module_2" /* 2 */;
 
 const AccessibilityInfo = react_native.AccessibilityInfo;

@@ -1,13 +1,13 @@
-// Module ID: 14995
-// Function ID: 14996
+// Module ID: 15034
+// Function ID: 15035
 // Name: LocalAppDetectionUtils
-// Dependencies: [5, 6427, 1071, 14994, 1358, 6450, 1255, 572, 2]
+// Dependencies: [5, 6715, 1071, 15033, 1358, 8272, 1255, 572, 2]
 // Exports: detectLocalApps
 
-// Module 14995 (LocalAppDetectionUtils)
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14994 */;
+// Module 15034 (LocalAppDetectionUtils)
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15033 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConsentStore from "ConsentStore" /* 6427 */;
+import ConsentStore from "ConsentStore" /* 6715 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

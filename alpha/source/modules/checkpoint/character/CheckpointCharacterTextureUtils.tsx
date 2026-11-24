@@ -1,51 +1,14 @@
-// Module ID: 12543
-// Function ID: 12544
+// Module ID: 12463
+// Function ID: 12464
 // Name: CheckpointCharacterTextureUtils
-// Dependencies: [2022, 12544, 2]
-// Exports: getCheckpointCharacterAuraUrl, getCheckpointCharacterTextureRole, getCheckpointCharacterTextureScale
+// Dependencies: [2022, 12464, 2]
+// Exports: getCheckpointCharacterTextureRole, getCheckpointCharacterTextureScale, getCheckpointCharacterTextureUrl
 
-// Module 12543 (CheckpointCharacterTextureUtils)
+// Module 12463 (CheckpointCharacterTextureUtils)
 import react_nativeDefault from "react-native" /* 2022 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12544 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12464 */;
 import size from "module_2" /* 2 */;
 
-function getCheckpointCharacterTextureUrl(name, textureScale) {
-  let columns;
-  let height;
-  let rows;
-  let url;
-  let width;
-  let widthAt1x;
-  ({ url, width, height, widthAt1x } = CheckpointCharacterTextureAssets.CHECKPOINT_CHARACTER_TEXTURE_NAME_TO_ASSET[name]);
-  if (null == widthAt1x) {
-    return url;
-  } else {
-    const _Math4 = Math;
-    const result = 4096 / Math.max(width, height);
-    const _Math5 = Math;
-    const bound = Math.min(textureScale * widthAt1x / width, result);
-    let tmp = result >= 1;
-    if (1 <= result) {
-      const _Math = Math;
-      tmp = textureScale >= Math.round(width / widthAt1x);
-    }
-    if (bound < 1) {
-      if (!tmp) {
-        let tmp3 = closure_10[name];
-        if (tmp3 == null) {
-          tmp3 = closure_9;
-        }
-        ({ columns, rows } = tmp3);
-        const _Math2 = Math;
-        const _Math3 = Math;
-        const result1 = columns * Math.round(width / columns * bound);
-        const _HermesInternal = HermesInternal;
-        return "" + url + "?width=" + result1 + "&height=" + rows * Math.round(height / rows * bound);
-      }
-    }
-    return url;
-  }
-}
 const CheckpointCharacterTextureType = { SLOT: "slot", TRAIT: "trait", LAYOUT: "layout", ALWAYS: "always" };
 const re4 = /^tex_(aura|base_\d+|outfit)_/;
 const re5 = /^tex_(headwear|shoes|wearable|face)_(\d+)_/;
@@ -93,31 +56,61 @@ export function getCheckpointCharacterTextureRole(name) {
     }
   }
 }
-export function getCheckpointCharacterTextureScale(c4, height, stateFromStores) {
-  let flag = stateFromStores;
-  if (stateFromStores === undefined) {
-    flag = false;
+export function getCheckpointCharacterTextureScale(c4, height) {
+  const result = Math.max(c4, height) / 1440;
+  let closure_0 = result * react_nativeDefault();
+  let found = items.find((item) => item >= closure_0);
+  if (found == null) {
+    found = closure_13;
   }
-  let closure_0;
-  if (flag) {
-    return closure_12;
-  } else {
-    const _Math = Math;
-    const result = Math.max(c4, height) / 1440;
-    closure_0 = result * react_nativeDefault();
-    let found = items.find((item) => item >= closure_0);
-    if (found == null) {
-      found = closure_13;
-    }
-    return found;
-  }
+  return found;
 }
-export { getCheckpointCharacterTextureUrl };
-export function getCheckpointCharacterAuraUrl(name, textureScale, flag) {
-  let num = 1;
-  const tmp = getCheckpointCharacterTextureUrl;
-  if (!flag) {
-    num = textureScale;
+export function getCheckpointCharacterTextureUrl(name, textureScale, flag) {
+  let columns;
+  let height;
+  let rows;
+  let url;
+  let width;
+  let widthAt1x;
+  let tmp = textureScale;
+  const tmp2 = flag;
+  if (tmp2) {
+    let num2 = 1;
+    if (!name.startsWith("tex_aura_")) {
+      num2 = 1;
+      if ("tex_wireframe_spritesheet" !== name) {
+        num2 = closure_12;
+      }
+    }
+    tmp = num2;
   }
-  return tmp(name, num);
+  ({ url, width, height, widthAt1x } = CheckpointCharacterTextureAssets.CHECKPOINT_CHARACTER_TEXTURE_NAME_TO_ASSET[name]);
+  if (null == widthAt1x) {
+    return url;
+  } else {
+    const _Math4 = Math;
+    const result = 4096 / Math.max(width, height);
+    const _Math5 = Math;
+    const bound = Math.min(tmp * widthAt1x / width, result);
+    let tmp3 = result >= 1;
+    if (1 <= result) {
+      const _Math = Math;
+      tmp3 = tmp >= Math.round(width / widthAt1x);
+    }
+    if (bound < 1) {
+      if (!tmp3) {
+        let tmp5 = closure_10[name];
+        if (tmp5 == null) {
+          tmp5 = closure_9;
+        }
+        ({ columns, rows } = tmp5);
+        const _Math2 = Math;
+        const _Math3 = Math;
+        const result1 = columns * Math.round(width / columns * bound);
+        const _HermesInternal = HermesInternal;
+        return "" + url + "?width=" + result1 + "&height=" + rows * Math.round(height / rows * bound);
+      }
+    }
+    return url;
+  }
 }

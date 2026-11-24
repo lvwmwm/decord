@@ -1,19 +1,19 @@
-// Module ID: 14352
-// Function ID: 14353
+// Module ID: 13888
+// Function ID: 13889
 // Name: useConjureAppChannelSoundButton
-// Dependencies: [19, 6623, 6624, 6865, 5557, 14353, 504, 14354, 10981, 7034, 1112, 4190, 5595, 10622, 2]
+// Dependencies: [19, 6810, 6811, 7476, 5561, 13889, 504, 13890, 10257, 7041, 1112, 4192, 5599, 9855, 2]
 // Exports: default
 
-// Module 14352 (useConjureAppChannelSoundButton)
+// Module 13888 (useConjureAppChannelSoundButton)
 import intl2 from "intl" /* 1112 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
-import FramesConstants from "FramesConstants" /* 6624 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10622 */;
-import VoiceXIcon from "VoiceXIcon" /* 10981 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5561 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9855 */;
+import VoiceXIcon from "VoiceXIcon" /* 10257 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6623 */;
+import FramesStore from "FramesStore" /* 6810 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export default function useConjureAppChannelSoundButton(application_id, arg1) {
           onPress() {
                   let intl;
                   if (stateFromStores) {
-                    const obj = { text: intl.string(_modDef4190.W8Q9fy), icon: VoiceXIcon.VoiceXIcon };
+                    const obj = { text: intl.string(_modDef4192.W8Q9fy), icon: VoiceXIcon.VoiceXIcon };
                     const open = ToastActionCreatorsDefault.open;
                     ToastActionCreatorsDefault;
                     intl = intl2.intl;

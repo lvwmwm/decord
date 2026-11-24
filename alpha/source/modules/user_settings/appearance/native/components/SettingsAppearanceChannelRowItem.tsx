@@ -1,17 +1,17 @@
-// Module ID: 16697
-// Function ID: 16698
+// Module ID: 16731
+// Function ID: 16732
 // Name: SettingsAppearanceChannelRowItem
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 1186, 10124, 5504, 2]
+// Dependencies: [19, 17, 1071, 21, 4917, 575, 1186, 9475, 5508, 2]
 // Exports: default
 
-// Module 16697 (SettingsAppearanceChannelRowItem)
+// Module 16731 (SettingsAppearanceChannelRowItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import GroupDMAvatar from "GroupDMAvatar" /* 10124 */;
+import GroupDMAvatar from "GroupDMAvatar" /* 9475 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import native_mod from "native" /* 1186 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -95,14 +95,14 @@ export default function ChannelRowItem(isUnread) {
   items3 = [, ];
   const obj6 = { style: tmp2.channelItemContent, children: items4 };
   const obj8 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "heading-sm/semibold", children: title };
-  items3[0] = React3(tmp6(5504).Text, obj8);
+  items3[0] = React3(tmp6(5508).Text, obj8);
   const obj9 = { animated: true, style: animatedStyles.textMuted, variant: "body-xs/medium", children: timestamp };
-  items3[1] = React3(tmp6(5504).Text, obj9);
+  items3[1] = React3(tmp6(5508).Text, obj9);
   items4 = [hasOwnProperty(View, obj7), ];
   let tmp5Result2 = null;
   if (null != preview) {
     const obj10 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "heading-sm/medium", lineClamp: 1, children: preview };
-    tmp5Result2 = tmp5(tmp6(5504).Text, obj10);
+    tmp5Result2 = tmp5(tmp6(5508).Text, obj10);
   }
   items4[1] = tmp5Result2;
   items1[2] = hasOwnProperty(View, obj6);

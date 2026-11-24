@@ -1,34 +1,34 @@
-// Module ID: 17943
-// Function ID: 17944
+// Module ID: 17979
+// Function ID: 17980
 // Name: YouBar
-// Dependencies: [5, 19, 17, 4937, 4946, 1386, 16478, 1071, 4759, 21, 4913, 575, 16469, 12827, 11767, 11775, 11954, 16477, 16481, 1653, 5514, 10041, 10046, 9951, 17944, 16013, 504, 8166, 17950, 5090, 5129, 1254, 12, 17951, 2119, 5089, 12109, 6835, 4746, 1112, 8194, 11770, 5173, 1706, 1186, 17965, 17966, 17967, 17972, 17974, 17976, 13307, 4974, 17977, 17978, 2]
+// Dependencies: [5, 19, 17, 4941, 4950, 1386, 16511, 1071, 4763, 21, 4917, 575, 16502, 12746, 11657, 11665, 11837, 16510, 16515, 1653, 5518, 8780, 8785, 14089, 17980, 16046, 504, 11238, 17989, 5094, 5133, 1254, 12, 17990, 2119, 5093, 11999, 8459, 4750, 1112, 7968, 11660, 5177, 1706, 1186, 18004, 18005, 18006, 18011, 18013, 18015, 13233, 4978, 18016, 18017, 2]
 
-// Module 17943 (YouBar)
+// Module 17979 (YouBar)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import dismissible_content from "dismissible_content" /* 4746 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import native from "native" /* 4974 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
-import HapticUtils from "HapticUtils" /* 5129 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
-import transitionToGuild from "transitionToGuild" /* 6835 */;
-import openUserSettings from "openUserSettings" /* 8194 */;
-import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 12109 */;
-import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 17977 */;
-import ConnectionBannerDefault from "ConnectionBanner" /* 17978 */;
+import dismissible_content from "dismissible_content" /* 4750 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import native from "native" /* 4978 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5093 */;
+import HapticUtils from "HapticUtils" /* 5133 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5177 */;
+import openUserSettings from "openUserSettings" /* 7968 */;
+import transitionToGuild from "transitionToGuild" /* 8459 */;
+import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 11999 */;
+import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18016 */;
+import ConnectionBannerDefault from "ConnectionBanner" /* 18017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4941 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
 import UserStore from "UserStore" /* 1386 */;
-import YouBarConstants from "YouBarConstants" /* 16478 */;
+import YouBarConstants from "YouBarConstants" /* 16511 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,6 +71,8 @@ let closure_24 = { code: "(function YouBarTsx3(_,manager){let[startingTranslateX
 let closure_25 = { code: "(function YouBarTsx4(_,success){let[scheduleOnRN,handleNavBetweenGuildsAndDMs]=this.__closure;if(!success)return;scheduleOnRN(handleNavBetweenGuildsAndDMs);})" };
 let closure_26 = react.memo(function YouBar() {
   let DOCK_SPACE_SPRING_CONFIG;
+  let animatedRef;
+  let avatarAnchorRef;
   let intl;
   let items11;
   let items12;
@@ -181,7 +183,7 @@ let closure_26 = react.memo(function YouBar() {
   const youBarCoachmark = tmp2Result21.useYouBarCoachmark({ isCondensed: tmp8 });
   const visibleContent = youBarCoachmark.visibleContent;
   markAsDismissed = youBarCoachmark.markAsDismissed;
-  const animatedRef = youBarCoachmark.animatedRef;
+  ({ animatedRef, avatarAnchorRef } = youBarCoachmark);
   const tmp2Result22 = tmp2(tmp3[25]);
   const showAgeNoticePromoSheet = tmp2Result22.useShowAgeNoticePromoSheet({ visibleContent, markAsDismissed });
   const ref = obj9.useRef(markAsDismissed);
@@ -333,7 +335,7 @@ let closure_26 = react.memo(function YouBar() {
     const coerceGuildsRouteResult = obj.coerceGuildsRoute(getNavigatorCurrentRouteDefault());
     if (null != coerceGuildsRouteResult) {
       const tmpResult = HapticUtils;
-      const result = tmpResult.triggerHapticFeedback(tmp(5129).HapticFeedbackTypes.SOFT);
+      const result = tmpResult.triggerHapticFeedback(tmp(5133).HapticFeedbackTypes.SOFT);
       const params = coerceGuildsRouteResult.params;
       let guildId;
       if (params != null) {
@@ -476,7 +478,7 @@ let closure_26 = react.memo(function YouBar() {
   }
   items12[1] = tmp53Result;
   const obj7 = { gesture: memo3, children: closure_18(ref2, obj8) };
-  obj8 = { style: tmp.youPressable, android_ripple: { color: "transparent" }, accessibilityRole: "button", accessibilityLabel: youBarAccessibilityLabel, accessibilityHint: intl.string(tmp2(tmp3[39]).t.cSgdvE), accessibilityActions: memo2, onAccessibilityAction: callback4, onPressIn: callback1, onPressOut: callback2, onPress: memo1, onLongPress: callback, hitSlop, testID: "you_bar_profile_button", children: closure_18(require("YouBarUser"), { isCondensed: tmp8, onAvatarPress: memo1 }) };
+  obj8 = { style: tmp.youPressable, android_ripple: { color: "transparent" }, accessibilityRole: "button", accessibilityLabel: youBarAccessibilityLabel, accessibilityHint: intl.string(tmp2(tmp3[39]).t.cSgdvE), accessibilityActions: memo2, onAccessibilityAction: callback4, onPressIn: callback1, onPressOut: callback2, onPress: memo1, onLongPress: callback, hitSlop, testID: "you_bar_profile_button", children: closure_18(require("YouBarUser"), { isCondensed: tmp8, onAvatarPress: memo1, avatarCoachmarkAnchorRef: avatarAnchorRef }) };
   const GestureDetector = tmp2(tmp3[42]).GestureDetector;
   intl = tmp2(tmp3[39]).intl;
   items12[2] = closure_18(GestureDetector, obj7);

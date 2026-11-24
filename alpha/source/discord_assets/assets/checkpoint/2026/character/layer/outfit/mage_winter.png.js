@@ -1,8 +1,8 @@
-// Module ID: 6191
-// Function ID: 6192
+// Module ID: 6494
+// Function ID: 6495
 // Dependencies: [2]
 
-// Module 6191
+// Module 6494
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/mage_winter.png.js");

@@ -1,13 +1,13 @@
-// Module ID: 12963
-// Function ID: 12964
+// Module ID: 12882
+// Function ID: 12883
 // Name: TrackSectionHeader
-// Dependencies: [10675, 5930, 1263, 2]
+// Dependencies: [9947, 5990, 1263, 2]
 // Exports: default
 
-// Module 12963 (TrackSectionHeader)
+// Module 12882 (TrackSectionHeader)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 5930 */;
-import AppLauncherStore from "AppLauncherStore" /* 10675 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 5990 */;
+import AppLauncherStore from "AppLauncherStore" /* 9947 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/TrackSectionHeader.tsx");

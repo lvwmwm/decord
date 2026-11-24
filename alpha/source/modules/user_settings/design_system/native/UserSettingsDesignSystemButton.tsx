@@ -1,36 +1,36 @@
-// Module ID: 17207
-// Function ID: 17208
+// Module ID: 17245
+// Function ID: 17246
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1071, 1239, 21, 17208, 5511, 17209, 7591, 10372, 14681, 15261, 8683, 15263, 10365, 15262, 9685, 4913, 575, 1500, 5127, 17210, 2119, 5929, 5504, 11637, 14671, 14677, 14679, 14678, 14676, 14675, 6545, 4974, 1089, 5468, 7047, 9659, 7607, 2]
+// Dependencies: [32, 19, 17, 1071, 1239, 21, 17246, 5515, 17247, 7811, 10311, 10348, 15282, 8457, 15284, 11352, 15283, 8517, 4917, 575, 1500, 5131, 17248, 2119, 5989, 5508, 10959, 10338, 10344, 10346, 10345, 10343, 10342, 6737, 4978, 1089, 5472, 6019, 10447, 8355, 2]
 // Exports: default
 
-// Module 17207 (UserSettingsDesignSystemButton)
+// Module 17245 (UserSettingsDesignSystemButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import LinearGradientDefault from "LinearGradient" /* 5468 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
-import IconButton4 from "IconButton" /* 7591 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8683 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9685 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10365 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11637 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14671 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14675 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 14676 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 14677 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 14678 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 14679 */;
-import ImageButton2 from "ImageButton" /* 14681 */;
-import ToggleButton2 from "ToggleButton" /* 15261 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 15262 */;
-import ToggleIconButton2 from "ToggleIconButton" /* 15263 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17208 */;
+import LinearGradientDefault from "LinearGradient" /* 5472 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
+import IconButton4 from "IconButton" /* 7811 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8457 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8517 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10338 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10342 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 10343 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 10344 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 10345 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 10346 */;
+import ImageButton2 from "ImageButton" /* 10348 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 10959 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 11352 */;
+import ToggleButton2 from "ToggleButton" /* 15282 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 15283 */;
+import ToggleIconButton2 from "ToggleIconButton" /* 15284 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17246 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,8 +48,8 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const AssetRegistryDefault4 = tmp(10372);
-const AssetRegistryDefault12 = tmp(17209);
+const AssetRegistryDefault3 = tmp(10311);
+const AssetRegistryDefault12 = tmp(17247);
 function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;
@@ -157,7 +157,7 @@ function ExampleIconButton(arg0) {
       grow: true,
       loading: tmp5,
       variant,
-      icon: AssetRegistryDefault4
+      icon: AssetRegistryDefault3
     };
     str2 = variant;
     if (variant == null) {
@@ -174,7 +174,7 @@ function ExampleIconButton(arg0) {
       loading: tmp5,
       variant,
       size: buttonSize,
-      icon: AssetRegistryDefault4
+      icon: AssetRegistryDefault3
     };
     str = variant;
     if (variant == null) {
@@ -265,7 +265,7 @@ function ExampleToggleIconButton(variant) {
   const obj = {
     accessibilityLabel: "" + variant + " notifications",
     icon: AssetRegistryDefault,
-    selectedIcon: AssetRegistryDefault3,
+    selectedIcon: AssetRegistryDefault11,
     pressed: first,
     onPress() {
       return closure_1(!first);
@@ -432,7 +432,7 @@ export default function UserSettingsDesignSystemButton() {
   }, []);
   let obj2 = {
     headerRight() {
-      const obj = { onPress, icon: AssetRegistryDefault4, size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
+      const obj = { onPress, icon: AssetRegistryDefault3, size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
       const IconButton = IconButton4.IconButton;
       return authStore(IconButton, obj);
     }
@@ -539,7 +539,7 @@ export default function UserSettingsDesignSystemButton() {
     icon: closure_10(Icon, obj26)
   };
   Button = require("components/Button/Button").Button;
-  obj26 = { source: AssetRegistryDefault5 };
+  obj26 = { source: AssetRegistryDefault10 };
   Icon = require("components/Button/Button").Button.Icon;
   items9 = [closure_10(closure_5, obj24), ];
   const obj27 = { style: tmp.buttonContainer, children: closure_10(Button2, obj28) };
@@ -553,7 +553,7 @@ export default function UserSettingsDesignSystemButton() {
     icon: closure_10(Icon2, obj29)
   };
   Button2 = require("components/Button/Button").Button;
-  obj29 = { variant: "entity", source: AssetRegistryDefault6 };
+  obj29 = { variant: "entity", source: AssetRegistryDefault4 };
   Icon2 = require("components/Button/Button").Button.Icon;
   items9[1] = closure_10(closure_5, obj27);
   items8[1] = closure_11(closure_5, obj23);
@@ -572,7 +572,7 @@ export default function UserSettingsDesignSystemButton() {
     variant: "secondary",
     text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     size: "md",
-    icon: AssetRegistryDefault5
+    icon: AssetRegistryDefault10
   };
   Button3 = require("components/Button/Button").Button;
   items11 = [closure_10(closure_5, obj33), , , ];
@@ -584,7 +584,7 @@ export default function UserSettingsDesignSystemButton() {
     variant: "secondary",
     text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur",
     size: "md",
-    icon: AssetRegistryDefault5,
+    icon: AssetRegistryDefault10,
     iconPosition: "end"
   };
   Button4 = require("components/Button/Button").Button;
@@ -687,13 +687,13 @@ export default function UserSettingsDesignSystemButton() {
   items22 = [closure_11(Stack25, obj57), ];
   const obj58 = { children: items23 };
   const obj59 = { style: tmp.buttonContainer, children: closure_10(ExampleImageButton, obj60) };
-  obj60 = { image: AssetRegistryDefault9, label: "Telegram" };
+  obj60 = { image: AssetRegistryDefault7, label: "Telegram" };
   items23 = [closure_10(closure_5, obj59), , ];
   const obj61 = { style: tmp.buttonContainer, children: closure_10(ExampleImageButton, obj62) };
-  obj62 = { image: AssetRegistryDefault11, label: "WhatsApp" };
+  obj62 = { image: AssetRegistryDefault9, label: "WhatsApp" };
   items23[1] = closure_10(closure_5, obj61);
   const obj63 = { style: tmp.buttonContainer, children: closure_10(ExampleImageButton, obj64) };
-  obj64 = { image: AssetRegistryDefault10, label: "Twitter" };
+  obj64 = { image: AssetRegistryDefault8, label: "Twitter" };
   items23[2] = closure_10(closure_5, obj63);
   items22[1] = closure_11(closure_5, obj58);
   items1[11] = closure_11(Stack24, obj56);
@@ -720,7 +720,7 @@ export default function UserSettingsDesignSystemButton() {
   Stack29 = require("Stack/Stack").Stack;
   const obj71 = {
     variant: "secondary",
-    icon: AssetRegistryDefault4,
+    icon: AssetRegistryDefault3,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -731,7 +731,7 @@ export default function UserSettingsDesignSystemButton() {
   items26 = [closure_10(IconButton, obj71), , ];
   const obj72 = {
     variant: "secondary",
-    icon: AssetRegistryDefault4,
+    icon: AssetRegistryDefault3,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -742,7 +742,7 @@ export default function UserSettingsDesignSystemButton() {
   items26[1] = closure_10(IconButton2, obj72);
   const obj73 = {
     variant: "secondary",
-    icon: AssetRegistryDefault4,
+    icon: AssetRegistryDefault3,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -760,22 +760,22 @@ export default function UserSettingsDesignSystemButton() {
   items27 = [closure_10(Stack31, obj75), , ];
   const obj76 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: closure_11(Stack32, obj77) };
   obj77 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: items28 };
-  const obj78 = { image: AssetRegistryDefault8, label: "Label", showLabel: true };
+  const obj78 = { image: AssetRegistryDefault6, label: "Label", showLabel: true };
   Stack32 = require("Stack/Stack").Stack;
   items28 = [closure_10(ExampleImageButton, obj78), , ];
-  const obj79 = { image: AssetRegistryDefault6, label: "Label", showLabel: true };
+  const obj79 = { image: AssetRegistryDefault4, label: "Label", showLabel: true };
   items28[1] = closure_10(ExampleImageButton, obj79);
-  const obj80 = { image: AssetRegistryDefault7, label: "Label", showLabel: true };
+  const obj80 = { image: AssetRegistryDefault5, label: "Label", showLabel: true };
   items28[2] = closure_10(ExampleImageButton, obj80);
   items27[1] = closure_10(closure_6, obj76);
   const obj81 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: closure_11(Stack33, obj82) };
   obj82 = { direction: "horizontal", justify: "center", style: tmp.buttonContainer, children: items29 };
-  const obj83 = { image: AssetRegistryDefault9, label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj83 = { image: AssetRegistryDefault7, label: "Supercalifragilisticexpialidocious", showLabel: true };
   Stack33 = require("Stack/Stack").Stack;
   items29 = [closure_10(ExampleImageButton, obj83), , ];
-  const obj84 = { image: AssetRegistryDefault11, label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj84 = { image: AssetRegistryDefault9, label: "Supercalifragilisticexpialidocious", showLabel: true };
   items29[1] = closure_10(ExampleImageButton, obj84);
-  const obj85 = { image: AssetRegistryDefault10, label: "Supercalifragilisticexpialidocious", showLabel: true };
+  const obj85 = { image: AssetRegistryDefault8, label: "Supercalifragilisticexpialidocious", showLabel: true };
   items29[2] = closure_10(ExampleImageButton, obj85);
   items27[2] = closure_10(closure_6, obj81);
   items1[13] = closure_11(Stack30, obj74);
@@ -916,7 +916,7 @@ export default function UserSettingsDesignSystemButton() {
   items1[19] = closure_11(Stack48, obj125);
   items48 = [closure_10(closure_6, obj4), ];
   const obj127 = {
-    icon: AssetRegistryDefault4,
+    icon: AssetRegistryDefault3,
     onPress() {
 
     },

@@ -1,17 +1,17 @@
-// Module ID: 16373
-// Function ID: 16374
+// Module ID: 16406
+// Function ID: 16407
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4913, 575, 7030, 1112, 7151, 2]
+// Dependencies: [19, 21, 4917, 575, 6026, 1112, 7121, 2]
 // Exports: default
 
-// Module 16373 (BountiesModalCloseButton)
+// Module 16406 (BountiesModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Pressables from "Pressables" /* 7030 */;
-import XSmallIcon2 from "XSmallIcon" /* 7151 */;
+import Pressables from "Pressables" /* 6026 */;
+import XSmallIcon2 from "XSmallIcon" /* 7121 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

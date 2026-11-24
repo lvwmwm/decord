@@ -1,12 +1,12 @@
-// Module ID: 6928
-// Function ID: 6929
+// Module ID: 7536
+// Function ID: 7537
 // Name: conjureChatHistory
-// Dependencies: [32, 6927, 11, 2]
+// Dependencies: [32, 7535, 11, 2]
 // Exports: foldDividers, messagesFromHistory
 
-// Module 6928 (conjureChatHistory)
+// Module 7536 (conjureChatHistory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import conjureStepTimeline from "conjureStepTimeline" /* 6927 */;
+import conjureStepTimeline from "conjureStepTimeline" /* 7535 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

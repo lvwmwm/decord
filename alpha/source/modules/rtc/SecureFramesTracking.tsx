@@ -1,15 +1,15 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 8542
+// Function ID: 8543
 // Name: SecureFramesTracking
-// Dependencies: [4762, 1071, 5650, 8136, 1255, 2]
+// Dependencies: [4766, 1071, 5887, 6256, 1255, 2]
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 9710 (SecureFramesTracking)
+// Module 8542 (SecureFramesTracking)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8136 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5887 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6256 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

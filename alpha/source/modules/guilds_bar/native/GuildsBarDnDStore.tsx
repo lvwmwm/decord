@@ -1,14 +1,14 @@
-// Module ID: 17865
-// Function ID: 17866
+// Module ID: 17903
+// Function ID: 17904
 // Name: GuildsBarDnDStore
-// Dependencies: [6550, 1257, 1653, 1262, 1241, 4828, 2]
+// Dependencies: [6038, 1257, 1653, 1262, 1241, 4832, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 17865 (GuildsBarDnDStore)
+// Module 17903 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import react_native from "react-native" /* 1262 */;
-import _slicedToArray from "_slicedToArray" /* 4828 */;
-import SortedGuildStore from "SortedGuildStore" /* 6550 */;
+import _slicedToArray from "_slicedToArray" /* 4832 */;
+import SortedGuildStore from "SortedGuildStore" /* 6038 */;
 import module_1257 from "module_1257" /* 1257 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "disabled",
+    overSpecs: "sa",
     dropSpecs: "isArray",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
@@ -77,7 +77,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "add" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "analyticsLocations" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -108,7 +108,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Array" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -149,7 +149,7 @@ export function useItemDragState(guildId, flag) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "disabled", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "sa", overState: "isArray", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

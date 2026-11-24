@@ -1,21 +1,21 @@
-// Module ID: 17830
-// Function ID: 17831
+// Module ID: 17868
+// Function ID: 17869
 // Name: WaterwheelsDiscoverHeader
-// Dependencies: [19, 17, 10044, 17823, 21, 575, 4913, 17831, 504, 10215, 17014, 5504, 1112, 2643, 5511, 7040, 17845, 2]
+// Dependencies: [19, 17, 8783, 17861, 21, 575, 4917, 17869, 504, 14393, 17048, 5508, 1112, 2643, 5515, 7623, 17883, 2]
 // Exports: default
 
-// Module 17830 (WaterwheelsDiscoverHeader)
+// Module 17868 (WaterwheelsDiscoverHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef2643 from "module_2643" /* 2643 */;
-import useGameRecordsDefault from "useGameRecords" /* 10215 */;
-import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 17831 */;
-import InterestGameCoverDefault from "InterestGameCover" /* 17845 */;
+import useGameRecordsDefault from "useGameRecords" /* 14393 */;
+import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 17869 */;
+import InterestGameCoverDefault from "InterestGameCover" /* 17883 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10044 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17823 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 8783 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17861 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -88,7 +88,7 @@ export default function WaterwheelsDiscoverHeader() {
   items2 = [closure_8(closure_4, obj3), ];
   if (0 === stateFromStoresArray.length) {
     const obj6 = { variant: "secondary", size: "sm", text: intl3.string(_modDef2643.SCFT8N), icon: closure_7(require("GameControllerIcon").GameControllerIcon, { size: "sm" }), onPress: openPicker };
-    const Button = tmp3(5511).Button;
+    const Button = tmp3(5515).Button;
     intl3 = tmp3(1112).intl;
     tmp9Result = tmp9(Button, obj6);
   } else {
@@ -120,7 +120,7 @@ export default function WaterwheelsDiscoverHeader() {
     const tmp13 = closure_3;
     if (tmp9Result2) {
       const obj11 = { variant: "body-sm/semibold", color: "text-strong", style: tmp2.overflow, children: intl2.formatToPlainString(_modDef2643["OxfP+s"], obj12) };
-      const Text = tmp3(5504).Text;
+      const Text = tmp3(5508).Text;
       intl2 = tmp3(1112).intl;
       obj12 = { count: diff };
       tmp9Result2 = tmp9(Text, obj11);

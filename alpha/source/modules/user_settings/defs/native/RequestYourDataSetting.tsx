@@ -1,23 +1,23 @@
-// Module ID: 16160
-// Function ID: 16161
+// Module ID: 16193
+// Function ID: 16194
 // Name: RequestYourDataSetting
-// Dependencies: [17, 1386, 8712, 1071, 21, 1257, 7402, 1262, 504, 4828, 16161, 1112, 2168, 11937, 16163, 2]
+// Dependencies: [17, 1386, 9414, 1071, 21, 1257, 7212, 1262, 504, 4832, 16194, 1112, 2168, 11815, 16196, 2]
 // Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 16160 (RequestYourDataSetting)
+// Module 16193 (RequestYourDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1112 */;
 import react_native2 from "react-native" /* 1262 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import _slicedToArray from "_slicedToArray" /* 4828 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7402 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
+import _slicedToArray from "_slicedToArray" /* 4832 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7212 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import module_1257 from "module_1257" /* 1257 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,16 +25,16 @@ const require = globalThis.__r;
 let UserSettingsSections;
 let hasOwnProperty;
 let tmp;
-const HarvesterUtils = tmp(16161);
-const f109207 = () => currentUser.getCurrentUser();
-const f109208 = (harvestRequest) => harvestRequest.harvestRequest;
-const f109209 = (isRequesting) => isRequesting.isRequesting;
+const HarvesterUtils = tmp(16194);
+const f109376 = () => currentUser.getCurrentUser();
+const f109377 = (harvestRequest) => harvestRequest.harvestRequest;
+const f109378 = (isRequesting) => isRequesting.isRequesting;
 function useIsHarvestRequestDisabled() {
   const items = [UserStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f109207);
-  const tmp4 = closure_7(f109208, _slicedToArray.shallow);
-  let harvestDisabledResult = closure_7(f109209, _slicedToArray.shallow);
+  const stateFromStores = obj.useStateFromStores(items, f109376);
+  const tmp4 = closure_7(f109377, _slicedToArray.shallow);
+  let harvestDisabledResult = closure_7(f109378, _slicedToArray.shallow);
   let tmp6 = null == stateFromStores;
   if (!tmp6) {
     if (!harvestDisabledResult) {
@@ -92,9 +92,9 @@ let obj = {
     let currentUser;
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f109207);
-    const tmp4 = closure_7(f109208, _slicedToArray.shallow);
-    let harvestDisabledResult = closure_7(f109209, _slicedToArray.shallow);
+    const stateFromStores = obj.useStateFromStores(items, f109376);
+    const tmp4 = closure_7(f109377, _slicedToArray.shallow);
+    let harvestDisabledResult = closure_7(f109378, _slicedToArray.shallow);
     let tmp6 = null == stateFromStores;
     if (!tmp6) {
       if (!harvestDisabledResult) {

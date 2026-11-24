@@ -1,15 +1,15 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 9945
+// Function ID: 9946
 // Name: getFrameSurfaces
-// Dependencies: [1071, 10674, 2150, 5557, 6661, 2]
+// Dependencies: [1071, 9946, 2150, 5561, 6847, 2]
 // Exports: canOpenFrame, isFrameApp
 
-// Module 10673 (getFrameSurfaces)
+// Module 9945 (getFrameSurfaces)
 import Constants from "Constants" /* 1071 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2150 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6661 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10674 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5561 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6847 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9946 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -20,7 +20,7 @@ function getFrameSurfaces(application) {
     const obj5 = AppLauncherUtils;
     if (obj5.isRealApplication(application)) {
       const tmp19Result = EmbeddedSurfaceUtils;
-      let result = tmp19Result.supportsEmbeddedSurface(application, tmp19(5557).EmbeddedSurfaceType.MAIN);
+      let result = tmp19Result.supportsEmbeddedSurface(application, tmp19(5561).EmbeddedSurfaceType.MAIN);
       if (result) {
         const tmp19Result2 = ApplicationFlagUtils;
         result = tmp19Result2.hasApplicationFlag(application, ApplicationFlags.CONTEXTLESS_ACTIVITY);

@@ -1,14 +1,14 @@
-// Module ID: 5477
-// Function ID: 5478
+// Module ID: 5481
+// Function ID: 5482
 // Name: useToken
-// Dependencies: [575, 5077, 12, 4974, 2]
+// Dependencies: [575, 5081, 12, 4978, 2]
 // Exports: useToken
 
-// Module 5477 (useToken)
+// Module 5481 (useToken)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 4974 */;
-import SemanticColorContext from "SemanticColorContext" /* 5077 */;
+import native from "native" /* 4978 */;
+import SemanticColorContext from "SemanticColorContext" /* 5081 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

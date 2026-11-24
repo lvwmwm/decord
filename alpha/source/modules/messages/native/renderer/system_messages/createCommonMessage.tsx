@@ -1,23 +1,23 @@
-// Module ID: 8702
-// Function ID: 8703
+// Module ID: 14198
+// Function ID: 14199
 // Name: createCommonMessage
-// Dependencies: [4762, 4913, 4920, 4910, 575, 4735, 8245, 8703, 8704, 8705, 2]
+// Dependencies: [4766, 4917, 4924, 4914, 575, 4739, 8680, 14199, 9484, 12394, 2]
 // Exports: default
 
-// Module 8702 (createCommonMessage)
+// Module 14198 (createCommonMessage)
 import nativeDefault from "native" /* 575 */;
-import DateUtils from "DateUtils" /* 4735 */;
-import shared from "shared" /* 4920 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8703 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8704 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 8705 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import DateUtils from "DateUtils" /* 4739 */;
+import shared from "shared" /* 4924 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8680 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9484 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 12394 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14199 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ColorUtils = tmp(4910);
+const ColorUtils = tmp(4914);
 let createStyles = createStyles_mod;
 const result = createStyles.experimental_createToken((theme) => {
   theme = theme.theme;
@@ -46,7 +46,7 @@ export default function createCommonMessage(reactions) {
   ({ message, theme } = reactions);
   reactions = reactions.reactions;
   const tmp = closure_4(theme);
-  const obj = { id: message.id, channelId: message.channel_id, type: message.type, mentioned: message.mentioned, timestamp: obj2.calendarFormat(message.timestamp, true), timestampColor: tmp.timestampColor, dark: obj3.isThemeDark(theme), highlightColor: tmp.highlightColor, reactions, swipeToReplyIconUrl: obj4.getAssetUriForEmbed(AssetRegistryDefault), swipeToEditIconUrl: obj5.getAssetUriForEmbed(AssetRegistryDefault2), accessibilityActions: obj6.createMessageAccessibilityActions(message, channel) };
+  const obj = { id: message.id, channelId: message.channel_id, type: message.type, mentioned: message.mentioned, timestamp: obj2.calendarFormat(message.timestamp, true), timestampColor: tmp.timestampColor, dark: obj3.isThemeDark(theme), highlightColor: tmp.highlightColor, reactions, swipeToReplyIconUrl: obj4.getAssetUriForEmbed(AssetRegistryDefault2), swipeToEditIconUrl: obj5.getAssetUriForEmbed(AssetRegistryDefault), accessibilityActions: obj6.createMessageAccessibilityActions(message, channel) };
   channel = ChannelStore.getChannel(message.channel_id);
   obj2 = DateUtils;
   obj3 = shared;

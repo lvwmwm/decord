@@ -1,24 +1,24 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 14995
+// Function ID: 14996
 // Name: ConjureOverlayWidgetsStore
-// Dependencies: [14957, 6621, 1071, 14960, 14963, 504, 572, 2]
+// Dependencies: [14996, 6808, 1071, 14999, 15002, 504, 572, 2]
 
-// Module 14956 (ConjureOverlayWidgetsStore)
+// Module 14995 (ConjureOverlayWidgetsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import OverlayLayoutConstants from "OverlayLayoutConstants" /* 14960 */;
-import conjureOverlayApps from "conjureOverlayApps" /* 14963 */;
-import LayoutStore from "LayoutStore" /* 14957 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import OverlayLayoutConstants from "OverlayLayoutConstants" /* 14999 */;
+import conjureOverlayApps from "conjureOverlayApps" /* 15002 */;
+import LayoutStore from "LayoutStore" /* 14996 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 let closure_7, dependencyMap, set, widgetsByTypeAndLayout;
 
-const f107243 = (application_id) => application_id.application_id;
+const f107406 = (application_id) => application_id.application_id;
 function syncProjects() {
   let tmp3;
-  const f107245 = (item, index) => item === closure_0[index];
+  const f107408 = (item, index) => item === closure_0[index];
   function getLayoutApplicationIds() {
     set = new Set();
     widgetsByTypeAndLayout = widgetsByTypeAndLayout.getWidgetsByTypeAndLayout(constants.CONJURE, OVERLAY_V3_LAYOUT_ID);
@@ -32,10 +32,10 @@ function syncProjects() {
     return set;
   }
   const ownedProjects = ConjureProjectStore.getOwnedProjects();
-  found = ownedProjects.filter(set(14963).isConjureOverlayApp);
+  found = ownedProjects.filter(set(15002).isConjureOverlayApp);
   let closure_0 = found;
   const obj = ConjureProjectStore;
-  const tmp = found.length === found.length && found.every(f107245);
+  const tmp = found.length === found.length && found.every(f107408);
   if (!tmp) {
     if (0 === found.length) {
       found = items;
@@ -46,7 +46,7 @@ function syncProjects() {
   items = [...found];
   const items1 = [];
   const arraySpreadResult = HermesBuiltin.arraySpread(items1, found, 0);
-  new Set(found.map(f107243));
+  new Set(found.map(f107406));
   const ownedProjects1 = obj.getOwnedProjects();
   HermesBuiltin.arraySpread(items1, ownedProjects1.filter((application_id) => {
     const obj = conjureOverlayApps;
@@ -59,7 +59,7 @@ function syncProjects() {
     return hasItem1;
   }), tmp3);
   closure_0 = items;
-  items.length === items.length && items.every(f107245);
+  items.length === items.length && items.every(f107408);
 }
 function handleLayoutChange() {
   syncProjects();
@@ -69,7 +69,7 @@ function markServerListStale(guildId) {
   guildId = guildId.guildId;
   items = [];
   const arraySpreadResult = HermesBuiltin.arraySpread(items, found, 0);
-  set = new Set(found.map(f107243));
+  set = new Set(found.map(f107406));
   const ownedProjects = ConjureProjectStore.getOwnedProjects();
   HermesBuiltin.arraySpread(items, ownedProjects.filter((application_id) => {
     const obj = conjureOverlayApps;

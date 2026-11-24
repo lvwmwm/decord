@@ -1,44 +1,45 @@
-// Module ID: 14172
-// Function ID: 14173
+// Module ID: 13861
+// Function ID: 13862
 // Name: EntitlementGiftGroupCard
-// Dependencies: [19, 17, 2164, 502, 11905, 2177, 6674, 1071, 1388, 21, 4913, 575, 4974, 11906, 5504, 1112, 5511, 6847, 9035, 1186, 7526, 12797, 7565, 14173, 14174, 14175, 14176, 14177, 14178, 14179, 14180, 13921, 14181, 14182, 14183, 14184, 504, 11914, 2]
+// Dependencies: [19, 17, 2164, 502, 11780, 2177, 6234, 1071, 1388, 21, 4917, 575, 4978, 11781, 5508, 1112, 5515, 7462, 11027, 1186, 7393, 9675, 7432, 13862, 13863, 13864, 13865, 13866, 13867, 13868, 13869, 11439, 13870, 13871, 13858, 13859, 504, 11789, 13872, 2]
 
-// Module 14172 (EntitlementGiftGroupCard)
+// Module 13861 (EntitlementGiftGroupCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import native2 from "native" /* 4974 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6847 */;
-import GameIconDefault from "GameIcon" /* 7526 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9035 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11906 */;
-import SubscriptionUtils from "SubscriptionUtils" /* 11914 */;
-import _modDef13921 from "module_13921" /* 13921 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14173 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14174 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14175 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14176 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14177 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14178 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14179 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 14180 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 14181 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 14182 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 14183 */;
-import GiftCodeRowDefault from "GiftCodeRow" /* 14184 */;
+import native2 from "native" /* 4978 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
+import GameIconDefault from "GameIcon" /* 7393 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7462 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 11027 */;
+import _modDef11439 from "module_11439" /* 11439 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11781 */;
+import SubscriptionUtils from "SubscriptionUtils" /* 11789 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13858 */;
+import GiftCodeRowDefault from "GiftCodeRow" /* 13859 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13862 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13863 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13864 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13865 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13866 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13867 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 13868 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 13869 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 13870 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 13871 */;
+import getOneTimeGiftCodesDefault from "getOneTimeGiftCodes" /* 13872 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GiftCodeStore from "GiftCodeStore" /* 11905 */;
+import GiftCodeStore from "GiftCodeStore" /* 11780 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2177 */;
-import SKUStore from "SKUStore" /* 6674 */;
+import SKUStore from "SKUStore" /* 6234 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -191,7 +192,7 @@ class EntitlementGiftGroupCard extends Component {
     }
     items4 = [tmp6Result2, ];
     const obj10 = { variant: "body-md/normal", color: "text-subtle", style: tmp.subtitle, children: formatResult };
-    const Text = tmp2(5504).Text;
+    const Text = tmp2(5508).Text;
     const intl = tmp2(1112).intl;
     const format = intl.format;
     const t = tmp2(1112).t;
@@ -206,44 +207,44 @@ class EntitlementGiftGroupCard extends Component {
     items2[1] = closure_15(React3, obj8);
     items1[1] = closure_15(React3, obj6);
     if (isOpen) {
-      ChevronSmallRightIcon = tmp2(12797).ChevronSmallDownIcon;
+      ChevronSmallRightIcon = tmp2(9675).ChevronSmallDownIcon;
     } else {
-      ChevronSmallRightIcon = tmp2(7565).ChevronSmallRightIcon;
+      ChevronSmallRightIcon = tmp2(7432).ChevronSmallRightIcon;
     }
     items1[2] = gesture(ChevronSmallRightIcon, {});
     return gesture(tmp7, obj2);
   }
   getCardHeaderThumbnail(id, giftStyle) {
     if (map1.STANDARD_BOX === giftStyle) {
-      return AssetRegistryDefault;
-    } else if (map1.CAKE === giftStyle) {
       return AssetRegistryDefault2;
-    } else if (map1.CHEST === giftStyle) {
+    } else if (map1.CAKE === giftStyle) {
       return AssetRegistryDefault3;
-    } else if (map1.COFFEE === giftStyle) {
+    } else if (map1.CHEST === giftStyle) {
       return AssetRegistryDefault4;
-    } else if (map1.SEASONAL_STANDARD_BOX === giftStyle) {
+    } else if (map1.COFFEE === giftStyle) {
       return AssetRegistryDefault5;
-    } else if (map1.SEASONAL_CAKE === giftStyle) {
+    } else if (map1.SEASONAL_STANDARD_BOX === giftStyle) {
       return AssetRegistryDefault6;
-    } else if (map1.SEASONAL_CHEST === giftStyle) {
+    } else if (map1.SEASONAL_CAKE === giftStyle) {
       return AssetRegistryDefault7;
-    } else if (map1.SEASONAL_COFFEE === giftStyle) {
+    } else if (map1.SEASONAL_CHEST === giftStyle) {
       return AssetRegistryDefault8;
+    } else if (map1.SEASONAL_COFFEE === giftStyle) {
+      return AssetRegistryDefault9;
     } else if (map1.NITROWEEN_STANDARD === giftStyle) {
-      const obj = { uri: _modDef13921 };
+      const obj = { uri: _modDef11439 };
       return obj;
     } else if (TIER_0.TIER_0 === id) {
-      return AssetRegistryDefault9;
-    } else if (TIER_0.TIER_1 === id) {
       return AssetRegistryDefault10;
+    } else if (TIER_0.TIER_1 === id) {
+      return AssetRegistryDefault11;
     } else {
       if (TIER_0.TIER_2 !== id) {
         if (TIER_0.LEGACY !== id) {
           return null;
         }
       }
-      return AssetRegistryDefault11;
+      return AssetRegistryDefault;
     }
   }
   renderCardHeader(sku) {
@@ -297,6 +298,7 @@ class EntitlementGiftGroupCard extends Component {
     const tmp = closure_16(this.context);
     const props = this.props;
     ({ giftCodes, sku } = props);
+    const canRevokeGiftCodes = props.canRevokeGiftCodes;
     let obj = { style: items, children: items1 };
     items = [, ];
     ({ giftGroupCard: arr[0], giftGroupCardRefresh: arr[1] } = tmp);
@@ -319,7 +321,7 @@ class EntitlementGiftGroupCard extends Component {
         items2 = [
           result,
           giftCodes.map((giftCode, index) => {
-                const obj = { giftCode, sku, isFirst: 0 === index };
+                const obj = { giftCode, sku, isFirst: 0 === index, canRevoke: canRevokeGiftCodes };
                 return gesture(GiftCodeRowDefault, obj, giftCode.code);
               })
         ];
@@ -336,12 +338,15 @@ const prototype = EntitlementGiftGroupCard.prototype;
 EntitlementGiftGroupCard.contextType = native2.ThemeContext;
 let items = [AuthenticationStore, SKUStore, ApplicationStore, GiftCodeStore, SubscriptionPlanStore];
 const tmp12 = get_initialized.connectStores(items, function(arg0) {
-  let closure_129_0;
-  let found;
+  let giftStyle;
+  let obj3;
   let orFetchSubscriptionPlan;
+  let pendingGiftSubscriptionCodes;
   let skuId;
   let subscriptionPlanId;
-  ({ skuId, subscriptionPlanId, giftStyle: closure_129_0 } = arg0);
+  let tmp7;
+  ({ skuId, subscriptionPlanId } = arg0);
+  ({ giftStyle, pendingGiftSubscriptionCodes } = arg0);
   const value = SKUStore.get(skuId);
   if (null == value) {
     const _Error = Error;
@@ -350,15 +355,14 @@ const tmp12 = get_initialized.connectStores(items, function(arg0) {
     const error = new Error("SKU was unavailable while rendering gift.");
     throw error;
   } else {
-    const obj2 = { sku: value, isFetching: GiftCodeStore.getUserGiftCodesFetchingForSKUAndPlan(skuId, subscriptionPlanId), loadedAt: GiftCodeStore.getUserGiftCodesLoadedAtForSKUAndPlan(skuId, subscriptionPlanId), application: ApplicationStore.getApplication(value.applicationId), subscriptionPlan: orFetchSubscriptionPlan, giftCodes: found.filter((giftStyle) => giftStyle.giftStyle === closure_1_0) };
+    const obj2 = { sku: value, isFetching: GiftCodeStore.getUserGiftCodesFetchingForSKUAndPlan(skuId, subscriptionPlanId), loadedAt: GiftCodeStore.getUserGiftCodesLoadedAtForSKUAndPlan(skuId, subscriptionPlanId), application: ApplicationStore.getApplication(value.applicationId), subscriptionPlan: orFetchSubscriptionPlan, giftCodes: tmp7(obj3.getForGifterSKUAndPlan(AuthenticationStore.getId(), skuId, subscriptionPlanId), pendingGiftSubscriptionCodes, giftStyle) };
     orFetchSubscriptionPlan = null;
-    const obj3 = GiftCodeStore;
+    obj3 = GiftCodeStore;
     if (null != subscriptionPlanId) {
       const obj = SubscriptionUtils;
       orFetchSubscriptionPlan = obj.getOrFetchSubscriptionPlan(subscriptionPlanId);
     }
-    const forGifterSKUAndPlan = obj3.getForGifterSKUAndPlan(AuthenticationStore.getId(), skuId, subscriptionPlanId);
-    found = forGifterSKUAndPlan.filter((isClaimed) => !isClaimed.isClaimed);
+    tmp7 = getOneTimeGiftCodesDefault;
     return obj2;
   }
 })(EntitlementGiftGroupCard);

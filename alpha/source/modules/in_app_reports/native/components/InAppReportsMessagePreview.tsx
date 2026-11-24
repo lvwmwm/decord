@@ -1,20 +1,20 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 8081
+// Function ID: 8082
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 4913, 575, 8669, 4910, 5504, 1112, 10100, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 8082, 4914, 5508, 1112, 8939, 2]
 // Exports: default
 
-// Module 10196 (InAppReportsMessagePreview)
+// Module 8081 (InAppReportsMessagePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import ColorUtils from "ColorUtils" /* 4910 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import RowGeneratorDefault from "RowGenerator" /* 8669 */;
-import ChatItemDefault from "ChatItem" /* 10100 */;
+import ColorUtils from "ColorUtils" /* 4914 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import RowGeneratorDefault from "RowGenerator" /* 8082 */;
+import ChatItemDefault from "ChatItem" /* 8939 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

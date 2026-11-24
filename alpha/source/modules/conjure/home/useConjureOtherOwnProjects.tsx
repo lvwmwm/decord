@@ -1,11 +1,11 @@
-// Module ID: 18650
-// Function ID: 18651
+// Module ID: 18691
+// Function ID: 18692
 // Name: useConjureOtherOwnProjects
-// Dependencies: [6621, 504, 6838, 2]
+// Dependencies: [6808, 504, 7449, 2]
 // Exports: default
 
-// Module 18650 (useConjureOtherOwnProjects)
-import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+// Module 18691 (useConjureOtherOwnProjects)
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

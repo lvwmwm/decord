@@ -1,9 +1,9 @@
-// Module ID: 6972
-// Function ID: 6973
+// Module ID: 7568
+// Function ID: 7569
 // Name: ConjureSmartContextStore
 // Dependencies: [504, 572, 2]
 
-// Module 6972 (ConjureSmartContextStore)
+// Module 7568 (ConjureSmartContextStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

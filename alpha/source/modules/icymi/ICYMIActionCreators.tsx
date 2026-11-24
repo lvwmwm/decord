@@ -1,22 +1,22 @@
-// Module ID: 10043
-// Function ID: 10044
+// Module ID: 8782
+// Function ID: 8783
 // Name: ICYMIActionCreators
-// Dependencies: [5, 10044, 502, 1386, 1071, 10040, 572, 1241, 10041, 10045, 1284, 10046, 10047, 4738, 2]
+// Dependencies: [5, 8783, 502, 1386, 1071, 8779, 572, 1241, 8780, 8784, 1284, 8785, 8786, 4742, 2]
 
-// Module 10043 (ICYMIActionCreators)
+// Module 8782 (ICYMIActionCreators)
 import Constants from "Constants" /* 1071 */;
-import DiscoverRequestState from "DiscoverRequestState" /* 10040 */;
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 10041 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 10046 */;
+import DiscoverRequestState from "DiscoverRequestState" /* 8779 */;
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 8780 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8785 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10044 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 8783 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
 import UserStore_mod from "UserStore" /* 1386 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c8, closure_6, constants, identity;
+let c8, closure_3, closure_6, constants, identity;
 
 function notifyDiscoverRequestListeners() {
   for (const item10005 of set) {
@@ -61,14 +61,14 @@ function setDiscoverAuthSessionIdHash(arg0) {
   }
 }
 let timeout = function _dispatchDiscoverPickerCommit() {
-  const obj = _asyncToGenerator(async (identity) => {
-    let c5 = 0;
+  const obj = _asyncToGenerator(async (identity, clearSnapshot) => {
     let c6 = 0;
-    let c4 = 0;
+    let c7 = 0;
+    let c5 = 0;
     return (async (arg0, value) => {
       let obj3;
-      if (c6 === 2) {
-        c6 = 3;
+      if (c7 === 2) {
+        c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -80,51 +80,51 @@ let timeout = function _dispatchDiscoverPickerCommit() {
         }
       } else {
         try {
-          c6 = 2;
-          if (0 === c5) {
+          c7 = 2;
+          if (0 === c6) {
             if (arg0 === 1) {
-              c6 = 3;
+              c7 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
+              c7 = 3;
               return { value, done: true };
             } else {
-              closure_2 = tmp;
-              closure_1 = tmp4;
-              c4 = 1;
-              c5 = 2;
-              c6 = 1;
-              const obj6 = { type: "DISCOVER_PICKER_COMMIT", identity };
+              closure_3 = tmp;
+              closure_2 = tmp4;
+              c5 = 1;
+              c6 = 2;
+              c7 = 1;
+              const obj6 = { type: "DISCOVER_PICKER_COMMIT", identity, clearSnapshot };
               const obj7 = { value: obj3.dispatch(obj6), done: false };
               obj3 = Dispatcher;
               return obj7;
             }
           } else {
-            if (1 === c5) {
-              c4 = 0;
-              identity = closure_3;
-              const obj2 = closure_130_1(closure_130_2[7]);
+            if (1 === c6) {
+              c5 = 0;
+              identity = closure_4;
+              const obj2 = closure_131_1(closure_131_2[7]);
               obj2.captureException(identity);
             } else if (arg0 === 1) {
-              c6 = 3;
+              c7 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c4 = 0;
-              c6 = 3;
+              c5 = 0;
+              c7 = 3;
               return { value, done: true };
             } else {
-              c4 = 0;
+              c5 = 0;
             }
-            c6 = 3;
+            c7 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp16) {
-          closure_3 = tmp16;
-          if (0 === c4) {
-            c6 = 3;
-            throw tmp16;
+        } catch (tmp17) {
+          closure_4 = tmp17;
+          if (0 === c5) {
+            c7 = 3;
+            throw tmp17;
           } else {
-            c5 = 1;
+            c6 = 1;
           }
         }
       }
@@ -898,15 +898,15 @@ timeout = {
       obj = {};
     }
     return (async (arg0, value) => {
-      let HTTP;
       let c0;
-      let closure_3;
       let isReloading;
       let obj12;
       let obj18;
-      let picks;
-      if (constants === 2) {
-        constants = 3;
+      function dispatchDiscoverPickerCommit() {
+        return closure_1_22(...arguments);
+      }
+      if (c8 === 2) {
+        c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -919,29 +919,31 @@ timeout = {
         }
       } else {
         try {
+          let picks;
           let isInitialLoad;
           let startTime;
-          let tmp;
+          let HTTP;
           let _null;
-          constants = 2;
-          if (0 === currentUser) {
+          c8 = 2;
+          if (0 === constants) {
             if (arg0 === 1) {
-              constants = 3;
+              c8 = 3;
               throw value;
             } else if (arg0 === 2) {
-              constants = 3;
+              c8 = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
+              picks = tmp;
               isInitialLoad = undefined;
               isReloading = undefined;
               startTime = undefined;
-              tmp = undefined;
+              HTTP = undefined;
               ({ isInitialLoad: c0, isReloading } = obj);
               const forceRefresh = obj.forceRefresh;
               currentUser = currentUser.getCurrentUser();
               id = undefined;
-              const tmp60 = setDiscoverUser;
+              const tmp62 = setDiscoverUser;
               if (currentUser != null) {
                 id = currentUser.id;
               }
@@ -949,9 +951,9 @@ timeout = {
               if (id == null) {
                 isInitialLoad = null;
               }
-              tmp60(isInitialLoad);
+              tmp62(isInitialLoad);
               setDiscoverAuthSessionIdHash(authSessionIdHash.getAuthSessionIdHash());
-              let isDiscoverPickerCommit = tmp59.isDiscoverPickerCommit;
+              let isDiscoverPickerCommit = tmp61.isDiscoverPickerCommit;
               const obj5 = authSessionIdHash;
               if (isDiscoverPickerCommit) {
                 isDiscoverPickerCommit = null != closure_1_16;
@@ -963,13 +965,13 @@ timeout = {
                 }
                 closure_14 = {};
                 const obj7 = { picks: picks.getPicks() };
-                const discoverRequestGuard = isInitialLoad(HTTP[5]).discoverRequestGuard;
+                const discoverRequestGuard = isInitialLoad(startTime[5]).discoverRequestGuard;
                 const observeGate = discoverRequestGuard.observeGate;
-                const obj8 = isInitialLoad(HTTP[8]);
+                const obj8 = isInitialLoad(startTime[8]);
                 observeGate(obj8.getWaterwheelsDiscoverEnabled("fetchDehydrated"));
-                const discoverRequestGuard2 = isInitialLoad(HTTP[5]).discoverRequestGuard;
+                const discoverRequestGuard2 = isInitialLoad(startTime[5]).discoverRequestGuard;
                 discoverRequestGuard2.commitPicker();
-                const discoverRequestGuard3 = isInitialLoad(HTTP[5]).discoverRequestGuard;
+                const discoverRequestGuard3 = isInitialLoad(startTime[5]).discoverRequestGuard;
                 const capture = discoverRequestGuard3.capture;
                 authSessionIdHash = obj5.getAuthSessionIdHash();
                 _null = authSessionIdHash;
@@ -977,82 +979,86 @@ timeout = {
                 if (authSessionIdHash == null) {
                   _null = null;
                 }
-                function dispatchDiscoverPickerCommit() {
-                  return closure_1_22(...arguments);
+                const clearDiscoverSnapshot = tmp61.clearDiscoverSnapshot;
+                startTime = clearDiscoverSnapshot;
+                const captureResult = capture(tmp28, _null);
+                if (clearDiscoverSnapshot == null) {
+                  startTime = false;
                 }
-                const result = dispatchDiscoverPickerCommit(capture(tmp28, _null));
+                dispatchDiscoverPickerCommit(captureResult, startTime);
               }
-              const obj9 = isInitialLoad(HTTP[11]);
+              const obj9 = isInitialLoad(startTime[11]);
               if (obj9.icymiEnabled("fetchDehydrated")) {
-                const tmp32Result = isInitialLoad(HTTP[8]);
-                if (tmp32Result.getWaterwheelsDiscoverEnabled("fetchDehydrated")) {
+                const tmp34Result = isInitialLoad(startTime[8]);
+                if (tmp34Result.getWaterwheelsDiscoverEnabled("fetchDehydrated")) {
                   if (obj.isDiscoverBackground) {
-                    constants = 3;
+                    c8 = 3;
                     return { value: "HermesInternal", done: null };
                   }
-                  constants = 3;
+                  c8 = 3;
                   const obj10 = { value: fetchDiscoverDehydrated(obj), done: true };
                   return obj10;
                 } else if (!obj.isDiscoverPickerCommit) {
                   if (isReloading) {
-                    const obj11 = _null(HTTP[6]);
+                    const obj11 = _null(startTime[6]);
                     obj11.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: true });
                   }
-                  authSessionIdHash = 1;
+                  currentUser = 1;
                   const _Date = Date;
                   startTime = Date.now();
-                  HTTP = tmp32(HTTP[10]).HTTP;
+                  HTTP = tmp34(startTime[10]).HTTP;
                   const request = { url: constants.GRAVITY_ITEMS_DEHYDRATED, query: obj12, rejectWithError: false };
                   obj12 = { refresh: forceRefresh };
-                  currentUser = 2;
-                  constants = 1;
+                  constants = 2;
+                  c8 = 1;
                   const obj13 = { value: HTTP.get(request), done: false };
                   return obj13;
                 }
               }
             }
-          } else if (1 === currentUser) {
-            authSessionIdHash = 0;
-            const obj4 = _null(HTTP[7]);
+          } else if (1 === constants) {
+            currentUser = 0;
+            picks = authSessionIdHash;
+            const obj4 = _null(startTime[7]);
             obj4.captureException(picks);
-          } else if (2 === currentUser) {
+          } else if (2 === constants) {
             if (arg0 === 1) {
-              constants = 3;
+              c8 = 3;
               throw value;
             } else if (arg0 === 2) {
-              authSessionIdHash = 0;
-              constants = 3;
+              currentUser = 0;
+              c8 = 3;
               const obj14 = { value, done: true };
               return obj14;
             } else {
-              tmp = value;
-              const obj15 = { type: "LOAD_ICYMI_DEHYDRATED", items: tmp.body.items, loadId: tmp.body.load_id, startTime, isReloading, isInitialLoad };
-              currentUser = 3;
-              constants = 1;
+              HTTP = value;
+              const obj15 = { type: "LOAD_ICYMI_DEHYDRATED", items: HTTP.body.items, loadId: HTTP.body.load_id, startTime, isReloading, isInitialLoad };
+              constants = 3;
+              c8 = 1;
               const obj16 = { value: obj18.dispatch(obj15), done: false };
-              obj18 = _null(HTTP[6]);
+              obj18 = _null(startTime[6]);
               return obj16;
             }
           } else if (arg0 === 1) {
-            constants = 3;
+            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
-            authSessionIdHash = 0;
-            constants = 3;
+            currentUser = 0;
+            c8 = 3;
             obj = { value, done: true };
             return obj;
           } else {
-            authSessionIdHash = 0;
+            currentUser = 0;
           }
-          constants = 3;
+          c8 = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp42) {
-          picks = tmp42;
-          if (0 === authSessionIdHash) {
-            constants = 3;
-            throw tmp42;
+        } catch (tmp44) {
+          authSessionIdHash = tmp44;
+          if (0 === currentUser) {
+            c8 = 3;
+            throw tmp44;
           } else {
-            currentUser = 1;
+            constants = 1;
           }
         }
       }
@@ -1677,6 +1683,6 @@ timeout = {
     dispatch(obj);
   }
 };
-let result = size.fileFinishedImporting("modules/icymi/ICYMIActionCreators.tsx");
+const result = size.fileFinishedImporting("modules/icymi/ICYMIActionCreators.tsx");
 
 export default timeout;

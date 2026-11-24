@@ -1,14 +1,14 @@
-// Module ID: 17771
-// Function ID: 17772
+// Module ID: 17809
+// Function ID: 17810
 // Name: OnboardingV2Utils
-// Dependencies: [4780, 4784, 1386, 1071, 504, 6880, 2]
+// Dependencies: [4784, 4788, 1386, 1071, 504, 7491, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 17771 (OnboardingV2Utils)
+// Module 17809 (OnboardingV2Utils)
 import Constants from "Constants" /* 1071 */;
-import GuildRecord from "GuildRecord" /* 4780 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6880 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import GuildRecord from "GuildRecord" /* 4784 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7491 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

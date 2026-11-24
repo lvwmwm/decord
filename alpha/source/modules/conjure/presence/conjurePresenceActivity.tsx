@@ -1,11 +1,11 @@
-// Module ID: 6932
-// Function ID: 6933
+// Module ID: 7540
+// Function ID: 7541
 // Name: conjurePresenceActivity
-// Dependencies: [5652, 2]
+// Dependencies: [5889, 2]
 // Exports: isConjurePresenceActivity
 
-// Module 6932 (conjurePresenceActivity)
-import ActivityTypes from "ActivityTypes" /* 5652 */;
+// Module 7540 (conjurePresenceActivity)
+import ActivityTypes from "ActivityTypes" /* 5889 */;
 import size from "module_2" /* 2 */;
 
 const Conjuring = "Conjuring";

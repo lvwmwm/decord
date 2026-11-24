@@ -1,12 +1,12 @@
-// Module ID: 10342
-// Function ID: 10343
+// Module ID: 14496
+// Function ID: 14497
 // Name: applicationWidgetRefreshOutcome
-// Dependencies: [1112, 3604, 2]
+// Dependencies: [1112, 3606, 2]
 // Exports: default
 
-// Module 10342 (applicationWidgetRefreshOutcome)
+// Module 14496 (applicationWidgetRefreshOutcome)
 import intl7 from "intl" /* 1112 */;
-import _modDef3604 from "module_3604" /* 3604 */;
+import _modDef3606 from "module_3606" /* 3606 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_widget/applicationWidgetRefreshOutcome.tsx");
@@ -19,27 +19,27 @@ export default function applicationWidgetRefreshOutcome(arg0) {
   let intl5;
   let intl6;
   if ("dispatched" === arg0) {
-    const obj2 = { text: intl6.string(_modDef3604["um/5Kc"]), ok: true };
+    const obj2 = { text: intl6.string(_modDef3606["um/5Kc"]), ok: true };
     intl6 = intl7.intl;
     return obj2;
   } else if ("rate_limited" === arg0) {
-    const obj3 = { text: intl5.string(_modDef3604.T1n7hc), ok: false };
+    const obj3 = { text: intl5.string(_modDef3606.T1n7hc), ok: false };
     intl5 = intl7.intl;
     return obj3;
   } else if ("unauthorized" === arg0) {
-    const obj4 = { text: intl4.string(_modDef3604["30UxZU"]), ok: false };
+    const obj4 = { text: intl4.string(_modDef3606["30UxZU"]), ok: false };
     intl4 = intl7.intl;
     return obj4;
   } else if ("no_widget_config" === arg0) {
-    const obj5 = { text: intl3.string(_modDef3604["1UFWet"]), ok: false };
+    const obj5 = { text: intl3.string(_modDef3606["1UFWet"]), ok: false };
     intl3 = intl7.intl;
     return obj5;
   } else if ("undeliverable" === arg0) {
-    const obj6 = { text: intl2.string(_modDef3604.ypKX9A), ok: false };
+    const obj6 = { text: intl2.string(_modDef3606.ypKX9A), ok: false };
     intl2 = intl7.intl;
     return obj6;
   } else {
-    const obj = { text: intl.string(_modDef3604.BLKD4B), ok: false };
+    const obj = { text: intl.string(_modDef3606.BLKD4B), ok: false };
     intl = intl7.intl;
     return obj;
   }

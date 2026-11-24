@@ -1,16 +1,16 @@
-// Module ID: 17542
-// Function ID: 17543
+// Module ID: 17580
+// Function ID: 17581
 // Name: NativeFreezeScreens
-// Dependencies: [32, 19, 17, 21, 38, 5868, 4913, 2]
+// Dependencies: [32, 19, 17, 21, 38, 5928, 4917, 2]
 // Exports: NativeFreezeScreens
 
-// Module 17542 (NativeFreezeScreens)
+// Module 17580 (NativeFreezeScreens)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import enableScreens from "enableScreens" /* 5868 */;
+import enableScreens from "enableScreens" /* 5928 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;

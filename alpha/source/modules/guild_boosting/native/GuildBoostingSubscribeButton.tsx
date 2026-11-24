@@ -1,18 +1,18 @@
-// Module ID: 13478
-// Function ID: 13479
+// Module ID: 13403
+// Function ID: 13404
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 8744, 6548, 1071, 1388, 21, 13428, 6429, 6546, 13479, 1500, 7520, 563, 1399, 13427, 5511, 1112, 7695, 2]
+// Dependencies: [5, 19, 17, 10223, 6740, 1071, 1388, 21, 13353, 6004, 6738, 13404, 1500, 6253, 563, 1399, 13352, 5515, 1112, 7035, 2]
 // Exports: default
 
-// Module 13478 (GuildBoostingSubscribeButton)
+// Module 13403 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6548 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13428 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6740 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13353 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8744 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 10223 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

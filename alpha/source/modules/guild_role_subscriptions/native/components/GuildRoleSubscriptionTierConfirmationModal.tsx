@@ -1,23 +1,23 @@
-// Module ID: 20039
-// Function ID: 20040
+// Module ID: 20082
+// Function ID: 20083
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 20007, 21, 4913, 575, 20008, 20018, 20010, 1112, 7348, 5600, 5504, 20040, 2]
+// Dependencies: [5, 32, 19, 17, 20050, 21, 4917, 575, 20051, 20061, 20053, 1112, 6014, 5604, 5508, 20083, 2]
 // Exports: default
 
-// Module 20039 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 20082 (GuildRoleSubscriptionTierConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import FormStylesDefault from "FormStyles" /* 20008 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20010 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 20018 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import FormStylesDefault from "FormStyles" /* 20051 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20053 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 20061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20007 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20050 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, c4, closure_2;
@@ -26,7 +26,7 @@ let c9;
 let metroImportAll;
 let size;
 let tmp3;
-const FastImageDefault = tmp3(5600);
+const FastImageDefault = tmp3(5604);
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { coverPhoto: size };
@@ -144,7 +144,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
       let obj4 = { children: items1 };
       const tmp19 = metroImportAll;
       const obj5 = { title: intl3.string(intl5.t["3S8gA7"]) };
-      const TableRowGroupTitle = tmp6(7348).TableRowGroupTitle;
+      const TableRowGroupTitle = tmp6(6014).TableRowGroupTitle;
       intl3 = tmp6(1112).intl;
       items1 = [metroImportAll(TableRowGroupTitle, obj5), ];
       const obj6 = { style: tmp2.coverPhoto, resizeMode: "cover", source: first };
@@ -154,7 +154,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     items2 = [tmp14Result, ];
     const obj7 = { children: items3 };
     const obj8 = { title: intl4.string(intl5.t["74JctW"]) };
-    const TableRowGroupTitle2 = tmp6(7348).TableRowGroupTitle;
+    const TableRowGroupTitle2 = tmp6(6014).TableRowGroupTitle;
     intl4 = tmp6(1112).intl;
     items3 = [metroImportAll(TableRowGroupTitle2, obj8), ];
     const obj9 = { variant: "body-md/medium", color: "interactive-text-active", children: first1 };
@@ -162,6 +162,6 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     items2[1] = React4(View, obj7);
     flag = tmp14(tmp17, obj3);
   }
-  items4 = [flag, metroImportAll(tmp6(20040).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  items4 = [flag, metroImportAll(tmp6(20083).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   return React4(tmp15, obj2);
 };

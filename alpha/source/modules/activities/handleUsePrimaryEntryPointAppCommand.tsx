@@ -1,13 +1,13 @@
-// Module ID: 12209
-// Function ID: 12210
+// Module ID: 12151
+// Function ID: 12152
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 4762, 1386, 10701, 5559, 12210, 10671, 2]
+// Dependencies: [5, 4766, 1386, 9976, 5563, 12152, 9905, 2]
 // Exports: default
 
-// Module 12209 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 10701 */;
+// Module 12151 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 9976 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

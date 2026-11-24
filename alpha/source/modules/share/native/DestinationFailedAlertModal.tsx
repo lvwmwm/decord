@@ -1,28 +1,28 @@
-// Module ID: 10123
-// Function ID: 10124
+// Module ID: 13947
+// Function ID: 13948
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 4762, 4784, 5651, 4855, 1386, 1082, 21, 4913, 575, 5529, 10124, 1186, 5504, 504, 4969, 10125, 5866, 5866, 1112, 2]
+// Dependencies: [19, 17, 4766, 4788, 5888, 4859, 1386, 1082, 21, 4917, 575, 5533, 9475, 1186, 5508, 504, 4973, 11418, 5926, 5926, 1112, 2]
 // Exports: default
 
-// Module 10123 (DestinationFailedAlertModal)
+// Module 13947 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import UserUtilsDefault from "UserUtils" /* 4969 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import useChannelNameDefault from "useChannelName" /* 5529 */;
-import AlertModal2 from "AlertModal" /* 5866 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
+import UserUtilsDefault from "UserUtils" /* 4973 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import useChannelNameDefault from "useChannelName" /* 5533 */;
+import AlertModal2 from "AlertModal" /* 5926 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 9475 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import PresenceStore from "PresenceStore" /* 5651 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import PresenceStore from "PresenceStore" /* 5888 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -61,7 +61,7 @@ function FailedUserRow(user) {
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: items2 };
-    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1186).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
+    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1186).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: "\u{1F9DA}\u{1F3FB}" };
     tmp13 = null;
     const Avatar = tmp2(1186).Avatar;
     const tmp10 = View;
@@ -71,7 +71,7 @@ function FailedUserRow(user) {
     }
     items2 = [closure_10(Avatar, obj4), ];
     const obj5 = { style: tmp.label, variant: "body-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores };
-    const Text = tmp2(5504).Text;
+    const Text = tmp2(5508).Text;
     if (stateFromStores == null) {
       const obj6 = UserUtilsDefault;
       stateFromStores = obj6.getName(user);
@@ -96,12 +96,12 @@ function FailedChannelRow(channel) {
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(10125).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(11418).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(10125).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(11418).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "body-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
-  items1[1] = closure_10(channel(5504).Text, obj4);
+  items1[1] = closure_10(channel(5508).Text, obj4);
   return closure_11(View, obj2);
 }
 function FailedDestinationRow(destination) {
@@ -182,17 +182,17 @@ export default function DestinationFailedAlertModal(arg0) {
   if (null != onRetry) {
     const obj3 = { children: items };
     const obj4 = { variant: "primary", onPress: onRetry, text: intl2.string(intl4.t["5911Lb"]) };
-    const AlertActionButton2 = tmp3(5866).AlertActionButton;
+    const AlertActionButton2 = tmp3(5926).AlertActionButton;
     intl2 = tmp3(1112).intl;
     items = [authStore(AlertActionButton2, obj4, "confirm"), ];
     const obj5 = { variant: "secondary", text: intl3.string(intl4.t.WAI6xu) };
-    const AlertActionButton3 = tmp3(5866).AlertActionButton;
+    const AlertActionButton3 = tmp3(5926).AlertActionButton;
     intl3 = tmp3(1112).intl;
     items[1] = authStore(AlertActionButton3, obj5, "cancel");
     tmp2Result = unpackModuleId(authStore2, obj3);
   } else {
     const obj6 = { variant: "primary", text: intl.string(intl4.t.BddRzS) };
-    const AlertActionButton = tmp3(5866).AlertActionButton;
+    const AlertActionButton = tmp3(5926).AlertActionButton;
     intl = tmp3(1112).intl;
     tmp2Result = tmp2(AlertActionButton, obj6, "confirm");
   }

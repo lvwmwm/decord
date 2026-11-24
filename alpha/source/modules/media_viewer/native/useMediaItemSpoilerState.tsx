@@ -1,13 +1,13 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 13954
+// Function ID: 13955
 // Name: useMediaItemSpoilerState
-// Dependencies: [32, 19, 8222, 1653, 5123, 1186, 1706, 2]
+// Dependencies: [32, 19, 8668, 1653, 5127, 1186, 1706, 2]
 // Exports: useMediaItemSpoilerState
 
-// Module 10150 (useMediaItemSpoilerState)
+// Module 13954 (useMediaItemSpoilerState)
 import native from "native" /* 1186 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5123 */;
+import timing_timing from "timing/timing" /* 5127 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ export function useMediaItemSpoilerState(index) {
   let tmp5;
   let tmp9;
   const tmp = mediaItemHasSpoiler;
-  let obj = mediaItemHasSpoiler(8222);
+  let obj = mediaItemHasSpoiler(8668);
   mediaItemHasSpoiler = obj.useMediaItemHasSpoiler(index);
   const tmp4 = sharedValue(react.useState(mediaItemHasSpoiler), 2);
   [tmp5, dependencyMap] = tmp4;

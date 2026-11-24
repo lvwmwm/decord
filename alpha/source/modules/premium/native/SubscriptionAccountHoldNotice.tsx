@@ -1,18 +1,18 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 9217
+// Function ID: 9218
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 1186, 9364, 5504, 1112, 2173, 5511, 2]
+// Dependencies: [19, 17, 1071, 21, 4917, 575, 1186, 9218, 5508, 1112, 2173, 5515, 2]
 // Exports: default
 
-// Module 9363 (SubscriptionAccountHoldNotice)
+// Module 9217 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9364 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9218 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -46,7 +46,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     const Icon = subscription(1186).Icon;
     items = [closure_6(Icon, obj3), ];
     const obj4 = { style: tmp.text, variant: "body-sm/medium", children: format(v7I21Iz, obj5) };
-    const Text = subscription(5504).Text;
+    const Text = subscription(5508).Text;
     const intl = subscription(1112).intl;
     format = intl.format;
     obj5 = { endDate: subscription.currentPeriodEnd, planDescription: obj6.getDisplayName(subscription.planId) };
@@ -63,7 +63,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
           return c3(obj.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
         }
     };
-    const Button = subscription(5511).Button;
+    const Button = subscription(5515).Button;
     intl2 = subscription(1112).intl;
     items1[1] = closure_6(Button, obj7);
     tmp2 = closure_7(closure_4, obj);

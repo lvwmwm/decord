@@ -1,14 +1,14 @@
-// Module ID: 18239
-// Function ID: 18240
+// Module ID: 18278
+// Function ID: 18279
 // Name: useConjurePreviewMode
-// Dependencies: [32, 19, 502, 6624, 504, 18240, 12303, 10317, 6659, 10672, 6944, 6943, 6953, 5557, 2]
+// Dependencies: [32, 19, 502, 6811, 504, 18279, 11311, 14474, 6845, 9944, 7552, 7551, 7561, 5561, 2]
 // Exports: resolvePreviewAppChannel, useConjurePreviewMode
 
-// Module 18239 (useConjurePreviewMode)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
-import FramesConstants from "FramesConstants" /* 6624 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 6943 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 6944 */;
+// Module 18278 (useConjurePreviewMode)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5561 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 7551 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 7552 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -228,7 +228,7 @@ export function useConjurePreviewMode(applicationId) {
           tmp13 = tmp14 !== first2;
         }
         if (tmp13) {
-          let tmp5Result = tmp5(6953);
+          let tmp5Result = tmp5(7561);
           let leaveFrameResult = tmp5Result.leaveFrame(tmp3.id);
         }
         continue;

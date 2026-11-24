@@ -1,22 +1,22 @@
-// Module ID: 8072
-// Function ID: 8073
+// Module ID: 6036
+// Function ID: 6037
 // Name: useDisplayProfile
-// Dependencies: [19, 1386, 6956, 504, 8073, 2160, 8130, 2]
+// Dependencies: [19, 1386, 6037, 504, 6183, 2160, 6248, 2]
 // Exports: default, getDisplayProfile, useDisplayProfileWithFetchEffect
 
-// Module 8072 (useDisplayProfile)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
-import DisplayProfileDefault from "DisplayProfile" /* 8130 */;
+// Module 6036 (useDisplayProfile)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6183 */;
+import DisplayProfileDefault from "DisplayProfile" /* 6248 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import UserProfileStore from "UserProfileStore" /* 6956 */;
+import UserProfileStore from "UserProfileStore" /* 6037 */;
 import FunctionUtils from "FunctionUtils" /* 2160 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f92109 = () => {
+const f89009 = () => {
   let obj;
   let obj2;
   let tmp2 = null;
@@ -52,7 +52,7 @@ export default function useDisplayProfile(arg0, arg1) {
   let closure_1 = arg1;
   const items = [UserStore, UserProfileStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f92109);
+  return obj.useStateFromStores(items, f89009);
 };
 export function useDisplayProfileWithFetchEffect(arg0, guildId) {
   let closure_0;
@@ -64,9 +64,9 @@ export function useDisplayProfileWithFetchEffect(arg0, guildId) {
   _require = arg0;
   const obj = require("get initialized");
   const items1 = [UserStore, UserProfileStore];
-  return obj.useStateFromStores(items1, f92109);
+  return obj.useStateFromStores(items1, f89009);
 }
-export function getDisplayProfile(id, guildId) {
+export function getDisplayProfile(id1, guildId) {
   let obj;
   let obj2;
   let tmp = arg2;
@@ -75,11 +75,11 @@ export function getDisplayProfile(id, guildId) {
     tmp = items;
   }
   [obj, obj2] = tmp;
-  if (null === id) {
+  if (null === id1) {
     return null;
   } else {
-    const user = obj.getUser(id);
-    const userProfile = obj2.getUserProfile(id);
+    const user = obj.getUser(id1);
+    const userProfile = obj2.getUserProfile(id1);
     let tmp8 = null;
     if (null != user) {
       tmp8 = null;

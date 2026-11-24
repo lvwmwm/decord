@@ -1,10 +1,10 @@
-// Module ID: 10337
-// Function ID: 10338
+// Module ID: 14492
+// Function ID: 14493
 // Name: ApplicationAssetV2Utils
 // Dependencies: [1284, 1447, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 10337 (ApplicationAssetV2Utils)
+// Module 14492 (ApplicationAssetV2Utils)
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 19640
-// Function ID: 19641
+// Module ID: 19683
+// Function ID: 19684
 // Name: PhoenixRolloutManager
-// Dependencies: [5, 502, 3, 17183, 17180, 17181, 17182, 7484, 2]
+// Dependencies: [5, 502, 3, 17216, 17218, 17217, 17215, 7349, 2]
 
-// Module 19640 (PhoenixRolloutManager)
+// Module 19683 (PhoenixRolloutManager)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 17183 */;
+import react_nativeDefault from "react-native" /* 17216 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, c5, closure_2, id;

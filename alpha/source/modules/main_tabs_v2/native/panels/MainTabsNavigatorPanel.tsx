@@ -1,29 +1,31 @@
-// Module ID: 17516
-// Function ID: 17517
+// Module ID: 17554
+// Function ID: 17555
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1071, 21, 3, 4913, 575, 17517, 5090, 1501, 5092, 11954, 11952, 11955, 17518, 5098, 17519, 5646, 1107, 17520, 7737, 17523, 1653, 7097, 8572, 11770, 17524, 17525, 5173, 17532, 17533, 18167, 18168, 18169, 18848, 17983, 2]
+// Dependencies: [32, 19, 17, 1071, 4773, 21, 3, 4917, 575, 17555, 5094, 1501, 5096, 11837, 11835, 11838, 17556, 5102, 17557, 6000, 1107, 17558, 7714, 17561, 1653, 7067, 8874, 11660, 17562, 17563, 5177, 17570, 17571, 18206, 18207, 18208, 18890, 18022, 2]
 
-// Module 17516 (MainTabsNavigatorPanel)
+// Module 17554 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
-import RootNavigationRef from "RootNavigationRef" /* 5090 */;
-import ChatInputUtils from "ChatInputUtils" /* 5098 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17517 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17518 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 17523 */;
+import ChannelConstants from "ChannelConstants" /* 4773 */;
+import RootNavigationRef from "RootNavigationRef" /* 5094 */;
+import ChatInputUtils from "ChatInputUtils" /* 5102 */;
+import transitionToChannel from "transitionToChannel" /* 6000 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17555 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17556 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 17561 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set;
 
-let c10;
 let c9;
+let closure_12;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
@@ -34,13 +36,14 @@ let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ View: hasOwnProperty, StyleSheet: metroRequire, Pressable: metroImportDefault } = react_native);
 ({ ComponentActions: metroImportAll, ME: c9 } = Constants);
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 const tmp5 = new LoggerDefault("MainTabsNavigatorPanel");
-let closure_12 = tmp5;
+let closure_13 = tmp5;
 let obj = { container: { flex: 1 }, containerBackground: obj2, tabsContainer: { flex: 1 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-let closure_13 = createStyles.createStyles(obj);
-let closure_14 = { code: "(function MainTabsNavigatorPanelTsx1(){let[translateX,highestFullyRenderedScreenIndex]=this.__closure;return{opacity:translateX.get()>0&&highestFullyRenderedScreenIndex.get()<1?1:0};})" };
+let closure_14 = createStyles.createStyles(obj);
+let closure_15 = { code: "(function MainTabsNavigatorPanelTsx1(){let[translateX,highestFullyRenderedScreenIndex]=this.__closure;return{opacity:translateX.get()>0&&highestFullyRenderedScreenIndex.get()<1?1:0};})" };
 const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient) {
   let SidebarCoachmarkOverlay;
   let c3;
@@ -73,7 +76,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let tmp77;
   let tmp78;
   let type1;
-  const f131561 = () => first4;
+  const f131762 = () => first4;
   let flag = showHeaderGradient.showHeaderGradient;
   if (flag === undefined) {
     flag = true;
@@ -90,27 +93,27 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let ref2;
   let handleExit;
   let isNavigatorPanelsBesideChannelList;
+  let ref3;
   let logger;
-  closure_13 = undefined;
   let panelGestureContext;
   let translateX;
   let movePanel;
   let maxWidth;
   let isDraggingRef;
   let obj5;
-  let ref3;
+  let ref4;
   let callback4;
-  let tmp = closure_13();
+  let tmp = panelGestureContext();
   let tmp2 = navigation;
   const tmp3 = drawerWidth;
-  let obj = navigation(drawerWidth[10]);
+  let obj = navigation(drawerWidth[11]);
   navigation = obj.useNavigation();
-  let tmp6 = isChatLockedOpen(drawerWidth[11])();
+  let tmp6 = isChatLockedOpen(drawerWidth[12])();
   ({ isChatBesideChannelList, isChatLockedOpen } = tmp6);
-  let obj2 = navigation(drawerWidth[12]);
+  let obj2 = navigation(drawerWidth[13]);
   drawerWidth = obj2.useDrawerWidth();
-  const tmp8 = isChatLockedOpen(drawerWidth[13])();
-  const tmp9 = isChatLockedOpen(drawerWidth[14])();
+  const tmp8 = isChatLockedOpen(drawerWidth[14])();
+  const tmp9 = isChatLockedOpen(drawerWidth[15])();
   let seam;
   if (tmp9 != null) {
     seam = tmp9.seam;
@@ -118,6 +121,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   if (seam == null) {
     seam = null;
   }
+  let obj3 = react;
   _slicedToArray = react.useRef(isChatLockedOpen);
   react = react.useRef(false);
   const items = [isChatLockedOpen];
@@ -136,15 +140,15 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
       closure_4.current = true;
     }
   }, items);
-  const arr2 = isChatLockedOpen(tmp3[8])(navigation);
+  const arr2 = isChatLockedOpen(tmp3[9])(navigation);
   const first = arr2[0];
   let type;
   if (first != null) {
     type = first.type;
   }
-  const tmp14 = type === tmp2(tmp3[8]).ChannelScreenType.DEFAULT;
+  const tmp14 = type === tmp2(tmp3[9]).ChannelScreenType.DEFAULT;
   [first1, closure_6] = obj3.useState(tmp14);
-  [first3, closure_7] = react.useState(tmp14);
+  [first3, closure_7] = obj3.useState(tmp14);
   first2 = arr2[0];
   ref2 = obj3.useRef(first2);
   const items1 = [first2];
@@ -183,17 +187,17 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   first4 = undefined;
   closure_2 = undefined;
   c3 = undefined;
-  [first4, closure_2] = react.useState(() => {
-    const obj = navigation(drawerWidth[8]);
+  [first4, closure_2] = obj3.useState(() => {
+    const obj = navigation(drawerWidth[9]);
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp25, c3] = react.useState(f131561);
+  [tmp25, c3] = obj3.useState(f131762);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f131561), 2);
+  _slicedToArray(obj3.useState(f131762), 2);
   const effect1 = obj3.useEffect(() => {
     let addListenerResult1;
     let state;
-    let obj = navigation(addListenerResult1[9]);
+    let obj = navigation(addListenerResult1[10]);
     const rootNavigationRef = obj.getRootNavigationRef();
     let current;
     const tmp = navigation;
@@ -202,7 +206,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
       current = rootNavigationRef.current;
     }
     function handleStateChange() {
-      const obj = navigation(addListenerResult1[8]);
+      const obj = navigation(addListenerResult1[9]);
       addListenerResult1(obj.isActiveTabsGuilds(state.getState()));
     }
     const obj2 = navigation;
@@ -216,7 +220,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     if (current != null) {
       addListenerResult1 = current.addListener("ready", handleStateChange);
     }
-    const tmpResult = tmp(tmp2[8]);
+    const tmpResult = tmp(tmp2[9]);
     addListenerResult1(tmpResult.isActiveTabsGuilds(obj2.getState()));
     return () => {
       state();
@@ -232,25 +236,26 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   const effect2 = obj3.useEffect(() => {
     _undefined(first4);
   }, items4);
-  let tmp2Result = tmp2(tmp3[17]);
+  let tmp2Result = tmp2(tmp3[18]);
   let tmp30 = isChatBesideChannelList;
   if (tmp30) {
     tmp30 = tmp25 || tmp29;
   }
   isNavigatorPanelsBesideChannelList = tmp30;
-  logger = obj3.useRef(false);
+  ref3 = obj3.useRef(false);
   const items5 = [navigation, handleExit];
   const callback1 = obj3.useCallback((arg0) => {
+    let channelId;
+    let guildId;
     closure_6(arg0);
     closure_7(arg0);
-    logger.current = false;
+    ref3.current = false;
     if (arg0) {
       if (null != ref2.current) {
         if ("channel" !== navigation.getState().routes[navigation.getState(navigation).index].name) {
-          const obj2 = RootNavigationRef;
-          const rootNavigationRef = obj2.getRootNavigationRef();
+          const obj3 = RootNavigationRef;
+          const rootNavigationRef = obj3.getRootNavigationRef();
           let name;
-          const tmp15 = require;
           if (rootNavigationRef != null) {
             const state = rootNavigationRef.getState();
             if (state != null) {
@@ -269,8 +274,15 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            const tmp15Result = tmp15(5646);
-            tmp15Result.transitionToChannel(tmp6.current.channelId);
+            ({ guildId, channelId } = tmp6.current);
+            if (null != guildId) {
+              if (isStaticChannelRoute(channelId)) {
+                const tmp17Result = transitionToChannel;
+                const result = tmp17Result.transitionToStaticChannelRoute(guildId, channelId);
+              }
+            }
+            const tmp17Result2 = transitionToChannel;
+            tmp17Result2.transitionToChannel(channelId);
           }
         }
       }
@@ -286,22 +298,22 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   }, []);
   let tmp35 = null != first2;
   const callback3 = obj3.useCallback(() => {
-    const ComponentDispatch = navigation(drawerWidth[19]).ComponentDispatch;
+    const ComponentDispatch = navigation(drawerWidth[20]).ComponentDispatch;
     ComponentDispatch.dispatch(first2.BOTTOM_CHANNEL_SCREEN_DRAG_START);
-    const obj = navigation(drawerWidth[16]);
+    const obj = navigation(drawerWidth[17]);
     obj.dismissKeyboard();
   }, []);
   if (tmp35) {
-    tmp35 = first2.type !== tmp2(tmp3[8]).ChannelScreenType.FALLBACK_RENDERED;
+    tmp35 = first2.type !== tmp2(tmp3[9]).ChannelScreenType.FALLBACK_RENDERED;
   }
-  closure_13 = tmp35;
+  logger = tmp35;
   let tmp37 = tmp30;
-  const tmp5Result = isChatLockedOpen(tmp3[20]);
+  const tmp5Result = isChatLockedOpen(tmp3[21]);
   if (tmp30) {
     tmp37 = isChatLockedOpen;
   }
   const first5 = arr2[0];
-  const obj4 = { canDrag: !tmp37 && tmp35, onVisibilityChange: callback1, onPreMovement: callback2, onDragStart: callback3, startShown: type1 === tmp2(tmp3[8]).ChannelScreenType.DEFAULT, openWidth: tmp41, foldSeam: seam };
+  const obj4 = { canDrag: !tmp37 && tmp35, onVisibilityChange: callback1, onPreMovement: callback2, onDragStart: callback3, startShown: type1 === tmp2(tmp3[9]).ChannelScreenType.DEFAULT, openWidth: tmp41, foldSeam: seam };
   type1 = undefined;
   if (first5 != null) {
     type1 = first5.type;
@@ -329,9 +341,9 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     const merged = Object.assign(panelGestureContext);
     return obj;
   }, items7);
-  ref3 = obj3.useRef(obj5);
+  ref4 = obj3.useRef(obj5);
   const effect4 = obj3.useEffect(() => {
-    ref3.current = obj5;
+    ref4.current = obj5;
   });
   let type2;
   const useEffect = obj3.useEffect;
@@ -342,7 +354,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   const effect5 = useEffect(() => {
     let screens;
     if (!isDraggingRef.current) {
-      const current = ref3.current;
+      const current = ref4.current;
       ({ maxWidth, movePanel } = current);
       let type;
       ({ handleExit, screens } = current);
@@ -361,8 +373,8 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
         closure_6(tmp6);
         closure_7(tmp6);
       } else if (tmp6) {
-        if (logger.current) {
-          logger.current = false;
+        if (ref3.current) {
+          ref3.current = false;
           if (translateX.get() === maxWidth) {
             handleExit();
           }
@@ -370,7 +382,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
           movePanel(true, false, 0, true);
         }
       } else if (movePanel(false, false, 0, false)) {
-        const tmp4Result = tmp4(5098);
+        const tmp4Result = tmp4(5102);
         tmp4Result.dismissKeyboard();
       }
     }
@@ -382,7 +394,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   }
   const items9 = [channelId];
   const effect21 = useEffect2(() => {
-    const firstScreen = ref3.current.firstScreen;
+    const firstScreen = ref4.current.firstScreen;
     let type;
     if (firstScreen != null) {
       type = firstScreen.type;
@@ -399,7 +411,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   }, items9);
   const items10 = [movePanel, tmp35];
   callback4 = obj3.useCallback(() => {
-    const tmp = closure_13;
+    const tmp = logger;
     if (tmp) {
       movePanel(true, false, 0, false);
     }
@@ -420,23 +432,23 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
       let tmp = null;
       if (isNavigatorPanelsBesideChannelList) {
         const obj = { translateX, maxWidth, isChatLockedOpen };
-        tmp = authStore(ChannelScreenAnimatedFrameDefault, obj);
+        tmp = unpackModuleId(ChannelScreenAnimatedFrameDefault, obj);
       }
       return tmp;
     }, items12);
-    const useSharedValue = tmp2(tmp3[23]).useSharedValue;
+    const useSharedValue = tmp2(tmp3[24]).useSharedValue;
     let num2 = 0;
     let num3 = 0;
-    tmp2(tmp3[23]);
+    tmp2(tmp3[24]);
     if (translateX.get() > 0) {
       num3 = -1;
     }
     const sharedValue = useSharedValue(num3);
-    const items13 = [panelGestureContext, translateX, sharedValue];
+    const items13 = [translateX, translateX, sharedValue];
     let c0;
     let c1;
     [tmp59, tmp60, tmp61] = items13;
-    const tmp2Result6 = tmp2(tmp3[23]);
+    const tmp2Result6 = tmp2(tmp3[24]);
     class MainTabsNavigatorPanelTsx1 {
       constructor() {
         let opacity = 0;
@@ -455,18 +467,18 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     MainTabsNavigatorPanelTsx1.__workletHash = 9133325578128;
     MainTabsNavigatorPanelTsx1.__initData = tmp59;
     const animatedStyle = tmp2Result6.useAnimatedStyle(MainTabsNavigatorPanelTsx1);
-    const tmp63 = isChatLockedOpen(tmp3[24])("channel_list_scrim");
-    const tmp2Result7 = tmp2(tmp3[25]);
+    const tmp63 = isChatLockedOpen(tmp3[25])("channel_list_scrim");
+    const tmp2Result7 = tmp2(tmp3[26]);
     const isCustomThemeActive = tmp2Result7.useIsCustomThemeActive();
     const obj6 = { value: memo, children: items15 };
-    const Provider = tmp5(tmp3[26]).Provider;
+    const Provider = tmp5(tmp3[27]).Provider;
     let tmp67Result = null;
-    const tmp2Result8 = tmp2(tmp3[27]);
+    const tmp2Result8 = tmp2(tmp3[28]);
     if (tmp2Result8.isJankScreenReportingEnabled()) {
       const obj7 = { translateX, maxWidth, channelId: channelId1, showCreateThread: flag2 };
       channelId1 = undefined;
-      const tmp5Result3 = isChatLockedOpen(tmp3[28]);
-      const tmp67 = handleExit;
+      const tmp5Result3 = isChatLockedOpen(tmp3[29]);
+      const tmp67 = isNavigatorPanelsBesideChannelList;
       if (first2 != null) {
         channelId1 = first2.channelId;
       }
@@ -482,37 +494,37 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     items15 = [tmp67Result, ];
     const items16 = [tmp.container, ];
     let containerBackground = !isCustomThemeActive;
-    const obj8 = { gesture, children: handleExit(tmp71, obj9) };
-    const GestureDetector = tmp2(tmp3[29]).GestureDetector;
+    const obj8 = { gesture, children: isNavigatorPanelsBesideChannelList(tmp71, obj9) };
+    const GestureDetector = tmp2(tmp3[30]).GestureDetector;
     tmp71 = first1;
     if (!isCustomThemeActive) {
       containerBackground = tmp.containerBackground;
     }
     items16[1] = containerBackground;
-    obj9 = { style: items16, collapsable: false, children: isNavigatorPanelsBesideChannelList(SidebarCoachmarkOverlay, obj10) };
-    SidebarCoachmarkOverlay = tmp2(tmp3[30]).SidebarCoachmarkOverlay;
+    obj9 = { style: items16, collapsable: false, children: ref3(SidebarCoachmarkOverlay, obj10) };
+    SidebarCoachmarkOverlay = tmp2(tmp3[31]).SidebarCoachmarkOverlay;
     const obj11 = { style: items17, accessibilityElementsHidden: tmp72, importantForAccessibility: str2, children: items18 };
     items17 = [tmp.tabsContainer, animatedStyle];
     obj10 = { enabled: tmp25, children: items19 };
     tmp72 = !tmp52;
-    const View = tmp5(tmp3[23]).View;
-    items18 = [handleExit(tmp5(tmp3[31]), {}), ];
+    const View = tmp5(tmp3[24]).View;
+    items18 = [isNavigatorPanelsBesideChannelList(tmp5(tmp3[32]), {}), ];
     let tmp70Result;
     if (tmp63) {
       const obj12 = { translateX, maxWidth };
-      tmp70Result = tmp70(tmp2(tmp3[32]).MainTabsContentScrim, obj12);
+      tmp70Result = tmp70(tmp2(tmp3[33]).MainTabsContentScrim, obj12);
     }
     items18[1] = tmp70Result;
-    items19 = [isNavigatorPanelsBesideChannelList(View, obj11), , , ];
+    items19 = [ref3(View, obj11), , , ];
     let tmp70Result3 = null;
     if (flag) {
-      tmp70Result3 = tmp70(tmp5(tmp3[33]), {});
+      tmp70Result3 = tmp70(tmp5(tmp3[34]), {});
     }
     items19[1] = tmp70Result3;
     if (arr2.length > 0) {
       const obj13 = { screens: arr2, screenStackActive: first1, screenStackVisible: tmp77, navigationTTIStackVisible: first1, translateX, isDragging, maxWidth, highestFullyRenderedScreenIndex: sharedValue, shouldFreeze: !tmp30, focusChatPressableComponent: tmp51, firstScreenWidth: tmp78, firstScreenFrame: memo1 };
       tmp77 = first1;
-      const tmp5Result4 = isChatLockedOpen(tmp3[34]);
+      const tmp5Result4 = isChatLockedOpen(tmp3[35]);
       if (!first1) {
         tmp77 = tmp30;
       }
@@ -531,16 +543,16 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
       if (tmp30) {
         tmp70Result4 = null;
         if (isChatLockedOpen) {
-          const obj14 = { children: handleExit(isChatLockedOpen(tmp3[35]), {}) };
-          const BackgroundChatPortal = tmp2(tmp3[17]).BackgroundChatPortal;
+          const obj14 = { children: isNavigatorPanelsBesideChannelList(isChatLockedOpen(tmp3[36]), {}) };
+          const BackgroundChatPortal = tmp2(tmp3[18]).BackgroundChatPortal;
           tmp70Result4 = tmp70(BackgroundChatPortal, obj14);
         }
       }
     }
     items19[2] = tmp70Result4;
-    items19[3] = handleExit(isChatLockedOpen(tmp3[36]), { placement: "main-tabs" });
-    items15[1] = handleExit(GestureDetector, obj8);
-    return isNavigatorPanelsBesideChannelList(Provider, obj6);
+    items19[3] = isNavigatorPanelsBesideChannelList(isChatLockedOpen(tmp3[37]), { placement: "main-tabs" });
+    items15[1] = isNavigatorPanelsBesideChannelList(GestureDetector, obj8);
+    return ref3(Provider, obj6);
   }
   tmp52 = !first1;
 });

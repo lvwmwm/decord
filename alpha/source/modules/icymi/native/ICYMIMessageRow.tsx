@@ -1,29 +1,29 @@
-// Module ID: 18136
-// Function ID: 18137
+// Module ID: 18175
+// Function ID: 18176
 // Name: ICYMIMessageRow
-// Dependencies: [19, 17, 4762, 4825, 4784, 4855, 6552, 1386, 18131, 1071, 21, 575, 18093, 1378, 18094, 8223, 10037, 504, 18137, 18138, 5504, 1112, 1186, 5943, 6511, 18124, 10043, 13843, 12122, 18132, 18134, 11, 7030, 8009, 18140, 2]
+// Dependencies: [19, 17, 4766, 4829, 4788, 4859, 6041, 1386, 18170, 1071, 21, 575, 18132, 1378, 18133, 8669, 8776, 504, 18176, 18177, 5508, 1112, 1186, 6681, 6865, 18163, 8782, 11261, 12054, 18171, 18173, 11, 6026, 8446, 18179, 2]
 // Exports: default
 
-// Module 18136 (ICYMIMessageRow)
+// Module 18175 (ICYMIMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 12122 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13843 */;
-import DesignConstants from "DesignConstants" /* 18131 */;
-import ICYMIShared from "ICYMIShared" /* 18132 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6865 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8782 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11261 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 12054 */;
+import DesignConstants from "DesignConstants" /* 18170 */;
+import ICYMIShared from "ICYMIShared" /* 18171 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6041 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18093 */;
+import createICYMIStyles from "createICYMIStyles" /* 18132 */;
 import size from "module_2" /* 2 */;
 
 let content_type;
@@ -56,9 +56,9 @@ class MessageRowContent {
     const tmp = closure_18();
     let tmp2 = message;
     let tmp3 = dependencyMap;
-    const context = react.useContext(message(18094).ICYMIContext);
-    const obj = message(8223);
-    const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(10037).GRAVITY_VALID_EMBED_TYPES);
+    const context = react.useContext(message(18133).ICYMIContext);
+    const obj = message(8669);
+    const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(8776).GRAVITY_VALID_EMBED_TYPES);
     const items = [UserGuildSettingsStore];
     const obj2 = message(504);
     const stateFromStores = obj2.useStateFromStores(items, () => UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id));
@@ -94,7 +94,7 @@ class MessageRowContent {
     if (tmp12Result) {
       const obj5 = { message, muted: stateFromStores, lineClamp: num, messageOptions: obj6, pointerEvents: str };
       obj6 = undefined;
-      const MessageRowPreview = tmp2(18137).MessageRowPreview;
+      const MessageRowPreview = tmp2(18176).MessageRowPreview;
       const tmp12 = closure_14;
       if (0 === result.length) {
         if (message.attachments.length > 0) {
@@ -112,14 +112,14 @@ class MessageRowContent {
     items3 = [tmp12Result, , ];
     let tmp13 = result.length > 0;
     if (tmp13) {
-      const obj7 = { style: tmp.media, children: closure_14(channel(18138), obj8) };
+      const obj7 = { style: tmp.media, children: closure_14(channel(18177), obj8) };
       obj8 = { message, visible: flag2, itemType: "message" };
       tmp13 = closure_14(tmp9, obj7);
     }
     items3[1] = tmp13;
     let tmp16 = 0 === result.length && message.embeds.length > 0;
     if (tmp16) {
-      const obj9 = { style: tmp.media, children: closure_14(tmp2(18137).NonMediaEmbedsRowPreview, obj10) };
+      const obj9 = { style: tmp.media, children: closure_14(tmp2(18176).NonMediaEmbedsRowPreview, obj10) };
       obj10 = { message, muted: stateFromStores, lineClamp: 3 };
       tmp16 = closure_14(tmp9, obj9);
     }
@@ -332,7 +332,7 @@ export default function MessageRowWrapper(arg0) {
   let visible;
   let gravityMessage;
   ({ message, messageContext, visible } = arg0);
-  const obj = gravityMessage(18124);
+  const obj = gravityMessage(18163);
   gravityMessage = obj.useGravityMessage(message);
   const items = [ChannelStore];
   const obj2 = gravityMessage(504);

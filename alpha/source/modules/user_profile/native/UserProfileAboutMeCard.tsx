@@ -1,10 +1,10 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 13691
+// Function ID: 13692
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2188, 4825, 4784, 7564, 1071, 1499, 21, 4913, 5477, 575, 5504, 8135, 1112, 14212, 504, 7069, 11, 9604, 7322, 14213, 1186, 7255, 7520, 14214, 5127, 5090, 1098, 7189, 5098, 1626, 8067, 14215, 5511, 7563, 2]
+// Dependencies: [19, 17, 2188, 4829, 4788, 7431, 1071, 1499, 21, 4917, 5481, 575, 5508, 6255, 1112, 13692, 504, 6244, 11, 11507, 6926, 13693, 1186, 7679, 6253, 13694, 5131, 5094, 1098, 7268, 5102, 1626, 6007, 13695, 5515, 7430, 2]
 // Exports: default
 
-// Module 14211 (UserProfileAboutMeCard)
+// Module 13691 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,22 +12,22 @@ import Constants2 from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
-import ChatInputUtils from "ChatInputUtils" /* 5098 */;
-import useToken from "useToken" /* 5477 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7255 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7563 */;
-import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8135 */;
-import BioTextDefault from "BioText" /* 14212 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 14213 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 14215 */;
+import ChatInputUtils from "ChatInputUtils" /* 5102 */;
+import useToken from "useToken" /* 5481 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 6255 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7430 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7679 */;
+import BioTextDefault from "BioText" /* 13692 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 13693 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 13695 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import Constants from "Constants" /* 7564 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import Constants from "Constants" /* 7431 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let children;
@@ -40,7 +40,7 @@ let tmp;
 let tmp10;
 let unpackModuleId;
 const KeyboardTypes = tmp(1626);
-const GuildIconDefault = tmp10(7322);
+const GuildIconDefault = tmp10(6926);
 function Heading(themeType) {
   let headingSpacing;
   let headingVariant;
@@ -177,13 +177,13 @@ function MemberJoinDates(userId) {
     }
     return member;
   });
-  const getCreatedAtDate = userId(7069).getCreatedAtDate;
-  userId(7069);
+  const getCreatedAtDate = userId(6244).getCreatedAtDate;
+  userId(6244);
   const obj4 = SnowflakeUtilsDefault;
   const createdAtDate = getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
   let joinedAt;
-  const getCreatedAtDate2 = userId(7069).getCreatedAtDate;
-  userId(7069);
+  const getCreatedAtDate2 = userId(6244).getCreatedAtDate;
+  userId(6244);
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
@@ -193,7 +193,7 @@ function MemberJoinDates(userId) {
   const items3 = [closure_11(Heading, obj5), ];
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  const obj7 = { themeType, icon: closure_11(userId(9604).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1112).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
+  const obj7 = { themeType, icon: closure_11(userId(11507).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1112).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
   intl2 = tmp4(1112).intl;
   items5 = [closure_11(TextWithIcon, obj7), ];
   let tmp15Result = null != stateFromStores1 && null != createdAtDate2;
@@ -201,9 +201,9 @@ function MemberJoinDates(userId) {
   if (tmp15Result) {
     const obj8 = { children: items6 };
     const obj9 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    items6 = [closure_11(tmp4(5504).Text, obj9), ];
+    items6 = [closure_11(tmp4(5508).Text, obj9), ];
     const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1112).t.FdLNDK, obj12), children: createdAtDate2 };
-    obj11 = { guild: stateFromStores1, size: userId(7322).GuildIconSizes.XXSMALL };
+    obj11 = { guild: stateFromStores1, size: userId(6926).GuildIconSizes.XXSMALL };
     tmp10Result = GuildIconDefault;
     intl3 = tmp4(1112).intl;
     obj12 = { guildName: stateFromStores1.name, date: createdAtDate2 };

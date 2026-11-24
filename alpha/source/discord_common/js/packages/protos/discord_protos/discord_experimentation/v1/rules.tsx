@@ -1,9 +1,9 @@
-// Module ID: 8243
-// Function ID: 8244
+// Module ID: 5646
+// Function ID: 5647
 // Name: rules
 // Dependencies: [32, 1196, 1226, 2]
 
-// Module 8243 (rules)
+// Module 5646 (rules)
 import _mod1196 from "module_1196" /* 1196 */;
 import wrappers from "wrappers" /* 1226 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -659,7 +659,7 @@ class Filter$Type extends MessageType3 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { filter: { oneofKind: "r" }, negate: false };
+    obj = { filter: { oneofKind: "Array" }, negate: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
@@ -1736,7 +1736,7 @@ class ClientLocation_Location$Type extends MessageType13 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { location: { oneofKind: "r" } };
+    obj = { location: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);

@@ -1,10 +1,10 @@
-// Module ID: 5797
-// Function ID: 5798
+// Module ID: 5858
+// Function ID: 5859
 // Name: device/DeviceState
-// Dependencies: [5, 3, 1442, 5798, 2]
+// Dependencies: [5, 3, 1442, 5859, 2]
 // Exports: getDeviceState
 
-// Module 5797 (device/DeviceState)
+// Module 5858 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -13,6 +13,7 @@ let c5, c6, closure_3;
 
 let obj = function _getDeviceState() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let tmp;
     let closure_0 = arg0;
     if (c6 === 2) {
       c6 = 3;

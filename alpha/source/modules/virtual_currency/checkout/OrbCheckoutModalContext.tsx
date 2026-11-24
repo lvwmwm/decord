@@ -1,15 +1,15 @@
-// Module ID: 14235
-// Function ID: 14236
+// Module ID: 11462
+// Function ID: 11463
 // Name: OrbCheckoutModalContext
-// Dependencies: [19, 9113, 21, 1268, 14236, 6859, 2]
+// Dependencies: [19, 8978, 21, 1268, 11463, 7471, 2]
 // Exports: OrbCheckoutModalContextProvider, useOrbCheckoutModalContext, useOrbCheckoutModalContextProvider
 
-// Module 14235 (OrbCheckoutModalContext)
+// Module 11462 (OrbCheckoutModalContext)
 import Fragment from "Fragment" /* 21 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6859 */;
-import OrbCheckoutHooks from "OrbCheckoutHooks" /* 14236 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7471 */;
+import OrbCheckoutHooks from "OrbCheckoutHooks" /* 11463 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 9113 */;
+import OrderRecord from "OrderRecord" /* 8978 */;
 import v1_mod from "v1" /* 1268 */;
 import size from "module_2" /* 2 */;
 

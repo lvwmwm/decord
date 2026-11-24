@@ -1,17 +1,17 @@
-// Module ID: 6581
-// Function ID: 6582
+// Module ID: 6765
+// Function ID: 6766
 // Name: EmojiTermsImporter
-// Dependencies: [5, 1116, 6582, 6583, 6584, 6585, 6586, 6587, 6588, 6589, 6590, 6591, 6592, 6593, 6594, 6595, 6596, 6597, 6598, 6599, 6600, 6601, 6602, 6603, 6604, 6605, 6606, 6607, 6608, 6609, 6610, 2]
+// Dependencies: [5, 1116, 6766, 6767, 6768, 6769, 6770, 6771, 6772, 6773, 6774, 6775, 6776, 6777, 6778, 6779, 6780, 6781, 6782, 6783, 6784, 6785, 6786, 6787, 6788, 6789, 6790, 6791, 6792, 6793, 6794, 2]
 
-// Module 6581 (EmojiTermsImporter)
+// Module 6765 (EmojiTermsImporter)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import "AssetRegistry";
-import AssetRegistry_mod from "AssetRegistry" /* 6610 */;
+import AssetRegistry_mod from "AssetRegistry" /* 6794 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
 
-const f89312 = async (arg0, value) => {
+const f89747 = async (arg0, value) => {
   let closure_0;
   let obj3;
   if (c3 === 2) {
@@ -68,7 +68,7 @@ const f89312 = async (arg0, value) => {
     }
   }
 };
-let obj = { bg: _asyncToGenerator(f89312), cs: _asyncToGenerator(f89312), da: _asyncToGenerator(f89312), de: _asyncToGenerator(f89312), el: _asyncToGenerator(f89312), "en-US": _asyncToGenerator(f89312), "es-ES": _asyncToGenerator(f89312), "es-419": _asyncToGenerator(f89312), fi: _asyncToGenerator(f89312), fr: _asyncToGenerator(f89312), hr: _asyncToGenerator(f89312), hu: _asyncToGenerator(f89312), it: _asyncToGenerator(f89312), ja: _asyncToGenerator(f89312), ko: _asyncToGenerator(f89312), lt: _asyncToGenerator(f89312), nl: _asyncToGenerator(f89312), no: _asyncToGenerator(f89312), pl: _asyncToGenerator(f89312), "pt-BR": _asyncToGenerator(f89312), ro: _asyncToGenerator(f89312), ru: _asyncToGenerator(f89312), "sv-SE": _asyncToGenerator(f89312), th: _asyncToGenerator(f89312), tr: _asyncToGenerator(f89312), uk: _asyncToGenerator(f89312), vi: _asyncToGenerator(f89312), "zh-CN": _asyncToGenerator(f89312), hi: _asyncToGenerator(f89312) };
+let obj = { bg: _asyncToGenerator(f89747), cs: _asyncToGenerator(f89747), da: _asyncToGenerator(f89747), de: _asyncToGenerator(f89747), el: _asyncToGenerator(f89747), "en-US": _asyncToGenerator(f89747), "es-ES": _asyncToGenerator(f89747), "es-419": _asyncToGenerator(f89747), fi: _asyncToGenerator(f89747), fr: _asyncToGenerator(f89747), hr: _asyncToGenerator(f89747), hu: _asyncToGenerator(f89747), it: _asyncToGenerator(f89747), ja: _asyncToGenerator(f89747), ko: _asyncToGenerator(f89747), lt: _asyncToGenerator(f89747), nl: _asyncToGenerator(f89747), no: _asyncToGenerator(f89747), pl: _asyncToGenerator(f89747), "pt-BR": _asyncToGenerator(f89747), ro: _asyncToGenerator(f89747), ru: _asyncToGenerator(f89747), "sv-SE": _asyncToGenerator(f89747), th: _asyncToGenerator(f89747), tr: _asyncToGenerator(f89747), uk: _asyncToGenerator(f89747), vi: _asyncToGenerator(f89747), "zh-CN": _asyncToGenerator(f89747), hi: _asyncToGenerator(f89747) };
 let AssetRegistry = AssetRegistry_mod;
 const result = size.fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.native.js");
 

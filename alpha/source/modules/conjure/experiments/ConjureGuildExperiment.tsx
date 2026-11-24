@@ -1,13 +1,13 @@
-// Module ID: 6657
-// Function ID: 6658
+// Module ID: 6843
+// Function ID: 6844
 // Name: ConjureGuildExperiment
-// Dependencies: [4784, 1071, 1450, 6658, 504, 2]
-// Exports: useHasConjureGuild, useIsConjureGuildEnabled
+// Dependencies: [4788, 1071, 1450, 6844, 504, 2]
+// Exports: hasConjureExperimentGuild, useHasConjureGuild, useIsConjureGuildEnabled
 
-// Module 6657 (ConjureGuildExperiment)
+// Module 6843 (ConjureGuildExperiment)
 import Constants from "Constants" /* 1071 */;
-import ConjureUserExperiment from "ConjureUserExperiment" /* 6658 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import ConjureUserExperiment from "ConjureUserExperiment" /* 6844 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
@@ -120,6 +120,18 @@ export function useIsConjureGuildEnabled(arg0) {
 }
 export { isConjureGuildEnabled };
 export { hasConjureGuild };
+export function hasConjureExperimentGuild(guildsArray, useConjureServerWidgetOffers) {
+  const obj = guildsArray[Symbol.iterator]();
+  while (obj !== undefined) {
+    let obj2 = { guildId: tmp.id, location: useConjureServerWidgetOffers };
+    if (closure_4.getConfig(obj2).enabled) {
+      obj.return();
+      let flag = true;
+      return true;
+    }
+  }
+  return false;
+}
 export { isConjureGuildEnabledWithoutExposure };
 export { hasConjureGuildWithoutExposure };
 export function useHasConjureGuild(DMAppChannel, arg1) {

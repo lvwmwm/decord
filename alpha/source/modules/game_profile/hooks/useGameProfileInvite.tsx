@@ -1,17 +1,17 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 8651
+// Function ID: 8652
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2140, 4764, 5632, 1071, 9779, 504, 1088, 7262, 9053, 2]
+// Dependencies: [5, 19, 2140, 4768, 5636, 1071, 8623, 504, 1088, 7686, 8578, 2]
 // Exports: default, hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 9807 (useGameProfileInvite)
+// Module 8651 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1088 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7262 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7686 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2140 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4764 */;
-import InviteStore from "InviteStore" /* 5632 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4768 */;
+import InviteStore from "InviteStore" /* 5636 */;
 import Constants from "Constants" /* 1071 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f95799 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f93520 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -159,7 +159,7 @@ export default function useGameProfileInvite(websites, set) {
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f95799);
+      found = websites.find(f93520);
     }
   }
   let arr;
@@ -247,7 +247,7 @@ export function preloadGameProfileInvite(arg0) {
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f95799);
+        found = websites.find(f93520);
       }
     }
     let arr;

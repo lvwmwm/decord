@@ -1,27 +1,27 @@
-// Module ID: 20068
-// Function ID: 20069
+// Module ID: 20111
+// Function ID: 20112
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 4762, 8053, 4784, 4845, 1071, 21, 4913, 575, 1500, 504, 38, 12, 20069, 8062, 5860, 1112, 5474, 7029, 7709, 20070, 8054, 1263, 7095, 7092, 2]
+// Dependencies: [32, 19, 4766, 10285, 4788, 4849, 1071, 21, 4917, 575, 1500, 504, 38, 12, 20112, 10291, 5920, 1112, 5478, 7618, 7947, 20113, 10286, 1263, 7065, 7229, 2]
 // Exports: default
 
-// Module 20068 (InviteSettingsModal)
+// Module 20111 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
-import Navigator from "Navigator" /* 7092 */;
-import NavigatorHeader from "NavigatorHeader" /* 7095 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8062 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20069 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5920 */;
+import NavigatorHeader from "NavigatorHeader" /* 7065 */;
+import Navigator from "Navigator" /* 7229 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10291 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20112 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8053 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10285 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, getGuild, navigation;
@@ -97,7 +97,7 @@ function AdvancedInstantInviteScreen() {
       }
     }
   }, items1);
-  const tmp2Result2 = navigation(5474);
+  const tmp2Result2 = navigation(5478);
   const unmountEffect = tmp2Result2.useUnmountEffect(() => {
     const obj = channel(closure_2[15]);
     obj.resetSettings();
@@ -162,9 +162,9 @@ function AdvancedInstantInviteScreen() {
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(7709).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8054).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(20070);
+  const Form = tmp2(7947).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(10286).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(20113);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 }

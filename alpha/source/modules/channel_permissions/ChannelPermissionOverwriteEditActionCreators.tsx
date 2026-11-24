@@ -1,17 +1,17 @@
-// Module ID: 18961
-// Function ID: 18962
+// Module ID: 19003
+// Function ID: 19004
 // Name: ChannelPermissionOverwriteEditActionCreators
-// Dependencies: [5, 4762, 18956, 572, 5595, 1112, 18957, 7737, 2]
+// Dependencies: [5, 4766, 18998, 572, 5599, 1112, 18999, 7714, 2]
 // Exports: updateChannelPermissionOverwrite
 
-// Module 18961 (ChannelPermissionOverwriteEditActionCreators)
+// Module 19003 (ChannelPermissionOverwriteEditActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
-import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 18956 */;
-import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 18957 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
+import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 18998 */;
+import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 18999 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import size from "module_2" /* 2 */;
 
 let c10, c5, c9, closure_5, closure_8, editId;
@@ -364,7 +364,7 @@ obj = function _drainPendingEdits() {
                       readyEdits = c5.getReadyEdits(closure_0, pendingEdits);
                       if (0 === readyEdits.length) {
                         c7 = 3;
-                        const obj4 = { value: { v: "r" }, done: true };
+                        const obj4 = { value: { v: "Array" }, done: true };
                         return obj4;
                       } else {
                         mapped = readyEdits.map((editId) => {
@@ -411,7 +411,7 @@ obj = function _drainPendingEdits() {
                       return obj7;
                     } else {
                       c7 = 3;
-                      const obj8 = { value: { v: "r" }, done: true };
+                      const obj8 = { value: { v: "Array" }, done: true };
                       return obj8;
                     }
                   } else if (2 === c6) {

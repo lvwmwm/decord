@@ -1,37 +1,39 @@
-// Module ID: 15686
-// Function ID: 15687
+// Module ID: 15707
+// Function ID: 15708
 // Name: crossPlatformRPCCommands
-// Dependencies: [15687, 15691, 15693, 15694, 15695, 15696, 15697, 15698, 15700, 15710, 15711, 15712, 15713, 15714, 15715, 15716, 15723, 15725, 15728, 15729, 15730, 15731, 15732, 15733, 15734, 15735, 15736, 15737, 2]
+// Dependencies: [15708, 15712, 15714, 15715, 15716, 15719, 15720, 15723, 15724, 15725, 15727, 15736, 15737, 15738, 15739, 15740, 15741, 15742, 15749, 15751, 15754, 15755, 15756, 15757, 15758, 15759, 15760, 15761, 15762, 15763, 2]
 
-// Module 15686 (crossPlatformRPCCommands)
-import applicationDefault from "application" /* 15687 */;
-import certifiedDevicesDefault from "certifiedDevices" /* 15691 */;
-import channelsDefault from "channels" /* 15693 */;
-import commands_configDefault from "commands/config" /* 15694 */;
-import contextDefault from "context" /* 15695 */;
-import guildsDefault from "guilds" /* 15696 */;
-import imagesDefault from "images" /* 15697 */;
-import invitesDefault from "invites" /* 15698 */;
-import linksDefault from "links" /* 15700 */;
-import logsDefault from "logs" /* 15710 */;
-import networkingDefault from "networking" /* 15711 */;
-import providersDefault from "providers" /* 15712 */;
-import relationshipsDefault from "relationships" /* 15713 */;
-import setActivityDefault from "setActivity" /* 15714 */;
-import setOrientationLockStateDefault from "setOrientationLockState" /* 15715 */;
-import merged15Default from "merged15" /* 15716 */;
-import subscriptionsDefault from "subscriptions" /* 15723 */;
-import commands_userProfileDefault from "commands/userProfile" /* 15725 */;
-import usersDefault from "users" /* 15728 */;
-import userSettingsDefault from "userSettings" /* 15729 */;
-import platformBehaviorsDefault from "platformBehaviors" /* 15730 */;
-import soundboardDefault from "soundboard" /* 15731 */;
-import commands_conjureDevicePermissionsDefault from "commands/conjureDevicePermissions" /* 15732 */;
-import conjureLivePreviewDefault from "conjureLivePreview" /* 15733 */;
-import conjureVoiceDefault from "conjureVoice" /* 15734 */;
-import activitiesDefault from "activities" /* 15735 */;
-import questsDefault from "quests" /* 15736 */;
-import voiceChannelChatDefault from "voiceChannelChat" /* 15737 */;
+// Module 15707 (crossPlatformRPCCommands)
+import applicationDefault from "application" /* 15708 */;
+import certifiedDevicesDefault from "certifiedDevices" /* 15712 */;
+import channelsDefault from "channels" /* 15714 */;
+import commands_configDefault from "commands/config" /* 15715 */;
+import commands_confirmModalDefault from "commands/confirmModal" /* 15716 */;
+import contextDefault from "context" /* 15719 */;
+import gameProfileDefault from "gameProfile" /* 15720 */;
+import guildsDefault from "guilds" /* 15723 */;
+import imagesDefault from "images" /* 15724 */;
+import invitesDefault from "invites" /* 15725 */;
+import linksDefault from "links" /* 15727 */;
+import logsDefault from "logs" /* 15736 */;
+import networkingDefault from "networking" /* 15737 */;
+import providersDefault from "providers" /* 15738 */;
+import relationshipsDefault from "relationships" /* 15739 */;
+import setActivityDefault from "setActivity" /* 15740 */;
+import setOrientationLockStateDefault from "setOrientationLockState" /* 15741 */;
+import merged17Default from "merged17" /* 15742 */;
+import subscriptionsDefault from "subscriptions" /* 15749 */;
+import commands_userProfileDefault from "commands/userProfile" /* 15751 */;
+import usersDefault from "users" /* 15754 */;
+import userSettingsDefault from "userSettings" /* 15755 */;
+import platformBehaviorsDefault from "platformBehaviors" /* 15756 */;
+import soundboardDefault from "soundboard" /* 15757 */;
+import commands_conjureDevicePermissionsDefault from "commands/conjureDevicePermissions" /* 15758 */;
+import conjureLivePreviewDefault from "conjureLivePreview" /* 15759 */;
+import conjureVoiceDefault from "conjureVoice" /* 15760 */;
+import activitiesDefault from "activities" /* 15761 */;
+import questsDefault from "quests" /* 15762 */;
+import voiceChannelChatDefault from "voiceChannelChat" /* 15763 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
@@ -39,7 +41,9 @@ const application = Object.assign(applicationDefault);
 const certifiedDevices = Object.assign(certifiedDevicesDefault);
 const channels = Object.assign(channelsDefault);
 const config = Object.assign(commands_configDefault);
+const confirmModal = Object.assign(commands_confirmModalDefault);
 const context = Object.assign(contextDefault);
+const gameProfile = Object.assign(gameProfileDefault);
 const guilds = Object.assign(guildsDefault);
 const images = Object.assign(imagesDefault);
 const invites = Object.assign(invitesDefault);
@@ -50,7 +54,7 @@ const providers = Object.assign(providersDefault);
 const relationships = Object.assign(relationshipsDefault);
 const setActivity = Object.assign(setActivityDefault);
 const setOrientationLockState = Object.assign(setOrientationLockStateDefault);
-const merged15 = Object.assign(merged15Default);
+const merged17 = Object.assign(merged17Default);
 const subscriptions = Object.assign(subscriptionsDefault);
 const userProfile = Object.assign(commands_userProfileDefault);
 const users = Object.assign(usersDefault);

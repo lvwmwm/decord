@@ -1,24 +1,24 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 8506
+// Function ID: 8507
 // Name: FormComponents
-// Dependencies: [19, 5651, 21, 4913, 575, 7324, 7348, 9675, 1186, 7520, 9676, 9688, 7745, 6342, 9456, 8067, 504, 8059, 9739, 9741, 5504, 1112, 7045, 5511, 7739, 9742, 4969, 9743, 13817, 2]
+// Dependencies: [19, 5888, 21, 4917, 575, 6929, 6014, 8507, 1186, 6253, 8508, 8520, 7730, 6645, 8572, 6007, 504, 8258, 8575, 8577, 5508, 1112, 6018, 5515, 7716, 8580, 4973, 8581, 14142, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9674 (FormComponents)
+// Module 8506 (FormComponents)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import NativeViewDefault from "NativeView" /* 7324 */;
-import TableRowGroup2 from "TableRowGroup" /* 7348 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7739 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8059 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9675 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6007 */;
+import TableRowGroup2 from "TableRowGroup" /* 6014 */;
+import NativeViewDefault from "NativeView" /* 6929 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7716 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8258 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 8507 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5651 */;
+import PresenceStore from "PresenceStore" /* 5888 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

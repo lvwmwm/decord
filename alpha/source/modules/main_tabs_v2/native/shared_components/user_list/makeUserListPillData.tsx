@@ -1,13 +1,13 @@
-// Module ID: 9653
-// Function ID: 9654
+// Module ID: 11206
+// Function ID: 11207
 // Name: makeUserListPillData
-// Dependencies: [19, 21, 4969, 1186, 2]
+// Dependencies: [19, 21, 4973, 1186, 2]
 // Exports: default
 
-// Module 9653 (makeUserListPillData)
+// Module 11206 (makeUserListPillData)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
-import UserUtilsDefault from "UserUtils" /* 4969 */;
+import UserUtilsDefault from "UserUtils" /* 4973 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

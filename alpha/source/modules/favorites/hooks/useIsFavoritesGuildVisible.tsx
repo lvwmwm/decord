@@ -1,13 +1,13 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16765
+// Function ID: 16766
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [4946, 4765, 4787, 504, 2]
+// Dependencies: [4950, 4769, 4791, 504, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 16731 (useIsFavoritesGuildVisible)
-import FavoritesUtils from "FavoritesUtils" /* 4787 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
-import FavoriteStore from "FavoriteStore" /* 4765 */;
+// Module 16765 (useIsFavoritesGuildVisible)
+import FavoritesUtils from "FavoritesUtils" /* 4791 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
+import FavoriteStore from "FavoriteStore" /* 4769 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 7557
-// Function ID: 7558
+// Module ID: 7424
+// Function ID: 7425
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 1653, 4913, 575, 5513, 4927, 5514, 5515, 5477, 7337, 7558, 5129, 5130, 2]
+// Dependencies: [32, 19, 17, 21, 1653, 4917, 575, 5517, 4931, 5518, 5519, 5481, 7057, 7425, 5133, 5134, 2]
 // Exports: FormSwitch
 
-// Module 7557 (FormSwitch)
+// Module 7424 (FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import HapticUtils from "HapticUtils" /* 5129 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
-import IconDefault from "Icon" /* 5513 */;
-import spring_spring from "spring/spring" /* 5514 */;
+import HapticUtils from "HapticUtils" /* 5133 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5134 */;
+import IconDefault from "Icon" /* 5517 */;
+import spring_spring from "spring/spring" /* 5518 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const module_1653_mod = _mod1653;
@@ -26,7 +26,7 @@ let obj3;
 let size;
 let size1;
 let tmp3;
-const springPresets = tmp3(5515);
+const springPresets = tmp3(5519);
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let module_1653 = module_1653_mod;

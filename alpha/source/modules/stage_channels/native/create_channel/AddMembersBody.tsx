@@ -1,28 +1,28 @@
-// Module ID: 7790
-// Function ID: 7791
+// Module ID: 8429
+// Function ID: 8430
 // Name: AddMembersBody
-// Dependencies: [109, 32, 19, 17, 4825, 4819, 1386, 6506, 1082, 21, 4913, 575, 4850, 5488, 504, 5538, 7734, 1186, 1112, 7775, 4922, 5145, 7780, 6679, 5504, 7762, 7785, 2]
+// Dependencies: [109, 32, 19, 17, 4829, 4823, 1386, 7709, 1082, 21, 4917, 575, 4854, 5492, 504, 5542, 8385, 1186, 1112, 8414, 4926, 5149, 8419, 6864, 5508, 7808, 8424, 2]
 // Exports: default
 
-// Module 7790 (AddMembersBody)
+// Module 8429 (AddMembersBody)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl6 from "intl" /* 1112 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import RegexUtilsDefault from "RegexUtils" /* 5538 */;
-import GuildUtilsDefault from "GuildUtils" /* 6679 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4854 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4926 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import RegexUtilsDefault from "RegexUtils" /* 5542 */;
+import GuildUtilsDefault from "GuildUtils" /* 6864 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import GuildRoleStore from "GuildRoleStore" /* 4823 */;
 import UserStore from "UserStore" /* 1386 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6506 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7709 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, row, user;
@@ -42,7 +42,7 @@ let obj5;
 let size;
 let size1;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(7734);
+const ChannelPermissionsUtilsAll = tmp10(8385);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -146,7 +146,7 @@ export default function AddMembersBody(pendingAdditions) {
   const tmp4 = pendingAdditions;
   let tmp5 = dependencyMap;
   let obj = { isKeyboardAwareOnAndroid: !inActionSheet };
-  const insets = pendingAdditions(5488)(obj).insets;
+  const insets = pendingAdditions(5492)(obj).insets;
   let obj2 = guild(504);
   let items = [GuildRoleStore];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildRoleStore.getSortedRoles(guild.id));
@@ -202,12 +202,12 @@ export default function AddMembersBody(pendingAdditions) {
     }
   }, items4);
   if (inActionSheet) {
-    BottomSheetScrollView = tmp6(5145).BottomSheetScrollView;
+    BottomSheetScrollView = tmp6(5149).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = c8;
   }
   if (inActionSheet) {
-    BottomSheetSectionList = tmp6(5145).BottomSheetSectionList;
+    BottomSheetSectionList = tmp6(5149).BottomSheetSectionList;
   } else {
     BottomSheetSectionList = closure_9;
   }
@@ -238,14 +238,14 @@ export default function AddMembersBody(pendingAdditions) {
     },
     autoFocus: true
   };
-  tmp4Result = tmp4(7780);
+  tmp4Result = tmp4(8419);
   intl3 = tmp6(1112).intl;
   const items5 = [closure_16(closure_7, obj9), , , ];
   let tmp27Result = null;
   const tmp25 = closure_18;
   const tmp26 = closure_17;
   if (null != inputDesc) {
-    const obj11 = { style: tmp3.inputDescContainer, children: closure_16(guild(5504).Text, obj12) };
+    const obj11 = { style: tmp3.inputDescContainer, children: closure_16(guild(5508).Text, obj12) };
     obj12 = { style: tmp3.inputDescText, variant: "body-xs/medium", color: "text-default", children: inputDesc };
     tmp27Result = tmp27(tmp28, obj11);
   }
@@ -253,7 +253,7 @@ export default function AddMembersBody(pendingAdditions) {
   if (canEveryoneRoleResult) {
     const obj13 = { style: tmp3.adminWarning, children: closure_16(InlineNotice, obj14) };
     obj14 = { type: "warning", message: intl4.string(guild(1112).t["5f3HIC"]), role: "status" };
-    InlineNotice = tmp6(7762).InlineNotice;
+    InlineNotice = tmp6(7808).InlineNotice;
     intl4 = tmp6(1112).intl;
     canEveryoneRoleResult = tmp27(tmp28, obj13);
   }
@@ -263,7 +263,7 @@ export default function AddMembersBody(pendingAdditions) {
       let tmp27Result2;
       if (0 === membersRows.length) {
         const obj15 = { children: closure_16(EmptyState, obj16) };
-        obj16 = { Illustration: guild(7785).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1112).t.ErpIY3, obj17) };
+        obj16 = { Illustration: guild(8424).NoResultsAlt, style: null, bodyStyle: null, body: intl5.format(guild(1112).t.ErpIY3, obj17) };
         EmptyState = tmp6(1186).EmptyState;
         ({ emptyState: obj21.style, emptyStateText: obj21.bodyStyle } = tmp3);
         intl5 = tmp6(1112).intl;

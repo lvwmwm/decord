@@ -1,15 +1,15 @@
-// Module ID: 18243
-// Function ID: 18244
+// Module ID: 18282
+// Function ID: 18283
 // Name: useConjurePreviewAddBotPrompt
-// Dependencies: [5, 32, 19, 6979, 504, 12305, 14743, 2]
+// Dependencies: [5, 32, 19, 7575, 504, 11313, 14573, 2]
 // Exports: useConjurePreviewAddBotPrompt
 
-// Module 18243 (useConjurePreviewAddBotPrompt)
-import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14743 */;
+// Module 18282 (useConjurePreviewAddBotPrompt)
+import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14573 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjurePreviewAddBotPromptStore from "ConjurePreviewAddBotPromptStore" /* 6979 */;
+import ConjurePreviewAddBotPromptStore from "ConjurePreviewAddBotPromptStore" /* 7575 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

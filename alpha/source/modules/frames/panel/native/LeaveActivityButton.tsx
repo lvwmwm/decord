@@ -1,13 +1,13 @@
-// Module ID: 19214
-// Function ID: 19215
+// Module ID: 19256
+// Function ID: 19257
 // Name: panel/LeaveActivityButton
-// Dependencies: [19, 5539, 21, 19038, 6953, 2]
+// Dependencies: [19, 5543, 21, 19080, 7561, 2]
 
-// Module 19214 (panel/LeaveActivityButton)
+// Module 19256 (panel/LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
-import leaveFrame from "leaveFrame" /* 6953 */;
-import LeaveActivityButton2 from "LeaveActivityButton" /* 19038 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5543 */;
+import leaveFrame from "leaveFrame" /* 7561 */;
+import LeaveActivityButton2 from "LeaveActivityButton" /* 19080 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

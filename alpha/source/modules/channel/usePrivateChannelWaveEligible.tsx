@@ -1,14 +1,14 @@
-// Module ID: 17560
-// Function ID: 17561
+// Module ID: 17598
+// Function ID: 17599
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [5964, 4855, 4769, 1071, 504, 11, 4735, 2168, 11783, 2]
+// Dependencies: [6265, 4859, 4773, 1071, 504, 11, 4739, 2168, 11673, 2]
 // Exports: usePrivateChannelWaveEligible
 
-// Module 17560 (usePrivateChannelWaveEligible)
+// Module 17598 (usePrivateChannelWaveEligible)
 import Constants from "Constants" /* 1071 */;
-import ChannelConstants from "ChannelConstants" /* 4769 */;
-import MessageStore from "MessageStore" /* 5964 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ChannelConstants from "ChannelConstants" /* 4773 */;
+import MessageStore from "MessageStore" /* 6265 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

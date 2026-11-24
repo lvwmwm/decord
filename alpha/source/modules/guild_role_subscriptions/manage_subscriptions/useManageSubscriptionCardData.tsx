@@ -1,15 +1,15 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16660
+// Function ID: 16661
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 4784, 4838, 1071, 2168, 6856, 1112, 16619, 504, 16617, 2]
+// Dependencies: [32, 19, 4788, 4842, 1071, 2168, 6199, 1112, 16653, 504, 16651, 2]
 // Exports: default
 
-// Module 16626 (useManageSubscriptionCardData)
+// Module 16660 (useManageSubscriptionCardData)
 import Constants from "Constants" /* 1071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4838 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4842 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

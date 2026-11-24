@@ -1,12 +1,12 @@
-// Module ID: 10589
-// Function ID: 10590
+// Module ID: 13979
+// Function ID: 13980
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1378, 1653, 10590, 10591, 10598, 5173, 7449, 7520, 7539, 10023, 10599, 10600, 10170, 5924, 5123, 1706, 8220, 9431, 10601, 10603, 10606, 2]
+// Dependencies: [32, 19, 17, 21, 1378, 1653, 13980, 13981, 8478, 5177, 7302, 6253, 6254, 8733, 13986, 13987, 13964, 5984, 5127, 1706, 8666, 8769, 9877, 13988, 9879, 2]
 
-// Module 10589 (MediaViewer)
-import useVideoControls from "useVideoControls" /* 8220 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 10023 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 10591 */;
+// Module 13979 (MediaViewer)
+import useVideoControls from "useVideoControls" /* 8666 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8733 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 13981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -281,7 +281,7 @@ function MediaViewer(arg0) {
       let num;
       let pan = null;
       if (!c0) {
-        pan = _undefined.pan;
+        pan = uri.pan;
       }
       const obj = { transform: items, opacity: num };
       const merged = Object.assign(pan);
@@ -415,7 +415,7 @@ let closure_13 = react.memo(function MediaViewer(entranceAnimationDriver) {
   class MediaViewerTsx1 {
     constructor() {
       const value = _undefined.get();
-      const tmp2 = !value && !uri.get();
+      const tmp2 = !value && !_undefined2.get();
       return tmp2;
     }
   }

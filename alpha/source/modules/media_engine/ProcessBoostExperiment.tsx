@@ -1,10 +1,10 @@
-// Module ID: 5801
-// Function ID: 5802
+// Module ID: 5862
+// Function ID: 5863
 // Name: ProcessBoostExperiment
-// Dependencies: [5658, 1450, 2]
+// Dependencies: [5729, 1450, 2]
 
-// Module 5801 (ProcessBoostExperiment)
-import Constants from "Constants" /* 5658 */;
+// Module 5862 (ProcessBoostExperiment)
+import Constants from "Constants" /* 5729 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

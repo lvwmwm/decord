@@ -1,15 +1,15 @@
-// Module ID: 18424
-// Function ID: 18425
+// Module ID: 18465
+// Function ID: 18466
 // Name: ConjureClarification
-// Dependencies: [4762, 4855, 1386, 1071, 1112, 4190, 5529, 18425, 2]
+// Dependencies: [4766, 4859, 1386, 1071, 1112, 4192, 5533, 18466, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelEntities, clarificationChannelType, clarificationDraftAnswer, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, clarificationShowsOtherAnswer, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, liveClarification, nextClarificationStep, skippedClarificationAnswers, submitClarificationAnswers, toggleClarificationOption, uploadNoteAnswer
 
-// Module 18424 (ConjureClarification)
+// Module 18465 (ConjureClarification)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let items1;
 let items2;
 let items3;
 let items4;
-const f114880 = (answer) => {
+const f115063 = (answer) => {
   let tmp = null != answer.answer;
   if (tmp) {
     const str = answer.answer.text;
@@ -29,7 +29,7 @@ const f114880 = (answer) => {
   }
   return tmp;
 };
-const f114881 = (answer) => {
+const f115064 = (answer) => {
   const sum = answer.index + 1;
   const str = answer.answer.text;
   return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
@@ -76,11 +76,11 @@ const ChannelTypes = Constants.ChannelTypes;
 let closure_7 = { [ChannelTypes.GUILD_TEXT]: "text", [ChannelTypes.GUILD_VOICE]: "voice", [ChannelTypes.GUILD_ANNOUNCEMENT]: "announcement", [ChannelTypes.GUILD_STAGE_VOICE]: "stage", [ChannelTypes.GUILD_FORUM]: "forum", [ChannelTypes.GUILD_MEDIA]: "media" };
 let closure_8 = { channel: "#", role: "@", user: "@", project: "", server: "" };
 let obj = { channel: items, role: items1, user: items2, project: items3, server: items4 };
-items = [_modDef4190["9+dfPT"], _modDef4190.pGSJqE];
-items1 = [_modDef4190["2VkCoD"], _modDef4190.c8YlX8];
-items2 = [_modDef4190.GZIAxl, _modDef4190["4bptbQ"]];
-items3 = [_modDef4190.twlOb6, _modDef4190.twlOb6];
-items4 = [_modDef4190.ZWXDeI, _modDef4190.ZWXDeI];
+items = [_modDef4192["9+dfPT"], _modDef4192.pGSJqE];
+items1 = [_modDef4192["2VkCoD"], _modDef4192.c8YlX8];
+items2 = [_modDef4192.GZIAxl, _modDef4192["4bptbQ"]];
+items3 = [_modDef4192.twlOb6, _modDef4192.twlOb6];
+items4 = [_modDef4192.ZWXDeI, _modDef4192.ZWXDeI];
 let result = size.fileFinishedImporting("modules/conjure/clarification/ConjureClarification.tsx");
 
 export function liveClarification(memo) {
@@ -131,7 +131,7 @@ export function clarificationDraftPlaceholder(options) {
   if (tmp2) {
     tmp2 = null == options.input;
   }
-  const tmp4 = _modDef4190;
+  const tmp4 = _modDef4192;
   return string(tmp2 ? tmp4.yLN1x6 : tmp4["tOC+tn"]);
 }
 export function isClarificationComplete(questions, arg1) {
@@ -272,8 +272,8 @@ export function skippedClarificationAnswers(clarification, arg1, bound) {
     } else {
       const questions1 = clarification.questions;
       const mapped = questions1.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-      const found = mapped.filter(f114880);
-      const mapped1 = found.map(f114881);
+      const found = mapped.filter(f115063);
+      const mapped1 = found.map(f115064);
       tmp10 = null;
     }
     return tmp10;
@@ -283,8 +283,8 @@ export function formatClarificationAnswers(questions, arg1) {
   let closure_0 = arg1;
   questions = questions.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f114880);
-  const mapped1 = found.map(f114881);
+  const found = mapped.filter(f115063);
+  const mapped1 = found.map(f115064);
   return mapped1.join("\n");
 }
 export function toggleClarificationOption(options, arr, id) {
@@ -317,7 +317,7 @@ export function uploadNoteAnswer(upload, kind, str) {
             tmp = null;
             if ("multi" === kind.kind) {
               if (null != kind.attachment) {
-                const obj2 = { kind: "image", attachment: kind.attachment, text: intl.string(_modDef4190.wTsP5l) };
+                const obj2 = { kind: "image", attachment: kind.attachment, text: intl.string(_modDef4192.wTsP5l) };
                 intl = intl2.intl;
                 tmp = obj2;
               } else {
@@ -381,7 +381,7 @@ export function clarificationEntities(project, items, arg2, arg3) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f114892(id);
+    tmp = f115075(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -438,7 +438,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
   let closure_0 = stateFromStores1;
   const items = [stateFromStores1.id];
   let channel = "channel";
-  const f114892 = () => {
+  const f115075 = () => {
     obj = channel(dependencyMap[6]);
     return obj.computeChannelName(channel, user, RelationshipStore);
   };
@@ -449,7 +449,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f114892(id);
+    tmp = f115075(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -658,8 +658,8 @@ export function submitClarificationAnswers(projectId, clarification, arg2, build
   _require = arg2;
   let questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f114880);
-  const mapped1 = found.map(f114881);
+  const found = mapped.filter(f115063);
+  const mapped1 = found.map(f115064);
   const joined = mapped1.join("\n");
   if ("" !== joined) {
     let tmp2 = projectId;

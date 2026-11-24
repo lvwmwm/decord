@@ -1,9 +1,9 @@
-// Module ID: 17033
-// Function ID: 17034
+// Module ID: 17067
+// Function ID: 17068
 // Name: GeneratedTestUsersModels
 // Dependencies: [1406, 2]
 
-// Module 17033 (GeneratedTestUsersModels)
+// Module 17067 (GeneratedTestUsersModels)
 import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 

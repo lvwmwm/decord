@@ -1,13 +1,13 @@
-// Module ID: 18828
-// Function ID: 18829
+// Module ID: 18870
+// Function ID: 18871
 // Name: useSearchSegmentedControlState
-// Dependencies: [19, 1653, 7586, 1706, 2]
+// Dependencies: [19, 1653, 8475, 1706, 2]
 // Exports: useSearchSegmentedControlState
 
-// Module 18828 (useSearchSegmentedControlState)
+// Module 18870 (useSearchSegmentedControlState)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import SegmentedControlState from "SegmentedControlState" /* 7586 */;
+import SegmentedControlState from "SegmentedControlState" /* 8475 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,38 +1,38 @@
-// Module ID: 15670
-// Function ID: 15671
+// Module ID: 15691
+// Function ID: 15692
 // Name: RPCServerManager
-// Dependencies: [32, 8404, 4762, 4825, 4784, 2131, 5651, 5654, 4855, 4816, 1386, 5561, 6354, 1071, 6624, 10774, 5658, 1378, 572, 1255, 15671, 504, 1254, 10805, 15676, 10806, 6902, 14765, 15677, 15679, 6907, 10804, 8427, 2]
+// Dependencies: [32, 8224, 4766, 4829, 4788, 2131, 5888, 5725, 4859, 4820, 1386, 5565, 5671, 1071, 6811, 10050, 5729, 1378, 572, 1255, 15692, 504, 1254, 10081, 15697, 10082, 7511, 5719, 15698, 15700, 7516, 10080, 8248, 2]
 
-// Module 15670 (RPCServerManager)
+// Module 15691 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import Constants2 from "Constants" /* 5658 */;
-import Constants3 from "Constants" /* 6354 */;
-import FramesConstants from "FramesConstants" /* 6624 */;
-import transformUserDefault from "transformUser" /* 6907 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8427 */;
-import Constants4 from "Constants" /* 10774 */;
-import RPCHelpers from "RPCHelpers" /* 10804 */;
-import transformMessage from "transformMessage" /* 10805 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 10806 */;
-import frameDeepLinks from "frameDeepLinks" /* 14765 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15671 */;
-import useThermalState from "useThermalState" /* 15677 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15679 */;
+import Constants2 from "Constants" /* 5671 */;
+import frameDeepLinks from "frameDeepLinks" /* 5719 */;
+import Constants3 from "Constants" /* 5729 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
+import transformUserDefault from "transformUser" /* 7516 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8248 */;
+import Constants4 from "Constants" /* 10050 */;
+import RPCHelpers from "RPCHelpers" /* 10080 */;
+import transformMessage from "transformMessage" /* 10081 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 10082 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15692 */;
+import useThermalState from "useThermalState" /* 15698 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15700 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 8404 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import QuestStore from "QuestStore" /* 8224 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import PresenceStore from "PresenceStore" /* 5651 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import PresenceStore from "PresenceStore" /* 5888 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
 import UserStore from "UserStore" /* 1386 */;
-import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import VoiceStateStore from "VoiceStateStore" /* 5565 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -45,11 +45,11 @@ let closure_19;
 let closure_20;
 let closure_21;
 let closure_22;
-const TransportTypes = Constants3.TransportTypes;
+const TransportTypes = Constants2.TransportTypes;
 ({ ActivityActionTypes: closure_16, RelationshipTypes: closure_17, AnalyticEvents: closure_18, RPCCommands: closure_19, RPCEvents: closure_20, RPCCloseCodes: closure_21, ChannelTypes: closure_22 } = Constants);
 const FrameLayoutModes = FramesConstants.FrameLayoutModes;
 const ActivityLayoutMode = Constants4.ActivityLayoutMode;
-const MediaEngineContextTypes = Constants2.MediaEngineContextTypes;
+const MediaEngineContextTypes = Constants3.MediaEngineContextTypes;
 let result = size.fileFinishedImporting("modules/rpc/server/RPCServerManager.tsx");
 class RPCServerManager {
   constructor(arg0) {

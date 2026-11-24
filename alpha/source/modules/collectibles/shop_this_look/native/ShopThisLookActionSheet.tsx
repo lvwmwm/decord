@@ -1,27 +1,27 @@
-// Module ID: 14427
-// Function ID: 14428
+// Module ID: 14696
+// Function ID: 14697
 // Name: ShopThisLookActionSheet
-// Dependencies: [19, 17, 8168, 5142, 7564, 21, 4913, 575, 8981, 5595, 1112, 9897, 504, 14428, 8086, 14430, 13932, 8973, 8165, 14431, 7520, 7539, 5127, 8074, 13500, 5504, 2]
+// Dependencies: [19, 17, 11454, 5146, 7431, 21, 4917, 575, 11021, 5599, 1112, 11453, 504, 14697, 6196, 14699, 11518, 11083, 14674, 14700, 6253, 6254, 5131, 6184, 9665, 5508, 2]
 // Exports: default
 
-// Module 14427 (ShopThisLookActionSheet)
+// Module 14696 (ShopThisLookActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import Constants from "Constants" /* 7564 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8086 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 8981 */;
-import ShopThisLookUtils from "ShopThisLookUtils" /* 14428 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14430 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5146 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6184 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6196 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
+import Constants from "Constants" /* 7431 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 11021 */;
+import ShopThisLookUtils from "ShopThisLookUtils" /* 14697 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 14699 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8168 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 11454 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ function ShopThisLookCard(skuId) {
   let callback;
   const tmp = closure_11();
   let tmp2 = skuId;
-  let obj = skuId(9897);
+  let obj = skuId(11453);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -90,7 +90,7 @@ function ShopThisLookCard(skuId) {
         const _Math = Math;
         const variants = tmp.variants;
         const bound = Math.max(0, variants.findIndex((skuId) => skuId.skuId === skuId));
-        const tmp2Result = tmp2(8086);
+        const tmp2Result = tmp2(6196);
         return tmp2Result.getSelectedProduct(c2, bound);
       } else {
         return c2;
@@ -129,7 +129,7 @@ function ShopThisLookCard(skuId) {
         },
       accessibilityHidden: true
     };
-    tmp22 = closure_9(onPress(8981), obj3);
+    tmp22 = closure_9(onPress(11021), obj3);
   } else {
     tmp22 = null;
     if (null != stateFromStores) {
@@ -137,7 +137,7 @@ function ShopThisLookCard(skuId) {
       if (memo) {
         const obj4 = { style: tmp.cardWrapper, children: items7 };
         const obj5 = { sku: stateFromStores, size, onPress: callback1 };
-        items7 = [closure_9(onPress(13932), obj5), ];
+        items7 = [closure_9(onPress(11518), obj5), ];
         let tmp19Result = null != memo1;
         const tmp17 = closure_10;
         const tmp18 = memo;
@@ -145,13 +145,13 @@ function ShopThisLookCard(skuId) {
         const tmp20 = onPress;
         if (tmp19Result) {
           const obj6 = { selectedProduct: memo1, style: tmp.wishlistButton };
-          tmp19Result = tmp19(tmp20(8973), obj6);
+          tmp19Result = tmp19(tmp20(11083), obj6);
         }
         items7[1] = tmp19Result;
         tmp17Result = tmp17(tmp18, obj4);
       } else {
-        const obj7 = { sku: stateFromStores, size, overlay: tmp2(8981).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
-        const tmp15 = onPress(13932);
+        const obj7 = { sku: stateFromStores, size, overlay: tmp2(11021).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
+        const tmp15 = onPress(11518);
         tmp17Result = closure_9(tmp15, obj7);
       }
       tmp22 = tmp17Result;
@@ -197,10 +197,10 @@ export default function ShopThisLookActionSheet(arg0) {
   let obj = require("useMaybeFetchEquippedCollectibleProducts");
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(14431)(obj2));
-  analyticsLocations(14431)(obj2);
-  const tmp3 = analyticsLocations(7520);
-  analyticsLocations = tmp3(analyticsLocations(7539).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(14700)(obj2));
+  analyticsLocations(14700)(obj2);
+  const tmp3 = analyticsLocations(6253);
+  analyticsLocations = tmp3(analyticsLocations(6254).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = react.useCallback((initialProductSkuId) => {
     const obj = ActionSheetActionCreatorsDefault;
@@ -211,9 +211,9 @@ export default function ShopThisLookActionSheet(arg0) {
   }, items);
   let obj3 = { value: items1, children: closure_9(tmp4, obj4) };
   const AnalyticsLocationProvider = require("useAnalyticsLocations").AnalyticsLocationProvider;
-  items1 = [analyticsLocations(7539).SHOP_THIS_LOOK_ACTION_SHEET];
+  items1 = [analyticsLocations(6254).SHOP_THIS_LOOK_ACTION_SHEET];
   obj4 = { startExpanded: true, title: intl.string(require("intl").t.xNdRDO), children: closure_10(closure_5, obj5) };
-  tmp4 = analyticsLocations(13500);
+  tmp4 = analyticsLocations(9665);
   intl = require("intl").intl;
   obj5 = { style: tmp.container, children: items2 };
   const obj6 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.description, children: intl2.string(require("intl").t["ws+0Lr"]) };

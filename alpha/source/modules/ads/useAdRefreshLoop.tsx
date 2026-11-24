@@ -1,23 +1,23 @@
-// Module ID: 16502
-// Function ID: 16503
+// Module ID: 16536
+// Function ID: 16537
 // Name: useAdRefreshLoop
-// Dependencies: [19, 8401, 6558, 9950, 8402, 6651, 9992, 16503, 6561, 504, 2]
+// Dependencies: [19, 8221, 6745, 9752, 8222, 6836, 9783, 16537, 6748, 504, 2]
 // Exports: useAdRefreshLoop
 
-// Module 16502 (useAdRefreshLoop)
+// Module 16536 (useAdRefreshLoop)
 import react from "react" /* 19 */;
-import QuestConstants from "QuestConstants" /* 6558 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6651 */;
-import QuestsEligibility from "QuestsEligibility" /* 9950 */;
-import AdDeliveryActionCreators from "AdDeliveryActionCreators" /* 9992 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8401 */;
+import QuestConstants from "QuestConstants" /* 6745 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6836 */;
+import QuestsEligibility from "QuestsEligibility" /* 9752 */;
+import AdDeliveryActionCreators from "AdDeliveryActionCreators" /* 9783 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8221 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus) {
-  const f109986 = (item) => {
+  const f110156 = (item) => {
     const obj = require("AdDecisionUtils");
     return obj.isAdDecisionValid(item);
   };
@@ -25,8 +25,8 @@ function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus
   const isEligibleForQuests = obj.getIsEligibleForQuests();
   let tmp5 = !isEligibleForQuests;
   if (isEligibleForQuests) {
-    tmp5 = arr.length > 0 && arr.every(f109986);
-    arr.length > 0 && arr.every(f109986);
+    tmp5 = arr.length > 0 && arr.every(f110156);
+    arr.length > 0 && arr.every(f110156);
   }
   if (!tmp5) {
     const obj2 = DiscordAppStateDefault;
@@ -38,7 +38,7 @@ function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus
       }
     } else if (arr.length > 0) {
       const _Math = Math;
-      const clearQuestAdDecision = tmp2(9992).clearQuestAdDecision;
+      const clearQuestAdDecision = tmp2(9783).clearQuestAdDecision;
       const items = [];
       AdDeliveryActionCreators;
       HermesBuiltin.arraySpread(items, arr.map((ttlMillis) => ttlMillis.ttlMillis), 0);
@@ -68,12 +68,14 @@ export function useAdRefreshLoop(arg0, fetch) {
   } else {
     QUESTS_BAR_MOBILE = QuestsExperimentLocations.QUESTS_BAR_MOBILE;
   }
+  const tmp5 = null != arg0 && null == enabled;
+  if (enabled == null) {
+    enabled = useConfig({ location: QUESTS_BAR_MOBILE }, { autoTrackExposure: tmp5 }).enabled;
+  }
   let state = null;
-  const obj = { autoTrackExposure: null != arg0 };
-  enabled = useConfig({ location: QUESTS_BAR_MOBILE }, obj).enabled;
-  const obj2 = _fetch(tmp2[5]);
+  const obj = _fetch(tmp2[5]);
   if (enabled) {
-    state = obj2.useState();
+    state = obj.useState();
   }
   const items = [stateFromStores];
   const items1 = [arg0];

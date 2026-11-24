@@ -1,20 +1,20 @@
-// Module ID: 19804
-// Function ID: 19805
+// Module ID: 19847
+// Function ID: 19848
 // Name: SoundboardSoundEditModalRootScreen
-// Dependencies: [5, 32, 19, 17, 5963, 1389, 21, 4913, 575, 19805, 19806, 8205, 5474, 1148, 8155, 19798, 6830, 6350, 5594, 19807, 7221, 1112, 5504, 7030, 9063, 7496, 1412, 9489, 14502, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 6799, 1389, 21, 4917, 575, 19848, 19849, 9372, 5478, 1148, 9353, 19841, 10262, 5667, 5598, 19850, 7148, 1112, 5508, 6026, 9396, 7362, 1412, 9563, 14771, 5515, 2]
 // Exports: default
 
-// Module 19804 (SoundboardSoundEditModalRootScreen)
+// Module 19847 (SoundboardSoundEditModalRootScreen)
 import nativeDefault from "native" /* 575 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9063 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9396 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardConstants from "SoundboardConstants" /* 5963 */;
+import SoundboardConstants from "SoundboardConstants" /* 6799 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

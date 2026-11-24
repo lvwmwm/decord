@@ -1,20 +1,20 @@
-// Module ID: 18675
-// Function ID: 18676
+// Module ID: 18716
+// Function ID: 18717
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 6973, 21, 4913, 575, 18676, 12797, 7565, 5504, 18669, 1112, 4190, 7030, 7047, 1628, 504, 7586, 18677, 11278, 7427, 18679, 18680, 7490, 2]
+// Dependencies: [32, 19, 17, 7569, 21, 4917, 575, 18717, 9675, 7432, 5508, 18710, 1112, 4192, 6026, 6019, 1628, 504, 8475, 18718, 8476, 7280, 18720, 18721, 7356, 2]
 // Exports: default
 
-// Module 18675 (ConjureDebugLogsTab)
+// Module 18716 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 18676 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 18677 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 18717 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 18718 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 6973 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 7569 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let item, set;
@@ -68,16 +68,16 @@ let closure_11 = react.memo(function LogRow(entry) {
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp3(12797).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp3(9675).ChevronSmallDownIcon;
     tmp6 = tmp3;
   } else {
-    ChevronSmallRightIcon = tmp3(7565).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp3(7432).ChevronSmallRightIcon;
     tmp6 = tmp3;
   }
   let obj = { style: tmp.row, children: items2 };
   const obj2 = { style: tmp.rowHead, children: items1 };
-  const Text = tmp6(5504).Text;
-  const tmp6Result = tmp6(18669);
+  const Text = tmp6(5508).Text;
+  const tmp6Result = tmp6(18710);
   let ts = tmp6Result.formatClockTime(entry.ts);
   if (ts == null) {
     ts = entry.ts;
@@ -85,7 +85,7 @@ let closure_11 = react.memo(function LogRow(entry) {
   items1 = [closure_7(Text, { variant: "body-xs/normal", color: "text-subtle", children: ts }), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
-  const Text2 = tmp6(5504).Text;
+  const Text2 = tmp6(5508).Text;
   if ("error" !== level) {
     let str3 = "text-muted";
     if ("warn" === level) {
@@ -100,14 +100,14 @@ let closure_11 = react.memo(function LogRow(entry) {
     tmp9Result = null;
     if (null != entry.source) {
       const obj4 = { variant: "footnote/semibold", color: "text-subtle", style: tmp.badge, children: entry.source };
-      tmp9Result = tmp9(tmp6(5504).Text, obj4);
+      tmp9Result = tmp9(tmp6(5508).Text, obj4);
     }
   }
   items1[2] = tmp9Result;
   let tmp9Result4 = null;
   if (null != entry.kind) {
-    const obj5 = { variant: "footnote/semibold", color: "text-feedback-critical", style: tmp.badge, children: intl.string(_modDef4190.TrC9c8) };
-    const Text3 = tmp6(5504).Text;
+    const obj5 = { variant: "footnote/semibold", color: "text-feedback-critical", style: tmp.badge, children: intl.string(_modDef4192.TrC9c8) };
+    const Text3 = tmp6(5508).Text;
     intl = tmp6(1112).intl;
     tmp9Result4 = tmp9(Text3, obj5);
   }
@@ -119,32 +119,32 @@ let closure_11 = react.memo(function LogRow(entry) {
     const tmp14 = closure_9;
     if ("" !== memo.prefix) {
       const obj6 = { variant: "body-xs/normal", color: str, selectable: true, children: memo.prefix };
-      tmp9Result5 = tmp9(tmp6(5504).Text, obj6);
+      tmp9Result5 = tmp9(tmp6(5508).Text, obj6);
     }
     const items3 = [tmp9Result5, , ];
     const obj7 = {
       style: tmp.jsonToggle,
       accessibilityRole: "button",
       accessibilityState: obj8,
-      accessibilityLabel: intl2.string(_modDef4190["9CTzyV"]),
+      accessibilityLabel: intl2.string(_modDef4192["9CTzyV"]),
       onPress() {
           return dependencyMap(importDefault);
         },
       children: items4
     };
     obj8 = { expanded };
-    const PressableOpacity = tmp6(7030).PressableOpacity;
+    const PressableOpacity = tmp6(6026).PressableOpacity;
     intl2 = tmp6(1112).intl;
     const obj9 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
     items4 = [closure_7(ChevronSmallRightIcon, obj9), ];
     const items5 = [memo.marker, " ", ];
-    const Text4 = tmp6(5504).Text;
+    const Text4 = tmp6(5508).Text;
     const intl3 = tmp6(1112).intl;
     const formatToPlainString = intl3.formatToPlainString;
     if ("[\u2026]" === memo.marker) {
-      kUhyUv = tmp16(4190).kUhyUv;
+      kUhyUv = tmp16(4192).kUhyUv;
     } else {
-      kUhyUv = tmp16(4190)["N+fphl"];
+      kUhyUv = tmp16(4192)["N+fphl"];
     }
     const obj10 = { variant: "body-xs/medium", color: "text-muted", children: items5 };
     const obj11 = { count: memo.size };
@@ -153,8 +153,8 @@ let closure_11 = react.memo(function LogRow(entry) {
     items3[1] = closure_8(PressableOpacity, obj7);
     let tmp9Result6 = null;
     if (expanded) {
-      const obj12 = { variant: "primary", children: closure_7(tmp6(5504).Text, obj13) };
-      const Card = tmp6(7047).Card;
+      const obj12 = { variant: "primary", children: closure_7(tmp6(5508).Text, obj13) };
+      const Card = tmp6(6019).Card;
       obj13 = { variant: "body-xs/normal", color: str, selectable: true, children: memo.pretty };
       tmp9Result6 = tmp9(Card, obj12);
     }
@@ -163,7 +163,7 @@ let closure_11 = react.memo(function LogRow(entry) {
     tmp9Result7 = tmp7(tmp14, obj14);
   } else {
     const obj15 = { variant: "body-xs/normal", color: str, selectable: true, children: entry.message };
-    tmp9Result7 = tmp9(tmp6(5504).Text, obj15);
+    tmp9Result7 = tmp9(tmp6(5508).Text, obj15);
   }
   items2[1] = tmp9Result7;
   return closure_8(View, obj);

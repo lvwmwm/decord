@@ -1,23 +1,23 @@
-// Module ID: 18032
-// Function ID: 18033
+// Module ID: 18071
+// Function ID: 18072
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [32, 19, 17, 4762, 1386, 5961, 1071, 21, 4913, 575, 1378, 18030, 504, 6830, 10984, 1255, 7553, 1112, 7496, 12492, 5504, 5511, 7695, 7208, 11146, 5600, 14842, 10011, 10009, 2]
+// Dependencies: [32, 19, 17, 4766, 1386, 6797, 1071, 21, 4917, 575, 1378, 18069, 504, 10262, 10260, 1255, 7420, 1112, 7362, 12400, 5508, 5515, 7035, 7665, 10515, 5604, 7967, 9626, 9624, 2]
 // Exports: default
 
-// Module 18032 (SoundboardSoundPreviewActionSheet)
+// Module 18071 (SoundboardSoundPreviewActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6830 */;
-import SoundboardUtils from "SoundboardUtils" /* 10984 */;
+import SoundboardUtils from "SoundboardUtils" /* 10260 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 10262 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import UserStore from "UserStore" /* 1386 */;
-import SoundboardStore from "SoundboardStore" /* 5961 */;
+import SoundboardStore from "SoundboardStore" /* 6797 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let createStyles = createStyles_mod;
 let obj = { soundPresentation: obj2, soundPresentationPlaying: obj3, emoji: size, emojiFastImage: { width: 128, height: 128 }, emojiText: { fontSize: num, lineHeight: 74 }, text: obj4, buttonContainer: obj5, star: size1, primaryIcon: size2 };
 obj2 = { borderWidth: 2, borderColor: "transparent", borderRadius: nativeDefault.radii.lg, paddingBottom: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
-obj3 = { borderColor: nativeDefault.colors.STATUS_SPEAKING };
+obj3 = { borderColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED };
 size = { marginTop: nativeDefault.space.PX_16, width: 64, height: 64, alignSelf: "center" };
 num = undefined;
 if (PlatformUtils.isIOS()) {

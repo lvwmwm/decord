@@ -1,21 +1,21 @@
-// Module ID: 17504
-// Function ID: 17505
+// Module ID: 17542
+// Function ID: 17543
 // Name: AuthManager
-// Dependencies: [5, 17, 13279, 1071, 6496, 13611, 2121, 572, 4758, 7802, 17505, 1378, 13282, 8051, 13700, 17511, 13610, 6835, 8455, 2]
+// Dependencies: [5, 17, 13206, 1071, 7739, 13525, 2121, 572, 4762, 7746, 17543, 1378, 13209, 10284, 13610, 17549, 13524, 8459, 14184, 2]
 
-// Module 17504 (AuthManager)
+// Module 17542 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
-import transitionToGuild from "transitionToGuild" /* 6835 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8455 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13279 */;
-import NUFActionCreators from "NUFActionCreators" /* 13610 */;
-import NUFConstants from "NUFConstants" /* 13611 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13700 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17511 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7739 */;
+import transitionToGuild from "transitionToGuild" /* 8459 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10284 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13206 */;
+import NUFActionCreators from "NUFActionCreators" /* 13524 */;
+import NUFConstants from "NUFConstants" /* 13525 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13610 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14184 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17549 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
@@ -26,7 +26,7 @@ let DCDShortcutManager, LOGIN, c2;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const PushNotificationActionCreators = tmp(13282);
+const PushNotificationActionCreators = tmp(13209);
 ({ NativeModules: closure_4, Keyboard: hasOwnProperty } = react_native);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const ME = Constants.ME;

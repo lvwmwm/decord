@@ -1,29 +1,29 @@
-// Module ID: 17908
-// Function ID: 17909
+// Module ID: 17946
+// Function ID: 17947
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 4913, 575, 5477, 7324, 1186, 8048, 10878, 7620, 7619, 9904, 17909, 11126, 17910, 7034, 17911, 7704, 7641, 17907, 2]
+// Dependencies: [19, 21, 4917, 575, 5481, 6929, 1186, 8467, 8465, 7037, 7966, 13181, 17947, 10495, 17948, 7041, 17949, 7046, 6975, 17945, 2]
 // Exports: useActivityIndicatorState
 
-// Module 17908 (GuildsBarActivityIndicator)
+// Module 17946 (GuildsBarActivityIndicator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5477 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 7034 */;
-import NativeViewDefault from "NativeView" /* 7324 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7619 */;
-import StageIcon from "StageIcon" /* 7620 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7641 */;
-import AppsIcon from "AppsIcon" /* 7704 */;
-import CalendarIcon from "CalendarIcon" /* 8048 */;
-import ScreenIcon from "ScreenIcon" /* 9904 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10878 */;
-import VideoIcon from "VideoIcon" /* 11126 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 17907 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17909 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 17910 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 17911 */;
+import useToken from "useToken" /* 5481 */;
+import NativeViewDefault from "NativeView" /* 6929 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6975 */;
+import StageIcon from "StageIcon" /* 7037 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 7041 */;
+import AppsIcon from "AppsIcon" /* 7046 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7966 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8465 */;
+import CalendarIcon from "CalendarIcon" /* 8467 */;
+import VideoIcon from "VideoIcon" /* 10495 */;
+import ScreenIcon from "ScreenIcon" /* 13181 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 17945 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17947 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 17948 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 17949 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -38,8 +38,8 @@ function getMediaIcon(activeEvent) {
     tmp6 = { icon: CalendarIcon.CalendarIcon, source: AssetRegistryDefault3 };
     const obj2 = { icon: CalendarIcon.CalendarIcon, source: AssetRegistryDefault3 };
   } else if (tmp4) {
-    tmp6 = { icon: StageIcon.StageIcon, source: AssetRegistryDefault };
-    const obj3 = { icon: StageIcon.StageIcon, source: AssetRegistryDefault };
+    tmp6 = { icon: StageIcon.StageIcon, source: AssetRegistryDefault2 };
+    const obj3 = { icon: StageIcon.StageIcon, source: AssetRegistryDefault2 };
   } else if (tmp3) {
     tmp6 = { icon: ScreenIcon.ScreenIcon, source: AssetRegistryDefault4 };
     const obj4 = { icon: ScreenIcon.ScreenIcon, source: AssetRegistryDefault4 };
@@ -52,8 +52,8 @@ function getMediaIcon(activeEvent) {
   } else {
     tmp6 = null;
     if (tmp5) {
-      tmp6 = { icon: AppsIcon.AppsIcon, source: AssetRegistryDefault2 };
-      const obj = { icon: AppsIcon.AppsIcon, source: AssetRegistryDefault2 };
+      tmp6 = { icon: AppsIcon.AppsIcon, source: AssetRegistryDefault };
+      const obj = { icon: AppsIcon.AppsIcon, source: AssetRegistryDefault };
     }
   }
   return tmp6;

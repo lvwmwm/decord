@@ -1,33 +1,33 @@
-// Module ID: 19040
-// Function ID: 19041
+// Module ID: 19082
+// Function ID: 19083
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 4761, 6620, 10382, 502, 2131, 1071, 5563, 21, 4913, 1186, 575, 10651, 504, 6629, 10645, 6494, 10650, 8150, 10653, 9431, 10715, 10719, 10727, 10740, 10773, 10635, 10716, 10649, 6652, 1653, 5123, 5467, 19041, 1628, 2]
+// Dependencies: [32, 19, 17, 4765, 6807, 8949, 502, 2131, 1071, 5567, 21, 4917, 1186, 575, 9885, 504, 6816, 9876, 8308, 9884, 9901, 9887, 8769, 9990, 9994, 10002, 10016, 10049, 9866, 9991, 9883, 6837, 1653, 5127, 5471, 19083, 1628, 2]
 // Exports: default
 
-// Module 19040 (PictureInPictureGlobal)
+// Module 19082 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5123 */;
-import NavigatorConstants from "NavigatorConstants" /* 5467 */;
-import CallConstants from "CallConstants" /* 5563 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6494 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6629 */;
-import isChannelFocused from "isChannelFocused" /* 6652 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10382 */;
-import transitionToActivityDefault from "transitionToActivity" /* 10635 */;
-import PictureInPictureDefault from "PictureInPicture" /* 10649 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19041 */;
+import timing_timing from "timing/timing" /* 5127 */;
+import NavigatorConstants from "NavigatorConstants" /* 5471 */;
+import CallConstants from "CallConstants" /* 5567 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6816 */;
+import isChannelFocused from "isChannelFocused" /* 6837 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8308 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 8949 */;
+import transitionToActivityDefault from "transitionToActivity" /* 9866 */;
+import PictureInPictureDefault from "PictureInPicture" /* 9883 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4765 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import native_mod from "native" /* 1186 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -233,11 +233,11 @@ let closure_18 = react.memo(function PIPContent(channel) {
 let closure_19 = react.memo(function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f116689 = () => constants.TOP_RIGHT;
+  const f116874 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f116689);
+  [tmp2, tmp3] = react.useState(f116874);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_18, { channel }) };
-  _slicedToArray(react.useState(f116689), 2);
+  _slicedToArray(react.useState(f116874), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 });

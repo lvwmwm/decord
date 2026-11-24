@@ -1,16 +1,16 @@
-// Module ID: 5646
-// Function ID: 5647
+// Module ID: 6000
+// Function ID: 6001
 // Name: transitionToChannel
-// Dependencies: [4762, 1071, 5647, 5648, 1098, 5649, 38, 2]
+// Dependencies: [4766, 1071, 6001, 6002, 1098, 6003, 38, 2]
 // Exports: transitionToChannel, transitionToMessage, transitionToStaticChannelRoute, transitionToThread, transitionToThreadMessage, tryTransitionToThreadMessage
 
-// Module 5646 (transitionToChannel)
+// Module 6000 (transitionToChannel)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
-import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 5647 */;
-import preloadChannelDefault from "preloadChannel" /* 5648 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 6001 */;
+import preloadChannelDefault from "preloadChannel" /* 6002 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -37,7 +37,7 @@ export function transitionToChannel(id, transitionExtras) {
       prop = channel.isGuildVocal();
     }
     if (prop) {
-      const tmp7Result = tmp7(5649);
+      const tmp7Result = tmp7(6003);
       tmp7Result.updateChatOpen(channel.id, true);
     }
   }
@@ -98,7 +98,7 @@ export function tryTransitionToThreadMessage(parentChannelId, threadId, messageI
         prop = channel1.isGuildVocal();
       }
       if (prop) {
-        const tmp21Result = tmp21(5649);
+        const tmp21Result = tmp21(6003);
         tmp21Result.updateChatOpen(channel1.id, true);
       }
     }
@@ -117,11 +117,11 @@ export function transitionToMessage(id, id2, arg2) {
     transitionTo(CHANNELResult, obj2);
   }
 }
-export function transitionToStaticChannelRoute(arg0, arg1, arg2) {
+export function transitionToStaticChannelRoute(guildId, channelId, arg2) {
   const transitionTo = router_utils.transitionTo;
   const obj = { openChannel: true };
   router_utils;
-  const CHANNELResult = Routes.CHANNEL(arg0, arg1);
+  const CHANNELResult = Routes.CHANNEL(guildId, channelId);
   const merged = Object.assign(arg2);
   transitionTo(CHANNELResult, obj);
 }

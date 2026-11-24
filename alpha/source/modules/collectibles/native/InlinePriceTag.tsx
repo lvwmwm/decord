@@ -1,57 +1,38 @@
-// Module ID: 14224
-// Function ID: 14225
+// Module ID: 11152
+// Function ID: 11153
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 8851, 1073, 1071, 21, 4913, 575, 5504, 2112, 8086, 8087, 8958, 1112, 671, 5477, 5127, 14225, 2119, 7539, 5468, 1378, 8952, 7565, 8920, 2173, 14230, 9580, 14231, 9562, 9565, 504, 9573, 9041, 2]
+// Dependencies: [19, 17, 8963, 1071, 21, 4917, 5508, 2112, 6196, 6197, 9324, 1112, 9274, 2173, 11153, 11100, 11110, 504, 11118, 1378, 10932, 9496, 11154, 575, 2]
 // Exports: default
 
-// Module 14224 (InlinePriceTag)
+// Module 11152 (InlinePriceTag)
+import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef671 from "module_671" /* 671 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import LinearGradientDefault from "LinearGradient" /* 5468 */;
-import useToken from "useToken" /* 5477 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8086 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
-import useCurrentUser from "useCurrentUser" /* 8920 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 8952 */;
-import OrbsIcon from "OrbsIcon" /* 8958 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9562 */;
-import useVirtualCurrencyData from "useVirtualCurrencyData" /* 9565 */;
-import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9573 */;
-import useProductDisableState from "useProductDisableState" /* 9580 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 14230 */;
-import MobileNitroUpsellInShopPdpExperimentDefault from "MobileNitroUpsellInShopPdpExperiment" /* 14231 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6196 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6197 */;
+import useCurrentUser from "useCurrentUser" /* 9274 */;
+import OrbsIcon from "OrbsIcon" /* 9324 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11100 */;
+import useVirtualCurrencyData from "useVirtualCurrencyData" /* 11110 */;
+import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 11118 */;
+import useProductDisableState from "useProductDisableState" /* 11153 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 8851 */;
-import Constants from "Constants" /* 1071 */;
+import IAPStore from "IAPStore" /* 8963 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
-
-let StyleSheet;
-let c10;
-let c3;
-let c9;
-let closure_4;
 let metroImportAll;
 let metroImportDefault;
-let obj2;
-let obj3;
-let obj4;
-let obj5;
-let unpackModuleId;
+let metroRequire;
+let tmp6;
+const ExpressiveNitroUpsellDefault = tmp6(11154);
 function PriceTag(color) {
   let icon;
   let items;
@@ -72,10 +53,10 @@ function PriceTag(color) {
   const obj = { children: items };
   items = [icon, ];
   const obj2 = { variant, style: items1, color: str, accessibilityLabel, children: priceFormatted };
-  items1 = [closure_12().priceTag, style];
-  closure_12();
-  items[1] = React4(Text_Text.Text, obj2);
-  return unpackModuleId(authStore, obj);
+  items1 = [closure_9().priceTag, style];
+  closure_9();
+  items[1] = metroRequire(Text_Text.Text, obj2);
+  return metroImportAll(metroImportDefault, obj);
 }
 function OrbsPriceTag(arg0) {
   let QfcKZ5;
@@ -96,7 +77,7 @@ function OrbsPriceTag(arg0) {
   let vcData;
   ({ vcData, product } = arg0);
   ({ isProductDisabled, eligibleForShopDiscount } = arg0);
-  const tmp = closure_12();
+  const tmp = closure_9();
   if (null == vcData.price) {
     return null;
   } else {
@@ -106,16 +87,16 @@ function OrbsPriceTag(arg0) {
       result = tmp17Result.isOrbsExclusiveProduct(product);
     }
     const tmp17Result2 = CollectiblesUtils;
-    const productDiscount = tmp17Result2.getProductDiscount(product, eligibleForShopDiscount, metroImportAll.DISCORD_ORB);
+    const productDiscount = tmp17Result2.getProductDiscount(product, eligibleForShopDiscount, CurrencyCodes.DISCORD_ORB);
     ({ original, discountPercentage } = productDiscount);
     if (result) {
-      result = discountPercentage >= tmp17(8087).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+      result = discountPercentage >= tmp17(6197).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
     }
     const items = [tmp.priceTagRow, ];
     const canAfford = vcData.canAfford;
     let disabled = !canAfford;
-    const tmp5 = unpackModuleId;
-    const tmp6 = React3;
+    const tmp5 = metroImportAll;
+    const tmp6 = View;
     if (canAfford) {
       disabled = isProductDisabled;
     }
@@ -126,13 +107,13 @@ function OrbsPriceTag(arg0) {
     items[1] = disabled;
     let tmp7 = result;
     if (tmp7) {
-      const obj2 = { priceFormatted: original.toString(), variant: "body-md/medium", style: tmp.strikedOrbPrice, icon: React4(OrbsIcon.OrbsIcon, obj3), accessibilityLabel: formatToPlainString(QfcKZ5, obj4) };
+      const obj2 = { priceFormatted: original.toString(), variant: "body-md/medium", style: tmp.strikedOrbPrice, icon: metroRequire(OrbsIcon.OrbsIcon, obj3), accessibilityLabel: formatToPlainString(QfcKZ5, obj4) };
       obj3 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
       const intl = tmp17(1112).intl;
       formatToPlainString = intl.formatToPlainString;
       obj4 = { orbAmount: original.toString() };
       QfcKZ5 = tmp17(1112).t.QfcKZ5;
-      tmp7 = React4(PriceTag, obj2);
+      tmp7 = metroRequire(PriceTag, obj2);
     }
     items1 = [tmp7, , ];
     const obj5 = { priceFormatted: str.toString(), variant: "body-md/semibold", icon: tmp10Result, accessibilityLabel: formatToPlainString2Result };
@@ -141,7 +122,7 @@ function OrbsPriceTag(arg0) {
     const tmp11 = PriceTag;
     if (!result) {
       const obj6 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      tmp10Result = tmp10(tmp17(8958).OrbsIcon, obj6);
+      tmp10Result = tmp10(tmp17(9324).OrbsIcon, obj6);
     }
     const intl2 = tmp17(1112).intl;
     const formatToPlainString2 = intl2.formatToPlainString;
@@ -157,7 +138,7 @@ function OrbsPriceTag(arg0) {
       str2 = vcData.price.amount;
       formatToPlainString2Result = formatToPlainString2(prop, obj8);
     }
-    items1[1] = React4(tmp11, obj5);
+    items1[1] = metroRequire(tmp11, obj5);
     let tmp10Result2 = null;
     if (result) {
       const obj9 = { discountPercentage };
@@ -167,181 +148,27 @@ function OrbsPriceTag(arg0) {
     return tmp5(tmp6, obj);
   }
 }
-function ExpressiveNitroUpsell(arg0) {
-  let defaultPriceFormatted;
-  let intl;
-  let intl2;
-  let items;
-  let items1;
-  let items3;
-  let obj6;
-  let premiumPriceFormatted;
-  ({ onTrackPress: require, handleNitroSubscribe: importDefault, showActionSheet: dependencyMap } = arg0);
-  ({ defaultPriceFormatted, premiumPriceFormatted } = arg0);
-  const tmp = closure_12();
-  const strikedPrice = tmp;
-  let tmp4 = _modDef671;
-  let obj = useToken;
-  const tmp4Result = tmp4(obj.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START));
-  const alphaResult = tmp4Result.alpha(0.4);
-  const hexResult = alphaResult.hex();
-  const tmp7 = _modDef671;
-  const obj4 = useToken;
-  let tmp9 = closure_11;
-  let tmp11 = closure_9;
-  const obj2 = {
-    onPress() {
-      let intl;
-      let intl2;
-      let items;
-      if (require != null) {
-        tmp(ShopCtaEnum.SUBSCRIBE_NOW);
-      }
-      const tmp4 = dependencyMap;
-      if (tmp4) {
-        const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-        const tmp11 = asyncRequire(14225, dependencyMap.paths);
-        const obj = { analyticsLocations: items, title: intl.string(intl3.t.XcOMLu), description: intl2.string(intl3.t.JhE8nA) };
-        items = [AnalyticsLocationDefault.COLLECTIBLES_SHOP_DETAILS_MODAL];
-        intl = intl3.intl;
-        intl2 = intl3.intl;
-        openLazy(tmp11, "ShopNitroUpsellPromoSheet", obj, "stack");
-      } else {
-        importDefault();
-      }
-    },
-    style: tmp.nitroUpsellPill,
-    accessibilityRole: "button",
-    children: items1
-  };
-  const tmp7Result = tmp7(obj4.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END));
-  const alphaResult1 = tmp7Result.alpha(0.4);
-  const obj3 = { style: tmp.nitroUpsellGradient, colors: items, start, end, pointerEvents: "none" };
-  items = [hexResult, alphaResult1.hex()];
-  items1 = [, , ];
-  alphaResult1.hex();
-  items1[0] = closure_9(LinearGradientDefault, obj3);
-  const items2 = [tmp.nitroUpsellSavings, ];
-  const Text = Text_Text.Text;
-  let androidTextPadding;
-  const obj9 = PlatformUtils;
-  const tmp10 = strikedPrice;
-  if (obj9.isAndroid()) {
-    androidTextPadding = tmp.androidTextPadding;
-  }
-  items2[1] = androidTextPadding;
-  const obj5 = { variant: "body-sm/medium", color: "text-subtle", style: items2, children: intl.format(intl3.t.TWtV8E, obj6) };
-  intl = tmp5(1112).intl;
-  obj6 = {
-    defaultPrice: defaultPriceFormatted,
-    premiumPrice: premiumPriceFormatted,
-    defaultPriceHook(children, arg1) {
-      const obj = { variant: "body-sm/medium", color: "text-subtle", style: strikedPrice.strikedPrice, children };
-      return React4(Text_Text.Text, obj, arg1);
-    },
-    premiumPriceHook(children, arg1) {
-      const obj = { variant: "body-sm/semibold", color: "interactive-text-active", children };
-      return closure_1_9(Text_Text.Text, obj, arg1);
-    }
-  };
-  items1[1] = tmp11(Text, obj5);
-  const obj7 = { style: tmp.nitroUpsellCta, children: items3 };
-  const obj8 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm", style: tmp.nitroUpsellIcon };
-  const NitroWheelIcon = tmp5(8952).NitroWheelIcon;
-  items3 = [tmp11(NitroWheelIcon, obj8), , ];
-  const Text2 = tmp5(5504).Text;
-  let androidTextPadding1;
-  const tmp13 = closure_4;
-  const tmp5Result = PlatformUtils;
-  if (tmp5Result.isAndroid()) {
-    androidTextPadding1 = tmp.androidTextPadding;
-  }
-  const obj10 = { variant: "body-sm/medium", color: "interactive-text-active", style: androidTextPadding1, children: intl2.string(intl3.t["8x0jKT"]) };
-  intl2 = tmp5(1112).intl;
-  items3[1] = tmp11(Text2, obj10);
-  const obj11 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "xs", style: tmp.nitroUpsellChevron };
-  const ChevronSmallRightIcon = tmp5(7565).ChevronSmallRightIcon;
-  items3[2] = tmp11(ChevronSmallRightIcon, obj11);
-  items1[2] = tmp9(tmp13, obj7);
-  return tmp9(tmp10, obj2);
-}
-function NitroUpsell(premiumPriceFormatted) {
-  let intl;
-  let items;
-  let items1;
-  let obj5;
-  let underline;
-  ({ onTrackPress: require, handleNitroSubscribe: importDefault } = premiumPriceFormatted);
-  premiumPriceFormatted = premiumPriceFormatted.premiumPriceFormatted;
-  const tmp = closure_12();
-  dependencyMap = tmp;
-  let obj = {
-    onPress() {
-      if (require != null) {
-        tmp(ShopCtaEnum.SUBSCRIBE_NOW);
-      }
-      importDefault();
-    },
-    style: tmp.subscribeNowPressable,
-    accessibilityRole: "button",
-    children: items1
-  };
-  const obj2 = { color: "interactive-text-default", style: items };
-  items = [, ];
-  ({ nitroIcon: arr[0], nitroIconSubscribeNow: arr[1] } = tmp);
-  items1 = [closure_9(NitroWheelIcon2.NitroWheelIcon, obj2), ];
-  const Text = Text_Text.Text;
-  let androidTextPadding;
-  const obj3 = PlatformUtils;
-  const tmp2 = closure_11;
-  const tmp3 = closure_3;
-  const tmp4 = closure_9;
-  if (obj3.isAndroid()) {
-    androidTextPadding = tmp.androidTextPadding;
-  }
-  const obj4 = { variant: "body-md/normal", color: "interactive-text-default", style: androidTextPadding, children: intl.format(intl3.t.Kxw2LT, obj5) };
-  intl = tmp5(1112).intl;
-  obj5 = {
-    price: premiumPriceFormatted,
-    subscribeNowHook(children, arg1) {
-      const obj = { variant: "body-md/normal", style: underline.underline, children };
-      return React4(Text_Text.Text, obj, arg1);
-    }
-  };
-  items1[1] = tmp4(Text, obj4);
-  return tmp2(tmp3, obj);
-}
 function BundleDiscountV2(discountPercentage) {
   let items;
   let obj2;
   discountPercentage = discountPercentage.discountPercentage;
   let tmp4 = null;
-  const tmp = closure_19();
+  const tmp = closure_12();
   if (discountPercentage >= CollectiblesUtils.DISCOUNT_DISPLAY_MINIMUM_THRESHOLD) {
-    const obj = { style: tmp.discount, children: unpackModuleId(Text_Text.Text, obj2) };
+    const obj = { style: tmp.discount, children: metroImportAll(Text_Text.Text, obj2) };
     obj2 = { variant: "body-md/normal", color: "text-feedback-positive", children: items };
     items = ["-", discountPercentage, "%"];
-    tmp4 = React4(React3, obj);
+    tmp4 = metroRequire(View, obj);
   }
   return tmp4;
 }
-({ Pressable: c3, View: closure_4, StyleSheet } = react_native);
-const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
-({ AnalyticsSections: metroImportDefault, CurrencyCodes: metroImportAll } = Constants);
-({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
+const View = react_native.View;
+const CurrencyCodes = Constants.CurrencyCodes;
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { priceTag: { flexDirection: "row", alignItems: "center" }, strikedPrice: { textDecorationLine: "line-through", textDecorationStyle: "solid", opacity: 0.7 }, strikedOrbPrice: { textDecorationLine: "line-through", textDecorationStyle: "solid", opacity: 0.7, marginRight: 4 }, regularPrice: {}, nitroIcon: { width: 20, height: 20, marginLeft: 8, marginRight: 4 }, nitroIconSubscribeNow: { marginLeft: 0 }, root: { flexDirection: "column" }, container: { flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }, priceTagRow: { flexDirection: "row", alignItems: "center" }, nitroUpsellPill: obj2, nitroUpsellGradient: obj3, nitroUpsellSavings: obj4, nitroUpsellCta: { flexDirection: "row", alignItems: "center", flexShrink: 0 }, nitroUpsellIcon: { width: 16, height: 16, marginRight: 4 }, nitroUpsellChevron: { marginLeft: 2 }, underline: { textDecorationLine: "underline" }, subscribeNowPressable: obj5, androidTextPadding: { paddingBottom: 2 }, orbsIcon: { marginRight: 4 }, disabled: { opacity: 0.5 } };
-obj2 = { alignSelf: "stretch", marginTop: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderRadius: nativeDefault.radii.round, overflow: "hidden", paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_4 };
-createStyles = createStyles.createStyles;
-obj3 = { opacity: 0.6 };
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj4 = { flexShrink: 1, marginRight: nativeDefault.space.PX_8 };
-obj5 = { alignSelf: "flex-start", marginBottom: -2, marginTop: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
-let closure_12 = createStyles(obj);
-const start = { x: 0, y: 0.5 };
-const end = { x: 1, y: 0.5 };
+let closure_9 = createStyles.createStyles({ priceTag: { flexDirection: "row", alignItems: "center" }, strikedPrice: { textDecorationLine: "line-through", textDecorationStyle: "solid", opacity: 0.7 }, strikedOrbPrice: { textDecorationLine: "line-through", textDecorationStyle: "solid", opacity: 0.7, marginRight: 4 }, regularPrice: {}, nitroIcon: { width: 20, height: 20, marginLeft: 8, marginRight: 4 }, root: { flexDirection: "column" }, container: { flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }, priceTagRow: { flexDirection: "row", alignItems: "center" }, androidTextPadding: { paddingBottom: 2 }, orbsIcon: { marginRight: 4 }, disabled: { opacity: 0.5 } });
 createStyles = createStyles_mod;
-let closure_19 = createStyles.createStyles(() => {
+let closure_12 = createStyles.createStyles(() => {
   let num;
   let num2;
   const discount = { backgroundColor: "rgba(46, 204, 113, 0.25)", flexDirection: "row", flexShrink: 1, borderRadius: nativeDefault.radii.xs - 1, paddingHorizontal: 6, marginLeft: 6, paddingTop: num, paddingBottom: num2 };
@@ -359,115 +186,101 @@ let closure_19 = createStyles.createStyles(() => {
 });
 let result = size.fileFinishedImporting("modules/collectibles/native/InlinePriceTag.tsx");
 
-export default function InlinePriceTag(arg0) {
+export default function InlinePriceTag(product) {
   let androidTextPadding;
-  let enabled;
   let fetchingGoogleSkus;
   let intl;
   let intl2;
   let items1;
   let items2;
   let items3;
-  let obj14;
-  let obj17;
-  let onTrackPress;
-  let product;
-  let showActionSheet;
-  let tmp30Result5;
-  ({ product, onTrackPress } = arg0);
-  const tmp = closure_12();
+  let obj13;
+  let obj16;
+  let tmp26Result5;
+  product = product.product;
+  const onTrackPress = product.onTrackPress;
+  const tmp = closure_9();
   const obj = useCurrentUser;
   const currentUser = obj.useCurrentUser();
   const obj2 = CollectiblesUtils;
   const shopDiscountSource = obj2.getShopDiscountSource(currentUser);
   const obj3 = PremiumUtilsDefault;
   const canUseShopDiscountsResult = obj3.canUseShopDiscounts(currentUser);
-  const tmp7 = useOpenNitroSubscribeActionSheetDefault(metroImportDefault.SHOP_PRODUCT_DETAILS);
   const obj4 = useProductDisableState;
   const isDisabled = obj4.useProductDisableState(product.skuId).isDisabled;
-  const obj5 = MobileNitroUpsellInShopPdpExperimentDefault;
-  const config = obj5.useConfig({ location: "InlinePriceTag" });
-  ({ enabled, showActionSheet } = config);
-  const obj6 = collectibles_CollectiblesUtils;
-  const formattedPriceForCollectiblesProduct = obj6.getFormattedPriceForCollectiblesProduct(product, false, true);
-  const obj7 = useVirtualCurrencyData;
-  const virtualCurrencyData = obj7.useVirtualCurrencyData(product, canUseShopDiscountsResult);
+  const obj5 = collectibles_CollectiblesUtils;
+  const formattedPriceForCollectiblesProduct = obj5.getFormattedPriceForCollectiblesProduct(product, false, true);
+  const obj6 = useVirtualCurrencyData;
+  const virtualCurrencyData = obj6.useVirtualCurrencyData(product, canUseShopDiscountsResult);
   const items = [IAPStore];
-  const obj8 = get_initialized;
-  if (obj8.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus())) {
+  const obj7 = get_initialized;
+  if (obj7.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus())) {
     if (null == formattedPriceForCollectiblesProduct) {
-      return React4(CollectiblesShopPricePlaceholder.CollectiblesShopPricePlaceholder, {});
+      return metroRequire(CollectiblesShopPricePlaceholder.CollectiblesShopPricePlaceholder, {});
     }
   }
   if (null == formattedPriceForCollectiblesProduct) {
-    let tmp23 = null;
+    let tmp19 = null;
     if (null != virtualCurrencyData.price) {
-      const obj9 = { vcData: virtualCurrencyData, isProductDisabled: isDisabled, product, eligibleForShopDiscount: canUseShopDiscountsResult };
-      tmp23 = React4(OrbsPriceTag, obj9);
+      const obj8 = { vcData: virtualCurrencyData, isProductDisabled: isDisabled, product, eligibleForShopDiscount: canUseShopDiscountsResult };
+      tmp19 = metroRequire(OrbsPriceTag, obj8);
     }
-    return tmp23;
+    return tmp19;
   } else {
     const tmp2Result = collectibles_CollectiblesUtils;
     const formattedPriceForCollectiblesProduct1 = tmp2Result.getFormattedPriceForCollectiblesProduct(product, true, true);
-    const obj10 = { style: tmp.root, children: items3 };
-    const obj11 = { style: tmp.container, children: items2 };
-    const obj12 = { style: tmp.priceTagRow, children: items1 };
-    const obj13 = { priceFormatted: formattedPriceForCollectiblesProduct, variant: "heading-sm/semibold", style: canUseShopDiscountsResult ? tmp.strikedPrice : tmp.regularPrice, color: "interactive-text-active", accessibilityLabel: intl.formatToPlainString(intl3.t.sPvyr8, obj14) };
+    const obj10 = { style: tmp.container, children: items2 };
+    const obj11 = { style: tmp.priceTagRow, children: items1 };
+    const obj9 = { style: tmp.root, children: items3 };
+    const obj12 = { priceFormatted: formattedPriceForCollectiblesProduct, variant: "heading-sm/semibold", style: canUseShopDiscountsResult ? tmp.strikedPrice : tmp.regularPrice, color: "interactive-text-active", accessibilityLabel: intl.formatToPlainString(intl3.t.sPvyr8, obj13) };
     const tmp2Result3 = CollectiblesUtils;
     const discountPercentage = tmp2Result3.getProductDiscount(product, canUseShopDiscountsResult).discountPercentage;
     intl = tmp2(1112).intl;
-    obj14 = { price: formattedPriceForCollectiblesProduct };
-    items1 = [React4(PriceTag, obj13), , ];
-    let tmp30Result = null;
+    obj13 = { price: formattedPriceForCollectiblesProduct };
+    items1 = [metroRequire(PriceTag, obj12), , ];
+    let tmp26Result = null;
     if (product.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
-      tmp30Result = null;
+      tmp26Result = null;
       if (!canUseShopDiscountsResult) {
-        const obj15 = { discountPercentage };
-        tmp30Result = tmp30(BundleDiscountV2, obj15);
+        const obj14 = { discountPercentage };
+        tmp26Result = tmp26(BundleDiscountV2, obj14);
       }
     }
-    items1[1] = tmp30Result;
-    let tmp30Result6 = null != formattedPriceForCollectiblesProduct1 && canUseShopDiscountsResult;
-    if (tmp30Result6) {
-      const obj16 = { priceFormatted: formattedPriceForCollectiblesProduct1, variant: "body-md/medium", color: "interactive-text-active", accessibilityLabel: intl2.formatToPlainString(intl3.t.kWkpdG, obj17), style: androidTextPadding, icon: tmp30Result5 };
+    items1[1] = tmp26Result;
+    let tmp26Result6 = null != formattedPriceForCollectiblesProduct1 && canUseShopDiscountsResult;
+    if (tmp26Result6) {
+      const obj15 = { priceFormatted: formattedPriceForCollectiblesProduct1, variant: "body-md/medium", color: "interactive-text-active", accessibilityLabel: intl2.formatToPlainString(intl3.t.kWkpdG, obj16), style: androidTextPadding, icon: tmp26Result5 };
       intl2 = tmp2(1112).intl;
       androidTextPadding = undefined;
-      obj17 = { price: formattedPriceForCollectiblesProduct1 };
+      obj16 = { price: formattedPriceForCollectiblesProduct1 };
       const tmp2Result4 = PlatformUtils;
       if (tmp2Result4.isAndroid()) {
         androidTextPadding = tmp.androidTextPadding;
       }
       if (shopDiscountSource === CollectiblesUtils.ShopDiscountSource.THIRDPARTY) {
+        const obj17 = { color: "interactive-text-active", style: tmp.nitroIcon };
+        tmp26Result5 = tmp26(tmp2(10932).TagIcon, obj17);
+      } else {
         const obj18 = { color: "interactive-text-active", style: tmp.nitroIcon };
-        tmp30Result5 = tmp30(tmp2(9041).TagIcon, obj18);
-      } else {
-        const obj19 = { color: "interactive-text-active", style: tmp.nitroIcon };
-        tmp30Result5 = tmp30(tmp2(8952).NitroWheelIcon, obj19);
+        tmp26Result5 = tmp26(tmp2(9496).NitroWheelIcon, obj18);
       }
-      tmp30Result6 = tmp30(tmp31, obj16);
+      tmp26Result6 = tmp26(tmp27, obj15);
     }
-    items1[2] = tmp30Result6;
-    items2 = [unpackModuleId(React3, obj12), ];
-    let tmp30Result7 = null != virtualCurrencyData.price;
-    if (tmp30Result7) {
-      const obj20 = { vcData: virtualCurrencyData, isProductDisabled: isDisabled, product, eligibleForShopDiscount: canUseShopDiscountsResult };
-      tmp30Result7 = tmp30(OrbsPriceTag, obj20);
+    items1[2] = tmp26Result6;
+    items2 = [metroImportAll(View, obj11), ];
+    let tmp26Result7 = null != virtualCurrencyData.price;
+    if (tmp26Result7) {
+      const obj19 = { vcData: virtualCurrencyData, isProductDisabled: isDisabled, product, eligibleForShopDiscount: canUseShopDiscountsResult };
+      tmp26Result7 = tmp26(OrbsPriceTag, obj19);
     }
-    items2[1] = tmp30Result7;
-    items3 = [unpackModuleId(React3, obj11), ];
-    let tmp19 = null != formattedPriceForCollectiblesProduct1 && !canUseShopDiscountsResult;
-    if (tmp19) {
-      let tmp30Result8;
-      if (enabled) {
-        const obj21 = { defaultPriceFormatted: formattedPriceForCollectiblesProduct, premiumPriceFormatted: formattedPriceForCollectiblesProduct1, onTrackPress, handleNitroSubscribe: tmp7, showActionSheet };
-        tmp30Result8 = tmp30(ExpressiveNitroUpsell, obj21);
-      } else {
-        const obj22 = { premiumPriceFormatted: formattedPriceForCollectiblesProduct1, onTrackPress, handleNitroSubscribe: tmp7 };
-        tmp30Result8 = tmp30(NitroUpsell, obj22);
-      }
-      tmp19 = tmp30Result8;
+    items2[1] = tmp26Result7;
+    items3 = [metroImportAll(View, obj10), ];
+    let tmp26Result8 = null != formattedPriceForCollectiblesProduct1 && !canUseShopDiscountsResult;
+    if (tmp26Result8) {
+      const obj20 = { defaultPriceFormatted: formattedPriceForCollectiblesProduct, premiumPriceFormatted: formattedPriceForCollectiblesProduct1, onTrackPress };
+      tmp26Result8 = tmp26(ExpressiveNitroUpsellDefault, obj20);
     }
-    items3[1] = tmp19;
-    return unpackModuleId(React3, obj10);
+    items3[1] = tmp26Result8;
+    return metroImportAll(View, obj9);
   }
 };

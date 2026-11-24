@@ -1,12 +1,12 @@
-// Module ID: 13847
-// Function ID: 13848
+// Module ID: 11281
+// Function ID: 11282
 // Name: LobbyUtils
-// Dependencies: [4845, 1071, 504, 2]
+// Dependencies: [4849, 1071, 504, 2]
 // Exports: canUnlinkLobbyChannel, useCanUnlinkLobbyChannel
 
-// Module 13847 (LobbyUtils)
+// Module 11281 (LobbyUtils)
 import Constants from "Constants" /* 1071 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

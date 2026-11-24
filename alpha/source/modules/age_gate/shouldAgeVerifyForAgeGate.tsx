@@ -1,13 +1,13 @@
-// Module ID: 6410
-// Function ID: 6411
+// Module ID: 6698
+// Function ID: 6699
 // Name: shouldAgeVerifyForAgeGate
-// Dependencies: [6411, 5575, 6416, 2]
+// Dependencies: [6699, 5579, 6704, 2]
 // Exports: shouldAgeVerifyForAgeGate, useShouldAgeVerifyForAgeGate
 
-// Module 6410 (shouldAgeVerifyForAgeGate)
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6416 */;
+// Module 6698 (shouldAgeVerifyForAgeGate)
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5579 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6699 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6704 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_gate/shouldAgeVerifyForAgeGate.tsx");

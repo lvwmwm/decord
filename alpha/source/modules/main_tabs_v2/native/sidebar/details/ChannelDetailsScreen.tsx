@@ -1,13 +1,13 @@
-// Module ID: 18983
-// Function ID: 18984
+// Module ID: 19025
+// Function ID: 19026
 // Name: ChannelDetailsScreen
-// Dependencies: [19, 21, 1501, 5094, 18711, 2]
+// Dependencies: [19, 21, 1501, 5098, 18752, 2]
 
-// Module 18983 (ChannelDetailsScreen)
+// Module 19025 (ChannelDetailsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1501 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5094 */;
-import ChannelDetailsDefault from "ChannelDetails" /* 18711 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5098 */;
+import ChannelDetailsDefault from "ChannelDetails" /* 18752 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

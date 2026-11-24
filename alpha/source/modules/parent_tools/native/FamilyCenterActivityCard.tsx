@@ -1,10 +1,10 @@
-// Module ID: 16191
-// Function ID: 16192
+// Module ID: 16224
+// Function ID: 16225
 // Name: FamilyCenterActivityCard
-// Dependencies: [19, 17, 8336, 1071, 21, 4913, 575, 9137, 9136, 9139, 12470, 1112, 2824, 1186, 16192, 5504, 8042, 6429, 16193, 2119, 9364, 16194, 16195, 12467, 5127, 5594, 4969, 7612, 1255, 10928, 16196, 16197, 16198, 16201, 16208, 2]
+// Dependencies: [19, 17, 8072, 1071, 21, 4917, 575, 8075, 8070, 8077, 12381, 1112, 2824, 1186, 16225, 5508, 12324, 6004, 16226, 2119, 9218, 16227, 16228, 12378, 5131, 5598, 4973, 8358, 1255, 10205, 16229, 16230, 16231, 16234, 16241, 2]
 // Exports: default
 
-// Module 16191 (FamilyCenterActivityCard)
+// Module 16224 (FamilyCenterActivityCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,23 +12,23 @@ import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import _modDef2824 from "module_2824" /* 2824 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8042 */;
-import useUserLinks from "useUserLinks" /* 9136 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9137 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 9139 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9364 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 12470 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16192 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 16194 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 16195 */;
-import FamilyCenterActivityTotalDefault from "FamilyCenterActivityTotal" /* 16197 */;
-import FamilyCenterTopActivityDefault from "FamilyCenterTopActivity" /* 16198 */;
-import FamilyCenterActivitySectionDefault from "FamilyCenterActivitySection" /* 16201 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import useUserLinks from "useUserLinks" /* 8070 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8075 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8077 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9218 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 12324 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 12381 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16225 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 16227 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 16228 */;
+import FamilyCenterActivityTotalDefault from "FamilyCenterActivityTotal" /* 16230 */;
+import FamilyCenterTopActivityDefault from "FamilyCenterTopActivity" /* 16231 */;
+import FamilyCenterActivitySectionDefault from "FamilyCenterActivitySection" /* 16234 */;
 import react_mod from "react" /* 19 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8336 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ let obj8;
 let size;
 let size1;
 let tmp3;
-const Text_Text = tmp3(5504);
+const Text_Text = tmp3(5508);
 function FamilyCenterActivityCardPrefaceText() {
   let Icon2;
   let items;
@@ -89,7 +89,7 @@ function FamilyCenterActivityCardPrefaceText() {
   items = [tmp16, , ];
   const obj7 = { style: tmp.text, variant: "body-xs/semibold", color: "text-subtle", children: tmp19 };
   tmp19 = ageSpecificText;
-  const Text = tmp5(5504).Text;
+  const Text = tmp5(5508).Text;
   if (activeLinkUserIds.length > 1) {
     tmp19 = ageSpecificText;
     if (tmp4) {
@@ -222,7 +222,7 @@ class FamilyCenterActivityCardAccountSelect {
                 selectedItem: tmp.id,
                 hasIcons: false
               };
-              const tmp6 = asyncRequire(7612, dependencyMap.paths);
+              const tmp6 = asyncRequire(8358, dependencyMap.paths);
               intl = intl5.intl;
               openLazy(tmp6, FamilyCenterTeenAccountSelect, obj);
             }
@@ -334,7 +334,7 @@ export default function FamilyCenterActivityCard() {
   if (undefined === selectedTeenUser) {
     return null;
   } else {
-    const tmp2Result = tmp2(9139);
+    const tmp2Result = tmp2(8077);
     const sortedActivityTypeConfigs = tmp2Result.getSortedActivityTypeConfigs();
     const obj2 = { style: tmp.card, children: items };
     const obj3 = { style: tmp.preface, children: closure_8(FamilyCenterActivityCardPrefaceText, {}) };
@@ -381,7 +381,7 @@ export default function FamilyCenterActivityCard() {
     items2[2] = tmp11Result;
     items1[1] = closure_9(View, obj5);
     items[1] = closure_9(View, obj4);
-    const obj8 = { style: tmp.settingsControls, children: closure_8(tmp14(16208), {}) };
+    const obj8 = { style: tmp.settingsControls, children: closure_8(tmp14(16241), {}) };
     items[2] = closure_8(View, obj8);
     return closure_9(View, obj2);
   }

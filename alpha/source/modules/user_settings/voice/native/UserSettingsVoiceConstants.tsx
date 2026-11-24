@@ -1,9 +1,9 @@
-// Module ID: 10964
-// Function ID: 10965
+// Module ID: 10249
+// Function ID: 10250
 // Name: UserSettingsVoiceConstants
 // Dependencies: [1071, 2187, 2]
 
-// Module 10964 (UserSettingsVoiceConstants)
+// Module 10249 (UserSettingsVoiceConstants)
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtils from "HelpdeskUtils" /* 2187 */;
 import size from "module_2" /* 2 */;

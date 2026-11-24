@@ -1,11 +1,11 @@
-// Module ID: 19221
-// Function ID: 19222
+// Module ID: 19263
+// Function ID: 19264
 // Name: shouldShowSpeakingWhileMutedWarning
-// Dependencies: [5950, 2]
+// Dependencies: [6677, 2]
 // Exports: default
 
-// Module 19221 (shouldShowSpeakingWhileMutedWarning)
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5950 */;
+// Module 19263 (shouldShowSpeakingWhileMutedWarning)
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6677 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/calls/shouldShowSpeakingWhileMutedWarning.tsx");

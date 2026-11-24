@@ -1,21 +1,21 @@
-// Module ID: 13943
-// Function ID: 13944
+// Module ID: 11529
+// Function ID: 11530
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1388, 21, 4913, 575, 9468, 7045, 7711, 9493, 4975, 5504, 1112, 2]
+// Dependencies: [19, 17, 1388, 21, 4917, 575, 10997, 6018, 7949, 11015, 4979, 5508, 1112, 2]
 // Exports: default
 
-// Module 13943 (PremiumGiftDuration)
+// Module 11529 (PremiumGiftDuration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import react_native2 from "react-native" /* 4975 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import NativeGiftContext from "NativeGiftContext" /* 9468 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 9493 */;
+import react_native2 from "react-native" /* 4979 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import NativeGiftContext from "NativeGiftContext" /* 10997 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11015 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let SubscriptionIntervalTypes;
@@ -46,9 +46,9 @@ function PremiumGiftDurationButton(arg0) {
   const premiumType = nativeGiftContext.premiumType;
   const tmp4 = closure_9();
   if (selected) {
-    RowButton = tmp(7045).TableRow;
+    RowButton = tmp(6018).TableRow;
   } else {
-    RowButton = tmp(7711).RowButton;
+    RowButton = tmp(7949).RowButton;
   }
   let combined = null;
   const tmp5 = SubscriptionIntervalTypes;
@@ -67,7 +67,7 @@ function PremiumGiftDurationButton(arg0) {
   items[1] = selected;
   const obj2 = { style: items, children: metroRequire(RowButton, obj7) };
   const obj3 = { style: tmp4.labelContainer, children: items1 };
-  const Text = tmp(5504).Text;
+  const Text = tmp(5508).Text;
   const tmp13 = metroImportDefault;
   if (planInterval === tmp5.MONTH) {
     const intl2 = tmp(1112).intl;
@@ -81,7 +81,7 @@ function PremiumGiftDurationButton(arg0) {
   if (tmp11Result) {
     const obj4 = { style: tmp4.labelPromo, children: metroRequire(Text2, obj5) };
     obj5 = { variant: "body-md/semibold", color: "text-overlay-light", children: str3.toUpperCase() };
-    Text2 = tmp(5504).Text;
+    Text2 = tmp(5508).Text;
     const intl3 = tmp(1112).intl;
     const obj6 = { discount: combined };
     str3 = intl3.formatToPlainString(intl4.t.IAybsG, obj6);
@@ -126,11 +126,11 @@ export default function PremiumGiftDuration() {
   let intl;
   let planInterval;
   const tmp = closure_11();
-  let obj = planInterval(9468);
+  let obj = planInterval(10997);
   planInterval = obj.useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: items };
   const obj3 = { style: tmp.durationTitle, variant: "body-sm/semibold", children: intl.string(planInterval(1112).t["8XT6Nf"]) };
-  const Text = planInterval(5504).Text;
+  const Text = planInterval(5508).Text;
   intl = planInterval(1112).intl;
   items = [closure_6(Text, obj3), ];
   items[1] = items.map((planInterval, index) => {

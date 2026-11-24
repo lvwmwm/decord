@@ -1,12 +1,12 @@
-// Module ID: 6438
-// Function ID: 6439
+// Module ID: 6722
+// Function ID: 6723
 // Name: NSFWContentGate
-// Dependencies: [4780, 4784, 1386, 2]
+// Dependencies: [4784, 4788, 1386, 2]
 // Exports: currentUserCanSeeNSFW, isChannelOrGuildNSFW, isNSFWActivityVisible, userCannotSeeNSFWContent
 
-// Module 6438 (NSFWContentGate)
-import GuildRecord from "GuildRecord" /* 4780 */;
-import GuildStore from "GuildStore" /* 4784 */;
+// Module 6722 (NSFWContentGate)
+import GuildRecord from "GuildRecord" /* 4784 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

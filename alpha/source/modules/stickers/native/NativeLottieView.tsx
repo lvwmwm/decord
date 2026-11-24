@@ -1,14 +1,14 @@
-// Module ID: 8736
-// Function ID: 8737
+// Module ID: 10538
+// Function ID: 10539
 // Name: NativeLottieView
-// Dependencies: [19, 17, 21, 1378, 8737, 113, 2]
+// Dependencies: [19, 17, 21, 1378, 10539, 113, 2]
 // Exports: default
 
-// Module 8736 (NativeLottieView)
+// Module 10538 (NativeLottieView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import codegenNativeCommandsDefault from "codegenNativeCommands" /* 113 */;
-import LottieNodeNativeComponentDefault from "LottieNodeNativeComponent" /* 8737 */;
+import LottieNodeNativeComponentDefault from "LottieNodeNativeComponent" /* 10539 */;
 import react_mod from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;

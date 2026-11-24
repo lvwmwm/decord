@@ -1,12 +1,12 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 11808
+// Function ID: 11809
 // Name: UploadStore
-// Dependencies: [5964, 504, 572, 2]
+// Dependencies: [6265, 504, 572, 2]
 
-// Module 8531 (UploadStore)
+// Module 11808 (UploadStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MessageStore from "MessageStore" /* 5964 */;
+import MessageStore from "MessageStore" /* 6265 */;
 import size_mod from "module_2" /* 2 */;
 
 let cancel, closure_8, item;
@@ -68,7 +68,7 @@ let obj = {
         }
         closure_5[file.id] = uploader;
         const items1 = [];
-        items1[HermesBuiltin.arraySpread(items1, arr.filter((id) => id.id !== id.id), 0)] = file;
+        items1[HermesBuiltin.arraySpread(items1, arr.filter((id) => id.id !== itemId.id), 0)] = file;
         tmp2[channelId] = items1;
         if (null != message) {
           closure_6[file.id] = message;

@@ -1,12 +1,12 @@
-// Module ID: 8000
-// Function ID: 8001
+// Module ID: 8438
+// Function ID: 8439
 // Name: GuildTagConstants
-// Dependencies: [1071, 8001, 2]
+// Dependencies: [1071, 8159, 2]
 // Exports: getRandomGuildTagBadgeKind, getRandomGuildTagBadgePreset
 
-// Module 8000 (GuildTagConstants)
+// Module 8438 (GuildTagConstants)
 import Constants from "Constants" /* 1071 */;
-import Powerups from "Powerups" /* 8001 */;
+import Powerups from "Powerups" /* 8159 */;
 import size from "module_2" /* 2 */;
 
 let GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES;

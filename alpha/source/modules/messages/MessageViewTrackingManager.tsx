@@ -1,28 +1,27 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 11834
+// Function ID: 11835
 // Name: MessageViewTrackingManager
-// Dependencies: [1071, 1263, 7539, 1254, 7484, 1454, 1255, 2]
+// Dependencies: [1071, 1263, 6254, 1254, 7349, 1454, 1255, 2]
 
-// Module 10409 (MessageViewTrackingManager)
+// Module 11834 (MessageViewTrackingManager)
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 function getAnalyticsConfig(type) {
-  let items1;
+  let items;
   let obj;
   let obj18;
   let obj20;
   let obj4;
   let obj8;
-  let treatmentRendered;
   type = type.type;
   if (obj.ANNOUNCEMENT === type) {
     const obj2 = { event: AnalyticEvents.ANNOUNCEMENT_MESSAGE_VIEWED, properties: obj4 };
@@ -41,16 +40,9 @@ function getAnalyticsConfig(type) {
     return obj17;
   } else if (obj.VOICE_INVITE_EMBED === type) {
     const obj19 = { event: discord_common_AnalyticsUtils.ImpressionNames.VOICE_INVITE_EMBED, properties: obj20 };
-    ({ inviteCode: obj3.invite_code, inviteGuildId: obj3.invite_guild_id, inviteChannelId: obj3.invite_channel_id, inviteInstanceId: obj3.invite_instance_id, hasActiveStream: obj3.has_active_stream, treatmentRendered } = type);
-    obj20 = { impression_type: discord_common_AnalyticsUtils.ImpressionTypes.VIEW, invite_code: null, invite_guild_id: null, invite_channel_id: null, invite_instance_id: null, has_active_stream: null, location_stack: items1 };
-    const INVITE_EMBED = AnalyticsLocationDefault.INVITE_EMBED;
-    const tmp6 = importDefault;
-    if (treatmentRendered) {
-      const items = [INVITE_EMBED, tmp6(7539).VOICE_CHANNEL_LIST_INVITE_EMBED];
-      items1 = items;
-    } else {
-      items1 = [INVITE_EMBED];
-    }
+    ({ inviteCode: obj3.invite_code, inviteGuildId: obj3.invite_guild_id, inviteChannelId: obj3.invite_channel_id, inviteInstanceId: obj3.invite_instance_id, hasActiveStream: obj3.has_active_stream } = type);
+    obj20 = { impression_type: discord_common_AnalyticsUtils.ImpressionTypes.VIEW, invite_code: null, invite_guild_id: null, invite_channel_id: null, invite_instance_id: null, has_active_stream: null, location_stack: items };
+    items = [AnalyticsLocationDefault.INVITE_EMBED];
     return obj19;
   } else {
     obj = GlobalUtils;

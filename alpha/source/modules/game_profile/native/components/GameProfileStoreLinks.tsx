@@ -1,20 +1,20 @@
-// Module ID: 9823
-// Function ID: 9824
+// Module ID: 13993
+// Function ID: 13994
 // Name: GameProfileStoreLinks
-// Dependencies: [19, 17, 21, 4913, 575, 9772, 5592, 5511, 1112, 5127, 9802, 9774, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 8611, 5596, 5515, 1112, 5131, 8646, 8613, 2]
 // Exports: default
 
-// Module 9823 (GameProfileStoreLinks)
+// Module 13993 (GameProfileStoreLinks)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
-import LinkingDefault from "Linking" /* 5592 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9772 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9802 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5131 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
+import LinkingDefault from "Linking" /* 5596 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8611 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8646 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;

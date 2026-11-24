@@ -1,15 +1,15 @@
-// Module ID: 11024
-// Function ID: 11025
+// Module ID: 10373
+// Function ID: 10374
 // Name: GameConsoleAlert
-// Dependencies: [19, 17, 5655, 21, 4913, 504, 5504, 2]
+// Dependencies: [19, 17, 5726, 21, 4917, 504, 5508, 2]
 // Exports: SelfDismissibleAlertBody
 
-// Module 11024 (GameConsoleAlert)
+// Module 10373 (GameConsoleAlert)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5655 */;
+import GameConsoleStore from "GameConsoleStore" /* 5726 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

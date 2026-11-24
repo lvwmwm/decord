@@ -1,14 +1,14 @@
-// Module ID: 19798
-// Function ID: 19799
+// Module ID: 19841
+// Function ID: 19842
 // Name: SoundboardCreationUtils
-// Dependencies: [32, 5, 1112, 5861, 11181, 1378, 11182, 19799, 6830, 7551, 5127, 19800, 2119, 19802, 2]
+// Dependencies: [32, 5, 1112, 5921, 10557, 1378, 10558, 19842, 10262, 7418, 5131, 19843, 2119, 19845, 2]
 // Exports: createSoundboardSound, showAddSoundboardSoundOptions
 
-// Module 19798 (SoundboardCreationUtils)
+// Module 19841 (SoundboardCreationUtils)
 import intl5 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5921 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -422,7 +422,7 @@ export function showAddSoundboardSoundOptions(guildId) {
     onPress() {
       obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId, analyticsSource: "guild_settings_record" };
-      return obj.openLazy(asyncRequire(19800, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
+      return obj.openLazy(asyncRequire(19843, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
     }
   };
   intl2 = require("intl").intl;

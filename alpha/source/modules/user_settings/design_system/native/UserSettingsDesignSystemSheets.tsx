@@ -1,28 +1,28 @@
-// Module ID: 17259
-// Function ID: 17260
+// Module ID: 17297
+// Function ID: 17298
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 7553, 7515, 7623, 7554, 5929, 7221, 7555, 5127, 5511, 1112, 11225, 17260, 7047, 5504, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4917, 7420, 7381, 8366, 7421, 5989, 7148, 7422, 5131, 5515, 1112, 10603, 17298, 6019, 5508, 2]
 // Exports: default
 
-// Module 17259 (UserSettingsDesignSystemSheets)
+// Module 17297 (UserSettingsDesignSystemSheets)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
-import Stack_Stack from "Stack/Stack" /* 5929 */;
-import Card_Card from "Card/Card" /* 7047 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7221 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
-import ActionSheet2 from "ActionSheet" /* 7553 */;
-import ActionSheetRow from "ActionSheetRow" /* 7555 */;
-import PromoSheet2 from "PromoSheet" /* 11225 */;
-import _modDef17260 from "module_17260" /* 17260 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
+import Stack_Stack from "Stack/Stack" /* 5989 */;
+import Card_Card from "Card/Card" /* 6019 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7148 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7381 */;
+import ActionSheet2 from "ActionSheet" /* 7420 */;
+import ActionSheetRow from "ActionSheetRow" /* 7422 */;
+import PromoSheet2 from "PromoSheet" /* 10603 */;
+import _modDef17298 from "module_17298" /* 17298 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -66,18 +66,18 @@ function DemoActionSheet() {
   tmp16Result = first;
   if (tmp16Result) {
     const obj2 = { onPress: NOOP, label: tmp14 };
-    tmp16Result = tmp16(tmp17(7623).ActionSheetHeaderPressableText, obj2);
+    tmp16Result = tmp16(tmp17(8366).ActionSheetHeaderPressableText, obj2);
   }
   tmp16Result2 = tmp2;
   if (tmp16Result2) {
     const obj3 = { onPress: NOOP };
-    tmp16Result2 = tmp16(tmp17(7554).ActionSheetCloseButton, obj3);
+    tmp16Result2 = tmp16(tmp17(7421).ActionSheetCloseButton, obj3);
   }
   const obj4 = { header: metroImportDefault(BottomSheetTitleHeader, obj), children: metroImportAll(Stack, obj5) };
   obj5 = { spacing: 24, children: items1 };
-  Stack = tmp17(5929).Stack;
+  Stack = tmp17(5989).Stack;
   const obj6 = { children: items };
-  const Stack2 = tmp17(5929).Stack;
+  const Stack2 = tmp17(5989).Stack;
   items = [metroImportDefault(TextInput_TextInput.TextInput, { value: first1, onChange: tmp9, label: "Title" }), ];
   const obj7 = {
     value: tmp11,
@@ -92,7 +92,7 @@ function DemoActionSheet() {
   items[1] = metroImportDefault(TextInput_TextInput.TextInput, obj7);
   items1 = [metroImportAll(Stack2, obj6), , ];
   const obj8 = { hasIcons: false, children: items2 };
-  const Group = tmp17(7555).ActionSheetRow.Group;
+  const Group = tmp17(7422).ActionSheetRow.Group;
   items2 = [metroImportDefault(ActionSheetRow.ActionSheetSwitchRow, { value: first, onValueChange: tmp6, label: "Show Leading" }), metroImportDefault(ActionSheetRow.ActionSheetSwitchRow, { value: tmp2, onValueChange: tmp3, label: "Show Trailing" })];
   items1[1] = metroImportAll(Group, obj8);
   const obj9 = {
@@ -129,7 +129,7 @@ function DemoPromoSheet() {
   intl = intl2.intl;
   const obj2 = { graphic: obj3, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp };
   obj3 = { type: "image", src: obj4, aspectRatio: "16/9" };
-  obj4 = { uri: _modDef17260 };
+  obj4 = { uri: _modDef17298 };
   tmp = metroImportDefault(Button, obj);
   const PromoSheet = PromoSheet2.PromoSheet;
   return metroImportDefault(PromoSheet, obj2);

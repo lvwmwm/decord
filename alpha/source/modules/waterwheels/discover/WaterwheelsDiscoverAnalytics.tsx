@@ -1,13 +1,13 @@
-// Module ID: 17814
-// Function ID: 17815
+// Module ID: 17852
+// Function ID: 17853
 // Name: WaterwheelsDiscoverAnalytics
-// Dependencies: [1071, 10051, 1255, 2]
+// Dependencies: [1071, 8791, 1255, 2]
 // Exports: getDiscoverActionParameters
 
-// Module 17814 (WaterwheelsDiscoverAnalytics)
+// Module 17852 (WaterwheelsDiscoverAnalytics)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8791 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -76,7 +76,7 @@ let obj = {
     ({ item, parameters } = arg0);
     ({ sessionId, impressionId, sessionInteractionIndex } = arg0);
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { load_id: item.loadId, feed_item_type: discover_item, feed_item_id: item.itemId, home_session_id: gravity, action_type: parameters.actionType, feed_item_index: item.index, icymi_session_id: sessionId, impression_id: impressionId, ux_variation: waterwheels_discover, session_interaction_index: sessionInteractionIndex, guild_id: parameters.guildId };
+    const obj2 = { load_id: item.loadId, feed_item_type: discover_item, feed_item_id: item.itemId, home_session_id: gravity, action_type: parameters.actionType, feed_item_index: item.index, icymi_session_id: sessionId, impression_id: impressionId, ux_variation: waterwheels_discover, session_interaction_index: sessionInteractionIndex, guild_id: parameters.guildId, game_id: parameters.gameId, connection_provider: parameters.connectionProvider };
     return obj.track(AnalyticEvents.FEED_ITEM_INTERACTED, obj2);
   },
   actioned(arg0) {
@@ -118,6 +118,8 @@ export const DISCOVER_FEED_ITEM_TYPE = "discover_item";
 export const DISCOVER_HOME_SESSION_ID = "gravity";
 export const DISCOVER_UX_VARIATION = "waterwheels_discover";
 export function getDiscoverActionParameters(type, arg1) {
+  let game_id;
+  let provider;
   let str = "item_body";
   if ("identity" === arg1) {
     str = "item_header";
@@ -136,7 +138,16 @@ export function getDiscoverActionParameters(type, arg1) {
   } else if (WaterwheelsCardTypes.WaterwheelsActionType.OPEN_NUDGE === type) {
     return { actionType: "press", gestureType: "press", targetElement: str, intentType: "configure", destinationType: "none", guildId: null };
   } else {
-    return { actionType: "press", gestureType: "press", targetElement: str, intentType: "open", destinationType: "unknown", guildId: null };
+    const obj = { actionType: "press", gestureType: "press", targetElement: str, intentType: "open", destinationType: "unknown", guildId: null, gameId: game_id, connectionProvider: provider };
+    game_id = undefined;
+    if (type.type === WaterwheelsCardTypes.WaterwheelsActionType.OPEN_GAME) {
+      game_id = type.value.game_id;
+    }
+    provider = undefined;
+    if (type.type === WaterwheelsCardTypes.WaterwheelsActionType.OPEN_CONNECTION) {
+      provider = type.value.provider;
+    }
+    return obj;
   }
 }
 export const discoverAnalyticsTracker = obj;

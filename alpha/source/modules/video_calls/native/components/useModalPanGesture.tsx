@@ -1,20 +1,20 @@
-// Module ID: 13747
-// Function ID: 13748
+// Module ID: 13657
+// Function ID: 13658
 // Name: useModalPanGesture
-// Dependencies: [1653, 5173, 1706, 5514, 6429, 2]
+// Dependencies: [1653, 5177, 1706, 5518, 6004, 2]
 // Exports: default
 
-// Module 13747 (useModalPanGesture)
+// Module 13657 (useModalPanGesture)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5177 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
 import size from "module_2" /* 2 */;
 
 let _undefined;
 
 let tmp;
-const spring_spring = tmp(5514);
+const spring_spring = tmp(5518);
 let closure_3 = { code: "(function useModalPanGestureTsx1(){let[onStart,scheduleOnRN,start,translateY]=this.__closure;if(onStart!=null){scheduleOnRN(onStart);}start.set({y:translateY.get()});})" };
 let closure_4 = { code: "(function useModalPanGestureTsx2({translationY:translationY}){let[translateY,interpolate,start,maxTranslate,Extrapolate]=this.__closure;translateY.set(interpolate(start.get().y+translationY,[0,maxTranslate],[0,maxTranslate],Extrapolate.CLAMP));})" };
 let closure_5 = { code: "(function useModalPanGestureTsx3(){let[scheduleOnRN,ModalActionCreators]=this.__closure;scheduleOnRN(ModalActionCreators.pop);})" };

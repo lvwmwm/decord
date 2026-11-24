@@ -1,15 +1,15 @@
-// Module ID: 10162
-// Function ID: 10163
+// Module ID: 13959
+// Function ID: 13960
 // Name: MediaModalOverlayAltText
-// Dependencies: [19, 21, 4913, 575, 1628, 4738, 7030, 10163, 5504, 1112, 2]
+// Dependencies: [19, 21, 4917, 575, 1628, 4742, 6026, 11858, 5508, 1112, 2]
 
-// Module 10162 (MediaModalOverlayAltText)
+// Module 13959 (MediaModalOverlayAltText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 10163 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11858 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -26,14 +26,14 @@ const memoResult = react.memo(function MediaModalOverlayAltTextButton(descriptio
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = str(4738).ViewImageDescriptions;
+  const ViewImageDescriptions = str(4742).ViewImageDescriptions;
   let tmp4 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp4 = null;
     if (0 !== str.length) {
-      const PressableOpacity = tmp3(7030).PressableOpacity;
+      const PressableOpacity = tmp3(6026).PressableOpacity;
       ({ variant: "body-xs/semibold", color: "text-overlay-light", children: intl.string(str(1112).t.Q5VqrN) });
-      const Text = tmp3(5504).Text;
+      const Text = tmp3(5508).Text;
       intl = tmp3(1112).intl;
       tmp4 = <PressableOpacity style={tmp2.container} onPress={function onPress() {
         const tmp = openMediaModalOverlayAltTextSheetDefault;

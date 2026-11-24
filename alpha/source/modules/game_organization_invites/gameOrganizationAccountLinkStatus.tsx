@@ -1,12 +1,12 @@
-// Module ID: 12234
-// Function ID: 12235
+// Module ID: 12174
+// Function ID: 12175
 // Name: gameOrganizationAccountLinkStatus
-// Dependencies: [2164, 6825, 7523, 504, 2]
+// Dependencies: [2164, 6263, 7388, 504, 2]
 // Exports: useGameOrganizationAccountLinkStatus
 
-// Module 12234 (gameOrganizationAccountLinkStatus)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6825 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7523 */;
+// Module 12174 (gameOrganizationAccountLinkStatus)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6263 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7388 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import size from "module_2" /* 2 */;
 

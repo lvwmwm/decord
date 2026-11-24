@@ -1,18 +1,18 @@
-// Module ID: 11689
-// Function ID: 11690
+// Module ID: 11576
+// Function ID: 11577
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 4845, 1071, 21, 4913, 575, 7047, 7225, 5504, 1112, 7591, 5621, 11690, 11694, 6429, 1255, 11680, 2168, 11695, 11696, 504, 11703, 11705, 11706, 2]
+// Dependencies: [5, 19, 17, 4849, 1071, 21, 4917, 575, 6019, 7152, 5508, 1112, 7811, 5625, 11577, 11581, 6004, 1255, 11567, 2168, 11582, 11583, 504, 11591, 9474, 9476, 2]
 
-// Module 11689 (ForLaterMessageCard)
+// Module 11576 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 11690 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 11577 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2;
@@ -24,11 +24,11 @@ let metroImportDefault;
 let obj2;
 let tmp6;
 let unpackModuleId;
-const AssetRegistryDefault = tmp6(5621);
+const AssetRegistryDefault = tmp6(5625);
 class ForLaterDeletedMessageCard {
   constructor(savedMessage) {
     let IconButton;
-    let intl3;
+    let SvXS1Z;
     let items;
     let items1;
     let obj5;
@@ -38,12 +38,12 @@ class ForLaterDeletedMessageCard {
     let obj = { variant: "primary", border: "subtle", shadow: "none", style: items, children: items1 };
     items = [, ];
     ({ card: arr[0], deletedCard: arr[1] } = tmp);
-    const Card = savedMessage(7047).Card;
+    const Card = savedMessage(6019).Card;
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const CircleErrorIcon = savedMessage(7225).CircleErrorIcon;
+    const CircleErrorIcon = savedMessage(7152).CircleErrorIcon;
     items1 = [closure_10(CircleErrorIcon, obj2), , ];
     const obj3 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.deletedText, children: stringResult };
-    const Text = savedMessage(5504).Text;
+    const Text = savedMessage(5508).Text;
     const tmp2 = closure_11;
     if (null != savedMessage.saveData.dueAt) {
       const intl2 = tmp3(1112).intl;
@@ -54,9 +54,18 @@ class ForLaterDeletedMessageCard {
     }
     items1[1] = closure_10(Text, obj3);
     const obj4 = { style: tmp.deletedActionButton, children: closure_10(IconButton, obj5) };
+    IconButton = tmp3(7811).IconButton;
+    const intl3 = tmp3(1112).intl;
+    const string = intl3.string;
+    const tmp8 = View;
+    if (null != savedMessage.saveData.dueAt) {
+      SvXS1Z = tmp3(1112).t["a6gcZ/"];
+    } else {
+      SvXS1Z = tmp3(1112).t.SvXS1Z;
+    }
     obj5 = {
       variant: "secondary",
-      accessibilityLabel: intl3.string(savedMessage(1112).t.SvXS1Z),
+      accessibilityLabel: string(SvXS1Z),
       size: "sm",
       icon: AssetRegistryDefault,
       onPress() {
@@ -64,9 +73,7 @@ class ForLaterDeletedMessageCard {
         return obj.removeSavedMessage(savedMessage.saveData);
       }
     };
-    IconButton = tmp3(7591).IconButton;
-    intl3 = tmp3(1112).intl;
-    items1[2] = closure_10(View, obj4);
+    items1[2] = closure_10(tmp8, obj4);
     return tmp2(Card, obj);
   }
 }

@@ -1,17 +1,19 @@
-// Module ID: 18826
-// Function ID: 18827
+// Module ID: 18868
+// Function ID: 18869
 // Name: smartSearchViewabilityConfig
-// Dependencies: [8576, 13221, 13219, 2]
+// Dependencies: [13113, 8878, 13141, 13139, 2]
 
-// Module 18826 (smartSearchViewabilityConfig)
-import SearchConstants from "SearchConstants" /* 8576 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13219 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13221 */;
+// Module 18868 (smartSearchViewabilityConfig)
+import SearchConstants from "SearchConstants" /* 8878 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13113 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13139 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13141 */;
 import size from "module_2" /* 2 */;
 
+const SMART_SEARCH_VIEWABILITY_THRESHOLD_PERCENT = SmartSearchConstants.SMART_SEARCH_VIEWABILITY_THRESHOLD_PERCENT;
 const SearchListItemTypes = SearchConstants.SearchListItemTypes;
 let obj = {
-  viewabilityConfig: { viewAreaCoveragePercentThreshold: 33, waitForInteraction: false },
+  viewabilityConfig: { viewAreaCoveragePercentThreshold: SMART_SEARCH_VIEWABILITY_THRESHOLD_PERCENT, waitForInteraction: false },
   onViewableItemsChanged(viewableItems) {
     viewableItems = viewableItems.viewableItems;
     const someResult = viewableItems.some((item) => item.item.type === constants.SMART_SEARCH);

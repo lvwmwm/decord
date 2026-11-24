@@ -1,18 +1,18 @@
-// Module ID: 19430
-// Function ID: 19431
+// Module ID: 19472
+// Function ID: 19473
 // Name: AgeGateManager
-// Dependencies: [5, 4762, 4816, 4946, 1096, 1071, 7484, 6419, 6429, 19431, 2119, 19435, 1091, 2]
+// Dependencies: [5, 4766, 4820, 4950, 1096, 1071, 7349, 6707, 6004, 19473, 2119, 19477, 1091, 2]
 
-// Module 19430 (AgeGateManager)
-import AgeGateUtils from "AgeGateUtils" /* 6419 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+// Module 19472 (AgeGateManager)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
+import AgeGateUtils from "AgeGateUtils" /* 6707 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
 import AgeGateConstants from "AgeGateConstants" /* 1096 */;
 import Constants from "Constants" /* 1071 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_1, importDefault;
@@ -57,7 +57,7 @@ class AgeGateManager extends AutomaticLifecycleManager {
   handleAgeGateModalOpen(source) {
     source = source.source;
     const channelId = source.channelId;
-    let obj = source(6419);
+    let obj = source(6707);
     importDefault = obj.getAgeGateType(source);
     let obj2 = ModalActionCreatorsDefault;
     obj2.pushLazy(_asyncToGenerator(async (arg0, value) => {

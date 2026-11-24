@@ -1,13 +1,13 @@
-// Module ID: 11017
-// Function ID: 11018
+// Module ID: 10366
+// Function ID: 10367
 // Name: beginConsoleTransfer
-// Dependencies: [5, 1071, 11018, 11020, 5127, 11027, 2119, 1263, 11031, 2]
+// Dependencies: [5, 1071, 10367, 10369, 5131, 10376, 2119, 1263, 10380, 2]
 // Exports: beginConsoleTransfer
 
-// Module 11017 (beginConsoleTransfer)
+// Module 10366 (beginConsoleTransfer)
 import Constants from "Constants" /* 1071 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11018 */;
-import transferToXboxDefault from "transferToXbox" /* 11031 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10367 */;
+import transferToXboxDefault from "transferToXbox" /* 10380 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

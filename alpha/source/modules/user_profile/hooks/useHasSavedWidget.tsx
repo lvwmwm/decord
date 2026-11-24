@@ -1,12 +1,12 @@
-// Module ID: 10224
-// Function ID: 10225
+// Module ID: 14402
+// Function ID: 14403
 // Name: useHasSavedWidget
-// Dependencies: [502, 6956, 504, 2]
+// Dependencies: [502, 6037, 504, 2]
 // Exports: useHasSavedWidget
 
-// Module 10224 (useHasSavedWidget)
+// Module 14402 (useHasSavedWidget)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserProfileStore from "UserProfileStore" /* 6956 */;
+import UserProfileStore from "UserProfileStore" /* 6037 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

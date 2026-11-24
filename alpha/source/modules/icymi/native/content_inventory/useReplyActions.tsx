@@ -1,28 +1,28 @@
-// Module ID: 18145
-// Function ID: 18146
+// Module ID: 18184
+// Function ID: 18185
 // Name: useReplyActions
-// Dependencies: [5, 19, 4762, 8315, 1386, 1389, 4918, 504, 8012, 10453, 7737, 18146, 4969, 8382, 8250, 18144, 5127, 5595, 1112, 16189, 10043, 9063, 5495, 18146, 2119, 2]
+// Dependencies: [5, 19, 4766, 7976, 1386, 1389, 4922, 504, 8449, 9921, 7714, 18185, 4973, 8203, 8103, 18183, 5131, 5599, 1112, 16222, 8782, 9396, 5499, 18185, 2119, 2]
 // Exports: useReplyActions
 
-// Module 18145 (useReplyActions)
+// Module 18184 (useReplyActions)
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import MessageConstants from "MessageConstants" /* 4918 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8012 */;
-import DraftStore from "DraftStore" /* 8315 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9063 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
+import MessageConstants from "MessageConstants" /* 4922 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import DraftStore from "DraftStore" /* 7976 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8449 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8782 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9396 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, channel, closure_4;
 
 let tmp;
-const MessageReactionsTypes = tmp(5495);
+const MessageReactionsTypes = tmp(5499);
 let react = react_mod;
 const DraftType = DraftStore.DraftType;
 const EmojiIntention = EmojiConstants.EmojiIntention;
@@ -255,7 +255,7 @@ export function useReplyActions(content) {
             obj2.feedItemActioned(obj3);
             const obj5 = { content, author: tmp, sendMessage, onPressEmoji: callback1 };
             const obj4 = ActionSheetActionCreatorsDefault;
-            obj4.openLazy(asyncRequire(18146, tmp10.paths), "ReactActionSheet", obj5);
+            obj4.openLazy(asyncRequire(18185, tmp10.paths), "ReactActionSheet", obj5);
           }
         }, items6),
       openEmojiPicker: callback2

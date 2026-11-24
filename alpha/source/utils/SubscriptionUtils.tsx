@@ -1,16 +1,16 @@
-// Module ID: 11914
-// Function ID: 11915
+// Module ID: 11789
+// Function ID: 11790
 // Name: SubscriptionUtils
-// Dependencies: [32, 19, 2177, 1071, 1388, 38, 11915, 2173, 6877, 504, 11917, 2168, 2]
+// Dependencies: [32, 19, 2177, 1071, 1388, 38, 11790, 2173, 7488, 504, 11792, 2168, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 11914 (SubscriptionUtils)
+// Module 11789 (SubscriptionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import _modDef2168 from "module_2168" /* 2168 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6877 */;
-import CheckoutError from "CheckoutError" /* 11915 */;
-import PauseDuration from "PauseDuration" /* 11917 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7488 */;
+import CheckoutError from "CheckoutError" /* 11790 */;
+import PauseDuration from "PauseDuration" /* 11792 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2177 */;
@@ -25,7 +25,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f100866 = (planId) => {
+const f100480 = (planId) => {
   const value = SubscriptionPlanStore.get(planId.planId);
   _modDef38(null != value, "Unable to fetch plan");
   return value;
@@ -37,11 +37,11 @@ let result = size.fileFinishedImporting("utils/SubscriptionUtils.tsx");
 
 export function getSubscriptionPlans(items) {
   items = items.items;
-  return items.map(f100866);
+  return items.map(f100480);
 }
 export function getSubscriptionSKUs(items) {
   items = items.items;
-  const mapped = items.map(f100866);
+  const mapped = items.map(f100480);
   return mapped.map((skuId) => skuId.skuId);
 }
 export function subscriptionCanSwitchImmediately(getCurrentSubscriptionPlanIdForGroup, newPlanId, arr) {
@@ -113,7 +113,7 @@ export function getOrFetchSubscriptionPlan(subscriptionPlanId, arg1) {
     const result = obj3.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     const tmp12 = require;
     if (!obj.isFetchingForSKU(result)) {
-      const tmp12Result = tmp12(6877);
+      const tmp12Result = tmp12(7488);
       const subscriptionPlansForSKU = tmp12Result.fetchSubscriptionPlansForSKU(result, arg1);
     }
   }

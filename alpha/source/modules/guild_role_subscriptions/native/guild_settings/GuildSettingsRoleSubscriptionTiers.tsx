@@ -1,31 +1,31 @@
-// Module ID: 20012
-// Function ID: 20013
+// Module ID: 20055
+// Function ID: 20056
 // Name: GuildSettingsRoleSubscriptionTiers
-// Dependencies: [32, 19, 17, 7995, 4784, 4838, 16610, 1071, 21, 4913, 575, 5127, 20013, 2119, 1112, 6856, 16634, 5504, 563, 16630, 7045, 5600, 11665, 1628, 1500, 16618, 20003, 15108, 16617, 12, 7095, 20015, 20016, 38, 7348, 13000, 20011, 2]
+// Dependencies: [32, 19, 17, 8433, 4788, 4842, 16644, 1071, 21, 4917, 575, 5131, 20056, 2119, 1112, 6199, 16668, 5508, 563, 16664, 6018, 5604, 11554, 1628, 1500, 16652, 20046, 15129, 16651, 12, 7065, 20058, 20059, 38, 6014, 12919, 20054, 2]
 // Exports: default
 
-// Module 20012 (GuildSettingsRoleSubscriptionTiers)
+// Module 20055 (GuildSettingsRoleSubscriptionTiers)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16610 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16630 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20011 */;
-import GuildRoleSettingsActionCreatorsAll from "GuildRoleSettingsActionCreators" /* 20015 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20016 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16644 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16664 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20054 */;
+import GuildRoleSettingsActionCreatorsAll from "GuildRoleSettingsActionCreators" /* 20058 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20059 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7995 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4838 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8433 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4842 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let guild, navigation;
@@ -127,11 +127,11 @@ function EditListingButton(editStateId) {
       const formatToPlainString = intl.formatToPlainString;
       const obj5 = { price: tmp2Result.formatPrice(first1, first3.currency), interval: tmp2Result3.formatPlanInterval(first3) };
       const CgmBaG = tmp2(1112).t.CgmBaG;
-      tmp2Result = editStateId(6856);
-      tmp2Result3 = editStateId(16634);
+      tmp2Result = editStateId(6199);
+      tmp2Result3 = editStateId(16668);
       formatToPlainStringResult = formatToPlainString(CgmBaG, obj5);
     } else {
-      const tmp2Result4 = editStateId(16634);
+      const tmp2Result4 = editStateId(16668);
       formatToPlainStringResult = tmp2Result4.formatMonthlyPriceLabel(first1);
     }
     str = formatToPlainStringResult;
@@ -145,12 +145,12 @@ function EditListingButton(editStateId) {
     onLongPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { editStateId, guildId: importDefault, groupListingId: importAll };
-      obj.openLazy(asyncRequire(20013, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+      obj.openLazy(asyncRequire(20056, dependencyMap.paths), "TierArchiveOrDelete", obj2);
     }
   };
   let tmp11Result = tmp5;
   obj7 = { style: tmp.detailsRow, children: items1 };
-  const TableRow = tmp2(7045).TableRow;
+  const TableRow = tmp2(6018).TableRow;
   tmp12 = closure_16;
   tmp13 = closure_7;
   if (tmp5) {
@@ -162,7 +162,7 @@ function EditListingButton(editStateId) {
   items1[2] = tmp18 && tmp11(UnsavedBadge, {});
   const items2 = [tmp.tierPrice, ];
   const tmp11Result5 = tmp18 && tmp11(UnsavedBadge, {});
-  const Text = tmp2(5504).Text;
+  const Text = tmp2(5508).Text;
   if (!tmp5) {
     tmp5 = flag2;
   }
@@ -176,8 +176,8 @@ function EditListingButton(editStateId) {
     obj9 = { uri: first2 };
     tmp11Result6 = tmp11(FastImageDefault, obj8);
   } else {
-    const obj10 = { IconComponent: editStateId(11665).TagsIcon };
-    const Icon = tmp2(7045).TableRow.Icon;
+    const obj10 = { IconComponent: editStateId(11554).TagsIcon };
+    const Icon = tmp2(6018).TableRow.Icon;
     tmp11Result6 = tmp11(Icon, obj10);
   }
   return closure_15(TableRow, obj6);

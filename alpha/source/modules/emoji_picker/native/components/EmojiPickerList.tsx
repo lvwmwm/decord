@@ -1,28 +1,28 @@
-// Module ID: 11281
-// Function ID: 11282
+// Module ID: 9439
+// Function ID: 9440
 // Name: EmojiPickerList
-// Dependencies: [19, 6576, 9066, 1071, 1389, 1227, 1388, 21, 7520, 7539, 11282, 9071, 9070, 11283, 11276, 11284, 10459, 10949, 8547, 5129, 5130, 4863, 5098, 11286, 5595, 1112, 11291, 9067, 11292, 4738, 11298, 11295, 11299, 11303, 11296, 11305, 11306, 11313, 11315, 11317, 2]
+// Dependencies: [19, 6760, 9399, 1071, 1389, 1227, 1388, 21, 6253, 6254, 9440, 9404, 9403, 9441, 9442, 9443, 9445, 9511, 9456, 5133, 5134, 4867, 5102, 9577, 5599, 1112, 9582, 9400, 9583, 4742, 9589, 9586, 9591, 9595, 9587, 9597, 9598, 9605, 9607, 9609, 2]
 
-// Module 11281 (EmojiPickerList)
+// Module 9439 (EmojiPickerList)
 import intl2 from "intl" /* 1112 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4863 */;
-import ChatInputUtils from "ChatInputUtils" /* 5098 */;
-import HapticUtils from "HapticUtils" /* 5129 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6576 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9066 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 9067 */;
-import TopEmojisActionCreators from "TopEmojisActionCreators" /* 9070 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10459 */;
-import RoleSubscriptionUpsellUtilsDefault from "RoleSubscriptionUpsellUtils" /* 11286 */;
-import trackEmojiSuggestionSelectedDefault from "trackEmojiSuggestionSelected" /* 11291 */;
-import useEmojiPickerData from "useEmojiPickerData" /* 11292 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 11295 */;
-import EmojiPickerListComponents from "EmojiPickerListComponents" /* 11298 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4867 */;
+import ChatInputUtils from "ChatInputUtils" /* 5102 */;
+import HapticUtils from "HapticUtils" /* 5133 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5134 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6760 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9399 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 9400 */;
+import TopEmojisActionCreators from "TopEmojisActionCreators" /* 9403 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9445 */;
+import RoleSubscriptionUpsellUtilsDefault from "RoleSubscriptionUpsellUtils" /* 9577 */;
+import trackEmojiSuggestionSelectedDefault from "trackEmojiSuggestionSelected" /* 9582 */;
+import useEmojiPickerData from "useEmojiPickerData" /* 9583 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9586 */;
+import EmojiPickerListComponents from "EmojiPickerListComponents" /* 9589 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
@@ -291,12 +291,12 @@ const memoResult = react.memo(function EmojiPickerList(emojiPickerListRef) {
             if (useEmojiPickerData.EmojiPickerItemType.EMOJI_ROW === type) {
               ({ emojis, emojisDisabled, footer, row, isSectionNitroLocked } = item);
               const obj4 = { emojis, emojisDisabled, category: footer, rowSize: rounded, containerWidth, onPressEmoji, onLongPressEmoji: callback1, animateEmoji: setting, row, isSectionNitroLocked };
-              tmp27Result = gesture(tmp(11299).EmojiPickerListRow, obj4);
+              tmp27Result = gesture(tmp(9591).EmojiPickerListRow, obj4);
             } else if (useEmojiPickerData.EmojiPickerItemType.EMOJI_ROW_NSFW === type) {
-              tmp27Result = gesture(tmp(11298).NSFWRow, {});
+              tmp27Result = gesture(tmp(9589).NSFWRow, {});
             } else if (useEmojiPickerData.EmojiPickerItemType.FOOTER_UPSELL === type) {
               let guild_id;
-              const PremiumSearchUpsell = tmp(11303).PremiumSearchUpsell;
+              const PremiumSearchUpsell = tmp(9595).PremiumSearchUpsell;
               const tmp27 = gesture;
               if (channel != null) {
                 guild_id = channel.guild_id;
@@ -309,7 +309,7 @@ const memoResult = react.memo(function EmojiPickerList(emojiPickerListRef) {
             const tmp15 = closure_15;
             if (tmp16) {
               const obj5 = { useTier0UpsellContent };
-              tmp16 = gesture(tmp(11296).PremiumUpsellGradientBackground, obj5);
+              tmp16 = gesture(tmp(9587).PremiumUpsellGradientBackground, obj5);
             }
             const obj6 = { children: items };
             items = [tmp16, tmp27Result];

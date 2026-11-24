@@ -1,30 +1,30 @@
-// Module ID: 11061
-// Function ID: 11062
+// Module ID: 10410
+// Function ID: 10411
 // Name: RTCDebugOverlay
-// Dependencies: [19, 17, 4762, 4784, 5654, 5677, 6396, 1386, 5658, 21, 4913, 4910, 575, 1186, 504, 5529, 11062, 5678, 7017, 5511, 1112, 2]
+// Dependencies: [19, 17, 4766, 4788, 5725, 5740, 8262, 1386, 5729, 21, 4917, 4914, 575, 1186, 504, 5533, 10411, 5741, 7354, 5515, 1112, 2]
 // Exports: default
 
-// Module 11061 (RTCDebugOverlay)
+// Module 10410 (RTCDebugOverlay)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
-import Constants from "Constants" /* 5658 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5678 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11062 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
+import Constants from "Constants" /* 5729 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5741 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7354 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 10411 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
-import RTCDebugStore from "RTCDebugStore" /* 5677 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6396 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
+import RTCDebugStore from "RTCDebugStore" /* 5740 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8262 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
-import ColorUtils_mod from "ColorUtils" /* 4910 */;
+import createStyles_mod from "createStyles" /* 4917 */;
+import ColorUtils_mod from "ColorUtils" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 let userId;
@@ -127,7 +127,7 @@ function RTCDebugGeneral() {
   const stateFromStores1 = obj3.useStateFromStores(items3, () => ChannelStore.getChannel(channelId), items4);
   const obj4 = { id: guildId, name };
   name = null;
-  const tmp4 = channelId(5529)(stateFromStores1);
+  const tmp4 = channelId(5533)(stateFromStores1);
   const tmp6 = Section;
   const tmp7 = ObjectKV;
   if (null != stateFromStores) {

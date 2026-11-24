@@ -1,31 +1,31 @@
-// Module ID: 8546
-// Function ID: 8547
+// Module ID: 9454
+// Function ID: 9455
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4914, 1191, 5654, 4946, 1386, 1388, 1071, 5754, 8541, 21, 4913, 575, 5477, 2173, 8547, 8485, 8470, 1112, 8548, 8552, 8556, 8557, 5127, 8545, 8558, 14399, 9354, 1091, 14403, 10949, 5600, 5468, 504, 7520, 10459, 8859, 8862, 14407, 1255, 10950, 5098, 7553, 14409, 5504, 5511, 8840, 2]
+// Dependencies: [19, 17, 4918, 1191, 5725, 4950, 1386, 1388, 1071, 5817, 9455, 21, 4917, 575, 5481, 2173, 9456, 8006, 7991, 1112, 9457, 9461, 9465, 9466, 5131, 9453, 9467, 9503, 9208, 1091, 9507, 9511, 5604, 5472, 504, 6253, 9445, 8995, 9018, 9512, 1255, 9492, 5102, 7420, 9515, 5508, 5515, 9497, 2]
 // Exports: default
 
-// Module 8546 (PremiumUpsellActionSheet)
+// Module 9454 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
-import ChatInputUtils from "ChatInputUtils" /* 5098 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import LinearGradientDefault from "LinearGradient" /* 5468 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5754 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8541 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8545 */;
+import ChatInputUtils from "ChatInputUtils" /* 5102 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import LinearGradientDefault from "LinearGradient" /* 5472 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5817 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9453 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9455 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
 import UserStore from "UserStore" /* 1386 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let guildId;

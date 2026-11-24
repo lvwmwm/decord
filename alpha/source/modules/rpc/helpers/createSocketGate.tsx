@@ -1,10 +1,10 @@
-// Module ID: 15701
-// Function ID: 15702
+// Module ID: 15717
+// Function ID: 15718
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: default
 
-// Module 15701 (_asyncToGenerator)
+// Module 15717 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -14,9 +14,9 @@ let result = size.fileFinishedImporting("modules/rpc/helpers/createSocketGate.ts
 
 export default function createSocketGate(cooldownMs) {
   cooldownMs = cooldownMs.cooldownMs;
-  function tryAcquire(arg0) {
+  function tryAcquire(socket) {
     obj = weakMap;
-    let obj1 = weakMap.get(arg0);
+    let obj1 = weakMap.get(socket);
     if (obj1 == null) {
       obj1 = { inFlight: false, readyAt: 0 };
     }
@@ -28,7 +28,7 @@ export default function createSocketGate(cooldownMs) {
       if (Date.now() >= obj1.readyAt) {
         let flag = true;
         obj1.inFlight = true;
-        const result = obj.set(arg0, obj1);
+        const result = obj.set(socket, obj1);
         fn = () => {
           obj = arg0;
           if (arg0 === undefined) {

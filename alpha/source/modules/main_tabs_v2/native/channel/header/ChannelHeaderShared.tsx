@@ -1,34 +1,34 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11746
+// Function ID: 11747
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4855, 1386, 21, 4913, 575, 7030, 1378, 9454, 5504, 1186, 11869, 10124, 5477, 7636, 11870, 1112, 5529, 5600, 1412, 11871, 10387, 2]
+// Dependencies: [32, 19, 17, 4859, 1386, 21, 4917, 575, 6026, 1378, 9667, 5508, 1186, 11747, 9475, 5481, 6970, 11748, 1112, 5533, 5604, 1412, 11410, 8491, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 11868 (ChannelHeaderShared)
+// Module 11746 (ChannelHeaderShared)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import useToken from "useToken" /* 5477 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import useChannelName from "useChannelName" /* 5529 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import Pressables from "Pressables" /* 7030 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9454 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
-import BotTagDefault from "BotTag" /* 10387 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11869 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11870 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11871 */;
+import useToken from "useToken" /* 5481 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import useChannelName from "useChannelName" /* 5533 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import Pressables from "Pressables" /* 6026 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 6970 */;
+import BotTagDefault from "BotTag" /* 8491 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 9475 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9667 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11410 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11747 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let Platform;
@@ -136,7 +136,7 @@ function UserAvatar(user) {
   let tmp3;
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: true };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: null };
   tmp = closure_12();
   const Avatar = native.Avatar;
   tmp3 = null;

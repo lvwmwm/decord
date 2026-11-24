@@ -1,14 +1,14 @@
-// Module ID: 8942
-// Function ID: 8943
+// Module ID: 9428
+// Function ID: 9429
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 1268, 5493, 8943, 1494, 8948, 2]
+// Dependencies: [32, 5, 19, 21, 3, 1268, 5497, 9429, 1494, 9434, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 8942 (useTooltip)
+// Module 9428 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 8943 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 9429 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -44,7 +44,7 @@ export function useTooltip(ref, memo) {
   const tmp8 = context(1494)();
   let closure_3 = tmp8;
   let closure_4 = obj.useRef(tmp8);
-  const context1 = obj.useContext(tmp(5493).LayerContext);
+  const context1 = obj.useContext(tmp(5497).LayerContext);
   let closure_6 = obj.useRef(null);
   const items1 = [context1, ref];
   const effect = obj.useEffect(() => {

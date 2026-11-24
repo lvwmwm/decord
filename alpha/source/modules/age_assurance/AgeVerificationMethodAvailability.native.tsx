@@ -1,12 +1,12 @@
-// Module ID: 7841
-// Function ID: 7842
+// Module ID: 7785
+// Function ID: 7786
 // Name: AgeVerificationMethodAvailability
-// Dependencies: [5, 32, 19, 1399, 1378, 7842, 7843, 2]
+// Dependencies: [5, 32, 19, 1399, 1378, 7786, 7787, 2]
 // Exports: getAvailableMethodsV2, useAvailableMethodsV2
 
-// Module 7841 (AgeVerificationMethodAvailability)
+// Module 7785 (AgeVerificationMethodAvailability)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7843 */;
+import GoogleWalletActionCreators from "GoogleWalletActionCreators" /* 7787 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let c5, c6, method;
 
 let tmp;
-const AppStoreAgeSignalSupport = tmp(7842);
+const AppStoreAgeSignalSupport = tmp(7786);
 function filterByAvailability(arr, arg1) {
   ({ googleWallet: require, appStoreSignal: dependencyMap } = arg1);
   return arr.filter((method) => {

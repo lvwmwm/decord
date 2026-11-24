@@ -1,12 +1,12 @@
-// Module ID: 15216
-// Function ID: 15217
+// Module ID: 15237
+// Function ID: 15238
 // Name: PassthroughTouchView
-// Dependencies: [19, 21, 15217, 2]
+// Dependencies: [19, 21, 15238, 2]
 // Exports: default
 
-// Module 15216 (PassthroughTouchView)
+// Module 15237 (PassthroughTouchView)
 import Fragment from "Fragment" /* 21 */;
-import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 15217 */;
+import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 15238 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

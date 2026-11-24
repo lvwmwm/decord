@@ -1,10 +1,10 @@
-// Module ID: 8256
-// Function ID: 8257
+// Module ID: 9756
+// Function ID: 9757
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: isForegrounded
 
-// Module 8256 (react-native)
+// Module 9756 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

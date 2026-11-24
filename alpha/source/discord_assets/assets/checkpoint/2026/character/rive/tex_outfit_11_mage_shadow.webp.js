@@ -1,8 +1,8 @@
-// Module ID: 12660
-// Function ID: 12661
+// Module ID: 12580
+// Function ID: 12581
 // Dependencies: [2]
 
-// Module 12660
+// Module 12580
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_11_mage_shadow.webp.js");

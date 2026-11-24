@@ -1,9 +1,9 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 8822
+// Function ID: 8823
 // Name: ForwardAgeRestrictedDestinationsExperiment
 // Dependencies: [1451, 2]
 
-// Module 10073 (ForwardAgeRestrictedDestinationsExperiment)
+// Module 8822 (ForwardAgeRestrictedDestinationsExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

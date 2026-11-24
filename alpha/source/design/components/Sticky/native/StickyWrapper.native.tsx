@@ -1,10 +1,10 @@
-// Module ID: 11779
-// Function ID: 11780
+// Module ID: 11669
+// Function ID: 11670
 // Name: StickyWrapper
 // Dependencies: [19, 17, 21, 1358, 2]
 // Exports: StickyWrapper
 
-// Module 11779 (StickyWrapper)
+// Module 11669 (StickyWrapper)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

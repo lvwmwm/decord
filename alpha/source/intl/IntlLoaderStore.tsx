@@ -1,13 +1,13 @@
 // Module ID: 2189
 // Function ID: 2190
 // Name: IntlLoaderStore
-// Dependencies: [5, 2026, 1257, 1112, 2190, 1151, 4663, 4694, 2168, 1241, 2]
+// Dependencies: [5, 2026, 1257, 1112, 2190, 1151, 4667, 4698, 2168, 1241, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 2189 (IntlLoaderStore)
 import intl2 from "intl" /* 1112 */;
-import formatjs from "formatjs" /* 4663 */;
-import moment from "moment" /* 4694 */;
+import formatjs from "formatjs" /* 4667 */;
+import moment from "moment" /* 4698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_2026 from "module_2026" /* 2026 */;
 import module_1257 from "module_1257" /* 1257 */;
@@ -336,15 +336,15 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "y",
-    error: "channel",
-    localeData: "right",
+    error: "channel_id",
+    localeData: "application",
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "disabled", error: "isArray" });
+        closure_0({ isLoading: false, inProgressLocale: "sa", error: "isArray" });
       }
     },
     setLoadingFailed(error, arg1) {

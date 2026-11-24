@@ -1,16 +1,16 @@
-// Module ID: 13447
-// Function ID: 13448
+// Module ID: 13372
+// Function ID: 13373
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [13448, 13449, 1112, 3312, 8001, 2856, 2]
+// Dependencies: [13373, 13374, 1112, 3314, 8159, 2856, 2]
 // Exports: default
 
-// Module 13447 (useGuildPowerupExpiringNotificationsConfig)
+// Module 13372 (useGuildPowerupExpiringNotificationsConfig)
 import intl4 from "intl" /* 1112 */;
 import _modDef2856 from "module_2856" /* 2856 */;
-import _modDef3312 from "module_3312" /* 3312 */;
-import Powerups from "Powerups" /* 8001 */;
-import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 13448 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 13449 */;
+import _modDef3314 from "module_3314" /* 3314 */;
+import Powerups from "Powerups" /* 8159 */;
+import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 13373 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 13374 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
@@ -23,7 +23,7 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     let stringResult;
     if (arr2.length > 0) {
       const intl = intl4.intl;
-      stringResult = intl.string(tmp2(3312)["B3OfL/"]);
+      stringResult = intl.string(tmp2(3314)["B3OfL/"]);
     }
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(items, arr.map((title) => title.title), 0);
@@ -43,7 +43,7 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     if (arr2.length > 0) {
       const push2 = items3.push;
       const intl3 = intl4.intl;
-      push2(intl3.string(_modDef3312.wiungr));
+      push2(intl3.string(_modDef3314.wiungr));
     }
     return { shouldShow: arr.length > 0 || arr2.length > 0, expiringPowerups: arr, expiringPowerupNames: items, warnings: items3 };
   } else {

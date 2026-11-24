@@ -1,9 +1,9 @@
-// Module ID: 12380
-// Function ID: 12381
+// Module ID: 12279
+// Function ID: 12280
 // Name: CommunicationDisabledActionCreators
-// Dependencies: [5, 2168, 6511, 2]
+// Dependencies: [5, 2168, 6865, 2]
 
-// Module 12380 (CommunicationDisabledActionCreators)
+// Module 12279 (CommunicationDisabledActionCreators)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

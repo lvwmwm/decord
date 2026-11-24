@@ -1,17 +1,17 @@
-// Module ID: 17967
-// Function ID: 17968
+// Module ID: 18006
+// Function ID: 18007
 // Name: YouBarUser
-// Dependencies: [19, 17, 1386, 16478, 21, 4913, 575, 504, 1653, 5514, 4969, 17968, 17969, 17970, 2]
+// Dependencies: [19, 17, 1386, 16511, 21, 4917, 575, 504, 1653, 5518, 4973, 18007, 18008, 18009, 2]
 
-// Module 17967 (YouBarUser)
+// Module 18006 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring_spring from "spring/spring" /* 5514 */;
+import spring_spring from "spring/spring" /* 5518 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import YouBarConstants from "YouBarConstants" /* 16478 */;
+import YouBarConstants from "YouBarConstants" /* 16511 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,6 +35,7 @@ size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadiu
 let closure_11 = createStyles(obj);
 let closure_12 = { code: "(function YouBarUserTsx1(){let[nameMargin]=this.__closure;return{marginLeft:nameMargin.get()};})" };
 const memoResult = react.memo(function YouBarUser(isCondensed) {
+  let avatarCoachmarkAnchorRef;
   let closure_0;
   let currentUser;
   let items4;
@@ -43,11 +44,12 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
   let items7;
   let obj10;
   let obj7;
+  let onAvatarPress;
   let tmp8;
   let tmp9;
   isCondensed = isCondensed.isCondensed;
   _require = undefined;
-  const onAvatarPress = isCondensed.onAvatarPress;
+  ({ onAvatarPress, avatarCoachmarkAnchorRef } = isCondensed);
   const tmp = closure_11();
   let obj = require("get initialized");
   const items = [UserStore];
@@ -77,15 +79,15 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
   YouBarUserTsx1.__workletHash = 12382860773339;
   YouBarUserTsx1.__initData = tmp8;
   const animatedStyle = tmp2Result.useAnimatedStyle(YouBarUserTsx1);
-  const obj4 = sharedValue(4969);
+  const obj4 = sharedValue(4973);
   const name = obj4.useName(stateFromStores);
   if (null != stateFromStores) {
     let obj3;
     if (null != name) {
       obj3 = { style: tmp.youButton, children: items4 };
-      const obj5 = { isLargeAvatar: !isCondensed, onPress: onAvatarPress };
-      items4 = [closure_9(sharedValue(17969), obj5), ];
-      const obj6 = { style: items5, children: closure_9(sharedValue(17970), obj7) };
+      const obj5 = { isLargeAvatar: !isCondensed, onPress: onAvatarPress, coachmarkAnchorRef: avatarCoachmarkAnchorRef };
+      items4 = [closure_9(sharedValue(18008), obj5), ];
+      const obj6 = { style: items5, children: closure_9(sharedValue(18009), obj7) };
       items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       const View2 = tmp11(1653).View;
       obj7 = { userId: stateFromStores.id, username: name };
@@ -94,7 +96,7 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
     return tmp13(View, obj3);
   }
   const obj8 = { style: tmp.youButton, children: items6 };
-  items6 = [closure_9(sharedValue(17968), { isLarge: !isCondensed }), ];
+  items6 = [closure_9(sharedValue(18007), { isLarge: !isCondensed }), ];
   const obj9 = { style: items7, children: closure_9(View, obj10) };
   items7 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };

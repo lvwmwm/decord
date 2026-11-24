@@ -1,16 +1,16 @@
-// Module ID: 13200
-// Function ID: 13201
+// Module ID: 13114
+// Function ID: 13115
 // Name: SmartSearchUtils
-// Dependencies: [13201, 13199, 1071, 8576, 13203, 13204, 13202, 2]
+// Dependencies: [13115, 13113, 1071, 8878, 13117, 13118, 13116, 2]
 // Exports: getChannelFilterKey, getChannelIdsForFilterKey, getSmartSearchCitationsCount, getSmartSearchQuery, getSmartSearchStatus, isSmartSearchEmptyOrErrored, isSupportedSearchContext, parseConversationId
 
-// Module 13200 (SmartSearchUtils)
-import SearchConstants from "SearchConstants" /* 8576 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 13202 */;
-import QueryTokenizer from "QueryTokenizer" /* 13203 */;
-import SearchUtils from "SearchUtils" /* 13204 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13201 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13199 */;
+// Module 13114 (SmartSearchUtils)
+import SearchConstants from "SearchConstants" /* 8878 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 13116 */;
+import QueryTokenizer from "QueryTokenizer" /* 13117 */;
+import SearchUtils from "SearchUtils" /* 13118 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13115 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13113 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -101,14 +101,18 @@ export function isSmartSearchEmptyOrErrored(smartSearchStatus) {
   return tmp3;
 }
 export function getSmartSearchCitationsCount(searchContext, searchResultsQuery, arg2) {
+  let tmp = arg3;
+  if (arg3 === undefined) {
+    tmp = SmartSearchResultsStore;
+  }
   const obj = SearchUtils;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(searchContext);
   if (null == guildIdFromSearchContext) {
     return 0;
   } else {
-    const getAnswer = SmartSearchResultsStore.getAnswer;
-    const tmpResult = SearchUtils;
-    const answer = getAnswer(guildIdFromSearchContext, tmpResult.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery));
+    const getAnswer = tmp.getAnswer;
+    const tmp2Result = SearchUtils;
+    const answer = getAnswer(guildIdFromSearchContext, tmp2Result.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchResultsQuery));
     let num;
     if (answer != null) {
       num = answer.citations.length;

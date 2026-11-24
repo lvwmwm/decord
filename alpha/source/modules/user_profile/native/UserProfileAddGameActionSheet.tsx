@@ -1,31 +1,31 @@
-// Module ID: 10206
-// Function ID: 10207
+// Module ID: 14389
+// Function ID: 14390
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 10207, 8069, 21, 4913, 575, 7045, 2151, 2152, 7977, 5600, 10208, 5488, 7426, 10212, 504, 10213, 6958, 10214, 9931, 10220, 10215, 10216, 10217, 4922, 1112, 5923, 8136, 6680, 5127, 10205, 5141, 7515, 7427, 7020, 5504, 7432, 2]
+// Dependencies: [32, 19, 17, 502, 14390, 6011, 21, 4917, 575, 6018, 2151, 2152, 7925, 5604, 13179, 5492, 7279, 13178, 504, 14391, 6045, 14392, 10726, 14398, 14393, 14394, 14395, 4926, 1112, 5983, 6256, 9072, 5131, 14388, 5145, 7381, 7280, 6921, 5508, 7285, 2]
 // Exports: default
 
-// Module 10206 (UserProfileAddGameActionSheet)
+// Module 14389 (UserProfileAddGameActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2151 */;
 import StringUtils from "StringUtils" /* 2152 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import _extends from "_extends" /* 6680 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6958 */;
-import TableRow2 from "TableRow" /* 7045 */;
-import Constants from "Constants" /* 8069 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8136 */;
-import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 10205 */;
-import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 10208 */;
-import WidgetUtils from "WidgetUtils" /* 10217 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4926 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import Constants from "Constants" /* 6011 */;
+import TableRow2 from "TableRow" /* 6018 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6045 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6256 */;
+import _extends from "_extends" /* 9072 */;
+import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 13179 */;
+import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 14388 */;
+import WidgetUtils from "WidgetUtils" /* 14395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WidgetStore from "WidgetStore" /* 10207 */;
+import WidgetStore from "WidgetStore" /* 14390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let map, set;
@@ -91,13 +91,13 @@ let closure_12 = react.memo(function AddGameRow(option) {
     const tmp12 = require;
     if (obj3.isNullOrEmpty(tmp7Result)) {
       const obj4 = { size: "sm", style: tmp.gameIcon };
-      tmp11Result = tmp11(tmp12(7977).UnknownGameIcon, obj4);
+      tmp11Result = tmp11(tmp12(7925).UnknownGameIcon, obj4);
     } else {
       const obj5 = { style: items, source: obj6 };
       items = [, ];
       ({ gameIcon: arr[0], gameIconBackground: arr[1] } = tmp);
       obj6 = { uri: tmp7Result };
-      tmp11Result = tmp11(tmp5(5600), obj5);
+      tmp11Result = tmp11(tmp5(5604), obj5);
     }
     let platformAvailability;
     tmp5Result = GamePlatformBadgeRowDefault;
@@ -366,7 +366,7 @@ export default function UserProfileAddGameActionSheet(widgetType) {
       if (gameIds.includes(gameId)) {
         onAddGame(gameId);
       }
-      const AccessibilityAnnouncer = tmp5(4922).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp5(4926).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp5(1112).intl;
       announce(intl.string(intl4.t.q0U3DE));

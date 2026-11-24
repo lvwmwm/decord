@@ -1,10 +1,10 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 14394
+// Function ID: 14395
 // Name: useAreGamesLoading
 // Dependencies: [2140, 504, 2]
 // Exports: default
 
-// Module 10216 (useAreGamesLoading)
+// Module 14394 (useAreGamesLoading)
 import GameStore from "GameStore" /* 2140 */;
 import size from "module_2" /* 2 */;
 

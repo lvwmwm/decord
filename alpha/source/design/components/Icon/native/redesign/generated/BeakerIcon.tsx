@@ -1,14 +1,14 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 17038
+// Function ID: 17039
 // Name: BeakerIcon
-// Dependencies: [19, 21, 575, 5599, 17005, 2]
+// Dependencies: [19, 21, 575, 5603, 17039, 2]
 // Exports: BeakerIcon
 
-// Module 17004 (BeakerIcon)
+// Module 17038 (BeakerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 17005 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 17039 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16063
+// Function ID: 16064
 // Name: AgeGroupResetSetting
-// Dependencies: [8712, 21, 11937, 1112, 3444, 16031, 5862, 16027, 2]
+// Dependencies: [9414, 21, 11815, 1112, 3446, 16064, 5922, 16060, 2]
 
-// Module 16030 (AgeGroupResetSetting)
+// Module 16063 (AgeGroupResetSetting)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef3444 from "module_3444" /* 3444 */;
-import useAlertStore from "useAlertStore" /* 5862 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16027 */;
-import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 16031 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import _modDef3446 from "module_3446" /* 3446 */;
+import useAlertStore from "useAlertStore" /* 5922 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16060 */;
+import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 16064 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -19,12 +19,12 @@ const jsx = Fragment.jsx;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3444["bD//cU"]);
+    return intl.string(_modDef3446["bD//cU"]);
   },
   parent: MobileUserSettings.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef3444.Gn0SAj);
+    return intl.string(_modDef3446.Gn0SAj);
   },
   onPress() {
     SettingsAgeGroupResetAlert.default;

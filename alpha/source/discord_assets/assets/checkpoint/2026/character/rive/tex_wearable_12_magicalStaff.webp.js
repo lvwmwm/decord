@@ -1,8 +1,8 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 12625
+// Function ID: 12626
 // Dependencies: [2]
 
-// Module 12705
+// Module 12625
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_12_magicalStaff.webp.js");

@@ -1,9 +1,9 @@
-// Module ID: 7995
-// Function ID: 7996
+// Module ID: 8433
+// Function ID: 8434
 // Name: GuildSettingsStore
-// Dependencies: [4777, 7759, 4766, 4780, 7266, 1405, 4784, 1386, 1071, 7996, 7997, 11, 7998, 1284, 572, 8002, 4776, 8003, 2168, 8004, 504, 12, 510, 2]
+// Dependencies: [4781, 8401, 4770, 4784, 7688, 1405, 4788, 1386, 1071, 8434, 8435, 11, 8436, 1284, 572, 8439, 4780, 8440, 2168, 8441, 504, 12, 510, 2]
 
-// Module 7995 (GuildSettingsStore)
+// Module 8433 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,22 +11,22 @@ import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import ChannelRecord from "ChannelRecord" /* 4766 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
-import PlainRecord from "PlainRecord" /* 4777 */;
-import GuildRecord from "GuildRecord" /* 4780 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 7996 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 7998 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8002 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8003 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8004 */;
-import GuildProfileStore from "GuildProfileStore" /* 7759 */;
-import InviteRecord from "InviteRecord" /* 7266 */;
+import ChannelRecord from "ChannelRecord" /* 4770 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4780 */;
+import PlainRecord from "PlainRecord" /* 4781 */;
+import GuildRecord from "GuildRecord" /* 4784 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8434 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8436 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8439 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8440 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8441 */;
+import GuildProfileStore from "GuildProfileStore" /* 8401 */;
+import InviteRecord from "InviteRecord" /* 7688 */;
 import UserRecord from "UserRecord" /* 1405 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 7997 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8435 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12, closure_56, closure_9, defaultGuildSettingsSection, map;

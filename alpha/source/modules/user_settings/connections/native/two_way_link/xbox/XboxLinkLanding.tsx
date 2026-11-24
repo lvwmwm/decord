@@ -1,17 +1,17 @@
-// Module ID: 7033
-// Function ID: 7034
+// Module ID: 7620
+// Function ID: 7621
 // Name: XboxLinkLanding
-// Dependencies: [19, 7028, 1071, 21, 4913, 1112, 7034, 7036, 7038, 7040, 1500, 2187, 7042, 7043, 2]
+// Dependencies: [19, 7617, 1071, 21, 4917, 1112, 7041, 7621, 7029, 7623, 1500, 2187, 7625, 7626, 2]
 // Exports: default
 
-// Module 7033 (XboxLinkLanding)
+// Module 7620 (XboxLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 7028 */;
-import _modDef7042 from "module_7042" /* 7042 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 7617 */;
+import _modDef7625 from "module_7625" /* 7625 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -56,10 +56,10 @@ export default function XboxLinkLanding() {
     navigation.push(XboxLinkModalScenes.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef7042 };
+    const obj = { uri: _modDef7625 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(7043).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(7626).TwoWayLinkLanding;
   let intl2 = navigation(1112).intl;
   let intl3 = navigation(1112).intl;
   return <TwoWayLinkLanding platformType={constants2.XBOX} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1112).t.m8aahn)} headerReconnect={intl3.string(navigation(1112).t.z3rAhq)} body={formatResult} onNext={callback} valueProps={memo} />;

@@ -1,15 +1,15 @@
-// Module ID: 13712
-// Function ID: 13713
+// Module ID: 13622
+// Function ID: 13623
 // Name: VoicePanelDockScrim
-// Dependencies: [19, 17, 11768, 21, 575, 11767, 5477, 5083, 13125, 2]
+// Dependencies: [19, 17, 11658, 21, 575, 11657, 5481, 5087, 13043, 2]
 
-// Module 13712 (VoicePanelDockScrim)
+// Module 13622 (VoicePanelDockScrim)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5083 */;
-import useToken from "useToken" /* 5477 */;
-import VoicePanelDockLayout from "VoicePanelDockLayout" /* 11767 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5087 */;
+import useToken from "useToken" /* 5481 */;
+import VoicePanelDockLayout from "VoicePanelDockLayout" /* 11657 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11658 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let StyleSheet;
 let c3;
 let tmp3;
-const ChatInputScrimGradient2 = tmp3(13125);
+const ChatInputScrimGradient2 = tmp3(13043);
 ({ StyleSheet, View: c3 } = react_native);
 let closure_4 = VoicePanelDockConstants.getVoicePanelDockButtonsTop;
 const jsx = Fragment.jsx;

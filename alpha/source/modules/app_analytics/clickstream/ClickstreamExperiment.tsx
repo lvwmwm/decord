@@ -1,10 +1,10 @@
-// Module ID: 8260
-// Function ID: 8261
+// Module ID: 8035
+// Function ID: 8036
 // Name: ClickstreamExperiment
 // Dependencies: [1450, 2]
 // Exports: clickstreamExperimentEnabled
 
-// Module 8260 (ClickstreamExperiment)
+// Module 8035 (ClickstreamExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 14773
-// Function ID: 14774
+// Module ID: 14603
+// Function ID: 14604
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 8331, 21, 4913, 575, 671, 5504, 14774, 13377, 13402, 1112, 2856, 14775, 2]
+// Dependencies: [19, 17, 8155, 21, 4917, 575, 671, 5508, 14604, 13300, 13325, 1112, 2856, 14605, 2]
 // Exports: default
 
-// Module 14773 (GuildPowerupsMarketingHeader)
+// Module 14603 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13377 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13402 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14774 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14775 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13300 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13325 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14604 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14605 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 8331 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 8155 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let alphaResult;
@@ -64,7 +64,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
     }
     if (0 !== num) {
       ({ style: tmp.text, variant: "body-sm/semibold", children: format(v7lwpzR, obj7) });
-      const Text = guild(5504).Text;
+      const Text = guild(5508).Text;
       const intl = guild(1112).intl;
       format = intl.format;
       let str2 = "";

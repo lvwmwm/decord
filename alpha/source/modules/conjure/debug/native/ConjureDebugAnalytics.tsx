@@ -1,15 +1,15 @@
-// Module ID: 18682
-// Function ID: 18683
+// Module ID: 18723
+// Function ID: 18724
 // Name: ConjureDebugAnalytics
-// Dependencies: [19, 21, 18680, 1112, 4190, 18677, 18678, 2]
+// Dependencies: [19, 21, 18721, 1112, 4192, 18718, 18719, 2]
 // Exports: ConjureDebugAgentAnalyticsRows, ConjureDebugWorkerAnalyticsSection
 
-// Module 18682 (ConjureDebugAnalytics)
+// Module 18723 (ConjureDebugAnalytics)
 import intl7 from "intl" /* 1112 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 18677 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 18678 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18680 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 18718 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 18719 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18721 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export function ConjureDebugAgentAnalyticsRows(analytics) {
   let obj8;
   analytics = analytics.analytics;
   if ("ok" !== analytics.status) {
-    const obj2 = { label: intl4.string(_modDef4190.SXP7pD), value: intl5.string(_modDef4190.E5hKVi), hint: obj5.analyticsUnavailableReason(analytics) };
+    const obj2 = { label: intl4.string(_modDef4192.SXP7pD), value: intl5.string(_modDef4192.E5hKVi), hint: obj5.analyticsUnavailableReason(analytics) };
     const DebugStatRow3 = ConjureDebugPrimitives.DebugStatRow;
     intl4 = intl7.intl;
     intl5 = intl7.intl;
@@ -44,7 +44,7 @@ export function ConjureDebugAgentAnalyticsRows(analytics) {
       found = objects.find((role) => "agent" === role.role);
     }
     if (null == found) {
-      const obj3 = { label: intl2.string(_modDef4190.SXP7pD), value: "\u2014", hint: intl3.string(_modDef4190.AGvoMJ) };
+      const obj3 = { label: intl2.string(_modDef4192.SXP7pD), value: "\u2014", hint: intl3.string(_modDef4192.AGvoMJ) };
       const DebugStatRow2 = ConjureDebugPrimitives.DebugStatRow;
       intl2 = intl7.intl;
       intl3 = intl7.intl;
@@ -52,7 +52,7 @@ export function ConjureDebugAgentAnalyticsRows(analytics) {
     } else {
       const obj6 = ConjureDebugLabels;
       const analyticsMemoryValueResult = obj6.analyticsMemoryValue(found);
-      const obj4 = { label: intl6.string(_modDef4190["H/X+FI"]), value: obj8.formatMs(found.cpu_ms) };
+      const obj4 = { label: intl6.string(_modDef4192["H/X+FI"]), value: obj8.formatMs(found.cpu_ms) };
       const DebugStatRow4 = ConjureDebugPrimitives.DebugStatRow;
       intl6 = intl7.intl;
       obj8 = ConjureDebugFormat;
@@ -63,8 +63,8 @@ export function ConjureDebugAgentAnalyticsRows(analytics) {
       const tmp17 = _false;
       const tmp18 = importDefault;
       if (null != analyticsMemoryValueResult) {
-        const obj = { label: intl.string(tmp18(4190).lmFmMO), value: analyticsMemoryValueResult };
-        const DebugStatRow = tmp12(18680).DebugStatRow;
+        const obj = { label: intl.string(tmp18(4192).lmFmMO), value: analyticsMemoryValueResult };
+        const DebugStatRow = tmp12(18721).DebugStatRow;
         intl = tmp12(1112).intl;
         tmp17Result = tmp17(DebugStatRow, obj);
       }
@@ -82,7 +82,7 @@ export function ConjureDebugWorkerAnalyticsSection(analytics) {
   let tmpResult;
   analytics = analytics.analytics;
   let intl = intl7.intl;
-  const stringResult = intl.string(_modDef4190.LoZwWn);
+  const stringResult = intl.string(_modDef4192.LoZwWn);
   if ("ok" !== analytics.status) {
     let obj2 = { title: stringResult, children: _false(DebugNote2, obj3) };
     const DebugSection2 = ConjureDebugPrimitives.DebugSection;
@@ -105,7 +105,7 @@ export function ConjureDebugWorkerAnalyticsSection(analytics) {
     let obj = { title: stringResult, children: mapped1 };
     const DebugSection = ConjureDebugPrimitives.DebugSection;
     if (0 === found.length) {
-      let obj4 = { children: intl2.string(_modDef4190.AGvoMJ) };
+      let obj4 = { children: intl2.string(_modDef4192.AGvoMJ) };
       const DebugNote = ConjureDebugPrimitives.DebugNote;
       intl2 = intl7.intl;
       mapped1 = tmp5(DebugNote, obj4);
@@ -122,7 +122,7 @@ export function ConjureDebugWorkerAnalyticsSection(analytics) {
         const intl = intl7.intl;
         formatToPlainString = intl.formatToPlainString;
         obj2 = { cpu: obj3.formatMs(object.cpu_ms) };
-        prop = _modDef4190["w/2voO"];
+        prop = _modDef4192["w/2voO"];
         obj3 = ConjureDebugFormat;
         const obj4 = ConjureDebugLabels;
         analyticsMemoryValueResult = obj4.analyticsMemoryValue(object);

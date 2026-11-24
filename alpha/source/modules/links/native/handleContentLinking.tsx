@@ -1,12 +1,12 @@
-// Module ID: 10417
-// Function ID: 10418
+// Module ID: 11920
+// Function ID: 11921
 // Name: handleContentLinking
-// Dependencies: [5, 7263, 1071, 6429, 6867, 1098, 10418, 10423, 2]
+// Dependencies: [5, 5721, 1071, 6004, 7478, 1098, 11648, 11917, 2]
 // Exports: default
 
-// Module 10417 (handleContentLinking)
+// Module 11920 (handleContentLinking)
 import Constants from "Constants" /* 1071 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7263 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5721 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

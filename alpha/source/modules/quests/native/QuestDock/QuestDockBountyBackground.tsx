@@ -1,19 +1,19 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16635
+// Function ID: 16636
 // Name: QuestDockBountyBackground
-// Dependencies: [19, 17, 16473, 6558, 16475, 21, 4913, 563, 16591, 16593, 16508, 16343, 9971, 9972, 5477, 575, 671, 16590, 2]
+// Dependencies: [19, 17, 16506, 6745, 16508, 21, 4917, 563, 16625, 16627, 16542, 16376, 9761, 9762, 5481, 575, 671, 16624, 2]
 
-// Module 16601 (QuestDockBountyBackground)
+// Module 16635 (QuestDockBountyBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import QuestConstants from "QuestConstants" /* 6558 */;
-import AssetUtils from "AssetUtils" /* 9972 */;
-import QuestDockConstants from "QuestDockConstants" /* 16475 */;
+import QuestConstants from "QuestConstants" /* 6745 */;
+import AssetUtils from "AssetUtils" /* 9762 */;
+import QuestDockConstants from "QuestDockConstants" /* 16508 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16473 */;
-import createStyles from "createStyles" /* 4913 */;
+import QuestDockStore from "QuestDockStore" /* 16506 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,8 +26,8 @@ function QuestDockBackgroundSmokeArt() {
   const tmp = closure_9();
   const obj = width(563);
   const stateFromStores = obj.useStateFromStores(items, () => QuestDockStore.prevRestingQuestDockMode);
-  const tmp7 = height(16591)(QuestDockMode.EXPANDED);
-  const obj2 = width(16593);
+  const tmp7 = height(16625)(QuestDockMode.EXPANDED);
+  const obj2 = width(16627);
   size = obj2.useSmokeArtSize();
   const tmp2 = width;
   width = size.width;
@@ -38,8 +38,8 @@ function QuestDockBackgroundSmokeArt() {
   const tmp6 = QuestDockMode;
   if (tmp7) {
     const items2 = [tmp.smokeArtWrapper, tmp8];
-    ({ surface: tmp2(16593).QuestDockBountySmokeSurface.EXPANDED, paused: stateFromStores !== tmp6.EXPANDED });
-    tmp5(16593);
+    ({ surface: tmp2(16627).QuestDockBountySmokeSurface.EXPANDED, paused: stateFromStores !== tmp6.EXPANDED });
+    tmp5(16627);
     tmp9 = <View style={items2}>{null}</View>;
   }
   return tmp9;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function QuestDockBountyBackground(previewImageUrl
     const mixResult = obj.mix(token, nativeDefault.unsafe_rawColors.BLACK, 0.77, "rgb");
     return mixResult.hex();
   }, items1);
-  token(16590);
+  token(16624);
   return <tmp6 imageUrl={previewImageUrl} videoUrl={pickBountyPreviewUrlResult} videoMimetype={memo} collapsedMediaMode={require("QuestDockVideoBackground").QuestDockBackgroundCollapsedMediaMode.HIDDEN} gradientBaseColor={memo1} backdropColor={memo1} expandedHeight={expandedHeight} foregroundContent={null} />;
 });
 let size = size_mod;

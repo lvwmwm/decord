@@ -1,9 +1,9 @@
-// Module ID: 8547
-// Function ID: 8548
+// Module ID: 9456
+// Function ID: 9457
 // Name: EntitlementFeatureNames
 // Dependencies: [2]
 
-// Module 8547 (EntitlementFeatureNames)
+// Module 9456 (EntitlementFeatureNames)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/EntitlementFeatureNames.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10068
-// Function ID: 10069
-// Dependencies: [6675, 2]
+// Module ID: 8817
+// Function ID: 8818
+// Dependencies: [6860, 2]
 // Exports: default
 
-// Module 10068
-import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6675 */;
+// Module 8817
+import AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6860 */;
 import size from "module_2" /* 2 */;
 
 let _window;

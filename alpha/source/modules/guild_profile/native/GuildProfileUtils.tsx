@@ -1,15 +1,15 @@
-// Module ID: 9750
-// Function ID: 9751
+// Module ID: 8589
+// Function ID: 8590
 // Name: guild_profile/GuildProfileUtils
-// Dependencies: [32, 4914, 1412, 8128, 8085, 2]
+// Dependencies: [32, 4918, 1412, 6243, 6195, 2]
 // Exports: getProfilePrimaryColor, useProfilePrimaryColor
 
-// Module 9750 (guild_profile/GuildProfileUtils)
+// Module 8589 (guild_profile/GuildProfileUtils)
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import _modDef8085 from "module_8085" /* 8085 */;
-import useAvatarColor from "useAvatarColor" /* 8128 */;
+import _modDef6195 from "module_6195" /* 6195 */;
+import useAvatarColor from "useAvatarColor" /* 6243 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import size from "module_2" /* 2 */;
 
 const useAvatarColorDefault = useAvatarColor;
@@ -68,7 +68,7 @@ export function getProfilePrimaryColor(guildProfileFromInvite) {
         [tmp4, tmp5, tmp6] = first;
         const obj = { r: tmp4, g: tmp5, b: tmp6 };
         _slicedToArray(first, 3);
-        const obj2 = _modDef8085(obj);
+        const obj2 = _modDef6195(obj);
         let num2 = 1;
         ({ h, s, l } = obj2.toHsl());
         obj2.toHsl();
@@ -76,7 +76,7 @@ export function getProfilePrimaryColor(guildProfileFromInvite) {
           num2 = AccessibilityStore.saturation;
         }
         const obj9 = { h, s: s * num2, l };
-        const obj4 = _modDef8085(obj9);
+        const obj4 = _modDef6195(obj9);
         return obj4.toHexString();
       } else {
         return null;

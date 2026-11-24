@@ -1,15 +1,15 @@
-// Module ID: 20016
-// Function ID: 20017
+// Module ID: 20059
+// Function ID: 20060
 // Name: GuildRoleSubscriptionsActionCreatorExtras
-// Dependencies: [20007, 16610, 16630, 6429, 20017, 2119, 20048, 2]
+// Dependencies: [20050, 16644, 16664, 6004, 20060, 2119, 20091, 2]
 // Exports: openGroupSetupModal, openTierCreationModal
 
-// Module 20016 (GuildRoleSubscriptionsActionCreatorExtras)
+// Module 20059 (GuildRoleSubscriptionsActionCreatorExtras)
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16630 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20007 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16610 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16664 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20050 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16644 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -27,7 +27,7 @@ export function openTierCreationModal(arg0) {
   const pushLazy = ModalActionCreatorsDefault.pushLazy;
   const obj2 = { editStateId: NEW_LISTING_EDIT_STATE_ID };
   ModalActionCreatorsDefault;
-  const tmp4 = asyncRequire(20017, dependencyMap.paths);
+  const tmp4 = asyncRequire(20060, dependencyMap.paths);
   const merged = Object.assign(arg0);
   pushLazy(tmp4, obj2, hasOwnProperty);
 }
@@ -37,5 +37,5 @@ export function openGroupSetupModal(guildId) {
   obj.clearEditState(NEW_LISTING_EDIT_STATE_ID);
   const obj2 = ModalActionCreatorsDefault;
   const obj3 = { guildId, editStateId: NEW_LISTING_EDIT_STATE_ID };
-  obj2.pushLazy(asyncRequire(20048, dependencyMap.paths), obj3, metroRequire);
+  obj2.pushLazy(asyncRequire(20091, dependencyMap.paths), obj3, metroRequire);
 }

@@ -1,13 +1,13 @@
-// Module ID: 19011
-// Function ID: 19012
+// Module ID: 19053
+// Function ID: 19054
 // Name: MessageRequestEmpty
-// Dependencies: [19, 21, 1186, 19012, 2]
+// Dependencies: [19, 21, 1186, 19054, 2]
 // Exports: default
 
-// Module 19011 (MessageRequestEmpty)
+// Module 19053 (MessageRequestEmpty)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
-import Pending from "Pending" /* 19012 */;
+import Pending from "Pending" /* 19054 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 19007
-// Function ID: 19008
+// Module ID: 19049
+// Function ID: 19050
 // Name: MessageRequestStoreUtils
 // Dependencies: [11, 2]
 // Exports: sortChannelIds
 
-// Module 19007 (MessageRequestStoreUtils)
+// Module 19049 (MessageRequestStoreUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 

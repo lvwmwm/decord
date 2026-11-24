@@ -1,16 +1,16 @@
-// Module ID: 6361
-// Function ID: 6362
+// Module ID: 5681
+// Function ID: 5682
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 2176, 1071, 1284, 6351, 572, 1112, 4726, 1255, 6349, 6362, 6363, 2]
+// Dependencies: [5, 2176, 1071, 1284, 5668, 572, 1112, 4730, 1255, 5666, 5682, 5683, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 6361 (BillingSharedActionCreators)
+// Module 5681 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import BillingUtils from "BillingUtils" /* 4726 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6349 */;
+import BillingUtils from "BillingUtils" /* 4730 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5666 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PaymentSourceRecord from "PaymentSourceRecord" /* 2176 */;
 import Constants from "Constants" /* 1071 */;
@@ -331,12 +331,12 @@ export function dispatchConfirmationError(error, arg1) {
     }
     const self5 = this;
     const self6 = this;
-    billingError = new tmp5(6349).BillingError(combined);
+    billingError = new tmp5(5666).BillingError(combined);
   } else {
     billingError = error;
     if (!(error instanceof V6OrEarlierAPIError.BillingError)) {
       let tmp8 = error;
-      const BillingError = tmp5(6349).BillingError;
+      const BillingError = tmp5(5666).BillingError;
       if (typeof error === "string") {
         tmp8 = defaultErrorMessage;
       }
@@ -348,7 +348,7 @@ export function dispatchConfirmationError(error, arg1) {
   const obj4 = DispatcherDefault;
   obj4.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError });
   const obj6 = { site: "payment_method_confirmation", selectedElementType: tmp4, tags, extra };
-  const ClientBillingError = tmp5(6362).ClientBillingError;
+  const ClientBillingError = tmp5(5682).ClientBillingError;
   if (tmp3) {
     const obj9 = { failure_message: billingError.message };
     reportResult = ClientBillingError.report(obj6, error, obj9);

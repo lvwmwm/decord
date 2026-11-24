@@ -1,23 +1,23 @@
-// Module ID: 13897
-// Function ID: 13898
+// Module ID: 11408
+// Function ID: 11409
 // Name: ConjureAppChannelSheetHeader
-// Dependencies: [19, 21, 4913, 5929, 575, 12291, 5504, 12294, 2]
+// Dependencies: [19, 21, 4917, 5989, 575, 11409, 5508, 11415, 2]
 // Exports: default
 
-// Module 13897 (ConjureAppChannelSheetHeader)
+// Module 11408 (ConjureAppChannelSheetHeader)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import Stack_Stack from "Stack/Stack" /* 5929 */;
-import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 12291 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import Stack_Stack from "Stack/Stack" /* 5989 */;
+import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 11409 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp4;
-const ConjureCreatorBylineDefault = tmp4(12294);
+const ConjureCreatorBylineDefault = tmp4(11415);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ details: { flex: 1 } });
 const result = size.fileFinishedImporting("modules/conjure/app_hover_card/native/ConjureAppChannelSheetHeader.tsx");

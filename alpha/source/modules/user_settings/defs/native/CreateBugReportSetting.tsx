@@ -1,18 +1,18 @@
-// Module ID: 17201
-// Function ID: 17202
+// Module ID: 17239
+// Function ID: 17240
 // Name: CreateBugReportSetting
-// Dependencies: [1360, 1361, 11209, 504, 1378, 11937, 1112, 16981, 17188, 2]
+// Dependencies: [1360, 1361, 10587, 504, 1378, 11815, 1112, 17015, 17226, 2]
 
-// Module 17201 (CreateBugReportSetting)
+// Module 17239 (CreateBugReportSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1361 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import BugReportManagerDefault from "BugReportManager" /* 11209 */;
-import WrenchIcon from "WrenchIcon" /* 16981 */;
-import BugReporterSetting from "BugReporterSetting" /* 17188 */;
+import BugReportManagerDefault from "BugReportManager" /* 10587 */;
+import WrenchIcon from "WrenchIcon" /* 17015 */;
+import BugReporterSetting from "BugReporterSetting" /* 17226 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1360 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

@@ -1,12 +1,12 @@
-// Module ID: 18160
-// Function ID: 18161
+// Module ID: 18199
+// Function ID: 18200
 // Name: CardHeightMeasurer
-// Dependencies: [19, 17, 21, 18094, 10043, 2]
+// Dependencies: [19, 17, 21, 18133, 8782, 2]
 
-// Module 18160 (CardHeightMeasurer)
+// Module 18199 (CardHeightMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8782 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const memoResult = react.memo(function CardHeightMeasurer(itemId) {
   itemId = itemId.itemId;
   const children = itemId.children;
   const items = [itemId];
-  const width = react.useContext(itemId(18094).ICYMIContext).width;
+  const width = react.useContext(itemId(18133).ICYMIContext).width;
   return <View onLayout={react.useCallback((nativeEvent) => {
     const height = nativeEvent.nativeEvent.layout.height;
     const obj = ICYMIActionCreatorsDefault;

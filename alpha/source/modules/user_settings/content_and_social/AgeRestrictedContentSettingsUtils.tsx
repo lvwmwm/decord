@@ -1,15 +1,15 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 7444
+// Function ID: 7445
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1386, 4738, 6411, 10443, 5575, 6416, 2]
+// Dependencies: [1386, 4742, 6699, 7445, 5579, 6704, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 10442 (AgeRestrictedContentSettingsUtils)
-import UserSettings from "UserSettings" /* 4738 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6416 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 10443 */;
+// Module 7444 (AgeRestrictedContentSettingsUtils)
+import UserSettings from "UserSettings" /* 4742 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5579 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6699 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6704 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7445 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

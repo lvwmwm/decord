@@ -1,18 +1,18 @@
-// Module ID: 12884
-// Function ID: 12885
+// Module ID: 12803
+// Function ID: 12804
 // Name: ForumPostGridFooter
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 12830, 12885, 12886, 11882, 2]
+// Dependencies: [19, 17, 1071, 21, 4917, 575, 12749, 12804, 12805, 11755, 2]
 // Exports: default
 
-// Module 12884 (ForumPostGridFooter)
+// Module 12803 (ForumPostGridFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 12830 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12885 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 12749 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12804 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -21,8 +21,8 @@ let metroRequire;
 let size;
 let tmp2;
 let tmp8;
-const ForumPostReactions = tmp2(11882);
-const ForumPostTypingUsersDefault = tmp8(12886);
+const ForumPostReactions = tmp2(11755);
+const ForumPostTypingUsersDefault = tmp8(12805);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);

@@ -1,14 +1,14 @@
-// Module ID: 8190
-// Function ID: 8191
+// Module ID: 14678
+// Function ID: 14679
 // Name: UserProfileFixedBackground
-// Dependencies: [32, 19, 17, 21, 4974, 8191, 8192, 5468, 2]
+// Dependencies: [32, 19, 17, 21, 4978, 9348, 9385, 5472, 2]
 
-// Module 8190 (UserProfileFixedBackground)
+// Module 14678 (UserProfileFixedBackground)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 4974 */;
-import LinearGradientDefault from "LinearGradient" /* 5468 */;
-import useUserProfileColors from "useUserProfileColors" /* 8191 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8192 */;
+import native from "native" /* 4978 */;
+import LinearGradientDefault from "LinearGradient" /* 5472 */;
+import useUserProfileColors from "useUserProfileColors" /* 9348 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 9385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,21 +1,21 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9265
+// Function ID: 9266
 // Name: PremiumMarketingButtonActions
-// Dependencies: [9143, 1388, 1071, 9152, 9407, 9110, 8170, 9409, 9465, 7539, 8074, 8194, 2]
+// Dependencies: [9021, 1388, 1071, 9030, 9266, 8975, 8972, 9268, 10968, 6254, 6184, 7968, 2]
 // Exports: getButtonActionHandler
 
-// Module 9406 (PremiumMarketingButtonActions)
+// Module 9265 (PremiumMarketingButtonActions)
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
-import ProductIds from "ProductIds" /* 8170 */;
-import openUserSettings from "openUserSettings" /* 8194 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9110 */;
-import cta_button from "cta_button" /* 9152 */;
-import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 9407 */;
-import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 9409 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 9465 */;
-import PromotionsStore from "PromotionsStore" /* 9143 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6184 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
+import openUserSettings from "openUserSettings" /* 7968 */;
+import premium_ProductIds from "premium/ProductIds" /* 8972 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 8975 */;
+import cta_button from "cta_button" /* 9030 */;
+import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 9266 */;
+import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 9268 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10968 */;
+import PromotionsStore from "PromotionsStore" /* 9021 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -121,7 +121,7 @@ export function getButtonActionHandler(giftModalDestination) {
             const obj = { productId, isSuccess };
             tmp(obj);
           }
-          const tmp5 = productId === ProductIds.ProductIds.PREMIUM_TIER_2_MONTHLY || productId === ProductIds.ProductIds.PREMIUM_TIER_2_YEARLY;
+          const tmp5 = productId === premium_ProductIds.ProductIds.PREMIUM_TIER_2_MONTHLY || productId === premium_ProductIds.ProductIds.PREMIUM_TIER_2_YEARLY;
           if (isSuccess) {
             isSuccess = tmp5;
           }

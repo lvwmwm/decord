@@ -1,16 +1,16 @@
-// Module ID: 19032
-// Function ID: 19033
+// Module ID: 19074
+// Function ID: 19075
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 2188, 8712, 21, 1112, 1254, 16896, 2173, 16144, 504, 9947, 17182, 17180, 17179, 11937, 15986, 2]
+// Dependencies: [19, 2188, 9414, 21, 1112, 1254, 16930, 2173, 16177, 504, 14086, 11815, 16019, 2]
 // Exports: default
 
-// Module 19032 (SettingsOverviewScreen)
+// Module 19074 (SettingsOverviewScreen)
 import Fragment from "Fragment" /* 21 */;
-import intl9 from "intl" /* 1112 */;
+import intl8 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16896 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import size from "module_2" /* 2 */;
@@ -21,34 +21,21 @@ const result = size.fileFinishedImporting("modules/user_settings/overview/native
 
 export default function SettingsOverviewScreen() {
   let hasPremiumSubscriptionToDisplay;
-  let locale;
-  let mapleSyrup1Enabled;
-  const tmp = hasPremiumSubscriptionToDisplay;
-  let obj = hasPremiumSubscriptionToDisplay(mapleSyrup1Enabled[7]);
+  let mapleSyrup3Enabled;
+  let staffOrDeveloperSettingPredicate;
+  let obj = hasPremiumSubscriptionToDisplay(staffOrDeveloperSettingPredicate[7]);
   hasPremiumSubscriptionToDisplay = obj.useHasPremiumSubscriptionToDisplay();
-  let obj2 = hasPremiumSubscriptionToDisplay(mapleSyrup1Enabled[8]);
-  const staffOrDeveloperSettingPredicate = obj2.useStaffOrDeveloperSettingPredicate();
-  let obj3 = hasPremiumSubscriptionToDisplay(mapleSyrup1Enabled[9]);
-  let items = [locale];
-  const stateFromStores = obj3.useStateFromStores(items, () => locale.locale);
-  let obj4 = hasPremiumSubscriptionToDisplay(mapleSyrup1Enabled[10]);
-  const tmp2 = mapleSyrup1Enabled;
-  mapleSyrup1Enabled = obj4.useMapleSyrup1Enabled("SettingsOverviewScreen");
-  let obj5 = hasPremiumSubscriptionToDisplay(mapleSyrup1Enabled[10]);
-  const mapleSyrup3Enabled = obj5.useMapleSyrup3Enabled("SettingsOverviewScreen");
-  let obj6 = hasPremiumSubscriptionToDisplay(mapleSyrup1Enabled[11]);
-  const isPhoenixInstalled = obj6.useIsPhoenixInstalled();
-  let obj7 = staffOrDeveloperSettingPredicate(mapleSyrup1Enabled[12]);
-  const tmp9 = null != obj7.useConfig({ location: "SettingsOverviewScreen" }, { autoTrackExposure: false }).forcedClient;
-  staffOrDeveloperSettingPredicate(mapleSyrup1Enabled[13]);
-  const tmp11 = !staffOrDeveloperSettingPredicate && isPhoenixInstalled && !tmp9;
-  let tmp13 = !tmp9;
-  if (tmp13) {
-    tmp13 = staffOrDeveloperSettingPredicate || tmp12;
-  }
-  locale = tmp13;
-  let items1 = [hasPremiumSubscriptionToDisplay, staffOrDeveloperSettingPredicate, stateFromStores, mapleSyrup1Enabled, mapleSyrup3Enabled, tmp13];
-  const node = mapleSyrup3Enabled.useMemo(() => {
+  let obj2 = hasPremiumSubscriptionToDisplay(staffOrDeveloperSettingPredicate[8]);
+  staffOrDeveloperSettingPredicate = obj2.useStaffOrDeveloperSettingPredicate();
+  let obj3 = hasPremiumSubscriptionToDisplay(staffOrDeveloperSettingPredicate[9]);
+  let items = [mapleSyrup3Enabled];
+  const stateFromStores = obj3.useStateFromStores(items, () => mapleSyrup3Enabled.locale);
+  let obj4 = hasPremiumSubscriptionToDisplay(staffOrDeveloperSettingPredicate[10]);
+  const mapleSyrup1Enabled = obj4.useMapleSyrup1Enabled("SettingsOverviewScreen");
+  let obj5 = hasPremiumSubscriptionToDisplay(staffOrDeveloperSettingPredicate[10]);
+  mapleSyrup3Enabled = obj5.useMapleSyrup3Enabled("SettingsOverviewScreen");
+  let items1 = [hasPremiumSubscriptionToDisplay, staffOrDeveloperSettingPredicate, stateFromStores, mapleSyrup1Enabled, mapleSyrup3Enabled];
+  const node = mapleSyrup1Enabled.useMemo(() => {
     let intl;
     let intl2;
     let intl3;
@@ -56,9 +43,7 @@ export default function SettingsOverviewScreen() {
     let intl5;
     let intl6;
     let intl7;
-    let intl8;
     let items;
-    let items11;
     let items2;
     let items3;
     let items4;
@@ -67,22 +52,21 @@ export default function SettingsOverviewScreen() {
     let items7;
     let items8;
     let items9;
-    const obj = { label: intl.string(intl9.t.C6COaT), settings: items.filter(GlobalUtils.isNotNullish) };
+    const obj = { label: intl.string(intl8.t.C6COaT), settings: items.filter(GlobalUtils.isNotNullish) };
     const createList = SettingBuilders.createList;
     SettingBuilders;
-    intl = intl9.intl;
+    intl = intl8.intl;
     let PREMIUM = null;
     const tmp4 = hasPremiumSubscriptionToDisplay;
     const tmp5 = staffOrDeveloperSettingPredicate;
     const tmp7 = mapleSyrup3Enabled;
-    const tmp8 = locale;
     if (!hasPremiumSubscriptionToDisplay) {
       PREMIUM = MobileUserSettings.PREMIUM;
     }
     items = [PREMIUM, , , , , , , , , ];
     ({ ACCOUNT: arr[1], CONTENT_AND_SOCIAL: arr[2], DATA_AND_PRIVACY: arr[3], SPONSORED_CONTENT_PREFERENCES: arr[4], FAMILY_CENTER: arr[5], DEVICES: arr[6], CONNECTIONS: arr[7], CLIPS: arr[8], SCAN_QR_CODE: arr[9] } = MobileUserSettings);
-    const items1 = [obj, , , , , , , , , , ];
-    const obj2 = { label: intl2.string(intl9.t["SuS+RB"]), settings: items2.filter(GlobalUtils.isNotNullish) };
+    const items1 = [obj, , , , , , , , , ];
+    const obj2 = { label: intl2.string(intl8.t["SuS+RB"]), settings: items2.filter(GlobalUtils.isNotNullish) };
     intl2 = tmp(1112).intl;
     items2 = [, , , , , , , , ];
     ({ COLLECTIBLES_SHOP: arr3[0], QUEST_HOME: arr3[1] } = MobileUserSettings);
@@ -90,47 +74,47 @@ export default function SettingsOverviewScreen() {
     if (tmp4) {
       PREMIUM1 = null;
       if (!tmp7) {
-        PREMIUM1 = tmp11.PREMIUM;
+        PREMIUM1 = tmp10.PREMIUM;
       }
     }
     items2[2] = PREMIUM1;
     let prop = null;
     if (!mapleSyrup1Enabled) {
-      prop = tmp11.PREMIUM_MANAGE_SUBSCRIPTIONS;
+      prop = tmp10.PREMIUM_MANAGE_SUBSCRIPTIONS;
     }
     items2[3] = prop;
     ({ PREMIUM_GUILD_BOOSTING: arr3[4], PREMIUM_GIFTING: arr3[5], GUILD_ROLE_SUBSCRIPTIONS: arr3[6], PREMIUM_RESTORE_SUBSCRIPTION: arr3[7] } = MobileUserSettings);
     let prop1 = null;
     if (mapleSyrup1Enabled) {
-      prop1 = tmp11.PREMIUM_MANAGE_SUBSCRIPTIONS;
+      prop1 = tmp10.PREMIUM_MANAGE_SUBSCRIPTIONS;
     }
     items2[8] = prop1;
     items1[1] = obj2;
-    const obj3 = { label: intl3.string(intl9.t.f2n1TP), settings: items3.filter(GlobalUtils.isNotNullish) };
+    const obj3 = { label: intl3.string(intl8.t.f2n1TP), settings: items3.filter(GlobalUtils.isNotNullish) };
     intl3 = tmp(1112).intl;
-    items3 = [, , , , , , , , , , ];
+    items3 = [, , , , , , , , , , , ];
     ({ VOICE: arr4[0], APPEARANCE: arr4[1], ACCESSIBILITY: arr4[2], LANGUAGE: arr4[3], CHAT: arr4[4], TYPING_INDICATOR: arr4[5], WEB_BROWSER: arr4[6], NOTIFICATIONS: arr4[7] } = MobileUserSettings);
     items3[8] = MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN;
-    ({ APP_ICONS: arr4[9], ADVANCED: arr4[10] } = MobileUserSettings);
+    ({ APP_ICONS: arr4[9], PHOENIX: arr4[10], ADVANCED: arr4[11] } = MobileUserSettings);
     items1[2] = obj3;
-    const obj4 = { label: intl4.string(intl9.t["Yl/Riu"]), settings: items4 };
+    const obj4 = { label: intl4.string(intl8.t["Yl/Riu"]), settings: items4 };
     intl4 = tmp(1112).intl;
     items4 = [, , ];
     ({ SUPPORT: arr5[0], UPLOAD_DEBUG_LOGS: arr5[1], ACKNOWLEDGEMENTS: arr5[2] } = MobileUserSettings);
     items1[3] = obj4;
-    const obj5 = { label: intl5.string(intl9.t.LRmNAl), settings: items5 };
+    const obj5 = { label: intl5.string(intl8.t.LRmNAl), settings: items5 };
     intl5 = tmp(1112).intl;
     items5 = [MobileUserSettings.CHANGE_LOG];
     items1[4] = obj5;
     const obj6 = { settings: items6 };
     items6 = [MobileUserSettings.LOGOUT];
     items1[5] = obj6;
-    const obj7 = { label: intl6.string(intl9.t.CbItOL), settings: items7 };
+    const obj7 = { label: intl6.string(intl8.t.CbItOL), settings: items7 };
     intl6 = tmp(1112).intl;
     items7 = [, , , , , , ];
     ({ APP_VERSION: arr8[0], DEVICE_INFO: arr8[1], COPY_CLIENT_INFO: arr8[2], VIEW_DEBUG_LOGS: arr8[3], CACHE_ACTIONS: arr8[4], REACT_COMPILER: arr8[5], UPLOAD_INTL_DATA: arr8[6] } = MobileUserSettings);
     items1[6] = obj7;
-    const obj8 = { label: intl7.string(intl9.t["/tZh0A"]), settings: items8 };
+    const obj8 = { label: intl7.string(intl8.t["/tZh0A"]), settings: items8 };
     intl7 = tmp(1112).intl;
     items8 = [, ];
     ({ BUG_REPORTER: arr9[0], CREATE_BUG_REPORT: arr9[1] } = MobileUserSettings);
@@ -143,21 +127,13 @@ export default function SettingsOverviewScreen() {
     ({ SHOW_DEV_WIDGET: arr11[0], BUILD_OVERRIDES: arr11[1], SHOW_DEV_TOOLS: arr11[2] } = MobileUserSettings);
     let DESIGN_SYSTEMS = null;
     if (!tmp5) {
-      DESIGN_SYSTEMS = tmp11.DESIGN_SYSTEMS;
+      DESIGN_SYSTEMS = tmp10.DESIGN_SYSTEMS;
     }
+    const obj10 = { sections: items1 };
     items10[3] = DESIGN_SYSTEMS;
     items1[9] = { label: "Staff Settings", settings: items10.filter(GlobalUtils.isNotNullish) };
-    const obj11 = { label: intl8.string(intl9.t.H8h6wu), settings: items11.filter(GlobalUtils.isNotNullish) };
     ({ label: "Staff Settings", settings: items10.filter(GlobalUtils.isNotNullish) });
-    intl8 = tmp(1112).intl;
-    let PHOENIX_LAUNCH = null;
-    if (tmp8) {
-      PHOENIX_LAUNCH = tmp11.PHOENIX_LAUNCH;
-    }
-    items11 = [PHOENIX_LAUNCH];
-    const obj12 = { sections: items1 };
-    items1[10] = obj11;
-    return createList(obj12);
+    return createList(obj10);
   }, items1);
-  return jsx(tmp(tmp2[15]).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(staffOrDeveloperSettingPredicate[12]).SearchableSettingsList, { node });
 };

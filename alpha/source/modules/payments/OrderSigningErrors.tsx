@@ -1,13 +1,13 @@
-// Module ID: 6863
-// Function ID: 6864
+// Module ID: 7475
+// Function ID: 7476
 // Name: OrderSigningErrors
-// Dependencies: [6861, 5630, 6351, 2]
+// Dependencies: [7473, 5634, 5668, 2]
 // Exports: getOrderSigningError
 
-// Module 6863 (OrderSigningErrors)
-import PaymentConstants from "PaymentConstants" /* 5630 */;
-import BillingErrorDefault from "BillingError" /* 6351 */;
-import OrderConstants from "OrderConstants" /* 6861 */;
+// Module 7475 (OrderSigningErrors)
+import PaymentConstants from "PaymentConstants" /* 5634 */;
+import BillingErrorDefault from "BillingError" /* 5668 */;
+import OrderConstants from "OrderConstants" /* 7473 */;
 import size from "module_2" /* 2 */;
 
 const ConstraintReasonCode = OrderConstants.ConstraintReasonCode;

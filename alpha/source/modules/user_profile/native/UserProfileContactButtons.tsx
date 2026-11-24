@@ -1,25 +1,25 @@
-// Module ID: 14635
-// Function ID: 14636
+// Module ID: 14903
+// Function ID: 14904
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 4855, 1071, 21, 4913, 575, 5511, 7520, 8135, 14526, 504, 4969, 14636, 5603, 1112, 10247, 7740, 12108, 5127, 6429, 7737, 14638, 7591, 7672, 8612, 14374, 2]
+// Dependencies: [19, 17, 4859, 1071, 21, 4917, 575, 5515, 6253, 6255, 14795, 504, 4973, 14904, 5607, 1112, 13443, 7717, 11998, 5131, 6004, 7714, 14906, 7811, 7011, 8881, 13910, 2]
 // Exports: default
 
-// Module 14635 (UserProfileContactButtons)
+// Module 14903 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7740 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10247 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 12108 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 14374 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7717 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11998 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 13443 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 13910 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,19 +65,19 @@ function FriendRequestButton(user) {
   let userDisplayName;
   ({ hasCustomProfileTheme, ButtonComponent } = user);
   const tmp = trackUserProfileAction;
-  const newestAnalyticsLocation = trackUserProfileAction(7520)().newestAnalyticsLocation;
-  let obj = user(8135);
+  const newestAnalyticsLocation = trackUserProfileAction(6253)().newestAnalyticsLocation;
+  let obj = user(6255);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (_location == null) {
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(14526);
+  const tmp3Result = user(14795);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [userDisplayName];
   const tmp3Result2 = user(504);
   stateFromStores = tmp3Result2.useStateFromStores(items, () => RelationshipStore.getRelationshipType(user.id));
-  const tmpResult = tmp(4969);
+  const tmpResult = tmp(4973);
   userDisplayName = tmpResult.useName(user);
   if (stateFromStores !== RelationshipTypes.FRIEND) {
     if (stateFromStores !== RelationshipTypes.BLOCKED) {
@@ -90,9 +90,9 @@ function FriendRequestButton(user) {
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(14636).UserClockIcon;
+          UserPlusIcon = tmp3(14904).UserClockIcon;
         } else {
-          UserPlusIcon = tmp3(5603).UserPlusIcon;
+          UserPlusIcon = tmp3(5607).UserPlusIcon;
         }
         const intl = tmp3(1112).intl;
         const string = intl.string;

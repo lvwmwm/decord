@@ -1,18 +1,18 @@
-// Module ID: 18396
-// Function ID: 18397
+// Module ID: 18435
+// Function ID: 18436
 // Name: ConjurePublishStatusBadge
-// Dependencies: [19, 17, 21, 4913, 18395, 575, 5477, 1653, 5123, 13484, 2]
+// Dependencies: [19, 17, 21, 4917, 18434, 575, 5481, 1653, 5127, 13409, 2]
 // Exports: conjurePublishBadgeSize, default
 
-// Module 18396 (ConjurePublishStatusBadge)
+// Module 18435 (ConjurePublishStatusBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5123 */;
-import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 18395 */;
+import timing_timing from "timing/timing" /* 5127 */;
+import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 18434 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -23,7 +23,7 @@ function ConjurePublishSpinner() {
   let tmp7;
   let tmp8;
   const tmp = closure_6();
-  let obj = sharedValue(5477);
+  let obj = sharedValue(5481);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BRAND);
   let obj2 = sharedValue(1653);
   sharedValue = obj2.useSharedValue(0);

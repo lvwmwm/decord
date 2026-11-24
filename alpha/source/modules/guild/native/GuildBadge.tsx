@@ -1,17 +1,17 @@
-// Module ID: 7325
-// Function ID: 7326
+// Module ID: 6930
+// Function ID: 6931
 // Name: GuildBadge
-// Dependencies: [19, 1071, 21, 7326, 7327, 7328, 7329, 4776, 1186, 2]
+// Dependencies: [19, 1071, 21, 6931, 6932, 6933, 6934, 4780, 1186, 2]
 
-// Module 7325 (GuildBadge)
+// Module 6930 (GuildBadge)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7326 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7327 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7328 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7329 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4780 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6931 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6932 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6933 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 6934 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

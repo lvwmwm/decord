@@ -1,16 +1,16 @@
-// Module ID: 6519
-// Function ID: 6520
+// Module ID: 6872
+// Function ID: 6873
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 4914, 4784, 21, 4913, 504, 5932, 1112, 5498, 6520, 5504, 2]
+// Dependencies: [19, 17, 4918, 4788, 21, 4917, 504, 5992, 1112, 5502, 6873, 5508, 2]
 // Exports: default
 
-// Module 6519 (MemberVerificationAlertSuccess)
+// Module 6872 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

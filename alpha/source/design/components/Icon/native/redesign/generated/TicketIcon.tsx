@@ -1,14 +1,14 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16646
+// Function ID: 16647
 // Name: TicketIcon
-// Dependencies: [19, 21, 575, 5599, 16613, 2]
+// Dependencies: [19, 21, 575, 5603, 16647, 2]
 // Exports: TicketIcon
 
-// Module 16612 (TicketIcon)
+// Module 16646 (TicketIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 16613 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 16647 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 7566
-// Function ID: 7567
+// Module ID: 7433
+// Function ID: 7434
 // Name: UserProfileCardTitle
-// Dependencies: [19, 17, 21, 4913, 575, 5504, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 5508, 2]
 // Exports: default
 
-// Module 7566 (UserProfileCardTitle)
+// Module 7433 (UserProfileCardTitle)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5504 */;
+import Text_Text from "Text/Text" /* 5508 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c2;

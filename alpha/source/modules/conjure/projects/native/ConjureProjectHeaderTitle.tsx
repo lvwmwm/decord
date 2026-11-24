@@ -1,20 +1,20 @@
-// Module ID: 18394
-// Function ID: 18395
+// Module ID: 18433
+// Function ID: 18434
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 4913, 575, 7030, 1112, 4190, 13787, 5504, 7061, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 6026, 1112, 4192, 14112, 5508, 6033, 2]
 // Exports: default
 
-// Module 18394 (ConjureProjectHeaderTitle)
+// Module 18433 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import Pressables from "Pressables" /* 7030 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13787 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import Pressables from "Pressables" /* 6026 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 14112 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,7 +52,7 @@ export default function ConjureProjectHeaderTitle(arg0) {
   let tmp4 = null;
   const obj = { style: tmp.row, children: items };
   if (null != project) {
-    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef4190.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
+    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef4192.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
     const PressableOpacity = Pressables.PressableOpacity;
     intl = intl3.intl;
     obj3 = { project, size: "list" };
@@ -67,8 +67,8 @@ export default function ConjureProjectHeaderTitle(arg0) {
   const tmp10 = React3;
   if (draft) {
     const obj6 = { type: obj7, variant: "secondary" };
-    obj7 = { text: intl2.string(_modDef4190["2+GiMw"]) };
-    const Badge = tmp11(7061).Badge;
+    obj7 = { text: intl2.string(_modDef4192["2+GiMw"]) };
+    const Badge = tmp11(6033).Badge;
     intl2 = tmp11(1112).intl;
     tmp10Result = tmp10(Badge, obj6);
   }

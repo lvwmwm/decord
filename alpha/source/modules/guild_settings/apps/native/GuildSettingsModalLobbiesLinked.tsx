@@ -1,13 +1,13 @@
-// Module ID: 19827
-// Function ID: 19828
+// Module ID: 19870
+// Function ID: 19871
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4855, 1386, 1071, 21, 1500, 6864, 7348, 7045, 5529, 7636, 5477, 575, 19701, 12, 7709, 5929, 5487, 2]
+// Dependencies: [19, 4859, 1386, 1071, 21, 1500, 7389, 6014, 6018, 5533, 6970, 5481, 575, 19744, 12, 7947, 5989, 5491, 2]
 // Exports: default
 
-// Module 19827 (GuildSettingsModalLobbiesLinked)
+// Module 19870 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -25,13 +25,13 @@ function SyncingToGamesItem(channels) {
   const applicationId = channels.applicationId;
   let obj = channels(1500);
   dependencyMap = obj.useNavigation();
-  let obj2 = channels(6864);
+  let obj2 = channels(7389);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let tmp5Result = null;
   const tmp = channels;
   if (0 !== channels.length) {
     let name;
-    const TableRowGroup = tmp(7348).TableRowGroup;
+    const TableRowGroup = tmp(6014).TableRowGroup;
     const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
@@ -109,7 +109,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   const obj4 = { children: items1 };
   const obj5 = { contentContainerStyle: items, children: closure_6(Stack, obj7) };
   const obj6 = { paddingTop: keys(575).space.PX_16 };
-  const Form = require("module_7709").Form;
+  const Form = require("module_7947").Form;
   items = [obj6, contentContainerStyle];
   obj7 = {
     style: { paddingHorizontal: token },

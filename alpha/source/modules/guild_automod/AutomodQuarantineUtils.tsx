@@ -1,23 +1,23 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12316
+// Function ID: 12317
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 9425, 502, 4825, 4784, 4845, 4946, 1071, 4831, 1081, 563, 4851, 1112, 9426, 9427, 8194, 2]
+// Dependencies: [19, 9296, 502, 4829, 4788, 4849, 4950, 1071, 4835, 1081, 563, 4855, 1112, 9298, 7968, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 12417 (AutomodQuarantineUtils)
+// Module 12316 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import intl4 from "intl" /* 1112 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
-import openUserSettings2 from "openUserSettings" /* 8194 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9427 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4835 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4855 */;
+import openUserSettings2 from "openUserSettings" /* 7968 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9298 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9425 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9296 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -118,8 +118,7 @@ export function useOpenFixQuarantinedProfileModal(guildId) {
     const canResult = null != stateFromStores && PermissionStore.can(constants.CHANGE_NICKNAME, tmp);
     return canResult;
   }, items3);
-  let obj3 = guildId(scrollPosition[13]);
-  const items4 = [stateFromStores1, scrollPosition, analyticsLocations, stateFromStores, obj3.useIsEligibleForUserProfileWYSIWYGEditing("AutomodQuarantineUtils")];
+  const items4 = [stateFromStores1, scrollPosition, analyticsLocations, stateFromStores];
   const items5 = [
     stateFromStores.useCallback(() => {
       if (null != stateFromStores) {

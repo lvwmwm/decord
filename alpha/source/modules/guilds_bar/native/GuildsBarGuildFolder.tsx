@@ -1,31 +1,31 @@
-// Module ID: 17873
-// Function ID: 17874
+// Module ID: 17911
+// Function ID: 17912
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 4914, 6664, 4784, 4946, 6550, 17865, 17870, 17862, 21, 4913, 575, 5477, 504, 7322, 5514, 4910, 1089, 1653, 4974, 1706, 5600, 7639, 17874, 17877, 12293, 17884, 1112, 5129, 6511, 7324, 17867, 17885, 2]
+// Dependencies: [19, 4918, 6850, 4788, 4950, 6038, 17903, 17908, 17900, 21, 4917, 575, 5481, 504, 6926, 5518, 4914, 1089, 1653, 4978, 1706, 5604, 6973, 17912, 17915, 12232, 17922, 1112, 5133, 6865, 6929, 17905, 17923, 2]
 
-// Module 17873 (GuildsBarGuildFolder)
+// Module 17911 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import intl3 from "intl" /* 1112 */;
-import native from "native" /* 4974 */;
-import useToken from "useToken" /* 5477 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6550 */;
-import NativeViewDefault from "NativeView" /* 7324 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7639 */;
-import ListUtils from "ListUtils" /* 12293 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17867 */;
+import native from "native" /* 4978 */;
+import useToken from "useToken" /* 5481 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6038 */;
+import NativeViewDefault from "NativeView" /* 6929 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6973 */;
+import ListUtils from "ListUtils" /* 12232 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17905 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17865 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17870 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17862 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6850 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17903 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17908 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17900 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -42,9 +42,9 @@ let map1;
 let tmp;
 let tmp3;
 let unpackModuleId;
-const ColorUtils = tmp(4910);
-const GuildIcon = tmp(7322);
-const GuildIconDefault = tmp3(7322);
+const ColorUtils = tmp(4914);
+const GuildIcon = tmp(6926);
+const GuildIconDefault = tmp3(6926);
 function MiniGuildIcon(arg0) {
   let guildPreview3;
   let position;

@@ -1,11 +1,11 @@
-// Module ID: 16547
-// Function ID: 16548
+// Module ID: 16581
+// Function ID: 16582
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 6558, 21, 7348, 7045, 9904, 1112, 7040, 2]
+// Dependencies: [19, 6745, 21, 6014, 6018, 13181, 1112, 7623, 2]
 // Exports: default
 
-// Module 16547 (QuestBottomSheetTaskSelect)
-import QuestConstants from "QuestConstants" /* 6558 */;
+// Module 16581 (QuestBottomSheetTaskSelect)
+import QuestConstants from "QuestConstants" /* 6745 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -22,10 +22,10 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   let items;
   onTaskSelect = onTaskSelect.onTaskSelect;
   const obj = { hasIcons: true, children: items };
-  const TableRowGroup = onTaskSelect(7348).TableRowGroup;
+  const TableRowGroup = onTaskSelect(6014).TableRowGroup;
   const obj2 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(9904).ScreenIcon, {}),
+    icon: closure_3(onTaskSelect(13181).ScreenIcon, {}),
     label: intl.string(onTaskSelect(1112).t["QXc01+"]),
     onPress() {
       let tmpResult;
@@ -35,12 +35,12 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
       return tmpResult;
     }
   };
-  const TableRow = onTaskSelect(7045).TableRow;
+  const TableRow = onTaskSelect(6018).TableRow;
   intl = onTaskSelect(1112).intl;
   items = [closure_3(TableRow, obj2), ];
   const obj3 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(7040).GameControllerIcon, {}),
+    icon: closure_3(onTaskSelect(7623).GameControllerIcon, {}),
     label: intl2.string(onTaskSelect(1112).t["8lAfuB"]),
     onPress() {
       let tmpResult;
@@ -50,7 +50,7 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
       return tmpResult;
     }
   };
-  const TableRow2 = onTaskSelect(7045).TableRow;
+  const TableRow2 = onTaskSelect(6018).TableRow;
   intl2 = onTaskSelect(1112).intl;
   items[1] = closure_3(TableRow2, obj3);
   return closure_4(TableRowGroup, obj);

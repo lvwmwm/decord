@@ -1,18 +1,18 @@
-// Module ID: 11676
-// Function ID: 11677
+// Module ID: 11563
+// Function ID: 11564
 // Name: AnimatedCounter
-// Dependencies: [32, 19, 17, 21, 4913, 38, 1653, 4974, 5514, 1706, 5504, 5515, 11677, 2]
+// Dependencies: [32, 19, 17, 21, 4917, 38, 1653, 4978, 5518, 1706, 5508, 5519, 11564, 2]
 
-// Module 11676 (AnimatedCounter)
-import native from "native" /* 4974 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import springPresets from "springPresets" /* 5515 */;
-import AnimatedCounterUtils from "AnimatedCounterUtils" /* 11677 */;
+// Module 11563 (AnimatedCounter)
+import native from "native" /* 4978 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import springPresets from "springPresets" /* 5519 */;
+import AnimatedCounterUtils from "AnimatedCounterUtils" /* 11564 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let _undefined2, set;

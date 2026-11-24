@@ -1,25 +1,25 @@
-// Module ID: 19141
-// Function ID: 19142
+// Module ID: 19183
+// Function ID: 19184
 // Name: VoiceOrStageChannel
-// Dependencies: [5, 19, 17, 6534, 4767, 2188, 6552, 5657, 1071, 1190, 4769, 21, 1112, 6494, 2119, 5947, 7285, 7286, 1098, 6835, 13872, 13843, 4913, 5122, 8571, 4920, 18756, 10640, 17919, 504, 6543, 6537, 12927, 18755, 5529, 19136, 5519, 11135, 19132, 7030, 19138, 19134, 17752, 13145, 19142, 17758, 2]
+// Dependencies: [5, 19, 17, 6686, 4771, 2188, 6041, 5728, 1071, 1190, 4773, 21, 1112, 8308, 2119, 6955, 6999, 6905, 1098, 8459, 11358, 11261, 4917, 5126, 8873, 4924, 18798, 9871, 17957, 504, 6735, 6729, 12846, 18797, 5533, 19178, 5523, 10504, 19174, 6026, 19180, 19176, 17790, 13063, 19184, 17796, 2]
 
-// Module 19141 (VoiceOrStageChannel)
+// Module 19183 (VoiceOrStageChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import FormConstants from "FormConstants" /* 1190 */;
-import ChannelConstants from "ChannelConstants" /* 4769 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11135 */;
-import useStageChannelSpeakerVoiceStates from "useStageChannelSpeakerVoiceStates" /* 17758 */;
+import ChannelConstants from "ChannelConstants" /* 4773 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6729 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 10504 */;
+import useStageChannelSpeakerVoiceStates from "useStageChannelSpeakerVoiceStates" /* 17796 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6534 */;
-import StageInstanceStore from "StageInstanceStore" /* 4767 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6686 */;
+import StageInstanceStore from "StageInstanceStore" /* 4771 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6041 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5728 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -120,21 +120,21 @@ let closure_20 = react.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
   const tmp = subtitle;
   let tmp2 = dependencyMap;
   ({ id, guild_id } = channel);
-  const tmp3 = subtitle(5122)();
-  const tmp4 = subtitle(8571)();
-  obj = channel(4920);
+  const tmp3 = subtitle(5126)();
+  const tmp4 = subtitle(8873)();
+  obj = channel(4924);
   const tmp6 = closure_18(tmp4, obj.isThemeLight(tmp3));
-  const tmp7 = subtitle(18756)();
-  const obj2 = channel(10640);
+  const tmp7 = subtitle(18798)();
+  const obj2 = channel(9871);
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
-  const obj3 = channel(17919);
+  const obj3 = channel(17957);
   const baseChannelUnreadBadgeState = obj3.useBaseChannelUnreadBadgeState(channel, !isConnectedToVoiceChannel);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
   let obj4 = channel(504);
   const items = [UserGuildSettingsStore];
   const stateFromStores = obj4.useStateFromStores(items, () => UserGuildSettingsStore.resolveUnreadSetting(channel));
-  const obj5 = channel(6543);
-  const stageParticipantsCount = obj5.useStageParticipantsCount(channel.id, channel(6537).StageChannelParticipantNamedIndex.AUDIENCE);
+  const obj5 = channel(6735);
+  const stageParticipantsCount = obj5.useStageParticipantsCount(channel.id, channel(6729).StageChannelParticipantNamedIndex.AUDIENCE);
   const sum = stageParticipantsCount + voiceStates.length;
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async (arg0) => {
@@ -225,8 +225,8 @@ let closure_20 = react.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
   };
   items1 = [channel, callback];
   items2 = [channel.id];
-  const arr5 = subtitle(12927)(channel);
-  let obj8 = channel(18755);
+  const arr5 = subtitle(12846)(channel);
+  let obj8 = channel(18797);
   const obj9 = { channel, unread, mentionCount, voiceStates, embeddedActivitiesCount: arr5.length };
   let channelAccessibilityProps = obj8.getChannelAccessibilityProps(obj9);
   const items3 = [StageInstanceStore];
@@ -238,21 +238,21 @@ let closure_20 = react.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
   if (stateFromStores1 != null) {
     topic = stateFromStores1.topic;
   }
-  const tmp17 = tmp(5529)(channel, false);
+  const tmp17 = tmp(5533)(channel, false);
   let arr8 = voiceStates;
   if (channel.isGuildStageVoice()) {
     arr8 = speakerVoiceStates;
   }
   const mapped = arr8.map((user) => user.user);
-  const tmp19 = tmp(19136)();
-  const tmp5Result = channel(5519);
+  const tmp19 = tmp(19178)();
+  const tmp5Result = channel(5523);
   const fontScale = tmp5Result.useFontScale();
   const items5 = [LocaleStore];
   const tmp5Result3 = channel(504);
   const stateFromStores2 = tmp5Result3.useStateFromStores(items5, () => locale.locale);
   const items6 = [isConnectedToVoiceChannel, subtitle];
-  ({ isSubscriptionGated, needSubscriptionToAccess } = tmp(5947)(channel.id));
-  tmp(5947)(channel.id);
+  ({ isSubscriptionGated, needSubscriptionToAccess } = tmp(6955)(channel.id));
+  tmp(6955)(channel.id);
   const effect = obj6.useEffect(() => {
     const tmp2 = null != subtitle && typeof tmp !== "string" && "voice" === tmp.type;
     if (tmp2) {
@@ -262,8 +262,8 @@ let closure_20 = react.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
   }, items6);
   const items7 = [tmp6.pressable, ];
   let num = 0;
-  const tmpResult = tmp(19132);
-  const PressableHighlight = tmp5(7030).PressableHighlight;
+  const tmpResult = tmp(19174);
+  const PressableHighlight = tmp5(6026).PressableHighlight;
   const tmp25 = closure_15;
   if (voiceStates.length > 0) {
     num = 6;
@@ -294,10 +294,10 @@ let closure_20 = react.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
     }
   }
   const merged1 = Object.assign(channelAccessibilityProps);
-  const obj16 = { channel, subtitle: renderChannelSubtitle({ subtitle: topic, channelId: id, guildId: guild_id, connected: isConnectedToVoiceChannel }), unread, resolvedUnreadSetting: stateFromStores, mentionCount, mentionBadge: tmp(19134)({ mentionCount, locale: stateFromStores2 }), live: null != stateFromStores1, end: tmp33, connected: isConnectedToVoiceChannel, fontScale, isSubscriptionGated, needSubscriptionToAccess, showGuildBadgeIcon: true };
-  const tmpResult2 = tmp(18755);
-  renderChannelSubtitle = tmp5(19138).renderChannelSubtitle;
-  channel(19138);
+  const obj16 = { channel, subtitle: renderChannelSubtitle({ subtitle: topic, channelId: id, guildId: guild_id, connected: isConnectedToVoiceChannel }), unread, resolvedUnreadSetting: stateFromStores, mentionCount, mentionBadge: tmp(19176)({ mentionCount, locale: stateFromStores2 }), live: null != stateFromStores1, end: tmp33, connected: isConnectedToVoiceChannel, fontScale, isSubscriptionGated, needSubscriptionToAccess, showGuildBadgeIcon: true };
+  const tmpResult2 = tmp(18797);
+  renderChannelSubtitle = tmp5(19180).renderChannelSubtitle;
+  channel(19180);
   if (topic == null) {
     topic = subtitle;
   }
@@ -306,17 +306,17 @@ let closure_20 = react.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
   }
   if (arr5.length > 0) {
     const obj17 = { embeddedApps: arr5, size: tmp7.joinVoiceButton.icon.gameSize };
-    tmp33 = closure_14(tmp(17752), obj17);
+    tmp33 = closure_14(tmp(17790), obj17);
     tmp32 = closure_14;
   } else {
     tmp32 = closure_14;
     const obj18 = { channel, voiceStates };
-    tmp33 = closure_14(tmp5(13145).VocalChannelJoinButton, obj18);
+    tmp33 = closure_14(tmp5(13063).VocalChannelJoinButton, obj18);
   }
   items8 = [tmpResult2(obj16), ];
   let tmp32Result = null;
   if (voiceStates.length > 0) {
-    const obj19 = { style: items9, children: tmp32(tmp(19142), obj20) };
+    const obj19 = { style: items9, children: tmp32(tmp(19184), obj20) };
     items9 = [tmp6.voiceUsers, tmp7.voiceUsers.margin];
     obj20 = { users: mapped, max: 5, guildId: channel.guild_id, audienceCount: stageParticipantsCount };
     tmp32Result = tmp32(View, obj19);

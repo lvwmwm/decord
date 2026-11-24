@@ -1,22 +1,22 @@
-// Module ID: 17477
-// Function ID: 17478
+// Module ID: 17515
+// Function ID: 17516
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 17450, 21, 4913, 1653, 16003, 5929, 7225, 575, 5504, 1112, 15285, 7221, 1378, 2]
+// Dependencies: [109, 32, 19, 17488, 21, 4917, 1653, 16036, 5989, 7152, 575, 5508, 1112, 15306, 7148, 1378, 2]
 // Exports: RegisterUsernameInput
 
-// Module 17477 (RegisterUsernameInput)
+// Module 17515 (RegisterUsernameInput)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15285 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16003 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15306 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16036 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17450 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17488 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -44,12 +44,12 @@ function UsernameStatusMessage(arg0) {
   }
   if (type === UniqueUsernamesTypes.NameValidationState.ERROR) {
     obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", children: items };
-    const Stack = tmp3(5929).Stack;
+    const Stack = tmp3(5989).Stack;
     const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-    const CircleErrorIcon = tmp3(7225).CircleErrorIcon;
+    const CircleErrorIcon = tmp3(7152).CircleErrorIcon;
     items = [React4(CircleErrorIcon, obj3), ];
     const obj4 = { variant: "body-xs/medium", color: "text-feedback-critical", style: tmp.status, animated: true, children: usernameStatus.message };
-    const Text3 = tmp3(5504).Text;
+    const Text3 = tmp3(5508).Text;
     const merged = Object.assign(obj);
     const merged1 = Object.assign(obj2);
     items[1] = React4(Text3, obj4);
@@ -62,7 +62,7 @@ function UsernameStatusMessage(arg0) {
       }
       if (type1 === UniqueUsernamesTypes.NameValidationState.AVAILABLE) {
         const obj5 = { style: tmp.status, variant: "body-xs/medium", animated: true, children: React4(Text_Text.Text, obj6) };
-        const Text2 = tmp3(5504).Text;
+        const Text2 = tmp3(5508).Text;
         const merged2 = Object.assign(obj);
         const merged3 = Object.assign(obj2);
         obj6 = { variant: "body-xs/medium", color: "text-feedback-positive", children: usernameStatus.message };
@@ -72,7 +72,7 @@ function UsernameStatusMessage(arg0) {
     tmp6 = null;
     if (isUsernameFocused) {
       obj = { style: tmp.inputHint, variant: "body-xs/medium", color: "text-muted", animated: true, children: intl.string(intl3.t.y7LSyU) };
-      const Text = tmp3(5504).Text;
+      const Text = tmp3(5508).Text;
       const merged4 = Object.assign(obj);
       const merged5 = Object.assign(obj2);
       intl = tmp3(1112).intl;
@@ -143,7 +143,7 @@ export function RegisterUsernameInput(setUsername) {
     closure_1(false);
   }, items2);
   const obj3 = { ref, label: intl.string(setUsername(1112).t.IEpCBQ), accessibilityHint: intl2.string(setUsername(1112).t["47dcUZ"]), onChange: callback, autoCorrect: false, secureTextEntry: obj4.isAndroid(), keyboardType: str, value: username, onSubmitEditing, returnKeyType: "next", autoComplete: "username", textContentType: "username", autoCapitalize: "none", onFocus: callback1, onBlur: callback2, clearable: true, status: str2, submitBehavior };
-  const TextInput = setUsername(7221).TextInput;
+  const TextInput = setUsername(7148).TextInput;
   intl = setUsername(1112).intl;
   intl2 = setUsername(1112).intl;
   str = "default";
@@ -160,7 +160,7 @@ export function RegisterUsernameInput(setUsername) {
     type = usernameStatus.type;
   }
   str2 = undefined;
-  if (type === tmp15(16003).NameValidationState.ERROR) {
+  if (type === tmp15(16036).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: items3 };

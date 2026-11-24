@@ -1,8 +1,8 @@
-// Module ID: 6173
-// Function ID: 6174
+// Module ID: 6476
+// Function ID: 6477
 // Dependencies: [2]
 
-// Module 6173
+// Module 6476
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/jester_sunrise.png.js");

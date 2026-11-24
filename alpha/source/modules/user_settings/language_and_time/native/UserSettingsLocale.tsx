@@ -1,21 +1,21 @@
-// Module ID: 16830
-// Function ID: 16831
+// Module ID: 16864
+// Function ID: 16865
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2189, 2188, 21, 4913, 575, 5826, 504, 7017, 7347, 1112, 7349, 5600, 16831, 2]
+// Dependencies: [5, 19, 17, 2189, 2188, 21, 4917, 575, 5892, 504, 7354, 7125, 1112, 7127, 5604, 16865, 2]
 
-// Module 16830 (UserSettingsLocale)
+// Module 16864 (UserSettingsLocale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2189 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import TableRadioRow2 from "TableRadioRow" /* 7349 */;
-import flags from "flags" /* 16831 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import TableRadioRow2 from "TableRadioRow" /* 7127 */;
+import flags from "flags" /* 16865 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,15 +1,15 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12708
+// Function ID: 12709
 // Name: useTraitPicker
-// Dependencies: [19, 5969, 12790, 12791, 12792, 12500, 2]
+// Dependencies: [19, 6270, 12709, 12710, 12711, 12415, 2]
 // Exports: useTraitPicker
 
-// Module 12789 (useTraitPicker)
-import CheckpointConstants from "CheckpointConstants" /* 5969 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 12500 */;
-import useTraitPickerSelection from "useTraitPickerSelection" /* 12790 */;
-import useTraitPickerOptions from "useTraitPickerOptions" /* 12791 */;
-import useAutoSelectTraitOption from "useAutoSelectTraitOption" /* 12792 */;
+// Module 12708 (useTraitPicker)
+import CheckpointConstants from "CheckpointConstants" /* 6270 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 12415 */;
+import useTraitPickerSelection from "useTraitPickerSelection" /* 12709 */;
+import useTraitPickerOptions from "useTraitPickerOptions" /* 12710 */;
+import useAutoSelectTraitOption from "useAutoSelectTraitOption" /* 12711 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

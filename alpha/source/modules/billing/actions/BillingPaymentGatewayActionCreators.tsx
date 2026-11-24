@@ -1,17 +1,17 @@
-// Module ID: 6372
-// Function ID: 6373
+// Module ID: 5692
+// Function ID: 5693
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1071, 1082, 3, 1112, 6361, 6373, 572, 38, 6374, 6375, 1284, 6351, 6349, 2]
+// Dependencies: [5, 1071, 1082, 3, 1112, 5681, 5693, 572, 38, 5694, 5695, 1284, 5668, 5666, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 6372 (BillingPaymentGatewayActionCreators)
+// Module 5692 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6361 */;
-import react from "react" /* 6373 */;
-import StripeUtilsAll from "StripeUtils" /* 6375 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5681 */;
+import react from "react" /* 5693 */;
+import StripeUtilsAll from "StripeUtils" /* 5695 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 1071 */;
 import Constants_mod2 from "Constants" /* 1082 */;
@@ -876,9 +876,9 @@ obj = function _confirmPaymentElementSource() {
                   if (closure_135_24.has(paymentSourceType)) {
                     current = ref.current;
                     if (null != current) {
-                      closure_10 = { setupIntent: current, error: "r" };
+                      closure_10 = { setupIntent: current, error: "Array" };
                       error = closure_10.error;
-                      const obj8 = { setupIntent: current, error: "r" };
+                      const obj8 = { setupIntent: current, error: "Array" };
                       if (!shouldRecreateSetupIntentForPaymentElement(error)) {
                         setupIntent = closure_135_16(closure_10.setupIntent, closure_10.error, (error) => {
                           let selectedElementType = closure_1_3;

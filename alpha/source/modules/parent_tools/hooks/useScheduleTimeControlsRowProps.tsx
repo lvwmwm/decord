@@ -1,14 +1,14 @@
-// Module ID: 16213
-// Function ID: 16214
+// Module ID: 16246
+// Function ID: 16247
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 5504, 1112, 2824, 2]
+// Dependencies: [21, 5508, 1112, 2824, 2]
 // Exports: default
 
-// Module 16213 (useScheduleTimeControlsRowProps)
+// Module 16246 (useScheduleTimeControlsRowProps)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef2824 from "module_2824" /* 2824 */;
-import Text_Text from "Text/Text" /* 5504 */;
+import Text_Text from "Text/Text" /* 5508 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -21,7 +21,7 @@ export default function useScheduleTimeControlsRowProps(arr) {
   let obj5;
   let tmp10;
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "r" };
+    const obj2 = { subLabel: null, trailing: "Array" };
     ({ variant: "body-xs/medium", color: "text-muted", children: intl.string(_modDef2824.fOBIZH) });
     const Text = Text_Text.Text;
     intl = intl4.intl;

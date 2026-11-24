@@ -1,12 +1,12 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 9861
+// Function ID: 9862
 // Name: LocationMetadataStore
-// Dependencies: [5577, 504, 572, 2]
+// Dependencies: [5581, 504, 572, 2]
 
-// Module 10628 (LocationMetadataStore)
+// Module 9861 (LocationMetadataStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5577 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5581 */;
 import size from "module_2" /* 2 */;
 
 let _window;

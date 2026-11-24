@@ -1,27 +1,27 @@
-// Module ID: 14248
-// Function ID: 14249
+// Module ID: 11479
+// Function ID: 11480
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 8851, 8090, 1073, 21, 504, 8170, 14230, 1112, 5512, 5504, 8952, 2]
+// Dependencies: [19, 8963, 6203, 1073, 21, 504, 8972, 11480, 1112, 5516, 5508, 9496, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 14248 (UnlockWithNitroButton)
+// Module 11479 (UnlockWithNitroButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
-import ProductIds from "ProductIds" /* 8170 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 14230 */;
+import premium_ProductIds from "premium/ProductIds" /* 8972 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 11480 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 8851 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8090 */;
+import IAPStore from "IAPStore" /* 8963 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6203 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let tmp;
 const intl2 = tmp(1112);
-const Text_Text = tmp(5504);
-const BaseTextButton2 = tmp(5512);
-const NitroWheelIcon = tmp(8952);
+const Text_Text = tmp(5508);
+const BaseTextButton2 = tmp(5516);
+const NitroWheelIcon = tmp(9496);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/collectibles/native/UnlockWithNitroButton.tsx");
@@ -42,7 +42,7 @@ export function UnlockWithNitroButton(shouldShrink) {
   const items = [CollectiblesPurchaseStore, IAPStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const isPurchasingProductResult = null != isClaiming.isClaiming || purchasingProduct.isPurchasingProduct(ProductIds.ProductIds.GENERIC_CONSUMABLE);
+    const isPurchasingProductResult = null != isClaiming.isClaiming || purchasingProduct.isPurchasingProduct(premium_ProductIds.ProductIds.GENERIC_CONSUMABLE);
     return isPurchasingProductResult;
   });
   importDefault = useOpenNitroSubscribeActionSheetDefault();

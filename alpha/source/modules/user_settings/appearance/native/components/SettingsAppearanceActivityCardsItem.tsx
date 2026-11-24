@@ -1,13 +1,13 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16733
+// Function ID: 16734
 // Name: SettingsAppearanceActivityCardsItem
-// Dependencies: [19, 21, 7490, 575, 16700, 2]
+// Dependencies: [19, 21, 7356, 575, 16734, 2]
 // Exports: default
 
-// Module 16699 (SettingsAppearanceActivityCardsItem)
+// Module 16733 (SettingsAppearanceActivityCardsItem)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 16700 */;
+import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 16734 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ export default function ActivityCardsItem(animatedStyles) {
   animatedStyles = animatedStyles.animatedStyles;
   const cards = animatedStyles.cards;
   const obj2 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
-  const FlashList = animatedStyles(7490).FlashList;
+  const FlashList = animatedStyles(7356).FlashList;
   return <FlashList contentContainerStyle={obj2} data={cards} renderItem={function renderItem(item) {
     item = item.item;
     SettingsAppearanceActivityCardItemDefault;

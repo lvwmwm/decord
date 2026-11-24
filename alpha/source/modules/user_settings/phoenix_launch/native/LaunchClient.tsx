@@ -1,10 +1,10 @@
-// Module ID: 17181
-// Function ID: 17182
+// Module ID: 17217
+// Function ID: 17218
 // Name: LaunchClient
 // Dependencies: [2]
 // Exports: toLaunchClient
 
-// Module 17181 (LaunchClient)
+// Module 17217 (LaunchClient)
 import size from "module_2" /* 2 */;
 
 const LaunchClient = { PHOENIX: "phoenix", LEGACY: "legacy" };

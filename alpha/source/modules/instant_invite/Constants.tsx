@@ -1,9 +1,9 @@
-// Module ID: 8438
-// Function ID: 8439
+// Module ID: 5650
+// Function ID: 5651
 // Name: Constants
 // Dependencies: [2]
 
-// Module 8438 (Constants)
+// Module 5650 (Constants)
 import size from "module_2" /* 2 */;
 
 const obj = { GUILD: 0, [0]: "GUILD", GROUP_DM: 1, [1]: "GROUP_DM", FRIEND: 2, [2]: "FRIEND" };

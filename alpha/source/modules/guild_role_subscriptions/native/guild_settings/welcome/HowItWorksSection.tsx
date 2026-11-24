@@ -1,21 +1,21 @@
-// Module ID: 19945
-// Function ID: 19946
+// Module ID: 19988
+// Function ID: 19989
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 4913, 575, 5504, 1112, 19946, 1186, 19950, 19954, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 5508, 1112, 19989, 1186, 19993, 19997, 2]
 // Exports: default
 
-// Module 19945 (HowItWorksSection)
+// Module 19988 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 19946 */;
-import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 19950 */;
-import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 19954 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import PerksTicketSpotIllustration from "PerksTicketSpotIllustration" /* 19989 */;
+import AnnouncementMegaphoneSpotIllustration from "AnnouncementMegaphoneSpotIllustration" /* 19993 */;
+import CoinsAndBagSpotIllustration from "CoinsAndBagSpotIllustration" /* 19997 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;

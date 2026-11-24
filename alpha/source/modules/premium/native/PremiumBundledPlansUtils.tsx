@@ -1,11 +1,11 @@
-// Module ID: 9131
-// Function ID: 9132
+// Module ID: 9010
+// Function ID: 9011
 // Name: PremiumBundledPlansUtils
-// Dependencies: [32, 1388, 8170, 2173, 2]
+// Dependencies: [32, 1388, 8972, 2173, 2]
 // Exports: excludeNitroOnlyPlansForActiveTrial, getModifySubscriptionItemsForProduct, getPremiumBundleWithPredicate, getPremiumBundlesWithPredicate, getProductIdFromSubscription, getProductIdsForBothIntervals, getToggledIntervalProduct, makeExternalPaymentGatewayPlanIdOrThrow, productsHaveSamePerks, shouldAlwaysExcludeFromPlanSelect
 
-// Module 9131 (PremiumBundledPlansUtils)
-import ProductIds from "ProductIds" /* 8170 */;
+// Module 9010 (PremiumBundledPlansUtils)
+import premium_ProductIds from "premium/ProductIds" /* 8972 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -16,10 +16,10 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f94505 = (numPremiumGuild) => numPremiumGuild.numPremiumGuild === numPremiumGuild.numPremiumGuild && numPremiumGuild.premiumTier === numPremiumGuild.premiumTier && numPremiumGuild.interval !== numPremiumGuild.interval && !numPremiumGuild.isDeprecated;
+const f94649 = (numPremiumGuild) => numPremiumGuild.numPremiumGuild === numPremiumGuild.numPremiumGuild && numPremiumGuild.premiumTier === numPremiumGuild.premiumTier && numPremiumGuild.interval !== numPremiumGuild.interval && !numPremiumGuild.isDeprecated;
 function getPremiumBundledItemsFromProductId(toggledIntervalProduct) {
-  if (toggledIntervalProduct in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
-    return ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[toggledIntervalProduct];
+  if (toggledIntervalProduct in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
+    return premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[toggledIntervalProduct];
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -30,7 +30,7 @@ function getPremiumBundledItemsFromProductId(toggledIntervalProduct) {
   }
 }
 function isValidBundleProductId(productIdFromSubscription) {
-  const tmp = null != productIdFromSubscription && productIdFromSubscription in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
+  const tmp = null != productIdFromSubscription && productIdFromSubscription in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
   return tmp;
 }
 function getSubscriptionItemsForProduct(productId) {
@@ -94,7 +94,7 @@ function planQuantityMapsEqual(size, size2) {
 }
 function getProductIdFromSubscriptionItems(subscriptionItemsForProduct) {
   const tmp = aggregateQuantitiesByPlanId(subscriptionItemsForProduct);
-  const keys = Object.keys(ProductIds.AppStorePremiumProductIdsToPremiumBundledItems);
+  const keys = Object.keys(premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems);
   for (const item10018 of keys) {
     if (planQuantityMapsEqual(tmp, aggregateQuantitiesByPlanId(getSubscriptionItemsForProduct(item10018)))) {
       obj.return();
@@ -108,23 +108,23 @@ function getProductIdFromSubscriptionItems(subscriptionItemsForProduct) {
 let result = size.fileFinishedImporting("modules/premium/native/PremiumBundledPlansUtils.tsx");
 
 export function getPremiumBundlesWithPredicate(fn) {
-  const values = Object.values(ProductIds.AppStorePremiumProductIdsToPremiumBundledItems);
+  const values = Object.values(premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems);
   return values.filter(fn);
 }
 export function getPremiumBundleWithPredicate(arg0) {
-  const values = Object.values(ProductIds.AppStorePremiumProductIdsToPremiumBundledItems);
+  const values = Object.values(premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems);
   return values.find(arg0);
 }
 export { getPremiumBundledItemsFromProductId };
 export function getToggledIntervalProduct(productId) {
-  if (productId in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
-    const tmp6 = ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[productId];
+  if (productId in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
+    const tmp6 = premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[productId];
     let closure_0 = tmp6;
     let tmp9 = null;
     if (tmp6.premiumTier !== React3.TIER_1) {
       const _Object = Object;
-      const values = Object.values(tmp(8170).AppStorePremiumProductIdsToPremiumBundledItems);
-      const found = values.find(f94505);
+      const values = Object.values(tmp(8972).AppStorePremiumProductIdsToPremiumBundledItems);
+      const found = values.find(f94649);
       productId = undefined;
       if (found != null) {
         productId = found.productId;
@@ -142,18 +142,18 @@ export function getToggledIntervalProduct(productId) {
   }
 }
 export function getProductIdsForBothIntervals(monthly) {
-  if (monthly in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
-    const tmp6 = ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[monthly];
+  if (monthly in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
+    const tmp6 = premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[monthly];
     let closure_0;
-    if (monthly in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
+    if (monthly in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
       let obj;
-      const tmp10 = ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[monthly];
+      const tmp10 = premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[monthly];
       closure_0 = tmp10;
       let tmp13 = null;
       if (tmp10.premiumTier !== React3.TIER_1) {
         const _Object = Object;
-        const values = Object.values(tmp(8170).AppStorePremiumProductIdsToPremiumBundledItems);
-        const found = values.find(f94505);
+        const values = Object.values(tmp(8972).AppStorePremiumProductIdsToPremiumBundledItems);
+        const found = values.find(f94649);
         let productId;
         if (found != null) {
           productId = found.productId;
@@ -193,18 +193,18 @@ export function getProductIdsForBothIntervals(monthly) {
   }
 }
 export function productsHaveSamePerks(productId, productIdFromSubscription) {
-  const tmp = null != productId && productId in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
+  const tmp = null != productId && productId in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
   if (tmp) {
-    const tmp4 = null != productIdFromSubscription && productIdFromSubscription in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
+    const tmp4 = null != productIdFromSubscription && productIdFromSubscription in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
     if (tmp4) {
       if (null != productId) {
         if (null != productIdFromSubscription) {
           if (productId === productIdFromSubscription) {
             return true;
-          } else if (productId in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
-            const tmp10 = ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[productId];
-            if (productIdFromSubscription in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
-              const tmp14 = ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+          } else if (productId in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
+            const tmp10 = premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[productId];
+            if (productIdFromSubscription in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
+              const tmp14 = premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
               return tmp10.numPremiumGuild === tmp14.numPremiumGuild && tmp10.premiumTier === tmp14.premiumTier;
             } else {
               const _Error2 = Error;
@@ -249,8 +249,8 @@ export { getSubscriptionItemsForProduct };
 export function getModifySubscriptionItemsForProduct(productId, subscription) {
   let found;
   let tmp = found;
-  if (productId in found(8170).AppStorePremiumProductIdsToPremiumBundledItems) {
-    const tmp6 = tmp(8170).AppStorePremiumProductIdsToPremiumBundledItems[productId];
+  if (productId in found(8972).AppStorePremiumProductIdsToPremiumBundledItems) {
+    const tmp6 = tmp(8972).AppStorePremiumProductIdsToPremiumBundledItems[productId];
     if (null != tmp6.premiumTier) {
       const tmpResult = tmp(2173);
       if (tmpResult.isBoostOnlySubscription(subscription)) {
@@ -293,12 +293,12 @@ export function makeExternalPaymentGatewayPlanIdOrThrow(arg0) {
     const error = new Error("Invalid null plan ID");
     throw error;
   } else {
-    const tmp3 = null != arg0 && arg0 in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
+    const tmp3 = null != arg0 && arg0 in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
     if (tmp3) {
       return arg0;
     } else {
       const text = `${arg0}.1`;
-      if (`${arg0}.1` in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
+      if (`${arg0}.1` in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems) {
         return `${arg0}.1`;
       } else {
         const _Error = Error;
@@ -350,11 +350,11 @@ export function getProductIdFromSubscription(subscription, arg1) {
       throw error;
     } else {
       tmp16Result = paymentGatewayPlanId1;
-      const tmp5 = null != paymentGatewayPlanId1 && paymentGatewayPlanId1 in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
+      const tmp5 = null != paymentGatewayPlanId1 && paymentGatewayPlanId1 in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems;
       if (!tmp5) {
         const text = `${tmp}.1`;
         tmp16Result = text;
-        if (!(`${tmp}.1` in ProductIds.AppStorePremiumProductIdsToPremiumBundledItems)) {
+        if (!(`${tmp}.1` in premium_ProductIds.AppStorePremiumProductIdsToPremiumBundledItems)) {
           const _Error = Error;
           const _HermesInternal = HermesInternal;
           const self = this;

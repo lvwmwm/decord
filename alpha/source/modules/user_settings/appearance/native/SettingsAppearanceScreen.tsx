@@ -1,20 +1,20 @@
-// Module ID: 16669
-// Function ID: 16670
+// Module ID: 16703
+// Function ID: 16704
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4937, 1192, 1191, 16670, 8712, 1071, 21, 1500, 1378, 8561, 1112, 5644, 1262, 3802, 2187, 5474, 16671, 563, 11937, 15985, 2]
+// Dependencies: [19, 4941, 1192, 1191, 16704, 9414, 1071, 21, 1500, 1378, 8863, 1112, 5999, 1262, 3804, 2187, 5478, 16705, 563, 11815, 16018, 2]
 
-// Module 16669 (SettingsAppearanceScreen)
+// Module 16703 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import HeaderShared from "HeaderShared" /* 8561 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
+import HeaderShared from "HeaderShared" /* 8863 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4941 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import FontScaleStore from "FontScaleStore" /* 16670 */;
+import FontScaleStore from "FontScaleStore" /* 16704 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ const memoResult = react.memo(function SettingsAppearanceScreen() {
   let gradientPresetId;
   let nativeStackNavigation;
   let theme;
-  const tmp = nativeStackNavigation(5474)(() => {
+  const tmp = nativeStackNavigation(5478)(() => {
     if (SelectivelySyncedUserSettingsStore.shouldSync("appearance")) {
       const obj = closure_0(dependencyMap[17]);
       const userCustomThemes = obj.fetchUserCustomThemes();
@@ -67,7 +67,7 @@ const memoResult = react.memo(function SettingsAppearanceScreen() {
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+          nativeStackNavigation.setOptions({ headerRight: "Array" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -146,7 +146,7 @@ const memoResult = react.memo(function SettingsAppearanceScreen() {
     items1[7] = obj11;
     return createList(obj);
   }, []);
-  nativeStackNavigation(15985);
+  nativeStackNavigation(16018);
   return <tmp8 key={"" + theme + "-" + gradientPresetId} node={node} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");

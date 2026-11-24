@@ -1,13 +1,13 @@
-// Module ID: 5050
-// Function ID: 5051
+// Module ID: 5054
+// Function ID: 5055
 // Name: CheckpointFriendsRive
-// Dependencies: [109, 19, 21, 4982, 5051, 5035, 2]
+// Dependencies: [109, 19, 21, 4986, 5055, 5039, 2]
 // Exports: CheckpointFriendsRive
 
-// Module 5050 (CheckpointFriendsRive)
+// Module 5054 (CheckpointFriendsRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 4982 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5035 */;
+import BaseRive2 from "BaseRive" /* 4986 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5039 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

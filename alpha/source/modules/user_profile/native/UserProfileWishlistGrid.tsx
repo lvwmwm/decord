@@ -1,38 +1,38 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14879
+// Function ID: 14880
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 32, 19, 17, 8075, 13934, 8983, 8986, 8984, 1386, 6674, 6956, 8069, 1071, 1073, 1388, 21, 3, 4913, 575, 4974, 4920, 5504, 1112, 14431, 8135, 7520, 9473, 9247, 504, 14590, 8916, 14523, 9003, 14612, 14613, 14614, 14615, 14618, 5090, 5595, 5127, 12066, 2173, 8170, 5861, 9465, 7539, 1358, 9408, 6852, 9589, 8067, 2185, 8074, 13906, 9595, 4726, 8918, 14619, 2119, 5617, 5511, 13707, 7591, 11242, 13932, 6965, 2]
+// Dependencies: [5, 32, 19, 17, 6185, 11520, 10971, 10974, 10972, 1386, 6234, 6037, 6011, 1071, 1073, 1388, 21, 3, 4917, 575, 4978, 4924, 5508, 1112, 14700, 6255, 6253, 11002, 9128, 504, 14858, 11475, 14792, 11022, 14880, 14881, 14882, 14883, 14886, 5094, 5599, 5131, 11958, 2173, 8972, 5921, 10968, 6254, 1358, 9267, 7467, 11498, 6007, 2185, 6184, 11164, 11484, 4730, 11125, 14887, 2119, 5621, 5515, 13617, 7811, 9483, 11518, 6181, 2]
 // Exports: default
 
-// Module 14611 (UserProfileWishlistGrid)
+// Module 14879 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import intl5 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import shared from "shared" /* 4920 */;
-import native from "native" /* 4974 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
-import WishlistRecord from "WishlistRecord" /* 8984 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 8986 */;
-import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 9003 */;
+import shared from "shared" /* 4924 */;
+import native from "native" /* 4978 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6184 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
+import WishlistRecord from "WishlistRecord" /* 10972 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 10974 */;
+import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 11022 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8075 */;
-import SentGiftsStore from "SentGiftsStore" /* 13934 */;
-import WishlistStore from "WishlistStore" /* 8983 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6185 */;
+import SentGiftsStore from "SentGiftsStore" /* 11520 */;
+import WishlistStore from "WishlistStore" /* 10971 */;
 import UserStore from "UserStore" /* 1386 */;
-import SKUStore from "SKUStore" /* 6674 */;
-import UserProfileStore from "UserProfileStore" /* 6956 */;
-import Constants_mod from "Constants" /* 8069 */;
+import SKUStore from "SKUStore" /* 6234 */;
+import UserProfileStore from "UserProfileStore" /* 6037 */;
+import Constants_mod from "Constants" /* 6011 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,11 +69,11 @@ class WishlistEmptyState {
     }
     const obj3 = { style: tmp.emptyState, children: items };
     const obj4 = { variant: "body-md/medium", color: str, accessibilityRole: "header", children: intl.string(intl5.t.HGnLLT) };
-    const Text = tmp2(5504).Text;
+    const Text = tmp2(5508).Text;
     intl = tmp2(1112).intl;
     items = [sidebars(Text, obj4), ];
     const obj5 = { variant: "body-sm/normal", color: "mobile-text-heading-primary", style: tmp.emptyStateText, children: intl2.string(intl5.t["/X1ny6"]) };
-    const Text2 = tmp2(5504).Text;
+    const Text2 = tmp2(5508).Text;
     intl2 = tmp2(1112).intl;
     items[1] = sidebars(Text2, obj5);
     return closure_24(View, obj3);
@@ -131,7 +131,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
   let stringResult;
   let tmp38;
   let tmp5;
-  const f106407 = () => {
+  const f106883 = () => {
     set = new Set();
     return set;
   };
@@ -317,10 +317,10 @@ export default function UserProfileWishlistGrid(wishlistId) {
     userId1 = stateFromStores.userId;
   }
   closure_16 = tmp2Result7({ ownerId: userId1, wishlistId, isVisible });
-  [c17, c18] = analyticsLocations(obj12.useState(f106407), 2);
+  [c17, c18] = analyticsLocations(obj12.useState(f106883), 2);
   let obj4 = { wishlistId, onAction: trackUserProfileWishlistAction, productLines: tmp38, isVisible };
   tmp38 = null;
-  analyticsLocations(obj12.useState(f106407), 2);
+  analyticsLocations(obj12.useState(f106883), 2);
   const tmp2Result8 = tmp2(tmp3[38]);
   if (null != stateFromStores) {
     tmp38 = memo(stateFromStores);
@@ -679,7 +679,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     tmp(obj);
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { wishlistId: tmp2, analyticsContext: context, analyticsLocations };
-    obj2.openLazy(asyncRequire(14619, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(14887, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
   }, items15);
   const callback1 = obj12.useCallback(() => {
     let items;

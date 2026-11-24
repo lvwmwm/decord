@@ -1,13 +1,13 @@
-// Module ID: 18331
-// Function ID: 18332
+// Module ID: 18370
+// Function ID: 18371
 // Name: useConjurePublishSchedule
-// Dependencies: [5, 32, 19, 6967, 504, 14744, 1112, 4190, 14745, 2]
+// Dependencies: [5, 32, 19, 7563, 504, 14574, 1112, 4192, 14575, 2]
 // Exports: default
 
-// Module 18331 (useConjurePublishSchedule)
+// Module 18370 (useConjurePublishSchedule)
 import intl3 from "intl" /* 1112 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import ConjureConnectionStore2 from "ConjureConnectionStore" /* 6967 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import ConjureConnectionStore2 from "ConjureConnectionStore" /* 7563 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -83,7 +83,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
         nextPromise.catch(() => {
           if (ref.current.value === closure_1) {
             const intl = intl3.intl;
-            closure_8(intl.string(_modDef4190.n25haz));
+            closure_8(intl.string(_modDef4192.n25haz));
             closure_4(false);
           }
         });

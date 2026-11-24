@@ -1,17 +1,17 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 12805
+// Function ID: 12806
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 4913, 575, 8617, 12832, 12887, 1653, 1186, 5504, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 8886, 12751, 12806, 1653, 1186, 5508, 2]
 // Exports: default
 
-// Module 12886 (ForumPostTypingUsers)
+// Module 12805 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import _modDef1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

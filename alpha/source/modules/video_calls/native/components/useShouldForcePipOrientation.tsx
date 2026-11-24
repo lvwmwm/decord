@@ -1,16 +1,16 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 9884
+// Function ID: 9885
 // Name: useShouldForcePipOrientation
-// Dependencies: [4761, 6620, 502, 5563, 10651, 504, 6629, 2145, 9431, 2]
+// Dependencies: [4765, 6807, 502, 5567, 9885, 504, 6816, 2145, 8769, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10650 (useShouldForcePipOrientation)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6629 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 10651 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+// Module 9884 (useShouldForcePipOrientation)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6816 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9885 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4765 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallConstants from "CallConstants" /* 5563 */;
+import CallConstants from "CallConstants" /* 5567 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -89,17 +89,17 @@ export function useShouldForcePipOrientation(channel) {
     if (closure_6(focusedEmbeddedActivityParticipant)) {
       let LANDSCAPE;
       if (null == stateFromStores) {
-        LANDSCAPE = tmp3(9431).OrientationType.LANDSCAPE;
+        LANDSCAPE = tmp3(8769).OrientationType.LANDSCAPE;
       }
       return LANDSCAPE;
     }
   }
   if (activityLockOrientation === channel(2145).EmbeddedActivityOrientationLockState.LANDSCAPE) {
-    LANDSCAPE1 = tmp3(9431).OrientationType.LANDSCAPE;
+    LANDSCAPE1 = tmp3(8769).OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE1 = null;
     if (activityLockOrientation === channel(2145).EmbeddedActivityOrientationLockState.PORTRAIT) {
-      LANDSCAPE1 = tmp3(9431).OrientationType.PORTRAIT;
+      LANDSCAPE1 = tmp3(8769).OrientationType.PORTRAIT;
     }
   }
   LANDSCAPE = LANDSCAPE1;

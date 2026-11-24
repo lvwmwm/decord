@@ -1,9 +1,9 @@
-// Module ID: 12004
-// Function ID: 12005
+// Module ID: 11895
+// Function ID: 11896
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 6825, 2188, 1405, 502, 4762, 6689, 4825, 4845, 7025, 1071, 21, 4913, 575, 5122, 6691, 1412, 4920, 1186, 7636, 5529, 5504, 1112, 7069, 12005, 7521, 10387, 12006, 12007, 12, 5477, 12008, 38, 5595, 5617, 12011, 5474, 7709, 7068, 504, 7070, 6511, 1255, 5650, 5127, 8194, 12012, 7024, 572, 6429, 7001, 2119, 5528, 12016, 5141, 12017, 7559, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 6263, 2188, 1405, 502, 4766, 7336, 4829, 4849, 6245, 1071, 21, 4917, 575, 5126, 6052, 1412, 4924, 1186, 6970, 5533, 5508, 1112, 6244, 11896, 7386, 8491, 11897, 11898, 12, 5481, 11899, 38, 5599, 5621, 11902, 5478, 7947, 7406, 504, 6246, 6865, 1255, 5887, 5131, 7968, 11903, 7614, 572, 6004, 7597, 2119, 5532, 11907, 5145, 11908, 7426, 5515, 2]
 
-// Module 12004 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 11895 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,40 +12,40 @@ import intl14 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
-import shared from "shared" /* 4920 */;
-import useThemeDefault from "useTheme" /* 5122 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import useMountEffectDefault from "useMountEffect" /* 5474 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import useChannelNameDefault from "useChannelName" /* 5529 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5617 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
-import PlatformsDefault from "Platforms" /* 6691 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7068 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7069 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 7070 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
-import openUserSettings from "openUserSettings" /* 8194 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 12016 */;
+import shared from "shared" /* 4924 */;
+import useThemeDefault from "useTheme" /* 5126 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import useMountEffectDefault from "useMountEffect" /* 5478 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import useChannelNameDefault from "useChannelName" /* 5533 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5621 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
+import PlatformsDefault from "Platforms" /* 6052 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 6244 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 6246 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6865 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 6970 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7406 */;
+import openUserSettings from "openUserSettings" /* 7968 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6825 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6263 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import UserRecord from "UserRecord" /* 1405 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6689 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import Constants_mod from "Constants" /* 7025 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7336 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
+import Constants_mod from "Constants" /* 6245 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -474,7 +474,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
       }
     }
   }, items3);
-  let obj2 = eligibilityStatesGroups(5477);
+  let obj2 = eligibilityStatesGroups(5481);
   roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
   let obj3 = {
     children: sorted.map(function(item) {
@@ -781,7 +781,7 @@ function ConnectedUserAccountOptions(account) {
           obj.setFriendSync(account.type, account.id, enabled);
         }
     };
-    const FormSwitchRow = account(7709).FormSwitchRow;
+    const FormSwitchRow = account(7947).FormSwitchRow;
     intl = account(1112).intl;
     tmp13 = closure_29(FormSwitchRow, obj2);
   }
@@ -796,7 +796,7 @@ function ConnectedUserAccountOptions(account) {
           obj.setShowActivity(account.type, account.id, show_activity);
         }
     };
-    const FormSwitchRow2 = account(7709).FormSwitchRow;
+    const FormSwitchRow2 = account(7947).FormSwitchRow;
     intl2 = account(1112).intl;
     obj4 = { platform: value.name };
     tmp16 = closure_29(FormSwitchRow2, obj3);
@@ -822,7 +822,7 @@ function ConnectedUserAccountOptions(account) {
           const result = setMetadataVisibility(type, id, num);
         }
     };
-    const FormSwitchRow3 = account(7709).FormSwitchRow;
+    const FormSwitchRow3 = account(7947).FormSwitchRow;
     intl3 = account(1112).intl;
     tmp19 = closure_29(FormSwitchRow3, obj5);
   }
@@ -845,7 +845,7 @@ function ConnectedUserAccountOptions(account) {
       setVisibility(type, id, num);
     }
   };
-  const FormSwitchRow4 = account(7709).FormSwitchRow;
+  const FormSwitchRow4 = account(7947).FormSwitchRow;
   intl4 = account(1112).intl;
   items = [closure_29(FormSwitchRow4, obj7), tmp19, tmp16, tmp13];
   return closure_30(closure_8, obj6);
@@ -939,7 +939,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f101248 = () => {
+    const f100894 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -1046,8 +1046,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f101248);
-    _slicedToArray(react.useState(f101248), 2);
+    [tmp27, c16] = react.useState(f100894);
+    _slicedToArray(react.useState(f100894), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[17])();

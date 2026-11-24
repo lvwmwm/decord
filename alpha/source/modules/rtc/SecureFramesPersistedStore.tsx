@@ -1,9 +1,9 @@
-// Module ID: 5672
-// Function ID: 5673
+// Module ID: 5735
+// Function ID: 5736
 // Name: SecureFramesPersistedStore
 // Dependencies: [504, 572, 2]
 
-// Module 5672 (SecureFramesPersistedStore)
+// Module 5735 (SecureFramesPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

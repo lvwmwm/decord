@@ -1,15 +1,15 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17339
+// Function ID: 17340
 // Name: useTrackProductCardImpression
-// Dependencies: [19, 8075, 1071, 8936, 504, 8920, 2173, 8087, 1255, 2]
+// Dependencies: [19, 6185, 1071, 11069, 504, 9274, 2173, 6197, 1255, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 17301 (useTrackProductCardImpression)
+// Module 17339 (useTrackProductCardImpression)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6197 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8075 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6185 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

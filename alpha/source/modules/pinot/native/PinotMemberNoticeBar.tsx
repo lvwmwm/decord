@@ -1,20 +1,21 @@
-// Module ID: 11876
-// Function ID: 11877
+// Module ID: 11749
+// Function ID: 11750
 // Name: PinotMemberNoticeBar
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 11866, 5592, 2187, 5504, 1112, 3508, 7030, 7151, 2]
+// Dependencies: [19, 17, 1071, 21, 4917, 575, 11750, 11744, 5596, 2187, 5508, 1112, 3510, 6026, 7121, 2]
 // Exports: PinotMemberNoticeBar
 
-// Module 11876 (PinotMemberNoticeBar)
+// Module 11749 (PinotMemberNoticeBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import LinkingDefault from "Linking" /* 5592 */;
-import PinotAnalytics from "PinotAnalytics" /* 11866 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import LinkingDefault from "Linking" /* 5596 */;
+import PinotAnalytics from "PinotAnalytics" /* 11744 */;
+import PinotMemberNoticeCaret from "PinotMemberNoticeCaret" /* 11750 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -31,7 +32,7 @@ let createStyles = createStyles_mod;
 let obj = { underlay: obj2, bar: obj3, text: { flex: 1 }, link: { textDecorationLine: "underline" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, borderTopWidth: 1, borderBottomWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
+obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, borderBottomWidth: PinotMemberNoticeCaret.PINOT_MEMBER_NOTICE_BORDER_WIDTH, borderBottomColor: nativeDefault.colors.INLINENOTICE_BORDER_INFO, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
 let closure_9 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/pinot/native/PinotMemberNoticeBar.tsx");
 
@@ -63,8 +64,8 @@ export function PinotMemberNoticeBar(channel) {
   }, items);
   let obj = { style: tmp.underlay, children: closure_7(View, obj2) };
   obj2 = { style: tmp.bar, children: items1 };
-  let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3508).Jry6Gr, obj4) };
-  const Text = channel(5504).Text;
+  let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3510).Jry6Gr, obj4) };
+  const Text = channel(5508).Text;
   intl = channel(1112).intl;
   obj4 = {
     learnMoreHook(children, arg1) {
@@ -83,9 +84,9 @@ export function PinotMemberNoticeBar(channel) {
       const result = obj.trackPinotNoticeAction(obj2, "dismiss");
       onDismiss();
     },
-    children: closure_6(channel(7151).XSmallIcon, { size: "sm", color: "icon-muted" })
+    children: closure_6(channel(7121).XSmallIcon, { size: "sm", color: "icon-muted" })
   };
-  const PressableOpacity = channel(7030).PressableOpacity;
+  const PressableOpacity = channel(6026).PressableOpacity;
   intl2 = channel(1112).intl;
   items1[1] = closure_6(PressableOpacity, obj5);
   return closure_6(View, obj);

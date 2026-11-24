@@ -1,14 +1,14 @@
-// Module ID: 7706
-// Function ID: 7707
+// Module ID: 8378
+// Function ID: 8379
 // Name: StageChannelUpsellCardStore
-// Dependencies: [4768, 1257, 510, 1262, 4828, 2]
+// Dependencies: [4772, 1257, 510, 1262, 4832, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 7706 (StageChannelUpsellCardStore)
+// Module 8378 (StageChannelUpsellCardStore)
 import Storage2 from "Storage" /* 510 */;
 import react_native from "react-native" /* 1262 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
-import _slicedToArray from "_slicedToArray" /* 4828 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4772 */;
+import _slicedToArray from "_slicedToArray" /* 4832 */;
 import module_1257 from "module_1257" /* 1257 */;
 import size from "module_2" /* 2 */;
 

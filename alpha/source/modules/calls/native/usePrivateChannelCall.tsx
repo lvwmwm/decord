@@ -1,15 +1,15 @@
-// Module ID: 14638
-// Function ID: 14639
+// Module ID: 14906
+// Function ID: 14907
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 4762, 504, 1112, 9662, 7737, 2]
+// Dependencies: [5, 19, 4766, 504, 1112, 11212, 7714, 2]
 // Exports: default
 
-// Module 14638 (usePrivateChannelCall)
+// Module 14906 (usePrivateChannelCall)
 import intl3 from "intl" /* 1112 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 9662 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 11212 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

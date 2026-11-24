@@ -1,20 +1,20 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 12236
+// Function ID: 12237
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4913, 4920, 575, 4910, 2]
+// Dependencies: [19, 4917, 4924, 575, 4914, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 8680 (getEmbedThemeColors)
+// Module 12236 (getEmbedThemeColors)
 import nativeDefault from "native" /* 575 */;
-import shared from "shared" /* 4920 */;
+import shared from "shared" /* 4924 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let theme;
 
 let tmp;
-const ColorUtils = tmp(4910);
+const ColorUtils = tmp(4914);
 let createStyles = createStyles_mod;
 const result = createStyles.experimental_createToken((theme) => {
   theme = theme.theme;
@@ -108,7 +108,7 @@ const result8 = createStyles.experimental_createToken((theme) => {
   return PRIMARY_600;
 });
 createStyles = createStyles_mod;
-let obj = { acceptBlurpleLabelBackgroundColor: nativeDefault.colors.BACKGROUND_BRAND, acceptLabelGreenBackgroundColor: nativeDefault.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT, acceptLabelGreenColor: nativeDefault.unsafe_rawColors.WHITE, backgroundColor: nativeDefault.colors.MOBILE_EMBED_BACKGROUND_DEFAULT, bodyTextColor: nativeDefault.colors.TEXT_DEFAULT, clearLabelRedBackgroundColor: nativeDefault.unsafe_rawColors.RED_400, clearLabelRedColor: nativeDefault.unsafe_rawColors.WHITE, headerColor: nativeDefault.colors.TEXT_SUBTLE, subtitleColor: nativeDefault.colors.TEXT_SUBTLE, titleColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, acceptLabelActiveBackgroundColor: result, acceptLabelDisabledBackgroundColor: result1, acceptLabelDisabledBorderColor: result2, acceptLabelDisabledTextColor: result3, acceptLabelDisabledColor: result4, borderColor: result5, resolvingGradientEnd: result6, resolvingGradientStart: result7, thumbnailBackgroundColor: result8, voiceActiveColor: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, voiceHeaderBackgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, voiceMutedColor: nativeDefault.colors.TEXT_MUTED };
+let obj = { acceptBlurpleLabelBackgroundColor: nativeDefault.colors.BACKGROUND_BRAND, acceptLabelGreenBackgroundColor: nativeDefault.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT, acceptLabelGreenColor: nativeDefault.unsafe_rawColors.WHITE, backgroundColor: nativeDefault.colors.MOBILE_EMBED_BACKGROUND_DEFAULT, bodyTextColor: nativeDefault.colors.TEXT_DEFAULT, clearLabelRedBackgroundColor: nativeDefault.unsafe_rawColors.RED_400, clearLabelRedColor: nativeDefault.unsafe_rawColors.WHITE, headerColor: nativeDefault.colors.TEXT_SUBTLE, subtitleColor: nativeDefault.colors.TEXT_SUBTLE, titleColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, acceptLabelActiveBackgroundColor: result, acceptLabelDisabledBackgroundColor: result1, acceptLabelDisabledBorderColor: result2, acceptLabelDisabledTextColor: result3, acceptLabelDisabledColor: result4, borderColor: result5, resolvingGradientEnd: result6, resolvingGradientStart: result7, thumbnailBackgroundColor: result8 };
 let closure_4 = createStyles.createNativeStyleProperties(obj);
 const result9 = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/getEmbedThemeColors.tsx");
 

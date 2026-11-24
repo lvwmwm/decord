@@ -1,19 +1,19 @@
-// Module ID: 7080
-// Function ID: 7081
+// Module ID: 7638
+// Function ID: 7639
 // Name: XboxLinkSuccess
-// Dependencies: [32, 19, 17, 7028, 7073, 21, 4913, 575, 7044, 1378, 1500, 5600, 7081, 5504, 1112, 7082, 7083, 1186, 7084, 7017, 5511, 2]
+// Dependencies: [32, 19, 17, 7617, 7634, 21, 4917, 575, 7627, 1378, 1500, 5604, 7639, 5508, 1112, 7640, 7641, 1186, 7642, 7354, 5515, 2]
 // Exports: default
 
-// Module 7080 (XboxLinkSuccess)
+// Module 7638 (XboxLinkSuccess)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 7028 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 7617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 7073 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 7634 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

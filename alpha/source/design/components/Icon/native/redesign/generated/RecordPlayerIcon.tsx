@@ -1,14 +1,14 @@
-// Module ID: 17030
-// Function ID: 17031
+// Module ID: 17064
+// Function ID: 17065
 // Name: RecordPlayerIcon
-// Dependencies: [19, 21, 575, 5599, 17031, 2]
+// Dependencies: [19, 21, 575, 5603, 17065, 2]
 // Exports: RecordPlayerIcon
 
-// Module 17030 (RecordPlayerIcon)
+// Module 17064 (RecordPlayerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 17031 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 17065 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

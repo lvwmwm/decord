@@ -1,16 +1,16 @@
-// Module ID: 16477
-// Function ID: 16478
+// Module ID: 16510
+// Function ID: 16511
 // Name: useYouBarMargins
-// Dependencies: [16478, 5092, 1628, 11767, 1358, 5477, 575, 2]
+// Dependencies: [16511, 5096, 1628, 11657, 1358, 5481, 575, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 16477 (useYouBarMargins)
+// Module 16510 (useYouBarMargins)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import useChatLayoutDefault from "useChatLayout" /* 5092 */;
-import useToken from "useToken" /* 5477 */;
-import VoicePanelDockLayout from "VoicePanelDockLayout" /* 11767 */;
-import YouBarConstants from "YouBarConstants" /* 16478 */;
+import useChatLayoutDefault from "useChatLayout" /* 5096 */;
+import useToken from "useToken" /* 5481 */;
+import VoicePanelDockLayout from "VoicePanelDockLayout" /* 11657 */;
+import YouBarConstants from "YouBarConstants" /* 16511 */;
 import size from "module_2" /* 2 */;
 
 let c3;

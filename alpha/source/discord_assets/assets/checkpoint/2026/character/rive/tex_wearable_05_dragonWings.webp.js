@@ -1,8 +1,8 @@
-// Module ID: 12696
-// Function ID: 12697
+// Module ID: 12616
+// Function ID: 12617
 // Dependencies: [2]
 
-// Module 12696
+// Module 12616
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_05_dragonWings.webp.js");

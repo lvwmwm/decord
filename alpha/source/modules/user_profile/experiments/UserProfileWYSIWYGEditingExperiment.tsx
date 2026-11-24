@@ -1,10 +1,10 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9297
+// Function ID: 9298
 // Name: UserProfileWYSIWYGEditingExperiment
 // Dependencies: [1450, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 9426 (UserProfileWYSIWYGEditingExperiment)
+// Module 9297 (UserProfileWYSIWYGEditingExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
@@ -15,8 +15,8 @@ obj2[1] = { enabled: true };
 let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileWYSIWYGEditingExperiment.tsx");
 
-export function useIsEligibleForUserProfileWYSIWYGEditing(AutomodQuarantineUtils) {
-  const obj = { location: AutomodQuarantineUtils };
+export function useIsEligibleForUserProfileWYSIWYGEditing(useOpenProfileSettings) {
+  const obj = { location: useOpenProfileSettings };
   return closure_0.useConfig(obj).enabled;
 }
 export function getIsEligibleForUserProfileWYSIWYGEditing(location) {

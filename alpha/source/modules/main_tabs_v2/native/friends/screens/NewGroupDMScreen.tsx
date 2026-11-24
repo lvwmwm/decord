@@ -1,30 +1,30 @@
-// Module ID: 18868
-// Function ID: 18869
+// Module ID: 18910
+// Function ID: 18911
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 4762, 15034, 5654, 1386, 9646, 1071, 21, 4913, 575, 7737, 6494, 7739, 12206, 5127, 504, 12061, 12063, 12060, 1255, 5595, 1112, 18867, 8561, 12064, 5594, 8571, 14650, 7262, 8066, 1186, 9647, 18804, 2]
+// Dependencies: [32, 5, 19, 17, 4766, 15073, 5725, 1386, 8803, 1071, 21, 4917, 575, 7714, 8308, 7716, 12149, 5131, 504, 11953, 11955, 11952, 1255, 5599, 1112, 18909, 8863, 11956, 5598, 8873, 10312, 7686, 10295, 1186, 11204, 18846, 2]
 // Exports: default
 
-// Module 18868 (NewGroupDMScreen)
+// Module 18910 (NewGroupDMScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import ToastUtils from "ToastUtils" /* 5594 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import HeaderShared from "HeaderShared" /* 8561 */;
-import UserRowConstants from "UserRowConstants" /* 9646 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12064 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18867 */;
+import ToastUtils from "ToastUtils" /* 5598 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
+import UserRowConstants from "UserRowConstants" /* 8803 */;
+import HeaderShared from "HeaderShared" /* 8863 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11956 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18909 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15034 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15073 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

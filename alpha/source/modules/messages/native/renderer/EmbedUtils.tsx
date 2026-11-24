@@ -1,10 +1,10 @@
-// Module ID: 8245
-// Function ID: 8246
+// Module ID: 8680
+// Function ID: 8681
 // Name: renderer/EmbedUtils
 // Dependencies: [17, 1071, 2]
 // Exports: getAssetUriForEmbed, isWebviewVideo
 
-// Module 8245 (renderer/EmbedUtils)
+// Module 8680 (renderer/EmbedUtils)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

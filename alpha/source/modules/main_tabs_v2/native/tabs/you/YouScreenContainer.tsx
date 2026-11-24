@@ -1,33 +1,29 @@
-// Module ID: 18891
-// Function ID: 18892
+// Module ID: 18933
+// Function ID: 18934
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 9420, 21, 4913, 575, 1628, 17535, 1494, 5092, 4870, 18890, 18892, 1358, 2]
+// Dependencies: [19, 17, 9288, 21, 4917, 575, 1628, 17573, 1494, 5096, 4874, 18932, 18934, 1358, 2]
 
-// Module 18891 (YouScreenContainer)
+// Module 18933 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import DeviceUtils from "DeviceUtils" /* 4870 */;
-import MainTabsConstants from "MainTabsConstants" /* 9420 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17535 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 18890 */;
+import DeviceUtils from "DeviceUtils" /* 4874 */;
+import MainTabsConstants from "MainTabsConstants" /* 9288 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17573 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 18932 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
-let obj3;
 const View = react_native.View;
 const RootNavigatorScreen = MainTabsConstants.RootNavigatorScreen;
 const jsx = Fragment.jsx;
-let createStyles = createStyles_mod;
-let obj = { container: { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center" }, androidContainer: obj2, wrapper: obj3 };
+let obj = { container: { flex: 1, overflow: "hidden", alignItems: "center", justifyContent: "center" }, androidContainer: obj2, wrapper: { flex: 1 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.none };
-createStyles = createStyles.createStyles;
-obj3 = { flex: 1, borderRadius: nativeDefault.radii.xl, overflow: "hidden" };
-let closure_6 = createStyles(obj);
+let closure_6 = createStyles.createStyles(obj);
 const memoResult = react.memo(function YouScreenContainer(route) {
   let initialTab;
   let items1;
@@ -45,7 +41,7 @@ const memoResult = react.memo(function YouScreenContainer(route) {
     }
   }
   const width = tmp2(1494)().width;
-  const isChatBesideChannelList = tmp2(5092)().isChatBesideChannelList;
+  const isChatBesideChannelList = tmp2(5096)().isChatBesideChannelList;
   const tmp4Result = DeviceUtils;
   if (tmp4Result.isDuo()) {
     const obj2 = { children: null };
@@ -71,12 +67,12 @@ const memoResult = react.memo(function YouScreenContainer(route) {
       tmp6Result2 = tmp6(tmp8, obj6);
     } else {
       const obj9 = { initialTab };
-      tmp6Result2 = tmp6(tmp2(18892), obj9);
+      tmp6Result2 = tmp6(tmp2(18934), obj9);
     }
     tmp6Result = tmp6(tmp8, obj5);
   } else {
     const obj10 = { initialTab };
-    tmp6Result = tmp6(tmp2(18892), obj10);
+    tmp6Result = tmp6(tmp2(18934), obj10);
   }
   return tmp6Result;
 });

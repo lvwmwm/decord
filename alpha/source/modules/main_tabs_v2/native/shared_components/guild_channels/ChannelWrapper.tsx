@@ -1,13 +1,13 @@
-// Module ID: 18078
-// Function ID: 18079
+// Module ID: 18117
+// Function ID: 18118
 // Name: ChannelWrapper
-// Dependencies: [19, 17, 21, 11130, 2]
+// Dependencies: [19, 17, 21, 10499, 2]
 // Exports: renderChannelWrapper
 
-// Module 18078 (ChannelWrapper)
+// Module 18117 (ChannelWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ChannelListLayout from "ChannelListLayout" /* 11130 */;
+import ChannelListLayout from "ChannelListLayout" /* 10499 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

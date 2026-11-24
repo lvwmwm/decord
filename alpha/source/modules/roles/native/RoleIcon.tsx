@@ -1,19 +1,19 @@
-// Module ID: 7561
-// Function ID: 7562
+// Module ID: 7428
+// Function ID: 7429
 // Name: RoleIcon
-// Dependencies: [19, 17, 21, 1378, 5600, 5504, 2]
+// Dependencies: [19, 17, 21, 1378, 5604, 5508, 2]
 // Exports: default
 
-// Module 7561 (RoleIcon)
+// Module 7428 (RoleIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5600 */;
+import FastImageDefault from "FastImage" /* 5604 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5504);
+const Text_Text = tmp(5508);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let num = 0.9375;

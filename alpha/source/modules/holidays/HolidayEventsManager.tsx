@@ -1,24 +1,24 @@
-// Module ID: 19526
-// Function ID: 19527
+// Module ID: 19567
+// Function ID: 19568
 // Name: HolidayEventsManager
-// Dependencies: [1245, 10884, 502, 10885, 7484, 19527, 19529, 19530, 19531, 10886, 2]
+// Dependencies: [1245, 10158, 502, 10159, 7349, 19568, 19570, 19571, 19572, 10160, 2]
 
-// Module 19526 (HolidayEventsManager)
-import Constants from "Constants" /* 10885 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19527 */;
-import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 19529 */;
-import SoundpackActions from "SoundpackActions" /* 19530 */;
-import react_native from "react-native" /* 19531 */;
+// Module 19567 (HolidayEventsManager)
+import Constants from "Constants" /* 10159 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19568 */;
+import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 19570 */;
+import SoundpackActions from "SoundpackActions" /* 19571 */;
+import react_native from "react-native" /* 19572 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
-import SoundpackStore from "SoundpackStore" /* 10884 */;
+import SoundpackStore from "SoundpackStore" /* 10158 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
 let tmp;
-const getSoundsForPackDefault = tmp(10886);
+const getSoundsForPackDefault = tmp(10160);
 const Soundpacks = Constants.Soundpacks;
 class HolidayEventsManager extends AutomaticLifecycleManager {
   constructor() {
@@ -53,13 +53,13 @@ class HolidayEventsManager extends AutomaticLifecycleManager {
       }
     }
     if (isEligibleResult) {
-      isEligibleResult = null != tmp3(19527).soundpack;
+      isEligibleResult = null != tmp3(19568).soundpack;
     }
     if (isEligibleResult) {
       isEligibleResult = name !== lastSoundpackExperimentId;
     }
     if (isEligibleResult) {
-      isEligibleResult = soundpack !== tmp3(19527).soundpack;
+      isEligibleResult = soundpack !== tmp3(19568).soundpack;
     }
     if (isEligibleResult) {
       const obj3 = SoundpackActions;

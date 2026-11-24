@@ -1,23 +1,58 @@
 // Module ID: 15545
 // Function ID: 15546
-// Dependencies: [15546]
+// Dependencies: [15462, 15546]
+// Exports: getSupportedCurrencies
 
 // Module 15545
-import module_15546_mod from "module_15546" /* 15546 */;
+import _mod15462 from "module_15462" /* 15462 */;
+import currencies2 from "currencies" /* 15546 */;
 
-const call = prototype.call;
-let module_15546 = module_15546_mod;
-if (module_15546) {
-  const bind = prototype.bind;
-  module_15546 = bind.bind(call, call);
-}
-if (!module_15546) {
-  module_15546 = (arg0) => {
-    let closure_0 = arg0;
-    return function() {
-      return call(...arguments);
-    };
-  };
+function isSupportedCurrency(arr3, locale) {
+  let str = locale;
+  if (undefined === locale) {
+    str = "en";
+  }
+  try {
+    const obj = { style: "currency", currencyDisplay: "name", currency: arr3 };
+    const memoizedNumberFormat = _mod15462.createMemoizedNumberFormat(str, obj);
+    const str2 = memoizedNumberFormat.format(123);
+    if (str2.substring(0, 3) !== arr3) {
+      if (str2.substring(str2.length - 3) !== arr3) {
+        return true;
+      }
+    }
+    return false;
+  } catch (err) {
+  }
 }
 
-export default module_15546;
+export function getSupportedCurrencies(locale) {
+  let num;
+  const items = [];
+  const currencies = currencies2.currencies;
+  for (let num = 0; num < currencies.length; num = num + 1) {
+    let arr3 = currencies[num];
+    if (3 === arr3.length) {
+      if (isSupportedCurrency(arr3, locale)) {
+        let arr = items.push(arr3);
+      }
+    } else if (5 === arr3.length) {
+      if ("~" === arr3[3]) {
+        let indexOf = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
+        let index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[2]);
+        let indexOf2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
+        let index1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[4]);
+        if (index <= index1) {
+          do {
+            let sum = arr3.substring(0, 2) + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[index];
+            if (isSupportedCurrency(sum, locale)) {
+              let arr2 = items.push(sum);
+            }
+            index = index + 1;
+          } while (index <= index1);
+        }
+      }
+    }
+  }
+  return items;
+}

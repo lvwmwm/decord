@@ -1,15 +1,15 @@
-// Module ID: 12905
-// Function ID: 12906
+// Module ID: 12824
+// Function ID: 12825
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 10437, 4762, 4759, 4945, 4746, 504, 12906, 12911, 9080, 2]
+// Dependencies: [32, 9907, 4766, 4763, 4949, 4750, 504, 12825, 12830, 9420, 2]
 // Exports: default
 
-// Module 12905 (useAppLauncherOnboardingContent)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12911 */;
+// Module 12824 (useAppLauncherOnboardingContent)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10437 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9907 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import size from "module_2" /* 2 */;
 
 const constants = DismissibleContentConstants.DismissibleContentGroupName;
@@ -61,18 +61,18 @@ export default function useAppLauncherOnboardingContent(channelId) {
   const tmp3 = useCanShowAppLauncherOnboardingDefault({ channelId });
   const canShowAppsOrActivitiesBanner = tmp3.canShowAppsOrActivitiesBanner;
   if (tmp3.canShowBotsBanner) {
-    items.push(tmp(4746).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+    items.push(tmp(4750).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
   }
   if (canShowAppsOrActivitiesBanner) {
     const push = items.push;
-    const DismissibleContent = tmp(4746).DismissibleContent;
+    const DismissibleContent = tmp(4750).DismissibleContent;
     if (hasUsedActivities) {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
     } else {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
     }
   }
-  const tmpResult = tmp(9080);
+  const tmpResult = tmp(9420);
   let obj3 = { groupName: constants.APP_LAUNCHER_ONBOARDING };
   const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items, obj3), 2);
   let obj4 = { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };

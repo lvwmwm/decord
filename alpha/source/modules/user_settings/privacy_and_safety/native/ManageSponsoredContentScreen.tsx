@@ -1,10 +1,10 @@
-// Module ID: 17358
-// Function ID: 17359
+// Module ID: 17396
+// Function ID: 17397
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1071, 21, 1195, 2276, 4738, 7556, 1112, 4913, 575, 7348, 2187, 2]
+// Dependencies: [19, 17, 1071, 21, 1195, 2276, 4742, 7423, 1112, 4917, 575, 6014, 2187, 2]
 // Exports: default
 
-// Module 17358 (ManageSponsoredContentScreen)
+// Module 17396 (ManageSponsoredContentScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,11 +12,11 @@ import intl3 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
 import _modDef2276 from "module_2276" /* 2276 */;
-import UserSettings from "UserSettings" /* 4738 */;
-import TableRowGroup3 from "TableRowGroup" /* 7348 */;
+import UserSettings from "UserSettings" /* 4742 */;
+import TableRowGroup3 from "TableRowGroup" /* 6014 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -29,7 +29,7 @@ function AdTopicRow(adTopic) {
   let string;
   let tmp4;
   adTopic = adTopic.adTopic;
-  let AdTopicOptOuts = adTopic(4738).AdTopicOptOuts;
+  let AdTopicOptOuts = adTopic(4742).AdTopicOptOuts;
   const setting = AdTopicOptOuts.useSetting();
   const hasItem = setting.includes(adTopic);
   const tmp2 = obj[adTopic];
@@ -50,7 +50,7 @@ function AdTopicRow(adTopic) {
       AdTopicOptOuts2.updateSetting(items);
     }
   };
-  const TableSwitchRow = adTopic(7556).TableSwitchRow;
+  const TableSwitchRow = adTopic(7423).TableSwitchRow;
   intl = adTopic(1112).intl;
   const intl2 = adTopic(1112).intl;
   string = intl2.string;

@@ -1,16 +1,16 @@
-// Module ID: 16098
-// Function ID: 16099
+// Module ID: 16131
+// Function ID: 16132
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4855, 8712, 1071, 504, 1112, 11937, 8667, 16099, 2]
+// Dependencies: [4859, 9414, 1071, 504, 1112, 11815, 8935, 16132, 2]
 
-// Module 16098 (AccountBlockedUsersSetting)
+// Module 16131 (AccountBlockedUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import DenyIcon from "DenyIcon" /* 8667 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import DenyIcon from "DenyIcon" /* 8935 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

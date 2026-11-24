@@ -1,9 +1,9 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 7464
+// Function ID: 7465
 // Name: SocialLayerStorefrontStore
 // Dependencies: [2188, 502, 504, 572, 2]
 
-// Module 6849 (SocialLayerStorefrontStore)
+// Module 7464 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
@@ -107,9 +107,11 @@ class SocialLayerStorefrontStore extends Store {
     return obj[arg0];
   }
   getConfig() {
-    let config = null;
+    let config;
     if ("success" === obj.state) {
       config = obj.config;
+    } else {
+      config = null;
     }
     return config;
   }
@@ -449,7 +451,11 @@ obj = {
     obj[guildId] = { state: "error" };
   },
   SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_START: function handleStorefrontConfigFetchStart() {
-
+    let config = null;
+    if ("success" === obj.state) {
+      config = obj.config;
+    }
+    obj = { state: "loading", config };
   },
   SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_SUCCESS: function handleStorefrontConfigFetchSuccess(config) {
     config = config.config;

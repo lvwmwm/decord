@@ -1,14 +1,14 @@
-// Module ID: 7020
-// Function ID: 7021
+// Module ID: 6921
+// Function ID: 6922
 // Name: ActivityIndicator/ActivityIndicator
-// Dependencies: [17, 21, 5477, 575, 2]
+// Dependencies: [17, 21, 5481, 575, 2]
 // Exports: ActivityIndicator
 
-// Module 7020 (ActivityIndicator/ActivityIndicator)
+// Module 6921 (ActivityIndicator/ActivityIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken2 from "useToken" /* 5477 */;
+import useToken2 from "useToken" /* 5481 */;
 import size from "module_2" /* 2 */;
 
 const ActivityIndicator = react_native.ActivityIndicator;

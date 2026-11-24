@@ -1,15 +1,15 @@
-// Module ID: 11002
-// Function ID: 11003
+// Module ID: 10280
+// Function ID: 10281
 // Name: VideoBackgroundOptionsRadioGroup
-// Dependencies: [19, 1071, 21, 10736, 5824, 11003, 7347, 5819, 5822, 1112, 7349, 2]
+// Dependencies: [19, 1071, 21, 9612, 5885, 10281, 7125, 5880, 5883, 1112, 7127, 2]
 // Exports: default
 
-// Module 11002 (VideoBackgroundOptionsRadioGroup)
+// Module 10280 (VideoBackgroundOptionsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 5819 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5822 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 11003 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5880 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5883 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 10281 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

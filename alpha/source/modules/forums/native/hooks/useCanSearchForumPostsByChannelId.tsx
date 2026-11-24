@@ -1,13 +1,13 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11753
+// Function ID: 11754
 // Name: useCanSearchForumPostsByChannelId
-// Dependencies: [4762, 4845, 1071, 504, 2]
+// Dependencies: [4766, 4849, 1071, 504, 2]
 // Exports: useCanSearchForumPostsByChannelId
 
-// Module 11879 (useCanSearchForumPostsByChannelId)
+// Module 11753 (useCanSearchForumPostsByChannelId)
 import Constants from "Constants" /* 1071 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

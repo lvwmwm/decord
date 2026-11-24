@@ -1,19 +1,19 @@
-// Module ID: 11095
-// Function ID: 11096
+// Module ID: 10444
+// Function ID: 10445
 // Name: ActiveSpeakerTooltip
-// Dependencies: [32, 19, 17, 6620, 11067, 1071, 21, 4913, 575, 504, 6544, 7030, 11076, 5504, 1112, 2]
+// Dependencies: [32, 19, 17, 6807, 10416, 1071, 21, 4917, 575, 504, 6736, 6026, 10425, 5508, 1112, 2]
 
-// Module 11095 (ActiveSpeakerTooltip)
+// Module 10444 (ActiveSpeakerTooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 11076 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10425 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
-import StageChannelListStore from "StageChannelListStore" /* 11067 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import StageChannelListStore from "StageChannelListStore" /* 10416 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -52,7 +52,7 @@ const memoResult = react.memo(function ActiveSpeakerTooltip(channel) {
     const speakingParticipants = ChannelRTCStore.getSpeakingParticipants(channel.id);
     const items = [speakingParticipants.map((user) => user.user), ChannelRTCStore.getParticipantsVersion(channel.id)];
     return items;
-  }, items1, channel(6544).isVersionEqual), 1)[0];
+  }, items1, channel(6736).isVersionEqual), 1)[0];
   const first1 = _slicedToArray(closure_7(), 1)[0];
   let tmp6 = null;
   if (0 !== first.length) {
@@ -61,13 +61,13 @@ const memoResult = react.memo(function ActiveSpeakerTooltip(channel) {
       const obj2 = { accessibilityRole: "button", style: tmp.container, onPress: tmp5, children: closure_9(View, obj3) };
       obj3 = { style: tmp.participantItemContainer, children: items2 };
       const obj4 = { style: tmp.participantAvatarContainer, children: closure_8(tmp11, obj5) };
-      const PressableOpacity = tmp2(7030).PressableOpacity;
+      const PressableOpacity = tmp2(6026).PressableOpacity;
       obj5 = { namesStyle: tmp.participantAvatarText, users: first, withNames: true, channelId: channel.id, guildId: channel.getGuildId() };
       tmp11 = UserSummaryItemDefault;
       items2 = [closure_8(View, obj4), ];
       const obj6 = { style: tmp.participantNameplateContainer, children: closure_8(Text, obj7) };
       obj7 = { style: tmp.participantNameplateSpeakingText, variant: "body-xs/medium", color: "text-default", children: intl.format(channel(1112).t["+dia6l"], obj8) };
-      Text = tmp2(5504).Text;
+      Text = tmp2(5508).Text;
       intl = tmp2(1112).intl;
       obj8 = { count: first.length };
       items2[1] = closure_8(View, obj6);

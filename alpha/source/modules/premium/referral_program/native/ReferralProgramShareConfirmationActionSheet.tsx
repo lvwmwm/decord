@@ -1,21 +1,21 @@
-// Module ID: 14034
-// Function ID: 14035
+// Module ID: 13713
+// Function ID: 13714
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1071, 21, 4913, 575, 4969, 8843, 1186, 5504, 1112, 5511, 7672, 5127, 7737, 2187, 5141, 7515, 5929, 14035, 2]
+// Dependencies: [17, 1071, 21, 4917, 575, 4973, 9001, 1186, 5508, 1112, 5515, 7011, 5131, 7714, 2187, 5145, 7381, 5989, 13714, 2]
 // Exports: default
 
-// Module 14034 (ReferralProgramShareConfirmationActionSheet)
+// Module 13713 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import UserUtilsDefault from "UserUtils" /* 4969 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 8843 */;
+import UserUtilsDefault from "UserUtils" /* 4973 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 9001 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -40,7 +40,7 @@ function SharedUser(user) {
   const tmp = closure_8();
   let obj = UserUtilsDefault;
   const name = obj.getName(user);
-  const tmp6 = trialCreationResult === user(8843).CreateReferralStatus.FAIL;
+  const tmp6 = trialCreationResult === user(9001).CreateReferralStatus.FAIL;
   let obj2 = { style: tmp.recipientRow, children: items1 };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -55,16 +55,16 @@ function SharedUser(user) {
   if (tmp6) {
     const obj4 = { children: items2 };
     const obj5 = { variant: "body-md/medium", color: "text-muted", style: tmp.recipientDisplayName, children: name };
-    items2 = [closure_5(user(5504).Text, obj5), ];
+    items2 = [closure_5(user(5508).Text, obj5), ];
     const obj6 = { variant: "body-md/medium", color: "text-muted", children: intl.format(user(1112).t.RO3T4B, obj7) };
-    const Text = tmp5(5504).Text;
+    const Text = tmp5(5508).Text;
     intl = tmp5(1112).intl;
     obj7 = { userName: name };
     items2[1] = closure_5(Text, obj6);
     tmp9Result = tmp7(closure_6, obj4);
   } else {
     const obj8 = { variant: "body-md/medium", color: "text-strong", style: tmp.recipientDisplayName, children: name };
-    tmp9Result = tmp9(tmp5(5504).Text, obj8);
+    tmp9Result = tmp9(tmp5(5508).Text, obj8);
   }
   items1[1] = tmp9Result;
   const obj9 = {
@@ -80,10 +80,10 @@ function SharedUser(user) {
       obj2.openPrivateChannel(obj3);
     }
   };
-  const Button = tmp5(5511).Button;
+  const Button = tmp5(5515).Button;
   intl2 = tmp5(1112).intl;
   obj10 = { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-  ChatIcon = tmp5(7672).ChatIcon;
+  ChatIcon = tmp5(7011).ChatIcon;
   items1[2] = closure_5(Button, obj9);
   return closure_7(tmp8, obj2);
 }
@@ -127,17 +127,17 @@ export default function ReferralProgramShareConfirmationActionSheet(trialCreatio
   let obj = { helpdeskArticle: obj2.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM) };
   const AwGSWl = tmp5(1112).t.AwGSWl;
   obj2 = HelpdeskUtilsDefault;
-  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(7515).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
+  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(7381).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
   const formatResult = format(AwGSWl, obj);
-  const BottomSheet = tmp5(5141).BottomSheet;
+  const BottomSheet = tmp5(5145).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(14035).FistBumpSpotIllustration, {}) };
-  Stack = tmp5(5929).Stack;
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13714).FistBumpSpotIllustration, {}) };
+  Stack = tmp5(5989).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };
-  items[1] = closure_5(tmp5(5504).Text, obj6);
+  items[1] = closure_5(tmp5(5508).Text, obj6);
   const obj7 = { variant: "body-md/medium", color: "text-default", style: tmp.subheader, children: formatResult };
-  items[2] = closure_5(tmp5(5504).Text, obj7);
+  items[2] = closure_5(tmp5(5508).Text, obj7);
   const obj8 = {
     style: tmp.recipientContainer,
     children: arr2.map((user) => {

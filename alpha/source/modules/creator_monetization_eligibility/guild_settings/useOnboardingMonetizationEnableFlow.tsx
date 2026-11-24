@@ -1,11 +1,11 @@
-// Module ID: 19986
-// Function ID: 19987
+// Module ID: 20029
+// Function ID: 20030
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 4780, 1386, 1071, 6881, 563, 19987, 19988, 19989, 6873, 1112, 2187, 19990, 2]
+// Dependencies: [19, 4784, 1386, 1071, 7492, 563, 20030, 20031, 20032, 7484, 1112, 2187, 20033, 2]
 // Exports: default
 
-// Module 19986 (useOnboardingMonetizationEnableFlow)
-import GuildRecord from "GuildRecord" /* 4780 */;
+// Module 20029 (useOnboardingMonetizationEnableFlow)
+import GuildRecord from "GuildRecord" /* 4784 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
@@ -57,23 +57,23 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(19987);
+  const tmp10 = refresh(20030);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(19988);
+  const tmp9Result = refresh(20031);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(19989)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(20032)(eligibility));
   let hasItem2;
-  refresh(19989)(eligibility);
+  refresh(20032)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -88,8 +88,8 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     tmp19 = true === hasItem3;
   }
   let id2;
-  const useIsMonetizationReapplicationDisabled = tmp(6873).useIsMonetizationReapplicationDisabled;
-  tmp(6873);
+  const useIsMonetizationReapplicationDisabled = tmp(7484).useIsMonetizationReapplicationDisabled;
+  tmp(7484);
   if (features != null) {
     id2 = features.id;
   }
@@ -129,7 +129,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(19990);
+    const tmpResult4 = tmp(20033);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {

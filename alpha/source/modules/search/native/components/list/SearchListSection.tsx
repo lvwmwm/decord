@@ -1,15 +1,15 @@
-// Module ID: 18779
-// Function ID: 18780
+// Module ID: 18821
+// Function ID: 18822
 // Name: SearchListSection
-// Dependencies: [19, 17, 8576, 21, 4913, 5504, 7565, 12797, 7030, 2]
+// Dependencies: [19, 17, 8878, 21, 4917, 5508, 7432, 9675, 6026, 2]
 
-// Module 18779 (SearchListSection)
+// Module 18821 (SearchListSection)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import SearchConstants from "SearchConstants" /* 8576 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import SearchConstants from "SearchConstants" /* 8878 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -38,14 +38,14 @@ const memoResult = react.memo(function SearchListSection(trailing) {
   } else {
     let ChevronSmallDownIcon;
     if (true === collapsed) {
-      ChevronSmallDownIcon = tmp3(7565).ChevronSmallRightIcon;
+      ChevronSmallDownIcon = tmp3(7432).ChevronSmallRightIcon;
     } else {
-      ChevronSmallDownIcon = tmp3(12797).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp3(9675).ChevronSmallDownIcon;
     }
     const obj = { accessibilityRole: "button", accessibilityLabel: title, accessibilityState: obj3, activeOpacity: 0.4, onPress: onToggle, style: tmp.section, children: items1 };
     items1 = [tmp5, ];
     obj3 = { expanded: true !== collapsed };
-    const PressableOpacity = tmp3(7030).PressableOpacity;
+    const PressableOpacity = tmp3(6026).PressableOpacity;
     items1[1] = tmp2(ChevronSmallDownIcon, { size: "sm" });
     return React3(PressableOpacity, obj);
   }

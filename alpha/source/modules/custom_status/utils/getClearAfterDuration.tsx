@@ -1,12 +1,12 @@
-// Module ID: 9061
-// Function ID: 9062
+// Module ID: 9394
+// Function ID: 9395
 // Name: getClearAfterDuration
-// Dependencies: [9057, 38, 2]
+// Dependencies: [9390, 38, 2]
 // Exports: default
 
-// Module 9061 (getClearAfterDuration)
+// Module 9394 (getClearAfterDuration)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 9057 */;
+import Constants from "Constants" /* 9390 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;

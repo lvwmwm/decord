@@ -1,15 +1,15 @@
-// Module ID: 13073
-// Function ID: 13074
+// Module ID: 12992
+// Function ID: 12993
 // Name: PollDurationActionSheet
-// Dependencies: [19, 21, 13072, 4922, 5127, 7347, 1112, 7349, 7553, 2]
+// Dependencies: [19, 21, 12991, 4926, 5131, 7125, 1112, 7127, 7420, 2]
 // Exports: default
 
-// Module 13073 (PollDurationActionSheet)
+// Module 12992 (PollDurationActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import ActionSheet2 from "ActionSheet" /* 7553 */;
-import usePollDurationOptionsDefault from "usePollDurationOptions" /* 13072 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4926 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import ActionSheet2 from "ActionSheet" /* 7420 */;
+import usePollDurationOptionsDefault from "usePollDurationOptions" /* 12991 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ function PollDurationRadioGroup(onChange) {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
   }, items);
-  const TableRadioGroup = onChange(7347).TableRadioGroup;
+  const TableRadioGroup = onChange(7125).TableRadioGroup;
   const intl = onChange(1112).intl;
   const entries = Object.entries(tmp);
   return <TableRadioGroup title={intl.string(onChange(1112).t["0ZStp9"])} hasIcons={false} onChange={callback} defaultValue={selectedDuration}>{entries.map((item) => {

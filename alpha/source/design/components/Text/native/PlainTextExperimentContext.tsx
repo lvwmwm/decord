@@ -1,10 +1,10 @@
-// Module ID: 5508
-// Function ID: 5509
+// Module ID: 5512
+// Function ID: 5513
 // Name: PlainTextExperimentContext
 // Dependencies: [19, 21, 2]
 // Exports: PlainTextExperimentProvider, usePlainTextExperimentEnabled
 
-// Module 5508 (PlainTextExperimentContext)
+// Module 5512 (PlainTextExperimentContext)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

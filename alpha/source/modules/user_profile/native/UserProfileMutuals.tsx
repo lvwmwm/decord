@@ -1,18 +1,18 @@
-// Module ID: 14628
-// Function ID: 14629
+// Module ID: 14896
+// Function ID: 14897
 // Name: UserProfileMutuals
-// Dependencies: [19, 17, 8069, 7564, 21, 4913, 8135, 13499, 14442, 5127, 13506, 2119, 8067, 6835, 7030, 14486, 1186, 5504, 13526, 13536, 7322, 13501, 2]
+// Dependencies: [19, 17, 6011, 7431, 21, 4917, 6255, 13425, 14711, 5131, 13431, 2119, 6007, 8459, 6026, 14755, 1186, 5508, 13432, 13442, 6926, 13426, 2]
 // Exports: default
 
-// Module 14628 (UserProfileMutuals)
+// Module 14896 (UserProfileMutuals)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import Constants from "Constants" /* 7564 */;
-import Constants2 from "Constants" /* 8069 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import Constants from "Constants" /* 6011 */;
+import Constants2 from "Constants" /* 7431 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -20,8 +20,8 @@ let dependencyMap;
 let metroImportDefault;
 let metroRequire;
 const View = react_native.View;
-const UserProfileSections = Constants2.UserProfileSections;
-const DIVIDER_DOT = Constants.DIVIDER_DOT;
+const UserProfileSections = Constants.UserProfileSections;
+const DIVIDER_DOT = Constants2.DIVIDER_DOT;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let c8 = "body-sm/medium";
 let c9 = "text-default";
@@ -58,12 +58,12 @@ export default function UserProfileMutuals(user) {
   c3 = undefined;
   let tmp = closure_10();
   let tmp2 = user;
-  let obj = user(8135);
+  let obj = user(6255);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c2, trackUserProfileAction: c3 } = userProfileAnalyticsContext);
-  ({ mutualFriends, mutualGuilds } = guildId(13499)(user));
-  guildId(13499)(user);
-  if (guildId(14442)(user)) {
+  ({ mutualFriends, mutualGuilds } = guildId(13425)(user));
+  guildId(13425)(user);
+  if (guildId(14711)(user)) {
     if (!(null != mutualFriends && mutualFriends.length > 0)) {
       if (!(null != mutualGuilds && mutualGuilds.length > 0)) {
         return null;
@@ -83,11 +83,11 @@ export default function UserProfileMutuals(user) {
               _undefined2({ action: "PRESS_SECTION", section: MUTUAL_FRIENDS });
               const obj = ActionSheetActionCreatorsDefault;
               const obj2 = { user, section: MUTUAL_FRIENDS, guildId, onPressMutualFriend, onPressMutualGuild };
-              obj.openLazy(asyncRequire(13506, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
+              obj.openLazy(asyncRequire(13431, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
             },
         children: items
       };
-      const PressableOpacity = tmp2(7030).PressableOpacity;
+      const PressableOpacity = tmp2(6026).PressableOpacity;
       const obj4 = {
         size: tmp2(1186).AvatarSizes.SIZE_16,
         totalCount: mapped.length,
@@ -98,10 +98,10 @@ export default function UserProfileMutuals(user) {
               return closure_1_6(Avatar, obj, user.id);
             })
       };
-      const AvatarPile = tmp2(14486).AvatarPile;
+      const AvatarPile = tmp2(14755).AvatarPile;
       items = [closure_6(AvatarPile, obj4), ];
-      const obj5 = { variant, color, children: guildId(13526)(mutualFriends.length) };
-      const Text = tmp2(5504).Text;
+      const obj5 = { variant, color, children: guildId(13432)(mutualFriends.length) };
+      const Text = tmp2(5508).Text;
       items[1] = closure_6(Text, obj5);
       tmp9Result = tmp9(PressableOpacity, obj3);
     }
@@ -109,7 +109,7 @@ export default function UserProfileMutuals(user) {
     let tmp15 = tmp7 && tmp8;
     if (tmp15) {
       const obj6 = { variant, color, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DIVIDER_DOT };
-      tmp15 = closure_6(tmp2(5504).Text, obj6);
+      tmp15 = closure_6(tmp2(5508).Text, obj6);
     }
     items1[1] = tmp15;
     let tmp9Result2 = null;
@@ -125,14 +125,14 @@ export default function UserProfileMutuals(user) {
               _undefined2({ action: "PRESS_SECTION", section: MUTUAL_GUILDS });
               let obj = ActionSheetActionCreatorsDefault;
               let obj2 = { user, section: MUTUAL_GUILDS, guildId, onPressMutualFriend, onPressMutualGuild };
-              obj.openLazy(asyncRequire(13506, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
+              obj.openLazy(asyncRequire(13431, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
             },
         children: items2
       };
-      const PressableOpacity2 = tmp2(7030).PressableOpacity;
+      const PressableOpacity2 = tmp2(6026).PressableOpacity;
       if (!(null != mutualFriends && mutualFriends.length > 0)) {
         const obj8 = {
-          size: tmp2(7322).GuildIconSizes.XXSMALL,
+          size: tmp2(6926).GuildIconSizes.XXSMALL,
           totalCount: mapped1.length,
           names: mapped1.map((name) => name.name),
           children: mapped1.map((guild) => {
@@ -141,12 +141,12 @@ export default function UserProfileMutuals(user) {
                   return closure_1_6(tmp, obj, guild.id);
                 })
         };
-        const GuildIconPile = tmp2(13536).GuildIconPile;
+        const GuildIconPile = tmp2(13442).GuildIconPile;
         tmp21 = closure_6(GuildIconPile, obj8);
       }
       items2 = [tmp21, ];
-      const obj9 = { variant, color, children: guildId(13501)(mutualGuilds.length) };
-      const Text2 = tmp2(5504).Text;
+      const obj9 = { variant, color, children: guildId(13426)(mutualGuilds.length) };
+      const Text2 = tmp2(5508).Text;
       items2[1] = closure_6(Text2, obj9);
       tmp9Result2 = tmp9(PressableOpacity2, obj7);
     }

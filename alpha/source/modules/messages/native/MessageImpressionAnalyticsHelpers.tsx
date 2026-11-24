@@ -1,20 +1,18 @@
-// Module ID: 10408
-// Function ID: 10409
+// Module ID: 11833
+// Function ID: 11834
 // Name: MessageImpressionAnalyticsHelpers
-// Dependencies: [19, 5632, 5657, 1071, 8390, 8438, 10409, 6891, 5635, 8437, 10410, 10411, 5633, 2]
+// Dependencies: [19, 5636, 5728, 1071, 8211, 5650, 11834, 7500, 5639, 5648, 5637, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 10408 (MessageImpressionAnalyticsHelpers)
-import CodedLink from "CodedLink" /* 5635 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 8390 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8437 */;
-import Constants2 from "Constants" /* 8438 */;
-import MessageViewTrackingManager from "MessageViewTrackingManager" /* 10409 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10410 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10411 */;
+// Module 11833 (MessageImpressionAnalyticsHelpers)
+import CodedLink from "CodedLink" /* 5639 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 5648 */;
+import Constants2 from "Constants" /* 5650 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 8211 */;
+import MessageViewTrackingManager from "MessageViewTrackingManager" /* 11834 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5632 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import InviteStore from "InviteStore" /* 5636 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5728 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -25,45 +23,33 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-function getVoiceInviteEmbedRenderInfo(state) {
+function shouldTrackVoiceInviteEmbed(state) {
   if (state.state !== metroImportAll.RESOLVING) {
     if (state.state !== metroImportAll.EXPIRED) {
       if (state.state !== metroImportAll.BANNED) {
         if (state.state !== metroImportAll.ERROR) {
-          const obj5 = InviteTypeUtils;
-          if (obj5.getInviteType(state) !== InviteTypes.GUILD) {
-            return null;
+          const obj2 = InviteTypeUtils;
+          if (obj2.getInviteType(state) !== InviteTypes.GUILD) {
+            return false;
           } else {
-            const tmp7Result = InviteTypeUtils;
-            const guildInviteExtendedType = tmp7Result.getGuildInviteExtendedType(state);
+            const tmp5Result = InviteTypeUtils;
+            const guildInviteExtendedType = tmp5Result.getGuildInviteExtendedType(state);
             if (guildInviteExtendedType !== InviteTypeUtils.GuildInviteExtendedType.VOICE_CHANNEL) {
-              return null;
+              return false;
             } else {
               const guild = state.guild;
               let id;
               if (guild != null) {
                 id = guild.id;
               }
-              let tmp4 = null;
-              if (null != id) {
-                const obj = { guildId: id, location: "mobile_invite_embed_impression" };
-                const tmp7Result3 = VoiceChannelListInviteExperiment;
-                let enabled = tmp7Result3.getVoiceChannelListInviteExperiment(obj).enabled;
-                if (enabled) {
-                  const tmp7Result4 = VoiceChannelListInviteEmbed;
-                  enabled = tmp7Result4.canShowVoiceChannelListInviteEmbed(state);
-                }
-                tmp4 = { treatmentRendered: enabled };
-                const obj2 = { treatmentRendered: enabled };
-              }
-              return tmp4;
+              return null != id;
             }
           }
         }
       }
     }
   }
-  return null;
+  return false;
 }
 ({ ChannelTypes: metroRequire, GuildFeatures: metroImportDefault, InviteStates: metroImportAll, MessageFlags: c9 } = Constants);
 const LinkType = MessageEmbedConstants.LinkType;
@@ -255,7 +241,7 @@ export function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEm
     const items = [];
     const item = arr.forEach((message) => {
       let inviteInstanceId;
-      let tmp20;
+      let tmp21;
       message = message.message;
       if (!message.hasFlag(constants.EPHEMERAL)) {
         const codedLinks = message.codedLinks;
@@ -268,8 +254,7 @@ export function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEm
             let invite = InviteStore.getInvite(tmp6.code);
             let tmp34 = invite;
             if (null != invite) {
-              let tmp37 = getVoiceInviteEmbedRenderInfo(tmp34);
-              if (null != tmp37) {
+              if (shouldTrackVoiceInviteEmbed(tmp34)) {
                 channel = tmp34.channel;
                 let id;
                 if (channel != null) {
@@ -278,7 +263,7 @@ export function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEm
                 if (id == null) {
                   id = null;
                 }
-                let tmp10 = id;
+                let tmp11 = id;
                 let guild = tmp34.guild;
                 let id1;
                 if (guild != null) {
@@ -287,19 +272,19 @@ export function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEm
                 if (id1 == null) {
                   id1 = null;
                 }
-                let tmp13 = id1;
-                let someResult = null != tmp10;
+                let tmp14 = id1;
+                let someResult = null != tmp11;
                 if (someResult) {
-                  someResult = null != tmp13;
+                  someResult = null != tmp14;
                 }
                 if (someResult) {
-                  let voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(tmp10, tmp13);
+                  let voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(tmp11, tmp14);
                   someResult = voiceStatesForChannelAlt.some((voiceState) => voiceState.voiceState.selfStream);
                 }
-                let obj = { type: tmp7(10409).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
-                tmp20 = someResult;
+                let obj = { type: tmp7(11834).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp14, inviteChannelId: tmp11, inviteInstanceId, hasActiveStream: tmp21 };
+                tmp21 = someResult;
                 let push = items.push;
-                let tmp7Result = tmp7(5633);
+                let tmp7Result = tmp7(5637);
                 inviteInstanceId = tmp7Result.getInviteInstanceId(tmp6.code, message.id);
                 if (inviteInstanceId == null) {
                   inviteInstanceId = null;

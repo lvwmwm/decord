@@ -1,23 +1,23 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13051
+// Function ID: 13052
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 11748, 1071, 21, 4913, 5649, 1107, 13131, 1112, 10274, 11749, 1653, 9659, 8570, 1494, 1628, 13134, 7737, 5085, 11953, 4974, 5920, 13135, 11741, 2]
+// Dependencies: [19, 17, 11633, 1071, 21, 4917, 6003, 1107, 13049, 1112, 10618, 11634, 1653, 10447, 8872, 1494, 1628, 13052, 7714, 5089, 11836, 4978, 5980, 13053, 11626, 2]
 
-// Module 13133 (VoicePanelChatView)
+// Module 13051 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1112 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5649 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10274 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13131 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10447 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10618 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11633 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11634 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13049 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

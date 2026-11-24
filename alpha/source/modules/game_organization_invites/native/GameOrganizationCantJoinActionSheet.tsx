@@ -1,17 +1,17 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12181
+// Function ID: 12182
 // Name: GameOrganizationCantJoinActionSheet
-// Dependencies: [19, 4784, 11896, 21, 5127, 12242, 504, 6835, 2639, 11225, 7515, 1112, 5511, 2]
+// Dependencies: [19, 4788, 11770, 21, 5131, 12182, 504, 8459, 2639, 10603, 7381, 1112, 5515, 2]
 // Exports: default
 
-// Module 12241 (GameOrganizationCantJoinActionSheet)
+// Module 12181 (GameOrganizationCantJoinActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import transitionToGuild from "transitionToGuild" /* 6835 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12242 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import transitionToGuild from "transitionToGuild" /* 8459 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12182 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11770 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -59,12 +59,12 @@ export default function GameOrganizationCantJoinActionSheet(arg0) {
     } else {
       lXyJMS = _modDef2639["IIR/NZ"];
     }
-    const PromoSheet = tmp5(11225).PromoSheet;
+    const PromoSheet = tmp5(10603).PromoSheet;
     const intl = tmp5(1112).intl;
     const obj3 = { displayNoun: str };
     const intl2 = tmp5(1112).intl;
     const obj4 = { displayNoun: str, guildName: tmp3.linkedGuild.name };
-    const Button = tmp5(5511).Button;
+    const Button = tmp5(5515).Button;
     if (stateFromStores) {
       const obj5 = { text: intl4.string(_modDef2639.H1wMHV), size: "lg", onPress: tmp7 };
       intl4 = tmp5(1112).intl;

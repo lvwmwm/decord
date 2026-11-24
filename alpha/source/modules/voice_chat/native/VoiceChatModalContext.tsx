@@ -1,10 +1,10 @@
-// Module ID: 10714
-// Function ID: 10715
+// Module ID: 9989
+// Function ID: 9990
 // Name: VoiceChatModalContext
 // Dependencies: [19, 2]
 // Exports: useVoiceChatNavigationContext
 
-// Module 10714 (VoiceChatModalContext)
+// Module 9989 (VoiceChatModalContext)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

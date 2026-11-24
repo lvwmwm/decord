@@ -1,20 +1,20 @@
-// Module ID: 17828
-// Function ID: 17829
+// Module ID: 17866
+// Function ID: 17867
 // Name: WaterwheelsDiscoverNavigation
-// Dependencies: [4946, 1071, 10041, 17829, 6835, 2]
+// Dependencies: [4950, 1071, 8780, 17867, 8459, 2]
 // Exports: leaveWaterwheelsDiscover, selectWaterwheelsDiscover, selectWaterwheelsDiscoverFromGuildsBar
 
-// Module 17828 (WaterwheelsDiscoverNavigation)
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 10041 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17829 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+// Module 17866 (WaterwheelsDiscoverNavigation)
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 8780 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17867 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const transitionToGuild = tmp(6835);
+const transitionToGuild = tmp(8459);
 ({ ME: closure_4, WATERWHEELS: hasOwnProperty } = Constants);
 const WaterwheelsDiscoverNavigation = "WaterwheelsDiscoverNavigation";
 const result = size.fileFinishedImporting("modules/waterwheels/discover/native/WaterwheelsDiscoverNavigation.tsx");
@@ -30,10 +30,13 @@ export function selectWaterwheelsDiscoverFromGuildsBar() {
 }
 export function selectWaterwheelsDiscover() {
   const obj = WaterwheelsDiscoverExperiment;
-  if (obj.getWaterwheelsDiscoverEnabled(WaterwheelsDiscoverNavigation)) {
+  let flag = obj.getWaterwheelsDiscoverEnabled(WaterwheelsDiscoverNavigation);
+  if (flag) {
     const tmpResult = transitionToGuild;
     tmpResult.transitionToGuild(hasOwnProperty);
+    flag = true;
   }
+  return flag;
 }
 export function leaveWaterwheelsDiscover() {
   if (SelectedGuildStore.getGuildId() === hasOwnProperty) {

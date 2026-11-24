@@ -1,31 +1,31 @@
-// Module ID: 13907
-// Function ID: 13908
+// Module ID: 11165
+// Function ID: 11166
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 17, 8075, 1071, 1082, 21, 8921, 1378, 2185, 13908, 13906, 9608, 9246, 9612, 13909, 13912, 7092, 1112, 7095, 1186, 8186, 8142, 8070, 504, 9897, 7520, 7539, 2152, 8074, 9611, 2]
+// Dependencies: [19, 17, 6185, 1071, 1082, 21, 9126, 1378, 2185, 11166, 11164, 11167, 9127, 11169, 11425, 11428, 7229, 1112, 7065, 1186, 11449, 6262, 6012, 504, 11453, 6253, 6254, 2152, 6184, 11460, 2]
 // Exports: default
 
-// Module 13907 (CollectiblesShopGiftModal)
+// Module 11165 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import StringUtils from "StringUtils" /* 2152 */;
-import Navigator2 from "Navigator" /* 7092 */;
-import NavigatorHeader from "NavigatorHeader" /* 7095 */;
-import NoResults from "NoResults" /* 8186 */;
-import openGiftModal from "openGiftModal" /* 13906 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13909 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 13912 */;
+import NavigatorHeader from "NavigatorHeader" /* 7065 */;
+import Navigator2 from "Navigator" /* 7229 */;
+import openGiftModal from "openGiftModal" /* 11164 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 11425 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 11428 */;
+import NoResults from "NoResults" /* 11449 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8075 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6185 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const CollectiblesActionCreators = tmp(8074);
+const CollectiblesActionCreators = tmp(6184);
 function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;
@@ -136,13 +136,13 @@ export default function CollectiblesShopGiftModal(skuId) {
   const items = [CollectiblesCategoryStore];
   const items1 = [skuId];
   const stateFromStores = obj.useStateFromStores(items, () => CollectiblesCategoryStore.getProduct(skuId), items1);
-  const obj2 = skuId(9897);
+  const obj2 = skuId(11453);
   const obj3 = { needsCategory: false, seedCategoryStore: true, shouldFetchProduct: null == stateFromStores };
   const state = obj2.useCollectiblesShopProduct(skuId, obj3).state;
   const items2 = [];
-  const tmp7 = skuId1(7520);
+  const tmp7 = skuId1(6253);
   const arraySpreadResult = HermesBuiltin.arraySpread(items2, analyticsLocations, 0);
-  items2[arraySpreadResult] = skuId1(7539).COLLECTIBLES_MOBILE_GIFT_MODAL;
+  items2[arraySpreadResult] = skuId1(6254).COLLECTIBLES_MOBILE_GIFT_MODAL;
   const tmp6 = skuId1;
   skuId1 = undefined;
   const analyticsLocations2 = tmp7(items2).analyticsLocations;
@@ -159,7 +159,7 @@ export default function CollectiblesShopGiftModal(skuId) {
       tmp16Result = tmp16(CollectiblesShopGiftModalContent, obj5);
     } else {
       const obj6 = { onDismiss: onGiftModalDismiss, title: intl.string(tmp3(1112).t["JCFN/y"]) };
-      const tmp6Result = tmp6(9611);
+      const tmp6Result = tmp6(11460);
       intl = tmp3(1112).intl;
       tmp16Result = tmp16(tmp6Result, obj6);
     }

@@ -1,16 +1,16 @@
-// Module ID: 10688
-// Function ID: 10689
+// Module ID: 9962
+// Function ID: 9963
 // Name: openFrame
-// Dependencies: [6623, 6624, 1071, 10622, 5557, 1098, 2]
+// Dependencies: [6810, 6811, 1071, 9855, 5561, 1098, 2]
 // Exports: default, shouldOpenAppChannel
 
-// Module 10688 (openFrame)
+// Module 9962 (openFrame)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10622 */;
-import FramesStore from "FramesStore" /* 6623 */;
-import FramesConstants from "FramesConstants" /* 6624 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5561 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9855 */;
+import FramesStore from "FramesStore" /* 6810 */;
+import FramesConstants from "FramesConstants" /* 6811 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

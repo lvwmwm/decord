@@ -1,85 +1,87 @@
-// Module ID: 18624
-// Function ID: 18625
+// Module ID: 18665
+// Function ID: 18666
 // Name: useConjureMentionCandidates
-// Dependencies: [19, 502, 4825, 4784, 1386, 6621, 1071, 504, 12292, 6622, 6679, 18472, 11, 4850, 2]
+// Dependencies: [19, 502, 4829, 4788, 1386, 6808, 1071, 504, 12231, 6809, 6864, 18513, 11, 4854, 2]
 // Exports: default
 
-// Module 18624 (useConjureMentionCandidates)
+// Module 18665 (useConjureMentionCandidates)
 import Constants from "Constants" /* 1071 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
-import GuildUtilsDefault from "GuildUtils" /* 6679 */;
-import conjureMentions from "conjureMentions" /* 18472 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4854 */;
+import GuildUtilsDefault from "GuildUtils" /* 6864 */;
+import conjureMentions from "conjureMentions" /* 18513 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guild, set;
+let _require, set;
 
 const Permissions = Constants.Permissions;
 let result = size.fileFinishedImporting("modules/conjure/chat/useConjureMentionCandidates.tsx");
 
 export default function useConjureMentionCandidates(arg0, str) {
   let closure_0;
-  let collaborators;
-  let guild_id;
   _require = arg0;
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = true;
+  }
+  let creator;
+  let stateFromStores1;
+  let formatted;
   let tmp = _require;
-  let tmp2 = collaborators;
+  let tmp2 = creator;
   let obj = require("get initialized");
   let items = [ConjureProjectStore];
   let items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(closure_0), items1);
   let obj2 = require("useConjureProjectCreator");
   const conjureProjectPeople = obj2.useConjureProjectPeople(stateFromStores);
-  const creator = conjureProjectPeople.creator;
-  collaborators = conjureProjectPeople.collaborators;
-  let items2 = [guild_id];
+  creator = conjureProjectPeople.creator;
+  const collaborators = conjureProjectPeople.collaborators;
+  let items2 = [stateFromStores1];
   const obj3 = require("get initialized");
-  const stateFromStores1 = obj3.useStateFromStores(items2, () => guild_id.getId());
-  guild_id = undefined;
+  stateFromStores1 = obj3.useStateFromStores(items2, () => stateFromStores1.getId());
+  let guild_id;
   if (null != stateFromStores) {
     const tmpResult = tmp(tmp2[9]);
     if (tmpResult.isProjectGuildCollaborationEnabled(stateFromStores)) {
       guild_id = stateFromStores.guild_id;
     }
   }
-  let formatted;
+  formatted = undefined;
   if (str != null) {
     formatted = str.toLowerCase();
   }
   if (formatted == null) {
     formatted = null;
   }
-  let items3 = [guild_id, formatted];
-  const effect = stateFromStores1.useEffect(() => {
-    let tmp2 = null != guild_id;
-    const tmp = guild_id;
-    if (tmp2) {
-      tmp2 = null != formatted;
-    }
-    if (tmp2) {
+  let items3 = [flag, guild_id, formatted];
+  const effect = collaborators.useEffect(() => {
+    const tmp = flag && null != guild_id && null != formatted;
+    if (tmp) {
       const obj = GuildUtilsDefault;
-      const members = obj.requestMembers(tmp, formatted, 100);
+      const members = obj.requestMembers(guild_id, formatted, 100);
     }
   }, items3);
-  let items4 = [formatted, GuildStore, UserStore];
+  let items4 = [guild_id, formatted, UserStore];
   const items5 = [stateFromStores, guild_id, formatted, creator, collaborators, stateFromStores1];
   const tmpResult2 = tmp(tmp2[7]);
   return tmpResult2.useStateFromStoresArray(items4, function() {
+    let _Set1;
     let user;
     if (null == formatted) {
       return [];
     } else {
       let items;
       let items2;
-      guild = null;
+      let guild = null;
       if (null != guild_id) {
-        guild = guild.getGuild(tmp23);
+        guild = formatted.getGuild(tmp23);
       }
       function matches(id) {
         let nick = null;
@@ -94,26 +96,26 @@ export default function useConjureMentionCandidates(arg0, str) {
       const tmp3 = globalThis;
       let prop;
       const _Set = Set;
-      if (matches != null) {
-        prop = matches.collaborator_role_ids;
+      if (_Set1 != null) {
+        prop = _Set1.collaborator_role_ids;
       }
       if (prop == null) {
         prop = [];
       }
       const self = this;
       const self2 = this;
-      const _Set1 = new _Set(prop);
+      _Set1 = new _Set(prop);
       let tmp6 = _Set1;
       let hasItem = null != guild;
       if (hasItem) {
         const has = _Set1.has;
-        let obj = stateFromStores(collaborators[12]);
+        let obj = flag(creator[12]);
         hasItem = has(obj.castGuildIdAsEveryoneGuildRoleId(guild.id));
       }
       if (null == guild) {
         items = [];
       } else {
-        const memberIds = formatted.getMemberIds(guild.id);
+        const memberIds = guild_id.getMemberIds(guild.id);
         const mapped = memberIds.map((item) => user.getUser(item));
         items = mapped.filter((id) => {
           let result = null != id;
@@ -158,18 +160,18 @@ export default function useConjureMentionCandidates(arg0, str) {
       const self3 = this;
       const self4 = this;
       set = new Set();
-      if (null != _Set1) {
+      if (null != hasItem) {
         const items1 = [tmp13];
         items2 = items1;
       } else {
         items2 = [];
       }
       const items3 = [];
-      HermesBuiltin.arraySpread(items3, hasItem, HermesBuiltin.arraySpread(items3, items2, 0));
+      HermesBuiltin.arraySpread(items3, set, HermesBuiltin.arraySpread(items3, items2, 0));
       const items4 = [];
       HermesBuiltin.arraySpread(items4, items, HermesBuiltin.arraySpread(items4, items3.filter(matches), 0));
       return items4.filter((id) => {
-        let flag = id.id !== stateFromStores1 && !id.bot && !set.has(id.id);
+        flag = id.id !== stateFromStores1 && !id.bot && !set.has(id.id);
         if (flag) {
           set.add(id.id);
           flag = true;

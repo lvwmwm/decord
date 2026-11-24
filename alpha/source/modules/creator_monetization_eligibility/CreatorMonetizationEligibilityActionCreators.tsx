@@ -1,10 +1,10 @@
-// Module ID: 19938
-// Function ID: 19939
+// Module ID: 19981
+// Function ID: 19982
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1071, 1363, 1284, 572, 6659, 2]
+// Dependencies: [5, 1071, 1363, 1284, 572, 6845, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 19938 (CreatorMonetizationEligibilityActionCreators)
+// Module 19981 (CreatorMonetizationEligibilityActionCreators)
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import ApplicationConstants from "ApplicationConstants" /* 1363 */;

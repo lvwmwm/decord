@@ -1,18 +1,18 @@
-// Module ID: 4941
-// Function ID: 4942
+// Module ID: 4945
+// Function ID: 4946
 // Name: HexagonCampaignUtils
-// Dependencies: [4938, 1088, 2108, 4939, 1397, 1396, 1392, 1399, 4942, 2]
+// Dependencies: [4942, 1088, 2108, 4943, 1397, 1396, 1392, 1399, 4946, 2]
 // Exports: getHexagonCampaignPerkAvailability, getHexagonCampaignPerkCutoffMs, getHexagonCampaignRestoredDisplayNameStyles, hasHexagonCampaignDisplayNameFont, isEnrolledInHexagonCampaign, isHexagonCampaignAppIcon, isHexagonCampaignClientThemePreset, isHexagonCampaignDisplayNameStyle, isHexagonCampaignHero, isHexagonCampaignOver, isHexagonCampaignPerkExpired, isHexagonCampaignPerkPremiumOnly, isHexagonCampaignTakeoverOver, isWithinHexagonCampaignExpiringSoonWindow
 
-// Module 4941 (HexagonCampaignUtils)
+// Module 4945 (HexagonCampaignUtils)
 import DurationsDefault from "Durations" /* 1088 */;
 import PerksStateUtils from "PerksStateUtils" /* 1392 */;
 import DisplayNameFont from "DisplayNameFont" /* 1396 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
-import AppIconTypes from "AppIconTypes" /* 4939 */;
-import QuestHomeHeroFeatures from "QuestHomeHeroFeatures" /* 4942 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
+import AppIconTypes from "AppIconTypes" /* 4943 */;
+import QuestHomeHeroFeatures from "QuestHomeHeroFeatures" /* 4946 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4942 */;
 import size from "module_2" /* 2 */;
 
 let c10;

@@ -1,13 +1,13 @@
-// Module ID: 13408
-// Function ID: 13409
+// Module ID: 13331
+// Function ID: 13332
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 8332, 1112, 2856, 2]
+// Dependencies: [19, 8156, 1112, 2856, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 13408 (useCalculatePowerupCardStatus)
+// Module 13331 (useCalculatePowerupCardStatus)
 import intl4 from "intl" /* 1112 */;
 import _modDef2856 from "module_2856" /* 2856 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8332 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8156 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

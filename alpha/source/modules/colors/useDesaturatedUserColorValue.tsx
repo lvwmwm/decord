@@ -1,14 +1,14 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 15991
+// Function ID: 15992
 // Name: useDesaturatedUserColorValue
-// Dependencies: [19, 4914, 504, 8085, 1089, 2]
+// Dependencies: [19, 4918, 504, 6195, 1089, 2]
 // Exports: default
 
-// Module 15950 (useDesaturatedUserColorValue)
+// Module 15991 (useDesaturatedUserColorValue)
 import react from "react" /* 19 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
-import _modDef8085 from "module_8085" /* 8085 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import _modDef6195 from "module_6195" /* 6195 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,13 +34,13 @@ export default function useDesaturatedUserColorValue(arg0) {
     let h;
     let l;
     let s;
-    const tmp = _modDef8085;
+    const tmp = _modDef6195;
     const obj = utils_ColorUtils;
     const tmpResult = tmp(obj.int2hex(closure_0));
     ({ h, s, l } = tmpResult.toHsl());
     const obj2 = { h, s: s * stateFromStores, l };
     tmpResult.toHsl();
-    const obj4 = _modDef8085(obj2);
+    const obj4 = _modDef6195(obj2);
     const obj3 = { hex: obj4.toHexString(), hsl: obj4.toHslString() };
     return obj3;
   }, items1);

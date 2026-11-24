@@ -1,30 +1,30 @@
-// Module ID: 14586
-// Function ID: 14587
+// Module ID: 14854
+// Function ID: 14855
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 14462, 8010, 14467, 4913, 575, 8996, 4974, 7977, 4920, 5600, 1412, 2152, 5504, 14449, 7520, 7539, 14474, 14475, 9765, 9774, 7030, 1112, 2]
+// Dependencies: [19, 17, 21, 14731, 8447, 14736, 4917, 575, 8616, 4978, 7925, 4924, 5604, 1412, 2152, 5508, 14718, 6253, 6254, 14743, 14744, 8604, 8613, 6026, 1112, 2]
 // Exports: default
 
-// Module 14586 (UserProfileRecentActivityCard)
+// Module 14854 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import StringUtils from "StringUtils" /* 2152 */;
-import shared from "shared" /* 4920 */;
-import native from "native" /* 4974 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import utils from "utils" /* 8010 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8996 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9774 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 14449 */;
-import BadgesAll from "Badges" /* 14462 */;
-import TrendingType from "TrendingType" /* 14467 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 14474 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 14475 */;
+import shared from "shared" /* 4924 */;
+import native from "native" /* 4978 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6253 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
+import utils from "utils" /* 8447 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8613 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8616 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 14718 */;
+import BadgesAll from "Badges" /* 14731 */;
+import TrendingType from "TrendingType" /* 14736 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 14743 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 14744 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -35,7 +35,7 @@ let obj9;
 let rect;
 let size;
 let tmp4;
-const useOpenGameProfileModalDefault = tmp4(9765);
+const useOpenGameProfileModalDefault = tmp4(8604);
 function GamingEntryBadges(entry) {
   let mapped;
   let obj4;
@@ -45,7 +45,7 @@ function GamingEntryBadges(entry) {
   const found = items.filter((predicate) => predicate.predicate(entry));
   let obj = { location: "user-profile", style: tmp.badges, children: mapped };
   const BadgesContainer = BadgesAll.BadgesContainer;
-  let obj2 = entry(8996);
+  let obj2 = entry(8616);
   if (obj2.isTopGameEntry(entry)) {
     const obj3 = { style: tmp.badgeCell, children: closure_6(BadgesAll.TopGameBadge, obj4) };
     obj4 = { entry };
@@ -150,7 +150,7 @@ let closure_11 = react.memo(function EntryImage(poster) {
     items = [, ];
     ({ imageContainer: arr2[0], imageAspectRatio: arr2[1] } = tmp);
     obj3 = { size: "custom", style: tmp.largeImage, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
-    UnknownGameIcon = tmp2(7977).UnknownGameIcon;
+    UnknownGameIcon = tmp2(7925).UnknownGameIcon;
     const tmp2Result = shared;
     isThemeDarkResult = tmp2Result.isThemeDark(theme);
     colors = nativeDefault.colors;
@@ -173,7 +173,7 @@ let closure_11 = react.memo(function EntryImage(poster) {
     if (tmp5Result) {
       const obj6 = { style: tmp.smallImageBackground, children: metroRequire(tmp6Result, obj7) };
       obj7 = { source: tmp2Result4.makeSource(smallImage.src), accessibilityLabel: smallImage.alt, style: tmp.smallImage };
-      tmp6Result = tmp6(5600);
+      tmp6Result = tmp6(5604);
       tmp2Result4 = AvatarUtils;
       tmp5Result = tmp5(tmp17, obj6);
     }
@@ -206,7 +206,7 @@ let closure_12 = react.memo(function EntryCardBody(arg0) {
   obj6.isNullOrEmpty(title);
   if (tmp2Result) {
     const obj7 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-    tmp2Result = tmp2(tmp5(5504).Text, obj7);
+    tmp2Result = tmp2(tmp5(5508).Text, obj7);
   }
   items1 = [tmp2Result, , ];
   const tmp5Result = StringUtils;
@@ -214,7 +214,7 @@ let closure_12 = react.memo(function EntryCardBody(arg0) {
   tmp5Result.isNullOrEmpty(subtitle);
   if (tmp2Result2) {
     const obj8 = { variant: "body-xs/medium", lineClamp: 1, children: subtitle };
-    tmp2Result2 = tmp2(tmp5(5504).Text, obj8);
+    tmp2Result2 = tmp2(tmp5(5508).Text, obj8);
   }
   items1[1] = tmp2Result2;
   const tmp5Result2 = ContentInventoryTypes;
@@ -306,7 +306,7 @@ export default function UserProfileRecentActivityCard(style) {
           obj8 = { title: entry.extra.activity_name };
           const obj7 = { title: entry.extra.activity_name };
         } else {
-          obj8 = { title: "r" };
+          obj8 = { title: "Array" };
         }
       }
     }
@@ -323,10 +323,10 @@ export default function UserProfileRecentActivityCard(style) {
   const tmp20 = metroRequire(closure_12, { entry, largeImage, smallImage, title: str, subtitle: trimmed, style });
   const obj9 = { value: analyticsLocations, children: tmp19Result };
   tmp19Result = tmp20;
-  const AnalyticsLocationProvider = tmp(7520).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(6253).AnalyticsLocationProvider;
   if (null != tmp4ResultResult) {
     const obj10 = { onPress: callback, accessibilityRole: "button", accessibilityLabel: formatToPlainString(v9sZWVp, obj11), children: tmp20 };
-    const PressableOpacity = tmp(7030).PressableOpacity;
+    const PressableOpacity = tmp(6026).PressableOpacity;
     const intl = tmp(1112).intl;
     formatToPlainString = intl.formatToPlainString;
     v9sZWVp = tmp(1112).t["9sZWVp"];

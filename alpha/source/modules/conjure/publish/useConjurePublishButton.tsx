@@ -1,12 +1,12 @@
-// Module ID: 18252
-// Function ID: 18253
+// Module ID: 18291
+// Function ID: 18292
 // Name: useConjurePublishButton
-// Dependencies: [19, 12305, 1112, 4190, 2]
+// Dependencies: [19, 11313, 1112, 4192, 2]
 // Exports: default
 
-// Module 18252 (useConjurePublishButton)
+// Module 18291 (useConjurePublishButton)
 import intl4 from "intl" /* 1112 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12305 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11313 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
   }
   if ("up_to_date" === str || "auto_synced" === str) {
     const intl2 = intl4.intl;
-    stringResult = intl2.string(tmp2(4190).kAfbEN);
+    stringResult = intl2.string(tmp2(4192).kAfbEN);
   } else {
     stringResult = undefined;
     if (tmp4 != null) {
@@ -46,7 +46,7 @@ export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
     }
     if (stringResult == null) {
       const intl = intl4.intl;
-      stringResult = intl.string(tmp2(4190)["120EFN"]);
+      stringResult = intl.string(tmp2(4192)["120EFN"]);
     }
   }
   str4 = "publishing";
@@ -60,7 +60,7 @@ export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
   stringResult1 = null;
   if ("auto_synced" === str) {
     const intl3 = intl4.intl;
-    stringResult1 = intl3.string(tmp2(4190).W4LzCY);
+    stringResult1 = intl3.string(tmp2(4192).W4LzCY);
   }
   tmp11 = null != tmp4;
   if (tmp11) {

@@ -1,17 +1,17 @@
-// Module ID: 15181
-// Function ID: 15182
+// Module ID: 15202
+// Function ID: 15203
 // Name: useGameOrganizationInviteSuggestions
-// Dependencies: [5, 32, 19, 13189, 4855, 1386, 8054, 12049, 504, 13188, 2]
+// Dependencies: [5, 32, 19, 10299, 4859, 1386, 10286, 11941, 504, 10301, 2]
 // Exports: default
 
-// Module 15181 (useGameOrganizationInviteSuggestions)
-import InstantInviteUtils from "InstantInviteUtils" /* 8054 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 13188 */;
+// Module 15202 (useGameOrganizationInviteSuggestions)
+import InstantInviteUtils from "InstantInviteUtils" /* 10286 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 10301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 13189 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 10299 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ export default function useGameOrganizationInviteSuggestions() {
   let closure_2;
   let hasNoFriends;
   let isLoading;
-  const f107561 = (item) => item.item;
+  const f107718 = (item) => item.item;
   let obj = require("get initialized");
   const items = [InviteSuggestionsStore, RelationshipStore, UserStore];
   const users = obj.useStateFromStoresArray(items, () => {
@@ -45,7 +45,7 @@ export default function useGameOrganizationInviteSuggestions() {
     }
     closure_1 = closure_7;
     const found = inviteSuggestionRows.filter(closure_9);
-    const mapped = found.map(f107561);
+    const mapped = found.map(f107718);
     return mapped.filter((item) => closure_2_1(ref[7])(item, id, closure_1));
   });
   [isLoading, _require] = react.useState(true);
@@ -72,7 +72,7 @@ export default function useGameOrganizationInviteSuggestions() {
           }
           closure_1 = closure_7;
           const found = inviteSuggestionRows.filter(closure_9);
-          const mapped = found.map(f107561);
+          const mapped = found.map(f107718);
           return mapped.filter((item) => closure_2_1(ref[7])(item, id, closure_1));
         }
         if (c5 === 2) {

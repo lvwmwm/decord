@@ -1,13 +1,14 @@
-// Module ID: 12466
-// Function ID: 12467
+// Module ID: 12377
+// Function ID: 12378
 // Name: FamilyCenterModalRequestRouting
-// Dependencies: [5, 8336, 8337, 2]
-// Exports: resolveConnectionPrereqTarget
+// Dependencies: [5, 8072, 8077, 8073, 2]
+// Exports: getRequestErrorTarget, resolveConnectionPrereqTarget
 
-// Module 12466 (FamilyCenterModalRequestRouting)
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8336 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8337 */;
+// Module 12377 (FamilyCenterModalRequestRouting)
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8073 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8072 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -78,7 +79,7 @@ let obj = function _resolveConnectionPrereqTarget() {
         } else if (1 === tmp4) {
           c4 = 0;
           c6 = 3;
-          const obj6 = { value: closure_131_4, done: true };
+          const obj6 = { value: closure_131_6, done: true };
           return obj6;
         } else if (arg0 === 1) {
           c6 = 3;
@@ -106,6 +107,7 @@ let obj = function _resolveConnectionPrereqTarget() {
   });
   return obj(...arguments);
 };
+const FAMILY_CENTER_INVALID_LINK_CODE_ERROR_CODE = FamilyCenterConstants.FAMILY_CENTER_INVALID_LINK_CODE_ERROR_CODE;
 const FamilyCenterFailureCode = FamilyCenterConstants.FamilyCenterFailureCode;
 const frozen = Object.freeze({ PREREQ_LOADING: "PREREQ_LOADING", CONFIRM_AGE: "CONFIRM_AGE", VERIFYING: "VERIFYING", REQUEST: "REQUEST", SENT: "SENT", ERROR: "ERROR", INVALID_CODE: "INVALID_CODE", MUST_BE_ADULT: "MUST_BE_ADULT" });
 obj = { section: frozen.ERROR, params: { failureCode: FamilyCenterFailureCode.GENERIC_ERROR } };
@@ -113,6 +115,19 @@ const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterModa
 
 export const FamilyCenterModalRequestSections = frozen;
 export { getConnectionPrereqTarget };
+export function getRequestErrorTarget(code) {
+  let obj3;
+  let obj4;
+  if (code.code === FAMILY_CENTER_INVALID_LINK_CODE_ERROR_CODE) {
+    obj = { section: frozen.INVALID_CODE };
+    const obj2 = { section: frozen.INVALID_CODE };
+  } else {
+    obj = { section: frozen.ERROR, params: obj4 };
+    obj4 = { failureCode: obj3.getFailureCodeForAPIError(code) };
+    obj3 = FamilyCenterUtils;
+  }
+  return obj;
+}
 export function resolveConnectionPrereqTarget() {
   return obj(...arguments);
 }

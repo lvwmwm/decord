@@ -1,12 +1,12 @@
-// Module ID: 8666
-// Function ID: 8667
+// Module ID: 8934
+// Function ID: 8935
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 5929, 575, 8667, 7235, 5504, 1112, 2]
+// Dependencies: [19, 21, 5989, 575, 8935, 7162, 5508, 1112, 2]
 // Exports: default
 
-// Module 8666 (ConversationPreviewBlockedMessage)
+// Module 8934 (ConversationPreviewBlockedMessage)
 import nativeDefault from "native" /* 575 */;
-import Stack_Stack from "Stack/Stack" /* 5929 */;
+import Stack_Stack from "Stack/Stack" /* 5989 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -24,14 +24,14 @@ export default function ConversationPreviewBlockedMessage(reason) {
   const Stack = Stack_Stack.Stack;
   const tmp = React3;
   if ("blocked" === reason) {
-    EyeSlashIcon = tmp2(8667).DenyIcon;
+    EyeSlashIcon = tmp2(8935).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(7235).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7162).EyeSlashIcon;
   }
   items = [, ];
   const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };
   items[0] = _false(EyeSlashIcon, obj2);
-  const Text = tmp2(5504).Text;
+  const Text = tmp2(5508).Text;
   const intl = tmp2(1112).intl;
   const string = intl.string;
   const t = tmp2(1112).t;

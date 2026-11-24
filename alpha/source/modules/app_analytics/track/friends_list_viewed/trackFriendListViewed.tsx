@@ -1,14 +1,14 @@
-// Module ID: 18861
-// Function ID: 18862
+// Module ID: 18903
+// Function ID: 18904
 // Name: trackFriendListViewed
-// Dependencies: [1071, 18862, 1255, 8259, 2]
+// Dependencies: [1071, 18904, 1255, 8034, 2]
 // Exports: default
 
-// Module 18861 (trackFriendListViewed)
+// Module 18903 (trackFriendListViewed)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import Clickstream from "Clickstream" /* 8259 */;
-import getTrackFriendsListViewedDataDefault from "getTrackFriendsListViewedData" /* 18862 */;
+import Clickstream from "Clickstream" /* 8034 */;
+import getTrackFriendsListViewedDataDefault from "getTrackFriendsListViewedData" /* 18904 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

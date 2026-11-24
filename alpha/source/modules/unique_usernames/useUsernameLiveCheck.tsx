@@ -1,14 +1,14 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16038
+// Function ID: 16039
 // Name: useUsernameLiveCheck
-// Dependencies: [19, 16006, 563, 12, 16007, 16008, 2]
+// Dependencies: [19, 16039, 563, 12, 16040, 16041, 2]
 // Exports: useUsernameLiveCheck
 
-// Module 16005 (useUsernameLiveCheck)
+// Module 16038 (useUsernameLiveCheck)
 import _mod12 from "module_12" /* 12 */;
-import UniqueUsernamesUtils from "UniqueUsernamesUtils" /* 16008 */;
+import UniqueUsernamesUtils from "UniqueUsernamesUtils" /* 16041 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16006 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16039 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

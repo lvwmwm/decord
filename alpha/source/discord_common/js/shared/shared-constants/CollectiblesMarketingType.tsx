@@ -1,9 +1,9 @@
-// Module ID: 8097
-// Function ID: 8098
+// Module ID: 6210
+// Function ID: 6211
 // Name: CollectiblesMarketingType
 // Dependencies: [2]
 
-// Module 8097 (CollectiblesMarketingType)
+// Module 6210 (CollectiblesMarketingType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingType.tsx");

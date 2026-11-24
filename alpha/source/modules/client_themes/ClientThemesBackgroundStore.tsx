@@ -1,25 +1,25 @@
-// Module ID: 4937
-// Function ID: 4938
+// Module ID: 4941
+// Function ID: 4942
 // Name: ClientThemesBackgroundStore
-// Dependencies: [1192, 1191, 1193, 1230, 4766, 4762, 1386, 1239, 4938, 1194, 4941, 4943, 4738, 4945, 4746, 4969, 2173, 4972, 4973, 504, 1238, 572, 2]
+// Dependencies: [1192, 1191, 1193, 1230, 4770, 4766, 1386, 1239, 4942, 1194, 4945, 4947, 4742, 4949, 4750, 4973, 2173, 4976, 4977, 504, 1238, 572, 2]
 
-// Module 4937 (ClientThemesBackgroundStore)
+// Module 4941 (ClientThemesBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ThemeConstants from "ThemeConstants" /* 1194 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1238 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import dismissible_content from "dismissible_content" /* 4746 */;
-import ChannelRecord from "ChannelRecord" /* 4766 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4973 */;
+import dismissible_content from "dismissible_content" /* 4750 */;
+import ChannelRecord from "ChannelRecord" /* 4770 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4942 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4949 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4977 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ function handleUserStoreChange() {
         tmp6 = null == UserStore.getCurrentUser();
       }
       if (!tmp6) {
-        const tmp3Result = tmp3(4943);
+        const tmp3Result = tmp3(4947);
         tmp6 = !tmp3Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
       }
       if (!tmp6) {
@@ -234,7 +234,7 @@ class ClientThemesBackgroundStore extends PersistedStore {
             tmp7 = null == UserStore.getCurrentUser();
           }
           if (!tmp7) {
-            const tmp4Result = tmp4(4943);
+            const tmp4Result = tmp4(4947);
             tmp7 = !tmp4Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
           }
           if (tmp7) {
@@ -404,7 +404,7 @@ let obj = {
       let result = obj.isHexagonCampaignClientThemePreset(presetId);
       const tmp3 = require;
       if (result) {
-        const tmp3Result = tmp3(4943);
+        const tmp3Result = tmp3(4947);
         result = !tmp3Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
       }
       tmp = !result;
@@ -441,7 +441,7 @@ let obj = {
         const obj2 = DismissibleContentUnsafeUtils;
         const tmp6 = require;
         if (!obj2.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.CLIENT_THEMES_COACHMARK)) {
-          const tmp6Result = tmp6(4969);
+          const tmp6Result = tmp6(4973);
           if (tmp6Result.ageEligibleForPremiumUpsell(tmp)) {
             const channel = ChannelStore.getChannel(channelId);
             const tmp4 = null != channel && isGuildTextChannelType(channel.type);

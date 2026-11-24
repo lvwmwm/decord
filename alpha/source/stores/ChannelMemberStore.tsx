@@ -1,25 +1,25 @@
-// Module ID: 6919
-// Function ID: 6920
+// Module ID: 7527
+// Function ID: 7528
 // Name: ChannelMemberStore
-// Dependencies: [5530, 6400, 502, 4762, 5534, 4825, 4819, 4784, 5651, 6920, 1386, 1071, 1112, 4850, 1250, 12, 1083, 504, 572, 2]
+// Dependencies: [5534, 6687, 502, 4766, 5538, 4829, 4823, 4788, 5888, 7528, 1386, 1071, 1112, 4854, 1250, 12, 1083, 504, 572, 2]
 
-// Module 6919 (ChannelMemberStore)
+// Module 7527 (ChannelMemberStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import _modDef1250 from "module_1250" /* 1250 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
-import ExperimentStore from "ExperimentStore" /* 5530 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4854 */;
+import ExperimentStore from "ExperimentStore" /* 5534 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import GuildRoleStore from "GuildRoleStore" /* 4819 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import PresenceStore from "PresenceStore" /* 5651 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5538 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import GuildRoleStore from "GuildRoleStore" /* 4823 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import PresenceStore from "PresenceStore" /* 5888 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7528 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -219,7 +219,7 @@ class MemberList {
             if (null != guild) {
               role = GuildRoleStore.getRole(guild.id, id);
             }
-            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "alignItems" };
+            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "__workletHash" };
             str = "";
             if (null != role) {
               str = role.name;
@@ -304,7 +304,7 @@ class MemberList {
             if (null != guild) {
               role = GuildRoleStore.getRole(guild.id, id);
             }
-            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "alignItems" };
+            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "__workletHash" };
             str = "";
             if (null != role) {
               str = role.name;

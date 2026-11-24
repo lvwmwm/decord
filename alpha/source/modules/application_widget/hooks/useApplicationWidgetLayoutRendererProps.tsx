@@ -1,17 +1,17 @@
-// Module ID: 10330
-// Function ID: 10331
+// Module ID: 14487
+// Function ID: 14488
 // Name: useApplicationWidgetLayoutRendererProps
-// Dependencies: [32, 19, 10331, 10333, 2188, 10334, 504, 10335, 10278, 1254, 10337, 2]
+// Dependencies: [32, 19, 14488, 14489, 2188, 14490, 504, 14491, 14435, 1254, 14492, 2]
 // Exports: default
 
-// Module 10330 (useApplicationWidgetLayoutRendererProps)
+// Module 14487 (useApplicationWidgetLayoutRendererProps)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import _mod10278 from "module_10278" /* 10278 */;
-import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 10333 */;
-import ApplicationAssetV2Utils from "ApplicationAssetV2Utils" /* 10337 */;
+import _mod14435 from "module_14435" /* 14435 */;
+import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 14489 */;
+import ApplicationAssetV2Utils from "ApplicationAssetV2Utils" /* 14492 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationAssetsV2Store from "ApplicationAssetsV2Store" /* 10331 */;
+import ApplicationAssetsV2Store from "ApplicationAssetsV2Store" /* 14488 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import size from "module_2" /* 2 */;
 
@@ -56,8 +56,8 @@ export default function useApplicationWidgetLayoutRendererProps(arg0, arg1) {
   const items3 = [profile];
   const memo1 = useMemo(() => {
     let profile;
-    const resolvedValuesFromUserApplicationIdentityProfile = _mod10278.resolvedValuesFromUserApplicationIdentityProfile;
-    _mod10278;
+    const resolvedValuesFromUserApplicationIdentityProfile = _mod14435.resolvedValuesFromUserApplicationIdentityProfile;
+    _mod14435;
     if (stateFromStores != null) {
       profile = stateFromStores.profile;
     }

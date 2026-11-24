@@ -1,24 +1,24 @@
-// Module ID: 17754
-// Function ID: 17755
+// Module ID: 17792
+// Function ID: 17793
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 8320, 4845, 6619, 6552, 5657, 5642, 1071, 21, 575, 7285, 7286, 2119, 6494, 8017, 17753, 17755, 10640, 504, 17746, 9052, 5637, 8685, 8009, 1255, 17747, 17638, 13843, 1112, 5948, 17650, 17643, 12927, 2]
+// Dependencies: [5, 19, 17, 8144, 4849, 6806, 6041, 5728, 5997, 1071, 21, 575, 6999, 6905, 2119, 8308, 8322, 17791, 17793, 9871, 504, 17784, 9387, 6941, 8705, 8446, 1255, 17785, 17676, 11261, 1112, 6675, 17688, 17681, 12846, 2]
 
-// Module 17754 (VoiceChannel)
+// Module 17792 (VoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5657 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8009 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12927 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13843 */;
+import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5728 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8446 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11261 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8320 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import ReadStateStore from "ReadStateStore" /* 6619 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8144 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
+import ReadStateStore from "ReadStateStore" /* 6806 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6041 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

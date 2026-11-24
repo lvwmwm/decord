@@ -1,22 +1,22 @@
-// Module ID: 8877
-// Function ID: 8878
+// Module ID: 14265
+// Function ID: 14266
 // Name: GiftIntentEmbed
-// Dependencies: [8878, 1386, 1388, 4913, 575, 1112, 8881, 4969, 8245, 5602, 8882, 8883, 2]
+// Dependencies: [11872, 1386, 1388, 4917, 575, 1112, 11174, 4973, 8680, 5606, 11163, 10679, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 8877 (GiftIntentEmbed)
+// Module 14265 (GiftIntentEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import UserUtilsDefault from "UserUtils" /* 4969 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5602 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 8881 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8882 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8883 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8878 */;
+import UserUtilsDefault from "UserUtils" /* 4973 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5606 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8680 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10679 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11163 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 11174 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 11872 */;
 import UserStore from "UserStore" /* 1386 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const GiftIntentType = PremiumConstants.GiftIntentType;
@@ -77,7 +77,7 @@ export function createGiftIntentEmbed(message, theme) {
           combined1 = "" + currentUser.getAvatarURL(undefined, 40);
         }
         ({ headerText: obj4.headerText, subHeaderParts: obj4.subHeaderParts } = tmp);
-        const obj9 = { recipientAvatarUrl: combined, currentUserAvatarUrl: combined1, recipientName: name, headerText: null, subHeaderParts: null, recipientUserId, giftIntentType, headerTextColor: null, subHeaderTextColor: null, backgroundColor: null, borderColor: null, subHeaderIconUrl: obj5.getAssetUriForEmbed(AssetRegistryDefault), primaryCtaLabel: intl3.string(intl5.t.ilhtIa), primaryCtaIconUrl: obj6.getAssetUriForEmbed(AssetRegistryDefault2), secondaryCtaIconUrl: obj7.getAssetUriForEmbed(AssetRegistryDefault3), secondaryCtaAccessibilityLabel: intl4.string(intl5.t.I5gL2H) };
+        const obj9 = { recipientAvatarUrl: combined, currentUserAvatarUrl: combined1, recipientName: name, headerText: null, subHeaderParts: null, recipientUserId, giftIntentType, headerTextColor: null, subHeaderTextColor: null, backgroundColor: null, borderColor: null, subHeaderIconUrl: obj5.getAssetUriForEmbed(AssetRegistryDefault), primaryCtaLabel: intl3.string(intl5.t.ilhtIa), primaryCtaIconUrl: obj6.getAssetUriForEmbed(AssetRegistryDefault3), secondaryCtaIconUrl: obj7.getAssetUriForEmbed(AssetRegistryDefault2), secondaryCtaAccessibilityLabel: intl4.string(intl5.t.I5gL2H) };
         ({ headerTextColor: obj4.headerTextColor, subHeaderTextColor: obj4.subHeaderTextColor, backgroundColor: obj4.backgroundColor, borderColor: obj4.borderColor } = closure_6(theme));
         closure_6(theme);
         obj5 = renderer_EmbedUtils;

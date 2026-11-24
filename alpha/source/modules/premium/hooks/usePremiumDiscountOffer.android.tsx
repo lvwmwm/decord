@@ -1,14 +1,14 @@
-// Module ID: 8862
-// Function ID: 8863
-// Name: usePremiumDiscountOffer
-// Dependencies: [8851, 1388, 8863, 8170, 563, 2]
+// Module ID: 9018
+// Function ID: 9019
+// Name: hooks/usePremiumDiscountOffer
+// Dependencies: [8963, 1388, 9019, 8972, 563, 2]
 // Exports: usePremiumDiscountOffer
 
-// Module 8862 (usePremiumDiscountOffer)
+// Module 9018 (hooks/usePremiumDiscountOffer)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ProductIds from "ProductIds" /* 8170 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8863 */;
-import IAPStore from "IAPStore" /* 8851 */;
+import premium_ProductIds from "premium/ProductIds" /* 8972 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 9019 */;
+import IAPStore from "IAPStore" /* 8963 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let hasOwnProperty;
 const result = size.fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.android.tsx");
 
 export function usePremiumDiscountOffer() {
-  const f94018 = (item) => offerIds.has(item);
+  const f94658 = (item) => offerIds.has(item);
   let obj = useStateFromStores;
   const items = [IAPStore];
   const offerIds = obj.useStateFromStoresObject(items, () => {
@@ -26,21 +26,21 @@ export function usePremiumDiscountOffer() {
     return obj;
   }).offerIds;
   const tmp4 = useDiscountOfferDefault(React3);
-  const values = Object.values(ProductIds.DiscountIdToProductOfferId[React3]);
+  const values = Object.values(premium_ProductIds.DiscountIdToProductOfferId[React3]);
   let tmp5 = null;
   if (0 !== values.length) {
     let tmp6 = null;
-    if (values.every(f94018)) {
+    if (values.every(f94658)) {
       tmp6 = tmp4;
     }
     tmp5 = tmp6;
   }
   const tmp7 = useDiscountOfferDefault(hasOwnProperty);
-  const values2 = Object.values(ProductIds.DiscountIdToProductOfferId[hasOwnProperty]);
+  const values2 = Object.values(premium_ProductIds.DiscountIdToProductOfferId[hasOwnProperty]);
   let tmp8 = null;
   if (0 !== values2.length) {
     let tmp9 = null;
-    if (values2.every(f94018)) {
+    if (values2.every(f94658)) {
       tmp9 = tmp7;
     }
     tmp8 = tmp9;

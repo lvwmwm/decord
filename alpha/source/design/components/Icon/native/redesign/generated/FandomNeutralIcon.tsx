@@ -1,14 +1,14 @@
-// Module ID: 9923
-// Function ID: 9924
+// Module ID: 14068
+// Function ID: 14069
 // Name: FandomNeutralIcon
-// Dependencies: [19, 21, 575, 5599, 9924, 2]
+// Dependencies: [19, 21, 575, 5603, 14069, 2]
 // Exports: FandomNeutralIcon
 
-// Module 9923 (FandomNeutralIcon)
+// Module 14068 (FandomNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 9924 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 14069 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

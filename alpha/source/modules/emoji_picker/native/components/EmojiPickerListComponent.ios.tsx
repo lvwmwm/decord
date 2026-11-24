@@ -1,13 +1,13 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 9607
+// Function ID: 9608
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 9066, 21, 11292, 11304, 11316, 11312, 7490, 2]
+// Dependencies: [19, 9399, 21, 9583, 9596, 9608, 9604, 7356, 2]
 // Exports: default
 
-// Module 11315 (EmojiPickerListComponent)
+// Module 9607 (EmojiPickerListComponent)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9066 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9399 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

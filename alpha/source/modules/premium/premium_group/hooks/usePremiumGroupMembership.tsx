@@ -1,13 +1,13 @@
-// Module ID: 14094
-// Function ID: 14095
+// Module ID: 13774
+// Function ID: 13775
 // Name: usePremiumGroupMembership
-// Dependencies: [19, 14095, 504, 572, 2]
+// Dependencies: [19, 13775, 504, 572, 2]
 // Exports: default
 
-// Module 14094 (usePremiumGroupMembership)
+// Module 13774 (usePremiumGroupMembership)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import PremiumGroupStore from "PremiumGroupStore" /* 14095 */;
+import PremiumGroupStore from "PremiumGroupStore" /* 13775 */;
 import size from "module_2" /* 2 */;
 
 const useEffect = react.useEffect;

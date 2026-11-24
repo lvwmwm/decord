@@ -1,31 +1,31 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 10592
+// Function ID: 10593
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 5128, 4762, 4855, 1386, 8462, 11215, 1071, 1111, 5495, 38, 5529, 7636, 1379, 8621, 8610, 8217, 1378, 5129, 5130, 8461, 5646, 5098, 11216, 10383, 10381, 2]
+// Dependencies: [19, 5132, 4766, 4859, 1386, 7978, 10593, 1071, 1111, 5499, 38, 5533, 6970, 1379, 8788, 8856, 8663, 1378, 5133, 5134, 7975, 6000, 5102, 10594, 8951, 8948, 2]
 // Exports: default
 
-// Module 11214 (useNativeForumPostHandlers)
+// Module 10592 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import ChatInputUtils from "ChatInputUtils" /* 5098 */;
-import HapticUtils from "HapticUtils" /* 5129 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5495 */;
-import useChannelName from "useChannelName" /* 5529 */;
-import transitionToChannel from "transitionToChannel" /* 5646 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
-import openMediaModal from "openMediaModal" /* 8217 */;
-import Tracking from "Tracking" /* 8461 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10381 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10383 */;
+import ChatInputUtils from "ChatInputUtils" /* 5102 */;
+import HapticUtils from "HapticUtils" /* 5133 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5134 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5499 */;
+import useChannelName from "useChannelName" /* 5533 */;
+import transitionToChannel from "transitionToChannel" /* 6000 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 6970 */;
+import Tracking from "Tracking" /* 7975 */;
+import openMediaModal from "openMediaModal" /* 8663 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 8948 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 8951 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5128 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ActionSheetStore from "ActionSheetStore" /* 5132 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8462 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 11215 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7978 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 10593 */;
 import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const showLongPressForumPostActionSheetDefault = tmp2(11216);
+const showLongPressForumPostActionSheetDefault = tmp2(10594);
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
 let closure_15 = ThreadConstants.OpenThreadAnalyticsLocations;
 let size = size_mod;
@@ -48,7 +48,7 @@ export default function useNativeForumPostHandlers(threadId) {
   if (NORMAL === undefined) {
     let tmp = threadId;
     let tmp2 = dependencyMap;
-    NORMAL = threadId(5495).ReactionTypes.NORMAL;
+    NORMAL = threadId(5499).ReactionTypes.NORMAL;
   }
   const items = [threadId];
   const items1 = [threadId];

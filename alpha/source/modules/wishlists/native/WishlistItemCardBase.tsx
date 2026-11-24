@@ -1,22 +1,22 @@
-// Module ID: 8981
-// Function ID: 8982
+// Module ID: 11021
+// Function ID: 11022
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 575, 4913, 5595, 8976, 4974, 8191, 5477, 8982, 1112, 9003, 1254, 9004, 9005, 7695, 9007, 2]
+// Dependencies: [19, 17, 21, 575, 4917, 5599, 9647, 4978, 9348, 5481, 10970, 1112, 11022, 1254, 11023, 8567, 7035, 9315, 2]
 // Exports: default
 
-// Module 8981 (WishlistItemCardBase)
+// Module 11021 (WishlistItemCardBase)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import native from "native" /* 4974 */;
-import useToken from "useToken" /* 5477 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
-import useUserProfileColors from "useUserProfileColors" /* 8191 */;
-import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 9003 */;
-import IndicatorDot from "IndicatorDot" /* 9007 */;
+import native from "native" /* 4978 */;
+import useToken from "useToken" /* 5481 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
+import IndicatorDot from "IndicatorDot" /* 9315 */;
+import useUserProfileColors from "useUserProfileColors" /* 9348 */;
+import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 11022 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -47,7 +47,7 @@ function SourceIcon(toastText) {
     children: closure_5(HeartIcon, obj2)
   };
   obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  HeartIcon = toastText(8976).HeartIcon;
+  HeartIcon = toastText(9647).HeartIcon;
   return closure_5(closure_3, obj);
 }
 ({ Pressable: c3, View: closure_4, StyleSheet } = react_native);
@@ -127,7 +127,7 @@ export default function WishlistItemCardBase(shopUnpublishCountdown) {
     obj6 = { width: size, aspectRatio: 1 };
   }
   items[2] = obj6;
-  const WISHLIST = tmp2(8982).WishlistItemSource.WISHLIST;
+  const WISHLIST = tmp2(10970).WishlistItemSource.WISHLIST;
   const intl = tmp2(1112).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl5.t.p3RmJF, { username: recipientName });
   const items1 = [accessibilityLabel, , , ];
@@ -176,14 +176,14 @@ export default function WishlistItemCardBase(shopUnpublishCountdown) {
   let tmp18Result = null != shopUnpublishCountdown;
   if (tmp18Result) {
     const obj9 = { countdown: shopUnpublishCountdown };
-    tmp18Result = tmp18(tmp5(9004), obj9);
+    tmp18Result = tmp18(tmp5(11023), obj9);
   }
   items3[1] = tmp18Result;
   let tmp18Result4 = overlay === tmp9.OWNED;
   if (tmp18Result4) {
     const obj10 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj11) };
     obj11 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-    CheckmarkLargeBoldIcon = tmp2(9005).CheckmarkLargeBoldIcon;
+    CheckmarkLargeBoldIcon = tmp2(8567).CheckmarkLargeBoldIcon;
     tmp18Result4 = tmp18(tmp19, obj10);
   }
   items3[2] = tmp18Result4;
@@ -191,7 +191,7 @@ export default function WishlistItemCardBase(shopUnpublishCountdown) {
   if (tmp18Result5) {
     const obj12 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj13) };
     obj13 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-    LockIcon = tmp2(7695).LockIcon;
+    LockIcon = tmp2(7035).LockIcon;
     tmp18Result5 = tmp18(tmp19, obj12);
   }
   items3[3] = tmp18Result5;

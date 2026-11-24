@@ -1,24 +1,24 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 8336
+// Function ID: 8337
 // Name: saveGuildEventRecurrence
-// Dependencies: [7575, 7573, 11, 2]
+// Dependencies: [8325, 8337, 11, 2]
 // Exports: default
 
-// Module 7594 (saveGuildEventRecurrence)
+// Module 8336 (saveGuildEventRecurrence)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 7573 */;
-import ScheduleUtils from "ScheduleUtils" /* 7575 */;
+import ScheduleUtils from "ScheduleUtils" /* 8325 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8337 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
 
-export default function saveGuildEventRecurrence(guild_id, event_exception_id, startDate, event_exception_id2) {
+export default function saveGuildEventRecurrence(guild_id, nextRecurrenceIdInEvent, startDate, event_exception_id) {
   let date;
   let toISOStringResult1;
   let toISOStringResult2;
   let toISOStringResult3;
   const obj = ScheduleUtils;
-  const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(event_exception_id, guild_id);
+  const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(nextRecurrenceIdInEvent, guild_id);
   startDate = null;
   const obj2 = ScheduleUtils;
   if (!obj2.areDatesIdentical(baseScheduleForRecurrence.startDate, startDate.startDate)) {
@@ -53,12 +53,12 @@ export default function saveGuildEventRecurrence(guild_id, event_exception_id, s
       if (toISOStringResult1 == null) {
         toISOStringResult1 = null;
       }
-      result1 = updateGuildEventException(obj3, guild_id.guild_id, guild_id.id, event_exception_id);
+      result1 = updateGuildEventException(obj3, guild_id.guild_id, guild_id.id, nextRecurrenceIdInEvent);
     }
     return result1;
   } else {
     const obj7 = SnowflakeUtilsDefault;
-    const extractTimestampResult = obj7.extractTimestamp(event_exception_id);
+    const extractTimestampResult = obj7.extractTimestamp(nextRecurrenceIdInEvent);
     const _Date = Date;
     const self = this;
     const self2 = this;

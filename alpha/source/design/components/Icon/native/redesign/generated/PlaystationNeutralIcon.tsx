@@ -1,14 +1,14 @@
-// Module ID: 9906
-// Function ID: 9907
+// Module ID: 14051
+// Function ID: 14052
 // Name: PlaystationNeutralIcon
-// Dependencies: [19, 21, 575, 5599, 9907, 2]
+// Dependencies: [19, 21, 575, 5603, 14052, 2]
 // Exports: PlaystationNeutralIcon
 
-// Module 9906 (PlaystationNeutralIcon)
+// Module 14051 (PlaystationNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 9907 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 14052 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 18281
-// Function ID: 18282
+// Module ID: 18320
+// Function ID: 18321
 // Name: ConjurePublishRemixRow
-// Dependencies: [19, 17, 21, 4913, 575, 1112, 4190, 7340, 5504, 8658, 5511, 14790, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 1112, 4192, 7060, 5508, 8926, 5515, 14620, 2]
 // Exports: default
 
-// Module 18281 (ConjurePublishRemixRow)
+// Module 18320 (ConjurePublishRemixRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const ChevronLargeDownIcon = tmp2(14790);
+const ChevronLargeDownIcon = tmp2(14620);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -47,7 +47,7 @@ export default function ConjurePublishRemixRow(remix) {
   const canChange = iter.canChange;
   let tmp2 = options;
   const intl = options(setValue[5]).intl;
-  const stringResult = intl.string(require("module_4190")["Z/NFcQ"]);
+  const stringResult = intl.string(require("module_4192")["Z/NFcQ"]);
   let c4 = stringResult;
   const items = [options, value, setValue];
   const memo = canChange.useMemo(() => options.map((label) => {

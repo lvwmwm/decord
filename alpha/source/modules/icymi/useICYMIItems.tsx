@@ -1,14 +1,14 @@
-// Module ID: 18127
-// Function ID: 18128
+// Module ID: 18166
+// Function ID: 18167
 // Name: useICYMIItems
-// Dependencies: [19, 10033, 10037, 10041, 504, 10043, 2]
+// Dependencies: [19, 8772, 8776, 8780, 504, 8782, 2]
 // Exports: default
 
-// Module 18127 (useICYMIItems)
-import ICYMITypes from "ICYMITypes" /* 10037 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
+// Module 18166 (useICYMIItems)
+import ICYMITypes from "ICYMITypes" /* 8776 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8782 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 10033 */;
+import ICYMIStore from "ICYMIStore" /* 8772 */;
 import size from "module_2" /* 2 */;
 
 function createItem(id, type, unread, waterwheelsDiscoverEnabled, isWaterwheelsCardEligible) {
@@ -84,7 +84,7 @@ export default function useICYMIItems() {
   }
   const isWaterwheelsCardEligible = obj.isWaterwheelsCardEligible;
   let stateFromStores1;
-  const obj2 = stateFromStores1(10041);
+  const obj2 = stateFromStores1(8780);
   const waterwheelsDiscoverEnabled = obj2.useWaterwheelsDiscoverEnabled("icymi_items");
   const items = [ICYMIStore];
   const obj3 = stateFromStores1(504);
@@ -124,7 +124,7 @@ export default function useICYMIItems() {
           let tmp10 = stateFromStoresObject[tmp7.id];
           let tmp11 = null == tmp10;
           if (tmp11) {
-            tmp11 = tmp7.type === stateFromStores1(10037).ICYMIItemTypes.MESSAGE;
+            tmp11 = tmp7.type === stateFromStores1(8776).ICYMIItemTypes.MESSAGE;
           }
           if (tmp11) {
             let message_context = tmp7.data.message_context;
@@ -171,7 +171,7 @@ export default function useICYMIItems() {
           let tmp27 = stateFromStoresObject[tmp24.id];
           let tmp28 = null == tmp27;
           if (tmp28) {
-            tmp28 = tmp24.type === stateFromStores1(10037).ICYMIItemTypes.MESSAGE;
+            tmp28 = tmp24.type === stateFromStores1(8776).ICYMIItemTypes.MESSAGE;
           }
           if (tmp28) {
             let message_context2 = tmp24.data.message_context;

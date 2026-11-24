@@ -1,9 +1,9 @@
-// Module ID: 18620
-// Function ID: 18621
+// Module ID: 18661
+// Function ID: 18662
 // Name: conjurePublishRatings
 // Dependencies: [2]
 
-// Module 18620 (conjurePublishRatings)
+// Module 18661 (conjurePublishRatings)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishRatings.tsx");

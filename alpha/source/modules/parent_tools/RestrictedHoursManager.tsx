@@ -1,20 +1,20 @@
-// Module ID: 20165
-// Function ID: 20166
+// Module ID: 20208
+// Function ID: 20209
 // Name: RestrictedHoursManager
-// Dependencies: [11102, 1386, 8335, 1112, 2824, 1410, 11104, 572, 19420, 7484, 2]
+// Dependencies: [10455, 1386, 8071, 1112, 2824, 1410, 10457, 572, 19462, 7349, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 20165 (RestrictedHoursManager)
+// Module 20208 (RestrictedHoursManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
 import FamilyCenterModels from "FamilyCenterModels" /* 1410 */;
 import _modDef2824 from "module_2824" /* 2824 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11104 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19420 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 11102 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10457 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19462 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 10455 */;
 import UserStore from "UserStore" /* 1386 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8335 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8071 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
 import size from "module_2" /* 2 */;
 
 let isInRestrictedHours, map;

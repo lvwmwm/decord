@@ -1,18 +1,18 @@
-// Module ID: 7004
-// Function ID: 7005
+// Module ID: 5653
+// Function ID: 5654
 // Name: Authorize
-// Dependencies: [4762, 4946, 1071, 7005, 6913, 6570, 4850, 1083, 5634, 2]
+// Dependencies: [4766, 4950, 1071, 5654, 5655, 5656, 4854, 1083, 5638, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 7004 (Authorize)
+// Module 5653 (Authorize)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
-import QueryStringUtils from "QueryStringUtils" /* 5634 */;
-import _mod6570 from "module_6570" /* 6570 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
-import scopes from "scopes" /* 7005 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4854 */;
+import QueryStringUtils from "QueryStringUtils" /* 5638 */;
+import scopes from "scopes" /* 5654 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 5655 */;
+import _mod5656 from "module_5656" /* 5656 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export function filterScopes(items) {
     const RemovedScopes = scopes.RemovedScopes;
     return !RemovedScopes.includes(item);
   });
-  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(6913).OAuth2Scopes.APPLICATIONS_COMMANDS);
+  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(5655).OAuth2Scopes.APPLICATIONS_COMMANDS);
   if (hasItem) {
     found.push(OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
@@ -43,7 +43,7 @@ export function parseOAuth2AuthorizeProps(query) {
       return guild_id;
     }
   }
-  const obj = _mod6570;
+  const obj = _mod5656;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {
@@ -73,7 +73,7 @@ export function parseOAuth2AuthorizeProps(query) {
   }
   const scope = parsed.scope;
   const tmp11 = sanitizeOAuthGuild(guild_id);
-  const getFirstQueryStringValue = tmp(5634).getFirstQueryStringValue;
+  const getFirstQueryStringValue = tmp(5638).getFirstQueryStringValue;
   QueryStringUtils;
   let str4 = getFirstQueryStringValue(scope);
   if (str4 == null) {

@@ -1,23 +1,23 @@
-// Module ID: 17833
-// Function ID: 17834
+// Module ID: 17871
+// Function ID: 17872
 // Name: WaterwheelsInterestPickerModal
-// Dependencies: [32, 19, 17, 10044, 1071, 21, 4913, 17834, 17835, 10041, 17832, 10043, 6429, 17828, 1255, 17836, 17837, 1112, 2643, 2]
+// Dependencies: [32, 19, 17, 8783, 1071, 21, 4917, 17872, 17873, 8780, 17870, 8782, 6004, 17866, 1255, 17874, 17875, 1112, 2643, 2]
 
-// Module 17833 (WaterwheelsInterestPickerModal)
+// Module 17871 (WaterwheelsInterestPickerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
-import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17828 */;
-import InterestPickerActionCreators from "InterestPickerActionCreators" /* 17832 */;
-import InterestPickerCatalogs from "InterestPickerCatalogs" /* 17835 */;
-import InterestPickerCompletion from "InterestPickerCompletion" /* 17836 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8782 */;
+import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17866 */;
+import InterestPickerActionCreators from "InterestPickerActionCreators" /* 17870 */;
+import InterestPickerCatalogs from "InterestPickerCatalogs" /* 17873 */;
+import InterestPickerCompletion from "InterestPickerCompletion" /* 17874 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10044 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 8783 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -30,22 +30,22 @@ class WaterwheelsInterestPickerModal {
     let intl2;
     let obj5;
     let obj6;
-    let tmp16;
+    let tmp17;
     let flag = edit.edit;
     if (flag === undefined) {
       flag = false;
     }
-    let initialSelection;
+    let first;
+    let first1;
     let memo;
-    let waterwheelsDiscoverEnabled;
     let obj3;
     function completePicker(arg0, arg1) {
-      if (!ref.current) {
+      if (!picks.current) {
         const obj = InterestPickerCompletion;
         const interestPickerCompletion = obj.getInterestPickerCompletion(arg0, arg1);
-        const picks = interestPickerCompletion.picks;
+        picks = interestPickerCompletion.picks;
         if (!flag) {
-          const obj2 = { max_row_seen: ref3.current, pick_count: tmp6, pick_ids: tmp7, duration_ms: Math.max(0, Date.now() - ref2.current) };
+          const obj2 = { max_row_seen: ref2.current, pick_count: tmp6, pick_ids: tmp7, duration_ms: Math.max(0, Date.now() - ref.current) };
           const track = AnalyticsUtilsDefault.track;
           AnalyticsUtilsDefault;
           const tmp12 = arg1 ? metroImportDefault.WATERWHEELS_INTEREST_PICKER_SKIP : metroImportDefault.WATERWHEELS_INTEREST_PICKER_CONTINUE;
@@ -58,22 +58,14 @@ class WaterwheelsInterestPickerModal {
       }
     }
     let tmp2 = flag;
-    let tmp = closure_11();
-    let obj = flag(initialSelection[7]);
-    const interestPickerGameList = obj.useInterestPickerGameList(completePicker);
+    let tmp = completePicker();
+    let obj = flag(first[7]);
+    const interestPickerGameList = obj.useInterestPickerGameList(obj3);
     let num = 1;
-    initialSelection = memo(waterwheelsDiscoverEnabled.useState(() => {
-      let picks;
-      const tmp = flag;
-      if (tmp) {
-        picks = InterestPickerSessionStore.getPicks();
-      } else {
-        picks = [];
-      }
-      return picks;
-    }), 1)[0];
-    let items = [interestPickerGameList, flag, initialSelection];
-    memo = waterwheelsDiscoverEnabled.useMemo(function() {
+    first = first1(memo.useState(() => picks.getPicks()), 1)[0];
+    first1 = first1(memo.useState(() => flag ? first : []), 1)[0];
+    let items = [interestPickerGameList, flag, first1];
+    memo = memo.useMemo(function() {
       if (null == interestPickerGameList) {
         return null;
       } else {
@@ -86,7 +78,7 @@ class WaterwheelsInterestPickerModal {
             const _Array = Array;
             const _Set = Set;
             const items = [];
-            HermesBuiltin.arraySpread(items, interestPickerCatalog, HermesBuiltin.arraySpread(items, first, 0));
+            HermesBuiltin.arraySpread(items, interestPickerCatalog, HermesBuiltin.arraySpread(items, first1, 0));
             const self = this;
             const self2 = this;
             set = new Set(items);
@@ -97,57 +89,73 @@ class WaterwheelsInterestPickerModal {
         return tmp14;
       }
     }, items);
-    let obj2 = flag(initialSelection[9]);
-    waterwheelsDiscoverEnabled = obj2.useWaterwheelsDiscoverEnabled(completePicker);
-    const ref = waterwheelsDiscoverEnabled.useRef(false);
-    const ref2 = waterwheelsDiscoverEnabled.useRef(0);
-    const ref3 = waterwheelsDiscoverEnabled.useRef(0);
-    const callback = waterwheelsDiscoverEnabled.useCallback((gameIds) => {
-      if (!ref.current) {
+    let obj2 = flag(first[9]);
+    const waterwheelsDiscoverEnabled = obj2.useWaterwheelsDiscoverEnabled(obj3);
+    let picks = memo.useRef(false);
+    const ref = memo.useRef(0);
+    const ref2 = memo.useRef(0);
+    const items1 = [first];
+    const callback = memo.useCallback(function(items) {
+      if (!picks.current) {
         tmp.current = true;
+        const _Set = Set;
+        const self = this;
+        const self2 = this;
+        set = new Set(first);
+        const _Set2 = Set;
+        const self4 = this;
+        const self3 = this;
+        let someResult = set.size !== new Set(items).size;
+        const set1 = new Set(items);
+        if (!someResult) {
+          items = [];
+          HermesBuiltin.arraySpread(items, tmp9, 0);
+          someResult = items.some((item) => !set.has(item));
+        }
         const obj = InterestPickerActionCreators;
-        const result = obj.setInterestPickerPicks(gameIds);
+        const result = obj.setInterestPickerPicks(items);
         const obj2 = InterestPickerActionCreators;
         const result1 = obj2.markInterestPickerSeen();
+        const obj4 = { isDiscoverPickerCommit: true, clearDiscoverSnapshot: someResult };
         obj3 = ICYMIActionCreatorsDefault;
-        const dehydrated = obj3.fetchDehydrated({ isDiscoverPickerCommit: true });
-        const obj4 = ModalActionCreatorsDefault;
-        obj4.popWithKey(c9);
-        const obj5 = WaterwheelsDiscoverNavigation;
-        const waterwheelsDiscover = obj5.selectWaterwheelsDiscover();
+        const dehydrated = obj3.fetchDehydrated(obj4);
+        const obj5 = ModalActionCreatorsDefault;
+        obj5.popWithKey(c9);
+        const obj6 = WaterwheelsDiscoverNavigation;
+        const waterwheelsDiscover = obj6.selectWaterwheelsDiscover();
       }
-    }, []);
-    const items1 = [interestPickerGameList, waterwheelsDiscoverEnabled, flag];
-    const effect = waterwheelsDiscoverEnabled.useEffect(() => {
+    }, items1);
+    const items2 = [interestPickerGameList, waterwheelsDiscoverEnabled, flag];
+    const effect = memo.useEffect(() => {
       const tmp = !flag && null != interestPickerGameList && waterwheelsDiscoverEnabled;
       if (tmp) {
         const _Date = Date;
-        ref2.current = Date.now();
+        ref.current = Date.now();
         const obj = { arm: interestPickerGameList, catalog_version: InterestPickerCatalogs.INTEREST_PICKER_CATALOG_VERSION };
         const track = AnalyticsUtilsDefault.track;
         const WATERWHEELS_INTEREST_PICKER_EXPOSURE = metroImportDefault.WATERWHEELS_INTEREST_PICKER_EXPOSURE;
         AnalyticsUtilsDefault;
         track(WATERWHEELS_INTEREST_PICKER_EXPOSURE, obj);
       }
-    }, items1);
-    const effect1 = waterwheelsDiscoverEnabled.useEffect(() => {
+    }, items2);
+    const effect1 = memo.useEffect(() => {
       let obj = flag(first[10]);
       const result = obj.setInterestPickerOpen(true);
       return () => {
-        const obj = flag(initialSelection[10]);
+        const obj = flag(first[10]);
         return obj.setInterestPickerOpen(false);
       };
     }, []);
-    const items2 = [waterwheelsDiscoverEnabled];
-    const effect2 = waterwheelsDiscoverEnabled.useEffect(() => {
-      const current = waterwheelsDiscoverEnabled || ref.current;
+    const items3 = [waterwheelsDiscoverEnabled];
+    const effect2 = memo.useEffect(() => {
+      const current = waterwheelsDiscoverEnabled || picks.current;
       if (!current) {
         const obj = ModalActionCreatorsDefault;
         obj.popWithKey(c9);
       }
-    }, items2);
-    const items3 = [memo, callback, waterwheelsDiscoverEnabled, flag];
-    const effect3 = waterwheelsDiscoverEnabled.useEffect(() => {
+    }, items3);
+    const items4 = [memo, callback, waterwheelsDiscoverEnabled, flag];
+    const effect3 = memo.useEffect(() => {
       const tmp = null == memo && waterwheelsDiscoverEnabled;
       if (tmp) {
         const tmp2 = flag;
@@ -158,23 +166,23 @@ class WaterwheelsInterestPickerModal {
           callback([]);
         }
       }
-    }, items3);
+    }, items4);
     if (null != memo) {
       if (null != interestPickerGameList) {
         if (waterwheelsDiscoverEnabled) {
           obj3 = { arm: interestPickerGameList, catalog_version: tmp2(tmp3[8]).INTEREST_PICKER_CATALOG_VERSION };
-          let obj4 = { style: tmp.screen, children: tmp13(tmp16, obj5) };
-          let tmp14 = ref;
+          let tmp14 = ref2;
+          let obj4 = { style: tmp.screen, children: tmp14(tmp17, obj5) };
           obj5 = {
             catalog: memo,
             performanceContext: obj6,
             title: intl.string(interestPickerGameList(tmp3[18])["5MUKTF"]),
             subtitle: intl2.string(interestPickerGameList(tmp3[18])["z/57xV"]),
             minSelection: num,
-            initialSelection,
+            initialSelection: first1,
             allowEmptySelection: flag,
             onRowSeen(arg0) {
-                    ref3.current = Math.max(ref3.current, arg0);
+                    ref2.current = Math.max(ref2.current, arg0);
                   },
             onGameToggle(game_id, grid_position, selected) {
                     const tmp = flag;
@@ -212,14 +220,15 @@ class WaterwheelsInterestPickerModal {
                   }
           };
           obj6 = { surface: "modal" };
-          tmp16 = interestPickerGameList(initialSelection[16]);
+          tmp17 = interestPickerGameList(first[16]);
           let merged = Object.assign(obj3);
           intl = tmp2(tmp3[17]).intl;
           intl2 = tmp2(tmp3[17]).intl;
+          const tmp15 = waterwheelsDiscoverEnabled;
           if (flag) {
             num = 0;
           }
-          return callback(tmp14, obj4);
+          return tmp14(tmp15, obj4);
         }
       }
     }
@@ -231,7 +240,7 @@ const View = react_native.View;
 const jsx = Fragment.jsx;
 let c9 = "waterwheels-interest-picker-modal";
 const WaterwheelsInterestPickerModal_str = "WaterwheelsInterestPickerModal";
-const unpackModuleId = createStyles.createStyles({ screen: { flex: 1 } });
+let closure_11 = createStyles.createStyles({ screen: { flex: 1 } });
 WaterwheelsInterestPickerModal.modalConfig = { animation: ModalAnimation.SLIDE_IN_OUT };
 let result = size.fileFinishedImporting("modules/waterwheels/interest/native/WaterwheelsInterestPickerModal.tsx");
 

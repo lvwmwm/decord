@@ -1,16 +1,16 @@
-// Module ID: 16238
-// Function ID: 16239
+// Module ID: 16271
+// Function ID: 16272
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1071, 21, 4913, 575, 11104, 7045, 5504, 1112, 2824, 16195, 1500, 7348, 2]
+// Dependencies: [17, 1071, 21, 4917, 575, 10457, 6018, 5508, 1112, 2824, 16228, 1500, 6014, 2]
 // Exports: default
 
-// Module 16238 (FamilyCenterParentalControlsScreenTime)
+// Module 16271 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import _modDef2824 from "module_2824" /* 2824 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,12 +31,12 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(11104);
+  let obj = rule(10457);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(11104);
+  let obj2 = rule(10457);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "body-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(7045).TableRow;
-  Text = rule(5504).Text;
+  const TableRow = rule(6018).TableRow;
+  Text = rule(5508).Text;
   const enabled = rule.enabled;
   const intl = rule(1112).intl;
   const string = intl.string;

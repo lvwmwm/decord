@@ -1,17 +1,17 @@
-// Module ID: 6526
-// Function ID: 6527
+// Module ID: 6879
+// Function ID: 6880
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 4766, 6527, 4947, 1071, 4949, 572, 1284, 6528, 5860, 1112, 6529, 2]
+// Dependencies: [5, 4770, 6880, 4951, 1071, 4953, 572, 1284, 6881, 5920, 1112, 6671, 2]
 
-// Module 6526 (GuildJoinRequestActionCreators)
+// Module 6879 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import ChannelRecord from "ChannelRecord" /* 4766 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4947 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4949 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6528 */;
+import ChannelRecord from "ChannelRecord" /* 4770 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4951 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4953 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6881 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6527 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6880 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let obj = function _fetchGuildJoinRequests() {
       let c2;
       let c3;
       let limit;
-      let obj7;
-      let obj9;
+      let obj11;
+      let obj8;
       let status;
       if (c7 === 2) {
         c7 = 3;
@@ -73,7 +73,7 @@ let obj = function _fetchGuildJoinRequests() {
               if (limit === undefined) {
                 limit = MemberVerificationTypes.MAX_RESULTS_PER_PAGE;
               }
-              flag = tmp65.force ?? false;
+              flag = tmp71.force ?? false;
               closure_6 = undefined;
               value = undefined;
               total = undefined;
@@ -91,22 +91,23 @@ let obj = function _fetchGuildJoinRequests() {
               return { value, done: true };
             } else {
               closure_6 = flag || !closure_131_5.hasFetched(guildId);
-              const tmp28 = flag || !closure_131_5.hasFetched(guildId);
-              if (!closure_131_5.isFetching()) {
-                const tmp33 = closure_6;
-                if (tmp33) {
-                  const obj6 = closure_131_1(closure_131_2[6]);
-                  obj6.dispatch({ type: "GUILD_JOIN_REQUESTS_FETCH_START" });
+              const tmp30 = flag || !closure_131_5.hasFetched(guildId);
+              if (!closure_131_5.isFetching(guildId, status)) {
+                const tmp37 = closure_6;
+                if (tmp37) {
+                  const obj6 = { type: "GUILD_JOIN_REQUESTS_FETCH_START", guildId, status };
+                  const obj7 = closure_131_1(closure_131_2[6]);
+                  obj7.dispatch(obj6);
                   c5 = 1;
                   const HTTP = closure_131_0(closure_131_2[7]).HTTP;
-                  const request = { url: closure_131_8.GUILD_JOIN_REQUESTS(guildId), query: obj7, rejectWithError: obj9.rejectWithMigratedError() };
+                  const request = { url: closure_131_8.GUILD_JOIN_REQUESTS(guildId), query: obj8, rejectWithError: obj11.rejectWithMigratedError() };
                   const get = HTTP.get;
-                  obj7 = { status, limit, before, after };
+                  obj8 = { status, limit, before, after };
                   c6 = 3;
                   c7 = 1;
-                  obj9 = closure_131_0(closure_131_2[7]);
-                  const obj8 = { value: get(request), done: false };
-                  return obj8;
+                  obj11 = closure_131_0(closure_131_2[7]);
+                  const obj9 = { value: get(request), done: false };
+                  return obj9;
                 }
               }
               c7 = 3;
@@ -115,8 +116,9 @@ let obj = function _fetchGuildJoinRequests() {
           } else if (2 === c6) {
             c5 = 0;
             let closure_10 = closure_4;
+            const obj10 = { type: "GUILD_JOIN_REQUESTS_FETCH_FAILURE", guildId, status };
             const obj5 = closure_131_1(closure_131_2[6]);
-            obj5.dispatch({ type: "GUILD_JOIN_REQUESTS_FETCH_FAILURE" });
+            obj5.dispatch(obj10);
             throw closure_10;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -133,18 +135,18 @@ let obj = function _fetchGuildJoinRequests() {
               closure_1 = [];
             }
             requests = closure_1.map(closure_131_6);
-            const obj11 = { type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS", status, requests, total, limit, guildId };
+            const obj13 = { type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS", status, requests, total, limit, guildId };
             obj = closure_131_1(closure_131_2[6]);
-            obj.dispatch(obj11);
+            obj.dispatch(obj13);
             c5 = 0;
             c7 = 3;
             return { value, done: true };
           }
-        } catch (tmp54) {
-          closure_4 = tmp54;
+        } catch (tmp60) {
+          closure_4 = tmp60;
           if (0 === c5) {
             c7 = 3;
-            throw tmp54;
+            throw tmp60;
           } else {
             c6 = 2;
           }

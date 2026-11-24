@@ -1,13 +1,13 @@
-// Module ID: 8151
-// Function ID: 8152
+// Module ID: 9349
+// Function ID: 9350
 // Name: useMaybeFetchProfileFrame
-// Dependencies: [19, 8152, 8162, 8074, 2]
+// Dependencies: [19, 9350, 9360, 6184, 2]
 // Exports: default
 
-// Module 8151 (useMaybeFetchProfileFrame)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
-import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 8152 */;
-import useProfileFrameDefault from "useProfileFrame" /* 8162 */;
+// Module 9349 (useMaybeFetchProfileFrame)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6184 */;
+import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 9350 */;
+import useProfileFrameDefault from "useProfileFrame" /* 9360 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

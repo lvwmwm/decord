@@ -1,14 +1,14 @@
-// Module ID: 5605
-// Function ID: 5606
+// Module ID: 5609
+// Function ID: 5610
 // Name: UserPlatformIcon
-// Dependencies: [19, 21, 575, 5599, 5606, 2]
+// Dependencies: [19, 21, 575, 5603, 5610, 2]
 // Exports: UserPlatformIcon
 
-// Module 5605 (UserPlatformIcon)
+// Module 5609 (UserPlatformIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 5606 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 5610 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

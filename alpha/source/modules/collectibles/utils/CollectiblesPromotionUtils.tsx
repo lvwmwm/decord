@@ -1,15 +1,15 @@
-// Module ID: 8967
-// Function ID: 8968
+// Module ID: 11133
+// Function ID: 11134
 // Name: CollectiblesPromotionUtils
-// Dependencies: [8928, 8968, 8970, 8971, 8965, 2]
+// Dependencies: [10983, 11134, 11104, 11136, 11108, 2]
 // Exports: getPromotionForCollectiblesProduct, hasFiatDiscountPromotion, isPromotionInInvoicePreview
 
-// Module 8967 (CollectiblesPromotionUtils)
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8928 */;
-import CollectiblesSequencedOfferPromotionUtils from "CollectiblesSequencedOfferPromotionUtils" /* 8965 */;
-import CollectiblesCollectAndClaimPromotionUtils from "CollectiblesCollectAndClaimPromotionUtils" /* 8968 */;
-import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 8970 */;
-import CollectiblesCollectionSalePromotionUtils from "CollectiblesCollectionSalePromotionUtils" /* 8971 */;
+// Module 11133 (CollectiblesPromotionUtils)
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 10983 */;
+import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 11104 */;
+import CollectiblesSequencedOfferPromotionUtils from "CollectiblesSequencedOfferPromotionUtils" /* 11108 */;
+import CollectiblesCollectAndClaimPromotionUtils from "CollectiblesCollectAndClaimPromotionUtils" /* 11134 */;
+import CollectiblesCollectionSalePromotionUtils from "CollectiblesCollectionSalePromotionUtils" /* 11136 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionUtils.tsx");

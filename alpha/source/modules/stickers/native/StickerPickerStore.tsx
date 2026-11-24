@@ -1,9 +1,9 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 10689
+// Function ID: 10690
 // Name: StickerPickerStore
 // Dependencies: [560, 1262, 2]
 
-// Module 11371 (StickerPickerStore)
+// Module 10689 (StickerPickerStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

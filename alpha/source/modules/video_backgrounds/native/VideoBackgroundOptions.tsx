@@ -1,16 +1,16 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 10281
+// Function ID: 10282
 // Name: VideoBackgroundOptions
-// Dependencies: [19, 5821, 21, 4913, 575, 5827, 1112, 7057, 8667, 11004, 5600, 2]
+// Dependencies: [19, 5882, 21, 4917, 575, 5893, 1112, 6029, 8935, 10282, 5604, 2]
 // Exports: fromVideoBackgroundRadioValue, parseVideoBackgroundRadioValue, toVideoBackgroundRadioValue, useVideoBackgroundRadioOptions
 
-// Module 11003 (VideoBackgroundOptions)
+// Module 10281 (VideoBackgroundOptions)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5821 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5827 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5882 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5893 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

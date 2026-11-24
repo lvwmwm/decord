@@ -1,26 +1,26 @@
-// Module ID: 18709
-// Function ID: 18710
+// Module ID: 18750
+// Function ID: 18751
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 8574, 8562, 1071, 21, 3, 4913, 575, 5650, 11770, 5092, 1653, 5474, 5122, 7189, 5098, 11952, 1107, 17520, 10598, 17531, 13743, 5090, 5089, 5924, 1501, 18174, 13305, 17524, 17529, 17526, 5173, 18710, 12818, 18167, 9659, 5491, 18711, 13712, 2]
+// Dependencies: [32, 19, 17, 8876, 8864, 1071, 21, 3, 4917, 575, 5887, 11660, 5096, 1653, 5478, 5126, 7268, 5102, 11835, 1107, 17558, 8478, 17569, 13653, 5094, 5093, 5984, 1501, 18213, 13231, 17562, 17567, 17564, 5177, 18751, 12737, 18206, 10447, 5495, 18752, 13622, 2]
 // Exports: default
 
-// Module 18709 (SwipeForMemberListWrapper)
+// Module 18750 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
-import RootNavigationRef from "RootNavigationRef" /* 5090 */;
-import useChatLayout from "useChatLayout" /* 5092 */;
-import ChatInputUtils from "ChatInputUtils" /* 5098 */;
-import react_native from "react-native" /* 8562 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 17531 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5093 */;
+import RootNavigationRef from "RootNavigationRef" /* 5094 */;
+import useChatLayout from "useChatLayout" /* 5096 */;
+import ChatInputUtils from "ChatInputUtils" /* 5102 */;
+import react_native from "react-native" /* 8864 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 17569 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 8574 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 8876 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

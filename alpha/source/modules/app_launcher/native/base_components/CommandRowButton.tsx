@@ -1,10 +1,10 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 12891
+// Function ID: 12892
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12896, 10674, 12860, 5565, 7058, 5511, 1112, 5611, 575, 2]
+// Dependencies: [5, 32, 19, 21, 12815, 9946, 12779, 5569, 6030, 5515, 1112, 5615, 575, 2]
 // Exports: default, useCommandRowSend
 
-// Module 12972 (CommandRowButton)
+// Module 12891 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -23,13 +23,13 @@ export default function CommandRowIcon(hasOptions) {
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(7058).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6030).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5511).Button;
+    const Button = tmp4(5515).Button;
     intl = tmp4(1112).intl;
     ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
-    const SendMessageIcon = tmp4(5611).SendMessageIcon;
+    const SendMessageIcon = tmp4(5615).SendMessageIcon;
     tmp3Result = tmp3(Button, obj);
   }
   return tmp3Result;

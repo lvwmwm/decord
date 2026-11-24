@@ -1,13 +1,13 @@
-// Module ID: 9457
-// Function ID: 9458
+// Module ID: 8573
+// Function ID: 8574
 // Name: useDisplayNameFontsAvailable
-// Dependencies: [5, 19, 17, 9458, 2]
+// Dependencies: [5, 19, 17, 8574, 2]
 // Exports: useDisplayNameFontsAvailable
 
-// Module 9457 (useDisplayNameFontsAvailable)
+// Module 8573 (useDisplayNameFontsAvailable)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import react_nativeDefault from "react-native" /* 9458 */;
+import react_nativeDefault from "react-native" /* 8574 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

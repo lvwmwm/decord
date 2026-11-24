@@ -102,84 +102,84 @@ const T27 = function T() {
   return items;
 };
 const T28 = function T() {
-  return require("timestamp").Timestamp;
+  return require("wrappers").UInt64Value;
 };
 const T29 = function T() {
-  return require("timestamp").Timestamp;
+  return require("wrappers").UInt64Value;
 };
 const T30 = function T() {
+  return require("timestamp").Timestamp;
+};
+const T31 = function T() {
   const items = ["discord_protos.users.v1.AgeAssuranceMethod", obj9, "AGE_ASSURANCE_METHOD_"];
   return items;
 };
-const T31 = function T() {
+const T32 = function T() {
   const items = ["discord_protos.users.v1.AgeAssuranceVendor", obj10, "AGE_ASSURANCE_VENDOR_"];
   return items;
 };
-const T32 = function T() {
+const T33 = function T() {
   return require("timestamp").Timestamp;
 };
-const T33 = function T() {
+const T34 = function T() {
   const items = ["discord_protos.users.v1.AgeAssuranceGroup", obj11];
   return items;
 };
-const T34 = function T() {
+const T35 = function T() {
   return require("timestamp").Timestamp;
 };
-const T35 = function T() {
+const T36 = function T() {
   const items = ["discord_protos.users.v1.UserLinkType", obj12];
   return items;
 };
-const T36 = function T() {
+const T37 = function T() {
   const items = ["discord_protos.users.v1.UserLinkStatus", obj13];
   return items;
-};
-const T37 = function T() {
-  return require("timestamp").Timestamp;
 };
 const T38 = function T() {
   return require("timestamp").Timestamp;
 };
 const T39 = function T() {
-  return closure_1_36;
-};
-const T40 = function T() {
   return require("timestamp").Timestamp;
 };
+const T40 = function T() {
+  return closure_1_36;
+};
 const T41 = function T() {
+  return require("timestamp").Timestamp;
+};
+const T42 = function T() {
   const items = ["discord_protos.users.v1.PremiumSource", obj17, "PREMIUM_SOURCE_"];
   return items;
 };
-const T42 = function T() {
+const T43 = function T() {
   const items = ["discord_protos.users.v1.PremiumSubscriptionType", obj18, "PREMIUM_SUBSCRIPTION_TYPE_"];
   return items;
-};
-const T43 = function T() {
-  return require("timestamp").Timestamp;
 };
 const T44 = function T() {
   return require("timestamp").Timestamp;
 };
 const T45 = function T() {
+  return require("timestamp").Timestamp;
+};
+const T46 = function T() {
   const items = ["discord_protos.users.v1.PerkSource", obj21];
   return items;
 };
-const T46 = function T() {
+const T47 = function T() {
   return guildShardingConfigType4;
 };
-const T47 = function T() {
+const T48 = function T() {
   return guildShardingConfigType5;
 };
-const T48 = function T() {
+const T49 = function T() {
   return guildShardingConfigType6;
 };
-const T49 = function T() {
+const T50 = function T() {
   return guildShardingConfigType8;
 };
-const T50 = function T() {
-  return mediumUserType2;
-};
 const T51 = function T() {
-  return require("timestamp").Timestamp;
+  return mediumUserType2;
 };
 const T52 = function T() {
   return require("timestamp").Timestamp;
@@ -191,12 +191,15 @@ const T54 = function T() {
   return require("timestamp").Timestamp;
 };
 const T55 = function T() {
-  return require("wrappers").StringValue;
+  return require("timestamp").Timestamp;
 };
 const T56 = function T() {
-  return vadColorsType;
+  return require("wrappers").StringValue;
 };
 const T57 = function T() {
+  return vadColorsType;
+};
+const T58 = function T() {
   return vadColorsType;
 };
 const DayOfWeek = { DAY_OF_WEEK_UNSPECIFIED: 0, [0]: "DAY_OF_WEEK_UNSPECIFIED", MONDAY: 1, [1]: "MONDAY", TUESDAY: 2, [2]: "TUESDAY", WEDNESDAY: 3, [3]: "WEDNESDAY", THURSDAY: 4, [4]: "THURSDAY", FRIDAY: 5, [5]: "FRIDAY", SATURDAY: 6, [6]: "SATURDAY", SUNDAY: 7, [7]: "SUNDAY" };
@@ -1187,7 +1190,7 @@ class TypingIndicatorEmoji$Type extends MessageType8 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { emoji: { oneofKind: "r" }, animated: false };
+    obj = { emoji: { oneofKind: "Array" }, animated: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
@@ -2068,7 +2071,7 @@ class Badge$Type extends MessageType16 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { badge: { oneofKind: "r" } };
+    obj = { badge: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
@@ -2241,17 +2244,18 @@ const mediumUserType13 = new MediumUser$Type("discord_protos.users.v1.UserBadges
 const MessageType18 = _mod1196.MessageType;
 class AnonymizationInfo$Type extends MessageType18 {
   constructor() {
-    let items = [, , ];
+    let items = [, , , ];
     obj = { no: 1, name: "status", kind: "enum", T: T27 };
     items[0] = obj;
-    obj2 = { no: 2, name: "anon_user_id", kind: "message", T };
+    items[1] = { no: 2, name: "anon_user_id", kind: "message", T: T28 };
+    obj2 = { no: 3, name: "original_user_created_at", kind: "message", T };
     class T {
       constructor() {
-        return closure_1_0(closure_1_1[2]).UInt64Value;
+        return closure_1_0(closure_1_1[4]).Timestamp;
       }
     }
-    items[1] = obj2;
-    items[2] = { no: 3, name: "original_user_created_at", kind: "message", T: T28 };
+    items[2] = obj2;
+    items[3] = { no: 4, name: "original_user_id", kind: "message", T: T29 };
     const tmp2 = new tmp("discord_protos.users.v1.AnonymizationInfo", items, T);
     return tmp2;
   }
@@ -2282,11 +2286,14 @@ class AnonymizationInfo$Type extends MessageType18 {
         if (1 === tmp5) {
           obj.status = pos.int32();
         } else if (2 === tmp5) {
-          let UInt64Value = wrappers.UInt64Value;
-          obj.anonUserId = UInt64Value.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.anonUserId);
+          let UInt64Value2 = wrappers.UInt64Value;
+          obj.anonUserId = UInt64Value2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.anonUserId);
         } else if (3 === tmp5) {
           let Timestamp = timestamp.Timestamp;
           obj.originalUserCreatedAt = Timestamp.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.originalUserCreatedAt);
+        } else if (4 === tmp5) {
+          let UInt64Value = wrappers.UInt64Value;
+          obj.originalUserId = UInt64Value.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.originalUserId);
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -2335,6 +2342,14 @@ class AnonymizationInfo$Type extends MessageType18 {
       const internalBinaryWrite2Result = internalBinaryWrite2(originalUserCreatedAt, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
+    if (status.originalUserId) {
+      const UInt64Value2 = wrappers.UInt64Value;
+      internalBinaryWrite3 = UInt64Value2.internalBinaryWrite;
+      const originalUserId = status.originalUserId;
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
+      const internalBinaryWrite3Result = internalBinaryWrite3(originalUserId, tagResult3.fork(), writeUnknownFields);
+      const joined2 = internalBinaryWrite3Result.join();
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -2347,18 +2362,19 @@ class AnonymizationInfo$Type extends MessageType18 {
   }
 }
 const prototype18 = AnonymizationInfo$Type.prototype;
-const items17 = [, , ];
+const items17 = [, , , ];
 const obj32 = { no: 1, name: "status", kind: "enum", T: T27 };
 items17[0] = obj32;
-items17[1] = {
-  no: 2,
-  name: "anon_user_id",
+items17[1] = { no: 2, name: "anon_user_id", kind: "message", T: T28 };
+items17[2] = {
+  no: 3,
+  name: "original_user_created_at",
   kind: "message",
   T() {
-    return require("wrappers").UInt64Value;
+    return require("timestamp").Timestamp;
   }
 };
-items17[2] = { no: 3, name: "original_user_created_at", kind: "message", T: T28 };
+items17[3] = { no: 4, name: "original_user_id", kind: "message", T: T29 };
 const mediumUserType14 = new MediumUser$Type("discord_protos.users.v1.AnonymizationInfo", items17, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13);
 const MessageType19 = _mod1196.MessageType;
 class UserData$Type extends MessageType19 {
@@ -2943,13 +2959,13 @@ const MessageType20 = _mod1196.MessageType;
 class AgeAssuranceData$Type extends MessageType20 {
   constructor() {
     let items = [, , , , , , , , ];
-    obj = { no: 1, name: "estimated_date_of_birth", kind: "message", T: T29 };
+    obj = { no: 1, name: "estimated_date_of_birth", kind: "message", T: T30 };
     items[0] = obj;
-    items[1] = { no: 2, name: "method", kind: "enum", T: T30 };
+    items[1] = { no: 2, name: "method", kind: "enum", T: T31 };
     items[2] = { no: 3, name: "method_version", kind: "scalar", T: 5 };
-    items[3] = { no: 4, name: "vendor", kind: "enum", T: T31 };
-    items[4] = { no: 5, name: "verified_at", kind: "message", T: T32 };
-    items[5] = { no: 6, name: "estimated_age_group", kind: "enum", T: T33 };
+    items[3] = { no: 4, name: "vendor", kind: "enum", T: T32 };
+    items[4] = { no: 5, name: "verified_at", kind: "message", T: T33 };
+    items[5] = { no: 6, name: "estimated_age_group", kind: "enum", T: T34 };
     items[6] = { no: 7, name: "is_regional_adult", kind: "scalar", T: 8 };
     obj2 = { no: 8, name: "cooldown_reset_at", kind: "message", T };
     class T {
@@ -2958,7 +2974,7 @@ class AgeAssuranceData$Type extends MessageType20 {
       }
     }
     items[7] = obj2;
-    items[8] = { no: 9, name: "excluded_from_prediction_since", kind: "message", T: T34 };
+    items[8] = { no: 9, name: "excluded_from_prediction_since", kind: "message", T: T35 };
     const tmp2 = new tmp("discord_protos.users.v1.AgeAssuranceData", items, T);
     return tmp2;
   }
@@ -3101,13 +3117,13 @@ class AgeAssuranceData$Type extends MessageType20 {
 }
 const prototype20 = AgeAssuranceData$Type.prototype;
 const items18 = [, , , , , , , , ];
-const obj33 = { no: 1, name: "estimated_date_of_birth", kind: "message", T: T29 };
+const obj33 = { no: 1, name: "estimated_date_of_birth", kind: "message", T: T30 };
 items18[0] = obj33;
-items18[1] = { no: 2, name: "method", kind: "enum", T: T30 };
+items18[1] = { no: 2, name: "method", kind: "enum", T: T31 };
 items18[2] = { no: 3, name: "method_version", kind: "scalar", T: 5 };
-items18[3] = { no: 4, name: "vendor", kind: "enum", T: T31 };
-items18[4] = { no: 5, name: "verified_at", kind: "message", T: T32 };
-items18[5] = { no: 6, name: "estimated_age_group", kind: "enum", T: T33 };
+items18[3] = { no: 4, name: "vendor", kind: "enum", T: T32 };
+items18[4] = { no: 5, name: "verified_at", kind: "message", T: T33 };
+items18[5] = { no: 6, name: "estimated_age_group", kind: "enum", T: T34 };
 items18[6] = { no: 7, name: "is_regional_adult", kind: "scalar", T: 8 };
 items18[7] = {
   no: 8,
@@ -3117,13 +3133,13 @@ items18[7] = {
     return require("timestamp").Timestamp;
   }
 };
-items18[8] = { no: 9, name: "excluded_from_prediction_since", kind: "message", T: T34 };
+items18[8] = { no: 9, name: "excluded_from_prediction_since", kind: "message", T: T35 };
 let tmp27 = new "binaryReadMap24"("discord_protos.users.v1.AgeAssuranceData", items18, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15);
 let internalBinaryWrite = tmp27;
 const MessageType21 = _mod1196.MessageType;
 class LinkedUser$Type extends MessageType21 {
   constructor() {
-    let items = [{ no: 1, name: "user_id", kind: "scalar", T: 6 }, { no: 2, name: "link_type", kind: "enum", T: T35 }, { no: 3, name: "link_status", kind: "enum", T: T36 }, { no: 4, name: "requestor_id", kind: "scalar", T: 6 }, , ];
+    let items = [{ no: 1, name: "user_id", kind: "scalar", T: 6 }, { no: 2, name: "link_type", kind: "enum", T: T36 }, { no: 3, name: "link_status", kind: "enum", T: T37 }, { no: 4, name: "requestor_id", kind: "scalar", T: 6 }, , ];
     obj = { no: 5, name: "created_at", kind: "message", T };
     class T {
       constructor() {
@@ -3131,7 +3147,7 @@ class LinkedUser$Type extends MessageType21 {
       }
     }
     items[4] = obj;
-    items[5] = { no: 6, name: "updated_at", kind: "message", T: T37 };
+    items[5] = { no: 6, name: "updated_at", kind: "message", T: T38 };
     const tmp2 = new tmp("discord_protos.users.v1.LinkedUser", items, T);
     return tmp2;
   }
@@ -3249,8 +3265,8 @@ class LinkedUser$Type extends MessageType21 {
 const prototype21 = LinkedUser$Type.prototype;
 const items19 = [
   { no: 1, name: "user_id", kind: "scalar", T: 6 },
-  { no: 2, name: "link_type", kind: "enum", T: T35 },
-  { no: 3, name: "link_status", kind: "enum", T: T36 },
+  { no: 2, name: "link_type", kind: "enum", T: T36 },
+  { no: 3, name: "link_status", kind: "enum", T: T37 },
   { no: 4, name: "requestor_id", kind: "scalar", T: 6 },
   {
     no: 5,
@@ -3260,7 +3276,7 @@ const items19 = [
       return require("timestamp").Timestamp;
     }
   },
-  { no: 6, name: "updated_at", kind: "message", T: T37 }
+  { no: 6, name: "updated_at", kind: "message", T: T38 }
 ];
 let tmp28 = new "binaryReadMap24"("discord_protos.users.v1.LinkedUser", items19, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15);
 const keyExtractor = tmp28;
@@ -3268,7 +3284,7 @@ const MessageType22 = _mod1196.MessageType;
 class RateLimitData$Type extends MessageType22 {
   constructor() {
     const items = [];
-    obj = { no: 1, name: "limit_expiry", kind: "message", T: T38 };
+    obj = { no: 1, name: "limit_expiry", kind: "message", T: T39 };
     items[0] = obj;
     const tmp2 = new tmp("discord_protos.users.v1.RateLimitData", items, new.target);
     return tmp2;
@@ -3349,7 +3365,7 @@ class RateLimitData$Type extends MessageType22 {
 }
 const prototype22 = RateLimitData$Type.prototype;
 const items20 = [];
-const obj34 = { no: 1, name: "limit_expiry", kind: "message", T: T38 };
+const obj34 = { no: 1, name: "limit_expiry", kind: "message", T: T39 };
 items20[0] = obj34;
 let tmp29 = new "binaryReadMap24"("discord_protos.users.v1.RateLimitData", items20, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15);
 let closure_36 = tmp29;
@@ -3357,7 +3373,7 @@ const MessageType23 = _mod1196.MessageType;
 class FeatureLimits$Type extends MessageType23 {
   constructor() {
     const items = [];
-    obj = { no: 1, name: "map", kind: "map", K: 13, V: { kind: "message", T: T39 } };
+    obj = { no: 1, name: "map", kind: "map", K: 13, V: { kind: "message", T: T40 } };
     items[0] = obj;
     const tmp2 = new tmp("discord_protos.users.v1.FeatureLimits", items, new.target);
     return tmp2;
@@ -3485,14 +3501,14 @@ class FeatureLimits$Type extends MessageType23 {
 }
 const prototype23 = FeatureLimits$Type.prototype;
 const items21 = [];
-const obj35 = { no: 1, name: "map", kind: "map", K: 13, V: { kind: "message", T: T39 } };
+const obj35 = { no: 1, name: "map", kind: "map", K: 13, V: { kind: "message", T: T40 } };
 items21[0] = obj35;
 const items201 = new items20("discord_protos.users.v1.FeatureLimits", items21, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14);
 const MessageType24 = _mod1196.MessageType;
 class SafetyFlag$Type extends MessageType24 {
   constructor() {
     const items = [];
-    obj = { no: 1, name: "flag_expiry", kind: "message", T: T40 };
+    obj = { no: 1, name: "flag_expiry", kind: "message", T: T41 };
     items[0] = obj;
     const tmp2 = new tmp("discord_protos.users.v1.SafetyFlag", items, new.target);
     return tmp2;
@@ -3573,7 +3589,7 @@ class SafetyFlag$Type extends MessageType24 {
 }
 const prototype24 = SafetyFlag$Type.prototype;
 const items22 = [];
-const obj36 = { no: 1, name: "flag_expiry", kind: "message", T: T40 };
+const obj36 = { no: 1, name: "flag_expiry", kind: "message", T: T41 };
 items22[0] = obj36;
 const items202 = new items20("discord_protos.users.v1.SafetyFlag", items22, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14);
 const MessageType25 = _mod1196.MessageType;
@@ -3839,9 +3855,9 @@ const MessageType28 = _mod1196.MessageType;
 class PremiumState$Type extends MessageType28 {
   constructor() {
     let items = [, , , ];
-    obj = { no: 1, name: "premium_source", kind: "enum", T: T41 };
+    obj = { no: 1, name: "premium_source", kind: "enum", T: T42 };
     items[0] = obj;
-    items[1] = { no: 2, name: "premium_subscription_type", kind: "enum", T: T42 };
+    items[1] = { no: 2, name: "premium_subscription_type", kind: "enum", T: T43 };
     obj2 = { no: 3, name: "premium_subscription_group_role", kind: "enum", T };
     class T {
       constructor() {
@@ -3852,7 +3868,7 @@ class PremiumState$Type extends MessageType28 {
       }
     }
     items[2] = obj2;
-    items[3] = { no: 4, name: "premium_trial_ends_at", kind: "message", T: T43 };
+    items[3] = { no: 4, name: "premium_trial_ends_at", kind: "message", T: T44 };
     const tmp2 = new tmp("discord_protos.users.v1.PremiumState", items, T);
     return tmp2;
   }
@@ -3950,9 +3966,9 @@ class PremiumState$Type extends MessageType28 {
 }
 const prototype28 = PremiumState$Type.prototype;
 const items26 = [, , , ];
-const obj37 = { no: 1, name: "premium_source", kind: "enum", T: T41 };
+const obj37 = { no: 1, name: "premium_source", kind: "enum", T: T42 };
 items26[0] = obj37;
-items26[1] = { no: 2, name: "premium_subscription_type", kind: "enum", T: T42 };
+items26[1] = { no: 2, name: "premium_subscription_type", kind: "enum", T: T43 };
 items26[2] = {
   no: 3,
   name: "premium_subscription_group_role",
@@ -3962,12 +3978,12 @@ items26[2] = {
     return items;
   }
 };
-items26[3] = { no: 4, name: "premium_trial_ends_at", kind: "message", T: T43 };
+items26[3] = { no: 4, name: "premium_trial_ends_at", kind: "message", T: T44 };
 const guildShardingConfigType1 = new GuildShardingConfig$Type("discord_protos.users.v1.PremiumState", items26, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14);
 const MessageType29 = _mod1196.MessageType;
 class StoreCountry$Type extends MessageType29 {
   constructor() {
-    const items = [{ no: 1, name: "country", kind: "scalar", T: 9 }, { no: 2, name: "set_at", kind: "message", T: T44 }];
+    const items = [{ no: 1, name: "country", kind: "scalar", T: 9 }, { no: 2, name: "set_at", kind: "message", T: T45 }];
     const tmp2 = new tmp("discord_protos.users.v1.StoreCountry", items, new.target);
     return tmp2;
   }
@@ -4052,17 +4068,17 @@ class StoreCountry$Type extends MessageType29 {
   }
 }
 const prototype29 = StoreCountry$Type.prototype;
-const items27 = [{ no: 1, name: "country", kind: "scalar", T: 9 }, { no: 2, name: "set_at", kind: "message", T: T44 }];
+const items27 = [{ no: 1, name: "country", kind: "scalar", T: 9 }, { no: 2, name: "set_at", kind: "message", T: T45 }];
 const guildShardingConfigType2 = new GuildShardingConfig$Type("discord_protos.users.v1.StoreCountry", items27, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14);
 const MessageType30 = _mod1196.MessageType;
 class PerkConfig$Type extends MessageType30 {
   constructor() {
     let items = [, , , , , ];
-    obj = { no: 1, name: "source", kind: "enum", repeat: 1, T: T45 };
+    obj = { no: 1, name: "source", kind: "enum", repeat: 1, T: T46 };
     items[0] = obj;
-    items[1] = { no: 2, name: "increased_file_upload_size", kind: "message", oneof: "kind", T: T46 };
-    items[2] = { no: 3, name: "increased_guild_limit", kind: "message", oneof: "kind", T: T47 };
-    items[3] = { no: 4, name: "display_name_styles", kind: "message", oneof: "kind", T: T48 };
+    items[1] = { no: 2, name: "increased_file_upload_size", kind: "message", oneof: "kind", T: T47 };
+    items[2] = { no: 3, name: "increased_guild_limit", kind: "message", oneof: "kind", T: T48 };
+    items[3] = { no: 4, name: "display_name_styles", kind: "message", oneof: "kind", T: T49 };
     obj2 = { no: 5, name: "client_themes", kind: "message", oneof: "kind", T };
     class T {
       constructor() {
@@ -4070,12 +4086,12 @@ class PerkConfig$Type extends MessageType30 {
       }
     }
     items[4] = obj2;
-    items[5] = { no: 6, name: "app_icons", kind: "message", oneof: "kind", T: T49 };
+    items[5] = { no: 6, name: "app_icons", kind: "message", oneof: "kind", T: T50 };
     const tmp2 = new tmp("discord_protos.users.v1.PerkConfig", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    obj = { source: [], kind: { oneofKind: "r" } };
+    obj = { source: [], kind: { oneofKind: "Array" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
@@ -4217,11 +4233,11 @@ class PerkConfig$Type extends MessageType30 {
 }
 const prototype30 = PerkConfig$Type.prototype;
 const items28 = [, , , , , ];
-const obj38 = { no: 1, name: "source", kind: "enum", repeat: 1, T: T45 };
+const obj38 = { no: 1, name: "source", kind: "enum", repeat: 1, T: T46 };
 items28[0] = obj38;
-items28[1] = { no: 2, name: "increased_file_upload_size", kind: "message", oneof: "kind", T: T46 };
-items28[2] = { no: 3, name: "increased_guild_limit", kind: "message", oneof: "kind", T: T47 };
-items28[3] = { no: 4, name: "display_name_styles", kind: "message", oneof: "kind", T: T48 };
+items28[1] = { no: 2, name: "increased_file_upload_size", kind: "message", oneof: "kind", T: T47 };
+items28[2] = { no: 3, name: "increased_guild_limit", kind: "message", oneof: "kind", T: T48 };
+items28[3] = { no: 4, name: "display_name_styles", kind: "message", oneof: "kind", T: T49 };
 items28[4] = {
   no: 5,
   name: "client_themes",
@@ -4231,7 +4247,7 @@ items28[4] = {
     return guildShardingConfigType7;
   }
 };
-items28[5] = { no: 6, name: "app_icons", kind: "message", oneof: "kind", T: T49 };
+items28[5] = { no: 6, name: "app_icons", kind: "message", oneof: "kind", T: T50 };
 const guildShardingConfigType3 = new GuildShardingConfig$Type("discord_protos.users.v1.PerkConfig", items28, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14);
 const MessageType31 = _mod1196.MessageType;
 class PerkConfigIncreasedFileUploadSize$Type extends MessageType31 {
@@ -4395,7 +4411,7 @@ const guildShardingConfigType5 = new GuildShardingConfig$Type("discord_protos.us
 const MessageType33 = _mod1196.MessageType;
 class PerkConfigDisplayNameStyles$Type extends MessageType33 {
   constructor() {
-    const items = [{ no: 1, name: "is_restricted_to_allowed_options", kind: "scalar", T: 8 }, { no: 2, name: "allowed_styles", kind: "message", repeat: 1, T: T50 }];
+    const items = [{ no: 1, name: "is_restricted_to_allowed_options", kind: "scalar", T: 8 }, { no: 2, name: "allowed_styles", kind: "message", repeat: 1, T: T51 }];
     const tmp2 = new tmp("discord_protos.users.v1.PerkConfigDisplayNameStyles", items, new.target);
     return tmp2;
   }
@@ -4485,7 +4501,7 @@ class PerkConfigDisplayNameStyles$Type extends MessageType33 {
   }
 }
 const prototype33 = PerkConfigDisplayNameStyles$Type.prototype;
-const items31 = [{ no: 1, name: "is_restricted_to_allowed_options", kind: "scalar", T: 8 }, { no: 2, name: "allowed_styles", kind: "message", repeat: 1, T: T50 }];
+const items31 = [{ no: 1, name: "is_restricted_to_allowed_options", kind: "scalar", T: 8 }, { no: 2, name: "allowed_styles", kind: "message", repeat: 1, T: T51 }];
 const guildShardingConfigType6 = new GuildShardingConfig$Type("discord_protos.users.v1.PerkConfigDisplayNameStyles", items31, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14);
 const MessageType34 = _mod1196.MessageType;
 class PerkConfigClientThemes$Type extends MessageType34 {
@@ -4699,7 +4715,7 @@ class Perks$Type extends MessageType36 {
     }
     items[1] = obj;
     items[2] = { no: 3, name: "rules_version", kind: "scalar", T: 13 };
-    items[3] = { no: 4, name: "updated_at", kind: "message", T: T51 };
+    items[3] = { no: 4, name: "updated_at", kind: "message", T: T52 };
     const tmp2 = new tmp("discord_protos.users.v1.Perks", items, T);
     return tmp2;
   }
@@ -4884,12 +4900,12 @@ class T {
 }
 items34[1] = obj39;
 items34[2] = { no: 3, name: "rules_version", kind: "scalar", T: 13 };
-items34[3] = { no: 4, name: "updated_at", kind: "message", T: T51 };
+items34[3] = { no: 4, name: "updated_at", kind: "message", T: T52 };
 const items331 = new items33("discord_protos.users.v1.Perks", items34, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", T, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13);
 const MessageType37 = _mod1196.MessageType;
 class UserCountryData$Type extends MessageType37 {
   constructor() {
-    const items = [{ no: 1, name: "calculated_country", kind: "scalar", T: 9 }, { no: 2, name: "last_calculated_at", kind: "message", T: T52 }, , , ];
+    const items = [{ no: 1, name: "calculated_country", kind: "scalar", T: 9 }, { no: 2, name: "last_calculated_at", kind: "message", T: T53 }, , , ];
     obj = { no: 3, name: "country_override", kind: "message", T };
     class T {
       constructor() {
@@ -4897,7 +4913,7 @@ class UserCountryData$Type extends MessageType37 {
       }
     }
     items[2] = obj;
-    items[3] = { no: 4, name: "override_set_at", kind: "message", T: T53 };
+    items[3] = { no: 4, name: "override_set_at", kind: "message", T: T54 };
     items[4] = { no: 5, name: "country_scores", kind: "map", K: 9, V: { kind: "scalar", T: 2 } };
     const tmp2 = new tmp("discord_protos.users.v1.UserCountryData", items, T);
     return tmp2;
@@ -5062,7 +5078,7 @@ class UserCountryData$Type extends MessageType37 {
 const prototype37 = UserCountryData$Type.prototype;
 const items35 = [
   { no: 1, name: "calculated_country", kind: "scalar", T: 9 },
-  { no: 2, name: "last_calculated_at", kind: "message", T: T52 },
+  { no: 2, name: "last_calculated_at", kind: "message", T: T53 },
   {
     no: 3,
     name: "country_override",
@@ -5071,7 +5087,7 @@ const items35 = [
       return require("wrappers").StringValue;
     }
   },
-  { no: 4, name: "override_set_at", kind: "message", T: T53 },
+  { no: 4, name: "override_set_at", kind: "message", T: T54 },
 
 ];
 const obj41 = { no: 5, name: "country_scores", kind: "map", K: 9, V: { kind: "scalar", T: 2 } };
@@ -5184,9 +5200,9 @@ const MessageType39 = _mod1196.MessageType;
 class AgreementAcceptance$Type extends MessageType39 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "accepted_at", kind: "message", T: T54 };
+    obj = { no: 1, name: "accepted_at", kind: "message", T: T55 };
     items[0] = obj;
-    items[1] = { no: 2, name: "version", kind: "message", T: T55 };
+    items[1] = { no: 2, name: "version", kind: "message", T: T56 };
     const tmp2 = new tmp("discord_protos.users.v1.AgreementAcceptance", items, new.target);
     return tmp2;
   }
@@ -5277,18 +5293,18 @@ class AgreementAcceptance$Type extends MessageType39 {
 }
 const prototype39 = AgreementAcceptance$Type.prototype;
 const items37 = [, ];
-const obj43 = { no: 1, name: "accepted_at", kind: "message", T: T54 };
+const obj43 = { no: 1, name: "accepted_at", kind: "message", T: T55 };
 items37[0] = obj43;
-const obj44 = { no: 2, name: "version", kind: "message", T: T55 };
+const obj44 = { no: 2, name: "version", kind: "message", T: T56 };
 items37[1] = obj44;
 const vadColorsType = new VadColors$Type("discord_protos.users.v1.AgreementAcceptance", items37, tmp6, AgreementAcceptance$Type, "create", "internalBinaryRead", VadColors$Type, "internalBinaryWrite", items37, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj20, obj21, tmp8, this, items39, this, items40, mediumUserType, mediumUserType1, mediumUserType2, mediumUserType3, mediumUserType4, mediumUserType5, mediumUserType6, mediumUserType7, mediumUserType8, mediumUserType9, mediumUserType10, mediumUserType11, mediumUserType12, mediumUserType13, mediumUserType14, userDataType, tmp27, tmp28, tmp29, items201, items202, items203, this, items231, guildShardingConfigType, guildShardingConfigType1, guildShardingConfigType2, guildShardingConfigType3, guildShardingConfigType4, guildShardingConfigType5, guildShardingConfigType6, guildShardingConfigType7, guildShardingConfigType8, items331, items332, userCountryDataType, this, tmp, exports, obj44, undefined, 4, 3, 2, 1, 0, 16, 15, 14, 13, 12, 11, 10, 9, 8);
 const MessageType40 = _mod1196.MessageType;
 class AgreementsHistory$Type extends MessageType40 {
   constructor() {
     const items = [, ];
-    obj = { no: 1, name: "terms", kind: "message", repeat: 1, T: T56 };
+    obj = { no: 1, name: "terms", kind: "message", repeat: 1, T: T57 };
     items[0] = obj;
-    items[1] = { no: 2, name: "privacy", kind: "message", repeat: 1, T: T57 };
+    items[1] = { no: 2, name: "privacy", kind: "message", repeat: 1, T: T58 };
     const tmp2 = new tmp("discord_protos.users.v1.AgreementsHistory", items, new.target);
     return tmp2;
   }
@@ -5389,9 +5405,9 @@ class AgreementsHistory$Type extends MessageType40 {
 }
 const prototype40 = AgreementsHistory$Type.prototype;
 const items38 = [, ];
-const obj45 = { no: 1, name: "terms", kind: "message", repeat: 1, T: T56 };
+const obj45 = { no: 1, name: "terms", kind: "message", repeat: 1, T: T57 };
 items38[0] = obj45;
-const obj46 = { no: 2, name: "privacy", kind: "message", repeat: 1, T: T57 };
+const obj46 = { no: 2, name: "privacy", kind: "message", repeat: 1, T: T58 };
 items38[1] = obj46;
 const tmp47 = new "internalBinaryWrite"("discord_protos.users.v1.AgreementsHistory", items38, tmp6, AgreementAcceptance$Type, "create", "internalBinaryRead", AgreementsHistory$Type, "internalBinaryWrite", items38, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj20, obj21, tmp8, this, items39, this, items40, mediumUserType, mediumUserType1, mediumUserType2, mediumUserType3, mediumUserType4, mediumUserType5, mediumUserType6, mediumUserType7, mediumUserType8, mediumUserType9, mediumUserType10, mediumUserType11, mediumUserType12, mediumUserType13, mediumUserType14, userDataType, tmp27, tmp28, tmp29, items201, items202, items203, this, items231, guildShardingConfigType, guildShardingConfigType1, guildShardingConfigType2, guildShardingConfigType3, guildShardingConfigType4, guildShardingConfigType5, guildShardingConfigType6, guildShardingConfigType7, guildShardingConfigType8, items331, items332, userCountryDataType, vadColorsType, this, exports, obj46, undefined, 4, 3, 2, 1, 0, 16, 15, 14, 13, 12, 11);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/users/v1/user.tsx");

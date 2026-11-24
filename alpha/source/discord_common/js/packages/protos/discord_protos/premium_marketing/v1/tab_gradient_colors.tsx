@@ -1,9 +1,9 @@
-// Module ID: 9155
-// Function ID: 9156
+// Module ID: 9033
+// Function ID: 9034
 // Name: tab_gradient_colors
 // Dependencies: [32, 1196, 2]
 
-// Module 9155 (tab_gradient_colors)
+// Module 9033 (tab_gradient_colors)
 import _mod1196 from "module_1196" /* 1196 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

@@ -1,27 +1,27 @@
-// Module ID: 11888
-// Function ID: 11889
+// Module ID: 11761
+// Function ID: 11762
 // Name: ChatBanner
-// Dependencies: [19, 17, 6394, 6619, 11889, 1071, 21, 4913, 575, 11890, 11891, 504, 11, 1255, 5650, 7479, 5504, 1112, 5511, 6893, 8459, 7030, 7476, 11892, 2]
+// Dependencies: [19, 17, 5723, 6806, 11762, 1071, 21, 4917, 575, 11763, 11764, 504, 11, 1255, 5887, 7344, 5508, 1112, 5515, 7502, 7973, 6026, 7341, 11765, 2]
 // Exports: default
 
-// Module 11888 (ChatBanner)
+// Module 11761 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7476 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7479 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8459 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 11889 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 11890 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 11891 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7341 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7344 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7973 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 11762 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 11763 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 11764 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
-import ReadStateStore from "ReadStateStore" /* 6619 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
+import ReadStateStore from "ReadStateStore" /* 6806 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -83,12 +83,12 @@ class OptInChannelBanner {
     let obj = { style: items2, children: items3 };
     items2[1] = topBorder1;
     let obj2 = { lineClamp: 2, style: tmp.optInChannelBannerText, variant: "body-sm/semibold", children: intl.string(channel(1112).t.iOWmmB) };
-    const Text = channel(5504).Text;
+    const Text = channel(5508).Text;
     intl = channel(1112).intl;
     items3 = [closure_12(Text, obj2), ];
     let obj3 = { style: tmp.optInChannelBannerButtonContainer, children: closure_12(Button, obj4) };
     obj4 = { onPress: callback, size: "sm", text: intl2.string(channel(1112).t["TD/+zP"]) };
-    Button = channel(5511).Button;
+    Button = channel(5515).Button;
     let merged = Object.assign(ctaProps);
     intl2 = channel(1112).intl;
     items3[1] = closure_12(closure_4, obj3);
@@ -115,11 +115,11 @@ function ArchivedLockedThreadChatBanner(channel) {
     const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
     track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(6893);
+  let obj = channel(7502);
   let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: items1 };
   let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "body-sm/medium", color: "text-default", children: stringResult };
-  const Text = channel(5504).Text;
+  const Text = channel(5508).Text;
   const isForumPostResult = channel.isForumPost();
   const intl = channel(1112).intl;
   const string = intl.string;
@@ -151,7 +151,7 @@ function ArchivedLockedThreadChatBanner(channel) {
           obj4.unarchiveThread(channel, false);
         }
     };
-    Button = tmp3(5511).Button;
+    Button = tmp3(5515).Button;
     intl2 = tmp3(1112).intl;
     canUnarchiveThread = tmp8(tmp7, obj4);
   }
@@ -178,11 +178,11 @@ function LockedThreadChatBanner(channel) {
     const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
     track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(6893);
+  let obj = channel(7502);
   let isThreadModerator = obj.useIsThreadModerator(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: items1 };
   let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "body-sm/medium", color: "text-default", children: stringResult };
-  const Text = channel(5504).Text;
+  const Text = channel(5508).Text;
   const isForumPostResult = channel.isForumPost();
   const intl = channel(1112).intl;
   const string = intl.string;
@@ -214,7 +214,7 @@ function LockedThreadChatBanner(channel) {
           obj4.unlockThread(channel);
         }
     };
-    Button = tmp3(5511).Button;
+    Button = tmp3(5515).Button;
     intl2 = tmp3(1112).intl;
     isThreadModerator = tmp8(tmp7, obj4);
   }
@@ -248,9 +248,9 @@ function NewMessagesChatBar(channel) {
       let obj2 = { style: tmp.newMessageBar, children: items1 };
       const obj3 = { accessibilityRole: "button", style: tmp.newMessageBarTextContainer, onPress: handleScrollToNewMessages, children: closure_12(Text, obj4) };
       const tmp8 = isEstimatedResult ? t.wvtbbG : t["BctFH/"];
-      const PressableOpacity = tmp2(7030).PressableOpacity;
+      const PressableOpacity = tmp2(6026).PressableOpacity;
       obj4 = { variant: "body-sm/semibold", color: "text-overlay-light", children: intl.format(tmp8, obj5) };
-      Text = tmp2(5504).Text;
+      Text = tmp2(5508).Text;
       intl = tmp2(1112).intl;
       obj5 = { count: unreadCount, timestamp: oldestUnreadTimestamp };
       items1 = [closure_12(PressableOpacity, obj3), ];
@@ -265,10 +265,10 @@ function NewMessagesChatBar(channel) {
             },
         children: closure_12(XSmallBoldIcon, obj7)
       };
-      const PressableOpacity2 = tmp2(7030).PressableOpacity;
+      const PressableOpacity2 = tmp2(6026).PressableOpacity;
       intl2 = tmp2(1112).intl;
       obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
-      XSmallBoldIcon = tmp2(11892).XSmallBoldIcon;
+      XSmallBoldIcon = tmp2(11765).XSmallBoldIcon;
       items1[1] = closure_12(PressableOpacity2, obj6);
       tmp5 = closure_13(closure_4, obj2);
     }

@@ -1,15 +1,15 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 8575
+// Function ID: 8576
 // Name: usePlayingGameActivities
-// Dependencies: [19, 502, 5651, 6920, 504, 9740, 2]
+// Dependencies: [19, 502, 5888, 7528, 504, 8576, 2]
 // Exports: default
 
-// Module 9739 (usePlayingGameActivities)
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9740 */;
+// Module 8575 (usePlayingGameActivities)
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8576 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5651 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
+import PresenceStore from "PresenceStore" /* 5888 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7528 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

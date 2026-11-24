@@ -1,55 +1,54 @@
-// Module ID: 17920
-// Function ID: 17921
+// Module ID: 17958
+// Function ID: 17959
 // Name: CheckpointGuildsBarEntrypoint
-// Dependencies: [5, 19, 17, 17865, 5969, 4759, 17862, 21, 1653, 1706, 4913, 575, 17886, 5504, 1112, 3440, 5477, 17874, 12497, 17921, 5089, 17923, 9087, 5468, 10116, 2]
+// Dependencies: [19, 17, 17903, 6270, 4763, 17900, 21, 1653, 1706, 4917, 575, 17924, 5508, 1112, 3442, 5481, 17912, 12412, 12416, 5093, 17959, 9427, 5472, 13943, 2]
 
-// Module 17920 (CheckpointGuildsBarEntrypoint)
+// Module 17958 (CheckpointGuildsBarEntrypoint)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef3440 from "module_3440" /* 3440 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import CheckpointConstants from "CheckpointConstants" /* 5969 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17862 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17886 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17923 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _modDef3442 from "module_3442" /* 3442 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import CheckpointConstants from "CheckpointConstants" /* 6270 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17900 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17924 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17959 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17865 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17903 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let importDefault;
 
-let closure_12;
+let c10;
+let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let unpackModuleId;
 function ExpandedChildren() {
   let Text;
   let intl;
   let obj2;
-  const obj = { title: unpackModuleId(Text, obj2), subtitle: null };
+  const obj = { title: authStore(Text, obj2), subtitle: null };
   const HomeDrawerSharedItem = HomeDrawerShared.HomeDrawerSharedItem;
-  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef3440["8hclXY"]) };
+  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef3442["8hclXY"]) };
   Text = Text_Text.Text;
   intl = intl4.intl;
-  return unpackModuleId(HomeDrawerSharedItem, obj);
+  return authStore(HomeDrawerSharedItem, obj);
 }
-({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
+({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const GUILD_ITEM_INSET_LEFT = GuildsBarConstants.GUILD_ITEM_INSET_LEFT;
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const colors = ["#000000", "rgba(0, 0, 0, 0.5)", "#000000"];
 const start = { x: 1, y: 1 };
 const end = { x: 0, y: 0 };
-let closure_16 = { code: "(function CheckpointGuildsBarEntrypointTsx1(){let[scrollPosition]=this.__closure;return scrollPosition.get();})" };
-let closure_17 = { code: "(function CheckpointGuildsBarEntrypointTsx2(current){let[dismissed,initialScrollPosition,DISMISS_SCROLL_DISTANCE,scheduleOnRN,onScroll]=this.__closure;if(dismissed.get())return;const initial=initialScrollPosition.get();if(initial==null){initialScrollPosition.set(current);return;}if(Math.abs(current-initial)>=DISMISS_SCROLL_DISTANCE){dismissed.set(true);scheduleOnRN(onScroll);}})" };
-let closure_18 = createStyles.createStyles((width) => {
+let closure_15 = { code: "(function CheckpointGuildsBarEntrypointTsx1(){let[scrollPosition]=this.__closure;return scrollPosition.get();})" };
+let closure_16 = { code: "(function CheckpointGuildsBarEntrypointTsx2(current){let[dismissed,initialScrollPosition,DISMISS_SCROLL_DISTANCE,scheduleOnRN,onScroll]=this.__closure;if(dismissed.get())return;const initial=initialScrollPosition.get();if(initial==null){initialScrollPosition.set(current);return;}if(Math.abs(current-initial)>=DISMISS_SCROLL_DISTANCE){dismissed.set(true);scheduleOnRN(onScroll);}})" };
+let closure_17 = createStyles.createStyles((width) => {
   let obj2;
   const obj = { container: { position: "relative" }, itemShape: obj2, coachmarkAnchor: size };
   obj2 = { backgroundColor: CHECKPOINT_PRIMARY };
@@ -60,7 +59,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
   let intl;
   let itemShape;
   let items10;
-  let items11;
+  let items9;
   let tmp14;
   let tmp15;
   let tmp16;
@@ -75,16 +74,13 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
   let callback;
   let isModalOpen;
   let coachmark;
-  const tmp2 = guildsBarAnimatedWrapperStyles;
-  let obj = markAsDismissed(guildsBarAnimatedWrapperStyles[16]);
-  const tmp3 = importDefault;
-  const tmp4 = closure_18(obj.useToken(require("native").modules.mobile.GUILD_BAR_ITEM_SIZE));
+  let obj = markAsDismissed(guildsBarAnimatedWrapperStyles[15]);
+  const tmp4 = closure_17(obj.useToken(require("native").modules.mobile.GUILD_BAR_ITEM_SIZE));
   importDefault = tmp4;
-  let obj2 = markAsDismissed(guildsBarAnimatedWrapperStyles[17]);
+  let obj2 = markAsDismissed(guildsBarAnimatedWrapperStyles[16]);
   guildsBarAnimatedWrapperStyles = obj2.useGuildsBarAnimatedWrapperStyles();
-  let obj3 = isModalOpen;
   const items = [guildsBarAnimatedWrapperStyles, tmp4.itemShape];
-  const memo = isModalOpen.useMemo(() => {
+  const memo = callback.useMemo(() => {
     let obj2;
     const obj = { itemShape: obj2 };
     const merged = Object.assign(guildsBarAnimatedWrapperStyles);
@@ -93,92 +89,42 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
     const merged2 = Object.assign(itemShape.itemShape);
     return obj;
   }, items);
-  const items1 = [markAsDismissed];
-  callback = isModalOpen.useCallback(callback(function*(arg0, value) {
-    let c2;
-    let closure_0;
-    if (guildsBarAnimatedWrapperStyles === 2) {
-      guildsBarAnimatedWrapperStyles = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        guildsBarAnimatedWrapperStyles = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            guildsBarAnimatedWrapperStyles = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            guildsBarAnimatedWrapperStyles = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            c1 = 1;
-            const obj2 = tmp3(guildsBarAnimatedWrapperStyles[18]);
-            guildsBarAnimatedWrapperStyles = 1;
-            const obj5 = { value: obj2.openCheckpoint(tmp3(guildsBarAnimatedWrapperStyles[19]).CHECKPOINT_GUILDS_BAR_SOURCE), done: false };
-            return obj5;
-          }
-        } else if (arg0 === 1) {
-          guildsBarAnimatedWrapperStyles = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          guildsBarAnimatedWrapperStyles = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else {
-          if (value) {
-            closure_128_0(constants.TAKE_ACTION);
-          }
-          guildsBarAnimatedWrapperStyles = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp10) {
-        guildsBarAnimatedWrapperStyles = 3;
-        throw tmp10;
-      }
-    }
-  }), items1);
-  const items2 = [callback];
-  const items3 = [markAsDismissed];
-  const memo1 = isModalOpen.useMemo(() => ({ onPress }), items2);
-  const callback1 = isModalOpen.useCallback(() => markAsDismissed(ContentDismissActionType.USER_DISMISS), items3);
+  callback = callback.useCallback(() => {
+    const obj = markAsDismissed(guildsBarAnimatedWrapperStyles[17]);
+    obj.openCheckpoint(markAsDismissed(guildsBarAnimatedWrapperStyles[18]).CHECKPOINT_GUILDS_BAR_SOURCE);
+  }, []);
+  const items1 = [callback];
+  const items2 = [markAsDismissed];
+  const memo1 = callback.useMemo(() => ({ onPress }), items1);
+  const callback1 = callback.useCallback(() => markAsDismissed(ContentDismissActionType.USER_DISMISS), items2);
   const tmp10 = GuildsBarDnDStore((scrollPosition) => scrollPosition.scrollPosition);
-  let obj4 = markAsDismissed(guildsBarAnimatedWrapperStyles[8]);
+  const obj4 = markAsDismissed(guildsBarAnimatedWrapperStyles[7]);
   const sharedValue = obj4.useSharedValue(null);
-  let obj5 = markAsDismissed(guildsBarAnimatedWrapperStyles[8]);
+  const obj5 = markAsDismissed(guildsBarAnimatedWrapperStyles[7]);
   const sharedValue1 = obj5.useSharedValue(false);
-  const items4 = [closure_16, tmp10];
+  const items3 = [closure_15, tmp10];
   let c0;
-  [tmp14, tmp15] = items4;
-  const tmp13 = markAsDismissed(guildsBarAnimatedWrapperStyles[8]);
+  [tmp14, tmp15] = items3;
+  const tmp13 = markAsDismissed(guildsBarAnimatedWrapperStyles[7]);
   class CheckpointGuildsBarEntrypointTsx1 {
     constructor() {
       return _undefined.get();
     }
   }
-  const items5 = [tmp15];
-  CheckpointGuildsBarEntrypointTsx1.__closure = items5;
+  const items4 = [tmp15];
+  CheckpointGuildsBarEntrypointTsx1.__closure = items4;
   CheckpointGuildsBarEntrypointTsx1.__workletHash = 1024720770114;
   CheckpointGuildsBarEntrypointTsx1.__initData = tmp14;
-  const items6 = [closure_17, sharedValue1, sharedValue, 8, , ];
+  const items5 = [closure_16, sharedValue1, sharedValue, 8, , ];
   const useAnimatedReaction = tmp13.useAnimatedReaction;
-  items6[4] = markAsDismissed(tmp2[9]).scheduleOnRN;
-  items6[5] = callback1;
+  items5[4] = markAsDismissed(guildsBarAnimatedWrapperStyles[8]).scheduleOnRN;
+  items5[5] = callback1;
   c0 = undefined;
   let c1;
   let c2;
   let c3;
   let c4;
-  [tmp16, tmp17, tmp18, tmp19, tmp20, tmp21] = items6;
+  [tmp16, tmp17, tmp18, tmp19, tmp20, tmp21] = items5;
   class CheckpointGuildsBarEntrypointTsx2 {
     constructor(arg0) {
       const obj = _undefined;
@@ -197,21 +143,21 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
       }
     }
   }
-  const items7 = [tmp17, tmp18, tmp19, tmp20, tmp21];
-  CheckpointGuildsBarEntrypointTsx2.__closure = items7;
+  const items6 = [tmp17, tmp18, tmp19, tmp20, tmp21];
+  CheckpointGuildsBarEntrypointTsx2.__closure = items6;
   CheckpointGuildsBarEntrypointTsx2.__workletHash = 1045220900980;
   CheckpointGuildsBarEntrypointTsx2.__initData = tmp16;
   const animatedReaction = useAnimatedReaction(CheckpointGuildsBarEntrypointTsx1, CheckpointGuildsBarEntrypointTsx2);
-  const tmpResult = markAsDismissed(tmp2[20]);
+  const tmpResult = markAsDismissed(guildsBarAnimatedWrapperStyles[19]);
   isModalOpen = tmpResult.useIsModalOpen();
-  const items8 = [markAsDismissed, callback, isModalOpen];
+  const items7 = [markAsDismissed, callback, isModalOpen];
   const memo2 = obj3.useMemo(() => {
     let intl;
     let intl2;
     let intl3;
     const obj = {
-      title: intl.string(_modDef3440.tgYaeZ),
-      description: intl2.string(_modDef3440.BFc4lY),
+      title: intl.string(_modDef3442.tgYaeZ),
+      description: intl2.string(_modDef3442.BFc4lY),
       visible: !isModalOpen,
       position: "bottom",
       offsetY: 24,
@@ -219,7 +165,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
       onDismiss() {
         return markAsDismissed(constants.USER_DISMISS);
       },
-      buttonLabel: intl3.string(_modDef3440.UjtEWE),
+      buttonLabel: intl3.string(_modDef3442.UjtEWE),
       buttonVariant: "primary",
       onButtonPress
     };
@@ -228,28 +174,28 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
     ({ type: "image", src: AssetRegistryDefault, aspectRatio: "16/9" });
     intl3 = intl4.intl;
     return obj;
-  }, items8);
-  const ref = obj3.useRef(null);
-  const tmpResult2 = markAsDismissed(tmp2[22]);
+  }, items7);
+  const ref = callback.useRef(null);
+  const tmpResult2 = markAsDismissed(guildsBarAnimatedWrapperStyles[21]);
   coachmark = tmpResult2.useCoachmark(ref, memo2);
-  const items9 = [coachmark];
-  const obj6 = { style: tmp4.container, children: items11 };
+  const items8 = [coachmark];
+  const obj6 = { style: tmp4.container, children: items10 };
   const callback2 = obj3.useCallback(() => {
     coachmark(false);
-  }, items9);
-  const obj7 = { selected: false, circle: false, unread: false, styles: memo, overState: "y", config: memo1, label: intl.string(tmp3(tmp2[15])["8hclXY"]), expandedChildren: closure_11(ExpandedChildren, {}), children: items10 };
-  const tmp3Result = tmp3(tmp2[17]);
-  intl = tmp(tmp2[14]).intl;
-  items10 = [, ];
-  const obj8 = { colors, start, end, style: coachmark.absoluteFill, pointerEvents: "none" };
-  items10[0] = closure_11(tmp3(tmp2[23]), obj8);
-  const obj9 = { size: "md", color: tmp3(tmp2[11]).colors.WHITE };
-  const ExperimentalCheckpointIcon = tmp(tmp2[24]).ExperimentalCheckpointIcon;
-  items10[1] = closure_11(ExperimentalCheckpointIcon, obj9);
-  items11 = [closure_12(tmp3Result, obj7), ];
+  }, items8);
+  const obj7 = { selected: false, circle: false, unread: false, styles: memo, overState: "y", config: memo1, label: intl.string(require("module_3442")["8hclXY"]), expandedChildren: closure_10(ExpandedChildren, {}), children: items9 };
+  const tmp3Result = require("GuildsBarAnimatedItemWrapper");
+  intl = tmp(tmp2[13]).intl;
+  items9 = [, ];
+  const obj8 = { colors, start, end, style: isModalOpen.absoluteFill, pointerEvents: "none" };
+  items9[0] = closure_10(require("LinearGradient"), obj8);
+  const obj9 = { size: "md", color: require("native").colors.WHITE };
+  const ExperimentalCheckpointIcon = tmp(tmp2[23]).ExperimentalCheckpointIcon;
+  items9[1] = closure_10(ExperimentalCheckpointIcon, obj9);
+  items10 = [closure_11(tmp3Result, obj7), ];
   const obj10 = { ref, style: tmp4.coachmarkAnchor, onLayout: callback2, pointerEvents: "none", collapsable: false };
-  items11[1] = closure_11(closure_6, obj10);
-  return closure_12(closure_6, obj6);
+  items10[1] = closure_10(coachmark, obj10);
+  return closure_11(coachmark, obj6);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointGuildsBarEntrypoint.tsx");

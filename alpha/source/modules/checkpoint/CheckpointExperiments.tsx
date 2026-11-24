@@ -1,10 +1,10 @@
-// Module ID: 6340
-// Function ID: 6341
+// Module ID: 6643
+// Function ID: 6644
 // Name: CheckpointExperiments
 // Dependencies: [1450, 2]
 // Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled, isCheckpointCharacterSaveEnabled, useCheckpointQAMode, useIsCheckpointCardEnabled, useIsCheckpointEnabled, useIsCheckpointIntroEnabled
 
-// Module 6340 (CheckpointExperiments)
+// Module 6643 (CheckpointExperiments)
 import ApexExperiment_mod from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
@@ -49,11 +49,11 @@ export function useIsCheckpointIntroEnabled(location) {
   const obj = { location };
   return closure_3.useConfig(obj).enabled;
 }
-export function isCheckpointCharacterSaveEnabled(message_long_press) {
-  const obj = { location: message_long_press };
+export function isCheckpointCharacterSaveEnabled(location) {
+  const obj = { location };
   let canSaveCharacter = closure_1.getConfig(obj).enabled;
   if (canSaveCharacter) {
-    const obj2 = { location: message_long_press };
+    const obj2 = { location };
     canSaveCharacter = config.getConfig(obj2).canSaveCharacter;
   }
   return canSaveCharacter;

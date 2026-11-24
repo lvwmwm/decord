@@ -1,14 +1,14 @@
-// Module ID: 8242
-// Function ID: 8243
+// Module ID: 5645
+// Function ID: 5646
 // Name: experiment
-// Dependencies: [32, 1196, 1225, 1226, 8243, 8244, 2]
+// Dependencies: [32, 1196, 1225, 1226, 5646, 5647, 2]
 
-// Module 8242 (experiment)
+// Module 5645 (experiment)
 import _mod1196 from "module_1196" /* 1196 */;
 import timestamp from "timestamp" /* 1225 */;
 import wrappers from "wrappers" /* 1226 */;
-import rules from "rules" /* 8243 */;
-import duration from "duration" /* 8244 */;
+import rules from "rules" /* 5646 */;
+import duration from "duration" /* 5647 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -970,13 +970,13 @@ class HoldoutScope$Type extends MessageType4 {
     let items = [, , ];
     const obj = { no: 1, name: "level", kind: "enum", T: T3 };
     items[0] = obj;
-    items[1] = { no: 2, name: "fiscal_half", kind: "enum", T: T4 };
+    items[1] = { no: 2, name: "fiscal_period", kind: "enum", T: T4 };
     items[2] = { no: 3, name: "fiscal_year", kind: "scalar", T: 5 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.HoldoutScope", items, new.target);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { level: 0, fiscalHalf: 0, fiscalYear: 0 };
+    const obj = { level: 0, fiscalPeriod: 0, fiscalYear: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
@@ -1002,7 +1002,7 @@ class HoldoutScope$Type extends MessageType4 {
         if (1 === tmp5) {
           obj.level = pos.int32();
         } else if (2 === tmp5) {
-          obj.fiscalHalf = pos.int32();
+          obj.fiscalPeriod = pos.int32();
         } else if (3 === tmp5) {
           obj.fiscalYear = pos.int32();
         } else {
@@ -1037,9 +1037,9 @@ class HoldoutScope$Type extends MessageType4 {
       const tagResult = tag.tag(1, _mod1196.WireType.Varint);
       tagResult.int32(level.level);
     }
-    if (0 !== level.fiscalHalf) {
+    if (0 !== level.fiscalPeriod) {
       const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
-      tagResult1.int32(level.fiscalHalf);
+      tagResult1.int32(level.fiscalPeriod);
     }
     if (0 !== level.fiscalYear) {
       const tagResult2 = tag.tag(3, _mod1196.WireType.Varint);
@@ -1060,7 +1060,7 @@ const prototype4 = HoldoutScope$Type.prototype;
 const items2 = [, , ];
 const obj23 = { no: 1, name: "level", kind: "enum", T: T3 };
 items2[0] = obj23;
-items2[1] = { no: 2, name: "fiscal_half", kind: "enum", T: T4 };
+items2[1] = { no: 2, name: "fiscal_period", kind: "enum", T: T4 };
 items2[2] = { no: 3, name: "fiscal_year", kind: "scalar", T: 5 };
 let tmp11 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.HoldoutScope", items2, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
 let internalBinaryWrite3 = tmp11;

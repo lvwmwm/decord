@@ -1,20 +1,20 @@
-// Module ID: 15829
-// Function ID: 15830
+// Module ID: 15876
+// Function ID: 15877
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1386, 21, 7520, 7539, 504, 8073, 15830, 2]
+// Dependencies: [19, 1386, 21, 6253, 6254, 504, 6183, 15877, 2]
 // Exports: default
 
-// Module 15829 (UserSettingsEditUserProfile)
+// Module 15876 (UserSettingsEditUserProfile)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6183 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6253 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserProfileEditFormDefault = tmp(15830);
+const UserProfileEditFormDefault = tmp(15877);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditUserProfile.tsx");
 
@@ -36,7 +36,7 @@ export default function UserSettingsEditUserProfile(arg0) {
   }, items1);
   let tmp7 = null;
   if (null != stateFromStores) {
-    const AnalyticsLocationProvider = tmp4(7520).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp4(6253).AnalyticsLocationProvider;
     UserProfileEditFormDefault;
     const merged = Object.assign(arg0);
     tmp7 = <AnalyticsLocationProvider value={analyticsLocations}>{null}</AnalyticsLocationProvider>;

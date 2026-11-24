@@ -1,19 +1,19 @@
-// Module ID: 12250
-// Function ID: 12251
+// Module ID: 12189
+// Function ID: 12190
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 11896, 12244, 21, 4913, 575, 12242, 1500, 7095, 12056, 12251, 12259, 5595, 1112, 7811, 7813, 5929, 12246, 5504, 2639, 12261, 12262, 12249, 6545, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 11770, 12184, 21, 4917, 575, 12182, 1500, 7065, 11948, 12190, 12198, 5599, 1112, 7755, 7757, 5989, 12186, 5508, 2639, 12200, 2641, 12201, 11468, 6737, 5515, 2]
 // Exports: AcceptStep
 
-// Module 12250 (AcceptStep)
+// Module 12189 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12244 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12184 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11770 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, id, navigation;
@@ -260,7 +260,7 @@ export function AcceptStep(code) {
     const Stack3 = tmp5(tmp3[19]).Stack;
     let tmp18Result = !tmp8;
     if (tmp18Result) {
-      const obj12 = { variant: "heading-lg/semibold", children: intl2.string(character(tmp3[22]).yFqGy8) };
+      const obj12 = { variant: "heading-lg/semibold", children: intl2.string(character(tmp3[24]).Tt5YbA) };
       const Text2 = tmp5(tmp3[21]).Text;
       intl2 = tmp5(tmp3[16]).intl;
       tmp18Result = tmp18(Text2, obj12);
@@ -269,14 +269,14 @@ export function AcceptStep(code) {
     items5 = [tmp18Result, ];
     const obj14 = { children: closure_12(Stack4, obj2) };
     const obj15 = { displayNoun };
-    items5[1] = closure_10(character(tmp3[24]), obj15);
+    items5[1] = closure_10(character(tmp3[25]), obj15);
     items4[1] = closure_12(Stack3, obj11);
     items2[1] = closure_12(Stack, obj6);
     items6 = [tmp18(ModalContent, obj14), ];
     const obj16 = { children: closure_12(ButtonGroup, obj17) };
-    const ModalFooter = tmp5(tmp3[25]).ModalFooter;
+    const ModalFooter = tmp5(tmp3[26]).ModalFooter;
     obj17 = { style: tmp.buttonGroup, children: items7 };
-    ButtonGroup = tmp5(tmp3[26]).ButtonGroup;
+    ButtonGroup = tmp5(tmp3[27]).ButtonGroup;
     const obj18 = {
       text: intl3.string(character(tmp3[22]).BaZ6nt),
       size: "lg",
@@ -286,11 +286,11 @@ export function AcceptStep(code) {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(tmp3[27]).Button;
+    const Button = tmp5(tmp3[28]).Button;
     intl3 = tmp5(tmp3[16]).intl;
     items7 = [tmp18(Button, obj18), ];
     const obj19 = { text: intl4.string(code(tmp3[16]).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled };
-    const Button2 = tmp5(tmp3[27]).Button;
+    const Button2 = tmp5(tmp3[28]).Button;
     intl4 = tmp5(tmp3[16]).intl;
     items7[1] = closure_10(Button2, obj19);
     items6[1] = closure_10(ModalFooter, obj16);

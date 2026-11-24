@@ -1,19 +1,19 @@
-// Module ID: 19103
-// Function ID: 19104
+// Module ID: 19145
+// Function ID: 19146
 // Name: HexagonCampaignExpiringPromoSheet
-// Dependencies: [19, 4938, 1071, 4759, 21, 15854, 6561, 5474, 8430, 9099, 10505, 15874, 11225, 16418, 1112, 4597, 5504, 10952, 2]
+// Dependencies: [19, 4942, 1071, 4763, 21, 15862, 6748, 5478, 8251, 8960, 9554, 15915, 10603, 16451, 1112, 4599, 5508, 9495, 2]
 // Exports: default
 
-// Module 19103 (HexagonCampaignExpiringPromoSheet)
+// Module 19145 (HexagonCampaignExpiringPromoSheet)
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import QuestTypes from "QuestTypes" /* 6561 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8430 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10505 */;
-import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15854 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4942 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import QuestTypes from "QuestTypes" /* 6748 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8251 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8960 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9554 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15862 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -87,5 +87,5 @@ export default function HexagonCampaignExpiringPromoSheet(markAsDismissed) {
   ({ text: intl3.string(markAsDismissed(callback[14]).t.hIVbiP), onPress: callback1, shiny: false });
   require("NitroUpsellButton");
   intl3 = markAsDismissed(callback[14]).intl;
-  return <PromoSheet illustration={null} title={intl.string(require("module_4597").sL4EQm)} description={intl2.format(require("module_4597")["8WoUjt"], obj4)} onDismiss={callback2} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(require("module_4599").sL4EQm)} description={intl2.format(require("module_4599")["8WoUjt"], obj4)} onDismiss={callback2} actions={null} />;
 };

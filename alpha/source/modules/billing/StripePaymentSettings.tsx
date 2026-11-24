@@ -1,9 +1,9 @@
-// Module ID: 6376
-// Function ID: 6377
+// Module ID: 5696
+// Function ID: 5697
 // Name: StripePaymentSettings
 // Dependencies: [16, 2]
 
-// Module 6376 (StripePaymentSettings)
+// Module 5696 (StripePaymentSettings)
 import checkEnv from "checkEnv" /* 16 */;
 import size from "module_2" /* 2 */;
 

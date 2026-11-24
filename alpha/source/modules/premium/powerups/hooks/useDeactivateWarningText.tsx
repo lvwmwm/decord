@@ -1,16 +1,16 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13357
+// Function ID: 13358
 // Name: useDeactivateWarningText
-// Dependencies: [19, 5534, 4819, 4784, 504, 7493, 8001, 1112, 2856, 2]
+// Dependencies: [19, 5538, 4823, 4788, 504, 7359, 8159, 1112, 2856, 2]
 // Exports: default
 
-// Module 13432 (useDeactivateWarningText)
+// Module 13357 (useDeactivateWarningText)
 import _modDef2856 from "module_2856" /* 2856 */;
-import Powerups from "Powerups" /* 8001 */;
+import Powerups from "Powerups" /* 8159 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
-import GuildRoleStore from "GuildRoleStore" /* 4819 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5538 */;
+import GuildRoleStore from "GuildRoleStore" /* 4823 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -137,7 +137,7 @@ export default function useDeactivateWarningText(arg0, skuId) {
     let tmp19 = stateFromStores1;
     ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
     if (tmp19) {
-      tmp19 = tmp.skuId === tmp2(8001).GUILD_POWERUP_LEVEL_3_SKU_ID;
+      tmp19 = tmp.skuId === tmp2(8159).GUILD_POWERUP_LEVEL_3_SKU_ID;
     }
     if (tmp19) {
       const push = items.push;

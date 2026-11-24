@@ -1,10 +1,10 @@
-// Module ID: 8351
-// Function ID: 8352
+// Module ID: 8171
+// Function ID: 8172
 // Name: isCacheEnabled
 // Dependencies: [2]
 // Exports: isCacheEnabled
 
-// Module 8351 (isCacheEnabled)
+// Module 8171 (isCacheEnabled)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/cache/isCacheEnabled.native.tsx");

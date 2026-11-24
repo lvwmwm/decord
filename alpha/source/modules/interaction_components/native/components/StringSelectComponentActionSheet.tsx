@@ -1,19 +1,19 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12253
+// Function ID: 12254
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4913, 575, 12353, 2117, 5127, 12354, 7496, 5504, 1112, 2]
+// Dependencies: [32, 19, 21, 4917, 575, 8691, 2117, 5131, 12254, 7362, 5508, 1112, 2]
 // Exports: default
 
-// Module 12352 (StringSelectComponentActionSheet)
+// Module 12253 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2117 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import EmojiDefault from "Emoji" /* 7496 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import EmojiDefault from "Emoji" /* 7362 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -41,7 +41,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(12353);
+  let obj = selectionActionComponent(8691);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -150,7 +150,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(12354);
+  const tmp10 = onSubmit(12254);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

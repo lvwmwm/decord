@@ -1,15 +1,15 @@
-// Module ID: 12891
-// Function ID: 12892
+// Module ID: 12810
+// Function ID: 12811
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4913, 12892, 5504, 2]
+// Dependencies: [19, 21, 4917, 12811, 5508, 2]
 // Exports: default
 
-// Module 12891 (ForumPostMessageContent)
+// Module 12810 (ForumPostMessageContent)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12892 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12811 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

@@ -1,17 +1,17 @@
-// Module ID: 15389
-// Function ID: 15390
+// Module ID: 15410
+// Function ID: 15411
 // Name: RadioGroup
-// Dependencies: [19, 17, 1082, 21, 4913, 575, 4975, 7503, 15390, 2]
+// Dependencies: [19, 17, 1082, 21, 4917, 575, 4979, 7369, 15411, 2]
 
-// Module 15389 (RadioGroup)
+// Module 15410 (RadioGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
-import react_native2 from "react-native" /* 4975 */;
-import FormRowDefault from "FormRow" /* 7503 */;
+import react_native2 from "react-native" /* 4979 */;
+import FormRowDefault from "FormRow" /* 7369 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

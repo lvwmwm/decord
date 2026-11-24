@@ -1,20 +1,20 @@
-// Module ID: 6408
-// Function ID: 6409
+// Module ID: 6697
+// Function ID: 6698
 // Name: StreamPermissionUtils
-// Dependencies: [5655, 4766, 4843, 4784, 4845, 5561, 1071, 6409, 5948, 6410, 6419, 504, 2]
+// Dependencies: [5726, 4770, 4847, 4788, 4849, 5565, 1071, 6684, 6675, 6698, 6707, 504, 2]
 // Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 6408 (StreamPermissionUtils)
+// Module 6697 (StreamPermissionUtils)
 import Constants from "Constants" /* 1071 */;
-import ChannelRecord from "ChannelRecord" /* 4766 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import ChannelUtils from "ChannelUtils" /* 5948 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6409 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6410 */;
-import GameConsoleStore from "GameConsoleStore" /* 5655 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import ChannelRecord from "ChannelRecord" /* 4770 */;
+import GuildChannelStore from "GuildChannelStore" /* 4847 */;
+import ChannelUtils from "ChannelUtils" /* 6675 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6684 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6698 */;
+import GameConsoleStore from "GameConsoleStore" /* 5726 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
+import VoiceStateStore from "VoiceStateStore" /* 5565 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(6419);
+      const tmp11Result = tmp11(6707);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {

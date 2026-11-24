@@ -1,14 +1,14 @@
-// Module ID: 10894
-// Function ID: 10895
+// Module ID: 10168
+// Function ID: 10169
 // Name: MusicIcon
-// Dependencies: [19, 21, 575, 5599, 8891, 2]
+// Dependencies: [19, 21, 575, 5603, 10169, 2]
 // Exports: MusicIcon
 
-// Module 10894 (MusicIcon)
+// Module 10168 (MusicIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 8891 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 10169 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 19023
-// Function ID: 19024
+// Module ID: 19065
+// Function ID: 19066
 // Name: RestrictedMessagePreviewList
-// Dependencies: [19, 17, 5964, 21, 4913, 19024, 575, 7682, 5504, 1112, 5617, 4735, 7520, 504, 8067, 8669, 19025, 10100, 7030, 19026, 2]
+// Dependencies: [19, 17, 6265, 21, 4917, 19066, 575, 7021, 5508, 1112, 5621, 4739, 6253, 504, 6007, 8082, 19067, 8939, 6026, 19068, 2]
 // Exports: default
 
-// Module 19023 (RestrictedMessagePreviewList)
+// Module 19065 (RestrictedMessagePreviewList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import DateUtils from "DateUtils" /* 4735 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 7682 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 19024 */;
-import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 19026 */;
+import DateUtils from "DateUtils" /* 4739 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6007 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 7021 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 19066 */;
+import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 19068 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5964 */;
+import MessageStore from "MessageStore" /* 6265 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

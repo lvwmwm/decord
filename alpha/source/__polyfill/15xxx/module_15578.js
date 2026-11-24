@@ -1,27 +1,27 @@
 // Module ID: 15578
 // Function ID: 15579
-// Dependencies: [15579, 15592, 15540, 15561]
+// Dependencies: [15563, 15559, 15579]
 
 // Module 15578
-import _mod15561 from "module_15561" /* 15561 */;
-import _mod15579 from "module_15579" /* 15579 */;
-import defineProperty2 from "defineProperty2" /* 15592 */;
+import _mod15559 from "module_15559" /* 15559 */;
+import _mod15563 from "module_15563" /* 15563 */;
 
-
-export default (arg0, arg1, arg2) => {
-  let num;
-  const arr = _mod15579(arg1);
-  const f = defineProperty2.f;
-  for (let num = 0; num < arr.length; num = num + 1) {
-    let tmp2 = arr[num];
-    let tmp3 = require;
-    let tmp5 = _mod15561(arg0, tmp2);
-    if (!tmp5) {
-      let tmp7 = arg2 && tmp3(15561)(arg2, tmp2);
-      tmp5 = tmp7;
-    }
-    if (!tmp5) {
-      let fResult = f(arg0, tmp2, tmp(arg1, tmp2));
-    }
+const prop = Object.getOwnPropertySymbols && !_mod15563(() => {
+  const SymbolResult = Symbol("symbol detection");
+  const obj = _mod15559;
+  const StringResult = obj.String(SymbolResult);
+  let tmp5 = !StringResult;
+  if (StringResult) {
+    const _Object = Object;
+    const _Symbol = Symbol;
+    tmp5 = !(Object(SymbolResult) instanceof Symbol);
   }
-};
+  if (!tmp5) {
+    const _Symbol2 = Symbol;
+    tmp5 = !Symbol.sham && tmp2(15579) && tmp2(15579) < 41;
+    const tmp6 = !Symbol.sham && tmp2(15579) && tmp2(15579) < 41;
+  }
+  return tmp5;
+});
+
+export default prop;

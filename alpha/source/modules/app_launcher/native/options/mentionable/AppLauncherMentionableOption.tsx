@@ -1,27 +1,27 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 12969
+// Function ID: 12970
 // Name: AppLauncherMentionableOption
-// Dependencies: [32, 19, 4914, 4819, 1386, 1082, 21, 4913, 575, 504, 13049, 13050, 13052, 1186, 13053, 13054, 13046, 5127, 13052, 2119, 2]
+// Dependencies: [32, 19, 4918, 4823, 1386, 1082, 21, 4917, 575, 504, 12970, 11265, 12971, 1186, 12972, 12973, 12967, 5131, 12971, 2119, 2]
 // Exports: default
 
-// Module 13048 (AppLauncherMentionableOption)
+// Module 12969 (AppLauncherMentionableOption)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import native from "native" /* 1186 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 13049 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13052 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 13053 */;
-import UsernameTextDefault from "UsernameText" /* 13054 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12970 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12971 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 12972 */;
+import UsernameTextDefault from "UsernameText" /* 12973 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import GuildRoleStore from "GuildRoleStore" /* 4823 */;
 import UserStore from "UserStore" /* 1386 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -45,7 +45,7 @@ function MentionableIcon(mentionable) {
     } else if (AppLauncherMentionableListActionSheet.MentionableItemTypes.ROLE === type) {
       return jsx(AppLauncherRoleListActionSheet.RoleIcon, { role: mentionable.result });
     } else {
-      const GLOBAL = tmp2(13052).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(12971).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
@@ -142,7 +142,7 @@ export default function AppLauncherMentionableOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(13052, dependencyMap.paths);
+      const tmp4 = asyncRequire(12971, dependencyMap.paths);
       openLazy(tmp4, AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, obj);
     },
     autoFocus

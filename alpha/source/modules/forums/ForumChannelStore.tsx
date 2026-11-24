@@ -1,16 +1,16 @@
-// Module ID: 12868
-// Function ID: 12869
+// Module ID: 12787
+// Function ID: 12788
 // Name: ForumChannelStore
-// Dependencies: [4762, 4772, 4771, 4773, 1262, 38, 8503, 560, 504, 2]
+// Dependencies: [4766, 4776, 4775, 4777, 1262, 38, 8024, 560, 504, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 12868 (ForumChannelStore)
+// Module 12787 (ForumChannelStore)
 import _modDef38 from "module_38" /* 38 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4771 */;
-import ForumLayout from "ForumLayout" /* 4772 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4773 */;
-import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8503 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4775 */;
+import ForumLayout from "ForumLayout" /* 4776 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4777 */;
+import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8024 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

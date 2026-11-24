@@ -1,16 +1,16 @@
-// Module ID: 6986
-// Function ID: 6987
+// Module ID: 7582
+// Function ID: 7583
 // Name: ConjureAnalytics
-// Dependencies: [6621, 1071, 6865, 5650, 1378, 1255, 2]
+// Dependencies: [6808, 1071, 7476, 5887, 1378, 1255, 2]
 // Exports: trackConjureBuilderOpened, trackConjureErrored, trackConjurePublishActionClicked, trackConjureTurnResulted
 
-// Module 6986 (ConjureAnalytics)
+// Module 7582 (ConjureAnalytics)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;
-import ConjureUtils from "ConjureUtils" /* 6865 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6808 */;
+import ConjureUtils from "ConjureUtils" /* 7476 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;

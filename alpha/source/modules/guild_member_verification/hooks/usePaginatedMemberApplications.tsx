@@ -1,17 +1,17 @@
-// Module ID: 18233
-// Function ID: 18234
+// Module ID: 18272
+// Function ID: 18273
 // Name: usePaginatedMemberApplications
-// Dependencies: [5, 32, 19, 4949, 11, 6526, 6349, 2]
+// Dependencies: [5, 32, 19, 4953, 11, 6879, 5666, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 18233 (usePaginatedMemberApplications)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4949 */;
+// Module 18272 (usePaginatedMemberApplications)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4953 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, ref, ref2, ref3;
+let closure_3, ref, ref2, set;
 
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -29,7 +29,9 @@ export function usePaginatedMemberApplications(guildId) {
   error = undefined;
   _slicedToArray = undefined;
   react = undefined;
-  let closure_2 = react.useRef(false);
+  const useRef = react.useRef;
+  set = new Set();
+  let closure_2 = useRef(set);
   [error, _slicedToArray] = react.useState(null);
   react = react.useRef(null);
   let closure_6 = react.useRef(false);
@@ -42,8 +44,8 @@ export function usePaginatedMemberApplications(guildId) {
       function getRequestPaginationParams(after, arg1, arg2, arg3, flag) {
         let date;
         let fromTimestamp;
-        const tmp2 = arg3 === guildId(ref[3]).GuildJoinRequestApplicationStatuses.SUBMITTED;
-        if (arg2 === guildId(ref[3]).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
+        const tmp2 = arg3 === guildId(closure_1_2[3]).GuildJoinRequestApplicationStatuses.SUBMITTED;
+        if (arg2 === guildId(closure_1_2[3]).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
           if (!flag) {
             if (0 !== arg1.length) {
               return { before: tmp2 ? arg1[arg1.length - 1].joinRequestId : arg1[arg1.length - 1].actionedAt };
@@ -54,7 +56,7 @@ export function usePaginatedMemberApplications(guildId) {
           const self2 = this;
           const obj3 = { before: fromTimestamp(date.getTime()) };
           fromTimestamp = status(tmp[4]).fromTimestamp;
-          status(ref[4]);
+          status(closure_1_2[4]);
           date = new Date();
           return obj3;
         } else {
@@ -80,9 +82,10 @@ export function usePaginatedMemberApplications(guildId) {
         }
       } else {
         try {
+          let combined;
           let aPIError;
           c7 = 2;
-          if (0 === ref3) {
+          if (0 === ref2) {
             if (arg0 === 1) {
               c7 = 3;
               throw value;
@@ -92,79 +95,86 @@ export function usePaginatedMemberApplications(guildId) {
               return obj3;
             } else {
               closure_3 = tmp;
-              ref = tmp4;
-              guildId = undefined;
+              guildId = status;
+              combined = undefined;
+              closure_2 = undefined;
               aPIError = undefined;
-              if (!ref.current) {
+              const current5 = closure_2.current;
+              if (!current5.has(status)) {
                 const _HermesInternal = HermesInternal;
-                const combined = "" + tmp61 + "-" + tmp62;
+                combined = "" + tmp77 + "-" + tmp78;
                 let flag = false;
-                if (combined !== ref2.current) {
-                  ref2.current = combined;
-                  ref3.current = false;
+                if (combined !== ref.current) {
+                  ref.current = combined;
+                  ref2.current = false;
                   flag = true;
                 }
-                if (!ref3.current) {
+                if (!ref2.current) {
                   if (null != closure_3) {
-                    tmp53(null);
+                    tmp69(null);
                   }
-                  ref2 = 2;
-                  ref.current = true;
+                  ref = 2;
+                  const current4 = closure_2.current;
+                  const tmp60 = getRequestPaginationParams(guildId, status, guildId, status, flag);
+                  current4.add(status);
                   const obj4 = { guildId, status, limit, force: true };
-                  const tmp45 = getRequestPaginationParams(guildId, status, guildId, status, flag);
                   const fetchGuildJoinRequests = guildJoinRequests(closure_2_2[5]).fetchGuildJoinRequests;
                   guildJoinRequests(closure_2_2[5]);
-                  const merged = Object.assign(tmp45);
-                  ref3 = 3;
+                  const merged = Object.assign(tmp60);
+                  ref2 = 3;
                   c7 = 1;
                   const obj5 = { value: fetchGuildJoinRequests(obj4), done: false };
                   return obj5;
                 }
               }
             }
-          } else if (1 === ref3) {
-            ref2 = 0;
-            ref.current = false;
-            throw tmp53;
+          } else if (1 === ref2) {
+            ref = 0;
+            const current3 = closure_2.current;
+            current3.delete(guildId);
+            throw tmp69;
           } else {
-            if (2 === ref3) {
-              ref2 = 1;
-              ref = tmp53;
+            if (2 === ref2) {
+              ref = 1;
               let self = this;
               let self2 = this;
-              aPIError = new guildId(closure_2_2[6]).APIError(ref);
-              tmp53(aPIError.getAnyErrorMessage());
+              aPIError = new guildId(closure_2_2[6]).APIError(tmp69);
+              tmp69(aPIError.getAnyErrorMessage());
             } else if (arg0 === 1) {
               c7 = 3;
               throw value;
             } else if (arg0 === 2) {
-              ref2 = 0;
-              ref.current = false;
+              ref = 0;
+              const current = closure_2.current;
+              current.delete(guildId);
               c7 = 3;
               const obj = { value, done: true };
               return obj;
             } else {
-              guildId = value;
-              if (null != guildId) {
-                if (guildId.body.guild_join_requests.length < limit) {
-                  ref3.current = true;
+              closure_2 = value;
+              if (null != closure_2) {
+                if (combined === ref.current) {
+                  if (closure_2.body.guild_join_requests.length < limit) {
+                    ref2.current = true;
+                  }
                 }
               }
-              ref2 = 1;
+              ref = 1;
             }
-            ref2 = 0;
-            ref.current = false;
+            ref = 0;
+            const current2 = closure_2.current;
+            current2.delete(guildId);
           }
           c7 = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp53) {
-          if (0 === ref2) {
+        } catch (tmp69) {
+          if (0 === ref) {
             c7 = 3;
-            throw tmp53;
-          } else if (1 === tmp55) {
-            ref3 = 1;
+            throw tmp69;
+          } else if (1 === tmp71) {
+            ref2 = 1;
           } else {
-            ref3 = 2;
+            ref2 = 2;
           }
         }
       }

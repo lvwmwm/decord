@@ -1,13 +1,13 @@
-// Module ID: 16058
-// Function ID: 16059
+// Module ID: 16091
+// Function ID: 16092
 // Name: TwoFASetupStyles
-// Dependencies: [1071, 4913, 6407, 575, 2]
+// Dependencies: [1071, 4917, 6696, 575, 2]
 
-// Module 16058 (TwoFASetupStyles)
+// Module 16091 (TwoFASetupStyles)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles_mod from "createStyles" /* 4913 */;
-import TextStyles from "TextStyles" /* 6407 */;
+import createStyles_mod from "createStyles" /* 4917 */;
+import TextStyles from "TextStyles" /* 6696 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

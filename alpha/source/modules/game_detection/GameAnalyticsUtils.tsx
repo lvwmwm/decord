@@ -1,12 +1,12 @@
-// Module ID: 6446
-// Function ID: 6447
+// Module ID: 8268
+// Function ID: 8269
 // Name: GameAnalyticsUtils
-// Dependencies: [2158, 6447, 1378, 2]
+// Dependencies: [2158, 8269, 1378, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 6446 (GameAnalyticsUtils)
+// Module 8268 (GameAnalyticsUtils)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6447 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 8269 */;
 import DetectableGameStore from "DetectableGameStore" /* 2158 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export function getRunningGameAnalytics(streamApplication) {
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "channel", exe: "state", distributor: "variant", sku: "sa", gameMetadata: "TypeError", rawExePath: "isArray" };
+    return { gameName: "getChannel", gameId: "analyticsLocations", exe: "raw", distributor: "current", sku: "r", gameMetadata: "isArray", rawExePath: "r" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

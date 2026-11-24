@@ -1,11 +1,11 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 13679
+// Function ID: 13680
 // Name: BadgeUnlockColorUtils
-// Dependencies: [4910, 2]
+// Dependencies: [4914, 2]
 // Exports: pickBadgeColor
 
-// Module 14014 (BadgeUnlockColorUtils)
-import ColorUtils from "ColorUtils" /* 4910 */;
+// Module 13679 (BadgeUnlockColorUtils)
+import ColorUtils from "ColorUtils" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/badges/BadgeUnlockColorUtils.tsx");

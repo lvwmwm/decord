@@ -1,9 +1,9 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 10987
+// Function ID: 10988
 // Name: CollectiblesPromotionCountdownUnit
 // Dependencies: [2]
 
-// Module 8932 (CollectiblesPromotionCountdownUnit)
+// Module 10987 (CollectiblesPromotionCountdownUnit)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesPromotionCountdownUnit.tsx");

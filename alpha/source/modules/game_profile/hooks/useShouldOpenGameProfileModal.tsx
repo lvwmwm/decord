@@ -1,15 +1,15 @@
-// Module ID: 9766
-// Function ID: 9767
+// Module ID: 8605
+// Function ID: 8606
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2140, 1071, 1255, 1404, 9767, 5542, 9768, 38, 2]
+// Dependencies: [19, 2140, 1071, 1255, 1404, 8606, 5546, 8607, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable, isGameDisabled, trackEntryPoint
 
-// Module 9766 (useShouldOpenGameProfileModal)
+// Module 8605 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import FlagUtilsAll from "FlagUtils" /* 1404 */;
-import GameFlags from "GameFlags" /* 9767 */;
+import GameFlags from "GameFlags" /* 8606 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2140 */;
 import size from "module_2" /* 2 */;
@@ -81,7 +81,7 @@ export default function useShouldOpenGameProfileModal(applicationId) {
           items1.push(obj.Disabled);
         }
         tmp14 = items1;
-        const tmp21Result = tmp21(5542);
+        const tmp21Result = tmp21(5546);
         if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
           items1.push(obj.NSFW);
           tmp14 = items1;
@@ -121,7 +121,7 @@ export function gameIsAcceptable(gameFlags) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp8Result = tmp8(5542);
+    const tmp8Result = tmp8(5546);
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
@@ -143,7 +143,7 @@ export function gameIdIsAcceptable(arg0) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp9Result = tmp9(5542);
+    const tmp9Result = tmp9(5546);
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;

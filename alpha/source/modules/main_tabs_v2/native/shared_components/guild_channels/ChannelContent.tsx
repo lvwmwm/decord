@@ -1,19 +1,19 @@
-// Module ID: 18753
-// Function ID: 18754
+// Module ID: 18795
+// Function ID: 18796
 // Name: ChannelContent
-// Dependencies: [19, 17, 5642, 6553, 21, 4913, 1378, 11130, 6823, 18754, 7695, 7763, 17640, 5504, 2]
+// Dependencies: [19, 17, 5997, 6042, 21, 4917, 1378, 10499, 7002, 18796, 7035, 7809, 17678, 5508, 2]
 // Exports: renderChannelContent
 
-// Module 18753 (ChannelContent)
+// Module 18795 (ChannelContent)
 import react_native from "react-native" /* 17 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
-import ReadStateConstants from "ReadStateConstants" /* 6553 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 6823 */;
-import ChannelListLayout from "ChannelListLayout" /* 11130 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 18754 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
+import ReadStateConstants from "ReadStateConstants" /* 6042 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7002 */;
+import ChannelListLayout from "ChannelListLayout" /* 10499 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 18796 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroRequire;
 let num2;
 let obj2;
 let tmp13;
-const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(17640);
+const GuildRoleSubscriptionGatedChannelIconDefault = tmp13(17678);
 function ChannelContentComponent(arg0) {
   let channel;
   let connected;
@@ -99,12 +99,12 @@ function ChannelContentComponent(arg0) {
     items2[1] = obj8;
     if (tmp10Result) {
       const obj9 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      tmp10Result = tmp10(tmp2(7695).LockIcon, obj9);
+      tmp10Result = tmp10(tmp2(7035).LockIcon, obj9);
     }
     items3 = [tmp10Result, , ];
     if (isNSFWResult) {
       const obj10 = { size: "xxs", color: "icon-muted", style: tmp.channelTraitIcon };
-      isNSFWResult = tmp10(tmp2(7763).WarningIcon, obj10);
+      isNSFWResult = tmp10(tmp2(7809).WarningIcon, obj10);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
@@ -138,7 +138,7 @@ function ChannelContentComponent(arg0) {
   const obj15 = { style: tmp10Result6 ? tmp.rightContentAbsolute : tmp.rightBox, children: items7 };
   if (tmp10Result5) {
     const obj16 = { variant: "body-xs/medium", color: "text-muted", style: { marginLeft: "auto" }, maxFontSizeMultiplier: 1.75, children: lastMessageTimestampString };
-    tmp10Result5 = tmp10(tmp2(5504).Text, obj16);
+    tmp10Result5 = tmp10(tmp2(5508).Text, obj16);
   }
   items7 = [tmp10Result5, , ];
   const items8 = [{ alignItems: "center", paddingLeft: 4 }, ];

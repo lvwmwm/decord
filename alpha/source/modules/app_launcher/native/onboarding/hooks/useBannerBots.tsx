@@ -1,13 +1,13 @@
-// Module ID: 12933
-// Function ID: 12934
+// Module ID: 12852
+// Function ID: 12853
 // Name: useBannerBots
-// Dependencies: [19, 4784, 12913, 504, 10445, 12934, 12906, 2]
+// Dependencies: [19, 4788, 12832, 504, 9913, 12853, 12825, 2]
 // Exports: useBannerBots
 
-// Module 12933 (useBannerBots)
+// Module 12852 (useBannerBots)
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12913 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12832 */;
 import size from "module_2" /* 2 */;
 
 let getGuild, map;
@@ -66,14 +66,14 @@ export function useBannerBots(context) {
   context = context.context;
   let first1;
   let obj = useAppsMap({ context });
-  let obj2 = first1(12934);
+  let obj2 = first1(12853);
   let apps = obj2.useApplicationsInContext({ context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
   let obj3 = useCommandsMap({ context });
   let channel = context.channel;
   let guild_id;
   const tmp4 = useFrecencyCommandIds({ context });
-  const useActivityApplications = first1(12906).useActivityApplications;
-  first1(12906);
+  const useActivityApplications = first1(12825).useActivityApplications;
+  first1(12825);
   const tmp2 = first1;
   if (channel != null) {
     guild_id = channel.guild_id;

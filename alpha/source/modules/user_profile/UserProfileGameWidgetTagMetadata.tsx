@@ -1,12 +1,12 @@
-// Module ID: 10201
-// Function ID: 10202
+// Module ID: 14384
+// Function ID: 14385
 // Name: UserProfileGameWidgetTagMetadata
-// Dependencies: [10202, 1112, 2]
+// Dependencies: [14385, 1112, 2]
 // Exports: buildWidgetGameTagMetadata, clearWidgetGameTagSection, toggleWidgetGameTag
 
-// Module 10201 (UserProfileGameWidgetTagMetadata)
+// Module 14384 (UserProfileGameWidgetTagMetadata)
 import intl2 from "intl" /* 1112 */;
-import WidgetGameTag from "WidgetGameTag" /* 10202 */;
+import WidgetGameTag from "WidgetGameTag" /* 14385 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -185,7 +185,7 @@ export function toggleWidgetGameTag(arr, arg1) {
   if (type === obj17.RADIO) {
     const items = [];
     items[HermesBuiltin.arraySpread(items, arr.filter((item) => {
-      tags = tags.tags;
+      const tags = obj.tags;
       return !tags.includes(item);
     }), 0)] = arg1;
     found1 = items;

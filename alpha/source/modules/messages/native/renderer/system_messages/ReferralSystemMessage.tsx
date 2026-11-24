@@ -1,18 +1,18 @@
-// Module ID: 8841
-// Function ID: 8842
+// Module ID: 14256
+// Function ID: 14257
 // Name: ReferralSystemMessage
-// Dependencies: [8842, 502, 4913, 575, 8846, 8702, 8245, 8840, 8867, 2]
+// Dependencies: [9000, 502, 4917, 575, 14257, 14198, 8680, 9497, 14259, 2]
 // Exports: createReferralSystemMessage
 
-// Module 8841 (ReferralSystemMessage)
+// Module 14256 (ReferralSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8702 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8840 */;
-import ReferralTrialEmbedRedesign from "ReferralTrialEmbedRedesign" /* 8846 */;
-import ReferralTrialEmbed from "ReferralTrialEmbed" /* 8867 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 8842 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9497 */;
+import createCommonMessageDefault from "createCommonMessage" /* 14198 */;
+import ReferralTrialEmbedRedesign from "ReferralTrialEmbedRedesign" /* 14257 */;
+import ReferralTrialEmbed from "ReferralTrialEmbed" /* 14259 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9000 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_STRONG, iconDividerColor: nativeDefault.colors.ICON_STRONG };
@@ -45,7 +45,7 @@ export function createReferralSystemMessage(message) {
         const tmp17 = closure_5(theme);
         const merged = Object.assign(createCommonMessageDefault(message));
         ({ iconTintColor: obj4.iconTintColor, iconDividerColor: obj4.iconDividerColor } = tmp17);
-        tmp8Result = tmp8(8245);
+        tmp8Result = tmp8(8680);
         return obj2;
       }
     } else {
@@ -59,7 +59,7 @@ export function createReferralSystemMessage(message) {
         const tmp4 = closure_5(theme);
         const merged1 = Object.assign(createCommonMessageDefault(message));
         ({ iconTintColor: obj.iconTintColor, iconDividerColor: obj.iconDividerColor } = tmp4);
-        tmp23Result = tmp23(8245);
+        tmp23Result = tmp23(8680);
         return obj;
       }
     }

@@ -1,13 +1,13 @@
-// Module ID: 5036
-// Function ID: 5037
+// Module ID: 5040
+// Function ID: 5041
 // Name: BadgeUnlockPulseRive
-// Dependencies: [109, 19, 21, 4982, 5037, 5035, 2]
+// Dependencies: [109, 19, 21, 4986, 5041, 5039, 2]
 // Exports: BadgeUnlockPulseRive
 
-// Module 5036 (BadgeUnlockPulseRive)
+// Module 5040 (BadgeUnlockPulseRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 4982 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5035 */;
+import BaseRive2 from "BaseRive" /* 4986 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5039 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

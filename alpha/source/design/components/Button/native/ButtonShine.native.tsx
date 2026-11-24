@@ -1,16 +1,16 @@
-// Module ID: 5523
-// Function ID: 5524
+// Module ID: 5527
+// Function ID: 5528
 // Name: ButtonShine
-// Dependencies: [32, 19, 21, 5518, 671, 4920, 1653, 5123, 4913, 2]
+// Dependencies: [32, 19, 21, 5522, 671, 4924, 1653, 5127, 4917, 2]
 // Exports: ButtonShine
 
-// Module 5523 (ButtonShine)
+// Module 5527 (ButtonShine)
 import Fragment from "Fragment" /* 21 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import shared from "shared" /* 4920 */;
-import timing_timing from "timing/timing" /* 5123 */;
-import ButtonHooks from "ButtonHooks" /* 5518 */;
+import shared from "shared" /* 4924 */;
+import timing_timing from "timing/timing" /* 5127 */;
+import ButtonHooks from "ButtonHooks" /* 5522 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ const _modDef1653 = _mod1653;
 let num, num2, obj1, obj6, obj7, obj8, str, tmp3, tmp4, tmp5;
 
 let tmp;
-const createStyles = tmp(4913);
+const createStyles = tmp(4917);
 function useShineEffectStyles(arg0, variant) {
   let animatedStyle;
   let items2;

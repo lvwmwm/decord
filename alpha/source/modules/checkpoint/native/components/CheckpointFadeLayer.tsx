@@ -1,16 +1,16 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12461
+// Function ID: 12462
 // Name: CheckpointFadeLayer
-// Dependencies: [32, 19, 4914, 21, 1653, 504, 6417, 7392, 12506, 5123, 2]
+// Dependencies: [32, 19, 4918, 21, 1653, 504, 6705, 7202, 12422, 5127, 2]
 // Exports: default
 
-// Module 12541 (CheckpointFadeLayer)
+// Module 12461 (CheckpointFadeLayer)
 import Fragment from "Fragment" /* 21 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5123 */;
+import timing_timing from "timing/timing" /* 5127 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, tmp5, tmp6;
@@ -92,17 +92,17 @@ export default function CheckpointFadeLayer(visible) {
   const tmp10 = keepMounted(num.useState(visible), 2);
   first1 = tmp10[0];
   closure_12 = tmp10[1];
-  const tmpResult3 = tmp(6417);
+  const tmpResult3 = tmp(6705);
   let currentWhen = tmpResult3.useCurrentWhen({ value: children, shouldUpdate: visible });
   let tmp13 = enter;
-  closure_13 = enter(7392)(() => {
+  closure_13 = enter(7202)(() => {
     closure_10(false);
     if (AccessibilityStore != null) {
       AccessibilityStore();
     }
   });
   closure_14 = num.useCallback(() => closure_12(true), []);
-  context = num.useContext(enter(12506));
+  context = num.useContext(enter(12422));
   const tmp15 = keepMounted(num.useState(null), 2);
   first2 = tmp15[0];
   closure_17 = tmp15[1];
@@ -282,7 +282,7 @@ export default function CheckpointFadeLayer(visible) {
       str2 = "auto";
     }
     obj4 = { value: callback, children: currentWhen };
-    Provider = tmp13(12506).Provider;
+    Provider = tmp13(12422).Provider;
     if (visible) {
       currentWhen = children;
     }

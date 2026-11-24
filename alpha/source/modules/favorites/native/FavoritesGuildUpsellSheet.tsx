@@ -1,18 +1,18 @@
-// Module ID: 11223
-// Function ID: 11224
+// Module ID: 10601
+// Function ID: 10602
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 4775, 1071, 21, 11221, 11224, 5127, 11222, 11225, 1112, 3802, 11226, 6545, 5511, 9099, 10505, 11230, 1098, 2]
+// Dependencies: [19, 4779, 1071, 21, 10599, 10602, 5131, 10600, 10603, 1112, 3804, 10604, 6737, 5515, 8960, 9554, 10608, 1098, 2]
 // Exports: default
 
-// Module 11223 (FavoritesGuildUpsellSheet)
+// Module 10601 (FavoritesGuildUpsellSheet)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
-import _modDef3802 from "module_3802" /* 3802 */;
-import FavoritesConstants from "FavoritesConstants" /* 4775 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10505 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 11224 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 11230 */;
+import _modDef3804 from "module_3804" /* 3804 */;
+import FavoritesConstants from "FavoritesConstants" /* 4779 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8960 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9554 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10602 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10608 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -40,20 +40,20 @@ export default function FavoritesGuildUpsellSheet(limit) {
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
     let tmp2 = dependencyMap;
-    FREE_FAVORITE_LIMIT = analyticsLocations(11221).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10599).FREE_FAVORITE_LIMIT;
   }
   analyticsLocations = useTrackFavoritesGuildUpsellModalOpenedDefault().analyticsLocations;
   importDefault = react.useCallback(() => {
     const obj = closure_1(dependencyMap[6]);
     obj.hideActionSheet(analyticsLocations(dependencyMap[7]).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
-  let obj = { title: intl.string(_modDef3802.hINqUs), description: intl2.formatToPlainString(_modDef3802.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(11226).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
-  const PromoSheet = analyticsLocations(11225).PromoSheet;
+  let obj = { title: intl.string(_modDef3804.hINqUs), description: intl2.formatToPlainString(_modDef3804.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10604).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
+  const PromoSheet = analyticsLocations(10603).PromoSheet;
   intl = analyticsLocations(1112).intl;
   intl2 = analyticsLocations(1112).intl;
   obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };
   obj3 = { children: items };
-  ButtonGroup = analyticsLocations(6545).ButtonGroup;
+  ButtonGroup = analyticsLocations(6737).ButtonGroup;
   const obj4 = {
     size: "lg",
     variant: "primary",
@@ -65,13 +65,13 @@ export default function FavoritesGuildUpsellSheet(limit) {
       tmp2(obj);
     }
   };
-  const Button = analyticsLocations(5511).Button;
+  const Button = analyticsLocations(5515).Button;
   intl3 = analyticsLocations(1112).intl;
   items = [closure_6(Button, obj4), ];
   const obj5 = {
     size: "lg",
     variant: "secondary",
-    text: intl4.string(_modDef3802.PprSsy),
+    text: intl4.string(_modDef3804.PprSsy),
     onPress() {
       closure_1();
       const obj = FavoritesGuildAnalytics;
@@ -80,7 +80,7 @@ export default function FavoritesGuildUpsellSheet(limit) {
       obj2.transitionToGuild(FAVORITES);
     }
   };
-  const Button2 = analyticsLocations(5511).Button;
+  const Button2 = analyticsLocations(5515).Button;
   intl4 = analyticsLocations(1112).intl;
   items[1] = closure_6(Button2, obj5);
   return closure_6(PromoSheet, obj);

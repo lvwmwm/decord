@@ -1,27 +1,27 @@
-// Module ID: 18143
-// Function ID: 18144
+// Module ID: 18182
+// Function ID: 18183
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4762, 1071, 9646, 4918, 21, 4913, 575, 7590, 1112, 18144, 5595, 5488, 10096, 10118, 5511, 6429, 10061, 1254, 8382, 8250, 1628, 1494, 1378, 10080, 10081, 2]
+// Dependencies: [32, 5, 19, 17, 4766, 1071, 8803, 4922, 21, 4917, 575, 8454, 1112, 18183, 5599, 5492, 13933, 13945, 5515, 6004, 8804, 1254, 8203, 8103, 1628, 1494, 1378, 8862, 11378, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 18143 (ICYMIShareModal)
+// Module 18182 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import MessageConstants from "MessageConstants" /* 4918 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5488 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
-import ShareEventUtils from "ShareEventUtils" /* 7590 */;
-import UserRowConstants from "UserRowConstants" /* 9646 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 10096 */;
+import MessageConstants from "MessageConstants" /* 4922 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5492 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
+import ShareEventUtils from "ShareEventUtils" /* 8454 */;
+import UserRowConstants from "UserRowConstants" /* 8803 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 13933 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const ShareChatInputDefault = tmp5(10118);
+const ShareChatInputDefault = tmp5(13945);
 function GravityShareFooter(arg0) {
   let count;
   let handleMessageBlur;
@@ -73,7 +73,7 @@ function GravityShareFooter(arg0) {
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5511).Button;
+    const Button = tmp7(5515).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;

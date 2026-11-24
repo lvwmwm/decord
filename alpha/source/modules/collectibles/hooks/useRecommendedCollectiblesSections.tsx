@@ -1,50 +1,38 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14286
+// Function ID: 14287
 // Name: useRecommendedCollectiblesSections
-// Dependencies: [19, 14255, 14256, 5492, 14257, 2]
+// Dependencies: [19, 14287, 5496, 14288, 2]
 // Exports: default
 
-// Module 14254 (useRecommendedCollectiblesSections)
+// Module 14286 (useRecommendedCollectiblesSections)
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 5492 */;
-import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 14255 */;
+import reactDefault from "react" /* 5496 */;
+import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 14287 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let dependencyMap, importDefault, recommendations;
 
-let useMemo = react.useMemo;
+const useMemo = react.useMemo;
 let closure_5 = [];
 let result = size.fileFinishedImporting("modules/collectibles/hooks/useRecommendedCollectiblesSections.tsx");
 
 export default function useRecommendedCollectiblesSections(arg0, arg1) {
-  let closure_0;
   let closure_1;
-  let closure_2;
   let length;
-  _require = arg0;
+  let closure_0 = arg0;
   importDefault = arg1;
-  let obj = require("EditProfileCollectiblesOrderingExperiment");
-  dependencyMap = obj.useIsEditProfileCollectiblesOrderingEnabled("collectibles_picker");
-  let tmp = reactDefault(() => {
-    let tmp2;
-    const tmp = closure_2;
-    if (tmp) {
-      const recommendations = CollectiblesRecommendationStore.getRecommendations();
-      let skuIds;
-      if (recommendations != null) {
-        skuIds = recommendations.skuIds;
-      }
-      if (skuIds == null) {
-        skuIds = closure_5;
-      }
-      tmp2 = skuIds;
-    } else {
-      tmp2 = closure_5;
+  const tmp = reactDefault(() => {
+    recommendations = recommendations.getRecommendations();
+    let skuIds;
+    if (recommendations != null) {
+      skuIds = recommendations.skuIds;
     }
-    return tmp2;
+    if (skuIds == null) {
+      skuIds = closure_1_5;
+    }
+    return skuIds;
   });
-  useMemo = tmp;
+  dependencyMap = tmp;
   const items = [arg1, tmp, arg0];
   return useMemo(() => {
     let mapped;
@@ -55,8 +43,8 @@ export default function useRecommendedCollectiblesSections(arg0, arg1) {
         if (section.section !== closure_1_1) {
           return section;
         } else {
-          const obj = closure_0(closure_2[4]);
-          const result = obj.reorderCollectiblesByRecommendation(section.items, length);
+          const obj = closure_0(closure_2[3]);
+          const result = obj.reorderCollectiblesByRecommendation(section.items, closure_1_2);
           let tmp5 = section;
           if (result !== section.items) {
             const obj2 = { items: result };

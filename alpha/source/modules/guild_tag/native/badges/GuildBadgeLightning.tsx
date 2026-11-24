@@ -1,12 +1,12 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15160
+// Function ID: 15161
 // Name: GuildBadgeLightning
-// Dependencies: [19, 21, 15133, 7865, 2]
+// Dependencies: [19, 21, 15154, 7813, 2]
 // Exports: GuildBadgeLightning
 
-// Module 15139 (GuildBadgeLightning)
-import inlineStyles from "inlineStyles" /* 7865 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15133 */;
+// Module 15160 (GuildBadgeLightning)
+import inlineStyles from "inlineStyles" /* 7813 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15154 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 12442
+// Function ID: 12443
 // Name: CheckpointShareCardYear
-// Dependencies: [19, 17, 21, 12523, 7865, 2]
+// Dependencies: [19, 17, 21, 12443, 7813, 2]
 // Exports: default
 
-// Module 12522 (CheckpointShareCardYear)
+// Module 12442 (CheckpointShareCardYear)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import inlineStyles from "inlineStyles" /* 7865 */;
-import CheckpointShareCardContext from "CheckpointShareCardContext" /* 12523 */;
+import inlineStyles from "inlineStyles" /* 7813 */;
+import CheckpointShareCardContext from "CheckpointShareCardContext" /* 12443 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

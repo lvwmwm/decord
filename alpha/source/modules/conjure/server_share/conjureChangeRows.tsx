@@ -1,13 +1,13 @@
-// Module ID: 18296
-// Function ID: 18297
+// Module ID: 18335
+// Function ID: 18336
 // Name: conjureChangeRows
-// Dependencies: [1112, 4190, 6622, 2]
+// Dependencies: [1112, 4192, 6809, 2]
 // Exports: conjureMakePersonalRows, conjureMoveRows, conjureShareRows
 
-// Module 18296 (conjureChangeRows)
+// Module 18335 (conjureChangeRows)
 import intl8 from "intl" /* 1112 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6809 */;
 import size from "module_2" /* 2 */;
 
 function conjureLeaveServerRows(canRemoveBot) {
@@ -22,7 +22,7 @@ function conjureLeaveServerRows(canRemoveBot) {
     const intl = intl8.intl;
     const formatToPlainString = intl.formatToPlainString;
     canRemoveBot = canRemoveBot.canRemoveBot;
-    const tmp5 = _modDef4190;
+    const tmp5 = _modDef4192;
     if (canRemoveBot) {
       PDLHwR = tmp5["cU/7df"];
       tmp = tmp4;
@@ -40,7 +40,7 @@ function conjureLeaveServerRows(canRemoveBot) {
       const listFormat = new Intl.ListFormat(tmp2(1112).intl.currentLocale, { type: "conjunction" });
       const channelNames = canRemoveBot.channelNames;
       const push = items.push;
-      const obj3 = { key: "channels", text: intl2.formatToPlainString(tmp(4190).DbZ8af, obj4) };
+      const obj3 = { key: "channels", text: intl2.formatToPlainString(tmp(4192).DbZ8af, obj4) };
       const formatResult = listFormat.format(channelNames.map((item) => "#" + item));
       intl2 = tmp2(1112).intl;
       obj4 = { channels: formatResult };
@@ -60,10 +60,10 @@ export function conjureShareRows(stateFromStores, name) {
   let intl6;
   let intl7;
   let obj3;
-  const obj = { key: "bots", text: intl.string(_modDef4190.eSpjGV) };
+  const obj = { key: "bots", text: intl.string(_modDef4192.eSpjGV) };
   intl = intl8.intl;
   const items = [obj, ];
-  const obj2 = { key: "location", text: intl2.formatToPlainString(_modDef4190.c3xGbr, obj3) };
+  const obj2 = { key: "location", text: intl2.formatToPlainString(_modDef4192.c3xGbr, obj3) };
   intl2 = intl8.intl;
   obj3 = { server: name };
   items[1] = obj2;
@@ -85,7 +85,7 @@ export function conjureShareRows(stateFromStores, name) {
   }
   if (!usesPreviewAppResult) {
     const push = items.push;
-    const obj4 = { key: "test_app", text: intl3.string(_modDef4190["+5f47F"]) };
+    const obj4 = { key: "test_app", text: intl3.string(_modDef4192["+5f47F"]) };
     intl3 = tmp2(1112).intl;
     push(obj4);
   }
@@ -107,24 +107,24 @@ export function conjureShareRows(stateFromStores, name) {
   HermesBuiltin.arraySpread(items1, prop1, tmp9);
   if (items1.includes(ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET)) {
     const push2 = items.push;
-    const obj5 = { key: "profile_widget", text: intl4.string(_modDef4190.u6ckHo) };
+    const obj5 = { key: "profile_widget", text: intl4.string(_modDef4192.u6ckHo) };
     intl4 = tmp2(1112).intl;
     push2(obj5);
   }
   if (items1.includes(ConjureProjectTypes.ConjureSupportedSurface.OVERLAY)) {
     const push3 = items.push;
-    const obj6 = { key: "overlay", text: intl5.string(_modDef4190.UZHlmt) };
+    const obj6 = { key: "overlay", text: intl5.string(_modDef4192.UZHlmt) };
     intl5 = tmp2(1112).intl;
     push3(obj6);
   }
   if (items1.includes(ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD)) {
     const push4 = items.push;
-    const obj7 = { key: "automod", text: intl6.string(_modDef4190.IPtiUf) };
+    const obj7 = { key: "automod", text: intl6.string(_modDef4192.IPtiUf) };
     intl6 = tmp2(1112).intl;
     push4(obj7);
   }
   const push5 = items.push;
-  const obj8 = { key: "collaboration", text: intl7.string(_modDef4190["s3/5nF"]) };
+  const obj8 = { key: "collaboration", text: intl7.string(_modDef4192["s3/5nF"]) };
   intl7 = tmp2(1112).intl;
   push5(obj8);
   return items;
@@ -134,11 +134,11 @@ export function conjureMoveRows(stateFromStores, target, name) {
   let intl2;
   let intl3;
   let obj2;
-  const obj = { key: "server", text: intl.formatToPlainString(_modDef4190.YFZDXO, obj2) };
+  const obj = { key: "server", text: intl.formatToPlainString(_modDef4192.YFZDXO, obj2) };
   intl = intl8.intl;
   obj2 = { server: name };
   const items = [obj, ...conjureLeaveServerRows(target)];
-  const obj3 = { key: "settings", text: intl2.string(_modDef4190.F058cu) };
+  const obj3 = { key: "settings", text: intl2.string(_modDef4192.F058cu) };
   intl2 = intl8.intl;
   items[tmp4] = obj3;
   const prop = stateFromStores.collaborator_role_ids;
@@ -151,7 +151,7 @@ export function conjureMoveRows(stateFromStores, target, name) {
   }
   if (num > 0) {
     const push = items.push;
-    const obj4 = { key: "collaboration", text: intl3.string(_modDef4190.SDpkkt) };
+    const obj4 = { key: "collaboration", text: intl3.string(_modDef4192.SDpkkt) };
     intl3 = intl8.intl;
     push(obj4);
   }
@@ -169,45 +169,45 @@ export function conjureMakePersonalRows(preview_app_chosen, target) {
   const usesPreviewAppResult = obj.usesPreviewApp(preview_app_chosen) && true !== preview_app_chosen.preview_app_chosen;
   if (usesPreviewAppResult) {
     const push = arr.push;
-    const obj2 = { key: "test_app", text: intl.string(_modDef4190.jKXaUH) };
+    const obj2 = { key: "test_app", text: intl.string(_modDef4192.jKXaUH) };
     intl = tmp(1112).intl;
     push(obj2);
   }
   const supported_surfaces = preview_app_chosen.supported_surfaces;
   let hasItem;
   if (supported_surfaces != null) {
-    hasItem = supported_surfaces.includes(tmp(6622).ConjureSupportedSurface.PROFILE_WIDGET);
+    hasItem = supported_surfaces.includes(tmp(6809).ConjureSupportedSurface.PROFILE_WIDGET);
   }
   if (true === hasItem) {
     const push2 = arr.push;
-    const obj3 = { key: "profile_widget", text: intl2.string(_modDef4190.HHZxrL) };
+    const obj3 = { key: "profile_widget", text: intl2.string(_modDef4192.HHZxrL) };
     intl2 = tmp(1112).intl;
     push2(obj3);
   }
   const supported_surfaces2 = preview_app_chosen.supported_surfaces;
   let hasItem1;
   if (supported_surfaces2 != null) {
-    hasItem1 = supported_surfaces2.includes(tmp(6622).ConjureSupportedSurface.OVERLAY);
+    hasItem1 = supported_surfaces2.includes(tmp(6809).ConjureSupportedSurface.OVERLAY);
   }
   if (true === hasItem1) {
     const push3 = arr.push;
-    const obj4 = { key: "overlay", text: intl3.string(_modDef4190.rVTFDs) };
+    const obj4 = { key: "overlay", text: intl3.string(_modDef4192.rVTFDs) };
     intl3 = tmp(1112).intl;
     push3(obj4);
   }
   const tmpResult = ConjureProjectTypes;
   if (tmpResult.isProjectGuildCollaborationEnabled(preview_app_chosen)) {
     const push4 = arr.push;
-    const obj5 = { key: "collaboration", text: intl4.string(_modDef4190["+a1lOS"]) };
+    const obj5 = { key: "collaboration", text: intl4.string(_modDef4192["+a1lOS"]) };
     intl4 = tmp(1112).intl;
     push4(obj5);
   }
   const push5 = arr.push;
-  const obj6 = { key: "only_you", text: intl5.string(_modDef4190.TrTx1Z) };
+  const obj6 = { key: "only_you", text: intl5.string(_modDef4192.TrTx1Z) };
   intl5 = tmp(1112).intl;
   push5(obj6);
   const push6 = arr.push;
-  const obj7 = { key: "location", text: intl6.string(_modDef4190["GC/COK"]) };
+  const obj7 = { key: "location", text: intl6.string(_modDef4192["GC/COK"]) };
   intl6 = tmp(1112).intl;
   push6(obj7);
   return arr;

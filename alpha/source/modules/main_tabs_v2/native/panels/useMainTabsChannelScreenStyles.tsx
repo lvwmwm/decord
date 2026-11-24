@@ -1,15 +1,15 @@
-// Module ID: 18174
-// Function ID: 18175
+// Module ID: 18213
+// Function ID: 18214
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 4913, 575, 1653, 2]
+// Dependencies: [19, 17, 4917, 575, 1653, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 18174 (useMainTabsChannelScreenStyles)
+// Module 18213 (useMainTabsChannelScreenStyles)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

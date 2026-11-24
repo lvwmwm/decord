@@ -1,26 +1,26 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16664
+// Function ID: 16665
 // Name: GuildRoleSubscriptionListingEditStateUtils
-// Dependencies: [5, 32, 19, 6573, 4838, 16631, 16610, 1071, 1388, 504, 5492, 6359, 16632, 16633, 1089, 4836, 16634, 16617, 16635, 1262, 38, 6511, 6875, 12, 10394, 16636, 1268, 2]
+// Dependencies: [5, 32, 19, 6757, 4842, 16665, 16644, 1071, 1388, 504, 5496, 5677, 16666, 16667, 1089, 4840, 16668, 16651, 16669, 1262, 38, 6865, 7486, 12, 9620, 16670, 1268, 2]
 // Exports: useApplicationId, useChannelAccessFormat, useChannelBenefits, useClearEditStateOnUnmount, useCreateOrUpdateListingFromEditState, useDescription, useEditStateIds, useHasChanges, useHasChangesForEditStateIds, useImage, useIntangibleBenefits, useListingEditState, useName, usePriceTier, useRole, useRoleColor, useRoleIcon, useSubscriptionPlan, useTierEmojiIds, useTrialInterval, useTrialLimit
 
-// Module 16630 (GuildRoleSubscriptionListingEditStateUtils)
+// Module 16664 (GuildRoleSubscriptionListingEditStateUtils)
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import v1 from "v1" /* 1268 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4836 */;
-import reactDefault from "react" /* 5492 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16610 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16617 */;
-import useSubscriptionRoleDefault from "useSubscriptionRole" /* 16632 */;
-import Contants from "Contants" /* 16633 */;
-import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 16635 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4840 */;
+import reactDefault from "react" /* 5496 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16644 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16651 */;
+import useSubscriptionRoleDefault from "useSubscriptionRole" /* 16666 */;
+import Contants from "Contants" /* 16667 */;
+import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 16669 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6573 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4838 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16631 */;
+import EmojiStore from "EmojiStore" /* 6757 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4842 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16665 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -31,9 +31,9 @@ let c10;
 let c9;
 let closure_12;
 let map1;
-const f110515 = (setListing) => setListing.setListing;
-const f110522 = (id) => id.id;
-const f131028 = () => {
+const f110685 = (setListing) => setListing.setListing;
+const f110692 = (id) => id.id;
+const f131226 = () => {
   state.setState((listings) => {
     let obj2;
     obj = { listings: obj2 };
@@ -55,14 +55,14 @@ function getRoleEmojis(arr, arg1) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(found.map(f110522));
+    set = new Set(found.map(f110692));
     return set;
   }
 }
 function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
   _require = NEW_LISTING_EDIT_STATE_ID;
   obj = require("react-native");
-  obj.batchUpdates(f131028);
+  obj.batchUpdates(f131226);
 }
 let obj = function _updateListingPeripheralsFromEditState() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -456,7 +456,7 @@ export function useListingEditState(arg0, arg1, arg2) {
   let closure_1 = arg1;
   let tmp = arg2;
   let closure_2 = arg2;
-  const tmp2 = authStore(f110515);
+  const tmp2 = authStore(f110685);
   let closure_3 = tmp2;
   const items = [tmp2, arg0, arg1, arg2];
   const callback = react.useCallback((arg0) => {
@@ -498,14 +498,14 @@ export function useClearEditStateOnUnmount(arg0) {
     let state;
     closure_0 = closure_1_0;
     obj = closure_0(dependencyMap[19]);
-    obj.batchUpdates(f131028);
+    obj.batchUpdates(f131226);
   }, items);
 }
 export function useName(arg0) {
   let closure_0;
   let closure_3;
   _require = arg0;
-  const f110526 = (name) => {
+  const f110696 = (name) => {
     let str;
     if (name != null) {
       str = name.name;
@@ -518,12 +518,12 @@ export function useName(arg0) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f110526(5492)(() => f110543);
+  const tmp2 = f110696(5496)(() => f110713);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = arg0;
   const name = "name";
-  const tmp4 = closure_10(f110515);
+  const tmp4 = closure_10(f110685);
   dependencyMap = tmp4;
   const items2 = [tmp4, arg0, "name", memo];
   const callback = react.useCallback((arg0) => {
@@ -561,7 +561,7 @@ export function useName(arg0) {
 export function usePriceTier(editStateId) {
   let closure_3;
   _require = editStateId;
-  const f110527 = (arg0) => {
+  const f110697 = (arg0) => {
     let price;
     if (arg0 != null) {
       const first = arg0.subscription_plans[0];
@@ -574,12 +574,12 @@ export function usePriceTier(editStateId) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f110527(5492)(() => f110543);
+  const tmp2 = f110697(5496)(() => f110713);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = editStateId;
   const priceTier = "priceTier";
-  const tmp4 = closure_10(f110515);
+  const tmp4 = closure_10(f110685);
   dependencyMap = tmp4;
   const items2 = [tmp4, editStateId, "priceTier", memo];
   const callback = react.useCallback((arg0) => {
@@ -618,7 +618,7 @@ export function useDescription(arg0) {
   let closure_0;
   let closure_3;
   _require = arg0;
-  const f110528 = (description) => {
+  const f110698 = (description) => {
     let str;
     if (description != null) {
       str = description.description;
@@ -631,12 +631,12 @@ export function useDescription(arg0) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f110528(5492)(() => f110543);
+  const tmp2 = f110698(5496)(() => f110713);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = arg0;
   const description = "description";
-  const tmp4 = closure_10(f110515);
+  const tmp4 = closure_10(f110685);
   dependencyMap = tmp4;
   const items2 = [tmp4, arg0, "description", memo];
   const callback = react.useCallback((arg0) => {
@@ -674,7 +674,7 @@ export function useDescription(arg0) {
 export function useImage(editStateId, arg1) {
   let closure_0;
   _require = editStateId;
-  const f110529 = (image_asset) => {
+  const f110699 = (image_asset) => {
     image_asset = undefined;
     if (image_asset != null) {
       image_asset = image_asset.image_asset;
@@ -687,12 +687,12 @@ export function useImage(editStateId, arg1) {
   obj = require("get initialized");
   const items = [GuildRoleSubscriptionsStore];
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = reactDefault(() => f110543);
+  const tmp2 = reactDefault(() => f110713);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = editStateId;
   const image = "image";
-  const tmp4 = closure_10(f110515);
+  const tmp4 = closure_10(f110685);
   let closure_3 = tmp4;
   const items2 = [tmp4, editStateId, "image", memo];
   const callback = react.useCallback((arg0) => {
@@ -730,7 +730,7 @@ export function useImage(editStateId, arg1) {
 export function useApplicationId(listingId) {
   let closure_3;
   _require = listingId;
-  const f110530 = (application_id) => {
+  const f110700 = (application_id) => {
     application_id = undefined;
     if (application_id != null) {
       application_id = application_id.application_id;
@@ -740,7 +740,7 @@ export function useApplicationId(listingId) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f110530(5492)(() => f110543);
+  const tmp2 = f110700(5496)(() => f110713);
   dependencyMap = tmp2;
   const items1 = [stateFromStores, tmp2];
   return react.useMemo(() => closure_3(stateFromStores), items1);
@@ -763,7 +763,7 @@ export function useRoleIcon(editStateId, guildId) {
   }, items);
   let closure_0 = editStateId;
   const roleIcon = "roleIcon";
-  const tmp3 = authStore(f110515);
+  const tmp3 = authStore(f110685);
   let closure_3 = tmp3;
   const items1 = [tmp3, editStateId, "roleIcon", memo];
   const callback = react.useCallback((arg0) => {
@@ -863,7 +863,7 @@ export function useRoleColor(editStateId, guildId) {
   }, items);
   let color = editStateId;
   const roleColor = "roleColor";
-  const tmp3 = closure_10(f110515);
+  const tmp3 = closure_10(f110685);
   let closure_3 = tmp3;
   const items1 = [tmp3, editStateId, "roleColor", memo];
   const callback = react.useCallback((arg0) => {
@@ -913,7 +913,7 @@ export function useChannelAccessFormat(editStateId, guildId) {
   }, items);
   let closure_0 = editStateId;
   const channelAccessFormat = "channelAccessFormat";
-  const tmp3 = closure_10(f110515);
+  const tmp3 = closure_10(f110685);
   let closure_3 = tmp3;
   const items1 = [tmp3, editStateId, "channelAccessFormat", memo];
   const callback = react.useCallback((arg0) => {
@@ -951,7 +951,7 @@ export function useChannelAccessFormat(editStateId, guildId) {
 export function useChannelBenefits(listingId) {
   let closure_3;
   _require = listingId;
-  const f110537 = (role_benefits) => {
+  const f110707 = (role_benefits) => {
     let found;
     if (null == role_benefits) {
       found = closure_1_15;
@@ -964,12 +964,12 @@ export function useChannelBenefits(listingId) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f110537(5492)(() => f110543);
+  const tmp2 = f110707(5496)(() => f110713);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = listingId;
   const channelBenefits = "channelBenefits";
-  const tmp4 = closure_10(f110515);
+  const tmp4 = closure_10(f110685);
   dependencyMap = tmp4;
   const items2 = [tmp4, listingId, "channelBenefits", memo];
   const callback = react.useCallback((arg0) => {
@@ -1007,7 +1007,7 @@ export function useChannelBenefits(listingId) {
 export function useIntangibleBenefits(listingId) {
   let closure_3;
   _require = listingId;
-  const f110538 = (role_benefits) => {
+  const f110708 = (role_benefits) => {
     let found;
     if (null == role_benefits) {
       found = closure_1_16;
@@ -1020,12 +1020,12 @@ export function useIntangibleBenefits(listingId) {
   const items = [GuildRoleSubscriptionsStore];
   obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  const tmp2 = f110538(5492)(() => f110543);
+  const tmp2 = f110708(5496)(() => f110713);
   const items1 = [stateFromStores, tmp2];
   let memo = react.useMemo(() => closure_3(stateFromStores), items1);
   _require = listingId;
   const intangibleBenefits = "intangibleBenefits";
-  const tmp4 = closure_10(f110515);
+  const tmp4 = closure_10(f110685);
   dependencyMap = tmp4;
   const items2 = [tmp4, listingId, "intangibleBenefits", memo];
   const callback = react.useCallback((arg0) => {
@@ -1082,14 +1082,14 @@ export function useTierEmojiIds(listingId, guildId) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(found.map(f110522));
+        set = new Set(found.map(f110692));
       }
     }
     return set;
   }, items2);
   _require = listingId;
   const tierEmojiIds = "tierEmojiIds";
-  const tmp4 = closure_10(f110515);
+  const tmp4 = closure_10(f110685);
   let closure_3 = tmp4;
   const items3 = [tmp4, listingId, "tierEmojiIds", memo];
   const callback = react.useCallback((arg0) => {
@@ -1141,7 +1141,7 @@ export function useTrialInterval(editStateId) {
   }
   let closure_0 = editStateId;
   const trialInterval = "trialInterval";
-  const tmp5 = authStore(f110515);
+  const tmp5 = authStore(f110685);
   let closure_3 = tmp5;
   const items = [tmp5, editStateId, "trialInterval", selectedOption];
   const callback = react.useCallback((arg0) => {
@@ -1188,7 +1188,7 @@ export function useTrialLimit(editStateId) {
   }
   let closure_0 = editStateId;
   const trialLimit = "trialLimit";
-  const tmp3 = authStore(f110515);
+  const tmp3 = authStore(f110685);
   let closure_3 = tmp3;
   const items = [tmp3, editStateId, "trialLimit", prop];
   const callback = react.useCallback((arg0) => {
@@ -1244,7 +1244,7 @@ export function useSubscriptionPlan(listingId) {
   let first;
   let memo;
   let subscriptionListing;
-  const f110543 = (arg0) => {
+  const f110713 = (arg0) => {
     first = undefined;
     if (arg0 != null) {
       first = arg0.subscription_plans[0];
@@ -1254,13 +1254,13 @@ export function useSubscriptionPlan(listingId) {
   obj = memo(504);
   const items = [GuildRoleSubscriptionsStore];
   const stateFromStores = obj.useStateFromStores(items, () => subscriptionListing.getSubscriptionListing(closure_0));
-  let tmp2 = first(5492)(() => f110543);
+  let tmp2 = first(5496)(() => f110713);
   const items1 = [stateFromStores, tmp2];
   memo = react.useMemo(() => closure_3(stateFromStores), items1);
   let closure_0 = listingId;
   const priceTier = "priceTier";
   let c2;
-  let tmp4 = closure_10(f110515);
+  let tmp4 = closure_10(f110685);
   let closure_3 = tmp4;
   const items2 = [tmp4, listingId, "priceTier", undefined];
   const callback = react.useCallback((arg0) => {

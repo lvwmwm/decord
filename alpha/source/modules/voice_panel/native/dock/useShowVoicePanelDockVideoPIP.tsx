@@ -1,13 +1,13 @@
-// Module ID: 19324
-// Function ID: 19325
+// Module ID: 19366
+// Function ID: 19367
 // Name: useShowVoicePanelDockVideoPIP
-// Dependencies: [6620, 2131, 19323, 504, 10739, 2]
+// Dependencies: [6807, 2131, 19365, 504, 10015, 2]
 // Exports: default
 
-// Module 19324 (useShowVoicePanelDockVideoPIP)
-import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+// Module 19366 (useShowVoicePanelDockVideoPIP)
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import VoicePanelDockPIPWatchPromptStore from "VoicePanelDockPIPWatchPromptStore" /* 19323 */;
+import VoicePanelDockPIPWatchPromptStore from "VoicePanelDockPIPWatchPromptStore" /* 19365 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,15 +1,15 @@
-// Module ID: 17944
-// Function ID: 17945
+// Module ID: 17980
+// Function ID: 17981
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4946, 4759, 1112, 4746, 1653, 16013, 1501, 504, 14981, 5662, 9080, 17945, 9087, 2]
+// Dependencies: [32, 19, 4950, 4763, 1112, 4750, 1653, 16046, 17981, 1501, 504, 15020, 5701, 9420, 17984, 9427, 2]
 // Exports: useYouBarCoachmark
 
-// Module 17944 (useYouBarCoachmark)
-import dismissible_content from "dismissible_content" /* 4746 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+// Module 17980 (useYouBarCoachmark)
+import dismissible_content from "dismissible_content" /* 4750 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -17,28 +17,32 @@ let closure_6 = [];
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarCoachmark.tsx");
 
 export function useYouBarCoachmark(isCondensed) {
-  let guildId;
-  let tmp7;
-  let tmp8;
+  let tmp10;
+  let tmp9;
   isCondensed = isCondensed.isCondensed;
   let isAgeNoticeEligible;
+  let isFocused;
+  let stateFromStores;
   let obj = isCondensed(isAgeNoticeEligible[6]);
   const animatedRef = obj.useAnimatedRef();
+  const avatarAnchorRef = isFocused.useRef(null);
   let obj2 = isCondensed(isAgeNoticeEligible[7]);
   isAgeNoticeEligible = obj2.useIsAgeNoticeEligible();
   const obj3 = isCondensed(isAgeNoticeEligible[8]);
-  const isFocused = obj3.useIsFocused();
-  let items = [SelectedGuildStore];
+  const isCheckpointRelaunchCoachmarkEligible = obj3.useIsCheckpointRelaunchCoachmarkEligible("YouBar");
   const obj4 = isCondensed(isAgeNoticeEligible[9]);
-  const stateFromStores = obj4.useStateFromStores(items, () => {
-    const obj = isCondensed(isAgeNoticeEligible[10]);
-    const obj2 = { from: "authed", unit: isCondensed(isAgeNoticeEligible[11]).TimeUnits.DAYS };
+  isFocused = obj4.useIsFocused();
+  let items = [stateFromStores];
+  const obj5 = isCondensed(isAgeNoticeEligible[10]);
+  stateFromStores = obj5.useStateFromStores(items, () => {
+    const obj = isCondensed(isAgeNoticeEligible[11]);
+    const obj2 = { from: "authed", unit: isCondensed(isAgeNoticeEligible[12]).TimeUnits.DAYS };
     const tmp = obj.getFirstInstallTimeElapsed(obj2) >= 10;
-    const tmp2 = null != guildId.getGuildId() && tmp;
+    const tmp2 = null != stateFromStores.getGuildId() && tmp;
     return tmp2;
   });
-  const items1 = [isCondensed, stateFromStores, isAgeNoticeEligible, isFocused];
-  const memo = stateFromStores.useMemo(() => {
+  const items1 = [isCondensed, stateFromStores, isAgeNoticeEligible, isCheckpointRelaunchCoachmarkEligible, isFocused];
+  const memo = isFocused.useMemo(() => {
     const tmp = isCondensed;
     if (!tmp) {
       const tmp2 = isFocused;
@@ -53,16 +57,20 @@ export function useYouBarCoachmark(isCondensed) {
         if (tmp10) {
           items.push(dismissible_content.DismissibleContent.TINY_BRONCO);
         }
+        const tmp14 = isCheckpointRelaunchCoachmarkEligible;
+        if (tmp14) {
+          items.push(dismissible_content.DismissibleContent.BUILD_A_BEAR_RELAUNCH_COACHMARK);
+        }
         return items;
       }
     }
     return closure_6;
   }, items1);
-  const obj5 = isCondensed(isAgeNoticeEligible[12]);
-  [tmp7, tmp8] = isFocused(obj5.useSelectedDismissibleContent(memo), 2);
+  const obj6 = isCondensed(isAgeNoticeEligible[13]);
+  [tmp9, tmp10] = isCheckpointRelaunchCoachmarkEligible(obj6.useSelectedDismissibleContent(memo), 2);
   const items2 = [markAsDismissed, visibleContent];
-  isFocused(obj5.useSelectedDismissibleContent(memo), 2);
-  const memo1 = stateFromStores.useMemo(() => {
+  const tmp8 = isCheckpointRelaunchCoachmarkEligible(obj6.useSelectedDismissibleContent(memo), 2);
+  const memo1 = isFocused.useMemo(() => {
     let intl;
     let intl2;
     const obj = {
@@ -78,11 +86,15 @@ export function useYouBarCoachmark(isCondensed) {
     intl2 = isCondensed(isAgeNoticeEligible[4]).intl;
     return obj;
   }, items2);
-  const obj6 = isCondensed(isAgeNoticeEligible[13]);
-  const privateProfileCoachmarkProps = obj6.usePrivateProfileCoachmarkProps({ visibleContent, markAsDismissed });
   const obj7 = isCondensed(isAgeNoticeEligible[14]);
-  const coachmark = obj7.useCoachmark(animatedRef, privateProfileCoachmarkProps);
-  const obj8 = isCondensed(isAgeNoticeEligible[14]);
-  const coachmark1 = obj8.useCoachmark(animatedRef, memo1);
-  return { animatedRef, visibleContent, markAsDismissed };
+  const privateProfileCoachmarkProps = obj7.usePrivateProfileCoachmarkProps({ visibleContent, markAsDismissed });
+  const obj8 = isCondensed(isAgeNoticeEligible[8]);
+  const checkpointRelaunchCoachmarkProps = obj8.useCheckpointRelaunchCoachmarkProps({ visibleContent, markAsDismissed });
+  const obj9 = isCondensed(isAgeNoticeEligible[15]);
+  const coachmark = obj9.useCoachmark(animatedRef, privateProfileCoachmarkProps);
+  const obj10 = isCondensed(isAgeNoticeEligible[15]);
+  const coachmark1 = obj10.useCoachmark(animatedRef, memo1);
+  const obj11 = isCondensed(isAgeNoticeEligible[15]);
+  const coachmark2 = obj11.useCoachmark(avatarAnchorRef, checkpointRelaunchCoachmarkProps);
+  return { animatedRef, avatarAnchorRef, visibleContent, markAsDismissed };
 }

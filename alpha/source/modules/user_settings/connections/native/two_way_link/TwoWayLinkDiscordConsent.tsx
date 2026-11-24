@@ -1,10 +1,10 @@
-// Module ID: 7075
-// Function ID: 7076
+// Module ID: 7636
+// Function ID: 7637
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 4913, 7044, 7068, 7002, 38, 7076, 7017, 5511, 1112, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 4917, 7627, 7406, 7598, 38, 6922, 7354, 5515, 1112, 2]
 // Exports: TwoWayLinkDiscordConsent
 
-// Module 7075 (TwoWayLinkDiscordConsent)
+// Module 7636 (TwoWayLinkDiscordConsent)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let v0;

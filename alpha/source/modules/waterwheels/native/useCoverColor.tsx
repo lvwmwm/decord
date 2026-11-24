@@ -1,13 +1,13 @@
-// Module ID: 17824
-// Function ID: 17825
+// Module ID: 17862
+// Function ID: 17863
 // Name: useCoverColor
-// Dependencies: [5, 32, 19, 4920, 1454, 671, 1491, 2]
+// Dependencies: [5, 32, 19, 4924, 1454, 671, 1491, 2]
 // Exports: coverArtColor, default
 
-// Module 17824 (useCoverColor)
+// Module 17862 (useCoverColor)
 import _modDef671 from "module_671" /* 671 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
-import shared from "shared" /* 4920 */;
+import shared from "shared" /* 4924 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

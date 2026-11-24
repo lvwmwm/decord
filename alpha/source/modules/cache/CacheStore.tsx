@@ -1,25 +1,25 @@
-// Module ID: 8269
-// Function ID: 8270
+// Module ID: 8109
+// Function ID: 8110
 // Name: CacheStore
-// Dependencies: [32, 5, 6394, 502, 4816, 4946, 1071, 3, 510, 4813, 8270, 8281, 9, 10, 4812, 8282, 8283, 8284, 8285, 8286, 8346, 8365, 504, 572, 4811, 8352, 8358, 8356, 8350, 4788, 8366, 1378, 8368, 8369, 4808, 2]
+// Dependencies: [32, 5, 5723, 502, 4820, 4950, 1071, 3, 510, 4817, 8110, 8121, 9, 10, 4816, 8122, 8123, 8124, 8125, 8126, 8166, 8187, 504, 572, 4815, 8172, 8178, 8176, 8170, 8188, 1378, 8190, 8191, 4812, 2]
 
-// Module 8269 (CacheStore)
+// Module 8109 (CacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import TryLoad from "TryLoad" /* 4811 */;
-import modules_MessagesDefault from "modules/Messages" /* 8270 */;
-import timeRequireDefault from "timeRequire" /* 8285 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 8358 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 8368 */;
+import TryLoad from "TryLoad" /* 4815 */;
+import modules_MessagesDefault from "modules/Messages" /* 8110 */;
+import timeRequireDefault from "timeRequire" /* 8125 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 8178 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 8190 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -606,7 +606,7 @@ obj = function _loadLateLazyCache() {
     let closure_1 = value;
     if (c7 === 2) {
       c7 = 3;
-      let str3 = "Generator functions may not be called on executing generators";
+      const str2 = "Generator functions may not be called on executing generators";
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -639,7 +639,7 @@ obj = function _loadLateLazyCache() {
             let closure_8;
             let guildChannels;
             let socket;
-            const str4 = "loading late lazy cache";
+            let str3 = "loading late lazy cache";
             const verboseResult = closure_2_13.verbose("loading late lazy cache");
             const fetchLazyCache = TTITrackerDefault.fetchLazyCache;
             c6 = 1;
@@ -749,52 +749,44 @@ obj = function _loadLateLazyCache() {
             };
             return obj7;
           }
-        } else {
-          if (2 === tmp4) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              let obj8 = { value, done: true };
-              return obj8;
-            } else {
-              guildChannels = value;
-              const DelayLoadLateLazyCacheHoldoutExperiment = closure_133_0(closure_133_2[29]).DelayLoadLateLazyCacheHoldoutExperiment;
-              let verbose = closure_133_13.verbose;
-              if (DelayLoadLateLazyCacheHoldoutExperiment.getCachedEnabled()) {
-                const str2 = "loadLateLazyCache: not yielding to react";
-                const verboseResult1 = verbose("loadLateLazyCache: not yielding to react");
-              } else {
-                const str = "loadLateLazyCache: yielding to react";
-                verbose("loadLateLazyCache: yielding to react");
-                const tmp8 = closure_133_0(closure_133_2[30]);
-                let tmp9 = closure_133_0;
-                let tmp10 = closure_133_2;
-                const waitSafelyForPostTTI = tmp8.waitSafelyForPostTTI;
-                let obj2 = closure_133_0(closure_133_2[31]);
-                let num4;
-                if (obj2.isIOS()) {
-                  num4 = 0;
-                }
-                c6 = 3;
-                c7 = 1;
-                let obj9 = { value: waitSafelyForPostTTI(num4), done: false };
-                return obj9;
-              }
-            }
-          } else if (arg0 === 1) {
+        } else if (2 === tmp4) {
+          if (arg0 === 1) {
             c7 = 3;
             throw value;
           } else if (arg0 === 2) {
             c7 = 3;
-            obj = { value, done: true };
-            return obj;
+            let obj8 = { value, done: true };
+            return obj8;
+          } else {
+            let tmp14 = closure_5;
+            guildChannels = value;
+            const str = "loadLateLazyCache: yielding to react";
+            const verboseResult1 = closure_133_13.verbose("loadLateLazyCache: yielding to react");
+            let num6;
+            const waitSafelyForPostTTI = closure_133_0(closure_133_2[29]).waitSafelyForPostTTI;
+            const tmp19 = closure_133_0(closure_133_2[29]);
+            let obj2 = closure_133_0(closure_133_2[30]);
+            if (obj2.isIOS()) {
+              num6 = 0;
+            }
+            c6 = 3;
+            c7 = 1;
+            let obj9 = { value: waitSafelyForPostTTI(num6), done: false };
+            return obj9;
           }
-          let tmp14 = closure_133_1;
+        } else if (arg0 === 1) {
+          c7 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c7 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
           const loadLazyCache = closure_133_1(closure_133_2[12]).loadLazyCache;
           loadLazyCache.recordStart();
+          let tmp10 = closure_133_5;
           socket = closure_133_5.getSocket();
+          let tmp11 = closure_133_26;
           closure_133_26(() => {
             if (false === closure_1_6) {
               closure_1(initialGuildId[21])("database:not_ok");
@@ -900,9 +892,9 @@ obj = function _loadLateLazyCache() {
           c7 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp20) {
+      } catch (tmp21) {
         c7 = 3;
-        throw tmp20;
+        throw tmp21;
       }
     }
   });
@@ -919,7 +911,7 @@ function resumeFluxAndSocket(arg0) {
     let dispatcher;
     let obj3;
     try {
-      f140512();
+      f140707();
       dispatcher = dispatcher.dispatcher;
       if (dispatcher.hasStuffToDispatchNow()) {
         let c2 = true;
@@ -1012,7 +1004,7 @@ class CacheStoreClass extends Store {
       }
       function dontLoadLateLazyCache() {
         let _true;
-        const f140512 = () => {
+        const f140707 = () => {
           obj = closure_1(c2[23]);
           return obj.dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
         };
@@ -1023,7 +1015,7 @@ class CacheStoreClass extends Store {
           let dispatcher;
           let obj3;
           try {
-            f140512();
+            f140707();
             dispatcher = dispatcher.dispatcher;
             if (dispatcher.hasStuffToDispatchNow()) {
               let c2 = true;
@@ -1111,7 +1103,7 @@ class CacheStoreClass extends Store {
                 closure_5 = undefined;
                 closure_6 = undefined;
                 closure_7 = undefined;
-                const obj13 = _setTimeout(closure_2[33]);
+                const obj13 = _setTimeout(closure_2[32]);
                 const callOnceResult = obj13.callOnce(tmp);
                 _setTimeout = callOnceResult;
                 const obj14 = tmp(closure_2[12]);
@@ -1148,7 +1140,7 @@ class CacheStoreClass extends Store {
                 } else {
                   c3 = 1;
                   id = id.getId();
-                  const obj15 = tmp(closure_2[34]);
+                  const obj15 = tmp(closure_2[33]);
                   closure_2 = obj15.carefullyOpenDatabase(id);
                   const loadMiniCache = tmp(closure_2[12]).loadMiniCache;
                   c4 = 2;

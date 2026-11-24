@@ -1,32 +1,32 @@
-// Module ID: 19062
-// Function ID: 19063
+// Module ID: 19104
+// Function ID: 19105
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 6689, 1386, 14993, 1071, 4759, 21, 4913, 575, 4974, 1628, 5127, 5141, 7515, 7554, 5929, 7022, 5504, 1112, 5511, 10139, 7024, 8194, 4935, 6691, 1412, 1186, 504, 14994, 7068, 4945, 4746, 2]
+// Dependencies: [32, 19, 17, 7336, 1386, 15032, 1071, 4763, 21, 4917, 575, 4978, 1628, 5131, 5145, 7381, 7421, 5989, 7612, 5508, 1112, 5515, 13928, 7614, 7968, 4939, 6052, 1412, 1186, 504, 15033, 7406, 4949, 4750, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 19062 (RobloxConnectionCoachmark)
+// Module 19104 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import dismissible_content from "dismissible_content" /* 4746 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import themes from "themes" /* 4935 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import PlatformsDefault from "Platforms" /* 6691 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7068 */;
-import openUserSettings from "openUserSettings" /* 8194 */;
+import dismissible_content from "dismissible_content" /* 4750 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import themes from "themes" /* 4939 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4949 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import PlatformsDefault from "Platforms" /* 6052 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7406 */;
+import openUserSettings from "openUserSettings" /* 7968 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6689 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7336 */;
 import UserStore from "UserStore" /* 1386 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14993 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15032 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -40,7 +40,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const authorizeConnectionDefault = tmp(7024);
+const authorizeConnectionDefault = tmp(7614);
 function RobloxIcon(theme) {
   let Icon;
   let items;
@@ -117,7 +117,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
     }
   }
   let tmp = closure_15();
-  let obj = markAsDismissed(4974);
+  let obj = markAsDismissed(4978);
   const theme = obj.useThemeContext().theme;
   const bottom = useSafeAreaInsetsDefault().bottom;
   let obj2 = {
@@ -129,32 +129,32 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
     },
     children: closure_14(Stack, obj4)
   };
-  const BottomSheet = markAsDismissed(5141).BottomSheet;
-  obj3 = { title: null, leading: closure_13(markAsDismissed(7554).ActionSheetCloseButton, { onPress: handleCancel }) };
-  BottomSheetTitleHeader = markAsDismissed(7515).BottomSheetTitleHeader;
+  const BottomSheet = markAsDismissed(5145).BottomSheet;
+  obj3 = { title: null, leading: closure_13(markAsDismissed(7421).ActionSheetCloseButton, { onPress: handleCancel }) };
+  BottomSheetTitleHeader = markAsDismissed(7381).BottomSheetTitleHeader;
   obj4 = { spacing: 24, style: { paddingBottom: bottom }, children: items1 };
-  Stack = markAsDismissed(5929).Stack;
+  Stack = markAsDismissed(5989).Stack;
   const obj5 = { justify: "center", align: "center", direction: "horizontal", children: items };
-  const Stack2 = markAsDismissed(5929).Stack;
+  const Stack2 = markAsDismissed(5989).Stack;
   items = [closure_13(RobloxIcon, { theme }), , ];
   const obj6 = { size: "md", color: nativeDefault.colors.ICON_MUTED, accessible: false };
-  const MoreHorizontalIcon = markAsDismissed(7022).MoreHorizontalIcon;
+  const MoreHorizontalIcon = markAsDismissed(7612).MoreHorizontalIcon;
   items[1] = closure_13(MoreHorizontalIcon, obj6);
   items[2] = closure_13(UserIcon, {});
   items1 = [closure_14(Stack2, obj5), , ];
   const obj7 = { justify: "center", children: items2 };
-  const Stack3 = markAsDismissed(5929).Stack;
+  const Stack3 = markAsDismissed(5989).Stack;
   const obj8 = { variant: "heading-xl/semibold", style: tmp.text, children: intl.string(markAsDismissed(1112).t.t3asUZ) };
-  const Text = markAsDismissed(5504).Text;
+  const Text = markAsDismissed(5508).Text;
   intl = markAsDismissed(1112).intl;
   items2 = [closure_13(Text, obj8), ];
   const obj9 = { variant: "body-md/medium", style: tmp.text, children: intl2.string(markAsDismissed(1112).t.no96NU) };
-  const Text2 = markAsDismissed(5504).Text;
+  const Text2 = markAsDismissed(5508).Text;
   intl2 = markAsDismissed(1112).intl;
   items2[1] = closure_13(Text2, obj9);
   items1[1] = closure_14(Stack3, obj7);
   const obj10 = { children: items3 };
-  const Stack4 = markAsDismissed(5929).Stack;
+  const Stack4 = markAsDismissed(5989).Stack;
   const obj11 = {
     text: intl3.string(markAsDismissed(1112).t.ItuabN),
     icon: closure_13(WindowLaunchIcon, obj12),
@@ -173,13 +173,13 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
       obj3.openUserSettings(obj4);
     }
   };
-  const Button = markAsDismissed(5511).Button;
+  const Button = markAsDismissed(5515).Button;
   intl3 = markAsDismissed(1112).intl;
   obj12 = { size: "sm", color: nativeDefault.colors.WHITE };
-  WindowLaunchIcon = markAsDismissed(10139).WindowLaunchIcon;
+  WindowLaunchIcon = markAsDismissed(13928).WindowLaunchIcon;
   items3 = [closure_13(Button, obj11), ];
   const obj13 = { text: intl4.string(markAsDismissed(1112).t.DiGJy3), variant: "secondary", size: "lg", onPress: handleCancel };
-  const Button2 = markAsDismissed(5511).Button;
+  const Button2 = markAsDismissed(5515).Button;
   intl4 = markAsDismissed(1112).intl;
   items3[1] = closure_13(Button2, obj13);
   items1[2] = closure_14(Stack4, obj10);

@@ -1,28 +1,28 @@
-// Module ID: 9209
-// Function ID: 9210
+// Module ID: 9089
+// Function ID: 9090
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 9108, 9109, 502, 2178, 8851, 9133, 8852, 1071, 5630, 1388, 21, 3, 8170, 572, 9210, 1250, 9211, 2168, 9117, 4726, 6360, 1255, 5861, 1112, 9212, 2119, 6429, 9100, 2]
+// Dependencies: [109, 5, 19, 17, 8973, 8974, 502, 2178, 8963, 9013, 8964, 1071, 5634, 1388, 21, 3, 8972, 572, 9090, 1250, 9091, 2168, 8982, 4730, 5680, 1255, 5921, 1112, 9092, 2119, 6004, 8961, 2]
 
-// Module 9209 (GPlayManager)
+// Module 9089 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PaymentConstants from "PaymentConstants" /* 5630 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6360 */;
-import ProductIds from "ProductIds" /* 8170 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9133 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9210 */;
+import PaymentConstants from "PaymentConstants" /* 5634 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5680 */;
+import premium_ProductIds from "premium/ProductIds" /* 8972 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9013 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9090 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 9108 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 9109 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 8973 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 8974 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
-import IAPStore from "IAPStore" /* 8851 */;
-import Constants_mod from "Constants" /* 8852 */;
+import IAPStore from "IAPStore" /* 8963 */;
+import Constants_mod from "Constants" /* 8964 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -789,7 +789,7 @@ let closure_26 = null;
 let closure_27 = null;
 let closure_28 = null;
 let closure_29 = null;
-const items = [ProductIds.ProductIds.PREMIUM_TIER_2_MONTHLY];
+const items = [premium_ProductIds.ProductIds.PREMIUM_TIER_2_MONTHLY];
 let obj2 = {
   giftInfoOptionsCache: obj,
   initialize() {

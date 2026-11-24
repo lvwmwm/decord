@@ -1,12 +1,12 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12873
+// Function ID: 12874
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [19, 10675, 1653, 12955, 5930, 1263, 2]
+// Dependencies: [19, 9947, 1653, 12874, 5990, 1263, 2]
 // Exports: useViewableAppLauncherHomeItems
 
-// Module 12954 (useViewableAppLauncherHomeItems)
+// Module 12873 (useViewableAppLauncherHomeItems)
 import react from "react" /* 19 */;
-import AppLauncherStore from "AppLauncherStore" /* 10675 */;
+import AppLauncherStore from "AppLauncherStore" /* 9947 */;
 import size from "module_2" /* 2 */;
 
 let viewableItems;

@@ -1,9 +1,12 @@
 // Module ID: 15349
 // Function ID: 15350
-// Dependencies: [15347]
+// Dependencies: [15348]
 
 // Module 15349
-import _mod15347 from "module_15347" /* 15347 */;
+import _mod15348 from "module_15348" /* 15348 */;
 
 
-export default (arg0, arg1, arg2) => _mod15347(arg0, arg1, "<", arg2);
+export default (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod15348(arg0, arg1, closure_0));
+};

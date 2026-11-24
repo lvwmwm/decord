@@ -1,22 +1,22 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8044
+// Function ID: 8045
 // Name: ThreadUtils
-// Dependencies: [109, 6619, 6552, 4847, 1111, 1071, 1112, 8292, 5650, 1255, 8507, 7480, 1404, 504, 11, 2168, 2]
+// Dependencies: [109, 6806, 6041, 4851, 1111, 1071, 1112, 8045, 5887, 1255, 8028, 7345, 1404, 504, 11, 2168, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 8518 (ThreadUtils)
+// Module 8044 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
-import getTimestampStringDefault from "getTimestampString" /* 8292 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8507 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8028 */;
+import getTimestampStringDefault from "getTimestampString" /* 8045 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 6619 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
+import ReadStateStore from "ReadStateStore" /* 6806 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6041 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4851 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(7480);
+const NotificationSettingsUtils = tmp(7345);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };

@@ -1,11 +1,11 @@
-// Module ID: 11680
-// Function ID: 11681
+// Module ID: 11567
+// Function ID: 11568
 // Name: SavedMessagesTypes
-// Dependencies: [5966, 2]
+// Dependencies: [6267, 2]
 // Exports: getSavedMessagesRawMessages, savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 11680 (SavedMessagesTypes)
-import MessageRecordUtils from "MessageRecordUtils" /* 5966 */;
+// Module 11567 (SavedMessagesTypes)
+import MessageRecordUtils from "MessageRecordUtils" /* 6267 */;
 import size from "module_2" /* 2 */;
 
 let message;

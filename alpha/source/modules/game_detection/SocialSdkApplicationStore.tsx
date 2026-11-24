@@ -1,9 +1,9 @@
-// Module ID: 6922
-// Function ID: 6923
+// Module ID: 7530
+// Function ID: 7531
 // Name: SocialSdkApplicationStore
 // Dependencies: [32, 1343, 504, 572, 2]
 
-// Module 6922 (SocialSdkApplicationStore)
+// Module 7530 (SocialSdkApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

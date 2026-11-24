@@ -1,10 +1,10 @@
-// Module ID: 13533
-// Function ID: 13534
+// Module ID: 13439
+// Function ID: 13440
 // Name: getTabItemA11yName
 // Dependencies: [1112, 2223, 2]
 // Exports: getTabItemA11yName
 
-// Module 13533 (getTabItemA11yName)
+// Module 13439 (getTabItemA11yName)
 import intl4 from "intl" /* 1112 */;
 import _modDef2223 from "module_2223" /* 2223 */;
 import size from "module_2" /* 2 */;

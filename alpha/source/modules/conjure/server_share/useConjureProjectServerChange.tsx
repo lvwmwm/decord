@@ -1,16 +1,16 @@
-// Module ID: 18294
-// Function ID: 18295
+// Module ID: 18333
+// Function ID: 18334
 // Name: useConjureProjectServerChange
-// Dependencies: [5, 32, 19, 6621, 18295, 504, 6838, 6933, 12394, 18296, 1112, 4190, 18297, 2]
+// Dependencies: [5, 32, 19, 6808, 18334, 504, 7449, 7541, 12293, 18335, 1112, 4192, 18336, 2]
 // Exports: default, useConjureProjectServerCandidates
 
-// Module 18294 (useConjureProjectServerChange)
-import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
-import conjureChangeRows from "conjureChangeRows" /* 18296 */;
+// Module 18333 (useConjureProjectServerChange)
+import ConjureActionCreators from "ConjureActionCreators" /* 7541 */;
+import conjureChangeRows from "conjureChangeRows" /* 18335 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12404
+// Function ID: 12405
 // Name: onTapCheckpointCard
-// Dependencies: [5, 4762, 6340, 12126, 12497, 2]
+// Dependencies: [5, 4766, 6643, 12405, 12412, 2]
 // Exports: onTapCheckpointCard
 
-// Module 12496 (onTapCheckpointCard)
+// Module 12404 (onTapCheckpointCard)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _onTapCheckpointCard() {

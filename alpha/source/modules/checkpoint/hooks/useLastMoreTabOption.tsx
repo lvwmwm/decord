@@ -1,11 +1,11 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12713
+// Function ID: 12714
 // Name: useLastMoreTabOption
-// Dependencies: [32, 19, 6336, 2]
+// Dependencies: [32, 19, 6639, 2]
 // Exports: default
 
-// Module 12794 (useLastMoreTabOption)
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6336 */;
+// Module 12713 (useLastMoreTabOption)
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6639 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

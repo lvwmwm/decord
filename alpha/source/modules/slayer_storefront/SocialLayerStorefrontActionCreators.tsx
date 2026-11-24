@@ -1,17 +1,17 @@
-// Module ID: 9408
-// Function ID: 9409
+// Module ID: 9267
+// Function ID: 9268
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 8925, 6849, 1071, 1088, 572, 6847, 9320, 1284, 2152, 559, 2]
+// Dependencies: [5, 9171, 7464, 1071, 1088, 572, 7462, 9172, 1284, 2152, 559, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 9408 (SocialLayerStorefrontActionCreators)
+// Module 9267 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8925 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6849 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9171 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7464 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -657,7 +657,8 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
 };
 obj = function _fetchSocialLayerStorefrontConfig() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj11;
+    let obj10;
+    let obj13;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -696,14 +697,11 @@ obj = function _fetchSocialLayerStorefrontConfig() {
                   const _Date2 = Date;
                 }
                 c3 = 1;
-                const obj7 = DispatcherDefault;
-                obj7.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_START" });
-                const HTTP = require("HTTPUtils").HTTP;
-                const obj5 = { url: constants.SOCIAL_LAYER_STOREFRONT_CONFIG, rejectWithError: true };
                 c4 = 2;
                 c5 = 1;
-                const obj8 = { value: HTTP.get(obj5), done: false };
-                return obj8;
+                const obj5 = { value: obj10.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_START" }), done: false };
+                obj10 = DispatcherDefault;
+                return obj5;
               } else {
                 const _Date = Date;
               }
@@ -711,16 +709,33 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           }
         } else if (1 === c4) {
           c3 = 0;
-          const obj6 = closure_130_1(closure_130_2[5]);
-          obj6.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_FAILURE" });
+          const obj9 = closure_130_1(closure_130_2[5]);
+          obj9.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_FAILURE" });
+        } else if (2 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            const HTTP = closure_130_0(closure_130_2[8]).HTTP;
+            const obj7 = { url: closure_130_6.SOCIAL_LAYER_STOREFRONT_CONFIG, rejectWithError: true, retries: 3 };
+            c4 = 3;
+            c5 = 1;
+            const obj8 = { value: HTTP.get(obj7), done: false };
+            return obj8;
+          }
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
         } else if (arg0 === 2) {
           c3 = 0;
           c5 = 3;
-          const obj9 = { value, done: true };
-          return obj9;
+          const obj11 = { value, done: true };
+          return obj11;
         } else {
           body = value.body;
           storefronts = body.storefronts;
@@ -745,10 +760,10 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           if (null != body.announcement_modal_config) {
             obj = { version: body.announcement_modal_config.version, applicationId: body.announcement_modal_config.application_id };
           }
-          const obj10 = { type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_SUCCESS", config: obj11 };
-          obj11 = { promotionalSkuIds: body.promotional_sku_ids, storefronts, announcementModalConfig: obj };
+          const obj12 = { type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_SUCCESS", config: obj13 };
+          obj13 = { promotionalSkuIds: body.promotional_sku_ids, storefronts, announcementModalConfig: obj };
           const obj2 = closure_130_1(closure_130_2[5]);
-          obj2.dispatch(obj10);
+          obj2.dispatch(obj12);
           c3 = 0;
         }
         c5 = 3;

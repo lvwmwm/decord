@@ -1,13 +1,13 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 8523
+// Function ID: 8524
 // Name: VerifiedKeyStore
-// Dependencies: [9692, 504, 11, 572, 2]
+// Dependencies: [8524, 504, 11, 572, 2]
 
-// Module 9691 (VerifiedKeyStore)
+// Module 8523 (VerifiedKeyStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import _mod9692 from "module_9692" /* 9692 */;
+import _mod8524 from "module_8524" /* 8524 */;
 import size from "module_2" /* 2 */;
 
 let users = {};
@@ -26,7 +26,7 @@ class VerifiedKeyStore extends PersistedStore {
     return { users };
   }
   getKeyTrustedAt(arg0, uint8Array) {
-    const obj = _mod9692;
+    const obj = _mod8524;
     let tmp2;
     if (users[arg0] != null) {
       tmp2 = tmp[obj.serializeKey(obj, uint8Array)];
@@ -58,7 +58,7 @@ let obj = {
     }
     users[userId] = obj;
     const uint8Array = new Uint8Array(key);
-    const obj2 = _mod9692;
+    const obj2 = _mod8524;
     const serializeKeyResult = obj2.serializeKey(uint8Array);
     obj[serializeKeyResult] = Date.now();
   },

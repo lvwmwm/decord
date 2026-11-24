@@ -1,15 +1,15 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 14175
+// Function ID: 14176
 // Name: CallStateHooks
-// Dependencies: [6620, 502, 6627, 5654, 1071, 5563, 504, 10853, 2]
+// Dependencies: [6807, 502, 6814, 5725, 1071, 5567, 504, 10128, 2]
 // Exports: default
 
-// Module 14874 (CallStateHooks)
-import CallConstants from "CallConstants" /* 5563 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+// Module 14175 (CallStateHooks)
+import CallConstants from "CallConstants" /* 5567 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6627 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import CallStore from "CallStore" /* 6814 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ export default function _default() {
   }, items1);
   const participants = stateFromStores.getParticipants(tmp);
   let found = participants.filter((type) => type.type !== ParticipantTypes.ACTIVITY && type.user.id !== id);
-  const tmp3 = id(10853)();
+  const tmp3 = id(10128)();
   dependencyMap = tmp3;
   obj2 = require("get initialized");
   const items2 = [RTCConnectionStore];

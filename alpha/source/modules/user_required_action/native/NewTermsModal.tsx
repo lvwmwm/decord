@@ -1,26 +1,26 @@
-// Module ID: 19692
-// Function ID: 19693
+// Module ID: 19735
+// Function ID: 19736
 // Name: NewTermsModal
-// Dependencies: [5, 32, 19, 17, 4756, 1071, 21, 4913, 575, 7550, 1112, 6425, 1628, 7101, 5924, 6954, 5930, 1263, 5504, 5511, 8042, 8028, 2]
+// Dependencies: [5, 32, 19, 17, 4760, 1071, 21, 4917, 575, 7417, 1112, 6713, 1628, 7071, 5984, 6008, 5990, 1263, 5508, 5515, 12324, 8484, 2]
 // Exports: default
 
-// Module 19692 (NewTermsModal)
+// Module 19735 (NewTermsModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 5930 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6425 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7550 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8028 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8042 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 5990 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6713 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7417 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8484 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 12324 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4756 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4760 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap;
@@ -106,8 +106,8 @@ export default function NewTermsModal() {
   const bottom = rect.bottom;
   const memo = react.useMemo(() => action.getAction(), []);
   [first, importDefault] = react.useState(false);
-  let obj = memo(7101);
-  obj.useNavigatorBackPressHandler(memo(5924).BackPressHandler.minimize);
+  let obj = memo(7071);
+  obj.useNavigatorBackPressHandler(memo(5984).BackPressHandler.minimize);
   dependencyMap = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     let closure_0;
     if (c3 === 2) {
@@ -175,36 +175,36 @@ export default function NewTermsModal() {
     const obj6 = { style: null, contentContainerStyle: null, onTouchStart: handleTouch, children: items1 };
     ({ scrollView: obj5.style, contentContainer: obj5.contentContainerStyle } = tmp);
     const obj7 = { maxFontSizeMultiplier: 2, variant: "heading-xxl/semibold", children: intl.string(memo(1112).t["7glvXu"]) };
-    const Text = tmp7(5504).Text;
+    const Text = tmp7(5508).Text;
     intl = tmp7(1112).intl;
     items1 = [closure_12(Text, obj7), , , , , , ];
     const obj8 = { variant: "body-md/normal", style: tmp.description, children: intl2.format(memo(1112).t.CN0Hvb, obj9) };
-    const Text2 = tmp7(5504).Text;
+    const Text2 = tmp7(5508).Text;
     intl2 = tmp7(1112).intl;
     obj9 = { url: constants.TERMS_SUMMARY };
     items1[1] = closure_12(Text2, obj8);
     const obj10 = { variant: "body-md/normal", children: intl3.format(memo(1112).t.iw0hFi, obj11) };
-    const Text3 = tmp7(5504).Text;
+    const Text3 = tmp7(5508).Text;
     intl3 = tmp7(1112).intl;
     obj11 = { url: constants.TERMS };
     items1[2] = closure_12(Text3, obj10);
     const obj12 = { variant: "body-md/normal", children: intl4.format(memo(1112).t["36klnD"], obj13) };
-    const Text4 = tmp7(5504).Text;
+    const Text4 = tmp7(5508).Text;
     intl4 = tmp7(1112).intl;
     obj13 = { url: constants.PAID_TERMS };
     items1[3] = closure_12(Text4, obj12);
     const obj14 = { variant: "body-md/normal", children: intl5.format(memo(1112).t.TquFBF, obj15) };
-    const Text5 = tmp7(5504).Text;
+    const Text5 = tmp7(5508).Text;
     intl5 = tmp7(1112).intl;
     obj15 = { url: constants.PRIVACY };
     items1[4] = closure_12(Text5, obj14);
     const obj16 = { variant: "body-md/normal", children: intl6.format(memo(1112).t.ia96Tb, obj17) };
-    const Text6 = tmp7(5504).Text;
+    const Text6 = tmp7(5508).Text;
     intl6 = tmp7(1112).intl;
     obj17 = { url: constants.GUIDELINES };
     items1[5] = closure_12(Text6, obj16);
     const obj18 = { variant: "body-md/normal", style: tmp.agreementDescription, children: intl7.string(memo(1112).t["+USXQE"]) };
-    const Text7 = tmp7(5504).Text;
+    const Text7 = tmp7(5508).Text;
     intl7 = tmp7(1112).intl;
     items1[6] = closure_12(Text7, obj18);
     items2 = [closure_13(closure_8, obj6), , ];
@@ -218,7 +218,7 @@ export default function NewTermsModal() {
         },
       text: intl8.string(memo(1112).t["+TBKL1"])
     };
-    Button = tmp7(5511).Button;
+    Button = tmp7(5515).Button;
     intl8 = tmp7(1112).intl;
     items2[1] = closure_12(closure_6, obj19);
     const obj21 = { style: items3, source: AssetRegistryDefault, color: tmp.navbarRight.tintColor, onPress: handleMoreActions, accessibilityRole: "button", accessibilityLabel: intl9.string(memo(1112).t["UKOtz+"]) };

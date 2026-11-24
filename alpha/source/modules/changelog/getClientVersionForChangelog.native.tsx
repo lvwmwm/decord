@@ -1,11 +1,11 @@
-// Module ID: 19457
-// Function ID: 19458
+// Module ID: 19499
+// Function ID: 19500
 // Name: react-native
-// Dependencies: [19458, 2]
+// Dependencies: [19500, 2]
 // Exports: getClientVersionForChangelog
 
-// Module 19457 (react-native)
-import react_native from "react-native" /* 19458 */;
+// Module 19499 (react-native)
+import react_native from "react-native" /* 19500 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/changelog/getClientVersionForChangelog.native.tsx");

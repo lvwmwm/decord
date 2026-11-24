@@ -1,15 +1,15 @@
-// Module ID: 12717
-// Function ID: 12718
+// Module ID: 12637
+// Function ID: 12638
 // Name: useCheckpointCharacterGradientFadeIn
-// Dependencies: [32, 19, 4914, 5969, 504, 6338, 12718, 2]
+// Dependencies: [32, 19, 4918, 6270, 504, 6641, 12638, 2]
 // Exports: useCheckpointCharacterGradientFadeIn
 
-// Module 12717 (useCheckpointCharacterGradientFadeIn)
-import _mod12718 from "module_12718" /* 12718 */;
+// Module 12637 (useCheckpointCharacterGradientFadeIn)
+import _mod12638 from "module_12638" /* 12638 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import CheckpointConstants from "CheckpointConstants" /* 5969 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import CheckpointConstants from "CheckpointConstants" /* 6270 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap;
@@ -30,7 +30,7 @@ export function useCheckpointCharacterGradientFadeIn(dataBinding) {
   let obj = dataBinding(504);
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp2 = stage === dataBinding(6338).CheckpointCharacterStage.INTRODUCTION && !stateFromStores;
+  const tmp2 = stage === dataBinding(6641).CheckpointCharacterStage.INTRODUCTION && !stateFromStores;
   dependencyMap = tmp2;
   let num = 1;
   let num2 = 1;
@@ -58,7 +58,7 @@ export function useCheckpointCharacterGradientFadeIn(dataBinding) {
       let _requestAnimationFrame = requestAnimationFrame;
       function handleAnimationFrame() {
         const bound = Math.max(Math.min(Date.now() - closure_0, hasOwnProperty), 0);
-        const obj = _mod12718;
+        const obj = _mod12638;
         closure_3(obj.easeOutCubic(bound, 0, 1, hasOwnProperty));
         if (bound < hasOwnProperty) {
           const _requestAnimationFrame = requestAnimationFrame;

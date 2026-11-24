@@ -1,22 +1,22 @@
-// Module ID: 17611
-// Function ID: 17612
+// Module ID: 17649
+// Function ID: 17650
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2188, 1386, 16701, 1071, 21, 4913, 575, 1186, 9023, 504, 12387, 7575, 7571, 1255, 7568, 1412, 14684, 16702, 7038, 5504, 2025, 5600, 1112, 2]
+// Dependencies: [19, 17, 2188, 1386, 16735, 1071, 21, 4917, 575, 1186, 9279, 504, 12286, 8325, 8462, 1255, 8472, 1412, 8461, 16736, 7029, 5508, 2025, 5604, 1112, 2]
 
-// Module 17611 (HappeningNowCardEvent)
+// Module 17649 (HappeningNowCardEvent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7568 */;
-import ClipView from "ClipView" /* 9023 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8472 */;
+import ClipView from "ClipView" /* 9279 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import UserStore from "UserStore" /* 1386 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16735 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let HAPPENING_NOW_EVENT_BANNER_WIDTH;
@@ -126,7 +126,7 @@ const memoResult = react.memo(function HappeningNowCardEvent(event) {
       tmp5 = items;
     }
     track(ACTIVITY_CARD_CLICKED, obj);
-    const obj2 = GuildScheduledEventModalActionCreators;
+    const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
     const obj3 = { eventId: event.id, event };
     const result = obj2.openGuildEventDetails(obj3);
   }, items4);

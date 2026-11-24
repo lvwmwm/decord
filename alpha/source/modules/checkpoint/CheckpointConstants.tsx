@@ -1,28 +1,28 @@
-// Module ID: 5969
-// Function ID: 5970
+// Module ID: 6270
+// Function ID: 6271
 // Name: CheckpointConstants
-// Dependencies: [3440, 5970, 2]
+// Dependencies: [3442, 6271, 2]
 
-// Module 5969 (CheckpointConstants)
-import _modDef3440 from "module_3440" /* 3440 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5970 */;
+// Module 6270 (CheckpointConstants)
+import _modDef3442 from "module_3442" /* 3442 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6271 */;
 import size from "module_2" /* 2 */;
 
-const items = [{ list: "gamesByPlayers", label: _modDef3440.b4s18j }, , , ];
-({ list: "gamesByPlayers", label: _modDef3440.b4s18j });
-items[1] = { list: "newGamesByPlayers", label: _modDef3440.DcxpNj };
-({ list: "newGamesByPlayers", label: _modDef3440.DcxpNj });
-items[2] = { list: "indieGamesByPlayers", label: _modDef3440.OAUTki };
-({ list: "indieGamesByPlayers", label: _modDef3440.OAUTki });
-items[3] = { list: "gamesByStreamWatchMinutes", label: _modDef3440.M1L00s };
+const items = [{ list: "gamesByPlayers", label: _modDef3442.b4s18j }, , , ];
+({ list: "gamesByPlayers", label: _modDef3442.b4s18j });
+items[1] = { list: "newGamesByPlayers", label: _modDef3442.DcxpNj };
+({ list: "newGamesByPlayers", label: _modDef3442.DcxpNj });
+items[2] = { list: "indieGamesByPlayers", label: _modDef3442.OAUTki };
+({ list: "indieGamesByPlayers", label: _modDef3442.OAUTki });
+items[3] = { list: "gamesByStreamWatchMinutes", label: _modDef3442.M1L00s };
 const obj5 = {};
-({ list: "gamesByStreamWatchMinutes", label: _modDef3440.M1L00s });
-obj5[CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT] = _modDef3440.bP4GV1;
-obj5[CheckpointTraitRarity.CheckpointTraitRarity.COMMON] = _modDef3440.QwkKWr;
-obj5[CheckpointTraitRarity.CheckpointTraitRarity.RARE] = _modDef3440.KLmNgL;
-obj5[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3440.hAmdLZ;
-obj5[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3440.Tv4xyf;
-obj5[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3440["0ModIv"];
+({ list: "gamesByStreamWatchMinutes", label: _modDef3442.M1L00s });
+obj5[CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT] = _modDef3442.bP4GV1;
+obj5[CheckpointTraitRarity.CheckpointTraitRarity.COMMON] = _modDef3442.QwkKWr;
+obj5[CheckpointTraitRarity.CheckpointTraitRarity.RARE] = _modDef3442.KLmNgL;
+obj5[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3442.hAmdLZ;
+obj5[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3442.Tv4xyf;
+obj5[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3442["0ModIv"];
 const items1 = [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
 const items2 = [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointConstants.tsx");

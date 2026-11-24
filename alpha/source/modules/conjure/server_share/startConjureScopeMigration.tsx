@@ -1,18 +1,18 @@
-// Module ID: 18297
-// Function ID: 18298
+// Module ID: 18336
+// Function ID: 18337
 // Name: startConjureScopeMigration
-// Dependencies: [5, 6980, 4, 4190, 8447, 18298, 5662, 6940, 13494, 1112, 2]
+// Dependencies: [5, 7576, 4, 4192, 9929, 18337, 5701, 7548, 13420, 1112, 2]
 // Exports: default
 
-// Module 18297 (startConjureScopeMigration)
+// Module 18336 (startConjureScopeMigration)
 import logger_Logger from "logger/Logger" /* 4 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import createNonce from "createNonce" /* 8447 */;
-import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13494 */;
-import conjureSendToProject from "conjureSendToProject" /* 18298 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import createNonce from "createNonce" /* 9929 */;
+import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13420 */;
+import conjureSendToProject from "conjureSendToProject" /* 18337 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7576 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_4, err;
@@ -132,7 +132,7 @@ let obj = function _sendMigrationMessage() {
   return obj(...arguments);
 };
 const logger = new logger_Logger.Logger("startConjureScopeMigration");
-obj = { added: _modDef4190.YXmrDJ, removed: _modDef4190.OYaecm };
+obj = { added: _modDef4192.YXmrDJ, removed: _modDef4192.OYaecm };
 const result = size.fileFinishedImporting("modules/conjure/server_share/startConjureScopeMigration.tsx");
 
 export default function startConjureScopeMigration(id, arg1) {

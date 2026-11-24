@@ -1,12 +1,12 @@
-// Module ID: 14551
-// Function ID: 14552
+// Module ID: 14820
+// Function ID: 14821
 // Name: ConjureServerWidgetStore
-// Dependencies: [6622, 504, 572, 2]
+// Dependencies: [6809, 504, 572, 2]
 
-// Module 14551 (ConjureServerWidgetStore)
+// Module 14820 (ConjureServerWidgetStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6809 */;
 import size from "module_2" /* 2 */;
 
 function offersServerWidget(install_scope) {

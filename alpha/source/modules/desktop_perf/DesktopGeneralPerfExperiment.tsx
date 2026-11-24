@@ -1,10 +1,10 @@
-// Module ID: 5774
-// Function ID: 5775
+// Module ID: 5835
+// Function ID: 5836
 // Name: DesktopGeneralPerfExperiment
 // Dependencies: [1450, 1378, 2]
 // Exports: getDesktopGeneralPerfExperimentConfig, getIsQuestRingVisibleStepsEnabled
 
-// Module 5774 (DesktopGeneralPerfExperiment)
+// Module 5835 (DesktopGeneralPerfExperiment)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;

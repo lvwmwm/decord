@@ -1,20 +1,20 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16099
+// Function ID: 16100
 // Name: AccountRemove2faSetting
-// Dependencies: [5, 17, 8712, 21, 560, 16067, 1262, 16068, 1112, 5860, 16062, 11937, 15980, 2]
+// Dependencies: [5, 17, 9414, 21, 560, 16100, 1262, 16101, 1112, 5920, 16095, 11815, 16013, 2]
 
-// Module 16066 (AccountRemove2faSetting)
+// Module 16099 (AccountRemove2faSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1112 */;
 import react_native2 from "react-native" /* 1262 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 15980 */;
-import account_MFAUtils from "account/MFAUtils" /* 16067 */;
-import MfaFactorUtils from "MfaFactorUtils" /* 16068 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 16013 */;
+import account_MFAUtils from "account/MFAUtils" /* 16100 */;
+import MfaFactorUtils from "MfaFactorUtils" /* 16101 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_560 from "module_560" /* 560 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -25,7 +25,7 @@ let obj = function _remove2FA() {
     let intl2;
     let intl3;
     let obj10;
-    const f138421 = () => closure_1_6.setState({ isCheckingLastFactor: false });
+    const f138635 = () => closure_1_6.setState({ isCheckingLastFactor: false });
     if (c5 === 2) {
       c5 = 3;
       const str = "Generator functions may not be called on executing generators";
@@ -70,7 +70,7 @@ let obj = function _remove2FA() {
         } else if (1 === tmp4) {
           c3 = 0;
           let obj4 = closure_129_0(closure_129_2[6]);
-          const batchUpdatesResult1 = obj4.batchUpdates(f138421);
+          const batchUpdatesResult1 = obj4.batchUpdates(f138635);
           throw closure_2;
         } else if (arg0 === 1) {
           c5 = 3;
@@ -78,7 +78,7 @@ let obj = function _remove2FA() {
         } else if (arg0 === 2) {
           c3 = 0;
           let obj2 = closure_129_0(closure_129_2[6]);
-          const batchUpdatesResult2 = obj2.batchUpdates(f138421);
+          const batchUpdatesResult2 = obj2.batchUpdates(f138635);
           c5 = 3;
           let obj7 = { value, done: true };
           return obj7;
@@ -86,7 +86,7 @@ let obj = function _remove2FA() {
           closure_0 = value;
           c3 = 0;
           let obj8 = closure_129_0(closure_129_2[6]);
-          const batchUpdatesResult3 = obj8.batchUpdates(f138421);
+          const batchUpdatesResult3 = obj8.batchUpdates(f138635);
           const t = closure_129_0(closure_129_2[8]).t;
           if (closure_0) {
             EA4ZEk = t.xlA7Tl;
@@ -108,7 +108,7 @@ let obj = function _remove2FA() {
           intl3 = closure_129_0(closure_129_2[8]).intl;
           closure_1 = closure_129_3(async (arg0, value) => {
             let obj6;
-            const f141680 = () => closure_1_6.setState({ isCheckingLastFactor: false });
+            const f141896 = () => closure_1_6.setState({ isCheckingLastFactor: false });
             if (c5 === 2) {
               c5 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
@@ -145,7 +145,7 @@ let obj = function _remove2FA() {
                 } else if (1 === tmp4) {
                   c3 = 0;
                   const obj4 = tmp(closure_2[6]);
-                  obj4.batchUpdates(f141680);
+                  obj4.batchUpdates(f141896);
                   throw closure_2;
                 } else if (arg0 === 1) {
                   c5 = 3;
@@ -153,14 +153,14 @@ let obj = function _remove2FA() {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   const obj2 = tmp(closure_2[6]);
-                  obj2.batchUpdates(f141680);
+                  obj2.batchUpdates(f141896);
                   c5 = 3;
                   const obj9 = { value, done: true };
                   return obj9;
                 } else {
                   c3 = 0;
                   obj = tmp(closure_2[6]);
-                  obj.batchUpdates(f141680);
+                  obj.batchUpdates(f141896);
                   c5 = 3;
                   return { value: "HermesInternal", done: null };
                 }

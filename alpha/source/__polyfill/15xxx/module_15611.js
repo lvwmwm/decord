@@ -1,11 +1,18 @@
 // Module ID: 15611
 // Function ID: 15612
-// Dependencies: [15612, 15619]
+// Dependencies: [15584]
 
 // Module 15611
-import _mod15612 from "module_15612" /* 15612 */;
-import _mod15619 from "module_15619" /* 15619 */;
+import _mod15584 from "module_15584" /* 15584 */;
 
 
-export const URL = _mod15612;
-export const URLSearchParams = _mod15619;
+export default function(arg0) {
+  if (_mod15584(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp3 = new TypeError(String(arg0) + " is not an object");
+    throw tmp3;
+  }
+};

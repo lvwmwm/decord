@@ -1,8 +1,8 @@
-// Module ID: 6131
-// Function ID: 6132
+// Module ID: 6434
+// Function ID: 6435
 // Dependencies: [2]
 
-// Module 6131
+// Module 6434
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/camper_swamp.png.js");

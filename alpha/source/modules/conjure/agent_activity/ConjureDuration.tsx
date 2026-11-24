@@ -1,12 +1,12 @@
-// Module ID: 12328
-// Function ID: 12329
+// Module ID: 11338
+// Function ID: 11339
 // Name: ConjureDuration
-// Dependencies: [1112, 4190, 2]
+// Dependencies: [1112, 4192, 2]
 // Exports: describeDuration, describeElapsedLabel, describeTurnDuration, formatElapsed
 
-// Module 12328 (ConjureDuration)
+// Module 11338 (ConjureDuration)
 import intl4 from "intl" /* 1112 */;
-import _modDef4190 from "module_4190" /* 4190 */;
+import _modDef4192 from "module_4192" /* 4192 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureDuration.tsx");
@@ -16,7 +16,7 @@ export function describeDuration(durationMs) {
   if (bound < 60) {
     const intl3 = intl4.intl;
     const obj = { count: bound };
-    return intl3.formatToPlainString(_modDef4190["Cn+5go"], obj);
+    return intl3.formatToPlainString(_modDef4192["Cn+5go"], obj);
   } else {
     let formatToPlainStringResult;
     const _Math2 = Math;
@@ -24,13 +24,13 @@ export function describeDuration(durationMs) {
     if (rounded < 60) {
       const intl2 = intl4.intl;
       const obj2 = { count: rounded };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef4190.lUCXD2, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef4192.lUCXD2, obj2);
     } else {
       const intl = intl4.intl;
       const formatToPlainString = intl.formatToPlainString;
       const time = { hours: Math.floor(rounded / 60), minutes: rounded % 60 };
       const _Math = Math;
-      const Y1OsON = _modDef4190.Y1OsON;
+      const Y1OsON = _modDef4192.Y1OsON;
       formatToPlainStringResult = formatToPlainString(Y1OsON, time);
     }
     return formatToPlainStringResult;
@@ -41,7 +41,7 @@ export function describeTurnDuration(durationMs) {
   if (bound < 60) {
     const intl3 = intl4.intl;
     const obj = { count: bound };
-    return intl3.formatToPlainString(_modDef4190.yUXWd9, obj);
+    return intl3.formatToPlainString(_modDef4192.yUXWd9, obj);
   } else {
     let formatToPlainStringResult;
     const _Math2 = Math;
@@ -49,13 +49,13 @@ export function describeTurnDuration(durationMs) {
     if (rounded < 60) {
       const intl2 = intl4.intl;
       const obj2 = { count: rounded };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef4190.v7Gf5b, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef4192.v7Gf5b, obj2);
     } else {
       const intl = intl4.intl;
       const formatToPlainString = intl.formatToPlainString;
       const time = { hours: Math.floor(rounded / 60), minutes: rounded % 60 };
       const _Math = Math;
-      const kyqrd4 = _modDef4190.kyqrd4;
+      const kyqrd4 = _modDef4192.kyqrd4;
       formatToPlainStringResult = formatToPlainString(kyqrd4, time);
     }
     return formatToPlainStringResult;
@@ -75,15 +75,15 @@ export function formatElapsed(conjureElapsedMs) {
   if (rounded > 0) {
     const intl3 = intl4.intl;
     const time = { hours: rounded, minutes: result, seconds: result1 };
-    formatToPlainStringResult = intl3.formatToPlainString(_modDef4190["rIbuN/"], time);
+    formatToPlainStringResult = intl3.formatToPlainString(_modDef4192["rIbuN/"], time);
   } else if (0 < result) {
     const intl2 = intl4.intl;
     const time1 = { minutes: result, seconds: result1 };
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef4190["/D79R7"], time1);
+    formatToPlainStringResult = intl2.formatToPlainString(_modDef4192["/D79R7"], time1);
   } else {
     const intl = intl4.intl;
     const obj = { seconds: result1 };
-    formatToPlainStringResult = intl.formatToPlainString(_modDef4190.KrqS00, obj);
+    formatToPlainStringResult = intl.formatToPlainString(_modDef4192.KrqS00, obj);
   }
   return formatToPlainStringResult;
 }
@@ -100,14 +100,14 @@ export function describeElapsedLabel(conjureElapsedMs) {
   if (rounded > 0) {
     const intl3 = intl4.intl;
     const time = { hours: rounded, minutes: result };
-    formatToPlainStringResult = intl3.formatToPlainString(_modDef4190.HEBIhT, time);
+    formatToPlainStringResult = intl3.formatToPlainString(_modDef4192.HEBIhT, time);
   } else if (0 < result) {
     const intl2 = intl4.intl;
     const obj = { minutes: result };
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef4190.vvpiqt, obj);
+    formatToPlainStringResult = intl2.formatToPlainString(_modDef4192.vvpiqt, obj);
   } else {
     const intl = intl4.intl;
-    formatToPlainStringResult = intl.string(_modDef4190.dCg2BH);
+    formatToPlainStringResult = intl.string(_modDef4192.dCg2BH);
   }
   return formatToPlainStringResult;
 }

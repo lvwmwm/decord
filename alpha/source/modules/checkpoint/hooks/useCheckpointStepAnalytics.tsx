@@ -1,13 +1,13 @@
-// Module ID: 12504
-// Function ID: 12505
+// Module ID: 12420
+// Function ID: 12421
 // Name: useCheckpointStepAnalytics
-// Dependencies: [19, 12127, 12126, 5474, 2]
+// Dependencies: [19, 12406, 12405, 5478, 2]
 // Exports: useCheckpointCloseAnalytics, useCheckpointStepAnalytics
 
-// Module 12504 (useCheckpointStepAnalytics)
-import useMountEffect from "useMountEffect" /* 5474 */;
-import Tracking from "Tracking" /* 12126 */;
-import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 12127 */;
+// Module 12420 (useCheckpointStepAnalytics)
+import useMountEffect from "useMountEffect" /* 5478 */;
+import Tracking from "Tracking" /* 12405 */;
+import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 12406 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 11983
-// Function ID: 11984
+// Module ID: 11866
+// Function ID: 11867
 // Name: ChannelLatestMessageLoadingStatsManager
-// Dependencies: [1071, 8259, 2]
+// Dependencies: [1071, 8034, 2]
 
-// Module 11983 (ChannelLatestMessageLoadingStatsManager)
+// Module 11866 (ChannelLatestMessageLoadingStatsManager)
 import Constants from "Constants" /* 1071 */;
-import Clickstream from "Clickstream" /* 8259 */;
+import Clickstream from "Clickstream" /* 8034 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

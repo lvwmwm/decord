@@ -1,8 +1,8 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 14659
+// Function ID: 14660
 // Dependencies: [2]
 
-// Module 14829
+// Module 14659
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HoldingGemSpotIllustration-3x.png.js");

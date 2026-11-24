@@ -1,10 +1,10 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 8993
+// Function ID: 8994
 // Name: useInterval
 // Dependencies: [19, 38, 2]
 // Exports: default
 
-// Module 8957 (useInterval)
+// Module 8993 (useInterval)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

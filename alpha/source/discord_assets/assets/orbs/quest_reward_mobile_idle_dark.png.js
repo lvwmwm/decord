@@ -1,8 +1,8 @@
-// Module ID: 13761
-// Function ID: 13762
+// Module ID: 13671
+// Function ID: 13672
 // Dependencies: [2]
 
-// Module 13761
+// Module 13671
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/quest_reward_mobile_idle_dark.png.js");

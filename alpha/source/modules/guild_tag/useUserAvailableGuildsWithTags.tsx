@@ -1,13 +1,13 @@
-// Module ID: 15906
-// Function ID: 15907
+// Module ID: 15947
+// Function ID: 15948
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [4825, 4784, 504, 7999, 2]
+// Dependencies: [4829, 4788, 504, 8437, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 15906 (useUserAvailableGuildsWithTags)
+// Module 15947 (useUserAvailableGuildsWithTags)
 import get_initialized from "get initialized" /* 504 */;
-import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import GuildMemberStore from "GuildMemberStore" /* 4829 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import size from "module_2" /* 2 */;
 
 let guildsArray, selfMember;

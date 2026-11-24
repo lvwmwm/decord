@@ -1,12 +1,12 @@
-// Module ID: 13122
-// Function ID: 13123
+// Module ID: 13040
+// Function ID: 13041
 // Name: useVoiceMessageBottomInset
-// Dependencies: [19, 5488, 7077, 11767, 1653, 5514, 11775, 2]
+// Dependencies: [19, 5492, 6923, 11657, 1653, 5518, 11665, 2]
 // Exports: default
 
-// Module 13122 (useVoiceMessageBottomInset)
-import spring_spring from "spring/spring" /* 5514 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11775 */;
+// Module 13040 (useVoiceMessageBottomInset)
+import spring_spring from "spring/spring" /* 5518 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11665 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,9 +21,9 @@ export default function useVoiceMessageBottomInset() {
   let tmp5;
   let tmp6;
   let tmp7;
-  const insets = sharedValue(5488)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets;
-  const tmp = sharedValue(7077)(insets.bottom);
-  let obj = channelDockHeight(11767);
+  const insets = sharedValue(5492)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets;
+  const tmp = sharedValue(6923)(insets.bottom);
+  let obj = channelDockHeight(11657);
   channelDockHeight = obj.useChannelDockHeight();
   const obj2 = channelDockHeight(1653);
   sharedValue = obj2.useSharedValue(channelDockHeight);

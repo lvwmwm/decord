@@ -1,21 +1,21 @@
-// Module ID: 18505
-// Function ID: 18506
+// Module ID: 18546
+// Function ID: 18547
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 18470, 575, 18506, 18427, 12328, 1112, 4190, 18461, 18552, 5504, 18278, 7763, 18553, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4917, 18511, 575, 18547, 18468, 11338, 1112, 4192, 18502, 18593, 5508, 18317, 7809, 18594, 2]
 // Exports: default, stretchOf
 
-// Module 18505 (ConjureActivityBox)
+// Module 18546 (ConjureActivityBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 18461 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 18470 */;
-import ConjureSubagentMark from "ConjureSubagentMark" /* 18506 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 18502 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 18511 */;
+import ConjureSubagentMark from "ConjureSubagentMark" /* 18547 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,8 +29,8 @@ let obj4;
 let obj5;
 let tmp2;
 let tmp5;
-const WarningIcon2 = tmp2(7763);
-const ConjureNativeStepImagesDefault = tmp5(18553);
+const WarningIcon2 = tmp2(7809);
+const ConjureNativeStepImagesDefault = tmp5(18594);
 function TurnStatusLine(epoch) {
   let _undefined;
   let c3;
@@ -252,7 +252,7 @@ function TimelineRow(inGutter) {
   let obj = { line: obj2.describeNode(node), live: flag2, settled: tmp9, failed: "failed" === node.status, presentation: str2, crestColor, inGutter: flag, epoch, trailing: tmp4Result };
   let tmp8 = node;
   let tmp7 = ConjureNativeStatusLineDefault;
-  obj2 = node(18427);
+  obj2 = node(18468);
   str2 = "detail";
   tmp9 = !flag2 && "failed" !== node.status;
   if (flag2) {
@@ -261,8 +261,8 @@ function TimelineRow(inGutter) {
   tmp4Result = null;
   if (null != node.durationMs) {
     let obj3 = { variant: "body-xs/normal", color: "text-subtle", children: tmp8Result.describeDuration(node.durationMs) };
-    let Text = tmp8(5504).Text;
-    tmp8Result = tmp8(12328);
+    let Text = tmp8(5508).Text;
+    tmp8Result = tmp8(11338);
     tmp4Result = tmp4(Text, obj3);
   }
   const children = [tmp4(tmp7, obj), , ];

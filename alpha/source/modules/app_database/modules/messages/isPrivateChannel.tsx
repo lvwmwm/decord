@@ -1,10 +1,10 @@
-// Module ID: 8276
-// Function ID: 8277
+// Module ID: 8116
+// Function ID: 8117
 // Name: isPrivateChannel
 // Dependencies: [2]
 // Exports: isPrivateChannel
 
-// Module 8276 (isPrivateChannel)
+// Module 8116 (isPrivateChannel)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_database/modules/messages/isPrivateChannel.tsx");

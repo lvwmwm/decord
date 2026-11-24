@@ -1,16 +1,16 @@
-// Module ID: 8016
-// Function ID: 8017
+// Module ID: 8471
+// Function ID: 8472
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 4843, 4784, 4845, 1071, 504, 7633, 2]
+// Dependencies: [32, 4847, 4788, 4849, 1071, 504, 8330, 2]
 // Exports: default
 
-// Module 8016 (useCanCreateAnEvent)
+// Module 8471 (useCanCreateAnEvent)
 import Constants from "Constants" /* 1071 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 7633 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4847 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8330 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

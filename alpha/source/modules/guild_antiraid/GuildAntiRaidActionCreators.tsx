@@ -1,19 +1,19 @@
-// Module ID: 12368
-// Function ID: 12369
+// Module ID: 12267
+// Function ID: 12268
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 4784, 8764, 1071, 1255, 5650, 7994, 2168, 1284, 11118, 2]
+// Dependencies: [5, 4788, 10453, 1071, 1255, 5887, 8432, 2168, 1284, 10487, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12368 (GuildAntiRaidActionCreators)
+// Module 12267 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7994 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8764 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 11118 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8432 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 10453 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 10487 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4784 */;
+import GuildStore from "GuildStore" /* 4788 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

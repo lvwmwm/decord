@@ -1,23 +1,23 @@
-// Module ID: 17763
-// Function ID: 17764
+// Module ID: 17801
+// Function ID: 17802
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1071, 4759, 21, 4913, 5141, 5600, 17764, 5504, 1112, 5511, 7994, 2]
+// Dependencies: [19, 17, 1071, 4763, 21, 4917, 5145, 5604, 17802, 5508, 1112, 5515, 8432, 2]
 // Exports: default
 
-// Module 17763 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 17801 (GuildRoleSubscriptionsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import components_Button_Button from "components/Button/Button" /* 5511 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7994 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17764 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5145 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import components_Button_Button from "components/Button/Button" /* 5515 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8432 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17802 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

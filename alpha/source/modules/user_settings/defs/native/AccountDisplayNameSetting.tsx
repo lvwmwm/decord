@@ -1,15 +1,15 @@
-// Module ID: 16009
-// Function ID: 16010
+// Module ID: 16042
+// Function ID: 16043
 // Name: AccountDisplayNameSetting
-// Dependencies: [1386, 8712, 1071, 504, 11937, 1112, 15828, 2]
+// Dependencies: [1386, 9414, 1071, 504, 11815, 1112, 15856, 2]
 
-// Module 16009 (AccountDisplayNameSetting)
+// Module 16042 (AccountDisplayNameSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
 import UserStore from "UserStore" /* 1386 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj = {
   screen: {
     route: UserSettingsSections.PROFILE_CUSTOMIZATION,
     getComponent() {
-      return require("ProfileCustomizationSettingScreen").default;
+      return require("ProfileCustomizationSettingScreenExperimentWrapper").default;
     }
   }
 };

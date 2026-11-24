@@ -1,24 +1,24 @@
-// Module ID: 19807
-// Function ID: 19808
+// Module ID: 19850
+// Function ID: 19851
 // Name: SoundboardSoundCreationPreview
-// Dependencies: [32, 5, 19, 17, 4914, 5963, 5814, 21, 4913, 575, 5477, 1653, 9260, 7392, 10887, 1378, 19799, 504, 5123, 8205, 15787, 5594, 1112, 7020, 19808, 19809, 5504, 5511, 2]
+// Dependencies: [32, 5, 19, 17, 4918, 6799, 5875, 21, 4917, 575, 5481, 1653, 8745, 7202, 10161, 1378, 19842, 504, 5127, 9372, 15815, 5598, 1112, 6921, 19851, 19852, 5508, 5515, 2]
 // Exports: default
 
-// Module 19807 (SoundboardSoundCreationPreview)
+// Module 19850 (SoundboardSoundCreationPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5123 */;
-import useToken from "useToken" /* 5477 */;
-import Constants from "Constants" /* 5814 */;
-import SoundboardConstants from "SoundboardConstants" /* 5963 */;
-import TextTrackTypeDefault from "TextTrackType" /* 9260 */;
+import timing_timing from "timing/timing" /* 5127 */;
+import useToken from "useToken" /* 5481 */;
+import Constants from "Constants" /* 5875 */;
+import SoundboardConstants from "SoundboardConstants" /* 6799 */;
+import TextTrackTypeDefault from "TextTrackType" /* 8745 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -115,11 +115,11 @@ let closure_16 = PlatformUtils.isIOS() ? (function VideoPreviewPlayer(onLoad) {
   uri = uri.uri;
   let volume = uri.volume;
   ({ onLoad, onEnd, onError } = uri);
-  let tmp = volume(7392)(onLoad);
+  let tmp = volume(7202)(onLoad);
   dependencyMap = tmp;
-  const tmp2 = volume(7392)(onEnd);
+  const tmp2 = volume(7202)(onEnd);
   let closure_3 = tmp2;
-  const tmp3 = volume(7392)(onError);
+  const tmp3 = volume(7202)(onError);
   let closure_4 = tmp3;
   const items = [uri, volume, tmp, tmp2, tmp3];
   const effect = react.useEffect(() => {

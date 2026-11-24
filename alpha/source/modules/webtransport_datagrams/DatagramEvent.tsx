@@ -1,9 +1,9 @@
-// Module ID: 14885
-// Function ID: 14886
+// Module ID: 14922
+// Function ID: 14923
 // Name: DatagramEvent
 // Dependencies: [2]
 
-// Module 14885 (DatagramEvent)
+// Module 14922 (DatagramEvent)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/webtransport_datagrams/DatagramEvent.tsx");

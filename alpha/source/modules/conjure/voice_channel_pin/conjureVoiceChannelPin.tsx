@@ -1,16 +1,16 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 11324
+// Function ID: 11325
 // Name: conjureVoiceChannelPin
-// Dependencies: [5, 4762, 4845, 1071, 572, 6939, 11251, 2]
+// Dependencies: [5, 4766, 4849, 1071, 572, 7547, 7971, 2]
 // Exports: parseVoiceChannelPinOutcome, pinVoiceChannel, resolveVoiceChannelPin
 
-// Module 12316 (conjureVoiceChannelPin)
+// Module 11324 (conjureVoiceChannelPin)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 6939 */;
-import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 11251 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 7547 */;
+import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 7971 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

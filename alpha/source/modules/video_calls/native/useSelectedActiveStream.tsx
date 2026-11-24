@@ -1,12 +1,12 @@
-// Module ID: 14872
-// Function ID: 14873
+// Module ID: 14173
+// Function ID: 14174
 // Name: useSelectedActiveStream
-// Dependencies: [6620, 6400, 504, 2]
+// Dependencies: [6807, 6687, 504, 2]
 // Exports: default
 
-// Module 14872 (useSelectedActiveStream)
-import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+// Module 14173 (useSelectedActiveStream)
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

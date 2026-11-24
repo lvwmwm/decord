@@ -1,14 +1,14 @@
-// Module ID: 10837
-// Function ID: 10838
+// Module ID: 10113
+// Function ID: 10114
 // Name: useTrackActivityVideoPip
-// Dependencies: [19, 10647, 1071, 563, 6417, 10776, 1255, 2]
+// Dependencies: [19, 9881, 1071, 563, 6705, 10052, 1255, 2]
 // Exports: default
 
-// Module 10837 (useTrackActivityVideoPip)
+// Module 10113 (useTrackActivityVideoPip)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import react_mod from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10647 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 9881 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,9 +27,9 @@ export default function useTrackActivityPip(arg0) {
   let obj = require("useStateFromStores");
   const items = [ChannelCallLifecycleStore];
   const stateFromStores = obj.useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  const tmp2 = stateFromStores(6417)(stateFromStores);
+  const tmp2 = stateFromStores(6705)(stateFromStores);
   dependencyMap = tmp2;
-  const tmp3 = stateFromStores(10776)();
+  const tmp3 = stateFromStores(10052)();
   react = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = react.useEffect(() => {

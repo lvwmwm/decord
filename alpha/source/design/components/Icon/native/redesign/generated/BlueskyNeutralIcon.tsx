@@ -1,14 +1,14 @@
-// Module ID: 9915
-// Function ID: 9916
+// Module ID: 14060
+// Function ID: 14061
 // Name: BlueskyNeutralIcon
-// Dependencies: [19, 21, 575, 5599, 9916, 2]
+// Dependencies: [19, 21, 575, 5603, 14061, 2]
 // Exports: BlueskyNeutralIcon
 
-// Module 9915 (BlueskyNeutralIcon)
+// Module 14060 (BlueskyNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 9916 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 14061 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 16580
-// Function ID: 16581
+// Module ID: 16614
+// Function ID: 16615
 // Name: QuestDockBackgroundBlurHeader
-// Dependencies: [32, 19, 17, 6558, 16475, 21, 4913, 575, 5514, 16476, 1358, 5477, 16566, 1653, 7030, 5504, 1112, 9449, 16581, 16546, 16583, 7022, 2]
+// Dependencies: [32, 19, 17, 6745, 16508, 21, 4917, 575, 5518, 16509, 1358, 5481, 16600, 1653, 6026, 5508, 1112, 9321, 16615, 16580, 16617, 7612, 2]
 
-// Module 16580 (QuestDockBackgroundBlurHeader)
+// Module 16614 (QuestDockBackgroundBlurHeader)
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import _modDef1653 from "module_1653" /* 1653 */;
-import spring_spring from "spring/spring" /* 5514 */;
-import QuestConstants from "QuestConstants" /* 6558 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16566 */;
+import spring_spring from "spring/spring" /* 5518 */;
+import QuestConstants from "QuestConstants" /* 6745 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16600 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockConstants from "QuestDockConstants" /* 16475 */;
+import QuestDockConstants from "QuestDockConstants" /* 16508 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ const QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED = QuestDockConstants.QUEST_DOCK_MOD
 ({ QUEST_DOCK_CONTENT_BORDER_RADII: c9, QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED: c10, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED: unpackModuleId, QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT, QUEST_DOCK_COLLAPSED_HEIGHT, QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT } = QuestDockConstants);
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { header: obj2, secondaryContent: { flexGrow: 0, flexShrink: 0 }, secondaryContentStretched: { alignSelf: "stretch" }, secondaryContentOverlay: { justifyContent: "center", position: "absolute", bottom: 0, top: 0, right: 0 }, expandedContent: obj3, leadingContent: { alignItems: "center", alignSelf: "stretch", flex: 1, flexDirection: "row" }, actionDisclosures: { alignItems: "center", display: "flex", flexDirection: "row", gap: 4 }, actionDisclosuresIcon: { height: 14, width: 14 }, tertiaryContent: { opacity: 0.7 } };
+let obj = { header: obj2, secondaryContent: { flexGrow: 0, flexShrink: 0 }, secondaryContentStretched: { alignSelf: "stretch" }, secondaryContentTrailing: { alignItems: "flex-end", justifyContent: "center" }, secondaryContentOverlay: { justifyContent: "center", position: "absolute", bottom: 0, top: 0, right: 0 }, expandedContent: obj3, leadingContent: { alignItems: "center", alignSelf: "stretch", flex: 1, flexDirection: "row" }, actionDisclosures: { alignItems: "center", display: "flex", flexDirection: "row", gap: 4 }, actionDisclosuresIcon: { height: 14, width: 14 }, tertiaryContent: { opacity: 0.7 } };
 obj2 = { alignItems: "center", justifyContent: "space-between", flexDirection: "row", height: QUEST_DOCK_COLLAPSED_HEIGHT, overflow: "hidden", paddingRight: QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT, paddingLeft: QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT, gap: nativeDefault.space.PX_8, position: "absolute", zIndex: 2 };
 createStyles = createStyles.createStyles;
 obj3 = { alignItems: "center", flexDirection: "row", gap: nativeDefault.space.PX_8 };
@@ -84,20 +84,20 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
   let items17;
   let items18;
   let items19;
-  let items23;
   let items24;
-  let items25;
   let items26;
   let items27;
   let items28;
-  let obj14;
-  let obj16;
-  let obj19;
+  let items29;
+  let obj15;
+  let obj17;
+  let obj20;
   let obj3;
   let obj7;
   let onDisclosurePress;
   let onSubmenuPress;
   let questDockWrapperSpecs;
+  let secondaryContentLayout;
   let secondaryContentWidth;
   let tmp14;
   let tmp15;
@@ -147,19 +147,22 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
   let tmp70;
   let tmp73Result;
   let tmp76;
-  let withPressableDisclosure;
-  ({ blurHash, children, secondaryContentWidth, withPressableDisclosure } = collapsedContent);
+  ({ blurHash, children, secondaryContentWidth, secondaryContentLayout } = collapsedContent);
   collapsedContent = collapsedContent.collapsedContent;
-  if (withPressableDisclosure === undefined) {
-    withPressableDisclosure = false;
+  if (secondaryContentLayout === undefined) {
+    secondaryContentLayout = "overlay";
   }
-  let flag = collapsedContent.promotedLabelLeading;
+  let flag = collapsedContent.withPressableDisclosure;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = collapsedContent.hideBlurWhenCollapsed;
+  let flag2 = collapsedContent.promotedLabelLeading;
   if (flag2 === undefined) {
     flag2 = false;
+  }
+  let flag3 = collapsedContent.hideBlurWhenCollapsed;
+  if (flag3 === undefined) {
+    flag3 = false;
   }
   _require = undefined;
   let tmp = _require;
@@ -247,7 +250,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
   const items2 = [closure_18, , , , ];
   const useAnimatedStyle2 = tmp(1653).useAnimatedStyle;
   tmp(1653);
-  items2[1] = tmp(5514).withSpring;
+  items2[1] = tmp(5518).withSpring;
   items2[2] = activeQuestDockMode;
   items2[3] = QuestDockMode;
   items2[4] = QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED;
@@ -295,7 +298,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
   const items6 = [closure_20, , , , ];
   const useAnimatedStyle3 = tmp(1653).useAnimatedStyle;
   tmp(1653);
-  items6[1] = tmp(5514).withSpring;
+  items6[1] = tmp(5518).withSpring;
   items6[2] = activeQuestDockMode;
   items6[3] = QuestDockMode;
   items6[4] = QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED;
@@ -363,7 +366,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
   const items12 = [closure_23, activeQuestDockMode, tmp11, tmp12, token, , , , ];
   const useAnimatedStyle4 = tmp(1653).useAnimatedStyle;
   tmp(1653);
-  items12[5] = tmp(5514).withSpring;
+  items12[5] = tmp(5518).withSpring;
   items12[6] = tmp9;
   items12[7] = QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED;
   items12[8] = questDockWrapperSpecs;
@@ -402,7 +405,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
   const items14 = [closure_24, , , , ];
   const useAnimatedStyle5 = tmp(1653).useAnimatedStyle;
   tmp(1653);
-  items14[1] = tmp(5514).withSpring;
+  items14[1] = tmp(5518).withSpring;
   items14[2] = activeQuestDockMode;
   items14[3] = QuestDockMode;
   items14[4] = QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED;
@@ -427,22 +430,22 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
   QuestDockBackgroundBlurHeaderTsx9.__workletHash = 6712330626688;
   QuestDockBackgroundBlurHeaderTsx9.__initData = tmp66;
   let animatedStyle5;
-  if (flag2) {
+  if (flag3) {
     animatedStyle5 = useAnimatedStyle5(QuestDockBackgroundBlurHeaderTsx9);
   }
   const tmp72 = closure_15();
-  if (withPressableDisclosure) {
+  if (flag) {
     let obj2 = { onPress: onDisclosurePress, accessibilityRole: "button", style: items16, children: closure_14(closure_13, obj3) };
     items16 = [, ];
     ({ actionDisclosures: arr18[0], tertiaryContent: arr18[1] } = tmp72);
     obj3 = { children: items17 };
-    const PressableOpacity = tmp(7030).PressableOpacity;
+    const PressableOpacity = tmp(6026).PressableOpacity;
     const obj4 = { color: "interactive-text-active", variant: "body-sm/medium", children: intl2.string(tmp(1112).t.o6FLcF) };
-    const Text2 = tmp(5504).Text;
+    const Text2 = tmp(5508).Text;
     intl2 = tmp(1112).intl;
     items17 = [closure_12(Text2, obj4), ];
     const obj5 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, style: tmp72.actionDisclosuresIcon };
-    const CircleQuestionIcon = tmp(9449).CircleQuestionIcon;
+    const CircleQuestionIcon = tmp(9321).CircleQuestionIcon;
     items17[1] = closure_12(CircleQuestionIcon, obj5);
     tmp73Result = tmp73(PressableOpacity, obj2);
     tmp76 = tmp73;
@@ -451,7 +454,7 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
     items18 = [, ];
     ({ actionDisclosures: arr17[0], tertiaryContent: arr17[1] } = tmp72);
     obj7 = { color: "text-default", variant: "body-sm/medium", children: intl.string(tmp(1112).t.o6FLcF) };
-    Text = tmp(5504).Text;
+    Text = tmp(5508).Text;
     intl = tmp(1112).intl;
     tmp73Result = tmp73(closure_6, obj6);
     tmp76 = tmp73;
@@ -464,11 +467,11 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
     let tmp76Result;
     if (null != blurHash) {
       const obj9 = { placeholder: blurHash, layoutAnimatedStyle: animatedStyle41, opacityAnimatedStyle: animatedStyle5, layoutAnimation: questDockHeaderLayoutAnimation };
-      tmp76Result = tmp76(tmp7(16581), obj9);
+      tmp76Result = tmp76(tmp7(16615), obj9);
     }
     const items20 = [tmp76Result, , ];
     let tmp76Result2 = children;
-    if (flag) {
+    if (flag2) {
       const obj10 = { style: tmp72.leadingContent, children };
       tmp76Result2 = tmp76(closure_6, obj10);
     }
@@ -477,41 +480,54 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
     let tmp87 = null != secondaryContentWidth;
     const tmp85 = closure_6;
     if (tmp87) {
-      const items22 = [tmp72.secondaryContentStretched, ];
-      const obj11 = { width: secondaryContentWidth };
-      items22[1] = obj11;
-      tmp87 = items22;
+      let items23;
+      if ("inline" === secondaryContentLayout) {
+        const items22 = [, , ];
+        ({ secondaryContentStretched: arr24[0], secondaryContentTrailing: arr24[1] } = tmp72);
+        const obj11 = { minWidth: secondaryContentWidth };
+        items22[2] = obj11;
+        items23 = items22;
+      } else {
+        items23 = [tmp72.secondaryContentStretched, ];
+        const obj12 = { width: secondaryContentWidth };
+        items23[1] = obj12;
+      }
+      tmp87 = items23;
     }
-    const obj12 = { style: items21, children: items24 };
+    const obj13 = { style: items21, children: null };
     items21[1] = tmp87;
-    const obj13 = { style: items23, layout: questDockHeaderLayoutAnimation, children: tmp76(_modDef1653.View, obj14) };
-    items23 = [tmp72.secondaryContentOverlay, animatedStyle1];
+    const obj14 = { style: items24, layout: questDockHeaderLayoutAnimation, children: tmp76(_modDef1653.View, obj15) };
+    items24 = [tmp72.secondaryContentOverlay, animatedStyle1];
     const View2 = tmp7(1653).View;
-    obj14 = { style: animatedStyle2, children: collapsedContent };
-    items24 = [tmp76(View2, obj13), ];
-    ({ animatedProps, style: items25, layout: questDockHeaderLayoutAnimation, children: closure_14(View4, obj16) });
+    obj15 = { style: animatedStyle2, children: collapsedContent };
+    const items25 = [tmp76(View2, obj14), ];
     let secondaryContentOverlay = null != secondaryContentWidth;
+    const obj16 = { animatedProps, style: items26, layout: questDockHeaderLayoutAnimation, children: closure_14(View4, obj17) };
     const View3 = tmp7(1653).View;
+    if (secondaryContentOverlay) {
+      secondaryContentOverlay = "overlay" === secondaryContentLayout;
+    }
     if (secondaryContentOverlay) {
       secondaryContentOverlay = tmp72.secondaryContentOverlay;
     }
-    items25 = [secondaryContentOverlay, animatedStyle4];
-    obj16 = { style: items26, children: items28 };
-    items26 = [tmp72.expandedContent, animatedStyle3];
-    let tmp79Result = !flag;
+    items26 = [secondaryContentOverlay, animatedStyle4];
+    obj17 = { style: items27, children: items29 };
+    items27 = [tmp72.expandedContent, animatedStyle3];
+    let tmp79Result = !flag2;
     View4 = tmp7(1653).View;
-    if (!flag) {
-      const obj17 = { children: items27 };
-      items27 = [tmp73Result, tmp76(tmp7(16583), {})];
-      tmp79Result = tmp79(closure_13, obj17);
+    if (!flag2) {
+      const obj18 = { children: items28 };
+      items28 = [tmp73Result, tmp76(tmp7(16617), {})];
+      tmp79Result = tmp79(closure_13, obj18);
     }
-    items28 = [tmp79Result, ];
-    const obj18 = { accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1112).t.PdRCRg), onPress: onSubmenuPress, style: tmp72.tertiaryContent, children: tmp76(MoreHorizontalIcon, obj19) };
-    const PressableOpacity2 = tmp(7030).PressableOpacity;
+    items29 = [tmp79Result, ];
+    const obj19 = { accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1112).t.PdRCRg), onPress: onSubmenuPress, style: tmp72.tertiaryContent, children: tmp76(MoreHorizontalIcon, obj20) };
+    const PressableOpacity2 = tmp(6026).PressableOpacity;
     intl3 = tmp(1112).intl;
-    obj19 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-    MoreHorizontalIcon = tmp(7022).MoreHorizontalIcon;
-    items28[1] = tmp76(PressableOpacity2, obj18);
+    obj20 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
+    MoreHorizontalIcon = tmp(7612).MoreHorizontalIcon;
+    items29[1] = tmp76(PressableOpacity2, obj19);
+    items25[1] = tmp76(View3, obj16);
     class QuestDockBackgroundBlurHeaderTsx2 {
       constructor() {
         let items;
@@ -549,11 +565,11 @@ const memoResult = react.memo(function QuestDockBackgroundBlurHeader(collapsedCo
         return obj2;
       }
     }
-    items20[2] = closure_14(tmp85, obj12);
+    items20[2] = closure_14(tmp85, obj13);
     obj8.children = items20;
     return closure_14(View, obj8);
   }
-  tmp76Result = tmp76(tmp7(16546), { layoutAnimatedStyle: animatedStyle41, opacityAnimatedStyle: animatedStyle5, layoutAnimation: tmp80 });
+  tmp76Result = tmp76(tmp7(16580), { layoutAnimatedStyle: animatedStyle41, opacityAnimatedStyle: animatedStyle5, layoutAnimation: tmp80 });
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBackgroundBlurHeader.tsx");

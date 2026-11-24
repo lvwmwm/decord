@@ -1,18 +1,18 @@
-// Module ID: 6830
-// Function ID: 6831
+// Module ID: 10262
+// Function ID: 10263
 // Name: SoundboardActionCreators
-// Dependencies: [5, 5961, 5963, 1071, 1081, 1284, 6831, 572, 6832, 6350, 6833, 1255, 4743, 12, 5860, 1112, 6834, 2]
+// Dependencies: [5, 6797, 6799, 1071, 1081, 1284, 6963, 572, 6239, 5667, 10263, 1255, 4747, 12, 5920, 1112, 8794, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, stopSoundLocally, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 6830 (SoundboardActionCreators)
+// Module 10262 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4743 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
-import SoundboardConstants from "SoundboardConstants" /* 5963 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4747 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5920 */;
+import SoundboardConstants from "SoundboardConstants" /* 6799 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5961 */;
+import SoundboardStore from "SoundboardStore" /* 6797 */;
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f89605 = (arg0) => {
+const f96931 = (arg0) => {
   closure_0 = arg0;
   function onSoundboardActionCompleted() {
     const item = closure_0.forEach((item) => {
@@ -72,7 +72,7 @@ let obj = function _fetchDefaultSoundsFromApi2() {
             soundboardSounds = undefined;
             c3 = 1;
             const HTTP = require("HTTPUtils").HTTP;
-            const obj5 = { url: constants.SOUNDBOARD_DEFAULT_SOUNDS, rejectWithError: obj9.rejectWithMigratedError() };
+            const obj5 = { url: constants.SOUNDBOARD_SOUNDS_CATALOG, rejectWithError: obj9.rejectWithMigratedError() };
             const get = HTTP.get;
             obj9 = require("HTTPUtils");
             c4 = 2;
@@ -101,8 +101,8 @@ let obj = function _fetchDefaultSoundsFromApi2() {
             const obj7 = { value, done: true };
             return obj7;
           } else {
-            const body = value.body;
-            soundboardSounds = body.map((item) => {
+            const default_sounds = value.body.default_sounds;
+            soundboardSounds = default_sounds.map((item) => {
               obj = soundboardSounds(closure_1_2[6]);
               return obj.soundboardSoundFromAPI(item, closure_1_5);
             });
@@ -137,7 +137,7 @@ function _maybeFetchDefaultSounds() {
     let closure_0 = ["SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS", "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f89605);
+    const promise = new Promise(f96931);
     _fetchDefaultSoundsFromApi();
     return promise;
   } else {
@@ -153,7 +153,7 @@ function _maybeFetchGuildSoundboardSounds() {
     _require = ["SOUNDBOARD_SOUNDS_RECEIVED"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f89605);
+    const promise = new Promise(f96931);
     const obj2 = DispatcherDefault;
     obj2.dispatch({ type: "GUILD_SOUNDBOARD_FETCH" });
     const obj4 = { type: "REQUEST_SOUNDBOARD_SOUNDS", guildIds: guildIdsToFetchSoundsFor };
@@ -556,7 +556,7 @@ export function addFavoriteSound(soundId) {
     obj = _modDef12;
     if (obj.size(soundIds.soundIds) >= metroImportAll) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp(5860).show;
+      const show = tmp(5920).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;

@@ -1,10 +1,10 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 6192
+// Function ID: 6193
 // Name: ProfileFrameRecord
 // Dependencies: [2111, 2112, 2]
 // Exports: isProfileFrameRecord
 
-// Module 8082 (ProfileFrameRecord)
+// Module 6192 (ProfileFrameRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
 import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 2111 */;
 import size from "module_2" /* 2 */;

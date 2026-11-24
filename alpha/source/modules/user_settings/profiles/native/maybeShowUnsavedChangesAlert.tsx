@@ -1,12 +1,12 @@
-// Module ID: 14195
-// Function ID: 14196
+// Module ID: 9660
+// Function ID: 9661
 // Name: maybeShowUnsavedChangesAlert
-// Dependencies: [5, 32, 19, 21, 5862, 5866, 1112, 5098, 14196, 5127, 5861, 2]
+// Dependencies: [5, 32, 19, 21, 5922, 5926, 1112, 5102, 9661, 5131, 5921, 2]
 // Exports: default
 
-// Module 14195 (maybeShowUnsavedChangesAlert)
+// Module 9660 (maybeShowUnsavedChangesAlert)
 import intl5 from "intl" /* 1112 */;
-import AlertModal2 from "AlertModal" /* 5866 */;
+import AlertModal2 from "AlertModal" /* 5926 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -154,16 +154,16 @@ export default function maybeShowUnsavedChangesAlert(onReset) {
   onReset = onReset.onReset;
   const onContinue = onReset.onContinue;
   if (onReset.hasUnsavedChanges) {
-    let obj = onReset(5098);
+    let obj = onReset(5102);
     obj.dismissKeyboard();
-    const obj2 = onReset(14196);
+    const obj2 = onReset(9661);
     if (obj2.getIsUserProfileMobileSavePromptEnabled(tmp)) {
-      const tmp7Result = onContinue(5127);
+      const tmp7Result = onContinue(5131);
       tmp7Result.hideActionSheet();
-      const tmp7Result3 = onContinue(5861);
+      const tmp7Result3 = onContinue(5921);
       tmp7Result3.close();
       const obj3 = { onReset, onContinue, onSave: tmp2 };
-      const tmp4Result = onReset(5862);
+      const tmp4Result = onReset(5922);
       tmp4Result.openAlert(c9, closure_6(UnsavedChangesSavePromptAlert, obj3), undefined, { dismissable: true });
     } else {
       const obj4 = {
@@ -181,8 +181,8 @@ export default function maybeShowUnsavedChangesAlert(onReset) {
             },
         isDismissable: false
       };
-      const show = onContinue(5861).show;
-      onContinue(5861);
+      const show = onContinue(5921).show;
+      onContinue(5921);
       intl = tmp4(1112).intl;
       intl2 = tmp4(1112).intl;
       intl3 = tmp4(1112).intl;

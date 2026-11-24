@@ -1,33 +1,33 @@
-// Module ID: 19143
-// Function ID: 19144
+// Module ID: 19185
+// Function ID: 19186
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 4914, 2188, 4762, 5651, 12829, 6552, 1071, 6553, 21, 4913, 575, 18756, 7737, 5519, 504, 11, 6638, 19132, 7030, 18757, 19133, 1186, 8215, 18759, 4969, 11125, 5574, 19134, 17919, 16723, 2]
+// Dependencies: [19, 4918, 2188, 4766, 5888, 12748, 6041, 1071, 6042, 21, 4917, 575, 18798, 7714, 5523, 504, 11, 6824, 19174, 6026, 18799, 19175, 1186, 9382, 18801, 4973, 10494, 5578, 19176, 17957, 16757, 2]
 
-// Module 19143 (LaunchPadSearchResultUser)
+// Module 19185 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import UserUtilsDefault from "UserUtils" /* 4969 */;
-import ReadStateConstants from "ReadStateConstants" /* 6553 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import isStreamingDefault from "isStreaming" /* 8215 */;
-import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 17919 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18756 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 18757 */;
-import renderChannelContentDefault from "renderChannelContent" /* 18759 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19132 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 19133 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 19134 */;
+import UserUtilsDefault from "UserUtils" /* 4973 */;
+import ReadStateConstants from "ReadStateConstants" /* 6042 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
+import isStreamingDefault from "isStreaming" /* 9382 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 17957 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18798 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18799 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18801 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19174 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 19175 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 19176 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import PresenceStore from "PresenceStore" /* 5651 */;
-import TypingStore from "TypingStore" /* 12829 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import PresenceStore from "PresenceStore" /* 5888 */;
+import TypingStore from "TypingStore" /* 12748 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6041 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -79,7 +79,7 @@ function UserResult(user) {
     const obj = ChannelActionCreatorsDefault;
     obj.openPrivateChannel(obj2);
   }, items);
-  let obj = user(5519);
+  let obj = user(5523);
   const fontScale = obj.useFontScale();
   let obj2 = user(504);
   const items1 = [LocaleStore];
@@ -102,7 +102,7 @@ function UserResult(user) {
   }
   let relativeTimestamp = null;
   if (null != extractTimestampResult) {
-    const tmp6Result = user(6638);
+    const tmp6Result = user(6824);
     relativeTimestamp = tmp6Result.getRelativeTimestamp(extractTimestampResult);
   }
   let str = "text-muted";
@@ -115,7 +115,7 @@ function UserResult(user) {
   const obj5 = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items4, children: tmp2Result6(tmp16(tmp17, obj10), { fontScale }) };
   items4 = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
   const tmp2Result5 = renderChannelPressableWrapperDefault;
-  const PressableHighlight = tmp6(7030).PressableHighlight;
+  const PressableHighlight = tmp6(6026).PressableHighlight;
   const items5 = [, , ];
   const obj6 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
   tmp2Result6 = renderChannelWrapperDefault;
@@ -146,8 +146,8 @@ function UserResult(user) {
   tmp14Result = undefined;
   if (null != lastMessage) {
     if (null != channel) {
-      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(5574).ChannelListLayoutTypes.COMPACT };
-      const ChannelRowPreview = tmp6(11125).ChannelRowPreview;
+      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(5578).ChannelListLayoutTypes.COMPACT };
+      const ChannelRowPreview = tmp6(10494).ChannelRowPreview;
       tmp14Result = tmp14(ChannelRowPreview, obj9);
     }
   }
@@ -172,7 +172,7 @@ function UserResultWithChannel(arg0) {
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => TypingStore.isTyping(channel.id, require.id));
   const obj4 = { channel, lastMessage: tmp4, unread, mentionCount, muted: stateFromStores, isTyping: stateFromStores1 };
-  tmp4 = channel(16723)(channel, { unread });
+  tmp4 = channel(16757)(channel, { unread });
   const merged = Object.assign(arg0);
   return closure_12(UserResult, obj4);
 }

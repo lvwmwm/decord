@@ -1,16 +1,15 @@
-// Module ID: 9949
-// Function ID: 9950
+// Module ID: 14088
+// Function ID: 14089
 // Name: AdContentSeenStore
-// Dependencies: [32, 8401, 8404, 6565, 8411, 504, 572, 2]
+// Dependencies: [32, 8224, 6752, 8231, 504, 572, 2]
 
-// Module 9949 (AdContentSeenStore)
+// Module 14088 (AdContentSeenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AdCreativeType from "AdCreativeType" /* 6565 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 8411 */;
+import AdCreativeType from "AdCreativeType" /* 6752 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 8231 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8401 */;
-import QuestStore from "QuestStore" /* 8404 */;
+import QuestStore from "QuestStore" /* 8224 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -70,9 +69,9 @@ function syncWithQuestStore() {
   }
   if (0 !== QuestStore.lastFetchedCurrentQuests) {
     if (quests.size > 0) {
-      for (const item10063 of obj) {
-        let tmp24 = item10063;
-        let value = quests.get(item10063);
+      for (const item10062 of obj) {
+        let tmp24 = item10062;
+        let value = quests.get(item10062);
         let isQuestExpiredResult = null == value;
         if (!isQuestExpiredResult) {
           let obj3 = QuestExpirationUtils;
@@ -86,25 +85,6 @@ function syncWithQuestStore() {
       }
     }
   }
-  const obj4 = getOrCreateSet(AdCreativeType.AdCreativeType.QUEST_HOME_HERO);
-  const obj5 = AdDeliveryStore;
-  if (null != AdDeliveryStore.getLastFetchedQuestHomeHero()) {
-    if (obj4.size > 0) {
-      const questHomeHero = obj5.getQuestHomeHero();
-      for (const item10097 of obj4) {
-        let tmp36 = item10097;
-        let tmp37 = null != questHomeHero;
-        if (tmp37) {
-          tmp37 = tmp36 === questHomeHero.id;
-        }
-        if (!tmp37) {
-          let deleteResult1 = obj4.delete(tmp36);
-          flag = true;
-        }
-        continue;
-      }
-    }
-  }
   return flag;
 }
 let map = new Map();
@@ -112,7 +92,7 @@ const PersistedStore = get_initializedDefault.PersistedStore;
 class AdContentSeenStore extends PersistedStore {
   initialize(seenContentIds) {
     const self = this;
-    this.waitFor(QuestStore, AdDeliveryStore);
+    this.waitFor(QuestStore);
     map = new Map();
     if (null != seenContentIds) {
       const _Object = Object;
@@ -132,7 +112,7 @@ class AdContentSeenStore extends PersistedStore {
         continue;
       }
     }
-    const items = [QuestStore, AdDeliveryStore];
+    const items = [QuestStore];
     self.syncWith(items, syncWithQuestStore);
   }
   getState() {
@@ -186,6 +166,28 @@ let obj = {
       for (const item10014 of contentIds) {
         let tmp3 = item10014;
         if (value.has(item10014)) {
+          let deleteResult = value.delete(tmp3);
+          flag = true;
+        }
+        continue;
+      }
+      return flag;
+    }
+  },
+  QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS: function handleFetchQuestHomeHeroSuccess(questHomeHero) {
+    questHomeHero = questHomeHero.questHomeHero;
+    const value = map.get(AdCreativeType.AdCreativeType.QUEST_HOME_HERO);
+    if (null == value) {
+      return false;
+    } else {
+      let flag = false;
+      for (const item10019 of value) {
+        let id;
+        let tmp3 = item10019;
+        if (questHomeHero != null) {
+          id = questHomeHero.id;
+        }
+        if (item10019 !== id) {
           let deleteResult = value.delete(tmp3);
           flag = true;
         }

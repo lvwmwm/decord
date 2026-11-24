@@ -1,13 +1,13 @@
-// Module ID: 10258
-// Function ID: 10259
+// Module ID: 13449
+// Function ID: 13450
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 4969, 5866, 1112, 5866, 2]
+// Dependencies: [19, 21, 4973, 5926, 1112, 5926, 2]
 // Exports: default
 
-// Module 10258 (UserProfileConfirmThreadRemove)
+// Module 13449 (UserProfileConfirmThreadRemove)
 import intl5 from "intl" /* 1112 */;
-import UserUtilsDefault from "UserUtils" /* 4969 */;
-import AlertModal2 from "AlertModal" /* 5866 */;
+import UserUtilsDefault from "UserUtils" /* 4973 */;
+import AlertModal2 from "AlertModal" /* 5926 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -40,13 +40,13 @@ export default function UserProfileConfirmThreadRemove(isForumPost) {
   formatToPlainString = intl2.formatToPlainString;
   t2 = tmp4(1112).t;
   obj3 = { children: items };
-  AlertActions = tmp4(5866).AlertActions;
+  AlertActions = tmp4(5926).AlertActions;
   const obj4 = { variant: "destructive", text: intl3.string(intl5.t.N86XcP), onPress: onConfirm };
-  const AlertActionButton = tmp4(5866).AlertActionButton;
+  const AlertActionButton = tmp4(5926).AlertActionButton;
   intl3 = tmp4(1112).intl;
   items = [_false(AlertActionButton, obj4, "remove-user-from-thread"), ];
   const obj5 = { variant: "secondary", text: intl4.string(intl5.t.yNbnce) };
-  const AlertActionButton2 = tmp4(5866).AlertActionButton;
+  const AlertActionButton2 = tmp4(5926).AlertActionButton;
   intl4 = tmp4(1112).intl;
   items[1] = _false(AlertActionButton2, obj5, "cancel-remove-user-from-thread");
   return _false(AlertModal, obj2);

@@ -1,9 +1,9 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 8004
+// Function ID: 8005
 // Name: IosImageTypesManager
 // Dependencies: [32, 3, 2121, 1442, 2]
 
-// Module 8483 (IosImageTypesManager)
+// Module 8004 (IosImageTypesManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_nativeDefault from "react-native" /* 1442 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

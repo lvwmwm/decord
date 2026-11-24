@@ -1,22 +1,22 @@
-// Module ID: 9647
-// Function ID: 9648
+// Module ID: 11204
+// Function ID: 11205
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1386, 9646, 21, 4913, 575, 9648, 1254, 9653, 4920, 1112, 9654, 9656, 10094, 9659, 7780, 2]
+// Dependencies: [32, 19, 17, 1386, 8803, 21, 4917, 575, 11205, 1254, 11206, 4924, 1112, 11207, 11209, 11390, 10447, 8419, 2]
 // Exports: default
 
-// Module 9647 (SearchableUserList)
+// Module 11204 (SearchableUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import shared from "shared" /* 4920 */;
-import UserRowConstants from "UserRowConstants" /* 9646 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 9653 */;
+import shared from "shared" /* 4924 */;
+import UserRowConstants from "UserRowConstants" /* 8803 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 11206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -29,7 +29,7 @@ const View = react_native.View;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { searchBarContainer: obj2, searchBar: { height: "disabled", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
+let obj = { searchBarContainer: obj2, searchBar: { height: "sa", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8 };

@@ -1,15 +1,15 @@
-// Module ID: 5488
-// Function ID: 5489
+// Module ID: 5492
+// Function ID: 5493
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1496, 1628, 1497, 1378, 2021, 5100, 1626, 5489, 2]
+// Dependencies: [32, 19, 1496, 1628, 1497, 1378, 2021, 5104, 1626, 5493, 2]
 // Exports: default
 
-// Module 5488 (useSafeAreaInsetsKeyboardAware)
+// Module 5492 (useSafeAreaInsetsKeyboardAware)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import KeyboardTypes from "KeyboardTypes" /* 1626 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2021 */;
-import useKeyboardType from "useKeyboardType" /* 5100 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5489 */;
+import useKeyboardType from "useKeyboardType" /* 5104 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1496 */;

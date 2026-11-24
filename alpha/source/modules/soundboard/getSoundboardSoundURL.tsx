@@ -1,10 +1,10 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15816
+// Function ID: 15817
 // Name: getSoundboardSoundURL
 // Dependencies: [1071, 2]
 // Exports: default
 
-// Module 15788 (getSoundboardSoundURL)
+// Module 15816 (getSoundboardSoundURL)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 13677
-// Function ID: 13678
+// Module ID: 13587
+// Function ID: 13588
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 13669, 21, 4913, 5467, 7095, 13678, 1263, 13681, 13688, 13690, 13691, 13692, 13695, 7017, 1500, 5492, 13697, 7092, 1112, 2]
+// Dependencies: [19, 13579, 21, 4917, 5471, 7065, 13588, 1263, 13591, 13598, 13600, 13601, 13602, 13605, 7354, 1500, 5496, 13607, 7229, 1112, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 13677 (HubEmailConnectionModal)
+// Module 13587 (HubEmailConnectionModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import useNavigation from "useNavigation" /* 1500 */;
-import NavigatorConstants from "NavigatorConstants" /* 5467 */;
-import reactDefault from "react" /* 5492 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
-import Navigator2 from "Navigator" /* 7092 */;
-import NavigatorHeader from "NavigatorHeader" /* 7095 */;
-import HubConstants from "HubConstants" /* 13669 */;
-import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13697 */;
+import NavigatorConstants from "NavigatorConstants" /* 5471 */;
+import reactDefault from "react" /* 5496 */;
+import NavigatorHeader from "NavigatorHeader" /* 7065 */;
+import Navigator2 from "Navigator" /* 7229 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7354 */;
+import HubConstants from "HubConstants" /* 13579 */;
+import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13607 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

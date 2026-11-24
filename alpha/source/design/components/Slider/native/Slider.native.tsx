@@ -1,19 +1,19 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14771
+// Function ID: 14772
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 4913, 575, 4974, 10970, 5129, 5130, 5078, 14503, 14504, 1378, 2]
+// Dependencies: [32, 19, 17, 21, 4917, 575, 4978, 8718, 5133, 5134, 5082, 14772, 14773, 1378, 2]
 // Exports: Slider, useLatestSliderValue
 
-// Module 14502 (Slider)
+// Module 14771 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5129 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
-import _modDef10970 from "module_10970" /* 10970 */;
+import HapticUtils from "HapticUtils" /* 5133 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5134 */;
+import _modDef8718 from "module_8718" /* 8718 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -96,7 +96,7 @@ export function Slider(maxValue) {
   ({ accessibilityLabel, accessibilityHint, testID } = maxValue);
   const tmp = closure_8();
   const tmp2 = step;
-  let obj = step(4974);
+  let obj = step(4978);
   const theme = obj.useThemeContext().theme;
   [first, _slicedToArray] = react.useState(false);
   let tmp7 = defaultValue;
@@ -182,15 +182,15 @@ export function Slider(maxValue) {
     testID,
     onResponderGrant: fn
   };
-  const tmp24 = _modDef10970;
+  const tmp24 = _modDef8718;
   if (value == null) {
     value = first1;
   }
-  const tmp2Result = tmp2(5078);
+  const tmp2Result = tmp2(5082);
   if (tmp2Result.isThemeDark(theme)) {
-    tmp2Result3 = tmp2(14503);
+    tmp2Result3 = tmp2(14772);
   } else {
-    tmp2Result3 = tmp2(14504);
+    tmp2Result3 = tmp2(14773);
   }
   tmp26 = undefined;
   if (null != formatValue) {

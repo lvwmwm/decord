@@ -1,12 +1,12 @@
-// Module ID: 17416
-// Function ID: 17417
+// Module ID: 17454
+// Function ID: 17455
 // Name: MobileNotifSettingsRendererConfig
-// Dependencies: [16896, 17417, 17434, 2]
+// Dependencies: [16930, 17455, 17472, 2]
 
-// Module 17416 (MobileNotifSettingsRendererConfig)
-import MobileNotifSettings from "MobileNotifSettings" /* 16896 */;
-import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 17417 */;
-import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 17434 */;
+// Module 17454 (MobileNotifSettingsRendererConfig)
+import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
+import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 17455 */;
+import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 17472 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
@@ -26,20 +26,20 @@ obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS_CHOICE] = MobileNoti
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_INVITES_RECONNECTING] = MobileNotifSettingsNodesAll.InvitesReconnecting;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_TRENDING_SUGGESTIONS] = MobileNotifSettingsNodesAll.TrendingSuggestions;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_UPDATES_OFFERS] = MobileNotifSettingsNodesAll.UpdatesOffers;
-obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CUSTOM_STATUS_UPDATE] = MobileNotifSettingsNodesAll.CustomStatusUpdate;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_ONLINE] = MobileNotifSettingsNodesAll.FriendOnline;
-obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUEST_REMINDER] = MobileNotifSettingsNodesAll.FriendRequestReminder;
-obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_SUGGESTIONS] = MobileNotifSettingsNodesAll.FriendSuggestions;
-obj[MobileNotifSettings.MobileNotifSettings.NOTIF_NUDGE_NEW_FRIEND_DM] = MobileNotifSettingsNodesAll.NudgeNewFriendDm;
-obj[MobileNotifSettings.MobileNotifSettings.NOTIF_PROFILE_UPDATES] = MobileNotifSettingsNodesAll.ProfileUpdates;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING_LOW] = MobileNotifSettingsNodesAll.FriendsGamingLow;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING_DEFAULT] = MobileNotifSettingsNodesAll.FriendsGamingDefault;
-obj[MobileNotifSettings.MobileNotifSettings.NOTIF_GAMING_OTHER] = MobileNotifSettingsNodesAll.GamingOther;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CUSTOM_STATUS_UPDATE] = MobileNotifSettingsNodesAll.CustomStatusUpdate;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_PROFILE_UPDATES] = MobileNotifSettingsNodesAll.ProfileUpdates;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUEST_REMINDER] = MobileNotifSettingsNodesAll.FriendRequestReminder;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_NUDGE_NEW_FRIEND_DM] = MobileNotifSettingsNodesAll.NudgeNewFriendDm;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_SUGGESTIONS] = MobileNotifSettingsNodesAll.FriendSuggestions;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_GO_LIVE] = MobileNotifSettingsNodesAll.GoLive;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_ACTIVITY_LOW] = MobileNotifSettingsNodesAll.VoiceActivityLow;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_ACTIVITY_DEFAULT] = MobileNotifSettingsNodesAll.VoiceActivityDefault;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_CHANNEL_ACTIVITY] = MobileNotifSettingsNodesAll.VoiceChannelActivity;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_POLLS] = MobileNotifSettingsNodesAll.Polls;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_GAMING_OTHER] = MobileNotifSettingsNodesAll.GamingOther;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS] = MobileNotifSettingsNodesAll.Reactions;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_GUILD_EVENT_NOTIFICATIONS] = MobileNotifSettingsNodesAll.GuildEventNotifications;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_UPCOMING_SERVER_EVENT] = MobileNotifSettingsNodesAll.UpcomingServerEvent;

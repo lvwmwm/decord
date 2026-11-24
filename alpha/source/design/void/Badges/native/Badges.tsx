@@ -1,15 +1,15 @@
-// Module ID: 15421
-// Function ID: 15422
+// Module ID: 15442
+// Function ID: 15443
 // Name: Badges/Badges
-// Dependencies: [19, 17, 21, 4913, 575, 5504, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 5508, 2]
 // Exports: TextBadge
 
-// Module 15421 (Badges/Badges)
+// Module 15442 (Badges/Badges)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

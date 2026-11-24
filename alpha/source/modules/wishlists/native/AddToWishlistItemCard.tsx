@@ -1,20 +1,20 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 14893
+// Function ID: 14894
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1071, 21, 4913, 575, 14623, 8980, 8974, 1255, 8990, 5595, 1112, 8981, 9040, 2]
+// Dependencies: [5, 32, 19, 17, 1071, 21, 4917, 575, 14891, 11020, 11084, 1255, 10978, 5599, 1112, 11021, 11073, 2]
 // Exports: default
 
-// Module 14625 (AddToWishlistItemCard)
+// Module 14893 (AddToWishlistItemCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import HeartOutlineIcon2 from "HeartOutlineIcon" /* 8974 */;
-import SKUPreviewDefault from "SKUPreview" /* 8980 */;
+import SKUPreviewDefault from "SKUPreview" /* 11020 */;
+import HeartOutlineIcon2 from "HeartOutlineIcon" /* 11084 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c4;

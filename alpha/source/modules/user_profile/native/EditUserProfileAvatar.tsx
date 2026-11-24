@@ -1,23 +1,23 @@
-// Module ID: 15945
-// Function ID: 15946
+// Module ID: 15986
+// Function ID: 15987
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 4914, 21, 4913, 7520, 7539, 2173, 8907, 8912, 15936, 5127, 15937, 2119, 15848, 15848, 8905, 8131, 504, 4738, 8213, 15946, 15850, 1112, 7030, 15947, 1186, 2]
+// Dependencies: [19, 17, 4918, 21, 4917, 6253, 6254, 2173, 11797, 9361, 15977, 5131, 15978, 2119, 15895, 15895, 14280, 6249, 504, 4742, 9380, 15987, 15897, 1112, 6026, 15988, 1186, 2]
 // Exports: default
 
-// Module 15945 (EditUserProfileAvatar)
+// Module 15986 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const ProfileCustomizationUtils = tmp3(8131);
+const ProfileCustomizationUtils = tmp3(6249);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });
@@ -111,7 +111,7 @@ export default function EditUserProfileAvatar(user) {
       showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar),
       analyticsLocations
     };
-    const tmp4 = asyncRequire(15937, dependencyMap.paths);
+    const tmp4 = asyncRequire(15978, dependencyMap.paths);
     if (!flag) {
       editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(flag2[16]);

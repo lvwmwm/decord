@@ -1,17 +1,17 @@
-// Module ID: 20102
-// Function ID: 20103
+// Module ID: 20145
+// Function ID: 20146
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2188, 7996, 1071, 1112, 1254, 6834, 1255, 1268, 2]
+// Dependencies: [5, 2188, 8434, 1071, 1112, 1254, 8794, 1255, 1268, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 20102 (GlobalDiscoveryServersUtils)
+// Module 20145 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1071 */;
 import intl8 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import v1 from "v1" /* 1268 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 7996 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8434 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -259,7 +259,7 @@ export function fromDiscoverableGuildServer(id) {
   return obj;
 }
 export function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "add", discoverySplash: 16628298607011793000000000000000000000000000000000000000000000000000000000000000000, emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "channel_id", discoverySplash: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003192370994897, emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

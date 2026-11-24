@@ -1,29 +1,29 @@
-// Module ID: 10098
-// Function ID: 10099
+// Module ID: 13935
+// Function ID: 13936
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4913, 575, 5122, 10099, 8669, 10100, 10104, 5990, 12, 10105, 1112, 10107, 9818, 7688, 10109, 5600, 1493, 9023, 5504, 10111, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 5126, 8697, 8082, 8939, 13936, 6293, 12, 13937, 1112, 13345, 9805, 7027, 9477, 5604, 1493, 9279, 5508, 13938, 2]
 // Exports: ForwardPreview
 
-// Module 10098 (ForwardPreview)
+// Module 13935 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1493 */;
-import useThemeDefault from "useTheme" /* 5122 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5990 */;
-import ClipView from "ClipView" /* 9023 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 9818 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 10099 */;
-import ChatItemDefault from "ChatItem" /* 10100 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 10104 */;
-import MosaicMediaType from "MosaicMediaType" /* 10105 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 10111 */;
+import useThemeDefault from "useTheme" /* 5126 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6293 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8697 */;
+import ChatItemDefault from "ChatItem" /* 8939 */;
+import ClipView from "ClipView" /* 9279 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 9805 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 13936 */;
+import MosaicMediaType from "MosaicMediaType" /* 13937 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 13938 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -51,7 +51,7 @@ function MessagePreview(contentMessage) {
   } else {
     TEXT_SUBTLE = tmp(575).colors.TEXT_SUBTLE;
   }
-  let obj = attachmentCount(4913);
+  let obj = attachmentCount(4917);
   const tmp4 = obj.createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(tmp3);
   importDefault = tmp4;
   const items = [tmp4.seeMoreLabelColor, attachmentCount];
@@ -149,7 +149,7 @@ export function ForwardPreview(message) {
         const intl4 = tmp2(1112).intl;
         const obj3 = { image_count: num, video_count: num2 };
         formatToPlainStringResult = intl4.formatToPlainString(tmp2(1112).t.Lr0Top, obj3);
-        AttachmentIcon = tmp2(10107).ImagesIcon;
+        AttachmentIcon = tmp2(13345).ImagesIcon;
       }
       if (num2 > 0) {
         if (attachments.length === num2) {
@@ -205,16 +205,16 @@ export function ForwardPreview(message) {
       const intl3 = tmp2(1112).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1112).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(9818).CirclePlayIcon;
+      AttachmentIcon = tmp2(9805).CirclePlayIcon;
     } else if (num > 0) {
       let ImagesIcon;
       const intl2 = tmp2(1112).intl;
       const obj13 = { count: num };
       const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.h4pFfU, obj13);
       if (1 === num) {
-        ImagesIcon = tmp2(7688).ImageIcon;
+        ImagesIcon = tmp2(7027).ImageIcon;
       } else {
-        ImagesIcon = tmp2(10107).ImagesIcon;
+        ImagesIcon = tmp2(13345).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = formatToPlainStringResult1;
@@ -222,7 +222,7 @@ export function ForwardPreview(message) {
       const intl = tmp2(1112).intl;
       const obj14 = { count: attachments.length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1112).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(10109).AttachmentIcon;
+      AttachmentIcon = tmp2(9477).AttachmentIcon;
     }
   } else {
     tmp6 = null;
@@ -252,7 +252,7 @@ export function ForwardPreview(message) {
   const obj22 = { style: tmp.contentWrapper, children: items6 };
   if (tmp36Result) {
     const obj23 = { variant: "body-md/medium", children: tmp2Result2.getCheckpointLabel(checkpointDataFromMessage) };
-    const Text = tmp2(5504).Text;
+    const Text = tmp2(5508).Text;
     tmp2Result2 = checkpoint_CheckpointMessageComponentUtils;
     tmp36Result = tmp36(Text, obj23);
   }
@@ -279,7 +279,7 @@ export function ForwardPreview(message) {
     let tmp36Result7 = null != tmp8;
     if (tmp36Result7) {
       let str3 = "body-md/medium";
-      const Text2 = tmp2(5504).Text;
+      const Text2 = tmp2(5508).Text;
       if (hasContent) {
         str3 = "body-sm/medium";
       }

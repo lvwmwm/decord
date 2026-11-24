@@ -1,38 +1,38 @@
-// Module ID: 14280
-// Function ID: 14281
+// Module ID: 14311
+// Function ID: 14312
 // Name: GiftCodeEmbed
-// Dependencies: [17, 502, 11905, 1386, 6674, 1071, 1388, 14281, 14282, 14283, 14173, 14176, 14174, 14175, 14177, 14178, 14179, 14180, 13921, 4969, 8680, 4920, 5083, 1112, 12333, 12334, 575, 2168, 11911, 2888, 8673, 8245, 14181, 14284, 14285, 14182, 14183, 6847, 2173, 2]
+// Dependencies: [17, 502, 11780, 1386, 6234, 1071, 1388, 14312, 14313, 14314, 13862, 13865, 13863, 13864, 13866, 13867, 13868, 13869, 11439, 4973, 12236, 4924, 5087, 1112, 12237, 12238, 575, 2168, 11786, 2888, 8086, 8680, 13870, 14315, 14316, 13871, 13858, 7462, 2173, 2]
 // Exports: createGiftCodeEmbed
 
-// Module 14280 (GiftCodeEmbed)
+// Module 14311 (GiftCodeEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl18 from "intl" /* 1112 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import shared from "shared" /* 4920 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
-import react_native from "react-native" /* 8673 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8680 */;
-import GiftSubscriptionCodeUtils from "GiftSubscriptionCodeUtils" /* 11911 */;
-import _modDef13921 from "module_13921" /* 13921 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14173 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14174 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14175 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14176 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14177 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14178 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14179 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 14180 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 14181 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 14182 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 14183 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 14281 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 14282 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 14283 */;
+import shared from "shared" /* 4924 */;
+import react_native from "react-native" /* 8086 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8680 */;
+import _modDef11439 from "module_11439" /* 11439 */;
+import GiftSubscriptionCodeUtils from "GiftSubscriptionCodeUtils" /* 11786 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12236 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13858 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13862 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13863 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13864 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13865 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13866 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13867 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 13868 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 13869 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 13870 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 13871 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 14312 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 14313 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 14314 */;
 import react_native2 from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GiftCodeStore from "GiftCodeStore" /* 11905 */;
+import GiftCodeStore from "GiftCodeStore" /* 11780 */;
 import UserStore from "UserStore" /* 1386 */;
-import SKUStore from "SKUStore" /* 6674 */;
+import SKUStore from "SKUStore" /* 6234 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -54,26 +54,26 @@ function getGiftStyleUrl(giftStyle) {
   } else if (unpackModuleId.SNOWGLOBE === giftStyle) {
     return AssetRegistryDefault14;
   } else if (unpackModuleId.STANDARD_BOX === giftStyle) {
-    return AssetRegistryDefault;
-  } else if (unpackModuleId.COFFEE === giftStyle) {
-    return AssetRegistryDefault4;
-  } else if (unpackModuleId.CAKE === giftStyle) {
     return AssetRegistryDefault2;
-  } else if (unpackModuleId.CHEST === giftStyle) {
-    return AssetRegistryDefault3;
-  } else if (unpackModuleId.SEASONAL_STANDARD_BOX === giftStyle) {
+  } else if (unpackModuleId.COFFEE === giftStyle) {
     return AssetRegistryDefault5;
-  } else if (unpackModuleId.SEASONAL_CAKE === giftStyle) {
+  } else if (unpackModuleId.CAKE === giftStyle) {
+    return AssetRegistryDefault3;
+  } else if (unpackModuleId.CHEST === giftStyle) {
+    return AssetRegistryDefault4;
+  } else if (unpackModuleId.SEASONAL_STANDARD_BOX === giftStyle) {
     return AssetRegistryDefault6;
-  } else if (unpackModuleId.SEASONAL_CHEST === giftStyle) {
+  } else if (unpackModuleId.SEASONAL_CAKE === giftStyle) {
     return AssetRegistryDefault7;
-  } else if (unpackModuleId.SEASONAL_COFFEE === giftStyle) {
+  } else if (unpackModuleId.SEASONAL_CHEST === giftStyle) {
     return AssetRegistryDefault8;
+  } else if (unpackModuleId.SEASONAL_COFFEE === giftStyle) {
+    return AssetRegistryDefault9;
   } else if (unpackModuleId.NITROWEEN_STANDARD === giftStyle) {
-    const obj = { uri: _modDef13921 };
+    const obj = { uri: _modDef11439 };
     return obj;
   } else {
-    return AssetRegistryDefault;
+    return AssetRegistryDefault2;
   }
 }
 ({ Image: c3, processColor: closure_4 } = react_native2);
@@ -106,7 +106,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
       tmp4 = backgroundColor;
       const tmp3 = _require;
       if (obj2.isThemeDark(forcedTheme)) {
-        const tmp3Result = tmp3(5083);
+        const tmp3Result = tmp3(5087);
         const embedBackground = tmp3Result.getEmbedBackground();
         let tmp5Result = subtitleColor(embedBackground);
         if (tmp5Result == null) {
@@ -143,10 +143,10 @@ export function createGiftCodeEmbed(message, forcedTheme) {
               titleColor = titleColor.resolveAssetSource;
               const obj21 = shared;
               if (obj21.isThemeDark(forcedTheme)) {
-                tmp118Result = tmp118(12333);
+                tmp118Result = tmp118(12237);
                 tmp120 = tmp118;
               } else {
-                tmp118Result = tmp118(12334);
+                tmp118Result = tmp118(12238);
                 tmp120 = tmp118;
               }
               const obj2 = { thumbnailUrl: titleColor(tmp118Result).uri, headerText: str8.toUpperCase(), titleText: intl15.string(intl18.t.SdKbX2), titleColor: tmp122, headerColor: dependencyMap, thumbnailBackgroundColor, subtitle: stringResult, subtitleColor };
@@ -286,17 +286,17 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                 if (null != value.giftStyle || message.type === thumbnailBackgroundColor.CUSTOM_GIFT) {
                   tmp85 = getGiftStyleUrl(value.giftStyle);
                 } else {
-                  tmp85 = AssetRegistryDefault9;
+                  tmp85 = AssetRegistryDefault10;
                 }
                 const assetUriForEmbed5 = getAssetUriForEmbed5(tmp85);
                 const getAssetUriForEmbed6 = renderer_EmbedUtils.getAssetUriForEmbed;
                 renderer_EmbedUtils;
                 const tmp81Result2 = shared;
                 if (tmp81Result2.isThemeDark(forcedTheme)) {
-                  tmp90Result = tmp90(14284);
+                  tmp90Result = tmp90(14315);
                   tmp92 = tmp90;
                 } else {
-                  tmp90Result = tmp90(14285);
+                  tmp90Result = tmp90(14316);
                   tmp92 = tmp90;
                 }
                 assetUriForEmbed6 = getAssetUriForEmbed6(tmp90Result);
@@ -312,17 +312,17 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                 if (null != value.giftStyle || message.type === thumbnailBackgroundColor.CUSTOM_GIFT) {
                   tmp73 = getGiftStyleUrl(value.giftStyle);
                 } else {
-                  tmp73 = AssetRegistryDefault10;
+                  tmp73 = AssetRegistryDefault11;
                 }
                 const assetUriForEmbed3 = getAssetUriForEmbed3(tmp73);
                 const getAssetUriForEmbed4 = renderer_EmbedUtils.getAssetUriForEmbed;
                 renderer_EmbedUtils;
                 const tmp69Result2 = shared;
                 if (tmp69Result2.isThemeDark(forcedTheme)) {
-                  tmp78Result = tmp78(14284);
+                  tmp78Result = tmp78(14315);
                   tmp80 = tmp78;
                 } else {
-                  tmp78Result = tmp78(14285);
+                  tmp78Result = tmp78(14316);
                   tmp80 = tmp78;
                 }
                 assetUriForEmbed6 = getAssetUriForEmbed4(tmp78Result);
@@ -340,10 +340,10 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                     renderer_EmbedUtils;
                     const obj24 = shared;
                     if (obj24.isThemeDark(forcedTheme)) {
-                      tmp137Result = tmp137(14284);
+                      tmp137Result = tmp137(14315);
                       tmp50 = tmp137;
                     } else {
-                      tmp137Result = tmp137(14285);
+                      tmp137Result = tmp137(14316);
                       tmp50 = tmp137;
                     }
                     const assetUriForEmbed7 = getAssetUriForEmbed7(tmp137Result);
@@ -358,17 +358,17 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                 if (null != value.giftStyle || message.type === thumbnailBackgroundColor.CUSTOM_GIFT) {
                   tmp60 = getGiftStyleUrl(value.giftStyle);
                 } else {
-                  tmp60 = AssetRegistryDefault11;
+                  tmp60 = AssetRegistryDefault;
                 }
                 const assetUriForEmbed1 = getAssetUriForEmbed(tmp60);
                 const getAssetUriForEmbed2 = renderer_EmbedUtils.getAssetUriForEmbed;
                 renderer_EmbedUtils;
                 const tmp56Result2 = shared;
                 if (tmp56Result2.isThemeDark(forcedTheme)) {
-                  tmp65Result = tmp65(14284);
+                  tmp65Result = tmp65(14315);
                   tmp67 = tmp65;
                 } else {
-                  tmp65Result = tmp65(14285);
+                  tmp65Result = tmp65(14316);
                   tmp67 = tmp65;
                 }
                 assetUriForEmbed6 = getAssetUriForEmbed2(tmp65Result);
@@ -377,9 +377,9 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                 assetUriForEmbed = assetUriForEmbed1;
               }
               let tmp94 = assetUriForEmbed;
-              const tmp53Result = tmp53(6847);
+              const tmp53Result = tmp53(7462);
               if (tmp53Result.isGameItemSKU(value2)) {
-                const tmp53Result2 = tmp53(6847);
+                const tmp53Result2 = tmp53(7462);
                 const str3 = tmp53Result2.getGameItemThumbnailUrl(value2);
                 let str1;
                 if (str3 != null) {
@@ -398,7 +398,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                   const intl11 = tmp53(1112).intl;
                   const formatToPlainString = intl11.formatToPlainString;
                   const t1SOId = tmp53(1112).t.t1SOId;
-                  const tmp50Result = tmp50(4969);
+                  const tmp50Result = tmp50(4973);
                   let str4 = tmp50Result.getName(currentUser);
                   if (str4 == null) {
                     str4 = "";
@@ -421,7 +421,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                     const intl13 = tmp53(1112).intl;
                     const formatToPlainString2 = intl13.formatToPlainString;
                     const DDO4Wz = tmp53(1112).t.DDO4Wz;
-                    const tmp50Result4 = tmp50(4969);
+                    const tmp50Result4 = tmp50(4973);
                     let str7 = tmp50Result4.getName(user);
                     if (str7 == null) {
                       str7 = "";

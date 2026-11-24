@@ -1,13 +1,13 @@
-// Module ID: 8169
-// Function ID: 8170
+// Module ID: 8971
+// Function ID: 8972
 // Name: GenericIAPStore
-// Dependencies: [504, 12, 8170, 572, 2]
+// Dependencies: [504, 12, 8972, 572, 2]
 
-// Module 8169 (GenericIAPStore)
+// Module 8971 (GenericIAPStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ProductIds from "ProductIds" /* 8170 */;
+import premium_ProductIds from "premium/ProductIds" /* 8972 */;
 import size from "module_2" /* 2 */;
 
 let c3 = null;
@@ -23,9 +23,9 @@ class GenericIAPStore extends Store {
     if (tmp) {
       const arr = _modDef12;
       tmp = arr.filter(c3, (identifier) => {
-        const GenericProductIds = ProductIds.GenericProductIds;
+        const GenericProductIds = premium_ProductIds.GenericProductIds;
         return GenericProductIds.includes(identifier.identifier);
-      }).length === ProductIds.GenericProductIds.length;
+      }).length === premium_ProductIds.GenericProductIds.length;
     }
     return tmp;
   }

@@ -1,9 +1,9 @@
-// Module ID: 8931
-// Function ID: 8932
+// Module ID: 10986
+// Function ID: 10987
 // Name: CollectiblesPromotionBlockStyle
 // Dependencies: [2]
 
-// Module 8931 (CollectiblesPromotionBlockStyle)
+// Module 10986 (CollectiblesPromotionBlockStyle)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesPromotionBlockStyle.tsx");

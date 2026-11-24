@@ -1,20 +1,20 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8251
+// Function ID: 8252
 // Name: AnalyticsTypes
-// Dependencies: [6561, 2]
+// Dependencies: [6748, 2]
 // Exports: getContentProperties, getQuestContentName, getQuestStatus
 
-// Module 8430 (AnalyticsTypes)
-import QuestTypes from "QuestTypes" /* 6561 */;
+// Module 8251 (AnalyticsTypes)
+import QuestTypes from "QuestTypes" /* 6748 */;
 import size from "module_2" /* 2 */;
 
-const f93142 = (item) => QuestTypes.QuestContent[item] === questContent;
+const f92786 = (item) => QuestTypes.QuestContent[item] === questContent;
 let closure_2 = Object.keys(QuestTypes.QuestContent);
 const result = size.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsTypes.tsx");
 
 export function getQuestContentName(questContent) {
   let closure_0 = questContent;
-  let str = closure_2.find(f93142);
+  let str = closure_2.find(f92786);
   if (str == null) {
     str = "";
   }
@@ -54,7 +54,7 @@ export function getContentProperties(questContent, questContentPosition, questCo
   let str;
   let closure_0 = questContent;
   const obj = { content_id: questContent, content_name: str, content_position: questContentPosition, row_index: questContentRowIndex };
-  str = closure_2.find(f93142);
+  str = closure_2.find(f92786);
   if (str == null) {
     str = "";
   }

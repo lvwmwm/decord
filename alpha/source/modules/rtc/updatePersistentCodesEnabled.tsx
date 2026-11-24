@@ -1,20 +1,20 @@
-// Module ID: 17346
-// Function ID: 17347
+// Module ID: 17384
+// Function ID: 17385
 // Name: updatePersistentCodesEnabled
-// Dependencies: [5, 502, 4762, 5561, 9708, 1071, 572, 9707, 6349, 5860, 1112, 9711, 6529, 2]
+// Dependencies: [5, 502, 4766, 5565, 8540, 1071, 572, 8539, 5666, 5920, 1112, 8543, 6671, 2]
 // Exports: updatePersistentCodesEnabled
 
-// Module 17346 (updatePersistentCodesEnabled)
+// Module 17384 (updatePersistentCodesEnabled)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9707 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9708 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9711 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8539 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8540 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8543 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import VoiceStateStore from "VoiceStateStore" /* 5565 */;
 import size from "module_2" /* 2 */;
 
 let body, c0, c1, c2, closure_4, closure_5, dispatchResult, getChannel, id, persistentCodesEnabled, voiceStateForUser;

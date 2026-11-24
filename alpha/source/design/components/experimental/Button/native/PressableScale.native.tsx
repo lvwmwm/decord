@@ -1,14 +1,14 @@
-// Module ID: 7605
-// Function ID: 7606
+// Module ID: 8353
+// Function ID: 8354
 // Name: PressableScale
-// Dependencies: [109, 19, 17, 21, 1653, 5518, 2]
+// Dependencies: [109, 19, 17, 21, 1653, 5522, 2]
 // Exports: PressableScale
 
-// Module 7605 (PressableScale)
+// Module 8353 (PressableScale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import ButtonHooks from "ButtonHooks" /* 5518 */;
+import ButtonHooks from "ButtonHooks" /* 5522 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

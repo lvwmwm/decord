@@ -1,15 +1,15 @@
-// Module ID: 18663
-// Function ID: 18664
+// Module ID: 18704
+// Function ID: 18705
 // Name: ConjureStaffAccess
-// Dependencies: [4843, 4784, 4855, 1386, 1071, 504, 5529, 2]
+// Dependencies: [4847, 4788, 4859, 1386, 1071, 504, 5533, 2]
 // Exports: useConjureStaffAccessTarget
 
-// Module 18663 (ConjureStaffAccess)
+// Module 18704 (ConjureStaffAccess)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import GuildStore from "GuildStore" /* 4784 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import GuildChannelStore from "GuildChannelStore" /* 4847 */;
+import GuildStore from "GuildStore" /* 4788 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

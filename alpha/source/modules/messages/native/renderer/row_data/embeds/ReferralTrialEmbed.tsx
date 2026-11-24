@@ -1,10 +1,10 @@
-// Module ID: 8867
-// Function ID: 8868
+// Module ID: 14259
+// Function ID: 14260
 // Name: ReferralTrialEmbed
-// Dependencies: [4762, 1386, 2178, 8847, 8851, 1071, 1388, 4913, 575, 8170, 8245, 8868, 1112, 8869, 4969, 2173, 8854, 8855, 2187, 1625, 8840, 2]
+// Dependencies: [4766, 1386, 2178, 8998, 8963, 1071, 1388, 4917, 575, 8972, 8680, 9103, 1112, 14260, 4973, 2173, 8997, 13741, 2187, 1625, 9497, 2]
 // Exports: createReferralTrialEmbedRedeemable
 
-// Module 8867 (ReferralTrialEmbed)
+// Module 14259 (ReferralTrialEmbed)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl12 from "intl" /* 1112 */;
@@ -12,19 +12,19 @@ import PremiumConstants from "PremiumConstants" /* 1388 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import createStyles from "createStyles" /* 4913 */;
-import UserUtilsDefault from "UserUtils" /* 4969 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8840 */;
-import useTrialOffer from "useTrialOffer" /* 8854 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 8855 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8868 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8869 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import createStyles from "createStyles" /* 4917 */;
+import UserUtilsDefault from "UserUtils" /* 4973 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8680 */;
+import useTrialOffer from "useTrialOffer" /* 8997 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9103 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9497 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 13741 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14260 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import UserStore from "UserStore" /* 1386 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
-import UserOfferStore from "UserOfferStore" /* 8847 */;
-import IAPStore from "IAPStore" /* 8851 */;
+import UserOfferStore from "UserOfferStore" /* 8998 */;
+import IAPStore from "IAPStore" /* 8963 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -66,7 +66,7 @@ export function createReferralTrialEmbedRedeemable(message, theme, id, relevantU
     const channel = ChannelStore.getChannel(message.getChannelId());
     if (null != channel) {
       if (channel.isDM()) {
-        const obj = { backgroundColor, borderColor: backgroundColor, thumbnailCornerRadius: 3, headerLogoUrl: tmp46Result.getAssetUriForEmbed(AssetRegistryDefault2), headerText: stringResult.toLocaleLowerCase(), headerColor: headerTextColor, thumbnailUrl: tmp46Result7.getAssetUriForEmbed(AssetRegistryDefault3) };
+        const obj = { backgroundColor, borderColor: backgroundColor, thumbnailCornerRadius: 3, headerLogoUrl: tmp46Result.getAssetUriForEmbed(AssetRegistryDefault), headerText: stringResult.toLocaleLowerCase(), headerColor: headerTextColor, thumbnailUrl: tmp46Result7.getAssetUriForEmbed(AssetRegistryDefault3) };
         tmp46Result = renderer_EmbedUtils;
         const intl = tmp46(1112).intl;
         stringResult = intl.string(intl12.t.gtNqJQ);
@@ -106,7 +106,7 @@ export function createReferralTrialEmbedRedeemable(message, theme, id, relevantU
               const userTrialOffer = UserOfferStore.getUserTrialOffer(closure_9);
               const offerIds = IAPStore.getOfferIds();
               const _Object = Object;
-              const values = Object.values(tmp46(8170).TrialIdToProductOfferId[closure_9]);
+              const values = Object.values(tmp46(8972).TrialIdToProductOfferId[closure_9]);
               let id1;
               const id2 = relevantUserTrialOffer.id;
               const everyResult = values.every((item) => set.has(item));
@@ -165,7 +165,7 @@ export function createReferralTrialEmbedRedeemable(message, theme, id, relevantU
                   const merged1 = Object.assign(obj);
                   let tmp35 = obj9;
                   if (!result && !tmp11 && (id2 === id1 && everyResult) && id !== id) {
-                    const obj10 = { footerText: replaced, footerTextColor, canBeAccepted: !result && !tmp11 && (id2 === id1 && everyResult) && id !== id, acceptLabelText: intl8.string(intl12.t.bXTClc), acceptLabelColor, acceptLabelIconUrl: tmp46Result11.getAssetUriForEmbed(AssetRegistryDefault) };
+                    const obj10 = { footerText: replaced, footerTextColor, canBeAccepted: !result && !tmp11 && (id2 === id1 && everyResult) && id !== id, acceptLabelText: intl8.string(intl12.t.bXTClc), acceptLabelColor, acceptLabelIconUrl: tmp46Result11.getAssetUriForEmbed(AssetRegistryDefault2) };
                     const merged2 = Object.assign(obj9);
                     intl8 = tmp46(1112).intl;
                     tmp35 = obj10;

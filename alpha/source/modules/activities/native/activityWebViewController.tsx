@@ -1,18 +1,18 @@
-// Module ID: 10787
-// Function ID: 10788
+// Module ID: 10063
+// Function ID: 10064
 // Name: activityWebViewController
-// Dependencies: [4761, 10788, 10789, 6625, 10811, 10626, 5861, 1112, 2]
+// Dependencies: [4765, 10064, 10065, 6812, 10087, 9859, 5921, 1112, 2]
 // Exports: getOrCreateActivityWebViewController, releaseActivityWebView
 
-// Module 10787 (activityWebViewController)
+// Module 10063 (activityWebViewController)
 import intl3 from "intl" /* 1112 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6625 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10626 */;
-import makeIframeIdDefault from "makeIframeId" /* 10788 */;
-import createWebViewControllerDefault from "createWebViewController" /* 10789 */;
-import makeShellBridgeSecretDefault from "makeShellBridgeSecret" /* 10811 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5921 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6812 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 9859 */;
+import makeIframeIdDefault from "makeIframeId" /* 10064 */;
+import createWebViewControllerDefault from "createWebViewController" /* 10065 */;
+import makeShellBridgeSecretDefault from "makeShellBridgeSecret" /* 10087 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4765 */;
 import size from "module_2" /* 2 */;
 
 let _undefined;

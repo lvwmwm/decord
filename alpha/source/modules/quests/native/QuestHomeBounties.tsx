@@ -1,20 +1,20 @@
-// Module ID: 16378
-// Function ID: 16379
+// Module ID: 16411
+// Function ID: 16412
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 8403, 4759, 21, 575, 4913, 4746, 9080, 16379, 572, 16385, 9958, 504, 16392, 16398, 2]
+// Dependencies: [32, 19, 17, 8223, 4763, 21, 575, 4917, 4750, 9420, 16412, 572, 16418, 9751, 504, 16425, 16431, 2]
 
-// Module 16378 (QuestHomeBounties)
+// Module 16411 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16392 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16398 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16425 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16431 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 8403 */;
+import BountyStore from "BountyStore" /* 8223 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,19 +49,19 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
   shopCarouselConfig = shopCarouselConfig.shopCarouselConfig;
   let questHomeBounties;
   let tmp = questHomeBounties;
-  let obj = questHomeBounties(9958);
+  let obj = questHomeBounties(9751);
   questHomeBounties = obj.useQuestHomeBounties().questHomeBounties;
   const tmp3 = closure_11();
   let first;
   let closure_1;
   let closure_2;
   if (questHomeBounties.length > 0) {
-    const items = [tmp(4746).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
+    const items = [tmp(4750).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
     items1 = items;
   } else {
     items1 = [];
   }
-  const tmpResult = tmp(9080);
+  const tmpResult = tmp(9420);
   const tmp4 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items1), 2);
   first = tmp4[0];
   closure_1 = tmp6;
@@ -113,8 +113,8 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
     if (!stateFromStores) {
       let tmp11 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp11) {
-        tmp11 = orbShopProducts.length >= tmp(16385).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-        orbShopProducts.length >= tmp(16385).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp11 = orbShopProducts.length >= tmp(16418).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        orbShopProducts.length >= tmp(16418).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp14Result = null;
       if (tmp11) {

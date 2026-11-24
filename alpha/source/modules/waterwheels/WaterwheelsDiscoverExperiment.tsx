@@ -1,10 +1,10 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 8780
+// Function ID: 8781
 // Name: WaterwheelsDiscoverExperiment
 // Dependencies: [1245, 502, 1386, 1450, 504, 2]
 // Exports: getWaterwheelsDiscoverEnabled, useWaterwheelsDiscoverEnabled
 
-// Module 10041 (WaterwheelsDiscoverExperiment)
+// Module 8780 (WaterwheelsDiscoverExperiment)
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -20,41 +20,17 @@ const result = size.fileFinishedImporting("modules/waterwheels/WaterwheelsDiscov
 
 export const WaterwheelsDiscoverExperiment = apexExperiment;
 export function getWaterwheelsDiscoverEnabled(fetchDehydrated) {
-  const currentUser = UserStore.getCurrentUser();
-  let flag;
-  if (currentUser != null) {
-    flag = currentUser.isStaff();
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  let enabled = flag;
-  if (enabled) {
-    const obj = { location: fetchDehydrated };
-    enabled = apexExperiment.getConfig(obj).enabled;
-  }
-  return enabled;
+  const obj = { location: fetchDehydrated };
+  return apexExperiment.getConfig(obj).enabled;
 }
 export function useWaterwheelsDiscoverEnabled(WaterwheelsDiscoverPanel_str) {
+  let _location;
   _require = WaterwheelsDiscoverPanel_str;
   let obj = require("get initialized");
   const items = [ApexExperimentStore, AuthenticationStore, UserStore];
   const items1 = [WaterwheelsDiscoverPanel_str];
   return obj.useStateFromStores(items, () => {
-    const currentUser = UserStore.getCurrentUser();
-    let flag;
-    const tmp = WaterwheelsDiscoverPanel_str;
-    if (currentUser != null) {
-      flag = currentUser.isStaff();
-    }
-    if (flag == null) {
-      flag = false;
-    }
-    let enabled = flag;
-    if (enabled) {
-      const obj = { location: tmp };
-      enabled = apexExperiment.getConfig(obj).enabled;
-    }
-    return enabled;
+    const obj = { location: _location };
+    return apexExperiment.getConfig(obj).enabled;
   }, items1);
 }

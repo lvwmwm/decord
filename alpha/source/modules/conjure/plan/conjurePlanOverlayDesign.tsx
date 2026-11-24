@@ -1,19 +1,21 @@
-// Module ID: 18558
-// Function ID: 18559
+// Module ID: 18599
+// Function ID: 18600
 // Name: conjurePlanOverlayDesign
-// Dependencies: [18559, 18562, 2]
+// Dependencies: [18600, 18603, 2]
 // Exports: conjurePlanDesignPreviews, conjurePlanOverlayWidgetBox
 
-// Module 18558 (conjurePlanOverlayDesign)
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 18559 */;
-import conjureOverlayPreview from "conjureOverlayPreview" /* 18562 */;
+// Module 18599 (conjurePlanOverlayDesign)
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 18600 */;
+import conjureOverlayPreview from "conjureOverlayPreview" /* 18603 */;
 import size_mod from "module_2" /* 2 */;
 
+let c2 = 1920;
 const combined = "" + Number((2.357563850687623).toFixed(3)) + "%";
 const combined1 = "" + Number((1.25).toFixed(3)) + "%";
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanOverlayDesign.tsx");
 
+export const CONJURE_PLAN_OVERLAY_SCENE_WIDTH = 1920;
 export const CONJURE_PLAN_OVERLAY_SCENE_ASPECT_RATIO = 1.8860510805500983;
 export const CONJURE_PLAN_OVERLAY_WIDGET_TOP = combined;
 export const CONJURE_PLAN_OVERLAY_WIDGET_END = combined1;
@@ -101,7 +103,7 @@ export function conjurePlanDesignPreviews(proposal) {
     if (null != id3) {
       const obj4 = { experienceId: id3, design: overlay_design_image1, size: overlayWidgetPreviewSize(overlay_widget) };
       overlay_widget = proposal.overlay_widget;
-      overlayWidgetPreviewSize = tmp(18562).overlayWidgetPreviewSize;
+      overlayWidgetPreviewSize = tmp(18603).overlayWidgetPreviewSize;
       conjureOverlayPreview;
       if (overlay_widget == null) {
         overlay_widget = null;
@@ -116,7 +118,7 @@ export function conjurePlanOverlayWidgetBox(size) {
   let result1;
   const bound = Math.min(1, 1872 / size.width, 970 / size.height);
   size = { width: "" + Number(result.toFixed(3)) + "%", height: "" + Number(result1.toFixed(3)) + "%" };
-  result = size.width * bound / 1920 * 100;
+  result = size.width * bound / c2 * 100;
   result1 = size.height * bound / 1018 * 100;
   return size;
 }

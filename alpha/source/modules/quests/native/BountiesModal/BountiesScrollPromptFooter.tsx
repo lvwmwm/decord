@@ -1,25 +1,25 @@
-// Module ID: 16322
-// Function ID: 16323
+// Module ID: 16355
+// Function ID: 16356
 // Name: BountiesScrollPromptFooter
-// Dependencies: [19, 17, 4914, 6558, 21, 4913, 575, 5123, 5126, 504, 1628, 1653, 5040, 16323, 16324, 8947, 2]
+// Dependencies: [19, 17, 4918, 6745, 21, 4917, 575, 5127, 5130, 504, 1628, 1653, 5044, 16356, 16357, 9433, 2]
 // Exports: default
 
-// Module 16322 (BountiesScrollPromptFooter)
+// Module 16355 (BountiesScrollPromptFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import _modDef1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5123 */;
-import timingPresets from "timingPresets" /* 5126 */;
-import QuestConstants from "QuestConstants" /* 6558 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 8947 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16323 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16324 */;
+import timing_timing from "timing/timing" /* 5127 */;
+import timingPresets from "timingPresets" /* 5130 */;
+import QuestConstants from "QuestConstants" /* 6745 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9433 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16356 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16357 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -75,7 +75,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   items4 = [tmp.gradient, opacityStyle];
   const View2 = _modDef1653.View;
   str = "play";
-  BountiesScrollGradientRive = zIndex(5040).BountiesScrollGradientRive;
+  BountiesScrollGradientRive = zIndex(5044).BountiesScrollGradientRive;
   const tmp8 = closure_8;
   if (stateFromStores) {
     str = "halt";

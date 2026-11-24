@@ -1,22 +1,22 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 13635
+// Function ID: 13636
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 4762, 8388, 21, 4913, 575, 7520, 504, 7101, 13724, 5488, 13726, 5646, 5127, 11663, 2119, 1112, 7030, 7151, 5504, 4126, 7461, 12890, 7348, 7045, 7556, 5491, 12849, 5511, 2]
+// Dependencies: [32, 19, 17, 4766, 8209, 21, 4917, 575, 6253, 504, 7071, 13634, 5492, 13636, 6000, 5131, 11552, 2119, 1112, 6026, 7121, 5508, 4128, 7314, 12809, 6014, 6018, 7423, 5495, 12768, 5515, 2]
 // Exports: default
 
-// Module 13725 (CreateGameInvitePostModal)
+// Module 13635 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
-import SlowmodeStore from "SlowmodeStore" /* 8388 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6253 */;
+import SlowmodeStore from "SlowmodeStore" /* 8209 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -67,7 +67,7 @@ function CreateGameInvitePostContent(parentChannel) {
   const tmp = closure_11();
   let tmp2 = tags;
   let tmp3 = dependencyMap;
-  const insets = tags(5488)({ includeKeyboardHeight: true }).insets;
+  const insets = tags(5492)({ includeKeyboardHeight: true }).insets;
   let availableTags = parentChannel.availableTags;
   if (availableTags == null) {
     availableTags = [];
@@ -82,7 +82,7 @@ function CreateGameInvitePostContent(parentChannel) {
     set = new Set(first.map((id) => id.id));
     return set;
   }, items);
-  let obj = parentChannel(13726);
+  let obj = parentChannel(13636);
   let obj2 = {
     parentChannel,
     description: tmp5,
@@ -124,7 +124,7 @@ function CreateGameInvitePostContent(parentChannel) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { parentChannel, onSave, title: intl.string(intl10.t.HPu3kq), tags };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(11663, dependencyMap.paths);
+    const tmp2 = asyncRequire(11552, dependencyMap.paths);
     intl = intl10.intl;
     openLazy(tmp2, "ForumPostTagsActionSheet", obj);
   }, items2);
@@ -136,41 +136,41 @@ function CreateGameInvitePostContent(parentChannel) {
       const obj = parentChannel(onSave[11]);
       return obj.closeCreateGameInvitePostModal();
     },
-    children: closure_8(parentChannel(7151).XSmallIcon, {})
+    children: closure_8(parentChannel(7121).XSmallIcon, {})
   };
-  const PressableOpacity = parentChannel(7030).PressableOpacity;
+  const PressableOpacity = parentChannel(6026).PressableOpacity;
   intl = parentChannel(1112).intl;
   items4 = [closure_8(PressableOpacity, obj5), ];
-  const obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(4126).tOsHsu) };
-  const Text = parentChannel(5504).Text;
+  const obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(4128).tOsHsu) };
+  const Text = parentChannel(5508).Text;
   intl2 = parentChannel(1112).intl;
   items4[1] = closure_8(Text, obj6);
   items5 = [closure_9(View, obj4), , ];
   const obj7 = { style: tmp.body, children: items6 };
-  const obj8 = { label: intl3.string(tmp2(4126)["/mEbGf"]), placeholder: intl4.string(tmp2(4126)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(12890).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
-  const TextArea = parentChannel(7461).TextArea;
+  const obj8 = { label: intl3.string(tmp2(4128)["/mEbGf"]), placeholder: intl4.string(tmp2(4128)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(12809).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
+  const TextArea = parentChannel(7314).TextArea;
   intl3 = parentChannel(1112).intl;
   intl4 = parentChannel(1112).intl;
   items6 = [closure_8(TextArea, obj8), , ];
   let tmp15Result = availableTags.length > 0;
-  const TableRowGroup = parentChannel(7348).TableRowGroup;
+  const TableRowGroup = parentChannel(6014).TableRowGroup;
   if (tmp15Result) {
     const obj9 = { label: intl5.string(parentChannel(1112).t.KM6lRG), subLabel: joined, arrow: true, trailing: closure_8(View, obj10), onPress: callback1 };
-    const TableRow = tmp9(7045).TableRow;
+    const TableRow = tmp9(6018).TableRow;
     intl5 = tmp9(1112).intl;
     joined = undefined;
     if (tags.length > 0) {
       const mapped = tags.map((name) => name.name);
       joined = mapped.join(", ");
     }
-    obj10 = { style: tmp.tagsTrailing, children: closure_8(parentChannel(5504).Text, obj11) };
+    obj10 = { style: tmp.tagsTrailing, children: closure_8(parentChannel(5508).Text, obj11) };
     obj11 = { variant: "body-md/medium", color: "text-muted", children: tags.length };
     tmp15Result = tmp15(TableRow, obj9);
   }
   const obj12 = { hasIcons: false, children: items7 };
   items7 = [tmp15Result, ];
-  const obj13 = { label: intl6.string(tmp2(4126).Xd2NFi), subLabel: intl7.string(tmp2(4126).G91SYQ), value: voiceChatEnabled, onValueChange: callback, disabled: voiceToggleDisabled };
-  const TableSwitchRow = tmp9(7556).TableSwitchRow;
+  const obj13 = { label: intl6.string(tmp2(4128).Xd2NFi), subLabel: intl7.string(tmp2(4128).G91SYQ), value: voiceChatEnabled, onValueChange: callback, disabled: voiceToggleDisabled };
+  const TableSwitchRow = tmp9(7423).TableSwitchRow;
   intl6 = tmp9(1112).intl;
   intl7 = tmp9(1112).intl;
   items7[1] = closure_8(TableSwitchRow, obj13);
@@ -178,7 +178,7 @@ function CreateGameInvitePostContent(parentChannel) {
   let tmp15Result3 = null;
   if (hasTagRequiredError) {
     const obj14 = { variant: "body-sm/medium", color: "text-feedback-critical", children: intl8.string(parentChannel(1112).t.xPfNQi) };
-    const Text2 = tmp9(5504).Text;
+    const Text2 = tmp9(5508).Text;
     intl8 = tmp9(1112).intl;
     tmp15Result3 = tmp15(Text2, obj14);
   }
@@ -187,16 +187,16 @@ function CreateGameInvitePostContent(parentChannel) {
   const obj15 = { style: items8, children: items9 };
   items8 = [tmp.footer, { marginBottom: insets.bottom }];
   let tmp15Result4 = null;
-  const LayerScope = tmp9(5491).LayerScope;
+  const LayerScope = tmp9(5495).LayerScope;
   if (isSlowmodeEnabled) {
-    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(12849), obj17) };
+    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(12768), obj17) };
     obj17 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp15Result4 = tmp15(tmp14, obj16);
   }
   items9 = [tmp15Result4, ];
   const obj18 = { children: closure_9(View, obj15) };
   const obj19 = { variant: "primary", size: "lg", grow: true, text: intl9.string(parentChannel(1112).t.CumH4u), loading: submitting, disabled: !canSubmit, onPress: submit };
-  const Button = tmp9(5511).Button;
+  const Button = tmp9(5515).Button;
   intl9 = tmp9(1112).intl;
   items9[1] = closure_8(Button, obj19);
   items5[2] = closure_8(LayerScope, obj18);
@@ -229,7 +229,7 @@ export default function CreateGameInvitePostModal(parentChannelId) {
   const items = [ChannelStore];
   const items1 = [parentChannelId];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(parentChannelId), items1);
-  const obj3 = parentChannelId(7101);
+  const obj3 = parentChannelId(7071);
   obj3.useNavigatorBackPressHandler(() => {
     const obj = parentChannelId(dependencyMap[11]);
     const result = obj.closeCreateGameInvitePostModal();
@@ -242,7 +242,7 @@ export default function CreateGameInvitePostModal(parentChannelId) {
     if (stateFromStores.isGameInvitesChannel()) {
       const obj2 = { value: analyticsLocations, children: closure_8(CreateGameInvitePostContent, obj4) };
       obj4 = { parentChannel: stateFromStores };
-      const AnalyticsLocationProvider = tmp2(7520).AnalyticsLocationProvider;
+      const AnalyticsLocationProvider = tmp2(6253).AnalyticsLocationProvider;
       tmp4 = closure_8(AnalyticsLocationProvider, obj2);
     }
   }

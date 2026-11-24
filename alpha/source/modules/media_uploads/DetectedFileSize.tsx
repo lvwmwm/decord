@@ -1,10 +1,10 @@
-// Module ID: 8499
-// Function ID: 8500
+// Module ID: 8020
+// Function ID: 8021
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 8499 (_asyncToGenerator)
+// Module 8020 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

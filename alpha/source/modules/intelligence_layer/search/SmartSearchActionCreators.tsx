@@ -1,17 +1,18 @@
-// Module ID: 13236
-// Function ID: 13237
+// Module ID: 13156
+// Function ID: 13157
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 4855, 13201, 13198, 1071, 13200, 13237, 13238, 13221, 572, 1284, 13202, 5966, 2]
+// Dependencies: [5, 4859, 13115, 13112, 13113, 1071, 13114, 13157, 13158, 13116, 13141, 572, 1284, 6267, 2]
 // Exports: fetchAnswer, setResultFeedback
 
-// Module 13236 (SmartSearchActionCreators)
+// Module 13156 (SmartSearchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 13201 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13221 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13113 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 13115 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13141 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 13198 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13112 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchAnswer() {
@@ -20,10 +21,12 @@ let obj = function _fetchAnswer() {
     let c1;
     let c2;
     let closure_1;
-    let closure_8;
+    let closure_9;
     let contextualProperties;
+    let guildId;
     let message_citations;
     let obj10;
+    let requestKey;
     let smartSearchQuery;
     let str;
     function hydrateAndFilterCitations(message_citations) {
@@ -31,26 +34,26 @@ let obj = function _fetchAnswer() {
       const mapped = message_citations.map((sourceId) => {
         let obj2;
         obj = { sourceId: sourceId.source_id, sourceType: sourceId.source_type, guildId: sourceId.guild_id, channelId: sourceId.channel_id, messageId: sourceId.message_id, message: obj2.createMessageRecord(sourceId.message) };
-        obj2 = closure_1_0(closure_1_2[12]);
+        obj2 = closure_1_0(closure_1_2[13]);
         return obj;
       });
       return mapped.filter((message) => !blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message.message));
     }
     function resolveSearchStatus(search_status, length) {
       if ("not_qualified" === search_status) {
-        return closure_1_0(closure_1_2[11]).SmartSearchStatus.NOT_QUALIFIED;
+        return closure_1_0(closure_1_2[9]).SmartSearchStatus.NOT_QUALIFIED;
       } else if ("no_results" === search_status) {
-        return closure_1_0(closure_1_2[11]).SmartSearchStatus.EMPTY;
+        return closure_1_0(closure_1_2[9]).SmartSearchStatus.EMPTY;
       } else if ("success" === search_status) {
         let EMPTY;
         if (length > 0) {
-          EMPTY = closure_1_0(closure_1_2[11]).SmartSearchStatus.LOADED;
+          EMPTY = closure_1_0(closure_1_2[9]).SmartSearchStatus.LOADED;
         } else {
-          EMPTY = closure_1_0(closure_1_2[11]).SmartSearchStatus.EMPTY;
+          EMPTY = closure_1_0(closure_1_2[9]).SmartSearchStatus.EMPTY;
         }
         return EMPTY;
       } else {
-        return closure_1_0(closure_1_2[11]).SmartSearchStatus.ERROR;
+        return closure_1_0(closure_1_2[9]).SmartSearchStatus.ERROR;
       }
     }
     let closure_0 = arg0;
@@ -63,38 +66,37 @@ let obj = function _fetchAnswer() {
         const obj8 = { value, done: true };
         return obj8;
       } else {
-        const obj17 = closure_130_0(closure_130_2[5]);
+        const obj17 = closure_130_0(closure_130_2[6]);
         smartSearchQuery = obj17.getSmartSearchQuery(c0, c1);
         if (null != smartSearchQuery) {
-          const obj18 = closure_130_0(closure_130_2[6]);
+          const obj18 = closure_130_0(closure_130_2[7]);
           if (obj18.isNlpSearchEnabled(smartSearchQuery.guildId, "fetch_answer")) {
             const queryText = smartSearchQuery.queryText;
-            const guildId = smartSearchQuery.guildId;
+            guildId = smartSearchQuery.guildId;
             const channelIds = smartSearchQuery.channelIds;
-            const requestKey = smartSearchQuery.requestKey;
+            requestKey = smartSearchQuery.requestKey;
             if (0 !== queryText.length) {
               if (!closure_130_6.hasSuggestions(smartSearchQuery)) {
-                const obj5 = closure_130_0(closure_130_2[7]);
+                const obj5 = closure_130_0(closure_130_2[8]);
                 const initialSuggestedSearches = obj5.fetchInitialSuggestedSearches(smartSearchQuery, c2);
               }
-              if (!closure_130_5.hasAnswer(guildId, requestKey)) {
-                const _performance2 = performance;
-                closure_8 = performance.now();
-                const obj6 = closure_130_1(closure_130_2[8]);
-                contextualProperties = obj6.getContextualProperties(smartSearchQuery, c2);
-                const obj9 = { type: "SMART_SEARCH_FETCH_START", smartSearchQuery };
-                const obj7 = closure_130_1(closure_130_2[9]);
-                obj7.dispatch(obj9);
-                let c4 = 1;
-                const HTTP = closure_130_0(closure_130_2[10]).HTTP;
-                const request = { url: closure_130_7.SMART_SEARCH(guildId), body: obj10, oldFormErrors: true, rejectWithError: true };
-                const post = HTTP.post;
-                obj10 = { query_text: queryText, channel_ids: channelIds };
-                let c5 = 3;
-                c6 = 1;
-                const obj11 = { value: post(request), done: false };
-                return obj11;
-              }
+              const status2 = closure_130_5.getStatus(guildId, requestKey);
+              const _performance2 = performance;
+              closure_9 = performance.now();
+              const obj6 = closure_130_1(closure_130_2[10]);
+              contextualProperties = obj6.getContextualProperties(smartSearchQuery, c2);
+              const obj9 = { type: "SMART_SEARCH_FETCH_START", smartSearchQuery };
+              const obj7 = closure_130_1(closure_130_2[11]);
+              obj7.dispatch(obj9);
+              let c4 = 1;
+              const HTTP = closure_130_0(closure_130_2[12]).HTTP;
+              const request = { url: closure_130_8.SMART_SEARCH(guildId), body: obj10, oldFormErrors: true, rejectWithError: true, failImmediatelyWhenRateLimited: true, timeout: closure_130_7 };
+              const post = HTTP.post;
+              obj10 = { query_text: queryText, channel_ids: channelIds };
+              let c5 = 3;
+              c6 = 1;
+              const obj11 = { value: post(request), done: false };
+              return obj11;
             }
           }
         }
@@ -107,16 +109,20 @@ let obj = function _fetchAnswer() {
         status = smartSearchQuery.status;
       }
       if (404 === status) {
-        ERROR = closure_130_0(closure_130_2[11]).SmartSearchStatus.EMPTY;
+        ERROR = closure_130_0(closure_130_2[9]).SmartSearchStatus.EMPTY;
       } else {
-        ERROR = closure_130_0(closure_130_2[11]).SmartSearchStatus.ERROR;
+        ERROR = closure_130_0(closure_130_2[9]).SmartSearchStatus.ERROR;
       }
-      let obj2 = closure_130_1(closure_130_2[9]);
-      const obj12 = { type: "SMART_SEARCH_FETCH_FAILURE", smartSearchQuery, status: ERROR };
-      obj2.dispatch(obj12);
-      const obj13 = { smartSearchQuery, requestId: null, durationMs: performance.now() - closure_8, responseStatus: str, smartSearchStatus: ERROR, answerText: "", citations: [], contextualProperties };
+      const status3 = closure_130_5.getStatus(guildId, requestKey);
+      const tmp23 = status3 !== closure_130_0(closure_130_2[9]).SmartSearchStatus.LOADED && status3 !== closure_130_0(closure_130_2[9]).SmartSearchStatus.EMPTY && status3 !== closure_130_0(closure_130_2[9]).SmartSearchStatus.NOT_QUALIFIED;
+      if (tmp23) {
+        let obj2 = closure_130_1(closure_130_2[11]);
+        const obj12 = { type: "SMART_SEARCH_FETCH_FAILURE", smartSearchQuery, status: ERROR };
+        obj2.dispatch(obj12);
+      }
+      const obj13 = { smartSearchQuery, requestId: null, durationMs: performance.now() - closure_9, responseStatus: str, smartSearchStatus: ERROR, answerText: "", citations: [], contextualProperties };
       const _performance = performance;
-      const trackSmartSearchAnswerReturned = closure_130_1(closure_130_2[8]).trackSmartSearchAnswerReturned;
+      const trackSmartSearchAnswerReturned = closure_130_1(closure_130_2[10]).trackSmartSearchAnswerReturned;
       str = "error";
       if (404 === status) {
         str = "no_results";
@@ -131,17 +137,17 @@ let obj = function _fetchAnswer() {
       obj = { value, done: true };
       return obj;
     } else {
-      let closure_10 = value;
-      const citations = hydrateAndFilterCitations(closure_10.body.message_citations);
-      const smartSearchStatus = resolveSearchStatus(closure_10.body.search_status, citations.length);
-      const obj14 = { type: "SMART_SEARCH_FETCH_SUCCESS", smartSearchQuery, smartSearchStatus, answerText: closure_10.body.answer_text, citations, messages: message_citations.map((message) => message.message) };
-      message_citations = closure_10.body.message_citations;
-      const dispatch = closure_130_1(closure_130_2[9]).dispatch;
-      const tmp83 = closure_130_1(closure_130_2[9]);
+      let closure_11 = value;
+      const citations = hydrateAndFilterCitations(closure_11.body.message_citations);
+      const smartSearchStatus = resolveSearchStatus(closure_11.body.search_status, citations.length);
+      const obj14 = { type: "SMART_SEARCH_FETCH_SUCCESS", smartSearchQuery, smartSearchStatus, answerText: closure_11.body.answer_text, citations, messages: message_citations.map((message) => message.message) };
+      message_citations = closure_11.body.message_citations;
+      const dispatch = closure_130_1(closure_130_2[11]).dispatch;
+      const tmp111 = closure_130_1(closure_130_2[11]);
       dispatch(obj14);
-      const obj15 = { smartSearchQuery, requestId: closure_10.body.request_id, durationMs: performance.now() - closure_8, responseStatus: closure_10.body.search_status, smartSearchStatus, answerText: closure_10.body.answer_text, citations, contextualProperties };
+      const obj15 = { smartSearchQuery, requestId: closure_11.body.request_id, durationMs: performance.now() - closure_9, responseStatus: closure_11.body.search_status, smartSearchStatus, answerText: closure_11.body.answer_text, citations, contextualProperties };
       const _performance3 = performance;
-      const trackSmartSearchAnswerReturned2 = closure_130_1(closure_130_2[8]).trackSmartSearchAnswerReturned;
+      const trackSmartSearchAnswerReturned2 = closure_130_1(closure_130_2[10]).trackSmartSearchAnswerReturned;
       const result1 = trackSmartSearchAnswerReturned2(obj15);
       c4 = 0;
     }
@@ -153,6 +159,7 @@ let obj = function _fetchAnswer() {
   return obj(...arguments);
 };
 SmartSearchResultsStoreDefault;
+let closure_7 = SmartSearchConstants.SMART_SEARCH_REQUEST_TIMEOUT_MS;
 const Endpoints = Constants.Endpoints;
 let result = size.fileFinishedImporting("modules/intelligence_layer/search/SmartSearchActionCreators.tsx");
 

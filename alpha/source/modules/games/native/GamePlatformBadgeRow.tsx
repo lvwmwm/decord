@@ -1,19 +1,19 @@
-// Module ID: 10208
-// Function ID: 10209
+// Module ID: 13179
+// Function ID: 13180
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 10209, 9904, 7388, 7040, 9788, 4913, 10210, 5929, 575, 2]
+// Dependencies: [19, 21, 13180, 13181, 7198, 7623, 8632, 4917, 13183, 5989, 575, 2]
 
-// Module 10208 (GamePlatformBadgeRow)
+// Module 13179 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GameControllerIcon from "GameControllerIcon" /* 7040 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7388 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9788 */;
-import ScreenIcon from "ScreenIcon" /* 9904 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 10209 */;
-import GamePlatformBadges from "GamePlatformBadges" /* 10210 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7198 */;
+import GameControllerIcon from "GameControllerIcon" /* 7623 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 8632 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13180 */;
+import ScreenIcon from "ScreenIcon" /* 13181 */;
+import GamePlatformBadges from "GamePlatformBadges" /* 13183 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -31,7 +31,7 @@ const memoResult = react.memo(function GamePlatformBadgeRow(platforms) {
     obj = GamePlatformBadges;
     return obj.sortGamePlatformAvailability(platforms);
   }, items);
-  const Stack = platforms(5929).Stack;
+  const Stack = platforms(5989).Stack;
   return <Stack direction="horizontal" align="center" spacing={nativeDefault.space.PX_4} style={tmp.row}>{memo.map((item) => {
     const obj2 = platforms(dependencyMap[8]);
     return <tmp key={arg0} size="xs" color="icon-muted" accessibilityLabel={obj2.getGamePlatformAvailabilityLabel(arg0)} />;

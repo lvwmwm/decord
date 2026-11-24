@@ -1,13 +1,13 @@
-// Module ID: 14900
-// Function ID: 14901
+// Module ID: 14937
+// Function ID: 14938
 // Name: GatewaySocketOpCodes
-// Dependencies: [5753, 568, 2129, 11, 2]
+// Dependencies: [5816, 568, 2129, 11, 2]
 
-// Module 14900 (GatewaySocketOpCodes)
+// Module 14937 (GatewaySocketOpCodes)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _mod568 from "module_568" /* 568 */;
 import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2129 */;
-import RTCRegionStore from "RTCRegionStore" /* 5753 */;
+import RTCRegionStore from "RTCRegionStore" /* 5816 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

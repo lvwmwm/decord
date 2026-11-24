@@ -1,16 +1,16 @@
-// Module ID: 11109
-// Function ID: 11110
+// Module ID: 10473
+// Function ID: 10474
 // Name: FocusModeUtils
-// Dependencies: [6920, 4858, 1071, 4738, 4743, 1226, 1255, 5860, 1112, 11110, 2]
+// Dependencies: [7528, 4862, 1071, 4742, 4747, 1226, 1255, 5920, 1112, 10474, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 11109 (FocusModeUtils)
+// Module 10473 (FocusModeUtils)
 import wrappers from "wrappers" /* 1226 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import UserSettings from "UserSettings" /* 4738 */;
-import NotificationConstants from "NotificationConstants" /* 4858 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
+import UserSettings from "UserSettings" /* 4742 */;
+import NotificationConstants from "NotificationConstants" /* 4862 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5920 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7528 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ export function setFocusMode(quiet_mode_enabled, arg1) {
           closure_1(dependencyMap[9])(obj);
         }
     };
-    const show = tmp5(5860).show;
+    const show = tmp5(5920).show;
     AlertActionCreatorsDefault;
     intl = tmp(1112).intl;
     intl2 = tmp(1112).intl;

@@ -1,10 +1,10 @@
-// Module ID: 16513
-// Function ID: 16514
+// Module ID: 16547
+// Function ID: 16548
 // Name: VideoQuestModalContext
 // Dependencies: [19, 38, 2]
 // Exports: useVideoQuestModalContext
 
-// Module 16513 (VideoQuestModalContext)
+// Module 16547 (VideoQuestModalContext)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

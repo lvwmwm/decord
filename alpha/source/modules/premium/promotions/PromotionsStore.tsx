@@ -1,40 +1,40 @@
-// Module ID: 9143
-// Function ID: 9144
+// Module ID: 9021
+// Function ID: 9022
 // Name: PromotionsStore
-// Dependencies: [2188, 1230, 9144, 1386, 1387, 9145, 9192, 2160, 9193, 12, 504, 9146, 9147, 9201, 9202, 572, 2]
+// Dependencies: [2188, 1230, 9022, 1386, 1387, 9023, 9070, 2160, 9071, 12, 504, 9024, 9025, 9081, 9082, 572, 2]
 
-// Module 9143 (PromotionsStore)
+// Module 9021 (PromotionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9146 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9193 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9201 */;
-import filterActiveMarketingComponentsUnprioritizedDefault from "filterActiveMarketingComponentsUnprioritized" /* 9202 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9024 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9071 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9081 */;
+import filterActiveMarketingComponentsUnprioritizedDefault from "filterActiveMarketingComponentsUnprioritized" /* 9082 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import PromotionRecord from "PromotionRecord" /* 9144 */;
+import PromotionRecord from "PromotionRecord" /* 9022 */;
 import UserStore from "UserStore" /* 1386 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1387 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9145 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9023 */;
 import FunctionUtils from "FunctionUtils" /* 2160 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_14, hasBogoReward;
+let closure_22, hasBogoReward;
 
 let tmp;
-const MarketingSurfaceType = tmp(9147);
+const MarketingSurfaceType = tmp(9025);
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
 }
 function syncCampaignOverrideComponents() {
-  let tmp = null != c17;
+  let tmp = null != c18;
   if (tmp) {
     const currentUser = UserStore.getCurrentUser();
     const items = [];
     let tmp4 = items;
-    if (null != c17) {
+    if (null != c18) {
       let isStaffResult;
       if (currentUser != null) {
         isStaffResult = currentUser.isStaff();
@@ -46,14 +46,14 @@ function syncCampaignOverrideComponents() {
         if (OverridePremiumTypeStore.hasPremiumTypeOverride(currentUser)) {
           premiumTypeOverride = obj2.getPremiumTypeOverride();
         }
-        tmp4 = closure_19(c17, currentUser, LocaleStore.locale, premiumTypeOverride);
+        tmp4 = closure_20(c18, currentUser, LocaleStore.locale, premiumTypeOverride);
       }
     }
     const obj3 = _modDef12;
-    let flag2 = !obj3.isEqual(tmp4, closure_18);
-    obj3.isEqual(tmp4, closure_18);
+    let flag2 = !obj3.isEqual(tmp4, closure_19);
+    obj3.isEqual(tmp4, closure_19);
     if (flag2) {
-      closure_18 = tmp4;
+      closure_19 = tmp4;
       flag2 = true;
     }
     tmp = flag2;
@@ -62,7 +62,7 @@ function syncCampaignOverrideComponents() {
 }
 function getLatestActiveOutboundPromotionStartDate() {
   let startDate = null;
-  const values = Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  const values = Object.values(closure_15[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
   for (const item10019 of values) {
     let tmp3 = item10019;
     let tmp5 = null == startDate;
@@ -94,21 +94,22 @@ function initializeFromUserSettings() {
   if (value == null) {
     value = null;
   }
-  closure_15 = value;
+  closure_16 = value;
 }
 let closure_9 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
 let c11 = false;
-let c12 = null;
+let c12 = false;
+let c13 = null;
 let locale = null;
-const gesture = createEmptyPromotionsByType();
-let closure_15 = null;
+let closure_15 = createEmptyPromotionsByType();
+let closure_16 = null;
 let map = new Map();
-let c17 = null;
-let closure_18 = [];
-let closure_19 = FunctionUtils.cachedFunction((components, arg1, arg2, arg3) => CampaignDevToolsUtils.resolveCampaignComponents(components.components, arg1, arg2, components.endDate, arg3));
-let closure_21 = null;
-let closure_22 = [];
-let c23 = false;
+let c18 = null;
+let closure_19 = [];
+let closure_20 = FunctionUtils.cachedFunction((components, arg1, arg2, arg3) => CampaignDevToolsUtils.resolveCampaignComponents(components.components, arg1, arg2, components.endDate, arg3));
+const authStore5 = null;
+let closure_23 = [];
+let c24 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class PromotionsStore extends PersistedStore {
   initialize(arg0) {
@@ -123,7 +124,7 @@ class PromotionsStore extends PersistedStore {
   }
   getPromotionByTypeAndId(MARKETING_MOMENT, promotionId) {
     let tmp2;
-    if (closure_14[MARKETING_MOMENT] != null) {
+    if (closure_15[MARKETING_MOMENT] != null) {
       tmp2 = tmp[promotionId];
     }
     return tmp2;
@@ -138,7 +139,7 @@ class PromotionsStore extends PersistedStore {
   }
   getPromotionByTypeAndKey(arg0, arg1) {
     let closure_0 = arg1;
-    const values = Object.values(closure_14[arg0]);
+    const values = Object.values(closure_15[arg0]);
     return values.find((promotionKey) => promotionKey.promotionKey === closure_0);
   }
   getState() {
@@ -150,14 +151,14 @@ class PromotionsStore extends PersistedStore {
       let found;
       const tmp3 = MarketingSurfaceType.MarketingSurfaceKindByType[items];
       let closure_0 = tmp3;
-      if (null != c17) {
+      if (null != c18) {
         const currentUser = UserStore.getCurrentUser();
         let isStaffResult;
         if (currentUser != null) {
           isStaffResult = currentUser.isStaff();
         }
         if (true === isStaffResult) {
-          found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+          found = closure_19.filter((properties) => properties.properties.properties.oneofKind === closure_0);
         }
         if (null == found) {
           let items1 = map.get(tmp3);
@@ -169,12 +170,12 @@ class PromotionsStore extends PersistedStore {
         return found;
       }
       let oneofKind;
-      if (closure_21 != null) {
-        oneofKind = closure_21.properties.properties.oneofKind;
+      if (closure_22 != null) {
+        oneofKind = closure_22.properties.properties.oneofKind;
       }
       found = null;
       if (oneofKind === tmp3) {
-        items = [closure_21];
+        items = [closure_22];
         found = items;
       }
     } else {
@@ -193,7 +194,7 @@ class PromotionsStore extends PersistedStore {
   getMarketingComponentByKind(arg0) {
     let found;
     let currentUser2 = arg0;
-    if (null != c17) {
+    if (null != c18) {
       let tmp9Result;
       const currentUser = UserStore.getCurrentUser();
       let isStaffResult;
@@ -201,7 +202,7 @@ class PromotionsStore extends PersistedStore {
         isStaffResult = currentUser.isStaff();
       }
       if (true === isStaffResult) {
-        found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+        found = closure_19.filter((properties) => properties.properties.properties.oneofKind === closure_0);
       }
       if (null != found) {
         let first = found[0];
@@ -228,12 +229,12 @@ class PromotionsStore extends PersistedStore {
       return tmp9Result;
     }
     let oneofKind;
-    if (closure_21 != null) {
-      oneofKind = closure_21.properties.properties.oneofKind;
+    if (closure_22 != null) {
+      oneofKind = closure_22.properties.properties.oneofKind;
     }
     found = null;
     if (oneofKind === arg0) {
-      const items = [closure_21];
+      const items = [closure_22];
       found = items;
     }
   }
@@ -244,14 +245,14 @@ class PromotionsStore extends PersistedStore {
       let found;
       const tmp3 = MarketingSurfaceType.MarketingSurfaceKindByType[items];
       let currentUser2 = tmp3;
-      if (null != c17) {
+      if (null != c18) {
         const currentUser = UserStore.getCurrentUser();
         let isStaffResult;
         if (currentUser != null) {
           isStaffResult = currentUser.isStaff();
         }
         if (true === isStaffResult) {
-          found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+          found = closure_19.filter((properties) => properties.properties.properties.oneofKind === closure_0);
         }
         if (found == null) {
           const tmp13 = filterActiveMarketingComponentsUnprioritizedDefault;
@@ -272,12 +273,12 @@ class PromotionsStore extends PersistedStore {
         return found;
       }
       let oneofKind;
-      if (closure_21 != null) {
-        oneofKind = closure_21.properties.properties.oneofKind;
+      if (closure_22 != null) {
+        oneofKind = closure_22.properties.properties.oneofKind;
       }
       found = null;
       if (oneofKind === tmp3) {
-        items = [closure_21];
+        items = [closure_22];
         found = items;
       }
     } else {
@@ -286,7 +287,7 @@ class PromotionsStore extends PersistedStore {
   }
   hasPromotion(arg0) {
     let closure_0 = arg0;
-    let values = Object.values(closure_14);
+    let values = Object.values(closure_15);
     return values.some((item) => {
       const values = Object.values(item);
       return values.some((promotionKey) => promotionKey.promotionKey === closure_1_0);
@@ -297,12 +298,12 @@ class PromotionsStore extends PersistedStore {
     let values2;
     let closure_0 = arg0;
     const obj = { oneTime: values.filter((partnerId) => partnerId.partnerId === closure_0), recurring: values2.filter((partnerId) => partnerId.partnerId === closure_0) };
-    values = Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
-    values2 = Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+    values = Object.values(closure_15[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
+    values2 = Object.values(closure_15[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
     return obj;
   }
   getGiftPromotion() {
-    const tmp = closure_14[require("promotions/constants").PromotionTypes.GIFT_PROMOTION];
+    const tmp = closure_15[require("promotions/constants").PromotionTypes.GIFT_PROMOTION];
     const keys = Object.keys(tmp);
     let tmp2 = null;
     if (0 !== keys.length) {
@@ -322,7 +323,7 @@ class PromotionsStore extends PersistedStore {
     return rewardSkuIds;
   }
   getMarketingMomentPromotion() {
-    const tmp = closure_14[require("promotions/constants").PromotionTypes.MARKETING_MOMENT];
+    const tmp = closure_15[require("promotions/constants").PromotionTypes.MARKETING_MOMENT];
     const keys = Object.keys(tmp);
     if (0 === keys.length) {
       return null;
@@ -352,7 +353,7 @@ class PromotionsStore extends PersistedStore {
   }
   getActiveBogoRewardPromotion() {
     const date = new Date();
-    const values = Object.values(closure_14[require("promotions/constants").PromotionTypes.MARKETING_MOMENT]);
+    const values = Object.values(closure_15[require("promotions/constants").PromotionTypes.MARKETING_MOMENT]);
     let found = values.find((hasBogoReward) => {
       hasBogoReward = hasBogoReward.hasBogoReward && hasBogoReward.endDate >= date;
       return hasBogoReward;
@@ -369,13 +370,13 @@ class PromotionsStore extends PersistedStore {
 const prototype = PromotionsStore.prototype;
 Object.defineProperty(prototype, "outboundPromotions", {
   get: function outboundPromotions() {
-    return Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
+    return Object.values(closure_15[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "outboundRecurringPromotions", {
   get: function outboundRecurringPromotions() {
-    return Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+    return Object.values(closure_15[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
   },
   set: undefined
 });
@@ -387,13 +388,13 @@ Object.defineProperty(prototype, "lastSeenOutboundPromotionStartDate", {
 });
 Object.defineProperty(prototype, "lastDismissedOutboundPromotionStartDate", {
   get: function lastDismissedOutboundPromotionStartDate() {
-    return closure_15;
+    return closure_16;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "lastFetchedActivePromotions", {
   get: function lastFetchedActivePromotions() {
-    return c12;
+    return c13;
   },
   set: undefined
 });
@@ -406,6 +407,12 @@ Object.defineProperty(prototype, "lastFetchedActivePromotionsLocale", {
 Object.defineProperty(prototype, "isFetchingActivePromotions", {
   get: function isFetchingActivePromotions() {
     return c11;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "lastActivePromotionsFetchFailed", {
+  get: function lastActivePromotionsFetchFailed() {
+    return c12;
   },
   set: undefined
 });
@@ -423,7 +430,7 @@ Object.defineProperty(prototype, "consumedInboundPromotionId", {
 });
 Object.defineProperty(prototype, "promotionsByType", {
   get: function promotionsByType() {
-    return closure_14;
+    return closure_15;
   },
   set: undefined
 });
@@ -479,19 +486,19 @@ Object.defineProperty(prototype, "campaignOverrideComponents", {
     if (currentUser != null) {
       isStaffResult = currentUser.isStaff();
     }
-    return true !== isStaffResult ? [] : closure_18;
+    return true !== isStaffResult ? [] : closure_19;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "claimedOutboundPromotionCodes", {
   get: function claimedOutboundPromotionCodes() {
-    return closure_22;
+    return closure_23;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "claimedOutboundPromotionCodesLoaded", {
   get: function claimedOutboundPromotionCodesLoaded() {
-    return c23;
+    return c24;
   },
   set: undefined
 });
@@ -511,11 +518,11 @@ let obj = {
       if (null != promotionId.promotionId) {
         tmp3 = promotionId;
       }
-      let c17 = tmp3;
+      let c18 = tmp3;
       const currentUser1 = obj.getCurrentUser();
       const items = [];
       let tmp5 = items;
-      if (null != c17) {
+      if (null != c18) {
         let isStaffResult1;
         if (currentUser1 != null) {
           isStaffResult1 = currentUser1.isStaff();
@@ -527,14 +534,14 @@ let obj = {
           if (OverridePremiumTypeStore.hasPremiumTypeOverride(currentUser1)) {
             premiumTypeOverride = obj4.getPremiumTypeOverride();
           }
-          tmp5 = closure_19(c17, currentUser1, LocaleStore.locale, premiumTypeOverride);
+          tmp5 = closure_20(c18, currentUser1, LocaleStore.locale, premiumTypeOverride);
         }
       }
       const obj5 = _modDef12;
       flag = true;
-      const isEqualResult = obj5.isEqual(tmp5, closure_18);
+      const isEqualResult = obj5.isEqual(tmp5, closure_19);
       if (!isEqualResult) {
-        closure_18 = tmp5;
+        closure_19 = tmp5;
         flag = true;
       }
     }
@@ -543,12 +550,12 @@ let obj = {
   ACTIVE_PROMOTIONS_FETCH_SUCCESS: function handleActivePromotionsFetchSuccess(promotions) {
     promotions = promotions.promotions;
     const consumedInboundPromotionId = promotions.consumedInboundPromotionId;
-    closure_14 = createEmptyPromotionsByType();
+    closure_15 = createEmptyPromotionsByType();
     map = new Map();
-    closure_21 = null;
+    closure_22 = null;
     let item = promotions.forEach((id) => {
       let fromServer = closure_5.createFromServer(id);
-      closure_14[id.promotion_type][id.id] = fromServer;
+      closure_15[id.promotion_type][id.id] = fromServer;
       const marketing_components = id.marketing_components;
       if (marketing_components != null) {
         const item = marketing_components.forEach((item) => {
@@ -565,8 +572,9 @@ let obj = {
         });
       }
     });
-    c12 = Date.now();
+    c13 = Date.now();
     c11 = false;
+    c12 = false;
     if (!closure_9.hasFetchedConsumedInboundPromotionId) {
       closure_9.hasFetchedConsumedInboundPromotionId = true;
       closure_9.consumedInboundPromotionId = consumedInboundPromotionId;
@@ -577,68 +585,71 @@ let obj = {
     locale = locale.locale;
   },
   ACTIVE_PROMOTIONS_FETCH_FAIL: function handleActivePromotionsFetchFail() {
-    closure_14 = createEmptyPromotionsByType();
+    closure_15 = createEmptyPromotionsByType();
     map = new Map();
-    closure_21 = null;
+    closure_22 = null;
     c11 = false;
+    c12 = true;
   },
   ACTIVE_PROMOTIONS_CLEAR: function handleActivePromotionsClear() {
-    closure_14 = createEmptyPromotionsByType();
+    closure_15 = createEmptyPromotionsByType();
     map = new Map();
-    closure_21 = null;
+    closure_22 = null;
     c11 = false;
-    c12 = Date.now();
+    c12 = false;
+    c13 = Date.now();
   },
   OUTBOUND_PROMOTION_NOTICE_DISMISS: function handleDismissOutboundPromotionNotice() {
-    if (0 === Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(closure_15[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();
       if (null != tmp2) {
-        closure_15 = tmp2;
+        closure_16 = tmp2;
       }
     }
   },
   OUTBOUND_PROMOTIONS_SEEN: function handleOutboundPromotionsSeen() {
-    if (0 === Object.values(closure_14[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(closure_15[require("promotions/constants").PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();
       if (null != tmp2) {
-        closure_15 = tmp2;
+        closure_16 = tmp2;
         closure_9.lastSeenOutboundPromotionStartDate = tmp2;
       }
     }
   },
   CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS: function handleClaimedOutboundPromotionCodesFetchSuccess(claimedOutboundPromotionCodes) {
-    closure_22 = claimedOutboundPromotionCodes.claimedOutboundPromotionCodes;
-    c23 = true;
+    closure_23 = claimedOutboundPromotionCodes.claimedOutboundPromotionCodes;
+    c24 = true;
   },
   CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_FAIL: function handleClaimedOutboundPromotionCodesFetchFail() {
-    closure_22 = [];
-    c23 = true;
+    closure_23 = [];
+    c24 = true;
   },
   CLAIMED_OUTBOUND_PROMOTION_CODE_ADD: function handleClaimedOutboundPromotionCodeAdd(claimedOutboundPromotionCode) {
     claimedOutboundPromotionCode = claimedOutboundPromotionCode.claimedOutboundPromotionCode;
-    if (closure_22.some((promotion) => promotion.promotion.id === claimedOutboundPromotionCode.promotion.id)) {
+    if (closure_23.some((promotion) => promotion.promotion.id === claimedOutboundPromotionCode.promotion.id)) {
       return false;
     } else {
       const items = [];
-      items[HermesBuiltin.arraySpread(items, closure_22, 0)] = claimedOutboundPromotionCode;
-      closure_22 = items;
+      items[HermesBuiltin.arraySpread(items, closure_23, 0)] = claimedOutboundPromotionCode;
+      closure_23 = items;
     }
   },
   LOGOUT: function handleLogout() {
-    let c17 = null;
-    closure_18 = [];
+    let c18 = null;
+    closure_19 = [];
     closure_9 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPromotionId: null, lastSeenOutboundPromotionStartDate: null };
     c11 = false;
-    c12 = null;
-    closure_14 = createEmptyPromotionsByType();
+    c12 = false;
+    c13 = null;
+    closure_15 = createEmptyPromotionsByType();
     map.clear();
-    closure_21 = null;
-    closure_22 = [];
-    c23 = false;
+    closure_22 = null;
+    closure_23 = [];
+    c24 = false;
   },
   PREMIUM_MARKETING_PREVIEW: function handlePremiumMarketingPreview(data) {
     data = data.data;
@@ -646,9 +657,9 @@ let obj = {
     if (null != data.promotion) {
       fromServer = PromotionRecord.createFromServer(data.promotion);
     }
-    closure_21 = MarketingComponentRecord.createFromServer(data, fromServer);
+    closure_22 = MarketingComponentRecord.createFromServer(data, fromServer);
     if (null != fromServer) {
-      closure_14[fromServer.promotionType][fromServer.id] = fromServer;
+      closure_15[fromServer.promotionType][fromServer.id] = fromServer;
     }
   }
 };

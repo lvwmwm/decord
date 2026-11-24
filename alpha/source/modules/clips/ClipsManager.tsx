@@ -1,32 +1,32 @@
-// Module ID: 20077
-// Function ID: 20078
+// Module ID: 20120
+// Function ID: 20121
 // Name: clips/ClipsManager
-// Dependencies: [32, 5, 5673, 1230, 502, 4762, 2131, 5654, 6396, 1386, 2138, 8441, 1071, 6397, 5658, 20078, 7484, 14556, 5679, 6401, 1255, 4738, 572, 20079, 20080, 14880, 2]
+// Dependencies: [32, 5, 5736, 1230, 502, 4766, 2131, 5725, 8262, 1386, 2138, 7990, 1071, 6688, 5729, 20121, 7349, 14182, 5742, 6690, 1255, 4742, 572, 20122, 20123, 14181, 2]
 
-// Module 20077 (clips/ClipsManager)
+// Module 20120 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import UserSettings from "UserSettings" /* 4738 */;
-import Constants2 from "Constants" /* 5658 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5673 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5679 */;
-import Constants3 from "Constants" /* 6397 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
-import ClipsExperiment from "ClipsExperiment" /* 14556 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20079 */;
+import UserSettings from "UserSettings" /* 4742 */;
+import Constants2 from "Constants" /* 5729 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5736 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5742 */;
+import Constants3 from "Constants" /* 6688 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6690 */;
+import ClipsExperiment from "ClipsExperiment" /* 14182 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20122 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6396 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8262 */;
 import UserStore from "UserStore" /* 1386 */;
 import ClipsStore from "ClipsStore" /* 2138 */;
-import ClipsConstants from "ClipsConstants" /* 8441 */;
+import ClipsConstants from "ClipsConstants" /* 7990 */;
 import Constants from "Constants" /* 1071 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(14880);
+const isClipsEnabled = tmp(14181);
 function getCodecSurvey() {
   return obj(...arguments);
 }
@@ -520,7 +520,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp7 = tmp6 && classification === tmp.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmp2Result = tmp2(20080);
+            const tmp2Result = tmp2(20123);
             allowDefaultOn = tmp2Result.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp7, enableAutoclipping: tmp7, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };

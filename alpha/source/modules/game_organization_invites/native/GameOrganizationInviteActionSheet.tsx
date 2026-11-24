@@ -1,19 +1,19 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15201
+// Function ID: 15202
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [19, 17, 15125, 21, 4913, 575, 8065, 15181, 15182, 15178, 504, 1112, 2639, 7553, 5929, 5504, 7427, 15183, 15184, 2]
+// Dependencies: [19, 17, 15146, 21, 4917, 575, 10294, 15202, 15203, 15199, 504, 1112, 2639, 7420, 5989, 5508, 7280, 15204, 15205, 2]
 // Exports: default
 
-// Module 15180 (GameOrganizationInviteActionSheet)
+// Module 15201 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8065 */;
-import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 15181 */;
-import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 15182 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 10294 */;
+import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 15202 */;
+import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 15203 */;
 import react from "react" /* 19 */;
-import GameOrganizationStore from "GameOrganizationStore" /* 15125 */;
+import GameOrganizationStore from "GameOrganizationStore" /* 15146 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -65,7 +65,7 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   useGameOrganizationInviteSuggestionsDefault();
   ({ getSendState, handleInvite } = useLinkedGameOrganizationInviteSenderDefault(guildId));
   useLinkedGameOrganizationInviteSenderDefault(guildId);
-  const obj = guildId(15178);
+  const obj = guildId(15199);
   const data = obj.useLinkedGameOrganization(guildId).data;
   const items = [GameOrganizationStore];
   const items1 = [guildId];
@@ -93,14 +93,14 @@ export default function GameOrganizationInviteActionSheet(guildId) {
     formatToPlainString2Result = formatToPlainString(BBk7Qw, obj4);
   }
   const obj5 = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl3.string(guildId(1112).t.cpT0Cq), header: closure_6(Stack, obj6), children: tmp9Result };
-  const ActionSheet = tmp6(7553).ActionSheet;
+  const ActionSheet = tmp6(7420).ActionSheet;
   intl3 = tmp6(1112).intl;
   obj6 = { spacing: nativeDefault.space.PX_16, style: tmp.header, children: items3 };
-  Stack = tmp6(5929).Stack;
+  Stack = tmp6(5989).Stack;
   const obj7 = { spacing: nativeDefault.space.PX_4, children: items2 };
-  const Stack2 = tmp6(5929).Stack;
+  const Stack2 = tmp6(5989).Stack;
   const obj8 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: formatToPlainString3(EnTIIr, { displayNoun: str3 }) };
-  const Heading = tmp6(5504).Heading;
+  const Heading = tmp6(5508).Heading;
   const intl4 = tmp6(1112).intl;
   formatToPlainString3 = intl4.formatToPlainString;
   str3 = stateFromStores;
@@ -110,10 +110,10 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   }
   items2 = [closure_5(Heading, obj8), ];
   const obj9 = { variant: "body-sm/medium", color: "text-muted", style: tmp.centeredText, children: formatToPlainString2Result };
-  items2[1] = closure_5(guildId(5504).Text, obj9);
+  items2[1] = closure_5(guildId(5508).Text, obj9);
   items3 = [closure_6(Stack2, obj7), ];
   const obj10 = { size: "md", round: true, onChange: search, placeholder: formatToPlainString4(cRK6SQ, { displayNoun: str4 }) };
-  const SearchBar = tmp6(7427).SearchBar;
+  const SearchBar = tmp6(7280).SearchBar;
   const intl5 = tmp6(1112).intl;
   formatToPlainString4 = intl5.formatToPlainString;
   str4 = stateFromStores;
@@ -126,10 +126,10 @@ export default function GameOrganizationInviteActionSheet(guildId) {
     tmp9Result = tmp9(Loading, {});
   } else if (hasNoFriends) {
     const obj11 = { displayNoun: stateFromStores };
-    tmp9Result = tmp9(tmp2(15183), obj11);
+    tmp9Result = tmp9(tmp2(15204), obj11);
   } else {
     const obj12 = { users, getSendState, onInvite: handleInvite };
-    tmp9Result = tmp9(tmp2(15184), obj12);
+    tmp9Result = tmp9(tmp2(15205), obj12);
   }
   return closure_5(ActionSheet, obj5);
 };

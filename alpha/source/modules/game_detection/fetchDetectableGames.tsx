@@ -1,15 +1,15 @@
-// Module ID: 12201
-// Function ID: 12202
+// Module ID: 12144
+// Function ID: 12145
 // Name: fetchDetectableGames
-// Dependencies: [5, 2158, 12202, 572, 6432, 1263, 4774, 1284, 2]
+// Dependencies: [5, 2158, 12145, 572, 6009, 1263, 4778, 1284, 2]
 // Exports: default
 
-// Module 12201 (fetchDetectableGames)
+// Module 12144 (fetchDetectableGames)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6432 */;
-import Constants from "Constants" /* 12202 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6009 */;
+import Constants from "Constants" /* 12145 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DetectableGameStore from "DetectableGameStore" /* 2158 */;
 import size from "module_2" /* 2 */;

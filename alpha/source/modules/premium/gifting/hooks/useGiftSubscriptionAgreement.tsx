@@ -1,10 +1,10 @@
-// Module ID: 11912
-// Function ID: 11913
+// Module ID: 11787
+// Function ID: 11788
 // Name: useGiftSubscriptionAgreement
-// Dependencies: [5, 32, 19, 11911, 11906, 2]
+// Dependencies: [5, 32, 19, 11786, 11781, 2]
 // Exports: default
 
-// Module 11912 (useGiftSubscriptionAgreement)
+// Module 11787 (useGiftSubscriptionAgreement)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -21,7 +21,7 @@ export default function useGiftSubscriptionAgreement(code) {
   if (code != null) {
     code = code.code;
   }
-  let obj = code(11911);
+  let obj = code(11786);
   let isResolvingAgreement = obj.needsGiftSubscriptionAgreement(code);
   [first, dependencyMap] = react.useState(false);
   const items = [code, isResolvingAgreement];

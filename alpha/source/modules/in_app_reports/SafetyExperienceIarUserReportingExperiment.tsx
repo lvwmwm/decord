@@ -1,11 +1,11 @@
-// Module ID: 14423
-// Function ID: 14424
+// Module ID: 14692
+// Function ID: 14693
 // Name: SafetyExperienceIarUserReportingExperiment
-// Dependencies: [5853, 2]
+// Dependencies: [5918, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 14423 (SafetyExperienceIarUserReportingExperiment)
-import createExperiment from "module_5853" /* 5853 */;
+// Module 14692 (SafetyExperienceIarUserReportingExperiment)
+import createExperiment from "module_5918" /* 5918 */;
 import size from "module_2" /* 2 */;
 
 let items;

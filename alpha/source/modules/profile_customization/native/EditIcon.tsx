@@ -1,16 +1,16 @@
-// Module ID: 15947
-// Function ID: 15948
+// Module ID: 15988
+// Function ID: 15989
 // Name: EditIcon
-// Dependencies: [19, 17, 21, 4913, 575, 11242, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 9483, 2]
 // Exports: default
 
-// Module 15947 (EditIcon)
+// Module 15988 (EditIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PencilIcon from "PencilIcon" /* 11242 */;
+import PencilIcon from "PencilIcon" /* 9483 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

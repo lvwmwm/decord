@@ -1,23 +1,22 @@
-// Module ID: 19211
-// Function ID: 19212
+// Module ID: 19253
+// Function ID: 19254
 // Name: PlayableActivityFrameHeader
-// Dependencies: [19, 17, 5539, 6558, 21, 4913, 575, 19212, 19206, 19191, 5173, 16362, 5504, 1112, 4661, 7591, 7151, 6953, 2]
+// Dependencies: [19, 17, 5543, 6745, 21, 4917, 575, 19254, 19248, 19233, 7561, 5177, 16395, 5508, 1112, 4663, 7811, 7121, 5926, 2]
 // Exports: default
 
-// Module 19211 (PlayableActivityFrameHeader)
+// Module 19253 (PlayableActivityFrameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1112 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
-import QuestConstants from "QuestConstants" /* 6558 */;
-import leaveFrame from "leaveFrame" /* 6953 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 19191 */;
+import intl5 from "intl" /* 1112 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5543 */;
+import AlertModal from "AlertModal" /* 5926 */;
+import QuestConstants from "QuestConstants" /* 6745 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
+
+const require = globalThis.__r;
 
 let metroImportAll;
 let metroImportDefault;
@@ -60,40 +59,47 @@ export default function PlayableActivityFrameHeader(arg0) {
   let wrapperOffset;
   ({ frameId: require, playable } = arg0);
   let setMode;
+  function onLeave() {
+    setMode(ActivityPanelModes.DISCONNECTED);
+    const timerId = setTimeout(() => {
+      const obj = require("leaveFrame");
+      return obj.leaveFrame(closure_1_0);
+    }, 400);
+  }
   const tmp = closure_9();
-  const tmp4 = setMode(19212)(playable.id);
+  const tmp4 = setMode(onLeave[7])(playable.id);
   let isClaimed = tmp4.isClaimed;
   const remainingSeconds = tmp4.remainingSeconds;
-  const context = react.useContext(setMode(19206));
+  const context = react.useContext(setMode(onLeave[8]));
   setMode = context.setMode;
   ({ wrapperOffset, pipState } = context);
-  let obj = ActivityPanelHeader;
+  let obj = require("ActivityPanelHeader");
   const obj2 = { gesture: obj.useBaseActivityPanelHeaderContent({ landscape: false, setMode, wrapperOffset, pipState }).gesture, children: closure_8(View, obj3) };
   obj3 = { style: tmp.header, children: items };
   const obj4 = { style: tmp.handleWrapper, pointerEvents: "none", children: closure_7(View, obj5) };
   obj5 = { style: tmp.handle };
-  const GestureDetector = LegacyBaseButton.GestureDetector;
+  const GestureDetector = require("LegacyBaseButton").GestureDetector;
   items = [closure_7(View, obj4), , ];
   const obj6 = { style: tmp.info, children: items1 };
   items1 = [, ];
   const obj7 = { isCompleted: isClaimed, totalSeconds: playable.rewardTimerSeconds, remainingSeconds };
-  items1[0] = closure_7(setMode(16362), obj7);
+  items1[0] = closure_7(setMode(onLeave[12]), obj7);
   const obj8 = { style: tmp.titleGroup, children: items2 };
   const obj9 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: tmp.textShadow, children: productName };
-  const Text = Text_Text.Text;
+  const Text = require("Text/Text").Text;
   if (isClaimed) {
-    const intl = tmp6(1112).intl;
-    productName = intl.string(tmp2(4661)["08Kgg0"]);
+    let intl = tmp6(tmp3[14]).intl;
+    productName = intl.string(tmp2(tmp3[15])["08Kgg0"]);
   } else {
     productName = playable.productName;
   }
   items2 = [closure_7(Text, obj9), ];
   if (isClaimed) {
-    const obj10 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: items3, children: intl2.formatToPlainString(setMode(4661).Hshnic, obj11) };
+    const obj10 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: items3, children: intl2.formatToPlainString(setMode(onLeave[15]).Hshnic, obj11) };
     items3 = [, ];
     ({ textShadow: arr4[0], subtitle: arr4[1] } = tmp);
-    const Text2 = tmp6(5504).Text;
-    intl2 = tmp6(1112).intl;
+    const Text2 = tmp6(tmp3[13]).Text;
+    intl2 = tmp6(tmp3[14]).intl;
     obj11 = { orbAmount };
     isClaimed = tmp7(Text2, obj10);
   }
@@ -104,19 +110,26 @@ export default function PlayableActivityFrameHeader(arg0) {
     size: "sm",
     variant: "secondary-overlay",
     icon: closure_7(XSmallIcon, obj13),
-    accessibilityLabel: intl3.string(intl4.t.cpT0Cq),
+    accessibilityLabel: intl3.string(require("intl").t.cpT0Cq),
     onPress: function onClose() {
-      setMode(ActivityPanelModes.DISCONNECTED);
-      const timerId = setTimeout(() => {
-        const obj = leaveFrame;
-        return obj.leaveFrame(closure_1_0);
-      }, 400);
+      let intl;
+      let intl2;
+      let intl3;
+      let intl4;
+      const obj = { key: "playable-leave-game-confirm", title: intl.string(intl5.t.sfp1IW), content: intl2.string(intl5.t.N9rsFG), confirmText: intl3.string(intl5.t["Hi1/aQ"]), cancelText: intl4.string(intl5.t.DvApnG), onConfirm: onLeave };
+      const showConfirmModal = AlertModal.showConfirmModal;
+      AlertModal;
+      intl = intl5.intl;
+      intl2 = intl5.intl;
+      intl3 = intl5.intl;
+      intl4 = intl5.intl;
+      showConfirmModal(obj);
     }
   };
-  const IconButton = tmp6(7591).IconButton;
-  obj13 = { size: "sm", color: setMode(575).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
-  XSmallIcon = tmp6(7151).XSmallIcon;
-  intl3 = tmp6(1112).intl;
+  const IconButton = tmp6(tmp3[16]).IconButton;
+  obj13 = { size: "sm", color: setMode(onLeave[6]).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
+  XSmallIcon = tmp6(tmp3[17]).XSmallIcon;
+  intl3 = tmp6(tmp3[14]).intl;
   items[2] = closure_7(IconButton, obj12);
   return closure_7(GestureDetector, obj2);
 };

@@ -1,0 +1,30 @@
+// Module ID: 5640
+// Function ID: 5641
+// Name: findCodedLinkUrls
+// Dependencies: [1380, 2]
+// Exports: default
+
+// Module 5640 (findCodedLinkUrls)
+import ip from "ip" /* 1380 */;
+import size from "module_2" /* 2 */;
+
+function trimTrailingPunctuation(str) {
+  return str.replace(re2, "");
+}
+const regExp = new RegExp("(?:(?:(?:https?:)?//)|www\\.)(?:[^\\s:@]+(?::[^\\s@]*)?@)?(?:localhost|" + ip.v4().source + "|(?:[a-z\\u00a1-\\uffff0-9-_]+\\.)+(?:(?:[a-z\\u00a1-\\uffff]{2,})))(?::\\d{2,5})?(?:[/?#][^\\s\"()\\[\\]<>]*)?", "ig");
+const re1 = /`{3,}[\s\S]*?(?:`{3,}|$)|(`{1,2})[^`]+\1(?!`)/g;
+const re2 = /[.,;:?'*_~|]+$/;
+const result = size.fileFinishedImporting("modules/coded_links/findCodedLinkUrls.tsx");
+
+export default function findCodedLinkUrls(str) {
+  str = str.replaceAll(re1, " ");
+  const match = str.match(regExp);
+  let mapped;
+  if (match != null) {
+    mapped = match.map(trimTrailingPunctuation);
+  }
+  if (mapped == null) {
+    mapped = [];
+  }
+  return mapped;
+};

@@ -1,16 +1,16 @@
-// Module ID: 17708
-// Function ID: 17709
+// Module ID: 17746
+// Function ID: 17747
 // Name: UnclaimedGamesActionCreators
-// Dependencies: [5, 17709, 1071, 1284, 572, 504, 1088, 559, 2]
+// Dependencies: [5, 17747, 1071, 1284, 572, 504, 1088, 559, 2]
 // Exports: useHasUnclaimedGames, useUnclaimedGameIdsForGuild
 
-// Module 17708 (UnclaimedGamesActionCreators)
+// Module 17746 (UnclaimedGamesActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UnclaimedGamesStore from "UnclaimedGamesStore" /* 17709 */;
+import UnclaimedGamesStore from "UnclaimedGamesStore" /* 17747 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

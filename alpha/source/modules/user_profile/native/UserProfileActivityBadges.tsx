@@ -1,23 +1,23 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14728
+// Function ID: 14729
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 21, 4913, 10346, 8060, 6932, 7704, 5652, 13513, 10894, 7040, 14460, 14461, 575, 14462, 8010, 7038, 5504, 12115, 2]
+// Dependencies: [19, 17, 21, 4917, 14498, 8259, 7540, 7046, 5889, 11224, 10168, 7623, 14729, 14730, 575, 14731, 8447, 7029, 5508, 12050, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 14459 (UserProfileActivityBadges)
+// Module 14728 (UserProfileActivityBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import ActivityTypes from "ActivityTypes" /* 5652 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 6932 */;
-import utils from "utils" /* 8010 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8060 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14460 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14461 */;
-import Badges from "Badges" /* 14462 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import ActivityTypes from "ActivityTypes" /* 5889 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 7540 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8259 */;
+import utils from "utils" /* 8447 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 14729 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14730 */;
+import Badges from "Badges" /* 14731 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -63,21 +63,21 @@ export function TimestampBadge(activity) {
         flag2 = false;
       }
       if (flag2) {
-        AppsIcon = tmp2(10346).HourglassIcon;
+        AppsIcon = tmp2(14498).HourglassIcon;
       } else {
         if (!isEmbeddedActivityDefault(activity)) {
           const tmp2Result = conjurePresenceActivity;
           if (!tmp2Result.isConjurePresenceActivity(activity)) {
             if (activity.type === ActivityTypes.ActivityTypes.WATCHING) {
-              AppsIcon = tmp2(13513).TvIcon;
+              AppsIcon = tmp2(11224).TvIcon;
             } else if (activity.type === ActivityTypes.ActivityTypes.LISTENING) {
-              AppsIcon = tmp2(10894).MusicIcon;
+              AppsIcon = tmp2(10168).MusicIcon;
             } else {
-              AppsIcon = tmp2(7040).GameControllerIcon;
+              AppsIcon = tmp2(7623).GameControllerIcon;
             }
           }
         }
-        AppsIcon = tmp2(7704).AppsIcon;
+        AppsIcon = tmp2(7046).AppsIcon;
       }
       const obj2 = { style: tmp.container, children: items };
       const obj3 = { size: "xxs", color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
@@ -102,7 +102,7 @@ export function PartyBadge(activity) {
       if (null != richGameStateBadgeText) {
         const obj = { style: tmp.container, children: items };
         const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-        const GroupIcon = tmp9(7038).GroupIcon;
+        const GroupIcon = tmp9(7029).GroupIcon;
         items = [React3(GroupIcon, obj2), ];
         const obj3 = { variant: "body-sm/medium", color: "text-muted", children: richGameStateBadgeText };
         items[1] = React3(Text_Text.Text, obj3);
@@ -129,7 +129,7 @@ export function EpisodeBadge(activity) {
   if (null != episodeBadgeText) {
     const obj = { style: tmp.container, children: items };
     const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const TopicsIcon = tmp2(12115).TopicsIcon;
+    const TopicsIcon = tmp2(12050).TopicsIcon;
     items = [React3(TopicsIcon, obj2), ];
     const obj3 = { variant: "body-sm/medium", color: "text-muted", children: episodeBadgeText };
     items[1] = React3(Text_Text.Text, obj3);

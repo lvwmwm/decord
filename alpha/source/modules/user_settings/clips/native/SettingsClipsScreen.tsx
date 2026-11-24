@@ -1,14 +1,14 @@
-// Module ID: 16275
-// Function ID: 16276
+// Module ID: 16308
+// Function ID: 16309
 // Name: SettingsClipsScreen
-// Dependencies: [19, 8712, 21, 11937, 15985, 2]
+// Dependencies: [19, 9414, 21, 11815, 16018, 2]
 // Exports: default
 
-// Module 16275 (SettingsClipsScreen)
+// Module 16308 (SettingsClipsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
-import SettingLayoutDefault from "SettingLayout" /* 15985 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
+import SettingLayoutDefault from "SettingLayout" /* 16018 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

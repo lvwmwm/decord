@@ -1,19 +1,19 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 10589
+// Function ID: 10590
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 7322, 9023, 575, 4913, 11116, 1112, 5646, 11160, 7763, 11123, 2]
+// Dependencies: [19, 17, 21, 6926, 9279, 575, 4917, 10485, 1112, 6000, 10531, 7809, 10492, 2]
 // Exports: default
 
-// Module 11211 (AlertNotification)
+// Module 10589 (AlertNotification)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import transitionToChannel from "transitionToChannel" /* 5646 */;
-import GuildIcon from "GuildIcon" /* 7322 */;
-import ClipView from "ClipView" /* 9023 */;
+import transitionToChannel from "transitionToChannel" /* 6000 */;
+import GuildIcon from "GuildIcon" /* 6926 */;
+import ClipView from "ClipView" /* 9279 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -40,7 +40,7 @@ export default function AlertNotification(notification) {
   const guild = notification.guild;
   const key = notification.key;
   const tmp = closure_9();
-  let obj = channel(11116);
+  let obj = channel(10485);
   const incidentData = obj.useGuildIncidentsState(key).incidentData;
   let raidDetectedAt;
   if (incidentData != null) {
@@ -70,16 +70,16 @@ export default function AlertNotification(notification) {
     const obj = transitionToChannel;
     obj.transitionToChannel(channel.id, { navigationReplace: true });
   }, items1);
-  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(11123).SystemMessageText, { text: stringResult }), onPress: callback, notification };
+  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(10492).SystemMessageText, { text: stringResult }), onPress: callback, notification };
   obj3 = { children: items3 };
-  const NotificationPressable = tmp2(11160).NotificationPressable;
-  const obj4 = { cutouts: items2, children: closure_5(guild(7322), { guild, selected: false }) };
+  const NotificationPressable = tmp2(10531).NotificationPressable;
+  const obj4 = { cutouts: items2, children: closure_5(guild(6926), { guild, selected: false }) };
   items2 = [size];
-  const tmp8 = guild(9023);
+  const tmp8 = guild(9279);
   items3 = [closure_5(tmp8, obj4), ];
   const obj5 = { style: tmp.warningBadge, children: closure_5(WarningIcon, obj6) };
   obj6 = { style: tmp.warningIcon, color: guild(575).colors.ICON_FEEDBACK_WARNING };
-  WarningIcon = tmp2(7763).WarningIcon;
+  WarningIcon = tmp2(7809).WarningIcon;
   items3[1] = closure_5(View, obj5);
   return closure_5(NotificationPressable, obj2);
 };

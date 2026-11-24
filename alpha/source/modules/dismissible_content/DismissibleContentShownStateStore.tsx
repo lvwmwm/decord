@@ -1,21 +1,21 @@
-// Module ID: 4754
-// Function ID: 4755
+// Module ID: 4758
+// Function ID: 4759
 // Name: DismissibleContentShownStateStore
-// Dependencies: [5, 4755, 4756, 4749, 1071, 559, 1257, 4750, 1284, 4757, 1262, 504, 4758, 572, 2]
+// Dependencies: [5, 4759, 4760, 4753, 1071, 559, 1257, 4754, 1284, 4761, 1262, 504, 4762, 572, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
 
-// Module 4754 (DismissibleContentShownStateStore)
+// Module 4758 (DismissibleContentShownStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import react_native from "react-native" /* 1262 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4750 */;
-import Timers from "Timers" /* 4757 */;
-import isActionRequiredDefault from "isActionRequired" /* 4758 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4754 */;
+import Timers from "Timers" /* 4761 */;
+import isActionRequiredDefault from "isActionRequired" /* 4762 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4755 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4756 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4749 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4759 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4760 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4753 */;
 import Constants from "Constants" /* 1071 */;
 import module_1257 from "module_1257" /* 1257 */;
 import size from "module_2" /* 2 */;
@@ -25,14 +25,14 @@ let body, closure_3, closure_4, context, dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
-const f86332 = (item) => {
+const f86453 = (item) => {
   content = undefined;
   if (content != null) {
     content = content.content;
   }
   return item !== content;
 };
-const f86334 = () => {
+const f86455 = () => {
   state.setState(() => {
     obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: true };
     new Map();
@@ -260,7 +260,7 @@ function withUpdateWinner(candidates, arg1) {
           const items1 = [];
           HermesBuiltin.arraySpread(items1, candidates3.keys(), 0);
           const shownFatigableCandidate = candidates.shownFatigableCandidate;
-          const found = items1.filter(f86332);
+          const found = items1.filter(f86453);
           const tmp9 = withContent;
           if (null != shownFatigableCandidate) {
             if (null != shownFatigableCandidate.content) {
@@ -579,7 +579,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
                 const items = [];
                 HermesBuiltin.arraySpread(items, candidates.keys(), 0);
                 const shownFatigableCandidate = obj.shownFatigableCandidate;
-                let found = items.filter(f86332);
+                let found = items.filter(f86453);
                 const tmp11 = closure_2_14;
                 if (null != shownFatigableCandidate) {
                   if (null != shownFatigableCandidate.content) {
@@ -640,7 +640,7 @@ DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateSto
 obj = {
   CONNECTION_OPEN() {
     obj = react_native;
-    obj.batchUpdates(f86334);
+    obj.batchUpdates(f86455);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();
@@ -649,7 +649,7 @@ obj = {
   LOGOUT() {
     let state;
     obj = react_native;
-    obj.batchUpdates(f86334);
+    obj.batchUpdates(f86455);
     closure_10 = {};
     c11 = null;
     closure_9.succeed();
@@ -858,7 +858,7 @@ export function getCurrentlyShownCounts() {
 }
 export function reset() {
   obj = react_native;
-  obj.batchUpdates(f86334);
+  obj.batchUpdates(f86455);
   closure_10 = {};
   c11 = null;
   closure_9.succeed();

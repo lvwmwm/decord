@@ -1,30 +1,30 @@
-// Module ID: 12114
-// Function ID: 12115
+// Module ID: 12049
+// Function ID: 12050
 // Name: SummaryActionSheet
-// Dependencies: [19, 17, 4762, 5964, 10419, 1071, 21, 5127, 12114, 2119, 4913, 575, 6893, 10552, 5594, 1112, 5948, 9718, 8459, 8514, 5089, 11, 1098, 5141, 7017, 12115, 5504, 12117, 12118, 12121, 8683, 2]
+// Dependencies: [19, 17, 4766, 6265, 11649, 1071, 21, 5131, 12049, 2119, 4917, 575, 7502, 12018, 5598, 1112, 6675, 8549, 7973, 8038, 5093, 11, 1098, 5145, 7354, 12050, 5508, 12052, 10314, 12053, 8457, 2]
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 12114 (SummaryActionSheet)
+// Module 12049 (SummaryActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1098 */;
 import intl5 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import ToastUtils from "ToastUtils" /* 5594 */;
-import ChannelUtils from "ChannelUtils" /* 5948 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8459 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8514 */;
-import showShareActionSheet from "showShareActionSheet" /* 9718 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5093 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import ToastUtils from "ToastUtils" /* 5598 */;
+import ChannelUtils from "ChannelUtils" /* 6675 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7973 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8038 */;
+import showShareActionSheet from "showShareActionSheet" /* 8549 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import MessageStore from "MessageStore" /* 5964 */;
-import SummaryStore from "SummaryStore" /* 10419 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import MessageStore from "MessageStore" /* 6265 */;
+import SummaryStore from "SummaryStore" /* 11649 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -94,10 +94,10 @@ export default function SummaryActionSheet(summary) {
       guild_id = tmp4.guild_id;
     }
     if (null != guild_id) {
-      const openLazy = tmp(5127).openLazy;
+      const openLazy = tmp(5131).openLazy;
       let guild_id1;
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(10552, tmp2.paths);
+      const tmp8 = asyncRequire(12018, tmp2.paths);
       if (channel != null) {
         guild_id1 = tmp4.guild_id;
       }
@@ -222,7 +222,7 @@ export function openSummaryDividerActionSheet(channelId, summaryId) {
     const _HermesInternal = HermesInternal;
     ActionSheetActionCreatorsDefault;
     const obj = { summary: findSummaryResult };
-    const tmp6 = asyncRequire(12114, dependencyMap.paths);
+    const tmp6 = asyncRequire(12049, dependencyMap.paths);
     openLazy(tmp6, "SummaryDivider" + summaryId, obj);
   }
 }

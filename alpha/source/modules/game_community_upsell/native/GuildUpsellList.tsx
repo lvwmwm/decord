@@ -1,19 +1,19 @@
-// Module ID: 17799
-// Function ID: 17800
+// Module ID: 17837
+// Function ID: 17838
 // Name: GuildUpsellList
-// Dependencies: [5, 32, 19, 17, 17041, 21, 4913, 575, 5930, 1263, 1501, 504, 7520, 7539, 17800, 7490, 2]
+// Dependencies: [5, 32, 19, 17, 17075, 21, 4917, 575, 5990, 1263, 1501, 504, 6253, 6254, 17838, 7356, 2]
 // Exports: GuildUpsellList
 
-// Module 17799 (GuildUpsellList)
+// Module 17837 (GuildUpsellList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 17800 */;
+import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 17838 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17041 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 17075 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let set, viewableItems;

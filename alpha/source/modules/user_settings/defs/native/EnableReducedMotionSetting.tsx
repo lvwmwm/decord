@@ -1,15 +1,15 @@
-// Module ID: 16824
-// Function ID: 16825
+// Module ID: 16858
+// Function ID: 16859
 // Name: EnableReducedMotionSetting
-// Dependencies: [4914, 8712, 504, 15647, 11937, 1112, 2]
+// Dependencies: [4918, 9414, 504, 15668, 11815, 1112, 2]
 
-// Module 16824 (EnableReducedMotionSetting)
+// Module 16858 (EnableReducedMotionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 8712 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15647 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingsConstants from "SettingsConstants" /* 9414 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15668 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import SettingBuilders from "SettingBuilders" /* 11815 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

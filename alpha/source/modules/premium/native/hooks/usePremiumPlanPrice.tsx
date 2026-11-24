@@ -1,16 +1,16 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9556
+// Function ID: 9557
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 2177, 8851, 1071, 1082, 8921, 9247, 504, 9495, 8170, 1378, 5492, 559, 6877, 6856, 2]
+// Dependencies: [19, 2177, 8963, 1071, 1082, 9126, 9128, 504, 9557, 8972, 1378, 5496, 559, 7488, 6199, 2]
 // Exports: default
 
-// Module 9494 (usePremiumPlanPrice)
+// Module 9556 (usePremiumPlanPrice)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6877 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7488 */;
 import react from "react" /* 19 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2177 */;
-import IAPStore from "IAPStore" /* 8851 */;
+import IAPStore from "IAPStore" /* 8963 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,10 +43,10 @@ export default function usePremiumPlanPrice(arg0) {
   let c4;
   let closure_5;
   let tmp = _require;
-  let tmp2 = priceState;
+  const tmp2 = priceState;
   const NitroGiftACOMExperiment = require("ACOMExperiments").NitroGiftACOMExperiment;
   const enabled = NitroGiftACOMExperiment.useConfig({ location: "usePremiumPlanPrice" }).enabled;
-  let tmp3 = mobileStoreFront;
+  const tmp3 = mobileStoreFront;
   const obj2 = mobileStoreFront(priceState[6]);
   mobileStoreFront = obj2.useMobileStoreFront();
   const items = [c4];
@@ -59,7 +59,8 @@ export default function usePremiumPlanPrice(arg0) {
     }
     return value;
   }, items1);
-  const tmp7 = mobileStoreFront(priceState[8])(stateFromStores, mobileStoreFront, flag ? tmp6.GIFT : tmp6.MOBILE);
+  const tmp6 = closure_6;
+  const tmp7 = mobileStoreFront(priceState[8])(stateFromStores, mobileStoreFront, flag ? tmp6.MOBILE_GIFT : tmp6.MOBILE);
   ({ price, priceState } = tmp7);
   let productIdForGift = null;
   let tmp8 = null;
@@ -97,25 +98,23 @@ export default function usePremiumPlanPrice(arg0) {
     return tmp;
   });
   closure_5 = tmp13;
-  const items4 = [isIOSResult, priceState, mobileStoreFront, tmp13];
+  const items4 = [isIOSResult, arg0, priceState, mobileStoreFront, tmp13];
   const effect = productIdForGift.useEffect(() => {
+    let country2;
     const tmp = _undefined;
     if (tmp) {
-      const tmp2 = priceState;
-      const tmp3 = closure_0;
-      const tmp4 = priceState;
-      if (priceState !== closure_0(priceState[8]).PriceStates.PRICE_AVAILABLE) {
-        if (tmp2 === tmp3(tmp4[8]).PriceStates.MISMATCHING_COUNTRIES) {
+      if (null != country2) {
+        if (priceState !== closure_0(priceState[8]).PriceStates.PRICE_AVAILABLE) {
           let country;
           if (mobileStoreFront != null) {
-            country = tmp7.country;
+            country = tmp6.country;
           }
           if (null != country) {
             let obj = closure_5;
             if (!closure_5.pending) {
               if (!_undefined.isFetchingForPremiumSKUs()) {
                 if (obj.fails < 3) {
-                  const country2 = tmp7.country;
+                  country2 = tmp6.country;
                   obj.fail(() => {
                     if (!SubscriptionPlanStore.isFetchingForPremiumSKUs()) {
                       const obj = SubscriptionPlanActionCreators;
@@ -132,9 +131,9 @@ export default function usePremiumPlanPrice(arg0) {
               }
             }
           }
+        } else {
+          closure_5.succeed();
         }
-      } else {
-        closure_5.succeed();
       }
     }
   }, items4);

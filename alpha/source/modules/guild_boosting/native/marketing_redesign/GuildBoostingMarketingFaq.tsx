@@ -1,21 +1,21 @@
-// Module ID: 14803
-// Function ID: 14804
+// Module ID: 14633
+// Function ID: 14634
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 14771, 575, 1112, 2187, 5504, 7030, 1186, 14804, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4917, 14601, 575, 1112, 2187, 5508, 6026, 1186, 14634, 2]
 // Exports: default
 
-// Module 14803 (GuildBoostingMarketingFaq)
+// Module 14633 (GuildBoostingMarketingFaq)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 14771 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14804 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 14601 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14634 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

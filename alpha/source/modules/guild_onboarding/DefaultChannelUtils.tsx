@@ -1,14 +1,14 @@
-// Module ID: 6824
-// Function ID: 6825
+// Module ID: 7331
+// Function ID: 7332
 // Name: DefaultChannelUtils
-// Dependencies: [4817, 4762, 1071, 1083, 504, 4850, 2]
+// Dependencies: [4821, 4766, 1071, 1083, 504, 4854, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 6824 (DefaultChannelUtils)
+// Module 7331 (DefaultChannelUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
-import GatedChannelStore from "GatedChannelStore" /* 4817 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4854 */;
+import GatedChannelStore from "GatedChannelStore" /* 4821 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

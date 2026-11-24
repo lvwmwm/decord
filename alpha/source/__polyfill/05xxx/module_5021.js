@@ -1,26 +1,26 @@
 // Module ID: 5021
 // Function ID: 5022
-// Dependencies: [32, 5005, 5018]
-// Exports: useRiveBoolean
+// Dependencies: [32, 5009, 5022]
+// Exports: useRiveNumber
 
 // Module 5021
-import react from "react" /* 5005 */;
-import _mod5018 from "module_5018" /* 5018 */;
+import react from "react" /* 5009 */;
+import _mod5022 from "module_5022" /* 5022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function getBooleanProperty(booleanProperty, arg1) {
-  return booleanProperty.booleanProperty(arg1);
+function getNumberProperty(numberProperty, arg1) {
+  return numberProperty.numberProperty(arg1);
 }
 
-export function useRiveBoolean(reducedMotion, instance) {
+export function useRiveNumber(chapterID, instance) {
   let tmp3;
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(4);
-  const obj2 = _mod5018;
-  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(instance, reducedMotion, getBooleanProperty);
-  _slicedToArray(obj2.useRiveProperty(instance, reducedMotion, getBooleanProperty), 3);
+  const obj2 = _mod5022;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(instance, chapterID, getNumberProperty);
+  _slicedToArray(obj2.useRiveProperty(instance, chapterID, getNumberProperty), 3);
   if (cResult[0] === tmp5) {
     if (cResult[1] === tmp4) {
       let tmp6;

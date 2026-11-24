@@ -1,13 +1,13 @@
-// Module ID: 14936
-// Function ID: 14937
+// Module ID: 14975
+// Function ID: 14976
 // Name: ReadyPayloadUtils
-// Dependencies: [4766, 4791, 8351, 8355, 4812, 8356, 4808, 12, 38, 2]
+// Dependencies: [4770, 4795, 8171, 8175, 4816, 8176, 4812, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 14936 (ReadyPayloadUtils)
-import ChannelRecord from "ChannelRecord" /* 4766 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4791 */;
-import isCacheEnabled from "isCacheEnabled" /* 8351 */;
+// Module 14975 (ReadyPayloadUtils)
+import ChannelRecord from "ChannelRecord" /* 4770 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4795 */;
+import isCacheEnabled from "isCacheEnabled" /* 8171 */;
 import size from "module_2" /* 2 */;
 
 let recipient_ids, set, user_id;
@@ -15,10 +15,10 @@ let recipient_ids, set, user_id;
 let tmp;
 let tmp2;
 const _modDef12 = tmp2(12);
-const DatabaseManagerDefault = tmp2(4808);
-const ChannelReaderDefault = tmp(4812);
-const GuildVersionsDefault = tmp(8355);
-const KvCacheVersionDefault = tmp(8356);
+const DatabaseManagerDefault = tmp2(4812);
+const ChannelReaderDefault = tmp(4816);
+const GuildVersionsDefault = tmp(8175);
+const KvCacheVersionDefault = tmp(8176);
 function hydrateGuild(guild) {
   let deleted_channel_ids;
   let deleted_emoji_ids;

@@ -1,16 +1,16 @@
-// Module ID: 13958
-// Function ID: 13959
+// Module ID: 9680
+// Function ID: 9681
 // Name: PremiumPerkGates
-// Dependencies: [1388, 8443, 6355, 13959, 1399, 2108, 1392, 2]
+// Dependencies: [1388, 7988, 5672, 9681, 1399, 2108, 1392, 2]
 // Exports: canEditDiscriminator, canInstallPremiumApplications, canRedeemPremiumPerks, canStreamQuality, canUploadLargeFiles, canUseAnimatedAvatar, canUseAnimatedEmojis, canUseBadges, canUseClientThemes, canUseCollectibles, canUseCustomBackgrounds, canUseCustomCallSounds, canUseCustomStickersEverywhere, canUseEmojisEverywhere, canUseHighVideoUploadQuality, canUseIncreasedGuildCap, canUseIncreasedMessageLength, canUseMonthlyOrbs, canUseMoreQuestOrbs, canUsePremiumAppIcons, canUsePremiumGuildMemberProfile, canUsePremiumProfileCustomization, canUseQuestOrbMultiplier, canUseShopDiscounts, canUseSoundboardEverywhere, canUseTenureBadge, getMaxFileSizeForPremiumType, hasBoostDiscount, hasFreeBoosts
 
-// Module 13958 (PremiumPerkGates)
+// Module 9680 (PremiumPerkGates)
 import PerksStateUtils from "PerksStateUtils" /* 1392 */;
 import user2 from "user" /* 1399 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
-import FileSizeUtils from "FileSizeUtils" /* 6355 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8443 */;
-import ProductCatalog from "ProductCatalog" /* 13959 */;
+import FileSizeUtils from "FileSizeUtils" /* 5672 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7988 */;
+import ProductCatalog from "ProductCatalog" /* 9681 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -110,16 +110,48 @@ export function canUseClientThemes(currentUser) {
   return obj.canUserUse(user2.Perk.CLIENT_THEMES, currentUser);
 }
 export function canStreamQuality(MID, currentUser) {
-  let canUserUseResult;
-  let obj;
+  let isPremiumAtLeast2Result;
   if (MID === obj.HIGH) {
-    const obj2 = ProductCatalog;
-    canUserUseResult = obj2.canUserUse(user2.Perk.STREAM_HIGH_QUALITY, currentUser);
+    let premiumType;
+    const isPremiumAtLeast = PremiumTypeUtils.isPremiumAtLeast;
+    PremiumTypeUtils;
+    if (currentUser != null) {
+      premiumType = currentUser.premiumType;
+    }
+    let isPremiumAtLeastResult = isPremiumAtLeast(premiumType, React2.TIER_2);
+    if (!isPremiumAtLeastResult) {
+      let hasFreePremiumResult;
+      if (currentUser != null) {
+        hasFreePremiumResult = currentUser.hasFreePremium();
+      }
+      isPremiumAtLeastResult = true === hasFreePremiumResult;
+    }
+    if (isPremiumAtLeastResult) {
+      const tmp5Result = ProductCatalog;
+      isPremiumAtLeastResult = tmp5Result.canUserUse(tmp5(1399).Perk.STREAM_HIGH_QUALITY, currentUser);
+    }
+    isPremiumAtLeast2Result = isPremiumAtLeastResult;
   } else {
-    obj = ProductCatalog;
-    canUserUseResult = obj.canUserUse(user2.Perk.STREAM_MID_QUALITY, currentUser);
+    let premiumType1;
+    const isPremiumAtLeast2 = PremiumTypeUtils.isPremiumAtLeast;
+    PremiumTypeUtils;
+    if (currentUser != null) {
+      premiumType1 = currentUser.premiumType;
+    }
+    isPremiumAtLeast2Result = isPremiumAtLeast2(premiumType1, React2.TIER_1);
+    if (!isPremiumAtLeast2Result) {
+      let hasFreePremiumResult1;
+      if (currentUser != null) {
+        hasFreePremiumResult1 = currentUser.hasFreePremium();
+      }
+      isPremiumAtLeast2Result = true === hasFreePremiumResult1;
+    }
+    if (isPremiumAtLeast2Result) {
+      const tmp13Result = ProductCatalog;
+      isPremiumAtLeast2Result = tmp13Result.canUserUse(tmp13(1399).Perk.STREAM_MID_QUALITY, currentUser);
+    }
   }
-  return canUserUseResult;
+  return isPremiumAtLeast2Result;
 }
 export function canUseQuestOrbMultiplier(isFractionalPremiumWithNoStandardSub) {
   let isPremiumExactlyResult = null != isFractionalPremiumWithNoStandardSub && !isFractionalPremiumWithNoStandardSub.isFractionalPremiumWithNoStandardSub();

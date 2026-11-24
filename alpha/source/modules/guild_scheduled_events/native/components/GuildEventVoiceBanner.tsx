@@ -1,19 +1,19 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 8321
+// Function ID: 8322
 // Name: GuildEventVoiceBanner
-// Dependencies: [19, 17, 4816, 6633, 21, 4913, 575, 8017, 504, 7633, 7575, 5127, 7592, 6494, 7568, 7030, 7587, 5511, 1112, 2]
+// Dependencies: [19, 17, 4820, 5649, 21, 4917, 575, 8322, 504, 8330, 8325, 5131, 8332, 8308, 8472, 6026, 8451, 5515, 1112, 2]
 
-// Module 14859 (GuildEventVoiceBanner)
+// Module 8321 (GuildEventVoiceBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6633 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7568 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 7592 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5649 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8332 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8472 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -63,7 +63,7 @@ const memoResult = react.memo(function GuildEventVoiceBanner(channel) {
     if (tmp) {
       let obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
-      const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+      const obj2 = GuildScheduledEventModalActionCreators;
       let result = obj2.openStartGuildEventModal(first, nextRecurrenceIdInEvent, () => {
         const obj = channel(first[13]);
         const result = obj.openVoiceChannelActionSheet(closure_1_0);

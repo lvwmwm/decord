@@ -1,21 +1,21 @@
-// Module ID: 11378
-// Function ID: 11379
+// Module ID: 10696
+// Function ID: 10697
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 11271, 21, 4913, 575, 5504, 6386, 1186, 11379, 11380, 1112, 11381, 7030, 2]
+// Dependencies: [19, 17, 10655, 21, 4917, 575, 5508, 6653, 1186, 10697, 10698, 1112, 10699, 6026, 2]
 
-// Module 11378 (StickerPackHeader)
+// Module 10696 (StickerPackHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5504 */;
-import StickersUtils from "StickersUtils" /* 6386 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11379 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11380 */;
+import Text_Text from "Text/Text" /* 5508 */;
+import StickersUtils from "StickersUtils" /* 6653 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10697 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10698 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11271 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10655 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size_mod from "module_2" /* 2 */;
 
 let PADDING_HORIZONTAL;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let size;
 let tmp10;
-const StickerPackBannerDefault = tmp10(11381);
+const StickerPackBannerDefault = tmp10(10699);
 const View = react_native.View;
 ({ PADDING_VERTICAL, PADDING_HORIZONTAL } = StickerPickerConstants);
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
@@ -88,12 +88,12 @@ const memoResult = react.memo(function StickerPackHeader(withDescription) {
   }
   if (flag) {
     const obj9 = { variant: "body-sm/medium", children: stickerPack.description };
-    flag = tmp4(tmp6(5504).Text, obj9);
+    flag = tmp4(tmp6(5508).Text, obj9);
   }
   const obj10 = { children: items1 };
   items1[1] = flag;
   const obj11 = { lineClamp: 1, variant: "body-xs/medium", color: "text-default", children: intl.format(intl2.t["0S3JpO"], obj12) };
-  const Text = tmp6(5504).Text;
+  const Text = tmp6(5508).Text;
   intl = tmp6(1112).intl;
   obj12 = { numStickers: stickerPack.stickers.length };
   items1[2] = React3(Text, obj11);
@@ -107,7 +107,7 @@ const memoResult = react.memo(function StickerPackHeader(withDescription) {
   if (null != onPress) {
     const obj15 = { style: items3, onPress, accessibilityRole: "header", children: tmp2Result };
     items3 = [tmp.section, style];
-    tmp4Result = tmp4(tmp6(7030).PressableOpacity, obj15);
+    tmp4Result = tmp4(tmp6(6026).PressableOpacity, obj15);
   } else {
     const obj28 = { style: items4, children: tmp2Result };
     items4 = [tmp.section, style];

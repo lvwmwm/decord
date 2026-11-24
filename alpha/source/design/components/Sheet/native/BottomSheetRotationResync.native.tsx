@@ -1,12 +1,12 @@
-// Module ID: 5490
-// Function ID: 5491
+// Module ID: 5494
+// Function ID: 5495
 // Name: BottomSheetRotationResync
-// Dependencies: [19, 5145, 1653, 5173, 5144, 2]
+// Dependencies: [19, 5149, 1653, 5177, 5148, 2]
 // Exports: BottomSheetRotationResync
 
-// Module 5490 (BottomSheetRotationResync)
-import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5144 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+// Module 5494 (BottomSheetRotationResync)
+import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5148 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5177 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

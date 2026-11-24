@@ -1,17 +1,17 @@
-// Module ID: 5497
-// Function ID: 5498
+// Module ID: 5501
+// Function ID: 5502
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 19, 4914, 21, 4913, 504, 1653, 5123, 1706, 5498, 2]
+// Dependencies: [32, 19, 4918, 21, 4917, 504, 1653, 5127, 1706, 5502, 2]
 // Exports: default
 
-// Module 5497 (FadeOutLottieAnimation)
+// Module 5501 (FadeOutLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
 import _modDef1653 from "module_1653" /* 1653 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5498 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5502 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import createStyles from "createStyles" /* 4913 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let flag, importDefault;
@@ -52,7 +52,7 @@ export default function FadeOutLottieAnimation(onComplete) {
     _undefined(false);
   }, []);
   onComplete(1653);
-  let items1 = [closure_9, tmp4, first, onComplete(5123).withTiming, closure_8, onComplete(1706).scheduleOnRN, tmp7];
+  let items1 = [closure_9, tmp4, first, onComplete(5127).withTiming, closure_8, onComplete(1706).scheduleOnRN, tmp7];
   let c0;
   importDefault = undefined;
   let c2;

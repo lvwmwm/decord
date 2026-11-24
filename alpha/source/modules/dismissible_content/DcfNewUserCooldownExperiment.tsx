@@ -1,10 +1,10 @@
-// Module ID: 4968
-// Function ID: 4969
+// Module ID: 4972
+// Function ID: 4973
 // Name: DcfNewUserCooldownExperiment
 // Dependencies: [1450, 1088, 2]
 // Exports: getDcfNewUserCooldown, useDcfNewUserCooldown
 
-// Module 4968 (DcfNewUserCooldownExperiment)
+// Module 4972 (DcfNewUserCooldownExperiment)
 import DurationsDefault from "Durations" /* 1088 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;

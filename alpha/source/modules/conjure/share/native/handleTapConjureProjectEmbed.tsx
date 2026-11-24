@@ -1,22 +1,22 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12222
+// Function ID: 12223
 // Name: handleTapConjureProjectEmbed
-// Dependencies: [5, 6621, 11970, 11973, 10688, 12283, 5594, 1112, 4190, 9953, 12284, 12296, 2119, 2]
+// Dependencies: [5, 6808, 11847, 11850, 9962, 12223, 5598, 1112, 4192, 11342, 12224, 12233, 2119, 2]
 // Exports: default
 
-// Module 12282 (handleTapConjureProjectEmbed)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;
-import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11973 */;
-import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 12283 */;
+// Module 12222 (handleTapConjureProjectEmbed)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6808 */;
+import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11850 */;
+import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 12223 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11970 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11847 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let closure_4, project, status;
 
 let tmp;
-const openFrameDefault = tmp(10688);
+const openFrameDefault = tmp(9962);
 function runConjureSharedProjectCoverAction(applicationId, arg1, channelId) {
   function launchOrReport() {
     return obj(...arguments);

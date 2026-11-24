@@ -1,9 +1,9 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12431
+// Function ID: 12432
 // Name: CheckpointTransitionConstants
 // Dependencies: [2]
 
-// Module 12515 (CheckpointTransitionConstants)
+// Module 12431 (CheckpointTransitionConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { delay: 0, duration: 350 };

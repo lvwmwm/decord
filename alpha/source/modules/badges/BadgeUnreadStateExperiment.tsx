@@ -1,10 +1,10 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 9724
+// Function ID: 9725
 // Name: BadgeUnreadStateExperiment
 // Dependencies: [32, 19, 1450, 504, 2]
 // Exports: useIsBadgeUnreadStateEnabled
 
-// Module 13930 (BadgeUnreadStateExperiment)
+// Module 9724 (BadgeUnreadStateExperiment)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;

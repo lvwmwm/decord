@@ -1,10 +1,10 @@
-// Module ID: 8336
-// Function ID: 8337
+// Module ID: 8072
+// Function ID: 8073
 // Name: FamilyCenterConstants
 // Dependencies: [1088, 1080, 1112, 2824, 2]
 // Exports: ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER, FAMILY_CENTER_REQUEST_QR_CODE_URL, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER
 
-// Module 8336 (FamilyCenterConstants)
+// Module 8072 (FamilyCenterConstants)
 import DurationsDefault from "Durations" /* 1088 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef2824 from "module_2824" /* 2824 */;
@@ -445,6 +445,7 @@ export const ACTION_TO_TEXT = map;
 export const FamilyCenterIconType = obj2;
 export const FamilyCenterFailureCode = obj3;
 export const FAMILY_CENTER_ERROR_CODE_TO_FAILURE = obj4;
+export const FAMILY_CENTER_INVALID_LINK_CODE_ERROR_CODE = 290007;
 export const FAMILY_CENTER_LINK_REQUEST_ERROR_EXPERIENCES = { [obj3.GENERIC_ERROR]: obj6, [obj3.PENDING_REQUEST_EXISTS]: obj7, [obj3.MAX_CONNECTIONS_REACHED]: obj8, [obj3.INELIGIBLE_FOR_FAMILY_CENTER]: obj9 };
 export const CONNECT_GUARDIAN_BOTTOM_SHEET_KEY = "ConnectGuardianBottomSheet";
 export const PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER = () => {

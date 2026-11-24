@@ -1,18 +1,17 @@
 // Module ID: 15589
 // Function ID: 15590
-// Dependencies: [15587]
+// Dependencies: [15570, 15590]
 
 // Module 15589
-import _mod15587 from "module_15587" /* 15587 */;
+import _mod15570 from "module_15570" /* 15570 */;
 
+let tmp2;
+const _mod15590 = tmp2(15590);
 
 export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod15587(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
+  let tmp4;
+  if (!_mod15570(arg0[arg1])) {
+    tmp4 = _mod15590(tmp);
   }
-  return tmp3;
+  return tmp4;
 };

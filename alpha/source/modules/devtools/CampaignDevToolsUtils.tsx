@@ -1,23 +1,24 @@
-// Module ID: 9193
-// Function ID: 9194
+// Module ID: 9071
+// Function ID: 9072
 // Name: CampaignDevToolsUtils
-// Dependencies: [9145, 1388, 6680, 9194, 1233, 9148, 9195, 9196, 9197, 2108, 1112, 9198, 9199, 4746, 9200, 11, 2]
-// Exports: campaignDetails, campaignDismissibleContents, campaignPreviewActions, campaignPromotionDismissalStatus, filterCampaigns, groupCampaignPreviewActions, groupCampaigns, resolveCampaignComponents, resolveCampaignPreviewComponents
+// Dependencies: [9023, 1388, 9072, 9075, 1233, 9026, 9076, 9077, 9078, 2108, 1112, 9025, 9079, 4750, 9080, 11, 9081, 9070, 2]
+// Exports: campaignDetails, campaignDismissibleContents, campaignPreviewActions, campaignPromotionDismissalStatus, filterCampaigns, groupCampaignPreviewActions, groupCampaigns, resolveCampaignComponents, resolveCampaignPreviewComponents, serverCampaigns
 
-// Module 9193 (CampaignDevToolsUtils)
+// Module 9071 (CampaignDevToolsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl from "intl" /* 1112 */;
 import ProtoUtils from "ProtoUtils" /* 1233 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import dismissible_content from "dismissible_content" /* 4746 */;
-import _extends from "_extends" /* 6680 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9148 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9194 */;
-import resolveLocalizedProperties2 from "resolveLocalizedProperties" /* 9195 */;
-import MarketingComponentType from "MarketingComponentType" /* 9198 */;
-import MarketingStringFormat from "MarketingStringFormat" /* 9199 */;
-import MobileBottomSheetDismissibleContent from "MobileBottomSheetDismissibleContent" /* 9200 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9145 */;
+import dismissible_content from "dismissible_content" /* 4750 */;
+import MarketingSurfaceType from "MarketingSurfaceType" /* 9025 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9026 */;
+import promotions_constants from "promotions/constants" /* 9070 */;
+import _extends from "_extends" /* 9072 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9075 */;
+import resolveLocalizedProperties2 from "resolveLocalizedProperties" /* 9076 */;
+import MarketingStringFormat from "MarketingStringFormat" /* 9079 */;
+import MobileBottomSheetDismissibleContent from "MobileBottomSheetDismissibleContent" /* 9080 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9023 */;
 import size from "module_2" /* 2 */;
 
 let _require, dependencyMap, map1, premium_type, set, set2;
@@ -104,7 +105,7 @@ function componentTypeName(component_type, properties) {
   let str2;
   let str = component_type;
   if (typeof component_type === "number") {
-    str = MarketingComponentType.MarketingComponentType[component_type];
+    str = MarketingSurfaceType.MarketingSurfaceType[component_type];
   }
   if (str == null) {
     let oneofKind;
@@ -148,7 +149,7 @@ function campaignStateLabel(lifecycle_state, timestamp) {
   }
 }
 function componentDismissibleContents(component_type, properties) {
-  if (component_type.component_type === MarketingComponentType.MarketingComponentType.MOBILE_BOTTOM_SHEET) {
+  if (component_type.component_type === MarketingSurfaceType.MarketingSurfaceType.MOBILE_BOTTOM_SHEET) {
     properties = properties.properties;
     let mobileBottomSheet = null;
     const getMobileBottomSheetDismissibleContent = MobileBottomSheetDismissibleContent.getMobileBottomSheetDismissibleContent;
@@ -160,7 +161,7 @@ function componentDismissibleContents(component_type, properties) {
     return items;
   } else {
     let items5;
-    if (component_type.component_type === MarketingComponentType.MarketingComponentType.GIFT_ICON) {
+    if (component_type.component_type === MarketingSurfaceType.MarketingSurfaceType.GIFT_ICON) {
       let items2;
       if (component_type.platform === MarketingComponentPlatform.MarketingComponentPlatform.MOBILE) {
         const items1 = [dismissible_content.DismissibleContent.GIFTING_PROMOTION_ICON];
@@ -169,7 +170,7 @@ function componentDismissibleContents(component_type, properties) {
         items2 = [];
       }
       items5 = items2;
-    } else if (component_type.component_type === MarketingComponentType.MarketingComponentType.GIFT_ICON_COACHMARK) {
+    } else if (component_type.component_type === MarketingSurfaceType.MarketingSurfaceType.GIFT_ICON_COACHMARK) {
       let items4;
       if (component_type.platform === MarketingComponentPlatform.MarketingComponentPlatform.MOBILE) {
         const items3 = [dismissible_content.DismissibleContent.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET];
@@ -193,7 +194,7 @@ function campaignDismissibleContentLabel(component_type, properties, item10028) 
   } else {
     const tmp10 = componentTypeName(component_type.component_type, properties);
     let tmp6 = tmp10;
-    if (component_type.component_type === MarketingComponentType.MarketingComponentType.MOBILE_BOTTOM_SHEET) {
+    if (component_type.component_type === MarketingSurfaceType.MarketingSurfaceType.MOBILE_BOTTOM_SHEET) {
       let combined;
       if (item10028 === dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL) {
         const _HermesInternal2 = HermesInternal;
@@ -217,41 +218,61 @@ function campaignDismissibleContentLabel(component_type, properties, item10028) 
     return tmp6;
   }
 }
+function compareServerCampaigns(priority, priority2) {
+  let diff;
+  if (priority.priority !== priority2.priority) {
+    diff = priority.priority - priority2.priority;
+  } else {
+    const startDate = priority.startDate;
+    const startDate2 = priority2.startDate;
+    const time = startDate.getTime();
+    if (time !== startDate2.getTime()) {
+      const startDate3 = priority2.startDate;
+      const startDate4 = priority.startDate;
+      const time1 = startDate3.getTime();
+      diff = time1 - startDate4.getTime();
+    } else {
+      obj = SnowflakeUtilsDefault;
+      diff = obj.compare(priority.id, priority2.id);
+    }
+  }
+  return diff;
+}
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let obj = { DRAFT: "Draft", UPCOMING: "Upcoming", ACTIVE: "Active", ENDED: "Ended" };
 let closure_6 = { [obj.DRAFT]: "start_date", [obj.UPCOMING]: "start_date", [obj.ACTIVE]: "end_date", [obj.ENDED]: "end_date" };
 let obj2 = {};
-const ANNOUNCEMENT_MODAL = MarketingComponentType.MarketingComponentType.ANNOUNCEMENT_MODAL;
+const ANNOUNCEMENT_MODAL_VARIANT_1 = MarketingSurfaceType.MarketingSurfaceType.ANNOUNCEMENT_MODAL_VARIANT_1;
 let items = [dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_DESKTOP_ANNOUNCEMENT_MODAL];
-obj2[ANNOUNCEMENT_MODAL] = items;
-const PREMIUM_TAB = MarketingComponentType.MarketingComponentType.PREMIUM_TAB;
+obj2[ANNOUNCEMENT_MODAL_VARIANT_1] = items;
+const PREMIUM_TAB = MarketingSurfaceType.MarketingSurfaceType.PREMIUM_TAB;
 let items1 = [dismissible_content.DismissibleContent.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE];
 obj2[PREMIUM_TAB] = items1;
-const PREMIUM_TAB_POPOVER = MarketingComponentType.MarketingComponentType.PREMIUM_TAB_POPOVER;
+const PREMIUM_TAB_POPOVER = MarketingSurfaceType.MarketingSurfaceType.PREMIUM_TAB_POPOVER;
 let items2 = [dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_REMINDER_UPSELL];
 obj2[PREMIUM_TAB_POPOVER] = items2;
-const NAGBAR = MarketingComponentType.MarketingComponentType.NAGBAR;
+const NAGBAR = MarketingSurfaceType.MarketingSurfaceType.NAGBAR;
 let items3 = [dismissible_content.DismissibleContent.PREMIUM_MARKETING_MOMENT_NAGBAR_UPSELL];
 obj2[NAGBAR] = items3;
-const GIFT_REMINDER_COACHMARK = MarketingComponentType.MarketingComponentType.GIFT_REMINDER_COACHMARK;
+const GIFT_REMINDER_COACHMARK = MarketingSurfaceType.MarketingSurfaceType.GIFT_REMINDER_COACHMARK;
 let items4 = [dismissible_content.DismissibleContent.GIFTING_PROMOTION_REMINDER];
 obj2[GIFT_REMINDER_COACHMARK] = items4;
-const GIFT_REMINDER_NAGBAR = MarketingComponentType.MarketingComponentType.GIFT_REMINDER_NAGBAR;
+const GIFT_REMINDER_NAGBAR = MarketingSurfaceType.MarketingSurfaceType.GIFT_REMINDER_NAGBAR;
 let items5 = [dismissible_content.DismissibleContent.GIFTING_PROMOTION_REMINDER];
 obj2[GIFT_REMINDER_NAGBAR] = items5;
-const SHOP_NAGBAR = MarketingComponentType.MarketingComponentType.SHOP_NAGBAR;
+const SHOP_NAGBAR = MarketingSurfaceType.MarketingSurfaceType.SHOP_NAGBAR;
 const items6 = [dismissible_content.DismissibleContent.PREMIUM_SHOP_NAGBAR_NOTICE];
 obj2[SHOP_NAGBAR] = items6;
-const SHOP_TAB_TOOLTIP = MarketingComponentType.MarketingComponentType.SHOP_TAB_TOOLTIP;
+const SHOP_TAB_TOOLTIP = MarketingSurfaceType.MarketingSurfaceType.SHOP_TAB_TOOLTIP;
 const items7 = [dismissible_content.DismissibleContent.SHOP_TAB_TOOLTIP];
 obj2[SHOP_TAB_TOOLTIP] = items7;
-const SHOP_COACHMARK = MarketingComponentType.MarketingComponentType.SHOP_COACHMARK;
+const SHOP_COACHMARK = MarketingSurfaceType.MarketingSurfaceType.SHOP_COACHMARK;
 const items8 = [dismissible_content.DismissibleContent.SHOP_TAB_TOOLTIP];
 obj2[SHOP_COACHMARK] = items8;
-const GUILD_HEADER_COACHMARK = MarketingComponentType.MarketingComponentType.GUILD_HEADER_COACHMARK;
+const GUILD_HEADER_COACHMARK = MarketingSurfaceType.MarketingSurfaceType.GUILD_HEADER_COACHMARK;
 const items9 = [dismissible_content.DismissibleContent.GUILD_HEADER_COACHMARK];
 obj2[GUILD_HEADER_COACHMARK] = items9;
-const GUILD_BOOST_TAB_BANNER = MarketingComponentType.MarketingComponentType.GUILD_BOOST_TAB_BANNER;
+const GUILD_BOOST_TAB_BANNER = MarketingSurfaceType.MarketingSurfaceType.GUILD_BOOST_TAB_BANNER;
 const items10 = [dismissible_content.DismissibleContent.GUILD_BOOST_TAB_BANNER, dismissible_content.DismissibleContent.GUILD_BOOST_TAB_HIGHLIGHT];
 obj2[GUILD_BOOST_TAB_BANNER] = items10;
 let result = size.fileFinishedImporting("modules/devtools/CampaignDevToolsUtils.tsx");
@@ -581,9 +602,11 @@ export function campaignPreviewActions(arr, stateFromStoresArray, found) {
   set = new Set();
   return arr.flatMap(function(componentType) {
     let items;
-    if (componentType.componentType !== MarketingComponentType.MarketingComponentType.ANNOUNCEMENT_MODAL) {
-      if (componentType.componentType !== MarketingComponentType.MarketingComponentType.MOBILE_BOTTOM_SHEET) {
-        return [];
+    if (componentType.componentType !== MarketingSurfaceType.MarketingSurfaceType.ANNOUNCEMENT_MODAL_VARIANT_1) {
+      if (componentType.componentType !== MarketingSurfaceType.MarketingSurfaceType.MOBILE_BOTTOM_SHEET) {
+        if (componentType.componentType !== MarketingSurfaceType.MarketingSurfaceType.ORBS_CONFIRMATION_MODAL) {
+          return [];
+        }
       }
     }
     const value = map.get(componentType.id);
@@ -854,4 +877,275 @@ export function campaignPromotionDismissalStatus(arg0, lastDismissedObjectId) {
     str = str3;
   }
   return str;
+}
+export function serverCampaigns(arr, arg1, arg2) {
+  function topPicksByKind(arg0, arg1, isRolledOut) {
+    closure_0 = arg1;
+    map = new Map();
+    const iter = arg0[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let oneofKind = nextResult.properties.properties.oneofKind;
+      let tmp3 = oneofKind;
+      if (null != oneofKind) {
+        let items = map.get(tmp3);
+        if (items == null) {
+          items = [];
+        }
+        let arr = items.push(tmp2);
+        let result = map.set(tmp3, items);
+      }
+      continue;
+    }
+    map1 = new Map(Array.from(map, (arg0) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = arg0;
+      const items = [tmp, isRolledOut(isRolledOut[16])(tmp2, closure_0, isRolledOut)];
+      return items;
+    }));
+    return map1;
+  }
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  const found = arr.filter((marketingComponents) => marketingComponents.marketingComponents.length > 0);
+  function isRolledOut(isIncludedInRollout) {
+    const isIncludedInRolloutResult = null != closure_0 && isIncludedInRollout.isIncludedInRollout(tmp, closure_1);
+    return isIncludedInRolloutResult;
+  }
+  let closure_3 = topPicksByKind(found.flatMap((marketingComponents) => marketingComponents.marketingComponents), arg2, isRolledOut);
+  let items = [...found];
+  const sorted = items.sort(compareServerCampaigns);
+  return sorted.map(function(id) {
+    let formatted;
+    let items;
+    let marketingComponents;
+    let promotionKey;
+    let str6;
+    obj = {
+      id: id.id,
+      title: promotionKey,
+      details: items,
+      surfaces: marketingComponents.map(function(component) {
+        let str2;
+        let str8;
+        let tmp5;
+        const properties = component.properties.properties;
+        let tmp = null;
+        if (null != properties.oneofKind) {
+          let value = closure_1_3.get(properties.oneofKind);
+          if (value == null) {
+            value = null;
+          }
+          tmp = value;
+        }
+        const properties2 = component.properties.properties;
+        let str = "";
+        obj = { component, surface: componentTypeName(component.componentType, component.properties), title: tmp5, timing: str2, status: str8, opensAnnouncementModal: "announcementModalVariant1" === properties.oneofKind };
+        const tmp4 = componentTypeName;
+        if ("announcementModalVariant1" === properties2.oneofKind) {
+          str = properties2.announcementModalVariant1.header;
+        }
+        if ("mobileBottomSheet" === properties2.oneofKind) {
+          str = properties2.mobileBottomSheet.header;
+        }
+        let content = tmp4(component.componentType, component.properties);
+        tmp5 = content;
+        if ("" !== str.trim()) {
+          obj2 = closure_0(isRolledOut[12]);
+          const result = obj2.formatMarketingPlainString(str, component.getFormatVariableValues(closure_0(isRolledOut[10]).intl.currentLocale));
+          if (result.ok) {
+            content = result.content;
+          }
+          tmp5 = content;
+        }
+        str2 = "Campaign window";
+        if (component.isTimed) {
+          const effectiveStartDate = component.effectiveStartDate;
+          let toISOStringResult;
+          if (effectiveStartDate != null) {
+            toISOStringResult = effectiveStartDate.toISOString();
+          }
+          if (toISOStringResult == null) {
+            toISOStringResult = null;
+          }
+          const effectiveEndDate = component.effectiveEndDate;
+          let toISOStringResult1;
+          if (effectiveEndDate != null) {
+            toISOStringResult1 = effectiveEndDate.toISOString();
+          }
+          if (toISOStringResult1 == null) {
+            toISOStringResult1 = null;
+          }
+          let str3 = "Not set";
+          let str4 = "Not set";
+          if (null !== toISOStringResult) {
+            let tmp14 = null;
+            if (null != toISOStringResult) {
+              const _Date = Date;
+              const parsed = Date.parse(toISOStringResult);
+              const _Number = Number;
+              let tmp13 = null;
+              if (!Number.isNaN(parsed)) {
+                tmp13 = parsed;
+              }
+              tmp14 = tmp13;
+            }
+            let str5 = "Unavailable";
+            if (null != tmp14) {
+              const _Date2 = Date;
+              const self = this;
+              const self2 = this;
+              const date = new Date(tmp14);
+              str5 = date.toLocaleString(closure_0(isRolledOut[10]).intl.currentLocale, { year: "numeric", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+            }
+            str4 = str5;
+          }
+          if (null !== toISOStringResult1) {
+            let tmp23 = null;
+            if (null != toISOStringResult1) {
+              const _Date3 = Date;
+              const parsed1 = Date.parse(toISOStringResult1);
+              const _Number2 = Number;
+              let tmp22 = null;
+              if (!Number.isNaN(parsed1)) {
+                tmp22 = parsed1;
+              }
+              tmp23 = tmp22;
+            }
+            let str6 = "Unavailable";
+            if (null != tmp23) {
+              const _Date4 = Date;
+              const self3 = this;
+              const self4 = this;
+              const date1 = new Date(tmp23);
+              str6 = date1.toLocaleString(closure_0(isRolledOut[10]).intl.currentLocale, { year: "numeric", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+            }
+            str3 = str6;
+          }
+          const _HermesInternal = HermesInternal;
+          str2 = "" + str4 + " to " + str3;
+        }
+        str8 = "Not supported by this client";
+        if (null != component.properties.properties.oneofKind) {
+          let str9;
+          if (null == component.effectiveStartDate) {
+            let str10;
+            if (null == component.effectiveEndDate) {
+              let str11;
+              if (!component.isTimed) {
+                let str12 = "Top pick for surface";
+                if (tmp !== component) {
+                  let promotionId;
+                  if (tmp != null) {
+                    promotionId = tmp.promotionId;
+                  }
+                  let str13 = "Outranked by another campaign";
+                  if (promotionId === component.promotionId) {
+                    str13 = "Outranked by another surface in this campaign";
+                  }
+                  str12 = str13;
+                }
+                str11 = str12;
+              } else if (typeof tmp30 === "function") {
+                str11 = "Rolling out, not reached yet";
+                null != closure_1_0 && component.isIncludedInRollout(tmp32, closure_1_1);
+              } else {
+                throw new TypeError("Trying to call a non-function");
+              }
+              str10 = str11;
+            } else {
+              str10 = "Ended";
+            }
+            str9 = str10;
+          } else {
+            str9 = "Scheduled";
+          }
+          str8 = str9;
+        }
+        return obj;
+      })
+    };
+    if ("" === id.promotionKey) {
+      let tmp = globalThis;
+      let _HermesInternal = HermesInternal;
+      let str = "Campaign ";
+      promotionKey = "Campaign " + id.id;
+    } else {
+      promotionKey = id.promotionKey;
+    }
+    obj2 = { label: "Campaign ID", value: id.id };
+    items = [obj2, , , , ];
+    let str2 = promotions_constants.PromotionTypes[id.promotionType];
+    if (str2 == null) {
+      let tmp4 = globalThis;
+      const _String = String;
+      str2 = String(id.promotionType);
+    }
+    const obj3 = { label: "Type", value: formatted + str6.replace(/\bnitro\b/g, "Nitro") };
+    const replaced = str2.replace(/([a-z0-9])([A-Z])/g, "$1 $2");
+    let str3 = replaced.replaceAll("_", " ");
+    let str4 = str3.toLowerCase();
+    let str5 = str4.charAt(0);
+    formatted = str5.toUpperCase();
+    str6 = str4.slice(1);
+    items[1] = obj3;
+    const startDate = id.startDate;
+    let toISOStringResult = startDate.toISOString();
+    let str7 = "Not set";
+    let str8 = "Not set";
+    if (null !== toISOStringResult) {
+      let tmp10 = null;
+      if (null != toISOStringResult) {
+        let _Date = Date;
+        let parsed = Date.parse(toISOStringResult);
+        let _Number = Number;
+        let tmp9 = null;
+        if (!Number.isNaN(parsed)) {
+          tmp9 = parsed;
+        }
+        tmp10 = tmp9;
+      }
+      let str9 = "Unavailable";
+      if (null != tmp10) {
+        let _Date2 = Date;
+        let self = this;
+        let self2 = this;
+        let date = new Date(tmp10);
+        let tmp13 = date;
+        str9 = date.toLocaleString(tmp2(1112).intl.currentLocale, { year: "numeric", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+      }
+      str8 = str9;
+    }
+    items[2] = { label: "Starts", value: str8 };
+    const endDate = id.endDate;
+    let toISOStringResult1 = endDate.toISOString();
+    if (null !== toISOStringResult1) {
+      let tmp18 = null;
+      if (null != toISOStringResult1) {
+        let _Date3 = Date;
+        let parsed1 = Date.parse(toISOStringResult1);
+        let _Number2 = Number;
+        let tmp17 = null;
+        if (!Number.isNaN(parsed1)) {
+          tmp17 = parsed1;
+        }
+        tmp18 = tmp17;
+      }
+      let str10 = "Unavailable";
+      if (null != tmp18) {
+        let _Date4 = Date;
+        let self3 = this;
+        let self4 = this;
+        let date1 = new Date(tmp18);
+        str10 = date1.toLocaleString(tmp2(1112).intl.currentLocale, { year: "numeric", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+      }
+      str7 = str10;
+    }
+    items[3] = { label: "Ends", value: str7 };
+    items[4] = { label: "Priority", value: String(id.priority) };
+    marketingComponents = id.marketingComponents;
+    ({ label: "Priority", value: String(id.priority) });
+    return obj;
+  });
 }

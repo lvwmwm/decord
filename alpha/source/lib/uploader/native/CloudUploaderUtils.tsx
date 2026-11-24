@@ -1,13 +1,13 @@
-// Module ID: 8494
-// Function ID: 8495
+// Module ID: 8015
+// Function ID: 8016
 // Name: CloudUploaderUtils
-// Dependencies: [2188, 502, 1360, 8442, 12, 1255, 2]
+// Dependencies: [2188, 502, 1360, 7987, 12, 1255, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 8494 (CloudUploaderUtils)
+// Module 8015 (CloudUploaderUtils)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import UploadUtils from "UploadUtils" /* 8442 */;
+import UploadUtils from "UploadUtils" /* 7987 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1360 */;

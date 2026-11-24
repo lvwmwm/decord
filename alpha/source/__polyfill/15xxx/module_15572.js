@@ -1,42 +1,44 @@
 // Module ID: 15572
 // Function ID: 15573
-// Dependencies: [15564, 15563, 15571]
+// Dependencies: [15573, 15584, 15586, 15589, 15592, 15593]
 
 // Module 15572
-import _mod15563 from "module_15563" /* 15563 */;
-import _mod15564 from "module_15564" /* 15564 */;
-import _mod15571 from "module_15571" /* 15571 */;
+import _mod15573 from "module_15573" /* 15573 */;
+import _mod15584 from "module_15584" /* 15584 */;
+import _mod15586 from "module_15586" /* 15586 */;
+import _mod15589 from "module_15589" /* 15589 */;
+import _mod15592 from "module_15592" /* 15592 */;
+import _mod15593 from "module_15593" /* 15593 */;
 
+let closure_3 = _mod15573("toPrimitive");
 
-export default (arg0, arg1) => {
-  if ("string" === arg1) {
-    const toString = arg0.toString;
-    if (_mod15564(toString)) {
-      const tmpResult = _mod15563;
-      const tmp4 = _mod15571(toString, arg0);
-      if (!tmpResult(tmp4)) {
-        return tmp4;
+export default function(arg0, arg1) {
+  if (_mod15584(arg0)) {
+    if (!_mod15586(arg0)) {
+      let str = arg1;
+      const tmp4 = _mod15589(arg0, closure_3);
+      if (tmp4) {
+        if (undefined === str) {
+          str = "default";
+        }
+        const tmp5 = _mod15592(tmp4, arg0, str);
+        if (_mod15584(tmp5)) {
+          if (!_mod15586(tmp5)) {
+            const self = this;
+            const self2 = this;
+            const tmp7 = new TypeError("Can't convert object to primitive value");
+            throw tmp7;
+          }
+        }
+        return tmp5;
+      } else {
+        let str2 = str;
+        if (undefined === str) {
+          str2 = "number";
+        }
+        return _mod15593(arg0, str2);
       }
     }
   }
-  const valueOf = arg0.valueOf;
-  if (_mod15564(valueOf)) {
-    const tmp5Result = _mod15563;
-    const tmp8 = _mod15571(valueOf, arg0);
-    if (!tmp5Result(tmp8)) {
-      return tmp8;
-    }
-  }
-  if ("string" !== arg1) {
-    const toString2 = arg0.toString;
-    if (_mod15564(toString2)) {
-      const tmp5Result2 = _mod15563;
-      const tmp10 = _mod15571(toString2, arg0);
-      if (!tmp5Result2(tmp10)) {
-        return tmp10;
-      }
-    }
-  }
-  const tmp11 = new TypeError("Can't convert object to primitive value");
-  throw tmp11;
+  return arg0;
 };

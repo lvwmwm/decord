@@ -1,23 +1,23 @@
-// Module ID: 12048
-// Function ID: 12049
+// Module ID: 11940
+// Function ID: 11941
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4762, 4845, 4855, 1386, 9657, 1071, 21, 4913, 563, 12049, 12050, 7734, 12053, 12057, 7426, 12059, 12068, 12069, 1112, 11055, 11056, 4945, 4746, 12071, 12076, 10371, 12077, 2018, 8051, 5929, 7711, 7040, 12081, 2639, 2]
+// Dependencies: [32, 19, 17, 4766, 4849, 4859, 1386, 10586, 1071, 21, 4917, 563, 11941, 11942, 8385, 11945, 11949, 7279, 11951, 11960, 11961, 1112, 10404, 10405, 4949, 4750, 11963, 11968, 10310, 11969, 2018, 10284, 5989, 7949, 7623, 11973, 2639, 2]
 // Exports: default
 
-// Module 12048 (useMemberListAction)
+// Module 11940 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 9657 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12049 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12059 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10586 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11941 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11951 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import PermissionStore from "PermissionStore" /* 4849 */;
+import RelationshipStore from "RelationshipStore" /* 4859 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

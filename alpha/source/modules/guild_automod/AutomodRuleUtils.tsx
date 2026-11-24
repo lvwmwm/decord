@@ -1,19 +1,19 @@
-// Module ID: 19717
-// Function ID: 19718
+// Module ID: 19760
+// Function ID: 19761
 // Name: AutomodRuleUtils
-// Dependencies: [502, 19714, 12408, 1254, 19718, 19721, 1112, 8676, 8314, 2]
+// Dependencies: [502, 19757, 12307, 1254, 19761, 19764, 1112, 8089, 8042, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, getRulesFromTriggerTypeMap, isBackendPersistedRule, isRegexSupported, isRuleApplicationFilter, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, isValidMentionSpamLimit, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 19717 (AutomodRuleUtils)
+// Module 19760 (AutomodRuleUtils)
 import intl8 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8314 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8676 */;
-import AutomodStore from "AutomodStore" /* 19714 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19718 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 19721 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8042 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8089 */;
+import AutomodStore from "AutomodStore" /* 19757 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19761 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 19764 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 12408 */;
+import Constants from "Constants" /* 12307 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -27,14 +27,14 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f118497 = (keyword) => {
+const f118685 = (keyword) => {
   const InvalidKeywordError = AutomodErrorUtils.InvalidKeywordError;
   const intl = intl8.intl;
   const range = { keyword, max, min };
   const invalidKeywordError = new InvalidKeywordError(intl.formatToPlainString(intl8.t.rbRvGe, range));
   throw invalidKeywordError;
 };
-const f118498 = (regex) => {
+const f118686 = (regex) => {
   const InvalidRegexPatternError = AutomodErrorUtils.InvalidRegexPatternError;
   const intl = intl8.intl;
   const range = { regex, max: max2, min: min2 };
@@ -157,7 +157,7 @@ export function validateKeywordsOrThrow(arr, limit) {
     const error = new Error(intl.formatToPlainString(intl8.t.mee4qd, obj));
     throw error;
   } else {
-    const item = arr.forEach(f118497);
+    const item = arr.forEach(f118685);
   }
 }
 export function validateRegexPatternsOrThrow(arr) {
@@ -170,7 +170,7 @@ export function validateRegexPatternsOrThrow(arr) {
     const error = new Error(intl.formatToPlainString(intl8.t.tDjhF1, obj));
     throw error;
   } else {
-    const item = arr.forEach(f118498);
+    const item = arr.forEach(f118686);
   }
 }
 export function isValidMentionSpamLimit(NumberResult) {
@@ -232,7 +232,7 @@ export function validateRuleBeforeSaveOrThrow(triggerType) {
       const error2 = new Error(intl5.formatToPlainString(intl8.t.mee4qd, obj2));
       throw error2;
     } else {
-      const item = keywordFilter.forEach(f118497);
+      const item = keywordFilter.forEach(f118685);
       if (regexPatterns.length > metroRequire) {
         const _Error4 = Error;
         const intl4 = intl8.intl;
@@ -242,7 +242,7 @@ export function validateRuleBeforeSaveOrThrow(triggerType) {
         const error3 = new Error(intl4.formatToPlainString(intl8.t.tDjhF1, obj3));
         throw error3;
       } else {
-        const item1 = regexPatterns.forEach(f118498);
+        const item1 = regexPatterns.forEach(f118686);
       }
     }
   }

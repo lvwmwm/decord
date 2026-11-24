@@ -1,13 +1,13 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 8167
+// Function ID: 8168
 // Name: AppDatabaseManager
-// Dependencies: [32, 502, 3, 4808, 4792, 572, 8348, 2]
+// Dependencies: [32, 502, 3, 4812, 4796, 572, 8168, 2]
 
-// Module 8347 (AppDatabaseManager)
+// Module 8167 (AppDatabaseManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Dispatcher from "Dispatcher" /* 572 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4808 */;
-import actions2 from "actions" /* 8348 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4812 */;
+import actions2 from "actions" /* 8168 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -76,7 +76,7 @@ class AppDatabaseManager {
     if (null != value) {
       if (0 !== value.length) {
         if (null != databaseResult) {
-          if (stateResult === require("module_4792").DatabaseState.Open) {
+          if (stateResult === require("module_4796").DatabaseState.Open) {
             const transaction = databaseResult.transaction;
             let combined = null;
             if (!set.has(type.type)) {

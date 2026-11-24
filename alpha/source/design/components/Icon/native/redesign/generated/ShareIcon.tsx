@@ -1,14 +1,14 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 12658
+// Function ID: 12659
 // Name: ShareIcon
-// Dependencies: [19, 21, 575, 5599, 10138, 2]
+// Dependencies: [19, 21, 575, 5603, 8455, 2]
 // Exports: ShareIcon
 
-// Module 10137 (ShareIcon)
+// Module 12658 (ShareIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 10138 */;
+import BaseIconImage2 from "BaseIconImage" /* 5603 */;
+import AssetRegistry from "AssetRegistry" /* 8455 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

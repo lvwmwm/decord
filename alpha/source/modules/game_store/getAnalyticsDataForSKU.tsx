@@ -1,10 +1,10 @@
-// Module ID: 6381
-// Function ID: 6382
+// Module ID: 5709
+// Function ID: 5710
 // Name: getAnalyticsDataForSKU
 // Dependencies: [2164, 1071, 2]
 // Exports: default
 
-// Module 6381 (getAnalyticsDataForSKU)
+// Module 5709 (getAnalyticsDataForSKU)
 import Constants from "Constants" /* 1071 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import size from "module_2" /* 2 */;

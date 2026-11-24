@@ -1,26 +1,26 @@
-// Module ID: 10642
-// Function ID: 10643
+// Module ID: 9873
+// Function ID: 9874
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 6620, 4762, 10636, 10637, 10643, 1071, 21, 10640, 10644, 5089, 10646, 10838, 10601, 10839, 1653, 1706, 5098, 13735, 504, 1494, 10645, 13736, 7520, 7539, 13747, 6494, 5173, 10714, 2]
+// Dependencies: [32, 19, 6807, 4766, 9867, 9868, 9874, 1071, 21, 9871, 9875, 5093, 9880, 10114, 9877, 10115, 1653, 1706, 5102, 13645, 504, 1494, 9876, 13646, 6253, 6254, 13657, 8308, 5177, 9989, 2]
 
-// Module 10642 (ChannelCallModal)
+// Module 9873 (ChannelCallModal)
 import Constants2 from "Constants" /* 1071 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6494 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10637 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 10640 */;
-import RevealProvider from "RevealProvider" /* 10644 */;
-import CameraPreviewDefault from "CameraPreview" /* 10646 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 10838 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 10839 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 13736 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5093 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8308 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 9868 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 9871 */;
+import RevealProvider from "RevealProvider" /* 9875 */;
+import CameraPreviewDefault from "CameraPreview" /* 9880 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 10114 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 10115 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 13646 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import ChannelCallStore from "ChannelCallStore" /* 10636 */;
-import Constants from "Constants" /* 10643 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelCallStore from "ChannelCallStore" /* 9867 */;
+import Constants from "Constants" /* 9874 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 9119
-// Function ID: 9120
+// Module ID: 8984
+// Function ID: 8985
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1388, 8951, 21, 4913, 9120, 9121, 2173, 5468, 1091, 5600, 9122, 9123, 9124, 9125, 9127, 9128, 9129, 2]
+// Dependencies: [19, 17, 1388, 8985, 21, 4917, 8986, 8987, 2173, 5472, 1091, 5604, 8988, 8989, 8990, 8991, 9006, 9007, 9008, 2]
 // Exports: default
 
-// Module 9119 (PremiumPlanActionSheetHeader)
+// Module 8984 (PremiumPlanActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
-import LinearGradientDefault from "LinearGradient" /* 5468 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import ColorConstants from "ColorConstants" /* 8951 */;
+import LinearGradientDefault from "LinearGradient" /* 5472 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import ColorConstants from "ColorConstants" /* 8985 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -71,12 +71,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp14 = LinearGradientDefault;
   tmp6Result = PremiumUtils;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp17Result = tmp13(9120);
+    tmp17Result = tmp13(8986);
   } else {
     tmp17Result = null;
     if (TIER_0.TIER_1 !== premiumType) {
       if (TIER_0.TIER_2 === premiumType) {
-        tmp17Result = tmp13(9121);
+        tmp17Result = tmp13(8987);
       }
     }
   }
@@ -85,12 +85,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     const tmp13Result7 = FastImageDefault;
     const tmp17 = metroImportDefault;
     if (TIER_0.TIER_0 === premiumType) {
-      tmp13Result8 = tmp13(9120);
+      tmp13Result8 = tmp13(8986);
     } else {
       tmp13Result8 = null;
       if (TIER_0.TIER_1 !== premiumType) {
         if (TIER_0.TIER_2 === premiumType) {
-          tmp13Result8 = tmp13(9121);
+          tmp13Result8 = tmp13(8987);
         }
       }
     }
@@ -102,33 +102,33 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp13Result9 = FastImageDefault;
   const tmp20 = View;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result10 = tmp13(9122);
+    tmp13Result10 = tmp13(8988);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result10 = tmp13(9123);
+    tmp13Result10 = tmp13(8989);
   } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result10 = tmp13(9124);
+    tmp13Result10 = tmp13(8990);
   }
   items1 = [metroImportDefault(tmp13Result9, { source: tmp13Result10, resizeMode: "contain" }), , ];
   let tmp21Result = null;
   if (tmp2) {
     const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-    tmp21Result = tmp21(tmp6(9125).PremiumPill, obj5);
+    tmp21Result = tmp21(tmp6(8991).PremiumPill, obj5);
   }
   items1[1] = tmp21Result;
   let tmp21Result2 = null;
   if (tmp10) {
     const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-    tmp21Result2 = tmp21(tmp6(9125).PremiumPill, obj6);
+    tmp21Result2 = tmp21(tmp6(8991).PremiumPill, obj6);
   }
   items1[2] = tmp21Result2;
   items[1] = metroImportAll(tmp20, obj4);
   const tmp13Result11 = FastImageDefault;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result12 = tmp13(9127);
+    tmp13Result12 = tmp13(9006);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result12 = tmp13(9128);
+    tmp13Result12 = tmp13(9007);
   } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result12 = tmp13(9129);
+    tmp13Result12 = tmp13(9008);
   }
   const obj7 = { source: tmp13Result12, style: null, resizeMode: "contain" };
   const items2 = [tmp.imgWumpus, ];

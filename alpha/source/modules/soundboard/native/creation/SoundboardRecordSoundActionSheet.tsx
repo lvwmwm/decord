@@ -1,25 +1,25 @@
-// Module ID: 19800
-// Function ID: 19801
+// Module ID: 19843
+// Function ID: 19844
 // Name: SoundboardRecordSoundActionSheet
-// Dependencies: [32, 5, 19, 17, 2131, 6496, 12824, 21, 5679, 13119, 4913, 575, 12, 7795, 5594, 7784, 1112, 7553, 5504, 19801, 8492, 5511, 19802, 2]
+// Dependencies: [32, 5, 19, 17, 2131, 7739, 12743, 21, 5742, 13037, 4917, 575, 12, 7740, 5598, 8423, 1112, 7420, 5508, 19844, 8013, 5515, 19845, 2]
 // Exports: default
 
-// Module 19800 (SoundboardRecordSoundActionSheet)
+// Module 19843 (SoundboardRecordSoundActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
-import reactDefault from "react" /* 7784 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8492 */;
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19802 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7739 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8013 */;
+import reactDefault from "react" /* 8423 */;
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19845 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12824 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12743 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,8 +36,8 @@ let obj5;
 let obj6;
 let tmp13;
 let unpackModuleId;
-const SoundboardRecordingWaveformDefault = tmp13(19801);
-const f118708 = (arg0) => {
+const SoundboardRecordingWaveformDefault = tmp13(19844);
+const f118896 = (arg0) => {
   let num = arg0;
   if (arg0 == null) {
     num = 0;
@@ -45,7 +45,7 @@ const f118708 = (arg0) => {
   return num;
 };
 function getRecordedLevels(arg0) {
-  return Array.from(arg0, f118708);
+  return Array.from(arg0, f118896);
 }
 let obj = function _startSoundboardRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -253,7 +253,7 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
           ref4.current(true);
         } else {
           const _Array = Array;
-          memo(diff, Array.from(tmp5.current, f118708));
+          memo(diff, Array.from(tmp5.current, f118896));
         }
       }
     }
@@ -503,22 +503,22 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
     result = num;
   }
   let obj2 = { style: tmp.container, children: items5 };
-  const ActionSheet = tmp16(7553).ActionSheet;
+  const ActionSheet = tmp16(7420).ActionSheet;
   let obj3 = { variant: "heading-lg/semibold", style: tmp.title, children: intl2.string(tmp16(1112).t["/VJ/Sp"]) };
-  const Text = tmp16(5504).Text;
+  const Text = tmp16(5508).Text;
   intl2 = tmp16(1112).intl;
   items5 = [closure_12(Text, obj3), , , , ];
   let obj4 = { style: tmp.waveform, children: closure_12(SoundboardRecordingWaveformDefault, { levels: waveformLevels, slotCount: 32, height: 64 }) };
   items5[1] = closure_12(ref, obj4);
   let obj5 = { variant: "body-sm/medium", color: "text-muted", style: tmp.elapsed, children: "" + timeFormat + " / " + tmp16Result2.getTimeFormat(10) };
-  const Text2 = tmp16(5504).Text;
+  const Text2 = tmp16(5508).Text;
   const tmp16Result = utils_TimeUtils;
   timeFormat = tmp16Result.getTimeFormat(result);
   tmp16Result2 = utils_TimeUtils;
   items5[2] = closure_12(Text2, obj5);
   let obj6 = { style: tmp.button, children: tmp21(Button, obj7) };
   let str = "secondary";
-  Button = tmp16(5511).Button;
+  Button = tmp16(5515).Button;
   const tmp22 = closure_13;
   if (tmp3) {
     str = "destructive";
@@ -564,7 +564,7 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
       }
     }
   };
-  Button2 = tmp16(5511).Button;
+  Button2 = tmp16(5515).Button;
   intl5 = tmp16(1112).intl;
   items5[4] = closure_12(ref, obj9);
   return closure_12(ActionSheet, obj8);

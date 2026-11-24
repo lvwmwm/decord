@@ -1,17 +1,17 @@
-// Module ID: 18253
-// Function ID: 18254
+// Module ID: 18292
+// Function ID: 18293
 // Name: useConjureStartPublish
-// Dependencies: [5, 19, 6621, 6980, 12305, 18254, 18255, 2]
+// Dependencies: [5, 19, 6808, 7576, 11313, 18293, 18294, 2]
 // Exports: default
 
-// Module 18253 (useConjureStartPublish)
-import useConjurePublishAction from "useConjurePublishAction" /* 12305 */;
-import conjurePublishReview from "conjurePublishReview" /* 18254 */;
-import openConjurePublishReview from "openConjurePublishReview" /* 18255 */;
+// Module 18292 (useConjureStartPublish)
+import useConjurePublishAction from "useConjurePublishAction" /* 11313 */;
+import conjurePublishReview from "conjurePublishReview" /* 18293 */;
+import openConjurePublishReview from "openConjurePublishReview" /* 18294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7576 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 15368
-// Function ID: 15369
+// Module ID: 15389
+// Function ID: 15390
 // Name: WindowsPlayoutBufferExperiment
 // Dependencies: [1450, 2]
 // Exports: getWindowsPlayoutBufferExperimentConfig
 
-// Module 15368 (WindowsPlayoutBufferExperiment)
+// Module 15389 (WindowsPlayoutBufferExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

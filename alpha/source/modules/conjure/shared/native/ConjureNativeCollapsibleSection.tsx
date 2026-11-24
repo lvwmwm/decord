@@ -1,16 +1,16 @@
-// Module ID: 18556
-// Function ID: 18557
+// Module ID: 18597
+// Function ID: 18598
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 4913, 575, 5504, 12797, 7565, 7600, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 5508, 9675, 7432, 8348, 2]
 // Exports: ConjureNativeCollapsibleMeta, default
 
-// Module 18556 (ConjureNativeCollapsibleSection)
+// Module 18597 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5504 */;
+import Text_Text from "Text/Text" /* 5508 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -61,10 +61,10 @@ export default function ConjureNativeCollapsibleSection(showHeader) {
   ({ hideLabel, children } = showHeader);
   const tmp = closure_6();
   if (flag3) {
-    ChevronSmallRightIcon = tmp2(12797).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp2(9675).ChevronSmallDownIcon;
     tmp4 = tmp2;
   } else {
-    ChevronSmallRightIcon = tmp2(7565).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp2(7432).ChevronSmallRightIcon;
     tmp4 = tmp2;
   }
   let tmp6Result = null;
@@ -72,7 +72,7 @@ export default function ConjureNativeCollapsibleSection(showHeader) {
   if (flag) {
     const obj2 = { style: tmp.header, children: items };
     const obj3 = { variant: "body-sm/medium", color: "text-subtle", children: title };
-    items = [React3(tmp4(5504).Text, obj3), ];
+    items = [React3(tmp4(5508).Text, obj3), ];
     const obj4 = { style: tmp.headerTrailing, children: items1 };
     items1 = [meta, ];
     let tmp9Result = null;
@@ -81,7 +81,7 @@ export default function ConjureNativeCollapsibleSection(showHeader) {
       if (null != onToggleExpanded) {
         const obj5 = { scaleAmountInPx: 4, hitSlop: PX_8, accessibilityState: obj6, accessibilityLabel: showLabel, onPress: onToggleExpanded, children: React3(ChevronSmallRightIcon, obj7) };
         obj6 = { expanded: flag3 };
-        const PressableScale = tmp4(7600).PressableScale;
+        const PressableScale = tmp4(8348).PressableScale;
         if (flag3) {
           showLabel = hideLabel;
         }

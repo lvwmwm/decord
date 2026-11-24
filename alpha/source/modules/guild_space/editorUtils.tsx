@@ -1,20 +1,20 @@
-// Module ID: 19707
-// Function ID: 19708
+// Module ID: 19750
+// Function ID: 19751
 // Name: editorUtils
-// Dependencies: [32, 19708, 6845, 1284, 6349, 2]
+// Dependencies: [32, 19751, 7460, 1284, 5666, 2]
 // Exports: createDefaultDraftWidgets, filterCatalogWidgetsAtMaxInstances, getWidgetSaveError, isDraftWidgetId, toWidgetConfigUpdateRequest
 
-// Module 19707 (editorUtils)
+// Module 19750 (editorUtils)
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import GuildSpaceTypes from "GuildSpaceTypes" /* 6845 */;
-import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 19708 */;
+import GuildSpaceTypes from "GuildSpaceTypes" /* 7460 */;
+import guildSpaceWidgetLayout from "guildSpaceWidgetLayout" /* 19751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
 let tmp;
-const V6OrEarlierAPIError = tmp(6349);
+const V6OrEarlierAPIError = tmp(5666);
 function createDraftWidget(type, name, locked) {
   const obj = { id: "" + c3 + +closure_4, position: { column: guildSpaceWidgetLayout.LEFT_COLUMN, order: 0 }, requires_hydration: false, default_title: name, locked };
   closure_4 = tmp + 1;

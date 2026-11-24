@@ -1,11 +1,11 @@
-// Module ID: 8146
-// Function ID: 8147
+// Module ID: 14670
+// Function ID: 14671
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [19, 8069, 2]
+// Dependencies: [19, 6011, 2]
 // Exports: default
 
-// Module 8146 (useUserProfileAnalyticsProperties)
-import Constants from "Constants" /* 8069 */;
+// Module 14670 (useUserProfileAnalyticsProperties)
+import Constants from "Constants" /* 6011 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

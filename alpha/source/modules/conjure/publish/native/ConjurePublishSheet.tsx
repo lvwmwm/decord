@@ -1,24 +1,24 @@
-// Module ID: 18257
-// Function ID: 18258
+// Module ID: 18296
+// Function ID: 18297
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6621, 21, 4913, 575, 5127, 18256, 12305, 504, 7597, 18258, 5924, 5472, 5595, 1112, 4190, 18269, 7553, 7017, 5511, 18270, 7322, 1186, 5504, 2]
+// Dependencies: [5, 19, 17, 6808, 21, 4917, 575, 5131, 18295, 11313, 504, 8345, 18297, 5984, 5476, 5599, 1112, 4192, 18308, 7420, 7354, 5515, 18309, 6926, 1186, 5508, 2]
 // Exports: default
 
-// Module 18257 (ConjurePublishSheet)
+// Module 18296 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import GuildIcon from "GuildIcon" /* 7322 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12305 */;
-import showConjurePublishSheet from "showConjurePublishSheet" /* 18256 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import GuildIcon from "GuildIcon" /* 6926 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 11313 */;
+import showConjurePublishSheet from "showConjurePublishSheet" /* 18295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -354,7 +354,7 @@ function PublishDestination(destination) {
     name = destination.guild.name;
   } else {
     const intl = intl3.intl;
-    name = intl.string(_modDef4190["11Xr/r"]);
+    name = intl.string(_modDef4192["11Xr/r"]);
   }
   const obj = { style: tmp.destination, accessible: true, children: items };
   if ("server" === destination.type) {
@@ -372,10 +372,10 @@ function PublishDestination(destination) {
   }
   items = [tmp11, ];
   const obj4 = { style: tmp.destinationText, children: items1 };
-  const obj5 = { variant: "body-xs/normal", color: "text-subtle", children: intl2.string(_modDef4190.XHjO6t) };
-  const Text = tmp8(5504).Text;
+  const obj5 = { variant: "body-xs/normal", color: "text-subtle", children: intl2.string(_modDef4192.XHjO6t) };
+  const Text = tmp8(5508).Text;
   intl2 = tmp8(1112).intl;
-  items1 = [tmp10(Text, obj5), tmp10(tmp8(5504).Text, { variant: "body-md/medium", color: "text-strong", lineClamp: 1, children: name })];
+  items1 = [tmp10(Text, obj5), tmp10(tmp8(5508).Text, { variant: "body-md/medium", color: "text-strong", lineClamp: 1, children: name })];
   items[1] = metroImportAll(View, obj4);
   return metroImportAll(View, obj);
 }

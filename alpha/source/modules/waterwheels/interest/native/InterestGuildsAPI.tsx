@@ -1,10 +1,10 @@
-// Module ID: 19609
-// Function ID: 19610
+// Module ID: 19653
+// Function ID: 19654
 // Name: InterestGuildsAPI
-// Dependencies: [5, 1071, 19610, 1284, 1255, 2]
+// Dependencies: [5, 1071, 19654, 1284, 1255, 2]
 // Exports: createInterestGuildsResource
 
-// Module 19609 (InterestGuildsAPI)
+// Module 19653 (InterestGuildsAPI)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

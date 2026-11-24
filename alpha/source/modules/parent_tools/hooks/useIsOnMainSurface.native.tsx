@@ -1,11 +1,11 @@
-// Module ID: 19148
-// Function ID: 19149
+// Module ID: 19190
+// Function ID: 19191
 // Name: useIsOnMainSurface
-// Dependencies: [32, 19, 5090, 2]
+// Dependencies: [32, 19, 5094, 2]
 // Exports: useIsOnMainSurface
 
-// Module 19148 (useIsOnMainSurface)
-import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+// Module 19190 (useIsOnMainSurface)
+import RootNavigationRef from "RootNavigationRef" /* 5094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

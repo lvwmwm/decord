@@ -1,10 +1,10 @@
-// Module ID: 8880
-// Function ID: 8881
+// Module ID: 11874
+// Function ID: 11875
 // Name: FriendAnniversaryGate
 // Dependencies: [2]
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 8880 (FriendAnniversaryGate)
+// Module 11874 (FriendAnniversaryGate)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.tsx");

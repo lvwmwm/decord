@@ -1,11 +1,11 @@
-// Module ID: 19484
-// Function ID: 19485
+// Module ID: 19526
+// Function ID: 19527
 // Name: protocol
-// Dependencies: [19485, 2]
+// Dependencies: [19527, 2]
 // Exports: generateNonce, isSameChildState, isShimWindowMessage, mergeChildStates, readNonce
 
-// Module 19484 (protocol)
-import Safe2 from "Safe" /* 19485 */;
+// Module 19526 (protocol)
+import Safe2 from "Safe" /* 19527 */;
 import size from "module_2" /* 2 */;
 
 const discordEmbeddedAppShim = "discordEmbeddedAppShim";

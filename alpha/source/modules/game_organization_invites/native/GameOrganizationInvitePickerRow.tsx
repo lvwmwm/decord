@@ -1,16 +1,16 @@
-// Module ID: 12083
-// Function ID: 12084
+// Module ID: 11975
+// Function ID: 11976
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 12084, 8438, 21, 12085, 5477, 575, 7045, 12086, 5929, 7038, 5504, 1112, 2639, 12095, 2]
+// Dependencies: [19, 10352, 5650, 21, 11976, 5481, 575, 6018, 11977, 5989, 7029, 5508, 1112, 2639, 10354, 2]
 
-// Module 12083 (GameOrganizationInvitePickerRow)
+// Module 11975 (GameOrganizationInvitePickerRow)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5477 */;
-import TableRow2 from "TableRow" /* 7045 */;
-import Constants from "Constants" /* 8438 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12084 */;
-import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 12085 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12086 */;
+import useToken from "useToken" /* 5481 */;
+import Constants from "Constants" /* 5650 */;
+import TableRow2 from "TableRow" /* 6018 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 10352 */;
+import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 11976 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 11977 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 const _modDef2639 = tmp(2639);
-const InviteButtonDefault = tmp(12095);
+const InviteButtonDefault = tmp(10354);
 let closure_4 = InstantInviteSendStateStore.useInstantInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -66,12 +66,12 @@ const memoResult = react.memo(function GameOrganizationInvitePickerRow(organizat
   if (null != memberCount) {
     if (null != maxMembers) {
       const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_4, align: "center", children: items1 };
-      const Stack = tmp4(5929).Stack;
+      const Stack = tmp4(5989).Stack;
       const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const GroupIcon = tmp4(7038).GroupIcon;
+      const GroupIcon = tmp4(7029).GroupIcon;
       items1 = [metroRequire(GroupIcon, obj6), ];
       const obj7 = { variant: "body-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2639.VuENGl, obj8) };
-      const Text = tmp4(5504).Text;
+      const Text = tmp4(5508).Text;
       intl = tmp4(1112).intl;
       obj8 = { count: memberCount, max: maxMembers };
       items1[1] = metroRequire(Text, obj7);

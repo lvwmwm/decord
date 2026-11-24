@@ -1,10 +1,10 @@
-// Module ID: 10090
-// Function ID: 10091
+// Module ID: 11387
+// Function ID: 11388
 // Name: showChannelTabLimitToast
 // Dependencies: [2]
 // Exports: ensureRoomForChannelTab
 
-// Module 10090 (showChannelTabLimitToast)
+// Module 11387 (showChannelTabLimitToast)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tabs/showChannelTabLimitToast.native.tsx");

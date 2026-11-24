@@ -1,13 +1,13 @@
-// Module ID: 10054
-// Function ID: 10055
+// Module ID: 8795
+// Function ID: 8796
 // Name: MessagePreviewStore
-// Dependencies: [5966, 504, 12, 572, 2]
+// Dependencies: [6267, 504, 12, 572, 2]
 
-// Module 10054 (MessagePreviewStore)
+// Module 8795 (MessagePreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5966 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6267 */;
 import size from "module_2" /* 2 */;
 
 let unshift;

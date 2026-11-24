@@ -1,22 +1,22 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8788
+// Function ID: 8789
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 8466, 4762, 5964, 1386, 1071, 1089, 5953, 4738, 1404, 1379, 1254, 5968, 2117, 5975, 11, 2]
+// Dependencies: [19, 7982, 4766, 6265, 1386, 1071, 1089, 6277, 4742, 1404, 1379, 1254, 6269, 2117, 6276, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 8621 (ForumPostMediaUtils)
+// Module 8788 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import URLUtilsDefault from "URLUtils" /* 1379 */;
 import FlagUtils from "FlagUtils" /* 1404 */;
-import UserSettings from "UserSettings" /* 4738 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5953 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5968 */;
+import UserSettings from "UserSettings" /* 4742 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6269 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6277 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 8466 */;
-import ChannelStore from "ChannelStore" /* 4762 */;
-import MessageStore from "MessageStore" /* 5964 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7982 */;
+import ChannelStore from "ChannelStore" /* 4766 */;
+import MessageStore from "MessageStore" /* 6265 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
@@ -152,9 +152,9 @@ function getForumPostMedia(attachments, InlineAttachmentMedia) {
     return [];
   }
 }
-function useForumPostEmbeds(embeds, flag) {
+function useForumPostEmbeds(embeds, hasSpoilerEmbeds) {
   let spoiler;
-  _require = flag;
+  _require = hasSpoilerEmbeds;
   let tmp = _require;
   const InlineEmbedMedia = require("UserSettings").InlineEmbedMedia;
   const setting = InlineEmbedMedia.useSetting();

@@ -1,13 +1,13 @@
-// Module ID: 7747
-// Function ID: 7748
+// Module ID: 8389
+// Function ID: 8390
 // Name: PinotDiscoverable
-// Dependencies: [7748, 3508, 1112, 2]
+// Dependencies: [8390, 3510, 1112, 2]
 // Exports: getPinotCloneChannelFlags, getPinotDiscoverableFlags
 
-// Module 7747 (PinotDiscoverable)
+// Module 8389 (PinotDiscoverable)
 import intl from "intl" /* 1112 */;
-import _modDef3508 from "module_3508" /* 3508 */;
-import PinotConstants from "PinotConstants" /* 7748 */;
+import _modDef3510 from "module_3510" /* 3510 */;
+import PinotConstants from "PinotConstants" /* 8390 */;
 import size from "module_2" /* 2 */;
 
 let ALL_CONTENT;
@@ -20,7 +20,7 @@ const PinotDiscoverableOption = { ALL_CONTENT: "all_content", SUMMARIES: "summar
 ({ SWP_CHANNEL_SUMMARIES_EXCLUDED, SWP_CHANNEL_MESSAGES_EXCLUDED } = PinotConstants.PinotChannelFlags);
 let closure_1 = tmp2;
 let closure_2 = { [PinotDiscoverableOption.ALL_CONTENT]: 0, [PinotDiscoverableOption.SUMMARIES]: SWP_CHANNEL_MESSAGES_EXCLUDED, [PinotDiscoverableOption.MESSAGES]: SWP_CHANNEL_SUMMARIES_EXCLUDED, [PinotDiscoverableOption.NONE]: tmp2 };
-const obj2 = { [ALL_CONTENT]: _modDef3508.QsbbMS, [SUMMARIES]: intl.t.q21fUr, [MESSAGES]: intl.t.OIgYlQ, [NONE]: intl.t.PoWNfe };
+const obj2 = { [ALL_CONTENT]: _modDef3510.QsbbMS, [SUMMARIES]: intl.t.q21fUr, [MESSAGES]: intl.t.OIgYlQ, [NONE]: intl.t.PoWNfe };
 ({ ALL_CONTENT, SUMMARIES, MESSAGES, NONE } = PinotDiscoverableOption);
 const result = size.fileFinishedImporting("modules/pinot/PinotDiscoverable.tsx");
 

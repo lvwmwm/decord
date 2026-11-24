@@ -1,10 +1,10 @@
-// Module ID: 9199
-// Function ID: 9200
+// Module ID: 9079
+// Function ID: 9080
 // Name: MarketingStringFormat
 // Dependencies: [3, 1114, 1112, 2]
 // Exports: formatMarketingPlainString, formatMarketingString
 
-// Module 9199 (MarketingStringFormat)
+// Module 9079 (MarketingStringFormat)
 import LoggerDefault from "Logger" /* 3 */;
 import intl2 from "intl" /* 1112 */;
 import intl_util from "intl/util" /* 1114 */;

@@ -1,17 +1,17 @@
-// Module ID: 20055
-// Function ID: 20056
+// Module ID: 20098
+// Function ID: 20099
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 4819, 21, 4913, 575, 1628, 7426, 16617, 504, 7030, 5504, 1112, 7515, 5141, 7432, 7335, 12375, 7061, 2]
+// Dependencies: [32, 19, 17, 4823, 21, 4917, 575, 1628, 7279, 16651, 504, 6026, 5508, 1112, 7381, 5145, 7285, 7055, 12274, 6033, 2]
 // Exports: default
 
-// Module 20055 (SelectEmojiRolesActionSheet)
+// Module 20098 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import GuildRoleStore from "GuildRoleStore" /* 4823 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

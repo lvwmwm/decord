@@ -1,9 +1,9 @@
-// Module ID: 8115
-// Function ID: 8116
+// Module ID: 6228
+// Function ID: 6229
 // Name: CollectiblesShopStore
 // Dependencies: [504, 572, 2]
 
-// Module 8115 (CollectiblesShopStore)
+// Module 6228 (CollectiblesShopStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

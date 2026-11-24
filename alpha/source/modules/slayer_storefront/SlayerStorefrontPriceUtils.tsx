@@ -1,10 +1,10 @@
-// Module ID: 6855
-// Function ID: 6856
+// Module ID: 7470
+// Function ID: 7471
 // Name: SlayerStorefrontPriceUtils
 // Dependencies: [1071, 1082, 2]
 // Exports: getCountryPrices, hasPrice, isGiftPriceDifferent
 
-// Module 6855 (SlayerStorefrontPriceUtils)
+// Module 7470 (SlayerStorefrontPriceUtils)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import size from "module_2" /* 2 */;

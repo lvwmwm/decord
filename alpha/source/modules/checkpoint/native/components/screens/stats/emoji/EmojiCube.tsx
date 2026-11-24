@@ -1,18 +1,18 @@
-// Module ID: 12765
-// Function ID: 12766
+// Module ID: 12684
+// Function ID: 12685
 // Name: EmojiCube
-// Dependencies: [32, 17, 4914, 5969, 21, 4913, 1358, 575, 504, 12509, 1412, 7496, 2]
+// Dependencies: [32, 17, 4918, 6270, 21, 4917, 1358, 575, 504, 12425, 1412, 7362, 2]
 // Exports: default
 
-// Module 12765 (EmojiCube)
+// Module 12684 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 5969 */;
-import EmojiDefault from "Emoji" /* 7496 */;
+import CheckpointConstants from "CheckpointConstants" /* 6270 */;
+import EmojiDefault from "Emoji" /* 7362 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1358 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ export default function EmojiCube(emoji) {
   let items = [AccessibilityStore];
   const obj = emoji(504);
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj2 = emoji(12509);
+  const obj2 = emoji(12425);
   if (scale == null) {
     scale = obj2.useCheckpointScreenFrame().width / 392;
   }

@@ -1,8 +1,8 @@
-// Module ID: 12584
-// Function ID: 12585
+// Module ID: 12504
+// Function ID: 12505
 // Dependencies: [2]
 
-// Module 12584
+// Module 12504
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_env_labNight_sky.webp.js");

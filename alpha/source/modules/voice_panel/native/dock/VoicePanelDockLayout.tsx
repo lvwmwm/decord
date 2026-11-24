@@ -1,27 +1,27 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11657
+// Function ID: 11658
 // Name: VoicePanelDockLayout
-// Dependencies: [19, 5654, 6495, 11768, 504, 1628, 11770, 2]
+// Dependencies: [19, 5725, 6839, 11658, 504, 1628, 11660, 2]
 // Exports: useChannelDockHeight, useChatDockHeight, useVoicePanelDockHeight
 
-// Module 11767 (VoicePanelDockLayout)
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
+// Module 11657 (VoicePanelDockLayout)
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11658 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
-import VoicePanelStore from "VoicePanelStore" /* 6495 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
+import VoicePanelStore from "VoicePanelStore" /* 6839 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp5;
-const MainTabsNavigatorPanelContextDefault = tmp5(11770);
-const f100533 = (voicePanelsWithDock) => voicePanelsWithDock.voicePanelsWithDock.size > 0;
-const f100534 = () => {
+const MainTabsNavigatorPanelContextDefault = tmp5(11660);
+const f100164 = (voicePanelsWithDock) => voicePanelsWithDock.voicePanelsWithDock.size > 0;
+const f100165 = () => {
   const tmp = closure_0 && null != RTCConnectionStore.getChannelId();
   return tmp;
 };
-const f100535 = (voicePanelsWithDock) => {
+const f100166 = (voicePanelsWithDock) => {
   const arr = Array.from(voicePanelsWithDock.voicePanelsWithDock);
   return arr.some((item) => {
     const voicePanelsPIP = voicePanelsWithDock.voicePanelsPIP;
@@ -34,13 +34,13 @@ const result = size.fileFinishedImporting("modules/voice_panel/native/dock/Voice
 export function useVoicePanelDockHeight() {
   let closure_0;
   let num;
-  const tmp = VoicePanelStore(f100533);
+  const tmp = VoicePanelStore(f100164);
   _require = tmp;
   const items = [RTCConnectionStore];
   const items1 = [tmp];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f100534, items1);
-  VoicePanelStore(f100535);
+  const stateFromStores = obj.useStateFromStores(items, f100165, items1);
+  VoicePanelStore(f100166);
   if (stateFromStores) {
     num = getVoicePanelDockHeight(tmp4);
   } else {
@@ -51,13 +51,13 @@ export function useVoicePanelDockHeight() {
 export function useChatDockHeight() {
   let closure_0;
   let num;
-  const tmp = VoicePanelStore(f100533);
+  const tmp = VoicePanelStore(f100164);
   _require = tmp;
   const items = [RTCConnectionStore];
   const items1 = [tmp];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f100534, items1);
-  VoicePanelStore(f100535);
+  const stateFromStores = obj.useStateFromStores(items, f100165, items1);
+  VoicePanelStore(f100166);
   if (stateFromStores) {
     num = getVoicePanelDockHeight(tmp6);
   } else {
@@ -72,13 +72,13 @@ export function useChatDockHeight() {
 export function useChannelDockHeight() {
   let closure_0;
   let num;
-  let tmp = VoicePanelStore(f100533);
+  let tmp = VoicePanelStore(f100164);
   _require = tmp;
   const items = [RTCConnectionStore];
   const items1 = [tmp];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f100534, items1);
-  VoicePanelStore(f100535);
+  const stateFromStores = obj.useStateFromStores(items, f100165, items1);
+  VoicePanelStore(f100166);
   if (stateFromStores) {
     num = getVoicePanelDockHeight(tmp6);
   } else {

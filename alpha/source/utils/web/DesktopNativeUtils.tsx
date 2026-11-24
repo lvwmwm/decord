@@ -1,17 +1,17 @@
-// Module ID: 7301
-// Function ID: 7302
+// Module ID: 6898
+// Function ID: 6899
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1071, 38, 6391, 1378, 510, 7302, 7303, 4, 7304, 7305, 1379, 1284, 5659, 2]
+// Dependencies: [32, 5, 1071, 38, 6658, 1378, 510, 6899, 6900, 4, 6901, 6902, 1379, 1284, 5730, 2]
 
-// Module 7301 (DesktopNativeUtils)
+// Module 6898 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1071 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5659 */;
-import flow_Client from "flow/Client" /* 6391 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 7302 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 7303 */;
-import IPCEvents from "IPCEvents" /* 7304 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5730 */;
+import flow_Client from "flow/Client" /* 6658 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6899 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6900 */;
+import IPCEvents from "IPCEvents" /* 6901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(7305);
+const FileExtensionUtils = tmp2(6902);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -1036,7 +1036,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(7305);
+        const tmpResult = tmp(6902);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;
@@ -1044,8 +1044,8 @@ let obj2 = {
     }
     return false;
   },
-  saveImage(value, arg1, arg2) {
-    let closure_0 = value;
+  saveImage(arg0, arg1, arg2) {
+    let closure_0 = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
     return (async (arg0, value) => {
@@ -1066,7 +1066,6 @@ let obj2 = {
       } else {
         let c8;
         try {
-          let closure_0;
           let png;
           let directory;
           let closure_3;

@@ -1,10 +1,10 @@
-// Module ID: 6881
-// Function ID: 6882
+// Module ID: 7492
+// Function ID: 7493
 // Name: CreatorMonetizationEligibilityExperimentUtils
 // Dependencies: [1386, 2174, 1071, 504, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
-// Module 6881 (CreatorMonetizationEligibilityExperimentUtils)
+// Module 7492 (CreatorMonetizationEligibilityExperimentUtils)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import UserStore from "UserStore" /* 1386 */;

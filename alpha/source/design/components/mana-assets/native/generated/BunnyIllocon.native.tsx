@@ -1,27 +1,27 @@
-// Module ID: 18519
-// Function ID: 18520
+// Module ID: 18560
+// Function ID: 18561
 // Name: BunnyIllocon
-// Dependencies: [19, 21, 18520, 18521, 18522, 7357, 5600, 2]
+// Dependencies: [19, 21, 18561, 18562, 18563, 7135, 5604, 2]
 // Exports: BunnyIllocon
 
-// Module 18519 (BunnyIllocon)
+// Module 18560 (BunnyIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import react_native from "react-native" /* 7357 */;
-import _modDef18520 from "module_18520" /* 18520 */;
-import _modDef18521 from "module_18521" /* 18521 */;
-import _modDef18522 from "module_18522" /* 18522 */;
+import FastImageDefault from "FastImage" /* 5604 */;
+import react_native from "react-native" /* 7135 */;
+import _modDef18561 from "module_18561" /* 18561 */;
+import _modDef18562 from "module_18562" /* 18562 */;
+import _modDef18563 from "module_18563" /* 18563 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef18520 };
+let obj2 = { uri: _modDef18561 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef18521 };
-({ uri: _modDef18521 });
-obj[3] = { uri: _modDef18522 };
-({ uri: _modDef18522 });
+obj[2] = { uri: _modDef18562 };
+({ uri: _modDef18562 });
+obj[3] = { uri: _modDef18563 };
+({ uri: _modDef18563 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BunnyIllocon.native.tsx");
 
@@ -43,6 +43,6 @@ export function BunnyIllocon(size) {
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(7357);
+  obj2 = num(7135);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 }

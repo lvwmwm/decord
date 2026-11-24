@@ -1,21 +1,21 @@
-// Module ID: 18284
-// Function ID: 18285
+// Module ID: 18323
+// Function ID: 18324
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 6967, 6977, 6621, 21, 4190, 4913, 575, 5127, 504, 18285, 18307, 18328, 7553, 1112, 7515, 7554, 5929, 18330, 18333, 18340, 5504, 7020, 5511, 7597, 7586, 13531, 11278, 2]
+// Dependencies: [5, 32, 19, 17, 7563, 7573, 6808, 21, 4192, 4917, 575, 5131, 504, 18324, 18346, 18367, 7420, 1112, 7381, 7421, 5989, 18369, 18372, 18379, 5508, 6921, 5515, 8345, 8475, 13437, 8476, 2]
 
-// Module 18284 (ConjureSettingsSheet)
+// Module 18323 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4190 from "module_4190" /* 4190 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
+import _modDef4192 from "module_4192" /* 4192 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5131 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 6977 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6621 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7563 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7573 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6808 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -482,7 +482,7 @@ let ConjureProjectStore = ConjureProjectStore_mod;
 ConjureProjectStore = ConjureProjectStore_mod;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
 const ConjureSettingsSheet_str = "ConjureSettingsSheet";
-let obj = { project: _modDef4190.W0eQfN, app: _modDef4190.lFaJYF, secrets: _modDef4190.vDpCPU, model: _modDef4190.Rs3qc9, linked: _modDef4190.fBEHdq, experimental: _modDef4190["0Pe9uw"] };
+let obj = { project: _modDef4192.W0eQfN, app: _modDef4192.lFaJYF, secrets: _modDef4192.vDpCPU, model: _modDef4192.Rs3qc9, linked: _modDef4192.fBEHdq, experimental: _modDef4192["0Pe9uw"] };
 let obj2 = { container: obj3 };
 obj3 = { gap: nativeDefault.space.PX_16 };
 const authStore3 = createStyles.createStyles(obj2);

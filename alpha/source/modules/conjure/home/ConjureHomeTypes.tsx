@@ -1,9 +1,9 @@
-// Module ID: 18641
-// Function ID: 18642
+// Module ID: 18682
+// Function ID: 18683
 // Name: ConjureHomeTypes
 // Dependencies: [2]
 
-// Module 18641 (ConjureHomeTypes)
+// Module 18682 (ConjureHomeTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/home/ConjureHomeTypes.tsx");

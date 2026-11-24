@@ -1,58 +1,103 @@
 // Module ID: 10763
 // Function ID: 10764
-// Dependencies: []
+// Dependencies: [41, 42, 10735]
 
 // Module 10763
-let items;
-let items1;
-let items2;
-let items3;
-let items4;
-let items5;
-let items6;
-let items7;
-let obj10;
-let obj12;
-let obj13;
-let obj15;
-let obj16;
-let obj18;
-let obj19;
-let obj4;
-let obj6;
-let obj7;
-let obj9;
-const obj = { v: "4.8.0", meta: { g: "LottieFiles AE 3.0.0", a: "", k: "", d: "", tc: "" }, fr: 60, ip: 11, op: 87, w: 1280, h: 720, nm: "FrameEffect_09-3_Out", ddd: 0, assets: items, layers: items3, markers: [] };
-items = [{ id: "image_0", w: 35, h: 35, u: "", p: "", e: 1 }, ];
-const obj3 = { ddd: 0, ind: 3, ty: 2, nm: "smile", refId: "image_0", sr: 1, ks: obj4, ao: 0, ip: 0, op: 914, st: 0, bm: 0 };
-const obj2 = { id: "comp_0", layers: items1 };
-items1 = [obj3];
-obj4 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: { a: 0, k: [19.875, 20.125, 0], ix: 2 }, a: { a: 0, k: [17.25, 17.25, 0], ix: 1 }, s: { a: 0, k: [108.7, 108.7, 100], ix: 6 } };
-items[1] = obj2;
-const obj5 = { ddd: 0, ind: 2, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj6, ao: 0, w: 40, h: 40, ip: 22, op: 113, st: 20, bm: 0 };
-obj6 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj7, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [353, 353, 100], ix: 6 } };
-obj7 = { a: 1, k: items2, ix: 2 };
-items2 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 22, s: [-280, 152, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 87, s: [1520, 156, 0] }];
-items3 = [obj5, , , , ];
-const obj8 = { ddd: 0, ind: 3, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj9, ao: 0, w: 40, h: 40, ip: 10, op: 104, st: 8, bm: 0 };
-obj9 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj10, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [385.1, 385.1, 100], ix: 6 } };
-obj10 = { a: 1, k: items4, ix: 2 };
-items4 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 10, s: [-280, 584, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 78, s: [1520, 588, 0] }];
-items3[1] = obj8;
-const obj11 = { ddd: 0, ind: 4, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj12, ao: 0, w: 40, h: 40, ip: 14, op: 98, st: 12, bm: 0 };
-obj12 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj13, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [512, 512, 100], ix: 6 } };
-obj13 = { a: 1, k: items5, ix: 2 };
-items5 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 14, s: [-280, 184, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 67, s: [1520, 188, 0] }];
-items3[2] = obj11;
-const obj14 = { ddd: 0, ind: 5, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj15, ao: 0, w: 40, h: 40, ip: 29, op: 106, st: 27, bm: 0 };
-obj15 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj16, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [621.1, 621.1, 100], ix: 6 } };
-obj16 = { a: 1, k: items6, ix: 2 };
-items6 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 28, s: [-280, 344, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 71, s: [1520, 348, 0] }];
-items3[3] = obj14;
-const obj17 = { ddd: 0, ind: 6, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj18, ao: 0, w: 40, h: 40, ip: 19, op: 120, st: 17, bm: 0 };
-obj18 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj19, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [512, 512, 100], ix: 6 } };
-obj19 = { a: 1, k: items7, ix: 2 };
-items7 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 34, s: [-280, 472, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 87, s: [1520, 476, 0] }];
-items3[4] = obj17;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10735 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-export default obj;
+const regExp = new RegExp("([^\\d]|^)([0-3]{0,1}[0-9]{1})[\\/\\.\\-]([0-3]{0,1}[0-9]{1})(?:[\\/\\.\\-]([0-9]{4}|[0-9]{2}))?(\\W|$)", "i");
+class SlashDateFormatParser {
+  constructor(arg0) {
+    const self = this;
+    _classCallCheck(this, SlashDateFormatParser);
+    let num = 2;
+    if (arg0) {
+      num = 3;
+    }
+    self.groupNumberMonth = num;
+    let num2 = 3;
+    if (arg0) {
+      num2 = 2;
+    }
+    self.groupNumberDay = num2;
+  }
+}
+const entry = {
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(text, index) {
+      let tmp6;
+      let tmp7;
+      const sum = index.index + index[1].length;
+      const diff = index.index + index[0].length - index[5].length;
+      if (sum > 0) {
+        const str = text.text;
+        str.substring(0, sum);
+      }
+      if (diff < text.text.length) {
+        const str4 = text.text;
+        str4.substring(diff);
+      }
+      const str7 = text.text;
+      const str8 = str7.substring(sum, diff);
+      if (!str8.match(/^\d\.\d$/)) {
+        if (!str8.match(/^\d\.\d{1,2}\.\d{1,2}\s*$/)) {
+          const self = this;
+          const parsingResult = text.createParsingResult(sum, str8);
+          const _parseInt = parseInt;
+          const parsed = parseInt(index[this.groupNumberMonth]);
+          const _parseInt2 = parseInt;
+          const parsed1 = parseInt(index[this.groupNumberDay]);
+          if (parsed < 1) {
+            tmp6 = parsed1;
+            tmp7 = parsed;
+            if (parsed > 12) {
+              if (parsed1 >= 1) {
+                if (parsed1 <= 12) {
+                  if (parsed <= 31) {
+                    const items = [parsed, parsed1];
+                    [tmp6, tmp7] = items;
+                  }
+                }
+              }
+              return null;
+            }
+          } else {
+            tmp6 = parsed1;
+            tmp7 = parsed;
+          }
+          if (tmp6 >= 1) {
+            if (tmp6 <= 31) {
+              const start3 = parsingResult.start;
+              start3.assign("day", tmp6);
+              const start4 = parsingResult.start;
+              start4.assign("month", tmp7);
+              if (index[4]) {
+                const _parseInt3 = parseInt;
+                const parsed2 = parseInt(index[4]);
+                const start2 = parsingResult.start;
+                start2.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
+              } else {
+                const start = parsingResult.start;
+                start.imply("year", findMostLikelyADYear.findYearClosestToRef(text.refDate, tmp6, tmp7));
+              }
+              return parsingResult.addTag("parser/SlashDateFormatParser");
+            }
+          }
+          return null;
+        }
+      }
+    }
+  }
+];
+
+export default _createClass(SlashDateFormatParser, items);

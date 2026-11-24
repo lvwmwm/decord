@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 267, height: 267, scales: [1], hash: "898dc79e0285b8e9855531eeca36bf84", name: "img_roblox_dark", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/emoji_terms", scales: [1], hash: "f6425c3cc2bc24074508c69930fb19ae", name: "emoji-terms-it", type: "jsona" });

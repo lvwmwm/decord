@@ -1,15 +1,15 @@
-// Module ID: 8822
-// Function ID: 8823
+// Module ID: 14036
+// Function ID: 14037
 // Name: transformNativeMarkupMention
-// Dependencies: [8823, 5936, 5934, 5946, 8828, 2]
+// Dependencies: [6969, 6946, 5994, 6954, 14037, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8822 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 5934 */;
-import MarkupRules from "MarkupRules" /* 5936 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5946 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8823 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8828 */;
+// Module 14036 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 5994 */;
+import MarkupRules from "MarkupRules" /* 6946 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6954 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 6969 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 14037 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -37,10 +37,10 @@ export function transformNativeMention(value, allowGameMentions) {
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "add", everyoneOrHere: null }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "analyticsLocations", everyoneOrHere: 1758143576819164500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "add", everyoneOrHere: null }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "analyticsLocations", everyoneOrHere: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000033480978439207765 }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

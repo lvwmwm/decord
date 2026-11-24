@@ -1,21 +1,21 @@
-// Module ID: 8847
-// Function ID: 8848
+// Module ID: 8998
+// Function ID: 8999
 // Name: UserOfferStore
-// Dependencies: [8848, 8842, 8849, 8844, 1386, 8120, 2178, 1388, 1082, 12, 504, 8850, 2173, 572, 2]
+// Dependencies: [8999, 9000, 9004, 9002, 1386, 6233, 2178, 1388, 1082, 12, 504, 9005, 2173, 572, 2]
 
-// Module 8847 (UserOfferStore)
+// Module 8998 (UserOfferStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1082 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
-import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 8850 */;
-import DiscountRecord from "DiscountRecord" /* 8848 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 8842 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8849 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8844 */;
+import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 9005 */;
+import DiscountRecord from "DiscountRecord" /* 8999 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9000 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9004 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9002 */;
 import UserStore from "UserStore" /* 1386 */;
-import EntitlementStore from "EntitlementStore" /* 8120 */;
+import EntitlementStore from "EntitlementStore" /* 6233 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;

@@ -1,21 +1,21 @@
-// Module ID: 17574
-// Function ID: 17575
+// Module ID: 17612
+// Function ID: 17613
 // Name: MessagesEmptyState
-// Dependencies: [19, 17, 21, 4913, 1500, 5930, 1263, 8150, 16480, 17575, 5504, 1112, 5511, 2]
+// Dependencies: [19, 17, 21, 4917, 1500, 5990, 1263, 9901, 16514, 17613, 5508, 1112, 5515, 2]
 // Exports: default
 
-// Module 17574 (MessagesEmptyState)
+// Module 17612 (MessagesEmptyState)
 import intl4 from "intl" /* 1112 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import useNavigation from "useNavigation" /* 1500 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 5930 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8150 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16480 */;
-import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17575 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 5990 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 9901 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16514 */;
+import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17613 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -68,18 +68,18 @@ export default function MessagesEmptyState() {
   items2[0] = metroRequire(React3, obj8);
   const obj9 = { style: tmp.textWrapper, children: items3 };
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-sm/semibold", style: tmp.title, children: intl.string(intl4.t["8JZof8"]) };
-  const Heading = tmp2(5504).Heading;
+  const Heading = tmp2(5508).Heading;
   intl = tmp2(1112).intl;
   items3 = [metroRequire(Heading, obj10), ];
   const obj11 = { color: "text-default", variant: "body-md/medium", style: tmp.body, children: intl2.string(intl4.t["qm+H7x"]) };
-  const Text = tmp2(5504).Text;
+  const Text = tmp2(5508).Text;
   intl2 = tmp2(1112).intl;
   items3[1] = metroRequire(Text, obj11);
   items2[1] = metroImportDefault(React3, obj9);
   items4 = [metroImportDefault(React3, obj7), ];
   const obj12 = { style: tmp.buttonWrapper, children: metroRequire(Button, obj13) };
   obj13 = { text: intl3.string(intl4.t.zIJnA6), onPress: callback, size: "lg" };
-  Button = tmp2(5511).Button;
+  Button = tmp2(5515).Button;
   intl3 = tmp2(1112).intl;
   items4[1] = metroRequire(React3, obj12);
   return metroRequire(tmp12, obj5);

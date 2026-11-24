@@ -1,10 +1,10 @@
-// Module ID: 4949
-// Function ID: 4950
+// Module ID: 4953
+// Function ID: 4954
 // Name: MemberVerificationTypes
 // Dependencies: [2]
 // Exports: hasNonTermsFormField, isTermsFormField
 
-// Module 4949 (MemberVerificationTypes)
+// Module 4953 (MemberVerificationTypes)
 import size from "module_2" /* 2 */;
 
 const VerificationFormFieldTypes = { TERMS: "TERMS", TEXT_INPUT: "TEXT_INPUT", PARAGRAPH: "PARAGRAPH", MULTIPLE_CHOICE: "MULTIPLE_CHOICE", VERIFICATION: "VERIFICATION" };

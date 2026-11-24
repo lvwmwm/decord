@@ -1,11 +1,11 @@
-// Module ID: 18301
-// Function ID: 18302
+// Module ID: 18340
+// Function ID: 18341
 // Name: openConjureMakePersonalAlert
-// Dependencies: [5, 19, 21, 18302, 5127, 5595, 5866, 1112, 4190, 5929, 18300, 5504, 5862, 2]
+// Dependencies: [5, 19, 21, 18341, 5131, 5599, 5926, 1112, 4192, 5989, 18339, 5508, 5922, 2]
 // Exports: default
 
-// Module 18301 (openConjureMakePersonalAlert)
-import useAlertStore from "useAlertStore" /* 5862 */;
+// Module 18340 (openConjureMakePersonalAlert)
+import useAlertStore from "useAlertStore" /* 5922 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -98,41 +98,41 @@ function ConjureMakePersonalAlert(project) {
     return obj(...arguments);
   };
   const tmp = obj;
-  const tmp3 = obj(18302)(project.project);
+  const tmp3 = obj(18341)(project.project);
   _require = tmp3;
   ({ keptChannels, error } = tmp3);
   const tmp4 = closure_4;
   ({ appName, rows } = tmp3);
-  obj = { title: intl.formatToPlainString(obj(4190).cAxBIL, { app: appName }), extraContent: tmp6(Stack, { spacing: 12, children: items }), actions: tmp6(closure_6, obj4) };
+  obj = { title: intl.formatToPlainString(obj(4192).cAxBIL, { app: appName }), extraContent: tmp6(Stack, { spacing: 12, children: items }), actions: tmp6(closure_6, obj4) };
   const AlertModal = require("AlertModal").AlertModal;
   intl = require("intl").intl;
   Stack = require("Stack/Stack").Stack;
-  items = [closure_4(obj(18300), { rows }), , ];
+  items = [closure_4(obj(18339), { rows }), , ];
   let tmp4Result = null;
   if (null != keptChannels) {
     let obj2 = { variant: "body-sm/normal", color: "text-muted", children: keptChannels };
-    tmp4Result = tmp4(tmp5(5504).Text, obj2);
+    tmp4Result = tmp4(tmp5(5508).Text, obj2);
   }
   items[1] = tmp4Result;
   let tmp4Result2 = null;
   if (null != error) {
     let obj3 = { variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp4Result2 = tmp4(tmp5(5504).Text, obj3);
+    tmp4Result2 = tmp4(tmp5(5508).Text, obj3);
   }
   items[2] = tmp4Result2;
   obj4 = { children: items1 };
   let obj5 = {
     variant: "destructive",
-    text: intl2.string(tmp(4190).ErhKil),
+    text: intl2.string(tmp(4192).ErhKil),
     onPress: function submit() {
       return obj(...arguments);
     }
   };
-  const AlertActionButton = tmp5(5866).AlertActionButton;
+  const AlertActionButton = tmp5(5926).AlertActionButton;
   intl2 = tmp5(1112).intl;
   items1 = [tmp4(AlertActionButton, obj5), ];
   let obj6 = { variant: "secondary", text: intl3.string(tmp5(1112).t["ETE/oC"]) };
-  const AlertActionButton2 = tmp5(5866).AlertActionButton;
+  const AlertActionButton2 = tmp5(5926).AlertActionButton;
   intl3 = tmp5(1112).intl;
   items1[1] = tmp4(AlertActionButton2, obj6);
   return tmp4(AlertModal, obj);

@@ -1,21 +1,21 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 15999
+// Function ID: 16000
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1071, 21, 7539, 4913, 15884, 5504, 1500, 7411, 1112, 9126, 7520, 9099, 10505, 1628, 2]
+// Dependencies: [19, 1071, 21, 6254, 4917, 15925, 5508, 1500, 7221, 1112, 8994, 6253, 8960, 9554, 1628, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 15958 (UserProfilePremiumUpsellCard)
+// Module 15999 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7411 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10505 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15884 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6253 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7221 */;
+import openPremiumModalDefault from "openPremiumModal" /* 8960 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9554 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15925 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 4913 */;
+import createStyles from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -54,7 +54,7 @@ function GetNitroCard(style) {
   let analyticsLocations;
   let tmp = analyticsLocations;
   style = style.style;
-  let obj = analyticsLocations(9126);
+  let obj = analyticsLocations(8994);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride();
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];

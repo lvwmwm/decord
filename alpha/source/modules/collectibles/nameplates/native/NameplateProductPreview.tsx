@@ -1,22 +1,22 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 11144
+// Function ID: 11145
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 4914, 21, 4913, 575, 8913, 2109, 1112, 5504, 5468, 8920, 8214, 8131, 504, 4969, 6342, 9454, 9455, 1186, 13839, 7045, 2]
+// Dependencies: [19, 17, 4918, 21, 4917, 575, 9290, 2109, 1112, 5508, 5472, 9274, 9381, 6249, 504, 4973, 6645, 9667, 9668, 1186, 11145, 6018, 2]
 // Exports: default
 
-// Module 14217 (NameplateProductPreview)
+// Module 11144 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import utils from "utils" /* 2109 */;
-import LinearGradientDefault from "LinearGradient" /* 5468 */;
-import TableRow2 from "TableRow" /* 7045 */;
-import useShopProductItems from "useShopProductItems" /* 8913 */;
+import LinearGradientDefault from "LinearGradient" /* 5472 */;
+import TableRow2 from "TableRow" /* 6018 */;
+import useShopProductItems from "useShopProductItems" /* 9290 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AccessibilityStore from "AccessibilityStore" /* 4918 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "\u{1F69B}" };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "\u{1FAA2}" };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);
@@ -126,7 +126,7 @@ export default function NameplateProductPreview(arg0) {
     const obj7 = { user: nameplateSampleUsers.mallow, end: true };
     items = [metroRequire(PlaceholderUser, obj7), , , , , , ];
     const obj8 = { maxFontSizeMultiplier: 2, variant: "body-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
-    const Text = tmp2(5504).Text;
+    const Text = tmp2(5508).Text;
     const intl2 = tmp2(1112).intl;
     items1 = [intl2.string(intl4.t["yzW/fZ"]), " \u2014 3"];
     items[1] = metroImportDefault(Text, obj8);
@@ -137,7 +137,7 @@ export default function NameplateProductPreview(arg0) {
     const obj11 = { user: nameplateSampleUsers.locke, end: true };
     items[4] = metroRequire(PlaceholderUser, obj11);
     const obj12 = { maxFontSizeMultiplier: 2, variant: "body-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
-    const Text2 = tmp2(5504).Text;
+    const Text2 = tmp2(5508).Text;
     const intl3 = tmp2(1112).intl;
     items2 = [intl3.string(intl4.t["NG43/6"]), " \u2014 12"];
     items[5] = metroImportDefault(Text2, obj12);

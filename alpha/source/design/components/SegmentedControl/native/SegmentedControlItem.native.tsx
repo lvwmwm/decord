@@ -1,19 +1,19 @@
-// Module ID: 11279
-// Function ID: 11280
+// Module ID: 8477
+// Function ID: 8478
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 4913, 575, 10598, 1653, 5514, 1378, 1112, 5504, 2]
+// Dependencies: [19, 17, 21, 4917, 575, 8478, 1653, 5518, 1378, 1112, 5508, 2]
 // Exports: SegmentedControlItem
 
-// Module 11279 (SegmentedControlItem)
+// Module 8477 (SegmentedControlItem)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import spring_spring from "spring/spring" /* 5514 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 10598 */;
+import spring_spring from "spring/spring" /* 5518 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8478 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4913 */;
+import createStyles_mod from "createStyles" /* 4917 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -119,7 +119,7 @@ export function SegmentedControlItem(index) {
   items3 = [icon, ];
   const obj5 = { animated: true, variant: "body-sm/semibold", style: animatedStyle, lineClamp: 1, maxFontSizeMultiplier: num2, children: label };
   num2 = undefined;
-  const Text = tmp3(5504).Text;
+  const Text = tmp3(5508).Text;
   tmp18 = metroRequire;
   tmp19 = React3;
   if ("experimental_Large" === variant) {

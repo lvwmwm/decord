@@ -1,13 +1,13 @@
-// Module ID: 17420
-// Function ID: 17421
+// Module ID: 17458
+// Function ID: 17459
 // Name: MobileNotifSettingsRouteBuilders
-// Dependencies: [1112, 3152, 16896, 2]
+// Dependencies: [1112, 3154, 16930, 2]
 // Exports: buildCategoryCallsMessagesSettingsSection, buildCategoryDiscoveryHighlightsSettingsSection, buildCategoryFriendsActivitySettingsSection, buildCategoryServersSettingsSection, buildFriendActivityTitleSettingsSection, buildOverviewCategoriesSection, buildReactionsChoiceSettingsSection
 
-// Module 17420 (MobileNotifSettingsRouteBuilders)
+// Module 17458 (MobileNotifSettingsRouteBuilders)
 import intl2 from "intl" /* 1112 */;
-import _modDef3152 from "module_3152" /* 3152 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16896 */;
+import _modDef3154 from "module_3154" /* 3154 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notifications/settings/native/MobileNotifSettingsRouteBuilders.tsx");
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/notifications/settings/native
 export function buildOverviewCategoriesSection() {
   let intl;
   let items;
-  const obj = { label: intl.string(_modDef3152["/UdAvP"]), settings: items };
+  const obj = { label: intl.string(_modDef3154["/UdAvP"]), settings: items };
   intl = intl2.intl;
   items = [MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_CALLS_MESSAGES, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_SERVERS];
   return obj;
@@ -35,13 +35,13 @@ export function buildCategoryDiscoveryHighlightsSettingsSection() {
 export function buildCategoryFriendsActivitySettingsSection() {
   let items;
   const obj = { settings: items };
-  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_ACTIVITY_TITLE, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING_LOW, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING_DEFAULT, MobileNotifSettings.MobileNotifSettings.NOTIF_GAMING_OTHER, MobileNotifSettings.MobileNotifSettings.NOTIF_GO_LIVE, MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_ACTIVITY_LOW, MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_ACTIVITY_DEFAULT, MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_CHANNEL_ACTIVITY, MobileNotifSettings.MobileNotifSettings.NOTIF_POLLS, MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS];
+  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_GO_LIVE, MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_ACTIVITY_LOW, MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_ACTIVITY_DEFAULT, MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_CHANNEL_ACTIVITY, MobileNotifSettings.MobileNotifSettings.NOTIF_POLLS, MobileNotifSettings.MobileNotifSettings.NOTIF_GAMING_OTHER, MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS];
   return obj;
 }
 export function buildFriendActivityTitleSettingsSection() {
   let items;
   const obj = { settings: items };
-  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_CUSTOM_STATUS_UPDATE, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_ONLINE, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUEST_REMINDER, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_SUGGESTIONS, MobileNotifSettings.MobileNotifSettings.NOTIF_NUDGE_NEW_FRIEND_DM, MobileNotifSettings.MobileNotifSettings.NOTIF_PROFILE_UPDATES];
+  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_ONLINE, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING_LOW, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIENDS_GAMING_DEFAULT, MobileNotifSettings.MobileNotifSettings.NOTIF_CUSTOM_STATUS_UPDATE, MobileNotifSettings.MobileNotifSettings.NOTIF_PROFILE_UPDATES, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUEST_REMINDER, MobileNotifSettings.MobileNotifSettings.NOTIF_NUDGE_NEW_FRIEND_DM, MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_SUGGESTIONS];
   return obj;
 }
 export function buildCategoryServersSettingsSection() {

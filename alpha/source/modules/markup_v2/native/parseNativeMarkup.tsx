@@ -1,12 +1,12 @@
-// Module ID: 8812
-// Function ID: 8813
+// Module ID: 14028
+// Function ID: 14029
 // Name: parseNativeMarkup
-// Dependencies: [12, 8813, 8817, 2]
+// Dependencies: [12, 14029, 14033, 2]
 // Exports: default
 
-// Module 8812 (parseNativeMarkup)
-import Syntax from "Syntax" /* 8813 */;
-import transformNativeMarkupNode from "transformNativeMarkupNode" /* 8817 */;
+// Module 14028 (parseNativeMarkup)
+import Syntax from "Syntax" /* 14029 */;
+import transformNativeMarkupNode from "transformNativeMarkupNode" /* 14033 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

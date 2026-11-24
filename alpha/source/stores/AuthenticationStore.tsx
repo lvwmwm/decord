@@ -1,7 +1,7 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1070, 1071, 1096, 3, 1097, 510, 1098, 1255, 15430, 572, 15431, 7376, 6350, 1253, 15432, 1241, 13285, 504, 11949, 2119, 15433, 8368, 2117, 2]
+// Dependencies: [503, 1070, 1071, 1096, 3, 1097, 510, 1098, 1255, 15451, 572, 15452, 7186, 5667, 1253, 15453, 1241, 13212, 504, 11831, 2119, 15454, 8190, 2117, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -14,13 +14,13 @@ import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import FingerprintUtils from "FingerprintUtils" /* 1253 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import Server from "Server" /* 2117 */;
-import APIErrorDefault from "APIError" /* 6350 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7376 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 8368 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 13285 */;
-import fetchExperiments2 from "fetchExperiments" /* 15430 */;
-import awaitExperiments from "awaitExperiments" /* 15431 */;
-import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 15432 */;
+import APIErrorDefault from "APIError" /* 5667 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7186 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 8190 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 13212 */;
+import fetchExperiments2 from "fetchExperiments" /* 15451 */;
+import awaitExperiments from "awaitExperiments" /* 15452 */;
+import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 15453 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1070 */;
 import Constants from "Constants" /* 1071 */;
@@ -38,7 +38,7 @@ let c10;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-const f78762 = (body) => {
+const f78880 = (body) => {
   let assignments;
   let guild_experiments;
   body = body.body;
@@ -64,12 +64,12 @@ const f78762 = (body) => {
   const obj6 = awaitExperiments;
   obj6.onExperimentsLoaded();
 };
-const f78763 = () => {
+const f78881 = () => {
   c33 = null;
   const obj = Dispatcher;
   obj.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
 };
-const f78764 = () => {
+const f78882 = () => {
   const obj = router_utils;
   obj.transitionTo(constants.REGISTER);
 };
@@ -132,7 +132,7 @@ function fetchFingerprint(arg0) {
           fetchExperiments2;
           tmpResult4 = router_utils;
           const experiments = fetchExperiments(obj3);
-          nextPromise = experiments.then(f78762, f78763);
+          nextPromise = experiments.then(f78880, f78881);
           closure_33 = nextPromise;
         }
         return nextPromise;
@@ -202,8 +202,8 @@ function handleLogout(isSwitchingAccount) {
   c28 = "";
   let c30 = null;
   c29 = false;
-  c35 = false;
-  closure_36 = false;
+  c36 = false;
+  closure_37 = false;
   items = [];
   const tmp23 = c31;
   if (tmp23) {
@@ -245,7 +245,8 @@ let c32 = false;
 let closure_33 = null;
 let c34 = null;
 let c35 = false;
-let closure_36 = false;
+let c36 = false;
+let closure_37 = false;
 let items = [];
 let Store = get_initializedDefault.Store;
 class AuthenticationStore extends Store {
@@ -358,11 +359,14 @@ class AuthenticationStore extends Store {
   getSuspendedUserToken() {
     return c34;
   }
+  isSuspendedUserTokenExpired() {
+    return null != c34 && c35;
+  }
   getIsPasswordlessActive() {
-    return c35;
+    return c36;
   }
   attemptedPasswordLogin() {
-    return closure_36;
+    return closure_37;
   }
 }
 const prototype = AuthenticationStore.prototype;
@@ -467,7 +471,7 @@ let obj = {
         c26 = true;
         handleLogout();
         const obj4 = Dispatcher;
-        obj4.wait(f78764);
+        obj4.wait(f78882);
       } else {
         const obj3 = { user_id: Storage2.get(user_id_cache) };
         const track = AnalyticsUtilsDefault.track;
@@ -489,8 +493,8 @@ let obj = {
   },
   LOGIN: function handleLogin(arg0) {
     NONE = LoginStates.LOGGING_IN;
-    const tmp2 = closure_36 || true === tmp;
-    closure_36 = tmp2;
+    const tmp2 = closure_37 || true === tmp;
+    closure_37 = tmp2;
   },
   LOGIN_SUCCESS: function handleLoginSuccess(token) {
     NONE = LoginStates.NONE;
@@ -525,7 +529,7 @@ let obj = {
     if (tmp10) {
       items.push({ type: "sms" });
     }
-    c35 = false;
+    c36 = false;
     c34 = null;
   },
   LOGIN_FAILURE: function handleLoginFailure(error) {
@@ -643,8 +647,9 @@ let obj = {
     NONE = LoginStates.NONE;
   },
   LOGIN_SUSPENDED_USER: function handleSuspendedUserLogin(suspendedUserToken) {
-    c35 = false;
+    c36 = false;
     suspendedUserToken = suspendedUserToken.suspendedUserToken;
+    c35 = false;
     setImmediate(() => {
       const obj = router_utils;
       return obj.transitionTo(constants.ACCOUNT_STANDING);
@@ -775,7 +780,7 @@ let obj = {
     const fetchExperiments = tmp5.fetchExperiments;
     obj5 = router_utils;
     const experiments = fetchExperiments(obj3);
-    closure_33 = experiments.then(f78762, f78763);
+    closure_33 = experiments.then(f78880, f78881);
   },
   CURRENT_USER_UPDATE: function handleUserUpdate(user) {
     user = user.user;
@@ -790,7 +795,7 @@ let obj = {
     c26 = true;
     handleLogout();
     const obj = Dispatcher;
-    obj.wait(f78764);
+    obj.wait(f78882);
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
     c34 = null;
@@ -801,12 +806,21 @@ let obj = {
       return obj.transitionTo(constants.DEFAULT_LOGGED_OUT);
     });
   },
+  SUSPENDED_USER_TOKEN_EXPIRED: function handleSuspendedUserTokenExpired() {
+    if (null != c34) {
+      const tmp = c35;
+      if (!tmp) {
+        c35 = true;
+      }
+    }
+    return false;
+  },
   PASSWORDLESS_FAILURE: function handlePasswordlessFailure(error) {
     error = error.error;
     c28 = "";
     c29 = false;
     let c30 = null;
-    c35 = false;
+    c36 = false;
     c5 = null;
     if (error instanceof APIErrorDefault) {
       const obj = getAuthenticationErrorsFromAPIError;
@@ -820,7 +834,7 @@ let obj = {
     }
   },
   PASSWORDLESS_START: function handlePasswordlessStart() {
-    c35 = true;
+    c36 = true;
     NONE = LoginStates.LOGGING_IN;
   }
 };

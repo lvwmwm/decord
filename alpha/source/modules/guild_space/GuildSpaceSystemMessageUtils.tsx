@@ -1,16 +1,16 @@
-// Module ID: 8687
-// Function ID: 8688
+// Module ID: 10469
+// Function ID: 10470
 // Name: GuildSpaceSystemMessageUtils
-// Dependencies: [4856, 1386, 8688, 8689, 5943, 1112, 4833, 8690, 2]
+// Dependencies: [4860, 1386, 10470, 10471, 6681, 1112, 4837, 10472, 2]
 // Exports: stringifyGuildSpaceSystemMessage
 
-// Module 8687 (GuildSpaceSystemMessageUtils)
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4833 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8688 */;
-import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 8689 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8690 */;
-import MessageRecord from "MessageRecord" /* 4856 */;
+// Module 10469 (GuildSpaceSystemMessageUtils)
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4837 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6681 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 10470 */;
+import PopularMusicSystemMessageCopy from "PopularMusicSystemMessageCopy" /* 10471 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 10472 */;
+import MessageRecord from "MessageRecord" /* 4860 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ export function stringifyGuildSpaceSystemMessage(message5, channel) {
       obj6 = NicknameUtilsDefault;
       const tmp31 = importDefault;
       if (guildSpaceLeaderboardMessage.data.event === GuildLeaderboardTypes.GuildSpaceLeaderboardEvent.LEADER_CHANGED) {
-        const tmp31Result = tmp31(5943);
+        const tmp31Result = tmp31(6681);
         str = tmp31Result.getName(guildId, channel_id, guildSpaceLeaderboardMessage.previousLeader);
       }
       const leaderboardSystemMessage = getLeaderboardSystemMessage(data, obj2);
