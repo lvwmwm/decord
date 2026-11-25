@@ -24,7 +24,7 @@ export function getUploaderChannelId(file) {
   return channelId;
 }
 export function getUploaderFileSizeMetrics(totalPreCompressionSize) {
-  const f96734 = (acc, item) => acc + item;
+  const f96755 = (acc, item) => acc + item;
   let items = totalPreCompressionSize.items;
   if (items == null) {
     items = [];
@@ -41,7 +41,7 @@ export function getUploaderFileSizeMetrics(totalPreCompressionSize) {
   if (totalPreCompressionSize.totalPreCompressionSize > 0) {
     totalPreCompressionSize = totalPreCompressionSize.totalPreCompressionSize;
   } else {
-    totalPreCompressionSize = mapped.reduce(f96734, 0);
+    totalPreCompressionSize = mapped.reduce(f96755, 0);
   }
   if (null != totalPreCompressionSize.totalPostCompressionSize) {
     let totalPostCompressionSize;
@@ -52,5 +52,5 @@ export function getUploaderFileSizeMetrics(totalPreCompressionSize) {
     obj.numAttachments = totalPreCompressionSize.attachmentsCount > 0 ? totalPreCompressionSize.attachmentsCount : items.length;
     return obj;
   }
-  totalPostCompressionSize = mapped1.reduce(f96734, 0);
+  totalPostCompressionSize = mapped1.reduce(f96755, 0);
 }

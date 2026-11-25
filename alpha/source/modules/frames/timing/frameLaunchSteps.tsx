@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c1, c2, closure_0, closure_2, type;
 
-const f124818 = function() {
+const f124857 = function() {
   return closure_0(...arguments);
 };
 const makeFrameId = FramesConstants.makeFrameId;
@@ -84,7 +84,7 @@ export function loadLaunchCSP(span, c0) {
       }
     })();
   });
-  return span(CSP, f124818);
+  return span(CSP, f124857);
 }
 export function prefetchFrameLaunch(CONJURE_PREVIEW_PREFETCH, applicationId, conjurePreviewSurface) {
   let NOOP_FRAME_LAUNCH_TIMING;
@@ -227,7 +227,7 @@ export function prefetchFrameLaunch(CONJURE_PREVIEW_PREFETCH, applicationId, con
     })();
   });
   const span3 = NOOP_FRAME_LAUNCH_TIMING.span;
-  const span2Result = span2(CSP, f124818);
+  const span2Result = span2(CSP, f124857);
   const APPLICATION = tmp13(7654).LaunchStep.APPLICATION;
   _require = _asyncToGenerator(async (arg0, value) => {
     closure_0 = arg0;

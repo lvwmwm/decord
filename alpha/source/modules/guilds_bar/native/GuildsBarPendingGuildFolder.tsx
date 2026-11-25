@@ -79,7 +79,7 @@ const memoResult = react.memo(function GuildsBarPendingGuildFolder(id) {
     const obj5 = { folderId: id, totalItems: childNodes.length };
     tmp8Result = tmp8(tmp(18023).GuildsBarGuildFolderBG, obj5);
   }
-  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1112).t["scsU+l"])} sharedId={sharedValue} cutouts="HermesInternal" overState="a" preventClipping="GUILD_SETTINGS_UPDATE" config={memo1} externalChildren={tmp8Result}>{"GUILD_SETTINGS_VANITY_URL_RESET"}</tmp9>;
+  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1112).t["scsU+l"])} sharedId={sharedValue} cutouts="HermesInternal" overState="a" preventClipping={2005} config={memo1} externalChildren={tmp8Result}>{true}</tmp9>;
 });
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

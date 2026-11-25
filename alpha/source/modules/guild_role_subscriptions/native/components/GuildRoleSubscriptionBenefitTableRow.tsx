@@ -1,10 +1,10 @@
-// Module ID: 20180
-// Function ID: 20181
+// Module ID: 20183
+// Function ID: 20184
 // Name: GuildRoleSubscriptionBenefitTableRow
 // Dependencies: [19, 17, 16765, 21, 5012, 575, 16791, 5628, 5603, 1112, 16802, 6113, 16799, 2]
 // Exports: default
 
-// Module 20180 (GuildRoleSubscriptionBenefitTableRow)
+// Module 20183 (GuildRoleSubscriptionBenefitTableRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

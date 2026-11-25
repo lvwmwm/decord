@@ -1,10 +1,10 @@
-// Module ID: 19957
-// Function ID: 19958
+// Module ID: 19960
+// Function ID: 19961
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 8500, 4883, 8532, 1071, 8537, 21, 5012, 575, 1500, 8535, 504, 8501, 8536, 8502, 8531, 5693, 1112, 13414, 8258, 7160, 7717, 1501, 6016, 1186, 7364, 14256, 5603, 6109, 7518, 6113, 6084, 15274, 8046, 15271, 19958, 2]
+// Dependencies: [5, 32, 19, 17, 8500, 4883, 8532, 1071, 8537, 21, 5012, 575, 1500, 8535, 504, 8501, 8536, 8502, 8531, 5693, 1112, 13414, 8258, 7160, 7717, 1501, 6016, 1186, 7364, 14256, 5603, 6109, 7518, 6113, 6084, 15274, 8046, 15271, 19961, 2]
 // Exports: default
 
-// Module 19957 (GuildSettingsModalServerTag)
+// Module 19960 (GuildSettingsModalServerTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -300,7 +300,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         }
       }
     }
-    navigation.setOptions({ headerRight: "dispatch" });
+    navigation.setOptions({ headerRight: "top" });
   }, items9);
   const items10 = [guildId, stateFromStores2];
   closure_13 = obj7.useCallback(() => {
@@ -457,7 +457,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           tmp41 = obj16;
         } else {
           const obj20 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp33(tmp40(19958), obj20), tmp32Result2];
+          const items15 = [tmp33(tmp40(19961), obj20), tmp32Result2];
           obj16.children = items15;
           tmp41 = obj16;
         }

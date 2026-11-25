@@ -1,9 +1,9 @@
-// Module ID: 18846
-// Function ID: 18847
+// Module ID: 18845
+// Function ID: 18846
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 8075, 8308, 1071, 21, 5012, 575, 10018, 8137, 6348, 6349, 1628, 5587, 10546, 7108, 18847, 7518, 1112, 18849, 5590, 12929, 12904, 13590, 11766, 1501, 1255, 5982, 5196, 1098, 10729, 18848, 5197, 2]
+// Dependencies: [5, 32, 19, 17, 8075, 8308, 1071, 21, 5012, 575, 10018, 8137, 6348, 6349, 1628, 5587, 10546, 7108, 18846, 7518, 1112, 18848, 5590, 12929, 12904, 13590, 11766, 1501, 1255, 5982, 5196, 1098, 10729, 18847, 5197, 2]
 
-// Module 18846 (CreateThreadView)
+// Module 18845 (CreateThreadView)
 import nativeDefault from "native" /* 575 */;
 import DraftStore from "DraftStore" /* 8075 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 8137 */;
@@ -269,7 +269,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
   obj9 = { style: tmp.options, children: items7 };
   let obj10 = { style: tmp.optionsInner, children: items6 };
   const obj11 = { style: tmp.threadIconContainer, children: closure_13(tmp2(7108).ThreadIcon, { size: "lg" }) };
-  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(18847), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
+  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(18846), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
   let tmp23Result = null;
   const tmp25 = closure_7;
   if (!isForumLikeChannelResult) {
@@ -310,7 +310,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
     const obj15 = { style: tmp.border };
     items8 = [tmp23(tmp24, obj15), ];
     const obj16 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items8[1] = closure_13(threadSettingsDraft(18849).ThreadCreationStarterMessage, obj16);
+    items8[1] = closure_13(threadSettingsDraft(18848).ThreadCreationStarterMessage, obj16);
     tmp22Result = tmp22(tmp24, obj14);
   }
   items7[1] = tmp22Result;

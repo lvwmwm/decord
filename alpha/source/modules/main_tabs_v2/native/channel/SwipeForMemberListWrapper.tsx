@@ -1,10 +1,10 @@
-// Module ID: 18862
-// Function ID: 18863
+// Module ID: 18861
+// Function ID: 18862
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 8975, 8963, 1071, 21, 3, 5012, 575, 5982, 11759, 5191, 1653, 5573, 5221, 7363, 5197, 11934, 1107, 17669, 8577, 17680, 13776, 5189, 5188, 6079, 1501, 18325, 13354, 17673, 17678, 17675, 5272, 18863, 12901, 18318, 10546, 5590, 18864, 13745, 2]
+// Dependencies: [32, 19, 17, 8975, 8963, 1071, 21, 3, 5012, 575, 5982, 11759, 5191, 1653, 5573, 5221, 7363, 5197, 11934, 1107, 17669, 8577, 17680, 13776, 5189, 5188, 6079, 1501, 18325, 13354, 17673, 17678, 17675, 5272, 18862, 12901, 18318, 10546, 5590, 18863, 13745, 2]
 // Exports: default
 
-// Module 18862 (SwipeForMemberListWrapper)
+// Module 18861 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;

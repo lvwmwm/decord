@@ -1,12 +1,13 @@
 // Module ID: 17980
 // Function ID: 17981
 // Name: WaterwheelsDiscoverHeader
-// Dependencies: [19, 17, 8882, 17973, 21, 575, 5012, 17981, 504, 14516, 17167, 5603, 1112, 2654, 5610, 7722, 17995, 2]
+// Dependencies: [19, 17, 8882, 17973, 21, 575, 5012, 5228, 17981, 504, 14516, 17167, 5603, 1112, 2654, 5610, 7722, 17995, 2]
 // Exports: default
 
 // Module 17980 (WaterwheelsDiscoverHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef2654 from "module_2654" /* 2654 */;
+import HapticUtils from "HapticUtils" /* 5228 */;
 import useGameRecordsDefault from "useGameRecords" /* 14516 */;
 import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 17981 */;
 import InterestGameCoverDefault from "InterestGameCover" /* 17995 */;
@@ -34,6 +35,8 @@ let obj4;
 let obj5;
 let size;
 function openPicker() {
+  const obj = HapticUtils;
+  const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
   openWaterwheelsInterestPickerDefault(true);
 }
 ({ Pressable: c3, View: closure_4 } = react_native);
@@ -51,7 +54,7 @@ size = { width: THUMBNAIL_WIDTH, height: THUMBNAIL_WIDTH / THUMBNAIL_ASPECT_RATI
 obj5 = { marginLeft: nativeDefault.space.PX_4 };
 let closure_9 = createStyles(obj);
 size = size_mod;
-const result = size.fileFinishedImporting("modules/waterwheels/discover/native/WaterwheelsDiscoverHeader.tsx");
+let result = size.fileFinishedImporting("modules/waterwheels/discover/native/WaterwheelsDiscoverHeader.tsx");
 
 export default function WaterwheelsDiscoverHeader() {
   let closure_0;

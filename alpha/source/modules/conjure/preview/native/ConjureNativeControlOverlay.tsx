@@ -1,16 +1,16 @@
-// Module ID: 18553
-// Function ID: 18554
+// Module ID: 18554
+// Function ID: 18555
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 5013, 21, 5012, 575, 18554, 14684, 504, 1653, 5613, 5614, 5222, 1112, 4244, 15364, 17401, 5603, 5610, 2]
+// Dependencies: [19, 17, 5013, 21, 5012, 575, 18555, 14684, 504, 1653, 5613, 5614, 5222, 1112, 4244, 15364, 17401, 5603, 5610, 2]
 // Exports: default
 
-// Module 18553 (ConjureNativeControlOverlay)
+// Module 18554 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import timing_timing from "timing/timing" /* 5222 */;
 import spring_spring from "spring/spring" /* 5613 */;
 import springPresets from "springPresets" /* 5614 */;
-import useConjureControlBar from "useConjureControlBar" /* 18554 */;
+import useConjureControlBar from "useConjureControlBar" /* 18555 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5013 */;
@@ -89,9 +89,9 @@ export default function ConjureNativeControlOverlay(arg0) {
   ({ active, children } = arg0);
   let tmp = closure_9();
   let tmp2 = conjureControlPhase;
-  let obj = conjureControlPhase(18554);
+  let obj = conjureControlPhase(18555);
   conjureControlPhase = obj.useConjureControlPhase(active);
-  let obj2 = conjureControlPhase(18554);
+  let obj2 = conjureControlPhase(18555);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
   const obj3 = conjureControlPhase(14684);

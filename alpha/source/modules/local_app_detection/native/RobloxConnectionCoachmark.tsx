@@ -1,10 +1,10 @@
-// Module ID: 19216
-// Function ID: 19217
+// Module ID: 19215
+// Function ID: 19216
 // Name: RobloxConnectionCoachmark
 // Dependencies: [32, 19, 17, 7431, 1386, 15154, 1071, 4858, 21, 5012, 575, 5073, 1628, 5226, 5240, 7476, 7516, 6084, 7711, 5603, 1112, 5610, 14051, 7713, 8067, 5034, 6147, 1412, 1186, 504, 15155, 7501, 5044, 4845, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 19216 (RobloxConnectionCoachmark)
+// Module 19215 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

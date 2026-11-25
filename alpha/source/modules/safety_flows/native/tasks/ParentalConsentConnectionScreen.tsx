@@ -1,10 +1,10 @@
-// Module ID: 20298
-// Function ID: 20299
+// Module ID: 20301
+// Function ID: 20302
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 8170, 1386, 8171, 21, 5012, 575, 20289, 20288, 12542, 5573, 19780, 16336, 8169, 504, 16334, 20299, 20283, 5694, 1112, 3174, 5226, 16335, 2119, 20292, 11567, 6084, 20300, 11491, 20301, 5603, 2846, 16337, 2]
+// Dependencies: [5, 32, 19, 17, 8170, 1386, 8171, 21, 5012, 575, 20292, 20291, 12542, 5573, 19779, 16336, 8169, 504, 16334, 20302, 20286, 5694, 1112, 3174, 5226, 16335, 2119, 20295, 11567, 6084, 20303, 11491, 20304, 5603, 2846, 16337, 2]
 // Exports: default
 
-// Module 20298 (ParentalConsentConnectionScreen)
+// Module 20301 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;

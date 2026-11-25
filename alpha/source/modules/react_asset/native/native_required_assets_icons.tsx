@@ -1,9 +1,9 @@
-// Module ID: 20332
-// Function ID: 20333
+// Module ID: 20335
+// Function ID: 20336
 // Name: native_required_assets_icons
-// Dependencies: [7073, 7070, 12211, 8960, 7165, 20333, 9577, 11689, 9324, 15035, 7156, 13398, 7461, 9775, 6126, 20334, 20335, 16618, 16428, 12463, 20336, 20337, 18133, 18131, 5715, 7260, 7258, 7723, 10778, 7071, 10301, 19907, 20338, 7089, 7090, 5709, 7103, 10719, 12900, 10278, 10460, 8616, 7712, 10268, 9003, 8816, 9583, 8981, 8983, 11443, 7765, 14175, 11045, 9663, 14026, 12221, 13305, 10037, 15033, 12094, 17754, 7074, 10597, 9518, 7067, 16768, 12150, 14386, 11365, 7075, 10357, 7909, 14052, 18425, 7217, 8742, 2]
+// Dependencies: [7073, 7070, 12211, 8960, 7165, 20336, 9577, 11689, 9324, 15035, 7156, 13398, 7461, 9775, 6126, 20337, 20338, 16618, 16428, 12463, 20339, 20340, 18133, 18131, 5715, 7260, 7258, 7723, 10778, 7071, 10301, 19906, 20341, 7089, 7090, 5709, 7103, 10719, 12900, 10278, 10460, 8616, 7712, 10268, 9003, 8816, 9583, 8981, 8983, 11443, 7765, 14175, 11045, 9663, 14026, 12221, 13305, 10037, 15033, 12094, 17754, 7074, 10597, 9518, 7067, 16768, 12150, 14386, 11365, 7075, 10357, 7909, 14052, 18425, 7217, 8742, 2]
 
-// Module 20332 (native_required_assets_icons)
+// Module 20335 (native_required_assets_icons)
 import AssetRegistryDefault from "AssetRegistry" /* 5709 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 5715 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 6126 */;
@@ -73,13 +73,13 @@ import AssetRegistryDefault66 from "AssetRegistry" /* 17754 */;
 import AssetRegistryDefault67 from "AssetRegistry" /* 18131 */;
 import AssetRegistryDefault68 from "AssetRegistry" /* 18133 */;
 import AssetRegistryDefault69 from "AssetRegistry" /* 18425 */;
-import AssetRegistryDefault70 from "AssetRegistry" /* 19907 */;
-import AssetRegistryDefault71 from "AssetRegistry" /* 20333 */;
-import AssetRegistryDefault72 from "AssetRegistry" /* 20334 */;
-import AssetRegistryDefault73 from "AssetRegistry" /* 20335 */;
-import AssetRegistryDefault74 from "AssetRegistry" /* 20336 */;
-import AssetRegistryDefault75 from "AssetRegistry" /* 20337 */;
-import AssetRegistryDefault76 from "AssetRegistry" /* 20338 */;
+import AssetRegistryDefault70 from "AssetRegistry" /* 19906 */;
+import AssetRegistryDefault71 from "AssetRegistry" /* 20336 */;
+import AssetRegistryDefault72 from "AssetRegistry" /* 20337 */;
+import AssetRegistryDefault73 from "AssetRegistry" /* 20338 */;
+import AssetRegistryDefault74 from "AssetRegistry" /* 20339 */;
+import AssetRegistryDefault75 from "AssetRegistry" /* 20340 */;
+import AssetRegistryDefault76 from "AssetRegistry" /* 20341 */;
 import size from "module_2" /* 2 */;
 
 const obj = { AnnouncementsIcon: AssetRegistryDefault7, AppsIcon: AssetRegistryDefault5, ArrowAngleLeftUpIcon: AssetRegistryDefault51, ArrowAngleRightUpIcon: AssetRegistryDefault26, ArrowLargeLeftIcon: AssetRegistryDefault14, ArrowLargeRightIcon: AssetRegistryDefault71, AttachmentIcon: AssetRegistryDefault32, BellZIcon: AssetRegistryDefault48, BoostGemIcon: AssetRegistryDefault30, ChannelListMagnifyingGlassIcon: AssetRegistryDefault62, CheckmarkLargeIcon: AssetRegistryDefault13, ChatXIcon: AssetRegistryDefault56, CheckmarkSmallIcon: AssetRegistryDefault18, ChevronSmallDownIcon: AssetRegistryDefault35, ChevronSmallRightIcon: AssetRegistryDefault3, CircleErrorIcon: AssetRegistryDefault72, CircleInformationIcon: AssetRegistryDefault73, CircleQuestionIcon: AssetRegistryDefault64, ClipsIcon: AssetRegistryDefault63, ClockWarningIcon: AssetRegistryDefault53, ConnectionAverageIcon: AssetRegistryDefault74, ConnectionBadIcon: AssetRegistryDefault75, ConnectionFineIcon: AssetRegistryDefault68, ConnectionUnknownIcon: AssetRegistryDefault67, DownloadIcon: AssetRegistryDefault2, EyeIcon: AssetRegistryDefault17, EyeSlashIcon: AssetRegistryDefault16, GameControllerIcon: AssetRegistryDefault20, GifIcon: AssetRegistryDefault44, GroupIcon: AssetRegistryDefault6, HandRequestSpeakIcon: AssetRegistryDefault39, HomeIcon: AssetRegistryDefault70, ImageBrokenIcon: AssetRegistryDefault76, ImageIcon: AssetRegistryDefault10, ImageWarningIcon: AssetRegistryDefault11, LinkIcon: AssetRegistryDefault, LockIcon: AssetRegistryDefault12, LockUnlockedIcon: AssetRegistryDefault43, MaximizeIcon: AssetRegistryDefault54, MicrophoneArrowRightIcon: AssetRegistryDefault38, MicrophoneIcon: AssetRegistryDefault41, MicrophoneSlashIcon: AssetRegistryDefault23, MoreHorizontalIcon: AssetRegistryDefault19, MusicIcon: AssetRegistryDefault37, PaperIcon: AssetRegistryDefault29, PauseIcon: AssetRegistryDefault25, PencilIcon: AssetRegistryDefault33, PhoneCallIcon: AssetRegistryDefault27, PhoneHangUpIcon: AssetRegistryDefault28, PinIcon: AssetRegistryDefault47, PlayIcon: AssetRegistryDefault21, PlaystationNeutralIcon: AssetRegistryDefault59, PollsIcon: AssetRegistryDefault45, ReactionIcon: AssetRegistryDefault34, RefreshIcon: AssetRegistryDefault57, RobotIcon: AssetRegistryDefault52, ScreenIcon: AssetRegistryDefault55, ShieldIcon: AssetRegistryDefault36, SignPostIcon: AssetRegistryDefault61, SlashBoxIcon: AssetRegistryDefault49, SpotifyNeutralIcon: AssetRegistryDefault66, StageIcon: AssetRegistryDefault8, StickerIcon: AssetRegistryDefault42, SuperReactionIcon: AssetRegistryDefault31, ThreadIcon: AssetRegistryDefault4, TicketIcon: AssetRegistryDefault65, TopicsIcon: AssetRegistryDefault50, UserCheckIcon: AssetRegistryDefault60, UserCircleIcon: AssetRegistryDefault46, VoiceNormalIcon: AssetRegistryDefault9, VoiceXIcon: AssetRegistryDefault40, WarningIcon: AssetRegistryDefault22, WindowLaunchIcon: AssetRegistryDefault58, WindowTopIcon: AssetRegistryDefault69, XSmallIcon: AssetRegistryDefault15, XboxNeutralIcon: AssetRegistryDefault24 };

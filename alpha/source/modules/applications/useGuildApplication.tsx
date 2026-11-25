@@ -1,10 +1,10 @@
-// Module ID: 20077
-// Function ID: 20078
+// Module ID: 20080
+// Function ID: 20081
 // Name: useGuildApplication
 // Dependencies: [5, 32, 19, 2164, 504, 6940, 5761, 2]
 // Exports: default
 
-// Module 20077 (useGuildApplication)
+// Module 20080 (useGuildApplication)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 19753
-// Function ID: 19754
+// Module ID: 19752
+// Function ID: 19753
 // Name: useInterestPickerCatalog
 // Dependencies: [19, 17984, 17985, 2]
 // Exports: default
 
-// Module 19753 (useInterestPickerCatalog)
+// Module 19752 (useInterestPickerCatalog)
 import InterestPickerCatalogs from "InterestPickerCatalogs" /* 17985 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

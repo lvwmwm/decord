@@ -1,9 +1,9 @@
-// Module ID: 18994
-// Function ID: 18995
+// Module ID: 18993
+// Function ID: 18994
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4945, 4946, 4861, 6136, 8975, 11363, 1071, 8976, 21, 5012, 13282, 575, 5576, 504, 1500, 7910, 1112, 11451, 8556, 13194, 13261, 6802, 7377, 11360, 8070, 10410, 18995, 5073, 1653, 5222, 1706, 18866, 5225, 12071, 6121, 7164, 2]
+// Dependencies: [19, 17, 4945, 4946, 4861, 6136, 8975, 11363, 1071, 8976, 21, 5012, 13282, 575, 5576, 504, 1500, 7910, 1112, 11451, 8556, 13194, 13261, 6802, 7377, 11360, 8070, 10410, 18994, 5073, 1653, 5222, 1706, 18865, 5225, 12071, 6121, 7164, 2]
 
-// Module 18994 (ChannelDetailsNavigationBar)
+// Module 18993 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -19,7 +19,7 @@ import ChannelDetailsUtils from "ChannelDetailsUtils" /* 12071 */;
 import useSearchContext from "useSearchContext" /* 13194 */;
 import TrackingDefault from "Tracking" /* 13261 */;
 import SearchButton2 from "SearchButton" /* 13282 */;
-import ChannelDetailsSearchBarDefault from "ChannelDetailsSearchBar" /* 18866 */;
+import ChannelDetailsSearchBarDefault from "ChannelDetailsSearchBar" /* 18865 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4945 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4946 */;

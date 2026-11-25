@@ -12,7 +12,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
 let _undefined, c3, closure_4, closure_5, closure_6, closure_7, hasOwnProperty;
 
-const f106146 = (arg0) => {
+const f106167 = (arg0) => {
   closure_3 = arg0;
   let c1;
   c2 = undefined;
@@ -53,7 +53,7 @@ function failure(arg0, arg1, arg2) {
       }
       return tmp;
     },
-    set: f106146
+    set: f106167
   });
   return obj;
 }
@@ -293,7 +293,7 @@ export const _parseAsync = (arg0) => {
     let c8 = 0;
     let c9 = 0;
     return (function*(arg0, value, arg2, arg3) {
-      const f141493 = (item) => closure_5.finalizeIssue(item, closure_1_1, closure_4.config());
+      const f141552 = (item) => closure_5.finalizeIssue(item, closure_1_1, closure_4.config());
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -359,10 +359,10 @@ export const _parseAsync = (arg0) => {
             const issues = value.issues;
             const self = this;
             const self2 = this;
-            closure_3 = new closure_4(issues.map(f141493));
+            closure_3 = new closure_4(issues.map(f141552));
             let callee;
             captureStackTrace = captureStackTrace.captureStackTrace;
-            const tmp22 = new closure_4(issues.map(f141493));
+            const tmp22 = new closure_4(issues.map(f141552));
             const tmp25 = closure_3;
             if (closure_0 != null) {
               callee = closure_0.callee;
@@ -431,7 +431,7 @@ export const _safeParse = (arg0) => {
                 }
                 return tmp;
               },
-          set: f106146
+          set: f106167
         });
         obj5 = obj4;
       } else {

@@ -1,10 +1,10 @@
-// Module ID: 20299
-// Function ID: 20300
+// Module ID: 20302
+// Function ID: 20303
 // Name: usePendingParentRequests
 // Dependencies: [32, 19, 8170, 1386, 8171, 504, 8169, 12542, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 20299 (usePendingParentRequests)
+// Module 20302 (usePendingParentRequests)
 import useUserLinks from "useUserLinks" /* 8169 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8171 */;
 import useFamilyCenterActions from "useFamilyCenterActions" /* 12542 */;
@@ -118,7 +118,7 @@ export function usePendingRequestListController(pendingRequests) {
   let tmp15;
   let tmp16;
   let tmp4;
-  const f120138 = () => {
+  const f120177 = () => {
     set = new Set();
     return set;
   };
@@ -147,8 +147,8 @@ export function usePendingRequestListController(pendingRequests) {
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp6;
-  [c6, c7] = tmp2(react.useState(f120138), 2);
-  tmp2(react.useState(f120138), 2);
+  [c6, c7] = tmp2(react.useState(f120177), 2);
+  tmp2(react.useState(f120177), 2);
   const callback = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     let tmp = _undefined3(function(has) {
@@ -231,7 +231,7 @@ export function usePendingRequestResolution(parent_id) {
   let stateFromStores;
   let tmp3;
   let tmp4;
-  const f120145 = () => {
+  const f120184 = () => {
     let str = "connected";
     if (stateFromStores !== UserLinkStatus.ACTIVE) {
       let str2;
@@ -255,8 +255,8 @@ export function usePendingRequestResolution(parent_id) {
     }
     return link_status;
   });
-  [tmp3, tmp4] = _slicedToArray(react.useState(f120145), 2);
-  const tmp2 = _slicedToArray(react.useState(f120145), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f120184), 2);
+  const tmp2 = _slicedToArray(react.useState(f120184), 2);
   const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   const first = tmp5[0];
   if (stateFromStores !== first) {

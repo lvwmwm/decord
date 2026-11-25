@@ -1,10 +1,10 @@
-// Module ID: 18816
-// Function ID: 18817
+// Module ID: 18815
+// Function ID: 18816
 // Name: ConjureStaffAccess
 // Dependencies: [4942, 4883, 4954, 1386, 1071, 504, 5628, 2]
 // Exports: useConjureStaffAccessTarget
 
-// Module 18816 (ConjureStaffAccess)
+// Module 18815 (ConjureStaffAccess)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import GuildChannelStore from "GuildChannelStore" /* 4942 */;

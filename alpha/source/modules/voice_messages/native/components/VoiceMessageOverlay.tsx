@@ -502,17 +502,17 @@ const memoResult = react.memo(function VoiceMessageEllipse(arg0) {
   let tmp7;
   let useReducedMotion;
   let voiceMessageAnimationState;
-  const f104408 = (currWaveHeight) => currWaveHeight.currWaveHeight;
+  const f104429 = (currWaveHeight) => currWaveHeight.currWaveHeight;
   ({ radius, voiceMessageAnimationState } = arg0);
   ({ opacity, height, offsetThreshold } = arg0);
   let obj = get_initialized;
   items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f104408)];
+  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f104429)];
   let c0;
   let c1;
   [tmp5, tmp6, tmp7] = items1;
-  const tmp4 = useVoiceMessagesUIStore(f104408);
+  const tmp4 = useVoiceMessagesUIStore(f104429);
   const obj2 = _mod1653;
   class VoiceMessageOverlayTsx1 {
     constructor() {

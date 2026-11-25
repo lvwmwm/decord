@@ -1,16 +1,16 @@
-// Module ID: 19625
-// Function ID: 19626
+// Module ID: 19624
+// Function ID: 19625
 // Name: ConjureTurnNotificationManager
-// Dependencies: [8170, 1230, 10554, 4915, 5045, 7623, 7634, 6903, 1071, 4868, 7444, 7693, 4837, 7639, 10256, 7571, 18625, 2]
+// Dependencies: [8170, 1230, 10554, 4915, 5045, 7623, 7634, 6903, 1071, 4868, 7444, 7693, 4837, 7639, 10256, 7571, 18624, 2]
 
-// Module 19625 (ConjureTurnNotificationManager)
+// Module 19624 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 4837 */;
 import ChannelConstants from "ChannelConstants" /* 4868 */;
 import ConjureUtils from "ConjureUtils" /* 7571 */;
 import conjureProjectMute from "conjureProjectMute" /* 7639 */;
 import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7693 */;
 import SoundUtils from "SoundUtils" /* 10256 */;
-import conjureMentions from "conjureMentions" /* 18625 */;
+import conjureMentions from "conjureMentions" /* 18624 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8170 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import NotificationSettingsStore from "NotificationSettingsStore" /* 10554 */;

@@ -1,10 +1,10 @@
-// Module ID: 19001
-// Function ID: 19002
+// Module ID: 19000
+// Function ID: 19001
 // Name: useBackgroundConjureAppChannelIds
 // Dependencies: [15901, 7646, 6908, 504, 2]
 // Exports: default
 
-// Module 19001 (useBackgroundConjureAppChannelIds)
+// Module 19000 (useBackgroundConjureAppChannelIds)
 import get_initialized from "get initialized" /* 504 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6908 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 7646 */;

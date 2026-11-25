@@ -1,10 +1,10 @@
-// Module ID: 20159
-// Function ID: 20160
+// Module ID: 20162
+// Function ID: 20163
 // Name: useArchiveOrDelete
 // Dependencies: [5, 32, 19, 16772, 16785, 1112, 6016, 1186, 38, 5693, 2]
 // Exports: default
 
-// Module 20159 (useArchiveOrDelete)
+// Module 20162 (useArchiveOrDelete)
 import intl13 from "intl" /* 1112 */;
 import ToastUtilsAll from "ToastUtils" /* 5693 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16785 */;

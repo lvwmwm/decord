@@ -1377,15 +1377,15 @@ function generateCheck(write, varCounter, innerType, arg3, flag) {
     }
     return arg3;
   }
-  const f130020 = () => _zod._zod.def.defaultValue;
-  const f130021 = (write) => {
+  const f130059 = () => _zod._zod.def.defaultValue;
+  const f130060 = (write) => {
     write.write("" + text7 + " = " + closure_6 + "(" + closure_5 + "());");
   };
-  const f130022 = (write) => {
+  const f130061 = (write) => {
     const tmp = generateCheck(write, closure_0, def8.innerType, closure_2);
     write.write("" + text7 + " = " + tmp + " === undefined ? " + closure_6 + "(" + closure_5 + "()) : " + tmp + ";");
   };
-  const f130023 = (write) => {
+  const f130062 = (write) => {
     write.write("" + text7 + " = " + generateCheck(write, closure_0, def8.innerType, closure_2) + ";");
   };
   function generateDiscriminatedUnionCheck(write, varCounter, def7, arg3) {
@@ -1968,7 +1968,7 @@ function generateCheck(write, varCounter, innerType, arg3, flag) {
         let _Object = Object;
         ownPropertyDescriptor = Object.getOwnPropertyDescriptor(innerType._zod.def, "defaultValue");
         if (ownPropertyDescriptor) {
-          fn2 = f130020;
+          fn2 = f130059;
         }
         if ("prefault" === innerType._zod.def.type) {
           if (fn2) {
@@ -2007,10 +2007,10 @@ function generateCheck(write, varCounter, innerType, arg3, flag) {
             let _HermesInternal44 = HermesInternal;
             combined3 = "if (" + arg3 + " === undefined) {";
             write5(combined3);
-            fn4 = f130021;
+            fn4 = f130060;
             write.indented(fn4);
             write.write("} else {");
-            fn5 = f130022;
+            fn5 = f130061;
             write.indented(fn5);
             write.write("}");
             tmp243 = text7;
@@ -2023,7 +2023,7 @@ function generateCheck(write, varCounter, innerType, arg3, flag) {
             let _HermesInternal42 = HermesInternal;
             combined5 = "if (" + arg3 + " !== undefined) {";
             write3(combined5);
-            fn3 = f130023;
+            fn3 = f130062;
             write.indented(fn3);
             write.write("}");
             tmp243 = text7;
@@ -2041,7 +2041,7 @@ function generateCheck(write, varCounter, innerType, arg3, flag) {
         let _Object = Object;
         ownPropertyDescriptor = Object.getOwnPropertyDescriptor(innerType._zod.def, "defaultValue");
         if (ownPropertyDescriptor) {
-          fn2 = f130020;
+          fn2 = f130059;
         }
         if ("prefault" === innerType._zod.def.type) {
           if (fn2) {
@@ -2080,10 +2080,10 @@ function generateCheck(write, varCounter, innerType, arg3, flag) {
             let _HermesInternal44 = HermesInternal;
             combined3 = "if (" + arg3 + " === undefined) {";
             write5(combined3);
-            fn4 = f130021;
+            fn4 = f130060;
             write.indented(fn4);
             write.write("} else {");
-            fn5 = f130022;
+            fn5 = f130061;
             write.indented(fn5);
             write.write("}");
             tmp243 = text7;
@@ -2096,7 +2096,7 @@ function generateCheck(write, varCounter, innerType, arg3, flag) {
             let _HermesInternal42 = HermesInternal;
             combined5 = "if (" + arg3 + " !== undefined) {";
             write3(combined5);
-            fn3 = f130023;
+            fn3 = f130062;
             write.indented(fn3);
             write.write("}");
             tmp243 = text7;

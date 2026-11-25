@@ -1,10 +1,10 @@
-// Module ID: 18574
-// Function ID: 18575
+// Module ID: 18573
+// Function ID: 18574
 // Name: conjurePublishCard
 // Dependencies: [4244, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishNoticeMessage, withLivePublishCard
 
-// Module 18574 (conjurePublishCard)
+// Module 18573 (conjurePublishCard)
 import _modDef4244 from "module_4244" /* 4244 */;
 import size from "module_2" /* 2 */;
 

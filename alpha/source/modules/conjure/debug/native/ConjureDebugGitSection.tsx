@@ -1,10 +1,10 @@
-// Module ID: 18838
-// Function ID: 18839
+// Module ID: 18837
+// Function ID: 18838
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 5012, 575, 7109, 9582, 13798, 18839, 8566, 18841, 11399, 18843, 10333, 10616, 7494, 7908, 7253, 17347, 17349, 18845, 18833, 5603, 5074, 6021, 6084, 7151, 5610, 10640, 2]
+// Dependencies: [32, 19, 17, 21, 5012, 575, 7109, 9582, 13798, 18838, 8566, 18840, 11399, 18842, 10333, 10616, 7494, 7908, 7253, 17347, 17349, 18844, 18832, 5603, 5074, 6021, 6084, 7151, 5610, 10640, 2]
 // Exports: ConjureDebugGitSection, ConjureDebugRestartAgent
 
-// Module 18838 (ConjureDebugGitSection)
+// Module 18837 (ConjureDebugGitSection)
 import nativeDefault from "native" /* 575 */;
 import AlertModal from "AlertModal" /* 6021 */;
 import FolderIcon from "FolderIcon" /* 7109 */;
@@ -19,11 +19,11 @@ import ServerIcon from "ServerIcon" /* 11399 */;
 import CloudIcon from "CloudIcon" /* 13798 */;
 import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 17347 */;
 import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 17349 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18833 */;
-import ListNumberedIcon from "ListNumberedIcon" /* 18839 */;
-import SaveIcon from "SaveIcon" /* 18841 */;
-import CloudDownloadIcon from "CloudDownloadIcon" /* 18843 */;
-import ConjureDebugGit from "ConjureDebugGit" /* 18845 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18832 */;
+import ListNumberedIcon from "ListNumberedIcon" /* 18838 */;
+import SaveIcon from "SaveIcon" /* 18840 */;
+import CloudDownloadIcon from "CloudDownloadIcon" /* 18842 */;
+import ConjureDebugGit from "ConjureDebugGit" /* 18844 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

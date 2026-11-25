@@ -1,10 +1,10 @@
-// Module ID: 18951
-// Function ID: 18952
+// Module ID: 18950
+// Function ID: 18951
 // Name: SuggestedSearchSkeleton
 // Dependencies: [19, 17, 13236, 8977, 21, 5012, 575, 1653, 5222, 2]
 // Exports: default
 
-// Module 18951 (SuggestedSearchSkeleton)
+// Module 18950 (SuggestedSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;

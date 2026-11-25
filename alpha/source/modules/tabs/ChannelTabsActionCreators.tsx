@@ -24,7 +24,7 @@ let _require, obj1, tmp10, tmp11, tmp13, tmp14, tmp2, tmp8, tmp9, transitionToCh
 
 let c9;
 let metroImportAll;
-const f99794 = (pinned) => pinned.pinned;
+const f99815 = (pinned) => pinned.pinned;
 function navigateToTabLocation(activeTab) {
   let channelId;
   let guildId;
@@ -72,7 +72,7 @@ function getTabProperties(nextResult) {
   let channelTabPageName;
   let guildId;
   const tabs = ChannelTabsStore.getTabs();
-  const obj = { tab_kind: nextResult.kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs.length, pinned_tab_count: tabs.filter(f99794).length };
+  const obj = { tab_kind: nextResult.kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs.length, pinned_tab_count: tabs.filter(f99815).length };
   channelTabPageName = null;
   if ("route" === nextResult.kind) {
     const obj2 = ChannelTabRoutes;
@@ -548,7 +548,7 @@ function trackChannelTabPinToggled(found1, source) {
   const CHANNEL_TAB_PIN_TOGGLED = metroImportAll.CHANNEL_TAB_PIN_TOGGLED;
   AppAnalyticsUtilsDefault;
   const tabs = ChannelTabsStore.getTabs();
-  const obj = { tab_kind: found1.kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs.length, pinned_tab_count: tabs.filter(f99794).length };
+  const obj = { tab_kind: found1.kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs.length, pinned_tab_count: tabs.filter(f99815).length };
   channelTabPageName = null;
   if ("route" === found1.kind) {
     const obj2 = ChannelTabRoutes;
@@ -740,7 +740,7 @@ export function moveChannelTab(tabId, toIndex) {
     const CHANNEL_TAB_REORDERED = metroImportAll.CHANNEL_TAB_REORDERED;
     AppAnalyticsUtilsDefault;
     const tabs2 = obj.getTabs();
-    const obj4 = { tab_kind: tabs1[findIndexResult1].kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs2.length, pinned_tab_count: tabs2.filter(f99794).length };
+    const obj4 = { tab_kind: tabs1[findIndexResult1].kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs2.length, pinned_tab_count: tabs2.filter(f99815).length };
     channelTabPageName = null;
     if ("route" === tabs1[findIndexResult1].kind) {
       const obj7 = ChannelTabRoutes;
@@ -805,7 +805,7 @@ export function closeChannelTab(tabId, source) {
       const CHANNEL_TAB_CLOSED = metroImportAll.CHANNEL_TAB_CLOSED;
       AppAnalyticsUtilsDefault;
       const tabs2 = obj.getTabs();
-      const obj5 = { tab_kind: found.kind, tab_route: channelTabPageName, channel_id: channelId1, guild_id: guildId1, tab_count: tabs2.length, pinned_tab_count: tabs2.filter(f99794).length };
+      const obj5 = { tab_kind: found.kind, tab_route: channelTabPageName, channel_id: channelId1, guild_id: guildId1, tab_count: tabs2.length, pinned_tab_count: tabs2.filter(f99815).length };
       channelTabPageName = null;
       if ("route" === found.kind) {
         const obj3 = ChannelTabRoutes;

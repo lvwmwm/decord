@@ -1,9 +1,9 @@
-// Module ID: 19182
-// Function ID: 19183
+// Module ID: 19181
+// Function ID: 19182
 // Name: SettingsNavigator
-// Dependencies: [19, 17, 2188, 16141, 1071, 21, 9005, 5012, 575, 19183, 1186, 5603, 1501, 13851, 19184, 7320, 563, 6348, 6349, 16143, 8207, 16144, 7324, 15426, 5576, 15990, 19185, 15973, 1112, 19186, 38, 2]
+// Dependencies: [19, 17, 2188, 16141, 1071, 21, 9005, 5012, 575, 19182, 1186, 5603, 1501, 13851, 19183, 7320, 563, 6348, 6349, 16143, 8207, 16144, 7324, 15426, 5576, 15990, 19184, 15973, 1112, 19185, 38, 2]
 
-// Module 19182 (SettingsNavigator)
+// Module 19181 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1186 */;
 import Text_Text from "Text/Text" /* 5603 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7320 */;
 import SettingRendererUtils from "SettingRendererUtils" /* 16143 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 19183 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 19182 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import UserSettingSearchStore from "UserSettingSearchStore" /* 16141 */;

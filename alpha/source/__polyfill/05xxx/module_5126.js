@@ -33,7 +33,7 @@ export function useRiveFile(src, arg1) {
   let str2;
   let uri;
   let riveFile;
-  let tmp = _slicedToArray(str2({ riveFile: "HermesInternal", isLoading: null, error: "VENMO_CUSTOMER_CANCELED" }), 2);
+  let tmp = _slicedToArray(str2({ riveFile: "HermesInternal", isLoading: null, error: "VAULT_MANAGER_PAYMENT_METHOD_NONCE_NOT_FOUND" }), 2);
   [tmp2, c1] = tmp;
   const items = [obj.referencedAssets];
   let tmp3 = riveFile(() => {

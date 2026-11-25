@@ -19,14 +19,14 @@ export function useCustomThemeDisplaySettings(stateFromStores) {
   let tmp5;
   let tmp6;
   let tmpResult;
-  const f87425 = () => {
+  const f87446 = () => {
     const items = [CustomThemeMobileStore.getCustomTheme(), CustomThemeMobileStore.getBaseTheme(), CustomThemeMobileStore.getPreviewTheme()];
     return items;
   };
   let items = [CustomThemeMobileStore];
   const obj = get_initialized;
-  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f87425);
-  _slicedToArray(obj.useStateFromStoresArray(items, f87425), 3);
+  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f87446);
+  _slicedToArray(obj.useStateFromStoresArray(items, f87446), 3);
   if (undefined !== tmp6) {
     return tmp6;
   } else {

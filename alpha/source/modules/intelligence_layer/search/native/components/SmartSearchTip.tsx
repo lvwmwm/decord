@@ -1,9 +1,9 @@
-// Module ID: 18939
-// Function ID: 18940
+// Module ID: 18938
+// Function ID: 18939
 // Name: SmartSearchTip
 // Dependencies: [19, 17, 21, 5012, 575, 5603, 1112, 4468, 14877, 1186, 2]
 
-// Module 18939 (SmartSearchTip)
+// Module 18938 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;

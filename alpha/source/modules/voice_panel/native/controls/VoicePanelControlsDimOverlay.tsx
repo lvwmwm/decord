@@ -1,9 +1,9 @@
-// Module ID: 19527
-// Function ID: 19528
+// Module ID: 19526
+// Function ID: 19527
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 15355, 11734, 11732, 21, 11733, 1653, 19490, 5613, 15788, 5578, 2]
+// Dependencies: [19, 15355, 11734, 11732, 21, 11733, 1653, 19489, 5613, 15788, 5578, 2]
 
-// Module 19527 (VoicePanelControlsDimOverlay)
+// Module 19526 (VoicePanelControlsDimOverlay)
 import Fragment from "Fragment" /* 21 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
@@ -56,7 +56,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   let items = [closure_9, windowDimensions, , , , , , , , , ];
   const useDerivedValue = setControlsMode(1653).useDerivedValue;
   const tmp4 = setControlsMode(1653);
-  items[2] = setControlsMode(19490).getDrawerSpec;
+  items[2] = setControlsMode(19489).getDrawerSpec;
   items[3] = safeArea;
   items[4] = controlsSpecs;
   items[5] = VoicePanelControlsModes;

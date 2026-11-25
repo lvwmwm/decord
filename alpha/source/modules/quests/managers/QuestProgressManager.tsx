@@ -1,9 +1,9 @@
-// Module ID: 20313
-// Function ID: 20314
+// Module ID: 20316
+// Function ID: 20317
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 4860, 6905, 2139, 6782, 2158, 5823, 8323, 19353, 6840, 6906, 1088, 8331, 8330, 9950, 6841, 9852, 6843, 8350, 8369, 8368, 7444, 6848, 8347, 6785, 1254, 8367, 8345, 2]
+// Dependencies: [5, 32, 4860, 6905, 2139, 6782, 2158, 5823, 8323, 19352, 6840, 6906, 1088, 8331, 8330, 9950, 6841, 9852, 6843, 8350, 8369, 8368, 7444, 6848, 8347, 6785, 1254, 8367, 8345, 2]
 
-// Module 20313 (QuestProgressManager)
+// Module 20316 (QuestProgressManager)
 import DurationsDefault from "Durations" /* 1088 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6785 */;
@@ -27,7 +27,7 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
 import DetectableGameStore from "DetectableGameStore" /* 2158 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5823 */;
 import QuestStore from "QuestStore" /* 8323 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19353 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19352 */;
 import QuestConstants from "QuestConstants" /* 6840 */;
 import getQuestLogger from "getQuestLogger" /* 8331 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;

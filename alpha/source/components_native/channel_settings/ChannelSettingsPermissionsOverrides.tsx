@@ -1,21 +1,21 @@
-// Module ID: 19109
-// Function ID: 19110
+// Module ID: 19108
+// Function ID: 19109
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 19110, 4879, 4861, 4918, 4883, 4944, 4954, 1386, 1071, 21, 5012, 575, 504, 19112, 1500, 1628, 7572, 12070, 19111, 19115, 4949, 8486, 1083, 2117, 5068, 6015, 1112, 5691, 2187, 4869, 18729, 8962, 5603, 5628, 11390, 6113, 7907, 6109, 18733, 1378, 2]
+// Dependencies: [32, 5, 19, 17, 19109, 4879, 4861, 4918, 4883, 4944, 4954, 1386, 1071, 21, 5012, 575, 504, 19111, 1500, 1628, 7572, 12070, 19110, 19114, 4949, 8486, 1083, 2117, 5068, 6015, 1112, 5691, 2187, 4869, 18728, 8962, 5603, 5628, 11390, 6113, 7907, 6109, 18732, 1378, 2]
 // Exports: default
 
-// Module 19109 (ChannelSettingsPermissionsOverrides)
+// Module 19108 (ChannelSettingsPermissionsOverrides)
 import nativeDefault from "native" /* 575 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4869 */;
 import GuildRecord from "GuildRecord" /* 4879 */;
 import TableRowGroup2 from "TableRowGroup" /* 6109 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12070 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18729 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18728 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19110 */;
+import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19109 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
 import GuildRoleStore from "GuildRoleStore" /* 4918 */;
 import GuildStore from "GuildStore" /* 4883 */;

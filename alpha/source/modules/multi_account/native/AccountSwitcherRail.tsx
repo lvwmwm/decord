@@ -1,9 +1,9 @@
-// Module ID: 19004
-// Function ID: 19005
+// Module ID: 19003
+// Function ID: 19004
 // Name: AccountSwitcherRail
 // Dependencies: [19, 17, 1405, 5069, 1386, 13333, 15054, 13334, 1071, 21, 575, 5012, 5074, 5068, 1112, 5699, 1412, 7460, 5716, 1628, 5576, 17605, 504, 18107, 1255, 6349, 13336, 5702, 10409, 9025, 2]
 
-// Module 19004 (AccountSwitcherRail)
+// Module 19003 (AccountSwitcherRail)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;

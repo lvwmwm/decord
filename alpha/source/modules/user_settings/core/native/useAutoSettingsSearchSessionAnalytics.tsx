@@ -1,10 +1,10 @@
-// Module ID: 19185
-// Function ID: 19186
+// Module ID: 19184
+// Function ID: 19185
 // Name: useAutoSettingsSearchSessionAnalytics
 // Dependencies: [19, 2118, 16141, 504, 1091, 6800, 5573, 7321, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 19185 (useAutoSettingsSearchSessionAnalytics)
+// Module 19184 (useAutoSettingsSearchSessionAnalytics)
 import useMountEffectDefault from "useMountEffect" /* 5573 */;
 import usePreviousDefault from "usePrevious" /* 6800 */;
 import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7321 */;

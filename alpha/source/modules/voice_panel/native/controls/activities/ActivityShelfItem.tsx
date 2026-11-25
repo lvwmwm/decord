@@ -1,10 +1,10 @@
-// Module ID: 19448
-// Function ID: 19449
+// Module ID: 19447
+// Function ID: 19448
 // Name: ActivityShelfItem
-// Dependencies: [19, 1071, 1190, 21, 5012, 575, 5009, 13053, 12968, 7024, 19446, 2022, 5664, 10209, 9271, 6121, 5073, 19445, 12996, 1186, 19449, 19447, 6776, 13765, 5603, 13060, 1112, 2]
+// Dependencies: [19, 1071, 1190, 21, 5012, 575, 5009, 13053, 12968, 7024, 19445, 2022, 5664, 10209, 9271, 6121, 5073, 19444, 12996, 1186, 19448, 19446, 6776, 13765, 5603, 13060, 1112, 2]
 // Exports: default
 
-// Module 19448 (ActivityShelfItem)
+// Module 19447 (ActivityShelfItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
@@ -20,10 +20,10 @@ import useActivityShelfItem from "useActivityShelfItem" /* 12968 */;
 import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 13053 */;
 import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 13060 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13765 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 19445 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 19446 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19447 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19449 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 19444 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 19445 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19446 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19448 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5012 */;

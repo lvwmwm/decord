@@ -16,7 +16,7 @@ import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c8, closure_3, closure_6, constants, identity;
+let c8, constants, identity;
 
 function notifyDiscoverRequestListeners() {
   for (const item10005 of set) {
@@ -26,7 +26,7 @@ function notifyDiscoverRequestListeners() {
 }
 function setDiscoverUser(arg0) {
   if (id !== arg0) {
-    c15 = null;
+    c16 = null;
     closure_14 = {};
     c11 = 0;
     c12 = 0;
@@ -34,7 +34,7 @@ function setDiscoverUser(arg0) {
     if (c9 != null) {
       obj.abort();
     }
-    closure_18 = {};
+    closure_19 = {};
     const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
     discoverRequestGuard.resetSession();
     id = arg0;
@@ -45,7 +45,7 @@ function setDiscoverAuthSessionIdHash(arg0) {
   if (null != arg0) {
     const tmp2 = null != authSessionIdHash && authSessionIdHash !== arg0;
     if (tmp2) {
-      c15 = null;
+      c16 = null;
       closure_14 = {};
       c11 = 0;
       c12 = 0;
@@ -53,7 +53,7 @@ function setDiscoverAuthSessionIdHash(arg0) {
       if (c9 != null) {
         obj.abort();
       }
-      closure_18 = {};
+      closure_19 = {};
       const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
       discoverRequestGuard.resetSession();
     }
@@ -134,6 +134,7 @@ let timeout = function _dispatchDiscoverPickerCommit() {
 };
 function fetchDiscoverDehydrated(arg0) {
   let closure_5;
+  let closure_6;
   let isDiscoverPickerCommit;
   function captureRequestErrors() {
     return obj(...arguments);
@@ -148,7 +149,7 @@ function fetchDiscoverDehydrated(arg0) {
   let closure_10;
   closure_14 = undefined;
   function isSameUser() {
-    let isAuthenticatedResult = closure_6 === closure_18 && null != id && AuthenticationStore.isAuthenticated() && AuthenticationStore.getId() === id;
+    let isAuthenticatedResult = closure_6 === closure_19 && null != id && AuthenticationStore.isAuthenticated() && AuthenticationStore.getId() === id;
     if (isAuthenticatedResult) {
       const currentUser = UserStore.getCurrentUser();
       id = undefined;
@@ -201,7 +202,7 @@ function fetchDiscoverDehydrated(arg0) {
       let obj12;
       let obj14;
       let picks2;
-      let tmp56;
+      let tmp59;
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -216,14 +217,14 @@ function fetchDiscoverDehydrated(arg0) {
         }
       } else {
         let c7;
+        let signal;
         try {
-          let picks;
           let closure_0;
           let uRLSearchParams;
-          let c2;
+          let closure_2;
+          let c3;
+          let picks;
           let startTime;
-          let signal;
-          let tmp;
           c9 = 2;
           if (0 === c8) {
             if (arg0 === 1) {
@@ -234,13 +235,14 @@ function fetchDiscoverDehydrated(arg0) {
               const obj5 = { value, done: true };
               return obj5;
             } else {
-              picks = tmp4;
               closure_0 = undefined;
               uRLSearchParams = undefined;
-              c2 = undefined;
+              closure_2 = undefined;
+              c3 = undefined;
+              picks = undefined;
               startTime = undefined;
               signal = undefined;
-              tmp = undefined;
+              constants = undefined;
               c8 = 1;
               c9 = 1;
               const obj6 = { value, done: false };
@@ -257,11 +259,11 @@ function fetchDiscoverDehydrated(arg0) {
                 return obj8;
               } else {
                 if (closure_133_12()) {
-                  const tmp87 = closure_133_2;
-                  if (tmp87) {
-                    closure_0 = signal;
-                    if (signal == null) {
-                      closure_0 = c15;
+                  const tmp90 = closure_133_2;
+                  if (tmp90) {
+                    closure_0 = closure_133_4;
+                    if (closure_133_4 == null) {
+                      closure_0 = c16;
                     }
                     if (closure_133_13()) {
                       const obj10 = { type: "DISCOVER_REQUEST_STARTED", identity: discoverRequest };
@@ -289,20 +291,20 @@ function fetchDiscoverDehydrated(arg0) {
               }
             } else if (3 === c8) {
               c7 = 0;
-              const tmp75 = closure_6;
+              const tmp78 = signal;
               if (c9 === abortController) {
                 c9 = null;
               }
-              const tmp79 = isReloading && closure_133_11();
-              if (tmp79) {
+              const tmp82 = isReloading && closure_133_11();
+              if (tmp82) {
                 const obj9 = picks2(closure_2[6]);
                 obj9.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
               }
-              throw tmp75;
+              throw tmp78;
             } else if (4 === c8) {
               c7 = 1;
               closure_2.return();
-              throw closure_6;
+              throw signal;
             } else if (5 === c8) {
               if (arg0 === 1) {
                 c9 = 3;
@@ -312,8 +314,8 @@ function fetchDiscoverDehydrated(arg0) {
                 if (c9 === abortController) {
                   c9 = null;
                 }
-                const tmp65 = isReloading && closure_133_11();
-                if (tmp65) {
+                const tmp68 = isReloading && closure_133_11();
+                if (tmp68) {
                   const obj7 = picks2(closure_2[6]);
                   obj7.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
                 }
@@ -321,22 +323,22 @@ function fetchDiscoverDehydrated(arg0) {
                 const obj16 = { value, done: true };
                 return obj16;
               } else {
-                tmp = value;
+                constants = value;
                 if (closure_133_13()) {
-                  if ("broker_error" !== tmp.body.error_code) {
-                    const obj17 = { type: "LOAD_ICYMI_DEHYDRATED", items: tmp.body.items, loadId: tmp.body.load_id, startTime, isReloading, isInitialLoad: tmp56, discoverRequest };
-                    tmp56 = null != closure_0;
+                  if ("broker_error" !== constants.body.error_code) {
+                    const obj17 = { type: "LOAD_ICYMI_DEHYDRATED", items: constants.body.items, loadId: constants.body.load_id, startTime, isReloading, isInitialLoad: tmp59, discoverRequest };
+                    tmp59 = null != closure_0;
                     const dispatch = picks2(closure_2[6]).dispatch;
-                    const tmp50 = picks2(closure_2[6]);
-                    if (!tmp56) {
-                      tmp56 = closure_133_0;
+                    const tmp53 = picks2(closure_2[6]);
+                    if (!tmp59) {
+                      tmp59 = closure_133_0;
                     }
                     c8 = 6;
                     c9 = 1;
                     const obj18 = { value: dispatch(obj17), done: false };
                     return obj18;
                   }
-                  if (0 === tmp.body.items.length) {
+                  if (0 === constants.body.items.length) {
                     const _Error = Error;
                     const self = this;
                     const self2 = this;
@@ -348,8 +350,8 @@ function fetchDiscoverDehydrated(arg0) {
                   if (c9 === abortController) {
                     c9 = null;
                   }
-                  const tmp32 = isReloading && closure_133_11();
-                  if (tmp32) {
+                  const tmp35 = isReloading && closure_133_11();
+                  if (tmp35) {
                     const obj4 = picks2(closure_2[6]);
                     obj4.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
                   }
@@ -365,8 +367,8 @@ function fetchDiscoverDehydrated(arg0) {
               if (c9 === abortController) {
                 c9 = null;
               }
-              const tmp23 = isReloading && closure_133_11();
-              if (tmp23) {
+              const tmp26 = isReloading && closure_133_11();
+              if (tmp26) {
                 const obj2 = picks2(closure_2[6]);
                 obj2.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
               }
@@ -374,23 +376,29 @@ function fetchDiscoverDehydrated(arg0) {
               const obj19 = { value, done: true };
               return obj19;
             } else {
-              const tmp9 = closure_133_13() && c15 === closure_0;
-              if (tmp9) {
-                c15 = null;
+              const tmp7 = closure_133_13() && null == constants.body.error_code;
+              if (tmp7) {
+                const tmp9 = picks;
+                if (tmp9) {
+                  c15 = true;
+                }
+                if (c16 === closure_0) {
+                  c16 = null;
+                }
               }
               c7 = 0;
               if (c9 === abortController) {
                 c9 = null;
               }
-              const tmp14 = isReloading && closure_133_11();
-              if (tmp14) {
+              const tmp17 = isReloading && closure_133_11();
+              if (tmp17) {
                 obj = picks2(closure_2[6]);
                 obj.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
               }
             }
             if (closure_133_12()) {
-              const tmp103 = isReloading;
-              if (tmp103) {
+              const tmp106 = isReloading;
+              if (tmp106) {
                 const obj11 = picks2(closure_2[6]);
                 obj11.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: true });
               }
@@ -416,15 +424,23 @@ function fetchDiscoverDehydrated(arg0) {
                 if (picks == null) {
                   picks2 = picks.getPicks();
                 }
-                startTime = picks2;
-                closure_2 = picks2[Symbol.iterator]();
+                closure_2 = picks2;
+                let closure_3 = closure_2;
+                closure_2 = closure_2[Symbol.iterator]();
                 while (closure_2 !== undefined) {
-                  c2 = tmp116;
-                  let appendResult = uRLSearchParams.append("game_ids", c2);
+                  c3 = tmp121;
+                  let appendResult = uRLSearchParams.append("game_ids", c3);
                   c7 = 1;
                   continue;
                 }
-                if (null != closure_0) {
+                let tmp128 = null != closure_0;
+                if (!tmp128) {
+                  const tmp131 = !c15 && closure_2.length > 0;
+                  tmp128 = tmp131;
+                }
+                picks = tmp128;
+                const tmp135 = picks;
+                if (tmp135) {
                   uRLSearchParams.append("refresh", "true");
                 }
                 const _Date2 = Date;
@@ -452,12 +468,12 @@ function fetchDiscoverDehydrated(arg0) {
               }
             }
           }
-        } catch (tmp144) {
-          closure_6 = tmp144;
+        } catch (tmp156) {
+          signal = tmp156;
           if (0 === c7) {
             c9 = 3;
-            throw tmp144;
-          } else if (1 === tmp146) {
+            throw tmp156;
+          } else if (1 === tmp158) {
             c8 = 3;
           } else {
             c8 = 4;
@@ -517,7 +533,7 @@ function fetchDiscoverDehydrated(arg0) {
           } else if (1 === c5) {
             c4 = 0;
             closure_10 = closure_10 - 1;
-            closure_1_19();
+            closure_1_20();
             throw status;
           } else {
             if (2 === c5) {
@@ -573,7 +589,7 @@ function fetchDiscoverDehydrated(arg0) {
               } else if (arg0 === 2) {
                 c4 = 0;
                 closure_10 = closure_10 - 1;
-                closure_1_19();
+                closure_1_20();
                 c6 = 3;
                 const obj9 = { value, done: true };
                 return obj9;
@@ -591,7 +607,7 @@ function fetchDiscoverDehydrated(arg0) {
             } else if (arg0 === 2) {
               c4 = 0;
               closure_10 = closure_10 - 1;
-              closure_1_19();
+              closure_1_20();
               c6 = 3;
               obj = { value, done: true };
               return obj;
@@ -600,7 +616,7 @@ function fetchDiscoverDehydrated(arg0) {
             }
             c4 = 0;
             closure_10 = closure_10 - 1;
-            closure_1_19();
+            closure_1_20();
             c6 = 3;
             return { value: "HermesInternal", done: "HermesInternal" };
           }
@@ -632,7 +648,7 @@ function fetchDiscoverDehydrated(arg0) {
   }
   closure_4 = tmp3;
   AuthenticationStore = closure_14;
-  UserStore = closure_18;
+  UserStore = closure_19;
   let discoverRequestGuard = require("DiscoverRequestState").discoverRequestGuard;
   const observeGate = discoverRequestGuard.observeGate;
   obj = require("WaterwheelsDiscoverExperiment");
@@ -654,7 +670,7 @@ function fetchDiscoverDehydrated(arg0) {
   closure_10 = closure_10 + 1;
   const tmp6 = captureRequestErrors();
   closure_8 = tmp6;
-  notifyDiscoverRequestListeners();
+  let tmp7 = notifyDiscoverRequestListeners();
   return tmp6;
 }
 let AuthenticationStore = AuthenticationStore_mod;
@@ -667,7 +683,8 @@ let c11 = 0;
 let c12 = 0;
 const set = new Set();
 let closure_14 = {};
-let c15 = null;
+let c15 = false;
+let c16 = null;
 let tmp3 = null;
 if (AuthenticationStore.isAuthenticated()) {
   let id = AuthenticationStore.getId();
@@ -686,7 +703,7 @@ if (null != tmp3) {
   tmp5 = authSessionIdHash;
 }
 function resetDiscoverAccount() {
-  c15 = null;
+  c16 = null;
   closure_14 = {};
   c11 = 0;
   c12 = 0;
@@ -694,14 +711,14 @@ function resetDiscoverAccount() {
   if (c9 != null) {
     obj.abort();
   }
-  closure_18 = {};
+  closure_19 = {};
   const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
   discoverRequestGuard.resetSession();
   id = null;
   authSessionIdHash = null;
 }
 authSessionIdHash = tmp5;
-let closure_18 = {};
+let closure_19 = {};
 let Dispatcher = Dispatcher_mod;
 const subscription = Dispatcher.subscribe("LOGOUT", resetDiscoverAccount);
 Dispatcher = Dispatcher_mod;
@@ -709,7 +726,7 @@ const subscription1 = Dispatcher.subscribe("LOGIN_SUCCESS", resetDiscoverAccount
 Dispatcher = Dispatcher_mod;
 const subscription2 = Dispatcher.subscribe("LOGIN_RESET", (isMultiAccount) => {
   if (!isMultiAccount.isMultiAccount) {
-    c15 = null;
+    c16 = null;
     closure_14 = {};
     c11 = 0;
     c12 = 0;
@@ -717,7 +734,7 @@ const subscription2 = Dispatcher.subscribe("LOGIN_RESET", (isMultiAccount) => {
     if (c9 != null) {
       obj.abort();
     }
-    closure_18 = {};
+    closure_19 = {};
     const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
     discoverRequestGuard.resetSession();
     id = null;
@@ -731,7 +748,7 @@ const subscription4 = Dispatcher.subscribe("CLOSE_SUSPENDED_USER", resetDiscover
 Dispatcher = Dispatcher_mod;
 const subscription5 = Dispatcher.subscribe("CONNECTION_CLOSED", (code) => {
   if (4004 === code.code) {
-    c15 = null;
+    c16 = null;
     closure_14 = {};
     c11 = 0;
     c12 = 0;
@@ -739,7 +756,7 @@ const subscription5 = Dispatcher.subscribe("CONNECTION_CLOSED", (code) => {
     if (c9 != null) {
       obj.abort();
     }
-    closure_18 = {};
+    closure_19 = {};
     const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
     discoverRequestGuard.resetSession();
     id = null;
@@ -751,7 +768,7 @@ const subscription6 = Dispatcher.subscribe("CONNECTION_OPEN", (authSessionIdHash
   authSessionIdHash = authSessionIdHash.authSessionIdHash;
   id = authSessionIdHash.user.id;
   if (id !== id) {
-    c15 = null;
+    c16 = null;
     closure_14 = {};
     c11 = 0;
     c12 = 0;
@@ -759,7 +776,7 @@ const subscription6 = Dispatcher.subscribe("CONNECTION_OPEN", (authSessionIdHash
     if (c9 != null) {
       obj.abort();
     }
-    closure_18 = {};
+    closure_19 = {};
     const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
     discoverRequestGuard.resetSession();
     authSessionIdHash = null;
@@ -767,7 +784,7 @@ const subscription6 = Dispatcher.subscribe("CONNECTION_OPEN", (authSessionIdHash
   if (null != authSessionIdHash) {
     const tmp7 = null != authSessionIdHash && authSessionIdHash !== authSessionIdHash;
     if (tmp7) {
-      c15 = null;
+      c16 = null;
       closure_14 = {};
       c11 = 0;
       c12 = 0;
@@ -775,7 +792,7 @@ const subscription6 = Dispatcher.subscribe("CONNECTION_OPEN", (authSessionIdHash
       if (c9 != null) {
         obj2.abort();
       }
-      closure_18 = {};
+      closure_19 = {};
       const discoverRequestGuard2 = DiscoverRequestState.discoverRequestGuard;
       discoverRequestGuard2.resetSession();
     }
@@ -787,7 +804,7 @@ const subscription7 = Dispatcher.subscribe("AUTH_SESSION_CHANGE", (authSessionId
   if (null != authSessionIdHash) {
     const tmp2 = null != authSessionIdHash && authSessionIdHash !== authSessionIdHash;
     if (tmp2) {
-      c15 = null;
+      c16 = null;
       closure_14 = {};
       c11 = 0;
       c12 = 0;
@@ -795,7 +812,7 @@ const subscription7 = Dispatcher.subscribe("AUTH_SESSION_CHANGE", (authSessionId
       if (c9 != null) {
         obj.abort();
       }
-      closure_18 = {};
+      closure_19 = {};
       const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
       discoverRequestGuard.resetSession();
     }
@@ -903,7 +920,7 @@ timeout = {
       let obj12;
       let obj18;
       function dispatchDiscoverPickerCommit() {
-        return closure_1_22(...arguments);
+        return closure_1_23(...arguments);
       }
       if (c8 === 2) {
         c8 = 3;
@@ -956,7 +973,7 @@ timeout = {
               let isDiscoverPickerCommit = tmp61.isDiscoverPickerCommit;
               const obj5 = authSessionIdHash;
               if (isDiscoverPickerCommit) {
-                isDiscoverPickerCommit = null != closure_1_16;
+                isDiscoverPickerCommit = null != closure_1_17;
               }
               if (isDiscoverPickerCommit) {
                 const obj6 = closure_1_9;
@@ -975,7 +992,7 @@ timeout = {
                 const capture = discoverRequestGuard3.capture;
                 authSessionIdHash = obj5.getAuthSessionIdHash();
                 _null = authSessionIdHash;
-                const tmp28 = closure_1_16;
+                const tmp28 = closure_1_17;
                 if (authSessionIdHash == null) {
                   _null = null;
                 }

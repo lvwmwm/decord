@@ -1,10 +1,10 @@
-// Module ID: 20075
-// Function ID: 20076
+// Module ID: 20078
+// Function ID: 20079
 // Name: ArrowLargeDownIcon
 // Dependencies: [19, 21, 575, 5698, 13173, 2]
 // Exports: ArrowLargeDownIcon
 
-// Module 20075 (ArrowLargeDownIcon)
+// Module 20078 (ArrowLargeDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5698 */;

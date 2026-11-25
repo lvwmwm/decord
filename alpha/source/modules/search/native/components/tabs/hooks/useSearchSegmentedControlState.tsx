@@ -1,10 +1,10 @@
-// Module ID: 18982
-// Function ID: 18983
+// Module ID: 18981
+// Function ID: 18982
 // Name: useSearchSegmentedControlState
 // Dependencies: [19, 1653, 8574, 1706, 2]
 // Exports: useSearchSegmentedControlState
 
-// Module 18982 (useSearchSegmentedControlState)
+// Module 18981 (useSearchSegmentedControlState)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import SegmentedControlState from "SegmentedControlState" /* 8574 */;

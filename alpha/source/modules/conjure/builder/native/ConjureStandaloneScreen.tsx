@@ -1,7 +1,7 @@
 // Module ID: 18385
 // Function ID: 18386
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 17, 4924, 4883, 4944, 6903, 1071, 21, 5012, 575, 7160, 1112, 4244, 7021, 504, 7545, 18386, 1500, 18393, 18387, 6938, 11441, 7636, 8964, 18779, 18801, 18817, 18549, 7324, 2]
+// Dependencies: [32, 19, 17, 4924, 4883, 4944, 6903, 1071, 21, 5012, 575, 7160, 1112, 4244, 7021, 504, 7545, 18386, 1500, 18393, 18387, 6938, 11441, 7636, 8964, 18778, 18800, 18816, 18550, 7324, 2]
 // Exports: default
 
 // Module 18385 (ConjureStandaloneScreen)
@@ -17,7 +17,7 @@ import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
 import PressableNavigatorBackIcon from "PressableNavigatorBackIcon" /* 8964 */;
 import ConjureChatSceneDefault from "ConjureChatScene" /* 18386 */;
 import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18393 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 18817 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 18816 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4924 */;
@@ -266,10 +266,10 @@ export default function ConjureStandaloneScreen(guildId) {
       const children = [tmp4, ];
       if (closure_5) {
         const obj2 = { focusRequest };
-        tmp9Result = tmp9(tmp10(18779), obj2);
+        tmp9Result = tmp9(tmp10(18778), obj2);
       } else {
         const obj3 = { guildId };
-        tmp9Result = tmp9(tmp10(18801), obj3);
+        tmp9Result = tmp9(tmp10(18800), obj3);
       }
       children[1] = tmp9Result;
       return tmp(tmp2, { children });

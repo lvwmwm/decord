@@ -1,9 +1,9 @@
-// Module ID: 18562
-// Function ID: 18563
+// Module ID: 18561
+// Function ID: 18562
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 4861, 21, 5073, 6079, 7548, 1626, 12946, 10047, 18563, 18569, 2]
+// Dependencies: [19, 4861, 21, 5073, 6079, 7548, 1626, 12946, 10047, 18562, 18568, 2]
 
-// Module 18562 (PortalKeyboardRendererComponent)
+// Module 18561 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
 import useBackPressHandler from "useBackPressHandler" /* 6079 */;
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7548 */;
@@ -68,9 +68,9 @@ const memoResult = react.memo(function PortalKeyboardRendererComponent(item) {
         chatInputRef(12946);
         return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(10047).AppLauncherEntrypoint.TEXT} />;
       } else if (tmp(1626).KeyboardTypes.MEDIA === type) {
-        return jsx(chatInputRef(18563), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+        return jsx(chatInputRef(18562), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
       } else if (tmp(1626).KeyboardTypes.EXPRESSION === type) {
-        return jsx(chatInputRef(18569), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+        return jsx(chatInputRef(18568), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
       } else {
         return null;
       }

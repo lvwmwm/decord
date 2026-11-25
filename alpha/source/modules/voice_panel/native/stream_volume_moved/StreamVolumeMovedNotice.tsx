@@ -1,10 +1,10 @@
-// Module ID: 19540
-// Function ID: 19541
+// Module ID: 19539
+// Function ID: 19540
 // Name: StreamVolumeMovedNotice
 // Dependencies: [32, 19, 6782, 502, 14897, 11732, 4858, 21, 11733, 504, 9519, 4845, 6785, 6109, 1112, 6113, 2]
 // Exports: default
 
-// Module 19540 (StreamVolumeMovedNotice)
+// Module 19539 (StreamVolumeMovedNotice)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1112 */;

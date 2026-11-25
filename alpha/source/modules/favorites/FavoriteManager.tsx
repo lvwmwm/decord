@@ -1,9 +1,9 @@
-// Module ID: 19822
-// Function ID: 19823
+// Module ID: 19821
+// Function ID: 19822
 // Name: FavoriteManager
 // Dependencies: [502, 17867, 1071, 10696, 4886, 7444, 2]
 
-// Module 19822 (FavoriteManager)
+// Module 19821 (FavoriteManager)
 import Constants from "Constants" /* 1071 */;
 import FavoritesUtils from "FavoritesUtils" /* 4886 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 10696 */;

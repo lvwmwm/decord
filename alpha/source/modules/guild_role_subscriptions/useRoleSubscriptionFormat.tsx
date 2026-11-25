@@ -1,10 +1,10 @@
-// Module ID: 20144
-// Function ID: 20145
+// Module ID: 20147
+// Function ID: 20148
 // Name: useRoleSubscriptionFormat
 // Dependencies: [19, 4919, 4918, 4883, 16765, 1071, 504, 2]
 // Exports: default
 
-// Module 20144 (useRoleSubscriptionFormat)
+// Module 20147 (useRoleSubscriptionFormat)
 import Constants from "Constants" /* 1071 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 4919 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16765 */;

@@ -1,9 +1,9 @@
-// Module ID: 19045
-// Function ID: 19046
+// Module ID: 19044
+// Function ID: 19045
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 9387, 21, 5012, 575, 1628, 17684, 1494, 5191, 4969, 19044, 19046, 1358, 2]
+// Dependencies: [19, 17, 9387, 21, 5012, 575, 1628, 17684, 1494, 5191, 4969, 19043, 19045, 1358, 2]
 
-// Module 19045 (YouScreenContainer)
+// Module 19044 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import DeviceUtils from "DeviceUtils" /* 4969 */;
 import MainTabsConstants from "MainTabsConstants" /* 9387 */;
 import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17684 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 19044 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 19043 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
@@ -67,12 +67,12 @@ const memoResult = react.memo(function YouScreenContainer(route) {
       tmp6Result2 = tmp6(tmp8, obj6);
     } else {
       const obj9 = { initialTab };
-      tmp6Result2 = tmp6(tmp2(19046), obj9);
+      tmp6Result2 = tmp6(tmp2(19045), obj9);
     }
     tmp6Result = tmp6(tmp8, obj5);
   } else {
     const obj10 = { initialTab };
-    tmp6Result = tmp6(tmp2(19046), obj10);
+    tmp6Result = tmp6(tmp2(19045), obj10);
   }
   return tmp6Result;
 });

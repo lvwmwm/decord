@@ -1,10 +1,10 @@
-// Module ID: 19514
-// Function ID: 19515
+// Module ID: 19513
+// Function ID: 19514
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 21, 11733, 19502, 18142, 19503, 1112, 14053, 5143, 10594, 14901, 2]
+// Dependencies: [19, 17, 21, 11733, 19501, 18142, 19502, 1112, 14053, 5143, 10594, 14901, 2]
 // Exports: default
 
-// Module 19514 (VoicePanelVideoButton)
+// Module 19513 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import CameraRive2 from "CameraRive" /* 5143 */;
@@ -42,7 +42,7 @@ export default function VideoButton(arg0) {
   let color;
   ({ props, wrapperSpecs } = arg0);
   const channelId = react.useContext(color(11733)).channelId;
-  const obj2 = isVideoEnabled(19502);
+  const obj2 = isVideoEnabled(19501);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
   const tmp5 = color(18142)(channelId, "VoicePanelVideoButton");
   isVideoEnabled = tmp5.isVideoEnabled;
@@ -63,7 +63,7 @@ export default function VideoButton(arg0) {
   const items = [color, isVideoEnabled];
   let memo = obj.useMemo(() => <VideoButtonRive isVideoEnabled={isVideoEnabled} color={color} />, items);
   let tmp9 = !videoBlocked;
-  tmp(19503);
+  tmp(19502);
   if (!videoBlocked) {
     tmp9 = !videoSupported;
   }

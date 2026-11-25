@@ -45,8 +45,8 @@ let obj6;
 let size;
 let size1;
 let unpackModuleId;
-const f101271 = () => LocaleStore.locale;
-const f101273 = () => LocaleStore.locale;
+const f101292 = () => LocaleStore.locale;
+const f101294 = () => LocaleStore.locale;
 class ConnectedUserAccount {
   constructor(account) {
     let _undefined;
@@ -441,7 +441,7 @@ export default function LegacyUserProfileConnections(user) {
   tmpResult.useThemeContext().theme;
   const items4 = [LocaleStore];
   const tmpResult5 = user(504);
-  let closure_2 = tmpResult5.useStateFromStores(items4, f101271);
+  let closure_2 = tmpResult5.useStateFromStores(items4, f101292);
   const mapped = memo.map((applicationRoleConnection, index) => {
     let obj2;
     const Fragment = React.Fragment;
@@ -455,7 +455,7 @@ export default function LegacyUserProfileConnections(user) {
   const theme = tmpResult6.useThemeContext().theme;
   const items5 = [LocaleStore];
   const tmpResult7 = user(504);
-  React = tmpResult7.useStateFromStores(items5, f101273);
+  React = tmpResult7.useStateFromStores(items5, f101294);
   const tmpResult8 = user(8234);
   let closure_4 = tmpResult8.usePlatformAllowed({ forUserProfile: true });
   const found = memo2.filter((type) => {
@@ -501,7 +501,7 @@ export function useAppplicationRoleConnectionItems(arr, arg1) {
   const theme = obj.useThemeContext().theme;
   const items = [LocaleStore];
   const obj2 = require("get initialized");
-  dependencyMap = obj2.useStateFromStores(items, f101271);
+  dependencyMap = obj2.useStateFromStores(items, f101292);
   return arr.map((applicationRoleConnection, index) => {
     let obj2;
     const Fragment = React.Fragment;
@@ -517,7 +517,7 @@ export function useConnectedAccountItems(arr, userId, style) {
   theme = obj.useThemeContext().theme;
   let obj2 = require("get initialized");
   const items = [LocaleStore];
-  const locale = obj2.useStateFromStores(items, f101273);
+  const locale = obj2.useStateFromStores(items, f101294);
   const obj3 = require("ConnectionsHooks");
   let closure_4 = obj3.usePlatformAllowed({ forUserProfile: true });
   const found = arr.filter((type) => {

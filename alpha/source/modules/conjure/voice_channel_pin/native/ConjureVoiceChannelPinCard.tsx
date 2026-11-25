@@ -1,10 +1,10 @@
-// Module ID: 18642
-// Function ID: 18643
+// Module ID: 18641
+// Function ID: 18642
 // Name: ConjureVoiceChannelPinCard
-// Dependencies: [19, 17, 4883, 4954, 1386, 21, 5012, 575, 18643, 5603, 1112, 4244, 18456, 7065, 6109, 6113, 5628, 6124, 5226, 11715, 5610, 2]
+// Dependencies: [19, 17, 4883, 4954, 1386, 21, 5012, 575, 18642, 5603, 1112, 4244, 18456, 7065, 6109, 6113, 5628, 6124, 5226, 11715, 5610, 2]
 // Exports: default
 
-// Module 18642 (ConjureVoiceChannelPinCard)
+// Module 18641 (ConjureVoiceChannelPinCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5226 */;
 import Text_Text from "Text/Text" /* 5603 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11715 */;
 import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18456 */;
-import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 18643 */;
+import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 18642 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4883 */;
 import RelationshipStore from "RelationshipStore" /* 4954 */;
@@ -52,7 +52,7 @@ function ConjureVoiceChannelPinForm(projectId) {
   projectId = projectId.projectId;
   let tmp2 = channels;
   const tmp = closure_10();
-  let obj = channels(18643);
+  let obj = channels(18642);
   const conjureVoiceChannelPinForm = obj.useConjureVoiceChannelPinForm(projectId);
   ({ guildId, channels } = conjureVoiceChannelPinForm);
   const selected = conjureVoiceChannelPinForm.selected;

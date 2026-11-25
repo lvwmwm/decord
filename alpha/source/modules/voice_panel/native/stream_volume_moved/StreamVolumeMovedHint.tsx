@@ -1,10 +1,10 @@
-// Module ID: 19428
-// Function ID: 19429
+// Module ID: 19427
+// Function ID: 19428
 // Name: StreamVolumeMovedHint
 // Dependencies: [19, 17, 14897, 21, 5012, 575, 1653, 1112, 5021, 5603, 2]
 // Exports: default
 
-// Module 19428 (StreamVolumeMovedHint)
+// Module 19427 (StreamVolumeMovedHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

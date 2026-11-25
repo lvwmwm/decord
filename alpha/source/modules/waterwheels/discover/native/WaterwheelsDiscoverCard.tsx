@@ -52,6 +52,9 @@ let obj21;
 let obj22;
 let obj23;
 let obj24;
+let obj25;
+let obj26;
+let obj27;
 let obj3;
 let obj4;
 let obj5;
@@ -305,6 +308,8 @@ function ServerRowCard(server) {
   let items13;
   let items14;
   let items15;
+  let items16;
+  let items17;
   let items2;
   let items3;
   let items7;
@@ -361,7 +366,7 @@ function ServerRowCard(server) {
     tmp14 = unpackModuleId(tmp17, obj7);
   }
   items2 = [tmp14, ];
-  const obj9 = { style: tmp.serverCard, children: items15 };
+  const obj9 = { style: tmp.serverCard, children: items17 };
   const obj10 = {
     accessibilityRole: "button",
     accessibilityLabel: joined,
@@ -407,9 +412,9 @@ function ServerRowCard(server) {
   items7 = [tmp23Result2, ];
   const obj19 = { style: tmp.nameRow, children: items8 };
   items8 = [, ];
-  const obj17 = { style: tmp.serverCopy, children: items14 };
+  const obj17 = { style: tmp.serverCopy, children: items16 };
   const obj18 = { style: tmp.serverTitle, children: items9 };
-  const obj20 = { variant: "body-md/medium", color: "text-strong", lineClamp: 1, style: tmp.name, children: server.name };
+  const obj20 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, style: tmp.name, children: server.name };
   items8[0] = tmp23(Text_Text.Text, obj20);
   let tmp23Result = null;
   if (null != result) {
@@ -418,30 +423,33 @@ function ServerRowCard(server) {
   }
   items8[1] = tmp23Result;
   items9 = [authStore2(metroImportDefault, obj19), ];
-  const obj23 = { style: tmp.metaItem, children: items10 };
+  const obj22 = { style: items10, children: items13 };
   items10 = [, ];
-  const obj22 = { style: tmp.meta, children: items11 };
-  const obj24 = { style: tmp.dot };
-  items10[0] = tmp23(metroImportDefault, obj24);
-  const obj25 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.metaText, children: intl5.format(intl7.t["LC+S+m"], obj26) };
+  ({ meta: arr11[0], serverMeta: arr11[1] } = tmp);
+  const obj24 = { style: items11 };
+  items11 = [, ];
+  const obj23 = { style: tmp.metaItem, children: items12 };
+  ({ dot: arr12[0], serverOnlineDot: arr12[1] } = tmp);
+  items12 = [tmp23(metroImportDefault, obj24), ];
+  const obj25 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.metaText, children: intl5.format(intl7.t["LC+S+m"], obj26) };
   const Text = tmp9(5603).Text;
   intl5 = tmp9(1112).intl;
   obj26 = { membersOnline: server.online };
-  items10[1] = tmp23(Text, obj25);
-  items11 = [authStore2(metroImportDefault, obj23), ];
-  const obj28 = { style: items12 };
-  items12 = [, ];
-  const obj27 = { style: tmp.metaItem, children: items13 };
-  ({ dot: arr13[0], mutedDot: arr13[1] } = tmp);
-  items13 = [tmp23(metroImportDefault, obj28), ];
-  const obj29 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.metaText, children: intl6.format(intl7.t.zRl6XR, obj30) };
+  items12[1] = tmp23(Text, obj25);
+  items13 = [authStore2(metroImportDefault, obj23), ];
+  const obj28 = { style: items14 };
+  items14 = [, ];
+  const obj27 = { style: tmp.metaItem, children: items15 };
+  ({ dot: arr15[0], serverOfflineDot: arr15[1] } = tmp);
+  items15 = [tmp23(metroImportDefault, obj28), ];
+  const obj29 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.metaText, children: intl6.format(intl7.t.zRl6XR, obj30) };
   const Text2 = tmp9(5603).Text;
   intl6 = tmp9(1112).intl;
   obj30 = { count: server.members };
-  items13[1] = tmp23(Text2, obj29);
-  items11[1] = authStore2(metroImportDefault, obj27);
+  items15[1] = tmp23(Text2, obj29);
+  items13[1] = authStore2(metroImportDefault, obj27);
   items9[1] = authStore2(metroImportDefault, obj22);
-  items14 = [authStore2(metroImportDefault, obj18), ];
+  items16 = [authStore2(metroImportDefault, obj18), ];
   let tmp23Result3 = null;
   if (null != server.description) {
     tmp23Result3 = null;
@@ -450,12 +458,12 @@ function ServerRowCard(server) {
       tmp23Result3 = tmp23(tmp9(5603).Text, obj31);
     }
   }
-  items14[1] = tmp23Result3;
+  items16[1] = tmp23Result3;
   items7[1] = authStore2(metroImportDefault, obj17);
   items3[1] = authStore2(metroImportDefault, obj13);
-  items15 = [authStore2(tmp18, obj10), ];
+  items17 = [authStore2(tmp18, obj10), ];
   const obj32 = { style: tmp.serverContent, children: tmp23(ServerActionButton, { server, variant: "secondary", grow: true, joiningGuildIds, onAction }) };
-  items15[1] = tmp23(metroImportDefault, obj32);
+  items17[1] = tmp23(metroImportDefault, obj32);
   items2[1] = authStore2(metroImportDefault, obj9);
   return authStore2(metroImportDefault, obj6);
 }
@@ -735,7 +743,7 @@ const PX_10 = nativeDefault.space.PX_10;
 const PX_16 = nativeDefault.space.PX_16;
 const colors = ["rgba(0,0,0,0.65)", "rgba(0,0,0,0.85)"];
 let createStyles = createStyles_mod;
-let obj = { row: obj2, carouselSection: obj3, carouselContent: { gap: PX_10 }, poster: size, posterRank: rect, serverRow: obj4, serverProfile: obj5, serverCard: obj6, serverBanner: { height: 111, width: "100%" }, serverContent: obj7, serverContentWithoutBanner: obj8, serverIcon: size1, serverIconOverlap: { marginTop: -30 }, serverCopy: obj9, serverTitle: obj10, badge: size2, identity: { flex: 1, flexDirection: "row", alignItems: "center", gap: PX_12, minWidth: 0 }, identityCompact: obj11, identityCopy: obj12, nameRow: obj13, name: { flexShrink: 1 }, icon: size3, iconCompact: size4, meta: obj14, metaItem: obj15, metaText: { flexShrink: 1 }, dot: size5, mutedDot: obj16, hero: obj17, heroBody: obj18, heroArt: obj19, heroImage: StyleSheet.absoluteFillObject, heroTop: obj20, heroTitle: obj21, heroRank: obj22, cover: size6, heroCta: obj23, heroServer: obj24 };
+let obj = { row: obj2, carouselSection: obj3, carouselContent: { gap: PX_10 }, poster: size, posterRank: rect, serverRow: obj4, serverProfile: obj5, serverCard: obj6, serverBanner: { height: 111, width: "100%" }, serverContent: obj7, serverContentWithoutBanner: obj8, serverIcon: size1, serverIconOverlap: { marginTop: -30 }, serverCopy: obj9, serverTitle: obj10, serverMeta: obj11, serverOnlineDot: obj12, serverOfflineDot: obj13, badge: size2, identity: { flex: 1, flexDirection: "row", alignItems: "center", gap: PX_12, minWidth: 0 }, identityCompact: obj14, identityCopy: obj15, nameRow: obj16, name: { flexShrink: 1 }, icon: size3, iconCompact: size4, meta: obj17, metaItem: obj18, metaText: { flexShrink: 1 }, dot: size5, mutedDot: obj19, hero: obj20, heroBody: obj21, heroArt: obj22, heroImage: StyleSheet.absoluteFillObject, heroTop: obj23, heroTitle: obj24, heroRank: obj25, cover: size6, heroCta: obj26, heroServer: obj27 };
 obj2 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
@@ -743,31 +751,34 @@ size = { width: 114, height: 165, borderRadius: nativeDefault.radii.lg, overflow
 rect = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8 };
 obj4 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj5 = { paddingVertical: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12 };
-obj6 = { borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" };
+obj6 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
 obj7 = { paddingHorizontal: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
 obj8 = { paddingTop: nativeDefault.space.PX_12 };
-size1 = { width: nativeDefault.space.PX_48, height: nativeDefault.space.PX_48, borderRadius: nativeDefault.radii.md, borderWidth: 4, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+size1 = { width: nativeDefault.space.PX_48, height: nativeDefault.space.PX_48, borderRadius: nativeDefault.radii.md, borderWidth: 4, borderColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj9 = { gap: nativeDefault.space.PX_12 };
 obj10 = { gap: nativeDefault.space.PX_4 };
+obj11 = { gap: nativeDefault.space.PX_12 };
+obj12 = { backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
+obj13 = { backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
 size2 = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16, marginRight: 0 };
-obj11 = { gap: nativeDefault.space.PX_8 };
-obj12 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
-obj13 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, minWidth: 0 };
+obj14 = { gap: nativeDefault.space.PX_8 };
+obj15 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
+obj16 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, minWidth: 0 };
 size3 = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 size4 = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.sm };
-obj14 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj15 = { flexDirection: "row", maxWidth: "100%", flexShrink: 1, alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj17 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj18 = { flexDirection: "row", maxWidth: "100%", flexShrink: 1, alignItems: "center", gap: nativeDefault.space.PX_4 };
 size5 = { flexShrink: 0, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.ICON_STATUS_ONLINE };
-obj16 = { backgroundColor: nativeDefault.colors.ICON_STATUS_OFFLINE };
-obj17 = { borderRadius: nativeDefault.radii.xl, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj18 = { padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
-obj19 = { minHeight: 184, borderRadius: nativeDefault.radii.lg, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "flex-end", padding: nativeDefault.space.PX_12 };
-obj20 = { flexDirection: "row", alignItems: "flex-end", gap: nativeDefault.space.PX_12 };
-obj21 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
-obj22 = { flexDirection: "row", minHeight: 20, marginBottom: nativeDefault.space.PX_4 };
+obj19 = { backgroundColor: nativeDefault.colors.ICON_STATUS_OFFLINE };
+obj20 = { borderRadius: nativeDefault.radii.xl, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj21 = { padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
+obj22 = { minHeight: 184, borderRadius: nativeDefault.radii.lg, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "flex-end", padding: nativeDefault.space.PX_12 };
+obj23 = { flexDirection: "row", alignItems: "flex-end", gap: nativeDefault.space.PX_12 };
+obj24 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
+obj25 = { flexDirection: "row", minHeight: 20, marginBottom: nativeDefault.space.PX_4 };
 size6 = { width: 72, height: 96, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj23 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingTop: nativeDefault.space.PX_12 };
-obj24 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+obj26 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingTop: nativeDefault.space.PX_12 };
+obj27 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_17 = createStyles(obj);
 createStyles = createStyles_mod;
 let closure_18 = createStyles.createStyles((arg0, arg1) => {

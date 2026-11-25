@@ -1,14 +1,14 @@
-// Module ID: 18764
-// Function ID: 18765
+// Module ID: 18763
+// Function ID: 18764
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 7628, 21, 5012, 575, 18765, 18525, 504, 18527, 6114, 9736, 5603, 1112, 4244, 2]
+// Dependencies: [19, 17, 7628, 21, 5012, 575, 18764, 18525, 504, 18527, 6114, 9736, 5603, 1112, 4244, 2]
 // Exports: default
 
-// Module 18764 (ConjureThinkingOverlay)
+// Module 18763 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 575 */;
 import _modDef4244 from "module_4244" /* 4244 */;
 import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 18525 */;
-import conjureThinkingTail from "conjureThinkingTail" /* 18765 */;
+import conjureThinkingTail from "conjureThinkingTail" /* 18764 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConjureChatStore from "ConjureChatStore" /* 7628 */;

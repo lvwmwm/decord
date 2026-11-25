@@ -1,10 +1,10 @@
-// Module ID: 18882
-// Function ID: 18883
+// Module ID: 18881
+// Function ID: 18882
 // Name: search/useSuggestedSearches
 // Dependencies: [13235, 13236, 13280, 504, 2]
 // Exports: useSuggestedSearches
 
-// Module 18882 (search/useSuggestedSearches)
+// Module 18881 (search/useSuggestedSearches)
 import SuggestedSearchStore2 from "SuggestedSearchStore" /* 13235 */;
 import SmartSearchConstants from "SmartSearchConstants" /* 13236 */;
 import size from "module_2" /* 2 */;

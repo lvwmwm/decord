@@ -9,7 +9,7 @@ import _mod1558 from "module_1558" /* 1558 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f88483 = (arg0, arg1) => {
+const f88504 = (arg0, arg1) => {
   const NumberResult = Number(arg0);
   return NumberResult - Number(arg1);
 };
@@ -23,7 +23,7 @@ function keysSorter(arr) {
     if (typeof arr === "object") {
       const _Object = Object;
       const obj = keysSorter(Object.keys(arr));
-      const sorted1 = obj.sort(f88483);
+      const sorted1 = obj.sort(f88504);
       sorted = sorted1.map((item) => obj[item]);
     }
   }
@@ -131,11 +131,11 @@ export const parse = (str, arg1) => {
                     if (typeof keys === "object") {
                       const _Object2 = Object;
                       const obj4 = keysSorter(Object.keys(keys));
-                      const sorted2 = obj4.sort(f88483);
+                      const sorted2 = obj4.sort(f88504);
                       sorted1 = sorted2.map((item) => obj[item]);
                     }
                   }
-                  const sorted3 = sorted1.sort(f88483);
+                  const sorted3 = sorted1.sort(f88504);
                   sorted = sorted3.map((item) => obj[item]);
                 }
               }

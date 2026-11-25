@@ -1,10 +1,10 @@
-// Module ID: 19973
-// Function ID: 19974
+// Module ID: 19976
+// Function ID: 19977
 // Name: GuildSettingsModalSecurity
 // Dependencies: [19, 17, 4879, 4883, 1386, 8532, 1071, 21, 5012, 575, 504, 8531, 5603, 1112, 5610, 5699, 16219, 5586, 2]
 // Exports: default
 
-// Module 19973 (GuildSettingsModalSecurity)
+// Module 19976 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 575 */;
 import GuildRecord from "GuildRecord" /* 4879 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;

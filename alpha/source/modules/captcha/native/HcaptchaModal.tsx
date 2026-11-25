@@ -1,9 +1,9 @@
-// Module ID: 19572
-// Function ID: 19573
+// Module ID: 19571
+// Function ID: 19572
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2188, 1386, 1071, 21, 5012, 504, 1500, 2117, 1628, 1112, 5778, 6079, 6084, 575, 5603, 1378, 19570, 6121, 10716, 2]
+// Dependencies: [109, 19, 17, 2188, 1386, 1071, 21, 5012, 504, 1500, 2117, 1628, 1112, 5778, 6079, 6084, 575, 5603, 1378, 19569, 6121, 10716, 2]
 
-// Module 19572 (HcaptchaModal)
+// Module 19571 (HcaptchaModal)
 import Constants from "Constants" /* 1071 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5778 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -90,7 +90,7 @@ class HcaptchaModal {
     items3 = [tmp13Result, , ];
     const obj7 = { style: absoluteFillObject.absoluteFillObject, children: closure_11(tmp9Result, obj8) };
     obj8 = { languageCode: LocaleStore.locale, onMessage };
-    tmp9Result = onPress(19570);
+    tmp9Result = onPress(19569);
     const merged = Object.assign(tmp);
     items3[1] = closure_11(closure_7, obj7);
     const obj9 = { style: items4, pointerEvents: "box-none", children: closure_11(PressableOpacity, obj11) };

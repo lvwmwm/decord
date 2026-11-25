@@ -1,9 +1,9 @@
-// Module ID: 18888
-// Function ID: 18889
+// Module ID: 18887
+// Function ID: 18888
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6922, 13267, 18889, 13248, 8977, 13250, 1071, 21, 6121, 13265, 1112, 5603, 11304, 18890, 7813, 13261, 13241, 504, 13237, 18881, 1501, 18893, 13234, 16282, 7836, 6797, 18894, 18895, 18898, 2]
+// Dependencies: [32, 5, 19, 6922, 13267, 18888, 13248, 8977, 13250, 1071, 21, 6121, 13265, 1112, 5603, 11304, 18889, 7813, 13261, 13241, 504, 13237, 18880, 1501, 18892, 13234, 16282, 7836, 6797, 18893, 18894, 18897, 2]
 
-// Module 18888 (RecentScreen)
+// Module 18887 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
@@ -22,7 +22,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6922 */;
 import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13267 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 18889 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 18888 */;
 import SearchQueryStore from "SearchQueryStore" /* 13248 */;
 import SearchConstants from "SearchConstants" /* 8977 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let _undefined;
   let c1;
   let tmp4;
-  const f133536 = () => memo.getSearchHistory(searchContextId);
+  const f133577 = () => memo.getSearchHistory(searchContextId);
   searchContext = searchContext.searchContext;
   const onJumpToMedia = searchContext.onJumpToMedia;
   const suggestedData = searchContext.suggestedData;
@@ -89,8 +89,8 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let obj2 = searchContext(suggestedData[19]);
   const searchContextId = obj2.getSearchContextId(searchContext);
   c1 = undefined;
-  [tmp4, c1] = messages(isInitialSearchQuery.useState(f133536), 2);
-  const tmp3 = messages(isInitialSearchQuery.useState(f133536), 2);
+  [tmp4, c1] = messages(isInitialSearchQuery.useState(f133577), 2);
+  const tmp3 = messages(isInitialSearchQuery.useState(f133577), 2);
   const obj3 = searchContext(suggestedData[23]);
   let items1 = [searchContextId];
   const focusEffect = obj3.useFocusEffect(isInitialSearchQuery.useCallback(() => {

@@ -1,10 +1,10 @@
-// Module ID: 19365
-// Function ID: 19366
+// Module ID: 19364
+// Function ID: 19365
 // Name: PlayableActivityFrameHeader
-// Dependencies: [19, 17, 5638, 6840, 21, 5012, 575, 19366, 19360, 19345, 7660, 5272, 16516, 5603, 1112, 4726, 7910, 7216, 6021, 2]
+// Dependencies: [19, 17, 5638, 6840, 21, 5012, 575, 19365, 19359, 19344, 7660, 5272, 16516, 5603, 1112, 4726, 7910, 7216, 6021, 2]
 // Exports: default
 
-// Module 19365 (PlayableActivityFrameHeader)
+// Module 19364 (PlayableActivityFrameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;

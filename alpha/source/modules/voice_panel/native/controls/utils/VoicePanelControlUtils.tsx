@@ -1,10 +1,10 @@
-// Module ID: 19490
-// Function ID: 19491
+// Module ID: 19489
+// Function ID: 19490
 // Name: VoicePanelControlUtils
 // Dependencies: [11488, 2]
 // Exports: getDrawerSpec
 
-// Module 19490 (VoicePanelControlUtils)
+// Module 19489 (VoicePanelControlUtils)
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11488 */;
 import size from "module_2" /* 2 */;
 

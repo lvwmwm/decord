@@ -1,9 +1,9 @@
-// Module ID: 19411
-// Function ID: 19412
+// Module ID: 19410
+// Function ID: 19411
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 19412, 5821, 5832, 19413, 4861, 5822, 1071, 21, 19414, 19396, 8594, 10344, 10227, 563, 14268, 10463, 19418, 1378, 8601, 5833, 1112, 8598, 8600, 19419, 14267, 5044, 4845, 7024, 19356, 15363, 2]
+// Dependencies: [109, 19, 17, 19411, 5821, 5832, 19412, 4861, 5822, 1071, 21, 19413, 19395, 8594, 10344, 10227, 563, 14268, 10463, 19417, 1378, 8601, 5833, 1112, 8598, 8600, 19418, 14267, 5044, 4845, 7024, 19355, 15363, 2]
 
-// Module 19411 (VoicePanelHeaderSpeaker)
+// Module 19410 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -12,14 +12,14 @@ import dismissible_content from "dismissible_content" /* 4845 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
 import NativeViewDefault from "NativeView" /* 7024 */;
 import getConsoleIconDefault from "getConsoleIcon" /* 14268 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19356 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19412 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19414 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19355 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19411 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19413 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5821 */;
 import AudioRouteStore from "AudioRouteStore" /* 5832 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19413 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19412 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
 import SessionsStore from "SessionsStore" /* 5822 */;
 import Fragment from "Fragment" /* 21 */;
@@ -293,8 +293,8 @@ const memoResult = react.memo(function VoicePanelHeaderSpeaker(isConnectedToVoic
       let tmp9;
       let tmp = arg0;
       if (arg0 == null) {
-        tmp = { onPress, ref: "r" };
-        const obj = { onPress, ref: "r" };
+        tmp = { onPress, ref: "Array" };
+        const obj = { onPress, ref: "Array" };
       }
       const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
       tmp9 = !stateFromStores2;

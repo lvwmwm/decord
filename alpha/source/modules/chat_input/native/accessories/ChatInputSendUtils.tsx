@@ -447,7 +447,7 @@ export function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "analyticsLocations", source: "Array", params };
+                          obj = { text: require, parsedMessage, tts: "analyticsLocations", source: null, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,7 +470,7 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "analyticsLocations", source: "Array", params };
+                          obj = { text: require, parsedMessage, tts: "analyticsLocations", source: false, params };
                           chatInputSendMessage(obj);
                         }
             };
@@ -478,7 +478,7 @@ export function chatInputHandleSendText(text) {
             obj5.openLazy(tmp20(2119)(12386, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "analyticsLocations", source: 2062417.003906342, params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "analyticsLocations", source: "Array", params };
         chatInputSendMessage(obj6);
       }
     }

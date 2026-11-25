@@ -1,10 +1,10 @@
-// Module ID: 19013
-// Function ID: 19014
+// Module ID: 19012
+// Function ID: 19013
 // Name: FriendsScreen
-// Dependencies: [19, 17, 8279, 4954, 21, 5012, 575, 1500, 6348, 6349, 1628, 504, 19014, 2018, 6102, 19015, 19018, 18232, 5710, 1112, 6113, 11489, 16651, 5610, 11303, 12522, 2]
+// Dependencies: [19, 17, 8279, 4954, 21, 5012, 575, 1500, 6348, 6349, 1628, 504, 19013, 2018, 6102, 19014, 19017, 18232, 5710, 1112, 6113, 11489, 16651, 5610, 11303, 12522, 2]
 // Exports: default
 
-// Module 19013 (FriendsScreen)
+// Module 19012 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;

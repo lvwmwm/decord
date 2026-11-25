@@ -1,10 +1,10 @@
-// Module ID: 19073
-// Function ID: 19074
+// Module ID: 19072
+// Function ID: 19073
 // Name: useShouldShowExpiringTrialOfferCard
 // Dependencies: [15162, 1071, 1388, 1088, 563, 9094, 9091, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 19073 (useShouldShowExpiringTrialOfferCard)
+// Module 19072 (useShouldShowExpiringTrialOfferCard)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;

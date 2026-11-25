@@ -1,10 +1,10 @@
-// Module ID: 19377
-// Function ID: 19378
+// Module ID: 19376
+// Function ID: 19377
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 6902, 19378, 5744, 4861, 4867, 21, 5221, 11733, 18189, 8421, 563, 8429, 8424, 8561, 5226, 8431, 19379, 8563, 8048, 8566, 1112, 7216, 18140, 10504, 10229, 10224, 8044, 10240, 10300, 6084, 575, 7910, 7805, 7460, 11706, 10220, 7132, 7801, 19380, 9520, 8577, 5044, 7247, 4845, 18168, 13463, 5239, 2]
+// Dependencies: [32, 19, 17, 6902, 19377, 5744, 4861, 4867, 21, 5221, 11733, 18189, 8421, 563, 8429, 8424, 8561, 5226, 8431, 19378, 8563, 8048, 8566, 1112, 7216, 18140, 10504, 10229, 10224, 8044, 10240, 10300, 6084, 575, 7910, 7805, 7460, 11706, 10220, 7132, 7801, 19379, 9520, 8577, 5044, 7247, 4845, 18168, 13463, 5239, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 19377 (VoicePanelFloatingCTAUtils)
+// Module 19376 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1112 */;
 import dismissible_content from "dismissible_content" /* 4845 */;
@@ -18,7 +18,7 @@ import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCrea
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
-import EventBannerStore from "EventBannerStore" /* 19378 */;
+import EventBannerStore from "EventBannerStore" /* 19377 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

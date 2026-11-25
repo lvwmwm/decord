@@ -9,7 +9,7 @@ import HeroBlockRecord2 from "HeroBlockRecord" /* 6311 */;
 import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 6281 */;
 import size from "module_2" /* 2 */;
 
-const f89588 = (type) => {
+const f89609 = (type) => {
   let fromServerResult;
   const tmp = require;
   const tmp2 = dependencyMap;
@@ -21,17 +21,17 @@ const f89588 = (type) => {
   }
   return fromServerResult;
 };
-const f89589 = (item) => undefined !== item;
-const f89590 = (item) => CollectiblesCategoryRecord.fromServer(item);
+const f89610 = (item) => undefined !== item;
+const f89611 = (item) => CollectiblesCategoryRecord.fromServer(item);
 const HeroBlockRecord = HeroBlockRecord2.HeroBlockRecord;
 class CollectiblesShopHomeRecord {
   constructor(shop_blocks) {
     const obj = Object.create(new.target.prototype);
     shop_blocks = shop_blocks.shop_blocks;
-    const mapped = shop_blocks.map(f89588);
-    obj.shopBlocks = mapped.filter(f89589);
+    const mapped = shop_blocks.map(f89609);
+    obj.shopBlocks = mapped.filter(f89610);
     const categories = shop_blocks.categories;
-    obj.categories = categories.map(f89590);
+    obj.categories = categories.map(f89611);
     return obj;
   }
   static fromServer(shop_blocks) {
@@ -40,10 +40,10 @@ class CollectiblesShopHomeRecord {
       let tmp2 = shop_blocks;
       const obj = Object.create(tmp.prototype);
       shop_blocks = shop_blocks.shop_blocks;
-      const mapped = shop_blocks.map(f89588);
-      obj.shopBlocks = mapped.filter(f89589);
+      const mapped = shop_blocks.map(f89609);
+      obj.shopBlocks = mapped.filter(f89610);
       const categories = shop_blocks.categories;
-      obj.categories = categories.map(f89590);
+      obj.categories = categories.map(f89611);
       return obj;
     } else {
       throw new TypeError("Trying to call a non-function");

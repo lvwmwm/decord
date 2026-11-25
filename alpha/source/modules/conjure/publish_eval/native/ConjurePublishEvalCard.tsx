@@ -1,10 +1,10 @@
-// Module ID: 18772
-// Function ID: 18773
+// Module ID: 18771
+// Function ID: 18772
 // Name: ConjurePublishEvalCard
-// Dependencies: [19, 17, 21, 5012, 575, 5074, 9725, 9723, 11430, 5603, 18773, 1112, 4244, 7409, 11433, 5610, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5074, 9725, 9723, 11430, 5603, 18772, 1112, 4244, 7409, 11433, 5610, 2]
 // Exports: default
 
-// Module 18772 (ConjurePublishEvalCard)
+// Module 18771 (ConjurePublishEvalCard)
 import nativeDefault from "native" /* 575 */;
 import _modDef4244 from "module_4244" /* 4244 */;
 import react_native from "react-native" /* 5074 */;
@@ -82,7 +82,7 @@ function ScoreRow(dimension) {
       return hasOwnProperty(ScoreStar, obj, score);
     })
   };
-  prop = dimension(18773).CONJURE_PUBLISH_RATINGS;
+  prop = dimension(18772).CONJURE_PUBLISH_RATINGS;
   items[1] = closure_5(closure_4, obj3);
   return closure_6(closure_4, obj2);
 }

@@ -1,10 +1,10 @@
-// Module ID: 19805
-// Function ID: 19806
+// Module ID: 19804
+// Function ID: 19805
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4861, 1386, 15176, 1071, 21, 5012, 575, 5603, 6776, 1112, 504, 1254, 1186, 12359, 9574, 7494, 5716, 1255, 7515, 5699, 11782, 6109, 6113, 5610, 5226, 19806, 7813, 2]
+// Dependencies: [19, 17, 4861, 1386, 15176, 1071, 21, 5012, 575, 5603, 6776, 1112, 504, 1254, 1186, 12359, 9574, 7494, 5716, 1255, 7515, 5699, 11782, 6109, 6113, 5610, 5226, 19805, 7813, 2]
 // Exports: default
 
-// Module 19805 (BlockedUserInGdmActionSheet)
+// Module 19804 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 5603 */;
 import TableRow2 from "TableRow" /* 6113 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6776 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19806 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19805 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
 import UserStore from "UserStore" /* 1386 */;

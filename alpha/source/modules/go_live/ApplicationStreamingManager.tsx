@@ -1,15 +1,15 @@
-// Module ID: 20273
-// Function ID: 20274
+// Module ID: 20276
+// Function ID: 20277
 // Name: go_live/ApplicationStreamingManager
-// Dependencies: [6782, 502, 4861, 5633, 5911, 4915, 8361, 1386, 6783, 1071, 12, 8377, 1088, 572, 6785, 4856, 7444, 6004, 20253, 2]
+// Dependencies: [6782, 502, 4861, 5633, 5911, 4915, 8361, 1386, 6783, 1071, 12, 8377, 1088, 572, 6785, 4856, 7444, 6004, 20256, 2]
 
-// Module 20273 (go_live/ApplicationStreamingManager)
+// Module 20276 (go_live/ApplicationStreamingManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import AVError from "AVError" /* 6004 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6785 */;
 import StreamActionCreators from "StreamActionCreators" /* 8377 */;
-import AVErrorContext from "AVErrorContext" /* 20253 */;
+import AVErrorContext from "AVErrorContext" /* 20256 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
@@ -56,7 +56,7 @@ let c17 = null;
 const set = new Set();
 class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
   constructor() {
-    const f120082 = (item) => {
+    const f120121 = (item) => {
       if (!streamMarkedFull.isStreamMarkedFull(item)) {
         set.delete(item);
       }
@@ -151,7 +151,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         closure_1_13[streamKey].stop();
       }
       delete tmp[streamKey];
-      const item = set.forEach(f120082);
+      const item = set.forEach(f120121);
       const obj2 = StreamKeyUtils;
       const decodeStreamKeyResult = obj2.decodeStreamKey(streamKey);
       memberCount = memberCount.getMemberCount(decodeStreamKeyResult.guildId);
@@ -165,7 +165,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         closure_1_13[streamKey].stop();
       }
       delete tmp[streamKey];
-      const item = set.forEach(f120082);
+      const item = set.forEach(f120121);
       if (!paused) {
         const rTCConnection = StreamRTCConnectionStore.getRTCConnection(streamKey);
         let mediaEngineConnectionId;
@@ -221,7 +221,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
       channelId = channelId.channelId;
       if (null != channelId) {
         c17 = null;
-        const item = set.forEach(f120082);
+        const item = set.forEach(f120121);
         const allApplicationStreamsForChannel = authStore.getAllApplicationStreamsForChannel(channelId);
         const found = allApplicationStreamsForChannel.find((ownerId) => {
           let tmp = ownerId.ownerId !== id.getId();
@@ -280,7 +280,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
             tmp3 = set.size > 0;
           }
           if (tmp3) {
-            item = set.forEach(f120082);
+            item = set.forEach(f120121);
           }
           if (null != channelId) {
             if (selfStream) {

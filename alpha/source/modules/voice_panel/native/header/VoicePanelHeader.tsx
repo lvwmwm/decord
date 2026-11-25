@@ -1,9 +1,9 @@
-// Module ID: 19403
-// Function ID: 19404
+// Module ID: 19402
+// Function ID: 19403
 // Name: VoicePanelHeader
-// Dependencies: [32, 19, 17, 6902, 5629, 10253, 502, 4861, 2131, 4954, 6821, 1386, 11734, 11737, 11732, 11757, 5662, 1082, 21, 5012, 575, 1653, 5613, 5614, 5579, 7024, 11733, 10505, 504, 10255, 10229, 19356, 1112, 10266, 10268, 10269, 5242, 18189, 19404, 5628, 1706, 5576, 11739, 5222, 1092, 18139, 18140, 19405, 7166, 19406, 5965, 8665, 8619, 5073, 18319, 19407, 9775, 19409, 14265, 19411, 19420, 10503, 19422, 19423, 2]
+// Dependencies: [32, 19, 17, 6902, 5629, 10253, 502, 4861, 2131, 4954, 6821, 1386, 11734, 11737, 11732, 11757, 5662, 1082, 21, 5012, 575, 1653, 5613, 5614, 5579, 7024, 11733, 10505, 504, 10255, 10229, 19355, 1112, 10266, 10268, 10269, 5242, 18189, 19403, 5628, 1706, 5576, 11739, 5222, 1092, 18139, 18140, 19404, 7166, 19405, 5965, 8665, 8619, 5073, 18319, 19406, 9775, 19408, 14265, 19410, 19419, 10503, 19421, 19422, 2]
 
-// Module 19403 (VoicePanelHeader)
+// Module 19402 (VoicePanelHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl5 from "intl" /* 1112 */;
@@ -18,8 +18,8 @@ import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11737 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11757 */;
 import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18189 */;
-import MobileGoLiveEntrypointExperimentDefault from "MobileGoLiveEntrypointExperiment" /* 19404 */;
-import useStableParticipant from "useStableParticipant" /* 19406 */;
+import MobileGoLiveEntrypointExperimentDefault from "MobileGoLiveEntrypointExperiment" /* 19403 */;
+import useStableParticipant from "useStableParticipant" /* 19405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -57,15 +57,15 @@ const AssetRegistryDefault2 = tmp2(10503);
 const useMyCurrentStageChannelRoleDefault = tmp2(10505);
 const calculateVoicePanelHeaderSpecsDefault = tmp2(11739);
 const ThemedHeaderBackgroundGradientDefault = tmp2(18319);
-const VoicePanelIconButtonDefault = tmp2(19356);
-const useVoicePanelNavArrowPressedDefault = tmp2(19405);
-const useStableParticipantDefault = tmp2(19406);
-const VoicePanelHeaderUserStateDefault = tmp2(19407);
-const VoicePanelTitleButtonDefault = tmp2(19409);
-const VoicePanelHeaderSpeakerDefault = tmp2(19411);
-const VoiceChannelAppHeaderButtonsDefault = tmp2(19420);
-const AssetRegistryDefault3 = tmp2(19422);
-const VoicePanelHeaderChatButtonDefault = tmp2(19423);
+const VoicePanelIconButtonDefault = tmp2(19355);
+const useVoicePanelNavArrowPressedDefault = tmp2(19404);
+const useStableParticipantDefault = tmp2(19405);
+const VoicePanelHeaderUserStateDefault = tmp2(19406);
+const VoicePanelTitleButtonDefault = tmp2(19408);
+const VoicePanelHeaderSpeakerDefault = tmp2(19410);
+const VoiceChannelAppHeaderButtonsDefault = tmp2(19419);
+const AssetRegistryDefault3 = tmp2(19421);
+const VoicePanelHeaderChatButtonDefault = tmp2(19422);
 function MusicMuteButton(channelId) {
   let muted;
   let speaker;
@@ -89,7 +89,7 @@ function MusicMuteButton(channelId) {
   if (showStageMusicMuteButton) {
     if (speaker) {
       let stringResult;
-      const tmpResult = stateFromStores(19356);
+      const tmpResult = stateFromStores(19355);
       const intl = tmp4(1112).intl;
       const string = intl.string;
       const t = tmp4(1112).t;
@@ -846,7 +846,7 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
     flag = false;
   }
   if (channelType !== tmp5(1092).ChannelTypes.GUILD_STAGE_VOICE) {
-    flag = treatment === tmp5(19404).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT;
+    flag = treatment === tmp5(19403).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT;
   }
   const tmp5Result22 = tmp5(18139);
   let canInviteMembers = tmp5Result22.useCanInviteMembers(channelId);

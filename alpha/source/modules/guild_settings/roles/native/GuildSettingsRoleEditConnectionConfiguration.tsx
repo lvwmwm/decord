@@ -1,10 +1,10 @@
-// Module ID: 20009
-// Function ID: 20010
+// Module ID: 20012
+// Function ID: 20013
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1071, 6340, 21, 5012, 575, 5221, 11995, 1186, 1412, 5019, 6113, 1112, 6121, 7216, 7518, 20010, 1378, 5603, 6147, 6109, 2]
+// Dependencies: [32, 19, 17, 1071, 6340, 21, 5012, 575, 5221, 11995, 1186, 1412, 5019, 6113, 1112, 6121, 7216, 7518, 20013, 1378, 5603, 6147, 6109, 2]
 // Exports: default
 
-// Module 20009 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 20012 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1071 */;
@@ -18,7 +18,7 @@ import TableRowGroup3 from "TableRowGroup" /* 6109 */;
 import PlatformsDefault from "Platforms" /* 6147 */;
 import XSmallIcon from "XSmallIcon" /* 7216 */;
 import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 11995 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20010 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 20013 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 6340 */;
@@ -244,7 +244,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(20010);
+  let obj = metadataField(20013);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -253,7 +253,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(20010);
+  const tmp2Result = tmp2(20013);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);

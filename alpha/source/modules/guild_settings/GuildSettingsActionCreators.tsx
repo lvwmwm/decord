@@ -564,11 +564,11 @@ let obj = {
     obj3 = HTTPUtils;
     return post(request);
   },
-  disableIntegration(id, id2) {
+  disableIntegration(guildId, id) {
     let obj2;
     const HTTP = HTTPUtils.HTTP;
     const del = HTTP.del;
-    obj = { url: authStore.GUILD_INTEGRATION(id, id2), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
+    obj = { url: authStore.GUILD_INTEGRATION(guildId, id), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
     obj2 = HTTPUtils;
     return del(obj);
   },

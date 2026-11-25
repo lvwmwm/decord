@@ -1,10 +1,10 @@
-// Module ID: 18607
-// Function ID: 18608
+// Module ID: 18606
+// Function ID: 18607
 // Name: conjureSettingsRequest
 // Dependencies: [2]
 // Exports: conjureSettingsRequestBlocks, conjureSettingsRequestIsPickOnly, conjureSettingsRequestKeys
 
-// Module 18607 (conjureSettingsRequest)
+// Module 18606 (conjureSettingsRequest)
 import size from "module_2" /* 2 */;
 
 let set = new Set(["select", "channel", "role", "user"]);

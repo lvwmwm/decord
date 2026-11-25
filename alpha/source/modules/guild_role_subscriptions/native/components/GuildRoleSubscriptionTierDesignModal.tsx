@@ -1,10 +1,10 @@
-// Module ID: 20188
-// Function ID: 20189
+// Module ID: 20191
+// Function ID: 20192
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 16765, 1071, 21, 5012, 575, 5576, 16797, 20153, 20163, 16785, 7506, 20148, 6109, 1112, 20154, 20189, 20155, 2]
+// Dependencies: [32, 19, 17, 16765, 1071, 21, 5012, 575, 5576, 16797, 20156, 20166, 16785, 7506, 20151, 6109, 1112, 20157, 20192, 20158, 2]
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 20188 (GuildRoleSubscriptionTierDesignModal)
+// Module 20191 (GuildRoleSubscriptionTierDesignModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -14,7 +14,7 @@ import RoleIconUtils from "RoleIconUtils" /* 7506 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16765 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16785 */;
 import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16797 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20155 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20158 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,7 +72,7 @@ function Content() {
   let role;
   let tmp7;
   let tmp8;
-  const tmp3 = role(20153)();
+  const tmp3 = role(20156)();
   let obj = require("EditStateContextProvider");
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
@@ -115,16 +115,16 @@ function Content() {
     previewShape: require("FormImagePicker").PreviewShape.SQUIRCLE,
     previewResizeMode: "cover",
     setImage(icon) {
-      const obj = { icon: icon.uri, unicodeEmoji: "r" };
+      const obj = { icon: icon.uri, unicodeEmoji: "Array" };
       return closure_0(obj);
     },
     disabled: roleSubscriptionSettingsDisabled
   };
-  const tmpResult = role(20154);
+  const tmpResult = role(20157);
   intl2 = tmp4(1112).intl;
   items3[1] = closure_9(tmpResult, obj9);
   items2[1] = closure_10(View, obj7);
-  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(20189), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
+  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(20192), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
   const TableRowGroup = tmp4(6109).TableRowGroup;
   intl3 = tmp4(1112).intl;
   items2[2] = closure_9(TableRowGroup, obj10);

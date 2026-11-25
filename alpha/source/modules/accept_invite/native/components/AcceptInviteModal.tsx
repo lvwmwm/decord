@@ -1,10 +1,10 @@
-// Module ID: 19582
-// Function ID: 19583
+// Module ID: 19581
+// Function ID: 19582
 // Name: AcceptInviteModal
 // Dependencies: [19, 7304, 21, 1263, 5732, 13697, 14140, 7324, 2]
 // Exports: default
 
-// Module 19582 (AcceptInviteModal)
+// Module 19581 (AcceptInviteModal)
 import Fragment from "Fragment" /* 21 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 5732 */;

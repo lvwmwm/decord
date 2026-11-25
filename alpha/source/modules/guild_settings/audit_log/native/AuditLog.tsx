@@ -1,9 +1,9 @@
-// Module ID: 19911
-// Function ID: 19912
+// Module ID: 19910
+// Function ID: 19911
 // Name: AuditLog
-// Dependencies: [19, 17, 1191, 1405, 4954, 1386, 1071, 21, 5012, 575, 1415, 1412, 6147, 5019, 7484, 5603, 1378, 5073, 19899, 5068, 1186, 1112, 4875, 5628, 6770, 2168, 1254, 1089, 11033, 7457, 6114, 19903, 6121, 5226, 6102, 16015, 504, 2]
+// Dependencies: [19, 17, 1191, 1405, 4954, 1386, 1071, 21, 5012, 575, 1415, 1412, 6147, 5019, 7484, 5603, 1378, 5073, 19898, 5068, 1186, 1112, 4875, 5628, 6770, 2168, 1254, 1089, 11033, 7457, 6114, 19902, 6121, 5226, 6102, 16015, 504, 2]
 
-// Module 19911 (AuditLog)
+// Module 19910 (AuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -19,7 +19,7 @@ import PlatformsDefault from "Platforms" /* 6147 */;
 import EmojiDefault from "Emoji" /* 7457 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7484 */;
 import AppliedForumTag from "AppliedForumTag" /* 11033 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 19899 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 19898 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UserRecord from "UserRecord" /* 1405 */;
@@ -681,7 +681,7 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(19903), obj6);
+    items2[0] = closure_14(user(19902), obj6);
     const obj7 = {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(tmp10(1112).t.iXAna6),

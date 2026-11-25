@@ -1,9 +1,9 @@
-// Module ID: 19724
-// Function ID: 19725
+// Module ID: 19723
+// Function ID: 19724
 // Name: MultiAccountManager
 // Dependencies: [4861, 1386, 13333, 15054, 7444, 572, 15055, 6095, 2]
 
-// Module 19724 (MultiAccountManager)
+// Module 19723 (MultiAccountManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import transitionToChannel from "transitionToChannel" /* 6095 */;
 import GatewaySocket from "GatewaySocket" /* 15055 */;

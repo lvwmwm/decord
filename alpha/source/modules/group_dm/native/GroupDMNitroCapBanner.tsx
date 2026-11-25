@@ -1,10 +1,10 @@
-// Module ID: 18959
-// Function ID: 18960
+// Module ID: 18958
+// Function ID: 18959
 // Name: GroupDMNitroCapBanner
 // Dependencies: [19, 17, 21, 5012, 575, 5576, 9356, 5567, 9595, 2]
 // Exports: default
 
-// Module 18959 (GroupDMNitroCapBanner)
+// Module 18958 (GroupDMNitroCapBanner)
 import nativeDefault from "native" /* 575 */;
 import LinearGradientDefault from "LinearGradient" /* 5567 */;
 import useToken from "useToken" /* 5576 */;

@@ -1,15 +1,15 @@
-// Module ID: 19528
-// Function ID: 19529
+// Module ID: 19527
+// Function ID: 19528
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 11734, 21, 5012, 575, 7023, 6046, 13174, 11733, 1653, 13175, 5613, 9753, 1706, 19529, 19541, 17673, 19525, 2]
+// Dependencies: [32, 19, 17, 11734, 21, 5012, 575, 7023, 6046, 13174, 11733, 1653, 13175, 5613, 9753, 1706, 19528, 19540, 17673, 19524, 2]
 
-// Module 19528 (VoicePanelControlsDrawer)
+// Module 19527 (VoicePanelControlsDrawer)
 import nativeDefault from "native" /* 575 */;
 import react2 from "react" /* 6046 */;
 import useRefValueDefault from "useRefValue" /* 7023 */;
 import VoicePanelChatViewDefault from "VoicePanelChatView" /* 13174 */;
-import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 19529 */;
-import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 19541 */;
+import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 19528 */;
+import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 19540 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -231,7 +231,7 @@ const memoResult1 = react.memo(function VoicePanelControlsDrawer(openTab) {
   const tmp33 = closure_10;
   if (tmp10Result2.isJankScreenReportingEnabled()) {
     const obj3 = { channelId, tab, wrapperSpecs, mode };
-    tmp34 = closure_9(tmp(19525), obj3);
+    tmp34 = closure_9(tmp(19524), obj3);
   }
   items9 = [tmp34, , , ];
   const obj4 = { shown: !tmp6 && "chat" === tab, renderContent: renderChat };

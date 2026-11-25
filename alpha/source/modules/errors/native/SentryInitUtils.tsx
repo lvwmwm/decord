@@ -34,7 +34,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
     let c3 = 0;
     return (async function(arg0, value) {
       let raceResult;
-      const f135694 = (arg0, arg1) => {
+      const f135746 = (arg0, arg1) => {
         let closure_0 = arg1;
         return setTimeout(() => {
           const error = new Error("TelemetryRing breadcrumb timeout");
@@ -71,10 +71,10 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
               items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
               const self = this;
               const self2 = this;
-              items[1] = new Promise(f135694);
+              items[1] = new Promise(f135746);
               c2 = 1;
               c3 = 1;
-              const promise = new Promise(f135694);
+              const promise = new Promise(f135746);
               const obj4 = { value: raceResult.catch(() => null), done: false };
               raceResult = race(items);
               return obj4;
@@ -670,13 +670,13 @@ export function initSentry() {
               tunnel: `/error-reporting-proxy/${str2}`,
               autoInitializeNativeSdk: false,
               beforeSend,
-              dist: "35720200000000",
+              dist: "35720300000000",
               dsn: SentryStaffDsn,
               environment: ReleaseChannel,
               tracesSampleRate: 0,
               sampleRate: 1,
               ignoreErrors,
-              release: "discord_android@357.2.0-2+357202",
+              release: "discord_android@357.3.0-2+357203",
               tracePropagationTargets: items,
               integrations: items1,
               beforeBreadcrumb(data) {
@@ -712,7 +712,7 @@ export function initSentry() {
             items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
             init(obj3);
             const tmp17Result17 = require("module_674");
-            tmp17Result17.setTag("buildNumber", "35720200000000");
+            tmp17Result17.setTag("buildNumber", "35720300000000");
             const tmp17Result18 = require("module_674");
             tmp17Result18.setTag("appVersion", constants.Version);
             const _HermesInternal = HermesInternal;

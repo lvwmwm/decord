@@ -1,10 +1,10 @@
-// Module ID: 19545
-// Function ID: 19546
+// Module ID: 19544
+// Function ID: 19545
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 10215, 15933, 11735, 11734, 21, 5012, 575, 1628, 1494, 19544, 1653, 9753, 11738, 19340, 5222, 5225, 5613, 19342, 5590, 5272, 19546, 2]
+// Dependencies: [32, 19, 10215, 15933, 11735, 11734, 21, 5012, 575, 1628, 1494, 19543, 1653, 9753, 11738, 19339, 5222, 5225, 5613, 19341, 5590, 5272, 19545, 2]
 // Exports: default
 
-// Module 19545 (MediaPlaybackPanelUI)
+// Module 19544 (MediaPlaybackPanelUI)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11735 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 19544 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 19543 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10215 */;
 import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15933 */;
@@ -38,9 +38,9 @@ const LayerScope2 = tmp7(5590);
 const spring_spring = tmp7(5613);
 const cheapWorkletShallowEqual = tmp7(9753);
 const updateSharedValueIfChangedDefault = tmp3(11738);
-const MorphablePanelUtils = tmp7(19340);
-const useMorphablePanelGesture = tmp7(19342);
-const useMorphablePanelGestureDefault = tmp3(19342);
+const MorphablePanelUtils = tmp7(19339);
+const useMorphablePanelGesture = tmp7(19341);
+const useMorphablePanelGestureDefault = tmp3(19341);
 const useContext = react2.useContext;
 ({ MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS: metroImportDefault, MediaPlaybackPanelModes: metroImportAll } = MediaPlaybackPanelConstants);
 const IS_IOS = MorphablePanelConstants.IS_IOS;

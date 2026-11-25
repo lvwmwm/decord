@@ -1,9 +1,9 @@
-// Module ID: 19699
-// Function ID: 19700
+// Module ID: 19698
+// Function ID: 19699
 // Name: JankNavigationReporter
 // Dependencies: [5189, 17675, 17679, 17680, 5191, 2]
 
-// Module 19699 (JankNavigationReporter)
+// Module 19698 (JankNavigationReporter)
 import RootNavigationRef from "RootNavigationRef" /* 5189 */;
 import getJankScreenName from "getJankScreenName" /* 17675 */;
 import react_nativeDefault from "react-native" /* 17679 */;

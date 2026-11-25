@@ -457,11 +457,11 @@ class ClientBillingError extends Error {
     let fromEntries6;
     let fromEntries7;
     let tmp3;
-    const f88545 = (item) => {
+    const f88566 = (item) => {
       let arr;
       let tmp;
       let tmp2;
-      const f88544 = (acc, item) => {
+      const f88565 = (acc, item) => {
         let tmp;
         [tmp, ] = item;
         return acc.replace(tmp, (str) => {
@@ -476,7 +476,7 @@ class ClientBillingError extends Error {
       };
       [tmp, arr] = item;
       if (typeof arr === "string") {
-        const items = [tmp, items2.reduce(f88544, arr)];
+        const items = [tmp, items2.reduce(f88565, arr)];
         tmp2 = items;
       } else {
         const _Array = Array;
@@ -485,7 +485,7 @@ class ClientBillingError extends Error {
           items1[1] = arr.map((item) => {
             let reduced = item;
             if (typeof item === "string") {
-              reduced = closure_1_16.reduce(f88544, item);
+              reduced = closure_1_16.reduce(f88565, item);
             }
             return reduced;
           });
@@ -500,7 +500,7 @@ class ClientBillingError extends Error {
     const classification = this.classification;
     const shape = classification.shape;
     if ("billing_error" === shape) {
-      const obj = { raw_error: fromEntries7(entries.map(f88545)) };
+      const obj = { raw_error: fromEntries7(entries.map(f88566)) };
       ({ code: obj14.code, status: obj14.status, message: obj14.message } = classification.error);
       const _Object14 = Object;
       const _Object15 = Object;
@@ -513,7 +513,7 @@ class ClientBillingError extends Error {
       ({ type: obj12.type, code: obj12.code, decline_code: obj12.decline_code, param: obj12.param, doc_url: obj12.doc_url, message: obj12.message } = classification.error);
       const _Object12 = Object;
       const _Object13 = Object;
-      const obj3 = { raw_error: fromEntries6(entries1.map(f88545)) };
+      const obj3 = { raw_error: fromEntries6(entries1.map(f88566)) };
       fromEntries6 = Object.fromEntries;
       entries1 = Object.entries(obj5);
       return obj3;
@@ -522,7 +522,7 @@ class ClientBillingError extends Error {
       ({ status: obj10.status, method: obj10.method, message: obj10.message } = classification.error);
       const _Object10 = Object;
       const _Object11 = Object;
-      const obj7 = { raw_error: fromEntries5(entries2.map(f88545)) };
+      const obj7 = { raw_error: fromEntries5(entries2.map(f88566)) };
       fromEntries5 = Object.fromEntries;
       entries2 = Object.entries(obj9);
       return obj7;
@@ -531,7 +531,7 @@ class ClientBillingError extends Error {
       ({ code: obj8.code, message: obj8.message } = classification.error);
       const _Object8 = Object;
       const _Object9 = Object;
-      const obj11 = { raw_error: fromEntries4(entries3.map(f88545)) };
+      const obj11 = { raw_error: fromEntries4(entries3.map(f88566)) };
       fromEntries4 = Object.fromEntries;
       entries3 = Object.entries(obj13);
       return obj11;
@@ -540,7 +540,7 @@ class ClientBillingError extends Error {
       ({ name: obj6.name, code: obj6.code, message: obj6.message } = classification.error);
       const _Object6 = Object;
       const _Object7 = Object;
-      const obj27 = { raw_error: fromEntries3(entries4.map(f88545)) };
+      const obj27 = { raw_error: fromEntries3(entries4.map(f88566)) };
       fromEntries3 = Object.fromEntries;
       entries4 = Object.entries(obj28);
       return obj27;
@@ -549,7 +549,7 @@ class ClientBillingError extends Error {
       ({ name: obj4.name, message: obj4.message } = classification.error);
       const _Object4 = Object;
       const _Object5 = Object;
-      const obj29 = { raw_error: fromEntries2(entries5.map(f88545)) };
+      const obj29 = { raw_error: fromEntries2(entries5.map(f88566)) };
       fromEntries2 = Object.fromEntries;
       entries5 = Object.entries(obj30);
       return obj29;
@@ -578,7 +578,7 @@ class ClientBillingError extends Error {
         const _Object2 = Object;
         const _Object3 = Object;
         const entries6 = Object.entries(obj31);
-        fromEntriesResult = fromEntries(entries6.map(f88545));
+        fromEntriesResult = fromEntries(entries6.map(f88566));
       } else {
         fromEntriesResult = {};
       }

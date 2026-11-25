@@ -129,7 +129,7 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   let obj10;
   let obj12;
   let tmp35Result;
-  const f114685 = () => {
+  const f114706 = () => {
     const tmp = new _modDef8905((arg0) => {
       closure_1_10(arg0);
       closure_1_14(false);
@@ -201,9 +201,9 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   const tmp16 = guildLoaded(sortedGuildRoles.useState(false), 2);
   first2 = tmp16[0];
   let closure_14 = tmp16[1];
-  const first3 = guildLoaded(sortedGuildRoles.useState(f114685), 2)[0];
+  const first3 = guildLoaded(sortedGuildRoles.useState(f114706), 2)[0];
   const items8 = [guildId, stateFromStoresArray, first, stateFromStores1, first1];
-  const tmp18 = guildLoaded(sortedGuildRoles.useState(f114685), 2);
+  const tmp18 = guildLoaded(sortedGuildRoles.useState(f114706), 2);
   const memo = sortedGuildRoles.useMemo(() => {
     function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;

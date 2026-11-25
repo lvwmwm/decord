@@ -1,10 +1,10 @@
-// Module ID: 20026
-// Function ID: 20027
+// Module ID: 20029
+// Function ID: 20030
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 4883, 4944, 1386, 8532, 1071, 21, 5012, 575, 504, 4837, 5576, 6093, 6957, 6960, 8531, 6113, 1186, 6125, 1112, 7507, 5693, 7512, 7364, 20027, 7375, 11548, 7380, 5586, 2]
+// Dependencies: [32, 19, 17, 4883, 4944, 1386, 8532, 1071, 21, 5012, 575, 504, 4837, 5576, 6093, 6957, 6960, 8531, 6113, 1186, 6125, 1112, 7507, 5693, 7512, 7364, 20030, 7375, 11548, 7380, 5586, 2]
 // Exports: default
 
-// Module 20026 (GuildSettingsModalBans)
+// Module 20029 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;

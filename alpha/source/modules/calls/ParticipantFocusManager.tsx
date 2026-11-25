@@ -1,9 +1,9 @@
-// Module ID: 19782
-// Function ID: 19783
+// Module ID: 19781
+// Function ID: 19782
 // Name: ParticipantFocusManager
 // Dependencies: [5820, 6902, 7444, 2]
 
-// Module 19782 (ParticipantFocusManager)
+// Module 19781 (ParticipantFocusManager)
 import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;

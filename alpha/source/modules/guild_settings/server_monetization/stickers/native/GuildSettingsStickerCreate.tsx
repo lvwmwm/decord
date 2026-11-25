@@ -1,10 +1,10 @@
-// Module ID: 19935
-// Function ID: 19936
+// Module ID: 19938
+// Function ID: 19939
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 6852, 6896, 1071, 1389, 4840, 21, 5012, 575, 5587, 9757, 5591, 4958, 8094, 19936, 10785, 6748, 5603, 1112, 5767, 2187, 5610, 6084, 6121, 10636, 19937, 9495, 7457, 1412, 9662, 7243, 7409, 2]
+// Dependencies: [5, 32, 19, 17, 6852, 6896, 1071, 1389, 4840, 21, 5012, 575, 5587, 9757, 5591, 4958, 8094, 19939, 10785, 6748, 5603, 1112, 5767, 2187, 5610, 6084, 6121, 10636, 19940, 9495, 7457, 1412, 9662, 7243, 7409, 2]
 // Exports: default
 
-// Module 19935 (GuildSettingsStickerCreate)
+// Module 19938 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
@@ -594,7 +594,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     obj19 = { uri: first1 };
     tmp35Result = tmp35(first, obj18);
   } else {
-    tmp35Result = tmp35(tmp34(19937).StickerPlusIcon, { size: "lg" });
+    tmp35Result = tmp35(tmp34(19940).StickerPlusIcon, { size: "lg" });
   }
   items4[1] = onPressEmoji(PressableHighlight, obj16);
   const obj20 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1112).t["3BQmiC"]) };

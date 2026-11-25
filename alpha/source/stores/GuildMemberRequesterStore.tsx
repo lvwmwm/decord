@@ -14,7 +14,7 @@ import GuildMemberStore from "GuildMemberStore" /* 4924 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
 import size from "module_2" /* 2 */;
 
-const f39375 = (arg0, userIds) => {
+const f39378 = (arg0, userIds) => {
   let items;
   const obj2 = { type: "GUILD_MEMBERS_REQUEST", guildIds: items, userIds };
   items = [arg0];
@@ -107,8 +107,8 @@ function handleLoadSearchResults(arg0) {
     return false;
   }
 }
-const metroRequire = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f39375);
-new GuildMemberRequesterDefault(GuildMemberStore.isMember, f39375);
+const metroRequire = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f39378);
+new GuildMemberRequesterDefault(GuildMemberStore.isMember, f39378);
 const Store = get_initializedDefault.Store;
 class GuildMemberRequesterStore extends Store {
   initialize() {

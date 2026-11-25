@@ -1,10 +1,10 @@
-// Module ID: 20074
-// Function ID: 20075
+// Module ID: 20077
+// Function ID: 20078
 // Name: GuildSettingsAnalyticsCard
-// Dependencies: [19, 17, 21, 5012, 575, 5694, 6114, 5603, 5716, 1112, 11855, 20075, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5694, 6114, 5603, 5716, 1112, 11855, 20078, 2]
 // Exports: default
 
-// Module 20074 (GuildSettingsAnalyticsCard)
+// Module 20077 (GuildSettingsAnalyticsCard)
 import nativeDefault from "native" /* 575 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
 import react from "react" /* 19 */;
@@ -94,7 +94,7 @@ export default function GuildSettingsAnalyticsCard(metricKey) {
     let tmp7Result4 = null;
     if (isTrendingDown) {
       const obj8 = { size: "xxs", color: description(575).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: intl3.string(metricKey(1112).t.NLl6Q3) };
-      const ArrowLargeDownIcon = tmp4(20075).ArrowLargeDownIcon;
+      const ArrowLargeDownIcon = tmp4(20078).ArrowLargeDownIcon;
       intl3 = tmp4(1112).intl;
       tmp7Result4 = tmp7(ArrowLargeDownIcon, obj8);
     }

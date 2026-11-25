@@ -1,10 +1,10 @@
-// Module ID: 18649
-// Function ID: 18650
+// Module ID: 18648
+// Function ID: 18649
 // Name: useConjureAutomodSettingsLink
 // Dependencies: [19, 4883, 4944, 6903, 7675, 1071, 21, 504, 6904, 1112, 4244, 8531, 2]
 // Exports: ConjureAutomodSettingsLink, default
 
-// Module 18649 (useConjureAutomodSettingsLink)
+// Module 18648 (useConjureAutomodSettingsLink)
 import _modDef4244 from "module_4244" /* 4244 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6904 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;

@@ -1,9 +1,9 @@
-// Module ID: 20233
-// Function ID: 20234
+// Module ID: 20236
+// Function ID: 20237
 // Name: OrbsArcadeFetchManager
 // Dependencies: [16577, 1088, 7444, 16584, 16578, 16579, 2]
 
-// Module 20233 (OrbsArcadeFetchManager)
+// Module 20236 (OrbsArcadeFetchManager)
 import DurationsDefault from "Durations" /* 1088 */;
 import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16578 */;
 import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16579 */;

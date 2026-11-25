@@ -1,10 +1,10 @@
-// Module ID: 19025
-// Function ID: 19026
+// Module ID: 19024
+// Function ID: 19025
 // Name: useUserRowWithSubLabelHeight
 // Dependencies: [5576, 575, 6093, 5618, 11488, 18230, 2]
 // Exports: getUserRowWithSubLabelHeight, useUserRowWithSubLabelHeight
 
-// Module 19025 (useUserRowWithSubLabelHeight)
+// Module 19024 (useUserRowWithSubLabelHeight)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5576 */;
 import useFontScale from "useFontScale" /* 5618 */;

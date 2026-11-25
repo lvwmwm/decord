@@ -1,10 +1,10 @@
-// Module ID: 19247
-// Function ID: 19248
+// Module ID: 19246
+// Function ID: 19247
 // Name: IncentivizedAccountLinkConfirmationPromoSheet
 // Dependencies: [19, 5013, 21, 5012, 504, 5699, 17471, 17472, 10702, 5226, 2]
 // Exports: default
 
-// Module 19247 (IncentivizedAccountLinkConfirmationPromoSheet)
+// Module 19246 (IncentivizedAccountLinkConfirmationPromoSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;

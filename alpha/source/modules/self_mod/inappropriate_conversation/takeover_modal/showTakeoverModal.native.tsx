@@ -1,10 +1,10 @@
-// Module ID: 19617
-// Function ID: 19618
+// Module ID: 19616
+// Function ID: 19617
 // Name: showTakeoverModal
 // Dependencies: [11771, 11465, 6099, 17307, 2119, 2]
 // Exports: showTakeoverModal
 
-// Module 19617 (showTakeoverModal)
+// Module 19616 (showTakeoverModal)
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
 import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11465 */;
 import Constants from "Constants" /* 11771 */;

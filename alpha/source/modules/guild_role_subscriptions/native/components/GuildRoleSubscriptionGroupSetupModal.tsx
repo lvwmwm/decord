@@ -1,15 +1,15 @@
-// Module ID: 20193
-// Function ID: 20194
+// Module ID: 20196
+// Function ID: 20197
 // Name: GuildRoleSubscriptionGroupSetupModal
-// Dependencies: [32, 5, 19, 20152, 16765, 1071, 21, 16772, 16785, 5693, 1112, 1263, 5982, 20163, 20148, 20164, 2]
+// Dependencies: [32, 5, 19, 20155, 16765, 1071, 21, 16772, 16785, 5693, 1112, 1263, 5982, 20166, 20151, 20167, 2]
 
-// Module 20193 (GuildRoleSubscriptionGroupSetupModal)
+// Module 20196 (GuildRoleSubscriptionGroupSetupModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import ToastUtils from "ToastUtils" /* 5693 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16785 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20152 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20155 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -293,9 +293,9 @@ class GuildRoleSubscriptionGroupSetupModal {
       obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
     }, items1);
     let obj5 = { guildId, editStateId, groupListingId: null, children: memo(RoleSubscriptionSettingsDisabledContextProvider, obj6) };
-    const EditStateContextProvider = tmp3(20163).EditStateContextProvider;
+    const EditStateContextProvider = tmp3(20166).EditStateContextProvider;
     obj6 = { guildId, children: memo(tmp13, obj7) };
-    RoleSubscriptionSettingsDisabledContextProvider = tmp3(20148).RoleSubscriptionSettingsDisabledContextProvider;
+    RoleSubscriptionSettingsDisabledContextProvider = tmp3(20151).RoleSubscriptionSettingsDisabledContextProvider;
     obj7 = {
       modalKey: error,
       onDone: function handleCreateGroupAndTier() {
@@ -305,7 +305,7 @@ class GuildRoleSubscriptionGroupSetupModal {
       onClose: callback,
       stepScreenPropsMap: memo1
     };
-    tmp13 = guildId(20164);
+    tmp13 = guildId(20167);
     const merged1 = Object.assign(merged);
     return memo(EditStateContextProvider, obj5);
   }

@@ -1,10 +1,10 @@
-// Module ID: 19348
-// Function ID: 19349
+// Module ID: 19347
+// Function ID: 19348
 // Name: ActivityInviteSheet
-// Dependencies: [32, 19, 17, 10451, 10398, 1071, 5745, 1082, 21, 5012, 575, 10393, 6348, 6349, 5226, 6102, 10385, 11918, 504, 10400, 5746, 5240, 7476, 1112, 1186, 10403, 7375, 19349, 2]
+// Dependencies: [32, 19, 17, 10451, 10398, 1071, 5745, 1082, 21, 5012, 575, 10393, 6348, 6349, 5226, 6102, 10385, 11918, 504, 10400, 5746, 5240, 7476, 1112, 1186, 10403, 7375, 19348, 2]
 // Exports: default
 
-// Module 19348 (ActivityInviteSheet)
+// Module 19347 (ActivityInviteSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -232,7 +232,7 @@ export default function ActivityInviteSheet(activity) {
       tmp17Result2 = tmp17(EmptyState, obj9);
     } else {
       const obj10 = { data: stateFromStores, error: tmp6, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp17Result2 = tmp17(tmp2(19349), obj10);
+      tmp17Result2 = tmp17(tmp2(19348), obj10);
     }
     const obj11 = { children: items4 };
     items4[1] = tmp17Result2;

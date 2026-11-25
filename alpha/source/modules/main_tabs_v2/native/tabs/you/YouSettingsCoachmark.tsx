@@ -1,13 +1,13 @@
-// Module ID: 19048
-// Function ID: 19049
+// Module ID: 19047
+// Function ID: 19048
 // Name: YouSettingsCoachmark
-// Dependencies: [19049, 19054, 9526, 2]
+// Dependencies: [19048, 19053, 9526, 2]
 // Exports: default, useYouSettingsCoachmark
 
-// Module 19048 (YouSettingsCoachmark)
+// Module 19047 (YouSettingsCoachmark)
 import useCoachmark from "useCoachmark" /* 9526 */;
-import useConsoleConnectionCoachmark from "useConsoleConnectionCoachmark" /* 19049 */;
-import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 19054 */;
+import useConsoleConnectionCoachmark from "useConsoleConnectionCoachmark" /* 19048 */;
+import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 19053 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouSettingsCoachmark.tsx");

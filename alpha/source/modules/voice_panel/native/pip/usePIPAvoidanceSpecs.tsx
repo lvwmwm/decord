@@ -1,10 +1,10 @@
-// Module ID: 19387
-// Function ID: 19388
+// Module ID: 19386
+// Function ID: 19387
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [11734, 11732, 11735, 1653, 18388, 19324, 5576, 575, 9753, 19195, 19325, 11739, 11738, 2]
+// Dependencies: [11734, 11732, 11735, 1653, 18388, 19323, 5576, 575, 9753, 19194, 19324, 11739, 11738, 2]
 // Exports: default
 
-// Module 19387 (usePIPAvoidanceSpecs)
+// Module 19386 (usePIPAvoidanceSpecs)
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import useToken from "useToken" /* 5576 */;
@@ -12,7 +12,7 @@ import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 *
 import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11735 */;
 import useAnimatedKeyboardHeightDefault from "useAnimatedKeyboardHeight" /* 18388 */;
-import useScreenNameSharedValueDefault from "useScreenNameSharedValue" /* 19324 */;
+import useScreenNameSharedValueDefault from "useScreenNameSharedValue" /* 19323 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -20,8 +20,8 @@ let tmp4;
 const cheapWorkletShallowEqual = tmp(9753);
 const updateSharedValueIfChangedDefault = tmp4(11738);
 const calculateVoicePanelHeaderSpecsDefault = tmp4(11739);
-const getPIPBottomOffsetForPIPModeDefault = tmp4(19195);
-const getAdjustedBottomOffsetsDefault = tmp4(19325);
+const getPIPBottomOffsetForPIPModeDefault = tmp4(19194);
+const getAdjustedBottomOffsetsDefault = tmp4(19324);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const PIP_WINDOW_OFFSET = MorphablePanelConstants.PIP_WINDOW_OFFSET;

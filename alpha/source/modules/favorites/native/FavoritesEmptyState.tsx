@@ -1,10 +1,10 @@
-// Module ID: 19003
-// Function ID: 19004
+// Module ID: 19002
+// Function ID: 19003
 // Name: FavoritesEmptyState
 // Dependencies: [19, 17, 21, 5012, 575, 11473, 10703, 6084, 5603, 1112, 3856, 5610, 13740, 2]
 // Exports: default
 
-// Module 19003 (FavoritesEmptyState)
+// Module 19002 (FavoritesEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;

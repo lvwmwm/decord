@@ -1,9 +1,9 @@
-// Module ID: 19409
-// Function ID: 19410
+// Module ID: 19408
+// Function ID: 19409
 // Name: VoicePanelTitleButton
-// Dependencies: [19, 17, 2164, 4866, 4861, 5662, 21, 5012, 575, 14265, 1112, 5611, 7469, 504, 5628, 8619, 8447, 11733, 6776, 19410, 6084, 7070, 19352, 19407, 6830, 6824, 10459, 5603, 7124, 10229, 10284, 7074, 8577, 1092, 19406, 18151, 2]
+// Dependencies: [19, 17, 2164, 4866, 4861, 5662, 21, 5012, 575, 14265, 1112, 5611, 7469, 504, 5628, 8619, 8447, 11733, 6776, 19409, 6084, 7070, 19351, 19406, 6830, 6824, 10459, 5603, 7124, 10229, 10284, 7074, 8577, 1092, 19405, 18151, 2]
 
-// Module 19409 (VoicePanelTitleButton)
+// Module 19408 (VoicePanelTitleButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -23,9 +23,9 @@ import MicrophoneIcon2 from "MicrophoneIcon" /* 10459 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
 import ShieldLockIcon2 from "ShieldLockIcon" /* 14265 */;
 import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 18151 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 19352 */;
-import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19407 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19410 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 19351 */;
+import VoicePanelHeaderUserState from "VoicePanelHeaderUserState" /* 19406 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19409 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import StageInstanceStore from "StageInstanceStore" /* 4866 */;
@@ -239,7 +239,7 @@ const memoResult = react.memo(function VoicePanelTitleButton() {
     return id;
   });
   const GUILD_STAGE_VOICE = guildId(1092).ChannelTypes.GUILD_STAGE_VOICE;
-  const tmp3 = channelId(19406)(derivedStateFromSharedValue, channelId, guildId);
+  const tmp3 = channelId(19405)(derivedStateFromSharedValue, channelId, guildId);
   const items = [guildId, channelId];
   const onPress = react.useCallback(() => {
     const obj = VoicePanelSettingsActionCreators;

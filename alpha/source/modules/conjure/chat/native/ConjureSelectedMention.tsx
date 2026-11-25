@@ -1,10 +1,10 @@
-// Module ID: 18632
-// Function ID: 18633
+// Module ID: 18631
+// Function ID: 18632
 // Name: ConjureSelectedMention
 // Dependencies: [19, 21, 5012, 575, 5603, 2]
 // Exports: default
 
-// Module 18632 (ConjureSelectedMention)
+// Module 18631 (ConjureSelectedMention)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5603 */;

@@ -1,10 +1,10 @@
-// Module ID: 20020
-// Function ID: 20021
+// Module ID: 20023
+// Function ID: 20024
 // Name: InviteEmpty
-// Dependencies: [19, 21, 8524, 11398, 20021, 11397, 5019, 5699, 2]
+// Dependencies: [19, 21, 8524, 11398, 20024, 11397, 5019, 5699, 2]
 // Exports: InviteEmpty, getInviteEmptySource, useInviteEmptySource
 
-// Module 20020 (InviteEmpty)
+// Module 20023 (InviteEmpty)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5019 */;
 import FastImageDefault from "FastImage" /* 5699 */;

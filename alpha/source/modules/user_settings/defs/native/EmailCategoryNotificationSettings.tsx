@@ -28,7 +28,7 @@ function useMarketingEmailsDisabled() {
 function createEmailSettings(EMAIL_NOTIFICATIONS) {
   let obj2;
   let obj4;
-  const f111425 = (category) => category.category === RECOMMENDATIONS_AND_EVENTS;
+  const f111446 = (category) => category.category === RECOMMENDATIONS_AND_EVENTS;
   function useValue() {
     let emailSettings;
     let closure_0 = RECOMMENDATIONS_AND_EVENTS;
@@ -42,7 +42,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
   }
   let tmp = EmailCategories;
   const COMMUNICATION = EmailCategories.COMMUNICATION;
-  const found = closure_6.find(f111425);
+  const found = closure_6.find(f111446);
   if (null == found) {
     const _Error5 = Error;
     const _HermesInternal5 = HermesInternal;
@@ -64,7 +64,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
     ({ label: obj3.useTitle, subLabel: obj3.useDescription } = tmp5);
     const SOCIAL = tmp.SOCIAL;
     obj2 = COMMUNICATION(11914);
-    const found1 = arr.find(f111425);
+    const found1 = arr.find(f111446);
     if (null == found1) {
       const _Error4 = Error;
       const _HermesInternal4 = HermesInternal;
@@ -86,7 +86,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
       const tmp6Result = COMMUNICATION(11914);
       obj.social = tmp6Result.createToggle(obj6);
       const UPDATES_AND_ANNOUNCEMENTS = tmp.UPDATES_AND_ANNOUNCEMENTS;
-      const found2 = arr.find(f111425);
+      const found2 = arr.find(f111446);
       if (null == found2) {
         const _Error3 = Error;
         const _HermesInternal3 = HermesInternal;
@@ -108,7 +108,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
         const tmp6Result5 = COMMUNICATION(11914);
         obj.updatesAndAnnouncements = tmp6Result5.createToggle(obj8);
         const TIPS = tmp.TIPS;
-        const found3 = arr.find(f111425);
+        const found3 = arr.find(f111446);
         if (null == found3) {
           const _Error2 = Error;
           const _HermesInternal2 = HermesInternal;
@@ -130,7 +130,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
           const tmp6Result6 = COMMUNICATION(11914);
           obj.tips = tmp6Result6.createToggle(obj10);
           const RECOMMENDATIONS_AND_EVENTS = tmp.RECOMMENDATIONS_AND_EVENTS;
-          const found4 = arr.find(f111425);
+          const found4 = arr.find(f111446);
           if (null == found4) {
             const _Error = Error;
             const _HermesInternal = HermesInternal;

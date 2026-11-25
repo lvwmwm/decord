@@ -1,10 +1,10 @@
-// Module ID: 20151
-// Function ID: 20152
+// Module ID: 20154
+// Function ID: 20155
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 20152, 16765, 1071, 21, 5012, 575, 20153, 20148, 6109, 1112, 20154, 5603, 16777, 7409, 20155, 2]
+// Dependencies: [32, 19, 17, 20155, 16765, 1071, 21, 5012, 575, 20156, 20151, 6109, 1112, 20157, 5603, 16777, 7409, 20158, 2]
 // Exports: default
 
-// Module 20151 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 20154 (GuildRoleSubscriptionGroupDetailsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,13 +13,13 @@ import Text_Text from "Text/Text" /* 5603 */;
 import TableRowGroup from "TableRowGroup" /* 6109 */;
 import TextArea2 from "TextArea" /* 7409 */;
 import FormSeparatorDefault from "FormSeparator" /* 16777 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20148 */;
-import FormStylesDefault from "FormStyles" /* 20153 */;
-import FormImagePicker from "FormImagePicker" /* 20154 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20155 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20151 */;
+import FormStylesDefault from "FormStyles" /* 20156 */;
+import FormImagePicker from "FormImagePicker" /* 20157 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20158 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20152 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20155 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16765 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5012 */;

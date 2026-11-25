@@ -1,14 +1,14 @@
-// Module ID: 19382
-// Function ID: 19383
+// Module ID: 19381
+// Function ID: 19382
 // Name: useVoicePanelDockMorphState
-// Dependencies: [19, 11734, 11757, 1653, 5613, 11764, 19383, 5222, 2]
+// Dependencies: [19, 11734, 11757, 1653, 5613, 11764, 19382, 5222, 2]
 // Exports: default
 
-// Module 19382 (useVoicePanelDockMorphState)
+// Module 19381 (useVoicePanelDockMorphState)
 import spring_spring from "spring/spring" /* 5613 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11764 */;
-import useIsDockCoveredByActivityDefault from "useIsDockCoveredByActivity" /* 19383 */;
+import useIsDockCoveredByActivityDefault from "useIsDockCoveredByActivity" /* 19382 */;
 import react from "react" /* 19 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11757 */;
 import size from "module_2" /* 2 */;

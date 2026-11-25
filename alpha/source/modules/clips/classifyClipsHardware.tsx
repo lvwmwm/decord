@@ -1,10 +1,10 @@
-// Module ID: 20223
-// Function ID: 20224
+// Module ID: 20226
+// Function ID: 20227
 // Name: classifyClipsHardware
 // Dependencies: [8089, 2]
 // Exports: classifyClipsHardware
 
-// Module 20223 (classifyClipsHardware)
+// Module 20226 (classifyClipsHardware)
 import ClipsConstants from "ClipsConstants" /* 8089 */;
 import size from "module_2" /* 2 */;
 

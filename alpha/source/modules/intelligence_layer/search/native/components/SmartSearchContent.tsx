@@ -1,15 +1,15 @@
-// Module ID: 18936
-// Function ID: 18937
+// Module ID: 18935
+// Function ID: 18936
 // Name: SmartSearchContent
-// Dependencies: [19, 21, 13239, 18937, 18938, 18880, 2]
+// Dependencies: [19, 21, 13239, 18936, 18937, 18879, 2]
 // Exports: SmartSearchContent
 
-// Module 18936 (SmartSearchContent)
+// Module 18935 (SmartSearchContent)
 import Fragment from "Fragment" /* 21 */;
 import SmartSearchTypes from "SmartSearchTypes" /* 13239 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 18880 */;
-import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 18937 */;
-import SmartSearchResults from "SmartSearchResults" /* 18938 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 18879 */;
+import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 18936 */;
+import SmartSearchResults from "SmartSearchResults" /* 18937 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

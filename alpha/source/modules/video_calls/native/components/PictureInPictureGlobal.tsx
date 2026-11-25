@@ -1,10 +1,10 @@
-// Module ID: 19194
-// Function ID: 19195
+// Module ID: 19193
+// Function ID: 19194
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 4860, 6902, 9048, 502, 2131, 1071, 5662, 21, 5012, 1186, 575, 9984, 504, 6911, 9975, 8407, 9983, 10000, 9986, 8868, 10089, 10093, 10101, 10115, 10148, 9965, 10090, 9982, 6932, 1653, 5222, 5566, 19195, 1628, 2]
+// Dependencies: [32, 19, 17, 4860, 6902, 9048, 502, 2131, 1071, 5662, 21, 5012, 1186, 575, 9984, 504, 6911, 9975, 8407, 9983, 10000, 9986, 8868, 10089, 10093, 10101, 10115, 10148, 9965, 10090, 9982, 6932, 1653, 5222, 5566, 19194, 1628, 2]
 // Exports: default
 
-// Module 19194 (PictureInPictureGlobal)
+// Module 19193 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
@@ -18,7 +18,7 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8407 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9048 */;
 import transitionToActivityDefault from "transitionToActivity" /* 9965 */;
 import PictureInPictureDefault from "PictureInPicture" /* 9982 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19195 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -233,11 +233,11 @@ let closure_18 = react.memo(function PIPContent(channel) {
 let closure_19 = react.memo(function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f117256 = () => constants.TOP_RIGHT;
+  const f117276 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f117256);
+  [tmp2, tmp3] = react.useState(f117276);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_18, { channel }) };
-  _slicedToArray(react.useState(f117256), 2);
+  _slicedToArray(react.useState(f117276), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 });

@@ -1,10 +1,10 @@
-// Module ID: 20325
-// Function ID: 20326
+// Module ID: 20328
+// Function ID: 20329
 // Name: receiveNotification
 // Dependencies: [5, 5816, 5744, 502, 4861, 1386, 6811, 1071, 6783, 4867, 13334, 3, 5694, 1112, 5716, 5189, 1107, 7800, 6095, 8558, 8571, 5188, 18206, 6918, 6102, 6349, 7813, 7815, 1255, 5982, 1378, 12248, 11, 18204, 8207, 10, 8208, 5818, 15054, 13336, 504, 13769, 8924, 5727, 1091, 12119, 8881, 8875, 572, 6099, 1098, 8406, 5815, 2]
 // Exports: default
 
-// Module 20325 (receiveNotification)
+// Module 20328 (receiveNotification)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -36,7 +36,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f120197 = (arg0) => {
+const f120236 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -48,7 +48,7 @@ function onStageConnectionError() {
   open("STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC", obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f120197);
+  const promise = new Promise(f120236);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -973,7 +973,7 @@ function receiveNotification_(data, isAppStartupNavigation) {
   const maybeAckNotificationCenter2 = function maybeAckNotificationCenter() {
     return obj(...arguments);
   };
-  const f135241 = () => {
+  const f135293 = () => {
     obj = router_utils;
     const obj2 = { navigationReplace: true, openChannel: true, isAppStartupNavigation };
     obj.transitionTo(gesture.CHANNEL(data.guild_id, data.channel_id), obj2);
@@ -1191,10 +1191,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -1365,10 +1365,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -1539,10 +1539,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -1713,10 +1713,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -1887,10 +1887,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -2061,10 +2061,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -2235,10 +2235,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -2409,10 +2409,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -2583,10 +2583,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }
@@ -2757,10 +2757,10 @@ function receiveNotification_(data, isAppStartupNavigation) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f120197;
+          fn = f120236;
           let self2 = this;
           promise = new Promise(fn);
-          fn2 = f135241;
+          fn2 = f135293;
           promise.then(fn2);
           break;
         }

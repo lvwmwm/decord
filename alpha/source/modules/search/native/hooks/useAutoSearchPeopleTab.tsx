@@ -1,10 +1,10 @@
-// Module ID: 18987
-// Function ID: 18988
+// Module ID: 18986
+// Function ID: 18987
 // Name: useAutoSearchPeopleTab
 // Dependencies: [19, 13248, 13250, 10401, 13265, 12, 13234, 2]
 // Exports: useAutoSearchPeopleTab
 
-// Module 18987 (useAutoSearchPeopleTab)
+// Module 18986 (useAutoSearchPeopleTab)
 import _mod12 from "module_12" /* 12 */;
 import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 10401 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13234 */;

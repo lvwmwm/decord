@@ -1,10 +1,10 @@
-// Module ID: 19999
-// Function ID: 20000
+// Module ID: 20002
+// Function ID: 20003
 // Name: RoleIconUploadUtils
 // Dependencies: [5, 1071, 1389, 1412, 1491, 2]
 // Exports: fetchCustomEmojiAsPngDataUri
 
-// Module 19999 (RoleIconUploadUtils)
+// Module 20002 (RoleIconUploadUtils)
 import Constants from "Constants" /* 1071 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;

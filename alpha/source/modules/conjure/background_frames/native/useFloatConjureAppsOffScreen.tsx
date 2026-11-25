@@ -1,10 +1,10 @@
-// Module ID: 19330
-// Function ID: 19331
+// Module ID: 19329
+// Function ID: 19330
 // Name: useFloatConjureAppsOffScreen
 // Dependencies: [19, 18321, 15901, 504, 6908, 2]
 // Exports: default
 
-// Module 19330 (useFloatConjureAppsOffScreen)
+// Module 19329 (useFloatConjureAppsOffScreen)
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6908 */;
 import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 15901 */;
 import react from "react" /* 19 */;

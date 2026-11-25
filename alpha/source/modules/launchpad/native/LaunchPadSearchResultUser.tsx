@@ -1,9 +1,9 @@
-// Module ID: 19297
-// Function ID: 19298
+// Module ID: 19296
+// Function ID: 19297
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 5013, 2188, 4861, 5983, 12407, 6136, 1071, 6137, 21, 5012, 575, 18910, 7813, 5618, 504, 11, 6919, 19286, 6121, 18911, 19287, 1186, 9481, 18913, 5068, 10593, 5673, 19288, 18069, 16878, 2]
+// Dependencies: [19, 5013, 2188, 4861, 5983, 12407, 6136, 1071, 6137, 21, 5012, 575, 18909, 7813, 5618, 504, 11, 6919, 19285, 6121, 18910, 19286, 1186, 9481, 18912, 5068, 10593, 5673, 19287, 18069, 16878, 2]
 
-// Module 19297 (LaunchPadSearchResultUser)
+// Module 19296 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,12 +13,12 @@ import ReadStateConstants from "ReadStateConstants" /* 6137 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
 import isStreamingDefault from "isStreaming" /* 9481 */;
 import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 18069 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18910 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 18911 */;
-import renderChannelContentDefault from "renderChannelContent" /* 18913 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19286 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 19287 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 19288 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18909 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18910 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18912 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19285 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 19286 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 19287 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import LocaleStore from "LocaleStore" /* 2188 */;

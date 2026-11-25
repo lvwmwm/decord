@@ -1,12 +1,12 @@
-// Module ID: 18915
-// Function ID: 18916
+// Module ID: 18914
+// Function ID: 18915
 // Name: GuildTextChannelRow
-// Dependencies: [19, 8977, 21, 11, 18903, 13241, 18906, 2]
+// Dependencies: [19, 8977, 21, 11, 18902, 13241, 18905, 2]
 
-// Module 18915 (GuildTextChannelRow)
+// Module 18914 (GuildTextChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import SearchConstants from "SearchConstants" /* 8977 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 18903 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 18902 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

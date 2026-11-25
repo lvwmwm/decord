@@ -1,9 +1,9 @@
-// Module ID: 18990
-// Function ID: 18991
+// Module ID: 18989
+// Function ID: 18990
 // Name: SearchAutocompleteStore
 // Dependencies: [4861, 4924, 4883, 4915, 5069, 1386, 13244, 1071, 6955, 13241, 8908, 5068, 5902, 6959, 6838, 13245, 13242, 504, 572, 2]
 
-// Module 18990 (SearchAutocompleteStore)
+// Module 18989 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserUtilsDefault from "UserUtils" /* 5068 */;

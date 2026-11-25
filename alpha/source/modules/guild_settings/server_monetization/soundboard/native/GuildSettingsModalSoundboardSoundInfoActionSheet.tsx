@@ -1,10 +1,10 @@
-// Module ID: 19956
-// Function ID: 19957
+// Module ID: 19959
+// Function ID: 19960
 // Name: GuildSettingsModalSoundboardSoundInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6892, 21, 504, 19951, 6016, 1112, 1186, 10361, 5693, 5240, 7476, 575, 6109, 6113, 7136, 9582, 19947, 5719, 2]
+// Dependencies: [5, 32, 19, 17, 6892, 21, 504, 19954, 6016, 1112, 1186, 10361, 5693, 5240, 7476, 575, 6109, 6113, 7136, 9582, 19950, 5719, 2]
 
-// Module 19956 (GuildSettingsModalSoundboardSoundInfoActionSheet)
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19947 */;
+// Module 19959 (GuildSettingsModalSoundboardSoundInfoActionSheet)
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19950 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

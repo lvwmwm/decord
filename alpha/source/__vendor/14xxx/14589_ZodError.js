@@ -95,7 +95,7 @@ let items = [Object.prototype, Error.prototype];
 const weakSet = new WeakSet(items);
 function initializer(arg0, arg1) {
   function get() {
-    const tmp = f106519(this);
+    const tmp = f106540(this);
     Object.defineProperty(this, addIssues_str, { value: tmp, configurable: true, writable: true });
     return tmp;
   }
@@ -111,7 +111,7 @@ function initializer(arg0, arg1) {
   if (!weakSet.has(prototypeOf)) {
     obj.add(prototypeOf);
     const format_str = "format";
-    const f106516 = (arg0) => {
+    const f106537 = (arg0) => {
       let closure_0 = arg0;
       return (arg0) => closure_2_5.formatError(closure_0, arg0);
     };
@@ -119,7 +119,7 @@ function initializer(arg0, arg1) {
     const obj2 = { configurable: true, enumerable: false, get, set };
     Object.defineProperty(prototypeOf, "format", obj2);
     const flatten_str = "flatten";
-    const f106517 = (arg0) => {
+    const f106538 = (arg0) => {
       let closure_0 = arg0;
       return (arg0) => closure_2_5.flattenError(closure_0, arg0);
     };
@@ -127,7 +127,7 @@ function initializer(arg0, arg1) {
     const obj3 = { configurable: true, enumerable: false, get, set };
     Object.defineProperty(prototypeOf, "flatten", obj3);
     const addIssue_str = "addIssue";
-    const f106518 = (arg0) => {
+    const f106539 = (arg0) => {
       let closure_0 = arg0;
       return (arg0) => {
         const issues = closure_0.issues;
@@ -139,7 +139,7 @@ function initializer(arg0, arg1) {
     const obj4 = { configurable: true, enumerable: false, get, set };
     Object.defineProperty(prototypeOf, "addIssue", obj4);
     const addIssues_str = "addIssues";
-    const f106519 = (arg0) => {
+    const f106540 = (arg0) => {
       let closure_0 = arg0;
       return (arg0) => {
         const issues = closure_0.issues;

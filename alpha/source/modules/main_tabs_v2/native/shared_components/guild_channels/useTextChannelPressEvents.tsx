@@ -1,10 +1,10 @@
-// Module ID: 19293
-// Function ID: 19294
+// Module ID: 19292
+// Function ID: 19293
 // Name: useTextChannelPressEvents
 // Dependencies: [19, 4861, 7813, 6095, 10693, 17785, 11360, 2]
 // Exports: useTextChannelPressEvents
 
-// Module 19293 (useTextChannelPressEvents)
+// Module 19292 (useTextChannelPressEvents)
 import transitionToChannel from "transitionToChannel" /* 6095 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
 import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 10693 */;

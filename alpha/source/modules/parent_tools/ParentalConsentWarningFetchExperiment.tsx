@@ -1,10 +1,10 @@
-// Module ID: 19781
-// Function ID: 19782
+// Module ID: 19780
+// Function ID: 19781
 // Name: ParentalConsentWarningFetchExperiment
 // Dependencies: [1450, 2]
 // Exports: isParentalConsentWarningFetchEnabled
 
-// Module 19781 (ParentalConsentWarningFetchExperiment)
+// Module 19780 (ParentalConsentWarningFetchExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

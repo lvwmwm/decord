@@ -1,10 +1,10 @@
-// Module ID: 20195
-// Function ID: 20196
+// Module ID: 20198
+// Function ID: 20199
 // Name: ActionableNotice
 // Dependencies: [19, 17, 21, 5012, 5603, 5610, 2]
 // Exports: default
 
-// Module 20195 (ActionableNotice)
+// Module 20198 (ActionableNotice)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5603 */;
 import components_Button_Button from "components/Button/Button" /* 5610 */;

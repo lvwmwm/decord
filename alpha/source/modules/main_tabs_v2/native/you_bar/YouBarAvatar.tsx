@@ -434,7 +434,7 @@ function YouBarAvatar(transitionState) {
     const obj4 = { style: items5, children: closure_22(Avatar, obj5) };
     items5 = [rect, animatedStyle];
     const View = sharedValue(1653).View;
-    obj5 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy91c2VyX3NldHRpbmdzL2Rldl90b29scw==" };
+    obj5 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/modules/user_settings/authorized_apps" };
     Avatar = tmp(1186).Avatar;
     if (OFFLINE === StatusTypes.UNKNOWN) {
       OFFLINE = StatusTypes.OFFLINE;

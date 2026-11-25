@@ -1,9 +1,9 @@
-// Module ID: 19425
-// Function ID: 19426
+// Module ID: 19424
+// Function ID: 19425
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6902, 5820, 11734, 11732, 19321, 11737, 5662, 21, 19426, 1653, 9753, 1706, 11733, 504, 5576, 575, 11739, 11488, 5613, 11764, 11743, 11742, 7023, 6046, 19386, 12, 5021, 1112, 5073, 2]
+// Dependencies: [32, 19, 17, 6902, 5820, 11734, 11732, 19320, 11737, 5662, 21, 19425, 1653, 9753, 1706, 11733, 504, 5576, 575, 11739, 11488, 5613, 11764, 11743, 11742, 7023, 6046, 19385, 12, 5021, 1112, 5073, 2]
 
-// Module 19425 (VoicePanelCardView)
+// Module 19424 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
@@ -13,8 +13,8 @@ import CallConstants from "CallConstants" /* 5662 */;
 import react2 from "react" /* 6046 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11737 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19321 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 19426 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19320 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 19425 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

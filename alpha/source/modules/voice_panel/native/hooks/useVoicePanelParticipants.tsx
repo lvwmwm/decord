@@ -1,10 +1,10 @@
-// Module ID: 19386
-// Function ID: 19387
+// Module ID: 19385
+// Function ID: 19386
 // Name: useVoicePanelParticipants
 // Dependencies: [32, 19, 6902, 6822, 502, 4861, 5820, 5660, 5823, 11734, 1071, 10229, 18189, 504, 17905, 11733, 11736, 2]
 // Exports: default, useChunkedParticipants
 
-// Module 19386 (useVoicePanelParticipants)
+// Module 19385 (useVoicePanelParticipants)
 import Constants from "Constants" /* 1071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

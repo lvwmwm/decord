@@ -1,16 +1,16 @@
-// Module ID: 19430
-// Function ID: 19431
+// Module ID: 19429
+// Function ID: 19430
 // Name: VoicePanelUserSheet
-// Dependencies: [19, 17, 4861, 4954, 1386, 1071, 21, 5012, 575, 6348, 6349, 14815, 6350, 504, 12858, 4837, 14814, 6102, 1112, 14824, 7813, 1653, 9025, 7711, 6776, 14888, 19429, 11127, 5240, 1186, 5699, 5603, 14837, 14891, 2]
+// Dependencies: [19, 17, 4861, 4954, 1386, 1071, 21, 5012, 575, 6348, 6349, 14815, 6350, 504, 12858, 4837, 14814, 6102, 1112, 14824, 7813, 1653, 9025, 7711, 6776, 14888, 19428, 11127, 5240, 1186, 5699, 5603, 14837, 14891, 2]
 // Exports: default
 
-// Module 19430 (VoicePanelUserSheet)
+// Module 19429 (VoicePanelUserSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6102 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
 import UserProfileActivity from "UserProfileActivity" /* 14837 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19429 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19428 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4861 */;

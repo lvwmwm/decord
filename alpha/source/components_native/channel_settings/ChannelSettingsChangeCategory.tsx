@@ -1,10 +1,10 @@
-// Module ID: 19131
-// Function ID: 19132
+// Module ID: 19130
+// Function ID: 19131
 // Name: ChannelSettingsChangeCategory
 // Dependencies: [32, 717, 19, 4861, 7437, 4883, 4944, 4954, 1386, 1071, 21, 5012, 575, 5073, 7438, 11498, 4949, 6960, 6015, 1112, 5628, 6113, 6109, 8046, 6084, 5603, 504, 1500, 12070, 38, 2]
 // Exports: default
 
-// Module 19131 (ChannelSettingsChangeCategory)
+// Module 19130 (ChannelSettingsChangeCategory)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -79,7 +79,7 @@ class ChannelSettingsChangeCategory extends Component {
   handleSetCategory(id) {
     let obj7;
     let parent_id;
-    const f133844 = () => closure_1_2.pop();
+    const f133885 = () => closure_1_2.pop();
     let self = this;
     _require = id;
     function saveUpdates() {
@@ -92,7 +92,7 @@ class ChannelSettingsChangeCategory extends Component {
       } else {
         const obj = GuildActionCreatorsDefault;
         const batchChannelUpdateResult = obj.batchChannelUpdate(tmp, GuildCategoryStore);
-        return batchChannelUpdateResult.then(f133844);
+        return batchChannelUpdateResult.then(f133885);
       }
     }
     const props = this.props;
@@ -209,7 +209,7 @@ class ChannelSettingsChangeCategory extends Component {
                           } else {
                             const obj = channel(channel1[17]);
                             const batchChannelUpdateResult = obj.batchChannelUpdate(tmp, closure_1_7);
-                            batchChannelUpdateResult.then(f133844);
+                            batchChannelUpdateResult.then(f133885);
                           }
                         },
                   onCancel: saveUpdates,
@@ -239,7 +239,7 @@ class ChannelSettingsChangeCategory extends Component {
           } else {
             const obj5 = GuildActionCreatorsDefault;
             let batchChannelUpdateResult = obj5.batchChannelUpdate(tmp26, GuildCategoryStore);
-            batchChannelUpdateResult.then(f133844);
+            batchChannelUpdateResult.then(f133885);
           }
         });
       }

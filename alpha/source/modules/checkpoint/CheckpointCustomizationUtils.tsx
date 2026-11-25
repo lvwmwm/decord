@@ -37,7 +37,7 @@ let WEARABLE;
 let WEARABLE2;
 let c3;
 let closure_4;
-const f89759 = (item) => {
+const f89780 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -302,7 +302,7 @@ export function getChamferedRectPoints(width, height, arg2) {
   items1[3] = items4;
   const items5 = [num, height - num];
   items1[4] = items5;
-  const mapped = items1.map(f89759);
+  const mapped = items1.map(f89780);
   return mapped.join(" ");
 }
 export const TRAIT_OPTION_STROKE_WIDTH = 2;
@@ -318,6 +318,6 @@ export function getTraitOptionShapePoints(width, height) {
   items1[3] = items4;
   const items5 = [1, height - 1];
   items1[4] = items5;
-  const mapped = items1.map(f89759);
+  const mapped = items1.map(f89780);
   return mapped.join(" ");
 }

@@ -1,10 +1,10 @@
-// Module ID: 19370
-// Function ID: 19371
+// Module ID: 19369
+// Function ID: 19370
 // Name: PlayableFrameBanner
 // Dependencies: [19, 16624, 21, 575, 5012, 1628, 504, 9886, 9888, 6847, 8350, 6843, 16515, 16514, 2]
 // Exports: default
 
-// Module 19370 (PlayableFrameBanner)
+// Module 19369 (PlayableFrameBanner)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import QuestTypes from "QuestTypes" /* 6843 */;

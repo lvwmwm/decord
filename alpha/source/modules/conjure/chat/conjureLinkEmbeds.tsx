@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 
 let c0, c1, c11, c12, set2;
 
-const f106725 = (item) => {
+const f106746 = (item) => {
   obj = /^https?:\/\//i;
   return obj.test(item);
 };
@@ -28,7 +28,7 @@ function conjureLinkUrls(arr) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f106725));
+    set = new Set(match.filter(f106746));
     HermesBuiltin.arraySpread(items, set, 0);
     return items.slice(0, 4);
   } else {
@@ -284,7 +284,7 @@ export function readyConjureLinkEmbeds(trimmed) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(match.filter(f106725));
+    set = new Set(match.filter(f106746));
     HermesBuiltin.arraySpread(items, set, 0);
     substr = items.slice(0, 4);
   } else {
@@ -315,7 +315,7 @@ export function useConjureLinkPrefetch(arg0) {
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(match.filter(f106725));
+      set = new Set(match.filter(f106746));
       const items = [];
       const tmp6 = set;
       HermesBuiltin.arraySpread(items, set, 0);

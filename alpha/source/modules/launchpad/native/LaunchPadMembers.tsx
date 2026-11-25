@@ -1,9 +1,9 @@
-// Module ID: 19298
-// Function ID: 19299
+// Module ID: 19297
+// Function ID: 19298
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 4861, 4915, 21, 5012, 563, 13100, 18956, 12036, 5603, 1112, 2]
+// Dependencies: [19, 17, 4861, 4915, 21, 5012, 563, 13100, 18955, 12036, 5603, 1112, 2]
 
-// Module 19298 (LaunchPadMembers)
+// Module 19297 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function LaunchPadMembers() {
         }
       }
     }
-    return { channelId: "channel_id", type: -1102486149901537600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+    return { channelId: "channel_id", type: "<string:12144899>" };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;

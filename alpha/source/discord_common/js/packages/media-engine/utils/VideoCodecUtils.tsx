@@ -10,8 +10,8 @@ import size from "module_2" /* 2 */;
 
 let encode, set;
 
-const f89011 = (name) => name.name;
-const f89013 = (codec) => {
+const f89032 = (name) => name.name;
+const f89034 = (codec) => {
   codec = codec.codec;
   let str = "AV1";
   if ("AV1X" !== codec) {
@@ -49,7 +49,7 @@ export function filterParsedVideoCodecs(parseNativeCodecsResult, experimentCodec
     const _Set = Set;
     const self = this;
     const self2 = this;
-    new Set(items.map(f89011));
+    new Set(items.map(f89032));
     const item1 = parseNativeCodecsResult.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -80,7 +80,7 @@ export function filterVideoCodecs(arg0, arr) {
     flag = false;
   }
   const parsed = JSON.parse(arg0);
-  const mapped = parsed.map(f89013);
+  const mapped = parsed.map(f89034);
   if (flag === undefined) {
     flag = false;
   }
@@ -105,7 +105,7 @@ export function filterVideoCodecs(arg0, arr) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(items.map(f89011));
+    set = new Set(items.map(f89032));
     const item1 = mapped.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -118,7 +118,7 @@ export function filterVideoCodecs(arg0, arr) {
 }
 export function parseNativeCodecs(arg0) {
   const parsed = JSON.parse(arg0);
-  return parsed.map(f89013);
+  return parsed.map(f89034);
 }
 export function codecNameToPayloadName(name) {
   let str = "AV1X";

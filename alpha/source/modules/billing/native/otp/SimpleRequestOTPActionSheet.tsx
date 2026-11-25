@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f111831 = () => {
+  const f111852 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -282,8 +282,8 @@ function GiftPurchaseSKUView(selectedSkuId) {
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
   closure_8 = tmp(11529)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f111831, items5), 2);
-  tmp3(obj.useMemo(f111831, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f111852, items5), 2);
+  tmp3(obj.useMemo(f111852, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

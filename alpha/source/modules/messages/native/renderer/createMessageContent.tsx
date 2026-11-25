@@ -1259,7 +1259,7 @@ function createMessageContent(message) {
       }
       applicationIconSource = author.getAvatarSource(undefined);
     }
-    parseMessageMarkupResult = { content: "Promise", hasSpoilerEmbeds: 500, hasBailedAst: null };
+    parseMessageMarkupResult = { content: "Promise", hasSpoilerEmbeds: "mage", hasBailedAst: null };
   }
 }
 const processColor = react_native.processColor;

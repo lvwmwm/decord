@@ -27,11 +27,11 @@ export function useLinking(ref, enabled) {
   let current = enabled.getInitialURL;
   if (current === undefined) {
     current = function f() {
-      const f121992 = (arg0) => {
+      const f122031 = (arg0) => {
         const timerId = setTimeout(arg0, 150);
       };
-      const items = [filter.getInitialURL(), new Promise(f121992)];
-      new Promise(f121992);
+      const items = [filter.getInitialURL(), new Promise(f122031)];
+      new Promise(f122031);
       return race(items);
     };
   }

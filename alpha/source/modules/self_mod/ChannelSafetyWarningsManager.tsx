@@ -1,12 +1,12 @@
-// Module ID: 19616
-// Function ID: 19617
+// Module ID: 19615
+// Function ID: 19616
 // Name: ChannelSafetyWarningsManager
-// Dependencies: [4861, 4915, 11465, 11810, 19617, 7444, 2]
+// Dependencies: [4861, 4915, 11465, 11810, 19616, 7444, 2]
 
-// Module 19616 (ChannelSafetyWarningsManager)
+// Module 19615 (ChannelSafetyWarningsManager)
 import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11465 */;
 import InappropriateConversationUtils from "InappropriateConversationUtils" /* 11810 */;
-import showTakeoverModal2 from "showTakeoverModal" /* 19617 */;
+import showTakeoverModal2 from "showTakeoverModal" /* 19616 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;

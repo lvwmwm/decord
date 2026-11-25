@@ -1,19 +1,19 @@
-// Module ID: 19363
-// Function ID: 19364
+// Module ID: 19362
+// Function ID: 19363
 // Name: FramePanelFocusedView
-// Dependencies: [19, 6905, 6906, 5638, 21, 504, 19344, 19360, 19364, 19365, 19367, 9954, 18855, 18555, 15905, 19369, 19370, 2]
+// Dependencies: [19, 6905, 6906, 5638, 21, 504, 19343, 19359, 19363, 19364, 19366, 9954, 18854, 18556, 15905, 19368, 19369, 2]
 
-// Module 19363 (FramePanelFocusedView)
+// Module 19362 (FramePanelFocusedView)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 9954 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 18555 */;
-import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 18855 */;
-import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19344 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19360 */;
-import PlayableActivityFrameHeaderDefault from "PlayableActivityFrameHeader" /* 19365 */;
-import FramePanelHeaderDefault from "FramePanelHeader" /* 19367 */;
-import PlayableFrameImpressionTrackerDefault from "PlayableFrameImpressionTracker" /* 19369 */;
-import PlayableFrameBannerDefault from "PlayableFrameBanner" /* 19370 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 18556 */;
+import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 18854 */;
+import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19343 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19359 */;
+import PlayableActivityFrameHeaderDefault from "PlayableActivityFrameHeader" /* 19364 */;
+import FramePanelHeaderDefault from "FramePanelHeader" /* 19366 */;
+import PlayableFrameImpressionTrackerDefault from "PlayableFrameImpressionTracker" /* 19368 */;
+import PlayableFrameBannerDefault from "PlayableFrameBanner" /* 19369 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6905 */;
 import FramesConstants from "FramesConstants" /* 6906 */;

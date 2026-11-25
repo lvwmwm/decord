@@ -189,7 +189,7 @@ export default function createChannelStream(roleStyle) {
     let tmp88;
     let tmp9;
     let tmp99;
-    const f128547 = (message) => {
+    const f128586 = (message) => {
       obj = { message, updateMessageIds, forceRender };
       return chatManager.determineChangeType(obj, false) !== constants.NOOP;
     };
@@ -345,8 +345,8 @@ export default function createChannelStream(roleStyle) {
         obj17.changeType = determineChangeType(message);
         let tmp148 = obj17.changeType === constants.NOOP;
         if (tmp148) {
-          tmp148 = null != length && tmp149 !== message.length || items.some(f128547);
-          null != length && tmp149 !== message.length || items.some(f128547);
+          tmp148 = null != length && tmp149 !== message.length || items.some(f128586);
+          null != length && tmp149 !== message.length || items.some(f128586);
         }
         if (tmp148) {
           obj17.changeType = constants.UPDATE;

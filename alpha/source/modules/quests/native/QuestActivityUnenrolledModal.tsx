@@ -1,10 +1,10 @@
-// Module ID: 19354
-// Function ID: 19355
+// Module ID: 19353
+// Function ID: 19354
 // Name: QuestActivityUnenrolledModal
-// Dependencies: [5, 32, 19, 17, 8323, 19353, 6840, 21, 5012, 575, 1358, 5221, 5034, 504, 7484, 8347, 9850, 13787, 6843, 1412, 9852, 8350, 6099, 5074, 16551, 16659, 6084, 5699, 13783, 5603, 1112, 5610, 7151, 7717, 7718, 13790, 11570, 2]
+// Dependencies: [5, 32, 19, 17, 8323, 19352, 6840, 21, 5012, 575, 1358, 5221, 5034, 504, 7484, 8347, 9850, 13787, 6843, 1412, 9852, 8350, 6099, 5074, 16551, 16659, 6084, 5699, 13783, 5603, 1112, 5610, 7151, 7717, 7718, 13790, 11570, 2]
 // Exports: default
 
-// Module 19354 (QuestActivityUnenrolledModal)
+// Module 19353 (QuestActivityUnenrolledModal)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
@@ -23,7 +23,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import QuestStore from "QuestStore" /* 8323 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19353 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19352 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;

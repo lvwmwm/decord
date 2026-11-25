@@ -1,10 +1,10 @@
-// Module ID: 20301
-// Function ID: 20302
+// Module ID: 20304
+// Function ID: 20305
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1386, 21, 5012, 575, 1186, 504, 20299, 20302, 1412, 5603, 1112, 3174, 6121, 2846, 8666, 16382, 16333, 5694, 6084, 20303, 12822, 16338, 2]
+// Dependencies: [19, 17, 1386, 21, 5012, 575, 1186, 504, 20302, 20305, 1412, 5603, 1112, 3174, 6121, 2846, 8666, 16382, 16333, 5694, 6084, 20306, 12822, 16338, 2]
 // Exports: default
 
-// Module 20301 (PendingRequestList)
+// Module 20304 (PendingRequestList)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
@@ -99,11 +99,11 @@ class PendingRequestRow {
     if (avatar == null) {
       avatar = request.parent_avatar;
     }
-    const tmp2Result = request(20299);
+    const tmp2Result = request(20302);
     const pendingRequestResolution = tmp2Result.usePendingRequestResolution(request.parent_id);
     ({ isConnected, isResolved } = pendingRequestResolution);
     const obj2 = { style: tmp.row, children: items1 };
-    const tmp2Result2 = request(20302);
+    const tmp2Result2 = request(20305);
     const result = tmp2Result2.formatPendingRequestSentText(request.created_at);
     const obj3 = { avatarStyle: tmp.avatar, source: obj6.getUserAvatarSource(obj4), disablePlaceholder: true };
     const Avatar = tmp2(1186).Avatar;

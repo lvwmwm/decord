@@ -1,17 +1,17 @@
-// Module ID: 20162
-// Function ID: 20163
+// Module ID: 20165
+// Function ID: 20166
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 20152, 16765, 21, 16785, 5693, 1112, 20163, 20148, 20164, 2]
+// Dependencies: [5, 32, 19, 20155, 16765, 21, 16785, 5693, 1112, 20166, 20151, 20167, 2]
 // Exports: default
 
-// Module 20162 (GuildRoleSubscriptionTierCreationModal)
+// Module 20165 (GuildRoleSubscriptionTierCreationModal)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5693 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16785 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20152 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20155 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16765 */;
 import size from "module_2" /* 2 */;
 
@@ -125,9 +125,9 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = obj);
     return items;
   }, []);
-  const EditStateContextProvider = guildId(20163).EditStateContextProvider;
+  const EditStateContextProvider = guildId(20166).EditStateContextProvider;
   let obj3 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20148).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20151).RoleSubscriptionSettingsDisabledContextProvider;
   let obj4 = {
     guildId,
     modalKey,

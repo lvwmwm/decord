@@ -1,9 +1,9 @@
-// Module ID: 19282
-// Function ID: 19283
+// Module ID: 19281
+// Function ID: 19282
 // Name: CutoutImage
 // Dependencies: [32, 19, 21, 1268, 7912, 5699, 14880, 2]
 
-// Module 19282 (CutoutImage)
+// Module 19281 (CutoutImage)
 import v1 from "v1" /* 1268 */;
 import FastImageDefault from "FastImage" /* 5699 */;
 import inlineStylesDefault from "inlineStyles" /* 7912 */;

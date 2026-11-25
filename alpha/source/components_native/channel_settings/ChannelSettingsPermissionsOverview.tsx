@@ -1,10 +1,10 @@
-// Module ID: 19105
-// Function ID: 19106
+// Module ID: 19104
+// Function ID: 19105
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 4919, 4861, 4918, 4883, 4954, 1386, 1071, 21, 5012, 575, 6015, 1112, 5628, 4949, 12070, 8486, 8070, 12, 6109, 6113, 14025, 1500, 13740, 10751, 16873, 504, 2117, 11390, 19106, 13700, 8962, 7813, 1653, 2]
+// Dependencies: [32, 5, 19, 17, 4919, 4861, 4918, 4883, 4954, 1386, 1071, 21, 5012, 575, 6015, 1112, 5628, 4949, 12070, 8486, 8070, 12, 6109, 6113, 14025, 1500, 13740, 10751, 16873, 504, 2117, 11390, 19105, 13700, 8962, 7813, 1653, 2]
 // Exports: default
 
-// Module 19105 (ChannelSettingsPermissionsOverview)
+// Module 19104 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,7 +17,7 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
 import RoleLabel from "RoleLabel" /* 10751 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11390 */;
 import CircleMinusIcon2 from "CircleMinusIcon" /* 16873 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19106 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19105 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;

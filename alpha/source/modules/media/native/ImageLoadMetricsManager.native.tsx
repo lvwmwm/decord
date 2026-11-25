@@ -1,13 +1,13 @@
-// Module ID: 19695
-// Function ID: 19696
+// Module ID: 19694
+// Function ID: 19695
 // Name: ImageLoadMetricsManager
-// Dependencies: [17, 1245, 1193, 5950, 1071, 19696, 1450, 7444, 19697, 1255, 2]
+// Dependencies: [17, 1245, 1193, 5950, 1071, 19695, 1450, 7444, 19696, 1255, 2]
 
-// Module 19695 (ImageLoadMetricsManager)
+// Module 19694 (ImageLoadMetricsManager)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import react_nativeDefault from "react-native" /* 19696 */;
-import buildImageLoadMetricProperties from "buildImageLoadMetricProperties" /* 19697 */;
+import react_nativeDefault from "react-native" /* 19695 */;
+import buildImageLoadMetricProperties from "buildImageLoadMetricProperties" /* 19696 */;
 import react_native from "react-native" /* 17 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
@@ -21,7 +21,7 @@ let c3;
 ({ PixelRatio: c3, NativeEventEmitter } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
 const nativeEventEmitter = new NativeEventEmitter(react_nativeDefault);
-let obj = { name: "2026-10-mobile-image-load-metrics", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: false }, 2: { enabled: true } } };
+let obj = { name: "2026-10-mobile-image-load-metrics", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_9 = ApexExperiment.createApexExperiment(obj);
 class ImageLoadMetricsManager extends AutomaticLifecycleManager {
   constructor() {

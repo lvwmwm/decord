@@ -1,16 +1,16 @@
-// Module ID: 18907
-// Function ID: 18908
+// Module ID: 18906
+// Function ID: 18907
 // Name: ChannelContent
-// Dependencies: [19, 17, 6092, 6137, 21, 5012, 1378, 10598, 7097, 18908, 7130, 7908, 17789, 5603, 2]
+// Dependencies: [19, 17, 6092, 6137, 21, 5012, 1378, 10598, 7097, 18907, 7130, 7908, 17789, 5603, 2]
 // Exports: renderChannelContent
 
-// Module 18907 (ChannelContent)
+// Module 18906 (ChannelContent)
 import react_native from "react-native" /* 17 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6092 */;
 import ReadStateConstants from "ReadStateConstants" /* 6137 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7097 */;
 import ChannelListLayout from "ChannelListLayout" /* 10598 */;
-import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 18908 */;
+import guild_channels_ChannelTitleDefault from "guild_channels/ChannelTitle" /* 18907 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5012 */;

@@ -1,10 +1,10 @@
-// Module ID: 19364
-// Function ID: 19365
+// Module ID: 19363
+// Function ID: 19364
 // Name: useMainFramePlayable
 // Dependencies: [6905, 16624, 6906, 504, 2]
 // Exports: default
 
-// Module 19364 (useMainFramePlayable)
+// Module 19363 (useMainFramePlayable)
 import get_initialized from "get initialized" /* 504 */;
 import FramesConstants from "FramesConstants" /* 6906 */;
 import FramesStore from "FramesStore" /* 6905 */;

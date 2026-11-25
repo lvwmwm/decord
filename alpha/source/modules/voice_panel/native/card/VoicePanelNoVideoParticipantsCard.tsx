@@ -1,9 +1,9 @@
-// Module ID: 19436
-// Function ID: 19437
+// Module ID: 19435
+// Function ID: 19436
 // Name: VoicePanelNoVideoParticipantsCard
 // Dependencies: [19, 17, 21, 5012, 575, 11733, 6098, 7024, 5603, 1112, 2]
 
-// Module 19436 (VoicePanelNoVideoParticipantsCard)
+// Module 19435 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6098 */;

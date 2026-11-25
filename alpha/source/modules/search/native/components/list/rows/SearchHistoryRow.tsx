@@ -1,9 +1,9 @@
-// Module ID: 18901
-// Function ID: 18902
+// Module ID: 18900
+// Function ID: 18901
 // Name: SearchHistoryRow
-// Dependencies: [5, 19, 17, 4861, 6901, 1386, 8977, 21, 5012, 575, 13265, 6121, 7216, 18890, 13261, 18884, 5603, 7376, 563, 18900, 6103, 7813, 18899, 18902, 18915, 1112, 2]
+// Dependencies: [5, 19, 17, 4861, 6901, 1386, 8977, 21, 5012, 575, 13265, 6121, 7216, 18889, 13261, 18883, 5603, 7376, 563, 18899, 6103, 7813, 18898, 18901, 18914, 1112, 2]
 
-// Module 18901 (SearchHistoryRow)
+// Module 18900 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5603 */;
@@ -46,7 +46,7 @@ function SearchHistoryTextRow(searchContext) {
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_12();
   dependencyMap = tmp;
-  let obj = searchContext(18890);
+  let obj = searchContext(18889);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -59,7 +59,7 @@ function SearchHistoryTextRow(searchContext) {
   let obj2 = { style: tmp.textContainer, children: items1 };
   const tags = searchHistoryItem.tags;
   let mapped;
-  const SearchListRow = searchContext(18884).SearchListRow;
+  const SearchListRow = searchContext(18883).SearchListRow;
   const tmp7 = closure_11;
   if (tags != null) {
     mapped = tags.map((children) => {

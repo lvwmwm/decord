@@ -1,10 +1,10 @@
-// Module ID: 19480
-// Function ID: 19481
+// Module ID: 19479
+// Function ID: 19480
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 4860, 6905, 6934, 11734, 11732, 19321, 5638, 6906, 21, 5012, 11733, 11743, 11741, 19389, 1653, 19320, 11738, 5613, 5222, 1186, 5272, 1706, 19397, 5921, 504, 4933, 9954, 10004, 8577, 1112, 19481, 7024, 19485, 19486, 5073, 2]
+// Dependencies: [19, 17, 4860, 6905, 6934, 11734, 11732, 19320, 5638, 6906, 21, 5012, 11733, 11743, 11741, 19388, 1653, 19319, 11738, 5613, 5222, 1186, 5272, 1706, 19396, 5921, 504, 4933, 9954, 10004, 8577, 1112, 19480, 7024, 19484, 19485, 5073, 2]
 // Exports: usePIPTileHandoff
 
-// Module 19480 (VoicePanelPIP)
+// Module 19479 (VoicePanelPIP)
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 5073 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
@@ -21,7 +21,7 @@ import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
 import FramesStore from "FramesStore" /* 6905 */;
 import VoicePanelStore from "VoicePanelStore" /* 6934 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19321 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19320 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
@@ -538,7 +538,7 @@ class VoicePanelPIPTiles {
         constructor(arg0) {
           closure_0 = arg0;
           allTouches = arg0.allTouches;
-          found = allTouches.filter(function() { /* body not rendered: F142309 */ });
+          found = allTouches.filter(function() { /* body not rendered: F142381 */ });
           if (0 !== found.length) {
             tmp4 = closure_2;
             tmp5 = closure_2(found);

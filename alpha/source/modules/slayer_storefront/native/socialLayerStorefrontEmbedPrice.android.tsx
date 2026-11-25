@@ -51,7 +51,7 @@ export function useFetchSocialLayerStorefrontEmbedPrices(singleSkuIds) {
   let items = [SKUStore];
   let items1 = [singleSkuIds];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const f127964 = (item) => {
+    const f128003 = (item) => {
       let items1;
       const value = closure_1_5.get(item);
       let tmp2;
@@ -69,8 +69,8 @@ export function useFetchSocialLayerStorefrontEmbedPrices(singleSkuIds) {
       }
       return items1;
     };
-    let items = [...new Set(singleSkuIds.flatMap(f127964))];
-    new Set(singleSkuIds.flatMap(f127964));
+    let items = [...new Set(singleSkuIds.flatMap(f128003))];
+    new Set(singleSkuIds.flatMap(f128003));
     return items;
   }, items1);
   let tmp2 = require("get initialized");

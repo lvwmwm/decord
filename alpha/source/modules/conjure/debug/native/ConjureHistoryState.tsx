@@ -1,10 +1,10 @@
-// Module ID: 18832
-// Function ID: 18833
+// Module ID: 18831
+// Function ID: 18832
 // Name: ConjureHistoryState
 // Dependencies: [19, 17, 21, 5012, 575, 5603, 1112, 4244, 2]
 // Exports: ConjureHistoryNotice, ConjureHistoryPlaceholder
 
-// Module 18832 (ConjureHistoryState)
+// Module 18831 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;

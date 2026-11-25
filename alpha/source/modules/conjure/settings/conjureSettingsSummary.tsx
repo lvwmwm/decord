@@ -1,10 +1,10 @@
-// Module ID: 18646
-// Function ID: 18647
+// Module ID: 18645
+// Function ID: 18646
 // Name: conjureSettingsSummary
-// Dependencies: [1112, 4244, 18607, 2]
+// Dependencies: [1112, 4244, 18606, 2]
 // Exports: conjureConnectedKeysSummary, conjureSettingsSummary
 
-// Module 18646 (conjureSettingsSummary)
+// Module 18645 (conjureSettingsSummary)
 import intl7 from "intl" /* 1112 */;
 import _modDef4244 from "module_4244" /* 4244 */;
 import size from "module_2" /* 2 */;

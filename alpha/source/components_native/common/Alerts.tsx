@@ -1,15 +1,15 @@
-// Module ID: 19200
-// Function ID: 19201
+// Module ID: 19199
+// Function ID: 19200
 // Name: Alerts
-// Dependencies: [19, 17, 5013, 15193, 15781, 11975, 21, 19201, 19202, 19206, 5012, 575, 504, 1653, 5073, 5222, 1706, 5613, 5614, 6016, 6079, 6074, 7017, 6022, 558, 19207, 2]
+// Dependencies: [19, 17, 5013, 15193, 15781, 11975, 21, 19200, 19201, 19205, 5012, 575, 504, 1653, 5073, 5222, 1706, 5613, 5614, 6016, 6079, 6074, 7017, 6022, 558, 19206, 2]
 
-// Module 19200 (Alerts)
+// Module 19199 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5073 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
 import OverlayViewDefault from "OverlayView" /* 6022 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19201 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19200 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5013 */;

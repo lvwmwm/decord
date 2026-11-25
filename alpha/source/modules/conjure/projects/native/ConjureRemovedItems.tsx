@@ -149,7 +149,7 @@ export default function ConjureRemovedItems(optionalItems) {
   items1[1] = metroRequire(ItemsBox, obj3);
   return metroImportDefault(Stack, obj);
 };
-export function formatWithAppTag(HmNT_r, targetAppName) {
+export function formatWithAppTag(x6FvsZ, targetAppName) {
   let Fragment;
   let items;
   let obj2;
@@ -160,7 +160,7 @@ export function formatWithAppTag(HmNT_r, targetAppName) {
   const format = intl.format;
   Fragment = react.Fragment;
   items[2] = metroRequire(BotTagDefault, {});
-  return format(HmNT_r, obj);
+  return format(x6FvsZ, obj);
 }
 export function ConjureRemoveEverythingField(checked) {
   let TableCheckboxRow;

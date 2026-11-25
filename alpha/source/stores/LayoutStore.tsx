@@ -116,7 +116,7 @@ class LayoutStore extends PersistedStore {
                   defaultSettings = tmp19.defaultSettings;
                 }
                 if (null == defaultSettings) {
-                  return { v: "dispatch" };
+                  return { v: "top" };
                 } else {
                   obj = { type: iter, id: v4Result, layoutId, zIndex: widgetsForLayout.length };
                   const merged = Object.assign(defaultSettings);
@@ -302,7 +302,7 @@ let items = [
     let closure_129_1;
     let items2;
     let pinnedWidgets;
-    const f130468 = (id) => {
+    const f130507 = (id) => {
       let rect = null;
       if (null != closure_1_0) {
         rect = closure_1_0[id];
@@ -332,9 +332,9 @@ let items = [
         let items = [];
         const items1 = [migrated, ];
         obj2 = { layouts: items2, widgets: items };
-        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f130468) };
+        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f130507) };
         items2 = [items1];
-        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f130468) };
+        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f130507) };
         return obj2;
       }
     }

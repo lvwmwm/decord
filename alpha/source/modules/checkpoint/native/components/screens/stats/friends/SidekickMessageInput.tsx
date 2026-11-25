@@ -72,7 +72,7 @@ export default function SidekickMessageInput(user) {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       let obj2;
-      const f141429 = (arg0) => {
+      const f141488 = (arg0) => {
         obj = { isSending: false };
         const merged = Object.assign(arg0);
         return obj;
@@ -120,7 +120,7 @@ export default function SidekickMessageInput(user) {
             }
           } else if (1 === c4) {
             c3 = 0;
-            closure_129_1(f141429);
+            closure_129_1(f141488);
             throw closure_2;
           } else {
             if (2 === c4) {
@@ -134,7 +134,7 @@ export default function SidekickMessageInput(user) {
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              closure_129_1(f141429);
+              closure_129_1(f141488);
               c5 = 3;
               obj = { value, done: true };
               return obj;
@@ -147,7 +147,7 @@ export default function SidekickMessageInput(user) {
               c3 = 1;
             }
             c3 = 0;
-            closure_129_1(f141429);
+            closure_129_1(f141488);
           }
           c5 = 3;
           return { value: "HermesInternal", done: "HermesInternal" };

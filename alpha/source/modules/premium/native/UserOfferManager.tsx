@@ -1,9 +1,9 @@
-// Module ID: 19824
-// Function ID: 19825
+// Module ID: 19823
+// Function ID: 19824
 // Name: UserOfferManager
 // Dependencies: [1386, 9097, 1082, 7444, 9225, 2108, 9273, 2]
 
-// Module 19824 (UserOfferManager)
+// Module 19823 (UserOfferManager)
 import Constants from "Constants" /* 1082 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
 import ACOMExperiments from "ACOMExperiments" /* 9225 */;

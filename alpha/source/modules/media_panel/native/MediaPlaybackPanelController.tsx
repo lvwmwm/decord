@@ -1,10 +1,10 @@
-// Module ID: 19543
-// Function ID: 19544
+// Module ID: 19542
+// Function ID: 19543
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 5013, 4860, 6934, 15933, 5638, 11735, 21, 1653, 1628, 19323, 15932, 504, 19544, 2]
+// Dependencies: [32, 19, 5013, 4860, 6934, 15933, 5638, 11735, 21, 1653, 1628, 19322, 15932, 504, 19543, 2]
 // Exports: default
 
-// Module 19543 (MediaPlaybackPanelController)
+// Module 19542 (MediaPlaybackPanelController)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11735 */;

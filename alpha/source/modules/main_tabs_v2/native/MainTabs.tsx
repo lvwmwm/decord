@@ -1,7 +1,7 @@
 // Module ID: 17663
 // Function ID: 17664
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5012, 575, 5184, 8973, 17664, 5576, 5073, 10546, 17665, 19004, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5184, 8973, 17664, 5576, 5073, 10546, 17665, 19003, 2]
 
 // Module 17663 (MainTabs)
 import nativeDefault from "native" /* 575 */;
@@ -85,7 +85,7 @@ const memoResult = react.memo(function MainTabs() {
   items6 = [metroRequire(ThemeContextProvider, obj4), ];
   let tmp12Result2 = null;
   if (null != styles.container) {
-    tmp12Result2 = tmp12(tmp(19004), {});
+    tmp12Result2 = tmp12(tmp(19003), {});
   }
   items6[1] = tmp12Result2;
   return metroRequire(React3, obj3);

@@ -23,7 +23,7 @@ let _encode;
 let _encodeAsync;
 let _parse;
 let _parseAsync;
-const f106421 = (item) => {
+const f106442 = (item) => {
   const items = [item, item];
   return items;
 };
@@ -237,7 +237,7 @@ function _enum(arr, zodLazy) {
   let fromEntriesResult = arr;
   if (Array.isArray(arr)) {
     const _Object = Object;
-    fromEntriesResult = Object.fromEntries(arr.map(f106421));
+    fromEntriesResult = Object.fromEntries(arr.map(f106442));
   }
   const ZodEnum = exports.ZodEnum;
   const obj = { type: "enum", entries: fromEntriesResult };
@@ -1186,7 +1186,7 @@ const obj7 = {
     let fromEntriesResult = keys;
     if (Array.isArray(keys)) {
       const _Object = Object;
-      fromEntriesResult = Object.fromEntries(keys.map(f106421));
+      fromEntriesResult = Object.fromEntries(keys.map(f106442));
     }
     const ZodEnum = exports.ZodEnum;
     const obj = { type: "enum", entries: fromEntriesResult };
@@ -1222,7 +1222,7 @@ const obj7 = {
   strip() {
     const clone = this.clone;
     util = require("util").util;
-    return clone(util.mergeDefs(this._zod.def, { catchall: "dispatch" }));
+    return clone(util.mergeDefs(this._zod.def, { catchall: "top" }));
   },
   extend(arg0) {
     util = require("util").util;
@@ -1663,7 +1663,7 @@ export function keyof(_zod) {
   let fromEntriesResult = keys;
   if (Array.isArray(keys)) {
     const _Object = Object;
-    fromEntriesResult = Object.fromEntries(keys.map(f106421));
+    fromEntriesResult = Object.fromEntries(keys.map(f106442));
   }
   const ZodEnum = exports.ZodEnum;
   const obj = { type: "enum", entries: fromEntriesResult };

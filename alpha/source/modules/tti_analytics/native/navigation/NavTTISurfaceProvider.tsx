@@ -1,10 +1,10 @@
-// Module ID: 18863
-// Function ID: 18864
+// Module ID: 18862
+// Function ID: 18863
 // Name: NavTTISurfaceProvider
 // Dependencies: [109, 19, 17, 5606, 21, 18331, 18329, 18332, 18322, 12517, 504, 12516, 2]
 // Exports: NavTTISurfaceProvider
 
-// Module 18863 (NavTTISurfaceProvider)
+// Module 18862 (NavTTISurfaceProvider)
 import react_native from "react-native" /* 17 */;
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12517 */;
 import useComponentRenderSpan from "useComponentRenderSpan" /* 18329 */;

@@ -1,10 +1,10 @@
-// Module ID: 18761
-// Function ID: 18762
+// Module ID: 18760
+// Function ID: 18761
 // Name: useConjurePublishScheduleProposal
 // Dependencies: [5, 32, 19, 6903, 504, 14696, 14697, 1112, 4244, 18483, 2]
 // Exports: default
 
-// Module 18761 (useConjurePublishScheduleProposal)
+// Module 18760 (useConjurePublishScheduleProposal)
 import _modDef4244 from "module_4244" /* 4244 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6903 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

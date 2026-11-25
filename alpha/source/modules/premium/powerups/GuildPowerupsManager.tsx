@@ -1,9 +1,9 @@
-// Module ID: 19674
-// Function ID: 19675
+// Module ID: 19673
+// Function ID: 19674
 // Name: GuildPowerupsManager
 // Dependencies: [4883, 4944, 5045, 8254, 7444, 4886, 7594, 13432, 13433, 13448, 17832, 5771, 13423, 10324, 2]
 
-// Module 19674 (GuildPowerupsManager)
+// Module 19673 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 4886 */;
 import shared_PlatformUtils from "shared/PlatformUtils" /* 5771 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 10324 */;

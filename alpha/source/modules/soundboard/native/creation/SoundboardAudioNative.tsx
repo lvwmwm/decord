@@ -1,10 +1,10 @@
-// Module ID: 19944
-// Function ID: 19945
+// Module ID: 19947
+// Function ID: 19948
 // Name: SoundboardAudioNative
 // Dependencies: [32, 5, 19, 17, 1378, 4969, 2]
 // Exports: loadSoundboardAudioPreview, trimSoundboardAudio, useIsSoundboardSoundCreationSupported
 
-// Module 19944 (SoundboardAudioNative)
+// Module 19947 (SoundboardAudioNative)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

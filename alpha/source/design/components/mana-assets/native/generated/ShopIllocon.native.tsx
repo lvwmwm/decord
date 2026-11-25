@@ -1,27 +1,27 @@
-// Module ID: 19232
-// Function ID: 19233
+// Module ID: 19231
+// Function ID: 19232
 // Name: ShopIllocon
-// Dependencies: [19, 21, 19233, 19234, 19235, 7230, 5699, 2]
+// Dependencies: [19, 21, 19232, 19233, 19234, 7230, 5699, 2]
 // Exports: ShopIllocon
 
-// Module 19232 (ShopIllocon)
+// Module 19231 (ShopIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5699 */;
 import react_native from "react-native" /* 7230 */;
+import _modDef19232 from "module_19232" /* 19232 */;
 import _modDef19233 from "module_19233" /* 19233 */;
 import _modDef19234 from "module_19234" /* 19234 */;
-import _modDef19235 from "module_19235" /* 19235 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19233 };
+let obj2 = { uri: _modDef19232 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef19234 };
+obj[2] = { uri: _modDef19233 };
+({ uri: _modDef19233 });
+obj[3] = { uri: _modDef19234 };
 ({ uri: _modDef19234 });
-obj[3] = { uri: _modDef19235 };
-({ uri: _modDef19235 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ShopIllocon.native.tsx");
 

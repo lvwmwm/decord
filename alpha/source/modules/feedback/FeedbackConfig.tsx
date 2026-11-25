@@ -1,9 +1,9 @@
-// Module ID: 19653
-// Function ID: 19654
+// Module ID: 19652
+// Function ID: 19653
 // Name: FeedbackConfig
 // Dependencies: [5820, 12118, 7531, 2]
 
-// Module 19653 (FeedbackConfig)
+// Module 19652 (FeedbackConfig)
 import HotspotStore from "HotspotStore" /* 7531 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
 import Constants from "Constants" /* 12118 */;

@@ -1,10 +1,10 @@
-// Module ID: 19186
-// Function ID: 19187
+// Module ID: 19185
+// Function ID: 19186
 // Name: SettingsOverviewScreen
 // Dependencies: [19, 2188, 9513, 21, 1112, 1254, 17051, 2173, 16298, 504, 14209, 11914, 16140, 2]
 // Exports: default
 
-// Module 19186 (SettingsOverviewScreen)
+// Module 19185 (SettingsOverviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl8 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;

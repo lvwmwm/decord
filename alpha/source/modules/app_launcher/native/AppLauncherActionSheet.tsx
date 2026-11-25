@@ -1,10 +1,10 @@
-// Module ID: 18564
-// Function ID: 18565
+// Module ID: 18563
+// Function ID: 18564
 // Name: AppLauncherActionSheet
 // Dependencies: [32, 19, 1499, 21, 1653, 12095, 10047, 12096, 5240, 12992, 13110, 5571, 2]
 // Exports: useAppLauncherActionSheet
 
-// Module 18564 (AppLauncherActionSheet)
+// Module 18563 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import _mod1653 from "module_1653" /* 1653 */;

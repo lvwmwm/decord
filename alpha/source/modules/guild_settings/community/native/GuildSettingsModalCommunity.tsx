@@ -1,10 +1,10 @@
-// Module ID: 20031
-// Function ID: 20032
+// Module ID: 20034
+// Function ID: 20035
 // Name: GuildSettingsModalCommunity
 // Dependencies: [19, 4861, 4942, 4944, 4954, 1386, 8532, 18269, 1071, 21, 5012, 575, 5576, 1500, 504, 8531, 1112, 7717, 7160, 5628, 5226, 8457, 2119, 8046, 6084, 6109, 6113, 2]
 // Exports: default
 
-// Module 20031 (GuildSettingsModalCommunity)
+// Module 20034 (GuildSettingsModalCommunity)
 import nativeDefault from "native" /* 575 */;
 import intl15 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;

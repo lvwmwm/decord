@@ -1,10 +1,10 @@
-// Module ID: 19215
-// Function ID: 19216
+// Module ID: 19214
+// Function ID: 19215
 // Name: GiftingPromotionCoachmark
 // Dependencies: [19, 17, 5013, 9120, 1071, 4858, 21, 5012, 575, 504, 11116, 11105, 11117, 6800, 5226, 6348, 6349, 11067, 5240, 5699, 11128, 5603, 5610, 11261, 1112, 2]
 // Exports: default
 
-// Module 19215 (GiftingPromotionCoachmark)
+// Module 19214 (GiftingPromotionCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;

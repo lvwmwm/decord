@@ -1,7 +1,7 @@
 // Module ID: 17593
 // Function ID: 17594
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 17594, 1071, 21, 5012, 1378, 4969, 15427, 17595, 17596, 17663, 19005, 19012, 19045, 19077, 9004, 19142, 19143, 19146, 19150, 19152, 19181, 19187, 19188, 5197, 1498, 1626, 19189, 5982, 8962, 19193, 19267, 563, 9978, 5191, 7324, 11955, 19058, 19270, 19301, 10231, 19303, 11372, 2]
+// Dependencies: [32, 19, 17, 502, 17594, 1071, 21, 5012, 1378, 4969, 15427, 17595, 17596, 17663, 19004, 19011, 19044, 19076, 9004, 19141, 19142, 19145, 19149, 19151, 19180, 19186, 19187, 5197, 1498, 1626, 19188, 5982, 8962, 19192, 19266, 563, 9978, 5191, 7324, 11955, 19057, 19269, 19300, 10231, 19302, 11372, 2]
 // Exports: getChannelScreen
 
 // Module 17593 (MainNavigator)
@@ -15,10 +15,10 @@ import StartupProfiler from "StartupProfiler" /* 11955 */;
 import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 15427 */;
 import NavigationConstants from "NavigationConstants" /* 17594 */;
 import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 17595 */;
-import AutoAnalytics from "AutoAnalytics" /* 19005 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19058 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 19270 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19301 */;
+import AutoAnalytics from "AutoAnalytics" /* 19004 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19057 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 19269 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19300 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -471,7 +471,7 @@ const memoResult = react.memo(function StackNavigator() {
     };
     items1[14] = tmp(closure_16.Screen, obj25);
     items[1] = tmp(tmp2Result, obj3);
-    items2 = [tmp(tmp8, obj16), tmp5(19303).APP_EXTRA_COMPONENTS, tmp5(19303).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19303).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
+    items2 = [tmp(tmp8, obj16), tmp5(19302).APP_EXTRA_COMPONENTS, tmp5(19302).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19302).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
     return tmp(tmp4, obj);
   }, items1);
 });

@@ -1,10 +1,10 @@
-// Module ID: 20213
-// Function ID: 20214
+// Module ID: 20216
+// Function ID: 20217
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 4861, 10384, 4883, 4944, 1071, 21, 5012, 575, 1500, 504, 38, 12, 20214, 10390, 6015, 1112, 5573, 7717, 8046, 20215, 10385, 1263, 7160, 7324, 2]
+// Dependencies: [32, 19, 4861, 10384, 4883, 4944, 1071, 21, 5012, 575, 1500, 504, 38, 12, 20217, 10390, 6015, 1112, 5573, 7717, 8046, 20218, 10385, 1263, 7160, 7324, 2]
 // Exports: default
 
-// Module 20213 (InviteSettingsModal)
+// Module 20216 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -13,7 +13,7 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
 import NavigatorHeader from "NavigatorHeader" /* 7160 */;
 import Navigator from "Navigator" /* 7324 */;
 import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10390 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20214 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20217 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
@@ -164,7 +164,7 @@ function AdvancedInstantInviteScreen() {
   }, []);
   const Form = tmp2(8046).Form;
   ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(10385).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(20215);
+  channel(20218);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 }

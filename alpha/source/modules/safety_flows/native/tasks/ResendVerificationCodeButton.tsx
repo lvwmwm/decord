@@ -1,10 +1,10 @@
-// Module ID: 20294
-// Function ID: 20295
+// Module ID: 20297
+// Function ID: 20298
 // Name: ResendVerificationCodeButton
-// Dependencies: [5, 32, 19, 17, 21, 20285, 5693, 5694, 1112, 3174, 5603, 2]
+// Dependencies: [5, 32, 19, 17, 21, 20288, 5693, 5694, 1112, 3174, 5603, 2]
 // Exports: default
 
-// Module 20294 (ResendVerificationCodeButton)
+// Module 20297 (ResendVerificationCodeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

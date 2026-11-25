@@ -7,7 +7,7 @@
 import ZustandStore from "ZustandStore" /* 5201 */;
 import size from "module_2" /* 2 */;
 
-const zustandStore = ZustandStore.createZustandStore(() => ({ scrollToSectionId: "dispatch" }));
+const zustandStore = ZustandStore.createZustandStore(() => ({ scrollToSectionId: "top" }));
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumNitroNavigationStore.tsx");
 
 export default zustandStore;

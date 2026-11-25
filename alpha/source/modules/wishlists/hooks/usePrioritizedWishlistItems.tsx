@@ -10,7 +10,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const f107287 = (deadline, deadline2) => {
+const f107308 = (deadline, deadline2) => {
   let diff = deadline.deadline - deadline2.deadline;
   if (0 === diff) {
     diff = deadline.index - deadline2.index;
@@ -182,7 +182,7 @@ export default function usePrioritizedWishlistItems(arg0, arg1) {
         }
         items1.push(shopUnpublishedAt);
       });
-      const sorted = items.sort(f107287);
+      const sorted = items.sort(f107308);
       const items2 = [];
       let tmp7 = items2;
       let tmp8 = items2;
@@ -236,7 +236,7 @@ export function prioritizeSoonToUnpublishWishlistItems(arr) {
     }
     items1.push(shopUnpublishedAt);
   });
-  const sorted = items.sort(f107287);
+  const sorted = items.sort(f107308);
   const items2 = [...items1];
   return items2;
 }

@@ -1,9 +1,9 @@
-// Module ID: 19459
-// Function ID: 19460
+// Module ID: 19458
+// Function ID: 19459
 // Name: VoicePanelPreJoinContent
-// Dependencies: [5, 32, 19, 17, 4860, 5821, 15172, 6782, 502, 4861, 2131, 4944, 5822, 1386, 5660, 5823, 11734, 11737, 1071, 15176, 5824, 21, 5012, 11739, 575, 11733, 504, 6802, 7800, 6766, 8377, 6785, 7024, 5603, 1112, 14886, 7484, 4933, 19447, 1494, 1653, 1706, 10152, 10157, 10209, 6121, 19445, 5610, 6085, 1263, 7247, 8605, 6776, 6113, 11488, 11862, 6348, 6349, 1255, 19396, 18157, 19460, 5613, 5073, 5614, 18189, 19462, 2]
+// Dependencies: [5, 32, 19, 17, 4860, 5821, 15172, 6782, 502, 4861, 2131, 4944, 5822, 1386, 5660, 5823, 11734, 11737, 1071, 15176, 5824, 21, 5012, 11739, 575, 11733, 504, 6802, 7800, 6766, 8377, 6785, 7024, 5603, 1112, 14886, 7484, 4933, 19446, 1494, 1653, 1706, 10152, 10157, 10209, 6121, 19444, 5610, 6085, 1263, 7247, 8605, 6776, 6113, 11488, 11862, 6348, 6349, 1255, 19395, 18157, 19459, 5613, 5073, 5614, 18189, 19461, 2]
 
-// Module 19459 (VoicePanelPreJoinContent)
+// Module 19458 (VoicePanelPreJoinContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
@@ -152,7 +152,7 @@ function ActivityInfo(activity) {
   let tmp14;
   let tmp15;
   let tmp8;
-  const f117944 = () => {
+  const f117964 = () => {
     const obj = activity(first[39]);
     return obj.getWindowDimensions().width - 2 * (EDGE_GUTTER + 16);
   };
@@ -172,8 +172,8 @@ function ActivityInfo(activity) {
   const context = react.useContext(analyticsLocations(application[25]));
   const channelId = context.channelId;
   const windowDimensions = context.windowDimensions;
-  [r10039, tmp8] = embeddedActivityJoinability(react.useState(f117944), 2);
-  embeddedActivityJoinability(react.useState(f117944), 2);
+  [r10039, tmp8] = embeddedActivityJoinability(react.useState(f117964), 2);
+  embeddedActivityJoinability(react.useState(f117964), 2);
   const items1 = [closure_31, windowDimensions];
   let c0;
   [tmp10, tmp11] = items1;
@@ -874,7 +874,7 @@ const memoResult = react.memo(function VoicePanelPreJoinWrapper() {
       };
       return obj;
     }
-  }, items1, channelId(19462).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(19461).areVoicePanelPreJoinContentPropsEqual);
   const obj2 = { item: stateFromStores, renderItem };
   return closure_25(channelId(5073).TransitionItem, obj2);
 });

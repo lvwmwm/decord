@@ -1,10 +1,10 @@
-// Module ID: 18759
-// Function ID: 18760
+// Module ID: 18758
+// Function ID: 18759
 // Name: ConjureRestoreProposalCard
 // Dependencies: [19, 21, 18513, 18456, 6084, 5603, 1112, 4244, 5610, 2]
 // Exports: default
 
-// Module 18759 (ConjureRestoreProposalCard)
+// Module 18758 (ConjureRestoreProposalCard)
 import intl3 from "intl" /* 1112 */;
 import _modDef4244 from "module_4244" /* 4244 */;
 import Text_Text from "Text/Text" /* 5603 */;

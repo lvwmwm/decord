@@ -1,10 +1,10 @@
-// Module ID: 18983
-// Function ID: 18984
+// Module ID: 18982
+// Function ID: 18983
 // Name: SearchTabsTransitionGroup
 // Dependencies: [19, 21, 4837, 13560, 1653, 5073, 5613, 5614, 1706, 13354, 2]
 // Exports: default
 
-// Module 18983 (SearchTabsTransitionGroup)
+// Module 18982 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 5073 */;
 import react from "react" /* 19 */;

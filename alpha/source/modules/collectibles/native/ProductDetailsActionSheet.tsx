@@ -117,7 +117,7 @@ function ProductDetailsActionSheetContent(product) {
   let tmp55;
   let tmp57;
   let type;
-  const f99340 = () => {
+  const f99361 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -258,8 +258,8 @@ function ProductDetailsActionSheetContent(product) {
   }, items3);
   const tmp39 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   closure_6 = tmp39;
-  [type, c7] = selectedProduct(obj2.useState(f99340), 2);
-  selectedProduct(obj2.useState(f99340), 2);
+  [type, c7] = selectedProduct(obj2.useState(f99361), 2);
+  selectedProduct(obj2.useState(f99361), 2);
   const tmp41 = c5((type) => {
     _undefined(type);
     _undefined2(type.type);

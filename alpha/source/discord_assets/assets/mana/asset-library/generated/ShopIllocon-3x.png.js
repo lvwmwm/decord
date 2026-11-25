@@ -1,8 +1,8 @@
-// Module ID: 19235
-// Function ID: 19236
+// Module ID: 19234
+// Function ID: 19235
 // Dependencies: [2]
 
-// Module 19235
+// Module 19234
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShopIllocon-3x.png.js");

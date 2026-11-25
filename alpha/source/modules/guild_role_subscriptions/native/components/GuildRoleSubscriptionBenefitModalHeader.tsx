@@ -1,10 +1,10 @@
-// Module ID: 20177
-// Function ID: 20178
+// Module ID: 20180
+// Function ID: 20181
 // Name: GuildRoleSubscriptionBenefitModalHeader
 // Dependencies: [32, 19, 17, 21, 5012, 575, 16785, 7449, 12490, 5603, 1112, 7160, 2]
 // Exports: default
 
-// Module 20177 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 20180 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;

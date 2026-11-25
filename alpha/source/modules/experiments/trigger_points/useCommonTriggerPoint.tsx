@@ -16,7 +16,7 @@ let _require;
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/useCommonTriggerPoint.tsx");
 
 export function useCommonTriggerPoint(OpenNitroTriggerPoint) {
-  const f105020 = () => {
+  const f105041 = () => {
     const items = [authStore.getAllUserExperimentDescriptors(), authStore.getGuildExperiments()];
     return items;
   };
@@ -24,8 +24,8 @@ export function useCommonTriggerPoint(OpenNitroTriggerPoint) {
   let items = [ExperimentStore];
   const obj = require("get initialized");
   const items1 = [OpenNitroTriggerPoint, , ];
-  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f105020);
-  _slicedToArray(obj.useStateFromStoresArray(items, f105020), 2);
+  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f105041);
+  _slicedToArray(obj.useStateFromStoresArray(items, f105041), 2);
   const effect = react.useEffect(() => {
     OpenNitroTriggerPoint.trigger();
   }, items1);

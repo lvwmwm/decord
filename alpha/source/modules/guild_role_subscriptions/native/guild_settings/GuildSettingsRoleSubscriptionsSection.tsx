@@ -1,10 +1,10 @@
-// Module ID: 19847
-// Function ID: 19848
+// Module ID: 19846
+// Function ID: 19847
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 4879, 1386, 1071, 21, 504, 6109, 1112, 6113, 5716, 11653, 19848, 16943, 7586, 2]
+// Dependencies: [19, 4879, 1386, 1071, 21, 504, 6109, 1112, 6113, 5716, 11653, 19847, 16943, 7586, 2]
 // Exports: default
 
-// Module 19847 (GuildSettingsRoleSubscriptionsSection)
+// Module 19846 (GuildSettingsRoleSubscriptionsSection)
 import get_initialized from "get initialized" /* 504 */;
 import intl6 from "intl" /* 1112 */;
 import GuildRecord from "GuildRecord" /* 4879 */;
@@ -14,7 +14,7 @@ import TableRow5 from "TableRow" /* 6113 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7586 */;
 import TagsIcon from "TagsIcon" /* 11653 */;
 import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 16943 */;
-import WalletIcon from "WalletIcon" /* 19848 */;
+import WalletIcon from "WalletIcon" /* 19847 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;

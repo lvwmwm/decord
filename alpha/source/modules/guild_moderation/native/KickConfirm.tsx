@@ -75,7 +75,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let tmp4Result9;
   let tmp7Result4;
   let v1Ie87p;
-  const f102251 = () => ({ kicking: false, kickError: false });
+  const f102272 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -107,10 +107,10 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   }
   const conjureServerApp = useConjureServerApp(guildId, result);
   ref = obj.useRef("");
-  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f102251), 2);
+  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f102272), 2);
   const items3 = [stateFromStores, onKick, stateFromStores1];
   let tmp19Result6 = null;
-  stateFromStores(stateFromStores1.useState(f102251), 2);
+  stateFromStores(stateFromStores1.useState(f102272), 2);
   if (null != stateFromStores1) {
     tmp19Result6 = null;
     if (null != stateFromStores) {

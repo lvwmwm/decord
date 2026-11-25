@@ -1,7 +1,7 @@
 // Module ID: 17665
 // Function ID: 17666
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1071, 4868, 21, 3, 5012, 575, 17666, 5189, 1501, 5191, 11936, 11934, 11937, 17667, 5197, 17668, 6095, 1107, 17669, 7813, 17672, 1653, 7162, 8973, 11759, 17673, 17674, 5272, 17681, 17682, 18318, 18319, 18320, 19002, 18134, 2]
+// Dependencies: [32, 19, 17, 1071, 4868, 21, 3, 5012, 575, 17666, 5189, 1501, 5191, 11936, 11934, 11937, 17667, 5197, 17668, 6095, 1107, 17669, 7813, 17672, 1653, 7162, 8973, 11759, 17673, 17674, 5272, 17681, 17682, 18318, 18319, 18320, 19001, 18134, 2]
 
 // Module 17665 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
@@ -76,7 +76,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let tmp77;
   let tmp78;
   let type1;
-  const f132148 = () => first4;
+  const f132187 = () => first4;
   let flag = showHeaderGradient.showHeaderGradient;
   if (flag === undefined) {
     flag = true;
@@ -191,9 +191,9 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     const obj = navigation(drawerWidth[9]);
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp25, c3] = obj3.useState(f132148);
+  [tmp25, c3] = obj3.useState(f132187);
   const items3 = [navigation];
-  _slicedToArray(obj3.useState(f132148), 2);
+  _slicedToArray(obj3.useState(f132187), 2);
   const effect1 = obj3.useEffect(() => {
     let addListenerResult1;
     let state;

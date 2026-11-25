@@ -24,7 +24,7 @@ import size from "module_2" /* 2 */;
 
 let c2;
 
-const f102924 = (str) => str.toUpperCase();
+const f102945 = (str) => str.toUpperCase();
 function useActivityAction(applicationId) {
   let context;
   let fetchesApplication;
@@ -339,7 +339,7 @@ export default function useActivityShelfItem(backgroundResolution) {
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f102924);
+      replaced = str4.replace(/(^\w|\s\w)/g, f102945);
     }
     tmp16 = replaced;
   } else {
@@ -366,7 +366,7 @@ export function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f102924);
+    replaced = str4.replace(/(^\w|\s\w)/g, f102945);
   }
   return replaced;
 }

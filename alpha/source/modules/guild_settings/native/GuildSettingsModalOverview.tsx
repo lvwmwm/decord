@@ -1,10 +1,10 @@
-// Module ID: 19850
-// Function ID: 19851
+// Module ID: 19849
+// Function ID: 19850
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 4879, 4861, 4942, 5633, 4944, 4954, 1386, 8532, 1071, 21, 5012, 575, 1112, 5073, 5693, 7160, 7717, 8531, 11714, 19851, 1404, 7512, 6016, 6087, 7243, 5628, 6109, 6113, 10563, 19621, 7556, 7518, 7220, 7222, 2187, 19854, 1412, 11750, 7409, 6982, 8046, 6084, 5586, 1500, 504, 2]
+// Dependencies: [19, 4879, 4861, 4942, 5633, 4944, 4954, 1386, 8532, 1071, 21, 5012, 575, 1112, 5073, 5693, 7160, 7717, 8531, 11714, 19850, 1404, 7512, 6016, 6087, 7243, 5628, 6109, 6113, 10563, 19620, 7556, 7518, 7220, 7222, 2187, 19853, 1412, 11750, 7409, 6982, 8046, 6084, 5586, 1500, 504, 2]
 // Exports: default
 
-// Module 19850 (GuildSettingsModalOverview)
+// Module 19849 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1112 */;
 import FlagUtils from "FlagUtils" /* 1404 */;
@@ -32,7 +32,7 @@ import _mod8046 from "module_8046" /* 8046 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;
 import openChannelPickerDefault from "openChannelPicker" /* 11714 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11750 */;
-import AssetChooserDefault from "AssetChooser" /* 19854 */;
+import AssetChooserDefault from "AssetChooser" /* 19853 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
 import GuildChannelStore from "GuildChannelStore" /* 4942 */;
@@ -477,7 +477,7 @@ class GuildSettingsModalOverview extends PureComponent {
       const tmpResult14 = tmp(1404);
       hasFlagResult1 = tmpResult14.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     }
-    const tmpResult15 = tmp(19621);
+    const tmpResult15 = tmp(19620);
     let result1 = tmpResult15.isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
     if (!result1) {
       const tmpResult16 = tmp(1404);

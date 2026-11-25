@@ -152,7 +152,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
   let unstable_headerInsets;
   let unstable_headerLeftItems;
   let unstable_headerRightItems;
-  const f94714 = function(type, index) {
+  const f94735 = function(type, index) {
     let badge;
     let icon;
     let items;
@@ -284,7 +284,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
       }
     }
   };
-  const f94715 = (item) => null != item;
+  const f94736 = (item) => null != item;
   ({ headerBackIcon, headerBackImageSource, headerBackTitle, headerBackVisible, headerShadowVisible, headerLargeTitleEnabled } = headerLargeTitle);
   ({ headerBackButtonDisplayMode, headerBackButtonMenuEnabled, headerBackTitleStyle, headerLargeStyle } = headerLargeTitle);
   if (headerLargeTitleEnabled === undefined) {
@@ -537,15 +537,15 @@ export function useHeaderConfigProps(headerLargeTitle) {
   if (typeof processBarButtonItems === "function") {
     let found;
     if (result != null) {
-      const mapped = result.map(f94714);
-      found = mapped.filter(f94715);
+      const mapped = result.map(f94735);
+      found = mapped.filter(f94736);
     }
     obj21.headerLeftBarButtonItems = found;
     if (typeof tmp60 === "function") {
       let found1;
       if (reversed != null) {
-        const mapped1 = reversed.map(f94714);
-        found1 = mapped1.filter(f94715);
+        const mapped1 = reversed.map(f94735);
+        found1 = mapped1.filter(f94736);
       }
       obj21.headerRightBarButtonItems = found1;
       let str3 = "light";

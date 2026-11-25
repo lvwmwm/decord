@@ -1,10 +1,10 @@
-// Module ID: 19334
-// Function ID: 19335
+// Module ID: 19333
+// Function ID: 19334
 // Name: applyActivityOrientationLock
 // Dependencies: [2145, 13796, 2]
 // Exports: default
 
-// Module 19334 (applyActivityOrientationLock)
+// Module 19333 (applyActivityOrientationLock)
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2145 */;
 import applyOrientationLock from "applyOrientationLock" /* 13796 */;
 import size from "module_2" /* 2 */;

@@ -21,7 +21,7 @@ let REQUESTS;
 let metroRequire;
 let tmp;
 let tmp2;
-const f92658 = (acc, id) => {
+const f92679 = (acc, id) => {
   let num;
   const obj = {};
   const merged = Object.assign(acc);
@@ -36,7 +36,7 @@ const f92658 = (acc, id) => {
   obj[id] = obj2;
   return obj;
 };
-const f92659 = (acc, invoice_items) => {
+const f92680 = (acc, invoice_items) => {
   let sku_id;
   let subscription_plan_id;
   if (null != invoice_items.invoice_items) {
@@ -52,7 +52,7 @@ const f92659 = (acc, invoice_items) => {
   }
   return acc;
 };
-const f92660 = (acc, entitlement_id) => {
+const f92681 = (acc, entitlement_id) => {
   acc[entitlement_id.entitlement_id] = entitlement_id;
   return acc;
 };
@@ -184,13 +184,13 @@ function handleInitialLoad(linkedUsers) {
   if (undefined !== totals) {
     closure_16 = totals;
   }
-  closure_34 = guilds.reduce(f92658, closure_34);
+  closure_34 = guilds.reduce(f92679, closure_34);
   processLinkedUsers(linkedUsers);
   if (null != invoices) {
-    closure_31 = invoices.reduce(f92659, {});
+    closure_31 = invoices.reduce(f92680, {});
   }
   if (null != gifts) {
-    closure_32 = gifts.reduce(f92660, {});
+    closure_32 = gifts.reduce(f92681, {});
   }
   if (spendingLimit == null) {
     spendingLimit = null;
@@ -239,12 +239,12 @@ function handleTeenActivityFetch(familyCenterTeenActivity) {
       closure_16 = totals;
     }
     let tmp = closure_34;
-    closure_34 = guilds.reduce(f92658, closure_34);
+    closure_34 = guilds.reduce(f92679, closure_34);
     if (null != invoices) {
-      closure_31 = invoices.reduce(f92659, {});
+      closure_31 = invoices.reduce(f92680, {});
     }
     if (null != gifts) {
-      closure_32 = gifts.reduce(f92660, {});
+      closure_32 = gifts.reduce(f92681, {});
     }
     c21 = false;
     let obj = SnowflakeUtilsDefault;
@@ -270,7 +270,7 @@ function handleTeenActivityMoreFetch(familyCenterTeenActivity) {
       const result = value.set(display_type.event_id, display_type);
     }
   });
-  closure_34 = guilds.reduce(f92658, closure_34);
+  closure_34 = guilds.reduce(f92679, closure_34);
 }
 function handleUserLinkStatusUpdate(linkedUsers) {
   processLinkedUsers(linkedUsers.linkedUsers);
@@ -469,7 +469,7 @@ class FamilyCenterStore extends MobileCacheSnapshotStore {
       let tmp3 = processLinkedUsers(snapshot.linkedUsers);
       const guilds = snapshot.guilds;
       let tmp4 = closure_34;
-      closure_34 = guilds.reduce(f92658, closure_34);
+      closure_34 = guilds.reduce(f92679, closure_34);
       const teenActivity = snapshot.teenActivity;
       const tmp6 = freshTeenActivityWithMap();
       let closure_0 = tmp6;

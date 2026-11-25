@@ -1,9 +1,9 @@
-// Module ID: 19796
-// Function ID: 19797
+// Module ID: 19795
+// Function ID: 19796
 // Name: SavedMessagesManager
-// Dependencies: [5, 11673, 19797, 7444, 2]
+// Dependencies: [5, 11673, 19796, 7444, 2]
 
-// Module 19796 (SavedMessagesManager)
+// Module 19795 (SavedMessagesManager)
 import SavedMessagesActions from "SavedMessagesActions" /* 11673 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;

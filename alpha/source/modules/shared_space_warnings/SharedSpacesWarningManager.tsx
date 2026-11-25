@@ -1,12 +1,12 @@
-// Module ID: 19803
-// Function ID: 19804
+// Module ID: 19802
+// Function ID: 19803
 // Name: SharedSpacesWarningManager
-// Dependencies: [4861, 5820, 4954, 15174, 15172, 19804, 1091, 15175, 7444, 2]
+// Dependencies: [4861, 5820, 4954, 15174, 15172, 19803, 1091, 15175, 7444, 2]
 
-// Module 19803 (SharedSpacesWarningManager)
+// Module 19802 (SharedSpacesWarningManager)
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import showVoiceChannelBlockedUserWarning2 from "showVoiceChannelBlockedUserWarning" /* 15175 */;
-import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 19804 */;
+import showGdmBlockedUserModal from "showGdmBlockedUserModal" /* 19803 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
 import RelationshipStore from "RelationshipStore" /* 4954 */;

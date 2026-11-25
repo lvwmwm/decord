@@ -1,9 +1,9 @@
-// Module ID: 19614
-// Function ID: 19615
+// Module ID: 19613
+// Function ID: 19614
 // Name: ChannelCallManager
 // Dependencies: [10257, 6909, 10554, 5069, 5660, 5823, 10256, 7444, 2]
 
-// Module 19614 (ChannelCallManager)
+// Module 19613 (ChannelCallManager)
 import SoundpackStore from "SoundpackStore" /* 10257 */;
 import CallStore from "CallStore" /* 6909 */;
 import NotificationSettingsStore from "NotificationSettingsStore" /* 10554 */;

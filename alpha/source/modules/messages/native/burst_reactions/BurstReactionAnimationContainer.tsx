@@ -1,10 +1,10 @@
-// Module ID: 19197
-// Function ID: 19198
+// Module ID: 19196
+// Function ID: 19197
 // Name: BurstReactionAnimationContainer
 // Dependencies: [32, 19, 17, 4858, 21, 5012, 575, 4970, 5228, 5229, 572, 1653, 5222, 1706, 11029, 4845, 1186, 5595, 5603, 1112, 5073, 2]
 // Exports: default
 
-// Module 19197 (BurstReactionAnimationContainer)
+// Module 19196 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;

@@ -1,10 +1,10 @@
-// Module ID: 19958
-// Function ID: 19959
+// Module ID: 19961
+// Function ID: 19962
 // Name: GuildSettingsServerTagUpsellCard
 // Dependencies: [19, 17, 8254, 1071, 21, 5012, 575, 504, 8258, 13455, 13423, 5073, 5567, 6084, 13458, 5603, 1112, 5610, 17885, 2]
 // Exports: default
 
-// Module 19958 (GuildSettingsServerTagUpsellCard)
+// Module 19961 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import LinearGradientDefault from "LinearGradient" /* 5567 */;

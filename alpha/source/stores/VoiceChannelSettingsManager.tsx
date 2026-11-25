@@ -1,9 +1,9 @@
-// Module ID: 19825
-// Function ID: 19826
+// Module ID: 19824
+// Function ID: 19825
 // Name: VoiceChannelSettingsManager
 // Dependencies: [502, 15439, 4861, 4915, 15440, 1071, 572, 7444, 2]
 
-// Module 19825 (VoiceChannelSettingsManager)
+// Module 19824 (VoiceChannelSettingsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

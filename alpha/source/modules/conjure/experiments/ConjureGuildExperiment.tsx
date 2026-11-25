@@ -51,16 +51,16 @@ function hasConjureGuild(arg0, DMAppChannel) {
   }
   return false;
 }
-function isConjureGuildEnabledWithoutExposure(id, location) {
+function isConjureGuildEnabledWithoutExposure(id, ConjureServerApplicationIds) {
   let enabled;
   let requiresUserExperiment;
-  const obj = { guildId: id, location };
+  const obj = { guildId: id, location: ConjureServerApplicationIds };
   const config = closure_4.getConfig(obj, { autoTrackExposure: false });
   ({ enabled, requiresUserExperiment } = config);
   if (enabled) {
     let isConjureUserEnabledResult = !requiresUserExperiment;
     if (requiresUserExperiment) {
-      const obj3 = { location };
+      const obj3 = { location: ConjureServerApplicationIds };
       const obj4 = { autoTrackExposure: false };
       const obj2 = ConjureUserExperiment;
       isConjureUserEnabledResult = obj2.isConjureUserEnabled(obj3, obj4);

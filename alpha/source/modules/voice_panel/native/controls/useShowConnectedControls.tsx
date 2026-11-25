@@ -1,10 +1,10 @@
-// Module ID: 19524
-// Function ID: 19525
+// Module ID: 19523
+// Function ID: 19524
 // Name: useShowConnectedControls
 // Dependencies: [19, 18189, 11733, 8577, 2]
 // Exports: default
 
-// Module 19524 (useShowConnectedControls)
+// Module 19523 (useShowConnectedControls)
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8577 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
 import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18189 */;

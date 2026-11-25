@@ -1,10 +1,10 @@
-// Module ID: 19019
-// Function ID: 19020
+// Module ID: 19018
+// Function ID: 19019
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 4865, 4861, 4954, 7547, 8902, 1071, 21, 1653, 5603, 5012, 575, 1378, 7813, 7548, 572, 504, 1255, 19020, 5222, 19021, 8962, 1112, 11725, 18561, 6348, 6349, 5587, 5573, 12054, 12052, 12051, 8974, 1098, 12055, 5693, 10503, 10504, 5703, 5702, 11489, 5610, 13270, 18958, 2]
+// Dependencies: [5, 32, 19, 17, 4865, 4861, 4954, 7547, 8902, 1071, 21, 1653, 5603, 5012, 575, 1378, 7813, 7548, 572, 504, 1255, 19019, 5222, 19020, 8962, 1112, 11725, 18560, 6348, 6349, 5587, 5573, 12054, 12052, 12051, 8974, 1098, 12055, 5693, 10503, 10504, 5703, 5702, 11489, 5610, 13270, 18957, 2]
 // Exports: default
 
-// Module 19019 (NewMessageScreen)
+// Module 19018 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1098 */;
@@ -28,8 +28,8 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 10503 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 10504 */;
 import NoResultsDefault from "NoResults" /* 11489 */;
 import ChatViewDefault from "ChatView" /* 11725 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 19020 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19021 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 19019 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19020 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -60,7 +60,7 @@ let tmp2;
 const getGroupDMRecipientLimitDefault = tmp2(12052);
 const GroupDMNitroCapExperimentDefault = tmp2(12054);
 const NewMessageUserListDefault = tmp2(13270);
-const GroupDMNitroUpsellBannerDefault = tmp2(18958);
+const GroupDMNitroUpsellBannerDefault = tmp2(18957);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -293,7 +293,7 @@ function ChatPreview(channelId) {
   const obj3 = { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
   items2[0] = closure_17(ChatViewDefault, obj3);
   const obj4 = { portal: obj5.isAndroid() };
-  const PortalKeyboardRenderer = channelId(18561).PortalKeyboardRenderer;
+  const PortalKeyboardRenderer = channelId(18560).PortalKeyboardRenderer;
   obj5 = channelId(1378);
   items2[1] = closure_17(PortalKeyboardRenderer, obj4);
   return closure_17(View, obj);
@@ -523,9 +523,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "analyticsLocations" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" } };
           obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "analyticsLocations" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" });
           obj.dispatch(obj2);
         };
       }

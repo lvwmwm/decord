@@ -77,7 +77,7 @@ class VoiceNotificationManager {
     let createAction;
     obj = Object.create(new.target.prototype);
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: 267.310546875, isPushToTalk: null, embeddedActivity: "\u23FA\uFE0F", isStreaming: 7 };
+    obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "record_button", isPushToTalk: 228.310546875, embeddedActivity: null, isStreaming: "\u23ED\uFE0F" };
     obj.handleVoiceStateChange = handleVoiceStateChange;
     obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
       const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -274,7 +274,7 @@ class VoiceNotificationManager {
 const prototype = VoiceNotificationManager.prototype;
 let obj = Object.create(VoiceNotificationManager.prototype);
 obj.voiceServiceHandlerId = 9000;
-obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: 267.310546875, isPushToTalk: null, embeddedActivity: "\u23FA\uFE0F", isStreaming: 7 };
+obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "record_button", isPushToTalk: 228.310546875, embeddedActivity: null, isStreaming: "\u23ED\uFE0F" };
 obj.handleVoiceStateChange = handleVoiceStateChange;
 obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
   const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();

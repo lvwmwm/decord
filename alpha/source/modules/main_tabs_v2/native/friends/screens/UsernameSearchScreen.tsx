@@ -1,10 +1,10 @@
-// Module ID: 19035
-// Function ID: 19036
+// Module ID: 19034
+// Function ID: 19035
 // Name: UsernameSearchScreen
 // Dependencies: [19, 17, 1071, 21, 5012, 575, 1255, 5587, 5242, 8971, 1378, 7017, 10546, 15209, 1112, 2]
 // Exports: default
 
-// Module 19035 (UsernameSearchScreen)
+// Module 19034 (UsernameSearchScreen)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

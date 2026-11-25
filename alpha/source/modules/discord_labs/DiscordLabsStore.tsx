@@ -156,7 +156,7 @@ let obj2 = {
         [tmp] = item;
         return tmp !== labId;
       }));
-      const f107836 = (arg0) => {
+      const f107857 = (arg0) => {
         currentUser = currentUser.getCurrentUser();
         let enabled;
         if (currentUser != null) {
@@ -174,7 +174,7 @@ let obj2 = {
       const found = keys.filter((item) => {
         let tmp2 = null == closure_10[item];
         if (tmp2) {
-          tmp2 = f107837(item);
+          tmp2 = f107858(item);
         }
         return tmp2;
       });
@@ -209,7 +209,7 @@ let obj2 = {
     }
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate() {
-    const f107836 = (arg0) => {
+    const f107857 = (arg0) => {
       currentUser = currentUser.getCurrentUser();
       let enabled;
       if (currentUser != null) {
@@ -226,7 +226,7 @@ let obj2 = {
     const found = keys.filter((item) => {
       let tmp2 = null == closure_10[item];
       if (tmp2) {
-        tmp2 = f107837(item);
+        tmp2 = f107858(item);
       }
       return tmp2;
     });
@@ -238,12 +238,12 @@ let obj2 = {
     return flag;
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    const f107837 = () => true;
+    const f107858 = () => true;
     const keys = Object.keys(closure_11);
     const found = keys.filter((item) => {
       let tmp2 = null == closure_10[item];
       if (tmp2) {
-        tmp2 = f107837(item);
+        tmp2 = f107858(item);
       }
       return tmp2;
     });

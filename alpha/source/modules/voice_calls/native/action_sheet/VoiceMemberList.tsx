@@ -255,7 +255,7 @@ export default function VoiceMemberList(channel) {
   let obj6;
   let reduced;
   let tmp25Result2;
-  const f105774 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f105795 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -329,8 +329,8 @@ export default function VoiceMemberList(channel) {
           str = "";
         }
         const tmp3Result = flag(tmp4[37]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f105774), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f105774), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f105795), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f105795), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[21]).t.Fb0eT9, obj6), data: arr10 };

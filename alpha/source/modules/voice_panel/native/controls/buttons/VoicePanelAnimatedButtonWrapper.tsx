@@ -1,10 +1,10 @@
-// Module ID: 19503
-// Function ID: 19504
+// Module ID: 19502
+// Function ID: 19503
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 11734, 21, 5012, 575, 1653, 19396, 1378, 5613, 5222, 2]
+// Dependencies: [19, 17, 11734, 21, 5012, 575, 1653, 19395, 1378, 5613, 5222, 2]
 // Exports: default
 
-// Module 19503 (VoicePanelAnimatedButtonWrapper)
+// Module 19502 (VoicePanelAnimatedButtonWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

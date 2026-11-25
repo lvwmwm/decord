@@ -27,5 +27,5 @@ export function setMediaModalFooterAction(footerAction) {
 export function clearMediaModalFooterAction() {
   let state;
   const obj = react_native;
-  obj.batchUpdates(() => state.setState({ footerAction: "dispatch" }));
+  obj.batchUpdates(() => state.setState({ footerAction: "top" }));
 }

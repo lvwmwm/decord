@@ -1,10 +1,10 @@
-// Module ID: 19101
-// Function ID: 19102
+// Module ID: 19100
+// Function ID: 19101
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 19102, 4861, 4924, 4918, 4883, 4944, 4954, 1386, 7808, 1071, 21, 5012, 575, 1500, 12070, 504, 8484, 8485, 8486, 1112, 5628, 6015, 8513, 4949, 6084, 6109, 7518, 7907, 6113, 13043, 12068, 7166, 5982, 8574, 8575, 19103, 19105, 2]
+// Dependencies: [32, 5, 19, 17, 19101, 4861, 4924, 4918, 4883, 4944, 4954, 1386, 7808, 1071, 21, 5012, 575, 1500, 12070, 504, 8484, 8485, 8486, 1112, 5628, 6015, 8513, 4949, 6084, 6109, 7518, 7907, 6113, 13043, 12068, 7166, 5982, 8574, 8575, 19102, 19104, 2]
 // Exports: default
 
-// Module 19101 (EasyChannelPermissionSettings)
+// Module 19100 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 575 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
@@ -17,7 +17,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19102 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 19101 */;
 import ChannelStore from "ChannelStore" /* 4861 */;
 import GuildMemberStore from "GuildMemberStore" /* 4924 */;
 import GuildRoleStore from "GuildRoleStore" /* 4918 */;
@@ -287,7 +287,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "dispatch" });
+    navigation.setOptions({ headerRight: "top" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

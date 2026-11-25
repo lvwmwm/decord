@@ -1,10 +1,10 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19149
+// Function ID: 19150
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1071, 21, 5012, 575, 7278, 4969, 19151, 17664, 6099, 6085, 1263, 8207, 15970, 1378, 18561, 2]
+// Dependencies: [109, 19, 17, 1071, 21, 5012, 575, 7278, 4969, 19150, 17664, 6099, 6085, 1263, 8207, 15970, 1378, 18560, 2]
 // Exports: default
 
-// Module 19150 (modal/ModalScreen)
+// Module 19149 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7278 */;
@@ -62,7 +62,7 @@ export default function Modal(route) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const obj2 = modal(19151);
+    const obj2 = modal(19150);
     isIpadOSResult = obj2.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const obj3 = { enabled: !isIpadOSResult };
@@ -143,7 +143,7 @@ export default function Modal(route) {
   items3[1] = tmp18Result;
   items4 = [closure_10(closure_6, obj7), ];
   const tmp12Result = modal(1378);
-  items4[1] = tmp12Result.isIOS() && closure_9(modal(18561).PortalKeyboardRenderer, { portal: false });
-  tmp12Result.isIOS() && closure_9(modal(18561).PortalKeyboardRenderer, { portal: false });
+  items4[1] = tmp12Result.isIOS() && closure_9(modal(18560).PortalKeyboardRenderer, { portal: false });
+  tmp12Result.isIOS() && closure_9(modal(18560).PortalKeyboardRenderer, { portal: false });
   return closure_9(closure_6, obj6);
 };

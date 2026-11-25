@@ -41,7 +41,7 @@ function addLikelySubtags(locale) {
           obj3 = obj2;
           tmpResult8 = module_1158;
         } else {
-          obj3 = { lang: "und", script: "Array", region: "analyticsLocations", variants };
+          obj3 = { lang: "und", script: "Array", region: "isArray", variants };
         }
         parseUnicodeLocaleIdResult.lang = obj3;
         return _mod15648.emitUnicodeLocaleId(parseUnicodeLocaleIdResult);
@@ -434,7 +434,7 @@ let tmp2 = (() => {
                 lang = "und";
               }
               const obj4 = { lang: obj5 };
-              obj5 = { lang, script: "Array", region: "analyticsLocations", variants };
+              obj5 = { lang, script: "Array", region: "isArray", variants };
               emitUnicodeLocaleId3Result = emitUnicodeLocaleId3(__assign4(__assignResult, obj4));
             } else {
               if (region) {

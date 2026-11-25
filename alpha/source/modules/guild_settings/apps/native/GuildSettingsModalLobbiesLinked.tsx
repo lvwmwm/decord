@@ -1,10 +1,10 @@
-// Module ID: 19972
-// Function ID: 19973
+// Module ID: 19975
+// Function ID: 19976
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4954, 1386, 1071, 21, 1500, 7484, 6109, 6113, 5628, 7065, 5576, 575, 19846, 12, 8046, 6084, 5586, 2]
+// Dependencies: [19, 4954, 1386, 1071, 21, 1500, 7484, 6109, 6113, 5628, 7065, 5576, 575, 19845, 12, 8046, 6084, 5586, 2]
 // Exports: default
 
-// Module 19972 (GuildSettingsModalLobbiesLinked)
+// Module 19975 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4954 */;

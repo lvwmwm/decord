@@ -1,13 +1,13 @@
-// Module ID: 18597
-// Function ID: 18598
+// Module ID: 18596
+// Function ID: 18597
 // Name: ConjureDither
-// Dependencies: [19, 17, 21, 18598, 7912, 1653, 2]
+// Dependencies: [19, 17, 21, 18597, 7912, 1653, 2]
 // Exports: default
 
-// Module 18597 (ConjureDither)
+// Module 18596 (ConjureDither)
 import _modDef1653 from "module_1653" /* 1653 */;
 import inlineStyles from "inlineStyles" /* 7912 */;
-import _mod18598 from "module_18598" /* 18598 */;
+import _mod18597 from "module_18597" /* 18597 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,7 +50,7 @@ function BandPicture(width) {
     width: state(height[3]).TILE,
     height: state(height[3]).TILE,
     children: arr.map((item) => {
-      size = { x: item.x, y: item.y, width: _mod18598.CELL, height: _mod18598.CELL, rx: _mod18598.CORNER, fill: react, fillOpacity };
+      size = { x: item.x, y: item.y, width: _mod18597.CELL, height: _mod18597.CELL, rx: _mod18597.CORNER, fill: react, fillOpacity };
       const Rect = inlineStyles.Rect;
       return metroRequire(Rect, size, "" + item.x + "-" + item.y);
     })
@@ -77,12 +77,12 @@ function BandPicture(width) {
     const RadialGradient = inlineStyles.RadialGradient;
     const obj2 = { offset: isoStop(blobReachResult, obj4.blobReach(peak.peak, peak.radius, bound)), stopColor: "#fff", stopOpacity: 1 };
     const Stop = inlineStyles.Stop;
-    isoStop = _mod18598.isoStop;
-    _mod18598;
+    isoStop = _mod18597.isoStop;
+    _mod18597;
     ({ peak, radius } = peak);
-    const obj3 = _mod18598;
-    blobReachResult = obj3.blobReach(peak, radius, closure_5 + _mod18598.FADE_HALF);
-    obj4 = _mod18598;
+    const obj3 = _mod18597;
+    blobReachResult = obj3.blobReach(peak, radius, closure_5 + _mod18597.FADE_HALF);
+    obj4 = _mod18597;
     items = [metroRequire(Stop, obj2), metroRequire(inlineStyles.Stop, { offset: 1, stopColor: "#fff", stopOpacity: 0 })];
     return metroImportDefault(RadialGradient, obj, index);
   });
@@ -103,7 +103,7 @@ function BandPicture(width) {
     let ay;
     let x0;
     let y0;
-    const obj = _mod18598;
+    const obj = _mod18597;
     const blobReachResult = obj.blobReach(peak.peak, peak.radius, bound);
     if (blobReachResult <= 0) {
       return null;

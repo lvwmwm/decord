@@ -1,10 +1,10 @@
-// Module ID: 19772
-// Function ID: 19773
+// Module ID: 19771
+// Function ID: 19772
 // Name: AppStoreConsentReinstatement
 // Dependencies: [5, 5675, 1386, 3, 8037, 8036, 1378, 8028, 8029, 2]
 // Exports: beginAppStoreConsentReinstatement, cancelAppStoreConsentReinstatement, isAppStoreConsentReinstatementEnabledForSession, settleAppStoreConsentReinstatement
 
-// Module 19772 (AppStoreConsentReinstatement)
+// Module 19771 (AppStoreConsentReinstatement)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 8036 */;

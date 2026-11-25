@@ -1,10 +1,10 @@
-// Module ID: 19583
-// Function ID: 19584
+// Module ID: 19582
+// Function ID: 19583
 // Name: FriendInviteUtils
 // Dependencies: [4861, 4954, 7785, 5694, 1112, 572, 12097, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 19583 (FriendInviteUtils)
+// Module 19582 (FriendInviteUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
@@ -30,7 +30,7 @@ export function revokeAllFriendInvites() {
   });
 }
 export function acceptFriendInvite(invite, context) {
-  const f118296 = () => closure_1_1(closure_1_2[6])();
+  const f118316 = () => closure_1_1(closure_1_2[6])();
   let tmp = null == invite.channel && null == invite.guild && null != invite.inviter;
   if (tmp) {
     let dMFromUserId = null;
@@ -41,7 +41,7 @@ export function acceptFriendInvite(invite, context) {
       const obj3 = InstantInviteActionCreatorsDefault;
       obj3.transitionToInvite(invite, { forceTransition: true });
       const obj4 = DispatcherDefault;
-      obj4.wait(f118296);
+      obj4.wait(f118316);
     } else {
       let obj = InstantInviteActionCreatorsDefault;
       const obj2 = {
@@ -61,7 +61,7 @@ export function acceptFriendInvite(invite, context) {
               const obj = { text: formatToPlainString(st2dcs, { username }), variant: "success" };
               open("FRIEND_INVITE_ACCEPT_CONFIRMATION", obj);
               const tmpResult = DispatcherDefault;
-              tmpResult.wait(f118296);
+              tmpResult.wait(f118316);
             }
       };
       const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);

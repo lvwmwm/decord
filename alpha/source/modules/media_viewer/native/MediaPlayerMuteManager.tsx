@@ -17,7 +17,7 @@ const useMediaPlayerMutedStore = module_560.create(() => ({ isMuted: false }));
 const nativeEventEmitter = new NativeEventEmitter(NativeModules.MediaPlayerManager);
 class MediaPlayerMuteManager {
   constructor() {
-    return Object.assign({ muteSubscription: "dispatch" });
+    return Object.assign({ muteSubscription: "top" });
   }
   initialize() {
     let state;
@@ -41,5 +41,5 @@ const prototype = MediaPlayerMuteManager.prototype;
 const prototype2 = MediaPlayerMuteManager.prototype;
 const result = size.fileFinishedImporting("modules/media_viewer/native/MediaPlayerMuteManager.tsx");
 
-export default Object.assign({ muteSubscription: "dispatch" });
+export default Object.assign({ muteSubscription: "top" });
 export { useMediaPlayerMutedStore };

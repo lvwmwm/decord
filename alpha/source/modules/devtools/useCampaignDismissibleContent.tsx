@@ -174,7 +174,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
                         return obj3;
                       } else if (c0 !== ref.current) {
                         c1 = 3;
-                        const obj4 = { value: { v: "dispatch" }, done: true };
+                        const obj4 = { value: { v: "top" }, done: true };
                         return obj4;
                       } else if (closure_1_5.some((content) => content.content === closure_0)) {
                         c2 = 1;

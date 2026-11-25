@@ -1,10 +1,10 @@
-// Module ID: 18860
-// Function ID: 18861
+// Module ID: 18859
+// Function ID: 18860
 // Name: useAppChannelClosed
 // Dependencies: [32, 19, 6906, 14012, 2]
 // Exports: default, isAppChannelRememberedClosed
 
-// Module 18860 (useAppChannelClosed)
+// Module 18859 (useAppChannelClosed)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FramesConstants from "FramesConstants" /* 6906 */;

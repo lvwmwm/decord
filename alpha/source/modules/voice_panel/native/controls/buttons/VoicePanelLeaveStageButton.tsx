@@ -1,10 +1,10 @@
-// Module ID: 19523
-// Function ID: 19524
+// Module ID: 19522
+// Function ID: 19523
 // Name: VoicePanelLeaveStageButton
-// Dependencies: [19, 4861, 21, 11733, 504, 19502, 19503, 7805, 1112, 10275, 2]
+// Dependencies: [19, 4861, 21, 11733, 504, 19501, 19502, 7805, 1112, 10275, 2]
 // Exports: default
 
-// Module 19523 (VoicePanelLeaveStageButton)
+// Module 19522 (VoicePanelLeaveStageButton)
 import Fragment from "Fragment" /* 21 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7805 */;
 import react from "react" /* 19 */;
@@ -25,11 +25,11 @@ export default function LeaveStageButton(arg0) {
   const items1 = [channelId];
   const tmp = stateFromStores;
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const obj2 = channelId(19502);
+  const obj2 = channelId(19501);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
   let tmp6 = null;
   if (null != stateFromStores) {
-    tmp(19503);
+    tmp(19502);
     const intl = tmp3(1112).intl;
     tmp6 = <tmpResult onPress={function onPress() {
       const obj = StageChannelActionCreators;

@@ -1,10 +1,10 @@
-// Module ID: 20306
-// Function ID: 20307
+// Module ID: 20309
+// Function ID: 20310
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 5012, 575, 5691, 7854, 7856, 6084, 5603, 1112, 3174, 11567, 20290, 11491, 12427, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5691, 7854, 7856, 6084, 5603, 1112, 3174, 11567, 20293, 11491, 12427, 2]
 // Exports: default
 
-// Module 20306 (AppStoreParentalRevocationScreen)
+// Module 20309 (AppStoreParentalRevocationScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -17,7 +17,7 @@ import ModalContent2 from "ModalContent" /* 7856 */;
 import ModalActionButton2 from "ModalActionButton" /* 11491 */;
 import ModalFooter2 from "ModalFooter" /* 11567 */;
 import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 12427 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20290 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20293 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5012 */;

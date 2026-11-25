@@ -1,10 +1,10 @@
-// Module ID: 20045
-// Function ID: 20046
+// Module ID: 20048
+// Function ID: 20049
 // Name: ChannelSetup
-// Dependencies: [19, 21, 8524, 20046, 20047, 20048, 5019, 5699, 2]
+// Dependencies: [19, 21, 8524, 20049, 20050, 20051, 5019, 5699, 2]
 // Exports: ChannelSetup, getChannelSetupSource, useChannelSetupSource
 
-// Module 20045 (ChannelSetup)
+// Module 20048 (ChannelSetup)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5019 */;
 import FastImageDefault from "FastImage" /* 5699 */;

@@ -1,13 +1,13 @@
-// Module ID: 18611
-// Function ID: 18612
+// Module ID: 18610
+// Function ID: 18611
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 11412, 18612, 10036, 1112, 4244, 18616, 2]
+// Dependencies: [5, 19, 21, 11412, 18611, 10036, 1112, 4244, 18615, 2]
 
-// Module 18611 (ConjureBotPermissionsTip)
+// Module 18610 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4244 from "module_4244" /* 4244 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 18612 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 18616 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 18611 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 18615 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

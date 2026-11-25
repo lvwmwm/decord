@@ -1,10 +1,10 @@
-// Module ID: 19560
-// Function ID: 19561
+// Module ID: 19559
+// Function ID: 19560
 // Name: HttpRequestSampleExperiment
 // Dependencies: [1450, 2]
 // Exports: getHttpRequestSampleRate
 
-// Module 19560 (HttpRequestSampleExperiment)
+// Module 19559 (HttpRequestSampleExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

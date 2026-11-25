@@ -1,10 +1,10 @@
-// Module ID: 19060
-// Function ID: 19061
+// Module ID: 19059
+// Function ID: 19060
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 4853, 7623, 6132, 6106, 7526, 4858, 15999, 21, 14214, 18102, 1378, 9478, 9445, 14938, 14971, 5576, 575, 6350, 4845, 14835, 5610, 9582, 7016, 1112, 19061, 19066, 19057, 9820, 19068, 19069, 14918, 9821, 14919, 12912, 17280, 9519, 14921, 9765, 19070, 14922, 19071, 1501, 6131, 9446, 9461, 504, 9443, 9447, 5758, 19073, 14623, 14963, 14939, 14984, 8444, 9490, 19074, 14987, 14995, 14837, 13814, 14990, 19076, 14906, 15001, 15010, 15016, 8574, 1653, 5590, 9485, 8545, 13560, 2]
+// Dependencies: [32, 19, 17, 4853, 7623, 6132, 6106, 7526, 4858, 15999, 21, 14214, 18102, 1378, 9478, 9445, 14938, 14971, 5576, 575, 6350, 4845, 14835, 5610, 9582, 7016, 1112, 19060, 19065, 19056, 9820, 19067, 19068, 14918, 9821, 14919, 12912, 17280, 9519, 14921, 9765, 19069, 14922, 19070, 1501, 6131, 9446, 9461, 504, 9443, 9447, 5758, 19072, 14623, 14963, 14939, 14984, 8444, 9490, 19073, 14987, 14995, 14837, 13814, 14990, 19075, 14906, 15001, 15010, 15016, 8574, 1653, 5590, 9485, 8545, 13560, 2]
 // Exports: default
 
-// Module 19060 (YouScreenUserProfileContent)
+// Module 19059 (YouScreenUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
@@ -37,12 +37,12 @@ import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSugges
 import UserProfileEditConstants from "UserProfileEditConstants" /* 15999 */;
 import BalanceWidgetMenu from "BalanceWidgetMenu" /* 17280 */;
 import showYouAccountActionSheet from "showYouAccountActionSheet" /* 18102 */;
-import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 19068 */;
-import useIsNitroBadgeAutoUnhiddenDefault from "useIsNitroBadgeAutoUnhidden" /* 19069 */;
-import NitroBadgeUnhiddenCoachmarkDefault from "NitroBadgeUnhiddenCoachmark" /* 19070 */;
-import OrbWalletProfileIntroductionCoachmarkDefault from "OrbWalletProfileIntroductionCoachmark" /* 19071 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 19074 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 19076 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 19067 */;
+import useIsNitroBadgeAutoUnhiddenDefault from "useIsNitroBadgeAutoUnhidden" /* 19068 */;
+import NitroBadgeUnhiddenCoachmarkDefault from "NitroBadgeUnhiddenCoachmark" /* 19069 */;
+import OrbWalletProfileIntroductionCoachmarkDefault from "OrbWalletProfileIntroductionCoachmark" /* 19070 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 19073 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 19075 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 7623 */;

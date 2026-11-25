@@ -1,11 +1,11 @@
-// Module ID: 18541
-// Function ID: 18542
+// Module ID: 18542
+// Function ID: 18543
 // Name: conjureProjectActions
-// Dependencies: [5, 1386, 7662, 7675, 6903, 4868, 18542, 5693, 6021, 1112, 4244, 7507, 6770, 5694, 5712, 12459, 18543, 7636, 8555, 11450, 7639, 11402, 5714, 12377, 5708, 11035, 10409, 7257, 18454, 5719, 2]
-// Exports: canUnpublishConjureUserApp, conjureProjectActions, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject
+// Dependencies: [5, 1386, 7662, 7675, 6903, 4868, 18543, 5693, 6021, 1112, 4244, 7507, 6770, 5694, 5712, 12459, 18544, 7636, 8555, 11450, 7639, 11402, 5714, 12377, 5708, 11035, 10409, 7257, 18454, 18535, 5719, 2]
+// Exports: canUnpublishConjureUserApp, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject, loadConjureProjectActions
 
-// Module 18541 (conjureProjectActions)
-import intl10 from "intl" /* 1112 */;
+// Module 18542 (conjureProjectActions)
+import intl11 from "intl" /* 1112 */;
 import _modDef4244 from "module_4244" /* 4244 */;
 import ChannelConstants from "ChannelConstants" /* 4868 */;
 import ToastUtils from "ToastUtils" /* 5693 */;
@@ -14,10 +14,8 @@ import CopyIcon from "CopyIcon" /* 5712 */;
 import ChannelUtils from "ChannelUtils" /* 6770 */;
 import ClipboardUtils from "ClipboardUtils" /* 7507 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
-import conjureProjectMute from "conjureProjectMute" /* 7639 */;
 import conjureRemoveApp from "conjureRemoveApp" /* 12459 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 18454 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 18543 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 18544 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1386 */;
 import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 7662 */;
@@ -26,7 +24,7 @@ import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c3, closure_2, closure_3;
+let _require, c1, closure_2, closure_3, currentUser, isAccessRefused;
 
 let c10;
 let c9;
@@ -202,13 +200,13 @@ let obj = function _importIntoProject() {
   });
   return obj(...arguments);
 };
-function deleteConjureProject(project, target) {
+function deleteConjureProject(project, removeTarget) {
   let intl;
   let intl2;
   let intl3;
   let obj3;
   _require = project;
-  if (null == target) {
+  if (null == removeTarget) {
     const obj2 = {
       key: "ConjureProjectDelete",
       title: intl.formatToPlainString(_modDef4244.CJBhb2, obj3),
@@ -232,10 +230,217 @@ function deleteConjureProject(project, target) {
     intl3 = require("intl").intl;
     showConfirmModal(obj2);
   } else {
-    obj = { project, target, action: "delete" };
+    obj = { project, target: removeTarget, action: "delete" };
     openConjureRemoveAppAlertDefault(obj);
   }
 }
+obj = function _loadConjureProjectActions() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c3;
+    let c4;
+    let closure_1;
+    let obj2;
+    function conjureProjectActions(project) {
+      let BellSlashIcon;
+      let closure_4;
+      let intl10;
+      let intl2;
+      let intl3;
+      let intl4;
+      let intl5;
+      let intl6;
+      let intl7;
+      let intl8;
+      let intl9;
+      let muted;
+      let onOpenSettings;
+      let s9rCuH;
+      let target;
+      let tmp8;
+      project = project.project;
+      ({ guildId: closure_1, muted } = project);
+      const removeTarget = project.removeTarget;
+      ({ openChat: closure_4, onOpenSettings } = project);
+      let c5;
+      const onRemix = project.onRemix;
+      const tmp = closure_11;
+      const tmp2 = closure_11(project);
+      const items = [];
+      const push = items.push;
+      let intl = project(muted[9]).intl;
+      const string = intl.string;
+      const tmp6 = closure_1(muted[10]);
+      if (muted) {
+        s9rCuH = tmp6.s9rCuH;
+        tmp8 = tmp5;
+      } else {
+        s9rCuH = tmp6["a+i/As"];
+        tmp8 = tmp5;
+      }
+      obj = {
+        label: string(s9rCuH),
+        IconComponent: BellSlashIcon,
+        action() {
+          obj = closure_2_0(closure_2_2[20]);
+          return obj.setConjureProjectMuted(project.id, !muted);
+        }
+      };
+      if (muted) {
+        BellSlashIcon = tmp3(tmp4[18]).BellIcon;
+      } else {
+        BellSlashIcon = tmp3(tmp4[19]).BellSlashIcon;
+      }
+      push(obj);
+      if (closure_10(project)) {
+        let obj2 = { label: intl2.string(tmp8(tmp4[10]).XWgAfc), IconComponent: project(tmp4[21]).PaperPlusIcon, action: onRemix };
+        const push2 = items.push;
+        intl2 = tmp3(tmp4[9]).intl;
+        push2(obj2);
+      }
+      const push3 = items.push;
+      const obj3 = {
+        label: intl3.string(tmp8(muted[10]).WsEEP7),
+        IconComponent: project(muted[22]).DownloadIcon,
+        action() {
+          if (currentUser != null) {
+            tmp2();
+          }
+          closure_2_5(project.id);
+          const id = tmp.id;
+          const intl = closure_2_0(closure_2_2[9]).intl;
+          closure_2_6(id, intl.string(closure_2_1(closure_2_2[10]).oU20rd));
+        }
+      };
+      intl3 = tmp3(tmp4[9]).intl;
+      push3(obj3);
+      if (tmp2) {
+        const push4 = items.push;
+        const obj4 = {
+          label: intl4.string(tmp8(muted[10]).rWGY3e),
+          IconComponent: project(muted[23]).FileUpIcon,
+          action() {
+              const promise = importIntoProject(project, currentUser);
+              promise.catch(() => {
+                const presentError = project(muted[7]).presentError;
+                project(muted[7]);
+                const intl = project(muted[9]).intl;
+                presentError(intl.string(closure_1_1(muted[10])["Q+l4Hv"]));
+              });
+            }
+        };
+        intl4 = tmp3(tmp4[9]).intl;
+        push4(obj4);
+      }
+      const push5 = items.push;
+      const obj5 = {
+        label: intl5.string(project(muted[9]).t.WqhZss),
+        IconComponent: project(muted[24]).LinkIcon,
+        action() {
+          const copy = closure_2_0(closure_2_2[11]).copy;
+          closure_2_0(closure_2_2[11]);
+          obj = closure_2_0(closure_2_2[12]);
+          copy(obj.getChannelPermalink(closure_1, constants.CONJURE_PROJECT, project.id));
+          const obj2 = closure_2_0(closure_2_2[7]);
+          obj2.presentLinkCopied();
+        }
+      };
+      intl5 = tmp3(tmp4[9]).intl;
+      push5(obj5);
+      const push6 = items.push;
+      const obj6 = {
+        label: intl6.string(tmp8(muted[10])["nm/zuU"]),
+        IconComponent: project(muted[25]).IdIcon,
+        action() {
+          let intl;
+          obj = closure_2_0(closure_2_2[11]);
+          obj.copy(project.id);
+          const obj2 = { text: intl.string(closure_2_1(closure_2_2[10]).CmfaZG), icon: closure_2_0(closure_2_2[14]).CopyIcon };
+          const open = closure_2_1(closure_2_2[13]).open;
+          closure_2_1(closure_2_2[13]);
+          intl = closure_2_0(closure_2_2[9]).intl;
+          open("CONJURE_PROJECT_ID_COPIED", obj2);
+        }
+      };
+      intl6 = tmp3(tmp4[9]).intl;
+      push6(obj6);
+      let tmp15 = closure_9(project) && null != onOpenSettings;
+      if (tmp15) {
+        isAccessRefused = isAccessRefused.isAccessRefused;
+        let id = project.id;
+        currentUser = currentUser.getCurrentUser();
+        let id1;
+        if (currentUser != null) {
+          id1 = currentUser.id;
+        }
+        tmp15 = !isAccessRefused(id, id1);
+      }
+      if (tmp15) {
+        const push7 = items.push;
+        const obj7 = { label: intl7.string(tmp8(muted[10]).FzfmQ8), IconComponent: project(muted[26]).SettingsIcon, action: onOpenSettings };
+        intl7 = tmp3(tmp4[9]).intl;
+        push7(obj7);
+      }
+      let result1 = tmp(project);
+      if (result1) {
+        const tmp3Result = project(muted[15]);
+        result1 = tmp3Result.isPublishedConjureUserApp(project, publishStatus.getPublishStatus(project.id));
+      }
+      if (result1) {
+        const push8 = items.push;
+        const obj8 = {
+          label: intl8.string(tmp8(muted[10]).jYAR58),
+          IconComponent: project(muted[27]).EyeSlashIcon,
+          destructive: true,
+          action() {
+              return closure_2_1(closure_2_2[28])(project);
+            }
+        };
+        intl8 = tmp3(tmp4[9]).intl;
+        push8(obj8);
+      }
+      const tmp3Result2 = project(muted[29]);
+      const result = tmp3Result2.conjureAdminUnpublishTarget(project, removeTarget);
+      c5 = result;
+      if (null != result) {
+        const push9 = items.push;
+        const obj9 = {
+          label: intl9.string(tmp8(muted[10]).mS61Dm),
+          IconComponent: project(muted[27]).EyeSlashIcon,
+          destructive: true,
+          action() {
+              obj = { project, target, action: "remove" };
+              return closure_2_1(closure_2_2[16])(obj);
+            }
+        };
+        intl9 = tmp3(tmp4[9]).intl;
+        push9(obj9);
+      }
+      if (tmp2) {
+        const push10 = items.push;
+        const obj10 = {
+          label: intl10.string(project(muted[9]).t.oyYWHE),
+          IconComponent: project(muted[30]).TrashIcon,
+          destructive: true,
+          action() {
+              closure_2_14(project, removeTarget);
+            }
+        };
+        intl10 = tmp3(tmp4[9]).intl;
+        push10(obj10);
+      }
+      return items;
+    }
+    let closure_0 = arg0;
+    let c2 = 0;
+    let obj5 = require("conjureAdminUnpublish");
+    await obj5.loadConjureAdminUnpublishLookup(closure_0.project);
+    obj = { removeTarget: obj2.readConjureRemoveTarget(closure_0.project) };
+    const merged = Object.assign(closure_0);
+    obj2 = closure_130_0(closure_130_2[15]);
+    return conjureProjectActions(obj);
+  });
+  return obj(...arguments);
+};
 let ConjureConnectionStore = ConjureConnectionStore_mod;
 ({ ensureConnection: hasOwnProperty, sendUserMessage: metroRequire } = ConjureConnectionStore);
 ConjureConnectionStore = ConjureConnectionStore_mod;
@@ -249,7 +454,7 @@ export function exportConjureProject(project, fn) {
   }
   hasOwnProperty(project.id);
   const id = project.id;
-  const intl = intl10.intl;
+  const intl = intl11.intl;
   metroRequire(id, intl.string(_modDef4244.oU20rd));
 }
 export function importConjureProject(project, arg1) {
@@ -276,7 +481,7 @@ export function copyConjureProjectId(project) {
   const obj2 = { text: intl.string(_modDef4244.CmfaZG), icon: CopyIcon.CopyIcon };
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
-  intl = intl10.intl;
+  intl = intl11.intl;
   open("CONJURE_PROJECT_ID_COPIED", obj2);
 }
 export function canUnpublishConjureUserApp(project) {
@@ -288,171 +493,6 @@ export function canUnpublishConjureUserApp(project) {
   return result;
 }
 export { deleteConjureProject };
-export function conjureProjectActions(project) {
-  let BellSlashIcon;
-  let intl2;
-  let intl3;
-  let intl4;
-  let intl5;
-  let intl6;
-  let intl7;
-  let intl8;
-  let intl9;
-  let muted;
-  let onOpenSettings;
-  let s9rCuH;
-  let tmp8;
-  project = project.project;
-  ({ guildId: importDefault, muted } = project);
-  ({ removeTarget: _asyncToGenerator, openChat: UserStore, onOpenSettings } = project);
-  const onRemix = project.onRemix;
-  const tmp = closure_11;
-  const tmp2 = closure_11(project);
-  const items = [];
-  const push = items.push;
-  let intl = project(muted[9]).intl;
-  const string = intl.string;
-  const tmp6 = require("module_4244");
-  if (muted) {
-    s9rCuH = tmp6.s9rCuH;
-    tmp8 = tmp5;
-  } else {
-    s9rCuH = tmp6["a+i/As"];
-    tmp8 = tmp5;
-  }
-  obj = {
-    label: string(s9rCuH),
-    IconComponent: BellSlashIcon,
-    action() {
-      obj = conjureProjectMute;
-      return obj.setConjureProjectMuted(project.id, !muted);
-    }
-  };
-  if (muted) {
-    BellSlashIcon = tmp3(tmp4[18]).BellIcon;
-  } else {
-    BellSlashIcon = tmp3(tmp4[19]).BellSlashIcon;
-  }
-  push(obj);
-  if (closure_10(project)) {
-    let obj2 = { label: intl2.string(tmp8(tmp4[10]).XWgAfc), IconComponent: project(tmp4[21]).PaperPlusIcon, action: onRemix };
-    const push2 = items.push;
-    intl2 = tmp3(tmp4[9]).intl;
-    push2(obj2);
-  }
-  const push3 = items.push;
-  const obj3 = {
-    label: intl3.string(tmp8(muted[10]).WsEEP7),
-    IconComponent: project(muted[22]).DownloadIcon,
-    action() {
-      if (UserStore != null) {
-        tmp2();
-      }
-      hasOwnProperty(project.id);
-      const id = tmp.id;
-      const intl = intl10.intl;
-      metroRequire(id, intl.string(_modDef4244.oU20rd));
-    }
-  };
-  intl3 = tmp3(tmp4[9]).intl;
-  push3(obj3);
-  if (tmp2) {
-    const push4 = items.push;
-    const obj4 = {
-      label: intl4.string(tmp8(muted[10]).rWGY3e),
-      IconComponent: project(muted[23]).FileUpIcon,
-      action() {
-          const promise = importIntoProject(project, UserStore);
-          promise.catch(() => {
-            const presentError = project(muted[7]).presentError;
-            project(muted[7]);
-            const intl = project(muted[9]).intl;
-            presentError(intl.string(closure_1_1(muted[10])["Q+l4Hv"]));
-          });
-        }
-    };
-    intl4 = tmp3(tmp4[9]).intl;
-    push4(obj4);
-  }
-  const push5 = items.push;
-  const obj5 = {
-    label: intl5.string(project(muted[9]).t.WqhZss),
-    IconComponent: project(muted[24]).LinkIcon,
-    action() {
-      const copy = ClipboardUtils.copy;
-      ClipboardUtils;
-      obj = ChannelUtils;
-      copy(obj.getChannelPermalink(importDefault, StaticChannelRoute.CONJURE_PROJECT, project.id));
-      const obj2 = ToastUtils;
-      obj2.presentLinkCopied();
-    }
-  };
-  intl5 = tmp3(tmp4[9]).intl;
-  push5(obj5);
-  const push6 = items.push;
-  const obj6 = {
-    label: intl6.string(tmp8(muted[10])["nm/zuU"]),
-    IconComponent: project(muted[25]).IdIcon,
-    action() {
-      let intl;
-      obj = ClipboardUtils;
-      obj.copy(project.id);
-      const obj2 = { text: intl.string(_modDef4244.CmfaZG), icon: CopyIcon.CopyIcon };
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      intl = intl10.intl;
-      open("CONJURE_PROJECT_ID_COPIED", obj2);
-    }
-  };
-  intl6 = tmp3(tmp4[9]).intl;
-  push6(obj6);
-  let tmp15 = closure_9(project) && null != onOpenSettings;
-  if (tmp15) {
-    const isAccessRefused = ConjureConnectionStore.isAccessRefused;
-    let id = project.id;
-    const currentUser = UserStore.getCurrentUser();
-    let id1;
-    if (currentUser != null) {
-      id1 = currentUser.id;
-    }
-    tmp15 = !isAccessRefused(id, id1);
-  }
-  if (tmp15) {
-    const push7 = items.push;
-    const obj7 = { label: intl7.string(tmp8(muted[10]).FzfmQ8), IconComponent: project(muted[26]).SettingsIcon, action: onOpenSettings };
-    intl7 = tmp3(tmp4[9]).intl;
-    push7(obj7);
-  }
-  let result = tmp(project);
-  if (result) {
-    const tmp3Result = project(muted[15]);
-    result = tmp3Result.isPublishedConjureUserApp(project, ConjurePublishStatusStore.getPublishStatus(project.id));
-  }
-  if (result) {
-    const push8 = items.push;
-    const obj8 = {
-      label: intl8.string(tmp8(muted[10]).jYAR58),
-      IconComponent: project(muted[27]).EyeSlashIcon,
-      destructive: true,
-      action() {
-          return openConjureUnpublishUserAppAlertDefault(project);
-        }
-    };
-    intl8 = tmp3(tmp4[9]).intl;
-    push8(obj8);
-  }
-  if (tmp2) {
-    const push9 = items.push;
-    const obj9 = {
-      label: intl9.string(project(muted[9]).t.oyYWHE),
-      IconComponent: project(muted[29]).TrashIcon,
-      destructive: true,
-      action() {
-          deleteConjureProject(project, _asyncToGenerator);
-        }
-    };
-    intl9 = tmp3(tmp4[9]).intl;
-    push9(obj9);
-  }
-  return items;
+export function loadConjureProjectActions() {
+  return obj(...arguments);
 }

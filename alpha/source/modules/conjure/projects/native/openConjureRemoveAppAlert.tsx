@@ -1,10 +1,10 @@
-// Module ID: 18543
-// Function ID: 18544
+// Module ID: 18544
+// Function ID: 18545
 // Name: openConjureRemoveAppAlert
-// Dependencies: [32, 5, 19, 21, 5012, 12458, 1112, 4244, 5694, 6021, 12456, 6084, 5603, 12459, 7636, 6017, 2]
-// Exports: default
+// Dependencies: [32, 5, 19, 21, 5012, 12458, 1112, 4244, 5694, 6021, 12456, 6084, 5603, 12454, 12459, 7636, 6017, 2]
+// Exports: default, openConjureRemoveBotAlert
 
-// Module 18543 (openConjureRemoveAppAlert)
+// Module 18544 (openConjureRemoveAppAlert)
 import useAlertStore from "useAlertStore" /* 6017 */;
 import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 12458 */;
 import conjureRemoveApp from "conjureRemoveApp" /* 12459 */;
@@ -16,7 +16,7 @@ import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, c3, importDefault;
+let _require, c3, c4, importDefault;
 
 let metroImportAll;
 let metroImportDefault;
@@ -151,6 +151,154 @@ function ConjureRemoveFromServerAlert(target) {
   items1[1] = closure_6(AlertActionButton2, obj9);
   return closure_6(AlertModal, obj);
 }
+class ConjureRemoveBotAlert {
+  constructor(app) {
+    let applicationId;
+    let onPlainConfirm;
+    let tmp3Result;
+    app = app.app;
+    let conjureServerApp;
+    ({ applicationId, onPlainConfirm } = app);
+    let obj = conjureServerApp(12454);
+    conjureServerApp = obj.useConjureServerApp(app.guildId, applicationId);
+    if (conjureServerApp == null) {
+      conjureServerApp = app;
+    }
+    [][0] = conjureServerApp;
+    if (app.targetIsPreview) {
+      const obj2 = { app: conjureServerApp, onPlainConfirm };
+      tmp3Result = tmp3(ConjureRemoveTestBotAlert, obj2);
+    } else {
+      const obj3 = { target: tmp2 };
+      tmp3Result = tmp3(ConjureRemoveFromServerAlert, obj3);
+    }
+    return tmp3Result;
+  }
+}
+function ConjureRemoveTestBotAlert(arg0) {
+  let _undefined;
+  let app;
+  let c1;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let obj3;
+  let obj4;
+  let obj5;
+  let obj7;
+  let require;
+  let tmp3;
+  let tmp4Result;
+  ({ app, onPlainConfirm: require } = arg0);
+  importDefault = undefined;
+  let obj = function _remove2() {
+    obj = _asyncToGenerator(async function(arg0, value) {
+      let closure_1;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: "HermesInternal" };
+        }
+      } else {
+        let c2;
+        try {
+          let closure_0;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              closure_0 = undefined;
+              _undefined(null);
+              c2 = 1;
+              c3 = 2;
+              c4 = 1;
+              const obj4 = { value: _require(), done: false };
+              return obj4;
+            }
+          } else if (1 === c3) {
+            c2 = 0;
+            const intl = closure_0(c2[6]).intl;
+            closure_0 = intl.string(tmp(c2[7]).eVp6fL);
+            closure_129_1(closure_0);
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error = new Error(closure_0);
+            throw error;
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c2 = 0;
+            c4 = 3;
+            obj = { value, done: true };
+            return obj;
+          } else {
+            c2 = 0;
+            c4 = 3;
+            return { value: "HermesInternal", done: "HermesInternal" };
+          }
+        } catch (tmp19) {
+          if (0 === c2) {
+            c4 = 3;
+            throw tmp19;
+          } else {
+            c3 = 1;
+          }
+        }
+      }
+    });
+    return obj(...arguments);
+  };
+  const tmp = closure_9();
+  [tmp3, c1] = _slicedToArray(react.useState(null), 2);
+  const tmp4 = closure_6;
+  const tmp2 = _slicedToArray(react.useState(null), 2);
+  obj = { title: obj3.conjureTitleWithAppTag(closure_6(require("Text/Text").Text, obj4)), content: intl.formatToPlainString(require("module_4244").f22PGK, obj5), extraContent: tmp4Result, actions: closure_7(closure_8, obj7) };
+  const AlertModal = require("AlertModal").AlertModal;
+  let obj2 = require("ConjureRemovedItems");
+  const formatWithAppTagResult = obj2.formatWithAppTag(require("module_4244").x6FvsZ, app.targetAppName);
+  obj3 = require("conjureRemoveApp");
+  obj4 = { variant: "heading-lg/semibold", color: "none", style: tmp.title, children: formatWithAppTagResult };
+  intl = require("intl").intl;
+  tmp4Result = undefined;
+  obj5 = { server: app.guildName };
+  const tmp7 = importDefault;
+  if (null != tmp3) {
+    const obj6 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp3 };
+    tmp4Result = tmp4(tmp5(tmp6[12]).Text, obj6);
+  }
+  obj7 = { children: items };
+  const obj8 = {
+    variant: "destructive",
+    text: intl2.string(tmp7(obj[7]).BGF8VT),
+    onPress: function remove() {
+      return obj(...arguments);
+    }
+  };
+  const AlertActionButton = tmp5(tmp6[9]).AlertActionButton;
+  intl2 = tmp5(tmp6[6]).intl;
+  items = [tmp4(AlertActionButton, obj8), ];
+  const obj9 = { variant: "secondary", text: intl3.string(require("intl").t["ETE/oC"]) };
+  const AlertActionButton2 = tmp5(tmp6[9]).AlertActionButton;
+  intl3 = tmp5(tmp6[6]).intl;
+  items[1] = tmp4(AlertActionButton2, obj9);
+  return tmp4(AlertModal, obj);
+}
 function ConjureDeleteProjectInServerAlert(arg0) {
   let Stack;
   let _undefined;
@@ -204,7 +352,7 @@ function ConjureDeleteProjectInServerAlert(arg0) {
               tmp2 = undefined;
               tmp = undefined;
               _undefined(null);
-              const obj5 = tmp2(c2[14]);
+              const obj5 = tmp2(c2[15]);
               c2 = 1;
               c3 = 1;
               const obj4 = { value: deleteProjectResult.catch(() => null), done: false };
@@ -318,3 +466,11 @@ export default function openConjureRemoveAppAlert(action) {
     openAlert("ConjureRemoveApp", metroRequire(ConjureDeleteProjectInServerAlert, obj));
   }
 };
+export { ConjureRemoveBotAlert };
+export function openConjureRemoveBotAlert(arg0) {
+  const openAlert = useAlertStore.openAlert;
+  const obj = {};
+  useAlertStore;
+  const merged = Object.assign(arg0);
+  openAlert("ConjureRemoveApp", metroRequire(ConjureRemoveBotAlert, obj));
+}

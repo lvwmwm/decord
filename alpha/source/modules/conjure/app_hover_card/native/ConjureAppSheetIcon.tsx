@@ -16,29 +16,33 @@ import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_4 = createStyles.createStyles((borderRadius) => {
+let closure_4 = createStyles.createStyles((width, borderRadius) => {
   const obj = { icon: size };
-  size = { width: 48, height: 48, borderRadius, overflow: "hidden" };
+  size = { width, height: width, borderRadius, overflow: "hidden" };
   return obj;
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/conjure/app_hover_card/native/ConjureAppSheetIcon.tsx");
 
-export default function ConjureAppSheetIcon(arg0) {
+export default function ConjureAppSheetIcon(size) {
   let application;
   let radius;
   let tmp8;
-  ({ application, radius } = arg0);
+  ({ application, radius } = size);
   if (radius === undefined) {
     radius = nativeDefault.radii.lg;
   }
-  const tmp3 = closure_4(radius);
+  let num = size.size;
+  if (num === undefined) {
+    num = 48;
+  }
+  const tmp3 = closure_4(num, radius);
   if (null == application.icon) {
     ({ id: obj5.applicationId, name: obj5.name } = application);
     tmp8 = <View style={tmp3.icon}>{null}</View>;
   } else {
     FastImageDefault;
-    const obj9 = { id: null, icon: null, size: 48 };
+    const obj9 = { id: null, icon: null, size: num };
     ({ id: obj3.id, icon: obj3.icon } = application);
     tmp8 = <tmp7 source={AvatarUtilsDefault.getApplicationIconSource(obj9)} style={tmp3.icon} />;
   }

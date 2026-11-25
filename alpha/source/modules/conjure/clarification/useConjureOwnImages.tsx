@@ -1,10 +1,10 @@
-// Module ID: 18743
-// Function ID: 18744
+// Module ID: 18742
+// Function ID: 18743
 // Name: useConjureOwnImages
 // Dependencies: [109, 32, 19, 1112, 4244, 18469, 2]
 // Exports: inertOwnImageControls, useConjureOwnImages
 
-// Module 18743 (useConjureOwnImages)
+// Module 18742 (useConjureOwnImages)
 import _modDef4244 from "module_4244" /* 4244 */;
 import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18469 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -131,7 +131,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
       let busy;
       let closure_3;
       let error;
-      const f139605 = (arg0) => {
+      const f139659 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
@@ -264,7 +264,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f139605);
+                    closure_1_8(f139659);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -327,7 +327,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f139605);
+                  closure_1_8(f139659);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

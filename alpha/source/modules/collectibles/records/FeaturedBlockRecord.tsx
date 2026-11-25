@@ -9,7 +9,7 @@ import FeaturedCategorySubblockRecord from "FeaturedCategorySubblockRecord" /* 6
 import FeaturedSubblockType from "FeaturedSubblockType" /* 6316 */;
 import size from "module_2" /* 2 */;
 
-const f89591 = (type) => {
+const f89612 = (type) => {
   let fromServerResult;
   if (type.type === FeaturedSubblockType.FeaturedSubblockType.CATEGORY) {
     fromServerResult = closure_1_2.fromServer(type);
@@ -25,7 +25,7 @@ class FeaturedBlockRecord {
     const obj = Object.create(new.target.prototype);
     obj.type = ShopBlockType.ShopBlockType.FEATURED;
     subblocks = subblocks.subblocks;
-    obj.subblocks = subblocks.map(f89591);
+    obj.subblocks = subblocks.map(f89612);
     return obj;
   }
   static fromServer(subblocks) {
@@ -33,7 +33,7 @@ class FeaturedBlockRecord {
       const obj = Object.create(tmp.prototype);
       obj.type = ShopBlockType.ShopBlockType.FEATURED;
       subblocks = subblocks.subblocks;
-      obj.subblocks = subblocks.map(f89591);
+      obj.subblocks = subblocks.map(f89612);
       return obj;
     } else {
       throw new TypeError("Trying to call a non-function");

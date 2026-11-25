@@ -1,16 +1,16 @@
-// Module ID: 18964
-// Function ID: 18965
+// Module ID: 18963
+// Function ID: 18964
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6922, 13248, 8976, 21, 13261, 504, 13241, 18953, 18965, 13234, 18966, 18967, 13239, 18885, 18898, 2]
+// Dependencies: [19, 6922, 13248, 8976, 21, 13261, 504, 13241, 18952, 18964, 13234, 18965, 18966, 13239, 18884, 18897, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 18964 (BaseMessagesScreen)
+// Module 18963 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
 import TrackingConstants from "TrackingConstants" /* 8976 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13234 */;
 import SearchUtils from "SearchUtils" /* 13241 */;
 import TrackingDefault from "Tracking" /* 13261 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18966 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18965 */;
 import react from "react" /* 19 */;
 import SearchMessageStore from "SearchMessageStore" /* 6922 */;
 import SearchQueryStore from "SearchQueryStore" /* 13248 */;

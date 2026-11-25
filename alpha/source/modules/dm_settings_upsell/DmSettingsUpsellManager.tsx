@@ -1,13 +1,13 @@
-// Module ID: 19631
-// Function ID: 19632
+// Module ID: 19630
+// Function ID: 19631
 // Name: DmSettingsUpsellManager
-// Dependencies: [1071, 7444, 19632, 1284, 2]
+// Dependencies: [1071, 7444, 19631, 1284, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 19631 (DmSettingsUpsellManager)
+// Module 19630 (DmSettingsUpsellManager)
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 19632 */;
+import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 19631 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 

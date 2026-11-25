@@ -1,14 +1,14 @@
-// Module ID: 20161
-// Function ID: 20162
+// Module ID: 20164
+// Function ID: 20165
 // Name: GuildRoleSubscriptionsActionCreatorExtras
-// Dependencies: [20152, 16765, 16785, 6099, 20162, 2119, 20193, 2]
+// Dependencies: [20155, 16765, 16785, 6099, 20165, 2119, 20196, 2]
 // Exports: openGroupSetupModal, openTierCreationModal
 
-// Module 20161 (GuildRoleSubscriptionsActionCreatorExtras)
+// Module 20164 (GuildRoleSubscriptionsActionCreatorExtras)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
 import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16785 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20152 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20155 */;
 import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16765 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export function openTierCreationModal(arg0) {
   const pushLazy = ModalActionCreatorsDefault.pushLazy;
   const obj2 = { editStateId: NEW_LISTING_EDIT_STATE_ID };
   ModalActionCreatorsDefault;
-  const tmp4 = asyncRequire(20162, dependencyMap.paths);
+  const tmp4 = asyncRequire(20165, dependencyMap.paths);
   const merged = Object.assign(arg0);
   pushLazy(tmp4, obj2, hasOwnProperty);
 }
@@ -37,5 +37,5 @@ export function openGroupSetupModal(guildId) {
   obj.clearEditState(NEW_LISTING_EDIT_STATE_ID);
   const obj2 = ModalActionCreatorsDefault;
   const obj3 = { guildId, editStateId: NEW_LISTING_EDIT_STATE_ID };
-  obj2.pushLazy(asyncRequire(20193, dependencyMap.paths), obj3, metroRequire);
+  obj2.pushLazy(asyncRequire(20196, dependencyMap.paths), obj3, metroRequire);
 }

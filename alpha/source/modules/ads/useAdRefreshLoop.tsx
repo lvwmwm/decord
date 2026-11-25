@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus) {
-  const f110550 = (item) => {
+  const f110571 = (item) => {
     const obj = require("AdDecisionUtils");
     return obj.isAdDecisionValid(item);
   };
@@ -25,8 +25,8 @@ function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus
   const isEligibleForQuests = obj.getIsEligibleForQuests();
   let tmp5 = !isEligibleForQuests;
   if (isEligibleForQuests) {
-    tmp5 = arr.length > 0 && arr.every(f110550);
-    arr.length > 0 && arr.every(f110550);
+    tmp5 = arr.length > 0 && arr.every(f110571);
+    arr.length > 0 && arr.every(f110571);
   }
   if (!tmp5) {
     const obj2 = DiscordAppStateDefault;

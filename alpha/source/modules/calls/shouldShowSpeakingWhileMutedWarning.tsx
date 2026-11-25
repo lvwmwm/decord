@@ -1,10 +1,10 @@
-// Module ID: 19375
-// Function ID: 19376
+// Module ID: 19374
+// Function ID: 19375
 // Name: shouldShowSpeakingWhileMutedWarning
 // Dependencies: [6772, 2]
 // Exports: default
 
-// Module 19375 (shouldShowSpeakingWhileMutedWarning)
+// Module 19374 (shouldShowSpeakingWhileMutedWarning)
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6772 */;
 import size from "module_2" /* 2 */;
 

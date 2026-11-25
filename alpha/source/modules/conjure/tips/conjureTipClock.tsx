@@ -1,10 +1,10 @@
-// Module ID: 18605
-// Function ID: 18606
+// Module ID: 18604
+// Function ID: 18605
 // Name: conjureTipClock
 // Dependencies: [32, 19, 2]
 // Exports: nextConjureTipClockDelay, useConjureTipClock
 
-// Module 18605 (conjureTipClock)
+// Module 18604 (conjureTipClock)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

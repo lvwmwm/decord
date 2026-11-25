@@ -1,10 +1,10 @@
-// Module ID: 20023
-// Function ID: 20024
+// Module ID: 20026
+// Function ID: 20027
 // Name: GuildTemplateSettingsUtils
 // Dependencies: [5, 32, 19, 4861, 4944, 8204, 1071, 504, 7831, 5761, 2]
 // Exports: isGuildTemplateNameValid, useCanViewAllChannels, useGuildTemplate
 
-// Module 20023 (GuildTemplateSettingsUtils)
+// Module 20026 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,10 +1,10 @@
-// Module ID: 19447
-// Function ID: 19448
+// Module ID: 19446
+// Function ID: 19447
 // Name: useActivityUsers
 // Dependencies: [1386, 4860, 563, 2]
 // Exports: default
 
-// Module 19447 (useActivityUsers)
+// Module 19446 (useActivityUsers)
 import UserStore from "UserStore" /* 1386 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
 import size from "module_2" /* 2 */;

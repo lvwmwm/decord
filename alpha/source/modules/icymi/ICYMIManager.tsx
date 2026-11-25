@@ -27,7 +27,7 @@ class ICYMIManager extends LifecycleManager {
   }
   handlePostConnectionOpen() {
     let timeout;
-    const f109036 = () => {
+    const f109057 = () => {
       let timeout;
       const obj = WaterwheelsDiscoverExperiment;
       if (!obj.getWaterwheelsDiscoverEnabled("ICYMIManager")) {
@@ -39,7 +39,7 @@ class ICYMIManager extends LifecycleManager {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
-      timeout = setTimeout(f109036, 15 * require("Durations").Millis.MINUTE);
+      timeout = setTimeout(f109057, 15 * require("Durations").Millis.MINUTE);
     };
     const tmp = require;
     let obj = ICYMIExperiment;
@@ -55,7 +55,7 @@ class ICYMIManager extends LifecycleManager {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f109036, 15 * DurationsDefault.Millis.MINUTE);
+      timeout = setTimeout(f109057, 15 * DurationsDefault.Millis.MINUTE);
       const obj5 = ICYMIActionCreatorsDefault;
       const guildChannelScores = obj5.getGuildChannelScores();
       const obj6 = ICYMIActionCreatorsDefault;

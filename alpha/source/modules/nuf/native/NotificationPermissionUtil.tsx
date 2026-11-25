@@ -24,7 +24,7 @@ let c1, c2, c4, closure_3, closure_4;
 
 let metroImportDefault;
 let metroRequire;
-const f103908 = () => state.authorizationStatus;
+const f103929 = () => state.authorizationStatus;
 let obj = function _requestAndroidNotificationPermission() {
   let Version;
   let token;
@@ -388,7 +388,7 @@ export function useCanSeePushNotificationNudge() {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f103908);
+  const stateFromStores = obj2.useStateFromStores(items, f103929);
   [tmp4, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {
@@ -423,7 +423,7 @@ export function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f103908);
+  const stateFromStores = obj2.useStateFromStores(items, f103929);
   [tmp7, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {

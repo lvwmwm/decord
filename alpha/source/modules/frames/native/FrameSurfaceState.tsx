@@ -1,10 +1,10 @@
-// Module ID: 18859
-// Function ID: 18860
+// Module ID: 18858
+// Function ID: 18859
 // Name: FrameSurfaceState
 // Dependencies: [19, 17, 21, 5012, 575, 5603, 7016, 2]
 // Exports: FrameSurfaceExplanation, FrameSurfaceLoading
 
-// Module 18859 (FrameSurfaceState)
+// Module 18858 (FrameSurfaceState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5603 */;

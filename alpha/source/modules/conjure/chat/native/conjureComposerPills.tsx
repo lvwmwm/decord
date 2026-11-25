@@ -1,10 +1,10 @@
-// Module ID: 18775
-// Function ID: 18776
+// Module ID: 18774
+// Function ID: 18775
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1386, 18468, 10617, 5068, 18625, 1112, 4244, 12384, 2]
+// Dependencies: [32, 17, 1386, 18468, 10617, 5068, 18624, 1112, 4244, 12384, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
-// Module 18775 (conjureComposerPills)
+// Module 18774 (conjureComposerPills)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4244 from "module_4244" /* 4244 */;
@@ -67,7 +67,7 @@ export function conjureUserPillLabel(id) {
 export function decodeConjurePills(draft) {
   map = new Map();
   let obj = {
-    text: draft.replace(map(18625).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
+    text: draft.replace(map(18624).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
       let combined;
       let uri;
       if (null != arg1) {

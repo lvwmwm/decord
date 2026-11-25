@@ -284,7 +284,7 @@ function ActivityItem(context) {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f103002 = () => {
+  const f103023 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -325,8 +325,8 @@ function ActivityItem(context) {
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f103002), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f103002), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f103023), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f103023), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -933,7 +933,7 @@ export default function AppLauncherHomeScreen(route) {
   }
   items13[1] = sections1;
   let memo5 = useMemo(() => {
-    const f141433 = (commands) => Object.keys(commands.commands).length > 0;
+    const f141492 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -951,11 +951,11 @@ export default function AppLauncherHomeScreen(route) {
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f141433);
+    let someResult = values.some(f141492);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f141433);
+      someResult = values2.some(f141492);
     }
     return someResult;
   }, items13);

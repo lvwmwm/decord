@@ -1,9 +1,9 @@
-// Module ID: 19458
-// Function ID: 19459
+// Module ID: 19457
+// Function ID: 19458
 // Name: GameTagChiplet
 // Dependencies: [19, 21, 5012, 8703, 8712, 8680, 5699, 2]
 
-// Module 19458 (GameTagChiplet)
+// Module 19457 (GameTagChiplet)
 import Fragment from "Fragment" /* 21 */;
 import GuildTag from "GuildTag" /* 8680 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8703 */;

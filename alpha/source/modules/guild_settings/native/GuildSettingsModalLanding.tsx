@@ -1,10 +1,10 @@
-// Module ID: 19839
-// Function ID: 19840
+// Module ID: 19838
+// Function ID: 19839
 // Name: GuildSettingsModalLanding
-// Dependencies: [19, 4942, 4883, 4944, 1386, 17813, 8532, 1071, 21, 5982, 5012, 6113, 1112, 5716, 4949, 19840, 19096, 8535, 11031, 19842, 5708, 14461, 6109, 19843, 9662, 10596, 13463, 12214, 7124, 8514, 19844, 12220, 6971, 12466, 17165, 10781, 5576, 575, 1500, 504, 8531, 19846, 7586, 7595, 5693, 8046, 6084, 19129, 1412, 19847, 5586, 2]
+// Dependencies: [19, 4942, 4883, 4944, 1386, 17813, 8532, 1071, 21, 5982, 5012, 6113, 1112, 5716, 4949, 19839, 19095, 8535, 11031, 19841, 5708, 14461, 6109, 19842, 9662, 10596, 13463, 12214, 7124, 8514, 19843, 12220, 6971, 12466, 17165, 10781, 5576, 575, 1500, 504, 8531, 19845, 7586, 7595, 5693, 8046, 6084, 19128, 1412, 19846, 5586, 2]
 // Exports: default
 
-// Module 19839 (GuildSettingsModalLanding)
+// Module 19838 (GuildSettingsModalLanding)
 import intl8 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4949 */;
@@ -22,8 +22,8 @@ import RobotIcon from "RobotIcon" /* 12220 */;
 import HammerIcon from "HammerIcon" /* 12466 */;
 import SoundboardIcon from "SoundboardIcon" /* 13463 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14461 */;
-import SoundboardMobileCreationExperimentDefault from "SoundboardMobileCreationExperiment" /* 19843 */;
-import ModerationIcon from "ModerationIcon" /* 19844 */;
+import SoundboardMobileCreationExperimentDefault from "SoundboardMobileCreationExperiment" /* 19842 */;
+import ModerationIcon from "ModerationIcon" /* 19843 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4942 */;
 import GuildStore from "GuildStore" /* 4883 */;
@@ -109,7 +109,7 @@ function SettingsSection(guild) {
     };
     const TableRow2 = tmp2(6113).TableRow;
     intl2 = tmp2(1112).intl;
-    obj5 = { IconComponent: guild(19840).ChannelListIcon };
+    obj5 = { IconComponent: guild(19839).ChannelListIcon };
     Icon2 = tmp2(6113).TableRow.Icon;
     items.push(closure_15(TableRow2, obj4, "channels"));
   }
@@ -125,7 +125,7 @@ function SettingsSection(guild) {
     };
     const TableRow3 = tmp2(6113).TableRow;
     intl3 = tmp2(1112).intl;
-    obj7 = { IconComponent: guild(19096).PuzzlePieceIcon };
+    obj7 = { IconComponent: guild(19095).PuzzlePieceIcon };
     Icon3 = tmp2(6113).TableRow.Icon;
     items.push(closure_15(TableRow3, obj6, "integrations"));
   }
@@ -146,7 +146,7 @@ function SettingsSection(guild) {
     items.push(closure_15(TableRow4, obj8, "server-tag"));
   }
   if (isGuildAdmin) {
-    const tmp2Result2 = guild(19842);
+    const tmp2Result2 = guild(19841);
     isGuildAdmin = tmp2Result2.canSeeVanityUrlSettings(guild);
   }
   if (isGuildAdmin) {
@@ -585,7 +585,7 @@ function GuildSettingsModalLandingInner(guild) {
     }
   }, items2);
   ({ canManageGuild, isGuildAdmin, canManageRoles, canManageBans, canManageGuildExpressions, canManageChannels, canViewAuditLog, canManageWebhooks, canViewGuildAnalytics } = stateFromStoresObject);
-  const obj6 = guild(19846);
+  const obj6 = guild(19845);
   const tmp11 = obj6.useChannelsAllowedToUnlink(guild.id).length > 0;
   const obj7 = guild(7586);
   const canManageGuildRoleSubscriptions = obj7.useCanManageGuildRoleSubscriptions(guild);
@@ -631,7 +631,7 @@ function GuildSettingsModalLandingInner(guild) {
     text: guild.name,
     textAccessibilityRole: "header"
   };
-  items5[0] = closure_15(tmp3(19129), obj10);
+  items5[0] = closure_15(tmp3(19128), obj10);
   items5[1] = closure_15(SettingsSection, { guild, categories: stateFromStores, isGuildAdmin, canManageGuild, canManageChannels, canUnlinkChannelLobbies: tmp11, canManageWebhooks, pushScreen: callback });
   const obj11 = { guildId: guild.id, canManageGuildExpressions, canConfigureOfficialMessages: result, pushScreen: callback };
   items5[2] = closure_15(ExpressionSection, obj11);
@@ -642,7 +642,7 @@ function GuildSettingsModalLandingInner(guild) {
   const tmp16 = closure_17;
   if (tmp17Result) {
     const obj12 = { guild, pushScreen: callback };
-    tmp17Result = tmp17(tmp3(19847), obj12);
+    tmp17Result = tmp17(tmp3(19846), obj12);
   }
   const obj13 = { children: items6 };
   items5[6] = tmp17Result;

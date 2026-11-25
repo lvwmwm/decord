@@ -1,9 +1,9 @@
-// Module ID: 18885
-// Function ID: 18886
+// Module ID: 18884
+// Function ID: 18885
 // Name: ErrorScreen
 // Dependencies: [19, 17, 21, 5012, 5587, 5021, 5603, 2]
 
-// Module 18885 (ErrorScreen)
+// Module 18884 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5021 */;

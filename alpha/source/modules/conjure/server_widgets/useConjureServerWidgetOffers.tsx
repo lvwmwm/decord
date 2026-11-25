@@ -91,7 +91,7 @@ let obj = function _loadWidgetConfigs() {
                       closure_0 = undefined;
                       if (closure_0()) {
                         c6 = 3;
-                        const obj5 = { value: { v: "dispatch" }, done: true };
+                        const obj5 = { value: { v: "top" }, done: true };
                         return obj5;
                       } else {
                         c4 = 1;
@@ -146,7 +146,7 @@ let obj = function _loadWidgetConfigs() {
                         return obj10;
                       } else if (closure_130_0()) {
                         c6 = 3;
-                        const obj11 = { value: { v: "dispatch" }, done: true };
+                        const obj11 = { value: { v: "top" }, done: true };
                         return obj11;
                       } else {
                         c4 = 2;

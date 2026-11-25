@@ -1,10 +1,10 @@
-// Module ID: 19950
-// Function ID: 19951
+// Module ID: 19953
+// Function ID: 19954
 // Name: useEmojiName
 // Dependencies: [6852, 504, 38, 4958, 2]
 // Exports: default
 
-// Module 19950 (useEmojiName)
+// Module 19953 (useEmojiName)
 import _modDef38 from "module_38" /* 38 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4958 */;
 import EmojiStore from "EmojiStore" /* 6852 */;

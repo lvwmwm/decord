@@ -1,10 +1,10 @@
-// Module ID: 19273
-// Function ID: 19274
+// Module ID: 19272
+// Function ID: 19273
 // Name: useLaunchPadAnimatedStyles
 // Dependencies: [11910, 1378, 5012, 18388, 12944, 1628, 1653, 5613, 2]
 // Exports: default
 
-// Module 19273 (useLaunchPadAnimatedStyles)
+// Module 19272 (useLaunchPadAnimatedStyles)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import spring_spring from "spring/spring" /* 5613 */;

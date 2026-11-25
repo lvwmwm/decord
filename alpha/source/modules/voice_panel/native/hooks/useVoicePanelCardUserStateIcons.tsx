@@ -1,14 +1,14 @@
-// Module ID: 19408
-// Function ID: 19409
+// Module ID: 19407
+// Function ID: 19408
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 6822, 4861, 5820, 5660, 5662, 11733, 8607, 563, 10489, 5837, 10349, 17905, 10229, 19377, 5694, 1112, 7247, 575, 2]
+// Dependencies: [19, 6822, 4861, 5820, 5660, 5662, 11733, 8607, 563, 10489, 5837, 10349, 17905, 10229, 19376, 5694, 1112, 7247, 575, 2]
 // Exports: default
 
-// Module 19408 (useVoicePanelCardUserStateIcons)
+// Module 19407 (useVoicePanelCardUserStateIcons)
 import CallConstants from "CallConstants" /* 5662 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8607 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19377 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19376 */;
 import react from "react" /* 19 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 6822 */;
 import ChannelStore from "ChannelStore" /* 4861 */;

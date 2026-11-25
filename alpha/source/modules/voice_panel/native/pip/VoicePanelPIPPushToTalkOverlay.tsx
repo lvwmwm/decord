@@ -1,10 +1,10 @@
-// Module ID: 19486
-// Function ID: 19487
+// Module ID: 19485
+// Function ID: 19486
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [32, 19, 17, 2131, 11734, 21, 1653, 7024, 1186, 5012, 575, 10246, 11743, 11733, 5613, 19320, 5272, 1706, 19487, 2]
+// Dependencies: [32, 19, 17, 2131, 11734, 21, 1653, 7024, 1186, 5012, 575, 10246, 11743, 11733, 5613, 19319, 5272, 1706, 19486, 2]
 // Exports: default
 
-// Module 19486 (VoicePanelPIPPushToTalkOverlay)
+// Module 19485 (VoicePanelPIPPushToTalkOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
@@ -33,8 +33,8 @@ let size;
 let tmp;
 let tmp4;
 const LegacyBaseButton = tmp(5272);
-const VoicePanelPIPUtils = tmp(19320);
-const AssetRegistryDefault = tmp4(19487);
+const VoicePanelPIPUtils = tmp(19319);
+const AssetRegistryDefault = tmp4(19486);
 const StyleSheet = react_native.StyleSheet;
 const PUSH_TO_TALK_PIP_PHYSICS = VoicePanelConstants.PUSH_TO_TALK_PIP_PHYSICS;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);

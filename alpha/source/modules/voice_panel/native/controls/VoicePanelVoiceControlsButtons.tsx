@@ -1,10 +1,10 @@
-// Module ID: 19530
-// Function ID: 19531
+// Module ID: 19529
+// Function ID: 19530
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 4860, 6902, 1193, 9980, 6782, 502, 2131, 4944, 5660, 1071, 19531, 5824, 21, 6016, 19532, 2119, 1112, 10463, 6109, 10302, 504, 5694, 14267, 14268, 6113, 6124, 11733, 18144, 7141, 7106, 18167, 13463, 10312, 1255, 10489, 10355, 1378, 575, 5965, 7518, 8611, 18159, 8594, 8601, 6125, 18139, 18140, 10504, 10455, 6098, 10594, 10311, 19533, 9664, 11781, 9958, 19534, 8147, 572, 10345, 10409, 18158, 9999, 10220, 4869, 6823, 7803, 10277, 11706, 7132, 7801, 2]
+// Dependencies: [32, 19, 4860, 6902, 1193, 9980, 6782, 502, 2131, 4944, 5660, 1071, 19530, 5824, 21, 6016, 19531, 2119, 1112, 10463, 6109, 10302, 504, 5694, 14267, 14268, 6113, 6124, 11733, 18144, 7141, 7106, 18167, 13463, 10312, 1255, 10489, 10355, 1378, 575, 5965, 7518, 8611, 18159, 8594, 8601, 6125, 18139, 18140, 10504, 10455, 6098, 10594, 10311, 19532, 9664, 11781, 9958, 19533, 8147, 572, 10345, 10409, 18158, 9999, 10220, 4869, 6823, 7803, 10277, 11706, 7132, 7801, 2]
 // Exports: ActivitiesButton, AudioRouteButton, DeafenSwitch, GameConsoles, HideNonVideoParticipants, HideSelfVideo, InviteButton, LeaveActivitiesButton, RTCDebugPanelButton, ReportStreamIssueButton, ShareActivityLogsButton, SoundboardButton, StageButtons, StreamVolumeItem, ToggleShowActivitiesDebugOverlay, VoiceSettingsButton
 
-// Module 19530 (VoicePanelVoiceControlsButtons)
+// Module 19529 (VoicePanelVoiceControlsButtons)
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -41,9 +41,9 @@ import useInviteMembersCallback from "useInviteMembersCallback" /* 18140 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 18158 */;
 import AssetRegistryDefault5 from "AssetRegistry" /* 18159 */;
 import useSoundboardConfig from "useSoundboardConfig" /* 18167 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19531 */;
-import useHideSelfVideoDefault from "useHideSelfVideo" /* 19533 */;
-import ChannelCallUtils from "ChannelCallUtils" /* 19534 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19530 */;
+import useHideSelfVideoDefault from "useHideSelfVideo" /* 19532 */;
+import ChannelCallUtils from "ChannelCallUtils" /* 19533 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
@@ -461,7 +461,7 @@ export function HideSelfVideo() {
             const tmp2 = closure_0;
             if (!tmp2) {
               const VIDEO = constants.VIDEO;
-              const f134439 = () => f134439(!VIDEO);
+              const f134480 = () => f134480(!VIDEO);
               let obj = actions_AlertActionCreatorsDefault;
               const obj2 = {
                 importer() {

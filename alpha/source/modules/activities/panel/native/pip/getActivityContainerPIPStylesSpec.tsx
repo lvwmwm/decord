@@ -1,10 +1,10 @@
-// Module ID: 19341
-// Function ID: 19342
+// Module ID: 19340
+// Function ID: 19341
 // Name: getActivityContainerPIPStylesSpec
 // Dependencies: [5638, 2145, 11488, 2]
 // Exports: default
 
-// Module 19341 (getActivityContainerPIPStylesSpec)
+// Module 19340 (getActivityContainerPIPStylesSpec)
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2145 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 11488 */;

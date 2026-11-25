@@ -1,13 +1,13 @@
-// Module ID: 19751
-// Function ID: 19752
+// Module ID: 19750
+// Function ID: 19751
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 6345, 1071, 21, 5012, 575, 1628, 504, 16004, 19732, 9460, 9470, 8094, 11898, 6344, 5603, 1112, 19741, 5610, 19729, 2]
+// Dependencies: [5, 32, 19, 17, 6345, 1071, 21, 5012, 575, 1628, 504, 16004, 19731, 9460, 9470, 8094, 11898, 6344, 5603, 1112, 19740, 5610, 19728, 2]
 // Exports: default
 
-// Module 19751 (RedesignAddAvatarModal)
+// Module 19750 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19729 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19728 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

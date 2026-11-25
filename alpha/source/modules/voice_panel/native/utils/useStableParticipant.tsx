@@ -1,10 +1,10 @@
-// Module ID: 19406
-// Function ID: 19407
+// Module ID: 19405
+// Function ID: 19406
 // Name: useStableParticipant
 // Dependencies: [6902, 502, 2131, 1386, 5662, 558, 504, 6776, 6913, 10114, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 19406 (useStableParticipant)
+// Module 19405 (useStableParticipant)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import CallConstants from "CallConstants" /* 5662 */;
 import NicknameUtils from "NicknameUtils" /* 6776 */;
@@ -57,7 +57,7 @@ export default function useStableParticipant(id, arg1, arg2) {
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Promise", ringing: null, hasVideo: "relative", isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Promise", ringing: null, hasVideo: 2, isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;

@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f114860 = () => {
+const f114881 = () => {
   let copy = null;
   if (null != id) {
     copy = ConjureManagedCopyStore.getCopy(tmp);
@@ -26,14 +26,14 @@ export default function useConjureManagedCopy(arg0) {
   const items = [ConjureManagedCopyStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f114860, items1);
+  return obj.useStateFromStores(items, f114881, items1);
 };
 export function useIsConjureManagedCopy(id) {
   _require = id;
   const items = [ConjureManagedCopyStore];
   const items1 = [id];
   const obj = require("get initialized");
-  return null != obj.useStateFromStores(items, f114860, items1);
+  return null != obj.useStateFromStores(items, f114881, items1);
 }
 export function useConjureCopyLastSync(projectId) {
   _require = projectId;

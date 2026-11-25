@@ -1,10 +1,10 @@
-// Module ID: 19284
-// Function ID: 19285
+// Module ID: 19283
+// Function ID: 19284
 // Name: isGuildSelectable
 // Dependencies: [4866, 6782, 6945, 6136, 2]
 // Exports: default
 
-// Module 19284 (isGuildSelectable)
+// Module 19283 (isGuildSelectable)
 import StageInstanceStore from "StageInstanceStore" /* 4866 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6945 */;

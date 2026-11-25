@@ -1,10 +1,10 @@
-// Module ID: 19012
-// Function ID: 19013
+// Module ID: 19011
+// Function ID: 19012
 // Name: FriendsNavigator
-// Dependencies: [19, 21, 9005, 5012, 575, 8965, 8962, 13539, 1112, 8207, 7324, 19013, 19019, 19022, 19023, 19024, 19035, 19036, 19037, 19039, 19042, 19043, 5184, 7278, 4969, 5073, 19044, 2]
+// Dependencies: [19, 21, 9005, 5012, 575, 8965, 8962, 13539, 1112, 8207, 7324, 19012, 19018, 19021, 19022, 19023, 19034, 19035, 19036, 19038, 19041, 19042, 5184, 7278, 4969, 5073, 19043, 2]
 // Exports: default
 
-// Module 19012 (FriendsNavigator)
+// Module 19011 (FriendsNavigator)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import DeviceUtils from "DeviceUtils" /* 4969 */;
@@ -27,7 +27,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const AppFrameContainerDefault = tmp(19044);
+const AppFrameContainerDefault = tmp(19043);
 function RequestsSettingsModalButton(onPress) {
   let HeaderIconButton;
   let intl;

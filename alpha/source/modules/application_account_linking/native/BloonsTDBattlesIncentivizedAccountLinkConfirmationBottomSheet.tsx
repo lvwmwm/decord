@@ -1,10 +1,10 @@
-// Module ID: 19254
-// Function ID: 19255
+// Module ID: 19253
+// Function ID: 19254
 // Name: BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 1073, 21, 19252, 6348, 6349, 19247, 1112, 3756, 5610, 5226, 6279, 2]
+// Dependencies: [19, 1073, 21, 19251, 6348, 6349, 19246, 1112, 3756, 5610, 5226, 6279, 2]
 // Exports: default
 
-// Module 19254 (BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet)
+// Module 19253 (BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import _modDef3756 from "module_3756" /* 3756 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6279 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import IncentivizedAccountLinkConfirmationPromoSheetDefault from "IncentivizedAccountLinkConfirmationPromoSheet" /* 19247 */;
+import IncentivizedAccountLinkConfirmationPromoSheetDefault from "IncentivizedAccountLinkConfirmationPromoSheet" /* 19246 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let result = size.fileFinishedImporting("modules/application_account_linking/nat
 export default function BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet() {
   let analyticsLocations;
   let intl3;
-  const bloonsTDBattlesUpsellExperiment = analyticsLocations(19252).bloonsTDBattlesUpsellExperiment;
+  const bloonsTDBattlesUpsellExperiment = analyticsLocations(19251).bloonsTDBattlesUpsellExperiment;
   const orbQuantity = bloonsTDBattlesUpsellExperiment.useConfig({ location: "BloonsTDBattlesIncentivizedAccountLinkConfirmationBottomSheet" }).orbQuantity;
   const tmp = useAnalyticsLocationsDefault;
   analyticsLocations = tmp(AnalyticsLocationDefault.ACTION_SHEET).analyticsLocations;

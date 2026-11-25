@@ -1,10 +1,10 @@
-// Module ID: 18585
-// Function ID: 18586
+// Module ID: 18584
+// Function ID: 18585
 // Name: conjureAttachmentDrafts
 // Dependencies: [109, 5201, 7662, 18469, 1112, 4244, 18429, 572, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment, useConjureAttachmentDraftList
 
-// Module 18585 (conjureAttachmentDrafts)
+// Module 18584 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1112 */;
 import _modDef4244 from "module_4244" /* 4244 */;
 import ZustandStore from "ZustandStore" /* 5201 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 
 let closure_8;
 
-const f115482 = () => {
+const f115502 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -81,7 +81,7 @@ function discardDraft(projectId, item10010) {
     const id = item10010.ref.id;
     const obj = conjureAttachmentRequests;
     const result = obj.deleteStagedAttachment(projectId, id);
-    result.catch(f115482);
+    result.catch(f115502);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -263,7 +263,7 @@ export function removeConjureAttachmentDraft(projectId, chat, arg2) {
       const id = found.ref.id;
       const obj2 = conjureAttachmentRequests;
       const result = obj2.deleteStagedAttachment(projectId, id);
-      result.catch(f115482);
+      result.catch(f115502);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

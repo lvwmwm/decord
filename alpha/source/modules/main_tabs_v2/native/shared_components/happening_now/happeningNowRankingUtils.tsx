@@ -87,7 +87,7 @@ export const HAPPENING_NOW_OFFLINE_PENALTY = -1000;
 export function filterHappeningNowCards(arr) {
   return arr.filter((voiceState) => {
     let blockedOrIgnored;
-    const f139347 = (discoverable) => false === discoverable.discoverable;
+    const f139399 = (discoverable) => false === discoverable.discoverable;
     let flag = false;
     if ("voiceState" in voiceState) {
       flag = false;
@@ -97,8 +97,8 @@ export function filterHappeningNowCards(arr) {
         if (null != channelId) {
           const _Object = Object;
           const values = Object.values(VoiceStateStore.getVoiceStatesForChannel(channelId));
-          flag = values.length > 0 && values.every(f139347);
-          const everyResult = values.length > 0 && values.every(f139347);
+          flag = values.length > 0 && values.every(f139399);
+          const everyResult = values.length > 0 && values.every(f139399);
         }
       }
     }

@@ -1,9 +1,9 @@
-// Module ID: 20222
-// Function ID: 20223
+// Module ID: 20225
+// Function ID: 20226
 // Name: clips/ClipsManager
-// Dependencies: [32, 5, 5831, 1230, 502, 4861, 2131, 5820, 8361, 1386, 2138, 8089, 1071, 6783, 5824, 20223, 7444, 14305, 5837, 6785, 1255, 4837, 572, 20224, 20225, 14304, 2]
+// Dependencies: [32, 5, 5831, 1230, 502, 4861, 2131, 5820, 8361, 1386, 2138, 8089, 1071, 6783, 5824, 20226, 7444, 14305, 5837, 6785, 1255, 4837, 572, 20227, 20228, 14304, 2]
 
-// Module 20222 (clips/ClipsManager)
+// Module 20225 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import UserSettings from "UserSettings" /* 4837 */;
@@ -13,7 +13,7 @@ import BaseConnectionEvent from "BaseConnectionEvent" /* 5837 */;
 import Constants3 from "Constants" /* 6783 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6785 */;
 import ClipsExperiment from "ClipsExperiment" /* 14305 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20224 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
@@ -520,7 +520,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp7 = tmp6 && classification === tmp.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmp2Result = tmp2(20225);
+            const tmp2Result = tmp2(20228);
             allowDefaultOn = tmp2Result.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp7, enableAutoclipping: tmp7, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };

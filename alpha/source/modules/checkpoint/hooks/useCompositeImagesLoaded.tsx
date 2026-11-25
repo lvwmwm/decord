@@ -21,7 +21,7 @@ export default function useCompositeImagesLoaded(arg0) {
   let tmp4;
   let tmp5;
   let uniqueUrls;
-  const f102556 = () => {
+  const f102577 = () => {
     map = new Map();
     return { key, generation: 0, urls: uniqueUrls, outcomes: map, revealOutcomes: map, timedOut: false };
   };
@@ -36,9 +36,9 @@ export default function useCompositeImagesLoaded(arg0) {
   }, items);
   uniqueUrls = memo.uniqueUrls;
   const key = memo.key;
-  [tmp4, tmp5] = _slicedToArray(uniqueUrls.useState(f102556), 2);
+  [tmp4, tmp5] = _slicedToArray(uniqueUrls.useState(f102577), 2);
   let tmp6 = tmp4;
-  const tmp3 = _slicedToArray(uniqueUrls.useState(f102556), 2);
+  const tmp3 = _slicedToArray(uniqueUrls.useState(f102577), 2);
   if (tmp4.key !== key) {
     let _Map = Map;
     const items1 = [];

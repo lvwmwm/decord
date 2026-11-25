@@ -336,8 +336,8 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "y",
-    error: "context",
-    localeData: "find",
+    error: "sa",
+    localeData: "isArray",
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);

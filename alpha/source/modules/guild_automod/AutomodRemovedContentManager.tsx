@@ -1,10 +1,10 @@
-// Module ID: 19596
-// Function ID: 19597
+// Module ID: 19595
+// Function ID: 19596
 // Name: AutomodRemovedContentManager
-// Dependencies: [6360, 4915, 19597, 7444, 2]
+// Dependencies: [6360, 4915, 19596, 7444, 2]
 
-// Module 19596 (AutomodRemovedContentManager)
-import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 19597 */;
+// Module 19595 (AutomodRemovedContentManager)
+import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 19596 */;
 import MessageStore from "MessageStore" /* 6360 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;

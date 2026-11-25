@@ -1,10 +1,10 @@
-// Module ID: 19485
-// Function ID: 19486
+// Module ID: 19484
+// Function ID: 19485
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 4860, 6905, 4861, 5638, 6906, 10149, 21, 5012, 11733, 11743, 504, 4933, 1653, 11488, 5659, 19341, 18555, 15905, 10158, 2]
+// Dependencies: [19, 4860, 6905, 4861, 5638, 6906, 10149, 21, 5012, 11733, 11743, 504, 4933, 1653, 11488, 5659, 19340, 18556, 15905, 10158, 2]
 // Exports: default
 
-// Module 19485 (VoicePanelSecondaryPIPContent)
+// Module 19484 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
 import Constants from "Constants" /* 10149 */;
@@ -25,8 +25,8 @@ let tmp;
 const _modDef1653 = tmp(1653);
 const isVoiceEmbeddedActivityDefault = tmp(5659);
 const EmbeddedActivityViewDefault = tmp(10158);
-const FrameRenderTargetDefault = tmp(18555);
-const getActivityContainerPIPStylesSpecDefault = tmp(19341);
+const FrameRenderTargetDefault = tmp(18556);
+const getActivityContainerPIPStylesSpecDefault = tmp(19340);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ asLaunched: metroImportAll, FrameLayoutModes: c9, getPipOrientationLockStateForFrame: c10 } = FramesConstants);
 const ActivityLayoutMode = Constants.ActivityLayoutMode;

@@ -1,16 +1,16 @@
-// Module ID: 18719
-// Function ID: 18720
+// Module ID: 18718
+// Function ID: 18719
 // Name: conjurePlanCommandText
-// Dependencies: [19, 18720, 5065, 2]
+// Dependencies: [19, 18719, 5065, 2]
 // Exports: conjurePlanCommandPattern, conjurePlanSlashCommandNames, conjurePlanTextMentionsCommand, splitConjurePlanCommandText, useConjurePlanCommandPattern, useConjurePlanSlashCommandNames
 
-// Module 18719 (conjurePlanCommandText)
+// Module 18718 (conjurePlanCommandText)
 import escapeRegExpDefault from "escapeRegExp" /* 5065 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const f115712 = (name) => name.name;
-const f115713 = (arg0, arg1) => arg1.length - arg0.length;
+const f115732 = (name) => name.name;
+const f115733 = (arg0, arg1) => arg1.length - arg0.length;
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanCommandText.tsx");
 
 export function conjurePlanSlashCommandNames(arr) {
@@ -18,7 +18,7 @@ export function conjurePlanSlashCommandNames(arr) {
     const obj = commands(closure_1_2[1]);
     return "/" === obj.conjurePlanCommandPrefix(item);
   });
-  return found.map(f115712);
+  return found.map(f115732);
 }
 export function useConjurePlanSlashCommandNames(commands) {
   const items = [commands];
@@ -27,7 +27,7 @@ export function useConjurePlanSlashCommandNames(commands) {
       const obj = commands(closure_1_2[1]);
       return "/" === obj.conjurePlanCommandPrefix(item);
     });
-    return found.map(f115712);
+    return found.map(f115732);
   }, items);
 }
 export function conjurePlanCommandPattern(arg0) {
@@ -36,7 +36,7 @@ export function conjurePlanCommandPattern(arg0) {
   } else {
     const items = [];
     HermesBuiltin.arraySpread(items, arg0, 0);
-    const sorted = items.sort(f115713);
+    const sorted = items.sort(f115733);
     const mapped = sorted.map(escapeRegExpDefault);
     const _RegExp = RegExp;
     const _HermesInternal = HermesInternal;
@@ -66,7 +66,7 @@ export function useConjurePlanCommandPattern(commandNames) {
     if (0 !== commandNames.length) {
       const items = [];
       HermesBuiltin.arraySpread(items, commandNames, 0);
-      const sorted = items.sort(f115713);
+      const sorted = items.sort(f115733);
       const mapped = sorted.map(escapeRegExpDefault);
       const _RegExp = RegExp;
       const _HermesInternal = HermesInternal;

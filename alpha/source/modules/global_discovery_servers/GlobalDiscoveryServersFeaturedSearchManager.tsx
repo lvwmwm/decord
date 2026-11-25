@@ -1,9 +1,9 @@
-// Module ID: 20246
-// Function ID: 20247
+// Module ID: 20249
+// Function ID: 20250
 // Name: GlobalDiscoveryServersFeaturedSearchManager
-// Dependencies: [5, 15148, 8533, 1071, 7444, 20247, 572, 1284, 1488, 20248, 8893, 2]
+// Dependencies: [5, 15148, 8533, 1071, 7444, 20250, 572, 1284, 1488, 20251, 8893, 2]
 
-// Module 20246 (GlobalDiscoveryServersFeaturedSearchManager)
+// Module 20249 (GlobalDiscoveryServersFeaturedSearchManager)
 import Constants from "Constants" /* 1071 */;
 import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8533 */;
 import GlobalDiscoveryServersSearchResultsStoreDefault from "GlobalDiscoveryServersSearchResultsStore" /* 15148 */;

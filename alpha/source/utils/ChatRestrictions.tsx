@@ -58,7 +58,7 @@ let obj = {
     }
   },
   analyticsType: "@Everyone Warning",
-  animation: "sa"
+  animation: "id"
 };
 const items = [
   obj,

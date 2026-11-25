@@ -1,9 +1,9 @@
-// Module ID: 20362
-// Function ID: 20363
+// Module ID: 20365
+// Function ID: 20366
 // Name: DirectReply
-// Dependencies: [5, 17, 5017, 3, 20356, 8202, 2]
+// Dependencies: [5, 17, 5017, 3, 20359, 8202, 2]
 
-// Module 20362 (DirectReply)
+// Module 20365 (DirectReply)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import MessageConstants from "MessageConstants" /* 5017 */;

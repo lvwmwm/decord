@@ -20,7 +20,7 @@ export function reflectionCreate(value) {
     let localName = nextResult.localName;
     if (!nextResult.opt) {
       if (tmp3.oneof) {
-        obj[tmp3.oneof] = { oneofKind: "dispatch" };
+        obj[tmp3.oneof] = { oneofKind: "top" };
       } else if (tmp3.repeat) {
         obj[localName] = [];
       } else {
