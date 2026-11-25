@@ -1,10 +1,10 @@
-// Module ID: 10136
-// Function ID: 10137
+// Module ID: 10141
+// Function ID: 10142
 // Name: canForwardMessage
 // Dependencies: [4817, 4762, 4784, 4845, 1071, 1404, 504, 2]
 // Exports: useCanForwardMessage
 
-// Module 10136 (canForwardMessage)
+// Module 10141 (canForwardMessage)
 import FlagUtils from "FlagUtils" /* 1404 */;
 import GatedChannelStore from "GatedChannelStore" /* 4817 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

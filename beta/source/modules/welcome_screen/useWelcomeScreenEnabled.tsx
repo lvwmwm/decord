@@ -1,10 +1,10 @@
-// Module ID: 13566
-// Function ID: 13567
+// Module ID: 13569
+// Function ID: 13570
 // Name: useWelcomeScreenEnabled
 // Dependencies: [4766, 4762, 4784, 4816, 1071, 504, 2]
 // Exports: default
 
-// Module 13566 (useWelcomeScreenEnabled)
+// Module 13569 (useWelcomeScreenEnabled)
 import Constants from "Constants" /* 1071 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

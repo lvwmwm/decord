@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "07355a598097545c3503439dcc045f96", name: "ImageFileIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_keyboard/native/images", width: 200, height: 80, scales: [2, 3], hash: "e341a934511095337dabafab8c60034b", name: "empty_photos", type: "png" });

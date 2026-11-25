@@ -1,20 +1,20 @@
-// Module ID: 20041
-// Function ID: 20042
+// Module ID: 20052
+// Function ID: 20053
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 16608, 1071, 21, 4913, 575, 5477, 16640, 20006, 20016, 16628, 7544, 20001, 7348, 1112, 20007, 20042, 20008, 2]
+// Dependencies: [32, 19, 17, 16618, 1071, 21, 4913, 575, 5477, 16650, 20017, 20027, 16638, 7544, 20012, 7348, 1112, 20018, 20053, 20019, 2]
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 20041 (GuildRoleSubscriptionTierDesignModal)
+// Module 20052 (GuildRoleSubscriptionTierDesignModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
 import useToken5 from "useToken" /* 5477 */;
 import RoleIconUtils from "RoleIconUtils" /* 7544 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16608 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16640 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20008 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16618 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16638 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16650 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20019 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,7 +72,7 @@ function Content() {
   let role;
   let tmp7;
   let tmp8;
-  const tmp3 = role(20006)();
+  const tmp3 = role(20017)();
   let obj = require("EditStateContextProvider");
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
@@ -115,16 +115,16 @@ function Content() {
     previewShape: require("FormImagePicker").PreviewShape.SQUIRCLE,
     previewResizeMode: "cover",
     setImage(icon) {
-      const obj = { icon: icon.uri, unicodeEmoji: "r" };
+      const obj = { icon: icon.uri, unicodeEmoji: "Array" };
       return closure_0(obj);
     },
     disabled: roleSubscriptionSettingsDisabled
   };
-  const tmpResult = role(20007);
+  const tmpResult = role(20018);
   intl2 = tmp4(1112).intl;
   items3[1] = closure_9(tmpResult, obj9);
   items2[1] = closure_10(View, obj7);
-  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(20042), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
+  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(20053), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
   const TableRowGroup = tmp4(7348).TableRowGroup;
   intl3 = tmp4(1112).intl;
   items2[2] = closure_9(TableRowGroup, obj10);

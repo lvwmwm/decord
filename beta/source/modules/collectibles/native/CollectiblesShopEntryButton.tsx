@@ -1,13 +1,13 @@
-// Module ID: 13798
-// Function ID: 13799
+// Module ID: 13801
+// Function ID: 13802
 // Name: CollectiblesShopEntryButton
-// Dependencies: [32, 19, 5566, 4759, 21, 9080, 4746, 13774, 13007, 1112, 13799, 563, 5567, 8097, 11612, 2]
+// Dependencies: [32, 19, 5566, 4759, 21, 9080, 4746, 13777, 13010, 1112, 13802, 563, 5567, 8097, 11617, 2]
 // Exports: default
 
-// Module 13798 (CollectiblesShopEntryButton)
+// Module 13801 (CollectiblesShopEntryButton)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 13774 */;
-import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 13799 */;
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 13777 */;
+import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 13802 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5566 */;
@@ -36,7 +36,7 @@ function CoachmarkVariant(shopButtonRef) {
   const obj2 = { children: items };
   const obj3 = {
     ref: shopButtonRef,
-    IconComponent: navigateToShop(13007).ShopIcon,
+    IconComponent: navigateToShop(13010).ShopIcon,
     accessibilityLabel: intl.string(navigateToShop(1112).t.pWG4ze),
     onPress() {
       const tmp = closure_2;
@@ -97,7 +97,7 @@ export default function CollectiblesShopEntryButton(navigateToShop) {
     }
     if (tmp4) {
       let type1;
-      const SelectedVersionedDismissibleContent = tmp(11612).SelectedVersionedDismissibleContent;
+      const SelectedVersionedDismissibleContent = tmp(11617).SelectedVersionedDismissibleContent;
       if (stateFromStores != null) {
         type1 = stateFromStores.type;
       }
@@ -116,7 +116,7 @@ export default function CollectiblesShopEntryButton(navigateToShop) {
       tmp15Result = tmp15(SelectedVersionedDismissibleContent, obj3);
     } else {
       let type2;
-      const tmp7 = shopButtonRef(11612);
+      const tmp7 = shopButtonRef(11617);
       if (stateFromStores != null) {
         type2 = stateFromStores.type;
       }

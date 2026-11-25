@@ -1,10 +1,10 @@
-// Module ID: 19096
-// Function ID: 19097
+// Module ID: 19107
+// Function ID: 19108
 // Name: bloonsTDBattlesUpsellExperiment
-// Dependencies: [1450, 19097, 2]
+// Dependencies: [1450, 19108, 2]
 
-// Module 19096 (bloonsTDBattlesUpsellExperiment)
-import accountLinkUpsellExperimentConfig from "accountLinkUpsellExperimentConfig" /* 19097 */;
+// Module 19107 (bloonsTDBattlesUpsellExperiment)
+import accountLinkUpsellExperimentConfig from "accountLinkUpsellExperimentConfig" /* 19108 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

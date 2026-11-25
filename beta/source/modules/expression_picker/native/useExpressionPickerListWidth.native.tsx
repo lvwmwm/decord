@@ -1,10 +1,10 @@
-// Module ID: 11282
-// Function ID: 11283
+// Module ID: 11287
+// Function ID: 11288
 // Name: useExpressionPickerListWidth
 // Dependencies: [1227, 5142, 1494, 1628, 2]
 // Exports: default
 
-// Module 11282 (useExpressionPickerListWidth)
+// Module 11287 (useExpressionPickerListWidth)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;

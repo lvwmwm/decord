@@ -1,31 +1,31 @@
-// Module ID: 17580
-// Function ID: 17581
+// Module ID: 17590
+// Function ID: 17591
 // Name: HappeningNow
-// Dependencies: [32, 19, 17, 16699, 1071, 21, 7450, 4913, 575, 5173, 7392, 17581, 1255, 5474, 1501, 17582, 7520, 7539, 17589, 17590, 1653, 11754, 12, 7490, 1112, 17591, 17592, 17609, 17610, 17611, 17595, 17608, 17612, 17607, 17594, 1254, 2]
+// Dependencies: [32, 19, 17, 16709, 1071, 21, 7450, 4913, 575, 5173, 7392, 17591, 1255, 5474, 1501, 17592, 7520, 7539, 17599, 17600, 1653, 11759, 12, 7490, 1112, 17601, 17602, 17619, 17620, 17621, 17605, 17618, 17622, 17617, 17604, 1254, 2]
 
-// Module 17580 (HappeningNow)
+// Module 17590 (HappeningNow)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
-import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 11754 */;
-import happeningNowRankingUtils from "happeningNowRankingUtils" /* 17589 */;
-import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 17591 */;
-import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 17592 */;
-import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 17594 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 17595 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 17607 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 17608 */;
-import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 17609 */;
-import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 17610 */;
-import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 17611 */;
-import HappeningNowActions from "HappeningNowActions" /* 17612 */;
+import updateSharedValueIfChanged from "updateSharedValueIfChanged" /* 11759 */;
+import happeningNowRankingUtils from "happeningNowRankingUtils" /* 17599 */;
+import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 17601 */;
+import HappeningNowCardLiveStageDefault from "HappeningNowCardLiveStage" /* 17602 */;
+import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 17604 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 17605 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 17617 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 17618 */;
+import HappeningNowCardEventDefault from "HappeningNowCardEvent" /* 17619 */;
+import HappeningNowCardActiveChannelDefault from "HappeningNowCardActiveChannel" /* 17620 */;
+import HappeningNowCardUserDefault from "HappeningNowCardUser" /* 17621 */;
+import HappeningNowActions from "HappeningNowActions" /* 17622 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16709 */;
 import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 7450 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -277,7 +277,7 @@ const memoResult = react.memo(function HappeningNow(listRef) {
   let tmp3 = data;
   let obj = listRef(data[14]);
   const isFocused1 = obj.useIsFocused();
-  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "task", isFocused: isFocused1 };
+  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: 46, isFocused: isFocused1 };
   const tmp7 = _slicedToArray(isFocused1(data[15])(cards, obj2), 2);
   data = tmp7[0];
   const tmp6 = _slicedToArray;

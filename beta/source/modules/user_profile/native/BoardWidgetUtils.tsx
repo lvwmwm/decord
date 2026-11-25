@@ -1,12 +1,12 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10355
+// Function ID: 10356
 // Name: BoardWidgetUtils
-// Dependencies: [6961, 6958, 10217, 2]
+// Dependencies: [6961, 6958, 10222, 2]
 // Exports: reorderBoardWidgets
 
-// Module 10350 (BoardWidgetUtils)
+// Module 10355 (BoardWidgetUtils)
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6961 */;
-import WidgetUtils from "WidgetUtils" /* 10217 */;
+import WidgetUtils from "WidgetUtils" /* 10222 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

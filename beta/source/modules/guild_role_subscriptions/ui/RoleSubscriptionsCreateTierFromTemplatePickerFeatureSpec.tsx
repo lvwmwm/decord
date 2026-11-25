@@ -1,9 +1,9 @@
-// Module ID: 15105
-// Function ID: 15106
+// Module ID: 15115
+// Function ID: 15116
 // Name: RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec
-// Dependencies: [5530, 4845, 1071, 1112, 504, 15106, 2]
+// Dependencies: [5530, 4845, 1071, 1112, 504, 15116, 2]
 
-// Module 15105 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
+// Module 15115 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import ExperimentStore from "ExperimentStore" /* 5530 */;

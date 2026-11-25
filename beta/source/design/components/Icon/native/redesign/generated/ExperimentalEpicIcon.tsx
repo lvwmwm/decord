@@ -1,14 +1,14 @@
-// Module ID: 14000
-// Function ID: 14001
+// Module ID: 14003
+// Function ID: 14004
 // Name: ExperimentalEpicIcon
-// Dependencies: [19, 21, 575, 5599, 14001, 2]
+// Dependencies: [19, 21, 575, 5599, 14004, 2]
 // Exports: ExperimentalEpicIcon
 
-// Module 14000 (ExperimentalEpicIcon)
+// Module 14003 (ExperimentalEpicIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 14001 */;
+import AssetRegistry from "AssetRegistry" /* 14004 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

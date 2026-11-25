@@ -1,17 +1,17 @@
-// Module ID: 19119
-// Function ID: 19120
+// Module ID: 19130
+// Function ID: 19131
 // Name: LaunchPadPullTab
-// Dependencies: [19, 17, 11933, 12825, 21, 4913, 575, 18235, 1653, 12901, 19120, 5514, 1112, 19040, 15052, 2]
+// Dependencies: [19, 17, 11938, 12828, 21, 4913, 575, 18246, 1653, 12904, 19131, 5514, 1112, 19051, 15062, 2]
 
-// Module 19119 (LaunchPadPullTab)
+// Module 19130 (LaunchPadPullTab)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChatInputConstants from "ChatInputConstants" /* 12825 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12901 */;
-import useLaunchPadPullTabMinimizedDefault from "useLaunchPadPullTabMinimized" /* 19120 */;
+import ChatInputConstants from "ChatInputConstants" /* 12828 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12904 */;
+import useLaunchPadPullTabMinimizedDefault from "useLaunchPadPullTabMinimized" /* 19131 */;
 import react from "react" /* 19 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11933 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11938 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,8 +28,8 @@ let size;
 let tmp2;
 let unpackModuleId;
 const _modDef1653 = tmp2(1653);
-const useAnimatedKeyboardHeightDefault = tmp2(18235);
-const showLaunchPadDefault = tmp2(19040);
+const useAnimatedKeyboardHeightDefault = tmp2(18246);
+const showLaunchPadDefault = tmp2(19051);
 const Pressable = react_native.Pressable;
 ({ LAUNCH_PAD_MARGIN: closure_4, LAUNCH_PAD_PULL_TAB_BORDER_RADIUS } = LaunchPadConstants);
 const LAUNCH_PAD_PULL_TAB_HEIGHT = LaunchPadConstants.LAUNCH_PAD_PULL_TAB_HEIGHT;
@@ -190,7 +190,7 @@ const memoResult = react.memo(function LaunchPadPullTab(gestureState) {
   LaunchPadPullTabTsx1.__initData = tmp28;
   const items4 = [closure_16, launchPadSharedState, updaters, sharedValue, launchPadPullTabState, CHAT_INPUT_HEIGHT, tmp8, , , ];
   const useAnimatedReaction = tmp6Result2.useAnimatedReaction;
-  items4[7] = updaters(12901).getWindowDimensionsWorklet;
+  items4[7] = updaters(12904).getWindowDimensionsWorklet;
   items4[8] = LAUNCH_PAD_PULL_TAB_HEIGHT;
   items4[9] = closure_10;
   c0 = undefined;

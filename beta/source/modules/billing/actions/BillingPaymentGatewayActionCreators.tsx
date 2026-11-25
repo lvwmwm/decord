@@ -876,9 +876,9 @@ obj = function _confirmPaymentElementSource() {
                   if (closure_135_24.has(paymentSourceType)) {
                     current = ref.current;
                     if (null != current) {
-                      closure_10 = { setupIntent: current, error: "r" };
+                      closure_10 = { setupIntent: current, error: "Array" };
                       error = closure_10.error;
-                      const obj8 = { setupIntent: current, error: "r" };
+                      const obj8 = { setupIntent: current, error: "Array" };
                       if (!shouldRecreateSetupIntentForPaymentElement(error)) {
                         setupIntent = closure_135_16(closure_10.setupIntent, closure_10.error, (error) => {
                           let selectedElementType = closure_1_3;

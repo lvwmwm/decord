@@ -202,7 +202,7 @@ export const StickyHeaders = (stickyHeaderIndices) => {
     if (-1 !== currentStickyIndex) {
       tmpResult = null;
       if (currentStickyIndex < data.length) {
-        const obj3 = { index: currentStickyIndex, item: tmp6[currentStickyIndex], renderItem, layout: { x: 0, y: 0, width: 0, height: 0 }, refHolder: current, extraData, trailingItem: "add", target: 18939906, hidden: -1683627214, inverted };
+        const obj3 = { index: currentStickyIndex, item: tmp6[currentStickyIndex], renderItem, layout: { x: 0, y: 0, width: 0, height: 0 }, refHolder: current, extraData, trailingItem: "analyticsLocations", target: -128316918952444530000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, hidden: 131132.16467475894, inverted };
         tmpResult = tmp(ViewHolder.ViewHolder, obj3);
       }
     }

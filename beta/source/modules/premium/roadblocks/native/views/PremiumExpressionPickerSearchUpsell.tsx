@@ -1,10 +1,10 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11309
+// Function ID: 11310
 // Name: PremiumExpressionPickerSearchUpsell
 // Dependencies: [19, 17, 21, 575, 4913, 7030, 5504, 2]
 // Exports: default
 
-// Module 11304 (PremiumExpressionPickerSearchUpsell)
+// Module 11309 (PremiumExpressionPickerSearchUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;

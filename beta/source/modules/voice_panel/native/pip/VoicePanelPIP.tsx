@@ -1,27 +1,27 @@
-// Module ID: 19324
-// Function ID: 19325
+// Module ID: 19335
+// Function ID: 19336
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 4761, 6623, 6495, 11750, 11748, 19165, 5539, 6624, 21, 4913, 11749, 11759, 11757, 19233, 1653, 19164, 11754, 5514, 5123, 1186, 5173, 1706, 19241, 5765, 504, 4834, 10622, 10671, 10598, 1112, 19325, 7324, 19329, 19330, 4974, 2]
+// Dependencies: [19, 17, 4761, 6623, 6495, 11755, 11753, 19176, 5539, 6624, 21, 4913, 11754, 11764, 11762, 19244, 1653, 19175, 11759, 5514, 5123, 1186, 5173, 1706, 19252, 5765, 504, 4834, 10627, 10676, 10603, 1112, 19336, 7324, 19340, 19341, 4974, 2]
 // Exports: usePIPTileHandoff
 
-// Module 19324 (VoicePanelPIP)
+// Module 19335 (VoicePanelPIP)
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 4974 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10622 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 10671 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 11757 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11759 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10627 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 10676 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
+import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 11762 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11764 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import FramesStore from "FramesStore" /* 6623 */;
 import VoicePanelStore from "VoicePanelStore" /* 6495 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19165 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19176 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -538,7 +538,7 @@ class VoicePanelPIPTiles {
         constructor(arg0) {
           closure_0 = arg0;
           allTouches = arg0.allTouches;
-          found = allTouches.filter(function() { /* body not rendered: F141720 */ });
+          found = allTouches.filter(function() { /* body not rendered: F141774 */ });
           if (0 !== found.length) {
             tmp4 = closure_2;
             tmp5 = closure_2(found);
@@ -1383,12 +1383,12 @@ function usePIPTileHandoff() {
 let closure_41 = react.memo(function PIPWrapper(transitionState) {
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
-  const pipHandoff = react.useContext(transitionCleanUp(11749)).pipHandoff;
-  const obj = transitionState(11759);
+  const pipHandoff = react.useContext(transitionCleanUp(11754)).pipHandoff;
+  const obj = transitionState(11764);
   const mode = obj.usePIPState().mode;
-  const obj2 = transitionState(11757);
+  const obj2 = transitionState(11762);
   const pIPCardsSettled = obj2.usePIPCardsSettled(pipHandoff);
-  const obj3 = transitionState(11757);
+  const obj3 = transitionState(11762);
   const pIPPanelLayoutCommitted = obj3.usePIPPanelLayoutCommitted(pipHandoff);
   const items = [transitionState, pIPPanelLayoutCommitted, transitionCleanUp];
   const effect = react.useEffect(() => {

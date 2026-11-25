@@ -1,10 +1,10 @@
-// Module ID: 15059
-// Function ID: 15060
+// Module ID: 15069
+// Function ID: 15070
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7263, 6633, 9109, 9373, 502, 4946, 1071, 4769, 6397, 6496, 10696, 8336, 5630, 15060, 8712, 13581, 6429, 5090, 15061, 8067, 8194, 14006, 9881, 12212, 2018, 11906, 1255, 11908, 6868, 10417, 9589, 9408, 15067, 6674, 7539, 12464, 15068, 13614, 7001, 2119, 10697, 10695, 15070, 15072, 1625, 7795, 15081, 5592, 15083, 4784, 6835, 7573, 7568, 9595, 6493, 11018, 5089, 6570, 1098, 572, 7068, 1379, 7994, 15086, 15101, 1378, 5861, 15110, 8051, 12459, 15118, 6360, 15119, 8074, 9711, 15206, 8421, 6563, 9955, 13749, 6564, 9465, 15207, 6546, 10623, 15208, 9774, 9769, 12297, 12284, 5624, 2]
+// Dependencies: [109, 5, 7263, 6633, 9109, 9373, 502, 4946, 1071, 4769, 6397, 6496, 10701, 8336, 5630, 15070, 8712, 13584, 6429, 5090, 15071, 8067, 8194, 14009, 9881, 12208, 2018, 11911, 1255, 11913, 6868, 10422, 9589, 9408, 15077, 6674, 7539, 12460, 15078, 13617, 7001, 2119, 10702, 10700, 15080, 15082, 1625, 7795, 15091, 5592, 15093, 4784, 6835, 7573, 7568, 9595, 6493, 11023, 5089, 6570, 1098, 572, 7068, 1379, 7994, 15096, 15111, 1378, 5861, 15120, 8051, 12455, 15128, 6360, 15129, 8074, 9711, 15216, 8421, 6563, 9955, 13752, 6564, 9465, 15217, 6546, 10628, 15218, 9774, 9769, 12293, 12280, 5624, 2]
 // Exports: default
 
-// Module 15059 (handleSupportedURL)
+// Module 15069 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2018 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -32,15 +32,15 @@ import GameProfileActionCreators from "GameProfileActionCreators" /* 9769 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9774 */;
 import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9881 */;
 import QuestUtils from "QuestUtils" /* 9955 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 10623 */;
-import ApplicationUtils from "ApplicationUtils" /* 10695 */;
-import Constants3 from "Constants" /* 10696 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12212 */;
-import BountyActionCreators from "BountyActionCreators" /* 13749 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15060 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15068 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15101 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15206 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 10628 */;
+import ApplicationUtils from "ApplicationUtils" /* 10700 */;
+import Constants3 from "Constants" /* 10701 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12208 */;
+import BountyActionCreators from "BountyActionCreators" /* 13752 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15070 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15078 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15111 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15216 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6633 */;
@@ -60,9 +60,9 @@ let closure_18;
 let map1;
 let tmp;
 let tmp3;
-const authorizeCallbackDefault = tmp(10697);
-const FamilyCenterNativeUtils = tmp3(12464);
-const CreateGuildModalActionCreatorsDefault = tmp(13614);
+const authorizeCallbackDefault = tmp(10702);
+const FamilyCenterNativeUtils = tmp3(12460);
+const CreateGuildModalActionCreatorsDefault = tmp(13617);
 let closure_4 = ["code", "state"];
 PostConnectionCallbackStore.addPostConnectionCallback;
 let closure_9 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
@@ -413,7 +413,7 @@ export default function handleSupportedURL(payload) {
               });
             } else {
               const obj3 = { callback: authorizeCallbackDefault };
-              const openOAuth2Modal = tmp4(10695).openOAuth2Modal;
+              const openOAuth2Modal = tmp4(10700).openOAuth2Modal;
               ApplicationUtils;
               let merged = Object.assign(payload.props);
               openOAuth2Modal(obj3);
@@ -432,7 +432,7 @@ export default function handleSupportedURL(payload) {
           pathname(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(15072, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(15082, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;

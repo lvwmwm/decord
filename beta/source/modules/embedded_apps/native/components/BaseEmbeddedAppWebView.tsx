@@ -1,10 +1,10 @@
-// Module ID: 10812
-// Function ID: 10813
+// Module ID: 10817
+// Function ID: 10818
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [32, 5, 19, 5556, 1071, 21, 4913, 3, 10813, 10814, 7819, 10815, 10817, 1377, 10800, 10818, 10819, 1379, 10820, 10821, 1255, 563, 5860, 1112, 10827, 10791, 6417, 2]
+// Dependencies: [32, 5, 19, 5556, 1071, 21, 4913, 3, 10818, 10819, 7819, 10820, 10822, 1377, 10805, 10823, 10824, 1379, 10825, 10826, 1255, 563, 5860, 1112, 10832, 10796, 6417, 2]
 // Exports: BaseEmbeddedAppWebView
 
-// Module 10812 (BaseEmbeddedAppWebView)
+// Module 10817 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,7 +13,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import URLUtilsDefault from "URLUtils" /* 1379 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
 import WebView2 from "WebView" /* 7819 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10813 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10818 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

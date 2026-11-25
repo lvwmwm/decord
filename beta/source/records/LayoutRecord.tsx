@@ -1,9 +1,9 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 14966
+// Function ID: 14967
 // Name: LayoutRecord
 // Dependencies: [1406, 2]
 
-// Module 14956 (LayoutRecord)
+// Module 14966 (LayoutRecord)
 import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 

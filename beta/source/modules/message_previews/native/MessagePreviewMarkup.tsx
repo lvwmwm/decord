@@ -1,10 +1,10 @@
-// Module ID: 11135
-// Function ID: 11136
+// Module ID: 11140
+// Function ID: 11141
 // Name: MessagePreviewMarkup
-// Dependencies: [5934, 5935, 5936, 11136, 2068, 5637, 5574, 1454, 2]
+// Dependencies: [5934, 5935, 5936, 11141, 2068, 5637, 5574, 1454, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMeasuredMessagePreviewMarkup, renderMessagePreviewMarkup
 
-// Module 11135 (MessagePreviewMarkup)
+// Module 11140 (MessagePreviewMarkup)
 import LRUCacheDefault from "LRUCache" /* 1454 */;
 import _modDef2068 from "module_2068" /* 2068 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5574 */;
@@ -12,7 +12,7 @@ import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
 import MarkupTypes from "MarkupTypes" /* 5934 */;
 import combineMarkupRulesDefault from "combineMarkupRules" /* 5935 */;
 import MarkupRulesDefault from "MarkupRules" /* 5936 */;
-import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 11136 */;
+import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 11141 */;
 import size from "module_2" /* 2 */;
 
 function parseMessagePreviewMarkup(fontScale) {

@@ -1,10 +1,10 @@
-// Module ID: 12854
-// Function ID: 12855
+// Module ID: 12857
+// Function ID: 12858
 // Name: useChatInputRefs
-// Dependencies: [19, 8517, 6614, 8315, 8381, 8388, 1386, 10382, 1071, 5938, 4918, 5492, 5098, 12, 12855, 12857, 12858, 12861, 12862, 10119, 8514, 5100, 1626, 1498, 1378, 5101, 2018, 5923, 1255, 12138, 8250, 12140, 12863, 8382, 12864, 6386, 12897, 7245, 2]
+// Dependencies: [19, 8517, 6614, 8315, 8381, 8388, 1386, 10387, 1071, 5938, 4918, 5492, 5098, 12, 12858, 12860, 12861, 12864, 12865, 10124, 8514, 5100, 1626, 1498, 1378, 5101, 2018, 5923, 1255, 12134, 8250, 12136, 12866, 8382, 12867, 6386, 12900, 7245, 2]
 // Exports: default
 
-// Module 12854 (useChatInputRefs)
+// Module 12857 (useChatInputRefs)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import MessageConstants from "MessageConstants" /* 4918 */;
@@ -13,11 +13,11 @@ import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5938 
 import StickersUtils from "StickersUtils" /* 6386 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8250 */;
 import DraftStore2 from "DraftStore" /* 8315 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10382 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 12138 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 12140 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12855 */;
-import ChatInputSendUtils from "ChatInputSendUtils" /* 12864 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10387 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 12134 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 12136 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12858 */;
+import ChatInputSendUtils from "ChatInputSendUtils" /* 12867 */;
 import react_mod from "react" /* 19 */;
 import ApplicationCommandStore from "ApplicationCommandStore" /* 8517 */;
 import StickersStore from "StickersStore" /* 6614 */;

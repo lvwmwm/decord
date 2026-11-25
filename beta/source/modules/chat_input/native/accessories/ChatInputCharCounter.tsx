@@ -1,14 +1,14 @@
-// Module ID: 13306
-// Function ID: 13307
+// Module ID: 13309
+// Function ID: 13310
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1386, 1071, 1388, 21, 4913, 575, 504, 2173, 10119, 10459, 5595, 1112, 7030, 5504, 8952, 2]
+// Dependencies: [32, 19, 1386, 1071, 1388, 21, 4913, 575, 504, 2173, 10124, 10464, 5595, 1112, 7030, 5504, 8952, 2]
 
-// Module 13306 (ChatInputCharCounter)
+// Module 13309 (ChatInputCharCounter)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10459 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10464 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -59,7 +59,7 @@ class ChatCounter {
       const obj = stateFromStores(maxLength[9]);
       return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
     });
-    const tmp5 = stateFromStores(10119)();
+    const tmp5 = stateFromStores(10124)();
     dependencyMap = tmp5;
     let result = tmp5 / 10;
     _slicedToArray = result;

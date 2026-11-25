@@ -1,10 +1,10 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11167
+// Function ID: 11168
 // Name: MessageNotificationHeader
 // Dependencies: [19, 17, 4914, 4855, 1386, 21, 4913, 575, 5504, 5529, 1092, 7672, 7674, 7636, 504, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 11162 (MessageNotificationHeader)
+// Module 11167 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

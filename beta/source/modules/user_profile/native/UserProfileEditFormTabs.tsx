@@ -1,18 +1,18 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 15962
+// Function ID: 15963
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 9425, 7564, 21, 4913, 575, 15951, 4974, 8191, 8192, 1653, 8197, 7597, 10213, 6958, 10220, 5098, 1112, 15953, 10199, 14560, 14624, 7586, 13531, 2]
+// Dependencies: [32, 19, 17, 9425, 7564, 21, 4913, 575, 15961, 4974, 8191, 8192, 1653, 8197, 7597, 10218, 6958, 10225, 5098, 1112, 15963, 10204, 14570, 14634, 7586, 13534, 2]
 
-// Module 15952 (UserProfileEditFormTabs)
+// Module 15962 (UserProfileEditFormTabs)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import ChatInputUtils from "ChatInputUtils" /* 5098 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6958 */;
 import Constants from "Constants" /* 7564 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 10199 */;
-import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 14560 */;
-import reactDefault from "react" /* 15951 */;
-import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 15953 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 10204 */;
+import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 14570 */;
+import reactDefault from "react" /* 15961 */;
+import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 15963 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -157,11 +157,11 @@ const memoResult = react.memo(function UserProfileEditFormTabs(userId) {
   const tmp6Result = tmp6(first.useState(num2), 2);
   first = tmp6Result[0];
   absoluteFill = tmp6Result[1];
-  arr5 = tmp15(10213)(userId);
+  arr5 = tmp15(10218)(userId);
   closure_7 = tmp20;
   const items5 = [arr5];
   const memo = first.useMemo(() => arr5.filter(UserProfileGameWidgetTypes.isGameWidget), items5);
-  const tmp2Result7 = tmp2(10220);
+  const tmp2Result7 = tmp2(10225);
   const fetchSuggestedGames = tmp2Result7.useFetchSuggestedGames(true, memo);
   const items6 = [userId, first, arr5.length > 0, containerBackground, tmp.page, tmp16.card];
   const callback = first.useCallback((arg0) => {
@@ -205,7 +205,7 @@ const memoResult = react.memo(function UserProfileEditFormTabs(userId) {
     items[1] = obj2;
     return items;
   }, items6);
-  const tmp2Result8 = tmp2(14624);
+  const tmp2Result8 = tmp2(14634);
   const measuredTabItems = tmp2Result8.useMeasuredTabItems(memo1);
   ({ items, pageHeights } = measuredTabItems);
   const tmp2Result9 = tmp2(7586);
@@ -247,13 +247,13 @@ const memoResult = react.memo(function UserProfileEditFormTabs(userId) {
   items13 = [closure_8(containerBackground(1653).View, obj5), ];
   let obj6 = { state: segmentedControlState, variant: str };
   str = undefined;
-  const Tabs = tmp2(13531).Tabs;
+  const Tabs = tmp2(13534).Tabs;
   const tmp34 = arr5;
   if (hasCustomProfileTheme) {
     str = "overlay";
   }
   items13[1] = closure_8(Tabs, obj6);
-  items14 = [closure_10(View, obj4), closure_8(containerBackground(14624), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
+  items14 = [closure_10(View, obj4), closure_8(containerBackground(14634), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
   return closure_10(tmp34, obj3);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormTabs.tsx");

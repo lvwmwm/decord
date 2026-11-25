@@ -1,13 +1,13 @@
-// Module ID: 20180
-// Function ID: 20181
+// Module ID: 20191
+// Function ID: 20192
 // Name: intlMessagesProvider
-// Dependencies: [20181, 1151, 1112, 2]
+// Dependencies: [20192, 1151, 1112, 2]
 // Exports: default
 
-// Module 20180 (intlMessagesProvider)
+// Module 20191 (intlMessagesProvider)
 import intl2 from "intl" /* 1112 */;
 import _mod1151 from "module_1151" /* 1151 */;
-import react_nativeDefault from "react-native" /* 20181 */;
+import react_nativeDefault from "react-native" /* 20192 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("intl/native/intlMessagesProvider.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11918
-// Function ID: 11919
+// Module ID: 11923
+// Function ID: 11924
 // Name: useFetchCollectiblesProduct
 // Dependencies: [32, 19, 6674, 8075, 1071, 563, 2112, 8074, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 11918 (useFetchCollectiblesProduct)
+// Module 11923 (useFetchCollectiblesProduct)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;

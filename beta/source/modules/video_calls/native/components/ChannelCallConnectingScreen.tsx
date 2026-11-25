@@ -1,10 +1,10 @@
-// Module ID: 10961
-// Function ID: 10962
+// Module ID: 10966
+// Function ID: 10967
 // Name: ChannelCallConnectingScreen
-// Dependencies: [19, 17, 5655, 2131, 4845, 5656, 10636, 1071, 1082, 21, 4913, 10657, 5127, 5141, 1625, 5145, 10962, 5529, 10926, 8051, 11006, 11007, 1112, 2018, 5809, 6529, 5122, 11008, 10853, 504, 11015, 10985, 11016, 11017, 11034, 575, 10769, 10145, 2]
+// Dependencies: [19, 17, 5655, 2131, 4845, 5656, 10641, 1071, 1082, 21, 4913, 10662, 5127, 5141, 1625, 5145, 10967, 5529, 10931, 8051, 11011, 11012, 1112, 2018, 5809, 6529, 5122, 11013, 10858, 504, 11020, 10990, 11021, 11022, 11039, 575, 10774, 10150, 2]
 // Exports: CallConnectingActionBar, ChannelCallConnectingHeader, showVoiceSettingsActionSheet
 
-// Module 10961 (ChannelCallConnectingScreen)
+// Module 10966 (ChannelCallConnectingScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
@@ -18,14 +18,14 @@ import useChannelNameDefault from "useChannelName" /* 5529 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5809 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6529 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
-import ChannelCallStore from "ChannelCallStore" /* 10636 */;
-import useActionBarHeight from "useActionBarHeight" /* 10657 */;
-import UserSettingsVoiceDefault from "UserSettingsVoice" /* 10962 */;
-import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 11006 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11007 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 11008 */;
-import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 11016 */;
-import beginConsoleTransfer from "beginConsoleTransfer" /* 11017 */;
+import ChannelCallStore from "ChannelCallStore" /* 10641 */;
+import useActionBarHeight from "useActionBarHeight" /* 10662 */;
+import UserSettingsVoiceDefault from "UserSettingsVoice" /* 10967 */;
+import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 11011 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11012 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 11013 */;
+import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 11021 */;
+import beginConsoleTransfer from "beginConsoleTransfer" /* 11022 */;
 import react_mod from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5655 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
@@ -169,7 +169,7 @@ export function ChannelCallConnectingHeader(channel) {
   channel = channel.channel;
   const tmp = closure_15();
   const tmp4 = useChannelNameDefault(channel);
-  let obj = channel(10926);
+  let obj = channel(10931);
   const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
   let fn = null;
   if (PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel)) {

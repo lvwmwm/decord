@@ -1,10 +1,10 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 11647
+// Function ID: 11648
 // Name: MediaKeyboardLimitedPickerNotice
 // Dependencies: [19, 17, 21, 4913, 5504, 1112, 5511, 2]
 // Exports: default
 
-// Module 11642 (MediaKeyboardLimitedPickerNotice)
+// Module 11647 (MediaKeyboardLimitedPickerNotice)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5504 */;

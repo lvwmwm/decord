@@ -1,15 +1,15 @@
-// Module ID: 13726
-// Function ID: 13727
+// Module ID: 13729
+// Function ID: 13730
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 6921, 6920, 8388, 1071, 4769, 12890, 10619, 504, 12195, 10451, 8389, 2]
+// Dependencies: [5, 32, 19, 6921, 6920, 8388, 1071, 4769, 12893, 10624, 504, 12191, 10456, 8389, 2]
 // Exports: useCreateGameInvitePost
 
-// Module 13726 (useCreateGameInvitePost)
+// Module 13729 (useCreateGameInvitePost)
 import Constants from "Constants" /* 1071 */;
 import ChannelConstants from "ChannelConstants" /* 4769 */;
 import SlowmodeStore2 from "SlowmodeStore" /* 8388 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12195 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 12890 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12191 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 12893 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

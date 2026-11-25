@@ -1,16 +1,16 @@
-// Module ID: 10624
-// Function ID: 10625
+// Module ID: 10629
+// Function ID: 10630
 // Name: launchFrame
-// Dependencies: [32, 5, 6623, 6624, 5539, 10625, 572, 6945, 6626, 6946, 10627, 10634, 6953, 2]
+// Dependencies: [32, 5, 6623, 6624, 5539, 10630, 572, 6945, 6626, 6946, 10632, 10639, 6953, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 10624 (launchFrame)
+// Module 10629 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
 import getChannelIdForEmbeddedSurface from "getChannelIdForEmbeddedSurface" /* 6626 */;
 import createProxyTicket2 from "createProxyTicket" /* 6945 */;
 import leaveFrame from "leaveFrame" /* 6953 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10625 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10630 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import FramesStore from "FramesStore" /* 6623 */;

@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let c2, c3;
 
-const f89310 = async (arg0, value) => {
+const f89337 = async (arg0, value) => {
   let closure_0;
   let obj3;
   if (c3 === 2) {
@@ -68,7 +68,7 @@ const f89310 = async (arg0, value) => {
     }
   }
 };
-let obj = { bg: _asyncToGenerator(f89310), cs: _asyncToGenerator(f89310), da: _asyncToGenerator(f89310), de: _asyncToGenerator(f89310), el: _asyncToGenerator(f89310), "en-US": _asyncToGenerator(f89310), "es-ES": _asyncToGenerator(f89310), "es-419": _asyncToGenerator(f89310), fi: _asyncToGenerator(f89310), fr: _asyncToGenerator(f89310), hr: _asyncToGenerator(f89310), hu: _asyncToGenerator(f89310), it: _asyncToGenerator(f89310), ja: _asyncToGenerator(f89310), ko: _asyncToGenerator(f89310), lt: _asyncToGenerator(f89310), nl: _asyncToGenerator(f89310), no: _asyncToGenerator(f89310), pl: _asyncToGenerator(f89310), "pt-BR": _asyncToGenerator(f89310), ro: _asyncToGenerator(f89310), ru: _asyncToGenerator(f89310), "sv-SE": _asyncToGenerator(f89310), th: _asyncToGenerator(f89310), tr: _asyncToGenerator(f89310), uk: _asyncToGenerator(f89310), vi: _asyncToGenerator(f89310), "zh-CN": _asyncToGenerator(f89310), hi: _asyncToGenerator(f89310) };
+let obj = { bg: _asyncToGenerator(f89337), cs: _asyncToGenerator(f89337), da: _asyncToGenerator(f89337), de: _asyncToGenerator(f89337), el: _asyncToGenerator(f89337), "en-US": _asyncToGenerator(f89337), "es-ES": _asyncToGenerator(f89337), "es-419": _asyncToGenerator(f89337), fi: _asyncToGenerator(f89337), fr: _asyncToGenerator(f89337), hr: _asyncToGenerator(f89337), hu: _asyncToGenerator(f89337), it: _asyncToGenerator(f89337), ja: _asyncToGenerator(f89337), ko: _asyncToGenerator(f89337), lt: _asyncToGenerator(f89337), nl: _asyncToGenerator(f89337), no: _asyncToGenerator(f89337), pl: _asyncToGenerator(f89337), "pt-BR": _asyncToGenerator(f89337), ro: _asyncToGenerator(f89337), ru: _asyncToGenerator(f89337), "sv-SE": _asyncToGenerator(f89337), th: _asyncToGenerator(f89337), tr: _asyncToGenerator(f89337), uk: _asyncToGenerator(f89337), vi: _asyncToGenerator(f89337), "zh-CN": _asyncToGenerator(f89337), hi: _asyncToGenerator(f89337) };
 let AssetRegistry = AssetRegistry_mod;
 const result = size.fileFinishedImporting("modules/emoji_terms/EmojiTermsImporter.native.js");
 

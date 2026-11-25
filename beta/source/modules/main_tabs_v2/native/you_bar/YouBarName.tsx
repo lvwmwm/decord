@@ -1,17 +1,17 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 17979
+// Function ID: 17980
 // Name: YouBarName
-// Dependencies: [19, 17, 6400, 4762, 4845, 5651, 4855, 6920, 5561, 21, 4913, 575, 9454, 9743, 12797, 504, 9049, 9052, 5652, 13509, 13510, 17969, 13507, 13525, 5504, 4969, 2]
+// Dependencies: [19, 17, 6400, 4762, 4845, 5651, 4855, 6920, 5561, 21, 4913, 575, 9454, 9743, 12800, 504, 9049, 9052, 5652, 13512, 13513, 17980, 13510, 13528, 5504, 4969, 2]
 
-// Module 17968 (YouBarName)
+// Module 17979 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9454 */;
 import GuildTagDefault from "GuildTag" /* 9743 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 12797 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 13509 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 13510 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 17969 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 12800 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 13512 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 13513 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 17980 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -86,7 +86,7 @@ const memoResult = react.memo(function YouName(userId) {
   let obj4 = { style: tmp.statusRow, children: tmp10Result };
   if (stateFromStores1) {
     let obj5 = { userId, emojiSize: 16, maxFontSizeMultiplier: 1.75 };
-    tmp10Result = tmp12(stateFromStores(13507), obj5);
+    tmp10Result = tmp12(stateFromStores(13510), obj5);
   } else {
     let emoji;
     const tmp13 = closure_13;
@@ -96,7 +96,7 @@ const memoResult = react.memo(function YouName(userId) {
     let tmp12Result2 = null;
     if (null != emoji) {
       const obj6 = { size: 16, style: tmp.statusEmoji, emoji: customStatusActivity.emoji };
-      tmp12Result2 = tmp12(stateFromStores(13525), obj6);
+      tmp12Result2 = tmp12(stateFromStores(13528), obj6);
     }
     const items3 = [tmp12Result2, ];
     const obj7 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: humanizeStatusResult };

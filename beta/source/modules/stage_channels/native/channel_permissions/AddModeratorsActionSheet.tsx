@@ -1,10 +1,10 @@
-// Module ID: 18948
-// Function ID: 18949
+// Module ID: 18959
+// Function ID: 18960
 // Name: AddModeratorsActionSheet
 // Dependencies: [5, 32, 19, 17, 4784, 6506, 21, 4913, 575, 504, 5529, 6532, 2117, 7735, 5594, 5127, 5141, 7515, 1112, 5511, 7790, 4770, 2]
 // Exports: default
 
-// Module 18948 (AddModeratorsActionSheet)
+// Module 18959 (AddModeratorsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,9 +1,9 @@
-// Module ID: 15784
-// Function ID: 15785
+// Module ID: 15794
+// Function ID: 15795
 // Name: BaseSoundboardManager
 // Dependencies: [502, 2131, 2121, 572, 2]
 
-// Module 15784 (BaseSoundboardManager)
+// Module 15794 (BaseSoundboardManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;

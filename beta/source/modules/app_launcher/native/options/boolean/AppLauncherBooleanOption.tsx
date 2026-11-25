@@ -1,10 +1,10 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13050
+// Function ID: 13051
 // Name: AppLauncherBooleanOption
 // Dependencies: [32, 19, 21, 4913, 575, 4975, 7709, 7336, 2]
 // Exports: default
 
-// Module 13047 (AppLauncherBooleanOption)
+// Module 13050 (AppLauncherBooleanOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react_native from "react-native" /* 4975 */;

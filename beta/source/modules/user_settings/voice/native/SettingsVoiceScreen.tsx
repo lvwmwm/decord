@@ -1,10 +1,10 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16660
+// Function ID: 16661
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2131, 8712, 1071, 21, 2187, 4913, 5122, 4920, 11000, 11001, 5600, 1112, 5173, 10999, 5504, 10996, 11937, 15983, 2]
+// Dependencies: [19, 17, 2131, 8712, 1071, 21, 2187, 4913, 5122, 4920, 11005, 11006, 5600, 1112, 5173, 11004, 5504, 11001, 11942, 15993, 2]
 // Exports: default
 
-// Module 16650 (SettingsVoiceScreen)
+// Module 16660 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl10 from "intl" /* 1112 */;
@@ -12,10 +12,10 @@ import shared from "shared" /* 4920 */;
 import useThemeDefault from "useTheme" /* 5122 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10996 */;
-import KrispLogo2 from "KrispLogo" /* 10999 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
-import SettingLayoutDefault from "SettingLayout" /* 15983 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11001 */;
+import KrispLogo2 from "KrispLogo" /* 11004 */;
+import SettingBuilders from "SettingBuilders" /* 11942 */;
+import SettingLayoutDefault from "SettingLayout" /* 15993 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import Fragment from "Fragment" /* 21 */;
@@ -40,9 +40,9 @@ function KrispLogo() {
   const tmp4 = useThemeDefault();
   const obj = shared;
   if (obj.isThemeLight(tmp4)) {
-    tmp2Result = tmp2(11000);
+    tmp2Result = tmp2(11005);
   } else {
-    tmp2Result = tmp2(11001);
+    tmp2Result = tmp2(11006);
   }
   const obj2 = { style: tmp.krisp, children: items };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: intl.string(intl10.t.vFiCSx) };

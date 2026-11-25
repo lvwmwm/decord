@@ -1,10 +1,10 @@
-// Module ID: 10466
-// Function ID: 10467
+// Module ID: 10471
+// Function ID: 10472
 // Name: shouldOpenPremiumUpsellActionSheet
 // Dependencies: [8545, 1091, 8547, 2]
 // Exports: default
 
-// Module 10466 (shouldOpenPremiumUpsellActionSheet)
+// Module 10471 (shouldOpenPremiumUpsellActionSheet)
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8545 */;
 import size from "module_2" /* 2 */;

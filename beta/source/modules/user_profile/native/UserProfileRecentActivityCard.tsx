@@ -1,10 +1,10 @@
-// Module ID: 14584
-// Function ID: 14585
+// Module ID: 14594
+// Function ID: 14595
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 14462, 8010, 14467, 4913, 575, 8996, 4974, 7977, 4920, 5600, 1412, 2152, 5504, 14449, 7520, 7539, 14474, 14475, 9765, 9774, 7030, 1112, 2]
+// Dependencies: [19, 17, 21, 14472, 8010, 14477, 4913, 575, 8996, 4974, 7977, 4920, 5600, 1412, 2152, 5504, 14459, 7520, 7539, 14484, 14485, 9765, 9774, 7030, 1112, 2]
 // Exports: default
 
-// Module 14584 (UserProfileRecentActivityCard)
+// Module 14594 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
@@ -17,11 +17,11 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import utils from "utils" /* 8010 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 8996 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9774 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 14449 */;
-import BadgesAll from "Badges" /* 14462 */;
-import TrendingType from "TrendingType" /* 14467 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 14474 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 14475 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 14459 */;
+import BadgesAll from "Badges" /* 14472 */;
+import TrendingType from "TrendingType" /* 14477 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 14484 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 14485 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

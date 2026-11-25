@@ -667,7 +667,7 @@ let obj = {
         if (queryMode === tmp6(10063).AutocompleterResultTypes.VOICE_CHANNEL) {
           _null.setOptions({ voiceChannelGuildFilter: null }, true);
         } else {
-          _null.setOptions({ userFilters: null, voiceChannelGuildFilter: "r" }, true);
+          _null.setOptions({ userFilters: null, voiceChannelGuildFilter: "Array" }, true);
         }
       }
       if (queryMode === _mod10063.AutocompleterResultTypes.USER) {

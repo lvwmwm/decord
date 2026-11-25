@@ -1,10 +1,10 @@
-// Module ID: 10920
-// Function ID: 10921
+// Module ID: 10925
+// Function ID: 10926
 // Name: AgeVerificationSpeakerActionSheet
 // Dependencies: [19, 17, 21, 4913, 575, 1628, 5127, 7553, 7353, 5504, 1112, 5511, 7793, 6414, 2]
 // Exports: default
 
-// Module 10920 (AgeVerificationSpeakerActionSheet)
+// Module 10925 (AgeVerificationSpeakerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;

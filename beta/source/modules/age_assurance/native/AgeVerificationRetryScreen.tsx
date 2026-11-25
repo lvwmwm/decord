@@ -1,10 +1,10 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12432
+// Function ID: 12433
 // Name: AgeVerificationRetryScreen
 // Dependencies: [5, 19, 17, 1071, 21, 4913, 575, 7858, 6414, 1112, 1378, 7814, 5504, 7348, 7045, 7793, 2187, 2]
 // Exports: default
 
-// Module 12436 (AgeVerificationRetryScreen)
+// Module 12432 (AgeVerificationRetryScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;

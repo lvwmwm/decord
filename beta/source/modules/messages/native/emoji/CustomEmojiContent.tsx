@@ -1,10 +1,10 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11330
+// Function ID: 11331
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 7323, 4868, 4946, 1386, 1071, 21, 4913, 575, 2173, 1255, 9099, 5127, 11321, 504, 7520, 4867, 4862, 4837, 9067, 4738, 11326, 8194, 11322, 10394, 5595, 1112, 10009, 10011, 11327, 2119, 7022, 1186, 5511, 5600, 5504, 11328, 7709, 11329, 11330, 2]
+// Dependencies: [19, 17, 7323, 4868, 4946, 1386, 1071, 21, 4913, 575, 2173, 1255, 9099, 5127, 11326, 504, 7520, 4867, 4862, 4837, 9067, 4738, 11331, 8194, 11327, 10399, 5595, 1112, 10009, 10011, 11332, 2119, 7022, 1186, 5511, 5600, 5504, 11333, 7709, 11334, 11335, 2]
 // Exports: default
 
-// Module 11325 (CustomEmojiContent)
+// Module 11330 (CustomEmojiContent)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -18,8 +18,8 @@ import openUserSettings from "openUserSettings" /* 8194 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
 import StarOutlineIcon from "StarOutlineIcon" /* 10009 */;
 import StarIcon from "StarIcon" /* 10011 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10394 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 11328 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10399 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 11333 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4868 */;
@@ -254,7 +254,7 @@ export default function CustomEmojiContent(emojiNode) {
       handleOpenEmojiOptionsMenu = function handleOpenEmojiOptionsMenu() {
         const obj = ActionSheetActionCreatorsDefault;
         const obj2 = { emojiSrc: emojiNode.src };
-        obj.openLazy(asyncRequire(11327, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
+        obj.openLazy(asyncRequire(11332, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
       };
       intl4 = tmp2(tmp3[27]).intl;
       obj18 = { color: expressionSourceGuild(tmp3[9]).colors.INTERACTIVE_TEXT_DEFAULT };

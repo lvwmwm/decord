@@ -1,14 +1,14 @@
-// Module ID: 18939
-// Function ID: 18940
+// Module ID: 18950
+// Function ID: 18951
 // Name: GridSquareIcon
-// Dependencies: [19, 21, 575, 5599, 17229, 2]
+// Dependencies: [19, 21, 575, 5599, 17239, 2]
 // Exports: GridSquareIcon
 
-// Module 18939 (GridSquareIcon)
+// Module 18950 (GridSquareIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 17229 */;
+import AssetRegistry from "AssetRegistry" /* 17239 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

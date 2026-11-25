@@ -1,10 +1,10 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11086
+// Function ID: 11087
 // Name: StreamPreview
-// Dependencies: [19, 17, 1191, 21, 4913, 575, 4974, 5600, 4920, 11082, 11083, 1112, 7030, 11084, 504, 2]
+// Dependencies: [19, 17, 1191, 21, 4913, 575, 4974, 5600, 4920, 11087, 11088, 1112, 7030, 11089, 504, 2]
 // Exports: default
 
-// Module 11081 (StreamPreview)
+// Module 11086 (StreamPreview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import shared from "shared" /* 4920 */;
 import native from "native" /* 4974 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import Pressables from "Pressables" /* 7030 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11084 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11089 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
@@ -50,9 +50,9 @@ class DefaultFallback extends PureComponent {
     const obj3 = shared;
     const tmp3 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp4Result = tmp4(11082);
+      tmp4Result = tmp4(11087);
     } else {
-      tmp4Result = tmp4(11083);
+      tmp4Result = tmp4(11088);
     }
     return hasOwnProperty(tmp3, obj);
   }
@@ -61,7 +61,7 @@ const prototype = DefaultFallback.prototype;
 DefaultFallback.contextType = native.ThemeContext;
 createStyles = createStyles_mod;
 let obj4 = { touchable: size, imageContainer: { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK }, image: { flex: 1 } };
-size = { flex: 1, width: "100%", height: "WireType", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+size = { flex: 1, width: "100%", height: "__d", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const createLegacyClassComponentStyles2 = createStyles.createLegacyClassComponentStyles;
 ({ flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK });
 const React4 = createLegacyClassComponentStyles2(obj4);

@@ -1,13 +1,13 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17190
+// Function ID: 17191
 // Name: PhoenixLaunchState
-// Dependencies: [5, 19, 3, 1257, 17181, 1262, 17179, 2]
+// Dependencies: [5, 19, 3, 1257, 17191, 1262, 17189, 2]
 // Exports: setShouldLaunchPhoenix, useIsPhoenixInstalled, useShouldLaunchPhoenix
 
-// Module 17180 (PhoenixLaunchState)
+// Module 17190 (PhoenixLaunchState)
 import LoggerDefault from "Logger" /* 3 */;
-import LaunchClient2 from "LaunchClient" /* 17179 */;
-import react_nativeDefault from "react-native" /* 17181 */;
+import LaunchClient2 from "LaunchClient" /* 17189 */;
+import react_nativeDefault from "react-native" /* 17191 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import module_1257 from "module_1257" /* 1257 */;

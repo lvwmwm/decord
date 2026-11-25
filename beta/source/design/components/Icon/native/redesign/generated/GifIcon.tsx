@@ -1,10 +1,10 @@
-// Module ID: 10159
-// Function ID: 10160
+// Module ID: 10164
+// Function ID: 10165
 // Name: GifIcon
 // Dependencies: [19, 21, 575, 5599, 8883, 2]
 // Exports: GifIcon
 
-// Module 10159 (GifIcon)
+// Module 10164 (GifIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;

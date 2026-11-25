@@ -1,10 +1,10 @@
-// Module ID: 10894
-// Function ID: 10895
+// Module ID: 10899
+// Function ID: 10900
 // Name: MusicIcon
 // Dependencies: [19, 21, 575, 5599, 8891, 2]
 // Exports: MusicIcon
 
-// Module 10894 (MusicIcon)
+// Module 10899 (MusicIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;

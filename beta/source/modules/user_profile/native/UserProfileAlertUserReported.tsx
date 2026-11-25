@@ -1,10 +1,10 @@
-// Module ID: 10257
-// Function ID: 10258
+// Module ID: 10262
+// Function ID: 10263
 // Name: UserProfileAlertUserReported
 // Dependencies: [19, 21, 5866, 1112, 5866, 2]
 // Exports: default
 
-// Module 10257 (UserProfileAlertUserReported)
+// Module 10262 (UserProfileAlertUserReported)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1112 */;
 import AlertModal2 from "AlertModal" /* 5866 */;

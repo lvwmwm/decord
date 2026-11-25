@@ -1,10 +1,10 @@
-// Module ID: 19277
-// Function ID: 19278
+// Module ID: 19288
+// Function ID: 19289
 // Name: useTapGestures
-// Dependencies: [19, 11749, 5173, 1706, 5123, 5514, 5129, 2]
+// Dependencies: [19, 11754, 5173, 1706, 5123, 5514, 5129, 2]
 // Exports: default
 
-// Module 19277 (useTapGestures)
+// Module 19288 (useTapGestures)
 import _mod1706 from "module_1706" /* 1706 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
@@ -29,7 +29,7 @@ export default function useTapGestures(onSingleTap) {
   let closure_3;
   let isFocusedVideoZoomed;
   let current = onSingleTap;
-  isFocusedVideoZoomed = react.useContext(isFocusedVideoZoomed(11749)).isFocusedVideoZoomed;
+  isFocusedVideoZoomed = react.useContext(isFocusedVideoZoomed(11754)).isFocusedVideoZoomed;
   dependencyMap = react.useRef(onSingleTap);
   const tmp = null != onSingleTap.onSingleTap;
   react = tmp;

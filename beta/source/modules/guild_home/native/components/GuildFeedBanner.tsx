@@ -1,9 +1,9 @@
-// Module ID: 18199
-// Function ID: 18200
+// Module ID: 18210
+// Function ID: 18211
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 15190, 4784, 18200, 1071, 21, 4913, 575, 1653, 1494, 5122, 15191, 1378, 1412, 7325, 504, 7373, 11954, 5600, 4920, 18201, 18202, 5123, 5126, 7322, 5504, 1186, 7030, 5595, 1112, 11864, 9756, 2]
+// Dependencies: [19, 17, 15200, 4784, 18211, 1071, 21, 4913, 575, 1653, 1494, 5122, 15201, 1378, 1412, 7325, 504, 7373, 11959, 5600, 4920, 18212, 18213, 5123, 5126, 7322, 5504, 1186, 7030, 5595, 1112, 11869, 9756, 2]
 
-// Module 18199 (GuildFeedBanner)
+// Module 18210 (GuildFeedBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -11,11 +11,11 @@ import PlatformUtils from "PlatformUtils" /* 1378 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import timingPresets from "timingPresets" /* 5126 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15191 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15201 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 15190 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 15200 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import GuildFeedConstants from "GuildFeedConstants" /* 18200 */;
+import GuildFeedConstants from "GuildFeedConstants" /* 18211 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -132,7 +132,7 @@ function GuildFeedBanner(guild) {
   size = tmp8(1494)();
   width = size.width;
   height = size.height;
-  const tmp2Result5 = tmp2(11954);
+  const tmp2Result5 = tmp2(11959);
   drawerWidth = tmp2Result5.useDrawerWidth();
   const items6 = [width, height, tmp14, drawerWidth];
   let obj4 = { style: tmp.container, children: items8 };
@@ -166,9 +166,9 @@ function GuildFeedBanner(guild) {
     let tmp8Result3;
     const tmp2Result6 = tmp2(4920);
     if (tmp2Result6.isThemeDark(tmp10)) {
-      tmp8Result3 = tmp8(18201);
+      tmp8Result3 = tmp8(18212);
     } else {
-      tmp8Result3 = tmp8(18202);
+      tmp8Result3 = tmp8(18213);
     }
     memo = tmp8Result3;
   }

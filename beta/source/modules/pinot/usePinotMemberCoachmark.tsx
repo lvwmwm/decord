@@ -1,14 +1,14 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11861
+// Function ID: 11862
 // Name: usePinotMemberCoachmark
-// Dependencies: [32, 19, 11857, 11852, 9080, 4746, 11860, 4945, 2]
+// Dependencies: [32, 19, 11862, 11857, 9080, 4746, 11865, 4945, 2]
 // Exports: useIsPinotMemberCoachmarkPending, usePinotMemberCoachmark
 
-// Module 11856 (usePinotMemberCoachmark)
+// Module 11861 (usePinotMemberCoachmark)
 import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
-import useIsPinotMemberCoachmarkEligible from "useIsPinotMemberCoachmarkEligible" /* 11857 */;
-import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 11860 */;
+import useIsPinotMemberCoachmarkEligible from "useIsPinotMemberCoachmarkEligible" /* 11862 */;
+import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 11865 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,9 +23,9 @@ export function usePinotMemberCoachmark(channel, mobile_member_coachmark) {
   let items1;
   let pinotPromotableChannelId;
   const tmp2 = dependencyMap;
-  let obj = pinotPromotableChannelId(11857);
+  let obj = pinotPromotableChannelId(11862);
   const isPinotMemberCoachmarkEligible = obj.useIsPinotMemberCoachmarkEligible(channel, mobile_member_coachmark);
-  const obj2 = pinotPromotableChannelId(11852);
+  const obj2 = pinotPromotableChannelId(11857);
   pinotPromotableChannelId = obj2.usePinotPromotableChannelId(channel, mobile_member_coachmark);
   const useSelectedDismissibleContent = pinotPromotableChannelId(9080).useSelectedDismissibleContent;
   pinotPromotableChannelId(9080);

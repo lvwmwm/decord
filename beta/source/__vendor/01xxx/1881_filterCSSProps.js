@@ -9,10 +9,10 @@ import smellsLikeTimingFunction from "smellsLikeTimingFunction" /* 1761 */;
 
 
 export function filterCSSProps(props) {
-  const f82102 = (arr) => {
+  const f82129 = (arr) => {
     let mapped;
     if (Array.isArray(arr)) {
-      mapped = arr.map(f82102);
+      mapped = arr.map(f82129);
     } else {
       mapped = arr;
       if (mapped) {
@@ -73,7 +73,7 @@ export function filterCSSProps(props) {
     const style = props.style;
     const _Array = Array;
     if (Array.isArray(style)) {
-      mapped = style.map(f82102);
+      mapped = style.map(f82129);
     } else {
       mapped = style;
       if (mapped) {

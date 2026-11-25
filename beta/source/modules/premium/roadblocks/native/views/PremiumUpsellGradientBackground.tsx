@@ -1,10 +1,10 @@
-// Module ID: 11296
-// Function ID: 11297
+// Module ID: 11301
+// Function ID: 11302
 // Name: PremiumUpsellGradientBackground
 // Dependencies: [19, 17, 8951, 21, 4913, 5468, 1091, 2]
 // Exports: PremiumUpsellGradientBackground
 
-// Module 11296 (PremiumUpsellGradientBackground)
+// Module 11301 (PremiumUpsellGradientBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;

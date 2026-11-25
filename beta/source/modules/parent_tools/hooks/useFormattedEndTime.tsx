@@ -1,10 +1,10 @@
-// Module ID: 19420
-// Function ID: 19421
+// Module ID: 19431
+// Function ID: 19432
 // Name: useFormattedEndTime
 // Dependencies: [1386, 1112, 504, 2]
 // Exports: default
 
-// Module 19420 (useFormattedEndTime)
+// Module 19431 (useFormattedEndTime)
 import get_initialized from "get initialized" /* 504 */;
 import intl from "intl" /* 1112 */;
 import UserStore from "UserStore" /* 1386 */;

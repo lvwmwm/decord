@@ -1,20 +1,20 @@
-// Module ID: 18868
-// Function ID: 18869
+// Module ID: 18879
+// Function ID: 18880
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 8360, 4855, 1386, 13605, 1071, 13583, 21, 4913, 575, 13581, 7262, 5594, 1112, 8066, 13585, 1378, 7520, 7539, 7426, 18869, 5474, 1255, 8067, 563, 12, 4969, 17565, 6864, 9659, 14648, 7020, 9656, 7045, 5598, 7690, 18870, 18871, 18873, 18874, 2]
+// Dependencies: [32, 5, 19, 17, 8360, 4855, 1386, 13608, 1071, 13586, 21, 4913, 575, 13584, 7262, 5594, 1112, 8066, 13588, 1378, 7520, 7539, 7426, 18880, 5474, 1255, 8067, 563, 12, 4969, 17575, 6864, 9659, 14658, 7020, 9656, 7045, 5598, 7690, 18881, 18882, 18884, 18885, 2]
 // Exports: default
 
-// Module 18868 (AddFriendsScreen)
+// Module 18879 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7262 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13581 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13583 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13605 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 18871 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18873 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13584 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13586 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13608 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 18882 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18884 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -134,12 +134,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f116096 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f116139 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f116096);
-    const tmp2 = arr.length === arg1.length && arr.every(f116096);
+    tmp = arr.length === arg1.length && arr.every(f116139);
+    const tmp2 = arr.length === arg1.length && arr.every(f116139);
   }
   return tmp;
 }

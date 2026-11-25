@@ -1,14 +1,14 @@
-// Module ID: 12299
-// Function ID: 12300
+// Module ID: 12295
+// Function ID: 12296
 // Name: ConjureRemix
-// Dependencies: [5, 4784, 6967, 6622, 6865, 572, 1112, 4190, 6940, 12300, 8447, 6933, 2]
+// Dependencies: [5, 4784, 6967, 6622, 6865, 572, 1112, 4190, 6940, 12296, 8447, 6933, 2]
 // Exports: createConjureRemix, isValidCopyName
 
-// Module 12299 (ConjureRemix)
+// Module 12295 (ConjureRemix)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
 import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6940 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 12300 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 12296 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore_mod from "GuildStore" /* 4784 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;
@@ -26,7 +26,7 @@ function startRemix(id, guildId, arg2, arg3, share_ticket) {
   let copy;
   let name;
   let obj4;
-  const f127787 = () => "rejected";
+  const f127833 = () => "rejected";
   _require = guildId;
   ({ name, copy } = arg2);
   dependencyMap = arg3;
@@ -44,7 +44,7 @@ function startRemix(id, guildId, arg2, arg3, share_ticket) {
     if (metroRequire == null) {
       const obj = conjureRemixConnection;
       const acceptRemixResult = obj.acceptRemix(c4, comma, copy);
-      metroRequire = acceptRemixResult.catch(f127787);
+      metroRequire = acceptRemixResult.catch(f127833);
     }
     return metroRequire;
   }
@@ -208,7 +208,7 @@ function startRemix(id, guildId, arg2, arg3, share_ticket) {
     if (metroRequire == null) {
       const tmp2Result = conjureRemixConnection;
       const acceptRemixResult = tmp2Result.acceptRemix(c4, id, copy);
-      metroRequire = acceptRemixResult.catch(f127787);
+      metroRequire = acceptRemixResult.catch(f127833);
     }
   });
   let obj2 = { name, remix_source_project_id: id.id, remix_share_ticket: share_ticket, nonce };
@@ -241,7 +241,7 @@ function startRemix(id, guildId, arg2, arg3, share_ticket) {
     if (metroRequire == null) {
       const obj2 = conjureRemixConnection;
       const acceptRemixResult = obj2.acceptRemix(c4, id, copy);
-      metroRequire = acceptRemixResult.catch(f127787);
+      metroRequire = acceptRemixResult.catch(f127833);
     }
     return remix_preview;
   }, () => {

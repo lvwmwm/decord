@@ -1,9 +1,9 @@
-// Module ID: 11616
-// Function ID: 11617
+// Module ID: 11621
+// Function ID: 11622
 // Name: ImageCarousel
-// Dependencies: [19, 17, 8315, 8467, 11617, 21, 4913, 575, 1653, 5123, 1186, 5514, 38, 8445, 504, 11618, 1112, 11660, 8201, 5504, 7208, 7237, 7030, 11193, 7250, 1494, 10453, 11620, 8469, 2]
+// Dependencies: [19, 17, 8315, 8467, 11622, 21, 4913, 575, 1653, 5123, 1186, 5514, 38, 8445, 504, 11623, 1112, 11665, 8201, 5504, 7208, 7237, 7030, 11198, 7250, 1494, 10458, 11625, 8469, 2]
 
-// Module 11616 (ImageCarousel)
+// Module 11621 (ImageCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -15,14 +15,14 @@ import Pressables from "Pressables" /* 7030 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7250 */;
 import DraftStore from "DraftStore" /* 8315 */;
 import Upload from "Upload" /* 8469 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10453 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11193 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 11618 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11620 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10458 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11198 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 11623 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11625 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8467 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 11617 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 11622 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 10381
-// Function ID: 10382
+// Module ID: 10386
+// Function ID: 10387
 // Name: messages/MessagesUtils
-// Dependencies: [32, 5, 10382, 8339, 4762, 4825, 6531, 5964, 5794, 4845, 6619, 1386, 8670, 1071, 5953, 5968, 2117, 8230, 8458, 7285, 4832, 5595, 1112, 5617, 10383, 2108, 5495, 4857, 5129, 5130, 7286, 8459, 8461, 5650, 7545, 5948, 11, 5594, 10403, 9, 12, 1378, 1626, 10407, 1255, 10404, 8250, 6561, 6391, 9959, 10408, 8314, 5973, 4833, 8688, 2]
+// Dependencies: [32, 5, 10387, 8339, 4762, 4825, 6531, 5964, 5794, 4845, 6619, 1386, 8670, 1071, 5953, 5968, 2117, 8230, 8458, 7285, 4832, 5595, 1112, 5617, 10388, 2108, 5495, 4857, 5129, 5130, 7286, 8459, 8461, 5650, 7545, 5948, 11, 5594, 10408, 9, 12, 1378, 1626, 10412, 1255, 10409, 8250, 6561, 6391, 9959, 10413, 8314, 5973, 4833, 8688, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getMessageAuthorMemberUserIds, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, maybeRescrollToMessageId, recordTimings, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 10381 (messages/MessagesUtils)
+// Module 10386 (messages/MessagesUtils)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -37,12 +37,12 @@ import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8459 */;
 import Tracking from "Tracking" /* 8461 */;
 import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8688 */;
 import QuestActionCreators from "QuestActionCreators" /* 9959 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10382 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10383 */;
-import computeScrollData from "computeScrollData" /* 10403 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 10404 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10407 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10408 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10387 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10388 */;
+import computeScrollData from "computeScrollData" /* 10408 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 10409 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10412 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10413 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import ReferencedMessageStore from "ReferencedMessageStore" /* 8339 */;
@@ -72,7 +72,7 @@ let tmp;
 let tmp9;
 const SnowflakeUtilsDefault = tmp9(11);
 const KeyboardTypes = tmp(1626);
-const f97567 = (id) => id.id;
+const f97602 = (id) => id.id;
 function getVisibleMessages(arg0) {
   let chatManager;
   let firstVisibleMessagePercentVisible;
@@ -581,7 +581,7 @@ export function startOrCancelChannelLatestMessagesLoad(hasJumpedToOriginalPost) 
 export function recordTimings(channelId, hasFetched) {
   const recordMessageRender = TTITrackerDefault.recordMessageRender;
   TTITrackerDefault;
-  const mapped = hasFetched.map(f97567);
+  const mapped = hasFetched.map(f97602);
   hasFetched = hasFetched.hasFetched;
   if (!hasFetched) {
     hasFetched = hasFetched.ready && !hasFetched.cached;
@@ -830,7 +830,7 @@ export function syncMessageDisplay(messages) {
   }
   const recordMessageRender = oldestUnreadMessageId(scrollToMessageId[39]).recordMessageRender;
   oldestUnreadMessageId(scrollToMessageId[39]);
-  const mapped = messages.map(f97567);
+  const mapped = messages.map(f97602);
   let hasFetched = messages.hasFetched;
   if (!hasFetched) {
     hasFetched = messages.ready && !messages.cached;

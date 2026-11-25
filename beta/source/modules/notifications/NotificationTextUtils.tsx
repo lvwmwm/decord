@@ -1,10 +1,10 @@
-// Module ID: 11106
-// Function ID: 11107
+// Module ID: 11111
+// Function ID: 11112
 // Name: NotificationTextUtils
-// Dependencies: [4761, 4846, 6634, 4847, 6495, 4766, 4762, 4784, 5654, 4855, 4816, 4946, 6920, 6552, 4756, 1386, 11107, 1071, 5539, 1111, 6419, 4738, 1404, 11108, 6670, 6346, 5090, 6652, 8386, 5529, 1112, 8235, 5943, 6666, 8725, 3, 5527, 4969, 2117, 8382, 11109, 504, 2]
+// Dependencies: [4761, 4846, 6634, 4847, 6495, 4766, 4762, 4784, 5654, 4855, 4816, 4946, 6920, 6552, 4756, 1386, 11112, 1071, 5539, 1111, 6419, 4738, 1404, 11113, 6670, 6346, 5090, 6652, 8386, 5529, 1112, 8235, 5943, 6666, 8725, 3, 5527, 4969, 2117, 8382, 11114, 504, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 11106 (NotificationTextUtils)
+// Module 11111 (NotificationTextUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
@@ -26,8 +26,8 @@ import getDisplayFilenameDefault from "getDisplayFilename" /* 8235 */;
 import MessageParserDefault from "MessageParser" /* 8382 */;
 import IsolateString from "IsolateString" /* 8386 */;
 import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8725 */;
-import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 11108 */;
-import FocusModeUtils from "FocusModeUtils" /* 11109 */;
+import ChannelVisibilityUtils from "ChannelVisibilityUtils" /* 11113 */;
+import FocusModeUtils from "FocusModeUtils" /* 11114 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import LurkingStore from "LurkingStore" /* 4846 */;
 import MessageRequestStore from "MessageRequestStore" /* 6634 */;
@@ -44,7 +44,7 @@ import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 4756 */;
 import UserStore from "UserStore" /* 1386 */;
-import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 11107 */;
+import RpcNotificationSettingsStore from "RpcNotificationSettingsStore" /* 11112 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

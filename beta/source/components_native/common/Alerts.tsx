@@ -1,21 +1,21 @@
-// Module ID: 19044
-// Function ID: 19045
+// Module ID: 19055
+// Function ID: 19056
 // Name: Alerts
-// Dependencies: [19, 17, 4914, 15030, 15636, 10529, 21, 19045, 19046, 19050, 4913, 575, 504, 1653, 4974, 5123, 1706, 5514, 5515, 5861, 5924, 5919, 7076, 5867, 558, 19051, 2]
+// Dependencies: [19, 17, 4914, 15040, 15646, 10534, 21, 19056, 19057, 19061, 4913, 575, 504, 1653, 4974, 5123, 1706, 5514, 5515, 5861, 5924, 5919, 7076, 5867, 558, 19062, 2]
 
-// Module 19044 (Alerts)
+// Module 19055 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 4974 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
 import OverlayViewDefault from "OverlayView" /* 5867 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19045 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19056 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15030 */;
-import PermissionVADStore from "PermissionVADStore" /* 15636 */;
-import AlertStore from "AlertStore" /* 10529 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15040 */;
+import PermissionVADStore from "PermissionVADStore" /* 15646 */;
+import AlertStore from "AlertStore" /* 10534 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return unpackModuleId(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "Boolean", renderKey: "disabled", props: "r" });
+let closure_23 = Object.freeze({ renderAlert: "Array", renderKey: "channel_id", props: "tag" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -337,7 +337,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "Boolean", renderKey: "disabled", props: "r" };
+        return { renderAlert: "Array", renderKey: "channel_id", props: "tag" };
       }
     }
   });

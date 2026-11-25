@@ -1,10 +1,10 @@
-// Module ID: 14432
-// Function ID: 14433
+// Module ID: 14442
+// Function ID: 14443
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 4855, 1386, 21, 4913, 575, 10540, 504, 1112, 6429, 7740, 7076, 5932, 5504, 7228, 4969, 2]
+// Dependencies: [5, 32, 19, 17, 4855, 1386, 21, 4913, 575, 10545, 504, 1112, 6429, 7740, 7076, 5932, 5504, 7228, 4969, 2]
 // Exports: default
 
-// Module 14432 (AddFriendNicknameModal)
+// Module 14442 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -171,7 +171,7 @@ export default function AddFriendNicknameModal(arg0) {
   const tmp3 = showUserProfile;
   const tmp4 = dependencyMap;
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  _slicedToArray = showUserProfile(10540)();
+  _slicedToArray = showUserProfile(10545)();
   let obj2 = get_initialized;
   const items = [obj];
   const stateFromStores = obj2.useStateFromStores(items, () => RelationshipStore.getNickname(require));

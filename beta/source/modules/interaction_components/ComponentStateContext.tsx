@@ -1,7 +1,7 @@
 // Module ID: 8248
 // Function ID: 8249
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 8249, 4846, 4762, 4825, 6531, 1386, 11899, 21, 2117, 5976, 5974, 5973, 504, 8714, 6893, 14410, 10630, 572, 5474, 5968, 2]
+// Dependencies: [32, 19, 8249, 4846, 4762, 4825, 6531, 1386, 11904, 21, 2117, 5976, 5974, 5973, 504, 8714, 6893, 14420, 10635, 572, 5474, 5968, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
 // Module 8248 (ComponentStateContext)
@@ -11,7 +11,7 @@ import Server from "Server" /* 2117 */;
 import useMountEffectDefault from "useMountEffect" /* 5474 */;
 import InteractionTypes from "InteractionTypes" /* 5973 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 5976 */;
-import InteractionUtils from "InteractionUtils" /* 10630 */;
+import InteractionUtils from "InteractionUtils" /* 10635 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import InteractionStore from "InteractionStore" /* 8249 */;
@@ -20,7 +20,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 6531 */;
 import UserStore from "UserStore" /* 1386 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 11899 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 11904 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

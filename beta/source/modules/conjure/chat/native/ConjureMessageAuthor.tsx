@@ -1,20 +1,20 @@
-// Module ID: 18471
-// Function ID: 18472
+// Module ID: 18482
+// Function ID: 18483
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 4913, 575, 18459, 18472, 5504, 7030, 1112, 11977, 4969, 18473, 4190, 1186, 5600, 18476, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 18470, 18483, 5504, 7030, 1112, 11982, 4969, 18484, 4190, 1186, 5600, 18487, 2]
 // Exports: ConjureAvatar, ConjureHeader, ConjureUserAvatar, ConjureUserHeader
 
-// Module 18471 (ConjureMessageAuthor)
+// Module 18482 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18459 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 18472 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18473 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18476 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18470 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 18483 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18484 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18487 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -78,7 +78,7 @@ export function ConjureUserHeader(arg0) {
   let userId;
   let messageAuthorUser;
   ({ userId, at } = arg0);
-  let obj = messageAuthorUser(11977);
+  let obj = messageAuthorUser(11982);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const obj2 = messageAuthorUser(4969);
   const name = obj2.useName(messageAuthorUser);
@@ -112,7 +112,7 @@ export function ConjureUserAvatar(size) {
     NORMAL = messageAuthorUser(1186).AvatarSizes.NORMAL;
   }
   messageAuthorUser = undefined;
-  let obj = messageAuthorUser(11977);
+  let obj = messageAuthorUser(11982);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const items = [messageAuthorUser];
   const callback = react.useCallback(() => {
@@ -126,7 +126,7 @@ export function ConjureUserAvatar(size) {
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1112).t.iXAna6), children: closure_5(messageAuthorUser(1186).Avatar, obj3) };
     const PressableOpacity = tmp3(7030).PressableOpacity;
     intl = tmp3(1112).intl;
-    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "Array" };
+    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "sa" };
     tmp7 = closure_5(PressableOpacity, obj2);
   }
   return tmp7;

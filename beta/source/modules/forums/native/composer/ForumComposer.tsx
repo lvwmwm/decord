@@ -1,10 +1,10 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11251
+// Function ID: 11252
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 4914, 1191, 8315, 4825, 4845, 4816, 8388, 8467, 1386, 1071, 4769, 4759, 1227, 1111, 1082, 21, 4913, 575, 7520, 504, 4920, 5100, 10119, 5529, 8617, 8382, 11247, 4969, 5488, 1653, 8514, 5646, 8250, 12, 8622, 11251, 11253, 11254, 5861, 1112, 11255, 11257, 1378, 11258, 11259, 11262, 4746, 11263, 2119, 11264, 11265, 7709, 1186, 7750, 1626, 1498, 7251, 8067, 11268, 5504, 11269, 11404, 11612, 11613, 9041, 11614, 11616, 7029, 11661, 7688, 11620, 8461, 5127, 11663, 9489, 5511, 7672, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 1191, 8315, 4825, 4845, 4816, 8388, 8467, 1386, 1071, 4769, 4759, 1227, 1111, 1082, 21, 4913, 575, 7520, 504, 4920, 5100, 10124, 5529, 8617, 8382, 11252, 4969, 5488, 1653, 8514, 5646, 8250, 12, 8622, 11256, 11258, 11259, 5861, 1112, 11260, 11262, 1378, 11263, 11264, 11267, 4746, 11268, 2119, 11269, 11270, 7709, 1186, 7750, 1626, 1498, 7251, 8067, 11273, 5504, 11274, 11409, 11617, 11618, 9041, 11619, 11621, 7029, 11666, 7688, 11625, 8461, 5127, 11668, 9489, 5511, 7672, 2]
 // Exports: default
 
-// Module 11246 (ForumComposer)
+// Module 11251 (ForumComposer)
 import nativeDefault from "native" /* 575 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import intl6 from "intl" /* 1112 */;
@@ -28,10 +28,10 @@ import SlowmodeStore2 from "SlowmodeStore" /* 8388 */;
 import Tracking from "Tracking" /* 8461 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 8514 */;
 import TagIcon from "TagIcon" /* 9041 */;
-import useFocusHandlers from "useFocusHandlers" /* 11257 */;
-import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 11265 */;
-import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 11269 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11620 */;
+import useFocusHandlers from "useFocusHandlers" /* 11262 */;
+import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 11270 */;
+import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 11274 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11625 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -76,8 +76,8 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const DismissibleActionSheet = tmp(11613);
-const ImageCarouselDefault = tmp5(11616);
+const DismissibleActionSheet = tmp(11618);
+const ImageCarouselDefault = tmp5(11621);
 function Tags(tags) {
   let items;
   tags = tags.tags;
@@ -200,7 +200,7 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     const tmp16 = closure_29;
     if (tmp8) {
-      ImageIcon = tmp2(11661).KeyboardIcon;
+      ImageIcon = tmp2(11666).KeyboardIcon;
     } else {
       ImageIcon = tmp2(7688).ImageIcon;
     }
@@ -234,7 +234,7 @@ function ActionBar(channel) {
               }
             }
           };
-          const tmp3 = asyncRequire(11663, dependencyMap.paths);
+          const tmp3 = asyncRequire(11668, dependencyMap.paths);
           intl = intl6.intl;
           openLazy(tmp3, "ForumPostTagsActionSheet", obj);
         },
@@ -247,7 +247,7 @@ function ActionBar(channel) {
     tmp10 = closure_29(HeaderActionButton2, obj7);
   }
   items5[1] = tmp10;
-  let tmp18 = lastInput === tmp2(11257).PostComposerInputs.CONTENT;
+  let tmp18 = lastInput === tmp2(11262).PostComposerInputs.CONTENT;
   if (tmp18) {
     const obj8 = { accessibilityLabel: intl3.string(tmp2(1112).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9489).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
     const HeaderActionButton3 = tmp2(7029).HeaderActionButton;

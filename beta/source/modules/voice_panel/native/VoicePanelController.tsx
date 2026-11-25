@@ -1,19 +1,19 @@
-// Module ID: 19217
-// Function ID: 19218
+// Module ID: 19228
+// Function ID: 19229
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 4914, 4761, 6620, 4818, 10020, 10840, 10647, 502, 4762, 2131, 4845, 5654, 4816, 5561, 6495, 11750, 11748, 1071, 5539, 5563, 11751, 21, 19218, 1653, 10656, 1706, 1088, 504, 19219, 10985, 5595, 1112, 9684, 14508, 19220, 5809, 10671, 19221, 1494, 1628, 19225, 11757, 19226, 11752, 11754, 12, 1268, 1107, 1262, 10816, 12902, 6366, 1255, 10855, 2145, 9431, 6629, 19178, 4974, 19228, 5649, 5098, 5650, 7189, 19229, 19230, 12827, 4834, 19231, 19232, 19237, 19238, 19180, 11759, 11749, 5115, 2]
+// Dependencies: [32, 19, 17, 4914, 4761, 6620, 4818, 10020, 10845, 10652, 502, 4762, 2131, 4845, 5654, 4816, 5561, 6495, 11755, 11753, 1071, 5539, 5563, 11756, 21, 19229, 1653, 10661, 1706, 1088, 504, 19230, 10990, 5595, 1112, 9684, 14518, 19231, 5809, 10676, 19232, 1494, 1628, 19236, 11762, 19237, 11757, 11759, 12, 1268, 1107, 1262, 10821, 12905, 6366, 1255, 10860, 2145, 9431, 6629, 19189, 4974, 19239, 5649, 5098, 5650, 7189, 19240, 19241, 12830, 4834, 19242, 19243, 19248, 19249, 19191, 11764, 11754, 5115, 2]
 // Exports: default
 
-// Module 19217 (VoicePanelController)
+// Module 19228 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
 import CallConstants from "CallConstants" /* 5563 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10671 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11751 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11759 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10676 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11756 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11764 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
@@ -21,8 +21,8 @@ import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import ImpersonateStore from "ImpersonateStore" /* 4818 */;
 import AppFreezeStore from "AppFreezeStore" /* 10020 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10840 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10647 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10845 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10652 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
@@ -31,8 +31,8 @@ import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import VoiceStateStore from "VoiceStateStore" /* 5561 */;
 import VoicePanelStore from "VoicePanelStore" /* 6495 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
 import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 

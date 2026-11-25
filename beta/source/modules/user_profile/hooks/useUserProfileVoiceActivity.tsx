@@ -1,10 +1,10 @@
-// Module ID: 14499
-// Function ID: 14500
+// Module ID: 14509
+// Function ID: 14510
 // Name: useUserProfileVoiceActivity
-// Dependencies: [5651, 5561, 8060, 13510, 504, 2]
+// Dependencies: [5651, 5561, 8060, 13513, 504, 2]
 // Exports: default, isUserProfileVoiceActivityForChannel
 
-// Module 14499 (useUserProfileVoiceActivity)
+// Module 14509 (useUserProfileVoiceActivity)
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8060 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
 import VoiceStateStore from "VoiceStateStore" /* 5561 */;
@@ -18,7 +18,7 @@ export default function useUserProfileVoiceActivity(guildId) {
   const userId = guildId.userId;
   let id;
   let tmp = dependencyMap;
-  const tmp2 = id(13510)({ userId, guildId: guildId.guildId });
+  const tmp2 = id(13513)({ userId, guildId: guildId.guildId });
   const voiceChannel = tmp2.voiceChannel;
   id = undefined;
   const voiceState = tmp2.voiceState;

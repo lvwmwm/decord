@@ -1,14 +1,14 @@
-// Module ID: 13820
-// Function ID: 13821
+// Module ID: 13823
+// Function ID: 13824
 // Name: getConsoleIcon
-// Dependencies: [1071, 5563, 7082, 11087, 2]
+// Dependencies: [1071, 5563, 7082, 11092, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 13820 (getConsoleIcon)
+// Module 13823 (getConsoleIcon)
 import Constants from "Constants" /* 1071 */;
 import CallConstants from "CallConstants" /* 5563 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7082 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11087 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11092 */;
 import size from "module_2" /* 2 */;
 
 let PLAYSTATION;

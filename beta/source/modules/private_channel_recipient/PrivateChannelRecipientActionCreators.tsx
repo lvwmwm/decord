@@ -1,9 +1,9 @@
-// Module ID: 12815
-// Function ID: 12816
+// Module ID: 12818
+// Function ID: 12819
 // Name: PrivateChannelRecipientActionCreators
 // Dependencies: [1071, 1284, 2]
 
-// Module 12815 (PrivateChannelRecipientActionCreators)
+// Module 12818 (PrivateChannelRecipientActionCreators)
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import size from "module_2" /* 2 */;

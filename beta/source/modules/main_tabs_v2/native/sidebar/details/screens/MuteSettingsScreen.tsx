@@ -1,15 +1,15 @@
-// Module ID: 18985
-// Function ID: 18986
+// Module ID: 18996
+// Function ID: 18997
 // Name: MuteSettingsScreen
-// Dependencies: [19, 17, 4762, 4784, 4855, 1386, 8562, 1071, 21, 4913, 575, 8459, 7485, 7480, 10362, 7045, 1186, 11157, 5504, 1112, 5529, 11158, 1500, 11669, 11156, 1501, 563, 1378, 8561, 1628, 2]
+// Dependencies: [19, 17, 4762, 4784, 4855, 1386, 8562, 1071, 21, 4913, 575, 8459, 7485, 7480, 10367, 7045, 1186, 11162, 5504, 1112, 5529, 11163, 1500, 11674, 11161, 1501, 563, 1378, 8561, 1628, 2]
 
-// Module 18985 (MuteSettingsScreen)
+// Module 18996 (MuteSettingsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import react_native2 from "react-native" /* 8562 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10362 */;
-import threadActionSheets from "threadActionSheets" /* 11669 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10367 */;
+import threadActionSheets from "threadActionSheets" /* 11674 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildStore from "GuildStore" /* 4784 */;
@@ -53,7 +53,7 @@ function UnmuteOptions(channel) {
   }, items);
   const obj2 = { icon: closure_10(Icon, obj3), label: closure_10(Text, obj4), onPress: callback, start: true, end: true };
   const TableRow = channel(7045).TableRow;
-  obj3 = { disableColor: true, source: navigation(11157) };
+  obj3 = { disableColor: true, source: navigation(11162) };
   Icon = channel(1186).Icon;
   obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: format(prop, obj5) };
   Text = channel(5504).Text;
@@ -64,9 +64,9 @@ function UnmuteOptions(channel) {
   obj6 = channel(5529);
   items1 = [closure_10(TableRow, obj2), ];
   const obj7 = { muteConfig, type: isPrivateResult ? MuteSettingType.DM : MuteSettingType.CHANNEL };
-  const tmp7 = navigation(11158);
+  const tmp7 = navigation(11163);
   isPrivateResult = channel.isPrivate();
-  MuteSettingType = channel(11158).MuteSettingType;
+  MuteSettingType = channel(11163).MuteSettingType;
   items1[1] = closure_10(tmp7, obj7);
   return closure_11(View, obj);
 }

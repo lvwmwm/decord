@@ -1,10 +1,10 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 12998
+// Function ID: 12999
 // Name: Header
-// Dependencies: [19, 17, 1386, 10675, 1499, 1071, 21, 575, 4913, 1653, 504, 12919, 5477, 8128, 12924, 10674, 2150, 5557, 12996, 5504, 1186, 7591, 5610, 1255, 7545, 12997, 5594, 1112, 12998, 2]
+// Dependencies: [19, 17, 1386, 10680, 1499, 1071, 21, 575, 4913, 1653, 504, 12922, 5477, 8128, 12927, 10679, 2150, 5557, 12999, 5504, 1186, 7591, 5610, 1255, 7545, 13000, 5594, 1112, 13001, 2]
 // Exports: default
 
-// Module 12995 (Header)
+// Module 12998 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,11 +12,11 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import useAvatarColorDefault from "useAvatarColor" /* 8128 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10674 */;
-import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12997 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10679 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 13000 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import AppLauncherStore from "AppLauncherStore" /* 10675 */;
+import AppLauncherStore from "AppLauncherStore" /* 10680 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -35,9 +35,9 @@ let size;
 let tmp5;
 const _modDef1653 = tmp5(1653);
 const AssetRegistryDefault = tmp5(5610);
-const EntityBorderAppIconDefault = tmp5(12924);
-const AppLauncherBackButtonDefault = tmp5(12996);
-const AppDetailsOverflowMenuDefault = tmp5(12998);
+const EntityBorderAppIconDefault = tmp5(12927);
+const AppLauncherBackButtonDefault = tmp5(12999);
+const AppDetailsOverflowMenuDefault = tmp5(13001);
 let View = react_native.View;
 ({ DEFAULT_CONTENT_PADDING, SCREEN_BACKGROUND_COLOR } = AppLauncherNativeConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -103,7 +103,7 @@ export default function Header(application) {
   const tmp3 = closure_11();
   let appLauncherIconSource = null;
   if (null != application) {
-    const tmpResult = application(12919);
+    const tmpResult = application(12922);
     appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
   }
   const tmpResult9 = application(5477);
@@ -239,7 +239,7 @@ export default function Header(application) {
   let str2 = "";
   const animatedStyle4 = useAnimatedStyle4(HeaderTsx4);
   if (null != application) {
-    const tmpResult14 = application(10674);
+    const tmpResult14 = application(10679);
     str2 = tmpResult14.getSectionName(application);
   }
   let result = null != application && "flags" in application;
@@ -271,7 +271,7 @@ export default function Header(application) {
   const tmp43 = id;
   if (null != application) {
     tmp42Result = null;
-    const tmpResult16 = application(10674);
+    const tmpResult16 = application(10679);
     if (tmpResult16.isRealApplication(application)) {
       const obj10 = { style: tmp3.actionsWrapper, children: items15 };
       const obj11 = {

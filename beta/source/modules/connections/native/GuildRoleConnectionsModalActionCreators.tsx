@@ -1,10 +1,10 @@
-// Module ID: 12012
-// Function ID: 12013
+// Module ID: 12017
+// Function ID: 12018
 // Name: GuildRoleConnectionsModalActionCreators
-// Dependencies: [6429, 12013, 2119, 5127, 12004, 2]
+// Dependencies: [6429, 12018, 2119, 5127, 12009, 2]
 // Exports: makeGuildRoleConnectionsConnectAccountsActionSheetKey, openGuildRoleConnectionsConnectAccountModal, openGuildRoleConnectionsModal
 
-// Module 12012 (GuildRoleConnectionsModalActionCreators)
+// Module 12017 (GuildRoleConnectionsModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
@@ -27,7 +27,7 @@ export function openGuildRoleConnectionsModal(onClose) {
       }
     }
   };
-  obj.pushLazy(onClose(2119)(12013, dependencyMap.paths), obj2, ROLE_CONNECTIONS_MODAL_KEY);
+  obj.pushLazy(onClose(2119)(12018, dependencyMap.paths), obj2, ROLE_CONNECTIONS_MODAL_KEY);
 }
 export function makeGuildRoleConnectionsConnectAccountsActionSheetKey(id) {
   return "GuildRoleConnectionsConnectAccountsActionSheet-" + id;
@@ -36,6 +36,6 @@ export function openGuildRoleConnectionsConnectAccountModal(verificationRole, gu
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { role: verificationRole, guildId };
-  const tmp2 = asyncRequire(12004, dependencyMap.paths);
+  const tmp2 = asyncRequire(12009, dependencyMap.paths);
   openLazy(tmp2, "GuildRoleConnectionsConnectAccountsActionSheet-" + verificationRole.id, obj);
 }

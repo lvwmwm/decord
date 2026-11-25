@@ -1,9 +1,9 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12271
+// Function ID: 12272
 // Name: GameOrganizationBenefits
 // Dependencies: [1112, 2639, 2]
 
-// Module 12275 (GameOrganizationBenefits)
+// Module 12271 (GameOrganizationBenefits)
 import intl2 from "intl" /* 1112 */;
 import _modDef2639 from "module_2639" /* 2639 */;
 import size from "module_2" /* 2 */;

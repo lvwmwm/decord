@@ -1,10 +1,10 @@
-// Module ID: 11137
-// Function ID: 11138
+// Module ID: 11142
+// Function ID: 11143
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 17, 5642, 21, 575, 4913, 5504, 5643, 8824, 11138, 5519, 2151, 1112, 11139, 5929, 2152, 7977, 5600, 9769, 9774, 9053, 2]
+// Dependencies: [19, 17, 5642, 21, 575, 4913, 5504, 5643, 8824, 11143, 5519, 2151, 1112, 11144, 5929, 2152, 7977, 5600, 9769, 9774, 9053, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 11137 (MarkupReactGameMentionRule)
+// Module 11142 (MarkupReactGameMentionRule)
 import nativeDefault from "native" /* 575 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
 import useGame from "useGame" /* 9053 */;
@@ -42,7 +42,7 @@ class MarkupGameMention {
     const muted = state.muted;
     let obj = state(8824);
     const gameMentionData = obj.useGameMentionData(gameId);
-    let obj2 = state(11138);
+    let obj2 = state(11143);
     const previewMentionLayout = obj2.usePreviewMentionLayout();
     let variant;
     const obj3 = state(5519);
@@ -96,7 +96,7 @@ class MarkupGameMention {
     if (mentionPillOffsetY == null) {
       let prop1;
       if (true === state.noStyleAndInteraction) {
-        prop1 = tmp(11139).MENTION_PILL_OFFSET_Y;
+        prop1 = tmp(11144).MENTION_PILL_OFFSET_Y;
       }
       mentionPillOffsetY = prop1;
     }

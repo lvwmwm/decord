@@ -1,16 +1,16 @@
-// Module ID: 16940
-// Function ID: 16941
+// Module ID: 16950
+// Function ID: 16951
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 32, 19, 17, 1386, 1071, 10468, 4938, 21, 4913, 504, 14047, 2108, 7520, 15851, 5595, 1112, 15852, 6561, 4939, 4941, 4943, 9099, 10505, 10459, 7709, 16941, 10952, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 1071, 10473, 4938, 21, 4913, 504, 14050, 2108, 7520, 15861, 5595, 1112, 15862, 6561, 4939, 4941, 4943, 9099, 10510, 10464, 7709, 16951, 10957, 2]
 
-// Module 16940 (UserSettingsAppIcons)
+// Module 16950 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
-import AppIconConstants from "AppIconConstants" /* 10468 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10505 */;
-import AppIconRowsDefault from "AppIconRows" /* 16941 */;
+import AppIconConstants from "AppIconConstants" /* 10473 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10510 */;
+import AppIconRowsDefault from "AppIconRows" /* 16951 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -28,7 +28,7 @@ let closure_14;
 let map1;
 let metroImportAll;
 let tmp6;
-const NitroUpsellButtonDefault = tmp6(10952);
+const NitroUpsellButtonDefault = tmp6(10957);
 const View = react_native.View;
 ({ UpsellTypes: metroImportAll, AnalyticsPages: c9 } = Constants);
 const getIconById = AppIconConstants.getIconById;
@@ -320,7 +320,7 @@ const memoResult = react.memo(function UserSettingsAppIcons() {
   obj = stateFromStores(504);
   let items = [setPending];
   stateFromStores = obj.useStateFromStores(items, () => setPending.getCurrentUser());
-  let obj2 = stateFromStores(14047);
+  let obj2 = stateFromStores(14050);
   importDefault = obj2.useCurrentAppIcon();
   let obj3 = stateFromStores(2108);
   const isPremiumResult = obj3.isPremium(stateFromStores);

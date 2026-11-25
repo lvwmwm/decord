@@ -1,9 +1,9 @@
-// Module ID: 11252
-// Function ID: 11253
+// Module ID: 11257
+// Function ID: 11258
 // Name: ChannelSettingsStore
 // Dependencies: [4766, 7266, 1405, 4762, 1071, 1111, 4857, 4859, 4771, 4772, 1284, 572, 12, 4776, 2168, 504, 2]
 
-// Module 11252 (ChannelSettingsStore)
+// Module 11257 (ChannelSettingsStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -29,13 +29,13 @@ let FormStates;
 let closure_14;
 let closure_15;
 let map1;
-const f99097 = (body) => {
+const f99132 = (body) => {
   c21 = false;
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
   obj.dispatch(obj2);
 };
-const f99098 = () => {
+const f99133 = () => {
   c21 = false;
   return false;
 };
@@ -303,7 +303,7 @@ invites = {
         let obj2 = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
         const get = HTTP.get;
         const value = get(obj2);
-        value.then(f99097, f99098);
+        value.then(f99132, f99133);
       }
       return true;
     }
@@ -470,7 +470,7 @@ invites = {
       const get = HTTP.get;
       const obj = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
       const value = get(obj);
-      value.then(f99097, f99098);
+      value.then(f99132, f99133);
     }
   },
   CHANNEL_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {

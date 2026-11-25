@@ -1,10 +1,10 @@
-// Module ID: 16505
-// Function ID: 16506
+// Module ID: 16515
+// Function ID: 16516
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1386, 21, 4913, 575, 9958, 8427, 16467, 504, 9977, 8425, 1112, 16504, 6561, 16506, 16470, 5143, 5923, 5504, 7030, 7022, 2]
+// Dependencies: [32, 19, 17, 1386, 21, 4913, 575, 9958, 8427, 16477, 504, 9977, 8425, 1112, 16514, 6561, 16516, 16480, 5143, 5923, 5504, 7030, 7022, 2]
 // Exports: default
 
-// Module 16505 (QuestBottomSheetHeader)
+// Module 16515 (QuestBottomSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 5923 */;
@@ -48,9 +48,9 @@ export default function QuestBottomSheetHeader(arg0) {
   let tmp = closure_9();
   let tmp2 = isScreenReaderEnabled;
   let tmp3 = dependencyMap;
-  let obj = isScreenReaderEnabled(16506);
+  let obj = isScreenReaderEnabled(16516);
   const questCreative = obj.useQuestCreative(quest);
-  let obj2 = isScreenReaderEnabled(16470);
+  let obj2 = isScreenReaderEnabled(16480);
   let closure_2;
   let gameTitle;
   let c4;
@@ -86,7 +86,7 @@ export default function QuestBottomSheetHeader(arg0) {
     const obj2 = { quest };
     return obj.hasStreamOnDesktopTask(obj2);
   }, items);
-  const tmp2Result12 = tmp2(16467);
+  const tmp2Result12 = tmp2(16477);
   hasWatchVideoOnMobileTasks = tmp2Result12.useHasWatchVideoOnMobileTasks(quest.config);
   const items1 = [UserStore];
   const tmp2Result13 = tmp2(504);

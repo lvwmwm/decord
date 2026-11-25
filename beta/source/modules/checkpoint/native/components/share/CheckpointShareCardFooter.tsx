@@ -1,14 +1,14 @@
-// Module ID: 12525
-// Function ID: 12526
+// Module ID: 12528
+// Function ID: 12529
 // Name: CheckpointShareCardFooter
-// Dependencies: [19, 17, 21, 4913, 575, 12523, 7865, 5504, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 12526, 7865, 5504, 2]
 // Exports: default
 
-// Module 12525 (CheckpointShareCardFooter)
+// Module 12528 (CheckpointShareCardFooter)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import inlineStylesDefault from "inlineStyles" /* 7865 */;
-import CheckpointShareCardContext from "CheckpointShareCardContext" /* 12523 */;
+import CheckpointShareCardContext from "CheckpointShareCardContext" /* 12526 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,12 +1,12 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 15801
+// Function ID: 15802
 // Name: CollectiblesMarketingManager
-// Dependencies: [5507, 2121, 572, 15792, 8074, 8125, 2]
+// Dependencies: [5507, 2121, 572, 15802, 8074, 8125, 2]
 
-// Module 15791 (CollectiblesMarketingManager)
+// Module 15801 (CollectiblesMarketingManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
-import CollectiblesMarketingCacheExperiment from "CollectiblesMarketingCacheExperiment" /* 15792 */;
+import CollectiblesMarketingCacheExperiment from "CollectiblesMarketingCacheExperiment" /* 15802 */;
 import DevSettingsStore from "DevSettingsStore" /* 5507 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;

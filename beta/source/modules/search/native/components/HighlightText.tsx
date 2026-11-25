@@ -1,10 +1,10 @@
-// Module ID: 11140
-// Function ID: 11141
+// Module ID: 11145
+// Function ID: 11146
 // Name: HighlightText
 // Dependencies: [19, 1071, 21, 4913, 4910, 575, 1186, 2]
 // Exports: default
 
-// Module 11140 (HighlightText)
+// Module 11145 (HighlightText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

@@ -1,10 +1,10 @@
-// Module ID: 11731
-// Function ID: 11732
+// Module ID: 11736
+// Function ID: 11737
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 4855, 1386, 21, 1628, 7554, 5127, 7515, 7349, 7057, 11732, 7553, 5145, 7347, 7636, 5529, 2]
+// Dependencies: [19, 4855, 1386, 21, 1628, 7554, 5127, 7515, 7349, 7057, 11737, 7553, 5145, 7347, 7636, 5529, 2]
 // Exports: default
 
-// Module 11731 (ChannelPickerActionSheet)
+// Module 11736 (ChannelPickerActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import useChannelName from "useChannelName" /* 5529 */;
 import TableRadioRow2 from "TableRadioRow" /* 7349 */;

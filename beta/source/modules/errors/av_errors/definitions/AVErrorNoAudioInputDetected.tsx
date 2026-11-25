@@ -1,11 +1,11 @@
-// Module ID: 20105
-// Function ID: 20106
+// Module ID: 20116
+// Function ID: 20117
 // Name: AVErrorNoAudioInputDetected
-// Dependencies: [4762, 2131, 5654, 1071, 5843, 20106, 2]
+// Dependencies: [4762, 2131, 5654, 1071, 5843, 20117, 2]
 
-// Module 20105 (AVErrorNoAudioInputDetected)
+// Module 20116 (AVErrorNoAudioInputDetected)
 import AVError from "AVError" /* 5843 */;
-import AVErrorContext from "AVErrorContext" /* 20106 */;
+import AVErrorContext from "AVErrorContext" /* 20117 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;

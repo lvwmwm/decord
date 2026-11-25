@@ -1,12 +1,12 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10659
+// Function ID: 10660
 // Name: useIsViewingActivity
-// Dependencies: [6620, 10645, 5089, 10642, 504, 2]
+// Dependencies: [6620, 10650, 5089, 10647, 504, 2]
 // Exports: useIsViewingActivity
 
-// Module 10654 (useIsViewingActivity)
-import ChannelCallModalDefault from "ChannelCallModal" /* 10642 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 10645 */;
+// Module 10659 (useIsViewingActivity)
+import ChannelCallModalDefault from "ChannelCallModal" /* 10647 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 10650 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import size from "module_2" /* 2 */;
 

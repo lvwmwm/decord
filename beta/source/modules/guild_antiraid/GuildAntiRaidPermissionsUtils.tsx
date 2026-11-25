@@ -1,13 +1,13 @@
-// Module ID: 11117
-// Function ID: 11118
+// Module ID: 11122
+// Function ID: 11123
 // Name: GuildAntiRaidPermissionsUtils
-// Dependencies: [4845, 11101, 1071, 504, 8763, 2]
+// Dependencies: [4845, 11106, 1071, 504, 8763, 2]
 // Exports: canEnableRaidAlerts, canReportRaid, useCanEnableRaidAlerts, useCanReportRaid
 
-// Module 11117 (GuildAntiRaidPermissionsUtils)
+// Module 11122 (GuildAntiRaidPermissionsUtils)
 import Constants from "Constants" /* 1071 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11101 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11106 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

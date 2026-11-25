@@ -1,11 +1,11 @@
-// Module ID: 16011
-// Function ID: 16012
+// Module ID: 16021
+// Function ID: 16022
 // Name: AgeNoticeLazy
-// Dependencies: [2, 16012, 16013]
+// Dependencies: [2, 16022, 16023]
 
-// Module 16011 (AgeNoticeLazy)
-import AgeNoticeVisibility from "AgeNoticeVisibility" /* 16012 */;
-import useShowAgeNoticePromoSheet from "useShowAgeNoticePromoSheet" /* 16013 */;
+// Module 16021 (AgeNoticeLazy)
+import AgeNoticeVisibility from "AgeNoticeVisibility" /* 16022 */;
+import useShowAgeNoticePromoSheet from "useShowAgeNoticePromoSheet" /* 16023 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/native/AgeNoticeLazy.tsx");

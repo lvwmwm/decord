@@ -1,14 +1,14 @@
-// Module ID: 10387
-// Function ID: 10388
+// Module ID: 10392
+// Function ID: 10393
 // Name: BotTag
-// Dependencies: [19, 17, 1363, 21, 4913, 575, 1112, 10388, 5504, 2]
+// Dependencies: [19, 17, 1363, 21, 4913, 575, 1112, 10393, 5504, 2]
 
-// Module 10387 (BotTag)
+// Module 10392 (BotTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import ApplicationConstants from "ApplicationConstants" /* 1363 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 10388 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 10393 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

@@ -1,10 +1,10 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11216
+// Function ID: 11217
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 7322, 9023, 575, 4913, 11116, 1112, 5646, 11160, 7763, 11123, 2]
+// Dependencies: [19, 17, 21, 7322, 9023, 575, 4913, 11121, 1112, 5646, 11165, 7763, 11128, 2]
 // Exports: default
 
-// Module 11211 (AlertNotification)
+// Module 11216 (AlertNotification)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -40,7 +40,7 @@ export default function AlertNotification(notification) {
   const guild = notification.guild;
   const key = notification.key;
   const tmp = closure_9();
-  let obj = channel(11116);
+  let obj = channel(11121);
   const incidentData = obj.useGuildIncidentsState(key).incidentData;
   let raidDetectedAt;
   if (incidentData != null) {
@@ -70,9 +70,9 @@ export default function AlertNotification(notification) {
     const obj = transitionToChannel;
     obj.transitionToChannel(channel.id, { navigationReplace: true });
   }, items1);
-  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(11123).SystemMessageText, { text: stringResult }), onPress: callback, notification };
+  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(11128).SystemMessageText, { text: stringResult }), onPress: callback, notification };
   obj3 = { children: items3 };
-  const NotificationPressable = tmp2(11160).NotificationPressable;
+  const NotificationPressable = tmp2(11165).NotificationPressable;
   const obj4 = { cutouts: items2, children: closure_5(guild(7322), { guild, selected: false }) };
   items2 = [size];
   const tmp8 = guild(9023);

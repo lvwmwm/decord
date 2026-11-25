@@ -1,13 +1,13 @@
-// Module ID: 10424
-// Function ID: 10425
+// Module ID: 10429
+// Function ID: 10430
 // Name: Chat
-// Dependencies: [19, 4914, 21, 4913, 10425, 5173, 10431, 10432, 504, 10405, 2]
+// Dependencies: [19, 4914, 21, 4913, 10430, 5173, 10436, 10437, 504, 10410, 2]
 // Exports: default
 
-// Module 10424 (Chat)
+// Module 10429 (Chat)
 import get_initialized from "get initialized" /* 504 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 10405 */;
-import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 10431 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 10410 */;
+import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 10436 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
@@ -21,7 +21,7 @@ function DCDChatList() {
   let obj3;
   let tmp5;
   const tmp = closure_7();
-  const obj = navigationTTIContentPainted(10425);
+  const obj = navigationTTIContentPainted(10430);
   navigationTTIContentPainted = obj.useNavigationTTIContentPainted();
   const items = [navigationTTIContentPainted];
   const memo = react.useMemo(() => {
@@ -33,7 +33,7 @@ function DCDChatList() {
   const callback = react.useCallback((nativeEvent) => navigationTTIContentPainted(nativeEvent.nativeEvent), items);
   const obj2 = { gesture: memo, children: closure_5(tmp5, obj3) };
   const GestureDetector = navigationTTIContentPainted(5173).GestureDetector;
-  obj3 = { style: tmp.chatList, floatingChatInputEnabled: true, onContentPaintStateChange: callback, children: closure_5(navigationTTIContentPainted(10432).TTIFirstContentfulPaint, { label: "chat_list_android" }) };
+  obj3 = { style: tmp.chatList, floatingChatInputEnabled: true, onContentPaintStateChange: callback, children: closure_5(navigationTTIContentPainted(10437).TTIFirstContentfulPaint, { label: "chat_list_android" }) };
   tmp5 = ChatListNativeComponentDefault;
   return closure_5(GestureDetector, obj2);
 }

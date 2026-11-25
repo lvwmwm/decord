@@ -11,9 +11,9 @@ let obj = module_560.create((arg0) => {
   const state = arg0;
   obj = {
     utmSourceCurrent: "r",
-    utmMediumCurrent: "disabled",
-    utmCampaignCurrent: "x",
-    utmContentCurrent: "isArray",
+    utmMediumCurrent: "__d",
+    utmCampaignCurrent: "raw",
+    utmContentCurrent: "justifyContent",
     setUtmCurrentContext(utmSourceCurrent) {
       obj = { utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent };
       return state(obj);

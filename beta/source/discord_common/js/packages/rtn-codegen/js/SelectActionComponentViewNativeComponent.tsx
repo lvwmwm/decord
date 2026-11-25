@@ -1,9 +1,9 @@
-// Module ID: 17148
-// Function ID: 17149
+// Module ID: 17158
+// Function ID: 17159
 // Name: SelectActionComponentViewNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 17148 (SelectActionComponentViewNativeComponent)
+// Module 17158 (SelectActionComponentViewNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

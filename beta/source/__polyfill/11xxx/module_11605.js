@@ -1,10 +1,11 @@
 // Module ID: 11605
 // Function ID: 11606
-// Dependencies: [41, 42, 93, 95, 98, 11603, 11417, 11418, 11422]
+// Dependencies: [41, 42, 93, 95, 98, 11589, 11422, 11423, 11439]
 
 // Module 11605
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
-import _mod11603 from "module_11603" /* 11603 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 11423 */;
+import _mod11439 from "module_11439" /* 11439 */;
+import _mod11589 from "module_11589" /* 11589 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,61 +27,82 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod11603.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp1 = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod11603.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
-class SVTimeUnitCasualRelativeFormatParser {
+class ENMergeRelativeDateRefiner {
   constructor() {
     let constructResult;
-    let flag = arg0;
-    if (arg0 === undefined) {
-      flag = true;
-    }
     const self = this;
-    _classCallCheck(this, SVTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(SVTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, ENMergeRelativeDateRefiner);
+    const obj = _getPrototypeOf(ENMergeRelativeDateRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.allowAbbreviations = flag;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(SVTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENMergeRelativeDateRefiner, _mod11439.MergingRefiner);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.allowAbbreviations ? regExp : regExp1;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*$/i;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = _mod11603.parseDuration(arg1[2]);
-      if (parseDurationResult) {
-        if ("f\u00F6rra" !== formatted) {
-          let reverseDurationResult;
-          if ("passerade" !== formatted) {
-            reverseDurationResult = parseDurationResult;
-          }
-          const ParsingComponents = tmp2(11418).ParsingComponents;
-          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, text, start) {
+      let match = str.match(this.patternBetween());
+      if (match) {
+        let tmp5 = null == str.match(/\s+(prima|dal)$/i);
+        null != text.text.match(/\s+(prima|dal)$/i);
+        if (tmp5) {
+          const str2 = text.text;
+          tmp5 = null == str2.match(/\s+(dopo|dal|fino)$/i);
         }
-        reverseDurationResult = tmp2(11417).reverseDuration(parseDurationResult);
-      } else {
-        return null;
+        let tmp6 = !tmp5;
+        if (tmp6) {
+          start = start.start;
+          let value = start.get("day");
+          if (value) {
+            const start2 = start.start;
+            value = start2.get("month");
+          }
+          if (value) {
+            const start3 = start.start;
+            value = start3.get("year");
+          }
+          tmp6 = value;
+        }
+        match = tmp6;
       }
+      return match;
+    }
+  },
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, text, start) {
+      const parseDurationResult = _mod11589.parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      const str = text.text;
+      if (null != str.match(/\s+(prima|dal)$/i)) {
+        reverseDurationResult = tmp(11422).reverseDuration(parseDurationResult);
+      }
+      const ParsingComponents = tmp(11423).ParsingComponents;
+      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
+      const ReferenceWithTimezone = tmp(11423).ReferenceWithTimezone;
+      start = start.start;
+      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      const reference = start.reference;
+      const index = text.index;
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
+      return parsingResult;
     }
   }
 ];
 
-export default _createClass(SVTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(ENMergeRelativeDateRefiner, items);

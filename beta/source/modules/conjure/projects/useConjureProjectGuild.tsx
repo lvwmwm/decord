@@ -1,10 +1,10 @@
-// Module ID: 18571
-// Function ID: 18572
+// Module ID: 18582
+// Function ID: 18583
 // Name: useConjureProjectGuild
 // Dependencies: [4784, 6621, 504, 2]
 // Exports: default
 
-// Module 18571 (useConjureProjectGuild)
+// Module 18582 (useConjureProjectGuild)
 import GuildStore from "GuildStore" /* 4784 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 11614
-// Function ID: 11615
+// Module ID: 11619
+// Function ID: 11620
 // Name: AppliedForumTag
-// Dependencies: [19, 17, 6573, 1389, 21, 4913, 575, 504, 11615, 1112, 7496, 1412, 5504, 2]
+// Dependencies: [19, 17, 6573, 1389, 21, 4913, 575, 504, 11620, 1112, 7496, 1412, 5504, 2]
 // Exports: AppliedForumTagPill
 
-// Module 11614 (AppliedForumTag)
+// Module 11619 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import EmojiDefault from "Emoji" /* 7496 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 11615 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 11620 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6573 */;
 import Fragment from "Fragment" /* 21 */;

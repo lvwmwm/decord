@@ -1,8 +1,8 @@
-// Module ID: 12533
-// Function ID: 12534
+// Module ID: 12536
+// Function ID: 12537
 // Dependencies: [2]
 
-// Module 12533
+// Module 12536
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/sfx/transition-data.mp3.js");

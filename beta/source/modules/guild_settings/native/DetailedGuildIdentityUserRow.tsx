@@ -1,16 +1,16 @@
-// Module ID: 13855
-// Function ID: 13856
+// Module ID: 13858
+// Function ID: 13859
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1386, 21, 4913, 575, 5943, 4969, 10386, 1186, 504, 7709, 7045, 2]
+// Dependencies: [19, 17, 1386, 21, 4913, 575, 5943, 4969, 10391, 1186, 504, 7709, 7045, 2]
 
-// Module 13855 (DetailedGuildIdentityUserRow)
+// Module 13858 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
-import DiscordTagDefault from "DiscordTag" /* 10386 */;
+import DiscordTagDefault from "DiscordTag" /* 10391 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;

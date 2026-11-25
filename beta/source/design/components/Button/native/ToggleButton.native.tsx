@@ -1,12 +1,12 @@
-// Module ID: 15259
-// Function ID: 15260
+// Module ID: 15269
+// Function ID: 15270
 // Name: ToggleButton
-// Dependencies: [19, 21, 15260, 5512, 2]
+// Dependencies: [19, 21, 15270, 5512, 2]
 
-// Module 15259 (ToggleButton)
+// Module 15269 (ToggleButton)
 import Fragment from "Fragment" /* 21 */;
 import BaseTextButton2 from "BaseTextButton" /* 5512 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 15260 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 15270 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

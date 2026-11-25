@@ -1,19 +1,19 @@
-// Module ID: 12771
-// Function ID: 12772
+// Module ID: 12774
+// Function ID: 12775
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [32, 19, 17, 4914, 12128, 5969, 12515, 21, 575, 4913, 12727, 504, 12772, 12773, 12509, 4969, 6338, 12774, 1653, 1494, 12776, 12510, 1112, 3440, 12541, 12777, 3408, 12778, 2]
+// Dependencies: [32, 19, 17, 4914, 12495, 5969, 10118, 21, 575, 4913, 12730, 504, 12775, 12776, 12513, 4969, 6338, 12777, 1653, 1494, 12779, 12514, 1112, 3440, 12544, 12780, 3408, 12781, 2]
 // Exports: default
 
-// Module 12771 (CheckpointFriendsStatsScreen)
+// Module 12774 (CheckpointFriendsStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 12727 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12730 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import CheckpointStore from "CheckpointStore" /* 12128 */;
-import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12515 */;
+import CheckpointStore from "CheckpointStore" /* 12495 */;
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 10118 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -326,7 +326,7 @@ export default function CheckpointFriendsStatsScreen(arg0) {
       }
       tmp36Result7 = tmp36Result6;
     } else {
-      const obj25 = { animationState, sidekickUser: user3, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: "disabled" };
+      const obj25 = { animationState, sidekickUser: user3, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: "sa" };
       user3 = undefined;
       const tmp23Result16 = width(height[20]);
       if (stateFromStores1 != null) {

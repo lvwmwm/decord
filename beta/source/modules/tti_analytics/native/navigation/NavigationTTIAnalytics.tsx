@@ -1,10 +1,10 @@
-// Module ID: 10428
-// Function ID: 10429
+// Module ID: 10433
+// Function ID: 10434
 // Name: NavigationTTIAnalytics
 // Dependencies: [1360, 3, 572, 2]
 // Exports: trackNavigationTTISpan
 
-// Module 10428 (NavigationTTIAnalytics)
+// Module 10433 (NavigationTTIAnalytics)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1360 */;

@@ -1,10 +1,10 @@
-// Module ID: 10506
-// Function ID: 10507
+// Module ID: 10511
+// Function ID: 10512
 // Name: PremiumFeaturesCard
-// Dependencies: [32, 19, 17, 4914, 2177, 2178, 1071, 1388, 1082, 21, 4913, 575, 6407, 9494, 2173, 6856, 5504, 1112, 8838, 3636, 1399, 38, 8859, 8862, 8858, 8119, 9126, 10507, 7520, 504, 9486, 1625, 9131, 9235, 9125, 8950, 10508, 9502, 9497, 9504, 5511, 8952, 9110, 2]
+// Dependencies: [32, 19, 17, 4914, 2177, 2178, 1071, 1388, 1082, 21, 4913, 575, 6407, 9494, 2173, 6856, 5504, 1112, 8838, 3636, 1399, 38, 8859, 8862, 8858, 8119, 9126, 10512, 7520, 504, 9486, 1625, 9131, 9235, 9125, 8950, 10513, 9502, 9497, 9504, 5511, 8952, 9110, 2]
 // Exports: default
 
-// Module 10506 (PremiumFeaturesCard)
+// Module 10511 (PremiumFeaturesCard)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -379,8 +379,8 @@ export default function PremiumFeaturesCard(premiumType) {
   const result = formatIntervalDuration(obj5);
   if (tmp44Result8) {
     let TIER_2;
-    const getTrialCtaOverride = premiumType(10507).getTrialCtaOverride;
-    premiumType(10507);
+    const getTrialCtaOverride = premiumType(10512).getTrialCtaOverride;
+    premiumType(10512);
     if (premiumType === PremiumTypes.TIER_0) {
       TIER_2 = closure_13.TIER_0;
     } else {
@@ -481,7 +481,7 @@ export default function PremiumFeaturesCard(premiumType) {
   const obj9 = { style: tmp3.card, children: items5 };
   const tmp4Result = PremiumFeaturesBackgroundDefault;
   if (flag3) {
-    tmp44Result = tmp44(tmp4(10508), { width: 185, height: 20, alwaysWhite: true });
+    tmp44Result = tmp44(tmp4(10513), { width: 185, height: 20, alwaysWhite: true });
   } else {
     const obj11 = { premiumType, style: tmp3.logo };
     tmp44Result = tmp44(tmp4(9502), obj11);

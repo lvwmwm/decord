@@ -1,10 +1,10 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12484
+// Function ID: 12485
 // Name: getInlineForwardOptions
 // Dependencies: [1071, 5953, 2]
 // Exports: getInlineForwardOptions
 
-// Module 12488 (getInlineForwardOptions)
+// Module 12484 (getInlineForwardOptions)
 import Constants from "Constants" /* 1071 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 5953 */;
 import size from "module_2" /* 2 */;

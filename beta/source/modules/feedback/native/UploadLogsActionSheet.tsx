@@ -1,10 +1,10 @@
-// Module ID: 19502
-// Function ID: 19503
+// Module ID: 19513
+// Function ID: 19514
 // Name: UploadLogsActionSheet
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 5141, 7515, 1112, 5504, 5511, 11173, 1255, 5127, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 5141, 7515, 1112, 5504, 5511, 11178, 1255, 5127, 2]
 // Exports: default
 
-// Module 19502 (UploadLogsActionSheet)
+// Module 19513 (UploadLogsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -13,7 +13,7 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import components_Button_Button from "components/Button/Button" /* 5511 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
-import DebugUploadManager from "DebugUploadManager" /* 11173 */;
+import DebugUploadManager from "DebugUploadManager" /* 11178 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;

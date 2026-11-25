@@ -1,10 +1,10 @@
-// Module ID: 10198
-// Function ID: 10199
+// Module ID: 10203
+// Function ID: 10204
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 4913, 575, 8197, 6958, 10199, 5504, 1112, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 8197, 6958, 10204, 5504, 1112, 2]
 // Exports: default
 
-// Module 10198 (InAppReportsWidgetPreviewElement)
+// Module 10203 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -40,7 +40,7 @@ export default function WidgetPreview(widget) {
     if (widget.games.length > 0) {
       const obj2 = { userId, widget, disableInteraction: true, cardStyle: items };
       items = [tmp3.card, tmp.card];
-      tmp5 = React3(tmp4(10199).WidgetSection, obj2);
+      tmp5 = React3(tmp4(10204).WidgetSection, obj2);
     }
   }
   let tmp7 = null;

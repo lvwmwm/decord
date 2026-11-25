@@ -1,10 +1,10 @@
-// Module ID: 17816
-// Function ID: 17817
+// Module ID: 17826
+// Function ID: 17827
 // Name: InterestGuildJoinButton
-// Dependencies: [5, 32, 19, 17, 4764, 21, 4913, 575, 504, 13342, 4949, 8205, 17817, 1112, 2643, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 4764, 21, 4913, 575, 504, 13345, 4949, 8205, 17827, 1112, 2643, 5511, 2]
 // Exports: default
 
-// Module 17816 (InterestGuildJoinButton)
+// Module 17826 (InterestGuildJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -141,7 +141,7 @@ export default function InterestGuildJoinButton(guildId) {
   const items = [closure_7];
   const items1 = [guildId];
   let stateFromStores = obj.useStateFromStores(items, () => GuildMembershipStore.isMember(guildId), items1);
-  let obj2 = guildId(13342);
+  let obj2 = guildId(13345);
   const currentUserGuildJoinRequest = obj2.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {

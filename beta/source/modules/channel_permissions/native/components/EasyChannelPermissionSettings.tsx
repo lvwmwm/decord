@@ -1,10 +1,10 @@
-// Module ID: 18945
-// Function ID: 18946
+// Module ID: 18956
+// Function ID: 18957
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 18946, 4762, 4825, 4819, 4784, 4845, 4855, 1386, 6506, 1071, 21, 4913, 575, 1500, 12079, 504, 7734, 7735, 7736, 1112, 5529, 5860, 7775, 4850, 5929, 7348, 7556, 7762, 7045, 13000, 12077, 7101, 5650, 7586, 11278, 18947, 18949, 2]
+// Dependencies: [32, 5, 19, 17, 18957, 4762, 4825, 4819, 4784, 4845, 4855, 1386, 6506, 1071, 21, 4913, 575, 1500, 12084, 504, 7734, 7735, 7736, 1112, 5529, 5860, 7775, 4850, 5929, 7348, 7556, 7762, 7045, 13003, 12082, 7101, 5650, 7586, 11283, 18958, 18960, 2]
 // Exports: default
 
-// Module 18945 (EasyChannelPermissionSettings)
+// Module 18956 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 575 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
@@ -12,12 +12,12 @@ import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6506 */
 import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 7734 */;
 import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 7735 */;
 import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 7775 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12077 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 12082 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18946 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18957 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import GuildRoleStore from "GuildRoleStore" /* 4819 */;

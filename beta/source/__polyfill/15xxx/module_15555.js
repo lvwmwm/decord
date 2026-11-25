@@ -1,27 +1,11 @@
 // Module ID: 15555
 // Function ID: 15556
-// Dependencies: [15540, 15536, 15556]
+// Dependencies: [15553]
 
 // Module 15555
-import _mod15536 from "module_15536" /* 15536 */;
-import _mod15540 from "module_15540" /* 15540 */;
+import _mod15553 from "module_15553" /* 15553 */;
 
-const prop = Object.getOwnPropertySymbols && !_mod15540(() => {
-  const SymbolResult = Symbol("symbol detection");
-  const obj = _mod15536;
-  const StringResult = obj.String(SymbolResult);
-  let tmp5 = !StringResult;
-  if (StringResult) {
-    const _Object = Object;
-    const _Symbol = Symbol;
-    tmp5 = !(Object(SymbolResult) instanceof Symbol);
-  }
-  if (!tmp5) {
-    const _Symbol2 = Symbol;
-    tmp5 = !Symbol.sham && tmp2(15556) && tmp2(15556) < 41;
-    const tmp6 = !Symbol.sham && tmp2(15556) && tmp2(15556) < 41;
-  }
-  return tmp5;
-});
+let closure_0 = _mod15553({}.toString);
+let closure_1 = _mod15553("".slice);
 
-export default prop;
+export default (arg0) => closure_1(closure_0(arg0), 8, -1);

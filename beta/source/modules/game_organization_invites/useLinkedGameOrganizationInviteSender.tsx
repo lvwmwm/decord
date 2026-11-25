@@ -1,14 +1,14 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15190
+// Function ID: 15191
 // Name: useLinkedGameOrganizationInviteSender
-// Dependencies: [19, 12084, 4784, 504, 12085, 12098, 12101, 2]
+// Dependencies: [19, 12089, 4784, 504, 12090, 12103, 12106, 2]
 // Exports: default
 
-// Module 15180 (useLinkedGameOrganizationInviteSender)
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12084 */;
-import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 12085 */;
-import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 12098 */;
-import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 12101 */;
+// Module 15190 (useLinkedGameOrganizationInviteSender)
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12089 */;
+import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 12090 */;
+import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 12103 */;
+import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 12106 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ export default function useLinkedGameOrganizationInviteSender(arg0) {
   });
   let tmp3 = null;
   if (null != stateFromStores) {
-    tmp3 = stateFromStores(12085)(stateFromStores);
+    tmp3 = stateFromStores(12090)(stateFromStores);
   }
   dependencyMap = tmp3;
   let tmp5 = closure_4((arg0) => {

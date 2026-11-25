@@ -1,10 +1,10 @@
-// Module ID: 15906
-// Function ID: 15907
+// Module ID: 15916
+// Function ID: 15917
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 4738, 15867, 1112, 7402, 8909, 2]
+// Dependencies: [19, 21, 4738, 15877, 1112, 7402, 8909, 2]
 // Exports: default
 
-// Module 15906 (UserProfileLegacyUsernameSwitch)
+// Module 15916 (UserProfileLegacyUsernameSwitch)
 import Fragment from "Fragment" /* 21 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7402 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8909 */;
@@ -43,7 +43,7 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
       }
     }
   };
-  const UserProfileEditFormSwitch = tmp(15867).UserProfileEditFormSwitch;
+  const UserProfileEditFormSwitch = tmp(15877).UserProfileEditFormSwitch;
   intl = tmp(1112).intl;
   const intl2 = tmp(1112).intl;
   const tmp5 = jsx;

@@ -1,10 +1,10 @@
-// Module ID: 18151
-// Function ID: 18152
+// Module ID: 18162
+// Function ID: 18163
 // Name: ICYMIBottomLoading
 // Dependencies: [19, 17, 21, 4913, 575, 2]
 // Exports: ICYMIBottomLoading
 
-// Module 18151 (ICYMIBottomLoading)
+// Module 18162 (ICYMIBottomLoading)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;

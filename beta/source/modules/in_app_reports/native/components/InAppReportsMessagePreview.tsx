@@ -1,10 +1,10 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 10201
+// Function ID: 10202
 // Name: InAppReportsMessagePreview
 // Dependencies: [19, 17, 21, 4913, 575, 8669, 4910, 5504, 1112, 10100, 2]
 // Exports: default
 
-// Module 10196 (InAppReportsMessagePreview)
+// Module 10201 (InAppReportsMessagePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

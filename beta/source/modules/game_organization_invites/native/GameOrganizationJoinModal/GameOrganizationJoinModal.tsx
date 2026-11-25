@@ -1,16 +1,16 @@
-// Module ID: 12243
-// Function ID: 12244
+// Module ID: 12239
+// Function ID: 12240
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 11896, 12244, 21, 7092, 7095, 12245, 12250, 12043, 12276, 1112, 12242, 2]
+// Dependencies: [19, 11901, 12240, 21, 7092, 7095, 12241, 12246, 12048, 12272, 1112, 12238, 2]
 // Exports: default
 
-// Module 12243 (GameOrganizationJoinModal)
+// Module 12239 (GameOrganizationJoinModal)
 import Fragment from "Fragment" /* 21 */;
 import NavigatorHeader from "NavigatorHeader" /* 7095 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12242 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11901 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12238 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12244 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12240 */;
 import size from "module_2" /* 2 */;
 
 function SingleCharacterJoinModal(code) {
@@ -34,7 +34,7 @@ function SingleCharacterJoinModal(code) {
     obj3 = NavigatorHeader;
     return obj;
   }, items);
-  return jsx(code(12043).Modal, { screens: navigatorScreens, initialRouteName: GameOrganizationJoinScenes.ACCEPT, gradientColor: "purple" });
+  return jsx(code(12048).Modal, { screens: navigatorScreens, initialRouteName: GameOrganizationJoinScenes.ACCEPT, gradientColor: "purple" });
 }
 function MultiCharacterJoinModal(code) {
   code = code.code;
@@ -71,7 +71,7 @@ function MultiCharacterJoinModal(code) {
     obj5 = NavigatorHeader;
     return obj;
   }, items);
-  const StepModal = code(12276).StepModal;
+  const StepModal = code(12272).StepModal;
   const intl = code(1112).intl;
   return <StepModal screens={navigatorScreens} initialRouteName={GameOrganizationJoinScenes.VIEW} steps={items} headerBackTitle={intl.string(code(1112).t["13/7kX"])} gradientColor="purple" />;
 }

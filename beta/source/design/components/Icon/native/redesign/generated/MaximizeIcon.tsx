@@ -1,14 +1,14 @@
-// Module ID: 18590
-// Function ID: 18591
+// Module ID: 18601
+// Function ID: 18602
 // Name: MaximizeIcon
-// Dependencies: [19, 21, 575, 5599, 12817, 2]
+// Dependencies: [19, 21, 575, 5599, 12820, 2]
 // Exports: MaximizeIcon
 
-// Module 18590 (MaximizeIcon)
+// Module 18601 (MaximizeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 12817 */;
+import AssetRegistry from "AssetRegistry" /* 12820 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

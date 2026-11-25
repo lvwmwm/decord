@@ -1,12 +1,12 @@
-// Module ID: 10843
-// Function ID: 10844
+// Module ID: 10848
+// Function ID: 10849
 // Name: ModeratorStartStageView
-// Dependencies: [32, 19, 4784, 21, 504, 8017, 10844, 7633, 8016, 10845, 7575, 10846, 1112, 10877, 10879, 2]
+// Dependencies: [32, 19, 4784, 21, 504, 8017, 10849, 7633, 8016, 10850, 7575, 10851, 1112, 10882, 10884, 2]
 // Exports: default
 
-// Module 10843 (ModeratorStartStageView)
+// Module 10848 (ModeratorStartStageView)
 import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8016 */;
-import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 10844 */;
+import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 10849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp5;
-const StageViewWithPromptsDefault = tmp5(10846);
+const StageViewWithPromptsDefault = tmp5(10851);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/ModeratorStartStageView.tsx");
 
@@ -40,7 +40,7 @@ export default function ModeratorStartStageView(channel) {
   const obj3 = guild_id(7633);
   const canManageGuildEventResult = obj3.useManageResourcePermissions(channel).canManageGuildEvent(first);
   const tmp7 = useCanCreateAnEventDefault(guild_id);
-  const obj4 = guild_id(10845);
+  const obj4 = guild_id(10850);
   const isLive = obj4.useStageChannelStartEvent(channel.id).isLive;
   const obj5 = guild_id(7575);
   const nextRecurrenceIdInEvent = obj5.getNextRecurrenceIdInEvent(first);
@@ -57,25 +57,25 @@ export default function ModeratorStartStageView(channel) {
       tmp10Result = null;
       if (null != first) {
         const obj7 = { channel, event: first, isLive, guild: stateFromStores, recurrenceId: nextRecurrenceIdInEvent };
-        tmp10Result = tmp10(tmp(10877).StartEventPrompt, obj7);
+        tmp10Result = tmp10(tmp(10882).StartEventPrompt, obj7);
       }
     }
     const items2 = [tmp10Result, , , ];
     let tmp10Result4 = null;
     if (moderator) {
       const obj8 = { channel, isLive };
-      tmp10Result4 = tmp10(tmp(10879).StartStagePrompt, obj8);
+      tmp10Result4 = tmp10(tmp(10884).StartStagePrompt, obj8);
     }
     items2[1] = tmp10Result4;
     let tmp10Result5 = null;
     if (tmp7) {
       const obj9 = { channel, isLive, guild: stateFromStores };
-      tmp10Result5 = tmp10(tmp(10877).ScheduleEventPrompt, obj9);
+      tmp10Result5 = tmp10(tmp(10882).ScheduleEventPrompt, obj9);
     }
     obj10 = { children: items2 };
     items2[2] = tmp10Result5;
     const obj11 = { onContinue: onSkip };
-    items2[3] = closure_5(guild_id(10879).ContinueToStagePrompt, obj11);
+    items2[3] = closure_5(guild_id(10884).ContinueToStagePrompt, obj11);
     tmp10Result6 = tmp10(tmp5Result, obj6);
   }
   return tmp10Result6;

@@ -1,10 +1,10 @@
-// Module ID: 10194
-// Function ID: 10195
+// Module ID: 10199
+// Function ID: 10200
 // Name: InAppReportsTextLineElement
 // Dependencies: [5, 32, 19, 17, 21, 4913, 575, 5492, 5933, 1378, 4870, 5592, 5504, 5511, 1112, 7545, 5594, 2]
 // Exports: default
 
-// Module 10194 (InAppReportsTextLineElement)
+// Module 10199 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 575 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;

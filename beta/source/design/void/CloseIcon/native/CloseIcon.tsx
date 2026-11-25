@@ -1,10 +1,10 @@
-// Module ID: 15382
-// Function ID: 15383
+// Module ID: 15392
+// Function ID: 15393
 // Name: CloseIcon
 // Dependencies: [19, 21, 7865, 2]
 // Exports: default
 
-// Module 15382 (CloseIcon)
+// Module 15392 (CloseIcon)
 import Fragment from "Fragment" /* 21 */;
 import inlineStyles from "inlineStyles" /* 7865 */;
 import react from "react" /* 19 */;

@@ -1,14 +1,14 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16682
+// Function ID: 16683
 // Name: ThemeLightIcon
-// Dependencies: [19, 21, 575, 5599, 16673, 2]
+// Dependencies: [19, 21, 575, 5599, 16683, 2]
 // Exports: ThemeLightIcon
 
-// Module 16672 (ThemeLightIcon)
+// Module 16682 (ThemeLightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 16673 */;
+import AssetRegistry from "AssetRegistry" /* 16683 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

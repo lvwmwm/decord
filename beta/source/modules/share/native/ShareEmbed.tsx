@@ -1,10 +1,10 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15126
+// Function ID: 15127
 // Name: ShareEmbed
 // Dependencies: [19, 17, 21, 4913, 575, 7020, 5600, 5504, 2]
 // Exports: default
 
-// Module 15116 (ShareEmbed)
+// Module 15126 (ShareEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;

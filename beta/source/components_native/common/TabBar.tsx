@@ -1,10 +1,10 @@
-// Module ID: 10395
-// Function ID: 10396
+// Module ID: 10400
+// Function ID: 10401
 // Name: TabBar
 // Dependencies: [32, 19, 17, 21, 4913, 575, 7490, 5173, 1112, 2]
 // Exports: default
 
-// Module 10395 (TabBar)
+// Module 10400 (TabBar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;

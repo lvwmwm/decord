@@ -1,19 +1,19 @@
-// Module ID: 10246
-// Function ID: 10247
+// Module ID: 10251
+// Function ID: 10252
 // Name: UserProfileWidgetGameCoverGridReorderActionSheet
-// Dependencies: [19, 17, 502, 21, 4913, 10200, 575, 10233, 1112, 10235, 7049, 504, 10213, 6958, 10217, 10222, 10245, 2]
+// Dependencies: [19, 17, 502, 21, 4913, 10205, 575, 10238, 1112, 10240, 7049, 504, 10218, 6958, 10222, 10227, 10250, 2]
 // Exports: default
 
-// Module 10246 (UserProfileWidgetGameCoverGridReorderActionSheet)
+// Module 10251 (UserProfileWidgetGameCoverGridReorderActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import DragHandle from "DragHandle" /* 7049 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10200 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10213 */;
-import WidgetUtils from "WidgetUtils" /* 10217 */;
-import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10222 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10233 */;
-import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 10245 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10205 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10218 */;
+import WidgetUtils from "WidgetUtils" /* 10222 */;
+import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10227 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10238 */;
+import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 10250 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -30,7 +30,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp2;
-const GameCoverImageDefault = tmp2(10235);
+const GameCoverImageDefault = tmp2(10240);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

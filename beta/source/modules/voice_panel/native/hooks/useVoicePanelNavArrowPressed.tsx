@@ -1,11 +1,11 @@
-// Module ID: 19249
-// Function ID: 19250
+// Module ID: 19260
+// Function ID: 19261
 // Name: useVoicePanelNavArrowPressed
-// Dependencies: [19, 11748, 11749, 2]
+// Dependencies: [19, 11753, 11754, 2]
 // Exports: default
 
-// Module 19249 (useVoicePanelNavArrowPressed)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
+// Module 19260 (useVoicePanelNavArrowPressed)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

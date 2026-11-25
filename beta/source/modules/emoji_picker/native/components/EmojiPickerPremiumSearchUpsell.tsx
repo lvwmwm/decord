@@ -1,15 +1,15 @@
-// Module ID: 11303
-// Function ID: 11304
+// Module ID: 11308
+// Function ID: 11309
 // Name: EmojiPickerPremiumSearchUpsell
-// Dependencies: [19, 1386, 1071, 1388, 21, 4913, 1255, 10459, 10949, 8547, 10950, 2173, 11304, 1112, 8952, 575, 2]
+// Dependencies: [19, 1386, 1071, 1388, 21, 4913, 1255, 10464, 10954, 8547, 10955, 2173, 11309, 1112, 8952, 575, 2]
 // Exports: useEmojiPickerPremiumSearchUpsellClick, useEmojiPickerPremiumSearchUpsellViewed
 
-// Module 11303 (EmojiPickerPremiumSearchUpsell)
+// Module 11308 (EmojiPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10950 */;
-import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 11304 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10955 */;
+import PremiumExpressionPickerSearchUpsellDefault from "PremiumExpressionPickerSearchUpsell" /* 11309 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
@@ -43,9 +43,9 @@ const memoResult = react.memo(function EmojiPickerListPremiumSearchUpsell(guildI
   let onPress;
   const tmp = closure_12();
   ({ analyticsLocations, useTier0UpsellContent } = guildId);
-  const tmp4 = onPress(10459);
+  const tmp4 = onPress(10464);
   const usePremiumUpsellConfig = tmp4.usePremiumUpsellConfig;
-  let obj = onPress(10949);
+  let obj = onPress(10954);
   const tmp6 = usePremiumFeatureUpsellGetNitroDefault(useTier0UpsellContent, usePremiumUpsellConfig(obj.getUpsellType(onPress(8547).EntitlementFeatureNames.EMOJIS_EVERYWHERE), analyticsLocations).onViewAllPerks, constants.PREMIUM_UPSELL_EMOJI_EVERYWHERE);
   onPress = tmp6.onPress;
   const items = [onPress];
@@ -145,9 +145,9 @@ export function useEmojiPickerPremiumSearchUpsellClick(arg0) {
   let useTier0UpsellContent;
   let onPress;
   ({ analyticsLocations, useTier0UpsellContent } = arg0);
-  const usePremiumUpsellConfig = onPress(10459).usePremiumUpsellConfig;
-  onPress(10459);
-  const obj = onPress(10949);
+  const usePremiumUpsellConfig = onPress(10464).usePremiumUpsellConfig;
+  onPress(10464);
+  const obj = onPress(10954);
   const tmp2 = usePremiumFeatureUpsellGetNitroDefault(useTier0UpsellContent, usePremiumUpsellConfig(obj.getUpsellType(onPress(8547).EntitlementFeatureNames.EMOJIS_EVERYWHERE), analyticsLocations).onViewAllPerks, constants.PREMIUM_UPSELL_EMOJI_EVERYWHERE);
   onPress = tmp2.onPress;
   const obj2 = {

@@ -1,10 +1,10 @@
-// Module ID: 10700
-// Function ID: 10701
+// Module ID: 10705
+// Function ID: 10706
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 4762, 4761, 1071, 10701, 10691, 572, 6349, 4834, 10704, 10626, 10705, 6661, 10707, 2]
+// Dependencies: [5, 4762, 4761, 1071, 10706, 10696, 572, 6349, 4834, 10709, 10631, 10710, 6661, 10712, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10700 (confirmActivityLaunchChecks)
+// Module 10705 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

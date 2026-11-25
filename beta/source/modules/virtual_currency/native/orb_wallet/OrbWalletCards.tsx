@@ -1,10 +1,10 @@
-// Module ID: 16305
-// Function ID: 16306
+// Module ID: 16315
+// Function ID: 16316
 // Name: OrbWalletCards
-// Dependencies: [32, 19, 17, 15017, 4759, 1388, 21, 4913, 575, 16306, 16307, 7047, 16308, 5504, 5511, 7591, 7151, 1112, 5477, 7135, 5468, 16300, 14202, 504, 4746, 9080, 7520, 7539, 16298, 2375, 13008, 8840, 2]
+// Dependencies: [32, 19, 17, 15027, 4759, 1388, 21, 4913, 575, 16316, 16317, 7047, 16318, 5504, 5511, 7591, 7151, 1112, 5477, 7135, 5468, 16310, 14212, 504, 4746, 9080, 7520, 7539, 16308, 2375, 13011, 8840, 2]
 // Exports: OrbWalletPrimaryCard, getWalletPrimaryCardType, useOrbWalletPrimaryCard
 
-// Module 16305 (OrbWalletCards)
+// Module 16315 (OrbWalletCards)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
@@ -19,15 +19,15 @@ import XSmallIcon2 from "XSmallIcon" /* 7151 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import IconButton2 from "IconButton" /* 7591 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8840 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13008 */;
-import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16298 */;
-import AssetRegistry from "AssetRegistry" /* 16306 */;
-import AssetRegistry2 from "AssetRegistry" /* 16307 */;
-import LocalSvgDefault from "LocalSvg" /* 16308 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13011 */;
+import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16308 */;
+import AssetRegistry from "AssetRegistry" /* 16316 */;
+import AssetRegistry2 from "AssetRegistry" /* 16317 */;
+import LocalSvgDefault from "LocalSvg" /* 16318 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import OrbChallengesStore from "OrbChallengesStore" /* 15017 */;
+import OrbChallengesStore from "OrbChallengesStore" /* 15027 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -46,7 +46,7 @@ let obj6;
 let obj7;
 let tmp;
 let unpackModuleId;
-const OrbWalletUtils = tmp(16300);
+const OrbWalletUtils = tmp(16310);
 function BaseOrbWalletPrimaryCard(buttonSize) {
   let IconButton;
   let XSmallIcon;
@@ -200,9 +200,9 @@ export function useOrbWalletPrimaryCard(balance) {
   let orbWalletAnalyticsPage;
   let prop;
   let tmp = orbWalletAnalyticsPage;
-  let obj = orbWalletAnalyticsPage(16300);
+  let obj = orbWalletAnalyticsPage(16310);
   orbWalletAnalyticsPage = obj.useOrbWalletAnalyticsPage();
-  obj2 = orbWalletAnalyticsPage(14202);
+  obj2 = orbWalletAnalyticsPage(14212);
   const isPremiumSubscriber = obj2.useIsPremiumSubscriber(PremiumTypes.TIER_2);
   let obj3 = orbWalletAnalyticsPage(504);
   const items = [OrbChallengesStore];
@@ -247,7 +247,7 @@ export function useOrbWalletPrimaryCard(balance) {
   }
   const tmp19 = NITRO_UPSELL(7520);
   analyticsLocations = tmp19(NITRO_UPSELL(7539).ORB_WALLET_PRIMARY_CARD).analyticsLocations;
-  const tmpResult2 = tmp(16300);
+  const tmpResult2 = tmp(16310);
   const openNitroCheckoutFromOrbWallet = tmpResult2.useOpenNitroCheckoutFromOrbWallet(NITRO_UPSELL(7539).ORB_WALLET_PRIMARY_CARD_NITRO_UPSELL_CTA);
   if (NITRO_UPSELL === obj.SHOP_ORBS) {
     ORB_WALLET_PRIMARY_CARD_NITRO_UPSELL_CTA = tmp18(7539).ORB_WALLET_SHOP_CTA;

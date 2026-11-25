@@ -1,16 +1,16 @@
-// Module ID: 13272
-// Function ID: 13273
+// Module ID: 13275
+// Function ID: 13276
 // Name: GameMentionSearchBar
-// Dependencies: [19, 17, 21, 4913, 575, 13258, 7040, 5504, 1112, 7709, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 13261, 7040, 5504, 1112, 7709, 2]
 
-// Module 13272 (GameMentionSearchBar)
+// Module 13275 (GameMentionSearchBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import GameControllerIcon from "GameControllerIcon" /* 7040 */;
 import _mod7709 from "module_7709" /* 7709 */;
-import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 13258 */;
+import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 13261 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

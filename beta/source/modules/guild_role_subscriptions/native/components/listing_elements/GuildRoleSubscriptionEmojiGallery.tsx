@@ -1,14 +1,14 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16651
+// Function ID: 16652
 // Name: GuildRoleSubscriptionEmojiGallery
-// Dependencies: [19, 21, 11331, 5929, 16642, 2]
+// Dependencies: [19, 21, 11336, 5929, 16652, 2]
 // Exports: default
 
-// Module 16641 (GuildRoleSubscriptionEmojiGallery)
+// Module 16651 (GuildRoleSubscriptionEmojiGallery)
 import Fragment from "Fragment" /* 21 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;
-import chunkDefault from "chunk" /* 11331 */;
-import EmojiIconDefault from "EmojiIcon" /* 16642 */;
+import chunkDefault from "chunk" /* 11336 */;
+import EmojiIconDefault from "EmojiIcon" /* 16652 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

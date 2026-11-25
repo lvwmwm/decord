@@ -1,10 +1,10 @@
-// Module ID: 19060
-// Function ID: 19061
+// Module ID: 19071
+// Function ID: 19072
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 6689, 1386, 14991, 1071, 4759, 21, 4913, 575, 4974, 1628, 5127, 5141, 7515, 7554, 5929, 7022, 5504, 1112, 5511, 10139, 7024, 8194, 4935, 6691, 1412, 1186, 504, 14992, 7068, 4945, 4746, 2]
+// Dependencies: [32, 19, 17, 6689, 1386, 15001, 1071, 4759, 21, 4913, 575, 4974, 1628, 5127, 5141, 7515, 7554, 5929, 7022, 5504, 1112, 5511, 10144, 7024, 8194, 4935, 6691, 1412, 1186, 504, 15002, 7068, 4945, 4746, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 19060 (RobloxConnectionCoachmark)
+// Module 19071 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -23,7 +23,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6689 */;
 import UserStore from "UserStore" /* 1386 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14991 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15001 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -74,7 +74,7 @@ function UserIcon() {
   const obj3 = { style: tmp.avatarInnerBorder };
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   items1 = [map1(View, obj3), ];
-  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
+  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "sa" };
   const Avatar = native.Avatar;
   items1[1] = map1(Avatar, obj4);
   return gesture(View, obj2);
@@ -176,7 +176,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
   const Button = markAsDismissed(5511).Button;
   intl3 = markAsDismissed(1112).intl;
   obj12 = { size: "sm", color: nativeDefault.colors.WHITE };
-  WindowLaunchIcon = markAsDismissed(10139).WindowLaunchIcon;
+  WindowLaunchIcon = markAsDismissed(10144).WindowLaunchIcon;
   items3 = [closure_13(Button, obj11), ];
   const obj13 = { text: intl4.string(markAsDismissed(1112).t.DiGJy3), variant: "secondary", size: "lg", onPress: handleCancel };
   const Button2 = markAsDismissed(5511).Button;

@@ -1,17 +1,17 @@
-// Module ID: 11356
-// Function ID: 11357
+// Module ID: 11361
+// Function ID: 11362
 // Name: GIFPickerHeader
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 11353, 7242, 1653, 5123, 5126, 7591, 7429, 1112, 7427, 10157, 7030, 11357, 5504, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 11358, 7242, 1653, 5123, 5126, 7591, 7429, 1112, 7427, 10162, 7030, 11362, 5504, 2]
 
-// Module 11356 (GIFPickerHeader)
+// Module 11361 (GIFPickerHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import InputTypes from "InputTypes" /* 7242 */;
-import GifProvider from "GifProvider" /* 10157 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 11353 */;
+import GifProvider from "GifProvider" /* 10162 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 11358 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -205,7 +205,7 @@ const memoResult = react.memo(function GIFPickerHeader(arg0) {
     UTypEu = tmp2(1112).t.UTypEu;
     intl5 = tmp2(1112).intl;
     const obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const ChevronLargeLeftIcon = tmp2(11357).ChevronLargeLeftIcon;
+    const ChevronLargeLeftIcon = tmp2(11362).ChevronLargeLeftIcon;
     items = [metroImportDefault(ChevronLargeLeftIcon, obj6), ];
     const Text = tmp2(5504).Text;
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {

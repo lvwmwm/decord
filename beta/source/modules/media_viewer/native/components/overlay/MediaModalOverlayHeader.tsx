@@ -1,10 +1,10 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10156
+// Function ID: 10157
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 9721, 21, 4913, 10148, 10032, 10152, 5089, 1653, 5123, 9725, 9726, 1112, 7151, 1186, 575, 5504, 10153, 8658, 1378, 10160, 7022, 2]
+// Dependencies: [19, 17, 9721, 21, 4913, 10153, 10032, 10157, 5089, 1653, 5123, 9725, 9726, 1112, 7151, 1186, 575, 5504, 10158, 8658, 1378, 10165, 7022, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 10151 (MediaModalOverlayHeader)
+// Module 10156 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _mod1653 from "module_1653" /* 1653 */;
@@ -13,9 +13,9 @@ import timing_timing from "timing/timing" /* 5123 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9721 */;
 import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9726 */;
 import MediaShareActions from "MediaShareActions" /* 10032 */;
-import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 10148 */;
-import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10152 */;
-import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 10153 */;
+import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 10153 */;
+import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10157 */;
+import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 10158 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

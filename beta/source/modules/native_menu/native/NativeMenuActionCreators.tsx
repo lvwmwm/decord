@@ -1,9 +1,9 @@
-// Module ID: 11635
-// Function ID: 11636
+// Module ID: 11640
+// Function ID: 11641
 // Name: NativeMenuActionCreators
 // Dependencies: [5129, 5130, 572, 2]
 
-// Module 11635 (NativeMenuActionCreators)
+// Module 11640 (NativeMenuActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;

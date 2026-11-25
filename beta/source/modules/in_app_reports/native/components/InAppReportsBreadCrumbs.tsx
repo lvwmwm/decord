@@ -1,10 +1,10 @@
-// Module ID: 10355
-// Function ID: 10356
+// Module ID: 10360
+// Function ID: 10361
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [19, 17, 21, 4913, 575, 12, 5504, 10179, 1112, 2958, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 12, 5504, 10184, 1112, 2958, 2]
 // Exports: default
 
-// Module 10355 (InAppReportsBreadCrumbs)
+// Module 10360 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;

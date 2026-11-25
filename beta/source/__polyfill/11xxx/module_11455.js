@@ -1,9 +1,9 @@
 // Module ID: 11455
 // Function ID: 11456
-// Dependencies: [41, 42, 93, 95, 98, 11434]
+// Dependencies: [41, 42, 93, 95, 98, 11439]
 
 // Module 11455
-import _mod11434 from "module_11434" /* 11434 */;
+import _mod11439 from "module_11439" /* 11439 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -25,12 +25,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UnlikelyFormatFilter {
-  constructor(strictMode) {
+class ENUnlikelyFormatFilter {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UnlikelyFormatFilter);
-    const obj = _getPrototypeOf(UnlikelyFormatFilter);
+    _classCallCheck(this, ENUnlikelyFormatFilter);
+    const obj = _getPrototypeOf(ENUnlikelyFormatFilter);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -39,71 +39,49 @@ class UnlikelyFormatFilter {
     } else {
       constructResult = obj.apply(self, undefined);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(UnlikelyFormatFilter, _mod11434.Filter);
+_inherits(ENUnlikelyFormatFilter, _mod11439.Filter);
 const entry = {
   key: "isValid",
-  value: function isValid(debug, text) {
-    let flag;
-    const str = text.text;
-    const str2 = str.replace(" ", "");
-    if (str2.match(/^\d*(\.\d*)?$/)) {
-      debug.debug(() => {
-        console.log("Removing unlikely result '" + text.text + "'");
-      });
-      flag = false;
+  value: function isValid(text, text2) {
+    let closure_0 = text2;
+    const str = text2.text;
+    const str2 = str.trim();
+    const str3 = text.text;
+    if (str2 === str3.trim()) {
+      return true;
     } else {
-      const start = text.start;
-      if (start.isValidDate()) {
-        if (text.end) {
-          let flag2;
-          const end = text.end;
-          if (!end.isValidDate()) {
-            debug.debug(() => {
-              console.log("Removing invalid result: " + text + " (" + text.end + ")");
-            });
-            flag2 = false;
-          }
-          flag = flag2;
+      if ("may" === str2.toLowerCase()) {
+        const str4 = text.text;
+        const str5 = str4.substring(0, text2.index);
+        const str6 = str5.trim();
+        if (!str6.match(/\b(in)$/i)) {
+          text.debug(() => {
+            console.log("Removing unlikely result: " + text2);
+          });
+          return false;
         }
-        const self = this;
-        const strictMode = this.strictMode;
-        let isStrictModeValidResult = !strictMode;
-        if (strictMode) {
-          isStrictModeValidResult = self.isStrictModeValid(debug, text);
-        }
-        flag2 = isStrictModeValidResult;
-      } else {
-        debug.debug(() => {
-          console.log("Removing invalid result: " + text + " (" + text.start + ")");
-        });
-        flag = false;
       }
+      const formatted = str2.toLowerCase();
+      const endsWithResult = formatted.endsWith("the second");
+      let flag2 = !endsWithResult;
+      if (endsWithResult) {
+        flag2 = false;
+        const str8 = text.text;
+        const str9 = str8.substring(text2.index + text2.text.length);
+        if (str9.trim().length > 0) {
+          text.debug(() => {
+            console.log("Removing unlikely result: " + text2);
+          });
+          flag2 = false;
+        }
+      }
+      return flag2;
     }
-    return flag;
   }
 };
-const items = [
-  entry,
-  {
-    key: "isStrictModeValid",
-    value: function isStrictModeValid(debug, start) {
-      start = start.start;
-      const result = start.isOnlyWeekdayComponent();
-      let flag = !result;
-      if (result) {
-        debug.debug(() => {
-          console.log("(Strict) Removing weekday only component: " + start + " (" + start.end + ")");
-        });
-        flag = false;
-      }
-      return flag;
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(UnlikelyFormatFilter, items);
+export default _createClass(ENUnlikelyFormatFilter, items);

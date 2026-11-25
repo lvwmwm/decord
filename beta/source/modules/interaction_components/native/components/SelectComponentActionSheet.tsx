@@ -1,10 +1,10 @@
-// Module ID: 12354
-// Function ID: 12355
+// Module ID: 12350
+// Function ID: 12351
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 4762, 4816, 5142, 21, 4913, 575, 7515, 1112, 5511, 7780, 4975, 7045, 7336, 10388, 5488, 4922, 1628, 1494, 5467, 504, 5127, 5141, 7490, 2]
+// Dependencies: [19, 17, 4762, 4816, 5142, 21, 4913, 575, 7515, 1112, 5511, 7780, 4975, 7045, 7336, 10393, 5488, 4922, 1628, 1494, 5467, 504, 5127, 5141, 7490, 2]
 // Exports: default
 
-// Module 12354 (SelectComponentActionSheet)
+// Module 12350 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 4975 */;
@@ -235,7 +235,7 @@ function SelectionOptionItem(item) {
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(10388).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(10393).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;

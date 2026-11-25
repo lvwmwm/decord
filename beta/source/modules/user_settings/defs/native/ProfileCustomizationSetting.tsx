@@ -1,12 +1,12 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 15835
+// Function ID: 15836
 // Name: ProfileCustomizationSetting
-// Dependencies: [1071, 11937, 1112, 15826, 2]
+// Dependencies: [1071, 11942, 1112, 15836, 2]
 
-// Module 15825 (ProfileCustomizationSetting)
+// Module 15835 (ProfileCustomizationSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

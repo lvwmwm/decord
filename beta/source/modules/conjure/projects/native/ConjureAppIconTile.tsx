@@ -1,14 +1,14 @@
-// Module ID: 11871
-// Function ID: 11872
+// Module ID: 11876
+// Function ID: 11877
 // Name: ConjureAppIconTile
-// Dependencies: [19, 17, 21, 4913, 11872, 11874, 5504, 7704, 2]
+// Dependencies: [19, 17, 21, 4913, 11877, 11879, 5504, 7704, 2]
 // Exports: default
 
-// Module 11871 (ConjureAppIconTile)
+// Module 11876 (ConjureAppIconTile)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useConjureDefaultAppIconDefault from "useConjureDefaultAppIcon" /* 11872 */;
-import useConjureProjectIcon from "useConjureProjectIcon" /* 11874 */;
+import useConjureDefaultAppIconDefault from "useConjureDefaultAppIcon" /* 11877 */;
+import useConjureProjectIcon from "useConjureProjectIcon" /* 11879 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

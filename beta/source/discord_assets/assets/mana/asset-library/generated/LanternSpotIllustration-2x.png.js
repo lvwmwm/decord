@@ -1,8 +1,8 @@
-// Module ID: 19615
-// Function ID: 19616
+// Module ID: 19626
+// Function ID: 19627
 // Dependencies: [2]
 
-// Module 19615
+// Module 19626
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LanternSpotIllustration-2x.png.js");

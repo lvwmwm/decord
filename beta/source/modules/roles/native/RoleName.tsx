@@ -1,10 +1,10 @@
-// Module ID: 12375
-// Function ID: 12376
+// Module ID: 12371
+// Function ID: 12372
 // Name: RoleName
 // Dependencies: [19, 17, 4914, 21, 4913, 575, 504, 8699, 1186, 5504, 2]
 // Exports: default
 
-// Module 12375 (RoleName)
+// Module 12371 (RoleName)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

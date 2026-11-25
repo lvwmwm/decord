@@ -1,10 +1,10 @@
-// Module ID: 11873
-// Function ID: 11874
+// Module ID: 11878
+// Function ID: 11879
 // Name: conjureDefaultAppIcon
 // Dependencies: [9746, 9463, 4910, 671, 2]
 // Exports: getConjureDefaultAppIcon, getConjureDefaultAppIconColors
 
-// Module 11873 (conjureDefaultAppIcon)
+// Module 11878 (conjureDefaultAppIcon)
 import _modDef671 from "module_671" /* 671 */;
 import ColorUtils from "ColorUtils" /* 4910 */;
 import _modDef9463 from "module_9463" /* 9463 */;

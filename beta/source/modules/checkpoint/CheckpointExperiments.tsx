@@ -49,11 +49,11 @@ export function useIsCheckpointIntroEnabled(location) {
   const obj = { location };
   return closure_3.useConfig(obj).enabled;
 }
-export function isCheckpointCharacterSaveEnabled(message_long_press) {
-  const obj = { location: message_long_press };
+export function isCheckpointCharacterSaveEnabled(location) {
+  const obj = { location };
   let canSaveCharacter = closure_1.getConfig(obj).enabled;
   if (canSaveCharacter) {
-    const obj2 = { location: message_long_press };
+    const obj2 = { location };
     canSaveCharacter = config.getConfig(obj2).canSaveCharacter;
   }
   return canSaveCharacter;

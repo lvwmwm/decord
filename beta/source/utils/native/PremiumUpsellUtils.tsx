@@ -1,10 +1,10 @@
-// Module ID: 10459
-// Function ID: 10460
+// Module ID: 10464
+// Function ID: 10465
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1386, 1071, 1388, 21, 10460, 1112, 10461, 10462, 10463, 2173, 10464, 10465, 10466, 5861, 10467, 2119, 8859, 10505, 5098, 1255, 5127, 9099, 2]
+// Dependencies: [19, 1386, 1071, 1388, 21, 10465, 1112, 10466, 10467, 10468, 2173, 10469, 10470, 10471, 5861, 10472, 2119, 8859, 10510, 5098, 1255, 5127, 9099, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
-// Module 10459 (PremiumUpsellUtils)
+// Module 10464 (PremiumUpsellUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl20 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -13,13 +13,13 @@ import PremiumUtils from "PremiumUtils" /* 2173 */;
 import ChatInputUtils from "ChatInputUtils" /* 5098 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10460 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10461 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10462 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10463 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10464 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 10465 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10505 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10465 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10466 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10467 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10468 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10469 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 10470 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10510 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
@@ -236,7 +236,7 @@ let obj = {
           importer() {
                 let imageSource;
                 let largestFileSize;
-                const promise = asyncRequire(10467, dependencyMap.paths);
+                const promise = asyncRequire(10472, dependencyMap.paths);
                 return promise.then((result) => {
                   let closure_0 = result.default;
                   return (arg0) => {

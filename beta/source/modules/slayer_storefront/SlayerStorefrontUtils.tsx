@@ -476,7 +476,7 @@ export function getPrimaryCarouselItemInfo(tenantMetadata, id) {
         let obj3;
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj3 = { primaryIconAsset: "Array", primaryIconLabel: "channel" };
+          obj3 = { primaryIconAsset: "displayName", primaryIconLabel: "isArray" };
         } else {
           const toURLSafe = URLUtilsDefault.toURLSafe;
           URLUtilsDefault;
@@ -488,7 +488,7 @@ export function getPrimaryCarouselItemInfo(tenantMetadata, id) {
       }
     }
   }
-  return { primaryIconAsset: "Array", primaryIconLabel: "channel" };
+  return { primaryIconAsset: "displayName", primaryIconLabel: "isArray" };
 }
 export function getGameItemThumbnailUrl(value2) {
   let obj = arg1;

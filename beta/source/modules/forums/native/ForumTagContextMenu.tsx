@@ -1,10 +1,10 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11620
+// Function ID: 11621
 // Name: ForumTagContextMenu
-// Dependencies: [21, 4738, 1112, 10378, 7545, 5594, 8658, 2]
+// Dependencies: [21, 4738, 1112, 10383, 7545, 5594, 8658, 2]
 // Exports: default
 
-// Module 11615 (ForumTagContextMenu)
+// Module 11620 (ForumTagContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
@@ -20,7 +20,7 @@ export default function ForumTagContextMenu(tagId) {
   const DeveloperMode = tagId(4738).DeveloperMode;
   let obj = {
     label: intl.string(tagId(1112).t["8VG6IY"]),
-    IconComponent: tagId(10378).IdIcon,
+    IconComponent: tagId(10383).IdIcon,
     action() {
       const obj = ClipboardUtils;
       obj.copy(tagId);

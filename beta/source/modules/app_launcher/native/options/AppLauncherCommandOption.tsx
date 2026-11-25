@@ -1,24 +1,24 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 13036
+// Function ID: 13037
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1499, 21, 4913, 575, 2117, 13034, 13040, 13042, 13045, 13047, 13048, 13052, 6676, 13055, 13056, 13062, 7030, 7231, 2]
+// Dependencies: [19, 17, 1499, 21, 4913, 575, 2117, 13037, 13043, 13045, 13048, 13050, 13051, 13055, 6676, 13058, 13059, 13065, 7030, 7231, 2]
 // Exports: default
 
-// Module 13033 (AppLauncherCommandOption)
+// Module 13036 (AppLauncherCommandOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6676 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 13034 */;
-import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 13040 */;
-import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 13042 */;
-import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 13045 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 13047 */;
-import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 13048 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13052 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 13055 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 13056 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 13062 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 13037 */;
+import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 13043 */;
+import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 13045 */;
+import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 13048 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 13050 */;
+import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 13051 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13055 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 13058 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 13059 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 13065 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

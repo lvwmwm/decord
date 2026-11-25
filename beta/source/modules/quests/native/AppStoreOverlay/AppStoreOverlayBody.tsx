@@ -1,7 +1,7 @@
 // Module ID: 10005
 // Function ID: 10006
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1071, 5142, 21, 4913, 575, 8421, 5600, 5504, 10006, 1112, 10013, 10607, 1628, 5477, 671, 5468, 5511, 2]
+// Dependencies: [19, 17, 1071, 5142, 21, 4913, 575, 8421, 5600, 5504, 10006, 1112, 10013, 10612, 1628, 5477, 671, 5468, 5511, 2]
 // Exports: AppStoreOverlayBody, AppStoreOverlayFooter
 
 // Module 10005 (AppStoreOverlayBody)
@@ -14,7 +14,7 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import AnalyticsActions from "AnalyticsActions" /* 8421 */;
 import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 10006 */;
 import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 10013 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 10607 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 10612 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

@@ -1,11 +1,11 @@
-// Module ID: 10701
-// Function ID: 10702
+// Module ID: 10706
+// Function ID: 10707
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 2164, 2142, 4762, 10665, 10702, 10703, 2]
+// Dependencies: [5, 2164, 2142, 4762, 10670, 10707, 10708, 2]
 // Exports: default
 
-// Module 10701 (getCachedOrFetchActivityApplicationForLaunch)
-import fetchShelf from "fetchShelf" /* 10665 */;
+// Module 10706 (getCachedOrFetchActivityApplicationForLaunch)
+import fetchShelf from "fetchShelf" /* 10670 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import ApplicationRecord from "ApplicationRecord" /* 2142 */;

@@ -1,28 +1,28 @@
-// Module ID: 16457
-// Function ID: 16458
+// Module ID: 16467
+// Function ID: 16468
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 2188, 16421, 21, 575, 4913, 5517, 504, 10126, 9023, 5504, 1112, 16422, 16437, 16440, 16423, 9553, 8956, 16458, 16449, 16439, 671, 16431, 16432, 5468, 13229, 2]
+// Dependencies: [19, 17, 2188, 16431, 21, 575, 4913, 5517, 504, 10131, 9023, 5504, 1112, 16432, 16447, 16450, 16433, 9553, 8956, 16468, 16459, 16449, 671, 16441, 16442, 5468, 13232, 2]
 // Exports: default
 
-// Module 16457 (OrbsArcadeRewardShelf)
+// Module 16467 (OrbsArcadeRewardShelf)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl4 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import ButtonConstants from "ButtonConstants" /* 5517 */;
 import useCountdownDefault from "useCountdown" /* 8956 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16422 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16423 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 16431 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16432 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16437 */;
-import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16440 */;
-import OrbsArcadeWindowUtils from "OrbsArcadeWindowUtils" /* 16449 */;
-import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16458 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16432 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16433 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 16441 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 16442 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 16447 */;
+import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 16450 */;
+import OrbsArcadeWindowUtils from "OrbsArcadeWindowUtils" /* 16459 */;
+import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 16468 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16421 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16431 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ function OrbsArcadeClaimableRewardsShelfContent(rewards) {
       return closure_1_9(OrbsArcadePileReward, obj, reward.id);
     })
   };
-  const Pile = rewards(10126).Pile;
+  const Pile = rewards(10131).Pile;
   items2 = [closure_9(Pile, obj3), ];
   const obj4 = { style: tmp.rewardShelfCopy, children: items3 };
   const obj5 = { variant: "heading-xs/semibold", color: "text-default", children: intl.string(rewards(1112).t.DCCcdz) };

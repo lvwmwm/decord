@@ -1,16 +1,16 @@
-// Module ID: 16891
-// Function ID: 16892
+// Module ID: 16901
+// Function ID: 16902
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1071, 13280, 21, 4913, 575, 13281, 1255, 7047, 10364, 5504, 1112, 5511, 2]
+// Dependencies: [19, 17, 1071, 13283, 21, 4913, 575, 13284, 1255, 7047, 10369, 5504, 1112, 5511, 2]
 // Exports: default
 
-// Module 16891 (NotificationPermissionSettingsHeader)
+// Module 16901 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13280 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13283 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ export default function NotificationPermissionSettingsHeader() {
   let obj4;
   let obj6;
   let tmp = closure_13();
-  let obj = canSeePushNotificationNudge(13281);
+  let obj = canSeePushNotificationNudge(13284);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = react.useEffect(() => {
@@ -75,7 +75,7 @@ export default function NotificationPermissionSettingsHeader() {
     const obj5 = { style: tmp.iconCircle, children: closure_11(BellSlashIcon, obj6) };
     Card = tmp2(7047).Card;
     obj6 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    BellSlashIcon = tmp2(10364).BellSlashIcon;
+    BellSlashIcon = tmp2(10369).BellSlashIcon;
     items1 = [closure_11(View, obj5), , , ];
     const obj7 = { variant: "heading-lg/semibold", color: "text-default", children: intl.string(canSeePushNotificationNudge(1112).t.MUwOvc) };
     const Text = tmp2(5504).Text;

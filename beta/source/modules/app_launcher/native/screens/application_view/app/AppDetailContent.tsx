@@ -1,10 +1,10 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 12997
+// Function ID: 12998
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 10436, 1499, 1071, 5937, 21, 4913, 12995, 575, 12922, 7045, 12106, 12972, 8314, 10694, 1112, 1628, 10682, 2117, 13003, 10674, 5565, 12919, 1378, 13005, 5504, 13007, 12969, 13009, 13015, 1186, 13018, 13020, 5127, 5650, 10695, 2]
+// Dependencies: [5, 19, 17, 10441, 1499, 1071, 5937, 21, 4913, 12998, 575, 12925, 7045, 12111, 12975, 8314, 10699, 1112, 1628, 10687, 2117, 13006, 10679, 5565, 12922, 1378, 13008, 5504, 13010, 12972, 13012, 13018, 1186, 13021, 13023, 5127, 5650, 10700, 2]
 // Exports: default
 
-// Module 12994 (AppDetailContent)
+// Module 12997 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -15,17 +15,17 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
 import TableRow2 from "TableRow" /* 7045 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8314 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10674 */;
-import AppLauncherContext from "AppLauncherContext" /* 12106 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12919 */;
-import react2 from "react" /* 12922 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 12972 */;
-import Header from "Header" /* 12995 */;
-import BillIcon from "BillIcon" /* 13005 */;
-import ShopIcon from "ShopIcon" /* 13007 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10679 */;
+import AppLauncherContext from "AppLauncherContext" /* 12111 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12922 */;
+import react2 from "react" /* 12925 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 12975 */;
+import Header from "Header" /* 12998 */;
+import BillIcon from "BillIcon" /* 13008 */;
+import ShopIcon from "ShopIcon" /* 13010 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10436 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10441 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -92,7 +92,7 @@ class CommandRow {
     let onPressSend;
     ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
     let tmp = command;
-    let obj = command(12106);
+    let obj = command(12111);
     const entrypoint = obj.useAppLauncherContext().entrypoint;
     const tmp3 = onPressSend(true, true);
     hasOptions(context, true, true);
@@ -112,8 +112,8 @@ class CommandRow {
       sectionName
     };
     fn = undefined;
-    const useCommandRowSend = command(12972).useCommandRowSend;
-    const tmp5 = command(12972);
+    const useCommandRowSend = command(12975).useCommandRowSend;
+    const tmp5 = command(12975);
     if (installOnDemand) {
       let closure_0 = _asyncToGenerator(async (arg0, value) => {
         let obj5;

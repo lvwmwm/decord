@@ -1,10 +1,10 @@
-// Module ID: 16759
-// Function ID: 16760
+// Module ID: 16769
+// Function ID: 16770
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 16748, 1071, 21, 4913, 575, 8149, 9461, 16749, 1112, 1089, 5129, 5127, 15838, 1255, 5141, 16744, 3248, 5511, 16753, 2]
+// Dependencies: [32, 19, 17, 16758, 1071, 21, 4913, 575, 8149, 9461, 16759, 1112, 1089, 5129, 5127, 15848, 1255, 5141, 16754, 3248, 5511, 16763, 2]
 // Exports: default
 
-// Module 16759 (DisplayNameStylesColorPickerSheet)
+// Module 16769 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -12,11 +12,11 @@ import _modDef3248 from "module_3248" /* 3248 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 9461 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15838 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16744 */;
-import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 16748 */;
-import useColorPresetsWithA11yLabelsDefault from "useColorPresetsWithA11yLabels" /* 16749 */;
-import DisplayNameStylesCustomColorButtonDefault from "DisplayNameStylesCustomColorButton" /* 16753 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15848 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16754 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 16758 */;
+import useColorPresetsWithA11yLabelsDefault from "useColorPresetsWithA11yLabels" /* 16759 */;
+import DisplayNameStylesCustomColorButtonDefault from "DisplayNameStylesCustomColorButton" /* 16763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

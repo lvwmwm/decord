@@ -1,10 +1,10 @@
-// Module ID: 12249
-// Function ID: 12250
+// Module ID: 12245
+// Function ID: 12246
 // Name: ModalFooter
 // Dependencies: [19, 17, 21, 4913, 575, 5488, 2]
 // Exports: ModalFooter
 
-// Module 12249 (ModalFooter)
+// Module 12245 (ModalFooter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

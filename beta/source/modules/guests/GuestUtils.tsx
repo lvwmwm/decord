@@ -1,9 +1,9 @@
-// Module ID: 10415
-// Function ID: 10416
+// Module ID: 10420
+// Function ID: 10421
 // Name: GuestUtils
 // Dependencies: [4831, 1404, 7279, 2]
 
-// Module 10415 (GuestUtils)
+// Module 10420 (GuestUtils)
 import FlagUtils from "FlagUtils" /* 1404 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
 import size from "module_2" /* 2 */;

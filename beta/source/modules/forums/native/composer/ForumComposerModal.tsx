@@ -1,10 +1,10 @@
-// Module ID: 11244
-// Function ID: 11245
+// Module ID: 11249
+// Function ID: 11250
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 10858, 4762, 8315, 8467, 8462, 21, 4913, 575, 2018, 5861, 1112, 8514, 10453, 7520, 504, 11245, 11243, 1498, 1626, 11, 8461, 7101, 11246, 2]
+// Dependencies: [19, 17, 10863, 4762, 8315, 8467, 8462, 21, 4913, 575, 2018, 5861, 1112, 8514, 10458, 7520, 504, 11250, 11248, 1498, 1626, 11, 8461, 7101, 11251, 2]
 // Exports: default
 
-// Module 11244 (ForumComposerModal)
+// Module 11249 (ForumComposerModal)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -16,10 +16,10 @@ import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2018 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
 import DraftStore2 from "DraftStore" /* 8315 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 8514 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10453 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 11243 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10458 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 11248 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10858 */;
+import NativeMenuStore from "NativeMenuStore" /* 10863 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8467 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8462 */;

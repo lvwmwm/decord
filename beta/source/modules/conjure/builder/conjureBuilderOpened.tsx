@@ -1,10 +1,10 @@
-// Module ID: 18236
-// Function ID: 18237
+// Module ID: 18247
+// Function ID: 18248
 // Name: conjureBuilderOpened
 // Dependencies: [19, 6621, 504, 6986, 2]
 // Exports: useTrackConjureBuilderOpened
 
-// Module 18236 (conjureBuilderOpened)
+// Module 18247 (conjureBuilderOpened)
 import ConjureAnalytics from "ConjureAnalytics" /* 6986 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;

@@ -1,13 +1,13 @@
-// Module ID: 17618
-// Function ID: 17619
+// Module ID: 17628
+// Function ID: 17629
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 5504, 575, 4913, 1653, 10598, 9659, 1112, 2]
+// Dependencies: [19, 17, 21, 5504, 575, 4913, 1653, 10603, 9659, 1112, 2]
 
-// Module 17618 (MessagesItemSuggestedFriendsHeader)
+// Module 17628 (MessagesItemSuggestedFriendsHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10598 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10603 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

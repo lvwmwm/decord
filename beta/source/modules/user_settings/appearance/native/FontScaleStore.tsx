@@ -1,9 +1,9 @@
-// Module ID: 16668
-// Function ID: 16669
+// Module ID: 16678
+// Function ID: 16679
 // Name: FontScaleStore
 // Dependencies: [1378, 5644, 1257, 2]
 
-// Module 16668 (FontScaleStore)
+// Module 16678 (FontScaleStore)
 import react_nativeDefault from "react-native" /* 5644 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import module_1257 from "module_1257" /* 1257 */;

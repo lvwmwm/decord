@@ -1,10 +1,10 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 11265
+// Function ID: 11266
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 4766, 4843, 4855, 1386, 1071, 11261, 5938, 21, 4913, 575, 5529, 8821, 6556, 4969, 7713, 2]
+// Dependencies: [19, 17, 4766, 4843, 4855, 1386, 1071, 11266, 5938, 21, 4913, 575, 5529, 8821, 6556, 4969, 7713, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 11260 (autocompleter/AutocompleteUtils)
+// Module 11265 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,7 +18,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11261 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11266 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5938 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

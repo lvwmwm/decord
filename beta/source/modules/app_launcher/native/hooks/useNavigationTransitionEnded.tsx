@@ -1,10 +1,10 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 12996
+// Function ID: 12997
 // Name: useNavigationTransitionEnded
 // Dependencies: [32, 19, 1499, 1501, 2]
 // Exports: default
 
-// Module 12993 (useNavigationTransitionEnded)
+// Module 12996 (useNavigationTransitionEnded)
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import Link from "Link" /* 1501 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

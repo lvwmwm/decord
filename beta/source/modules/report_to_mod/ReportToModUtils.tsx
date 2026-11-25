@@ -1,10 +1,10 @@
-// Module ID: 11248
-// Function ID: 11249
+// Module ID: 11253
+// Function ID: 11254
 // Name: ReportToModUtils
-// Dependencies: [8462, 4762, 4784, 5964, 1386, 11249, 10175, 6889, 8328, 6887, 1083, 4850, 8449, 8224, 8228, 11250, 2]
+// Dependencies: [8462, 4762, 4784, 5964, 1386, 11254, 10180, 6889, 8328, 6887, 1083, 4850, 8449, 8224, 8228, 11255, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 11248 (ReportToModUtils)
+// Module 11253 (ReportToModUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6887 */;
@@ -12,9 +12,9 @@ import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReporting
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8224 */;
 import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 8328 */;
 import SelfModUtils from "SelfModUtils" /* 8449 */;
-import ReportUtils from "ReportUtils" /* 10175 */;
-import ReportToModConstants from "ReportToModConstants" /* 11249 */;
-import ForumChannelTypes from "ForumChannelTypes" /* 11250 */;
+import ReportUtils from "ReportUtils" /* 10180 */;
+import ReportToModConstants from "ReportToModConstants" /* 11254 */;
+import ForumChannelTypes from "ForumChannelTypes" /* 11255 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8462 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildStore from "GuildStore" /* 4784 */;

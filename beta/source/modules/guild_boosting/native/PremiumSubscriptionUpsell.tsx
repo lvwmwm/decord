@@ -1,10 +1,10 @@
-// Module ID: 14145
-// Function ID: 14146
+// Module ID: 14148
+// Function ID: 14149
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2188, 1386, 1071, 8951, 1388, 21, 4913, 575, 7340, 1112, 2025, 504, 2173, 5468, 1091, 5504, 5600, 14146, 14147, 9504, 5511, 2]
+// Dependencies: [19, 17, 2188, 1386, 1071, 8951, 1388, 21, 4913, 575, 7340, 1112, 2025, 504, 2173, 5468, 1091, 5504, 5600, 14149, 14150, 9504, 5511, 2]
 // Exports: default
 
-// Module 14145 (PremiumSubscriptionUpsell)
+// Module 14148 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -17,8 +17,8 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7340 */;
 import ColorConstants from "ColorConstants" /* 8951 */;
 import PremiumFeatureListDefault from "PremiumFeatureList" /* 9504 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14146 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14147 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14149 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14150 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2188 */;

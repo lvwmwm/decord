@@ -1,10 +1,10 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 11993
+// Function ID: 11994
 // Name: handleMessagesTapImage
-// Dependencies: [8339, 4855, 1386, 1071, 10026, 10528, 1094, 8223, 5592, 5976, 8217, 5529, 7636, 2]
+// Dependencies: [8339, 4855, 1386, 1071, 10026, 10533, 1094, 8223, 5592, 5976, 8217, 5529, 7636, 2]
 // Exports: handleMessagesTapImage
 
-// Module 11988 (handleMessagesTapImage)
+// Module 11993 (handleMessagesTapImage)
 import Constants from "Constants" /* 1071 */;
 import LinkingDefault from "Linking" /* 5592 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8223 */;
@@ -241,6 +241,6 @@ export function handleMessagesTapImage(tapImageData) {
       tmp12 = message1;
     }
   } else {
-    embedId(10528);
+    embedId(10533);
   }
 }

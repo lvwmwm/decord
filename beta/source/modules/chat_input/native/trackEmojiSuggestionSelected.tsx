@@ -1,10 +1,10 @@
-// Module ID: 11291
-// Function ID: 11292
+// Module ID: 11296
+// Function ID: 11297
 // Name: trackEmojiSuggestionSelected
 // Dependencies: [1071, 5650, 2]
 // Exports: default
 
-// Module 11291 (trackEmojiSuggestionSelected)
+// Module 11296 (trackEmojiSuggestionSelected)
 import Constants from "Constants" /* 1071 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
 import size from "module_2" /* 2 */;

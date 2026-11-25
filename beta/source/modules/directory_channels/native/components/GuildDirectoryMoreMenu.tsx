@@ -1,19 +1,19 @@
-// Module ID: 13167
-// Function ID: 13168
+// Module ID: 13170
+// Function ID: 13171
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [19, 21, 13161, 13168, 5861, 1112, 13170, 1186, 10176, 11242, 5620, 10269, 8658, 7591, 7022, 575, 2]
+// Dependencies: [19, 21, 13164, 13171, 5861, 1112, 13173, 1186, 10181, 11247, 5620, 10274, 8658, 7591, 7022, 575, 2]
 // Exports: default
 
-// Module 13167 (GuildDirectoryMoreMenu)
+// Module 13170 (GuildDirectoryMoreMenu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
-import ReportModals from "ReportModals" /* 10176 */;
-import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 13161 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13168 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13170 */;
+import ReportModals from "ReportModals" /* 10181 */;
+import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 13164 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 13171 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13173 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ export default function GuildDirectoryMoreMenu(entry) {
   if (tmp2.canEdit) {
     let obj = {
       label: intl.string(entry(1112).t.XnuOvN),
-      IconComponent: entry(11242).PencilIcon,
+      IconComponent: entry(11247).PencilIcon,
       action: function handleEdit() {
           const obj = GuildDirectoryEditDescriptionModalActionCreatorsDefault;
           const obj2 = { entry };
@@ -89,7 +89,7 @@ export default function GuildDirectoryMoreMenu(entry) {
     const push3 = items.push;
     const obj3 = {
       label: intl3.string(entry(1112).t.Aen9eh),
-      IconComponent: entry(10269).FlagIcon,
+      IconComponent: entry(10274).FlagIcon,
       variant: "destructive",
       action: function handleReport() {
           const obj = ReportModals;

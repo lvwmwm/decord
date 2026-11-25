@@ -1,10 +1,10 @@
-// Module ID: 13591
-// Function ID: 13592
+// Module ID: 13594
+// Function ID: 13595
 // Name: RedesignContactSyncDiscoverabilityFooter
 // Dependencies: [1071, 21, 7348, 1112, 2187, 7556, 2]
 // Exports: default
 
-// Module 13591 (RedesignContactSyncDiscoverabilityFooter)
+// Module 13594 (RedesignContactSyncDiscoverabilityFooter)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;

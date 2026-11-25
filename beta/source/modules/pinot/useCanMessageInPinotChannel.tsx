@@ -1,10 +1,10 @@
-// Module ID: 11855
-// Function ID: 11856
+// Module ID: 11860
+// Function ID: 11861
 // Name: useCanMessageInPinotChannel
 // Dependencies: [4845, 1071, 504, 2]
 // Exports: useCanMessageInPinotChannel
 
-// Module 11855 (useCanMessageInPinotChannel)
+// Module 11860 (useCanMessageInPinotChannel)
 import Constants from "Constants" /* 1071 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import size from "module_2" /* 2 */;

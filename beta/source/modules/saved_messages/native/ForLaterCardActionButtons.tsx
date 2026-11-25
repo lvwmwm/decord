@@ -1,10 +1,10 @@
-// Module ID: 11696
-// Function ID: 11697
+// Module ID: 11701
+// Function ID: 11702
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4913, 5127, 11697, 2119, 11690, 11700, 1112, 10141, 7151, 11701, 11242, 8658, 7591, 7023, 2]
+// Dependencies: [19, 17, 21, 4913, 5127, 11702, 2119, 11695, 11705, 1112, 10146, 7151, 11706, 11247, 8658, 7591, 7023, 2]
 // Exports: default, useForLaterCardMenuItems
 
-// Module 11696 (ForLaterCardActionButtons)
+// Module 11701 (ForLaterCardActionButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1112 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127
 import AssetRegistryDefault from "AssetRegistry" /* 7023 */;
 import IconButton2 from "IconButton" /* 7591 */;
 import ContextMenu from "ContextMenu" /* 8658 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 11690 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 11695 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ export function useForLaterCardMenuItems(savedMessage) {
   const throttledNow = savedMessage.throttledNow;
   let obj = {
     label: intl.string(savedMessage(1112).t["+TSRGD"]),
-    IconComponent: savedMessage(10141).ChatArrowRightIcon,
+    IconComponent: savedMessage(10146).ChatArrowRightIcon,
     action() {
       return jumpToMessage();
     }
@@ -74,7 +74,7 @@ export function useForLaterCardMenuItems(savedMessage) {
       channelId: savedMessage.saveData.channelId,
       messageId: savedMessage.saveData.messageId
     };
-    return obj.openLazy(asyncRequire(11697, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
+    return obj.openLazy(asyncRequire(11702, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
   }, items);
   intl = savedMessage(1112).intl;
   const items1 = [obj, ];
@@ -102,9 +102,9 @@ export function useForLaterCardMenuItems(savedMessage) {
     const t = tmp2(1112).t;
     const obj3 = { label: string2(throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1), IconComponent: PencilIcon, action: callback };
     if (throttledNow > savedMessage.saveData.dueAt) {
-      PencilIcon = tmp2(11701).BellZIcon;
+      PencilIcon = tmp2(11706).BellZIcon;
     } else {
-      PencilIcon = tmp2(11242).PencilIcon;
+      PencilIcon = tmp2(11247).PencilIcon;
     }
     unshift(obj3);
   }

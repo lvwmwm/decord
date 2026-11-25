@@ -1,12 +1,12 @@
-// Module ID: 10659
-// Function ID: 10660
+// Module ID: 10664
+// Function ID: 10665
 // Name: useBottomVoiceControlsSheetWidth
-// Dependencies: [10637, 1494, 2]
+// Dependencies: [10642, 1494, 2]
 // Exports: default
 
-// Module 10659 (useBottomVoiceControlsSheetWidth)
+// Module 10664 (useBottomVoiceControlsSheetWidth)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10637 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10642 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,9 +1,9 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12032
+// Function ID: 12033
 // Name: contentHandlers
-// Dependencies: [5, 10416, 8610, 7259, 5592, 12028, 10380, 8067, 7539, 5127, 12044, 2119, 11, 4738, 1112, 7545, 5594, 5860, 12102, 2]
+// Dependencies: [5, 10421, 8610, 7259, 5592, 12033, 10385, 8067, 7539, 5127, 12049, 2119, 11, 4738, 1112, 7545, 5594, 5860, 12107, 2]
 
-// Module 12027 (contentHandlers)
+// Module 12032 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
@@ -11,8 +11,8 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10416 */;
-import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 12102 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10421 */;
+import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 12107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = {
     let roleId;
     let roleName;
     let userId;
-    let obj = parsedUserId(10380);
+    let obj = parsedUserId(10385);
     const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
     ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
     ({ roleId, guildId } = nativeSyntheticEventData);
@@ -64,7 +64,7 @@ let obj = {
         if (null != guildId) {
           const obj3 = { guildId, roleId, channelId };
           const obj7 = ActionSheetActionCreatorsDefault;
-          obj7.openLazy(parsedUserId(2119)(12044, dependencyMap.paths), "RoleMembersActionSheet", obj3);
+          obj7.openLazy(parsedUserId(2119)(12049, dependencyMap.paths), "RoleMembersActionSheet", obj3);
         }
       }
       if ("@everyone" === roleName) {
@@ -72,7 +72,7 @@ let obj = {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           const obj4 = { guildId, roleId: obj6.castGuildIdAsEveryoneGuildRoleId(guildId), channelId };
           ActionSheetActionCreatorsDefault;
-          const tmp12 = parsedUserId(2119)(12044, dependencyMap.paths);
+          const tmp12 = parsedUserId(2119)(12049, dependencyMap.paths);
           obj6 = SnowflakeUtilsDefault;
           openLazy(tmp12, "RoleMembersActionSheet", obj4);
         }

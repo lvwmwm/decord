@@ -1,10 +1,10 @@
-// Module ID: 11364
-// Function ID: 11365
+// Module ID: 11369
+// Function ID: 11370
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 1112, 7784, 5600, 11365, 10011, 5504, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 1112, 7784, 5600, 11370, 10011, 5504, 2]
 // Exports: default
 
-// Module 11364 (GIFPickerCategoryView)
+// Module 11369 (GIFPickerCategoryView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
@@ -69,7 +69,7 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   const tmp8 = hasOwnProperty;
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-    const AnalyticsIcon = tmp3(11365).AnalyticsIcon;
+    const AnalyticsIcon = tmp3(11370).AnalyticsIcon;
     tmp10Result = tmp10(AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;

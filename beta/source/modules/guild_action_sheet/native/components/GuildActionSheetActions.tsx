@@ -1,10 +1,10 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15132
+// Function ID: 15133
 // Name: GuildActionSheetActions
-// Dependencies: [19, 17, 15123, 8325, 1230, 4780, 6664, 4819, 6619, 6552, 1386, 1071, 7468, 8000, 6553, 21, 4913, 575, 504, 7555, 1112, 13870, 6827, 4945, 4746, 8321, 5127, 6429, 11991, 2119, 13145, 5943, 7520, 7539, 9424, 1186, 10386, 15124, 1195, 4743, 7998, 15125, 7999, 9743, 5504, 4738, 7415, 7485, 15174, 15175, 8016, 7069, 7746, 7592, 12012, 12052, 15176, 12058, 2639, 12057, 15178, 15184, 5862, 38, 15121, 11117, 11116, 6663, 11997, 15185, 10176, 8765, 12366, 7545, 5594, 1412, 2]
+// Dependencies: [19, 17, 15133, 8325, 1230, 4780, 6664, 4819, 6619, 6552, 1386, 1071, 7468, 8000, 6553, 21, 4913, 575, 504, 7555, 1112, 13873, 6827, 4945, 4746, 8321, 5127, 6429, 11996, 2119, 13148, 5943, 7520, 7539, 9424, 1186, 10391, 15134, 1195, 4743, 7998, 15135, 7999, 9743, 5504, 4738, 7415, 7485, 15184, 15185, 8016, 7069, 7746, 7592, 12017, 12057, 15186, 12063, 2639, 12062, 15188, 15194, 5862, 38, 15131, 11122, 11121, 6663, 12002, 15195, 10181, 8765, 12362, 7545, 5594, 1412, 2]
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetGameOrganizationActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction, handleLeaveServer
 
-// Module 15122 (GuildActionSheetActions)
+// Module 15132 (GuildActionSheetActions)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -33,17 +33,17 @@ import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8016 */;
 import ChannelListState from "ChannelListState" /* 8321 */;
 import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8765 */;
 import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 9424 */;
-import ReportModals from "ReportModals" /* 10176 */;
-import OptInOnboardingUtils from "OptInOnboardingUtils" /* 11997 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 12012 */;
-import useCanInviteToLinkedGameOrganizationDefault from "useCanInviteToLinkedGameOrganization" /* 12052 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12058 */;
-import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 13870 */;
-import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableForGuild" /* 15124 */;
-import markGuildsAsReadDefault from "markGuildsAsRead" /* 15174 */;
-import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 15185 */;
+import ReportModals from "ReportModals" /* 10181 */;
+import OptInOnboardingUtils from "OptInOnboardingUtils" /* 12002 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 12017 */;
+import useCanInviteToLinkedGameOrganizationDefault from "useCanInviteToLinkedGameOrganization" /* 12057 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12063 */;
+import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 13873 */;
+import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableForGuild" /* 15134 */;
+import markGuildsAsReadDefault from "markGuildsAsRead" /* 15184 */;
+import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 15195 */;
 import react from "react" /* 19 */;
-import GameOrganizationStore from "GameOrganizationStore" /* 15123 */;
+import GameOrganizationStore from "GameOrganizationStore" /* 15133 */;
 import NewChannelsStore from "NewChannelsStore" /* 8325 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import GuildRecord from "GuildRecord" /* 4780 */;
@@ -74,7 +74,7 @@ let obj3;
 let tmp;
 let tmp2;
 const UserSettings = tmp(4738);
-const DiscordTagDefault = tmp2(10386);
+const DiscordTagDefault = tmp2(10391);
 function HideMutedChannelsOption(guild) {
   let intl;
   guild = guild.guild;
@@ -112,7 +112,7 @@ function BrowseChannelsOption(guild) {
     obj.hideActionSheet();
     const obj2 = ModalActionCreatorsDefault;
     const obj3 = { guildId: guild.id };
-    obj2.pushLazy(asyncRequire(11991, dependencyMap.paths), obj3, closure_19);
+    obj2.pushLazy(asyncRequire(11996, dependencyMap.paths), obj3, closure_19);
   }, items2);
   let tmp9Result = null;
   if (features.has(constants2.COMMUNITY)) {
@@ -132,7 +132,7 @@ function BrowseChannelsOption(guild) {
       }
       tmp9Result = tmp9(tmp10, obj4);
     }
-    tmp9Result2 = tmp9(tmp3(13145).NewBadge, {});
+    tmp9Result2 = tmp9(tmp3(13148).NewBadge, {});
   }
   return tmp9Result;
 }
@@ -356,7 +356,7 @@ export function GuildActionSheetPrimaryActions(guild) {
   let intl3;
   let intl4;
   guild = guild.guild;
-  let obj = guild(15175);
+  let obj = guild(15185);
   const canManageChannels = obj.useGuildActionSheetPermissions(guild).canManageChannels;
   const tmp3 = useCanCreateAnEventDefault(guild.id);
   let obj2 = guild(504);
@@ -450,8 +450,8 @@ export function GuildActionSheetGameOrganizationActions(guild) {
   guild = guild.guild;
   const tmp3 = useCanInviteToLinkedGameOrganizationDefault(guild, "guild_action_sheet");
   let id = null;
-  const useLinkedGameOrganization = guild(15176).useLinkedGameOrganization;
-  guild(15176);
+  const useLinkedGameOrganization = guild(15186).useLinkedGameOrganization;
+  guild(15186);
   if (tmp3) {
     id = guild.id;
   }
@@ -480,13 +480,13 @@ export function GuildActionSheetGameOrganizationActions(guild) {
           obj.hideActionSheet();
           const obj2 = ActionSheetActionCreatorsDefault;
           const obj3 = { guildId: guild.id };
-          obj2.openLazy(asyncRequire(15178, dependencyMap.paths), "GameOrganizationInviteActionSheet", obj3);
+          obj2.openLazy(asyncRequire(15188, dependencyMap.paths), "GameOrganizationInviteActionSheet", obj3);
         }
     };
     obj2 = { displayNoun: str };
     gameOrganizationFullSubLabel = undefined;
     if (tmp8) {
-      const tmp4Result2 = guild(12057);
+      const tmp4Result2 = guild(12062);
       gameOrganizationFullSubLabel = tmp4Result2.getGameOrganizationFullSubLabel(data, stateFromStores);
     }
     let obj3 = { hasIcons: false, children: closure_22(ActionSheetRow, obj) };
@@ -512,7 +512,7 @@ export function GuildActionSheetDirectoryActions(guild) {
   items.push(closure_22(NotificationAction, { guild }));
   items.push(closure_22(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(closure_22(RestrictedGuildPrivacyOption, { guild }));
-  let obj = guild(15121);
+  let obj = guild(15131);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -568,9 +568,9 @@ export function GuildActionSheetSecondaryActions(guild) {
   guild = guild.guild;
   const currentUser = UserStore.getCurrentUser();
   const tmp2 = closure_8(guild, currentUser);
-  let obj = guild(11117);
+  let obj = guild(11122);
   const canReportRaid = obj.useCanReportRaid(guild);
-  let obj2 = guild(11116);
+  let obj2 = guild(11121);
   const guildIncidentsState = obj2.useGuildIncidentsState(guild.id);
   const items = [];
   ({ shouldShowIncidentActions, isUnderLockdown } = guildIncidentsState);
@@ -597,7 +597,7 @@ export function GuildActionSheetSecondaryActions(guild) {
   }
   items.push(closure_22(HideMutedChannelsOption, { guild }));
   items.push(closure_22(RestrictedGuildPrivacyOption, { guild }));
-  const tmp3Result = guild(15121);
+  const tmp3Result = guild(15131);
   const messageRequestPrivacyOption = tmp3Result.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -653,7 +653,7 @@ export function GuildActionSheetSecondaryActions(guild) {
           const obj2 = { source: GuildAntiRaidTypes.GuildIncidentActionSources.GUILD_PROFILE };
           const obj3 = ActionSheetActionCreatorsDefault;
           const obj4 = { guild, analyticsData: obj2 };
-          obj3.openLazy(asyncRequire(12366, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+          obj3.openLazy(asyncRequire(12362, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         }
     };
     push4(closure_22(ActionSheetRow3, obj7));

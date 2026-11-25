@@ -1,10 +1,10 @@
-// Module ID: 10356
-// Function ID: 10357
+// Module ID: 10361
+// Function ID: 10362
 // Name: InAppReportsRemediationsElement
 // Dependencies: [19, 17, 21, 4913, 575, 7348, 1112, 2]
 // Exports: default
 
-// Module 10356 (InAppReportsRemediationsElement)
+// Module 10361 (InAppReportsRemediationsElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

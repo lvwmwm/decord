@@ -1,19 +1,19 @@
-// Module ID: 19207
-// Function ID: 19208
+// Module ID: 19218
+// Function ID: 19219
 // Name: FramePanelFocusedView
-// Dependencies: [19, 6623, 6624, 5539, 21, 504, 19188, 19204, 19208, 19209, 19211, 10622, 18700, 18402, 15754, 19213, 19214, 2]
+// Dependencies: [19, 6623, 6624, 5539, 21, 504, 19199, 19215, 19219, 19220, 19222, 10627, 18711, 18413, 15764, 19224, 19225, 2]
 
-// Module 19207 (FramePanelFocusedView)
+// Module 19218 (FramePanelFocusedView)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10622 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 18402 */;
-import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 18700 */;
-import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19188 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19204 */;
-import PlayableActivityFrameHeaderDefault from "PlayableActivityFrameHeader" /* 19209 */;
-import FramePanelHeaderDefault from "FramePanelHeader" /* 19211 */;
-import PlayableFrameImpressionTrackerDefault from "PlayableFrameImpressionTracker" /* 19213 */;
-import PlayableFrameBannerDefault from "PlayableFrameBanner" /* 19214 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10627 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 18413 */;
+import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 18711 */;
+import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19199 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19215 */;
+import PlayableActivityFrameHeaderDefault from "PlayableActivityFrameHeader" /* 19220 */;
+import FramePanelHeaderDefault from "FramePanelHeader" /* 19222 */;
+import PlayableFrameImpressionTrackerDefault from "PlayableFrameImpressionTracker" /* 19224 */;
+import PlayableFrameBannerDefault from "PlayableFrameBanner" /* 19225 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6623 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp2;
-const FrameStackLevel = tmp2(15754);
+const FrameStackLevel = tmp2(15764);
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

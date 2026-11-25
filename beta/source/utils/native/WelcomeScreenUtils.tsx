@@ -1,14 +1,14 @@
-// Module ID: 13564
-// Function ID: 13565
+// Module ID: 13567
+// Function ID: 13568
 // Name: WelcomeScreenUtils
-// Dependencies: [19, 13565, 4843, 4784, 4957, 13566, 504, 13567, 5127, 13568, 2119, 2]
+// Dependencies: [19, 13568, 4843, 4784, 4957, 13569, 504, 13570, 5127, 13571, 2119, 2]
 // Exports: openWelcomeActionSheet, useShowWelcomeModal
 
-// Module 13564 (WelcomeScreenUtils)
+// Module 13567 (WelcomeScreenUtils)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 13565 */;
-import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 13567 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 13568 */;
+import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 13570 */;
 import react_mod from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 4784 */;
@@ -20,7 +20,7 @@ let _require, importDefault;
 
 let react = react_mod;
 const NO_WELCOME_SCREEN = WelcomeScreenStore2.NO_WELCOME_SCREEN;
-let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "r" };
+let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "Array" };
 const result = size.fileFinishedImporting("utils/native/WelcomeScreenUtils.tsx");
 
 export function useShowWelcomeModal(guildId, channelId) {
@@ -86,6 +86,6 @@ export function openWelcomeActionSheet(guildId) {
   const onHide = guildId.onHide;
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13568, dependencyMap.paths);
+  const tmp2 = asyncRequire(13571, dependencyMap.paths);
   openLazy(tmp2, "GuildWelcomeActionSheet" + guildId, { guildId, onHide });
 }

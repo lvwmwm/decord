@@ -1,10 +1,10 @@
-// Module ID: 11892
-// Function ID: 11893
+// Module ID: 11897
+// Function ID: 11898
 // Name: XSmallBoldIcon
 // Dependencies: [19, 21, 575, 5599, 7558, 2]
 // Exports: XSmallBoldIcon
 
-// Module 11892 (XSmallBoldIcon)
+// Module 11897 (XSmallBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;

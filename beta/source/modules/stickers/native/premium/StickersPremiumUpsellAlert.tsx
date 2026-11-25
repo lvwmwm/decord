@@ -1,19 +1,19 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 11395
+// Function ID: 11396
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 8851, 1071, 1388, 21, 11391, 1112, 575, 11392, 11393, 4913, 1186, 5504, 9107, 9494, 1494, 7520, 5932, 1255, 9099, 7030, 7032, 5600, 11394, 2]
+// Dependencies: [19, 17, 8851, 1071, 1388, 21, 11396, 1112, 575, 11397, 11398, 4913, 1186, 5504, 9107, 9494, 1494, 7520, 5932, 1255, 9099, 7030, 7032, 5600, 11399, 2]
 // Exports: default
 
-// Module 11390 (StickersPremiumUpsellAlert)
+// Module 11395 (StickersPremiumUpsellAlert)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11391 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11392 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11393 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11396 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11397 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11398 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import IAPStore from "IAPStore" /* 8851 */;
@@ -169,7 +169,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: items2
   };
-  const obj6 = { source: analyticsLocations(11394), style: tmp.imageHeader };
+  const obj6 = { source: analyticsLocations(11399), style: tmp.imageHeader };
   const tmp3Result2 = analyticsLocations(5600);
   items2 = [closure_13(tmp3Result2, obj6), , ];
   const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };

@@ -1,10 +1,10 @@
-// Module ID: 17916
-// Function ID: 17917
+// Module ID: 17926
+// Function ID: 17927
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 4766, 4855, 6552, 1386, 1082, 21, 4913, 504, 5529, 17917, 16721, 11701, 10364, 5504, 11125, 5574, 17884, 5095, 5092, 2]
+// Dependencies: [19, 17, 4766, 4855, 6552, 1386, 1082, 21, 4913, 504, 5529, 17927, 16731, 11706, 10369, 5504, 11130, 5574, 17894, 5095, 5092, 2]
 // Exports: default
 
-// Module 17916 (HomeDrawerDM)
+// Module 17926 (HomeDrawerDM)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1082 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
@@ -12,8 +12,8 @@ import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5095 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import useChannelName from "useChannelName" /* 5529 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5574 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 11125 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 16721 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 11130 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 16731 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
@@ -52,7 +52,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   });
-  const obj3 = channel(17917);
+  const obj3 = channel(17927);
   let tmp3 = useMessagePreviewsDefault(channel, { unread: obj3.useBaseChannelUnreadBadgeState(channel, false).unread });
   let closure_4 = tmp3;
   const items2 = [UserGuildSettingsStore];
@@ -97,9 +97,9 @@ function HomeDrawerDMExpandedChildren(channel) {
         isTemporary = tmp.isTemporary;
       }
       if (isTemporary) {
-        BellSlashIcon = tmp5(11701).BellZIcon;
+        BellSlashIcon = tmp5(11706).BellZIcon;
       } else {
-        BellSlashIcon = tmp5(10364).BellSlashIcon;
+        BellSlashIcon = tmp5(10369).BellSlashIcon;
       }
       tmp3 = BellSlashIcon;
     } else {
@@ -121,7 +121,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   }, items5);
-  return closure_10(channel(17884).HomeDrawerSharedItem, { title, subtitle });
+  return closure_10(channel(17894).HomeDrawerSharedItem, { title, subtitle });
 }
 const View = react_native.View;
 const isMultiUserDM = ChannelRecord.isMultiUserDM;

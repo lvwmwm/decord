@@ -1,9 +1,9 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 12067
+// Function ID: 12068
 // Name: GroupDMConstants
 // Dependencies: [2]
 
-// Module 12062 (GroupDMConstants)
+// Module 12067 (GroupDMConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/group_dm/GroupDMConstants.tsx");

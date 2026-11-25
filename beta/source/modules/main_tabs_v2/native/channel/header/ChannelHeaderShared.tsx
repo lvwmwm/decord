@@ -1,10 +1,10 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11873
+// Function ID: 11874
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4855, 1386, 21, 4913, 575, 7030, 1378, 9454, 5504, 1186, 11869, 10124, 5477, 7636, 11870, 1112, 5529, 5600, 1412, 11871, 10387, 2]
+// Dependencies: [32, 19, 17, 4855, 1386, 21, 4913, 575, 7030, 1378, 9454, 5504, 1186, 11874, 10129, 5477, 7636, 11875, 1112, 5529, 5600, 1412, 11876, 10392, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 11868 (ChannelHeaderShared)
+// Module 11873 (ChannelHeaderShared)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -17,11 +17,11 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import Pressables from "Pressables" /* 7030 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9454 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
-import BotTagDefault from "BotTag" /* 10387 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11869 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11870 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11871 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10129 */;
+import BotTagDefault from "BotTag" /* 10392 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11874 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11875 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11876 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,17 +1,17 @@
-// Module ID: 18221
-// Function ID: 18222
+// Module ID: 18232
+// Function ID: 18233
 // Name: MembersPruneActionSheet
-// Dependencies: [32, 19, 18222, 4784, 4845, 1386, 21, 572, 18223, 7553, 7515, 1112, 7347, 7349, 5504, 5511, 5127, 504, 6887, 2]
+// Dependencies: [32, 19, 18233, 4784, 4845, 1386, 21, 572, 18234, 7553, 7515, 1112, 7347, 7349, 5504, 5511, 5127, 504, 6887, 2]
 // Exports: default
 
-// Module 18221 (MembersPruneActionSheet)
+// Module 18232 (MembersPruneActionSheet)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6887 */;
-import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 18223 */;
+import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 18234 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PrunePreviewStore from "PrunePreviewStore" /* 18222 */;
+import PrunePreviewStore from "PrunePreviewStore" /* 18233 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import UserStore from "UserStore" /* 1386 */;

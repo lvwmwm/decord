@@ -1,10 +1,10 @@
-// Module ID: 18021
-// Function ID: 18022
+// Module ID: 18032
+// Function ID: 18033
 // Name: useSortedGuildIdsForSoundboard
 // Dependencies: [19, 4845, 6550, 1386, 1071, 1082, 563, 2173, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 18021 (useSortedGuildIdsForSoundboard)
+// Module 18032 (useSortedGuildIdsForSoundboard)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;

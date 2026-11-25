@@ -1,10 +1,10 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 11218
+// Function ID: 11219
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 4913, 575, 11214, 7030, 1112, 5504, 5495, 10383, 10171, 4738, 10390, 1089, 1412, 4857, 7496, 11676, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 11219, 7030, 1112, 5504, 5495, 10388, 10176, 4738, 10395, 1089, 1412, 4857, 7496, 11681, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 11213 (ForumPostReactionButton)
+// Module 11218 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
@@ -16,10 +16,10 @@ import MessageReactionsTypes from "MessageReactionsTypes" /* 5495 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Pressables from "Pressables" /* 7030 */;
 import EmojiDefault from "Emoji" /* 7496 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 10171 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10383 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 10390 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11214 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10176 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10388 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 10395 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11219 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp10;
-const AnimatedCounterDefault = tmp10(11676);
+const AnimatedCounterDefault = tmp10(11681);
 class BurstReactionButton {
   constructor(arg0) {
     let accentColor;

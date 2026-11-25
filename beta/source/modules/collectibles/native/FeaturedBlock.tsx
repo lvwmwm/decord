@@ -1,10 +1,10 @@
-// Module ID: 17316
-// Function ID: 17317
+// Module ID: 17326
+// Function ID: 17327
 // Name: FeaturedBlock
-// Dependencies: [19, 17, 21, 575, 4913, 8936, 17317, 7520, 7539, 2]
+// Dependencies: [19, 17, 21, 575, 4913, 8936, 17327, 7520, 7539, 2]
 // Exports: default
 
-// Module 17316 (FeaturedBlock)
+// Module 17326 (FeaturedBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

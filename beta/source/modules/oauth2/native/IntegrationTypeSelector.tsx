@@ -1,16 +1,16 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 14723
+// Function ID: 14724
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 4913, 575, 1412, 5528, 5603, 1112, 12471, 5600, 5504, 13015, 7348, 7045, 1186, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1412, 5528, 5603, 1112, 12467, 5600, 5504, 13018, 7348, 7045, 1186, 2]
 // Exports: default
 
-// Module 14713 (IntegrationTypeSelector)
+// Module 14723 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5528 */;
 import UserPlusIcon from "UserPlusIcon" /* 5603 */;
-import ServerIcon from "ServerIcon" /* 12471 */;
+import ServerIcon from "ServerIcon" /* 12467 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

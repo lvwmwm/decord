@@ -1,10 +1,10 @@
-// Module ID: 15699
-// Function ID: 15700
+// Module ID: 15709
+// Function ID: 15710
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: default
 
-// Module 15699 (_asyncToGenerator)
+// Module 15709 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

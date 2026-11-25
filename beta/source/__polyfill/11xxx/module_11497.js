@@ -1,9 +1,9 @@
 // Module ID: 11497
 // Function ID: 11498
-// Dependencies: [41, 42, 93, 95, 98, 11429]
+// Dependencies: [41, 42, 93, 95, 98, 11439]
 
 // Module 11497
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 11429 */;
+import _mod11439 from "module_11439" /* 11439 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -25,12 +25,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class PTTimeExpressionParser {
+class JPMergeWeekdayComponentRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, PTTimeExpressionParser);
-    const obj = _getPrototypeOf(PTTimeExpressionParser);
+    _classCallCheck(this, JPMergeWeekdayComponentRefiner);
+    const obj = _getPrototypeOf(JPMergeWeekdayComponentRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -42,21 +42,44 @@ class PTTimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(PTTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(JPMergeWeekdayComponentRefiner, _mod11439.MergingRefiner);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:ao?|\u00E0s?|das|da|de|do)\\s*)?";
+  key: "mergeResults",
+  value: function mergeResults(arg0, clone, text) {
+    const cloneResult = clone.clone();
+    cloneResult.text = clone.text + arg0 + text.text;
+    const start = cloneResult.start;
+    const start2 = text.start;
+    start.assign("weekday", start2.get("weekday"));
+    if (cloneResult.end) {
+      const end = cloneResult.end;
+      const start3 = text.start;
+      end.assign("weekday", start3.get("weekday"));
+    }
+    return cloneResult;
   }
 };
 const items = [
   entry,
   {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:o)?|\\?)\\s*";
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, start, start2) {
+      start = start.start;
+      let isCertainResult = start.isCertain("day");
+      if (isCertainResult) {
+        start2 = start2.start;
+        isCertainResult = start2.isOnlyWeekdayComponent();
+      }
+      if (isCertainResult) {
+        const start3 = start2.start;
+        isCertainResult = !start3.isCertain("hour");
+      }
+      if (isCertainResult) {
+        isCertainResult = null !== str.match(/^[,、の]?\s*$/);
+      }
+      return isCertainResult;
     }
   }
 ];
 
-export default _createClass(PTTimeExpressionParser, items);
+export default _createClass(JPMergeWeekdayComponentRefiner, items);

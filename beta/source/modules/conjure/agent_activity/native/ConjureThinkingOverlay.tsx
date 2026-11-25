@@ -1,14 +1,14 @@
-// Module ID: 18609
-// Function ID: 18610
+// Module ID: 18620
+// Function ID: 18621
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 6925, 21, 4913, 575, 18610, 18372, 504, 18374, 7047, 11336, 5504, 1112, 4190, 2]
+// Dependencies: [19, 17, 6925, 21, 4913, 575, 18621, 18383, 504, 18385, 7047, 11341, 5504, 1112, 4190, 2]
 // Exports: default
 
-// Module 18609 (ConjureThinkingOverlay)
+// Module 18620 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 575 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 18372 */;
-import conjureThinkingTail from "conjureThinkingTail" /* 18610 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 18383 */;
+import conjureThinkingTail from "conjureThinkingTail" /* 18621 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConjureChatStore from "ConjureChatStore" /* 6925 */;
@@ -104,8 +104,8 @@ export default function ConjureThinkingOverlay(projectId) {
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(18374).useConjureRevealedText;
-  projectId(18374);
+  const useConjureRevealedText = projectId(18385).useConjureRevealedText;
+  projectId(18385);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -120,7 +120,7 @@ export default function ConjureThinkingOverlay(projectId) {
   const obj5 = { style: tmp.header, children: items2 };
   Card = tmp2(7047).Card;
   const obj6 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const LightbulbIcon = tmp2(11336).LightbulbIcon;
+  const LightbulbIcon = tmp2(11341).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
   const obj7 = { variant: "body-sm/semibold", color: "text-strong", children: intl.string(_modDef4190.XXYIeI) };
   const Text = tmp2(5504).Text;

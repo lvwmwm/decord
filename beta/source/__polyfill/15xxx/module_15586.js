@@ -1,10 +1,27 @@
 // Module ID: 15586
 // Function ID: 15587
-// Dependencies: []
+// Dependencies: [15587, 15600, 15548, 15569]
 
 // Module 15586
-const tmp = Math.trunc || (function trunc(arg0) {
-  return 0 < +arg0 ? floor : ceil(+arg0);
-});
+import _mod15569 from "module_15569" /* 15569 */;
+import _mod15587 from "module_15587" /* 15587 */;
+import defineProperty2 from "defineProperty2" /* 15600 */;
 
-export default tmp;
+
+export default (arg0, arg1, arg2) => {
+  let num;
+  const arr = _mod15587(arg1);
+  const f = defineProperty2.f;
+  for (let num = 0; num < arr.length; num = num + 1) {
+    let tmp2 = arr[num];
+    let tmp3 = require;
+    let tmp5 = _mod15569(arg0, tmp2);
+    if (!tmp5) {
+      let tmp7 = arg2 && tmp3(15569)(arg2, tmp2);
+      tmp5 = tmp7;
+    }
+    if (!tmp5) {
+      let fResult = f(arg0, tmp2, tmp(arg1, tmp2));
+    }
+  }
+};

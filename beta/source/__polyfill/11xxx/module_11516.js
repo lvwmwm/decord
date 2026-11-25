@@ -1,11 +1,12 @@
 // Module ID: 11516
 // Function ID: 11517
-// Dependencies: [41, 42, 93, 95, 98, 11421, 11420, 11422]
+// Dependencies: [41, 42, 93, 95, 98, 11514, 11420, 11421, 11427]
 
 // Module 11516
-import Meridiem from "Meridiem" /* 11420 */;
-import assignSimilarDate from "assignSimilarDate" /* 11421 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11420 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 11421 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11427 */;
+import _mod11514 from "module_11514" /* 11514 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +28,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class NLCasualDateTimeParser {
+const combined = "(?:on\\s*?)?(" + _mod11514.ORDINAL_NUMBER_PATTERN + ")(?:\\s*(?:tot|\\-|\\\u2013|until|through|till|\\s)\\s*(" + _mod11514.ORDINAL_NUMBER_PATTERN + "))?(?:-|/|\\s*(?:of)?\\s*)(";
+const sum = combined + repeatedTimeunitPattern.matchAnyPattern(_mod11514.MONTH_DICTIONARY);
+const regExp = new RegExp(sum + ")(?:(?:-|/|,?\\s*)" + "(" + _mod11514.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
+class NLMonthNameMiddleEndianParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLCasualDateTimeParser);
-    const obj = _getPrototypeOf(NLCasualDateTimeParser);
+    _classCallCheck(this, NLMonthNameMiddleEndianParser);
+    const obj = _getPrototypeOf(NLMonthNameMiddleEndianParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,58 +48,45 @@ class NLCasualDateTimeParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLCasualDateTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLMonthNameMiddleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return /(gisteren|morgen|van)(ochtend|middag|namiddag|avond|nacht)(?=\W|$)/i;
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const str2 = arg1[2];
-      const formatted1 = str2.toLowerCase();
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      const refDate = createParsingComponents.refDate;
-      if ("gisteren" === formatted) {
-        const _Date = Date;
-        const self = this;
-        const self2 = this;
-        const date = new Date(refDate.getTime());
-        date.setDate(date.getDate() - 1);
-        assignSimilarDate.assignSimilarDate(parsingComponents, date);
-      } else if ("van" === formatted) {
-        assignSimilarDate.assignSimilarDate(parsingComponents, refDate);
-      } else if ("morgen" === formatted) {
-        const _Date2 = Date;
-        const self3 = this;
-        const self4 = this;
-        const date1 = new Date(refDate.getTime());
-        date1.setDate(date1.getDate() + 1);
-        assignSimilarDate.assignSimilarDate(parsingComponents, date1);
-        assignSimilarDate.implySimilarTime(parsingComponents, date1);
+    value: function innerExtract(createParsingComponents, index) {
+      const tmp3 = _mod11514.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = _mod11514.parseOrdinalNumberPattern(index[1]);
+      if (result > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const date = { day: result, month: tmp3 };
+        const parsingComponents = createParsingComponents.createParsingComponents(date);
+        if (index[4]) {
+          parsingComponents.assign("year", _mod11514.parseYear(index[4]));
+        } else {
+          parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, result, tmp3));
+        }
+        if (index[2]) {
+          const result1 = tmp(11514).parseOrdinalNumberPattern(index[2]);
+          const parsingResult = createParsingComponents.createParsingResult(index.index, index[0]);
+          parsingResult.start = parsingComponents;
+          parsingResult.end = parsingComponents.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+          return parsingResult;
+        } else {
+          return parsingComponents;
+        }
       }
-      if ("ochtend" === formatted1) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-        parsingComponents.imply("hour", 6);
-      } else if ("middag" === formatted1) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-        parsingComponents.imply("hour", 12);
-      } else if ("namiddag" === formatted1) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        parsingComponents.imply("hour", 15);
-      } else if ("avond" === formatted1) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        parsingComponents.imply("hour", 20);
-      }
-      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(NLCasualDateTimeParser, items);
+export default _createClass(NLMonthNameMiddleEndianParser, items);

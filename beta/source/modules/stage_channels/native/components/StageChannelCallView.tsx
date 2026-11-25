@@ -1,17 +1,17 @@
-// Module ID: 11063
-// Function ID: 11064
+// Module ID: 11068
+// Function ID: 11069
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 10849, 4913, 1628, 11064, 11065, 1653, 10601, 11066, 2]
+// Dependencies: [19, 21, 10854, 4913, 1628, 11069, 11070, 1653, 10606, 11071, 2]
 // Exports: default
 
-// Module 11063 (StageChannelCallView)
+// Module 11068 (StageChannelCallView)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import _modDef1653 from "module_1653" /* 1653 */;
-import StatusBarDefault from "StatusBar" /* 10601 */;
-import FocusedControls from "FocusedControls" /* 10849 */;
-import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 11064 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 11065 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 11066 */;
+import StatusBarDefault from "StatusBar" /* 10606 */;
+import FocusedControls from "FocusedControls" /* 10854 */;
+import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 11069 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 11070 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 11071 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

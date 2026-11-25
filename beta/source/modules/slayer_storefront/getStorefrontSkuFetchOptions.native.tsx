@@ -1,10 +1,10 @@
-// Module ID: 15067
-// Function ID: 15068
+// Module ID: 15077
+// Function ID: 15078
 // Name: getStorefrontSkuFetchOptions
 // Dependencies: [8169, 1071, 1358, 2]
 // Exports: default
 
-// Module 15067 (getStorefrontSkuFetchOptions)
+// Module 15077 (getStorefrontSkuFetchOptions)
 import Constants from "Constants" /* 1071 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import GenericIAPStore from "GenericIAPStore" /* 8169 */;

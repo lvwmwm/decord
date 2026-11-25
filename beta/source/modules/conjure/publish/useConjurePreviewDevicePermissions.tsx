@@ -1,10 +1,10 @@
-// Module ID: 18260
-// Function ID: 18261
+// Module ID: 18271
+// Function ID: 18272
 // Name: useConjurePreviewDevicePermissions
 // Dependencies: [6980, 504, 2]
 // Exports: default
 
-// Module 18260 (useConjurePreviewDevicePermissions)
+// Module 18271 (useConjurePreviewDevicePermissions)
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 11859
-// Function ID: 11860
+// Module ID: 11864
+// Function ID: 11865
 // Name: PinotMemberSettingStore
 // Dependencies: [504, 572, 2]
 
-// Module 11859 (PinotMemberSettingStore)
+// Module 11864 (PinotMemberSettingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

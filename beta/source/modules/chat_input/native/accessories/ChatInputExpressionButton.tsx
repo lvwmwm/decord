@@ -1,9 +1,9 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13047
+// Function ID: 13048
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 4913, 575, 5477, 7030, 1112, 1186, 11662, 9490, 2]
+// Dependencies: [19, 21, 4913, 575, 5477, 7030, 1112, 1186, 11667, 9490, 2]
 
-// Module 13044 (ChatInputExpressionButton)
+// Module 13047 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function ExpressionButton(active) {
     tmp12 = bound;
   }
   const intl = tmp(1112).intl;
-  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11662 : 9490) });
+  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11667 : 9490) });
   const Icon = tmp(1186).Icon;
   return <PressableOpacity ref={react.useRef(null)} style={items1} hitSlop={tmp12} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.iZ7Mz9)} accessibilityState={{ expanded: flag }} onPress={callback}>{null}</PressableOpacity>;
 });

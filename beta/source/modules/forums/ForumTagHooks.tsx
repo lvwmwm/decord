@@ -1,13 +1,13 @@
-// Module ID: 11247
-// Function ID: 11248
+// Module ID: 11252
+// Function ID: 11253
 // Name: ForumTagHooks
-// Dependencies: [19, 4762, 4845, 1082, 504, 1254, 11248, 2]
+// Dependencies: [19, 4762, 4845, 1082, 504, 1254, 11253, 2]
 // Exports: useAppliedTags, useAvailableTags, useSomeAppliedTags, useVisibleAppliedForumTags, useVisibleForumTags
 
-// Module 11247 (ForumTagHooks)
+// Module 11252 (ForumTagHooks)
 import Constants from "Constants" /* 1082 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import ReportToModUtils from "ReportToModUtils" /* 11248 */;
+import ReportToModUtils from "ReportToModUtils" /* 11253 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import PermissionStore from "PermissionStore" /* 4845 */;

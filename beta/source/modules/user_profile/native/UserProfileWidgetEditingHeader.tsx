@@ -1,10 +1,10 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 15963
+// Function ID: 15964
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 502, 8069, 21, 4913, 575, 504, 10349, 5504, 1112, 5511, 9578, 8136, 5127, 14574, 2119, 7591, 10228, 15954, 2]
+// Dependencies: [19, 17, 502, 8069, 21, 4913, 575, 504, 10354, 5504, 1112, 5511, 9578, 8136, 5127, 14584, 2119, 7591, 10233, 15964, 2]
 // Exports: default
 
-// Module 15953 (UserProfileWidgetEditingHeader)
+// Module 15963 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -43,7 +43,7 @@ export default function UserProfileWidgetEditingHeader() {
   let obj = stateFromStores(504);
   const items = [AuthenticationStore];
   stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  let obj2 = stateFromStores(10349);
+  let obj2 = stateFromStores(10354);
   const length = obj2.useBoardWidgets(stateFromStores).length;
   const ref = react.useRef(null);
   let obj3 = { style: tmp.header, children: items1 };
@@ -61,7 +61,7 @@ export default function UserProfileWidgetEditingHeader() {
       const obj2 = { userId: stateFromStores, action: constants.PRESS_ADD_WIDGET };
       const result = obj.trackUserProfileEditAction(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(14574, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
+      obj3.openLazy(asyncRequire(14584, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
     }
   };
   const Button = stateFromStores(5511).Button;
@@ -79,12 +79,12 @@ export default function UserProfileWidgetEditingHeader() {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { returnFocusRef: ref };
-      return obj.openLazy(asyncRequire(15954, dependencyMap.paths), "UserProfileWidgetReorderActionSheet", obj2);
+      return obj.openLazy(asyncRequire(15964, dependencyMap.paths), "UserProfileWidgetReorderActionSheet", obj2);
     }
   };
   const IconButton = stateFromStores(7591).IconButton;
   obj8 = { size: "sm", color: ref(575).colors.ICON_DEFAULT };
-  ArrowsUpDownIcon = stateFromStores(10228).ArrowsUpDownIcon;
+  ArrowsUpDownIcon = stateFromStores(10233).ArrowsUpDownIcon;
   intl3 = stateFromStores(1112).intl;
   items1[2] = closure_7(IconButton, obj7);
   return closure_8(View, obj3);

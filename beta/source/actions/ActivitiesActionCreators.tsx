@@ -1,9 +1,9 @@
-// Module ID: 11941
-// Function ID: 11942
+// Module ID: 11946
+// Function ID: 11947
 // Name: ActivitiesActionCreators
 // Dependencies: [5, 4762, 1071, 4918, 572, 1284, 8382, 8250, 5650, 5652, 7737, 2]
 
-// Module 11941 (ActivitiesActionCreators)
+// Module 11946 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MessageConstants from "MessageConstants" /* 4918 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;

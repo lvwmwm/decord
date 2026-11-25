@@ -1,9 +1,9 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11615
+// Function ID: 11616
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4914, 4819, 4784, 4855, 1386, 1071, 21, 4913, 6407, 575, 1653, 5474, 5123, 504, 1186, 5504, 4969, 7544, 7561, 11611, 7636, 5529, 5600, 2]
+// Dependencies: [19, 17, 4914, 4819, 4784, 4855, 1386, 1071, 21, 4913, 6407, 575, 1653, 5474, 5123, 504, 1186, 5504, 4969, 7544, 7561, 11616, 7636, 5529, 5600, 2]
 
-// Module 11610 (HorizontalAutocomplete)
+// Module 11615 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import RoleIconUtils from "RoleIconUtils" /* 7544 */;
 import RoleIconDefault from "RoleIcon" /* 7561 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11611 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11616 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;

@@ -1,13 +1,13 @@
-// Module ID: 14011
-// Function ID: 14012
+// Module ID: 14014
+// Function ID: 14015
 // Name: useBadgeDirectoryBadgeIndicators
-// Dependencies: [19, 13989, 13990, 8142, 504, 2]
+// Dependencies: [19, 13992, 13993, 8142, 504, 2]
 // Exports: dismissBadgeDirectoryBadgeIndicator, isNewIndicatorBadgeId, useBadgeDirectoryBadgeIndicators, useDismissBadgeDirectoryBadgeIndicator
 
-// Module 14011 (useBadgeDirectoryBadgeIndicators)
-import BadgeUtils from "BadgeUtils" /* 13990 */;
+// Module 14014 (useBadgeDirectoryBadgeIndicators)
+import BadgeUtils from "BadgeUtils" /* 13993 */;
 import react from "react" /* 19 */;
-import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 13989 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 13992 */;
 import size from "module_2" /* 2 */;
 
 let badge_id;

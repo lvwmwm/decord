@@ -1,10 +1,10 @@
-// Module ID: 19864
-// Function ID: 19865
+// Module ID: 19875
+// Function ID: 19876
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 12005, 7045, 1186, 5122, 7515, 1112, 8296, 1412, 4920, 5127, 7586, 7553, 11278, 5145, 7017, 7348, 2]
+// Dependencies: [32, 19, 17, 21, 12010, 7045, 1186, 5122, 7515, 1112, 8296, 1412, 4920, 5127, 7586, 7553, 11283, 5145, 7017, 7348, 2]
 // Exports: default
 
-// Module 19864 (SelectConnectionActionSheet)
+// Module 19875 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -14,7 +14,7 @@ import useThemeDefault from "useTheme" /* 5122 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import TableRow2 from "TableRow" /* 7045 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 12005 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 12010 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -32,7 +32,7 @@ const TableRowGroup = tmp3(7348);
 const ActionSheet2 = tmp3(7553);
 const SegmentedControlState = tmp3(7586);
 const ConnectionsHooks = tmp3(8296);
-const SegmentedControl = tmp3(11278);
+const SegmentedControl = tmp3(11283);
 function IdentityApplicationRow(arg0) {
   let applicationId;
   let description;
@@ -47,7 +47,7 @@ function IdentityApplicationRow(arg0) {
     let tmp6Result = null;
     const TableRow = tmp(7045).TableRow;
     if (null != bot) {
-      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "sa" };
       const Avatar = tmp(1186).Avatar;
       tmp6Result = tmp6(Avatar, obj2);
     }
@@ -147,7 +147,7 @@ export default function SelectConnectionActionSheet(arg0) {
             }
         };
         const TableRow = TableRow2.TableRow;
-        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
+        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "sa" };
         Avatar = native.Avatar;
         description = undefined;
         const tmp2 = closure_1_6;

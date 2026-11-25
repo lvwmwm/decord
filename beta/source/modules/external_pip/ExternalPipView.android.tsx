@@ -1,14 +1,14 @@
-// Module ID: 19156
-// Function ID: 19157
+// Module ID: 19167
+// Function ID: 19168
 // Name: ExternalPipView
-// Dependencies: [32, 19, 10020, 21, 19157, 5765, 19159, 19160, 2]
+// Dependencies: [32, 19, 10020, 21, 19168, 5765, 19170, 19171, 2]
 // Exports: default
 
-// Module 19156 (ExternalPipView)
+// Module 19167 (ExternalPipView)
 import Fragment from "Fragment" /* 21 */;
 import ExternalPipDefault from "ExternalPip" /* 5765 */;
-import ExternalPipAutoEnterExperiment from "ExternalPipAutoEnterExperiment" /* 19159 */;
-import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 19160 */;
+import ExternalPipAutoEnterExperiment from "ExternalPipAutoEnterExperiment" /* 19170 */;
+import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 19171 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AppFreezeStore from "AppFreezeStore" /* 10020 */;
@@ -42,7 +42,7 @@ export default function ExternalPipView() {
   let obj2;
   let tmp3;
   let obj = { disabled: !obj2.isSupported() };
-  const tmp = callback(19157);
+  const tmp = callback(19168);
   obj2 = callback(5765);
   const externalPipEnabled = tmp(obj).externalPipEnabled;
   c0 = undefined;

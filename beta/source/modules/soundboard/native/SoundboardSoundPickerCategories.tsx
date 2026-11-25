@@ -1,9 +1,9 @@
-// Module ID: 18033
-// Function ID: 18034
+// Module ID: 18044
+// Function ID: 18045
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 18017, 1386, 1071, 21, 4913, 575, 6831, 7322, 1112, 11373, 5622, 18031, 9814, 7030, 1186, 7695, 5173, 5129, 5130, 504, 2173, 10949, 1628, 5105, 8201, 7490, 2]
+// Dependencies: [19, 17, 18028, 1386, 1071, 21, 4913, 575, 6831, 7322, 1112, 11378, 5622, 18042, 9814, 7030, 1186, 7695, 5173, 5129, 5130, 504, 2173, 10954, 1628, 5105, 8201, 7490, 2]
 
-// Module 18033 (SoundboardSoundPickerCategories)
+// Module 18044 (SoundboardSoundPickerCategories)
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
@@ -11,10 +11,10 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
 import SoundboardTypes from "SoundboardTypes" /* 6831 */;
 import GuildIconDefault from "GuildIcon" /* 7322 */;
 import LockIcon from "LockIcon" /* 7695 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10949 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11373 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 18017 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18031 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10954 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11378 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 18028 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18042 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;

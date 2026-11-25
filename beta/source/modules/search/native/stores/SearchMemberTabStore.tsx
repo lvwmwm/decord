@@ -1,9 +1,9 @@
-// Module ID: 13225
-// Function ID: 13226
+// Module ID: 13228
+// Function ID: 13229
 // Name: SearchMemberTabStore
 // Dependencies: [4762, 1071, 10063, 4850, 6679, 504, 572, 2]
 
-// Module 13225 (SearchMemberTabStore)
+// Module 13228 (SearchMemberTabStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;

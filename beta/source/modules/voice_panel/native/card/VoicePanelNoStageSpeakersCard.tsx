@@ -1,9 +1,9 @@
-// Module ID: 19282
-// Function ID: 19283
+// Module ID: 19293
+// Function ID: 19294
 // Name: VoicePanelNoStageSpeakersCard
 // Dependencies: [19, 21, 4913, 575, 7324, 5504, 1112, 4320, 2]
 
-// Module 19282 (VoicePanelNoStageSpeakersCard)
+// Module 19293 (VoicePanelNoStageSpeakersCard)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

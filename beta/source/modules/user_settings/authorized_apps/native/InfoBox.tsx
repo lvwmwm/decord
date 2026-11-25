@@ -1,10 +1,10 @@
-// Module ID: 11030
-// Function ID: 11031
+// Module ID: 11035
+// Function ID: 11036
 // Name: InfoBox
 // Dependencies: [19, 17, 21, 4913, 575, 5617, 7225, 5504, 2]
 // Exports: default
 
-// Module 11030 (InfoBox)
+// Module 11035 (InfoBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;

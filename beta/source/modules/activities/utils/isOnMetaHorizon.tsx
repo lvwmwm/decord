@@ -1,10 +1,10 @@
-// Module ID: 14472
-// Function ID: 14473
+// Module ID: 14482
+// Function ID: 14483
 // Name: isOnMetaHorizon
 // Dependencies: [2144, 7074, 2]
 // Exports: default
 
-// Module 14472 (isOnMetaHorizon)
+// Module 14482 (isOnMetaHorizon)
 import Constants from "Constants" /* 2144 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7074 */;
 import size from "module_2" /* 2 */;

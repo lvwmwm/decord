@@ -1,9 +1,9 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10854
+// Function ID: 10855
 // Name: FocusedControls
-// Dependencies: [19, 17, 1071, 21, 4913, 1186, 1653, 10850, 5123, 7017, 1494, 7865, 10851, 10857, 10644, 5143, 7520, 7539, 10776, 10867, 1255, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 1186, 1653, 10855, 5123, 7017, 1494, 7865, 10856, 10862, 10649, 5143, 7520, 7539, 10781, 10872, 1255, 2]
 
-// Module 10849 (FocusedControls)
+// Module 10854 (FocusedControls)
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -12,10 +12,10 @@ import _mod1653 from "module_1653" /* 1653 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5143 */;
 import inlineStyles from "inlineStyles" /* 7865 */;
-import RevealProvider from "RevealProvider" /* 10644 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10850 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10851 */;
-import GlobalStatusIndicator from "GlobalStatusIndicator" /* 10857 */;
+import RevealProvider from "RevealProvider" /* 10649 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10855 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10856 */;
+import GlobalStatusIndicator from "GlobalStatusIndicator" /* 10862 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -174,7 +174,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   const globalStatusIndicatorState = obj.useGlobalStatusIndicatorState();
   const obj2 = GlobalStatusIndicator;
   const globalStatusIndicatorHeightSharedValue = obj2.useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState);
-  const tmp6 = analyticsLocations(10850)();
+  const tmp6 = analyticsLocations(10855)();
   let reveal = react.useContext(RevealProvider.RevealContext).reveal;
   const obj3 = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
@@ -246,7 +246,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   const animatedStyle = useAnimatedStyle(FocusedControlsTsx5);
   const tmp5Result = analyticsLocations(7520);
   analyticsLocations = tmp5Result(tmp5(7539).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  dependencyMap = tmp5(10776)();
+  dependencyMap = tmp5(10781)();
   const View = tmp5(1653).View;
   const tmp23 = closure_8;
   if (containerStyle == null) {
@@ -294,7 +294,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
         reveal,
         children
       };
-      tmp28Result = tmp28(tmp5(10867), obj5);
+      tmp28Result = tmp28(tmp5(10872), obj5);
     }
   }
   items7[2] = tmp28Result;

@@ -1,10 +1,10 @@
-// Module ID: 18393
-// Function ID: 18394
+// Module ID: 18404
+// Function ID: 18405
 // Name: ConjureHeaderIconButton
 // Dependencies: [19, 17, 21, 9023, 4913, 7030, 2]
 // Exports: default
 
-// Module 18393 (ConjureHeaderIconButton)
+// Module 18404 (ConjureHeaderIconButton)
 import react_native from "react-native" /* 17 */;
 import ClipView from "ClipView" /* 9023 */;
 import react from "react" /* 19 */;

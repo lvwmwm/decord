@@ -43,7 +43,7 @@ import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const IAPUtilsDefault = IAPUtils;
-let activeGuildSubscriptions, body2, giftOptionsForKey, length, original_transaction_id, product_id;
+let _self, activeGuildSubscriptions, body2, giftOptionsForKey, length, original_transaction_id, product_id;
 
 let StoreKitErrors;
 let c10;
@@ -2619,8 +2619,17 @@ obj = {
   fetchMostRecentSubscription: actions_BillingActionCreators.fetchMostRecentSubscription,
   fetchIpCountryCode: actions_BillingActionCreators.fetchIpCountryCode,
   init() {
+    obj = arg0;
+    if (arg0 === undefined) {
+      obj = {};
+    }
+    let flag = obj.shouldFetchSubscriptions;
+    if (flag === undefined) {
+      flag = true;
+    }
     const self = this;
     return (async (arg0, value) => {
+      let closure_1;
       let obj9;
       if (c6 === 2) {
         c6 = 3;
@@ -2639,6 +2648,7 @@ obj = {
         try {
           let _undefined;
           let premiumSubscriptionPlans;
+          let subscriptions;
           c6 = 2;
           if (0 === c5) {
             if (arg0 === 1) {
@@ -2650,7 +2660,7 @@ obj = {
               return obj3;
             } else {
               let closure_2 = tmp;
-              let closure_1 = tmp4;
+              _self = tmp4;
               c4 = 1;
               _undefined = null;
               const obj13 = _undefined(closure_3[24]);
@@ -2659,7 +2669,7 @@ obj = {
                 c5 = 3;
                 c6 = 1;
                 const obj4 = { value: obj9.fetchStoreFront(), done: false };
-                obj9 = closure_1(closure_3[18]);
+                obj9 = _self(closure_3[18]);
                 return obj4;
               }
             }
@@ -2694,7 +2704,7 @@ obj = {
               } else {
                 c5 = 5;
                 c6 = 1;
-                const obj11 = { value: closure_130_0.restoreAndApplyPurchases(), done: false };
+                const obj11 = { value: closure_130_1.restoreAndApplyPurchases(), done: false };
                 return obj11;
               }
             } else if (arg0 === 1) {
@@ -2719,23 +2729,29 @@ obj = {
             premiumSubscriptionPlans = obj5.fetchPremiumSubscriptionPlans();
           }
           const items = [premiumSubscriptionPlans, , ];
-          const loadProducts = closure_130_0.loadProducts;
+          const loadProducts = closure_130_1.loadProducts;
           if (_undefined == null) {
             _undefined = undefined;
           }
           items[1] = loadProducts(_undefined);
-          const obj7 = _undefined(closure_3[23]);
-          items[2] = obj7.fetchSubscriptions();
+          const tmp30 = closure_130_0;
+          if (tmp30) {
+            const obj7 = _undefined(closure_3[23]);
+            subscriptions = obj7.fetchSubscriptions();
+          } else {
+            subscriptions = Promise.resolve();
+          }
+          items[2] = subscriptions;
           c5 = 4;
           c6 = 1;
           const obj12 = { value: all(items), done: false };
           return obj12;
-        } catch (tmp34) {
-          closure_3 = tmp34;
+        } catch (tmp37) {
+          closure_3 = tmp37;
           if (0 === c4) {
             c6 = 3;
-            throw tmp34;
-          } else if (1 === tmp36) {
+            throw tmp37;
+          } else if (1 === tmp39) {
             c5 = 1;
           } else {
             c5 = 2;

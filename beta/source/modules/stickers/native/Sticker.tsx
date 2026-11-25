@@ -1,10 +1,10 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11170
+// Function ID: 11171
 // Name: Sticker
 // Dependencies: [19, 17, 1191, 21, 6387, 6386, 1112, 8736, 5600, 4920, 7497, 7498, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 11165 (Sticker)
+// Module 11170 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;

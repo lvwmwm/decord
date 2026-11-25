@@ -1,10 +1,10 @@
-// Module ID: 11383
-// Function ID: 11384
+// Module ID: 11388
+// Function ID: 11389
 // Name: StickerPickerListRow
-// Dependencies: [19, 17, 1386, 4741, 11271, 1227, 21, 4913, 575, 671, 7695, 1378, 4738, 5129, 5130, 6386, 6829, 6387, 11165, 11384, 1241, 7030, 2]
+// Dependencies: [19, 17, 1386, 4741, 11276, 1227, 21, 4913, 575, 671, 7695, 1378, 4738, 5129, 5130, 6386, 6829, 6387, 11170, 11389, 1241, 7030, 2]
 // Exports: default
 
-// Module 11383 (StickerPickerListRow)
+// Module 11388 (StickerPickerListRow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
@@ -17,7 +17,7 @@ import LockIcon from "LockIcon" /* 7695 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11271 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11276 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -210,7 +210,7 @@ export default function StickerPickerListRow(stickers) {
           let tmp16 = dependencyMap;
           ({ isOpaque, isDisabled, isLocked } = rowTraitsResult);
           let push2 = items.push;
-          obj5 = stickers(11165);
+          obj5 = stickers(11170);
           let push2Result = push2(obj2);
           tmp12 = dependencyMap;
         } else {
@@ -247,7 +247,7 @@ export default function StickerPickerListRow(stickers) {
             }
       };
       obj7 = { rowContentWidth: containerWidth, rowContentPaddingVertical, itemSize: STICKER_SIZE, items };
-      return closure_8(isSectionNitroLocked(11384), obj6);
+      return closure_8(isSectionNitroLocked(11389), obj6);
     } catch (tmp23) {
       const tmp25 = isSectionNitroLocked(1241);
       const obj8 = { message: "Error in StickerPickerListRowNativeComponent", category: "sticker", data: obj9 };

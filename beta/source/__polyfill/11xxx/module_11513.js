@@ -1,12 +1,14 @@
 // Module ID: 11513
 // Function ID: 11514
-// Dependencies: [41, 42, 93, 95, 98, 11422]
+// Dependencies: [41, 42, 93, 95, 98, 11514, 11423, 11427]
 
 // Module 11513
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11423 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11427 */;
+import _mod11514 from "module_11514" /* 11514 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,15 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]|0[1-9]|1[012])/([0-9]{4})", "i");
-class NLSlashMonthFormatParser {
+class NLTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLSlashMonthFormatParser);
-    const obj = _getPrototypeOf(NLSlashMonthFormatParser);
+    _classCallCheck(this, NLTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(NLTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -43,10 +44,11 @@ class NLSlashMonthFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLSlashMonthFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
+    const regExp = new RegExp("(?:binnen|in|binnen de|voor)\\s*(" + _mod11514.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
     return regExp;
   }
 };
@@ -54,15 +56,12 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const parsed = parseInt(arg1[2]);
-      const parsed1 = parseInt(arg1[1]);
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      const implyResult = parsingComponents.imply("day", 1);
-      const obj = implyResult.assign("month", parsed1);
-      return obj.assign("year", parsed);
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11514.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(NLSlashMonthFormatParser, items);
+export default _createClass(NLTimeUnitWithinFormatParser, items);

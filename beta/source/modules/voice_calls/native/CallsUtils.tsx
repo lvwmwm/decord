@@ -1,7 +1,7 @@
 // Module ID: 9663
 // Function ID: 9664
 // Name: CallsUtils
-// Dependencies: [32, 5, 19, 17, 6400, 4762, 2131, 4816, 5561, 5674, 9664, 6496, 9666, 5861, 1112, 7795, 5809, 5843, 2018, 6494, 6529, 12, 9667, 9668, 9669, 1378, 504, 9670, 9665, 10960, 5675, 2]
+// Dependencies: [32, 5, 19, 17, 6400, 4762, 2131, 4816, 5561, 5674, 9664, 6496, 9666, 5861, 1112, 7795, 5809, 5843, 2018, 6494, 6529, 12, 9667, 9668, 9669, 1378, 504, 9670, 9665, 10965, 5675, 2]
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert, useImmediateMaskedSpeakerStates
 
 // Module 9663 (CallsUtils)
@@ -18,7 +18,7 @@ import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators"
 import AssetRegistryDefault from "AssetRegistry" /* 9667 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9668 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 9669 */;
-import useIsVideoModeDefault from "useIsVideoMode" /* 10960 */;
+import useIsVideoModeDefault from "useIsVideoMode" /* 10965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

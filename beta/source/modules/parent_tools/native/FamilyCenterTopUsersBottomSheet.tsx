@@ -1,10 +1,10 @@
-// Module ID: 16197
-// Function ID: 16198
+// Module ID: 16207
+// Function ID: 16208
 // Name: FamilyCenterTopUsersBottomSheet
 // Dependencies: [19, 1386, 21, 4913, 9139, 7045, 4969, 1186, 7553, 5504, 1112, 2824, 7348, 2]
 // Exports: default
 
-// Module 16197 (FamilyCenterTopUsersBottomSheet)
+// Module 16207 (FamilyCenterTopUsersBottomSheet)
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import _modDef2824 from "module_2824" /* 2824 */;
@@ -36,7 +36,7 @@ function UserRow(userActivity) {
     const obj2 = { label: obj3.getName(user), subLabel: topUserOrGuildDescription, icon: React3(Avatar, obj4) };
     const TableRow = TableRow2.TableRow;
     obj3 = UserUtilsDefault;
-    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
+    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "sa" };
     Avatar = native.Avatar;
     return React3(TableRow, obj2);
   }

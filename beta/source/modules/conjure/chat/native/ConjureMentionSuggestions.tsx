@@ -1,10 +1,10 @@
-// Module ID: 18623
-// Function ID: 18624
+// Module ID: 18634
+// Function ID: 18635
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 4913, 575, 7348, 1112, 4190, 7045, 1186, 4969, 18317, 2]
+// Dependencies: [19, 21, 4913, 575, 7348, 1112, 4190, 7045, 1186, 4969, 18328, 2]
 // Exports: default
 
-// Module 18623 (ConjureMentionSuggestions)
+// Module 18634 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
@@ -60,7 +60,7 @@ export default function ConjureMentionSuggestions(arg0) {
                 }
               };
               const TableRow = require("TableRow").TableRow;
-              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "sa" };
               Avatar = require("native").Avatar;
               obj3 = require("UserUtils");
               return closure_1_3(TableRow, obj, user.user.id);

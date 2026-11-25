@@ -1,10 +1,10 @@
-// Module ID: 13815
-// Function ID: 13816
+// Module ID: 13818
+// Function ID: 13819
 // Name: GuildProfileCTA
-// Dependencies: [19, 5632, 1071, 1081, 21, 12280, 9424, 5127, 6835, 7262, 10521, 13816, 4949, 6518, 7291, 7286, 6834, 6516, 5511, 1112, 2]
+// Dependencies: [19, 5632, 1071, 1081, 21, 12276, 9424, 5127, 6835, 7262, 10526, 13819, 4949, 6518, 7291, 7286, 6834, 6516, 5511, 1112, 2]
 // Exports: default
 
-// Module 13815 (GuildProfileCTA)
+// Module 13818 (GuildProfileCTA)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
@@ -15,7 +15,7 @@ import MemberVerificationAlertActionCreators from "MemberVerificationAlertAction
 import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 6834 */;
 import transitionToGuild from "transitionToGuild" /* 6835 */;
 import GuildProfileTypes from "GuildProfileTypes" /* 7291 */;
-import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 10521 */;
+import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 10526 */;
 import react_mod from "react" /* 19 */;
 import InviteStore from "InviteStore" /* 5632 */;
 import size from "module_2" /* 2 */;

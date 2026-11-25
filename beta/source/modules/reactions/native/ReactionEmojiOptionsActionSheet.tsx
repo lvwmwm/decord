@@ -1,10 +1,10 @@
-// Module ID: 10392
-// Function ID: 10393
+// Module ID: 10397
+// Function ID: 10398
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 4914, 6573, 7323, 4946, 1071, 21, 4913, 575, 10393, 4738, 504, 9067, 1412, 5127, 10394, 5595, 1112, 10009, 10011, 7545, 5594, 8458, 7553, 7496, 5504, 4446, 2187, 7348, 7045, 2]
+// Dependencies: [19, 17, 4914, 6573, 7323, 4946, 1071, 21, 4913, 575, 10398, 4738, 504, 9067, 1412, 5127, 10399, 5595, 1112, 10009, 10011, 7545, 5594, 8458, 7553, 7496, 5504, 4446, 2187, 7348, 7045, 2]
 // Exports: default
 
-// Module 10392 (ReactionEmojiOptionsActionSheet)
+// Module 10397 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -16,7 +16,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8458 */;
 import StarOutlineIcon from "StarOutlineIcon" /* 10009 */;
 import StarIcon from "StarIcon" /* 10011 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10394 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10399 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import EmojiStore from "EmojiStore" /* 6573 */;

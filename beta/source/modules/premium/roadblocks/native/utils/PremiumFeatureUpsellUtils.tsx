@@ -1,10 +1,10 @@
-// Module ID: 10949
-// Function ID: 10950
+// Module ID: 10954
+// Function ID: 10955
 // Name: PremiumFeatureUpsellUtils
 // Dependencies: [1071, 6831, 8547, 1241, 1091, 2]
 // Exports: getAnalyticsPage, getUpsellType, isExpressionPickerUpsellFeature, isSoundboardSectionNitroLocked
 
-// Module 10949 (PremiumFeatureUpsellUtils)
+// Module 10954 (PremiumFeatureUpsellUtils)
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;

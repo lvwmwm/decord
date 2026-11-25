@@ -1,9 +1,9 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 17672
+// Function ID: 17673
 // Name: GuildSettingsModalChannelsStore
 // Dependencies: [109, 4766, 4843, 4845, 1071, 4787, 7478, 12, 504, 572, 2]
 
-// Module 17662 (GuildSettingsModalChannelsStore)
+// Module 17672 (GuildSettingsModalChannelsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import getFlattedChannelListDefault from "getFlattedChannelList" /* 7478 */;
@@ -25,7 +25,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f112518 = (channel) => channel.channel.id;
+const f112560 = (channel) => channel.channel.id;
 function sortCategoryList(channel, channel2) {
   let num;
   channel = channel.channel;
@@ -126,7 +126,7 @@ function buildSortedChannels() {
       }
       return tmp;
     });
-    closure_15 = arr4.map(f112518);
+    closure_15 = arr4.map(f112560);
   }
 }
 let closure_3 = ["lock_permissions", "id"];
@@ -273,7 +273,7 @@ let obj = {
           }
           return tmp;
         });
-        closure_15 = arr.map(f112518);
+        closure_15 = arr.map(f112560);
       }
     }
   },
@@ -290,7 +290,7 @@ let obj = {
         }
         return tmp;
       });
-      closure_15 = arr.map(f112518);
+      closure_15 = arr.map(f112560);
     }
   },
   GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE: function handleLocalSortChange(updates) {

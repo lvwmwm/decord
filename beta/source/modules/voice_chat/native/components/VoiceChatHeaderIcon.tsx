@@ -1,10 +1,10 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 11011
+// Function ID: 11012
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 6619, 1071, 21, 4913, 575, 5467, 504, 10911, 12, 4974, 7030, 1186, 2]
+// Dependencies: [19, 17, 6619, 1071, 21, 4913, 575, 5467, 504, 10916, 12, 4974, 7030, 1186, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 11006 (VoiceChatHeaderIcon)
+// Module 11011 (VoiceChatHeaderIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1186 */;
 import native2 from "native" /* 4974 */;
 import NavigatorConstants from "NavigatorConstants" /* 5467 */;
 import Pressables from "Pressables" /* 7030 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10911 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10916 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6619 */;
 import Fragment from "Fragment" /* 21 */;

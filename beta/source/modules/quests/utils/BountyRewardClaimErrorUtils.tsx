@@ -1,10 +1,10 @@
-// Module ID: 16334
-// Function ID: 16335
+// Module ID: 16344
+// Function ID: 16345
 // Name: BountyRewardClaimErrorUtils
 // Dependencies: [1112, 2]
 // Exports: resolveBountyRewardClaimErrorMessage
 
-// Module 16334 (BountyRewardClaimErrorUtils)
+// Module 16344 (BountyRewardClaimErrorUtils)
 import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 

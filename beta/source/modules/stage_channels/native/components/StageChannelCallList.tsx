@@ -1,22 +1,22 @@
-// Module ID: 11066
-// Function ID: 11067
+// Module ID: 11071
+// Function ID: 11072
 // Name: StageChannelCallList
-// Dependencies: [32, 19, 11067, 6500, 21, 1186, 11068, 6537, 5474, 6543, 38, 11075, 1112, 11076, 11077, 11090, 7449, 10906, 1494, 8150, 2]
+// Dependencies: [32, 19, 11072, 6500, 21, 1186, 11073, 6537, 5474, 6543, 38, 11080, 1112, 11081, 11082, 11095, 7449, 10911, 1494, 8150, 2]
 // Exports: default
 
-// Module 11066 (StageChannelCallList)
+// Module 11071 (StageChannelCallList)
 import _modDef38 from "module_38" /* 38 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import StageChannelsConstants from "StageChannelsConstants" /* 6500 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
-import SpeakerTile from "SpeakerTile" /* 11068 */;
-import StageSectionHeaderDefault from "StageSectionHeader" /* 11075 */;
-import StageGridRowDefault from "StageGridRow" /* 11077 */;
-import AudienceGridRowDefault from "AudienceGridRow" /* 11090 */;
+import SpeakerTile from "SpeakerTile" /* 11073 */;
+import StageSectionHeaderDefault from "StageSectionHeader" /* 11080 */;
+import StageGridRowDefault from "StageGridRow" /* 11082 */;
+import AudienceGridRowDefault from "AudienceGridRow" /* 11095 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import StageChannelListStore from "StageChannelListStore" /* 11067 */;
+import StageChannelListStore from "StageChannelListStore" /* 11072 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -189,7 +189,7 @@ let closure_12 = react.memo(function StageChannelCallListRenderer(channel) {
         const tmp25 = require;
         if (first1) {
           cutout = { users: mapped, max: 10, avatarSize: tmp25(1186).AvatarSizes.XSMALL_20, cutout };
-          const tmp22Result = tmp22(11076);
+          const tmp22Result = tmp22(11081);
           tmp21Result = tmp21(tmp22Result, cutout);
         }
         tmp21Result2 = tmp21(tmp24, obj3);
@@ -314,7 +314,7 @@ export default function StageChannelCallList(channel) {
   channel = channel.channel;
   let width;
   let isScreenLandscape;
-  let obj = width(10906);
+  let obj = width(10911);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
   width = isScreenLandscape(1494)().width;
   const obj2 = width(8150);
@@ -327,14 +327,14 @@ export default function StageChannelCallList(channel) {
     if (isScreenLandscape) {
       const _Math = Math;
       const _Math2 = Math;
-      num = Math.max(3, Math.floor(tmp / tmp2(11068).LANDSCAPE_MAX_TILE_WIDTH));
+      num = Math.max(3, Math.floor(tmp / tmp2(11073).LANDSCAPE_MAX_TILE_WIDTH));
     }
     const obj = {};
     obj[SPEAKER] = num;
     obj[StageChannelParticipants.StageChannelParticipantNamedIndex.AUDIENCE] = MAX_AUDIENCE_ROW_LIMIT;
     return obj;
   }, items);
-  const obj3 = width(10906);
+  const obj3 = width(10911);
   const tmp4 = _slicedToArray(obj3.useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
   const obj4 = { channel, listSections: tmp4[0], rowsBySection: tmp4[1] };
   return closure_8(closure_12, obj4);

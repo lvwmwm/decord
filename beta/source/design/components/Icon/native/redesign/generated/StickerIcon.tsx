@@ -1,14 +1,14 @@
-// Module ID: 11128
-// Function ID: 11129
+// Module ID: 11133
+// Function ID: 11134
 // Name: StickerIcon
-// Dependencies: [19, 21, 575, 5599, 11129, 2]
+// Dependencies: [19, 21, 575, 5599, 11134, 2]
 // Exports: StickerIcon
 
-// Module 11128 (StickerIcon)
+// Module 11133 (StickerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 11129 */;
+import AssetRegistry from "AssetRegistry" /* 11134 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

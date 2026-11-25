@@ -1,18 +1,18 @@
-// Module ID: 12030
-// Function ID: 12031
+// Module ID: 12035
+// Function ID: 12036
 // Name: SuspiciousDownloadUtils
-// Dependencies: [12031, 1379, 2]
+// Dependencies: [12036, 1379, 2]
 // Exports: isSuspiciousDownload
 
-// Module 12030 (SuspiciousDownloadUtils)
+// Module 12035 (SuspiciousDownloadUtils)
 import URLUtilsDefault from "URLUtils" /* 1379 */;
-import _modDef12031 from "module_12031" /* 12031 */;
+import _modDef12036 from "module_12036" /* 12036 */;
 import size from "module_2" /* 2 */;
 
 let regExp;
 let regExp1;
 let regExp2;
-const set = new Set(_modDef12031);
+const set = new Set(_modDef12036);
 let obj = { "github.com": regExp, "bitbucket.org": regExp1, "gitlab.com": regExp2 };
 regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 regExp1 = new RegExp("/downloads\\S*/[^/]*");

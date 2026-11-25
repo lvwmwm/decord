@@ -1,10 +1,10 @@
-// Module ID: 18306
-// Function ID: 18307
+// Module ID: 18317
+// Function ID: 18318
 // Name: useConjureSettingPickerOptions
-// Dependencies: [32, 19, 4843, 4784, 4855, 4970, 1386, 6621, 504, 6865, 6622, 1112, 4190, 12, 18307, 5529, 5943, 2]
+// Dependencies: [32, 19, 4843, 4784, 4855, 4970, 1386, 6621, 504, 6865, 6622, 1112, 4190, 12, 18318, 5529, 5943, 2]
 // Exports: conjureSettingPickedIds, default, useConjureSettingsGuildId, useConjureSettingsServers, withPickCap, withSavedPicks
 
-// Module 18306 (useConjureSettingPickerOptions)
+// Module 18317 (useConjureSettingPickerOptions)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
 import ConjureUtils from "ConjureUtils" /* 6865 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

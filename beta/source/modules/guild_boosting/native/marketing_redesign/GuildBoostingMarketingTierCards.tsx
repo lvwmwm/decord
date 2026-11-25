@@ -1,10 +1,10 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 14792
+// Function ID: 14793
 // Name: GuildBoostingMarketingTierCards
-// Dependencies: [32, 19, 17, 1071, 1388, 21, 9489, 1112, 11128, 13421, 7034, 7620, 10159, 14783, 9487, 5609, 14785, 1653, 5468, 4913, 575, 14777, 6555, 5123, 5504, 5122, 4920, 7030, 8743, 14786, 14788, 4910, 1186, 14790, 14791, 13454, 2]
+// Dependencies: [32, 19, 17, 1071, 1388, 21, 9489, 1112, 11133, 13424, 7034, 7620, 10164, 14793, 9487, 5609, 14795, 1653, 5468, 4913, 575, 14787, 6555, 5123, 5504, 5122, 4920, 7030, 8743, 14796, 14798, 4910, 1186, 14800, 14801, 13457, 2]
 // Exports: default
 
-// Module 14782 (GuildBoostingMarketingTierCards)
+// Module 14792 (GuildBoostingMarketingTierCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -21,14 +21,14 @@ import StageIcon from "StageIcon" /* 7620 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8743 */;
 import UploadIcon from "UploadIcon" /* 9487 */;
 import ReactionIcon from "ReactionIcon" /* 9489 */;
-import GifIcon from "GifIcon" /* 10159 */;
-import StickerIcon from "StickerIcon" /* 11128 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 13421 */;
-import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 14777 */;
-import ServerGridIcon from "ServerGridIcon" /* 14783 */;
-import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 14785 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14790 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14791 */;
+import GifIcon from "GifIcon" /* 10164 */;
+import StickerIcon from "StickerIcon" /* 11133 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 13424 */;
+import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 14787 */;
+import ServerGridIcon from "ServerGridIcon" /* 14793 */;
+import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 14795 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14800 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
@@ -313,9 +313,9 @@ function GuildBoostingMarketingTierCard(ref) {
   items5 = [React4(Text_Text.Text, { color: "text-overlay-light", variant: "body-md/semibold", children: stringResult }), ];
   const tmp15 = LinearGradient;
   if (isExpanded) {
-    ChevronLargeDownIcon = tmp8(14786).ChevronLargeUpIcon;
+    ChevronLargeDownIcon = tmp8(14796).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp8(14788).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp8(14798).ChevronLargeDownIcon;
   }
   const obj13 = { color: nativeDefault.colors.WHITE, style: tmp2.cardFooterIcon };
   items5[1] = React4(ChevronLargeDownIcon, obj13);
@@ -678,7 +678,7 @@ export default function GuildBoostingMarketingTierCards(guild) {
   let arr2;
   let isExpanded;
   let num;
-  const f106666 = (tier) => tier.tier === closure_0;
+  const f106708 = (tier) => tier.tier === closure_0;
   function handleCardPress() {
     if (onExpandedChange != null) {
       tmp();
@@ -701,7 +701,7 @@ export default function GuildBoostingMarketingTierCards(guild) {
         const _Math = Math;
         const scrollToIndex = current.scrollToIndex;
         premiumTier = Math.min(TIER_3.TIER_3, premiumTier.premiumTier + 1);
-        const findIndexResult = items1.findIndex(f106666);
+        const findIndexResult = items1.findIndex(f106708);
         let num3 = 0;
         if (-1 !== findIndexResult) {
           num3 = findIndexResult;
@@ -730,7 +730,7 @@ export default function GuildBoostingMarketingTierCards(guild) {
   };
   const MarketingCardsScroller = guild(onExpandedChange[35]).MarketingCardsScroller;
   let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
-  let findIndexResult = items1.findIndex(f106666);
+  let findIndexResult = items1.findIndex(f106708);
   num = 0;
   arr2 = items1;
   const tmp5 = closure_9;

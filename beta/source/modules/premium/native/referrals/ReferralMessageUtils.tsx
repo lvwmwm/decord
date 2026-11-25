@@ -1,10 +1,10 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12337
+// Function ID: 12338
 // Name: ReferralMessageUtils
 // Dependencies: [2178, 8847, 2]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial
 
-// Module 12341 (ReferralMessageUtils)
+// Module 12337 (ReferralMessageUtils)
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
 import UserOfferStore from "UserOfferStore" /* 8847 */;
 import size from "module_2" /* 2 */;

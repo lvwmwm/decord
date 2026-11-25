@@ -1,15 +1,15 @@
-// Module ID: 12184
-// Function ID: 12185
+// Module ID: 12180
+// Function ID: 12181
 // Name: SpotifyUtils
-// Dependencies: [5, 2139, 6899, 6896, 6897, 1071, 1088, 6691, 6898, 12185, 2]
+// Dependencies: [5, 2139, 6899, 6896, 6897, 1071, 1088, 6691, 6898, 12181, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 12184 (SpotifyUtils)
+// Module 12180 (SpotifyUtils)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import PlatformsDefault from "Platforms" /* 6691 */;
 import SpotifyActionCreators from "SpotifyActionCreators" /* 6898 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 12185 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 12181 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
 import SpotifyProtocolStore from "SpotifyProtocolStore" /* 6899 */;

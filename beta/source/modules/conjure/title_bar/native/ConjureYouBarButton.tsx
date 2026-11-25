@@ -1,24 +1,24 @@
-// Module ID: 17970
-// Function ID: 17971
+// Module ID: 17981
+// Function ID: 17982
 // Name: ConjureYouBarButton
-// Dependencies: [19, 16476, 21, 4913, 575, 13784, 13768, 1501, 17971, 13777, 12329, 13779, 2]
+// Dependencies: [19, 16486, 21, 4913, 575, 13787, 13771, 1501, 17982, 13780, 12325, 13782, 2]
 
-// Module 17970 (ConjureYouBarButton)
+// Module 17981 (ConjureYouBarButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Link from "Link" /* 1501 */;
-import useConjureWandStatusDefault from "useConjureWandStatus" /* 13768 */;
-import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 13779 */;
-import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 13784 */;
-import YouBarConstants from "YouBarConstants" /* 16476 */;
-import YouBarButtonDefault from "YouBarButton" /* 17971 */;
+import useConjureWandStatusDefault from "useConjureWandStatus" /* 13771 */;
+import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 13782 */;
+import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 13787 */;
+import YouBarConstants from "YouBarConstants" /* 16486 */;
+import YouBarButtonDefault from "YouBarButton" /* 17982 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp5;
-const MagicWandIcon2 = tmp5(12329);
+const MagicWandIcon2 = tmp5(12325);
 function confirmUnpin() {
   confirmConjureYouBarPinDefault(false);
 }
@@ -43,7 +43,7 @@ const memoResult = react.memo(function ConjureYouBarButton(hasNameplate) {
   YouBarButtonDefault;
   if (working) {
     const obj3 = { size: YOU_BAR_BUTTON_ICON_SIZE, paused: !isFocused };
-    tmp7Result = tmp7(tmp2(13777), obj3);
+    tmp7Result = tmp7(tmp2(13780), obj3);
   } else {
     const obj4 = { size: "custom", style: tmp.icon, color: str };
     str = undefined;

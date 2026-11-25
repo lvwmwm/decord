@@ -1,10 +1,10 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 14825
+// Function ID: 14826
 // Name: GuildSubscriptionRemoval
-// Dependencies: [19, 21, 7786, 14816, 14817, 14818, 4920, 5600, 2]
+// Dependencies: [19, 21, 7786, 14826, 14827, 14828, 4920, 5600, 2]
 // Exports: GuildSubscriptionRemoval, getGuildSubscriptionRemovalSource, useGuildSubscriptionRemovalSource
 
-// Module 14815 (GuildSubscriptionRemoval)
+// Module 14825 (GuildSubscriptionRemoval)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 4920 */;
 import FastImageDefault from "FastImage" /* 5600 */;

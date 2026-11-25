@@ -1,18 +1,18 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11400
+// Function ID: 11401
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 6614, 4741, 1071, 1388, 21, 4913, 11368, 11165, 7520, 7539, 504, 1255, 5504, 1112, 7030, 5129, 5130, 5511, 5600, 10503, 11389, 2]
+// Dependencies: [32, 19, 17, 6614, 4741, 1071, 1388, 21, 4913, 11373, 11170, 7520, 7539, 504, 1255, 5504, 1112, 7030, 5129, 5130, 5511, 5600, 10508, 11394, 2]
 // Exports: default
 
-// Module 11395 (StickerPickerEmptyState)
+// Module 11400 (StickerPickerEmptyState)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import StickersConstants from "StickersConstants" /* 4741 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
-import StickerDefault from "Sticker" /* 11165 */;
-import StickersHooks from "StickersHooks" /* 11368 */;
+import StickerDefault from "Sticker" /* 11170 */;
+import StickersHooks from "StickersHooks" /* 11373 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 6614 */;
@@ -129,7 +129,7 @@ export default function _default() {
     }
   };
   Button = require("components/Button/Button").Button;
-  obj9 = { source: analyticsLocations(10503), style: tmp.nitroWheel, resizeMode: "contain" };
+  obj9 = { source: analyticsLocations(10508), style: tmp.nitroWheel, resizeMode: "contain" };
   tmp6 = analyticsLocations(5600);
   intl3 = require("intl").intl;
   items2[3] = closure_11(View, obj7);

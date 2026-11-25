@@ -1,21 +1,21 @@
-// Module ID: 11943
-// Function ID: 11944
+// Module ID: 11948
+// Function ID: 11949
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 10412, 10382, 6551, 4784, 5651, 504, 12, 558, 6659, 1254, 8437, 11944, 10381, 11945, 2]
+// Dependencies: [32, 19, 17, 10417, 10387, 6551, 4784, 5651, 504, 12, 558, 6659, 1254, 8437, 11949, 10386, 11950, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 11943 (MessagesHooks)
+// Module 11948 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6659 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 8437 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10381 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10382 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11945 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10386 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10387 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11950 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10412 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10417 */;
 import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6551 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
@@ -128,7 +128,7 @@ export function useFetchVoiceChannelInviteStartTimes(stateFromStores4) {
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11944);
+            let tmp4Result = tmp4(11949);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

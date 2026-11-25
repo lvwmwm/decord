@@ -1,17 +1,17 @@
-// Module ID: 14234
-// Function ID: 14235
+// Module ID: 14244
+// Function ID: 14245
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1071, 1082, 21, 14235, 5929, 14237, 14239, 9965, 9238, 1255, 6429, 7811, 7813, 12249, 38, 1268, 14240, 1112, 7095, 12043, 2]
+// Dependencies: [19, 1071, 1082, 21, 14245, 5929, 14247, 14249, 9965, 9238, 1255, 6429, 7811, 7813, 12245, 38, 1268, 14250, 1112, 7095, 12048, 2]
 // Exports: default
 
-// Module 14234 (OrbCheckoutModal)
+// Module 14244 (OrbCheckoutModal)
 import Constants2 from "Constants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9965 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14235 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 14237 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14245 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 14247 */;
 import "react";
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
@@ -40,12 +40,12 @@ function OrbCheckoutModalContent(orbBalance) {
   const tmp4 = authStore2;
   if (tmp5) {
     const obj2 = { error: orbCheckoutErrorMessage };
-    tmp5 = unpackModuleId(tmp(14237).OrbCheckoutErrorCard, obj2);
+    tmp5 = unpackModuleId(tmp(14247).OrbCheckoutErrorCard, obj2);
   }
   const items = [tmp5, , ];
   const obj3 = { skuId, orbPriceAmount };
   orbPriceAmount = undefined;
-  const OrbCheckoutOrderSummary = tmp(14237).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(14247).OrbCheckoutOrderSummary;
   if (orbProductContext != null) {
     orbPriceAmount = orbProductContext.orbPriceAmount;
   }

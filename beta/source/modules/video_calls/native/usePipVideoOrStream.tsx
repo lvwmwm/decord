@@ -1,13 +1,13 @@
-// Module ID: 10651
-// Function ID: 10652
+// Module ID: 10656
+// Function ID: 10657
 // Name: usePipVideoOrStream
-// Dependencies: [4761, 6620, 10652, 6400, 502, 4762, 2131, 5654, 5563, 504, 6401, 5089, 10642, 2]
+// Dependencies: [4761, 6620, 10657, 6400, 502, 4762, 2131, 5654, 5563, 504, 6401, 5089, 10647, 2]
 // Exports: default, useHasPipParticipant
 
-// Module 10651 (usePipVideoOrStream)
+// Module 10656 (usePipVideoOrStream)
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 10652 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 10657 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

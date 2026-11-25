@@ -1,11 +1,11 @@
-// Module ID: 19512
-// Function ID: 19513
+// Module ID: 19523
+// Function ID: 19524
 // Name: ForumManager
-// Dependencies: [4762, 4769, 7484, 11673, 2]
+// Dependencies: [4762, 4769, 7484, 11678, 2]
 
-// Module 19512 (ForumManager)
+// Module 19523 (ForumManager)
 import ChannelConstants from "ChannelConstants" /* 4769 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 11673 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 11678 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;

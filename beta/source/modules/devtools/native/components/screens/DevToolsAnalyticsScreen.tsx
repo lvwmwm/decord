@@ -1,10 +1,10 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 17010
+// Function ID: 17011
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1386, 15638, 1071, 21, 4913, 575, 5504, 7045, 11365, 2168, 10386, 7030, 7545, 5613, 504, 7490, 5929, 7348, 7556, 10228, 5620, 16995, 7427, 2]
+// Dependencies: [32, 19, 17, 1386, 15648, 1071, 21, 4913, 575, 5504, 7045, 11370, 2168, 10391, 7030, 7545, 5613, 504, 7490, 5929, 7348, 7556, 10233, 5620, 17005, 7427, 2]
 // Exports: default
 
-// Module 17000 (DevToolsAnalyticsScreen)
+// Module 17010 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -14,7 +14,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 15638 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 15648 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -70,7 +70,7 @@ function LoggedEvent(arg0) {
   let tmp6 = View;
   let obj = {
     arrow: !tmp5Result2,
-    icon: closure_8(fingerprint(11365).AnalyticsIcon, {}),
+    icon: closure_8(fingerprint(11370).AnalyticsIcon, {}),
     label: event,
     subLabel: str2,
     onPress() {
@@ -104,7 +104,7 @@ function LoggedEvent(arg0) {
     let tmp7Result = null != user;
     const tmp12 = importDefault;
     if (tmp7Result) {
-      const obj7 = { name: "User ", children: closure_8(tmp12(10386), obj8) };
+      const obj7 = { name: "User ", children: closure_8(tmp12(10391), obj8) };
       obj8 = { user };
       tmp7Result = tmp7(tmp11, obj7);
     }
@@ -224,10 +224,10 @@ export default function DevToolsAnalyticsScreen() {
   const Stack = tmp2(5929).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
   const TableRowGroup = tmp2(7348).TableRowGroup;
-  const obj4 = { icon: closure_8(trimmed(10228).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
+  const obj4 = { icon: closure_8(trimmed(10233).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
   const TableSwitchRow = tmp2(7556).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5620).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(16995).clearAnalyticsLog };
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5620).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17005).clearAnalyticsLog };
   const TableRow = tmp2(7045).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];

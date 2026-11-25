@@ -1,10 +1,10 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11884
+// Function ID: 11885
 // Name: useCanSearchForumPostsByChannelId
 // Dependencies: [4762, 4845, 1071, 504, 2]
 // Exports: useCanSearchForumPostsByChannelId
 
-// Module 11879 (useCanSearchForumPostsByChannelId)
+// Module 11884 (useCanSearchForumPostsByChannelId)
 import Constants from "Constants" /* 1071 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import PermissionStore from "PermissionStore" /* 4845 */;

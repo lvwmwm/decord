@@ -1,9 +1,9 @@
-// Module ID: 13189
-// Function ID: 13190
+// Module ID: 13192
+// Function ID: 13193
 // Name: InviteSuggestionsStore
 // Dependencies: [10062, 8143, 4762, 6538, 4825, 4845, 4855, 1071, 8054, 6678, 7267, 1254, 504, 572, 2]
 
-// Module 13189 (InviteSuggestionsStore)
+// Module 13192 (InviteSuggestionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import sortByMatchScoreDefault from "sortByMatchScore" /* 6678 */;

@@ -1,52 +1,103 @@
 // Module ID: 11449
 // Function ID: 11450
-// Dependencies: [41, 42, 11414]
+// Dependencies: [41, 42, 11421]
 
 // Module 11449
-import _mod11414 from "module_11414" /* 11414 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 11421 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let start;
-
-const regExp = new RegExp("^\\s*(" + _mod11414.YEAR_PATTERN + ")", "i");
-class ENExtractYearSuffixRefiner {
-  constructor() {
-    _classCallCheck(this, ENExtractYearSuffixRefiner);
+const regExp = new RegExp("([^\\d]|^)([0-3]{0,1}[0-9]{1})[\\/\\.\\-]([0-3]{0,1}[0-9]{1})(?:[\\/\\.\\-]([0-9]{4}|[0-9]{2}))?(\\W|$)", "i");
+class SlashDateFormatParser {
+  constructor(arg0) {
+    const self = this;
+    _classCallCheck(this, SlashDateFormatParser);
+    let num = 2;
+    if (arg0) {
+      num = 3;
+    }
+    self.groupNumberMonth = num;
+    let num2 = 3;
+    if (arg0) {
+      num2 = 2;
+    }
+    self.groupNumberDay = num2;
   }
 }
 const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
-    let text = arg0;
-    const item = arr.forEach((start) => {
-      text = start;
-      start = start.start;
-      if (start.isDateWithUnknownYear()) {
-        const str = text.text;
-        const match = regExp.exec(str.substring(start.index + start.text.length));
-        const obj = text;
-        if (match) {
-          const str2 = match[0];
-          if (str2.trim().length > 3) {
-            obj.debug(() => {
-              console.log("Extracting year: '" + match[0] + "' into : " + closure_0);
-            });
-            const parseYearResult = _mod11414.parseYear(match[1]);
-            if (null != start.end) {
-              const end = start.end;
-              end.assign("year", parseYearResult);
-            }
-            const start2 = start.start;
-            start2.assign("year", parseYearResult);
-            start.text = start.text + match[0];
-          }
-        }
-      }
-    });
-    return arr;
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
   }
 };
-const items = [entry];
+let items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(text, index) {
+      let tmp6;
+      let tmp7;
+      const sum = index.index + index[1].length;
+      const diff = index.index + index[0].length - index[5].length;
+      if (sum > 0) {
+        const str = text.text;
+        str.substring(0, sum);
+      }
+      if (diff < text.text.length) {
+        const str4 = text.text;
+        str4.substring(diff);
+      }
+      const str7 = text.text;
+      const str8 = str7.substring(sum, diff);
+      if (!str8.match(/^\d\.\d$/)) {
+        if (!str8.match(/^\d\.\d{1,2}\.\d{1,2}\s*$/)) {
+          const self = this;
+          const parsingResult = text.createParsingResult(sum, str8);
+          const _parseInt = parseInt;
+          const parsed = parseInt(index[this.groupNumberMonth]);
+          const _parseInt2 = parseInt;
+          const parsed1 = parseInt(index[this.groupNumberDay]);
+          if (parsed < 1) {
+            tmp6 = parsed1;
+            tmp7 = parsed;
+            if (parsed > 12) {
+              if (parsed1 >= 1) {
+                if (parsed1 <= 12) {
+                  if (parsed <= 31) {
+                    const items = [parsed, parsed1];
+                    [tmp6, tmp7] = items;
+                  }
+                }
+              }
+              return null;
+            }
+          } else {
+            tmp6 = parsed1;
+            tmp7 = parsed;
+          }
+          if (tmp6 >= 1) {
+            if (tmp6 <= 31) {
+              const start3 = parsingResult.start;
+              start3.assign("day", tmp6);
+              const start4 = parsingResult.start;
+              start4.assign("month", tmp7);
+              if (index[4]) {
+                const _parseInt3 = parseInt;
+                const parsed2 = parseInt(index[4]);
+                const start2 = parsingResult.start;
+                start2.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
+              } else {
+                const start = parsingResult.start;
+                start.imply("year", findMostLikelyADYear.findYearClosestToRef(text.refDate, tmp6, tmp7));
+              }
+              return parsingResult.addTag("parser/SlashDateFormatParser");
+            }
+          }
+          return null;
+        }
+      }
+    }
+  }
+];
 
-export default _createClass(ENExtractYearSuffixRefiner, items);
+export default _createClass(SlashDateFormatParser, items);

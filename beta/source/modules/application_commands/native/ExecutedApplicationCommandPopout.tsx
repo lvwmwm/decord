@@ -1,10 +1,10 @@
-// Module ID: 10547
-// Function ID: 10548
+// Module ID: 10552
+// Function ID: 10553
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 4914, 4762, 4819, 4784, 5964, 4855, 1386, 10436, 5937, 1071, 1499, 5938, 21, 4913, 575, 2117, 1186, 5127, 8067, 4969, 5504, 5529, 1112, 7520, 504, 6342, 9456, 8699, 5600, 1415, 7047, 10548, 5594, 7045, 1626, 5565, 5929, 7348, 7539, 10549, 5141, 2]
+// Dependencies: [19, 17, 4914, 4762, 4819, 4784, 5964, 4855, 1386, 10441, 5937, 1071, 1499, 5938, 21, 4913, 575, 2117, 1186, 5127, 8067, 4969, 5504, 5529, 1112, 7520, 504, 6342, 9456, 8699, 5600, 1415, 7047, 10553, 5594, 7045, 1626, 5565, 5929, 7348, 7539, 10554, 5141, 2]
 // Exports: default
 
-// Module 10547 (ExecutedApplicationCommandPopout)
+// Module 10552 (ExecutedApplicationCommandPopout)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1415 */;
@@ -20,8 +20,8 @@ import ToastUtils from "ToastUtils" /* 5594 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import react_nativeDefault from "react-native" /* 10548 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 10549 */;
+import react_nativeDefault from "react-native" /* 10553 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 10554 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
@@ -31,7 +31,7 @@ import GuildStore from "GuildStore" /* 4784 */;
 import MessageStore from "MessageStore" /* 5964 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10436 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10441 */;
 import Constants from "Constants" /* 1071 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5938 */;
 import Fragment_mod from "Fragment" /* 21 */;

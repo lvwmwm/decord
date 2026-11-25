@@ -1,10 +1,10 @@
-// Module ID: 12295
-// Function ID: 12296
+// Module ID: 12291
+// Function ID: 12292
 // Name: conjureCreatorByline
 // Dependencies: [1112, 4190, 4969, 2]
 // Exports: formatConjureCreatorByline
 
-// Module 12295 (conjureCreatorByline)
+// Module 12291 (conjureCreatorByline)
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import UserUtils from "UserUtils" /* 4969 */;

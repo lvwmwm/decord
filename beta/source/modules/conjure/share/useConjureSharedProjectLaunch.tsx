@@ -1,11 +1,11 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 12284
+// Function ID: 12285
 // Name: useConjureSharedProjectLaunch
-// Dependencies: [5, 32, 19, 4784, 504, 11974, 12283, 2]
+// Dependencies: [5, 32, 19, 4784, 504, 11979, 12279, 2]
 // Exports: default
 
-// Module 12288 (useConjureSharedProjectLaunch)
-import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11974 */;
+// Module 12284 (useConjureSharedProjectLaunch)
+import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11979 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

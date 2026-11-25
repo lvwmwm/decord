@@ -1,10 +1,10 @@
-// Module ID: 11154
-// Function ID: 11155
+// Module ID: 11159
+// Function ID: 11160
 // Name: ChannelSettingsNotifications
-// Dependencies: [19, 4766, 4762, 5534, 4855, 6552, 1386, 1071, 6553, 1081, 21, 1112, 11155, 4913, 575, 4974, 5650, 7485, 5127, 11156, 2119, 7480, 5529, 7348, 7045, 11158, 7556, 7347, 7349, 5504, 7709, 5929, 504, 11159, 2]
+// Dependencies: [19, 4766, 4762, 5534, 4855, 6552, 1386, 1071, 6553, 1081, 21, 1112, 11160, 4913, 575, 4974, 5650, 7485, 5127, 11161, 2119, 7480, 5529, 7348, 7045, 11163, 7556, 7347, 7349, 5504, 7709, 5929, 504, 11164, 2]
 // Exports: default
 
-// Module 11154 (ChannelSettingsNotifications)
+// Module 11159 (ChannelSettingsNotifications)
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import intl16 from "intl" /* 1112 */;
@@ -20,7 +20,7 @@ import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7480 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7485 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7556 */;
 import _mod7709 from "module_7709" /* 7709 */;
-import MutedUntilTextDefault from "MutedUntilText" /* 11158 */;
+import MutedUntilTextDefault from "MutedUntilText" /* 11163 */;
 import react from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -222,9 +222,9 @@ class ChannelSettingsNotifications extends PureComponent {
       const obj6 = { muteConfig, type: CHANNEL };
       const tmp10 = MutedUntilTextDefault;
       if (channel.type === map1.GUILD_CATEGORY) {
-        CHANNEL = tmp(11158).MuteSettingType.CATEGORY;
+        CHANNEL = tmp(11163).MuteSettingType.CATEGORY;
       } else {
-        CHANNEL = tmp(11158).MuteSettingType.CHANNEL;
+        CHANNEL = tmp(11163).MuteSettingType.CHANNEL;
       }
       tmp6Result = tmp6(tmp10, obj6);
     }

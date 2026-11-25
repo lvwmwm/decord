@@ -1,17 +1,17 @@
-// Module ID: 10408
-// Function ID: 10409
+// Module ID: 10413
+// Function ID: 10414
 // Name: MessageImpressionAnalyticsHelpers
-// Dependencies: [19, 5632, 5657, 1071, 8390, 8438, 10409, 6891, 5635, 8437, 10410, 10411, 5633, 2]
+// Dependencies: [19, 5632, 5657, 1071, 8390, 8438, 10414, 6891, 5635, 8437, 10415, 10416, 5633, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 10408 (MessageImpressionAnalyticsHelpers)
+// Module 10413 (MessageImpressionAnalyticsHelpers)
 import CodedLink from "CodedLink" /* 5635 */;
 import MessageEmbedConstants from "MessageEmbedConstants" /* 8390 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 8437 */;
 import Constants2 from "Constants" /* 8438 */;
-import MessageViewTrackingManager from "MessageViewTrackingManager" /* 10409 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10410 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10411 */;
+import MessageViewTrackingManager from "MessageViewTrackingManager" /* 10414 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10415 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10416 */;
 import react from "react" /* 19 */;
 import InviteStore from "InviteStore" /* 5632 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
@@ -296,7 +296,7 @@ export function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEm
                   let voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(tmp10, tmp13);
                   someResult = voiceStatesForChannelAlt.some((voiceState) => voiceState.voiceState.selfStream);
                 }
-                let obj = { type: tmp7(10409).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
+                let obj = { type: tmp7(10414).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
                 tmp20 = someResult;
                 let push = items.push;
                 let tmp7Result = tmp7(5633);

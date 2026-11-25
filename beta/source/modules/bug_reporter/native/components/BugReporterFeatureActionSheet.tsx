@@ -1,10 +1,10 @@
-// Module ID: 11208
-// Function ID: 11209
+// Module ID: 11213
+// Function ID: 11214
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4913, 575, 5504, 7349, 11172, 5127, 5488, 12, 6677, 7426, 9660, 5141, 7515, 1112, 7427, 7432, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 5504, 7349, 11177, 5127, 5488, 12, 6677, 7426, 9660, 5141, 7515, 1112, 7427, 7432, 2]
 // Exports: default
 
-// Module 11208 (BugReporterFeatureActionSheet)
+// Module 11213 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -62,10 +62,10 @@ let closure_10 = react.memo(function BugReporterFeature(item) {
     }
   };
   const TableRadioRow = item(7349).TableRadioRow;
-  obj2 = item(11172);
-  const obj3 = item(11172);
+  obj2 = item(11177);
+  const obj3 = item(11177);
   featureId = obj3.getFeatureId(item);
-  obj4 = item(11172);
+  obj4 = item(11177);
   return closure_6(TableRadioRow, obj);
 });
 const result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

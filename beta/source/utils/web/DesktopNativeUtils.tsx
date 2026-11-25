@@ -1044,8 +1044,8 @@ let obj2 = {
     }
     return false;
   },
-  saveImage(value, arg1, arg2) {
-    let closure_0 = value;
+  saveImage(arg0, arg1, arg2) {
+    let closure_0 = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
     return (async (arg0, value) => {
@@ -1066,7 +1066,6 @@ let obj2 = {
       } else {
         let c8;
         try {
-          let closure_0;
           let png;
           let directory;
           let closure_3;

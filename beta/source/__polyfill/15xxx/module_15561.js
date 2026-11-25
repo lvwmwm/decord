@@ -6,12 +6,16 @@
 import _mod15562 from "module_15562" /* 15562 */;
 
 
-export default (obj) => {
-  let tmp2;
-  if (typeof obj === "object") {
-    tmp2 = null !== obj;
-  } else {
-    tmp2 = _mod15562(obj);
+export default (arg0, arg1) => {
+  let tmp3 = _mod15562[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod15562;
+    if (!arg1) {
+      obj = {};
+    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
   }
-  return tmp2;
+  return tmp3;
 };

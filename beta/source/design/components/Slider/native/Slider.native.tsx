@@ -1,15 +1,15 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14512
+// Function ID: 14513
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 4913, 575, 10970, 5129, 5130, 1378, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 10975, 5129, 5130, 1378, 2]
 // Exports: Slider, useLatestSliderValue
 
-// Module 14502 (Slider)
+// Module 14512 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
-import _modDef10970 from "module_10970" /* 10970 */;
+import _modDef10975 from "module_10975" /* 10975 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -154,7 +154,7 @@ export function Slider(maxValue) {
     testID,
     onResponderGrant: fn
   };
-  const tmp20 = _modDef10970;
+  const tmp20 = _modDef10975;
   if (value == null) {
     value = first;
   }

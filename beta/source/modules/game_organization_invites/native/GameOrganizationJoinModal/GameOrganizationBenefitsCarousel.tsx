@@ -1,19 +1,19 @@
-// Module ID: 12262
-// Function ID: 12263
+// Module ID: 12258
+// Function ID: 12259
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 12263, 12267, 12271, 4913, 7047, 5929, 5504, 10504, 12275, 1186, 1494, 2]
+// Dependencies: [32, 19, 17, 21, 575, 12259, 12263, 12267, 4913, 7047, 5929, 5504, 10509, 12271, 1186, 1494, 2]
 // Exports: default
 
-// Module 12262 (GameOrganizationBenefitsCarousel)
+// Module 12258 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Card_Card from "Card/Card" /* 7047 */;
-import GuildRolesAbstractUI from "GuildRolesAbstractUI" /* 12263 */;
-import GuildChatAbstractUI from "GuildChatAbstractUI" /* 12267 */;
-import GuildInviteAbstractUI from "GuildInviteAbstractUI" /* 12271 */;
-import GameOrganizationBenefits from "GameOrganizationBenefits" /* 12275 */;
+import GuildRolesAbstractUI from "GuildRolesAbstractUI" /* 12259 */;
+import GuildChatAbstractUI from "GuildChatAbstractUI" /* 12263 */;
+import GuildInviteAbstractUI from "GuildInviteAbstractUI" /* 12267 */;
+import GameOrganizationBenefits from "GameOrganizationBenefits" /* 12271 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -111,19 +111,19 @@ function BenefitsCarousel(cardWidth) {
       return metroRequire(BenefitCard, obj, key.key);
     })
   };
-  tmp13 = displayNoun(10504);
-  prop = cardWidth(12275).GAME_ORGANIZATION_BENEFITS;
+  tmp13 = displayNoun(10509);
+  prop = cardWidth(12271).GAME_ORGANIZATION_BENEFITS;
   const children = [closure_6(closure_5, obj), ];
   let tmp11Result = null;
   const tmp10 = closure_5;
   const tmp11 = closure_6;
   const tmp9 = closure_7;
-  if (cardWidth(12275).GAME_ORGANIZATION_BENEFITS.length > 1) {
+  if (cardWidth(12271).GAME_ORGANIZATION_BENEFITS.length > 1) {
     tmp11Result = null;
     if (tmp6 > 0) {
       tmp11Result = null;
       if (first > tmp6) {
-        const obj3 = { containerStyle: tmp2.pagination, numberOfItems: cardWidth(12275).GAME_ORGANIZATION_BENEFITS.length, currentIndex: tmp4 };
+        const obj3 = { containerStyle: tmp2.pagination, numberOfItems: cardWidth(12271).GAME_ORGANIZATION_BENEFITS.length, currentIndex: tmp4 };
         const CarouselPagination = tmp14(1186).CarouselPagination;
         tmp11Result = tmp11(CarouselPagination, obj3);
       }

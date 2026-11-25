@@ -1,8 +1,8 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 12654
+// Function ID: 12655
 // Dependencies: [2]
 
-// Module 12651
+// Module 12654
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_09_jester_nightfall.webp.js");

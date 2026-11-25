@@ -1,10 +1,10 @@
-// Module ID: 11050
-// Function ID: 11051
+// Module ID: 11055
+// Function ID: 11056
 // Name: StageActionHeader
-// Dependencies: [19, 17, 6620, 4762, 6664, 4784, 4767, 10880, 1071, 21, 575, 4913, 4910, 5467, 1255, 5650, 10601, 6429, 6494, 504, 10911, 11051, 1112, 5649, 1186, 6543, 6537, 4320, 11052, 5504, 11053, 1628, 5529, 5468, 7619, 11054, 6497, 8017, 11055, 11056, 8051, 10882, 10890, 10891, 10895, 11057, 11058, 2]
+// Dependencies: [19, 17, 6620, 4762, 6664, 4784, 4767, 10885, 1071, 21, 575, 4913, 4910, 5467, 1255, 5650, 10606, 6429, 6494, 504, 10916, 11056, 1112, 5649, 1186, 6543, 6537, 4320, 11057, 5504, 11058, 1628, 5529, 5468, 7619, 11059, 6497, 8017, 11060, 11061, 8051, 10887, 10895, 10896, 10900, 11062, 11063, 2]
 // Exports: closeStageModal
 
-// Module 11050 (StageActionHeader)
+// Module 11055 (StageActionHeader)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -24,15 +24,15 @@ import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
 import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6543 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7619 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
-import StatusBarDefault from "StatusBar" /* 10601 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 10895 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10911 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11051 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11052 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11053 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11054 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11057 */;
-import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 11058 */;
+import StatusBarDefault from "StatusBar" /* 10606 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 10900 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10916 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11056 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11057 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11058 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11059 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11062 */;
+import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 11063 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
@@ -40,7 +40,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import StageInstanceStore from "StageInstanceStore" /* 4767 */;
-import StageMusicStore from "StageMusicStore" /* 10880 */;
+import StageMusicStore from "StageMusicStore" /* 10885 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -290,7 +290,7 @@ class MusicMuteButton {
     items = [StageMusicStore];
     stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
     let tmp6Result = null;
-    const obj2 = stateFromStores(10882);
+    const obj2 = stateFromStores(10887);
     if (obj2.useShowStageMusicMuteButton(channelId)) {
       let stringResult;
       const tmp8 = ChannelCallNavigatorIconDefault;
@@ -307,7 +307,7 @@ class MusicMuteButton {
       const obj3 = {
         accessibilityLabel: stringResult,
         containerStyle: tmp.iconBackground,
-        source: tmp7(stateFromStores ? 10890 : 10891),
+        source: tmp7(stateFromStores ? 10895 : 10896),
         onPress() {
             const obj = StageMusicActionCreators;
             return obj.updateStageMusicMuted(!stateFromStores);

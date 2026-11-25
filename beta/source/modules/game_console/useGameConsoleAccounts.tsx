@@ -1,10 +1,10 @@
-// Module ID: 11015
-// Function ID: 11016
+// Module ID: 11020
+// Function ID: 11021
 // Name: useGameConsoleAccounts
 // Dependencies: [6689, 1071, 504, 1254, 2]
 // Exports: default
 
-// Module 11015 (useGameConsoleAccounts)
+// Module 11020 (useGameConsoleAccounts)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;

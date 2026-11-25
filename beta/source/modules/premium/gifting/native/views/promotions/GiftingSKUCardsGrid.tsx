@@ -1,10 +1,10 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 13943
+// Function ID: 13944
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 8080, 2110, 8081, 8082, 1071, 9010, 21, 575, 4913, 8920, 9034, 9020, 5600, 9033, 9013, 9032, 5477, 4910, 5468, 9005, 4975, 11918, 7030, 5504, 1112, 1494, 12, 2]
+// Dependencies: [19, 17, 8080, 2110, 8081, 8082, 1071, 9010, 21, 575, 4913, 8920, 9034, 9020, 5600, 9033, 9013, 9032, 5477, 4910, 5468, 9005, 4975, 11923, 7030, 5504, 1112, 1494, 12, 2]
 // Exports: default
 
-// Module 13940 (GiftingSKUCardsGrid)
+// Module 13943 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -20,7 +20,7 @@ import ProfileEffectRecord from "ProfileEffectRecord" /* 8081 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 8082 */;
 import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 9005 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9010 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11918 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11923 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

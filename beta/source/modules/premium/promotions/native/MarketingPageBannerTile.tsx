@@ -1,7 +1,7 @@
 // Module ID: 9405
 // Function ID: 9406
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4913, 575, 7520, 9406, 5930, 1263, 13951, 5600, 5504, 5592, 10952, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7520, 9406, 5930, 1263, 13954, 5600, 5504, 5592, 10957, 2]
 // Exports: default
 
 // Module 9405 (MarketingPageBannerTile)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import LinkingDefault from "Linking" /* 5592 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 5930 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10952 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10957 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -89,9 +89,9 @@ export default function MarketingPageBannerTile(bannerFields) {
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(13951);
+  const tmp4Result = helpArticleLinkProps(13954);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(13951);
+  const tmp4Result2 = helpArticleLinkProps(13954);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj3 = { style: items, children: closure_5(View, obj4) };
   items = [tmp.container, style];

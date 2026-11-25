@@ -1,13 +1,13 @@
-// Module ID: 18410
-// Function ID: 18411
+// Module ID: 18421
+// Function ID: 18422
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1624, 1071, 8456, 13096, 6893, 7466, 11620, 2117, 2]
+// Dependencies: [19, 1624, 1071, 8456, 13099, 6893, 7466, 11625, 2117, 2]
 // Exports: default
 
-// Module 18410 (useMediaKeyboardConfig)
+// Module 18421 (useMediaKeyboardConfig)
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1624 */;
 import Server from "Server" /* 2117 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 13096 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 13099 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -50,7 +50,7 @@ export default function useMediaKeyboardConfig(arg0) {
   const tmp2Result3 = context(7466);
   const tmp8 = tmp2Result3.useIsAppLauncherEnabled(channel.id) && !tmp;
   MediaKeyboardTarget = tmp8;
-  const tmp2Result4 = context(11620);
+  const tmp2Result4 = context(11625);
   mediaKeyboardDraftType = tmp2Result4.getMediaKeyboardDraftType(context.target);
   let items = [context, tmp4, tmp5, mediaKeyboardDraftType, canStartThread, tmp8];
   return canStartThread.useMemo(function() {

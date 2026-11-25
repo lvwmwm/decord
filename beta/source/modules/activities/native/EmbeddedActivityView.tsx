@@ -1,17 +1,17 @@
-// Module ID: 10783
-// Function ID: 10784
+// Module ID: 10788
+// Function ID: 10789
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 4761, 2144, 1363, 10774, 21, 4913, 10781, 1494, 572, 10784, 10785, 10787, 10812, 10775, 504, 10829, 10626, 10830, 5649, 10832, 2]
+// Dependencies: [109, 32, 19, 17, 4761, 2144, 1363, 10779, 21, 4913, 10786, 1494, 572, 10789, 10790, 10792, 10817, 10780, 504, 10834, 10631, 10835, 5649, 10837, 2]
 
-// Module 10783 (EmbeddedActivityView)
+// Module 10788 (EmbeddedActivityView)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApplicationConstants from "ApplicationConstants" /* 1363 */;
 import Constants from "Constants" /* 2144 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5649 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10626 */;
-import Constants2 from "Constants" /* 10774 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 10784 */;
-import activityWebViewController from "activityWebViewController" /* 10787 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10631 */;
+import Constants2 from "Constants" /* 10779 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 10789 */;
+import activityWebViewController from "activityWebViewController" /* 10792 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -124,7 +124,7 @@ function EmbeddedActivityWebView(applicationId) {
     return obj.getOrCreateActivityWebViewController(applicationId);
   }), 1)[0]);
   let obj = { iframeId, shellBridgeSecret, deepLinkQueryParams, applicationId };
-  const BaseEmbeddedAppWebView = applicationId(10812).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = applicationId(10817).BaseEmbeddedAppWebView;
   const merged1 = Object.assign(merged);
   return closure_13(BaseEmbeddedAppWebView, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 17823
-// Function ID: 17824
+// Module ID: 17833
+// Function ID: 17834
 // Name: CoverTitle
 // Dependencies: [32, 19, 17, 21, 4913, 5504, 2]
 // Exports: default
 
-// Module 17823 (CoverTitle)
+// Module 17833 (CoverTitle)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

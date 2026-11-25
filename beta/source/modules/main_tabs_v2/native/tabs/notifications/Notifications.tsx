@@ -1,10 +1,10 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18051
+// Function ID: 18052
 // Name: Notifications
-// Dependencies: [19, 17, 9420, 4759, 21, 4913, 575, 5090, 7373, 18041, 7017, 7030, 1112, 15969, 5504, 18042, 11680, 18043, 17513, 7520, 7539, 8268, 7101, 5491, 18047, 18048, 13712, 10432, 5085, 1628, 17533, 9659, 4974, 2]
+// Dependencies: [19, 17, 9420, 4759, 21, 4913, 575, 5090, 7373, 18052, 7017, 7030, 1112, 15979, 5504, 18053, 11685, 18054, 17523, 7520, 7539, 8268, 7101, 5491, 18058, 18059, 13715, 10437, 5085, 1628, 17543, 9659, 4974, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 18040 (Notifications)
+// Module 18051 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
@@ -19,15 +19,15 @@ import useAnalyticsLocations from "useAnalyticsLocations" /* 7520 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import MainTabsConstants from "MainTabsConstants" /* 9420 */;
 import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 10432 */;
-import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 13712 */;
-import useAppFrameDefault from "useAppFrame" /* 17513 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17533 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18041 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18042 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18043 */;
-import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18047 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 18048 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 10437 */;
+import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 13715 */;
+import useAppFrameDefault from "useAppFrame" /* 17523 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17543 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18052 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18053 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18054 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18058 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 18059 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

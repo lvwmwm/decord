@@ -1,10 +1,10 @@
-// Module ID: 11886
-// Function ID: 11887
+// Module ID: 11891
+// Function ID: 11892
 // Name: UnreadSettingNoticeImpressionTracking
 // Dependencies: [5930, 1263, 2]
 // Exports: default
 
-// Module 11886 (UnreadSettingNoticeImpressionTracking)
+// Module 11891 (UnreadSettingNoticeImpressionTracking)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 5930 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14044
+// Function ID: 14045
 // Name: referralBannerContent
-// Dependencies: [14024, 1071, 14025, 14026, 8843, 1112, 2187, 2]
+// Dependencies: [14027, 1071, 14028, 14029, 8843, 1112, 2187, 2]
 // Exports: getAllReferralsSent, getReferralBannerBodyText, getReferralBannerHeadingText, getReferralStatus, getShouldShowSpendOrbsCta
 
-// Module 14041 (referralBannerContent)
+// Module 14044 (referralBannerContent)
 import Constants2 from "Constants" /* 1071 */;
 import intl12 from "intl" /* 1112 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
 import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 8843 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 14025 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14026 */;
-import Constants from "Constants" /* 14024 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 14028 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14029 */;
+import Constants from "Constants" /* 14027 */;
 import size from "module_2" /* 2 */;
 
 let _require, closure_0, closure_1, closure_2, dependencyMap, importDefault;

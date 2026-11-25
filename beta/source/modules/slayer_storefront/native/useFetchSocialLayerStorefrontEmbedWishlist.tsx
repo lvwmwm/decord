@@ -1,10 +1,10 @@
-// Module ID: 11968
-// Function ID: 11969
+// Module ID: 11973
+// Function ID: 11974
 // Name: useFetchSocialLayerStorefrontEmbedWishlist
 // Dependencies: [19, 6956, 8983, 502, 1386, 504, 8073, 8990, 8989, 2]
 // Exports: useFetchSocialLayerStorefrontEmbedWishlist
 
-// Module 11968 (useFetchSocialLayerStorefrontEmbedWishlist)
+// Module 11973 (useFetchSocialLayerStorefrontEmbedWishlist)
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
 import WishlistFetchSource from "WishlistFetchSource" /* 8989 */;
 import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8990 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let closure_8 = { user: "a", profile: "Path", wishlistId: "container", wishlist: "nl-BQ", updatedAt: "nl", storedUpdatedAt: false, fetching: null, error: null };
+let closure_8 = { user: "a", profile: "Path", wishlistId: "context", wishlist: "sv-FI", updatedAt: "sv", storedUpdatedAt: false, fetching: null, error: null };
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/useFetchSocialLayerStorefrontEmbedWishlist.tsx");
 
 export function useFetchSocialLayerStorefrontEmbedWishlist(arg0) {

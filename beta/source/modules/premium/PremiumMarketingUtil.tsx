@@ -1,10 +1,10 @@
-// Module ID: 12066
-// Function ID: 12067
+// Module ID: 12071
+// Function ID: 12072
 // Name: PremiumMarketingUtil
 // Dependencies: [1071, 8194, 8116, 1098, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 12066 (PremiumMarketingUtil)
+// Module 12071 (PremiumMarketingUtil)
 import router_utils from "router_utils" /* 1098 */;
 import LayerActionCreators from "LayerActionCreators" /* 8116 */;
 import openUserSettings from "openUserSettings" /* 8194 */;

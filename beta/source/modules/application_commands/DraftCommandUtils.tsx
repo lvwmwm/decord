@@ -1,13 +1,13 @@
-// Module ID: 12861
-// Function ID: 12862
+// Module ID: 12864
+// Function ID: 12865
 // Name: DraftCommandUtils
-// Dependencies: [5938, 8316, 10682, 2]
+// Dependencies: [5938, 8316, 10687, 2]
 // Exports: resolveDraftCommand, toDraftCommand
 
-// Module 12861 (DraftCommandUtils)
+// Module 12864 (DraftCommandUtils)
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5938 */;
 import DraftCommand from "DraftCommand" /* 8316 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10682 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10687 */;
 import size from "module_2" /* 2 */;
 
 const COMMAND_SENTINEL = ChannelAutocompleteConstants.COMMAND_SENTINEL;

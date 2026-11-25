@@ -1,10 +1,10 @@
-// Module ID: 12109
-// Function ID: 12110
+// Module ID: 12114
+// Function ID: 12115
 // Name: getNavigatorCurrentRoute
 // Dependencies: [5090, 2]
 // Exports: default
 
-// Module 12109 (getNavigatorCurrentRoute)
+// Module 12114 (getNavigatorCurrentRoute)
 import RootNavigationRef from "RootNavigationRef" /* 5090 */;
 import size from "module_2" /* 2 */;
 

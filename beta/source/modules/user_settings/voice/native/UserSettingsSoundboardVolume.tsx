@@ -1,16 +1,16 @@
-// Module ID: 10983
-// Function ID: 10984
+// Module ID: 10988
+// Function ID: 10989
 // Name: UserSettingsSoundboardVolume
-// Dependencies: [19, 17, 1071, 21, 4913, 10984, 7520, 10962, 1112, 7045, 10980, 6830, 5504, 2187, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 10989, 7520, 10967, 1112, 7045, 10985, 6830, 5504, 2187, 2]
 // Exports: default
 
-// Module 10983 (UserSettingsSoundboardVolume)
+// Module 10988 (UserSettingsSoundboardVolume)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
 import SoundboardActionCreators from "SoundboardActionCreators" /* 6830 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10980 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10985 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -41,11 +41,11 @@ export default function SoundboardVolume() {
   let obj9;
   let tmp3;
   const tmp = closure_8();
-  let obj = analyticsLocations(10984);
+  let obj = analyticsLocations(10989);
   const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const obj2 = { title: intl.string(analyticsLocations(1112).t.xbMc8r), hasIcons: false, children: closure_5(TableRow, obj3) };
-  const UserSettingsTableRowGroup = analyticsLocations(10962).UserSettingsTableRowGroup;
+  const UserSettingsTableRowGroup = analyticsLocations(10967).UserSettingsTableRowGroup;
   intl = analyticsLocations(1112).intl;
   obj3 = { label: intl2.string(analyticsLocations(1112).t.kbFsAD), subLabel: closure_7(closure_6, obj4) };
   TableRow = analyticsLocations(7045).TableRow;

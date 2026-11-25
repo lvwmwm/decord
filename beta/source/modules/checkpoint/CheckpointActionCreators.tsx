@@ -1,17 +1,17 @@
-// Module ID: 12500
-// Function ID: 12501
+// Module ID: 12503
+// Function ID: 12504
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4762, 12128, 1071, 572, 12126, 6339, 12129, 1284, 7737, 8382, 8250, 10061, 1254, 2]
-// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpointCharacter, resetCheckpointProgress, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
+// Dependencies: [5, 4762, 12495, 1071, 572, 12493, 6339, 12496, 1284, 7737, 8382, 8250, 10061, 1254, 2]
+// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
 
-// Module 12500 (CheckpointActionCreators)
+// Module 12503 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
 import formatResults from "formatResults" /* 10061 */;
-import Tracking from "Tracking" /* 12126 */;
-import CheckpointStore2 from "CheckpointStore" /* 12128 */;
+import Tracking from "Tracking" /* 12493 */;
+import CheckpointStore2 from "CheckpointStore" /* 12495 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
@@ -243,6 +243,13 @@ obj = function _completeCheckpoint() {
   });
   return obj(...arguments);
 };
+function resetCheckpointProgress() {
+  obj = DispatcherDefault;
+  return obj.dispatch({ type: "CHECKPOINT_RESET_PROGRESS" });
+}
+function resetCheckpointCharacter() {
+  return obj(...arguments);
+}
 obj = function _resetCheckpointCharacter() {
   obj = _asyncToGenerator(async (arg0, value) => {
     if (c0 === 2) {
@@ -304,6 +311,20 @@ obj = function _resetCheckpointCharacter() {
         }
       }
     }
+  });
+  return obj(...arguments);
+};
+obj = function _resetCheckpoint() {
+  obj = _asyncToGenerator(async () => {
+    let c2;
+    let c3;
+    let closure_1;
+    const value = await resetCheckpointCharacter();
+    const tmp6 = value;
+    if (tmp6) {
+      closure_129_10();
+    }
+    return value;
   });
   return obj(...arguments);
 };
@@ -540,11 +561,9 @@ export function fetchCheckpointData() {
 export function completeCheckpoint() {
   return obj(...arguments);
 }
-export function resetCheckpointProgress() {
-  obj = DispatcherDefault;
-  return obj.dispatch({ type: "CHECKPOINT_RESET_PROGRESS" });
-}
-export function resetCheckpointCharacter() {
+export { resetCheckpointProgress };
+export { resetCheckpointCharacter };
+export function resetCheckpoint() {
   return obj(...arguments);
 }
 export function sendSidekickMessage() {

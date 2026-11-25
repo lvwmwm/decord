@@ -1,10 +1,10 @@
-// Module ID: 16619
-// Function ID: 16620
+// Module ID: 16629
+// Function ID: 16630
 // Name: ManageSubscriptionCard
-// Dependencies: [32, 5, 19, 17, 1071, 4769, 21, 4913, 575, 1112, 5504, 7030, 7322, 12797, 16620, 5861, 16621, 2119, 9247, 7520, 6360, 7225, 1186, 16623, 5617, 5594, 7348, 7045, 5592, 2173, 1098, 11289, 16624, 1500, 7047, 2]
+// Dependencies: [32, 5, 19, 17, 1071, 4769, 21, 4913, 575, 1112, 5504, 7030, 7322, 12800, 16630, 5861, 16631, 2119, 9247, 7520, 6360, 7225, 1186, 16633, 5617, 5594, 7348, 7045, 5592, 2173, 1098, 11294, 16634, 1500, 7047, 2]
 // Exports: default
 
-// Module 16619 (ManageSubscriptionCard)
+// Module 16629 (ManageSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1098 */;
@@ -16,8 +16,8 @@ import LinkingDefault from "Linking" /* 5592 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
 import Pressables from "Pressables" /* 7030 */;
 import GuildIconDefault from "GuildIcon" /* 7322 */;
-import FormSeparatorDefault from "FormSeparator" /* 16620 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 16624 */;
+import FormSeparatorDefault from "FormSeparator" /* 16630 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 16634 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -123,7 +123,7 @@ function Header(guild) {
   items2[1] = unpackModuleId(Text, { variant: "body-sm/medium", color: "interactive-text-default", children: name });
   items1[1] = authStore2(View, obj3);
   let expandIconExpanded;
-  const ChevronSmallDownIcon = tmp3(12797).ChevronSmallDownIcon;
+  const ChevronSmallDownIcon = tmp3(12800).ChevronSmallDownIcon;
   if (expanded) {
     expandIconExpanded = tmp.expandIconExpanded;
   }

@@ -1,9 +1,9 @@
-// Module ID: 11125
-// Function ID: 11126
+// Module ID: 11130
+// Function ID: 11131
 // Name: ChannelRowPreview
-// Dependencies: [19, 17, 4855, 21, 7688, 11126, 10894, 10109, 5609, 11128, 8612, 8614, 5519, 11112, 11130, 5643, 11135, 11144, 5122, 4913, 575, 5477, 4738, 8669, 10100, 10099, 8673, 504, 2]
+// Dependencies: [19, 17, 4855, 21, 7688, 11131, 10899, 10109, 5609, 11133, 8612, 8614, 5519, 11117, 11135, 5643, 11140, 11149, 5122, 4913, 575, 5477, 4738, 8669, 10100, 10099, 8673, 504, 2]
 
-// Module 11125 (ChannelRowPreview)
+// Module 11130 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -15,10 +15,10 @@ import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 8614 */;
 import RowGeneratorDefault from "RowGenerator" /* 8669 */;
 import RowGeneratorTypes from "RowGeneratorTypes" /* 10099 */;
 import AttachmentIcon2 from "AttachmentIcon" /* 10109 */;
-import MusicIcon2 from "MusicIcon" /* 10894 */;
-import VideoIcon2 from "VideoIcon" /* 11126 */;
-import StickerIcon2 from "StickerIcon" /* 11128 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11135 */;
+import MusicIcon2 from "MusicIcon" /* 10899 */;
+import VideoIcon2 from "VideoIcon" /* 11131 */;
+import StickerIcon2 from "StickerIcon" /* 11133 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11140 */;
 import react_mod from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;

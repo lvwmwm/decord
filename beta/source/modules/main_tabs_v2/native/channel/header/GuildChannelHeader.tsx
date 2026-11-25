@@ -1,9 +1,9 @@
-// Module ID: 14385
-// Function ID: 14386
+// Module ID: 14395
+// Function ID: 14396
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 14386, 6394, 4766, 6919, 4762, 5534, 4784, 4855, 1386, 1071, 4759, 21, 5477, 575, 504, 11868, 7240, 11285, 1112, 5529, 14381, 11850, 5504, 9080, 4746, 2187, 7636, 9087, 11245, 6866, 6865, 14387, 14376, 2]
+// Dependencies: [32, 19, 17, 14396, 6394, 4766, 6919, 4762, 5534, 4784, 4855, 1386, 1071, 4759, 21, 5477, 575, 504, 11873, 7240, 11290, 1112, 5529, 14391, 11855, 5504, 9080, 4746, 2187, 7636, 9087, 11250, 6866, 6865, 14397, 14386, 2]
 
-// Module 14385 (GuildChannelHeader)
+// Module 14395 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -11,12 +11,12 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
 import useChannelName from "useChannelName" /* 5529 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 11285 */;
-import ChannelHeader from "ChannelHeader" /* 14376 */;
-import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 14387 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 11290 */;
+import ChannelHeader from "ChannelHeader" /* 14386 */;
+import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 14397 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14386 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14396 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 6919 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -98,7 +98,7 @@ function GuildChannelMemberCount(channel) {
     if (null != online) {
       let num2 = 500;
     }
-    const tmpResult = tmp(11868);
+    const tmpResult = tmp(11873);
     let tmp6 = tmpResult;
     let tmp7 = online;
     let tmp8 = total;

@@ -1,10 +1,10 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12207
+// Function ID: 12208
 // Name: useCanFulfillStreamRequest
-// Dependencies: [2139, 6400, 502, 4762, 4784, 4845, 5651, 5654, 10932, 7074, 1378, 8529, 5652, 504, 2]
+// Dependencies: [2139, 6400, 502, 4762, 4784, 4845, 5651, 5654, 10937, 7074, 1378, 8529, 5652, 504, 2]
 // Exports: default
 
-// Module 12211 (useCanFulfillStreamRequest)
+// Module 12207 (useCanFulfillStreamRequest)
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
@@ -53,7 +53,7 @@ function canFulfillStreamRequest(channel_id, flag, ApplicationStreamingStore, Ch
     const application = channel_id.application;
     id = undefined;
     const tmp16 = null != obj.getCurrentUserActiveStream();
-    const obj8 = flag(10932);
+    const obj8 = flag(10937);
     const videoPermission = obj8.getVideoPermission(channel);
     if (application != null) {
       id = application.id;

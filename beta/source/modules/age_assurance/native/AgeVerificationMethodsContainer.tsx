@@ -1,10 +1,10 @@
-// Module ID: 12440
-// Function ID: 12441
+// Module ID: 12436
+// Function ID: 12437
 // Name: AgeVerificationMethodsContainer
 // Dependencies: [19, 6413, 7809, 21, 4913, 575, 7808, 6365, 6370, 5929, 7762, 1112, 7348, 5504, 3444, 6545, 5511, 7807, 7045, 7793, 2]
 // Exports: AgeVerificationMethodsContainer
 
-// Module 12440 (AgeVerificationMethodsContainer)
+// Module 12436 (AgeVerificationMethodsContainer)
 import nativeDefault from "native" /* 575 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6365 */;
 import MetricEvents from "MetricEvents" /* 6370 */;

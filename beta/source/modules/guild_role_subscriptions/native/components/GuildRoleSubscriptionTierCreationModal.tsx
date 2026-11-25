@@ -1,18 +1,18 @@
-// Module ID: 20015
-// Function ID: 20016
+// Module ID: 20026
+// Function ID: 20027
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 20005, 16608, 21, 16628, 5594, 1112, 20016, 20001, 20017, 2]
+// Dependencies: [5, 32, 19, 20016, 16618, 21, 16638, 5594, 1112, 20027, 20012, 20028, 2]
 // Exports: default
 
-// Module 20015 (GuildRoleSubscriptionTierCreationModal)
+// Module 20026 (GuildRoleSubscriptionTierCreationModal)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16638 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20005 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16608 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20016 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16618 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -125,9 +125,9 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = obj);
     return items;
   }, []);
-  const EditStateContextProvider = guildId(20016).EditStateContextProvider;
+  const EditStateContextProvider = guildId(20027).EditStateContextProvider;
   let obj3 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20001).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20012).RoleSubscriptionSettingsDisabledContextProvider;
   let obj4 = {
     guildId,
     modalKey,

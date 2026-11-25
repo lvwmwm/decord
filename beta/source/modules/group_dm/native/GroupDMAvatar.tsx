@@ -1,10 +1,10 @@
-// Module ID: 10124
-// Function ID: 10125
+// Module ID: 10129
+// Function ID: 10130
 // Name: GroupDMAvatar
 // Dependencies: [19, 17, 1386, 21, 1186, 4913, 9023, 504, 1254, 2]
 // Exports: default
 
-// Module 10124 (GroupDMAvatar)
+// Module 10129 (GroupDMAvatar)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1186 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;

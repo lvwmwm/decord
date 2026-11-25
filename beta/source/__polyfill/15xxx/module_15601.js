@@ -1,14 +1,14 @@
 // Module ID: 15601
 // Function ID: 15602
-// Dependencies: [15580, 15579]
+// Dependencies: [15549, 15550]
 
 // Module 15601
-import _mod15579 from "module_15579" /* 15579 */;
-import _mod15580 from "module_15580" /* 15580 */;
+import _mod15549 from "module_15549" /* 15549 */;
+import _mod15550 from "module_15550" /* 15550 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod15580;
-  return tmp(arg0, _mod15579);
-});
+const f65830 = () => 42 !== Object.defineProperty(() => {
 
-export default tmp;
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod15549 && _mod15550(f65830);
+
+export default _mod15549 && _mod15550(f65830);

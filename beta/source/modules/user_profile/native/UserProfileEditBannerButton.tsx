@@ -1,10 +1,10 @@
-// Module ID: 15847
-// Function ID: 15848
+// Module ID: 15857
+// Function ID: 15858
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 8069, 21, 4913, 575, 7520, 8135, 8136, 8067, 7030, 1112, 5504, 11242, 7597, 8183, 8202, 15848, 2]
+// Dependencies: [19, 17, 8069, 21, 4913, 575, 7520, 8135, 8136, 8067, 7030, 1112, 5504, 11247, 7597, 8183, 8202, 15858, 2]
 // Exports: default
 
-// Module 15847 (UserProfileEditBannerButton)
+// Module 15857 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Pressables from "Pressables" /* 7030 */;
@@ -14,7 +14,7 @@ import Constants from "Constants" /* 8069 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8136 */;
 import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8183 */;
 import UserProfileBannerDefault from "UserProfileBanner" /* 8202 */;
-import PencilIcon2 from "PencilIcon" /* 11242 */;
+import PencilIcon2 from "PencilIcon" /* 11247 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -25,7 +25,7 @@ let metroRequire;
 let rect;
 let size;
 let tmp2;
-const EditButtonDefault = tmp2(15848);
+const EditButtonDefault = tmp2(15858);
 function ProfilePreviewButton(userId) {
   let Text;
   let intl;

@@ -1,10 +1,10 @@
-// Module ID: 14685
-// Function ID: 14686
+// Module ID: 14695
+// Function ID: 14696
 // Name: EventDetailInfoSheet
-// Dependencies: [19, 17, 4914, 4825, 4784, 5654, 1386, 4768, 7569, 1082, 21, 4913, 575, 6407, 5127, 504, 7574, 7572, 7571, 7587, 11239, 5504, 1112, 1186, 4969, 8023, 6545, 8024, 2]
+// Dependencies: [19, 17, 4914, 4825, 4784, 5654, 1386, 4768, 7569, 1082, 21, 4913, 575, 6407, 5127, 504, 7574, 7572, 7571, 7587, 11244, 5504, 1112, 1186, 4969, 8023, 6545, 8024, 2]
 // Exports: closeGuildEventInfoActionSheet, default
 
-// Module 14685 (EventDetailInfoSheet)
+// Module 14695 (EventDetailInfoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -143,7 +143,7 @@ export default function EventDetailInfoSheet(guildEvent) {
   const obj11 = { style: tmp.interestedContainer, children: items9 };
   items9 = [, ];
   const obj12 = { size: "sm", style: tmp.interestedIcon };
-  items9[0] = closure_12(guildEvent(11239).BellIcon, obj12);
+  items9[0] = closure_12(guildEvent(11244).BellIcon, obj12);
   const obj13 = { variant: "body-sm/medium", color: "text-default", children: intl.format(guildEvent(1112).t["+DLsD8"], { count: tmp8 }) };
   const Text = guildEvent(5504).Text;
   intl = guildEvent(1112).intl;

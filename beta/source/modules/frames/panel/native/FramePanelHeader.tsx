@@ -1,19 +1,19 @@
-// Module ID: 19211
-// Function ID: 19212
+// Module ID: 19222
+// Function ID: 19223
 // Name: FramePanelHeader
-// Dependencies: [32, 19, 17, 6623, 6624, 21, 6864, 19189, 19191, 19195, 19196, 19212, 504, 19204, 2]
+// Dependencies: [32, 19, 17, 6623, 6624, 21, 6864, 19200, 19202, 19206, 19207, 19223, 504, 19215, 2]
 
-// Module 19211 (FramePanelHeader)
+// Module 19222 (FramePanelHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6864 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 19189 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 19191 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19195 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 19196 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19204 */;
-import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 19212 */;
+import ActivityPanelHeader from "ActivityPanelHeader" /* 19200 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 19202 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19206 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 19207 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19215 */;
+import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 19223 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6623 */;

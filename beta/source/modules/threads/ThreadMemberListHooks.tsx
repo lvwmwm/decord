@@ -1,14 +1,14 @@
-// Module ID: 18801
-// Function ID: 18802
+// Module ID: 18812
+// Function ID: 18813
 // Name: ThreadMemberListHooks
-// Dependencies: [19, 4819, 6894, 1082, 5474, 12046, 12047, 504, 1112, 2]
+// Dependencies: [19, 4819, 6894, 1082, 5474, 12051, 12052, 504, 1112, 2]
 // Exports: useThreadMemberListSections
 
-// Module 18801 (ThreadMemberListHooks)
+// Module 18812 (ThreadMemberListHooks)
 import Constants from "Constants" /* 1082 */;
 import intl3 from "intl" /* 1112 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 12046 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12047 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 12051 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12052 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 4819 */;
 import ThreadMemberListStore from "ThreadMemberListStore" /* 6894 */;

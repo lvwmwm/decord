@@ -1,16 +1,16 @@
-// Module ID: 13840
-// Function ID: 13841
+// Module ID: 13843
+// Function ID: 13844
 // Name: GroupDMRow
-// Dependencies: [19, 9646, 21, 5529, 10124, 1186, 13841, 5504, 7335, 7045, 2]
+// Dependencies: [19, 9646, 21, 5529, 10129, 1186, 13844, 5504, 7335, 7045, 2]
 // Exports: default
 
-// Module 13840 (GroupDMRow)
+// Module 13843 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
 import useChannelNameDefault from "useChannelName" /* 5529 */;
 import UserRowConstants from "UserRowConstants" /* 9646 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 13841 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10129 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 13844 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

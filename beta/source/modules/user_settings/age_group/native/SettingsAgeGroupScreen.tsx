@@ -1,10 +1,10 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 16030
+// Function ID: 16031
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 8712, 1071, 21, 4913, 575, 7793, 2187, 5504, 1112, 3444, 15979, 11937, 16021, 15983, 2]
+// Dependencies: [19, 17, 8712, 1071, 21, 4913, 575, 7793, 2187, 5504, 1112, 3444, 15989, 11942, 16031, 15993, 2]
 // Exports: default
 
-// Module 16020 (SettingsAgeGroupScreen)
+// Module 16030 (SettingsAgeGroupScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -14,8 +14,8 @@ import _modDef3444 from "module_3444" /* 3444 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7793 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
-import SettingLayoutDefault from "SettingLayout" /* 15983 */;
+import SettingBuilders from "SettingBuilders" /* 11942 */;
+import SettingLayoutDefault from "SettingLayout" /* 15993 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const AgeNoticeAgeGroupHeader2 = tmp(16021);
+const AgeNoticeAgeGroupHeader2 = tmp(16031);
 function SettingsAgeGroupHeader() {
   let intl;
   let intl2;
@@ -59,7 +59,7 @@ const result = size.fileFinishedImporting("modules/user_settings/age_group/nativ
 
 export default function SettingsAgeGroupScreen() {
   let isAgeNoticeSettingsEnabled;
-  let obj = isAgeNoticeSettingsEnabled(15979);
+  let obj = isAgeNoticeSettingsEnabled(15989);
   isAgeNoticeSettingsEnabled = obj.useIsAgeNoticeSettingsEnabled();
   let items = [isAgeNoticeSettingsEnabled];
   const node = react.useMemo(() => {

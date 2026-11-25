@@ -1,14 +1,14 @@
-// Module ID: 12905
-// Function ID: 12906
+// Module ID: 12908
+// Function ID: 12909
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 10437, 4762, 4759, 4945, 4746, 504, 12906, 12911, 9080, 2]
+// Dependencies: [32, 10442, 4762, 4759, 4945, 4746, 504, 12909, 12914, 9080, 2]
 // Exports: default
 
-// Module 12905 (useAppLauncherOnboardingContent)
+// Module 12908 (useAppLauncherOnboardingContent)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12911 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12914 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10437 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10442 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 

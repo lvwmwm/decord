@@ -1,10 +1,10 @@
-// Module ID: 10155
-// Function ID: 10156
+// Module ID: 10160
+// Function ID: 10161
 // Name: GIFPickerActionCreators
-// Dependencies: [2188, 10156, 1071, 1081, 5650, 10157, 10158, 1284, 572, 12, 1268, 1379, 8610, 4743, 1231, 5860, 1112, 1255, 2]
+// Dependencies: [2188, 10161, 1071, 1081, 5650, 10162, 10163, 1284, 572, 12, 1268, 1379, 8610, 4743, 1231, 5860, 1112, 1255, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 10155 (GIFPickerActionCreators)
+// Module 10160 (GIFPickerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
 import frecency_user_settings from "frecency_user_settings" /* 1231 */;
@@ -14,10 +14,10 @@ import URLUtilsDefault from "URLUtils" /* 1379 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
 import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 8610 */;
-import GifProvider from "GifProvider" /* 10157 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 10158 */;
+import GifProvider from "GifProvider" /* 10162 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 10163 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10156 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10161 */;
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import module_12 from "module_12" /* 12 */;

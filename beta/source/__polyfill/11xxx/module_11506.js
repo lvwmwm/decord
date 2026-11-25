@@ -1,10 +1,10 @@
 // Module ID: 11506
 // Function ID: 11507
-// Dependencies: [41, 42, 93, 95, 98, 11439, 11422]
+// Dependencies: [41, 42, 93, 95, 98, 11444, 11427]
 
 // Module 11506
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
-import now2 from "now" /* 11439 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11427 */;
+import now2 from "now" /* 11444 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -84,7 +84,7 @@ if (!tmp4) {
 let closure_6 = tmp4;
 let fn = self && self.__importStar;
 if (!fn) {
-  fn = function o(arg0) {
+  fn = function u(arg0) {
     fn = Object.getOwnPropertyNames || ((obj) => {
       const items = [];
       for (const key10005 in obj) {
@@ -124,12 +124,12 @@ if (!fn) {
   };
 }
 const now = fn(now2);
-class NLCasualDateParser {
+class PTCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLCasualDateParser);
-    const obj = _getPrototypeOf(NLCasualDateParser);
+    _classCallCheck(this, PTCasualDateParser);
+    const obj = _getPrototypeOf(PTCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -141,11 +141,11 @@ class NLCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(PTCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern(arg0) {
-    return /(nu|vandaag|morgen|morgend|gisteren)(?=\W|$)/i;
+    return /(agora|hoje|amanha|amanhã|ontem)(?=\W|$)/i;
   }
 };
 let items = [
@@ -155,14 +155,14 @@ let items = [
     value: function innerExtract(reference, arg1) {
       const str = arg1[0];
       const formatted = str.toLowerCase();
-      if ("nu" === formatted) {
+      if ("agora" === formatted) {
         return now.now(reference.reference);
-      } else if ("vandaag" === formatted) {
+      } else if ("hoje" === formatted) {
         return now.today(reference.reference);
       } else {
-        if ("morgen" !== formatted) {
-          if ("morgend" !== formatted) {
-            if ("gisteren" === formatted) {
+        if ("amanha" !== formatted) {
+          if ("amanh\u00E3" !== formatted) {
+            if ("ontem" === formatted) {
               return now.yesterday(reference.reference);
             } else {
               return tmp2;
@@ -175,4 +175,4 @@ let items = [
   }
 ];
 
-export default _createClass(NLCasualDateParser, items);
+export default _createClass(PTCasualDateParser, items);

@@ -12,10 +12,10 @@ import size from "module_2" /* 2 */;
 
 let locale;
 
-const f89536 = (item) => {
+const f89563 = (item) => {
   addSku(item);
 };
-const f89537 = (item) => {
+const f89564 = (item) => {
   addSku(item);
 };
 function addSku(sku) {
@@ -71,11 +71,11 @@ function handleStoreListing(sku) {
   addSku(sku.sku);
   if (null != sku.child_skus) {
     const child_skus = sku.child_skus;
-    const item = child_skus.forEach(f89536);
+    const item = child_skus.forEach(f89563);
   }
   if (null != sku.alternative_skus) {
     const alternative_skus = sku.alternative_skus;
-    const item1 = alternative_skus.forEach(f89537);
+    const item1 = alternative_skus.forEach(f89564);
   }
 }
 function handleEntitlementsFetch(arg0) {
@@ -192,11 +192,11 @@ const obj = {
     addSku(storeListing.sku);
     if (null != storeListing.child_skus) {
       const child_skus = storeListing.child_skus;
-      const item = child_skus.forEach(f89536);
+      const item = child_skus.forEach(f89563);
     }
     if (null != storeListing.alternative_skus) {
       const alternative_skus = storeListing.alternative_skus;
-      const item1 = alternative_skus.forEach(f89537);
+      const item1 = alternative_skus.forEach(f89564);
     }
   },
   GIFT_CODE_RESOLVE_SUCCESS: function handleGiftCodeResolveSuccess(giftCode) {

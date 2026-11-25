@@ -1,7 +1,7 @@
 // Module ID: 6869
 // Function ID: 6870
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 6841, 4762, 4819, 4784, 1071, 4769, 6865, 6870, 6879, 6847, 6882, 6884, 6683, 6887, 6889, 6890, 6891, 6844, 1254, 11233, 7737, 5535, 2]
+// Dependencies: [5, 6841, 4762, 4819, 4784, 1071, 4769, 6865, 6870, 6879, 6847, 6882, 6884, 6683, 6887, 6889, 6890, 6891, 6844, 1254, 11238, 7737, 5535, 2]
 // Exports: default
 
 // Module 6869 (isAccessibleChannelOrThreadPath)

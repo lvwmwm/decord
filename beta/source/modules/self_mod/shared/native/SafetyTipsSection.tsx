@@ -1,13 +1,13 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 11807
+// Function ID: 11808
 // Name: SafetyTipsSection
-// Dependencies: [19, 17, 21, 4913, 575, 5929, 11803, 5504, 1112, 11807, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5929, 11808, 5504, 1112, 11812, 2]
 // Exports: default
 
-// Module 11802 (SafetyTipsSection)
+// Module 11807 (SafetyTipsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SafetyTipsRowDefault from "SafetyTipsRow" /* 11807 */;
+import SafetyTipsRowDefault from "SafetyTipsRow" /* 11812 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -30,7 +30,7 @@ export default function SafetyTipsContainer(safetyTips) {
   let showHeader = safetyTips.showHeader;
   const description = safetyTips.description;
   const tmp = closure_6();
-  let obj = { style: tmp.image, children: closure_4(safetyTips(11803).SafetyBookletSpotIllustration, {}) };
+  let obj = { style: tmp.image, children: closure_4(safetyTips(11808).SafetyBookletSpotIllustration, {}) };
   const Stack = safetyTips(5929).Stack;
   const items = [closure_4(View, obj), , ];
   const Stack2 = safetyTips(5929).Stack;

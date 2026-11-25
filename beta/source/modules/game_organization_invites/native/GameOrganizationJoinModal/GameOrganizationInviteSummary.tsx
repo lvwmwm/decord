@@ -1,16 +1,16 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12242
+// Function ID: 12243
 // Name: GameOrganizationInviteSummary
-// Dependencies: [19, 21, 4913, 5929, 575, 12086, 5504, 1112, 2639, 7038, 2]
+// Dependencies: [19, 21, 4913, 5929, 575, 12091, 5504, 1112, 2639, 7038, 2]
 // Exports: default
 
-// Module 12246 (GameOrganizationInviteSummary)
+// Module 12242 (GameOrganizationInviteSummary)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef2639 from "module_2639" /* 2639 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12086 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12091 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

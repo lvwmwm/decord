@@ -1,10 +1,10 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16739
+// Function ID: 16740
 // Name: useIsFavoritesGuildVisible
 // Dependencies: [4946, 4765, 4787, 504, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 16729 (useIsFavoritesGuildVisible)
+// Module 16739 (useIsFavoritesGuildVisible)
 import FavoritesUtils from "FavoritesUtils" /* 4787 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
 import FavoriteStore from "FavoriteStore" /* 4765 */;

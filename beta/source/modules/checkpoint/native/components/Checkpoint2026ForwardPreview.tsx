@@ -1,75 +1,63 @@
 // Module ID: 10115
 // Function ID: 10116
 // Name: Checkpoint2026ForwardPreview
-// Dependencies: [19, 17, 21, 4913, 6340, 5993, 5990, 5600, 10116, 575, 2]
+// Dependencies: [17, 21, 4913, 6340, 5993, 10116, 10119, 1653, 10120, 10121, 575, 2]
 // Exports: default
 
 // Module 10115 (Checkpoint2026ForwardPreview)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5600 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5990 */;
-import react from "react" /* 19 */;
+import nativeDefault from "native" /* 575 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 5993 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6340 */;
+import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 10116 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
-
+let c3;
 let closure_4;
-let hasOwnProperty;
 let items;
 let obj2;
-({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
+let tmp2;
+const ExperimentalCheckpointIcon2 = tmp2(10121);
+({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let obj = { preview: { width: 56, height: 56, alignItems: "center", justifyContent: "center" }, layer: obj2 };
 obj2 = { transform: items };
 items = [{ translateY: -2 }];
-let closure_7 = createStyles.createStyles(obj);
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/Checkpoint2026ForwardPreview.tsx");
 
 export default function Checkpoint2026ForwardPreview(checkpointData) {
+  let items;
   let items1;
-  let layer;
-  let mapped;
+  let tmp9Result;
   checkpointData = checkpointData.checkpointData;
-  const tmp = closure_7();
-  _require = tmp;
-  let obj = require("CheckpointExperiments");
+  const tmp = closure_6();
   const character = checkpointData.character;
+  const obj = CheckpointExperiments;
   const isCheckpointCardEnabled = obj.useIsCheckpointCardEnabled("Checkpoint2026ForwardPreview");
-  let items = [character];
-  const obj2 = require("CheckpointCardColors");
+  const obj2 = CheckpointCardColors;
   const secondaryBackgroundColor = obj2.getCardColors(checkpointData.cardColorPalette).secondaryBackgroundColor;
-  const memo = react.useMemo(() => {
-    let characterLayerUrls;
-    if (null != character) {
-      const obj = checkpoint_CheckpointMessageComponentUtils;
-      characterLayerUrls = obj.getCharacterLayerUrls(tmp, 56);
-    } else {
-      characterLayerUrls = [];
-    }
-    return characterLayerUrls;
-  }, items);
-  let tmp6Result = null;
-  const tmp2 = _require;
+  let tmp9Result2 = null;
+  const tmp6 = useCheckpointCharacterImagesDefault(character, 56);
   if (isCheckpointCardEnabled) {
-    const obj3 = { style: items1, children: mapped };
-    items1 = [tmp.preview, ];
+    const obj3 = { style: items, children: tmp9Result };
+    items = [tmp.preview, ];
     const obj4 = { backgroundColor: secondaryBackgroundColor };
-    items1[1] = obj4;
-    const tmp7 = closure_5;
+    items[1] = obj4;
+    const tmp10 = React3;
     if (null != character) {
-      mapped = memo.map((uri) => {
-        const items = [absoluteFill.absoluteFill, layer.layer];
-        return jsx(FastImageDefault, { source: { uri }, style: items }, uri);
-      });
+      const obj5 = { style: items1, children: null };
+      items1 = [absoluteFill.absoluteFill, tmp.layer, tmp7];
+      const View = tmp5(1653).View;
+      tmp9Result = tmp9(View, obj5);
     } else {
-      const obj5 = { color: character(575).colors.BLACK };
-      const ExperimentalCheckpointIcon = tmp2(10116).ExperimentalCheckpointIcon;
-      mapped = tmp6(ExperimentalCheckpointIcon, obj5);
+      const obj7 = { color: nativeDefault.colors.BLACK };
+      const ExperimentalCheckpointIcon = ExperimentalCheckpointIcon2.ExperimentalCheckpointIcon;
+      tmp9Result = tmp9(ExperimentalCheckpointIcon, obj7);
     }
-    tmp6Result = tmp6(tmp7, obj3);
+    tmp9Result2 = tmp9(tmp10, obj3);
   }
-  return tmp6Result;
+  return tmp9Result2;
 };

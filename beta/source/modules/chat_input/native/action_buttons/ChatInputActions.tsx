@@ -1,9 +1,9 @@
-// Module ID: 13095
-// Function ID: 13096
+// Module ID: 13098
+// Function ID: 13099
 // Name: ChatInputActions
-// Dependencies: [32, 19, 12825, 1071, 21, 4913, 575, 5517, 8570, 5477, 7245, 5100, 1626, 13096, 8540, 5923, 8476, 1112, 11638, 7688, 11623, 13097, 7704, 10109, 13081, 8558, 8542, 1255, 1653, 8658, 13099, 5080, 13100, 13101, 13105, 2]
+// Dependencies: [32, 19, 12828, 1071, 21, 4913, 575, 5517, 8570, 5477, 7245, 5100, 1626, 13099, 8540, 5923, 8476, 1112, 11643, 7688, 11628, 13100, 7704, 10109, 13084, 8558, 8542, 1255, 1653, 8658, 13102, 5080, 13103, 13104, 13108, 2]
 
-// Module 13095 (ChatInputActions)
+// Module 13098 (ChatInputActions)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl8 from "intl" /* 1112 */;
@@ -14,15 +14,15 @@ import ImageIcon from "ImageIcon" /* 7688 */;
 import AppsIcon from "AppsIcon" /* 7704 */;
 import ImagePickerUtils from "ImagePickerUtils" /* 8476 */;
 import AttachmentIcon from "AttachmentIcon" /* 10109 */;
-import PollsIcon from "PollsIcon" /* 11623 */;
-import CameraIcon from "CameraIcon" /* 11638 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 13081 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 13097 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13099 */;
-import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 13100 */;
+import PollsIcon from "PollsIcon" /* 11628 */;
+import CameraIcon from "CameraIcon" /* 11643 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 13084 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 13100 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13102 */;
+import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 13103 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 12825 */;
+import ChatInputConstants from "ChatInputConstants" /* 12828 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

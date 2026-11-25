@@ -1,10 +1,10 @@
-// Module ID: 19517
-// Function ID: 19518
+// Module ID: 19528
+// Function ID: 19529
 // Name: NewMemberActionsCompletedModal
 // Dependencies: [19, 17, 21, 4913, 575, 1653, 5123, 6429, 6685, 5504, 1112, 2]
 // Exports: default
 
-// Module 19517 (NewMemberActionsCompletedModal)
+// Module 19528 (NewMemberActionsCompletedModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1653 from "module_1653" /* 1653 */;

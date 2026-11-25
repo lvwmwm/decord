@@ -1,16 +1,16 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12814
+// Function ID: 12815
 // Name: createChannelStream
-// Dependencies: [11904, 8381, 8531, 8670, 1071, 11, 8697, 12812, 12813, 1112, 4735, 8713, 12181, 6893, 12816, 2]
+// Dependencies: [11909, 8381, 8531, 8670, 1071, 11, 8697, 12815, 12816, 1112, 4735, 8713, 12177, 6893, 12819, 2]
 // Exports: default
 
-// Module 12811 (createChannelStream)
+// Module 12814 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1071 */;
 import UnlinkedGamePlayerPlaceholders from "UnlinkedGamePlayerPlaceholders" /* 8697 */;
-import isNewMessageGroupDefault from "isNewMessageGroup" /* 12812 */;
-import tryInjectMessage from "tryInjectMessage" /* 12813 */;
-import PushFeedbackStore_mod from "PushFeedbackStore" /* 11904 */;
+import isNewMessageGroupDefault from "isNewMessageGroup" /* 12815 */;
+import tryInjectMessage from "tryInjectMessage" /* 12816 */;
+import PushFeedbackStore_mod from "PushFeedbackStore" /* 11909 */;
 import EditMessageStore from "EditMessageStore" /* 8381 */;
 import UploadStore from "UploadStore" /* 8531 */;
 import RowGeneratorConstants from "RowGeneratorConstants" /* 8670 */;
@@ -189,7 +189,7 @@ export default function createChannelStream(roleStyle) {
     let tmp88;
     let tmp9;
     let tmp99;
-    const f128041 = (message) => {
+    const f128084 = (message) => {
       obj = { message, updateMessageIds, forceRender };
       return chatManager.determineChangeType(obj, false) !== constants.NOOP;
     };
@@ -345,8 +345,8 @@ export default function createChannelStream(roleStyle) {
         obj17.changeType = determineChangeType(message);
         let tmp148 = obj17.changeType === constants.NOOP;
         if (tmp148) {
-          tmp148 = null != length && tmp149 !== message.length || items.some(f128041);
-          null != length && tmp149 !== message.length || items.some(f128041);
+          tmp148 = null != length && tmp149 !== message.length || items.some(f128084);
+          null != length && tmp149 !== message.length || items.some(f128084);
         }
         if (tmp148) {
           obj17.changeType = constants.UPDATE;

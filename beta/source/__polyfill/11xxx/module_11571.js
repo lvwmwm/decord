@@ -1,10 +1,11 @@
 // Module ID: 11571
 // Function ID: 11572
-// Dependencies: [41, 42, 93, 95, 98, 11569, 11422]
+// Dependencies: [41, 42, 93, 95, 98, 11564, 11423, 11427]
 
 // Module 11571
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
-import _mod11569 from "module_11569" /* 11569 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11423 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11427 */;
+import _mod11564 from "module_11564" /* 11564 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,12 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class AbstractParserWithLeftBoundaryChecking {
+class ESTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, AbstractParserWithLeftBoundaryChecking);
-    const obj = _getPrototypeOf(AbstractParserWithLeftBoundaryChecking);
+    _classCallCheck(this, ESTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(ESTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -43,61 +44,24 @@ class AbstractParserWithLeftBoundaryChecking {
     return tmp3(self, constructResult);
   }
 }
-_inherits(AbstractParserWithLeftBoundaryChecking, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ESTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternLeftBoundary",
-  value: function patternLeftBoundary() {
-    return _mod11569.REGEX_PARTS.leftBoundary;
+  key: "innerPattern",
+  value: function innerPattern() {
+    const regExp = new RegExp("(?:en|por|durante|de|dentro de)\\s*(" + _mod11564.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "innerPattern",
-    value: function innerPattern(arg0) {
-      const innerPatternStringResult = this.innerPatternString(arg0);
-      const regExp = new RegExp(innerPatternStringResult, _mod11569.REGEX_PARTS.flags);
-      return regExp;
-    }
-  },
-  {
-    key: "innerPatternHasChange",
-    value: function innerPatternHasChange(arg0, arg1) {
-      return false;
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11564.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
-const _moduleResult = _createClass(AbstractParserWithLeftBoundaryChecking, items);
-class AbstractParserWithLeftRightBoundaryChecking {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, AbstractParserWithLeftRightBoundaryChecking);
-    const obj = _getPrototypeOf(AbstractParserWithLeftRightBoundaryChecking);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(AbstractParserWithLeftRightBoundaryChecking, _moduleResult);
-const entry1 = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    const innerPatternStringResult = this.innerPatternString(arg0);
-    const combined = "" + innerPatternStringResult + _mod11569.REGEX_PARTS.rightBoundary;
-    const regExp = new RegExp(combined, _mod11569.REGEX_PARTS.flags);
-    return regExp;
-  }
-};
-const items1 = [entry1];
-const AbstractParserWithLeftBoundaryChecking_export = _moduleResult;
-const AbstractParserWithLeftRightBoundaryChecking_export = _createClass(AbstractParserWithLeftRightBoundaryChecking, items1);
 
-export { AbstractParserWithLeftBoundaryChecking_export as AbstractParserWithLeftBoundaryChecking };
-export { AbstractParserWithLeftRightBoundaryChecking_export as AbstractParserWithLeftRightBoundaryChecking };
+export default _createClass(ESTimeUnitWithinFormatParser, items);

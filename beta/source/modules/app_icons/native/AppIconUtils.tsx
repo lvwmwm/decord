@@ -1,10 +1,10 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14050
+// Function ID: 14051
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 10468, 1071, 1388, 3, 14048, 4939, 5474, 572, 1255, 5595, 1112, 8194, 1625, 2]
+// Dependencies: [32, 5, 19, 10473, 1071, 1388, 3, 14051, 4939, 5474, 572, 1255, 5595, 1112, 8194, 1625, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 14047 (AppIconUtils)
+// Module 14050 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
@@ -12,11 +12,11 @@ import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
 import AppIconTypes from "AppIconTypes" /* 4939 */;
 import useMountEffectDefault from "useMountEffect" /* 5474 */;
 import openUserSettings from "openUserSettings" /* 8194 */;
-import react_nativeDefault from "react-native" /* 14048 */;
+import react_nativeDefault from "react-native" /* 14051 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 10468 */;
+import AppIconConstants from "AppIconConstants" /* 10473 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

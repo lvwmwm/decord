@@ -1,10 +1,10 @@
-// Module ID: 12050
-// Function ID: 12051
+// Module ID: 12055
+// Function ID: 12056
 // Name: useCanInviteGuildIds
-// Dependencies: [19, 4825, 4819, 4784, 4845, 12051, 504, 12052, 2]
+// Dependencies: [19, 4825, 4819, 4784, 4845, 12056, 504, 12057, 2]
 // Exports: default
 
-// Module 12050 (useCanInviteGuildIds)
+// Module 12055 (useCanInviteGuildIds)
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import GuildRoleStore from "GuildRoleStore" /* 4819 */;

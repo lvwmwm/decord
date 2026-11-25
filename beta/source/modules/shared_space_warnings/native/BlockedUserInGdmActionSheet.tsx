@@ -1,10 +1,10 @@
-// Module ID: 19658
-// Function ID: 19659
+// Module ID: 19669
+// Function ID: 19670
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4762, 1386, 15013, 1071, 21, 4913, 575, 5504, 5943, 1112, 504, 1254, 1186, 12361, 10124, 7532, 5617, 1255, 7553, 5600, 11800, 7348, 7045, 5511, 5127, 19659, 7737, 2]
+// Dependencies: [19, 17, 4762, 1386, 15023, 1071, 21, 4913, 575, 5504, 5943, 1112, 504, 1254, 1186, 12357, 10129, 7532, 5617, 1255, 7553, 5600, 11805, 7348, 7045, 5511, 5127, 19670, 7737, 2]
 // Exports: default
 
-// Module 19658 (BlockedUserInGdmActionSheet)
+// Module 19669 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -15,11 +15,11 @@ import Text_Text from "Text/Text" /* 5504 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
 import TableRow2 from "TableRow" /* 7045 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19659 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19670 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import UserStore from "UserStore" /* 1386 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15013 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15023 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -146,12 +146,12 @@ function UserCalloutAvatars(userIds) {
       const Avatar = tmp(1186).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(12361).UserIcon, {});
+      tmp8 = closure_10(tmp(12357).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1186).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10124).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10129).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;

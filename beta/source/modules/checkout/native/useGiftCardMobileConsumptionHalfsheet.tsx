@@ -1,10 +1,10 @@
-// Module ID: 14051
-// Function ID: 14052
+// Module ID: 14054
+// Function ID: 14055
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: [32, 19, 14052, 2175, 4759, 1082, 14053, 504, 4746, 9080, 6360, 572, 14054, 2119, 5127, 2]
+// Dependencies: [32, 19, 14055, 2175, 4759, 1082, 14056, 504, 4746, 9080, 6360, 572, 14057, 2119, 5127, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 14051 (useGiftCardMobileConsumptionHalfsheet)
+// Module 14054 (useGiftCardMobileConsumptionHalfsheet)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1082 */;
 import dismissible_content from "dismissible_content" /* 4746 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6360 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import WalletBalanceStore from "WalletBalanceStore" /* 14052 */;
+import WalletBalanceStore from "WalletBalanceStore" /* 14055 */;
 import PaymentSourceStore from "PaymentSourceStore" /* 2175 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ export function useGiftCardMobileConsumptionHalfsheet() {
   let ref;
   let tmp = enabled;
   let tmp2 = dependencyMap;
-  obj = enabled(14053);
+  obj = enabled(14056);
   enabled = obj.useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
   let obj2 = enabled(504);
   let items = [markAsDismissed];
@@ -147,7 +147,7 @@ export function useGiftCardMobileConsumptionHalfsheet() {
         let c0 = false;
         obj = DispatcherDefault;
         const subscription = obj.subscribe("SHOW_ACTION_SHEET", handleShow);
-        const promise = asyncRequire(14054, tmp2.paths);
+        const promise = asyncRequire(14057, tmp2.paths);
         promise.catch(() => {
           const tmp = c0 || Idle !== closure_2_10.Opening;
           if (!tmp) {

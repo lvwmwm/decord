@@ -1,14 +1,14 @@
-// Module ID: 19243
-// Function ID: 19244
+// Module ID: 19254
+// Function ID: 19255
 // Name: useVoicePanelDockStatus
-// Dependencies: [32, 19, 6620, 5961, 502, 5654, 6535, 1386, 5561, 18008, 5563, 5963, 11749, 504, 1088, 572, 2]
+// Dependencies: [32, 19, 6620, 5961, 502, 5654, 6535, 1386, 5561, 18019, 5563, 5963, 11754, 504, 1088, 572, 2]
 // Exports: default
 
-// Module 19243 (useVoicePanelDockStatus)
+// Module 19254 (useVoicePanelDockStatus)
 import DurationsDefault from "Durations" /* 1088 */;
 import CallConstants from "CallConstants" /* 5563 */;
 import SoundboardConstants from "SoundboardConstants" /* 5963 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
@@ -18,7 +18,7 @@ import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import SpeakingStore from "SpeakingStore" /* 6535 */;
 import UserStore from "UserStore" /* 1386 */;
 import VoiceStateStore from "VoiceStateStore" /* 5561 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18008 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18019 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, map, set, speakers, streamParticipants;

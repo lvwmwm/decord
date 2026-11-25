@@ -1,15 +1,15 @@
-// Module ID: 11068
-// Function ID: 11069
+// Module ID: 11073
+// Function ID: 11074
 // Name: SpeakerTile
-// Dependencies: [19, 17, 6620, 5563, 21, 4913, 575, 4910, 11069, 1494, 8150, 504, 7280, 11070, 7030, 1112, 8204, 1186, 11072, 11074, 7236, 5504, 2]
+// Dependencies: [19, 17, 6620, 5563, 21, 4913, 575, 4910, 11074, 1494, 8150, 504, 7280, 11075, 7030, 1112, 8204, 1186, 11077, 11079, 7236, 5504, 2]
 // Exports: getSizeStyle, getTileWidthStyle
 
-// Module 11068 (SpeakerTile)
+// Module 11073 (SpeakerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CallConstants from "CallConstants" /* 5563 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7280 */;
-import StageTileTypes from "StageTileTypes" /* 11069 */;
+import StageTileTypes from "StageTileTypes" /* 11074 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import Fragment from "Fragment" /* 21 */;

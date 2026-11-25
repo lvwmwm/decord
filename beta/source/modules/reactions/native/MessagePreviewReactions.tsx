@@ -1,10 +1,10 @@
-// Module ID: 10400
-// Function ID: 10401
+// Module ID: 10405
+// Function ID: 10406
 // Name: MessagePreviewReactions
-// Dependencies: [19, 8340, 8343, 10054, 21, 504, 7520, 7539, 10385, 2]
+// Dependencies: [19, 8340, 8343, 10054, 21, 504, 7520, 7539, 10390, 2]
 // Exports: default
 
-// Module 10400 (MessagePreviewReactions)
+// Module 10405 (MessagePreviewReactions)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import ChannelConversationsStore from "ChannelConversationsStore" /* 8340 */;
@@ -41,9 +41,9 @@ export default function MessagePreviewReactions(emoji) {
   const AnalyticsLocationProvider = channelId(7520).AnalyticsLocationProvider;
   if (stateFromStores.length > 0) {
     const obj3 = { channelId, messageId, emoji, reactions: stateFromStores };
-    tmp4Result = tmp4(tmp(10385).MessageReactionsContent, obj3);
+    tmp4Result = tmp4(tmp(10390).MessageReactionsContent, obj3);
   } else {
-    tmp4Result = tmp4(tmp(10385).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(10390).MessageReactionsEmpty, {});
   }
   return jsx(AnalyticsLocationProvider, obj2);
 };

@@ -1,7 +1,7 @@
 // Module ID: 8222
 // Function ID: 8223
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 4762, 8218, 8223, 563, 11951, 2]
+// Dependencies: [19, 4762, 8218, 8223, 563, 11956, 2]
 // Exports: useMediaItemHasSpoiler
 
 // Module 8222 (useMediaItemHasSpoiler)

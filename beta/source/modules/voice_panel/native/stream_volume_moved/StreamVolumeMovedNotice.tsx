@@ -1,10 +1,10 @@
-// Module ID: 19384
-// Function ID: 19385
+// Module ID: 19395
+// Function ID: 19396
 // Name: StreamVolumeMovedNotice
-// Dependencies: [32, 19, 6400, 502, 14504, 11748, 4759, 21, 11749, 504, 9080, 4746, 6401, 7348, 1112, 7045, 2]
+// Dependencies: [32, 19, 6400, 502, 14514, 11753, 4759, 21, 11754, 504, 9080, 4746, 6401, 7348, 1112, 7045, 2]
 // Exports: default
 
-// Module 19384 (StreamVolumeMovedNotice)
+// Module 19395 (StreamVolumeMovedNotice)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1112 */;
@@ -12,9 +12,9 @@ import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
 import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9080 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 14504 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
+import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 14514 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;

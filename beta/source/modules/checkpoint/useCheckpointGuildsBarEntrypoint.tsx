@@ -1,46 +1,51 @@
-// Module ID: 17919
-// Function ID: 17920
+// Module ID: 12504
+// Function ID: 12505
 // Name: useCheckpointGuildsBarEntrypoint
-// Dependencies: [32, 19, 4759, 6340, 9080, 4746, 17920, 2]
-// Exports: useCheckpointGuildsBarEntrypoint
+// Dependencies: [32, 4759, 4945, 4746, 6340, 9080, 2]
+// Exports: dismissCheckpointIntro, useCheckpointGuildsBarEntrypoint
 
-// Module 17919 (useCheckpointGuildsBarEntrypoint)
+// Module 12504 (useCheckpointGuildsBarEntrypoint)
+import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6340 */;
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9080 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-const result = size.fileFinishedImporting("modules/checkpoint/useCheckpointGuildsBarEntrypoint.tsx");
+const guilds_bar = "guilds_bar";
+let result = size.fileFinishedImporting("modules/checkpoint/useCheckpointGuildsBarEntrypoint.tsx");
 
 export const CHECKPOINT_GUILDS_BAR_SOURCE = "guilds_bar";
+export function dismissCheckpointIntro(arg0) {
+  let INDIRECT_ACTION;
+  const UNSAFE_markDismissibleContentAsDismissed = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed;
+  DismissibleContentUnsafeUtils;
+  const BUILD_A_BEAR_INTRO = dismissible_content.DismissibleContent.BUILD_A_BEAR_INTRO;
+  if (arg0 === guilds_bar) {
+    INDIRECT_ACTION = ContentDismissActionType.TAKE_ACTION;
+  } else {
+    INDIRECT_ACTION = ContentDismissActionType.INDIRECT_ACTION;
+  }
+  const result = UNSAFE_markDismissibleContentAsDismissed(BUILD_A_BEAR_INTRO, { dismissAction: INDIRECT_ACTION });
+}
 export function useCheckpointGuildsBarEntrypoint(GuildsBar) {
-  let isCheckpointOpen;
   let items1;
-  let markAsDismissed;
-  let visible;
-  let tmp = markAsDismissed;
-  const obj = markAsDismissed(visible[3]);
+  let tmp6;
+  let tmp7;
+  const obj = CheckpointExperiments;
   const isCheckpointIntroEnabled = obj.useIsCheckpointIntroEnabled(GuildsBar);
-  const useSelectedDismissibleContent = markAsDismissed(visible[4]).useSelectedDismissibleContent;
-  const tmp4 = markAsDismissed(visible[4]);
+  const useSelectedDismissibleContent = useSelectedDismissibleContent2.useSelectedDismissibleContent;
+  useSelectedDismissibleContent2;
   if (isCheckpointIntroEnabled) {
-    const items = [tmp(tmp2[5]).DismissibleContent.BUILD_A_BEAR_INTRO];
+    const items = [dismissible_content.DismissibleContent.BUILD_A_BEAR_INTRO];
     items1 = items;
   } else {
     items1 = [];
   }
-  const tmp5 = isCheckpointOpen(useSelectedDismissibleContent(items1), 2);
-  markAsDismissed = tmp5[1];
-  visible = tmp5[0] === tmp(tmp2[5]).DismissibleContent.BUILD_A_BEAR_INTRO;
-  const tmpResult = tmp(visible[6]);
-  isCheckpointOpen = tmpResult.useIsCheckpointOpen();
-  const items2 = [visible, isCheckpointOpen, markAsDismissed];
-  const effect = react.useEffect(() => {
-    const tmp = visible && isCheckpointOpen;
-    if (tmp) {
-      markAsDismissed(ContentDismissActionType.INDIRECT_ACTION);
-    }
-  }, items2);
-  return { visible, markAsDismissed };
+  const tmp5 = _slicedToArray(useSelectedDismissibleContent(items1), 2);
+  const obj2 = { visible: tmp6 === dismissible_content.DismissibleContent.BUILD_A_BEAR_INTRO, markAsDismissed: tmp7 };
+  [tmp6, tmp7] = tmp5;
+  return obj2;
 }

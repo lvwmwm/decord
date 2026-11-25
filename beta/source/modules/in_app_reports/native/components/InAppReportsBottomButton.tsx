@@ -1,10 +1,10 @@
-// Module ID: 10377
-// Function ID: 10378
+// Module ID: 10382
+// Function ID: 10383
 // Name: InAppReportsBottomButton
 // Dependencies: [19, 17, 1082, 21, 4913, 575, 1112, 2958, 5504, 5511, 1186, 2]
 // Exports: default
 
-// Module 10377 (InAppReportsBottomButton)
+// Module 10382 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;

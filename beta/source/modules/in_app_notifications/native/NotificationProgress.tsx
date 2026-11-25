@@ -1,10 +1,10 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11168
+// Function ID: 11169
 // Name: NotificationProgress
 // Dependencies: [32, 19, 17, 21, 4913, 575, 1653, 2]
 // Exports: default
 
-// Module 11163 (NotificationProgress)
+// Module 11168 (NotificationProgress)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

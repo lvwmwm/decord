@@ -1,16 +1,16 @@
-// Module ID: 13856
-// Function ID: 13857
+// Module ID: 13859
+// Function ID: 13860
 // Name: guild_instant_invites/InstantInviteUtils
-// Dependencies: [5, 4762, 1386, 1071, 1112, 13849, 13857, 9718, 8066, 7545, 5594, 8051, 7262, 5595, 2]
+// Dependencies: [5, 4762, 1386, 1071, 1112, 13852, 13860, 9718, 8066, 7545, 5594, 8051, 7262, 5595, 2]
 // Exports: useInviteActions
 
-// Module 13856 (guild_instant_invites/InstantInviteUtils)
+// Module 13859 (guild_instant_invites/InstantInviteUtils)
 import Constants from "Constants" /* 1071 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
 import getInviteURLDefault from "getInviteURL" /* 8066 */;
-import baseRestDefault from "baseRest" /* 13857 */;
+import baseRestDefault from "baseRest" /* 13860 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -38,7 +38,7 @@ export function useInviteActions(invite) {
   _asyncToGenerator = isPrivateResult;
   let obj = {
     label: intl.string(invite(1112).t.RDE0Sc),
-    iconSource: onInviteRevoked(13849).share,
+    iconSource: onInviteRevoked(13852).share,
     action() {
       const tmp = baseRestDefault(() => {
         let formatToPlainStringResult;
@@ -77,7 +77,7 @@ export function useInviteActions(invite) {
   const items = [obj, , ];
   let obj2 = {
     label: intl2.string(invite(1112).t.OpuAlK),
-    iconSource: onInviteRevoked(13849).copy,
+    iconSource: onInviteRevoked(13852).copy,
     action() {
       if (c3) {
         const tmpResult = instant_invite_InstantInviteUtils;
@@ -94,7 +94,7 @@ export function useInviteActions(invite) {
   items[1] = obj2;
   let obj3 = {
     label: intl3.string(invite(1112).t.v6Yazx),
-    iconSource: onInviteRevoked(13849).revoke,
+    iconSource: onInviteRevoked(13852).revoke,
     variant: "destructive",
     action() {
       return closure_2(...arguments);

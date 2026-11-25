@@ -1,15 +1,15 @@
-// Module ID: 11130
-// Function ID: 11131
+// Module ID: 11135
+// Function ID: 11136
 // Name: ChannelListLayout
-// Dependencies: [5574, 11131, 11133, 11134, 4738, 2]
+// Dependencies: [5574, 11136, 11138, 11139, 4738, 2]
 // Exports: getScaledChannelRowHeight, isLayoutCompact, isLayoutCozy, makeSizeStyle, useMessagesTabLayout
 
-// Module 11130 (ChannelListLayout)
+// Module 11135 (ChannelListLayout)
 import UserSettings from "UserSettings" /* 4738 */;
 import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 5574 */;
-import CozyDrawer from "CozyDrawer" /* 11131 */;
-import Compact from "Compact" /* 11133 */;
-import Cozy from "Cozy" /* 11134 */;
+import CozyDrawer from "CozyDrawer" /* 11136 */;
+import Compact from "Compact" /* 11138 */;
+import Cozy from "Cozy" /* 11139 */;
 import size_mod from "module_2" /* 2 */;
 
 function getLayoutStyles(layout, launchpad) {

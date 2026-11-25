@@ -1,22 +1,22 @@
-// Module ID: 10841
-// Function ID: 10842
+// Module ID: 10846
+// Function ID: 10847
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1082, 21, 10842, 1653, 5514, 575, 10843, 10929, 10845, 10640, 10639, 8579, 10739, 5649, 10930, 11036, 4974, 10644, 11044, 11045, 10849, 11050, 11061, 11063, 11094, 11095, 4913, 11096, 10879, 2]
+// Dependencies: [32, 19, 17, 1082, 21, 10847, 1653, 5514, 575, 10848, 10934, 10850, 10645, 10644, 8579, 10744, 5649, 10935, 11041, 4974, 10649, 11049, 11050, 10854, 11055, 11066, 11068, 11099, 11100, 4913, 11101, 10884, 2]
 // Exports: default
 
-// Module 10841 (StageChannelCallNavigator)
+// Module 10846 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import spring_spring from "spring/spring" /* 5514 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5649 */;
 import MessageManagerDefault from "MessageManager" /* 8579 */;
-import participantHasVideoDefault from "participantHasVideo" /* 10739 */;
-import ModeratorOverlayState from "ModeratorOverlayState" /* 10842 */;
-import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 10843 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 10879 */;
-import JoinStageViewDefault from "JoinStageView" /* 10929 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 11096 */;
+import participantHasVideoDefault from "participantHasVideo" /* 10744 */;
+import ModeratorOverlayState from "ModeratorOverlayState" /* 10847 */;
+import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 10848 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 10884 */;
+import JoinStageViewDefault from "JoinStageView" /* 10934 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 11101 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

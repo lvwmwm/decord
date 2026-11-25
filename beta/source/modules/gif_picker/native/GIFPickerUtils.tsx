@@ -1,10 +1,10 @@
-// Module ID: 11353
-// Function ID: 11354
+// Module ID: 11358
+// Function ID: 11359
 // Name: gif_picker/GIFPickerUtils
-// Dependencies: [19, 1071, 1379, 8610, 10154, 1112, 2]
+// Dependencies: [19, 1071, 1379, 8610, 10159, 1112, 2]
 // Exports: useFavoriteGIFsMobile
 
-// Module 11353 (gif_picker/GIFPickerUtils)
+// Module 11358 (gif_picker/GIFPickerUtils)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import URLUtilsDefault from "URLUtils" /* 1379 */;
@@ -71,7 +71,7 @@ let result = size.fileFinishedImporting("modules/gif_picker/native/GIFPickerUtil
 export const GIF_HEADER_HEIGHT = 56;
 export function useFavoriteGIFsMobile() {
   let sortedFavoriteGIFs;
-  let obj = sortedFavoriteGIFs(10154);
+  let obj = sortedFavoriteGIFs(10159);
   sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   const obj2 = {

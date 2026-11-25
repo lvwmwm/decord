@@ -1,15 +1,15 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12796
+// Function ID: 12797
 // Name: useLastColorwayIdByOutfitId
-// Dependencies: [32, 19, 12128, 504, 6014, 6013, 2]
+// Dependencies: [32, 19, 12495, 504, 6014, 6013, 2]
 // Exports: default
 
-// Module 12793 (useLastColorwayIdByOutfitId)
+// Module 12796 (useLastColorwayIdByOutfitId)
 import get_initialized from "get initialized" /* 504 */;
 import CheckpointTrait from "CheckpointTrait" /* 6014 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12128 */;
+import CheckpointStore from "CheckpointStore" /* 12495 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;

@@ -1,10 +1,10 @@
-// Module ID: 13757
-// Function ID: 13758
+// Module ID: 13760
+// Function ID: 13761
 // Name: QuestContentImpressionTracker
-// Dependencies: [32, 19, 2118, 9963, 1071, 21, 7490, 6417, 504, 9996, 13758, 6565, 2]
+// Dependencies: [32, 19, 2118, 9963, 1071, 21, 7490, 6417, 504, 9996, 13761, 6565, 2]
 // Exports: BillableAdPlacementImpressionTrackerNative, QuestContentImpressionTrackerNative
 
-// Module 13757 (QuestContentImpressionTracker)
+// Module 13760 (QuestContentImpressionTracker)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
@@ -171,7 +171,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
     tmp16 = key;
   }
   const obj7 = { key: tmp16, adContentIds };
-  const QuestContentImpressionTracker = tmp(13758).QuestContentImpressionTracker;
+  const QuestContentImpressionTracker = tmp(13761).QuestContentImpressionTracker;
   const tmp18 = "questOrQuests" in skipRemountKey;
   const merged3 = Object.assign(obj6);
   const tmp17 = createElement;

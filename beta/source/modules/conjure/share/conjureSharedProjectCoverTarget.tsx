@@ -1,12 +1,12 @@
-// Module ID: 11973
-// Function ID: 11974
+// Module ID: 11978
+// Function ID: 11979
 // Name: conjureSharedProjectCoverTarget
-// Dependencies: [11974, 11975, 2]
+// Dependencies: [11979, 11980, 2]
 // Exports: default
 
-// Module 11973 (conjureSharedProjectCoverTarget)
-import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11974 */;
-import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11975 */;
+// Module 11978 (conjureSharedProjectCoverTarget)
+import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11979 */;
+import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11980 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharedProjectCoverTarget.tsx");

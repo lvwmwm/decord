@@ -1,10 +1,10 @@
-// Module ID: 11239
-// Function ID: 11240
+// Module ID: 11244
+// Function ID: 11245
 // Name: BellIcon
 // Dependencies: [19, 21, 575, 5599, 8683, 2]
 // Exports: BellIcon
 
-// Module 11239 (BellIcon)
+// Module 11244 (BellIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;

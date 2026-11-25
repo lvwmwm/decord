@@ -1,16 +1,16 @@
-// Module ID: 15022
-// Function ID: 15023
+// Module ID: 15032
+// Function ID: 15033
 // Name: ActivityTrackingStore
-// Dependencies: [2139, 1230, 502, 2158, 2162, 5654, 4816, 1071, 1088, 510, 8121, 11941, 4757, 6446, 504, 572, 2]
+// Dependencies: [2139, 1230, 502, 2158, 2162, 5654, 4816, 1071, 1088, 510, 8121, 11946, 4757, 6446, 504, 572, 2]
 
-// Module 15022 (ActivityTrackingStore)
+// Module 15032 (ActivityTrackingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import GameAnalyticsUtils from "GameAnalyticsUtils" /* 6446 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11941 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11946 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

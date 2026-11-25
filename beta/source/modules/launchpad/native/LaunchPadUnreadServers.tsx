@@ -1,15 +1,15 @@
-// Module ID: 19122
-// Function ID: 19123
+// Module ID: 19133
+// Function ID: 19134
 // Name: LaunchPadUnreadServers
-// Dependencies: [19, 17, 4762, 6619, 1386, 1071, 21, 4913, 575, 6835, 19123, 504, 1186, 10124, 5600, 14296, 7737, 5646, 8566, 17626, 1494, 19128, 1112, 7449, 2]
+// Dependencies: [19, 17, 4762, 6619, 1386, 1071, 21, 4913, 575, 6835, 19134, 504, 1186, 10129, 5600, 14306, 7737, 5646, 8566, 17636, 1494, 19139, 1112, 7449, 2]
 
-// Module 19122 (LaunchPadUnreadServers)
+// Module 19133 (LaunchPadUnreadServers)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import transitionToChannel from "transitionToChannel" /* 5646 */;
 import transitionToGuild from "transitionToGuild" /* 6835 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import isGuildSelectableDefault from "isGuildSelectable" /* 19128 */;
+import isGuildSelectableDefault from "isGuildSelectable" /* 19139 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -55,7 +55,7 @@ let closure_13 = react.memo(function GuildItemInner(guildId) {
   const callback = react.useCallback(() => {
     onGuildSelect(guildId);
   }, items);
-  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(19123), obj2) };
+  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(19134), obj2) };
   const callback1 = react.useCallback(() => {
     const obj = transitionToGuild;
     obj.transitionToGuild(guildId);

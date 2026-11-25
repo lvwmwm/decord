@@ -1,10 +1,10 @@
-// Module ID: 15836
-// Function ID: 15837
+// Module ID: 15846
+// Function ID: 15847
 // Name: ProfileEditNitroSubLabel
 // Dependencies: [19, 17, 21, 4913, 575, 8952, 5504, 2]
 // Exports: default
 
-// Module 15836 (ProfileEditNitroSubLabel)
+// Module 15846 (ProfileEditNitroSubLabel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;

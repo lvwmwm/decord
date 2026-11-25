@@ -1,9 +1,9 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10609
+// Function ID: 10610
 // Name: ZoomLayoutGesture
 // Dependencies: [19, 17, 21, 5125, 5514, 1653, 4913, 5173, 1706, 2]
 
-// Module 10604 (ZoomLayoutGesture)
+// Module 10609 (ZoomLayoutGesture)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1653 from "module_1653" /* 1653 */;

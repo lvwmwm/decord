@@ -1,14 +1,14 @@
-// Module ID: 10537
-// Function ID: 10538
+// Module ID: 10542
+// Function ID: 10543
 // Name: ModalStackNavigator
-// Dependencies: [19, 21, 8638, 7092, 8561, 10538, 1378, 2]
+// Dependencies: [19, 21, 8638, 7092, 8561, 10543, 1378, 2]
 
-// Module 10537 (ModalStackNavigator)
+// Module 10542 (ModalStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import Navigator2 from "Navigator" /* 7092 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10538 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10543 */;
 import react from "react" /* 19 */;
 import NativeStackView from "NativeStackView" /* 8638 */;
 import size from "module_2" /* 2 */;

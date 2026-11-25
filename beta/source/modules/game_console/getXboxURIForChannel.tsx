@@ -1,10 +1,10 @@
-// Module ID: 11032
-// Function ID: 11033
+// Module ID: 11037
+// Function ID: 11038
 // Name: getXboxURIForChannel
 // Dependencies: [4784, 2131, 4855, 1386, 7073, 1071, 5529, 1112, 1284, 2]
 // Exports: default
 
-// Module 11032 (getXboxURIForChannel)
+// Module 11037 (getXboxURIForChannel)
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import useChannelName from "useChannelName" /* 5529 */;
 import GuildStore from "GuildStore" /* 4784 */;

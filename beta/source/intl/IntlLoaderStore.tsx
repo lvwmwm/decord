@@ -336,15 +336,15 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "y",
-    error: "add",
-    localeData: "name",
+    error: "__d",
+    localeData: "channelId",
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "disabled", error: "isArray" });
+        closure_0({ isLoading: false, inProgressLocale: "sa", error: "isArray" });
       }
     },
     setLoadingFailed(error, arg1) {

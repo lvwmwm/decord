@@ -1,21 +1,21 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15001
+// Function ID: 15002
 // Name: LocalAppDetectionStore
-// Dependencies: [32, 6427, 1071, 504, 572, 14992, 14993, 2]
+// Dependencies: [32, 6427, 1071, 504, 572, 15002, 15003, 2]
 
-// Module 14991 (LocalAppDetectionStore)
+// Module 15001 (LocalAppDetectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14992 */;
-import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 14993 */;
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 15002 */;
+import LocalAppDetectionUtils from "LocalAppDetectionUtils" /* 15003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ConsentStore from "ConsentStore" /* 6427 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const Consents = Constants.Consents;
-let closure_6 = { detected: false, lastScannedAt: "r" };
+let closure_6 = { detected: false, lastScannedAt: "Array" };
 let closure_7 = { apps: {} };
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class LocalAppDetectionStore extends DeviceSettingsStore {

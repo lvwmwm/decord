@@ -1,10 +1,10 @@
-// Module ID: 17612
-// Function ID: 17613
+// Module ID: 17622
+// Function ID: 17623
 // Name: HappeningNowActions
-// Dependencies: [19, 17, 4843, 4784, 4816, 16699, 1071, 21, 4913, 575, 1255, 7746, 17613, 1112, 7994, 17614, 8051, 17615, 13162, 13727, 16700, 5600, 5504, 2]
+// Dependencies: [19, 17, 4843, 4784, 4816, 16709, 1071, 21, 4913, 575, 1255, 7746, 17623, 1112, 7994, 17624, 8051, 17625, 13165, 13730, 16710, 5600, 5504, 2]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 17612 (HappeningNowActions)
+// Module 17622 (HappeningNowActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -13,17 +13,17 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 7746 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7994 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13162 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13727 */;
-import HappeningNowCardDefault from "HappeningNowCard" /* 16700 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17613 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17614 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17615 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13165 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13730 */;
+import HappeningNowCardDefault from "HappeningNowCard" /* 16710 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17623 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17624 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17625 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16709 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

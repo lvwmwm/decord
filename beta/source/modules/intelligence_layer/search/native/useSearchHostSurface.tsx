@@ -1,14 +1,14 @@
-// Module ID: 18793
-// Function ID: 18794
+// Module ID: 18804
+// Function ID: 18805
 // Name: useSearchHostSurface
-// Dependencies: [18735, 1501, 5477, 575, 2]
+// Dependencies: [18746, 1501, 5477, 575, 2]
 // Exports: useSearchHostSurfaceColor
 
-// Module 18793 (useSearchHostSurface)
+// Module 18804 (useSearchHostSurface)
 import nativeDefault from "native" /* 575 */;
 import Link from "Link" /* 1501 */;
 import useToken2 from "useToken" /* 5477 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18735 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18746 */;
 import size from "module_2" /* 2 */;
 
 const SearchNavigatorScreens = SearchNavigatorConstants.SearchNavigatorScreens;

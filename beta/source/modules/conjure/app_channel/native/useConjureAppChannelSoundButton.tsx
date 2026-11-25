@@ -1,17 +1,17 @@
-// Module ID: 14352
-// Function ID: 14353
+// Module ID: 14362
+// Function ID: 14363
 // Name: useConjureAppChannelSoundButton
-// Dependencies: [19, 6623, 6624, 6865, 5557, 14353, 504, 14354, 10981, 7034, 1112, 4190, 5595, 10622, 2]
+// Dependencies: [19, 6623, 6624, 6865, 5557, 14363, 504, 14364, 10986, 7034, 1112, 4190, 5595, 10627, 2]
 // Exports: default
 
-// Module 14352 (useConjureAppChannelSoundButton)
+// Module 14362 (useConjureAppChannelSoundButton)
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10622 */;
-import VoiceXIcon from "VoiceXIcon" /* 10981 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10627 */;
+import VoiceXIcon from "VoiceXIcon" /* 10986 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6623 */;
 import size from "module_2" /* 2 */;

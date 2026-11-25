@@ -1,15 +1,15 @@
-// Module ID: 17594
-// Function ID: 17595
+// Module ID: 17604
+// Function ID: 17605
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 4761, 6400, 4855, 21, 17595, 17607, 17608, 563, 17585, 2]
+// Dependencies: [19, 4761, 6400, 4855, 21, 17605, 17617, 17618, 563, 17595, 2]
 // Exports: default, useCallActivityData
 
-// Module 17594 (HappeningNowCardUnifiedVC)
+// Module 17604 (HappeningNowCardUnifiedVC)
 import Fragment from "Fragment" /* 21 */;
-import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 17585 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 17595 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 17607 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 17608 */;
+import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 17595 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 17605 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 17617 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 17618 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;

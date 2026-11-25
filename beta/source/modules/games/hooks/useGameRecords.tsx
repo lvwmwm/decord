@@ -1,10 +1,10 @@
-// Module ID: 10215
-// Function ID: 10216
+// Module ID: 10220
+// Function ID: 10221
 // Name: useGameRecords
 // Dependencies: [2140, 9053, 504, 1254, 2]
 // Exports: default
 
-// Module 10215 (useGameRecords)
+// Module 10220 (useGameRecords)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import GameStore from "GameStore" /* 2140 */;
 import size from "module_2" /* 2 */;

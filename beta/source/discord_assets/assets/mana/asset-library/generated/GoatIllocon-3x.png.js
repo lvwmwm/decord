@@ -1,8 +1,8 @@
-// Module ID: 18512
-// Function ID: 18513
+// Module ID: 18523
+// Function ID: 18524
 // Dependencies: [2]
 
-// Module 18512
+// Module 18523
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GoatIllocon-3x.png.js");

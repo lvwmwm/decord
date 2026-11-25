@@ -1,17 +1,14 @@
 // Module ID: 15569
 // Function ID: 15570
-// Dependencies: [15544]
+// Dependencies: [15553, 15570]
 
 // Module 15569
-import _mod15544 from "module_15544" /* 15544 */;
+import _mod15553 from "module_15553" /* 15553 */;
+import _mod15570 from "module_15570" /* 15570 */;
 
-let fn;
-if (_mod15544) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
-}
+let closure_2 = _mod15553({}.hasOwnProperty);
+const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod15570(arg0), arg1);
+});
 
-export default fn;
+export default tmp;

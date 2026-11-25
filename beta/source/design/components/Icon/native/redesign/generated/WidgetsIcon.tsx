@@ -1,14 +1,14 @@
-// Module ID: 18626
-// Function ID: 18627
+// Module ID: 18637
+// Function ID: 18638
 // Name: WidgetsIcon
-// Dependencies: [19, 21, 575, 5599, 18627, 2]
+// Dependencies: [19, 21, 575, 5599, 18638, 2]
 // Exports: WidgetsIcon
 
-// Module 18626 (WidgetsIcon)
+// Module 18637 (WidgetsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 18627 */;
+import AssetRegistry from "AssetRegistry" /* 18638 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

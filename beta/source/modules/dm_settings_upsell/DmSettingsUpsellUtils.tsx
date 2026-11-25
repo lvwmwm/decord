@@ -1,10 +1,10 @@
-// Module ID: 19479
-// Function ID: 19480
+// Module ID: 19490
+// Function ID: 19491
 // Name: DmSettingsUpsellUtils
 // Dependencies: [1071, 1255, 2]
 // Exports: trackEvent
 
-// Module 19479 (DmSettingsUpsellUtils)
+// Module 19490 (DmSettingsUpsellUtils)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;

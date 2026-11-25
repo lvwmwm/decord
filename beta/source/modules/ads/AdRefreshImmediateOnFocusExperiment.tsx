@@ -1,9 +1,9 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16511
+// Function ID: 16512
 // Name: AdRefreshImmediateOnFocusExperiment
 // Dependencies: [1450, 2]
 
-// Module 16501 (AdRefreshImmediateOnFocusExperiment)
+// Module 16511 (AdRefreshImmediateOnFocusExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

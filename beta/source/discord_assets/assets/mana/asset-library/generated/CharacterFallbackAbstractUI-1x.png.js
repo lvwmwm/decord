@@ -1,8 +1,8 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12097
+// Function ID: 12098
 // Dependencies: [2]
 
-// Module 12092
+// Module 12097
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CharacterFallbackAbstractUI-1x.png.js");

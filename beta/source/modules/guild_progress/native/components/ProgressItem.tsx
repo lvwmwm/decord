@@ -1,10 +1,10 @@
-// Module ID: 13364
-// Function ID: 13365
+// Module ID: 13367
+// Function ID: 13368
 // Name: ProgressItem
 // Dependencies: [19, 17, 1071, 21, 4913, 575, 5650, 7340, 1112, 7711, 5600, 5504, 2]
 // Exports: default
 
-// Module 13364 (ProgressItem)
+// Module 13367 (ProgressItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

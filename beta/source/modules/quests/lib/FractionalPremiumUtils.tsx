@@ -12,17 +12,17 @@ import DateUtils from "DateUtils" /* 4735 */;
 import QuestRewardTypes from "QuestRewardTypes" /* 8409 */;
 import size from "module_2" /* 2 */;
 
-const f96334 = (type) => type.type === QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM;
+const f96361 = (type) => type.type === QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM;
 const result = size.fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
 
 export function getFractionalPremiumQuestRewards(rewardsConfig) {
   const rewards = rewardsConfig.rewardsConfig.rewards;
-  return rewards.filter(f96334);
+  return rewards.filter(f96361);
 }
 export function getFractionalPremiumQuestRewardName(rewardsConfig) {
   let obj6;
   const rewards = rewardsConfig.rewardsConfig.rewards;
-  const found = rewards.filter(f96334);
+  const found = rewards.filter(f96361);
   const flatMapResult = found.flatMap((quantity) => {
     const ArrayResult = Array(quantity.quantity);
     return ArrayResult.fill(quantity.skuId);

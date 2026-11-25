@@ -1,17 +1,17 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 11866
+// Function ID: 11867
 // Name: PinotChannelLabel
-// Dependencies: [19, 17, 21, 1112, 3508, 11862, 11863, 11868, 2]
+// Dependencies: [19, 17, 21, 1112, 3508, 11867, 11868, 11873, 2]
 // Exports: PinotChannelLabel, getPinotChannelLabelText
 
-// Module 11861 (PinotChannelLabel)
+// Module 11866 (PinotChannelLabel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef3508 from "module_3508" /* 3508 */;
-import PinotChannelLabelAnchor from "PinotChannelLabelAnchor" /* 11862 */;
-import useAttachPinotMemberCoachmark from "useAttachPinotMemberCoachmark" /* 11863 */;
-import ChannelHeaderShared from "ChannelHeaderShared" /* 11868 */;
+import PinotChannelLabelAnchor from "PinotChannelLabelAnchor" /* 11867 */;
+import useAttachPinotMemberCoachmark from "useAttachPinotMemberCoachmark" /* 11868 */;
+import ChannelHeaderShared from "ChannelHeaderShared" /* 11873 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

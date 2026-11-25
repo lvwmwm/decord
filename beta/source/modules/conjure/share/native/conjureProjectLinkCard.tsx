@@ -1,22 +1,22 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 11976
+// Function ID: 11977
 // Name: conjureProjectLinkCard
-// Dependencies: [109, 4914, 2164, 4762, 1386, 6621, 11970, 11972, 9953, 11973, 8698, 8699, 8701, 2]
+// Dependencies: [109, 4914, 2164, 4762, 1386, 6621, 11975, 11977, 9953, 11978, 8698, 8699, 8701, 2]
 // Exports: conjureProjectLinkCardKey
 
-// Module 11971 (conjureProjectLinkCard)
+// Module 11976 (conjureProjectLinkCard)
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;
 import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8698 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8699 */;
 import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8701 */;
-import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 11972 */;
-import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11973 */;
+import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 11977 */;
+import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11978 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11970 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11975 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;

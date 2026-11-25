@@ -1,10 +1,10 @@
-// Module ID: 18592
-// Function ID: 18593
+// Module ID: 18603
+// Function ID: 18604
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4843, 4784, 21, 18293, 7348, 7045, 18422, 7322, 5127, 12301, 18435, 18593, 18306, 18594, 504, 6865, 11731, 1112, 4190, 18325, 2]
+// Dependencies: [19, 4843, 4784, 21, 18304, 7348, 7045, 18433, 7322, 5127, 12297, 18446, 18604, 18317, 18605, 504, 6865, 11736, 1112, 4190, 18336, 2]
 // Exports: default
 
-// Module 18592 (ConjureClarificationEntityPicker)
+// Module 18603 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
@@ -12,11 +12,11 @@ import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
 import ConjureUtils from "ConjureUtils" /* 6865 */;
 import TableRow2 from "TableRow" /* 7045 */;
 import TableRowGroup2 from "TableRowGroup" /* 7348 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11731 */;
-import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 12301 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18325 */;
-import ConjureClarification from "ConjureClarification" /* 18422 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 18435 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11736 */;
+import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 12297 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18336 */;
+import ConjureClarification from "ConjureClarification" /* 18433 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 18446 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 4784 */;
@@ -90,7 +90,7 @@ function ProjectPicker(arg0) {
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(18422);
+      const tmp4Result = tmp4(18433);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };

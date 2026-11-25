@@ -1,9 +1,9 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11238
+// Function ID: 11239
 // Name: LazyLoadedThreadManager
 // Dependencies: [6394, 4766, 4762, 4816, 1071, 4769, 572, 6843, 4951, 4964, 1284, 2]
 
-// Module 11233 (LazyLoadedThreadManager)
+// Module 11238 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ChannelConstants from "ChannelConstants" /* 4769 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f99034 = () => {
+const f99069 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f99034);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f99069);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(c1) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f99034);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f99069);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[c1]) {
@@ -109,7 +109,7 @@ function loadThread(c1) {
         const catchPromise = nextPromise.catch(() => {
           let guildId;
           closure_11[id] = { type: "NOT_FOUND" };
-          const obj = { id, guild_id: guildId, parent_id: "Array" };
+          const obj = { id, guild_id: guildId, parent_id: "sa" };
           guildId = undefined;
           const dispatch = DispatcherDefault.dispatch;
           DispatcherDefault;

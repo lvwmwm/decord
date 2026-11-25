@@ -1,17 +1,17 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12237
+// Function ID: 12238
 // Name: GameOrganizationCantJoinActionSheet
-// Dependencies: [19, 4784, 11896, 21, 5127, 12242, 504, 6835, 2639, 11225, 7515, 1112, 5511, 2]
+// Dependencies: [19, 4784, 11901, 21, 5127, 12238, 504, 6835, 2639, 11230, 7515, 1112, 5511, 2]
 // Exports: default
 
-// Module 12241 (GameOrganizationCantJoinActionSheet)
+// Module 12237 (GameOrganizationCantJoinActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import transitionToGuild from "transitionToGuild" /* 6835 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12242 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12238 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11901 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -59,7 +59,7 @@ export default function GameOrganizationCantJoinActionSheet(arg0) {
     } else {
       lXyJMS = _modDef2639["IIR/NZ"];
     }
-    const PromoSheet = tmp5(11225).PromoSheet;
+    const PromoSheet = tmp5(11230).PromoSheet;
     const intl = tmp5(1112).intl;
     const obj3 = { displayNoun: str };
     const intl2 = tmp5(1112).intl;

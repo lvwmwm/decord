@@ -1,10 +1,10 @@
-// Module ID: 10206
-// Function ID: 10207
+// Module ID: 10211
+// Function ID: 10212
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 10207, 8069, 21, 4913, 575, 7045, 2151, 2152, 7977, 5600, 10208, 5488, 7426, 10212, 504, 10213, 6958, 10214, 9931, 10220, 10215, 10216, 10217, 4922, 1112, 5923, 8136, 6680, 5127, 10205, 5141, 7515, 7427, 7020, 5504, 7432, 2]
+// Dependencies: [32, 19, 17, 502, 10212, 8069, 21, 4913, 575, 7045, 2151, 2152, 7977, 5600, 10213, 5488, 7426, 10217, 504, 10218, 6958, 10219, 9931, 10225, 10220, 10221, 10222, 4922, 1112, 5923, 8136, 6680, 5127, 10210, 5141, 7515, 7427, 7020, 5504, 7432, 2]
 // Exports: default
 
-// Module 10206 (UserProfileAddGameActionSheet)
+// Module 10211 (UserProfileAddGameActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -17,13 +17,13 @@ import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6958 */;
 import TableRow2 from "TableRow" /* 7045 */;
 import Constants from "Constants" /* 8069 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8136 */;
-import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 10205 */;
-import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 10208 */;
-import WidgetUtils from "WidgetUtils" /* 10217 */;
+import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 10210 */;
+import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 10213 */;
+import WidgetUtils from "WidgetUtils" /* 10222 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WidgetStore from "WidgetStore" /* 10207 */;
+import WidgetStore from "WidgetStore" /* 10212 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,18 +1,18 @@
-// Module ID: 11727
-// Function ID: 11728
+// Module ID: 11732
+// Function ID: 11733
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 4766, 4762, 4843, 4784, 4845, 6550, 1071, 21, 4913, 575, 8149, 5122, 504, 5529, 5474, 4920, 11728, 11729, 5141, 5145, 5600, 7322, 1186, 7636, 5504, 1112, 5929, 7348, 7045, 5127, 7612, 2119, 11730, 7709, 6545, 5511, 11733, 5476, 2]
+// Dependencies: [32, 19, 17, 4766, 4762, 4843, 4784, 4845, 6550, 1071, 21, 4913, 575, 8149, 5122, 504, 5529, 5474, 4920, 11733, 11734, 5141, 5145, 5600, 7322, 1186, 7636, 5504, 1112, 5929, 7348, 7045, 5127, 7612, 2119, 11735, 7709, 6545, 5511, 11738, 5476, 2]
 // Exports: default
 
-// Module 11727 (NewChannelFollower)
+// Module 11732 (NewChannelFollower)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11730 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11733 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11735 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11738 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

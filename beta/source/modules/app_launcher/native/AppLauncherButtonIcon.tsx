@@ -1,10 +1,10 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13107
+// Function ID: 13108
 // Name: AppLauncherButtonIcon
-// Dependencies: [19, 17, 21, 5100, 1626, 10261, 7704, 2]
+// Dependencies: [19, 17, 21, 5100, 1626, 10266, 7704, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 13104 (AppLauncherButtonIcon)
+// Module 13107 (AppLauncherButtonIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1626 */;
@@ -25,7 +25,7 @@ export function AppLauncherButtonIcon(style) {
   const tmp3 = useKeyboardTypeDefault();
   if (tmp3 === KeyboardTypes.KeyboardTypes.APP_LAUNCHER) {
     const obj2 = { style: items };
-    const PlusLargeIcon = tmp6(10261).PlusLargeIcon;
+    const PlusLargeIcon = tmp6(10266).PlusLargeIcon;
     const merged1 = Object.assign(merged);
     items = [style, ];
     const obj3 = { transform: items1 };

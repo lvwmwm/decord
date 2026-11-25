@@ -1,11 +1,11 @@
-// Module ID: 17531
-// Function ID: 17532
+// Module ID: 17541
+// Function ID: 17542
 // Name: YouBarStackNavigator
-// Dependencies: [19, 17, 4816, 4946, 9420, 21, 8638, 17532, 18040, 18088, 504, 18161, 10046, 7092, 5491, 2]
+// Dependencies: [19, 17, 4816, 4946, 9420, 21, 8638, 17542, 18051, 18099, 504, 18172, 10046, 7092, 5491, 2]
 
-// Module 17531 (YouBarStackNavigator)
+// Module 17541 (YouBarStackNavigator)
 import MainTabsConstants from "MainTabsConstants" /* 9420 */;
-import Notifications from "Notifications" /* 18040 */;
+import Notifications from "Notifications" /* 18051 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;

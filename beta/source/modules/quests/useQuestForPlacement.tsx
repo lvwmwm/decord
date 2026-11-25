@@ -1,15 +1,15 @@
-// Module ID: 16498
-// Function ID: 16499
+// Module ID: 16508
+// Function ID: 16509
 // Name: useQuestForPlacement
-// Dependencies: [19, 8401, 8404, 16499, 9959, 504, 16500, 8402, 8411, 6565, 2]
+// Dependencies: [19, 8401, 8404, 16509, 9959, 504, 16510, 8402, 8411, 6565, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop, useDeliveredCreativeForPlacement
 
-// Module 16498 (useQuestForPlacement)
+// Module 16508 (useQuestForPlacement)
 import react from "react" /* 19 */;
 import AdCreativeType from "AdCreativeType" /* 6565 */;
 import QuestActionCreators from "QuestActionCreators" /* 9959 */;
-import ReturnFullQuestStatusInDecisionExperiment from "ReturnFullQuestStatusInDecisionExperiment" /* 16499 */;
-import useAdRefreshLoop2 from "useAdRefreshLoop" /* 16500 */;
+import ReturnFullQuestStatusInDecisionExperiment from "ReturnFullQuestStatusInDecisionExperiment" /* 16509 */;
+import useAdRefreshLoop2 from "useAdRefreshLoop" /* 16510 */;
 import AdDeliveryStore from "AdDeliveryStore" /* 8401 */;
 import QuestStore from "QuestStore" /* 8404 */;
 import size from "module_2" /* 2 */;

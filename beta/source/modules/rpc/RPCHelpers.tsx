@@ -1,10 +1,10 @@
-// Module ID: 10804
-// Function ID: 10805
+// Module ID: 10809
+// Function ID: 10810
 // Name: RPCHelpers
-// Dependencies: [5, 2164, 2142, 4766, 4784, 2131, 5964, 5651, 1386, 5561, 6354, 1071, 1379, 5538, 1088, 12, 6908, 8250, 10805, 5943, 6907, 1381, 6913, 1284, 6909, 5554, 10807, 2]
+// Dependencies: [5, 2164, 2142, 4766, 4784, 2131, 5964, 5651, 1386, 5561, 6354, 1071, 1379, 5538, 1088, 12, 6908, 8250, 10810, 5943, 6907, 1381, 6913, 1284, 6909, 5554, 10812, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformBigFlag, transformChannel, transformGuildMember, transformRole, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 10804 (RPCHelpers)
+// Module 10809 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
@@ -17,8 +17,8 @@ import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 6908
 import RPCErrorDefault from "RPCError" /* 6909 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8250 */;
-import transformMessage from "transformMessage" /* 10805 */;
-import LeakyBucketDefault from "LeakyBucket" /* 10807 */;
+import transformMessage from "transformMessage" /* 10810 */;
+import LeakyBucketDefault from "LeakyBucket" /* 10812 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import ApplicationRecord from "ApplicationRecord" /* 2142 */;
@@ -617,18 +617,18 @@ export function getDeprecatedVoiceSettingsWithShortcut(fn) {
   let sorted;
   let sorted1;
   let tmp2;
-  const f126894 = (index, index2) => index.index - index2.index;
-  const f126895 = (id) => ({ id: id.id, name: id.name });
+  const f126944 = (index, index2) => index.index - index2.index;
+  const f126945 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f126895), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f126945), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f126894);
+  sorted = values.sort(f126944);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f126895), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f126945), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f126894);
+  sorted1 = values2.sort(f126944);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

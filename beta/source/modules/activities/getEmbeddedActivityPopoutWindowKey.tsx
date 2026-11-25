@@ -1,10 +1,10 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 15710
+// Function ID: 15711
 // Name: getEmbeddedActivityPopoutWindowKey
 // Dependencies: [2164, 6457, 4761, 5539, 1071, 2150, 5557, 4834, 504, 2]
 // Exports: default, getEmbeddedActivityPopoutWindowKeyForApplication, getEmbeddedActivityPopoutWindowKeyForChannel, usePopoutWindowForActivity
 
-// Module 15700 (getEmbeddedActivityPopoutWindowKey)
+// Module 15710 (getEmbeddedActivityPopoutWindowKey)
 import Constants from "Constants" /* 1071 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;

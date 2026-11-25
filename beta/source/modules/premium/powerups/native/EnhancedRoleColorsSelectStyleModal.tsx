@@ -1,10 +1,10 @@
-// Module ID: 19854
-// Function ID: 19855
+// Module ID: 19865
+// Function ID: 19866
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 19834, 19836, 19833, 1082, 21, 4913, 575, 5122, 5942, 19855, 1112, 8669, 5141, 7515, 5127, 10100, 4822, 8699, 11716, 5504, 2856, 2]
+// Dependencies: [17, 19845, 19847, 19844, 1082, 21, 4913, 575, 5122, 5942, 19866, 1112, 8669, 5141, 7515, 5127, 10100, 4822, 8699, 11721, 5504, 2856, 2]
 // Exports: default
 
-// Module 19854 (EnhancedRoleColorsSelectStyleModal)
+// Module 19865 (EnhancedRoleColorsSelectStyleModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl6 from "intl" /* 1112 */;
@@ -16,11 +16,11 @@ import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5942 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
 import RowGeneratorDefault from "RowGenerator" /* 8669 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8699 */;
-import _modDef11716 from "module_11716" /* 11716 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19833 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19834 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19836 */;
-import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 19855 */;
+import _modDef11721 from "module_11721" /* 11721 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19844 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19845 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19847 */;
+import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 19866 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -147,7 +147,7 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
           const obj2 = enhanced_role_colors_EnhancedRoleColorUtils;
           message.roleColors = obj2.processColorStrings(result);
           message.message.shouldShowRoleOnName = true;
-          message.message.avatarURL = _modDef11716;
+          message.message.avatarURL = _modDef11721;
         }
       };
       items1 = [closure_1_9(require("ChatItem"), obj2), ];

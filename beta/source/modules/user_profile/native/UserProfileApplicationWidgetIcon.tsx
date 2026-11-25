@@ -1,10 +1,10 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10350
+// Function ID: 10351
 // Name: UserProfileApplicationWidgetIcon
 // Dependencies: [21, 4913, 575, 5600, 2]
 // Exports: default
 
-// Module 10345 (UserProfileApplicationWidgetIcon)
+// Module 10350 (UserProfileApplicationWidgetIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5600 */;

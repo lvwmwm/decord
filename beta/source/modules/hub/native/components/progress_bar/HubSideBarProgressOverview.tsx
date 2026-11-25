@@ -1,15 +1,15 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17737
+// Function ID: 17738
 // Name: HubSideBarProgressOverview
-// Dependencies: [19, 13193, 21, 13574, 1112, 13360, 15201, 5127, 13578, 2119, 2]
+// Dependencies: [19, 13196, 21, 13577, 1112, 13363, 15211, 5127, 13581, 2119, 2]
 // Exports: default
 
-// Module 17727 (HubSideBarProgressOverview)
+// Module 17737 (HubSideBarProgressOverview)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import react from "react" /* 19 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 13193 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 13196 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -21,16 +21,16 @@ const result = size.fileFinishedImporting("modules/hub/native/components/progres
 
 export default function HubSidebarProgressOverview(guild) {
   guild = guild.guild;
-  let obj = guild(13574);
+  let obj = guild(13577);
   const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
-  let obj2 = guild(13574);
+  let obj2 = guild(13577);
   const nextHubProgressStep = obj2.getNextHubProgressStep(hubProgressBarCompletedSteps);
   if (null == nextHubProgressStep) {
     return null;
   } else {
     let formatToPlainStringResult;
     size = hubProgressBarCompletedSteps.size;
-    const tmpResult = guild(13574);
+    const tmpResult = guild(13577);
     const hubProgressTitleForStep = tmpResult.getHubProgressTitleForStep(nextHubProgressStep);
     if (size < total) {
       const intl2 = tmp(1112).intl;
@@ -44,12 +44,12 @@ export default function HubSidebarProgressOverview(guild) {
       formatToPlainStringResult = intl.string(tmp(1112).t["+Gyklt"]);
     }
     const _Math = Math;
-    const bound = Math.max(tmp(13360).MIN_PROGRESS_PERCENT, 100 * size / tmp12);
-    return jsx(guild(15201).GuildProgressOverviewView, {
+    const bound = Math.max(tmp(13363).MIN_PROGRESS_PERCENT, 100 * size / tmp12);
+    return jsx(guild(15211).GuildProgressOverviewView, {
       onPress: function handlePress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild, analyticsSource: "Channels Sidebar" };
-          obj.openLazy(asyncRequire(13578, dependencyMap.paths), _false, obj2);
+          obj.openLazy(asyncRequire(13581, dependencyMap.paths), _false, obj2);
         },
       title: hubProgressTitleForStep,
       subtitle: formatToPlainStringResult,

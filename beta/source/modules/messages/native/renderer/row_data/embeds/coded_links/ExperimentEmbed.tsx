@@ -1,10 +1,10 @@
-// Module ID: 12332
-// Function ID: 12333
+// Module ID: 12328
+// Function ID: 12329
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 5531, 8438, 21, 8680, 8239, 11947, 11948, 4935, 12333, 12334, 12335, 8245, 12336, 8241, 5127, 5855, 5141, 7515, 12337, 11946, 2]
+// Dependencies: [19, 17, 502, 5531, 8438, 21, 8680, 8239, 11952, 11953, 4935, 12329, 12330, 12331, 8245, 12332, 8241, 5127, 5855, 5141, 7515, 12333, 11951, 2]
 // Exports: createExperimentEmbed, default
 
-// Module 12332 (ExperimentEmbed)
+// Module 12328 (ExperimentEmbed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import themes from "themes" /* 4935 */;
@@ -14,11 +14,11 @@ import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8241 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
 import Constants from "Constants" /* 8438 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8680 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11946 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11947 */;
-import useApexExperiments from "useApexExperiments" /* 11948 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 12335 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12336 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11951 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11952 */;
+import useApexExperiments from "useApexExperiments" /* 11953 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 12331 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12332 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -239,9 +239,9 @@ export function createExperimentEmbed(url, arg1) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp4Result10 = themes;
   if (tmp4Result10.isThemeDark(arg1)) {
-    tmpResult = tmp(12333);
+    tmpResult = tmp(12329);
   } else {
-    tmpResult = tmp(12334);
+    tmpResult = tmp(12330);
   }
   return obj7;
 }

@@ -1,14 +1,14 @@
-// Module ID: 20080
-// Function ID: 20081
+// Module ID: 20091
+// Function ID: 20092
 // Name: NativeNotificationsManager
-// Dependencies: [5, 6664, 1071, 3, 7484, 1378, 10861, 10864, 8155, 1255, 2]
+// Dependencies: [5, 6664, 1071, 3, 7484, 1378, 10866, 10869, 8155, 1255, 2]
 
-// Module 20080 (NativeNotificationsManager)
+// Module 20091 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import PushNotificationDefault from "PushNotification" /* 10861 */;
-import react_nativeDefault from "react-native" /* 10864 */;
+import PushNotificationDefault from "PushNotification" /* 10866 */;
+import react_nativeDefault from "react-native" /* 10869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;

@@ -1,10 +1,10 @@
-// Module ID: 10394
-// Function ID: 10395
+// Module ID: 10399
+// Function ID: 10400
 // Name: EmojiActionCreators
 // Dependencies: [5, 6573, 4864, 6394, 6551, 1071, 1081, 4743, 1226, 572, 1284, 7403, 4920, 1112, 6350, 4859, 1254, 6578, 12, 5860, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 10394 (EmojiActionCreators)
+// Module 10399 (EmojiActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
@@ -29,7 +29,7 @@ let _require, c5, c6, closure_3, customEmojiById, emojis;
 
 let c10;
 let c9;
-const f97620 = (item) => {
+const f97655 = (item) => {
   customEmojiById = customEmojiById.getCustomEmojiById(item);
   if (customEmojiById == null) {
     customEmojiById = emoji.getEmoji(item);
@@ -264,7 +264,7 @@ export function favoriteEmoji(customEmojiFromJoinedGuild) {
       if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
         tmp2 = emojis1;
         if (GatewayConnectionStore.isConnected()) {
-          const mapped = emojis1.map(f97620);
+          const mapped = emojis1.map(f97655);
           const found = mapped.filter(GlobalUtils.isNotNullish);
           const items = [];
           obj = dedupeEmojisByNameOrIdDefault(found);
@@ -327,7 +327,7 @@ export function unfavoriteEmoji(customEmojiFromJoinedGuild) {
       if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
         tmp2 = emojis1;
         if (GatewayConnectionStore.isConnected()) {
-          const mapped = emojis1.map(f97620);
+          const mapped = emojis1.map(f97655);
           const found = mapped.filter(GlobalUtils.isNotNullish);
           obj = dedupeEmojisByNameOrIdDefault(found);
           const items = [];

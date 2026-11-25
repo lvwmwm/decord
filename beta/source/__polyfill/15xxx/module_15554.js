@@ -1,18 +1,16 @@
 // Module ID: 15554
 // Function ID: 15555
-// Dependencies: [15555]
+// Dependencies: [15550]
 
 // Module 15554
-import prop_mod from "module_15555" /* 15555 */;
+import _mod15550 from "module_15550" /* 15550 */;
 
-let prop = prop_mod;
-if (prop) {
-  const _Symbol = Symbol;
-  prop = !Symbol.sham;
-}
-if (prop) {
-  const _Symbol2 = Symbol;
-  prop = typeof Symbol.iterator === "symbol";
-}
 
-export default prop;
+export default !_mod15550(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
+  return hasOwnPropertyResult;
+});

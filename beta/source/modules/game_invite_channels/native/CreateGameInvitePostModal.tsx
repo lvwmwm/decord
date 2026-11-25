@@ -1,10 +1,10 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 13728
+// Function ID: 13729
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 4762, 8388, 21, 4913, 575, 7520, 504, 7101, 13724, 5488, 13726, 5646, 5127, 11663, 2119, 1112, 7030, 7151, 5504, 4126, 7461, 12890, 7348, 7045, 7556, 5491, 12849, 5511, 2]
+// Dependencies: [32, 19, 17, 4762, 8388, 21, 4913, 575, 7520, 504, 7101, 13727, 5488, 13729, 5646, 5127, 11668, 2119, 1112, 7030, 7151, 5504, 4126, 7461, 12893, 7348, 7045, 7556, 5491, 12852, 5511, 2]
 // Exports: default
 
-// Module 13725 (CreateGameInvitePostModal)
+// Module 13728 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
@@ -82,7 +82,7 @@ function CreateGameInvitePostContent(parentChannel) {
     set = new Set(first.map((id) => id.id));
     return set;
   }, items);
-  let obj = parentChannel(13726);
+  let obj = parentChannel(13729);
   let obj2 = {
     parentChannel,
     description: tmp5,
@@ -124,7 +124,7 @@ function CreateGameInvitePostContent(parentChannel) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { parentChannel, onSave, title: intl.string(intl10.t.HPu3kq), tags };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(11663, dependencyMap.paths);
+    const tmp2 = asyncRequire(11668, dependencyMap.paths);
     intl = intl10.intl;
     openLazy(tmp2, "ForumPostTagsActionSheet", obj);
   }, items2);
@@ -147,7 +147,7 @@ function CreateGameInvitePostContent(parentChannel) {
   items4[1] = closure_8(Text, obj6);
   items5 = [closure_9(View, obj4), , ];
   const obj7 = { style: tmp.body, children: items6 };
-  const obj8 = { label: intl3.string(tmp2(4126)["/mEbGf"]), placeholder: intl4.string(tmp2(4126)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(12890).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
+  const obj8 = { label: intl3.string(tmp2(4126)["/mEbGf"]), placeholder: intl4.string(tmp2(4126)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(12893).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
   const TextArea = parentChannel(7461).TextArea;
   intl3 = parentChannel(1112).intl;
   intl4 = parentChannel(1112).intl;
@@ -189,7 +189,7 @@ function CreateGameInvitePostContent(parentChannel) {
   let tmp15Result4 = null;
   const LayerScope = tmp9(5491).LayerScope;
   if (isSlowmodeEnabled) {
-    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(12849), obj17) };
+    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(12852), obj17) };
     obj17 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp15Result4 = tmp15(tmp14, obj16);
   }

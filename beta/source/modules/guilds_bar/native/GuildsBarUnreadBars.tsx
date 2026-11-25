@@ -1,9 +1,9 @@
-// Module ID: 17932
-// Function ID: 17933
+// Module ID: 17940
+// Function ID: 17941
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6664, 4946, 6550, 17860, 16476, 21, 4913, 7449, 1628, 16467, 16478, 551, 558, 504, 1653, 1706, 17933, 2]
+// Dependencies: [32, 19, 17, 6664, 4946, 6550, 17870, 16486, 21, 4913, 7449, 1628, 16477, 16488, 551, 558, 504, 1653, 1706, 17941, 2]
 
-// Module 17932 (GuildsBarUnreadBars)
+// Module 17940 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -14,8 +14,8 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17860 */;
-import YouBarConstants from "YouBarConstants" /* 16476 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17870 */;
+import YouBarConstants from "YouBarConstants" /* 16486 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
@@ -227,7 +227,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: obj7, afterItem: "r" };
+            let obj6 = { beforeItem: obj7, afterItem: "Array" };
             obj7 = { section: sum, row: tmp32.item, mention: true };
             return obj6;
           }
@@ -245,8 +245,8 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
-let closure_17 = { beforeItem: "Array", afterItem: "channel" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
+let closure_17 = { beforeItem: "displayName", afterItem: "isArray" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
 let closure_20 = { code: "(function GuildsBarUnreadBarsTsx1(){let[scrollPosValue]=this.__closure;return scrollPosValue.get();})" };
 let closure_21 = { code: "(function GuildsBarUnreadBarsTsx2(position,lastPosition){let[scheduleOnRN,debouncedUpdate]=this.__closure;if(position!==lastPosition){scheduleOnRN(debouncedUpdate);}})" };
 const memoResult = react.memo(function GuildsBarUnreadBars(fastList) {
@@ -354,11 +354,11 @@ const memoResult = react.memo(function GuildsBarUnreadBars(fastList) {
   const tmp16 = closure_15();
   _require = tmp16;
   const top2 = tmp(1628)().top;
-  const tmp8Result = fastList(16467);
+  const tmp8Result = fastList(16477);
   const mobileQuestDockHeight = tmp8Result.useMobileQuestDockHeight();
   let num = 8;
-  const useYouBarTotalHeight = fastList(16478).useYouBarTotalHeight;
-  fastList(16478);
+  const useYouBarTotalHeight = fastList(16488).useYouBarTotalHeight;
+  fastList(16488);
   if (mobileQuestDockHeight > 0) {
     num = 0;
   }

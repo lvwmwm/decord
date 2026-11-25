@@ -1,10 +1,10 @@
-// Module ID: 10451
-// Function ID: 10452
+// Module ID: 10456
+// Function ID: 10457
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 8618, 502, 4762, 8315, 5964, 8388, 1111, 1071, 4918, 6893, 8382, 7750, 1112, 10452, 11, 1284, 8514, 10453, 8384, 1404, 8442, 10455, 8461, 5650, 8250, 5860, 572, 4920, 1088, 8447, 10510, 2]
+// Dependencies: [32, 5, 19, 8618, 502, 4762, 8315, 5964, 8388, 1111, 1071, 4918, 6893, 8382, 7750, 1112, 10457, 11, 1284, 8514, 10458, 8384, 1404, 8442, 10460, 8461, 5650, 8250, 5860, 572, 4920, 1088, 8447, 10515, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 10451 (ThreadCreationHooks)
+// Module 10456 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import MessageConstants from "MessageConstants" /* 4918 */;
 import ThreadHooks from "ThreadHooks" /* 6893 */;

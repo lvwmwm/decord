@@ -1,10 +1,10 @@
-// Module ID: 11328
-// Function ID: 11329
+// Module ID: 11333
+// Function ID: 11334
 // Name: guild/GuildUtils
 // Dependencies: [6511, 6516, 2]
 // Exports: handleJoinGuild
 
-// Module 11328 (guild/GuildUtils)
+// Module 11333 (guild/GuildUtils)
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
 import size from "module_2" /* 2 */;
 

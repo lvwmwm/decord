@@ -1,10 +1,10 @@
-// Module ID: 10233
-// Function ID: 10234
+// Module ID: 10238
+// Function ID: 10239
 // Name: useGameNameAndCoverImage
 // Dependencies: [9053, 1112, 2]
 // Exports: default
 
-// Module 10233 (useGameNameAndCoverImage)
+// Module 10238 (useGameNameAndCoverImage)
 import useGame from "useGame" /* 9053 */;
 import size from "module_2" /* 2 */;
 

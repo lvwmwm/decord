@@ -192,7 +192,7 @@ export default function formatResults(hasQuery) {
   let queryMode;
   let selectedDestinations;
   let targetDestination;
-  const f96539 = (type) => {
+  const f96566 = (type) => {
     obj = queryMode(dependencyMap[11]);
     let isNotNullishResult = obj.isNotNullish(type);
     const tmp = queryMode;
@@ -215,7 +215,7 @@ export default function formatResults(hasQuery) {
     if (channelFilter === undefined) {
       channelFilter = canShareToChannel;
     }
-    return tmp26(results.filter(f96539));
+    return tmp26(results.filter(f96566));
   } else {
     let tmp2 = null;
     if (null != pinnedDestinations) {
@@ -279,7 +279,7 @@ export default function formatResults(hasQuery) {
         tmp21 = canShareToChannel;
       }
       closure_1 = tmp21;
-      const found = items.filter(f96539);
+      const found = items.filter(f96566);
       if (selectedDestinations != null) {
         found1 = selectedDestinations.find((item) => {
           obj = _mod12;

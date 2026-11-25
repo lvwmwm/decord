@@ -1,10 +1,10 @@
-// Module ID: 10456
-// Function ID: 10457
+// Module ID: 10461
+// Function ID: 10462
 // Name: showUploadFileSizeError
-// Dependencies: [1193, 1386, 1071, 4918, 1388, 2108, 8538, 5650, 10457, 10458, 8443, 8474, 10459, 1091, 7539, 1112, 6355, 8442, 5860, 2]
+// Dependencies: [1193, 1386, 1071, 4918, 1388, 2108, 8538, 5650, 10462, 10463, 8443, 8474, 10464, 1091, 7539, 1112, 6355, 8442, 5860, 2]
 // Exports: default
 
-// Module 10456 (showUploadFileSizeError)
+// Module 10461 (showUploadFileSizeError)
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import intl5 from "intl" /* 1112 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
@@ -17,9 +17,9 @@ import UploadUtils from "UploadUtils" /* 8442 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8443 */;
 import utils_UploadUtils from "utils/UploadUtils" /* 8474 */;
 import logMessageSendFailure from "logMessageSendFailure" /* 8538 */;
-import buildFileSizeLimitEventProperties2 from "buildFileSizeLimitEventProperties" /* 10457 */;
-import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 10458 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10459 */;
+import buildFileSizeLimitEventProperties2 from "buildFileSizeLimitEventProperties" /* 10462 */;
+import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 10463 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10464 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;

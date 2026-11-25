@@ -1,10 +1,10 @@
-// Module ID: 11821
-// Function ID: 11822
+// Module ID: 11826
+// Function ID: 11827
 // Name: useLastChannelMessage
 // Dependencies: [5964, 504, 2]
 // Exports: useLastChannelMessage
 
-// Module 11821 (useLastChannelMessage)
+// Module 11826 (useLastChannelMessage)
 import MessageStore from "MessageStore" /* 5964 */;
 import size from "module_2" /* 2 */;
 

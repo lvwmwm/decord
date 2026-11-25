@@ -1,9 +1,9 @@
-// Module ID: 14898
-// Function ID: 14899
+// Module ID: 14908
+// Function ID: 14909
 // Name: GatewaySocketOpCodes
 // Dependencies: [5753, 568, 2129, 11, 2]
 
-// Module 14898 (GatewaySocketOpCodes)
+// Module 14908 (GatewaySocketOpCodes)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _mod568 from "module_568" /* 568 */;
 import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2129 */;

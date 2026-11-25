@@ -1,10 +1,10 @@
-// Module ID: 11974
-// Function ID: 11975
+// Module ID: 11979
+// Function ID: 11980
 // Name: conjureSharedProjectHome
 // Dependencies: [4784, 6622, 2]
 // Exports: canLaunchSharedProject, getSharedProjectHomeGuildId
 
-// Module 11974 (conjureSharedProjectHome)
+// Module 11979 (conjureSharedProjectHome)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;

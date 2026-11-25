@@ -50,7 +50,7 @@ export default function RoleIcon(layout) {
   if (isIOSResult) {
     str3 = "system-ui";
   }
-  const obj2 = { fontFamily: str3, fontSize: result, lineHeight: "Array", textAlign: "center", width: result1, marginBottom: num2 };
+  const obj2 = { fontFamily: str3, fontSize: result, lineHeight: "sa", textAlign: "center", width: result1, marginBottom: num2 };
   if (isIOSResult) {
     result = size / c6;
   } else {

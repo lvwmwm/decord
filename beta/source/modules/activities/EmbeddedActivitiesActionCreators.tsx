@@ -1,10 +1,10 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 10676
+// Function ID: 10677
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 10436, 2164, 6620, 6457, 502, 4762, 4784, 4845, 1386, 5561, 4761, 2144, 1071, 1363, 4759, 10672, 8447, 10622, 10685, 10686, 10690, 10691, 572, 6945, 6946, 10692, 6950, 6350, 5972, 2150, 5557, 7466, 10693, 2117, 10694, 10700, 10677, 1255, 10701, 10709, 6419, 10710, 5860, 1112, 5560, 10711, 1263, 6432, 4834, 6629, 5649, 1284, 7262, 7267, 8250, 7737, 8382, 4747, 4746, 2]
+// Dependencies: [32, 5, 10441, 2164, 6620, 6457, 502, 4762, 4784, 4845, 1386, 5561, 4761, 2144, 1071, 1363, 4759, 10677, 8447, 10627, 10690, 10691, 10695, 10696, 572, 6945, 6946, 10697, 6950, 6350, 5972, 2150, 5557, 7466, 10698, 2117, 10699, 10705, 10682, 1255, 10706, 10714, 6419, 10715, 5860, 1112, 5560, 10716, 1263, 6432, 4834, 6629, 5649, 1284, 7262, 7267, 8250, 7737, 8382, 4747, 4746, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 10671 (EmbeddedActivitiesActionCreators)
+// Module 10676 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import ApplicationConstants from "ApplicationConstants" /* 1363 */;
@@ -15,7 +15,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6629 */;
 import createProxyTicket2 from "createProxyTicket" /* 6945 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10436 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10441 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;

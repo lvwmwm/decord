@@ -204,7 +204,7 @@ function handleRelationshipAddOrUpdate(relationship) {
 }
 const isGuildEventEnded = GuildScheduledEventStore.isGuildEventEnded;
 const RelationshipTypes = Constants.RelationshipTypes;
-let obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: set, notifCenterLocalItems: [], paginationHasMore: true, paginationCursor: "Promise", notifCenterActive: "GUILD_SETTINGS_SET_SECTION", notifCenterTabFocused: null };
+let obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: set, notifCenterLocalItems: [], paginationHasMore: true, paginationCursor: "Promise", notifCenterActive: "house_abandoned", notifCenterTabFocused: "derelict_house_building" };
 set = new Set();
 const PersistedStore = get_initializedDefault.PersistedStore;
 class NotificationCenterItemsStore extends PersistedStore {
@@ -387,7 +387,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Promise", notifCenterActive: "GUILD_SETTINGS_SET_SECTION", notifCenterTabFocused: null };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Promise", notifCenterActive: "house_abandoned", notifCenterTabFocused: "derelict_house_building" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;
@@ -518,7 +518,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Promise", notifCenterActive: "GUILD_SETTINGS_SET_SECTION", notifCenterTabFocused: null };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Promise", notifCenterActive: "house_abandoned", notifCenterTabFocused: "derelict_house_building" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;
@@ -670,7 +670,7 @@ const obj2 = {
     if (flag === undefined) {
       flag = false;
     }
-    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Promise", notifCenterActive: "GUILD_SETTINGS_SET_SECTION", notifCenterTabFocused: null };
+    obj = { loading: false, initialized: false, errored: false, isDataStale: false, notifCenterItems: [], staleNotifCenterItems: [], notifCenterIds: new Set(), notifCenterLocalItems: prop, paginationHasMore: true, paginationCursor: "Promise", notifCenterActive: "house_abandoned", notifCenterTabFocused: "derelict_house_building" };
     new Set();
     if (flag) {
       prop = obj.notifCenterLocalItems;

@@ -1,9 +1,9 @@
-// Module ID: 18174
-// Function ID: 18175
+// Module ID: 18185
+// Function ID: 18186
 // Name: StandaloneChannelScreen
-// Dependencies: [19, 17, 4762, 8562, 1071, 4769, 21, 4913, 575, 1628, 8570, 504, 4787, 12471, 1112, 5089, 8658, 8563, 5491, 11850, 14376, 8573, 18175, 1501, 11935, 5947, 6683, 5122, 5092, 11878, 6656, 8578, 1186, 9659, 18180, 13712, 18197, 18214, 18232, 18691, 18695, 11741, 18707, 18708, 12818, 2]
+// Dependencies: [19, 17, 4762, 8562, 1071, 4769, 21, 4913, 575, 1628, 8570, 504, 4787, 12467, 1112, 5089, 8658, 8563, 5491, 11855, 14386, 8573, 18186, 1501, 11940, 5947, 6683, 5122, 5092, 11883, 6656, 8578, 1186, 9659, 18191, 13715, 18208, 18225, 18243, 18702, 18706, 11746, 18718, 18719, 12821, 2]
 
-// Module 18174 (StandaloneChannelScreen)
+// Module 18185 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 575 */;
 import ChannelConstants from "ChannelConstants" /* 4769 */;
 import FavoritesUtils from "FavoritesUtils" /* 4787 */;

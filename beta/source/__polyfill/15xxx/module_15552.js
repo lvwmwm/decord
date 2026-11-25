@@ -1,24 +1,27 @@
 // Module ID: 15552
 // Function ID: 15553
-// Dependencies: [15536, 15537, 15553]
+// Dependencies: [15553, 15550, 15555]
 
 // Module 15552
-import _mod15536 from "module_15536" /* 15536 */;
-import _mod15537 from "module_15537" /* 15537 */;
+import _mod15550 from "module_15550" /* 15550 */;
 import _mod15553 from "module_15553" /* 15553 */;
+import _mod15555 from "module_15555" /* 15555 */;
 
-const prop = _mod15536["__core-js_shared__"] || _mod15537("__core-js_shared__", {});
-let versions = prop.versions;
-if (!versions) {
-  const items = [];
-  prop.versions = items;
-  versions = items;
+let fn = Object;
+let closure_3 = _mod15553("".split);
+if (_mod15550(() => {
+  const obj = Object("z");
+  return !obj.propertyIsEnumerable(0);
+})) {
+  fn = (arg0) => {
+    let tmp2;
+    if ("String" === _mod15555(arg0)) {
+      tmp2 = closure_3(arg0, "");
+    } else {
+      tmp2 = Object(arg0);
+    }
+    return tmp2;
+  };
 }
-const push = versions.push;
-let str2 = "global";
-if (_mod15553) {
-  str2 = "pure";
-}
-push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
 
-export default prop;
+export default fn;

@@ -1,18 +1,18 @@
-// Module ID: 12542
-// Function ID: 12543
+// Module ID: 12545
+// Function ID: 12546
 // Name: CheckpointCharacterStage
-// Dependencies: [32, 19, 17, 12128, 21, 4913, 12506, 1494, 504, 5492, 12543, 12709, 12711, 12712, 12714, 12715, 12716, 6338, 12717, 6335, 4980, 2]
+// Dependencies: [32, 19, 17, 12495, 21, 4913, 12510, 1494, 504, 5492, 12546, 12712, 12714, 12715, 12717, 12718, 12719, 6338, 12720, 6335, 4980, 2]
 // Exports: default
 
-// Module 12542 (CheckpointCharacterStage)
+// Module 12545 (CheckpointCharacterStage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12543 */;
-import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 12709 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12546 */;
+import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 12712 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 12128 */;
+import CheckpointStore from "CheckpointStore" /* 12495 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ function CheckpointCharacterStage(stage) {
   stateFromStores = obj2.useStateFromStores(items, () => stateFromStores.compactAssets);
   const tmp7 = layout(isHidden[9])(() => {
     const obj = CheckpointCharacterTextureUtils;
-    return obj.getCheckpointCharacterTextureScale(c4, height, stateFromStores);
+    return obj.getCheckpointCharacterTextureScale(c4, height);
   });
   const textureScale = tmp7;
   const items1 = [stateFromStores];
@@ -68,7 +68,7 @@ function CheckpointCharacterStage(stage) {
   const obj4 = stage(isHidden[12]);
   const checkpointCharacterPreloadedTextureNames = obj4.useCheckpointCharacterPreloadedTextureNames(stage, tmp13);
   const obj5 = stage(isHidden[13]);
-  const checkpointCharacterReferencedAssets = obj5.useCheckpointCharacterReferencedAssets({ visibleDataBinding: first, requestedDataBinding: memo, textureScale: tmp7, preloadedTextureNames: checkpointCharacterPreloadedTextureNames });
+  const checkpointCharacterReferencedAssets = obj5.useCheckpointCharacterReferencedAssets({ visibleDataBinding: first, requestedDataBinding: memo, textureScale: tmp7, preloadedTextureNames: checkpointCharacterPreloadedTextureNames, compactAssets: stateFromStores });
   const tmp16 = layout(isHidden[9])(checkpointCharacterReferencedAssets);
   [tmp18, tmp19] = onExitPlaying(react.useState(null), 2);
   onExitPlaying(react.useState(null), 2);

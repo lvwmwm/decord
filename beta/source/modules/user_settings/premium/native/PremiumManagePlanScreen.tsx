@@ -1,12 +1,12 @@
-// Module ID: 16285
-// Function ID: 16286
+// Module ID: 16295
+// Function ID: 16296
 // Name: PremiumManagePlanScreen
-// Dependencies: [19, 21, 14103, 2]
+// Dependencies: [19, 21, 14106, 2]
 // Exports: default
 
-// Module 16285 (PremiumManagePlanScreen)
+// Module 16295 (PremiumManagePlanScreen)
 import Fragment from "Fragment" /* 21 */;
-import PremiumManagePlanDefault from "PremiumManagePlan" /* 14103 */;
+import PremiumManagePlanDefault from "PremiumManagePlan" /* 14106 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

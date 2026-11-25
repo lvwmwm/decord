@@ -1,14 +1,14 @@
-// Module ID: 19252
-// Function ID: 19253
+// Module ID: 19263
+// Function ID: 19264
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 6536, 4762, 5654, 5561, 5563, 11749, 9676, 563, 11040, 5679, 10965, 17753, 10855, 19221, 5595, 1112, 7225, 575, 2]
+// Dependencies: [19, 6536, 4762, 5654, 5561, 5563, 11754, 9676, 563, 11045, 5679, 10970, 17763, 10860, 19232, 5595, 1112, 7225, 575, 2]
 // Exports: default
 
-// Module 19252 (useVoicePanelCardUserStateIcons)
+// Module 19263 (useVoicePanelCardUserStateIcons)
 import CallConstants from "CallConstants" /* 5563 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9676 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19221 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19232 */;
 import react from "react" /* 19 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 6536 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(10965);
-const useMuteAwareLocalVolumeDefault = tmp2(11040);
+const MobileAudioOutputExperimentDefault = tmp2(10970);
+const useMuteAwareLocalVolumeDefault = tmp2(11045);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON", STAGE_MODERATOR_ICON: "STAGE_MODERATOR_ICON" };
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useVoicePanelCardUserStateIcons.tsx");
@@ -97,13 +97,13 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result9 = tmp4(17753);
+  const tmp4Result9 = tmp4(17763);
   isRTCDisconnectedUIVisible = tmp4Result9.useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [videoIconState];
   const items4 = [tmp];
   const tmp4Result10 = tmp4(563);
   const stateFromStores2 = tmp4Result10.useStateFromStores(items3, () => ChannelStore.getChannel(c2), items4);
-  const tmp4Result11 = tmp4(10855);
+  const tmp4Result11 = tmp4(10860);
   isStageUnifiedCall = tmp4Result11.useIsStageUnifiedCall(stateFromStores2, "useVoicePanelCardUserStateIcons");
   const items5 = [muteDeafenIconState];
   const items6 = [isStageUnifiedCall, arg0, id, tmp];

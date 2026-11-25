@@ -1,10 +1,10 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 17324
+// Function ID: 17325
 // Name: useCardLayout
 // Dependencies: [32, 19, 9545, 1494, 2]
 // Exports: useCardLayout
 
-// Module 17314 (useCardLayout)
+// Module 17324 (useCardLayout)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ export function useCardLayout() {
   let ref;
   let result4;
   let tmp3;
-  const f111775 = () => {
+  const f111817 = () => {
     const obj = ref(dependencyMap[3]);
     return obj.getWindowDimensions().width;
   };
@@ -34,8 +34,8 @@ export function useCardLayout() {
     }
     tmp.current = nativeScrollRef;
   }, []);
-  [tmp3, dependencyMap] = _slicedToArray(react.useState(f111775), 2);
-  const tmp2 = _slicedToArray(react.useState(f111775), 2);
+  [tmp3, dependencyMap] = _slicedToArray(react.useState(f111817), 2);
+  const tmp2 = _slicedToArray(react.useState(f111817), 2);
   const layoutEffect = react.useLayoutEffect(() => {
     const current = ref.current;
     if (current != null) {
@@ -57,7 +57,7 @@ export function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "r", rowWidth: "channel_id", ref: callback, onLayout: callback1 };
+    return { columns: num, cardWidth: "r", rowWidth: "analyticsLocations", ref: callback, onLayout: callback1 };
   } else {
     let bound;
     let num2 = 2;
@@ -112,8 +112,8 @@ export function useCardLayout() {
     if (result3 + (bound + tmp15(9545).COLLECTIBLES_SHOP_CARD_GAP * diff2) > tmp3) {
       let obj;
       if (1 < tmp17) {
-        obj = { columns: 1, cardWidth: "r", rowWidth: "s", ref: callback, onLayout: callback1 };
-        const obj3 = { columns: 1, cardWidth: "r", rowWidth: "s", ref: callback, onLayout: callback1 };
+        obj = { columns: 1, cardWidth: "r", rowWidth: "__d", ref: callback, onLayout: callback1 };
+        const obj3 = { columns: 1, cardWidth: "r", rowWidth: "__d", ref: callback, onLayout: callback1 };
       }
       return obj;
     }

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ac381080e803b7da0a8a3822cdf80aee", name: "BlurBackgroundIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 195, height: 92, scales: [1, 2, 3], hash: "a075205f01081abc73c7a94b31634a53", name: "krisp_logo_light", type: "png" });

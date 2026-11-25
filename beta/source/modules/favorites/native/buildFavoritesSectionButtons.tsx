@@ -1,10 +1,10 @@
-// Module ID: 11218
-// Function ID: 11219
+// Module ID: 11223
+// Function ID: 11224
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 11219, 2119, 1112, 3802, 10011, 10009, 2]
+// Dependencies: [5, 11224, 2119, 1112, 3802, 10011, 10009, 2]
 // Exports: default
 
-// Module 11218 (buildFavoritesSectionButtons)
+// Module 11223 (buildFavoritesSectionButtons)
 import _modDef3802 from "module_3802" /* 3802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

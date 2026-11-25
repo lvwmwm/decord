@@ -1,10 +1,10 @@
-// Module ID: 10989
-// Function ID: 10990
+// Module ID: 10994
+// Function ID: 10995
 // Name: getCurrentVoiceChannel
 // Dependencies: [502, 4762, 5561, 2]
 // Exports: default
 
-// Module 10989 (getCurrentVoiceChannel)
+// Module 10994 (getCurrentVoiceChannel)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import VoiceStateStore from "VoiceStateStore" /* 5561 */;

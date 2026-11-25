@@ -1,21 +1,21 @@
-// Module ID: 17544
-// Function ID: 17545
+// Module ID: 17554
+// Function ID: 17555
 // Name: useHomeDrawerPeekHint
-// Dependencies: [32, 19, 4914, 17536, 1071, 4759, 1653, 4746, 1501, 17545, 504, 17538, 4945, 9080, 5123, 5514, 17542, 1706, 2]
+// Dependencies: [32, 19, 4914, 17546, 1071, 4759, 1653, 4746, 1501, 17555, 504, 17548, 4945, 9080, 5123, 5514, 17552, 1706, 2]
 // Exports: useHomeDrawerPeekHint
 
-// Module 17544 (useHomeDrawerPeekHint)
+// Module 17554 (useHomeDrawerPeekHint)
 import Constants from "Constants" /* 1071 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import spring_spring from "spring/spring" /* 5514 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17542 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17552 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import HomeDrawerStore_mod from "HomeDrawerStore" /* 17536 */;
+import HomeDrawerStore_mod from "HomeDrawerStore" /* 17546 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 13944
-// Function ID: 13945
+// Module ID: 13947
+// Function ID: 13948
 // Name: PremiumGiftPurchaseButton
-// Dependencies: [19, 17, 8137, 9143, 1071, 21, 4913, 575, 5488, 1500, 9468, 9287, 504, 9147, 9496, 8070, 9208, 9466, 11918, 1112, 9505, 9507, 2888, 11242, 9509, 9482, 7539, 5504, 2187, 5511, 5098, 2]
+// Dependencies: [19, 17, 8137, 9143, 1071, 21, 4913, 575, 5488, 1500, 9468, 9287, 504, 9147, 9496, 8070, 9208, 9466, 11923, 1112, 9505, 9507, 2888, 11247, 9509, 9482, 7539, 5504, 2187, 5511, 5098, 2]
 // Exports: default
 
-// Module 13944 (PremiumGiftPurchaseButton)
+// Module 13947 (PremiumGiftPurchaseButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ChatInputUtils from "ChatInputUtils" /* 5098 */;
@@ -128,7 +128,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
       setSelectedGiftingPromotionReward(claimableRewards[0]);
     }
   }, items2);
-  const tmp4Result4 = tmp4(11918);
+  const tmp4Result4 = tmp4(11923);
   const product = tmp4Result4.useFetchCollectiblesProduct(selectedGiftingPromotionReward).product;
   const tmp14 = null != product && product.items.length > 0;
   const intl = tmp4(1112).intl;
@@ -263,8 +263,8 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         if (product != null) {
           name = product.name;
         }
-        items5 = [closure_9(PremiumGiftPromotionCollectibleRewardDetails, obj12), !tmp9 && closure_9(tmp4(11242).PencilIcon, { size: "sm" })];
-        !(null != claimableRewards && 1 === claimableRewards.length) && closure_9(tmp4(11242).PencilIcon, { size: "sm" });
+        items5 = [closure_9(PremiumGiftPromotionCollectibleRewardDetails, obj12), !tmp9 && closure_9(tmp4(11247).PencilIcon, { size: "sm" })];
+        !(null != claimableRewards && 1 === claimableRewards.length) && closure_9(tmp4(11247).PencilIcon, { size: "sm" });
         tmp21Result = tmp18(tmp23, obj10);
       }
     }

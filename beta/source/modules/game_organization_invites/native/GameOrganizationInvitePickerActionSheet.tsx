@@ -1,10 +1,10 @@
-// Module ID: 12082
-// Function ID: 12083
+// Module ID: 12087
+// Function ID: 12088
 // Name: GameOrganizationInvitePickerActionSheet
-// Dependencies: [19, 17, 11896, 21, 4913, 575, 5929, 5600, 7530, 5504, 7348, 12083, 12096, 1112, 2639, 7553, 4969, 2]
+// Dependencies: [19, 17, 11901, 21, 4913, 575, 5929, 5600, 7530, 5504, 7348, 12088, 12101, 1112, 2639, 7553, 4969, 2]
 // Exports: default
 
-// Module 12082 (GameOrganizationInvitePickerActionSheet)
+// Module 12087 (GameOrganizationInvitePickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2639 from "module_2639" /* 2639 */;
@@ -12,9 +12,9 @@ import UserUtilsDefault from "UserUtils" /* 4969 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
-import GameOrganizationInvitePickerRowDefault from "GameOrganizationInvitePickerRow" /* 12083 */;
-import useGameOrganizationInvitePickerDefault from "useGameOrganizationInvitePicker" /* 12096 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11901 */;
+import GameOrganizationInvitePickerRowDefault from "GameOrganizationInvitePickerRow" /* 12088 */;
+import useGameOrganizationInvitePickerDefault from "useGameOrganizationInvitePicker" /* 12101 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

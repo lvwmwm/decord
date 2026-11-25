@@ -1,10 +1,10 @@
-// Module ID: 18648
-// Function ID: 18649
+// Module ID: 18659
+// Function ID: 18660
 // Name: useConjureOtherOwnProjects
 // Dependencies: [6621, 504, 6838, 2]
 // Exports: default
 
-// Module 18648 (useConjureOtherOwnProjects)
+// Module 18659 (useConjureOtherOwnProjects)
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 

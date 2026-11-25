@@ -1,11 +1,11 @@
-// Module ID: 13173
-// Function ID: 13174
+// Module ID: 13176
+// Function ID: 13177
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4913, 13174, 4776, 13175, 13162, 13163, 5504, 1112, 13171, 2]
+// Dependencies: [5, 19, 17, 21, 4913, 13177, 4776, 13178, 13165, 13166, 5504, 1112, 13174, 2]
 // Exports: default
 
-// Module 13173 (GuildDirectoryCreateOrAddDescription)
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13171 */;
+// Module 13176 (GuildDirectoryCreateOrAddDescription)
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13174 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -120,7 +120,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   obj = { children: closure_7(closure_5, obj2) };
   obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: items1 };
   const obj3 = { style: tmp.header, children: items };
-  const GuildDirectoryAddModalScreen = directoryChannelId(13163).GuildDirectoryAddModalScreen;
+  const GuildDirectoryAddModalScreen = directoryChannelId(13166).GuildDirectoryAddModalScreen;
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1112).t["5bQcoa"]) };
   const Text = directoryChannelId(5504).Text;
   intl = directoryChannelId(1112).intl;

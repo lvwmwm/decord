@@ -1,10 +1,10 @@
-// Module ID: 12452
-// Function ID: 12453
+// Module ID: 12448
+// Function ID: 12449
 // Name: AppealIngestionCollectSignal
-// Dependencies: [19, 17, 7809, 21, 4913, 575, 4975, 7709, 7808, 12425, 572, 5127, 12453, 2119, 1112, 12442, 5504, 2]
+// Dependencies: [19, 17, 7809, 21, 4913, 575, 4975, 7709, 7808, 12421, 572, 5127, 12449, 2119, 1112, 12438, 5504, 2]
 // Exports: default
 
-// Module 12452 (AppealIngestionCollectSignal)
+// Module 12448 (AppealIngestionCollectSignal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -103,20 +103,20 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
           }
       };
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(12453, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
+      tmpResult.openLazy(asyncRequire(12449, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
     }
   }
   let tmp = closure_8();
   const formRow = tmp;
-  let obj = isDsaEligible(12425);
+  let obj = isDsaEligible(12421);
   dependencyMap = obj.useSafetyHubAppealSignal();
   const intl = isDsaEligible(1112).intl;
   const stringResult = intl.string(isDsaEligible(1112).t["C5q+pW"]);
   const intl2 = isDsaEligible(1112).intl;
   let obj2 = { children: items };
   const stringResult1 = intl2.string(isDsaEligible(1112).t.VEcRhw);
-  const AppealIngestionModalScreen = isDsaEligible(12442).AppealIngestionModalScreen;
-  items = [closure_6(isDsaEligible(12442).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
+  const AppealIngestionModalScreen = isDsaEligible(12438).AppealIngestionModalScreen;
+  items = [closure_6(isDsaEligible(12438).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj3 = { style: tmp.container, children: closure_7(Form, obj4) };
   obj4 = { style: tmp.form, children: items1 };
   Form = isDsaEligible(7709).Form;

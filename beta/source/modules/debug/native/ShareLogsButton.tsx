@@ -1,9 +1,9 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 16993
+// Function ID: 16994
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 7030, 1112, 9718, 7, 10137, 2]
+// Dependencies: [19, 21, 7030, 1112, 9718, 7, 10142, 2]
 
-// Module 16983 (ShareLogsButton)
+// Module 16993 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;

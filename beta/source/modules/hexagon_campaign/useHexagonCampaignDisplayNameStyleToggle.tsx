@@ -1,10 +1,10 @@
-// Module ID: 15875
-// Function ID: 15876
+// Module ID: 15885
+// Function ID: 15886
 // Name: useHexagonCampaignDisplayNameStyleToggle
-// Dependencies: [5, 32, 19, 1386, 4938, 8131, 6342, 4941, 5474, 8909, 15851, 2]
+// Dependencies: [5, 32, 19, 1386, 4938, 8131, 6342, 4941, 5474, 8909, 15861, 2]
 // Exports: useHexagonCampaignDisplayNameStyleToggle
 
-// Module 15875 (useHexagonCampaignDisplayNameStyleToggle)
+// Module 15885 (useHexagonCampaignDisplayNameStyleToggle)
 import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6342 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8909 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

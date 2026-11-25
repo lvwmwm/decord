@@ -1,15 +1,15 @@
-// Module ID: 14646
-// Function ID: 14647
+// Module ID: 14656
+// Function ID: 14657
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 8053, 21, 4913, 575, 504, 1186, 14647, 1112, 7249, 7030, 10371, 5504, 8054, 5511, 2]
+// Dependencies: [19, 17, 8053, 21, 4913, 575, 504, 1186, 14657, 1112, 7249, 7030, 10376, 5504, 8054, 5511, 2]
 // Exports: default
 
-// Module 14646 (InstantInviteEmptyState)
+// Module 14656 (InstantInviteEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FreeFormTextInputDefault from "FreeFormTextInput" /* 7249 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8054 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14647 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14657 */;
 import react from "react" /* 19 */;
 import CreateInviteModalStore from "CreateInviteModalStore" /* 8053 */;
 import Fragment from "Fragment" /* 21 */;
@@ -59,7 +59,7 @@ export default function InstantInviteEmptyState(link) {
     str = "";
   }
   items2 = [closure_5(tmp9, obj5), ];
-  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1112).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(10371).SettingsIcon, {}) };
+  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1112).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(10376).SettingsIcon, {}) };
   const PressableOpacity = tmp2(7030).PressableOpacity;
   intl3 = tmp2(1112).intl;
   items2[1] = closure_5(PressableOpacity, obj6);

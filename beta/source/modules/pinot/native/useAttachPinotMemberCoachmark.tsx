@@ -1,17 +1,17 @@
-// Module ID: 11863
-// Function ID: 11864
+// Module ID: 11868
+// Function ID: 11869
 // Name: useAttachPinotMemberCoachmark
-// Dependencies: [19, 1071, 4759, 21, 11864, 575, 11856, 11866, 1112, 3508, 5504, 8194, 5592, 2187, 9087, 2]
+// Dependencies: [19, 1071, 4759, 21, 11869, 575, 11861, 11871, 1112, 3508, 5504, 8194, 5592, 2187, 9087, 2]
 // Exports: useAttachPinotMemberCoachmark
 
-// Module 11863 (useAttachPinotMemberCoachmark)
+// Module 11868 (useAttachPinotMemberCoachmark)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import _modDef3508 from "module_3508" /* 3508 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11864 */;
-import PinotAnalytics from "PinotAnalytics" /* 11866 */;
+import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11869 */;
+import PinotAnalytics from "PinotAnalytics" /* 11871 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;

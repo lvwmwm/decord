@@ -1,12 +1,12 @@
-// Module ID: 10225
-// Function ID: 10226
+// Module ID: 10230
+// Function ID: 10231
 // Name: UserProfileWidgetEditOptionsButton
-// Dependencies: [19, 21, 7591, 7022, 575, 1112, 10226, 2]
+// Dependencies: [19, 21, 7591, 7022, 575, 1112, 10231, 2]
 // Exports: default
 
-// Module 10225 (UserProfileWidgetEditOptionsButton)
+// Module 10230 (UserProfileWidgetEditOptionsButton)
 import Fragment from "Fragment" /* 21 */;
-import openUserProfileWidgetEditOptionsActionSheetDefault from "openUserProfileWidgetEditOptionsActionSheet" /* 10226 */;
+import openUserProfileWidgetEditOptionsActionSheetDefault from "openUserProfileWidgetEditOptionsActionSheet" /* 10231 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

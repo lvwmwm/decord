@@ -1,10 +1,10 @@
-// Module ID: 10639
-// Function ID: 10640
+// Module ID: 10644
+// Function ID: 10645
 // Name: useSelectedParticipant
 // Dependencies: [6620, 504, 2]
 // Exports: default
 
-// Module 10639 (useSelectedParticipant)
+// Module 10644 (useSelectedParticipant)
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import size from "module_2" /* 2 */;
 

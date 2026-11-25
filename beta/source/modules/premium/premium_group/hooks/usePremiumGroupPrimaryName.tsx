@@ -1,13 +1,13 @@
-// Module ID: 14093
-// Function ID: 14094
+// Module ID: 14096
+// Function ID: 14097
 // Name: usePremiumGroupPrimaryName
-// Dependencies: [14094, 14098, 4969, 2]
+// Dependencies: [14097, 14101, 4969, 2]
 // Exports: default
 
-// Module 14093 (usePremiumGroupPrimaryName)
+// Module 14096 (usePremiumGroupPrimaryName)
 import UserUtils from "UserUtils" /* 4969 */;
-import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 14094 */;
-import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 14098 */;
+import usePremiumGroupMembershipDefault from "usePremiumGroupMembership" /* 14097 */;
+import usePremiumGroupMembersDefault from "usePremiumGroupMembers" /* 14101 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/premium_group/hooks/usePremiumGroupPrimaryName.tsx");

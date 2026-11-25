@@ -1,13 +1,13 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14574
+// Function ID: 14575
 // Name: UserProfileApplicationWidgetPreview
-// Dependencies: [32, 19, 17, 502, 21, 575, 4913, 504, 10330, 10317, 10276, 10278, 10322, 10325, 5600, 2]
+// Dependencies: [32, 19, 17, 502, 21, 575, 4913, 504, 10335, 10322, 10281, 10283, 10327, 10330, 5600, 2]
 // Exports: default
 
-// Module 14564 (UserProfileApplicationWidgetPreview)
+// Module 14574 (UserProfileApplicationWidgetPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 10330 */;
+import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 10335 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -101,7 +101,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
     layout = tmp13.layout;
   }
   const tmp15 = layout === require("ApplicationWidgetLayoutName").ApplicationWidgetLayoutName.ADD_WIDGET_PREVIEW_HERO;
-  const tmp8Result = require("module_10278");
+  const tmp8Result = require("module_10283");
   const result = tmp8Result.bindResolveFieldValue(resolutionContext);
   if (tmp15) {
     let hero_image;
@@ -116,7 +116,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
   if (contained_image != null) {
     image = contained_image.fields.image;
   }
-  const items1 = [require("module_10278").ResolvedValueType.MEDIA];
+  const items1 = [require("module_10283").ResolvedValueType.MEDIA];
   const resultResult = result(image, items1);
   const obj2 = { style: tmp.preview, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: items6 };
   const obj3 = { style: tmp.contentColumn, children: closure_8(View, obj4) };
@@ -154,7 +154,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
     }
     if (tmp23Result) {
       const obj16 = { style: tmp.imageSkeleton };
-      tmp23Result = tmp23(tmp8(10322).ImageSkeleton, obj16);
+      tmp23Result = tmp23(tmp8(10327).ImageSkeleton, obj16);
     }
     const items7 = [tmp23Result, ];
     let tmp23Result5 = null != resultResult;
@@ -162,7 +162,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
       const obj17 = { style: tmp.heroImage, onLayout: callback, children: tmp23Result4 };
       if (tmp23Result4) {
         size = { media: resultResult.media, width: tmp3, height: tmp5, fillContainer: true };
-        tmp23Result4 = tmp23(tmp11(10325), size);
+        tmp23Result4 = tmp23(tmp11(10330), size);
       }
       tmp23Result5 = tmp23(tmp22, obj17);
     }
@@ -177,7 +177,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
       tmp23Result6 = tmp23(tmp11(5600), obj20);
     } else {
       const obj22 = { style: tmp.containedImageSkeleton };
-      tmp23Result6 = tmp23(tmp8(10322).ImageSkeleton, obj22);
+      tmp23Result6 = tmp23(tmp8(10327).ImageSkeleton, obj22);
     }
     tmp23Result7 = tmp23(tmp22, obj19);
   }

@@ -1,10 +1,10 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 11790
+// Function ID: 11791
 // Name: useIsSpamMessageRequest
 // Dependencies: [6635, 504, 2]
 // Exports: useIsSpamMessageRequest
 
-// Module 11785 (useIsSpamMessageRequest)
+// Module 11790 (useIsSpamMessageRequest)
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6635 */;
 import size from "module_2" /* 2 */;
 

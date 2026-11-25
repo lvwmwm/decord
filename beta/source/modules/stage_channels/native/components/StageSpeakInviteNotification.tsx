@@ -1,15 +1,15 @@
-// Module ID: 11721
-// Function ID: 11722
+// Module ID: 11726
+// Function ID: 11727
 // Name: StageSpeakInviteNotification
-// Dependencies: [19, 17, 11114, 21, 4913, 575, 5529, 1112, 10850, 10854, 11152, 11160, 10924, 5929, 7591, 7151, 6503, 7499, 11722, 5504, 6497, 2]
+// Dependencies: [19, 17, 11119, 21, 4913, 575, 5529, 1112, 10855, 10859, 11157, 11165, 10929, 5929, 7591, 7151, 6503, 7499, 11727, 5504, 6497, 2]
 
-// Module 11721 (StageSpeakInviteNotification)
+// Module 11726 (StageSpeakInviteNotification)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6497 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 6503 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11114 */;
-import speakOnStageDefault from "speakOnStage" /* 11722 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11119 */;
+import speakOnStageDefault from "speakOnStage" /* 11727 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -61,11 +61,11 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
     stringResult = intl.string(channel(1112).t["/YzI63"]);
   }
   dependencyMap = stringResult;
-  const tmp6 = guild(10850)();
+  const tmp6 = guild(10855)();
   react = tmp6;
-  let obj = channel(10854);
+  let obj = channel(10859);
   isVoicePanelOpen = obj.useIsVoicePanelOpen(channel.id);
-  const obj2 = channel(11152);
+  const obj2 = channel(11157);
   handleDismissNotification = obj2.useInAppNotificationContext().handleDismissNotification;
   ref = react.useRef(false);
   const items = [handleDismissNotification];
@@ -112,9 +112,9 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
     notification
   };
   obj4 = { style: tmp.iconContainer, children: ref(HandRequestSpeakIcon, obj5) };
-  const NotificationPressable = channel(11160).NotificationPressable;
+  const NotificationPressable = channel(11165).NotificationPressable;
   obj5 = { size: "md", color: guild(575).colors.WHITE };
-  HandRequestSpeakIcon = channel(10924).HandRequestSpeakIcon;
+  HandRequestSpeakIcon = channel(10929).HandRequestSpeakIcon;
   obj6 = { direction: "horizontal", spacing: guild(575).space.PX_8, style: tmp.actions, children: items4 };
   Stack = channel(5929).Stack;
   const obj7 = {

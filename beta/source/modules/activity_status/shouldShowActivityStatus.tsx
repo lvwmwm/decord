@@ -1,10 +1,10 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 17980
+// Function ID: 17981
 // Name: shouldShowActivityStatus
 // Dependencies: [1082, 5652, 2]
 // Exports: default
 
-// Module 17969 (shouldShowActivityStatus)
+// Module 17980 (shouldShowActivityStatus)
 import Constants from "Constants" /* 1082 */;
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import size from "module_2" /* 2 */;

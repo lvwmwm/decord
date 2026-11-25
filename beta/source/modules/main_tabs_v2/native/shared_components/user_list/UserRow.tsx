@@ -1,7 +1,7 @@
 // Module ID: 9661
 // Function ID: 9662
 // Name: UserRow
-// Dependencies: [19, 17, 4914, 2164, 8362, 4762, 5651, 4855, 9646, 1071, 21, 1358, 4913, 575, 7737, 38, 9662, 10251, 5594, 10252, 7740, 8363, 504, 1186, 5504, 4969, 13507, 7520, 6631, 1112, 13821, 10273, 7340, 5511, 2153, 8612, 7672, 8067, 2119, 8166, 13822, 9370, 5942, 8699, 6342, 9456, 9454, 10387, 13824, 9743, 13825, 7335, 13839, 7045, 2]
+// Dependencies: [19, 17, 4914, 2164, 8362, 4762, 5651, 4855, 9646, 1071, 21, 1358, 4913, 575, 7737, 38, 9662, 10256, 5594, 10257, 7740, 8363, 504, 1186, 5504, 4969, 13510, 7520, 6631, 1112, 13824, 10278, 7340, 5511, 2153, 8612, 7672, 8067, 2119, 8166, 13825, 9370, 5942, 8699, 6342, 9456, 9454, 10392, 13827, 9743, 13828, 7335, 13842, 7045, 2]
 
 // Module 9661 (UserRow)
 import react_native from "react-native" /* 17 */;
@@ -22,12 +22,12 @@ import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreator
 import PhoneCallIcon from "PhoneCallIcon" /* 8612 */;
 import BoostGemIcon2 from "BoostGemIcon" /* 9370 */;
 import UserRowConstants from "UserRowConstants" /* 9646 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10251 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10252 */;
-import XLargeIcon from "XLargeIcon" /* 10273 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13507 */;
-import ActionButtonDefault from "ActionButton" /* 13821 */;
-import CrownIcon2 from "CrownIcon" /* 13822 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10256 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10257 */;
+import XLargeIcon from "XLargeIcon" /* 10278 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13510 */;
+import ActionButtonDefault from "ActionButton" /* 13824 */;
+import CrownIcon2 from "CrownIcon" /* 13825 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "r" };
+      let obj2 = { accessibilityActions: items, actions: "Array" };
       return obj2;
     } else {
       let tmp9;

@@ -21,7 +21,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles1 = collectibles.collectibles;
   }
   if (null == collectibles1) {
-    return { collectibles: "Boolean", profileEffect: "disabled", profileFrame: "r" };
+    return { collectibles: "Array", profileEffect: "channel_id", profileFrame: "tag" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;

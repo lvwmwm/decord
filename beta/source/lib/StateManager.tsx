@@ -1,9 +1,9 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 14940
+// Function ID: 14941
 // Name: StateManager
 // Dependencies: [1343, 2]
 
-// Module 14930 (StateManager)
+// Module 14940 (StateManager)
 import _modDef1343 from "module_1343" /* 1343 */;
 import size from "module_2" /* 2 */;
 

@@ -451,7 +451,7 @@ class UserSearchManager extends AutomaticLifecycleManager {
     applyArgumentsResult._handleConnectionOpenSupplemental = function _handleConnectionOpenSupplemental(guilds) {
       guilds = guilds.guilds;
       const timerId = setTimeout(() => {
-        const f137158 = (activity_instances) => {
+        const f137210 = (activity_instances) => {
           let closure_0 = activity_instances;
           const items = [];
           activity_instances = activity_instances.activity_instances;
@@ -510,8 +510,8 @@ class UserSearchManager extends AutomaticLifecycleManager {
           return items;
         });
         const obj2 = _modDef12;
-        let items = [...obj2.flatMap(guilds, f137158)];
-        obj2.flatMap(guilds, f137158);
+        let items = [...obj2.flatMap(guilds, f137210)];
+        obj2.flatMap(guilds, f137210);
         require.updateUsers(items, "connection_open_supplemental");
       }, 3000);
     };

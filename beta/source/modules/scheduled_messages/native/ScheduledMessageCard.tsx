@@ -1,18 +1,18 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14404
+// Function ID: 14405
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 4762, 1071, 21, 4913, 575, 504, 1098, 6429, 7047, 11705, 7020, 11706, 10109, 5504, 1112, 8540, 11704, 13081, 14395, 2]
+// Dependencies: [19, 17, 4762, 1071, 21, 4913, 575, 504, 1098, 6429, 7047, 11710, 7020, 11711, 10109, 5504, 1112, 8540, 11709, 13084, 14405, 2]
 
-// Module 14394 (ScheduledMessageCard)
+// Module 14404 (ScheduledMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8540 */;
-import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 11704 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 13081 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 14395 */;
+import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 11709 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 13084 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 14405 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import Fragment from "Fragment" /* 21 */;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function ScheduledMessageCard(scheduledMessage) {
     const Card = tmp2(7047).Card;
     items1 = [closure_7(ScheduledMessageCardStatusHeader, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(scheduledMessage(11705).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(scheduledMessage(11710).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
@@ -83,7 +83,7 @@ const memoResult = react.memo(function ScheduledMessageCard(scheduledMessage) {
     } else {
       const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: tmp9Result };
       tmp9Result = undefined;
-      const ForLaterMessageRow = tmp2(11706).ForLaterMessageRow;
+      const ForLaterMessageRow = tmp2(11711).ForLaterMessageRow;
       if (scheduledMessage.attachmentUploads.length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: items2 };
         const obj9 = { size: "xxs", color: stateFromStores(575).colors.TEXT_MUTED };

@@ -1,19 +1,19 @@
-// Module ID: 17888
-// Function ID: 17889
+// Module ID: 17898
+// Function ID: 17899
 // Name: GuildsBarFavorites
-// Dependencies: [19, 4765, 1071, 21, 17872, 11220, 504, 17889, 17875, 17827, 17654, 1112, 17890, 10011, 575, 2]
+// Dependencies: [19, 4765, 1071, 21, 17882, 11225, 504, 17899, 17885, 17837, 17664, 1112, 17900, 10011, 575, 2]
 
-// Module 17888 (GuildsBarFavorites)
+// Module 17898 (GuildsBarFavorites)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import StarIcon2 from "StarIcon" /* 10011 */;
-import FavoritesHooks from "FavoritesHooks" /* 11220 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17872 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17875 */;
-import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17889 */;
+import FavoritesHooks from "FavoritesHooks" /* 11225 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17882 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17885 */;
+import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17899 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4765 */;
 import size from "module_2" /* 2 */;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function GuildsBarFavorites() {
   let intl = intl2.intl;
   const StarIcon = StarIcon2.StarIcon;
   const colors = nativeDefault.colors;
-  return <tmp9 selected={isFavoritesGuildSelected} circle={false} unread={unread} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} overState="l" config={memo} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} label={intl.string(intl2.t.wMWyci)} externalChildren={badge2} expandedChildren={null}>{"button"}</tmp9>;
+  return <tmp9 selected={isFavoritesGuildSelected} circle={false} unread={unread} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} overState="l" config={memo} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} label={intl.string(intl2.t.wMWyci)} externalChildren={badge2} expandedChildren={null}>{"quest_open_game_link"}</tmp9>;
 });
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFavorites.tsx");
 

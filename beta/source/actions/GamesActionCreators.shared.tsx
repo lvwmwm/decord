@@ -1,17 +1,17 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12199
+// Function ID: 12200
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4761, 6620, 4762, 5651, 1071, 6624, 8061, 10673, 12200, 10779, 4834, 12204, 2150, 5557, 10686, 10685, 10622, 6629, 12208, 12209, 7737, 2]
+// Dependencies: [5, 4761, 6620, 4762, 5651, 1071, 6624, 8061, 10678, 12196, 10784, 4834, 12200, 2150, 5557, 10691, 10690, 10627, 6629, 12204, 12205, 7737, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 12203 (tryJoinAsFrame)
+// Module 12199 (tryJoinAsFrame)
 import Constants from "Constants" /* 1071 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 10673 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10779 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12200 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12209 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 10678 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10784 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12196 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 12205 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;

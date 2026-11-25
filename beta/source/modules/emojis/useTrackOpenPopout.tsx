@@ -1,10 +1,10 @@
-// Module ID: 11322
-// Function ID: 11323
+// Module ID: 11327
+// Function ID: 11328
 // Name: useTrackOpenPopout
 // Dependencies: [19, 4762, 4816, 1389, 1071, 5650, 5474, 9064, 1255, 2]
 // Exports: useTrackOpenPopout
 
-// Module 11322 (useTrackOpenPopout)
+// Module 11327 (useTrackOpenPopout)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;

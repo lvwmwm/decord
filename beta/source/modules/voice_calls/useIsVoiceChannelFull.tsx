@@ -1,10 +1,10 @@
-// Module ID: 10926
-// Function ID: 10927
+// Module ID: 10931
+// Function ID: 10932
 // Name: useIsVoiceChannelFull
 // Dependencies: [4784, 4845, 5561, 1082, 504, 5948, 2]
 // Exports: default, useIsVoiceChannelLocked
 
-// Module 10926 (useIsVoiceChannelFull)
+// Module 10931 (useIsVoiceChannelFull)
 import Constants from "Constants" /* 1082 */;
 import ChannelUtils from "ChannelUtils" /* 5948 */;
 import GuildStore from "GuildStore" /* 4784 */;

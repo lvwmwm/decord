@@ -1,10 +1,10 @@
-// Module ID: 18391
-// Function ID: 18392
+// Module ID: 18402
+// Function ID: 18403
 // Name: ConjureChatHeader
 // Dependencies: [19, 17, 8562, 21, 4913, 575, 1628, 8570, 8563, 2]
 // Exports: default
 
-// Module 18391 (ConjureChatHeader)
+// Module 18402 (ConjureChatHeader)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import react_native from "react-native" /* 8562 */;

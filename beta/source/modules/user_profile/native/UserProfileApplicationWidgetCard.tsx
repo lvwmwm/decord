@@ -1,13 +1,13 @@
-// Module ID: 10275
-// Function ID: 10276
+// Module ID: 10280
+// Function ID: 10281
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [19, 17, 2188, 502, 21, 4913, 575, 10276, 10277, 10326, 10327, 10328, 10329, 5519, 504, 10278, 6864, 9053, 9765, 9774, 10330, 7521, 7520, 7539, 8135, 10338, 10339, 10317, 10345, 6913, 7566, 10225, 7563, 5504, 1112, 5511, 10346, 7030, 10343, 2]
+// Dependencies: [19, 17, 2188, 502, 21, 4913, 575, 10281, 10282, 10331, 10332, 10333, 10334, 5519, 504, 10283, 6864, 9053, 9765, 9774, 10335, 7521, 7520, 7539, 8135, 10343, 10344, 10322, 10350, 6913, 7566, 10230, 7563, 5504, 1112, 5511, 10351, 7030, 10348, 2]
 // Exports: default
 
-// Module 10275 (UserProfileApplicationWidgetCard)
+// Module 10280 (UserProfileApplicationWidgetCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod10278 from "module_10278" /* 10278 */;
+import _mod10283 from "module_10283" /* 10283 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -85,7 +85,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
   stateFromStores = obj2.useStateFromStores(items, () => token.locale);
   const items1 = [stateFromStores];
   const memo = hasAlreadyLinked.useMemo(() => {
-    const obj = _mod10278;
+    const obj = _mod10283;
     return obj.createCompactNumberFormat(stateFromStores);
   }, items1);
   const items2 = [analyticsLocations];

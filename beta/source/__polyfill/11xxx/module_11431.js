@@ -1,18 +1,17 @@
 // Module ID: 11431
 // Function ID: 11432
-// Dependencies: [41, 42, 93, 95, 98, 11414, 11418, 11422]
+// Dependencies: [41, 42, 93, 95, 98, 11420, 11419, 11427]
 
 // Module 11431
-import _mod11414 from "module_11414" /* 11414 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import _mod11419 from "module_11419" /* 11419 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11420 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11427 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let tmp;
-const ReferenceWithTimezone = tmp(11418);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -28,14 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod11414.TIME_UNITS_PATTERN + ")\\s{0,5}(?:later|after|from now|henceforth|forward|out)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod11414.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(later|after|from now)(?=\\W|$)", "i");
-class ENTimeUnitLaterFormatParser {
-  constructor(strictMode) {
+const regExp = new RegExp("([0-9]{4})[-\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod11419.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[-\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
+class ENYearMonthDayParser {
+  constructor(strictMonthDateOrder) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitLaterFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitLaterFormatParser);
+    _classCallCheck(this, ENYearMonthDayParser);
+    const obj = _getPrototypeOf(ENYearMonthDayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,31 +43,64 @@ class ENTimeUnitLaterFormatParser {
       constructResult = obj.apply(self, undefined);
     }
     const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
+    tmp3Result.strictMonthDateOrder = strictMonthDateOrder;
     return tmp3Result;
   }
 }
-_inherits(ENTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+    return regExp;
   }
 };
-const items = [
+let items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod11414.parseDuration(arg1[1]);
-      let relativeFromReference = null;
-      if (parseDurationResult) {
-        const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    value: function innerExtract(arg0, arg1) {
+      let parsed2;
+      let tmp6;
+      let tmp7;
+      const parsed = parseInt(arg1[1]);
+      const parsed1 = parseInt(arg1[4]);
+      if (arg1[3]) {
+        const _parseInt = parseInt;
+        parsed2 = parseInt(arg1[3]);
+      } else {
+        parsed2 = _mod11419.MONTH_DICTIONARY[str.toLowerCase(str)];
       }
-      return relativeFromReference;
+      if (parsed2 < 1) {
+        const self = this;
+        if (this.strictMonthDateOrder) {
+          return null;
+        } else {
+          tmp6 = parsed2;
+          tmp7 = parsed1;
+          if (parsed1 >= 1) {
+            tmp6 = parsed2;
+            tmp7 = parsed1;
+            if (parsed1 <= 12) {
+              const items = [parsed1, parsed2];
+              [tmp6, tmp7] = items;
+            }
+          }
+        }
+      } else {
+        tmp6 = parsed2;
+        tmp7 = parsed1;
+      }
+      let tmp8 = null;
+      if (tmp7 >= 1) {
+        tmp8 = null;
+        if (tmp7 <= 31) {
+          tmp8 = { day: tmp7, month: tmp6, year: parsed };
+          const date = { day: tmp7, month: tmp6, year: parsed };
+        }
+      }
+      return tmp8;
     }
   }
 ];
 
-export default _createClass(ENTimeUnitLaterFormatParser, items);
+export default _createClass(ENYearMonthDayParser, items);

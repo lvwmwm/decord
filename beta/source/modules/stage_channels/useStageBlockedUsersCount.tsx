@@ -1,10 +1,10 @@
-// Module ID: 10848
-// Function ID: 10849
+// Module ID: 10853
+// Function ID: 10854
 // Name: useStageBlockedUsersCount
 // Dependencies: [6534, 504, 6537, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 10848 (useStageBlockedUsersCount)
+// Module 10853 (useStageBlockedUsersCount)
 import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6534 */;
 import size from "module_2" /* 2 */;

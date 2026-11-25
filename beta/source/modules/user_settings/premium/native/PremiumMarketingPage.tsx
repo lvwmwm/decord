@@ -1,10 +1,10 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14067
+// Function ID: 14068
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 1386, 1071, 4759, 21, 4913, 575, 6555, 14065, 14049, 14050, 1500, 7520, 14059, 1628, 14066, 1653, 9399, 9147, 4945, 4746, 4747, 14067, 1112, 13140, 2173, 504, 8859, 8862, 14068, 14069, 9405, 14072, 10505, 14077, 14082, 14099, 7417, 1255, 14102, 2]
+// Dependencies: [32, 19, 17, 1386, 1071, 4759, 21, 4913, 575, 6555, 14068, 14052, 14053, 1500, 7520, 14062, 1628, 14069, 1653, 9399, 9147, 4945, 4746, 4747, 14070, 1112, 13143, 2173, 504, 8859, 8862, 14071, 14072, 9405, 14075, 10510, 14080, 14085, 14102, 7417, 1255, 14105, 2]
 // Exports: default
 
-// Module 14064 (PremiumMarketingPage)
+// Module 14067 (PremiumMarketingPage)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -17,10 +17,10 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 494
 import LegacyTokens from "LegacyTokens" /* 6555 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
 import MarketingPageBannerTileDefault from "MarketingPageBannerTile" /* 9405 */;
-import NitroMobileRefreshExperiment from "NitroMobileRefreshExperiment" /* 14065 */;
-import PremiumMarketingFloatingSubscribeExperimentDefault from "PremiumMarketingFloatingSubscribeExperiment" /* 14066 */;
-import PlanSelectHeaderDefault from "PlanSelectHeader" /* 14068 */;
-import HeaderDefault from "Header" /* 14069 */;
+import NitroMobileRefreshExperiment from "NitroMobileRefreshExperiment" /* 14068 */;
+import PremiumMarketingFloatingSubscribeExperimentDefault from "PremiumMarketingFloatingSubscribeExperiment" /* 14069 */;
+import PlanSelectHeaderDefault from "PlanSelectHeader" /* 14071 */;
+import HeaderDefault from "Header" /* 14072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -104,8 +104,8 @@ export default function PremiumMarketingPage(userHasSubscription) {
   let surface;
   let tmp = userHasSubscription;
   let tmp2 = dependencyMap;
-  let obj = userHasSubscription(14049);
-  const commonTriggerPoint = obj.useCommonTriggerPoint(userHasSubscription(14050).OpenNitroTriggerPoint);
+  let obj = userHasSubscription(14052);
+  const commonTriggerPoint = obj.useCommonTriggerPoint(userHasSubscription(14053).OpenNitroTriggerPoint);
   const tmp4 = bottom();
   let closure_8 = tmp4;
   let obj2 = userHasSubscription(1500);
@@ -114,7 +114,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
   let obj3 = react;
   [c11, c12] = _slicedToArray(react.useState(false), 2);
   const tmp7 = _slicedToArray(react.useState(false), 2);
-  let obj4 = userHasSubscription(14059);
+  let obj4 = userHasSubscription(14062);
   let top = obj4.useYouBarSettingsCustomHeaderPaddingTop();
   const rect = useSafeAreaInsetsDefault();
   bottom = rect.bottom;
@@ -169,8 +169,8 @@ export default function PremiumMarketingPage(userHasSubscription) {
     const obj5 = {
       style: items2,
       accessibilityLabel: intl.string(tmp(1112).t["13/7kX"]),
-      source: tmp6(13140),
-      size: tmp(14067).CircularIconButton.Sizes.MEDIUM_32,
+      source: tmp6(13143),
+      size: tmp(14070).CircularIconButton.Sizes.MEDIUM_32,
       iconStyle: tmp4.arrowIcon,
       onPress() {
           return onClose();
@@ -178,7 +178,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
     };
     items2 = [, ];
     ({ backButton: arr3[0], backButtonBackground: arr3[1] } = tmp4);
-    const CircularIconButton = tmp(14067).CircularIconButton;
+    const CircularIconButton = tmp(14070).CircularIconButton;
     intl = tmp(1112).intl;
     tmp14 = c11(CircularIconButton, obj5);
   }
@@ -274,7 +274,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
       const obj7 = { style: items4, order, applicationId: react, onPaymentSuccess, onPaymentDismiss: UserStore, onLayout, onFirstCardLayout };
       items4 = [, ];
       ({ planSelectCardsSection: arr6[0], sectionWidth: arr6[1] } = closure_8);
-      tmp29Result = tmp29(tmp30(14072), obj7);
+      tmp29Result = tmp29(tmp30(14075), obj7);
       tmp40 = tmp29;
       tmp42 = tmp30;
       tmp32 = closure_8;
@@ -283,7 +283,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
       const obj8 = { style: items5, order, applicationId: react, onPaymentSuccess, onPaymentDismiss: UserStore, onLayout, onFirstCardLayout };
       items5 = [, ];
       ({ sectionWithPadding: arr5[0], sectionWidth: arr5[1] } = closure_8);
-      tmp29Result = tmp29(tmp30(10505), obj8);
+      tmp29Result = tmp29(tmp30(10510), obj8);
       tmp40 = tmp29;
       tmp42 = tmp30;
     }
@@ -291,15 +291,15 @@ export default function PremiumMarketingPage(userHasSubscription) {
     const obj9 = { style: items6 };
     items6 = [, ];
     ({ sectionWithTopMargin: arr7[0], sectionWidth: arr7[1] } = tmp32);
-    items[7] = tmp40(tmp42(14077), obj9);
+    items[7] = tmp40(tmp42(14080), obj9);
     const obj10 = { style: items7, isFractionalOnly: flag };
     items7 = [, , ];
     ({ sectionWithTopMargin: arr8[0], sectionWithPadding: arr8[1], sectionWidth: arr8[2] } = tmp32);
-    items[8] = tmp40(tmp42(14082), obj10);
+    items[8] = tmp40(tmp42(14085), obj10);
     const items8 = [, , , ];
     ({ sectionWithTopMargin: arr9[0], sectionWithPadding: arr9[1], sectionWidth: arr9[2] } = tmp32);
     let tmp51 = null;
-    const tmp42Result = tmp42(14099);
+    const tmp42Result = tmp42(14102);
     if (closure_16) {
       const _Math = Math;
       tmp51 = { marginBottom: Math.max(bottom, tmp42(575).space.PX_16) + 48 };
@@ -361,7 +361,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
       let tmp21Result2 = null;
       if (tmp9) {
         let obj9 = { style: tmp4.sectionWidth, isVisible: sharedValue, backgroundColor: tmp4.themedBackground.backgroundColor };
-        tmp21Result2 = tmp21(tmp6(14102), obj9);
+        tmp21Result2 = tmp21(tmp6(14105), obj9);
       }
       items5[2] = tmp21Result2;
       obj6.children = items5;

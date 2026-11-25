@@ -1,12 +1,12 @@
-// Module ID: 15729
-// Function ID: 15730
+// Module ID: 15739
+// Function ID: 15740
 // Name: soundboard
-// Dependencies: [5, 5961, 1386, 6354, 1082, 6913, 6830, 6831, 10801, 10989, 10984, 6909, 10991, 7539, 2]
+// Dependencies: [5, 5961, 1386, 6354, 1082, 6913, 6830, 6831, 10806, 10994, 10989, 6909, 10996, 7539, 2]
 
-// Module 15729 (soundboard)
+// Module 15739 (soundboard)
 import SoundboardActionCreators from "SoundboardActionCreators" /* 6830 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10801 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SoundboardStore from "SoundboardStore" /* 5961 */;
 import UserStore from "UserStore" /* 1386 */;

@@ -1,10 +1,10 @@
-// Module ID: 10390
-// Function ID: 10391
+// Module ID: 10395
+// Function ID: 10396
 // Name: useEmojiColorPalette
 // Dependencies: [4914, 1191, 504, 4920, 8695, 2]
 // Exports: useEmojiColorPalette
 
-// Module 10390 (useEmojiColorPalette)
+// Module 10395 (useEmojiColorPalette)
 import get_initialized from "get initialized" /* 504 */;
 import shared from "shared" /* 4920 */;
 import EmojiColorUtils from "EmojiColorUtils" /* 8695 */;

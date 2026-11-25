@@ -1,10 +1,10 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11247
+// Function ID: 11248
 // Name: PencilIcon
 // Dependencies: [19, 21, 575, 5599, 8704, 2]
 // Exports: PencilIcon
 
-// Module 11242 (PencilIcon)
+// Module 11247 (PencilIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;

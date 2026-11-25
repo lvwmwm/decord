@@ -1,10 +1,10 @@
-// Module ID: 18248
-// Function ID: 18249
+// Module ID: 18259
+// Function ID: 18260
 // Name: useConjureSafetyRecheck
 // Dependencies: [6980, 1112, 4190, 504, 2]
 // Exports: default, getConjureSafetyHoldCopy, getConjureSafetyRecheckNotice
 
-// Module 18248 (useConjureSafetyRecheck)
+// Module 18259 (useConjureSafetyRecheck)
 import intl5 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;

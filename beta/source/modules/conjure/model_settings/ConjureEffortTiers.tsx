@@ -1,13 +1,13 @@
-// Module ID: 18341
-// Function ID: 18342
+// Module ID: 18352
+// Function ID: 18353
 // Name: ConjureEffortTiers
-// Dependencies: [109, 18342, 1112, 4190, 18343, 2]
+// Dependencies: [109, 18353, 1112, 4190, 18354, 2]
 // Exports: conjureCanPickModel, conjureCeilingSupportsFast, conjureNormalizeFast, conjurePickTierModel, conjureTierAvailable, conjureTierDescription, conjureTierLabel, conjureTierModel, conjureTierStopLabel, conjureWithTier
 
-// Module 18341 (ConjureEffortTiers)
+// Module 18352 (ConjureEffortTiers)
 import _modDef4190 from "module_4190" /* 4190 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 18342 */;
-import ConjureModelSettingsTypes from "ConjureModelSettingsTypes" /* 18343 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 18353 */;
+import ConjureModelSettingsTypes from "ConjureModelSettingsTypes" /* 18354 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 18976
-// Function ID: 18977
+// Module ID: 18987
+// Function ID: 18988
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [717, 19, 4762, 18924, 21, 4913, 575, 4974, 1112, 11251, 7349, 7347, 7709, 504, 38, 2]
+// Dependencies: [717, 19, 4762, 18935, 21, 4913, 575, 4974, 1112, 11256, 7349, 7347, 7709, 504, 38, 2]
 // Exports: default
 
-// Module 18976 (ChannelSettingsChangeRTCRegion)
+// Module 18987 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,11 +13,11 @@ import native from "native" /* 4974 */;
 import TableRadioGroup from "TableRadioGroup" /* 7347 */;
 import TableRadioRow from "TableRadioRow" /* 7349 */;
 import _mod7709 from "module_7709" /* 7709 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 11251 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 11256 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
-import RegionStore from "RegionStore" /* 18924 */;
+import RegionStore from "RegionStore" /* 18935 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(11251);
+    let obj = self(11256);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;

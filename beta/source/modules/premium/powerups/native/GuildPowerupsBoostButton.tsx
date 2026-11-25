@@ -1,10 +1,10 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13480
+// Function ID: 13481
 // Name: GuildPowerupsBoostButton
-// Dependencies: [19, 4784, 1386, 8744, 1071, 21, 504, 8119, 1399, 6546, 13478, 2]
+// Dependencies: [19, 4784, 1386, 8744, 1071, 21, 504, 8119, 1399, 6546, 13481, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 13477 (GuildPowerupsBoostButton)
+// Module 13480 (GuildPowerupsBoostButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;
@@ -46,7 +46,7 @@ export function GuildPowerupsBoostButton(guildId) {
   }, items3);
   let tmp10 = null;
   if (null != stateFromStores) {
-    tmp10 = jsx(tmp5(13478), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
+    tmp10 = jsx(tmp5(13481), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
   }
   return tmp10;
 }

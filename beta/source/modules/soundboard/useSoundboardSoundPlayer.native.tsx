@@ -1,12 +1,12 @@
-// Module ID: 18026
-// Function ID: 18027
+// Module ID: 18037
+// Function ID: 18038
 // Name: useSoundboardSoundPlayer
-// Dependencies: [19, 5961, 5814, 4738, 18027, 504, 10984, 2]
+// Dependencies: [19, 5961, 5814, 4738, 18038, 504, 10989, 2]
 // Exports: default
 
-// Module 18026 (useSoundboardSoundPlayer)
+// Module 18037 (useSoundboardSoundPlayer)
 import Constants from "Constants" /* 5814 */;
-import SoundboardUtils from "SoundboardUtils" /* 10984 */;
+import SoundboardUtils from "SoundboardUtils" /* 10989 */;
 import react from "react" /* 19 */;
 import SoundboardStore from "SoundboardStore" /* 5961 */;
 import size from "module_2" /* 2 */;

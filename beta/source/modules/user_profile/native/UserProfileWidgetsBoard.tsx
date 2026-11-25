@@ -1,21 +1,21 @@
-// Module ID: 10199
-// Function ID: 10200
+// Module ID: 10204
+// Function ID: 10205
 // Name: UserProfileWidgetsBoard
-// Dependencies: [19, 17, 8069, 6959, 21, 4913, 575, 10200, 8135, 7591, 9578, 1112, 10205, 10222, 10217, 10223, 5923, 10225, 10260, 10263, 6957, 10264, 10232, 10266, 10234, 10267, 10272, 6961, 10275, 10348, 2]
+// Dependencies: [19, 17, 8069, 6959, 21, 4913, 575, 10205, 8135, 7591, 9578, 1112, 10210, 10227, 10222, 10228, 5923, 10230, 10265, 10268, 6957, 10269, 10237, 10271, 10239, 10272, 10277, 6961, 10280, 10353, 2]
 // Exports: default
 
-// Module 10199 (UserProfileWidgetsBoard)
+// Module 10204 (UserProfileWidgetsBoard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react_native2 from "react-native" /* 5923 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6961 */;
 import Constants from "Constants" /* 8069 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10200 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 10205 */;
-import WidgetUtils from "WidgetUtils" /* 10217 */;
-import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 10232 */;
-import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 10234 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 10275 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10205 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 10210 */;
+import WidgetUtils from "WidgetUtils" /* 10222 */;
+import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 10237 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 10239 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 10280 */;
 import react from "react" /* 19 */;
 import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6959 */;
 import Fragment from "Fragment" /* 21 */;

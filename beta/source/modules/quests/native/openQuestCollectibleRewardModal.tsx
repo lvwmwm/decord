@@ -1,10 +1,10 @@
-// Module ID: 13764
-// Function ID: 13765
+// Module ID: 13767
+// Function ID: 13768
 // Name: openQuestCollectibleRewardModal
 // Dependencies: [1386, 6558, 21, 4913, 575, 504, 9977, 9958, 5504, 1112, 8412, 9410, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 13764 (openQuestCollectibleRewardModal)
+// Module 13767 (openQuestCollectibleRewardModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

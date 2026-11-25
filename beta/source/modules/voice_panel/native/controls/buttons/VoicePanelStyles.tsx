@@ -1,12 +1,12 @@
-// Module ID: 19346
-// Function ID: 19347
+// Module ID: 19357
+// Function ID: 19358
 // Name: VoicePanelStyles
-// Dependencies: [4913, 575, 10598, 2]
+// Dependencies: [4913, 575, 10603, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 19346 (VoicePanelStyles)
+// Module 19357 (VoicePanelStyles)
 import nativeDefault from "native" /* 575 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 10598 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 10603 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 

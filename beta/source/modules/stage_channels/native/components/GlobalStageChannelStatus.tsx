@@ -1,10 +1,10 @@
-// Module ID: 10860
-// Function ID: 10861
+// Module ID: 10865
+// Function ID: 10866
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5128, 4767, 1071, 21, 4913, 575, 5529, 1112, 504, 5474, 10861, 10848, 10847, 6502, 7793, 6414, 6503, 6497, 1186, 5504, 10866, 5512, 5511, 10850, 10667, 5122, 4935, 10601, 7636, 2]
+// Dependencies: [5, 32, 19, 17, 5128, 4767, 1071, 21, 4913, 575, 5529, 1112, 504, 5474, 10866, 10853, 10852, 6502, 7793, 6414, 6503, 6497, 1186, 5504, 10871, 5512, 5511, 10855, 10672, 5122, 4935, 10606, 7636, 2]
 // Exports: default
 
-// Module 10860 (GlobalStageChannelStatus)
+// Module 10865 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,9 +12,9 @@ import intl5 from "intl" /* 1112 */;
 import useMountEffectDefault from "useMountEffect" /* 5474 */;
 import useChannelNameDefault from "useChannelName" /* 5529 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 6503 */;
-import StatusBarDefault from "StatusBar" /* 10601 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10850 */;
-import PushNotificationDefault from "PushNotification" /* 10861 */;
+import StatusBarDefault from "StatusBar" /* 10606 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10855 */;
+import PushNotificationDefault from "PushNotification" /* 10866 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -175,20 +175,20 @@ class StageChannelRaiseHandAck {
     [tmp10, c3] = _slicedToArray(react.useState(false), 2);
     const tmp9 = _slicedToArray(react.useState(false), 2);
     let id1;
-    const useStageBlockedUsersCount = channel(10848).useStageBlockedUsersCount;
-    const tmp11 = channel(10848);
+    const useStageBlockedUsersCount = channel(10853).useStageBlockedUsersCount;
+    const tmp11 = channel(10853);
     if (channel != null) {
       id1 = channel.id;
     }
     const stageBlockedUsersCount = useStageBlockedUsersCount(id1);
     let id2;
-    const useStageIgnoredUsersCount = tmp6(10848).useStageIgnoredUsersCount;
-    channel(10848);
+    const useStageIgnoredUsersCount = tmp6(10853).useStageIgnoredUsersCount;
+    channel(10853);
     if (channel != null) {
       id2 = channel.id;
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-    channel(10847);
+    channel(10852);
     if (channel != null) {
       const id = channel.id;
     }
@@ -206,7 +206,7 @@ class StageChannelRaiseHandAck {
       items3 = [closure_10(View, obj4), , ];
       if (stageBlockedUsersCount > 0) {
         const obj6 = { style: tmp.row, children: closure_10(Text, obj7) };
-        obj7 = { variant: "body-xs/medium", color: "text-overlay-light", children: tmp2(10866)(stageBlockedUsersCount, stageIgnoredUsersCount) };
+        obj7 = { variant: "body-xs/medium", color: "text-overlay-light", children: tmp2(10871)(stageBlockedUsersCount, stageIgnoredUsersCount) };
         Text = tmp6(5504).Text;
         tmp22Result = tmp22(tmp21, obj6);
       } else {
@@ -291,7 +291,7 @@ export default function GlobalStageChannelStatus(arg0) {
     stringResult = intl.string(id(1112).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(10667)(id);
+  let invitedHeaderText = tmp3(10672)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);

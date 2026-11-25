@@ -1,34 +1,30 @@
 // Module ID: 15538
 // Function ID: 15539
-// Dependencies: [15539, 15541, 15548, 15571, 15559, 15573, 15569, 15574]
+// Dependencies: [15449, 15539]
+// Exports: getSupportedUnits
 
 // Module 15538
-import _mod15539 from "module_15539" /* 15539 */;
-import _mod15541 from "module_15541" /* 15541 */;
-import _mod15548 from "module_15548" /* 15548 */;
-import _mod15559 from "module_15559" /* 15559 */;
-import _mod15569 from "module_15569" /* 15569 */;
-import _mod15571 from "module_15571" /* 15571 */;
-import _mod15573 from "module_15573" /* 15573 */;
-import propertyIsEnumerable from "propertyIsEnumerable" /* 15574 */;
+const require = globalThis.__r;
+let _require;
 
-if (!_mod15539) {
-  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
-    const tmp3 = _mod15541(arg0);
-    const tmp4 = _mod15548(arg1);
-    if (!_mod15571) {
-      if (_mod15559(tmp3, tmp4)) {
-        const tmpResult = _mod15573;
-        const tmpResult2 = _mod15569;
-        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
+
+export function getSupportedUnits(locale) {
+  _require = locale;
+  const units = require("module_15539").units;
+  return units.filter((item) => {
+    function isSupported(unit, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
       }
-    } else {
       try {
-        return getOwnPropertyDescriptor(tmp3, tmp4);
+        const obj = { style: "unit", unit };
+        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
+        return memoizedNumberFormat.resolvedOptions().unit === unit;
       } catch (err) {
+        return false;
       }
     }
-  };
+    return isSupported(item, locale);
+  });
 }
-
-export const f = getOwnPropertyDescriptor;

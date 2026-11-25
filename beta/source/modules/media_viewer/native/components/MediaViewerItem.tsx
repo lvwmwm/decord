@@ -1,14 +1,14 @@
-// Module ID: 10591
-// Function ID: 10592
+// Module ID: 10596
+// Function ID: 10597
 // Name: MediaViewerItem
-// Dependencies: [32, 19, 17, 21, 1378, 5098, 10592, 10593, 8223, 8222, 10152, 8218, 5173, 10594, 10596, 2]
+// Dependencies: [32, 19, 17, 21, 1378, 5098, 10597, 10598, 8223, 8222, 10157, 8218, 5173, 10599, 10601, 2]
 
-// Module 10591 (MediaViewerItem)
+// Module 10596 (MediaViewerItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
 import useMediaViewerSources from "useMediaViewerSources" /* 8218 */;
-import useEntranceAnimation from "useEntranceAnimation" /* 10593 */;
+import useEntranceAnimation from "useEntranceAnimation" /* 10598 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;

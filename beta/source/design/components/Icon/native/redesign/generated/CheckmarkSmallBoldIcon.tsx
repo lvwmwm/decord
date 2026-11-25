@@ -1,10 +1,10 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10393
+// Function ID: 10394
 // Name: CheckmarkSmallBoldIcon
 // Dependencies: [19, 21, 575, 5599, 7337, 2]
 // Exports: CheckmarkSmallBoldIcon
 
-// Module 10388 (CheckmarkSmallBoldIcon)
+// Module 10393 (CheckmarkSmallBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;

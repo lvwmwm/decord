@@ -1,17 +1,17 @@
-// Module ID: 17632
-// Function ID: 17633
+// Module ID: 17642
+// Function ID: 17643
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 4765, 4775, 21, 4913, 575, 1500, 504, 4787, 11219, 8561, 1112, 5860, 1186, 5929, 7221, 7348, 7045, 5620, 10535, 10537, 2]
+// Dependencies: [32, 19, 17, 4765, 4775, 21, 4913, 575, 1500, 504, 4787, 11224, 8561, 1112, 5860, 1186, 5929, 7221, 7348, 7045, 5620, 10540, 10542, 2]
 // Exports: default
 
-// Module 17632 (FavoritesGuildCategorySettingsModal)
+// Module 17642 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import FavoritesConstants from "FavoritesConstants" /* 4775 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 11219 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 11224 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4765 */;
@@ -167,7 +167,7 @@ export default function FavoritesGuildCategorySettingsModal(categoryId) {
   let intl;
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(10535)().onGoBack;
+  onGoBack = onGoBack(10540)().onGoBack;
   let obj = {
     screenKey: "favoritesGuildCategorySettings",
     title: intl.string(categoryId(1112).t["/uELTj"]),
@@ -176,7 +176,7 @@ export default function FavoritesGuildCategorySettingsModal(categoryId) {
       return metroImportAll(FavoritesGuildCategorySettings, obj);
     }
   };
-  const tmp = onGoBack(10537);
+  const tmp = onGoBack(10542);
   intl = categoryId(1112).intl;
   return closure_8(tmp, obj);
 };

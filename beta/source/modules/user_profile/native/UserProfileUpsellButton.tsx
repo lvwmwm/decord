@@ -1,14 +1,14 @@
-// Module ID: 15835
-// Function ID: 15836
+// Module ID: 15845
+// Function ID: 15846
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1071, 1388, 21, 4913, 7520, 9126, 1255, 5511, 10459, 1112, 8952, 2]
+// Dependencies: [19, 1071, 1388, 21, 4913, 7520, 9126, 1255, 5511, 10464, 1112, 8952, 2]
 // Exports: default
 
-// Module 15835 (UserProfileUpsellButton)
+// Module 15845 (UserProfileUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10459 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10464 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import createStyles from "createStyles" /* 4913 */;

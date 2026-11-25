@@ -1,16 +1,16 @@
-// Module ID: 19458
-// Function ID: 19459
+// Module ID: 19469
+// Function ID: 19470
 // Name: ChannelCallManager
-// Dependencies: [10884, 6627, 11102, 4970, 5561, 5657, 10883, 7484, 2]
+// Dependencies: [10889, 6627, 11107, 4970, 5561, 5657, 10888, 7484, 2]
 
-// Module 19458 (ChannelCallManager)
-import SoundpackStore from "SoundpackStore" /* 10884 */;
+// Module 19469 (ChannelCallManager)
+import SoundpackStore from "SoundpackStore" /* 10889 */;
 import CallStore from "CallStore" /* 6627 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 11102 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 11107 */;
 import StreamerModeStore from "StreamerModeStore" /* 4970 */;
 import VoiceStateStore from "VoiceStateStore" /* 5561 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
-import SoundUtils from "SoundUtils" /* 10883 */;
+import SoundUtils from "SoundUtils" /* 10888 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 

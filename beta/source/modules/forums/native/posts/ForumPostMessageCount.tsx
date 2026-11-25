@@ -1,15 +1,15 @@
-// Module ID: 12885
-// Function ID: 12886
+// Module ID: 12888
+// Function ID: 12889
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4913, 575, 1378, 8617, 1112, 7672, 5504, 11676, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1378, 8617, 1112, 7672, 5504, 11681, 2]
 // Exports: default
 
-// Module 12885 (ForumPostMessageCount)
+// Module 12888 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import ForumHooks from "ForumHooks" /* 8617 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11676 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11681 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

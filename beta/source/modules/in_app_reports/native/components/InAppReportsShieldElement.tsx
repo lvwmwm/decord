@@ -1,10 +1,10 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10198
+// Function ID: 10199
 // Name: InAppReportsShieldElement
 // Dependencies: [19, 17, 21, 4913, 7814, 2]
 // Exports: default
 
-// Module 10193 (InAppReportsShieldElement)
+// Module 10198 (InAppReportsShieldElement)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ShieldSpotIllustration from "ShieldSpotIllustration" /* 7814 */;

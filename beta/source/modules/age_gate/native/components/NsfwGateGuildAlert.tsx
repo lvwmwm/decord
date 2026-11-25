@@ -1,15 +1,15 @@
-// Module ID: 10522
-// Function ID: 10523
+// Module ID: 10527
+// Function ID: 10528
 // Name: NsfwGateGuildAlert
-// Dependencies: [19, 4825, 1386, 10523, 1071, 21, 1255, 10442, 5866, 1112, 5592, 2187, 5862, 2]
+// Dependencies: [19, 4825, 1386, 10528, 1071, 21, 1255, 10447, 5866, 1112, 5592, 2187, 5862, 2]
 // Exports: showNsfwGateGuildAlert
 
-// Module 10522 (NsfwGateGuildAlert)
+// Module 10527 (NsfwGateGuildAlert)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import useAlertStore from "useAlertStore" /* 5862 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10442 */;
-import Constants2 from "Constants" /* 10523 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10447 */;
+import Constants2 from "Constants" /* 10528 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import UserStore from "UserStore" /* 1386 */;

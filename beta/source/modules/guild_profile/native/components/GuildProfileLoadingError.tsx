@@ -1,10 +1,10 @@
-// Module ID: 13808
-// Function ID: 13809
+// Module ID: 13811
+// Function ID: 13812
 // Name: GuildProfileLoadingError
 // Dependencies: [19, 17, 21, 9748, 5122, 5477, 575, 5468, 7763, 5504, 1112, 7030, 2]
 // Exports: default
 
-// Module 13808 (GuildProfileLoadingError)
+// Module 13811 (GuildProfileLoadingError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;

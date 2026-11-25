@@ -1,9 +1,9 @@
-// Module ID: 18840
-// Function ID: 18841
+// Module ID: 18851
+// Function ID: 18852
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 4762, 4784, 4845, 5651, 1386, 1071, 21, 4913, 575, 504, 1186, 5529, 1500, 5646, 7030, 5504, 1112, 5948, 4126, 10124, 7636, 9454, 7520, 8067, 2]
+// Dependencies: [19, 17, 4762, 4784, 4845, 5651, 1386, 1071, 21, 4913, 575, 504, 1186, 5529, 1500, 5646, 7030, 5504, 1112, 5948, 4126, 10129, 7636, 9454, 7520, 8067, 2]
 
-// Module 18840 (ChannelNameHeader)
+// Module 18851 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
@@ -13,7 +13,7 @@ import transitionToChannel from "transitionToChannel" /* 5646 */;
 import ChannelUtils from "ChannelUtils" /* 5948 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10129 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildStore from "GuildStore" /* 4784 */;

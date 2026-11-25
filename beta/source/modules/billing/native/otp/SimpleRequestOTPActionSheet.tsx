@@ -1,10 +1,10 @@
-// Module ID: 17123
-// Function ID: 17124
+// Module ID: 17133
+// Function ID: 17134
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1386, 6674, 1071, 1388, 21, 3, 1628, 9468, 504, 11918, 8074, 2108, 9210, 13913, 5127, 5861, 8087, 5929, 5504, 7047, 5511, 9615, 1268, 9208, 5141, 9608, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 6674, 1071, 1388, 21, 3, 1628, 9468, 504, 11923, 8074, 2108, 9210, 13916, 5127, 5861, 8087, 5929, 5504, 7047, 5511, 9615, 1268, 9208, 5141, 9608, 2]
 // Exports: default
 
-// Module 17123 (SimpleRequestOTPActionSheet)
+// Module 17133 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f111263 = () => {
+  const f111305 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -130,7 +130,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj3 = selectedSkuId(504);
   let items = [closure_8];
   const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(selectedSkuId));
-  let obj4 = selectedSkuId(11918);
+  let obj4 = selectedSkuId(11923);
   const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   react = product;
@@ -280,10 +280,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(13913)(obj6);
+  closure_8 = tmp(13916)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f111263, items5), 2);
-  tmp3(obj.useMemo(f111263, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f111305, items5), 2);
+  tmp3(obj.useMemo(f111305, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

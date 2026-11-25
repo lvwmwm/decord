@@ -1,10 +1,10 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 12342
+// Function ID: 12343
 // Name: GuildLeaderboardStatCopy
 // Dependencies: [4833, 1112, 2707, 2]
 // Exports: getStatName
 
-// Module 12346 (GuildLeaderboardStatCopy)
+// Module 12342 (GuildLeaderboardStatCopy)
 import _modDef2707 from "module_2707" /* 2707 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4833 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 12434
+// Function ID: 12435
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 6412, 6413, 504, 7858, 6414, 7843, 6365, 6370, 12439, 7807, 1112, 2]
+// Dependencies: [5, 32, 19, 6412, 6413, 504, 7858, 6414, 7843, 6365, 6370, 12435, 7807, 1112, 2]
 // Exports: default
 
-// Module 12438 (useAgeVerificationMethods)
+// Module 12434 (useAgeVerificationMethods)
 import intl3 from "intl" /* 1112 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6365 */;
 import MetricEvents from "MetricEvents" /* 6370 */;
@@ -60,7 +60,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
         const tmp6 = require;
         const tmp9 = closure_4;
         if (result) {
-          const tmp6Result = tmp6(12439);
+          const tmp6Result = tmp6(12435);
           result = tmp6Result.isGoogleWalletEnabled("age_verification_methods");
         }
         tmp9(result);

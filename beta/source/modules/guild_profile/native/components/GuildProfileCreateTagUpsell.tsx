@@ -1,15 +1,15 @@
-// Module ID: 13809
-// Function ID: 13810
+// Module ID: 13812
+// Function ID: 13813
 // Name: GuildProfileCreateTagUpsell
-// Dependencies: [19, 17, 21, 4913, 13810, 13812, 5127, 13813, 7539, 5504, 1112, 2]
+// Dependencies: [19, 17, 21, 4913, 13813, 13815, 5127, 13816, 7539, 5504, 1112, 2]
 // Exports: default
 
-// Module 13809 (GuildProfileCreateTagUpsell)
+// Module 13812 (GuildProfileCreateTagUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 13813 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 13816 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -25,8 +25,8 @@ export default function GuildProfileCreateTagUpsell(guildId) {
   let creatableGuilds;
   let tmp2 = guildId;
   const tmp = closure_5();
-  let obj = guildId(13810);
-  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(13812));
+  let obj = guildId(13813);
+  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(13815));
   creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   let tmp5 = null;
   if (guildTagCreationUpsell.isUpsellVisible) {

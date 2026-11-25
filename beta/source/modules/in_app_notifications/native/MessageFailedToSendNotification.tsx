@@ -1,9 +1,9 @@
-// Module ID: 11166
-// Function ID: 11167
+// Module ID: 11171
+// Function ID: 11172
 // Name: MessageFailedToSendNotification
-// Dependencies: [19, 17, 21, 4913, 575, 1112, 5646, 6391, 11160, 10343, 11123, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1112, 5646, 6391, 11165, 10348, 11128, 2]
 
-// Module 11166 (MessageFailedToSendNotification)
+// Module 11171 (MessageFailedToSendNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -35,11 +35,11 @@ const memoResult = react.memo(function MessageFailedToSendNotification(notificat
     const obj2 = { jumpType: flow_Client.JumpType.INSTANT };
     obj.transitionToMessage(channelId, messageId, obj2);
   }, items);
-  const NotificationPressable = channelId(11160).NotificationPressable;
+  const NotificationPressable = channelId(11165).NotificationPressable;
   ({ size: "md", color: messageId(575).colors.ICON_SUBTLE });
-  const RetryIcon = channelId(10343).RetryIcon;
+  const RetryIcon = channelId(10348).RetryIcon;
   ({ text: intl2.string(channelId(1112).t.xxRPOT) });
-  const SystemMessageText = channelId(11123).SystemMessageText;
+  const SystemMessageText = channelId(11128).SystemMessageText;
   intl2 = channelId(1112).intl;
   return <NotificationPressable icon={null} header={obj} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 });

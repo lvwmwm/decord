@@ -1,15 +1,15 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14010
+// Function ID: 14011
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1386, 21, 4913, 5467, 575, 504, 1112, 7095, 14006, 14008, 7092, 12043, 2]
+// Dependencies: [19, 1386, 21, 4913, 5467, 575, 504, 1112, 7095, 14009, 14011, 7092, 12048, 2]
 // Exports: default
 
-// Module 14007 (BadgeDirectoryScreen)
+// Module 14010 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorConstants from "NavigatorConstants" /* 5467 */;
 import NavigatorHeader from "NavigatorHeader" /* 7095 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 14006 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 14009 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -89,14 +89,14 @@ export default function BadgeDirectoryScreen(targetUserId) {
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(14006);
+      const tmp2Result = targetUserId(14009);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
         tmp9Result = tmp9(tmp2(7092).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(12043).Modal, obj5);
+        tmp9Result = tmp9(tmp2(12048).Modal, obj5);
       }
       return tmp9Result;
     }

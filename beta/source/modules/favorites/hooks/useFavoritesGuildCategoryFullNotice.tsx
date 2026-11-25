@@ -1,15 +1,15 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17637
+// Function ID: 17638
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [4765, 4775, 1071, 504, 11220, 4787, 1112, 3802, 2]
+// Dependencies: [4765, 4775, 1071, 504, 11225, 4787, 1112, 3802, 2]
 // Exports: default
 
-// Module 17627 (useFavoritesGuildCategoryFullNotice)
+// Module 17637 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import _modDef3802 from "module_3802" /* 3802 */;
 import FavoritesUtils from "FavoritesUtils" /* 4787 */;
-import FavoritesHooks from "FavoritesHooks" /* 11220 */;
+import FavoritesHooks from "FavoritesHooks" /* 11225 */;
 import FavoriteStore from "FavoriteStore" /* 4765 */;
 import FavoritesConstants from "FavoritesConstants" /* 4775 */;
 import size from "module_2" /* 2 */;

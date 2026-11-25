@@ -1,17 +1,17 @@
-// Module ID: 12879
-// Function ID: 12880
+// Module ID: 12882
+// Function ID: 12883
 // Name: MessageAttachmentUtils
-// Dependencies: [4845, 1071, 8224, 8230, 8229, 8621, 563, 4738, 11951, 1112, 2]
+// Dependencies: [4845, 1071, 8224, 8230, 8229, 8621, 563, 4738, 11956, 1112, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt, useShouldObscure
 
-// Module 12879 (MessageAttachmentUtils)
+// Module 12882 (MessageAttachmentUtils)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8224 */;
 import ObscureMediaModels from "ObscureMediaModels" /* 8229 */;
 import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8230 */;
 import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8621 */;
-import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 11951 */;
+import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 11956 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import size from "module_2" /* 2 */;
 

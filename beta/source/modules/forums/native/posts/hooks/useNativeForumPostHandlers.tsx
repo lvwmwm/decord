@@ -1,10 +1,10 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 11219
+// Function ID: 11220
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 5128, 4762, 4855, 1386, 8462, 11215, 1071, 1111, 5495, 38, 5529, 7636, 1379, 8621, 8610, 8217, 1378, 5129, 5130, 8461, 5646, 5098, 11216, 10383, 10381, 2]
+// Dependencies: [19, 5128, 4762, 4855, 1386, 8462, 11220, 1071, 1111, 5495, 38, 5529, 7636, 1379, 8621, 8610, 8217, 1378, 5129, 5130, 8461, 5646, 5098, 11221, 10388, 10386, 2]
 // Exports: default
 
-// Module 11214 (useNativeForumPostHandlers)
+// Module 11219 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
@@ -17,15 +17,15 @@ import transitionToChannel from "transitionToChannel" /* 5646 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
 import openMediaModal from "openMediaModal" /* 8217 */;
 import Tracking from "Tracking" /* 8461 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10381 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10383 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10386 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10388 */;
 import react from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5128 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8462 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 11215 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 11220 */;
 import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const showLongPressForumPostActionSheetDefault = tmp2(11216);
+const showLongPressForumPostActionSheetDefault = tmp2(11221);
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
 let closure_15 = ThreadConstants.OpenThreadAnalyticsLocations;
 let size = size_mod;

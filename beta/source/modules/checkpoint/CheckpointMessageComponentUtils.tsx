@@ -504,8 +504,8 @@ export function getCheckpointDataFromMessage(contentMessage) {
   }
   return checkpointData;
 }
-export function getCheckpoint2026CharacterFromMessage(contentMessage) {
-  const first = contentMessage.components[0];
+export function getCheckpoint2026CharacterFromMessage(arg0) {
+  const first = arg0.components[0];
   let checkpointData = null;
   if (null != first) {
     checkpointData = null;

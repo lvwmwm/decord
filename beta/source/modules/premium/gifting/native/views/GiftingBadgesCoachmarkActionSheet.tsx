@@ -1,10 +1,10 @@
-// Module ID: 19071
-// Function ID: 19072
+// Module ID: 19082
+// Function ID: 19083
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8137, 4759, 21, 4913, 575, 9482, 5127, 5090, 5141, 9484, 5504, 1112, 2920, 5511, 9465, 7539, 5600, 19072, 12475, 504, 8070, 2]
+// Dependencies: [19, 17, 8137, 4759, 21, 4913, 575, 9482, 5127, 5090, 5141, 9484, 5504, 1112, 2920, 5511, 9465, 7539, 5600, 19083, 12471, 504, 8070, 2]
 // Exports: default
 
-// Module 19071 (GiftingBadgesCoachmarkActionSheet)
+// Module 19082 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,7 +17,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import BadgeId from "BadgeId" /* 8070 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 9465 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 9484 */;
-import _modDef19072 from "module_19072" /* 19072 */;
+import _modDef19083 from "module_19083" /* 19083 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8137 */;
 import Fragment from "Fragment" /* 21 */;
@@ -147,7 +147,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   const obj3 = { style: tmp.graphicContainer, children: closure_7(tmp4, obj4) };
   const BottomSheet = markAsDismissed(5141).BottomSheet;
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef19072 };
+  obj5 = { uri: _modDef19083 };
   tmp4 = FastImageDefault;
   items2 = [closure_7(View, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };
@@ -165,7 +165,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   Button = markAsDismissed(5511).Button;
   intl3 = markAsDismissed(1112).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(12475).GiftIcon;
+  GiftIcon = markAsDismissed(12471).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 }

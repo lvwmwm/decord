@@ -1,9 +1,9 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10452
+// Function ID: 10453
 // Name: DiceRollConstants
 // Dependencies: [2]
 
-// Module 10447 (DiceRollConstants)
+// Module 10452 (DiceRollConstants)
 import size from "module_2" /* 2 */;
 
 const items = [4, 6, 8, 10, 12, 20];

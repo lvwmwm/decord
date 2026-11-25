@@ -1,21 +1,17 @@
 // Module ID: 11471
 // Function ID: 11472
-// Dependencies: [41, 42, 93, 95, 98, 11439, 11421, 11420, 11422]
+// Dependencies: [41, 42, 93, 95, 98, 11426, 11425, 11427]
 
 // Module 11471
-import Meridiem from "Meridiem" /* 11420 */;
-import assignSimilarDate from "assignSimilarDate" /* 11421 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
-import now2 from "now" /* 11439 */;
+import Meridiem from "Meridiem" /* 11425 */;
+import assignSimilarDate from "assignSimilarDate" /* 11426 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11427 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let hasOwnProperty;
-
-let self = this;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,107 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (!self2) {
-  let tmp3 = globalThis;
-  let _Object = Object;
-  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let tmp4 = self && self.__setModuleDefault;
-if (!tmp4) {
-  let tmp5 = globalThis;
-  const _Object2 = Object;
-  tmp4 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_8 = tmp4;
-let fn = self && self.__importStar;
-if (!fn) {
-  fn = function c(arg0) {
-    fn = Object.getOwnPropertyNames || ((obj) => {
-      const items = [];
-      for (const key10005 in obj) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        if (!hasOwnProperty.call(obj, key10005)) {
-          continue;
-        } else {
-          items[items.length] = key10005;
-          continue;
-        }
-        continue;
-      }
-      return items;
-    });
-    return fn(arg0);
-  };
-  fn = (__esModule) => {
-    const tmp = __esModule;
-    if (tmp) {
-      if (__esModule.__esModule) {
-        return __esModule;
-      }
-    }
-    const obj = {};
-    if (null != __esModule) {
-      let num;
-      const arr = fn(__esModule);
-      for (let num = 0; num < arr.length; num = num + 1) {
-        if ("default" !== arr[num]) {
-          let tmp5 = self2(obj, __esModule, arr[num]);
-        }
-      }
-    }
-    closure_8(obj, __esModule);
-    return obj;
-  };
-}
-const now = fn(now2);
-class FRCasualDateParser {
+class DECasualTimeParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, FRCasualDateParser);
-    const obj = _getPrototypeOf(FRCasualDateParser);
+    _classCallCheck(this, DECasualTimeParser);
+    const obj = _getPrototypeOf(DECasualTimeParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -143,48 +44,77 @@ class FRCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(DECasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern(arg0) {
-    return /(maintenant|aujourd'hui|demain|hier|cette\s*nuit|la\s*veille)(?=\W|$)/i;
+    return /(diesen)?\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht)(?=\W|$)/i;
   }
 };
-let items = [
+const items = [
   entry,
   {
     key: "innerExtract",
     value: function innerExtract(refDate, arg1) {
       refDate = refDate.refDate;
-      const str = arg1[0];
-      const str2 = str.toLowerCase();
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
       const parsingComponents = refDate.createParsingComponents();
-      if ("maintenant" === str2) {
-        return now.now(refDate.reference);
-      } else if ("aujourd'hui" === str2) {
-        return now.today(refDate.reference);
-      } else if ("hier" === str2) {
-        return now.yesterday(refDate.reference);
-      } else if ("demain" === str2) {
-        return now.tomorrow(refDate.reference);
-      } else {
-        if (str2.match(/cette\s*nuit/)) {
-          assignSimilarDate.assignSimilarDate(parsingComponents, refDate);
-          parsingComponents.imply("hour", 22);
-          parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        } else if (str2.match(/la\s*veille/)) {
-          const _Date = Date;
-          const self = this;
-          self2 = this;
-          const date = new Date(refDate.getTime());
-          date.setDate(date.getDate() - 1);
-          assignSimilarDate.assignSimilarDate(parsingComponents, date);
-          parsingComponents.imply("hour", 0);
-        }
-        return parsingComponents;
-      }
+      assignSimilarDate.implySimilarTime(parsingComponents, refDate);
+      return DECasualTimeParser.extractTimeComponents(parsingComponents, formatted);
     }
   }
 ];
+const entry1 = {
+  key: "extractTimeComponents",
+  value: function extractTimeComponents(nowResult, formatted) {
+    if ("morgen" === formatted) {
+      nowResult.imply("hour", 6);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+    } else if ("vormittag" === formatted) {
+      nowResult.imply("hour", 9);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+    } else {
+      if ("mittag" !== formatted) {
+        if ("mittags" !== formatted) {
+          if ("nachmittag" === formatted) {
+            nowResult.imply("hour", 15);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
+          } else if ("abend" === formatted) {
+            nowResult.imply("hour", 18);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
+          } else if ("nacht" === formatted) {
+            nowResult.imply("hour", 22);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
+          } else if ("mitternacht" === formatted) {
+            if (nowResult.get("hour") > 1) {
+              nowResult.addDurationAsImplied({ day: 1 });
+            }
+            nowResult.imply("hour", 0);
+            nowResult.imply("minute", 0);
+            nowResult.imply("second", 0);
+            nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+          }
+        }
+      }
+      nowResult.imply("hour", 12);
+      nowResult.imply("minute", 0);
+      nowResult.imply("second", 0);
+      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+    }
+    return nowResult;
+  }
+};
+const items1 = [entry1];
 
-export default _createClass(FRCasualDateParser, items);
+export default _createClass(DECasualTimeParser, items, items1);

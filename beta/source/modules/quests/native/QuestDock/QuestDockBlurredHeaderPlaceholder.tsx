@@ -1,16 +1,16 @@
-// Module ID: 16579
-// Function ID: 16580
+// Module ID: 16589
+// Function ID: 16590
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 6558, 16473, 21, 4913, 16474, 16580, 1653, 5600, 2]
+// Dependencies: [19, 17, 6558, 16483, 21, 4913, 16484, 16590, 1653, 5600, 2]
 
-// Module 16579 (QuestDockBlurredHeaderPlaceholder)
+// Module 16589 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
 import _modDef1653 from "module_1653" /* 1653 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import QuestConstants from "QuestConstants" /* 6558 */;
-import _slicedToArray from "_slicedToArray" /* 16580 */;
+import _slicedToArray from "_slicedToArray" /* 16590 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16473 */;
+import QuestDockConstants from "QuestDockConstants" /* 16483 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ const memoResult = react.memo(function QuestDockBlurredHeaderPlaceholder(arg0) {
   let tmp9;
   ({ opacityAnimatedStyle, placeholder } = arg0);
   ({ layoutAnimation, layoutAnimatedStyle } = arg0);
-  const context = react.useContext(placeholder(16474).QuestDockGestureContext);
+  const context = react.useContext(placeholder(16484).QuestDockGestureContext);
   const items = [placeholder];
   ({ questDockWrapperSpecs, activeQuestDockMode } = context);
   const memo = react.useMemo(() => {

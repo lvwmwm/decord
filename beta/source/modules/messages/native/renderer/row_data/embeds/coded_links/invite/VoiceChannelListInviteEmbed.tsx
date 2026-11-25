@@ -1,10 +1,10 @@
-// Module ID: 10411
-// Function ID: 10412
+// Module ID: 10416
+// Function ID: 10417
 // Name: VoiceChannelListInviteEmbed
-// Dependencies: [17, 4914, 10412, 4780, 4762, 4825, 4784, 4845, 4855, 1386, 5561, 5657, 10413, 1071, 8438, 10414, 8680, 8245, 1412, 4969, 5083, 5529, 1112, 10415, 2]
+// Dependencies: [17, 4914, 10417, 4780, 4762, 4825, 4784, 4845, 4855, 1386, 5561, 5657, 10418, 1071, 8438, 10419, 8680, 8245, 1412, 4969, 5083, 5529, 1112, 10420, 2]
 // Exports: canShowVoiceChannelListInviteEmbed, createVoiceChannelListInviteEmbed
 
-// Module 10411 (VoiceChannelListInviteEmbed)
+// Module 10416 (VoiceChannelListInviteEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
@@ -12,10 +12,10 @@ import GuildRecord from "GuildRecord" /* 4780 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
 import Constants2 from "Constants" /* 8438 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10413 */;
-import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 10414 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10418 */;
+import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 10419 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10412 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10417 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import GuildStore from "GuildStore" /* 4784 */;
@@ -80,7 +80,7 @@ export function createVoiceChannelListInviteEmbed(invite, theme) {
     const guild1 = GuildStore.getGuild(invite.guild.id);
     tmp2 = null;
     if (null != guild1) {
-      const channel = displayNameStylesEnabled(10414)(invite).channel;
+      const channel = displayNameStylesEnabled(10419)(invite).channel;
       tmp2 = null;
       if (null != channel) {
         tmp2 = null;
@@ -192,7 +192,7 @@ export function createVoiceChannelListInviteEmbed(invite, theme) {
     ({ acceptLabelGreenColor: obj3.acceptLabelColor, acceptLabelGreenBackgroundColor: obj3.acceptLabelBackgroundColor } = colors);
     items1 = [GuildMemberStore];
     let flag2 = true;
-    tmp40Result = tmp40(10415);
+    tmp40Result = tmp40(10420);
     intl2 = tmp31(1112).intl;
     const intl3 = tmp31(1112).intl;
     str2 = intl3.string(guild(1112).t.dI3q4h);

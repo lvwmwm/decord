@@ -1,17 +1,17 @@
-// Module ID: 18496
-// Function ID: 18497
+// Module ID: 18507
+// Function ID: 18508
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4784, 4855, 1386, 21, 4913, 575, 18497, 5127, 11731, 1112, 4190, 7553, 7515, 7461, 5504, 5529, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 4784, 4855, 1386, 21, 4913, 575, 18508, 5127, 11736, 1112, 4190, 7553, 7515, 7461, 5504, 5529, 5511, 2]
 // Exports: default
 
-// Module 18496 (ConjurePublishNotesSheet)
+// Module 18507 (ConjurePublishNotesSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11731 */;
-import useConjurePatchNotesComposerDefault from "useConjurePatchNotesComposer" /* 18497 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11736 */;
+import useConjurePatchNotesComposerDefault from "useConjurePatchNotesComposer" /* 18508 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

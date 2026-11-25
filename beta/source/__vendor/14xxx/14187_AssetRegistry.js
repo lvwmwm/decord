@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 185, height: 32, scales: [2, 3], hash: "dba969ce1008f0b8964b0d6bd348ad3e", name: "img_logo_premium_tier_1_full", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "c4e1982e9b2ef93acb5f2236a23782fc", name: "coffee_idle", type: "png" });

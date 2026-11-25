@@ -1,15 +1,15 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12298
+// Function ID: 12299
 // Name: publishConjureCopy
-// Dependencies: [5, 6621, 1071, 12303, 12305, 12307, 12320, 1112, 4190, 572, 12317, 1098, 6835, 2]
+// Dependencies: [5, 6621, 1071, 12299, 12301, 12303, 12316, 1112, 4190, 572, 12313, 1098, 6835, 2]
 // Exports: openConjureCopy, publishConjureCopy
 
-// Module 12302 (publishConjureCopy)
+// Module 12298 (publishConjureCopy)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
 import transitionToGuild from "transitionToGuild" /* 6835 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 12303 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 12305 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 12299 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 12301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;

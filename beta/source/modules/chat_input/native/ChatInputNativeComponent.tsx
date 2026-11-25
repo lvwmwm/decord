@@ -1,9 +1,9 @@
-// Module ID: 13113
-// Function ID: 13114
+// Module ID: 13116
+// Function ID: 13117
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 4937, 21, 4913, 575, 1112, 5122, 4920, 4910, 1378, 12899, 13114, 12856, 2]
+// Dependencies: [19, 4937, 21, 4913, 575, 1112, 5122, 4920, 4910, 1378, 12902, 13117, 12859, 2]
 
-// Module 13113 (chat_input/ChatInputNativeComponent)
+// Module 13116 (chat_input/ChatInputNativeComponent)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -11,8 +11,8 @@ import PlatformUtils from "PlatformUtils" /* 1378 */;
 import ColorUtils from "ColorUtils" /* 4910 */;
 import shared from "shared" /* 4920 */;
 import useTheme from "useTheme" /* 5122 */;
-import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 12856 */;
-import MobileMarkdownFormatMenuExperiment from "MobileMarkdownFormatMenuExperiment" /* 13114 */;
+import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 12859 */;
+import MobileMarkdownFormatMenuExperiment from "MobileMarkdownFormatMenuExperiment" /* 13117 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -89,7 +89,7 @@ class ChatInputNativeComponent {
     if (isThemeDarkResult) {
       num2 = 1;
     }
-    const tmp14 = tmp10(12899)(onMaxHeightChanged);
+    const tmp14 = tmp10(12902)(onMaxHeightChanged);
     const tmp4Result6 = MobileMarkdownFormatMenuExperiment;
     const isMobileMarkdownFormatMenuEnabled = tmp4Result6.useIsMobileMarkdownFormatMenuEnabled("ChatInputNativeComponent");
     const obj3 = { accessible, accessibilityLabel: tmp12, children: tmp13, editable, showFormatMenu: isMobileMarkdownFormatMenuEnabled, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset };

@@ -1,12 +1,12 @@
-// Module ID: 15169
-// Function ID: 15170
+// Module ID: 15179
+// Function ID: 15180
 // Name: GuildBadgeSnail
-// Dependencies: [19, 21, 15131, 7865, 2]
+// Dependencies: [19, 21, 15141, 7865, 2]
 // Exports: GuildBadgeSnail
 
-// Module 15169 (GuildBadgeSnail)
+// Module 15179 (GuildBadgeSnail)
 import inlineStyles from "inlineStyles" /* 7865 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15131 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15141 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

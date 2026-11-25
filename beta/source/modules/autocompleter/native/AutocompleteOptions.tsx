@@ -1,16 +1,16 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11411
+// Function ID: 11412
 // Name: AutocompleteOptions
-// Dependencies: [8516, 8517, 8825, 6614, 4762, 4825, 4784, 1071, 5937, 5938, 11407, 1389, 12, 10677, 6556, 4738, 10066, 9932, 9931, 11408, 11369, 6829, 1412, 1112, 2]
+// Dependencies: [8516, 8517, 8825, 6614, 4762, 4825, 4784, 1071, 5937, 5938, 11412, 1389, 12, 10682, 6556, 4738, 10066, 9932, 9931, 11413, 11374, 6829, 1412, 1112, 2]
 // Exports: getAutocompleteOptions
 
-// Module 11406 (AutocompleteOptions)
+// Module 11411 (AutocompleteOptions)
 import intl2 from "intl" /* 1112 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6556 */;
-import executeCommandDefault from "executeCommand" /* 10677 */;
-import StickersActionCreators from "StickersActionCreators" /* 11369 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 11407 */;
+import executeCommandDefault from "executeCommand" /* 10682 */;
+import StickersActionCreators from "StickersActionCreators" /* 11374 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 11412 */;
 import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8516 */;
 import ApplicationCommandStore from "ApplicationCommandStore" /* 8517 */;
 import GameAutocompleteStore from "GameAutocompleteStore" /* 8825 */;

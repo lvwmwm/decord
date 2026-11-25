@@ -1,22 +1,22 @@
-// Module ID: 17982
-// Function ID: 17983
+// Module ID: 17993
+// Function ID: 17994
 // Name: VoicePanelDockGlow
-// Dependencies: [32, 19, 17, 11768, 21, 11749, 1653, 5123, 5477, 575, 17983, 7865, 10598, 13309, 13308, 13311, 4910, 11775, 5468, 2]
+// Dependencies: [32, 19, 17, 11773, 21, 11754, 1653, 5123, 5477, 575, 17994, 7865, 10603, 13312, 13311, 13314, 4910, 11780, 5468, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
-// Module 17982 (VoicePanelDockGlow)
+// Module 17993 (VoicePanelDockGlow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import ColorUtils from "ColorUtils" /* 4910 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import inlineStyles from "inlineStyles" /* 7865 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10598 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
-import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 13308 */;
-import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13309 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13311 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10603 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11773 */;
+import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 13311 */;
+import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13312 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13314 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -341,12 +341,12 @@ export function VoicePanelDockBottomLine(micLive) {
     items[2] = obj2.hexWithOpacity(token, 0);
     return items;
   }, items);
-  let obj2 = token(13309);
+  let obj2 = token(13312);
   const voicePanelDockGlowLevelProps = obj2.useVoicePanelDockGlowLevelProps();
   const items1 = [closure_21, getDockInset, dockPressProgress, isDockConnected, wrapperDimensions, , , , , , , ];
   const useAnimatedStyle = token(1653).useAnimatedStyle;
   const tmp7 = token(1653);
-  items1[5] = token(11775).getDockRowOpacity;
+  items1[5] = token(11780).getDockRowOpacity;
   items1[6] = dockMinimizeProgress;
   items1[7] = isDockExpanding;
   items1[8] = dockContentSwap;

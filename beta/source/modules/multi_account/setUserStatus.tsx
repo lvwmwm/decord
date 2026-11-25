@@ -1,10 +1,10 @@
-// Module ID: 11110
-// Function ID: 11111
+// Module ID: 11115
+// Function ID: 11116
 // Name: setUserStatus
-// Dependencies: [5, 7481, 6920, 1071, 4969, 1112, 11111, 4743, 1226, 4921, 1255, 2]
+// Dependencies: [5, 7481, 6920, 1071, 4969, 1112, 11116, 4743, 1226, 4921, 1255, 2]
 // Exports: default
 
-// Module 11110 (setUserStatus)
+// Module 11115 (setUserStatus)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7481 */;

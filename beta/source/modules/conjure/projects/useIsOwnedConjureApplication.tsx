@@ -1,10 +1,10 @@
-// Module ID: 10338
-// Function ID: 10339
+// Module ID: 10343
+// Function ID: 10344
 // Name: useIsOwnedConjureApplication
 // Dependencies: [19, 4784, 6621, 559, 504, 6865, 6933, 2]
 // Exports: default
 
-// Module 10338 (useIsOwnedConjureApplication)
+// Module 10343 (useIsOwnedConjureApplication)
 import BackoffDefault from "Backoff" /* 559 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;
 import ConjureUtils from "ConjureUtils" /* 6865 */;

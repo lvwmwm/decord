@@ -1,10 +1,10 @@
-// Module ID: 18900
-// Function ID: 18901
+// Module ID: 18911
+// Function ID: 18912
 // Name: ShopCoachmark
 // Dependencies: [19, 4759, 21, 4913, 1186, 575, 1112, 9087, 2]
 // Exports: default
 
-// Module 18900 (ShopCoachmark)
+// Module 18911 (ShopCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

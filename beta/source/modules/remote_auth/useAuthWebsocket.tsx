@@ -1,13 +1,13 @@
-// Module ID: 17494
-// Function ID: 17495
+// Module ID: 17504
+// Function ID: 17505
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1071, 3, 17493, 559, 7392, 14897, 17495, 1107, 1284, 6425, 17497, 2]
+// Dependencies: [5, 32, 19, 1071, 3, 17503, 559, 7392, 14907, 17505, 1107, 1284, 6425, 17507, 2]
 // Exports: useAuthWebsocket
 
-// Module 17494 (useAuthWebsocket)
+// Module 17504 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
-import typing from "typing" /* 17493 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17495 */;
+import typing from "typing" /* 17503 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17505 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

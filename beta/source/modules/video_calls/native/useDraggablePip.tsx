@@ -1,13 +1,13 @@
-// Module ID: 10655
-// Function ID: 10656
+// Module ID: 10660
+// Function ID: 10661
 // Name: useDraggablePip
-// Dependencies: [32, 10636, 10643, 1653, 5123, 1186, 10656, 5173, 1706, 5514, 2]
+// Dependencies: [32, 10641, 10648, 1653, 5123, 1186, 10661, 5173, 1706, 5514, 2]
 // Exports: useDraggablePip
 
-// Module 10655 (useDraggablePip)
-import ChannelCallStore from "ChannelCallStore" /* 10636 */;
+// Module 10660 (useDraggablePip)
+import ChannelCallStore from "ChannelCallStore" /* 10641 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 10643 */;
+import Constants from "Constants" /* 10648 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -239,7 +239,7 @@ export function useDraggablePip(size1) {
   const items16 = [closure_15, , , , ];
   const useAnimatedReaction = tmp2(1653).useAnimatedReaction;
   tmp2(1653);
-  items16[1] = tmp2(10656).cheapWorkletArrayShallowEqual;
+  items16[1] = tmp2(10661).cheapWorkletArrayShallowEqual;
   items16[2] = clamp;
   items16[3] = sharedValue1;
   items16[4] = sharedValue;
@@ -284,7 +284,7 @@ export function useDraggablePip(size1) {
   const items20 = [closure_17, , , , ];
   const useAnimatedReaction2 = tmp2(1653).useAnimatedReaction;
   tmp2(1653);
-  items20[1] = tmp2(10656).cheapWorkletArrayShallowEqual;
+  items20[1] = tmp2(10661).cheapWorkletArrayShallowEqual;
   items20[2] = clamp;
   items20[3] = sharedValue3;
   items20[4] = sharedValue2;

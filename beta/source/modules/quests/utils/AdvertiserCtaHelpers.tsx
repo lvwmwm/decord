@@ -1,10 +1,10 @@
-// Module ID: 16358
-// Function ID: 16359
+// Module ID: 16368
+// Function ID: 16369
 // Name: AdvertiserCtaHelpers
 // Dependencies: [2]
 // Exports: getAdvertiserCtaInfo
 
-// Module 16358 (AdvertiserCtaHelpers)
+// Module 16368 (AdvertiserCtaHelpers)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/utils/AdvertiserCtaHelpers.tsx");

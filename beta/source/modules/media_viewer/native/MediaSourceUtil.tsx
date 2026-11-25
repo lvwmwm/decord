@@ -1,7 +1,7 @@
 // Module ID: 8223
 // Function ID: 8224
 // Name: MediaSourceUtil
-// Dependencies: [19, 4762, 1071, 5953, 1404, 8224, 8230, 1493, 8235, 6439, 8236, 6384, 8245, 5968, 2117, 8246, 10099, 1254, 10598, 1091, 5594, 8219, 5861, 1112, 1442, 10026, 2]
+// Dependencies: [19, 4762, 1071, 5953, 1404, 8224, 8230, 1493, 8235, 6439, 8236, 6384, 8245, 5968, 2117, 8246, 10099, 1254, 10603, 1091, 5594, 8219, 5861, 1112, 1442, 10026, 2]
 // Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, extractThumbnailMediaFromEmbed, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls, useSelectedMediaSource
 
 // Module 8223 (MediaSourceUtil)
@@ -25,7 +25,7 @@ import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
 import transformMessageComponents from "transformMessageComponents" /* 8246 */;
 import MediaModalPortal from "MediaModalPortal" /* 10026 */;
 import RowGeneratorTypes from "RowGeneratorTypes" /* 10099 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10598 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10603 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import Constants from "Constants" /* 1071 */;
@@ -36,7 +36,7 @@ let _require, closure_2, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
-const f92448 = () => {
+const f92475 = () => {
   if (ConstantsIOS.MediaType.IMAGE === VIDEO) {
     const tmp2Result = ToastUtils;
     tmp2Result.presentImageSaved();
@@ -1044,7 +1044,7 @@ export function downloadMediaAsset(mediaUrl, VIDEO) {
   let closure_0 = VIDEO;
   const obj = react_nativeDefault;
   const downloadMediaAssetResult = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  return downloadMediaAssetResult.then(f92448, handleDownloadError);
+  return downloadMediaAssetResult.then(f92475, handleDownloadError);
 }
 export function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
   let result;
@@ -1056,7 +1056,7 @@ export function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) 
     const obj = react_nativeDefault;
     result = obj.downloadMediaAsset(mediaUrl, VIDEO);
   }
-  return result.then(f92448, handleDownloadError);
+  return result.then(f92475, handleDownloadError);
 }
 export function getYoutubeClipVideoIdFromURI(uri) {
   const match = uri.match(/^https:\/\/www\.youtube\.com\/embed\/([A-Za-z0-9_-]*)(\?clip=([A-Za-z0-9_-]+)(&clipt=([A-Za-z0-9_-]+)))?$/);

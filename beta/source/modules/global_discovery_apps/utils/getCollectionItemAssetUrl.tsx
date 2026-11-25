@@ -1,10 +1,10 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 12992
+// Function ID: 12993
 // Name: getCollectionItemAssetUrl
 // Dependencies: [1071, 1447, 1412, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 12989 (getCollectionItemAssetUrl)
+// Module 12992 (getCollectionItemAssetUrl)
 import Constants from "Constants" /* 1071 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;

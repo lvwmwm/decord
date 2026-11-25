@@ -1,7 +1,7 @@
 // Module ID: 10095
 // Function ID: 10096
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 8315, 21, 10057, 10072, 504, 8514, 10096, 1112, 10097, 10098, 5511, 10118, 2]
+// Dependencies: [32, 19, 8315, 21, 10057, 10072, 504, 8514, 10096, 1112, 10097, 10098, 5511, 10123, 2]
 // Exports: ForwardMessageFooter
 
 // Module 10095 (ForwardMessageFooter)

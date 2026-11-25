@@ -1,9 +1,9 @@
 // Module ID: 15333
 // Function ID: 15334
-// Dependencies: [15322]
+// Dependencies: [15332]
 
 // Module 15333
-import _mod15322 from "module_15322" /* 15322 */;
+import _mod15332 from "module_15332" /* 15332 */;
 
 
-export default (arg0, arg1, arg2) => _mod15322(arg0, arg1, arg2) <= 0;
+export default (arg0, arg1, arg2) => _mod15332(arg1, arg0, arg2);

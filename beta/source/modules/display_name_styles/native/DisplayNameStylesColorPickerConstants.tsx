@@ -1,9 +1,9 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16758
+// Function ID: 16759
 // Name: DisplayNameStylesColorPickerConstants
 // Dependencies: [2]
 
-// Module 16748 (DisplayNameStylesColorPickerConstants)
+// Module 16758 (DisplayNameStylesColorPickerConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesColorPickerConstants.tsx");

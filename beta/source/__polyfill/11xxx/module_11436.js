@@ -1,16 +1,18 @@
 // Module ID: 11436
 // Function ID: 11437
-// Dependencies: [41, 42, 93, 95, 98, 11437, 11434]
+// Dependencies: [41, 42, 93, 95, 98, 11419, 11423, 11427]
 
 // Module 11436
-import _mod11434 from "module_11434" /* 11434 */;
-import mergeDateTimeComponent from "mergeDateTimeComponent" /* 11437 */;
+import _mod11419 from "module_11419" /* 11419 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11427 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp;
+const ReferenceWithTimezone = tmp(11423);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -26,63 +28,48 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class AbstractMergeDateTimeRefiner {
-  constructor() {
+const regExp = new RegExp("(" + _mod11419.TIME_UNITS_PATTERN + ")\\s{0,5}(?:later|after|from now|henceforth|forward|out)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + _mod11419.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(later|after|from now)(?=\\W|$)", "i");
+class ENTimeUnitLaterFormatParser {
+  constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, AbstractMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
+    _classCallCheck(this, ENTimeUnitLaterFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitLaterFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
   }
 }
-_inherits(AbstractMergeDateTimeRefiner, _mod11434.MergingRefiner);
+_inherits(ENTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "shouldMergeResults",
-  value: function shouldMergeResults(str, start, start2) {
-    start = start.start;
-    let isOnlyDateResult = start.isOnlyDate();
-    if (isOnlyDateResult) {
-      start2 = start2.start;
-      isOnlyDateResult = start2.isOnlyTime();
-    }
-    if (!isOnlyDateResult) {
-      const start3 = start2.start;
-      let isOnlyDateResult1 = start3.isOnlyDate();
-      if (isOnlyDateResult1) {
-        const start4 = start.start;
-        isOnlyDateResult1 = start4.isOnlyTime();
-      }
-      isOnlyDateResult = isOnlyDateResult1;
-    }
-    if (isOnlyDateResult) {
-      const self = this;
-      isOnlyDateResult = null != str.match(this.patternBetween());
-    }
-    return isOnlyDateResult;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return this.strictMode ? regExp1 : regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "mergeResults",
-    value: function mergeResults(arg0, start, text) {
-      start = start.start;
-      const isOnlyDateResult = start.isOnlyDate();
-      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
-      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
-      tmp2.index = start.index;
-      tmp2.text = start.text + arg0 + text.text;
-      return tmp2;
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11419.parseDuration(arg1[1]);
+      let relativeFromReference = null;
+      if (parseDurationResult) {
+        const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+      }
+      return relativeFromReference;
     }
   }
 ];
 
-export default _createClass(AbstractMergeDateTimeRefiner, items);
+export default _createClass(ENTimeUnitLaterFormatParser, items);

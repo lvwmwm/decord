@@ -1,15 +1,15 @@
-// Module ID: 14765
-// Function ID: 14766
+// Module ID: 14775
+// Function ID: 14776
 // Name: searchSounds
-// Dependencies: [6573, 1071, 551, 1255, 4859, 6677, 10984, 2]
+// Dependencies: [6573, 1071, 551, 1255, 4859, 6677, 10989, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 14765 (searchSounds)
+// Module 14775 (searchSounds)
 import debounceDefault from "debounce" /* 551 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
 import fuzzysearchDefault from "fuzzysearch" /* 6677 */;
-import SoundboardUtils from "SoundboardUtils" /* 10984 */;
+import SoundboardUtils from "SoundboardUtils" /* 10989 */;
 import EmojiStore from "EmojiStore" /* 6573 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

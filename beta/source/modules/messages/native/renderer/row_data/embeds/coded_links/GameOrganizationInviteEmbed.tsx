@@ -1,10 +1,10 @@
-// Module ID: 14319
-// Function ID: 14320
+// Module ID: 14329
+// Function ID: 14330
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11895, 4784, 10413, 11896, 8438, 8680, 1112, 2639, 8673, 575, 8245, 7458, 14320, 12233, 12058, 12089, 7039, 4910, 2]
+// Dependencies: [11900, 4784, 10418, 11901, 8438, 8680, 1112, 2639, 8673, 575, 8245, 7458, 14330, 12229, 12063, 12094, 7039, 4910, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 14319 (GameOrganizationInviteEmbed)
+// Module 14329 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import _modDef2639 from "module_2639" /* 2639 */;
@@ -15,12 +15,12 @@ import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
 import Constants from "Constants" /* 8438 */;
 import react_native from "react-native" /* 8673 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8680 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10413 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12058 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12233 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 14320 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11895 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10418 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11901 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12063 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12229 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 14330 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11900 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
       obj17 = { displayNoun };
       ({ name: obj10.titleText, iconUrl } = organization);
       if (iconUrl == null) {
-        iconUrl = tmp(12089);
+        iconUrl = tmp(12094);
       }
       ({ name: obj10.gameName, iconUrl: iconUrl2 } = application);
       formatToPlainStringResult = undefined;

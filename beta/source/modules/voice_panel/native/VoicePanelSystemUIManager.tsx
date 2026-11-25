@@ -1,14 +1,14 @@
-// Module ID: 19310
-// Function ID: 19311
+// Module ID: 19321
+// Function ID: 19322
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 6620, 11750, 11748, 5563, 21, 11749, 1262, 1378, 551, 1653, 10656, 1706, 10601, 10606, 2]
+// Dependencies: [32, 19, 6620, 11755, 11753, 5563, 21, 11754, 1262, 1378, 551, 1653, 10661, 1706, 10606, 10611, 2]
 
-// Module 19310 (VoicePanelSystemUIManager)
+// Module 19321 (VoicePanelSystemUIManager)
 import react_native from "react-native" /* 1262 */;
 import CallConstants from "CallConstants" /* 5563 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
@@ -22,8 +22,8 @@ let c10;
 let c9;
 let tmp;
 let unpackModuleId;
-const StatusBarDefault = tmp(10601);
-const HomeIndicatorDefault = tmp(10606);
+const StatusBarDefault = tmp(10606);
+const HomeIndicatorDefault = tmp(10611);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const ParticipantTypes = CallConstants.ParticipantTypes;
@@ -189,7 +189,7 @@ const memoResult = react.memo(function VoicePanelSystemUIManager() {
   VoicePanelSystemUIManagerTsx1.__initData = tmp16;
   const items4 = [closure_13, , , ];
   const useAnimatedReaction = tmp15.useAnimatedReaction;
-  items4[1] = tmp14(10656).cheapWorkletShallowEqual;
+  items4[1] = tmp14(10661).cheapWorkletShallowEqual;
   items4[2] = tmp14(1706).scheduleOnRN;
   items4[3] = handleStateChange;
   c0 = undefined;

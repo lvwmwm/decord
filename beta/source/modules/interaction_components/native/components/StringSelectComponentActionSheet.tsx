@@ -1,10 +1,10 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12348
+// Function ID: 12349
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4913, 575, 12353, 2117, 5127, 12354, 7496, 5504, 1112, 2]
+// Dependencies: [32, 19, 21, 4913, 575, 12349, 2117, 5127, 12350, 7496, 5504, 1112, 2]
 // Exports: default
 
-// Module 12352 (StringSelectComponentActionSheet)
+// Module 12348 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2117 */;
@@ -41,7 +41,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(12353);
+  let obj = selectionActionComponent(12349);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -150,7 +150,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(12354);
+  const tmp10 = onSubmit(12350);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

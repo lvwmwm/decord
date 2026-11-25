@@ -1,15 +1,15 @@
-// Module ID: 16199
-// Function ID: 16200
+// Module ID: 16209
+// Function ID: 16210
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 8336, 21, 4913, 575, 9137, 9139, 16194, 5504, 5594, 1112, 2824, 12467, 16200, 7030, 2]
+// Dependencies: [32, 19, 17, 8336, 21, 4913, 575, 9137, 9139, 16204, 5504, 5594, 1112, 2824, 12463, 16210, 7030, 2]
 // Exports: default
 
-// Module 16199 (FamilyCenterActivitySection)
+// Module 16209 (FamilyCenterActivitySection)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9137 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 9139 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16194 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 16204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -101,9 +101,9 @@ export default function FamilyCenterActivitySection(displayType) {
   let tmp20Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(16194);
+  let obj = displayType(16204);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(16194);
+  const obj2 = displayType(16204);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
   const callback = react.useCallback(() => {
     const presentFailedToast = displayType(closure_2[11]).presentFailedToast;
@@ -111,7 +111,7 @@ export default function FamilyCenterActivitySection(displayType) {
     const intl = displayType(closure_2[12]).intl;
     presentFailedToast(intl.string(loadMore(closure_2[13]).Wu8BK2));
   }, []);
-  const obj3 = displayType(12467);
+  const obj3 = displayType(12463);
   const familyCenterActions = obj3.useFamilyCenterActions({ onError: callback });
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;

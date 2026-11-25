@@ -1,10 +1,10 @@
-// Module ID: 20064
-// Function ID: 20065
+// Module ID: 20075
+// Function ID: 20076
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 4766, 4762, 7477, 5534, 4784, 19681, 4855, 6552, 1386, 1071, 6553, 1081, 21, 4913, 575, 4974, 5650, 5127, 11156, 2119, 7485, 7480, 11155, 7347, 1112, 7349, 7348, 7556, 5504, 1186, 5592, 2187, 7045, 11158, 7057, 13707, 4848, 7636, 5529, 7709, 5929, 11159, 1500, 504, 7478, 5487, 7095, 20065, 11154, 7092, 2]
+// Dependencies: [109, 19, 17, 4766, 4762, 7477, 5534, 4784, 19692, 4855, 6552, 1386, 1071, 6553, 1081, 21, 4913, 575, 4974, 5650, 5127, 11161, 2119, 7485, 7480, 11160, 7347, 1112, 7349, 7348, 7556, 5504, 1186, 5592, 2187, 7045, 11163, 7057, 13710, 4848, 7636, 5529, 7709, 5929, 11164, 1500, 504, 7478, 5487, 7095, 20076, 11159, 7092, 2]
 // Exports: default
 
-// Module 20064 (NotificationSettingsModal)
+// Module 20075 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -30,10 +30,10 @@ import NotificationSettingsModalActionCreatorsDefault from "NotificationSettings
 import TableSwitchRow6 from "TableSwitchRow" /* 7556 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
 import _mod7709 from "module_7709" /* 7709 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11155 */;
-import MutedUntilTextDefault from "MutedUntilText" /* 11158 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 11159 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 13707 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11160 */;
+import MutedUntilTextDefault from "MutedUntilText" /* 11163 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 11164 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13710 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
@@ -41,7 +41,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7477 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19681 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19692 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -92,7 +92,7 @@ function ConnectedNotificationSettings(guildId) {
     const tmp = closure_1_8(type) || type === constants.GUILD_CATEGORY;
     return tmp;
   }), items1);
-  const obj3 = guildId(11159);
+  const obj3 = guildId(11164);
   shouldUseNewNotificationSystem = obj3.useShouldUseNewNotificationSystem("NotificationSettingsModalNative");
   const items2 = [UserGuildSettingsStore];
   const items3 = [shouldUseNewNotificationSystem, memo, tmp3.channelOverrides];
@@ -165,7 +165,7 @@ class NotificationSettings extends PureComponent {
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { guildId };
-        const tmp8 = asyncRequire(11156, dependencyMap.paths);
+        const tmp8 = asyncRequire(11161, dependencyMap.paths);
         openLazy(tmp8, "muteSettings" + guildId, obj);
       }
     };
@@ -457,7 +457,7 @@ class NotificationSettings extends PureComponent {
     let tmp11Result = null;
     const tmp11 = mostRecentSelectedTextChannelIds;
     if (muted) {
-      const obj5 = { muteConfig, type: tmp7(11158).MuteSettingType.SERVER };
+      const obj5 = { muteConfig, type: tmp7(11163).MuteSettingType.SERVER };
       const tmp14 = MutedUntilTextDefault;
       tmp11Result = tmp11(tmp14, obj5, "muted-until");
     }

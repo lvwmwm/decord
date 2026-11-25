@@ -1,10 +1,10 @@
-// Module ID: 17521
-// Function ID: 17522
+// Module ID: 17531
+// Function ID: 17532
 // Name: ChannelScreenAnimatedFrame
 // Dependencies: [19, 17, 21, 4913, 575, 1628, 1653, 8570, 2]
 // Exports: default
 
-// Module 17521 (ChannelScreenAnimatedFrame)
+// Module 17531 (ChannelScreenAnimatedFrame)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;

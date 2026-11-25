@@ -1,10 +1,10 @@
-// Module ID: 10383
-// Function ID: 10384
+// Module ID: 10388
+// Function ID: 10389
 // Name: reactions/ReactionUtils
-// Dependencies: [4762, 5964, 4946, 1386, 1071, 1389, 21, 4857, 5129, 5130, 8458, 2173, 5127, 9091, 2119, 5098, 9063, 5495, 5650, 10384, 10400, 10401, 10402, 9489, 9078, 5860, 1112, 5504, 2]
+// Dependencies: [4762, 5964, 4946, 1386, 1071, 1389, 21, 4857, 5129, 5130, 8458, 2173, 5127, 9091, 2119, 5098, 9063, 5495, 5650, 10389, 10405, 10406, 10407, 9489, 9078, 5860, 1112, 5504, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 10383 (reactions/ReactionUtils)
+// Module 10388 (reactions/ReactionUtils)
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -19,8 +19,8 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
 import ReactionActionCreators from "ReactionActionCreators" /* 8458 */;
 import SuperReactionIcon from "SuperReactionIcon" /* 9078 */;
 import ReactionIcon from "ReactionIcon" /* 9489 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10401 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10402 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10406 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10407 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import MessageStore from "MessageStore" /* 5964 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
@@ -174,7 +174,7 @@ export function handleViewReactions(isPoll) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj3 = { messageId, channelId, emoji };
     ActionSheetActionCreatorsDefault;
-    const tmp21 = asyncRequire(10384, dependencyMap.paths);
+    const tmp21 = asyncRequire(10389, dependencyMap.paths);
     const merged2 = Object.assign(merged);
     openLazy(tmp21, "MessageReactions", obj3);
   }
@@ -183,7 +183,7 @@ export function handleViewReactions(isPoll) {
 export function handleViewPreviewReactions(id2, id, emoji) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(asyncRequire(10400, dependencyMap.paths), "MessagePreviewReactions", obj2);
+  obj.openLazy(asyncRequire(10405, dependencyMap.paths), "MessagePreviewReactions", obj2);
 }
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj2;

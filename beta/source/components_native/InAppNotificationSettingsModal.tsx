@@ -1,9 +1,9 @@
-// Module ID: 11153
-// Function ID: 11154
+// Module ID: 11158
+// Function ID: 11159
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 4766, 4762, 4855, 6552, 1386, 1071, 21, 7485, 7480, 5529, 7709, 1112, 11154, 8194, 504, 7095, 7092, 2]
+// Dependencies: [19, 4766, 4762, 4855, 6552, 1386, 1071, 21, 7485, 7480, 5529, 7709, 1112, 11159, 8194, 504, 7095, 7092, 2]
 
-// Module 11153 (InAppNotificationSettingsModal)
+// Module 11158 (InAppNotificationSettingsModal)
 import intl4 from "intl" /* 1112 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
 import useChannelName from "useChannelName" /* 5529 */;
@@ -12,7 +12,7 @@ import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7480 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7485 */;
 import _mod7709 from "module_7709" /* 7709 */;
 import openUserSettings from "openUserSettings" /* 8194 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 11154 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 11159 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;

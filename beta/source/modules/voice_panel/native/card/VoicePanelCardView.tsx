@@ -1,9 +1,9 @@
-// Module ID: 19269
-// Function ID: 19270
+// Module ID: 19280
+// Function ID: 19281
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6620, 5654, 11750, 11748, 19165, 11753, 5563, 21, 19270, 1653, 10656, 1706, 11749, 504, 5477, 575, 11755, 10093, 5514, 11775, 11759, 11758, 7018, 5891, 19230, 12, 4922, 1112, 4974, 2]
+// Dependencies: [32, 19, 17, 6620, 5654, 11755, 11753, 19176, 11758, 5563, 21, 19281, 1653, 10661, 1706, 11754, 504, 5477, 575, 11760, 10093, 5514, 11780, 11764, 11763, 7018, 5891, 19241, 12, 4922, 1112, 4974, 2]
 
-// Module 19269 (VoicePanelCardView)
+// Module 19280 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
@@ -11,16 +11,16 @@ import _modDef1653 from "module_1653" /* 1653 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
 import CallConstants from "CallConstants" /* 5563 */;
 import react2 from "react" /* 5891 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11753 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19165 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 19270 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11758 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19176 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 19281 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

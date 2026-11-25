@@ -1,10 +1,10 @@
-// Module ID: 16174
-// Function ID: 16175
+// Module ID: 16184
+// Function ID: 16185
 // Name: FamilyCenterInlineWarningNotice
 // Dependencies: [19, 17, 21, 4913, 575, 7763, 5504, 2]
 // Exports: default
 
-// Module 16174 (FamilyCenterInlineWarningNotice)
+// Module 16184 (FamilyCenterInlineWarningNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;

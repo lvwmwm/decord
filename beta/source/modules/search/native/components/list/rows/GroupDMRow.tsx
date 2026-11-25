@@ -1,15 +1,15 @@
-// Module ID: 18744
-// Function ID: 18745
+// Module ID: 18755
+// Function ID: 18756
 // Name: GroupDMRow
-// Dependencies: [19, 21, 5529, 10124, 1186, 13841, 5504, 18728, 2]
+// Dependencies: [19, 21, 5529, 10129, 1186, 13844, 5504, 18739, 2]
 // Exports: default
 
-// Module 18744 (GroupDMRow)
+// Module 18755 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
 import useChannelNameDefault from "useChannelName" /* 5529 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 13841 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10129 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 13844 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ export default function GroupDMRow(channel) {
     tmp3Result = tmp3(tmp5(5504).Text, obj3);
   }
   let str2 = str;
-  const SearchListRow = tmp5(18728).SearchListRow;
+  const SearchListRow = tmp5(18739).SearchListRow;
   if (str == null) {
     str2 = "";
   }

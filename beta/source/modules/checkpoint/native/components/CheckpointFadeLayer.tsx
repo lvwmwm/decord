@@ -1,10 +1,10 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12544
+// Function ID: 12545
 // Name: CheckpointFadeLayer
-// Dependencies: [32, 19, 4914, 21, 1653, 504, 6417, 7392, 12506, 5123, 2]
+// Dependencies: [32, 19, 4914, 21, 1653, 504, 6417, 7392, 12510, 5123, 2]
 // Exports: default
 
-// Module 12541 (CheckpointFadeLayer)
+// Module 12544 (CheckpointFadeLayer)
 import Fragment from "Fragment" /* 21 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import timing_timing from "timing/timing" /* 5123 */;
@@ -102,7 +102,7 @@ export default function CheckpointFadeLayer(visible) {
     }
   });
   closure_14 = num.useCallback(() => closure_12(true), []);
-  context = num.useContext(enter(12506));
+  context = num.useContext(enter(12510));
   const tmp15 = keepMounted(num.useState(null), 2);
   first2 = tmp15[0];
   closure_17 = tmp15[1];
@@ -282,7 +282,7 @@ export default function CheckpointFadeLayer(visible) {
       str2 = "auto";
     }
     obj4 = { value: callback, children: currentWhen };
-    Provider = tmp13(12506).Provider;
+    Provider = tmp13(12510).Provider;
     if (visible) {
       currentWhen = children;
     }

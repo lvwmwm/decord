@@ -1,9 +1,9 @@
-// Module ID: 18765
-// Function ID: 18766
+// Module ID: 18776
+// Function ID: 18777
 // Name: MessageRow
-// Dependencies: [19, 17, 4914, 4765, 4762, 4784, 6552, 1071, 21, 4913, 575, 504, 7636, 5529, 1186, 5504, 11157, 11373, 10387, 4969, 6954, 18766, 11701, 18767, 6341, 8699, 6439, 18728, 1112, 11125, 5574, 2]
+// Dependencies: [19, 17, 4914, 4765, 4762, 4784, 6552, 1071, 21, 4913, 575, 504, 7636, 5529, 1186, 5504, 11162, 11378, 10392, 4969, 6954, 18777, 11706, 18778, 6341, 8699, 6439, 18739, 1112, 11130, 5574, 2]
 
-// Module 18765 (MessageRow)
+// Module 18776 (MessageRow)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -15,11 +15,11 @@ import useChannelNameDefault from "useChannelName" /* 5529 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5574 */;
 import useMessageAuthorDefault from "useMessageAuthor" /* 6341 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8699 */;
-import BotTagDefault from "BotTag" /* 10387 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11157 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11373 */;
-import SearchListRow2 from "SearchListRow" /* 18728 */;
-import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 18766 */;
+import BotTagDefault from "BotTag" /* 10392 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11162 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11378 */;
+import SearchListRow2 from "SearchListRow" /* 18739 */;
+import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 18777 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
@@ -37,7 +37,7 @@ let closure_4;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const PollBadgeDefault = tmp5(18767);
+const PollBadgeDefault = tmp5(18778);
 function GuildChannelMessageRowHeader(channel) {
   let isFavorite;
   let items1;
@@ -118,22 +118,22 @@ function PrivateChannelMessageRowLabel(message) {
       });
     }
   }, items1);
-  let obj = message(18766);
+  let obj = message(18777);
   const searchMessageTimestamp = obj.useSearchMessageTimestamp(message, channel);
   const obj2 = { style: tmp.labelContainer, children: items3 };
   const obj3 = { style: tmp.authorRow, children: items2 };
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
   items2 = [closure_11(message(5504).Text, { lineClamp: 1, variant: "body-md/semibold", color: "interactive-text-active", children: memo }), , ];
   if (muted) {
-    const obj4 = { source: channel(11157), size: message(1186).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    const obj4 = { source: channel(11162), size: message(1186).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
     const Icon = tmp4(1186).Icon;
     muted = tmp9(Icon, obj4);
   }
   items2[1] = muted;
   let isSystemDMResult = channel.isSystemDM();
   if (isSystemDMResult) {
-    const obj5 = { type: channel(10387).Types.SYSTEM_DM, verified: true };
-    const tmp13 = channel(10387);
+    const obj5 = { type: channel(10392).Types.SYSTEM_DM, verified: true };
+    const tmp13 = channel(10392);
     isSystemDMResult = tmp9(tmp13, obj5);
   }
   items2[2] = isSystemDMResult;
@@ -143,13 +143,13 @@ function PrivateChannelMessageRowLabel(message) {
   let tmp9Result = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj7 = { size: "xs", style: tmp.suppressNotificationsIcon };
-    tmp9Result = tmp9(tmp4(11701).BellZIcon, obj7);
+    tmp9Result = tmp9(tmp4(11706).BellZIcon, obj7);
   }
   items3[2] = tmp9Result;
   let tmp9Result2 = null;
   if (message.isPoll()) {
     const obj8 = { style: tmp.pollBadge };
-    tmp9Result2 = tmp9(channel(18767), obj8);
+    tmp9Result2 = tmp9(channel(18778), obj8);
   }
   items3[3] = tmp9Result2;
   return closure_12(closure_4, obj2);
@@ -204,7 +204,7 @@ function GuildChannelMessageRowLabel(arg0) {
     let tmp21Result = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj8 = { size: "xs", style: tmp.suppressNotificationsIcon };
-      tmp21Result = tmp21(tmp2(11701).BellZIcon, obj8);
+      tmp21Result = tmp21(tmp2(11706).BellZIcon, obj8);
     }
     items2[2] = tmp21Result;
     let tmp21Result2 = null;
@@ -248,7 +248,7 @@ function MessageRowContent(message) {
     tmp4Result = tmp4(Text, obj2);
   } else {
     const obj3 = { message, channel, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, color: "interactive-text-default", lineClamp, messageSizeCacheRef };
-    const NativeMessageChannelRowPreview = tmp5(11125).NativeMessageChannelRowPreview;
+    const NativeMessageChannelRowPreview = tmp5(11130).NativeMessageChannelRowPreview;
     tmp4Result = tmp4(NativeMessageChannelRowPreview, obj3);
   }
   return unpackModuleId(SearchListRow, obj);

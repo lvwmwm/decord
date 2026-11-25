@@ -1,13 +1,13 @@
-// Module ID: 19340
-// Function ID: 19341
+// Module ID: 19351
+// Function ID: 19352
 // Name: useControlsHiddenPresentation
-// Dependencies: [11750, 4974, 1653, 5514, 1706, 2]
+// Dependencies: [11755, 4974, 1653, 5514, 1706, 2]
 // Exports: default
 
-// Module 19340 (useControlsHiddenPresentation)
+// Module 19351 (useControlsHiddenPresentation)
 import _mod1653 from "module_1653" /* 1653 */;
 import native from "native" /* 4974 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

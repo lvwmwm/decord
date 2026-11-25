@@ -1,10 +1,10 @@
-// Module ID: 14350
-// Function ID: 14351
+// Module ID: 14360
+// Function ID: 14361
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 4913, 575, 5477, 8634, 8649, 1112, 5504, 5511, 14351, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5477, 8634, 8649, 1112, 5504, 5511, 14361, 2]
 // Exports: default
 
-// Module 14350 (ConversationFocusView)
+// Module 14360 (ConversationFocusView)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8634 */;

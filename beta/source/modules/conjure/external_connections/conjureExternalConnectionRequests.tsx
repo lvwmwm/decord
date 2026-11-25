@@ -1,11 +1,11 @@
-// Module ID: 18356
-// Function ID: 18357
+// Module ID: 18367
+// Function ID: 18368
 // Name: conjureExternalConnectionRequests
-// Dependencies: [5, 14739, 18357, 2]
+// Dependencies: [5, 14749, 18368, 2]
 // Exports: fetchProjectMcpConnection, formatMcpConnectionExpiry, requestExternalAuthorizeUrl
 
-// Module 18356 (conjureExternalConnectionRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 14739 */;
+// Module 18367 (conjureExternalConnectionRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 14749 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

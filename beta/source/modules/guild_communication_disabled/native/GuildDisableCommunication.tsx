@@ -1,9 +1,9 @@
-// Module ID: 12379
-// Function ID: 12380
+// Module ID: 12375
+// Function ID: 12376
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 4827, 1071, 21, 1112, 4913, 575, 5488, 11654, 5474, 1255, 12380, 5595, 5943, 5504, 7347, 7349, 7461, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 4827, 1071, 21, 1112, 4913, 575, 5488, 11659, 5474, 1255, 12376, 5595, 5943, 5504, 7347, 7349, 7461, 5511, 2]
 
-// Module 12379 (GuildDisableCommunication)
+// Module 12375 (GuildDisableCommunication)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
@@ -15,7 +15,7 @@ import components_Button_Button from "components/Button/Button" /* 5511 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 7347 */;
 import TableRadioRow2 from "TableRadioRow" /* 7349 */;
 import TextArea2 from "TextArea" /* 7461 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11654 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11659 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

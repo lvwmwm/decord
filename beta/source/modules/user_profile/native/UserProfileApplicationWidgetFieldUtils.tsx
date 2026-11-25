@@ -1,16 +1,16 @@
-// Module ID: 10321
-// Function ID: 10322
+// Module ID: 10326
+// Function ID: 10327
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 4913, 575, 5519, 1378, 5504, 1112, 10322, 10323, 5600, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5519, 1378, 5504, 1112, 10327, 10328, 5600, 2]
 // Exports: FieldText, formatDurationNarrow, useEmojiOverflowStyle
 
-// Module 10321 (UserProfileApplicationWidgetFieldUtils)
+// Module 10326 (UserProfileApplicationWidgetFieldUtils)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import useFontScale from "useFontScale" /* 5519 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 10323 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 10328 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -111,7 +111,7 @@ export function FieldText(arg0) {
     let tmp11Result;
     if ("skeleton" === field.status) {
       const obj3 = { variant, widthChars: skeletonWidthChars };
-      tmp11Result = hasOwnProperty(tmp2(10322).TextSkeleton, obj3);
+      tmp11Result = hasOwnProperty(tmp2(10327).TextSkeleton, obj3);
     } else {
       const obj4 = { style: tmp.fieldTextRow, children: items };
       const obj5 = { variant, color, lineClamp: 2, style: text, children: tmp2Result.parseApplicationWidgetText(field.text, obj6) };

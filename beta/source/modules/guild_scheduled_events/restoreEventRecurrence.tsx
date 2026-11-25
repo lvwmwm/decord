@@ -1,10 +1,10 @@
-// Module ID: 14681
-// Function ID: 14682
+// Module ID: 14691
+// Function ID: 14692
 // Name: restoreEventRecurrence
 // Dependencies: [7573, 2]
 // Exports: default
 
-// Module 14681 (restoreEventRecurrence)
+// Module 14691 (restoreEventRecurrence)
 import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 7573 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 13190
-// Function ID: 13191
+// Module ID: 13193
+// Function ID: 13194
 // Name: CreateGuild
-// Dependencies: [19, 17, 1386, 1071, 21, 4913, 575, 5143, 5923, 5929, 5504, 1112, 12218, 7221, 7556, 5511, 7251, 2]
+// Dependencies: [19, 17, 1386, 1071, 21, 4913, 575, 5143, 5923, 5929, 5504, 1112, 12214, 7221, 7556, 5511, 7251, 2]
 // Exports: default
 
-// Module 13190 (CreateGuild)
+// Module 13193 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -91,7 +91,7 @@ export default function CreateGuild(arg0) {
   }
   items1[1] = closure_7(Text2, obj4);
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
-  items1[2] = closure_7(ref(12218), obj5);
+  items1[2] = closure_7(ref(12214), obj5);
   const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1112).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
   const TextInput = tmp4(7221).TextInput;
   intl3 = tmp4(1112).intl;

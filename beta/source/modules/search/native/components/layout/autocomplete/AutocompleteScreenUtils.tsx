@@ -1,10 +1,10 @@
-// Module ID: 18835
-// Function ID: 18836
+// Module ID: 18846
+// Function ID: 18847
 // Name: AutocompleteScreenUtils
-// Dependencies: [4825, 4855, 1386, 13211, 8576, 1071, 1112, 10077, 5609, 14724, 11623, 10109, 11126, 7688, 13417, 11128, 12361, 12179, 18836, 13204, 4969, 2]
+// Dependencies: [4825, 4855, 1386, 13214, 8576, 1071, 1112, 10077, 5609, 14734, 11628, 10109, 11131, 7688, 13420, 11133, 12357, 12175, 18847, 13207, 4969, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 18835 (AutocompleteScreenUtils)
+// Module 18846 (AutocompleteScreenUtils)
 import Constants from "Constants" /* 1071 */;
 import intl10 from "intl" /* 1112 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
@@ -13,19 +13,19 @@ import ImageIcon from "ImageIcon" /* 7688 */;
 import SearchConstants from "SearchConstants" /* 8576 */;
 import ForwardingIconDefault from "ForwardingIcon" /* 10077 */;
 import AttachmentIcon from "AttachmentIcon" /* 10109 */;
-import VideoIcon from "VideoIcon" /* 11126 */;
-import StickerIcon from "StickerIcon" /* 11128 */;
-import PollsIcon from "PollsIcon" /* 11623 */;
-import RobotIcon from "RobotIcon" /* 12179 */;
-import UserIcon from "UserIcon" /* 12361 */;
-import SearchUtils from "SearchUtils" /* 13204 */;
-import SoundboardIcon from "SoundboardIcon" /* 13417 */;
-import EmbedIcon from "EmbedIcon" /* 14724 */;
-import WebhookIcon from "WebhookIcon" /* 18836 */;
+import VideoIcon from "VideoIcon" /* 11131 */;
+import StickerIcon from "StickerIcon" /* 11133 */;
+import PollsIcon from "PollsIcon" /* 11628 */;
+import RobotIcon from "RobotIcon" /* 12175 */;
+import UserIcon from "UserIcon" /* 12357 */;
+import SearchUtils from "SearchUtils" /* 13207 */;
+import SoundboardIcon from "SoundboardIcon" /* 13420 */;
+import EmbedIcon from "EmbedIcon" /* 14734 */;
+import WebhookIcon from "WebhookIcon" /* 18847 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
-import SearchQueryStore from "SearchQueryStore" /* 13211 */;
+import SearchQueryStore from "SearchQueryStore" /* 13214 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,10 +1,10 @@
-// Module ID: 13024
-// Function ID: 13025
+// Module ID: 13027
+// Function ID: 13028
 // Name: CommandDetailsOverflowMenu
-// Dependencies: [19, 21, 4738, 1112, 7545, 5594, 10378, 8658, 7591, 7023, 2]
+// Dependencies: [19, 21, 4738, 1112, 7545, 5594, 10383, 8658, 7591, 7023, 2]
 // Exports: default
 
-// Module 13024 (CommandDetailsOverflowMenu)
+// Module 13027 (CommandDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7023 */;
@@ -29,7 +29,7 @@ export default function CommandDetailsOverflowMenu(commandId) {
               const obj2 = ToastUtils;
               obj2.presentIdCopied();
             },
-        IconComponent: commandId(10378).IdIcon
+        IconComponent: commandId(10383).IdIcon
       };
       intl = tmp(1112).intl;
       const items = [obj];

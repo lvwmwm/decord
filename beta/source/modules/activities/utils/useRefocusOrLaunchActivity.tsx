@@ -1,10 +1,10 @@
-// Module ID: 10621
-// Function ID: 10622
+// Module ID: 10626
+// Function ID: 10627
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 6623, 4761, 6624, 6659, 504, 10622, 10635, 12199, 2]
+// Dependencies: [5, 19, 6623, 4761, 6624, 6659, 504, 10627, 10640, 12195, 2]
 // Exports: default
 
-// Module 10621 (useRefocusOrLaunchActivity)
+// Module 10626 (useRefocusOrLaunchActivity)
 import FramesConstants from "FramesConstants" /* 6624 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

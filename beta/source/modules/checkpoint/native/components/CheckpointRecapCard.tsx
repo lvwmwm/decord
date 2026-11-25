@@ -1,22 +1,25 @@
-// Module ID: 12780
-// Function ID: 12781
+// Module ID: 12783
+// Function ID: 12784
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 12506, 5993, 6335, 12518, 12522, 2]
+// Dependencies: [19, 17, 21, 575, 10116, 10119, 12510, 5993, 6335, 1653, 12521, 12525, 2]
 // Exports: default
 
-// Module 12780 (CheckpointRecapCard)
+// Module 12783 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6335 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12506 */;
+import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 10116 */;
+import useCheckpointCompositeRevealStyleDefault from "useCheckpointCompositeRevealStyle" /* 10119 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12510 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CheckpointCardFrameDefault = tmp(12518);
-const CheckpointShareCardYearDefault = tmp(12522);
-const View = react_native.View;
+const _modDef1653 = tmp(1653);
+const CheckpointCardFrameDefault = tmp(12521);
+const CheckpointShareCardYearDefault = tmp(12525);
+let View = react_native.View;
 const jsx = Fragment.jsx;
 const rect = { size: 240, top: nativeDefault.space.PX_16, left: -20 };
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointRecapCard.tsx");
@@ -24,7 +27,7 @@ const result = size.fileFinishedImporting("modules/checkpoint/native/components/
 export default function CheckpointRecapCard(character) {
   let maxHeight;
   let maxScale;
-  let obj7;
+  let obj8;
   character = character.character;
   ({ maxHeight, maxScale } = character);
   if (maxScale === undefined) {
@@ -34,9 +37,11 @@ export default function CheckpointRecapCard(character) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = react;
   const tmp = importDefault;
+  const tmp3 = useCheckpointCharacterImagesDefault(character, 240);
+  let obj = react;
   let bound = maxScale;
+  const tmp4 = useCheckpointCompositeRevealStyleDefault(tmp3);
   const context = react.useContext(CheckpointStepHeaderRefContextDefault);
   if (null != maxHeight) {
     const _Math = Math;
@@ -56,23 +61,24 @@ export default function CheckpointRecapCard(character) {
     }
     return checkpointCharacterAccessibilityLabel;
   }, items);
-  ({ path: character(12522).YEAR_PATH, x: 200 - character(12522).YEAR_WIDTH, color: primaryBackgroundColor });
+  View = _modDef1653.View;
+  ({ path: character(12525).YEAR_PATH, x: 200 - character(12525).YEAR_WIDTH, color: primaryBackgroundColor });
   CheckpointCardFrameDefault;
   CheckpointShareCardYearDefault;
-  const tmp11 = <tmpResult character={character} cardColorPalette={characterCardColorPalette} canvasWidth={200} canvasHeight={268} scale={bound} clydeSize={28} characterLayout={rect}>{null}</tmpResult>;
-  const tmp12 = View;
-  const tmp8 = jsx;
+  const tmp13 = <View style={tmp4}>{null}</View>;
+  const tmp10 = jsx;
+  const tmp14 = View;
   if (null == memo) {
-    obj7 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp11 };
-    const obj6 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp11 };
+    obj8 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp13 };
+    const obj7 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp13 };
   } else {
-    let tmp13;
+    let tmp15;
     if (flag) {
-      tmp13 = context;
+      tmp15 = context;
     }
-    obj7 = { ref: tmp13, accessible: true, accessibilityRole: "image", accessibilityLabel: memo, children: tmp11 };
+    obj8 = { ref: tmp15, accessible: true, accessibilityRole: "image", accessibilityLabel: memo, children: tmp13 };
   }
-  return tmp8(tmp12, obj7);
+  return tmp10(tmp14, obj8);
 };
 export const CARD_WIDTH = 200;
 export const CARD_HEIGHT = 268;

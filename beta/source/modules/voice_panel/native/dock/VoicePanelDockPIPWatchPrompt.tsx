@@ -1,10 +1,10 @@
-// Module ID: 19315
-// Function ID: 19316
+// Module ID: 19326
+// Function ID: 19327
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6400, 1386, 1071, 21, 4913, 575, 11749, 7520, 7539, 6456, 1255, 19316, 504, 5943, 4974, 1653, 5123, 1706, 7324, 7061, 1112, 5504, 3376, 5511, 7591, 7151, 2]
+// Dependencies: [19, 17, 6400, 1386, 1071, 21, 4913, 575, 11754, 7520, 7539, 6456, 1255, 19327, 504, 5943, 4974, 1653, 5123, 1706, 7324, 7061, 1112, 5504, 3376, 5511, 7591, 7151, 2]
 // Exports: useVoicePanelDockWatchPromptActions
 
-// Module 19315 (VoicePanelDockPIPWatchPrompt)
+// Module 19326 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,7 +13,7 @@ import native from "native" /* 4974 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -60,7 +60,7 @@ function WatchPrompt(ownerId) {
   let tmp = closure_10();
   const tmp2 = cleanUp;
   let tmp3 = dependencyMap;
-  const context = sharedValue.useContext(cleanUp(11749));
+  const context = sharedValue.useContext(cleanUp(11754));
   const tmp5 = ownerId;
   ({ channelId, guildId } = context);
   let obj = ownerId(504);
@@ -69,7 +69,7 @@ function WatchPrompt(ownerId) {
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(ownerId), items1);
   let obj2 = cleanUp(5943);
   const name = obj2.useName(guildId, channelId, stateFromStores);
-  const context1 = sharedValue.useContext(cleanUp(11749));
+  const context1 = sharedValue.useContext(cleanUp(11754));
   const channelId2 = context1.channelId;
   const guildId2 = context1.guildId;
   const tmp9 = cleanUp(7520);

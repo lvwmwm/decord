@@ -1,16 +1,16 @@
-// Module ID: 17396
-// Function ID: 17397
+// Module ID: 17406
+// Function ID: 17407
 // Name: ParentalControlsGoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [8335, 8712, 16116, 8448, 16120, 16126, 1112, 1195, 11937, 2]
+// Dependencies: [8335, 8712, 16126, 8448, 16130, 16136, 1112, 1195, 11942, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 17396 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
+// Module 17406 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
 import intl3 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16116 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16120 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16126 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16130 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8335 */;
-import SettingBuilders from "SettingBuilders" /* 11937 */;
+import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -35,7 +35,7 @@ function onGoreContentNonFriendsDmOnPress() {
   let items;
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(16120);
+    let obj = selectedTeenId(16130);
     const goreContentNonFriendDm = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
     let obj2 = {
       title: intl.string(selectedTeenId(1112).t["16/3Bi"]),
@@ -48,8 +48,8 @@ function onGoreContentNonFriendsDmOnPress() {
       currentValue: goreContentNonFriendDm,
       excluded: items
     };
-    const handleSensitiveMediaFilterPress = selectedTeenId(16126).handleSensitiveMediaFilterPress;
-    selectedTeenId(16126);
+    const handleSensitiveMediaFilterPress = selectedTeenId(16136).handleSensitiveMediaFilterPress;
+    selectedTeenId(16136);
     intl = selectedTeenId(1112).intl;
     intl2 = selectedTeenId(1112).intl;
     items = [selectedTeenId(1195).ExplicitContentRedaction.SHOW];

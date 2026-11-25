@@ -1,10 +1,10 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 15791
+// Function ID: 15792
 // Name: MediaPlayerManager
-// Dependencies: [17, 4761, 6495, 4762, 5964, 4845, 2118, 1071, 5539, 15782, 1082, 3, 560, 1262, 2121, 5090, 572, 1378, 558, 8250, 6652, 2]
+// Dependencies: [17, 4761, 6495, 4762, 5964, 4845, 2118, 1071, 5539, 15792, 1082, 3, 560, 1262, 2121, 5090, 572, 1378, 558, 8250, 6652, 2]
 // Exports: isPlaybackComplete
 
-// Module 15781 (MediaPlayerManager)
+// Module 15791 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import MessageStore from "MessageStore" /* 5964 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15782 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15792 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
   let obj = {
     activeMediaPlayerSource: "HermesInternal",
     mediaSourceMessage: "Promise",
-    canAccessMedia: "disabled",
+    canAccessMedia: "sa",
     isPlaying: false,
     wasPipClosedByUser: null,
     progress: null,
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "disabled", rate: false, isPlaying: false, wasPipClosedByUser: "CONJURE_DEBUG_STATUS_REQUESTED" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "sa", rate: false, isPlaying: false, wasPipClosedByUser: "CONJURE_PARTICIPATING_PROJECTS_MARK" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

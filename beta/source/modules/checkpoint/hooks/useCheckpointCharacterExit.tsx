@@ -1,14 +1,14 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12542
+// Function ID: 12543
 // Name: useCheckpointCharacterExit
-// Dependencies: [32, 19, 4914, 12515, 504, 7392, 2]
+// Dependencies: [32, 19, 4914, 10118, 504, 7392, 2]
 // Exports: default
 
-// Module 12539 (useCheckpointCharacterExit)
+// Module 12542 (useCheckpointCharacterExit)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12515 */;
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 10118 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

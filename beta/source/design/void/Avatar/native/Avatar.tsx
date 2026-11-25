@@ -1,17 +1,17 @@
-// Module ID: 15406
-// Function ID: 15407
+// Module ID: 15416
+// Function ID: 15417
 // Name: Avatar
-// Dependencies: [19, 17, 1071, 1187, 21, 4913, 575, 14487, 15395, 15396, 9023, 8905, 15407, 9022, 15397, 5513, 10768, 10769, 2]
+// Dependencies: [19, 17, 1071, 1187, 21, 4913, 575, 14497, 15405, 15406, 9023, 8905, 15417, 9022, 15407, 5513, 10773, 10774, 2]
 
-// Module 15406 (Avatar)
+// Module 15416 (Avatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8905 */;
 import ClipView from "ClipView" /* 9023 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14487 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15395 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15396 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14497 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15405 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15406 */;
 import react from "react" /* 19 */;
 import StatusConstants from "StatusConstants" /* 1187 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,14 +1,14 @@
-// Module ID: 12823
-// Function ID: 12824
+// Module ID: 12826
+// Function ID: 12827
 // Name: VoiceMessagesUIStore
-// Dependencies: [12824, 560, 1653, 1262, 5514, 5515, 2]
+// Dependencies: [12827, 560, 1653, 1262, 5514, 5515, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 12823 (VoiceMessagesUIStore)
+// Module 12826 (VoiceMessagesUIStore)
 import react_native from "react-native" /* 1262 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import spring_spring from "spring/spring" /* 5514 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12824 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12827 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c3;
 let obj = module_560.create(() => {
   let items;
   let obj2;
-  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "Path", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "Promise", showVoiceMessagesTooltip: "auto", savedVoiceMessageUploadData: "80%", isVoiceMessageButtonMounted: "hidden", isUsingHoldGesture: "auto" };
+  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "Path", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "Promise", showVoiceMessagesTooltip: "body-sm/medium", savedVoiceMessageUploadData: "header", isVoiceMessageButtonMounted: null, isUsingHoldGesture: "none" };
   items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = React2);
   obj2 = _mod1653;
@@ -110,7 +110,7 @@ export function resetVoiceMessageState() {
   let state;
   obj = react_native;
   obj.batchUpdates(() => {
-    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "HermesInternal", savedVoiceMessageUploadData: "add" });
+    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "HermesInternal", savedVoiceMessageUploadData: "analyticsLocations" });
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {

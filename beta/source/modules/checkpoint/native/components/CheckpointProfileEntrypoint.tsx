@@ -1,83 +1,24 @@
-// Module ID: 14603
-// Function ID: 14604
+// Module ID: 14613
+// Function ID: 14614
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [5, 17, 12128, 21, 12497, 5127, 14604, 2119, 6340, 504, 7045, 1112, 3440, 10116, 2]
+// Dependencies: [17, 12495, 21, 5127, 14614, 2119, 6340, 504, 7045, 1112, 3440, 10121, 12500, 2]
 // Exports: default
 
-// Module 14603 (CheckpointProfileEntrypoint)
+// Module 14613 (CheckpointProfileEntrypoint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import CheckpointExperiments from "CheckpointExperiments" /* 6340 */;
-import openCheckpoint from "openCheckpoint" /* 12497 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CheckpointStore from "CheckpointStore" /* 12128 */;
+import openCheckpoint from "openCheckpoint" /* 12500 */;
+import CheckpointStore from "CheckpointStore" /* 12495 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3;
-
-let obj = function _handlePress() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let obj3;
-    let closure_0 = arg0;
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === c2) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_1 = tmp3;
-            c2 = 1;
-            c3 = 1;
-            const obj5 = { value: obj3.openCheckpoint(closure_0), done: false };
-            obj3 = openCheckpoint;
-            return obj5;
-          }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
-        } else {
-          obj = closure_129_1(closure_129_2[5]);
-          obj.hideAllActionSheets();
-          c3 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp11) {
-        c3 = 3;
-        throw tmp11;
-      }
-    }
-  });
-  return obj(...arguments);
-};
 function CheckpointProfileEntrypointRow(source) {
   let isFetching;
   let tmp5Result;
   source = source.source;
-  obj = source(6340);
+  let obj = source(6340);
   const checkpointQAMode = obj.useCheckpointQAMode("CheckpointProfileEntrypoint");
   let obj2 = source(504);
   const items = [CheckpointStore];
@@ -88,23 +29,21 @@ function CheckpointProfileEntrypointRow(source) {
   if (stateFromStores) {
     tmp5Result = tmp5(ActivityIndicator, {});
   } else {
-    const obj4 = { IconComponent: source(10116).ExperimentalCheckpointIcon };
+    const obj4 = { IconComponent: source(10121).ExperimentalCheckpointIcon };
     const Icon = tmp(7045).TableRow.Icon;
     tmp5Result = tmp5(Icon, obj4);
   }
   let fn;
   if ("off" !== checkpointQAMode) {
     fn = () => {
-      obj = ActionSheetActionCreatorsDefault;
+      const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { mode: checkpointQAMode };
-      obj.openLazy(asyncRequire(14604, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
+      obj.openLazy(asyncRequire(14614, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
     };
   }
   return <TableRow label={intl.string(checkpointQAMode(3440)["8hclXY"])} subLabel={intl2.string(checkpointQAMode(3440).BFc4lY)} icon={tmp5Result} onPress={function onPress() {
-    function handlePress() {
-      return closure_1_7(...arguments);
-    }
-    return handlePress(source);
+    const obj = openCheckpoint;
+    return obj.openCheckpoint(source);
   }} onLongPress={fn} arrow start end />;
 }
 const ActivityIndicator = react_native.ActivityIndicator;
@@ -114,7 +53,7 @@ const result = size.fileFinishedImporting("modules/checkpoint/native/components/
 export default function CheckpointProfileEntrypoint(source) {
   source = source.source;
   let tmp = null;
-  obj = CheckpointExperiments;
+  const obj = CheckpointExperiments;
   if (obj.useIsCheckpointEnabled("CheckpointProfileEntrypoint")) {
     tmp = <CheckpointProfileEntrypointRow source={source} />;
   }

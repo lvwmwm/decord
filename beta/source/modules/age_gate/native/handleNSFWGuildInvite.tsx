@@ -1,18 +1,18 @@
-// Module ID: 10521
-// Function ID: 10522
+// Module ID: 10526
+// Function ID: 10527
 // Name: handleNSFWGuildInvite
-// Dependencies: [4780, 4784, 1071, 6422, 1378, 10522, 5575, 6423, 10524, 2]
+// Dependencies: [4780, 4784, 1071, 6422, 1378, 10527, 5575, 6423, 10529, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 10521 (handleNSFWGuildInvite)
+// Module 10526 (handleNSFWGuildInvite)
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import GuildRecord from "GuildRecord" /* 4780 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
 import AgeNoticeConstants from "AgeNoticeConstants" /* 6422 */;
 import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6423 */;
-import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10522 */;
-import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10524 */;
+import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10527 */;
+import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10529 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 

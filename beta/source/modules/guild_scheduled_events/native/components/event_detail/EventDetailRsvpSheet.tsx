@@ -1,10 +1,10 @@
-// Module ID: 14686
-// Function ID: 14687
+// Module ID: 14696
+// Function ID: 14697
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 5651, 1386, 1082, 21, 4913, 575, 6407, 8035, 14687, 5504, 1112, 7709, 5600, 7520, 504, 1186, 10386, 4969, 8067, 14688, 5145, 7020, 7490, 2]
+// Dependencies: [19, 17, 5651, 1386, 1082, 21, 4913, 575, 6407, 8035, 14697, 5504, 1112, 7709, 5600, 7520, 504, 1186, 10391, 4969, 8067, 14698, 5145, 7020, 7490, 2]
 // Exports: default
 
-// Module 14686 (EventDetailRsvpSheet)
+// Module 14696 (EventDetailRsvpSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -15,8 +15,8 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import _mod7709 from "module_7709" /* 7709 */;
 import StageSparkleDefault from "StageSparkle" /* 8035 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14687 */;
-import EventDetailTypes from "EventDetailTypes" /* 14688 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14697 */;
+import EventDetailTypes from "EventDetailTypes" /* 14698 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -150,7 +150,7 @@ const memoResult = react.memo(function UserRow(eventUser) {
   const member = eventUser.member;
   obj6 = { user: stateFromStores, nick, usernameStyle: null, nicknameStyle: null };
   nick = undefined;
-  tmp2Result = analyticsLocations(10386);
+  tmp2Result = analyticsLocations(10391);
   if (member != null) {
     nick = member.nick;
   }

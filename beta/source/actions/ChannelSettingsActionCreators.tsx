@@ -1,15 +1,15 @@
-// Module ID: 11251
-// Function ID: 11252
+// Module ID: 11256
+// Function ID: 11257
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 11252, 4762, 1071, 572, 5090, 8459, 1284, 7730, 2]
+// Dependencies: [5, 11257, 4762, 1071, 572, 5090, 8459, 1284, 7730, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 11251 (ChannelSettingsActionCreators)
+// Module 11256 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import RootNavigationRef from "RootNavigationRef" /* 5090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 11252 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 11257 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

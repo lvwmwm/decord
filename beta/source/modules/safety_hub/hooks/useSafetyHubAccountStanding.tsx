@@ -1,10 +1,10 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12423
+// Function ID: 12424
 // Name: useSafetyHubAccountStanding
 // Dependencies: [7835, 504, 2]
 // Exports: useSafetyHubAccountStanding
 
-// Module 12427 (useSafetyHubAccountStanding)
+// Module 12423 (useSafetyHubAccountStanding)
 import get_initialized from "get initialized" /* 504 */;
 import SafetyHubStore from "SafetyHubStore" /* 7835 */;
 import size from "module_2" /* 2 */;

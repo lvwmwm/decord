@@ -1,19 +1,19 @@
-// Module ID: 18843
-// Function ID: 18844
+// Module ID: 18854
+// Function ID: 18855
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1386, 10531, 1071, 21, 4913, 1378, 18844, 1653, 5514, 5637, 11139, 7030, 5504, 1112, 5468, 504, 4969, 5948, 2]
+// Dependencies: [32, 19, 17, 1386, 10536, 1071, 21, 4913, 1378, 18855, 1653, 5514, 5637, 11144, 7030, 5504, 1112, 5468, 504, 4969, 5948, 2]
 
-// Module 18843 (ChannelDetailsTopic)
+// Module 18854 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1071 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
 import ChannelUtils from "ChannelUtils" /* 5948 */;
-import MentionPillOffset from "MentionPillOffset" /* 11139 */;
+import MentionPillOffset from "MentionPillOffset" /* 11144 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10531 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10536 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;

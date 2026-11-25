@@ -1,14 +1,14 @@
-// Module ID: 15221
-// Function ID: 15222
+// Module ID: 15231
+// Function ID: 15232
 // Name: AIGlyphText
-// Dependencies: [19, 17, 21, 1653, 4913, 15222, 5477, 2]
+// Dependencies: [19, 17, 21, 1653, 4913, 15232, 5477, 2]
 // Exports: AIGlyphText
 
-// Module 15221 (AIGlyphText)
+// Module 15231 (AIGlyphText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useToken2 from "useToken" /* 5477 */;
-import AIGlyphFont from "AIGlyphFont" /* 15222 */;
+import AIGlyphFont from "AIGlyphFont" /* 15232 */;
 import react from "react" /* 19 */;
 import module_1653 from "module_1653" /* 1653 */;
 import createStyles from "createStyles" /* 4913 */;

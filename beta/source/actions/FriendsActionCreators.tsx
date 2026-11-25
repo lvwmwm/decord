@@ -1,16 +1,16 @@
-// Module ID: 19645
-// Function ID: 19646
+// Module ID: 19656
+// Function ID: 19657
 // Name: FriendsActionCreators
-// Dependencies: [1071, 572, 1098, 18862, 2]
+// Dependencies: [1071, 572, 1098, 18873, 2]
 
-// Module 19645 (FriendsActionCreators)
+// Module 19656 (FriendsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const trackFriendListClickedDefault = tmp5(18862);
+const trackFriendListClickedDefault = tmp5(18873);
 const Routes = Constants.Routes;
 let obj = {
   transitionToSection(PENDING, arg1) {

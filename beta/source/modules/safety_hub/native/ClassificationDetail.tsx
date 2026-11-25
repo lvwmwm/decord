@@ -1,10 +1,10 @@
-// Module ID: 12424
-// Function ID: 12425
+// Module ID: 12420
+// Function ID: 12421
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2188, 7835, 7809, 1071, 21, 4913, 575, 5504, 7810, 1112, 504, 3540, 8042, 5592, 10133, 7045, 5511, 12425, 12427, 12428, 6414, 1255, 12429, 6365, 6370, 12441, 7017, 12446, 7808, 2]
+// Dependencies: [19, 17, 2188, 7835, 7809, 1071, 21, 4913, 575, 5504, 7810, 1112, 504, 3540, 8042, 5592, 10138, 7045, 5511, 12421, 12423, 12424, 6414, 1255, 12425, 6365, 6370, 12437, 7017, 12442, 7808, 2]
 // Exports: default
 
-// Module 12424 (ClassificationDetail)
+// Module 12420 (ClassificationDetail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -18,8 +18,8 @@ import MetricEvents from "MetricEvents" /* 6370 */;
 import TableRow2 from "TableRow" /* 7045 */;
 import SafetyHubModels from "SafetyHubModels" /* 7810 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8042 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12429 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12441 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12425 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12437 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
@@ -287,7 +287,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
   const obj3 = { style: tmp.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj4) };
   obj4 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
   tmp2 = TouchableHitBoxDefault;
-  ShieldIcon = policyExplainerLink(10133).ShieldIcon;
+  ShieldIcon = policyExplainerLink(10138).ShieldIcon;
   items = [closure_13(closure_4, obj3), ];
   const obj5 = { style: tmp.classificationPolicyCardContent, children: closure_13(Text, obj6) };
   obj6 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1112).t.zxUdpj, { classificationDescription: classificationTypeText }) };

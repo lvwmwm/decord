@@ -1,9 +1,9 @@
-// Module ID: 19459
-// Function ID: 19460
+// Module ID: 19470
+// Function ID: 19471
 // Name: ChannelResyncManager
 // Dependencies: [5, 502, 4762, 6551, 4784, 6394, 1071, 4769, 3, 1088, 7484, 1255, 572, 8354, 1404, 2]
 
-// Module 19459 (ChannelResyncManager)
+// Module 19470 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;

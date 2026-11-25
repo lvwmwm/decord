@@ -1,14 +1,14 @@
-// Module ID: 11849
-// Function ID: 11850
+// Module ID: 11854
+// Function ID: 11855
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [6552, 6553, 1081, 7485, 11155, 7480, 2]
+// Dependencies: [6552, 6553, 1081, 7485, 11160, 7480, 2]
 // Exports: updateChannelUnreadSetting
 
-// Module 11849 (notficationSettingsChannelFlagUtils)
+// Module 11854 (notficationSettingsChannelFlagUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import ReadStateConstants from "ReadStateConstants" /* 6553 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7485 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11155 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11160 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import size from "module_2" /* 2 */;
 

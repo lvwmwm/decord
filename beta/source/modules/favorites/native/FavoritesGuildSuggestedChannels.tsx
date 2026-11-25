@@ -1,10 +1,10 @@
-// Module ID: 17715
-// Function ID: 17716
+// Module ID: 17725
+// Function ID: 17726
 // Name: FavoritesGuildSuggestedChannels
-// Dependencies: [19, 17, 17716, 1071, 5642, 21, 575, 4913, 17626, 1112, 3802, 7151, 7426, 17717, 17718, 5511, 10061, 2]
+// Dependencies: [19, 17, 17726, 1071, 5642, 21, 575, 4913, 17636, 1112, 3802, 7151, 7426, 17727, 17728, 5511, 10061, 2]
 // Exports: default, getFavoritesSuggestionsNoticeHeight
 
-// Module 17715 (FavoritesGuildSuggestedChannels)
+// Module 17725 (FavoritesGuildSuggestedChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,10 +13,10 @@ import components_Button_Button from "components/Button/Button" /* 5511 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
 import XSmallIcon from "XSmallIcon" /* 7151 */;
 import useScaledRowHeightDefault from "useScaledRowHeight" /* 7426 */;
-import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 17717 */;
-import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 17718 */;
+import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 17727 */;
+import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 17728 */;
 import react_mod from "react" /* 19 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17716 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17726 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -50,7 +50,7 @@ export default function FavoritesGuildSuggestedChannels() {
   let perform;
   let style;
   let tmp = closure_13();
-  let obj = arr(17626);
+  let obj = arr(17636);
   const categoryStyles = obj.useCategoryStyles();
   arr = closure_5();
   const tmp5 = closure_6();
@@ -70,8 +70,8 @@ export default function FavoritesGuildSuggestedChannels() {
   if (0 !== arr.length) {
     let obj2 = { style: tmp.container, children: items2 };
     let obj3 = { name: intl.string(_modDef3802.oHWnLy), withMarginTop: false, styles: categoryStyles, trailingAction: memo };
-    const renderCategoryItem = arr(17626).renderCategoryItem;
-    arr(17626);
+    const renderCategoryItem = arr(17636).renderCategoryItem;
+    arr(17636);
     intl = tmp2(1112).intl;
     items2 = [renderCategoryItem(obj3), ];
     const obj4 = {

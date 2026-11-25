@@ -1,10 +1,10 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18085
+// Function ID: 18086
 // Name: ForYouSuggestedFriendRow
-// Dependencies: [19, 17, 4914, 4855, 1071, 21, 4913, 11130, 575, 1378, 7520, 5519, 563, 8067, 2119, 4969, 17562, 1112, 1653, 18075, 7030, 18076, 1186, 5504, 18077, 18078, 1255, 2]
+// Dependencies: [19, 17, 4914, 4855, 1071, 21, 4913, 11135, 575, 1378, 7520, 5519, 563, 8067, 2119, 4969, 17572, 1112, 1653, 18086, 7030, 18087, 1186, 5504, 18088, 18089, 1255, 2]
 // Exports: default
 
-// Module 18074 (ForYouSuggestedFriendRow)
+// Module 18085 (ForYouSuggestedFriendRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -12,7 +12,7 @@ import PlatformUtils from "PlatformUtils" /* 1378 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
-import ChannelListLayout from "ChannelListLayout" /* 11130 */;
+import ChannelListLayout from "ChannelListLayout" /* 11135 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -72,11 +72,11 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
   let sharedValue;
   let stateFromStores;
   let tmp = suggestedFriend;
-  let obj = suggestedFriend(11130);
+  let obj = suggestedFriend(11135);
   const messagesTabLayout = obj.useMessagesTabLayout(panelVariant);
   const tmp4 = closure_12(messagesTabLayout);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  let obj2 = suggestedFriend(11130);
+  let obj2 = suggestedFriend(11135);
   const layoutStyles = obj2.getLayoutStyles(messagesTabLayout);
   const obj3 = suggestedFriend(5519);
   const fontScale = obj3.useFontScale();
@@ -90,7 +90,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
     if (suggestedFriend.friendSuggestionName.length > 0) {
       friendSuggestionName = suggestedFriend.friendSuggestionName;
     }
-    const tmpResult = tmp(17562);
+    const tmpResult = tmp(17572);
     const suggestedContactNameForSuggestion = tmpResult.getSuggestedContactNameForSuggestion(friendSuggestionName, suggestedFriend);
     let str2 = "";
     if (null != suggestedContactNameForSuggestion) {
@@ -120,11 +120,11 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       items4 = [tmp4.pressable, ];
       const obj8 = { borderRadius: layoutStyles.container.borderRadius };
       items4[1] = obj8;
-      const renderChannelPressableWrapper = tmp(18075).renderChannelPressableWrapper;
+      const renderChannelPressableWrapper = tmp(18086).renderChannelPressableWrapper;
       const PressableHighlight = tmp(7030).PressableHighlight;
       const obj9 = { style: tmp4.avatar, children: closure_9(tmp(1186).Avatar, obj10) };
       obj10 = { user: suggestedFriend.user, guildId: "r", size: layoutStyles.icon.avatarSize, animate: !stateFromStoresObject };
-      renderChannelWrapper = tmp(18076).renderChannelWrapper;
+      renderChannelWrapper = tmp(18087).renderChannelWrapper;
       const items5 = [closure_9(sharedValue, obj9), , ];
       const obj11 = { style: tmp4.textContainer, children: items6 };
       const obj12 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-default", style: tmp4.nameText, children: friendSuggestionName };
@@ -137,7 +137,7 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
       }
       const obj13 = { style: obj14, children: closure_9(ActionStatusSubLabel, obj15) };
       obj14 = { marginTop: num3 };
-      ActionStatusSubLabel = tmp(18077).ActionStatusSubLabel;
+      ActionStatusSubLabel = tmp(18088).ActionStatusSubLabel;
       const height = layoutStyles.messagePreview.height;
       let num4 = 0;
       const tmpResult13 = tmp(1378);
@@ -164,9 +164,9 @@ export default function ForYouSuggestedFriendRow(suggestedFriend) {
             },
         animate: !stateFromStoresObject
       };
-      const ContactSuggestionActions = tmp(18078).ContactSuggestionActions;
+      const ContactSuggestionActions = tmp(18089).ContactSuggestionActions;
       str4 = "sm";
-      const tmpResult14 = tmp(11130);
+      const tmpResult14 = tmp(11135);
       if (tmpResult14.isLayoutCozy(messagesTabLayout)) {
         str4 = "md";
       }

@@ -1,16 +1,16 @@
-// Module ID: 11927
-// Function ID: 11928
+// Module ID: 11932
+// Function ID: 11933
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [32, 19, 17, 6674, 21, 4913, 575, 504, 11914, 6864, 11918, 8087, 2112, 8913, 9419, 7017, 6847, 9035, 7526, 9009, 6382, 1186, 9047, 9452, 9453, 11923, 5504, 1112, 11911, 2888, 6347, 5511, 6429, 2]
+// Dependencies: [32, 19, 17, 6674, 21, 4913, 575, 504, 11919, 6864, 11923, 8087, 2112, 8913, 9419, 7017, 6847, 9035, 7526, 9009, 6382, 1186, 9047, 9452, 9453, 11928, 5504, 1112, 11916, 2888, 6347, 5511, 6429, 2]
 // Exports: default
 
-// Module 11927 (GiftCodeRedeemSuccess)
+// Module 11932 (GiftCodeRedeemSuccess)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 9047 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 9452 */;
 import NameplatePreview from "NameplatePreview" /* 9453 */;
-import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11923 */;
+import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11928 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -76,12 +76,12 @@ export default function GiftCodeRedeemSuccess(giftCode) {
   let obj = giftCode(504);
   const items = [SKUStore];
   const stateFromStores = obj.useStateFromStores(items, () => SKUStore.get(giftCode.skuId));
-  let obj2 = giftCode(11914);
+  let obj2 = giftCode(11919);
   const getOrFetchSubscriptionPlan = obj2.useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
   const obj3 = giftCode(6864);
   const getOrFetchApplication = obj3.useGetOrFetchApplication(giftCode.applicationId);
-  const useFetchCollectiblesProduct = giftCode(11918).useFetchCollectiblesProduct;
-  giftCode(11918);
+  const useFetchCollectiblesProduct = giftCode(11923).useFetchCollectiblesProduct;
+  giftCode(11923);
   let skuId = null;
   const obj4 = giftCode(8087);
   if (obj4.isCollectiblesGiftCode(giftCode)) {
@@ -222,7 +222,7 @@ export default function GiftCodeRedeemSuccess(giftCode) {
       obj21 = { text: intl9.string(tmp2(1112).t["NX+WJN"]), size: "md", onPress: user(6429).pop };
       intl9 = tmp2(1112).intl;
     }
-    const tmp2Result11 = tmp2(11911);
+    const tmp2Result11 = tmp2(11916);
     if (tmp2Result11.isPendingGiftSubscriptionCode(giftCode)) {
       const obj22 = { variant: "body-md/medium", style: tmp.message, children: intl7.string(user(2888).fdrOGN) };
       const Text6 = tmp2(5504).Text;

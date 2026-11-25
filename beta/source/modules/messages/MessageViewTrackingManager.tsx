@@ -1,9 +1,9 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 10414
+// Function ID: 10415
 // Name: MessageViewTrackingManager
 // Dependencies: [1071, 1263, 7539, 1254, 7484, 1454, 1255, 2]
 
-// Module 10409 (MessageViewTrackingManager)
+// Module 10414 (MessageViewTrackingManager)
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;

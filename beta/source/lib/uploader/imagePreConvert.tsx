@@ -1,10 +1,10 @@
-// Module ID: 10454
-// Function ID: 10455
+// Module ID: 10459
+// Function ID: 10460
 // Name: imagePreConvert
 // Dependencies: [32, 5, 8445, 8493, 8501, 2119, 7404, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 10454 (imagePreConvert)
+// Module 10459 (imagePreConvert)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import UploadPlatform from "UploadPlatform" /* 8445 */;
 import imageFilename from "imageFilename" /* 8493 */;

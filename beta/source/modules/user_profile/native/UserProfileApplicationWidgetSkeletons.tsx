@@ -1,10 +1,10 @@
-// Module ID: 10322
-// Function ID: 10323
+// Module ID: 10327
+// Function ID: 10328
 // Name: UserProfileApplicationWidgetSkeletons
 // Dependencies: [19, 17, 21, 4913, 575, 5504, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 10322 (UserProfileApplicationWidgetSkeletons)
+// Module 10327 (UserProfileApplicationWidgetSkeletons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

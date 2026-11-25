@@ -1,10 +1,10 @@
-// Module ID: 11225
-// Function ID: 11226
+// Module ID: 11230
+// Function ID: 11231
 // Name: PromoSheet
 // Dependencies: [109, 19, 17, 21, 4913, 575, 7812, 5141, 5929, 9090, 5504, 2]
 // Exports: PromoSheet
 
-// Module 11225 (PromoSheet)
+// Module 11230 (PromoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

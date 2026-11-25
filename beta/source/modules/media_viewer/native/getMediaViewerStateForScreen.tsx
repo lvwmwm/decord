@@ -1,10 +1,10 @@
-// Module ID: 10592
-// Function ID: 10593
+// Module ID: 10597
+// Function ID: 10598
 // Name: getMediaViewerStateForScreen
 // Dependencies: [8223, 2]
 // Exports: default
 
-// Module 10592 (getMediaViewerStateForScreen)
+// Module 10597 (getMediaViewerStateForScreen)
 import MediaSourceUtil from "MediaSourceUtil" /* 8223 */;
 import size_mod from "module_2" /* 2 */;
 

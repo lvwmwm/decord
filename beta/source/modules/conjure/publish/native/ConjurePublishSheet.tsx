@@ -1,10 +1,10 @@
-// Module ID: 18255
-// Function ID: 18256
+// Module ID: 18266
+// Function ID: 18267
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6621, 21, 4913, 575, 5127, 18254, 12305, 504, 7597, 18256, 5924, 5472, 5595, 1112, 4190, 18267, 7553, 7017, 5511, 18268, 7322, 1186, 5504, 2]
+// Dependencies: [5, 19, 17, 6621, 21, 4913, 575, 5127, 18265, 12301, 504, 7597, 18267, 5924, 5472, 5595, 1112, 4190, 18278, 7553, 7017, 5511, 18279, 7322, 1186, 5504, 2]
 // Exports: default
 
-// Module 18255 (ConjurePublishSheet)
+// Module 18266 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -12,8 +12,8 @@ import native from "native" /* 1186 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import GuildIcon from "GuildIcon" /* 7322 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12305 */;
-import showConjurePublishSheet from "showConjurePublishSheet" /* 18254 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12301 */;
+import showConjurePublishSheet from "showConjurePublishSheet" /* 18265 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;

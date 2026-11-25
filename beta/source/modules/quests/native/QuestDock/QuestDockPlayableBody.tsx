@@ -1,9 +1,9 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16611
+// Function ID: 16612
 // Name: QuestDockPlayableBody
-// Dependencies: [5, 19, 6558, 21, 16562, 16506, 16470, 16477, 9996, 7520, 9961, 9964, 6565, 8430, 6561, 16602, 12199, 9998, 16585, 9984, 16598, 1112, 7591, 10376, 2]
+// Dependencies: [5, 19, 6558, 21, 16572, 16516, 16480, 16487, 9996, 7520, 9961, 9964, 6565, 8430, 6561, 16612, 12195, 9998, 16595, 9984, 16608, 1112, 7591, 10381, 2]
 
-// Module 16601 (QuestDockPlayableBody)
+// Module 16611 (QuestDockPlayableBody)
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 6558 */;
 import QuestTypes from "QuestTypes" /* 6561 */;

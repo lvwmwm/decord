@@ -1,9 +1,9 @@
-// Module ID: 17951
-// Function ID: 17952
+// Module ID: 17962
+// Function ID: 17963
 // Name: YouAccountActionSheet
-// Dependencies: [19, 17, 13283, 1191, 1405, 8423, 4970, 1386, 1071, 1389, 13284, 21, 4913, 575, 5504, 7057, 15404, 15401, 15402, 15403, 4738, 11110, 5127, 1112, 7347, 7349, 8009, 504, 16406, 12808, 5826, 16672, 1238, 17952, 11718, 16674, 4969, 1186, 17454, 17954, 1255, 7539, 13287, 7030, 11109, 7348, 7556, 10364, 17959, 2119, 17949, 9049, 1412, 9052, 5477, 7047, 9055, 7496, 9489, 9062, 5600, 7465, 7097, 7553, 7515, 5929, 17960, 17192, 2]
+// Dependencies: [19, 17, 13286, 1191, 1405, 8423, 4970, 1386, 1071, 1389, 13287, 21, 4913, 575, 5504, 7057, 15414, 15411, 15412, 15413, 4738, 11115, 5127, 1112, 7347, 7349, 8009, 504, 16416, 12811, 5826, 16682, 1238, 17963, 11723, 16684, 4969, 1186, 17464, 17965, 1255, 7539, 13290, 7030, 11114, 7348, 7556, 10369, 17970, 2119, 17960, 9049, 1412, 9052, 5477, 7047, 9055, 7496, 9489, 9062, 5600, 7465, 7097, 7553, 7515, 5929, 17971, 17202, 2]
 
-// Module 17951 (YouAccountActionSheet)
+// Module 17962 (YouAccountActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -28,20 +28,20 @@ import getChannelA11yLabel from "getChannelA11yLabel" /* 8009 */;
 import userSettingToActivity from "userSettingToActivity" /* 9049 */;
 import CustomStatusUtils from "CustomStatusUtils" /* 9055 */;
 import removeCustomStatusDefault from "removeCustomStatus" /* 9062 */;
-import FocusModeUtils from "FocusModeUtils" /* 11109 */;
-import setUserStatusDefault from "setUserStatus" /* 11110 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 11718 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 12808 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 13283 */;
-import Constants2 from "Constants" /* 13284 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13287 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16406 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 16672 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16674 */;
-import DevToolsContentDefault from "DevToolsContent" /* 17192 */;
-import ThemeGrayIcon from "ThemeGrayIcon" /* 17952 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 17954 */;
-import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 17960 */;
+import FocusModeUtils from "FocusModeUtils" /* 11114 */;
+import setUserStatusDefault from "setUserStatus" /* 11115 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 11723 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 12811 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 13286 */;
+import Constants2 from "Constants" /* 13287 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13290 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16416 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 16682 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 16684 */;
+import DevToolsContentDefault from "DevToolsContent" /* 17202 */;
+import ThemeGrayIcon from "ThemeGrayIcon" /* 17963 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 17965 */;
+import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 17971 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UserRecord from "UserRecord" /* 1405 */;
@@ -224,7 +224,7 @@ function YouAccountRadioGroup() {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = stateFromStores(17454);
+  let obj2 = stateFromStores(17464);
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
   let obj3 = stateFromStores(504);
   const items1 = [StreamerModeStore];
@@ -314,7 +314,7 @@ function FocusModeSetting() {
     let obj2 = {
       accessibilityLabel: intl.string(tmp2(1112).t.wCxBOc),
       accessibilityHint: intl2.string(tmp2(1112).t.wCxBOc),
-      icon: closure_19(tmp2(10364).BellSlashIcon, obj3),
+      icon: closure_19(tmp2(10369).BellSlashIcon, obj3),
       onValueChange(arg0) {
           const tmp = arg0;
           if (tmp) {
