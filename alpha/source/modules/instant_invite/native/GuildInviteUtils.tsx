@@ -1,26 +1,26 @@
-// Module ID: 14686
-// Function ID: 14687
+// Module ID: 14808
+// Function ID: 14809
 // Name: GuildInviteUtils
-// Dependencies: [5, 19, 4847, 5538, 4829, 4788, 4849, 6038, 1386, 14687, 5650, 1071, 1255, 5131, 14688, 2119, 6862, 504, 4926, 1112, 7686, 10286, 10353, 2]
+// Dependencies: [5, 19, 4942, 5633, 4924, 4883, 4944, 6133, 1386, 14809, 5745, 1071, 1255, 5226, 14810, 2119, 6957, 504, 5021, 1112, 7785, 10385, 10452, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 14686 (GuildInviteUtils)
+// Module 14808 (GuildInviteUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import Constants2 from "Constants" /* 5650 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6862 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7686 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10286 */;
-import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 14687 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import Constants2 from "Constants" /* 5745 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6957 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7785 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10385 */;
+import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 14809 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4847 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5538 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import SortedGuildStore from "SortedGuildStore" /* 6038 */;
+import GuildChannelStore from "GuildChannelStore" /* 4942 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5633 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import SortedGuildStore from "SortedGuildStore" /* 6133 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ let obj = function _sendGuildInvite() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -117,7 +117,7 @@ let obj = function _sendGuildInvite() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp19) {
         if (0 === c5) {
@@ -143,7 +143,7 @@ export function showGuildInviteActionSheet(id2, newestAnalyticsLocation) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj3 = { recipientId: id2, source: newestAnalyticsLocation };
-  const tmp3 = asyncRequire(14688, dependencyMap.paths);
+  const tmp3 = asyncRequire(14810, dependencyMap.paths);
   openLazy(tmp3, "invite-to-guilds-" + id2, obj3);
 }
 export function useServerInviteRows(id, query) {

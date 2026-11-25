@@ -1,12 +1,12 @@
-// Module ID: 14700
-// Function ID: 14701
+// Module ID: 14822
+// Function ID: 14823
 // Name: useCardGridLayout
-// Dependencies: [7431, 1494, 2]
+// Dependencies: [7526, 1494, 2]
 // Exports: default
 
-// Module 14700 (useCardGridLayout)
+// Module 14822 (useCardGridLayout)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import Constants from "Constants" /* 7431 */;
+import Constants from "Constants" /* 7526 */;
 import size from "module_2" /* 2 */;
 
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;

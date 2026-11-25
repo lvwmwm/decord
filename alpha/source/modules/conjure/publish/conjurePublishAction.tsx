@@ -1,14 +1,14 @@
-// Module ID: 11336
-// Function ID: 11337
+// Module ID: 11435
+// Function ID: 11436
 // Name: conjurePublishAction
-// Dependencies: [11329, 1112, 4192, 11311, 2]
+// Dependencies: [11428, 1112, 4244, 11410, 2]
 // Exports: conjurePublishButtonState
 
-// Module 11336 (conjurePublishAction)
-import intl5 from "intl" /* 1112 */;
-import _modDef4192 from "module_4192" /* 4192 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 11311 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 11329 */;
+// Module 11435 (conjurePublishAction)
+import intl4 from "intl" /* 1112 */;
+import _modDef4244 from "module_4244" /* 4244 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 11410 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11428 */;
 import size from "module_2" /* 2 */;
 
 function resolveConjurePublishAction(input) {
@@ -16,15 +16,15 @@ function resolveConjurePublishAction(input) {
   let appChannelPending;
   let botInGuild;
   let integrationStatus;
-  let intl3;
-  let intl4;
+  let intl2;
   let preview_ready;
   let prop;
   let prop1;
   let status;
-  let tmp24;
-  let tmp25;
-  let tmp30;
+  let str4;
+  let tmp26;
+  let tmp27;
+  let tmp31;
   let usesAppChannels;
   ({ integrationStatus, status } = input);
   const installScope = input.installScope;
@@ -67,9 +67,9 @@ function resolveConjurePublishAction(input) {
   if ("guild" === input.installScope) {
     formatResult = null;
     if (false === tmp12) {
-      const intl = intl5.intl;
+      const intl = intl4.intl;
       const format = intl.format;
-      const N4NkyR = _modDef4192.N4NkyR;
+      const N4NkyR = _modDef4244.N4NkyR;
       if (str3 == null) {
         str3 = "";
       }
@@ -95,25 +95,33 @@ function resolveConjurePublishAction(input) {
   if (integrationStatus != null) {
     prop1 = integrationStatus.bot_permissions_changed;
   }
-  const result = requiresPermissionReview(obj6);
-  let str4 = "publish";
+  let result = requiresPermissionReview(obj6);
+  const obj7 = { label: intl2.string(_modDef4244["120EFN"]), intent: str4, permissionsChanged: result, isUpdate: "live_outdated" === tmp.publishState && !tmp9, upToDate: tmp26, disabledReason: formatResult, confirmReason: tmp27, missingSurface: tmp31 };
+  intl2 = tmp17(1112).intl;
+  str4 = "publish";
   if (result) {
     str4 = "consent_then_publish";
   }
-  const obj7 = { intent: str4, isUpdate: "live_outdated" === tmp.publishState && !tmp9, upToDate: tmp24, disabledReason: formatResult, confirmReason: tmp25, missingSurface: tmp30 };
-  tmp25 = null;
-  tmp24 = ("live_current" === tmp.publishState || "live_auto_synced" === tmp.publishState) && !tmp9;
+  if (result) {
+    let prop2;
+    if (integrationStatus != null) {
+      prop2 = integrationStatus.bot_permissions_changed;
+    }
+    result = true === prop2;
+  }
+  tmp27 = null;
+  tmp26 = ("live_current" === tmp.publishState || "live_auto_synced" === tmp.publishState) && !tmp9;
   if (null == formatResult) {
     let str6 = input.guildName;
     let format2Result = null;
     if ("guild" === input.installScope) {
       format2Result = null;
-      if (tmp27) {
+      if (tmp29) {
         format2Result = null;
-        if (false === tmp26) {
-          const intl2 = tmp17(1112).intl;
-          const format2 = intl2.format;
-          const eHYXFg = _modDef4192.eHYXFg;
+        if (false === tmp28) {
+          const intl3 = tmp17(1112).intl;
+          const format2 = intl3.format;
+          const eHYXFg = _modDef4244.eHYXFg;
           if (str6 == null) {
             str6 = "";
           }
@@ -122,9 +130,9 @@ function resolveConjurePublishAction(input) {
         }
       }
     }
-    tmp25 = format2Result;
+    tmp27 = format2Result;
   }
-  tmp30 = null;
+  tmp31 = null;
   if (tmp9) {
     let str9 = "bot";
     if ("activity" === tmp.surface) {
@@ -133,25 +141,9 @@ function resolveConjurePublishAction(input) {
         str9 = "channel";
       }
     }
-    tmp30 = str9;
+    tmp31 = str9;
   }
-  if (result) {
-    let obj10;
-    let prop2;
-    if (integrationStatus != null) {
-      prop2 = integrationStatus.bot_permissions_changed;
-    }
-    if (true === prop2) {
-      const obj9 = { label: intl4.string(_modDef4192["tUeY/h"]), action: "review_permissions" };
-      const merged2 = Object.assign(obj7);
-      intl4 = tmp17(1112).intl;
-      obj10 = obj9;
-    }
-    return obj10;
-  }
-  obj10 = { label: intl3.string(_modDef4192["120EFN"]), action: "publish" };
-  const merged3 = Object.assign(obj7);
-  intl3 = tmp17(1112).intl;
+  return obj7;
 }
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishAction.tsx");
 
@@ -173,16 +165,16 @@ export function conjurePublishButtonState(memo, canPublish) {
             const tmp2 = resolveConjurePublishAction(memo);
             if (tmp2.upToDate) {
               str2 = "action_needed";
-              if ("publish" === tmp3) {
+              if (!tmp3) {
                 str2 = "action_needed";
                 if (!canPublish.awaitingApproval) {
                   str2 = "action_needed";
                   if (!canPublish.ownerInstallMissing) {
-                    let str4 = "up_to_date";
+                    let str3 = "up_to_date";
                     if ("live_auto_synced" === publishState) {
-                      str4 = "auto_synced";
+                      str3 = "auto_synced";
                     }
-                    str2 = str4;
+                    str2 = str3;
                   }
                 }
               }

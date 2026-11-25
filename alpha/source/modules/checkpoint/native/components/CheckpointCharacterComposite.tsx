@@ -1,13 +1,13 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12600
+// Function ID: 12601
 // Name: CheckpointCharacterComposite
-// Dependencies: [17, 21, 4917, 5604, 2]
+// Dependencies: [17, 21, 5012, 5699, 2]
 // Exports: default
 
-// Module 12436 (CheckpointCharacterComposite)
+// Module 12600 (CheckpointCharacterComposite)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c2;

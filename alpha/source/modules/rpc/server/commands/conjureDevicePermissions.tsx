@@ -1,15 +1,15 @@
-// Module ID: 15758
-// Function ID: 15759
+// Module ID: 15879
+// Function ID: 15880
 // Name: commands/conjureDevicePermissions
-// Dependencies: [5, 5671, 1071, 15701, 15693, 11318, 11316, 2]
+// Dependencies: [5, 5766, 1071, 15822, 15814, 11417, 11415, 2]
 
-// Module 15758 (commands/conjureDevicePermissions)
+// Module 15879 (commands/conjureDevicePermissions)
 import Constants2 from "Constants" /* 1071 */;
-import requestConjureDevicePermissions from "requestConjureDevicePermissions" /* 11316 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15693 */;
+import requestConjureDevicePermissions from "requestConjureDevicePermissions" /* 11415 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15814 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 5671 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15701 */;
+import Constants from "Constants" /* 5766 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15822 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;
@@ -34,7 +34,7 @@ const obj3 = {
         return obj.getConjureDevicePermissionStatus(frame.applicationId, item);
       })
     };
-    prop = frame(11318).CONJURE_DEVICE_PERMISSION_NAMES;
+    prop = frame(11417).CONJURE_DEVICE_PERMISSION_NAMES;
     return obj;
   }
 };

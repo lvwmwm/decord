@@ -1,16 +1,16 @@
-// Module ID: 18341
-// Function ID: 18342
+// Module ID: 18453
+// Function ID: 18454
 // Name: useConjureMakePersonal
-// Dependencies: [5, 32, 19, 6808, 7541, 12293, 18335, 1112, 4192, 18336, 2]
+// Dependencies: [5, 32, 19, 6903, 7636, 12459, 18447, 1112, 4244, 18448, 2]
 // Exports: default
 
-// Module 18341 (useConjureMakePersonal)
-import ConjureActionCreators from "ConjureActionCreators" /* 7541 */;
-import conjureChangeRows from "conjureChangeRows" /* 18335 */;
+// Module 18453 (useConjureMakePersonal)
+import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
+import conjureChangeRows from "conjureChangeRows" /* 18447 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ export default function useConjureMakePersonal(id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -152,7 +152,7 @@ export default function useConjureMakePersonal(id) {
     }
   }), items2);
   if (null != target) {
-    const tmp6Result = tmp6(12293);
+    const tmp6Result = tmp6(12459);
     result = tmp6Result.conjureRemoveAppKeptChannels(target);
   }
   return obj3;

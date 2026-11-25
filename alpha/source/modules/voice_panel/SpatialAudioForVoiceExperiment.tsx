@@ -1,9 +1,9 @@
-// Module ID: 5873
-// Function ID: 5874
+// Module ID: 5968
+// Function ID: 5969
 // Name: SpatialAudioForVoiceExperiment
 // Dependencies: [1450, 2]
 
-// Module 5873 (SpatialAudioForVoiceExperiment)
+// Module 5968 (SpatialAudioForVoiceExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

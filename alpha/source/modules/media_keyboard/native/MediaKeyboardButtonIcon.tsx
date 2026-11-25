@@ -1,16 +1,16 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 13141
+// Function ID: 13142
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 5104, 1653, 1626, 5127, 5130, 9490, 2]
+// Dependencies: [19, 21, 5199, 1653, 1626, 5222, 5225, 9589, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 13018 (MediaKeyboardButtonIcon)
+// Module 13141 (MediaKeyboardButtonIcon)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1626 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5104 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import timingPresets from "timingPresets" /* 5130 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5199 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import timingPresets from "timingPresets" /* 5225 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ export function MediaKeyboardButtonIcon(arg0) {
     const animatedStyle = useAnimatedStyle(MediaKeyboardButtonIconTsx1);
     const View = tmp13(1653).View;
     const obj2 = {};
-    const PlusLargeIcon = tmp16(9490).PlusLargeIcon;
+    const PlusLargeIcon = tmp16(9589).PlusLargeIcon;
     const merged1 = Object.assign(merged);
     return <View style={animatedStyle}>{null}</View>;
   }

@@ -1,13 +1,13 @@
-// Module ID: 19568
-// Function ID: 19569
+// Module ID: 19680
+// Function ID: 19681
 // Name: HolidayEventsConfig
-// Dependencies: [10159, 19569, 1112, 4750, 2]
+// Dependencies: [10258, 19681, 1112, 4845, 2]
 
-// Module 19568 (HolidayEventsConfig)
+// Module 19680 (HolidayEventsConfig)
 import intl from "intl" /* 1112 */;
-import dismissible_content from "dismissible_content" /* 4750 */;
-import Constants from "Constants" /* 10159 */;
-import HolidayRingtoneExperimentDefault from "HolidayRingtoneExperiment" /* 19569 */;
+import dismissible_content from "dismissible_content" /* 4845 */;
+import Constants from "Constants" /* 10258 */;
+import HolidayRingtoneExperimentDefault from "HolidayRingtoneExperiment" /* 19681 */;
 import size from "module_2" /* 2 */;
 
 let Soundpacks;

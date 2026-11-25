@@ -1,23 +1,23 @@
-// Module ID: 17115
-// Function ID: 17116
+// Module ID: 17234
+// Function ID: 17235
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 1071, 21, 4917, 575, 10554, 5989, 6014, 6018, 5508, 17116, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5012, 575, 10653, 6084, 6109, 6113, 5603, 17235, 2]
 // Exports: default
 
-// Module 17115 (DevToolsProfilingScreen)
+// Module 17234 (DevToolsProfilingScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import Stack_Stack from "Stack/Stack" /* 5989 */;
-import TableRowGroup3 from "TableRowGroup" /* 6014 */;
-import TableRow2 from "TableRow" /* 6018 */;
-import ComponentProfiler from "ComponentProfiler" /* 10554 */;
-import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 17116 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import Stack_Stack from "Stack/Stack" /* 6084 */;
+import TableRowGroup3 from "TableRowGroup" /* 6109 */;
+import TableRow2 from "TableRow" /* 6113 */;
+import ComponentProfiler from "ComponentProfiler" /* 10653 */;
+import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 17235 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ export default function DevToolsProfilingScreen() {
   if (tmp7) {
     let obj3 = { children: items };
     let obj4 = { title: "Component Profiler", hasIcons: false, children: closure_5(TableRow2.TableRow, obj5) };
-    const TableRowGroup2 = tmp4(6014).TableRowGroup;
+    const TableRowGroup2 = tmp4(6109).TableRowGroup;
     obj5 = { variant: "danger", arrow: true, label: "Reset Stats", onPress: callback };
     items = [closure_5(TableRowGroup2, obj4), ];
     const _Object = Object;
@@ -110,11 +110,11 @@ export default function DevToolsProfilingScreen() {
     tmp8Result = tmp10(closure_6, obj3);
   } else {
     const obj6 = { title: "Component Profiler", hasIcons: false, children: closure_5(TableRow, obj7) };
-    let TableRowGroup = tmp4(6014).TableRowGroup;
+    let TableRowGroup = tmp4(6109).TableRowGroup;
     obj7 = { label: "No components rendered yet.", subLabel: closure_7(Text, obj8) };
-    TableRow = tmp4(6018).TableRow;
+    TableRow = tmp4(6113).TableRow;
     obj8 = { variant: "body-xs/medium", color: "text-subtle", children: items1 };
-    Text = tmp4(5508).Text;
+    Text = tmp4(5603).Text;
     const obj9 = { variant: "body-xs/semibold", style: tmp3.monospace, children: "<ComponentProfiler />" };
     items1 = ["Make sure you wrap your component in ", closure_5(Text_Text.Text, obj9), " to enable measurements."];
     tmp8Result = tmp8(TableRowGroup, obj6);

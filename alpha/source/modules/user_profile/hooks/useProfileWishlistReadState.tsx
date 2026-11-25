@@ -1,16 +1,16 @@
-// Module ID: 14883
-// Function ID: 14884
+// Module ID: 15005
+// Function ID: 15006
 // Name: useProfileWishlistReadState
-// Dependencies: [32, 19, 10971, 6037, 14856, 504, 6182, 14884, 2]
+// Dependencies: [32, 19, 11070, 6132, 14978, 504, 6277, 15006, 2]
 // Exports: default
 
-// Module 14883 (useProfileWishlistReadState)
-import ProfileReadStateSection from "ProfileReadStateSection" /* 6182 */;
-import ProfileReadStateActionCreators from "ProfileReadStateActionCreators" /* 14884 */;
+// Module 15005 (useProfileWishlistReadState)
+import ProfileReadStateSection from "ProfileReadStateSection" /* 6277 */;
+import ProfileReadStateActionCreators from "ProfileReadStateActionCreators" /* 15006 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WishlistStore from "WishlistStore" /* 10971 */;
-import UserProfileStore from "UserProfileStore" /* 6037 */;
+import WishlistStore from "WishlistStore" /* 11070 */;
+import UserProfileStore from "UserProfileStore" /* 6132 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/user_profile/hooks/useProfileWishlistReadState.tsx");

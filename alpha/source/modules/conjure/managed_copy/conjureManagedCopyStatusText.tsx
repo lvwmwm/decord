@@ -1,13 +1,13 @@
-// Module ID: 18315
-// Function ID: 18316
+// Module ID: 18427
+// Function ID: 18428
 // Name: conjureManagedCopyStatusText
-// Dependencies: [1112, 4192, 4739, 2]
+// Dependencies: [1112, 4244, 4834, 2]
 // Exports: conjureCopySourceLine, conjureCopySyncLine
 
-// Module 18315 (conjureManagedCopyStatusText)
+// Module 18427 (conjureManagedCopyStatusText)
 import intl7 from "intl" /* 1112 */;
-import _modDef4192 from "module_4192" /* 4192 */;
-import DateUtils from "DateUtils" /* 4739 */;
+import _modDef4244 from "module_4244" /* 4244 */;
+import DateUtils from "DateUtils" /* 4834 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/managed_copy/conjureManagedCopyStatusText.tsx");
@@ -18,12 +18,12 @@ export function conjureCopySourceLine(sourceName, updatesPaused) {
   if (null == sourceName) {
     const intl2 = intl7.intl;
     const string = intl2.string;
-    const tmp9 = _modDef4192;
+    const tmp9 = _modDef4244;
     stringResult = string(updatesPaused ? tmp9["5wuDGB"] : tmp9.rxvuqx);
   } else {
     const intl = intl7.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const tmp4 = _modDef4192;
+    const tmp4 = _modDef4244;
     const obj = { name: sourceName };
     stringResult = formatToPlainString(updatesPaused ? tmp4.HHthpS : tmp4.qpGg7d, obj);
   }
@@ -33,7 +33,7 @@ export function conjureCopySyncLine(conjureCopyLastSync, updatesPaused) {
   const tmp = updatesPaused;
   if (tmp) {
     const intl6 = intl7.intl;
-    return intl6.string(_modDef4192["uV/luq"]);
+    return intl6.string(_modDef4244["uV/luq"]);
   } else {
     if (null != conjureCopyLastSync) {
       if (null != conjureCopyLastSync.atMs) {
@@ -48,22 +48,22 @@ export function conjureCopySyncLine(conjureCopyLastSync, updatesPaused) {
         if ("updated" === status) {
           const intl4 = tmp14(1112).intl;
           const obj2 = { time: dateFormatResult };
-          return intl4.formatToPlainString(_modDef4192["6rQ8So"], obj2);
+          return intl4.formatToPlainString(_modDef4244["6rQ8So"], obj2);
         } else if ("failed" === status) {
           const intl3 = tmp14(1112).intl;
           const obj3 = { time: dateFormatResult };
-          return intl3.formatToPlainString(_modDef4192.HZnsMq, obj3);
+          return intl3.formatToPlainString(_modDef4244.HZnsMq, obj3);
         } else if ("held" === status) {
           const intl2 = tmp14(1112).intl;
-          return intl2.string(_modDef4192.AwPHix);
+          return intl2.string(_modDef4244.AwPHix);
         } else {
           const intl = tmp14(1112).intl;
           const obj = { time: dateFormatResult };
-          return intl.formatToPlainString(_modDef4192.yc0AaP, obj);
+          return intl.formatToPlainString(_modDef4244.yc0AaP, obj);
         }
       }
     }
     const intl5 = intl7.intl;
-    return intl5.string(_modDef4192.gHndTq);
+    return intl5.string(_modDef4244.gHndTq);
   }
 }

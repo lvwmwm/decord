@@ -1,21 +1,21 @@
-// Module ID: 11627
-// Function ID: 11628
+// Module ID: 11726
+// Function ID: 11727
 // Name: useChannelContentGate
-// Dependencies: [19, 21, 6707, 6723, 9444, 11628, 11630, 11632, 2]
+// Dependencies: [19, 21, 6802, 6818, 9543, 11727, 11729, 11731, 2]
 // Exports: renderChannelContentGate, useChannelContentGate
 
-// Module 11627 (useChannelContentGate)
+// Module 11726 (useChannelContentGate)
 import Fragment from "Fragment" /* 21 */;
-import AgeGateUtils from "AgeGateUtils" /* 6707 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6723 */;
-import NsfwGateChatDefault from "NsfwGateChat" /* 11628 */;
-import GuildNSFWDefault from "GuildNSFW" /* 11630 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 11632 */;
+import AgeGateUtils from "AgeGateUtils" /* 6802 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6818 */;
+import NsfwGateChatDefault from "NsfwGateChat" /* 11727 */;
+import GuildNSFWDefault from "GuildNSFW" /* 11729 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 11731 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const age_gate_AgeGateUtils = tmp(9444);
+const age_gate_AgeGateUtils = tmp(9543);
 const jsx = Fragment.jsx;
 const constants = { IOS_GUILD_NSFW: "NsfwGateChat", CHANNEL_NSFW: "GuildNSFW", CHANNEL_SPOILER: "ChannelSpoiler" };
 const result = size.fileFinishedImporting("modules/chat/native/useChannelContentGate.tsx");

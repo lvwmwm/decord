@@ -1,17 +1,17 @@
-// Module ID: 6029
-// Function ID: 6030
+// Module ID: 6124
+// Function ID: 6125
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4917, 575, 5517, 2]
+// Dependencies: [109, 19, 17, 21, 5012, 575, 5612, 2]
 // Exports: TableRowIcon
 
-// Module 6029 (TableRowIcon)
+// Module 6124 (TableRowIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Icon from "Icon" /* 5517 */;
+import Icon from "Icon" /* 5612 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const IconDefault = Icon;

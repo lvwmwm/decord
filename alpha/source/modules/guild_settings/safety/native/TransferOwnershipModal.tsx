@@ -1,18 +1,18 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12449
+// Function ID: 12450
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 12283, 21, 12281, 1263, 1112, 7065, 12284, 7146, 8432, 5598, 7229, 2]
+// Dependencies: [5, 19, 12450, 21, 12448, 1263, 1112, 7160, 12451, 7241, 8531, 5693, 7324, 2]
 // Exports: default
 
-// Module 12282 (TransferOwnershipModal)
+// Module 12449 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import NavigatorHeader from "NavigatorHeader" /* 7065 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12281 */;
+import NavigatorHeader from "NavigatorHeader" /* 7160 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12448 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12283 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12450 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -86,7 +86,7 @@ export default function TransferOwnershipModal(guild) {
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -115,7 +115,7 @@ export default function TransferOwnershipModal(guild) {
                   return obj;
                 } else {
                   c0 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp7) {
                 c0 = 3;
@@ -149,7 +149,7 @@ export default function TransferOwnershipModal(guild) {
     obj2[CONFIRM_EMAIL_CODE] = obj5;
     return obj2;
   }, items);
-  const Navigator = guild(7229).Navigator;
+  const Navigator = guild(7324).Navigator;
   let intl = guild(1112).intl;
   return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1112).t["13/7kX"])} />;
 };

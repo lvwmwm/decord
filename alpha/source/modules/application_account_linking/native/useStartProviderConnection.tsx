@@ -1,11 +1,11 @@
-// Module ID: 7404
-// Function ID: 7405
+// Module ID: 7499
+// Function ID: 7500
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 7405, 5596, 2]
+// Dependencies: [5, 19, 7500, 5691, 2]
 // Exports: useStartProviderConnection
 
-// Module 7404 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 5596 */;
+// Module 7499 (useStartProviderConnection)
+import LinkingDefault from "Linking" /* 5691 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ export function useStartProviderConnection(provider_id) {
   let hasConnection;
   let loading;
   let startConnection;
-  let obj = startConnection(7405);
+  let obj = startConnection(7500);
   const providerConnection = obj.useProviderConnection(provider_id);
   startConnection = providerConnection.startConnection;
   ({ loading, hasConnection, canConnect, account } = providerConnection);
@@ -38,7 +38,7 @@ export function useStartProviderConnection(provider_id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

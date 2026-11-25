@@ -1,8 +1,8 @@
-// Module ID: 5043
-// Function ID: 5044
+// Module ID: 5138
+// Function ID: 5139
 // Dependencies: [2]
 
-// Module 5043
+// Module 5138
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BoostThisServer.riv.js");

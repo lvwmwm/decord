@@ -1,11 +1,11 @@
-// Module ID: 18342
-// Function ID: 18343
+// Module ID: 18454
+// Function ID: 18455
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2164, 21, 504, 11325, 1112, 4192, 5599, 5926, 5508, 5922, 2]
+// Dependencies: [5, 32, 19, 2164, 21, 504, 11424, 1112, 4244, 5694, 6021, 5603, 6017, 2]
 // Exports: default
 
-// Module 18342 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 5922 */;
+// Module 18454 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 6017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -50,7 +50,7 @@ function ConjureUnpublishUserAppAlert(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ function ConjureUnpublishUserAppAlert(project) {
             obj7 = { app: closure_129_2 };
             open("CONJURE_USER_APP_UNPUBLISHED", obj);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else {
             const intl = tmp(c2[7]).intl;
             tmp = intl.string(tmp4(c2[8])["rE/0SD"]);
@@ -127,7 +127,7 @@ function ConjureUnpublishUserAppAlert(project) {
     }
     return name;
   }, items1);
-  let obj2 = { title: intl.formatToPlainString(require("module_4192").m8KWic, { app: stateFromStores }), content: string(wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
+  let obj2 = { title: intl.formatToPlainString(require("module_4244").m8KWic, { app: stateFromStores }), content: string(wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
   const AlertModal = project(stateFromStores[10]).AlertModal;
   intl = project(stateFromStores[7]).intl;
   let intl2 = project(stateFromStores[7]).intl;

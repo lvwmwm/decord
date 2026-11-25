@@ -1,17 +1,17 @@
-// Module ID: 14264
-// Function ID: 14265
+// Module ID: 14387
+// Function ID: 14388
 // Name: GiftIntentSystemMessage
-// Dependencies: [4917, 575, 14265, 14198, 14266, 8680, 8457, 2]
+// Dependencies: [5012, 575, 14388, 14321, 14389, 8779, 8556, 2]
 // Exports: createGiftIntentSystemMessage
 
-// Module 14264 (GiftIntentSystemMessage)
+// Module 14387 (GiftIntentSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8457 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8680 */;
-import createCommonMessageDefault from "createCommonMessage" /* 14198 */;
-import GiftIntentEmbed from "GiftIntentEmbed" /* 14265 */;
-import EphemeralIndication from "EphemeralIndication" /* 14266 */;
-import createStyles from "createStyles" /* 4917 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8556 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8779 */;
+import createCommonMessageDefault from "createCommonMessage" /* 14321 */;
+import GiftIntentEmbed from "GiftIntentEmbed" /* 14388 */;
+import EphemeralIndication from "EphemeralIndication" /* 14389 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.BACKGROUND_BRAND, iconDividerColor: nativeDefault.colors.ICON_STRONG };

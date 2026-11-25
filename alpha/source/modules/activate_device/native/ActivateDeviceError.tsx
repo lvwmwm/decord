@@ -1,20 +1,20 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15244
+// Function ID: 15245
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 4917, 5604, 7648, 15120, 5508, 1112, 5515, 2]
+// Dependencies: [19, 17, 21, 5012, 5699, 7747, 15242, 5603, 1112, 5610, 2]
 // Exports: ActivateDeviceError
 
-// Module 15122 (ActivateDeviceError)
+// Module 15244 (ActivateDeviceError)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import components_Button_Button from "components/Button/Button" /* 5515 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7648 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15120 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import components_Button_Button from "components/Button/Button" /* 5610 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7747 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15242 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

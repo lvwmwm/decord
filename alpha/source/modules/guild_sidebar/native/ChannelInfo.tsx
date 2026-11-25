@@ -1,32 +1,32 @@
-// Module ID: 17785
-// Function ID: 17786
+// Module ID: 17897
+// Function ID: 17898
 // Name: ChannelInfo
-// Dependencies: [19, 8149, 4788, 4849, 6806, 5565, 1071, 21, 4917, 504, 12846, 8886, 17786, 17787, 6676, 1186, 17789, 17790, 17678, 6685, 13066, 17679, 17791, 14731, 2]
+// Dependencies: [19, 8248, 4883, 4944, 6901, 5660, 1071, 21, 5012, 504, 12970, 8985, 17898, 17899, 6771, 1186, 17901, 17902, 17789, 6780, 13189, 17790, 17903, 14853, 2]
 // Exports: default
 
-// Module 17785 (ChannelInfo)
+// Module 17897 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
-import StageMediaHooks from "StageMediaHooks" /* 6685 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12846 */;
-import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 13066 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 17786 */;
-import ChannelBadgeDefault from "ChannelBadge" /* 17787 */;
-import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 17791 */;
+import StageMediaHooks from "StageMediaHooks" /* 6780 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12970 */;
+import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 13189 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 17898 */;
+import ChannelBadgeDefault from "ChannelBadge" /* 17899 */;
+import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 17903 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 8149 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import VoiceStateStore from "VoiceStateStore" /* 5565 */;
+import NewChannelsStore from "NewChannelsStore" /* 8248 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import ReadStateStore from "ReadStateStore" /* 6901 */;
+import VoiceStateStore from "VoiceStateStore" /* 5660 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;
 let c9;
 let metroImportAll;
 let tmp2;
-const Badges = tmp2(14731);
+const Badges = tmp2(14853);
 function LimitAndDurationInfo(channel) {
   let hasMedia;
   let hasVideo;
@@ -58,7 +58,7 @@ function LimitAndDurationInfo(channel) {
   }
   if (tmp4(obj2)) {
     const obj3 = { userCount: voiceStatesCount, video: hasVideo, channel };
-    const ConnectedUserLimit = tmp(17679).ConnectedUserLimit;
+    const ConnectedUserLimit = tmp(17790).ConnectedUserLimit;
     if (!hasVideo) {
       hasVideo = hasMedia;
     }
@@ -113,7 +113,7 @@ export default function ChannelInfo(channel) {
   ({ guild, mentionsCount, isNewChannel } = stateFromStoresObject);
   const isMentionLowImportance = stateFromStoresObject.isMentionLowImportance;
   const tmp5 = useEmbeddedAppsForChannelDefault(channel);
-  const obj2 = channel(8886);
+  const obj2 = channel(8985);
   const postsWithUnreadsCount = obj2.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   if (showChannelBadgeDefault({ mentionsCount, isNewChannel, postsWithUnreadsCount, muted })) {
     const obj3 = { mentionCount: mentionsCount, isMentionLowImportance, isNewChannel, postsWithUnreadsCount: tmp18, muted };
@@ -133,7 +133,7 @@ export default function ChannelInfo(channel) {
           hasItem = features.has(constants.COMMUNITY);
         }
         if (hasItem) {
-          const tmpResult = channel(6676);
+          const tmpResult = channel(6771);
           if (tmpResult.hasStream(voiceStates)) {
             tmp11Result = jsx(tmp(1186).LiveTag, {});
           }
@@ -142,16 +142,16 @@ export default function ChannelInfo(channel) {
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        const tmpResult2 = channel(17789);
+        const tmpResult2 = channel(17901);
         if (tmpResult2.showChannelItemEmbeddedActivities(tmp5)) {
-          tmp11Result = jsx(tmp4(17790), { embeddedApps: tmp5, muted });
+          tmp11Result = jsx(tmp4(17902), { embeddedApps: tmp5, muted });
         }
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
-          tmp11Result = jsx(tmp4(17678), { locked: needSubscriptionToAccess });
+          tmp11Result = jsx(tmp4(17789), { locked: needSubscriptionToAccess });
         }
       }
     }

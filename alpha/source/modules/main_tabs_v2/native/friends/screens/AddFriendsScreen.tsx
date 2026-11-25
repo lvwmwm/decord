@@ -1,30 +1,30 @@
-// Module ID: 18912
-// Function ID: 18913
+// Module ID: 19024
+// Function ID: 19025
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 8180, 4859, 1386, 13519, 1071, 13497, 21, 4917, 575, 13495, 7686, 5598, 1112, 10295, 13499, 1378, 6253, 6254, 7279, 18913, 5478, 1255, 6007, 563, 12, 4973, 17605, 7389, 10447, 10312, 6921, 11209, 6018, 5602, 7030, 18914, 18915, 18917, 18918, 2]
+// Dependencies: [32, 5, 19, 17, 8279, 4954, 1386, 13642, 1071, 13620, 21, 5012, 575, 13618, 7785, 5693, 1112, 10394, 13622, 1378, 6348, 6349, 7374, 19025, 5573, 1255, 6102, 563, 12, 5068, 17716, 7484, 10546, 10411, 7016, 11308, 6113, 5697, 7125, 19026, 19027, 19029, 19030, 2]
 // Exports: default
 
-// Module 18912 (AddFriendsScreen)
+// Module 19024 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6007 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7686 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13495 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13497 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13519 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 18915 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18917 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6102 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7785 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13618 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13620 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13642 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 19027 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 19029 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 8180 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 8279 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
@@ -65,7 +65,7 @@ let props = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -118,7 +118,7 @@ let props = function _handleShare() {
           PJf9P9 = closure_130_0(closure_130_2[16]).t.PJf9P9;
           closure_0(obj7);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp19) {
         let closure_3 = tmp19;
@@ -134,12 +134,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f116284 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f116666 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f116284);
-    const tmp2 = arr.length === arg1.length && arr.every(f116284);
+    tmp = arr.length === arg1.length && arr.every(f116666);
+    const tmp2 = arr.length === arg1.length && arr.every(f116666);
   }
   return tmp;
 }

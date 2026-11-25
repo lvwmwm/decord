@@ -1,19 +1,19 @@
-// Module ID: 4949
-// Function ID: 4950
+// Module ID: 5044
+// Function ID: 5045
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1230, 4950, 1088, 4971, 4757, 4751, 11, 4749, 504, 4747, 2]
+// Dependencies: [5, 1230, 5045, 1088, 5066, 4852, 4846, 11, 4844, 504, 4842, 2]
 // Exports: UNSAFE_isSnowflakeBoundDismissibleContentDismissed, UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 4949 (DismissibleContentUnsafeUtils)
+// Module 5044 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4749 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4751 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4757 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4971 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4844 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4846 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4852 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -173,7 +173,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -226,7 +226,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
           obj = closure_132_0(closure_132_2[6]);
           const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, obj6);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp25) {
         c6 = 3;
@@ -252,7 +252,7 @@ obj = function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ obj = function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
           obj = closure_132_0(closure_132_2[6]);
           const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, closure_1);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         c6 = 3;
@@ -317,7 +317,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -356,7 +356,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
             obj = closure_133_0(closure_133_2[6]);
             const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, snowflakeId);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c7 = 3;

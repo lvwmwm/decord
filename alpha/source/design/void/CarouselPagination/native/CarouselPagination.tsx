@@ -1,18 +1,18 @@
-// Module ID: 15440
-// Function ID: 15441
+// Module ID: 15562
+// Function ID: 15563
 // Name: CarouselPagination
-// Dependencies: [19, 17, 21, 4917, 575, 1653, 5127, 15235, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 1653, 5222, 15357, 2]
 // Exports: default
 
-// Module 15440 (CarouselPagination)
+// Module 15562 (CarouselPagination)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import Easing_Easing from "Easing/Easing" /* 15235 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import Easing_Easing from "Easing/Easing" /* 15357 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let num;

@@ -1,9 +1,9 @@
-// Module ID: 5839
-// Function ID: 5840
+// Module ID: 5934
+// Function ID: 5935
 // Name: WebScreenShareAudioExperiment
 // Dependencies: [1450, 2]
 
-// Module 5839 (WebScreenShareAudioExperiment)
+// Module 5934 (WebScreenShareAudioExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

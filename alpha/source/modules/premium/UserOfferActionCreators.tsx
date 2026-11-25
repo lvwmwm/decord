@@ -1,18 +1,18 @@
-// Module ID: 9174
-// Function ID: 9175
+// Module ID: 9273
+// Function ID: 9274
 // Name: UserOfferActionCreators
-// Dependencies: [5, 9004, 9002, 8998, 1388, 1071, 1378, 572, 1255, 1284, 9175, 1241, 4949, 4750, 4747, 2]
+// Dependencies: [5, 9103, 9101, 9097, 1388, 1071, 1378, 572, 1255, 1284, 9274, 1241, 5044, 4845, 4842, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 9174 (UserOfferActionCreators)
+// Module 9273 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9004 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9002 */;
-import UserOfferStore from "UserOfferStore" /* 8998 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 9103 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9101 */;
+import UserOfferStore from "UserOfferStore" /* 9097 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "Array", paymentGatewayOverride: "Path" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "analyticsLocations" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

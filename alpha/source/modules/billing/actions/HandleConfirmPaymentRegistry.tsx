@@ -1,13 +1,13 @@
-// Module ID: 5700
-// Function ID: 5701
+// Module ID: 5795
+// Function ID: 5796
 // Name: HandleConfirmPaymentRegistry
-// Dependencies: [5, 1071, 1082, 5681, 5695, 1284, 2]
+// Dependencies: [5, 1071, 1082, 5776, 5790, 1284, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 5700 (HandleConfirmPaymentRegistry)
+// Module 5795 (HandleConfirmPaymentRegistry)
 import Constants2 from "Constants" /* 1082 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5681 */;
-import StripeUtilsAll from "StripeUtils" /* 5695 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5776 */;
+import StripeUtilsAll from "StripeUtils" /* 5790 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ obj4 = {
     if (null == paymentSource.bank) {
       const _HermesInternal = HermesInternal;
       const obj5 = BillingSharedActionCreators;
-      throw obj5.dispatchConfirmationError("PaymentSource (" + paymentSource.id + ") missing bank info for p24.");
+      throw obj5.failBillingConfirmation("payment_confirmation", "PaymentSource (" + paymentSource.id + ") missing bank info for p24.");
     } else {
       const paymentMethod = { p24: obj2, billing_details: obj3 };
       return { stripeConfirmPayment: tmp.confirmP24Payment, paymentMethod };
@@ -71,7 +71,7 @@ obj6 = {
     if (null == paymentSource.bank) {
       const _HermesInternal = HermesInternal;
       const obj5 = BillingSharedActionCreators;
-      throw obj5.dispatchConfirmationError("PaymentSource (" + paymentSource.id + ") missing bank info for EPS.");
+      throw obj5.failBillingConfirmation("payment_confirmation", "PaymentSource (" + paymentSource.id + ") missing bank info for EPS.");
     } else {
       const paymentMethod = { eps: obj2, billing_details: obj3 };
       return { stripeConfirmPayment: tmp.confirmEpsPayment, paymentMethod };
@@ -98,7 +98,7 @@ obj9 = {
     paymentMethodId = paymentMethodId.paymentMethodId;
     if (null == paymentMethodId) {
       const obj2 = BillingSharedActionCreators;
-      throw obj2.dispatchConfirmationError("On a sepa payment payment method id cannot be null");
+      throw obj2.failBillingConfirmation("payment_confirmation", "On a sepa payment payment method id cannot be null");
     } else {
       return { stripeConfirmPayment: tmp.confirmSepaDebitPayment, paymentMethod: paymentMethodId };
     }
@@ -129,27 +129,27 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
   constructor(paymentSource, body) {
     if (null == paymentSource) {
       const obj2 = BillingSharedActionCreators;
-      throw obj2.dispatchConfirmationError("Payment source cannot be null on a redirect.");
+      throw obj2.failBillingConfirmation("payment_confirmation", "Payment source cannot be null on a redirect.");
     } else {
       const self = this;
       const self2 = this;
-      const tmp13 = new StripePaymentConfirmationHandler(paymentSource, body, paymentSource);
+      const tmp14 = new StripePaymentConfirmationHandler(paymentSource, body, tmp);
       const _Map = Map;
       const self3 = this;
       const self4 = this;
-      tmp13.stripeByMerchantAccountId = new Map();
-      const paymentSourceType = tmp13.paymentSourceType;
+      tmp14.stripeByMerchantAccountId = new Map();
+      const paymentSourceType = tmp14.paymentSourceType;
       map = new Map();
       const hasItem = hasOwnProperty.has(paymentSourceType) && paymentSourceType in obj;
       if (hasItem) {
-        tmp13.handlerRegistry = obj[tmp13.paymentSourceType];
-      } else if (tmp13.paymentSourceType in obj8) {
-        tmp13.handlerRegistry = tmp3[tmp13.paymentSourceType];
+        tmp14.handlerRegistry = obj[tmp14.paymentSourceType];
+      } else if (tmp14.paymentSourceType in obj8) {
+        tmp14.handlerRegistry = tmp4[tmp14.paymentSourceType];
       } else {
         obj = BillingSharedActionCreators;
-        throw obj.dispatchConfirmationError("Invalid Payment Source Type - redirect or direct confirmation handlers not found.");
+        throw obj.failBillingConfirmation("payment_confirmation", "Invalid Payment Source Type - redirect or direct confirmation handlers not found.");
       }
-      return tmp13;
+      return tmp14;
     }
   }
   getStripe(arg0) {
@@ -158,15 +158,15 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
     return (async () => {
       let c3;
       let value = tmp;
-      let str2 = "";
+      let str3 = "";
       if (null != tmp4) {
-        str2 = "";
+        str3 = "";
         if ("" !== tmp4) {
-          str2 = tmp25;
+          str3 = tmp25;
         }
       }
       const stripeByMerchantAccountId2 = self.stripeByMerchantAccountId;
-      value = stripeByMerchantAccountId2.get(str2);
+      value = stripeByMerchantAccountId2.get(str3);
       if (null != value) {
         return value;
       }
@@ -174,10 +174,10 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
       value = await obj4.getStripe(tmp4);
       if (null == value) {
         const obj2 = tmp4(c2[3]);
-        throw obj2.dispatchConfirmationError("Stripe cannot be null on a redirect.");
+        throw obj2.failBillingConfirmation("payment_confirmation", "Stripe cannot be null on a redirect.");
       }
       const stripeByMerchantAccountId = closure_129_1.stripeByMerchantAccountId;
-      const result = stripeByMerchantAccountId.set(str2, value);
+      const result = stripeByMerchantAccountId.set(str3, value);
       return value;
     })();
   }
@@ -219,11 +219,11 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
       const error = _self.error;
       if (null != error) {
         const obj4 = stripe(closure_2[3]);
-        throw obj4.dispatchConfirmationError(error);
+        throw obj4.failBillingConfirmation("payment_confirmation", error);
       }
       if (null == paymentIntent) {
         const obj3 = stripe(closure_2[3]);
-        throw obj3.dispatchConfirmationError("paymentIntent not available with successful api call");
+        throw obj3.failBillingConfirmation("payment_confirmation", "paymentIntent not available with successful api call");
       }
       const next_action = paymentIntent.next_action;
       if (next_action != null) {
@@ -234,7 +234,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
       }
       if (null == url) {
         const obj2 = stripe(closure_2[3]);
-        throw obj2.dispatchConfirmationError("confirm payment did not return a redirect url");
+        throw obj2.failBillingConfirmation("payment_confirmation", "confirm payment did not return a redirect url");
       }
       return paymentIntent.next_action.redirect_to_url.url;
     })();
@@ -253,7 +253,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -304,7 +304,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
             closure_1 = value;
             closure_129_3.performRedirect(closure_1);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           c3 = 3;
@@ -331,11 +331,11 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
       const error = closure_5.error;
       if (null != error) {
         const obj4 = stripe(c2[3]);
-        throw obj4.dispatchConfirmationError(error);
+        throw obj4.failBillingConfirmation("payment_confirmation", error);
       }
       if (null == paymentIntent) {
         const obj3 = stripe(c2[3]);
-        throw obj3.dispatchConfirmationError("paymentIntent not available with successful stripe call");
+        throw obj3.failBillingConfirmation("payment_confirmation", "paymentIntent not available with successful stripe call");
       }
       const value = { pendingCustomerAction, customerActionCancelled: "requires_action" === paymentIntent.status };
       return value;
@@ -355,7 +355,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -400,7 +400,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
               merchantAccountId = tmp.merchantAccountId;
               if (null == paymentMethodId) {
                 const obj10 = tmp(c2[3]);
-                throw obj10.dispatchConfirmationError("payment method id cannot be null.");
+                throw obj10.failBillingConfirmation("payment_confirmation", "payment method id cannot be null.");
               } else if ("stripe_redirect_confirmation" === closure_129_0.handlerRegistry.confirmationType) {
                 const obj6 = { clientSecret, paymentMethodId, merchantAccountId };
                 c2 = 2;
@@ -455,7 +455,7 @@ class AdyenPaymentConfirmationHandler extends PaymentConfirmationHandler {
   constructor(paymentSource, body) {
     if (null == paymentSource) {
       obj = BillingSharedActionCreators;
-      throw obj.dispatchConfirmationError("Payment source cannot be null on a redirect.");
+      throw obj.failBillingConfirmation("payment_confirmation", "Payment source cannot be null on a redirect.");
     } else {
       const self = this;
       const self2 = this;
@@ -468,7 +468,7 @@ class AdyenPaymentConfirmationHandler extends PaymentConfirmationHandler {
     const adyen_redirect_url = this.payment.adyen_redirect_url;
     if (null == adyen_redirect_url) {
       const obj3 = BillingSharedActionCreators;
-      throw obj3.dispatchConfirmationError("redirect url cannot be null on a redirect for adyen.");
+      throw obj3.failBillingConfirmation("payment_confirmation", "redirect url cannot be null on a redirect for adyen.");
     } else {
       if (hasOwnProperty.has(self.paymentSource.type)) {
         self.performRedirect(adyen_redirect_url);

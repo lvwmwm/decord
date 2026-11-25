@@ -1,10 +1,10 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 13010
+// Function ID: 13011
 // Name: useTrackAppLauncherHomeItemImpression
-// Dependencies: [19, 12887, 12874, 6847, 1083, 2]
+// Dependencies: [19, 13011, 12998, 6942, 1083, 2]
 // Exports: useTrackAppLauncherHomeItemImpression
 
-// Module 12886 (useTrackAppLauncherHomeItemImpression)
+// Module 13010 (useTrackAppLauncherHomeItemImpression)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/app_launcher/native/screens/h
 export function useTrackAppLauncherHomeItemImpression() {
   let items;
   let trackAppLauncherItemImpressionOnFirstView;
-  let obj = trackAppLauncherItemImpressionOnFirstView(12887);
+  let obj = trackAppLauncherItemImpressionOnFirstView(13011);
   trackAppLauncherItemImpressionOnFirstView = obj.useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
   let obj2 = {
     trackAppLauncherHomeItemImpression: react.useCallback((viewableItems) => {

@@ -1,23 +1,23 @@
-// Module ID: 9919
-// Function ID: 9920
+// Module ID: 10018
+// Function ID: 10019
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 8887, 502, 4766, 7976, 6265, 8209, 1111, 1071, 4922, 7502, 8203, 8392, 1112, 9920, 11, 1284, 8038, 9921, 8205, 1404, 7987, 9923, 7975, 5887, 8103, 5920, 572, 4924, 1088, 9929, 9930, 2]
+// Dependencies: [32, 5, 19, 8986, 502, 4861, 8075, 6360, 8308, 1111, 1071, 5017, 7597, 8302, 8491, 1112, 10019, 11, 1284, 8137, 10020, 8304, 1404, 8086, 10022, 8074, 5982, 8202, 6015, 572, 5019, 1088, 10028, 10029, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 9919 (ThreadCreationHooks)
+// Module 10018 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import MessageConstants from "MessageConstants" /* 4922 */;
-import ThreadHooks from "ThreadHooks" /* 7502 */;
-import DraftStore from "DraftStore" /* 7976 */;
-import MessageParserDefault from "MessageParser" /* 8203 */;
-import SlowmodeStore from "SlowmodeStore" /* 8209 */;
+import MessageConstants from "MessageConstants" /* 5017 */;
+import ThreadHooks from "ThreadHooks" /* 7597 */;
+import DraftStore from "DraftStore" /* 8075 */;
+import MessageParserDefault from "MessageParser" /* 8302 */;
+import SlowmodeStore from "SlowmodeStore" /* 8308 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 8887 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 8986 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import MessageStore from "MessageStore" /* 6265 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import MessageStore from "MessageStore" /* 6360 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(8392);
+    const tmp17Result = tmp17(8491);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -174,7 +174,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -587,7 +587,7 @@ export function useCreateThreadCommon(parentChannel) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ export function useCreateThreadCommon(parentChannel) {
             obj = parentMessageId(threadSettings[20]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp41) {
           c7 = 3;
@@ -772,7 +772,7 @@ export function useCreateForumPostCommon(parentChannel) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp90;

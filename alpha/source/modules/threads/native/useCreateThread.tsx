@@ -1,17 +1,17 @@
-// Module ID: 10630
-// Function ID: 10631
+// Module ID: 10729
+// Function ID: 10730
 // Name: useCreateThread
-// Dependencies: [5, 19, 7976, 4922, 6253, 9919, 8103, 8203, 9923, 9921, 10631, 7991, 8006, 9924, 2]
+// Dependencies: [5, 19, 8075, 5017, 6348, 10018, 8202, 8302, 10022, 10020, 10730, 8090, 8105, 10023, 2]
 // Exports: default, useCreateForumPost
 
-// Module 10630 (useCreateThread)
-import MessageConstants from "MessageConstants" /* 4922 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6253 */;
-import DraftStore from "DraftStore" /* 7976 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8103 */;
-import MessageParserDefault from "MessageParser" /* 8203 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9921 */;
-import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9923 */;
+// Module 10729 (useCreateThread)
+import MessageConstants from "MessageConstants" /* 5017 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
+import DraftStore from "DraftStore" /* 8075 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8202 */;
+import MessageParserDefault from "MessageParser" /* 8302 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10020 */;
+import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 10022 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ export default function useCreateThread(arg0) {
   let useDefaultThreadName;
   ({ parentChannel, parentMessageId, threadSettings, privateThreadMode, location: _location, onThreadCreated, useDefaultThreadName } = arg0);
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  let obj = analyticsLocations(9919);
+  let obj = analyticsLocations(10018);
   let obj2 = {
     parentChannel,
     parentMessageId,
@@ -74,7 +74,7 @@ export function useCreateForumPost(parentChannel) {
   const threadSettings = parentChannel.threadSettings;
   let analyticsLocations;
   ({ appliedTags, onThreadCreated } = parentChannel);
-  analyticsLocations = analyticsLocations(6253)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6348)().analyticsLocations;
   const useCallback = react.useCallback;
   let closure_0 = _asyncToGenerator(async (arg0) => {
     let FirstThreadMessage;
@@ -111,7 +111,7 @@ export function useCreateForumPost(parentChannel) {
   const callback = useCallback(function() {
     return closure_0(...arguments);
   }, items);
-  const tmp2 = parentChannel(9919);
+  const tmp2 = parentChannel(10018);
   let obj = { parentChannel, name: str, appliedTags, analyticsLocations, onThreadCreated, upload: callback };
   str = undefined;
   const useCreateForumPostCommon = tmp2.useCreateForumPostCommon;

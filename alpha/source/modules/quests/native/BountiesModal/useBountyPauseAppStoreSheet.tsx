@@ -1,18 +1,18 @@
-// Module ID: 16367
-// Function ID: 16368
+// Module ID: 16488
+// Function ID: 16489
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6745, 1071, 9757, 9787, 16365, 1107, 6750, 8251, 9789, 8241, 6752, 9843, 16362, 2]
+// Dependencies: [19, 6840, 1071, 9856, 9886, 16486, 1107, 6845, 8350, 9888, 8340, 6847, 9942, 16483, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 16367 (useBountyPauseAppStoreSheet)
+// Module 16488 (useBountyPauseAppStoreSheet)
 import Constants from "Constants" /* 1071 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import AnalyticsActions from "AnalyticsActions" /* 8241 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 9843 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16362 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16365 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
+import AdCreativeType from "AdCreativeType" /* 6847 */;
+import AnalyticsActions from "AnalyticsActions" /* 8340 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 9942 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16483 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16486 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useBountyPauseAppStoreSheet(bounty) {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(9757).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9856).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

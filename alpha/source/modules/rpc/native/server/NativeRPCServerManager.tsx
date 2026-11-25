@@ -1,11 +1,11 @@
-// Module ID: 15690
-// Function ID: 15691
+// Module ID: 15811
+// Function ID: 15812
 // Name: NativeRPCServerManager
-// Dependencies: [15691, 15706, 2]
+// Dependencies: [15812, 15827, 2]
 
-// Module 15690 (NativeRPCServerManager)
-import NativeRPCImplementationDefault from "NativeRPCImplementation" /* 15706 */;
-import RPCServerManager from "RPCServerManager" /* 15691 */;
+// Module 15811 (NativeRPCServerManager)
+import NativeRPCImplementationDefault from "NativeRPCImplementation" /* 15827 */;
+import RPCServerManager from "RPCServerManager" /* 15812 */;
 import size from "module_2" /* 2 */;
 
 const importDefaultResult1 = new RPCServerManager(NativeRPCImplementationDefault);

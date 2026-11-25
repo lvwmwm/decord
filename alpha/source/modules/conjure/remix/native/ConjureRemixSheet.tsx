@@ -1,23 +1,23 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11404
+// Function ID: 11405
 // Name: ConjureRemixSheet
-// Dependencies: [5, 32, 19, 17, 4788, 21, 4917, 575, 11306, 8345, 11307, 1112, 4192, 5131, 11309, 6029, 7046, 11310, 7420, 7381, 7354, 5508, 5515, 7148, 6809, 6014, 6018, 6926, 7125, 7127, 5617, 11339, 2]
+// Dependencies: [5, 32, 19, 17, 4883, 21, 5012, 575, 11405, 8444, 11406, 1112, 4244, 5226, 11408, 6124, 7141, 11409, 7515, 7476, 7449, 5603, 5610, 7243, 6904, 6109, 6113, 7021, 7220, 7222, 5712, 11438, 2]
 // Exports: default
 
-// Module 11305 (ConjureRemixSheet)
+// Module 11404 (ConjureRemixSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5131 */;
-import TableRowIcon4 from "TableRowIcon" /* 6029 */;
-import AppsIcon from "AppsIcon" /* 7046 */;
-import ConjureRemix from "ConjureRemix" /* 11307 */;
-import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 11309 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5226 */;
+import TableRowIcon4 from "TableRowIcon" /* 6124 */;
+import AppsIcon from "AppsIcon" /* 7141 */;
+import ConjureRemix from "ConjureRemix" /* 11406 */;
+import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 11408 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -205,7 +205,7 @@ export default function ConjureRemixSheet(project) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -317,7 +317,7 @@ export default function ConjureRemixSheet(project) {
           closure_130_1(projectId, guildId);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp50) {
         c4 = 3;
         throw tmp50;

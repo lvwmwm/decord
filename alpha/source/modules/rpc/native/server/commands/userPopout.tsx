@@ -1,13 +1,13 @@
-// Module ID: 15787
-// Function ID: 15788
+// Module ID: 15908
+// Function ID: 15909
 // Name: userPopout
-// Dependencies: [5671, 1071, 15701, 15751, 2]
+// Dependencies: [5766, 1071, 15822, 15872, 2]
 
-// Module 15787 (userPopout)
+// Module 15908 (userPopout)
 import Constants from "Constants" /* 1071 */;
-import Constants2 from "Constants" /* 5671 */;
-import commands_userProfile from "commands/userProfile" /* 15751 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15701 */;
+import Constants2 from "Constants" /* 5766 */;
+import commands_userProfile from "commands/userProfile" /* 15872 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15822 */;
 import size from "module_2" /* 2 */;
 
 const RPC_EMBEDDED_APP_SCOPE = Constants2.RPC_EMBEDDED_APP_SCOPE;

@@ -1,22 +1,22 @@
-// Module ID: 9954
-// Function ID: 9955
+// Module ID: 10053
+// Function ID: 10054
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 4788, 9906, 6947, 1071, 8042, 9912, 504, 9914, 1254, 2117, 9911, 9942, 5569, 2]
+// Dependencies: [32, 19, 4883, 10005, 7042, 1071, 8141, 10011, 504, 10013, 1254, 2117, 10010, 10041, 5664, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 9954 (ApplicationCommandQueryApi)
+// Module 10053 (ApplicationCommandQueryApi)
 import Constants from "Constants" /* 1071 */;
 import Server from "Server" /* 2117 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5569 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6947 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8042 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9912 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 9914 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 9942 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5664 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7042 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8141 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10011 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 10013 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 10041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9906 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10005 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -448,7 +448,7 @@ export function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "Array", application: "Path" };
+    return { command: "Array", application: "analyticsLocations" };
   }, items);
 }
 export function useCommandsForApplication(arg0, arg1, arg2) {

@@ -1,8 +1,8 @@
-// Module ID: 12622
-// Function ID: 12623
+// Module ID: 12786
+// Function ID: 12787
 // Dependencies: [2]
 
-// Module 12622
+// Module 12786
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_11_deviantTail.webp.js");

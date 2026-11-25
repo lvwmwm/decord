@@ -1,10 +1,10 @@
-// Module ID: 14562
-// Function ID: 14563
+// Module ID: 14684
+// Function ID: 14685
 // Name: conjurePreviewControlLease
 // Dependencies: [19, 2]
 // Exports: acquireConjureControlLease, beginConjureControlOperation, endConjureControlOperation, getConjureControlActiveProjectIds, isConjureControlActive, releaseConjureControlLeases, setConjureControlTuning, subscribeConjureControlReleased, useConjureControlActive, useConjureControlTuning
 
-// Module 14562 (conjurePreviewControlLease)
+// Module 14684 (conjurePreviewControlLease)
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

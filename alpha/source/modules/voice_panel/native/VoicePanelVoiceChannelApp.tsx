@@ -1,23 +1,23 @@
-// Module ID: 19351
-// Function ID: 19352
+// Module ID: 19463
+// Function ID: 19464
 // Name: VoicePanelVoiceChannelApp
-// Dependencies: [19, 17, 4766, 6839, 11633, 21, 4917, 575, 11634, 5481, 2021, 19284, 1653, 19352, 1706, 19353, 18077, 19309, 504, 2]
+// Dependencies: [19, 17, 4861, 6934, 11732, 21, 5012, 575, 11733, 5576, 2021, 19396, 1653, 19464, 1706, 19465, 18189, 19421, 504, 2]
 // Exports: default
 
-// Module 19351 (VoicePanelVoiceChannelApp)
+// Module 19463 (VoicePanelVoiceChannelApp)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 2021 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11633 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11634 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18077 */;
-import useControlsLockDefault from "useControlsLock" /* 19284 */;
-import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 19309 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18189 */;
+import useControlsLockDefault from "useControlsLock" /* 19396 */;
+import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 19421 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import VoicePanelStore from "VoicePanelStore" /* 6839 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import VoicePanelStore from "VoicePanelStore" /* 6934 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

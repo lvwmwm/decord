@@ -1,9 +1,9 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 11038
+// Function ID: 11039
 // Name: ImageCarouselConstants
 // Dependencies: [2]
 
-// Module 10939 (ImageCarouselConstants)
+// Module 11038 (ImageCarouselConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/image/native/ImageCarouselConstants.tsx");

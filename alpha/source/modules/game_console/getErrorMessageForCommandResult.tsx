@@ -1,12 +1,12 @@
-// Module ID: 19558
-// Function ID: 19559
-// Dependencies: [7634, 1112, 2187, 2]
+// Module ID: 19670
+// Function ID: 19671
+// Dependencies: [7733, 1112, 2187, 2]
 // Exports: default
 
-// Module 19558
+// Module 19670
 import intl14 from "intl" /* 1112 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 7634 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 7733 */;
 import size from "module_2" /* 2 */;
 
 const constants = GameConsoleConstants.GameConsoleCommandResultErrorCodes;

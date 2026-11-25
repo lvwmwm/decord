@@ -1,31 +1,31 @@
-// Module ID: 7598
-// Function ID: 7599
+// Module ID: 7697
+// Function ID: 7698
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4864, 4918, 2142, 7336, 1386, 7599, 1071, 21, 4917, 4854, 504, 5147, 1653, 5127, 6845, 5653, 5654, 1083, 7600, 1284, 1268, 7601, 7603, 7605, 5532, 7391, 1241, 7606, 7607, 5887, 7608, 5984, 7609, 5515, 1112, 6921, 6052, 7611, 14545, 5655, 7604, 14546, 14550, 14549, 14551, 14552, 14553, 14555, 14558, 7362, 2]
+// Dependencies: [5, 32, 19, 17, 4959, 5013, 2142, 7431, 1386, 7698, 1071, 21, 5012, 4949, 504, 5242, 1653, 5222, 6940, 5748, 5749, 1083, 7699, 1284, 1268, 7700, 7702, 7704, 5627, 7486, 1241, 7705, 7706, 5982, 7707, 6079, 7708, 5610, 1112, 7016, 6147, 7710, 14668, 5750, 7703, 14669, 14673, 14672, 14674, 14675, 14676, 14677, 14680, 7457, 2]
 // Exports: default
 
-// Module 7598 (useOAuth2AuthorizeForm)
+// Module 7697 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4854 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5532 */;
-import Authorize from "Authorize" /* 5653 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6845 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6921 */;
-import react_nativeDefault from "react-native" /* 7600 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4949 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5627 */;
+import Authorize from "Authorize" /* 5748 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6940 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7016 */;
+import react_nativeDefault from "react-native" /* 7699 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4864 from "module_4864" /* 4864 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import module_4959 from "module_4959" /* 4959 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import ApplicationRecord from "ApplicationRecord" /* 2142 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7336 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
 import UserStore from "UserStore" /* 1386 */;
-import Constants_mod from "Constants" /* 7599 */;
+import Constants_mod from "Constants" /* 7698 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -38,7 +38,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(5654);
+const scopes2 = tmp4(5749);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -456,7 +456,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -530,7 +530,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               c3 = 0;
               closure_1_48.current = false;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp42) {
             body = tmp42;
@@ -819,7 +819,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -909,7 +909,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           closure_130_56.current = false;
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp57) {
         body = tmp57;
         if (0 === c4) {
@@ -1033,7 +1033,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(7608);
+            const tmp27Result = tmp27(7707);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;

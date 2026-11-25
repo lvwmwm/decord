@@ -1,20 +1,20 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 13022
+// Function ID: 13023
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 4917, 575, 4924, 5126, 12899, 12900, 12838, 9948, 5604, 5508, 1112, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5019, 5221, 13023, 13024, 12962, 10047, 5699, 5603, 1112, 2]
 // Exports: default
 
-// Module 12898 (NoPermsState)
+// Module 13022 (NoPermsState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import shared from "shared" /* 4924 */;
-import useThemeDefault from "useTheme" /* 5126 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12838 */;
+import shared from "shared" /* 5019 */;
+import useThemeDefault from "useTheme" /* 5221 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12962 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -32,15 +32,15 @@ export default function EmptyState() {
   let items;
   const tmp = closure_6();
   const obj = shared;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12899 : 12900);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 13023 : 13024);
   const tmp2Result = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(9948).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(10047).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: items };
   items = [, ];
   const obj3 = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
   items[0] = React3(FastImageDefault, obj3);
   const obj4 = { style: tmp.textContainer, variant: "body-sm/medium", color: "text-muted", children: intl.string(intl2.t.uDnXXj) };
-  const Text = tmp2(5508).Text;
+  const Text = tmp2(5603).Text;
   intl = tmp2(1112).intl;
   items[1] = React3(Text, obj4);
   return hasOwnProperty(View, obj2);

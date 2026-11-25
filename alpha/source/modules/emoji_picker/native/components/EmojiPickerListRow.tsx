@@ -1,24 +1,24 @@
-// Module ID: 9591
-// Function ID: 9592
+// Module ID: 9690
+// Function ID: 9691
 // Name: EmojiPickerListRow
-// Dependencies: [19, 17, 1191, 9399, 1227, 21, 4917, 575, 1378, 671, 7035, 9592, 6026, 5604, 4924, 7363, 7364, 1186, 9593, 2]
+// Dependencies: [19, 17, 1191, 9498, 1227, 21, 5012, 575, 1378, 671, 7130, 9691, 6121, 5699, 5019, 7458, 7459, 1186, 9692, 2]
 
-// Module 9591 (EmojiPickerListRow)
+// Module 9690 (EmojiPickerListRow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
-import shared from "shared" /* 4924 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import Pressables from "Pressables" /* 6026 */;
-import LockIcon from "LockIcon" /* 7035 */;
-import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9592 */;
-import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9593 */;
+import shared from "shared" /* 5019 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import Pressables from "Pressables" /* 6121 */;
+import LockIcon from "LockIcon" /* 7130 */;
+import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9691 */;
+import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9692 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9399 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9498 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
@@ -84,9 +84,9 @@ class EmojiItem {
       const tmp2Result = FastImageDefault;
       const tmp6Result = shared;
       if (tmp6Result.isThemeDark(ThemeStore.theme)) {
-        tmp2Result2 = tmp2(7363);
+        tmp2Result2 = tmp2(7458);
       } else {
-        tmp2Result2 = tmp2(7364);
+        tmp2Result2 = tmp2(7459);
       }
       obj3 = { uri: tmp4 };
       tmp10Result = tmp10(tmp2Result, obj2);

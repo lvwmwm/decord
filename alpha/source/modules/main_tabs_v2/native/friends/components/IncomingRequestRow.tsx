@@ -1,19 +1,19 @@
-// Module ID: 18915
-// Function ID: 18916
+// Module ID: 19027
+// Function ID: 19028
 // Name: IncomingRequestRow
-// Dependencies: [19, 4918, 2164, 8803, 1071, 21, 1653, 563, 1112, 4973, 17603, 13452, 11211, 18118, 18916, 2]
+// Dependencies: [19, 5013, 2164, 8902, 1071, 21, 1653, 563, 1112, 5068, 17714, 13575, 11310, 18230, 19028, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 18915 (IncomingRequestRow)
+// Module 19027 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
-import UserUtilsDefault from "UserUtils" /* 4973 */;
-import UserRowConstants from "UserRowConstants" /* 8803 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13452 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17603 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import UserRowConstants from "UserRowConstants" /* 8902 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13575 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17714 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import size from "module_2" /* 2 */;
 

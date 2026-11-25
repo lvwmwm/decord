@@ -1,10 +1,10 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13549
+// Function ID: 13550
 // Name: getMutualGuildsLabel
 // Dependencies: [1112, 2]
 // Exports: default
 
-// Module 13426 (getMutualGuildsLabel)
+// Module 13549 (getMutualGuildsLabel)
 import intl4 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 

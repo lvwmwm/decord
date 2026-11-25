@@ -1,12 +1,12 @@
-// Module ID: 7979
-// Function ID: 7980
+// Module ID: 8078
+// Function ID: 8079
 // Name: ForumSearchStore
-// Dependencies: [4766, 504, 572, 2]
+// Dependencies: [4861, 504, 572, 2]
 
-// Module 7979 (ForumSearchStore)
+// Module 8078 (ForumSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, results;

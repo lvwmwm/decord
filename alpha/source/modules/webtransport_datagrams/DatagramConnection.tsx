@@ -1,12 +1,12 @@
-// Module ID: 14921
-// Function ID: 14922
+// Module ID: 15043
+// Function ID: 15044
 // Name: DatagramConnection
-// Dependencies: [5745, 14922, 14923, 5834, 2]
+// Dependencies: [5840, 15044, 15045, 5929, 2]
 
-// Module 14921 (DatagramConnection)
-import RTCConnectionEvent from "RTCConnectionEvent" /* 5834 */;
-import DatagramEvent from "DatagramEvent" /* 14922 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5745 */;
+// Module 15043 (DatagramConnection)
+import RTCConnectionEvent from "RTCConnectionEvent" /* 5929 */;
+import DatagramEvent from "DatagramEvent" /* 15044 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5840 */;
 import size from "module_2" /* 2 */;
 
 const React2 = { Closed: 0, [0]: "Closed", Connecting: 1, [1]: "Connecting", Connected: 2, [2]: "Connected" };
@@ -23,13 +23,13 @@ class DatagramConnection extends TypedEventEmitter {
     obj.rtc = rtc;
     const onWebTransportAck = obj.onWebTransportAck;
     obj.webTransportAck = onWebTransportAck.bind(obj);
-    obj.on(obj(14922).DatagramEvent.Connect, () => {
+    obj.on(obj(15044).DatagramEvent.Connect, () => {
       obj.state = Connected.Connected;
       obj.clearConnectTimeout();
     });
     ({ on, onDisconnect } = obj);
-    on(obj(14922).DatagramEvent.Disconnect, onDisconnect.bind(obj));
-    const obj2 = obj(14923);
+    on(obj(15044).DatagramEvent.Disconnect, onDisconnect.bind(obj));
+    const obj2 = obj(15045);
     obj.worker = obj2.createDatagramWorker();
     if (null != obj.worker) {
       obj.worker.onmessage = (data) => {
@@ -47,7 +47,7 @@ class DatagramConnection extends TypedEventEmitter {
       self.started = true;
       self.state = Connecting.Connecting;
       let rtc = self.rtc;
-      rtc.on(self(5834).RTCConnectionEvent.WebTransportAck, self.webTransportAck);
+      rtc.on(self(5929).RTCConnectionEvent.WebTransportAck, self.webTransportAck);
       const _setTimeout = setTimeout;
       self.connectTimeout = setTimeout(() => {
         if (self.state === Connecting.Connecting) {
@@ -124,7 +124,7 @@ class DatagramConnection extends TypedEventEmitter {
       if (isConnected) {
         if (worker != null) {
           const postMessage = worker.postMessage;
-          const items = [tmp3(14922).DatagramCommand.Close];
+          const items = [tmp3(15044).DatagramCommand.Close];
           postMessage(items);
         }
       } else if (worker != null) {

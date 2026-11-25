@@ -1,73 +1,43 @@
 // Module ID: 5437
 // Function ID: 5438
-// Dependencies: [5390, 19, 5435]
-// Exports: useOnListLoad
+// Dependencies: [19, 21, 5249, 1653, 5245, 5255]
+// Exports: default
 
 // Module 5437
-import _slicedToArray2 from "_slicedToArray" /* 5435 */;
-import _slicedToArray from "_slicedToArray" /* 5390 */;
-import react from "react" /* 19 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5245 */;
+import _mod5249 from "module_5249" /* 5249 */;
+import BottomSheetContext from "BottomSheetContext" /* 5255 */;
 
-let isFirstLayoutComplete;
+const useMemo = react2.useMemo;
+const jsx = Fragment.jsx;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
-function useOnLoad(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = hasOwnProperty(false);
-  _false(() => {
-    isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
-    if (isFirstLayoutComplete) {
-      ref.current = true;
-      f87794();
-    }
-  });
-}
-
-export const useOnListLoad = (getDataLength, arg1) => {
-  let closure_129_3;
-  let tmp3;
-  let closure_0 = getDataLength;
-  let closure_1 = arg1;
-  let tmp = hasOwnProperty;
-  let closure_2 = hasOwnProperty(Date.now());
-  [tmp3, closure_129_3] = _slicedToArray(metroRequire(false), 2);
-  const tmp2 = _slicedToArray(metroRequire(false), 2);
-  const dataLength = getDataLength.getDataLength();
-  let obj = _slicedToArray2;
-  const requestAnimationFrame = obj.useUnmountAwareAnimationFrame().requestAnimationFrame;
-  const items = [dataLength];
-  React3(() => {
-    closure_2.current = Date.now();
-  }, items);
-  if (typeof useOnLoad === "function") {
-    closure_0 = getDataLength;
-    const f87794 = () => {
-      const elapsedTimeInMs = Date.now() - ref.current;
-      const tmp = closure_4(() => {
-        elapsedTimeInMs.isFirstPaintOnUiComplete = true;
-        if (f87794 != null) {
-          const obj = { elapsedTimeInMs };
-          tmp(obj);
-        }
-        closure_2_3(true);
-      });
-    };
-    closure_2 = tmp(false);
-    _false(() => {
-      isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
-      if (isFirstLayoutComplete) {
-        ref.current = true;
-        f87794();
-      }
-    });
-    return { isLoaded: tmp3 };
-  } else {
-    throw new TypeError("Trying to call a non-function");
+export default function _default(gestureEventsHandlersHook) {
+  let animatedContentGestureState;
+  let animatedHandleGestureState;
+  let handleOnChange;
+  let handleOnEnd;
+  let handleOnFinalize;
+  let handleOnStart;
+  let useGestureEventsHandlersDefault = gestureEventsHandlersHook.gestureEventsHandlersHook;
+  if (useGestureEventsHandlersDefault === undefined) {
+    useGestureEventsHandlersDefault = _mod5249.useGestureEventsHandlersDefault;
   }
+  const children = gestureEventsHandlersHook.children;
+  const obj = _mod1653;
+  const sharedValue = obj.useSharedValue(GESTURE_SOURCE.GESTURE_SOURCE.UNDETERMINED);
+  const obj2 = _mod5249;
+  const bottomSheetInternal = obj2.useBottomSheetInternal();
+  ({ animatedHandleGestureState, animatedContentGestureState } = bottomSheetInternal);
+  ({ handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize } = useGestureEventsHandlersDefault());
+  useGestureEventsHandlersDefault();
+  const obj3 = _mod5249;
+  const gestureHandler = obj3.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.CONTENT, animatedContentGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
+  const obj4 = _mod5249;
+  const gestureHandler1 = obj4.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.HANDLE, animatedHandleGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
+  const items = [gestureHandler, gestureHandler1, sharedValue];
+  const value = useMemo(() => ({ contentPanGestureHandler: gestureHandler, handlePanGestureHandler: gestureHandler1, animatedGestureSource: sharedValue }), items);
+  return jsx(BottomSheetContext.BottomSheetGestureHandlersContext.Provider, { value, children });
 };
-export { useOnLoad };

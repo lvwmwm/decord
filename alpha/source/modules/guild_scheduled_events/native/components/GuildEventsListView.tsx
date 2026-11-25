@@ -1,15 +1,15 @@
-// Module ID: 14147
-// Function ID: 14148
+// Module ID: 14270
+// Function ID: 14271
 // Name: GuildEventsListView
-// Dependencies: [19, 17, 21, 575, 1628, 5149, 14148, 7356, 14149, 11, 2]
+// Dependencies: [19, 17, 21, 575, 1628, 5244, 14271, 7451, 14272, 11, 2]
 // Exports: default
 
-// Module 14147 (GuildEventsListView)
+// Module 14270 (GuildEventsListView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 14148 */;
-import GuildEventCardDefault from "GuildEventCard" /* 14149 */;
+import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 14271 */;
+import GuildEventCardDefault from "GuildEventCard" /* 14272 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

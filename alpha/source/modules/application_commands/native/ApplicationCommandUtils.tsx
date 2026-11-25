@@ -1,20 +1,20 @@
-// Module ID: 13009
-// Function ID: 13010
+// Module ID: 13132
+// Function ID: 13133
 // Name: application_commands/ApplicationCommandUtils
-// Dependencies: [7976, 7983, 6947, 1412, 13010, 13011, 5569, 2107, 10940, 9921, 2]
+// Dependencies: [8075, 8082, 7042, 1412, 13133, 13134, 5664, 2107, 11039, 10020, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 13009 (application_commands/ApplicationCommandUtils)
+// Module 13132 (application_commands/ApplicationCommandUtils)
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import AssetRegistryDefault from "AssetRegistry" /* 2107 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5569 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6947 */;
-import DraftStore from "DraftStore" /* 7976 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9921 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10940 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13010 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13011 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7983 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5664 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7042 */;
+import DraftStore from "DraftStore" /* 8075 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10020 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 11039 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13133 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13134 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8082 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;

@@ -1,20 +1,20 @@
-// Module ID: 19649
-// Function ID: 19650
+// Module ID: 19751
+// Function ID: 19752
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 6250, 1071, 21, 4917, 575, 1628, 504, 15883, 19630, 9361, 9371, 7995, 11799, 6249, 5508, 1112, 19639, 5515, 19627, 2]
+// Dependencies: [5, 32, 19, 17, 6345, 1071, 21, 5012, 575, 1628, 504, 16004, 19732, 9460, 9470, 8094, 11898, 6344, 5603, 1112, 19741, 5610, 19729, 2]
 // Exports: default
 
-// Module 19649 (RedesignAddAvatarModal)
+// Module 19751 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19627 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19729 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6250 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6345 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export default function RedesignAddAvatarModal(route) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ export default function RedesignAddAvatarModal(route) {
                 closure_129_1(true);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             pendingImage = undefined;
             if (null != base64) {

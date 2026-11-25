@@ -1,27 +1,27 @@
-// Module ID: 16396
-// Function ID: 16397
+// Module ID: 16517
+// Function ID: 16518
 // Name: BountiesScrollEndCard
-// Dependencies: [19, 17, 4918, 6745, 21, 4917, 575, 5127, 5130, 1653, 5472, 16397, 16399, 16356, 504, 16357, 9433, 2]
+// Dependencies: [19, 17, 5013, 6840, 21, 5012, 575, 5222, 5225, 1653, 5567, 16518, 16520, 16477, 504, 16478, 9532, 2]
 // Exports: default
 
-// Module 16396 (BountiesScrollEndCard)
+// Module 16517 (BountiesScrollEndCard)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import timingPresets from "timingPresets" /* 5130 */;
-import LinearGradientDefault from "LinearGradient" /* 5472 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9433 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16356 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16357 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 16397 */;
-import BountiesModalEndedCtaButtonsDefault from "BountiesModalEndedCtaButtons" /* 16399 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import timingPresets from "timingPresets" /* 5225 */;
+import LinearGradientDefault from "LinearGradient" /* 5567 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9532 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16477 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16478 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 16518 */;
+import BountiesModalEndedCtaButtonsDefault from "BountiesModalEndedCtaButtons" /* 16520 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;

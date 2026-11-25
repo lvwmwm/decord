@@ -1,11 +1,11 @@
-// Module ID: 7934
-// Function ID: 7935
+// Module ID: 8033
+// Function ID: 8034
 // Name: PlayAgeSignals
-// Dependencies: [5, 7935, 7936, 2]
+// Dependencies: [5, 8034, 8035, 2]
 // Exports: getAgeSignals
 
-// Module 7934 (PlayAgeSignals)
-import react_nativeDefault from "react-native" /* 7935 */;
+// Module 8033 (PlayAgeSignals)
+import react_nativeDefault from "react-native" /* 8034 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj = function _getAgeSignals() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

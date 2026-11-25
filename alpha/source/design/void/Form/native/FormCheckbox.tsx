@@ -1,14 +1,14 @@
-// Module ID: 7378
-// Function ID: 7379
+// Module ID: 7473
+// Function ID: 7474
 // Name: FormCheckbox
-// Dependencies: [19, 21, 4917, 1186, 2]
+// Dependencies: [19, 21, 5012, 1186, 2]
 // Exports: default
 
-// Module 7378 (FormCheckbox)
+// Module 7473 (FormCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

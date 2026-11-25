@@ -1,16 +1,16 @@
-// Module ID: 14015
-// Function ID: 14016
+// Module ID: 14138
+// Function ID: 14139
 // Name: GameProfileCommunity
-// Dependencies: [19, 21, 14013, 14012, 14016, 8651, 8613, 8459, 14017, 1112, 4780, 2]
+// Dependencies: [19, 21, 14136, 14135, 14139, 8750, 8712, 8558, 14140, 1112, 4875, 2]
 // Exports: default
 
-// Module 14015 (GameProfileCommunity)
+// Module 14138 (GameProfileCommunity)
 import Fragment from "Fragment" /* 21 */;
-import transitionToGuild from "transitionToGuild" /* 8459 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8613 */;
-import GameProfileSection from "GameProfileSection" /* 14012 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 14013 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 14017 */;
+import transitionToGuild from "transitionToGuild" /* 8558 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8712 */;
+import GameProfileSection from "GameProfileSection" /* 14135 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 14136 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 14140 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 14233
-// Function ID: 14234
+// Module ID: 14356
+// Function ID: 14357
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [6686, 4766, 4849, 1071, 1112, 2187, 11853, 11, 6677, 14197, 14198, 2]
+// Dependencies: [6781, 4861, 4944, 1071, 1112, 2187, 11952, 11, 6772, 14320, 14321, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 14233 (StageRaiseHandSystemMessage)
+// Module 14356 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl5 from "intl" /* 1112 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 11853 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14197 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6686 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 11952 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14320 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6781 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ export function createStageRaiseHandSystemMessage(message) {
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(6677).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(6772).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -84,6 +84,6 @@ export function createStageRaiseHandSystemMessage(message) {
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(14198)(message));
+  const merged = Object.assign(tmp6(14321)(message));
   return obj3;
 }

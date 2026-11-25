@@ -1,17 +1,17 @@
-// Module ID: 18292
-// Function ID: 18293
+// Module ID: 18404
+// Function ID: 18405
 // Name: useConjureStartPublish
-// Dependencies: [5, 19, 6808, 7576, 11313, 18293, 18294, 2]
+// Dependencies: [5, 19, 6903, 7675, 11412, 18405, 18406, 2]
 // Exports: default
 
-// Module 18292 (useConjureStartPublish)
-import useConjurePublishAction from "useConjurePublishAction" /* 11313 */;
-import conjurePublishReview from "conjurePublishReview" /* 18293 */;
-import openConjurePublishReview from "openConjurePublishReview" /* 18294 */;
+// Module 18404 (useConjureStartPublish)
+import useConjurePublishAction from "useConjurePublishAction" /* 11412 */;
+import conjurePublishReview from "conjurePublishReview" /* 18405 */;
+import openConjurePublishReview from "openConjurePublishReview" /* 18406 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7576 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7675 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let obj = function _publishNow() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -70,7 +70,7 @@ let obj = function _publishNow() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;

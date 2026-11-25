@@ -1,17 +1,17 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11341
+// Function ID: 11342
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 4788, 21, 4917, 504, 7459, 11243, 11244, 11246, 11250, 11254, 2]
+// Dependencies: [19, 17, 4883, 21, 5012, 504, 7554, 11342, 11343, 11345, 11349, 11353, 2]
 // Exports: default
 
-// Module 11242 (LeaderboardWinnerBadge)
+// Module 11341 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import canUseGuildSpace from "canUseGuildSpace" /* 7459 */;
-import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 11243 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 7554 */;
+import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 11342 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import createStyles from "createStyles" /* 4917 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -36,14 +36,14 @@ export default function LeaderboardWinnerBadge(guildId) {
     return result;
   }, items1);
   const tmp5 = useActiveLeaderboardWinnerDataDefault(guildId, userId);
-  const obj2 = guildId(11243);
+  const obj2 = guildId(11342);
   const activeLeaderboardLeaderData = obj2.useActiveLeaderboardLeaderData(guildId, userId);
   if (stateFromStores) {
     if (null == tmp5) {
       let tmp9 = null;
       if (null != activeLeaderboardLeaderData) {
-        tmp9 = <View style={tmp.container} accessible accessibilityLabel={guildId(11244).getLeaderboardLeaderBadgeText(activeLeaderboardLeaderData)}>{null}</View>;
-        const tmp2Result = guildId(11244);
+        tmp9 = <View style={tmp.container} accessible accessibilityLabel={guildId(11343).getLeaderboardLeaderBadgeText(activeLeaderboardLeaderData)}>{null}</View>;
+        const tmp2Result = guildId(11343);
       }
       return tmp9;
     } else {
@@ -52,11 +52,11 @@ export default function LeaderboardWinnerBadge(guildId) {
         num = 0;
       }
       if (num > 1) {
-        let WinnerTrophyBadge = tmp2(11250).StreakTrophyBadge;
+        let WinnerTrophyBadge = tmp2(11349).StreakTrophyBadge;
       } else {
-        WinnerTrophyBadge = tmp2(11254).WinnerTrophyBadge;
+        WinnerTrophyBadge = tmp2(11353).WinnerTrophyBadge;
       }
-      const tmp2Result2 = guildId(11244);
+      const tmp2Result2 = guildId(11343);
       return <View style={tmp.container} accessible accessibilityLabel={tmp2Result2.getLeaderboardWinnerBadgeText(tmp5)}>{null}</View>;
     }
   } else {

@@ -1,9 +1,9 @@
-// Module ID: 17851
-// Function ID: 17852
+// Module ID: 17963
+// Function ID: 17964
 // Name: WaterwheelsDiscoverAnalyticsSession
 // Dependencies: [5, 32, 1268, 2]
 
-// Module 17851 (WaterwheelsDiscoverAnalyticsSession)
+// Module 17963 (WaterwheelsDiscoverAnalyticsSession)
 import v1 from "v1" /* 1268 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -375,7 +375,7 @@ class WaterwheelsDiscoverAnalyticsSession {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -411,7 +411,7 @@ class WaterwheelsDiscoverAnalyticsSession {
               c2 = 0;
             }
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           if (0 === c2) {

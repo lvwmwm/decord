@@ -1,9 +1,0 @@
-// Module ID: 15353
-// Function ID: 15354
-// Dependencies: [15345]
-
-// Module 15353
-import _mod15345 from "module_15345" /* 15345 */;
-
-
-export default (arg0, arg1, arg2) => 0 === _mod15345(arg0, arg1, arg2);

@@ -1,11 +1,11 @@
-// Module ID: 13123
-// Function ID: 13124
+// Module ID: 13246
+// Function ID: 13247
 // Name: SearchTokensUtils
-// Dependencies: [5542, 2]
+// Dependencies: [5637, 2]
 // Exports: makeRegexForOptionsWithNegation, validateForMapWithNegation
 
-// Module 13123 (SearchTokensUtils)
-import RegexUtilsDefault from "RegexUtils" /* 5542 */;
+// Module 13246 (SearchTokensUtils)
+import RegexUtilsDefault from "RegexUtils" /* 5637 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/search/tokens/SearchTokensUtils.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 16239
-// Function ID: 16240
+// Module ID: 16360
+// Function ID: 16361
 // Name: FamilyCenterActivityGiftRowUtils
-// Dependencies: [1112, 2168, 6199, 2824, 2]
+// Dependencies: [1112, 2168, 6294, 2846, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 16239 (FamilyCenterActivityGiftRowUtils)
+// Module 16360 (FamilyCenterActivityGiftRowUtils)
 import intl3 from "intl" /* 1112 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import _modDef2824 from "module_2824" /* 2824 */;
-import PriceUtils from "PriceUtils" /* 6199 */;
+import _modDef2846 from "module_2846" /* 2846 */;
+import PriceUtils from "PriceUtils" /* 6294 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
@@ -44,12 +44,12 @@ export function getGiftSubtext(claimed) {
     if (null != gifterName) {
       const intl = intl3.intl;
       const obj2 = { price: formatPriceResult, username: gifterName };
-      formatToPlainStringResult = intl.formatToPlainString(_modDef2824["o44n/1"], obj2);
+      formatToPlainStringResult = intl.formatToPlainString(_modDef2846["o44n/1"], obj2);
     }
     const items = [formatToPlainStringResult, ];
     const intl2 = intl3.intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const tmp11 = _modDef2824;
+    const tmp11 = _modDef2846;
     if (claimed) {
       const kDyllq = tmp11.kDyllq;
       if (claimedAt == null) {

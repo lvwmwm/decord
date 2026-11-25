@@ -1,15 +1,12 @@
 // Module ID: 10910
 // Function ID: 10911
-// Dependencies: [41, 42, 93, 95, 98, 10903, 10736, 10737, 10741]
+// Dependencies: [41, 42, 93, 95, 98, 10852]
 
 // Module 10910
-import EmptyDuration from "EmptyDuration" /* 10736 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10737 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10741 */;
-import _mod10903 from "module_10903" /* 10903 */;
+import _mod10852 from "module_10852" /* 10852 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -28,45 +25,61 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod10903.TIME_UNITS_PATTERN + ")\\s{0,5}(?:fa|prima|precedente)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod10903.TIME_UNITS_PATTERN + ")\\s{0,5}fa(?=(?:\\W|$))", "i");
-class ENTimeUnitAgoFormatParser {
-  constructor(strictMode) {
+class JPMergeWeekdayComponentRefiner {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
+    _classCallCheck(this, JPMergeWeekdayComponentRefiner);
+    const obj = _getPrototypeOf(JPMergeWeekdayComponentRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(JPMergeWeekdayComponentRefiner, _mod10852.MergingRefiner);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+  key: "mergeResults",
+  value: function mergeResults(arg0, clone, text) {
+    const cloneResult = clone.clone();
+    cloneResult.text = clone.text + arg0 + text.text;
+    const start = cloneResult.start;
+    const start2 = text.start;
+    start.assign("weekday", start2.get("weekday"));
+    if (cloneResult.end) {
+      const end = cloneResult.end;
+      const start3 = text.start;
+      end.assign("weekday", start3.get("weekday"));
+    }
+    return cloneResult;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10903.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, start, start2) {
+      start = start.start;
+      let isCertainResult = start.isCertain("day");
+      if (isCertainResult) {
+        start2 = start2.start;
+        isCertainResult = start2.isOnlyWeekdayComponent();
+      }
+      if (isCertainResult) {
+        const start3 = start2.start;
+        isCertainResult = !start3.isCertain("hour");
+      }
+      if (isCertainResult) {
+        isCertainResult = null !== str.match(/^[,、の]?\s*$/);
+      }
+      return isCertainResult;
     }
   }
 ];
 
-export default _createClass(ENTimeUnitAgoFormatParser, items);
+export default _createClass(JPMergeWeekdayComponentRefiner, items);

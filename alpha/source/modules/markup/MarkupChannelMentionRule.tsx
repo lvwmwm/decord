@@ -1,25 +1,25 @@
-// Module ID: 6954
-// Function ID: 6955
+// Module ID: 7049
+// Function ID: 7050
 // Name: MarkupChannelMentionRule
-// Dependencies: [4821, 4766, 4788, 4849, 4859, 1386, 1071, 2152, 1412, 1112, 6955, 6675, 5533, 6956, 5540, 6953, 2068, 2]
+// Dependencies: [4916, 4861, 4883, 4944, 4954, 1386, 1071, 2152, 1412, 1112, 7050, 6770, 5628, 7051, 5635, 7048, 2068, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 6954 (MarkupChannelMentionRule)
+// Module 7049 (MarkupChannelMentionRule)
 import intl3 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import _modDef2068 from "module_2068" /* 2068 */;
 import StringUtils from "StringUtils" /* 2152 */;
-import useChannelName from "useChannelName" /* 5533 */;
-import LinkUtils from "LinkUtils" /* 5540 */;
-import ChannelUtils from "ChannelUtils" /* 6675 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 6953 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6955 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 6956 */;
-import GatedChannelStore from "GatedChannelStore" /* 4821 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import useChannelName from "useChannelName" /* 5628 */;
+import LinkUtils from "LinkUtils" /* 5635 */;
+import ChannelUtils from "ChannelUtils" /* 6770 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 7048 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 7050 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 7051 */;
+import GatedChannelStore from "GatedChannelStore" /* 4916 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

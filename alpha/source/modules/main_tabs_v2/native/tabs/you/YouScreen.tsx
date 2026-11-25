@@ -1,10 +1,10 @@
-// Module ID: 18934
-// Function ID: 18935
+// Module ID: 19046
+// Function ID: 19047
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 6037, 2188, 16020, 6850, 1386, 17991, 1071, 1073, 4763, 7431, 21, 1653, 10337, 4917, 1358, 575, 671, 5094, 563, 1112, 6026, 15870, 8345, 14675, 5990, 1263, 6036, 1628, 9344, 5126, 14681, 5096, 1494, 4742, 1501, 18935, 1412, 9370, 7183, 14085, 6255, 9901, 9349, 14672, 6254, 9363, 4874, 4750, 9420, 5604, 18936, 12750, 5495, 18944, 18945, 4978, 18946, 9364, 9355, 14678, 1089, 10958, 9329, 18948, 12358, 6183, 10970, 7968, 6184, 9388, 8108, 2]
+// Dependencies: [32, 19, 17, 6132, 2188, 16141, 6945, 1386, 18103, 1071, 1073, 4858, 7526, 21, 1653, 10436, 5012, 1358, 575, 671, 5189, 563, 1112, 6121, 15991, 8444, 14797, 6085, 1263, 6131, 1628, 9443, 5221, 14803, 5191, 1494, 4837, 1501, 19047, 1412, 9469, 7278, 14208, 6350, 10000, 9448, 14794, 6349, 9462, 4969, 4845, 9519, 5699, 19048, 12912, 5590, 19056, 19057, 5073, 19058, 9463, 9454, 14800, 1089, 11057, 9428, 19060, 12522, 6278, 11069, 8067, 6279, 9487, 8207, 2]
 // Exports: default
 
-// Module 18934 (YouScreen)
+// Module 19046 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,25 +12,25 @@ import Constants2 from "Constants" /* 1071 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import intl4 from "intl" /* 1112 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import RootNavigationRef from "RootNavigationRef" /* 5094 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6183 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 10337 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 14085 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 15870 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import RootNavigationRef from "RootNavigationRef" /* 5189 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6278 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 10436 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 14208 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 15991 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileStore from "UserProfileStore" /* 6037 */;
+import UserProfileStore from "UserProfileStore" /* 6132 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16020 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6850 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16141 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6945 */;
 import UserStore from "UserStore" /* 1386 */;
-import YouConstants from "YouConstants" /* 17991 */;
-import Constants from "Constants" /* 7431 */;
+import YouConstants from "YouConstants" /* 18103 */;
+import Constants from "Constants" /* 7526 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1653_mod from "module_1653" /* 1653 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -76,7 +76,7 @@ function BackButton(paddingTop) {
   }
   const obj3 = { style: items1, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: handleBackButtonPress, children: closure_21(BackIconWithBadge.CloseIconWithBadgeOnSide, { count: stateFromStores }) };
   items1 = [tmp.backButton, { top: paddingTop }];
-  const PressableOpacity = tmp2(6026).PressableOpacity;
+  const PressableOpacity = tmp2(6121).PressableOpacity;
   return closure_21(PressableOpacity, obj3);
 }
 function UnconnectedYouScreen(isCard) {

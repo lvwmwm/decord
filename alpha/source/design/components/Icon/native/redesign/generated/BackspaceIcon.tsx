@@ -1,14 +1,14 @@
-// Module ID: 9656
-// Function ID: 9657
+// Module ID: 9755
+// Function ID: 9756
 // Name: BackspaceIcon
-// Dependencies: [19, 21, 575, 5603, 9657, 2]
+// Dependencies: [19, 21, 575, 5698, 9756, 2]
 // Exports: BackspaceIcon
 
-// Module 9656 (BackspaceIcon)
+// Module 9755 (BackspaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 9657 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 9756 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

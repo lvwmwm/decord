@@ -1,11 +1,11 @@
-// Module ID: 18321
-// Function ID: 18322
+// Module ID: 18433
+// Function ID: 18434
 // Name: useIsConjureProjectLive
-// Dependencies: [7576, 504, 11329, 2]
+// Dependencies: [7675, 504, 11428, 2]
 // Exports: default
 
-// Module 18321 (useIsConjureProjectLive)
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7576 */;
+// Module 18433 (useIsConjureProjectLive)
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7675 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/useIsConjureProjectLive.tsx");
@@ -36,7 +36,7 @@ export default function useIsConjureProjectLive(id) {
     return tmp2;
   }, items1);
   if (null != stateFromStores) {
-    const tmp2Result = tmp2(11329);
+    const tmp2Result = tmp2(11428);
     isConjureLiveResult = tmp2Result.isConjureLive(stateFromStores);
   } else {
     let num;

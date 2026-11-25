@@ -1,19 +1,19 @@
-// Module ID: 13105
-// Function ID: 13106
+// Module ID: 13228
+// Function ID: 13229
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 4847, 1386, 1071, 21, 4917, 5471, 6864, 7995, 13092, 6865, 4780, 10301, 7354, 13106, 2]
+// Dependencies: [5, 32, 19, 4942, 1386, 1071, 21, 5012, 5566, 6959, 8094, 13215, 6960, 4875, 10400, 7449, 13229, 2]
 // Exports: default
 
-// Module 13105 (CreateGuildContainer)
+// Module 13228 (CreateGuildContainer)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
-import NavigatorConstants from "NavigatorConstants" /* 5471 */;
+import NavigatorConstants from "NavigatorConstants" /* 5566 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4847 */;
+import GuildChannelStore from "GuildChannelStore" /* 4942 */;
 import UserStore from "UserStore" /* 1386 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, currentUser, set;
@@ -86,7 +86,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ export default function CreateGuildContainer(onCreate) {
             closure_129_6(base64);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -146,7 +146,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -258,7 +258,7 @@ export default function CreateGuildContainer(onCreate) {
         }
         closure_129_7(false);
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp36) {
         channel = tmp36;
         if (0 === c3) {

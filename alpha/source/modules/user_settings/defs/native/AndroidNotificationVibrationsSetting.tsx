@@ -1,29 +1,30 @@
-// Module ID: 16945
-// Function ID: 16946
+// Module ID: 17066
+// Function ID: 17067
 // Name: AndroidNotificationVibrationsSetting
-// Dependencies: [16924, 9414, 1378, 16926, 1112, 11815, 15681, 16930, 2]
+// Dependencies: [17045, 9513, 1378, 17047, 1112, 11914, 15802, 3206, 17051, 2]
 
-// Module 16945 (AndroidNotificationVibrationsSetting)
+// Module 17066 (AndroidNotificationVibrationsSetting)
 import intl2 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15681 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16926 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16924 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11815 */;
+import _modDef3206 from "module_3206" /* 3206 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15802 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17047 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17045 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
-let c2;
+let c3;
 let setAndroidNotificationVibrationsEnabled;
-({ useAndroidNotificationVibrationsEnabled: c2, setAndroidNotificationVibrationsEnabled } = AndroidNotificationSettingsStore);
+({ useAndroidNotificationVibrationsEnabled: c3, setAndroidNotificationVibrationsEnabled } = AndroidNotificationSettingsStore);
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t["lFg/O1"]);
   },
   useValue: function useAndroidNotificationVibrationsSettingValue() {
-    let flag = React2();
+    let flag = _false();
     if (flag == null) {
       flag = false;
     }
@@ -37,7 +38,7 @@ const createToggle = SettingBuilders.createToggle;
 const obj2 = {
   parent: MobileUserSettings.NOTIFICATIONS,
   usePredicate() {
-    const tmp = React2();
+    const tmp = _false();
     const obj = PlatformUtils;
     let tmp5 = !obj.isIOS();
     obj.isIOS();
@@ -60,9 +61,13 @@ const toggle = createToggle(obj2);
 SettingBuilders = SettingBuilders_mod;
 const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(_modDef3206.KHzigZ);
+  },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
-    const tmp = React2();
+    const tmp = _false();
     const obj = PlatformUtils;
     let isDeclarativeSettingsUIAvailable = !obj.isIOS();
     obj.isIOS();

@@ -1,13 +1,13 @@
-// Module ID: 9063
-// Function ID: 9064
+// Module ID: 9162
+// Function ID: 9163
 // Name: collection_page_marketing_block
-// Dependencies: [32, 1196, 9028, 9032, 9030, 2]
+// Dependencies: [32, 1196, 9127, 9131, 9129, 2]
 
-// Module 9063 (collection_page_marketing_block)
+// Module 9162 (collection_page_marketing_block)
 import _mod1196 from "module_1196" /* 1196 */;
-import localized_string from "localized_string" /* 9028 */;
-import cta_button from "cta_button" /* 9030 */;
-import theme_aware_asset from "theme_aware_asset" /* 9032 */;
+import localized_string from "localized_string" /* 9127 */;
+import cta_button from "cta_button" /* 9129 */;
+import theme_aware_asset from "theme_aware_asset" /* 9131 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

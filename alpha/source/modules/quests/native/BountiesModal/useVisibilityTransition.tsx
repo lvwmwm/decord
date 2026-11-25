@@ -1,13 +1,13 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 16478
+// Function ID: 16479
 // Name: useVisibilityTransition
-// Dependencies: [32, 19, 1653, 5127, 1706, 2]
+// Dependencies: [32, 19, 1653, 5222, 1706, 2]
 // Exports: useVisibilityTransition
 
-// Module 16357 (useVisibilityTransition)
+// Module 16478 (useVisibilityTransition)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5127 */;
+import timing_timing from "timing/timing" /* 5222 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

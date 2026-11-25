@@ -1,17 +1,17 @@
-// Module ID: 11106
-// Function ID: 11107
+// Module ID: 11205
+// Function ID: 11206
 // Name: CollectiblesPromoPriceUtils
-// Dependencies: [32, 19, 7468, 10981, 10982, 1071, 1088, 7469, 11107, 504, 2]
+// Dependencies: [32, 19, 7563, 11080, 11081, 1071, 1088, 7564, 11206, 504, 2]
 // Exports: areStorefrontPricingPromotionsActive, getCollectiblesPremiumPromoPrice, getCollectiblesPromoPrice, isCollectiblesPromotionPricingFresh, isStorefrontPromotionActive, useCollectiblesStorefrontPrices
 
-// Module 11106 (CollectiblesPromoPriceUtils)
+// Module 11205 (CollectiblesPromoPriceUtils)
 import DurationsDefault from "Durations" /* 1088 */;
-import StorefrontTypes from "StorefrontTypes" /* 7469 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 10982 */;
+import StorefrontTypes from "StorefrontTypes" /* 7564 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 11081 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SKUPricesStore from "SKUPricesStore" /* 7468 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 10981 */;
+import SKUPricesStore from "SKUPricesStore" /* 7563 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 11080 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require, dependencyMap;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f98967 = (startsAt) => {
+const f99311 = (startsAt) => {
   let tmp3 = null != startsAt;
   const tmp = closure_0;
   if (tmp3) {
@@ -158,7 +158,7 @@ export function getCollectiblesPremiumPromoPrice(arg0) {
     const tmp = require;
     if (tmp3 != null) {
       if (tmp3.prices[PREMIUM_TIER_2.PREMIUM_TIER_2] != null) {
-        arr = tmp3.prices[PREMIUM_TIER_2.PREMIUM_TIER_2][tmp(undefined, 7469).StorefrontPriceVariant.DISCOUNTED];
+        arr = tmp3.prices[PREMIUM_TIER_2.PREMIUM_TIER_2][tmp(undefined, 7564).StorefrontPriceVariant.DISCOUNTED];
       }
     }
   }
@@ -233,7 +233,7 @@ export function areStorefrontPricingPromotionsActive(arg0) {
     }
     return found;
   });
-  const tmp = mapped.length > 0 && mapped.every(f98967);
+  const tmp = mapped.length > 0 && mapped.every(f99311);
   return tmp;
 }
 export { getNextStorefrontPromotionBoundary };
@@ -303,7 +303,7 @@ export function useCollectiblesStorefrontPrices(skuId, collectibles_pricing_prom
     return found;
   });
   let tmp9;
-  const tmp8 = mapped.length > 0 && mapped.every(f98967);
+  const tmp8 = mapped.length > 0 && mapped.every(f99311);
   if (tmp8) {
     tmp9 = stateFromStores;
   }

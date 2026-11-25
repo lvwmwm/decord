@@ -1,15 +1,15 @@
-// Module ID: 20084
-// Function ID: 20085
+// Module ID: 20186
+// Function ID: 20187
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 4917, 9579, 1112, 2]
+// Dependencies: [19, 21, 5012, 9678, 1112, 2]
 // Exports: GuildPremiumRoleSubscribeButton
 
-// Module 20084 (GuildPremiumRoleSubscribeButton)
+// Module 20186 (GuildPremiumRoleSubscribeButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9579 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9678 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

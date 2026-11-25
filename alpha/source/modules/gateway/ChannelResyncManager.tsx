@@ -1,22 +1,22 @@
-// Module ID: 19503
-// Function ID: 19504
+// Module ID: 19615
+// Function ID: 19616
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4766, 6040, 4788, 5723, 1071, 4773, 3, 1088, 7349, 1255, 572, 8174, 1404, 2]
+// Dependencies: [5, 502, 4861, 6135, 4883, 5818, 1071, 4868, 3, 1088, 7444, 1255, 572, 8273, 1404, 2]
 
-// Module 19503 (ChannelResyncManager)
+// Module 19615 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import ChannelConstants from "ChannelConstants" /* 4773 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 8174 */;
+import ChannelConstants from "ChannelConstants" /* 4868 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 8273 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6040 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6135 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, c4, closure_18, mutableGuildChannelsForGuild, set, socket;
@@ -141,7 +141,7 @@ let obj = function _scheduleGuildResyncs() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -289,7 +289,7 @@ let obj = function _scheduleGuildResyncs() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c4 = 3;
@@ -312,7 +312,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

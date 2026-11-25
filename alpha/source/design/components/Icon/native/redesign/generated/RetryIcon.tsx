@@ -1,14 +1,14 @@
-// Module ID: 10541
-// Function ID: 10542
+// Module ID: 10640
+// Function ID: 10641
 // Name: RetryIcon
-// Dependencies: [19, 21, 575, 5603, 10542, 2]
+// Dependencies: [19, 21, 575, 5698, 10641, 2]
 // Exports: RetryIcon
 
-// Module 10541 (RetryIcon)
+// Module 10640 (RetryIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 10542 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 10641 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

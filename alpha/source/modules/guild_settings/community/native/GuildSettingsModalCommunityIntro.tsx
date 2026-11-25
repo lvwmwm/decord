@@ -1,23 +1,23 @@
-// Module ID: 19930
-// Function ID: 19931
+// Module ID: 20032
+// Function ID: 20033
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 4788, 4849, 8433, 1071, 21, 4917, 575, 10682, 1112, 5508, 9637, 5621, 1500, 504, 8432, 19931, 5604, 2187, 5515, 19935, 5598, 5491, 2]
+// Dependencies: [19, 17, 4883, 4944, 8532, 1071, 21, 5012, 575, 10781, 1112, 5603, 9736, 5716, 1500, 504, 8531, 20033, 5699, 2187, 5610, 20037, 5693, 5586, 2]
 // Exports: default
 
-// Module 19930 (GuildSettingsModalCommunityIntro)
+// Module 20032 (GuildSettingsModalCommunityIntro)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ToastUtils from "ToastUtils" /* 5598 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8432 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19935 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ToastUtils from "ToastUtils" /* 5693 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20037 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8433 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8532 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

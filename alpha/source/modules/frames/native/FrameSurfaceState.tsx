@@ -1,17 +1,17 @@
-// Module ID: 18747
-// Function ID: 18748
+// Module ID: 18859
+// Function ID: 18860
 // Name: FrameSurfaceState
-// Dependencies: [19, 17, 21, 4917, 575, 5508, 6921, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5603, 7016, 2]
 // Exports: FrameSurfaceExplanation, FrameSurfaceLoading
 
-// Module 18747 (FrameSurfaceState)
+// Module 18859 (FrameSurfaceState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6921 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7016 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,15 +1,15 @@
-// Module ID: 13998
-// Function ID: 13999
+// Module ID: 14121
+// Function ID: 14122
 // Name: GameProfileReviewUtils
-// Dependencies: [1112, 8613, 13999, 2161, 8625, 2]
+// Dependencies: [1112, 8712, 14122, 2161, 8724, 2]
 // Exports: canShowOpenCriticReview, getMobileStoreReviews, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 13998 (GameProfileReviewUtils)
+// Module 14121 (GameProfileReviewUtils)
 import intl11 from "intl" /* 1112 */;
 import GameDetectionTypes from "GameDetectionTypes" /* 2161 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8613 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8625 */;
-import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 13999 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8712 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8724 */;
+import GameProfileMobileStoreLinkUtils from "GameProfileMobileStoreLinkUtils" /* 14122 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,12 +1,12 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 11824
+// Function ID: 11825
 // Name: useUnreadSettingNotice
-// Dependencies: [32, 19, 4770, 10530, 504, 11726, 2]
+// Dependencies: [32, 19, 4865, 10629, 504, 11825, 2]
 // Exports: default
 
-// Module 11725 (useUnreadSettingNotice)
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 11726 */;
+// Module 11824 (useUnreadSettingNotice)
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 11825 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,12 +1,12 @@
-// Module ID: 10275
-// Function ID: 10276
+// Module ID: 10374
+// Function ID: 10375
 // Name: getEffectiveNoiseCancellation
-// Dependencies: [1378, 10276, 2]
+// Dependencies: [1378, 10375, 2]
 // Exports: default
 
-// Module 10275 (getEffectiveNoiseCancellation)
+// Module 10374 (getEffectiveNoiseCancellation)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import WindowsEffectsExperiment from "WindowsEffectsExperiment" /* 10276 */;
+import WindowsEffectsExperiment from "WindowsEffectsExperiment" /* 10375 */;
 import size from "module_2" /* 2 */;
 
 const deep_noise_suppression = "deep_noise_suppression";

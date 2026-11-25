@@ -1,14 +1,14 @@
-// Module ID: 7121
-// Function ID: 7122
+// Module ID: 7216
+// Function ID: 7217
 // Name: XSmallIcon
-// Dependencies: [19, 21, 575, 5603, 7122, 2]
+// Dependencies: [19, 21, 575, 5698, 7217, 2]
 // Exports: XSmallIcon
 
-// Module 7121 (XSmallIcon)
+// Module 7216 (XSmallIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 7122 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 7217 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

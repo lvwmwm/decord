@@ -1,21 +1,21 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14164
+// Function ID: 14165
 // Name: GameProfileHttpUtils
-// Dependencies: [5, 6207, 2188, 8610, 1071, 14042, 572, 5677, 1284, 504, 559, 1088, 14020, 2]
+// Dependencies: [5, 6302, 2188, 8709, 1071, 14165, 572, 5772, 1284, 504, 559, 1088, 14143, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 14041 (GameProfileHttpUtils)
+// Module 14164 (GameProfileHttpUtils)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import StoreUtils from "StoreUtils" /* 5677 */;
-import SimilarGamesConstants from "SimilarGamesConstants" /* 14042 */;
+import StoreUtils from "StoreUtils" /* 5772 */;
+import SimilarGamesConstants from "SimilarGamesConstants" /* 14165 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 6207 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 6302 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import GameProfileStore from "GameProfileStore" /* 8610 */;
+import GameProfileStore from "GameProfileStore" /* 8709 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _getShopCollection() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _getShopCollection() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           closure_3 = tmp12;
@@ -123,7 +123,7 @@ obj = function _fetchSimilarGames() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ obj = function _fetchSimilarGames() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           c5 = 3;
@@ -195,7 +195,7 @@ obj = function _getGameAnnouncements() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -265,7 +265,7 @@ obj = function _getGameAnnouncements() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           closure_6 = tmp21;
@@ -335,7 +335,7 @@ let closure_11 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -363,7 +363,7 @@ let closure_11 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     } catch (tmp6) {
       c1 = 3;
       throw tmp6;

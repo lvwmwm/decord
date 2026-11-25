@@ -1,19 +1,19 @@
-// Module ID: 10616
-// Function ID: 10617
+// Module ID: 10715
+// Function ID: 10716
 // Name: markUnread
-// Dependencies: [5, 4851, 4766, 6265, 6806, 1386, 1071, 3, 11, 7973, 1284, 2]
+// Dependencies: [5, 4946, 4861, 6360, 6901, 1386, 1071, 3, 11, 8072, 1284, 2]
 // Exports: default
 
-// Module 10616 (markUnread)
+// Module 10715 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1071 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7973 */;
+import ReadStateStore from "ReadStateStore" /* 6901 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4851 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import MessageStore from "MessageStore" /* 6265 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import MessageStore from "MessageStore" /* 6360 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

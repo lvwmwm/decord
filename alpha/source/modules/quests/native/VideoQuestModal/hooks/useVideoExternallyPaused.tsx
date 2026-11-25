@@ -1,17 +1,17 @@
-// Module ID: 16577
-// Function ID: 16578
+// Module ID: 16698
+// Function ID: 16699
 // Name: useVideoExternallyPaused
-// Dependencies: [5132, 8928, 5093, 9848, 504, 5922, 1378, 2]
+// Dependencies: [5227, 9027, 5188, 9947, 504, 6017, 1378, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 16577 (useVideoExternallyPaused)
+// Module 16698 (useVideoExternallyPaused)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5093 */;
-import useAlertStore from "useAlertStore" /* 5922 */;
-import ContextMenuState from "ContextMenuState" /* 8928 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 9848 */;
-import ActionSheetStore from "ActionSheetStore" /* 5132 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5188 */;
+import useAlertStore from "useAlertStore" /* 6017 */;
+import ContextMenuState from "ContextMenuState" /* 9027 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 9947 */;
+import ActionSheetStore from "ActionSheetStore" /* 5227 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx");

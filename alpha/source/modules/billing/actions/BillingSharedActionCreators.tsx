@@ -1,16 +1,16 @@
-// Module ID: 5681
-// Function ID: 5682
+// Module ID: 5776
+// Function ID: 5777
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 2176, 1071, 1284, 5668, 572, 1112, 4730, 1255, 5666, 5682, 5683, 2]
-// Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
+// Dependencies: [5, 2176, 1071, 1284, 5763, 572, 1112, 4825, 1255, 5761, 5777, 5778, 2]
+// Exports: createPaymentSource, failBillingConfirmation, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 5681 (BillingSharedActionCreators)
+// Module 5776 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import BillingUtils from "BillingUtils" /* 4730 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5666 */;
+import BillingUtils from "BillingUtils" /* 4825 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PaymentSourceRecord from "PaymentSourceRecord" /* 2176 */;
 import Constants from "Constants" /* 1071 */;
@@ -37,7 +37,7 @@ let obj = function _validatePaymentSourceBillingAddress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ obj = function _createPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c8;
@@ -277,15 +277,15 @@ const result = size.fileFinishedImporting("modules/billing/actions/BillingShared
 export function validatePaymentSourceBillingAddress() {
   return obj(...arguments);
 }
-export function dispatchConfirmationError(error, arg1) {
+export function failBillingConfirmation(payment_confirmation, error, arg2) {
   let billingError;
   let extra;
   let payment_method;
   let reportResult;
   let tags;
   let type;
-  obj = arg1;
-  if (null == arg1) {
+  obj = arg2;
+  if (null == arg2) {
     obj = {};
   }
   let defaultErrorMessage = obj.defaultErrorMessage;
@@ -308,10 +308,14 @@ export function dispatchConfirmationError(error, arg1) {
       const _HermesInternal = HermesInternal;
       combined = "" + defaultErrorMessage + ": " + error.message;
     }
-    let tmp12 = "card_error" === error.type || "validation_error" === error.type;
-    if (!tmp12) {
-      const hasItem = "invalid_request_error" === error.type && null != error.code && set.has(error.code);
-      tmp12 = hasItem;
+    let tmp12 = "payment_method_confirmation" === payment_confirmation;
+    if (tmp12) {
+      let tmp13 = "card_error" === error.type || "validation_error" === error.type;
+      if (!tmp13) {
+        const hasItem = "invalid_request_error" === error.type && null != error.code && set.has(error.code);
+        tmp13 = hasItem;
+      }
+      tmp12 = tmp13;
     }
     if (tmp12) {
       const obj5 = { failure_message: combined, error_type: null, failure_code: null, failure_sub_code: null, payment_source_type: type, stacktrace: error.stack };
@@ -331,12 +335,12 @@ export function dispatchConfirmationError(error, arg1) {
     }
     const self5 = this;
     const self6 = this;
-    billingError = new tmp5(5666).BillingError(combined);
+    billingError = new tmp5(5761).BillingError(combined);
   } else {
     billingError = error;
     if (!(error instanceof V6OrEarlierAPIError.BillingError)) {
       let tmp8 = error;
-      const BillingError = tmp5(5666).BillingError;
+      const BillingError = tmp5(5761).BillingError;
       if (typeof error === "string") {
         tmp8 = defaultErrorMessage;
       }
@@ -347,8 +351,8 @@ export function dispatchConfirmationError(error, arg1) {
   }
   const obj4 = DispatcherDefault;
   obj4.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError });
-  const obj6 = { site: "payment_method_confirmation", selectedElementType: tmp4, tags, extra };
-  const ClientBillingError = tmp5(5682).ClientBillingError;
+  const obj6 = { site: payment_confirmation, selectedElementType: tmp4, tags, extra };
+  const ClientBillingError = tmp5(5777).ClientBillingError;
   if (tmp3) {
     const obj9 = { failure_message: billingError.message };
     reportResult = ClientBillingError.report(obj6, error, obj9);

@@ -1,14 +1,14 @@
-// Module ID: 17844
-// Function ID: 17845
+// Module ID: 17956
+// Function ID: 17957
 // Name: useWaterwheelsCardEligibility
-// Dependencies: [19, 7336, 13206, 504, 17845, 2]
+// Dependencies: [19, 7431, 13329, 504, 17957, 2]
 // Exports: default
 
-// Module 17844 (useWaterwheelsCardEligibility)
-import WaterwheelsCard from "WaterwheelsCard" /* 17845 */;
+// Module 17956 (useWaterwheelsCardEligibility)
+import WaterwheelsCard from "WaterwheelsCard" /* 17957 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7336 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13206 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13329 */;
 import size from "module_2" /* 2 */;
 
 let accounts;

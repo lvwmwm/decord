@@ -1,18 +1,18 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12589
+// Function ID: 12590
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 6270, 21, 575, 4917, 1494, 1628, 1378, 1653, 1642, 2]
+// Dependencies: [19, 17, 6365, 21, 575, 5012, 1494, 1628, 1378, 1653, 1642, 2]
 // Exports: default, useCheckpointScreenContentHeight, useCheckpointScreenFrame
 
-// Module 12425 (CheckpointScreen)
+// Module 12589 (CheckpointScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6270 */;
-import createStyles from "createStyles" /* 4917 */;
+import CheckpointConstants from "CheckpointConstants" /* 6365 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

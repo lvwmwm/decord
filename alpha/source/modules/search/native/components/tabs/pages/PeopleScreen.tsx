@@ -1,18 +1,18 @@
-// Module ID: 18840
-// Function ID: 18841
+// Module ID: 18952
+// Function ID: 18953
 // Name: PeopleScreen
-// Dependencies: [5, 32, 19, 13146, 13125, 8878, 8877, 21, 13118, 504, 18782, 18778, 7714, 13138, 18841, 18773, 18786, 2]
+// Dependencies: [5, 32, 19, 13269, 13248, 8977, 8976, 21, 13241, 504, 18894, 18890, 7813, 13261, 18953, 18885, 18898, 2]
 
-// Module 18840 (PeopleScreen)
+// Module 18952 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 8877 */;
-import TrackingDefault from "Tracking" /* 13138 */;
+import TrackingConstants from "TrackingConstants" /* 8976 */;
+import TrackingDefault from "Tracking" /* 13261 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13146 */;
-import SearchQueryStore from "SearchQueryStore" /* 13125 */;
-import SearchConstants from "SearchConstants" /* 8878 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13269 */;
+import SearchQueryStore from "SearchQueryStore" /* 13248 */;
+import SearchConstants from "SearchConstants" /* 8977 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,7 +81,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
             const result = obj6.trackSearchResultClicked(obj7);
             closure_1_6(userId, channelId);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c5 = 3;

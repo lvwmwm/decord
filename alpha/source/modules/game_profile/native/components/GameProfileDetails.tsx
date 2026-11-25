@@ -1,29 +1,29 @@
-// Module ID: 14050
-// Function ID: 14051
+// Module ID: 14173
+// Function ID: 14174
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8620, 21, 8617, 13181, 7198, 8642, 14051, 14053, 8632, 4917, 575, 5596, 14055, 14056, 8653, 1112, 2117, 4739, 14057, 5508, 2]
+// Dependencies: [19, 17, 8719, 21, 8716, 13304, 7293, 8741, 14174, 14176, 8731, 5012, 575, 5691, 14178, 14179, 8752, 1112, 2117, 4834, 14180, 5603, 2]
 // Exports: default
 
-// Module 14050 (GameProfileDetails)
+// Module 14173 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1112 */;
 import Server from "Server" /* 2117 */;
-import DateUtilsAll from "DateUtils" /* 4739 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import LinkingDefault from "Linking" /* 5596 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7198 */;
-import PlatformType from "PlatformType" /* 8617 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8620 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 8632 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 8642 */;
-import SKUUtils from "SKUUtils" /* 8653 */;
-import ScreenIcon from "ScreenIcon" /* 13181 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 14051 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 14053 */;
+import DateUtilsAll from "DateUtils" /* 4834 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import LinkingDefault from "Linking" /* 5691 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7293 */;
+import PlatformType from "PlatformType" /* 8716 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8719 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 8731 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 8741 */;
+import SKUUtils from "SKUUtils" /* 8752 */;
+import ScreenIcon from "ScreenIcon" /* 13304 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 14174 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 14176 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c9;

@@ -1,18 +1,18 @@
-// Module ID: 16289
-// Function ID: 16290
+// Module ID: 16410
+// Function ID: 16411
 // Name: AddConnectionActionSheet
-// Dependencies: [1071, 2148, 21, 4917, 1186, 5126, 1628, 8135, 7389, 5145, 7381, 1112, 5149, 6018, 5131, 7614, 1412, 4924, 7386, 6253, 6254, 2]
+// Dependencies: [1071, 2148, 21, 5012, 1186, 5221, 1628, 8234, 7484, 5240, 7476, 1112, 5244, 6113, 5226, 7713, 1412, 5019, 7481, 6348, 6349, 2]
 // Exports: default
 
-// Module 16289 (AddConnectionActionSheet)
+// Module 16410 (AddConnectionActionSheet)
 import Constants from "Constants" /* 1071 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2148 */;
-import shared from "shared" /* 4924 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import TableRow2 from "TableRow" /* 6018 */;
+import shared from "shared" /* 5019 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import TableRow2 from "TableRow" /* 6113 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import native_mod from "native" /* 1186 */;
 import size from "module_2" /* 2 */;
 
@@ -34,10 +34,10 @@ function AddApplicationIdentityTableRow(application) {
   _require = undefined;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7386)(application));
-  const tmp2 = analyticsLocations(7386)(application);
-  const tmp3 = analyticsLocations(6253);
-  analyticsLocations = tmp3(analyticsLocations(6254).ACTION_SHEET).analyticsLocations;
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7481)(application));
+  const tmp2 = analyticsLocations(7481)(application);
+  const tmp3 = analyticsLocations(6348);
+  analyticsLocations = tmp3(analyticsLocations(6349).ACTION_SHEET).analyticsLocations;
   const getIconSource = application.getIconSource;
   const tmp4 = closure_7();
   let obj = require("native");
@@ -135,7 +135,7 @@ export default function AddConnectionActionSheet() {
           found(found1[15])(obj2);
         },
         icon: hasOwnProperty(Icon, obj2),
-        trailing: hasOwnProperty(tmp2(6018).TableRow.Arrow, {})
+        trailing: hasOwnProperty(tmp2(6113).TableRow.Arrow, {})
       };
       Icon = tmp2(1186).Icon;
       const makeSource = tmp2(1412).makeSource;

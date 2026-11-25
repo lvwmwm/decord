@@ -1,21 +1,21 @@
-// Module ID: 15768
-// Function ID: 15769
+// Module ID: 15889
+// Function ID: 15890
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 2164, 2142, 1386, 5671, 1071, 10083, 1088, 510, 7518, 2150, 5532, 9978, 7605, 7601, 7607, 4854, 1083, 1284, 572, 15701, 5655, 1488, 2]
+// Dependencies: [32, 5, 2164, 2142, 1386, 5766, 1071, 10182, 1088, 510, 7613, 2150, 5627, 10077, 7704, 7700, 7706, 4949, 1083, 1284, 572, 15822, 5750, 1488, 2]
 // Exports: default
 
-// Module 15768 (AuthCommandsFactory)
+// Module 15889 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import RPCErrorDefault from "RPCError" /* 7518 */;
+import RPCErrorDefault from "RPCError" /* 7613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import UserStore from "UserStore" /* 1386 */;
-import Constants_mod from "Constants" /* 5671 */;
+import Constants_mod from "Constants" /* 5766 */;
 import Constants_mod2 from "Constants" /* 1071 */;
-import LeakyBucket_mod from "LeakyBucket" /* 10083 */;
+import LeakyBucket_mod from "LeakyBucket" /* 10182 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,7 +68,7 @@ let obj = function _authorizeWithPrompt() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -438,7 +438,7 @@ obj = function _authenticate() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -611,7 +611,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f138572 = function(result) {
+      const f138949 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -717,7 +717,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f138572);
+                  return promise.then(f138949);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -726,7 +726,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f138572);
+              catchPromise = promise.then(f138949);
             }
             return catchPromise;
           }

@@ -1,12 +1,12 @@
-// Module ID: 13860
-// Function ID: 13861
+// Module ID: 13983
+// Function ID: 13984
 // Name: copyGiftCode
-// Dependencies: [5, 5664, 7412, 5598, 2]
+// Dependencies: [5, 5759, 7507, 5693, 2]
 // Exports: default
 
-// Module 13860 (copyGiftCode)
-import GiftCodeUtils from "GiftCodeUtils" /* 5664 */;
-import ClipboardUtils from "ClipboardUtils" /* 7412 */;
+// Module 13983 (copyGiftCode)
+import GiftCodeUtils from "GiftCodeUtils" /* 5759 */;
+import ClipboardUtils from "ClipboardUtils" /* 7507 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _copyGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ let obj = function _copyGiftCode() {
               c4 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           if (0 === c4) {

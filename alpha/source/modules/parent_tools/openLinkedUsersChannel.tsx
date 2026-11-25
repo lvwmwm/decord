@@ -1,14 +1,14 @@
-// Module ID: 9016
-// Function ID: 9017
+// Module ID: 9115
+// Function ID: 9116
 // Name: openLinkedUsersChannel
-// Dependencies: [5, 4766, 6000, 7714, 2]
+// Dependencies: [5, 4861, 6095, 7813, 2]
 // Exports: default
 
-// Module 9016 (openLinkedUsersChannel)
-import transitionToChannel from "transitionToChannel" /* 6000 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
+// Module 9115 (openLinkedUsersChannel)
+import transitionToChannel from "transitionToChannel" /* 6095 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 let c4, c6, onBeforeTransition, recipientIds, set, sortedPrivateChannels;
@@ -47,7 +47,7 @@ let obj = function _openLinkedUsersChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -100,7 +100,7 @@ let obj = function _openLinkedUsersChannel() {
             c5 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         if (0 === c5) {

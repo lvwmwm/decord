@@ -1,27 +1,27 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15896
+// Function ID: 15897
 // Name: conjureBackgroundFrames
-// Dependencies: [19, 6810, 4766, 6811, 15776, 15778, 9855, 15693, 5561, 7561, 7551, 6813, 2]
+// Dependencies: [19, 6905, 4861, 6906, 15897, 15899, 9954, 15814, 5656, 7660, 7646, 6908, 2]
 // Exports: default, returnToConjureFrameSurface
 
-// Module 15775 (conjureBackgroundFrames)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5561 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 7551 */;
-import leaveFrame from "leaveFrame" /* 7561 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9855 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 15693 */;
-import conjureBackgroundFramePlatformDefault from "conjureBackgroundFramePlatform" /* 15778 */;
+// Module 15896 (conjureBackgroundFrames)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5656 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6908 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 7646 */;
+import leaveFrame from "leaveFrame" /* 7660 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9954 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 15814 */;
+import conjureBackgroundFramePlatformDefault from "conjureBackgroundFramePlatform" /* 15899 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6810 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
+import FramesStore from "FramesStore" /* 6905 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import FramesConstants from "FramesConstants" /* 6906 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const conjureBackgroundFrameRules = tmp(15776);
+const conjureBackgroundFrameRules = tmp(15897);
 function isRunningInBackground(surface) {
   let tmp3 = surface.surface.type !== EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY;
   if (tmp3) {
@@ -45,7 +45,7 @@ function isRunningInBackground(surface) {
       obj4.isActivityPopoutOpen();
       const tmp11 = importDefault;
       if (isPictureInPictureResult) {
-        const tmp11Result = tmp11(15778);
+        const tmp11Result = tmp11(15899);
         isPictureInPictureResult = tmp11Result.isPictureInPicture(surface);
       }
       tmp10 = isPictureInPictureResult;
@@ -170,13 +170,13 @@ export function returnToConjureFrameSurface(frame) {
     const obj3 = conjurePreviewSurface;
     const tmp6 = require;
     if (!obj3.isConjurePreviewSurface(frame.surface)) {
-      const tmp6Result = tmp6(15693);
+      const tmp6Result = tmp6(15814);
       if (tmp6Result.isConjureApplication(frame.applicationId)) {
         const channel = ChannelStore.getChannel(getChannelIdForEmbeddedSurfaceDefault(frame.surface));
         let openSurfaceChannelResult = null != channel;
         const tmp2 = importDefault;
         if (openSurfaceChannelResult) {
-          const tmp2Result = tmp2(15778);
+          const tmp2Result = tmp2(15899);
           openSurfaceChannelResult = tmp2Result.openSurfaceChannel(frame.surface, channel);
         }
         return openSurfaceChannelResult;

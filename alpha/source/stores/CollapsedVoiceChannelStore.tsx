@@ -1,13 +1,13 @@
-// Module ID: 8144
-// Function ID: 8145
+// Module ID: 8243
+// Function ID: 8244
 // Name: CollapsedVoiceChannelStore
-// Dependencies: [4766, 11, 504, 572, 2]
+// Dependencies: [4861, 11, 504, 572, 2]
 
-// Module 8144 (CollapsedVoiceChannelStore)
+// Module 8243 (CollapsedVoiceChannelStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionOpen() {

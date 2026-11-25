@@ -1,15 +1,15 @@
-// Module ID: 8559
-// Function ID: 8560
+// Module ID: 8658
+// Function ID: 8659
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 4917, 8560, 7808, 1112, 2]
+// Dependencies: [17, 21, 5012, 8659, 7907, 1112, 2]
 // Exports: default
 
-// Module 8559 (SecureFramesExistingVerificationsHelpMessage)
+// Module 8658 (SecureFramesExistingVerificationsHelpMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8560 */;
-import createStyles from "createStyles" /* 4917 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8659 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -31,7 +31,7 @@ export default function SecureFramesExistingVerificationsHelpMessage(arg0) {
   if (0 !== secureFramesUserVerifiedKeysCount) {
     const items = [tmp.container, style];
     ({ type: "info", message: intl.format(intl2.t.uZDkz0, obj4), role: "none" });
-    const InlineNotice = tmp2(7808).InlineNotice;
+    const InlineNotice = tmp2(7907).InlineNotice;
     intl = tmp2(1112).intl;
     tmp5 = <View style={items}>{null}</View>;
     obj4 = { count: secureFramesUserVerifiedKeysCount };

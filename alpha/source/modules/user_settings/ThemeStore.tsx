@@ -1,7 +1,7 @@
 // Module ID: 1191
 // Function ID: 1192
 // Name: ThemeStore
-// Dependencies: [1192, 1193, 1230, 1194, 1081, 1071, 582, 1229, 1236, 15399, 504, 4747, 572, 2]
+// Dependencies: [1192, 1193, 1230, 1194, 1081, 1071, 582, 1229, 1236, 15521, 504, 4842, 572, 2]
 
 // Module 1191 (ThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import getSystemThemeDefault from "getSystemTheme" /* 1229 */;
 import resolveThemeDefault from "resolveTheme" /* 1236 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4747 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4842 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
@@ -24,7 +24,7 @@ let THEME_PREFERENCES_MOBILE;
 let THEME_PREFERENCES_WEB_REFRESH;
 let metroRequire;
 let tmp;
-const updateBackgroundColorDefault = tmp(15399);
+const updateBackgroundColorDefault = tmp(15521);
 function handleThemeChange() {
   const tmp3 = resolveThemeDefault(systemTheme, obj2, c17);
   DARK = ThemeTypes.DARK;
@@ -252,7 +252,7 @@ const obj3 = {
       }
       let flag = DARK !== DARK;
       if (flag) {
-        tmp2(15399)(DARK);
+        tmp2(15521)(DARK);
         flag = true;
       }
       tmp = flag;

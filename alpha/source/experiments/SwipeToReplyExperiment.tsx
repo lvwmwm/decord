@@ -1,13 +1,13 @@
-// Module ID: 11810
-// Function ID: 11811
+// Module ID: 11909
+// Function ID: 11910
 // Name: SwipeToReplyExperiment
-// Dependencies: [11811, 11812, 11813, 2]
+// Dependencies: [11910, 11911, 11912, 2]
 // Exports: useIsMessageSwipeActionsEnabled
 
-// Module 11810 (SwipeToReplyExperiment)
-import LaunchPadConstants from "LaunchPadConstants" /* 11811 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11812 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11813 */;
+// Module 11909 (SwipeToReplyExperiment)
+import LaunchPadConstants from "LaunchPadConstants" /* 11910 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11911 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11912 */;
 import size from "module_2" /* 2 */;
 
 const LaunchPadTypes = LaunchPadConstants.LaunchPadTypes;

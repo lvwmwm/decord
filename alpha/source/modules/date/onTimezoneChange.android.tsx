@@ -1,11 +1,11 @@
-// Module ID: 4740
-// Function ID: 4741
+// Module ID: 4835
+// Function ID: 4836
 // Name: react-native
-// Dependencies: [4741, 2]
+// Dependencies: [4836, 2]
 // Exports: default
 
-// Module 4740 (react-native)
-import react_nativeDefault from "react-native" /* 4741 */;
+// Module 4835 (react-native)
+import react_nativeDefault from "react-native" /* 4836 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/date/onTimezoneChange.android.tsx");

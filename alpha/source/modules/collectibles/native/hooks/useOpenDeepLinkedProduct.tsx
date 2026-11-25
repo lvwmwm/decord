@@ -1,14 +1,14 @@
-// Module ID: 17325
-// Function ID: 17326
+// Module ID: 17437
+// Function ID: 17438
 // Name: useOpenDeepLinkedProduct
-// Dependencies: [19, 6228, 504, 11453, 6196, 5131, 11125, 2]
+// Dependencies: [19, 6323, 504, 11552, 6291, 5226, 11224, 2]
 // Exports: default
 
-// Module 17325 (useOpenDeepLinkedProduct)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6196 */;
+// Module 17437 (useOpenDeepLinkedProduct)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6291 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 6228 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 6323 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;
@@ -51,7 +51,7 @@ export default function useOpenDeepLinkedProduct(analyticsLocations) {
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
         const obj2 = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-        const tmp8Result = tmp8(11125);
+        const tmp8Result = tmp8(11224);
         const result = tmp8Result.openProductDetailsActionSheet(obj2);
       }
     }

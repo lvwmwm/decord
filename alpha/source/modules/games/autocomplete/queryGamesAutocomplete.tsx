@@ -1,14 +1,14 @@
-// Module ID: 8811
-// Function ID: 8812
+// Module ID: 8910
+// Function ID: 8911
 // Name: queryGamesAutocomplete
-// Dependencies: [7048, 551, 8812, 8814, 7049, 2]
+// Dependencies: [7143, 551, 8911, 8913, 7144, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 8811 (queryGamesAutocomplete)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 7049 */;
-import useGameAutocomplete2 from "useGameAutocomplete" /* 8812 */;
-import GameSearchSession from "GameSearchSession" /* 8814 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 7048 */;
+// Module 8910 (queryGamesAutocomplete)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 7144 */;
+import useGameAutocomplete2 from "useGameAutocomplete" /* 8911 */;
+import GameSearchSession from "GameSearchSession" /* 8913 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 7143 */;
 import debounce from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
 

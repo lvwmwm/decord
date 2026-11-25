@@ -1,12 +1,12 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9778
+// Function ID: 9779
 // Name: useCanUseTenureBadge
-// Dependencies: [1386, 504, 9680, 2]
+// Dependencies: [1386, 504, 9779, 2]
 // Exports: useCanUseTenureBadge
 
-// Module 9679 (useCanUseTenureBadge)
+// Module 9778 (useCanUseTenureBadge)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumPerkGates from "PremiumPerkGates" /* 9680 */;
+import PremiumPerkGates from "PremiumPerkGates" /* 9779 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

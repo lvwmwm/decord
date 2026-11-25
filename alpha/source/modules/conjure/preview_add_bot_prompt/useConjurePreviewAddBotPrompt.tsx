@@ -1,15 +1,15 @@
-// Module ID: 18282
-// Function ID: 18283
+// Module ID: 18394
+// Function ID: 18395
 // Name: useConjurePreviewAddBotPrompt
-// Dependencies: [5, 32, 19, 7575, 504, 11313, 14573, 2]
+// Dependencies: [5, 32, 19, 7674, 504, 11412, 14695, 2]
 // Exports: useConjurePreviewAddBotPrompt
 
-// Module 18282 (useConjurePreviewAddBotPrompt)
-import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14573 */;
+// Module 18394 (useConjurePreviewAddBotPrompt)
+import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14695 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjurePreviewAddBotPromptStore from "ConjurePreviewAddBotPromptStore" /* 7575 */;
+import ConjurePreviewAddBotPromptStore from "ConjurePreviewAddBotPromptStore" /* 7674 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,7 +59,7 @@ export function useConjurePreviewAddBotPrompt(projectId, guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ export function useConjurePreviewAddBotPrompt(projectId, guildId) {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp34) {
         closure_2 = tmp34;
         if (0 === c3) {

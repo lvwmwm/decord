@@ -1,18 +1,18 @@
-// Module ID: 15911
-// Function ID: 15912
+// Module ID: 16032
+// Function ID: 16033
 // Name: HexagonCampaignDisplayNameStylePromo
-// Dependencies: [19, 17, 21, 4917, 575, 4978, 15912, 15913, 5508, 1112, 4599, 15915, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5073, 16033, 16034, 5603, 1112, 4662, 16036, 2]
 // Exports: default
 
-// Module 15911 (HexagonCampaignDisplayNameStylePromo)
+// Module 16032 (HexagonCampaignDisplayNameStylePromo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 15913 */;
-import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 15915 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16034 */;
+import openHexagonCampaignLearnMore from "openHexagonCampaignLearnMore" /* 16036 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,9 +57,9 @@ export default function HexagonCampaignDisplayNameStylePromo(showLearnMore) {
           return React3(Text, obj, arg1);
         }
     };
-    formatResult = intl.format(tmp6(4599).eb99JA, obj3);
+    formatResult = intl.format(tmp6(4662).eb99JA, obj3);
   } else {
-    formatResult = intl.string(tmp6(4599).WyZOg3);
+    formatResult = intl.string(tmp6(4662).WyZOg3);
   }
   items[1] = closure_4(Text, { variant: "footnote/medium", color: "text-default", lineClamp: 1, children: formatResult });
   return closure_4(ThemeContextProvider, obj);

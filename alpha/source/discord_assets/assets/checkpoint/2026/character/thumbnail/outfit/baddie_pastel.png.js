@@ -1,8 +1,8 @@
-// Module ID: 6413
-// Function ID: 6414
+// Module ID: 6508
+// Function ID: 6509
 // Dependencies: [2]
 
-// Module 6413
+// Module 6508
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/baddie_pastel.png.js");

@@ -1,10 +1,10 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 8577
+// Function ID: 8578
 // Name: useStateFromSharedValue
 // Dependencies: [32, 19, 1262, 1706, 2]
 // Exports: default, useDerivedStateFromSharedValue
 
-// Module 8478 (useStateFromSharedValue)
+// Module 8577 (useStateFromSharedValue)
 import _mod1706 from "module_1706" /* 1706 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

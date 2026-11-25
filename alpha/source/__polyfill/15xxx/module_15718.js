@@ -1,0 +1,7 @@
+// Module ID: 15718
+// Function ID: 15719
+// Dependencies: []
+
+// Module 15718
+
+export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });

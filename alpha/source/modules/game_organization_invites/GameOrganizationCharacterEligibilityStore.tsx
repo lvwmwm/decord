@@ -1,12 +1,12 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12276
+// Function ID: 12277
 // Name: GameOrganizationCharacterEligibilityStore
-// Dependencies: [11772, 504, 572, 2]
+// Dependencies: [11871, 504, 572, 2]
 
-// Module 12177 (GameOrganizationCharacterEligibilityStore)
+// Module 12276 (GameOrganizationCharacterEligibilityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 11772 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11871 */;
 import size from "module_2" /* 2 */;
 
 let map = new Map();

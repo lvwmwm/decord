@@ -1,13 +1,13 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9757
+// Function ID: 9758
 // Name: useSafeAreaAvoidingInputs
-// Dependencies: [5, 19, 1494, 575, 9659, 6924, 2]
+// Dependencies: [5, 19, 1494, 575, 9758, 7019, 2]
 // Exports: default
 
-// Module 9658 (useSafeAreaAvoidingInputs)
+// Module 9757 (useSafeAreaAvoidingInputs)
 import nativeDefault from "native" /* 575 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6924 */;
-import ViewMeasureUtils from "ViewMeasureUtils" /* 9659 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 7019 */;
+import ViewMeasureUtils from "ViewMeasureUtils" /* 9758 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _calculateScrollOffset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let obj = function _calculateScrollOffset() {
                   return { value: Number.MAX_SAFE_INTEGER, done: true };
                 } else {
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
             }
@@ -168,7 +168,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -289,7 +289,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp31) {
         c3 = 3;
         throw tmp31;

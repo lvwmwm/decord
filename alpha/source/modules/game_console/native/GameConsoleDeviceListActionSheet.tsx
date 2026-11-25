@@ -1,27 +1,27 @@
-// Module ID: 10376
-// Function ID: 10377
+// Module ID: 10475
+// Function ID: 10476
 // Name: GameConsoleDeviceListActionSheet
-// Dependencies: [5, 32, 19, 17, 5726, 1071, 21, 4917, 575, 7354, 5515, 1112, 10377, 5604, 5508, 10378, 504, 10367, 38, 10369, 5131, 1107, 1186, 10379, 5145, 7381, 5149, 2]
+// Dependencies: [5, 32, 19, 17, 5821, 1071, 21, 5012, 575, 7449, 5610, 1112, 10476, 5699, 5603, 10477, 504, 10466, 38, 10468, 5226, 1107, 1186, 10478, 5240, 7476, 5244, 2]
 // Exports: default
 
-// Module 10376 (GameConsoleDeviceListActionSheet)
+// Module 10475 (GameConsoleDeviceListActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import components_Button_Button from "components/Button/Button" /* 5515 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7354 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10367 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10377 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10378 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import components_Button_Button from "components/Button/Button" /* 5610 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7449 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10466 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10476 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10477 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleStore from "GameConsoleStore" /* 5726 */;
+import GameConsoleStore from "GameConsoleStore" /* 5821 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -137,7 +137,7 @@ export default function GameConsoleListActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -173,7 +173,7 @@ export default function GameConsoleListActionSheet(arg0) {
             const ComponentDispatch = tmp3(c2[21]).ComponentDispatch;
             ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c2 = 3;

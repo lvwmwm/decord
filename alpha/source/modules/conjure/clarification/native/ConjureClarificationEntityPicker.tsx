@@ -1,25 +1,25 @@
-// Module ID: 18635
-// Function ID: 18636
+// Module ID: 18747
+// Function ID: 18748
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4847, 4788, 21, 18334, 6014, 6018, 18465, 6926, 5131, 11309, 18478, 18636, 18347, 18637, 504, 7476, 11616, 1112, 4192, 18366, 2]
+// Dependencies: [19, 4942, 4883, 21, 18446, 6109, 6113, 18577, 7021, 5226, 11408, 18590, 18748, 18459, 18749, 504, 7571, 11715, 1112, 4244, 18478, 2]
 // Exports: default
 
-// Module 18635 (ConjureClarificationEntityPicker)
+// Module 18747 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4192 from "module_4192" /* 4192 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5131 */;
-import TableRowGroup2 from "TableRowGroup" /* 6014 */;
-import TableRow2 from "TableRow" /* 6018 */;
-import ConjureUtils from "ConjureUtils" /* 7476 */;
-import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 11309 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11616 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18366 */;
-import ConjureClarification from "ConjureClarification" /* 18465 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 18478 */;
+import _modDef4244 from "module_4244" /* 4244 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5226 */;
+import TableRowGroup2 from "TableRowGroup" /* 6109 */;
+import TableRow2 from "TableRow" /* 6113 */;
+import ConjureUtils from "ConjureUtils" /* 7571 */;
+import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 11408 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11715 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18478 */;
+import ConjureClarification from "ConjureClarification" /* 18577 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 18590 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4847 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildChannelStore from "GuildChannelStore" /* 4942 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ function ProjectPicker(arg0) {
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(18465);
+      const tmp4Result = tmp4(18577);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };
@@ -183,7 +183,7 @@ function GuildEntityPicker(value) {
                                       guild: GuildStore.getGuild(tmp),
                                       channels: result,
                                       selectedChannel: found,
-                                      noChannelOptionLabel: intl.string(_modDef4192["jtBVV+"]),
+                                      noChannelOptionLabel: intl.string(_modDef4244["jtBVV+"]),
                                       onSelect(stateFromStores1) {
                                                       let items;
                                                       const tmp = closure_1_2;

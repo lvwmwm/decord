@@ -1,23 +1,23 @@
-// Module ID: 6232
-// Function ID: 6233
+// Module ID: 6327
+// Function ID: 6328
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1386, 2178, 6233, 1071, 1388, 2168, 38, 4730, 6236, 2173, 504, 5478, 6237, 2172, 12, 2]
+// Dependencies: [32, 19, 1386, 2178, 6328, 1071, 1388, 2168, 38, 4825, 6331, 2173, 504, 5573, 6332, 2172, 12, 2]
 // Exports: default
 
-// Module 6232 (useFractionalPremiumInfo)
+// Module 6327 (useFractionalPremiumInfo)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1071 */;
 import _modDef2168 from "module_2168" /* 2168 */;
 import EntitlementTypes from "EntitlementTypes" /* 2172 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
-import BillingUtils from "BillingUtils" /* 4730 */;
-import EntitlementSourceTypes from "EntitlementSourceTypes" /* 6236 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 6237 */;
+import BillingUtils from "BillingUtils" /* 4825 */;
+import EntitlementSourceTypes from "EntitlementSourceTypes" /* 6331 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 6332 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
-import EntitlementStore from "EntitlementStore" /* 6233 */;
+import EntitlementStore from "EntitlementStore" /* 6328 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 

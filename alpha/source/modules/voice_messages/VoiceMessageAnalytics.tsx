@@ -1,10 +1,10 @@
-// Module ID: 12317
-// Function ID: 12318
+// Module ID: 12483
+// Function ID: 12484
 // Name: VoiceMessageAnalytics
 // Dependencies: [1071, 1255, 2]
 // Exports: logVoiceMessagePlaybackEnded, logVoiceMessagePlaybackFailed, logVoiceMessagePlaybackStarted
 
-// Module 12317 (VoiceMessageAnalytics)
+// Module 12483 (VoiceMessageAnalytics)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;

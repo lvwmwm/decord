@@ -1,13 +1,13 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 16062
+// Function ID: 16063
 // Name: useFetchNameplate
-// Dependencies: [11464, 2112, 2109, 2]
+// Dependencies: [11563, 2112, 2109, 2]
 // Exports: useFetchNameplate
 
-// Module 15941 (useFetchNameplate)
+// Module 16062 (useFetchNameplate)
 import utils from "utils" /* 2109 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11464 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11563 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/hooks/useFetchNameplate.tsx");

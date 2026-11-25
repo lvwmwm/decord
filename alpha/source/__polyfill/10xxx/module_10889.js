@@ -1,18 +1,21 @@
 // Module ID: 10889
 // Function ID: 10890
-// Dependencies: [41, 42, 93, 95, 98, 10888, 10734, 10735, 10890]
+// Dependencies: [41, 42, 93, 95, 98, 10857, 10839, 10838, 10840]
 
 // Module 10889
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10734 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10735 */;
-import _mod10888 from "module_10888" /* 10888 */;
-import _mod10890 from "module_10890" /* 10890 */;
+import Meridiem from "Meridiem" /* 10838 */;
+import assignSimilarDate from "assignSimilarDate" /* 10839 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10840 */;
+import now2 from "now" /* 10857 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let hasOwnProperty;
+
+let self = this;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -28,12 +31,107 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKMonthNameLittleEndianParser {
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (!self2) {
+  let tmp3 = globalThis;
+  let _Object = Object;
+  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let tmp4 = self && self.__setModuleDefault;
+if (!tmp4) {
+  let tmp5 = globalThis;
+  const _Object2 = Object;
+  tmp4 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_8 = tmp4;
+let fn = self && self.__importStar;
+if (!fn) {
+  fn = function c(arg0) {
+    fn = Object.getOwnPropertyNames || ((obj) => {
+      const items = [];
+      for (const key10005 in obj) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(obj, key10005)) {
+          continue;
+        } else {
+          items[items.length] = key10005;
+          continue;
+        }
+        continue;
+      }
+      return items;
+    });
+    return fn(arg0);
+  };
+  fn = (__esModule) => {
+    const tmp = __esModule;
+    if (tmp) {
+      if (__esModule.__esModule) {
+        return __esModule;
+      }
+    }
+    const obj = {};
+    if (null != __esModule) {
+      let num;
+      const arr = fn(__esModule);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp5 = self2(obj, __esModule, arr[num]);
+        }
+      }
+    }
+    closure_8(obj, __esModule);
+    return obj;
+  };
+}
+const now = fn(now2);
+class FRCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKMonthNameLittleEndianParser);
-    const obj = _getPrototypeOf(UKMonthNameLittleEndianParser);
+    _classCallCheck(this, FRCasualDateParser);
+    const obj = _getPrototypeOf(FRCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,50 +143,48 @@ class UKMonthNameLittleEndianParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKMonthNameLittleEndianParser, _mod10890.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(FRCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    const ORDINAL_NUMBER_PATTERN = _mod10888.ORDINAL_NUMBER_PATTERN;
-    const ORDINAL_NUMBER_PATTERN2 = _mod10888.ORDINAL_NUMBER_PATTERN;
-    const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10888.MONTH_DICTIONARY);
-    return "(?:\u0437|\u0456\u0437)?\\s*(" + ORDINAL_NUMBER_PATTERN + ")(?:\\s{0,3}(?:\u043F\u043E|-|\u2013|\u0434\u043E)?\\s{0,3}(" + ORDINAL_NUMBER_PATTERN2 + "))?(?:-|\\/|\\s{0,3}(?:of)?\\s{0,3})(" + matchAnyPatternResult + ")(?:(?:-|\\/|,?\\s{0,3})(" + _mod10888.YEAR_PATTERN + "(?![^\\s]\\d)))?";
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    return /(maintenant|aujourd'hui|demain|hier|cette\s*nuit|la\s*veille)(?=\W|$)/i;
   }
 };
-const items = [
+let items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = _mod10888.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const result = _mod10888.parseOrdinalNumberPattern(index[1]);
-      if (result > 31) {
-        index.index = index.index + index[1].length;
-        return null;
+    value: function innerExtract(refDate, arg1) {
+      refDate = refDate.refDate;
+      const str = arg1[0];
+      const str2 = str.toLowerCase();
+      const parsingComponents = refDate.createParsingComponents();
+      if ("maintenant" === str2) {
+        return now.now(refDate.reference);
+      } else if ("aujourd'hui" === str2) {
+        return now.today(refDate.reference);
+      } else if ("hier" === str2) {
+        return now.yesterday(refDate.reference);
+      } else if ("demain" === str2) {
+        return now.tomorrow(refDate.reference);
       } else {
-        const start4 = parsingResult.start;
-        start4.assign("month", tmp4);
-        const start5 = parsingResult.start;
-        start5.assign("day", result);
-        if (index[4]) {
-          const start2 = parsingResult.start;
-          start2.assign("year", _mod10888.parseYearPattern(index[4]));
-        } else {
-          const start = parsingResult.start;
-          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.reference.instant, result, tmp4));
+        if (str2.match(/cette\s*nuit/)) {
+          assignSimilarDate.assignSimilarDate(parsingComponents, refDate);
+          parsingComponents.imply("hour", 22);
+          parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        } else if (str2.match(/la\s*veille/)) {
+          const _Date = Date;
+          const self = this;
+          self2 = this;
+          const date = new Date(refDate.getTime());
+          date.setDate(date.getDate() - 1);
+          assignSimilarDate.assignSimilarDate(parsingComponents, date);
+          parsingComponents.imply("hour", 0);
         }
-        if (index[2]) {
-          const start3 = parsingResult.start;
-          const result1 = tmp2(10888).parseOrdinalNumberPattern(index[2]);
-          parsingResult.end = start3.clone();
-          const end = parsingResult.end;
-          end.assign("day", result1);
-        }
-        return parsingResult;
+        return parsingComponents;
       }
     }
   }
 ];
 
-export default _createClass(UKMonthNameLittleEndianParser, items);
+export default _createClass(FRCasualDateParser, items);

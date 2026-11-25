@@ -1,18 +1,18 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17989
+// Function ID: 17990
 // Name: useInterestGameSearch
-// Dependencies: [5, 32, 19, 7048, 8815, 7049, 8814, 10726, 8813, 2]
+// Dependencies: [5, 32, 19, 7143, 8914, 7144, 8913, 10825, 8912, 2]
 // Exports: default
 
-// Module 17877 (useInterestGameSearch)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 7049 */;
-import GameSearchSession from "GameSearchSession" /* 8814 */;
-import GameSearchFilterGroup from "GameSearchFilterGroup" /* 8815 */;
-import GameSearchSurfaces from "GameSearchSurfaces" /* 10726 */;
+// Module 17989 (useInterestGameSearch)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 7144 */;
+import GameSearchSession from "GameSearchSession" /* 8913 */;
+import GameSearchFilterGroup from "GameSearchFilterGroup" /* 8914 */;
+import GameSearchSurfaces from "GameSearchSurfaces" /* 10825 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 7048 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 7143 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, dependencyMap, results;
@@ -67,7 +67,7 @@ export default function useInterestGameSearch(name) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c4;
@@ -97,7 +97,7 @@ export default function useInterestGameSearch(name) {
                 } else if (query.signal.aborted) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   results = GameAutocompleteStore.getResults(query, DEFAULT);
                   query = results;
@@ -127,7 +127,7 @@ export default function useInterestGameSearch(name) {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp39) {
             closure_3 = tmp39;
             if (0 === c4) {

@@ -1,29 +1,29 @@
-// Module ID: 11331
-// Function ID: 11332
+// Module ID: 11430
+// Function ID: 11431
 // Name: conjurePublishEval
-// Dependencies: [32, 5, 19, 4788, 1386, 7533, 7576, 11332, 11333, 11334, 504, 572, 4192, 1112, 11335, 2]
+// Dependencies: [32, 5, 19, 4883, 1386, 7628, 7675, 11431, 11432, 11433, 504, 572, 4244, 1112, 11434, 2]
 // Exports: conjurePublishEvalDimensionLabel, conjurePublishEvalScoreLabel, getPendingConjurePublishEval, isConjurePublishEvalUser, requestConjurePublishEval, useConjurePublishEvalForm, usePendingConjurePublishEval
 
-// Module 11331 (conjurePublishEval)
+// Module 11430 (conjurePublishEval)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
-import _modDef4192 from "module_4192" /* 4192 */;
-import ConjurePublishEvalTypes from "ConjurePublishEvalTypes" /* 11334 */;
+import _modDef4244 from "module_4244" /* 4244 */;
+import ConjurePublishEvalTypes from "ConjurePublishEvalTypes" /* 11433 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureChatStore from "ConjureChatStore" /* 7533 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7576 */;
-import ConjurePublishEvalCooldownStore from "ConjurePublishEvalCooldownStore" /* 11332 */;
-import ConjurePublishEvalStore from "ConjurePublishEvalStore" /* 11333 */;
+import ConjureChatStore from "ConjureChatStore" /* 7628 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7675 */;
+import ConjurePublishEvalCooldownStore from "ConjurePublishEvalCooldownStore" /* 11431 */;
+import ConjurePublishEvalStore from "ConjurePublishEvalStore" /* 11432 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c3, c6, c7, importDefault, publishStatus;
 
-const f99348 = (item) => null != guild.getGuild(item);
+const f99692 = (item) => null != guild.getGuild(item);
 let obj = function _submitConjurePublishEval() {
   obj = _asyncToGenerator(async function(arg0, value, arg2) {
     let published_revision;
@@ -42,7 +42,7 @@ let obj = function _submitConjurePublishEval() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -106,7 +106,7 @@ let obj = function _submitConjurePublishEval() {
           obj = closure_133_1(closure_133_2[11]);
           obj.dispatch(obj13);
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp30) {
         c7 = 3;
@@ -119,13 +119,13 @@ let obj = function _submitConjurePublishEval() {
 let _asyncToGenerator = _asyncToGenerator_mod;
 let react = react_mod;
 let closure_12 = { quality: null, metExpectations: null, speed: null };
-obj = { quality: _modDef4192["N94/JU"], metExpectations: _modDef4192["7mnit0"], speed: _modDef4192["J/xftE"] };
+obj = { quality: _modDef4244["N94/JU"], metExpectations: _modDef4244["7mnit0"], speed: _modDef4244["J/xftE"] };
 const result = size.fileFinishedImporting("modules/conjure/publish_eval/conjurePublishEval.tsx");
 
 export function isConjurePublishEvalUser() {
   let closure_0 = GuildStore;
   const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f99348);
+  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f99692);
 }
 export function getPendingConjurePublishEval() {
   const pending = ConjurePublishEvalStore.getPending();
@@ -142,7 +142,7 @@ export function getPendingConjurePublishEval() {
       let closure_0 = GuildStore;
       const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
       tmp2 = null;
-      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f99348)) {
+      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f99692)) {
         tmp2 = pending;
       }
     }
@@ -173,7 +173,7 @@ export function usePendingConjurePublishEval(projectId) {
         closure_0 = GuildStore;
         const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
         tmp3 = null;
-        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f99348)) {
+        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f99692)) {
           tmp3 = pending;
         }
       }
@@ -192,13 +192,13 @@ export function requestConjurePublishEval(projectId) {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
     const tmp20 = require;
-    if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f99348)) {
+    if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f99692)) {
       const submittedAt = ConjurePublishEvalCooldownStore.getSubmittedAt(id1, projectId);
       let tmp6 = null != submittedAt;
       if (tmp6) {
         const _Date = Date;
         const diff = Date.now() - submittedAt;
-        tmp6 = diff < tmp20(11334).CONJURE_PUBLISH_EVAL_COOLDOWN_MS;
+        tmp6 = diff < tmp20(11433).CONJURE_PUBLISH_EVAL_COOLDOWN_MS;
       }
       if (!tmp6) {
         obj = { userId: id1, projectId, publishTurnId: null, createdAt: null };
@@ -242,7 +242,7 @@ export function conjurePublishEvalScoreLabel(dimension, score) {
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   obj = { score, dimension: intl2.string(obj[dimension]) };
-  const fML8aJ = _modDef4192.fML8aJ;
+  const fML8aJ = _modDef4244.fML8aJ;
   intl2 = intl3.intl;
   return formatToPlainString(fML8aJ, obj);
 }
@@ -308,7 +308,7 @@ export function useConjurePublishEvalForm(pending) {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -353,7 +353,7 @@ export function useConjurePublishEvalForm(pending) {
           c2 = 0;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp18) {
         if (0 === c2) {
           c3 = 3;
@@ -368,7 +368,7 @@ export function useConjurePublishEvalForm(pending) {
   const tmp13 = _require;
   if (first2) {
     const intl = tmp13(tmp14[13]).intl;
-    stringResult = intl.string(require("module_4192").Nu6mEB);
+    stringResult = intl.string(require("module_4244").Nu6mEB);
   }
   return obj3;
 }

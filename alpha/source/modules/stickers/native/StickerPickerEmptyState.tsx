@@ -1,24 +1,24 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 10812
+// Function ID: 10813
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 6801, 4745, 1071, 1388, 21, 4917, 10685, 10537, 6253, 6254, 504, 1255, 5508, 1112, 6026, 5133, 5134, 5515, 5604, 9552, 10707, 2]
+// Dependencies: [32, 19, 17, 6896, 4840, 1071, 1388, 21, 5012, 10784, 10636, 6348, 6349, 504, 1255, 5603, 1112, 6121, 5228, 5229, 5610, 5699, 9651, 10806, 2]
 // Exports: default
 
-// Module 10713 (StickerPickerEmptyState)
+// Module 10812 (StickerPickerEmptyState)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import StickersConstants from "StickersConstants" /* 4745 */;
-import HapticUtils from "HapticUtils" /* 5133 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5134 */;
-import StickerDefault from "Sticker" /* 10537 */;
-import StickersHooks from "StickersHooks" /* 10685 */;
+import StickersConstants from "StickersConstants" /* 4840 */;
+import HapticUtils from "HapticUtils" /* 5228 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5229 */;
+import StickerDefault from "Sticker" /* 10636 */;
+import StickersHooks from "StickersHooks" /* 10784 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6801 */;
+import StickersStore from "StickersStore" /* 6896 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,8 +64,8 @@ export default function _default() {
   _require = tmp;
   let obj = require("StickersHooks");
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  const tmp3 = analyticsLocations(6253);
-  analyticsLocations = tmp3(analyticsLocations(6254).EMPTY_STATE).analyticsLocations;
+  const tmp3 = analyticsLocations(6348);
+  analyticsLocations = tmp3(analyticsLocations(6349).EMPTY_STATE).analyticsLocations;
   let obj2 = require("get initialized");
   const items = [StickersStore];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
@@ -129,8 +129,8 @@ export default function _default() {
     }
   };
   Button = require("components/Button/Button").Button;
-  obj9 = { source: analyticsLocations(9552), style: tmp.nitroWheel, resizeMode: "contain" };
-  tmp6 = analyticsLocations(5604);
+  obj9 = { source: analyticsLocations(9651), style: tmp.nitroWheel, resizeMode: "contain" };
+  tmp6 = analyticsLocations(5699);
   intl3 = require("intl").intl;
   items2[3] = closure_11(View, obj7);
   return closure_12(View, obj3);

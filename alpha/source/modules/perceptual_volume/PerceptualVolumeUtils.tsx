@@ -1,10 +1,10 @@
-// Module ID: 5879
-// Function ID: 5880
+// Module ID: 5974
+// Function ID: 5975
 // Name: perceptual_volume/PerceptualVolumeUtils
 // Dependencies: [2]
 // Exports: amplitudeToPerceptual, perceptualToAmplitude
 
-// Module 5879 (perceptual_volume/PerceptualVolumeUtils)
+// Module 5974 (perceptual_volume/PerceptualVolumeUtils)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/perceptual_volume/PerceptualVolumeUtils.tsx");

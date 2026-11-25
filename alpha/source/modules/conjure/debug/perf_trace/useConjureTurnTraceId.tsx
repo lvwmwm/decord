@@ -1,11 +1,11 @@
-// Module ID: 18522
-// Function ID: 18523
+// Module ID: 18634
+// Function ID: 18635
 // Name: useConjureTurnTraceId
-// Dependencies: [7564, 18418, 7534, 504, 2]
+// Dependencies: [7663, 18530, 7629, 504, 2]
 // Exports: default
 
-// Module 18522 (useConjureTurnTraceId)
-import ConjureDebugStore from "ConjureDebugStore" /* 7564 */;
+// Module 18634 (useConjureTurnTraceId)
+import ConjureDebugStore from "ConjureDebugStore" /* 7663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

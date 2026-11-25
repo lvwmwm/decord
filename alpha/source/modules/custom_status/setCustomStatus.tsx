@@ -1,16 +1,16 @@
-// Module ID: 9393
-// Function ID: 9394
+// Module ID: 9492
+// Function ID: 9493
 // Name: setCustomStatus
-// Dependencies: [9390, 1071, 4742, 2168, 9394, 1255, 2]
+// Dependencies: [9489, 1071, 4837, 2168, 9493, 1255, 2]
 // Exports: default
 
-// Module 9393 (setCustomStatus)
+// Module 9492 (setCustomStatus)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import Constants2 from "Constants" /* 9390 */;
-import getClearAfterDurationDefault from "getClearAfterDuration" /* 9394 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import Constants2 from "Constants" /* 9489 */;
+import getClearAfterDurationDefault from "getClearAfterDuration" /* 9493 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants2.ClearAfterValues;

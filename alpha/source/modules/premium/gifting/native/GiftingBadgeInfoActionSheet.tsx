@@ -1,23 +1,23 @@
-// Module ID: 11010
-// Function ID: 11011
+// Module ID: 11109
+// Function ID: 11110
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4918, 6257, 1071, 21, 4917, 575, 1628, 504, 6012, 1255, 5145, 5508, 1112, 2920, 11011, 11013, 2]
+// Dependencies: [19, 17, 5013, 6352, 1071, 21, 5012, 575, 1628, 504, 6107, 1255, 5240, 5603, 1112, 2942, 11110, 11112, 2]
 // Exports: default
 
-// Module 11010 (GiftingBadgeInfoActionSheet)
+// Module 11109 (GiftingBadgeInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import _modDef2920 from "module_2920" /* 2920 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 6257 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11011 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11013 */;
+import _modDef2942 from "module_2942" /* 2942 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 6352 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11110 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11112 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,11 +83,11 @@ export default function GiftingBadgeInfoActionSheet() {
   let tmp5 = closure_10;
   items2[1] = obj4;
   let obj5 = { style: tmp.headerContainer, children: items3 };
-  let obj6 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(_modDef2920["0MB2C6"]) };
+  let obj6 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(_modDef2942["0MB2C6"]) };
   let Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items3 = [closure_9(Text, obj6), ];
-  let obj7 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: intl2.string(_modDef2920.k9sNVH) };
+  let obj7 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: intl2.string(_modDef2942.k9sNVH) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items3[1] = closure_9(Text2, obj7);
@@ -137,8 +137,8 @@ export default function GiftingBadgeInfoActionSheet() {
         let tmp13Result = null != tmp4;
         const tmp13 = React4;
         if (tmp13Result) {
-          const obj6 = { variant: "body-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2920.qvx9E4, obj7) };
-          const Text = tmp8(5508).Text;
+          const obj6 = { variant: "body-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2942.qvx9E4, obj7) };
+          const Text = tmp8(5603).Text;
           intl = tmp8(1112).intl;
           obj7 = { count: tmp4 };
           tmp13Result = tmp13(Text, obj6);

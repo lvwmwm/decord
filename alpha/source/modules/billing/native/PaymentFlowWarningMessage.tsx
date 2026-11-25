@@ -1,18 +1,18 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 9224
+// Function ID: 9225
 // Name: PaymentFlowWarningMessage
-// Dependencies: [19, 17, 21, 4917, 575, 6742, 1186, 5508, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 6837, 1186, 5603, 2]
 // Exports: default
 
-// Module 9125 (PaymentFlowWarningMessage)
+// Module 9224 (PaymentFlowWarningMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import LegacyTokens from "LegacyTokens" /* 6742 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import LegacyTokens from "LegacyTokens" /* 6837 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

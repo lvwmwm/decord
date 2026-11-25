@@ -1,17 +1,17 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10751
+// Function ID: 10752
 // Name: RoleLabel
-// Dependencies: [19, 17, 4918, 21, 4917, 504, 1186, 7947, 2]
+// Dependencies: [19, 17, 5013, 21, 5012, 504, 1186, 8046, 2]
 // Exports: RoleLabel
 
-// Module 10652 (RoleLabel)
+// Module 10751 (RoleLabel)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import _mod7947 from "module_7947" /* 7947 */;
+import _mod8046 from "module_8046" /* 8046 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,6 +44,6 @@ export function RoleLabel(color) {
     const obj4 = { color, colors, containerStyles: tmp.roleDot };
     tmp10 = React3(tmp2(1186).RoleDot, obj4);
   }
-  items1 = [tmp10, React3(_mod7947.FormLabel, { style: {}, text: name })];
+  items1 = [tmp10, React3(_mod8046.FormLabel, { style: {}, text: name })];
   return tmp8(tmp9, obj3);
 }

@@ -1,16 +1,16 @@
-// Module ID: 16905
-// Function ID: 16906
+// Module ID: 17026
+// Function ID: 17027
 // Name: VideoUploadQualitySetting
-// Dependencies: [1193, 9414, 504, 16904, 4742, 1112, 11815, 2]
+// Dependencies: [1193, 9513, 504, 17025, 4837, 1112, 11914, 2]
 
-// Module 16905 (VideoUploadQualitySetting)
+// Module 17026 (VideoUploadQualitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1112 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1193 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import UserSettingsText from "UserSettingsText" /* 16904 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import UserSettingsText from "UserSettingsText" /* 17025 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const UnsyncedUserSettingsStore = UnsyncedUserSettingsStore2;

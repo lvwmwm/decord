@@ -1,13 +1,13 @@
-// Module ID: 18620
-// Function ID: 18621
+// Module ID: 18732
+// Function ID: 18733
 // Name: guild_automod/PermissionUtils
-// Dependencies: [4788, 4849, 12307, 1071, 504, 2]
+// Dependencies: [4883, 4944, 12473, 1071, 504, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess, useCanCurrentUserManageAutomod, useHasMentionRaidLimitAccess, useIsUndeletableMentionSpamRule, useIsUserProfileRuleEnabled
 
-// Module 18620 (guild_automod/PermissionUtils)
-import Constants2 from "Constants" /* 12307 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+// Module 18732 (guild_automod/PermissionUtils)
+import Constants2 from "Constants" /* 12473 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

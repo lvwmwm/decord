@@ -1,9 +1,9 @@
-// Module ID: 15003
-// Function ID: 15004
+// Module ID: 15125
+// Function ID: 15126
 // Name: ConjureServerProjectActivityStore
 // Dependencies: [504, 572, 2]
 
-// Module 15003 (ConjureServerProjectActivityStore)
+// Module 15125 (ConjureServerProjectActivityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

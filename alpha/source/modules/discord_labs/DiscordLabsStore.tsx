@@ -1,13 +1,13 @@
-// Module ID: 15007
-// Function ID: 15008
+// Module ID: 15129
+// Function ID: 15130
 // Name: DiscordLabsStore
-// Dependencies: [1386, 559, 15008, 504, 572, 2]
+// Dependencies: [1386, 559, 15130, 504, 572, 2]
 
-// Module 15007 (DiscordLabsStore)
+// Module 15129 (DiscordLabsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DiscordLabsDefinitions from "DiscordLabsDefinitions" /* 15008 */;
+import DiscordLabsDefinitions from "DiscordLabsDefinitions" /* 15130 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
@@ -156,7 +156,7 @@ let obj2 = {
         [tmp] = item;
         return tmp !== labId;
       }));
-      const f107440 = (arg0) => {
+      const f107836 = (arg0) => {
         currentUser = currentUser.getCurrentUser();
         let enabled;
         if (currentUser != null) {
@@ -174,7 +174,7 @@ let obj2 = {
       const found = keys.filter((item) => {
         let tmp2 = null == closure_10[item];
         if (tmp2) {
-          tmp2 = f107441(item);
+          tmp2 = f107837(item);
         }
         return tmp2;
       });
@@ -209,7 +209,7 @@ let obj2 = {
     }
   },
   CURRENT_USER_UPDATE: function handleCurrentUserUpdate() {
-    const f107440 = (arg0) => {
+    const f107836 = (arg0) => {
       currentUser = currentUser.getCurrentUser();
       let enabled;
       if (currentUser != null) {
@@ -226,7 +226,7 @@ let obj2 = {
     const found = keys.filter((item) => {
       let tmp2 = null == closure_10[item];
       if (tmp2) {
-        tmp2 = f107441(item);
+        tmp2 = f107837(item);
       }
       return tmp2;
     });
@@ -238,12 +238,12 @@ let obj2 = {
     return flag;
   },
   CONNECTION_OPEN: function handleConnectionOpen() {
-    const f107441 = () => true;
+    const f107837 = () => true;
     const keys = Object.keys(closure_11);
     const found = keys.filter((item) => {
       let tmp2 = null == closure_10[item];
       if (tmp2) {
-        tmp2 = f107441(item);
+        tmp2 = f107837(item);
       }
       return tmp2;
     });

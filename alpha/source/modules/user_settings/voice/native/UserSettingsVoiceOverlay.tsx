@@ -1,18 +1,18 @@
-// Module ID: 10270
-// Function ID: 10271
+// Module ID: 10369
+// Function ID: 10370
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 10248, 21, 563, 10247, 1112, 7423, 10271, 2]
+// Dependencies: [19, 10347, 21, 563, 10346, 1112, 7518, 10370, 2]
 // Exports: default
 
-// Module 10270 (UserSettingsVoiceOverlay)
+// Module 10369 (UserSettingsVoiceOverlay)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl4 from "intl" /* 1112 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7423 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 10247 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10271 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7518 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 10346 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10370 */;
 import react from "react" /* 19 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10248 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10347 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

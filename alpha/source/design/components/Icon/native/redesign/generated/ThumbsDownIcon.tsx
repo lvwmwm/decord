@@ -1,14 +1,14 @@
-// Module ID: 8922
-// Function ID: 8923
+// Module ID: 9021
+// Function ID: 9022
 // Name: ThumbsDownIcon
-// Dependencies: [19, 21, 575, 5603, 8923, 2]
+// Dependencies: [19, 21, 575, 5698, 9022, 2]
 // Exports: ThumbsDownIcon
 
-// Module 8922 (ThumbsDownIcon)
+// Module 9021 (ThumbsDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 8923 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 9022 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

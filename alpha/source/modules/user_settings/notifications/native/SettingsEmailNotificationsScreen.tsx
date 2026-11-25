@@ -1,17 +1,18 @@
-// Module ID: 16937
-// Function ID: 16938
+// Module ID: 17058
+// Function ID: 17059
 // Name: SettingsEmailNotificationsScreen
-// Dependencies: [19, 15057, 9414, 21, 4917, 575, 15681, 16938, 504, 16939, 11815, 1112, 7269, 5989, 7808, 3154, 16018, 2]
+// Dependencies: [19, 15179, 9513, 21, 5012, 575, 15802, 17059, 504, 17060, 11914, 1112, 3206, 7364, 6084, 7907, 16139, 2]
 
-// Module 16937 (SettingsEmailNotificationsScreen)
+// Module 17058 (SettingsEmailNotificationsScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
-import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 16939 */;
+import _modDef3206 from "module_3206" /* 3206 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
+import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17060 */;
 import react from "react" /* 19 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15057 */;
-import createStyles from "createStyles" /* 4917 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15179 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let emailSettings;
@@ -37,10 +38,12 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
   let isDeclarativeSettingsUIAvailable;
   let obj7;
   let stateFromStores;
-  const tmp2 = isDeclarativeSettingsUIAvailable;
+  let tmp2 = isDeclarativeSettingsUIAvailable;
+  const tmp3 = stateFromStores;
   let tmp = closure_6();
   let obj = isDeclarativeSettingsUIAvailable(stateFromStores[6]);
   isDeclarativeSettingsUIAvailable = obj.useIsDeclarativeSettingsUIAvailable("SettingsEmailNotificationsScreen");
+  const tmp5 = enabled;
   let obj2 = enabled(stateFromStores[7]);
   enabled = obj2.useConfig({ location: "SettingsEmailNotificationsScreen" }).enabled;
   obj3 = isDeclarativeSettingsUIAvailable(stateFromStores[8]);
@@ -61,20 +64,32 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
   const memo = react.useMemo(() => {
     let items;
     let items1;
+    let stringResult1;
+    const tmp2 = isDeclarativeSettingsUIAvailable ? obj4 : obj3;
     let stringResult;
-    const tmp = isDeclarativeSettingsUIAvailable ? obj4 : obj3;
-    const obj = { settings: tmp.categories, subLabel: stringResult };
-    stringResult = undefined;
     const createList = SettingBuilders.createList;
     SettingBuilders;
+    if (isDeclarativeSettingsUIAvailable) {
+      const intl = tmp3(1112).intl;
+      stringResult = intl.string(_modDef3206.dpeWco);
+    }
+    const obj = { label: stringResult, settings: tmp2.categories, subLabel: stringResult1 };
+    stringResult1 = undefined;
     if (enabled) {
-      const intl = tmp2(1112).intl;
-      stringResult = intl.string(tmp2(1112).t.WViBDk);
+      let WViBDk;
+      const intl2 = tmp3(1112).intl;
+      const string = intl2.string;
+      if (isDeclarativeSettingsUIAvailable) {
+        WViBDk = _modDef3206.aPtRHt;
+      } else {
+        WViBDk = tmp3(1112).t.WViBDk;
+      }
+      stringResult1 = string(WViBDk);
     }
     const obj2 = { sections: items };
     items = [obj, ];
     obj3 = { settings: items1 };
-    items1 = [tmp.unsubscribeFromAllMarketing];
+    items1 = [tmp2.unsubscribeFromAllMarketing];
     items[1] = obj3;
     return createList(obj2);
   }, items3);
@@ -82,14 +97,14 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
     let tmp10Result;
     if (!stateFromStores) {
       if (stateFromStores1) {
-        tmp10Result = tmp10(tmp2(tmp3[12]).SceneLoadingIndicator, {});
+        tmp10Result = tmp10(tmp2(tmp3[13]).SceneLoadingIndicator, {});
       } else {
         const obj5 = { style: tmp.notice, children: null };
-        const Stack = tmp2(tmp3[13]).Stack;
-        ({ type: "warning", role: "status", message: intl.string(enabled(stateFromStores[15]).Nu2TMI), action: obj7 });
-        const InlineNotice = tmp2(tmp3[14]).InlineNotice;
+        const Stack = tmp2(tmp3[14]).Stack;
+        ({ type: "warning", role: "status", message: intl.string(tmp5(tmp3[12]).Nu2TMI), action: obj7 });
+        const InlineNotice = tmp2(tmp3[15]).InlineNotice;
         intl = tmp2(tmp3[11]).intl;
-        obj7 = { text: intl2.string(tmp2(stateFromStores[11]).t["5911Lb"]), onPress: tmp2(stateFromStores[9]).fetchEmailSettings };
+        obj7 = { text: intl2.string(tmp2(tmp3[11]).t["5911Lb"]), onPress: tmp2(tmp3[9]).fetchEmailSettings };
         intl2 = tmp2(tmp3[11]).intl;
         tmp10Result = tmp10(Stack, obj5);
       }

@@ -1,23 +1,23 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10709
+// Function ID: 10710
 // Name: FavoritesCleanup
-// Dependencies: [5, 4770, 4766, 4788, 4849, 6806, 4769, 4779, 1082, 1195, 10611, 1088, 6858, 2]
+// Dependencies: [5, 4865, 4861, 4883, 4944, 6901, 4864, 4874, 1082, 1195, 10710, 1088, 6953, 2]
 // Exports: getAutoAddedThreadsCategoryIds, getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 10610 (FavoritesCleanup)
+// Module 10709 (FavoritesCleanup)
 import Constants from "Constants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6858 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 10611 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6953 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 10710 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import FavoriteStore from "FavoriteStore" /* 4769 */;
-import FavoritesConstants from "FavoritesConstants" /* 4779 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import ReadStateStore from "ReadStateStore" /* 6901 */;
+import FavoriteStore from "FavoriteStore" /* 4864 */;
+import FavoritesConstants from "FavoritesConstants" /* 4874 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, set;
@@ -61,7 +61,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c1 = 3;

@@ -1,21 +1,21 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 15422
+// Function ID: 15423
 // Name: GhostInput
-// Dependencies: [109, 19, 21, 4917, 5508, 575, 7168, 4980, 7156, 7149, 7171, 7174, 7150, 2]
+// Dependencies: [109, 19, 21, 5012, 5603, 575, 7263, 5075, 7251, 7244, 7266, 7269, 7245, 2]
 // Exports: GhostInput
 
-// Module 15300 (GhostInput)
+// Module 15422 (GhostInput)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4980 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7150 */;
-import useTextField from "useTextField" /* 7156 */;
-import InputFieldContainer from "InputFieldContainer" /* 7168 */;
-import _objectWithoutProperties2 from "_objectWithoutProperties" /* 7174 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5075 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 7245 */;
+import useTextField from "useTextField" /* 7251 */;
+import InputFieldContainer from "InputFieldContainer" /* 7263 */;
+import _objectWithoutProperties2 from "_objectWithoutProperties" /* 7269 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ["labelId", "accessibilityLabel"];
@@ -65,7 +65,7 @@ export function GhostInput(size) {
   const tmpResult4 = useTextField;
   const textField = tmpResult4.useTextField(size, undefined);
   ({ innerRef, inputProps } = textField);
-  const Input = tmp(7149).Input;
+  const Input = tmp(7244).Input;
   const merged = Object.assign(size);
   const items = [size.containerStyle, ];
   let prop;
@@ -73,7 +73,7 @@ export function GhostInput(size) {
     prop = tmp4.centeredContainerStyle;
   }
   items[1] = prop;
-  const NativeTextInput = tmp(7171).NativeTextInput;
+  const NativeTextInput = tmp(7266).NativeTextInput;
   const tmpResult5 = _objectWithoutProperties2;
   const merged1 = Object.assign(tmpResult5.propsForNativeTextInput(inputProps));
   const merged2 = Object.assign(tmp8);

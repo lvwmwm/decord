@@ -1,14 +1,14 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10114
+// Function ID: 10115
 // Name: participantHasVideo
-// Dependencies: [502, 2131, 5567, 5729, 504, 2]
+// Dependencies: [502, 2131, 5662, 5824, 504, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 10015 (participantHasVideo)
-import Constants from "Constants" /* 5729 */;
+// Module 10114 (participantHasVideo)
+import Constants from "Constants" /* 5824 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import CallConstants from "CallConstants" /* 5567 */;
+import CallConstants from "CallConstants" /* 5662 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

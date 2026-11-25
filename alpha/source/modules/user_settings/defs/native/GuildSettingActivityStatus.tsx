@@ -1,15 +1,15 @@
-// Module ID: 17416
-// Function ID: 17417
+// Module ID: 17527
+// Function ID: 17528
 // Name: GuildSettingActivityStatus
-// Dependencies: [17403, 9414, 4742, 7225, 11815, 1112, 2]
+// Dependencies: [17514, 9513, 4837, 7320, 11914, 1112, 2]
 
-// Module 17416 (GuildSettingActivityStatus)
+// Module 17527 (GuildSettingActivityStatus)
 import intl2 from "intl" /* 1112 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7225 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17403 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7320 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17514 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 let c2;

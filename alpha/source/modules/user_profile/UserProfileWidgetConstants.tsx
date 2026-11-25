@@ -1,12 +1,12 @@
-// Module ID: 6046
-// Function ID: 6047
+// Module ID: 6141
+// Function ID: 6142
 // Name: UserProfileWidgetConstants
-// Dependencies: [2164, 6044, 1112, 2]
+// Dependencies: [2164, 6139, 1112, 2]
 // Exports: widgetShowsGameDetails, widgetSupportsComment, widgetSupportsTags
 
-// Module 6046 (UserProfileWidgetConstants)
+// Module 6141 (UserProfileWidgetConstants)
 import intl2 from "intl" /* 1112 */;
-import WidgetType from "WidgetType" /* 6044 */;
+import WidgetType from "WidgetType" /* 6139 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import size from "module_2" /* 2 */;
 

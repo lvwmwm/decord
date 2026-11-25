@@ -1,24 +1,24 @@
-// Module ID: 15209
-// Function ID: 15210
+// Module ID: 15331
+// Function ID: 15332
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 15210, 21, 4917, 575, 1628, 5508, 5596, 1112, 6014, 7055, 5515, 7065, 11275, 7202, 12267, 7229, 2]
+// Dependencies: [5, 32, 19, 17, 15332, 21, 5012, 575, 1628, 5603, 5691, 1112, 6109, 7150, 5610, 7160, 11374, 7297, 12434, 7324, 2]
 // Exports: default
 
-// Module 15209 (GuildAntiRaidReportModal)
+// Module 15331 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import components_Button_Button from "components/Button/Button" /* 5515 */;
-import TableRowGroup2 from "TableRowGroup" /* 6014 */;
-import NavigatorHeader from "NavigatorHeader" /* 7065 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import components_Button_Button from "components/Button/Button" /* 5610 */;
+import TableRowGroup2 from "TableRowGroup" /* 6109 */;
+import NavigatorHeader from "NavigatorHeader" /* 7160 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15210 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15332 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c1, dependencyMap;
@@ -133,7 +133,7 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -169,7 +169,7 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
           closure_128_0();
         }
         first = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp15) {
         first = 3;
         throw tmp15;

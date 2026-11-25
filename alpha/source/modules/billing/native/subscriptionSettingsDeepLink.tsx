@@ -1,13 +1,13 @@
-// Module ID: 15231
-// Function ID: 15232
+// Module ID: 15353
+// Function ID: 15354
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2178, 1071, 7968, 15232, 5131, 1112, 1255, 5680, 2]
+// Dependencies: [5, 2178, 1071, 8067, 15354, 5226, 1112, 1255, 5775, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 15231 (subscriptionSettingsDeepLink)
+// Module 15353 (subscriptionSettingsDeepLink)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5680 */;
-import openUserSettings from "openUserSettings" /* 7968 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5775 */;
+import openUserSettings from "openUserSettings" /* 8067 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
 import Constants from "Constants" /* 1071 */;
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

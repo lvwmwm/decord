@@ -1,9 +1,9 @@
-// Module ID: 15664
-// Function ID: 15665
+// Module ID: 15785
+// Function ID: 15786
 // Name: MemoryExperiment
 // Dependencies: [1450, 2]
 
-// Module 15664 (MemoryExperiment)
+// Module 15785 (MemoryExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

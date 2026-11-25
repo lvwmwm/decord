@@ -1,20 +1,20 @@
-// Module ID: 8688
-// Function ID: 8689
+// Module ID: 8786
+// Function ID: 8787
 // Name: InteractionUtils
-// Dependencies: [5, 502, 8102, 1071, 11, 7973, 8689, 6274, 1284, 2117, 8103, 8690, 572, 6275, 2, 6272]
+// Dependencies: [5, 502, 8201, 1071, 11, 8072, 8787, 6369, 1284, 2117, 8202, 8788, 572, 6370, 2, 6367]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8688 (InteractionUtils)
+// Module 8786 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Server from "Server" /* 2117 */;
-import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6272 */;
-import InteractionTypes from "InteractionTypes" /* 6274 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8689 */;
-import _slicedToArray from "_slicedToArray" /* 8690 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 6367 */;
+import InteractionTypes from "InteractionTypes" /* 6369 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 8787 */;
+import _slicedToArray from "_slicedToArray" /* 8788 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 8102 */;
+import InteractionStore from "InteractionStore" /* 8201 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let obj = function _executeMessageComponentInteraction() {
       } else if (2 === tmp4) {
         custom_id = 0;
         application_id = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           application_id = 3;
@@ -203,7 +203,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   dispatch2(obj2);
                 }
                 let message;
-                const setFailed2 = tmp26(8689).setFailed;
+                const setFailed2 = tmp26(8787).setFailed;
                 InteractionActionCreators;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;

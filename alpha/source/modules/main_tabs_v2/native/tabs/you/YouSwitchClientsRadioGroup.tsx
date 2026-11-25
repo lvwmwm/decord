@@ -1,14 +1,14 @@
-// Module ID: 18001
-// Function ID: 18002
+// Module ID: 18113
+// Function ID: 18114
 // Name: YouSwitchClientsRadioGroup
-// Dependencies: [32, 19, 21, 18002, 18003, 5131, 7125, 7127, 11507, 2]
+// Dependencies: [32, 19, 21, 18114, 18115, 5226, 7220, 7222, 11606, 2]
 // Exports: default
 
-// Module 18001 (YouSwitchClientsRadioGroup)
+// Module 18113 (YouSwitchClientsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import DiscordVariants from "DiscordVariants" /* 18002 */;
-import DiscordVariantTypes from "DiscordVariantTypes" /* 18003 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import DiscordVariants from "DiscordVariants" /* 18114 */;
+import DiscordVariantTypes from "DiscordVariantTypes" /* 18115 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ export default function YouSwitchClientsRadioGroup() {
     if (null != arr) {
       tmp5 = null;
       if (arr.length >= 2) {
-        const TableRadioGroup = memo(7125).TableRadioGroup;
+        const TableRadioGroup = memo(7220).TableRadioGroup;
         tmp5 = <TableRadioGroup title="Switch Clients" value={memo} onChange={tmp4} hasIcons>{arr.map((value) => {
           const TableRadioRow = memo(dependencyMap[7]).TableRadioRow;
           ({ color: memo(dependencyMap[4]).DISCORD_VARIANTS[value].color });

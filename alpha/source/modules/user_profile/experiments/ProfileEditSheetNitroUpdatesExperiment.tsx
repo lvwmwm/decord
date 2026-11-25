@@ -1,10 +1,10 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 16003
+// Function ID: 16004
 // Name: ProfileEditSheetNitroUpdatesExperiment
 // Dependencies: [1450, 2]
 // Exports: useProfileEditSheetNitroUpdatesConfig
 
-// Module 15882 (ProfileEditSheetNitroUpdatesExperiment)
+// Module 16003 (ProfileEditSheetNitroUpdatesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

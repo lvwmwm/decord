@@ -1,13 +1,13 @@
-// Module ID: 11115
-// Function ID: 11116
+// Module ID: 11214
+// Function ID: 11215
 // Name: OrderSigningDeferral
-// Dependencies: [5, 5634, 11116, 11117, 2]
+// Dependencies: [5, 5729, 11215, 11216, 2]
 // Exports: getPaymentRedirectContext, getSigningDeferralDeadline, getSigningDeferralMerchantAccountId, getStripeNextActionContext, isAwaitingStripeNextAction, isSigningDeferralExpired, performSigningDeferralAction
 
-// Module 11115 (OrderSigningDeferral)
-import PaymentConstants from "PaymentConstants" /* 5634 */;
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 11116 */;
-import StripeNextAction from "StripeNextAction" /* 11117 */;
+// Module 11214 (OrderSigningDeferral)
+import PaymentConstants from "PaymentConstants" /* 5729 */;
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 11215 */;
+import StripeNextAction from "StripeNextAction" /* 11216 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -16,11 +16,16 @@ let c1, c2;
 function openPaymentRedirect(redirect_url) {
   redirect_url = redirect_url.redirect_url;
   if (null == redirect_url) {
-    const _Error = Error;
     const self = this;
-    const self2 = this;
-    const error = new Error("Payment redirect context has no redirect url");
-    throw error;
+    if (typeof PaymentRedirectUrlMissingError === "function") {
+      const self2 = this;
+      const self3 = this;
+      const redirect_url1 = new redirect_url("Payment redirect context has no redirect url", tmp3, redirect_url);
+      redirect_url1.name = "PaymentRedirectUrlMissing";
+      throw redirect_url1;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
   } else {
     const _window = window;
     window.open(redirect_url);
@@ -44,7 +49,7 @@ let obj = function _performSigningDeferralAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -58,21 +63,15 @@ let obj = function _performSigningDeferralAction() {
             const obj4 = { value, done: true };
             return obj4;
           } else if (null == closure_0) {
-            const _Error2 = Error;
-            const self3 = this;
-            const self4 = this;
-            const error = new Error("Order signing was deferred without a deferral context");
-            throw error;
+            const self2 = this;
+            throw new SigningDeferralContextMissingError();
           } else {
             ({ payment_redirect_context, stripe_3ds_context, stripe_next_action_context } = closure_0);
             if (null == payment_redirect_context) {
               if (null == stripe_3ds_context) {
                 if (null == stripe_next_action_context) {
-                  const _Error = Error;
                   const self = this;
-                  const self2 = this;
-                  const error1 = new Error("Order signing deferral context has no action the client can complete");
-                  throw error1;
+                  throw new SigningDeferralActionUnsupportedError();
                 } else {
                   c2 = 2;
                   c1 = 1;
@@ -109,16 +108,37 @@ let obj = function _performSigningDeferralAction() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp16) {
+        return { value: "HermesInternal", done: "HermesInternal" };
+      } catch (tmp12) {
         c1 = 3;
-        throw tmp16;
+        throw tmp12;
       }
     }
   });
   return obj(...arguments);
 };
 const OrderStatus = PaymentConstants.OrderStatus;
+class PaymentRedirectUrlMissingError extends Error {
+  constructor() {
+    const tmp2 = new tmp("Payment redirect context has no redirect url", new.target);
+    tmp2.name = "PaymentRedirectUrlMissing";
+    return tmp2;
+  }
+}
+class SigningDeferralContextMissingError extends Error {
+  constructor() {
+    const tmp2 = new tmp("Order signing was deferred without a deferral context", new.target);
+    tmp2.name = "SigningDeferralContextMissing";
+    return tmp2;
+  }
+}
+class SigningDeferralActionUnsupportedError extends Error {
+  constructor() {
+    const tmp2 = new tmp("Order signing deferral context has no action the client can complete", new.target);
+    tmp2.name = "SigningDeferralActionUnsupported";
+    return tmp2;
+  }
+}
 const result = size.fileFinishedImporting("modules/payments/OrderSigningDeferral.tsx");
 
 export function getPaymentRedirectContext(billing_facet) {

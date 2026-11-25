@@ -1,14 +1,14 @@
-// Module ID: 19841
-// Function ID: 19842
+// Module ID: 19943
+// Function ID: 19944
 // Name: SoundboardCreationUtils
-// Dependencies: [32, 5, 1112, 5921, 10557, 1378, 10558, 19842, 10262, 7418, 5131, 19843, 2119, 19845, 2]
+// Dependencies: [32, 5, 1112, 6016, 10656, 1378, 10657, 19944, 10361, 7513, 5226, 19945, 2119, 19947, 2]
 // Exports: createSoundboardSound, showAddSoundboardSoundOptions
 
-// Module 19841 (SoundboardCreationUtils)
+// Module 19943 (SoundboardCreationUtils)
 import intl5 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5921 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -52,7 +52,7 @@ let obj = function _pickSoundboardSoundFile() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -422,7 +422,7 @@ export function showAddSoundboardSoundOptions(guildId) {
     onPress() {
       obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId, analyticsSource: "guild_settings_record" };
-      return obj.openLazy(asyncRequire(19843, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
+      return obj.openLazy(asyncRequire(19945, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
     }
   };
   intl2 = require("intl").intl;
@@ -445,7 +445,7 @@ export function showAddSoundboardSoundOptions(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -480,7 +480,7 @@ export function showAddSoundboardSoundOptions(guildId) {
             tmp4(c2[13])(obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         c3 = 3;

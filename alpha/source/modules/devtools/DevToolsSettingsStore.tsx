@@ -1,12 +1,12 @@
-// Module ID: 8242
-// Function ID: 8243
+// Module ID: 8341
+// Function ID: 8342
 // Name: DevToolsSettingsStore
-// Dependencies: [8243, 504, 572, 2]
+// Dependencies: [8342, 504, 572, 2]
 
-// Module 8242 (DevToolsSettingsStore)
+// Module 8341 (DevToolsSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8243 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8342 */;
 import size from "module_2" /* 2 */;
 
 let obj = { sidebarWidth: 460, lastOpenTabId: null, lastOpenSubTabId: null, displayTools: false, showDevWidget: false, devWidgetPosition: { x: 0, y: 0 }, sortedScreenKeys: [] };

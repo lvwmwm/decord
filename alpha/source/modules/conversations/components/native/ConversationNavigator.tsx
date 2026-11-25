@@ -1,18 +1,18 @@
-// Module ID: 8905
-// Function ID: 8906
+// Module ID: 9004
+// Function ID: 9005
 // Name: ConversationNavigator
-// Dependencies: [32, 19, 8900, 21, 8906, 7229, 8916, 8917, 8918, 575, 8931, 8943, 5094, 8899, 2]
+// Dependencies: [32, 19, 8999, 21, 9005, 7324, 9015, 9016, 9017, 575, 9030, 9042, 5189, 8998, 2]
 // Exports: default, openConversationNavigator
 
-// Module 8905 (ConversationNavigator)
+// Module 9004 (ConversationNavigator)
 import nativeDefault from "native" /* 575 */;
-import RootNavigationRef from "RootNavigationRef" /* 5094 */;
-import useSelectedConversationDefault from "useSelectedConversation" /* 8916 */;
+import RootNavigationRef from "RootNavigationRef" /* 5189 */;
+import useSelectedConversationDefault from "useSelectedConversation" /* 9015 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 8900 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 8999 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 8906 */;
+import NativeStackView from "NativeStackView" /* 9005 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let _require;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ConversationsActionCreators = tmp(8899);
+const ConversationsActionCreators = tmp(8998);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let Navigator = NativeStackView.createNativeStackNavigator();
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigator.tsx");
@@ -42,15 +42,14 @@ export default function ConversationNavigator(route) {
   _require = useSelectedConversationDefault(channelId);
   const first = _slicedToArray(react.useState(() => {
     let tmp = null;
-    if (SelectedConversationStore.consumeFocusRequest()) {
-      let tmp3 = null;
+    if (null != SelectedConversationStore.consumeFocusRequest()) {
+      tmp = null;
       const tmp2 = closure_0;
       if (null != closure_0) {
         const obj = { conversationId: null, title: null };
         ({ id: obj.conversationId, title: obj.title } = tmp2);
-        tmp3 = obj;
+        tmp = obj;
       }
-      tmp = tmp3;
     }
     return tmp;
   }), 1)[0];
@@ -58,14 +57,14 @@ export default function ConversationNavigator(route) {
   Navigator = Navigator.Navigator;
   const tmp5 = closure_7;
   if (null != first) {
-    LIST = tmp(8917).ConversationNavigatorScreens.FOCUS;
+    LIST = tmp(9016).ConversationNavigatorScreens.FOCUS;
   } else {
-    LIST = tmp(8917).ConversationNavigatorScreens.LIST;
+    LIST = tmp(9016).ConversationNavigatorScreens.LIST;
   }
   items = [, ];
   const obj3 = {
     initialParams: { channelId, guildId },
-    name: tmp(8917).ConversationNavigatorScreens.LIST,
+    name: tmp(9016).ConversationNavigatorScreens.LIST,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);
@@ -80,7 +79,7 @@ export default function ConversationNavigator(route) {
   items[0] = closure_6(Navigator.Screen, obj3);
   const Screen = tmp6.Screen;
   const obj4 = {
-    name: tmp(8917).ConversationNavigatorScreens.FOCUS,
+    name: tmp(9016).ConversationNavigatorScreens.FOCUS,
     initialParams: tmp8,
     options(arg0) {
       let route;

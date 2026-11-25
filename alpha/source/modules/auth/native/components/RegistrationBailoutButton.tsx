@@ -1,15 +1,15 @@
-// Module ID: 17518
-// Function ID: 17519
+// Module ID: 17629
+// Function ID: 17630
 // Name: RegistrationBailoutButton
-// Dependencies: [19, 21, 4917, 1186, 1112, 2]
+// Dependencies: [19, 21, 5012, 1186, 1112, 2]
 // Exports: default
 
-// Module 17518 (RegistrationBailoutButton)
+// Module 17629 (RegistrationBailoutButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

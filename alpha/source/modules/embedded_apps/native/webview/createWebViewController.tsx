@@ -1,32 +1,34 @@
-// Module ID: 10065
-// Function ID: 10066
+// Module ID: 10164
+// Function ID: 10165
 // Name: createWebViewController
-// Dependencies: [5, 10066, 1071, 5671, 7763, 10067, 1241, 10068, 10071, 1107, 2]
+// Dependencies: [5, 10165, 1071, 5766, 7862, 10166, 1241, 10167, 10170, 1107, 2]
 // Exports: default
 
-// Module 10065 (createWebViewController)
-import Constants from "Constants" /* 1071 */;
+// Module 10164 (createWebViewController)
+import Constants2 from "Constants" /* 1071 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import Constants2 from "Constants" /* 5671 */;
-import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10066 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10071 */;
+import EmbeddedAppConstants from "EmbeddedAppConstants" /* 10165 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10170 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import Constants from "Constants" /* 5766 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c6, c7;
 
+let metroImportDefault;
+let metroRequire;
 let closure_4 = EmbeddedAppConstants.EMBEDDED_APP_DISALLOWED_NAVIGATION_MESSAGE;
-const ComponentActions = Constants.ComponentActions;
-const TransportTypes = Constants2.TransportTypes;
-const result = size.fileFinishedImporting("modules/embedded_apps/native/webview/createWebViewController.tsx");
+const ComponentActions = Constants2.ComponentActions;
+({ MAX_POST_MESSAGE_STRING_LENGTH: metroRequire, TransportTypes: metroImportDefault } = Constants);
+let result = size.fileFinishedImporting("modules/embedded_apps/native/webview/createWebViewController.tsx");
 
 export default function createWebViewController(id, contextSource) {
   let shellBridgeSecret;
   _require = id;
   ({ getOrigin: importDefault, onDisallowedNavigation: dependencyMap, shellBridgeSecret } = contextSource);
-  function postMessageToWebView(arg0, arg1) {
+  function postMessageToWebView() {
     return obj(...arguments);
   }
   let obj = function _postMessageToWebView() {
@@ -43,7 +45,7 @@ export default function createWebViewController(id, contextSource) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -85,7 +87,7 @@ export default function createWebViewController(id, contextSource) {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           closure_4 = tmp18;
@@ -103,7 +105,7 @@ export default function createWebViewController(id, contextSource) {
   contextSource = contextSource.contextSource;
   obj = require("WebView");
   const webViewProxy = obj.getWebViewProxy(id);
-  const tmp = require("createEmbeddedAppShimMessageHandler");
+  let tmp = require("createEmbeddedAppShimMessageHandler");
   const createEmbeddedAppShimMessageHandler = tmp.createEmbeddedAppShimMessageHandler;
   _require = webViewProxy(function*(arg0, value) {
     let closure_3;
@@ -118,7 +120,7 @@ export default function createWebViewController(id, contextSource) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -159,7 +161,7 @@ export default function createWebViewController(id, contextSource) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp15) {
         if (0 === c4) {
@@ -171,30 +173,37 @@ export default function createWebViewController(id, contextSource) {
       }
     }
   });
-  let closure_6 = createEmbeddedAppShimMessageHandler(id, shellBridgeSecret, function(arg0) {
+  let closure_6 = createEmbeddedAppShimMessageHandler(id, shellBridgeSecret, function() {
     return closure_0(...arguments);
   });
   let closure_7 = webViewProxy.addOnMessageListener((data) => {
-    try {
-      const _JSON = JSON;
-      const parsed = JSON.parse(data.data);
-      if (!closure_6.handleMessage(parsed)) {
-        const tmp6 = importDefault();
-        const tmp8 = typeof tmp3 === "object" && null != tmp6;
-        if (tmp8) {
-          const obj2 = { type: TransportTypes.POST_MESSAGE, origin: tmp6, iframeId: id };
+    const tmp = importDefault();
+    if (null != tmp) {
+      const obj2 = { type: metroImportDefault.POST_MESSAGE, origin: tmp, iframeId: id };
+      if (typeof data.data === "string") {
+        if (data.data.length > metroRequire) {
           obj = WebViewPostMessageTransportDefault;
-          obj.handleMessage(parsed, obj2, postMessageToWebView);
+          const result = obj.rejectOversizedMessage(obj2, postMessageToWebView);
         }
       }
-    } catch (tmp16) {
-      const _SyntaxError = SyntaxError;
-      if (tmp16 instanceof SyntaxError) {
-        if (data.data === closure_4) {
-          dependencyMap();
+      try {
+        const _JSON = JSON;
+        const parsed = JSON.parse(data.data);
+        if (!metroRequire.handleMessage(parsed)) {
+          if (typeof parsed === "object") {
+            const obj3 = WebViewPostMessageTransportDefault;
+            obj3.handleMessage(parsed, obj2, postMessageToWebView);
+          }
         }
-      } else {
-        throw tmp16;
+      } catch (tmp7) {
+        const _SyntaxError = SyntaxError;
+        if (tmp7 instanceof SyntaxError) {
+          if (data.data === closure_4) {
+            dependencyMap();
+          }
+        } else {
+          throw tmp7;
+        }
       }
     }
   });

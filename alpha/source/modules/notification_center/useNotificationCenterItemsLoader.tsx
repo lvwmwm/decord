@@ -1,19 +1,19 @@
-// Module ID: 18091
-// Function ID: 18092
+// Module ID: 18203
+// Function ID: 18204
 // Name: useNotificationCenterItemsLoader
-// Dependencies: [5, 32, 19, 6851, 6822, 18090, 6042, 504, 18092, 7341, 9372, 2]
+// Dependencies: [5, 32, 19, 6946, 6917, 18202, 6137, 504, 18204, 7436, 9471, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 18091 (useNotificationCenterItemsLoader)
-import ReadStateConstants from "ReadStateConstants" /* 6042 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7341 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 18092 */;
+// Module 18203 (useNotificationCenterItemsLoader)
+import ReadStateConstants from "ReadStateConstants" /* 6137 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7436 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 18204 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 6851 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6822 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 18090 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 6946 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6917 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 18202 */;
 import size from "module_2" /* 2 */;
 
 let c2, with_mentions;
@@ -132,7 +132,7 @@ export function useNotificationCenterItemsLoader(isFocused) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -197,7 +197,7 @@ export function useNotificationCenterItemsLoader(isFocused) {
           _undefined(false);
         }
         with_mentions = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp22) {
         with_mentions = 3;
         throw tmp22;

@@ -15,7 +15,7 @@ import module_560 from "module_560" /* 560 */;
 import SafeAreaStore from "SafeAreaStore" /* 1629 */;
 import size_mod from "module_2" /* 2 */;
 
-const f81266 = () => state.setState((arg0) => closure_1_4(arg0));
+const f81513 = () => state.setState((arg0) => closure_1_4(arg0));
 function getDimensionsStoreStateForEntry(appEntryKey, arg1) {
   let height2;
   let height4;
@@ -132,16 +132,16 @@ const Dimensions = react_native.Dimensions;
 let byAppEntry = module_560.create(() => getDimensionsStoreState(undefined));
 const subscription = SafeAreaStore.subscribe(() => {
   const obj = react_native2;
-  obj.batchUpdates(f81266);
+  obj.batchUpdates(f81513);
 });
 subscribeToKeyboardUIStore(() => {
   const obj = react_native2;
-  obj.batchUpdates(f81266);
+  obj.batchUpdates(f81513);
 });
 const listener = Dimensions.addEventListener("change", () => {
   let state;
   const obj = react_native2;
-  obj.batchUpdates(f81266);
+  obj.batchUpdates(f81513);
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/screen/native/DimensionsStore.android.tsx");

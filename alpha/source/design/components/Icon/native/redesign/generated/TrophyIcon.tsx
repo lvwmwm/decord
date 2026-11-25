@@ -1,14 +1,14 @@
-// Module ID: 8658
-// Function ID: 8659
+// Module ID: 8757
+// Function ID: 8758
 // Name: TrophyIcon
-// Dependencies: [19, 21, 575, 5603, 8659, 2]
+// Dependencies: [19, 21, 575, 5698, 8758, 2]
 // Exports: TrophyIcon
 
-// Module 8658 (TrophyIcon)
+// Module 8757 (TrophyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 8659 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 8758 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

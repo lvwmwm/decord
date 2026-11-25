@@ -1,10 +1,10 @@
-// Module ID: 5863
-// Function ID: 5864
+// Module ID: 5958
+// Function ID: 5959
 // Name: ScreenShareDtxExperiment
 // Dependencies: [1450, 2]
 // Exports: getIsScreenShareDtxEnabled
 
-// Module 5863 (ScreenShareDtxExperiment)
+// Module 5958 (ScreenShareDtxExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

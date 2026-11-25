@@ -1,8 +1,8 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 16078
+// Function ID: 16079
 // Dependencies: [2]
 
-// Module 15957
+// Module 16078
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/upsells/profiles/headers/cyberpunk_indi_header.png.js");

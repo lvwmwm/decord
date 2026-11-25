@@ -1,33 +1,33 @@
-// Module ID: 19645
-// Function ID: 19646
+// Module ID: 19747
+// Function ID: 19748
 // Name: NewUserUtils
-// Dependencies: [5, 17501, 7336, 1386, 5722, 13525, 13207, 1071, 13497, 7739, 17549, 13499, 1378, 7746, 17550, 13208, 1241, 17872, 10284, 572, 1501, 8780, 13502, 6004, 19644, 17866, 1098, 13610, 2]
+// Dependencies: [5, 17612, 7431, 1386, 5817, 13648, 13330, 1071, 13620, 7838, 17660, 13622, 1378, 7845, 17661, 13331, 1241, 17984, 10383, 572, 1501, 8879, 13625, 6099, 19746, 17978, 1098, 13733, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 19645 (NewUserUtils)
+// Module 19747 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1098 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import Link from "Link" /* 1501 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7739 */;
-import react_nativeDefault from "react-native" /* 7746 */;
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 8780 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10284 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13497 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13502 */;
-import NUFConstants from "NUFConstants" /* 13525 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13610 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17549 */;
-import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17866 */;
-import InterestPickerExperiment from "InterestPickerExperiment" /* 17872 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 19644 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7838 */;
+import react_nativeDefault from "react-native" /* 7845 */;
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 8879 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10383 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13620 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13625 */;
+import NUFConstants from "NUFConstants" /* 13648 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13733 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17660 */;
+import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17978 */;
+import InterestPickerExperiment from "InterestPickerExperiment" /* 17984 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 19746 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17501 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7336 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17612 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
 import UserStore from "UserStore" /* 1386 */;
-import NewUserStore from "NewUserStore" /* 5722 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13207 */;
+import NewUserStore from "NewUserStore" /* 5817 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13330 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let obj = function _shouldSkipContactSyncStep() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -155,7 +155,7 @@ obj = function _getNextOnboardingStep() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -322,7 +322,7 @@ let closure_18 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     let c3;
@@ -411,7 +411,7 @@ let closure_18 = _asyncToGenerator(async (arg0, value) => {
               } else {
                 c3 = 0;
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -459,7 +459,7 @@ let closure_19 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {

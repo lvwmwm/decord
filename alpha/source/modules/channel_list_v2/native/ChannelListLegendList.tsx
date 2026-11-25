@@ -1,10 +1,10 @@
-// Module ID: 17815
-// Function ID: 17816
+// Module ID: 17927
+// Function ID: 17928
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 17816, 1653, 1706, 7302, 11423, 2]
+// Dependencies: [19, 21, 17928, 1653, 1706, 7397, 11522, 2]
 
-// Module 17815 (ChannelListLegendList)
-import FastList from "FastList" /* 7302 */;
+// Module 17927 (ChannelListLegendList)
+import FastList from "FastList" /* 7397 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

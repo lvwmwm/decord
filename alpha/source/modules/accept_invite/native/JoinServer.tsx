@@ -1,20 +1,20 @@
-// Module ID: 7208
-// Function ID: 7209
+// Module ID: 7303
+// Function ID: 7304
 // Name: JoinServer
-// Dependencies: [19, 17, 7209, 21, 4917, 575, 5508, 1112, 5492, 1500, 1494, 7147, 5515, 2]
+// Dependencies: [19, 17, 7304, 21, 5012, 575, 5603, 1112, 5587, 1500, 1494, 7242, 5610, 2]
 // Exports: default
 
-// Module 7208 (JoinServer)
+// Module 7303 (JoinServer)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5492 */;
-import Text_Text from "Text/Text" /* 5508 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5587 */;
+import Text_Text from "Text/Text" /* 5603 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7209 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7304 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -32,7 +32,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const FreeFormInputGroupDefault = tmp2(7147);
+const FreeFormInputGroupDefault = tmp2(7242);
 class OrSeparator {
   constructor() {
     let intl;
@@ -108,11 +108,11 @@ export default function JoinServer(arg0) {
   if (height > closure_6) {
     const obj4 = { children: items2 };
     const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1112).t.jlfuFW) };
-    const Text = tmp4(5508).Text;
+    const Text = tmp4(5603).Text;
     intl = tmp4(1112).intl;
     items2 = [closure_8(Text, obj5), ];
     const obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(navigation(1112).t.lVvN3A) };
-    const Text2 = tmp4(5508).Text;
+    const Text2 = tmp4(5603).Text;
     intl2 = tmp4(1112).intl;
     items2[1] = closure_8(Text2, obj6);
     tmp7Result = tmp7(closure_10, obj4);
@@ -125,7 +125,7 @@ export default function JoinServer(arg0) {
   intl4 = tmp4(1112).intl;
   items3[1] = closure_8(tmp2Result, obj8);
   const obj9 = { style: tmp.exampleText, variant: "body-sm/medium", color: "text-muted", children: intl5.format(navigation(1112).t.vwWaTe, obj10) };
-  const Text3 = tmp4(5508).Text;
+  const Text3 = tmp4(5603).Text;
   intl5 = tmp4(1112).intl;
   obj10 = {
     example1: items[0],
@@ -143,13 +143,13 @@ export default function JoinServer(arg0) {
   const obj12 = { style: tmp.growSpacing };
   items5[0] = closure_8(closure_4, obj12);
   const obj13 = { size: "lg", text: intl6.string(navigation(1112).t["+H/coT"]), accessibilityLabel: intl7.string(navigation(1112).t["+H/coT"]), loading: submitting, disabled: submitting, onPress: onDone };
-  const Button = tmp4(5515).Button;
+  const Button = tmp4(5610).Button;
   intl6 = tmp4(1112).intl;
   intl7 = tmp4(1112).intl;
   items5[1] = closure_8(Button, obj13);
   items5[2] = closure_8(OrSeparator, {});
   const obj14 = { size: "lg", variant: "secondary", text: intl8.string(navigation(1112).t["MOqX/G"]), accessibilityLabel: intl9.string(navigation(1112).t["MOqX/G"]), onPress: callback };
-  const Button2 = tmp4(5515).Button;
+  const Button2 = tmp4(5610).Button;
   intl8 = tmp4(1112).intl;
   intl9 = tmp4(1112).intl;
   items5[3] = closure_8(Button2, obj14);

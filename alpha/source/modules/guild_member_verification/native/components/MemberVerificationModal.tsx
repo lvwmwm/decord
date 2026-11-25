@@ -1,22 +1,22 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 7003
+// Function ID: 7004
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 4829, 6909, 6910, 21, 1653, 1186, 4917, 575, 1628, 5126, 4924, 6911, 6913, 504, 4953, 6871, 6914, 6921, 6922, 6925, 6935, 6936, 6026, 1112, 7318, 2]
+// Dependencies: [19, 17, 4924, 7004, 7005, 21, 1653, 1186, 5012, 575, 1628, 5221, 5019, 7006, 7008, 504, 5048, 6966, 7009, 7016, 7017, 7020, 7030, 7031, 6121, 1112, 7413, 2]
 // Exports: default
 
-// Module 6908 (MemberVerificationModal)
+// Module 7003 (MemberVerificationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4953 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6871 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6966 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6909 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6910 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7004 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 7005 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1653 from "module_1653" /* 1653 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let SHEET_RADIUS;

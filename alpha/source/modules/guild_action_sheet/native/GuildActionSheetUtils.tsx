@@ -1,12 +1,12 @@
-// Module ID: 15198
-// Function ID: 15199
+// Module ID: 15320
+// Function ID: 15321
 // Name: GuildActionSheetUtils
-// Dependencies: [4849, 1071, 504, 2]
+// Dependencies: [4944, 1071, 504, 2]
 // Exports: useGuildActionSheetPermissions
 
-// Module 15198 (GuildActionSheetUtils)
+// Module 15320 (GuildActionSheetUtils)
 import Constants from "Constants" /* 1071 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

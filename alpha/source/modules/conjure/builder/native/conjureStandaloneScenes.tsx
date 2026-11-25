@@ -1,14 +1,14 @@
-// Module ID: 18281
-// Function ID: 18282
+// Module ID: 18393
+// Function ID: 18394
 // Name: conjureStandaloneScenes
-// Dependencies: [1071, 4773, 1098, 11341, 2]
+// Dependencies: [1071, 4868, 1098, 11440, 2]
 // Exports: projectOpener, pushServerProjectScreen, takeServerProjectEntryPoint
 
-// Module 18281 (conjureStandaloneScenes)
+// Module 18393 (conjureStandaloneScenes)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
-import ChannelConstants from "ChannelConstants" /* 4773 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11341 */;
+import ChannelConstants from "ChannelConstants" /* 4868 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11440 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

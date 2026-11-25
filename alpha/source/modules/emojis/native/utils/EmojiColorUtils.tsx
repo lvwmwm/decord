@@ -1,10 +1,10 @@
-// Module ID: 17640
-// Function ID: 17641
+// Module ID: 17751
+// Function ID: 17752
 // Name: utils/EmojiColorUtils
 // Dependencies: [5, 17, 1454, 2023, 2]
 // Exports: getEmojiDominantColors
 
-// Module 17640 (utils/EmojiColorUtils)
+// Module 17751 (utils/EmojiColorUtils)
 import react_native from "react-native" /* 17 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -32,7 +32,7 @@ let obj = function _getFromCacheOrFallback2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let v0;
@@ -134,7 +134,7 @@ obj = function _getEmojiDominantColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

@@ -1,20 +1,20 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15986
+// Function ID: 15987
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 6250, 6037, 4829, 4788, 6038, 1386, 1071, 4942, 504, 12316, 4761, 9298, 15866, 9291, 4945, 7219, 15862, 6748, 15863, 5666, 1112, 9293, 2]
+// Dependencies: [109, 5, 19, 6345, 6132, 4924, 4883, 6133, 1386, 1071, 5037, 504, 12482, 4856, 9397, 15987, 9390, 5040, 7314, 15983, 6843, 15984, 5761, 1112, 9392, 2]
 // Exports: default
 
-// Module 15865 (useGuildProfileEditForm)
+// Module 15986 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1071 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4942 */;
-import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 6250 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5037 */;
+import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 6345 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 6037 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import SortedGuildStore from "SortedGuildStore" /* 6038 */;
+import UserProfileStore from "UserProfileStore" /* 6132 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import SortedGuildStore from "SortedGuildStore" /* 6133 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ export default function useGuildProfileEditForm() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -240,7 +240,7 @@ export default function useGuildProfileEditForm() {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

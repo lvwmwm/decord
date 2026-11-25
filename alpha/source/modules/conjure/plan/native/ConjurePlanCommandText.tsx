@@ -1,16 +1,16 @@
-// Module ID: 18622
-// Function ID: 18623
+// Module ID: 18734
+// Function ID: 18735
 // Name: ConjurePlanCommandText
-// Dependencies: [19, 6948, 21, 4917, 575, 5508, 18607, 2]
+// Dependencies: [19, 7043, 21, 5012, 575, 5603, 18719, 2]
 // Exports: ConjurePlanCommandMarkup, ConjurePlanCommandText
 
-// Module 18622 (ConjurePlanCommandText)
+// Module 18734 (ConjurePlanCommandText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6948 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 7043 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -50,9 +50,9 @@ export function ConjurePlanCommandText(text) {
   let commandNames;
   text = text.text;
   ({ commandNames, size } = text);
-  const obj = size(18607);
+  const obj = size(18719);
   const conjurePlanCommandPattern = obj.useConjurePlanCommandPattern(commandNames);
-  const obj2 = size(18607);
+  const obj2 = size(18719);
   const result = obj2.splitConjurePlanCommandText(text, conjurePlanCommandPattern);
   if (null != result) {
     text = result.map((kind) => {
@@ -78,7 +78,7 @@ export function ConjurePlanCommandMarkup(markup) {
   return conjurePlanCommandPattern.useMemo(() => {
     let mapped;
     let validElement;
-    const f115387 = (icon) => {
+    const f115769 = (icon) => {
       let Children;
       let cloneElement;
       let cloneElementResult;
@@ -107,7 +107,7 @@ export function ConjurePlanCommandMarkup(markup) {
           cloneElementResult = mapped;
           if (null != mapped.props.children) {
             ({ Children, cloneElement } = tmp11);
-            cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f115387));
+            cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f115769));
           }
         }
       }
@@ -119,7 +119,7 @@ export function ConjurePlanCommandMarkup(markup) {
       let closure_0 = tmp;
       let closure_1 = size;
       const Children = react.Children;
-      mapped = Children.map(markup, f115387);
+      mapped = Children.map(markup, f115769);
     }
     return mapped;
   }, items);

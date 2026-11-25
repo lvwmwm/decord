@@ -1,12 +1,12 @@
-// Module ID: 4980
-// Function ID: 4981
+// Module ID: 5075
+// Function ID: 5076
 // Name: useFieldLabelA11yNative
-// Dependencies: [19, 17, 4981, 2]
+// Dependencies: [19, 17, 5076, 2]
 // Exports: useFieldLabelA11yNative
 
-// Module 4980 (useFieldLabelA11yNative)
+// Module 5075 (useFieldLabelA11yNative)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 4981 */;
+import react2 from "react" /* 5076 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

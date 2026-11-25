@@ -1,14 +1,14 @@
-// Module ID: 6824
-// Function ID: 6825
+// Module ID: 6919
+// Function ID: 6920
 // Name: NotificationCenterUtils
-// Dependencies: [6282, 4742, 11, 6823, 2]
+// Dependencies: [6377, 4837, 11, 6918, 2]
 // Exports: getRelativeTimestamp, incomingFriendRequestLocalItem, incomingGameFriendRequestLocalItem, isMentionItem, isRemoteAcked, mobileNativeUpdateAvailableLocalItem
 
-// Module 6824 (NotificationCenterUtils)
+// Module 6919 (NotificationCenterUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import getTimestampString from "getTimestampString" /* 6282 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6823 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import getTimestampString from "getTimestampString" /* 6377 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6918 */;
 import size from "module_2" /* 2 */;
 
 const getTimestampStringDefault = getTimestampString;

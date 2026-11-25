@@ -1,11 +1,11 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14613
+// Function ID: 14614
 // Name: UserApplicationIdentityActionCreators
-// Dependencies: [5, 14489, 1071, 572, 1284, 504, 2]
+// Dependencies: [5, 14612, 1071, 572, 1284, 504, 2]
 
-// Module 14490 (UserApplicationIdentityActionCreators)
+// Module 14613 (UserApplicationIdentityActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 14489 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 14612 */;
 import Constants from "Constants" /* 1071 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -81,7 +81,7 @@ let obj = {
             obj.dispatch(obj10);
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           closure_2 = tmp21;
@@ -110,7 +110,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ let obj = {
             return obj;
           } else {
             application_id = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           application_id = 3;

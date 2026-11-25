@@ -1,19 +1,19 @@
-// Module ID: 19725
-// Function ID: 19726
+// Module ID: 19827
+// Function ID: 19828
 // Name: DeprecatedModalManager
-// Dependencies: [8433, 10285, 19726, 4760, 1071, 5094, 5093, 6005, 19641, 19727, 19735, 7349, 19736, 20109, 20111, 2]
+// Dependencies: [8532, 10384, 19828, 4855, 1071, 5189, 5188, 6100, 19743, 19829, 19837, 7444, 19838, 20211, 20213, 2]
 
-// Module 19725 (DeprecatedModalManager)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5093 */;
-import RootNavigationRef from "RootNavigationRef" /* 5094 */;
-import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 6005 */;
-import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 19641 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8433 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10285 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19726 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4760 */;
+// Module 19827 (DeprecatedModalManager)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5188 */;
+import RootNavigationRef from "RootNavigationRef" /* 5189 */;
+import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 6100 */;
+import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 19743 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8532 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10384 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19828 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4855 */;
 import Constants from "Constants" /* 1071 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

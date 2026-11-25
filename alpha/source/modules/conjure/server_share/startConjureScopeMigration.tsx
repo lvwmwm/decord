@@ -1,18 +1,18 @@
-// Module ID: 18336
-// Function ID: 18337
+// Module ID: 18448
+// Function ID: 18449
 // Name: startConjureScopeMigration
-// Dependencies: [5, 7576, 4, 4192, 9929, 18337, 5701, 7548, 13420, 1112, 2]
+// Dependencies: [5, 7675, 4, 4244, 10028, 18449, 5796, 7643, 13543, 1112, 2]
 // Exports: default
 
-// Module 18336 (startConjureScopeMigration)
+// Module 18448 (startConjureScopeMigration)
 import logger_Logger from "logger/Logger" /* 4 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4192 from "module_4192" /* 4192 */;
-import createNonce from "createNonce" /* 9929 */;
-import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13420 */;
-import conjureSendToProject from "conjureSendToProject" /* 18337 */;
+import _modDef4244 from "module_4244" /* 4244 */;
+import createNonce from "createNonce" /* 10028 */;
+import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13543 */;
+import conjureSendToProject from "conjureSendToProject" /* 18449 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7576 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7675 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_4, err;
@@ -36,7 +36,7 @@ let obj = function _sendMigrationMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -113,7 +113,7 @@ let obj = function _sendMigrationMessage() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           closure_4 = tmp16;
@@ -132,7 +132,7 @@ let obj = function _sendMigrationMessage() {
   return obj(...arguments);
 };
 const logger = new logger_Logger.Logger("startConjureScopeMigration");
-obj = { added: _modDef4192.YXmrDJ, removed: _modDef4192.OYaecm };
+obj = { added: _modDef4244.YXmrDJ, removed: _modDef4244.OYaecm };
 const result = size.fileFinishedImporting("modules/conjure/server_share/startConjureScopeMigration.tsx");
 
 export default function startConjureScopeMigration(id, arg1) {

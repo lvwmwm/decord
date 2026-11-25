@@ -1,25 +1,25 @@
-// Module ID: 17476
-// Function ID: 17477
+// Module ID: 17587
+// Function ID: 17588
 // Name: VEVOO
-// Dependencies: [19, 17, 5511, 573, 21, 4917, 575, 1653, 5518, 5519, 7947, 17477, 17479, 17480, 11237, 7121, 504, 17156, 2]
+// Dependencies: [19, 17, 5606, 573, 21, 5012, 575, 1653, 5613, 5614, 8046, 17588, 17590, 17591, 11336, 7216, 504, 17275, 2]
 
-// Module 17476 (VEVOO)
+// Module 17587 (VEVOO)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import spring_spring from "spring/spring" /* 5518 */;
-import springPresets from "springPresets" /* 5519 */;
-import XSmallIcon from "XSmallIcon" /* 7121 */;
-import ActionButtonDefault from "ActionButton" /* 11237 */;
-import VEVOOPropBlurAmountDefault from "VEVOOPropBlurAmount" /* 17477 */;
-import VEVOOPropTintColorDefault from "VEVOOPropTintColor" /* 17479 */;
-import VEVOOPropBlurEffectNameDefault from "VEVOOPropBlurEffectName" /* 17480 */;
+import spring_spring from "spring/spring" /* 5613 */;
+import springPresets from "springPresets" /* 5614 */;
+import XSmallIcon from "XSmallIcon" /* 7216 */;
+import ActionButtonDefault from "ActionButton" /* 11336 */;
+import VEVOOPropBlurAmountDefault from "VEVOOPropBlurAmount" /* 17588 */;
+import VEVOOPropTintColorDefault from "VEVOOPropTintColor" /* 17590 */;
+import VEVOOPropBlurEffectNameDefault from "VEVOOPropBlurEffectName" /* 17591 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5511 */;
+import DevSettingsStore from "DevSettingsStore" /* 5606 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,7 +81,7 @@ function VisualEffectViewOverrideOverlay_(arg0) {
   const obj2 = { style: tmp.scrollView, children: metroImportDefault(FormSection, obj3) };
   const View = tmp2(1653).View;
   obj3 = { title: "Blur View Global Overrides", sectionBodyStyle: tmp.scrollViewContent, children: items3 };
-  FormSection = tmp4(7947).FormSection;
+  FormSection = tmp4(8046).FormSection;
   items3 = [metroRequire(VEVOOPropBlurAmountDefault, {}), metroRequire(VEVOOPropTintColorDefault, {}), metroRequire(VEVOOPropBlurEffectNameDefault, {})];
   items4 = [metroRequire(ScrollView, obj2), ];
   const obj4 = { styles: tmp.close, type: "neutral", IconComponent: XSmallIcon.XSmallIcon, onPress: onClose, accessibilityLabel: "Close" };

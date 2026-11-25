@@ -1,10 +1,10 @@
-// Module ID: 8780
-// Function ID: 8781
+// Module ID: 8879
+// Function ID: 8880
 // Name: WaterwheelsDiscoverExperiment
 // Dependencies: [1245, 502, 1386, 1450, 504, 2]
 // Exports: getWaterwheelsDiscoverEnabled, useWaterwheelsDiscoverEnabled
 
-// Module 8780 (WaterwheelsDiscoverExperiment)
+// Module 8879 (WaterwheelsDiscoverExperiment)
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1386 */;

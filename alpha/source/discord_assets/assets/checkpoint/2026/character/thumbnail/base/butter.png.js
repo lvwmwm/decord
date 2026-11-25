@@ -1,8 +1,8 @@
-// Module ID: 6347
-// Function ID: 6348
+// Module ID: 6442
+// Function ID: 6443
 // Dependencies: [2]
 
-// Module 6347
+// Module 6442
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/base/butter.png.js");

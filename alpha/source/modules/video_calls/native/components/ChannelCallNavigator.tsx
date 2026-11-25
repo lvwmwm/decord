@@ -1,25 +1,25 @@
-// Module ID: 10115
-// Function ID: 10116
+// Module ID: 10214
+// Function ID: 10215
 // Name: ChannelCallNavigator
-// Dependencies: [5, 32, 19, 17, 10116, 9868, 1071, 9971, 21, 4917, 1494, 9989, 1653, 1706, 10117, 10446, 9871, 6707, 6004, 7597, 2119, 1107, 10203, 11630, 5089, 10132, 1378, 4978, 5119, 7229, 2]
+// Dependencies: [5, 32, 19, 17, 10215, 9967, 1071, 10070, 21, 5012, 1494, 10088, 1653, 1706, 10216, 10545, 9970, 6802, 6099, 7696, 2119, 1107, 10302, 11729, 5184, 10231, 1378, 5073, 5214, 7324, 2]
 // Exports: default
 
-// Module 10115 (ChannelCallNavigator)
+// Module 10214 (ChannelCallNavigator)
 import Constants from "Constants" /* 1071 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import reactDefault from "react" /* 5119 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9868 */;
-import Constants2 from "Constants" /* 9971 */;
-import VoiceChatModalContext from "VoiceChatModalContext" /* 9989 */;
+import reactDefault from "react" /* 5214 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 9967 */;
+import Constants2 from "Constants" /* 10070 */;
+import VoiceChatModalContext from "VoiceChatModalContext" /* 10088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10116 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10215 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;
@@ -190,7 +190,7 @@ function CallWithVoiceChat(channel) {
   let tmp31 = null;
   if (channel.isGuildStageVoice()) {
     const obj4 = { channel };
-    tmp31 = authStore2(tmp2(10117), obj4);
+    tmp31 = authStore2(tmp2(10216), obj4);
   }
   items9 = [tmp31, ];
   const obj5 = { pointerEvents: "box-none", style: items10 };
@@ -201,7 +201,7 @@ function CallWithVoiceChat(channel) {
   tmp33Result = null;
   if (tmp20) {
     const obj7 = { channel };
-    tmp33Result = tmp33(tmp2(10446), obj7);
+    tmp33Result = tmp33(tmp2(10545), obj7);
   }
   items11[1] = authStore2(metroRequire, obj6);
   return map1(View, obj2);
@@ -215,7 +215,7 @@ function MainCallScreen(channel) {
   let isConnectedToVoiceChannel;
   let tmp3 = dependencyMap;
   let tmp = closure_14();
-  let obj = isConnectedToVoiceChannel(9871);
+  let obj = isConnectedToVoiceChannel(9970);
   isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const id = react.useId();
   const items = [isConnectedToVoiceChannel, id];
@@ -230,7 +230,7 @@ function MainCallScreen(channel) {
       const safeAreaDisableLock = state.requestSafeAreaDisableLock(obj);
     };
   }, items);
-  let obj2 = isConnectedToVoiceChannel(6707);
+  let obj2 = isConnectedToVoiceChannel(6802);
   const isChannelContentGated = obj2.useIsChannelContentGated(channel);
   const effect1 = react.useEffect(() => {
     function dismissOAuthModal() {
@@ -258,7 +258,7 @@ function MainCallScreen(channel) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -294,7 +294,7 @@ function MainCallScreen(channel) {
             } else {
               c0 = true;
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp6) {
             c3 = 3;
@@ -319,11 +319,11 @@ function MainCallScreen(channel) {
       }
     };
   }, []);
-  isConnectedToVoiceChannel(10203);
+  isConnectedToVoiceChannel(10302);
   if (isChannelContentGated) {
-    let obj3 = { onReturnToSafety: id(6004).pop, guildId: null, channelId: null };
+    let obj3 = { onReturnToSafety: id(6099).pop, guildId: null, channelId: null };
     ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
-    const tmp20 = id(11630);
+    const tmp20 = id(11729);
     tmp14Result2 = closure_12(tmp20, obj3);
     tmp11 = closure_12;
   } else {
@@ -340,16 +340,16 @@ function MainCallScreen(channel) {
     if (channel.isGuildStageVoice()) {
       let tmp17 = id;
       const obj7 = { channel };
-      tmp14Result = tmp14(id(10117), obj7);
+      tmp14Result = tmp14(id(10216), obj7);
     }
     tmp14Result2 = tmp14(tmp15, obj5);
     tmp11 = tmp14;
   }
-  const tmp21 = id(5089)();
-  const tmp22 = id(10132);
+  const tmp21 = id(5184)();
+  const tmp22 = id(10231);
   const tmp2Result = isConnectedToVoiceChannel(1378);
   const tmp23 = tmp2Result.isAndroid() || !isConnectedToVoiceChannel;
-  const obj8 = { forceHide: tmp23, showWhenParticipantOnScreen: !isConnectedToVoiceChannel, children: tmp11(isConnectedToVoiceChannel(4978).ThemeContextProvider, { gradient: tmp21, children: tmp14Result2 }) };
+  const obj8 = { forceHide: tmp23, showWhenParticipantOnScreen: !isConnectedToVoiceChannel, children: tmp11(isConnectedToVoiceChannel(5073).ThemeContextProvider, { gradient: tmp21, children: tmp14Result2 }) };
   return tmp11(tmp22, obj8);
 }
 ({ View: metroRequire, StyleSheet } = react_native);
@@ -384,7 +384,7 @@ export default function ChannelCallNavigator(channel) {
   if (guild_id == null) {
     guild_id = null;
   }
-  let obj = { value: guild_id, children: closure_12(channel(7229).Navigator, obj2) };
+  let obj = { value: guild_id, children: closure_12(channel(7324).Navigator, obj2) };
   obj2 = { screens: { [tmp.MAIN_CALL_SCREEN]: obj3 }, initialRouteName: MAIN_CALL_SCREEN };
   obj3 = {
     headerShown: false,

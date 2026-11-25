@@ -1,21 +1,21 @@
-// Module ID: 13859
-// Function ID: 13860
+// Module ID: 13982
+// Function ID: 13983
 // Name: GiftCodeRow
-// Dependencies: [19, 17, 1071, 21, 4917, 575, 4978, 11781, 5664, 8549, 7168, 5508, 5515, 1112, 13860, 2168, 1186, 2]
+// Dependencies: [19, 17, 1071, 21, 5012, 575, 5073, 11880, 5759, 8648, 7263, 5603, 5610, 1112, 13983, 2168, 1186, 2]
 
-// Module 13859 (GiftCodeRow)
+// Module 13982 (GiftCodeRow)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
-import native2 from "native" /* 4978 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5664 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8549 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11781 */;
-import copyGiftCodeDefault from "copyGiftCode" /* 13860 */;
+import native2 from "native" /* 5073 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5759 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8648 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11880 */;
+import copyGiftCodeDefault from "copyGiftCode" /* 13983 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

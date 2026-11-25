@@ -1,31 +1,31 @@
-// Module ID: 18064
-// Function ID: 18065
+// Module ID: 18176
+// Function ID: 18177
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1386, 18059, 21, 4917, 575, 6963, 1112, 9632, 504, 2173, 9511, 9587, 18065, 5523, 12, 6926, 1186, 18072, 10691, 5626, 8658, 9586, 7302, 5508, 2]
+// Dependencies: [19, 17, 1386, 18171, 21, 5012, 575, 7058, 1112, 9731, 504, 2173, 9610, 9686, 18177, 5618, 12, 7021, 1186, 18184, 10790, 5721, 8757, 9685, 7397, 5603, 2]
 
-// Module 18064 (SoundboardSoundPickerList)
+// Module 18176 (SoundboardSoundPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ClockIcon from "ClockIcon" /* 5626 */;
-import GuildIcon from "GuildIcon" /* 6926 */;
-import SoundboardTypes from "SoundboardTypes" /* 6963 */;
-import FastListDefault from "FastList" /* 7302 */;
-import TrophyIcon from "TrophyIcon" /* 8658 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9511 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 9586 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9587 */;
-import chunkDefault from "chunk" /* 9632 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10691 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18072 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ClockIcon from "ClockIcon" /* 5721 */;
+import GuildIcon from "GuildIcon" /* 7021 */;
+import SoundboardTypes from "SoundboardTypes" /* 7058 */;
+import FastListDefault from "FastList" /* 7397 */;
+import TrophyIcon from "TrophyIcon" /* 8757 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9610 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 9685 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9686 */;
+import chunkDefault from "chunk" /* 9731 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10790 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18184 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18059 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -81,7 +81,7 @@ function SoundPickerButtonRow(section) {
   } else {
     let result = !stateFromStores;
     if (result) {
-      const tmp2Result = section(9511);
+      const tmp2Result = section(9610);
       result = tmp2Result.isSoundboardSectionNitroLocked(channel.guild_id, section.category.categoryInfo);
     }
     c3 = result;
@@ -89,7 +89,7 @@ function SoundPickerButtonRow(section) {
     const obj2 = { style: tmp.row, children: items1 };
     const tmp6 = closure_8;
     if (result) {
-      result = closure_7(tmp2(9587).PremiumUpsellGradientBackground, {});
+      result = closure_7(tmp2(9686).PremiumUpsellGradientBackground, {});
     }
     items1 = [result, ];
     const arr3 = section.soundsByRow[row];
@@ -99,7 +99,7 @@ function SoundPickerButtonRow(section) {
         const sound = type.sound;
         const obj = { sound, channel, style: soundButtonNotFirst, isSectionLocked };
         soundButtonNotFirst = null;
-        const SoundButton = tmp(18065).SoundButton;
+        const SoundButton = tmp(18177).SoundButton;
         const tmp7 = metroImportDefault;
         if (index > 0) {
           soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;
@@ -195,7 +195,7 @@ const memoResult = react.memo(function SoundboardSoundPickerListComponent(channe
   }
   const listRef = channel.listRef;
   const currentUser = closure_10();
-  let obj = channel(5523);
+  let obj = channel(5618);
   const fontScale = obj.useFontScale();
   let tmp2 = calculateRowsPerSection(categories, closure_6);
   let tmp3 = getFastListSectionsFromCategories(categories, closure_6, fontScale);

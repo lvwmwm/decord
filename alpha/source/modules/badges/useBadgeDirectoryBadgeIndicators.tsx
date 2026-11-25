@@ -1,19 +1,19 @@
-// Module ID: 9730
-// Function ID: 9731
+// Module ID: 9829
+// Function ID: 9830
 // Name: useBadgeDirectoryBadgeIndicators
-// Dependencies: [19, 9731, 9729, 6262, 504, 2]
+// Dependencies: [19, 9830, 9828, 6357, 504, 2]
 // Exports: dismissBadgeDirectoryBadgeIndicator, isNewIndicatorBadgeId, useBadgeDirectoryBadgeIndicators, useDismissBadgeDirectoryBadgeIndicator
 
-// Module 9730 (useBadgeDirectoryBadgeIndicators)
-import BadgeUtils from "BadgeUtils" /* 9729 */;
+// Module 9829 (useBadgeDirectoryBadgeIndicators)
+import BadgeUtils from "BadgeUtils" /* 9828 */;
 import react from "react" /* 19 */;
-import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 9731 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 9830 */;
 import size from "module_2" /* 2 */;
 
 let badge_id;
 
 let tmp;
-const BadgeDirectoryActionCreators = tmp(6262);
+const BadgeDirectoryActionCreators = tmp(6357);
 let result = size.fileFinishedImporting("modules/badges/useBadgeDirectoryBadgeIndicators.tsx");
 
 export const NEW_INDICATOR_BADGE_IDS = BadgeUtils.BETA_BADGE_IDS;
@@ -71,7 +71,7 @@ export function useDismissBadgeDirectoryBadgeIndicator(badgeId) {
       const BETA_BADGE_IDS = BadgeUtils.BETA_BADGE_IDS;
       const tmp3 = require;
       if (BETA_BADGE_IDS.has(badgeId)) {
-        const tmp3Result = tmp3(6262);
+        const tmp3Result = tmp3(6357);
         const result = tmp3Result.markBadgeDirectoryBadgeIndicatorSeen(tmp);
       }
     }

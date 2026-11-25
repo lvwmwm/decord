@@ -1,19 +1,19 @@
-// Module ID: 19346
-// Function ID: 19347
+// Module ID: 19458
+// Function ID: 19459
 // Name: GameTagChiplet
-// Dependencies: [19, 21, 4917, 8604, 8613, 8581, 5604, 2]
+// Dependencies: [19, 21, 5012, 8703, 8712, 8680, 5699, 2]
 
-// Module 19346 (GameTagChiplet)
+// Module 19458 (GameTagChiplet)
 import Fragment from "Fragment" /* 21 */;
-import GuildTag from "GuildTag" /* 8581 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8604 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8613 */;
+import GuildTag from "GuildTag" /* 8680 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8703 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8712 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const FastImageDefault = tmp3(5604);
+const FastImageDefault = tmp3(5699);
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flexShrink: 1, minWidth: 0, overflow: "hidden" }, text: { flexShrink: 1, minWidth: 0 }, image: { width: 12, height: 12 } });
 const memoResult = react.memo(function GameTagChiplet(game) {

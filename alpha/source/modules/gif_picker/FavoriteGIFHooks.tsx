@@ -1,12 +1,12 @@
-// Module ID: 10667
-// Function ID: 10668
+// Module ID: 10766
+// Function ID: 10767
 // Name: FavoriteGIFHooks
-// Dependencies: [19, 10668, 12, 2]
+// Dependencies: [19, 10767, 12, 2]
 // Exports: useFavoriteGIFs, useIsFavoriteGIF, useShouldShowTooltipOnFavorite, useSortedFavoriteGIFs
 
-// Module 10667 (FavoriteGIFHooks)
+// Module 10766 (FavoriteGIFHooks)
 import _modDef12 from "module_12" /* 12 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10668 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10767 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

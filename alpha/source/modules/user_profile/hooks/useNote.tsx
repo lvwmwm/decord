@@ -1,15 +1,15 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 14907
+// Function ID: 14908
 // Name: useNote
-// Dependencies: [5, 19, 14786, 1071, 504, 572, 1284, 2]
+// Dependencies: [5, 19, 14908, 1071, 504, 572, 1284, 2]
 // Exports: default
 
-// Module 14785 (useNote)
+// Module 14907 (useNote)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NoteStore from "NoteStore" /* 14786 */;
+import NoteStore from "NoteStore" /* 14908 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let obj = function _fetchNote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -89,7 +89,7 @@ let obj = function _fetchNote() {
             }
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp21) {
         let closure_3 = tmp21;

@@ -1,10 +1,10 @@
-// Module ID: 4934
-// Function ID: 4935
+// Module ID: 5029
+// Function ID: 5030
 // Name: ThemeContext
 // Dependencies: [19, 1082, 21, 2]
 // Exports: UseThemeContext, createThemedContext, useThemeContext
 
-// Module 4934 (ThemeContext)
+// Module 5029 (ThemeContext)
 import Constants from "Constants" /* 1082 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

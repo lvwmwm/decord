@@ -1,16 +1,16 @@
-// Module ID: 8458
-// Function ID: 8459
+// Module ID: 8557
+// Function ID: 8558
 // Name: ThrottledButton
-// Dependencies: [19, 21, 5515, 2]
+// Dependencies: [19, 21, 5610, 2]
 // Exports: default, useThrottledActionHandler
 
-// Module 8458 (ThrottledButton)
+// Module 8557 (ThrottledButton)
 import Fragment from "Fragment" /* 21 */;
-import components_Button_Button from "components/Button/Button" /* 5515 */;
+import components_Button_Button from "components/Button/Button" /* 5610 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const f93227 = () => {
+const f93566 = () => {
   let ref;
   return () => clearTimeout(ref.current);
 };
@@ -32,7 +32,7 @@ export default function ThrottledButton(throttleMs) {
     num = 500;
   }
   let closure_1 = react.useRef(null);
-  const effect = react.useEffect(f93227, []);
+  const effect = react.useEffect(f93566, []);
   const Button = components_Button_Button.Button;
   const merged1 = Object.assign(merged);
   return <Button onPress={(arg0) => {
@@ -82,7 +82,7 @@ export function useThrottledActionHandler() {
     num = 500;
   }
   let closure_1 = react.useRef(null);
-  const effect = react.useEffect(f93227, []);
+  const effect = react.useEffect(f93566, []);
   return function createThrottleActionHandler(arg0) {
     let ref;
     let closure_0 = arg0;

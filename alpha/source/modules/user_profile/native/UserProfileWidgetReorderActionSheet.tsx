@@ -1,29 +1,29 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16118
+// Function ID: 16119
 // Name: UserProfileWidgetReorderActionSheet
-// Dependencies: [19, 17, 502, 6046, 21, 4917, 575, 14395, 14424, 14408, 14427, 14410, 14400, 14407, 7389, 14497, 6045, 504, 14501, 14421, 1112, 2]
+// Dependencies: [19, 17, 502, 6141, 21, 5012, 575, 14518, 14547, 14531, 14550, 14533, 14523, 14530, 7484, 14620, 6140, 504, 14624, 14544, 1112, 2]
 // Exports: default
 
-// Module 15997 (UserProfileWidgetReorderActionSheet)
+// Module 16118 (UserProfileWidgetReorderActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6045 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6046 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7389 */;
-import WidgetUtils from "WidgetUtils" /* 14395 */;
-import useGameCoverLayoutDefault from "useGameCoverLayout" /* 14400 */;
-import UserProfileWidgetDraggableCardDefault from "UserProfileWidgetDraggableCard" /* 14407 */;
-import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 14410 */;
-import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 14421 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6140 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6141 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7484 */;
+import WidgetUtils from "WidgetUtils" /* 14518 */;
+import useGameCoverLayoutDefault from "useGameCoverLayout" /* 14523 */;
+import UserProfileWidgetDraggableCardDefault from "UserProfileWidgetDraggableCard" /* 14530 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 14533 */;
+import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 14544 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp4;
-const UserProfileApplicationWidgetIconDefault = tmp4(14497);
+const UserProfileApplicationWidgetIconDefault = tmp4(14620);
 function CompactGameWidgetContent(userId) {
   let columns;
   let coverWidth;
@@ -118,7 +118,7 @@ export default function UserProfileWidgetReorderActionSheet(returnFocusRef) {
   const items = [AuthenticationStore];
   const obj = stateFromStores(504);
   stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const obj2 = stateFromStores(14501);
+  const obj2 = stateFromStores(14624);
   const boardWidgets = obj2.useBoardWidgets(stateFromStores);
   UserProfileReorderActionSheetDefault;
   const intl = stateFromStores(1112).intl;

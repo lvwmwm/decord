@@ -1,23 +1,23 @@
-// Module ID: 15858
-// Function ID: 15859
+// Module ID: 15979
+// Function ID: 15980
 // Name: ProfileCustomizationSettingScreenV2
-// Dependencies: [109, 19, 17, 9296, 6250, 14390, 1081, 1071, 21, 4917, 575, 5481, 15859, 15860, 15865, 504, 5887, 9298, 15867, 15868, 15872, 2]
+// Dependencies: [109, 19, 17, 9395, 6345, 14513, 1081, 1071, 21, 5012, 575, 5576, 15980, 15981, 15986, 504, 5982, 9397, 15988, 15989, 15993, 2]
 // Exports: default
 
-// Module 15858 (ProfileCustomizationSettingScreenV2)
+// Module 15979 (ProfileCustomizationSettingScreenV2)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5887 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9298 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9397 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9296 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6250 */;
-import WidgetStore from "WidgetStore" /* 14390 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9395 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6345 */;
+import WidgetStore from "WidgetStore" /* 14513 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

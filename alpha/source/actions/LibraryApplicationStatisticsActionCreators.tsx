@@ -1,15 +1,15 @@
-// Module ID: 14837
-// Function ID: 14838
+// Module ID: 14959
+// Function ID: 14960
 // Name: LibraryApplicationStatisticsActionCreators
-// Dependencies: [5, 14836, 1071, 1088, 1284, 572, 2]
+// Dependencies: [5, 14958, 1071, 1088, 1284, 572, 2]
 // Exports: fetchActivityStatistics
 
-// Module 14837 (LibraryApplicationStatisticsActionCreators)
+// Module 14959 (LibraryApplicationStatisticsActionCreators)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LibraryApplicationStatisticsStore from "LibraryApplicationStatisticsStore" /* 14836 */;
+import LibraryApplicationStatisticsStore from "LibraryApplicationStatisticsStore" /* 14958 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, lastFetched;
@@ -27,7 +27,7 @@ let obj = function _fetchActivityStatistics() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -83,7 +83,7 @@ let obj = function _fetchActivityStatistics() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp23) {
         closure_2 = tmp23;
         if (0 === c3) {

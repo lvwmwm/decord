@@ -1,21 +1,21 @@
-// Module ID: 4927
-// Function ID: 4928
+// Module ID: 5022
+// Function ID: 5023
 // Name: AccessibilityAnnouncerLiveRegion
-// Dependencies: [19, 17, 21, 4928, 2]
+// Dependencies: [19, 17, 21, 5023, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 4927 (AccessibilityAnnouncerLiveRegion)
+// Module 5022 (AccessibilityAnnouncerLiveRegion)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import module_4928 from "module_4928" /* 4928 */;
+import module_5023 from "module_5023" /* 5023 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
 let _window;
 ({ StyleSheet, Text: _window } = react_native);
 const jsx = Fragment.jsx;
-const state = module_4928.create(() => ({ message: "sa", version: false }));
+const state = module_5023.create(() => ({ message: "sa", version: false }));
 const liveRegion = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
 const memoResult = react.memo(function AccessibilityAnnouncerLiveRegion() {
   const tmp = state();

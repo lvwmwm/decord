@@ -1,18 +1,18 @@
-// Module ID: 12445
-// Function ID: 12446
+// Module ID: 12609
+// Function ID: 12610
 // Name: CheckpointShareCardFooter
-// Dependencies: [19, 17, 21, 4917, 575, 12443, 7813, 5508, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 12607, 7912, 5603, 2]
 // Exports: default
 
-// Module 12445 (CheckpointShareCardFooter)
+// Module 12609 (CheckpointShareCardFooter)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import inlineStylesDefault from "inlineStyles" /* 7813 */;
-import CheckpointShareCardContext from "CheckpointShareCardContext" /* 12443 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import inlineStylesDefault from "inlineStyles" /* 7912 */;
+import CheckpointShareCardContext from "CheckpointShareCardContext" /* 12607 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,7 +52,7 @@ export default function CheckpointShareCardFooter(isCharacterAndStats) {
   size = { style: absoluteFill.absoluteFill, width, height, children: metroRequire(Path, obj2) };
   obj2 = { d: "M0 0H" + width - 13 + "L" + width + " 12V" + height + "H0Z", fill: primaryBackgroundColor };
   const tmp6 = inlineStylesDefault;
-  Path = tmp2(7813).Path;
+  Path = tmp2(7912).Path;
   items1 = [metroRequire(tmp6, size), ];
   const obj3 = { variant: "display-sm", style: tmp.footerTitle, allowFontScaling: false, children: "CHECKPOINT" };
   items1[1] = metroRequire(Text_Text.Text, obj3);

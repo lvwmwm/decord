@@ -1,23 +1,23 @@
-// Module ID: 17958
-// Function ID: 17959
+// Module ID: 18070
+// Function ID: 18071
 // Name: CheckpointGuildsBarEntrypoint
-// Dependencies: [19, 17, 17903, 6270, 4763, 17900, 21, 1653, 1706, 4917, 575, 17924, 5508, 1112, 3442, 5481, 17912, 12412, 12416, 5093, 17959, 9427, 5472, 13943, 2]
+// Dependencies: [19, 17, 18015, 6365, 4858, 18012, 21, 1653, 1706, 5012, 575, 18036, 5603, 1112, 3494, 5576, 18024, 12576, 12580, 5188, 18071, 9526, 5567, 14066, 2]
 
-// Module 17958 (CheckpointGuildsBarEntrypoint)
+// Module 18070 (CheckpointGuildsBarEntrypoint)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef3442 from "module_3442" /* 3442 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import CheckpointConstants from "CheckpointConstants" /* 6270 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17900 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17924 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17959 */;
+import _modDef3494 from "module_3494" /* 3494 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import CheckpointConstants from "CheckpointConstants" /* 6365 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18012 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 18036 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18071 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17903 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18015 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ function ExpandedChildren() {
   let obj2;
   const obj = { title: authStore(Text, obj2), subtitle: null };
   const HomeDrawerSharedItem = HomeDrawerShared.HomeDrawerSharedItem;
-  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef3442["8hclXY"]) };
+  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef3494["8hclXY"]) };
   Text = Text_Text.Text;
   intl = intl4.intl;
   return authStore(HomeDrawerSharedItem, obj);
@@ -156,8 +156,8 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
     let intl2;
     let intl3;
     const obj = {
-      title: intl.string(_modDef3442.tgYaeZ),
-      description: intl2.string(_modDef3442.BFc4lY),
+      title: intl.string(_modDef3494.tgYaeZ),
+      description: intl2.string(_modDef3494.BFc4lY),
       visible: !isModalOpen,
       position: "bottom",
       offsetY: 24,
@@ -165,7 +165,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
       onDismiss() {
         return markAsDismissed(constants.USER_DISMISS);
       },
-      buttonLabel: intl3.string(_modDef3442.UjtEWE),
+      buttonLabel: intl3.string(_modDef3494.UjtEWE),
       buttonVariant: "primary",
       onButtonPress
     };
@@ -183,7 +183,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
   const callback2 = obj3.useCallback(() => {
     coachmark(false);
   }, items8);
-  const obj7 = { selected: false, circle: false, unread: false, styles: memo, overState: "y", config: memo1, label: intl.string(require("module_3442")["8hclXY"]), expandedChildren: closure_10(ExpandedChildren, {}), children: items9 };
+  const obj7 = { selected: false, circle: false, unread: false, styles: memo, overState: "y", config: memo1, label: intl.string(require("module_3494")["8hclXY"]), expandedChildren: closure_10(ExpandedChildren, {}), children: items9 };
   const tmp3Result = require("GuildsBarAnimatedItemWrapper");
   intl = tmp(tmp2[13]).intl;
   items9 = [, ];

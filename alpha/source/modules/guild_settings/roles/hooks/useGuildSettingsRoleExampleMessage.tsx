@@ -1,15 +1,15 @@
-// Module ID: 19900
-// Function ID: 19901
+// Module ID: 20002
+// Function ID: 20003
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1405, 1071, 6267, 9955, 1112, 6008, 11601, 2]
+// Dependencies: [19, 1405, 1071, 6362, 10054, 1112, 6103, 11700, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 19900 (useGuildSettingsRoleExampleMessage)
+// Module 20002 (useGuildSettingsRoleExampleMessage)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 6008 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6267 */;
-import createMessageDefault from "createMessage" /* 9955 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 6103 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6362 */;
+import createMessageDefault from "createMessage" /* 10054 */;
 import react from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1405 */;
 import size from "module_2" /* 2 */;

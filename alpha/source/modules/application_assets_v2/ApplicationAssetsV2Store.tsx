@@ -1,19 +1,19 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14611
+// Function ID: 14612
 // Name: ApplicationAssetsV2Store
-// Dependencies: [11327, 12, 504, 572, 2]
+// Dependencies: [11426, 12, 504, 572, 2]
 
-// Module 14488 (ApplicationAssetsV2Store)
+// Module 14611 (ApplicationAssetsV2Store)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11327 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11426 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, resolved_assets, set;
 
-const f106166 = (application_id) => application_id.application_id;
-const f106167 = (item) => {
+const f106563 = (application_id) => application_id.application_id;
+const f106564 = (item) => {
   let obj;
   let tmp;
   [tmp, obj] = item;
@@ -47,12 +47,12 @@ const f106167 = (item) => {
   });
   return items;
 };
-const f106168 = (item) => {
+const f106565 = (item) => {
   let arr;
   [, arr] = item;
   return arr.length > 0;
 };
-const f106169 = (item) => {
+const f106566 = (item) => {
   let arr;
   let tmp;
   [tmp, arr] = item;
@@ -72,10 +72,10 @@ function handleFeaturedOrDeveloperFetchSuccess(configs) {
   _require = false;
   const flatResult = values.flat();
   const obj2 = require("module_12");
-  const entries1 = entries(obj2.groupBy(flatResult, f106166));
-  const mapped = entries1.map(f106167);
-  const found = mapped.filter(f106168);
-  const item = found.forEach(f106169);
+  const entries1 = entries(obj2.groupBy(flatResult, f106563));
+  const mapped = entries1.map(f106564);
+  const found = mapped.filter(f106565);
+  const item = found.forEach(f106566);
   return _require;
 }
 const map = new Map();
@@ -88,10 +88,10 @@ class ApplicationAssetsV2Store extends Store {
     _require = false;
     const flatResult = values.flat();
     const obj2 = require("module_12");
-    const entries1 = entries(obj2.groupBy(flatResult, f106166));
-    const mapped = entries1.map(f106167);
-    const found = mapped.filter(f106168);
-    const item = found.forEach(f106169);
+    const entries1 = entries(obj2.groupBy(flatResult, f106563));
+    const mapped = entries1.map(f106564);
+    const found = mapped.filter(f106565);
+    const item = found.forEach(f106566);
   }
   getAssets(arg0) {
     return map.get(arg0);
@@ -107,10 +107,10 @@ let obj = {
     _require = false;
     configs = configs.configs;
     let obj = require("module_12");
-    const entries1 = entries(obj.groupBy(configs, f106166));
-    const mapped = entries1.map(f106167);
-    const found = mapped.filter(f106168);
-    const item = found.forEach(f106169);
+    const entries1 = entries(obj.groupBy(configs, f106563));
+    const mapped = entries1.map(f106564);
+    const found = mapped.filter(f106565);
+    const item = found.forEach(f106566);
     return _require;
   },
   APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS: handleFeaturedOrDeveloperFetchSuccess,

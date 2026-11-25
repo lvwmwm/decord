@@ -1,22 +1,22 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11483
+// Function ID: 11484
 // Name: ChannelTabsActionCreators
-// Dependencies: [4766, 6806, 4820, 6041, 11381, 1071, 6003, 1098, 6000, 11382, 4791, 5887, 572, 2]
+// Dependencies: [4861, 6901, 4915, 6136, 11480, 1071, 6098, 1098, 6095, 11481, 4886, 5982, 572, 2]
 // Exports: closeChannelTab, closeOtherChannelTabs, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openChannelTabActive, openFriendsTabActive, openTabWithoutHistory, setChannelTabPinned, showCallViewOnJoin, switchToOpenChannelTab
 
-// Module 11384 (ChannelTabsActionCreators)
+// Module 11483 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1098 */;
-import FavoritesUtils from "FavoritesUtils" /* 4791 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5887 */;
-import transitionToChannel from "transitionToChannel" /* 6000 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
-import ChannelTabRoutes from "ChannelTabRoutes" /* 11382 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6041 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 11381 */;
+import FavoritesUtils from "FavoritesUtils" /* 4886 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
+import transitionToChannel from "transitionToChannel" /* 6095 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6098 */;
+import ChannelTabRoutes from "ChannelTabRoutes" /* 11481 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import ReadStateStore from "ReadStateStore" /* 6901 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6136 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 11480 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let _require, obj1, tmp10, tmp11, tmp13, tmp14, tmp2, tmp8, tmp9, transitionToCh
 
 let c9;
 let metroImportAll;
-const f99450 = (pinned) => pinned.pinned;
+const f99794 = (pinned) => pinned.pinned;
 function navigateToTabLocation(activeTab) {
   let channelId;
   let guildId;
@@ -72,7 +72,7 @@ function getTabProperties(nextResult) {
   let channelTabPageName;
   let guildId;
   const tabs = ChannelTabsStore.getTabs();
-  const obj = { tab_kind: nextResult.kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs.length, pinned_tab_count: tabs.filter(f99450).length };
+  const obj = { tab_kind: nextResult.kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs.length, pinned_tab_count: tabs.filter(f99794).length };
   channelTabPageName = null;
   if ("route" === nextResult.kind) {
     const obj2 = ChannelTabRoutes;
@@ -490,7 +490,7 @@ function selectChannelTab(id, keyboard_cycle, arg2) {
           flag3 = channel.isGuildVocal();
         }
         if (flag3) {
-          const tmp19Result = tmp19(6003);
+          const tmp19Result = tmp19(6098);
           tmp19Result.updateChatOpen(channelId2, true);
         }
         if (null != guildId2) {
@@ -548,7 +548,7 @@ function trackChannelTabPinToggled(found1, source) {
   const CHANNEL_TAB_PIN_TOGGLED = metroImportAll.CHANNEL_TAB_PIN_TOGGLED;
   AppAnalyticsUtilsDefault;
   const tabs = ChannelTabsStore.getTabs();
-  const obj = { tab_kind: found1.kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs.length, pinned_tab_count: tabs.filter(f99450).length };
+  const obj = { tab_kind: found1.kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs.length, pinned_tab_count: tabs.filter(f99794).length };
   channelTabPageName = null;
   if ("route" === found1.kind) {
     const obj2 = ChannelTabRoutes;
@@ -736,11 +736,11 @@ export function moveChannelTab(tabId, toIndex) {
   const obj = ChannelTabsStore;
   const tmp6 = -1 !== findIndexResult && -1 !== findIndexResult1 && findIndexResult1 !== findIndexResult;
   if (tmp6) {
-    const trackWithMetadata = tmp2(5887).trackWithMetadata;
+    const trackWithMetadata = tmp2(5982).trackWithMetadata;
     const CHANNEL_TAB_REORDERED = metroImportAll.CHANNEL_TAB_REORDERED;
     AppAnalyticsUtilsDefault;
     const tabs2 = obj.getTabs();
-    const obj4 = { tab_kind: tabs1[findIndexResult1].kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs2.length, pinned_tab_count: tabs2.filter(f99450).length };
+    const obj4 = { tab_kind: tabs1[findIndexResult1].kind, tab_route: channelTabPageName, channel_id: channelId, guild_id: guildId, tab_count: tabs2.length, pinned_tab_count: tabs2.filter(f99794).length };
     channelTabPageName = null;
     if ("route" === tabs1[findIndexResult1].kind) {
       const obj7 = ChannelTabRoutes;
@@ -805,7 +805,7 @@ export function closeChannelTab(tabId, source) {
       const CHANNEL_TAB_CLOSED = metroImportAll.CHANNEL_TAB_CLOSED;
       AppAnalyticsUtilsDefault;
       const tabs2 = obj.getTabs();
-      const obj5 = { tab_kind: found.kind, tab_route: channelTabPageName, channel_id: channelId1, guild_id: guildId1, tab_count: tabs2.length, pinned_tab_count: tabs2.filter(f99450).length };
+      const obj5 = { tab_kind: found.kind, tab_route: channelTabPageName, channel_id: channelId1, guild_id: guildId1, tab_count: tabs2.length, pinned_tab_count: tabs2.filter(f99794).length };
       channelTabPageName = null;
       if ("route" === found.kind) {
         const obj3 = ChannelTabRoutes;

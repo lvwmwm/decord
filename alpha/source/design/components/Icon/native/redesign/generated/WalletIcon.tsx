@@ -1,14 +1,14 @@
-// Module ID: 19746
-// Function ID: 19747
+// Module ID: 19848
+// Function ID: 19849
 // Name: WalletIcon
-// Dependencies: [19, 21, 575, 5603, 19747, 2]
+// Dependencies: [19, 21, 575, 5698, 19849, 2]
 // Exports: WalletIcon
 
-// Module 19746 (WalletIcon)
+// Module 19848 (WalletIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 19747 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 19849 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 14977
-// Function ID: 14978
+// Module ID: 15099
+// Function ID: 15100
 // Name: NotifSettingsProtoStore
-// Dependencies: [1230, 502, 14978, 14980, 1232, 504, 572, 2]
+// Dependencies: [1230, 502, 15100, 15102, 1232, 504, 572, 2]
 // Exports: createPendingEdit
 
-// Module 14977 (NotifSettingsProtoStore)
+// Module 15099 (NotifSettingsProtoStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1232 */;
-import notification_settings from "notification_settings" /* 14978 */;
-import EffectiveNotifSettings from "EffectiveNotifSettings" /* 14980 */;
+import notification_settings from "notification_settings" /* 15100 */;
+import EffectiveNotifSettings from "EffectiveNotifSettings" /* 15102 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -134,7 +134,7 @@ class NotifSettingsProtoStore extends PersistedStore {
       const b64ToProto = user_settings_UserSettingsUtils.b64ToProto;
       let proto = effectiveSettings.proto;
       user_settings_UserSettingsUtils;
-      const DeclarativeSettings = tmp9(14978).DeclarativeSettings;
+      const DeclarativeSettings = tmp9(15100).DeclarativeSettings;
       if (proto == null) {
         proto = null;
       }
@@ -145,7 +145,7 @@ class NotifSettingsProtoStore extends PersistedStore {
       const b64ToProto2 = user_settings_UserSettingsUtils.b64ToProto;
       let protoToSave = effectiveSettings.protoToSave;
       user_settings_UserSettingsUtils;
-      const DeclarativeSettings2 = tmp9(14978).DeclarativeSettings;
+      const DeclarativeSettings2 = tmp9(15100).DeclarativeSettings;
       if (protoToSave == null) {
         protoToSave = null;
       }
@@ -181,9 +181,9 @@ class NotifSettingsProtoStore extends PersistedStore {
       if (null != _undefined) {
         let partialSettings;
         if (null != _undefined2) {
-          const DeclarativeSettings = tmp(14978).DeclarativeSettings;
+          const DeclarativeSettings = tmp(15100).DeclarativeSettings;
           const cloneResult = DeclarativeSettings.clone(_undefined.partialSettings);
-          const DeclarativeSettings2 = tmp(14978).DeclarativeSettings;
+          const DeclarativeSettings2 = tmp(15100).DeclarativeSettings;
           DeclarativeSettings2.mergePartial(cloneResult, _undefined2.partialSettings);
           partialSettings = cloneResult;
         }

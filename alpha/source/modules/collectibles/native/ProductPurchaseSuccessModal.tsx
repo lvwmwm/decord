@@ -1,26 +1,26 @@
-// Module ID: 9270
-// Function ID: 9271
+// Module ID: 9369
+// Function ID: 9370
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 4918, 1071, 21, 4917, 575, 2112, 9269, 7072, 7121, 1112, 1653, 5518, 5127, 5133, 6195, 9271, 5481, 5472, 9274, 9275, 504, 9283, 9287, 9299, 8769, 9290, 5604, 7354, 9302, 9325, 9276, 9342, 11142, 11796, 5508, 6197, 5515, 2]
+// Dependencies: [32, 717, 19, 17, 5013, 1071, 21, 5012, 575, 2112, 9368, 7167, 7216, 1112, 1653, 5613, 5222, 5228, 6290, 9370, 5576, 5567, 9373, 9374, 504, 9382, 9386, 9398, 8868, 9389, 5699, 7449, 9401, 9424, 9375, 9441, 11241, 11895, 5603, 6292, 5610, 2]
 // Exports: default
 
-// Module 9270 (ProductPurchaseSuccessModal)
+// Module 9369 (ProductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import HapticUtils from "HapticUtils" /* 5133 */;
-import _modDef6195 from "module_6195" /* 6195 */;
-import _mod7072 from "module_7072" /* 7072 */;
-import XSmallIcon from "XSmallIcon" /* 7121 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9269 */;
+import HapticUtils from "HapticUtils" /* 5228 */;
+import _modDef6290 from "module_6290" /* 6290 */;
+import _mod7167 from "module_7167" /* 7167 */;
+import XSmallIcon from "XSmallIcon" /* 7216 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9368 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ function CancelButton(arg0) {
     accessibilityLabel: intl.string(intl5.t.cpT0Cq),
     displayMode: "minimal"
   };
-  const HeaderBackButton = _mod7072.HeaderBackButton;
+  const HeaderBackButton = _mod7167.HeaderBackButton;
   intl = intl5.intl;
   return closure_11(HeaderBackButton, obj);
 }
@@ -178,7 +178,7 @@ let closure_17 = { code: "(function ProductPurchaseSuccessModalTsx1(){let[interp
 let closure_18 = { code: "(function ProductPurchaseSuccessModalTsx2(){let[interpolate,springInput]=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0.75,1])}]};})" };
 let closure_19 = { code: "(function ProductPurchaseSuccessModalTsx3(){let[interpolate,linearInput]=this.__closure;return{opacity:interpolate(linearInput.get(),[0,1],[0.5,0])};})" };
 let closure_20 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
-let obj5 = _modDef6195("black");
+let obj5 = _modDef6290("black");
 let closure_21 = obj5.toHexString();
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
@@ -247,7 +247,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const stageCollectibleChangeForEditProfile = orbBalancePriorToPurchase.stageCollectibleChangeForEditProfile;
   let obj = require("useCurrentUser");
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(9271)(product.styles).backgroundColors;
+  const backgroundColors = callback(9370)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -428,14 +428,14 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     if (null != mobileBgUrl) {
       let obj3 = { source: obj5, style: tmp6.imageBackground };
       obj5 = { uri: mobileBgUrl };
-      tmp42 = closure_11(tmp4(5604), obj3);
+      tmp42 = closure_11(tmp4(5699), obj3);
       tmp43 = closure_11;
       tmp44 = closure_11;
     }
     const items9 = [tmp42, , ];
     const items10 = [tmp6.main, ];
     let str;
-    const SafeAreaPaddingView = tmp2(7354).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp2(7449).SafeAreaPaddingView;
     if (useCategoryImage) {
       str = "rgba(0, 0, 0, 0.3)";
     }
@@ -446,7 +446,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const obj8 = { style: tmp6.headerLeading, children: showOrbBalancePill };
     if (showOrbBalancePill) {
       const obj9 = { initialRenderedBalance: prop, balance };
-      showOrbBalancePill = tmp44(tmp2(9302).BalanceWidgetPill, obj9);
+      showOrbBalancePill = tmp44(tmp2(9401).BalanceWidgetPill, obj9);
     }
     items11 = [tmp44(closure_7, obj8), ];
     let toHexStringResult;
@@ -473,23 +473,23 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       if (tmp43Result) {
         const obj14 = { deco: null, pfx: null, nameplate: null, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp38 };
         ({ firstAvatarDecoration: obj28.deco, firstProfileEffect: obj28.pfx, firstNameplate: obj28.nameplate } = shopProductItems);
-        tmp43Result = tmp43(tmp4(9325), obj14);
+        tmp43Result = tmp43(tmp4(9424), obj14);
       }
       tmp43Result2 = tmp43(tmp41, obj13);
     } else if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj15 = { item: first, size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-      tmp43Result2 = tmp43(tmp4(9276), obj15);
+      tmp43Result2 = tmp43(tmp4(9375), obj15);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj16 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(9342), obj16);
+      tmp43Result2 = tmp43(tmp4(9441), obj16);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
       const obj17 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(11142), obj17);
+      tmp43Result2 = tmp43(tmp4(11241), obj17);
     } else {
       tmp43Result2 = null;
       if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
         const obj18 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43Result2 = tmp43(tmp2(11796).NameplatePreview, obj18);
+        tmp43Result2 = tmp43(tmp2(11895).NameplatePreview, obj18);
       }
     }
     items14 = [tmp44(View, obj12), ];
@@ -500,12 +500,12 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       renderMessagesResult = renderMessages();
     } else {
       const obj20 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp6.title, children: intl3.format(require("intl").t.YNaxMp, obj21) };
-      const Text = tmp2(5508).Text;
+      const Text = tmp2(5603).Text;
       intl3 = tmp2(1112).intl;
       obj21 = { itemName: product.name };
       const items16 = [tmp44(Text, obj20), ];
       const obj22 = { variant: "body-md/medium", color: "text-overlay-light", style: tmp6.title, children: formatResult };
-      const Text2 = tmp2(5508).Text;
+      const Text2 = tmp2(5603).Text;
       const tmp2Result24 = require("CollectiblesUtils");
       let result = tmp2Result24.isPremiumCollectiblesProduct(product);
       const intl4 = tmp2(1112).intl;
@@ -527,7 +527,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     items12[1] = closure_12(tmp48, obj11);
     const obj26 = { style: tmp6.footer, children: tmp44(closure_7, obj27) };
     obj27 = { style: tmp6.cta, children: tmp44(Button, obj30) };
-    Button = tmp2(5515).Button;
+    Button = tmp2(5610).Button;
     if (canUseNow) {
       const obj29 = { loading: isApplying, disabled: isApplying, onPress: handleUseNow, text: intl2.string(require("intl").t.MAS7uK), size: "lg", grow: true };
       intl2 = tmp2(1112).intl;

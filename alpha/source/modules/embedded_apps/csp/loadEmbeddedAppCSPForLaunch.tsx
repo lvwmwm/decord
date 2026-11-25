@@ -1,106 +1,147 @@
-// Module ID: 7554
-// Function ID: 7555
+// Module ID: 7649
+// Function ID: 7650
 // Name: loadEmbeddedAppCSPForLaunch
-// Dependencies: [5, 7555, 7556, 5558, 7557, 7558, 2]
-// Exports: default
+// Dependencies: [5, 7650, 7651, 7652, 7653, 5653, 2]
+// Exports: default, getLaunchCSPURL
 
-// Module 7554 (loadEmbeddedAppCSPForLaunch)
-import getURLForApplication from "getURLForApplication" /* 5558 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 7556 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 7557 */;
+// Module 7649 (loadEmbeddedAppCSPForLaunch)
+import getURLForApplication from "getURLForApplication" /* 5653 */;
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 7651 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 7652 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 7555 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 7650 */;
 import size from "module_2" /* 2 */;
 
 const getURLForApplicationDefault = getURLForApplication;
-let c2, c4;
+let c4, c5;
 
 let obj = function _loadEmbeddedAppCSPForLaunch() {
   let policy;
   obj = _asyncToGenerator(async function(arg0, value) {
-    let tmp27Result2;
+    let tmp31Result2;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
+    if (c5 === 2) {
+      c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp4 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
       try {
-        c4 = 2;
-        if (0 === c2) {
+        c5 = 2;
+        if (0 === c4) {
           if (arg0 === 1) {
-            c4 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
+            c5 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_1 = tmp;
-            const obj7 = EmbeddedAppFramePolicyExperiment;
-            const tmp26 = closure_0;
-            if (obj7.getIsEmbeddedAppFramePolicyEnabled("loadEmbeddedAppCSPForLaunch")) {
-              const tmp15 = getURLForApplicationDefault(tmp26);
-              let applicationRouterOrigin = null;
-              if (null != tmp15) {
-                const tmp27Result = getURLForApplication;
-                applicationRouterOrigin = tmp27Result.getApplicationRouterOrigin(tmp15);
+            let closure_2 = tmp;
+            let closure_1 = tmp2;
+            closure_0 = undefined;
+            const obj11 = EmbeddedAppFramePolicyExperiment;
+            const tmp30 = closure_0;
+            if (obj11.getIsEmbeddedAppFramePolicyEnabled("loadEmbeddedAppCSPForLaunch")) {
+              const tmp19 = getLaunchRouterOrigin(tmp30);
+              if (null == tmp19) {
+                c5 = 3;
+                const obj4 = { value: constants.SKIPPED, done: true };
+                return obj4;
+              } else if (null != policy.getPolicy(tmp19)) {
+                c5 = 3;
+                const obj5 = { value: constants.CACHED, done: true };
+                return obj5;
+              } else {
+                const tmp31Result = EmbeddedAppCSPActionCreators;
+                closure_0 = tmp31Result.isEmbeddedAppCSPReadInFlight(tmp19);
+                c3 = 1;
+                c4 = 2;
+                c5 = 1;
+                const obj6 = { value: tmp31Result2.fetchEmbeddedAppCSP(tmp19), done: false };
+                tmp31Result2 = EmbeddedAppCSPActionCreators;
+                return obj6;
               }
-              if (null != applicationRouterOrigin) {
-                if (null == policy.getPolicy(applicationRouterOrigin)) {
-                  c3 = 1;
-                  c2 = 2;
-                  c4 = 1;
-                  const obj4 = { value: tmp27Result2.fetchEmbeddedAppCSP(applicationRouterOrigin), done: false };
-                  tmp27Result2 = EmbeddedAppCSPActionCreators;
-                  return obj4;
-                }
-              }
+            } else {
+              c5 = 3;
+              const obj7 = { value: constants.SKIPPED, done: true };
+              return obj7;
             }
           }
-        } else if (1 === tmp4) {
+        } else if (1 === tmp5) {
           c3 = 0;
           const self = this;
           const self2 = this;
-          const tmp8 = closure_129_1(closure_129_2[5]);
-          const tmp82 = new tmp8(closure_129_1(closure_129_2[5]).Reasons.CSP_UNAVAILABLE);
-          throw tmp82;
+          const tmp13 = closure_130_1(closure_130_2[4]);
+          const tmp132 = new tmp13(closure_130_1(closure_130_2[4]).Reasons.CSP_UNAVAILABLE);
+          throw tmp132;
         } else if (arg0 === 1) {
-          c4 = 3;
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
           c3 = 0;
-          c4 = 3;
-          obj = { value, done: true };
-          return obj;
+          c5 = 3;
+          const obj8 = { value, done: true };
+          return obj8;
         } else {
+          let FETCHED;
           c3 = 0;
+          if (closure_0) {
+            FETCHED = tmp9.IN_FLIGHT;
+          } else {
+            FETCHED = tmp9.FETCHED;
+          }
+          c5 = 3;
+          obj = { value: FETCHED, done: true };
+          return obj;
         }
-        c4 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp20) {
+      } catch (tmp24) {
         if (0 === c3) {
-          c4 = 3;
-          throw tmp20;
+          c5 = 3;
+          throw tmp24;
         } else {
-          c2 = 1;
+          c4 = 1;
         }
       }
     }
   });
   return obj(...arguments);
 };
+function getLaunchRouterOrigin(arg0) {
+  const tmp2 = getURLForApplicationDefault(arg0);
+  let applicationRouterOrigin = null;
+  if (null != tmp2) {
+    obj = getURLForApplication;
+    applicationRouterOrigin = obj.getApplicationRouterOrigin(tmp2);
+  }
+  return applicationRouterOrigin;
+}
+obj = { SKIPPED: "skipped", CACHED: "cached", IN_FLIGHT: "in_flight", FETCHED: "fetched" };
 const result = size.fileFinishedImporting("modules/embedded_apps/csp/loadEmbeddedAppCSPForLaunch.tsx");
 
 export default function loadEmbeddedAppCSPForLaunch() {
   return obj(...arguments);
 };
+export const EmbeddedAppCSPSource = obj;
+export function getLaunchCSPURL(arg0) {
+  const tmp2 = getURLForApplicationDefault(arg0);
+  let applicationRouterOrigin = null;
+  if (null != tmp2) {
+    obj = getURLForApplication;
+    applicationRouterOrigin = obj.getApplicationRouterOrigin(tmp2);
+  }
+  let embeddedAppCSPURL = null;
+  if (null != applicationRouterOrigin) {
+    const obj2 = EmbeddedAppCSPActionCreators;
+    embeddedAppCSPURL = obj2.getEmbeddedAppCSPURL(applicationRouterOrigin);
+  }
+  return embeddedAppCSPURL;
+}

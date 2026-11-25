@@ -1,16 +1,16 @@
-// Module ID: 14152
-// Function ID: 14153
+// Module ID: 14275
+// Function ID: 14276
 // Name: StartEventUtils
-// Dependencies: [5, 4770, 4766, 4788, 4772, 1071, 8384, 38, 7735, 8337, 2]
+// Dependencies: [5, 4865, 4861, 4883, 4867, 1071, 8483, 38, 7834, 8436, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 14152 (StartEventUtils)
+// Module 14275 (StartEventUtils)
 import Constants from "Constants" /* 1071 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4772 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4867 */;
 import size from "module_2" /* 2 */;
 
 let permissionOverwrites;
@@ -37,7 +37,7 @@ let obj = function _createStageChannelForEvent() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _preStartEventActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -182,7 +182,7 @@ obj = function _preStartEventActions() {
             closure_131_1(closure_131_2[7])(null != entity_type, "could not find or create channel");
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp16) {
           c5 = 3;
           throw tmp16;

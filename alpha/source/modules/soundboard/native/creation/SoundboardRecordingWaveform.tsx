@@ -1,17 +1,17 @@
-// Module ID: 19844
-// Function ID: 19845
+// Module ID: 19946
+// Function ID: 19947
 // Name: SoundboardRecordingWaveform
-// Dependencies: [19, 17, 12743, 21, 4917, 575, 1653, 5518, 5519, 2]
+// Dependencies: [19, 17, 12907, 21, 5012, 575, 1653, 5613, 5614, 2]
 
-// Module 19844 (SoundboardRecordingWaveform)
+// Module 19946 (SoundboardRecordingWaveform)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import spring_spring from "spring/spring" /* 5518 */;
-import springPresets from "springPresets" /* 5519 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12743 */;
+import spring_spring from "spring/spring" /* 5613 */;
+import springPresets from "springPresets" /* 5614 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12907 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,13 +1,13 @@
-// Module ID: 16080
-// Function ID: 16081
+// Module ID: 16201
+// Function ID: 16202
 // Name: AccountChangePasswordSetting
-// Dependencies: [9414, 1071, 11815, 1112, 16081, 2]
+// Dependencies: [9513, 1071, 11914, 1112, 16202, 2]
 
-// Module 16080 (AccountChangePasswordSetting)
+// Module 16201 (AccountChangePasswordSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 11171
-// Function ID: 11172
+// Module ID: 11270
+// Function ID: 11271
 // Name: UnifiedGiftModalDetailsScreen
-// Dependencies: [32, 19, 17, 21, 4917, 575, 1500, 11170, 11000, 11172, 5508, 1112, 11200, 11201, 11202, 2]
+// Dependencies: [32, 19, 17, 21, 5012, 575, 1500, 11269, 11099, 11271, 5603, 1112, 11299, 11300, 11301, 2]
 
-// Module 11171 (UnifiedGiftModalDetailsScreen)
+// Module 11270 (UnifiedGiftModalDetailsScreen)
 import nativeDefault from "native" /* 575 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11170 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11269 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

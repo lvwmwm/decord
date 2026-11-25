@@ -1,21 +1,21 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16778
+// Function ID: 16779
 // Name: ResubscribedAlert
-// Dependencies: [19, 17, 21, 4917, 575, 5992, 1112, 5604, 16658, 1186, 5508, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 6087, 1112, 5699, 16779, 1186, 5603, 2]
 // Exports: default
 
-// Module 16657 (ResubscribedAlert)
+// Module 16778 (ResubscribedAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import AlertDefault from "Alert" /* 5992 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16658 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import AlertDefault from "Alert" /* 6087 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16779 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

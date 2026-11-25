@@ -1,13 +1,13 @@
-// Module ID: 9268
-// Function ID: 9269
+// Module ID: 9367
+// Function ID: 9368
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 6185, 6184, 9269, 2]
+// Dependencies: [5, 6280, 6279, 9368, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 9268 (showMarketingMomentRewardScreen)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6184 */;
+// Module 9367 (showMarketingMomentRewardScreen)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6279 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6185 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6280 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -26,7 +26,7 @@ let obj = function _showMarketingMomentRewardScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _showMarketingMomentRewardScreen() {
             obj.open(obj7);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         c4 = 3;

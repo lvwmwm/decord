@@ -1,12 +1,12 @@
-// Module ID: 9423
-// Function ID: 9424
+// Module ID: 9522
+// Function ID: 9523
 // Name: DismissibleContentScope
-// Dependencies: [4757, 3, 2]
+// Dependencies: [4852, 3, 2]
 // Exports: getDismissibleContentKind, getDismissibleContentShowing, getDismissibleContentShowingKey, isGuildScopedDismissibleContent, isRecurringScopedDismissibleContent, scopeDismissibleContent, scopeDismissibleContentEntry
 
-// Module 9423 (DismissibleContentScope)
+// Module 9522 (DismissibleContentScope)
 import LoggerDefault from "Logger" /* 3 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4757 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4852 */;
 import size from "module_2" /* 2 */;
 
 function tagDismissibleContentKind(content) {

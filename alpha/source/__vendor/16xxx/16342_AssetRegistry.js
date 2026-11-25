@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/virtual_currency/native/orb_wallet/svgs", width: 50, height: 37, scales: [1], hash: "2e363b0731271ecec5e35c52d433340f", name: "claim_in_shop_graphic", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 76, height: 76, scales: [1], hash: "357b6ff4f5f31060d463e9e4858af437", name: "family_center_chat_check_icon", type: "png" });

@@ -1,13 +1,13 @@
-// Module ID: 17215
-// Function ID: 17216
+// Module ID: 17329
+// Function ID: 17330
 // Name: PhoenixLaunchState
-// Dependencies: [5, 19, 3, 1257, 17216, 1262, 17217, 2]
+// Dependencies: [5, 19, 3, 1257, 17330, 1262, 17331, 2]
 // Exports: setShouldLaunchPhoenix, useIsPhoenixInstalled, useShouldLaunchPhoenix
 
-// Module 17215 (PhoenixLaunchState)
+// Module 17329 (PhoenixLaunchState)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 17216 */;
-import LaunchClient2 from "LaunchClient" /* 17217 */;
+import react_nativeDefault from "react-native" /* 17330 */;
+import LaunchClient2 from "LaunchClient" /* 17331 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import module_1257 from "module_1257" /* 1257 */;
@@ -30,7 +30,7 @@ let obj = function _readPhoenixLaunchState() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -84,7 +84,7 @@ let obj = function _readPhoenixLaunchState() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp20) {
         closure_2 = tmp20;
         if (0 === c3) {
@@ -116,7 +116,7 @@ obj = function _storeLaunchClient() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -186,7 +186,7 @@ obj = function _setShouldLaunchPhoenix() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -234,7 +234,7 @@ obj = function _setShouldLaunchPhoenix() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         closure_3 = tmp16;

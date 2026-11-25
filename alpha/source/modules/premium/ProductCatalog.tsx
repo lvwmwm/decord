@@ -1,10 +1,10 @@
-// Module ID: 9681
-// Function ID: 9682
+// Module ID: 9780
+// Function ID: 9781
 // Name: ProductCatalog
 // Dependencies: [1387, 1388, 3, 1399, 1392, 2]
 // Exports: canUserUse
 
-// Module 9681 (ProductCatalog)
+// Module 9780 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import PerksStateUtils from "PerksStateUtils" /* 1392 */;

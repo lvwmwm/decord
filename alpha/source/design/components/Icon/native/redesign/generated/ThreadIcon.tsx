@@ -1,14 +1,14 @@
-// Module ID: 7013
-// Function ID: 7014
+// Module ID: 7108
+// Function ID: 7109
 // Name: ThreadIcon
-// Dependencies: [19, 21, 575, 5603, 6972, 2]
+// Dependencies: [19, 21, 575, 5698, 7067, 2]
 // Exports: ThreadIcon
 
-// Module 7013 (ThreadIcon)
+// Module 7108 (ThreadIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 6972 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 7067 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

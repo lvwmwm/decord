@@ -1,15 +1,15 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14686
+// Function ID: 14687
 // Name: conjurePreviewGameCapture
-// Dependencies: [5, 6808, 14565, 14566, 14567, 1491, 2]
+// Dependencies: [5, 6903, 14687, 14688, 14689, 1491, 2]
 // Exports: hasConjurePreviewGameCapture, readConjurePreviewGameCapture
 
-// Module 14564 (conjurePreviewGameCapture)
-import conjureMediaTickets from "conjureMediaTickets" /* 14567 */;
+// Module 14686 (conjurePreviewGameCapture)
+import conjureMediaTickets from "conjureMediaTickets" /* 14689 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14565 */;
-import ConjureGameCapturesStore from "ConjureGameCapturesStore" /* 14566 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14687 */;
+import ConjureGameCapturesStore from "ConjureGameCapturesStore" /* 14688 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c4, c6;
@@ -32,7 +32,7 @@ let obj = function _getGameCaptureUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = function _loadGameCapture() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -244,7 +244,7 @@ obj = function _readConjurePreviewGameCapture() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;

@@ -1,22 +1,22 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8654
+// Function ID: 8655
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4917, 575, 5483, 8556, 8557, 1112, 7121, 6921, 5508, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5578, 8655, 8656, 1112, 7216, 7016, 5603, 2]
 // Exports: default
 
-// Module 8555 (SharePreparingModal)
+// Module 8654 (SharePreparingModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import Backdrop from "Backdrop" /* 5483 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6921 */;
-import XSmallIcon from "XSmallIcon" /* 7121 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8556 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8557 */;
+import Backdrop from "Backdrop" /* 5578 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7016 */;
+import XSmallIcon from "XSmallIcon" /* 7216 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8655 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8656 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

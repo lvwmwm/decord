@@ -1,22 +1,22 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 16370
+// Function ID: 16371
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 4917, 575, 8075, 12381, 1112, 2824, 16250, 5508, 16211, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 8174, 12545, 1112, 2846, 16371, 5603, 16332, 2]
 // Exports: default
 
-// Module 16249 (FamilyCenterLinkingBanner)
+// Module 16370 (FamilyCenterLinkingBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
-import _modDef2824 from "module_2824" /* 2824 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8075 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 12381 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 16211 */;
-import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 16250 */;
+import _modDef2846 from "module_2846" /* 2846 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8174 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 12545 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 16332 */;
+import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 16371 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -34,15 +34,15 @@ function FamilyCenterLinkingBannerParentContent() {
   let intl6;
   let items;
   const obj = { style: closure_7().container, children: items };
-  const obj2 = { index: 1, header: intl.string(_modDef2824["7xxAni"]), description: intl2.string(_modDef2824["1M9So2"]) };
+  const obj2 = { index: 1, header: intl.string(_modDef2846["7xxAni"]), description: intl2.string(_modDef2846["1M9So2"]) };
   intl = intl7.intl;
   intl2 = intl7.intl;
   items = [React3(FamilyCenterLinkingInstructionsRow, obj2), , , ];
-  const obj3 = { index: 2, header: intl3.string(_modDef2824["AXgx+a"]), description: intl4.string(_modDef2824.GzMFnb) };
+  const obj3 = { index: 2, header: intl3.string(_modDef2846["AXgx+a"]), description: intl4.string(_modDef2846.GzMFnb) };
   intl3 = intl7.intl;
   intl4 = intl7.intl;
   items[1] = React3(FamilyCenterLinkingInstructionsRow, obj3);
-  const obj4 = { index: 3, header: intl5.string(_modDef2824.MZn1tG), description: intl6.string(_modDef2824["8rLBxD"]), isLast: true };
+  const obj4 = { index: 3, header: intl5.string(_modDef2846.MZn1tG), description: intl6.string(_modDef2846["8rLBxD"]), isLast: true };
   intl5 = intl7.intl;
   intl6 = intl7.intl;
   items[2] = React3(FamilyCenterLinkingInstructionsRow, obj4);
@@ -110,17 +110,17 @@ export default function FamilyCenterLinkingBanner() {
   const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl = intl7.intl;
-  const stringResult = intl.string(_modDef2824.zUCWEL);
+  const stringResult = intl.string(_modDef2846.zUCWEL);
   const intl2 = intl7.intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2824.B0NPbp));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2846.B0NPbp));
   const useAgeSpecificText2 = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl3 = intl7.intl;
-  const formatResult = intl3.format(_modDef2824.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
+  const formatResult = intl3.format(_modDef2846.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
   const intl4 = intl7.intl;
   const obj = { style: tmp.container, children: items };
   const obj2 = { style: tmp.art, children: React3(WizardHatAndBookSpotIllustration.WizardHatAndBookSpotIllustration, { accessible: false }) };
-  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.string(_modDef2824.JsAEDi));
+  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.string(_modDef2846.JsAEDi));
   items = [React3(View, obj2), , ];
   const obj3 = { style: tmp.content, children: items1 };
   items1 = [, ];

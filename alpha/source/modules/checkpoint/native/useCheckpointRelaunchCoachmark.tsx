@@ -1,12 +1,12 @@
-// Module ID: 17981
-// Function ID: 17982
+// Module ID: 18093
+// Function ID: 18094
 // Name: useCheckpointRelaunchCoachmark
-// Dependencies: [5, 19, 4763, 1112, 3442, 4750, 12412, 17982, 2]
+// Dependencies: [5, 19, 4858, 1112, 3494, 4845, 12576, 18094, 2]
 // Exports: useCheckpointRelaunchCoachmarkProps
 
-// Module 17981 (useCheckpointRelaunchCoachmark)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import useIsCheckpointRelaunchCoachmarkEligible from "useIsCheckpointRelaunchCoachmarkEligible" /* 17982 */;
+// Module 18093 (useCheckpointRelaunchCoachmark)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import useIsCheckpointRelaunchCoachmarkEligible from "useIsCheckpointRelaunchCoachmarkEligible" /* 18094 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ export function useCheckpointRelaunchCoachmarkProps(visibleContent) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ export function useCheckpointRelaunchCoachmarkProps(visibleContent) {
               c1(constants.TAKE_ACTION);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c2 = 3;

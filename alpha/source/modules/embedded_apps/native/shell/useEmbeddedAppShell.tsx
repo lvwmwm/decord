@@ -1,12 +1,12 @@
-// Module ID: 10097
-// Function ID: 10098
+// Module ID: 10196
+// Function ID: 10197
 // Name: useEmbeddedAppShell
-// Dependencies: [32, 19, 10098, 10101, 2]
+// Dependencies: [32, 19, 10197, 10200, 2]
 // Exports: default
 
-// Module 10097 (useEmbeddedAppShell)
-import getEmbeddedAppShellUrl from "getEmbeddedAppShellUrl" /* 10098 */;
-import createShellHtml from "createShellHtml" /* 10101 */;
+// Module 10196 (useEmbeddedAppShell)
+import getEmbeddedAppShellUrl from "getEmbeddedAppShellUrl" /* 10197 */;
+import createShellHtml from "createShellHtml" /* 10200 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

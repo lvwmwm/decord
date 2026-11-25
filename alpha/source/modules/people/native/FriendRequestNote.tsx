@@ -1,19 +1,19 @@
-// Module ID: 14899
-// Function ID: 14900
+// Module ID: 15021
+// Function ID: 15022
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4859, 1071, 21, 4917, 575, 14900, 504, 14901, 5508, 5515, 7164, 1112, 2]
+// Dependencies: [32, 19, 17, 4954, 1071, 21, 5012, 575, 15022, 504, 15023, 5603, 5610, 7259, 1112, 2]
 // Exports: default
 
-// Module 14899 (FriendRequestNote)
+// Module 15021 (FriendRequestNote)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import PeopleListTracking from "PeopleListTracking" /* 14901 */;
+import PeopleListTracking from "PeopleListTracking" /* 15023 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

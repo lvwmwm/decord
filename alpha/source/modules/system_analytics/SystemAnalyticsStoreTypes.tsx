@@ -1,9 +1,9 @@
-// Module ID: 5819
-// Function ID: 5820
+// Module ID: 5914
+// Function ID: 5915
 // Name: SystemAnalyticsStoreTypes
 // Dependencies: [2]
 
-// Module 5819 (SystemAnalyticsStoreTypes)
+// Module 5914 (SystemAnalyticsStoreTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/system_analytics/SystemAnalyticsStoreTypes.tsx");

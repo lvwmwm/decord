@@ -1,21 +1,21 @@
-// Module ID: 18996
-// Function ID: 18997
+// Module ID: 19108
+// Function ID: 19109
 // Name: ChannelSettingsPermissionsList
-// Dependencies: [32, 19, 17, 4766, 4829, 4823, 1386, 1071, 21, 4917, 575, 504, 6862, 1500, 1628, 7279, 7714, 4854, 6018, 10652, 2117, 11291, 7280, 1112, 7285, 1186, 11449, 2]
+// Dependencies: [32, 19, 17, 4861, 4924, 4918, 1386, 1071, 21, 5012, 575, 504, 6957, 1500, 1628, 7374, 7813, 4949, 6113, 10751, 2117, 11390, 7375, 1112, 7380, 1186, 11548, 2]
 
-// Module 18996 (ChannelSettingsPermissionsList)
+// Module 19108 (ChannelSettingsPermissionsList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2117 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildRoleStore from "GuildRoleStore" /* 4823 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildRoleStore from "GuildRoleStore" /* 4918 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let navigation, user;

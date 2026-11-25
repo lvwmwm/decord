@@ -1,13 +1,13 @@
-// Module ID: 6843
-// Function ID: 6844
+// Module ID: 6938
+// Function ID: 6939
 // Name: ConjureGuildExperiment
-// Dependencies: [4788, 1071, 1450, 6844, 504, 2]
+// Dependencies: [4883, 1071, 1450, 6939, 504, 2]
 // Exports: hasConjureExperimentGuild, useHasConjureGuild, useIsConjureGuildEnabled
 
-// Module 6843 (ConjureGuildExperiment)
+// Module 6938 (ConjureGuildExperiment)
 import Constants from "Constants" /* 1071 */;
-import ConjureUserExperiment from "ConjureUserExperiment" /* 6844 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import ConjureUserExperiment from "ConjureUserExperiment" /* 6939 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

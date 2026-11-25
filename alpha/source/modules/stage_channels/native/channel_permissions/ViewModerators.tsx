@@ -1,21 +1,21 @@
-// Module ID: 18991
-// Function ID: 18992
+// Module ID: 19103
+// Function ID: 19104
 // Name: ViewModerators
-// Dependencies: [5, 19, 4829, 4823, 4788, 1071, 7709, 21, 1255, 5131, 18992, 2119, 1500, 504, 6683, 8385, 4774, 2117, 5921, 1112, 7714, 8386, 5598, 1186, 8414, 5989, 6014, 6018, 12919, 2]
+// Dependencies: [5, 19, 4924, 4918, 4883, 1071, 7808, 21, 1255, 5226, 19104, 2119, 1500, 504, 6778, 8484, 4869, 2117, 6016, 1112, 7813, 8485, 5693, 1186, 8513, 6084, 6109, 6113, 13043, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 18991 (ViewModerators)
+// Module 19103 (ViewModerators)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7709 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8414 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7808 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8513 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildRoleStore from "GuildRoleStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildRoleStore from "GuildRoleStore" /* 4918 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ export default function ViewModerators(channel) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ export default function ViewModerators(channel) {
             const obj3 = v1(handleRemovePermission[9]);
             obj3.hideActionSheet();
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           c2 = 3;
@@ -210,7 +210,7 @@ export default function ViewModerators(channel) {
                     const _HermesInternal = HermesInternal;
                     ActionSheetActionCreatorsDefault;
                     const obj2 = { channel, canSkip: false };
-                    const tmp8 = asyncRequire(18992, dependencyMap.paths);
+                    const tmp8 = asyncRequire(19104, dependencyMap.paths);
                     openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                   }
                 },
@@ -259,6 +259,6 @@ export function openAddModeratorsActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel, canSkip: flag };
-  const tmp3 = asyncRequire(18992, dependencyMap.paths);
+  const tmp3 = asyncRequire(19104, dependencyMap.paths);
   openLazy(tmp3, "channel-add-moderators-" + channel.id, obj2);
 }

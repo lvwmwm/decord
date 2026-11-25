@@ -1,20 +1,20 @@
-// Module ID: 9737
-// Function ID: 9738
+// Module ID: 9836
+// Function ID: 9837
 // Name: BadgeDetailsUtils
-// Dependencies: [6257, 1388, 6012, 1112, 6258, 9729, 2152, 2]
+// Dependencies: [6352, 1388, 6107, 1112, 6353, 9828, 2152, 2]
 // Exports: getBadgeArtUrls, getBadgeCtaVariant, getBadgeDescriptionText, getBadgeProgressDisplay, getBadgeStatusText, getBadgeTitle, isLegacyDisplayBadge, isUpgradeableNitroViewer, shouldShowLegacyUnavailableNotice
 
-// Module 9737 (BadgeDetailsUtils)
+// Module 9836 (BadgeDetailsUtils)
 import intl5 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import StringUtils from "StringUtils" /* 2152 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6257 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 6258 */;
-import BadgeUtils from "BadgeUtils" /* 9729 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6352 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 6353 */;
+import BadgeUtils from "BadgeUtils" /* 9828 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BadgeId = tmp(6012);
+const BadgeId = tmp(6107);
 const getObtainedAtFromBadge = BadgeDirectoryStore.getObtainedAtFromBadge;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/badges/BadgeDetailsUtils.tsx");
@@ -120,7 +120,7 @@ export function getBadgeStatusText(badge, arg1) {
       stringResult = intl4.string(tmp5(1112).t["5LcHT0"]);
     } else {
       const tmp5Result = BadgeIdResolution;
-      const tmp7 = tmp5Result.isLegacyBadgeId(badge.badge_id) && !badge.is_earnable && badge.badge_id !== tmp5(6012).BadgeId.STAFF;
+      const tmp7 = tmp5Result.isLegacyBadgeId(badge.badge_id) && !badge.is_earnable && badge.badge_id !== tmp5(6107).BadgeId.STAFF;
       if (!tmp7) {
         if (null != tmp) {
           let formatToPlainStringResult;

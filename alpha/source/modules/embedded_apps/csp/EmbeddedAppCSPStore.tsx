@@ -1,9 +1,9 @@
-// Module ID: 7555
-// Function ID: 7556
+// Module ID: 7650
+// Function ID: 7651
 // Name: EmbeddedAppCSPStore
 // Dependencies: [504, 572, 2]
 
-// Module 7555 (EmbeddedAppCSPStore)
+// Module 7650 (EmbeddedAppCSPStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -11,8 +11,8 @@ import size from "module_2" /* 2 */;
 const map = new Map();
 const Store = get_initializedDefault.Store;
 class EmbeddedAppCSPStore extends Store {
-  getPolicy(applicationRouterOrigin) {
-    let value = map.get(applicationRouterOrigin);
+  getPolicy(arg0) {
+    let value = map.get(arg0);
     if (value == null) {
       value = null;
     }

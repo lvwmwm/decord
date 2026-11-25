@@ -1,14 +1,14 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 13337
+// Function ID: 13338
 // Name: NotificationUtils
-// Dependencies: [5, 13206, 1071, 13209, 1255, 10136, 7746, 10157, 2]
+// Dependencies: [5, 13329, 1071, 13332, 1255, 10235, 7845, 10256, 2]
 
-// Module 13214 (NotificationUtils)
+// Module 13337 (NotificationUtils)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import PushNotificationDefault from "PushNotification" /* 10136 */;
-import SoundUtils from "SoundUtils" /* 10157 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13206 */;
+import PushNotificationDefault from "PushNotification" /* 10235 */;
+import SoundUtils from "SoundUtils" /* 10256 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13329 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, c0;
 
 let tmp;
-const react_nativeDefault = tmp(7746);
+const react_nativeDefault = tmp(7845);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let obj = {
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp3) {
           c0 = 3;

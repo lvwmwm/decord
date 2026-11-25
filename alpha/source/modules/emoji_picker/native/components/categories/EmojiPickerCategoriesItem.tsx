@@ -1,21 +1,21 @@
-// Module ID: 9635
-// Function ID: 9636
+// Module ID: 9734
+// Function ID: 9735
 // Name: EmojiPickerCategoriesItem
-// Dependencies: [32, 19, 17, 6760, 1071, 21, 4917, 575, 1653, 5127, 5130, 1706, 6026, 6926, 9636, 7035, 2]
+// Dependencies: [32, 19, 17, 6855, 1071, 21, 5012, 575, 1653, 5222, 5225, 1706, 6121, 7021, 9735, 7130, 2]
 
-// Module 9635 (EmojiPickerCategoriesItem)
+// Module 9734 (EmojiPickerCategoriesItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import timingPresets from "timingPresets" /* 5130 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6760 */;
-import GuildIconDefault from "GuildIcon" /* 6926 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import timingPresets from "timingPresets" /* 5225 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6855 */;
+import GuildIconDefault from "GuildIcon" /* 7021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;
@@ -32,9 +32,9 @@ let size1;
 let size2;
 let tmp2;
 const _mod1706 = tmp2(1706);
-const Pressables = tmp2(6026);
-const GuildIcon = tmp2(6926);
-const LockIcon = tmp2(7035);
+const Pressables = tmp2(6121);
+const GuildIcon = tmp2(7021);
+const LockIcon = tmp2(7130);
 let View = react_native.View;
 const EmojiCategoryTypes = EmojiPickerConstants.EmojiCategoryTypes;
 ({ CATEGORY_ICON_RIPPLE_CONFIG: metroImportDefault, CATEGORY_ICON_SIZE, NODE_SIZE } = Constants);
@@ -76,7 +76,7 @@ const memoResult = react.memo(function EmojiPickerCategoriesItem(category) {
   let tmp7;
   let tmp8;
   let tmp9;
-  const f95701 = () => categoryIndexActive.get() === index;
+  const f96043 = () => categoryIndexActive.get() === index;
   category = category.category;
   const categoryIndexActive = category.categoryIndexActive;
   const handlePressCategory = category.handlePressCategory;
@@ -122,8 +122,8 @@ const memoResult = react.memo(function EmojiPickerCategoriesItem(category) {
   EmojiPickerCategoriesItemTsx1.__initData = tmp5;
   let obj = react;
   const animatedStyle = useAnimatedStyle(EmojiPickerCategoriesItemTsx1);
-  [tmp14, tmp15] = react.useState(f95701);
-  _slicedToArray(react.useState(f95701), 2);
+  [tmp14, tmp15] = react.useState(f96043);
+  _slicedToArray(react.useState(f96043), 2);
   const items2 = [closure_12, categoryIndexActive, index];
   c0 = undefined;
   c1 = undefined;
@@ -177,7 +177,7 @@ const memoResult = react.memo(function EmojiPickerCategoriesItem(category) {
     tmp25Result = tmp25(tmp28Result, obj4);
   } else {
     const obj5 = { id: category.id };
-    tmp25Result = tmp25(tmp28(9636), obj5);
+    tmp25Result = tmp25(tmp28(9735), obj5);
   }
   items8 = [tmp25Result, ];
   if (locked) {

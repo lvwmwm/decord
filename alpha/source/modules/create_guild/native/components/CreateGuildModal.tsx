@@ -1,18 +1,18 @@
-// Module ID: 13529
-// Function ID: 13530
+// Module ID: 13652
+// Function ID: 13653
 // Name: CreateGuildModal
-// Dependencies: [19, 17, 4847, 7209, 1071, 21, 13283, 10291, 1255, 6865, 13528, 1263, 7065, 13530, 13559, 13105, 1112, 13568, 8863, 13573, 13574, 13587, 8894, 7229, 2]
+// Dependencies: [19, 17, 4942, 7304, 1071, 21, 13406, 10390, 1255, 6960, 13651, 1263, 7160, 13653, 13682, 13228, 1112, 13691, 8962, 13696, 13697, 13710, 8993, 7324, 2]
 // Exports: default
 
-// Module 13529 (CreateGuildModal)
+// Module 13652 (CreateGuildModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import NavigatorHeader from "NavigatorHeader" /* 7065 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13528 */;
+import NavigatorHeader from "NavigatorHeader" /* 7160 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13651 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4847 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7209 */;
+import GuildChannelStore from "GuildChannelStore" /* 4942 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7304 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

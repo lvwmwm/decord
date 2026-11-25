@@ -1,27 +1,27 @@
-// Module ID: 19400
-// Function ID: 19401
+// Module ID: 19512
+// Function ID: 19513
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 4765, 6687, 4766, 6839, 11635, 21, 4917, 575, 11634, 6816, 1653, 1706, 9859, 6003, 8278, 10174, 7702, 6671, 10172, 19401, 8883, 19391, 1112, 2]
+// Dependencies: [32, 19, 4860, 6782, 4861, 6934, 11734, 21, 5012, 575, 11733, 6911, 1653, 1706, 9958, 6098, 8377, 10273, 7801, 6766, 10271, 19513, 8982, 19503, 1112, 2]
 // Exports: default
 
-// Module 19400 (VoicePanelDisconnectCancelButton)
+// Module 19512 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6671 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6816 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7702 */;
-import StreamActionCreators from "StreamActionCreators" /* 8278 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 9859 */;
-import shouldShowEndStageModalDefault from "shouldShowEndStageModal" /* 10174 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11635 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6098 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6766 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6911 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7801 */;
+import StreamActionCreators from "StreamActionCreators" /* 8377 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 9958 */;
+import shouldShowEndStageModalDefault from "shouldShowEndStageModal" /* 10273 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4765 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import VoicePanelStore from "VoicePanelStore" /* 6839 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import VoicePanelStore from "VoicePanelStore" /* 6934 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

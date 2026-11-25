@@ -1,14 +1,14 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11261
+// Function ID: 11262
 // Name: GiftIcon
-// Dependencies: [19, 21, 575, 5603, 11163, 2]
+// Dependencies: [19, 21, 575, 5698, 11262, 2]
 // Exports: GiftIcon
 
-// Module 11162 (GiftIcon)
+// Module 11261 (GiftIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 11163 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 11262 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11117
-// Function ID: 11118
+// Module ID: 11216
+// Function ID: 11217
 // Name: StripeNextAction
-// Dependencies: [5, 11116, 4730, 2]
+// Dependencies: [5, 11215, 5777, 2]
 // Exports: reopenStripeNextAction
 
-// Module 11117 (StripeNextAction)
+// Module 11216 (StripeNextAction)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -12,11 +12,16 @@ let c6, c7, closure_4;
 
 function openNextActionInstructions(arg0) {
   if (null == arg0) {
-    const _Error = Error;
     const self = this;
-    const self2 = this;
-    const error = new Error("Stripe next action context has no client secret or instructions url");
-    throw error;
+    if (typeof NextActionInstructionsMissingError === "function") {
+      const self2 = this;
+      const self3 = this;
+      const tmp5 = new arg0("Stripe next action context has no client secret or instructions url", tmp3, arg0);
+      tmp5.name = "NextActionInstructionsMissing";
+      throw tmp5;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
   } else {
     const _window = window;
     window.open(arg0);
@@ -48,7 +53,7 @@ let obj = function _handleStripeNextAction() {
           obj5 = closure_131_0(closure_131_1[1]);
           return obj6;
         } else {
-          closure_131_3(c1);
+          closure_131_5(c1);
         }
       } else if (2 === c4) {
         if (arg0 === 1) {
@@ -72,14 +77,10 @@ let obj = function _handleStripeNextAction() {
         c5 = 3;
         return { value, done: true };
       } else {
-        let error = value.error;
+        const error = value.error;
         if (null != error) {
-          const _Error = Error;
-          const _HermesInternal = HermesInternal;
           const self = this;
-          const self2 = this;
-          error = new Error("Stripe next action failed: " + error.message);
-          throw error;
+          throw new closure_131_4(error.message);
         }
       }
       await "HermesInternal";
@@ -104,10 +105,10 @@ obj = function _reopenStripeNextAction() {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -119,27 +120,26 @@ obj = function _reopenStripeNextAction() {
             throw value;
           } else if (arg0 === 2) {
             c7 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
             let closure_3 = tmp;
             let closure_2 = tmp4;
             c5 = 1;
             c6 = 2;
             c7 = 1;
-            const obj5 = { value: handleStripeNextAction(closure_0, closure_1), done: false };
-            return obj5;
+            const obj4 = { value: handleStripeNextAction(closure_0, closure_1), done: false };
+            return obj4;
           }
         } else {
           if (1 === c6) {
             c5 = 0;
             closure_1 = closure_4;
-            const obj6 = { tags: { source: "order_signing_reopen_next_action" } };
-            const obj2 = closure_131_0(closure_131_1[2]);
-            const result = obj2.captureBillingException(closure_1, obj6);
+            const ClientBillingError = closure_131_0(closure_131_1[2]).ClientBillingError;
+            ClientBillingError.report({ site: "order_signing_reopen_next_action" }, closure_1);
             const tmp14 = null != closure_0.client_secret && null != closure_0.instructions_url;
             if (tmp14) {
-              closure_131_3(closure_0.instructions_url);
+              closure_131_5(closure_0.instructions_url);
             }
           } else if (arg0 === 1) {
             c7 = 3;
@@ -153,7 +153,7 @@ obj = function _reopenStripeNextAction() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp25) {
         closure_4 = tmp25;
@@ -168,7 +168,21 @@ obj = function _reopenStripeNextAction() {
   });
   return obj(...arguments);
 };
-let result = size.fileFinishedImporting("modules/payments/StripeNextAction.tsx");
+class NextActionInstructionsMissingError extends Error {
+  constructor() {
+    const tmp2 = new tmp("Stripe next action context has no client secret or instructions url", new.target);
+    tmp2.name = "NextActionInstructionsMissing";
+    return tmp2;
+  }
+}
+class StripeNextActionFailedError extends Error {
+  constructor(arg0) {
+    const tmp2 = new tmp(concat(arg0), concat);
+    tmp2.name = "StripeNextActionFailed";
+    return tmp2;
+  }
+}
+const result = size.fileFinishedImporting("modules/payments/StripeNextAction.tsx");
 
 export { handleStripeNextAction };
 export function reopenStripeNextAction() {

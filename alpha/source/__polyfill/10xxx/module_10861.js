@@ -1,141 +1,109 @@
 // Module ID: 10861
 // Function ID: 10862
-// Dependencies: [10862, 10864, 10866, 10867, 10868, 10869, 10870, 10871, 10872, 10873, 10874, 10730, 10737, 10739, 10763, 10875, 10770]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: [41, 42, 93, 95, 98, 10833, 10832, 10836, 10840]
 
 // Module 10861
-import _mod10763 from "module_10763" /* 10763 */;
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10770 */;
-import _mod10862 from "module_10862" /* 10862 */;
-import _mod10864 from "module_10864" /* 10864 */;
-import _mod10866 from "module_10866" /* 10866 */;
-import _mod10867 from "module_10867" /* 10867 */;
-import _mod10868 from "module_10868" /* 10868 */;
-import _mod10869 from "module_10869" /* 10869 */;
-import _mod10870 from "module_10870" /* 10870 */;
-import _mod10871 from "module_10871" /* 10871 */;
-import _mod10872 from "module_10872" /* 10872 */;
-import _mod10873 from "module_10873" /* 10873 */;
-import _mod10874 from "module_10874" /* 10874 */;
-import _mod10875 from "module_10875" /* 10875 */;
-import { Chrono } from "module_10730" /* 10730 */;
+import _mod10832 from "module_10832" /* 10832 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10833 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10840 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-function createConfiguration(flag) {
-  let items;
-  let items1;
-  if (flag === undefined) {
-    flag = true;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  const obj = { parsers: items, refiners: items1 };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_10763.default(true), , , , , ];
-  new module_10763.default(true);
-  items[1] = new module_10862.default();
-  new module_10862.default();
-  items[2] = new module_10864.default();
-  new module_10864.default();
-  items[3] = new module_10873.default();
-  new module_10873.default();
-  items[4] = new module_10867.default(flag);
-  new module_10867.default(flag);
-  items[5] = new module_10868.default();
-  new module_10868.default();
-  items1 = [new module_10870.default(), ];
-  new module_10870.default();
-  items1[1] = new module_10869.default();
-  new module_10869.default();
-  return includeCommonConfiguration(obj, flag);
 }
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+const regExp = new RegExp("(this|last|past|next|after\\s*this)\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10832.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
+class ENRelativeDateFormatParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENRelativeDateFormatParser);
+    const obj = _getPrototypeOf(ENRelativeDateFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  const tmp = createConfiguration(false);
-  const parsers = tmp.parsers;
-  const unshift = parsers.unshift;
-  const _default = new module_10871.default();
-  unshift(_default);
-  const parsers1 = tmp.parsers;
-  const unshift2 = parsers1.unshift;
-  const _default1 = new module_10872.default();
-  unshift2(_default1);
-  const parsers2 = tmp.parsers;
-  const unshift3 = parsers2.unshift;
-  const _default2 = new module_10866.default();
-  unshift3(_default2);
-  const parsers3 = tmp.parsers;
-  const unshift4 = parsers3.unshift;
-  const _default3 = new module_10874.default();
-  unshift4(_default3);
-  const parsers4 = tmp.parsers;
-  const unshift5 = parsers4.unshift;
-  const _default4 = new module_10875.default();
-  unshift5(_default4);
-  return tmp;
 }
-const module_10862 = fn(_mod10862);
-const module_10864 = fn(_mod10864);
-const module_10866 = fn(_mod10866);
-const module_10867 = fn(_mod10867);
-const module_10868 = fn(_mod10868);
-const module_10869 = fn(_mod10869);
-const module_10870 = fn(_mod10870);
-const module_10871 = fn(_mod10871);
-const module_10872 = fn(_mod10872);
-const module_10873 = fn(_mod10873);
-const module_10874 = fn(_mod10874);
-const module_10763 = fn(_mod10763);
-const module_10875 = fn(_mod10875);
-const configuration = createConfiguration(false);
-let parsers = configuration.parsers;
-let unshift = parsers.unshift;
-let _default = new module_10871.default();
-unshift(_default);
-let parsers1 = configuration.parsers;
-let unshift2 = parsers1.unshift;
-let _default1 = new module_10872.default();
-unshift2(_default1);
-let parsers2 = configuration.parsers;
-let unshift3 = parsers2.unshift;
-let _default2 = new module_10866.default();
-unshift3(_default2);
-let parsers3 = configuration.parsers;
-let unshift4 = parsers3.unshift;
-let _default3 = new module_10874.default();
-unshift4(_default3);
-let parsers4 = configuration.parsers;
-let unshift5 = parsers4.unshift;
-let _default4 = new module_10875.default();
-unshift5(_default4);
-const chrono = new Chrono(configuration);
-const chrono1 = new require("module_10730").Chrono(createConfiguration(true));
-const Chrono_export = require("module_10730").Chrono;
+_inherits(ENRelativeDateFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const str2 = arg1[2];
+      const str3 = str2.toLowerCase();
+      const tmp3 = _mod10832.TIME_UNIT_DICTIONARY[str3];
+      if ("next" != formatted) {
+        if (!formatted.startsWith("after")) {
+          if ("last" != formatted) {
+            if ("past" != formatted) {
+              const parsingComponents = createParsingComponents.createParsingComponents();
+              const _Date = Date;
+              const instant = createParsingComponents.reference.instant;
+              const self = this;
+              const self2 = this;
+              const date = new Date(instant.getTime());
+              if (str3.match(/week/i)) {
+                const setDate = date.setDate;
+                const date1 = date.getDate();
+                setDate(date1 - date.getDay());
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.imply("month", date.getMonth() + 1);
+                parsingComponents.imply("year", date.getFullYear());
+              } else if (str3.match(/month/i)) {
+                date.setDate(1);
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.assign("year", date.getFullYear());
+                parsingComponents.assign("month", date.getMonth() + 1);
+              } else if (str3.match(/year/i)) {
+                date.setDate(1);
+                date.setMonth(0);
+                parsingComponents.imply("day", date.getDate());
+                parsingComponents.imply("month", date.getMonth() + 1);
+                parsingComponents.assign("year", date.getFullYear());
+              }
+              return parsingComponents;
+            }
+          }
+          const obj4 = {};
+          obj4[tmp3] = -1;
+          const ParsingComponents = tmp(10836).ParsingComponents;
+          return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj4);
+        }
+      }
+      const ParsingComponents2 = tmp(10836).ParsingComponents;
+      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [tmp3]: 1 });
+    }
+  }
+];
 
-export function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-}
-export function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-}
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(ENRelativeDateFormatParser, items);

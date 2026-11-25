@@ -1,13 +1,13 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8121
+// Function ID: 8122
 // Name: imageConversion
-// Dependencies: [5, 3, 6276, 8014, 4728, 2]
+// Dependencies: [5, 3, 6371, 8113, 4823, 2]
 // Exports: convertFileToJpeg
 
-// Module 8022 (imageConversion)
+// Module 8121 (imageConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import MediaTypes from "MediaTypes" /* 6276 */;
-import imageFilename from "imageFilename" /* 8014 */;
+import MediaTypes from "MediaTypes" /* 6371 */;
+import imageFilename from "imageFilename" /* 8113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let obj = function _convertViaSysimg() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;

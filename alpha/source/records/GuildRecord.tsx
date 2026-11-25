@@ -1,15 +1,15 @@
-// Module ID: 4784
-// Function ID: 4785
+// Module ID: 4879
+// Function ID: 4880
 // Name: GuildRecord
-// Dependencies: [4781, 1071, 1412, 2152, 11, 4785, 2]
+// Dependencies: [4876, 1071, 1412, 2152, 11, 4880, 2]
 // Exports: getGuildAcronym, getGuildEveryoneRoleId, getGuildIconSource, getGuildIconURL, isGuildLurker, isGuildNSFW, isGuildOwner, isGuildOwnerWithRequiredMfaLevel, updateGameApplications, updateJoinedAt
 
-// Module 4784 (GuildRecord)
+// Module 4879 (GuildRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import StringUtils from "StringUtils" /* 2152 */;
-import ServerNSFWLevelExperiment from "ServerNSFWLevelExperiment" /* 4785 */;
-import PlainRecord from "PlainRecord" /* 4781 */;
+import ServerNSFWLevelExperiment from "ServerNSFWLevelExperiment" /* 4880 */;
+import PlainRecord from "PlainRecord" /* 4876 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

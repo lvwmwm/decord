@@ -1,22 +1,22 @@
-// Module ID: 9860
-// Function ID: 9861
+// Module ID: 9959
+// Function ID: 9960
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 9861, 5560, 1071, 21, 1112, 7558, 4742, 9862, 6273, 8688, 6713, 2187, 9863, 2]
+// Dependencies: [5, 19, 9960, 5655, 1071, 21, 1112, 7653, 4837, 9961, 6368, 8786, 6808, 2187, 9962, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 9860 (activityLaunchErrorUtils)
+// Module 9959 (activityLaunchErrorUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl12 from "intl" /* 1112 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5560 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6273 */;
-import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 7558 */;
-import InteractionUtils from "InteractionUtils" /* 8688 */;
-import fetchDeveloperApplications from "fetchDeveloperApplications" /* 9862 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5655 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6368 */;
+import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 7653 */;
+import InteractionUtils from "InteractionUtils" /* 8786 */;
+import fetchDeveloperApplications from "fetchDeveloperApplications" /* 9961 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 9861 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 9960 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, fetchState;
@@ -43,7 +43,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

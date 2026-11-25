@@ -1,21 +1,22 @@
-// Module ID: 19577
-// Function ID: 19578
+// Module ID: 12364
+// Function ID: 12365
 // Name: renderComponents
-// Dependencies: [19, 21, 2117, 19578, 17183, 19579, 17186, 17187, 19580, 19581, 19583, 19584, 19585, 2]
+// Dependencies: [19, 21, 2117, 12365, 12366, 12369, 12372, 12373, 12375, 12376, 12422, 12423, 12424, 12426, 2]
 
-// Module 19577 (renderComponents)
+// Module 12364 (renderComponents)
 import Fragment from "Fragment" /* 21 */;
 import Server from "Server" /* 2117 */;
-import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 17183 */;
-import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 17186 */;
-import TextDisplayComponentDefault from "TextDisplayComponent" /* 17187 */;
-import ActionRowLayoutComponentDefault from "ActionRowLayoutComponent" /* 19578 */;
-import TextInputActionComponentDefault from "TextInputActionComponent" /* 19579 */;
-import LabelLayoutComponentDefault from "LabelLayoutComponent" /* 19580 */;
-import FileUploadActionComponentDefault from "FileUploadActionComponent" /* 19581 */;
-import RadioGroupActionComponentDefault from "RadioGroupActionComponent" /* 19583 */;
-import CheckboxGroupActionComponentDefault from "CheckboxGroupActionComponent" /* 19584 */;
-import CheckboxActionComponentDefault from "CheckboxActionComponent" /* 19585 */;
+import ActionRowLayoutComponentDefault from "ActionRowLayoutComponent" /* 12365 */;
+import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 12366 */;
+import TextInputActionComponentDefault from "TextInputActionComponent" /* 12369 */;
+import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 12372 */;
+import TextDisplayComponentDefault from "TextDisplayComponent" /* 12373 */;
+import LabelLayoutComponentDefault from "LabelLayoutComponent" /* 12375 */;
+import FileUploadActionComponentDefault from "FileUploadActionComponent" /* 12376 */;
+import RadioGroupActionComponentDefault from "RadioGroupActionComponent" /* 12422 */;
+import CheckboxGroupActionComponentDefault from "CheckboxGroupActionComponent" /* 12423 */;
+import CheckboxActionComponentDefault from "CheckboxActionComponent" /* 12424 */;
+import MenuActionItemComponentDefault from "MenuActionItemComponent" /* 12426 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,15 +28,15 @@ function renderComponent(component, arg1) {
   if (Server.ComponentType.ACTION_ROW === type) {
     ActionRowLayoutComponentDefault;
     const merged = Object.assign(component);
-    return <tmp60 key={arg1} renderComponents={renderComponents} />;
+    return <tmp66 key={arg1} renderComponents={renderComponents} />;
   } else if (Server.ComponentType.STRING_SELECT === type) {
     StringSelectActionComponentDefault;
     const merged1 = Object.assign(component);
-    return <tmp54 key={arg1} />;
+    return <tmp60 key={arg1} />;
   } else if (Server.ComponentType.TEXT_INPUT === type) {
     TextInputActionComponentDefault;
     const merged2 = Object.assign(component);
-    return <tmp48 key={arg1} />;
+    return <tmp54 key={arg1} />;
   } else {
     if (Server.ComponentType.USER_SELECT !== type) {
       if (Server.ComponentType.ROLE_SELECT !== type) {
@@ -44,26 +45,30 @@ function renderComponent(component, arg1) {
             if (Server.ComponentType.TEXT_DISPLAY === type) {
               TextDisplayComponentDefault;
               const merged3 = Object.assign(component);
-              return <tmp36 key={arg1} />;
+              return <tmp42 key={arg1} />;
             } else if (Server.ComponentType.LABEL === type) {
               LabelLayoutComponentDefault;
               const merged4 = Object.assign(component);
-              return <tmp29 key={arg1} renderComponent={renderComponent} />;
+              return <tmp35 key={arg1} renderComponent={renderComponent} />;
             } else if (Server.ComponentType.FILE_UPLOAD === type) {
               FileUploadActionComponentDefault;
               const merged5 = Object.assign(component);
-              return <tmp23 key={arg1} />;
+              return <tmp29 key={arg1} />;
             } else if (Server.ComponentType.RADIO_GROUP === type) {
               RadioGroupActionComponentDefault;
               const merged6 = Object.assign(component);
-              return <tmp17 key={arg1} />;
+              return <tmp23 key={arg1} />;
             } else if (Server.ComponentType.CHECKBOX_GROUP === type) {
               CheckboxGroupActionComponentDefault;
               const merged7 = Object.assign(component);
-              return <tmp11 key={arg1} />;
+              return <tmp17 key={arg1} />;
             } else if (Server.ComponentType.CHECKBOX === type) {
               CheckboxActionComponentDefault;
               const merged8 = Object.assign(component);
+              return <tmp11 key={arg1} />;
+            } else if (Server.ComponentType.MENU_ACTION_ITEM === type) {
+              MenuActionItemComponentDefault;
+              const merged9 = Object.assign(component);
               return <tmp5 key={arg1} />;
             }
           }
@@ -71,8 +76,8 @@ function renderComponent(component, arg1) {
       }
     }
     SearchableSelectActionComponentDefault;
-    const merged9 = Object.assign(component);
-    return <tmp42 key={arg1} />;
+    const merged10 = Object.assign(component);
+    return <tmp48 key={arg1} />;
   }
 }
 const jsx = Fragment.jsx;

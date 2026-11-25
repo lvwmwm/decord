@@ -1,17 +1,17 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9320
+// Function ID: 9321
 // Name: PremiumManagementUtils
-// Dependencies: [1071, 1082, 21, 3, 5921, 1112, 1378, 1625, 9120, 9222, 2]
+// Dependencies: [1071, 1082, 21, 3, 6016, 1112, 1378, 1625, 9219, 9321, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 9221 (PremiumManagementUtils)
+// Module 9320 (PremiumManagementUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import intl5 from "intl" /* 1112 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5921 */;
-import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 9120 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
+import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 9219 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -136,7 +136,7 @@ export function getExternalManagementMessage(subscription, arg1) {
                 text: string(tmp8 ? t.tqSSSA : t["olSp/D"]),
                 variant: "body-sm/semibold"
               };
-              const LinkButton = tmp13(9222).LinkButton;
+              const LinkButton = tmp13(9321).LinkButton;
               const intl3 = tmp13(1112).intl;
               string = intl3.string;
               t = tmp13(1112).t;

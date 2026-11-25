@@ -1,14 +1,14 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 11585
+// Function ID: 11586
 // Name: SimpleLoadingModalUI
-// Dependencies: [19, 17, 21, 4917, 6921, 2]
+// Dependencies: [19, 17, 21, 5012, 7016, 2]
 // Exports: default
 
-// Module 11486 (SimpleLoadingModalUI)
+// Module 11585 (SimpleLoadingModalUI)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c3;

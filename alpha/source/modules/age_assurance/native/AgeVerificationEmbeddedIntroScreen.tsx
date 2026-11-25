@@ -1,20 +1,20 @@
-// Module ID: 12337
-// Function ID: 12338
+// Module ID: 12501
+// Function ID: 12502
 // Name: AgeVerificationEmbeddedIntroScreen
-// Dependencies: [19, 1071, 21, 4917, 575, 7752, 12331, 12338, 7755, 7757, 5989, 7758, 5508, 6699, 12340, 1112, 3446, 7737, 2187, 2]
+// Dependencies: [19, 1071, 21, 5012, 575, 7851, 12497, 12502, 7854, 7856, 6084, 7857, 5603, 6794, 12504, 1112, 3498, 7836, 2187, 2]
 // Exports: default
 
-// Module 12337 (AgeVerificationEmbeddedIntroScreen)
+// Module 12501 (AgeVerificationEmbeddedIntroScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import _modDef3446 from "module_3446" /* 3446 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7737 */;
-import AgeVerificationGetStartedModal from "AgeVerificationGetStartedModal" /* 12331 */;
-import useAgeVerificationMethodsDefault from "useAgeVerificationMethods" /* 12338 */;
+import _modDef3498 from "module_3498" /* 3498 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7836 */;
+import AgeVerificationGetStartedModal from "AgeVerificationGetStartedModal" /* 12497 */;
+import useAgeVerificationMethodsDefault from "useAgeVerificationMethods" /* 12502 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -45,7 +45,7 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   ({ entryPoint, navigation } = arg0);
   ({ onClose, modalSessionId, classificationId } = arg0);
   const tmp = closure_7();
-  let obj = navigation(7752);
+  let obj = navigation(7851);
   const items = [navigation];
   const isSuspendedUser = obj.useIsSuspendedUser();
   const callback = react.useCallback(() => {
@@ -53,29 +53,29 @@ export default function AgeVerificationEmbeddedIntroScreen(arg0) {
   }, items);
   const ageVerificationMethods = useAgeVerificationMethodsDefault({ onClose, classificationId, onGoogleWalletSelect: callback }).ageVerificationMethods;
   const obj2 = { children: closure_6(ModalContent, obj3) };
-  const ModalScreen = navigation(7755).ModalScreen;
+  const ModalScreen = navigation(7854).ModalScreen;
   obj3 = { children: items4 };
-  ModalContent = navigation(7757).ModalContent;
+  ModalContent = navigation(7856).ModalContent;
   const obj4 = { align: "center", justify: "center", spacing: 24, children: items3 };
-  const Stack = navigation(5989).Stack;
+  const Stack = navigation(6084).Stack;
   const obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
-  const Stack2 = navigation(5989).Stack;
-  items1 = [closure_5(navigation(7758).ShieldSpotIllustration, { height: 100, width: 177 }), ];
+  const Stack2 = navigation(6084).Stack;
+  items1 = [closure_5(navigation(7857).ShieldSpotIllustration, { height: 100, width: 177 }), ];
   const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
-  const Stack3 = navigation(5989).Stack;
+  const Stack3 = navigation(6084).Stack;
   const obj7 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: obj8.getAgeVerificationGetStartedTitle(entryPoint) };
-  const Text = navigation(5508).Text;
-  obj8 = navigation(6699);
+  const Text = navigation(5603).Text;
+  obj8 = navigation(6794);
   items2 = [closure_5(Text, obj7), ];
   const obj9 = { variant: "body-md/medium", color: "text-strong", style: tmp.header, children: obj10.getAgeVerificationGetStartedSubtitle(entryPoint, undefined, isSuspendedUser) };
-  const Text2 = navigation(5508).Text;
-  obj10 = navigation(6699);
+  const Text2 = navigation(5603).Text;
+  obj10 = navigation(6794);
   items2[1] = closure_5(Text2, obj9);
   items1[1] = closure_6(Stack3, obj6);
-  items3 = [closure_6(Stack2, obj5), closure_5(navigation(12340).AgeVerificationMethodsContainer, { ageVerificationMethods, modalSessionId })];
+  items3 = [closure_6(Stack2, obj5), closure_5(navigation(12504).AgeVerificationMethodsContainer, { ageVerificationMethods, modalSessionId })];
   items4 = [closure_6(Stack, obj4), ];
-  const obj11 = { variant: "body-xs/medium", color: "text-muted", style: tmp.helpLink, children: intl.format(_modDef3446.lG69e1, obj12) };
-  const Text3 = navigation(5508).Text;
+  const obj11 = { variant: "body-xs/medium", color: "text-muted", style: tmp.helpLink, children: intl.format(_modDef3498.lG69e1, obj12) };
+  const Text3 = navigation(5603).Text;
   intl = navigation(1112).intl;
   obj12 = {
     handleOnHelpUrlHook() {

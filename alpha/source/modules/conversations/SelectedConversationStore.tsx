@@ -1,13 +1,13 @@
-// Module ID: 8900
-// Function ID: 8901
+// Module ID: 8999
+// Function ID: 9000
 // Name: SelectedConversationStore
-// Dependencies: [8161, 8164, 504, 572, 2]
+// Dependencies: [8260, 8263, 504, 572, 2]
 
-// Module 8900 (SelectedConversationStore)
+// Module 8999 (SelectedConversationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8161 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8164 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8260 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8263 */;
 import size from "module_2" /* 2 */;
 
 let _null;
@@ -15,6 +15,7 @@ let _null;
 const React2 = null;
 let closure_3 = 0;
 let closure_4 = 0;
+let closure_5 = null;
 const Store = get_initializedDefault.Store;
 class SelectedConversationStore extends Store {
   initialize() {
@@ -112,13 +113,16 @@ class SelectedConversationStore extends Store {
       }
     }
   }
-  consumeFocusRequest() {
-    let flag = closure_3 !== closure_4;
-    if (flag) {
-      closure_4 = closure_3;
-      flag = true;
+  getFocusRequest() {
+    let tmp = null;
+    if (closure_3 !== closure_4) {
+      tmp = closure_5;
     }
-    return flag;
+    return tmp;
+  }
+  consumeFocusRequest() {
+    closure_4 = closure_3;
+    return this.getFocusRequest();
   }
 }
 const prototype = SelectedConversationStore.prototype;
@@ -138,6 +142,7 @@ const obj = {
     if (tmp2) {
       if (null == conversationId || _null.conversationId === conversationId) {
         _null = null;
+        closure_4 = closure_3;
       }
       tmp2 = tmp3;
     }
@@ -147,6 +152,7 @@ const obj = {
     if (null != _null) {
       if (_null.channelId !== tmp) {
         _null = null;
+        closure_4 = closure_3;
       }
     }
     return false;
@@ -161,13 +167,20 @@ const obj = {
       return false;
     } else {
       _null = null;
+      closure_4 = closure_3;
     }
   },
-  CONVERSATION_FOCUS_REQUEST: function handleConversationFocusRequest() {
+  CONVERSATION_FOCUS_REQUEST: function handleConversationFocusRequest(messageId) {
+    messageId = messageId.messageId;
     closure_3 = closure_3 + 1;
+    if (messageId == null) {
+      messageId = null;
+    }
+    closure_5 = { messageId };
   },
   LOGOUT: function handleLogout() {
     let c2 = null;
+    closure_4 = closure_3;
   }
 };
 const selectedConversationStore = new SelectedConversationStore(DispatcherDefault, obj);

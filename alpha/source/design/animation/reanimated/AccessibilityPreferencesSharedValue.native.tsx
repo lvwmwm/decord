@@ -1,9 +1,9 @@
-// Module ID: 5129
-// Function ID: 5130
+// Module ID: 5224
+// Function ID: 5225
 // Name: reanimated/AccessibilityPreferencesSharedValue
 // Dependencies: [1653, 2]
 
-// Module 5129 (reanimated/AccessibilityPreferencesSharedValue)
+// Module 5224 (reanimated/AccessibilityPreferencesSharedValue)
 import module_1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 

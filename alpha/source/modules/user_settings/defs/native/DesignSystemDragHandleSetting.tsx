@@ -1,12 +1,12 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 17416
+// Function ID: 17417
 // Name: DesignSystemDragHandleSetting
-// Dependencies: [9414, 1071, 11815, 17304, 2]
+// Dependencies: [9513, 1071, 11914, 17417, 2]
 
-// Module 17303 (DesignSystemDragHandleSetting)
+// Module 17416 (DesignSystemDragHandleSetting)
 import Constants from "Constants" /* 1071 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

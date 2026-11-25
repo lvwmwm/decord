@@ -1,12 +1,12 @@
-// Module ID: 19289
-// Function ID: 19290
+// Module ID: 19401
+// Function ID: 19402
 // Name: voicePanelLayoutTransition
-// Dependencies: [11635, 5518, 2]
+// Dependencies: [11734, 5613, 2]
 // Exports: default
 
-// Module 19289 (voicePanelLayoutTransition)
-import spring_spring from "spring/spring" /* 5518 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11635 */;
+// Module 19401 (voicePanelLayoutTransition)
+import spring_spring from "spring/spring" /* 5613 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp2;

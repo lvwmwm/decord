@@ -1,14 +1,14 @@
-// Module ID: 18984
-// Function ID: 18985
+// Module ID: 19096
+// Function ID: 19097
 // Name: PuzzlePieceIcon
-// Dependencies: [19, 21, 575, 5603, 18985, 2]
+// Dependencies: [19, 21, 575, 5698, 19097, 2]
 // Exports: PuzzlePieceIcon
 
-// Module 18984 (PuzzlePieceIcon)
+// Module 19096 (PuzzlePieceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 18985 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 19097 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

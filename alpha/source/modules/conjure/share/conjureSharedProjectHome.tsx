@@ -1,12 +1,12 @@
-// Module ID: 11851
-// Function ID: 11852
+// Module ID: 11950
+// Function ID: 11951
 // Name: conjureSharedProjectHome
-// Dependencies: [4788, 6809, 2]
+// Dependencies: [4883, 6904, 2]
 // Exports: canLaunchSharedProject, getSharedProjectHomeGuildId
 
-// Module 11851 (conjureSharedProjectHome)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6809 */;
-import GuildStore from "GuildStore" /* 4788 */;
+// Module 11950 (conjureSharedProjectHome)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6904 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharedProjectHome.tsx");

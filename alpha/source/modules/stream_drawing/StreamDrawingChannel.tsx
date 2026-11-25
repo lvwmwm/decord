@@ -1,13 +1,13 @@
-// Module ID: 14972
-// Function ID: 14973
+// Module ID: 15094
+// Function ID: 15095
 // Name: StreamDrawingChannel
-// Dependencies: [4766, 4788, 6690, 504, 2]
+// Dependencies: [4861, 4883, 6785, 504, 2]
 // Exports: isStreamDrawingChannelSupported, supportsStreamDrawing, useIsStreamDrawingChannelSupported
 
-// Module 14972 (StreamDrawingChannel)
-import StreamKeyUtils from "StreamKeyUtils" /* 6690 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
+// Module 15094 (StreamDrawingChannel)
+import StreamKeyUtils from "StreamKeyUtils" /* 6785 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stream_drawing/StreamDrawingChannel.tsx");

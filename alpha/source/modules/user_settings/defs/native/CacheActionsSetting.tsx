@@ -1,25 +1,25 @@
-// Module ID: 17022
-// Function ID: 17023
+// Module ID: 17141
+// Function ID: 17142
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 5723, 21, 5131, 5599, 5621, 1112, 504, 4742, 17023, 7420, 7381, 6014, 6018, 16991, 17027, 17024, 10517, 6921, 17028, 5628, 11815, 2]
+// Dependencies: [5, 32, 19, 5818, 21, 5226, 5694, 5716, 1112, 504, 4837, 17142, 7515, 7476, 6109, 6113, 12377, 17146, 17143, 10616, 7016, 17147, 5723, 11914, 2]
 
-// Module 17022 (CacheActionsSetting)
+// Module 17141 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5621 */;
-import BrowserManager from "BrowserManager" /* 5628 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 17023 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 17024 */;
-import CacheActionCreators from "CacheActionCreators" /* 17027 */;
-import FileWarningIcon from "FileWarningIcon" /* 17028 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5716 */;
+import BrowserManager from "BrowserManager" /* 5723 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 17142 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 17143 */;
+import CacheActionCreators from "CacheActionCreators" /* 17146 */;
+import FileWarningIcon from "FileWarningIcon" /* 17147 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -29,14 +29,14 @@ let metroImportDefault;
 let tmp;
 let tmp10;
 const intl6 = tmp(1112);
-const TableRowGroup2 = tmp(6014);
-const TableRow4 = tmp(6018);
-const ActivityIndicator_ActivityIndicator = tmp(6921);
-const BottomSheetTitleHeader2 = tmp(7381);
-const ActionSheet2 = tmp(7420);
-const FileIcon = tmp(10517);
-const FileUpIcon = tmp(16991);
-const CacheActionsDiskUsageSectionDefault = tmp10(17023);
+const TableRowGroup2 = tmp(6109);
+const TableRow4 = tmp(6113);
+const ActivityIndicator_ActivityIndicator = tmp(7016);
+const BottomSheetTitleHeader2 = tmp(7476);
+const ActionSheet2 = tmp(7515);
+const FileIcon = tmp(10616);
+const FileUpIcon = tmp(12377);
+const CacheActionsDiskUsageSectionDefault = tmp10(17142);
 function handleCacheActionPress(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };
@@ -92,7 +92,7 @@ function CacheActionsActionSheet() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -124,7 +124,7 @@ function CacheActionsActionSheet() {
             const intl = closure_128_0(closure_128_2[8]).intl;
             closure_128_10(intl.string(closure_128_0(closure_128_2[8]).t.GgUIfl));
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c2 = 3;
@@ -170,7 +170,7 @@ function CacheActionsActionSheet() {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ function CacheActionsActionSheet() {
             const intl = closure_128_0(closure_128_2[8]).intl;
             closure_128_10(intl.string(closure_128_0(closure_128_2[8]).t["23xR5w"]));
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           c2 = 3;

@@ -1,8 +1,8 @@
-// Module ID: 11443
-// Function ID: 11444
+// Module ID: 11542
+// Function ID: 11543
 // Dependencies: [2]
 
-// Module 11443
+// Module 11542
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/gifting/seasonal/gift_box.png.js");

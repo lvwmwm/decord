@@ -1,16 +1,16 @@
-// Module ID: 19349
-// Function ID: 19350
+// Module ID: 19461
+// Function ID: 19462
 // Name: useVoiceChannelGames
-// Dependencies: [19, 502, 5888, 7528, 1386, 504, 8576, 8577, 7050, 2]
+// Dependencies: [19, 502, 5983, 7623, 1386, 504, 8675, 8676, 7145, 2]
 // Exports: default
 
-// Module 19349 (useVoiceChannelGames)
-import useGameProfileObscured from "useGameProfileObscured" /* 7050 */;
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8576 */;
+// Module 19461 (useVoiceChannelGames)
+import useGameProfileObscured from "useGameProfileObscured" /* 7145 */;
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8675 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5888 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7528 */;
+import PresenceStore from "PresenceStore" /* 5983 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7623 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

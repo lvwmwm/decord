@@ -1,34 +1,34 @@
-// Module ID: 18371
-// Function ID: 18372
+// Module ID: 18483
+// Function ID: 18484
 // Name: conjurePublishSchedule
-// Dependencies: [1112, 4192, 2]
+// Dependencies: [1112, 4244, 2]
 // Exports: formatPublishScheduleTime, publishScheduleDetails
 
-// Module 18371 (conjurePublishSchedule)
+// Module 18483 (conjurePublishSchedule)
 import intl7 from "intl" /* 1112 */;
-import _modDef4192 from "module_4192" /* 4192 */;
+import _modDef4244 from "module_4244" /* 4244 */;
 import size from "module_2" /* 2 */;
 
 function publishScheduleSummary(trigger) {
   if ("cron" === trigger.type) {
     const intl4 = intl7.intl;
     const obj2 = { expression: trigger.expression };
-    return intl4.formatToPlainString(_modDef4192.aewci7, obj2);
+    return intl4.formatToPlainString(_modDef4244.aewci7, obj2);
   } else {
     let formatToPlainStringResult;
     const result = trigger.everyMs / 60000;
     if (result % 1440 === 0) {
       const intl3 = intl7.intl;
       const obj3 = { count: result / 1440 };
-      formatToPlainStringResult = intl3.formatToPlainString(_modDef4192["x/G8tD"], obj3);
+      formatToPlainStringResult = intl3.formatToPlainString(_modDef4244["x/G8tD"], obj3);
     } else if (result % 60 === 0) {
       const intl2 = intl7.intl;
       const obj4 = { count: result / 60 };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef4192["q4AgE/"], obj4);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef4244["q4AgE/"], obj4);
     } else {
       const intl = intl7.intl;
       const obj = { count: result };
-      formatToPlainStringResult = intl.formatToPlainString(_modDef4192["+y7hwg"], obj);
+      formatToPlainStringResult = intl.formatToPlainString(_modDef4244["+y7hwg"], obj);
     }
     return formatToPlainStringResult;
   }
@@ -54,7 +54,7 @@ export function publishScheduleDetails(saved) {
     const self = this;
     const self2 = this;
     const obj = { interval: tmp, time: date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }) };
-    const prop = _modDef4192["qCM+Fa"];
+    const prop = _modDef4244["qCM+Fa"];
     date = new Date(saved.trigger.startsAt);
     formatToPlainStringResult = formatToPlainString(prop, obj);
   }
@@ -63,7 +63,7 @@ export function publishScheduleDetails(saved) {
   const intl2 = intl7.intl;
   const formatToPlainString2 = intl2.formatToPlainString;
   const obj2 = { time: date1.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }) };
-  const prop1 = _modDef4192["T/dCkl"];
+  const prop1 = _modDef4244["T/dCkl"];
   date1 = new Date(saved.next_run_at);
   push(formatToPlainString2(prop1, obj2));
   const last_run = saved.last_run;
@@ -78,20 +78,20 @@ export function publishScheduleDetails(saved) {
     if ("succeeded" === last_run.status) {
       const intl6 = tmp11(1112).intl;
       const obj3 = { time: toLocaleStringResult };
-      formatToPlainStringResult1 = intl6.formatToPlainString(tmp13(4192).yMA4zs, obj3);
+      formatToPlainStringResult1 = intl6.formatToPlainString(tmp13(4244).yMA4zs, obj3);
     } else if ("skipped" === last_run.status) {
       const intl5 = tmp11(1112).intl;
       const obj4 = { time: toLocaleStringResult };
-      formatToPlainStringResult1 = intl5.formatToPlainString(tmp13(4192)["0ikIhz"], obj4);
+      formatToPlainStringResult1 = intl5.formatToPlainString(tmp13(4244)["0ikIhz"], obj4);
     } else {
       const intl3 = tmp11(1112).intl;
       const formatToPlainString3 = intl3.formatToPlainString;
       const obj5 = { time: toLocaleStringResult, error };
       error = last_run.error;
-      const HMNRj4 = tmp13(4192).HMNRj4;
+      const HMNRj4 = tmp13(4244).HMNRj4;
       if (error == null) {
         const intl4 = tmp11(1112).intl;
-        error = intl4.string(tmp13(4192).dRxtva);
+        error = intl4.string(tmp13(4244).dRxtva);
       }
       formatToPlainStringResult1 = formatToPlainString3(HMNRj4, obj5);
     }

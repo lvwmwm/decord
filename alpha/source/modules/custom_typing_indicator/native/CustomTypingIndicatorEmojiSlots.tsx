@@ -1,45 +1,45 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16924
+// Function ID: 16925
 // Name: CustomTypingIndicatorEmojiSlots
-// Dependencies: [32, 19, 1389, 21, 16804, 16806, 16808, 16810, 16812, 16814, 16816, 16818, 16820, 16822, 16824, 16826, 16828, 16830, 16832, 16834, 16836, 16838, 16840, 16842, 16844, 16846, 4917, 12767, 7362, 1412, 1653, 5518, 5519, 575, 9396, 1112, 4194, 1408, 6019, 12, 5989, 2]
+// Dependencies: [32, 19, 1389, 21, 16925, 16927, 16929, 16931, 16933, 16935, 16937, 16939, 16941, 16943, 16945, 16947, 16949, 16951, 16953, 16955, 16957, 16959, 16961, 16963, 16965, 16967, 5012, 12928, 7457, 1412, 1653, 5613, 5614, 575, 9495, 1112, 4246, 1408, 6114, 12, 6084, 2]
 // Exports: default
 
-// Module 16803 (CustomTypingIndicatorEmojiSlots)
+// Module 16924 (CustomTypingIndicatorEmojiSlots)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import spring_spring from "spring/spring" /* 5518 */;
-import springPresets from "springPresets" /* 5519 */;
-import EmojiDefault from "Emoji" /* 7362 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9396 */;
-import useCanPlayAnimatedEmojiDefault from "useCanPlayAnimatedEmoji" /* 12767 */;
-import EmojiAngryFaceWithHornsIcon from "EmojiAngryFaceWithHornsIcon" /* 16804 */;
-import EmojiColdFaceIcon from "EmojiColdFaceIcon" /* 16806 */;
-import EmojiCowboyHatFaceIcon from "EmojiCowboyHatFaceIcon" /* 16808 */;
-import EmojiCryingFaceIcon from "EmojiCryingFaceIcon" /* 16810 */;
-import EmojiDisguisedFaceIcon from "EmojiDisguisedFaceIcon" /* 16812 */;
-import EmojiFaceVomitingIcon from "EmojiFaceVomitingIcon" /* 16814 */;
-import EmojiFaceWithMonocleIcon from "EmojiFaceWithMonocleIcon" /* 16816 */;
-import EmojiFaceWithSpiralEyesIcon from "EmojiFaceWithSpiralEyesIcon" /* 16818 */;
-import EmojiMeltingFaceIcon from "EmojiMeltingFaceIcon" /* 16820 */;
-import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 16822 */;
-import EmojiNerdFaceIcon from "EmojiNerdFaceIcon" /* 16824 */;
-import EmojiPartyingFaceIcon from "EmojiPartyingFaceIcon" /* 16826 */;
-import EmojiSalutingFaceIcon from "EmojiSalutingFaceIcon" /* 16828 */;
-import EmojiSkullIcon from "EmojiSkullIcon" /* 16830 */;
-import EmojiSmilingFaceWithHornsIcon from "EmojiSmilingFaceWithHornsIcon" /* 16832 */;
-import EmojiSmilingFaceWithSunglassesIcon from "EmojiSmilingFaceWithSunglassesIcon" /* 16834 */;
-import EmojiSquintingFaceWithTongueIcon from "EmojiSquintingFaceWithTongueIcon" /* 16836 */;
-import EmojiUpsideDownFaceIcon from "EmojiUpsideDownFaceIcon" /* 16838 */;
-import EmojiWoozyFaceIcon from "EmojiWoozyFaceIcon" /* 16840 */;
-import EmojiZanyFaceIcon from "EmojiZanyFaceIcon" /* 16842 */;
-import EmojiRollingOnTheFloorLaughingIcon from "EmojiRollingOnTheFloorLaughingIcon" /* 16844 */;
-import EmojiSmilingFaceWithHeartsIcon from "EmojiSmilingFaceWithHeartsIcon" /* 16846 */;
+import spring_spring from "spring/spring" /* 5613 */;
+import springPresets from "springPresets" /* 5614 */;
+import EmojiDefault from "Emoji" /* 7457 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9495 */;
+import useCanPlayAnimatedEmojiDefault from "useCanPlayAnimatedEmoji" /* 12928 */;
+import EmojiAngryFaceWithHornsIcon from "EmojiAngryFaceWithHornsIcon" /* 16925 */;
+import EmojiColdFaceIcon from "EmojiColdFaceIcon" /* 16927 */;
+import EmojiCowboyHatFaceIcon from "EmojiCowboyHatFaceIcon" /* 16929 */;
+import EmojiCryingFaceIcon from "EmojiCryingFaceIcon" /* 16931 */;
+import EmojiDisguisedFaceIcon from "EmojiDisguisedFaceIcon" /* 16933 */;
+import EmojiFaceVomitingIcon from "EmojiFaceVomitingIcon" /* 16935 */;
+import EmojiFaceWithMonocleIcon from "EmojiFaceWithMonocleIcon" /* 16937 */;
+import EmojiFaceWithSpiralEyesIcon from "EmojiFaceWithSpiralEyesIcon" /* 16939 */;
+import EmojiMeltingFaceIcon from "EmojiMeltingFaceIcon" /* 16941 */;
+import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 16943 */;
+import EmojiNerdFaceIcon from "EmojiNerdFaceIcon" /* 16945 */;
+import EmojiPartyingFaceIcon from "EmojiPartyingFaceIcon" /* 16947 */;
+import EmojiSalutingFaceIcon from "EmojiSalutingFaceIcon" /* 16949 */;
+import EmojiSkullIcon from "EmojiSkullIcon" /* 16951 */;
+import EmojiSmilingFaceWithHornsIcon from "EmojiSmilingFaceWithHornsIcon" /* 16953 */;
+import EmojiSmilingFaceWithSunglassesIcon from "EmojiSmilingFaceWithSunglassesIcon" /* 16955 */;
+import EmojiSquintingFaceWithTongueIcon from "EmojiSquintingFaceWithTongueIcon" /* 16957 */;
+import EmojiUpsideDownFaceIcon from "EmojiUpsideDownFaceIcon" /* 16959 */;
+import EmojiWoozyFaceIcon from "EmojiWoozyFaceIcon" /* 16961 */;
+import EmojiZanyFaceIcon from "EmojiZanyFaceIcon" /* 16963 */;
+import EmojiRollingOnTheFloorLaughingIcon from "EmojiRollingOnTheFloorLaughingIcon" /* 16965 */;
+import EmojiSmilingFaceWithHeartsIcon from "EmojiSmilingFaceWithHeartsIcon" /* 16967 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;
@@ -212,7 +212,7 @@ export default function CustomTypingIndicatorEmojiSlots(emojis) {
   let obj = emojis(1408);
   _slicedToArray = obj.getCustomTypingIndicatorEmojisKey(emojis);
   const obj3 = { length: emojis(1408).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT };
-  const Stack = emojis(5989).Stack;
+  const Stack = emojis(6084).Stack;
   return <Stack direction="horizontal" spacing={8}>{from(obj3, (arg0, index) => {
     let tmp3;
     const obj = { index, emoji: tmp3, emojisKey, placeholderIcon: closure_2[index], onChange };

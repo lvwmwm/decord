@@ -1,11 +1,11 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 13479
+// Function ID: 13480
 // Name: useGuildPowerupOnDeactivate
-// Dependencies: [19, 13350, 2]
+// Dependencies: [19, 13473, 2]
 // Exports: default
 
-// Module 13356 (useGuildPowerupOnDeactivate)
-import useGuildPowerupOnToggleDefault from "useGuildPowerupOnToggle" /* 13350 */;
+// Module 13479 (useGuildPowerupOnDeactivate)
+import useGuildPowerupOnToggleDefault from "useGuildPowerupOnToggle" /* 13473 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

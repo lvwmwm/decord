@@ -1,15 +1,15 @@
-// Module ID: 18192
-// Function ID: 18193
+// Module ID: 18304
+// Function ID: 18305
 // Name: ICYMIBottomLoading
-// Dependencies: [19, 17, 21, 4917, 575, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 2]
 // Exports: ICYMIBottomLoading
 
-// Module 18192 (ICYMIBottomLoading)
+// Module 18304 (ICYMIBottomLoading)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c2;

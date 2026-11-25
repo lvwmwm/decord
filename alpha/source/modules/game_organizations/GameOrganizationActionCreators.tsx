@@ -1,10 +1,10 @@
-// Module ID: 15200
-// Function ID: 15201
+// Module ID: 15322
+// Function ID: 15323
 // Name: GameOrganizationActionCreators
-// Dependencies: [5, 2142, 1071, 572, 1284, 11771, 5666, 2]
+// Dependencies: [5, 2142, 1071, 572, 1284, 11870, 5761, 2]
 // Exports: fetchGameOrganization, fetchLinkableGameOrganizations
 
-// Module 15200 (GameOrganizationActionCreators)
+// Module 15322 (GameOrganizationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
@@ -29,7 +29,7 @@ let obj = function _fetchGameOrganization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -109,7 +109,7 @@ let obj = function _fetchGameOrganization() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           closure_4 = tmp29;
           if (0 === c5) {
@@ -137,7 +137,7 @@ obj = function _fetchLinkableGameOrganizations() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

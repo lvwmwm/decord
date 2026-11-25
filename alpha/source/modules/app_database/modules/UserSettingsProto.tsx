@@ -1,9 +1,9 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8221
+// Function ID: 8222
 // Name: UserSettingsProto
-// Dependencies: [5, 1230, 502, 3, 4795, 4812, 12, 2]
+// Dependencies: [5, 1230, 502, 3, 4890, 4907, 12, 2]
 
-// Module 8122 (UserSettingsProto)
+// Module 8221 (UserSettingsProto)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
@@ -79,7 +79,7 @@ class UserSettingsProto {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {

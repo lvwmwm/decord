@@ -1,23 +1,23 @@
-// Module ID: 16943
-// Function ID: 16944
+// Module ID: 17064
+// Function ID: 17065
 // Name: AndroidMessageNotificationsSetting
-// Dependencies: [16924, 9414, 1378, 11815, 1112, 15681, 3154, 16930, 2]
+// Dependencies: [17045, 9513, 1378, 11914, 1112, 15802, 3206, 17051, 2]
 // Exports: useAndroidMessageNotificationsSettingValue, useHasAndroidMessageNotificationsSetting
 
-// Module 16943 (AndroidMessageNotificationsSetting)
+// Module 17064 (AndroidMessageNotificationsSetting)
 import intl2 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import _modDef3154 from "module_3154" /* 3154 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16924 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11815 */;
+import _modDef3206 from "module_3206" /* 3206 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17045 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let setAndroidMessageNotificationsEnabled;
 let tmp2;
-const notifications_NotificationSettingsUtils = tmp2(15681);
+const notifications_NotificationSettingsUtils = tmp2(15802);
 function useAndroidMessageNotificationsSettingValue() {
   let flag = _false();
   if (flag == null) {
@@ -57,11 +57,11 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3154.odJXYJ);
+    return intl.string(_modDef3206.odJXYJ);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef3154["+jwUmI"]);
+    return intl.string(_modDef3206.Pe0mBc);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {

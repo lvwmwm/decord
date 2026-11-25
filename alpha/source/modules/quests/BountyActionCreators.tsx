@@ -1,24 +1,24 @@
-// Module ID: 13659
-// Function ID: 13660
+// Module ID: 13782
+// Function ID: 13783
 // Name: BountyActionCreators
-// Dependencies: [5, 8221, 5855, 8223, 8224, 6745, 1071, 1088, 3, 572, 6752, 9760, 8222, 5667, 6669, 8244, 1284, 6748, 9758, 9759, 8220, 2]
+// Dependencies: [5, 8320, 5950, 8322, 8323, 6840, 1071, 1088, 3, 572, 6847, 9859, 8321, 5762, 6764, 8343, 1284, 6843, 9857, 9858, 8319, 2]
 // Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchQuestBarCreativePreview, fetchQuestHomeBounties, resetCreativePreviewDeliveryState, resetPreviewDeliveryStateLookback, setBountyVideoProgress
 
-// Module 13659 (BountyActionCreators)
+// Module 13782 (BountyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6669 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import QuestDataUtils from "QuestDataUtils" /* 8220 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 8244 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 6764 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
+import QuestDataUtils from "QuestDataUtils" /* 8319 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 8343 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8221 */;
-import NetworkStore from "NetworkStore" /* 5855 */;
-import BountyStore from "BountyStore" /* 8223 */;
-import QuestStore from "QuestStore" /* 8224 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8320 */;
+import NetworkStore from "NetworkStore" /* 5950 */;
+import BountyStore from "BountyStore" /* 8322 */;
+import QuestStore from "QuestStore" /* 8323 */;
 import size from "module_2" /* 2 */;
 
 let bounties, closure_6, creative, creative_type, error, fetchingAdToDeliverByPlacement, map, uuid2;
@@ -43,7 +43,7 @@ let obj = function _fetchBountiesAndDispatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -120,7 +120,7 @@ let obj = function _fetchBountiesAndDispatch() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           bounties = tmp18;
@@ -150,7 +150,7 @@ obj = function _fetchQuestHomeBounties() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -200,7 +200,7 @@ obj = function _fetchQuestHomeBounties() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp8) {
         c1 = 3;
         throw tmp8;
@@ -224,7 +224,7 @@ obj = function _fetchBountyPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -277,7 +277,7 @@ obj = function _fetchBountyPreview() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -317,7 +317,7 @@ obj = function _fetchQuestBarCreativePreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -601,7 +601,7 @@ obj = function _claimBountyReward() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let adMetadataSealed;
@@ -696,7 +696,7 @@ obj = function _claimBountyReward() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp40) {
           adMetadataSealed = tmp40;
           if (0 === c5) {
@@ -730,7 +730,7 @@ obj = function _dismissAdContent() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -813,7 +813,7 @@ obj = function _dismissAdContent() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp40) {
         closure_4 = tmp40;
         if (0 === c5) {
@@ -842,7 +842,7 @@ obj = function _resetCreativePreviewDeliveryState() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -882,7 +882,7 @@ obj = function _resetCreativePreviewDeliveryState() {
             obj = closure_131_1(closure_131_2[9]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c5 = 3;
@@ -908,7 +908,7 @@ obj = function _resetPreviewDeliveryStateLookback() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -940,7 +940,7 @@ obj = function _resetPreviewDeliveryStateLookback() {
             obj = closure_129_1(closure_129_2[9]);
             obj.dispatch({ type: "ADS_PREVIEW_DELIVERY_STATE_LOOKBACK_RESET" });
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           c3 = 3;

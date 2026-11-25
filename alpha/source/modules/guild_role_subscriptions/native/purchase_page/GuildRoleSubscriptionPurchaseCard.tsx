@@ -1,26 +1,26 @@
-// Module ID: 18234
-// Function ID: 18235
+// Module ID: 18346
+// Function ID: 18347
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4917, 575, 1628, 16664, 18229, 5145, 5508, 1186, 18235, 5149, 1112, 16674, 2]
+// Dependencies: [32, 19, 17, 21, 5012, 575, 1628, 16785, 18341, 5240, 5603, 1186, 18347, 5244, 1112, 16795, 2]
 // Exports: default
 
-// Module 18234 (GuildRoleSubscriptionPurchaseCard)
+// Module 18346 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5145 */;
-import BottomSheetModal from "BottomSheetModal" /* 5149 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16664 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16674 */;
-import Elements from "Elements" /* 18229 */;
-import SubscribeButtonDefault from "SubscribeButton" /* 18235 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5240 */;
+import BottomSheetModal from "BottomSheetModal" /* 5244 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16785 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16795 */;
+import Elements from "Elements" /* 18341 */;
+import SubscribeButtonDefault from "SubscribeButton" /* 18347 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

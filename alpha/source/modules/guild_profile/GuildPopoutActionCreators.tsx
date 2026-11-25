@@ -1,10 +1,10 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15336
+// Function ID: 15337
 // Name: GuildPopoutActionCreators
 // Dependencies: [5, 1071, 572, 1284, 2]
 // Exports: fetchGuildForPopout
 
-// Module 15214 (GuildPopoutActionCreators)
+// Module 15336 (GuildPopoutActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
@@ -28,7 +28,7 @@ let obj = function _fetchGuildForPopout() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _fetchGuildForPopout() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           closure_3 = tmp19;

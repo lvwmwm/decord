@@ -229,7 +229,7 @@ class FeedbackWidget {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -433,7 +433,7 @@ class FeedbackWidget {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp72) {
             c5 = 3;
             throw tmp72;
@@ -650,7 +650,7 @@ let items = [
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -666,7 +666,7 @@ let items = [
                   const obj = c0(closure_1_2[7]);
                   obj.feedbackAlertDialog(props3.errorTitle, props3.captureScreenshotError);
                   c0 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp7) {
                 c0 = 3;

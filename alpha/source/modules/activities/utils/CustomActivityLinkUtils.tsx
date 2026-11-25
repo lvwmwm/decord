@@ -1,14 +1,14 @@
-// Module ID: 14319
-// Function ID: 14320
+// Module ID: 14442
+// Function ID: 14443
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 14320, 1071, 14322, 1284, 572, 2]
+// Dependencies: [5, 14443, 1071, 14445, 1284, 572, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 14319 (CustomActivityLinkUtils)
+// Module 14442 (CustomActivityLinkUtils)
 import Constants from "Constants" /* 1071 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14322 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14445 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14320 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14443 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -30,7 +30,7 @@ let obj = function _fetchCustomActivityLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ obj = function _getCustomActivityLinkParams() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "Array" }, done: true };
+            return { value: { customId: "dispatch" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "Array" };
+              obj = { customId: "dispatch" };
             } else {
               obj = { customId: custom_id.custom_id };
             }

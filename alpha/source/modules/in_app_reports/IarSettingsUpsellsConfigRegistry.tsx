@@ -1,15 +1,15 @@
-// Module ID: 8062
-// Function ID: 8063
+// Module ID: 8161
+// Function ID: 8162
 // Name: IarSettingsUpsellsConfigRegistry
-// Dependencies: [19, 8051, 8063, 8064, 8067, 1254, 2]
+// Dependencies: [19, 8150, 8162, 8163, 8166, 1254, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 8062 (IarSettingsUpsellsConfigRegistry)
+// Module 8161 (IarSettingsUpsellsConfigRegistry)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import MenuTypes from "MenuTypes" /* 8051 */;
-import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 8063 */;
-import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 8064 */;
-import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 8067 */;
+import MenuTypes from "MenuTypes" /* 8150 */;
+import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 8162 */;
+import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 8163 */;
+import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 8166 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

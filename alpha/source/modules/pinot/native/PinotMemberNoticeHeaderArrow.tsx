@@ -1,18 +1,18 @@
-// Module ID: 11751
-// Function ID: 11752
+// Module ID: 11850
+// Function ID: 11851
 // Name: PinotMemberNoticeHeaderArrow
-// Dependencies: [32, 19, 17, 4766, 21, 11750, 4917, 575, 5481, 504, 11752, 11731, 11740, 7813, 2]
+// Dependencies: [32, 19, 17, 4861, 21, 11849, 5012, 575, 5576, 504, 11851, 11830, 11839, 7912, 2]
 // Exports: PinotMemberNoticeHeaderArrow
 
-// Module 11751 (PinotMemberNoticeHeaderArrow)
+// Module 11850 (PinotMemberNoticeHeaderArrow)
 import nativeDefault from "native" /* 575 */;
-import PinotMemberNoticeCaret from "PinotMemberNoticeCaret" /* 11750 */;
+import PinotMemberNoticeCaret from "PinotMemberNoticeCaret" /* 11849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

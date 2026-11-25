@@ -1,18 +1,18 @@
-// Module ID: 9295
-// Function ID: 9296
+// Module ID: 9394
+// Function ID: 9395
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1386, 9296, 1071, 1081, 6250, 9297, 9298, 7968, 2]
+// Dependencies: [19, 1386, 9395, 1071, 1081, 6345, 9396, 9397, 8067, 2]
 // Exports: default
 
-// Module 9295 (useOpenProfileSettings)
+// Module 9394 (useOpenProfileSettings)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
-import openUserSettings from "openUserSettings" /* 7968 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9298 */;
+import openUserSettings from "openUserSettings" /* 8067 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9397 */;
 import UserStore from "UserStore" /* 1386 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9296 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6250 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9395 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6345 */;
 import size from "module_2" /* 2 */;
 
 react.useCallback;
@@ -33,7 +33,7 @@ export default function useOpenProfileSettings() {
   const items = [guild, scrollPosition, initialTab, analyticsLocations, obj2.useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
   return initialTab(() => {
     let USER_PROFILE;
-    let str;
+    let obj4;
     if (null != guild) {
       const obj = GuildIdentityActionCreators;
       const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
@@ -44,14 +44,10 @@ export default function useOpenProfileSettings() {
     } else {
       USER_PROFILE = constants.USER_PROFILE;
     }
-    const obj2 = { subsection: USER_PROFILE, scrollPosition, editingTab: str };
-    str = initialTab;
-    const tmp8 = initialTab;
-    if (initialTab == null) {
-      str = "main";
-    }
+    const obj2 = { subsection: USER_PROFILE, scrollPosition };
     setState(obj2);
-    const obj3 = { screen: UserSettingsSections.PROFILE_CUSTOMIZATION, params: { initialTab: tmp8 } };
+    const obj3 = { screen: UserSettingsSections.PROFILE_CUSTOMIZATION, params: obj4 };
+    obj4 = { initialTab };
     openUserSettings.openUserSettings(obj3);
   }, items);
 };

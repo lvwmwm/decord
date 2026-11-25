@@ -1,15 +1,15 @@
-// Module ID: 8737
-// Function ID: 8738
+// Module ID: 8836
+// Function ID: 8837
 // Name: MediaModalWebViewBase
-// Dependencies: [19, 17, 21, 1378, 4917, 1653, 5127, 5596, 7763, 2]
+// Dependencies: [19, 17, 21, 1378, 5012, 1653, 5222, 5691, 7862, 2]
 
-// Module 8737 (MediaModalWebViewBase)
-import LinkingDefault from "Linking" /* 5596 */;
+// Module 8836 (MediaModalWebViewBase)
+import LinkingDefault from "Linking" /* 5691 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let url;

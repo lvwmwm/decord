@@ -1,12 +1,12 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16189
+// Function ID: 16190
 // Name: useSafetyHubFetchError
-// Dependencies: [7779, 504, 2]
+// Dependencies: [7878, 504, 2]
 // Exports: useSafetyHubFetchError
 
-// Module 16068 (useSafetyHubFetchError)
+// Module 16189 (useSafetyHubFetchError)
 import get_initialized from "get initialized" /* 504 */;
-import SafetyHubStore from "SafetyHubStore" /* 7779 */;
+import SafetyHubStore from "SafetyHubStore" /* 7878 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubFetchError.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 7464
-// Function ID: 7465
+// Module ID: 7559
+// Function ID: 7560
 // Name: SocialLayerStorefrontStore
 // Dependencies: [2188, 502, 504, 572, 2]
 
-// Module 7464 (SocialLayerStorefrontStore)
+// Module 7559 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LocaleStore from "LocaleStore" /* 2188 */;

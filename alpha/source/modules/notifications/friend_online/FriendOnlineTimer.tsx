@@ -1,19 +1,19 @@
-// Module ID: 20126
-// Function ID: 20127
+// Module ID: 20228
+// Function ID: 20229
 // Name: FriendOnlineTimer
-// Dependencies: [5, 502, 7528, 20127, 1071, 1082, 1088, 1284, 1241, 572, 7349, 4742, 2]
+// Dependencies: [5, 502, 7623, 20229, 1071, 1082, 1088, 1284, 1241, 572, 7444, 4837, 2]
 
-// Module 20126 (FriendOnlineTimer)
+// Module 20228 (FriendOnlineTimer)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import UserSettings from "UserSettings" /* 4742 */;
+import UserSettings from "UserSettings" /* 4837 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7528 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 20127 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7623 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 20229 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -30,7 +30,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -83,7 +83,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
           const tmp17 = closure_129_1(closure_129_2[9]);
           dispatch(obj9);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp28) {
         closure_2 = tmp28;

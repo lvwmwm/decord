@@ -1,18 +1,18 @@
-// Module ID: 10337
-// Function ID: 10338
+// Module ID: 10436
+// Function ID: 10437
 // Name: VisualEffectViewThemed
-// Dependencies: [19, 21, 5126, 4924, 5485, 2]
+// Dependencies: [19, 21, 5221, 5019, 5580, 2]
 // Exports: default
 
-// Module 10337 (VisualEffectViewThemed)
+// Module 10436 (VisualEffectViewThemed)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 4924 */;
-import useThemeDefault from "useTheme" /* 5126 */;
+import shared from "shared" /* 5019 */;
+import useThemeDefault from "useTheme" /* 5221 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const VisualEffectViewDefault = tmp2(5485);
+const VisualEffectViewDefault = tmp2(5580);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/visual_effect_view/native/VisualEffectViewThemed.tsx");
 

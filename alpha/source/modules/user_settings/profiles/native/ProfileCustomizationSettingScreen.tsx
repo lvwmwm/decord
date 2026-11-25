@@ -1,25 +1,25 @@
-// Module ID: 15875
-// Function ID: 15876
+// Module ID: 15996
+// Function ID: 15997
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [109, 19, 17, 9296, 6250, 14390, 1081, 1071, 21, 4917, 575, 1112, 15876, 16000, 16007, 14817, 5481, 4978, 8345, 15859, 7224, 8475, 15860, 15865, 504, 15867, 5887, 9298, 15868, 10445, 15872, 13437, 13440, 2]
+// Dependencies: [109, 19, 17, 9395, 6345, 14513, 1081, 1071, 21, 5012, 575, 1112, 15997, 16121, 16128, 14939, 5576, 5073, 8444, 15980, 7319, 8574, 15981, 15986, 504, 15988, 5982, 9397, 15989, 10544, 15993, 13560, 13563, 2]
 
-// Module 15875 (ProfileCustomizationSettingScreen)
+// Module 15996 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import intl2 from "intl" /* 1112 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5887 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9298 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15876 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16000 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9397 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15997 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16121 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9296 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6250 */;
-import WidgetStore from "WidgetStore" /* 14390 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9395 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6345 */;
+import WidgetStore from "WidgetStore" /* 14513 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;

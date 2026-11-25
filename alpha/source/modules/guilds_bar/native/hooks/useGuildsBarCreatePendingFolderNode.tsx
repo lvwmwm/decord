@@ -1,15 +1,15 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 18085
+// Function ID: 18086
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 4951, 6039, 504, 12221, 17974, 6879, 6043, 1112, 2]
+// Dependencies: [19, 5046, 6134, 504, 12320, 18086, 6974, 6138, 1112, 2]
 // Exports: default
 
-// Module 17973 (useGuildsBarCreatePendingFolderNode)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6879 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12221 */;
+// Module 18085 (useGuildsBarCreatePendingFolderNode)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6974 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12320 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4951 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6039 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6134 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarCreatePendingFolderNode.tsx");
@@ -35,15 +35,15 @@ export default function useGuildsBarCreatePendingFolderNode() {
     }
   }, items2);
   if (arr2.length > 0) {
-    const obj3 = { folderId: stateFromStores(17974).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1112).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
-    const createFolderNode = tmp2(6043).createFolderNode;
-    stateFromStores(6043);
+    const obj3 = { folderId: stateFromStores(18086).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1112).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
+    const createFolderNode = tmp2(6138).createFolderNode;
+    stateFromStores(6138);
     intl = tmp2(1112).intl;
     const folderNode = createFolderNode(obj3);
     for (const item10054 of arr2) {
       let children = folderNode.children;
       let push = children.push;
-      let obj4 = stateFromStores(6043);
+      let obj4 = stateFromStores(6138);
       let arr = push(obj4.createGuildNode(item10054, folderNode.id));
       continue;
     }

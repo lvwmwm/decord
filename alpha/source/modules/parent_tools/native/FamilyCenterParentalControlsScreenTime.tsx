@@ -1,16 +1,16 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16392
+// Function ID: 16393
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1071, 21, 4917, 575, 10457, 6018, 5508, 1112, 2824, 16228, 1500, 6014, 2]
+// Dependencies: [17, 1071, 21, 5012, 575, 10556, 6113, 5603, 1112, 2846, 16349, 1500, 6109, 2]
 // Exports: default
 
-// Module 16271 (FamilyCenterParentalControlsScreenTime)
+// Module 16392 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import _modDef2824 from "module_2824" /* 2824 */;
+import _modDef2846 from "module_2846" /* 2846 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,16 +31,16 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(10457);
+  let obj = rule(10556);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(10457);
+  let obj2 = rule(10556);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "body-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(6018).TableRow;
-  Text = rule(5508).Text;
+  const TableRow = rule(6113).TableRow;
+  Text = rule(5603).Text;
   const enabled = rule.enabled;
   const intl = rule(1112).intl;
   const string = intl.string;
-  const tmp4 = _modDef2824;
+  const tmp4 = _modDef2846;
   if (enabled) {
     stringResult = string(tmp4["8vDHRq"]);
   } else {
@@ -103,7 +103,7 @@ export default function FamilyCenterParentalControlsScreenTime(readOnly) {
   const sortRulesByStartTimeResult = tmp2Result.sortRulesByStartTime(rules);
   if (null != id) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2824")["72CmJd"]) };
+    const obj4 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2846")["72CmJd"]) };
     const Text = tmp2(tmp3[7]).Text;
     intl = tmp2(tmp3[8]).intl;
     items = [closure_5(Text, obj4), ];

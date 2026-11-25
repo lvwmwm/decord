@@ -1,11 +1,11 @@
-// Module ID: 17406
-// Function ID: 17407
+// Module ID: 17517
+// Function ID: 17518
 // Name: DefultGuildsRestrictedSetting
-// Dependencies: [4742, 2]
+// Dependencies: [4837, 2]
 // Exports: useDefaultGuildsRestricted
 
-// Module 17406 (DefultGuildsRestrictedSetting)
-import UserSettings from "UserSettings" /* 4742 */;
+// Module 17517 (DefultGuildsRestrictedSetting)
+import UserSettings from "UserSettings" /* 4837 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/DefultGuildsRestrictedSetting.tsx");

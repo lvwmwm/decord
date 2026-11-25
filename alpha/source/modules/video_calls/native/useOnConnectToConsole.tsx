@@ -1,14 +1,14 @@
-// Module ID: 14144
-// Function ID: 14145
+// Module ID: 14267
+// Function ID: 14268
 // Name: useOnConnectToConsole
-// Dependencies: [19, 1071, 4949, 4750, 7615, 7650, 10366, 2]
+// Dependencies: [19, 1071, 5044, 4845, 7714, 7749, 10465, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
-// Module 14144 (useOnConnectToConsole)
-import dismissible_content from "dismissible_content" /* 4750 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4949 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7615 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7650 */;
+// Module 14267 (useOnConnectToConsole)
+import dismissible_content from "dismissible_content" /* 4845 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7714 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7749 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const beginConsoleTransfer = tmp(10366);
+const beginConsoleTransfer = tmp(10465);
 ({ AnalyticsLocations: closure_4, PlatformTypes: hasOwnProperty } = Constants);
 let result = size.fileFinishedImporting("modules/video_calls/native/useOnConnectToConsole.tsx");
 

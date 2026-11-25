@@ -1,28 +1,28 @@
-// Module ID: 6256
-// Function ID: 6257
+// Module ID: 6351
+// Function ID: 6352
 // Name: UserProfileAnalyticsUtils
-// Dependencies: [6257, 6263, 8181, 6687, 4829, 5888, 4859, 1386, 6037, 6011, 1071, 1082, 1412, 5889, 6036, 1255, 5887, 14669, 2]
+// Dependencies: [6352, 6358, 8280, 6782, 4924, 5983, 4954, 1386, 6132, 6106, 1071, 1082, 1412, 5984, 6131, 1255, 5982, 14791, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 6256 (UserProfileAnalyticsUtils)
+// Module 6351 (UserProfileAnalyticsUtils)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
-import ActivityTypes from "ActivityTypes" /* 5889 */;
-import Constants3 from "Constants" /* 6011 */;
-import useDisplayProfile from "useDisplayProfile" /* 6036 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6263 */;
-import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 14669 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6257 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8181 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import PresenceStore from "PresenceStore" /* 5888 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
+import ActivityTypes from "ActivityTypes" /* 5984 */;
+import Constants3 from "Constants" /* 6106 */;
+import useDisplayProfile from "useDisplayProfile" /* 6131 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6358 */;
+import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 14791 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6352 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8280 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import PresenceStore from "PresenceStore" /* 5983 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
-import UserProfileStore from "UserProfileStore" /* 6037 */;
+import UserProfileStore from "UserProfileStore" /* 6132 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
@@ -246,6 +246,7 @@ function trackUserProfileAction(dependencyMap) {
   let channelId;
   let communicationRank;
   let guildId;
+  let hasUnreadIndicator;
   let length;
   let messageId;
   let obj4;
@@ -255,8 +256,8 @@ function trackUserProfileAction(dependencyMap) {
   let tmp9;
   let widgetType;
   const applicationId = dependencyMap.applicationId;
-  ({ guildId, channelId, messageId, roleId, widgetType, analyticsLocations, action, section } = dependencyMap);
-  const obj = { location_stack: analyticsLocations, profile_action: action, profile_section: section, source_message_id: messageId, source_role_id: roleId, widget_type: widgetType };
+  ({ guildId, channelId, messageId, roleId, widgetType, analyticsLocations, action, section, hasUnreadIndicator } = dependencyMap);
+  const obj = { location_stack: analyticsLocations, profile_action: action, profile_section: section, source_message_id: messageId, source_role_id: roleId, widget_type: widgetType, has_unread_indicator: hasUnreadIndicator };
   const track = AnalyticsUtilsDefault.track;
   const USER_PROFILE_ACTION = AnalyticEvents.USER_PROFILE_ACTION;
   AnalyticsUtilsDefault;
@@ -491,8 +492,8 @@ export function trackUserProfileActivityJoined(userId) {
       if ("VOICE" !== activityType) {
         const _Object = Object;
         const _Object2 = Object;
-        const keys = Object.keys(tmp3(5889).ActivityTypes);
-        const values = Object.values(tmp3(5889).ActivityTypes);
+        const keys = Object.keys(tmp3(5984).ActivityTypes);
+        const values = Object.values(tmp3(5984).ActivityTypes);
         str2 = keys[values.indexOf(values, activityType)];
       }
       tmp11 = str2;
@@ -559,7 +560,7 @@ export function trackUserProfileActivityAction(userId) {
   }
   const merged3 = Object.assign(obj4);
   if (null != stream) {
-    type = tmp3(5889).ActivityTypes.STREAMING;
+    type = tmp3(5984).ActivityTypes.STREAMING;
   } else if (activity != null) {
     type = activity.type;
   }
@@ -569,8 +570,8 @@ export function trackUserProfileActivityAction(userId) {
     if ("VOICE" !== type) {
       const _Object = Object;
       const _Object2 = Object;
-      const keys = Object.keys(tmp3(5889).ActivityTypes);
-      const values = Object.values(tmp3(5889).ActivityTypes);
+      const keys = Object.keys(tmp3(5984).ActivityTypes);
+      const values = Object.values(tmp3(5984).ActivityTypes);
       str = keys[values.indexOf(values, type)];
     }
     tmp11 = str;

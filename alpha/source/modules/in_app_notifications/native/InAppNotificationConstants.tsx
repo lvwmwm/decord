@@ -1,9 +1,9 @@
-// Module ID: 10483
-// Function ID: 10484
+// Module ID: 10582
+// Function ID: 10583
 // Name: InAppNotificationConstants
 // Dependencies: [575, 1653, 2]
 
-// Module 10483 (InAppNotificationConstants)
+// Module 10582 (InAppNotificationConstants)
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;

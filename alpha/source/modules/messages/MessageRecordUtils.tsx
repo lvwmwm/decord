@@ -1,24 +1,24 @@
-// Module ID: 6267
-// Function ID: 6268
+// Module ID: 6362
+// Function ID: 6363
 // Name: MessageRecordUtils
-// Dependencies: [6268, 4860, 1405, 502, 4859, 1386, 1071, 6269, 5635, 6644, 11, 6649, 5664, 6650, 2168, 6651, 6653, 2]
+// Dependencies: [6363, 4955, 1405, 502, 4954, 1386, 1071, 6364, 5730, 6739, 11, 6744, 5759, 6745, 2168, 6746, 6748, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 6267 (MessageRecordUtils)
+// Module 6362 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import findCodedLinksDefault from "findCodedLinks" /* 5635 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5664 */;
-import useMessageAuthor from "useMessageAuthor" /* 6644 */;
-import isMessageMentioned from "isMessageMentioned" /* 6649 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 6650 */;
-import EmbedUtils from "EmbedUtils" /* 6651 */;
-import StickersUtils from "StickersUtils" /* 6653 */;
-import InteractionRecord from "InteractionRecord" /* 6268 */;
-import MessageRecord_mod from "MessageRecord" /* 4860 */;
+import findCodedLinksDefault from "findCodedLinks" /* 5730 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5759 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
+import isMessageMentioned from "isMessageMentioned" /* 6744 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 6745 */;
+import EmbedUtils from "EmbedUtils" /* 6746 */;
+import StickersUtils from "StickersUtils" /* 6748 */;
+import InteractionRecord from "InteractionRecord" /* 6363 */;
+import MessageRecord_mod from "MessageRecord" /* 4955 */;
 import UserRecord from "UserRecord" /* 1405 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -32,11 +32,11 @@ let closure_4;
 let hasOwnProperty;
 let map1;
 let unpackModuleId;
-const f89394 = (item) => {
+const f89736 = (item) => {
   const obj = EmbedUtils;
   return obj.sanitizeEmbed(message2.channel_id, message2.id, item);
 };
-const f89396 = (item) => {
+const f89738 = (item) => {
   const obj = {};
   const merged = Object.assign(item);
   if (null != obj.count_details) {
@@ -59,7 +59,7 @@ const f89396 = (item) => {
   }
   return obj;
 };
-const f89397 = (message) => {
+const f89739 = (message) => {
   const obj = { message: createMinimalMessageRecord(message.message), moderator_report: message.moderator_report };
   const tmp = new closure_1_4(obj);
   return tmp;
@@ -91,7 +91,7 @@ function createMinimalMessageRecord(timestamp) {
     items = [];
   } else {
     const embeds = timestamp.embeds;
-    const mapped = embeds.map(f89394);
+    const mapped = embeds.map(f89736);
     const obj2 = require("EmbedUtils");
     items = obj2.mergeEmbedsOnURL(mapped);
   }
@@ -274,7 +274,7 @@ function createMessageRecord(message, arg1) {
     items = [];
   } else {
     const message_snapshots = message.message_snapshots;
-    items = message_snapshots.map(f89397);
+    items = message_snapshots.map(f89739);
   }
   if (reactions == null) {
     reactions = message.reactions;
@@ -335,7 +335,7 @@ function createMessageRecord(message, arg1) {
     mapped1 = [];
   }
   HermesBuiltin.arraySpread(items2, mapped1, tmp49);
-  items1 = items2.map(f89396);
+  items1 = items2.map(f89738);
 }
 function isCurrentReactionType(count_details) {
   count_details = count_details.count_details;
@@ -436,7 +436,7 @@ export function updateMessageRecord(message, message2) {
         items = [];
       } else {
         const embeds = message2.embeds;
-        const mapped = embeds.map(f89394);
+        const mapped = embeds.map(f89736);
         const obj7 = require("EmbedUtils");
         items = obj7.mergeEmbedsOnURL(mapped);
       }
@@ -450,7 +450,7 @@ export function updateMessageRecord(message, message2) {
         items1 = [];
       } else {
         const message_snapshots = message2.message_snapshots;
-        items1 = message_snapshots.map(f89397);
+        items1 = message_snapshots.map(f89739);
       }
       set2Result = set2("messageSnapshots", items1);
     }
@@ -500,7 +500,7 @@ export function updateMessageRecord(message, message2) {
         let num = 0;
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, reactions.filter(isCurrentReactionType), 0);
         HermesBuiltin.arraySpread(items3, [], arraySpreadResult);
-        items2 = items3.map(f89396);
+        items2 = items3.map(f89738);
       }
       set5Result = set5("reactions", items2);
     }

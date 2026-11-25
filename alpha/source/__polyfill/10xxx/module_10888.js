@@ -1,119 +1,133 @@
 // Module ID: 10888
 // Function ID: 10889
-// Dependencies: [10734, 10735]
-// Exports: parseDuration, parseNumberPattern, parseOrdinalNumberPattern, parseYearPattern
+// Dependencies: [10829, 10836, 10838, 10889, 10890, 10862, 10891, 10892, 10893, 10894, 10896, 10897, 10898, 10899, 10900, 10869]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10888
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10734 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10735 */;
+import _mod10862 from "module_10862" /* 10862 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10869 */;
+import _mod10889 from "module_10889" /* 10889 */;
+import _mod10890 from "module_10890" /* 10890 */;
+import _mod10891 from "module_10891" /* 10891 */;
+import _mod10892 from "module_10892" /* 10892 */;
+import _mod10893 from "module_10893" /* 10893 */;
+import _mod10894 from "module_10894" /* 10894 */;
+import _mod10896 from "module_10896" /* 10896 */;
+import _mod10897 from "module_10897" /* 10897 */;
+import _mod10898 from "module_10898" /* 10898 */;
+import _mod10899 from "module_10899" /* 10899 */;
+import _mod10900 from "module_10900" /* 10900 */;
+import { Chrono } from "module_10829" /* 10829 */;
 
-const combined = "(" + exports.NUMBER_PATTERN + ")\\s{0,3}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")";
-const regExp = new RegExp(combined, "i");
+const require = globalThis.__r;
 
-export function parseNumberPattern(str) {
-  let num4;
-  str = str.toLowerCase();
-  if (undefined !== exports.INTEGER_WORD_DICTIONARY[str]) {
-    num4 = exports.INTEGER_WORD_DICTIONARY[str];
+function createConfiguration(flag, arg1) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
+  }
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10862.default(flag2), , , , , , ];
+  new module_10862.default(flag2);
+  items[1] = new module_10897.default();
+  new module_10897.default();
+  items[2] = new module_10891.default();
+  new module_10891.default();
+  items[3] = new module_10896.default();
+  new module_10896.default();
+  items[4] = new module_10898.default();
+  new module_10898.default();
+  items[5] = new module_10899.default();
+  new module_10899.default();
+  items[6] = new module_10894.default();
+  new module_10894.default();
+  items1 = [new module_10892.default(), ];
+  new module_10892.default();
+  items1[1] = new module_10893.default();
+  new module_10893.default();
+  return includeCommonConfiguration(obj, flag);
+}
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
   } else {
-    let num3 = 2;
-    num4 = 2;
-    if (!str.match(/декілька/)) {
-      let num = 0.5;
-      if (!str.match(/пів/)) {
-        if (!str.match(/пар/)) {
-          let num2 = 1;
-          if ("" !== str) {
-            const _parseFloat = parseFloat;
-            num2 = parseFloat(str);
-          }
-          num3 = num2;
-        }
-        num = num3;
-      }
-      num4 = num;
-    }
+    tmp2 = __esModule;
   }
-  return num4;
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const tmp = createConfiguration(false, flag);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10889.default();
+  unshift(_default);
+  const parsers1 = tmp.parsers;
+  const unshift2 = parsers1.unshift;
+  const _default1 = new module_10890.default();
+  unshift2(_default1);
+  const parsers2 = tmp.parsers;
+  const unshift3 = parsers2.unshift;
+  const _default2 = new module_10900.default();
+  unshift3(_default2);
+  return tmp;
 }
-export function parseOrdinalNumberPattern(match) {
-  const formatted = match.toLowerCase();
-  if (undefined !== exports.ORDINAL_WORD_DICTIONARY[formatted]) {
-    return exports.ORDINAL_WORD_DICTIONARY[formatted];
-  } else {
-    const _parseInt = parseInt;
-    return parseInt(formatted);
-  }
+const module_10889 = fn(_mod10889);
+const module_10890 = fn(_mod10890);
+const module_10862 = fn(_mod10862);
+const module_10891 = fn(_mod10891);
+const module_10892 = fn(_mod10892);
+const module_10893 = fn(_mod10893);
+const module_10894 = fn(_mod10894);
+const module_10896 = fn(_mod10896);
+const module_10897 = fn(_mod10897);
+const module_10898 = fn(_mod10898);
+const module_10899 = fn(_mod10899);
+const module_10900 = fn(_mod10900);
+const configuration = createConfiguration(false, true);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_10889.default();
+unshift(_default);
+let parsers1 = configuration.parsers;
+let unshift2 = parsers1.unshift;
+let _default1 = new module_10890.default();
+unshift2(_default1);
+let parsers2 = configuration.parsers;
+let unshift3 = parsers2.unshift;
+let _default2 = new module_10900.default();
+unshift3(_default2);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10829").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10829").Chrono;
+
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 }
-export function parseYearPattern(match) {
-  let str = match;
-  const obj = /(рік|року|р|р.)/i;
-  if (obj.test(match)) {
-    str = match.replace(/(рік|року|р|р.)/i, "");
-  }
-  const obj2 = /(до н.е.|до н. е.)/i;
-  if (obj2.test(str)) {
-    const _parseInt3 = parseInt;
-    return -parseInt(str.replace(/(до н.е.|до н. е.)/i, ""));
-  } else {
-    const obj3 = /(н. е.|н.е.)/i;
-    if (obj3.test(str)) {
-      const _parseInt2 = parseInt;
-      return parseInt(str.replace(/(н. е.|н.е.)/i, ""));
-    } else {
-      const _parseInt = parseInt;
-      const parsed = parseInt(str);
-      return findMostLikelyADYear.findMostLikelyADYear(parsed);
-    }
-  }
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
 }
-export function parseDuration(arg0) {
-  let str = arg0;
-  const obj = {};
-  let match = regExp.exec(arg0);
-  while (match) {
-    let num4;
-    let str2 = match[1];
-    let str3 = str2.toLowerCase();
-    let tmp2 = exports;
-    if (undefined !== exports.INTEGER_WORD_DICTIONARY[str3]) {
-      num4 = tmp2.INTEGER_WORD_DICTIONARY[str3];
-    } else {
-      num4 = 2;
-      if (!str3.match(/декілька/)) {
-        let num = 0.5;
-        if (!str3.match(/пів/)) {
-          let num2 = 2;
-          if (!str3.match(/пар/)) {
-            let num3 = 1;
-            if ("" !== str3) {
-              let _parseFloat = parseFloat;
-              num3 = parseFloat(str3);
-            }
-            num2 = num3;
-          }
-          num = num2;
-        }
-        num4 = num;
-      }
-    }
-    let str4 = match[2];
-    obj[tmp2.TIME_UNIT_DICTIONARY[str4.toLowerCase(str4)]] = num4;
-    let str5 = str.substring(match[0].length);
-    let trimmed = str5.trim();
-    match = regExp.exec(trimmed);
-    str = trimmed;
-  }
-  return obj;
-}
-export const REGEX_PARTS = { leftBoundary: "([^\\p{L}\\p{N}_]|^)", rightBoundary: "(?=[^\\p{L}\\p{N}_]|$)", flags: "iu" };
-export const WEEKDAY_DICTIONARY = { "\u043d\u0435\u0434\u0456\u043b\u044f": 0, "\u043d\u0435\u0434\u0456\u043b\u0456": 0, "\u043d\u0435\u0434\u0456\u043b\u044e": 0, "\u043d\u0434": 0, "\u043d\u0434.": 0, "\u043f\u043e\u043d\u0435\u0434\u0456\u043b\u043e\u043a": 1, "\u043f\u043e\u043d\u0435\u0434\u0456\u043b\u043a\u0430": 1, "\u043f\u043d": 1, "\u043f\u043d.": 1, "\u0432\u0456\u0432\u0442\u043e\u0440\u043e\u043a": 2, "\u0432\u0456\u0432\u0442\u043e\u0440\u043a\u0430": 2, "\u0432\u0442": 2, "\u0432\u0442.": 2, "\u0441\u0435\u0440\u0435\u0434\u0430": 3, "\u0441\u0435\u0440\u0435\u0434\u0438": 3, "\u0441\u0435\u0440\u0435\u0434\u0443": 3, "\u0441\u0440": 3, "\u0441\u0440.": 3, "\u0447\u0435\u0442\u0432\u0435\u0440": 4, "\u0447\u0435\u0442\u0432\u0435\u0440\u0433\u0430": 4, "\u0447\u0435\u0442\u0432\u0435\u0440\u0433\u0443": 4, "\u0447\u0442": 4, "\u0447\u0442.": 4, "\u043f'\u044f\u0442\u043d\u0438\u0446\u044f": 5, "\u043f'\u044f\u0442\u043d\u0438\u0446\u0456": 5, "\u043f'\u044f\u0442\u043d\u0438\u0446\u044e": 5, "\u043f\u0442": 5, "\u043f\u0442.": 5, "\u0441\u0443\u0431\u043e\u0442\u0430": 6, "\u0441\u0443\u0431\u043e\u0442\u0438": 6, "\u0441\u0443\u0431\u043e\u0442\u0443": 6, "\u0441\u0431": 6, "\u0441\u0431.": 6 };
-export const FULL_MONTH_NAME_DICTIONARY = { "\u0441\u0456\u0447\u0435\u043d\u044c": 1, "\u0441\u0456\u0447\u043d\u044f": 1, "\u0441\u0456\u0447\u043d\u0456": 1, "\u043b\u044e\u0442\u0438\u0439": 2, "\u043b\u044e\u0442\u043e\u0433\u043e": 2, "\u043b\u044e\u0442\u043e\u043c\u0443": 2, "\u0431\u0435\u0440\u0435\u0437\u0435\u043d\u044c": 3, "\u0431\u0435\u0440\u0435\u0437\u043d\u044f": 3, "\u0431\u0435\u0440\u0435\u0437\u043d\u0456": 3, "\u043a\u0432\u0456\u0442\u0435\u043d\u044c": 4, "\u043a\u0432\u0456\u0442\u043d\u044f": 4, "\u043a\u0432\u0456\u0442\u043d\u0456": 4, "\u0442\u0440\u0430\u0432\u0435\u043d\u044c": 5, "\u0442\u0440\u0430\u0432\u043d\u044f": 5, "\u0442\u0440\u0430\u0432\u043d\u0456": 5, "\u0447\u0435\u0440\u0432\u0435\u043d\u044c": 6, "\u0447\u0435\u0440\u0432\u043d\u044f": 6, "\u0447\u0435\u0440\u0432\u043d\u0456": 6, "\u043b\u0438\u043f\u0435\u043d\u044c": 7, "\u043b\u0438\u043f\u043d\u044f": 7, "\u043b\u0438\u043f\u043d\u0456": 7, "\u0441\u0435\u0440\u043f\u0435\u043d\u044c": 8, "\u0441\u0435\u0440\u043f\u043d\u044f": 8, "\u0441\u0435\u0440\u043f\u043d\u0456": 8, "\u0432\u0435\u0440\u0435\u0441\u0435\u043d\u044c": 9, "\u0432\u0435\u0440\u0435\u0441\u043d\u044f": 9, "\u0432\u0435\u0440\u0435\u0441\u043d\u0456": 9, "\u0436\u043e\u0432\u0442\u0435\u043d\u044c": 10, "\u0436\u043e\u0432\u0442\u043d\u044f": 10, "\u0436\u043e\u0432\u0442\u043d\u0456": 10, "\u043b\u0438\u0441\u0442\u043e\u043f\u0430\u0434": 11, "\u043b\u0438\u0441\u0442\u043e\u043f\u0430\u0434\u0430": 11, "\u043b\u0438\u0441\u0442\u043e\u043f\u0430\u0434\u0443": 11, "\u0433\u0440\u0443\u0434\u0435\u043d\u044c": 12, "\u0433\u0440\u0443\u0434\u043d\u044f": 12, "\u0433\u0440\u0443\u0434\u043d\u0456": 12 };
-export const MONTH_DICTIONARY = Object.assign(Object.assign({}, exports.FULL_MONTH_NAME_DICTIONARY), { "\u0441\u0456\u0447": 1, "\u0441\u0456\u0447.": 1, "\u043b\u044e\u0442": 2, "\u043b\u044e\u0442.": 2, "\u0431\u0435\u0440": 3, "\u0431\u0435\u0440.": 3, "\u043a\u0432\u0456\u0442": 4, "\u043a\u0432\u0456\u0442.": 4, "\u0442\u0440\u0430\u0432": 5, "\u0442\u0440\u0430\u0432.": 5, "\u0447\u0435\u0440\u0432": 6, "\u0447\u0435\u0440\u0432.": 6, "\u043b\u0438\u043f": 7, "\u043b\u0438\u043f.": 7, "\u0441\u0435\u0440\u043f": 8, "\u0441\u0435\u0440\u043f.": 8, "\u0441\u0435\u0440": 8, "c\u0435\u0440.": 8, "\u0432\u0435\u0440": 9, "\u0432\u0435\u0440.": 9, "\u0432\u0435\u0440\u0435\u0441": 9, "\u0432\u0435\u0440\u0435\u0441.": 9, "\u0436\u043e\u0432\u0442": 10, "\u0436\u043e\u0432\u0442.": 10, "\u043b\u0438\u0441\u0442\u043e\u043f": 11, "\u043b\u0438\u0441\u0442\u043e\u043f.": 11, "\u0433\u0440\u0443\u0434": 12, "\u0433\u0440\u0443\u0434.": 12 });
-export const INTEGER_WORD_DICTIONARY = { "\u043e\u0434\u0438\u043d": 1, "\u043e\u0434\u043d\u0430": 1, "\u043e\u0434\u043d\u043e\u0457": 1, "\u043e\u0434\u043d\u0443": 1, "\u0434\u0432\u0456": 2, "\u0434\u0432\u0430": 2, "\u0434\u0432\u043e\u0445": 2, "\u0442\u0440\u0438": 3, "\u0442\u0440\u044c\u043e\u0445": 3, "\u0447\u043e\u0442\u0438\u0440\u0438": 4, "\u0447\u043e\u0442\u0438\u0440\u044c\u043e\u0445": 4, "\u043f'\u044f\u0442\u044c": 5, "\u043f'\u044f\u0442\u0438": 5, "\u0448\u0456\u0441\u0442\u044c": 6, "\u0448\u0435\u0441\u0442\u0438": 6, "\u0441\u0456\u043c": 7, "\u0441\u0435\u043c\u0438": 7, "\u0432\u0456\u0441\u0456\u043c": 8, "\u0432\u043e\u0441\u044c\u043c\u0438": 8, "\u0434\u0435\u0432'\u044f\u0442\u044c": 9, "\u0434\u0435\u0432'\u044f\u0442\u0438": 9, "\u0434\u0435\u0441\u044f\u0442\u044c": 10, "\u0434\u0435\u0441\u044f\u0442\u0438": 10, "\u043e\u0434\u0438\u043d\u0430\u0434\u0446\u044f\u0442\u044c": 11, "\u043e\u0434\u0438\u043d\u0430\u0434\u0446\u044f\u0442\u0438": 11, "\u0434\u0432\u0430\u043d\u0430\u0434\u0446\u044f\u0442\u044c": 12, "\u0434\u0432\u0430\u043d\u0430\u0434\u0446\u044f\u0442\u0438": 12 };
-export const ORDINAL_WORD_DICTIONARY = { "\u043f\u0435\u0440\u0448\u0435": 1, "\u043f\u0435\u0440\u0448\u043e\u0433\u043e": 1, "\u0434\u0440\u0443\u0433\u0435": 2, "\u0434\u0440\u0443\u0433\u043e\u0433\u043e": 2, "\u0442\u0440\u0435\u0442\u0454": 3, "\u0442\u0440\u0435\u0442\u044c\u043e\u0433\u043e": 3, "\u0447\u0435\u0442\u0432\u0435\u0440\u0442\u0435": 4, "\u0447\u0435\u0442\u0432\u0435\u0440\u0442\u043e\u0433\u043e": 4, "\u043f'\u044f\u0442\u0435": 5, "\u043f'\u044f\u0442\u043e\u0433\u043e": 5, "\u0448\u043e\u0441\u0442\u0435": 6, "\u0448\u043e\u0441\u0442\u043e\u0433\u043e": 6, "\u0441\u044c\u043e\u043c\u0435": 7, "\u0441\u044c\u043e\u043c\u043e\u0433\u043e": 7, "\u0432\u043e\u0441\u044c\u043c\u0435": 8, "\u0432\u043e\u0441\u044c\u043c\u043e\u0433\u043e": 8, "\u0434\u0435\u0432'\u044f\u0442\u0435": 9, "\u0434\u0435\u0432'\u044f\u0442\u043e\u0433\u043e": 9, "\u0434\u0435\u0441\u044f\u0442\u0435": 10, "\u0434\u0435\u0441\u044f\u0442\u043e\u0433\u043e": 10, "\u043e\u0434\u0438\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 11, "\u043e\u0434\u0438\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 11, "\u0434\u0432\u0430\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 12, "\u0434\u0432\u0430\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 12, "\u0442\u0440\u0438\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 13, "\u0442\u0440\u0438\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 13, "\u0447\u043e\u0442\u0438\u0440\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 14, "\u0447\u043e\u0442\u0438\u043d\u0440\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 14, "\u043f'\u044f\u0442\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 15, "\u043f'\u044f\u0442\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 15, "\u0448\u0456\u0441\u0442\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 16, "\u0448\u0456\u0441\u0442\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 16, "\u0441\u0456\u043c\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 17, "\u0441\u0456\u043c\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 17, "\u0432\u0456\u0441\u0456\u043c\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 18, "\u0432\u0456\u0441\u0456\u043c\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 18, "\u0434\u0435\u0432'\u044f\u0442\u043d\u0430\u0434\u0446\u044f\u0442\u0435": 19, "\u0434\u0435\u0432'\u044f\u0442\u043d\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 19, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u0435": 20, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 20, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u043f\u0435\u0440\u0448\u0435": 21, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u043f\u0435\u0440\u0448\u043e\u0433\u043e": 21, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0434\u0440\u0443\u0433\u0435": 22, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0434\u0440\u0443\u0433\u043e\u0433\u043e": 22, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0442\u0440\u0435\u0442\u0454": 23, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0442\u0440\u0435\u0442\u044c\u043e\u0433\u043e": 23, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0447\u0435\u0442\u0432\u0435\u0440\u0442\u0435": 24, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0447\u0435\u0442\u0432\u0435\u0440\u0442\u043e\u0433\u043e": 24, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u043f'\u044f\u0442\u0435": 25, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u043f'\u044f\u0442\u043e\u0433\u043e": 25, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0448\u043e\u0441\u0442\u0435": 26, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0448\u043e\u0441\u0442\u043e\u0433\u043e": 26, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0441\u044c\u043e\u043c\u0435": 27, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0441\u044c\u043e\u043c\u043e\u0433\u043e": 27, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0432\u043e\u0441\u044c\u043c\u0435": 28, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0432\u043e\u0441\u044c\u043c\u043e\u0433\u043e": 28, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0434\u0435\u0432'\u044f\u0442\u0435": 29, "\u0434\u0432\u0430\u0434\u0446\u044f\u0442\u044c \u0434\u0435\u0432'\u044f\u0442\u043e\u0433\u043e": 29, "\u0442\u0440\u0438\u0434\u0446\u044f\u0442\u0435": 30, "\u0442\u0440\u0438\u0434\u0446\u044f\u0442\u043e\u0433\u043e": 30, "\u0442\u0440\u0438\u0434\u0446\u044f\u0442\u044c \u043f\u0435\u0440\u0448\u0435": 31, "\u0442\u0440\u0438\u0434\u0446\u044f\u0442\u044c \u043f\u0435\u0440\u0448\u043e\u0433\u043e": 31 };
-export const TIME_UNIT_DICTIONARY = { "\u0441\u0435\u043a": "second", "\u0441\u0435\u043a\u0443\u043d\u0434\u0430": "second", "\u0441\u0435\u043a\u0443\u043d\u0434": "second", "\u0441\u0435\u043a\u0443\u043d\u0434\u0438": "second", "\u0441\u0435\u043a\u0443\u043d\u0434\u0443": "second", "\u0441\u0435\u043a\u0443\u043d\u0434\u043e\u0447\u043e\u043a": "second", "\u0441\u0435\u043a\u0443\u043d\u0434\u043e\u0447\u043a\u0438": "second", "\u0441\u0435\u043a\u0443\u043d\u0434\u043e\u0447\u043a\u0443": "second", "\u0445\u0432": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u0430": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u0438": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u0443": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u043e\u043a": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u043a\u0438": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u043a\u0443": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u043e\u0447\u043e\u043a": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u043e\u0447\u043a\u0438": "minute", "\u0445\u0432\u0438\u043b\u0438\u043d\u043e\u0447\u043a\u0443": "minute", "\u0433\u043e\u0434": "hour", "\u0433\u043e\u0434\u0438\u043d\u0430": "hour", "\u0433\u043e\u0434\u0438\u043d": "hour", "\u0433\u043e\u0434\u0438\u043d\u0438": "hour", "\u0433\u043e\u0434\u0438\u043d\u0443": "hour", "\u0433\u043e\u0434\u0438\u043d\u043a\u0430": "hour", "\u0433\u043e\u0434\u0438\u043d\u043e\u043a": "hour", "\u0433\u043e\u0434\u0438\u043d\u043a\u0438": "hour", "\u0433\u043e\u0434\u0438\u043d\u043a\u0443": "hour", "\u0434\u0435\u043d\u044c": "day", "\u0434\u043d\u044f": "day", "\u0434\u043d\u0456\u0432": "day", "\u0434\u043d\u0456": "day", "\u0434\u043e\u0431\u0430": "day", "\u0434\u043e\u0431\u0443": "day", "\u0442\u0438\u0436\u0434\u0435\u043d\u044c": "week", "\u0442\u0438\u0436\u043d\u044e": "week", "\u0442\u0438\u0436\u043d\u044f": "week", "\u0442\u0438\u0436\u043d\u0456": "week", "\u0442\u0438\u0436\u043d\u0456\u0432": "week", "\u043c\u0456\u0441\u044f\u0446\u044c": "month", "\u043c\u0456\u0441\u044f\u0446\u0456\u0432": "month", "\u043c\u0456\u0441\u044f\u0446\u0456": "month", "\u043c\u0456\u0441\u044f\u0446\u044f": "month", "\u043a\u0432\u0430\u0440\u0442\u0430\u043b": "quarter", "\u043a\u0432\u0430\u0440\u0442\u0430\u043b\u0443": "quarter", "\u043a\u0432\u0430\u0440\u0442\u0430\u043b\u0430": "quarter", "\u043a\u0432\u0430\u0440\u0442\u0430\u043b\u0456\u0432": "quarter", "\u043a\u0432\u0430\u0440\u0442\u0430\u043b\u0456": "quarter", "\u0440\u0456\u043a": "year", "\u0440\u043e\u043a\u0443": "year", "\u0440\u043e\u0446\u0456": "year", "\u0440\u043e\u043a\u0456\u0432": "year", "\u0440\u043e\u043a\u0438": "year" };
-export const NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.INTEGER_WORD_DICTIONARY) + "|[0-9]+|[0-9]+\\.[0-9]+|\u043F\u0456\u0432|\u0434\u0435\u043A\u0456\u043B\u044C\u043A\u0430|\u043F\u0430\u0440(?:\u0443)|\\s{0,3})";
-export const ORDINAL_NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.ORDINAL_WORD_DICTIONARY) + "|[0-9]{1,2}(?:\u0433\u043E|\u043E\u0433\u043E|\u0435)?)";
-export const YEAR_PATTERN = "(?:[1-9][0-9]{0,3}" + "(?:\\s+(?:\u0440\u043E\u043A\u0443|\u0440\u0456\u043A|\u0440|\u0440.))?" + "\\s*(?:\u043D.\u0435.|\u0434\u043E \u043D.\u0435.|\u043D. \u0435.|\u0434\u043E \u043D. \u0435.)|[1-2][0-9]{3}" + "(?:\\s+(?:\u0440\u043E\u043A\u0443|\u0440\u0456\u043A|\u0440|\u0440.))?" + "|[5-9][0-9]" + "(?:\\s+(?:\u0440\u043E\u043A\u0443|\u0440\u0456\u043A|\u0440|\u0440.))?" + ")";
-export const TIME_UNITS_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("(?:(?:\u0431\u043B\u0438\u0437\u044C\u043A\u043E|\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E)\\s{0,3})?", combined);
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

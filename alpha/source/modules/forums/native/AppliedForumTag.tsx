@@ -1,21 +1,21 @@
-// Module ID: 10934
-// Function ID: 10935
+// Module ID: 11033
+// Function ID: 11034
 // Name: AppliedForumTag
-// Dependencies: [19, 17, 6757, 1389, 21, 4917, 575, 504, 10935, 1112, 7362, 1412, 5508, 2]
+// Dependencies: [19, 17, 6852, 1389, 21, 5012, 575, 504, 11034, 1112, 7457, 1412, 5603, 2]
 // Exports: AppliedForumTagPill
 
-// Module 10934 (AppliedForumTag)
+// Module 11033 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
-import EmojiDefault from "Emoji" /* 7362 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10935 */;
+import EmojiDefault from "Emoji" /* 7457 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 11034 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6757 */;
+import EmojiStore from "EmojiStore" /* 6852 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp5;
-const Text_Text = tmp5(5508);
+const Text_Text = tmp5(5603);
 class AppliedForumTag {
   constructor(hasUnreads) {
     let c2;

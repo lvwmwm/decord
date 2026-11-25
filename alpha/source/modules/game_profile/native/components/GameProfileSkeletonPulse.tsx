@@ -1,14 +1,14 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14137
+// Function ID: 14138
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 4918, 1653, 5127, 504, 2]
+// Dependencies: [19, 5013, 1653, 5222, 504, 2]
 // Exports: useSkeletonPulseStyle
 
-// Module 14014 (GameProfileSkeletonPulse)
+// Module 14137 (GameProfileSkeletonPulse)
 import get_initialized from "get initialized" /* 504 */;
-import timing_timing from "timing/timing" /* 5127 */;
+import timing_timing from "timing/timing" /* 5222 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import module_1653_mod from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 

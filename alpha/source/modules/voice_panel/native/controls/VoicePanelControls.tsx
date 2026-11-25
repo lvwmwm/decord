@@ -1,35 +1,35 @@
-// Module ID: 19376
-// Function ID: 19377
+// Module ID: 19488
+// Function ID: 19489
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6807, 11635, 11638, 11633, 1071, 21, 4917, 575, 1625, 19377, 8348, 11634, 1653, 19284, 5481, 5177, 1706, 18032, 11640, 13052, 5133, 5147, 12820, 9654, 19378, 19265, 19379, 4978, 19383, 19385, 6928, 19388, 5518, 18077, 19412, 18066, 1262, 19413, 19414, 1107, 1628, 1494, 11389, 11665, 19384, 12889, 19415, 19355, 19387, 19416, 2]
+// Dependencies: [32, 19, 17, 6902, 11734, 11737, 11732, 1071, 21, 5012, 575, 1625, 19489, 8447, 11733, 1653, 19396, 5576, 5272, 1706, 18144, 11739, 13175, 5228, 5242, 12944, 9753, 19490, 19377, 19491, 5073, 19495, 19497, 7023, 19500, 5613, 18189, 19524, 18178, 1262, 19525, 19526, 1107, 1628, 1494, 11488, 11764, 19496, 13013, 19527, 19467, 19499, 19528, 2]
 
-// Module 19376 (VoicePanelControls)
+// Module 19488 (VoicePanelControls)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import native from "native" /* 4978 */;
-import spring_spring from "spring/spring" /* 5518 */;
-import useRefValueDefault from "useRefValue" /* 6928 */;
-import native2 from "native" /* 8348 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11634 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18032 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19265 */;
-import useControlsLockDefault from "useControlsLock" /* 19284 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 19377 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19379 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19383 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19385 */;
-import useControlsButtonsDefault from "useControlsButtons" /* 19388 */;
+import native from "native" /* 5073 */;
+import spring_spring from "spring/spring" /* 5613 */;
+import useRefValueDefault from "useRefValue" /* 7023 */;
+import native2 from "native" /* 8447 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18144 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19377 */;
+import useControlsLockDefault from "useControlsLock" /* 19396 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 19489 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19491 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19495 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19497 */;
+import useControlsButtonsDefault from "useControlsButtons" /* 19500 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11635 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11638 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11633 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11737 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -134,7 +134,7 @@ let closure_37 = react.memo(function FloatingBars(controlsSpecs) {
   const obj2 = { item: tmp11, renderItem: VoicePanelFloatingCTAContainer.renderVoicePanelFloatingCTA };
   items2[0] = closure_18(TransitionItem, obj2);
   let tmp12;
-  const TransitionItem2 = tmp(4978).TransitionItem;
+  const TransitionItem2 = tmp(5073).TransitionItem;
   if (isConnectingOrConnectedToConsole) {
     tmp12 = memo;
   }

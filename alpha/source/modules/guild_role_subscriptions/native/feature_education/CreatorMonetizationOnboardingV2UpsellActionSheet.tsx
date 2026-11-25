@@ -1,23 +1,23 @@
-// Module ID: 17806
-// Function ID: 17807
+// Module ID: 17918
+// Function ID: 17919
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1071, 4763, 21, 4917, 5145, 5508, 1112, 5604, 17807, 5515, 8432, 2]
+// Dependencies: [19, 17, 1071, 4858, 21, 5012, 5240, 5603, 1112, 5699, 17919, 5610, 8531, 2]
 // Exports: default
 
-// Module 17806 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 17918 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5145 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import components_Button_Button from "components/Button/Button" /* 5515 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8432 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17807 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5240 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import components_Button_Button from "components/Button/Button" /* 5610 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17919 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

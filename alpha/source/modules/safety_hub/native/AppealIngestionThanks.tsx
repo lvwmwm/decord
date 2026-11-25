@@ -1,16 +1,16 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12533
+// Function ID: 12534
 // Name: AppealIngestionThanks
-// Dependencies: [19, 17, 21, 4917, 12342, 7354, 1186, 2]
+// Dependencies: [19, 17, 21, 5012, 12506, 7449, 1186, 2]
 // Exports: default
 
-// Module 12369 (AppealIngestionThanks)
+// Module 12533 (AppealIngestionThanks)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7354 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 12342 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7449 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 12506 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

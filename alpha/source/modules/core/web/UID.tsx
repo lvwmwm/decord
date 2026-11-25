@@ -1,15 +1,15 @@
-// Module ID: 8929
-// Function ID: 8930
+// Module ID: 9028
+// Function ID: 9029
 // Name: UID
-// Dependencies: [5991, 5496, 2]
+// Dependencies: [6086, 5591, 2]
 // Exports: UID, uid, useUID
 
-// Module 8929 (UID)
-import reactDefault from "react" /* 5496 */;
-import uniqueIdDefault from "uniqueId" /* 5991 */;
+// Module 9028 (UID)
+import reactDefault from "react" /* 5591 */;
+import uniqueIdDefault from "uniqueId" /* 6086 */;
 import size from "module_2" /* 2 */;
 
-const f94410 = () => uniqueIdDefault("uid_");
+const f94752 = () => uniqueIdDefault("uid_");
 const result = size.fileFinishedImporting("modules/core/web/UID.tsx");
 
 export function uid() {
@@ -20,8 +20,8 @@ export function uid() {
   return uniqueIdDefault(str);
 }
 export function useUID() {
-  return reactDefault(f94410);
+  return reactDefault(f94752);
 }
 export function UID(children) {
-  return children.children(reactDefault(f94410));
+  return children.children(reactDefault(f94752));
 }

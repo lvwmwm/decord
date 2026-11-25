@@ -1,10 +1,10 @@
-// Module ID: 8020
-// Function ID: 8021
+// Module ID: 8119
+// Function ID: 8120
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 8020 (_asyncToGenerator)
+// Module 8119 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj = function _getDetectedFileSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;

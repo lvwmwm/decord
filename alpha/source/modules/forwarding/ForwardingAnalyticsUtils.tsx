@@ -1,16 +1,16 @@
-// Module ID: 8799
-// Function ID: 8800
+// Module ID: 8898
+// Function ID: 8899
 // Name: ForwardingAnalyticsUtils
-// Dependencies: [19, 4766, 1071, 1255, 5887, 12, 2]
+// Dependencies: [19, 4861, 1071, 1255, 5982, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart, useTrackForwardAddRecipientOnce, useTrackForwardEditContextMessageOnce, useTrackForwardEditSearchOnce
 
-// Module 8799 (ForwardingAnalyticsUtils)
+// Module 8898 (ForwardingAnalyticsUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -59,7 +59,7 @@ export function trackForwardSent(arg0) {
       guild_id = channel.guild_id;
     }
     const merged = Object.assign(collectGuildAnalyticsMetadata(guild_id));
-    const tmp14Result = tmp14(5887);
+    const tmp14Result = tmp14(5982);
     const merged1 = Object.assign(tmp14Result.collectChannelAnalyticsMetadata(channel));
     track(MESSAGE_SHORTCUT_ACTION_SENT, obj2);
   }

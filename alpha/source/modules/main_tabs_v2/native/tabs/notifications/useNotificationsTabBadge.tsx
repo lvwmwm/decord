@@ -1,12 +1,12 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15992
+// Function ID: 15993
 // Name: useNotificationsTabBadge
-// Dependencies: [19, 6822, 504, 6823, 2]
+// Dependencies: [19, 6917, 504, 6918, 2]
 // Exports: default
 
-// Module 15871 (useNotificationsTabBadge)
+// Module 15992 (useNotificationsTabBadge)
 import react from "react" /* 19 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6822 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6917 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/useNotificationsTabBadge.tsx");

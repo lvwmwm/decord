@@ -1,11 +1,11 @@
-// Module ID: 5900
-// Function ID: 5901
+// Module ID: 5995
+// Function ID: 5996
 // Name: isVideoBackgroundSupported
-// Dependencies: [2131, 5729, 2]
+// Dependencies: [2131, 5824, 2]
 // Exports: default
 
-// Module 5900 (isVideoBackgroundSupported)
-import Constants from "Constants" /* 5729 */;
+// Module 5995 (isVideoBackgroundSupported)
+import Constants from "Constants" /* 5824 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import size from "module_2" /* 2 */;
 

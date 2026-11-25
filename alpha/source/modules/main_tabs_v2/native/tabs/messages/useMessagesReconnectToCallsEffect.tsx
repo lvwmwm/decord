@@ -1,16 +1,16 @@
-// Module ID: 17608
-// Function ID: 17609
+// Module ID: 17719
+// Function ID: 17720
 // Name: useMessagesReconnectToCallsEffect
-// Dependencies: [32, 19, 5723, 4766, 7452, 572, 2]
+// Dependencies: [32, 19, 5818, 4861, 7547, 572, 2]
 // Exports: default
 
-// Module 17608 (useMessagesReconnectToCallsEffect)
+// Module 17719 (useMessagesReconnectToCallsEffect)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7452 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7547 */;
 import size from "module_2" /* 2 */;
 
 let channel;

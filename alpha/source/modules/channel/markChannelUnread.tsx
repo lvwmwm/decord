@@ -1,12 +1,12 @@
-// Module ID: 10615
-// Function ID: 10616
+// Module ID: 10714
+// Function ID: 10715
 // Name: markChannelUnread
-// Dependencies: [6806, 10616, 504, 2]
+// Dependencies: [6901, 10715, 504, 2]
 // Exports: default, useCanMarkChannelUnread
 
-// Module 10615 (markChannelUnread)
-import ReadStateStore2 from "ReadStateStore" /* 6806 */;
-import markUnreadDefault from "markUnread" /* 10616 */;
+// Module 10714 (markChannelUnread)
+import ReadStateStore2 from "ReadStateStore" /* 6901 */;
+import markUnreadDefault from "markUnread" /* 10715 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,7 +1,7 @@
 // Module ID: 1112
 // Function ID: 1113
 // Name: intl
-// Dependencies: [19, 1071, 21, 1113, 1114, 1151, 1186, 9864, 2, 15444, 15449]
+// Dependencies: [19, 1071, 21, 1113, 1114, 1151, 1186, 9963, 2, 15566, 15571]
 // Exports: getSystemLocale, useSyncMessages
 
 // Module 1112 (intl)
@@ -9,9 +9,9 @@ import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import react_native from "react-native" /* 1113 */;
 import native from "native" /* 1186 */;
-import IntlLink from "IntlLink" /* 9864 */;
-import defaultMessageProxy from "defaultMessageProxy" /* 15444 */;
-import _modDef15449 from "module_15449" /* 15449 */;
+import IntlLink from "IntlLink" /* 9963 */;
+import defaultMessageProxy from "defaultMessageProxy" /* 15566 */;
+import _modDef15571 from "module_15571" /* 15571 */;
 import react from "react" /* 19 */;
 import util from "intl/util" /* 1114 */;
 import module_1151 from "module_1151" /* 1151 */;
@@ -76,6 +76,6 @@ export function useSyncMessages(arg0) {
   return obj.useSyncMessages(arg0, withFormattersResult);
 }
 export const t = defaultMessageProxy._defaultMessages;
-export const international = _modDef15449;
+export const international = _modDef15571;
 export const systemLocale = str;
 export const initialLocale = normalizedLocale;

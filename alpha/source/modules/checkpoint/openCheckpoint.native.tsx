@@ -1,15 +1,15 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 12576
+// Function ID: 12577
 // Name: openCheckpoint
-// Dependencies: [5, 2118, 12407, 12413, 1071, 2023, 12414, 12415, 5598, 1112, 12406, 12405, 12416, 5131, 12408, 6004, 12417, 2119, 12430, 2]
+// Dependencies: [5, 2118, 12571, 12577, 1071, 2023, 12578, 12579, 5693, 1112, 12570, 12569, 12580, 5226, 12572, 6099, 12581, 2119, 12594, 2]
 // Exports: openCheckpoint
 
-// Module 12412 (openCheckpoint)
+// Module 12576 (openCheckpoint)
 import Constants from "Constants" /* 1071 */;
-import CheckpointStore2 from "CheckpointStore" /* 12407 */;
+import CheckpointStore2 from "CheckpointStore" /* 12571 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
-import CheckpointModalConstants from "CheckpointModalConstants" /* 12413 */;
+import CheckpointModalConstants from "CheckpointModalConstants" /* 12577 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -31,7 +31,7 @@ let obj = function _openCheckpoint() {
         const obj7 = { value, done: true };
         return obj7;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

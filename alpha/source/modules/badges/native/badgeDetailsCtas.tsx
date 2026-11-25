@@ -1,22 +1,22 @@
-// Module ID: 9747
-// Function ID: 9748
+// Module ID: 9846
+// Function ID: 9847
 // Name: badgeDetailsCtas
-// Dependencies: [1071, 1073, 5094, 1501, 6012, 1112, 5592, 7968, 6184, 6254, 9748, 6750, 9752, 10968, 2]
+// Dependencies: [1071, 1073, 5189, 1501, 6107, 1112, 5687, 8067, 6279, 6349, 9847, 6845, 9851, 11067, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 9747 (badgeDetailsCtas)
+// Module 9846 (badgeDetailsCtas)
 import Constants from "Constants" /* 1071 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import intl2 from "intl" /* 1112 */;
-import RootNavigationRef from "RootNavigationRef" /* 5094 */;
-import openURLDefault from "openURL" /* 5592 */;
-import BadgeId from "BadgeId" /* 6012 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6184 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
-import QuestContent from "QuestContent" /* 6750 */;
-import QuestUtils from "QuestUtils" /* 9748 */;
-import QuestsEligibility from "QuestsEligibility" /* 9752 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10968 */;
+import RootNavigationRef from "RootNavigationRef" /* 5189 */;
+import openURLDefault from "openURL" /* 5687 */;
+import BadgeId from "BadgeId" /* 6107 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6279 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
+import QuestContent from "QuestContent" /* 6845 */;
+import QuestUtils from "QuestUtils" /* 9847 */;
+import QuestsEligibility from "QuestsEligibility" /* 9851 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 11067 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -25,7 +25,7 @@ let obj4;
 let obj5;
 let tmp;
 const Link = tmp(1501);
-const openUserSettings = tmp(7968);
+const openUserSettings = tmp(8067);
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 let obj = { [BadgeId.BadgeId.STAFF]: obj2, [BadgeId.BadgeId.PREMIUM_TENURE]: obj3, [BadgeId.BadgeId.GUILD_BOOSTER]: obj4, [BadgeId.BadgeId.ORB_PROFILE]: obj5 };

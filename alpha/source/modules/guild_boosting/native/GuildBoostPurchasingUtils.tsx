@@ -1,13 +1,13 @@
-// Module ID: 13353
-// Function ID: 13354
+// Module ID: 13476
+// Function ID: 13477
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 2178, 1071, 1388, 5921, 1112, 1255, 5680, 9221, 9010, 8972, 9211, 2173, 2]
+// Dependencies: [5, 2178, 1071, 1388, 6016, 1112, 1255, 5775, 9320, 9109, 9071, 9310, 2173, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 13353 (GuildBoostPurchasingUtils)
+// Module 13476 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5921 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
 import Constants from "Constants" /* 1071 */;
@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

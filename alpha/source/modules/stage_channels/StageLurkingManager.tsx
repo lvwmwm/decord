@@ -1,14 +1,14 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14647
+// Function ID: 14648
 // Name: StageLurkingManager
-// Dependencies: [4766, 4950, 2121, 572, 14523, 1254, 2]
+// Dependencies: [4861, 5045, 2121, 572, 14646, 1254, 2]
 
-// Module 14524 (StageLurkingManager)
+// Module 14647 (StageLurkingManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 14523 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 14646 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 

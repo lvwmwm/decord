@@ -1,13 +1,13 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14400
+// Function ID: 14401
 // Name: NativeChatCapabilities
-// Dependencies: [17, 1378, 11864, 2]
+// Dependencies: [17, 1378, 11963, 2]
 // Exports: nativeChatSupportsAudioEmbeds
 
-// Module 14277 (NativeChatCapabilities)
+// Module 14400 (NativeChatCapabilities)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import react_nativeDefault from "react-native" /* 11864 */;
+import react_nativeDefault from "react-native" /* 11963 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, constants;

@@ -1,14 +1,14 @@
-// Module ID: 12654
-// Function ID: 12655
+// Module ID: 12818
+// Function ID: 12819
 // Name: ArrowSmallLeftIcon
-// Dependencies: [19, 21, 575, 5603, 12655, 2]
+// Dependencies: [19, 21, 575, 5698, 12819, 2]
 // Exports: ArrowSmallLeftIcon
 
-// Module 12654 (ArrowSmallLeftIcon)
+// Module 12818 (ArrowSmallLeftIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 12655 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 12819 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

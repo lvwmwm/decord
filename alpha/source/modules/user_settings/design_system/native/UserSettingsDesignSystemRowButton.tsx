@@ -1,16 +1,16 @@
-// Module ID: 17254
-// Function ID: 17255
+// Module ID: 17367
+// Function ID: 17368
 // Name: UserSettingsDesignSystemRowButton
-// Dependencies: [19, 17, 21, 7947, 5989, 575, 5508, 7949, 10311, 2]
+// Dependencies: [19, 17, 21, 8046, 6084, 575, 5603, 8048, 10410, 2]
 // Exports: default
 
-// Module 17254 (UserSettingsDesignSystemRowButton)
+// Module 17367 (UserSettingsDesignSystemRowButton)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import Stack_Stack from "Stack/Stack" /* 5989 */;
-import _mod7947 from "module_7947" /* 7947 */;
-import RowButton8 from "RowButton" /* 7949 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10311 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import Stack_Stack from "Stack/Stack" /* 6084 */;
+import _mod8046 from "module_8046" /* 8046 */;
+import RowButton8 from "RowButton" /* 8048 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10410 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -37,7 +37,7 @@ export default function UserSettingsDesignSystemRowButton() {
   let obj6;
   const obj = { children: items1 };
   const obj2 = { title: "Row Buttons", description: metroRequire(Stack, obj3), children: hasOwnProperty(_false, {}) };
-  const FormSection = _mod7947.FormSection;
+  const FormSection = _mod8046.FormSection;
   obj3 = { style: obj4, children: items };
   obj4 = { padding: nativeDefault.space.PX_16 };
   Stack = Stack_Stack.Stack;

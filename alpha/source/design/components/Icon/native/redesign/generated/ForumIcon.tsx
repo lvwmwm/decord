@@ -1,14 +1,14 @@
-// Module ID: 7028
-// Function ID: 7029
+// Module ID: 7123
+// Function ID: 7124
 // Name: ForumIcon
-// Dependencies: [19, 21, 575, 5603, 6991, 2]
+// Dependencies: [19, 21, 575, 5698, 7086, 2]
 // Exports: ForumIcon
 
-// Module 7028 (ForumIcon)
+// Module 7123 (ForumIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 6991 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 7086 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,86 +1,23 @@
-// Module ID: 7550
-// Function ID: 7551
+// Module ID: 7645
+// Function ID: 7646
 // Name: prefetchConjurePreviewFrame
-// Dependencies: [5, 7542, 6808, 6811, 7551, 7553, 6813, 7554, 6845, 2]
+// Dependencies: [7637, 6903, 6906, 7646, 7648, 7654, 2]
 // Exports: prefetchConjurePreviewFrame
 
-// Module 7550 (prefetchConjurePreviewFrame)
-import FramesConstants from "FramesConstants" /* 6811 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6813 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6845 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 7551 */;
-import createProxyTicket from "createProxyTicket" /* 7553 */;
-import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 7554 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 7542 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+// Module 7645 (prefetchConjurePreviewFrame)
+import FramesConstants from "FramesConstants" /* 6906 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 7646 */;
+import frameLaunchSteps from "frameLaunchSteps" /* 7648 */;
+import FrameLaunchTimingTypes from "FrameLaunchTimingTypes" /* 7654 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 7637 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2;
-
-let obj = function _loadPolicyAndApplication() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c1 === 2) {
-      c1 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c1 = 2;
-        if (0 === c2) {
-          if (arg0 === 1) {
-            c1 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c1 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            const items = [loadEmbeddedAppCSPForLaunchDefault(closure_0), ];
-            const useApplication = ApplicationActionCreators.useApplication;
-            const items1 = [closure_0];
-            items[1] = useApplication.fetchMany(items1);
-            c2 = 1;
-            c1 = 1;
-            const obj4 = { value: allSettled(items), done: false };
-            return obj4;
-          }
-        } else if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          c1 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp4) {
-        c1 = 3;
-        throw tmp4;
-      }
-    }
-  });
-  return obj(...arguments);
-};
 const isLaunched = FramesConstants.isLaunched;
 const result = size.fileFinishedImporting("modules/conjure/preview/prefetchConjurePreviewFrame.tsx");
 
 export function prefetchConjurePreviewFrame(projectId, arg1) {
-  function loadPolicyAndApplication() {
-    return obj(...arguments);
-  }
-  obj = arg1;
+  let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
@@ -95,8 +32,8 @@ export function prefetchConjurePreviewFrame(projectId, arg1) {
     prop = project.preview_application_id;
   }
   if (null != prop) {
-    const obj5 = conjurePreviewSurface2;
-    if (!isLaunched(obj5.getConjureBuilderPreviewFrame(prop))) {
+    const obj6 = conjurePreviewSurface2;
+    if (!isLaunched(obj6.getConjureBuilderPreviewFrame(prop))) {
       if (!flag) {
         let integrationStatus = obj2.getIntegrationStatus(projectId);
         if (integrationStatus == null) {
@@ -107,13 +44,12 @@ export function prefetchConjurePreviewFrame(projectId, arg1) {
           preview_ready = integrationStatus.preview_ready;
         }
       }
-      const getConjurePreviewSurface = conjurePreviewSurface2.getConjurePreviewSurface;
-      conjurePreviewSurface2;
-      const tmp12Result3 = conjurePreviewSurface2;
-      const conjurePreviewSurface = getConjurePreviewSurface(tmp12Result3.getConjurePreviewGuildId(project));
-      const tmp12Result4 = createProxyTicket;
-      tmp12Result4.prefetchProxyTicket(prop, getChannelIdForEmbeddedSurfaceDefault(conjurePreviewSurface), conjurePreviewSurface.type);
-      loadPolicyAndApplication(prop);
+      const tmp10Result = conjurePreviewSurface2;
+      const conjurePreviewGuildId = tmp10Result.getConjurePreviewGuildId(project);
+      const tmp10Result3 = conjurePreviewSurface2;
+      const conjurePreviewSurface = tmp10Result3.getConjurePreviewSurface(conjurePreviewGuildId);
+      const tmp10Result4 = frameLaunchSteps;
+      tmp10Result4.prefetchFrameLaunch(FrameLaunchTimingTypes.LaunchTrigger.CONJURE_PREVIEW_PREFETCH, prop, conjurePreviewSurface);
     }
   }
 }

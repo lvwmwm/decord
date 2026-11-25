@@ -1,19 +1,19 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 13095
+// Function ID: 13096
 // Name: AppLauncherRoleListActionSheet
-// Dependencies: [32, 19, 7360, 4824, 4823, 1071, 21, 12970, 8415, 504, 7361, 6018, 5508, 7029, 6862, 5131, 12957, 12958, 2]
+// Dependencies: [32, 19, 7455, 4919, 4918, 1071, 21, 13093, 8514, 504, 7456, 6113, 5603, 7124, 6957, 5226, 13080, 13081, 2]
 // Exports: default
 
-// Module 12972 (AppLauncherRoleListActionSheet)
+// Module 13095 (AppLauncherRoleListActionSheet)
 import Constants from "Constants" /* 1071 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4824 */;
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7361 */;
-import ShieldUserIcon2 from "ShieldUserIcon" /* 8415 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12970 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4919 */;
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7456 */;
+import ShieldUserIcon2 from "ShieldUserIcon" /* 8514 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 13093 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7360 */;
-import GuildRoleStore from "GuildRoleStore" /* 4823 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7455 */;
+import GuildRoleStore from "GuildRoleStore" /* 4918 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -59,16 +59,16 @@ class RoleRow {
       const obj = GuildRoleMemberActionCreatorsAll;
       const memberCounts = obj.fetchMemberCounts(guildId);
     }, items1);
-    const obj2 = { label: closure_10(guildRole(5508).Text, obj3), icon: closure_10(RoleIcon, { role: guildRole }), trailing: tmp8 };
-    const TableRow = guildRole(6018).TableRow;
+    const obj2 = { label: closure_10(guildRole(5603).Text, obj3), icon: closure_10(RoleIcon, { role: guildRole }), trailing: tmp8 };
+    const TableRow = guildRole(6113).TableRow;
     tmp8 = null;
     obj3 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: guildRole.name };
     if (!tmp5) {
       tmp8 = null;
       if (null != stateFromStores) {
         const obj4 = { variant: "body-sm/normal", color: "text-muted", children: items2 };
-        const Text = tmp2(5508).Text;
-        items2 = [closure_10(tmp2(7029).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
+        const Text = tmp2(5603).Text;
+        items2 = [closure_10(tmp2(7124).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
         tmp8 = closure_11(Text, obj4);
       }
     }

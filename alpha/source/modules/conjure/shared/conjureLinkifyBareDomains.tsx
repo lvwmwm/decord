@@ -1,10 +1,10 @@
-// Module ID: 18361
-// Function ID: 18362
+// Module ID: 18473
+// Function ID: 18474
 // Name: conjureLinkifyBareDomains
 // Dependencies: [2]
 // Exports: linkifyBareDomains
 
-// Module 18361 (conjureLinkifyBareDomains)
+// Module 18473 (conjureLinkifyBareDomains)
 import size from "module_2" /* 2 */;
 
 function linkifyToken(arg0) {

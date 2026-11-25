@@ -1,16 +1,16 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16377
+// Function ID: 16378
 // Name: FamilyCenterLinkRow
-// Dependencies: [19, 17, 21, 4917, 16257, 16258, 2]
+// Dependencies: [19, 17, 21, 5012, 16378, 16379, 2]
 // Exports: default
 
-// Module 16256 (FamilyCenterLinkRow)
+// Module 16377 (FamilyCenterLinkRow)
 import react_native from "react-native" /* 17 */;
-import FamilyCenterLinkWrapperDefault from "FamilyCenterLinkWrapper" /* 16257 */;
-import FamilyCenterRequestorDetailsDefault from "FamilyCenterRequestorDetails" /* 16258 */;
+import FamilyCenterLinkWrapperDefault from "FamilyCenterLinkWrapper" /* 16378 */;
+import FamilyCenterRequestorDetailsDefault from "FamilyCenterRequestorDetails" /* 16379 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c3;

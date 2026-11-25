@@ -1,19 +1,19 @@
-// Module ID: 17171
-// Function ID: 17172
+// Module ID: 17290
+// Function ID: 17291
 // Name: DevToolsGuildTagBadgesScreen
-// Dependencies: [32, 19, 17, 8438, 21, 4917, 575, 5989, 5508, 5515, 15152, 2]
+// Dependencies: [32, 19, 17, 8537, 21, 5012, 575, 6084, 5603, 5610, 15274, 2]
 // Exports: default
 
-// Module 17171 (DevToolsGuildTagBadgesScreen)
+// Module 17290 (DevToolsGuildTagBadgesScreen)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import badges_GuildBadge from "badges/GuildBadge" /* 15152 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import badges_GuildBadge from "badges/GuildBadge" /* 15274 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildTagConstants from "GuildTagConstants" /* 8438 */;
+import GuildTagConstants from "GuildTagConstants" /* 8537 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

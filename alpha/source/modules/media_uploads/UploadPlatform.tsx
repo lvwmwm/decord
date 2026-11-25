@@ -1,9 +1,9 @@
-// Module ID: 7986
-// Function ID: 7987
+// Module ID: 8085
+// Function ID: 8086
 // Name: UploadPlatform
 // Dependencies: [2]
 
-// Module 7986 (UploadPlatform)
+// Module 8085 (UploadPlatform)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/UploadPlatform.tsx");

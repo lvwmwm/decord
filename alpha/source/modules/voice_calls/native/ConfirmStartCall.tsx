@@ -1,13 +1,13 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 14033
+// Function ID: 14034
 // Name: ConfirmStartCall
-// Dependencies: [19, 21, 5926, 1112, 5926, 5922, 2]
+// Dependencies: [19, 21, 6021, 1112, 6021, 6017, 2]
 // Exports: confirmStartCall
 
-// Module 13910 (ConfirmStartCall)
+// Module 14033 (ConfirmStartCall)
 import intl5 from "intl" /* 1112 */;
-import useAlertStore from "useAlertStore" /* 5922 */;
-import AlertModal2 from "AlertModal" /* 5926 */;
+import useAlertStore from "useAlertStore" /* 6017 */;
+import AlertModal2 from "AlertModal" /* 6021 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

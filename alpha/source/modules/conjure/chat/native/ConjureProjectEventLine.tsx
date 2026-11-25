@@ -1,15 +1,15 @@
-// Module ID: 18527
-// Function ID: 18528
+// Module ID: 18639
+// Function ID: 18640
 // Name: ConjureProjectEventLine
-// Dependencies: [19, 21, 18520, 18516, 18528, 18494, 18530, 5508, 18532, 2]
+// Dependencies: [19, 21, 18632, 18628, 18640, 18606, 18642, 5603, 18644, 2]
 // Exports: default
 
-// Module 18527 (ConjureProjectEventLine)
-import Text_Text from "Text/Text" /* 5508 */;
-import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 18494 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18516 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 18520 */;
-import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 18528 */;
+// Module 18639 (ConjureProjectEventLine)
+import Text_Text from "Text/Text" /* 5603 */;
+import useConjureRemixSettingsRequestDefault from "useConjureRemixSettingsRequest" /* 18606 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18628 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 18632 */;
+import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 18640 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ export default function ConjureProjectEventLine(arg0) {
   const tmp4 = useConjureRemixSettingsRequestDefault(projectId, event);
   if ("voice_channel_pin" === event.type) {
     const obj2 = { projectId };
-    tmp8Result = _false(tmp(18530), obj2);
+    tmp8Result = _false(tmp(18642), obj2);
   } else {
     const obj3 = { variant: "body-md/normal", color: "text-default", children: tmp3 };
     const items = [_false(Text_Text.Text, obj3), ];
@@ -52,7 +52,7 @@ export default function ConjureProjectEventLine(arg0) {
     const tmp9 = React3;
     if (null != tmp4) {
       const obj = { projectId, request: tmp4, notifyAgent: false };
-      tmp10Result = tmp10(tmp(18532), obj);
+      tmp10Result = tmp10(tmp(18644), obj);
     }
     const obj4 = { children: items };
     items[1] = tmp10Result;

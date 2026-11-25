@@ -1,23 +1,23 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 17957
+// Function ID: 17958
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 7336, 13206, 1071, 7739, 21, 4917, 575, 8791, 504, 17846, 5604, 5508, 17847, 5515, 6930, 1112, 7432, 2]
+// Dependencies: [19, 17, 7431, 13329, 1071, 7838, 21, 5012, 575, 8890, 504, 17958, 5699, 5603, 17959, 5610, 7025, 1112, 7527, 2]
 // Exports: WaterwheelsCard, useWaterwheelsCardEligible
 
-// Module 17845 (WaterwheelsCard)
+// Module 17957 (WaterwheelsCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7739 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8791 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17846 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7838 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8890 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17958 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7336 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13206 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13329 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,14 +108,14 @@ function WaterwheelsCardContent(card) {
       if (null != layout.header.iconUrl) {
         let obj6 = { style: tmp.icon, source: obj7 };
         obj7 = { uri: layout.header.iconUrl };
-        tmp15 = closure_10(onAction(5604), obj6);
+        tmp15 = closure_10(onAction(5699), obj6);
       }
       items1 = [tmp15, ];
       const obj8 = { children: items2 };
       const obj9 = { variant: "heading-xs/semibold", children: layout.header.title };
-      items2 = [closure_10(tmp2(5508).Heading, obj9), ];
+      items2 = [closure_10(tmp2(5603).Heading, obj9), ];
       const obj10 = { variant: "body-sm/normal", children: layout.header.subtitle };
-      items2[1] = closure_10(tmp2(5508).Text, obj10);
+      items2[1] = closure_10(tmp2(5603).Text, obj10);
       items1[1] = closure_11(closure_5, obj8);
       items3 = [closure_11(closure_5, obj5), ];
       const obj11 = {
@@ -161,23 +161,23 @@ function WaterwheelsCardContent(card) {
       if (action != null) {
         type = action.type;
       }
-      if (type === tmp2(8791).WaterwheelsActionType.OPEN_CONNECTION) {
-        const obj12 = { style: tmp.card, children: closure_10(onAction(17847), obj13) };
+      if (type === tmp2(8890).WaterwheelsActionType.OPEN_CONNECTION) {
+        const obj12 = { style: tmp.card, children: closure_10(onAction(17959), obj13) };
         obj13 = { post: layout, action, onAction: handleAction };
         tmp25Result = closure_10(closure_5, obj12);
       } else {
         const obj14 = { style: tmp.card, children: items5 };
         const obj15 = { variant: "heading-sm/semibold", children: layout.title };
-        items5 = [closure_10(tmp2(5508).Heading, obj15), , , ];
+        items5 = [closure_10(tmp2(5603).Heading, obj15), , , ];
         const obj16 = { variant: "body-md/normal", children: layout.body };
-        items5[1] = closure_10(tmp2(5508).Text, obj16);
+        items5[1] = closure_10(tmp2(5603).Text, obj16);
         let tmp27Result = null;
         const tmp25 = closure_11;
         const tmp26 = closure_5;
         if (null != layout.imageUrl) {
           const obj17 = { style: tmp.media, source: obj18 };
           obj18 = { uri: layout.imageUrl };
-          tmp27Result = tmp27(onAction(5604), obj17);
+          tmp27Result = tmp27(onAction(5699), obj17);
         }
         items5[2] = tmp27Result;
         let tmp27Result2 = null;
@@ -190,7 +190,7 @@ function WaterwheelsCardContent(card) {
                           onAction(first, card);
                         }
             };
-            tmp27Result2 = tmp27(tmp2(5515).Button, obj19);
+            tmp27Result2 = tmp27(tmp2(5610).Button, obj19);
           }
         }
         items5[3] = tmp27Result2;

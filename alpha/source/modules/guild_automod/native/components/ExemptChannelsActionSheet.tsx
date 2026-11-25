@@ -1,21 +1,21 @@
-// Module ID: 19793
-// Function ID: 19794
+// Module ID: 19895
+// Function ID: 19896
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 7342, 4788, 4859, 1386, 21, 504, 7343, 5533, 6970, 6018, 19792, 1112, 2]
+// Dependencies: [19, 7437, 4883, 4954, 1386, 21, 504, 7438, 5628, 7065, 6113, 19894, 1112, 2]
 // Exports: default
 
-// Module 19793 (ExemptChannelsActionSheet)
+// Module 19895 (ExemptChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 6970 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7065 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7342 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7437 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TableRow = tmp(6018);
+const TableRow = tmp(6113);
 function getChannelOptionId(channel) {
   return channel.channel.id;
 }
@@ -64,7 +64,7 @@ export default function ExemptChannelsActionSheet(guildId) {
     }
     return tmp4;
   }, items5);
-  stateFromStores(19792);
+  stateFromStores(19894);
   const intl = guildId(1112).intl;
   const intl2 = guildId(1112).intl;
   return <tmp5 title={intl.string(guildId(1112).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1112).t.vephiL)} listId="automod-exempt-channels" items={memo} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;

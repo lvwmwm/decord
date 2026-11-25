@@ -1,24 +1,24 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17570
+// Function ID: 17571
 // Name: SystemNotifPermissionLayout
-// Dependencies: [5, 32, 19, 13206, 17460, 1071, 7739, 13207, 21, 3154, 4917, 575, 13215, 16925, 504, 1378, 1255, 13208, 10140, 5989, 6019, 11351, 5508, 1112, 5515, 17463, 7746, 13209, 17464, 2]
+// Dependencies: [5, 32, 19, 13329, 17571, 1071, 7838, 13330, 21, 3206, 5012, 575, 13338, 17046, 504, 1378, 1255, 13331, 10239, 6084, 6114, 11450, 5603, 1112, 5610, 17574, 7845, 13332, 17575, 2]
 // Exports: default
 
-// Module 17459 (SystemNotifPermissionLayout)
+// Module 17570 (SystemNotifPermissionLayout)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import _modDef3154 from "module_3154" /* 3154 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7739 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13208 */;
+import _modDef3206 from "module_3206" /* 3206 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7838 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13331 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13206 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17460 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13329 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17571 */;
 import Constants from "Constants" /* 1071 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13207 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13330 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,13 +37,12 @@ let obj6;
 let size;
 let tmp;
 let unpackModuleId;
-const react_nativeDefault = tmp(10140);
+const react_nativeDefault = tmp(10239);
 function SystemNotifPermissionHeader() {
   let BellSlashIcon;
   let Button;
   let Card;
   let NOTIFICATION_SETTINGS_PERMISSION_HEADER;
-  let QhXeCd;
   let Stack2;
   let items4;
   let items5;
@@ -53,6 +52,7 @@ function SystemNotifPermissionHeader() {
   let obj8;
   let string;
   let stringResult;
+  let v16rS15;
   let tmp = closure_20();
   obj = react;
   const context = react.useContext(closure_19);
@@ -125,20 +125,20 @@ function SystemNotifPermissionHeader() {
     const Heading = tmp3(tmp4[22]).Heading;
     if (null == context) {
       const intl2 = tmp3(tmp4[23]).intl;
-      stringResult = intl2.string(tmp6(tmp4[9])["4QQ7/n"]);
+      stringResult = intl2.string(tmp6(tmp4[9]).tzgzDS);
     } else {
       const intl = tmp3(tmp4[23]).intl;
       stringResult = intl.string(obj[context]);
     }
     items5 = [closure_15(Heading, obj12), ];
-    const obj13 = { variant: "body-sm/normal", color: "text-muted", style: tmp.centeredText, children: string(QhXeCd) };
+    const obj13 = { variant: "body-sm/normal", color: "text-muted", style: tmp.centeredText, children: string(v16rS15) };
     const Text = tmp3(tmp4[22]).Text;
     const intl3 = tmp3(tmp4[23]).intl;
     string = intl3.string;
     if (null == context) {
-      QhXeCd = tmp6(tmp4[9]).QhXeCd;
+      v16rS15 = tmp6(tmp4[9])["16rS15"];
     } else {
-      QhXeCd = obj2[context];
+      v16rS15 = obj2[context];
     }
     items5[1] = closure_15(Text, obj13);
     items4[1] = closure_16(Stack4, obj11);
@@ -147,10 +147,10 @@ function SystemNotifPermissionHeader() {
     Button = tmp3(tmp4[24]).Button;
     if (null == context) {
       const intl5 = tmp3(tmp4[23]).intl;
-      stringResult1 = intl5.string(tmp3(tmp4[23]).t["5xWOXv"]);
+      stringResult1 = intl5.string(tmp6(tmp4[9]).H7a8cl);
     } else {
       const intl4 = tmp3(tmp4[23]).intl;
-      stringResult1 = intl4.string(tmp6(tmp4[9]).FyqnR3);
+      stringResult1 = intl4.string(tmp6(tmp4[9]).q9AfQQ);
     }
     obj15 = { variant: "primary", size: "lg", grow: true, text: stringResult1, onPress: tmp18 };
     items4[2] = closure_15(Stack5, obj14);
@@ -162,8 +162,8 @@ function SystemNotifPermissionHeader() {
 let closure_10 = NativePermissionConstants.NotificationAuthorizationStatus;
 ({ EventActionLocation: unpackModuleId, EventActionType: closure_12, NotificationNudgeAnalyticsAction: map1, NotificationNudgeSurface: closure_14 } = NotificationPermissionConstants);
 ({ jsx: closure_15, jsxs: closure_16 } = Fragment);
-let obj = { "111_realtime": _modDef3154.dF4FmA, "222_social": _modDef3154.tgF0IR, "333_server": _modDef3154.rwJXCw, "444_other": _modDef3154["8gfmjs"] };
-let obj2 = { "111_realtime": _modDef3154.HszTZQ, "222_social": _modDef3154.UbGSlJ, "333_server": _modDef3154.Jweb0a, "444_other": _modDef3154.NQH8GA };
+let obj = { "111_realtime": _modDef3206.dF4FmA, "222_social": _modDef3206.tgF0IR, "333_server": _modDef3206.rwJXCw, "444_other": _modDef3206["8gfmjs"] };
+let obj2 = { "111_realtime": _modDef3206.CPpRtR, "222_social": _modDef3206.UbGSlJ, "333_server": _modDef3206.Jweb0a, "444_other": _modDef3206.XJ1gEw };
 const redux = react.createContext(undefined);
 let createStyles = createStyles_mod;
 let obj3 = { container: obj4, card: obj5, iconCircle: size, centeredText: { textAlign: "center" }, button: obj6 };
@@ -207,7 +207,7 @@ export default function SystemNotifPermissionLayout(node) {
             obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -260,11 +260,11 @@ export default function SystemNotifPermissionLayout(node) {
                 } else {
                   c2 = 0;
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp24) {
             if (0 === c2) {
@@ -292,21 +292,28 @@ export default function SystemNotifPermissionLayout(node) {
     let sections;
     obj = {
       sections: sections.map((label, index) => {
-        let intl;
-        let tmp = label;
+        let string;
+        let yVZ6qx;
+        let tmp2 = label;
         if (null != closure_1_2) {
-          tmp = label;
+          tmp2 = label;
           if (0 === index) {
-            tmp = label;
+            tmp2 = label;
             if (null == label.label) {
-              obj = { label: intl.string(unavailableNode(category[9])["/UdAvP"]) };
+              obj = { label: string(yVZ6qx) };
               const merged = Object.assign(label);
-              intl = node(category[23]).intl;
-              tmp = obj;
+              const intl = node(category[23]).intl;
+              string = intl.string;
+              if ("111_realtime" === tmp) {
+                yVZ6qx = unavailableNode(tmp7[9])["7m/dE/"];
+              } else {
+                yVZ6qx = unavailableNode(tmp7[9]).yVZ6qx;
+              }
+              tmp2 = obj;
             }
           }
         }
-        return tmp;
+        return tmp2;
       }),
       ListHeaderComponent: SystemNotifPermissionHeader
     };

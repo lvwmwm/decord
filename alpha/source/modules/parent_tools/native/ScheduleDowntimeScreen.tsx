@@ -1,25 +1,25 @@
-// Module ID: 16273
-// Function ID: 16274
+// Module ID: 16394
+// Function ID: 16395
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1386, 1071, 21, 5131, 8365, 2119, 4917, 575, 7808, 1112, 2824, 1500, 7224, 10457, 563, 16274, 16275, 5598, 5624, 5508, 6014, 7423, 6018, 7354, 5515, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 1071, 21, 5226, 8464, 2119, 5012, 575, 7907, 1112, 2846, 1500, 7319, 10556, 563, 16395, 16396, 5693, 5719, 5603, 6109, 7518, 6113, 7449, 5610, 2]
 // Exports: default
 
-// Module 16273 (ScheduleDowntimeScreen)
+// Module 16394 (ScheduleDowntimeScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl11 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import _modDef2824 from "module_2824" /* 2824 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import InlineNotice2 from "InlineNotice" /* 7808 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10457 */;
+import _modDef2846 from "module_2846" /* 2846 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import InlineNotice2 from "InlineNotice" /* 7907 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10556 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ function OverlappingSchedulesWarning(conflictingEntries) {
   conflictingEntries = conflictingEntries.conflictingEntries;
   let tmp = null;
   if (0 !== conflictingEntries.length) {
-    const obj = { type: "warning", message: intl.string(_modDef2824["26A0Df"]), messageList: conflictingEntries.map((dayLabel) => "" + dayLabel.dayLabel + "  " + dayLabel.timeRange), role: "status" };
+    const obj = { type: "warning", message: intl.string(_modDef2846["26A0Df"]), messageList: conflictingEntries.map((dayLabel) => "" + dayLabel.dayLabel + "  " + dayLabel.timeRange), role: "status" };
     const InlineNotice = InlineNotice2.InlineNotice;
     intl = intl11.intl;
     tmp = unpackModuleId(InlineNotice, obj);
@@ -118,7 +118,7 @@ export default function ScheduleDowntimeScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -199,7 +199,7 @@ export default function ScheduleDowntimeScreen() {
             closure_128_18(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp48) {
           closure_2 = tmp48;
           if (0 === c3) {
@@ -370,7 +370,7 @@ export default function ScheduleDowntimeScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -443,7 +443,7 @@ export default function ScheduleDowntimeScreen() {
           closure_129_18(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp41) {
         closure_3 = tmp41;
         if (0 === c4) {
@@ -546,14 +546,14 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f130718 = (first1) => {
+          const f131109 = (first1) => {
             closure_1_12(first1);
             obj = closure_2_0(rule[17]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;
             const time = { hours: Math.floor(result / 60), minutes: result % 60 };
             closure_1_14(time);
           };
-          const stringResult = intl.string(_modDef2824["8bLRt0"]);
+          const stringResult = intl.string(_modDef2846["8bLRt0"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -565,7 +565,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8365, dependencyMap.paths);
+          const tmp3 = asyncRequire(8464, dependencyMap.paths);
           new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeStartTimePicker", obj);
         }
@@ -583,7 +583,7 @@ export default function ScheduleDowntimeScreen() {
       onPress: function handleEndTimePress() {
           const intl = intl11.intl;
           closure_0 = closure_14;
-          const stringResult = intl.string(_modDef2824["+JkWJV"]);
+          const stringResult = intl.string(_modDef2846["+JkWJV"]);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           obj = {
             title: stringResult,
@@ -595,7 +595,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8365, dependencyMap.paths);
+          const tmp3 = asyncRequire(8464, dependencyMap.paths);
           new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeEndTimePicker", obj);
         }

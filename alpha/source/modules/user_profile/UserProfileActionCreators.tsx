@@ -1,20 +1,20 @@
-// Module ID: 9293
-// Function ID: 9294
+// Module ID: 9392
+// Function ID: 9393
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1386, 1071, 1388, 1107, 4924, 1112, 1255, 9294, 8203, 572, 7217, 1284, 7213, 5666, 2]
+// Dependencies: [5, 1386, 1071, 1388, 1107, 5019, 1112, 1255, 9393, 8302, 572, 7312, 1284, 7308, 5761, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 9293 (UserProfileActionCreators)
+// Module 9392 (UserProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import intl3 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import shared from "shared" /* 4924 */;
-import InlineUploaderDefault from "InlineUploader" /* 7213 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7217 */;
-import MessageParserDefault from "MessageParser" /* 8203 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 9294 */;
+import shared from "shared" /* 5019 */;
+import InlineUploaderDefault from "InlineUploader" /* 7308 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7312 */;
+import MessageParserDefault from "MessageParser" /* 8302 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 9393 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
@@ -49,7 +49,7 @@ let obj = function _saveProfileChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ let obj = function _saveProfileChanges() {
                 return obj12;
               } else {
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (1 === c8) {

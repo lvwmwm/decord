@@ -1,15 +1,15 @@
-// Module ID: 10718
-// Function ID: 10719
+// Module ID: 10817
+// Function ID: 10818
 // Name: StickerPickerListEmptyState
-// Dependencies: [19, 17, 1071, 21, 4917, 575, 9603, 5149, 1186, 1112, 10719, 2]
+// Dependencies: [19, 17, 1071, 21, 5012, 575, 9702, 5244, 1186, 1112, 10818, 2]
 
-// Module 10718 (StickerPickerListEmptyState)
+// Module 10817 (StickerPickerListEmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -32,10 +32,10 @@ const memoResult = react.memo(function StickerPickerListEmptyState(insetBottom) 
   const items = [insetBottom, insetTop];
   const tmp = closure_7();
   const memo = react.useMemo(() => ({ marginBottom: insetBottom + EXPRESSION_FOOTER_HEIGHT, marginTop: insetTop, flex: 1 }), items);
-  const obj = insetTop(9603);
+  const obj = insetTop(9702);
   const modalDismissGuardRefreshControl = obj.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(5149).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(5244).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -43,7 +43,7 @@ const memoResult = react.memo(function StickerPickerListEmptyState(insetBottom) 
   if (inActionSheet) {
     tmp7 = modalDismissGuardRefreshControl;
   }
-  ({ body: intl.string(insetTop(1112).t.jyiGfc), bodyStyle: null, containerStyle: null, imageStyle: null, source: insetBottom(10719), titleStyle: { marginBottom: 0 } });
+  ({ body: intl.string(insetTop(1112).t.jyiGfc), bodyStyle: null, containerStyle: null, imageStyle: null, source: insetBottom(10818), titleStyle: { marginBottom: 0 } });
   const RefreshEmptyState = tmp3(1186).RefreshEmptyState;
   intl = tmp3(1112).intl;
   ({ emptyStateBody: obj3.bodyStyle, emptyStateContainer: obj3.containerStyle, emptyStateImage: obj3.imageStyle } = tmp);

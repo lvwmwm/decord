@@ -1,17 +1,18 @@
-// Module ID: 16934
-// Function ID: 16935
+// Module ID: 17055
+// Function ID: 17056
 // Name: IOSNativePhoneIntegrationSetting
-// Dependencies: [9414, 16935, 1378, 1112, 4742, 11815, 15681, 16930, 2]
+// Dependencies: [9513, 17056, 1378, 1112, 4837, 11914, 15802, 3206, 17051, 2]
 
-// Module 16934 (IOSNativePhoneIntegrationSetting)
+// Module 17055 (IOSNativePhoneIntegrationSetting)
 import intl2 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15681 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
-import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 16935 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11815 */;
+import _modDef3206 from "module_3206" /* 3206 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15802 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
+import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 17056 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -45,6 +46,10 @@ const merged = Object.assign(obj);
 const toggle = createToggle(obj2);
 SettingBuilders = SettingBuilders_mod;
 let obj3 = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(_modDef3206["eled/j"]);
+  },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
     const obj = CallKitMetricCollectionExperimentDefault;

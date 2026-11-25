@@ -1,24 +1,24 @@
-// Module ID: 4867
-// Function ID: 4868
+// Module ID: 4962
+// Function ID: 4963
 // Name: EmojiUtils
-// Dependencies: [5, 4868, 4770, 4849, 1386, 1071, 1389, 1388, 4866, 2108, 2173, 4871, 4841, 4873, 1491, 1412, 2]
+// Dependencies: [5, 4963, 4865, 4944, 1386, 1071, 1389, 1388, 4961, 2108, 2173, 4966, 4936, 4968, 1491, 1412, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 4867 (EmojiUtils)
+// Module 4962 (EmojiUtils)
 import Constants from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import ImageUtils from "ImageUtils" /* 1491 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4841 */;
-import EmojiTypes from "EmojiTypes" /* 4866 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 4871 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 4873 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4936 */;
+import EmojiTypes from "EmojiTypes" /* 4961 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 4966 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 4968 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmojiPackStore from "EmojiPackStore" /* 4868 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+import EmojiPackStore from "EmojiPackStore" /* 4963 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import UserStore from "UserStore" /* 1386 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import size from "module_2" /* 2 */;
@@ -208,7 +208,7 @@ let obj = function _getEmojiColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -288,7 +288,7 @@ obj = {
       const tmp2 = require;
       if (EmojiTypes.EmojiTypes.GUILD !== type) {
         flag = true;
-        if (tmp2(4866).EmojiTypes.PACK !== type) {
+        if (tmp2(4961).EmojiTypes.PACK !== type) {
           flag = null != type.guildId;
         }
       }
@@ -428,7 +428,7 @@ export function countEmoji(arr, arg1) {
         } else {
           closure_3 = closure_3 + 1;
         }
-      } else if (tmp2(4866).EmojiTypes.PACK === type) {
+      } else if (tmp2(4961).EmojiTypes.PACK === type) {
         closure_3 = closure_3 + 1;
       }
       if (id.animated) {

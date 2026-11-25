@@ -1,8 +1,8 @@
-// Module ID: 8303
-// Function ID: 8304
+// Module ID: 8402
+// Function ID: 8403
 // Dependencies: [2]
 
-// Module 8303
+// Module 8402
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/guild-room-duck-2.png.js");

@@ -1,10 +1,10 @@
-// Module ID: 18504
-// Function ID: 18505
+// Module ID: 18616
+// Function ID: 18617
 // Name: conjureBotPermissionsTip
 // Dependencies: [2]
 // Exports: isBotPermissionsReviewPending, resolveBotPermissionsTip
 
-// Module 18504 (conjureBotPermissionsTip)
+// Module 18616 (conjureBotPermissionsTip)
 import size from "module_2" /* 2 */;
 
 function resolveBotPermissionsTip(publish) {
@@ -16,7 +16,7 @@ function resolveBotPermissionsTip(publish) {
       state = publish.state;
     }
     str = null;
-    const tmp2 = "action_needed" === state && "review_permissions" === publish.action;
+    const tmp2 = "action_needed" === state && publish.permissionsChanged;
     if (tmp2) {
       str = "hint";
     }
@@ -30,7 +30,7 @@ export function isBotPermissionsReviewPending(state) {
   if (state != null) {
     state = state.state;
   }
-  return "action_needed" === state && "review_permissions" === state.action;
+  return "action_needed" === state && state.permissionsChanged;
 }
 export { resolveBotPermissionsTip };
 export const CONJURE_BOT_PERMISSIONS_TIP_BASE = { id: "bot_permissions", priority: 3, resolve: resolveBotPermissionsTip };

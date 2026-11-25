@@ -1,14 +1,14 @@
-// Module ID: 12142
-// Function ID: 12143
+// Module ID: 12241
+// Function ID: 12242
 // Name: GamesActionCreators
-// Dependencies: [5, 1071, 10050, 12143, 1091, 8260, 5596, 572, 1284, 12144, 12146, 10055, 2]
+// Dependencies: [5, 1071, 10149, 12242, 1091, 8359, 5691, 572, 1284, 12243, 12245, 10154, 2]
 
-// Module 12142 (GamesActionCreators)
+// Module 12241 (GamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LinkingDefault from "Linking" /* 5596 */;
-import Constants2 from "Constants" /* 10050 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12143 */;
-import fetchDetectableGamesDefault from "fetchDetectableGames" /* 12144 */;
+import LinkingDefault from "Linking" /* 5691 */;
+import Constants2 from "Constants" /* 10149 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12242 */;
+import fetchDetectableGamesDefault from "fetchDetectableGames" /* 12243 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -182,7 +182,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,17 +1,17 @@
-// Module ID: 13391
-// Function ID: 13392
+// Module ID: 13514
+// Function ID: 13515
 // Name: useGameServerPerk
-// Dependencies: [19, 10229, 8157, 8156, 7499, 504, 13392, 1112, 3314, 13393, 2]
+// Dependencies: [19, 10328, 8256, 8255, 7594, 504, 13515, 1112, 3366, 13516, 2]
 // Exports: default
 
-// Module 13391 (useGameServerPerk)
+// Module 13514 (useGameServerPerk)
 import intl3 from "intl" /* 1112 */;
-import _modDef3314 from "module_3314" /* 3314 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8156 */;
-import GameServerConstants from "GameServerConstants" /* 8157 */;
-import _modDef13393 from "module_13393" /* 13393 */;
+import _modDef3366 from "module_3366" /* 3366 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8255 */;
+import GameServerConstants from "GameServerConstants" /* 8256 */;
+import _modDef13516 from "module_13516" /* 13516 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 10229 */;
+import GameServerStore from "GameServerStore" /* 10328 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ export default function useGameServerPerk(guildId) {
     if (gameServerEnabled) {
       tmp = null;
       if (null != stateFromStores) {
-        const obj = { skuId, title: intl.string(_modDef3314["B3OfL/"]), description: intl2.format(_modDef3314["+UqyGU"], obj2), cost: tmp2, dependencies: [], type: GuildPowerupType.PERK, animatedImageUrl: _modDef13393, staticImageUrl: _modDef13393 };
+        const obj = { skuId, title: intl.string(_modDef3366["B3OfL/"]), description: intl2.format(_modDef3366["+UqyGU"], obj2), cost: tmp2, dependencies: [], type: GuildPowerupType.PERK, animatedImageUrl: _modDef13516, staticImageUrl: _modDef13516 };
         intl = intl3.intl;
         intl2 = intl3.intl;
         tmp = obj;

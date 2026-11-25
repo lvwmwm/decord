@@ -1,19 +1,19 @@
-// Module ID: 17962
-// Function ID: 17963
+// Module ID: 18074
+// Function ID: 18075
 // Name: GuildsBarGeoRestrictedGuild
-// Dependencies: [19, 17900, 21, 4917, 575, 17916, 17912, 1412, 6926, 5920, 1112, 8432, 17963, 17932, 5604, 2]
+// Dependencies: [19, 18012, 21, 5012, 575, 18028, 18024, 1412, 7021, 6015, 1112, 8531, 18075, 18044, 5699, 2]
 
-// Module 17962 (GuildsBarGeoRestrictedGuild)
+// Module 18074 (GuildsBarGeoRestrictedGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5920 */;
-import GuildIcon from "GuildIcon" /* 6926 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17900 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 17912 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 17916 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
+import GuildIcon from "GuildIcon" /* 7021 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18012 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 18024 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18028 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -29,7 +29,7 @@ const memoResult = react.memo(function GuildsBarGeoRestrictedGuild(restrictedGui
   let tmp8Result;
   restrictedGuild = restrictedGuild.restrictedGuild;
   let tmp = closure_5();
-  let obj = restrictedGuild(17912);
+  let obj = restrictedGuild(18024);
   let animatableSourceWithFallback = null;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const tmp2 = restrictedGuild;
@@ -76,9 +76,9 @@ const memoResult = react.memo(function GuildsBarGeoRestrictedGuild(restrictedGui
   GuildsBarAnimatedItemWrapperDefault;
   if (null != animatableSourceWithFallback) {
     const obj6 = { source: animatableSourceWithFallback, style: tmp.guildIcon, fadeDuration: 0 };
-    tmp8Result = tmp8(tmp9(5604), obj6);
+    tmp8Result = tmp8(tmp9(5699), obj6);
   } else {
-    const obj7 = { value: restrictedGuild.name, selected: false, animate: false, size: tmp2(6926).GuildIconSizes.LARGE };
+    const obj7 = { value: restrictedGuild.name, selected: false, animate: false, size: tmp2(7021).GuildIconSizes.LARGE };
     const tmp9Result = GuildIconDefault;
     tmp8Result = tmp8(tmp9Result, obj7);
   }

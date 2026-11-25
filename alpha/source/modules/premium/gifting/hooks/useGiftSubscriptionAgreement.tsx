@@ -1,10 +1,10 @@
-// Module ID: 11787
-// Function ID: 11788
+// Module ID: 11886
+// Function ID: 11887
 // Name: useGiftSubscriptionAgreement
-// Dependencies: [5, 32, 19, 11786, 11781, 2]
+// Dependencies: [5, 32, 19, 11885, 11880, 2]
 // Exports: default
 
-// Module 11787 (useGiftSubscriptionAgreement)
+// Module 11886 (useGiftSubscriptionAgreement)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -21,7 +21,7 @@ export default function useGiftSubscriptionAgreement(code) {
   if (code != null) {
     code = code.code;
   }
-  let obj = code(11786);
+  let obj = code(11885);
   let isResolvingAgreement = obj.needsGiftSubscriptionAgreement(code);
   [first, dependencyMap] = react.useState(false);
   const items = [code, isResolvingAgreement];
@@ -43,7 +43,7 @@ export default function useGiftSubscriptionAgreement(code) {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c4;
@@ -85,7 +85,7 @@ export default function useGiftSubscriptionAgreement(code) {
               }
               tmp(true);
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp19) {
             closure_3 = tmp19;

@@ -1,13 +1,13 @@
-// Module ID: 5046
-// Function ID: 5047
+// Module ID: 5141
+// Function ID: 5142
 // Name: BountiesScrollIndicatorRive
-// Dependencies: [109, 19, 21, 4986, 5047, 5039, 2]
+// Dependencies: [109, 19, 21, 5081, 5142, 5134, 2]
 // Exports: BountiesScrollIndicatorRive
 
-// Module 5046 (BountiesScrollIndicatorRive)
+// Module 5141 (BountiesScrollIndicatorRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 4986 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5039 */;
+import BaseRive2 from "BaseRive" /* 5081 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5134 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

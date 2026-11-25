@@ -1,18 +1,18 @@
-// Module ID: 20045
-// Function ID: 20046
+// Module ID: 20147
+// Function ID: 20148
 // Name: FormGuildGatingModeSelector
-// Dependencies: [19, 17, 21, 4917, 575, 20046, 5921, 1112, 5508, 20048, 7020, 7196, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 20148, 6016, 1112, 5603, 20150, 7115, 7291, 2]
 // Exports: default
 
-// Module 20045 (FormGuildGatingModeSelector)
+// Module 20147 (FormGuildGatingModeSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5921 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -43,7 +43,7 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
   const onChange = isFullServerGating.onChange;
   let tmp = closure_8();
   dependencyMap = tmp;
-  let obj = isFullServerGating(20046);
+  let obj = isFullServerGating(20148);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   let items = [onChange];
   const items1 = [onChange, isFullServerGating, tmp];
@@ -76,13 +76,13 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
     }
     onChange(true);
   }, items1);
-  let obj3 = { icon: isFullServerGating(7020).TextIcon, title: intl.string(isFullServerGating(1112).t.rXqxhF), description: intl2.string(isFullServerGating(1112).t.yQiJne), selected: !isFullServerGating, onPress: callback, disabled: roleSubscriptionSettingsDisabled };
-  const tmp5 = onChange(20048);
+  let obj3 = { icon: isFullServerGating(7115).TextIcon, title: intl.string(isFullServerGating(1112).t.rXqxhF), description: intl2.string(isFullServerGating(1112).t.yQiJne), selected: !isFullServerGating, onPress: callback, disabled: roleSubscriptionSettingsDisabled };
+  const tmp5 = onChange(20150);
   intl = isFullServerGating(1112).intl;
   intl2 = isFullServerGating(1112).intl;
   items2 = [closure_5(tmp5, obj3), ];
-  let obj4 = { icon: isFullServerGating(7196).KeyIcon, title: intl3.string(isFullServerGating(1112).t.WzC9s6), description: intl4.string(isFullServerGating(1112).t.WmagiB), selected: isFullServerGating, onPress: callback1, disabled: roleSubscriptionSettingsDisabled };
-  const tmp6 = onChange(20048);
+  let obj4 = { icon: isFullServerGating(7291).KeyIcon, title: intl3.string(isFullServerGating(1112).t.WzC9s6), description: intl4.string(isFullServerGating(1112).t.WmagiB), selected: isFullServerGating, onPress: callback1, disabled: roleSubscriptionSettingsDisabled };
+  const tmp6 = onChange(20150);
   intl3 = isFullServerGating(1112).intl;
   intl4 = isFullServerGating(1112).intl;
   items2[1] = closure_5(tmp6, obj4);

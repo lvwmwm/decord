@@ -1,26 +1,26 @@
-// Module ID: 16109
-// Function ID: 16110
+// Module ID: 16230
+// Function ID: 16231
 // Name: PasskeysSpotIllustration
-// Dependencies: [19, 21, 16110, 16111, 16112, 7135, 5604, 2]
+// Dependencies: [19, 21, 16231, 16232, 16233, 7230, 5699, 2]
 // Exports: PasskeysSpotIllustration
 
-// Module 16109 (PasskeysSpotIllustration)
+// Module 16230 (PasskeysSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7135 */;
-import _modDef16110 from "module_16110" /* 16110 */;
-import _modDef16111 from "module_16111" /* 16111 */;
-import _modDef16112 from "module_16112" /* 16112 */;
+import react_native from "react-native" /* 7230 */;
+import _modDef16231 from "module_16231" /* 16231 */;
+import _modDef16232 from "module_16232" /* 16232 */;
+import _modDef16233 from "module_16233" /* 16233 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef16110 };
+let obj2 = { uri: _modDef16231 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef16111 };
+let obj3 = { uri: _modDef16232 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef16112 };
-({ uri: _modDef16112 });
+obj[3] = { uri: _modDef16233 };
+({ uri: _modDef16233 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PasskeysSpotIllustration.native.tsx");
 

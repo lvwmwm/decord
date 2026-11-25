@@ -1,14 +1,14 @@
-// Module ID: 19520
-// Function ID: 19521
+// Module ID: 19632
+// Function ID: 19633
 // Name: DmSettingsUpsellActionCreators
-// Dependencies: [19521, 510, 5131, 19522, 2119, 19523, 2]
+// Dependencies: [19633, 510, 5226, 19634, 2119, 19635, 2]
 
-// Module 19520 (DmSettingsUpsellActionCreators)
+// Module 19632 (DmSettingsUpsellActionCreators)
 import Storage3 from "Storage" /* 510 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19523 */;
-import DmSettingsUpsellConstants from "DmSettingsUpsellConstants" /* 19521 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19635 */;
+import DmSettingsUpsellConstants from "DmSettingsUpsellConstants" /* 19633 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -29,7 +29,7 @@ let obj = {
     }
     const obj = { guildId };
     const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.openLazy(asyncRequire(19522, tmp2.paths), "dm_settings_upsell_modal", obj);
+    obj2.openLazy(asyncRequire(19634, tmp2.paths), "dm_settings_upsell_modal", obj);
     const Storage2 = tmp(510).Storage;
     const result = Storage2.set(tmp3, timestamp);
   }

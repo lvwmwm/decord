@@ -1,21 +1,21 @@
-// Module ID: 19489
-// Function ID: 19490
+// Module ID: 19601
+// Function ID: 19602
 // Name: VoicePermissionManager
-// Dependencies: [6727, 5566, 502, 4766, 2131, 5725, 1071, 7739, 7740, 19490, 6677, 7349, 2]
+// Dependencies: [6822, 5661, 502, 4861, 2131, 5820, 1071, 7838, 7839, 19602, 6772, 7444, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 19489 (VoicePermissionManager)
+// Module 19601 (VoicePermissionManager)
 import Constants from "Constants" /* 1071 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6677 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7739 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7740 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6727 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5566 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6772 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7838 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7839 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6822 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5661 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 const InputModes = Constants.InputModes;
@@ -41,7 +41,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
     voiceStates = voiceStates.voiceStates;
     const item = voiceStates.forEach(function(item) {
       let userId;
-      const f117959 = (result) => {
+      const f118341 = (result) => {
         const tmp = result;
         if (tmp) {
           closure_1_1(closure_1_2[9])(true);
@@ -64,7 +64,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
               if (isSpeakerResult) {
                 const obj4 = NativePermissionUtilsDefault;
                 const permission = obj4.requestPermission(constants2.AUDIO);
-                permission.then(f117959);
+                permission.then(f118341);
                 const tmp17 = importDefault;
                 const tmp18 = dependencyMap;
                 const tmp19 = constants2;
@@ -81,7 +81,7 @@ class VoicePermissionManager extends AutomaticLifecycleManager {
                 if (audienceRequestToSpeakState === useAudienceRequestToSpeakState.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) {
                   const obj2 = NativePermissionUtilsDefault;
                   const permission2 = obj2.requestPermission(constants2.AUDIO);
-                  permission2.then(f117959);
+                  permission2.then(f118341);
                   const tmp11 = importDefault;
                   const tmp12 = constants2;
                   if (MediaEngineStore.getMode() === constants.PUSH_TO_TALK) {

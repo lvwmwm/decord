@@ -1,21 +1,21 @@
-// Module ID: 8110
-// Function ID: 8111
+// Module ID: 8209
+// Function ID: 8210
 // Name: modules/Messages
-// Dependencies: [5, 32, 5723, 4766, 8111, 3, 6659, 4795, 8117, 8120, 4796, 11, 2]
+// Dependencies: [5, 32, 5818, 4861, 8210, 3, 6754, 4890, 8216, 8219, 4891, 11, 2]
 // Exports: isLikelyNotDelta
 
-// Module 8110 (modules/Messages)
+// Module 8209 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4795 */;
-import _mod4796 from "module_4796" /* 4796 */;
-import requireSortedDescending from "requireSortedDescending" /* 6659 */;
-import isReadableChannel from "isReadableChannel" /* 8117 */;
-import KvMessage2 from "KvMessage" /* 8120 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4890 */;
+import _mod4891 from "module_4891" /* 4891 */;
+import requireSortedDescending from "requireSortedDescending" /* 6754 */;
+import isReadableChannel from "isReadableChannel" /* 8216 */;
+import KvMessage2 from "KvMessage" /* 8219 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 8111 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 8210 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, importDefault;
@@ -140,7 +140,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -351,7 +351,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channel_id, item10009, result);
-    put(guildId, channel_id, fromMessageResult, _mod4796.ConflictOptions.Skip);
+    put(guildId, channel_id, fromMessageResult, _mod4891.ConflictOptions.Skip);
   }
   upsertOne(guildId, channelId, message, database) {
     const obj = DatabaseDaosDefault;
@@ -360,7 +360,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channelId, message, result);
-    put(guildId, channelId, fromMessageResult, _mod4796.ConflictOptions.Replace);
+    put(guildId, channelId, fromMessageResult, _mod4891.ConflictOptions.Replace);
     messagesTransactionResult.trimChannel(guildId, channelId, SaveableChannelsStore.saveLimit(channelId));
   }
   upsertMany(guild_id, channelId, messages, database) {
@@ -416,7 +416,7 @@ class Messages {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -468,7 +468,7 @@ class Messages {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;

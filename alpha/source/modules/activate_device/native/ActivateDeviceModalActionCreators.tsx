@@ -1,11 +1,11 @@
-// Module ID: 15109
-// Function ID: 15110
+// Module ID: 15231
+// Function ID: 15232
 // Name: ActivateDeviceModalActionCreators
-// Dependencies: [6004, 15110, 2119, 2]
+// Dependencies: [6099, 15232, 2119, 2]
 
-// Module 15109 (ActivateDeviceModalActionCreators)
+// Module 15231 (ActivateDeviceModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
 import size from "module_2" /* 2 */;
 
 const ACTIVATE_DEVICE_MODAL_KEY = "ACTIVATE_DEVICE_MODAL_KEY";
@@ -13,7 +13,7 @@ let obj = {
   showModal(userCode) {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { userCode };
-    obj.pushLazy(asyncRequire(15110, dependencyMap.paths), obj2, ACTIVATE_DEVICE_MODAL_KEY);
+    obj.pushLazy(asyncRequire(15232, dependencyMap.paths), obj2, ACTIVATE_DEVICE_MODAL_KEY);
   },
   hideModal() {
     const obj = ModalActionCreatorsDefault;

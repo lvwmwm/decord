@@ -1,22 +1,22 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16460
+// Function ID: 16461
 // Name: OrbChallengeListItem
-// Dependencies: [5, 32, 19, 17, 21, 4917, 575, 15059, 1112, 2375, 13661, 9774, 5515, 7432, 5508, 9324, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5012, 575, 15181, 1112, 2386, 13784, 9873, 5610, 7527, 5603, 9423, 2]
 // Exports: OrbChallengeListItem
 
-// Module 16339 (OrbChallengeListItem)
+// Module 16460 (OrbChallengeListItem)
 import nativeDefault from "native" /* 575 */;
-import _modDef2375 from "module_2375" /* 2375 */;
-import OrbsIcon2 from "OrbsIcon" /* 9324 */;
-import _modDef9774 from "module_9774" /* 9774 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13661 */;
-import OrbChallengeTypes from "OrbChallengeTypes" /* 15059 */;
+import _modDef2386 from "module_2386" /* 2386 */;
+import OrbsIcon2 from "OrbsIcon" /* 9423 */;
+import _modDef9873 from "module_9873" /* 9873 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13784 */;
+import OrbChallengeTypes from "OrbChallengeTypes" /* 15181 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -42,15 +42,15 @@ function OrbChallengeAsset(achievementStatus) {
   if (achievementStatus !== OrbChallengeTypes.UserAchievementStatus.COMPLETED) {
     let tmp8;
     if (achievementStatus !== OrbChallengeTypes.UserAchievementStatus.CLAIMED) {
-      size = { assetUrl: _modDef9774, isAnimatedAsset, height: 40, width: 40 };
+      size = { assetUrl: _modDef9873, isAnimatedAsset, height: 40, width: 40 };
       const tmp6 = QuestDockRewardTileDefault;
       tmp8 = metroImportAll(tmp6, size);
     }
     return tmp8;
   }
-  const obj = { style: tmp.completedRing, accessible: true, accessibilityLabel: intl.string(_modDef2375.k6h2J3), children: metroImportAll(tmp9, size1) };
+  const obj = { style: tmp.completedRing, accessible: true, accessibilityLabel: intl.string(_modDef2386.k6h2J3), children: metroImportAll(tmp9, size1) };
   intl = tmp2(1112).intl;
-  size1 = { assetUrl: _modDef9774, isAnimatedAsset, height: 32, width: 32, style: tmp.completedTile };
+  size1 = { assetUrl: _modDef9873, isAnimatedAsset, height: 32, width: 32, style: tmp.completedTile };
   tmp9 = QuestDockRewardTileDefault;
   tmp8 = metroImportAll(metroImportDefault, obj);
 }
@@ -106,7 +106,7 @@ export function OrbChallengeListItem(achievementIdentifier) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -149,7 +149,7 @@ export function OrbChallengeListItem(achievementIdentifier) {
           closure_128_5(false);
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp20) {
         closure_2 = tmp20;
         if (0 === c3) {
@@ -175,14 +175,14 @@ export function OrbChallengeListItem(achievementIdentifier) {
         tmp6 = null;
         if (tmp3) {
           const obj = { size: "md", color: nativeDefault.colors.ICON_SUBTLE, accessible: false };
-          const ChevronSmallRightIcon = tmp4(7432).ChevronSmallRightIcon;
+          const ChevronSmallRightIcon = tmp4(7527).ChevronSmallRightIcon;
           tmp6 = metroImportAll(ChevronSmallRightIcon, obj);
         }
       }
       return tmp6;
     }
-    const obj2 = { variant: "primary", size: "sm", text: intl.string(_modDef2375.WmfVjs), loading, onPress: tmp2 };
-    const Button = tmp4(5515).Button;
+    const obj2 = { variant: "primary", size: "sm", text: intl.string(_modDef2386.WmfVjs), loading, onPress: tmp2 };
+    const Button = tmp4(5610).Button;
     intl = tmp4(1112).intl;
     tmp6 = metroImportAll(Button, obj2);
   }, items1);

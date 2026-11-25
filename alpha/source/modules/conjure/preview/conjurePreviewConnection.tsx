@@ -1,26 +1,26 @@
-// Module ID: 7591
-// Function ID: 7592
+// Module ID: 7690
+// Function ID: 7691
 // Name: conjurePreviewConnection
-// Dependencies: [5, 1386, 6808, 7592, 7594, 14570, 14562, 572, 11325, 7550, 7581, 7541, 14490, 7547, 14567, 14571, 14572, 2]
+// Dependencies: [5, 1386, 6903, 7691, 7693, 14692, 14684, 572, 11424, 7645, 7680, 7636, 14613, 7642, 14689, 14693, 14694, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 7591 (conjurePreviewConnection)
+// Module 7690 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7541 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 7547 */;
-import conjureChatConnection from "conjureChatConnection" /* 7581 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7592 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7594 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11325 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 14490 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 14562 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 14567 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 14570 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 14571 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 14572 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 7642 */;
+import conjureChatConnection from "conjureChatConnection" /* 7680 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7691 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7693 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11424 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 14613 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 14684 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 14689 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 14692 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 14693 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 14694 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
 import size from "module_2" /* 2 */;
 
 let c0, closure_3, currentUser;
@@ -38,7 +38,7 @@ let obj = function _refetchWidgetData() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -81,7 +81,7 @@ let obj = function _refetchWidgetData() {
           c2 = 0;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         if (0 === c2) {
           c0 = 3;
@@ -109,7 +109,7 @@ obj = function _getPreviewScreenshotUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -184,7 +184,7 @@ obj = function _uploadOverlayBackground() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -216,7 +216,7 @@ obj = function _uploadOverlayBackground() {
             closure_0 = value;
             if (closure_0.ok) {
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -249,7 +249,7 @@ obj = function _resetOverlayBackground() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -282,7 +282,7 @@ obj = function _resetOverlayBackground() {
           closure_0 = value;
           if (closure_0.ok) {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -317,7 +317,7 @@ obj = function _getOverlayBackgroundUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -389,7 +389,7 @@ obj = function _relayCaptureRequest() {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c6;
@@ -473,7 +473,7 @@ obj = function _relayCaptureRequest() {
             resolveUploadUrl = closure_1;
             const sendCaptureAckResult = closure_1.sendCaptureAck(closure_2.id, resolveUploadUrl.status, resolveUploadUrl.code, resolveUploadUrl.message);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp23) {
           let closure_5 = tmp23;
@@ -510,7 +510,7 @@ obj = function _relayControlRequest() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -569,7 +569,7 @@ obj = function _relayControlRequest() {
               c6 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp27) {
           closure_5 = tmp27;
@@ -599,7 +599,7 @@ obj = function _getClientCaptureUploadUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -756,7 +756,7 @@ let obj2 = {
       });
       const tmp4 = require;
       if (true === has_activity.has_activity) {
-        const tmp4Result = tmp4(7550);
+        const tmp4Result = tmp4(7645);
         const result1 = tmp4Result.prefetchConjurePreviewFrame(projectId, { known: true });
       }
     }

@@ -1,24 +1,24 @@
-// Module ID: 12699
-// Function ID: 12700
+// Module ID: 12863
+// Function ID: 12864
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 12439, 12441, 12422, 6296, 6638, 1653, 12434, 12442, 2]
+// Dependencies: [19, 17, 21, 575, 12603, 12605, 12586, 6391, 6733, 1653, 12598, 12606, 2]
 // Exports: default
 
-// Module 12699 (CheckpointRecapCard)
+// Module 12863 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6638 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12422 */;
-import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 12439 */;
-import useCheckpointCompositeRevealStyleDefault from "useCheckpointCompositeRevealStyle" /* 12441 */;
+import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6733 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12586 */;
+import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 12603 */;
+import useCheckpointCompositeRevealStyleDefault from "useCheckpointCompositeRevealStyle" /* 12605 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const _modDef1653 = tmp(1653);
-const CheckpointCardFrameDefault = tmp(12434);
-const CheckpointShareCardYearDefault = tmp(12442);
+const CheckpointCardFrameDefault = tmp(12598);
+const CheckpointShareCardYearDefault = tmp(12606);
 let View = react_native.View;
 const jsx = Fragment.jsx;
 const rect = { size: 240, top: nativeDefault.space.PX_16, left: -20 };
@@ -48,10 +48,10 @@ export default function CheckpointRecapCard(character) {
     const _Math2 = Math;
     bound = Math.min(Math.max(maxHeight / 268, 0.75), maxScale);
   }
-  const obj2 = character(6296);
+  const obj2 = character(6391);
   const characterCardColorPalette = obj2.getCharacterCardColorPalette(character);
   const items = [character];
-  const obj3 = character(6296);
+  const obj3 = character(6391);
   const primaryBackgroundColor = obj3.getCardColors(characterCardColorPalette).primaryBackgroundColor;
   const memo = obj.useMemo(() => {
     let checkpointCharacterAccessibilityLabel = null;
@@ -62,7 +62,7 @@ export default function CheckpointRecapCard(character) {
     return checkpointCharacterAccessibilityLabel;
   }, items);
   View = _modDef1653.View;
-  ({ path: character(12442).YEAR_PATH, x: 200 - character(12442).YEAR_WIDTH, color: primaryBackgroundColor });
+  ({ path: character(12606).YEAR_PATH, x: 200 - character(12606).YEAR_WIDTH, color: primaryBackgroundColor });
   CheckpointCardFrameDefault;
   CheckpointShareCardYearDefault;
   const tmp13 = <View style={tmp4}>{null}</View>;

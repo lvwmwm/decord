@@ -1,12 +1,12 @@
-// Module ID: 11724
-// Function ID: 11725
+// Module ID: 11823
+// Function ID: 11824
 // Name: ShowSafetyToast
-// Dependencies: [5599, 9937, 2]
+// Dependencies: [5694, 10036, 2]
 // Exports: showSafetyToast
 
-// Module 11724 (ShowSafetyToast)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
-import ShieldIcon from "ShieldIcon" /* 9937 */;
+// Module 11823 (ShowSafetyToast)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
+import ShieldIcon from "ShieldIcon" /* 10036 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/self_mod/shared/ShowSafetyToast.native.tsx");

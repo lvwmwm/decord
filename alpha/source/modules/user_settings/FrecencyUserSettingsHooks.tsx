@@ -1,11 +1,11 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 10767
+// Function ID: 10768
 // Name: FrecencyUserSettingsHooks
-// Dependencies: [19, 1230, 4747, 504, 2]
+// Dependencies: [19, 1230, 4842, 504, 2]
 // Exports: useFrecencySettings
 
-// Module 10668 (FrecencyUserSettingsHooks)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4747 */;
+// Module 10767 (FrecencyUserSettingsHooks)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4842 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import size from "module_2" /* 2 */;

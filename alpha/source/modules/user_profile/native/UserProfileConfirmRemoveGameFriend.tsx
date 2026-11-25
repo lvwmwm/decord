@@ -1,12 +1,12 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13569
+// Function ID: 13570
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 6256, 11213, 5926, 1112, 5926, 2]
+// Dependencies: [19, 21, 6351, 11312, 6021, 1112, 6021, 2]
 // Exports: default
 
-// Module 13446 (UserProfileConfirmRemoveGameFriend)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6256 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 11213 */;
+// Module 13569 (UserProfileConfirmRemoveGameFriend)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6351 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 11312 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -38,17 +38,17 @@ export default function UserProfileConfirmRemoveGameFriend(applicationId) {
     obj2.removeFriend(obj3);
   }, items);
   let obj = { title: intl.formatToPlainString(userId(1112).t.fBKKfq, { name: userDisplayName }), content: intl2.formatToPlainString(userId(1112).t.dsU5bl, { name: userDisplayName, gameName }), actions: closure_5(AlertActions, obj2) };
-  const AlertModal = userId(5926).AlertModal;
+  const AlertModal = userId(6021).AlertModal;
   intl = userId(1112).intl;
   intl2 = userId(1112).intl;
   obj2 = { children: items1 };
-  AlertActions = userId(5926).AlertActions;
+  AlertActions = userId(6021).AlertActions;
   let obj3 = { variant: "destructive", text: intl3.string(userId(1112).t.RLcE6x), onPress: callback };
-  const AlertActionButton = userId(5926).AlertActionButton;
+  const AlertActionButton = userId(6021).AlertActionButton;
   intl3 = userId(1112).intl;
   items1 = [closure_4(AlertActionButton, obj3, "confirm-remove"), ];
   const obj4 = { variant: "secondary", text: intl4.string(userId(1112).t["eN6+rI"]) };
-  const AlertActionButton2 = userId(5926).AlertActionButton;
+  const AlertActionButton2 = userId(6021).AlertActionButton;
   intl4 = userId(1112).intl;
   items1[1] = closure_4(AlertActionButton2, obj4, "nevermind");
   return closure_4(AlertModal, obj);

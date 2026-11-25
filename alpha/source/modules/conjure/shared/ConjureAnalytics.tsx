@@ -1,16 +1,16 @@
-// Module ID: 7582
-// Function ID: 7583
+// Module ID: 7681
+// Function ID: 7682
 // Name: ConjureAnalytics
-// Dependencies: [6808, 1071, 7476, 5887, 1378, 1255, 2]
+// Dependencies: [6903, 1071, 7571, 5982, 1378, 1255, 2]
 // Exports: trackConjureBuilderOpened, trackConjureErrored, trackConjurePublishActionClicked, trackConjureTurnResulted
 
-// Module 7582 (ConjureAnalytics)
+// Module 7681 (ConjureAnalytics)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6808 */;
-import ConjureUtils from "ConjureUtils" /* 7476 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6903 */;
+import ConjureUtils from "ConjureUtils" /* 7571 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;
@@ -195,7 +195,6 @@ export function trackConjureErrored(projectId, turnId) {
   trackWithMetadata(CONJURE_ERRORED, obj);
 }
 export function trackConjurePublishActionClicked(project_id, arg1) {
-  let action;
   let application_id;
   let entryPoint;
   let installScope;
@@ -204,9 +203,9 @@ export function trackConjurePublishActionClicked(project_id, arg1) {
   let surface;
   let tmp6;
   ({ publishState, installScope } = arg1);
-  ({ entryPoint, surface, action } = arg1);
+  ({ entryPoint, surface } = arg1);
   const project = ConjureProjectStore.getProject(project_id);
-  const obj = { project_id, application_id, entry_point: entryPoint, publish_state: tmp6, surface, install_scope: installScope, action };
+  const obj = { project_id, application_id, entry_point: entryPoint, publish_state: tmp6, surface, install_scope: installScope, action: "publish" };
   application_id = undefined;
   const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
   const CONJURE_PUBLISH_ACTION_CLICKED = AnalyticEvents.CONJURE_PUBLISH_ACTION_CLICKED;

@@ -1,12 +1,12 @@
-// Module ID: 14413
-// Function ID: 14414
+// Module ID: 14536
+// Function ID: 14537
 // Name: useWidgetGamePress
-// Dependencies: [8604, 8613, 2]
+// Dependencies: [8703, 8712, 2]
 // Exports: default
 
-// Module 14413 (useWidgetGamePress)
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8604 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8613 */;
+// Module 14536 (useWidgetGamePress)
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8703 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8712 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/native/useWidgetGamePress.tsx");

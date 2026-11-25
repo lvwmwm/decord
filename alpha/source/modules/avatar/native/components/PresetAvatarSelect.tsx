@@ -1,27 +1,27 @@
-// Module ID: 19630
-// Function ID: 19631
+// Module ID: 19732
+// Function ID: 19733
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 19631, 19632, 19633, 19634, 19635, 19636, 19637, 19638, 1112, 4917, 575, 5508, 6026, 5604, 2]
+// Dependencies: [19, 17, 21, 19733, 19734, 19735, 19736, 19737, 19738, 19739, 19740, 1112, 5012, 575, 5603, 6121, 5699, 2]
 // Exports: default
 
-// Module 19630 (PresetAvatarSelect)
+// Module 19732 (PresetAvatarSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import Pressables from "Pressables" /* 6026 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 19631 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 19632 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 19633 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 19634 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 19635 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 19636 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 19637 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 19638 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import Pressables from "Pressables" /* 6121 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 19733 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 19734 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 19735 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 19736 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 19737 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 19738 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 19739 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 19740 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

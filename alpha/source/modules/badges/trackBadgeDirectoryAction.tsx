@@ -1,20 +1,17 @@
-// Module ID: 9725
-// Function ID: 9726
+// Module ID: 9824
+// Function ID: 9825
 // Name: trackBadgeDirectoryAction
-// Dependencies: [1386, 6257, 1071, 1255, 2]
-// Exports: default
+// Dependencies: [1386, 6352, 1071, 1255, 2]
+// Exports: trackOwnBadgeDirectoryOpened
 
-// Module 9725 (trackBadgeDirectoryAction)
+// Module 9824 (trackBadgeDirectoryAction)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import UserStore from "UserStore" /* 1386 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6257 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6352 */;
 import size from "module_2" /* 2 */;
 
-const AnalyticEvents = Constants.AnalyticEvents;
-const result = size.fileFinishedImporting("modules/badges/trackBadgeDirectoryAction.tsx");
-
-export default function trackBadgeDirectoryAction(arg0) {
+function trackBadgeDirectoryAction(arg0) {
   let actionName;
   let badge;
   let badge_id;
@@ -89,4 +86,18 @@ export default function trackBadgeDirectoryAction(arg0) {
     flag2 = false;
   }
   track(BADGE_DIRECTORY_ACTION, obj);
-};
+}
+const AnalyticEvents = Constants.AnalyticEvents;
+const result = size.fileFinishedImporting("modules/badges/trackBadgeDirectoryAction.tsx");
+
+export default trackBadgeDirectoryAction;
+export function trackOwnBadgeDirectoryOpened(link) {
+  const currentUser = UserStore.getCurrentUser();
+  let id;
+  const tmp = trackBadgeDirectoryAction;
+  if (currentUser != null) {
+    id = currentUser.id;
+  }
+  const obj = { actionName: "badge_directory_opened", displayedUserId: id, isSociallyNavigated: false, hasUnreadIndicator: false, source: link };
+  tmp(obj);
+}

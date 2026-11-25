@@ -1,38 +1,38 @@
-// Module ID: 15807
-// Function ID: 15808
+// Module ID: 15928
+// Function ID: 15929
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 2164, 6807, 4770, 502, 4766, 5725, 4820, 1386, 15711, 4765, 1071, 15710, 1284, 4838, 9977, 5915, 1255, 9855, 9944, 9960, 9964, 6003, 1268, 2152, 9911, 2121, 1107, 572, 5564, 5558, 9860, 9865, 6845, 9896, 1112, 10054, 9898, 10058, 12142, 6274, 6254, 2]
+// Dependencies: [5, 2164, 6902, 4865, 502, 4861, 5820, 4915, 1386, 15832, 4860, 1071, 15831, 1284, 4933, 10076, 6010, 1255, 9954, 10043, 10059, 10063, 6098, 1268, 2152, 10010, 2121, 1107, 572, 5659, 5653, 9959, 9964, 6940, 9995, 1112, 10153, 9997, 10157, 12241, 6369, 6349, 2]
 
-// Module 15807 (EmbeddedActivitiesManager)
+// Module 15928 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import v1 from "v1" /* 1268 */;
 import StringUtils from "StringUtils" /* 2152 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4838 */;
-import getURLForApplication from "getURLForApplication" /* 5558 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5915 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6003 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
-import InteractionTypes from "InteractionTypes" /* 6274 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9855 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9911 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 9944 */;
-import tryLaunchAsFrame from "tryLaunchAsFrame" /* 9960 */;
-import pendingFrameLaunch from "pendingFrameLaunch" /* 9964 */;
-import getShelfItemDataDefault from "getShelfItemData" /* 9977 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15710 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4933 */;
+import getURLForApplication from "getURLForApplication" /* 5653 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 6010 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6098 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
+import InteractionTypes from "InteractionTypes" /* 6369 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9954 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 10010 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10043 */;
+import tryLaunchAsFrame from "tryLaunchAsFrame" /* 10059 */;
+import pendingFrameLaunch from "pendingFrameLaunch" /* 10063 */;
+import getShelfItemDataDefault from "getShelfItemData" /* 10076 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15831 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
 import UserStore from "UserStore" /* 1386 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 15711 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4765 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 15832 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
 import Constants from "Constants" /* 1071 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size_mod from "module_2" /* 2 */;
@@ -465,7 +465,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -555,7 +555,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
             }
             track(ACTIVITY_SESSION_JOIN_FAILED, obj9);
             is_activity_start = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp32) {
           is_activity_start = 3;

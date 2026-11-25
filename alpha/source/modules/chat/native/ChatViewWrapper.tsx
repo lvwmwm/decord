@@ -1,12 +1,12 @@
-// Module ID: 11653
-// Function ID: 11654
+// Module ID: 11752
+// Function ID: 11753
 // Name: ChatViewWrapper
-// Dependencies: [11654, 11655, 11670, 2]
+// Dependencies: [11753, 11754, 11769, 2]
 
-// Module 11653 (ChatViewWrapper)
-import ChatViewWrapperAnimatedKeyboardDefault from "ChatViewWrapperAnimatedKeyboard" /* 11655 */;
-import ChatViewWrapperBaseDefault from "ChatViewWrapperBase" /* 11670 */;
-import AnimatedKeyboardExperiment from "AnimatedKeyboardExperiment" /* 11654 */;
+// Module 11752 (ChatViewWrapper)
+import ChatViewWrapperAnimatedKeyboardDefault from "ChatViewWrapperAnimatedKeyboard" /* 11754 */;
+import ChatViewWrapperBaseDefault from "ChatViewWrapperBase" /* 11769 */;
+import AnimatedKeyboardExperiment from "AnimatedKeyboardExperiment" /* 11753 */;
 import size from "module_2" /* 2 */;
 
 let importDefaultResult;

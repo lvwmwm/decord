@@ -1,15 +1,15 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 9980
+// Function ID: 9981
 // Name: ChannelCallLifecycleStore
-// Dependencies: [4820, 9868, 8769, 1343, 504, 572, 2]
+// Dependencies: [4915, 9967, 8868, 1343, 504, 572, 2]
 
-// Module 9881 (ChannelCallLifecycleStore)
+// Module 9980 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1343 from "module_1343" /* 1343 */;
-import DeviceOrientation from "DeviceOrientation" /* 8769 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9868 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
+import DeviceOrientation from "DeviceOrientation" /* 8868 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 9967 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
 import size_mod from "module_2" /* 2 */;
 
 let voiceChannelId;
@@ -20,10 +20,10 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "s", width: "channel_id", height: "channel_id", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "<string:822083853>", isInitialized: "isArray", isVisible: "<string:1071644672>" };
+let size = { x: "Array", y: "s", width: "channel_id", height: "String", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "<string:1202590843>", isInitialized: "<string:1068792545>", isVisible: "MediaPickerActionSheetEngagedActions" };
 const VOICE_CONTROLS_TOGGLE_BUTTON = VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON;
 obj[VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "s", width: "channel_id", height: "channel_id", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "<string:822083853>", isInitialized: "isArray", isVisible: "<string:1071644672>" };
+const size1 = { x: "Array", y: "s", width: "channel_id", height: "String", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "<string:1202590843>", isInitialized: "<string:1068792545>", isVisible: "MediaPickerActionSheetEngagedActions" };
 const CAMERA_PREVIEW_PICTURE_IN_PICTURE = VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE;
 obj[CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;

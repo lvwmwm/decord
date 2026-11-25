@@ -1,19 +1,19 @@
-// Module ID: 16929
-// Function ID: 16930
+// Module ID: 17050
+// Function ID: 17051
 // Name: InAppNotificationsSetting
-// Dependencies: [9414, 1071, 4742, 10473, 1112, 3154, 1255, 11815, 15681, 16930, 2]
+// Dependencies: [9513, 1071, 4837, 10572, 1112, 3206, 1255, 11914, 15802, 17051, 2]
 
-// Module 16929 (InAppNotificationsSetting)
+// Module 17050 (InAppNotificationsSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import _modDef3154 from "module_3154" /* 3154 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import FocusModeUtils from "FocusModeUtils" /* 10473 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15681 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11815 */;
+import _modDef3206 from "module_3206" /* 3206 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import FocusModeUtils from "FocusModeUtils" /* 10572 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15802 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -64,7 +64,7 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3154.sH5mu9);
+    return intl.string(_modDef3206.sH5mu9);
   },
   useDescription: function useRedesignInAppNotificationsDescription() {
     let stringResult;
@@ -72,10 +72,11 @@ const obj3 = {
     const focusModeEnabled = obj.useFocusModeEnabled();
     const intl = intl2.intl;
     const string = intl.string;
+    const tmp2 = _modDef3206;
     if (focusModeEnabled) {
-      stringResult = string(intl2.t.cIRG0s);
+      stringResult = string(tmp2.Zt0MV8);
     } else {
-      stringResult = string(_modDef3154["T/zMdV"]);
+      stringResult = string(tmp2["0r15Ud"]);
     }
     return stringResult;
   },

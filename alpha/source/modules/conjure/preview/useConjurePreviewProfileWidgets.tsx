@@ -1,15 +1,15 @@
-// Module ID: 18448
-// Function ID: 18449
+// Module ID: 18560
+// Function ID: 18561
 // Name: useConjurePreviewProfileWidgets
-// Dependencies: [19, 6037, 6808, 6183, 504, 6048, 2]
+// Dependencies: [19, 6132, 6903, 6278, 504, 6143, 2]
 // Exports: default
 
-// Module 18448 (useConjurePreviewProfileWidgets)
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6048 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6183 */;
+// Module 18560 (useConjurePreviewProfileWidgets)
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6143 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6278 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 6037 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import UserProfileStore from "UserProfileStore" /* 6132 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

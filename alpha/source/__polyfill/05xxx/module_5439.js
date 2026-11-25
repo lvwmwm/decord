@@ -1,155 +1,106 @@
 // Module ID: 5439
 // Function ID: 5440
-// Dependencies: [17, 19, 21, 5407, 5440, 5441, 5442]
-// Exports: useSecondaryProps
+// Dependencies: [19, 17, 21, 5440, 5249, 5245]
 
 // Module 5439
-import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5245 */;
+import _mod5249 from "module_5249" /* 5249 */;
 import react_native from "react-native" /* 5440 */;
-import react3 from "react" /* 5441 */;
-import react_native2 from "react-native" /* 5442 */;
-import react_native3 from "react-native" /* 17 */;
-
-const react = react2;
+import react_mod from "react" /* 19 */;
+import react_native2 from "react-native" /* 17 */;
 
 let c2;
 let c3;
-({ Animated: c2, RefreshControl: c3 } = react_native3);
-const useMemo = react2.useMemo;
+let closure_4;
+let hasOwnProperty;
+let react = react_mod;
+({ useMemo: c2, useRef: c3 } = react);
+const memo = react.memo;
+react = react_mod;
+({ StatusBar: closure_4, View: hasOwnProperty } = react_native2);
 const jsx = Fragment.jsx;
-
-export function useSecondaryProps(ListHeaderComponent) {
-  let items5;
-  let tmp;
-  let tmp5Result;
-  ListHeaderComponent = ListHeaderComponent.ListHeaderComponent;
-  const ListHeaderComponentStyle = ListHeaderComponent.ListHeaderComponentStyle;
-  const ListFooterComponent = ListHeaderComponent.ListFooterComponent;
-  const ListFooterComponentStyle = ListHeaderComponent.ListFooterComponentStyle;
-  const ListEmptyComponent = ListHeaderComponent.ListEmptyComponent;
-  const ListEmptyComponentStyle = ListHeaderComponent.ListEmptyComponentStyle;
-  const renderScrollComponent = ListHeaderComponent.renderScrollComponent;
-  const refreshing = ListHeaderComponent.refreshing;
-  const progressViewOffset = ListHeaderComponent.progressViewOffset;
-  const onRefresh = ListHeaderComponent.onRefresh;
-  const data = ListHeaderComponent.data;
-  const refreshControl = ListHeaderComponent.refreshControl;
-  const stickyHeaderConfig = ListHeaderComponent.stickyHeaderConfig;
-  let invertedTransformStyle;
-  if (ListHeaderComponent.inverted) {
-    let tmp3 = ListHeaderComponent;
-    let tmp4 = ListHeaderComponentStyle;
-    let obj = ListHeaderComponent(ListHeaderComponentStyle[3]);
-    invertedTransformStyle = obj.getInvertedTransformStyle(tmp);
+const memoResult = memo(function BottomSheetHostingContainerComponent(bottomInset) {
+  let stableCallback;
+  let topInset;
+  let value;
+  ({ containerHeight: require, containerOffset: dependencyMap, topInset } = bottomInset);
+  if (topInset === undefined) {
+    topInset = 0;
   }
-  const tmp5 = ListEmptyComponentStyle;
-  let items = [onRefresh, refreshing, progressViewOffset, refreshControl];
-  const items1 = [ListHeaderComponent, ListHeaderComponentStyle, invertedTransformStyle];
-  const items2 = [ListFooterComponent, ListFooterComponentStyle, invertedTransformStyle];
-  const tmp6 = ListEmptyComponentStyle(() => {
-    let tmp = refreshControl;
-    if (!tmp) {
-      let tmp3;
-      if (onRefresh) {
-        const _Boolean = Boolean;
-        tmp3 = <_false refreshing={Boolean(refreshing)} progressViewOffset={progressViewOffset} onRefresh={tmp2} />;
-      }
-      tmp = tmp3;
-    }
-    return tmp;
-  }, items);
-  let tmp7 = ListEmptyComponentStyle(() => {
-    let tmp2 = null;
-    if (ListHeaderComponent) {
-      const items = [ListHeaderComponentStyle, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
-    }
-    return tmp2;
-  }, items1);
-  const items3 = [ListEmptyComponent, data, invertedTransformStyle, ListEmptyComponentStyle];
-  const tmp8 = ListEmptyComponentStyle(() => {
-    let tmp2 = null;
-    if (ListFooterComponent) {
-      const items = [ListFooterComponentStyle, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
-    }
-    return tmp2;
-  }, items2);
-  let backdropComponent;
-  const tmp9 = ListEmptyComponentStyle(() => {
-    if (ListEmptyComponent) {
-      let tmp7;
-      const obj = react3;
-      const validComponent = obj.getValidComponent(tmp);
-      const tmp2 = require;
-      if (invertedTransformStyle) {
-        const items = [ListEmptyComponentStyle, tmp5];
-        tmp7 = jsx(tmp2(5440).CompatView, { style: items, children: validComponent });
-      } else {
-        tmp7 = validComponent;
-      }
-      return tmp7;
-    }
-    return null;
-  }, items3);
-  if (stickyHeaderConfig != null) {
-    backdropComponent = stickyHeaderConfig.backdropComponent;
+  let num = bottomInset.bottomInset;
+  if (num === undefined) {
+    num = 0;
   }
-  const items4 = [backdropComponent, invertedTransformStyle];
-  let obj2 = {
-    refreshControl: tmp6,
-    renderHeader: tmp7,
-    renderFooter: tmp8,
-    renderEmpty: tmp9,
-    CompatScrollView: tmp5(() => {
-      let forwardRefResult;
-      const CompatAnimatedScroller = react_native2.CompatAnimatedScroller;
-      if (typeof renderScrollComponent === "function") {
-        const tmpResult = react3;
-        if (!tmpResult.isComponentClass(renderScrollComponent)) {
-          forwardRefResult = react.forwardRef((arg0, ref) => {
-            const obj = { ref };
-            const merged = Object.assign(arg0);
-            return renderScrollComponent(obj);
-          });
-          forwardRefResult.displayName = "CustomScrollView";
-        }
-        return React2.createAnimatedComponent(forwardRefResult);
+  let flag = bottomInset.shouldCalculateHeight;
+  if (flag === undefined) {
+    flag = true;
+  }
+  const detached = bottomInset.detached;
+  const style = bottomInset.style;
+  const children = bottomInset.children;
+  const tmp = num(null);
+  const ref = tmp;
+  let items = [style, detached, topInset, num];
+  const obj2 = {
+    ref: tmp,
+    pointerEvents: "box-none",
+    onLayout: stableCallback,
+    style: topInset(() => {
+      let str;
+      const items = [style, react_native.styles.container, ];
+      const rect = { top: topInset, bottom: num, overflow: str };
+      str = "hidden";
+      if (detached) {
+        str = "visible";
       }
-      forwardRefResult = CompatAnimatedScroller;
-      if (renderScrollComponent) {
-        forwardRefResult = tmp3;
-      }
-    }, items5),
-    renderStickyHeaderBackdrop: tmp5Result
+      items[2] = rect;
+      return items;
+    }, items),
+    collapsable: true,
+    children
   };
-  items5 = [renderScrollComponent];
-  tmp5Result = tmp5(() => {
-    let backdropComponent1;
-    let getValidComponent;
-    let items;
-    let backdropComponent;
-    if (stickyHeaderConfig != null) {
-      backdropComponent = tmp.backdropComponent;
-    }
-    let tmp4Result = null;
-    if (backdropComponent) {
-      const obj = { style: items, children: getValidComponent(backdropComponent1) };
-      items = [{ position: "absolute", inset: 0, pointerEvents: "none" }, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      backdropComponent1 = undefined;
-      getValidComponent = react3.getValidComponent;
-      react3;
-      const tmp4 = jsx;
-      if (stickyHeaderConfig != null) {
-        backdropComponent1 = tmp.backdropComponent;
+  stableCallback = undefined;
+  const obj = _mod5249;
+  const tmp3 = ref;
+  const tmp4 = style;
+  if (flag) {
+    stableCallback = obj.useStableCallback(function handleLayoutEvent(nativeEvent) {
+      const height = nativeEvent.nativeEvent.layout.height;
+      height.value = height;
+      const current = ref.current;
+      if (current != null) {
+        current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
+          let WINDOW_HEIGHT;
+          let max;
+          let num3;
+          let sum;
+          if (dependencyMap.value) {
+            num = arg5;
+            let num2 = arg5;
+            if (arg5 == null) {
+              num2 = 0;
+            }
+            const rect = { top: num2, left: 0, right: 0, bottom: max(0, WINDOW_HEIGHT - (sum + num3)) };
+            const _Math = Math;
+            max = Math.max;
+            WINDOW_HEIGHT = GESTURE_SOURCE.WINDOW_HEIGHT;
+            if (num == null) {
+              num = 0;
+            }
+            num3 = currentHeight.currentHeight;
+            sum = num + height;
+            if (num3 == null) {
+              num3 = 0;
+            }
+            tmp.value = rect;
+          }
+        });
       }
-      tmp4Result = tmp4(CompatView, obj);
-    }
-    return tmp4Result;
-  }, items4);
-  return obj2;
-}
+    });
+  }
+  return tmp3(tmp4, obj2);
+});
+memoResult.displayName = "BottomSheetHostingContainer";
+
+export const BottomSheetHostingContainer = memoResult;

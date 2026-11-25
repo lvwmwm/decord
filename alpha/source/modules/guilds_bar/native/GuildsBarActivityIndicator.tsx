@@ -1,29 +1,29 @@
-// Module ID: 17946
-// Function ID: 17947
+// Module ID: 18058
+// Function ID: 18059
 // Name: GuildsBarActivityIndicator
-// Dependencies: [19, 21, 4917, 575, 5481, 6929, 1186, 8467, 8465, 7037, 7966, 13181, 17947, 10495, 17948, 7041, 17949, 7046, 6975, 17945, 2]
+// Dependencies: [19, 21, 5012, 575, 5576, 7024, 1186, 8566, 8564, 7132, 8065, 13304, 18059, 10594, 18060, 7136, 18061, 7141, 7070, 18057, 2]
 // Exports: useActivityIndicatorState
 
-// Module 17946 (GuildsBarActivityIndicator)
+// Module 18058 (GuildsBarActivityIndicator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5481 */;
-import NativeViewDefault from "NativeView" /* 6929 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6975 */;
-import StageIcon from "StageIcon" /* 7037 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 7041 */;
-import AppsIcon from "AppsIcon" /* 7046 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7966 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8465 */;
-import CalendarIcon from "CalendarIcon" /* 8467 */;
-import VideoIcon from "VideoIcon" /* 10495 */;
-import ScreenIcon from "ScreenIcon" /* 13181 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 17945 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17947 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 17948 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 17949 */;
+import useToken from "useToken" /* 5576 */;
+import NativeViewDefault from "NativeView" /* 7024 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7070 */;
+import StageIcon from "StageIcon" /* 7132 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 7136 */;
+import AppsIcon from "AppsIcon" /* 7141 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8065 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8564 */;
+import CalendarIcon from "CalendarIcon" /* 8566 */;
+import VideoIcon from "VideoIcon" /* 10594 */;
+import ScreenIcon from "ScreenIcon" /* 13304 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 18057 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 18059 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 18060 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 18061 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;

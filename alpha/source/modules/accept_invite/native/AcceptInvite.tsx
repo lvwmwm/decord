@@ -1,10 +1,10 @@
-// Module ID: 13576
-// Function ID: 13577
+// Module ID: 13699
+// Function ID: 13700
 // Name: AcceptInvite
-// Dependencies: [19, 17, 1071, 21, 4917, 575, 1653, 6019, 1254, 5481, 13577, 13578, 13581, 1412, 1447, 13586, 1494, 5604, 2]
+// Dependencies: [19, 17, 1071, 21, 5012, 575, 1653, 6114, 1254, 5576, 13700, 13701, 13704, 1412, 1447, 13709, 1494, 5699, 2]
 // Exports: default
 
-// Module 13576 (AcceptInvite)
+// Module 13699 (AcceptInvite)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
@@ -12,16 +12,16 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import useToken from "useToken" /* 5481 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import Card_Card from "Card/Card" /* 6019 */;
-import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13577 */;
-import InviteDetailsDefault from "InviteDetails" /* 13578 */;
-import InviteErrorDefault from "InviteError" /* 13581 */;
+import useToken from "useToken" /* 5576 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import Card_Card from "Card/Card" /* 6114 */;
+import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13700 */;
+import InviteDetailsDefault from "InviteDetails" /* 13701 */;
+import InviteErrorDefault from "InviteError" /* 13704 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const module_1653 = _mod1653;
@@ -156,7 +156,7 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(13586);
+    guildSplashSource = tmp3(13709);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };
@@ -168,7 +168,7 @@ export default function AcceptInvite(invite) {
   const obj5 = { style: items, children: items2 };
   items = [tmp2.parentContainer, { height, width }];
   const obj6 = { style: { height, width }, children: metroRequire(FastImageDefault, obj7) };
-  const layout = tmp3(13577)().layout;
+  const layout = tmp3(13700)().layout;
   obj7 = { source: guildSplashSource, style: items1 };
   items1 = [tmp2.imageStyle, { height, width }];
   items2 = [metroRequire(React3, obj6), ];

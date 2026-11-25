@@ -1,10 +1,10 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 9264
+// Function ID: 9265
 // Name: ErrorUtils
 // Dependencies: [2]
 // Exports: getUnderlyingIOSError
 
-// Module 9165 (ErrorUtils)
+// Module 9264 (ErrorUtils)
 import size from "module_2" /* 2 */;
 
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {

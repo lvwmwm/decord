@@ -1,9 +1,9 @@
-// Module ID: 9879
-// Function ID: 9880
+// Module ID: 9978
+// Function ID: 9979
 // Name: HomeIndicator
 // Dependencies: [19, 17, 560, 1262, 1378, 1640, 2]
 
-// Module 9879 (HomeIndicator)
+// Module 9978 (HomeIndicator)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import module_560 from "module_560" /* 560 */;

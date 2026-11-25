@@ -1,16 +1,16 @@
-// Module ID: 5677
-// Function ID: 5678
+// Module ID: 5772
+// Function ID: 5773
 // Name: StoreUtils
-// Dependencies: [5, 502, 2174, 2175, 2178, 1071, 5676, 5678, 1447, 5680, 5701, 1284, 1378, 1112, 2]
+// Dependencies: [5, 502, 2174, 2175, 2178, 1071, 5771, 5773, 1447, 5775, 5796, 1284, 1378, 1112, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 5677 (StoreUtils)
+// Module 5772 (StoreUtils)
 import intl4 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5676 */;
-import BrowserUtils from "BrowserUtils" /* 5678 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5680 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5771 */;
+import BrowserUtils from "BrowserUtils" /* 5773 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5775 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import BillingInfoStore from "BillingInfoStore" /* 2174 */;
@@ -37,7 +37,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -88,7 +88,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
           return obj;
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp13) {
         c2 = 3;
         throw tmp13;
@@ -134,7 +134,7 @@ obj = function _httpGetWithCountryCodeQuery() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

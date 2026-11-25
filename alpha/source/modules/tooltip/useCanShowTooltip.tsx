@@ -1,13 +1,13 @@
-// Module ID: 10143
-// Function ID: 10144
+// Module ID: 10242
+// Function ID: 10243
 // Name: useCanShowTooltip
-// Dependencies: [19, 10144, 504, 10145, 2]
+// Dependencies: [19, 10243, 504, 10244, 2]
 // Exports: useCanShowTooltip
 
-// Module 10143 (useCanShowTooltip)
-import TooltipActionCreatorsDefault from "TooltipActionCreators" /* 10145 */;
+// Module 10242 (useCanShowTooltip)
+import TooltipActionCreatorsDefault from "TooltipActionCreators" /* 10244 */;
 import react from "react" /* 19 */;
-import TooltipStore from "TooltipStore" /* 10144 */;
+import TooltipStore from "TooltipStore" /* 10243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

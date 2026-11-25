@@ -1,18 +1,18 @@
-// Module ID: 5680
-// Function ID: 5681
+// Module ID: 5775
+// Function ID: 5776
 // Name: actions/BillingActionCreators
-// Dependencies: [109, 5, 2176, 2174, 2178, 1071, 2183, 1082, 572, 1284, 5666, 5668, 2168, 2173, 5681, 5692, 4730, 5699, 5700, 1255, 2]
+// Dependencies: [109, 5, 2176, 2174, 2178, 1071, 2183, 1082, 572, 1284, 5761, 5763, 2168, 2173, 5776, 5787, 4825, 5794, 5795, 1255, 2]
 // Exports: cancelPaymentAuthentication, cancelSubscription, changePaymentSource, changeSubscriptionCurrency, clearAndFetchPaymentSourceCreationContext, clearPaymentAuthenticationError, clearRemovePaymentSourceError, clearUpdatePaymentSourceError, createSubscription, deletePaymentSource, deleteRenewalMutation, fetchIpCountryCode, fetchIpLocation, fetchMostRecentSubscription, fetchPaymentSource, fetchPaymentSourceCreationContext, fetchPaymentSources, fetchSubscriptions, fetchWalletInformation, getPerksRelevance, payInvoiceManually, popupBridgeCallback, redeemReactivationOffer, redeemUserDiscountOffer, redirectedPaymentSucceeded, resetPaymentIntentId, resetSubscriptionStore, resubscribeToSubscription, startBrowserCheckout, updatePaymentSource, upgradeSubscription, voidPendingPayment
 
-// Module 5680 (actions/BillingActionCreators)
+// Module 5775 (actions/BillingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _modDef2168 from "module_2168" /* 2168 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
 import BillingConstants from "BillingConstants" /* 2183 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5681 */;
-import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 5692 */;
-import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 5700 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5776 */;
+import BillingPaymentGatewayActionCreators from "BillingPaymentGatewayActionCreators" /* 5787 */;
+import HandleConfirmPaymentRegistry from "HandleConfirmPaymentRegistry" /* 5795 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PaymentSourceRecord from "PaymentSourceRecord" /* 2176 */;
@@ -49,7 +49,7 @@ let obj = function _deletePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ let obj = function _deletePaymentSource() {
             obj.dispatch(obj10);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_3 = tmp25;
@@ -137,7 +137,7 @@ obj = function _updatePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -196,7 +196,7 @@ obj = function _updatePaymentSource() {
             obj.dispatch(obj13);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_4 = tmp25;
@@ -224,7 +224,7 @@ obj = function _fetchPaymentSources() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -243,7 +243,7 @@ obj = function _fetchPaymentSources() {
             value = undefined;
             if (BillingInfoStore.isPaymentSourceFetching) {
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c3 = 1;
               const HTTP = HTTPUtils.HTTP;
@@ -309,7 +309,7 @@ obj = function _fetchPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -385,7 +385,7 @@ obj = function _fetchWalletInformation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -488,7 +488,7 @@ obj = function _fetchSubscriptions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -585,7 +585,7 @@ obj = function _getPerksRelevance() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -634,7 +634,7 @@ obj = function _getPerksRelevance() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;
@@ -719,7 +719,7 @@ obj = function _createSubscription() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let gift_info_options;
@@ -835,7 +835,7 @@ obj = function _createSubscription() {
                 return obj8;
               } else {
                 const obj11 = closure_134_0(closure_134_2[14]);
-                throw obj11.dispatchConfirmationError("payment id cannot be null on redirected confirmations.");
+                throw obj11.failBillingConfirmation("payment_confirmation", "payment id cannot be null on redirected confirmations.");
               }
             } else if (4 === expected_renewal_price) {
               if (arg0 === 1) {
@@ -963,7 +963,7 @@ obj = function _payInvoiceManually() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1041,7 +1041,7 @@ obj = function _payInvoiceManually() {
                 return { value: code, done: true };
               } else {
                 code = closure_138_0(closure_138_2[14]);
-                throw code.dispatchConfirmationError("payment id cannot be null on redirected confirmations.");
+                throw code.failBillingConfirmation("payment_confirmation", "payment id cannot be null on redirected confirmations.");
               }
             } else if (3 === c14) {
               if (arg0 === 1) {
@@ -1151,12 +1151,12 @@ obj = function _redirectedPaymentSucceeded() {
     }
     if (null == body1) {
       const obj5 = closure_130_0(closure_130_2[14]);
-      throw obj5.dispatchConfirmationError("could not fetch payment");
+      throw obj5.failBillingConfirmation("payment_confirmation", "could not fetch payment");
     }
     const tmp4 = closure_130_6.createFromServer(tmp.body.payment_source);
     if (!closure_130_12.has(tmp4.type)) {
       obj = closure_130_0(closure_130_2[14]);
-      throw obj.dispatchConfirmationError("unsupported redirect payment source");
+      throw obj.failBillingConfirmation("payment_confirmation", "unsupported redirect payment source");
     }
     if (tmp != null) {
       const body = tmp.body;
@@ -1166,7 +1166,7 @@ obj = function _redirectedPaymentSucceeded() {
     }
     if (status === closure_130_17.FAILED) {
       const obj4 = closure_130_0(closure_130_2[14]);
-      throw obj4.dispatchConfirmationError("payment failed");
+      throw obj4.failBillingConfirmation("payment_confirmation", "payment failed");
     }
     let result = tmp4.paymentGateway !== closure_130_11.STRIPE;
     if (!result) {
@@ -1193,7 +1193,7 @@ obj = function _cancelSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1285,7 +1285,7 @@ obj = function _updateSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1350,7 +1350,7 @@ obj = function _updateSubscription() {
               return { value: id, done: true };
             } else {
               id = closure_138_0(closure_138_2[14]);
-              throw id.dispatchConfirmationError("payment id cannot be null on redirected confirmations.");
+              throw id.failBillingConfirmation("payment_confirmation", "payment id cannot be null on redirected confirmations.");
             }
           } else if (2 === c13) {
             if (arg0 === 1) {
@@ -1487,7 +1487,7 @@ obj = function _voidPendingPayment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1518,7 +1518,7 @@ obj = function _voidPendingPayment() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -1542,7 +1542,7 @@ obj = function _fetchIpCountryCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -1653,7 +1653,7 @@ obj = function _fetchIpLocation() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -1776,7 +1776,7 @@ obj = function _redeemReactivationOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1835,7 +1835,7 @@ obj = function _redeemReactivationOffer() {
             obj9.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_4 = tmp25;
@@ -1868,7 +1868,7 @@ obj = function _redeemUserDiscountOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1917,7 +1917,7 @@ obj = function _redeemUserDiscountOffer() {
             obj.dispatch(obj7);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp24) {
           closure_3 = tmp24;

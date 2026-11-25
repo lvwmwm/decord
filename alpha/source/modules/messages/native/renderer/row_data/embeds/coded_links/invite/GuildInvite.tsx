@@ -1,10 +1,10 @@
-// Module ID: 14324
-// Function ID: 14325
+// Module ID: 14447
+// Function ID: 14448
 // Name: GuildInvite
-// Dependencies: [17, 4784, 6687, 4766, 4829, 4788, 5636, 4859, 1386, 12719, 1071, 5650, 12236, 1112, 8086, 575, 4973, 4924, 12237, 12238, 4780, 2187, 8680, 13585, 13584, 14325, 14326, 5651, 14327, 1404, 7700, 1412, 2022, 6970, 8598, 5533, 2]
+// Dependencies: [17, 4879, 6782, 4861, 4924, 4883, 5731, 4954, 1386, 12883, 1071, 5745, 12335, 1112, 8185, 575, 5068, 5019, 12336, 12337, 4875, 2187, 8779, 13708, 13707, 14448, 14449, 5746, 14450, 1404, 7799, 1412, 2022, 7065, 8697, 5628, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 14324 (GuildInvite)
+// Module 14447 (GuildInvite)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1112 */;
@@ -12,30 +12,30 @@ import FlagUtils from "FlagUtils" /* 1404 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import react_nativeDefault from "react-native" /* 2022 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4780 */;
-import shared from "shared" /* 4924 */;
-import UserUtilsDefault from "UserUtils" /* 4973 */;
-import useChannelName from "useChannelName" /* 5533 */;
-import Constants2 from "Constants" /* 5650 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 5651 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 6970 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 7700 */;
-import react_native2 from "react-native" /* 8086 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8598 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8680 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12236 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 12719 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 13584 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13585 */;
-import GuestUtilsDefault from "GuestUtils" /* 14325 */;
-import getHeaderTextForInvite2 from "getHeaderTextForInvite" /* 14327 */;
-import GuildRecord from "GuildRecord" /* 4784 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import InviteStore from "InviteStore" /* 5636 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4875 */;
+import shared from "shared" /* 5019 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import useChannelName from "useChannelName" /* 5628 */;
+import Constants2 from "Constants" /* 5745 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 5746 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7065 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 7799 */;
+import react_native2 from "react-native" /* 8185 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8697 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8779 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12335 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 12883 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 13707 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13708 */;
+import GuestUtilsDefault from "GuestUtils" /* 14448 */;
+import getHeaderTextForInvite2 from "getHeaderTextForInvite" /* 14450 */;
+import GuildRecord from "GuildRecord" /* 4879 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import InviteStore from "InviteStore" /* 5731 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ export function createExpiredGuildInvite(author, arg1, theme) {
     str = string(t.YVub5y);
     tmp6 = tmp5;
   }
-  tmp6Result = tmp6(8086);
+  tmp6Result = tmp6(8185);
   if (arg1) {
     const intl4 = tmp6(1112).intl;
     stringResult = intl4.string(tmp6(1112).t["F/OLvL"]);
@@ -111,11 +111,11 @@ export function createExpiredGuildInvite(author, arg1, theme) {
   }
   intl5 = tmp6(1112).intl;
   resolveAssetSource = Image.resolveAssetSource;
-  const tmp6Result2 = tmp6(4924);
+  const tmp6Result2 = tmp6(5019);
   if (tmp6Result2.isThemeDark(theme)) {
-    tmpResult2 = tmp(12237);
+    tmpResult2 = tmp(12336);
   } else {
-    tmpResult2 = tmp(12238);
+    tmpResult2 = tmp(12337);
   }
   ({ thumbnailBackgroundColor: obj.thumbnailBackgroundColor, subtitleColor: obj.subtitleColor } = colors);
   return obj;
@@ -238,9 +238,9 @@ export function createErroredGuildInvite(code, arg1, theme) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp5Result2 = shared;
   if (tmp5Result2.isThemeDark(theme)) {
-    tmpResult = tmp(12237);
+    tmpResult = tmp(12336);
   } else {
-    tmpResult = tmp(12238);
+    tmpResult = tmp(12337);
   }
   ({ thumbnailBackgroundColor: obj.thumbnailBackgroundColor, subtitleColor: obj.subtitleColor } = colors);
   return obj;
@@ -287,7 +287,7 @@ export function createGuildInvite(invite, isOwnInvite, theme) {
   const items = [GuildMemberStore];
   const tmpResult = GuestUtilsDefault;
   const canAcceptInviteResult = tmpResult.canAcceptInvite(items, invite);
-  const channel = tmp(14326)(invite).channel;
+  const channel = tmp(14449)(invite).channel;
   const tmp7 = null != channel && channel.isGuildVocal();
   let flag;
   if (channel != null) {

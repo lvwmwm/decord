@@ -1,25 +1,25 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10148
+// Function ID: 10149
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 4765, 1386, 1071, 1190, 10050, 21, 1186, 4917, 575, 504, 1254, 7389, 6681, 4973, 10051, 6253, 6254, 9612, 1112, 10053, 10055, 10057, 10058, 6026, 10059, 10109, 5508, 5516, 4978, 2]
+// Dependencies: [5, 32, 19, 17, 4860, 1386, 1071, 1190, 10149, 21, 1186, 5012, 575, 504, 1254, 7484, 6776, 5068, 10150, 6348, 6349, 9711, 1112, 10152, 10154, 10156, 10157, 6121, 10158, 10208, 5603, 5611, 5073, 2]
 // Exports: default
 
-// Module 10049 (ActivityTile)
+// Module 10148 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import FormConstants from "FormConstants" /* 1190 */;
-import native2 from "native" /* 4978 */;
-import Constants2 from "Constants" /* 10050 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10058 */;
+import native2 from "native" /* 5073 */;
+import Constants2 from "Constants" /* 10149 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10157 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4765 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let applicationId, c2;
@@ -70,7 +70,7 @@ function ActivityTileInner(participant) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function ActivityTileInner(participant) {
             const result = obj.setOrientationLockState(closure_128_3);
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp17) {
           c2 = 3;
           throw tmp17;

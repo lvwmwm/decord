@@ -1,21 +1,21 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16899
+// Function ID: 16900
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 4942, 1082, 21, 8572, 575, 4917, 8573, 8583, 16779, 16777, 4979, 1396, 1394, 5133, 5131, 5145, 16780, 1112, 3250, 5515, 5508, 4599, 15919, 4978, 15912, 15907, 15913, 5604, 16781, 7128, 15915, 5989, 5621, 2]
+// Dependencies: [32, 19, 17, 5037, 1082, 21, 8671, 575, 5012, 8672, 8682, 16900, 16898, 5074, 1396, 1394, 5228, 5226, 5240, 16901, 1112, 3302, 5610, 5603, 4662, 16040, 5073, 16033, 16028, 16034, 5699, 16902, 7223, 16036, 6084, 5716, 2]
 // Exports: default
 
-// Module 16778 (DisplayNameStylesFontPickerSheet)
+// Module 16899 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import HapticUtils from "HapticUtils" /* 5133 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 8572 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import HapticUtils from "HapticUtils" /* 5228 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 8671 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4942 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5037 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -154,7 +154,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
   }, items);
   const obj7 = { ref: bottomSheetRef, startExpanded: showCampaignSection, header: closure_12(tmp17, obj8), children: closure_12(first, obj10) };
   const BottomSheet = onSelectFont(displayNameFontsAvailable[18]).BottomSheet;
-  obj8 = { title: intl.string(require("module_3250")["0JCuGm"]), trailing: closure_12(Button, obj9) };
+  obj8 = { title: intl.string(require("module_3302")["0JCuGm"]), trailing: closure_12(Button, obj9) };
   tmp17 = require("DisplayNameStylesSheetHeader");
   intl = onSelectFont(displayNameFontsAvailable[20]).intl;
   obj9 = { text: intl2.string(onSelectFont(displayNameFontsAvailable[20]).t.XqMe3N), onPress: callback, variant: "primary", size: "sm" };
@@ -166,7 +166,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     const obj12 = { style: tmp.campaignSection, children: closure_13(first, obj13) };
     obj13 = { style: tmp.campaignContent, children: items2 };
     const obj14 = { style: tmp.campaignHeader, children: items1 };
-    const obj15 = { variant: "body-sm/semibold", color: "text-subtle", children: intl3.string(require("module_4599")["2UCcmW"]) };
+    const obj15 = { variant: "body-sm/semibold", color: "text-subtle", children: intl3.string(require("module_4662")["2UCcmW"]) };
     let Text = tmp2(tmp3[23]).Text;
     intl3 = tmp2(tmp3[20]).intl;
     items1 = [closure_12(Text, obj15), ];
@@ -206,7 +206,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     const obj23 = { selected: tmp10 };
     items4[3] = closure_12(tmp2(tmp3[32]).FormRadio, obj23);
     items2[1] = closure_12(ThemeContextProvider, obj17);
-    const obj24 = { variant: "body-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(require("module_4599").y2YmJv, obj25) };
+    const obj24 = { variant: "body-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(require("module_4662").y2YmJv, obj25) };
     const Text3 = tmp2(tmp3[23]).Text;
     intl5 = tmp2(tmp3[20]).intl;
     obj25 = {
@@ -294,7 +294,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
   if (tmp19Result) {
     const obj27 = { style: tmp.nonLatinDisclaimer, children: items7 };
     items7 = [closure_12(tmp2(tmp3[35]).CircleInformationIcon, { size: "sm" }), ];
-    const obj28 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(require("module_3250")["+O1xL2"]) };
+    const obj28 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(require("module_3302")["+O1xL2"]) };
     const Text4 = tmp2(tmp3[23]).Text;
     intl6 = tmp2(tmp3[20]).intl;
     items7[1] = closure_12(Text4, obj28);

@@ -1,22 +1,22 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 12511
+// Function ID: 12512
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1191, 1386, 7779, 7753, 1071, 21, 8082, 4917, 504, 4924, 12348, 12349, 7752, 6277, 8663, 8740, 12350, 8939, 6267, 11, 2]
+// Dependencies: [32, 19, 17, 1191, 1386, 7878, 7852, 1071, 21, 8181, 5012, 504, 5019, 12512, 12513, 7851, 6372, 8762, 8839, 12514, 9038, 6362, 11, 2]
 // Exports: default
 
-// Module 12347 (ClassificationMessageEvidence)
+// Module 12511 (ClassificationMessageEvidence)
 import Constants from "Constants" /* 1071 */;
-import RowGeneratorDefault from "RowGenerator" /* 8082 */;
-import openMediaModal from "openMediaModal" /* 8663 */;
+import RowGeneratorDefault from "RowGenerator" /* 8181 */;
+import openMediaModal from "openMediaModal" /* 8762 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UserStore from "UserStore" /* 1386 */;
-import SafetyHubStore from "SafetyHubStore" /* 7779 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7753 */;
+import SafetyHubStore from "SafetyHubStore" /* 7878 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7852 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, filename, width;
@@ -85,10 +85,10 @@ export default function ClassificationEvidence(flaggedContent) {
     const obj = ref(closure_2[12]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(12348));
+    assetSource = resolveAssetSource(tmp12(12512));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(12349));
+    assetSource = resolveAssetSource(tmp12(12513));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -273,13 +273,13 @@ export default function ClassificationEvidence(flaggedContent) {
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(12350), obj6), ];
+      const items9 = [closure_18(tmp14(12514), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(8939);
+      const tmp14Result = tmp14(9038);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id: "1", type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
-      createMessageRecord = tmp2(6267).createMessageRecord;
-      tmp2(6267);
+      createMessageRecord = tmp2(6362).createMessageRecord;
+      tmp2(6362);
       const self = this;
       const self2 = this;
       const tmp14Result2 = tmp14(11);

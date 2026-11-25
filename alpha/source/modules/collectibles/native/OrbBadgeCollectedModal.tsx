@@ -1,20 +1,20 @@
-// Module ID: 11472
-// Function ID: 11473
+// Module ID: 11571
+// Function ID: 11572
 // Name: OrbBadgeCollectedModal
-// Dependencies: [19, 17, 4918, 21, 4917, 575, 7065, 6004, 11111, 9302, 504, 5604, 9134, 8739, 9135, 7354, 11089, 5508, 1112, 5515, 9293, 11100, 7229, 2]
+// Dependencies: [19, 17, 5013, 21, 5012, 575, 7160, 6099, 11210, 9401, 504, 5699, 9233, 8838, 9234, 7449, 11188, 5603, 1112, 5610, 9392, 11199, 7324, 2]
 // Exports: default
 
-// Module 11472 (OrbBadgeCollectedModal)
+// Module 11571 (OrbBadgeCollectedModal)
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
-import NavigatorHeader from "NavigatorHeader" /* 7065 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 9302 */;
-import _mod11111 from "module_11111" /* 11111 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
+import NavigatorHeader from "NavigatorHeader" /* 7160 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 9401 */;
+import _mod11210 from "module_11210" /* 11210 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -62,15 +62,15 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   }, items2);
   if (stateFromStores) {
     const obj3 = { source: obj4, style: tmp.background };
-    obj4 = { uri: onPressViewBadge(9134) };
-    const tmp15 = onPressViewBadge(5604);
+    obj4 = { uri: onPressViewBadge(9233) };
+    const tmp15 = onPressViewBadge(5699);
     tmp9Result = tmp9(tmp15, obj3);
     tmp12 = onPressViewBadge;
     tmp13 = tmp9;
   } else {
-    const obj5 = { source: obj6, poster: onPressViewBadge(9134), style: tmp.background, resizeMode: "contain", muted: true, pauseWhileAppInactive: true, paused: false };
-    obj6 = { uri: onPressViewBadge(9135) };
-    const VideoComponent = tmp2(8739).VideoComponent;
+    const obj5 = { source: obj6, poster: onPressViewBadge(9233), style: tmp.background, resizeMode: "contain", muted: true, pauseWhileAppInactive: true, paused: false };
+    obj6 = { uri: onPressViewBadge(9234) };
+    const VideoComponent = tmp2(8838).VideoComponent;
     tmp9Result = tmp9(VideoComponent, obj5);
     tmp12 = onPressViewBadge;
     tmp13 = tmp9;
@@ -78,29 +78,29 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   items3 = [tmp9Result, ];
   const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: closure_7(closure_4, obj7) };
   obj7 = { style: tmp.body, children: items4 };
-  const SafeAreaPaddingView = tmp2(7354).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7449).SafeAreaPaddingView;
   const obj8 = { source: obj9, style: tmp.orbBadge };
-  obj9 = { uri: tmp12(11089) };
-  const tmp12Result = tmp12(5604);
+  obj9 = { uri: tmp12(11188) };
+  const tmp12Result = tmp12(5699);
   items4 = [tmp13(tmp12Result, obj8), ];
   const obj10 = { style: tmp.bottomContainer, children: items6 };
   const obj11 = { style: tmp.textContainer, children: items5 };
   const obj12 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp.text, children: intl.string(modalKey(1112).t.Bal8Cv) };
-  const Text = tmp2(5508).Text;
+  const Text = tmp2(5603).Text;
   intl = tmp2(1112).intl;
   items5 = [tmp13(Text, obj12), ];
   const obj13 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.text, children: intl2.string(modalKey(1112).t.B25MUf) };
-  const Text2 = tmp2(5508).Text;
+  const Text2 = tmp2(5603).Text;
   intl2 = tmp2(1112).intl;
   items5[1] = tmp13(Text2, obj13);
   items6 = [closure_7(closure_4, obj11), ];
   const obj14 = { style: tmp.buttonsContainer, children: items7 };
   const obj15 = { onPress: callback, variant: "primary", size: "lg", text: intl3.string(modalKey(1112).t.uYLGci) };
-  const Button = tmp2(5515).Button;
+  const Button = tmp2(5610).Button;
   intl3 = tmp2(1112).intl;
   items7 = [tmp13(Button, obj15), ];
   const obj16 = { onPress: callback1, variant: "secondary", size: "lg", text: intl4.string(modalKey(1112).t["6gF4aS"]) };
-  const Button2 = tmp2(5515).Button;
+  const Button2 = tmp2(5610).Button;
   intl4 = tmp2(1112).intl;
   items7[1] = tmp13(Button2, obj16);
   items6[1] = closure_7(closure_4, obj14);
@@ -154,7 +154,7 @@ export default function OrbBadgeCollectedModal(arg0) {
       }), { tintColor: "white" });
     },
     headerRight() {
-      const obj = _mod11111;
+      const obj = _mod11210;
       const obj2 = { initialRenderedBalance: orbBalancePriorToPurchase, balance: obj.useFetchVirtualCurrencyBalance().balance };
       return metroRequire(BalanceWidgetPill.BalanceWidgetPill, obj2);
     },

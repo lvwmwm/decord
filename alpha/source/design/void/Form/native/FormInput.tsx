@@ -1,19 +1,19 @@
-// Module ID: 7955
-// Function ID: 7956
+// Module ID: 8054
+// Function ID: 8055
 // Name: FormInput
-// Dependencies: [19, 1071, 21, 4917, 575, 1378, 4978, 4924, 7126, 7314, 7148, 1186, 2]
+// Dependencies: [19, 1071, 21, 5012, 575, 1378, 5073, 5019, 7221, 7409, 7243, 1186, 2]
 // Exports: default
 
-// Module 7955 (FormInput)
+// Module 8054 (FormInput)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import shared from "shared" /* 4924 */;
-import native from "native" /* 4978 */;
-import RedesignCompat from "RedesignCompat" /* 7126 */;
+import shared from "shared" /* 5019 */;
+import native from "native" /* 5073 */;
+import RedesignCompat from "RedesignCompat" /* 7221 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -191,11 +191,11 @@ export default function FormInput(helpText) {
     if (flag3) {
       const obj2 = { ref: ref1, returnKeyType: "default", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, maxLength: null, onEndEditing: null, value, errorMessage: error };
       ({ maxLength: obj8.maxLength, onEndEditing: obj8.onEndEditing } = merged);
-      const TextArea = tmp5(7314).TextArea;
+      const TextArea = tmp5(7409).TextArea;
       tmp16Result = tmp16(TextArea, obj2);
     } else {
       const obj4 = { ref: ref1, returnKeyType: "done", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, onEndEditing: merged.onEndEditing, value: tmp21, errorMessage: error };
-      const TextInput = tmp5(7148).TextInput;
+      const TextInput = tmp5(7243).TextInput;
       tmp16Result = tmp16(TextInput, obj4);
       tmp21 = value;
     }

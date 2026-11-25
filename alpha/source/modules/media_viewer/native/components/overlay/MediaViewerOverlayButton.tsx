@@ -1,12 +1,12 @@
-// Module ID: 8557
-// Function ID: 8558
+// Module ID: 8656
+// Function ID: 8657
 // Name: MediaViewerOverlayButton
-// Dependencies: [19, 21, 7811, 2]
+// Dependencies: [19, 21, 7910, 2]
 // Exports: default
 
-// Module 8557 (MediaViewerOverlayButton)
+// Module 8656 (MediaViewerOverlayButton)
 import Fragment from "Fragment" /* 21 */;
-import IconButton2 from "IconButton" /* 7811 */;
+import IconButton2 from "IconButton" /* 7910 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8482
+// Function ID: 8483
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1071, 2117, 1083, 8384, 4924, 1112, 2]
+// Dependencies: [5, 32, 19, 1071, 2117, 1083, 8483, 5019, 1112, 2]
 // Exports: default
 
-// Module 8383 (useCreateChannelSubmit)
+// Module 8482 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ export default function useCreateChannelSubmit(arg0) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -172,7 +172,7 @@ export default function useCreateChannelSubmit(arg0) {
             type = 0;
             bitrate(false);
             applicationId = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp62) {
           closure_5 = tmp62;

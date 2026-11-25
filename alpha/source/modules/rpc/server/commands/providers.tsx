@@ -1,17 +1,17 @@
-// Module ID: 15738
-// Function ID: 15739
+// Module ID: 15859
+// Function ID: 15860
 // Name: providers
-// Dependencies: [5, 7336, 5671, 1071, 2144, 1082, 7406, 7518, 10077, 10080, 6052, 572, 1107, 7614, 2]
+// Dependencies: [5, 7431, 5766, 1071, 2144, 1082, 7501, 7613, 10176, 10179, 6147, 572, 1107, 7713, 2]
 
-// Module 15738 (providers)
+// Module 15859 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7406 */;
-import RPCErrorDefault from "RPCError" /* 7518 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10077 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7501 */;
+import RPCErrorDefault from "RPCError" /* 7613 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10176 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7336 */;
-import Constants_mod from "Constants" /* 5671 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
+import Constants_mod from "Constants" /* 5766 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import Constants_mod3 from "Constants" /* 2144 */;
 import Constants_mod4 from "Constants" /* 1082 */;
@@ -47,7 +47,7 @@ let value = function _refreshProviderAccessToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ let closure_11 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {

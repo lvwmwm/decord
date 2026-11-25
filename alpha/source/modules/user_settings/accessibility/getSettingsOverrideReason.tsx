@@ -1,14 +1,14 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 16891
+// Function ID: 16892
 // Name: getSettingsOverrideReason
-// Dependencies: [4743, 1081, 1112, 4354, 504, 2]
+// Dependencies: [4838, 1081, 1112, 4406, 504, 2]
 // Exports: default, useIsSettingLockedByOverride, useSettingsOverrideReason
 
-// Module 16770 (getSettingsOverrideReason)
+// Module 16891 (getSettingsOverrideReason)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef4354 from "module_4354" /* 4354 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4743 */;
+import _modDef4406 from "module_4406" /* 4406 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4838 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ export default function getSettingsOverrideReason(arg0) {
     return intl2.string(intl4.t["2ExvRu"]);
   } else if (constants.GAME_MODE === arg0) {
     const intl = intl4.intl;
-    return intl.string(_modDef4354.VGcdxP);
+    return intl.string(_modDef4406.VGcdxP);
   }
 };
 export function useSettingsOverrideReason(arg0) {
@@ -45,7 +45,7 @@ export function useSettingsOverrideReason(arg0) {
       formatResult = intl.string(intl4.t["2ExvRu"]);
     } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
       const intl3 = intl4.intl;
-      formatResult = intl3.string(_modDef4354.VGcdxP);
+      formatResult = intl3.string(_modDef4406.VGcdxP);
     }
     return formatResult;
   });

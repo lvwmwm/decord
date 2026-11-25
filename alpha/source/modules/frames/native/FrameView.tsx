@@ -1,21 +1,21 @@
-// Module ID: 19193
-// Function ID: 19194
+// Module ID: 19305
+// Function ID: 19306
 // Name: FrameView
-// Dependencies: [32, 19, 6808, 6811, 21, 6845, 504, 572, 7561, 19194, 10059, 19195, 5921, 1112, 6812, 19196, 10076, 15782, 10108, 2]
+// Dependencies: [32, 19, 6903, 6906, 21, 6940, 504, 572, 7660, 19306, 10158, 19307, 6016, 1112, 6907, 19308, 10175, 15903, 10207, 2]
 // Exports: default
 
-// Module 19193 (FrameView)
+// Module 19305 (FrameView)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5921 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
-import leaveFrame from "leaveFrame" /* 7561 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 15782 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 19194 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
+import FramesConstants from "FramesConstants" /* 6906 */;
+import leaveFrame from "leaveFrame" /* 7660 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 15903 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 19306 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
 import size from "module_2" /* 2 */;
 
 const FrameLayoutModes = FramesConstants.FrameLayoutModes;

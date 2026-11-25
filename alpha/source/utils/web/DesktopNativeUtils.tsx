@@ -1,17 +1,17 @@
-// Module ID: 6898
-// Function ID: 6899
+// Module ID: 6993
+// Function ID: 6994
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1071, 38, 6658, 1378, 510, 6899, 6900, 4, 6901, 6902, 1379, 1284, 5730, 2]
+// Dependencies: [32, 5, 1071, 38, 6753, 1378, 510, 6994, 6995, 4, 6996, 6997, 1379, 1284, 5825, 2]
 
-// Module 6898 (DesktopNativeUtils)
+// Module 6993 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1071 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5730 */;
-import flow_Client from "flow/Client" /* 6658 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6899 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6900 */;
-import IPCEvents from "IPCEvents" /* 6901 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5825 */;
+import flow_Client from "flow/Client" /* 6753 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6994 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6995 */;
+import IPCEvents from "IPCEvents" /* 6996 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(6902);
+const FileExtensionUtils = tmp2(6997);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -76,7 +76,7 @@ obj = function _transcodeImageToPng() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -729,7 +729,7 @@ let obj2 = {
               obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -763,7 +763,7 @@ let obj2 = {
                 const dock = closure_129_0.dock;
                 dock.cancelBounce(closure_0);
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp10) {
               c3 = 3;
@@ -789,7 +789,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -818,7 +818,7 @@ let obj2 = {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp8) {
           c0 = 3;
           throw tmp8;
@@ -844,7 +844,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -951,7 +951,7 @@ let obj2 = {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp39) {
           c4 = 3;
@@ -975,7 +975,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1023,7 +1023,7 @@ let obj2 = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -1036,7 +1036,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(6902);
+        const tmpResult = tmp(6997);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;
@@ -1061,7 +1061,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c8;
@@ -1551,7 +1551,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1700,7 +1700,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

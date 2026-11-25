@@ -1,13 +1,13 @@
-// Module ID: 20124
-// Function ID: 20125
+// Module ID: 20226
+// Function ID: 20227
 // Name: MidjourneyOnboardingManager
-// Dependencies: [5, 15092, 1071, 7349, 15091, 7478, 2]
+// Dependencies: [5, 15214, 1071, 7444, 15213, 7573, 2]
 
-// Module 20124 (MidjourneyOnboardingManager)
+// Module 20226 (MidjourneyOnboardingManager)
 import Constants from "Constants" /* 1071 */;
-import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15092 */;
+import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 15214 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -35,7 +35,7 @@ class MidjourneyOnboardingManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ class MidjourneyOnboardingManager extends AutomaticLifecycleManager {
             tmp8(Routes.CHANNEL(null, closure_128_0.id));
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp15) {
           c2 = 3;
           throw tmp15;

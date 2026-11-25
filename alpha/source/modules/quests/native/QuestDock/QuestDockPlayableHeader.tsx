@@ -1,19 +1,19 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16757
+// Function ID: 16758
 // Name: QuestDockPlayableHeader
-// Dependencies: [19, 17, 6745, 16508, 21, 575, 4917, 16542, 16509, 1653, 5518, 8478, 16627, 16505, 16527, 6748, 8251, 16614, 16609, 1378, 5604, 5508, 6026, 1112, 2]
+// Dependencies: [19, 17, 6840, 16629, 21, 575, 5012, 16663, 16630, 1653, 5613, 8577, 16748, 16626, 16648, 6843, 8350, 16735, 16730, 1378, 5699, 5603, 6121, 1112, 2]
 
-// Module 16636 (QuestDockPlayableHeader)
+// Module 16757 (QuestDockPlayableHeader)
 import nativeDefault from "native" /* 575 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8251 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16527 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
+import QuestTypes from "QuestTypes" /* 6843 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8350 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16648 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockConstants from "QuestDockConstants" /* 16508 */;
+import QuestDockConstants from "QuestDockConstants" /* 16629 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT;

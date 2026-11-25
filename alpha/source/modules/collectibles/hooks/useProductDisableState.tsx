@@ -1,10 +1,10 @@
-// Module ID: 11153
-// Function ID: 11154
+// Module ID: 11252
+// Function ID: 11253
 // Name: useProductDisableState
 // Dependencies: [2178, 504, 1074, 1112, 2]
 // Exports: useProductDisableState
 
-// Module 11153 (useProductDisableState)
+// Module 11252 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1074 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;

@@ -1,10 +1,10 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 8608
+// Function ID: 8609
 // Name: useLocalSelfMuteDeaf
 // Dependencies: [502, 2131, 504, 2]
 // Exports: useLocalSelfMuteDeaf, withLocalSelfMuteDeaf
 
-// Module 8509 (useLocalSelfMuteDeaf)
+// Module 8608 (useLocalSelfMuteDeaf)
 import get_initialized from "get initialized" /* 504 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;

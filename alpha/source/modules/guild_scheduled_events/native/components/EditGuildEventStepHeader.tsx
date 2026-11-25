@@ -1,15 +1,15 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8529
+// Function ID: 8530
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 4917, 5508, 2]
+// Dependencies: [19, 17, 21, 5012, 5603, 2]
 // Exports: default
 
-// Module 8430 (EditGuildEventStepHeader)
+// Module 8529 (EditGuildEventStepHeader)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5508 */;
+import Text_Text from "Text/Text" /* 5603 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c3;

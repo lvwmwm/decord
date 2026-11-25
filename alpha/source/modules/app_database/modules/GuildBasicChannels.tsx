@@ -1,27 +1,27 @@
-// Module ID: 8170
-// Function ID: 8171
+// Module ID: 8269
+// Function ID: 8270
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5723, 4770, 502, 4766, 4829, 4823, 4788, 4849, 4767, 3, 4795, 8171, 11, 4836, 4854, 1083, 4858, 2]
+// Dependencies: [32, 5, 5818, 4865, 502, 4861, 4924, 4918, 4883, 4944, 4862, 3, 4890, 8270, 11, 4931, 4949, 1083, 4953, 2]
 
-// Module 8170 (GuildBasicChannels)
+// Module 8269 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
-import ChannelStore2 from "ChannelStore" /* 4766 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4795 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4836 */;
-import PermissionUtils from "PermissionUtils" /* 4854 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4858 */;
+import ChannelStore2 from "ChannelStore" /* 4861 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4890 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4931 */;
+import PermissionUtils from "PermissionUtils" /* 4949 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4953 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildRoleStore from "GuildRoleStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4767 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildRoleStore from "GuildRoleStore" /* 4918 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4862 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStore = ChannelStore2;
@@ -113,7 +113,7 @@ function haveSelfMemberPermissionInputsChanged(roles, member) {
         if (num2 == null) {
           num2 = 0;
         }
-        tmp7 = tmp13 != (num2 & tmp11(4854).PERMISSION_MEMBER_FLAGS_MASK);
+        tmp7 = tmp13 != (num2 & tmp11(4949).PERMISSION_MEMBER_FLAGS_MASK);
       }
       tmp2 = tmp7;
     }
@@ -521,7 +521,7 @@ class GuildBasicChannels {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c7;
@@ -576,7 +576,7 @@ class GuildBasicChannels {
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } else {
                           try {
@@ -620,7 +620,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_16.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "Array" }, done: true };
+                              return { value: { v: "dispatch" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;
@@ -630,7 +630,7 @@ class GuildBasicChannels {
                                 return { value, done: true };
                               } else {
                                 c6 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               }
                             } else if (3 === c5) {
                               if (arg0 === 1) {
@@ -688,7 +688,7 @@ class GuildBasicChannels {
                 }
               }
               c10 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === tmp3) {
             c7 = 0;

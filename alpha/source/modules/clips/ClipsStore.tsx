@@ -1,24 +1,24 @@
 // Module ID: 2138
 // Function ID: 2139
 // Name: ClipsStore
-// Dependencies: [32, 5, 2139, 502, 7990, 1071, 5817, 15311, 4728, 15312, 1404, 15313, 15315, 15316, 504, 572, 2]
+// Dependencies: [32, 5, 2139, 502, 8089, 1071, 5912, 15433, 4823, 15434, 1404, 15435, 15437, 15438, 504, 572, 2]
 
 // Module 2138 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FlagUtils from "FlagUtils" /* 1404 */;
-import DiscordNativeDefault from "DiscordNative" /* 4728 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15311 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15313 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15315 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15316 */;
+import DiscordNativeDefault from "DiscordNative" /* 4823 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15433 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15435 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15437 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15438 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 7990 */;
+import ClipsConstants from "ClipsConstants" /* 8089 */;
 import Constants from "Constants" /* 1071 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5817 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5912 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2, revision;
@@ -49,7 +49,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_54.emitChange();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {

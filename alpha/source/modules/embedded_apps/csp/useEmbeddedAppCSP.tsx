@@ -1,21 +1,21 @@
-// Module ID: 10089
-// Function ID: 10090
+// Module ID: 10188
+// Function ID: 10189
 // Name: useEmbeddedAppCSP
-// Dependencies: [5, 7555, 504, 7557, 7556, 5558, 2]
+// Dependencies: [5, 7650, 504, 7652, 7651, 5653, 2]
 // Exports: default
 
-// Module 10089 (useEmbeddedAppCSP)
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 7556 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 7557 */;
+// Module 10188 (useEmbeddedAppCSP)
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 7651 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 7652 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 7555 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 7650 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
 let tmp;
-const getURLForApplication = tmp(5558);
+const getURLForApplication = tmp(5653);
 let obj = {
   getQueryId(arg0) {
     let combined = null;
@@ -25,10 +25,10 @@ let obj = {
     }
     return combined;
   },
-  get(applicationRouterOrigin) {
+  get(arg0) {
     let policy = null;
-    if (null != applicationRouterOrigin) {
-      policy = EmbeddedAppCSPStore.getPolicy(applicationRouterOrigin);
+    if (null != arg0) {
+      policy = EmbeddedAppCSPStore.getPolicy(arg0);
     }
     return policy;
   },
@@ -50,7 +50,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -79,7 +79,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

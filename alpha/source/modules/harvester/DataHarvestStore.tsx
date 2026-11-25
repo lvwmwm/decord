@@ -1,9 +1,9 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15153
+// Function ID: 15154
 // Name: DataHarvestStore
 // Dependencies: [504, 572, 2]
 
-// Module 15031 (DataHarvestStore)
+// Module 15153 (DataHarvestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

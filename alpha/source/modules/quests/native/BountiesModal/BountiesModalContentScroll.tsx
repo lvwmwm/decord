@@ -1,39 +1,39 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16474
+// Function ID: 16475
 // Name: BountiesModalContentScroll
-// Dependencies: [32, 19, 17, 8223, 6745, 16354, 1071, 4763, 21, 1358, 575, 4917, 1653, 1494, 1628, 16355, 9751, 8220, 16350, 5127, 5130, 8241, 9790, 1107, 504, 16358, 16359, 1268, 8251, 16360, 9753, 6752, 6750, 9848, 1706, 16361, 16400, 16364, 13667, 16401, 7356, 16405, 5472, 16406, 4978, 15912, 2]
+// Dependencies: [32, 19, 17, 8322, 6840, 16475, 1071, 4858, 21, 1358, 575, 5012, 1653, 1494, 1628, 16476, 9850, 8319, 16471, 5222, 5225, 8340, 9889, 1107, 504, 16479, 16480, 1268, 8350, 16481, 9852, 6847, 6845, 9947, 1706, 16482, 16521, 16485, 13790, 16522, 7451, 16526, 5567, 16527, 5073, 16033, 2]
 // Exports: default
 
-// Module 16353 (BountiesModalContentScroll)
+// Module 16474 (BountiesModalContentScroll)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import native from "native" /* 4978 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import timingPresets from "timingPresets" /* 5130 */;
-import QuestContent from "QuestContent" /* 6750 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import QuestDataUtils from "QuestDataUtils" /* 8220 */;
-import AnalyticsActions from "AnalyticsActions" /* 8241 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8251 */;
-import QuestActionCreators from "QuestActionCreators" /* 9753 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 9790 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 9848 */;
-import shared_ThemeTypes from "shared/ThemeTypes" /* 15912 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16350 */;
-import BountiesScrollVideoItem2 from "BountiesScrollVideoItem" /* 16361 */;
-import BountiesScrollRecapPage from "BountiesScrollRecapPage" /* 16401 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import native from "native" /* 5073 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import timingPresets from "timingPresets" /* 5225 */;
+import QuestContent from "QuestContent" /* 6845 */;
+import AdCreativeType from "AdCreativeType" /* 6847 */;
+import QuestDataUtils from "QuestDataUtils" /* 8319 */;
+import AnalyticsActions from "AnalyticsActions" /* 8340 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8350 */;
+import QuestActionCreators from "QuestActionCreators" /* 9852 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 9889 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 9947 */;
+import shared_ThemeTypes from "shared/ThemeTypes" /* 16033 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16471 */;
+import BountiesScrollVideoItem2 from "BountiesScrollVideoItem" /* 16482 */;
+import BountiesScrollRecapPage from "BountiesScrollRecapPage" /* 16522 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BountyStore from "BountyStore" /* 8223 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 16354 */;
+import BountyStore from "BountyStore" /* 8322 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 16475 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;
@@ -278,9 +278,9 @@ function BountiesModalContentScrollInner(initialBountyId) {
   let obj = react;
   react.useRef(null);
   const tmp5 = initialBountyId;
-  [tmp8, c4] = height(react.useState(initialBountyId(16355).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
+  [tmp8, c4] = height(react.useState(initialBountyId(16476).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
   _require = tmp8;
-  const tmp7 = height(react.useState(initialBountyId(16355).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
+  const tmp7 = height(react.useState(initialBountyId(16476).BOUNTIES_MODAL_BASE_FOOTER_HEIGHT), 2);
   const callback = react.useCallback((nativeEvent) => {
     _undefined(Math.ceil(nativeEvent.nativeEvent.layout.height));
   }, []);
@@ -305,7 +305,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
     size = { top: rect.top, left: Math.floor(rect.left + (diff - result1) / 2), width: Math.floor(result1), height: Math.floor(result) };
     return size;
   }, items);
-  let obj2 = initialBountyId(9751);
+  let obj2 = initialBountyId(9850);
   const questHomeBounties = obj2.useQuestHomeBounties().questHomeBounties;
   const data = height(react.useState(() => {
     let items;
@@ -397,7 +397,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
   const items7 = [data];
   const items8 = [data, closure_8];
   const stateFromStores = obj4.useStateFromStores(items7, () => BountyStore.getCompletedBountyCount(first) * adContentId, items8);
-  let obj5 = initialBountyId(16358);
+  let obj5 = initialBountyId(16479);
   const bountyRecurringSwipeUpNux = obj5.useBountyRecurringSwipeUpNux({ isEligible: tmp24 });
   let hasRecurringSwipeUpNux = bountyRecurringSwipeUpNux.hasRecurringSwipeUpNux;
   const dismissRecurringSwipeUpNux = bountyRecurringSwipeUpNux.dismissRecurringSwipeUpNux;
@@ -412,7 +412,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
   const items9 = [sum1, result, height3];
   const memo4 = react.useMemo(() => ({ lastBounty, fullRecap: sum1, revealHeight: height3 }), items9);
   const items10 = [data, sum1, stateFromStores > 0, sum];
-  const obj6 = initialBountyId(16359);
+  const obj6 = initialBountyId(16480);
   const handleRecapMomentumEnd = obj6.useBountiesRecapScroll({ listRef: ref, enabled: tmp28, offsets: memo4 }).handleRecapMomentumEnd;
   const memo5 = react.useMemo(() => {
     const mapped = first.map((item, index) => index * slotHeight);
@@ -485,7 +485,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
     callback2();
     callback3(arg0);
   }, items12);
-  const obj10 = initialBountyId(16360);
+  const obj10 = initialBountyId(16481);
   const orbAmount = obj10.useBountiesRecapOrbCount({ scrollY: sharedValue3, lastBountyScrollOffset: result, recapRevealHeight: height3, targetOrbAmount: stateFromStores, enabled: tmp28 });
   const items13 = [data, first3];
   const effect2 = react.useEffect(() => {
@@ -656,7 +656,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
   const items28 = [first4, stateFromStores > 0, sharedValue3, result, ];
   const useAnimatedReaction2 = tmp5(1653).useAnimatedReaction;
   tmp5(1653);
-  items28[4] = tmp5(16359).RECAP_SNAP_EPSILON;
+  items28[4] = tmp5(16480).RECAP_SNAP_EPSILON;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -726,7 +726,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
   const items36 = [closure_43, stateFromStores > 0, sharedValue3, sum1, ];
   const useAnimatedReaction4 = tmp5(1653).useAnimatedReaction;
   tmp5(1653);
-  items36[4] = tmp5(16359).RECAP_SNAP_EPSILON;
+  items36[4] = tmp5(16480).RECAP_SNAP_EPSILON;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -883,7 +883,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
   const items52 = [closure_48, , , , ];
   const useDerivedValue = tmp5(1653).useDerivedValue;
   tmp5(1653);
-  items52[1] = tmp5(16359).getRevealProgress;
+  items52[1] = tmp5(16480).getRevealProgress;
   items52[2] = sharedValue3;
   items52[3] = result;
   items52[4] = height3;
@@ -953,7 +953,7 @@ function BountiesModalContentScrollInner(initialBountyId) {
   const items58 = [closure_51, sharedValue3, result, sum, derivedValue, , , , , , ];
   const useAnimatedStyle3 = tmp5(1653).useAnimatedStyle;
   tmp5(1653);
-  items58[5] = tmp5(16359).getRevealProgress;
+  items58[5] = tmp5(16480).getRevealProgress;
   items58[6] = height3;
   items58[7] = tmp5(1653).interpolate;
   items58[8] = 0.05;
@@ -1104,12 +1104,12 @@ function BountiesModalContentScrollInner(initialBountyId) {
     let tmp193 = null;
     if (tmp43) {
       const obj12 = { orbAmount: stateFromStores };
-      tmp193 = callback2(tmp5(16400).BountiesScrollRecapFooter, obj12);
+      tmp193 = callback2(tmp5(16521).BountiesScrollRecapFooter, obj12);
     }
     const obj13 = { value: memo3, children: tmp195(tmp196, obj14) };
     let tmp194Result = null;
     obj14 = { style: tmp.root, children: items70 };
-    const BountyVideoEndAppStoreProvider = tmp5(16364).BountyVideoEndAppStoreProvider;
+    const BountyVideoEndAppStoreProvider = tmp5(16485).BountyVideoEndAppStoreProvider;
     tmp195 = hasRecurringSwipeUpNux;
     tmp196 = questHomeBounties;
     if (stateFromStores > 0) {
@@ -1122,8 +1122,8 @@ function BountiesModalContentScrollInner(initialBountyId) {
       }
       obj16 = {
         adContentId,
-        adCreativeType: tmp5(6752).AdCreativeType.BOUNTY,
-        questContent: tmp5(6750).QuestContent.BOUNTIES_END_INTERSTITIAL,
+        adCreativeType: tmp5(6847).AdCreativeType.BOUNTY,
+        questContent: tmp5(6845).QuestContent.BOUNTIES_END_INTERSTITIAL,
         overrideVisibility: first2,
         sourceQuestContent,
         children() {
@@ -1131,11 +1131,11 @@ function BountiesModalContentScrollInner(initialBountyId) {
               return authStore4(BountiesScrollRecapPage.BountiesScrollRecapPage, obj);
             }
       };
-      QuestContentImpressionTrackerNative = tmp5(13667).QuestContentImpressionTrackerNative;
+      QuestContentImpressionTrackerNative = tmp5(13790).QuestContentImpressionTrackerNative;
       tmp194Result = tmp194(View, obj15);
     }
     items70 = [tmp194Result, , , , , ];
-    const obj17 = { style: memo8, children: callback2(tmp5(7356).AnimatedFlashList, obj18) };
+    const obj17 = { style: memo8, children: callback2(tmp5(7451).AnimatedFlashList, obj18) };
     const View2 = tmp2(1653).View;
     obj18 = {
       ref,
@@ -1163,14 +1163,14 @@ function BountiesModalContentScrollInner(initialBountyId) {
     if (null != tmp16) {
       const obj19 = { metadata: tmp16.metadata, sheetHeight: memo2, revealProgress: sharedValue, onDismiss: callback2, onInstallPress: null, onOverlaySurfaceClick: null, onCarouselScroll: null };
       ({ onInstallPress: obj20.onInstallPress, onOverlaySurfaceClick: obj20.onOverlaySurfaceClick, onCarouselScroll: obj20.onCarouselScroll } = tmp16);
-      tmp194Result4 = tmp194(tmp2(16405), obj19);
+      tmp194Result4 = tmp194(tmp2(16526), obj19);
     }
     items70[2] = tmp194Result4;
     let tmp194Result5 = null;
     if (tmp173) {
       tmp194Result5 = null;
       if (data.length > 1) {
-        const obj21 = { pointerEvents: "none", style: items71, children: callback2(tmp2(5472), obj22) };
+        const obj21 = { pointerEvents: "none", style: items71, children: callback2(tmp2(5567), obj22) };
         items71 = [memo13, animatedStyle4];
         const View3 = tmp2(1653).View;
         obj22 = { colors: first1, style: memo.absoluteFill };
@@ -1188,11 +1188,11 @@ function BountiesModalContentScrollInner(initialBountyId) {
     tmp194Result6 = null;
     if (tmp40) {
       const obj24 = { onPress: callback5 };
-      tmp194Result6 = tmp194(tmp2(16406), obj24);
+      tmp194Result6 = tmp194(tmp2(16527), obj24);
     }
     items70[4] = callback2(View4, obj23);
     const obj25 = { visible: tmp43, onContentLayout: callback, zIndex: height3, opacityStyle: animatedStyle3, children: tmp193 };
-    const tmp2Result = tmp2(16355);
+    const tmp2Result = tmp2(16476);
     items70[5] = callback2(tmp2Result, obj25);
     return callback2(BountyVideoEndAppStoreProvider, obj13);
   }

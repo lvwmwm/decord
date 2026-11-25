@@ -1,20 +1,20 @@
-// Module ID: 19085
-// Function ID: 19086
+// Module ID: 19197
+// Function ID: 19198
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 4763, 21, 4917, 575, 4875, 5133, 5134, 572, 1653, 5127, 1706, 10930, 4750, 1186, 5500, 5508, 1112, 4978, 2]
+// Dependencies: [32, 19, 17, 4858, 21, 5012, 575, 4970, 5228, 5229, 572, 1653, 5222, 1706, 11029, 4845, 1186, 5595, 5603, 1112, 5073, 2]
 // Exports: default
 
-// Module 19085 (BurstReactionAnimationContainer)
+// Module 19197 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4875 */;
-import native from "native" /* 4978 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4970 */;
+import native from "native" /* 5073 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -208,8 +208,8 @@ function BurstReactionAnimationContainerInner() {
         }
     };
     items2 = [];
-    const tmp19 = first(10930);
-    items2[0] = tmp6(4750).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
+    const tmp19 = first(11029);
+    items2[0] = tmp6(4845).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
     tmp16 = closure_8(tmp19, obj);
   }
   return tmp16;

@@ -1,17 +1,17 @@
-// Module ID: 7478
-// Function ID: 7479
+// Module ID: 7573
+// Function ID: 7574
 // Name: safeTransitionTo
-// Dependencies: [5, 4788, 1071, 5540, 7479, 1098, 7480, 5921, 1112, 10626, 2960, 13575, 5719, 2]
+// Dependencies: [5, 4883, 1071, 5635, 7574, 1098, 7575, 6016, 1112, 10725, 3012, 13698, 5814, 2]
 // Exports: default
 
-// Module 7478 (safeTransitionTo)
+// Module 7573 (safeTransitionTo)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
-import LinkUtils from "LinkUtils" /* 5540 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7479 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7480 */;
+import LinkUtils from "LinkUtils" /* 5635 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7574 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ let obj = function _safeTransitionTo() {
             obj2.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         if (null != c2) {
           if (null != c2.guildId) {
@@ -166,7 +166,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp68 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "Array" };
+          closure_2 = { guildId: "dispatch" };
         }
         c5 = 2;
         c6 = 1;

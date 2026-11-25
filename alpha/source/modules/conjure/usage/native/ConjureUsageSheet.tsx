@@ -1,19 +1,19 @@
-// Module ID: 18656
-// Function ID: 18657
+// Module ID: 18768
+// Function ID: 18769
 // Name: ConjureUsageSheet
-// Dependencies: [19, 17, 7533, 21, 4917, 575, 5508, 7566, 504, 7420, 7381, 1112, 4192, 5989, 2]
+// Dependencies: [19, 17, 7628, 21, 5012, 575, 5603, 7665, 504, 7515, 7476, 1112, 4244, 6084, 2]
 // Exports: default
 
-// Module 18656 (ConjureUsageSheet)
+// Module 18768 (ConjureUsageSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4192 from "module_4192" /* 4192 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 7566 */;
+import _modDef4244 from "module_4244" /* 4244 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 7665 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 7533 */;
+import ConjureChatStore from "ConjureChatStore" /* 7628 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -80,62 +80,62 @@ export default function ConjureUsageSheet(projectId) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const sumTokenUsage = projectId(7566).sumTokenUsage;
-    projectId(7566);
-    const tmp2Result8 = projectId(7566);
+    const sumTokenUsage = projectId(7665).sumTokenUsage;
+    projectId(7665);
+    const tmp2Result8 = projectId(7665);
     const sumTokenUsageResult = tmp2Result8.sumTokenUsage(stateFromStores.orchestrator, stateFromStores.codegen);
-    const tmp2Result9 = projectId(7566);
+    const tmp2Result9 = projectId(7665);
     const obj2 = { header: closure_5(BottomSheetTitleHeader, obj3), children: closure_5(View, obj4) };
     const sumTokenUsageResult1 = sumTokenUsage(sumTokenUsageResult, tmp2Result9.usageOrEmpty(stateFromStores.compaction));
-    const ActionSheet = tmp2(7420).ActionSheet;
-    obj3 = { title: intl.string(_modDef4192.p5EGzq) };
-    BottomSheetTitleHeader = tmp2(7381).BottomSheetTitleHeader;
+    const ActionSheet = tmp2(7515).ActionSheet;
+    obj3 = { title: intl.string(_modDef4244.p5EGzq) };
+    BottomSheetTitleHeader = tmp2(7476).BottomSheetTitleHeader;
     intl = tmp2(1112).intl;
     obj4 = { children: closure_6(Stack, obj5) };
     obj5 = { direction: "vertical", spacing: nativeDefault.space.PX_12, children: items2 };
-    Stack = tmp2(5989).Stack;
+    Stack = tmp2(6084).Stack;
     const obj6 = { variant: "body-md/semibold", color: "text-default", children: formatToPlainString(gMuw5d, obj7) };
-    const Text = tmp2(5508).Text;
+    const Text = tmp2(5603).Text;
     const intl2 = tmp2(1112).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { runes: runesFromUsdResult.toLocaleString() };
-    gMuw5d = _modDef4192.gMuw5d;
-    const tmp2Result10 = projectId(7566);
+    gMuw5d = _modDef4244.gMuw5d;
+    const tmp2Result10 = projectId(7665);
     runesFromUsdResult = tmp2Result10.runesFromUsd(stateFromStores.cost_usd);
     items2 = [closure_5(Text, obj6), , ];
     const obj8 = { direction: "vertical", spacing: nativeDefault.space.PX_4, children: items3 };
-    const Stack2 = tmp2(5989).Stack;
-    const obj9 = { label: intl3.string(_modDef4192.xtxP0e), usage: stateFromStores.orchestrator };
+    const Stack2 = tmp2(6084).Stack;
+    const obj9 = { label: intl3.string(_modDef4244.xtxP0e), usage: stateFromStores.orchestrator };
     intl3 = tmp2(1112).intl;
     items3 = [closure_5(RoleRow, obj9), , , , ];
-    const obj10 = { label: intl4.string(_modDef4192["9Sj3SX"]), usage: stateFromStores.codegen };
+    const obj10 = { label: intl4.string(_modDef4244["9Sj3SX"]), usage: stateFromStores.codegen };
     intl4 = tmp2(1112).intl;
     items3[1] = closure_5(RoleRow, obj10);
-    const obj11 = { label: intl5.string(_modDef4192.ANCEo3), usage: tmp2Result11.usageOrEmpty(stateFromStores.compaction) };
+    const obj11 = { label: intl5.string(_modDef4244.ANCEo3), usage: tmp2Result11.usageOrEmpty(stateFromStores.compaction) };
     intl5 = tmp2(1112).intl;
-    tmp2Result11 = projectId(7566);
+    tmp2Result11 = projectId(7665);
     items3[2] = closure_5(RoleRow, obj11);
-    const obj12 = { label: intl6.string(_modDef4192.ugL6D4), usage: tmp2Result12.usageOrEmpty(stateFromStores.classifier) };
+    const obj12 = { label: intl6.string(_modDef4244.ugL6D4), usage: tmp2Result12.usageOrEmpty(stateFromStores.classifier) };
     intl6 = tmp2(1112).intl;
-    tmp2Result12 = projectId(7566);
+    tmp2Result12 = projectId(7665);
     items3[3] = closure_5(RoleRow, obj12);
-    const obj13 = { label: intl7.string(_modDef4192.DHr5On), usage: tmp2Result13.usageOrEmpty(stateFromStores.image) };
+    const obj13 = { label: intl7.string(_modDef4244.DHr5On), usage: tmp2Result13.usageOrEmpty(stateFromStores.image) };
     intl7 = tmp2(1112).intl;
-    tmp2Result13 = projectId(7566);
+    tmp2Result13 = projectId(7665);
     items3[4] = closure_5(RoleRow, obj13);
     items2[1] = closure_6(Stack2, obj8);
     const obj14 = { style: tmp.row, children: items4 };
     const obj15 = { style: tmp.label, children: closure_5(Text2, obj16) };
-    obj16 = { variant: "body-sm/normal", color: "text-muted", children: intl8.string(_modDef4192["8OUg09"]) };
-    Text2 = tmp2(5508).Text;
+    obj16 = { variant: "body-sm/normal", color: "text-muted", children: intl8.string(_modDef4244["8OUg09"]) };
+    Text2 = tmp2(5603).Text;
     intl8 = tmp2(1112).intl;
     items4 = [closure_5(View, obj15), ];
     const _Math = Math;
     const obj17 = { variant: "body-sm/medium", color: "text-default", children: "" + round(100 * tmp2Result14.cacheHitRate(sumTokenUsageResult1)) + "%" };
-    const Text3 = tmp2(5508).Text;
+    const Text3 = tmp2(5603).Text;
     round = Math.round;
     const _HermesInternal = HermesInternal;
-    tmp2Result14 = projectId(7566);
+    tmp2Result14 = projectId(7665);
     items4[1] = closure_5(Text3, obj17);
     items2[2] = closure_6(View, obj14);
     return closure_5(ActionSheet, obj2);

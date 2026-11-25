@@ -1,10 +1,10 @@
-// Module ID: 5631
-// Function ID: 5632
+// Module ID: 5726
+// Function ID: 5727
 // Name: normalizeURLScheme
 // Dependencies: [2]
 // Exports: default
 
-// Module 5631 (normalizeURLScheme)
+// Module 5726 (normalizeURLScheme)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/links/native/normalizeURLScheme.tsx");

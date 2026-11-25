@@ -1,12 +1,12 @@
-// Module ID: 11069
-// Function ID: 11070
+// Module ID: 11168
+// Function ID: 11169
 // Name: CollectiblesAnalyticsContext
-// Dependencies: [19, 21, 11070, 2]
+// Dependencies: [19, 21, 11169, 2]
 // Exports: CollectiblesAnalyticsProvider, useCollectiblesAnalyticsContext
 
-// Module 11069 (CollectiblesAnalyticsContext)
+// Module 11168 (CollectiblesAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
-import useShallowObjectMemoDefault from "useShallowObjectMemo" /* 11070 */;
+import useShallowObjectMemoDefault from "useShallowObjectMemo" /* 11169 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

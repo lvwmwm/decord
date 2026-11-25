@@ -1,17 +1,17 @@
-// Module ID: 20187
-// Function ID: 20188
+// Module ID: 20289
+// Function ID: 20290
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1386, 20181, 20183, 6004, 20182, 5599, 1112, 3122, 1500, 20186, 2]
+// Dependencies: [5, 19, 1386, 20283, 20285, 6099, 20284, 5694, 1112, 3174, 1500, 20288, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 20187 (SafetyFlowsUtils)
+// Module 20289 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1112 */;
-import _modDef3122 from "module_3122" /* 3122 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6004 */;
-import types from "types" /* 20181 */;
-import constants from "constants" /* 20182 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20183 */;
+import _modDef3174 from "module_3174" /* 3174 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
+import types from "types" /* 20283 */;
+import constants from "constants" /* 20284 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -36,7 +36,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -85,7 +85,7 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { text: intl.string(_modDef3122["/fHz9S"]), variant: "success" };
+    const obj2 = { text: intl.string(_modDef3174["/fHz9S"]), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
@@ -165,7 +165,7 @@ export function useOnTaskComplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ export function useOnTaskComplete() {
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c4 = 3;

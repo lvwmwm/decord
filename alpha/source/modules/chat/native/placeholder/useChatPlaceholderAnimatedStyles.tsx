@@ -1,16 +1,16 @@
-// Module ID: 13464
-// Function ID: 13465
+// Module ID: 13587
+// Function ID: 13588
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4918, 1186, 504, 1653, 5127, 5130, 2]
+// Dependencies: [5013, 1186, 504, 1653, 5222, 5225, 2]
 // Exports: default
 
-// Module 13464 (useChatPlaceholderAnimatedStyles)
+// Module 13587 (useChatPlaceholderAnimatedStyles)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1186 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import timingPresets from "timingPresets" /* 5130 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import timingPresets from "timingPresets" /* 5225 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import size from "module_2" /* 2 */;
 
 let obj = { duration: 1300, easing: native.STANDARD_EASING };

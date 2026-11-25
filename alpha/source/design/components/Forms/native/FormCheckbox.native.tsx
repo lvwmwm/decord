@@ -1,20 +1,20 @@
-// Module ID: 7056
-// Function ID: 7057
+// Module ID: 7151
+// Function ID: 7152
 // Name: FormCheckbox
-// Dependencies: [19, 21, 4917, 575, 1653, 5517, 4931, 7057, 5518, 5519, 2]
+// Dependencies: [19, 21, 5012, 575, 1653, 5612, 5026, 7152, 5613, 5614, 2]
 // Exports: FormCheckbox
 
-// Module 7056 (FormCheckbox)
+// Module 7151 (FormCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import react2 from "react" /* 4931 */;
-import IconDefault from "Icon" /* 5517 */;
-import spring_spring from "spring/spring" /* 5518 */;
-import springPresets from "springPresets" /* 5519 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7057 */;
+import react2 from "react" /* 5026 */;
+import IconDefault from "Icon" /* 5612 */;
+import spring_spring from "spring/spring" /* 5613 */;
+import springPresets from "springPresets" /* 5614 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7152 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const module_1653 = _mod1653;

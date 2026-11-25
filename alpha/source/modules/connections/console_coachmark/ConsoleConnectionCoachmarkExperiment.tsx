@@ -1,13 +1,13 @@
-// Module ID: 18938
-// Function ID: 18939
+// Module ID: 19050
+// Function ID: 19051
 // Name: ConsoleConnectionCoachmarkExperiment
-// Dependencies: [7336, 6715, 1071, 1450, 504, 2]
+// Dependencies: [7431, 6810, 1071, 1450, 504, 2]
 // Exports: useIsConsoleConnectionCoachmarkEligible
 
-// Module 18938 (ConsoleConnectionCoachmarkExperiment)
+// Module 19050 (ConsoleConnectionCoachmarkExperiment)
 import get_initialized from "get initialized" /* 504 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7336 */;
-import ConsentStore from "ConsentStore" /* 6715 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
+import ConsentStore from "ConsentStore" /* 6810 */;
 import Constants from "Constants" /* 1071 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;

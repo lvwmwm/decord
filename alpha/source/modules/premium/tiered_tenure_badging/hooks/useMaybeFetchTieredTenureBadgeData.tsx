@@ -1,12 +1,12 @@
-// Module ID: 13739
-// Function ID: 13740
+// Module ID: 13862
+// Function ID: 13863
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1386, 504, 9679, 5478, 6183, 2]
+// Dependencies: [1386, 504, 9778, 5573, 6278, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 13739 (useMaybeFetchTieredTenureBadgeData)
-import useMountEffectDefault from "useMountEffect" /* 5478 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6183 */;
+// Module 13862 (useMaybeFetchTieredTenureBadgeData)
+import useMountEffectDefault from "useMountEffect" /* 5573 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6278 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

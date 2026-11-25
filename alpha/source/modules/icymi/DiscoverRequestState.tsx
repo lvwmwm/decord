@@ -1,10 +1,10 @@
-// Module ID: 8779
-// Function ID: 8780
+// Module ID: 8878
+// Function ID: 8879
 // Name: DiscoverRequestState
 // Dependencies: [2]
 // Exports: reduceDiscoverSnapshot
 
-// Module 8779 (DiscoverRequestState)
+// Module 8878 (DiscoverRequestState)
 import size from "module_2" /* 2 */;
 
 class DiscoverRequestGuard {

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/partner_perks/xbox/partner_pass", scales: [1], hash: "af399233cf0437cbc649d89eb97e72fd", name: "XboxPartnerPass.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Byb21vdGlvbnMvdGhpcmRfcGFydHk=", scales: [1], hash: "c7e8aedb735be955fd6cbbbbad75cf93", name: "hi.messages.c7e8aedb735be955fd6cbbbbad75cf93.compiled.messages", type: "jsona" });

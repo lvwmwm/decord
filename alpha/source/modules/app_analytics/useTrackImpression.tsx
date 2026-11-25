@@ -1,19 +1,19 @@
-// Module ID: 5990
-// Function ID: 5991
+// Module ID: 6085
+// Function ID: 6086
 // Name: useTrackImpression
-// Dependencies: [19, 4766, 4820, 4950, 1256, 1263, 1255, 572, 5887, 1343, 5991, 5478, 2]
+// Dependencies: [19, 4861, 4915, 5045, 1256, 1263, 1255, 572, 5982, 1343, 6086, 5573, 2]
 // Exports: default
 
-// Module 5990 (useTrackImpression)
+// Module 6085 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtils2 from "AnalyticsUtils" /* 1255 */;
 import _modDef1343 from "module_1343" /* 1343 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
-import uniqueIdDefault from "uniqueId" /* 5991 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
+import uniqueIdDefault from "uniqueId" /* 6086 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import ImpressionStore from "ImpressionStore" /* 1256 */;
 import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import size from "module_2" /* 2 */;
@@ -97,7 +97,7 @@ export default function useTrackImpression(current) {
   react = undefined;
   react = react.useRef(undefined);
   const ref2 = react.useRef(undefined);
-  const tmp = obj(5478)(() => {
+  const tmp = obj(5573)(() => {
     if (obj.trackOnInitialLoad) {
       let fn;
       const tmp6 = _modDef1343(ref.current, current);
@@ -141,7 +141,7 @@ export default function useTrackImpression(current) {
         tmp8.current = tmp9;
       }
       if (!tmp6) {
-        obj = { sequenceId: tmp2(5991)("impression_") };
+        obj = { sequenceId: tmp2(6086)("impression_") };
         const merged = Object.assign(tmp5);
         trackImpression(obj, tmp.disableTrack);
         fn = () => {

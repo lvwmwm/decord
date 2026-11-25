@@ -1,19 +1,19 @@
-// Module ID: 8865
-// Function ID: 8866
+// Module ID: 8964
+// Function ID: 8965
 // Name: PressableNavigatorBackIcon
-// Dependencies: [19, 17, 4766, 6850, 4820, 21, 4917, 1186, 575, 504, 5481, 5087, 8866, 6026, 1112, 5604, 8867, 8868, 2]
+// Dependencies: [19, 17, 4861, 6945, 4915, 21, 5012, 1186, 575, 504, 5576, 5182, 8965, 6121, 1112, 5699, 8966, 8967, 2]
 // Exports: PressableNavigatorBackIcon
 
-// Module 8865 (PressableNavigatorBackIcon)
+// Module 8964 (PressableNavigatorBackIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6850 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6945 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let channel, currentlySelectedChannelId, totalMentionCount;

@@ -1,28 +1,28 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10783
+// Function ID: 10784
 // Name: StickerPicker
-// Dependencies: [32, 19, 17, 1386, 6801, 4745, 1071, 21, 4917, 575, 1255, 10685, 10688, 504, 6253, 6254, 10659, 1262, 10693, 10687, 6653, 10694, 9445, 5599, 1112, 10703, 7280, 10713, 10714, 10720, 2]
+// Dependencies: [32, 19, 17, 1386, 6896, 4840, 1071, 21, 5012, 575, 1255, 10784, 10787, 504, 6348, 6349, 10758, 1262, 10792, 10786, 6748, 10793, 9544, 5694, 1112, 10802, 7375, 10812, 10813, 10819, 2]
 
-// Module 10684 (StickerPicker)
+// Module 10783 (StickerPicker)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import react_native from "react-native" /* 1262 */;
-import StickersConstants from "StickersConstants" /* 4745 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
-import StickersUtils from "StickersUtils" /* 6653 */;
-import StickerSendability from "StickerSendability" /* 10687 */;
-import StickersSearchUtils from "StickersSearchUtils" /* 10693 */;
-import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10694 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10703 */;
+import StickersConstants from "StickersConstants" /* 4840 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
+import StickersUtils from "StickersUtils" /* 6748 */;
+import StickerSendability from "StickerSendability" /* 10786 */;
+import StickersSearchUtils from "StickersSearchUtils" /* 10792 */;
+import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 10793 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 10802 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
-import StickersStore from "StickersStore" /* 6801 */;
+import StickersStore from "StickersStore" /* 6896 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const openStickerPackDetailActionSheetDefault = openStickerPackDetailActionSheet;
@@ -74,9 +74,9 @@ const memoResult = react.memo(function StickerPicker(channel) {
   ({ bottomSheetRef, bottomSheetIndex, paddingTop, stickerFormats, inPortalKeyboard } = channel);
   const tmp = closure_17();
   const tmp2 = channel;
-  let obj = channel(10685);
+  let obj = channel(10784);
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  let obj2 = channel(10688);
+  let obj2 = channel(10787);
   const stickerCategories = obj2.useStickerCategories(channel);
   let obj3 = channel(504);
   let items = [StickersStore];
@@ -86,11 +86,11 @@ const memoResult = react.memo(function StickerPicker(channel) {
   dependencyMap = tmp8;
   let tmp9 = onPressSticker;
   const first = tmp6[0];
-  const tmp10 = onPressSticker(6253);
-  analyticsLocations = tmp10(onPressSticker(6254).STICKER_PICKER).analyticsLocations;
+  const tmp10 = onPressSticker(6348);
+  analyticsLocations = tmp10(onPressSticker(6349).STICKER_PICKER).analyticsLocations;
   let tmp11 = analyticsLocations(react.useState(null), 2);
   [tmp12, c4] = tmp11;
-  let tmp13 = onPressSticker(10659)({ hasCategories: true });
+  let tmp13 = onPressSticker(10758)({ hasCategories: true });
   let items1 = [channel];
   ({ safeAreaStyle, safeAreaBottomKeyboardAware } = tmp13);
   const items2 = [, ];
@@ -177,7 +177,7 @@ const memoResult = react.memo(function StickerPicker(channel) {
           track(PREMIUM_PROMOTION_OPENED, obj4);
           const obj6 = { initialUpsellKey: map1.GLOBAL_STICKER, analyticsLocation: obj7, analyticsLocations };
           obj7 = { page: null != channel.guild_id ? tmp9.GUILD_CHANNEL : tmp9.DM_CHANNEL, section: constants3.STICKER_PICKER_UPSELL };
-          const tmp5Result = tmp5(9445);
+          const tmp5Result = tmp5(9544);
           const result = tmp5Result.handleShowUpsellAlert(obj6);
         }
       }
@@ -205,12 +205,12 @@ const memoResult = react.memo(function StickerPicker(channel) {
   tmp21 = closure_5;
   obj5 = { style: tmp.container, children: items6 };
   let tmp19Result = null;
-  const AnalyticsLocationProvider = channel(6253).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = channel(6348).AnalyticsLocationProvider;
   tmp20 = closure_16;
   if (0 !== stickerCategories.length) {
     let obj6 = { style: tmp.header, children: tmp19(SearchBar, obj7) };
     obj7 = { size: "md", placeholder: intl.string(tmp2(1112).t.dt5h1C), onChange: callback, onFocus: callback2, round: true };
-    SearchBar = tmp2(7280).SearchBar;
+    SearchBar = tmp2(7375).SearchBar;
     intl = tmp2(1112).intl;
     tmp19Result = tmp19(tmp21, obj6);
   }
@@ -218,11 +218,11 @@ const memoResult = react.memo(function StickerPicker(channel) {
   if (stateFromStores) {
     let tmp19Result3;
     if (0 === stickerCategories.length) {
-      let obj8 = { style: tmp.emptyState, children: tmp19(tmp9(10713), {}) };
+      let obj8 = { style: tmp.emptyState, children: tmp19(tmp9(10812), {}) };
       tmp19Result3 = tmp19(tmp21, obj8);
     } else {
       const obj9 = { bottomSheetRef, bottomSheetIndex, setCategoryIndex: tmp8, onPressSticker: callback1, onLongPressStickerDetail: callback3, insetBottom: safeAreaBottomKeyboardAware, insetTop: paddingTop, channel, stickerFormats, searchResults: tmp12, inPortalKeyboard };
-      tmp19Result3 = tmp19(tmp9(10714), obj9);
+      tmp19Result3 = tmp19(tmp9(10813), obj9);
     }
     tmp19Result4 = tmp19Result3;
   } else {
@@ -231,7 +231,7 @@ const memoResult = react.memo(function StickerPicker(channel) {
     tmp19Result4 = tmp19(closure_6, obj10);
   }
   items6[1] = tmp19Result4;
-  items6[2] = tmp19(tmp9(10720), { categories: stickerCategories, categoryIndex: first, style: safeAreaStyle });
+  items6[2] = tmp19(tmp9(10819), { categories: stickerCategories, categoryIndex: first, style: safeAreaStyle });
   return tmp19(AnalyticsLocationProvider, obj4);
 });
 let result = size.fileFinishedImporting("modules/stickers/native/StickerPicker.tsx");

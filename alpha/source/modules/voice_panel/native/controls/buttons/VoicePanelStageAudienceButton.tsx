@@ -1,19 +1,19 @@
-// Module ID: 19409
-// Function ID: 19410
+// Module ID: 19521
+// Function ID: 19522
 // Name: VoicePanelStageAudienceButton
-// Dependencies: [19, 1188, 21, 4917, 11634, 19390, 6683, 6735, 6729, 19391, 19410, 1112, 4322, 19399, 6929, 7029, 1186, 2]
+// Dependencies: [19, 1188, 21, 5012, 11733, 19502, 6778, 6830, 6824, 19503, 19522, 1112, 4374, 19511, 7024, 7124, 1186, 2]
 // Exports: default
 
-// Module 19409 (VoicePanelStageAudienceButton)
-import NativeViewDefault from "NativeView" /* 6929 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11634 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19391 */;
-import CircleWithCutoutDefault from "CircleWithCutout" /* 19399 */;
-import openStageAudienceSheetDefault from "openStageAudienceSheet" /* 19410 */;
+// Module 19521 (VoicePanelStageAudienceButton)
+import NativeViewDefault from "NativeView" /* 7024 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19503 */;
+import CircleWithCutoutDefault from "CircleWithCutout" /* 19511 */;
+import openStageAudienceSheetDefault from "openStageAudienceSheet" /* 19522 */;
 import react from "react" /* 19 */;
 import BadgeConstants from "BadgeConstants" /* 1188 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let BADGE_PADDING;
@@ -36,15 +36,15 @@ export default function StageAudienceButton(props) {
   const wrapperSpecs = props.wrapperSpecs;
   const channelId = react.useContext(VoicePanelStateContextDefault).channelId;
   const tmp3 = closure_8();
-  const obj = channelId(19390);
+  const obj = channelId(19502);
   const voicePanelButtonStyles = obj.useVoicePanelButtonStyles(wrapperSpecs);
-  const obj2 = channelId(6683);
+  const obj2 = channelId(6778);
   const canModerateRequestToSpeak = obj2.useCanModerateRequestToSpeak(channelId);
-  const useStageParticipantsCount = channelId(6735).useStageParticipantsCount;
+  const useStageParticipantsCount = channelId(6830).useStageParticipantsCount;
   let num = 0;
-  channelId(6735);
+  channelId(6830);
   if (canModerateRequestToSpeak) {
-    num = useStageParticipantsCount(channelId, channelId(6729).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
+    num = useStageParticipantsCount(channelId, channelId(6824).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
   }
   const element = {
     onPress() {
@@ -59,14 +59,14 @@ export default function StageAudienceButton(props) {
   const tmp9 = closure_5;
   if (num > 0) {
     const obj3 = { count: num };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(4322).IQmRBE, obj3);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(4374).IQmRBE, obj3);
   } else {
-    formatToPlainStringResult = intl.string(tmp(4322).Ds8IST);
+    formatToPlainStringResult = intl.string(tmp(4374).Ds8IST);
   }
   items = [, , ];
   const obj4 = { fill: voicePanelButtonStyles.iconBg.backgroundColor, circleRadius: props.width / 2, cutoutRadius, enableCutout: num > 0, cutoutPositionInDegrees: 45, alignBadgeEdgeWithCircleEdge: true, badgeRadius, scaleToPixelDensity: true };
   items[0] = closure_4(CircleWithCutoutDefault, obj4);
-  const obj5 = { style: tmp3.iconContainer, children: closure_4(channelId(7029).GroupIcon, obj6) };
+  const obj5 = { style: tmp3.iconContainer, children: closure_4(channelId(7124).GroupIcon, obj6) };
   obj6 = { color: voicePanelButtonStyles.iconFill.color };
   const tmpResult3 = NativeViewDefault;
   items[1] = closure_4(tmpResult3, obj5);

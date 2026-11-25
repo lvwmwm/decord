@@ -1,18 +1,18 @@
-// Module ID: 17386
-// Function ID: 17387
+// Module ID: 17497
+// Function ID: 17498
 // Name: SettingsSecureFramesVerificationsScreen
-// Dependencies: [19, 17, 1386, 21, 4917, 8539, 6018, 1112, 6026, 7121, 5508, 7224, 1500, 504, 4973, 8863, 17382, 7356, 2]
+// Dependencies: [19, 17, 1386, 21, 5012, 8638, 6113, 1112, 6121, 7216, 5603, 7319, 1500, 504, 5068, 8962, 17493, 7451, 2]
 // Exports: default
 
-// Module 17386 (SettingsSecureFramesVerificationsScreen)
+// Module 17497 (SettingsSecureFramesVerificationsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8539 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8638 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
@@ -34,9 +34,9 @@ function VerificationListItem(userId) {
     const obj = SecureFramesUtils;
     return obj.getSecureFramesUserVerifiedTimestamp(verification.timestamp);
   }, items1);
-  const TableRow = userId(6018).TableRow;
+  const TableRow = userId(6113).TableRow;
   const intl = userId(1112).intl;
-  const PressableHighlight = userId(6026).PressableHighlight;
+  const PressableHighlight = userId(6121).PressableHighlight;
   return <TableRow label={intl.formatToPlainString(userId(1112).t.N4qBBO, { index })} subLabel={memo} start={start} end={end} trailing={null} />;
 }
 function SectionListItem(title) {
@@ -74,12 +74,12 @@ function ClearVerificationsListFooter(userId) {
     const obj = SecureFramesUtils;
     const result = obj.deleteUserPersistentVerifications(userId);
   }, items);
-  const TableRow = userId(6018).TableRow;
+  const TableRow = userId(6113).TableRow;
   ({ variant: "body-md/semibold", color: "text-feedback-critical", children: intl.string(userId(1112).t["2xL5lu"]) });
-  const Text = userId(5508).Text;
+  const Text = userId(5603).Text;
   intl = userId(1112).intl;
   ({ variant: "body-xs/medium", color: "text-subtle", children: intl2.string(userId(1112).t.kgAfXN) });
-  const Text2 = userId(5508).Text;
+  const Text2 = userId(5603).Text;
   intl2 = userId(1112).intl;
   return <TableRow label={null} subLabel={null} onPress={callback} start end />;
 }
@@ -94,14 +94,14 @@ export default function SettingsSecureFramesVerificationsScreen() {
   let secureFramesUserVerifiedKeys;
   let userId;
   const tmp = closure_7();
-  let obj = userId(7224);
+  let obj = userId(7319);
   userId = obj.useSettingNavigationRoute().params.userId;
   let obj2 = userId(1500);
   navigation = obj2.useNavigation();
   let items = [UserStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(userId));
-  const obj4 = navigation(4973);
+  const obj4 = navigation(5068);
   dependencyMap = obj4.getFormattedName(stateFromStores, false);
   const layoutEffect = secureFramesUserVerifiedKeys.useLayoutEffect(() => {
     let intl;
@@ -117,7 +117,7 @@ export default function SettingsSecureFramesVerificationsScreen() {
     intl = intl3.intl;
     setOptions(obj);
   });
-  const obj5 = userId(17382);
+  const obj5 = userId(17493);
   secureFramesUserVerifiedKeys = obj5.useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
@@ -141,6 +141,6 @@ export default function SettingsSecureFramesVerificationsScreen() {
       navigation.pop();
     }
   }, items2);
-  const FlashList = userId(7356).FlashList;
+  const FlashList = userId(7451).FlashList;
   return <View style={tmp.list}>{null}</View>;
 };

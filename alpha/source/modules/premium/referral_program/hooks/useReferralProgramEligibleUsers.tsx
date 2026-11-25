@@ -1,14 +1,14 @@
-// Module ID: 13711
-// Function ID: 13712
+// Module ID: 13834
+// Function ID: 13835
 // Name: useReferralProgramEligibleUsers
-// Dependencies: [5, 32, 19, 9000, 504, 38, 9001, 6008, 2]
+// Dependencies: [5, 32, 19, 9099, 504, 38, 9100, 6103, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 13711 (useReferralProgramEligibleUsers)
+// Module 13834 (useReferralProgramEligibleUsers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 9000 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9099 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ export function useReferralProgramEligibleUsers(searchQuery) {
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -69,7 +69,7 @@ export function useReferralProgramEligibleUsers(searchQuery) {
                 let _Array = Array;
                 let tmp34 = closure_131_7(Array.from(map.values()));
                 c7 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 c5 = 1;
                 c1 = tmp17;
@@ -126,7 +126,7 @@ export function useReferralProgramEligibleUsers(searchQuery) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -265,7 +265,7 @@ export function useReferralProgramEligibleUsers(searchQuery) {
             let tmp36 = closure_134_9(false);
           }
           c10 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       }
     });

@@ -1,15 +1,15 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14646
+// Function ID: 14647
 // Name: LurkerActionCreators
-// Dependencies: [5, 5725, 4850, 1071, 572, 1284, 1254, 2]
+// Dependencies: [5, 5820, 4945, 1071, 572, 1284, 1254, 2]
 // Exports: stopLurking
 
-// Module 14523 (LurkerActionCreators)
+// Module 14646 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
-import LurkingStore from "LurkingStore" /* 4850 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import LurkingStore from "LurkingStore" /* 4945 */;
 import size from "module_2" /* 2 */;
 
 let c0, c2, c3, closure_3, closure_4, length, lurkingSource, map;
@@ -31,7 +31,7 @@ let obj = function _stopLurkingAll() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -80,7 +80,7 @@ let obj = function _stopLurkingAll() {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "HermesInternal", done: "HermesInternal" };
                                   }
                                 } else {
                                   try {
@@ -127,7 +127,7 @@ let obj = function _stopLurkingAll() {
                                         c5 = 0;
                                       }
                                       c7 = 3;
-                                      return { value: "HermesInternal", done: null };
+                                      return { value: "HermesInternal", done: "HermesInternal" };
                                     }
                                   } catch (tmp18) {
                                     closure_4 = tmp18;
@@ -159,7 +159,7 @@ let obj = function _stopLurkingAll() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;

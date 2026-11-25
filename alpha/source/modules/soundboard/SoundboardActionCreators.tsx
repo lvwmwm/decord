@@ -1,18 +1,18 @@
-// Module ID: 10262
-// Function ID: 10263
+// Module ID: 10361
+// Function ID: 10362
 // Name: SoundboardActionCreators
-// Dependencies: [5, 6797, 6799, 1071, 1081, 1284, 6963, 572, 6239, 5667, 10263, 1255, 4747, 12, 5920, 1112, 8794, 2]
+// Dependencies: [5, 6892, 6894, 1071, 1081, 1284, 7058, 572, 6334, 5762, 10362, 1255, 4842, 12, 6015, 1112, 8893, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, stopSoundLocally, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 10262 (SoundboardActionCreators)
+// Module 10361 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4747 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5920 */;
-import SoundboardConstants from "SoundboardConstants" /* 6799 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4842 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
+import SoundboardConstants from "SoundboardConstants" /* 6894 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 6797 */;
+import SoundboardStore from "SoundboardStore" /* 6892 */;
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f96931 = (arg0) => {
+const f97275 = (arg0) => {
   closure_0 = arg0;
   function onSoundboardActionCompleted() {
     const item = closure_0.forEach((item) => {
@@ -51,7 +51,7 @@ let obj = function _fetchDefaultSoundsFromApi2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -112,7 +112,7 @@ let obj = function _fetchDefaultSoundsFromApi2() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp27) {
         closure_2 = tmp27;
@@ -137,7 +137,7 @@ function _maybeFetchDefaultSounds() {
     let closure_0 = ["SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS", "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f96931);
+    const promise = new Promise(f97275);
     _fetchDefaultSoundsFromApi();
     return promise;
   } else {
@@ -153,7 +153,7 @@ function _maybeFetchGuildSoundboardSounds() {
     _require = ["SOUNDBOARD_SOUNDS_RECEIVED"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f96931);
+    const promise = new Promise(f97275);
     const obj2 = DispatcherDefault;
     obj2.dispatch({ type: "GUILD_SOUNDBOARD_FETCH" });
     const obj4 = { type: "REQUEST_SOUNDBOARD_SOUNDS", guildIds: guildIdsToFetchSoundsFor };
@@ -223,7 +223,7 @@ obj = function _uploadSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -317,7 +317,7 @@ obj = function _updateSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -402,7 +402,7 @@ obj = function _deleteSound() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -434,7 +434,7 @@ obj = function _deleteSound() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp4) {
         c2 = 3;
@@ -459,7 +459,7 @@ obj = function _fetchSoundGuildData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -556,7 +556,7 @@ export function addFavoriteSound(soundId) {
     obj = _modDef12;
     if (obj.size(soundIds.soundIds) >= metroImportAll) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp(5920).show;
+      const show = tmp(6015).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;

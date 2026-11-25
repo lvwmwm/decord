@@ -1,9 +1,9 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9878
+// Function ID: 9879
 // Name: QuestHomeHeroSharedAdRefreshExperiment
 // Dependencies: [1450, 2]
 
-// Module 9779 (QuestHomeHeroSharedAdRefreshExperiment)
+// Module 9878 (QuestHomeHeroSharedAdRefreshExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 8782
-// Function ID: 8783
+// Module ID: 8881
+// Function ID: 8882
 // Name: ICYMIActionCreators
-// Dependencies: [5, 8783, 502, 1386, 1071, 8779, 572, 1241, 8780, 8784, 1284, 8785, 8786, 4742, 2]
+// Dependencies: [5, 8882, 502, 1386, 1071, 8878, 572, 1241, 8879, 8883, 1284, 8884, 8885, 4837, 2]
 
-// Module 8782 (ICYMIActionCreators)
+// Module 8881 (ICYMIActionCreators)
 import Constants from "Constants" /* 1071 */;
-import DiscoverRequestState from "DiscoverRequestState" /* 8779 */;
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 8780 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8785 */;
+import DiscoverRequestState from "DiscoverRequestState" /* 8878 */;
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 8879 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8884 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 8783 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 8882 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
 import UserStore_mod from "UserStore" /* 1386 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
@@ -76,7 +76,7 @@ let timeout = function _dispatchDiscoverPickerCommit() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -116,7 +116,7 @@ let timeout = function _dispatchDiscoverPickerCommit() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           closure_4 = tmp17;
@@ -212,7 +212,7 @@ function fetchDiscoverDehydrated(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c7;
@@ -274,7 +274,7 @@ function fetchDiscoverDehydrated(arg0) {
                   }
                 }
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else if (2 === c8) {
               if (arg0 === 1) {
@@ -354,7 +354,7 @@ function fetchDiscoverDehydrated(arg0) {
                     obj4.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
                   }
                   c9 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
             } else if (arg0 === 1) {
@@ -485,7 +485,7 @@ function fetchDiscoverDehydrated(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -602,7 +602,7 @@ function fetchDiscoverDehydrated(arg0) {
             closure_10 = closure_10 - 1;
             closure_1_19();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp64) {
           status = tmp64;
@@ -817,7 +817,7 @@ timeout = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -915,7 +915,7 @@ timeout = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -993,7 +993,7 @@ timeout = {
                 if (tmp34Result.getWaterwheelsDiscoverEnabled("fetchDehydrated")) {
                   if (obj.isDiscoverBackground) {
                     c8 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                   c8 = 3;
                   const obj10 = { value: fetchDiscoverDehydrated(obj), done: true };
@@ -1051,7 +1051,7 @@ timeout = {
             currentUser = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp44) {
           authSessionIdHash = tmp44;
           if (0 === currentUser) {
@@ -1079,7 +1079,7 @@ timeout = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -1112,7 +1112,7 @@ timeout = {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === c4) {
             c3 = 0;
@@ -1162,7 +1162,7 @@ timeout = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -1212,7 +1212,7 @@ timeout = {
             if (0 === channel_id.body.message_items.length) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const obj9 = { type: "LOAD_ICYMI_FROM_NOTIFICATION", messageItem: channel_id.body.message_items[0] };
               const obj = message_id(closure_2[6]);
@@ -1221,7 +1221,7 @@ timeout = {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp23) {
           closure_2 = tmp23;
           if (0 === c3) {
@@ -1258,7 +1258,7 @@ timeout = {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let tmp30;
@@ -1332,7 +1332,7 @@ timeout = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp30) {
           if (0 === c3) {
             c5 = 3;
@@ -1356,7 +1356,7 @@ timeout = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -1408,7 +1408,7 @@ timeout = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp21) {
           closure_2 = tmp21;
           if (0 === c3) {
@@ -1433,7 +1433,7 @@ timeout = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -1485,7 +1485,7 @@ timeout = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp21) {
           closure_2 = tmp21;
           if (0 === c3) {
@@ -1510,7 +1510,7 @@ timeout = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -1569,7 +1569,7 @@ timeout = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp24) {
           closure_2 = tmp24;
           if (0 === c3) {

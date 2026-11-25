@@ -1,11 +1,11 @@
-// Module ID: 9432
-// Function ID: 9433
+// Module ID: 9531
+// Function ID: 9532
 // Name: TooltipConstants
-// Dependencies: [5518, 2]
+// Dependencies: [5613, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 9432 (TooltipConstants)
-import spring_spring from "spring/spring" /* 5518 */;
+// Module 9531 (TooltipConstants)
+import spring_spring from "spring/spring" /* 5613 */;
 import size from "module_2" /* 2 */;
 
 let obj, obj1, obj4, tmpResult;

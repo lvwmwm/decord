@@ -1,12 +1,12 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9532
+// Function ID: 9533
 // Name: AnimatedEnterExitItem
-// Dependencies: [19, 21, 1653, 4978, 1706, 2]
+// Dependencies: [19, 21, 1653, 5073, 1706, 2]
 // Exports: default
 
-// Module 9433 (AnimatedEnterExitItem)
+// Module 9532 (AnimatedEnterExitItem)
 import react2 from "react" /* 19 */;
-import native from "native" /* 4978 */;
+import native from "native" /* 5073 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

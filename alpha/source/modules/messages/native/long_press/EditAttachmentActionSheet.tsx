@@ -1,19 +1,19 @@
-// Module ID: 12076
-// Function ID: 12077
+// Module ID: 12175
+// Function ID: 12176
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 6265, 4922, 1071, 11544, 21, 8583, 8676, 1404, 1112, 4926, 8103, 7420, 7381, 5989, 575, 5508, 7314, 7055, 5515, 2]
+// Dependencies: [5, 32, 19, 6360, 5017, 1071, 11643, 21, 8682, 8775, 1404, 1112, 5021, 8202, 7515, 7476, 6084, 575, 5603, 7409, 7150, 5610, 2]
 // Exports: default
 
-// Module 12076 (EditAttachmentActionSheet)
+// Module 12175 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1071 */;
-import MessageConstants from "MessageConstants" /* 4922 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4926 */;
-import react2 from "react" /* 8583 */;
-import AttachmentConstants from "AttachmentConstants" /* 11544 */;
+import MessageConstants from "MessageConstants" /* 5017 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5021 */;
+import react2 from "react" /* 8682 */;
+import AttachmentConstants from "AttachmentConstants" /* 11643 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6265 */;
+import MessageStore from "MessageStore" /* 6360 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -24,13 +24,13 @@ let tmp;
 let unpackModuleId;
 const intl7 = tmp(1112);
 const FlagUtils = tmp(1404);
-const Text_Text = tmp(5508);
-const components_Button_Button = tmp(5515);
-const Stack_Stack = tmp(5989);
-const TableCheckboxRow2 = tmp(7055);
-const TextArea2 = tmp(7314);
-const BottomSheetTitleHeader = tmp(7381);
-const ActionSheet2 = tmp(7420);
+const Text_Text = tmp(5603);
+const components_Button_Button = tmp(5610);
+const Stack_Stack = tmp(6084);
+const TableCheckboxRow2 = tmp(7150);
+const TextArea2 = tmp(7409);
+const BottomSheetTitleHeader = tmp(7476);
+const ActionSheet2 = tmp(7515);
 let closure_7 = MessageConstants.LEGACY_SPOILER_ATTACHMENT_PREFIX;
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
 let closure_9 = AttachmentConstants.MAX_ATTACHMENT_DESCRIPTION_LENGTH;
@@ -81,7 +81,7 @@ export default function EditAttachmentActionSheet(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ export default function EditAttachmentActionSheet(arg0) {
             c2 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp25) {
           if (0 === c2) {
             c3 = 3;
@@ -163,7 +163,7 @@ export default function EditAttachmentActionSheet(arg0) {
   ({ bottomSheetClose: c2, bottomSheetRef } = bottomSheetRef1);
   const tmp4 = attachment;
   const filename = attachment.filename;
-  const tmp5 = attachment(8676)(attachment);
+  const tmp5 = attachment(8775)(attachment);
   const startsWithResult = filename.startsWith(c7);
   let obj2 = first2;
   let str = attachment.description;

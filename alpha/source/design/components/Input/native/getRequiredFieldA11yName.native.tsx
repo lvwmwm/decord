@@ -1,10 +1,10 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7245
+// Function ID: 7246
 // Name: getRequiredFieldA11yName
 // Dependencies: [1112, 2]
 // Exports: getRequiredFieldA11yName
 
-// Module 7150 (getRequiredFieldA11yName)
+// Module 7245 (getRequiredFieldA11yName)
 import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 

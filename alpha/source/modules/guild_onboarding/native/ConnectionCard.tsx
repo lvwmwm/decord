@@ -1,14 +1,14 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7479
+// Function ID: 7480
 // Name: ConnectionCard
-// Dependencies: [19, 7330, 21, 7385, 7402, 2]
+// Dependencies: [19, 7425, 21, 7480, 7497, 2]
 // Exports: default
 
-// Module 7384 (ConnectionCard)
+// Module 7479 (ConnectionCard)
 import Fragment from "Fragment" /* 21 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7330 */;
-import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7385 */;
-import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7402 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7425 */;
+import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 7480 */;
+import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 7497 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

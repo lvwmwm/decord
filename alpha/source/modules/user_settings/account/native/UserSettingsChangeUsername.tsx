@@ -1,21 +1,21 @@
-// Module ID: 16035
-// Function ID: 16036
+// Module ID: 16156
+// Function ID: 16157
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1386, 1071, 21, 4917, 575, 5710, 16036, 5508, 1112, 1500, 504, 2173, 16037, 7221, 7212, 1284, 1501, 8863, 7148, 7227, 7175, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 1071, 21, 5012, 575, 5805, 16157, 5603, 1112, 1500, 504, 2173, 16158, 7316, 7307, 1284, 1501, 8962, 7243, 7322, 7270, 2]
 // Exports: default
 
-// Module 16035 (UserSettingsChangeUsername)
+// Module 16156 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
+import Text_Text from "Text/Text" /* 5603 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, importAll, navigation;
@@ -32,18 +32,18 @@ function UsernameStatusMessage(showHint) {
   let P2;
   showHint = showHint.showHint;
   const usernameStatus = showHint.usernameStatus;
-  const str = showHint(5710);
+  const str = showHint(5805);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(16036).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(16157).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
-  P = showHint(5710).P;
+  P = showHint(5805).P;
   const _withResult = _with(obj, (children) => {
     const obj = { variant: "body-xs/medium", color: "text-feedback-critical", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(16036).NameValidationState.AVAILABLE, message: P2.select() };
-  P2 = showHint(5710).P;
+  const obj2 = { type: showHint(16157).NameValidationState.AVAILABLE, message: P2.select() };
+  P2 = showHint(5805).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "body-xs/medium", color: "text-feedback-positive", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
@@ -203,7 +203,7 @@ export default function UserSettingsChangeUsername() {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {

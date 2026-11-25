@@ -1,14 +1,14 @@
-// Module ID: 18461
-// Function ID: 18462
+// Module ID: 18573
+// Function ID: 18574
 // Name: useConjureRemixNotice
-// Dependencies: [19, 7577, 504, 11308, 1112, 4192, 2]
+// Dependencies: [19, 7676, 504, 11407, 1112, 4244, 2]
 // Exports: default, useConjureRemixStartedAt
 
-// Module 18461 (useConjureRemixNotice)
-import _modDef4192 from "module_4192" /* 4192 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 11308 */;
+// Module 18573 (useConjureRemixNotice)
+import _modDef4244 from "module_4244" /* 4244 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 11407 */;
 import react from "react" /* 19 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 7577 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 7676 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,10 +29,10 @@ export default function useConjureRemixNotice(arg0) {
   [][0] = arg0;
   let tmp5 = null;
   if (null != stateFromStores) {
-    const obj2 = { message: intl.format(_modDef4192.Up6Ssw, obj3), retry: obj4 };
+    const obj2 = { message: intl.format(_modDef4244.Up6Ssw, obj3), retry: obj4 };
     intl = tmp(1112).intl;
     obj3 = { reason: stateFromStores };
-    obj4 = { text: intl2.string(_modDef4192["ywA+ET"]), onClick: tmp4 };
+    obj4 = { text: intl2.string(_modDef4244["ywA+ET"]), onClick: tmp4 };
     intl2 = tmp(1112).intl;
     tmp5 = obj2;
   }

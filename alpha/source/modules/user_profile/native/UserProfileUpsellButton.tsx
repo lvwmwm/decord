@@ -1,17 +1,17 @@
-// Module ID: 15884
-// Function ID: 15885
+// Module ID: 16005
+// Function ID: 16006
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1071, 1388, 21, 4917, 6253, 8994, 1255, 5515, 9445, 1112, 9496, 2]
+// Dependencies: [19, 1071, 1388, 21, 5012, 6348, 9093, 1255, 5610, 9544, 1112, 9595, 2]
 // Exports: default
 
-// Module 15884 (UserProfileUpsellButton)
+// Module 16005 (UserProfileUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9445 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9544 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,8 +29,8 @@ export default function UserProfileUpsellButton(analyticsObject) {
   let analyticsLocations;
   const label = analyticsObject.label;
   const tmp = closure_10();
-  analyticsLocations = analyticsLocations(6253)().analyticsLocations;
-  let obj = analyticsObject(8994);
+  analyticsLocations = analyticsLocations(6348)().analyticsLocations;
+  let obj = analyticsObject(9093);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride();
   const items = [analyticsLocations, analyticsObject];
   const effect = react.useEffect(() => {
@@ -40,7 +40,7 @@ export default function UserProfileUpsellButton(analyticsObject) {
     const obj = AnalyticsUtilsDefault;
     obj.track(metroImportDefault.PREMIUM_UPSELL_VIEWED, obj2);
   }, items);
-  const Button = analyticsObject(5515).Button;
+  const Button = analyticsObject(5610).Button;
   if (nitroTrialCtaOverride == null) {
     nitroTrialCtaOverride = label;
   }

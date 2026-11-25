@@ -1,197 +1,97 @@
 // Module ID: 5416
 // Function ID: 5417
-// Dependencies: [5399, 5400, 5387]
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5415]
 
 // Module 5416
-import ErrorMessages from "ErrorMessages" /* 5387 */;
-import _createClassDefault from "_createClass" /* 5400 */;
-import _classCallCheck from "_classCallCheck" /* 5399 */;
+import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5415 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let size;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-class ViewabilityHelper {
-  constructor(viewabilityConfig, viewableIndicesChanged) {
-    _classCallCheck(this, ViewabilityHelper);
-    this.possiblyViewableIndices = [];
-    this.hasInteracted = false;
-    this.viewableIndices = [];
-    this.lastReportedViewableIndices = [];
-    this.timers = new Set();
-    this.viewabilityConfig = viewabilityConfig;
-    this.viewableIndicesChanged = viewableIndicesChanged;
-    new Set();
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+let closure_2 = ["style"];
+const Component = react2.Component;
+const Platform = react_native.Platform;
+const jsx = Fragment.jsx;
+class TouchableNativeFeedback {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, TouchableNativeFeedback);
+    const obj = _getPrototypeOf(TouchableNativeFeedback);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = hasOwnProperty;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(TouchableNativeFeedback, Component);
 const entry = {
-  key: "dispose",
-  value: function dispose() {
-    const timers = this.timers;
-    const item = timers.forEach(clearTimeout);
+  key: "getExtraButtonProps",
+  value: function getExtraButtonProps() {
+    const obj = { foreground: this.props.useForeground };
+    const background = this.props.background;
+    if (background) {
+      if ("RippleAndroid" === background.type) {
+        ({ borderless: obj.borderless, color: obj.rippleColor } = background);
+      } else if ("ThemeAttrAndroid" === background.type) {
+        obj.borderless = "selectableItemBackgroundBorderless" === background.attribute;
+      }
+      obj.rippleRadius = background.rippleRadius;
+    }
+    return obj;
   }
 };
 const items = [
   entry,
   {
-    key: "updateViewableItems",
-    value: function updateViewableItems(arg0, arg1, arg2, arg3, arg4, possiblyViewableIndices) {
+    key: "render",
+    value: function render() {
       const self = this;
-      let closure_1 = arg0;
-      let closure_2 = arg1;
-      let closure_3 = arg2;
-      let closure_4 = arg3;
-      let closure_5 = arg4;
-      if (undefined !== possiblyViewableIndices) {
-        self.possiblyViewableIndices = possiblyViewableIndices;
+      const props = this.props;
+      let style = props.style;
+      if (undefined === style) {
+        style = {};
       }
-      let viewabilityConfig = self.viewabilityConfig;
-      let prop;
-      if (viewabilityConfig != null) {
-        prop = viewabilityConfig.itemVisiblePercentThreshold;
-      }
-      if (null !== prop) {
-        let viewabilityConfig2 = self.viewabilityConfig;
-        let prop1;
-        if (viewabilityConfig2 != null) {
-          prop1 = viewabilityConfig2.itemVisiblePercentThreshold;
-        }
-        if (undefined !== prop1) {
-          const viewabilityConfig3 = self.viewabilityConfig;
-          let prop2;
-          if (viewabilityConfig3 != null) {
-            prop2 = viewabilityConfig3.viewAreaCoveragePercentThreshold;
-          }
-          if (null !== prop2) {
-            const viewabilityConfig4 = self.viewabilityConfig;
-            let prop3;
-            if (viewabilityConfig4 != null) {
-              prop3 = viewabilityConfig4.viewAreaCoveragePercentThreshold;
-            }
-            if (undefined !== prop3) {
-              const _Error = Error;
-              const self2 = this;
-              const self3 = this;
-              const error = new Error(ErrorMessages.ErrorMessages.multipleViewabilityThresholdTypesNotSupported);
-              throw error;
-            }
-          }
-        }
-      }
-      const viewabilityConfig5 = self.viewabilityConfig;
-      let waitForInteraction;
-      if (viewabilityConfig5 != null) {
-        waitForInteraction = viewabilityConfig5.waitForInteraction;
-      }
-      if (!waitForInteraction) {
-        const prop4 = self.possiblyViewableIndices;
-        const found = prop4.filter((item) => {
-          const viewabilityConfig = self.viewabilityConfig;
-          let prop;
-          const isItemViewable = self.isItemViewable;
-          const tmp = self;
-          const tmp2 = closure_1;
-          const tmp3 = closure_2;
-          const tmp4 = closure_3;
-          const tmp5 = closure_4;
-          if (viewabilityConfig != null) {
-            prop = viewabilityConfig.viewAreaCoveragePercentThreshold;
-          }
-          const viewabilityConfig2 = tmp.viewabilityConfig;
-          let prop1;
-          if (viewabilityConfig2 != null) {
-            prop1 = viewabilityConfig2.itemVisiblePercentThreshold;
-          }
-          return isItemViewable(item, tmp2, tmp3, tmp4, tmp5, prop, prop1, closure_5);
-        });
-        self.viewableIndices = found;
-        const viewabilityConfig6 = self.viewabilityConfig;
-        let num;
-        if (viewabilityConfig6 != null) {
-          num = viewabilityConfig6.minimumViewTime;
-        }
-        if (num == null) {
-          num = 250;
-        }
-        if (num > 0) {
-          const _setTimeout = setTimeout;
-          const timerId = setTimeout(() => {
-            const timers = self.timers;
-            timers.delete(timerId);
-            const result = self.checkViewableIndicesChanges(found);
-          }, num);
-          let timers = self.timers;
-          timers.add(timerId);
-        } else {
-          let result = self.checkViewableIndicesChanges(found);
-        }
-      }
-    }
-  },
-  {
-    key: "checkViewableIndicesChanges",
-    value: function checkViewableIndicesChanges(found) {
-      const self = this;
-      found = found.filter((item) => {
-        const viewableIndices = self.viewableIndices;
-        return viewableIndices.includes(item);
-      });
-      const found1 = found.filter((item) => {
-        const lastReportedViewableIndices = self.lastReportedViewableIndices;
-        return !lastReportedViewableIndices.includes(item);
-      });
-      const prop = this.lastReportedViewableIndices;
-      const found2 = prop.filter((item) => !found.includes(item));
-      const tmp = found1.length > 0 || found2.length > 0;
-      if (tmp) {
-        self.lastReportedViewableIndices = found;
-        const result = self.viewableIndicesChanged(found, found1, found2);
-      }
-    }
-  },
-  {
-    key: "clearLastReportedViewableIndices",
-    value: function clearLastReportedViewableIndices() {
-      this.lastReportedViewableIndices = [];
-    }
-  },
-  {
-    key: "isItemViewable",
-    value: function isItemViewable(item, arg1, arg2, arg3, width, prop, prop1, fn) {
-      size = fn(item);
-      if (undefined === size) {
-        return false;
-      } else {
-        const diff = (arg1 ? size.x : size.y) - arg2;
-        const tmp3 = arg1 ? size.width : size.height;
-        if (arg1) {
-          width = width.width;
-        } else {
-          width = width.height - arg3;
-        }
-        const _Math = Math;
-        const _Math2 = Math;
-        const bound = Math.min(diff + tmp3, width);
-        const diff1 = bound - Math.max(diff, 0);
-        if (diff1 === tmp3) {
-          return true;
-        } else if (0 === diff1) {
-          return false;
-        } else {
-          let result;
-          const tmp13 = null != prop ? diff1 / width : diff1 / tmp3;
-          if (null != prop) {
-            result = 0.01 * prop;
-          } else {
-            let num2 = prop1;
-            if (prop1 == null) {
-              num2 = 0;
-            }
-            result = 0.01 * num2;
-          }
-          return tmp13 >= result;
-        }
-      }
+      const tmp = _objectWithoutProperties(props, closure_2);
+      TOUCHABLE_STATEDefault;
+      const merged = Object.assign(tmp);
+      return <tmp2 style={style} extraButtonProps={self.getExtraButtonProps()} />;
     }
   }
 ];
+const importDefaultResultResult = _createClass(TouchableNativeFeedback, items);
+let obj = { useForeground: true, extraButtonProps: { rippleColor: null } };
+let merged = Object.assign(TOUCHABLE_STATEDefault.defaultProps);
+importDefaultResultResult.defaultProps = obj;
+importDefaultResultResult.SelectableBackground = (rippleRadius) => ({ type: "ThemeAttrAndroid", attribute: "selectableItemBackground", rippleRadius });
+importDefaultResultResult.SelectableBackgroundBorderless = (rippleRadius) => ({ type: "ThemeAttrAndroid", attribute: "selectableItemBackgroundBorderless", rippleRadius });
+importDefaultResultResult.Ripple = (color, borderless, rippleRadius) => ({ type: "RippleAndroid", color, borderless, rippleRadius });
+importDefaultResultResult.canUseNativeForeground = () => Platform.Version >= 23;
 
-export default _createClassDefault(ViewabilityHelper, items);
+export default importDefaultResultResult;

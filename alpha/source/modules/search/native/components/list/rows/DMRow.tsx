@@ -1,27 +1,27 @@
-// Module ID: 18787
-// Function ID: 18788
+// Module ID: 18899
+// Function ID: 18900
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4918, 5888, 4859, 1071, 21, 4917, 575, 5508, 4973, 11218, 504, 8491, 1186, 8417, 13788, 18772, 2]
+// Dependencies: [5, 32, 19, 17, 5013, 5983, 4954, 1071, 21, 5012, 575, 5603, 5068, 11317, 504, 8590, 1186, 8516, 13911, 18884, 2]
 
-// Module 18787 (DMRow)
+// Module 18899 (DMRow)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import UserUtils from "UserUtils" /* 4973 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8417 */;
-import BotTagDefault from "BotTag" /* 8491 */;
-import ActivityStatusDefault from "ActivityStatus" /* 11218 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13788 */;
+import UserUtils from "UserUtils" /* 5068 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8516 */;
+import BotTagDefault from "BotTag" /* 8590 */;
+import ActivityStatusDefault from "ActivityStatus" /* 11317 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13911 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
-import PresenceStore from "PresenceStore" /* 5888 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import PresenceStore from "PresenceStore" /* 5983 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -117,7 +117,7 @@ const memoResult = react.memo(function DMRow(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -157,7 +157,7 @@ const memoResult = react.memo(function DMRow(user) {
           c3 = 0;
           closure_128_8(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp20) {
         closure_2 = tmp20;

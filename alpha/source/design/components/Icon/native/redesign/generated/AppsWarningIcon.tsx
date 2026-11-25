@@ -1,14 +1,14 @@
-// Module ID: 7043
-// Function ID: 7044
+// Module ID: 7138
+// Function ID: 7139
 // Name: AppsWarningIcon
-// Dependencies: [19, 21, 575, 5603, 6997, 2]
+// Dependencies: [19, 21, 575, 5698, 7092, 2]
 // Exports: AppsWarningIcon
 
-// Module 7043 (AppsWarningIcon)
+// Module 7138 (AppsWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 6997 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 7092 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

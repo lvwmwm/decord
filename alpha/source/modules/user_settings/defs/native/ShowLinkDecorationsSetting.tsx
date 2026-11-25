@@ -1,16 +1,16 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 16973
+// Function ID: 16974
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [4918, 9414, 504, 15668, 11815, 1112, 2]
+// Dependencies: [5013, 9513, 504, 15789, 11914, 1112, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 16852 (ShowLinkDecorationsSetting)
+// Module 16973 (ShowLinkDecorationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15668 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15789 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 function useShowLinkDecorationsSettingValue() {

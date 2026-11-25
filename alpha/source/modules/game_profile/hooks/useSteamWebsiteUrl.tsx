@@ -1,12 +1,12 @@
-// Module ID: 8624
-// Function ID: 8625
+// Module ID: 8723
+// Function ID: 8724
 // Name: useSteamWebsiteUrl
-// Dependencies: [2140, 1071, 504, 8625, 8623, 2152, 2]
+// Dependencies: [2140, 1071, 504, 8724, 8722, 2152, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 8624 (useSteamWebsiteUrl)
+// Module 8723 (useSteamWebsiteUrl)
 import Constants from "Constants" /* 1071 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8625 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8724 */;
 import GameStore from "GameStore" /* 2140 */;
 import size from "module_2" /* 2 */;
 

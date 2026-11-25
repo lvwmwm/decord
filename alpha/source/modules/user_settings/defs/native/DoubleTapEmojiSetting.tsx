@@ -1,23 +1,23 @@
-// Module ID: 17424
-// Function ID: 17425
+// Module ID: 17535
+// Function ID: 17536
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 9414, 1071, 1389, 21, 4917, 575, 4742, 9408, 1412, 7362, 9396, 1255, 6254, 9415, 11815, 1112, 2]
+// Dependencies: [5, 19, 9513, 1071, 1389, 21, 5012, 575, 4837, 9507, 1412, 7457, 9495, 1255, 6349, 9514, 11914, 1112, 2]
 
-// Module 17424 (DoubleTapEmojiSetting)
+// Module 17535 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import EmojiDefault from "Emoji" /* 7362 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9408 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import EmojiDefault from "Emoji" /* 7457 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9507 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import createStyles from "createStyles" /* 5012 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -102,7 +102,7 @@ let obj3 = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -141,7 +141,7 @@ let obj3 = {
               const obj = emoji(closure_2[15]);
               const result = obj.showDoubleTapEmojiUpdatedToast(obj16);
               constants = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp11) {
             constants = 3;

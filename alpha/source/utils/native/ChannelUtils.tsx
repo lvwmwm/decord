@@ -1,88 +1,88 @@
-// Module ID: 6970
-// Function ID: 6971
+// Module ID: 7065
+// Function ID: 7066
 // Name: utils/ChannelUtils
-// Dependencies: [4766, 4829, 4788, 1386, 1071, 6971, 6972, 6973, 6974, 6975, 6976, 6977, 6978, 6979, 6980, 6981, 6982, 6983, 6984, 6985, 6986, 6987, 6988, 6989, 6990, 6991, 6992, 6993, 6994, 6995, 6996, 6997, 6998, 6999, 7000, 7001, 7002, 7003, 7004, 7005, 7006, 7007, 7008, 7009, 7010, 7011, 7012, 7013, 7014, 7015, 7016, 7017, 7018, 7019, 7020, 7021, 7022, 7023, 7024, 7025, 7026, 7027, 7028, 7029, 7030, 7031, 7032, 7033, 7034, 7035, 7036, 7037, 7038, 7039, 7040, 7041, 7042, 7043, 7044, 7045, 7046, 2]
+// Dependencies: [4861, 4924, 4883, 1386, 1071, 7066, 7067, 7068, 7069, 7070, 7071, 7072, 7073, 7074, 7075, 7076, 7077, 7078, 7079, 7080, 7081, 7082, 7083, 7084, 7085, 7086, 7087, 7088, 7089, 7090, 7091, 7092, 7093, 7094, 7095, 7096, 7097, 7098, 7099, 7100, 7101, 7102, 7103, 7104, 7105, 7106, 7107, 7108, 7109, 7110, 7111, 7112, 7113, 7114, 7115, 7116, 7117, 7118, 7119, 7120, 7121, 7122, 7123, 7124, 7125, 7126, 7127, 7128, 7129, 7130, 7131, 7132, 7133, 7134, 7135, 7136, 7137, 7138, 7139, 7140, 7141, 2]
 // Exports: getChannelIconComponentWithGuild, getChannelIconWithGuild, getChannelMentionIcon, getSimpleChannelIcon, getSimpleChannelIconComponent, getThreadChannelIcon
 
-// Module 6970 (utils/ChannelUtils)
+// Module 7065 (utils/ChannelUtils)
 import Constants from "Constants" /* 1071 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6971 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6972 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 6973 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 6974 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 6975 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 6976 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 6977 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 6978 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 6979 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 6980 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 6981 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 6982 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 6983 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 6984 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 6985 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 6986 */;
-import AssetRegistryDefault17 from "AssetRegistry" /* 6987 */;
-import AssetRegistryDefault18 from "AssetRegistry" /* 6988 */;
-import AssetRegistryDefault19 from "AssetRegistry" /* 6989 */;
-import AssetRegistryDefault20 from "AssetRegistry" /* 6990 */;
-import AssetRegistryDefault21 from "AssetRegistry" /* 6991 */;
-import AssetRegistryDefault22 from "AssetRegistry" /* 6992 */;
-import AssetRegistryDefault23 from "AssetRegistry" /* 6993 */;
-import AssetRegistryDefault24 from "AssetRegistry" /* 6994 */;
-import AssetRegistryDefault25 from "AssetRegistry" /* 6995 */;
-import AssetRegistryDefault26 from "AssetRegistry" /* 6996 */;
-import AssetRegistryDefault27 from "AssetRegistry" /* 6997 */;
-import AssetRegistryDefault28 from "AssetRegistry" /* 6998 */;
-import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 6999 */;
-import AssetRegistryDefault29 from "AssetRegistry" /* 7000 */;
-import AssetRegistryDefault30 from "AssetRegistry" /* 7001 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7002 */;
-import AssetRegistryDefault31 from "AssetRegistry" /* 7008 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7066 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7067 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7068 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 7069 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 7070 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 7071 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 7072 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 7073 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 7074 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 7075 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 7076 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 7077 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 7078 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 7079 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 7080 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 7081 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 7082 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 7083 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 7084 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 7085 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 7086 */;
+import AssetRegistryDefault22 from "AssetRegistry" /* 7087 */;
+import AssetRegistryDefault23 from "AssetRegistry" /* 7088 */;
+import AssetRegistryDefault24 from "AssetRegistry" /* 7089 */;
+import AssetRegistryDefault25 from "AssetRegistry" /* 7090 */;
+import AssetRegistryDefault26 from "AssetRegistry" /* 7091 */;
+import AssetRegistryDefault27 from "AssetRegistry" /* 7092 */;
+import AssetRegistryDefault28 from "AssetRegistry" /* 7093 */;
+import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7094 */;
+import AssetRegistryDefault29 from "AssetRegistry" /* 7095 */;
+import AssetRegistryDefault30 from "AssetRegistry" /* 7096 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7097 */;
+import AssetRegistryDefault31 from "AssetRegistry" /* 7103 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExperimentalLfgIcon = tmp(7010);
-const ChatIcon2 = tmp(7011);
-const ThreadLockIcon = tmp(7012);
-const ThreadIcon2 = tmp(7013);
-const FolderIcon = tmp(7014);
-const BookCheckIcon = tmp(7015);
-const TextWarningIcon2 = tmp(7016);
-const TextSpoilerIcon2 = tmp(7017);
-const TextLockIcon2 = tmp(7018);
-const TextControllerIcon = tmp(7019);
-const TextIcon2 = tmp(7020);
-const ImageWarningIcon2 = tmp(7021);
-const ForumWarningIcon2 = tmp(7022);
-const ForumSpoilerIcon3 = tmp(7023);
-const ExperimentalLfgLockIcon = tmp(7024);
-const ImageLockIcon = tmp(7025);
-const ForumLockIcon2 = tmp(7026);
-const ImageIcon2 = tmp(7027);
-const ForumIcon2 = tmp(7028);
-const GroupIcon = tmp(7029);
-const AtIcon = tmp(7030);
-const AnnouncementsWarningIcon2 = tmp(7031);
-const AnnouncementsSpoilerIcon2 = tmp(7032);
-const AnnouncementsLockIcon = tmp(7033);
-const AnnouncementsIcon2 = tmp(7034);
-const LockIcon3 = tmp(7035);
-const StageLockIcon2 = tmp(7036);
-const StageIcon2 = tmp(7037);
-const VoiceLockIcon3 = tmp(7038);
-const VoiceWarningIcon2 = tmp(7039);
-const VoiceNormalSpoilerIcon = tmp(7040);
-const VoiceNormalIcon2 = tmp(7041);
-const HubIcon = tmp(7042);
-const AppsWarningIcon2 = tmp(7043);
-const AppsSpoilerIcon2 = tmp(7044);
-const AppsLockIcon = tmp(7045);
-const AppsIcon2 = tmp(7046);
+const ExperimentalLfgIcon = tmp(7105);
+const ChatIcon2 = tmp(7106);
+const ThreadLockIcon = tmp(7107);
+const ThreadIcon2 = tmp(7108);
+const FolderIcon = tmp(7109);
+const BookCheckIcon = tmp(7110);
+const TextWarningIcon2 = tmp(7111);
+const TextSpoilerIcon2 = tmp(7112);
+const TextLockIcon2 = tmp(7113);
+const TextControllerIcon = tmp(7114);
+const TextIcon2 = tmp(7115);
+const ImageWarningIcon2 = tmp(7116);
+const ForumWarningIcon2 = tmp(7117);
+const ForumSpoilerIcon3 = tmp(7118);
+const ExperimentalLfgLockIcon = tmp(7119);
+const ImageLockIcon = tmp(7120);
+const ForumLockIcon2 = tmp(7121);
+const ImageIcon2 = tmp(7122);
+const ForumIcon2 = tmp(7123);
+const GroupIcon = tmp(7124);
+const AtIcon = tmp(7125);
+const AnnouncementsWarningIcon2 = tmp(7126);
+const AnnouncementsSpoilerIcon2 = tmp(7127);
+const AnnouncementsLockIcon = tmp(7128);
+const AnnouncementsIcon2 = tmp(7129);
+const LockIcon3 = tmp(7130);
+const StageLockIcon2 = tmp(7131);
+const StageIcon2 = tmp(7132);
+const VoiceLockIcon3 = tmp(7133);
+const VoiceWarningIcon2 = tmp(7134);
+const VoiceNormalSpoilerIcon = tmp(7135);
+const VoiceNormalIcon2 = tmp(7136);
+const HubIcon = tmp(7137);
+const AppsWarningIcon2 = tmp(7138);
+const AppsSpoilerIcon2 = tmp(7139);
+const AppsLockIcon = tmp(7140);
+const AppsIcon2 = tmp(7141);
 function getChannelIcon(channel, ignoreTraits) {
   let isRulesChannel;
   let locked;
@@ -155,14 +155,14 @@ function getChannelIcon(channel, ignoreTraits) {
                     ignoreTraits2 = ignoreTraits.ignoreTraits;
                   }
                   if (!ignoreTraits2) {
-                    tmp77Result = tmp77(6996);
+                    tmp77Result = tmp77(7091);
                   }
                   tmp76 = tmp77Result;
                 }
                 if (null != channel.linkedLobby) {
-                  tmp77Result2 = tmp77(7003);
+                  tmp77Result2 = tmp77(7098);
                 } else {
-                  tmp77Result2 = tmp77(6974);
+                  tmp77Result2 = tmp77(7069);
                 }
                 tmp77Result = tmp77Result2;
               }
@@ -180,7 +180,7 @@ function getChannelIcon(channel, ignoreTraits) {
                     ignoreTraits3 = ignoreTraits.ignoreTraits;
                   }
                   if (!ignoreTraits3) {
-                    tmp62 = importDefault(isMediaChannelResult ? 6995 : 6992);
+                    tmp62 = importDefault(isMediaChannelResult ? 7090 : 7087);
                   }
                 }
                 if (channel.isSpoilerChannel()) {
@@ -201,17 +201,17 @@ function getChannelIcon(channel, ignoreTraits) {
                   }
                   if (!ignoreTraits5) {
                     if (channel.isGameInvitesChannel()) {
-                      tmp66Result = tmp66(7004);
+                      tmp66Result = tmp66(7099);
                     } else {
-                      tmp66Result = tmp66(isMediaChannelResult ? 7005 : 7006);
+                      tmp66Result = tmp66(isMediaChannelResult ? 7100 : 7101);
                     }
                   }
                   tmp65 = tmp66Result;
                 }
                 if (channel.isGameInvitesChannel()) {
-                  tmp66Result2 = tmp66(7000);
+                  tmp66Result2 = tmp66(7095);
                 } else {
-                  tmp66Result2 = tmp66(isMediaChannelResult ? 6994 : 6991);
+                  tmp66Result2 = tmp66(isMediaChannelResult ? 7089 : 7086);
                 }
                 tmp66Result = tmp66Result2;
               }
@@ -248,11 +248,11 @@ function getChannelIcon(channel, ignoreTraits) {
                     ignoreTraits8 = ignoreTraits.ignoreTraits;
                   }
                   if (!ignoreTraits8) {
-                    tmp57Result = tmp57(7005);
+                    tmp57Result = tmp57(7100);
                   }
                   tmp56 = tmp57Result;
                 }
-                tmp57Result = tmp57(6994);
+                tmp57Result = tmp57(7089);
               }
               return tmp53;
             } else if (ChannelTypes.GROUP_DM === type) {
@@ -291,11 +291,11 @@ function getChannelIcon(channel, ignoreTraits) {
                     ignoreTraits11 = ignoreTraits.ignoreTraits;
                   }
                   if (!ignoreTraits11) {
-                    tmp45Result = tmp45(7007);
+                    tmp45Result = tmp45(7102);
                   }
                   tmp44 = tmp45Result;
                 }
-                tmp45Result = tmp45(6978);
+                tmp45Result = tmp45(7073);
               }
               return tmp41;
             } else if (ChannelTypes.GUILD_STAGE_VOICE === type) {
@@ -308,9 +308,9 @@ function getChannelIcon(channel, ignoreTraits) {
                 }
                 if (!ignoreTraits12) {
                   if (isRoleRequiredDefault(channel)) {
-                    tmp31Result = tmp31(7008);
+                    tmp31Result = tmp31(7103);
                   } else {
-                    tmp31Result = tmp31(6985);
+                    tmp31Result = tmp31(7080);
                   }
                 }
                 return tmp31Result;
@@ -332,11 +332,11 @@ function getChannelIcon(channel, ignoreTraits) {
                   ignoreTraits14 = ignoreTraits.ignoreTraits;
                 }
                 if (!ignoreTraits14) {
-                  tmp36Result = tmp36(6985);
+                  tmp36Result = tmp36(7080);
                 }
                 tmp35 = tmp36Result;
               }
-              tmp36Result = tmp36(6979);
+              tmp36Result = tmp36(7074);
             } else if (ChannelTypes.GUILD_VOICE === type) {
               let tmp17Result;
               if (textFocused) {
@@ -352,9 +352,9 @@ function getChannelIcon(channel, ignoreTraits) {
                   }
                   if (!ignoreTraits15) {
                     if (isRoleRequiredDefault(channel)) {
-                      tmp17Result = tmp17(7008);
+                      tmp17Result = tmp17(7103);
                     } else {
-                      tmp17Result = tmp17(6982);
+                      tmp17Result = tmp17(7077);
                     }
                   }
                 }
@@ -374,7 +374,7 @@ function getChannelIcon(channel, ignoreTraits) {
                     ignoreTraits17 = ignoreTraits.ignoreTraits;
                   }
                   if (!ignoreTraits17) {
-                    tmp22Result = tmp22(6982);
+                    tmp22Result = tmp22(7077);
                   }
                   tmp21 = tmp22Result;
                 }
@@ -384,7 +384,7 @@ function getChannelIcon(channel, ignoreTraits) {
                     ignoreTraits18 = ignoreTraits.ignoreTraits;
                   }
                   if (!ignoreTraits18) {
-                    tmp22Result3 = tmp22(6983);
+                    tmp22Result3 = tmp22(7078);
                   }
                   tmp22Result = tmp22Result3;
                 }
@@ -395,11 +395,11 @@ function getChannelIcon(channel, ignoreTraits) {
                     ignoreTraits19 = ignoreTraits.ignoreTraits;
                   }
                   if (!ignoreTraits19) {
-                    tmp22Result4 = tmp22(6984);
+                    tmp22Result4 = tmp22(7079);
                   }
                   tmp22Result3 = tmp22Result4;
                 }
-                tmp22Result4 = tmp22(6980);
+                tmp22Result4 = tmp22(7075);
               }
               return tmp17Result;
             } else if (ChannelTypes.GUILD_DIRECTORY === type) {
@@ -434,11 +434,11 @@ function getChannelIcon(channel, ignoreTraits) {
                   ignoreTraits22 = ignoreTraits.ignoreTraits;
                 }
                 if (!ignoreTraits22) {
-                  tmp12Result = tmp12(7009);
+                  tmp12Result = tmp12(7104);
                 }
                 tmp11 = tmp12Result;
               }
-              tmp12Result = tmp12(6975);
+              tmp12Result = tmp12(7070);
             } else {
               if (ChannelTypes.GUILD_STORE !== type) {
                 if (ChannelTypes.GUILD_SPACE !== type) {
@@ -1081,9 +1081,9 @@ export function getSimpleChannelIconComponent(channel) {
     }
   }
   if (channel.isForumPost()) {
-    ThreadIcon = tmp25(7011).ChatIcon;
+    ThreadIcon = tmp25(7106).ChatIcon;
   } else {
-    ThreadIcon = tmp25(7013).ThreadIcon;
+    ThreadIcon = tmp25(7108).ThreadIcon;
   }
   return ThreadIcon;
 }

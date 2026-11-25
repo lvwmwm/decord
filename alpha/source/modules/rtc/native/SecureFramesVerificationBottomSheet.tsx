@@ -1,17 +1,17 @@
-// Module ID: 8563
-// Function ID: 8564
+// Module ID: 8662
+// Function ID: 8663
 // Name: SecureFramesVerificationBottomSheet
-// Dependencies: [19, 17, 8540, 21, 4917, 575, 8547, 5131, 5145, 7381, 7421, 6026, 1112, 5508, 5989, 7035, 8561, 8564, 2]
+// Dependencies: [19, 17, 8639, 21, 5012, 575, 8646, 5226, 5240, 7476, 7516, 6121, 1112, 5603, 6084, 7130, 8660, 8663, 2]
 // Exports: default
 
-// Module 8563 (SecureFramesVerificationBottomSheet)
+// Module 8662 (SecureFramesVerificationBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
 import react from "react" /* 19 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8540 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8639 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -54,7 +54,7 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   onShareClick = onShareClick.onShareClick;
   ({ title, subtitle, footer, epochAuthenticator } = onShareClick);
   const tmp = closure_10();
-  let obj = onShareClick(8547);
+  let obj = onShareClick(8646);
   let obj2 = { fingerprintBase64: epochAuthenticator, chunkSize, desiredLength };
   const readableSecureFramesFingerprint = obj.useReadableSecureFramesFingerprint(obj2);
   const items = [readableSecureFramesFingerprint, onShareClick];
@@ -72,27 +72,27 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
     obj.hideActionSheet();
   }, []);
   const obj3 = { startExpanded: true, header: closure_8(BottomSheetTitleHeader, obj4), children: tmp8(tmp9, obj7) };
-  const BottomSheet = onShareClick(5145).BottomSheet;
-  obj4 = { title: null, leading: closure_8(onShareClick(7421).ActionSheetCloseButton, { onPress: callback1 }), trailing: closure_8(PressableOpacity, obj5) };
-  BottomSheetTitleHeader = onShareClick(7381).BottomSheetTitleHeader;
+  const BottomSheet = onShareClick(5240).BottomSheet;
+  obj4 = { title: null, leading: closure_8(onShareClick(7516).ActionSheetCloseButton, { onPress: callback1 }), trailing: closure_8(PressableOpacity, obj5) };
+  BottomSheetTitleHeader = onShareClick(7476).BottomSheetTitleHeader;
   obj5 = { style: tmp.share, hitSlop: 8, onPress: callback, disabled: null == readableSecureFramesFingerprint, accessibilityRole: "button", accessibilityLabel: intl.string(onShareClick(1112).t.RDE0Sc), children: closure_8(Text, obj6) };
-  PressableOpacity = onShareClick(6026).PressableOpacity;
+  PressableOpacity = onShareClick(6121).PressableOpacity;
   intl = onShareClick(1112).intl;
   obj6 = { variant: "body-md/semibold", color: "text-brand", children: intl2.string(onShareClick(1112).t.RDE0Sc) };
-  Text = onShareClick(5508).Text;
+  Text = onShareClick(5603).Text;
   intl2 = onShareClick(1112).intl;
   obj7 = { style: tmp.content, children: items2 };
   const obj8 = { spacing: 8, justify: "center", align: "center", direction: "vertical", children: items1 };
   const obj9 = { style: tmp.iconContainer, children: closure_8(LockIcon, obj10) };
-  const Stack = onShareClick(5989).Stack;
+  const Stack = onShareClick(6084).Stack;
   obj10 = { style: tmp.icon, color: readableSecureFramesFingerprint(575).colors.TEXT_SUBTLE };
-  LockIcon = onShareClick(7035).LockIcon;
-  items1 = [closure_8(View, obj9), closure_8(onShareClick(5508).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title }), ];
+  LockIcon = onShareClick(7130).LockIcon;
+  items1 = [closure_8(View, obj9), closure_8(onShareClick(5603).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title }), ];
   const obj11 = { style: tmp.subtitle, variant: "body-md/medium", color: "text-default", children: subtitle };
-  items1[2] = closure_8(onShareClick(5508).Text, obj11);
+  items1[2] = closure_8(onShareClick(5603).Text, obj11);
   items2 = [closure_9(Stack, obj8), , ];
   const obj12 = { title: intl3.string(onShareClick(1112).t.cgBTyO), trailing: tmp7Result, chunks: readableSecureFramesFingerprint, columns };
-  const tmp11 = readableSecureFramesFingerprint(8561);
+  const tmp11 = readableSecureFramesFingerprint(8660);
   intl3 = onShareClick(1112).intl;
   tmp7Result = null != readableSecureFramesFingerprint;
   const tmp10 = readableSecureFramesFingerprint;
@@ -101,10 +101,10 @@ export default function SecureFramesVerificationBottomSheet(onShareClick) {
   tmp9 = View;
   if (tmp7Result) {
     const obj13 = { chunks: readableSecureFramesFingerprint };
-    tmp7Result = tmp7(tmp10(8564), obj13);
+    tmp7Result = tmp7(tmp10(8663), obj13);
   }
   items2[1] = closure_8(tmp11, obj12);
   const obj14 = { style: tmp.footer, variant: "body-xs/normal", color: "text-muted", children: footer };
-  items2[2] = closure_8(tmp2(5508).Text, obj14);
+  items2[2] = closure_8(tmp2(5603).Text, obj14);
   return closure_8(BottomSheet, obj3);
 };

@@ -1,22 +1,22 @@
-// Module ID: 18531
-// Function ID: 18532
+// Module ID: 18643
+// Function ID: 18644
 // Name: useConjureVoiceChannelPin
-// Dependencies: [5, 32, 19, 4766, 4847, 4849, 4859, 1386, 6808, 7580, 1071, 504, 5533, 11324, 2]
+// Dependencies: [5, 32, 19, 4861, 4942, 4944, 4954, 1386, 6903, 7679, 1071, 504, 5628, 11423, 2]
 // Exports: useConjureVoiceChannelPinForm, useConjureVoiceChannelPinOutcome
 
-// Module 18531 (useConjureVoiceChannelPin)
-import GuildChannelStore2 from "GuildChannelStore" /* 4847 */;
-import useChannelName from "useChannelName" /* 5533 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 11324 */;
+// Module 18643 (useConjureVoiceChannelPin)
+import GuildChannelStore2 from "GuildChannelStore" /* 4942 */;
+import useChannelName from "useChannelName" /* 5628 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 11423 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 7580 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 7679 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -125,7 +125,7 @@ export function useConjureVoiceChannelPinForm(projectId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -173,7 +173,7 @@ export function useConjureVoiceChannelPinForm(projectId) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp26) {
         c3 = 3;
         throw tmp26;

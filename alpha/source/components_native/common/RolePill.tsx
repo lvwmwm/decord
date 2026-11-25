@@ -1,18 +1,18 @@
-// Module ID: 11296
-// Function ID: 11297
+// Module ID: 11395
+// Function ID: 11396
 // Name: RolePill
-// Dependencies: [19, 17, 1071, 21, 4917, 575, 4742, 7410, 7412, 5598, 6026, 7426, 7428, 5508, 2]
+// Dependencies: [19, 17, 1071, 21, 5012, 575, 4837, 7505, 7507, 5693, 6121, 7521, 7523, 5603, 2]
 // Exports: default
 
-// Module 11296 (RolePill)
+// Module 11395 (RolePill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5598 */;
-import ClipboardUtils from "ClipboardUtils" /* 7412 */;
+import ToastUtils from "ToastUtils" /* 5693 */;
+import ClipboardUtils from "ClipboardUtils" /* 7507 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -49,9 +49,9 @@ export default function RolePill(role) {
   role = role.role;
   ({ guildId, color } = role);
   const disableInteraction = role.disableInteraction;
-  const DeveloperMode = role(4742).DeveloperMode;
+  const DeveloperMode = role(4837).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(7410);
+  let obj = role(7505);
   let obj2 = { guildId, roleId: role.id, size: 12 };
   const roleIconProps = obj.useRoleIconProps(obj2);
   let name = role.name;
@@ -72,7 +72,7 @@ export default function RolePill(role) {
   }
   const tmp9 = closure_8();
   let tmp11 = !setting;
-  const PressableHighlight = tmp(6026).PressableHighlight;
+  const PressableHighlight = tmp(6121).PressableHighlight;
   if (setting) {
     tmp11 = disableInteraction;
   }
@@ -92,7 +92,7 @@ export default function RolePill(role) {
   tmp12 = closure_7;
   if (undefined !== guild_connections) {
     const obj5 = { style: tmp9.verifiedContainer, roleId: role.id, guildId, roleColor: color, size: 14, displayRoleIcon: false };
-    const tmp16 = combined(7426);
+    const tmp16 = combined(7521);
     if (guildId == null) {
       guildId = closure_4;
     }
@@ -115,11 +115,11 @@ export default function RolePill(role) {
   if (null != roleIconProps) {
     const obj9 = { style: tmp9.roleIcon, children: closure_6(tmp19, obj10) };
     obj10 = {};
-    tmp19 = combined(7428);
+    tmp19 = combined(7523);
     const merged = Object.assign(roleIconProps);
     tmp10Result2 = tmp10(tmp13, obj9);
   }
   items1[1] = tmp10Result2;
-  items1[2] = closure_6(role(5508).Text, { variant: "body-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(5603).Text, { variant: "body-xs/semibold", color: "interactive-text-active", children: name });
   return closure_6(PressableHighlight, obj3);
 };

@@ -1,20 +1,20 @@
-// Module ID: 17429
-// Function ID: 17430
+// Module ID: 17540
+// Function ID: 17541
 // Name: ParentalControlsMessageRequests
-// Dependencies: [8071, 9414, 8076, 16152, 17415, 7737, 6702, 16156, 16151, 11815, 1112, 2824, 2]
+// Dependencies: [8170, 9513, 8175, 16273, 17526, 7836, 6797, 16277, 16272, 11914, 1112, 2846, 2]
 
-// Module 17429 (ParentalControlsMessageRequests)
+// Module 17540 (ParentalControlsMessageRequests)
 import intl2 from "intl" /* 1112 */;
-import _modDef2824 from "module_2824" /* 2824 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7737 */;
-import useSelectedTeen from "useSelectedTeen" /* 8076 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16151 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16152 */;
-import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16156 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17415 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8071 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import _modDef2846 from "module_2846" /* 2846 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7836 */;
+import useSelectedTeen from "useSelectedTeen" /* 8175 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16272 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16273 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16277 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17526 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8170 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -25,7 +25,7 @@ let obj = {
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2824["7aYkh1"]);
+    return intl.string(_modDef2846["7aYkh1"]);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue() {
@@ -50,7 +50,7 @@ let obj = {
         const obj = DefaultDMSettingsExperiment;
         const tmp2 = require;
         if (obj.shouldAgeVerifyForDMDefaultOff()) {
-          const obj2 = { entryPoint: tmp2(6702).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+          const obj2 = { entryPoint: tmp2(6797).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
           const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
           AgeVerificationActionCreatorsDefault;
           const result = showAgeVerificationGetStartedModal(obj2);

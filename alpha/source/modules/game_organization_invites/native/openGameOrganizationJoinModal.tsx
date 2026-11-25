@@ -1,12 +1,12 @@
-// Module ID: 12175
-// Function ID: 12176
+// Module ID: 12274
+// Function ID: 12275
 // Name: openGameOrganizationJoinModal
-// Dependencies: [5, 11770, 12176, 12180, 6004, 12183, 2119, 2]
+// Dependencies: [5, 11869, 12275, 12279, 6099, 12282, 2119, 2]
 // Exports: default
 
-// Module 12175 (openGameOrganizationJoinModal)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11770 */;
-import checkGameOrganizationJoinEligibilityDefault from "checkGameOrganizationJoinEligibility" /* 12176 */;
+// Module 12274 (openGameOrganizationJoinModal)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11869 */;
+import checkGameOrganizationJoinEligibilityDefault from "checkGameOrganizationJoinEligibility" /* 12275 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _openGameOrganizationJoinModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ let obj = function _openGameOrganizationJoinModal() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp24) {
           c4 = 3;

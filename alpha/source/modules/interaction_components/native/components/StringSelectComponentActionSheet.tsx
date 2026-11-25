@@ -1,29 +1,24 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12352
+// Function ID: 12353
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4917, 575, 8691, 2117, 5131, 12254, 7362, 5508, 1112, 2]
+// Dependencies: [32, 19, 21, 5012, 8790, 2117, 5226, 12353, 12354, 5603, 1112, 2]
 // Exports: default
 
-// Module 12253 (StringSelectComponentActionSheet)
+// Module 12352 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2117 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import EmojiDefault from "Emoji" /* 7362 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import Text_Text from "Text/Text" /* 5603 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
 
-let obj2;
 let react = react_mod;
 const jsx = Fragment.jsx;
-let obj = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 }, emojiWrapper: obj2, textEmoji: { fontSize: 16, color: "#000000" }, fastImageEmoji: { width: 24, height: 24 } };
-obj2 = { flexShrink: 0, borderRadius: nativeDefault.radii.xs, overflow: "hidden" };
-let closure_6 = createStyles.createStyles(obj);
+let closure_6 = createStyles.createStyles({ selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 } });
 const result = size.fileFinishedImporting("modules/interaction_components/native/components/StringSelectComponentActionSheet.tsx");
 
 export default function StringSelectComponentActionSheet(selectionActionComponent) {
@@ -41,7 +36,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8691);
+  let obj = selectionActionComponent(8790);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -106,9 +101,8 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     renderIcon(emoji) {
       let tmp = null;
       if (null != emoji.emoji) {
-        const obj = { src: emoji.emoji.src, name: emoji.emoji.name, style: null, textEmojiStyle: null, fastImageStyle: null };
-        ({ emojiWrapper: obj.style, textEmoji: obj.textEmojiStyle, fastImageEmoji: obj.fastImageStyle } = closure_2);
-        tmp = jsx(EmojiDefault, { src: emoji.emoji.src, name: emoji.emoji.name, style: null, textEmojiStyle: null, fastImageStyle: null });
+        const obj = { emoji: emoji.emoji };
+        tmp = memo(onSubmit(closure_2[8]), obj);
       }
       return tmp;
     },
@@ -136,11 +130,11 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
       return callback(items);
     },
     itemAccessibilityLabel: function accessibilityLabel(emoji) {
-      const intl = selectionActionComponent(closure_2[11]).intl;
+      const intl = selectionActionComponent(closure_2[10]).intl;
       const formatToPlainString = intl.formatToPlainString;
       emoji = emoji.emoji;
       let name;
-      const ZbrH2f = selectionActionComponent(closure_2[11]).t.ZbrH2f;
+      const ZbrH2f = selectionActionComponent(closure_2[10]).t.ZbrH2f;
       if (emoji != null) {
         name = emoji.name;
       }
@@ -150,7 +144,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(12254);
+  const tmp10 = onSubmit(12353);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

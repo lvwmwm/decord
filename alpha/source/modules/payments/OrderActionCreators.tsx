@@ -1,27 +1,27 @@
-// Module ID: 7474
-// Function ID: 7475
+// Module ID: 7569
+// Function ID: 7570
 // Name: OrderActionCreators
-// Dependencies: [5, 7473, 1071, 3, 5668, 7475, 1112, 2439, 1284, 4730, 2]
+// Dependencies: [5, 7568, 1071, 3, 5763, 7570, 1112, 2450, 1284, 5777, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7474 (OrderActionCreators)
+// Module 7569 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import _modDef2439 from "module_2439" /* 2439 */;
-import BillingError2 from "BillingError" /* 5668 */;
-import OrderConstants from "OrderConstants" /* 7473 */;
-import OrderSigningErrors from "OrderSigningErrors" /* 7475 */;
+import _modDef2450 from "module_2450" /* 2450 */;
+import BillingError2 from "BillingError" /* 5763 */;
+import OrderConstants from "OrderConstants" /* 7568 */;
+import OrderSigningErrors from "OrderSigningErrors" /* 7570 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 const BillingError_mod = BillingError2;
-let c11, c12, c7, closure_10, closure_4;
+let c11, c12, c7, closure_10, closure_4, error;
 
 let SPENDING_LIMIT_REACHED;
 let SPENDING_LIMIT_WILL_EXCEED;
-const f90870 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
+const f91209 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
 function isOrderShape(obj) {
   return null != obj && typeof obj === "object" && "id" in obj && "status" in obj;
 }
@@ -46,7 +46,7 @@ function getOrderSigningConstraintsError(status) {
                 const unsatisfied_constraints = body2.unsatisfied_constraints;
                 let someResult;
                 if (unsatisfied_constraints != null) {
-                  someResult = unsatisfied_constraints.some(f90870);
+                  someResult = unsatisfied_constraints.some(f91209);
                 }
                 let orderSigningError = null;
                 if (someResult) {
@@ -115,7 +115,7 @@ let obj = function _signOrder() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c5;
@@ -190,13 +190,13 @@ let obj = function _signOrder() {
           let closure_7 = closure_4;
           if (closure_7 instanceof closure_131_0(closure_131_2[8]).HTTPResponseError) {
             if (409 === closure_7.status) {
-              if (closure_131_10(closure_7.body)) {
-                const self3 = this;
+              if (closure_131_11(closure_7.body)) {
+                const self2 = this;
                 throw new closure_131_9(closure_7.body);
               }
             }
           }
-          const tmp28 = closure_131_11(closure_7);
+          const tmp28 = closure_131_12(closure_7);
           let closure_1 = tmp28;
           if (tmp28 == null) {
             closure_1 = closure_7;
@@ -214,11 +214,8 @@ let obj = function _signOrder() {
           closure_5 = value;
           c5 = 0;
           if (null == closure_5.body) {
-            const _Error = Error;
             const self = this;
-            const self2 = this;
-            const error = new Error("Invalid sign order response");
-            throw error;
+            throw new closure_131_10();
           } else {
             c7 = 3;
             obj = { value: closure_5.body, done: true };
@@ -244,7 +241,7 @@ obj = function _getOrder() {
     let c6 = 0;
     let c4 = 0;
     return (async (arg0, value) => {
-      let obj10;
+      let obj8;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -254,7 +251,7 @@ obj = function _getOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -274,22 +271,19 @@ obj = function _getOrder() {
               const get = HTTP.get;
               c5 = 2;
               c6 = 1;
-              const obj6 = { url: Endpoints.ORDER_GET(orderId), rejectWithError: true };
-              const obj7 = { value: get(obj6), done: false };
-              return obj7;
+              const obj4 = { url: Endpoints.ORDER_GET(orderId), rejectWithError: true };
+              const obj5 = { value: get(obj4), done: false };
+              return obj5;
             }
           } else if (1 === c5) {
             c4 = 0;
             error = closure_3;
-            const obj8 = { error, orderId };
-            closure_130_6.error("failed to fetch order", obj8);
-            const obj4 = closure_130_0(closure_130_2[9]);
-            if (!obj4.isExpectedHttpClientError(error)) {
-              const obj9 = { tags: { source: "OrderActionCreators_getOrder" }, extra: obj10 };
-              obj10 = { orderId };
-              const obj5 = closure_130_0(closure_130_2[9]);
-              const result = obj5.captureBillingException(error, obj9);
-            }
+            const obj6 = { error, orderId };
+            closure_130_6.error("failed to fetch order", obj6);
+            const ClientBillingError = closure_130_0(closure_130_2[9]).ClientBillingError;
+            const obj7 = { site: "order_fetch", extra: obj8 };
+            obj8 = { orderId };
+            ClientBillingError.report(obj7, error);
             c6 = 3;
             return { value: null, done: true };
           } else if (arg0 === 1) {
@@ -305,11 +299,11 @@ obj = function _getOrder() {
             c6 = 3;
             return { value: body, done: true };
           }
-        } catch (tmp28) {
-          closure_3 = tmp28;
+        } catch (tmp23) {
+          closure_3 = tmp23;
           if (0 === c4) {
             c6 = 3;
-            throw tmp28;
+            throw tmp23;
           } else {
             c5 = 1;
           }
@@ -335,7 +329,7 @@ obj = function _fetchOrderEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -413,7 +407,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c9;
@@ -466,7 +460,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -506,7 +500,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                       } else {
                         c2 = 2;
                         c3 = 1;
-                        const obj6 = { value: closure_1_14(closure_0), done: false };
+                        const obj6 = { value: closure_1_15(closure_0), done: false };
                         return obj6;
                       }
                     } else if (c3 === 1) {
@@ -519,7 +513,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     } else {
                       length = value;
                       c3 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } catch (tmp13) {
                     c3 = 3;
@@ -527,8 +521,8 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                   }
                 }
               };
-              let closure_2 = closure_136_16;
-              value = closure_136_16[Symbol.iterator]();
+              let closure_2 = closure_136_17;
+              value = closure_136_17[Symbol.iterator]();
               if (value !== undefined) {
                 c9 = 1;
                 c3 = tmp30;
@@ -648,7 +642,7 @@ class OrderSigningFailedWithConstraintsError extends BillingError {
     unsatisfied_constraints = unsatisfied_constraints.unsatisfied_constraints;
     let someResult;
     if (unsatisfied_constraints != null) {
-      someResult = unsatisfied_constraints.some(f90870);
+      someResult = unsatisfied_constraints.some(f91209);
     }
     let orderSigningError = null;
     if (someResult) {
@@ -701,9 +695,9 @@ class OrderSigningOrderChangedError extends OrderSigningFailedWithConstraintsErr
     const intl = intl2.intl;
     const string = intl.string;
     if (true === someResult) {
-      vfMgld = _modDef2439.vfMgld;
+      vfMgld = _modDef2450.vfMgld;
     } else {
-      vfMgld = _modDef2439["Wq++Jf"];
+      vfMgld = _modDef2450["Wq++Jf"];
     }
     tmp4.message = string(vfMgld);
     return tmp4;
@@ -713,15 +707,24 @@ BillingError = BillingError_mod;
 class OrderProcessingPendingError extends BillingError {
   constructor() {
     const tmp2 = new tmp("Order signed but entitlements not yet visible after polling", new.target);
+    tmp2.name = "OrderProcessingPending";
     return tmp2;
   }
 }
-let closure_16 = [250, 500, 1000, 1500, 2500, 4250];
-let result = size.fileFinishedImporting("modules/payments/OrderActionCreators.tsx");
+class InvalidOrderResponseError extends Error {
+  constructor() {
+    const tmp2 = new tmp("Invalid order response", new.target);
+    tmp2.name = "InvalidOrderResponse";
+    return tmp2;
+  }
+}
+let closure_17 = [250, 500, 1000, 1500, 2500, 4250];
+const result = size.fileFinishedImporting("modules/payments/OrderActionCreators.tsx");
 
 export { OrderSigningFailedWithConstraintsError };
 export { OrderSigningOrderChangedError };
 export { OrderProcessingPendingError };
+export { InvalidOrderResponseError };
 export { getOrderSigningConstraintsError };
 export function signOrder() {
   return obj(...arguments);

@@ -1,17 +1,17 @@
-// Module ID: 15289
-// Function ID: 15290
+// Module ID: 15411
+// Function ID: 15412
 // Name: TagGraphic
-// Dependencies: [19, 17, 21, 4917, 575, 15286, 5604, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 15408, 5699, 2]
 // Exports: TagGraphic
 
-// Module 15289 (TagGraphic)
+// Module 15411 (TagGraphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import TagGroupTypes from "TagGroupTypes" /* 15286 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import TagGroupTypes from "TagGroupTypes" /* 15408 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;

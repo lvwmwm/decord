@@ -1,14 +1,14 @@
-// Module ID: 19498
-// Function ID: 19499
+// Module ID: 19610
+// Function ID: 19611
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2188, 7715, 7349, 1254, 13247, 19499, 572, 11, 19501, 2]
+// Dependencies: [5, 32, 2188, 7814, 7444, 1254, 13370, 19611, 572, 11, 19613, 2]
 
-// Module 19498 (ChangelogManager)
+// Module 19610 (ChangelogManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import ChangelogStore from "ChangelogStore" /* 7715 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import ChangelogStore from "ChangelogStore" /* 7814 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -59,7 +59,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -94,7 +94,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                 const obj21 = tmp(latestChangelogId[8]);
                 obj21.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 c4 = 2;
                 c5 = 1;
@@ -132,13 +132,13 @@ class ChangelogManager extends AutomaticLifecycleManager {
                 const obj15 = tmp(latestChangelogId[8]);
                 obj15.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else if (true !== body[latestChangelogId].show_on_startup) {
                 c3 = 0;
                 const obj14 = tmp(latestChangelogId[8]);
                 obj14.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } else {
                 closure_3 = closure_1_6.lastSeenChangelogId();
                 closure_4 = closure_1_6.lastSeenChangelogDate();
@@ -149,7 +149,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj13 = tmp(latestChangelogId[8]);
                     obj13.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 }
                 c4 = 3;
@@ -176,7 +176,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
               const obj7 = tmp(latestChangelogId[8]);
               obj7.dispatch({ type: "CHANGE_LOG_RESOLVED" });
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               if (null != closure_4) {
                 if (null != closure_1_6.lastSeenChangelogDate()) {
@@ -185,7 +185,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj3 = tmp(latestChangelogId[8]);
                     obj3.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     let tmp5 = closure_0;
                     const _Date = Date;
@@ -208,7 +208,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj2 = tmp(latestChangelogId[8]);
                     obj2.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 }
               }

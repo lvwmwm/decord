@@ -1,18 +1,18 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 9076
+// Function ID: 9077
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 8978, 5634, 8981, 4832, 1257, 8982, 12, 7474, 4730, 8983, 2]
+// Dependencies: [5, 32, 19, 9077, 5729, 9080, 4927, 1257, 9081, 12, 7569, 4825, 9082, 2]
 // Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
 
-// Module 8977 (NativeCheckoutStore)
+// Module 9076 (NativeCheckoutStore)
 import _mod1257 from "module_1257" /* 1257 */;
-import _slicedToArray2 from "_slicedToArray" /* 4832 */;
-import PaymentConstants from "PaymentConstants" /* 5634 */;
-import ContextUtilsDefault from "ContextUtils" /* 8981 */;
+import _slicedToArray2 from "_slicedToArray" /* 4927 */;
+import PaymentConstants from "PaymentConstants" /* 5729 */;
+import ContextUtilsDefault from "ContextUtils" /* 9080 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 8978 */;
+import OrderRecord from "OrderRecord" /* 9077 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, checkoutInitParameters, closure_1, country, paymentGateway;
@@ -71,7 +71,7 @@ export function createNativeStore(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -147,7 +147,7 @@ export function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -211,7 +211,7 @@ export function createNativeStore(arg0) {
               closure_130_0(obj);
             }
             paymentGateway = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp23) {
             paymentGateway = 3;
             throw tmp23;
@@ -237,7 +237,7 @@ export function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -324,7 +324,7 @@ export function createNativeStore(arg0) {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp40) {
             c7 = 3;
             throw tmp40;
@@ -408,7 +408,7 @@ export function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -516,7 +516,7 @@ export function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -590,7 +590,7 @@ export function createNativeStore(arg0) {
             c4 = 0;
             closure_130_0({ isCreateOrderLoading: false });
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp39) {
           closure_3 = tmp39;
@@ -618,7 +618,7 @@ export function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -692,7 +692,7 @@ export function createNativeStore(arg0) {
             c3 = 0;
             closure_129_0({ isCreateOrderLoading: false });
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp38) {
           closure_2 = tmp38;

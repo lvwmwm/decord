@@ -1,10 +1,10 @@
-// Module ID: 19480
-// Function ID: 19481
+// Module ID: 19592
+// Function ID: 19593
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1071, 21, 4917, 1500, 7354, 5508, 1112, 2187, 5515, 2]
+// Dependencies: [5, 32, 19, 17, 1071, 21, 5012, 1500, 7449, 5603, 1112, 2187, 5610, 2]
 // Exports: default
 
-// Module 19480 (ExistingUserAgeGateConfirm)
+// Module 19592 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
@@ -12,7 +12,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, dependencyMap, importDefault;
@@ -53,7 +53,7 @@ export default function ExistingUserAgeGateConfirm(onConfirm) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -96,7 +96,7 @@ export default function ExistingUserAgeGateConfirm(onConfirm) {
             }
             closure_128_2(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           let closure_2 = tmp18;
@@ -118,13 +118,13 @@ export default function ExistingUserAgeGateConfirm(onConfirm) {
   [tmp3, c2] = _slicedToArray(react.useState(false), 2);
   let obj2 = { top: true, style: tmp.container, children: items };
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  const SafeAreaPaddingView = onConfirm(7354).SafeAreaPaddingView;
+  const SafeAreaPaddingView = onConfirm(7449).SafeAreaPaddingView;
   let obj3 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.format(onConfirm(1112).t.wumolR, { age }) };
-  const Heading = onConfirm(5508).Heading;
+  const Heading = onConfirm(5603).Heading;
   intl = onConfirm(1112).intl;
   items = [closure_8(Heading, obj3), , ];
   let obj4 = { style: tmp.body, variant: "body-md/medium", color: "interactive-text-default", children: format(n3QjDE, obj5) };
-  const Text = onConfirm(5508).Text;
+  const Text = onConfirm(5603).Text;
   const intl2 = onConfirm(1112).intl;
   format = intl2.format;
   obj5 = { helpURL: obj6.getArticleURL(HelpdeskArticles.AGE_GATE) };
@@ -141,7 +141,7 @@ export default function ExistingUserAgeGateConfirm(onConfirm) {
     },
     grow: true
   };
-  Button = onConfirm(5515).Button;
+  Button = onConfirm(5610).Button;
   intl3 = onConfirm(1112).intl;
   items[2] = closure_8(View, obj7);
   return closure_9(SafeAreaPaddingView, obj2);

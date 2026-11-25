@@ -1,10 +1,10 @@
-// Module ID: 17883
-// Function ID: 17884
+// Module ID: 17995
+// Function ID: 17996
 // Name: InterestGameCover
-// Dependencies: [2, 17860]
+// Dependencies: [2, 17972]
 
-// Module 17883 (InterestGameCover)
-import GameCover from "GameCover" /* 17860 */;
+// Module 17995 (InterestGameCover)
+import GameCover from "GameCover" /* 17972 */;
 import size from "module_2" /* 2 */;
 
 const GameCoverDefault = GameCover;

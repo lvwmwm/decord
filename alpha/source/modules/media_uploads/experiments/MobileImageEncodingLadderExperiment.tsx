@@ -1,10 +1,10 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8111
+// Function ID: 8112
 // Name: MobileImageEncodingLadderExperiment
 // Dependencies: [1450, 2]
 // Exports: getMobileImageEncodingLadderConfig
 
-// Module 8012 (MobileImageEncodingLadderExperiment)
+// Module 8111 (MobileImageEncodingLadderExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

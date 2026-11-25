@@ -1,13 +1,13 @@
-// Module ID: 11822
-// Function ID: 11823
+// Module ID: 11921
+// Function ID: 11922
 // Name: ChannelInfoActionCreators
-// Dependencies: [5723, 8146, 572, 2]
+// Dependencies: [5818, 8245, 572, 2]
 // Exports: fetchChannelInfo
 
-// Module 11822 (ChannelInfoActionCreators)
+// Module 11921 (ChannelInfoActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
-import ChannelStatusStore from "ChannelStatusStore" /* 8146 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
+import ChannelStatusStore from "ChannelStatusStore" /* 8245 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/ChannelInfoActionCreators.tsx");

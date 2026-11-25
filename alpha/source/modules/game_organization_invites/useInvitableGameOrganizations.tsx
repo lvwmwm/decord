@@ -1,17 +1,17 @@
-// Module ID: 11945
-// Function ID: 11946
+// Module ID: 12044
+// Function ID: 12045
 // Name: useInvitableGameOrganizations
-// Dependencies: [5, 11946, 1071, 504, 1088, 11947, 11948, 11942, 2]
+// Dependencies: [5, 12045, 1071, 504, 1088, 12046, 12047, 12041, 2]
 // Exports: default
 
-// Module 11945 (useInvitableGameOrganizations)
+// Module 12044 (useInvitableGameOrganizations)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import useCanInviteGuildIdsDefault from "useCanInviteGuildIds" /* 11942 */;
-import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11947 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11948 */;
+import useCanInviteGuildIdsDefault from "useCanInviteGuildIds" /* 12041 */;
+import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 12046 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 12047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import InvitableGameOrganizationStore from "InvitableGameOrganizationStore" /* 11946 */;
+import InvitableGameOrganizationStore from "InvitableGameOrganizationStore" /* 12045 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -75,7 +75,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } catch (tmp7) {
       c1 = 3;

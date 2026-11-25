@@ -7,7 +7,7 @@
 // Module 1659 (ANIMATION_CALLBACK_PROP_BY_EVENT_TYPE)
 import CSS_EVENT_MASK from "CSS_EVENT_MASK" /* 1660 */;
 
-const f81527 = (item) => {
+const f81774 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -17,10 +17,10 @@ const f81527 = (item) => {
 const obj = { animationStart: "onCSSAnimationStart", animationEnd: "onCSSAnimationEnd", animationIteration: "onCSSAnimationIteration", animationCancel: "onCSSAnimationCancel" };
 const obj2 = { transitionRun: "onCSSTransitionRun", transitionStart: "onCSSTransitionStart", transitionEnd: "onCSSTransitionEnd", transitionCancel: "onCSSTransitionCancel" };
 const entries = Object.entries(obj);
-let closure_2 = fromEntries(entries.map(f81527));
+let closure_2 = fromEntries(entries.map(f81774));
 const fromEntries2 = Object.fromEntries;
 const entries1 = Object.entries(obj2);
-let closure_3 = fromEntries2(entries1.map(f81527));
+let closure_3 = fromEntries2(entries1.map(f81774));
 
 export const ANIMATION_CALLBACK_PROP_BY_EVENT_TYPE = obj;
 export const TRANSITION_CALLBACK_PROP_BY_EVENT_TYPE = obj2;

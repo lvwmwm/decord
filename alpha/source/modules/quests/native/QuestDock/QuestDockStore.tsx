@@ -1,13 +1,13 @@
-// Module ID: 16506
-// Function ID: 16507
+// Module ID: 16627
+// Function ID: 16628
 // Name: QuestDockStore
-// Dependencies: [6745, 504, 16507, 572, 2]
+// Dependencies: [6840, 504, 16628, 572, 2]
 
-// Module 16506 (QuestDockStore)
+// Module 16627 (QuestDockStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import QuestDockUtils from "QuestDockUtils" /* 16507 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
+import QuestDockUtils from "QuestDockUtils" /* 16628 */;
 import size from "module_2" /* 2 */;
 
 const QuestDockMode = QuestConstants.QuestDockMode;

@@ -1,11 +1,11 @@
-// Module ID: 19156
-// Function ID: 19157
+// Module ID: 19268
+// Function ID: 19269
 // Name: react-native
-// Dependencies: [15670, 2]
+// Dependencies: [15791, 2]
 // Exports: updateVisualRefresh
 
-// Module 19156 (react-native)
-import react_nativeDefault from "react-native" /* 15670 */;
+// Module 19268 (react-native)
+import react_nativeDefault from "react-native" /* 15791 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/themes/native/updateVisualRefresh.tsx");

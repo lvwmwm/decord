@@ -1,9 +1,9 @@
-// Module ID: 16511
-// Function ID: 16512
+// Module ID: 16632
+// Function ID: 16633
 // Name: YouBarConstants
 // Dependencies: [17, 575, 1186, 2]
 
-// Module 16511 (YouBarConstants)
+// Module 16632 (YouBarConstants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;

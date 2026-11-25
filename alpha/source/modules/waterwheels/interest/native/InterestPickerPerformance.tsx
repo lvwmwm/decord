@@ -1,10 +1,10 @@
-// Module ID: 17864
-// Function ID: 17865
+// Module ID: 17976
+// Function ID: 17977
 // Name: InterestPickerPerformance
 // Dependencies: [2]
 // Exports: recordLoadedCover, wasCoverPreviouslyLoaded
 
-// Module 17864 (InterestPickerPerformance)
+// Module 17976 (InterestPickerPerformance)
 import size from "module_2" /* 2 */;
 
 const set = new Set();

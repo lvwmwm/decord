@@ -1,10 +1,10 @@
-// Module ID: 20250
-// Function ID: 20251
+// Module ID: 20352
+// Function ID: 20353
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 19440, 1071, 3, 1241, 10215, 15, 9, 14966, 1255, 1263, 19537, 4761, 2]
+// Dependencies: [5, 17, 502, 19552, 1071, 3, 1241, 10314, 15, 9, 15088, 1255, 1263, 19649, 4856, 2]
 // Exports: default
 
-// Module 20250 (executeHeadlessTask)
+// Module 20352 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
@@ -12,11 +12,11 @@ import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10215 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 14966 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10314 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 19440 */;
+import NativeAppStartup from "NativeAppStartup" /* 19552 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;
@@ -47,7 +47,7 @@ let obj = function _executeHeadlessTask() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ let obj = function _executeHeadlessTask() {
               closure_8 = closure_10;
               value.warn("Failed to submit analytics", closure_8);
               c12 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             case 13:
             {

@@ -1,27 +1,27 @@
-// Module ID: 16554
-// Function ID: 16555
+// Module ID: 16675
+// Function ID: 16676
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [5, 19, 17, 5855, 1071, 9787, 8252, 8251, 6750, 16372, 8241, 8107, 1378, 8220, 8232, 9848, 16555, 16362, 8227, 6748, 16373, 5685, 5690, 6752, 2]
+// Dependencies: [5, 19, 17, 5950, 1071, 9886, 8351, 8350, 6845, 16493, 8340, 8206, 1378, 8319, 8331, 9947, 16676, 16483, 8326, 6843, 16494, 5780, 5785, 6847, 2]
 // Exports: default
 
-// Module 16554 (useVideoQuestPlayerAnalytics)
+// Module 16675 (useVideoQuestPlayerAnalytics)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5685 */;
-import MetricEvents from "MetricEvents" /* 5690 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import QuestContent from "QuestContent" /* 6750 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 8227 */;
-import AnalyticsActions from "AnalyticsActions" /* 8241 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8251 */;
-import AdDataUtils from "AdDataUtils" /* 8252 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 9848 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16362 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 16373 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5780 */;
+import MetricEvents from "MetricEvents" /* 5785 */;
+import QuestTypes from "QuestTypes" /* 6843 */;
+import QuestContent from "QuestContent" /* 6845 */;
+import AdCreativeType from "AdCreativeType" /* 6847 */;
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 8326 */;
+import AnalyticsActions from "AnalyticsActions" /* 8340 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8350 */;
+import AdDataUtils from "AdDataUtils" /* 8351 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 9947 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16483 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 16494 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NetworkStore from "NetworkStore" /* 5855 */;
+import NetworkStore from "NetworkStore" /* 5950 */;
 import size from "module_2" /* 2 */;
 
 let c7, c8, closure_5;
@@ -84,7 +84,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c6;
@@ -174,7 +174,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
             trackQuestEvent(obj11);
             c6 = 0;
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp49) {
           closure_5 = tmp49;

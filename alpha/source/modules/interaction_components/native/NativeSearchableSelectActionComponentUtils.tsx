@@ -1,21 +1,21 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8793
+// Function ID: 8794
 // Name: NativeSearchableSelectActionComponentUtils
-// Dependencies: [4766, 4823, 4788, 1386, 1071, 6279, 1254, 1415, 7411, 8416, 1089, 575, 8695, 6970, 2]
+// Dependencies: [4861, 4918, 4883, 1386, 1071, 6374, 1254, 1415, 7506, 8515, 1089, 575, 8794, 7065, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 8694 (NativeSearchableSelectActionComponentUtils)
+// Module 8793 (NativeSearchableSelectActionComponentUtils)
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1415 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6279 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 6970 */;
-import RoleIconUtils from "RoleIconUtils" /* 7411 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8416 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8695 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildRoleStore from "GuildRoleStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6374 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7065 */;
+import RoleIconUtils from "RoleIconUtils" /* 7506 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8515 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8794 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildRoleStore from "GuildRoleStore" /* 4918 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

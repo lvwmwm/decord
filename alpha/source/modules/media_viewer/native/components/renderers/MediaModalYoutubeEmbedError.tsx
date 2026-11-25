@@ -1,15 +1,15 @@
-// Module ID: 13968
-// Function ID: 13969
+// Module ID: 14091
+// Function ID: 14092
 // Name: MediaModalYoutubeEmbedError
-// Dependencies: [19, 17, 21, 4917, 575, 5508, 1112, 5515, 5596, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5603, 1112, 5610, 5691, 2]
 
-// Module 13968 (MediaModalYoutubeEmbedError)
+// Module 14091 (MediaModalYoutubeEmbedError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 5596 */;
+import LinkingDefault from "Linking" /* 5691 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -32,7 +32,7 @@ const memoResult = react.memo(function MediaModalYoutubeEmbedError(videoId) {
   const tmp = closure_6();
   let obj = { style: tmp.container, children: items };
   const obj2 = { style: tmp.text, variant: "body-md/semibold", color: "text-overlay-light", children: intl.string(videoId(1112).t.u7vKPs) };
-  const Text = videoId(5508).Text;
+  const Text = videoId(5603).Text;
   intl = videoId(1112).intl;
   items = [closure_4(Text, obj2), ];
   const obj3 = {
@@ -46,7 +46,7 @@ const memoResult = react.memo(function MediaModalYoutubeEmbedError(videoId) {
       obj.openURL("https://youtube.com/watch?v=" + videoId);
     }
   };
-  const Button = videoId(5515).Button;
+  const Button = videoId(5610).Button;
   intl2 = videoId(1112).intl;
   items[1] = closure_4(Button, obj3);
   return closure_5(View, obj);

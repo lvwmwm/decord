@@ -1,14 +1,14 @@
-// Module ID: 17774
-// Function ID: 17775
+// Module ID: 17885
+// Function ID: 17886
 // Name: BoostTier2Icon
-// Dependencies: [19, 21, 575, 5603, 17775, 2]
+// Dependencies: [19, 21, 575, 5698, 17886, 2]
 // Exports: BoostTier2Icon
 
-// Module 17774 (BoostTier2Icon)
+// Module 17885 (BoostTier2Icon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 17775 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 17886 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

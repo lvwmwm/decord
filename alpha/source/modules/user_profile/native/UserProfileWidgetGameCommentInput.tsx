@@ -1,14 +1,14 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14537
+// Function ID: 14538
 // Name: UserProfileWidgetGameCommentInput
-// Dependencies: [32, 19, 502, 6011, 21, 6256, 14415, 7314, 14395, 1112, 6047, 2]
+// Dependencies: [32, 19, 502, 6106, 21, 6351, 14538, 7409, 14518, 1112, 6142, 2]
 // Exports: default
 
-// Module 14414 (UserProfileWidgetGameCommentInput)
+// Module 14537 (UserProfileWidgetGameCommentInput)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 6011 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6256 */;
-import WidgetUtils from "WidgetUtils" /* 14395 */;
+import Constants from "Constants" /* 6106 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6351 */;
+import WidgetUtils from "WidgetUtils" /* 14518 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

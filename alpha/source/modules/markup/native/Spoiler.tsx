@@ -1,22 +1,22 @@
-// Module ID: 5996
-// Function ID: 5997
+// Module ID: 6091
+// Function ID: 6092
 // Name: Spoiler
-// Dependencies: [32, 19, 17, 1071, 5997, 21, 1378, 4917, 575, 561, 560, 4978, 1186, 2]
+// Dependencies: [32, 19, 17, 1071, 6092, 21, 1378, 5012, 575, 561, 560, 5073, 1186, 2]
 // Exports: SpoilerRevealProvider, default
 
-// Module 5996 (Spoiler)
+// Module 6091 (Spoiler)
 import Fragment from "Fragment" /* 21 */;
 import _mod560 from "module_560" /* 560 */;
 import _mod561 from "module_561" /* 561 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import native from "native" /* 4978 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
+import native from "native" /* 5073 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6092 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -135,7 +135,7 @@ class Spoiler extends PureComponent {
       let tmp6 = jsx;
       let mapped = Children1.map(hiddenContent, (type) => {
         let validElement;
-        const f88975 = (props) => {
+        const f89317 = (props) => {
           let Children;
           let cloneElement;
           let items;
@@ -147,7 +147,7 @@ class Spoiler extends PureComponent {
             if (Array.isArray(style)) {
               flattenResult = closure_2_5.flatten(style);
             }
-            const obj = { children: Children.map(props.props.children, f88975), style: items, onPress: "Array" };
+            const obj = { children: Children.map(props.props.children, f89317), style: items, onPress: "Array" };
             ({ Children, cloneElement } = tmp);
             items = [flattenResult, spoiler.spoiler];
             return cloneElement(props, obj);
@@ -183,7 +183,7 @@ class Spoiler extends PureComponent {
             mapped = type;
             if (!revealed) {
               const Children = tmp.Children;
-              mapped = Children.map(type, f88975);
+              mapped = Children.map(type, f89317);
             }
           }
           tmp10 = mapped;

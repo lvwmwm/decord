@@ -1,38 +1,43 @@
 // Module ID: 5505
 // Function ID: 5506
-// Dependencies: [106, 65, 114]
+// Dependencies: [5485, 19, 5506, 5526]
+// Exports: useRecyclerViewManager
 
 // Module 5505
-import renderElement from "renderElement" /* 114 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import RecyclerViewManager from "RecyclerViewManager" /* 5506 */;
+import _slicedToArray from "_slicedToArray" /* 5485 */;
+import react from "react" /* 19 */;
 
-let obj2;
-let obj3;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "LottieAnimationView", bubblingEventTypes: obj2, validAttributes: obj3 };
-obj2 = { topAnimationFinish: { phasedRegistrationNames: { captured: "onAnimationFinishCapture", bubbled: "onAnimationFinish" } }, topAnimationFailure: { phasedRegistrationNames: { captured: "onAnimationFailureCapture", bubbled: "onAnimationFailure" } }, topAnimationLoaded: { phasedRegistrationNames: { captured: "onAnimationLoadedCapture", bubbled: "onAnimationLoaded" } } };
-obj3 = { resizeMode: true, renderMode: true, sourceName: true, sourceJson: true, sourceURL: true, sourceDotLottieURI: true, imageAssetsFolder: true, progress: true, speed: true, loop: true, autoPlay: true, enableMergePathsAndroidForKitKatAndAbove: true, enableSafeModeAndroid: true, hardwareAccelerationAndroid: true, cacheComposition: true, colorFilters: true, dummy: true, textFiltersAndroid: true, textFiltersIOS: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onAnimationFinish: true, onAnimationFailure: true, onAnimationLoaded: true }));
-const obj4 = {
-  play(arg0, arg1, arg2) {
-    const items = [arg1, arg2];
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "play", items);
-  },
-  reset(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "reset", []);
-  },
-  pause(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "pause", []);
-  },
-  resume(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "resume", []);
-  }
+let c3;
+let closure_4;
+let hasOwnProperty;
+({ useEffect: c3, useMemo: closure_4, useState: hasOwnProperty } = react);
+
+export const useRecyclerViewManager = (data) => {
+  let velocityTracker;
+  let recyclerViewManager = velocityTracker(closure_5(() => {
+    recyclerViewManager = new RecyclerViewManager.RecyclerViewManager(data);
+    return recyclerViewManager;
+  }), 1)[0];
+  velocityTracker = velocityTracker(closure_5(() => {
+    velocityTracker = new data(recyclerViewManager[3]).VelocityTracker();
+    return velocityTracker;
+  }), 1)[0];
+  const items = [data];
+  data = data.data;
+  closure_4(() => {
+    recyclerViewManager.updateProps(data);
+  }, items);
+  const items1 = [data];
+  closure_4(() => {
+    recyclerViewManager.processDataUpdate();
+  }, items1);
+  closure_3(() => {
+    recyclerViewManager.restoreIfNeeded();
+    return () => {
+      recyclerViewManager.dispose();
+      velocityTracker.cleanUp();
+    };
+  }, []);
+  return { recyclerViewManager, velocityTracker };
 };
-
-export default module_65.get("LottieAnimationView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
-export const Commands = obj4;

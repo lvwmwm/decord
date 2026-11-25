@@ -1,21 +1,21 @@
-// Module ID: 13692
-// Function ID: 13693
+// Module ID: 13815
+// Function ID: 13816
 // Name: BioText
-// Dependencies: [19, 17, 1071, 4819, 21, 4917, 5596, 1255, 5508, 12935, 1378, 4818, 1112, 2]
+// Dependencies: [19, 17, 1071, 4914, 21, 5012, 5691, 1255, 5603, 13059, 1378, 4913, 1112, 2]
 // Exports: default
 
-// Module 13692 (BioText)
+// Module 13815 (BioText)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import ChangelogConstants from "ChangelogConstants" /* 4819 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import LinkingDefault from "Linking" /* 5596 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 12935 */;
+import ChangelogConstants from "ChangelogConstants" /* 4914 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import LinkingDefault from "Linking" /* 5691 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 13059 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c9;

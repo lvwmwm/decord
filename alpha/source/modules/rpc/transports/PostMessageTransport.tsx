@@ -1,37 +1,42 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10172
+// Function ID: 10173
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 4765, 6810, 5671, 1071, 6811, 1088, 10074, 568, 1107, 1255, 4838, 7518, 6812, 10075, 7553, 6813, 7514, 2119, 10077, 10078, 2]
+// Dependencies: [5, 32, 4860, 6905, 5766, 1071, 6906, 1088, 10173, 568, 1107, 1255, 4933, 7613, 7656, 7654, 6907, 10174, 7657, 6908, 7609, 2119, 10176, 10177, 2]
 
-// Module 10073 (PostMessageTransport)
+// Module 10172 (PostMessageTransport)
 import _mod568 from "module_568" /* 568 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import Constants2 from "Constants" /* 5671 */;
-import FramesConstants from "FramesConstants" /* 6811 */;
-import RPCErrorDefault from "RPCError" /* 7518 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 10074 */;
+import FramesConstants from "FramesConstants" /* 6906 */;
+import RPCErrorDefault from "RPCError" /* 7613 */;
+import FrameLaunchTimingManager from "FrameLaunchTimingManager" /* 7656 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 10173 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4765 */;
-import FramesStore from "FramesStore" /* 6810 */;
-import Constants from "Constants" /* 1071 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
+import FramesStore from "FramesStore" /* 6905 */;
+import Constants_mod from "Constants" /* 5766 */;
+import Constants_mod2 from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c6, closure_0, closure_5, importDefault, json_str, message2, selfEmbeddedActivities, user;
+let _require, c6, closure_0, closure_5, importDefault, json_str, selfEmbeddedActivities, user;
 
 let c10;
 let c9;
 let closure_12;
+let map1;
 let metroImportAll;
+let metroImportDefault;
 let unpackModuleId;
 let _asyncToGenerator = _asyncToGenerator_mod;
-const RPC_EMBEDDED_APP_SCOPE = Constants2.RPC_EMBEDDED_APP_SCOPE;
-({ AnalyticEvents: metroImportAll, ComponentActions: c9, RPCCloseCodes: c10, RPCErrors: unpackModuleId, RPCCommands: closure_12 } = Constants);
+let Constants = Constants_mod2;
+({ MAX_POST_MESSAGE_STRING_LENGTH: metroImportDefault, RPC_EMBEDDED_APP_SCOPE: metroImportAll } = Constants);
+Constants = Constants_mod2;
+({ AnalyticEvents: c9, ComponentActions: c10, RPCCloseCodes: unpackModuleId, RPCErrors: closure_12, RPCCommands: map1 } = Constants);
 const asLaunched = FramesConstants.asLaunched;
-let closure_14 = 10 * DurationsDefault.Millis.SECOND;
+let closure_15 = 10 * DurationsDefault.Millis.SECOND;
 const map = new Map();
-const map1 = new Map();
+map1 = new Map();
 const map2 = new Map();
 function postClose(source, arg1, postMessageToRPCClient) {
   const items = [RPCOpcodesDefault.CLOSE, arg1];
@@ -90,7 +95,7 @@ class PostMessageTransport extends EventEmitter {
           obj3 = closure_1_0(closure_1_2[12]);
           track(ACTIVITY_HANDSHAKE_TIMED_OUT, obj);
         });
-      }, closure_14);
+      }, closure_15);
     };
     tmp4.handleIFrameUnmount = function handleIFrameUnmount(id) {
       id = id.id;
@@ -98,7 +103,7 @@ class PostMessageTransport extends EventEmitter {
       map2.delete(id);
       const value = map.get(id);
       if (null != value) {
-        const obj = { code: constants.CLOSE_NORMAL, message: "iFrame gone" };
+        const obj = { code: unpackModuleId.CLOSE_NORMAL, message: "iFrame gone" };
         closure_0.disconnectSocket(value, obj, true);
       }
     };
@@ -108,7 +113,7 @@ class PostMessageTransport extends EventEmitter {
         closure_0.routeEvent(value, iframeId, arg0, postMessageToRPCClient);
       } catch (tmp9) {
         if (tmp9 instanceof RPCErrorDefault) {
-          if (tmp9.errorCode === unpackModuleId.INVALID_PAYLOAD) {
+          if (tmp9.errorCode === constants.INVALID_PAYLOAD) {
             throw tmp9;
           }
         }
@@ -123,19 +128,35 @@ class PostMessageTransport extends EventEmitter {
         }
       }
     };
-    tmp4.handleFrame = function handleFrame(origin, source, str) {
+    tmp4.rejectOversizedMessage = function rejectOversizedMessage(iframeId, postMessageToWebView) {
+      const logger = closure_0.logger;
+      logger.warn("Closing iframe " + iframeId.iframeId + ": message over " + metroImportDefault + " characters");
+      const obj2 = { code: unpackModuleId.CLOSE_UNSUPPORTED, message: "Payload too large" };
+      map1.delete(iframeId.iframeId);
+      const value = map.get(iframeId.iframeId);
+      const obj = closure_0;
+      if (null != value) {
+        obj.disconnectSocket(value, obj2);
+      } else if (typeof postClose === "function") {
+        const items = [RPCOpcodesDefault.CLOSE, obj2];
+        postMessageToWebView(items, iframeId.origin);
+      } else {
+        throw new TypeError("Trying to call a non-function");
+      }
+    };
+    tmp4.handleFrame = function handleFrame(origin, source, arr) {
       if (origin.origin !== source.source.origin) {
         const self3 = this;
         const self4 = this;
-        const obj2 = { closeCode: constants.INVALID_ORIGIN };
+        const obj2 = { closeCode: unpackModuleId.INVALID_ORIGIN };
         const tmp19 = new RPCErrorDefault(obj2, "Origin has changed");
         throw tmp19;
       } else {
         try {
-          let parsed = str;
-          if (typeof str === "string") {
+          let parsed = arr;
+          if (typeof arr === "string") {
             const _JSON = JSON;
-            parsed = JSON.parse(str);
+            parsed = JSON.parse(arr);
           }
           const onFrameHandled = closure_0.onFrameHandled;
           if (onFrameHandled != null) {
@@ -145,7 +166,7 @@ class PostMessageTransport extends EventEmitter {
         } catch (err) {
           const self = this;
           const self2 = this;
-          const obj3 = { closeCode: constants.CLOSE_UNSUPPORTED };
+          const obj3 = { closeCode: unpackModuleId.CLOSE_UNSUPPORTED };
           const tmp13 = new RPCErrorDefault(obj3, "Payload not recognized encoding");
           throw tmp13;
         }
@@ -172,14 +193,14 @@ class PostMessageTransport extends EventEmitter {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c7;
           try {
             let frame_id;
             c9 = 2;
-            if (0 === context) {
+            if (0 === c8) {
               if (arg0 === 1) {
                 c9 = 3;
                 throw value;
@@ -198,12 +219,12 @@ class PostMessageTransport extends EventEmitter {
                   const _clearTimeout = clearTimeout;
                   clearTimeout(closure_1.handshakeFailureTimeoutId);
                 }
-                context = 1;
+                c8 = 1;
                 c9 = 1;
-                const obj5 = { value: source(postMessageToRPCClient[19])(postMessageToRPCClient[18], postMessageToRPCClient.paths), done: false };
+                const obj5 = { value: source(postMessageToRPCClient[21])(postMessageToRPCClient[20], postMessageToRPCClient.paths), done: false };
                 return obj5;
               }
-            } else if (1 === context) {
+            } else if (1 === c8) {
               if (arg0 === 1) {
                 c9 = 3;
                 throw value;
@@ -213,10 +234,10 @@ class PostMessageTransport extends EventEmitter {
               } else {
                 json_str = value.default;
                 const assert = json_str.assert;
-                const obj14 = closure_1(postMessageToRPCClient[20])(json_str);
-                const obj7 = { v: maxResult.required(), encoding: equalResult.optional(), client_id: stringResult1.required(), frame_id: stringResult2.required(), sdk_version: stringResult3.optional() };
-                const keys = obj14.required().keys;
-                obj14.required();
+                const obj16 = closure_1(postMessageToRPCClient[22])(json_str);
+                const obj8 = { v: maxResult.required(), encoding: equalResult.optional(), client_id: stringResult1.required(), frame_id: stringResult2.required(), sdk_version: stringResult3.optional() };
+                const keys = obj16.required().keys;
+                obj16.required();
                 const numberResult = json_str.number();
                 const minResult = numberResult.min(1);
                 maxResult = minResult.max(1);
@@ -225,14 +246,14 @@ class PostMessageTransport extends EventEmitter {
                 stringResult1 = json_str.string();
                 stringResult2 = json_str.string();
                 stringResult3 = json_str.string();
-                assert(closure_1, keys(obj7));
+                assert(closure_1, keys(obj8));
                 c7 = 0;
                 closure_4 = closure_1;
                 frame_id = closure_4.frame_id;
                 contextSource = map.get(source.iframeId);
                 if (frame_id === source.iframeId) {
                   if (null != contextSource) {
-                    context = closure_1(postMessageToRPCClient[15])(contextSource.contextSource);
+                    context = closure_1(postMessageToRPCClient[17])(contextSource.contextSource);
                     if (null == context) {
                       const logger6 = closure_133_1.logger;
                       const _HermesInternal7 = HermesInternal;
@@ -240,34 +261,34 @@ class PostMessageTransport extends EventEmitter {
                       const _HermesInternal8 = HermesInternal;
                       const self5 = this;
                       const self6 = this;
-                      const obj8 = { closeCode: constants.CLOSE_UNSUPPORTED };
-                      const tmp102 = closure_1(postMessageToRPCClient[13]);
-                      const tmp1022 = new tmp102(obj8, "Failed to build embedded context for iframe ID " + frame_id);
-                      throw tmp1022;
+                      const obj9 = { closeCode: closure_1_11.CLOSE_UNSUPPORTED };
+                      const tmp112 = closure_1(postMessageToRPCClient[13]);
+                      const tmp1122 = new tmp112(obj9, "Failed to build embedded context for iframe ID " + frame_id);
+                      throw tmp1122;
                     } else {
                       if (null != closure_4.sdk_version) {
-                        const obj9 = { application_id: closure_4.client_id, sdk_version: closure_4.sdk_version };
-                        const obj4 = closure_1(postMessageToRPCClient[11]);
-                        obj4.track(context.ACTIVITY_HANDSHAKE, obj9);
+                        const obj10 = { application_id: closure_4.client_id, sdk_version: closure_4.sdk_version };
+                        const obj6 = closure_1(postMessageToRPCClient[11]);
+                        obj6.track(c9.ACTIVITY_HANDSHAKE, obj10);
                       }
                       c7 = 2;
                       const _Number = Number;
                       const createPostMessageProxySocket = closure_133_1.createPostMessageProxySocket;
                       const encoding = closure_4.encoding;
-                      const obj10 = { source, context, postMessageToRPCClient, version: Number(closure_4.v), logger: closure_133_1.logger, postClose, encoding: json_str };
+                      const obj11 = { source, context, postMessageToRPCClient, version: Number(closure_4.v), logger: closure_133_1.logger, postClose, encoding: json_str };
                       json_str = encoding;
                       if (encoding == null) {
                         json_str = "json";
                       }
-                      user = createPostMessageProxySocket(obj10);
+                      user = createPostMessageProxySocket(obj11);
                       const logger5 = closure_133_1.logger;
                       const _HermesInternal6 = HermesInternal;
                       logger5.info("Socket Opened: " + user.id);
                       c7 = 3;
-                      context = 5;
+                      c8 = 5;
                       c9 = 1;
-                      const obj11 = { value: closure_133_1.validateSocketClient(user, source.origin, closure_4.client_id), done: false };
-                      return obj11;
+                      const obj12 = { value: closure_133_1.validateSocketClient(user, source.origin, closure_4.client_id), done: false };
+                      return obj12;
                     }
                   }
                 }
@@ -277,33 +298,33 @@ class PostMessageTransport extends EventEmitter {
                 const _HermesInternal10 = HermesInternal;
                 const self7 = this;
                 const self8 = this;
-                const obj12 = { closeCode: constants.CLOSE_UNSUPPORTED };
-                const tmp116 = closure_1(postMessageToRPCClient[13]);
-                const tmp1162 = new tmp116(obj12, "Unrecognized iframe ID " + frame_id);
-                throw tmp1162;
+                const obj13 = { closeCode: closure_1_11.CLOSE_UNSUPPORTED };
+                const tmp126 = closure_1(postMessageToRPCClient[13]);
+                const tmp1262 = new tmp126(obj13, "Unrecognized iframe ID " + frame_id);
+                throw tmp1262;
               }
-            } else if (2 === context) {
+            } else if (2 === c8) {
               c7 = 0;
-              message = contextSource;
+              let closure_9 = contextSource;
               const self3 = this;
               const self4 = this;
-              const obj13 = { closeCode: constants.CLOSE_UNSUPPORTED };
-              const tmp62 = new closure_1(postMessageToRPCClient[13])(obj13, message.message);
-              throw tmp62;
-            } else if (3 === context) {
+              const obj14 = { closeCode: closure_1_11.CLOSE_UNSUPPORTED };
+              const tmp72 = new closure_1(postMessageToRPCClient[13])(obj14, closure_9.message);
+              throw tmp72;
+            } else if (3 === c8) {
               c7 = 0;
               let closure_10 = contextSource;
               const logger4 = closure_133_1.logger;
               const _HermesInternal5 = HermesInternal;
               logger4.error("Error opening window socket " + closure_10);
               throw closure_10;
-            } else if (4 === context) {
+            } else if (4 === c8) {
               c7 = 0;
-              message2 = contextSource;
+              let closure_11 = contextSource;
               const logger3 = closure_133_1.logger;
               const _HermesInternal4 = HermesInternal;
-              logger3.info("Socket Closed: " + user.id + ", " + message2.message);
-              throw message2;
+              logger3.info("Socket Closed: " + user.id + ", " + closure_11.message);
+              throw closure_11;
             } else if (arg0 === 1) {
               c9 = 3;
               throw value;
@@ -312,18 +333,25 @@ class PostMessageTransport extends EventEmitter {
               c9 = 3;
               return { value, done: true };
             } else if (map.has(source.iframeId)) {
-              const result = closure_1_15.set(source.iframeId, user);
+              const result = closure_1_16.set(source.iframeId, user);
               map.delete(source.iframeId);
               const scopes = user.authorization.scopes;
-              scopes.add(c7);
-              closure_1(postMessageToRPCClient[21])(user);
+              scopes.add(c8);
+              closure_1(postMessageToRPCClient[23])(user);
               closure_133_1.emit("connect", user);
+              const obj2 = source(postMessageToRPCClient[14]);
+              const frameLaunchTimingForIframe = obj2.getFrameLaunchTimingForIframe(source.iframeId);
+              if (frameLaunchTimingForIframe != null) {
+                const event = frameLaunchTimingForIframe.event;
+                const obj17 = { step: source(postMessageToRPCClient[15]).LaunchStep.READY };
+                event(obj17);
+              }
               const logger2 = closure_133_1.logger;
               const _HermesInternal3 = HermesInternal;
               logger2.info("Socket Validated: " + user.id);
               c7 = 0;
               c9 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const logger = closure_133_1.logger;
               const _HermesInternal = HermesInternal;
@@ -331,22 +359,22 @@ class PostMessageTransport extends EventEmitter {
               const _HermesInternal2 = HermesInternal;
               const self = this;
               const self2 = this;
-              const obj = { closeCode: constants.CLOSE_UNSUPPORTED };
+              const obj = { closeCode: closure_1_11.CLOSE_UNSUPPORTED };
               const tmp10 = closure_1(postMessageToRPCClient[13]);
-              const tmp106 = new tmp10(obj, "Unrecognized iframe ID " + source.iframeId);
-              throw tmp106;
+              const tmp109 = new tmp10(obj, "Unrecognized iframe ID " + source.iframeId);
+              throw tmp109;
             }
-          } catch (tmp128) {
-            contextSource = tmp128;
+          } catch (tmp138) {
+            contextSource = tmp138;
             if (0 === c7) {
               c9 = 3;
-              throw tmp128;
+              throw tmp138;
             } else if (1 === c7) {
-              context = 2;
+              c8 = 2;
             } else if (2 === c7) {
-              context = 3;
+              c8 = 3;
             } else {
-              context = 4;
+              c8 = 4;
             }
           }
         }
@@ -371,7 +399,7 @@ class PostMessageTransport extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c5;
@@ -392,7 +420,7 @@ class PostMessageTransport extends EventEmitter {
               closure_2 = undefined;
               c6 = 1;
               c7 = 1;
-              const obj4 = { value: closure_0(closure_2[19])(closure_2[18], closure_2.paths), done: false };
+              const obj4 = { value: closure_0(closure_2[21])(closure_2[20], closure_2.paths), done: false };
               return obj4;
             }
           } else if (1 === c6) {
@@ -406,7 +434,7 @@ class PostMessageTransport extends EventEmitter {
             } else {
               closure_2 = value.default;
               const assert = closure_2.assert;
-              const obj6 = closure_1(closure_2[20])(closure_2);
+              const obj6 = closure_1(closure_2[22])(closure_2);
               const obj7 = { code: validResult.required(), message: stringResult.optional() };
               const keys = obj6.required().keys;
               const requiredResult = obj6.required();
@@ -418,7 +446,7 @@ class PostMessageTransport extends EventEmitter {
               c5 = 0;
               closure_131_1.disconnectSocket(closure_0, closure_1);
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             c5 = 0;
@@ -453,59 +481,80 @@ class PostMessageTransport extends EventEmitter {
     tmp4.onFrameHandled = onFrameHandled;
     return tmp4;
   }
-  routeEvent(value, iframeId, arg2, postMessageToRPCClient) {
-    let tmp7;
-    let tmp8;
+  routeEvent(value, iframeId, arg2, postMessageToWebView) {
+    let arr;
+    let tmp6;
     const self = this;
     if (Array.isArray(arg2)) {
-      [tmp7, tmp8] = arg2;
+      [tmp6, arr] = arg2;
       _slicedToArray(arg2, 2);
-      if (RPCOpcodesDefault.HANDSHAKE === tmp7) {
+      if (typeof arr === "string") {
+        if (arr.length > metroImportDefault) {
+          return self.rejectOversizedMessage(iframeId, postMessageToWebView);
+        }
+      }
+      if (RPCOpcodesDefault.HANDSHAKE === tmp6) {
+        let sdk_version;
+        if (arr != null) {
+          sdk_version = arr.sdk_version;
+        }
+        if (sdk_version == null) {
+          sdk_version = null;
+        }
+        const obj4 = FrameLaunchTimingManager;
+        const frameLaunchTimingForIframe = obj4.getFrameLaunchTimingForIframe(iframeId.iframeId);
+        const tmp31 = require;
+        if (frameLaunchTimingForIframe != null) {
+          const event = frameLaunchTimingForIframe.event;
+          const obj2 = { step: tmp31(7654).LaunchStep.HANDSHAKE, sdkVersion: sdk_version };
+          event(obj2);
+        }
         if (null != value) {
           const self8 = this;
           const self9 = this;
-          const obj2 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-          const tmp33 = new RPCErrorDefault(obj2, "Already connected");
-          throw tmp33;
+          const obj3 = { closeCode: unpackModuleId.CLOSE_UNSUPPORTED };
+          const tmp36 = new RPCErrorDefault(obj3, "Already connected");
+          throw tmp36;
         } else {
-          return self.handleHandshake(iframeId, tmp8, postMessageToRPCClient);
+          return self.handleHandshake(iframeId, arr, postMessageToWebView);
         }
-      } else if (RPCOpcodesDefault.FRAME === tmp7) {
-        if (!self.handleFrameTicketRefresh(value, iframeId, tmp8, postMessageToRPCClient)) {
+      } else if (RPCOpcodesDefault.FRAME === tmp6) {
+        if (!self.handleFrameTicketRefresh(value, iframeId, arr, postMessageToWebView)) {
           if (null == value) {
             const self6 = this;
             const self7 = this;
-            const obj3 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-            const tmp28 = new RPCErrorDefault(obj3, "Not connected");
-            throw tmp28;
+            const obj5 = { closeCode: unpackModuleId.CLOSE_UNSUPPORTED };
+            const tmp27 = new RPCErrorDefault(obj5, "Not connected");
+            throw tmp27;
           } else {
-            return self.handleFrame(iframeId, value, tmp8);
+            return self.handleFrame(iframeId, value, arr);
           }
         }
-      } else if (RPCOpcodesDefault.CLOSE === tmp7) {
+      } else if (RPCOpcodesDefault.CLOSE === tmp6) {
         if (null == value) {
           const self4 = this;
           const self5 = this;
-          const obj4 = { closeCode: constants2.CLOSE_UNSUPPORTED };
-          const tmp18 = new RPCErrorDefault(obj4, "Not connected");
-          throw tmp18;
+          const obj6 = { closeCode: unpackModuleId.CLOSE_UNSUPPORTED };
+          const tmp17 = new RPCErrorDefault(obj6, "Not connected");
+          throw tmp17;
         } else {
-          return self.handleClose(value, tmp8);
+          return self.handleClose(value, arr);
         }
       } else {
         const self2 = this;
         const self3 = this;
-        const obj = { closeCode: constants2.CLOSE_UNSUPPORTED };
-        const tmp13 = new RPCErrorDefault(obj, "Invalid opcode");
-        throw tmp13;
+        const obj = { closeCode: unpackModuleId.CLOSE_UNSUPPORTED };
+        const tmp12 = new RPCErrorDefault(obj, "Invalid opcode");
+        throw tmp12;
       }
     } else {
       const logger = self.logger;
       logger.warn("Protocol error: event data should be an Array!");
     }
   }
-  handleFrameTicketRefresh(context, iframeId, cmd, postMessageToRPCClient) {
+  handleFrameTicketRefresh(context, iframeId, arr, postMessageToWebView) {
     let closure_3;
+    let closure_7;
     let closure_8;
     let closure_9;
     let nonce;
@@ -513,18 +562,18 @@ class PostMessageTransport extends EventEmitter {
       return closure_0(...arguments);
     }
     _require = iframeId;
-    importDefault = postMessageToRPCClient;
+    importDefault = postMessageToWebView;
     function stillMounted() {
-      const tmp = asLaunched(FramesStore.getFrame(RPC_EMBEDDED_APP_SCOPE));
-      const tmp2 = map2.get(iframeId.iframeId) === value2 && null != tmp && tmp.applicationId === closure_8 && tmp.launchRequestId === constants && tmp.data.connectedSince === connectedSince;
+      const tmp = asLaunched(FramesStore.getFrame(closure_7));
+      const tmp2 = map2.get(iframeId.iframeId) === value2 && null != tmp && tmp.applicationId === closure_8 && tmp.launchRequestId === closure_9 && tmp.data.connectedSince === connectedSince;
       return tmp2;
     }
     const self = this;
-    if (typeof cmd === "object") {
-      if (null != cmd) {
-        if ("cmd" in cmd) {
+    if (typeof arr === "object") {
+      if (null != arr) {
+        if ("cmd" in arr) {
           let tmp = constants4;
-          if (cmd.cmd === constants4.REQUEST_PROXY_TICKET_REFRESH) {
+          if (arr.cmd === constants4.REQUEST_PROXY_TICKET_REFRESH) {
             let source;
             if (context != null) {
               source = context.context.source;
@@ -546,10 +595,10 @@ class PostMessageTransport extends EventEmitter {
             if (type !== require("EmbeddedAppTypes").EmbeddedContextSourceType.FRAME) {
               return false;
             } else {
-              if ("nonce" in cmd) {
-                if (typeof cmd.nonce === "string") {
-                  if (cmd.nonce.length <= 128) {
-                    if (0 !== cmd.nonce.length) {
+              if ("nonce" in arr) {
+                if (typeof arr.nonce === "string") {
+                  if (arr.nonce.length <= 128) {
+                    if (0 !== arr.nonce.length) {
                       const tmp16 = asLaunched(nonce.getFrame(source.frameId));
                       _asyncToGenerator = tmp16;
                       const tmp18 = require("buildEmbeddedContext")(source);
@@ -562,8 +611,8 @@ class PostMessageTransport extends EventEmitter {
                             if (pendingTicketRefreshes.has(iframeId.iframeId)) {
                               return true;
                             } else {
-                              nonce = cmd.nonce;
-                              ({ id: RPC_EMBEDDED_APP_SCOPE, applicationId: closure_8, launchRequestId: closure_9 } = tmp16);
+                              nonce = arr.nonce;
+                              ({ id: closure_7, applicationId: closure_8, launchRequestId: closure_9 } = tmp16);
                               const connectedSince = tmp16.data.connectedSince;
                               let pendingTicketRefreshes2 = self.pendingTicketRefreshes;
                               pendingTicketRefreshes2.add(iframeId.iframeId);
@@ -582,11 +631,12 @@ class PostMessageTransport extends EventEmitter {
                                     const obj2 = { value, done: true };
                                     return obj2;
                                   } else {
-                                    return { value: "HermesInternal", done: null };
+                                    return { value: "HermesInternal", done: "HermesInternal" };
                                   }
                                 } else {
                                   let c3;
                                   try {
+                                    let postMessageToRPCClient;
                                     let ticket;
                                     c5 = 2;
                                     if (0 === context) {
@@ -615,8 +665,8 @@ class PostMessageTransport extends EventEmitter {
                                     } else {
                                       if (2 === context) {
                                         c3 = 1;
-                                        if (constants()) {
-                                          const items = [postMessageToRPCClient(self[8]).FRAME, ];
+                                        if (stillMounted()) {
+                                          const items = [postMessageToWebView(self[8]).FRAME, ];
                                           const obj7 = { cmd: constants2.REQUEST_PROXY_TICKET_REFRESH, nonce, evt: "ERROR", data: obj8 };
                                           obj8 = { code: constants.UNKNOWN_ERROR, message: "Could not renew the app session" };
                                           items[1] = obj7;
@@ -633,21 +683,21 @@ class PostMessageTransport extends EventEmitter {
                                           c5 = 3;
                                           const obj9 = { value, done: true };
                                           return obj9;
-                                        } else if (constants()) {
-                                          const createProxyTicket = ticket(self[16]).createProxyTicket;
+                                        } else if (stillMounted()) {
+                                          const createProxyTicket = ticket(self[18]).createProxyTicket;
                                           const applicationId = c3.applicationId;
-                                          const tmp26 = ticket(self[16]);
+                                          const tmp26 = ticket(self[18]);
                                           context = 4;
                                           c5 = 1;
                                           const obj10 = { value: createProxyTicket(applicationId, obj4.getProxyTicketChannelId(context.surface), context.surface.type), done: false };
-                                          obj4 = ticket(self[17]);
+                                          obj4 = ticket(self[19]);
                                           return obj10;
                                         } else {
                                           c3 = 0;
                                           const pendingTicketRefreshes2 = tmp56.pendingTicketRefreshes;
                                           pendingTicketRefreshes2.delete(ticket.iframeId);
                                           c5 = 3;
-                                          return { value: "HermesInternal", done: null };
+                                          return { value: "HermesInternal", done: "HermesInternal" };
                                         }
                                       } else if (arg0 === 1) {
                                         c5 = 3;
@@ -661,8 +711,8 @@ class PostMessageTransport extends EventEmitter {
                                         return obj11;
                                       } else {
                                         ticket = value;
-                                        if (constants()) {
-                                          const items1 = [postMessageToRPCClient(self[8]).FRAME, ];
+                                        if (stillMounted()) {
+                                          const items1 = [postMessageToWebView(self[8]).FRAME, ];
                                           const obj = { cmd: constants2.REQUEST_PROXY_TICKET_REFRESH, nonce, evt: null, data: obj12 };
                                           obj12 = { ticket };
                                           items1[1] = obj;
@@ -674,7 +724,7 @@ class PostMessageTransport extends EventEmitter {
                                       const pendingTicketRefreshes4 = tmp56.pendingTicketRefreshes;
                                       pendingTicketRefreshes4.delete(ticket.iframeId);
                                       c5 = 3;
-                                      return { value: "HermesInternal", done: null };
+                                      return { value: "HermesInternal", done: "HermesInternal" };
                                     }
                                   } catch (tmp56) {
                                     if (0 === c3) {

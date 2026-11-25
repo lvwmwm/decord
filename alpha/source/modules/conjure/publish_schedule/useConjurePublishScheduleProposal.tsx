@@ -1,12 +1,12 @@
-// Module ID: 18649
-// Function ID: 18650
+// Module ID: 18761
+// Function ID: 18762
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6808, 504, 14574, 14575, 1112, 4192, 18371, 2]
+// Dependencies: [5, 32, 19, 6903, 504, 14696, 14697, 1112, 4244, 18483, 2]
 // Exports: default
 
-// Module 18649 (useConjurePublishScheduleProposal)
-import _modDef4192 from "module_4192" /* 4192 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6808 */;
+// Module 18761 (useConjurePublishScheduleProposal)
+import _modDef4244 from "module_4244" /* 4244 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6903 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -56,7 +56,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -108,7 +108,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp35) {
         dependencyMap = tmp35;
@@ -126,13 +126,13 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
     let intl = tmp(1112).intl;
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
-    const orZDqY = _modDef4192.orZDqY;
-    tmpResult = tmp(18371);
+    const orZDqY = _modDef4244.orZDqY;
+    tmpResult = tmp(18483);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(18371);
+  tmpResult2 = tmp(18483);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

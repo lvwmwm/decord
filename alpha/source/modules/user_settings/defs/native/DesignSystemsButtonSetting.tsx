@@ -1,12 +1,12 @@
-// Module ID: 17244
-// Function ID: 17245
+// Module ID: 17357
+// Function ID: 17358
 // Name: DesignSystemsButtonSetting
-// Dependencies: [9414, 1071, 11815, 17245, 2]
+// Dependencies: [9513, 1071, 11914, 17358, 2]
 
-// Module 17244 (DesignSystemsButtonSetting)
+// Module 17357 (DesignSystemsButtonSetting)
 import Constants from "Constants" /* 1071 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

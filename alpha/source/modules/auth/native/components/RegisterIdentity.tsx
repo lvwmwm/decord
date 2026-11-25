@@ -1,20 +1,20 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17609
+// Function ID: 17610
 // Name: RegisterIdentity
-// Dependencies: [5, 32, 19, 17, 17488, 17489, 21, 4917, 5523, 7182, 1500, 17499, 1091, 17485, 17505, 17506, 17487, 5478, 7201, 7204, 17507, 5515, 1112, 7178, 6922, 17508, 17509, 8475, 8476, 2]
+// Dependencies: [5, 32, 19, 17, 17599, 17600, 21, 5012, 5618, 7277, 1500, 17610, 1091, 17596, 17616, 17617, 17598, 5573, 7296, 7299, 17618, 5610, 1112, 7273, 7017, 17619, 17620, 8574, 8575, 2]
 // Exports: RegisterIdentity
 
-// Module 17498 (RegisterIdentity)
+// Module 17609 (RegisterIdentity)
 import intl3 from "intl" /* 1112 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7201 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7296 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17488 */;
-import RegistrationConstants from "RegistrationConstants" /* 17489 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17599 */;
+import RegistrationConstants from "RegistrationConstants" /* 17600 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, dependencyMap, descriptor;
@@ -75,7 +75,7 @@ function RegisterIdentityBase(inputMode) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -97,7 +97,7 @@ function RegisterIdentityBase(inputMode) {
               const tmp39 = constants;
               const tmp40 = constants2;
               if (inputMode === tmp(closure_2[18]).PhoneOrEmailSelectorForceMode.EMAIL) {
-                const obj5 = { email, phoneToken: "Array" };
+                const obj5 = { email, phoneToken: "r" };
                 closure_1_10(obj5);
                 const tmp23 = _undefined2();
                 if (null != tmp23) {
@@ -143,7 +143,7 @@ function RegisterIdentityBase(inputMode) {
             c3 = 0;
             closure_128_8(false);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp29) {
           closure_2 = tmp29;
@@ -160,15 +160,15 @@ function RegisterIdentityBase(inputMode) {
   };
   const tmp = dependencyMap;
   ({ headerText, controlComponent, subheader } = inputMode);
-  obj = inputMode(5523);
+  obj = inputMode(5618);
   const tmp2 = closure_16(45 * min(2, obj.useFontScale()));
   const tmp3 = setInputMode;
-  const tmp4 = setInputMode(7182)();
+  const tmp4 = setInputMode(7277)();
   let obj2 = inputMode(1500);
   dependencyMap = obj2.useNavigation();
   const tmp5 = closure_11((errors) => errors.errors);
   let message = tmp5;
-  let obj3 = inputMode(17499);
+  let obj3 = inputMode(17610);
   const identityRegistrationStep = obj3.useIdentityRegistrationStep(inputMode(1091).AuthStates.REGISTER_IDENTITY, inputMode);
   const loginEmail = identityRegistrationStep.loginEmail;
   const identityErrorMessage = identityRegistrationStep.identityErrorMessage;
@@ -176,7 +176,7 @@ function RegisterIdentityBase(inputMode) {
   ({ setLoginEmail, loginPhone, updateLoginPhone, preventSubmitIdentity, identityError } = identityRegistrationStep);
   [tmp8, c8] = loginEmail(identityErrorMessage.useState(false), 2);
   const tmp7 = loginEmail(identityErrorMessage.useState(false), 2);
-  let closure_9 = identityErrorMessage.useContext(inputMode(17485).TrackRegistrationContext);
+  let closure_9 = identityErrorMessage.useContext(inputMode(17596).TrackRegistrationContext);
   const items = [tmp5.message, identityErrorMessage];
   const memo = identityErrorMessage.useMemo(() => {
     message = identityErrorMessage;
@@ -185,23 +185,23 @@ function RegisterIdentityBase(inputMode) {
     }
     return message;
   }, items);
-  const tmp10 = setInputMode(17505);
+  const tmp10 = setInputMode(17616);
   tmp10(inputMode(1091).AuthStates.REGISTER_IDENTITY);
-  const tmp12 = setInputMode(17506);
-  let obj4 = inputMode(17487);
+  const tmp12 = setInputMode(17617);
+  let obj4 = inputMode(17598);
   tmp12(obj4.getPreviousRegistrationTransitionStep(inputMode(1091).AuthStates.REGISTER_IDENTITY));
-  setInputMode(5478)(() => {
+  setInputMode(5573)(() => {
     obj = { step: constants.ACCOUNT_IDENTITY, actionType: map1.VIEWED };
     closure_9(obj);
   });
   let obj5 = { headerText, subHeader: subheader, children: tmp17(tmp18, obj6) };
   obj6 = { style: tmp2.container, contentContainerStyle: tmp2.scrollContent, keyboardShouldPersistTaps: "handled", children: items1 };
   items1 = [controlComponent, , , ];
-  const tmp16 = setInputMode(7204);
-  items1[1] = closure_14(inputMode(17507).RegisterPhoneOrEmailInput, { loginPhone, loginEmail, setLoginPhone: updateLoginPhone, setLoginEmail, inputMode, onSubmit: handleSubmit, inputError: identityError, autoFocus: true });
+  const tmp16 = setInputMode(7299);
+  items1[1] = closure_14(inputMode(17618).RegisterPhoneOrEmailInput, { loginPhone, loginEmail, setLoginPhone: updateLoginPhone, setLoginEmail, inputMode, onSubmit: handleSubmit, inputError: identityError, autoFocus: true });
   let obj7 = { style: tmp2.button, children: closure_14(Button, obj8) };
   obj8 = { loading: tmp8, size: "lg", text: intl.string(inputMode(1112).t.PDTjLN), onPress: handleSubmit, disabled: preventSubmitIdentity };
-  Button = inputMode(5515).Button;
+  Button = inputMode(5610).Button;
   intl = inputMode(1112).intl;
   items1[2] = closure_14(c6, obj7);
   let tmp15Result = null;
@@ -211,7 +211,7 @@ function RegisterIdentityBase(inputMode) {
     tmp15Result = null;
     if ("" !== memo) {
       let obj9 = { style: tmp2.errors, children: memo };
-      tmp15Result = tmp15(tmp3(7178), obj9);
+      tmp15Result = tmp15(tmp3(7273), obj9);
     }
   }
   items1[3] = tmp15Result;
@@ -219,7 +219,7 @@ function RegisterIdentityBase(inputMode) {
   let tmp15Result4 = tmp15Result3;
   if (!tmp4) {
     const obj10 = { style: tmp2.page, children: tmp15Result3 };
-    tmp15Result4 = tmp15(tmp3(6922), obj10);
+    tmp15Result4 = tmp15(tmp3(7017), obj10);
   }
   return tmp15Result4;
 }
@@ -240,13 +240,13 @@ export function RegisterIdentity() {
   let intl;
   let obj5;
   let tmp8;
-  let obj = hasItem(5523);
+  let obj = hasItem(5618);
   const tmp3 = closure_16(45 * min(2, obj.useFontScale()));
-  let obj2 = hasItem(17508);
+  let obj2 = hasItem(17619);
   const deviceCountry = obj2.getDeviceCountry();
   hasItem = null != deviceCountry;
   if (hasItem) {
-    const EMAIL_FIRST_COUNTRIES = tmp(17509).EMAIL_FIRST_COUNTRIES;
+    const EMAIL_FIRST_COUNTRIES = tmp(17620).EMAIL_FIRST_COUNTRIES;
     hasItem = EMAIL_FIRST_COUNTRIES.has(deviceCountry);
   }
   let items = [hasItem];
@@ -277,7 +277,7 @@ export function RegisterIdentity() {
     metroImportAll();
     closure_2(memo[arg0].mode);
   }, items1);
-  const tmpResult = hasItem(8475);
+  const tmpResult = hasItem(8574);
   let obj3 = {
     pageWidth: 0,
     defaultIndex: 0,
@@ -306,7 +306,7 @@ export function RegisterIdentity() {
     controlComponent: closure_14(closure_6, obj5),
     headerText: intl.string(hasItem(1112).t.WEdDgv)
   };
-  obj5 = { style: tmp3.segmentedControl, children: closure_14(hasItem(8476).SegmentedControl, { state: segmentedControlState, keyboardShouldPersistTaps: "handled" }) };
+  obj5 = { style: tmp3.segmentedControl, children: closure_14(hasItem(8575).SegmentedControl, { state: segmentedControlState, keyboardShouldPersistTaps: "handled" }) };
   intl = tmp(1112).intl;
   return closure_14(RegisterIdentityBase, obj4);
 }

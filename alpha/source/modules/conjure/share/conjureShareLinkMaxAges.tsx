@@ -1,10 +1,10 @@
-// Module ID: 18389
-// Function ID: 18390
+// Module ID: 18501
+// Function ID: 18502
 // Name: conjureShareLinkMaxAges
 // Dependencies: [1112, 2]
 // Exports: conjureShareLinkMaxAgeLabel
 
-// Module 18389 (conjureShareLinkMaxAges)
+// Module 18501 (conjureShareLinkMaxAges)
 import intl4 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 

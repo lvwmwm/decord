@@ -1,16 +1,16 @@
-// Module ID: 9838
-// Function ID: 9839
+// Module ID: 9937
+// Function ID: 9938
 // Name: html_parser/HTMLText
-// Dependencies: [19, 21, 4917, 5508, 7679, 9839, 9840, 2]
+// Dependencies: [19, 21, 5012, 5603, 7778, 9938, 9939, 2]
 // Exports: HTMLText
 
-// Module 9838 (html_parser/HTMLText)
+// Module 9937 (html_parser/HTMLText)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7679 */;
-import groupHTMLTextRuns from "groupHTMLTextRuns" /* 9840 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7778 */;
+import groupHTMLTextRuns from "groupHTMLTextRuns" /* 9939 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -129,23 +129,23 @@ export function HTMLText(runs) {
   runs = runs.runs;
   let DEFAULT_TEXT_VARIANT = runs.textVariant;
   if (DEFAULT_TEXT_VARIANT === undefined) {
-    DEFAULT_TEXT_VARIANT = runs(9839).DEFAULT_TEXT_VARIANT;
+    DEFAULT_TEXT_VARIANT = runs(9938).DEFAULT_TEXT_VARIANT;
   }
   let DEFAULT_BOLD_TEXT_VARIANT = runs.boldTextVariant;
   if (DEFAULT_BOLD_TEXT_VARIANT === undefined) {
-    DEFAULT_BOLD_TEXT_VARIANT = runs(9839).DEFAULT_BOLD_TEXT_VARIANT;
+    DEFAULT_BOLD_TEXT_VARIANT = runs(9938).DEFAULT_BOLD_TEXT_VARIANT;
   }
   let DEFAULT_HEADING_VARIANTS = runs.headingVariants;
   if (DEFAULT_HEADING_VARIANTS === undefined) {
-    DEFAULT_HEADING_VARIANTS = runs(9839).DEFAULT_HEADING_VARIANTS;
+    DEFAULT_HEADING_VARIANTS = runs(9938).DEFAULT_HEADING_VARIANTS;
   }
   let native = runs.headingColor;
   if (native === undefined) {
-    native = runs(9839).DEFAULT_HEADING_COLORS.native;
+    native = runs(9938).DEFAULT_HEADING_COLORS.native;
   }
   let DEFAULT_LINK_COLOR = runs.linkColor;
   if (DEFAULT_LINK_COLOR === undefined) {
-    DEFAULT_LINK_COLOR = runs(9839).DEFAULT_LINK_COLOR;
+    DEFAULT_LINK_COLOR = runs(9938).DEFAULT_LINK_COLOR;
   }
   let flag = runs.linksAccessible;
   if (flag === undefined) {

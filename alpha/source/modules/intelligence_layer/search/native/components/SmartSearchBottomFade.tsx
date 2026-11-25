@@ -1,15 +1,15 @@
-// Module ID: 18836
-// Function ID: 18837
+// Module ID: 18948
+// Function ID: 18949
 // Name: SmartSearchBottomFade
-// Dependencies: [19, 1071, 21, 4917, 18837, 671, 5472, 2]
+// Dependencies: [19, 1071, 21, 5012, 18949, 671, 5567, 2]
 
-// Module 18836 (SmartSearchBottomFade)
+// Module 18948 (SmartSearchBottomFade)
 import Fragment from "Fragment" /* 21 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1071 */;
-import LinearGradientDefault from "LinearGradient" /* 5472 */;
+import LinearGradientDefault from "LinearGradient" /* 5567 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const VerticalGradient = Constants.VerticalGradient;
@@ -24,7 +24,7 @@ let closure_7 = createStyles.createStyles((height) => {
 const memoResult = react.memo(function SmartSearchBottomFade(height) {
   let searchHostSurfaceColor;
   const tmp = closure_7(height.height);
-  let obj = searchHostSurfaceColor(18837);
+  let obj = searchHostSurfaceColor(18949);
   searchHostSurfaceColor = obj.useSearchHostSurfaceColor();
   let items = [searchHostSurfaceColor];
   const memo = react.useMemo(() => {

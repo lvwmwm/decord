@@ -1079,8 +1079,8 @@ let obj = {
     };
     return obj2;
   },
-  event(dependencyMap, useNativeDriver) {
-    const animatedEvent = new attachNativeEventImpl.AnimatedEvent(dependencyMap, useNativeDriver);
+  event(_argMapping, useNativeDriver) {
+    const animatedEvent = new attachNativeEventImpl.AnimatedEvent(_argMapping, useNativeDriver);
     let __getHandlerResult = animatedEvent;
     if (!animatedEvent.__isNative) {
       __getHandlerResult = animatedEvent.__getHandler();

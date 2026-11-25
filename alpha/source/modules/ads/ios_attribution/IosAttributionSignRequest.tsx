@@ -1,10 +1,10 @@
-// Module ID: 9847
-// Function ID: 9848
+// Module ID: 9946
+// Function ID: 9947
 // Name: IosAttributionSignRequest
 // Dependencies: [5, 1071, 1284, 1241, 2]
 // Exports: fetchIosAttributionSignedPayloads
 
-// Module 9847 (IosAttributionSignRequest)
+// Module 9946 (IosAttributionSignRequest)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

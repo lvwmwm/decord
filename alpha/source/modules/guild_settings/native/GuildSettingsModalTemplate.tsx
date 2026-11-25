@@ -1,30 +1,30 @@
-// Module ID: 19920
-// Function ID: 19921
+// Module ID: 20022
+// Function ID: 20023
 // Name: GuildSettingsModalTemplate
-// Dependencies: [5, 32, 19, 17, 21, 4917, 575, 19921, 7947, 5508, 1112, 7269, 1500, 5926, 12154, 5666, 7065, 7618, 5989, 7148, 7314, 5515, 5491, 6019, 7399, 7158, 19922, 7412, 5598, 7149, 8348, 5617, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5012, 575, 20023, 8046, 5603, 1112, 7364, 1500, 6021, 12253, 5761, 7160, 7717, 6084, 7243, 7409, 5610, 5586, 6114, 7494, 7253, 20024, 7507, 5693, 7244, 8447, 5712, 2]
 // Exports: default
 
-// Module 19920 (GuildSettingsModalTemplate)
+// Module 20022 (GuildSettingsModalTemplate)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ToastUtils from "ToastUtils" /* 5598 */;
-import CopyIcon2 from "CopyIcon" /* 5617 */;
-import AlertModal from "AlertModal" /* 5926 */;
-import Stack_Stack from "Stack/Stack" /* 5989 */;
-import Card_Card from "Card/Card" /* 6019 */;
-import Input2 from "Input" /* 7149 */;
-import ClipboardUtils from "ClipboardUtils" /* 7412 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7618 */;
-import native from "native" /* 8348 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12154 */;
-import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 19921 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ToastUtils from "ToastUtils" /* 5693 */;
+import CopyIcon2 from "CopyIcon" /* 5712 */;
+import AlertModal from "AlertModal" /* 6021 */;
+import Stack_Stack from "Stack/Stack" /* 6084 */;
+import Card_Card from "Card/Card" /* 6114 */;
+import Input2 from "Input" /* 7244 */;
+import ClipboardUtils from "ClipboardUtils" /* 7507 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7717 */;
+import native from "native" /* 8447 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12253 */;
+import GuildTemplateSettingsUtils from "GuildTemplateSettingsUtils" /* 20023 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, navigation;
@@ -92,7 +92,7 @@ function TemplateForm(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -140,7 +140,7 @@ function TemplateForm(guildId) {
             }
             closure_129_10(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp31) {
           closure_2 = tmp31;
@@ -280,7 +280,7 @@ function TemplateForm(guildId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c3;
@@ -332,7 +332,7 @@ function TemplateForm(guildId) {
               closure_1_9(false);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp32) {
             closure_2 = tmp32;
             if (0 === c3) {
@@ -458,10 +458,10 @@ function CopyRow(copies) {
   const label = copies.label;
   const tmp = closure_10();
   if (copies) {
-    CircleXIcon = tmp2(7399).CircleCheckIcon;
+    CircleXIcon = tmp2(7494).CircleCheckIcon;
     tmp4 = tmp2;
   } else {
-    CircleXIcon = tmp2(7158).CircleXIcon;
+    CircleXIcon = tmp2(7253).CircleXIcon;
     tmp4 = tmp2;
   }
   const obj = { style: tmp.copyRow, children: items };
@@ -478,7 +478,7 @@ function CopyRow(copies) {
   items = [, ];
   const obj2 = { size: "sm", color: ICON_FEEDBACK_CRITICAL, secondaryColor: tmp10(575).colors.WHITE };
   items[0] = metroImportDefault(CircleXIcon, obj2);
-  items[1] = metroImportDefault(tmp4(5508).Text, { variant: "body-sm/normal", children: label });
+  items[1] = metroImportDefault(tmp4(5603).Text, { variant: "body-sm/normal", children: label });
   return tmp6(tmp7, obj);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -582,7 +582,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -629,7 +629,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
             }
             closure_129_4(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp27) {
           closure_2 = tmp27;
@@ -662,7 +662,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -708,7 +708,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_2 = tmp25;
@@ -725,7 +725,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
   };
   [first, _slicedToArray] = react.useState(false);
   const tmp3 = dependencyMap;
-  const tmp4 = guildTemplate(19922)(guildTemplate.code);
+  const tmp4 = guildTemplate(20024)(guildTemplate.code);
   react = tmp4;
   obj = { spacing: guildTemplate(575).space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;
@@ -754,7 +754,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
   if (isDirty) {
     let obj4 = { children: items1 };
     let obj5 = { variant: "body-sm/normal", color: "text-feedback-warning", children: intl4.string(tmp6(1112).t.aWsjtD) };
-    const Text = tmp6(5508).Text;
+    const Text = tmp6(5603).Text;
     intl4 = tmp6(1112).intl;
     items1 = [tmp7(Text, obj5), ];
     const obj6 = {
@@ -765,7 +765,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
           return obj(...arguments);
         }
     };
-    const Button = tmp6(5515).Button;
+    const Button = tmp6(5610).Button;
     intl5 = tmp6(1112).intl;
     items1[1] = handleDelete(Button, obj6);
     isDirty = tmp5(closure_9, obj4);
@@ -787,7 +787,7 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
       showConfirmModal(obj);
     }
   };
-  const Button2 = tmp6(5515).Button;
+  const Button2 = tmp6(5610).Button;
   intl6 = tmp6(1112).intl;
   items[2] = handleDelete(Button2, obj7);
   const obj8 = {
@@ -798,13 +798,13 @@ let closure_14 = react.memo(function TemplateControls(arg0) {
       return obj.showModal(guildTemplate.code, false);
     }
   };
-  const Button3 = tmp6(5515).Button;
+  const Button3 = tmp6(5610).Button;
   intl7 = tmp6(1112).intl;
   items[3] = handleDelete(Button3, obj8);
   let isDirty2 = guildTemplate.isDirty;
   if (isDirty2) {
     const obj9 = { variant: "body-sm/normal", color: "text-muted", children: format(v0AVum, obj10) };
-    const Text2 = tmp6(5508).Text;
+    const Text2 = tmp6(5603).Text;
     const intl8 = tmp6(1112).intl;
     format = intl8.format;
     const _Date = Date;
@@ -847,11 +847,11 @@ export default function GuildSettingsModalTemplate(arg0) {
     if (null != loadError) {
       const obj2 = { style: tmp.container, contentContainerStyle: items, children: metroImportDefault(Text_Text.Text, obj3) };
       items = [tmp.containerContent, contentContainerStyle];
-      const Form2 = tmp2(7947).Form;
+      const Form2 = tmp2(8046).Form;
       obj3 = { variant: "body-sm/normal", color: "text-feedback-critical", children: loadError.message };
       tmp12Result = metroImportDefault(Form2, obj2);
     } else if (tmp8) {
-      tmp12Result = tmp12(tmp2(7269).SceneLoadingIndicator, {});
+      tmp12Result = tmp12(tmp2(7364).SceneLoadingIndicator, {});
     } else {
       const obj4 = { guildId, guildTemplate: tmp9, contentContainerStyle };
       tmp12Result = tmp12(TemplateForm, obj4);
@@ -860,9 +860,9 @@ export default function GuildSettingsModalTemplate(arg0) {
   } else {
     const obj5 = { style: tmp.container, contentContainerStyle: items1, children: metroImportDefault(Text, obj6) };
     items1 = [tmp.containerContent, contentContainerStyle];
-    const Form = tmp2(7947).Form;
+    const Form = tmp2(8046).Form;
     obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(intl9.t.f0IPAG) };
-    Text = tmp2(5508).Text;
+    Text = tmp2(5603).Text;
     intl = tmp2(1112).intl;
     tmp11 = metroImportDefault(Form, obj5);
   }

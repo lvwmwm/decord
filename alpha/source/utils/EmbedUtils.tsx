@@ -1,16 +1,16 @@
-// Module ID: 6651
-// Function ID: 6652
+// Module ID: 6746
+// Function ID: 6747
 // Name: EmbedUtils
-// Dependencies: [1071, 6652, 11, 1404, 12, 2168, 6269, 2]
+// Dependencies: [1071, 6747, 11, 1404, 12, 2168, 6364, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 6651 (EmbedUtils)
+// Module 6746 (EmbedUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import FlagUtils from "FlagUtils" /* 1404 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6269 */;
-import EmbedConstants from "EmbedConstants" /* 6652 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6364 */;
+import EmbedConstants from "EmbedConstants" /* 6747 */;
 import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 

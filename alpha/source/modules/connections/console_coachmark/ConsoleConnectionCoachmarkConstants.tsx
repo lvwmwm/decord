@@ -1,9 +1,9 @@
-// Module ID: 18940
-// Function ID: 18941
+// Module ID: 19052
+// Function ID: 19053
 // Name: ConsoleConnectionCoachmarkConstants
 // Dependencies: [2]
 
-// Module 18940 (ConsoleConnectionCoachmarkConstants)
+// Module 19052 (ConsoleConnectionCoachmarkConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/connections/console_coachmark/ConsoleConnectionCoachmarkConstants.tsx");

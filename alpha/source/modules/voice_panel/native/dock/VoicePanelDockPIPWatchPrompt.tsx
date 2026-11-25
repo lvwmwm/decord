@@ -1,24 +1,24 @@
-// Module ID: 19359
-// Function ID: 19360
+// Module ID: 19471
+// Function ID: 19472
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6687, 1386, 1071, 21, 4917, 575, 11634, 6253, 6254, 8278, 1255, 19360, 504, 6681, 4978, 1653, 5127, 1706, 6929, 6033, 1112, 5508, 3378, 5515, 7811, 7121, 2]
+// Dependencies: [19, 17, 6782, 1386, 1071, 21, 5012, 575, 11733, 6348, 6349, 8377, 1255, 19472, 504, 6776, 5073, 1653, 5222, 1706, 7024, 6128, 1112, 5603, 3430, 5610, 7910, 7216, 2]
 // Exports: useVoicePanelDockWatchPromptActions
 
-// Module 19359 (VoicePanelDockPIPWatchPrompt)
+// Module 19471 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import native from "native" /* 4978 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6253 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11634 */;
+import native from "native" /* 5073 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, streamForUser;
@@ -60,20 +60,20 @@ function WatchPrompt(ownerId) {
   let tmp = closure_10();
   const tmp2 = cleanUp;
   let tmp3 = dependencyMap;
-  const context = sharedValue.useContext(cleanUp(11634));
+  const context = sharedValue.useContext(cleanUp(11733));
   const tmp5 = ownerId;
   ({ channelId, guildId } = context);
   let obj = ownerId(504);
   let items = [UserStore];
   let items1 = [ownerId];
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(ownerId), items1);
-  let obj2 = cleanUp(6681);
+  let obj2 = cleanUp(6776);
   const name = obj2.useName(guildId, channelId, stateFromStores);
-  const context1 = sharedValue.useContext(cleanUp(11634));
+  const context1 = sharedValue.useContext(cleanUp(11733));
   const channelId2 = context1.channelId;
   const guildId2 = context1.guildId;
-  const tmp9 = cleanUp(6253);
-  const analyticsLocations = tmp9(cleanUp(6254).STREAM_WATCH_PROMPT_PIP).analyticsLocations;
+  const tmp9 = cleanUp(6348);
+  const analyticsLocations = tmp9(cleanUp(6349).STREAM_WATCH_PROMPT_PIP).analyticsLocations;
   const items2 = [ownerId, guildId2, isConnecting, analyticsLocations];
   const items3 = [guildId2, channelId2, isConnecting, streamKey, analyticsLocations];
   const callback = sharedValue.useCallback(() => {
@@ -101,7 +101,7 @@ function WatchPrompt(ownerId) {
     const obj4 = ownerId(isConnecting[13]);
     const result = obj4.dismissVoicePanelDockWatchPrompt();
   }, items3);
-  const tmp12 = transitionState !== ownerId(4978).TransitionStates.YEETED;
+  const tmp12 = transitionState !== ownerId(5073).TransitionStates.YEETED;
   dependencyMap = tmp12;
   let obj3 = ownerId(1653);
   sharedValue = obj3.useSharedValue(1);
@@ -165,10 +165,10 @@ function WatchPrompt(ownerId) {
   }
   items8 = [, , ];
   const obj6 = { style: tmp.border, pointerEvents: "none" };
-  items8[0] = closure_7(tmp2(6929), obj6);
+  items8[0] = closure_7(tmp2(7024), obj6);
   const items9 = [tmp.content, ];
   let hidden = null;
-  const tmp2Result = tmp2(6929);
+  const tmp2Result = tmp2(7024);
   if (tmp18) {
     hidden = tmp.hidden;
   }
@@ -176,33 +176,33 @@ function WatchPrompt(ownerId) {
   items9[1] = hidden;
   const obj8 = { type: obj9, variant: "critical" };
   obj9 = { text: intl.string(tmp5(1112).t.dI3q4h) };
-  const Badge = tmp5(6033).Badge;
+  const Badge = tmp5(6128).Badge;
   intl = tmp5(1112).intl;
   items10 = [closure_7(Badge, obj8), , ];
   let tmp20Result = null != stateFromStores;
   if (tmp20Result) {
-    const obj10 = { variant: "body-sm/medium", color: "text-default", lineClamp: 1, style: tmp.label, children: intl2.formatToPlainString(tmp2(3378)["g9x8/M"], obj11) };
-    const Text = tmp5(5508).Text;
+    const obj10 = { variant: "body-sm/medium", color: "text-default", lineClamp: 1, style: tmp.label, children: intl2.formatToPlainString(tmp2(3430)["g9x8/M"], obj11) };
+    const Text = tmp5(5603).Text;
     intl2 = tmp5(1112).intl;
     obj11 = { username: name };
     tmp20Result = tmp20(Text, obj10);
   }
   items10[1] = tmp20Result;
   const obj12 = { size: "sm", variant: "primary-overlay", text: intl3.string(tmp5(1112).t.I6JG46), onPress: callback, loading: isConnecting };
-  const Button = tmp5(5515).Button;
+  const Button = tmp5(5610).Button;
   intl3 = tmp5(1112).intl;
   items10[2] = closure_7(Button, obj12);
   items8[1] = closure_8(tmp2Result, obj7);
   const items11 = [tmp.dismissButton, ];
   let hidden1 = null;
-  const tmp2Result2 = tmp2(6929);
+  const tmp2Result2 = tmp2(7024);
   if (tmp18) {
     hidden1 = tmp.hidden;
   }
   items11[1] = hidden1;
   const obj13 = { style: items11, children: closure_7(IconButton, obj14) };
-  obj14 = { size: "sm", variant: "tertiary", icon: closure_7(tmp5(7121).XSmallIcon, { size: "sm" }), onPress: callback1, accessibilityLabel: intl4.string(tmp5(1112).t.WAI6xu) };
-  IconButton = tmp5(7811).IconButton;
+  obj14 = { size: "sm", variant: "tertiary", icon: closure_7(tmp5(7216).XSmallIcon, { size: "sm" }), onPress: callback1, accessibilityLabel: intl4.string(tmp5(1112).t.WAI6xu) };
+  IconButton = tmp5(7910).IconButton;
   intl4 = tmp5(1112).intl;
   items8[2] = closure_7(tmp2Result2, obj13);
   return closure_8(View, obj5);

@@ -1,11 +1,11 @@
-// Module ID: 6718
-// Function ID: 6719
+// Module ID: 6813
+// Function ID: 6814
 // Name: WebAuthnErrorUtils
-// Dependencies: [5666, 2]
+// Dependencies: [5761, 2]
 // Exports: isUnknownPasskeyError
 
-// Module 6718 (WebAuthnErrorUtils)
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5666 */;
+// Module 6813 (WebAuthnErrorUtils)
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5761 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/webauthn/WebAuthnErrorUtils.tsx");

@@ -1,34 +1,34 @@
-// Module ID: 8772
-// Function ID: 8773
+// Module ID: 8871
+// Function ID: 8872
 // Name: ICYMIStore
-// Dependencies: [32, 8614, 5534, 1245, 5649, 502, 4766, 8773, 4788, 6265, 4849, 6806, 4859, 6041, 1386, 8775, 8777, 1071, 8620, 1088, 8779, 8780, 8781, 8776, 8789, 8449, 8447, 8616, 8792, 8793, 8778, 8786, 8794, 6267, 504, 572, 2]
+// Dependencies: [32, 8713, 5629, 1245, 5744, 502, 4861, 8872, 4883, 6360, 4944, 6901, 4954, 6136, 1386, 8874, 8876, 1071, 8719, 1088, 8878, 8879, 8880, 8875, 8888, 8548, 8546, 8715, 8891, 8892, 8877, 8885, 8893, 6362, 504, 572, 2]
 
-// Module 8772 (ICYMIStore)
+// Module 8871 (ICYMIStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8620 */;
-import ICYMITypes from "ICYMITypes" /* 8776 */;
-import DiscoverRequestState from "DiscoverRequestState" /* 8779 */;
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 8780 */;
-import ICYMIUtils from "ICYMIUtils" /* 8781 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8719 */;
+import ICYMITypes from "ICYMITypes" /* 8875 */;
+import DiscoverRequestState from "DiscoverRequestState" /* 8878 */;
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 8879 */;
+import ICYMIUtils from "ICYMIUtils" /* 8880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8614 */;
-import ExperimentStore from "ExperimentStore" /* 5534 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8713 */;
+import ExperimentStore from "ExperimentStore" /* 5629 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 5649 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 5744 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildAffinitiesStore from "GuildAffinitiesStore" /* 8773 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import MessageStore from "MessageStore" /* 6265 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6041 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildAffinitiesStore from "GuildAffinitiesStore" /* 8872 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import MessageStore from "MessageStore" /* 6360 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import ReadStateStore from "ReadStateStore" /* 6901 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6136 */;
 import UserStore from "UserStore" /* 1386 */;
-import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8775 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8777 */;
+import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8874 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8876 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let closure_24;
 let closure_25;
 let metroImportAll;
 let metroImportDefault;
-const f93765 = (id) => id.id;
+const f94107 = (id) => id.id;
 function handleDiscoverSessionReset() {
   const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
   discoverRequestGuard.resetSession();
@@ -72,9 +72,9 @@ function handleDiscoverGateChange() {
       isAuthenticatedResult = authSessionIdHash === tmp17.authSessionIdHash;
     }
     if (!isAuthenticatedResult) {
-      const discoverRequestGuard2 = tmp(8779).discoverRequestGuard;
+      const discoverRequestGuard2 = tmp(8878).discoverRequestGuard;
       discoverRequestGuard2.resetSession();
-      closure_60 = tmp(8779).EMPTY_DISCOVER_SNAPSHOT;
+      closure_60 = tmp(8878).EMPTY_DISCOVER_SNAPSHOT;
       identity = null;
       flag = true;
     }
@@ -84,14 +84,14 @@ function handleDiscoverGateChange() {
   if (tmp13) {
     let matchesResult = null == identity;
     if (!matchesResult) {
-      const discoverRequestGuard3 = tmp(8779).discoverRequestGuard;
+      const discoverRequestGuard3 = tmp(8878).discoverRequestGuard;
       matchesResult = discoverRequestGuard3.matches(identity);
     }
     tmp13 = matchesResult;
   }
   let flag2 = !tmp13;
   if (flag2) {
-    closure_60 = tmp(8779).EMPTY_DISCOVER_SNAPSHOT;
+    closure_60 = tmp(8878).EMPTY_DISCOVER_SNAPSHOT;
     identity = null;
     flag2 = true;
   }
@@ -127,7 +127,7 @@ function filterStaffGuild(data) {
     obj = ICYMIUtils;
     const tmp2 = require;
     if (obj.isGuildItem(data)) {
-      if (data.data.guild_id === tmp2(8776).GAME_CONTENT_GUILD_ID) {
+      if (data.data.guild_id === tmp2(8875).GAME_CONTENT_GUILD_ID) {
         return true;
       } else {
         const guild = GuildStore.getGuild(data.data.guild_id);
@@ -495,9 +495,9 @@ function getNewUnreadItems(arr10, channelId) {
       if (!set.has(tmp2.id)) {
         let tmp7 = null == ICYMIUnreadStateStore.getReadTimestamp(tmp2.id);
         if (tmp7) {
-          let tmp9 = tmp2.type !== tmp3(8776).ICYMIItemTypes.MESSAGE;
+          let tmp9 = tmp2.type !== tmp3(8875).ICYMIItemTypes.MESSAGE;
           if (!tmp9) {
-            let tmp3Result = tmp3(8778);
+            let tmp3Result = tmp3(8877);
             let result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
             if (result) {
               result = tmp2.data.channel_id !== channelId;
@@ -517,7 +517,7 @@ function getNewUnreadItems(arr10, channelId) {
 }
 function maybeFilterChannelItems(channelId, score) {
   let closure_30;
-  const f93780 = (data) => {
+  const f94122 = (data) => {
     obj = channelId(dependencyMap[22]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -530,17 +530,17 @@ function maybeFilterChannelItems(channelId, score) {
   const numberToCustomScoreResult = obj.numberToCustomScore(score);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = channelId;
-    dehydratedItems = dehydratedItems.filter(f93780);
-    closure_48 = closure_48.filter(f93780);
-    closure_49 = closure_49.filter(f93780);
-    closure_33 = closure_33.filter(f93780);
+    dehydratedItems = dehydratedItems.filter(f94122);
+    closure_48 = closure_48.filter(f94122);
+    closure_49 = closure_49.filter(f94122);
+    closure_33 = closure_33.filter(f94122);
     _require = channelId;
-    closure_34 = closure_34.filter(f93780);
+    closure_34 = closure_34.filter(f94122);
   }
 }
 function maybeFilterGuildItems(guildId, guildScore) {
   let closure_30;
-  const f93781 = (data) => {
+  const f94123 = (data) => {
     obj = guildId(dependencyMap[22]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -553,12 +553,12 @@ function maybeFilterGuildItems(guildId, guildScore) {
   const numberToCustomScoreResult = obj.numberToCustomScore(guildScore);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = guildId;
-    dehydratedItems = dehydratedItems.filter(f93781);
-    closure_48 = closure_48.filter(f93781);
-    closure_49 = closure_49.filter(f93781);
-    closure_33 = closure_33.filter(f93781);
+    dehydratedItems = dehydratedItems.filter(f94123);
+    closure_48 = closure_48.filter(f94123);
+    closure_49 = closure_49.filter(f94123);
+    closure_33 = closure_33.filter(f94123);
     _require = guildId;
-    closure_34 = closure_34.filter(f93781);
+    closure_34 = closure_34.filter(f94123);
   }
 }
 function handleReaction(colors) {
@@ -658,7 +658,7 @@ function handleAck(channelId) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        new Set(items1.map(f93765));
+        new Set(items1.map(f94107));
         const substr = arr9.slice(0, 20);
         flag = substr.filter((id) => set1.has(id.id)).length >= 3;
       }
@@ -1016,7 +1016,7 @@ obj = {
       }
       if (isAuthenticatedResult) {
         if (clearSnapshot) {
-          closure_60 = tmp(8779).EMPTY_DISCOVER_SNAPSHOT;
+          closure_60 = tmp(8878).EMPTY_DISCOVER_SNAPSHOT;
           identity = null;
         }
         const obj2 = { type: "commit", enabled: waterwheelsDiscoverEnabled };
@@ -1169,12 +1169,12 @@ obj = {
     }
     let tmp2 = set;
     let tmp3 = dependencyMap;
-    set = new Set(set(8776).SUPPORTED_ITEM_TYPES);
+    set = new Set(set(8875).SUPPORTED_ITEM_TYPES);
     const self = this;
     map = new Map();
-    obj = set(8780);
+    obj = set(8879);
     if (obj.getWaterwheelsDiscoverEnabled(icymi_store)) {
-      let tmp2Result = tmp2(8789);
+      let tmp2Result = tmp2(8888);
       discoverSnapshot = tmp2Result.selectDiscoverSnapshot(items, (arg0, arg1) => map.set(arg0, arg1));
     } else {
       discoverSnapshot = [];
@@ -1246,7 +1246,7 @@ obj = {
     if (null != discoverRequest) {
       let tmp6 = closure_60;
       const obj2 = { type: "success", items: discoverSnapshot, loadId };
-      const tmp2Result4 = tmp2(8779);
+      const tmp2Result4 = tmp2(8878);
       closure_60 = tmp2Result4.reduceDiscoverSnapshot(closure_60, obj2);
     }
     let tmp7 = finalizeNewDehydratedItemsContent();
@@ -1324,16 +1324,16 @@ obj = {
             if (c41 > 0) {
               let c46 = null;
             }
-            const tmp21 = arr12.length > tmp2(8776).MIN_ITEMS_FOR_NEW_PILL;
+            const tmp21 = arr12.length > tmp2(8875).MIN_ITEMS_FOR_NEW_PILL;
             if (!isReloading) {
               hasNewContent = tmp21;
             }
             if (tmp21) {
               const items6 = [];
-              const hydrateItems = tmp2(8781).hydrateItems;
-              const tmp2Result5 = tmp2(8781);
+              const hydrateItems = tmp2(8880).hydrateItems;
+              const tmp2Result5 = tmp2(8880);
               HermesBuiltin.arraySpread(items6, arr11, HermesBuiltin.arraySpread(items6, arr10, 0));
-              hydrateItems(items6, 0, tmp2(8776).ICYMI_PAGE_SIZE, closure_37);
+              hydrateItems(items6, 0, tmp2(8875).ICYMI_PAGE_SIZE, closure_37);
               if (arr10.length + arr11.length === 0) {
                 c57 = true;
               }
@@ -1341,8 +1341,8 @@ obj = {
           }
           const obj4 = { newTrackingProps: obj3, hasNewContent, unreadFeedItems: arr10, readFeedItems: arr11, homeSessionId: str2 };
           str2 = "background_load";
-          const trackFeedLoaded = tmp2(8793).trackFeedLoaded;
-          tmp2(8793);
+          const trackFeedLoaded = tmp2(8892).trackFeedLoaded;
+          tmp2(8892);
           if (focused) {
             str2 = "foreground_load";
           }
@@ -1360,7 +1360,7 @@ obj = {
           const _Set = Set;
           const self2 = this;
           const self3 = this;
-          const set1 = new Set(arr10.map(f93765));
+          const set1 = new Set(arr10.map(f94107));
           const substr = arr14.slice(0, 20);
           flag2 = substr.filter((id) => set1.has(id.id)).length >= 3;
         }

@@ -1,13 +1,13 @@
-// Module ID: 19512
-// Function ID: 19513
+// Module ID: 19624
+// Function ID: 19625
 // Name: ConjureProjectReconnectManager
-// Dependencies: [6808, 7349, 6843, 7541, 2]
+// Dependencies: [6903, 7444, 6938, 7636, 2]
 
-// Module 19512 (ConjureProjectReconnectManager)
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6843 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7541 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+// Module 19624 (ConjureProjectReconnectManager)
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6938 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 function handlePostConnectionOpen() {

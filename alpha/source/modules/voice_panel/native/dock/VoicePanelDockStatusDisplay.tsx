@@ -1,23 +1,23 @@
-// Module ID: 18048
-// Function ID: 18049
+// Module ID: 18160
+// Function ID: 18161
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 6814, 4766, 5565, 18049, 11658, 21, 5508, 4917, 1653, 1112, 3378, 5127, 5518, 18050, 4978, 1706, 11634, 504, 2]
+// Dependencies: [32, 19, 17, 6909, 4861, 5660, 18161, 11757, 21, 5603, 5012, 1653, 1112, 3430, 5222, 5613, 18162, 5073, 1706, 11733, 504, 2]
 
-// Module 18048 (VoicePanelDockStatusDisplay)
+// Module 18160 (VoicePanelDockStatusDisplay)
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import spring_spring from "spring/spring" /* 5518 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import spring_spring from "spring/spring" /* 5613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CallStore from "CallStore" /* 6814 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import VoiceStateStore from "VoiceStateStore" /* 5565 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18049 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11658 */;
+import CallStore from "CallStore" /* 6909 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import VoiceStateStore from "VoiceStateStore" /* 5660 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18161 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11757 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -627,7 +627,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let tmp12;
   let tmp17;
   let userId;
-  const f113630 = () => {
+  const f114012 = () => {
     let items;
     if ("channel" === obj5.kind) {
       items = [];
@@ -706,8 +706,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp13 = first(obj.useState(() => ({ status: obj5, enter: null })), 2);
   first = tmp13[0];
-  [arr7, tmp17] = first(obj.useState(f113630), 2);
-  first(obj.useState(f113630), 2);
+  [arr7, tmp17] = first(obj.useState(f114012), 2);
+  first(obj.useState(f114012), 2);
   const tmp18 = first(obj.useState(() => {
     map = new Map();
     return map;

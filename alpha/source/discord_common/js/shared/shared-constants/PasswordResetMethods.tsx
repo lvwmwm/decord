@@ -1,9 +1,9 @@
-// Module ID: 7184
-// Function ID: 7185
+// Module ID: 7279
+// Function ID: 7280
 // Name: PasswordResetMethods
 // Dependencies: [2]
 
-// Module 7184 (PasswordResetMethods)
+// Module 7279 (PasswordResetMethods)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/PasswordResetMethods.tsx");

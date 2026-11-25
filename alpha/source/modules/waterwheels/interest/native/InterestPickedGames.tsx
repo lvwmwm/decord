@@ -1,18 +1,18 @@
-// Module ID: 19656
-// Function ID: 19657
+// Module ID: 19758
+// Function ID: 19759
 // Name: InterestPickedGames
-// Dependencies: [19, 17, 21, 575, 4917, 14393, 11419, 1112, 2643, 9279, 5604, 5508, 2]
+// Dependencies: [19, 17, 21, 575, 5012, 14516, 11518, 1112, 2654, 9378, 5699, 5603, 2]
 // Exports: default
 
-// Module 19656 (InterestPickedGames)
+// Module 19758 (InterestPickedGames)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import useGameRecordsDefault from "useGameRecords" /* 14393 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import useGameRecordsDefault from "useGameRecords" /* 14516 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -84,7 +84,7 @@ export default function InterestPickedGames(gameIds) {
     const intl = require("intl").intl;
     formatToPlainString = intl.formatToPlainString;
     obj3 = { games: mapped.join(", ") };
-    z5uqej = tmp2(2643).z5uqej;
+    z5uqej = tmp2(2654).z5uqej;
     mapped = arr.map((name) => name.name);
     return <closure_4 style={tmp.container}>{null}</closure_4>;
   }

@@ -1,19 +1,19 @@
-// Module ID: 12186
-// Function ID: 12187
+// Module ID: 12285
+// Function ID: 12286
 // Name: GameOrganizationInviteSummary
-// Dependencies: [19, 21, 4917, 5989, 575, 11977, 5508, 1112, 2639, 7029, 2]
+// Dependencies: [19, 21, 5012, 6084, 575, 12076, 5603, 1112, 2650, 7124, 2]
 // Exports: default
 
-// Module 12186 (GameOrganizationInviteSummary)
+// Module 12285 (GameOrganizationInviteSummary)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef2639 from "module_2639" /* 2639 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import Stack_Stack from "Stack/Stack" /* 5989 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 11977 */;
+import _modDef2650 from "module_2650" /* 2650 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import Stack_Stack from "Stack/Stack" /* 6084 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12076 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -51,7 +51,7 @@ export default function GameOrganizationInviteSummary(invite) {
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
   let str = displayNoun;
-  const prop = _modDef2639["jKi+kc"];
+  const prop = _modDef2650["jKi+kc"];
   if (displayNoun == null) {
     str = "other";
   }
@@ -59,10 +59,10 @@ export default function GameOrganizationInviteSummary(invite) {
   const obj4 = { variant: "body-md/medium", color: "text-subtle", children: formatToPlainString(prop, { displayNoun: str }) };
   items1[0] = _false(Text, obj4);
   const obj5 = { variant: "heading-xl/semibold", color: "text-subtle", style: tmp.text, children: format(gptW7Y, obj6) };
-  const Heading = tmp3(5508).Heading;
+  const Heading = tmp3(5603).Heading;
   const intl2 = tmp3(1112).intl;
   format = intl2.format;
-  gptW7Y = tmp5(2639).gptW7Y;
+  gptW7Y = tmp5(2650).gptW7Y;
   if (displayNoun == null) {
     displayNoun = "other";
   }
@@ -79,12 +79,12 @@ export default function GameOrganizationInviteSummary(invite) {
   let tmp2Result = null != memberCount && null != maxMembers;
   if (tmp2Result) {
     const obj7 = { spacing: nativeDefault.space.PX_4, direction: "horizontal", align: "center", justify: "center", children: items2 };
-    const Stack3 = tmp3(5989).Stack;
+    const Stack3 = tmp3(6084).Stack;
     const obj8 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const GroupIcon = tmp3(7029).GroupIcon;
+    const GroupIcon = tmp3(7124).GroupIcon;
     items2 = [_false(GroupIcon, obj8), ];
-    const obj9 = { variant: "heading-sm/medium", color: "text-subtle", children: intl3.formatToPlainString(_modDef2639.VuENGl, obj10) };
-    const Text2 = tmp3(5508).Text;
+    const obj9 = { variant: "heading-sm/medium", color: "text-subtle", children: intl3.formatToPlainString(_modDef2650.VuENGl, obj10) };
+    const Text2 = tmp3(5603).Text;
     intl3 = tmp3(1112).intl;
     obj10 = { count: memberCount, max: maxMembers };
     items2[1] = _false(Text2, obj9);

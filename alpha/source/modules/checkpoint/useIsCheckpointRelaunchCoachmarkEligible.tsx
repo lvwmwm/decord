@@ -1,14 +1,14 @@
-// Module ID: 17982
-// Function ID: 17983
+// Module ID: 18094
+// Function ID: 18095
 // Name: useIsCheckpointRelaunchCoachmarkEligible
-// Dependencies: [32, 19, 6643, 4949, 4750, 17983, 2]
+// Dependencies: [32, 19, 6738, 5044, 4845, 18095, 2]
 // Exports: useIsCheckpointRelaunchCoachmarkEligible
 
-// Module 17982 (useIsCheckpointRelaunchCoachmarkEligible)
-import dismissible_content from "dismissible_content" /* 4750 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4949 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6643 */;
-import useIsCheckpointOpen from "useIsCheckpointOpen" /* 17983 */;
+// Module 18094 (useIsCheckpointRelaunchCoachmarkEligible)
+import dismissible_content from "dismissible_content" /* 4845 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6738 */;
+import useIsCheckpointOpen from "useIsCheckpointOpen" /* 18095 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

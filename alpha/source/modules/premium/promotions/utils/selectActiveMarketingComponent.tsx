@@ -1,11 +1,11 @@
-// Module ID: 9081
-// Function ID: 9082
+// Module ID: 9180
+// Function ID: 9181
 // Name: selectActiveMarketingComponent
-// Dependencies: [9082, 2]
+// Dependencies: [9181, 2]
 // Exports: default
 
-// Module 9081 (selectActiveMarketingComponent)
-import filterActiveMarketingComponentsUnprioritizedDefault from "filterActiveMarketingComponentsUnprioritized" /* 9082 */;
+// Module 9180 (selectActiveMarketingComponent)
+import filterActiveMarketingComponentsUnprioritizedDefault from "filterActiveMarketingComponentsUnprioritized" /* 9181 */;
 import size from "module_2" /* 2 */;
 
 function comparePriorityDescending(promotionPriority, promotionPriority2) {

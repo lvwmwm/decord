@@ -1,18 +1,18 @@
-// Module ID: 19163
-// Function ID: 19164
+// Module ID: 19275
+// Function ID: 19276
 // Name: LaunchPadPullTab
-// Dependencies: [19, 17, 11811, 12744, 21, 4917, 575, 18276, 1653, 12820, 19164, 5518, 1112, 19084, 14912, 2]
+// Dependencies: [19, 17, 11910, 12908, 21, 5012, 575, 18388, 1653, 12944, 19276, 5613, 1112, 19196, 15034, 2]
 
-// Module 19163 (LaunchPadPullTab)
+// Module 19275 (LaunchPadPullTab)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChatInputConstants from "ChatInputConstants" /* 12744 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12820 */;
-import useLaunchPadPullTabMinimizedDefault from "useLaunchPadPullTabMinimized" /* 19164 */;
+import ChatInputConstants from "ChatInputConstants" /* 12908 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12944 */;
+import useLaunchPadPullTabMinimizedDefault from "useLaunchPadPullTabMinimized" /* 19276 */;
 import react from "react" /* 19 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11811 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11910 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let LAUNCH_PAD_PULL_TAB_BORDER_RADIUS;
@@ -28,8 +28,8 @@ let size;
 let tmp2;
 let unpackModuleId;
 const _modDef1653 = tmp2(1653);
-const useAnimatedKeyboardHeightDefault = tmp2(18276);
-const showLaunchPadDefault = tmp2(19084);
+const useAnimatedKeyboardHeightDefault = tmp2(18388);
+const showLaunchPadDefault = tmp2(19196);
 const Pressable = react_native.Pressable;
 ({ LAUNCH_PAD_MARGIN: closure_4, LAUNCH_PAD_PULL_TAB_BORDER_RADIUS } = LaunchPadConstants);
 const LAUNCH_PAD_PULL_TAB_HEIGHT = LaunchPadConstants.LAUNCH_PAD_PULL_TAB_HEIGHT;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function LaunchPadPullTab(gestureState) {
   items[10] = closure_4;
   items[11] = backgroundColor;
   items[12] = backgroundColor2;
-  items[13] = updaters(5518).withSpring;
+  items[13] = updaters(5613).withSpring;
   items[14] = closure_11;
   let c0;
   let c1;
@@ -190,7 +190,7 @@ const memoResult = react.memo(function LaunchPadPullTab(gestureState) {
   LaunchPadPullTabTsx1.__initData = tmp28;
   const items4 = [closure_16, launchPadSharedState, updaters, sharedValue, launchPadPullTabState, CHAT_INPUT_HEIGHT, tmp8, , , ];
   const useAnimatedReaction = tmp6Result2.useAnimatedReaction;
-  items4[7] = updaters(12820).getWindowDimensionsWorklet;
+  items4[7] = updaters(12944).getWindowDimensionsWorklet;
   items4[8] = LAUNCH_PAD_PULL_TAB_HEIGHT;
   items4[9] = closure_10;
   c0 = undefined;

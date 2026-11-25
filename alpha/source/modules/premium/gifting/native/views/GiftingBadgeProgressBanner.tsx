@@ -1,19 +1,19 @@
-// Module ID: 11030
-// Function ID: 11031
+// Module ID: 11129
+// Function ID: 11130
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 575, 4917, 6253, 5990, 1263, 11013, 5508, 1112, 2920, 2]
+// Dependencies: [19, 17, 21, 575, 5012, 6348, 6085, 1263, 11112, 5603, 1112, 2942, 2]
 // Exports: default
 
-// Module 11030 (GiftingBadgeProgressBanner)
+// Module 11129 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import _modDef2920 from "module_2920" /* 2920 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 5990 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6253 */;
+import _modDef2942 from "module_2942" /* 2942 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6085 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -61,11 +61,11 @@ export default function GiftingBadgeProgressBanner(arg0) {
   const tmp8 = hasOwnProperty;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: PX_40 };
-    tmp10Result = tmp10(tmp2(11013), obj4);
+    tmp10Result = tmp10(tmp2(11112), obj4);
   }
   items2 = [React3(View, obj3), ];
-  const obj5 = { variant: "body-md/semibold", children: intl.formatToPlainString(_modDef2920["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };
-  const Text = tmp6(5508).Text;
+  const obj5 = { variant: "body-md/semibold", children: intl.formatToPlainString(_modDef2942["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };
+  const Text = tmp6(5603).Text;
   intl = tmp6(1112).intl;
   items2[1] = React3(Text, obj5);
   return tmp8(View, obj2);

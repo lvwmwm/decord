@@ -1,26 +1,26 @@
-// Module ID: 9219
-// Function ID: 9220
+// Module ID: 9318
+// Function ID: 9319
 // Name: PremiumBillingInfo
-// Dependencies: [32, 19, 17, 1071, 21, 4917, 575, 2185, 5508, 1112, 2173, 9215, 6253, 6254, 9220, 9221, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5012, 575, 2185, 5603, 1112, 2173, 9314, 6348, 6349, 9319, 9320, 2]
 // Exports: default
 
-// Module 9219 (PremiumBillingInfo)
+// Module 9318 (PremiumBillingInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2185 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6253 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
-import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 9215 */;
-import BillingInformation from "BillingInformation" /* 9220 */;
-import PremiumManagementUtils from "PremiumManagementUtils" /* 9221 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
+import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 9314 */;
+import BillingInformation from "BillingInformation" /* 9319 */;
+import PremiumManagementUtils from "PremiumManagementUtils" /* 9320 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
@@ -42,7 +42,7 @@ class GoogleManagementLink {
       tmp3 = null;
       if (subscription.isPurchasedViaGoogle) {
         const obj2 = { style, variant: "body-sm/medium", color: "text-link", children: format(prop, obj3) };
-        const Text = tmp(5508).Text;
+        const Text = tmp(5603).Text;
         const intl = tmp(1112).intl;
         format = intl.format;
         obj3 = { onClick: tmpResult.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "SUBSCRIPTION_MANAGEMENT") };
@@ -84,12 +84,12 @@ export default function PremiumBillingInfo(subscription) {
     const externalManagementMessage = tmp2Result.getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
     const obj5 = { style, children: items };
     const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "body-sm/medium", color: "text-default", children: intl.string(intl3.t.Sb6wI1) };
-    const Text = tmp2(5508).Text;
+    const Text = tmp2(5603).Text;
     intl = tmp2(1112).intl;
     items = [metroRequire(Text, obj6), , ];
     const obj7 = { style: tmp.billingContainer, children: items1 };
     const obj8 = { variant: "body-md/semibold", children: intl2.string(intl3.t.KXQjfc) };
-    const Text2 = tmp2(5508).Text;
+    const Text2 = tmp2(5603).Text;
     intl2 = tmp2(1112).intl;
     items1 = [metroRequire(Text2, obj8), , ];
     const obj9 = { style: tmp.billingRenewalInfo, variant: "body-sm/medium", children: tmp7 };
@@ -103,7 +103,7 @@ export default function PremiumBillingInfo(subscription) {
     const tmp12 = metroRequire;
     if (null != externalManagementMessage) {
       const obj11 = { style: tmp.externalSubtext, variant: "body-sm/medium", children: externalManagementMessage };
-      tmp12Result = tmp12(tmp2(5508).Text, obj11);
+      tmp12Result = tmp12(tmp2(5603).Text, obj11);
     }
     items[2] = tmp12Result;
     return tmp10(tmp11, obj5);

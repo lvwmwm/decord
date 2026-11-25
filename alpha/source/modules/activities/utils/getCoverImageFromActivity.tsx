@@ -1,12 +1,12 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 14485
+// Function ID: 14486
 // Name: getCoverImageFromActivity
-// Dependencies: [2144, 7525, 2]
+// Dependencies: [2144, 7620, 2]
 // Exports: default
 
-// Module 14362 (getCoverImageFromActivity)
+// Module 14485 (getCoverImageFromActivity)
 import Constants from "Constants" /* 2144 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7525 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7620 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = Constants.ACTIVITY_INVITE_COVER_IMAGE_SIZE;

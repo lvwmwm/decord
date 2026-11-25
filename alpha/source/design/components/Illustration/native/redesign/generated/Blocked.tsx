@@ -1,14 +1,14 @@
-// Module ID: 16133
-// Function ID: 16134
+// Module ID: 16254
+// Function ID: 16255
 // Name: Blocked
-// Dependencies: [19, 21, 8425, 16134, 16135, 16136, 4924, 5604, 2]
+// Dependencies: [19, 21, 8524, 16255, 16256, 16257, 5019, 5699, 2]
 // Exports: Blocked, getBlockedSource, useBlockedSource
 
-// Module 16133 (Blocked)
+// Module 16254 (Blocked)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 4924 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import _mod8425 from "module_8425" /* 8425 */;
+import shared from "shared" /* 5019 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import _mod8524 from "module_8524" /* 8524 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/Blocked.tsx");
 
 export function getBlockedSource(theme) {
-  const obj = _mod8425;
+  const obj = _mod8524;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useBlockedSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8425;
+  const obj2 = _mod8524;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function Blocked(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8425;
+  const obj2 = _mod8524;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

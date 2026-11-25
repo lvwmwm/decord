@@ -1,16 +1,16 @@
-// Module ID: 17915
-// Function ID: 17916
+// Module ID: 18027
+// Function ID: 18028
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 4917, 1186, 5481, 575, 17916, 17917, 17921, 2]
+// Dependencies: [32, 19, 21, 5012, 1186, 5576, 575, 18028, 18029, 18033, 2]
 // Exports: default
 
-// Module 17915 (useGuildsBarBottomRightBadge)
+// Module 18027 (useGuildsBarBottomRightBadge)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 17916 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18028 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;

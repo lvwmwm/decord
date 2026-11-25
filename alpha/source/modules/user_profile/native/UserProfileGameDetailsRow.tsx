@@ -1,21 +1,21 @@
-// Module ID: 14408
-// Function ID: 14409
+// Module ID: 14531
+// Function ID: 14532
 // Name: UserProfileGameDetailsRow
-// Dependencies: [19, 17, 21, 4917, 14383, 575, 5523, 14409, 5508, 14410, 14414, 2152, 14416, 14418, 14413, 2]
+// Dependencies: [19, 17, 21, 5012, 14506, 575, 5618, 14532, 5603, 14533, 14537, 2152, 14539, 14541, 14536, 2]
 
-// Module 14408 (UserProfileGameDetailsRow)
+// Module 14531 (UserProfileGameDetailsRow)
 import nativeDefault from "native" /* 575 */;
 import StringUtils from "StringUtils" /* 2152 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import useFontScale from "useFontScale" /* 5523 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 14383 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14409 */;
-import useWidgetGamePressDefault from "useWidgetGamePress" /* 14413 */;
-import UserProfileWidgetGameTagsDefault from "UserProfileWidgetGameTags" /* 14418 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import useFontScale from "useFontScale" /* 5618 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 14506 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14532 */;
+import useWidgetGamePressDefault from "useWidgetGamePress" /* 14536 */;
+import UserProfileWidgetGameTagsDefault from "UserProfileWidgetGameTags" /* 14541 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -79,7 +79,7 @@ let closure_8 = react.memo(function UserProfileGameDetailsRowContent(coverWidth)
     num = num3;
   }
   let num4 = 2;
-  const Text = tmp6(5508).Text;
+  const Text = tmp6(5603).Text;
   if (compact) {
     num4 = 1;
   }
@@ -89,7 +89,7 @@ let closure_8 = react.memo(function UserProfileGameDetailsRowContent(coverWidth)
   const tmp13 = null != editableCommentWidgetType && tmp2.editingCommentRow;
   items[1] = tmp13;
   const obj2 = { game, coverWidth, disableInteraction, onGamePress };
-  const UserProfileWidgetGameCoverContent = tmp6(14410).UserProfileWidgetGameCoverContent;
+  const UserProfileWidgetGameCoverContent = tmp6(14533).UserProfileWidgetGameCoverContent;
   const merged1 = Object.assign(merged);
   items1 = [hasOwnProperty(UserProfileWidgetGameCoverContent, obj2), ];
   let tmp9Result3 = tmp9Result;
@@ -109,7 +109,7 @@ let closure_8 = react.memo(function UserProfileGameDetailsRowContent(coverWidth)
   if (null != editableCommentWidgetType) {
     const obj5 = { widgetType: editableCommentWidgetType, gameId: null, comment: null };
     ({ gameId: obj8.gameId, comment: obj8.comment } = game);
-    tmp9Result4 = tmp9(tmp3(14414), obj5);
+    tmp9Result4 = tmp9(tmp3(14537), obj5);
   } else {
     let trimmed;
     const isNullOrEmpty = StringUtils.isNullOrEmpty;
@@ -122,7 +122,7 @@ let closure_8 = react.memo(function UserProfileGameDetailsRowContent(coverWidth)
     if (tmp9Result4) {
       const obj6 = { style: tmp2.comment, children: items3 };
       const obj7 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-      const QuoteIcon = tmp6(14416).QuoteIcon;
+      const QuoteIcon = tmp6(14539).QuoteIcon;
       items3 = [hasOwnProperty(QuoteIcon, obj7), ];
       const obj9 = { variant: "body-sm/normal", color: "text-muted", lineClamp: num, style: tmp2.commentText, children: game.comment };
       items3[1] = hasOwnProperty(Text_Text.Text, obj9);

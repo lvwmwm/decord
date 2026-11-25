@@ -1,10 +1,10 @@
-// Module ID: 7678
-// Function ID: 7679
+// Module ID: 7777
+// Function ID: 7778
 // Name: FederatedSocialUtils
 // Dependencies: [1071, 2]
 // Exports: getExampleHandle, validateHandle
 
-// Module 7678 (FederatedSocialUtils)
+// Module 7777 (FederatedSocialUtils)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 8578
-// Function ID: 8579
+// Module ID: 8677
+// Function ID: 8678
 // Name: useGame
-// Dependencies: [5, 19, 2140, 1071, 504, 1088, 8579, 2]
+// Dependencies: [5, 19, 2140, 1071, 504, 1088, 8678, 2]
 // Exports: useGames
 
-// Module 8578 (useGame)
+// Module 8677 (useGame)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

@@ -1,25 +1,25 @@
-// Module ID: 13709
-// Function ID: 13710
+// Module ID: 13832
+// Function ID: 13833
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1386, 9000, 1071, 21, 4917, 575, 504, 13710, 38, 1254, 11206, 13711, 1112, 4926, 13712, 6253, 6254, 1255, 9001, 5131, 13713, 2119, 5598, 7381, 5508, 5604, 13718, 13719, 11207, 6921, 5515, 5145, 8419, 11209, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 9099, 1071, 21, 5012, 575, 504, 13833, 38, 1254, 11305, 13834, 1112, 5021, 13835, 6348, 6349, 1255, 9100, 5226, 13836, 2119, 5693, 7476, 5603, 5699, 13841, 13842, 11306, 7016, 5610, 5240, 8518, 11308, 2]
 // Exports: default
 
-// Module 13709 (ReferralProgramShareActionSheet)
+// Module 13832 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl8 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4926 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 11206 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13712 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5021 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 11305 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13835 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 9000 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9099 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_2, trialCreationResult, v3;
@@ -202,7 +202,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           if (0 === c3) {

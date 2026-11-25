@@ -1,12 +1,12 @@
-// Module ID: 15177
-// Function ID: 15178
+// Module ID: 15299
+// Function ID: 15300
 // Name: GuildBadgeDog
-// Dependencies: [19, 21, 15154, 7813, 2]
+// Dependencies: [19, 21, 15276, 7912, 2]
 // Exports: GuildBadgeDog
 
-// Module 15177 (GuildBadgeDog)
-import inlineStyles from "inlineStyles" /* 7813 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15154 */;
+// Module 15299 (GuildBadgeDog)
+import inlineStyles from "inlineStyles" /* 7912 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15276 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

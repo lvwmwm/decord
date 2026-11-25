@@ -1,22 +1,22 @@
-// Module ID: 11276
-// Function ID: 11277
+// Module ID: 11375
+// Function ID: 11376
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1071, 21, 4917, 7995, 6926, 1412, 5604, 11277, 6026, 1112, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 5012, 8094, 7021, 1412, 5699, 11376, 6121, 1112, 2]
 // Exports: default
 
-// Module 11276 (IconUploader)
+// Module 11375 (IconUploader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import Pressables from "Pressables" /* 6026 */;
-import GuildIcon from "GuildIcon" /* 6926 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11277 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import Pressables from "Pressables" /* 6121 */;
+import GuildIcon from "GuildIcon" /* 7021 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11376 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -71,7 +71,7 @@ export default function IconUploader(disabled) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ export default function IconUploader(disabled) {
             closure_129_2.current = false;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp21) {
           c3 = 3;
           throw tmp21;

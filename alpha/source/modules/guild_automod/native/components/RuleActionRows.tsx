@@ -1,20 +1,20 @@
-// Module ID: 19787
-// Function ID: 19788
+// Module ID: 19889
+// Function ID: 19890
 // Name: RuleActionRows
-// Dependencies: [19, 4766, 4847, 12307, 21, 4917, 575, 19764, 11615, 1112, 5131, 19788, 2119, 19789, 19767, 6018, 5989, 5508, 7056, 19761, 6014, 2]
+// Dependencies: [19, 4861, 4942, 12473, 21, 5012, 575, 19866, 11714, 1112, 5226, 19890, 2119, 19891, 19869, 6113, 6084, 5603, 7151, 19863, 6109, 2]
 // Exports: default
 
-// Module 19787 (RuleActionRows)
+// Module 19889 (RuleActionRows)
 import nativeDefault from "native" /* 575 */;
-import GuildChannelStore from "GuildChannelStore" /* 4847 */;
-import TableRow2 from "TableRow" /* 6018 */;
-import FormCheckbox from "FormCheckbox" /* 7056 */;
-import Constants from "Constants" /* 12307 */;
-import getActionInfo from "getActionInfo" /* 19767 */;
+import GuildChannelStore from "GuildChannelStore" /* 4942 */;
+import TableRow2 from "TableRow" /* 6113 */;
+import FormCheckbox from "FormCheckbox" /* 7151 */;
+import Constants from "Constants" /* 12473 */;
+import getActionInfo from "getActionInfo" /* 19869 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -46,17 +46,17 @@ function RuleActionRow(onPress) {
     let Yl1D84;
     const icon = actionInfo.icon;
     const obj2 = { icon: metroRequire(TableRow2.TableRow.Icon, obj3), label: actionInfo.headerText, subLabel: metroRequire(Stack, obj4), trailing: metroRequire(FormCheckbox.FormCheckbox, obj7), accessibilityValue: obj8, disabled: !actionInfo.isEditable, onPress, arrow: true };
-    const TableRow = tmp3(6018).TableRow;
+    const TableRow = tmp3(6113).TableRow;
     obj3 = { IconComponent: icon };
     obj4 = { spacing: nativeDefault.space.PX_4, style: tmp.subLabel, children: metroImportDefault(Text, obj6) };
-    Stack = tmp3(5989).Stack;
+    Stack = tmp3(6084).Stack;
     const items = [actionInfo.descriptionText, ];
     let tmp9Result = null != actionInfo.helperText;
-    Text = tmp3(5508).Text;
+    Text = tmp3(5603).Text;
     if (tmp9Result) {
       const obj5 = { variant: "body-xs/medium", color: "text-subtle", children: items1 };
       items1 = [" ", actionInfo.helperText];
-      tmp9Result = tmp9(tmp3(5508).Text, obj5);
+      tmp9Result = tmp9(tmp3(5603).Text, obj5);
     }
     obj6 = { variant: "body-xs/medium", color: "text-subtle", children: items };
     items[1] = tmp9Result;
@@ -86,7 +86,7 @@ export default function RuleActionRows(rule) {
   const onChangeRule = rule.onChangeRule;
   let tmp = rule;
   let tmp2 = dependencyMap;
-  let obj = rule(19761);
+  let obj = rule(19863);
   const availableActionTypes = obj.getAvailableActionTypes(rule.triggerType);
   let tmp3 = null;
   if (0 !== availableActionTypes.length) {
@@ -221,7 +221,7 @@ export default function RuleActionRows(rule) {
           return closure_1_6(RuleActionRow, obj, actionType);
         })
     };
-    const TableRowGroup = tmp(6014).TableRowGroup;
+    const TableRowGroup = tmp(6109).TableRowGroup;
     intl = tmp(1112).intl;
     tmp3 = closure_6(TableRowGroup, obj2);
   }

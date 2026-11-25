@@ -1,22 +1,22 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10233
+// Function ID: 10234
 // Name: GlobalStatusContent
-// Dependencies: [19, 17, 4766, 4788, 5725, 5727, 10127, 1071, 21, 4917, 575, 10128, 504, 9900, 10125, 4924, 5126, 9901, 5093, 9873, 1378, 1628, 9877, 10135, 2]
+// Dependencies: [19, 17, 4861, 4883, 5820, 5822, 10226, 1071, 21, 5012, 575, 10227, 504, 9999, 10224, 5019, 5221, 10000, 5188, 9972, 1378, 1628, 9976, 10234, 2]
 // Exports: default
 
-// Module 10134 (GlobalStatusContent)
+// Module 10233 (GlobalStatusContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import ConnectivityConstants from "ConnectivityConstants" /* 10127 */;
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10128 */;
+import ConnectivityConstants from "ConnectivityConstants" /* 10226 */;
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10227 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
-import SessionsStore from "SessionsStore" /* 5727 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import SessionsStore from "SessionsStore" /* 5822 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,12 +28,12 @@ let obj3;
 let tmp2;
 let unpackModuleId;
 const useSafeAreaInsetsDefault = tmp2(1628);
-const useThemeDefault = tmp2(5126);
-const ChannelCallModalDefault = tmp2(9873);
-const StatusBarDefault = tmp2(9877);
-const useCanSpeakInChannelDefault = tmp2(9900);
-const useIsInvitedToSpeakDefault = tmp2(10125);
-const GlobalStageChannelStatusDefault = tmp2(10135);
+const useThemeDefault = tmp2(5221);
+const ChannelCallModalDefault = tmp2(9972);
+const StatusBarDefault = tmp2(9976);
+const useCanSpeakInChannelDefault = tmp2(9999);
+const useIsInvitedToSpeakDefault = tmp2(10224);
+const GlobalStageChannelStatusDefault = tmp2(10234);
 const View = react_native.View;
 const RTC_PANEL_HEIGHT = ConnectivityConstants.RTC_PANEL_HEIGHT;
 const RTCConnectionStates = Constants.RTCConnectionStates;

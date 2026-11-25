@@ -1,19 +1,19 @@
-// Module ID: 5907
-// Function ID: 5908
+// Module ID: 6002
+// Function ID: 6003
 // Name: SpatialAudioSessionStats
-// Dependencies: [32, 5, 1245, 502, 2131, 5871, 5872, 5729, 5908, 5873, 5701, 2]
+// Dependencies: [32, 5, 1245, 502, 2131, 5966, 5967, 5824, 6003, 5968, 5796, 2]
 
-// Module 5907 (SpatialAudioSessionStats)
-import SpatialAudioConstants from "SpatialAudioConstants" /* 5872 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5873 */;
-import classifyOutputDevice from "classifyOutputDevice" /* 5908 */;
+// Module 6002 (SpatialAudioSessionStats)
+import SpatialAudioConstants from "SpatialAudioConstants" /* 5967 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5968 */;
+import classifyOutputDevice from "classifyOutputDevice" /* 6003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 5871 */;
-import Constants from "Constants" /* 5729 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 5966 */;
+import Constants from "Constants" /* 5824 */;
 import size from "module_2" /* 2 */;
 
 const classifyOutputDeviceDefault = classifyOutputDevice;
@@ -47,7 +47,7 @@ obj = function _readNativeStats() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -181,7 +181,7 @@ class SpatialAudioSessionStats {
     let TimeStampProducer = arg0;
     if (arg0 === undefined) {
       let tmp = obj;
-      TimeStampProducer = obj(5701).TimeStampProducer;
+      TimeStampProducer = obj(5796).TimeStampProducer;
     }
     obj = Object.create(new.target.prototype);
     let obj2 = SpatialAudioForVoiceExperimentDefault;
@@ -207,7 +207,7 @@ class SpatialAudioSessionStats {
     obj.lastOverrideSource = constants.NONE;
     obj.anyOverride = false;
     new Map();
-    obj.outputClassAtStart = obj(5908).OutputDeviceClass.UNKNOWN;
+    obj.outputClassAtStart = obj(6003).OutputDeviceClass.UNKNOWN;
     obj.numOutputClassChanges = 0;
     obj.numStatusChanges = 0;
     obj.numMonoTransitions = 0;

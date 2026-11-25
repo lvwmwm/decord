@@ -1,14 +1,14 @@
-// Module ID: 19604
-// Function ID: 19605
+// Module ID: 19706
+// Function ID: 19707
 // Name: LoginRequiredActionManager
-// Dependencies: [1386, 4759, 1071, 7349, 7968, 6713, 2]
+// Dependencies: [1386, 4854, 1071, 7444, 8067, 6808, 2]
 
-// Module 19604 (LoginRequiredActionManager)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6713 */;
+// Module 19706 (LoginRequiredActionManager)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6808 */;
 import UserStore from "UserStore" /* 1386 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4759 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4854 */;
 import Constants from "Constants" /* 1071 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -40,7 +40,7 @@ class LoginRequiredActionManager extends AutomaticLifecycleManager {
                     }
                   }
           };
-          const obj2 = currentUser(7968);
+          const obj2 = currentUser(8067);
           obj2.openUserSettings(obj3);
         }
       }

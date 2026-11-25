@@ -1,14 +1,14 @@
-// Module ID: 7036
-// Function ID: 7037
+// Module ID: 7131
+// Function ID: 7132
 // Name: StageLockIcon
-// Dependencies: [19, 21, 575, 5603, 6985, 2]
+// Dependencies: [19, 21, 575, 5698, 7080, 2]
 // Exports: StageLockIcon
 
-// Module 7036 (StageLockIcon)
+// Module 7131 (StageLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 6985 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 7080 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 16106
+// Function ID: 16107
 // Name: UserProfileFloatingUpsell
-// Dependencies: [32, 19, 7431, 21, 4917, 15973, 1628, 2]
+// Dependencies: [32, 19, 7526, 21, 5012, 16094, 1628, 2]
 // Exports: default, useFloatingUpsellHeight
 
-// Module 15985 (UserProfileFloatingUpsell)
+// Module 16106 (UserProfileFloatingUpsell)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15973 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 16094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7431 */;
-import createStyles from "createStyles" /* 4917 */;
+import Constants from "Constants" /* 7526 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const UserProfileUpsellCardV2Default = UserProfileUpsellCardV2;

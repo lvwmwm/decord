@@ -1,23 +1,23 @@
-// Module ID: 11154
-// Function ID: 11155
+// Module ID: 11253
+// Function ID: 11254
 // Name: ExpressiveNitroUpsell
-// Dependencies: [19, 17, 1073, 21, 4917, 575, 671, 5481, 5131, 11155, 2119, 6254, 1112, 5508, 5472, 1378, 9496, 7432, 2]
+// Dependencies: [19, 17, 1073, 21, 5012, 575, 671, 5576, 5226, 11254, 2119, 6349, 1112, 5603, 5567, 1378, 9595, 7527, 2]
 // Exports: default
 
-// Module 11154 (ExpressiveNitroUpsell)
+// Module 11253 (ExpressiveNitroUpsell)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import intl3 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import LinearGradientDefault from "LinearGradient" /* 5472 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import LinearGradientDefault from "LinearGradient" /* 5567 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -60,12 +60,12 @@ export default function _default(onTrackPress) {
   importDefault = tmp;
   let tmp5 = onTrackPress;
   const tmp4 = _modDef671;
-  let obj = onTrackPress(5481);
+  let obj = onTrackPress(5576);
   const tmp4Result = tmp4(obj.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START));
   const alphaResult = tmp4Result.alpha(0.4);
   const hexResult = alphaResult.hex();
   const tmp7 = _modDef671;
-  const obj4 = onTrackPress(5481);
+  const obj4 = onTrackPress(5576);
   let items = [onTrackPress];
   const tmp7Result = tmp7(obj4.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_END));
   const items1 = [tmp.strikedPrice];
@@ -82,7 +82,7 @@ export default function _default(onTrackPress) {
     ActionSheetActionCreatorsDefault;
     const obj = { analyticsLocations: items, title: intl.string(intl3.t.XcOMLu), description: intl2.string(intl3.t.JhE8nA) };
     items = [];
-    const tmp5 = asyncRequire(11155, dependencyMap.paths);
+    const tmp5 = asyncRequire(11254, dependencyMap.paths);
     items[0] = AnalyticsLocationDefault.COLLECTIBLES_SHOP_DETAILS_MODAL;
     intl = intl3.intl;
     intl2 = intl3.intl;
@@ -101,7 +101,7 @@ export default function _default(onTrackPress) {
   items2 = [hexResult, hexResult1];
   items3 = [closure_7(LinearGradientDefault, obj3), , ];
   const items4 = [tmp.nitroUpsellSavings, ];
-  const Text = onTrackPress(5508).Text;
+  const Text = onTrackPress(5603).Text;
   let androidTextPadding;
   const obj9 = onTrackPress(1378);
   const tmp13 = closure_4;
@@ -114,9 +114,9 @@ export default function _default(onTrackPress) {
   items3[1] = closure_7(Text, obj5);
   const obj6 = { style: tmp.nitroUpsellCta, children: items5 };
   const obj7 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm", style: tmp.nitroUpsellIcon };
-  const NitroWheelIcon = tmp5(9496).NitroWheelIcon;
+  const NitroWheelIcon = tmp5(9595).NitroWheelIcon;
   items5 = [closure_7(NitroWheelIcon, obj7), , ];
-  const Text2 = tmp5(5508).Text;
+  const Text2 = tmp5(5603).Text;
   let androidTextPadding1;
   const tmp16 = closure_5;
   const tmp5Result = tmp5(1378);
@@ -127,7 +127,7 @@ export default function _default(onTrackPress) {
   intl2 = tmp5(1112).intl;
   items5[1] = closure_7(Text2, obj8);
   const obj10 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "xs", style: tmp.nitroUpsellChevron };
-  const ChevronSmallRightIcon = tmp5(7432).ChevronSmallRightIcon;
+  const ChevronSmallRightIcon = tmp5(7527).ChevronSmallRightIcon;
   items5[2] = closure_7(ChevronSmallRightIcon, obj10);
   items3[2] = closure_8(tmp16, obj6);
   return closure_8(tmp13, obj2);

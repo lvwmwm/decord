@@ -1,9 +1,9 @@
-// Module ID: 5552
-// Function ID: 5553
+// Module ID: 5647
+// Function ID: 5648
 // Name: ContentRatingPEGIRating
 // Dependencies: [2]
 
-// Module 5552 (ContentRatingPEGIRating)
+// Module 5647 (ContentRatingPEGIRating)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 3, 4, 5]), IS_ADULT_ONLY: new Set([]) };

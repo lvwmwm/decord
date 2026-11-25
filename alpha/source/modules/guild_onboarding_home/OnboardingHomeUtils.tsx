@@ -1,20 +1,20 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7549
+// Function ID: 7550
 // Name: OnboardingHomeUtils
-// Dependencies: [4822, 4766, 4788, 7455, 1071, 4773, 7456, 7457, 563, 4791, 7458, 7335, 2]
+// Dependencies: [4917, 4861, 4883, 7550, 1071, 4868, 7551, 7552, 563, 4886, 7553, 7430, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 7454 (OnboardingHomeUtils)
-import ChannelConstants from "ChannelConstants" /* 4773 */;
-import FavoritesUtils from "FavoritesUtils" /* 4791 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7335 */;
-import GuildOnboardingHomeTypes from "GuildOnboardingHomeTypes" /* 7456 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7457 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7458 */;
-import ImpersonateStore from "ImpersonateStore" /* 4822 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7455 */;
+// Module 7549 (OnboardingHomeUtils)
+import ChannelConstants from "ChannelConstants" /* 4868 */;
+import FavoritesUtils from "FavoritesUtils" /* 4886 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7430 */;
+import GuildOnboardingHomeTypes from "GuildOnboardingHomeTypes" /* 7551 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7552 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 7553 */;
+import ImpersonateStore from "ImpersonateStore" /* 4917 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7550 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ export function useCanSeeOnboardingHome(guild_id) {
           let tmp11;
           if (ImpersonateStore.isFullServerPreview(guild_id)) {
             const id = guild.id;
-            const tmp25Result = tmp25(7456);
+            const tmp25Result = tmp25(7551);
             const isSettingsEmptyResult = tmp25Result.isSettingsEmpty(GuildOnboardingHomeSettingsStore.getSettings(id));
             let hasItem1 = !isSettingsEmptyResult;
             const enabled = GuildOnboardingHomeSettingsStore.getEnabled(id);

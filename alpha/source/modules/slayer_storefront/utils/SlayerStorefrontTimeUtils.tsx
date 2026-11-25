@@ -1,15 +1,15 @@
-// Module ID: 11018
-// Function ID: 11019
+// Module ID: 11117
+// Function ID: 11118
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 2168, 1088, 8993, 1112, 4092, 2]
+// Dependencies: [32, 19, 2168, 1088, 9092, 1112, 4144, 2]
 // Exports: useIsLimitedOfferExpired, useTickingFormattedLimitedOfferTimeLeft
 
-// Module 11018 (SlayerStorefrontTimeUtils)
+// Module 11117 (SlayerStorefrontTimeUtils)
 import DurationsDefault from "Durations" /* 1088 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef2168 from "module_2168" /* 2168 */;
-import _modDef4092 from "module_4092" /* 4092 */;
-import useIntervalDefault from "useInterval" /* 8993 */;
+import _modDef4144 from "module_4144" /* 4144 */;
+import useIntervalDefault from "useInterval" /* 9092 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -57,13 +57,13 @@ function formatLimitedOfferTimeLeft(arg0) {
     } else if (hours > 0) {
       const intl2 = intl4.intl;
       const obj3 = { hours };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef4092.PPaJSw, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef4144.PPaJSw, obj3);
     } else {
       const intl = intl4.intl;
       const formatToPlainString = intl.formatToPlainString;
       const _Math = Math;
       const obj = { minutes: Math.max(tmp13, 1) };
-      const prop = _modDef4092["7Z+aIf"];
+      const prop = _modDef4144["7Z+aIf"];
       formatToPlainStringResult = formatToPlainString(prop, obj);
     }
     return formatToPlainStringResult;

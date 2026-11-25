@@ -1,17 +1,17 @@
-// Module ID: 19574
-// Function ID: 19575
+// Module ID: 19686
+// Function ID: 19687
 // Name: InteractionModalManager
-// Dependencies: [5, 2164, 8102, 1071, 6274, 19575, 2119, 1255, 4792, 1241, 19586, 15810, 5561, 19589, 7349, 2]
+// Dependencies: [5, 2164, 8201, 1071, 6369, 19687, 2119, 1255, 4887, 1241, 19688, 15931, 5656, 19691, 7444, 2]
 
-// Module 19574 (InteractionModalManager)
+// Module 19686 (InteractionModalManager)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15810 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19586 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15931 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19688 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
-import InteractionStore from "InteractionStore" /* 8102 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import InteractionStore from "InteractionStore" /* 8201 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, iFrameModal, interactionDebugContext;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           c4 = 3;

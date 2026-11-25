@@ -1,26 +1,26 @@
-// Module ID: 19827
-// Function ID: 19828
+// Module ID: 19929
+// Function ID: 19930
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 4788, 4849, 1386, 1071, 4745, 21, 1112, 10222, 19828, 9224, 13811, 4917, 575, 1628, 504, 8330, 19830, 7269, 5508, 5672, 5515, 19831, 7947, 19837, 6018, 10537, 1186, 6681, 6030, 19838, 2]
+// Dependencies: [19, 17, 4883, 4944, 1386, 1071, 4840, 21, 1112, 10321, 19930, 9323, 13934, 5012, 575, 1628, 504, 8429, 19932, 7364, 5603, 5767, 5610, 19933, 8046, 19939, 6113, 10636, 1186, 6776, 6125, 19940, 2]
 
-// Module 19827 (GuildSettingsModalStickers)
+// Module 19929 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import StickersConstants from "StickersConstants" /* 4745 */;
-import BoostGemIcon from "BoostGemIcon" /* 9224 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13811 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19828 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19831 */;
-import showGuildSettingsModalStickerInfoActionSheet from "showGuildSettingsModalStickerInfoActionSheet" /* 19838 */;
+import StickersConstants from "StickersConstants" /* 4840 */;
+import BoostGemIcon from "BoostGemIcon" /* 9323 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 13934 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19930 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19933 */;
+import showGuildSettingsModalStickerInfoActionSheet from "showGuildSettingsModalStickerInfoActionSheet" /* 19940 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildBoostingUtils_mod from "GuildBoostingUtils" /* 10222 */;
-import createStyles from "createStyles" /* 4917 */;
+import GuildBoostingUtils_mod from "GuildBoostingUtils" /* 10321 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

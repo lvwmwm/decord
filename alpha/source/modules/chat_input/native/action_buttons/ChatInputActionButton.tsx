@@ -1,19 +1,19 @@
-// Module ID: 13017
-// Function ID: 13018
+// Module ID: 13140
+// Function ID: 13141
 // Name: ChatInputActionButton
-// Dependencies: [19, 17, 21, 4917, 575, 5481, 6026, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5576, 6121, 2]
 
-// Module 13017 (ChatInputActionButton)
+// Module 13140 (ChatInputActionButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5481 */;
+import useToken from "useToken" /* 5576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const Pressables = tmp(6026);
+const Pressables = tmp(6121);
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((height, marginHorizontal) => {

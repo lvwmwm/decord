@@ -1,19 +1,12 @@
 // Module ID: 5294
 // Function ID: 5295
-// Dependencies: [5293, 5239]
-// Exports: useExclusiveGestures
+// Dependencies: []
+// Exports: getNextHandlerTag
 
 // Module 5294
-import ComposedGestureName from "ComposedGestureName" /* 5239 */;
-import _mod5293 from "module_5293" /* 5293 */;
+let closure_0 = 1;
 
-
-export function useExclusiveGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod5293.useComposedGesture;
-  _mod5293;
-  const items1 = [ComposedGestureName.ComposedGestureName.Exclusive, ...items];
-  const applyResult = useComposedGesture.apply(items1);
-  applyResult.type = ComposedGestureName.ComposedGestureName.Exclusive;
-  return applyResult;
+export function getNextHandlerTag() {
+  closure_0 = tmp + 1;
+  return +closure_0;
 }

@@ -1,15 +1,16 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 17057
+// Function ID: 17058
 // Name: EmailNotificationsSetting
-// Dependencies: [9414, 1071, 1112, 16937, 11815, 15681, 16930, 2]
+// Dependencies: [9513, 1071, 1112, 17058, 11914, 15802, 3206, 17051, 2]
 
-// Module 16936 (EmailNotificationsSetting)
+// Module 17057 (EmailNotificationsSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15681 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11815 */;
+import _modDef3206 from "module_3206" /* 3206 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15802 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,6 +48,10 @@ const route = createRoute(obj3);
 SettingBuilders = SettingBuilders_mod;
 const createRoute2 = SettingBuilders.createRoute;
 const obj4 = {
+  useDescription() {
+    const intl = intl2.intl;
+    return intl.string(_modDef3206.k3h440);
+  },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
     const obj = notifications_NotificationSettingsUtils;

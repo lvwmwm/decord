@@ -1,23 +1,23 @@
-// Module ID: 18447
-// Function ID: 18448
+// Module ID: 18559
+// Function ID: 18560
 // Name: ConjurePreviewProfile
-// Dependencies: [19, 17, 5146, 7431, 21, 4917, 575, 5655, 14487, 7389, 7386, 14432, 9346, 1494, 14675, 6036, 9344, 9348, 18448, 4978, 14678, 1112, 9369, 9379, 14791, 5508, 6048, 6045, 14382, 2]
+// Dependencies: [19, 17, 5241, 7526, 21, 5012, 575, 5750, 14610, 7484, 7481, 14555, 9445, 1494, 14797, 6131, 9443, 9447, 18560, 5073, 14800, 1112, 9468, 9478, 14913, 5603, 6143, 6140, 14505, 2]
 // Exports: default
 
-// Module 18447 (ConjurePreviewProfile)
+// Module 18559 (ConjurePreviewProfile)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5146 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 5655 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6045 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6048 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 7386 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7389 */;
-import Constants from "Constants" /* 7431 */;
-import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 14487 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5241 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 5750 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6140 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6143 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 7481 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7484 */;
+import Constants from "Constants" /* 7526 */;
+import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 14610 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -30,7 +30,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const UserProfileApplicationWidgetCardDefault = tmp(14432);
+const UserProfileApplicationWidgetCardDefault = tmp(14555);
 function PreviewApplicationWidgetCard(arg0) {
   let cardStyle;
   let isPreviewApp;
@@ -59,11 +59,11 @@ function PreviewApplicationWidgetCard(arg0) {
               });
               if (!someResult) {
                 let scopes = token.scopes;
-                someResult = scopes.includes(tmp4(5655).OAuth2Scopes.SDK_SOCIAL_LAYER);
+                someResult = scopes.includes(tmp4(5750).OAuth2Scopes.SDK_SOCIAL_LAYER);
               }
               if (!someResult) {
                 const scopes2 = token.scopes;
-                someResult = scopes2.includes(tmp4(5655).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE);
+                someResult = scopes2.includes(tmp4(5750).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE);
               }
               tmp10 = someResult;
             }
@@ -168,7 +168,7 @@ export default function ConjurePreviewProfile(user) {
         const tmpResult = UserProfileGameWidgetTypes;
         if (tmpResult.isGameWidget(widget)) {
           const obj2 = { userId: user.id, widget, cardStyle: items, disableInteraction: true };
-          tmp3 = metroRequire(tmp(14382).WidgetSection, obj2, widget.getUniqueKey());
+          tmp3 = metroRequire(tmp(14505).WidgetSection, obj2, widget.getUniqueKey());
         }
       }
       return tmp3;

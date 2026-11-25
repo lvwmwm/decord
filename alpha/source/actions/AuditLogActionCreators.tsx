@@ -1,19 +1,19 @@
-// Module ID: 19800
-// Function ID: 19801
+// Module ID: 19902
+// Function ID: 19903
 // Name: AuditLogActionCreators
-// Dependencies: [19795, 1071, 1284, 572, 2]
+// Dependencies: [19897, 1071, 1284, 572, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 19800 (AuditLogActionCreators)
+// Module 19902 (AuditLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19795 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19897 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-const f118794 = (body) => {
+const f119146 = (body) => {
   let application_commands;
   let audit_log_entries;
   let auto_moderation_rules;
@@ -25,7 +25,7 @@ const f118794 = (body) => {
   const obj = DispatcherDefault;
   obj.dispatch({ type: "AUDIT_LOG_FETCH_SUCCESS", logs: audit_log_entries, integrations, users, webhooks, guildScheduledEvents: guild_scheduled_events, automodRules: auto_moderation_rules, threads, applicationCommands: application_commands });
 };
-const f118795 = () => {
+const f119147 = () => {
   const obj = DispatcherDefault;
   return obj.dispatch({ type: "AUDIT_LOG_FETCH_FAIL" });
 };
@@ -72,7 +72,7 @@ export function fetchLogs(guildId, userId, targetId, action) {
       obj.dispatch({ type: "AUDIT_LOG_FETCH_START" });
       const obj2 = { userId, action, targetId };
       const promise = makeRequest(guildId, obj2);
-      return promise.then(f118794, f118795);
+      return promise.then(f119146, f119147);
     }
   }
 }
@@ -130,7 +130,7 @@ export function filterByAction(action, guildId) {
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
           const obj2 = { userId: null, action, targetId: null };
           const promise = makeRequest(guildId, obj2);
-          nextPromise = promise.then(f118794, f118795);
+          nextPromise = promise.then(f119146, f119147);
         }
       }
       return nextPromise;
@@ -153,7 +153,7 @@ export function filterByUserId(id, guildId) {
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
           const obj2 = { userId: id, action: "Array", targetId: "analyticsLocations" };
           const promise = makeRequest(guildId, obj2);
-          nextPromise = promise.then(f118794, f118795);
+          nextPromise = promise.then(f119146, f119147);
         }
       }
       return nextPromise;
@@ -176,7 +176,7 @@ export function filterByTargetId(targetId, arg1) {
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
           const obj2 = { userId: null, action: "Array", targetId };
           const promise = makeRequest(arg1, obj2);
-          nextPromise = promise.then(f118794, f118795);
+          nextPromise = promise.then(f119146, f119147);
         }
       }
       return nextPromise;

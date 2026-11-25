@@ -1,25 +1,25 @@
-// Module ID: 17944
-// Function ID: 17945
+// Module ID: 18056
+// Function ID: 18057
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 10451, 4951, 4829, 4788, 4849, 1386, 1071, 21, 4917, 504, 4952, 17945, 5481, 575, 1186, 17946, 17916, 17915, 2]
+// Dependencies: [109, 19, 10550, 5046, 4924, 4883, 4944, 1386, 1071, 21, 5012, 504, 5047, 18057, 5576, 575, 1186, 18058, 18028, 18027, 2]
 // Exports: default
 
-// Module 17944 (useGuildsBarBadges)
+// Module 18056 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4952 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 17916 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17946 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5047 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 18028 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18058 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10451 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4951 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10550 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

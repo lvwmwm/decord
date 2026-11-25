@@ -1,25 +1,25 @@
-// Module ID: 10124
-// Function ID: 10125
+// Module ID: 10223
+// Function ID: 10224
 // Name: FocusedControls
-// Dependencies: [19, 17, 1071, 21, 4917, 1186, 1653, 10125, 5127, 7354, 1494, 7813, 10126, 10132, 9875, 5147, 6253, 6254, 10052, 10142, 1255, 2]
+// Dependencies: [19, 17, 1071, 21, 5012, 1186, 1653, 10224, 5222, 7449, 1494, 7912, 10225, 10231, 9974, 5242, 6348, 6349, 10151, 10241, 1255, 2]
 
-// Module 10124 (FocusedControls)
+// Module 10223 (FocusedControls)
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5147 */;
-import inlineStyles from "inlineStyles" /* 7813 */;
-import RevealProvider from "RevealProvider" /* 9875 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10125 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10126 */;
-import GlobalStatusIndicator from "GlobalStatusIndicator" /* 10132 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5242 */;
+import inlineStyles from "inlineStyles" /* 7912 */;
+import RevealProvider from "RevealProvider" /* 9974 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10224 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10225 */;
+import GlobalStatusIndicator from "GlobalStatusIndicator" /* 10231 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, obj1;
@@ -96,7 +96,7 @@ function FocusedControlsHeader(arg0) {
   const View = _modDef1653.View;
   rect = { top: !tmp9, left: isTouchingLeftScreenEdge, right: true, children: metroImportDefault(hasOwnProperty, obj3) };
   obj3 = { style: tmp.headerContainer, children: header };
-  SafeAreaPaddingView = tmp2(7354).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(7449).SafeAreaPaddingView;
   return metroImportDefault(View, obj2);
 }
 function FocusedControlsHeaderGradient() {
@@ -174,7 +174,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   const globalStatusIndicatorState = obj.useGlobalStatusIndicatorState();
   const obj2 = GlobalStatusIndicator;
   const globalStatusIndicatorHeightSharedValue = obj2.useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState);
-  const tmp6 = analyticsLocations(10125)();
+  const tmp6 = analyticsLocations(10224)();
   let reveal = react.useContext(RevealProvider.RevealContext).reveal;
   const obj3 = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
@@ -244,9 +244,9 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   FocusedControlsTsx5.__workletHash = 13660104452358;
   FocusedControlsTsx5.__initData = tmp16;
   const animatedStyle = useAnimatedStyle(FocusedControlsTsx5);
-  const tmp5Result = analyticsLocations(6253);
-  analyticsLocations = tmp5Result(tmp5(6254).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  dependencyMap = tmp5(10052)();
+  const tmp5Result = analyticsLocations(6348);
+  analyticsLocations = tmp5Result(tmp5(6349).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  dependencyMap = tmp5(10151)();
   const View = tmp5(1653).View;
   const tmp23 = closure_8;
   if (containerStyle == null) {
@@ -294,7 +294,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
         reveal,
         children
       };
-      tmp28Result = tmp28(tmp5(10142), obj5);
+      tmp28Result = tmp28(tmp5(10241), obj5);
     }
   }
   items7[2] = tmp28Result;

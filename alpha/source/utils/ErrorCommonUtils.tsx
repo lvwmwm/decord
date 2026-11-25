@@ -1,10 +1,10 @@
-// Module ID: 15398
-// Function ID: 15399
+// Module ID: 15520
+// Function ID: 15521
 // Name: ErrorCommonUtils
 // Dependencies: [572, 509, 2]
 // Exports: getUpdatedOptions
 
-// Module 15398 (ErrorCommonUtils)
+// Module 15520 (ErrorCommonUtils)
 import LastFewActions from "LastFewActions" /* 509 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

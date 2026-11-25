@@ -1,20 +1,20 @@
-// Module ID: 13456
-// Function ID: 13457
+// Module ID: 13579
+// Function ID: 13580
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 4849, 1386, 1071, 21, 4917, 575, 13457, 504, 13458, 6926, 5508, 1112, 4953, 6737, 5515, 2]
+// Dependencies: [19, 17, 4944, 1386, 1071, 21, 5012, 575, 13580, 504, 13581, 7021, 5603, 1112, 5048, 6832, 5610, 2]
 // Exports: default
 
-// Module 13456 (ChatBeginningRowJoinApplication)
+// Module 13579 (ChatBeginningRowJoinApplication)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4953 */;
-import Text_Text from "Text/Text" /* 5508 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
+import Text_Text from "Text/Text" /* 5603 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

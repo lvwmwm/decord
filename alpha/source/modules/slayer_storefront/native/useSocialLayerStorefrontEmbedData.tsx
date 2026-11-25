@@ -1,18 +1,18 @@
-// Module ID: 11840
-// Function ID: 11841
+// Module ID: 11939
+// Function ID: 11940
 // Name: useSocialLayerStorefrontEmbedData
-// Dependencies: [32, 5, 19, 6234, 7464, 11841, 5639, 5660, 11843, 11844, 504, 1254, 558, 6845, 11845, 11842, 2]
+// Dependencies: [32, 5, 19, 6329, 7559, 11940, 5734, 5755, 11942, 11943, 504, 1254, 558, 6940, 11944, 11941, 2]
 // Exports: collectSocialLayerStorefrontEmbedLinks, shouldRefreshSocialLayerStorefrontEmbed, useSocialLayerStorefrontEmbedData
 
-// Module 11840 (useSocialLayerStorefrontEmbedData)
+// Module 11939 (useSocialLayerStorefrontEmbedData)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import CodedLink from "CodedLink" /* 5639 */;
+import CodedLink from "CodedLink" /* 5734 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SKUStore from "SKUStore" /* 6234 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7464 */;
-import SocialLayerStorefrontEmbedStore from "SocialLayerStorefrontEmbedStore" /* 11841 */;
+import SKUStore from "SKUStore" /* 6329 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7559 */;
+import SocialLayerStorefrontEmbedStore from "SocialLayerStorefrontEmbedStore" /* 11940 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -255,11 +255,11 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
   const items7 = [tmp14];
   const tmp9Result = tmp9(tmp10[10]);
   const stateFromStoresArray = tmp9Result.useStateFromStoresArray(items6, () => {
-    const f127594 = (applicationId) => applicationId.applicationId;
+    const f127956 = (applicationId) => applicationId.applicationId;
     const mapped = closure_7.map((item) => stateFromStoresObject1.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f127594))];
-    new Set(found.map(f127594));
+    const items = [...new Set(found.map(f127956))];
+    new Set(found.map(f127956));
     return items;
   }, items7);
   const items8 = [stateFromStoresArray, stateFromStoresObject, stateFromStoresObject1];
@@ -314,7 +314,7 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           let c2;
@@ -351,7 +351,7 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
                 c2 = 0;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp7) {
             if (0 === c2) {

@@ -1,24 +1,24 @@
-// Module ID: 8809
-// Function ID: 8810
+// Module ID: 8908
+// Function ID: 8909
 // Name: UserSearchManager
-// Dependencies: [4770, 1405, 4766, 4829, 4859, 1386, 1071, 4973, 1404, 1268, 7349, 8810, 1254, 1241, 12, 11, 2]
+// Dependencies: [4865, 1405, 4861, 4924, 4954, 1386, 1071, 5068, 1404, 1268, 7444, 8909, 1254, 1241, 12, 11, 2]
 
-// Module 8809 (UserSearchManager)
+// Module 8908 (UserSearchManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import FlagUtilsAll from "FlagUtils" /* 1404 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import UserUtilsDefault from "UserUtils" /* 4973 */;
-import _mod8810 from "module_8810" /* 8810 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import _mod8909 from "module_8909" /* 8909 */;
 import UserRecord from "UserRecord" /* 1405 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7349 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, map, member, mutableAllGuildsAndMembers, participants;
@@ -451,7 +451,7 @@ class UserSearchManager extends AutomaticLifecycleManager {
     applyArgumentsResult._handleConnectionOpenSupplemental = function _handleConnectionOpenSupplemental(guilds) {
       guilds = guilds.guilds;
       const timerId = setTimeout(() => {
-        const f137169 = (activity_instances) => {
+        const f137535 = (activity_instances) => {
           let closure_0 = activity_instances;
           const items = [];
           activity_instances = activity_instances.activity_instances;
@@ -510,8 +510,8 @@ class UserSearchManager extends AutomaticLifecycleManager {
           return items;
         });
         const obj2 = _modDef12;
-        let items = [...obj2.flatMap(guilds, f137169)];
-        obj2.flatMap(guilds, f137169);
+        let items = [...obj2.flatMap(guilds, f137535)];
+        obj2.flatMap(guilds, f137535);
         require.updateUsers(items, "connection_open_supplemental");
       }, 3000);
     };
@@ -914,7 +914,7 @@ class UserSearchManager extends AutomaticLifecycleManager {
       _worker.terminate();
       self._worker = null;
     }
-    self._worker = _mod8810;
+    self._worker = _mod8909;
   }
   updateUsers(arr, action) {
     const _worker = this._worker;

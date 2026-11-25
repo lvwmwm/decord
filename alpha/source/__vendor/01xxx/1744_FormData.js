@@ -137,7 +137,7 @@ let items = [
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {
@@ -178,7 +178,7 @@ let items = [
             }
             if (closure_1 === undefined) {
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c6 = 1;
               c0 = tmp12;
@@ -214,7 +214,7 @@ let items = [
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {
@@ -253,7 +253,7 @@ let items = [
             }
             if (value === undefined) {
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c6 = 1;
               c0 = tmp12;
@@ -285,7 +285,7 @@ let items = [
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {
@@ -324,7 +324,7 @@ let items = [
             }
             if (value === undefined) {
               c8 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c6 = 1;
               c0 = tmp12;

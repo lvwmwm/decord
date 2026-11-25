@@ -1,12 +1,12 @@
-// Module ID: 18999
-// Function ID: 19000
+// Module ID: 19111
+// Function ID: 19112
 // Name: ChannelPermissionOverwriteEditUtils
-// Dependencies: [4854, 1083, 2]
+// Dependencies: [4949, 1083, 2]
 // Exports: applyChannelPermissionOverwriteEdit, getChannelPermissionOverwrite, getChannelPermissionOverwriteValue
 
-// Module 18999 (ChannelPermissionOverwriteEditUtils)
+// Module 19111 (ChannelPermissionOverwriteEditUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
-import PermissionUtils from "PermissionUtils" /* 4854 */;
+import PermissionUtils from "PermissionUtils" /* 4949 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel_permissions/ChannelPermissionOverwriteEditUtils.tsx");

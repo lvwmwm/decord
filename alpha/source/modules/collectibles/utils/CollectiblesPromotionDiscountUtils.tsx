@@ -1,11 +1,11 @@
-// Module ID: 11109
-// Function ID: 11110
+// Module ID: 11208
+// Function ID: 11209
 // Name: CollectiblesPromotionDiscountUtils
-// Dependencies: [7469, 2]
+// Dependencies: [7564, 2]
 // Exports: getPromotionFiatPercentOff
 
-// Module 11109 (CollectiblesPromotionDiscountUtils)
-import StorefrontTypes from "StorefrontTypes" /* 7469 */;
+// Module 11208 (CollectiblesPromotionDiscountUtils)
+import StorefrontTypes from "StorefrontTypes" /* 7564 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionDiscountUtils.tsx");

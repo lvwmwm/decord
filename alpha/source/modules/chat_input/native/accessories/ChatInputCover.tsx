@@ -1,9 +1,9 @@
-// Module ID: 13034
-// Function ID: 13035
+// Module ID: 13157
+// Function ID: 13158
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 5147, 1626, 2]
+// Dependencies: [19, 17, 21, 5242, 1626, 2]
 
-// Module 13034 (ChatInputCover)
+// Module 13157 (ChatInputCover)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

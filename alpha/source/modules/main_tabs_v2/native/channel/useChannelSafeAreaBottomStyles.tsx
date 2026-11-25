@@ -1,20 +1,20 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11765
+// Function ID: 11766
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5723, 4850, 4766, 2131, 5725, 1071, 4773, 4917, 575, 11667, 6955, 5104, 563, 1626, 1378, 5481, 8872, 2]
+// Dependencies: [19, 5818, 4945, 4861, 2131, 5820, 1071, 4868, 5012, 575, 11766, 7050, 5199, 563, 1626, 1378, 5576, 8971, 2]
 // Exports: default
 
-// Module 11666 (useChannelSafeAreaBottomStyles)
+// Module 11765 (useChannelSafeAreaBottomStyles)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import ChannelConstants from "ChannelConstants" /* 4773 */;
+import ChannelConstants from "ChannelConstants" /* 4868 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
-import LurkingStore from "LurkingStore" /* 4850 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
+import LurkingStore from "LurkingStore" /* 4945 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
-import createStyles from "createStyles" /* 4917 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

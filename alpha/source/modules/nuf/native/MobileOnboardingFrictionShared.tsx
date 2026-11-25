@@ -1,9 +1,9 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 17661
+// Function ID: 17662
 // Name: MobileOnboardingFrictionShared
 // Dependencies: [2]
 
-// Module 17550 (MobileOnboardingFrictionShared)
+// Module 17661 (MobileOnboardingFrictionShared)
 import size from "module_2" /* 2 */;
 
 const obj = { EXPLAINER: "explainer", OS_ONLY: "os_only", NONE: "none" };

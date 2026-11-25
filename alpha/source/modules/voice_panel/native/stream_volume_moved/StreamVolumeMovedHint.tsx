@@ -1,17 +1,17 @@
-// Module ID: 19316
-// Function ID: 19317
+// Module ID: 19428
+// Function ID: 19429
 // Name: StreamVolumeMovedHint
-// Dependencies: [19, 17, 14775, 21, 4917, 575, 1653, 1112, 4926, 5508, 2]
+// Dependencies: [19, 17, 14897, 21, 5012, 575, 1653, 1112, 5021, 5603, 2]
 // Exports: default
 
-// Module 19316 (StreamVolumeMovedHint)
+// Module 19428 (StreamVolumeMovedHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4926 */;
-import StreamVolumeMovedStore2 from "StreamVolumeMovedStore" /* 14775 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5021 */;
+import StreamVolumeMovedStore2 from "StreamVolumeMovedStore" /* 14897 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const StreamVolumeMovedStore = StreamVolumeMovedStore2;

@@ -1,16 +1,16 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16452
+// Function ID: 16453
 // Name: useOrbBalanceEntrypoint
-// Dependencies: [5, 19, 16332, 16333, 6254, 5131, 16334, 2119, 9317, 5663, 16345, 16336, 2]
+// Dependencies: [5, 19, 16453, 16454, 6349, 5226, 16455, 2119, 9416, 5758, 16466, 16457, 2]
 // Exports: openBalanceWidgetActionSheet, useIsOrbWalletEntrypointEnabled, useOrbBalanceEntrypoint
 
-// Module 16331 (useOrbBalanceEntrypoint)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 5663 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
-import OrbWalletConstants from "OrbWalletConstants" /* 16332 */;
-import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16333 */;
-import OrbchievementsExperiment from "OrbchievementsExperiment" /* 16345 */;
+// Module 16452 (useOrbBalanceEntrypoint)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 5758 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
+import OrbWalletConstants from "OrbWalletConstants" /* 16453 */;
+import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16454 */;
+import OrbchievementsExperiment from "OrbchievementsExperiment" /* 16466 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ export function openBalanceWidgetActionSheet(isOrbWalletEntrypointEnabled, analy
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -130,7 +130,7 @@ export function useOrbBalanceEntrypoint(location) {
   let obj2 = require("OrbchievementsExperiment");
   let tmp3 = obj2.useIsOrbchievementsMobileEnabled({ location: _location }) && enabled;
   _require = tmp3;
-  const tmpResult = tmp(16336);
+  const tmpResult = tmp(16457);
   const orbChallengeUnreadState = tmpResult.useOrbChallengeUnreadState({ enabled: tmp3 });
   const items = [tmp3];
   ({ hasUnreadUpdate, notificationType } = orbChallengeUnreadState);
@@ -161,7 +161,7 @@ export function useOrbBalanceEntrypoint(location) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

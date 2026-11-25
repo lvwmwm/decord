@@ -1,25 +1,25 @@
-// Module ID: 15702
-// Function ID: 15703
+// Module ID: 15823
+// Function ID: 15824
 // Name: definitions
-// Dependencies: [1082, 10050, 7635, 10076, 1092, 5561, 2172, 5655, 2145, 15703, 15699, 15704, 5651, 5889, 11230, 15705, 2]
+// Dependencies: [1082, 10149, 7734, 10175, 1092, 5656, 2172, 5750, 2145, 15824, 15820, 15825, 5746, 5984, 11329, 15826, 2]
 
-// Module 15702 (definitions)
+// Module 15823 (definitions)
 import Constants2 from "Constants" /* 1082 */;
 import ChannelTypes from "ChannelTypes" /* 1092 */;
 import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2145 */;
 import EntitlementTypes from "EntitlementTypes" /* 2172 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5561 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 5651 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 5655 */;
-import ActivityTypes from "ActivityTypes" /* 5889 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7635 */;
-import ActivityPlatform from "ActivityPlatform" /* 10076 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 11230 */;
-import ThermalStates from "ThermalStates" /* 15699 */;
-import SKUTypes from "SKUTypes" /* 15703 */;
-import discord_common_helpers from "discord_common/helpers" /* 15704 */;
-import contextMenuIcons from "contextMenuIcons" /* 15705 */;
-import Constants from "Constants" /* 10050 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5656 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 5746 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 5750 */;
+import ActivityTypes from "ActivityTypes" /* 5984 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7734 */;
+import ActivityPlatform from "ActivityPlatform" /* 10175 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 11329 */;
+import ThermalStates from "ThermalStates" /* 15820 */;
+import SKUTypes from "SKUTypes" /* 15824 */;
+import discord_common_helpers from "discord_common/helpers" /* 15825 */;
+import contextMenuIcons from "contextMenuIcons" /* 15826 */;
+import Constants from "Constants" /* 10149 */;
 import size_mod from "module_2" /* 2 */;
 
 let ActivityIntent;

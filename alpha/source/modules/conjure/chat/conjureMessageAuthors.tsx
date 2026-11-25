@@ -1,11 +1,11 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11505
+// Function ID: 11506
 // Name: conjureMessageAuthors
-// Dependencies: [5, 19, 1386, 6008, 504, 2]
+// Dependencies: [5, 19, 1386, 6103, 504, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor, useMessageAuthorUser
 
-// Module 11406 (conjureMessageAuthors)
-import UserActionCreatorsAll from "UserActionCreators" /* 6008 */;
+// Module 11505 (conjureMessageAuthors)
+import UserActionCreatorsAll from "UserActionCreators" /* 6103 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -32,7 +32,7 @@ let obj = function _settle() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ let obj = function _settle() {
               c3 = 0;
             }
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp4) {
           if (0 === c3) {

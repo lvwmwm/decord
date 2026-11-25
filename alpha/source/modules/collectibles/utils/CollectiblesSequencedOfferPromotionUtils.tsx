@@ -1,24 +1,24 @@
-// Module ID: 11108
-// Function ID: 11109
+// Module ID: 11207
+// Function ID: 11208
 // Name: CollectiblesSequencedOfferPromotionUtils
-// Dependencies: [10982, 7469, 11109, 6197, 11106, 2]
-// Exports: getActiveSequencedOfferPromotion, getSequencedOfferPromotionForCollectiblesProduct, isOrbsBackPromotion
+// Dependencies: [11081, 7564, 11208, 6292, 11205, 2]
+// Exports: getActiveSequencedOfferPromotion, getNextSequencedOfferPromotion, getSequencedOfferPromotionForCollectiblesProduct, isOrbsBackPromotion
 
-// Module 11108 (CollectiblesSequencedOfferPromotionUtils)
-import CollectiblesUtils from "CollectiblesUtils" /* 6197 */;
-import StorefrontTypes from "StorefrontTypes" /* 7469 */;
-import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 11109 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 10982 */;
+// Module 11207 (CollectiblesSequencedOfferPromotionUtils)
+import CollectiblesUtils from "CollectiblesUtils" /* 6292 */;
+import StorefrontTypes from "StorefrontTypes" /* 7564 */;
+import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 11208 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 11081 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 let tmp3;
-const CollectiblesPromoPriceUtils = tmp3(11106);
+const CollectiblesPromoPriceUtils = tmp3(11205);
 function isSequencedOfferRewardAvailable(rewardStatus) {
   let tmp = null != rewardStatus && null != _false(rewardStatus);
   if (tmp) {
-    let tmp5 = rewardStatus.rewardStatus !== StorefrontTypes.StorefrontPromotionRewardEligibilityStatus.CONSUMED && rewardStatus.rewardStatus !== tmp3(7469).StorefrontPromotionRewardEligibilityStatus.NOT_ELIGIBLE;
+    let tmp5 = rewardStatus.rewardStatus !== StorefrontTypes.StorefrontPromotionRewardEligibilityStatus.CONSUMED && rewardStatus.rewardStatus !== tmp3(7564).StorefrontPromotionRewardEligibilityStatus.NOT_ELIGIBLE;
     if (tmp5) {
       let actionType;
       if (rewardStatus != null) {
@@ -30,7 +30,7 @@ function isSequencedOfferRewardAvailable(rewardStatus) {
           }
         }
       }
-      let tmp7 = actionType === tmp3(7469).StorefrontPromotionActionType.NON_COMMERCE_ORBS_BACK;
+      let tmp7 = actionType === tmp3(7564).StorefrontPromotionActionType.NON_COMMERCE_ORBS_BACK;
       if (!tmp7) {
         const tmp3Result = CollectiblesPromotionDiscountUtils;
         tmp7 = null != tmp3Result.getPromotionFiatPercentOff(rewardStatus);
@@ -102,4 +102,44 @@ export function getActiveSequencedOfferPromotion(arr, arg1, arg2) {
     found = null;
   }
   return found;
+}
+export function getNextSequencedOfferPromotion(arg0, has) {
+  let items = arg0;
+  let tmp = null;
+  if (arg0 == null) {
+    items = [];
+  }
+  for (const item10010 of items) {
+    let tmp2 = item10010;
+    let endsAt = item10010.endsAt;
+    let time;
+    if (endsAt != null) {
+      time = endsAt.getTime();
+    }
+    let tmp5 = null != time;
+    let tmp4 = time;
+    if (tmp5) {
+      tmp5 = null != _false(tmp2);
+    }
+    if (tmp5) {
+      tmp5 = !has.has(tmp2.id);
+    }
+    if (tmp5) {
+      let endsAt1;
+      if (tmp != null) {
+        endsAt1 = tmp.endsAt;
+      }
+      let tmp11 = null == endsAt1;
+      if (!tmp11) {
+        let endsAt2 = tmp.endsAt;
+        tmp11 = tmp4 < endsAt2.getTime();
+      }
+      tmp5 = tmp11;
+    }
+    if (tmp5) {
+      tmp = item10010;
+    }
+    continue;
+  }
+  return tmp;
 }

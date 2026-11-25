@@ -1,39 +1,39 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16622
+// Function ID: 16623
 // Name: QuestCard
-// Dependencies: [5, 32, 19, 17, 1386, 8224, 6745, 1082, 21, 575, 4917, 4925, 4914, 6748, 8232, 16430, 9751, 1501, 1494, 9762, 16502, 7356, 5685, 5690, 8251, 504, 9767, 8248, 8231, 8220, 9772, 5126, 11464, 5481, 16538, 9787, 9716, 9720, 6752, 9789, 5131, 16540, 2119, 13664, 6195, 9785, 1112, 9748, 9849, 16545, 9753, 9769, 9770, 5523, 5998, 8613, 1378, 9324, 5508, 16546, 6019, 16583, 5604, 5472, 1091, 16570, 6931, 16552, 13660, 16584, 5989, 5515, 16587, 7811, 10542, 16571, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 8323, 6840, 1082, 21, 575, 5012, 5020, 5009, 6843, 8331, 16551, 9850, 1501, 1494, 9861, 16623, 7451, 5780, 5785, 8350, 504, 9866, 8347, 8330, 8319, 9871, 5221, 11563, 5576, 16659, 9886, 9815, 9819, 6847, 9888, 5226, 16661, 2119, 13787, 6290, 9884, 1112, 9847, 9948, 16666, 9852, 9868, 9869, 5618, 6093, 8712, 1378, 9423, 5603, 16667, 6114, 16704, 5699, 5567, 1091, 16691, 7026, 16673, 13783, 16705, 6084, 5610, 16708, 7910, 10641, 16692, 2]
 
-// Module 16501 (QuestCard)
+// Module 16622 (QuestCard)
 import nativeDefault from "native" /* 575 */;
 import intl15 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ColorUtils from "ColorUtils" /* 4914 */;
-import design_shared from "design/shared" /* 4925 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5685 */;
-import MetricEvents from "MetricEvents" /* 5690 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8251 */;
-import OrbsIcon from "OrbsIcon" /* 9324 */;
-import captureAdUserAction from "captureAdUserAction" /* 9716 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9720 */;
-import QuestUtils from "QuestUtils" /* 9748 */;
-import AssetUtils from "AssetUtils" /* 9762 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9789 */;
-import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 16538 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 16545 */;
-import VideoQuestModal from "VideoQuestModal" /* 16546 */;
+import ColorUtils from "ColorUtils" /* 5009 */;
+import design_shared from "design/shared" /* 5020 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5780 */;
+import MetricEvents from "MetricEvents" /* 5785 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
+import AdCreativeType from "AdCreativeType" /* 6847 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8350 */;
+import OrbsIcon from "OrbsIcon" /* 9423 */;
+import captureAdUserAction from "captureAdUserAction" /* 9815 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9819 */;
+import QuestUtils from "QuestUtils" /* 9847 */;
+import AssetUtils from "AssetUtils" /* 9861 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9888 */;
+import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 16659 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 16666 */;
+import VideoQuestModal from "VideoQuestModal" /* 16667 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
-import QuestStore_mod from "QuestStore" /* 8224 */;
+import QuestStore_mod from "QuestStore" /* 8323 */;
 import Constants from "Constants" /* 1082 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -184,7 +184,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
   function showQuestBottomSheet() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
-    obj.openLazy(asyncRequire(16540, dependencyMap.paths), "QuestBottomSheet", obj2);
+    obj.openLazy(asyncRequire(16661, dependencyMap.paths), "QuestBottomSheet", obj2);
   }
   ({ onLayout: require, quest } = questContent);
   let QUEST_HOME_MOBILE = questContent.questContent;
@@ -517,7 +517,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                       } else {
                         const obj5 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
                         const obj3 = ActionSheetActionCreatorsDefault;
-                        obj3.openLazy(asyncRequire(16540, dependencyMap.paths), "QuestBottomSheet", obj5);
+                        obj3.openLazy(asyncRequire(16661, dependencyMap.paths), "QuestBottomSheet", obj5);
                       }
                     }
           };
@@ -569,7 +569,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                           obj.captureAdUserAction(obj2);
                           const obj3 = ActionSheetActionCreatorsDefault;
                           const obj4 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
-                          obj3.openLazy(asyncRequire(16540, dependencyMap.paths), "QuestBottomSheet", obj4);
+                          obj3.openLazy(asyncRequire(16661, dependencyMap.paths), "QuestBottomSheet", obj4);
                         }
             };
             intl = tmp3(tmp4[46]).intl;
@@ -607,7 +607,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -656,7 +656,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                   quest(QUEST_HOME_MOBILE[49])(obj);
                 }
                 questContent = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
               const tmp6 = isMobileActivityQuest;
               if (tmp6) {
@@ -749,7 +749,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         obj6 = { width: result };
         items1[1] = unpackModuleId(metroRequire, obj5);
         const obj7 = { children: format2(prop, obj8) };
-        const Text5 = tmp2(5508).Text;
+        const Text5 = tmp2(5603).Text;
         const merged = Object.assign(obj2);
         const intl4 = tmp2(1112).intl;
         format2 = intl4.format;
@@ -769,7 +769,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
     }
     if (closure_16) {
       const obj9 = { children: defaultRewardName };
-      const Text4 = tmp2(5508).Text;
+      const Text4 = tmp2(5603).Text;
       const merged1 = Object.assign(obj2);
       tmp15Result = unpackModuleId(Text4, obj9);
     } else {
@@ -777,7 +777,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
       if (tmp9) {
         const obj10 = { style: authStore.rewardSubtitleRow, children: items2 };
         const obj11 = { children: intl2.format(intl15.t["0IUT4Y"], obj12) };
-        const Text2 = tmp2(5508).Text;
+        const Text2 = tmp2(5603).Text;
         const merged2 = Object.assign(obj2);
         intl2 = tmp2(1112).intl;
         obj12 = {
@@ -793,7 +793,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         obj16 = { width: result };
         items3[1] = unpackModuleId(metroRequire, obj15);
         const obj17 = { children: format(prop1, obj18) };
-        const Text3 = tmp2(5508).Text;
+        const Text3 = tmp2(5603).Text;
         const merged3 = Object.assign(obj2);
         const intl3 = tmp2(1112).intl;
         format = intl3.format;
@@ -809,7 +809,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         tmp15Result = tmp15(tmp16, obj10);
       } else {
         const obj19 = { children: intl.format(intl15.t["0IUT4Y"], obj20) };
-        const Text = tmp2(5508).Text;
+        const Text = tmp2(5603).Text;
         const merged4 = Object.assign(obj2);
         intl = tmp2(1112).intl;
         obj20 = {
@@ -852,7 +852,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -882,7 +882,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c0 = 3;
@@ -1002,7 +1002,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
       onPress: function showQuestEnrollmentBlockedBottomSheet() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { questId: quest.id, questEnrollmentBlockedUntil, sourceQuestContent };
-          obj.openLazy(asyncRequire(16587, dependencyMap.paths), "QuestEnrollmentBlockedBottomSheet", obj2);
+          obj.openLazy(asyncRequire(16708, dependencyMap.paths), "QuestEnrollmentBlockedBottomSheet", obj2);
         },
       variant: "tertiary",
       text: intl12.string(tmp3(tmp4[46]).t.vY9GgG)

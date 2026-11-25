@@ -1,36 +1,36 @@
-// Module ID: 18893
-// Function ID: 18894
+// Module ID: 19005
+// Function ID: 19006
 // Name: AutoAnalytics
-// Dependencies: [19, 6807, 5723, 5649, 4771, 4766, 4829, 4788, 2131, 5855, 5725, 4820, 4950, 7528, 6041, 1386, 1071, 4773, 21, 8029, 8033, 5887, 18894, 18895, 4791, 18896, 1255, 1254, 18897, 504, 5889, 18898, 18899, 2]
+// Dependencies: [19, 6902, 5818, 5744, 4866, 4861, 4924, 4883, 2131, 5950, 5820, 4915, 5045, 7623, 6136, 1386, 1071, 4868, 21, 8128, 8132, 5982, 19006, 19007, 4886, 19008, 1255, 1254, 19009, 504, 5984, 19010, 19011, 2]
 // Exports: default
 
-// Module 18893 (AutoAnalytics)
+// Module 19005 (AutoAnalytics)
 import Fragment from "Fragment" /* 21 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import ChannelConstants from "ChannelConstants" /* 4773 */;
-import FavoritesUtils from "FavoritesUtils" /* 4791 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
-import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8029 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8033 */;
-import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 18894 */;
-import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 18895 */;
-import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 18897 */;
+import ChannelConstants from "ChannelConstants" /* 4868 */;
+import FavoritesUtils from "FavoritesUtils" /* 4886 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 8128 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 8132 */;
+import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 19006 */;
+import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 19007 */;
+import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 19009 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6807 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5649 */;
-import StageInstanceStore from "StageInstanceStore" /* 4771 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5744 */;
+import StageInstanceStore from "StageInstanceStore" /* 4866 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import NetworkStore from "NetworkStore" /* 5855 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7528 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6041 */;
+import NetworkStore from "NetworkStore" /* 5950 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7623 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6136 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ class AutoAnalytics extends PureComponent {
       const tmp18 = require;
       if (tmp) {
         const obj3 = { channel_is_nsfw: tmp2 };
-        const tmp18Result = tmp18(5887);
+        const tmp18Result = tmp18(5982);
         tmp18Result.trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj3);
       }
     }
@@ -89,7 +89,7 @@ class AutoAnalytics extends PureComponent {
       const obj8 = FavoritesUtils;
       const tmp14 = importDefault;
       if (obj8.isFavoritesGuildId(selectedGuildId)) {
-        tmp14(18896)();
+        tmp14(19008)();
       }
     }
   }
@@ -215,7 +215,7 @@ class AutoAnalytics extends PureComponent {
         const VIDEO_INPUT_TOGGLED = constants.VIDEO_INPUT_TOGGLED;
         AnalyticsUtilsDefault;
         const merged5 = Object.assign(self.getGameMetadata());
-        const tmp32Result = tmp32(5887);
+        const tmp32Result = tmp32(5982);
         const merged6 = Object.assign(tmp32Result.collectVoiceAnalyticsMetadata(voiceChannelId));
         track2(VIDEO_INPUT_TOGGLED, obj5);
       }
@@ -239,7 +239,7 @@ class AutoAnalytics extends PureComponent {
       const tmp46 = require;
       if (isTextInVoice) {
         const obj10 = { channel_is_nsfw: isNSFWChannel };
-        const tmp46Result = tmp46(5887);
+        const tmp46Result = tmp46(5982);
         tmp46Result.trackWithMetadata(tmp45.TEXT_IN_VOICE_OPENED, obj10);
       }
     }
@@ -272,7 +272,7 @@ class AutoAnalytics extends PureComponent {
         const obj19 = FavoritesUtils;
         const tmp70 = importDefault;
         if (obj19.isFavoritesGuildId(selectedGuildId)) {
-          tmp70(18896)();
+          tmp70(19008)();
         }
       }
     }

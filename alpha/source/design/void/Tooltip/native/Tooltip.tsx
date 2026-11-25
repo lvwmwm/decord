@@ -1,17 +1,17 @@
-// Module ID: 15416
-// Function ID: 15417
+// Module ID: 15538
+// Function ID: 15539
 // Name: Tooltip
-// Dependencies: [19, 17, 1071, 21, 4917, 575, 1254, 5508, 1186, 2]
+// Dependencies: [19, 17, 1071, 21, 5012, 575, 1254, 5603, 1186, 2]
 // Exports: default
 
-// Module 15416 (Tooltip)
+// Module 15538 (Tooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

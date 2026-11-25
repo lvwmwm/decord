@@ -1,9 +1,9 @@
-// Module ID: 6294
-// Function ID: 6295
+// Module ID: 6389
+// Function ID: 6390
 // Name: CheckpointCardColorPalette
 // Dependencies: [2]
 
-// Module 6294 (CheckpointCardColorPalette)
+// Module 6389 (CheckpointCardColorPalette)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointCardColorPalette.tsx");

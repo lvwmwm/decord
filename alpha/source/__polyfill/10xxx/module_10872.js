@@ -1,41 +1,20 @@
 // Module ID: 10872
 // Function ID: 10873
-// Dependencies: [41, 42, 93, 95, 98, 10758, 10740, 10865]
+// Dependencies: [41, 42, 10839, 10835]
 
 // Module 10872
-import assignSimilarDate from "assignSimilarDate" /* 10740 */;
-import now2 from "now" /* 10758 */;
-import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10865 */;
+import assignSimilarDate2 from "assignSimilarDate" /* 10839 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
 let hasOwnProperty;
 
 let self = this;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
 let self2 = this;
 if (this) {
   self2 = self.__createBinding;
 }
 if (!self2) {
-  let tmp3 = globalThis;
   let _Object = Object;
   self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
     function get() {
@@ -71,21 +50,21 @@ if (!self2) {
     arg0[tmp] = arg1[arg2];
   });
 }
-let tmp4 = self && self.__setModuleDefault;
-if (!tmp4) {
-  let tmp5 = globalThis;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
   const _Object2 = Object;
-  tmp4 = Object.create ? ((arg0, value) => {
+  tmp3 = Object.create ? ((arg0, value) => {
     const obj = { enumerable: true, value };
     Object.defineProperty(arg0, "default", obj);
   }) : ((arg0, arg1) => {
     arg0.default = arg1;
   });
 }
-let closure_8 = tmp4;
+let closure_5 = tmp3;
 let fn = self && self.__importStar;
 if (!fn) {
-  fn = function c(arg0) {
+  fn = function t(arg0) {
     fn = Object.getOwnPropertyNames || ((obj) => {
       const items = [];
       for (const key10005 in obj) {
@@ -120,85 +99,149 @@ if (!fn) {
         }
       }
     }
-    closure_8(obj, __esModule);
+    closure_5(obj, __esModule);
     return obj;
   };
 }
-const now = fn(now2);
-class RUCasualTimeParser {
+const assignSimilarDate = fn(assignSimilarDate2);
+class ForwardDateRefiner {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, RUCasualTimeParser);
-    const obj = _getPrototypeOf(RUCasualTimeParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, ForwardDateRefiner);
   }
 }
-_inherits(RUCasualTimeParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(\u0441\u0435\u0439\u0447\u0430\u0441|\u043F\u0440\u043E\u0448\u043B\u044B\u043C\\s*\u0432\u0435\u0447\u0435\u0440\u043E\u043C|\u043F\u0440\u043E\u0448\u043B\u043E\u0439\\s*\u043D\u043E\u0447\u044C\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439\\s*\u043D\u043E\u0447\u044C\u044E|\u0441\u0435\u0433\u043E\u0434\u043D\u044F\\s*\u043D\u043E\u0447\u044C\u044E|\u044D\u0442\u043E\u0439\\s*\u043D\u043E\u0447\u044C\u044E|\u043D\u043E\u0447\u044C\u044E|\u044D\u0442\u0438\u043C \u0443\u0442\u0440\u043E\u043C|\u0443\u0442\u0440\u043E\u043C|\u0443\u0442\u0440\u0430|\u0432\\s*\u043F\u043E\u043B\u0434\u0435\u043D\u044C|\u0432\u0435\u0447\u0435\u0440\u043E\u043C|\u0432\u0435\u0447\u0435\u0440\u0430|\u0432\\s*\u043F\u043E\u043B\u043D\u043E\u0447\u044C)";
-  }
-};
-let items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const str = arg1[0];
-      const str2 = str.toLowerCase();
-      let parsingComponents = refDate.createParsingComponents();
-      if ("\u0441\u0435\u0439\u0447\u0430\u0441" === str2) {
-        return now.now(refDate.reference);
-      } else {
-        if ("\u0432\u0435\u0447\u0435\u0440\u043E\u043C" !== str2) {
-          if ("\u0432\u0435\u0447\u0435\u0440\u0430" !== str2) {
-            if (!str2.endsWith("\u0443\u0442\u0440\u043E\u043C")) {
-              if (!str2.endsWith("\u0443\u0442\u0440\u0430")) {
-                if (str2.match(/в\s*полдень/)) {
-                  return now.noon(refDate.reference);
-                } else if (str2.match(/прошлой\s*ночью/)) {
-                  return now.lastNight(refDate.reference);
-                } else if (str2.match(/прошлым\s*вечером/)) {
-                  return now.yesterdayEvening(refDate.reference);
+  key: "refine",
+  value: function refine(option, arr) {
+    let self = this;
+    if (option.option.forwardDate) {
+      const item = arr.forEach(function(start) {
+        let end3;
+        let end8;
+        let end9;
+        let start3;
+        let start8;
+        let start9;
+        option = start;
+        const reference = option.reference;
+        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+        start = start.start;
+        if (start.isOnlyTime()) {
+          const start2 = start.start;
+          if (option.reference.instant > start2.date()) {
+            const reference2 = obj.reference;
+            const dateWithAdjustedTimezone1 = reference2.getDateWithAdjustedTimezone();
+            const _Date = Date;
+            self = this;
+            self2 = this;
+            const date = new Date(dateWithAdjustedTimezone1);
+            date.setDate(date.getDate() + 1);
+            assignSimilarDate.implySimilarDate(start.start, date);
+            option.debug(() => {
+              console.log("" + self.constructor.name + " adjusted " + start + " time from the ref date (" + dateWithAdjustedTimezone1 + ") to the following day (" + date + ")");
+            });
+            let end2 = start.end;
+            if (end2) {
+              const end = start.end;
+              end2 = end.isOnlyTime();
+            }
+            if (end2) {
+              assignSimilarDate.implySimilarDate(start.end, date);
+              ({ start: start3, end: end3 } = start);
+              const dateResult = start3.date();
+              if (dateResult > end3.date()) {
+                date.setDate(date.getDate() + 1);
+                assignSimilarDate.implySimilarDate(start.end, date);
+              }
+            }
+          }
+        }
+        const start4 = start.start;
+        let tmp5 = dateWithAdjustedTimezone;
+        if (start4.isOnlyWeekdayComponent()) {
+          const start5 = start.start;
+          tmp5 = dateWithAdjustedTimezone;
+          if (dateWithAdjustedTimezone > start5.date()) {
+            const start11 = start.start;
+            const value = start11.get("weekday");
+            const diff = value - dateWithAdjustedTimezone.getDay();
+            let sum = diff;
+            if (diff <= 0) {
+              sum = diff + 7;
+            }
+            const obj2 = { day: sum };
+            const addDurationResult = option(self[3]).addDuration(dateWithAdjustedTimezone, obj2);
+            option(self[2]).implySimilarDate(start.start, addDurationResult);
+            option.debug(() => {
+              console.log("" + self.constructor.name + " adjusted " + start + " weekday (" + start.start + ")");
+            });
+            tmp5 = addDurationResult;
+            if (start.end) {
+              const end4 = start.end;
+              tmp5 = addDurationResult;
+              if (end4.isOnlyWeekdayComponent()) {
+                const end5 = start.end;
+                const value2 = end5.get("weekday");
+                const diff1 = value2 - addDurationResult.getDay();
+                let sum1 = diff1;
+                if (diff1 <= 0) {
+                  sum1 = diff1 + 7;
+                }
+                const obj3 = { day: sum1 };
+                const addDurationResult1 = option(self[3]).addDuration(addDurationResult, obj3);
+                option(self[2]).implySimilarDate(start.end, addDurationResult1);
+                option.debug(() => {
+                  console.log("" + self.constructor.name + " adjusted " + start + " weekday (" + start.end + ")");
+                });
+                tmp5 = addDurationResult1;
+              }
+            }
+          }
+        }
+        const start6 = start.start;
+        if (start6.isDateWithUnknownYear()) {
+          const start7 = start.start;
+          if (tmp5 > start7.date()) {
+            const start12 = start.start;
+            let num3 = 0;
+            if (tmp5 > start12.date()) {
+              while (true) {
+                ({ start: start8, start: start9 } = start);
+                let implyResult = start8.imply("year", start9.get("year") + 1);
+                let obj6 = option;
+                let debugResult3 = option.debug(() => {
+                  console.log("" + self.constructor.name + " adjusted " + start + " year (" + start.start + ")");
+                });
+                let end6 = start.end;
+                if (end6) {
+                  let end7 = start.end;
+                  end6 = !end7.isCertain("year");
+                }
+                if (end6) {
+                  ({ end: end8, end: end9 } = start);
+                  let implyResult1 = end8.imply("year", end9.get("year") + 1);
+                  let debugResult4 = obj6.debug(() => {
+                    console.log("" + self.constructor.name + " adjusted " + start + " month (" + start.start + ")");
+                  });
+                }
+                let sum2 = num3 + 1;
+                if (sum2 >= 3) {
+                  break;
                 } else {
-                  if (str2.match(/следующей\s*ночью/)) {
-                    let num2 = 2;
-                    if (refDate.getHours() < 22) {
-                      num2 = 1;
-                    }
-                    const _Date = Date;
-                    const self = this;
-                    self2 = this;
-                    const date = new Date(refDate.getTime());
-                    date.setDate(date.getDate() + num2);
-                    assignSimilarDate.assignSimilarDate(parsingComponents, date);
-                    parsingComponents.imply("hour", 0);
+                  let start10 = start.start;
+                  num3 = sum2;
+                  if (tmp5 <= start10.date()) {
+                    break;
                   }
-                  if (str2.match(/в\s*полночь/)) {
-                    parsingComponents = now.midnight(refDate.reference);
-                  }
-                  return parsingComponents;
                 }
               }
             }
-            return now.morning(refDate.reference);
           }
         }
-        return now.evening(refDate.reference);
-      }
+      });
     }
+    return arr;
   }
-];
+};
+let items = [entry];
 
-export default _createClass(RUCasualTimeParser, items);
+export default _createClass(ForwardDateRefiner, items);

@@ -1,15 +1,15 @@
-// Module ID: 5628
-// Function ID: 5629
+// Module ID: 5723
+// Function ID: 5724
 // Name: BrowserManager
-// Dependencies: [5, 17, 1378, 5629, 5630, 560, 1091, 5596, 1254, 2]
+// Dependencies: [5, 17, 1378, 5724, 5725, 560, 1091, 5691, 1254, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
-// Module 5628 (BrowserManager)
+// Module 5723 (BrowserManager)
 import react_native from "react-native" /* 17 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
-import LinkingDefault from "Linking" /* 5596 */;
-import react_native2 from "react-native" /* 5629 */;
-import react_nativeDefault2 from "react-native" /* 5630 */;
+import LinkingDefault from "Linking" /* 5691 */;
+import react_native2 from "react-native" /* 5724 */;
+import react_nativeDefault2 from "react-native" /* 5725 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import module_560 from "module_560" /* 560 */;
@@ -35,7 +35,7 @@ let obj = function _browserManagerClearWebsiteData() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ let obj = function _browserManagerClearWebsiteData() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;

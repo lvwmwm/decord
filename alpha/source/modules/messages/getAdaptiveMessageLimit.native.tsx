@@ -1,10 +1,10 @@
-// Module ID: 8857
-// Function ID: 8858
+// Module ID: 8956
+// Function ID: 8957
 // Name: getAdaptiveMessageLimit
 // Dependencies: [1071, 2]
 // Exports: getMessageLimit, useMessageLimit
 
-// Module 8857 (getAdaptiveMessageLimit)
+// Module 8956 (getAdaptiveMessageLimit)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

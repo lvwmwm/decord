@@ -1,10 +1,10 @@
-// Module ID: 16260
-// Function ID: 16261
+// Module ID: 16381
+// Function ID: 16382
 // Name: FamilyCenterAvatarPair
-// Dependencies: [19, 17, 1386, 21, 4917, 575, 563, 1186, 2]
+// Dependencies: [19, 17, 1386, 21, 5012, 575, 563, 1186, 2]
 // Exports: default
 
-// Module 16260 (FamilyCenterAvatarPair)
+// Module 16381 (FamilyCenterAvatarPair)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1186 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

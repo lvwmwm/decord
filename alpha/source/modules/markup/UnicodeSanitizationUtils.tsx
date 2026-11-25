@@ -1,10 +1,10 @@
-// Module ID: 5662
-// Function ID: 5663
+// Module ID: 5757
+// Function ID: 5758
 // Name: UnicodeSanitizationUtils
 // Dependencies: [1379, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 5662 (UnicodeSanitizationUtils)
+// Module 5757 (UnicodeSanitizationUtils)
 import URLUtilsDefault from "URLUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 

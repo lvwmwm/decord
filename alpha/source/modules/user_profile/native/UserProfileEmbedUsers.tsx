@@ -1,12 +1,12 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 11924
+// Function ID: 11925
 // Name: UserProfileEmbedUsers
-// Dependencies: [32, 5639, 11826, 2]
+// Dependencies: [32, 5734, 11925, 2]
 // Exports: areUserProfileEmbedUsersEqual, collectUserProfileEmbedUserIds, getUserProfileEmbedUsers
 
-// Module 11825 (UserProfileEmbedUsers)
-import CodedLink from "CodedLink" /* 5639 */;
-import UserProfileEmbedCard from "UserProfileEmbedCard" /* 11826 */;
+// Module 11924 (UserProfileEmbedUsers)
+import CodedLink from "CodedLink" /* 5734 */;
+import UserProfileEmbedCard from "UserProfileEmbedCard" /* 11925 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

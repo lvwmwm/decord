@@ -1,15 +1,15 @@
-// Module ID: 17757
-// Function ID: 17758
+// Module ID: 17868
+// Function ID: 17869
 // Name: SearchableDestinationListRow
-// Dependencies: [19, 21, 8806, 8804, 11211, 8183, 11258, 11260, 1254, 2]
+// Dependencies: [19, 21, 8905, 8903, 11310, 8282, 11357, 11359, 1254, 2]
 // Exports: default
 
-// Module 17757 (SearchableDestinationListRow)
+// Module 17868 (SearchableDestinationListRow)
 import Fragment from "Fragment" /* 21 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import UserSearchUtils from "UserSearchUtils" /* 8183 */;
-import formatResults from "formatResults" /* 8804 */;
-import _mod8806 from "module_8806" /* 8806 */;
+import UserSearchUtils from "UserSearchUtils" /* 8282 */;
+import formatResults from "formatResults" /* 8903 */;
+import _mod8905 from "module_8905" /* 8905 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ export default function SearchableDestinationListRow(result) {
   const onPressDestination = result.onPressDestination;
   const merged = Object.assign(result, Object.assign({ result: 0, onPressDestination: 0 }));
   ({ type, record } = result);
-  if (type === _mod8806.AutocompleterResultTypes.HEADER) {
+  if (type === _mod8905.AutocompleterResultTypes.HEADER) {
     return null;
   } else {
     let fn;
@@ -34,23 +34,23 @@ export default function SearchableDestinationListRow(result) {
         return onPressDestination(obj.getDestinationIdFromResult(require));
       };
     }
-    if (_mod8806.AutocompleterResultTypes.USER === type) {
-      onPressDestination(11211);
+    if (_mod8905.AutocompleterResultTypes.USER === type) {
+      onPressDestination(11310);
       const merged1 = Object.assign(merged);
       const tmp2Result = UserSearchUtils;
       return <tmp18 user={record} type={tmp2Result.getRelationshipType(record.id)} onPress={fn} />;
-    } else if (_mod8806.AutocompleterResultTypes.GROUP_DM === type) {
-      onPressDestination(11258);
+    } else if (_mod8905.AutocompleterResultTypes.GROUP_DM === type) {
+      onPressDestination(11357);
       const merged2 = Object.assign(merged);
       return <tmp12 channel={record} onPress={fn} />;
     } else {
-      if (_mod8806.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (_mod8806.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (_mod8905.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (_mod8905.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           const tmp2Result2 = GlobalUtils;
           return tmp2Result2.assertNever(type);
         }
       }
-      onPressDestination(11260);
+      onPressDestination(11359);
       const merged3 = Object.assign(merged);
       return <tmp6 channel={record} onPress={fn} />;
     }

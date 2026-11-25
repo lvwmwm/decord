@@ -1,15 +1,15 @@
-// Module ID: 10182
-// Function ID: 10183
+// Module ID: 10281
+// Function ID: 10282
 // Name: useRequestToSpeakPermission
-// Dependencies: [32, 19, 4766, 1071, 504, 4854, 7706, 2]
+// Dependencies: [32, 19, 4861, 1071, 504, 4949, 7805, 2]
 // Exports: useRequestToSpeakPermission
 
-// Module 10182 (useRequestToSpeakPermission)
+// Module 10281 (useRequestToSpeakPermission)
 import Constants from "Constants" /* 1071 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7706 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ export function useRequestToSpeakPermission(id) {
   const items = [ChannelStore];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(id), items1);
-  const obj2 = stateFromStores(4854);
+  const obj2 = stateFromStores(4949);
   const canEveryoneRoleResult = obj2.canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
   [tmp4, tmp5] = _slicedToArray(react.useState(canEveryoneRoleResult), 2);
   dependencyMap = tmp5;

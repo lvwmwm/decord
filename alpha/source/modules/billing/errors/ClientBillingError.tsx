@@ -1,38 +1,38 @@
-// Module ID: 5682
-// Function ID: 5683
+// Module ID: 5777
+// Function ID: 5778
 // Name: ClientBillingError
-// Dependencies: [32, 1082, 3, 4730, 5668, 1284, 2]
+// Dependencies: [32, 1082, 3, 5763, 4825, 1284, 2]
 
-// Module 5682 (ClientBillingError)
+// Module 5777 (ClientBillingError)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1082 */;
-import BillingUtils from "BillingUtils" /* 4730 */;
-import BillingErrorDefault from "BillingError" /* 5668 */;
+import BillingUtils from "BillingUtils" /* 4825 */;
+import BillingErrorDefault from "BillingError" /* 5763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let info;
-
 const PaymentSourceTypes = Constants.PaymentSourceTypes;
 let tmp2 = new LoggerDefault("ClientBillingError");
-const hasOwnProperty = tmp2;
+const logger = tmp2;
 let closure_6 = "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL;
-const metroImportDefault = { payment_method_confirmation: "PaymentMethodConfirmation", submit_address_step: "SubmitAddressStep", payment_element_setup: "PaymentElementSetup", express_checkout_vault: "ExpressCheckoutAddPaymentMethod", express_checkout_load: "ExpressCheckoutLoad", payment_authentication: "PaymentAuthentication", braintree_tokenize: "BraintreeTokenize", gateway_sdk_init: "GatewaySdkInit", stripe_load: "StripeLoad" };
+const metroImportDefault = { payment_method_confirmation: "PaymentMethodConfirmation", payment_confirmation: "PaymentConfirmation", submit_address_step: "SubmitAddressStep", payment_element_setup: "PaymentElementSetup", express_checkout_vault: "ExpressCheckoutAddPaymentMethod", express_checkout_load: "ExpressCheckoutLoad", payment_authentication: "PaymentAuthentication", braintree_tokenize: "BraintreeTokenize", gateway_sdk_init: "GatewaySdkInit", stripe_load: "StripeLoad", order_create: "OrderCreate", order_sync: "OrderSync", order_sign: "OrderSign", order_fetch: "OrderFetch", order_signing_reopen_next_action: "OrderSigningReopenNextAction", subscription_plans_fetch: "SubscriptionPlansFetch" };
 const set = new Set(["card_error", "api_connection_error", "validation_error"]);
 const set1 = new Set(["setup_intent_authentication_failure", "payment_intent_authentication_failure"]);
 const set2 = new Set(["email_invalid", "tax_id_invalid"]);
-const unpackModuleId = ["google_pay.", "apple_pay."];
-const set3 = new Set(["BraintreeError", "AdyenCheckoutError"]);
-const re13 = /Failed to fetch|NetworkError|Load failed|Failed to load Stripe\.js/;
-const set4 = new Set(["PAYPAL_TOKENIZATION_REQUEST_ACTIVE"]);
-let items = [/authentication/gi, "verification"];
-let items1 = [items, , , ];
-const items2 = [/authoriz/gi, "approv"];
-items1[1] = items2;
-const items3 = [/token/gi, "tokn"];
-items1[2] = items3;
-const items4 = [/email/gi, "e_mail"];
-items1[3] = items4;
+let items = [BillingErrorDefault.Fields.CARD_NUMBER, BillingErrorDefault.Fields.CARD_CVC, BillingErrorDefault.Fields.CARD_EXPIRATION_DATE];
+new Set(items);
+const authStore2 = ["google_pay.", "apple_pay."];
+const set4 = new Set(["BraintreeError", "AdyenCheckoutError"]);
+const re14 = /Failed to fetch|NetworkError|Load failed|Failed to load Stripe\.js/;
+const set5 = new Set(["PAYPAL_TOKENIZATION_REQUEST_ACTIVE"]);
+let items1 = [/authentication/gi, "verification"];
+const items2 = [items1, , , ];
+const items3 = [/authoriz/gi, "approv"];
+items2[1] = items3;
+const items4 = [/token/gi, "tokn"];
+items2[2] = items4;
+const items5 = [/email/gi, "e_mail"];
+items2[3] = items5;
 class ClientBillingError extends Error {
   constructor(source, error) {
     const classifyResult = ClientBillingError.classify(error);
@@ -55,41 +55,38 @@ class ClientBillingError extends Error {
       const classifyResult = ClientBillingError.classify(error);
       const self = this;
       const self2 = this;
-      const tmp10 = new tmp(ClientBillingError.getMessage(classifyResult), tmp7, tmp6, tmp5, tmp4, tmp3, tmp2);
-      tmp10.classification = classifyResult;
-      tmp10.source = source;
-      tmp10.key = ClientBillingError.getKeyFor(tmp10.classification);
-      tmp10.shouldReport = tmp10.getShouldReport();
+      const tmp8 = new tmp(ClientBillingError.getMessage(classifyResult), tmp5, tmp4, tmp3, tmp2, tmp, ClientBillingError);
+      tmp8.classification = classifyResult;
+      tmp8.source = source;
+      tmp8.key = ClientBillingError.getKeyFor(tmp8.classification);
+      tmp8.shouldReport = tmp8.getShouldReport();
       const _Error = Error;
-      let tmp14;
+      let tmp12;
       if (error instanceof Error) {
-        tmp14 = error;
+        tmp12 = error;
       }
-      tmp10.cause = tmp14;
+      tmp8.cause = tmp12;
       const _HermesInternal = HermesInternal;
-      tmp10.name = "" + closure_7[source.site] + "Error[" + tmp10.key + "]";
-      const sentryOptions = tmp10.getSentryOptions(arg2);
-      let str4 = "Skipping Sentry report:";
-      info = info.info;
-      if (tmp10.shouldReport) {
-        str4 = "Reporting to Sentry:";
-      }
+      tmp8.name = "" + closure_7[source.site] + "Error[" + tmp8.key + "]";
+      const sentryOptions = tmp8.getSentryOptions(arg2);
       const obj2 = { fingerprint: null, tags: null };
       ({ fingerprint: obj3.fingerprint, tags: obj3.tags } = sentryOptions);
-      const name = tmp10.name;
-      if (closure_6) {
+      const tmp16 = closure_6;
+      if (tmp16) {
         obj5 = { extra: sentryOptions.extra };
         const obj4 = { extra: sentryOptions.extra };
       } else {
         obj5 = {};
       }
       const merged = Object.assign(obj5);
-      info(str4, name, obj2);
-      if (tmp10.shouldReport) {
-        const obj6 = BillingUtils;
-        const result = obj6.captureBillingException(tmp10, sentryOptions);
+      if (tmp8.shouldReport) {
+        logger.error("reporting error to Sentry:", tmp8.name, obj2);
+        const obj7 = BillingUtils;
+        const result = obj7.captureBillingException(tmp8, sentryOptions);
+      } else {
+        logger.info("skipping Sentry report:", tmp8.name, obj2);
       }
-      return tmp10;
+      return tmp8;
     } else {
       throw new TypeError("Trying to call a non-function");
     }
@@ -122,23 +119,87 @@ class ClientBillingError extends Error {
         }
         code = tmp4;
         if (null != tmp4) {
-          if (closure_11.some((item) => code.startsWith(item))) {
+          if (closure_12.some((item) => code.startsWith(item))) {
             obj9 = { shape: "stripe_wallet_exception", error };
             const obj6 = { shape: "stripe_wallet_exception", error };
           }
           return obj9;
         }
         if (null != tmp4) {
-          const _Error = Error;
-          if (error instanceof Error) {
-            if (set3.has(error.name)) {
+          const _Error2 = Error;
+          let tmp11 = error instanceof Error;
+          if (!tmp11) {
+            let tmp6 = null;
+            if (typeof error === "object") {
+              tmp6 = null;
+              if (null !== error) {
+                const name = error.name;
+                let tmp7 = null;
+                if (typeof name === "string") {
+                  tmp7 = name;
+                }
+                tmp6 = tmp7;
+              }
+            }
+            let tmp8 = null != tmp6;
+            if (tmp8) {
+              let tmp9 = null;
+              if (typeof error === "object") {
+                tmp9 = null;
+                if (null !== error) {
+                  const message = error.message;
+                  let tmp10 = null;
+                  if (typeof message === "string") {
+                    tmp10 = message;
+                  }
+                  tmp9 = tmp10;
+                }
+              }
+              tmp8 = null != tmp9;
+            }
+            tmp11 = tmp8;
+          }
+          if (tmp11) {
+            if (set4.has(error.name)) {
               obj9 = { shape: "gateway_sdk_error", error };
               const obj7 = { shape: "gateway_sdk_error", error };
             }
           }
         }
-        const _Error2 = Error;
-        if (error instanceof Error) {
+        const _Error = Error;
+        let tmp14 = error instanceof Error;
+        if (!tmp14) {
+          let tmp15 = null;
+          if (typeof error === "object") {
+            tmp15 = null;
+            if (null !== error) {
+              const name2 = error.name;
+              let tmp16 = null;
+              if (typeof name2 === "string") {
+                tmp16 = name2;
+              }
+              tmp15 = tmp16;
+            }
+          }
+          let tmp17 = null != tmp15;
+          if (tmp17) {
+            let tmp18 = null;
+            if (typeof error === "object") {
+              tmp18 = null;
+              if (null !== error) {
+                const message2 = error.message;
+                let tmp19 = null;
+                if (typeof message2 === "string") {
+                  tmp19 = message2;
+                }
+                tmp18 = tmp19;
+              }
+            }
+            tmp17 = null != tmp18;
+          }
+          tmp14 = tmp17;
+        }
+        if (tmp14) {
           obj9 = { shape: "error", error };
           const obj8 = { shape: "error", error };
         } else {
@@ -216,23 +277,36 @@ class ClientBillingError extends Error {
   static getKeyFor(classification) {
     const shape = classification.shape;
     if ("billing_error" === shape) {
-      let str17;
       const error2 = classification.error;
       const billingErrorFieldNames = ClientBillingError.getBillingErrorFieldNames(error2);
       if (billingErrorFieldNames.length > 0) {
         const _HermesInternal5 = HermesInternal;
-        str17 = "field_error:" + billingErrorFieldNames.join("+");
+        return "field_error:" + billingErrorFieldNames.join("+");
       } else if (error2.code > 0) {
         const _String = String;
-        str17 = String(error2.code);
+        return String(error2.code);
+      } else if (null != error2.status) {
+        const _HermesInternal4 = HermesInternal;
+        return "http_" + error2.status;
       } else {
-        str17 = "unknown";
-        if (null != error2.status) {
-          const _HermesInternal4 = HermesInternal;
-          str17 = "http_" + error2.status;
+        let tmp7 = null;
+        if (typeof error2 === "object") {
+          tmp7 = null;
+          if (null !== error2) {
+            const name = error2.name;
+            let tmp8 = null;
+            if (typeof name === "string") {
+              tmp8 = name;
+            }
+            tmp7 = tmp8;
+          }
         }
+        let str17 = "unknown";
+        if (null != tmp7) {
+          str17 = tmp7;
+        }
+        return str17;
       }
-      return str17;
     } else if ("stripe_error" === shape) {
       let type;
       const error = classification.error;
@@ -275,12 +349,13 @@ class ClientBillingError extends Error {
       const error2 = classification.error;
       let tmp16 = error2.code !== BillingErrorDefault.ErrorCodes.INVALID_PAYMENT_SOURCE;
       if (tmp16) {
-        let tmp18 = ClientBillingError.getBillingErrorFieldNames(error2).length > 0;
-        if (!tmp18) {
-          const obj2 = BillingUtils;
-          tmp18 = !obj2.isExpectedHttpClientError(error2);
+        const billingErrorFieldNames = ClientBillingError.getBillingErrorFieldNames(error2);
+        let someResult = billingErrorFieldNames.some((item) => !set.has(item));
+        if (!someResult) {
+          const obj3 = BillingUtils;
+          someResult = !obj3.isExpectedHttpClientError(error2);
         }
-        tmp16 = tmp18;
+        tmp16 = someResult;
       }
       return tmp16;
     } else if ("stripe_error" === shape) {
@@ -316,15 +391,16 @@ class ClientBillingError extends Error {
     } else if ("stripe_wallet_exception" === shape) {
       return false;
     } else if ("error" === shape) {
-      return !re13.test(classification.error.message);
+      return !re14.test(classification.error.message);
     } else if ("gateway_sdk_error" === shape) {
-      return !set4.has(classification.error.code);
+      return !set5.has(classification.error.code);
     } else {
       return true;
     }
   }
   isStripeWalletSelected() {
-    return "express_checkout_vault" === this.source.site || this.source.selectedElementType === PaymentSourceTypes.PAYMENT_REQUEST;
+    const BooleanResult = Boolean(this.source.isStripeWallet) || this.source.selectedElementType === PaymentSourceTypes.PAYMENT_REQUEST;
+    return BooleanResult;
   }
   getErrorTags() {
     let StringResult;
@@ -381,11 +457,11 @@ class ClientBillingError extends Error {
     let fromEntries6;
     let fromEntries7;
     let tmp3;
-    const f88204 = (item) => {
+    const f88545 = (item) => {
       let arr;
       let tmp;
       let tmp2;
-      const f88203 = (acc, item) => {
+      const f88544 = (acc, item) => {
         let tmp;
         [tmp, ] = item;
         return acc.replace(tmp, (str) => {
@@ -400,16 +476,16 @@ class ClientBillingError extends Error {
       };
       [tmp, arr] = item;
       if (typeof arr === "string") {
-        const items = [tmp, closure_1_15.reduce(f88203, arr)];
+        const items = [tmp, items2.reduce(f88544, arr)];
         tmp2 = items;
       } else {
         const _Array = Array;
-        items1 = [tmp, ];
+        const items1 = [tmp, ];
         if (Array.isArray(arr)) {
           items1[1] = arr.map((item) => {
             let reduced = item;
             if (typeof item === "string") {
-              reduced = closure_1_15.reduce(f88203, item);
+              reduced = closure_1_16.reduce(f88544, item);
             }
             return reduced;
           });
@@ -424,7 +500,7 @@ class ClientBillingError extends Error {
     const classification = this.classification;
     const shape = classification.shape;
     if ("billing_error" === shape) {
-      const obj = { raw_error: fromEntries7(entries.map(f88204)) };
+      const obj = { raw_error: fromEntries7(entries.map(f88545)) };
       ({ code: obj14.code, status: obj14.status, message: obj14.message } = classification.error);
       const _Object14 = Object;
       const _Object15 = Object;
@@ -437,7 +513,7 @@ class ClientBillingError extends Error {
       ({ type: obj12.type, code: obj12.code, decline_code: obj12.decline_code, param: obj12.param, doc_url: obj12.doc_url, message: obj12.message } = classification.error);
       const _Object12 = Object;
       const _Object13 = Object;
-      const obj3 = { raw_error: fromEntries6(entries1.map(f88204)) };
+      const obj3 = { raw_error: fromEntries6(entries1.map(f88545)) };
       fromEntries6 = Object.fromEntries;
       entries1 = Object.entries(obj5);
       return obj3;
@@ -446,7 +522,7 @@ class ClientBillingError extends Error {
       ({ status: obj10.status, method: obj10.method, message: obj10.message } = classification.error);
       const _Object10 = Object;
       const _Object11 = Object;
-      const obj7 = { raw_error: fromEntries5(entries2.map(f88204)) };
+      const obj7 = { raw_error: fromEntries5(entries2.map(f88545)) };
       fromEntries5 = Object.fromEntries;
       entries2 = Object.entries(obj9);
       return obj7;
@@ -455,7 +531,7 @@ class ClientBillingError extends Error {
       ({ code: obj8.code, message: obj8.message } = classification.error);
       const _Object8 = Object;
       const _Object9 = Object;
-      const obj11 = { raw_error: fromEntries4(entries3.map(f88204)) };
+      const obj11 = { raw_error: fromEntries4(entries3.map(f88545)) };
       fromEntries4 = Object.fromEntries;
       entries3 = Object.entries(obj13);
       return obj11;
@@ -464,7 +540,7 @@ class ClientBillingError extends Error {
       ({ name: obj6.name, code: obj6.code, message: obj6.message } = classification.error);
       const _Object6 = Object;
       const _Object7 = Object;
-      const obj27 = { raw_error: fromEntries3(entries4.map(f88204)) };
+      const obj27 = { raw_error: fromEntries3(entries4.map(f88545)) };
       fromEntries3 = Object.fromEntries;
       entries4 = Object.entries(obj28);
       return obj27;
@@ -473,7 +549,7 @@ class ClientBillingError extends Error {
       ({ name: obj4.name, message: obj4.message } = classification.error);
       const _Object4 = Object;
       const _Object5 = Object;
-      const obj29 = { raw_error: fromEntries2(entries5.map(f88204)) };
+      const obj29 = { raw_error: fromEntries2(entries5.map(f88545)) };
       fromEntries2 = Object.fromEntries;
       entries5 = Object.entries(obj30);
       return obj29;
@@ -502,7 +578,7 @@ class ClientBillingError extends Error {
         const _Object2 = Object;
         const _Object3 = Object;
         const entries6 = Object.entries(obj31);
-        fromEntriesResult = fromEntries(entries6.map(f88204));
+        fromEntriesResult = fromEntries(entries6.map(f88545));
       } else {
         fromEntriesResult = {};
       }

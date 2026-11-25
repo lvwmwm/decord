@@ -1,14 +1,14 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 16741
+// Function ID: 16742
 // Name: useQuestDockAcceptQuest
-// Dependencies: [5, 19, 8224, 6745, 16542, 563, 16502, 16512, 9751, 16430, 13664, 6748, 8251, 16538, 9753, 16545, 2]
+// Dependencies: [5, 19, 8323, 6840, 16663, 563, 16623, 16633, 9850, 16551, 13787, 6843, 8350, 16659, 9852, 16666, 2]
 // Exports: useQuestDockAcceptQuest
 
-// Module 16620 (useQuestDockAcceptQuest)
-import QuestConstants from "QuestConstants" /* 6745 */;
+// Module 16741 (useQuestDockAcceptQuest)
+import QuestConstants from "QuestConstants" /* 6840 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 8224 */;
+import QuestStore from "QuestStore" /* 8323 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -54,7 +54,7 @@ export function useQuestDockAcceptQuest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -126,7 +126,7 @@ export function useQuestDockAcceptQuest() {
             setRestingQuestDockMode(constants.COLLAPSED);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp40) {
         c3 = 3;

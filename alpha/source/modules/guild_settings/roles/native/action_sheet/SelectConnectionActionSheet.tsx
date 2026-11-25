@@ -1,20 +1,20 @@
-// Module ID: 19909
-// Function ID: 19910
+// Module ID: 20011
+// Function ID: 20012
 // Name: SelectConnectionActionSheet
-// Dependencies: [32, 19, 17, 21, 11896, 6018, 1186, 5126, 7381, 1112, 8135, 1412, 4924, 5131, 8475, 7420, 8476, 5149, 7354, 6014, 2]
+// Dependencies: [32, 19, 17, 21, 11995, 6113, 1186, 5221, 7476, 1112, 8234, 1412, 5019, 5226, 8574, 7515, 8575, 5244, 7449, 6109, 2]
 // Exports: default
 
-// Module 19909 (SelectConnectionActionSheet)
+// Module 20011 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
-import shared from "shared" /* 4924 */;
-import useThemeDefault from "useTheme" /* 5126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import TableRow2 from "TableRow" /* 6018 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7381 */;
-import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11896 */;
+import shared from "shared" /* 5019 */;
+import useThemeDefault from "useTheme" /* 5221 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import TableRow2 from "TableRow" /* 6113 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7476 */;
+import useGetOrFetchApplicationBatched from "useGetOrFetchApplicationBatched" /* 11995 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,13 +26,13 @@ let application, icon;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const BottomSheetModal = tmp3(5149);
-const TableRowGroup = tmp3(6014);
-const common_SafeAreaView = tmp3(7354);
-const ActionSheet2 = tmp3(7420);
-const ConnectionsHooks = tmp3(8135);
-const SegmentedControlState = tmp3(8475);
-const SegmentedControl = tmp3(8476);
+const BottomSheetModal = tmp3(5244);
+const TableRowGroup = tmp3(6109);
+const common_SafeAreaView = tmp3(7449);
+const ActionSheet2 = tmp3(7515);
+const ConnectionsHooks = tmp3(8234);
+const SegmentedControlState = tmp3(8574);
+const SegmentedControl = tmp3(8575);
 function IdentityApplicationRow(arg0) {
   let applicationId;
   let description;
@@ -45,7 +45,7 @@ function IdentityApplicationRow(arg0) {
   } else {
     const bot = getOrFetchApplicationBatched.bot;
     let tmp6Result = null;
-    const TableRow = tmp(6018).TableRow;
+    const TableRow = tmp(6113).TableRow;
     if (null != bot) {
       const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
       const Avatar = tmp(1186).Avatar;

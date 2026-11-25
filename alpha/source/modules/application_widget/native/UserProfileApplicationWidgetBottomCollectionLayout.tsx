@@ -1,18 +1,18 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14609
+// Function ID: 14610
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 4917, 575, 14478, 14435, 5604, 14479, 5508, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 14601, 14558, 5699, 14602, 5603, 2]
 // Exports: default
 
-// Module 14486 (UserProfileApplicationWidgetBottomCollectionLayout)
+// Module 14609 (UserProfileApplicationWidgetBottomCollectionLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import _mod14435 from "module_14435" /* 14435 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 14478 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import _mod14558 from "module_14558" /* 14558 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 14601 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,11 +41,11 @@ function CollectionItem(arg0) {
   if (componentConfig != null) {
     image = componentConfig.fields.image;
   }
-  const items = [_mod14435.ResolvedValueType.MEDIA];
+  const items = [_mod14558.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const tmp2Result = _mod14435;
+  const tmp2Result = _mod14558;
   const singleStringOrSkeleton = tmp2Result.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
-  const tmp2Result2 = _mod14435;
+  const tmp2Result2 = _mod14558;
   const singleStringOrSkeleton1 = tmp2Result2.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
   const obj3 = { style: tmp.item, children: items1 };
   if (null != fieldValue) {
@@ -55,23 +55,23 @@ function CollectionItem(arg0) {
     tmp14 = React3;
   } else {
     const obj6 = { style: tmp.itemImage };
-    tmp13 = React3(tmp2(14479).ImageSkeleton, obj6);
+    tmp13 = React3(tmp2(14602).ImageSkeleton, obj6);
     tmp14 = React3;
   }
   items1 = [tmp13, ];
   const obj7 = { style: tmp.itemContent, children: items2 };
   if ("value" === singleStringOrSkeleton.status) {
     const obj8 = { variant: "body-xs/medium", lineClamp: 2, style: emojiOverflowStyle, children: singleStringOrSkeleton.text };
-    tmp14Result = tmp14(tmp2(5508).Text, obj8);
+    tmp14Result = tmp14(tmp2(5603).Text, obj8);
   } else {
-    tmp14Result = tmp14(tmp2(14479).TextSkeleton, { variant: "body-xs/medium", widthChars: 6 });
+    tmp14Result = tmp14(tmp2(14602).TextSkeleton, { variant: "body-xs/medium", widthChars: 6 });
   }
   items2 = [tmp14Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "footnote/medium", color: "text-subtle", lineClamp: 2, style: emojiOverflowStyle1, children: singleStringOrSkeleton1.text };
-    tmp14Result2 = tmp14(tmp2(5508).Text, obj9);
+    tmp14Result2 = tmp14(tmp2(5603).Text, obj9);
   } else {
-    tmp14Result2 = tmp14(tmp2(14479).TextSkeleton, { variant: "footnote/medium", widthChars: 10 });
+    tmp14Result2 = tmp14(tmp2(14602).TextSkeleton, { variant: "footnote/medium", widthChars: 10 });
   }
   items2[1] = tmp14Result2;
   items1[1] = hasOwnProperty(View, obj7);

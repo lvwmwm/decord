@@ -1,14 +1,14 @@
-// Module ID: 12117
-// Function ID: 12118
+// Module ID: 12216
+// Function ID: 12217
 // Name: StampXIcon
-// Dependencies: [19, 21, 575, 5603, 12118, 2]
+// Dependencies: [19, 21, 575, 5698, 12217, 2]
 // Exports: StampXIcon
 
-// Module 12117 (StampXIcon)
+// Module 12216 (StampXIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 12118 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 12217 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

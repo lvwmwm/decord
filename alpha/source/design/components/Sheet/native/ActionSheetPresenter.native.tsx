@@ -1,17 +1,17 @@
-// Module ID: 15251
-// Function ID: 15252
+// Module ID: 15373
+// Function ID: 15374
 // Name: ActionSheetPresenter
-// Dependencies: [32, 19, 17, 5132, 1071, 21, 5990, 1263, 5131, 5984, 5476, 5979, 504, 13219, 5927, 2]
+// Dependencies: [32, 19, 17, 5227, 1071, 21, 6085, 1263, 5226, 6079, 5571, 6074, 504, 13342, 6022, 2]
 // Exports: ActionSheetPresenter
 
-// Module 15251 (ActionSheetPresenter)
+// Module 15373 (ActionSheetPresenter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5132 */;
+import ActionSheetStore from "ActionSheetStore" /* 5227 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -44,7 +44,7 @@ function TrackedWrapperInner(sheetKey) {
     ref2.current();
   }, []);
   let obj = { type: sheetKey(1263).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
-  const tmp5 = transitionState(5990);
+  const tmp5 = transitionState(6085);
   tmp5(obj);
   const imperativeHandle = registerDismissHandler.useImperativeHandle(ref, () => ({
     componentDidEnter() {
@@ -75,8 +75,8 @@ function TrackedWrapperInner(sheetKey) {
     callback2();
     return true;
   }, items2);
-  transitionState(5984)(callback3);
-  const Provider = transitionState(5476).Provider;
+  transitionState(6079)(callback3);
+  const Provider = transitionState(5571).Provider;
   return <Provider value={memo}>{null}</Provider>;
 }
 let result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");
@@ -94,6 +94,6 @@ export function ActionSheetPresenter(appEntryKey) {
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => stack.getStack(), []);
   const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
   const mapped = found.map((content) => <TrackedWrapperInner key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />);
-  const TransitionGroup = appEntryKey(13219).TransitionGroup;
-  return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5927).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
+  const TransitionGroup = appEntryKey(13342).TransitionGroup;
+  return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(6022).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
 }

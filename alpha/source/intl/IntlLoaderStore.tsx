@@ -1,13 +1,13 @@
 // Module ID: 2189
 // Function ID: 2190
 // Name: IntlLoaderStore
-// Dependencies: [5, 2026, 1257, 1112, 2190, 1151, 4667, 4698, 2168, 1241, 2]
+// Dependencies: [5, 2026, 1257, 1112, 2190, 1151, 4762, 4793, 2168, 1241, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 2189 (IntlLoaderStore)
 import intl2 from "intl" /* 1112 */;
-import formatjs from "formatjs" /* 4667 */;
-import moment from "moment" /* 4698 */;
+import formatjs from "formatjs" /* 4762 */;
+import moment from "moment" /* 4793 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_2026 from "module_2026" /* 2026 */;
 import module_1257 from "module_1257" /* 1257 */;
@@ -47,7 +47,7 @@ let obj = function _setAppLocale() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let obj = function _setAppLocale() {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -126,7 +126,7 @@ let obj = function _setAppLocale() {
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } catch (tmp10) {
                     c2 = 3;
@@ -156,7 +156,7 @@ let obj = function _setAppLocale() {
           } else {
             state.setLoadingSucceeded(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c3 = 3;
@@ -179,7 +179,7 @@ obj = function _loadDateFnsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -193,7 +193,7 @@ obj = function _loadDateFnsLocale() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp3) {
         c0 = 3;
@@ -216,7 +216,7 @@ obj = function _loadFormatJsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -247,7 +247,7 @@ obj = function _loadFormatJsLocale() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -270,7 +270,7 @@ obj = function _setMomentLocale() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -321,7 +321,7 @@ obj = function _setMomentLocale() {
         const obj2 = closure_130_0(closure_130_1[8]);
         obj2.locale(closure_1);
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp25) {
         c4 = 3;
         throw tmp25;
@@ -336,8 +336,8 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "y",
-    error: "channel_id",
-    localeData: "application",
+    error: "context",
+    localeData: "find",
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);

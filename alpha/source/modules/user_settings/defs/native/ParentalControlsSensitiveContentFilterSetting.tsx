@@ -1,14 +1,14 @@
-// Module ID: 17426
-// Function ID: 17427
+// Module ID: 17537
+// Function ID: 17538
 // Name: ParentalControlsSensitiveContentFilterSetting
-// Dependencies: [9414, 1071, 11815, 1112, 7021, 17427, 2]
+// Dependencies: [9513, 1071, 11914, 1112, 7116, 17538, 2]
 
-// Module 17426 (ParentalControlsSensitiveContentFilterSetting)
+// Module 17537 (ParentalControlsSensitiveContentFilterSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 7021 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 7116 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

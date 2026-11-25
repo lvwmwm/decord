@@ -1,21 +1,21 @@
-// Module ID: 18386
-// Function ID: 18387
+// Module ID: 18498
+// Function ID: 18499
 // Name: ConjureShareSheet
-// Dependencies: [19, 17, 21, 4917, 575, 5131, 18303, 7420, 14112, 7381, 1112, 4192, 18387, 5515, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 5226, 18415, 7515, 14235, 7476, 1112, 4244, 18499, 5610, 2]
 // Exports: default
 
-// Module 18386 (ConjureShareSheet)
+// Module 18498 (ConjureShareSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef4192 from "module_4192" /* 4192 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import ActionSheet2 from "ActionSheet" /* 7420 */;
-import useConjureSharingModeDefault from "useConjureSharingMode" /* 18303 */;
-import ConjureShareAccessDefault from "ConjureShareAccess" /* 18387 */;
+import _modDef4244 from "module_4244" /* 4244 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import ActionSheet2 from "ActionSheet" /* 7515 */;
+import useConjureSharingModeDefault from "useConjureSharingMode" /* 18415 */;
+import ConjureShareAccessDefault from "ConjureShareAccess" /* 18499 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,14 +52,14 @@ export default function ConjureShareSheet(projectId) {
   const ActionSheet = ActionSheet2.ActionSheet;
   if (null != project) {
     const obj2 = { project, size: "dialog" };
-    tmp5Result = tmp5(tmp2(14112), obj2);
+    tmp5Result = tmp5(tmp2(14235), obj2);
   }
   items = [tmp5Result, ];
-  const BottomSheetTitleHeader = tmp6(7381).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp6(7476).BottomSheetTitleHeader;
   const intl = tmp6(1112).intl;
   const formatToPlainString = intl.formatToPlainString;
   let str;
-  const pgxjO4 = tmp2(4192).pgxjO4;
+  const pgxjO4 = tmp2(4244).pgxjO4;
   if (project != null) {
     str = project.name;
   }
@@ -67,7 +67,7 @@ export default function ConjureShareSheet(projectId) {
     str = "";
   }
   const obj3 = { header: hasOwnProperty(View, obj), children: tmp7Result };
-  const obj4 = { title: formatToPlainString(pgxjO4, { app: str }), subtitle: intl2.string(_modDef4192.mbybxl) };
+  const obj4 = { title: formatToPlainString(pgxjO4, { app: str }), subtitle: intl2.string(_modDef4244.mbybxl) };
   intl2 = tmp6(1112).intl;
   items[1] = React3(BottomSheetTitleHeader, obj4);
   tmp7Result = null;
@@ -76,7 +76,7 @@ export default function ConjureShareSheet(projectId) {
     const obj6 = { project, sharing: tmp4 };
     items1 = [React3(ConjureShareAccessDefault, obj6), ];
     const obj7 = { variant: "primary", text: intl3.string(intl4.t.i4jeWR), onPress: hideShareSheet };
-    const Button = tmp6(5515).Button;
+    const Button = tmp6(5610).Button;
     intl3 = tmp6(1112).intl;
     items1[1] = React3(Button, obj7);
     tmp7Result = tmp7(tmp8, obj5);

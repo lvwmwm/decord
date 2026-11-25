@@ -1,26 +1,26 @@
-// Module ID: 17068
-// Function ID: 17069
+// Module ID: 17187
+// Function ID: 17188
 // Name: DevToolsDataStorageScreen
-// Dependencies: [32, 19, 17, 505, 502, 21, 4917, 575, 6018, 4795, 5599, 504, 4812, 1501, 5492, 7279, 10585, 11210, 7280, 5131, 5508, 7285, 7420, 7381, 7422, 2]
+// Dependencies: [32, 19, 17, 505, 502, 21, 5012, 575, 6113, 4890, 5694, 504, 4907, 1501, 5587, 7374, 10684, 11309, 7375, 5226, 5603, 7380, 7515, 7476, 7517, 2]
 // Exports: default
 
-// Module 17068 (DevToolsDataStorageScreen)
+// Module 17187 (DevToolsDataStorageScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import PersistedStore2 from "PersistedStore" /* 505 */;
 import nativeDefault from "native" /* 575 */;
 import Link from "Link" /* 1501 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4795 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4812 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
-import TableRow3 from "TableRow" /* 6018 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4890 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4907 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
+import TableRow3 from "TableRow" /* 6113 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -28,10 +28,10 @@ let obj3;
 function DevToolsPersistedStoresActionSheet(store) {
   store = store.store;
   const close = store.close;
-  const ActionSheet = store(7420).ActionSheet;
+  const ActionSheet = store(7515).ActionSheet;
   ({ title: store.getName() });
-  const BottomSheetTitleHeader = store(7381).BottomSheetTitleHeader;
-  const Group = store(7422).ActionSheetRow.Group;
+  const BottomSheetTitleHeader = store(7476).BottomSheetTitleHeader;
+  const Group = store(7517).ActionSheetRow.Group;
   return <ActionSheet header={null}>{null}</ActionSheet>;
 }
 const View = react_native.View;

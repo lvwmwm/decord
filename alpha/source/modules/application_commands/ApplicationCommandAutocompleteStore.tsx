@@ -1,15 +1,15 @@
-// Module ID: 8040
-// Function ID: 8041
+// Module ID: 8139
+// Function ID: 8140
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [8041, 1071, 1378, 2117, 5887, 504, 572, 2]
+// Dependencies: [8140, 1071, 1378, 2117, 5982, 504, 572, 2]
 
-// Module 8040 (ApplicationCommandAutocompleteStore)
+// Module 8139 (ApplicationCommandAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import Server from "Server" /* 2117 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8041 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8140 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 

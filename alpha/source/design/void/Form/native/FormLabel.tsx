@@ -1,12 +1,12 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7466
+// Function ID: 7467
 // Name: FormLabel
-// Dependencies: [19, 21, 5508, 2]
+// Dependencies: [19, 21, 5603, 2]
 // Exports: default
 
-// Module 7371 (FormLabel)
+// Module 7466 (FormLabel)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5508 */;
+import Text_Text from "Text/Text" /* 5603 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

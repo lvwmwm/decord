@@ -1,10 +1,10 @@
-// Module ID: 19897
-// Function ID: 19898
+// Module ID: 19999
+// Function ID: 20000
 // Name: RoleIconUploadUtils
 // Dependencies: [5, 1071, 1389, 1412, 1491, 2]
 // Exports: fetchCustomEmojiAsPngDataUri
 
-// Module 19897 (RoleIconUploadUtils)
+// Module 19999 (RoleIconUploadUtils)
 import Constants from "Constants" /* 1071 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
@@ -28,7 +28,7 @@ let obj = function _fetchCustomEmojiAsPngDataUri() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

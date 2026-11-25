@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tenure_reward", scales: [1], hash: "68fd1257eed52bd73f2b4ddca518725b", name: "Norbs.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "56b0fcecd06337719a2b467260d6cb14", name: "ja.messages.56b0fcecd06337719a2b467260d6cb14.compiled.messages", type: "jsona" });

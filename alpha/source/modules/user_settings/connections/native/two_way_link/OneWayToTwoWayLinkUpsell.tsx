@@ -1,19 +1,19 @@
-// Module ID: 16282
-// Function ID: 16283
+// Module ID: 16403
+// Function ID: 16404
 // Name: OneWayToTwoWayLinkUpsell
-// Dependencies: [19, 17, 1071, 4763, 21, 4917, 575, 6696, 1186, 10930, 5508, 5515, 1112, 2]
+// Dependencies: [19, 17, 1071, 4858, 21, 5012, 575, 6791, 1186, 11029, 5603, 5610, 1112, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 16282 (OneWayToTwoWayLinkUpsell)
+// Module 16403 (OneWayToTwoWayLinkUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10930 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 11029 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
-import TextStyles_mod from "TextStyles" /* 6696 */;
+import createStyles_mod from "createStyles" /* 5012 */;
+import TextStyles_mod from "TextStyles" /* 6791 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -78,14 +78,14 @@ export function OneWayToTwoWayLinkUpsell(newIndicatorDismissibleContent) {
   const obj3 = { style: tmp.titleContainer, children: items1 };
   items1 = [closure_6(SelectedDismissibleContentDefault, obj4), ];
   const obj5 = { style: tmp.title, variant: "body-md/semibold", children: title };
-  items1[1] = closure_6(newIndicatorDismissibleContent(5508).Text, obj5);
+  items1[1] = closure_6(newIndicatorDismissibleContent(5603).Text, obj5);
   items2 = [closure_7(View, obj3), img];
   items3 = [closure_7(View, obj2), , ];
   const obj6 = { style: tmp.body, variant: "body-sm/medium", children: body };
-  items3[1] = closure_6(newIndicatorDismissibleContent(5508).Text, obj6);
+  items3[1] = closure_6(newIndicatorDismissibleContent(5603).Text, obj6);
   const obj7 = { style: tmp.reconnectButton, children: closure_6(Button, obj8) };
   obj8 = { text: intl.string(newIndicatorDismissibleContent(1112).t.vD60Pv), onPress };
-  Button = newIndicatorDismissibleContent(5515).Button;
+  Button = newIndicatorDismissibleContent(5610).Button;
   intl = newIndicatorDismissibleContent(1112).intl;
   items3[2] = closure_6(View, obj7);
   return closure_7(View, obj);

@@ -1,16 +1,16 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12318
+// Function ID: 12319
 // Name: prefetchGameOrganizationAccountLinkState
-// Dependencies: [5, 2164, 6263, 11769, 11770, 6845, 7388, 7391, 2]
+// Dependencies: [5, 2164, 6358, 11868, 11869, 6940, 7483, 7486, 2]
 // Exports: default
 
-// Module 12219 (prefetchGameOrganizationAccountLinkState)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6263 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6845 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11770 */;
+// Module 12318 (prefetchGameOrganizationAccountLinkState)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6358 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6940 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11769 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11868 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, invite;
@@ -29,7 +29,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -70,7 +70,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
         } else if (1 === c5) {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -98,7 +98,7 @@ let obj = function _prefetchGameOrganizationAccountLinkState() {
           }
         }
         c6 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp17) {
         if (0 === c4) {
           c6 = 3;

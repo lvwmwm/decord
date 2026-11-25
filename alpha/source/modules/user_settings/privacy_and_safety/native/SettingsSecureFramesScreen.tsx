@@ -1,22 +1,22 @@
-// Module ID: 17381
-// Function ID: 17382
+// Module ID: 17492
+// Function ID: 17493
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1386, 1071, 21, 4917, 575, 504, 17382, 4973, 6008, 6253, 6007, 6018, 1186, 1112, 6030, 5481, 1500, 17380, 5508, 7356, 8539, 2]
+// Dependencies: [19, 17, 1386, 1071, 21, 5012, 575, 504, 17493, 5068, 6103, 6348, 6102, 6113, 1186, 1112, 6125, 5576, 1500, 17491, 5603, 7451, 8638, 2]
 // Exports: default
 
-// Module 17381 (SettingsSecureFramesScreen)
+// Module 17492 (SettingsSecureFramesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6007 */;
-import UserActionCreators from "UserActionCreators" /* 6008 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8539 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6102 */;
+import UserActionCreators from "UserActionCreators" /* 6103 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8638 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

@@ -1,9 +1,9 @@
-// Module ID: 17706
-// Function ID: 17707
+// Module ID: 17817
+// Function ID: 17818
 // Name: SortableChannels
 // Dependencies: [19, 17, 21, 12, 1494, 2]
 
-// Module 17706 (SortableChannels)
+// Module 17817 (SortableChannels)
 import react2 from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,26 +1,26 @@
-// Module ID: 12204
-// Function ID: 12205
+// Module ID: 12303
+// Function ID: 12304
 // Name: GuildRolesAbstractUI
-// Dependencies: [19, 21, 12205, 12206, 12207, 7135, 5604, 2]
+// Dependencies: [19, 21, 12304, 12305, 12306, 7230, 5699, 2]
 // Exports: GuildRolesAbstractUI
 
-// Module 12204 (GuildRolesAbstractUI)
+// Module 12303 (GuildRolesAbstractUI)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7135 */;
-import _modDef12205 from "module_12205" /* 12205 */;
-import _modDef12206 from "module_12206" /* 12206 */;
-import _modDef12207 from "module_12207" /* 12207 */;
+import react_native from "react-native" /* 7230 */;
+import _modDef12304 from "module_12304" /* 12304 */;
+import _modDef12305 from "module_12305" /* 12305 */;
+import _modDef12306 from "module_12306" /* 12306 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12205 };
+let obj2 = { uri: _modDef12304 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef12206 };
+let obj3 = { uri: _modDef12305 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef12207 };
-({ uri: _modDef12207 });
+obj[3] = { uri: _modDef12306 };
+({ uri: _modDef12306 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GuildRolesAbstractUI.native.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18397
+// Function ID: 18398
 // Name: slugConjureChannelName
 // Dependencies: [2]
 // Exports: default
 
-// Module 18285 (slugConjureChannelName)
+// Module 18397 (slugConjureChannelName)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/shared/slugConjureChannelName.tsx");

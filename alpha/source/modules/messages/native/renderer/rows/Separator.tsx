@@ -1,15 +1,15 @@
-// Module ID: 14378
-// Function ID: 14379
+// Module ID: 14501
+// Function ID: 14502
 // Name: Separator
-// Dependencies: [8083, 4917, 575, 5087, 1254, 2]
+// Dependencies: [8182, 5012, 575, 5182, 1254, 2]
 // Exports: generateSeparatorRowData
 
-// Module 14378 (Separator)
+// Module 14501 (Separator)
 import nativeDefault from "native" /* 575 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5087 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8083 */;
-import createStyles from "createStyles" /* 4917 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5182 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8182 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c2;

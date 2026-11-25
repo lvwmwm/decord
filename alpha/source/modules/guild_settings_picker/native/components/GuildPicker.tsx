@@ -1,14 +1,14 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15252
+// Function ID: 15253
 // Name: GuildPicker
-// Dependencies: [19, 21, 15131, 15132, 6926, 5131, 8358, 2119, 1112, 2]
+// Dependencies: [19, 21, 15253, 15254, 7021, 5226, 8457, 2119, 1112, 2]
 // Exports: default
 
-// Module 15130 (GuildPicker)
+// Module 15252 (GuildPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,13 +27,13 @@ export default function GuildPicker(isGuildIncluded) {
   dependencyMap = undefined;
   let tmp2 = dependencyMap;
   let tmp = onChange;
-  ({ options: c2, selectedGuild } = onChange(15131)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
+  ({ options: c2, selectedGuild } = onChange(15253)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
   let tmp4Result;
-  onChange(15131)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
-  onChange(15132);
+  onChange(15253)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
+  onChange(15254);
   if (null != selectedGuild) {
-    let obj = { guild: selectedGuild, size: guildId(6926).GuildIconSizes.XSMALL };
-    const tmpResult = tmp(6926);
+    let obj = { guild: selectedGuild, size: guildId(7021).GuildIconSizes.XSMALL };
+    const tmpResult = tmp(7021);
     tmp4Result = tmp4(tmpResult, obj);
   }
   let name;
@@ -62,7 +62,7 @@ export default function GuildPicker(isGuildIncluded) {
       selectedItem: guildId,
       hasIcons: false
     };
-    const tmp2 = asyncRequire(8358, dependencyMap.paths);
+    const tmp2 = asyncRequire(8457, dependencyMap.paths);
     intl = intl2.intl;
     openLazy(tmp2, GuildPicker_str, obj);
   }} placeholder={intl.string(guildId(1112).t.etZ9tX)} />;

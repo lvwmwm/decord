@@ -1,18 +1,18 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13526
+// Function ID: 13527
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 10223, 6740, 1071, 1388, 21, 13353, 6004, 6738, 13404, 1500, 6253, 563, 1399, 13352, 5515, 1112, 7035, 2]
+// Dependencies: [5, 19, 17, 10322, 6835, 1071, 1388, 21, 13476, 6099, 6833, 13527, 1500, 6348, 563, 1399, 13475, 5610, 1112, 7130, 2]
 // Exports: default
 
-// Module 13403 (GuildBoostingSubscribeButton)
+// Module 13526 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6740 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13353 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6835 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13476 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 10223 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 10322 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c5 = 3;

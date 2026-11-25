@@ -1,21 +1,21 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14677
+// Function ID: 14678
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 4917, 575, 7601, 8405, 14556, 11, 5654, 5613, 1112, 7035, 7603, 12300, 5626, 5655, 12121, 9937, 5508, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 7700, 8504, 14678, 11, 5749, 5708, 1112, 7130, 7702, 12466, 5721, 5750, 12220, 10036, 5603, 2]
 // Exports: default
 
-// Module 14555 (ApplicationDetails)
+// Module 14677 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import scopes from "scopes" /* 5654 */;
-import disclosures from "disclosures" /* 7601 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 8405 */;
-import EmbedIcon from "EmbedIcon" /* 14556 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import scopes from "scopes" /* 5749 */;
+import disclosures from "disclosures" /* 7700 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 8504 */;
+import EmbedIcon from "EmbedIcon" /* 14678 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,14 +23,14 @@ let hasOwnProperty;
 let size;
 let tmp4;
 const intl5 = tmp4(1112);
-const LinkIcon = tmp4(5613);
-const ClockIcon = tmp4(5626);
-const OAuth2Scopes = tmp4(5655);
-const LockIcon = tmp4(7035);
-const Utils = tmp4(7603);
-const ShieldIcon = tmp4(9937);
-const RobotIcon = tmp4(12121);
-const HammerIcon = tmp4(12300);
+const LinkIcon = tmp4(5708);
+const ClockIcon = tmp4(5721);
+const OAuth2Scopes = tmp4(5750);
+const LockIcon = tmp4(7130);
+const Utils = tmp4(7702);
+const ShieldIcon = tmp4(10036);
+const RobotIcon = tmp4(12220);
+const HammerIcon = tmp4(12466);
 function ApplicationDetailsEntry(iconComponent) {
   let items;
   iconComponent = iconComponent.iconComponent;

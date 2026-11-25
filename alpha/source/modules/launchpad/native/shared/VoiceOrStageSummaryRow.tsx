@@ -1,17 +1,17 @@
-// Module ID: 19184
-// Function ID: 19185
+// Module ID: 19296
+// Function ID: 19297
 // Name: VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4917, 575, 18798, 5508, 1186, 18793, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 18910, 5603, 1186, 18905, 2]
 
-// Module 19184 (VoiceOrStageSummaryRow)
+// Module 19296 (VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18798 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18910 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -19,7 +19,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const AssetRegistryDefault = tmp(18793);
+const AssetRegistryDefault = tmp(18905);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((height) => {
@@ -115,7 +115,7 @@ const memoResult = react.memo(function VoiceOrStageSummaryRow(arg0) {
     const Icon = max(1186).Icon;
     items4 = [tmp8(Icon, obj5), ];
     let obj6 = { variant: "body-sm/semibold", style: { marginLeft: 4 }, children: audienceCount };
-    items4[1] = closure_4(max(5508).Text, obj6);
+    items4[1] = closure_4(max(5603).Text, obj6);
     tmp8Result = tmp8(tmp6, obj3);
   }
   items1[1] = tmp8Result;

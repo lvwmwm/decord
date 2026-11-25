@@ -1,17 +1,18 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 17071
+// Function ID: 17072
 // Name: HighlightNotificationsSetting
-// Dependencies: [4788, 9414, 1071, 504, 11815, 1112, 16951, 16930, 2]
+// Dependencies: [4883, 9513, 1071, 504, 11914, 1112, 17072, 3206, 17051, 2]
 // Exports: useHighlightNotifications
 
-// Module 16950 (HighlightNotificationsSetting)
+// Module 17071 (HighlightNotificationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16930 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11815 */;
+import _modDef3206 from "module_3206" /* 3206 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +47,17 @@ let obj = {
 const route = SettingBuilders.createRoute(obj);
 SettingBuilders = SettingBuilders_mod;
 const createRoute = SettingBuilders.createRoute;
-const obj2 = { parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS };
+const obj2 = {
+  useTitle() {
+    const intl = intl2.intl;
+    return intl.string(_modDef3206["Sq+zmG"]);
+  },
+  useDescription() {
+    const intl = intl2.intl;
+    return intl.string(_modDef3206.yHrluZ);
+  },
+  parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS
+};
 const merged = Object.assign(route);
 const route1 = createRoute(obj2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/HighlightNotificationsSetting.tsx");

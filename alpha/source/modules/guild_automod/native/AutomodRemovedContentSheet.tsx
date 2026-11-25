@@ -1,19 +1,19 @@
-// Module ID: 19486
-// Function ID: 19487
+// Module ID: 19598
+// Function ID: 19599
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1071, 21, 8082, 4917, 575, 1112, 6267, 7420, 7381, 8939, 5508, 2]
+// Dependencies: [19, 17, 1071, 21, 8181, 5012, 575, 1112, 6362, 7515, 7476, 9038, 5603, 2]
 // Exports: default
 
-// Module 19486 (AutomodRemovedContentSheet)
+// Module 19598 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6267 */;
-import RowGeneratorDefault from "RowGenerator" /* 8082 */;
-import ChatItemDefault from "ChatItem" /* 8939 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6362 */;
+import RowGeneratorDefault from "RowGenerator" /* 8181 */;
+import ChatItemDefault from "ChatItem" /* 9038 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -72,8 +72,8 @@ export default function AutomodRemovedContentSheet(action) {
     return messageRecord;
   }, items);
   const tmp5 = message;
-  const ActionSheet = message(7420).ActionSheet;
-  const BottomSheetTitleHeader = message(7381).BottomSheetTitleHeader;
+  const ActionSheet = message(7515).ActionSheet;
+  const BottomSheetTitleHeader = message(7476).BottomSheetTitleHeader;
   let intl = message(1112).intl;
   const string = intl.string;
   if (null != thread) {
@@ -94,7 +94,7 @@ export default function AutomodRemovedContentSheet(action) {
     tmp4Result = tmp4(tmp8, obj4);
   } else {
     const obj6 = { variant: "body-md/normal", color: "text-default", children: notice };
-    tmp4Result = tmp4(tmp5(5508).Text, obj6);
+    tmp4Result = tmp4(tmp5(5603).Text, obj6);
   }
   return jsx(ActionSheet, obj2);
 };

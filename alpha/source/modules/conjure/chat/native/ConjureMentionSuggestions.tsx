@@ -1,17 +1,17 @@
-// Module ID: 18666
-// Function ID: 18667
+// Module ID: 18778
+// Function ID: 18779
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 4917, 575, 6014, 1112, 4192, 6018, 1186, 4973, 18358, 2]
+// Dependencies: [19, 21, 5012, 575, 6109, 1112, 4244, 6113, 1186, 5068, 18470, 2]
 // Exports: default
 
-// Module 18666 (ConjureMentionSuggestions)
+// Module 18778 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import _modDef4192 from "module_4192" /* 4192 */;
-import TableRowGroup3 from "TableRowGroup" /* 6014 */;
+import _modDef4244 from "module_4244" /* 4244 */;
+import TableRowGroup3 from "TableRowGroup" /* 6109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -44,7 +44,7 @@ export default function ConjureMentionSuggestions(arg0) {
     const tmp13 = closure_4;
     if (found.length > 0) {
       let obj = {
-        title: intl.string(_modDef4192.Vb3sUg),
+        title: intl.string(_modDef4244.Vb3sUg),
         hasIcons: true,
         children: found.map((user) => {
               let Avatar;
@@ -74,7 +74,7 @@ export default function ConjureMentionSuggestions(arg0) {
     let tmp7 = null;
     if (found1.length > 0) {
       let obj2 = {
-        title: intl2.string(_modDef4192.zA5KLM),
+        title: intl2.string(_modDef4244.zA5KLM),
         hasIcons: true,
         children: found1.map((file) => {
               let obj2;

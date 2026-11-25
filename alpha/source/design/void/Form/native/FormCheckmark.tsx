@@ -1,13 +1,13 @@
-// Module ID: 7379
-// Function ID: 7380
+// Module ID: 7474
+// Function ID: 7475
 // Name: FormCheckmark
-// Dependencies: [19, 21, 7365, 575, 2]
+// Dependencies: [19, 21, 7460, 575, 2]
 // Exports: default
 
-// Module 7379 (FormCheckmark)
+// Module 7474 (FormCheckmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7365 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7460 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

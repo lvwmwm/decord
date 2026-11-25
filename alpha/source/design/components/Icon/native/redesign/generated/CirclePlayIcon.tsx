@@ -1,15 +1,15 @@
-// Module ID: 9805
-// Function ID: 9806
+// Module ID: 9904
+// Function ID: 9905
 // Name: CirclePlayIcon
-// Dependencies: [19, 17, 21, 575, 5603, 9806, 9807, 2]
+// Dependencies: [19, 17, 21, 575, 5698, 9905, 9906, 2]
 // Exports: CirclePlayIcon
 
-// Module 9805 (CirclePlayIcon)
+// Module 9904 (CirclePlayIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage3 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 9806 */;
-import AssetRegistry2 from "AssetRegistry" /* 9807 */;
+import BaseIconImage3 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 9905 */;
+import AssetRegistry2 from "AssetRegistry" /* 9906 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

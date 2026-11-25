@@ -1,10 +1,10 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18112
+// Function ID: 18113
 // Name: FocusModeOptionsActionSheet
-// Dependencies: [19, 21, 1088, 1112, 10473, 7420, 6014, 6018, 2]
+// Dependencies: [19, 21, 1088, 1112, 10572, 7515, 6109, 6113, 2]
 // Exports: default
 
-// Module 18000 (FocusModeOptionsActionSheet)
+// Module 18112 (FocusModeOptionsActionSheet)
 import DurationsDefault from "Durations" /* 1088 */;
 import intl5 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
@@ -70,11 +70,11 @@ export default function FocusModeOptionsActionSheet(onSelect) {
   let intl3;
   let intl4;
   onSelect = onSelect.onSelect;
-  let obj = onSelect(10473);
+  let obj = onSelect(10572);
   const focusModeEnabled = obj.useFocusModeEnabled();
-  const ActionSheet = onSelect(7420).ActionSheet;
+  const ActionSheet = onSelect(7515).ActionSheet;
   const obj2 = { title: intl.string(onSelect(1112).t["sNX1E+"]), hasIcons: false, children: items };
-  const TableRowGroup = onSelect(6014).TableRowGroup;
+  const TableRowGroup = onSelect(6109).TableRowGroup;
   intl = onSelect(1112).intl;
   let tmp4Result = null;
   const tmp5 = closure_3;
@@ -88,7 +88,7 @@ export default function FocusModeOptionsActionSheet(onSelect) {
       trailing: null,
       label: intl4.string(onSelect(1112).t.rk35Gm)
     };
-    let TableRow = tmp(6018).TableRow;
+    let TableRow = tmp(6113).TableRow;
     intl2 = tmp(1112).intl;
     intl3 = tmp(1112).intl;
     intl4 = tmp(1112).intl;

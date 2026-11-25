@@ -1,22 +1,22 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16885
+// Function ID: 16886
 // Name: FavoritesGuildToggleSetting
-// Dependencies: [9414, 11815, 1112, 3804, 16765, 10597, 2]
+// Dependencies: [9513, 11914, 1112, 3856, 16886, 10696, 2]
 
-// Module 16764 (FavoritesGuildToggleSetting)
+// Module 16885 (FavoritesGuildToggleSetting)
 import intl2 from "intl" /* 1112 */;
-import _modDef3804 from "module_3804" /* 3804 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10597 */;
-import useIsFavoritesGuildVisibleDefault from "useIsFavoritesGuildVisible" /* 16765 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import _modDef3856 from "module_3856" /* 3856 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10696 */;
+import useIsFavoritesGuildVisibleDefault from "useIsFavoritesGuildVisible" /* 16886 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3804.OT1NK5);
+    return intl.string(_modDef3856.OT1NK5);
   },
   parent: MobileUserSettings.APPEARANCE,
   useValue() {

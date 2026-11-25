@@ -1,13 +1,13 @@
-// Module ID: 17862
-// Function ID: 17863
+// Module ID: 17974
+// Function ID: 17975
 // Name: useCoverColor
-// Dependencies: [5, 32, 19, 4924, 1454, 671, 1491, 2]
+// Dependencies: [5, 32, 19, 5019, 1454, 671, 1491, 2]
 // Exports: coverArtColor, default
 
-// Module 17862 (useCoverColor)
+// Module 17974 (useCoverColor)
 import _modDef671 from "module_671" /* 671 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
-import shared from "shared" /* 4924 */;
+import shared from "shared" /* 5019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -81,7 +81,7 @@ function fetchCoverColor(arg0, uri) {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c2;
@@ -206,7 +206,7 @@ export default function useCoverColor(arg0, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -243,7 +243,7 @@ export default function useCoverColor(arg0, arg1) {
                 c2(obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp16) {
             c3 = 3;

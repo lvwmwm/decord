@@ -1,9 +1,9 @@
-// Module ID: 5633
-// Function ID: 5634
+// Module ID: 5728
+// Function ID: 5729
 // Name: MobileNativeUpdateConstants
 // Dependencies: [2168, 1378, 1379, 1377, 2]
 
-// Module 5633 (MobileNativeUpdateConstants)
+// Module 5728 (MobileNativeUpdateConstants)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import URLUtilsDefault from "URLUtils" /* 1379 */;
 import module_2168 from "module_2168" /* 2168 */;

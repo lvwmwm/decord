@@ -1,12 +1,12 @@
-// Module ID: 15186
-// Function ID: 15187
+// Module ID: 15308
+// Function ID: 15309
 // Name: GuildBadgeClover
-// Dependencies: [19, 21, 15154, 7813, 2]
+// Dependencies: [19, 21, 15276, 7912, 2]
 // Exports: GuildBadgeClover
 
-// Module 15186 (GuildBadgeClover)
-import inlineStyles from "inlineStyles" /* 7813 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15154 */;
+// Module 15308 (GuildBadgeClover)
+import inlineStyles from "inlineStyles" /* 7912 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15276 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

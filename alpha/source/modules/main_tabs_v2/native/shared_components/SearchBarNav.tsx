@@ -1,19 +1,19 @@
-// Module ID: 13110
-// Function ID: 13111
+// Module ID: 13233
+// Function ID: 13234
 // Name: SearchBarNav
-// Dependencies: [19, 17, 21, 4917, 5471, 575, 6026, 1112, 1378, 7069, 5508, 7280, 2]
+// Dependencies: [19, 17, 21, 5012, 5566, 575, 6121, 1112, 1378, 7164, 5603, 7375, 2]
 // Exports: default
 
-// Module 13110 (SearchBarNav)
+// Module 13233 (SearchBarNav)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import NavigatorConstants from "NavigatorConstants" /* 5471 */;
-import Pressables from "Pressables" /* 6026 */;
+import NavigatorConstants from "NavigatorConstants" /* 5566 */;
+import Pressables from "Pressables" /* 6121 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -53,10 +53,10 @@ export default function SearchBarNav(arg0) {
   const obj2 = PlatformUtils;
   if (obj2.isAndroid()) {
     const obj3 = { style: tmp2.cancelIcon };
-    tmp3Result = tmp3(tmp4(7069).ArrowLargeLeftIcon, obj3);
+    tmp3Result = tmp3(tmp4(7164).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp4(5508).Text;
+    const Text = tmp4(5603).Text;
     intl2 = tmp4(1112).intl;
     tmp3Result = tmp3(Text, obj4);
   }
@@ -72,7 +72,7 @@ export default function SearchBarNav(arg0) {
   const obj6 = { style: tmp2.flex, children: _false(React2, obj7) };
   obj7 = { children: _false(SearchBar, obj8) };
   obj8 = { size: "md", round: true, ref };
-  SearchBar = tmp4(7280).SearchBar;
+  SearchBar = tmp4(7375).SearchBar;
   const merged1 = Object.assign(merged);
   items[1] = _false(React2, obj6);
   let tmp12 = null;

@@ -1,25 +1,25 @@
-// Module ID: 7527
-// Function ID: 7528
+// Module ID: 7622
+// Function ID: 7623
 // Name: ChannelMemberStore
-// Dependencies: [5534, 6687, 502, 4766, 5538, 4829, 4823, 4788, 5888, 7528, 1386, 1071, 1112, 4854, 1250, 12, 1083, 504, 572, 2]
+// Dependencies: [5629, 6782, 502, 4861, 5633, 4924, 4918, 4883, 5983, 7623, 1386, 1071, 1112, 4949, 1250, 12, 1083, 504, 572, 2]
 
-// Module 7527 (ChannelMemberStore)
+// Module 7622 (ChannelMemberStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import _modDef1250 from "module_1250" /* 1250 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4854 */;
-import ExperimentStore from "ExperimentStore" /* 5534 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6687 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4949 */;
+import ExperimentStore from "ExperimentStore" /* 5629 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5538 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildRoleStore from "GuildRoleStore" /* 4823 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PresenceStore from "PresenceStore" /* 5888 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7528 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5633 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildRoleStore from "GuildRoleStore" /* 4918 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PresenceStore from "PresenceStore" /* 5983 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 7623 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

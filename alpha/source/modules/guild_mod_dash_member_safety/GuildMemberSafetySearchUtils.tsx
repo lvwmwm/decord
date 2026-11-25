@@ -1,11 +1,11 @@
-// Module ID: 8141
-// Function ID: 8142
+// Module ID: 8240
+// Function ID: 8241
 // Name: GuildMemberSafetySearchUtils
-// Dependencies: [8042, 2]
+// Dependencies: [8141, 2]
 // Exports: splitQuery
 
-// Module 8141 (GuildMemberSafetySearchUtils)
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8042 */;
+// Module 8240 (GuildMemberSafetySearchUtils)
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8141 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearchUtils.tsx");

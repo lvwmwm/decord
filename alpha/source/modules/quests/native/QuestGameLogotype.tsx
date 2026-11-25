@@ -1,16 +1,16 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16691
+// Function ID: 16692
 // Name: QuestGameLogotype
-// Dependencies: [32, 19, 17, 21, 5519, 4917, 575, 1653, 5518, 7813, 5604, 2]
+// Dependencies: [32, 19, 17, 21, 5614, 5012, 575, 1653, 5613, 7912, 5699, 2]
 
-// Module 16570 (QuestGameLogotype)
+// Module 16691 (QuestGameLogotype)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import springPresets from "springPresets" /* 5519 */;
+import springPresets from "springPresets" /* 5614 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

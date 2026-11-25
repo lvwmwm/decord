@@ -1,10 +1,10 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15113
+// Function ID: 15114
 // Name: DeclarativeNotificationSettingsRedesignExperiment
 // Dependencies: [1450, 2]
 // Exports: isDeclarativeNotificationSettingsRedesignEnabled, useIsDeclarativeNotificationSettingsRedesignEnabled
 
-// Module 14991 (DeclarativeNotificationSettingsRedesignExperiment)
+// Module 15113 (DeclarativeNotificationSettingsRedesignExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

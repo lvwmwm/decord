@@ -1,19 +1,19 @@
-// Module ID: 19253
-// Function ID: 19254
+// Module ID: 19365
+// Function ID: 19366
 // Name: PlayableActivityFrameHeader
-// Dependencies: [19, 17, 5543, 6745, 21, 4917, 575, 19254, 19248, 19233, 7561, 5177, 16395, 5508, 1112, 4663, 7811, 7121, 5926, 2]
+// Dependencies: [19, 17, 5638, 6840, 21, 5012, 575, 19366, 19360, 19345, 7660, 5272, 16516, 5603, 1112, 4726, 7910, 7216, 6021, 2]
 // Exports: default
 
-// Module 19253 (PlayableActivityFrameHeader)
+// Module 19365 (PlayableActivityFrameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5543 */;
-import AlertModal from "AlertModal" /* 5926 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
+import AlertModal from "AlertModal" /* 6021 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

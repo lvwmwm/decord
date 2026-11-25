@@ -1,12 +1,12 @@
-// Module ID: 12439
-// Function ID: 12440
+// Module ID: 12603
+// Function ID: 12604
 // Name: useCheckpointCharacterImages
-// Dependencies: [19, 6293, 12440, 2]
+// Dependencies: [19, 6388, 12604, 2]
 // Exports: default
 
-// Module 12439 (useCheckpointCharacterImages)
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6293 */;
-import useCompositeImagesLoadedDefault from "useCompositeImagesLoaded" /* 12440 */;
+// Module 12603 (useCheckpointCharacterImages)
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6388 */;
+import useCompositeImagesLoadedDefault from "useCompositeImagesLoaded" /* 12604 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

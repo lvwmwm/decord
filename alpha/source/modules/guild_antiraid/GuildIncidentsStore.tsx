@@ -1,16 +1,16 @@
-// Module ID: 10451
-// Function ID: 10452
+// Module ID: 10550
+// Function ID: 10551
 // Name: GuildIncidentsStore
-// Dependencies: [5534, 1230, 4788, 4849, 10452, 504, 572, 2]
+// Dependencies: [5629, 1230, 4883, 4944, 10551, 504, 572, 2]
 
-// Module 10451 (GuildIncidentsStore)
+// Module 10550 (GuildIncidentsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 10452 */;
-import ExperimentStore from "ExperimentStore" /* 5534 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 10551 */;
+import ExperimentStore from "ExperimentStore" /* 5629 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;
@@ -45,7 +45,7 @@ function updateGuildIncident(id) {
     let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
     const tmp6 = require;
     if (!hasDetectedActivityResult) {
-      const tmp6Result = tmp6(10452);
+      const tmp6Result = tmp6(10551);
       hasDetectedActivityResult = tmp6Result.isUnderLockdown(incidentsData);
     }
     if (hasDetectedActivityResult) {
@@ -108,7 +108,7 @@ let obj = {
       let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
       const tmp5 = require;
       if (!hasDetectedActivityResult) {
-        const tmp5Result = tmp5(10452);
+        const tmp5Result = tmp5(10551);
         hasDetectedActivityResult = tmp5Result.isUnderLockdown(incidentsData);
       }
       if (hasDetectedActivityResult) {
@@ -141,7 +141,7 @@ let obj = {
       let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
       const tmp5 = require;
       if (!hasDetectedActivityResult) {
-        const tmp5Result = tmp5(10452);
+        const tmp5Result = tmp5(10551);
         hasDetectedActivityResult = tmp5Result.isUnderLockdown(incidentsData);
       }
       if (hasDetectedActivityResult) {

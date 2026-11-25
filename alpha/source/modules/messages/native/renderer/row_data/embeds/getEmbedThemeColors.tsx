@@ -1,20 +1,20 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12335
+// Function ID: 12336
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4917, 4924, 575, 4914, 2]
+// Dependencies: [19, 5012, 5019, 575, 5009, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 12236 (getEmbedThemeColors)
+// Module 12335 (getEmbedThemeColors)
 import nativeDefault from "native" /* 575 */;
-import shared from "shared" /* 4924 */;
+import shared from "shared" /* 5019 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let theme;
 
 let tmp;
-const ColorUtils = tmp(4914);
+const ColorUtils = tmp(5009);
 let createStyles = createStyles_mod;
 const result = createStyles.experimental_createToken((theme) => {
   theme = theme.theme;

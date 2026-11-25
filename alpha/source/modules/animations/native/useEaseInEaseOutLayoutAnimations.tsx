@@ -1,18 +1,18 @@
-// Module ID: 13577
-// Function ID: 13578
+// Module ID: 13700
+// Function ID: 13701
 // Name: useEaseInEaseOutLayoutAnimations
-// Dependencies: [32, 19, 4918, 1653, 504, 1378, 2]
+// Dependencies: [32, 19, 5013, 1653, 504, 1378, 2]
 // Exports: default, useTriggeredLayoutTransition
 
-// Module 13577 (useEaseInEaseOutLayoutAnimations)
+// Module 13700 (useEaseInEaseOutLayoutAnimations)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import size from "module_2" /* 2 */;
 
-const f104278 = () => useReducedMotion.useReducedMotion;
+const f104675 = () => useReducedMotion.useReducedMotion;
 const Easing = _mod1653.Easing;
 let closure_5 = Easing.inOut(_mod1653.Easing.ease);
 const result = size.fileFinishedImporting("modules/animations/native/useEaseInEaseOutLayoutAnimations.tsx");
@@ -21,7 +21,7 @@ export default function useEaseInEaseOutLayoutAnimations() {
   let stateFromStores;
   const items = [AccessibilityStore];
   const obj = stateFromStores(504);
-  stateFromStores = obj.useStateFromStores(items, f104278);
+  stateFromStores = obj.useStateFromStores(items, f104675);
   const items1 = [stateFromStores];
   return react.useMemo(() => {
     let easingResult;
@@ -54,7 +54,7 @@ export function useTriggeredLayoutTransition() {
   let useReducedMotion;
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
-  stateFromStores = obj.useStateFromStores(items, f104278);
+  stateFromStores = obj.useStateFromStores(items, f104675);
   let obj2 = react;
   const items1 = [stateFromStores];
   const layout = react.useMemo(() => {

@@ -1,15 +1,15 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 12816
+// Function ID: 12817
 // Name: CheckpointPressable
-// Dependencies: [17, 6270, 21, 575, 4917, 2]
+// Dependencies: [17, 6365, 21, 575, 5012, 2]
 // Exports: default
 
-// Module 12652 (CheckpointPressable)
+// Module 12816 (CheckpointPressable)
 import nativeDefault from "native" /* 575 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6270 */;
+import CheckpointConstants from "CheckpointConstants" /* 6365 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let CHECKPOINT_CONTROL_SIZE;

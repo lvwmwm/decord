@@ -1,14 +1,14 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 17173
+// Function ID: 17174
 // Name: TeacupIcon
-// Dependencies: [19, 21, 575, 5603, 17055, 2]
+// Dependencies: [19, 21, 575, 5698, 17174, 2]
 // Exports: TeacupIcon
 
-// Module 17054 (TeacupIcon)
+// Module 17173 (TeacupIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 17055 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 17174 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

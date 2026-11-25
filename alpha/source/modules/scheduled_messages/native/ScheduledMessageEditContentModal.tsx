@@ -1,24 +1,24 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 9597
+// Function ID: 9598
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 4766, 21, 4917, 575, 1628, 9499, 504, 8203, 9468, 9467, 6004, 1112, 7072, 8863, 1378, 7065, 6026, 5508, 7314, 2]
+// Dependencies: [5, 32, 19, 17, 4861, 21, 5012, 575, 1628, 9598, 504, 8302, 9567, 9566, 6099, 1112, 7167, 8962, 1378, 7160, 6121, 5603, 7409, 2]
 // Exports: default
 
-// Module 9498 (ScheduledMessageEditContentModal)
+// Module 9597 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import Pressables from "Pressables" /* 6026 */;
-import MessageParserDefault from "MessageParser" /* 8203 */;
-import HeaderShared from "HeaderShared" /* 8863 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9468 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import Pressables from "Pressables" /* 6121 */;
+import MessageParserDefault from "MessageParser" /* 8302 */;
+import HeaderShared from "HeaderShared" /* 8962 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9567 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -84,7 +84,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -120,7 +120,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
             arr.pop();
           }
           stateFromStores = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         stateFromStores = 3;

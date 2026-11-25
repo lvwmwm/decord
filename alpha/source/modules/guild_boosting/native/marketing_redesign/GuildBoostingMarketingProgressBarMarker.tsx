@@ -1,23 +1,23 @@
-// Module ID: 14610
-// Function ID: 14611
+// Module ID: 14732
+// Function ID: 14733
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1071, 21, 14611, 14612, 14613, 4917, 575, 5126, 1653, 4914, 4924, 5518, 13399, 5604, 11897, 5508, 10222, 2]
+// Dependencies: [19, 17, 1071, 21, 14733, 14734, 14735, 5012, 575, 5221, 1653, 5009, 5019, 5613, 13522, 5699, 11996, 5603, 10321, 2]
 // Exports: default
 
-// Module 14610 (GuildBoostingMarketingProgressBarMarker)
+// Module 14732 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import useThemeDefault from "useTheme" /* 5126 */;
-import spring_spring from "spring/spring" /* 5518 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11897 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14611 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14612 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14613 */;
+import useThemeDefault from "useTheme" /* 5221 */;
+import spring_spring from "spring/spring" /* 5613 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11996 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14733 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14734 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14735 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set;
@@ -56,7 +56,7 @@ function ProgressBarMarkerInnerContent(arg0) {
   isTierUnlocked = undefined;
   ({ isTierAnimated, isCurrentTier, useReducedMotion, isDisabled } = arg0);
   let tmp = closure_10();
-  const tmp4 = isTierUnlocked(5126)();
+  const tmp4 = isTierUnlocked(5221)();
   let obj = sharedValue(1653);
   let num = 1;
   sharedValue = obj.useSharedValue(1);
@@ -66,10 +66,10 @@ function ProgressBarMarkerInnerContent(arg0) {
   if (isTierUnlocked) {
     PREMIUM_PERK_PINK = tmp2(575).unsafe_rawColors.PREMIUM_PERK_PINK;
   } else {
-    const hexWithOpacity = tmp5(4914).hexWithOpacity;
-    sharedValue(4914);
+    const hexWithOpacity = tmp5(5009).hexWithOpacity;
+    sharedValue(5009);
     const WHITE = tmp2(575).unsafe_rawColors.WHITE;
-    const tmp5Result3 = sharedValue(4924);
+    const tmp5Result3 = sharedValue(5019);
     if (tmp5Result3.isThemeDark(tmp4)) {
       num = 0.5;
     }
@@ -116,11 +116,11 @@ function ProgressBarMarkerInnerContent(arg0) {
   if (tier !== BoostedGuildTiers.NONE) {
     let tmp23Result;
     if (isDisabled) {
-      tmp23Result = tmp23(tmp5(13399).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+      tmp23Result = tmp23(tmp5(13522).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
     } else {
       obj2 = { source: obj2[tier], style: items3 };
       items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
-      const tmp2Result = isTierUnlocked(5604);
+      const tmp2Result = isTierUnlocked(5699);
       const unsafe_rawColors = tmp2(575).unsafe_rawColors;
       const obj3 = { tintColor: isTierUnlocked ? unsafe_rawColors.WHITE : unsafe_rawColors.PREMIUM_PERK_PINK };
       items3[1] = obj3;
@@ -253,16 +253,16 @@ export default function ProgressBarMarker(arg0) {
     }
     items7 = [tmp25Result, ];
     const obj8 = { variant: "body-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
-    const Text = tmp5(5508).Text;
-    tmp5Result4 = sharedValue(10222);
+    const Text = tmp5(5603).Text;
+    tmp5Result4 = sharedValue(10321);
     items7[1] = closure_6(Text, obj8);
     items5[2] = closure_7(View, obj6);
     return closure_7(View, obj2);
   }
-  const tmp5Result5 = sharedValue(4924);
+  const tmp5Result5 = sharedValue(5019);
   const isThemeDarkResult = tmp5Result5.isThemeDark(tmp4);
-  const hexWithOpacity = tmp5(4914).hexWithOpacity;
-  sharedValue(4914);
+  const hexWithOpacity = tmp5(5009).hexWithOpacity;
+  sharedValue(5009);
   const unsafe_rawColors = tmp2(575).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);

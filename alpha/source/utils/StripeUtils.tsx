@@ -1,10 +1,10 @@
-// Module ID: 5695
-// Function ID: 5696
+// Module ID: 5790
+// Function ID: 5791
 // Name: StripeUtils
-// Dependencies: [5, 32, 2188, 1071, 3, 5696, 1241, 5697, 1284, 504, 2]
-// Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
+// Dependencies: [5, 32, 2188, 1071, 3, 5791, 1241, 5792, 1284, 504, 2]
+// Exports: authenticatePaymentIntentForPaymentId, getPendingPaymentChallenge, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 5695 (StripeUtils)
+// Module 5790 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -14,7 +14,7 @@ import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c6, locale;
+let _require, closure_2, error, locale;
 
 let metroImportDefault;
 let metroRequire;
@@ -66,7 +66,7 @@ function getStripe(payment_gateway_merchant_account_id) {
   } else {
     const tmp3 = _require;
     let tmp4 = dependencyMap;
-    let obj2 = require("module_5697");
+    let obj2 = require("module_5792");
     let closure_1 = obj2.loadStripe(tmp);
     const tmp6 = (async (arg0, value) => {
       if (c5 === 2) {
@@ -79,7 +79,7 @@ function getStripe(payment_gateway_merchant_account_id) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -168,190 +168,203 @@ let obj = function _fetchStripePaymentIntentInfo() {
   return obj(...arguments);
 };
 obj = function _authenticatePaymentIntentForPaymentId() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      let c4;
-      let error;
-      try {
-        let clientSecret;
-        let merchantAccountId;
-        let closure_4;
-        let paymentIntent;
-        let closure_7;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp;
-            let closure_1 = tmp4;
-            closure_0 = undefined;
-            clientSecret = undefined;
-            merchantAccountId = undefined;
-            closure_4 = undefined;
-            paymentIntent = undefined;
-            closure_7 = undefined;
-            error = undefined;
-            c4 = 1;
-            c5 = 2;
-            c6 = 1;
-            const obj4 = { value: fetchStripePaymentIntentInfo(closure_0), done: false };
-            return obj4;
-          }
-        } else if (1 === c5) {
-          c4 = 0;
-          const obj5 = { error };
-          c6 = 3;
-          const obj6 = { value: obj5, done: true };
-          return obj6;
-        } else if (2 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 0;
-            c6 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            closure_0 = value;
-            clientSecret = closure_0.clientSecret;
-            merchantAccountId = closure_0.merchantAccountId;
-            c5 = 3;
-            c6 = 1;
-            const obj8 = { value: closure_130_12(merchantAccountId), done: false };
-            return obj8;
-          }
-        } else if (3 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 0;
-            c6 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
-          } else {
-            error = value;
-            if (null == error) {
-              c4 = 0;
-              c6 = 3;
-              const obj10 = { value: { error: "unable to load stripe" }, done: true };
-              return obj10;
-            } else {
-              c5 = 4;
-              c6 = 1;
-              const obj11 = { value: error.retrievePaymentIntent(clientSecret), done: false };
-              return obj11;
-            }
-          }
-        } else if (4 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 0;
-            c6 = 3;
-            const obj12 = { value, done: true };
-            return obj12;
-          } else {
-            closure_4 = value;
-            error = closure_4.error;
-            paymentIntent = closure_4.paymentIntent;
-            if (null != error) {
-              const obj13 = { error };
-              c4 = 0;
-              c6 = 3;
-              const obj14 = { value: obj13, done: true };
-              return obj14;
-            } else if (null == paymentIntent) {
-              c4 = 0;
-              c6 = 3;
-              const obj15 = { value: { error: "payment intent does not exist" }, done: true };
-              return obj15;
-            } else {
-              closure_7 = {};
-              const tmp11 = paymentIntent.status === closure_130_11.REQUIRES_PAYMENT_METHOD && null != paymentIntent.last_payment_error && null != paymentIntent.last_payment_error.payment_method;
-              if (tmp11) {
-                closure_7.payment_method = paymentIntent.last_payment_error.payment_method.id;
-              }
-              const status = paymentIntent.status;
-              if (closure_130_11.REQUIRES_PAYMENT_METHOD !== status) {
-                if (closure_130_11.REQUIRES_CONFIRMATION !== status) {
-                  if (closure_130_11.REQUIRES_ACTION !== status) {
-                    if (closure_130_11.SUCCEEDED !== status) {
-                      if (closure_130_11.PROCESSING !== status) {
-                        const CANCELED = closure_130_11.CANCELED;
-                        const obj16 = { error: "Invalid Payment Intent status: " + paymentIntent.status };
-                        const _HermesInternal = HermesInternal;
-                        c4 = 0;
-                        c6 = 3;
-                        const obj17 = { value: obj16, done: true };
-                        return obj17;
-                      }
-                    }
-                    c4 = 0;
-                    c6 = 3;
-                    const obj18 = { value: {}, done: true };
-                    return obj18;
-                  }
-                }
-              }
-              c5 = 5;
-              c6 = 1;
-              const obj19 = { value: error.confirmCardPayment(clientSecret, closure_7), done: false };
-              return obj19;
-            }
-          }
-        } else if (arg0 === 1) {
-          c6 = 3;
+  obj = _asyncToGenerator(async (paymentId) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          const obj20 = { value, done: true };
-          return obj20;
+          return { value, done: true };
         } else {
-          error = value.error;
-          if (null != error) {
-            const obj21 = { error };
-            obj = obj21;
-          } else {
-            obj = {};
-          }
-          c4 = 0;
-          c6 = 3;
-          const obj22 = { value: obj, done: true };
-          return obj22;
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
-      } catch (tmp48) {
-        error = tmp48;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp48;
-        } else {
-          c5 = 1;
+      } else {
+        try {
+          let clientSecret;
+          let merchantAccountId;
+          let closure_4;
+          let closure_5;
+          let paymentIntent;
+          let closure_8;
+          let obj19;
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              closure_1 = undefined;
+              clientSecret = undefined;
+              merchantAccountId = undefined;
+              closure_4 = undefined;
+              closure_5 = undefined;
+              paymentIntent = undefined;
+              closure_8 = undefined;
+              obj19 = undefined;
+              error = undefined;
+              c4 = 1;
+              c5 = 2;
+              c6 = 1;
+              const obj4 = { value: fetchStripePaymentIntentInfo(paymentId), done: false };
+              return obj4;
+            }
+          } else if (1 === c5) {
+            c4 = 0;
+            c6 = 3;
+            return { value: { error }, done: true };
+          } else if (2 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_1 = value;
+              clientSecret = closure_1.clientSecret;
+              merchantAccountId = closure_1.merchantAccountId;
+              c5 = 3;
+              c6 = 1;
+              const obj8 = { value: closure_130_12(merchantAccountId), done: false };
+              return obj8;
+            }
+          } else if (3 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = value;
+              if (null == closure_4) {
+                c4 = 0;
+                c6 = 3;
+                return { value: { error: "unable to load stripe" }, done: true };
+              } else {
+                c5 = 4;
+                c6 = 1;
+                const obj11 = { value: closure_4.retrievePaymentIntent(clientSecret), done: false };
+                return obj11;
+              }
+            }
+          } else if (4 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_5 = value;
+              error = closure_5.error;
+              paymentIntent = closure_5.paymentIntent;
+              if (null != error) {
+                c4 = 0;
+                c6 = 3;
+                return { value: { error }, done: true };
+              } else if (null == paymentIntent) {
+                c4 = 0;
+                c6 = 3;
+                return { value: { error: "payment intent does not exist" }, done: true };
+              } else {
+                closure_8 = {};
+                const tmp25 = paymentIntent.status === constants.REQUIRES_PAYMENT_METHOD && null != paymentIntent.last_payment_error && null != paymentIntent.last_payment_error.payment_method;
+                if (tmp25) {
+                  closure_8.payment_method = paymentIntent.last_payment_error.payment_method.id;
+                }
+                const status = paymentIntent.status;
+                if (constants.REQUIRES_PAYMENT_METHOD !== status) {
+                  if (constants.REQUIRES_CONFIRMATION !== status) {
+                    if (constants.REQUIRES_ACTION !== status) {
+                      if (constants.SUCCEEDED !== status) {
+                        if (constants.PROCESSING !== status) {
+                          const CANCELED = constants.CANCELED;
+                          const _HermesInternal = HermesInternal;
+                          c4 = 0;
+                          c6 = 3;
+                          const obj17 = { value: { error: "Invalid Payment Intent status: " + paymentIntent.status }, done: true };
+                          return obj17;
+                        }
+                      }
+                      c4 = 0;
+                      c6 = 3;
+                      return { value: {}, done: true };
+                    }
+                  }
+                }
+                obj19 = { paymentId, startedAt: Date.now() };
+                const _Date = Date;
+                if (null == c15) {
+                  c15 = obj19;
+                }
+                c4 = 2;
+                c5 = 6;
+                c6 = 1;
+                const obj20 = { value: closure_4.confirmCardPayment(clientSecret, closure_8), done: false };
+                return obj20;
+              }
+            }
+          } else if (5 === c5) {
+            c4 = 1;
+            const tmp19 = error;
+            if (c15 === obj19) {
+              c15 = null;
+            }
+            throw tmp19;
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 1;
+            if (c15 === obj19) {
+              c15 = null;
+            }
+            c4 = 0;
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            error = value.error;
+            if (null != error) {
+              obj = { error };
+              const obj22 = { error };
+            } else {
+              obj = {};
+            }
+            c4 = 1;
+            if (c15 === obj19) {
+              c15 = null;
+            }
+            c4 = 0;
+            c6 = 3;
+            return { value: obj, done: true };
+          }
+        } catch (tmp69) {
+          error = tmp69;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp69;
+          } else if (1 === tmp71) {
+            c5 = 1;
+          } else {
+            c5 = 5;
+          }
         }
       }
-    }
+    })();
   });
   return obj(...arguments);
 };
@@ -361,7 +374,8 @@ const logger = tmp3;
 const map = new Map();
 const set = new Set();
 let closure_11 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
-let closure_16 = { "en-US": "en", "zh-CN": "zh", "sv-SE": "sv" };
+let c15 = null;
+let closure_17 = { "en-US": "en", "zh-CN": "zh", "sv-SE": "sv" };
 let result = size.fileFinishedImporting("utils/StripeUtils.tsx");
 
 export function validateExpiry(arg0) {
@@ -519,11 +533,14 @@ export function parseStripePaymentMethod(billing_details) {
 export function parseBillingAddressInfoToStripeBillingDetails(c1) {
   return { name: c1.name, address: { line1: c1.line1, line2: c1.line2, city: c1.city, state: c1.state, postal_code: c1.postalCode, country: c1.country } };
 }
+export function getPendingPaymentChallenge() {
+  return c15;
+}
 export function authenticatePaymentIntentForPaymentId() {
   return obj(...arguments);
 }
 export function getStripeElementLocale(arg0) {
-  let tmp = closure_16[arg0];
+  let tmp = closure_17[arg0];
   if (tmp == null) {
     tmp = arg0;
   }
@@ -534,7 +551,7 @@ export function useStripeLocale() {
   obj = get_initialized;
   return obj.useStateFromStores(items, () => {
     locale = locale.locale;
-    let tmp = closure_1_16[locale];
+    let tmp = closure_1_17[locale];
     if (tmp == null) {
       tmp = locale;
     }

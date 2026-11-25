@@ -1,8 +1,8 @@
-// Module ID: 6531
-// Function ID: 6532
+// Module ID: 6626
+// Function ID: 6627
 // Dependencies: [2]
 
-// Module 6531
+// Module 6626
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/confused.png.js");

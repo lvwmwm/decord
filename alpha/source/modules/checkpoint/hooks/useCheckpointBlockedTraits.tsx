@@ -1,14 +1,14 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12620
+// Function ID: 12621
 // Name: useCheckpointBlockedTraits
-// Dependencies: [1386, 12407, 504, 2108, 6317, 6316, 2]
+// Dependencies: [1386, 12571, 504, 2108, 6412, 6411, 2]
 // Exports: default
 
-// Module 12456 (useCheckpointBlockedTraits)
+// Module 12620 (useCheckpointBlockedTraits)
 import get_initialized from "get initialized" /* 504 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6316 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6411 */;
 import UserStore from "UserStore" /* 1386 */;
-import CheckpointStore from "CheckpointStore" /* 12407 */;
+import CheckpointStore from "CheckpointStore" /* 12571 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/checkpoint/hooks/useCheckpointBlockedTraits.tsx");

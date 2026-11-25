@@ -1,28 +1,28 @@
-// Module ID: 10955
-// Function ID: 10956
+// Module ID: 11054
+// Function ID: 11055
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 7983, 10956, 21, 1653, 4917, 575, 4914, 1186, 10697, 5508, 504, 7993, 10957, 1112, 8013, 7995, 10958, 10959, 5127, 1494, 10960, 7027, 9477, 2]
+// Dependencies: [19, 17, 8082, 11055, 21, 1653, 5012, 575, 5009, 1186, 10796, 5603, 504, 8092, 11056, 1112, 8112, 8094, 11057, 11058, 5222, 1494, 11059, 7122, 9576, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10955 (MediaKeyboardItem)
+// Module 11054 (MediaKeyboardItem)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import ImageIcon from "ImageIcon" /* 7027 */;
-import AttachmentIcon from "AttachmentIcon" /* 9477 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10697 */;
-import CameraIcon from "CameraIcon" /* 10960 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import ImageIcon from "ImageIcon" /* 7122 */;
+import AttachmentIcon from "AttachmentIcon" /* 9576 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10796 */;
+import CameraIcon from "CameraIcon" /* 11059 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7983 */;
-import DeviceConstants from "DeviceConstants" /* 10956 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8082 */;
+import DeviceConstants from "DeviceConstants" /* 11055 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
-import ColorUtils_mod from "ColorUtils" /* 4914 */;
+import createStyles_mod from "createStyles" /* 5012 */;
+import ColorUtils_mod from "ColorUtils" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const module_1653 = _mod1653;

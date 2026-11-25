@@ -1,8 +1,8 @@
-// Module ID: 12474
-// Function ID: 12475
+// Module ID: 12638
+// Function ID: 12639
 // Dependencies: [2]
 
-// Module 12474
+// Module 12638
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_aura_10_magnetic.webp.js");

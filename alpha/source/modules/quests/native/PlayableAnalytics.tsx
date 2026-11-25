@@ -1,13 +1,13 @@
-// Module ID: 16504
-// Function ID: 16505
+// Module ID: 16625
+// Function ID: 16626
 // Name: PlayableAnalytics
-// Dependencies: [8241, 6752, 6750, 2]
+// Dependencies: [8340, 6847, 6845, 2]
 // Exports: trackPlayableEvent
 
-// Module 16504 (PlayableAnalytics)
-import QuestContent from "QuestContent" /* 6750 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import AnalyticsActions from "AnalyticsActions" /* 8241 */;
+// Module 16625 (PlayableAnalytics)
+import QuestContent from "QuestContent" /* 6845 */;
+import AdCreativeType from "AdCreativeType" /* 6847 */;
+import AnalyticsActions from "AnalyticsActions" /* 8340 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/PlayableAnalytics.tsx");

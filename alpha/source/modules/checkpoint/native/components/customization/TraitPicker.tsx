@@ -1,24 +1,24 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 12869
+// Function ID: 12870
 // Name: TraitPicker
-// Dependencies: [19, 17, 21, 4917, 12703, 575, 6639, 1112, 3442, 5508, 12426, 1494, 5097, 12706, 12708, 2]
+// Dependencies: [19, 17, 21, 5012, 12867, 575, 6734, 1112, 3494, 5603, 12590, 1494, 5192, 12870, 12872, 2]
 // Exports: default, useTraitOptionSize
 
-// Module 12705 (TraitPicker)
+// Module 12869 (TraitPicker)
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import _modDef3442 from "module_3442" /* 3442 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5097 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6639 */;
-import CheckpointTextDefault from "CheckpointText" /* 12426 */;
-import TraitOptionList from "TraitOptionList" /* 12703 */;
-import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12706 */;
-import useTraitPicker from "useTraitPicker" /* 12708 */;
+import _modDef3494 from "module_3494" /* 3494 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5192 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
+import CheckpointTextDefault from "CheckpointText" /* 12590 */;
+import TraitOptionList from "TraitOptionList" /* 12867 */;
+import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12870 */;
+import useTraitPicker from "useTraitPicker" /* 12872 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const TraitOptionListDefault = TraitOptionList;
@@ -50,8 +50,8 @@ function EarnedCountHeader(customizationOption) {
       return arg0;
     }
   };
-  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3442.Vfq58K, obj2);
-  const obj3 = { variant: "body-md/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3442.Vfq58K, obj4) };
+  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3494.Vfq58K, obj2);
+  const obj3 = { variant: "body-md/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3494.Vfq58K, obj4) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj4 = {

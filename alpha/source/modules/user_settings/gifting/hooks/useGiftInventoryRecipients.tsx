@@ -1,12 +1,12 @@
-// Module ID: 13848
-// Function ID: 13849
+// Module ID: 13971
+// Function ID: 13972
 // Name: useGiftInventoryRecipients
-// Dependencies: [5, 19, 1386, 6008, 13845, 2]
+// Dependencies: [5, 19, 1386, 6103, 13968, 2]
 // Exports: default
 
-// Module 13848 (useGiftInventoryRecipients)
-import UserActionCreators from "UserActionCreators" /* 6008 */;
-import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 13845 */;
+// Module 13971 (useGiftInventoryRecipients)
+import UserActionCreators from "UserActionCreators" /* 6103 */;
+import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 13968 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -31,7 +31,7 @@ let obj = function _fetchRecipient() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -68,7 +68,7 @@ let obj = function _fetchRecipient() {
             c3 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         if (0 === c3) {

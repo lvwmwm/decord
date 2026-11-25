@@ -1,10 +1,10 @@
-// Module ID: 18121
-// Function ID: 18122
+// Module ID: 18233
+// Function ID: 18234
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1071, 13519, 21, 4917, 10499, 575, 1378, 1500, 1255, 1186, 5523, 18116, 6026, 18117, 15308, 5508, 1112, 7374, 2]
+// Dependencies: [19, 17, 1071, 13642, 21, 5012, 10598, 575, 1378, 1500, 1255, 1186, 5618, 18228, 6121, 18229, 15430, 5603, 1112, 7469, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 18121 (ForYouShowAllRow)
+// Module 18233 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,17 +12,17 @@ import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import useFontScale from "useFontScale" /* 5523 */;
-import Pressables from "Pressables" /* 6026 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7374 */;
-import ChannelListLayout from "ChannelListLayout" /* 10499 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13519 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15308 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18116 */;
-import ChannelWrapper from "ChannelWrapper" /* 18117 */;
+import useFontScale from "useFontScale" /* 5618 */;
+import Pressables from "Pressables" /* 6121 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7469 */;
+import ChannelListLayout from "ChannelListLayout" /* 10598 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13642 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15430 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18228 */;
+import ChannelWrapper from "ChannelWrapper" /* 18229 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -70,7 +70,7 @@ function ForYouShowAllRow(panelVariant) {
   items1 = [metroImportDefault(View, obj5), , ];
   const obj9 = { style: tmp4.textContainer, children: metroImportDefault(Text, obj10) };
   obj10 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: intl.format(intl2.t.NrzztX, { count }) };
-  Text = tmp(5508).Text;
+  Text = tmp(5603).Text;
   intl = tmp(1112).intl;
   items1[1] = metroImportDefault(View, obj9);
   const obj11 = { style: tmp4.icon, color: tmp4.iconColor.color, source: AssetRegistryDefault, size: native.IconSizes.CUSTOM };

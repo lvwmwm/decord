@@ -1,12 +1,12 @@
-// Module ID: 17664
-// Function ID: 17665
+// Module ID: 17775
+// Function ID: 17776
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [4850, 1071, 504, 2]
+// Dependencies: [4945, 1071, 504, 2]
 // Exports: default, isGameCommunityServerPreview
 
-// Module 17664 (useIsGameCommunityServerPreview)
+// Module 17775 (useIsGameCommunityServerPreview)
 import Constants from "Constants" /* 1071 */;
-import LurkingStore from "LurkingStore" /* 4850 */;
+import LurkingStore from "LurkingStore" /* 4945 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

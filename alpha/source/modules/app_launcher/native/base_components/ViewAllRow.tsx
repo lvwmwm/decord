@@ -1,16 +1,16 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 13004
+// Function ID: 13005
 // Name: ViewAllRow
-// Dependencies: [19, 17, 21, 4917, 6018, 1112, 5508, 2]
+// Dependencies: [19, 17, 21, 5012, 6113, 1112, 5603, 2]
 // Exports: default
 
-// Module 12880 (ViewAllRow)
+// Module 13004 (ViewAllRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
-import TableRow2 from "TableRow" /* 6018 */;
+import TableRow2 from "TableRow" /* 6113 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -31,7 +31,7 @@ export default function ViewAllRow(title) {
     formatToPlainStringResult = intl.formatToPlainString(tmp3(1112).t["bj/2kV"], obj);
   }
   ({ color: "text-brand", variant: "body-md/semibold", children: intl2.format(intl3.t.gVw57p, {}) });
-  const Text = tmp3(5508).Text;
+  const Text = tmp3(5603).Text;
   intl2 = tmp3(1112).intl;
   return <TableRow accessibilityLabel={formatToPlainStringResult} label={null} onPress={onPress} end />;
 };

@@ -1,15 +1,15 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 15028
+// Function ID: 15029
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 4766, 504, 1112, 11212, 7714, 2]
+// Dependencies: [5, 19, 4861, 504, 1112, 11311, 7813, 2]
 // Exports: default
 
-// Module 14906 (usePrivateChannelCall)
+// Module 15028 (usePrivateChannelCall)
 import intl3 from "intl" /* 1112 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 11212 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 11311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,7 +76,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -128,7 +128,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
             closure_129_2();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;

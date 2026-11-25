@@ -1,15 +1,15 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11405
+// Function ID: 11406
 // Name: useConjureRemixDestination
-// Dependencies: [32, 19, 4788, 6038, 504, 7476, 2]
+// Dependencies: [32, 19, 4883, 6133, 504, 7571, 2]
 // Exports: default
 
-// Module 11306 (useConjureRemixDestination)
-import ConjureUtils from "ConjureUtils" /* 7476 */;
+// Module 11405 (useConjureRemixDestination)
+import ConjureUtils from "ConjureUtils" /* 7571 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import SortedGuildStore from "SortedGuildStore" /* 6038 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import SortedGuildStore from "SortedGuildStore" /* 6133 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

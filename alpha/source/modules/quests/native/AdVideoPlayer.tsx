@@ -1,21 +1,21 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16498
+// Function ID: 16499
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 2118, 1071, 21, 575, 8740, 4917, 671, 16362, 1653, 5518, 5519, 5127, 5130, 1107, 504, 1378, 1241, 1628, 1112, 6026, 16378, 16380, 16382, 16384, 16385, 10541, 7665, 8716, 16386, 16387, 2]
+// Dependencies: [32, 19, 17, 2118, 1071, 21, 575, 8839, 5012, 671, 16483, 1653, 5613, 5614, 5222, 5225, 1107, 504, 1378, 1241, 1628, 1112, 6121, 16499, 16501, 16503, 16505, 16506, 10640, 7764, 8815, 16507, 16508, 2]
 
-// Module 16377 (AdVideoPlayer)
+// Module 16498 (AdVideoPlayer)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import media_playback_VideoDefault from "media_playback/Video" /* 8740 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16362 */;
+import media_playback_VideoDefault from "media_playback/Video" /* 8839 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16483 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import module_671 from "module_671" /* 671 */;
 import size_mod from "module_2" /* 2 */;
 

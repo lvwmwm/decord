@@ -1,23 +1,23 @@
-// Module ID: 19775
-// Function ID: 19776
+// Module ID: 19877
+// Function ID: 19878
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 19757, 19759, 12307, 21, 4917, 575, 1500, 18620, 4742, 19760, 5926, 1112, 7065, 7618, 7947, 5989, 5508, 7148, 7423, 19776, 19787, 19790, 6014, 6018, 12312, 5598, 5666, 7412, 5491, 2]
+// Dependencies: [5, 32, 19, 19859, 19861, 12473, 21, 5012, 575, 1500, 18732, 4837, 19862, 6021, 1112, 7160, 7717, 8046, 6084, 5603, 7243, 7518, 19878, 19889, 19892, 6109, 6113, 12478, 5693, 5761, 7507, 5586, 2]
 // Exports: default
 
-// Module 19775 (GuildSettingsAutomodRule)
+// Module 19877 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5598 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 7065 */;
-import ClipboardUtils from "ClipboardUtils" /* 7412 */;
-import Constants from "Constants" /* 12307 */;
-import AutomodStore from "AutomodStore" /* 19757 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19760 */;
+import ToastUtils from "ToastUtils" /* 5693 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7160 */;
+import ClipboardUtils from "ClipboardUtils" /* 7507 */;
+import Constants from "Constants" /* 12473 */;
+import AutomodStore from "AutomodStore" /* 19859 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19862 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19759 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19861 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3, navigation;
@@ -121,7 +121,7 @@ export default function GuildSettingsAutomodRule(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -159,7 +159,7 @@ export default function GuildSettingsAutomodRule(guildId) {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp19) {
         c3 = 3;
@@ -378,7 +378,7 @@ export default function GuildSettingsAutomodRule(guildId) {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "HermesInternal", done: null };
+                            return { value: "HermesInternal", done: "HermesInternal" };
                           }
                         } else {
                           let c4;
@@ -432,7 +432,7 @@ export default function GuildSettingsAutomodRule(guildId) {
                               c4(closure_130_1, closure_0);
                               closure_1.pop();
                               c6 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           } catch (tmp37) {
                             closure_3 = tmp37;

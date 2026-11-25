@@ -1,13 +1,13 @@
-// Module ID: 13369
-// Function ID: 13370
+// Module ID: 13492
+// Function ID: 13493
 // Name: getGuildPowerupsBoostInfoText
-// Dependencies: [8156, 1112, 2856, 2]
+// Dependencies: [8255, 1112, 2878, 2]
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 13369 (getGuildPowerupsBoostInfoText)
+// Module 13492 (getGuildPowerupsBoostInfoText)
 import intl4 from "intl" /* 1112 */;
-import _modDef2856 from "module_2856" /* 2856 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8156 */;
+import _modDef2878 from "module_2878" /* 2878 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8255 */;
 import size from "module_2" /* 2 */;
 
 const BoostInfoType = GuildPowerupsConstants.BoostInfoType;
@@ -17,13 +17,13 @@ export function getGuildPowerupsBoostInfoText(count, type) {
   if (BoostInfoType.AVAILABLE === type) {
     const intl3 = intl4.intl;
     const obj2 = { boostCount: count };
-    return intl3.formatToPlainString(_modDef2856.BdRXZA, obj2);
+    return intl3.formatToPlainString(_modDef2878.BdRXZA, obj2);
   } else if (BoostInfoType.SPENT === type) {
     const intl2 = intl4.intl;
     const obj = { boostCount: count };
-    return intl2.formatToPlainString(_modDef2856.xvgIVG, obj);
+    return intl2.formatToPlainString(_modDef2878.xvgIVG, obj);
   } else if (BoostInfoType.TOTAL === type) {
     const intl = intl4.intl;
-    return intl.string(_modDef2856["/F7Z2y"]);
+    return intl.string(_modDef2878["/F7Z2y"]);
   }
 }

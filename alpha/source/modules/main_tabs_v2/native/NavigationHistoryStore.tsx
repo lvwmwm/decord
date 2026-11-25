@@ -1,16 +1,16 @@
-// Module ID: 6838
-// Function ID: 6839
+// Module ID: 6933
+// Function ID: 6934
 // Name: NavigationHistoryStore
-// Dependencies: [4766, 504, 572, 5094, 5093, 5096, 2]
+// Dependencies: [4861, 504, 572, 5189, 5188, 5191, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 6838 (NavigationHistoryStore)
+// Module 6933 (NavigationHistoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5093 */;
-import RootNavigationRef from "RootNavigationRef" /* 5094 */;
-import useChatLayout from "useChatLayout" /* 5096 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5188 */;
+import RootNavigationRef from "RootNavigationRef" /* 5189 */;
+import useChatLayout from "useChatLayout" /* 5191 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 function getIdFromHistoryItem(str) {
@@ -120,7 +120,7 @@ export const CHANNEL_PREFIX = "channel-";
 export const GUILD_PREFIX = "guild-";
 export { getIdFromHistoryItem };
 export function handleHistoryStoreNavigationChange() {
-  const f89919 = (item) => item !== combined;
+  const f90258 = (item) => item !== combined;
   const obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
@@ -144,7 +144,7 @@ export function handleHistoryStoreNavigationChange() {
                 const _HermesInternal = HermesInternal;
                 const combined = "" + c3 + channelId;
                 if (map.has(combined)) {
-                  history = history.filter(f89919);
+                  history = history.filter(f90258);
                 }
                 if (null != history[history.length - 1]) {
                   const _Date3 = Date;
@@ -167,7 +167,7 @@ export function handleHistoryStoreNavigationChange() {
               const _HermesInternal3 = HermesInternal;
               const combined1 = "" + c4 + guildId;
               if (map.has(combined1)) {
-                history = history.filter(f89919);
+                history = history.filter(f90258);
               }
               if (null != history[history.length - 1]) {
                 const _Date2 = Date;
@@ -185,7 +185,7 @@ export function handleHistoryStoreNavigationChange() {
           const _HermesInternal2 = HermesInternal;
           const combined2 = "" + c3 + coerceChannelRouteResult.params.channelId;
           if (map.has(combined2)) {
-            history = history.filter(f89919);
+            history = history.filter(f90258);
           }
           if (null != history[history.length - 1]) {
             const _Date = Date;

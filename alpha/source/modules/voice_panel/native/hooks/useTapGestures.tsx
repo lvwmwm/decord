@@ -1,15 +1,15 @@
-// Module ID: 19321
-// Function ID: 19322
+// Module ID: 19433
+// Function ID: 19434
 // Name: useTapGestures
-// Dependencies: [19, 11634, 5177, 1706, 5127, 5518, 5133, 2]
+// Dependencies: [19, 11733, 5272, 1706, 5222, 5613, 5228, 2]
 // Exports: default
 
-// Module 19321 (useTapGestures)
+// Module 19433 (useTapGestures)
 import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import HapticUtils from "HapticUtils" /* 5133 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5177 */;
-import spring_spring from "spring/spring" /* 5518 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import HapticUtils from "HapticUtils" /* 5228 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
+import spring_spring from "spring/spring" /* 5613 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ export default function useTapGestures(onSingleTap) {
   let closure_3;
   let isFocusedVideoZoomed;
   let current = onSingleTap;
-  isFocusedVideoZoomed = react.useContext(isFocusedVideoZoomed(11634)).isFocusedVideoZoomed;
+  isFocusedVideoZoomed = react.useContext(isFocusedVideoZoomed(11733)).isFocusedVideoZoomed;
   dependencyMap = react.useRef(onSingleTap);
   const tmp = null != onSingleTap.onSingleTap;
   react = tmp;
@@ -125,7 +125,7 @@ export default function useTapGestures(onSingleTap) {
     useTapGesturesTsx2.__workletHash = 11156632838205;
     useTapGesturesTsx2.__initData = tmp9;
     const onStartResult = onStart(useTapGesturesTsx2);
-    const Gesture3 = tmp(5177).Gesture;
+    const Gesture3 = tmp(5272).Gesture;
     let tmp14 = tmp4;
     const enabled2 = Gesture3.Tap().enabled;
     Gesture3.Tap();
@@ -149,7 +149,7 @@ export default function useTapGestures(onSingleTap) {
     useTapGesturesTsx3.__workletHash = 9691651382035;
     useTapGesturesTsx3.__initData = tmp16;
     const onStart2Result = onStart2(useTapGesturesTsx3);
-    const Gesture4 = tmp(5177).Gesture;
+    const Gesture4 = tmp(5272).Gesture;
     const enabled3 = Gesture4.LongPress().enabled;
     Gesture4.LongPress();
     if (tmp4) {

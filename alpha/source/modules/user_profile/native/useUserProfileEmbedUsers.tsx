@@ -1,18 +1,19 @@
-// Module ID: 11824
-// Function ID: 11825
+// Module ID: 11923
+// Function ID: 11924
 // Name: useUserProfileEmbedUsers
-// Dependencies: [19, 4766, 4829, 4859, 1386, 6037, 11825, 504, 1450, 11827, 2]
+// Dependencies: [19, 1230, 4861, 4924, 4954, 1386, 6132, 11924, 504, 1450, 11926, 2]
 // Exports: default
 
-// Module 11824 (useUserProfileEmbedUsers)
-import UserProfileEmbedUsers from "UserProfileEmbedUsers" /* 11825 */;
-import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 11827 */;
+// Module 11923 (useUserProfileEmbedUsers)
+import UserProfileEmbedUsers from "UserProfileEmbedUsers" /* 11924 */;
+import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 11926 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
-import UserProfileStore from "UserProfileStore" /* 6037 */;
+import UserProfileStore from "UserProfileStore" /* 6132 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +36,7 @@ export default function useUserProfileEmbedUsers(arg0, arg1, arg2) {
   }, items);
   const useStateFromStores = require("get initialized").useStateFromStores;
   const tmp2 = require("get initialized");
-  const items1 = [require("ApexExperiment").ApexExperimentStore, UserStore, UserProfileStore, GuildMemberStore, memo, RelationshipStore];
+  const items1 = [require("ApexExperiment").ApexExperimentStore, UserStore, UserProfileStore, GuildMemberStore, ChannelStore, RelationshipStore, memo];
   const items2 = [memo, arg1, arg2];
   return useStateFromStores(items1, () => {
     if (memo.length > 0) {

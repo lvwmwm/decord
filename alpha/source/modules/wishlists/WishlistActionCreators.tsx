@@ -1,18 +1,18 @@
-// Module ID: 10978
-// Function ID: 10979
+// Module ID: 11077
+// Function ID: 11078
 // Name: WishlistActionCreators
-// Dependencies: [5, 6037, 1386, 2174, 7463, 10972, 1071, 1358, 1254, 572, 7467, 1284, 10977, 1241, 5666, 1255, 6008, 2]
+// Dependencies: [5, 6132, 1386, 2174, 7558, 11071, 1071, 1358, 1254, 572, 7562, 1284, 11076, 1241, 5761, 1255, 6103, 2]
 
-// Module 10978 (WishlistActionCreators)
+// Module 11077 (WishlistActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import WishlistRecord2 from "WishlistRecord" /* 10972 */;
+import WishlistRecord2 from "WishlistRecord" /* 11071 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserProfileStore from "UserProfileStore" /* 6037 */;
+import UserProfileStore from "UserProfileStore" /* 6132 */;
 import UserStore from "UserStore" /* 1386 */;
 import BillingInfoStore from "BillingInfoStore" /* 2174 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7463 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7558 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,8 @@ let c10;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const StorefrontUtils = tmp(7467);
-const f98745 = (id) => id.id;
+const StorefrontUtils = tmp(7562);
+const f99089 = (id) => id.id;
 function extraWishlistParams() {
   const obj = {};
   if (null != BillingInfoStore.ipCountryCode) {
@@ -52,7 +52,7 @@ function maybeDispatchAdditionalActions(wishlist_items) {
   const storefront_pricing = wishlist_items.storefront_pricing;
   if (null != storefront_pricing) {
     const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: tmpResult.transformStorefrontPricesServer(storefront_pricing) };
-    obj3 = { type: "skus", skuIds: found.map(f98745) };
+    obj3 = { type: "skus", skuIds: found.map(f99089) };
     const dispatch = tmp3(572).dispatch;
     DispatcherDefault;
     tmpResult = StorefrontUtils;
@@ -80,7 +80,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c4;
@@ -159,7 +159,7 @@ let obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp48) {
           closure_3 = tmp48;
@@ -191,7 +191,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -279,7 +279,7 @@ let obj = {
                 c3 = 0;
               }
               currentUser = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             c3 = 0;
             if (null != sku_id) {
@@ -330,7 +330,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -408,7 +408,7 @@ let obj = {
             }
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           sku_ids = tmp22;
@@ -442,7 +442,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -526,7 +526,7 @@ let obj = {
             c3 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           closure_4 = tmp29;
           if (0 === c3) {
@@ -559,7 +559,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -640,7 +640,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp37) {
           sku_ids = tmp37;
@@ -679,7 +679,7 @@ let obj = {
         ({ storefront_pricing, skus: skus2 } = body);
         if (null != storefront_pricing) {
           const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: obj4.transformStorefrontPricesServer(storefront_pricing) };
-          obj3 = { type: "skus", skuIds: skus2.map(f98745) };
+          obj3 = { type: "skus", skuIds: skus2.map(f99089) };
           const dispatch = tmp(closure_1_2[9]).dispatch;
           closure_1_1(closure_1_2[9]);
           obj4 = closure_1_0(closure_1_2[10]);
@@ -696,7 +696,7 @@ let obj = {
           let obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -756,7 +756,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

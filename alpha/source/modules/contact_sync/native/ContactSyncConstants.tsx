@@ -1,9 +1,9 @@
-// Module ID: 13497
-// Function ID: 13498
+// Module ID: 13620
+// Function ID: 13621
 // Name: ContactSyncConstants
 // Dependencies: [2]
 
-// Module 13497 (ContactSyncConstants)
+// Module 13620 (ContactSyncConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/contact_sync/native/ContactSyncConstants.tsx");

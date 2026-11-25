@@ -1,10 +1,10 @@
-// Module ID: 15722
-// Function ID: 15723
+// Module ID: 15843
+// Function ID: 15844
 // Name: iframeAppContext
 // Dependencies: [1071, 2]
 // Exports: getAppContextForIframeId
 
-// Module 15722 (iframeAppContext)
+// Module 15843 (iframeAppContext)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

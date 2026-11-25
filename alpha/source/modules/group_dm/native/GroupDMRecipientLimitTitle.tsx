@@ -1,21 +1,21 @@
-// Module ID: 18909
-// Function ID: 18910
+// Module ID: 19021
+// Function ID: 19022
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1071, 21, 4917, 575, 1378, 11952, 5481, 1112, 5508, 9496, 12979, 2]
+// Dependencies: [19, 17, 1071, 21, 5012, 575, 1378, 12051, 5576, 1112, 5603, 9595, 13102, 2]
 // Exports: default
 
-// Module 18909 (GroupDMRecipientLimitTitle)
+// Module 19021 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import useToken from "useToken" /* 5481 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11952 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12979 */;
+import useToken from "useToken" /* 5576 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12051 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 13102 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9496).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9595).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }

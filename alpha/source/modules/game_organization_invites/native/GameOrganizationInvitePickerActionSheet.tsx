@@ -1,23 +1,23 @@
-// Module ID: 11974
-// Function ID: 11975
+// Module ID: 12073
+// Function ID: 12074
 // Name: GameOrganizationInvitePickerActionSheet
-// Dependencies: [19, 17, 11770, 21, 4917, 575, 5989, 5604, 7397, 5508, 6014, 11975, 11986, 1112, 2639, 7420, 4973, 2]
+// Dependencies: [19, 17, 11869, 21, 5012, 575, 6084, 5699, 7492, 5603, 6109, 12074, 12085, 1112, 2650, 7515, 5068, 2]
 // Exports: default
 
-// Module 11974 (GameOrganizationInvitePickerActionSheet)
+// Module 12073 (GameOrganizationInvitePickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2639 from "module_2639" /* 2639 */;
-import UserUtilsDefault from "UserUtils" /* 4973 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import Stack_Stack from "Stack/Stack" /* 5989 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11770 */;
-import GameOrganizationInvitePickerRowDefault from "GameOrganizationInvitePickerRow" /* 11975 */;
-import useGameOrganizationInvitePickerDefault from "useGameOrganizationInvitePicker" /* 11986 */;
+import _modDef2650 from "module_2650" /* 2650 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import Stack_Stack from "Stack/Stack" /* 6084 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11869 */;
+import GameOrganizationInvitePickerRowDefault from "GameOrganizationInvitePickerRow" /* 12074 */;
+import useGameOrganizationInvitePickerDefault from "useGameOrganizationInvitePicker" /* 12085 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault, organization;
@@ -29,7 +29,7 @@ let obj3;
 let obj4;
 let size;
 let tmp5;
-const AssetRegistryDefault = tmp5(7397);
+const AssetRegistryDefault = tmp5(7492);
 function GameSection(arg0) {
   let gameOrganizations;
   let group;
@@ -67,7 +67,7 @@ function GameSection(arg0) {
     })
   };
   gameOrganizations = group.gameOrganizations;
-  const TableRowGroup = tmp3(6014).TableRowGroup;
+  const TableRowGroup = tmp3(6109).TableRowGroup;
   items1[1] = closure_5(TableRowGroup, obj6);
   return closure_6(Stack, obj);
 }
@@ -117,7 +117,7 @@ export default function GameOrganizationInvitePickerActionSheet(userId) {
       const obj2 = { variant: "body-sm/medium", color: "text-muted", style: items, children: intl2.string(userId(1112).t.fEptJP) };
       items = [, ];
       ({ centeredText: arr2[0], status: arr2[1] } = tmp);
-      const Text2 = userId(5508).Text;
+      const Text2 = userId(5603).Text;
       intl2 = userId(1112).intl;
       tmp12 = closure_5(Text2, obj2);
       tmp10 = closure_5;
@@ -129,10 +129,10 @@ export default function GameOrganizationInvitePickerActionSheet(userId) {
     tmp5 = tmp10;
     tmp7 = tmp12;
   } else if (0 === groups.length) {
-    const obj4 = { variant: "body-sm/medium", color: "text-muted", style: items1, children: intl.string(_modDef2639.v7A3HG) };
+    const obj4 = { variant: "body-sm/medium", color: "text-muted", style: items1, children: intl.string(_modDef2650.v7A3HG) };
     items1 = [, ];
     ({ centeredText: arr[0], status: arr[1] } = tmp);
-    const Text = userId(5508).Text;
+    const Text = userId(5603).Text;
     intl = userId(1112).intl;
     tmp7 = closure_5(Text, obj4);
     tmp5 = closure_5;
@@ -146,23 +146,23 @@ export default function GameOrganizationInvitePickerActionSheet(userId) {
           return hasOwnProperty(GameSection, obj, group.application.id);
         })
     };
-    const Stack = userId(5989).Stack;
+    const Stack = userId(6084).Stack;
     tmp7 = closure_5(Stack, obj);
   }
   const obj5 = { scrollable: true, dismissAccessibilityLabel: intl3.string(userId(1112).t.cpT0Cq), header: tmp15(Stack2, obj6), children: tmp7 };
-  const ActionSheet = userId(7420).ActionSheet;
+  const ActionSheet = userId(7515).ActionSheet;
   intl3 = userId(1112).intl;
   obj6 = { spacing: nativeDefault.space.PX_4, style: tmp.header, children: items2 };
-  Stack2 = userId(5989).Stack;
-  const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl4.string(_modDef2639["v5/qxX"]) };
-  const Heading = userId(5508).Heading;
+  Stack2 = userId(6084).Stack;
+  const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl4.string(_modDef2650["v5/qxX"]) };
+  const Heading = userId(5603).Heading;
   intl4 = userId(1112).intl;
   items2 = [tmp5(Heading, obj7), ];
   const obj8 = { variant: "body-sm/medium", color: "text-muted", style: tmp.centeredText, children: formatToPlainString(txHfjn, obj9) };
-  const Text3 = userId(5508).Text;
+  const Text3 = userId(5603).Text;
   const intl5 = userId(1112).intl;
   formatToPlainString = intl5.formatToPlainString;
-  txHfjn = tmp2(2639).txHfjn;
+  txHfjn = tmp2(2650).txHfjn;
   const tmp2Result = UserUtilsDefault;
   let str = tmp2Result.getName(user);
   tmp15 = closure_6;

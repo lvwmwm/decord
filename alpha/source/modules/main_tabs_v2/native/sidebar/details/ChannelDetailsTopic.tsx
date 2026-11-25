@@ -1,21 +1,21 @@
-// Module ID: 18887
-// Function ID: 18888
+// Module ID: 18999
+// Function ID: 19000
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1386, 11264, 1071, 21, 4917, 1378, 18888, 1653, 5518, 6941, 10508, 6026, 5508, 1112, 5472, 504, 4973, 6675, 2]
+// Dependencies: [32, 19, 17, 1386, 11363, 1071, 21, 5012, 1378, 19000, 1653, 5613, 7036, 10607, 6121, 5603, 1112, 5567, 504, 5068, 6770, 2]
 
-// Module 18887 (ChannelDetailsTopic)
+// Module 18999 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1071 */;
-import UserUtilsDefault from "UserUtils" /* 4973 */;
-import ChannelUtils from "ChannelUtils" /* 6675 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6941 */;
-import MentionPillOffset from "MentionPillOffset" /* 10508 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import ChannelUtils from "ChannelUtils" /* 6770 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 7036 */;
+import MentionPillOffset from "MentionPillOffset" /* 10607 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11264 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11363 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
@@ -312,7 +312,7 @@ function PrivateChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5508).Text, obj2);
+    tmp4 = closure_11(tmp(5603).Text, obj2);
   }
   return tmp4;
 }
@@ -331,7 +331,7 @@ function GroupDMChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5508).Text, obj2);
+    tmp4 = closure_11(tmp(5603).Text, obj2);
   }
   return tmp4;
 }
@@ -345,7 +345,7 @@ let obj = { hidden: { flex: 1, flexGrow: 1, position: "absolute", opacity: 0 }, 
 createStyles = createStyles.createStyles;
 let obj2 = null;
 if (!PlatformUtils.isAndroid()) {
-  obj2 = { lineHeight: "Array" };
+  obj2 = { lineHeight: "dispatch" };
 }
 obj3 = { paddingVertical: 5 };
 let merged = Object.assign(obj2);

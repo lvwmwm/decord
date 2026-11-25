@@ -1,16 +1,19 @@
-// Module ID: 7557
-// Function ID: 7558
+// Module ID: 7652
+// Function ID: 7653
 // Name: EmbeddedAppCSPActionCreators
 // Dependencies: [5, 1284, 572, 1241, 2]
-// Exports: fetchEmbeddedAppCSP
+// Exports: fetchEmbeddedAppCSP, isEmbeddedAppCSPReadInFlight
 
-// Module 7557 (EmbeddedAppCSPActionCreators)
+// Module 7652 (EmbeddedAppCSPActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, closure_3;
 
+function getEmbeddedAppCSPURL(applicationRouterOrigin) {
+  return "" + applicationRouterOrigin + "/.discord/csp.json";
+}
 let obj = function _readPolicy() {
   obj = _asyncToGenerator(async (routerOrigin) => {
     let c5 = 0;
@@ -26,7 +29,7 @@ let obj = function _readPolicy() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -45,11 +48,10 @@ let obj = function _readPolicy() {
               body = undefined;
               c4 = 2;
               const HTTP = HTTPUtils.HTTP;
-              const _HermesInternal = HermesInternal;
               const get = HTTP.get;
               c5 = 3;
               c6 = 1;
-              const obj5 = { url: "" + routerOrigin + "/.discord/csp.json", rejectWithError: true };
+              const obj5 = { url: getEmbeddedAppCSPURL(routerOrigin), rejectWithError: true };
               const obj6 = { value: get(obj5), done: false };
               return obj6;
             }
@@ -79,14 +81,14 @@ let obj = function _readPolicy() {
             c4 = 0;
             closure_130_4.delete(routerOrigin);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
-        } catch (tmp41) {
-          closure_3 = tmp41;
+        } catch (tmp42) {
+          closure_3 = tmp42;
           if (0 === c4) {
             c6 = 3;
-            throw tmp41;
-          } else if (1 === tmp43) {
+            throw tmp42;
+          } else if (1 === tmp44) {
             c5 = 1;
           } else {
             c5 = 2;
@@ -100,15 +102,19 @@ let obj = function _readPolicy() {
 const map = new Map();
 let result = size.fileFinishedImporting("modules/embedded_apps/csp/EmbeddedAppCSPActionCreators.tsx");
 
-export function fetchEmbeddedAppCSP(applicationRouterOrigin) {
+export { getEmbeddedAppCSPURL };
+export function isEmbeddedAppCSPReadInFlight(arg0) {
+  return map.has(arg0);
+}
+export function fetchEmbeddedAppCSP(arg0) {
   function readPolicy() {
     return obj(...arguments);
   }
   obj = map;
-  let value = map.get(applicationRouterOrigin);
+  let value = map.get(arg0);
   if (null == value) {
-    const tmp2 = readPolicy(applicationRouterOrigin);
-    const result = obj.set(applicationRouterOrigin, tmp2);
+    const tmp2 = readPolicy(arg0);
+    const result = obj.set(arg0, tmp2);
     value = tmp2;
   }
   return value;

@@ -1,16 +1,16 @@
-// Module ID: 6802
-// Function ID: 6803
+// Module ID: 6897
+// Function ID: 6898
 // Name: GuildStickersStore
-// Dependencies: [32, 4782, 4789, 4788, 6654, 4863, 4792, 2]
+// Dependencies: [32, 4877, 4884, 4883, 6749, 4958, 4887, 2]
 
-// Module 6802 (GuildStickersStore)
-import js_shim_PlainRecord from "js_shim/PlainRecord" /* 4782 */;
-import LibdiscoreStore2 from "LibdiscoreStore" /* 4789 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 4792 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4863 */;
-import StickersTypes from "StickersTypes" /* 6654 */;
+// Module 6897 (GuildStickersStore)
+import js_shim_PlainRecord from "js_shim/PlainRecord" /* 4877 */;
+import LibdiscoreStore2 from "LibdiscoreStore" /* 4884 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 4887 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4958 */;
+import StickersTypes from "StickersTypes" /* 6749 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -34,12 +34,12 @@ function deriveStickerMetadata(arg0, tags) {
   let trimmed;
   let trimmed1;
   const items = [];
-  let obj = { type: items(6654).StickerMetadataTypes.STICKER_NAME, value: trimmed.toLocaleLowerCase() };
+  let obj = { type: items(6749).StickerMetadataTypes.STICKER_NAME, value: trimmed.toLocaleLowerCase() };
   const str2 = tags.name;
   trimmed = str2.trim();
   items.push(obj);
   if (null != tags.tags) {
-    const obj2 = { type: items(6654).StickerMetadataTypes.TAG, value: trimmed1.toLocaleLowerCase() };
+    const obj2 = { type: items(6749).StickerMetadataTypes.TAG, value: trimmed1.toLocaleLowerCase() };
     trimmed1 = str.trim();
     items.push(obj2);
     const guild = GuildStore.getGuild(arg0);
@@ -50,7 +50,7 @@ function deriveStickerMetadata(arg0, tags) {
       const tmp5 = null != toLocaleLowerCaseResult && "" !== toLocaleLowerCaseResult;
       if (tmp5) {
         const push = items.push;
-        const obj3 = { type: items(6654).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
+        const obj3 = { type: items(6749).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
         push(obj3);
       }
     }
@@ -58,7 +58,7 @@ function deriveStickerMetadata(arg0, tags) {
     const byName = obj5.getByName(str);
     if (null != byName) {
       const push2 = items.push;
-      const obj4 = { type: items(6654).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
+      const obj4 = { type: items(6749).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
       push2(obj4);
       byName.forEachDiversity((surrogates) => {
         const obj = { type: StickersTypes.StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates };

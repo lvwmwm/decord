@@ -1,25 +1,25 @@
-// Module ID: 7714
-// Function ID: 7715
+// Module ID: 7813
+// Function ID: 7814
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7715, 4770, 4766, 6806, 1071, 7716, 1284, 7722, 7729, 6867, 5094, 6000, 6671, 572, 6857, 1255, 1098, 4924, 1112, 7731, 6002, 5677, 2]
+// Dependencies: [32, 5, 7814, 4865, 4861, 6901, 1071, 7815, 1284, 7821, 7828, 6962, 5189, 6095, 6766, 572, 6952, 1255, 1098, 5019, 1112, 7830, 6097, 5772, 2]
 
-// Module 7714 (ChannelActionCreators)
+// Module 7813 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import shared from "shared" /* 4924 */;
-import RootNavigationRef from "RootNavigationRef" /* 5094 */;
-import preloadChannelDefault from "preloadChannel" /* 6002 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6671 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6857 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7722 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import shared from "shared" /* 5019 */;
+import RootNavigationRef from "RootNavigationRef" /* 5189 */;
+import preloadChannelDefault from "preloadChannel" /* 6097 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6766 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6952 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7821 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7715 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import ReadStateStore from "ReadStateStore" /* 6806 */;
+import ChangelogStore from "ChangelogStore" /* 7814 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import ReadStateStore from "ReadStateStore" /* 6901 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ let map1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(6000);
-const SurveyActionTypes = tmp(7729);
+const transitionToChannel = tmp5(6095);
+const SurveyActionTypes = tmp(7828);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -76,7 +76,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -316,7 +316,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(6000);
+          const tmp6Result = tmp6(6095);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -371,7 +371,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -680,7 +680,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -827,7 +827,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;

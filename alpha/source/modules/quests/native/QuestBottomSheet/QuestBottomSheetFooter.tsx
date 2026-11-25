@@ -1,35 +1,35 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16664
+// Function ID: 16665
 // Name: QuestBottomSheetFooter
-// Dependencies: [32, 19, 17, 4918, 1386, 8224, 5146, 21, 575, 4917, 6748, 9751, 9767, 9772, 11464, 504, 5481, 6195, 9748, 16544, 5515, 9849, 9789, 16502, 13664, 16538, 16540, 7811, 1112, 7069, 9787, 13902, 9716, 9720, 6752, 8251, 1628, 1494, 1653, 5127, 5521, 2]
+// Dependencies: [32, 19, 17, 5013, 1386, 8323, 5241, 21, 575, 5012, 6843, 9850, 9866, 9871, 11563, 504, 5576, 6290, 9847, 16665, 5610, 9948, 9888, 16623, 13787, 16659, 16661, 7910, 1112, 7164, 9886, 14025, 9815, 9819, 6847, 8350, 1628, 1494, 1653, 5222, 5616, 2]
 // Exports: default
 
-// Module 16543 (QuestBottomSheetFooter)
+// Module 16664 (QuestBottomSheetFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5146 */;
-import components_Button_Button from "components/Button/Button" /* 5515 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8251 */;
-import captureAdUserAction from "captureAdUserAction" /* 9716 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9720 */;
-import QuestUtils from "QuestUtils" /* 9748 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9772 */;
-import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 9787 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9789 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 9849 */;
-import RefreshIcon from "RefreshIcon" /* 13902 */;
-import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 16544 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5241 */;
+import components_Button_Button from "components/Button/Button" /* 5610 */;
+import QuestTypes from "QuestTypes" /* 6843 */;
+import AdCreativeType from "AdCreativeType" /* 6847 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8350 */;
+import captureAdUserAction from "captureAdUserAction" /* 9815 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9819 */;
+import QuestUtils from "QuestUtils" /* 9847 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9871 */;
+import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 9886 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9888 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 9948 */;
+import RefreshIcon from "RefreshIcon" /* 14025 */;
+import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 16665 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import UserStore from "UserStore" /* 1386 */;
-import QuestStore from "QuestStore" /* 8224 */;
+import QuestStore from "QuestStore" /* 8323 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -389,13 +389,13 @@ export default function QuestBottomSheetFooter(quest) {
   ({ onBack, sourceQuestContent } = quest);
   ({ onConnectConsoleNext, onDefib, style, withSafeArea } = quest);
   const tmp = useQuestRewardClaimHandler({ quest, sourceQuestContent });
-  let obj = quest(9751);
+  let obj = quest(9850);
   const questTaskDetails = obj.useQuestTaskDetails(quest);
-  const obj2 = quest(9751);
+  const obj2 = quest(9850);
   const isQuestProgressing = obj2.useIsQuestProgressing(quest);
-  const obj3 = quest(9751);
+  const obj3 = quest(9850);
   const first = _slicedToArray(obj3.useTaskPlatformScreen(quest, questTaskDetails), 1)[0];
-  const obj4 = quest(9751);
+  const obj4 = quest(9850);
   const xboxAndPlaystationAccounts = obj4.useConnectedAccounts().xboxAndPlaystationAccounts;
   const items = [quest, xboxAndPlaystationAccounts];
   const memo = react.useMemo(() => {
@@ -406,16 +406,16 @@ export default function QuestBottomSheetFooter(quest) {
       return null != xboxAndPlaystationAccounts.find((type) => type.type === closure_0);
     });
   }, items);
-  const obj5 = quest(16502);
+  const obj5 = quest(16623);
   const hasWatchVideoOnMobileTasks = obj5.useHasWatchVideoOnMobileTasks(quest.config);
-  const obj6 = quest(16502);
+  const obj6 = quest(16623);
   const mobileActivityQuest = obj6.useMobileActivityQuest(quest);
   ({ isMobileActivityQuest, launchMobileActivity, questApplication } = mobileActivityQuest);
-  const obj7 = quest(13664);
+  const obj7 = quest(13787);
   const primaryCtaCopy = obj7.usePrimaryCtaCopy({ quest, application: questApplication });
   const userStatus = quest.userStatus;
   let completedAt;
-  const obj8 = quest(16544);
+  const obj8 = quest(16665);
   const obj9 = { questId: quest.id, sourceQuestContent, launchMobileActivity };
   const mobileActivityPressHandler = obj8.useMobileActivityPressHandler(obj9);
   if (userStatus != null) {
@@ -427,19 +427,19 @@ export default function QuestBottomSheetFooter(quest) {
   if (userStatus2 != null) {
     claimedAt = userStatus2.claimedAt;
   }
-  const tmp2Result = quest(9751);
+  const tmp2Result = quest(9850);
   const isQuestAccessSuspended = tmp2Result.useIsQuestAccessSuspended();
-  const obj10 = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(16538) };
+  const obj10 = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(16659) };
   let tmp41Result6 = null;
-  if (step !== quest(16540).QuestBottomSheetStep.TASK_SELECT) {
+  if (step !== quest(16661).QuestBottomSheetStep.TASK_SELECT) {
     const obj11 = { onLayout, ctaButton: tmp41Result, backButton: tmp41Result5, style, withSafeArea };
     const tmp42 = AnimatedFooter;
-    if (quest(16540).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
+    if (quest(16661).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
       const obj12 = { onPress: onConnectConsoleNext, disabled: 0 === memo.length };
       tmp41Result = tmp41(NextButton, obj12);
     } else {
       tmp41Result = null;
-      if (quest(16540).QuestBottomSheetStep.TASK_STATUS === step) {
+      if (quest(16661).QuestBottomSheetStep.TASK_STATUS === step) {
         let tmp41Result4;
         if (tmp12) {
           const obj13 = { questId: quest.id, onPress: tmp.claim, disabled: null != claimedAt, loading: isClaiming, sourceQuestContent };
@@ -468,16 +468,16 @@ export default function QuestBottomSheetFooter(quest) {
           tmp41Result4 = tmp41(tmp28, obj14);
         } else if (isMobileActivityQuest) {
           const obj15 = { grow: true, size: "lg", onPress: mobileActivityPressHandler, text: primaryCtaCopy, icon: tmp2Result2.getPrimaryCtaIcon(quest) };
-          const Button = tmp2(5515).Button;
+          const Button = tmp2(5610).Button;
           let tmp24 = null;
-          tmp2Result2 = quest(9748);
+          tmp2Result2 = quest(9847);
           if (isQuestAccessSuspended) {
             tmp24 = obj10;
           }
           const merged2 = Object.assign(tmp24);
           tmp41Result4 = tmp41(Button, obj15);
         } else {
-          if (first === quest(6748).TaskPlatformScreen.CONSOLE) {
+          if (first === quest(6843).TaskPlatformScreen.CONSOLE) {
             if (!isQuestProgressing) {
               let tmp18 = null;
               const obj16 = { questId: quest.id, loading: isDefibrilating, disabled: isDefibrilating, onPress: onDefib, sourceQuestContent };
@@ -497,8 +497,8 @@ export default function QuestBottomSheetFooter(quest) {
     }
     tmp41Result5 = null != onBack;
     if (tmp41Result5) {
-      const obj18 = { accessibilityLabel: intl.string(quest(1112).t["13/7kX"]), variant: "secondary", icon: closure_10(quest(7069).ArrowLargeLeftIcon, {}), onPress: onBack, size: "lg" };
-      const IconButton = tmp2(7811).IconButton;
+      const obj18 = { accessibilityLabel: intl.string(quest(1112).t["13/7kX"]), variant: "secondary", icon: closure_10(quest(7164).ArrowLargeLeftIcon, {}), onPress: onBack, size: "lg" };
+      const IconButton = tmp2(7910).IconButton;
       intl = tmp2(1112).intl;
       tmp41Result5 = tmp41(IconButton, obj18);
     }

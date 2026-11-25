@@ -1,12 +1,12 @@
-// Module ID: 13198
-// Function ID: 13199
+// Module ID: 13321
+// Function ID: 13322
 // Name: ApplicationCommandList
-// Dependencies: [19, 10645, 21, 9954, 2117, 9912, 5569, 13196, 13197, 7356, 2]
+// Dependencies: [19, 10744, 21, 10053, 2117, 10011, 5664, 13319, 13320, 7451, 2]
 // Exports: default
 
-// Module 13198 (ApplicationCommandList)
+// Module 13321 (ApplicationCommandList)
 import Fragment from "Fragment" /* 21 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10645 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10744 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

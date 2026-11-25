@@ -1,10 +1,10 @@
-// Module ID: 19740
-// Function ID: 19741
+// Module ID: 19842
+// Function ID: 19843
 // Name: GuildSettingsVanityURLUtils
 // Dependencies: [1071, 1112, 2]
 // Exports: canSeeVanityUrlSettings, getErrorMessageFromErrorCode
 
-// Module 19740 (GuildSettingsVanityURLUtils)
+// Module 19842 (GuildSettingsVanityURLUtils)
 import intl8 from "intl" /* 1112 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

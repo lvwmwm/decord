@@ -1,24 +1,24 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16166
+// Function ID: 16167
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 9414, 1071, 21, 4917, 575, 12007, 16046, 16053, 4750, 6018, 11815, 1112, 16054, 16014, 16055, 2]
+// Dependencies: [17, 9513, 1071, 21, 5012, 575, 12106, 16167, 16174, 4845, 6113, 11914, 1112, 16175, 16135, 16176, 2]
 
-// Module 16045 (AccountAgeGroupSetting)
+// Module 16166 (AccountAgeGroupSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import dismissible_content from "dismissible_content" /* 4750 */;
-import TableRow from "TableRow" /* 6018 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 12007 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16014 */;
-import AgeNoticeLazy from "AgeNoticeLazy" /* 16046 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16053 */;
+import dismissible_content from "dismissible_content" /* 4845 */;
+import TableRow from "TableRow" /* 6113 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 12106 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16135 */;
+import AgeNoticeLazy from "AgeNoticeLazy" /* 16167 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16174 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16054 */;
+import createStyles from "createStyles" /* 5012 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16175 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

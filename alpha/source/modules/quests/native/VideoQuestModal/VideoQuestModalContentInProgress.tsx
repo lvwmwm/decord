@@ -1,30 +1,30 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 16672
+// Function ID: 16673
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [32, 19, 17, 6745, 1082, 21, 671, 575, 16552, 4917, 1378, 9762, 1653, 5127, 1628, 7354, 4978, 16553, 16568, 16569, 16548, 16570, 5989, 6026, 5508, 16571, 5604, 5515, 9772, 7811, 1112, 8455, 11284, 9751, 9848, 16509, 8478, 5472, 16572, 11283, 16382, 16378, 16380, 12658, 7612, 16547, 16573, 5131, 16575, 2119, 9787, 8246, 9716, 9720, 6752, 8251, 6748, 8549, 16576, 9748, 16577, 6753, 2]
+// Dependencies: [32, 19, 17, 6840, 1082, 21, 671, 575, 16673, 5012, 1378, 9861, 1653, 5222, 1628, 7449, 5073, 16674, 16689, 16690, 16669, 16691, 6084, 6121, 5603, 16692, 5699, 5610, 9871, 7910, 1112, 8554, 11383, 9850, 9947, 16630, 8577, 5567, 16693, 11382, 16503, 16499, 16501, 12822, 7711, 16668, 16694, 5226, 16696, 2119, 9886, 8345, 9815, 9819, 6847, 8350, 6843, 8648, 16697, 9847, 16698, 6848, 2]
 
-// Module 16551 (VideoQuestModalContentInProgress)
+// Module 16672 (VideoQuestModalContentInProgress)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import Pressables from "Pressables" /* 6026 */;
-import QuestTypes from "QuestTypes" /* 6748 */;
-import AdCreativeType from "AdCreativeType" /* 6752 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8251 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8549 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9716 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9720 */;
-import QuestUtils from "QuestUtils" /* 9748 */;
-import AssetUtils from "AssetUtils" /* 9762 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9772 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import Pressables from "Pressables" /* 6121 */;
+import QuestTypes from "QuestTypes" /* 6843 */;
+import AdCreativeType from "AdCreativeType" /* 6847 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8350 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8648 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9815 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9819 */;
+import QuestUtils from "QuestUtils" /* 9847 */;
+import AssetUtils from "AssetUtils" /* 9861 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9871 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 6745 */;
+import QuestConstants from "QuestConstants" /* 6840 */;
 import Fragment from "Fragment" /* 21 */;
 import module_671_mod from "module_671" /* 671 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let duration;
@@ -688,7 +688,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { quest };
-    const tmp2 = asyncRequire(16575, dependencyMap.paths);
+    const tmp2 = asyncRequire(16696, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
   let obj3 = sourceQuestContent(getQuestImpressionId[50]);

@@ -1,23 +1,23 @@
-// Module ID: 11146
-// Function ID: 11147
+// Module ID: 11245
+// Function ID: 11246
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1071, 1388, 21, 4917, 575, 1112, 7988, 2173, 5472, 5604, 11147, 11148, 7365, 5508, 2]
+// Dependencies: [19, 17, 1071, 1388, 21, 5012, 575, 1112, 8087, 2173, 5567, 5699, 11246, 11247, 7460, 5603, 2]
 // Exports: FractionalNitroPreview
 
-// Module 11146 (FractionalNitroPreview)
+// Module 11245 (FractionalNitroPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import LinearGradientDefault from "LinearGradient" /* 5472 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7365 */;
-import _modDef11147 from "module_11147" /* 11147 */;
-import NitroIconDefault from "NitroIcon" /* 11148 */;
+import LinearGradientDefault from "LinearGradient" /* 5567 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7460 */;
+import _modDef11246 from "module_11246" /* 11246 */;
+import NitroIconDefault from "NitroIcon" /* 11247 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export function FractionalNitroPreview() {
   const obj5 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   items1[0] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { source: obj7, style: tmp.headerImage };
-  obj7 = { uri: _modDef11147 };
+  obj7 = { uri: _modDef11246 };
   const tmp3 = FastImageDefault;
   items1[1] = closure_6(tmp3, obj6);
   const obj8 = { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) };

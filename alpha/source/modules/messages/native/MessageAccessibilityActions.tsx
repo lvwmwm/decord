@@ -1,15 +1,15 @@
-// Module ID: 12394
-// Function ID: 12395
+// Module ID: 12558
+// Function ID: 12559
 // Name: MessageAccessibilityActions
-// Dependencies: [4742, 9408, 1112, 9411, 12057, 2]
+// Dependencies: [4837, 9507, 1112, 9510, 12156, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 12394 (MessageAccessibilityActions)
+// Module 12558 (MessageAccessibilityActions)
 import intl10 from "intl" /* 1112 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9408 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 9411 */;
-import canReplyToMessage from "canReplyToMessage" /* 12057 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9507 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 9510 */;
+import canReplyToMessage from "canReplyToMessage" /* 12156 */;
 import size from "module_2" /* 2 */;
 
 const MessageAccessibilityAction = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm", OPEN_PINS: "open_pins", JUMP_TO_MESSAGE: "jump_to_message" };
@@ -75,7 +75,7 @@ export function createMessageAccessibilityActions(message, channel) {
       const push = items.push;
       intl = tmp10(1112).intl;
       push(obj);
-      const DoubleTapReactionEmoji = tmp10(4742).DoubleTapReactionEmoji;
+      const DoubleTapReactionEmoji = tmp10(4837).DoubleTapReactionEmoji;
       const setting = DoubleTapReactionEmoji.getSetting();
       let disableDoubleTap;
       if (setting != null) {

@@ -1,10 +1,10 @@
-// Module ID: 19591
-// Function ID: 19592
+// Module ID: 19693
+// Function ID: 19694
 // Name: IOSAppTransactionIdExperiment
 // Dependencies: [1450, 2]
 // Exports: isIOSAppTransactionIdTrackingEnabled
 
-// Module 19591 (IOSAppTransactionIdExperiment)
+// Module 19693 (IOSAppTransactionIdExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

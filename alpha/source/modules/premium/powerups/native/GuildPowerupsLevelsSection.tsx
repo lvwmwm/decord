@@ -1,19 +1,19 @@
-// Module ID: 13378
-// Function ID: 13379
+// Module ID: 13501
+// Function ID: 13502
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 575, 1358, 4917, 13367, 1112, 2856, 13379, 13380, 2]
+// Dependencies: [19, 17, 21, 575, 1358, 5012, 13490, 1112, 2878, 13502, 13503, 2]
 // Exports: default
 
-// Module 13378 (GuildPowerupsLevelsSection)
+// Module 13501 (GuildPowerupsLevelsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import MarketingCardsScroller2 from "MarketingCardsScroller" /* 13379 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 13380 */;
+import MarketingCardsScroller2 from "MarketingCardsScroller" /* 13502 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 13503 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -59,8 +59,8 @@ export default function GuildPowerupsLevelsSection(arg0) {
   const callback = memo.useCallback((current) => {
     isScrollingRef.current = current;
   }, []);
-  let obj2 = { title: intl.string(listings(2856)["TXY/b0"]), description: intl2.string(listings(2856).aJv4PB) };
-  const tmp3 = listings(13367);
+  let obj2 = { title: intl.string(listings(2878)["TXY/b0"]), description: intl2.string(listings(2878).aJv4PB) };
+  const tmp3 = listings(13490);
   intl = intl3.intl;
   intl2 = intl3.intl;
   items1 = [closure_5(tmp3, obj2), ];

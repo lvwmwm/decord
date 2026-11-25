@@ -1,15 +1,15 @@
-// Module ID: 18415
-// Function ID: 18416
+// Module ID: 18527
+// Function ID: 18528
 // Name: useConjureRevealedText
-// Dependencies: [32, 19, 4918, 504, 18416, 18417, 2]
+// Dependencies: [32, 19, 5013, 504, 18528, 18529, 2]
 // Exports: useConjureRevealedText
 
-// Module 18415 (useConjureRevealedText)
-import ConjureStreamReveal from "ConjureStreamReveal" /* 18416 */;
-import conjurePageVisibility from "conjurePageVisibility" /* 18417 */;
+// Module 18527 (useConjureRevealedText)
+import ConjureStreamReveal from "ConjureStreamReveal" /* 18528 */;
+import conjurePageVisibility from "conjurePageVisibility" /* 18529 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ export function useConjureRevealedText(source, streaming) {
   if (arr2.target !== source) {
     let obj3 = { target: source, length };
     if (streaming) {
-      let tmpResult = tmp(18416);
+      let tmpResult = tmp(18528);
       length = tmpResult.reconcileRevealedLength(arr2.target, source, arr2.length);
     } else {
       length = source.length;
@@ -119,7 +119,7 @@ export function useConjureRevealedText(source, streaming) {
           _undefined(obj2);
         }
       }
-      const tmpResult = tmp(18417);
+      const tmpResult = tmp(18529);
       return tmpResult.subscribePageVisibility(flushIfHidden);
     }
   }, items2);

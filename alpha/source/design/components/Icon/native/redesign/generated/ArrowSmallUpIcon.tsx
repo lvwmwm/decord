@@ -1,14 +1,14 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17347
+// Function ID: 17348
 // Name: ArrowSmallUpIcon
-// Dependencies: [19, 21, 575, 5603, 17235, 2]
+// Dependencies: [19, 21, 575, 5698, 17348, 2]
 // Exports: ArrowSmallUpIcon
 
-// Module 17234 (ArrowSmallUpIcon)
+// Module 17347 (ArrowSmallUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 17235 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 17348 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

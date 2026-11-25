@@ -1,11 +1,11 @@
-// Module ID: 11388
-// Function ID: 11389
+// Module ID: 11487
+// Function ID: 11488
 // Name: useAutocompleter
-// Dependencies: [32, 19, 5496, 8806, 2]
+// Dependencies: [32, 19, 5591, 8905, 2]
 // Exports: default
 
-// Module 11388 (useAutocompleter)
-import _modDef8806 from "module_8806" /* 8806 */;
+// Module 11487 (useAutocompleter)
+import _modDef8905 from "module_8905" /* 8905 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,8 +25,8 @@ export default function useAutocompleter(searchOptions) {
   _slicedToArray = undefined;
   let tmp = _slicedToArray(react.useState({ results: [], query: "" }), 2);
   [tmp2, c1] = tmp;
-  const tmp3 = searchOptions(5496)(() => {
-    let obj = new _modDef8806((results, query) => {
+  const tmp3 = searchOptions(5591)(() => {
+    let obj = new _modDef8905((results, query) => {
       const obj = { results, query };
       closure_1_1(obj);
     });
@@ -48,13 +48,13 @@ export default function useAutocompleter(searchOptions) {
     search: react.useCallback((arg0) => {
       let query;
       let resultTypes;
-      const f137696 = (item) => resultTypes2.has(item);
+      const f138063 = (item) => resultTypes2.has(item);
       ({ query, resultTypes } = arg0);
       let tmp = null != options.resultTypes;
       if (tmp) {
         const resultTypes2 = obj.resultTypes;
-        tmp = resultTypes.length === resultTypes2.size && resultTypes.every(f137696);
-        resultTypes.length === resultTypes2.size && resultTypes.every(f137696);
+        tmp = resultTypes.length === resultTypes2.size && resultTypes.every(f138063);
+        resultTypes.length === resultTypes2.size && resultTypes.every(f138063);
       }
       if (!tmp) {
         options.setResultTypes(resultTypes);

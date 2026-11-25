@@ -1,19 +1,19 @@
-// Module ID: 19152
-// Function ID: 19153
+// Module ID: 19264
+// Function ID: 19265
 // Name: useLaunchAccountLinkingCampaign
-// Dependencies: [32, 19, 2164, 15032, 6263, 6715, 19131, 1071, 504, 1378, 7389, 2117, 7388, 7390, 2]
+// Dependencies: [32, 19, 2164, 15154, 6358, 6810, 19243, 1071, 504, 1378, 7484, 2117, 7483, 7485, 2]
 // Exports: default
 
-// Module 19152 (useLaunchAccountLinkingCampaign)
+// Module 19264 (useLaunchAccountLinkingCampaign)
 import Constants from "Constants" /* 1071 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6263 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7388 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6358 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7483 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15032 */;
-import ConsentStore from "ConsentStore" /* 6715 */;
-import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19131 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15154 */;
+import ConsentStore from "ConsentStore" /* 6810 */;
+import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19243 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,9 +82,9 @@ export default function useLaunchAccountLinkingCampaign(disableFetch) {
       return () => clearTimeout(closure_0);
     }
   }, items2);
-  const tmp4 = first(7389);
+  const tmp4 = first(7484);
   const tmp4Result = tmp4(stateFromStoresArray.map((applicationId) => applicationId.applicationId), disableFetch);
-  const tmp5 = first(7389);
+  const tmp5 = first(7484);
   tmp5(tmp4Result.map((linkedGames) => {
     let id;
     if (linkedGames != null) {

@@ -1,12 +1,12 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17414
+// Function ID: 17415
 // Name: DesignSystemHapticsSetting
-// Dependencies: [9414, 1071, 11815, 17302, 2]
+// Dependencies: [9513, 1071, 11914, 17415, 2]
 
-// Module 17301 (DesignSystemHapticsSetting)
+// Module 17414 (DesignSystemHapticsSetting)
 import Constants from "Constants" /* 1071 */;
-import SettingsConstants from "SettingsConstants" /* 9414 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import SettingsConstants from "SettingsConstants" /* 9513 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

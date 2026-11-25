@@ -1,14 +1,14 @@
-// Module ID: 18819
-// Function ID: 18820
+// Module ID: 18931
+// Function ID: 18932
 // Name: MemberRowPlaceholder
-// Dependencies: [19, 21, 4917, 18813, 2]
+// Dependencies: [19, 21, 5012, 18925, 2]
 // Exports: default
 
-// Module 18819 (MemberRowPlaceholder)
+// Module 18931 (MemberRowPlaceholder)
 import Fragment from "Fragment" /* 21 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18813 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18925 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

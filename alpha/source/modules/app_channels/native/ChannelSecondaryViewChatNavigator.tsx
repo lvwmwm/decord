@@ -1,20 +1,20 @@
-// Module ID: 19030
-// Function ID: 19031
+// Module ID: 19142
+// Function ID: 19143
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 8906, 4917, 575, 8863, 1378, 10448, 11626, 18449, 5089, 7229, 13912, 8875, 4978, 2]
+// Dependencies: [19, 21, 9005, 5012, 575, 8962, 1378, 10547, 11725, 18561, 5184, 7324, 14035, 8974, 5073, 2]
 // Exports: default
 
-// Module 19030 (ChannelSecondaryViewChatNavigator)
+// Module 19142 (ChannelSecondaryViewChatNavigator)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import HeaderShared from "HeaderShared" /* 8863 */;
-import ChannelContainer2 from "ChannelContainer" /* 10448 */;
-import ChatViewDefault from "ChatView" /* 11626 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 18449 */;
+import HeaderShared from "HeaderShared" /* 8962 */;
+import ChannelContainer2 from "ChannelContainer" /* 10547 */;
+import ChatViewDefault from "ChatView" /* 11725 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 18561 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 8906 */;
-import createStyles from "createStyles" /* 4917 */;
+import NativeStackView from "NativeStackView" /* 9005 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -61,8 +61,8 @@ export default function ChannelSecondaryViewChatNavigator(navigation) {
   const params = navigation.route.params;
   const tmp = closure_7();
   dependencyMap = tmp;
-  const tmp2 = params(5089)();
-  let obj = navigation(7229);
+  const tmp2 = params(5184)();
+  let obj = navigation(7324);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const channelId = params.channelId;
   const items = [channelId, tmp, navigation, accessibilityNativeStackOptions];
@@ -94,7 +94,7 @@ export default function ChannelSecondaryViewChatNavigator(navigation) {
       return React3(ChannelSecondaryViewChatScreen, obj);
     }
   };
-  const ThemeContextProvider = navigation(4978).ThemeContextProvider;
+  const ThemeContextProvider = navigation(5073).ThemeContextProvider;
   Navigator = closure_6.Navigator;
   return channelId(ThemeContextProvider, obj2);
 };

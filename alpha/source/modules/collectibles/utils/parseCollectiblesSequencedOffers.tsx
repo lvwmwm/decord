@@ -1,10 +1,10 @@
-// Module ID: 6242
-// Function ID: 6243
+// Module ID: 6337
+// Function ID: 6338
 // Name: parseCollectiblesSequencedOffers
 // Dependencies: [2]
 // Exports: default
 
-// Module 6242 (parseCollectiblesSequencedOffers)
+// Module 6337 (parseCollectiblesSequencedOffers)
 import size from "module_2" /* 2 */;
 
 function parseSequencedOffer(assets) {

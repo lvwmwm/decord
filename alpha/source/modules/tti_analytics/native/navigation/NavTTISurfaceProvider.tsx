@@ -1,18 +1,18 @@
-// Module ID: 18751
-// Function ID: 18752
+// Module ID: 18863
+// Function ID: 18864
 // Name: NavTTISurfaceProvider
-// Dependencies: [109, 19, 17, 5511, 21, 18219, 18217, 18220, 18210, 12353, 504, 12352, 2]
+// Dependencies: [109, 19, 17, 5606, 21, 18331, 18329, 18332, 18322, 12517, 504, 12516, 2]
 // Exports: NavTTISurfaceProvider
 
-// Module 18751 (NavTTISurfaceProvider)
+// Module 18863 (NavTTISurfaceProvider)
 import react_native from "react-native" /* 17 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12353 */;
-import useComponentRenderSpan from "useComponentRenderSpan" /* 18217 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 18219 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 18220 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12517 */;
+import useComponentRenderSpan from "useComponentRenderSpan" /* 18329 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 18331 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 18332 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5511 */;
+import DevSettingsStore from "DevSettingsStore" /* 5606 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,16 @@
 // Module ID: 10883
 // Function ID: 10884
-// Dependencies: [41, 42, 93, 95, 98, 10758, 10741]
+// Dependencies: [41, 42, 93, 95, 98, 10884, 10857, 10835, 10839, 10840]
 
 // Module 10883
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10741 */;
-import now2 from "now" /* 10758 */;
+import EmptyDuration from "EmptyDuration" /* 10835 */;
+import assignSimilarDate from "assignSimilarDate" /* 10839 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10840 */;
+import now2 from "now" /* 10857 */;
+import _mod10884 from "module_10884" /* 10884 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -81,10 +84,10 @@ if (!tmp4) {
     arg0.default = arg1;
   });
 }
-let closure_6 = tmp4;
+let closure_8 = tmp4;
 let fn = self && self.__importStar;
 if (!fn) {
-  fn = function o(arg0) {
+  fn = function u(arg0) {
     fn = Object.getOwnPropertyNames || ((obj) => {
       const items = [];
       for (const key10005 in obj) {
@@ -119,19 +122,32 @@ if (!fn) {
         }
       }
     }
-    closure_6(obj, __esModule);
+    closure_8(obj, __esModule);
     return obj;
   };
 }
+const tmp6 = self && self.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+const module_10884 = tmp6(_mod10884);
 const now = fn(now2);
-class ESCasualDateParser {
+const regExp = new RegExp("(jetzt|heute|morgen|\u00FCbermorgen|uebermorgen|gestern|vorgestern|letzte\\s*nacht)(?:\\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht))?(?=\\W|$)", "i");
+class DECasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ESCasualDateParser);
-    const obj = _getPrototypeOf(ESCasualDateParser);
+    _classCallCheck(this, DECasualDateParser);
+    const obj = _getPrototypeOf(DECasualDateParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -141,11 +157,11 @@ class ESCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ESCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(DECasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern(arg0) {
-    return /(ahora|hoy|mañana|ayer)(?=\W|$)/i;
+    return regExp;
   }
 };
 let items = [
@@ -153,21 +169,63 @@ let items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const str = arg1[0];
-      const formatted = str.toLowerCase();
-      if ("ahora" === formatted) {
-        return now.now(reference.reference);
-      } else if ("hoy" === formatted) {
-        return now.today(reference.reference);
-      } else if ("ma\u00F1ana" === formatted) {
-        return now.tomorrow(reference.reference);
-      } else if ("ayer" === formatted) {
-        return now.yesterday(reference.reference);
+      let nowResult;
+      reference = reference.reference;
+      const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+      const str = arg1[1] || "";
+      const str2 = str.toLowerCase();
+      const str3 = arg1[2] || "";
+      const formatted = str3.toLowerCase();
+      const parsingComponents = reference.createParsingComponents();
+      if ("jetzt" === str2) {
+        nowResult = now.now(reference.reference);
+      } else if ("heute" === str2) {
+        nowResult = now.today(reference.reference);
+      } else if ("morgen" === str2) {
+        const addDurationResult = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: 1 });
+        assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult);
+        assignSimilarDate.implySimilarTime(parsingComponents, addDurationResult);
+        nowResult = parsingComponents;
       } else {
-        return tmp2;
+        if ("\u00FCbermorgen" !== str2) {
+          if ("uebermorgen" !== str2) {
+            if ("gestern" === str2) {
+              const addDurationResult1 = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: -1 });
+              assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult1);
+              assignSimilarDate.implySimilarTime(parsingComponents, addDurationResult1);
+              nowResult = parsingComponents;
+            } else if ("vorgestern" === str2) {
+              const addDurationResult2 = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: -2 });
+              assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult2);
+              assignSimilarDate.implySimilarTime(parsingComponents, addDurationResult2);
+              nowResult = parsingComponents;
+            } else {
+              nowResult = parsingComponents;
+              if (str2.match(/letzte\s*nacht/)) {
+                let addDurationResult3 = dateWithAdjustedTimezone;
+                if (dateWithAdjustedTimezone.getHours() > 6) {
+                  addDurationResult3 = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: -1 });
+                }
+                assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult3);
+                parsingComponents.imply("hour", 0);
+                nowResult = parsingComponents;
+              }
+            }
+          }
+        }
+        const addDurationResult4 = EmptyDuration.addDuration(dateWithAdjustedTimezone, { day: 2 });
+        assignSimilarDate.assignSimilarDate(parsingComponents, addDurationResult4);
+        assignSimilarDate.implySimilarTime(parsingComponents, addDurationResult4);
+        nowResult = parsingComponents;
       }
+      let result = nowResult;
+      if (formatted) {
+        const _default = module_10884.default;
+        result = _default.extractTimeComponents(nowResult, formatted);
+      }
+      return result;
     }
   }
 ];
 
-export default _createClass(ESCasualDateParser, items);
+export default _createClass(DECasualDateParser, items);

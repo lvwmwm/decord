@@ -1,13 +1,13 @@
-// Module ID: 4947
-// Function ID: 4948
+// Module ID: 5042
+// Function ID: 5043
 // Name: HexagonCampaignPerkAvailability
-// Dependencies: [1386, 4948, 504, 4945, 2]
+// Dependencies: [1386, 5043, 504, 5040, 2]
 // Exports: getHexagonCampaignPerkAvailabilityForCurrentUser, isHexagonCampaignPerkExpiredForCurrentUser, useHexagonCampaignPerkAvailability, useHexagonCampaignPerkAvailabilityIgnoringExperiment
 
-// Module 4947 (HexagonCampaignPerkAvailability)
+// Module 5042 (HexagonCampaignPerkAvailability)
 import get_initialized from "get initialized" /* 504 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4945 */;
-import HexagonCampaignExperiment from "HexagonCampaignExperiment" /* 4948 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5040 */;
+import HexagonCampaignExperiment from "HexagonCampaignExperiment" /* 5043 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 11949
-// Function ID: 11950
+// Module ID: 12048
+// Function ID: 12049
 // Name: getInvitableGameOrganizationsFullState
-// Dependencies: [32, 11950, 1112, 2639, 2]
+// Dependencies: [32, 12049, 1112, 2650, 2]
 // Exports: default, getGameOrganizationFullSubLabel, getInvitableGameOrganizationsFullSubLabel
 
-// Module 11949 (getInvitableGameOrganizationsFullState)
+// Module 12048 (getInvitableGameOrganizationsFullState)
 import intl3 from "intl" /* 1112 */;
-import _modDef2639 from "module_2639" /* 2639 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 11950 */;
+import _modDef2650 from "module_2650" /* 2650 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ export function getGameOrganizationFullSubLabel(data, stateFromStores) {
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { orgName: name, displayNoun: str };
-  const xuM052 = _modDef2639.xuM052;
+  const xuM052 = _modDef2650.xuM052;
   if (str == null) {
     str = "other";
   }
@@ -60,14 +60,14 @@ export function getInvitableGameOrganizationsFullSubLabel(kind) {
       const intl2 = intl3.intl;
       const formatToPlainString = intl2.formatToPlainString;
       const obj = { orgName: name, displayNoun: str2 };
-      const xuM052 = _modDef2639.xuM052;
+      const xuM052 = _modDef2650.xuM052;
       if (str2 == null) {
         str2 = "other";
       }
       return formatToPlainString(xuM052, obj);
     } else if ("all_full" === kind) {
       const intl = intl3.intl;
-      return intl.string(_modDef2639.bY80Jh);
+      return intl.string(_modDef2650.bY80Jh);
     }
   }
 }

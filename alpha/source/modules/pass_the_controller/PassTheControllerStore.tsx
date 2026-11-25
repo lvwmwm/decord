@@ -1,23 +1,23 @@
-// Module ID: 5724
-// Function ID: 5725
+// Module ID: 5819
+// Function ID: 5820
 // Name: PassTheControllerStore
-// Dependencies: [2139, 502, 5725, 8262, 14918, 1071, 6688, 5729, 6690, 1404, 5742, 14919, 14926, 572, 14927, 14930, 504, 2]
+// Dependencies: [2139, 502, 5820, 8361, 15040, 1071, 6783, 5824, 6785, 1404, 5837, 15041, 15048, 572, 15049, 15052, 504, 2]
 
-// Module 5724 (PassTheControllerStore)
+// Module 5819 (PassTheControllerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants2 from "Constants" /* 5729 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5742 */;
-import Constants3 from "Constants" /* 6688 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6690 */;
-import Constants4 from "Constants" /* 14918 */;
-import InputEvent from "InputEvent" /* 14926 */;
-import InputHostDefault from "InputHost" /* 14927 */;
-import InputGuestDefault from "InputGuest" /* 14930 */;
+import Constants2 from "Constants" /* 5824 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5837 */;
+import Constants3 from "Constants" /* 6783 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6785 */;
+import Constants4 from "Constants" /* 15040 */;
+import InputEvent from "InputEvent" /* 15048 */;
+import InputHostDefault from "InputHost" /* 15049 */;
+import InputGuestDefault from "InputGuest" /* 15052 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8262 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8361 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -237,9 +237,9 @@ let obj = {
                 if (null != rTCConnection) {
                   const self5 = this;
                   const self6 = this;
-                  const inputConnection = new inputConnection1(14919).InputConnection(rTCConnection, AuthenticationStore.getId());
+                  const inputConnection = new inputConnection1(15041).InputConnection(rTCConnection, AuthenticationStore.getId());
                   h = h2;
-                  inputConnection.on(inputConnection1(14926).InputEvent.Disconnect, h);
+                  inputConnection.on(inputConnection1(15048).InputEvent.Disconnect, h);
                   inputConnection.connect();
                   inputConnection1 = inputConnection;
                   tmp44 = inputConnection;
@@ -258,7 +258,7 @@ let obj = {
                 }
                 obj = { streamKey, inputHost: tmp502 };
                 const tmp50 = InputHostDefault;
-                const obj8 = inputConnection1(6690);
+                const obj8 = inputConnection1(6785);
                 let guildId = obj8.decodeStreamKey(streamKey).guildId;
                 if (guildId == null) {
                   guildId = null;
@@ -293,9 +293,9 @@ let obj = {
           if (null != rTCConnection2) {
             const self = this;
             const self2 = this;
-            inputConnection1 = new inputConnection1(14919).InputConnection(rTCConnection2, AuthenticationStore.getId());
+            inputConnection1 = new inputConnection1(15041).InputConnection(rTCConnection2, AuthenticationStore.getId());
             h = h2;
-            inputConnection1.on(inputConnection1(14926).InputEvent.Disconnect, h);
+            inputConnection1.on(inputConnection1(15048).InputEvent.Disconnect, h);
             inputConnection1.connect();
             tmp13 = inputConnection1;
           }
@@ -418,7 +418,7 @@ let obj = {
         const inputHost = _null2.inputHost;
         inputHost.takeBackController();
       }
-      const encodeStreamKey = tmp(6690).encodeStreamKey;
+      const encodeStreamKey = tmp(6785).encodeStreamKey;
       StreamKeyUtils;
       if (null != guildId) {
         CALL = StreamTypes.GUILD;

@@ -1,19 +1,19 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 14893
+// Function ID: 14894
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 4917, 575, 4978, 8718, 5133, 5134, 5082, 14772, 14773, 1378, 2]
+// Dependencies: [32, 19, 17, 21, 5012, 575, 5073, 8817, 5228, 5229, 5177, 14894, 14895, 1378, 2]
 // Exports: Slider, useLatestSliderValue
 
-// Module 14771 (Slider)
+// Module 14893 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5133 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5134 */;
-import _modDef8718 from "module_8718" /* 8718 */;
+import HapticUtils from "HapticUtils" /* 5228 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5229 */;
+import _modDef8817 from "module_8817" /* 8817 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -96,7 +96,7 @@ export function Slider(maxValue) {
   ({ accessibilityLabel, accessibilityHint, testID } = maxValue);
   const tmp = closure_8();
   const tmp2 = step;
-  let obj = step(4978);
+  let obj = step(5073);
   const theme = obj.useThemeContext().theme;
   [first, _slicedToArray] = react.useState(false);
   let tmp7 = defaultValue;
@@ -182,15 +182,15 @@ export function Slider(maxValue) {
     testID,
     onResponderGrant: fn
   };
-  const tmp24 = _modDef8718;
+  const tmp24 = _modDef8817;
   if (value == null) {
     value = first1;
   }
-  const tmp2Result = tmp2(5082);
+  const tmp2Result = tmp2(5177);
   if (tmp2Result.isThemeDark(theme)) {
-    tmp2Result3 = tmp2(14772);
+    tmp2Result3 = tmp2(14894);
   } else {
-    tmp2Result3 = tmp2(14773);
+    tmp2Result3 = tmp2(14895);
   }
   tmp26 = undefined;
   if (null != formatValue) {

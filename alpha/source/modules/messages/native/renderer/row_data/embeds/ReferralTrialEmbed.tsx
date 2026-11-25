@@ -1,10 +1,10 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 14382
+// Function ID: 14383
 // Name: ReferralTrialEmbed
-// Dependencies: [4766, 1386, 2178, 8998, 8963, 1071, 1388, 4917, 575, 8972, 8680, 9103, 1112, 14260, 4973, 2173, 8997, 13741, 2187, 1625, 9497, 2]
+// Dependencies: [4861, 1386, 2178, 9097, 9062, 1071, 1388, 5012, 575, 9071, 8779, 9202, 1112, 14383, 5068, 2173, 9096, 13864, 2187, 1625, 9596, 2]
 // Exports: createReferralTrialEmbedRedeemable
 
-// Module 14259 (ReferralTrialEmbed)
+// Module 14382 (ReferralTrialEmbed)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl12 from "intl" /* 1112 */;
@@ -12,19 +12,19 @@ import PremiumConstants from "PremiumConstants" /* 1388 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
 import PremiumUtils from "PremiumUtils" /* 2173 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import createStyles from "createStyles" /* 4917 */;
-import UserUtilsDefault from "UserUtils" /* 4973 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8680 */;
-import useTrialOffer from "useTrialOffer" /* 8997 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9103 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9497 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 13741 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14260 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import createStyles from "createStyles" /* 5012 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8779 */;
+import useTrialOffer from "useTrialOffer" /* 9096 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9202 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9596 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 13864 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14383 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import UserStore from "UserStore" /* 1386 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
-import UserOfferStore from "UserOfferStore" /* 8998 */;
-import IAPStore from "IAPStore" /* 8963 */;
+import UserOfferStore from "UserOfferStore" /* 9097 */;
+import IAPStore from "IAPStore" /* 9062 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -106,7 +106,7 @@ export function createReferralTrialEmbedRedeemable(message, theme, id, relevantU
               const userTrialOffer = UserOfferStore.getUserTrialOffer(closure_9);
               const offerIds = IAPStore.getOfferIds();
               const _Object = Object;
-              const values = Object.values(tmp46(8972).TrialIdToProductOfferId[closure_9]);
+              const values = Object.values(tmp46(9071).TrialIdToProductOfferId[closure_9]);
               let id1;
               const id2 = relevantUserTrialOffer.id;
               const everyResult = values.every((item) => set.has(item));

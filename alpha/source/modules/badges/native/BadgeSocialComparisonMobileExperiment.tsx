@@ -1,10 +1,10 @@
-// Module ID: 13684
-// Function ID: 13685
+// Module ID: 13807
+// Function ID: 13808
 // Name: BadgeSocialComparisonMobileExperiment
 // Dependencies: [1450, 2]
 // Exports: useBadgeSocialComparisonMobileEnabled
 
-// Module 13684 (BadgeSocialComparisonMobileExperiment)
+// Module 13807 (BadgeSocialComparisonMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

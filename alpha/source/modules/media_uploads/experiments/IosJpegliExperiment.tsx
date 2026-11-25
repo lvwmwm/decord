@@ -1,10 +1,10 @@
-// Module ID: 8011
-// Function ID: 8012
+// Module ID: 8110
+// Function ID: 8111
 // Name: IosJpegliExperiment
 // Dependencies: [1450, 2]
 // Exports: getIosJpegliConfig
 
-// Module 8011 (IosJpegliExperiment)
+// Module 8110 (IosJpegliExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

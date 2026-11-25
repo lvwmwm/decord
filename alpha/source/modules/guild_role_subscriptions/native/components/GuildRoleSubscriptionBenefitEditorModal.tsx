@@ -1,25 +1,25 @@
-// Module ID: 20072
-// Function ID: 20073
+// Module ID: 20174
+// Function ID: 20175
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4859, 1386, 20071, 16644, 21, 4917, 575, 5515, 1112, 5624, 20051, 1628, 6014, 20073, 5533, 7148, 20075, 20076, 7314, 2]
+// Dependencies: [5, 32, 19, 17, 4954, 1386, 20173, 16765, 21, 5012, 575, 5610, 1112, 5719, 20153, 1628, 6109, 20175, 5628, 7243, 20177, 20178, 7409, 2]
 // Exports: default
 
-// Module 20072 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 20174 (GuildRoleSubscriptionBenefitEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
-import components_Button_Button from "components/Button/Button" /* 5515 */;
-import useChannelName from "useChannelName" /* 5533 */;
-import TrashIcon2 from "TrashIcon" /* 5624 */;
+import components_Button_Button from "components/Button/Button" /* 5610 */;
+import useChannelName from "useChannelName" /* 5628 */;
+import TrashIcon2 from "TrashIcon" /* 5719 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore_mod from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 20071 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16644 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore_mod from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 20173 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16765 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2, dependencyMap;
@@ -104,7 +104,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -148,7 +148,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp19) {
           closure_2 = tmp19;
           if (0 === c3) {
@@ -174,7 +174,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -217,7 +217,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           closure_2 = tmp10;
@@ -235,7 +235,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
   const tmp2 = closure_15();
   const tmp3 = value;
   const tmp4 = dependencyMap;
-  const tmp5 = value(20051)();
+  const tmp5 = value(20153)();
   const tmp6 = _slicedToArray(GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState(), 2);
   value = tmp6[0];
   dependencyMap = tmp7;
@@ -303,8 +303,8 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
     stringResult2 = intl5.string(tmp21(1112).t.NNqncc);
   }
   if (merged.benefitType === obj.CHANNEL) {
-    let obj2 = { title: stringResult1, hasIcons: true, children: closure_13(tmp3(20073), obj3) };
-    const TableRowGroup = tmp21(6014).TableRowGroup;
+    let obj2 = { title: stringResult1, hasIcons: true, children: closure_13(tmp3(20175), obj3) };
+    const TableRowGroup = tmp21(6109).TableRowGroup;
     obj3 = {
       channelId: first4,
       guildId: merged.guildId,
@@ -319,7 +319,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
   } else {
     obj = { label: stringResult1, maxLength, value, placeholder: intl7.string(tmp21(1112).t["kV54/Y"]), onChange: tmp6[1], returnKeyType: "done", autoFocus: true, clearable: true };
     const tmp26 = maxLength;
-    const TextInput = tmp21(7148).TextInput;
+    const TextInput = tmp21(7243).TextInput;
     intl7 = tmp21(1112).intl;
     tmp27 = closure_13(TextInput, obj);
     tmp28 = closure_13;
@@ -334,15 +334,15 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
     },
     listingId: merged.listingId
   };
-  items = [tmp28(tmp3(20075), obj5), ];
+  items = [tmp28(tmp3(20177), obj5), ];
   const obj6 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: items1, children: items2 };
   items1 = [tmp2.scrollContainer, tmp5.container, ];
   const obj7 = { paddingBottom: sum + tmp3(575).space.PX_16 };
   sum = bottom + tmp3(575).space.PX_32;
   items1[2] = obj7;
   items2 = [tmp27, , , ];
-  const obj8 = { title: intl8.string(tmp21(1112).t.sMOuuS), hasIcons: true, children: tmp28(tmp3(20076), obj9) };
-  const TableRowGroup2 = tmp21(6014).TableRowGroup;
+  const obj8 = { title: intl8.string(tmp21(1112).t.sMOuuS), hasIcons: true, children: tmp28(tmp3(20178), obj9) };
+  const TableRowGroup2 = tmp21(6109).TableRowGroup;
   intl8 = tmp21(1112).intl;
   obj9 = {
     emoji: { emojiId: first1, emojiName: first2 },
@@ -354,7 +354,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
   };
   items2[1] = tmp28(TableRowGroup2, obj8);
   const obj10 = { label: intl9.string(tmp21(1112).t["74JctW"]), maxLength: obj, value: first3, onChange: tmp12, placeholder: stringResult2 };
-  const TextArea = tmp21(7314).TextArea;
+  const TextArea = tmp21(7409).TextArea;
   intl9 = tmp21(1112).intl;
   items2[2] = tmp28(TextArea, obj10);
   let tmp28Result = null;

@@ -1,10 +1,10 @@
-// Module ID: 5926
-// Function ID: 5927
+// Module ID: 6021
+// Function ID: 6022
 // Name: AlertModal
-// Dependencies: [5, 32, 717, 19, 17, 1341, 1082, 21, 4917, 575, 4978, 5922, 1653, 2018, 5927, 5979, 1262, 1706, 5483, 1112, 4931, 1628, 5983, 1494, 5984, 5989, 5508, 5990, 5518, 5515, 2]
+// Dependencies: [5, 32, 717, 19, 17, 1341, 1082, 21, 5012, 575, 5073, 6017, 1653, 2018, 6022, 6074, 1262, 1706, 5578, 1112, 5026, 1628, 6078, 1494, 6079, 6084, 5603, 6085, 5613, 5610, 2]
 // Exports: showConfirmModal, useDismissModalCallback
 
-// Module 5926 (AlertModal)
+// Module 6021 (AlertModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl2 from "intl" /* 1112 */;
@@ -12,22 +12,22 @@ import StandardAnalyticsConstants from "StandardAnalyticsConstants" /* 1341 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2018 */;
-import native from "native" /* 4978 */;
-import components_Button_Button from "components/Button/Button" /* 5515 */;
-import spring_spring from "spring/spring" /* 5518 */;
-import useAlertStore2 from "useAlertStore" /* 5922 */;
-import OverlayViewDefault from "OverlayView" /* 5927 */;
-import Dialog2 from "Dialog" /* 5979 */;
-import react_native from "react-native" /* 5983 */;
-import Stack_Stack from "Stack/Stack" /* 5989 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 5990 */;
+import native from "native" /* 5073 */;
+import components_Button_Button from "components/Button/Button" /* 5610 */;
+import spring_spring from "spring/spring" /* 5613 */;
+import useAlertStore2 from "useAlertStore" /* 6017 */;
+import OverlayViewDefault from "OverlayView" /* 6022 */;
+import Dialog2 from "Dialog" /* 6074 */;
+import react_native from "react-native" /* 6078 */;
+import Stack_Stack from "Stack/Stack" /* 6084 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -126,7 +126,7 @@ function AlertModalBackdrop() {
   const animatedStyle = useAnimatedStyle(AlertModalNativeTsx1);
   const obj2 = { blur: "strong", style: animatedStyle, onDismiss: tmp18, accessibilityLabel: intl.string(intl2.t.Xkfav5) };
   tmp18 = null;
-  const Backdrop = tmp5(5483).Backdrop;
+  const Backdrop = tmp5(5578).Backdrop;
   const tmp17 = unpackModuleId;
   if (alertStore) {
     tmp18 = dismissTopAlert;
@@ -491,7 +491,7 @@ class AlertActionButton {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -541,7 +541,7 @@ class AlertActionButton {
           const obj3 = closure_0(closure_2_2[11]);
           obj3.dismissAlert(c2);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp16) {
           if (0 === c3) {
             c4 = 3;

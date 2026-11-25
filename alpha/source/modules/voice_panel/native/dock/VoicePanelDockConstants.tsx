@@ -1,13 +1,13 @@
-// Module ID: 11658
-// Function ID: 11659
+// Module ID: 11757
+// Function ID: 11758
 // Name: VoicePanelDockConstants
-// Dependencies: [11635, 11659, 575, 2]
+// Dependencies: [11734, 11758, 575, 2]
 // Exports: getDockInset, getVoicePanelDockButtonsTop, getVoicePanelDockHeight
 
-// Module 11658 (VoicePanelDockConstants)
+// Module 11757 (VoicePanelDockConstants)
 import nativeDefault from "native" /* 575 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11635 */;
-import GestureConstants from "GestureConstants" /* 11659 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
+import GestureConstants from "GestureConstants" /* 11758 */;
 import size from "module_2" /* 2 */;
 
 let tmp10;

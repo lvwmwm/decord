@@ -1,18 +1,18 @@
-// Module ID: 16463
-// Function ID: 16464
+// Module ID: 16584
+// Function ID: 16585
 // Name: OrbsArcadeActionCreators
-// Dependencies: [5, 502, 16456, 1071, 1088, 559, 572, 1284, 16458, 5667, 16457, 2]
+// Dependencies: [5, 502, 16577, 1071, 1088, 559, 572, 1284, 16579, 5762, 16578, 2]
 // Exports: claimOrbsArcadeRewards, ensureOrbsArcadeEnrollment, fetchOrbsArcadeGamesIfStale, resetOrbsArcadeGame
 
-// Module 16463 (OrbsArcadeActionCreators)
+// Module 16584 (OrbsArcadeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16457 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16578 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16456 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16577 */;
 import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _fetchOrbsArcadeGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let tmp28;
@@ -116,7 +116,7 @@ let obj = function _fetchOrbsArcadeGames() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp28) {
         if (0 === c3) {
           c5 = 3;
@@ -142,7 +142,7 @@ obj = function _resetOrbsArcadeGame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c4;
@@ -185,7 +185,7 @@ obj = function _resetOrbsArcadeGame() {
             return obj6;
           } else {
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           c6 = 3;
@@ -232,7 +232,7 @@ obj = function _ensureOrbsArcadeEnrollment() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -280,7 +280,7 @@ obj = function _ensureOrbsArcadeEnrollment() {
             obj = closure_130_1(closure_130_2[6]);
             obj.dispatch(obj7);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -314,7 +314,7 @@ obj = function _postOrbsArcadeClaimRewards() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -380,7 +380,7 @@ obj = function _postOrbsArcadeClaimRewardsWithRetry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -542,7 +542,7 @@ obj = function _claimOrbsArcadeRewards() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

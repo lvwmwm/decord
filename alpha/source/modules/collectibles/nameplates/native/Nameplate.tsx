@@ -1,16 +1,16 @@
-// Module ID: 9338
-// Function ID: 9339
+// Module ID: 9437
+// Function ID: 9438
 // Name: Nameplate
-// Dependencies: [19, 4918, 21, 4917, 504, 5126, 1653, 5127, 2109, 9339, 5472, 5604, 2]
+// Dependencies: [19, 5013, 21, 5012, 504, 5221, 1653, 5222, 2109, 9438, 5567, 5699, 2]
 // Exports: default
 
-// Module 9338 (Nameplate)
+// Module 9437 (Nameplate)
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5127 */;
+import timing_timing from "timing/timing" /* 5222 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -68,7 +68,7 @@ function NameplateInner(isFocused) {
   const tmp4 = closure_7(flag3, isPressed, flag, flag2, flag5);
   const tmp5 = sharedValue;
   let num = 1;
-  const tmp6 = sharedValue(5126)();
+  const tmp6 = sharedValue(5221)();
   const useSharedValue = flag6(1653).useSharedValue;
   flag6(1653);
   if (flag6) {
@@ -105,7 +105,7 @@ function NameplateInner(isFocused) {
   const animatedStyle = tmpResult.useAnimatedStyle(NameplateTsx1);
   const tmpResult3 = tmp(2109);
   const backgroundGradientColors = tmpResult3.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult4 = tmp(9339);
+  const tmpResult4 = tmp(9438);
   const nameplateAssets = tmpResult4.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp15 = true === flag7;
@@ -131,7 +131,7 @@ function NameplateInner(isFocused) {
     let num2 = 0;
     const obj3 = { style: tmp4.gradient, start: point, end: { x: 1, y: 0 }, colors: items5 };
     const tmp18 = closure_5;
-    const tmp5Result = tmp5(5472);
+    const tmp5Result = tmp5(5567);
     if (flag4) {
       num2 = -2;
     }
@@ -142,7 +142,7 @@ function NameplateInner(isFocused) {
   }
   items6 = [tmp18Result, ];
   const obj4 = { source: { uri: str }, style: tmp4.img, accessibilityRole: "image", enableAnimation: tmp15 };
-  items6[1] = closure_5(tmp5(5604), obj4);
+  items6[1] = closure_5(tmp5(5699), obj4);
   return tmp16(View, obj2);
 }
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

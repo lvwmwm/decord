@@ -1,13 +1,13 @@
-// Module ID: 4803
-// Function ID: 4804
+// Module ID: 4898
+// Function ID: 4899
 // Name: Database
-// Dependencies: [5, 4804, 4802, 4805, 10, 2]
+// Dependencies: [5, 4899, 4897, 4900, 10, 2]
 
-// Module 4803 (Database)
+// Module 4898 (Database)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
-import TableId from "TableId" /* 4802 */;
-import Host2 from "Host" /* 4804 */;
-import Runtime2 from "Runtime" /* 4805 */;
+import TableId from "TableId" /* 4897 */;
+import Host2 from "Host" /* 4899 */;
+import Runtime2 from "Runtime" /* 4900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ class Database {
       obj.name = openSyncUnsafeResult.name;
       obj.lastState = TableId.DatabaseState.Open;
       obj.handle = openSyncUnsafeResult.handle;
-      const Runtime = tmp2(4805).Runtime;
+      const Runtime = tmp2(4900).Runtime;
       obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
         if (obj.handle === arg0) {
           tmp.lastState = lastState;
@@ -91,7 +91,7 @@ class Database {
   }
   execute(table, arg1) {
     let closure_0;
-    const f122815 = async (arg0) => {
+    const f123167 = async (arg0) => {
       raw = raw.raw;
       const execute = raw.execute;
       const obj = { handle: 0 };
@@ -123,7 +123,7 @@ class Database {
         if (type == null) {
           type = table.type;
         }
-        executeAsyncResult = executeAsync(type, f122815);
+        executeAsyncResult = executeAsync(type, f123167);
       } else {
         let type2 = type;
         const timeAsync = require("AppStartPerformance").timeAsync;
@@ -142,7 +142,7 @@ class Database {
           if (closure_0 == null) {
             type = table.type;
           }
-          return executeAsync(type, f122815);
+          return executeAsync(type, f123167);
         }
         executeAsyncResult = timeAsync("\u{1F4BE}", "" + type2 + " " + str, callback);
       }
@@ -215,7 +215,7 @@ class Database {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

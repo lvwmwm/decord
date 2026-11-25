@@ -1,12 +1,12 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 14908
+// Function ID: 14909
 // Name: NoteStore
-// Dependencies: [4781, 4789, 4792, 2]
+// Dependencies: [4876, 4884, 4887, 2]
 
-// Module 14786 (NoteStore)
-import LibdiscoreStore2 from "LibdiscoreStore" /* 4789 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 4792 */;
-import PlainRecord from "PlainRecord" /* 4781 */;
+// Module 14908 (NoteStore)
+import LibdiscoreStore2 from "LibdiscoreStore" /* 4884 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 4887 */;
+import PlainRecord from "PlainRecord" /* 4876 */;
 import size from "module_2" /* 2 */;
 
 let TypeTag;

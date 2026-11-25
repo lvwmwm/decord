@@ -1,19 +1,19 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16153
+// Function ID: 16154
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 16020, 21, 4917, 575, 2018, 16026, 7280, 2]
+// Dependencies: [19, 17, 16141, 21, 5012, 575, 2018, 16147, 7375, 2]
 // Exports: default
 
-// Module 16032 (SettingSearchBar)
+// Module 16153 (SettingSearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2018 */;
-import SearchBar2 from "SearchBar" /* 7280 */;
-import Tracking from "Tracking" /* 16026 */;
+import SearchBar2 from "SearchBar" /* 7375 */;
+import Tracking from "Tracking" /* 16147 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16020 */;
-import createStyles from "createStyles" /* 4917 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16141 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

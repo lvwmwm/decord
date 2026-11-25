@@ -1,10 +1,10 @@
-// Module ID: 18391
-// Function ID: 18392
+// Module ID: 18503
+// Function ID: 18504
 // Name: buildConjureProjectLink
 // Dependencies: [2]
 // Exports: default
 
-// Module 18391 (buildConjureProjectLink)
+// Module 18503 (buildConjureProjectLink)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/buildConjureProjectLink.tsx");

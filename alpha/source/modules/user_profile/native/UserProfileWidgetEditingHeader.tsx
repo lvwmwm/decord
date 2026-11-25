@@ -1,20 +1,20 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 16117
+// Function ID: 16118
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 502, 6011, 21, 4917, 575, 504, 14501, 5508, 1112, 5515, 11123, 6256, 5131, 14844, 2119, 7811, 12941, 15997, 2]
+// Dependencies: [19, 17, 502, 6106, 21, 5012, 575, 504, 14624, 5603, 1112, 5610, 11222, 6351, 5226, 14966, 2119, 7910, 13065, 16118, 2]
 // Exports: default
 
-// Module 15996 (UserProfileWidgetEditingHeader)
+// Module 16117 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import Constants from "Constants" /* 6011 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6256 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import Constants from "Constants" /* 6106 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6351 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -43,12 +43,12 @@ export default function UserProfileWidgetEditingHeader() {
   let obj = stateFromStores(504);
   const items = [AuthenticationStore];
   stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  let obj2 = stateFromStores(14501);
+  let obj2 = stateFromStores(14624);
   const length = obj2.useBoardWidgets(stateFromStores).length;
   const ref = react.useRef(null);
   let obj3 = { style: tmp.header, children: items1 };
   const obj4 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.heading, children: intl.string(stateFromStores(1112).t.OYlggR) };
-  const Heading = stateFromStores(5508).Heading;
+  const Heading = stateFromStores(5603).Heading;
   intl = stateFromStores(1112).intl;
   items1 = [closure_7(Heading, obj4), , ];
   const obj5 = {
@@ -61,12 +61,12 @@ export default function UserProfileWidgetEditingHeader() {
       const obj2 = { userId: stateFromStores, action: constants.PRESS_ADD_WIDGET };
       const result = obj.trackUserProfileEditAction(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(14844, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
+      obj3.openLazy(asyncRequire(14966, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
     }
   };
-  const Button = stateFromStores(5515).Button;
+  const Button = stateFromStores(5610).Button;
   obj6 = { size: "xs", color: ref(575).colors.ICON_DEFAULT };
-  PlusSmallIcon = stateFromStores(11123).PlusSmallIcon;
+  PlusSmallIcon = stateFromStores(11222).PlusSmallIcon;
   intl2 = stateFromStores(1112).intl;
   items1[1] = closure_7(Button, obj5);
   const obj7 = {
@@ -79,12 +79,12 @@ export default function UserProfileWidgetEditingHeader() {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { returnFocusRef: ref };
-      return obj.openLazy(asyncRequire(15997, dependencyMap.paths), "UserProfileWidgetReorderActionSheet", obj2);
+      return obj.openLazy(asyncRequire(16118, dependencyMap.paths), "UserProfileWidgetReorderActionSheet", obj2);
     }
   };
-  const IconButton = stateFromStores(7811).IconButton;
+  const IconButton = stateFromStores(7910).IconButton;
   obj8 = { size: "sm", color: ref(575).colors.ICON_DEFAULT };
-  ArrowsUpDownIcon = stateFromStores(12941).ArrowsUpDownIcon;
+  ArrowsUpDownIcon = stateFromStores(13065).ArrowsUpDownIcon;
   intl3 = stateFromStores(1112).intl;
   items1[2] = closure_7(IconButton, obj7);
   return closure_8(View, obj3);

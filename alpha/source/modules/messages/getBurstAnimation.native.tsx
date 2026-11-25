@@ -1,10 +1,10 @@
-// Module ID: 4876
-// Function ID: 4877
+// Module ID: 4971
+// Function ID: 4972
 // Name: getBurstAnimation
-// Dependencies: [5, 4877, 4878, 4879, 4880, 4881, 4882, 4883, 4884, 4885, 4886, 4887, 4888, 4889, 4890, 4891, 4892, 4893, 4894, 4895, 4896, 4897, 4898, 4899, 4900, 4901, 4902, 4903, 4904, 4905, 4906, 4907, 4908, 4909, 4910, 4911, 4912, 4913, 2]
+// Dependencies: [5, 4972, 4973, 4974, 4975, 4976, 4977, 4978, 4979, 4980, 4981, 4982, 4983, 4984, 4985, 4986, 4987, 4988, 4989, 4990, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4998, 4999, 5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 2]
 // Exports: getBurstAnimation
 
-// Module 4876 (getBurstAnimation)
+// Module 4971 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,187 +13,187 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_4877");
+    return require("module_4972");
   }
 };
 const items = [
   obj,
   {
     load() {
-      return require("module_4878");
+      return require("module_4973");
     }
   },
   {
     load() {
-      return require("module_4879");
+      return require("module_4974");
     }
   },
   {
     load() {
-      return require("module_4880");
+      return require("module_4975");
     }
   },
   {
     load() {
-      return require("module_4881");
+      return require("module_4976");
     }
   },
   {
     load() {
-      return require("module_4882");
+      return require("module_4977");
     }
   },
   {
     load() {
-      return require("module_4883");
+      return require("module_4978");
     }
   },
   {
     load() {
-      return require("module_4884");
+      return require("module_4979");
     }
   },
   {
     load() {
-      return require("module_4885");
+      return require("module_4980");
     }
   },
   {
     load() {
-      return require("module_4886");
+      return require("module_4981");
     }
   },
   {
     load() {
-      return require("module_4887");
+      return require("module_4982");
     }
   },
   {
     load() {
-      return require("module_4888");
+      return require("module_4983");
     }
   },
   {
     load() {
-      return require("module_4889");
+      return require("module_4984");
     }
   },
   {
     load() {
-      return require("module_4890");
+      return require("module_4985");
     }
   },
   {
     load() {
-      return require("module_4891");
+      return require("module_4986");
     }
   },
   {
     load() {
-      return require("module_4892");
+      return require("module_4987");
     }
   },
   {
     load() {
-      return require("module_4893");
+      return require("module_4988");
     }
   },
   {
     load() {
-      return require("module_4894");
+      return require("module_4989");
     }
   }
 ];
 const obj2 = {
   load() {
-    return require("module_4895");
+    return require("module_4990");
   }
 };
 const items1 = [
   obj2,
   {
     load() {
-      return require("module_4896");
+      return require("module_4991");
     }
   },
   {
     load() {
-      return require("module_4897");
+      return require("module_4992");
     }
   },
   {
     load() {
-      return require("module_4898");
+      return require("module_4993");
     }
   },
   {
     load() {
-      return require("module_4899");
+      return require("module_4994");
     }
   },
   {
     load() {
-      return require("module_4900");
+      return require("module_4995");
     }
   },
   {
     load() {
-      return require("module_4901");
+      return require("module_4996");
     }
   },
   {
     load() {
-      return require("module_4902");
+      return require("module_4997");
     }
   },
   {
     load() {
-      return require("module_4903");
+      return require("module_4998");
     }
   },
   {
     load() {
-      return require("module_4904");
+      return require("module_4999");
     }
   },
   {
     load() {
-      return require("module_4905");
+      return require("module_5000");
     }
   },
   {
     load() {
-      return require("module_4906");
+      return require("module_5001");
     }
   },
   {
     load() {
-      return require("module_4907");
+      return require("module_5002");
     }
   },
   {
     load() {
-      return require("module_4908");
+      return require("module_5003");
     }
   },
   {
     load() {
-      return require("module_4909");
+      return require("module_5004");
     }
   },
   {
     load() {
-      return require("module_4910");
+      return require("module_5005");
     }
   },
   {
     load() {
-      return require("module_4911");
+      return require("module_5006");
     }
   },
   {
     load() {
-      return require("module_4912");
+      return require("module_5007");
     }
   }
 ];
@@ -215,7 +215,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

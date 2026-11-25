@@ -1,14 +1,14 @@
-// Module ID: 8636
-// Function ID: 8637
+// Module ID: 8735
+// Function ID: 8736
 // Name: RiotGamesNeutralIcon
-// Dependencies: [19, 21, 575, 5603, 8637, 2]
+// Dependencies: [19, 21, 575, 5698, 8736, 2]
 // Exports: RiotGamesNeutralIcon
 
-// Module 8636 (RiotGamesNeutralIcon)
+// Module 8735 (RiotGamesNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 8637 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 8736 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 17970
-// Function ID: 17971
+// Module ID: 18082
+// Function ID: 18083
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6850, 4950, 6038, 17900, 16511, 21, 4917, 7302, 1628, 16502, 16514, 551, 558, 504, 1653, 1706, 17971, 2]
+// Dependencies: [32, 19, 17, 6945, 5045, 6133, 18012, 16632, 21, 5012, 7397, 1628, 16623, 16635, 551, 558, 504, 1653, 1706, 18083, 2]
 
-// Module 17970 (GuildsBarUnreadBars)
+// Module 18082 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6038 */;
-import FastList from "FastList" /* 7302 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6133 */;
+import FastList from "FastList" /* 7397 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6850 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4950 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17900 */;
-import YouBarConstants from "YouBarConstants" /* 16511 */;
-import createStyles from "createStyles" /* 4917 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6945 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18012 */;
+import YouBarConstants from "YouBarConstants" /* 16632 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -143,7 +143,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(7302).FastListItemTypes.SECTION === type) {
+            if (tmp41(7397).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -167,7 +167,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(7302).FastListItemTypes.ITEM === type) {
+              if (tmp41(7397).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -227,7 +227,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: obj7, afterItem: "Array" };
+            let obj6 = { beforeItem: obj7, afterItem: "r" };
             obj7 = { section: sum, row: tmp32.item, mention: true };
             return obj6;
           }
@@ -245,8 +245,8 @@ const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
-let closure_17 = { beforeItem: "Array", afterItem: "Path" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
+let closure_17 = { beforeItem: "Array", afterItem: "analyticsLocations" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
 let closure_20 = { code: "(function GuildsBarUnreadBarsTsx1(){let[scrollPosValue]=this.__closure;return scrollPosValue.get();})" };
 let closure_21 = { code: "(function GuildsBarUnreadBarsTsx2(position,lastPosition){let[scheduleOnRN,debouncedUpdate]=this.__closure;if(position!==lastPosition){scheduleOnRN(debouncedUpdate);}})" };
 const memoResult = react.memo(function GuildsBarUnreadBars(fastList) {
@@ -354,11 +354,11 @@ const memoResult = react.memo(function GuildsBarUnreadBars(fastList) {
   const tmp16 = closure_15();
   _require = tmp16;
   const top2 = tmp(1628)().top;
-  const tmp8Result = fastList(16502);
+  const tmp8Result = fastList(16623);
   const mobileQuestDockHeight = tmp8Result.useMobileQuestDockHeight();
   let num = 8;
-  const useYouBarTotalHeight = fastList(16514).useYouBarTotalHeight;
-  fastList(16514);
+  const useYouBarTotalHeight = fastList(16635).useYouBarTotalHeight;
+  fastList(16635);
   if (mobileQuestDockHeight > 0) {
     num = 0;
   }

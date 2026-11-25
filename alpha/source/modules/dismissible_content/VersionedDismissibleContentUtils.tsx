@@ -1,17 +1,17 @@
-// Module ID: 4764
-// Function ID: 4765
+// Module ID: 4859
+// Function ID: 4860
 // Name: VersionedDismissibleContentUtils
-// Dependencies: [4765, 5570, 4750, 5571, 5572, 2117, 5573, 4778, 2]
+// Dependencies: [4860, 5665, 4845, 5666, 5667, 2117, 5668, 4873, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
-// Module 4764 (VersionedDismissibleContentUtils)
+// Module 4859 (VersionedDismissibleContentUtils)
 import Server from "Server" /* 2117 */;
-import dismissible_content from "dismissible_content" /* 4750 */;
-import TypeUtils from "TypeUtils" /* 4778 */;
-import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 5572 */;
-import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 5573 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4765 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5570 */;
+import dismissible_content from "dismissible_content" /* 4845 */;
+import TypeUtils from "TypeUtils" /* 4873 */;
+import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 5667 */;
+import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 5668 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5665 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/VersionedDismissibleContentUtils.tsx");
@@ -53,7 +53,7 @@ export function getVersionedDismissibleContentCurrentVersion(id) {
       }
     }
   }
-  const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(5571).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
+  const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(5666).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
   let num5;
   if (marketingBySurface != null) {
     num5 = marketingBySurface.version;

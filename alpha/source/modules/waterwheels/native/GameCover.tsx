@@ -1,20 +1,20 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17972
+// Function ID: 17973
 // Name: GameCover
-// Dependencies: [32, 19, 17, 17861, 21, 575, 5509, 4917, 17862, 5604, 17863, 17864, 2]
+// Dependencies: [32, 19, 17, 17973, 21, 575, 5604, 5012, 17974, 5699, 17975, 17976, 2]
 // Exports: GameCoverFromURLs, default
 
-// Module 17860 (GameCover)
+// Module 17972 (GameCover)
 import nativeDefault from "native" /* 575 */;
-import TextVariants from "TextVariants" /* 5509 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17861 */;
-import useCoverColor from "useCoverColor" /* 17862 */;
-import InterestPickerPerformance from "InterestPickerPerformance" /* 17864 */;
+import TextVariants from "TextVariants" /* 5604 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17973 */;
+import useCoverColor from "useCoverColor" /* 17974 */;
+import InterestPickerPerformance from "InterestPickerPerformance" /* 17976 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -81,7 +81,7 @@ function NoCover(arg0) {
   const tmp10 = _slicedToArray(react.useState(null), 2);
   closure_1 = tmp10[1];
   let tmp11 = null != iconURL && iconURL !== tmp10[0];
-  const tmp12 = tmp4(17862)(gameId, iconURL1);
+  const tmp12 = tmp4(17974)(gameId, iconURL1);
   const tmp14 = closure_12(width, minResult, Math.max(width / aspectRatio - width, c10), tmp12);
   const items = [tmp6.fallback, , ];
   let titleOnly = tmp17;
@@ -100,12 +100,12 @@ function NoCover(arg0) {
   if (tmp19) {
     const obj2 = { accessible: false, source: obj3, style: tmp6.texture, blurRadius: 32, resizeMode: "cover", fadeDuration: 0 };
     obj3 = { uri: iconURL };
-    tmp19 = metroImportAll(tmp4(5604), obj2);
+    tmp19 = metroImportAll(tmp4(5699), obj2);
   }
   items1 = [tmp19, , , ];
   let tmp21 = tmp13;
   if (tmp21) {
-    const obj4 = { style: items2, children: metroImportAll(tmp4(5604), obj5) };
+    const obj4 = { style: items2, children: metroImportAll(tmp4(5699), obj5) };
     items2 = [tmp6.art, tmp14.art];
     obj5 = {
       source: obj6,
@@ -133,7 +133,7 @@ function NoCover(arg0) {
     };
     items3 = [tmp6.icon, tmp14.icon];
     obj8 = { uri: iconURL };
-    tmp11 = metroImportAll(tmp4(5604), obj7);
+    tmp11 = metroImportAll(tmp4(5699), obj7);
   }
   items1[2] = tmp11;
   let tmp25Result = !compact;
@@ -151,7 +151,7 @@ function NoCover(arg0) {
     const _Math3 = Math;
     obj10 = { name, width: Math.max(0, width - tmp4(575).space.PX_16), maxLines: num3 };
     num3 = undefined;
-    tmp4Result = tmp4(17863);
+    tmp4Result = tmp4(17975);
     if (!compact && tmp11) {
       num3 = 2;
     }

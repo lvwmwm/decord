@@ -1,17 +1,17 @@
-// Module ID: 12935
-// Function ID: 12936
+// Module ID: 13059
+// Function ID: 13060
 // Name: BioMarkupUtils
-// Dependencies: [6945, 6946, 5995, 1454, 7053, 6941, 2068, 12, 2]
+// Dependencies: [7040, 7041, 6090, 1454, 7148, 7036, 2068, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 12935 (BioMarkupUtils)
+// Module 13059 (BioMarkupUtils)
 import LRUCacheDefault from "LRUCache" /* 1454 */;
 import _modDef2068 from "module_2068" /* 2068 */;
-import MarkupReactRulesDefault from "MarkupReactRules" /* 5995 */;
-import MarkupRulesDefault from "MarkupRules" /* 6946 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 6945 */;
-import MarkupParser from "markup/MarkupParser" /* 7053 */;
-import MarkupUtils_mod from "MarkupUtils" /* 6941 */;
+import MarkupReactRulesDefault from "MarkupReactRules" /* 6090 */;
+import MarkupRulesDefault from "MarkupRules" /* 7041 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 7040 */;
+import MarkupParser from "markup/MarkupParser" /* 7148 */;
+import MarkupUtils_mod from "MarkupUtils" /* 7036 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

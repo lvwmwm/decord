@@ -1,20 +1,20 @@
-// Module ID: 14800
-// Function ID: 14801
+// Module ID: 14922
+// Function ID: 14923
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 4763, 21, 4917, 575, 9715, 14801, 14802, 14803, 14798, 14804, 14808, 14812, 1112, 9726, 9427, 2]
+// Dependencies: [19, 17, 4858, 21, 5012, 575, 9814, 14923, 14924, 14925, 14920, 14926, 14930, 14934, 1112, 9824, 9825, 9526, 2]
 // Exports: default
 
-// Module 14800 (BadgeDirectoryNuxCoachmark)
+// Module 14922 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 9715 */;
-import _modDef14801 from "module_14801" /* 14801 */;
-import _modDef14802 from "module_14802" /* 14802 */;
-import _modDef14803 from "module_14803" /* 14803 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 9814 */;
+import _modDef14923 from "module_14923" /* 14923 */;
+import _modDef14924 from "module_14924" /* 14924 */;
+import _modDef14925 from "module_14925" /* 14925 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,14 +30,14 @@ function NoProgressGraphic() {
   const obj = { style: items, children: items1 };
   items = [, ];
   ({ graphicRow: arr[0], badgeGraphicRow: arr[1] } = closure_9());
-  const obj2 = { url: _modDef14801, height: 44 };
+  const obj2 = { url: _modDef14923, height: 44 };
   closure_9();
   const tmp2 = BadgeArtImageDefault;
   items1 = [metroRequire(tmp2, obj2), , ];
-  const obj3 = { url: _modDef14802, height: 72 };
+  const obj3 = { url: _modDef14924, height: 72 };
   const tmp3 = BadgeArtImageDefault;
   items1[1] = metroRequire(tmp3, obj3);
-  const obj4 = { url: _modDef14803, height: 44 };
+  const obj4 = { url: _modDef14925, height: 44 };
   const tmp4 = BadgeArtImageDefault;
   items1[2] = metroRequire(tmp4, obj4);
   return metroImportDefault(View, obj);
@@ -127,8 +127,10 @@ export default function BadgeDirectoryNuxCoachmark(userId) {
       onButtonPress() {
         markAsDismissed(constants.TAKE_ACTION);
         const obj = userId(visible[15]);
-        const obj2 = { targetUserId };
-        const result = obj.openBadgeDirectoryScreen(obj2);
+        const result = obj.trackOwnBadgeDirectoryOpened("nux");
+        const obj2 = userId(visible[16]);
+        const obj3 = { targetUserId };
+        const result1 = obj2.openBadgeDirectoryScreen(obj3);
       }
     };
     const intl2 = userId(visible[14]).intl;
@@ -141,7 +143,7 @@ export default function BadgeDirectoryNuxCoachmark(userId) {
     intl3 = userId(visible[14]).intl;
     return obj;
   }, items);
-  let obj = userId(visible[16]);
+  let obj = userId(visible[17]);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 };

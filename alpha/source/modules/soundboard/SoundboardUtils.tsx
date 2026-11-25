@@ -1,31 +1,31 @@
-// Module ID: 10260
-// Function ID: 10261
+// Module ID: 10359
+// Function ID: 10360
 // Name: SoundboardUtils
-// Dependencies: [5, 1230, 4770, 4849, 1386, 6797, 6799, 1071, 1227, 4742, 2173, 10261, 10262, 10264, 572, 10267, 10268, 10269, 563, 4973, 4750, 4747, 6963, 1255, 5887, 2]
+// Dependencies: [5, 1230, 4865, 4944, 1386, 6892, 6894, 1071, 1227, 4837, 2173, 10360, 10361, 10363, 572, 10366, 10367, 10368, 563, 5068, 4845, 4842, 7058, 1255, 5982, 2]
 // Exports: getAmplitudinalSoundboardVolume, hasSetAnyCustomJoinSound, maybePlayCustomJoinSound, playEcho, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 10260 (SoundboardUtils)
+// Module 10359 (SoundboardUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import dismissible_content from "dismissible_content" /* 4750 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import UserUtils from "UserUtils" /* 4973 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5887 */;
-import SoundboardTypes from "SoundboardTypes" /* 6963 */;
-import useMuteStates from "useMuteStates" /* 10261 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 10262 */;
-import VoiceChannelEffectsActionCreators from "VoiceChannelEffectsActionCreators" /* 10264 */;
-import getCurrentVoiceChannelDefault from "getCurrentVoiceChannel" /* 10267 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import dismissible_content from "dismissible_content" /* 4845 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import UserUtils from "UserUtils" /* 5068 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
+import SoundboardTypes from "SoundboardTypes" /* 7058 */;
+import useMuteStates from "useMuteStates" /* 10360 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 10361 */;
+import VoiceChannelEffectsActionCreators from "VoiceChannelEffectsActionCreators" /* 10363 */;
+import getCurrentVoiceChannelDefault from "getCurrentVoiceChannel" /* 10366 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import UserStore from "UserStore" /* 1386 */;
-import SoundboardStore from "SoundboardStore" /* 6797 */;
-import SoundboardConstants from "SoundboardConstants" /* 6799 */;
+import SoundboardStore from "SoundboardStore" /* 6892 */;
+import SoundboardConstants from "SoundboardConstants" /* 6894 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let c10;
 let c9;
 let closure_12;
 let unpackModuleId;
-const f96924 = (joinSound) => null != joinSound.joinSound;
+const f97268 = (joinSound) => null != joinSound.joinSound;
 function hasPermissionToPlaySound(guildId, guild_id) {
   guild_id = undefined;
   if (guild_id != null) {
@@ -122,7 +122,7 @@ let obj = function _maybePlayCustomJoinSound() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -199,7 +199,7 @@ let obj = function _maybePlayCustomJoinSound() {
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp32) {
         c4 = 3;
         throw tmp32;
@@ -257,7 +257,7 @@ export function hasSetAnyCustomJoinSound() {
     obj = {};
   }
   const values = Object.values(obj);
-  return values.some(f96924);
+  return values.some(f97268);
 }
 export function maybePlayCustomJoinSound() {
   return obj(...arguments);
@@ -283,7 +283,7 @@ export function useSoundBoardDismissContentTypes(isSoundboardButtonDisabled) {
     }
     const _Object = Object;
     const values = Object.values(obj2);
-    if (!values.some(f96924)) {
+    if (!values.some(f97268)) {
       const tmpResult = UserUtils;
       const result = tmpResult.ageEligibleForPremiumUpsell(stateFromStores);
       const obj5 = PremiumUtilsDefault;
@@ -338,12 +338,12 @@ export function updateCustomJoinSound(guildId, arg1, location_stack) {
       tmp6 = tmp3;
     }
     if (null != joinSound.joinSound) {
-      ADDED = tmp6(6963).AnalyticsChangeType.UPDATED;
+      ADDED = tmp6(7058).AnalyticsChangeType.UPDATED;
     } else {
-      ADDED = tmp6(6963).AnalyticsChangeType.ADDED;
+      ADDED = tmp6(7058).AnalyticsChangeType.ADDED;
     }
     joinSound.joinSound = { soundId: guildId.soundId, guildId: guildId.guildId === authStore ? React4 : guildId.guildId };
-    const ENTRY = tmp6(6963).AnalyticsSoundType.ENTRY;
+    const ENTRY = tmp6(7058).AnalyticsSoundType.ENTRY;
     obj = { location_stack, guild_id: num, change_type: ADDED, sound_type: ENTRY, sound_source: CUSTOM };
     num = 0;
     const track = AnalyticsUtilsDefault.track;

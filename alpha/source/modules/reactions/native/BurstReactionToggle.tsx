@@ -1,22 +1,22 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 9515
+// Function ID: 9516
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4918, 4763, 21, 1653, 504, 5481, 575, 5127, 5518, 4917, 9417, 1112, 9418, 2]
+// Dependencies: [19, 17, 5013, 4858, 21, 1653, 504, 5576, 575, 5222, 5613, 5012, 9516, 1112, 9517, 2]
 // Exports: default
 
-// Module 9416 (BurstReactionToggle)
+// Module 9515 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import useToken2 from "useToken" /* 5481 */;
-import spring_spring from "spring/spring" /* 5518 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import useToken2 from "useToken" /* 5576 */;
+import spring_spring from "spring/spring" /* 5613 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
-import createStyles from "createStyles" /* 4917 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,7 +64,7 @@ export default function BurstReactionToggle(arg0) {
   }
   obj = react;
   const ref = react.useRef(null);
-  importDefault = tmp7(9417)(ref);
+  importDefault = tmp7(9516)(ref);
   let num;
   let sharedValue;
   let sharedValue1;

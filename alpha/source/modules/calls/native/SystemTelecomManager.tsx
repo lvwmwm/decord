@@ -1,9 +1,9 @@
-// Module ID: 15671
-// Function ID: 15672
+// Module ID: 15792
+// Function ID: 15793
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 5723, 4770, 502, 4766, 2131, 5725, 4859, 4820, 1386, 5565, 5728, 1071, 5729, 3, 15672, 572, 15673, 1255, 5887, 6254, 6671, 11, 7716, 5870, 10215, 1268, 15674, 5533, 7714, 1378, 2121, 2]
+// Dependencies: [5, 32, 17, 5818, 4865, 502, 4861, 2131, 5820, 4954, 4915, 1386, 5660, 5823, 1071, 5824, 3, 15793, 572, 15794, 1255, 5982, 6349, 6766, 11, 7815, 5965, 10314, 1268, 15795, 5628, 7813, 1378, 2121, 2]
 
-// Module 15671 (SystemTelecomManager)
+// Module 15792 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -11,32 +11,32 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import v1 from "v1" /* 1268 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import ChannelRecord from "ChannelRecord" /* 4770 */;
-import useChannelName from "useChannelName" /* 5533 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5870 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5887 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6254 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6671 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7714 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7716 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10215 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 15673 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 15674 */;
+import ChannelRecord from "ChannelRecord" /* 4865 */;
+import useChannelName from "useChannelName" /* 5628 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5965 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6766 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7815 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10314 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 15794 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 15795 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5723 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5725 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
 import UserStore from "UserStore" /* 1386 */;
-import VoiceStateStore from "VoiceStateStore" /* 5565 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5728 */;
+import VoiceStateStore from "VoiceStateStore" /* 5660 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5823 */;
 import Constants_mod from "Constants" /* 1071 */;
-import Constants_mod2 from "Constants" /* 5729 */;
-import react_native2 from "react-native" /* 15672 */;
+import Constants_mod2 from "Constants" /* 5824 */;
+import react_native2 from "react-native" /* 15793 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 
@@ -579,7 +579,7 @@ class SystemTelecomManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -642,7 +642,7 @@ class SystemTelecomManager {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp26) {
           if (0 === c3) {
             c5 = 3;

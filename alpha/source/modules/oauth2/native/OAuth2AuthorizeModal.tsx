@@ -1,16 +1,16 @@
-// Module ID: 7597
-// Function ID: 7598
+// Module ID: 7696
+// Function ID: 7697
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 4917, 575, 7598, 1628, 1653, 5518, 6026, 1112, 12654, 7121, 5508, 7354, 14559, 2]
+// Dependencies: [19, 17, 21, 5012, 575, 7697, 1628, 1653, 5613, 6121, 1112, 12818, 7216, 5603, 7449, 14681, 2]
 // Exports: default
 
-// Module 7597 (OAuth2AuthorizeModal)
+// Module 7696 (OAuth2AuthorizeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import spring_spring from "spring/spring" /* 5518 */;
+import spring_spring from "spring/spring" /* 5613 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ export default function OAuth2AuthorizeModal(arg0) {
   let tmp8;
   const tmp = closure_8();
   const tmp2 = sharedValue;
-  const tmp4 = sharedValue(7598)(arg0);
+  const tmp4 = sharedValue(7697)(arg0);
   _require = tmp4;
   const top = sharedValue(1628)().top;
   const obj = require("module_1653");
@@ -90,7 +90,7 @@ export default function OAuth2AuthorizeModal(arg0) {
     }
     const result = set(withSpring(num, closure_7));
   }, items2);
-  const PressableOpacity = tmp5(6026).PressableOpacity;
+  const PressableOpacity = tmp5(6121).PressableOpacity;
   if (null != tmp4.backStep) {
     const intl2 = tmp5(1112).intl;
     stringResult = intl2.string(tmp5(1112).t["13/7kX"]);
@@ -113,17 +113,17 @@ export default function OAuth2AuthorizeModal(arg0) {
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(575).colors.INTERACTIVE_TEXT_DEFAULT };
-    const ArrowSmallLeftIcon = tmp5(12654).ArrowSmallLeftIcon;
+    const ArrowSmallLeftIcon = tmp5(12818).ArrowSmallLeftIcon;
     tmp13Result = tmp13(ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(575).colors.INTERACTIVE_TEXT_DEFAULT };
-    const XSmallIcon = tmp5(7121).XSmallIcon;
+    const XSmallIcon = tmp5(7216).XSmallIcon;
     tmp13Result = tmp13(XSmallIcon, obj8);
   }
   items4 = [closure_5(PressableOpacity, obj6), , ];
   const obj9 = { style: tmp.title, children: closure_5(Text, obj10) };
   obj10 = { variant: "heading-md/semibold", accessibilityRole: "header", children: intl3.string(require("intl").t["y+/PE9"]) };
-  Text = tmp5(5508).Text;
+  Text = tmp5(5603).Text;
   intl3 = tmp5(1112).intl;
   items4[1] = closure_5(View, obj9);
   const obj11 = { style: items5 };
@@ -131,9 +131,9 @@ export default function OAuth2AuthorizeModal(arg0) {
   items4[2] = closure_5(tmp2(1653).View, obj11);
   items6 = [closure_6(View, obj4), ];
   const obj12 = { bottom: true, style: tmp.contentContainer, children: closure_5(tmp2Result, obj13) };
-  const SafeAreaPaddingView = tmp5(7354).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp5(7449).SafeAreaPaddingView;
   obj13 = { onScroll: callback, centerContent: true };
-  tmp2Result = tmp2(14559);
+  tmp2Result = tmp2(14681);
   const merged = Object.assign(tmp4);
   items6[1] = closure_5(SafeAreaPaddingView, obj12);
   return closure_6(View, obj3);

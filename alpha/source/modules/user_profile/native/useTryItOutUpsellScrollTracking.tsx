@@ -1,10 +1,10 @@
-// Module ID: 15899
-// Function ID: 15900
+// Module ID: 16020
+// Function ID: 16021
 // Name: useTryItOutUpsellScrollTracking
 // Dependencies: [19, 1653, 2]
 // Exports: default
 
-// Module 15899 (useTryItOutUpsellScrollTracking)
+// Module 16020 (useTryItOutUpsellScrollTracking)
 import _mod1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

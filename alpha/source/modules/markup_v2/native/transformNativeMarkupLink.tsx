@@ -1,16 +1,16 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14161
+// Function ID: 14162
 // Name: transformNativeMarkupLink
-// Dependencies: [5994, 5662, 6954, 14036, 14039, 6957, 2]
+// Dependencies: [6089, 5757, 7049, 14159, 14162, 7052, 2]
 // Exports: transformNativeLink
 
-// Module 14038 (transformNativeMarkupLink)
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5662 */;
-import MarkupTypes from "MarkupTypes" /* 5994 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6954 */;
-import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 6957 */;
-import transformNativeMarkupMention from "transformNativeMarkupMention" /* 14036 */;
-import ChannelLinkUrls from "ChannelLinkUrls" /* 14039 */;
+// Module 14161 (transformNativeMarkupLink)
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5757 */;
+import MarkupTypes from "MarkupTypes" /* 6089 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 7049 */;
+import MarkupAttachmentLinkRule from "MarkupAttachmentLinkRule" /* 7052 */;
+import transformNativeMarkupMention from "transformNativeMarkupMention" /* 14159 */;
+import ChannelLinkUrls from "ChannelLinkUrls" /* 14162 */;
 import size from "module_2" /* 2 */;
 
 function stripCredentialsForDisplay(url) {

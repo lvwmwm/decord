@@ -1,12 +1,12 @@
-// Module ID: 9068
-// Function ID: 9069
+// Module ID: 9167
+// Function ID: 9168
 // Name: nitro_home_section_header
-// Dependencies: [32, 1196, 9028, 9029, 2]
+// Dependencies: [32, 1196, 9127, 9128, 2]
 
-// Module 9068 (nitro_home_section_header)
+// Module 9167 (nitro_home_section_header)
 import _mod1196 from "module_1196" /* 1196 */;
-import localized_string from "localized_string" /* 9028 */;
-import help_article from "help_article" /* 9029 */;
+import localized_string from "localized_string" /* 9127 */;
+import help_article from "help_article" /* 9128 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

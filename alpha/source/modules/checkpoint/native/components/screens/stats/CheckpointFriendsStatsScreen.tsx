@@ -1,21 +1,21 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 12854
+// Function ID: 12855
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [32, 19, 17, 4918, 12407, 6270, 12431, 21, 575, 4917, 12647, 504, 12691, 12692, 12425, 4973, 6641, 12693, 1653, 1494, 12695, 12426, 1112, 3442, 12461, 12696, 3410, 12697, 2]
+// Dependencies: [32, 19, 17, 5013, 12571, 6365, 12595, 21, 575, 5012, 12811, 504, 12855, 12856, 12589, 5068, 6736, 12857, 1653, 1494, 12859, 12590, 1112, 3494, 12625, 12860, 3462, 12861, 2]
 // Exports: default
 
-// Module 12690 (CheckpointFriendsStatsScreen)
+// Module 12854 (CheckpointFriendsStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6270 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 12647 */;
+import CheckpointConstants from "CheckpointConstants" /* 6365 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12811 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
-import CheckpointStore from "CheckpointStore" /* 12407 */;
-import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12431 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import CheckpointStore from "CheckpointStore" /* 12571 */;
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12595 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let enter, exit;

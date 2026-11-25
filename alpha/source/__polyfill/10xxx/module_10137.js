@@ -1,338 +1,58 @@
 // Module ID: 10137
 // Function ID: 10138
-// Dependencies: [41, 42, 17, 38]
+// Dependencies: []
 
 // Module 10137
-import _modDef38 from "module_38" /* 38 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import react_native from "react-native" /* 17 */;
+let items;
+let items1;
+let items2;
+let items3;
+let items4;
+let items5;
+let items6;
+let items7;
+let obj10;
+let obj12;
+let obj13;
+let obj15;
+let obj16;
+let obj18;
+let obj19;
+let obj4;
+let obj6;
+let obj7;
+let obj9;
+const obj = { v: "4.8.0", meta: { g: "LottieFiles AE 3.0.0", a: "", k: "", d: "", tc: "" }, fr: 60, ip: 11, op: 87, w: 1280, h: 720, nm: "FrameEffect_09-2_Out", ddd: 0, assets: items, layers: items3, markers: [] };
+items = [{ id: "image_0", w: 35, h: 35, u: "", p: "", e: 1 }, ];
+const obj3 = { ddd: 0, ind: 3, ty: 2, nm: "smile", refId: "image_0", sr: 1, ks: obj4, ao: 0, ip: 0, op: 914, st: 0, bm: 0 };
+const obj2 = { id: "comp_0", layers: items1 };
+items1 = [obj3];
+obj4 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: { a: 0, k: [19.875, 20.125, 0], ix: 2 }, a: { a: 0, k: [17.25, 17.25, 0], ix: 1 }, s: { a: 0, k: [108.7, 108.7, 100], ix: 6 } };
+items[1] = obj2;
+const obj5 = { ddd: 0, ind: 2, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj6, ao: 0, w: 40, h: 40, ip: 12, op: 103, st: 10, bm: 0 };
+obj6 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj7, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [651, 651, 100], ix: 6 } };
+obj7 = { a: 1, k: items2, ix: 2 };
+items2 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 24, s: [984.8, 956, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 62, s: [984.8, -240.8, 0] }];
+items3 = [obj5, , , , ];
+const obj8 = { ddd: 0, ind: 3, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj9, ao: 0, w: 40, h: 40, ip: 8, op: 102, st: 6, bm: 0 };
+obj9 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj10, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [512, 512, 100], ix: 6 } };
+obj10 = { a: 1, k: items4, ix: 2 };
+items4 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 8, s: [549.6, 960, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 53, s: [549.6, -236.8, 0] }];
+items3[1] = obj8;
+const obj11 = { ddd: 0, ind: 4, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj12, ao: 0, w: 40, h: 40, ip: 19, op: 103, st: 17, bm: 0 };
+obj12 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj13, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [552, 552, 100], ix: 6 } };
+obj13 = { a: 1, k: items5, ix: 2 };
+items5 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 19, s: [313.6, 960, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 73, s: [313.6, -236.8, 0] }];
+items3[2] = obj11;
+const obj14 = { ddd: 0, ind: 5, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj15, ao: 0, w: 40, h: 40, ip: 26, op: 103, st: 24, bm: 0 };
+obj15 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj16, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [472, 472, 100], ix: 6 } };
+obj16 = { a: 1, k: items6, ix: 2 };
+items6 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 45, s: [1065.6, 960, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 82, s: [1065.6, -236.8, 0] }];
+items3[3] = obj14;
+const obj17 = { ddd: 0, ind: 6, ty: 0, nm: "particle", refId: "comp_0", sr: 1, ks: obj18, ao: 0, w: 40, h: 40, ip: 17, op: 118, st: 15, bm: 0 };
+obj18 = { o: { a: 0, k: 100, ix: 11 }, r: { a: 0, k: 0, ix: 10 }, p: obj19, a: { a: 0, k: [20, 20, 0], ix: 1 }, s: { a: 0, k: [352, 352, 100], ix: 6 } };
+obj19 = { a: 1, k: items7, ix: 2 };
+items7 = [{ i: { x: 0.833, y: 0.833 }, o: { x: 0.167, y: 0.167 }, t: 17, s: [704, 960, 0], to: [0, 0, 0], ti: [0, 0, 0] }, { t: 85, s: [704, -236.8, 0] }];
+items3[4] = obj17;
 
-const RNCPushNotificationIOS = react_native.NativeModules.RNCPushNotificationIOS;
-const nativeEventEmitter = new react_native.NativeEventEmitter(RNCPushNotificationIOS);
-const map = new Map();
-class PushNotificationIOS {
-  constructor(remote) {
-    const self = this;
-    let closure_0 = remote;
-    _classCallCheck(this, PushNotificationIOS);
-    this._data = {};
-    this._remoteNotificationCompleteCallbackCalled = false;
-    this._isRemote = remote.remote;
-    if (this._isRemote) {
-      self._notificationId = remote.notificationId;
-    }
-    if (remote.remote) {
-      const _Object = Object;
-      const keys = Object.keys(remote);
-      const item = keys.forEach((item) => {
-        if ("aps" === item) {
-          ({ alert: obj._alert, sound: obj._sound, badge: obj._badgeCount, category: obj._category, "content-available": obj._contentAvailable, "thread-id": obj._threadID } = closure_0[item]);
-        } else {
-          obj._data[item] = closure_0[item];
-        }
-      });
-    } else {
-      ({ applicationIconBadgeNumber: self._badgeCount, soundName: self._sound, alertBody: self._alert, userInfo: self._data, category: self._category } = remote);
-    }
-  }
-}
-const entry = {
-  key: "finish",
-  value: function finish(arg0) {
-    const self = this;
-    const tmp = this._isRemote && self._notificationId && !self._remoteNotificationCompleteCallbackCalled;
-    if (tmp) {
-      self._remoteNotificationCompleteCallbackCalled = true;
-      const result = RNCPushNotificationIOS.onFinishRemoteNotification(self._notificationId, arg0);
-    }
-  }
-};
-const items = [
-  entry,
-  {
-    key: "getMessage",
-    value: function getMessage() {
-      return this._alert;
-    }
-  },
-  {
-    key: "getSound",
-    value: function getSound() {
-      return this._sound;
-    }
-  },
-  {
-    key: "getCategory",
-    value: function getCategory() {
-      return this._category;
-    }
-  },
-  {
-    key: "getAlert",
-    value: function getAlert() {
-      return this._alert;
-    }
-  },
-  {
-    key: "getContentAvailable",
-    value: function getContentAvailable() {
-      return this._contentAvailable;
-    }
-  },
-  {
-    key: "getBadgeCount",
-    value: function getBadgeCount() {
-      return this._badgeCount;
-    }
-  },
-  {
-    key: "getData",
-    value: function getData() {
-      return this._data;
-    }
-  },
-  {
-    key: "getThreadID",
-    value: function getThreadID() {
-      return this._threadID;
-    }
-  }
-];
-const entry1 = {
-  key: "presentLocalNotification",
-  value: function presentLocalNotification(arg0) {
-    const result = RNCPushNotificationIOS.presentLocalNotification(arg0);
-  }
-};
-const items1 = [
-  entry1,
-  {
-    key: "scheduleLocalNotification",
-    value: function scheduleLocalNotification(arg0) {
-      const result = RNCPushNotificationIOS.scheduleLocalNotification(arg0);
-    }
-  },
-  {
-    key: "cancelAllLocalNotifications",
-    value: function cancelAllLocalNotifications() {
-      const result = RNCPushNotificationIOS.cancelAllLocalNotifications();
-    }
-  },
-  {
-    key: "removeAllDeliveredNotifications",
-    value: function removeAllDeliveredNotifications() {
-      const result = RNCPushNotificationIOS.removeAllDeliveredNotifications();
-    }
-  },
-  {
-    key: "getDeliveredNotifications",
-    value: function getDeliveredNotifications(arg0) {
-      const deliveredNotifications = RNCPushNotificationIOS.getDeliveredNotifications(arg0);
-    }
-  },
-  {
-    key: "removeDeliveredNotifications",
-    value: function removeDeliveredNotifications(arg0) {
-      const result = RNCPushNotificationIOS.removeDeliveredNotifications(arg0);
-    }
-  },
-  {
-    key: "setApplicationIconBadgeNumber",
-    value: function setApplicationIconBadgeNumber(arg0) {
-      const result = RNCPushNotificationIOS.setApplicationIconBadgeNumber(arg0);
-    }
-  },
-  {
-    key: "getApplicationIconBadgeNumber",
-    value: function getApplicationIconBadgeNumber(arg0) {
-      const applicationIconBadgeNumber = RNCPushNotificationIOS.getApplicationIconBadgeNumber(arg0);
-    }
-  },
-  {
-    key: "cancelLocalNotifications",
-    value: function cancelLocalNotifications(arg0) {
-      const result = RNCPushNotificationIOS.cancelLocalNotifications(arg0);
-    }
-  },
-  {
-    key: "getScheduledLocalNotifications",
-    value: function getScheduledLocalNotifications(arg0) {
-      const scheduledLocalNotifications = RNCPushNotificationIOS.getScheduledLocalNotifications(arg0);
-    }
-  },
-  {
-    key: "addEventListener",
-    value: function addEventListener(arg0, arg1) {
-      let addListenerResult;
-      let closure_0 = arg1;
-      const tmp2 = "notification" === arg0;
-      let tmp3 = tmp2;
-      let tmp = PushNotificationIOS(dependencyMap[3]);
-      if (!tmp2) {
-        tmp3 = "register" === arg0;
-      }
-      if (!tmp3) {
-        tmp3 = "registrationError" === arg0;
-      }
-      if (!tmp3) {
-        tmp3 = "localNotification" === arg0;
-      }
-      tmp(tmp3, "PushNotificationIOS only supports `notification`, `register`, `registrationError`, and `localNotification` events");
-      if (tmp2) {
-        addListenerResult = nativeEventEmitter.addListener("remoteNotificationReceived", (remote) => {
-          const obj = Object.create(PushNotificationIOS.prototype);
-          const tmp = closure_0;
-          closure_0 = remote;
-          closure_1_2(obj, PushNotificationIOS);
-          obj._data = {};
-          obj._remoteNotificationCompleteCallbackCalled = false;
-          obj._isRemote = remote.remote;
-          if (obj._isRemote) {
-            obj._notificationId = remote.notificationId;
-          }
-          if (remote.remote) {
-            const _Object = Object;
-            const keys = Object.keys(remote);
-            const item = keys.forEach((item) => {
-              if ("aps" === item) {
-                ({ alert: obj._alert, sound: obj._sound, badge: obj._badgeCount, category: obj._category, "content-available": obj._contentAvailable, "thread-id": obj._threadID } = closure_0[item]);
-              } else {
-                obj._data[item] = closure_0[item];
-              }
-            });
-          } else {
-            ({ applicationIconBadgeNumber: tmp2._badgeCount, soundName: tmp2._sound, alertBody: tmp2._alert, userInfo: tmp2._data, category: tmp2._category } = remote);
-          }
-          tmp(obj);
-        });
-      } else if ("localNotification" === arg0) {
-        addListenerResult = nativeEventEmitter.addListener("localNotificationReceived", (remote) => {
-          const obj = Object.create(PushNotificationIOS.prototype);
-          const tmp = closure_0;
-          closure_0 = remote;
-          closure_1_2(obj, PushNotificationIOS);
-          obj._data = {};
-          obj._remoteNotificationCompleteCallbackCalled = false;
-          obj._isRemote = remote.remote;
-          if (obj._isRemote) {
-            obj._notificationId = remote.notificationId;
-          }
-          if (remote.remote) {
-            const _Object = Object;
-            const keys = Object.keys(remote);
-            const item = keys.forEach((item) => {
-              if ("aps" === item) {
-                ({ alert: obj._alert, sound: obj._sound, badge: obj._badgeCount, category: obj._category, "content-available": obj._contentAvailable, "thread-id": obj._threadID } = closure_0[item]);
-              } else {
-                obj._data[item] = closure_0[item];
-              }
-            });
-          } else {
-            ({ applicationIconBadgeNumber: tmp2._badgeCount, soundName: tmp2._sound, alertBody: tmp2._alert, userInfo: tmp2._data, category: tmp2._category } = remote);
-          }
-          tmp(obj);
-        });
-      } else if ("register" === arg0) {
-        addListenerResult = nativeEventEmitter.addListener("remoteNotificationsRegistered", (deviceToken) => {
-          closure_0(deviceToken.deviceToken);
-        });
-      } else if ("registrationError" === arg0) {
-        addListenerResult = nativeEventEmitter.addListener("remoteNotificationRegistrationError", (arg0) => {
-          closure_0(arg0);
-        });
-      }
-      const result = map.set(arg0, addListenerResult);
-    }
-  },
-  {
-    key: "removeEventListener",
-    value: function removeEventListener(arg0, arg1) {
-      let tmp2 = "notification" === arg0;
-      const tmp = _modDef38;
-      if (!tmp2) {
-        tmp2 = "register" === arg0;
-      }
-      if (!tmp2) {
-        tmp2 = "registrationError" === arg0;
-      }
-      if (!tmp2) {
-        tmp2 = "localNotification" === arg0;
-      }
-      tmp(tmp2, "PushNotificationIOS only supports `notification`, `register`, `registrationError`, and `localNotification` events");
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        value.remove();
-        obj.delete(arg0);
-      }
-    }
-  },
-  {
-    key: "requestPermissions",
-    value: function requestPermissions(alert) {
-      let obj;
-      const tmp = alert;
-      if (tmp) {
-        obj = { alert: alert.alert, badge: alert.badge, sound: alert.sound };
-        const obj2 = { alert: alert.alert, badge: alert.badge, sound: alert.sound };
-      } else {
-        obj = { alert: true, badge: true, sound: true };
-      }
-      return RNCPushNotificationIOS.requestPermissions(obj);
-    }
-  },
-  {
-    key: "abandonPermissions",
-    value: function abandonPermissions() {
-      RNCPushNotificationIOS.abandonPermissions();
-    }
-  },
-  {
-    key: "checkPermissions",
-    value: function checkPermissions(fn) {
-      _modDef38(typeof fn === "function", "Must provide a valid callback");
-      RNCPushNotificationIOS.checkPermissions(fn);
-    }
-  },
-  {
-    key: "getInitialNotification",
-    value: function getInitialNotification() {
-      const initialNotification = RNCPushNotificationIOS.getInitialNotification();
-      return initialNotification.then((remote) => {
-        let tmp = remote;
-        if (tmp) {
-          const obj = Object.create(PushNotificationIOS.prototype);
-          let closure_0 = remote;
-          _classCallCheck(obj, PushNotificationIOS);
-          obj._data = {};
-          obj._remoteNotificationCompleteCallbackCalled = false;
-          obj._isRemote = remote.remote;
-          if (obj._isRemote) {
-            obj._notificationId = remote.notificationId;
-          }
-          if (remote.remote) {
-            const _Object = Object;
-            const keys = Object.keys(remote);
-            const item = keys.forEach((item) => {
-              if ("aps" === item) {
-                ({ alert: obj._alert, sound: obj._sound, badge: obj._badgeCount, category: obj._category, "content-available": obj._contentAvailable, "thread-id": obj._threadID } = closure_0[item]);
-              } else {
-                obj._data[item] = closure_0[item];
-              }
-            });
-            tmp = obj;
-          } else {
-            ({ applicationIconBadgeNumber: tmp3._badgeCount, soundName: tmp3._sound, alertBody: tmp3._alert, userInfo: tmp3._data, category: tmp3._category } = remote);
-            tmp = obj;
-          }
-        }
-        return tmp;
-      });
-    }
-  }
-];
-const importDefaultResultResult = _createClass(PushNotificationIOS, items, items1);
-importDefaultResultResult.FetchResult = { NewData: "UIBackgroundFetchResultNewData", NoData: "UIBackgroundFetchResultNoData", ResultFailed: "UIBackgroundFetchResultFailed" };
-
-export default importDefaultResultResult;
+export default obj;

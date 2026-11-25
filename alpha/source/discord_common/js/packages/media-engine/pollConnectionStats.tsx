@@ -1,10 +1,10 @@
-// Module ID: 5752
-// Function ID: 5753
+// Module ID: 5847
+// Function ID: 5848
 // Name: pollConnectionStats
-// Dependencies: [5, 5751, 5753, 2]
+// Dependencies: [5, 5846, 5848, 2]
 // Exports: default
 
-// Module 5752 (pollConnectionStats)
+// Module 5847 (pollConnectionStats)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export default function pollConnectionStats(on) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -63,7 +63,7 @@ export default function pollConnectionStats(on) {
                 closure_0 = items[Symbol.iterator]();
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === tmp5) {
             let c5 = 0;

@@ -1,21 +1,21 @@
-// Module ID: 17798
-// Function ID: 17799
+// Module ID: 17910
+// Function ID: 17911
 // Name: UnknownChannel
-// Dependencies: [19, 5997, 6042, 21, 4917, 575, 5599, 1112, 5621, 5533, 11261, 17676, 2]
+// Dependencies: [19, 6092, 6137, 21, 5012, 575, 5694, 1112, 5716, 5628, 11360, 17787, 2]
 
-// Module 17798 (UnknownChannel)
+// Module 17910 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import useChannelNameDefault from "useChannelName" /* 5533 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5599 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5621 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5997 */;
-import ReadStateConstants from "ReadStateConstants" /* 6042 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11261 */;
-import ChannelItemDefault from "ChannelItem" /* 17676 */;
+import useChannelNameDefault from "useChannelName" /* 5628 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5716 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6092 */;
+import ReadStateConstants from "ReadStateConstants" /* 6137 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11360 */;
+import ChannelItemDefault from "ChannelItem" /* 17787 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 function handlePress() {

@@ -1,15 +1,15 @@
-// Module ID: 4859
-// Function ID: 4860
+// Module ID: 4954
+// Function ID: 4955
 // Name: RelationshipStore
-// Dependencies: [32, 4860, 1386, 1071, 572, 504, 4837, 2]
+// Dependencies: [32, 4955, 1386, 1071, 572, 504, 4932, 2]
 
-// Module 4859 (RelationshipStore)
+// Module 4954 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4837 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4860 */;
+import MessageRecord from "MessageRecord" /* 4955 */;
 import UserStore from "UserStore" /* 1386 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ let closure_15 = 0;
 const authStore3 = {};
 let closure_17 = 0;
 let size = 0;
-let closure_20 = { friends: "Array", blocked: "s", ignored: "channel_id", blockedOrIgnored: "channel_id" };
+let closure_20 = { friends: "Array", blocked: "s", ignored: "channel_id", blockedOrIgnored: "String" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;

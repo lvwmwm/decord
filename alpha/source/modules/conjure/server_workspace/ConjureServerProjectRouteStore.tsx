@@ -1,14 +1,14 @@
-// Module ID: 7448
-// Function ID: 7449
+// Module ID: 7543
+// Function ID: 7544
 // Name: ConjureServerProjectRouteStore
-// Dependencies: [6808, 4773, 504, 7449, 572, 2]
+// Dependencies: [6903, 4868, 504, 7544, 572, 2]
 
-// Module 7448 (ConjureServerProjectRouteStore)
+// Module 7543 (ConjureServerProjectRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 4773 */;
-import conjureServerProject from "conjureServerProject" /* 7449 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6808 */;
+import ChannelConstants from "ChannelConstants" /* 4868 */;
+import conjureServerProject from "conjureServerProject" /* 7544 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
 import size from "module_2" /* 2 */;
 
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;

@@ -1,11 +1,11 @@
-// Module ID: 11370
-// Function ID: 11371
+// Module ID: 11469
+// Function ID: 11470
 // Name: useInappropriateConversationWarningsForChannel
-// Dependencies: [11263, 504, 2]
+// Dependencies: [11362, 504, 2]
 // Exports: useInappropriateConversationWarningsForChannel
 
-// Module 11370 (useInappropriateConversationWarningsForChannel)
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 11263 */;
+// Module 11469 (useInappropriateConversationWarningsForChannel)
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 11362 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

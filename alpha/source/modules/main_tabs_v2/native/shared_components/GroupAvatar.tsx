@@ -1,18 +1,18 @@
-// Module ID: 14765
-// Function ID: 14766
+// Module ID: 14887
+// Function ID: 14888
 // Name: GroupAvatar
-// Dependencies: [19, 17, 4918, 21, 4917, 575, 4924, 6928, 563, 1653, 5127, 5518, 5508, 5604, 2]
+// Dependencies: [19, 17, 5013, 21, 5012, 575, 5019, 7023, 563, 1653, 5222, 5613, 5603, 5699, 2]
 // Exports: default
 
-// Module 14765 (GroupAvatar)
+// Module 14887 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const react_mod = react2;

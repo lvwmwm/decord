@@ -1,8 +1,8 @@
-// Module ID: 9318
-// Function ID: 9319
+// Module ID: 9417
+// Function ID: 9418
 // Dependencies: [2]
 
-// Module 9318
+// Module 9417
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/virtual_currency/images/native/balancePromotion_bg_animated.mp4.js");

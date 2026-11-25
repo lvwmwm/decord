@@ -1,25 +1,25 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14505
+// Function ID: 14506
 // Name: UserProfileWidgetsBoard
-// Dependencies: [19, 17, 6011, 6046, 21, 4917, 575, 14383, 6255, 7811, 11123, 1112, 14388, 14400, 14395, 14401, 5983, 14403, 14423, 14424, 6044, 14425, 14408, 14427, 14410, 14428, 14431, 6048, 14432, 14500, 2]
+// Dependencies: [19, 17, 6106, 6141, 21, 5012, 575, 14506, 6350, 7910, 11222, 1112, 14511, 14523, 14518, 14524, 6078, 14526, 14546, 14547, 6139, 14548, 14531, 14550, 14533, 14551, 14554, 6143, 14555, 14623, 2]
 // Exports: default
 
-// Module 14382 (UserProfileWidgetsBoard)
+// Module 14505 (UserProfileWidgetsBoard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 5983 */;
-import Constants from "Constants" /* 6011 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6048 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 14383 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 14388 */;
-import WidgetUtils from "WidgetUtils" /* 14395 */;
-import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 14408 */;
-import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 14410 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 14432 */;
+import react_native2 from "react-native" /* 6078 */;
+import Constants from "Constants" /* 6106 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6143 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 14506 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 14511 */;
+import WidgetUtils from "WidgetUtils" /* 14518 */;
+import UserProfileGameDetailsRowDefault from "UserProfileGameDetailsRow" /* 14531 */;
+import UserProfileWidgetGameCoverDefault from "UserProfileWidgetGameCover" /* 14533 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 14555 */;
 import react from "react" /* 19 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6046 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6141 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -50,9 +50,9 @@ function AddGameButton(ref) {
       return openUserProfileAddGameActionSheetDefault(obj);
     }
   };
-  const IconButton = ref(7811).IconButton;
+  const IconButton = ref(7910).IconButton;
   obj2 = { size: "sm", color: widgetType(575).colors.ICON_DEFAULT };
-  PlusSmallIcon = ref(11123).PlusSmallIcon;
+  PlusSmallIcon = ref(11222).PlusSmallIcon;
   intl = ref(1112).intl;
   return closure_8(IconButton, obj);
 }

@@ -1,31 +1,31 @@
-// Module ID: 17858
-// Function ID: 17859
+// Module ID: 17970
+// Function ID: 17971
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 2140, 4788, 1071, 21, 575, 4917, 4780, 504, 17859, 5523, 8791, 5604, 5508, 8594, 7432, 1112, 2643, 5515, 17848, 11300, 5472, 8657, 17860, 6033, 14128, 17579, 7623, 17847, 17846, 2]
+// Dependencies: [32, 19, 17, 2140, 4883, 1071, 21, 575, 5012, 4875, 504, 17971, 5618, 8890, 5699, 5603, 8693, 7527, 1112, 2654, 5610, 17960, 11399, 5567, 8756, 17972, 6128, 14251, 17690, 7722, 17959, 17958, 2]
 // Exports: default
 
-// Module 17858 (WaterwheelsDiscoverCard)
+// Module 17970 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
-import _modDef2643 from "module_2643" /* 2643 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4780 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import FastImageDefault from "FastImage" /* 5604 */;
-import GameControllerIcon2 from "GameControllerIcon" /* 7623 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8791 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17579 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17846 */;
-import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17847 */;
-import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 17848 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17859 */;
+import _modDef2654 from "module_2654" /* 2654 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4875 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import FastImageDefault from "FastImage" /* 5699 */;
+import GameControllerIcon2 from "GameControllerIcon" /* 7722 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8890 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17690 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17958 */;
+import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17959 */;
+import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 17960 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17971 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GameStore from "GameStore" /* 2140 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -90,7 +90,7 @@ function ServerIdentity(server) {
     flag = false;
   }
   const onAction = server.onAction;
-  let obj = server(5523);
+  let obj = server(5618);
   const fontScale = obj.useFontScale();
   const tmp4 = closure_17();
   const guildId = server.guildId;
@@ -101,7 +101,7 @@ function ServerIdentity(server) {
     const obj = selectDiscoverServerAction;
     return obj.selectDiscoverServerAction(GuildStore.getGuild(guildId));
   }, items1);
-  const OPEN_GUILD = server(8791).WaterwheelsActionType.OPEN_GUILD;
+  const OPEN_GUILD = server(8890).WaterwheelsActionType.OPEN_GUILD;
   set = new Set();
   if (server.verified) {
     set.add(GuildFeatures.VERIFIED);
@@ -113,7 +113,7 @@ function ServerIdentity(server) {
   if (0 !== set.size) {
     const obj3 = { id: null, name: null, icon: null, features: set };
     ({ guildId: obj5.id, name: obj5.name } = server);
-    const tmpResult = server(4780);
+    const tmpResult = server(4875);
     result = tmpResult.constructFromPartialGuildRecord(obj3);
   }
   const tmp11 = closure_18(fontScale, flag);
@@ -121,7 +121,7 @@ function ServerIdentity(server) {
   if (null != server.iconUrl) {
     const items2 = [tmp4.icon, ];
     let iconCompact2 = flag;
-    const tmp19 = onAction(5604);
+    const tmp19 = onAction(5699);
     if (flag) {
       iconCompact2 = tmp4.iconCompact;
     }
@@ -145,7 +145,7 @@ function ServerIdentity(server) {
   const items4 = [tmp14Result4, ];
   const obj8 = { style: tmp4.identityCopy, children: items6 };
   const obj9 = { style: tmp4.nameRow, children: items5 };
-  const tmpResult2 = server(5508);
+  const tmpResult2 = server(5603);
   if (flag) {
     const obj10 = { variant: "body-sm/semibold", color: "text-strong", lineClamp: 1, style: tmp4.name, children: server.name };
     tmp14Result = tmp14(tmpResult2.Text, obj10);
@@ -157,13 +157,13 @@ function ServerIdentity(server) {
   let tmp14Result5 = null;
   if (null != result) {
     const obj12 = { guild: result, style: tmp4.badge };
-    tmp14Result5 = tmp14(onAction(8594), obj12);
+    tmp14Result5 = tmp14(onAction(8693), obj12);
   }
   items5[1] = tmp14Result5;
   let tmp14Result6 = null;
   if (stateFromStores === OPEN_GUILD) {
     const obj13 = { size: "xxs", color: onAction(575).colors.ICON_MUTED };
-    const ChevronSmallRightIcon = tmp(7432).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp(7527).ChevronSmallRightIcon;
     tmp14Result6 = tmp14(ChevronSmallRightIcon, obj13);
   }
   items5[2] = tmp14Result6;
@@ -174,7 +174,7 @@ function ServerIdentity(server) {
   const obj16 = { style: tmp4.dot };
   items7[0] = tmp14(closure_7, obj16);
   const obj17 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl.format(server(1112).t["LC+S+m"], obj18) };
-  const Text = tmp(5508).Text;
+  const Text = tmp(5603).Text;
   intl = tmp(1112).intl;
   obj18 = { membersOnline: server.online };
   items7[1] = tmp14(Text, obj17);
@@ -187,7 +187,7 @@ function ServerIdentity(server) {
     ({ dot: arr10[0], mutedDot: arr10[1] } = tmp4);
     items10 = [tmp14(closure_7, obj20), ];
     const obj21 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl2.format(server(1112).t.zRl6XR, obj22) };
-    const Text2 = tmp(5508).Text;
+    const Text2 = tmp(5603).Text;
     intl2 = tmp(1112).intl;
     obj22 = { count: server.members };
     items10[1] = tmp14(Text2, obj21);
@@ -255,18 +255,18 @@ class ServerActionButton {
       const obj = selectDiscoverServerAction;
       return obj.selectDiscoverServerAction(GuildStore.getGuild(guildId));
     }, items1);
-    const tmp4 = stateFromStores === guildId(8791).WaterwheelsActionType.OPEN_GUILD;
+    const tmp4 = stateFromStores === guildId(8890).WaterwheelsActionType.OPEN_GUILD;
     const intl = guildId(1112).intl;
     const string = intl.string;
     const t = guildId(1112).t;
     const stringResult = string(tmp4 ? t["HO/oXl"] : t.VJlc0S);
     const intl2 = tmp(1112).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const tmp6 = _modDef2643;
+    const tmp6 = _modDef2654;
     let obj2 = { guild: server.name };
     let str = "sm";
     const formatToPlainStringResult = formatToPlainString(tmp4 ? tmp6.qGeMEE : tmp6.NOfX8z, obj2);
-    const Button = tmp(5515).Button;
+    const Button = tmp(5610).Button;
     const tmp8 = closure_11;
     if (flag) {
       str = "lg";
@@ -353,10 +353,10 @@ function ServerRowCard(server) {
   let tmp14 = null;
   const joined = found.join(", ");
   if (showSectionLabel) {
-    const obj7 = { icon: unpackModuleId(ServerIcon, obj8), text: intl3.string(_modDef2643["2iP+h2"]) };
+    const obj7 = { icon: unpackModuleId(ServerIcon, obj8), text: intl3.string(_modDef2654["2iP+h2"]) };
     obj8 = { size: "sm", color: nativeDefault.colors.ICON_MUTED, accessible: false };
     const tmp17 = WaterwheelsSectionLabelDefault;
-    ServerIcon = tmp9(11300).ServerIcon;
+    ServerIcon = tmp9(11399).ServerIcon;
     intl3 = tmp9(1112).intl;
     tmp14 = unpackModuleId(tmp17, obj7);
   }
@@ -365,7 +365,7 @@ function ServerRowCard(server) {
   const obj10 = {
     accessibilityRole: "button",
     accessibilityLabel: joined,
-    accessibilityHint: intl4.string(_modDef2643.nkweXX),
+    accessibilityHint: intl4.string(_modDef2654.nkweXX),
     onPress: function openProfile() {
       onProfileOpen(server);
     },
@@ -377,7 +377,7 @@ function ServerRowCard(server) {
   if (null != server.bannerUrl) {
     const obj11 = { accessible: false, style: tmp.serverBanner, source: obj12, resizeMode: "cover" };
     obj12 = { uri: server.bannerUrl };
-    tmp20 = unpackModuleId(tmp19(5604), obj11);
+    tmp20 = unpackModuleId(tmp19(5699), obj11);
   }
   items3 = [tmp20, ];
   const items4 = [tmp.serverContent, ];
@@ -414,7 +414,7 @@ function ServerRowCard(server) {
   let tmp23Result = null;
   if (null != result) {
     const obj21 = { guild: result, style: tmp.badge };
-    tmp23Result = tmp23(tmp19(8594), obj21);
+    tmp23Result = tmp23(tmp19(8693), obj21);
   }
   items8[1] = tmp23Result;
   items9 = [authStore2(metroImportDefault, obj19), ];
@@ -424,7 +424,7 @@ function ServerRowCard(server) {
   const obj24 = { style: tmp.dot };
   items10[0] = tmp23(metroImportDefault, obj24);
   const obj25 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.metaText, children: intl5.format(intl7.t["LC+S+m"], obj26) };
-  const Text = tmp9(5508).Text;
+  const Text = tmp9(5603).Text;
   intl5 = tmp9(1112).intl;
   obj26 = { membersOnline: server.online };
   items10[1] = tmp23(Text, obj25);
@@ -435,7 +435,7 @@ function ServerRowCard(server) {
   ({ dot: arr13[0], mutedDot: arr13[1] } = tmp);
   items13 = [tmp23(metroImportDefault, obj28), ];
   const obj29 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.metaText, children: intl6.format(intl7.t.zRl6XR, obj30) };
-  const Text2 = tmp9(5508).Text;
+  const Text2 = tmp9(5603).Text;
   intl6 = tmp9(1112).intl;
   obj30 = { count: server.members };
   items13[1] = tmp23(Text2, obj29);
@@ -447,7 +447,7 @@ function ServerRowCard(server) {
     tmp23Result3 = null;
     if ("" !== server.description) {
       const obj31 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: server.description };
-      tmp23Result3 = tmp23(tmp9(5508).Text, obj31);
+      tmp23Result3 = tmp23(tmp9(5603).Text, obj31);
     }
   }
   items14[1] = tmp23Result3;
@@ -595,7 +595,7 @@ function GamePoster(game) {
   if (null != game.l30Rank) {
     const intl = tmp2(1112).intl;
     let obj2 = { rank: game.l30Rank };
-    formatToPlainStringResult = intl.formatToPlainString(onAction(2643).mnK52O, obj2);
+    formatToPlainStringResult = intl.formatToPlainString(onAction(2654).mnK52O, obj2);
   }
   const items2 = [game.name, formatToPlainStringResult, game.description];
   const found = items2.filter((item) => null != item);
@@ -603,7 +603,7 @@ function GamePoster(game) {
     style: tmp.poster,
     accessibilityRole: "button",
     accessibilityLabel: found.join(", "),
-    accessibilityHint: intl2.string(onAction(2643).xH6QTw),
+    accessibilityHint: intl2.string(onAction(2654).xH6QTw),
     onPress() {
       let obj2;
       const obj = { type: WaterwheelsCardTypes.WaterwheelsActionType.OPEN_GAME, value: obj2 };
@@ -615,15 +615,15 @@ function GamePoster(game) {
   intl2 = tmp2(1112).intl;
   items3 = [, ];
   const obj4 = { gameId: game.gameId, name: game.name, coverUrl: game.coverUrl, iconGame: stateFromStores, width: 114, aspectRatio: 0.6909090909090909 };
-  items3[0] = closure_11(game(17860).GameCoverFromURLs, obj4);
+  items3[0] = closure_11(game(17972).GameCoverFromURLs, obj4);
   let tmp9Result = null;
   const tmp7 = closure_12;
   const tmp8 = closure_5;
   if (null != game.l30Rank) {
     const obj5 = { style: tmp.posterRank, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(Badge, obj6) };
-    obj6 = { type: obj7, variant: "inverted", icon: game(14128).FireIcon };
+    obj6 = { type: obj7, variant: "inverted", icon: game(14251).FireIcon };
     obj7 = { text: intl3.formatToPlainString(game(1112).t.UA6RoE, obj8) };
-    Badge = tmp2(6033).Badge;
+    Badge = tmp2(6128).Badge;
     intl3 = tmp2(1112).intl;
     obj8 = { rank: game.l30Rank };
     tmp9Result = tmp9(closure_7, obj5);

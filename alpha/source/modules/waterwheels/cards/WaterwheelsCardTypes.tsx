@@ -1,9 +1,9 @@
-// Module ID: 8791
-// Function ID: 8792
+// Module ID: 8890
+// Function ID: 8891
 // Name: WaterwheelsCardTypes
 // Dependencies: [2]
 
-// Module 8791 (WaterwheelsCardTypes)
+// Module 8890 (WaterwheelsCardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/waterwheels/cards/WaterwheelsCardTypes.tsx");

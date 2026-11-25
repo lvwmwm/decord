@@ -1,10 +1,10 @@
-// Module ID: 6835
-// Function ID: 6836
+// Module ID: 6930
+// Function ID: 6931
 // Name: OverlayVisibility
 // Dependencies: [2]
 // Exports: isOverlayChannelVisible, isOverlayCurrentlyVisibleAndUnlocked
 
-// Module 6835 (OverlayVisibility)
+// Module 6930 (OverlayVisibility)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/overlay/OverlayVisibility.native.tsx");

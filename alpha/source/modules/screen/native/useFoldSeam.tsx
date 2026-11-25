@@ -1,10 +1,10 @@
-// Module ID: 11838
-// Function ID: 11839
+// Module ID: 11937
+// Function ID: 11938
 // Name: useFoldSeam
 // Dependencies: [2]
 // Exports: default
 
-// Module 11838 (useFoldSeam)
+// Module 11937 (useFoldSeam)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/screen/native/useFoldSeam.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 14843
-// Function ID: 14844
+// Module ID: 14965
+// Function ID: 14966
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 7563, 21, 4917, 575, 7476, 1112, 4192, 7541, 14841, 11341, 7545, 7420, 7381, 7314, 5515, 2]
+// Dependencies: [5, 32, 19, 17, 7662, 21, 5012, 575, 7571, 1112, 4244, 7636, 14963, 11440, 7640, 7515, 7476, 7409, 5610, 2]
 // Exports: default
 
-// Module 14843 (ConjureCustomWidgetSheet)
+// Module 14965 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4192 from "module_4192" /* 4192 */;
+import _modDef4244 from "module_4244" /* 4244 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7563 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7662 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap;
@@ -80,7 +80,7 @@ export default function ConjureCustomWidgetSheet() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -163,7 +163,7 @@ export default function ConjureCustomWidgetSheet() {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp55) {
         dependencyMap = tmp55;
         if (0 === c3) {
@@ -178,21 +178,21 @@ export default function ConjureCustomWidgetSheet() {
     }
   }), items);
   let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_9(BottomSheetTitleHeader, obj2), children: tmp15(tmp16, obj3) };
-  const ActionSheet = value(7420).ActionSheet;
-  obj2 = { title: intl.string(_modDef4192.yI85oV) };
-  BottomSheetTitleHeader = value(7381).BottomSheetTitleHeader;
+  const ActionSheet = value(7515).ActionSheet;
+  obj2 = { title: intl.string(_modDef4244.yI85oV) };
+  BottomSheetTitleHeader = value(7476).BottomSheetTitleHeader;
   intl = value(1112).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef4192["09BSx3"]), placeholder: intl3.string(_modDef4192.K7zdCZ), description: intl4.string(_modDef4192.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14841).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
-  const TextArea = value(7314).TextArea;
+  let obj4 = { label: intl2.string(_modDef4244["09BSx3"]), placeholder: intl3.string(_modDef4244.K7zdCZ), description: intl4.string(_modDef4244.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(14963).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  const TextArea = value(7409).TextArea;
   intl2 = value(1112).intl;
   intl3 = value(1112).intl;
   intl4 = value(1112).intl;
   tmp15 = closure_10;
   tmp16 = View;
   items1 = [tmp11(TextArea, obj4), ];
-  let obj5 = { variant: "primary", text: intl5.string(_modDef4192.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
-  const Button = tmp12(5515).Button;
+  let obj5 = { variant: "primary", text: intl5.string(_modDef4244.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
+  const Button = tmp12(5610).Button;
   intl5 = tmp12(1112).intl;
   items1[1] = closure_9(Button, obj5);
   return closure_9(ActionSheet, obj);

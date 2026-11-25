@@ -1,7 +1,7 @@
 // Module ID: 2173
 // Function ID: 2174
 // Name: PremiumUtils
-// Dependencies: [32, 19, 2170, 1386, 2174, 2175, 2177, 2178, 1071, 1388, 2186, 1082, 3, 4730, 2184, 2108, 38, 1112, 2888, 3638, 2168, 4739, 5592, 6199, 2185, 13740, 1088, 504, 11790, 9551, 9680, 2]
+// Dependencies: [32, 19, 2170, 1386, 2174, 2175, 2177, 2178, 1071, 1388, 2186, 1082, 3, 4825, 2184, 2108, 38, 1112, 2910, 3690, 2168, 4834, 5687, 6294, 2185, 13863, 1088, 504, 11889, 9650, 9779, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatSubscriptionPlanRate, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
 // Module 2173 (PremiumUtils)
@@ -15,15 +15,15 @@ import _modDef2168 from "module_2168" /* 2168 */;
 import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2170 */;
 import PremiumSubscription from "PremiumSubscription" /* 2184 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2186 */;
-import _modDef2888 from "module_2888" /* 2888 */;
-import _modDef3638 from "module_3638" /* 3638 */;
-import BillingUtils from "BillingUtils" /* 4730 */;
-import openURLDefault from "openURL" /* 5592 */;
-import PriceUtils from "PriceUtils" /* 6199 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9551 */;
-import PremiumPerkGates from "PremiumPerkGates" /* 9680 */;
-import CheckoutError from "CheckoutError" /* 11790 */;
-import useFPDurationLeft from "useFPDurationLeft" /* 13740 */;
+import _modDef2910 from "module_2910" /* 2910 */;
+import _modDef3690 from "module_3690" /* 3690 */;
+import BillingUtils from "BillingUtils" /* 4825 */;
+import openURLDefault from "openURL" /* 5687 */;
+import PriceUtils from "PriceUtils" /* 6294 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9650 */;
+import PremiumPerkGates from "PremiumPerkGates" /* 9779 */;
+import CheckoutError from "CheckoutError" /* 11889 */;
+import useFPDurationLeft from "useFPDurationLeft" /* 13863 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -77,13 +77,13 @@ let closure_49;
 let map1;
 let tmp5;
 let unpackModuleId;
-const DateUtils = tmp5(4739);
-const f83298 = (planId) => set.has(planId.planId);
-const f83311 = (planId) => set.has(planId.planId);
-const f83313 = (planId) => !set.has(planId.planId);
-const f83317 = (planId) => set.has(planId.planId);
-const f83318 = (skuId) => skuId.skuId;
-const f83319 = (acc, item) => {
+const DateUtils = tmp5(4834);
+const f83545 = (planId) => set.has(planId.planId);
+const f83558 = (planId) => set.has(planId.planId);
+const f83560 = (planId) => !set.has(planId.planId);
+const f83564 = (planId) => set.has(planId.planId);
+const f83565 = (skuId) => skuId.skuId;
+const f83566 = (acc, item) => {
   let first;
   let tmp3;
   [first, tmp3] = closure_1_23[item];
@@ -98,7 +98,7 @@ const f83319 = (acc, item) => {
 };
 function getPremiumPlanItem(subscription) {
   const items = subscription.items;
-  return items.find(f83298);
+  return items.find(f83545);
 }
 function getDefaultPrice(PREMIUM_MONTH_TIER_2, arg1, flag, currency, flag2) {
   flag = arg1;
@@ -430,7 +430,7 @@ function getIntervalString(interval, arg1, arg2) {
       const tmp24 = require;
       if (flag) {
         const obj2 = { intervalCount: num };
-        formatToPlainString2Result = formatToPlainString2(_modDef2888.G1Q40N, obj2);
+        formatToPlainString2Result = formatToPlainString2(_modDef2910.G1Q40N, obj2);
       } else {
         const obj3 = { intervalCount: num };
         formatToPlainString2Result = formatToPlainString2(tmp24(1112).t["0UlZnH"], obj3);
@@ -599,7 +599,7 @@ function getDisplayName(planId, arg1, arg2, duration) {
     } else {
       const formatToPlainString = intl10.formatToPlainString;
       const obj5 = { premiumGroupProductName: closure_46() };
-      const v8bPDtb = _modDef3638["8bPDtb"];
+      const v8bPDtb = _modDef3690["8bPDtb"];
       stringResult = formatToPlainString(v8bPDtb, obj5);
     }
     return stringResult;
@@ -1359,8 +1359,8 @@ function getExpectedRenewalDate(premiumSubscription, fractionalPremiumInfo) {
     obj = _modDef2168(date);
     let addResult = obj;
     if (unactivatedUnits.length > 0) {
-      const mapped = unactivatedUnits.map(f83318);
-      addResult = obj.add(mapped.reduce(f83319, 0), "hours");
+      const mapped = unactivatedUnits.map(f83565);
+      addResult = obj.add(mapped.reduce(f83566, 0), "hours");
     }
     toDateResult = addResult.toDate();
   }
@@ -1588,8 +1588,8 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
             const obj3 = _modDef2168(date);
             let addResult = obj3;
             if (unactivatedUnits.length > 0) {
-              const mapped1 = unactivatedUnits.map(f83318);
-              addResult = obj3.add(mapped1.reduce(f83319, 0), "hours");
+              const mapped1 = unactivatedUnits.map(f83565);
+              addResult = obj3.add(mapped1.reduce(f83566, 0), "hours");
             }
             toDateResult = addResult.toDate();
           }
@@ -1664,8 +1664,8 @@ function extendDateWithUnconsumedFractionalPremium(date, unactivatedFractionalPr
   const tmp3Result = tmp3(tmp4);
   let addResult = tmp3Result;
   if (unactivatedFractionalPremiumUnits.length > 0) {
-    const mapped = unactivatedFractionalPremiumUnits.map(f83318);
-    addResult = tmp3Result.add(mapped.reduce(f83319, 0), "hours");
+    const mapped = unactivatedFractionalPremiumUnits.map(f83565);
+    addResult = tmp3Result.add(mapped.reduce(f83566, 0), "hours");
   }
   let addResult1 = addResult;
   if (!excludeReverseTrialFromCountdown) {
@@ -1682,8 +1682,8 @@ function extendDateWithUnconsumedFractionalPremium(date, unactivatedFractionalPr
 }
 function getUnactivatedFractionalPremiumDurationString(unactivatedUnits) {
   unactivatedUnits = unactivatedUnits.unactivatedUnits;
-  const mapped = unactivatedUnits.map(f83318);
-  const reduced = mapped.reduce(f83319, 0);
+  const mapped = unactivatedUnits.map(f83565);
+  const reduced = mapped.reduce(f83566, 0);
   if (reduced > 0) {
     if (unactivatedUnits.fractionalState === constants6.NONE) {
       const time = { days: intl30.t.fYmirx, hours: intl30.t["C3RO+g"], minutes: intl30.t.r77oHc };
@@ -1971,7 +1971,7 @@ function getBillingReviewSubheader(arg0, id, arg2) {
     const intl4 = intl30.intl;
     const formatToPlainString = intl4.formatToPlainString;
     const obj2 = { premiumGroupProductName: closure_46() };
-    const LwdrNi = _modDef3638.LwdrNi;
+    const LwdrNi = _modDef3690.LwdrNi;
     return formatToPlainString(LwdrNi, obj2);
   } else if (SubscriptionPlans.PREMIUM_YEAR_TIER_2 === id) {
     let stringResult;
@@ -2125,7 +2125,7 @@ function getGuildBoostPlanItem(items) {
   let found = null;
   if (null != items) {
     items = items.items;
-    found = items.find(f83317);
+    found = items.find(f83564);
   }
   return found;
 }
@@ -2133,13 +2133,13 @@ function isBoostOnlySubscription(subscription) {
   let tmp = null != subscription;
   if (tmp) {
     const items = subscription.items;
-    tmp = null == items.find(f83298);
+    tmp = null == items.find(f83545);
   }
   if (tmp) {
     let found = null;
     if (null != subscription) {
       const items1 = subscription.items;
-      found = items1.find(f83317);
+      found = items1.find(f83564);
     }
     tmp = null != found;
   }
@@ -2150,7 +2150,7 @@ function getPremiumSkuIdForSubscription(items) {
   let found = null;
   if (null != items) {
     items = items.items;
-    found = items.find(f83298);
+    found = items.find(f83545);
   }
   let skuId = null;
   if (null != found) {
@@ -2175,7 +2175,7 @@ function getPremiumTypeFromSubscription(subscription) {
   let obj3;
   if (null != subscription) {
     const items = subscription.items;
-    const found = items.find(f83298);
+    const found = items.find(f83545);
     if (null != found) {
       const planId = found.planId;
       if (null != set[planId]) {
@@ -2246,8 +2246,8 @@ function isPremiumEligible(isProvisional) {
   return null != isProvisional && !isProvisional.isProvisional && !isProvisional.bot;
 }
 function getFractionalPremiumUnitsHours(arr) {
-  const mapped = arr.map(f83318);
-  return mapped.reduce(f83319, 0);
+  const mapped = arr.map(f83565);
+  return mapped.reduce(f83566, 0);
 }
 function getMonthlyPrice(isGift) {
   let flag = isGift.isGift;
@@ -2749,7 +2749,7 @@ export function getSubscriptionWithNewPlansTotalServerPrice(renewalMutations, ar
       items1 = renewalMutations.items;
     }
     const items2 = [];
-    const found = items1.find(f83311);
+    const found = items1.find(f83558);
     if (null != found) {
       items2.push(found);
     }
@@ -2771,7 +2771,7 @@ export function getSubscriptionWithNewPlansTotalServerPrice(renewalMutations, ar
       return planId;
     });
   } else {
-    mapped = items.filter(f83313);
+    mapped = items.filter(f83560);
   }
   return tmp5(mapped, arg2, arg3);
 }
@@ -3495,7 +3495,7 @@ export function getItemsFromNewAdditionalPlans(renewalMutations, arg1) {
     items = renewalMutations.items;
   }
   const items1 = [];
-  const found = items.find(f83311);
+  const found = items.find(f83558);
   if (null != found) {
     items1.push(found);
   }
@@ -3516,7 +3516,7 @@ export function getItemsFromNewAdditionalPlans(renewalMutations, arg1) {
   });
 }
 export function getItemsWithoutPremiumPlanItem(arr) {
-  return arr.filter(f83313);
+  return arr.filter(f83560);
 }
 export { getItemsWithUpsertedPlanIdForGroup };
 export function getItemsWithUpsertedPremiumPlanId(renewalMutations, basePlanId) {
@@ -3638,7 +3638,7 @@ export { formatInterval };
 export { isPremiumEligible };
 export { getFractionalPremiumUnitsHours };
 export function getFractionalPremiumUnitsHoursFromSkuIds(flatMapResult) {
-  return flatMapResult.reduce(f83319, 0);
+  return flatMapResult.reduce(f83566, 0);
 }
 export { getMonthlyPrice };
 export function getSavingsPercent(subscriptionPlan) {

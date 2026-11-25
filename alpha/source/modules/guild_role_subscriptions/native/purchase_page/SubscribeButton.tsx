@@ -1,23 +1,23 @@
-// Module ID: 18235
-// Function ID: 18236
+// Module ID: 18347
+// Function ID: 18348
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 4820, 4842, 1071, 4773, 21, 16664, 504, 9128, 5508, 5921, 1112, 6905, 2168, 1186, 18229, 5131, 18236, 2119, 18225, 6999, 5515, 9580, 2]
+// Dependencies: [5, 32, 19, 17, 4915, 4937, 1071, 4868, 21, 16785, 504, 9227, 5603, 6016, 1112, 7000, 2168, 1186, 18341, 5226, 18348, 2119, 18337, 7094, 5610, 9679, 2]
 // Exports: default
 
-// Module 18235 (SubscribeButton)
+// Module 18347 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ChannelConstants from "ChannelConstants" /* 4773 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5131 */;
-import Text_Text from "Text/Text" /* 5508 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5921 */;
+import ChannelConstants from "ChannelConstants" /* 4868 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import Text_Text from "Text/Text" /* 5603 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4842 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4937 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -37,13 +37,13 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(16664);
+  let obj = changeToListingId(16785);
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   const obj3 = { children: items };
   const obj2 = activeListingId(2168)(activeSubscription.currentPeriodEnd);
   const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(activeSubscription(1112).t.lA7ztO, obj5) };
   const formatResult = obj2.format("MMMM Do");
-  const Text = activeSubscription(5508).Text;
+  const Text = activeSubscription(5603).Text;
   intl = activeSubscription(1112).intl;
   obj5 = { activeListingName: first, billingEndDate: formatResult, emphasisHook };
   items = [closure_12(Text, obj4), closure_12(activeSubscription(1186).Spacer, { size: 16 }), ];
@@ -53,11 +53,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(18236, dependencyMap.paths);
+      const tmp2 = asyncRequire(18348, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(18229).ArrowButton;
+  const ArrowButton = activeSubscription(18341).ArrowButton;
   intl2 = activeSubscription(1112).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);
@@ -129,7 +129,7 @@ export default function SubscribeButton(listingId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -169,7 +169,7 @@ export default function SubscribeButton(listingId) {
           c3 = 0;
           closure_128_1(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp19) {
         closure_2 = tmp19;

@@ -1,12 +1,12 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8459
+// Function ID: 8460
 // Name: useGuildsUserCanStartStageIn
-// Dependencies: [4847, 4849, 4774, 504, 2]
+// Dependencies: [4942, 4944, 4869, 504, 2]
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 8360 (useGuildsUserCanStartStageIn)
-import GuildChannelStore2 from "GuildChannelStore" /* 4847 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
+// Module 8459 (useGuildsUserCanStartStageIn)
+import GuildChannelStore2 from "GuildChannelStore" /* 4942 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;

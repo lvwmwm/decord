@@ -1,11 +1,11 @@
-// Module ID: 14344
-// Function ID: 14345
+// Module ID: 14467
+// Function ID: 14468
 // Name: socialLayerStorefrontEmbedColors
-// Dependencies: [4917, 575, 2]
+// Dependencies: [5012, 575, 2]
 
-// Module 14344 (socialLayerStorefrontEmbedColors)
+// Module 14467 (socialLayerStorefrontEmbedColors)
 import nativeDefault from "native" /* 575 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const obj = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overlayTextColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };

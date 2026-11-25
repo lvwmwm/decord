@@ -1,15 +1,15 @@
-// Module ID: 19854
-// Function ID: 19855
+// Module ID: 19956
+// Function ID: 19957
 // Name: GuildSettingsModalSoundboardSoundInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6797, 21, 504, 19849, 5921, 1112, 1186, 10262, 5598, 5145, 7381, 575, 6014, 6018, 7041, 9483, 19845, 5624, 2]
+// Dependencies: [5, 32, 19, 17, 6892, 21, 504, 19951, 6016, 1112, 1186, 10361, 5693, 5240, 7476, 575, 6109, 6113, 7136, 9582, 19947, 5719, 2]
 
-// Module 19854 (GuildSettingsModalSoundboardSoundInfoActionSheet)
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19845 */;
+// Module 19956 (GuildSettingsModalSoundboardSoundInfoActionSheet)
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19947 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 6797 */;
+import SoundboardStore from "SoundboardStore" /* 6892 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboardSoundInfoActi
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -136,7 +136,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboardSoundInfoActi
             closure_128_2();
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp56) {
           closure_2 = tmp56;
           if (0 === c3) {

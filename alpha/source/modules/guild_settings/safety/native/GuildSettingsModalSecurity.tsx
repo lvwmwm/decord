@@ -1,21 +1,21 @@
-// Module ID: 19871
-// Function ID: 19872
+// Module ID: 19973
+// Function ID: 19974
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 4784, 4788, 1386, 8433, 1071, 21, 4917, 575, 504, 8432, 5508, 1112, 5515, 5604, 16098, 5491, 2]
+// Dependencies: [19, 17, 4879, 4883, 1386, 8532, 1071, 21, 5012, 575, 504, 8531, 5603, 1112, 5610, 5699, 16219, 5586, 2]
 // Exports: default
 
-// Module 19871 (GuildSettingsModalSecurity)
+// Module 19973 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 575 */;
-import GuildRecord from "GuildRecord" /* 4784 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8432 */;
+import GuildRecord from "GuildRecord" /* 4879 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import UserStore from "UserStore" /* 1386 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8433 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8532 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -90,11 +90,11 @@ export default function GuildSettingsModalSecurity(guildId) {
     }
   }, items2);
   const obj5 = { style: tmp.label, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl.string(guildId(1112).t.Wi9LEV) };
-  const Text = tmp2(5508).Text;
+  const Text = tmp2(5603).Text;
   intl = tmp2(1112).intl;
   items4 = [closure_12(Text, obj5), , ];
   const obj6 = { style: tmp.button, children: closure_12(Button, obj7) };
-  Button = tmp2(5515).Button;
+  Button = tmp2(5610).Button;
   const intl2 = tmp2(1112).intl;
   const string = intl2.string;
   const t = tmp2(1112).t;
@@ -119,7 +119,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   let tmp18Result = null;
   if (hasItem) {
     const obj8 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(guildId(1112).t["KG1V/E"]) };
-    const Text2 = tmp2(5508).Text;
+    const Text2 = tmp2(5603).Text;
     intl3 = tmp2(1112).intl;
     tmp18Result = tmp18(Text2, obj8);
   }
@@ -127,15 +127,15 @@ export default function GuildSettingsModalSecurity(guildId) {
   items4[2] = tmp18Result;
   items5 = [closure_13(closure_4, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
-  const obj11 = { source: stateFromStores(16098), style: tmp.image, resizeMode: "contain" };
-  const tmp23 = stateFromStores(5604);
+  const obj11 = { source: stateFromStores(16219), style: tmp.image, resizeMode: "contain" };
+  const tmp23 = stateFromStores(5699);
   items6 = [closure_12(tmp23, obj11), ];
   const obj12 = { style: tmp.infoWrapper, children: closure_12(Text3, obj13) };
   obj13 = { variant: "body-sm/medium", color: "text-muted", children: intl4.format(guildId(1112).t["FK0+iX"], {}) };
-  Text3 = tmp2(5508).Text;
+  Text3 = tmp2(5603).Text;
   intl4 = tmp2(1112).intl;
   items6[1] = closure_12(closure_4, obj12);
   items5[1] = closure_13(closure_4, obj10);
-  items7 = [closure_13(tmp16, obj3), closure_12(tmp2(5491).NavScrim, {})];
+  items7 = [closure_13(tmp16, obj3), closure_12(tmp2(5586).NavScrim, {})];
   return closure_13(tmp15, obj9);
 };

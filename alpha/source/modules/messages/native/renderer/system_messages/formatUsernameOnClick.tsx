@@ -1,16 +1,16 @@
-// Module ID: 14197
-// Function ID: 14198
+// Module ID: 14320
+// Function ID: 14321
 // Name: formatUsernameOnClick
-// Dependencies: [1386, 8938, 11854, 2]
+// Dependencies: [1386, 9037, 11953, 2]
 // Exports: default
 
-// Module 14197 (formatUsernameOnClick)
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8938 */;
+// Module 14320 (formatUsernameOnClick)
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9037 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const createDisplayNameStylesMobile = tmp(11854);
+const createDisplayNameStylesMobile = tmp(11953);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/formatUsernameOnClick.tsx");
 
 export default function formatUsernameOnClick(arg0) {

@@ -1,9 +1,9 @@
-// Module ID: 8074
-// Function ID: 8075
+// Module ID: 8173
+// Function ID: 8174
 // Name: FamilyCenterControlledSettingsStore
 // Dependencies: [1232, 1195, 504, 572, 2]
 
-// Module 8074 (FamilyCenterControlledSettingsStore)
+// Module 8173 (FamilyCenterControlledSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;

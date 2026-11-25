@@ -1,14 +1,14 @@
-// Module ID: 9023
-// Function ID: 9024
+// Module ID: 9122
+// Function ID: 9123
 // Name: MarketingComponentRecord
-// Dependencies: [1406, 1088, 9024, 1233, 9026, 9070, 1250, 2]
+// Dependencies: [1406, 1088, 9123, 1233, 9125, 9169, 1250, 2]
 
-// Module 9023 (MarketingComponentRecord)
+// Module 9122 (MarketingComponentRecord)
 import DurationsDefault from "Durations" /* 1088 */;
 import ProtoUtils from "ProtoUtils" /* 1233 */;
 import _modDef1250 from "module_1250" /* 1250 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9024 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9026 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9123 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 9125 */;
 import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ class MarketingComponentRecord extends Record {
       priority = startDate.priority;
     }
     if (priority == null) {
-      priority = tmp10(9070).FALLBACK_PROMOTION_PRIORITY;
+      priority = tmp10(9169).FALLBACK_PROMOTION_PRIORITY;
     }
     if (typeof MarketingComponentRecord === "function") {
       const self5 = this;

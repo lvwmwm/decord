@@ -1,10 +1,10 @@
-// Module ID: 11369
-// Function ID: 11370
+// Module ID: 11468
+// Function ID: 11469
 // Name: InappropriateConversationsDefaultOn
 // Dependencies: [1451, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn, useIsEligibleForInappropriateConversationDefaultOn
 
-// Module 11369 (InappropriateConversationsDefaultOn)
+// Module 11468 (InappropriateConversationsDefaultOn)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 

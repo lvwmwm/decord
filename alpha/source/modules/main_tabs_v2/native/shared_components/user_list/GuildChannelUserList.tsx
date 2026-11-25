@@ -1,22 +1,22 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 12036
+// Function ID: 12037
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7527, 4766, 4829, 4788, 4820, 1386, 1071, 21, 8806, 504, 10926, 6864, 550, 11938, 6253, 7279, 4854, 11940, 8385, 6681, 4973, 1112, 6007, 575, 7280, 11209, 2]
+// Dependencies: [32, 19, 17, 7622, 4861, 4924, 4883, 4915, 1386, 1071, 21, 8905, 504, 11025, 6959, 550, 12037, 6348, 7374, 4949, 12039, 8484, 6776, 5068, 1112, 6102, 575, 7375, 11308, 2]
 
-// Module 11937 (GuildChannelUserList)
+// Module 12036 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1112 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4854 */;
-import UserUtilsDefault from "UserUtils" /* 4973 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6007 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6681 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4949 */;
+import UserUtilsDefault from "UserUtils" /* 5068 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6102 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6776 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7527 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildMemberStore from "GuildMemberStore" /* 4829 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4820 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 7622 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;

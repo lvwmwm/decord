@@ -1,19 +1,19 @@
-// Module ID: 6670
-// Function ID: 6671
+// Module ID: 6765
+// Function ID: 6766
 // Name: IdleStore
-// Dependencies: [502, 1071, 5729, 1378, 4742, 1088, 572, 4728, 6671, 551, 504, 2]
+// Dependencies: [502, 1071, 5824, 1378, 4837, 1088, 572, 4823, 6766, 551, 504, 2]
 
-// Module 6670 (IdleStore)
+// Module 6765 (IdleStore)
 import _mod2 from "module_2" /* 2 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import DiscordNativeDefault from "DiscordNative" /* 4728 */;
-import UserSettings from "UserSettings" /* 4742 */;
-import Constants2 from "Constants" /* 5729 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6671 */;
+import DiscordNativeDefault from "DiscordNative" /* 4823 */;
+import UserSettings from "UserSettings" /* 4837 */;
+import Constants2 from "Constants" /* 5824 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6766 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1071 */;
 
@@ -103,7 +103,7 @@ if (PlatformUtils.isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(4728).powerMonitor;
+        const powerMonitor2 = tmp(4823).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(result) {

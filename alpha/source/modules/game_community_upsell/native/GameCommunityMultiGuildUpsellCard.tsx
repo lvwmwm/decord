@@ -1,27 +1,27 @@
-// Module ID: 17838
-// Function ID: 17839
+// Module ID: 17950
+// Function ID: 17951
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4918, 4850, 4788, 1071, 21, 4917, 575, 504, 1412, 1447, 1494, 8459, 8794, 6865, 6869, 1112, 9279, 5604, 8594, 1186, 5508, 5515, 8926, 7811, 7612, 2]
+// Dependencies: [5, 32, 19, 17, 5013, 4945, 4883, 1071, 21, 5012, 575, 504, 1412, 1447, 1494, 8558, 8893, 6960, 6964, 1112, 9378, 5699, 8693, 1186, 5603, 5610, 9025, 7910, 7711, 2]
 // Exports: default
 
-// Module 17838 (GameCommunityMultiGuildUpsellCard)
+// Module 17950 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7612 */;
-import IconButton2 from "IconButton" /* 7811 */;
-import transitionToGuild from "transitionToGuild" /* 8459 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7711 */;
+import IconButton2 from "IconButton" /* 7910 */;
+import transitionToGuild from "transitionToGuild" /* 8558 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
-import LurkingStore from "LurkingStore" /* 4850 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import LurkingStore from "LurkingStore" /* 4945 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;
@@ -193,7 +193,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -264,7 +264,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp37) {
         onDismiss = tmp37;
         if (0 === c3) {

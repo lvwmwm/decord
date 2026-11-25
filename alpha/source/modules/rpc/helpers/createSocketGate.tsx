@@ -1,10 +1,10 @@
-// Module ID: 15717
-// Function ID: 15718
+// Module ID: 15838
+// Function ID: 15839
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: default
 
-// Module 15717 (_asyncToGenerator)
+// Module 15838 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ export default function createSocketGate(cooldownMs) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c6;

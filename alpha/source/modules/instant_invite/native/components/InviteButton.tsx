@@ -1,15 +1,15 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 10453
+// Function ID: 10454
 // Name: InviteButton
-// Dependencies: [19, 17, 5650, 21, 4917, 1112, 5515, 2]
+// Dependencies: [19, 17, 5745, 21, 5012, 1112, 5610, 2]
 
-// Module 10354 (InviteButton)
+// Module 10453 (InviteButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl6 from "intl" /* 1112 */;
-import Constants from "Constants" /* 5650 */;
+import Constants from "Constants" /* 5745 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -48,7 +48,7 @@ const memoResult = react.memo(function InviteButton(onPressSend) {
     stringResult1 = intl2.string(tmp2(1112).t.jYnGPG);
     flag = false;
   }
-  const Button = tmp2(5515).Button;
+  const Button = tmp2(5610).Button;
   if (!disabled) {
     disabled = flag;
   }

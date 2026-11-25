@@ -16,14 +16,14 @@ const ErrorKind = tmp(1178);
 module_1158.__exportStar(TYPE, exports);
 
 export function parse(arg0, arg1) {
-  const f80369 = (style) => {
+  const f80616 = (style) => {
     delete style[`location`];
     if (!TYPE.isSelectElement(style)) {
       if (!TYPE.isPluralElement(style)) {
         if (!TYPE.isNumberElement(style)) {
           if (TYPE.isTagElement(style)) {
             const children = style.children;
-            const item = children.forEach(f80369);
+            const item = children.forEach(f80616);
           }
         }
         delete style.style["location"];
@@ -32,7 +32,7 @@ export function parse(arg0, arg1) {
     for (const key10046 in style.options) {
       delete style.options[key10046][str];
       let value = style.options[key10046].value;
-      let item1 = value.forEach(f80369);
+      let item1 = value.forEach(f80616);
       continue;
     }
   };
@@ -57,7 +57,7 @@ export function parse(arg0, arg1) {
     }
     if (!captureLocation) {
       const val = parsed.val;
-      let item = val.forEach(f80369);
+      let item = val.forEach(f80616);
     }
     return parsed.val;
   }

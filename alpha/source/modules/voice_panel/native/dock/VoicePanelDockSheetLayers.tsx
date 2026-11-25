@@ -1,22 +1,22 @@
-// Module ID: 19288
-// Function ID: 19289
+// Module ID: 19400
+// Function ID: 19401
 // Name: VoicePanelDockSheetLayers
-// Dependencies: [19, 17, 13236, 21, 4917, 11634, 1653, 18051, 575, 8478, 19289, 5109, 2]
+// Dependencies: [19, 17, 13359, 21, 5012, 11733, 1653, 18163, 575, 8577, 19401, 5204, 2]
 // Exports: default
 
-// Module 19288 (VoicePanelDockSheetLayers)
+// Module 19400 (VoicePanelDockSheetLayers)
 import native from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import Portal from "Portal" /* 5109 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8478 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11634 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 18051 */;
-import voicePanelLayoutTransitionDefault from "voicePanelLayoutTransition" /* 19289 */;
+import Portal from "Portal" /* 5204 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8577 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 18163 */;
+import voicePanelLayoutTransitionDefault from "voicePanelLayoutTransition" /* 19401 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13236 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13359 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;

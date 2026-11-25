@@ -1,14 +1,14 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10712
+// Function ID: 10713
 // Name: ChatMarkUnreadIcon
-// Dependencies: [19, 21, 575, 5603, 10614, 2]
+// Dependencies: [19, 21, 575, 5698, 10713, 2]
 // Exports: ChatMarkUnreadIcon
 
-// Module 10613 (ChatMarkUnreadIcon)
+// Module 10712 (ChatMarkUnreadIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5603 */;
-import AssetRegistry from "AssetRegistry" /* 10614 */;
+import BaseIconImage2 from "BaseIconImage" /* 5698 */;
+import AssetRegistry from "AssetRegistry" /* 10713 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

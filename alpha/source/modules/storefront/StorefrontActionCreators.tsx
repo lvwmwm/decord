@@ -1,20 +1,20 @@
-// Module ID: 10980
-// Function ID: 10981
+// Module ID: 11079
+// Function ID: 11080
 // Name: StorefrontActionCreators
-// Dependencies: [5, 2174, 7468, 9171, 10981, 10982, 1071, 1088, 572, 1284, 5667, 7467, 2]
+// Dependencies: [5, 2174, 7563, 9270, 11080, 11081, 1071, 1088, 572, 1284, 5762, 7562, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 10980 (StorefrontActionCreators)
+// Module 11079 (StorefrontActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import BillingInfoStore from "BillingInfoStore" /* 2174 */;
-import SKUPricesStore from "SKUPricesStore" /* 7468 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9171 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 10981 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 10982 */;
+import SKUPricesStore from "SKUPricesStore" /* 7563 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9270 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 11080 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 11081 */;
 import size from "module_2" /* 2 */;
 
 let apiError, c1, closure_4, promotions;
@@ -50,7 +50,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -109,7 +109,7 @@ obj = function _fetchStorefrontPromotions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _fetchStorefrontPromotions() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp29) {
           if (0 === c3) {
             c5 = 3;
@@ -199,7 +199,7 @@ obj = function _claimStorefrontPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -334,7 +334,7 @@ obj = function _fetchStorefrontPrices() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c2;
@@ -379,7 +379,7 @@ obj = function _fetchStorefrontPrices() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp21) {
         if (0 === c2) {
           c4 = 3;

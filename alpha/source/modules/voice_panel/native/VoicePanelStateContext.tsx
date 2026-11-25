@@ -1,18 +1,18 @@
-// Module ID: 11634
-// Function ID: 11635
+// Module ID: 11733
+// Function ID: 11734
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11635, 11633, 11636, 7303, 11637, 1630, 11642, 2]
+// Dependencies: [19, 11734, 11732, 11735, 7398, 11736, 1630, 11741, 2]
 
-// Module 11634 (VoicePanelStateContext)
+// Module 11733 (VoicePanelStateContext)
 import SafeAreaConstants from "SafeAreaConstants" /* 1630 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11635 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11636 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11637 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11642 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11735 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11736 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11741 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11633 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7303 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7398 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;
@@ -51,7 +51,7 @@ const obj = {
   dockPressed: ReanimatedHelperTypes.createFakeSharedValue(false),
   dockPTTPortalHostName: null,
   dockPTTMeasureHostRef: { current: null },
-  dismissToPIPGestureRef: { current: "Array" },
+  dismissToPIPGestureRef: { current: "dispatch" },
   dragScrolling: ReanimatedHelperTypes.createFakeSharedValue(false),
   focused: ReanimatedHelperTypes.createFakeSharedValue(null),
   generateStateLocker() {

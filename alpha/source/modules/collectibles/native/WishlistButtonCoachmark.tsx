@@ -1,13 +1,13 @@
-// Module ID: 17351
-// Function ID: 17352
+// Module ID: 17462
+// Function ID: 17463
 // Name: WishlistButtonCoachmark
-// Dependencies: [32, 19, 4763, 11074, 4750, 9420, 17338, 1112, 9427, 2]
+// Dependencies: [32, 19, 4858, 11173, 4845, 9519, 17449, 1112, 9526, 2]
 // Exports: default
 
-// Module 17351 (WishlistButtonCoachmark)
+// Module 17462 (WishlistButtonCoachmark)
 import intl3 from "intl" /* 1112 */;
-import dismissible_content from "dismissible_content" /* 4750 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4763 */;
+import dismissible_content from "dismissible_content" /* 4845 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ export default function WishlistButtonCoachmark(anchorRef) {
   _slicedToArray = undefined;
   let registerDismiss;
   anchorRef = anchorRef.anchorRef;
-  let obj = hasNeverWishlisted(11074);
+  let obj = hasNeverWishlisted(11173);
   hasNeverWishlisted = obj.useHasNeverWishlisted();
   let items = [hasNeverWishlisted];
   const memo = registerDismiss.useMemo(() => {
@@ -39,12 +39,12 @@ export default function WishlistButtonCoachmark(anchorRef) {
     }
     return items1;
   }, items);
-  const obj2 = hasNeverWishlisted(9420);
+  const obj2 = hasNeverWishlisted(9519);
   const tmp3 = _slicedToArray(obj2.useSelectedDismissibleContent(memo), 2);
   dependencyMap = tmp4;
-  const tmp5 = tmp3[0] === hasNeverWishlisted(4750).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
+  const tmp5 = tmp3[0] === hasNeverWishlisted(4845).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
   _slicedToArray = tmp5;
-  const obj3 = hasNeverWishlisted(17338);
+  const obj3 = hasNeverWishlisted(17449);
   registerDismiss = obj3.useCollectiblesCoachmarkScrollDismissContext().registerDismiss;
   let items1 = [tmp5, registerDismiss, tmp3[1]];
   const effect = registerDismiss.useEffect(() => {
@@ -69,7 +69,7 @@ export default function WishlistButtonCoachmark(anchorRef) {
     intl2 = intl3.intl;
     return obj;
   }, items2);
-  const obj4 = hasNeverWishlisted(9427);
+  const obj4 = hasNeverWishlisted(9526);
   const coachmark = obj4.useCoachmark(anchorRef, memo1);
   return null;
 };

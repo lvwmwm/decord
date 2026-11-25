@@ -1,11 +1,11 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 11413
+// Function ID: 11414
 // Name: ConjureInstallTarget
-// Dependencies: [5, 7541, 2]
+// Dependencies: [5, 7636, 2]
 // Exports: conjureInstallGuildId, repairConjureGuildHints
 
-// Module 11314 (ConjureInstallTarget)
-import ConjureActionCreators from "ConjureActionCreators" /* 7541 */;
+// Module 11413 (ConjureInstallTarget)
+import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _repairConjureGuildHints() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ let obj = function _repairConjureGuildHints() {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp9) {
           c2 = 3;
           throw tmp9;

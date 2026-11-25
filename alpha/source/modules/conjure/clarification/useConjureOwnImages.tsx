@@ -1,12 +1,12 @@
-// Module ID: 18631
-// Function ID: 18632
+// Module ID: 18743
+// Function ID: 18744
 // Name: useConjureOwnImages
-// Dependencies: [109, 32, 19, 1112, 4192, 18357, 2]
+// Dependencies: [109, 32, 19, 1112, 4244, 18469, 2]
 // Exports: inertOwnImageControls, useConjureOwnImages
 
-// Module 18631 (useConjureOwnImages)
-import _modDef4192 from "module_4192" /* 4192 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18357 */;
+// Module 18743 (useConjureOwnImages)
+import _modDef4244 from "module_4244" /* 4244 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18469 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -75,7 +75,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
   [first1, closure_6] = first1.useState({});
   [first2, closure_8] = first1.useState({});
   let intl = require("intl").intl;
-  const stringResult = intl.string(_modDef4192.wTsP5l);
+  const stringResult = intl.string(_modDef4244.wTsP5l);
   const text = stringResult;
   let items = [first];
   const items1 = [arg1, first, first2];
@@ -131,7 +131,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
       let busy;
       let closure_3;
       let error;
-      const f139229 = (arg0) => {
+      const f139605 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
@@ -264,7 +264,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f139229);
+                    closure_1_8(f139605);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -327,7 +327,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f139229);
+                  closure_1_8(f139605);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

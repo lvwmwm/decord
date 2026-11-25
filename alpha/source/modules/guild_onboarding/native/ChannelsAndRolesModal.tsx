@@ -1,22 +1,22 @@
-// Module ID: 11881
-// Function ID: 11882
+// Module ID: 11980
+// Function ID: 11981
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 4788, 7330, 21, 4917, 575, 563, 11882, 8475, 1112, 8476, 11883, 11889, 11272, 2]
+// Dependencies: [32, 19, 17, 4883, 7425, 21, 5012, 575, 563, 11981, 8574, 1112, 8575, 11982, 11988, 11371, 2]
 // Exports: default
 
-// Module 11881 (ChannelsAndRolesModal)
+// Module 11980 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7330 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11272 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 11882 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7425 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11371 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 11981 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

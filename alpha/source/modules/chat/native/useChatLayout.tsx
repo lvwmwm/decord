@@ -1,11 +1,11 @@
-// Module ID: 5096
-// Function ID: 5097
+// Module ID: 5191
+// Function ID: 5192
 // Name: useChatLayout
-// Dependencies: [19, 5097, 2]
+// Dependencies: [19, 5192, 2]
 // Exports: default, getChatLayout
 
-// Module 5096 (useChatLayout)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5097 */;
+// Module 5191 (useChatLayout)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5192 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

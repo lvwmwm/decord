@@ -1,13 +1,13 @@
-// Module ID: 9031
-// Function ID: 9032
+// Module ID: 9130
+// Function ID: 9131
 // Name: premium_tab
-// Dependencies: [32, 1196, 9028, 9032, 9033, 2]
+// Dependencies: [32, 1196, 9127, 9131, 9132, 2]
 
-// Module 9031 (premium_tab)
+// Module 9130 (premium_tab)
 import _mod1196 from "module_1196" /* 1196 */;
-import localized_string from "localized_string" /* 9028 */;
-import theme_aware_asset from "theme_aware_asset" /* 9032 */;
-import tab_gradient_colors from "tab_gradient_colors" /* 9033 */;
+import localized_string from "localized_string" /* 9127 */;
+import theme_aware_asset from "theme_aware_asset" /* 9131 */;
+import tab_gradient_colors from "tab_gradient_colors" /* 9132 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

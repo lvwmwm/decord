@@ -1,14 +1,14 @@
-// Module ID: 6864
-// Function ID: 6865
+// Module ID: 6959
+// Function ID: 6960
 // Name: GuildUtils
-// Dependencies: [4788, 1386, 1454, 1088, 572, 6865, 4973, 1112, 2]
+// Dependencies: [4883, 1386, 1454, 1088, 572, 6960, 5068, 1112, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 6864 (GuildUtils)
+// Module 6959 (GuildUtils)
 import DurationsDefault from "Durations" /* 1088 */;
 import intl2 from "intl" /* 1112 */;
-import UserUtilsAll from "UserUtils" /* 4973 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import UserUtilsAll from "UserUtils" /* 5068 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import UserStore from "UserStore" /* 1386 */;
 import LRUCache from "LRUCache" /* 1454 */;
 import Dispatcher from "Dispatcher" /* 572 */;
@@ -50,7 +50,7 @@ let obj2 = {
     let closure_4;
     let flag2;
     let timeout;
-    const f89979 = () => {
+    const f90318 = () => {
       items = [];
       if (null == items) {
         const push = items.push;
@@ -128,7 +128,7 @@ let obj2 = {
           clearTimeout(timeout);
         }
         const _setTimeout2 = setTimeout;
-        timeout = setTimeout(f89979, 200);
+        timeout = setTimeout(f90318, 200);
       }
     }
     if (flag2) {
@@ -139,7 +139,7 @@ let obj2 = {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f89979, 200);
+      timeout = setTimeout(f90318, 200);
     }
   }
 };

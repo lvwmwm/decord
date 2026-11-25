@@ -1,19 +1,19 @@
-// Module ID: 8322
-// Function ID: 8323
+// Module ID: 8421
+// Function ID: 8422
 // Name: useGuildScheduledEvents
-// Dependencies: [32, 19, 4766, 4788, 4849, 5649, 8323, 4772, 1071, 1088, 504, 8325, 8324, 8328, 2]
+// Dependencies: [32, 19, 4861, 4883, 4944, 5744, 8422, 4867, 1071, 1088, 504, 8424, 8423, 8427, 2]
 // Exports: default, getGuildActiveEvent, useActiveEvent, useActiveEventsByChannel, useFirstActiveEventChannel, useGuildActiveEvent, useGuildChannelScheduledEvents, useGuildUpcomingEvents, useGuildUpcomingEventsNotice, useImminentUpcomingGuildEvents
 
-// Module 8322 (useGuildScheduledEvents)
+// Module 8421 (useGuildScheduledEvents)
 import DurationsDefault from "Durations" /* 1088 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import PermissionStore from "PermissionStore" /* 4849 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 5649 */;
-import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 8323 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4772 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import PermissionStore from "PermissionStore" /* 4944 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 5744 */;
+import UpcomingEventNoticesStore from "UpcomingEventNoticesStore" /* 8422 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4867 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f92894 = () => {
+const f93233 = () => {
   let constants3;
   guildScheduledEventsByIndex = guildScheduledEventsByIndex.getGuildScheduledEventsByIndex(closure_2_8.GUILD_EVENT_UPCOMING(closure_0));
   return guildScheduledEventsByIndex.filter((entity_type) => {
@@ -142,7 +142,7 @@ export function useGuildUpcomingEvents(arg0) {
   const items = [GuildScheduledEventStore, ChannelStore, PermissionStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStoresArray(items, f92894, items1);
+  return obj.useStateFromStoresArray(items, f93233, items1);
 }
 export function useGuildUpcomingEventsNotice(arg0) {
   let closure_0;
@@ -153,7 +153,7 @@ export function useGuildUpcomingEventsNotice(arg0) {
   let obj = require("get initialized");
   const items = [GuildScheduledEventStore, ChannelStore, PermissionStore];
   const items1 = [arg0];
-  stateFromStoresArray = obj.useStateFromStoresArray(items, f92894, items1);
+  stateFromStoresArray = obj.useStateFromStoresArray(items, f93233, items1);
   let obj2 = require("get initialized");
   const items2 = [UpcomingEventNoticesStore];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items2, () => UpcomingEventNoticesStore.getAllEventDismissals());

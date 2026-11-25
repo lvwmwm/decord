@@ -1,18 +1,18 @@
-// Module ID: 16445
-// Function ID: 16446
+// Module ID: 16566
+// Function ID: 16567
 // Name: AppIcon
-// Dependencies: [19, 17, 9517, 21, 4917, 575, 5126, 4924, 5604, 2]
+// Dependencies: [19, 17, 9616, 21, 5012, 575, 5221, 5019, 5699, 2]
 // Exports: default
 
-// Module 16445 (AppIcon)
+// Module 16566 (AppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import shared from "shared" /* 4924 */;
-import useThemeDefault from "useTheme" /* 5126 */;
-import AppIconConstants from "AppIconConstants" /* 9517 */;
+import shared from "shared" /* 5019 */;
+import useThemeDefault from "useTheme" /* 5221 */;
+import AppIconConstants from "AppIconConstants" /* 9616 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

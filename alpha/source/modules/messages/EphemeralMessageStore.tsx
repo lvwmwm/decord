@@ -1,20 +1,20 @@
-// Module ID: 6266
-// Function ID: 6267
+// Module ID: 6361
+// Function ID: 6362
 // Name: EphemeralMessageStore
-// Dependencies: [4766, 1071, 1404, 6267, 504, 572, 2]
+// Dependencies: [4861, 1071, 1404, 6362, 504, 572, 2]
 
-// Module 6266 (EphemeralMessageStore)
+// Module 6361 (EphemeralMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import FlagUtils from "FlagUtils" /* 1404 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const MessageRecordUtils = tmp(6267);
+const MessageRecordUtils = tmp(6362);
 function dropChannelIfEmpty(channelId, value) {
   if (0 === value.size) {
     map.delete(channelId);

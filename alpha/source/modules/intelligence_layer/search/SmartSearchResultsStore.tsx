@@ -1,16 +1,16 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13238
+// Function ID: 13239
 // Name: SmartSearchResultsStore
-// Dependencies: [4859, 1386, 13113, 1454, 13116, 504, 572, 2]
+// Dependencies: [4954, 1386, 13236, 1454, 13239, 504, 572, 2]
 
-// Module 13115 (SmartSearchResultsStore)
+// Module 13238 (SmartSearchResultsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 13116 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 13239 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13113 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13236 */;
 import size from "module_2" /* 2 */;
 
 let MAX_CACHED_ANSWER_GUILDS;

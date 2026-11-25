@@ -1,8 +1,8 @@
-// Module ID: 8295
-// Function ID: 8296
+// Module ID: 8394
+// Function ID: 8395
 // Dependencies: [2]
 
-// Module 8295
+// Module 8394
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/plant_vase.png.js");

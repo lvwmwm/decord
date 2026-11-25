@@ -1,16 +1,16 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14698
+// Function ID: 14699
 // Name: conjureSettingsConnection
-// Dependencies: [5, 7578, 572, 7592, 14571, 559, 14577, 2]
+// Dependencies: [5, 7677, 572, 7691, 14693, 559, 14699, 2]
 // Exports: requestProjectRebuild, retryFailedOverlayProjectSettings, submitProjectSettings
 
-// Module 14576 (conjureSettingsConnection)
+// Module 14698 (conjureSettingsConnection)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7592 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 14571 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7691 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 14693 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 7578 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 7677 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2, closure_5, closure_6, importDefault, rebuild_required, secrets, set, values;
@@ -42,7 +42,7 @@ let obj = function _fetchProjectSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ let obj = function _fetchProjectSettings() {
               obj.dispatch(obj11);
             }
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp47) {
           c8 = 3;
@@ -240,7 +240,7 @@ obj = function _submitProjectSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -421,7 +421,7 @@ export function requestProjectRebuild(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c3;
@@ -459,7 +459,7 @@ export function requestProjectRebuild(arg0) {
               c3 = 0;
             }
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           closure_2 = tmp8;

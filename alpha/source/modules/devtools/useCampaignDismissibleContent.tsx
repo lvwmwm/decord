@@ -1,12 +1,12 @@
-// Module ID: 17174
-// Function ID: 17175
+// Module ID: 17293
+// Function ID: 17294
 // Name: useCampaignDismissibleContent
-// Dependencies: [32, 5, 19, 1230, 1386, 4757, 4747, 5576, 504, 9071, 2]
+// Dependencies: [32, 5, 19, 1230, 1386, 4852, 4842, 5671, 504, 9170, 2]
 // Exports: default
 
-// Module 17174 (useCampaignDismissibleContent)
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4757 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9071 */;
+// Module 17293 (useCampaignDismissibleContent)
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4852 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -31,7 +31,7 @@ let obj = function _resetCampaignDismissibleContent() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -78,7 +78,7 @@ let obj = function _resetCampaignDismissibleContent() {
           obj = closure_129_0(closure_129_1[7]);
           const result = obj.overrideDCFLastDCDismissed(null);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         c3 = 3;
@@ -115,7 +115,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         let c9;
@@ -159,7 +159,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -174,7 +174,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
                         return obj3;
                       } else if (c0 !== ref.current) {
                         c1 = 3;
-                        const obj4 = { value: { v: "Array" }, done: true };
+                        const obj4 = { value: { v: "dispatch" }, done: true };
                         return obj4;
                       } else if (closure_1_5.some((content) => content.content === closure_0)) {
                         c2 = 1;
@@ -191,7 +191,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } catch (tmp5) {
                     c1 = 3;
                     throw tmp5;
@@ -329,7 +329,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
             closure_136_2(false);
           }
           c12 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp75) {
           closure_10 = tmp75;
           if (0 === c9) {
@@ -375,7 +375,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
       if (obj.isSnowflakeBoundDismissibleContent(content)) {
         const obj2 = { content, label: tmp, status: campaignPromotionDismissalStatus(tmp2, tmp7) };
         tmp7 = undefined;
-        campaignPromotionDismissalStatus = tmp3(9071).campaignPromotionDismissalStatus;
+        campaignPromotionDismissalStatus = tmp3(9170).campaignPromotionDismissalStatus;
         CampaignDevToolsUtils;
         if (closure_1 != null) {
           tmp7 = closure_1.recurringDismissibleContentStates[content];

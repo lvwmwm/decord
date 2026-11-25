@@ -1,9 +1,9 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9312
+// Function ID: 9313
 // Name: ApplePurchasesStore
 // Dependencies: [504, 572, 2]
 
-// Module 9213 (ApplePurchasesStore)
+// Module 9312 (ApplePurchasesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

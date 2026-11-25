@@ -1,14 +1,14 @@
-// Module ID: 17214
-// Function ID: 17215
+// Module ID: 17328
+// Function ID: 17329
 // Name: PhoenixEntrypoint
-// Dependencies: [16177, 17215, 17218, 17219, 2]
+// Dependencies: [16298, 17329, 17332, 17327, 2]
 // Exports: useIsPhoenixEntrypointVisible
 
-// Module 17214 (PhoenixEntrypoint)
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16177 */;
-import PhoenixLaunchState from "PhoenixLaunchState" /* 17215 */;
-import PhoenixRolloutExperimentDefault from "PhoenixRolloutExperiment" /* 17218 */;
-import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17219 */;
+// Module 17328 (PhoenixEntrypoint)
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16298 */;
+import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17327 */;
+import PhoenixLaunchState from "PhoenixLaunchState" /* 17329 */;
+import PhoenixRolloutExperimentDefault from "PhoenixRolloutExperiment" /* 17332 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/phoenix_launch/native/PhoenixEntrypoint.tsx");

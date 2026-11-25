@@ -1,11 +1,11 @@
-// Module ID: 8193
-// Function ID: 8194
+// Module ID: 8292
+// Function ID: 8293
 // Name: AppStartInfo
-// Dependencies: [32, 5, 8194, 5100, 2]
+// Dependencies: [32, 5, 8293, 5195, 2]
 
-// Module 8193 (AppStartInfo)
-import react_nativeDefault from "react-native" /* 5100 */;
-import react_nativeDefault2 from "react-native" /* 8194 */;
+// Module 8292 (AppStartInfo)
+import react_nativeDefault from "react-native" /* 5195 */;
+import react_nativeDefault2 from "react-native" /* 8293 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,13 +1,13 @@
-// Module ID: 18080
-// Function ID: 18081
+// Module ID: 18192
+// Function ID: 18193
 // Name: useVoicePanelDockMicLive
-// Dependencies: [19, 4766, 504, 10358, 10261, 1653, 5127, 2]
+// Dependencies: [19, 4861, 504, 10457, 10360, 1653, 5222, 2]
 // Exports: default
 
-// Module 18080 (useVoicePanelDockMicLive)
-import timing_timing from "timing/timing" /* 5127 */;
+// Module 18192 (useVoicePanelDockMicLive)
+import timing_timing from "timing/timing" /* 5222 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

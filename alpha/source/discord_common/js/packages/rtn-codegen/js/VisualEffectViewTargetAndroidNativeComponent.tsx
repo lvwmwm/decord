@@ -1,9 +1,9 @@
-// Module ID: 18947
-// Function ID: 18948
+// Module ID: 19059
+// Function ID: 19060
 // Name: VisualEffectViewTargetAndroidNativeComponent
 // Dependencies: [65, 2]
 
-// Module 18947 (VisualEffectViewTargetAndroidNativeComponent)
+// Module 19059 (VisualEffectViewTargetAndroidNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

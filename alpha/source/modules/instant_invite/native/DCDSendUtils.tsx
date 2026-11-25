@@ -1,12 +1,12 @@
-// Module ID: 8272
-// Function ID: 8273
+// Module ID: 8371
+// Function ID: 8372
 // Name: DCDSendUtils
-// Dependencies: [5, 17, 8273, 1378, 2]
+// Dependencies: [5, 17, 8372, 1378, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 8272 (DCDSendUtils)
+// Module 8371 (DCDSendUtils)
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 8273 */;
+import react_nativeDefault from "react-native" /* 8372 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _sendSMS() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c6;
@@ -101,7 +101,7 @@ let obj = function _sendSMS() {
             c6 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         if (0 === c6) {
@@ -129,7 +129,7 @@ obj = function _sendMail() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c7;
@@ -208,7 +208,7 @@ obj = function _sendMail() {
             c7 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp16) {
         if (0 === c7) {

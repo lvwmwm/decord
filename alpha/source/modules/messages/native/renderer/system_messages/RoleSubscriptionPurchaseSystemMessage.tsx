@@ -1,23 +1,23 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 14349
+// Function ID: 14350
 // Name: RoleSubscriptionPurchaseSystemMessage
-// Dependencies: [4766, 4788, 1071, 6644, 11853, 14208, 14209, 10464, 1415, 1412, 14197, 1112, 14198, 2]
+// Dependencies: [4861, 4883, 1071, 6739, 11952, 14331, 14332, 10563, 1415, 1412, 14320, 1112, 14321, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 14226 (RoleSubscriptionPurchaseSystemMessage)
+// Module 14349 (RoleSubscriptionPurchaseSystemMessage)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1415 */;
-import useMessageAuthor from "useMessageAuthor" /* 6644 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 10464 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 11853 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14197 */;
-import createCommonMessageDefault from "createCommonMessage" /* 14198 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 14208 */;
-import transformSticker2 from "transformSticker" /* 14209 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
+import useMessageAuthor from "useMessageAuthor" /* 6739 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 10563 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 11952 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14320 */;
+import createCommonMessageDefault from "createCommonMessage" /* 14321 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 14331 */;
+import transformSticker2 from "transformSticker" /* 14332 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
 import size from "module_2" /* 2 */;
 
 const SystemChannelFlags = Constants.SystemChannelFlags;

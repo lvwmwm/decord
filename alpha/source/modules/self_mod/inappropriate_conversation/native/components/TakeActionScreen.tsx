@@ -1,24 +1,24 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17308
+// Function ID: 17309
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 4859, 1386, 11672, 21, 4917, 575, 504, 11704, 11707, 1500, 7717, 7712, 11679, 8050, 5599, 1112, 5598, 5515, 11715, 9650, 6990, 12335, 5596, 5508, 2]
+// Dependencies: [5, 32, 19, 17, 4954, 1386, 11771, 21, 5012, 575, 504, 11803, 11806, 1500, 7816, 7811, 11778, 8149, 5694, 1112, 5693, 5610, 11814, 9749, 7085, 12428, 5691, 5603, 2]
 // Exports: default
 
-// Module 17195 (TakeActionScreen)
+// Module 17308 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 5596 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7712 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7717 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11679 */;
+import LinkingDefault from "Linking" /* 5691 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7811 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7816 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11778 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
 import UserStore from "UserStore" /* 1386 */;
-import Constants from "Constants" /* 11672 */;
+import Constants from "Constants" /* 11771 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const react_mod = react2;
@@ -116,7 +116,7 @@ export default function TakeActionButtons(senderId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ export default function TakeActionButtons(senderId) {
           closure_128_3(tmp3(setReported[16]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         setReported = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp21) {
         setReported = 3;
         throw tmp21;

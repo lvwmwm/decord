@@ -1,15 +1,15 @@
-// Module ID: 12801
-// Function ID: 12802
+// Module ID: 12403
+// Function ID: 12404
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 4917, 575, 1186, 2]
+// Dependencies: [19, 21, 5012, 575, 1186, 2]
 // Exports: default
 
-// Module 12801 (ForumPostNewTag)
+// Module 12403 (ForumPostNewTag)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4917 */;
+import createStyles from "createStyles" /* 5012 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

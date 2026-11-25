@@ -1,18 +1,18 @@
-// Module ID: 8102
-// Function ID: 8103
+// Module ID: 8201
+// Function ID: 8202
 // Name: InteractionStore
-// Dependencies: [32, 502, 4766, 1088, 6275, 6274, 8103, 504, 572, 2]
+// Dependencies: [32, 502, 4861, 1088, 6370, 6369, 8202, 504, 572, 2]
 
-// Module 8102 (InteractionStore)
+// Module 8201 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import InteractionTypes from "InteractionTypes" /* 6274 */;
-import interactions_InteractionTypes from "interactions/InteractionTypes" /* 6275 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8103 */;
+import InteractionTypes from "InteractionTypes" /* 6369 */;
+import interactions_InteractionTypes from "interactions/InteractionTypes" /* 6370 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8202 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_12, closure_8, closure_9;
@@ -140,7 +140,7 @@ obj = {
       if (null != closure_8[nonce]) {
         const tmp4 = require;
         if (closure_8[nonce].state === interactions_InteractionTypes.InteractionState.QUEUED) {
-          closure_8[nonce].state = tmp4(6275).InteractionState.CREATED;
+          closure_8[nonce].state = tmp4(6370).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);
@@ -206,7 +206,7 @@ obj = {
           delete closure_12[nonce];
         }
       } else {
-        obj = { state: tmp7(6275).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
+        obj = { state: tmp7(6370).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
         const merged = Object.assign(tmp21);
         closure_8[nonce] = obj;
       }

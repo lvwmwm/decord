@@ -1,14 +1,14 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17334
+// Function ID: 17335
 // Name: switchToPhoenix
-// Dependencies: [5, 17, 3, 17215, 17217, 5599, 1112, 1378, 5920, 4665, 2]
+// Dependencies: [5, 17, 3, 17329, 17331, 5694, 1112, 1378, 6015, 4728, 2]
 // Exports: default
 
-// Module 17221 (switchToPhoenix)
+// Module 17334 (switchToPhoenix)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import PhoenixLaunchState from "PhoenixLaunchState" /* 17215 */;
-import LaunchClient from "LaunchClient" /* 17217 */;
+import PhoenixLaunchState from "PhoenixLaunchState" /* 17329 */;
+import LaunchClient from "LaunchClient" /* 17331 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _switchToPhoenix() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       let c3;
@@ -94,7 +94,7 @@ let obj = function _switchToPhoenix() {
             open("PHOENIX_SWITCH_FAILED", obj8);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp45) {
         closure_2 = tmp45;

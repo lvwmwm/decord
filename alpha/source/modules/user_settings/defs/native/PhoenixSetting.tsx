@@ -1,18 +1,19 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 17326
+// Function ID: 17327
 // Name: PhoenixSetting
-// Dependencies: [1071, 21, 6033, 9496, 17214, 11815, 1112, 4665, 14128, 17220, 2]
+// Dependencies: [1071, 21, 17327, 6128, 9595, 17328, 11914, 1112, 4728, 14251, 17333, 2]
 
-// Module 17213 (PhoenixSetting)
+// Module 17326 (PhoenixSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4665 from "module_4665" /* 4665 */;
-import Badge_Badge from "Badge/Badge" /* 6033 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9496 */;
-import FireIcon from "FireIcon" /* 14128 */;
-import PhoenixEntrypoint from "PhoenixEntrypoint" /* 17214 */;
-import SettingBuilders from "SettingBuilders" /* 11815 */;
+import _modDef4728 from "module_4728" /* 4728 */;
+import Badge_Badge from "Badge/Badge" /* 6128 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9595 */;
+import FireIcon from "FireIcon" /* 14251 */;
+import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17327 */;
+import PhoenixEntrypoint from "PhoenixEntrypoint" /* 17328 */;
+import SettingBuilders from "SettingBuilders" /* 11914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef4665["3uRAgZ"]);
+    return intl.string(_modDef4728["3uRAgZ"]);
   },
   useSearchTerms() {
     const intl = intl2.intl;
@@ -32,8 +33,13 @@ let obj = {
   parent: null,
   IconComponent: FireIcon.FireIcon,
   useTrailing: function usePhoenixSettingTrailing() {
-    const Badge = Badge_Badge.Badge;
-    return <Badge type="early_access" variant="expressive" icon={NitroWheelIcon.NitroWheelIcon} />;
+    let tmp2 = null;
+    const obj = PhoenixSwitchEntrypointExperimentDefault;
+    if (obj.useConfig({ location: "PhoenixSetting" }, { autoTrackExposure: false }).requiresNitro) {
+      const Badge = Badge_Badge.Badge;
+      tmp2 = <Badge type="early_access" variant="expressive" icon={NitroWheelIcon.NitroWheelIcon} />;
+    }
+    return tmp2;
   },
   usePredicate: function usePhoenixSettingPredicate() {
     const obj = PhoenixEntrypoint;

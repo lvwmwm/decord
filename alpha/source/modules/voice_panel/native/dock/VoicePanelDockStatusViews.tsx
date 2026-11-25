@@ -1,30 +1,30 @@
-// Module ID: 18050
-// Function ID: 18051
+// Module ID: 18162
+// Function ID: 18163
 // Name: VoicePanelDockStatusViews
-// Dependencies: [19, 17, 4918, 6797, 4766, 4788, 4859, 6726, 1386, 18049, 11658, 21, 4917, 575, 1378, 18051, 11634, 504, 18052, 6926, 1186, 7002, 5533, 1112, 7038, 7041, 5508, 6681, 1653, 5127, 18053, 7362, 12400, 5481, 5518, 13235, 13237, 5604, 2]
+// Dependencies: [19, 17, 5013, 6892, 4861, 4883, 4954, 6821, 1386, 18161, 11757, 21, 5012, 575, 1378, 18163, 11733, 504, 18164, 7021, 1186, 7097, 5628, 1112, 7133, 7136, 5603, 6776, 1653, 5222, 18165, 7457, 12564, 5576, 5613, 13358, 13360, 5699, 2]
 // Exports: DockChannelIcon, DockChannelTitle, DockFace, DockUserTitle
 
-// Module 18050 (VoicePanelDockStatusViews)
+// Module 18162 (VoicePanelDockStatusViews)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import timing_timing from "timing/timing" /* 5127 */;
-import spring_spring from "spring/spring" /* 5518 */;
-import useChannelName from "useChannelName" /* 5533 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7002 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11634 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18049 */;
+import timing_timing from "timing/timing" /* 5222 */;
+import spring_spring from "spring/spring" /* 5613 */;
+import useChannelName from "useChannelName" /* 5628 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7097 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18161 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4918 */;
-import SoundboardStore from "SoundboardStore" /* 6797 */;
-import ChannelStore from "ChannelStore" /* 4766 */;
-import GuildStore from "GuildStore" /* 4788 */;
-import RelationshipStore from "RelationshipStore" /* 4859 */;
-import SpeakingStore from "SpeakingStore" /* 6726 */;
+import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import SoundboardStore from "SoundboardStore" /* 6892 */;
+import ChannelStore from "ChannelStore" /* 4861 */;
+import GuildStore from "GuildStore" /* 4883 */;
+import RelationshipStore from "RelationshipStore" /* 4954 */;
+import SpeakingStore from "SpeakingStore" /* 6821 */;
 import UserStore from "UserStore" /* 1386 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11658 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11757 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4917 */;
+import createStyles_mod from "createStyles" /* 5012 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ let closure_22 = react.memo(function DockSpeakingRing(speaking) {
     ICON_VOICE_SPEAKING = sharedValue(575).colors.ICON_VOICE_SPEAKING;
   }
   const tmp3 = closure_19();
-  let obj = speaking(5481);
+  let obj = speaking(5576);
   const token = obj.useToken(ICON_VOICE_SPEAKING);
   let obj2 = speaking(1653);
   sharedValue = obj2.useSharedValue(0);
@@ -145,9 +145,9 @@ let closure_24 = react.memo(function DockSpeakerHalo(isSpeaking) {
     ICON_VOICE_SPEAKING = sharedValue(575).colors.ICON_VOICE_SPEAKING;
   }
   const tmp3 = closure_19();
-  let obj = isSpeaking(5481);
+  let obj = isSpeaking(5576);
   const token = obj.useToken(ICON_VOICE_SPEAKING);
-  let obj2 = isSpeaking(13235);
+  let obj2 = isSpeaking(13358);
   const voicePanelDockSpeakerLevelProps = obj2.useVoicePanelDockSpeakerLevelProps();
   const obj3 = isSpeaking(1653);
   sharedValue = obj3.useSharedValue(0);
@@ -189,7 +189,7 @@ let closure_24 = react.memo(function DockSpeakerHalo(isSpeaking) {
   items3 = [tmp3.halo, animatedStyle];
   View = sharedValue(1653).View;
   obj6 = { style: StyleSheet.absoluteFill, userId, minScale: 0.84, maxScale: 1, children: closure_16(View, obj7) };
-  tmp14 = sharedValue(13237);
+  tmp14 = sharedValue(13360);
   const merged = Object.assign(voicePanelDockSpeakerLevelProps);
   obj7 = { style: items4 };
   items4 = [tmp3.haloDisc, { backgroundColor: token }];
@@ -215,9 +215,9 @@ export function DockChannelIcon(streaming) {
   let channelId;
   let guildId;
   const tmp = closure_19();
-  const tmp4 = guildId(18051);
+  const tmp4 = guildId(18163);
   const tmp4Result = tmp4(channelId(575).Shadow.SHADOW_MEDIUM);
-  const context = react.useContext(guildId(11634));
+  const context = react.useContext(guildId(11733));
   channelId = context.channelId;
   guildId = context.guildId;
   const items = [GuildStore];
@@ -252,9 +252,9 @@ export function DockChannelIcon(streaming) {
     const obj4 = { boxShadow: tmp4Result };
     items4[1] = obj4;
     obj5 = { streaming, children: closure_16(tmp2Result3, obj6) };
-    obj6 = { guild: stateFromStores, size: channelId(6926).GuildIconSizes.SMALL_32, style: tmp.guildIconAsset };
-    tmp2Result = guildId(18052);
-    tmp2Result3 = guildId(6926);
+    obj6 = { guild: stateFromStores, size: channelId(7021).GuildIconSizes.SMALL_32, style: tmp.guildIconAsset };
+    tmp2Result = guildId(18164);
+    tmp2Result3 = guildId(7021);
     tmp13 = closure_16(View, obj3);
   } else {
     tmp13 = null;
@@ -265,7 +265,7 @@ export function DockChannelIcon(streaming) {
       items5[1] = obj8;
       obj9 = { streaming, children: closure_16(Avatar, obj10) };
       obj10 = { user: stateFromStores1, guildId: "Array", size: channelId(1186).AvatarSizes.REFRESH_MEDIUM_32 };
-      tmp2Result4 = guildId(18052);
+      tmp2Result4 = guildId(18164);
       Avatar = tmp5(1186).Avatar;
       tmp13 = closure_16(View, obj7);
     }
@@ -303,15 +303,15 @@ export function DockChannelTitle() {
   const tmp7 = closure_17;
   const tmp8 = View;
   if (stateFromStores) {
-    VoiceNormalIcon = tmp4(7038).VoiceLockIcon;
+    VoiceNormalIcon = tmp4(7133).VoiceLockIcon;
   } else {
-    VoiceNormalIcon = tmp4(7041).VoiceNormalIcon;
+    VoiceNormalIcon = tmp4(7136).VoiceNormalIcon;
   }
   items4 = [, ];
   const obj4 = { size: "sm", color: nativeDefault.colors.ICON_DEFAULT };
   items4[0] = closure_16(VoiceNormalIcon, obj4);
   const obj5 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, style: tmp.title, children: stateFromStores1 };
-  items4[1] = closure_16(channelId(5508).Text, obj5);
+  items4[1] = closure_16(channelId(5603).Text, obj5);
   return tmp7(tmp8, obj3);
 }
 export function DockUserTitle(userId) {
