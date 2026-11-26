@@ -1,16 +1,16 @@
-// Module ID: 17073
-// Function ID: 17074
+// Module ID: 17124
+// Function ID: 17125
 // Name: FriendAnniversaryNotificationSetting
-// Dependencies: [9513, 11914, 1112, 4837, 17074, 3206, 17051, 2]
+// Dependencies: [9555, 11962, 1112, 4868, 17125, 3207, 17102, 2]
 
-// Module 17073 (FriendAnniversaryNotificationSetting)
+// Module 17124 (FriendAnniversaryNotificationSetting)
 import intl2 from "intl" /* 1112 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
-import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 17074 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17102 */;
+import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 17125 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -34,7 +34,7 @@ const createToggle = SettingBuilders.createToggle;
 const obj2 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.KEDd8y);
+    return intl.string(_modDef3207.KEDd8y);
   },
   useDescription: undefined,
   parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY

@@ -1,19 +1,19 @@
-// Module ID: 11198
-// Function ID: 11199
+// Module ID: 11244
+// Function ID: 11245
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 9062, 1071, 21, 5012, 575, 11166, 6291, 11199, 11201, 11209, 6292, 11217, 5603, 1112, 9423, 1378, 11031, 9595, 9373, 2173, 5576, 5009, 11218, 11219, 504, 5567, 11220, 2]
+// Dependencies: [19, 17, 9104, 1071, 21, 5043, 575, 11212, 6322, 11245, 11247, 11255, 6323, 11263, 5634, 1112, 9465, 1379, 11077, 9637, 9415, 2174, 5607, 5040, 11264, 11265, 504, 5598, 11266, 2]
 
-// Module 11198 (CollectiblesShopCardCardDetailsV2)
+// Module 11244 (CollectiblesShopCardCardDetailsV2)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6292 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 9062 */;
+import IAPStore from "IAPStore" /* 9104 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -23,7 +23,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp4;
-const CollectiblesShopCardVariantsDefault = tmp4(11220);
+const CollectiblesShopCardVariantsDefault = tmp4(11266);
 const View = react_native.View;
 ({ CurrencyCodes: metroRequire, VerticalGradient: metroImportDefault } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -68,15 +68,15 @@ const memoResult = react.memo((arg0) => {
   ({ product, hasShopDiscount } = arg0);
   ({ styles, collectibleProductState } = arg0);
   ({ discountSource, isFetchingGoogleSkus, preferVCPrice, isDisabled } = arg0);
-  let obj = hasShopDiscount(11166);
+  let obj = hasShopDiscount(11212);
   const defaultVariantIndex = obj.useDefaultVariantIndex(product);
-  const obj2 = hasShopDiscount(6291);
+  const obj2 = hasShopDiscount(6322);
   const selectedProduct = obj2.getSelectedProduct(product, defaultVariantIndex);
-  const obj3 = hasShopDiscount(11199);
+  const obj3 = hasShopDiscount(11245);
   const formattedPriceForCollectiblesProduct = obj3.getFormattedPriceForCollectiblesProduct(selectedProduct, hasShopDiscount, true);
-  const obj4 = hasShopDiscount(11201);
+  const obj4 = hasShopDiscount(11247);
   const isFiatExclusiveTargetedOfferPromotion = obj4.useIsFiatExclusiveTargetedOfferPromotion(selectedProduct);
-  const obj5 = hasShopDiscount(11209);
+  const obj5 = hasShopDiscount(11255);
   const virtualCurrencyData = obj5.useVirtualCurrencyData(selectedProduct, hasShopDiscount);
   ({ price, canAfford } = virtualCurrencyData);
   const items = [selectedProduct, hasShopDiscount];
@@ -92,31 +92,31 @@ const memoResult = react.memo((arg0) => {
   }, items1);
   if (isFetchingGoogleSkus) {
     if (null == formattedPriceForCollectiblesProduct) {
-      return closure_8(hasShopDiscount(11217).CollectiblesShopPricePlaceholder, {});
+      return closure_8(hasShopDiscount(11263).CollectiblesShopPricePlaceholder, {});
     }
   }
   if ("partiallyOwnedBundle" === collectibleProductState) {
     const obj6 = { style: styles.priceDescription, children: closure_8(Text9, obj7) };
     obj7 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text, children: intl6.string(hasShopDiscount(1112).t.BEjTij) };
-    Text9 = tmp(5603).Text;
+    Text9 = tmp(5634).Text;
     intl6 = tmp(1112).intl;
     return closure_8(View, obj6);
   } else if ("purchased" === collectibleProductState) {
     const obj8 = { style: styles.priceDescription, children: closure_8(Text8, obj9) };
     obj9 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text, children: intl5.string(hasShopDiscount(1112).t["6cfuDj"]) };
-    Text8 = tmp(5603).Text;
+    Text8 = tmp(5634).Text;
     intl5 = tmp(1112).intl;
     return closure_8(View, obj8);
   } else if ("nitroUpsell" === collectibleProductState) {
     const obj10 = { style: styles.priceDescription, children: closure_8(Text7, obj11) };
     obj11 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text, children: intl4.string(hasShopDiscount(1112).t.sEAnVH) };
-    Text7 = tmp(5603).Text;
+    Text7 = tmp(5634).Text;
     intl4 = tmp(1112).intl;
     return closure_8(View, obj10);
   } else if ("nitroClaim" === collectibleProductState) {
     const obj12 = { style: styles.priceDescription, children: closure_8(Text6, obj13) };
     obj13 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text, children: intl3.string(hasShopDiscount(1112).t.rt69oo) };
-    Text6 = tmp(5603).Text;
+    Text6 = tmp(5634).Text;
     intl3 = tmp(1112).intl;
     return closure_8(View, obj12);
   } else {
@@ -124,7 +124,7 @@ const memoResult = react.memo((arg0) => {
     if (isDisabled) {
       const obj14 = { style: styles.priceDescription, children: closure_8(Text5, obj15) };
       obj15 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: styles.text, children: intl2.string(hasShopDiscount(1112).t.wu4gyV) };
-      Text5 = tmp(5603).Text;
+      Text5 = tmp(5634).Text;
       intl2 = tmp(1112).intl;
       tmp11Result = closure_8(View, obj14);
     } else {
@@ -144,23 +144,23 @@ const memoResult = react.memo((arg0) => {
           const obj17 = { opacity: num };
           items2[1] = obj17;
           const obj18 = { size: "xxs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-          items3 = [closure_8(hasShopDiscount(9423).OrbsIcon, obj18), , ];
+          items3 = [closure_8(hasShopDiscount(9465).OrbsIcon, obj18), , ];
           const obj19 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityLabel: intl.formatToPlainString(hasShopDiscount(1112).t.W4DfeF, obj20), style: items4, children: price.amount };
-          const Text = tmp(5603).Text;
+          const Text = tmp(5634).Text;
           intl = tmp(1112).intl;
           items4 = [styles.text, ];
           obj20 = { orbAmount: price.amount };
-          const tmpResult = hasShopDiscount(1378);
+          const tmpResult = hasShopDiscount(1379);
           items4[1] = tmpResult.isAndroid() && styles.androidTextPadding;
           tmpResult.isAndroid() && styles.androidTextPadding;
           items3[1] = closure_8(Text, obj19);
-          let tmp14Result = memo1 >= tmp(6292).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+          let tmp14Result = memo1 >= tmp(6323).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
           if (tmp14Result) {
             const items5 = [, , ];
             ({ discountPercentage: arr6[0], text: arr6[1] } = styles);
-            const Text2 = tmp(5603).Text;
+            const Text2 = tmp(5634).Text;
             let androidTextPadding;
-            const tmpResult4 = hasShopDiscount(1378);
+            const tmpResult4 = hasShopDiscount(1379);
             if (tmpResult4.isAndroid()) {
               androidTextPadding = styles.androidTextPadding;
             }
@@ -176,30 +176,30 @@ const memoResult = react.memo((arg0) => {
       const obj22 = { style: styles.priceDescription, children: items6 };
       if (tmp19) {
         let tmp21;
-        if (discountSource === hasShopDiscount(6292).ShopDiscountSource.THIRDPARTY) {
+        if (discountSource === hasShopDiscount(6323).ShopDiscountSource.THIRDPARTY) {
           const obj23 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-          tmp21 = closure_8(tmp(11031).TagIcon, obj23);
+          tmp21 = closure_8(tmp(11077).TagIcon, obj23);
         } else {
           const obj24 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-          tmp21 = closure_8(tmp(9595).NitroWheelIcon, obj24);
+          tmp21 = closure_8(tmp(9637).NitroWheelIcon, obj24);
         }
         tmp19 = tmp21;
       }
       items6 = [tmp19, , ];
       const items7 = [styles.text, ];
-      const Text3 = tmp(5603).Text;
-      const tmpResult5 = hasShopDiscount(1378);
+      const Text3 = tmp(5634).Text;
+      const tmpResult5 = hasShopDiscount(1379);
       const obj25 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items7, children: formattedPriceForCollectiblesProduct };
       items7[1] = tmpResult5.isAndroid() && styles.androidTextPadding;
       tmpResult5.isAndroid() && styles.androidTextPadding;
       items6[1] = closure_8(Text3, obj25);
-      let tmp23Result = memo >= tmp(6292).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+      let tmp23Result = memo >= tmp(6323).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
       if (tmp23Result) {
         const items8 = [, , ];
         ({ discountPercentage: arr9[0], text: arr9[1] } = styles);
-        const Text4 = tmp(5603).Text;
+        const Text4 = tmp(5634).Text;
         let androidTextPadding1;
-        const tmpResult6 = hasShopDiscount(1378);
+        const tmpResult6 = hasShopDiscount(1379);
         if (tmpResult6.isAndroid()) {
           androidTextPadding1 = styles.androidTextPadding;
         }
@@ -229,25 +229,25 @@ const memoResult1 = react.memo(function CardDetailsV2(arg0) {
   let isInImprovedMobileShopLoading;
   ({ collectibleProductState, preferVCPrice, isDisabled } = arg0);
   const tmp = closure_10();
-  const obj = isInImprovedMobileShopLoading(9373);
+  const obj = isInImprovedMobileShopLoading(9415);
   const currentUser = obj.useCurrentUser();
   const obj2 = PremiumUtilsDefault;
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(currentUser);
-  const obj3 = isInImprovedMobileShopLoading(6292);
+  const obj3 = isInImprovedMobileShopLoading(6323);
   const shopDiscountSource = obj3.getShopDiscountSource(currentUser);
-  const obj4 = isInImprovedMobileShopLoading(5576);
+  const obj4 = isInImprovedMobileShopLoading(5607);
   const token = obj4.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  const hexToRgbaString = isInImprovedMobileShopLoading(5009).hexToRgbaString;
-  isInImprovedMobileShopLoading(5009);
-  const obj5 = isInImprovedMobileShopLoading(5009);
+  const hexToRgbaString = isInImprovedMobileShopLoading(5040).hexToRgbaString;
+  isInImprovedMobileShopLoading(5040);
+  const obj5 = isInImprovedMobileShopLoading(5040);
   const hexToRgbaStringResult = hexToRgbaString(obj5.hexWithOpacity(token, 0.9));
-  const hexToRgbaString2 = isInImprovedMobileShopLoading(5009).hexToRgbaString;
-  isInImprovedMobileShopLoading(5009);
-  const obj6 = isInImprovedMobileShopLoading(5009);
+  const hexToRgbaString2 = isInImprovedMobileShopLoading(5040).hexToRgbaString;
+  isInImprovedMobileShopLoading(5040);
+  const obj6 = isInImprovedMobileShopLoading(5040);
   const hexToRgbaString2Result = hexToRgbaString2(obj6.hexWithOpacity(token, 0));
-  const obj7 = isInImprovedMobileShopLoading(11218);
+  const obj7 = isInImprovedMobileShopLoading(11264);
   const cardProductName = obj7.getCardProductName(product);
-  const obj8 = isInImprovedMobileShopLoading(11219);
+  const obj8 = isInImprovedMobileShopLoading(11265);
   isInImprovedMobileShopLoading = obj8.useIsInImprovedMobileShopLoading();
   const items = [IAPStore];
   const items1 = [isInImprovedMobileShopLoading];
@@ -261,7 +261,7 @@ const memoResult1 = react.memo(function CardDetailsV2(arg0) {
   items3 = [, ];
   const obj11 = { style: tmp.assetName, variant: "heading-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: cardProductName };
   const tmp16 = LinearGradientDefault;
-  items3[0] = closure_8(isInImprovedMobileShopLoading(5603).Text, obj11);
+  items3[0] = closure_8(isInImprovedMobileShopLoading(5634).Text, obj11);
   let tmp15Result = !hidePrice;
   if (tmp15Result) {
     const obj12 = { style: tmp.priceVariantsContainer, children: items4 };

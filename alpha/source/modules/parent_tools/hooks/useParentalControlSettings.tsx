@@ -1,21 +1,21 @@
-// Module ID: 16272
-// Function ID: 16273
+// Module ID: 16323
+// Function ID: 16324
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 8173, 7806, 8175, 16273, 16276, 1195, 8167, 7320, 8169, 504, 8172, 7811, 2]
+// Dependencies: [5, 19, 8215, 7840, 8217, 16324, 16327, 1195, 8209, 7351, 8211, 504, 8214, 7845, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
-// Module 16272 (useParentalControlSettings)
+// Module 16323 (useParentalControlSettings)
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7320 */;
-import Constants from "Constants" /* 7806 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8167 */;
-import useUserLinks from "useUserLinks" /* 8169 */;
-import useSelectedTeen from "useSelectedTeen" /* 8175 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16273 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16276 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7351 */;
+import Constants from "Constants" /* 7840 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8209 */;
+import useUserLinks from "useUserLinks" /* 8211 */;
+import useSelectedTeen from "useSelectedTeen" /* 8217 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16324 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16327 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8173 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8215 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -124,9 +124,9 @@ export function useDefaultGuildsRestricted() {
 }
 export function useAllowFriendsFromMutualGuildsOnlyForTeen() {
   let controlledSetting;
-  let obj = controlledSetting(8175);
+  let obj = controlledSetting(8217);
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(16273).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(16324).ParentalControlledFriendSourceFlags;
   let id;
   const useControlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting;
   if (selectedTeen != null) {
@@ -168,7 +168,7 @@ export function useParentalControlledConsent(PERSONALIZATION) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;
@@ -222,7 +222,7 @@ export function useParentalControlledConsent(PERSONALIZATION) {
           c4 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp15) {
         let closure_3 = tmp15;
         if (0 === c4) {

@@ -1,14 +1,14 @@
-// Module ID: 14143
-// Function ID: 14144
+// Module ID: 14195
+// Function ID: 14196
 // Name: AnnouncementMessageUtils
-// Dependencies: [4955, 2117, 6371, 6372, 1089, 12147, 6362, 12185, 1112, 1447, 1379, 2]
+// Dependencies: [4986, 2118, 6402, 6403, 1089, 12197, 6393, 12235, 1112, 1448, 1380, 2]
 // Exports: getAnnouncementMediaURL, getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 14143 (AnnouncementMessageUtils)
-import URLUtilsDefault from "URLUtils" /* 1379 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
-import MessageRecord from "MessageRecord" /* 4955 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 12185 */;
+// Module 14195 (AnnouncementMessageUtils)
+import URLUtilsDefault from "URLUtils" /* 1380 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1448 */;
+import MessageRecord from "MessageRecord" /* 4986 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 12235 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -29,6 +29,7 @@ export function toAnnouncementMessages(messages) {
     let found5;
     let found6;
     let joined;
+    let mapped1;
     let obj11;
     let obj13;
     let obj3;
@@ -183,11 +184,19 @@ export function toAnnouncementMessages(messages) {
             tmp35 = tmp37;
           }
         }
-        return { id: tmp2Result.id, media: result, title, body, content: joined, timestamp: reactions.timestamp, reactionCount: num5, embedSource: tmp35, poll: tmp2Result.poll };
+        const obj7 = { id: tmp2Result.id, media: result, title, body, content: joined, timestamp: reactions.timestamp, reactionCount: num5, embedSource: tmp35, attachmentFilenames: mapped1, poll: tmp2Result.poll };
+        mapped1 = undefined;
+        if (null == result) {
+          if (0 === joined.trim().length) {
+            const attachments = tmp2Result.attachments;
+            mapped1 = attachments.map((filename) => filename.filename);
+          }
+        }
+        return obj7;
       }
     }
-    const attachments = tmp2Result.attachments;
-    const found2 = attachments.find((content_type) => {
+    const attachments1 = tmp2Result.attachments;
+    const found2 = attachments1.find((content_type) => {
       const obj = found4(found6[3]);
       return obj.isImageContentType(content_type.content_type);
     });
@@ -195,8 +204,8 @@ export function toAnnouncementMessages(messages) {
       const tmp3Result8 = found4(found6[2]);
       result = tmp3Result8.messageAttachmentToMediaItem(found2, tmp2Result);
     } else {
-      const attachments1 = tmp2Result.attachments;
-      const found3 = attachments1.find((content_type) => {
+      const attachments2 = tmp2Result.attachments;
+      const found3 = attachments2.find((content_type) => {
         const obj = found4(found6[3]);
         return obj.isVideoContentType(content_type.content_type);
       });

@@ -1,22 +1,22 @@
-// Module ID: 10512
-// Function ID: 10513
+// Module ID: 10557
+// Function ID: 10558
 // Name: StageChannelAnimationUtils
-// Dependencies: [1653, 10224, 10222, 1628, 5222, 2]
+// Dependencies: [1654, 10266, 10264, 1629, 5253, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 10512 (StageChannelAnimationUtils)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 10222 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10224 */;
+// Module 10557 (StageChannelAnimationUtils)
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 10264 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10266 */;
 import size from "module_2" /* 2 */;
 
 let sum, tmp3, tmp4;
 
 let Easing;
 let obj = { duration: 250, easing: Easing.bezier(0.66, 0, 0.2, 1) };
-Easing = _mod1653.Easing;
+Easing = _mod1654.Easing;
 let closure_4 = { code: "(function StageChannelAnimationUtilsTsx1(){let[isInvited,actionBarHeight,ACTION_BAR_SAFE_AREA_PADDING,safeAreaTop,controlPadding]=this.__closure;return isInvited?actionBarHeight+ACTION_BAR_SAFE_AREA_PADDING+safeAreaTop:controlPadding;})" };
 let closure_5 = { code: "(function StageChannelAnimationUtilsTsx2(){let[withTiming,paddingTop,TIMING_CONFIG]=this.__closure;return{paddingTop:withTiming(paddingTop.get(),TIMING_CONFIG)};})" };
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelAnimationUtils.tsx");
@@ -44,7 +44,7 @@ export function useStageActionBarAnimation(channelId, arg1) {
   let c3;
   let c4;
   [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10] = items;
-  const obj2 = _mod1653;
+  const obj2 = _mod1654;
   class StageChannelAnimationUtilsTsx1 {
     constructor() {
       tmp = closure_0;
@@ -65,8 +65,8 @@ export function useStageActionBarAnimation(channelId, arg1) {
   StageChannelAnimationUtilsTsx1.__initData = tmp5;
   const derivedValue = obj2.useDerivedValue(StageChannelAnimationUtilsTsx1);
   const items2 = [closure_5, , , ];
-  const useAnimatedStyle = tmp3(1653).useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = tmp3(1654).useAnimatedStyle;
+  _mod1654;
   items2[1] = timing_timing.withTiming;
   items2[2] = derivedValue;
   items2[3] = obj;

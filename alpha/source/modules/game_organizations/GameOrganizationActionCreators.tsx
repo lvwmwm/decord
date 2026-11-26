@@ -1,15 +1,15 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15372
+// Function ID: 15373
 // Name: GameOrganizationActionCreators
-// Dependencies: [5, 2142, 1071, 572, 1284, 11870, 5761, 2]
+// Dependencies: [5, 2143, 1071, 572, 1285, 11918, 5792, 2]
 // Exports: fetchGameOrganization, fetchLinkableGameOrganizations
 
-// Module 15322 (GameOrganizationActionCreators)
+// Module 15372 (GameOrganizationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2142 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
 import size from "module_2" /* 2 */;
 
 let application, closure_3, closure_4, displayNoun, gameOrganization;
@@ -29,7 +29,7 @@ let obj = function _fetchGameOrganization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c5;
@@ -109,7 +109,7 @@ let obj = function _fetchGameOrganization() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp29) {
           closure_4 = tmp29;
           if (0 === c5) {
@@ -137,7 +137,7 @@ obj = function _fetchLinkableGameOrganizations() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;

@@ -1,11 +1,11 @@
-// Module ID: 6831
-// Function ID: 6832
+// Module ID: 6862
+// Function ID: 6863
 // Name: SecondaryIndexMapUtils
-// Dependencies: [1343, 2]
+// Dependencies: [1344, 2]
 // Exports: isVersionEqual
 
-// Module 6831 (SecondaryIndexMapUtils)
-import _modDef1343 from "module_1343" /* 1343 */;
+// Module 6862 (SecondaryIndexMapUtils)
+import _modDef1344 from "module_1344" /* 1344 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/SecondaryIndexMapUtils.tsx");
@@ -17,6 +17,6 @@ export function isVersionEqual(arg0, arg1) {
   let tmp4;
   [tmp, tmp2] = arg0;
   [tmp3, tmp4] = arg1;
-  const tmp5 = tmp2 === tmp4 && _modDef1343(tmp, tmp3);
+  const tmp5 = tmp2 === tmp4 && _modDef1344(tmp, tmp3);
   return tmp5;
 }

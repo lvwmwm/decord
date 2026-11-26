@@ -1,15 +1,15 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18384
+// Function ID: 18385
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 5012, 575, 1653, 2]
+// Dependencies: [19, 17, 5043, 575, 1654, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 18325 (useMainTabsChannelScreenStyles)
+// Module 18384 (useMainTabsChannelScreenStyles)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
+import _mod1654 from "module_1654" /* 1654 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -35,7 +35,7 @@ export function useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth,
   const tmp = closure_3();
   let closure_0 = tmp;
   const elevation = tmp.elevation;
-  let obj = _mod1653;
+  let obj = _mod1654;
   let items = [closure_4, parentFreezeValue, isDragging, translateX, maxWidth, elevation, arg3];
   let c0;
   let c1;

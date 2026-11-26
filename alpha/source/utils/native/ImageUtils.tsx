@@ -1,21 +1,21 @@
-// Module ID: 1493
-// Function ID: 1494
+// Module ID: 1494
+// Function ID: 1495
 // Name: utils/ImageUtils
-// Dependencies: [32, 17, 1071, 1448, 1494, 1488, 1449, 2022, 12, 1415, 1412, 2023, 2]
+// Dependencies: [32, 17, 1071, 1449, 1495, 1489, 1450, 2023, 12, 1416, 1413, 2024, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1493 (utils/ImageUtils)
+// Module 1494 (utils/ImageUtils)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
-import AvatarUtils from "AvatarUtils" /* 1412 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1415 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1448 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1449 */;
-import _modDef1488 from "module_1488" /* 1488 */;
-import useWindowDimensions from "useWindowDimensions" /* 1494 */;
-import react_nativeDefault from "react-native" /* 2022 */;
-import react_nativeDefault2 from "react-native" /* 2023 */;
+import AvatarUtils from "AvatarUtils" /* 1413 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1416 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1449 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1450 */;
+import _modDef1489 from "module_1489" /* 1489 */;
+import useWindowDimensions from "useWindowDimensions" /* 1495 */;
+import react_nativeDefault from "react-native" /* 2023 */;
+import react_nativeDefault2 from "react-native" /* 2024 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ function getSrcWithWidthAndHeight(animated) {
   let tmp5 = dependencyMap;
   [tmp2, tmp3] = _slicedToArray(src.split("?"), 2);
   const tmp = _slicedToArray(src.split("?"), 2);
-  let obj = _modDef1488;
+  let obj = _modDef1489;
   const parsed = obj.parse(tmp3);
   delete tmp6[""];
   const items = [tmp2, parsed];
@@ -94,7 +94,7 @@ function getSrcWithWidthAndHeight(animated) {
   let text = tmp8;
   const tmp4Result = _modDef12;
   if (!tmp4Result.isEmpty(tmp9)) {
-    _modDef1488;
+    _modDef1489;
     text = `${tmp8}?${obj5.stringify(tmp9)}`;
   }
   return text;

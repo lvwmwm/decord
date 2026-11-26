@@ -1,12 +1,12 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13498
+// Function ID: 13499
 // Name: useShowGuildPowerupRollbackSheet
-// Dependencies: [32, 19, 4858, 13447, 9519, 13449, 5226, 2]
+// Dependencies: [32, 19, 4889, 13499, 9561, 13501, 5257, 2]
 // Exports: default
 
-// Module 13446 (useShowGuildPowerupRollbackSheet)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
-import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 13449 */;
+// Module 13498 (useShowGuildPowerupRollbackSheet)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
+import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 13501 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -33,8 +33,8 @@ export default function useShowGuildPowerupRollbackSheet(arg0, arg1) {
   dependencyMap = undefined;
   _slicedToArray = undefined;
   let tmp = dependencyMap;
-  ({ shouldShow, modalConfig } = first(13447)(arg0, arg1));
-  const tmp2 = first(13447)(arg0, arg1);
+  ({ shouldShow, modalConfig } = first(13499)(arg0, arg1));
+  const tmp2 = first(13499)(arg0, arg1);
   if (shouldShow) {
     shouldShow = null != modalConfig;
   }
@@ -45,7 +45,7 @@ export default function useShowGuildPowerupRollbackSheet(arg0, arg1) {
   if (shouldShow) {
     items.push(modalConfig.dismissibleContent);
   }
-  let obj = modalConfig(9519);
+  let obj = modalConfig(9561);
   [first, tmp7] = obj.useSelectedDismissibleContent(items);
   dependencyMap = tmp7;
   _slicedToArray = react.useRef(false);

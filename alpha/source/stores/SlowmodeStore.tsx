@@ -1,14 +1,14 @@
-// Module ID: 8308
-// Function ID: 8309
+// Module ID: 8350
+// Function ID: 8351
 // Name: SlowmodeStore
-// Dependencies: [4861, 4944, 8309, 4856, 572, 1088, 504, 2]
+// Dependencies: [4892, 4975, 8351, 4887, 572, 1088, 504, 2]
 
-// Module 8308 (SlowmodeStore)
+// Module 8350 (SlowmodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ function setCooldown(channel, SendMessage, cooldownMs) {
       const self2 = this;
       const obj2 = { rateLimitPerUser: channel.rateLimitPerUser, cooldownMs, cooldownEndTimestamp: sum, timer: timeout };
       const tmp8 = tmp[SendMessage];
-      timeout = new tmp3(4856).Timeout();
+      timeout = new tmp3(4887).Timeout();
       tmp8[id] = obj2;
       const timer2 = tmp[SendMessage][channel.id].timer;
       timer2.start(1000, () => {

@@ -1,19 +1,19 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 12457
+// Function ID: 12458
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 5012, 575, 1378, 8985, 1112, 7106, 5603, 11662, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1379, 9027, 1112, 7137, 5634, 11710, 2]
 // Exports: default
 
-// Module 12408 (ForumPostMessageCount)
+// Module 12457 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import ForumHooks from "ForumHooks" /* 8985 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11662 */;
+import ForumHooks from "ForumHooks" /* 9027 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11710 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -70,7 +70,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   intl = tmp2(1112).intl;
   const obj3 = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: str2 };
   str2 = "icon-muted";
-  const ChatIcon = tmp2(7106).ChatIcon;
+  const ChatIcon = tmp2(7137).ChatIcon;
   const tmp6 = View;
   if (hasUnreads) {
     str2 = "interactive-text-default";
@@ -78,7 +78,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   items1 = [React3(ChatIcon, obj3), , ];
   if (isMaxMessageCount) {
     const obj4 = { variant: "body-sm/semibold", color: str, children: messageCountText };
-    tmp7Result = tmp7(tmp2(5603).Text, obj4);
+    tmp7Result = tmp7(tmp2(5634).Text, obj4);
   } else {
     const obj5 = { count: messageCount, textVariant: "body-sm/semibold", textColor: str, animate: false };
     tmp7Result = tmp7(AnimatedCounterDefault, obj5);
@@ -87,7 +87,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   let tmp5Result = null != unreadCount;
   if (tmp5Result) {
     const obj6 = { variant: "body-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount, children: items2 };
-    const Text = tmp2(5603).Text;
+    const Text = tmp2(5634).Text;
     const intl2 = tmp2(1112).intl;
     const obj7 = { count: unreadCount };
     items2 = ["(", intl2.format(intl3.t.z3PEth, obj7), ")"];

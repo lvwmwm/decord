@@ -1,24 +1,24 @@
-// Module ID: 16171
-// Function ID: 16172
+// Module ID: 16222
+// Function ID: 16223
 // Name: AgeNoticePromoSheet
-// Dependencies: [19, 6805, 1071, 4858, 21, 5012, 575, 6794, 16172, 5226, 16170, 7836, 6797, 2187, 8067, 1112, 3530, 10702, 5699, 16173, 6832, 5610, 2]
+// Dependencies: [19, 6836, 1071, 4889, 21, 5043, 575, 6825, 16223, 5257, 16221, 7870, 6828, 2188, 8109, 1112, 3531, 10747, 5730, 16224, 6863, 5641, 2]
 // Exports: default
 
-// Module 16171 (AgeNoticePromoSheet)
+// Module 16222 (AgeNoticePromoSheet)
 import nativeDefault from "native" /* 575 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import _modDef3530 from "module_3530" /* 3530 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6797 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6805 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7836 */;
-import openUserSettings from "openUserSettings" /* 8067 */;
-import openAgeNoticePromoSheet from "openAgeNoticePromoSheet" /* 16170 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import _modDef3531 from "module_3531" /* 3531 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6828 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6836 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7870 */;
+import openUserSettings from "openUserSettings" /* 8109 */;
+import openAgeNoticePromoSheet from "openAgeNoticePromoSheet" /* 16221 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -50,9 +50,9 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
   let dismissOnce;
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp = closure_10();
-  let obj = dismissOnce(6794);
+  let obj = dismissOnce(6825);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  let obj2 = dismissOnce(16172);
+  let obj2 = dismissOnce(16223);
   dismissOnce = obj2.useDismissOnce(markAsDismissed);
   const items = [dismissOnce];
   const items1 = [dismissOnce];
@@ -99,7 +99,7 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
   }, items4);
   const intl = dismissOnce(1112).intl;
   const string = intl.string;
-  const tmp13 = _modDef3530;
+  const tmp13 = _modDef3531;
   if (isVerifiedTeen) {
     obj3.text = string(tmp13["+7NlgO"]);
     obj3.onPress = callback3;
@@ -111,14 +111,14 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
     tmp14 = tmp12;
     tmp15 = obj3;
   }
-  const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3530).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
-  const PromoSheet = tmp2(10702).PromoSheet;
-  obj5 = { source: tmp14(16173), style: tmp.illustration, resizeMode: "contain" };
-  tmp14Result = tmp14(5699);
+  const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3531).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
+  const PromoSheet = tmp2(10747).PromoSheet;
+  obj5 = { source: tmp14(16224), style: tmp.illustration, resizeMode: "contain" };
+  tmp14Result = tmp14(5730);
   intl2 = tmp2(1112).intl;
   const intl3 = tmp2(1112).intl;
   const format = intl3.format;
-  const tmp14Result2 = tmp14(3530);
+  const tmp14Result2 = tmp14(3531);
   if (isVerifiedTeen) {
     const obj6 = { handleOnConfirmAgeHook: callback2 };
     formatResult = format(tmp14Result2["Ga2z/E"], obj6);
@@ -127,12 +127,12 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
     formatResult = format(tmp14Result2.xuvWqy, obj7);
   }
   obj8 = { size: "lg", style: tmp.actions, children: items5 };
-  ButtonGroup = tmp2(6832).ButtonGroup;
+  ButtonGroup = tmp2(6863).ButtonGroup;
   items5 = [, ];
   const obj9 = { size: "lg", text: tmp15.text, onPress: tmp15.onPress };
-  items5[0] = closure_8(dismissOnce(5610).Button, obj9);
+  items5[0] = closure_8(dismissOnce(5641).Button, obj9);
   const obj10 = { size: "lg", variant: "secondary", text: intl4.string(dismissOnce(1112).t["NX+WJN"]), onPress: callback1 };
-  const Button = tmp2(5610).Button;
+  const Button = tmp2(5641).Button;
   intl4 = tmp2(1112).intl;
   items5[1] = closure_8(Button, obj10);
   return closure_8(PromoSheet, obj4);

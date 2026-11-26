@@ -1,13 +1,13 @@
-// Module ID: 9078
-// Function ID: 9079
+// Module ID: 9120
+// Function ID: 9121
 // Name: CheckoutContextRecord
-// Dependencies: [32, 1406, 6296, 6294, 2]
+// Dependencies: [32, 1407, 6327, 6325, 2]
 
-// Module 9078 (CheckoutContextRecord)
-import PriceUtils from "PriceUtils" /* 6294 */;
-import _modDef6296 from "module_6296" /* 6296 */;
+// Module 9120 (CheckoutContextRecord)
+import PriceUtils from "PriceUtils" /* 6325 */;
+import _modDef6327 from "module_6327" /* 6327 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Record from "Record" /* 1406 */;
+import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 
 let checkout_context, map, set;
@@ -125,7 +125,7 @@ class AvailablePlanRecord extends Record {
     const total = this.total;
     const formatPrice = PriceUtils.formatPrice;
     PriceUtils;
-    const obj = new _modDef6296(total.amount);
+    const obj = new _modDef6327(total.amount);
     const dividedByResult = obj.dividedBy(10 ** total.exponent);
     return formatPrice(dividedByResult.toNumber(), total.currency, { convertToMajorUnits: false });
   }
@@ -133,7 +133,7 @@ class AvailablePlanRecord extends Record {
     const price = this.price;
     const formatPrice = PriceUtils.formatPrice;
     PriceUtils;
-    const obj = new _modDef6296(price.amount);
+    const obj = new _modDef6327(price.amount);
     const dividedByResult = obj.dividedBy(10 ** price.exponent);
     return formatPrice(dividedByResult.toNumber(), price.currency, { convertToMajorUnits: false });
   }
@@ -145,7 +145,7 @@ class AvailablePlanRecord extends Record {
       const self = this;
       const self2 = this;
       PriceUtils;
-      const obj = new _modDef6296(discounted_price.amount);
+      const obj = new _modDef6327(discounted_price.amount);
       const dividedByResult = obj.dividedBy(10 ** discounted_price.exponent);
       formatPriceResult = formatPrice(dividedByResult.toNumber(), discounted_price.currency, { convertToMajorUnits: false });
     }
@@ -166,7 +166,7 @@ class AvailablePlanRecord extends Record {
       const reduced = addOnPlans.reduce((acc, price) => acc + price.price.amount * price.quantity, 0);
       const self2 = this;
       const self3 = this;
-      const obj2 = new _modDef6296(reduced);
+      const obj2 = new _modDef6327(reduced);
       dividedByResult = obj2.dividedBy(10 ** exponent);
       return obj;
     }

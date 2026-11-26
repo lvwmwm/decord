@@ -1,19 +1,19 @@
-// Module ID: 9984
-// Function ID: 9985
+// Module ID: 10026
+// Function ID: 10027
 // Name: usePipVideoOrStream
-// Dependencies: [4860, 6902, 9985, 6782, 502, 4861, 2131, 5820, 5662, 504, 6785, 5188, 9972, 2]
+// Dependencies: [4891, 6933, 10027, 6813, 502, 4892, 2132, 5851, 5693, 504, 6816, 5219, 10014, 2]
 // Exports: default, useHasPipParticipant
 
-// Module 9984 (usePipVideoOrStream)
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 9985 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
+// Module 10026 (usePipVideoOrStream)
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 10027 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
-import CallConstants from "CallConstants" /* 5662 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import MediaEngineStore from "MediaEngineStore" /* 2132 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
+import CallConstants from "CallConstants" /* 5693 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

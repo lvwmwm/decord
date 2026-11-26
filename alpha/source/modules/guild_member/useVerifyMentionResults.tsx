@@ -1,11 +1,11 @@
-// Module ID: 11025
-// Function ID: 11026
+// Module ID: 11071
+// Function ID: 11072
 // Name: useVerifyMentionResults
-// Dependencies: [19, 11026, 2]
+// Dependencies: [19, 11072, 2]
 // Exports: default
 
-// Module 11025 (useVerifyMentionResults)
-import useGuildMemberVerificationDefault from "useGuildMemberVerification" /* 11026 */;
+// Module 11071 (useVerifyMentionResults)
+import useGuildMemberVerificationDefault from "useGuildMemberVerification" /* 11072 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

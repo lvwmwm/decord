@@ -1,17 +1,17 @@
-// Module ID: 7752
-// Function ID: 7753
+// Module ID: 7786
+// Function ID: 7787
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 7751, 1071, 21, 5012, 1112, 7136, 7722, 1500, 2187, 7753, 7725, 2]
+// Dependencies: [19, 7785, 1071, 21, 5043, 1112, 7167, 7756, 1501, 2188, 7787, 7759, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 7752 (PlayStationLinkLanding)
+// Module 7786 (PlayStationLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7751 */;
-import _modDef7753 from "module_7753" /* 7753 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7785 */;
+import _modDef7787 from "module_7787" /* 7787 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -26,7 +26,7 @@ export function PlayStationLinkLanding(platformType) {
   navigation = undefined;
   platformType = platformType.platformType;
   const tmp = closure_7();
-  let obj = navigation(1500);
+  let obj = navigation(1501);
   navigation = obj.useNavigation();
   let obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(HelpdeskArticles.PS_CONNECTION);
@@ -50,10 +50,10 @@ export function PlayStationLinkLanding(platformType) {
     navigation.push(constants.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef7753 };
+    const obj = { uri: _modDef7787 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(7725).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(7759).TwoWayLinkLanding;
   let intl2 = navigation(1112).intl;
   let intl3 = navigation(1112).intl;
   return <TwoWayLinkLanding platformType={platformType} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1112).t.xAWHOy)} headerReconnect={intl3.string(navigation(1112).t["ZJ/vBh"])} body={formatResult} onNext={callback} valueProps={memo} />;

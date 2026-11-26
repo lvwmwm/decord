@@ -1,13 +1,13 @@
-// Module ID: 16129
-// Function ID: 16130
+// Module ID: 16056
+// Function ID: 16057
 // Name: CollectiblesRecommendationActionCreators
-// Dependencies: [5, 1071, 572, 1284, 5761, 6334, 2]
+// Dependencies: [5, 1071, 572, 1285, 5792, 6365, 2]
 // Exports: maybeFetchCollectiblesRecommendations
 
-// Module 16129 (CollectiblesRecommendationActionCreators)
+// Module 16056 (CollectiblesRecommendationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _maybeFetchCollectiblesRecommendations() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -90,7 +90,7 @@ let obj = function _maybeFetchCollectiblesRecommendations() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp28) {
         closure_2 = tmp28;

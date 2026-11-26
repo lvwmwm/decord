@@ -1,17 +1,17 @@
-// Module ID: 18231
-// Function ID: 18232
+// Module ID: 18290
+// Function ID: 18291
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 1653, 5012, 575, 17714, 1706, 5222, 5613, 1186, 18232, 5610, 1112, 2]
+// Dependencies: [19, 17, 21, 1654, 5043, 575, 17771, 1707, 5253, 5644, 1186, 18291, 5641, 1112, 2]
 // Exports: ContactSuggestionActions
 
-// Module 18231 (ContactSuggestionActions)
+// Module 18290 (ContactSuggestionActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17714 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17771 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let _undefined2, _undefined4, _undefined5, _undefined6, _undefined7, _undefined8, _undefined9, closure_0, closure_1, num, num2, num3, num4, num5, tmp13, tmp7, tmp8;
@@ -25,14 +25,14 @@ let metroRequire;
 let obj6;
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let obj = { duration: 200, easing: Easing.in(_mod1653.Easing.quad) };
-Easing = _mod1653.Easing;
-let obj2 = { duration: 250, easing: Easing2.in(_mod1653.Easing.quad) };
-Easing2 = _mod1653.Easing;
-let obj3 = { duration: 250, easing: Easing3.in(_mod1653.Easing.quad) };
-Easing3 = _mod1653.Easing;
-let obj4 = { duration: 250, easing: Easing4.out(_mod1653.Easing.quad) };
-Easing4 = _mod1653.Easing;
+let obj = { duration: 200, easing: Easing.in(_mod1654.Easing.quad) };
+Easing = _mod1654.Easing;
+let obj2 = { duration: 250, easing: Easing2.in(_mod1654.Easing.quad) };
+Easing2 = _mod1654.Easing;
+let obj3 = { duration: 250, easing: Easing3.in(_mod1654.Easing.quad) };
+Easing3 = _mod1654.Easing;
+let obj4 = { duration: 250, easing: Easing4.out(_mod1654.Easing.quad) };
+Easing4 = _mod1654.Easing;
 let closure_11 = { mass: 1, stiffness: 172, damping: 17.3 };
 let obj5 = { icon: obj6 };
 obj6 = { position: "absolute", top: 4, zIndex: 2, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, opacity: 0 };

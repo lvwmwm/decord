@@ -1,18 +1,18 @@
-// Module ID: 15934
-// Function ID: 15935
+// Module ID: 15985
+// Function ID: 15986
 // Name: SoundboardManager
-// Dependencies: [5, 2131, 4915, 6892, 3, 15935, 10361, 15936, 15937, 10256, 2]
+// Dependencies: [5, 2132, 4946, 6923, 3, 15986, 10406, 15987, 15988, 10298, 2]
 
-// Module 15934 (SoundboardManager)
+// Module 15985 (SoundboardManager)
 import LoggerDefault from "Logger" /* 3 */;
-import SoundUtils from "SoundUtils" /* 10256 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 10361 */;
-import getVolumeForSoundDefault from "getVolumeForSound" /* 15936 */;
+import SoundUtils from "SoundUtils" /* 10298 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 10406 */;
+import getVolumeForSoundDefault from "getVolumeForSound" /* 15987 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
-import SoundboardStore from "SoundboardStore" /* 6892 */;
-import BaseSoundboardManager from "BaseSoundboardManager" /* 15935 */;
+import MediaEngineStore from "MediaEngineStore" /* 2132 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
+import SoundboardStore from "SoundboardStore" /* 6923 */;
+import BaseSoundboardManager from "BaseSoundboardManager" /* 15986 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
@@ -58,7 +58,7 @@ class SoundboardManager extends BaseSoundboardManager {
             if (null != value) {
               value.stop();
             }
-            const tmp14 = tmp6(15937)(soundId);
+            const tmp14 = tmp6(15988)(soundId);
             const obj2 = SoundUtils;
             const sound = obj2.createSound(tmp14, "soundboard_sound", tmp8);
             sound.volume = tmp8;

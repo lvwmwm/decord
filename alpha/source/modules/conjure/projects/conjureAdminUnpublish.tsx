@@ -1,27 +1,27 @@
-// Module ID: 18535
-// Function ID: 18536
+// Module ID: 18598
+// Function ID: 18599
 // Name: conjureAdminUnpublish
-// Dependencies: [5, 19, 2164, 6132, 4942, 4883, 4944, 1386, 6903, 7661, 504, 6103, 12459, 2]
+// Dependencies: [5, 19, 2165, 6163, 4973, 4914, 4975, 1387, 6934, 7692, 504, 6134, 12508, 2]
 // Exports: conjureAdminUnpublishTarget, loadConjureAdminUnpublishLookup, useConjureAdminUnpublishLookup, useConjureAdminUnpublishTarget
 
-// Module 18535 (conjureAdminUnpublish)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6903 */;
-import conjureAppInServer from "conjureAppInServer" /* 7661 */;
+// Module 18598 (conjureAdminUnpublish)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6934 */;
+import conjureAppInServer from "conjureAppInServer" /* 7692 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2164 */;
-import UserProfileStore from "UserProfileStore" /* 6132 */;
-import GuildChannelStore from "GuildChannelStore" /* 4942 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import UserStore from "UserStore" /* 1386 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import UserProfileStore from "UserProfileStore" /* 6163 */;
+import GuildChannelStore from "GuildChannelStore" /* 4973 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ConjureProjectStore = ConjureProjectStore2;
 let _require, c1, c2;
 
-const f115242 = () => {
+const f115629 = () => {
   project = null;
   const tmp = readUnknownBotUserId;
   if (null != closure_0) {
@@ -88,7 +88,7 @@ let obj = function _loadConjureAdminUnpublishLookup() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -119,7 +119,7 @@ let obj = function _loadConjureAdminUnpublishLookup() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -145,7 +145,7 @@ obj = function _loadBotServers() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -182,7 +182,7 @@ obj = function _loadBotServers() {
             c3 = 0;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp7) {
         if (0 === c3) {
@@ -218,7 +218,7 @@ export function useConjureAdminUnpublishLookup(projectId) {
   const items = [ConjureProjectStore, UserStore, GuildStore, GuildChannelStore, ApplicationStore, UserProfileStore, PermissionStore];
   const items1 = [projectId];
   obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f115242, items1);
+  stateFromStores = obj.useStateFromStores(items, f115629, items1);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (null != stateFromStores) {
@@ -235,7 +235,7 @@ export function useConjureAdminUnpublishTarget(id) {
   const items = [ConjureProjectStore, UserStore, GuildStore, GuildChannelStore, ApplicationStore, UserProfileStore, PermissionStore];
   const items1 = [id];
   obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f115242, items1);
+  const stateFromStores = obj.useStateFromStores(items, f115629, items1);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (null != stateFromStores) {

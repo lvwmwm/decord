@@ -1,12 +1,12 @@
-// Module ID: 14425
-// Function ID: 14426
+// Module ID: 14477
+// Function ID: 14478
 // Name: formatPollMessageChatData
-// Dependencies: [12184, 14365, 2]
+// Dependencies: [12234, 14417, 2]
 // Exports: default
 
-// Module 14425 (formatPollMessageChatData)
-import formatPollMessageChatDataDefault from "formatPollMessageChatData" /* 12184 */;
-import MarkupParsers from "MarkupParsers" /* 14365 */;
+// Module 14477 (formatPollMessageChatData)
+import formatPollMessageChatDataDefault from "formatPollMessageChatData" /* 12234 */;
+import MarkupParsers from "MarkupParsers" /* 14417 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/polls/native/formatPollMessageChatData.tsx");

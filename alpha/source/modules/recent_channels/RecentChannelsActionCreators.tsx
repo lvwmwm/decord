@@ -1,12 +1,12 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 12040
+// Function ID: 12041
 // Name: RecentChannelsActionCreators
-// Dependencies: [5, 1071, 4842, 1225, 572, 1255, 2]
+// Dependencies: [5, 1071, 4873, 1225, 572, 1256, 2]
 // Exports: bulkClearRecents
 
-// Module 11992 (RecentChannelsActionCreators)
+// Module 12040 (RecentChannelsActionCreators)
 import Constants from "Constants" /* 1071 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4842 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4873 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _bulkClearRecents() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ let obj = function _bulkClearRecents() {
             const obj7 = closure_131_1(closure_131_2[5]);
             obj7.track(closure_131_4.CHANNEL_LIST_UPDATED, { action_type: "recents_dismissed" });
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp5) {
           c5 = 3;

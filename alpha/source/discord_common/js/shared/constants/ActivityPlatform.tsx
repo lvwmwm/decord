@@ -1,9 +1,9 @@
-// Module ID: 10175
-// Function ID: 10176
+// Module ID: 10217
+// Function ID: 10218
 // Name: ActivityPlatform
 // Dependencies: [2]
 
-// Module 10175 (ActivityPlatform)
+// Module 10217 (ActivityPlatform)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/constants/ActivityPlatform.tsx");

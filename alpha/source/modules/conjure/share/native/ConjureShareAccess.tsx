@@ -1,21 +1,21 @@
-// Module ID: 18499
-// Function ID: 18500
+// Module ID: 18562
+// Function ID: 18563
 // Name: ConjureShareAccess
-// Dependencies: [19, 17, 21, 5012, 575, 5226, 18442, 2119, 18442, 6109, 18500, 6113, 1112, 4244, 6084, 5603, 5610, 18503, 7507, 5693, 6124, 5708, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5257, 18505, 2120, 18505, 6140, 18563, 6144, 1112, 4245, 6115, 5634, 5641, 18566, 7538, 5724, 6155, 5739, 2]
 // Exports: default
 
-// Module 18499 (ConjureShareAccess)
+// Module 18562 (ConjureShareAccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import ToastUtils from "ToastUtils" /* 5693 */;
-import ClipboardUtils from "ClipboardUtils" /* 7507 */;
-import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18442 */;
-import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 18503 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import ToastUtils from "ToastUtils" /* 5724 */;
+import ClipboardUtils from "ClipboardUtils" /* 7538 */;
+import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18505 */;
+import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 18566 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -115,7 +115,7 @@ export default function ConjureShareAccess(arg0) {
         return ref.current(AUTO_DISMISS);
       }
     };
-    const tmp2 = asyncRequire(18442, dependencyMap.paths);
+    const tmp2 = asyncRequire(18505, dependencyMap.paths);
     openLazy(tmp2, ConjureSharingModeSheet.CONJURE_SHARING_MODE_SHEET_KEY, obj, "stack");
   }, items1);
   if ("public" === mode) {

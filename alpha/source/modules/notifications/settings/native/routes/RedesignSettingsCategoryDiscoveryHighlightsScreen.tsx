@@ -1,14 +1,14 @@
-// Module ID: 17578
-// Function ID: 17579
+// Module ID: 17635
+// Function ID: 17636
 // Name: RedesignSettingsCategoryDiscoveryHighlightsScreen
-// Dependencies: [19, 9513, 21, 17569, 11914, 17570, 2]
+// Dependencies: [19, 9555, 21, 17626, 11962, 17627, 2]
 
-// Module 17578 (RedesignSettingsCategoryDiscoveryHighlightsScreen)
+// Module 17635 (RedesignSettingsCategoryDiscoveryHighlightsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17569 */;
-import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 17570 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17626 */;
+import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 17627 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,31 +1,31 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 11968
+// Function ID: 11969
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 11867, 9048, 6135, 4883, 5983, 504, 12, 558, 6940, 1254, 5743, 11921, 9047, 11922, 2]
+// Dependencies: [32, 19, 17, 11915, 9090, 6166, 4914, 6014, 504, 12, 558, 6971, 1255, 5774, 11969, 9089, 11970, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 11920 (MessagesHooks)
+// Module 11968 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 558 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 5743 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6940 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9047 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9048 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11922 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 5774 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6971 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9089 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9090 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11970 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 11867 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6135 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PresenceStore from "PresenceStore" /* 5983 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 11915 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6166 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PresenceStore from "PresenceStore" /* 6014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, set;
 
 let tmp;
-const GlobalUtils = tmp(1254);
+const GlobalUtils = tmp(1255);
 const findNodeHandle = react_native.findNodeHandle;
 let closure_7 = useChatBottomManagerUIStore.updateShouldShowJumpToPresentButton;
 let result = size.fileFinishedImporting("modules/messages/native/MessagesHooks.tsx");
@@ -128,7 +128,7 @@ export function useFetchVoiceChannelInviteStartTimes(stateFromStores4) {
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11921);
+            let tmp4Result = tmp4(11969);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

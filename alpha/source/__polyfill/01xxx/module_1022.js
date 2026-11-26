@@ -58,8 +58,8 @@ export const adjustTransactionDuration = (on, activeSpan, arg2) => {
   }
 };
 export const ignoreEmptyBackNavigation = (on, c4) => {
-  const f80228 = (activeSpan) => {
-    const obj = c4(f80228[2]);
+  const f80447 = (activeSpan) => {
+    const obj = c4(f80447[2]);
     const data = obj.spanToJSON(activeSpan).data;
     let prop;
     if (null !== data) {
@@ -69,20 +69,20 @@ export const ignoreEmptyBackNavigation = (on, c4) => {
     }
     return true === prop;
   };
-  const f80229 = () => {
-    const debug = c4(f80228[2]).debug;
+  const f80448 = () => {
+    const debug = c4(f80447[2]).debug;
     debug.log("Not sampling transaction as route has been seen before. Pass ignoreEmptyBackNavigationTransactions = false to disable this feature.");
   };
   if (on) {
     if (c4) {
-      const tmpResult = c4(f80228[1]);
+      const tmpResult = c4(f80447[1]);
       if (tmpResult.isRootSpan(c4)) {
-        const tmpResult2 = c4(f80228[1]);
+        const tmpResult2 = c4(f80447[1]);
         if (tmpResult2.isSentrySpan(c4)) {
           on.on("spanEnd", (arg0) => {
             let tmp = closure_0;
             if (arg0 === closure_0) {
-              if (f80230(tmp)) {
+              if (f80449(tmp)) {
                 closure_0 = tmp;
                 let obj = closure_0(closure_1[2]);
                 const spanDescendants = obj.getSpanDescendants(tmp);
@@ -98,7 +98,7 @@ export const ignoreEmptyBackNavigation = (on, c4) => {
                   }
                   return tmp;
                 }).length <= 0) {
-                  f80231(tmp);
+                  f80450(tmp);
                   tmp._sampled = false;
                 }
               }
@@ -121,10 +121,10 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
   let closure_1 = arg2;
   let closure_2 = arg3;
   let closure_0 = c4;
-  const f80230 = (activeSpan) => {
+  const f80449 = (activeSpan) => {
     const obj = on(closure_1[2]);
     const spanToJSONResult = obj.spanToJSON(activeSpan);
-    let tmp2 = spanToJSONResult.description === f80230;
+    let tmp2 = spanToJSONResult.description === f80449;
     if (tmp2) {
       const data = spanToJSONResult.data;
       let prop;
@@ -136,13 +136,13 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
       tmp2 = !prop;
     }
     if (tmp2) {
-      tmp2 = f80231();
+      tmp2 = f80450();
     }
     return tmp2;
   };
-  const f80231 = (arg0) => {
+  const f80450 = (arg0) => {
     const debug = on(closure_1[2]).debug;
-    debug.log("Discarding empty \"" + f80230 + "\" transaction that never received route information.");
+    debug.log("Discarding empty \"" + f80449 + "\" transaction that never received route information.");
     const obj = on;
     if (null != on) {
       obj.recordDroppedEvent("sample_rate", "transaction");
@@ -159,7 +159,7 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
           on.on("spanEnd", (arg0) => {
             let tmp = closure_0;
             if (arg0 === closure_0) {
-              if (f80230(tmp)) {
+              if (f80449(tmp)) {
                 closure_0 = tmp;
                 let obj = closure_0(closure_1[2]);
                 const spanDescendants = obj.getSpanDescendants(tmp);
@@ -175,7 +175,7 @@ export const ignoreEmptyRouteChangeTransactions = (on, c4, arg2, arg3) => {
                   }
                   return tmp;
                 }).length <= 0) {
-                  f80231(tmp);
+                  f80450(tmp);
                   tmp._sampled = false;
                 }
               }

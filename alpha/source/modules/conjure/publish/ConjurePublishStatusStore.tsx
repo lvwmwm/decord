@@ -1,13 +1,14 @@
-// Module ID: 7675
-// Function ID: 7676
+// Module ID: 7706
+// Function ID: 7707
 // Name: ConjurePublishStatusStore
-// Dependencies: [6903, 504, 558, 572, 2]
+// Dependencies: [6934, 504, 558, 7707, 572, 2]
 
-// Module 7675 (ConjurePublishStatusStore)
+// Module 7706 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import conjureViewsStatus from "conjureViewsStatus" /* 7707 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
@@ -172,6 +173,10 @@ let obj = {
     if (flag2 === undefined) {
       flag2 = false;
     }
+    let views = previewDevicePermissions.views;
+    if (views === undefined) {
+      views = null;
+    }
     const deleteResult = !flag && map1.delete(projectId);
     const deleteResult1 = !flag && map2.delete(projectId);
     const value = map.get(projectId);
@@ -237,7 +242,15 @@ let obj = {
                                 flag3 = false;
                               }
                               if (flag3 === flag2) {
-                                return false;
+                                let views1 = value.views;
+                                const sameConjureViewsStatus = conjureViewsStatus.sameConjureViewsStatus;
+                                conjureViewsStatus;
+                                if (views1 == null) {
+                                  views1 = null;
+                                }
+                                if (sameConjureViewsStatus(views1, views)) {
+                                  return false;
+                                }
                               }
                             }
                           }
@@ -252,7 +265,7 @@ let obj = {
         }
       }
     }
-    const result = obj.set(projectId, { publishState, surface, previewAppChannels, newAppChannels, previewDevicePermissions, publishedRevision, publishedAt, publishing: flag, patchNotesSent, newUiUnpublished, safetyHold: flag2 });
+    const result = obj.set(projectId, { publishState, surface, previewAppChannels, newAppChannels, previewDevicePermissions, publishedRevision, publishedAt, publishing: flag, patchNotesSent, newUiUnpublished, safetyHold: flag2, views });
   },
   CONJURE_PROJECT_PUBLISH_START: function handleProjectPublishStart(projectId) {
     projectId = projectId.projectId;
@@ -356,7 +369,7 @@ let obj = {
         patchNotesSent = closure_10;
       }
       items = [];
-      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== collapsed.publishedRevision), 0)] = sent;
+      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== set.publishedRevision), 0)] = sent;
       const result = set(projectId, obj);
     }
   },

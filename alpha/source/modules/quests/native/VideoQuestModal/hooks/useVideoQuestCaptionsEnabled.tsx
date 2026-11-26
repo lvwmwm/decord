@@ -1,11 +1,11 @@
-// Module ID: 16694
-// Function ID: 16695
+// Module ID: 16745
+// Function ID: 16746
 // Name: useVideoQuestCaptionsEnabled
-// Dependencies: [32, 19, 16695, 2]
+// Dependencies: [32, 19, 16746, 2]
 // Exports: useVideoQuestCaptionsEnabled
 
-// Module 16694 (useVideoQuestCaptionsEnabled)
-import SystemCaptionPreference from "SystemCaptionPreference" /* 16695 */;
+// Module 16745 (useVideoQuestCaptionsEnabled)
+import SystemCaptionPreference from "SystemCaptionPreference" /* 16746 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

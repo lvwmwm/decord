@@ -1,16 +1,16 @@
-// Module ID: 9227
-// Function ID: 9228
+// Module ID: 9269
+// Function ID: 9270
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 502, 9062, 3, 504, 12, 9189, 2185, 2]
+// Dependencies: [5, 32, 19, 502, 9104, 3, 504, 12, 9231, 2186, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useLoadedGoogleSkuIds, useMobileStoreFront, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 9227 (NativePaymentHooks)
+// Module 9269 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IAPStore from "IAPStore" /* 9062 */;
+import IAPStore from "IAPStore" /* 9104 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,7 +67,7 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ function useGoogleSkuIds(memo2, arg1, arg2) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           } catch (tmp30) {
             closure_2 = tmp30;
             if (0 === c3) {

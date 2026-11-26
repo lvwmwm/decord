@@ -1,14 +1,14 @@
-// Module ID: 13257
-// Function ID: 13258
+// Module ID: 13309
+// Function ID: 13310
 // Name: FacebookNeutralIcon
-// Dependencies: [19, 21, 575, 5698, 13258, 2]
+// Dependencies: [19, 21, 575, 5729, 13310, 2]
 // Exports: FacebookNeutralIcon
 
-// Module 13257 (FacebookNeutralIcon)
+// Module 13309 (FacebookNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 13258 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 13310 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

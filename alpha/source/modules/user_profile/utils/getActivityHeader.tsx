@@ -1,21 +1,21 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 14912
+// Function ID: 14913
 // Name: getActivityHeader
-// Dependencies: [1071, 14860, 14861, 5984, 1112, 14863, 14864, 11332, 2]
+// Dependencies: [1071, 14913, 14914, 6015, 1112, 14916, 14917, 11378, 2]
 // Exports: default
 
-// Module 14859 (getActivityHeader)
+// Module 14912 (getActivityHeader)
 import Constants from "Constants" /* 1071 */;
-import ActivityTypes from "ActivityTypes" /* 5984 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 14860 */;
-import getActivityPlatformDefault from "getActivityPlatform" /* 14861 */;
-import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 14863 */;
-import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 14864 */;
+import ActivityTypes from "ActivityTypes" /* 6015 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 14913 */;
+import getActivityPlatformDefault from "getActivityPlatform" /* 14914 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 14916 */;
+import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 14917 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
 const intl23 = tmp5(1112);
-const StageChannelRichPresenceUtils = tmp5(11332);
+const StageChannelRichPresenceUtils = tmp5(11378);
 const PlatformTypes = Constants.PlatformTypes;
 const result = size.fileFinishedImporting("modules/user_profile/utils/getActivityHeader.tsx");
 

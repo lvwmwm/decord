@@ -1,18 +1,18 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 17636
+// Function ID: 17637
 // Name: RedesignSettingsCategoryFriendsActivityScreen
-// Dependencies: [19, 9513, 21, 17569, 1112, 11914, 3206, 5573, 17049, 17570, 2]
+// Dependencies: [19, 9555, 21, 17626, 1112, 11962, 3207, 5604, 17100, 17627, 2]
 
-// Module 17579 (RedesignSettingsCategoryFriendsActivityScreen)
+// Module 17636 (RedesignSettingsCategoryFriendsActivityScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1112 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import useMountEffectDefault from "useMountEffect" /* 5573 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
-import FamilyCenterAgeGroupPrefetch from "FamilyCenterAgeGroupPrefetch" /* 17049 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17569 */;
-import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 17570 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import useMountEffectDefault from "useMountEffect" /* 5604 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
+import FamilyCenterAgeGroupPrefetch from "FamilyCenterAgeGroupPrefetch" /* 17100 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17626 */;
+import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 17627 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -45,20 +45,20 @@ const memoResult = react.memo(function RedesignSettingsCategoryFriendsActivitySc
     ({ REDESIGN_SCREEN_DOWNTIME_SCHEDULE_NOTIFICATIONS: arr2[0], REDESIGN_SCREEN_DOWNTIME_REMINDER_NOTIFICATIONS: arr2[1] } = constants);
     const obj4 = { node: createList(obj5), unavailableNode: createList2(obj8) };
     obj5 = { sections: items3 };
-    const obj6 = { label: intl2.string(_modDef3206.B0OBFd), settings: items2 };
+    const obj6 = { label: intl2.string(_modDef3207.B0OBFd), settings: items2 };
     createList = SettingBuilders.createList;
     SettingBuilders;
     const merged = Object.assign(friendActivityTitleSettingsSection);
     intl2 = intl5.intl;
     items2 = [...items];
     items3 = [obj6, , ];
-    const obj7 = { label: intl3.string(_modDef3206.wB1ASV) };
+    const obj7 = { label: intl3.string(_modDef3207.wB1ASV) };
     const merged1 = Object.assign(categoryFriendsActivitySettingsSection);
     intl3 = intl5.intl;
     items3[1] = obj7;
     items3[2] = obj3;
     obj8 = { sections: items4 };
-    const obj9 = { label: intl4.string(_modDef3206.B0OBFd), settings: items };
+    const obj9 = { label: intl4.string(_modDef3207.B0OBFd), settings: items };
     createList2 = SettingBuilders.createList;
     SettingBuilders;
     intl4 = intl5.intl;

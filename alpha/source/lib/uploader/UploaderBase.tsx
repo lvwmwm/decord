@@ -1,16 +1,16 @@
-// Module ID: 10731
-// Function ID: 10732
+// Module ID: 10777
+// Function ID: 10778
 // Name: UploaderBase
-// Dependencies: [5, 1071, 5017, 3, 568, 12, 8115, 8092, 8093, 2]
+// Dependencies: [5, 1071, 5048, 3, 568, 12, 8157, 8134, 8135, 2]
 
-// Module 10731 (UploaderBase)
+// Module 10777 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import _mod568 from "module_568" /* 568 */;
 import Constants from "Constants" /* 1071 */;
-import MessageConstants from "MessageConstants" /* 5017 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 8092 */;
-import UploadTargets from "UploadTargets" /* 8115 */;
+import MessageConstants from "MessageConstants" /* 5048 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 8134 */;
+import UploadTargets from "UploadTargets" /* 8157 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c7;
@@ -409,7 +409,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ class UploaderBase extends EventEmitter {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp28) {
           c3 = 3;
           throw tmp28;

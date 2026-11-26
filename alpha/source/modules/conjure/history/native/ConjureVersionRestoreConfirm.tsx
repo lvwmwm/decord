@@ -1,14 +1,14 @@
-// Module ID: 18517
-// Function ID: 18518
+// Module ID: 18580
+// Function ID: 18581
 // Name: ConjureVersionRestoreConfirm
-// Dependencies: [32, 19, 21, 6021, 1112, 4244, 6109, 7150, 6017, 2]
+// Dependencies: [32, 19, 21, 6052, 1112, 4245, 6140, 7181, 6048, 2]
 // Exports: confirmRestoreVersion
 
-// Module 18517 (ConjureVersionRestoreConfirm)
+// Module 18580 (ConjureVersionRestoreConfirm)
 import intl7 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import useAlertStore from "useAlertStore" /* 6017 */;
-import AlertModal2 from "AlertModal" /* 6021 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import useAlertStore from "useAlertStore" /* 6048 */;
+import AlertModal2 from "AlertModal" /* 6052 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -35,16 +35,16 @@ function ConjureVersionRestoreAlert(matchingBackup) {
   const onConfirm = matchingBackup.onConfirm;
   first = undefined;
   [first, tmp3] = react.useState(false);
-  const obj = { title: intl.string(_modDef4244.NDY6Zv), content: intl2.string(_modDef4244.z2x5zj), extraContent: tmp4Result, actions: metroImportDefault(metroRequire, obj4) };
+  const obj = { title: intl.string(_modDef4245.NDY6Zv), content: intl2.string(_modDef4245.z2x5zj), extraContent: tmp4Result, actions: metroImportDefault(metroRequire, obj4) };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl7.intl;
   intl2 = intl7.intl;
   tmp4Result = undefined;
   if (null != matchingBackup) {
     const obj2 = { hasIcons: false, children: hasOwnProperty(TableCheckboxRow, obj3) };
-    const TableRowGroup = tmp5(6109).TableRowGroup;
-    obj3 = { label: intl3.string(_modDef4244["+/pFME"]), subLabel: intl4.string(_modDef4244["+I112y"]), checked: first, onPress: tmp3 };
-    TableCheckboxRow = tmp5(7150).TableCheckboxRow;
+    const TableRowGroup = tmp5(6140).TableRowGroup;
+    obj3 = { label: intl3.string(_modDef4245["+/pFME"]), subLabel: intl4.string(_modDef4245["+I112y"]), checked: first, onPress: tmp3 };
+    TableCheckboxRow = tmp5(7181).TableCheckboxRow;
     intl3 = tmp5(1112).intl;
     intl4 = tmp5(1112).intl;
     tmp4Result = tmp4(TableRowGroup, obj2);
@@ -52,7 +52,7 @@ function ConjureVersionRestoreAlert(matchingBackup) {
   obj4 = { children: items };
   const obj5 = {
     variant: "primary",
-    text: intl5.string(_modDef4244.K3Q49G),
+    text: intl5.string(_modDef4245.K3Q49G),
     onPress() {
       let tmp2 = null;
       const tmp = onConfirm;
@@ -65,11 +65,11 @@ function ConjureVersionRestoreAlert(matchingBackup) {
       return tmp(tmp2);
     }
   };
-  const AlertActionButton = tmp5(6021).AlertActionButton;
+  const AlertActionButton = tmp5(6052).AlertActionButton;
   intl5 = tmp5(1112).intl;
   items = [hasOwnProperty(AlertActionButton, obj5), ];
   const obj6 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp5(6021).AlertActionButton;
+  const AlertActionButton2 = tmp5(6052).AlertActionButton;
   intl6 = tmp5(1112).intl;
   items[1] = hasOwnProperty(AlertActionButton2, obj6);
   return hasOwnProperty(AlertModal, obj);

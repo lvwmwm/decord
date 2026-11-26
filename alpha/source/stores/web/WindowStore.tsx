@@ -1,14 +1,14 @@
-// Module ID: 6926
-// Function ID: 6927
+// Module ID: 6957
+// Function ID: 6958
 // Name: WindowStore
-// Dependencies: [38, 504, 6927, 572, 1255, 2119, 2]
+// Dependencies: [38, 504, 6958, 572, 1256, 2120, 2]
 
-// Module 6926 (WindowStore)
+// Module 6957 (WindowStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import WindowIdUtils from "WindowIdUtils" /* 6927 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import WindowIdUtils from "WindowIdUtils" /* 6958 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3 = null;
@@ -189,7 +189,7 @@ let obj = {
   }
 };
 const windowStore = new WindowStore(DispatcherDefault, obj);
-const promise = asyncRequire(1255, dependencyMap.paths);
+const promise = asyncRequire(1256, dependencyMap.paths);
 promise.then((addExtraAnalyticsDecorator) => {
   const result = addExtraAnalyticsDecorator.addExtraAnalyticsDecorator(() => {
 

@@ -1,12 +1,12 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14526
+// Function ID: 14527
 // Name: getGameOrganizationInviteCtaState
-// Dependencies: [1112, 2650, 2]
+// Dependencies: [1112, 2651, 2]
 // Exports: default
 
-// Module 14474 (getGameOrganizationInviteCtaState)
+// Module 14526 (getGameOrganizationInviteCtaState)
 import intl6 from "intl" /* 1112 */;
-import _modDef2650 from "module_2650" /* 2650 */;
+import _modDef2651 from "module_2651" /* 2651 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/getGameOrganizationInviteCtaState.tsx");
@@ -22,7 +22,7 @@ export default function getGameOrganizationInviteCtaState(displayNoun) {
   if (displayNoun.accepted) {
     let obj3;
     if (displayNoun.canGoToGuild) {
-      const obj2 = { kind: "go_to_server", label: intl5.string(_modDef2650.H1wMHV), actionable: true };
+      const obj2 = { kind: "go_to_server", label: intl5.string(_modDef2651.H1wMHV), actionable: true };
       intl5 = intl6.intl;
       obj3 = obj2;
     } else {
@@ -33,7 +33,7 @@ export default function getGameOrganizationInviteCtaState(displayNoun) {
   } else if (tmp2) {
     const intl3 = intl6.intl;
     const formatToPlainString2 = intl3.formatToPlainString;
-    const rMimTG = _modDef2650.rMimTG;
+    const rMimTG = _modDef2651.rMimTG;
     if (str == null) {
       str = "other";
     }
@@ -41,14 +41,14 @@ export default function getGameOrganizationInviteCtaState(displayNoun) {
     obj = obj4;
     obj5 = { displayNoun: str };
   } else if (tmp) {
-    const obj6 = { kind: "awaiting", label: intl2.string(_modDef2650.OkMPbI), actionable: false };
+    const obj6 = { kind: "awaiting", label: intl2.string(_modDef2651.OkMPbI), actionable: false };
     intl2 = intl6.intl;
     obj = obj6;
   } else {
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
     let str2 = str;
-    const prop = _modDef2650["Cz/ZUM"];
+    const prop = _modDef2651["Cz/ZUM"];
     if (str == null) {
       str2 = "other";
     }

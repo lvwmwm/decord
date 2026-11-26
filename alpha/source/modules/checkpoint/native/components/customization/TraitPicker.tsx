@@ -1,24 +1,24 @@
-// Module ID: 12869
-// Function ID: 12870
+// Module ID: 12920
+// Function ID: 12921
 // Name: TraitPicker
-// Dependencies: [19, 17, 21, 5012, 12867, 575, 6734, 1112, 3494, 5603, 12590, 1494, 5192, 12870, 12872, 2]
+// Dependencies: [19, 17, 21, 5043, 12918, 575, 6765, 1112, 3495, 5634, 12852, 1495, 5223, 12921, 6444, 6397, 12923, 2]
 // Exports: default, useTraitOptionSize
 
-// Module 12869 (TraitPicker)
+// Module 12920 (TraitPicker)
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import _modDef3494 from "module_3494" /* 3494 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5192 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
-import CheckpointTextDefault from "CheckpointText" /* 12590 */;
-import TraitOptionList from "TraitOptionList" /* 12867 */;
-import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12870 */;
-import useTraitPicker from "useTraitPicker" /* 12872 */;
+import _modDef3495 from "module_3495" /* 3495 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5223 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6765 */;
+import CheckpointTextDefault from "CheckpointText" /* 12852 */;
+import TraitOptionList from "TraitOptionList" /* 12918 */;
+import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12921 */;
+import useTraitPicker from "useTraitPicker" /* 12923 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const TraitOptionListDefault = TraitOptionList;
@@ -50,8 +50,8 @@ function EarnedCountHeader(customizationOption) {
       return arg0;
     }
   };
-  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3494.Vfq58K, obj2);
-  const obj3 = { variant: "body-md/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3494.Vfq58K, obj4) };
+  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3495.Vfq58K, obj2);
+  const obj3 = { variant: "body-md/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3495.Vfq58K, obj4) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj4 = {
@@ -87,12 +87,22 @@ class TraitPickerDetails {
 }
 class TraitPickerOptionList {
   constructor(customizationOption) {
+    let options;
+    let options2;
+    let tmp4;
     customizationOption = customizationOption.customizationOption;
     const merged = Object.assign(customizationOption, Object.assign({ customizationOption: 0 }));
-    TraitOptionListDefault;
-    const merged1 = Object.assign(merged);
-    const obj2 = CheckpointCustomizationUtils;
-    return <tmp2 key={customizationOption} customizationOption={customizationOption} hideRarity={!obj2.getIsTraitRarityVisible(customizationOption)} />;
+    ({ options, options: options2 } = merged);
+    const someResult = options.some((optionId) => optionId.optionId === merged.selectedOptionId);
+    if (someResult) {
+      TraitOptionListDefault;
+      const merged1 = Object.assign(merged);
+      tmp4 = <tmp8 key={customizationOption} customizationOption={customizationOption} hideRarity={!merged(6765).getIsTraitRarityVisible(customizationOption)} />;
+      const obj2 = merged(6765);
+    } else {
+      tmp4 = null;
+    }
+    return tmp4;
   }
 }
 class TraitPickerPortrait {

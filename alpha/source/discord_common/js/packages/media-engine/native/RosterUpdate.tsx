@@ -1,10 +1,10 @@
-// Module ID: 2137
-// Function ID: 2138
+// Module ID: 2138
+// Function ID: 2139
 // Name: RosterUpdate
 // Dependencies: [2]
 // Exports: parseNativeRosterUpdate, toRosterUpdate
 
-// Module 2137 (RosterUpdate)
+// Module 2138 (RosterUpdate)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/native/RosterUpdate.tsx");

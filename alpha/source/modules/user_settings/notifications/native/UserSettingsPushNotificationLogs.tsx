@@ -1,20 +1,20 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17191
+// Function ID: 17192
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1071, 21, 5012, 575, 7264, 510, 10650, 1628, 7375, 6121, 1112, 8648, 10651, 12822, 7451, 5603, 2]
+// Dependencies: [5, 32, 19, 17, 1071, 21, 5043, 575, 7295, 510, 10695, 1629, 7406, 6152, 1112, 8690, 10696, 12871, 7482, 5634, 2]
 // Exports: default
 
-// Module 17140 (UserSettingsPushNotificationLogs)
+// Module 17191 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import InputTypes from "InputTypes" /* 7264 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import InputTypes from "InputTypes" /* 7295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -81,7 +81,7 @@ export default function UserSettingsPushNotificationLogs() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -114,7 +114,7 @@ export default function UserSettingsPushNotificationLogs() {
               closure_0 = value;
               c2(closure_0);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -177,8 +177,8 @@ export default function UserSettingsPushNotificationLogs() {
   _slicedToArray = tmp10;
   let obj = { style: tmp10.wrap, children: items2 };
   let obj2 = { style: tmp10.searchWrap, children: items1 };
-  const bottom = first1(1628)().bottom;
-  items1 = [closure_7(defaultValue(7375).SearchBar, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
+  const bottom = first1(1629)().bottom;
+  items1 = [closure_7(defaultValue(7406).SearchBar, { size: "md", placeholder: "Filter (regex)", onChange: tmp3, defaultValue }), ];
   let obj3 = {
     style: tmp10.shareButton,
     accessibilityLabel: intl.string(defaultValue(1112).t.leICvh),
@@ -195,7 +195,7 @@ export default function UserSettingsPushNotificationLogs() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export default function UserSettingsPushNotificationLogs() {
             const tmp9 = tmp(c2[15]);
             showShareActionSheet(obj, "push-notification-logs");
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -238,9 +238,9 @@ export default function UserSettingsPushNotificationLogs() {
         }
       }
     }),
-    children: closure_7(defaultValue(12822).ShareIcon, {})
+    children: closure_7(defaultValue(12871).ShareIcon, {})
   };
-  const PressableOpacity = defaultValue(6121).PressableOpacity;
+  const PressableOpacity = defaultValue(6152).PressableOpacity;
   intl = defaultValue(1112).intl;
   items1[1] = closure_7(PressableOpacity, obj3);
   items2 = [closure_8(View, obj2), ];
@@ -273,7 +273,7 @@ export default function UserSettingsPushNotificationLogs() {
     }
   };
   obj5 = { paddingBottom: bottom + first1(575).space.PX_16 };
-  const FlashList = defaultValue(7451).FlashList;
+  const FlashList = defaultValue(7482).FlashList;
   const merged = Object.assign(tmp10.list);
   items2[1] = closure_7(FlashList, obj4);
   return closure_8(View, obj);

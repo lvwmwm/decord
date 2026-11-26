@@ -1,13 +1,13 @@
-// Module ID: 12612
-// Function ID: 12613
+// Module ID: 12654
+// Function ID: 12655
 // Name: useCheckpointRouteSounds
-// Dependencies: [19, 12571, 504, 12613, 10256, 2]
+// Dependencies: [19, 12620, 504, 12655, 10298, 2]
 // Exports: default
 
-// Module 12612 (useCheckpointRouteSounds)
-import CheckpointSounds from "CheckpointSounds" /* 12613 */;
+// Module 12654 (useCheckpointRouteSounds)
+import CheckpointSounds from "CheckpointSounds" /* 12655 */;
 import react_mod from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12571 */;
+import CheckpointStore from "CheckpointStore" /* 12620 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;

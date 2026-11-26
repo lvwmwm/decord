@@ -1,24 +1,24 @@
-// Module ID: 1386
-// Function ID: 1387
+// Module ID: 1387
+// Function ID: 1388
 // Name: UserStore
-// Dependencies: [1387, 1405, 502, 1070, 1071, 1388, 1407, 1402, 2104, 2105, 1394, 1408, 1409, 1410, 1404, 12, 2116, 2117, 1254, 2]
+// Dependencies: [1388, 1406, 502, 1070, 1071, 1389, 1408, 1403, 2105, 2106, 1395, 1409, 1410, 1411, 1405, 12, 2117, 2118, 1255, 2]
 
-// Module 1386 (UserStore)
+// Module 1387 (UserStore)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
-import UserStoreUtils from "UserStoreUtils" /* 1402 */;
-import FlagUtilsAll from "FlagUtils" /* 1404 */;
-import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1407 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1408 */;
-import PremiumStateUtils from "PremiumStateUtils" /* 1409 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2104 */;
-import mappers from "mappers" /* 2105 */;
-import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 2116 */;
-import Server from "Server" /* 2117 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1387 */;
-import UserRecord from "UserRecord" /* 1405 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1395 */;
+import UserStoreUtils from "UserStoreUtils" /* 1403 */;
+import FlagUtilsAll from "FlagUtils" /* 1405 */;
+import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1408 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1409 */;
+import PremiumStateUtils from "PremiumStateUtils" /* 1410 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2105 */;
+import mappers from "mappers" /* 2106 */;
+import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 2117 */;
+import Server from "Server" /* 2118 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1388 */;
+import UserRecord from "UserRecord" /* 1406 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1070 */;
 import Constants from "Constants" /* 1071 */;
@@ -56,7 +56,7 @@ function mergeUserPrimaryGuild(id, primary_guild) {
     if (tmp8) {
       let flag = null == tmp2.primaryGuild || null != primary_guild.primary_guild;
       if (flag) {
-        const tmp5Result = tmp5(1407);
+        const tmp5Result = tmp5(1408);
         obj[id].primaryGuild = tmp5Result.ensureUserPrimaryGuild(primary_guild.primary_guild);
         tmp[obj[id].id] = obj[id];
         closure_12 = closure_12 + 1;
@@ -150,7 +150,7 @@ function transformUser(mfa_enabled) {
   }
   const restricted_schedule = mfa_enabled.restricted_schedule;
   if (undefined !== restricted_schedule) {
-    const RestrictedScheduleRecord = tmp2(1410).RestrictedScheduleRecord;
+    const RestrictedScheduleRecord = tmp2(1411).RestrictedScheduleRecord;
     let fromServerResult = RestrictedScheduleRecord.fromServer(restricted_schedule);
     if (fromServerResult == null) {
       fromServerResult = null;
@@ -260,7 +260,7 @@ function mergeUser(user, arg1) {
           const obj5 = PrimaryGuildUtils;
           const tmp18 = require;
           if (obj5.isUserPrimaryGuildEqual(obj[user.id].primaryGuild, user.primary_guild) !== true) {
-            const tmp18Result = tmp18(1407);
+            const tmp18Result = tmp18(1408);
             user.primary_guild = tmp18Result.ensureUserPrimaryGuild(user.primary_guild);
           }
         }
@@ -761,7 +761,7 @@ function handleIncomingMessage(message) {
       if (flag) {
         id = obj2.getId();
         set = tmp6.set;
-        const tmp2Result = tmp2(1404);
+        const tmp2Result = tmp2(1405);
         tmp5[id] = set("flags", tmp2Result.setFlag(tmp6.flags, metroImportDefault.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
       }

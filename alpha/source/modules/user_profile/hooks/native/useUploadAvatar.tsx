@@ -1,15 +1,15 @@
-// Module ID: 16098
-// Function ID: 16099
+// Module ID: 16051
+// Function ID: 16052
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1386, 1071, 1388, 563, 9544, 5226, 8094, 2173, 16004, 9460, 9392, 11898, 6344, 2]
+// Dependencies: [5, 19, 1387, 1071, 1389, 563, 9586, 5257, 8136, 2174, 16034, 9502, 9434, 11946, 6375, 2]
 // Exports: default
 
-// Module 16098 (useUploadAvatar)
+// Module 16051 (useUploadAvatar)
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9544 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9586 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ export default function useUploadAvatar(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -142,7 +142,7 @@ export default function useUploadAvatar(guildId) {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp38) {
         c3 = 3;

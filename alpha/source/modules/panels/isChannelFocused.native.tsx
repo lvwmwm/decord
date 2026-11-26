@@ -1,21 +1,21 @@
-// Module ID: 6932
-// Function ID: 6933
+// Module ID: 6963
+// Function ID: 6964
 // Name: isChannelFocused
-// Dependencies: [32, 19, 6902, 6933, 6934, 5190, 5188, 5189, 5191, 6935, 6936, 2]
+// Dependencies: [32, 19, 6933, 6964, 6965, 5221, 5219, 5220, 5222, 6966, 6967, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck, useIsChannelFocused
 
-// Module 6932 (isChannelFocused)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5188 */;
-import RootNavigationRef from "RootNavigationRef" /* 5189 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5190 */;
-import useChatLayout from "useChatLayout" /* 5191 */;
-import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6933 */;
-import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6935 */;
-import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6936 */;
+// Module 6963 (isChannelFocused)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5219 */;
+import RootNavigationRef from "RootNavigationRef" /* 5220 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5221 */;
+import useChatLayout from "useChatLayout" /* 5222 */;
+import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6964 */;
+import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6966 */;
+import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6967 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
-import VoicePanelStore from "VoicePanelStore" /* 6934 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
+import VoicePanelStore from "VoicePanelStore" /* 6965 */;
 import size from "module_2" /* 2 */;
 
 const useChatLayoutDefault = useChatLayout;
@@ -193,7 +193,7 @@ export function isChannelFocusedForReadStateAck(channelId, arg1) {
       const tmp10 = require;
       if (tmp12) {
         const rootState = rootNavigationRef.getRootState();
-        const tmp10Result = tmp10(5188);
+        const tmp10Result = tmp10(5219);
         const result = tmp10Result.coerceChannelSecondaryViewChatRoute(rootState.routes[rootState.index]);
         channelId = undefined;
         if (result != null) {

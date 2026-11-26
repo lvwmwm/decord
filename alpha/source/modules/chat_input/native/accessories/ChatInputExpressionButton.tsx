@@ -1,16 +1,16 @@
-// Module ID: 13088
-// Function ID: 13089
+// Module ID: 13140
+// Function ID: 13141
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 5012, 575, 5576, 6121, 1112, 1186, 11650, 9663, 2]
+// Dependencies: [19, 21, 5043, 575, 5607, 6152, 1112, 1186, 11698, 9705, 2]
 
-// Module 13088 (ChatInputExpressionButton)
+// Module 13140 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import useToken from "useToken" /* 5576 */;
-import Pressables from "Pressables" /* 6121 */;
+import useToken from "useToken" /* 5607 */;
+import Pressables from "Pressables" /* 6152 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function ExpressionButton(active) {
     tmp12 = bound;
   }
   const intl = tmp(1112).intl;
-  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11650 : 9663) });
+  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11698 : 9705) });
   const Icon = tmp(1186).Icon;
   return <PressableOpacity ref={react.useRef(null)} style={items1} hitSlop={tmp12} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.iZ7Mz9)} accessibilityState={{ expanded: flag }} onPress={callback}>{null}</PressableOpacity>;
 });

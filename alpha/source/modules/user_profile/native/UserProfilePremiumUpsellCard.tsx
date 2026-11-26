@@ -1,21 +1,21 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 16173
+// Function ID: 16174
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1071, 21, 6349, 5012, 16046, 5603, 1500, 7316, 1112, 9093, 6348, 9059, 9653, 1628, 2]
+// Dependencies: [19, 1071, 21, 6380, 5043, 16104, 5634, 1501, 7347, 1112, 9135, 6379, 9101, 9695, 1629, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 16120 (UserProfilePremiumUpsellCard)
+// Module 16173 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7316 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9059 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9653 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16046 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7347 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9101 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9695 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16104 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -36,7 +36,7 @@ function UpsellCardLayout(arg0) {
 function PreviewNitroCard(style) {
   navigation = undefined;
   style = style.style;
-  let obj = navigation(1500);
+  let obj = navigation(1501);
   navigation = obj.useNavigation();
   items = [navigation];
   const callback = react.useCallback(() => {
@@ -54,7 +54,7 @@ function GetNitroCard(style) {
   let analyticsLocations;
   let tmp = analyticsLocations;
   style = style.style;
-  let obj = analyticsLocations(9093);
+  let obj = analyticsLocations(9135);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride();
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];

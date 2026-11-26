@@ -1,20 +1,20 @@
-// Module ID: 7305
-// Function ID: 7306
+// Module ID: 7336
+// Function ID: 7337
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1386, 7159, 1071, 21, 5012, 575, 1500, 504, 1091, 7306, 1255, 5603, 1112, 7242, 5610, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 7190, 1071, 21, 5043, 575, 1501, 504, 1091, 7337, 1256, 5634, 1112, 7273, 5641, 2]
 // Exports: default
 
-// Module 7305 (EnterEmail)
+// Module 7336 (EnterEmail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1386 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7159 */;
+import UserStore from "UserStore" /* 1387 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7190 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, navigation;
@@ -111,7 +111,7 @@ export default function EnterEmail(isChangeEmail) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

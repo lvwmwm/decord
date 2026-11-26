@@ -1,13 +1,13 @@
-// Module ID: 16238
-// Function ID: 16239
+// Module ID: 16289
+// Function ID: 16290
 // Name: AccountWebAuthnRegisterSetting
-// Dependencies: [9513, 1071, 11914, 1112, 16239, 2]
+// Dependencies: [9555, 1071, 11962, 1112, 16290, 2]
 
-// Module 16238 (AccountWebAuthnRegisterSetting)
+// Module 16289 (AccountWebAuthnRegisterSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

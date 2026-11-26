@@ -1,23 +1,23 @@
-// Module ID: 16314
-// Function ID: 16315
+// Module ID: 16365
+// Function ID: 16366
 // Name: RequestYourDataSetting
-// Dependencies: [17, 1386, 9513, 1071, 21, 1257, 7307, 1262, 504, 4927, 16315, 1112, 2168, 11914, 16317, 2]
+// Dependencies: [17, 1387, 9555, 1071, 21, 1258, 7338, 1263, 504, 4958, 16366, 1112, 2169, 11962, 16368, 2]
 // Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 16314 (RequestYourDataSetting)
+// Module 16365 (RequestYourDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1112 */;
-import react_native2 from "react-native" /* 1262 */;
-import _modDef2168 from "module_2168" /* 2168 */;
-import _slicedToArray from "_slicedToArray" /* 4927 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7307 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import UserStore from "UserStore" /* 1386 */;
+import react_native2 from "react-native" /* 1263 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import _slicedToArray from "_slicedToArray" /* 4958 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7338 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
-import module_1257 from "module_1257" /* 1257 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
+import module_1258 from "module_1258" /* 1258 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,16 +25,16 @@ const require = globalThis.__r;
 let UserSettingsSections;
 let hasOwnProperty;
 let tmp;
-const HarvesterUtils = tmp(16315);
-const f109791 = () => currentUser.getCurrentUser();
-const f109792 = (harvestRequest) => harvestRequest.harvestRequest;
-const f109793 = (isRequesting) => isRequesting.isRequesting;
+const HarvesterUtils = tmp(16366);
+const f110102 = () => currentUser.getCurrentUser();
+const f110103 = (harvestRequest) => harvestRequest.harvestRequest;
+const f110104 = (isRequesting) => isRequesting.isRequesting;
 function useIsHarvestRequestDisabled() {
   const items = [UserStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f109791);
-  const tmp4 = closure_7(f109792, _slicedToArray.shallow);
-  let harvestDisabledResult = closure_7(f109793, _slicedToArray.shallow);
+  const stateFromStores = obj.useStateFromStores(items, f110102);
+  const tmp4 = closure_7(f110103, _slicedToArray.shallow);
+  let harvestDisabledResult = closure_7(f110104, _slicedToArray.shallow);
   let tmp6 = null == stateFromStores;
   if (!tmp6) {
     if (!harvestDisabledResult) {
@@ -49,7 +49,7 @@ const ActivityIndicator = react_native.ActivityIndicator;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ REQUEST_DATA_LIMIT_DAYS: hasOwnProperty, UserSettingsSections } = Constants);
 const jsx = Fragment.jsx;
-let closure_7 = module_1257.createWithEqualityFn(() => ({ isRequesting: false, harvestRequest: null }));
+let closure_7 = module_1258.createWithEqualityFn(() => ({ isRequesting: false, harvestRequest: null }));
 let obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -74,10 +74,10 @@ let obj = {
     } else if (null == tmp3) {
       return null;
     } else {
-      const obj3 = _modDef2168(tmp3.created_at);
+      const obj3 = _modDef2169(tmp3.created_at);
       const addResult = obj3.add(hasOwnProperty, "days");
       let formatToPlainStringResult = null;
-      if (!addResult.isBefore(_modDef2168())) {
+      if (!addResult.isBefore(_modDef2169())) {
         const intl = tmp(1112).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj = { date: addResult.format("MMMM Do YYYY") };
@@ -92,9 +92,9 @@ let obj = {
     let currentUser;
     const items = [UserStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f109791);
-    const tmp4 = closure_7(f109792, _slicedToArray.shallow);
-    let harvestDisabledResult = closure_7(f109793, _slicedToArray.shallow);
+    const stateFromStores = obj.useStateFromStores(items, f110102);
+    const tmp4 = closure_7(f110103, _slicedToArray.shallow);
+    let harvestDisabledResult = closure_7(f110104, _slicedToArray.shallow);
     let tmp6 = null == stateFromStores;
     if (!tmp6) {
       if (!harvestDisabledResult) {

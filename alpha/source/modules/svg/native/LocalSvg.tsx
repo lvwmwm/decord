@@ -1,10 +1,10 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 16515
+// Function ID: 16516
 // Name: LocalSvg
-// Dependencies: [5, 32, 19, 17, 21, 1148, 7912, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1148, 7946, 2]
 // Exports: default
 
-// Module 16464 (LocalSvg)
+// Module 16515 (LocalSvg)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -43,7 +43,7 @@ export default function LocalSvg(asset) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -79,7 +79,7 @@ export default function LocalSvg(asset) {
                 tmp4(closure_0);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp15) {
             c3 = 3;
@@ -95,7 +95,7 @@ export default function LocalSvg(asset) {
       c0 = true;
     };
   }, items);
-  const SvgXml = asset(7912).SvgXml;
+  const SvgXml = asset(7946).SvgXml;
   const merged1 = Object.assign(merged);
   return <SvgXml xml={first} />;
 };

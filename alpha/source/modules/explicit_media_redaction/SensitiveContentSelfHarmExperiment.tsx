@@ -1,11 +1,11 @@
-// Module ID: 8771
-// Function ID: 8772
+// Module ID: 8813
+// Function ID: 8814
 // Name: SensitiveContentSelfHarmExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled
 
-// Module 8771 (SensitiveContentSelfHarmExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 8813 (SensitiveContentSelfHarmExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,15 +1,15 @@
-// Module ID: 19935
-// Function ID: 19936
+// Module ID: 19999
+// Function ID: 20000
 // Name: useLoadGuildStickerWithCreator
-// Dependencies: [5, 32, 19, 1386, 6897, 504, 10785, 2]
+// Dependencies: [5, 32, 19, 1387, 6928, 504, 10831, 2]
 // Exports: default
 
-// Module 19935 (useLoadGuildStickerWithCreator)
+// Module 19999 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import GuildStickersStore from "GuildStickersStore" /* 6897 */;
+import UserStore from "UserStore" /* 1387 */;
+import GuildStickersStore from "GuildStickersStore" /* 6928 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ export default function useLoadGuildStickersWithCreator(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           let c3;
@@ -87,7 +87,7 @@ export default function useLoadGuildStickersWithCreator(arg0) {
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp16) {
             let closure_2 = tmp16;

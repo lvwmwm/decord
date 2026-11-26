@@ -1,12 +1,12 @@
-// Module ID: 19488
-// Function ID: 19489
+// Module ID: 19551
+// Function ID: 19552
 // Name: useDrawerToggle
-// Dependencies: [19, 11732, 11733, 1653, 8577, 18144, 1112, 2]
+// Dependencies: [19, 11780, 11781, 1654, 8619, 18203, 1112, 2]
 // Exports: default
 
-// Module 19488 (useDrawerToggle)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18144 */;
+// Module 19551 (useDrawerToggle)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11780 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18203 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ export default function useDrawerToggle(arg0) {
   useDrawerToggleTsx1.__closure = items1;
   useDrawerToggleTsx1.__workletHash = 13427978758146;
   useDrawerToggleTsx1.__initData = tmp5;
-  const obj2 = require("module_1653");
+  const obj2 = require("module_1654");
   const derivedValue = obj2.useDerivedValue(useDrawerToggleTsx1);
   const tmp9 = controlsSpecs(connected[4])(derivedValue);
   const items2 = [arg0, dismissPanel, connected, controlsSpecs];

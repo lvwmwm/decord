@@ -1,17 +1,17 @@
-// Module ID: 19878
-// Function ID: 19879
+// Module ID: 19942
+// Function ID: 19943
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 12473, 21, 5012, 18731, 1112, 6109, 5603, 6113, 7250, 19861, 7150, 2]
+// Dependencies: [32, 19, 17, 12522, 21, 5043, 18794, 1112, 6140, 5634, 6144, 7281, 19925, 7181, 2]
 // Exports: default
 
-// Module 19878 (MentionSpamTriggerFields)
+// Module 19942 (MentionSpamTriggerFields)
 import react_native from "react-native" /* 17 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19861 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19925 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 12473 */;
+import Constants from "Constants" /* 12522 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,26 +49,26 @@ export default function MentionSpamTriggerFields(rule) {
   const triggerMetadata = rule.triggerMetadata;
   ({ mentionTotalLimit, mentionRaidProtectionEnabled } = triggerMetadata);
   const tmp = closure_9();
-  let obj = rule(18731);
+  let obj = rule(18794);
   let hasMentionRaidLimitAccess = obj.useHasMentionRaidLimitAccess(rule.guildId);
   const intl = rule(1112).intl;
   const stringResult = intl.string(rule(1112).t["s/26oQ"]);
   [tmp7, c3] = _slicedToArray(react.useState(true), 2);
   const tmp6 = _slicedToArray(react.useState(true), 2);
   let obj2 = { title: intl2.string(rule(1112).t.IGfuTa), hasIcons: false, helperText: tmp9, children: items };
-  const TableRowGroup = rule(6109).TableRowGroup;
+  const TableRowGroup = rule(6140).TableRowGroup;
   intl2 = rule(1112).intl;
   tmp9 = undefined;
   const tmp8 = closure_8;
   if (!tmp7) {
     let obj3 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl3.formatToPlainString(rule(1112).t["8Y5zsp"], obj4) };
-    const Text = tmp2(5603).Text;
+    const Text = tmp2(5634).Text;
     intl3 = tmp2(1112).intl;
     obj4 = { minimum, maximum };
     tmp9 = closure_7(Text, obj3);
   }
   const obj5 = { label: stringResult, subLabel: intl4.string(rule(1112).t["8uW4/N"]), trailing: closure_7(tmp14, obj6) };
-  const TableRow = tmp2(6113).TableRow;
+  const TableRow = tmp2(6144).TableRow;
   intl4 = tmp2(1112).intl;
   obj6 = { style: tmp.limitField, children: closure_7(TextField, obj7) };
   obj7 = {
@@ -104,7 +104,7 @@ export default function MentionSpamTriggerFields(rule) {
     status: "error",
     accessibilityLabel: stringResult
   };
-  TextField = tmp2(7250).TextField;
+  TextField = tmp2(7281).TextField;
   items = [tmp13(TableRow, obj5), ];
   tmp14 = View;
   if (hasMentionRaidLimitAccess) {
@@ -121,7 +121,7 @@ export default function MentionSpamTriggerFields(rule) {
           return dependencyMap(obj);
         }
     };
-    const TableCheckboxRow = tmp2(7150).TableCheckboxRow;
+    const TableCheckboxRow = tmp2(7181).TableCheckboxRow;
     intl5 = tmp2(1112).intl;
     intl6 = tmp2(1112).intl;
     hasMentionRaidLimitAccess = tmp13(TableCheckboxRow, obj8);

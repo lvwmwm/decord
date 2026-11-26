@@ -1,13 +1,13 @@
-// Module ID: 7567
-// Function ID: 7568
+// Module ID: 7598
+// Function ID: 7599
 // Name: OrderConstraintUtils
-// Dependencies: [7568, 5729, 1112, 2]
+// Dependencies: [7599, 5760, 1112, 2]
 // Exports: getBlockingConstraintReasonCode, getOrderConstraintMessage
 
-// Module 7567 (OrderConstraintUtils)
+// Module 7598 (OrderConstraintUtils)
 import intl5 from "intl" /* 1112 */;
-import PaymentConstants from "PaymentConstants" /* 5729 */;
-import OrderConstants from "OrderConstants" /* 7568 */;
+import PaymentConstants from "PaymentConstants" /* 5760 */;
+import OrderConstants from "OrderConstants" /* 7599 */;
 import size from "module_2" /* 2 */;
 
 function isSpendingLimitReasonCode(reason_code) {

@@ -1,14 +1,14 @@
-// Module ID: 19630
-// Function ID: 19631
+// Module ID: 19693
+// Function ID: 19694
 // Name: DmSettingsUpsellManager
-// Dependencies: [1071, 7444, 19631, 1284, 2]
+// Dependencies: [1071, 7475, 19694, 1285, 2]
 // Exports: acknowledgeDmSettingsUpsell
 
-// Module 19630 (DmSettingsUpsellManager)
+// Module 19693 (DmSettingsUpsellManager)
 import Constants from "Constants" /* 1071 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 19631 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import DmSettingsUpsellActionCreatorsDefault from "DmSettingsUpsellActionCreators" /* 19694 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

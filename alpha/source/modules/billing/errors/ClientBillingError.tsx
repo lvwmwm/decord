@@ -1,13 +1,14 @@
-// Module ID: 5777
-// Function ID: 5778
+// Module ID: 5808
+// Function ID: 5809
 // Name: ClientBillingError
-// Dependencies: [32, 1082, 3, 5763, 4825, 1284, 2]
+// Dependencies: [32, 1082, 3, 5794, 4856, 1285, 1112, 2]
 
-// Module 5777 (ClientBillingError)
+// Module 5808 (ClientBillingError)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1082 */;
-import BillingUtils from "BillingUtils" /* 4825 */;
-import BillingErrorDefault from "BillingError" /* 5763 */;
+import intl2 from "intl" /* 1112 */;
+import BillingUtils from "BillingUtils" /* 4856 */;
+import BillingErrorDefault from "BillingError" /* 5794 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +100,7 @@ class ClientBillingError extends Error {
       const tmp2 = require;
       if (obj.isOfTypeStripeError(error)) {
         return { shape: "stripe_error", error };
-      } else if (error instanceof tmp2(1284).HTTPResponseError) {
+      } else if (error instanceof tmp2(1285).HTTPResponseError) {
         return { shape: "http_error", error };
       } else if (typeof error === "string") {
         return { shape: "string", error };
@@ -402,6 +403,20 @@ class ClientBillingError extends Error {
     const BooleanResult = Boolean(this.source.isStripeWallet) || this.source.selectedElementType === PaymentSourceTypes.PAYMENT_REQUEST;
     return BooleanResult;
   }
+  getApiError() {
+    const classification = this.classification;
+    const shape = classification.shape;
+    if ("billing_error" === shape) {
+      return classification.error;
+    } else if ("http_error" === shape) {
+      const self = this;
+      const self2 = this;
+      const tmp4 = new BillingErrorDefault(classification.error);
+      return tmp4;
+    } else {
+      return null;
+    }
+  }
   getErrorTags() {
     let StringResult;
     let status;
@@ -457,11 +472,11 @@ class ClientBillingError extends Error {
     let fromEntries6;
     let fromEntries7;
     let tmp3;
-    const f88566 = (item) => {
+    const f88811 = (item) => {
       let arr;
       let tmp;
       let tmp2;
-      const f88565 = (acc, item) => {
+      const f88810 = (acc, item) => {
         let tmp;
         [tmp, ] = item;
         return acc.replace(tmp, (str) => {
@@ -476,7 +491,7 @@ class ClientBillingError extends Error {
       };
       [tmp, arr] = item;
       if (typeof arr === "string") {
-        const items = [tmp, items2.reduce(f88565, arr)];
+        const items = [tmp, items2.reduce(f88810, arr)];
         tmp2 = items;
       } else {
         const _Array = Array;
@@ -485,7 +500,7 @@ class ClientBillingError extends Error {
           items1[1] = arr.map((item) => {
             let reduced = item;
             if (typeof item === "string") {
-              reduced = closure_1_16.reduce(f88565, item);
+              reduced = closure_1_16.reduce(f88810, item);
             }
             return reduced;
           });
@@ -500,7 +515,7 @@ class ClientBillingError extends Error {
     const classification = this.classification;
     const shape = classification.shape;
     if ("billing_error" === shape) {
-      const obj = { raw_error: fromEntries7(entries.map(f88566)) };
+      const obj = { raw_error: fromEntries7(entries.map(f88811)) };
       ({ code: obj14.code, status: obj14.status, message: obj14.message } = classification.error);
       const _Object14 = Object;
       const _Object15 = Object;
@@ -513,7 +528,7 @@ class ClientBillingError extends Error {
       ({ type: obj12.type, code: obj12.code, decline_code: obj12.decline_code, param: obj12.param, doc_url: obj12.doc_url, message: obj12.message } = classification.error);
       const _Object12 = Object;
       const _Object13 = Object;
-      const obj3 = { raw_error: fromEntries6(entries1.map(f88566)) };
+      const obj3 = { raw_error: fromEntries6(entries1.map(f88811)) };
       fromEntries6 = Object.fromEntries;
       entries1 = Object.entries(obj5);
       return obj3;
@@ -522,7 +537,7 @@ class ClientBillingError extends Error {
       ({ status: obj10.status, method: obj10.method, message: obj10.message } = classification.error);
       const _Object10 = Object;
       const _Object11 = Object;
-      const obj7 = { raw_error: fromEntries5(entries2.map(f88566)) };
+      const obj7 = { raw_error: fromEntries5(entries2.map(f88811)) };
       fromEntries5 = Object.fromEntries;
       entries2 = Object.entries(obj9);
       return obj7;
@@ -531,7 +546,7 @@ class ClientBillingError extends Error {
       ({ code: obj8.code, message: obj8.message } = classification.error);
       const _Object8 = Object;
       const _Object9 = Object;
-      const obj11 = { raw_error: fromEntries4(entries3.map(f88566)) };
+      const obj11 = { raw_error: fromEntries4(entries3.map(f88811)) };
       fromEntries4 = Object.fromEntries;
       entries3 = Object.entries(obj13);
       return obj11;
@@ -540,7 +555,7 @@ class ClientBillingError extends Error {
       ({ name: obj6.name, code: obj6.code, message: obj6.message } = classification.error);
       const _Object6 = Object;
       const _Object7 = Object;
-      const obj27 = { raw_error: fromEntries3(entries4.map(f88566)) };
+      const obj27 = { raw_error: fromEntries3(entries4.map(f88811)) };
       fromEntries3 = Object.fromEntries;
       entries4 = Object.entries(obj28);
       return obj27;
@@ -549,7 +564,7 @@ class ClientBillingError extends Error {
       ({ name: obj4.name, message: obj4.message } = classification.error);
       const _Object4 = Object;
       const _Object5 = Object;
-      const obj29 = { raw_error: fromEntries2(entries5.map(f88566)) };
+      const obj29 = { raw_error: fromEntries2(entries5.map(f88811)) };
       fromEntries2 = Object.fromEntries;
       entries5 = Object.entries(obj30);
       return obj29;
@@ -578,12 +593,28 @@ class ClientBillingError extends Error {
         const _Object2 = Object;
         const _Object3 = Object;
         const entries6 = Object.entries(obj31);
-        fromEntriesResult = fromEntries(entries6.map(f88566));
+        fromEntriesResult = fromEntries(entries6.map(f88811));
       } else {
         fromEntriesResult = {};
       }
       return fromEntriesResult;
     }
+  }
+  getUserFacingMessage() {
+    const apiError = this.getApiError();
+    let status;
+    if (apiError != null) {
+      status = apiError.status;
+    }
+    if (null != status) {
+      let message;
+      if (apiError.status < 500) {
+        message = apiError.message;
+      }
+      return message;
+    }
+    const intl = intl2.intl;
+    message = intl.string(intl2.t["5mlOCW"]);
   }
   getSentryOptions(arg0) {
     let entries;

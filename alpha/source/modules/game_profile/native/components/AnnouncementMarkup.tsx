@@ -1,19 +1,19 @@
-// Module ID: 14146
-// Function ID: 14147
+// Module ID: 14198
+// Function ID: 14199
 // Name: AnnouncementMarkup
-// Dependencies: [19, 21, 1378, 12, 6088, 7036, 2068, 14147, 14151, 1241, 6091, 2]
+// Dependencies: [19, 21, 1379, 12, 6119, 7067, 2069, 14199, 14203, 1242, 6122, 2]
 // Exports: default
 
-// Module 14146 (AnnouncementMarkup)
+// Module 14198 (AnnouncementMarkup)
 import Fragment from "Fragment" /* 21 */;
-import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import _modDef2068 from "module_2068" /* 2068 */;
-import CustomMarkup from "CustomMarkup" /* 6088 */;
-import Spoiler from "Spoiler" /* 6091 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 7036 */;
-import parseNativeMarkupDefault from "parseNativeMarkup" /* 14151 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import _modDef2069 from "module_2069" /* 2069 */;
+import CustomMarkup from "CustomMarkup" /* 6119 */;
+import Spoiler from "Spoiler" /* 6122 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
+import parseNativeMarkupDefault from "parseNativeMarkup" /* 14203 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let closure_7 = module_12.once(() => {
 });
 module_12 = module_12_mod;
 let closure_8 = module_12.once(() => {
-  const obj = _modDef2068;
+  const obj = _modDef2069;
   return obj.outputFor(closure_6(), "react");
 });
 const result = size.fileFinishedImporting("modules/game_profile/native/components/AnnouncementMarkup.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 14258
-// Function ID: 14259
+// Module ID: 14310
+// Function ID: 14311
 // Name: useGuildTagCreationUpsell
-// Dependencies: [19, 4883, 4944, 1386, 2174, 2178, 14259, 504, 12, 8536, 13448, 2108, 5775, 2]
+// Dependencies: [19, 4914, 4975, 1387, 2175, 2179, 14311, 504, 12, 8578, 13500, 2109, 5806, 2]
 // Exports: useGuildTagCreationUpsell
 
-// Module 14258 (useGuildTagCreationUpsell)
+// Module 14310 (useGuildTagCreationUpsell)
 import _modDef12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
-import ServerTagUpsellOnProfileExperimentDefault from "ServerTagUpsellOnProfileExperiment" /* 14259 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2109 */;
+import ServerTagUpsellOnProfileExperimentDefault from "ServerTagUpsellOnProfileExperiment" /* 14311 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import UserStore from "UserStore" /* 1386 */;
-import BillingInfoStore from "BillingInfoStore" /* 2174 */;
-import SubscriptionStore from "SubscriptionStore" /* 2178 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import UserStore from "UserStore" /* 1387 */;
+import BillingInfoStore from "BillingInfoStore" /* 2175 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import size from "module_2" /* 2 */;
 
 let guildsArray;

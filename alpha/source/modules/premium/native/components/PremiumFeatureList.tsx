@@ -1,18 +1,18 @@
-// Module ID: 9675
-// Function ID: 9676
+// Module ID: 9717
+// Function ID: 9718
 // Name: PremiumFeatureList
-// Dependencies: [19, 17, 1071, 21, 5012, 6791, 575, 8046, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 6822, 575, 8088, 2]
 // Exports: default
 
-// Module 9675 (PremiumFeatureList)
+// Module 9717 (PremiumFeatureList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import _mod8046 from "module_8046" /* 8046 */;
+import _mod8088 from "module_8088" /* 8088 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import TextStyles from "TextStyles" /* 6791 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import TextStyles from "TextStyles" /* 6822 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -55,7 +55,7 @@ export default function PremiumFeatureList(style) {
       items2 = [React3(View, obj2), ];
       const obj4 = { numberOfLines: 2, style: items3, text: color.label };
       items3 = [closure_4.label, react];
-      items2[1] = React3(_mod8046.FormRow.Label, obj4);
+      items2[1] = React3(_mod8088.FormRow.Label, obj4);
       const children = [hasOwnProperty(View, obj, index), ];
       let tmp3 = null;
       const tmp = hasOwnProperty;

@@ -1,18 +1,18 @@
-// Module ID: 15528
-// Function ID: 15529
+// Module ID: 15579
+// Function ID: 15580
 // Name: Ellipsis
-// Dependencies: [19, 17, 5013, 21, 5012, 575, 1653, 5222, 504, 2]
+// Dependencies: [19, 17, 5044, 21, 5043, 575, 1654, 5253, 504, 2]
 
-// Module 15528 (Ellipsis)
+// Module 15579 (Ellipsis)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import createStyles from "createStyles" /* 5012 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set2;
@@ -45,7 +45,7 @@ function AnimatedEllipsisDot(disableScale) {
     let tmp7;
     let tmp8;
     let tmp9;
-    const items = [closure_10, _mod1653.withRepeat, _mod1653.withSequence, _mod1653.withDelay, sequenceStartDelay, timing_timing.withTiming, delay, 350, sequenceEndDelay];
+    const items = [closure_10, _mod1654.withRepeat, _mod1654.withSequence, _mod1654.withDelay, sequenceStartDelay, timing_timing.withTiming, delay, 350, sequenceEndDelay];
     let c0;
     let c1;
     let c2;

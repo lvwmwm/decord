@@ -1,21 +1,21 @@
-// Module ID: 12317
-// Function ID: 12318
+// Module ID: 12367
+// Function ID: 12368
 // Name: GameOrganizationJoinActionSheet
-// Dependencies: [19, 17, 2164, 1386, 11869, 21, 5012, 575, 12281, 504, 12273, 7481, 12318, 5226, 12274, 5240, 7476, 10702, 1112, 2650, 6084, 7488, 7711, 1186, 5610, 7722, 2]
+// Dependencies: [19, 17, 2165, 1387, 11917, 21, 5043, 575, 12331, 504, 12323, 7512, 12368, 5257, 12324, 5271, 7507, 10747, 1112, 2651, 6115, 7519, 7745, 1186, 5641, 11663, 2]
 // Exports: default
 
-// Module 12317 (GameOrganizationJoinActionSheet)
+// Module 12367 (GameOrganizationJoinActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11869 */;
-import openGameOrganizationJoinModalDefault from "openGameOrganizationJoinModal" /* 12274 */;
-import prefetchGameOrganizationAccountLinkStateDefault from "prefetchGameOrganizationAccountLinkState" /* 12318 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11917 */;
+import openGameOrganizationJoinModalDefault from "openGameOrganizationJoinModal" /* 12324 */;
+import prefetchGameOrganizationAccountLinkStateDefault from "prefetchGameOrganizationAccountLinkState" /* 12368 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2164 */;
-import UserStore from "UserStore" /* 1386 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -31,7 +31,7 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/nat
 
 export default function GameOrganizationJoinActionSheet(code) {
   let Button;
-  let GameControllerIcon;
+  let ExperimentalGameControllerLinkIcon;
   let Stack;
   let currentUser;
   let formatToPlainStringResult;
@@ -117,11 +117,11 @@ export default function GameOrganizationJoinActionSheet(code) {
               obj9 = { gameName: tmp4.application.name, displayNoun: str };
               intl2 = tmp6(tmp3[18]).intl;
               obj10 = { displayNoun: str };
-              obj11 = { text: intl3.string(analyticsLocations(id[19]).qD9GKX), icon: closure_8(GameControllerIcon, obj12), iconPosition: "start", size: "lg", onPress: tmp11 };
+              obj11 = { text: intl3.string(analyticsLocations(id[19]).qD9GKX), icon: closure_8(ExperimentalGameControllerLinkIcon, obj12), iconPosition: "start", size: "lg", onPress: tmp11 };
               Button = tmp6(tmp3[24]).Button;
               intl3 = tmp6(tmp3[18]).intl;
               obj12 = { size: "sm", color: analyticsLocations(id[7]).colors.WHITE };
-              GameControllerIcon = tmp6(tmp3[25]).GameControllerIcon;
+              ExperimentalGameControllerLinkIcon = tmp6(tmp3[25]).ExperimentalGameControllerLinkIcon;
               return closure_8(PromoSheet, obj3);
             }
           }

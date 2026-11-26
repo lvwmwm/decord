@@ -1,26 +1,26 @@
-// Module ID: 10807
-// Function ID: 10808
+// Module ID: 10853
+// Function ID: 10854
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 9062, 1071, 1388, 21, 10808, 1112, 575, 10809, 10810, 5012, 1186, 5603, 9069, 9655, 1494, 6348, 6087, 1255, 9059, 6121, 7718, 5699, 10811, 2]
+// Dependencies: [19, 17, 9104, 1071, 1389, 21, 10854, 1112, 575, 10855, 10856, 5043, 1186, 5634, 9111, 9697, 1495, 6379, 6118, 1256, 9101, 6152, 7752, 5730, 10857, 2]
 // Exports: default
 
-// Module 10807 (StickersPremiumUpsellAlert)
+// Module 10853 (StickersPremiumUpsellAlert)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9059 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10808 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10809 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10810 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9101 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10854 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10855 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10856 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 9062 */;
+import IAPStore from "IAPStore" /* 9104 */;
 import Constants from "Constants" /* 1071 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -119,13 +119,13 @@ export default function StickersPremiumUpsellAlert(arg0) {
       const products = obj.loadProducts();
     }
   }, []);
-  const tmp5 = analyticsLocations(9655)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(9697)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
-  const height = tmp3(1494)().height;
-  analyticsLocations = tmp3(6348)().analyticsLocations;
+  const height = tmp3(1495)().height;
+  analyticsLocations = tmp3(6379)().analyticsLocations;
   let obj = {
     cancelText: intl.string(intl4.t.f3Pet9),
     confirmColor: native.ButtonColors.GREEN,
@@ -147,7 +147,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: items,
     children: items1
   };
-  const tmp3Result = analyticsLocations(6087);
+  const tmp3Result = analyticsLocations(6118);
   intl = intl4.intl;
   intl2 = intl4.intl;
   items = [tmp.alert, ];
@@ -158,8 +158,8 @@ export default function StickersPremiumUpsellAlert(arg0) {
   items[1] = shortHeightAlert;
   let obj2 = { style: tmp.closeContainer, children: closure_13(PressableOpacity, obj3) };
   obj3 = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: closure_13(Icon, obj4) };
-  PressableOpacity = tmp9(6121).PressableOpacity;
-  obj4 = { source: analyticsLocations(7718) };
+  PressableOpacity = tmp9(6152).PressableOpacity;
+  obj4 = { source: analyticsLocations(7752) };
   Icon = tmp9(1186).Icon;
   items1 = [closure_13(closure_4, obj2), ];
   const obj5 = {
@@ -169,11 +169,11 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: items2
   };
-  const obj6 = { source: analyticsLocations(10811), style: tmp.imageHeader };
-  const tmp3Result2 = analyticsLocations(5699);
+  const obj6 = { source: analyticsLocations(10857), style: tmp.imageHeader };
+  const tmp3Result2 = analyticsLocations(5730);
   items2 = [closure_13(tmp3Result2, obj6), , ];
   const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
-  const Text = tmp9(5603).Text;
+  const Text = tmp9(5634).Text;
   const intl3 = tmp9(1112).intl;
   format = intl3.format;
   TBsJfQ = tmp9(1112).t.TBsJfQ;

@@ -1,17 +1,17 @@
-// Module ID: 15559
-// Function ID: 15560
+// Module ID: 15610
+// Function ID: 15611
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 5012, 575, 5019, 5699, 5603, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5050, 5730, 5634, 2]
 // Exports: default
 
-// Module 15559 (EmptyState)
+// Module 15610 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import shared from "shared" /* 5019 */;
-import FastImageDefault from "FastImage" /* 5699 */;
+import shared from "shared" /* 5050 */;
+import FastImageDefault from "FastImage" /* 5730 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -69,14 +69,14 @@ export default function EmptyState(Illustration) {
     if (null != title) {
       const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items4, children: title };
       items4 = [tmp.emptyTitle, tmp19];
-      tmp23 = React3(tmp2(5603).Text, obj5);
+      tmp23 = React3(tmp2(5634).Text, obj5);
     }
     items5 = [tmp23, ];
     let tmp25 = null;
     if (null != body) {
       const obj6 = { variant: "body-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items6, children: body };
       items6 = [tmp.emptyBody, tmp18];
-      tmp25 = React3(tmp2(5603).Text, obj6);
+      tmp25 = React3(tmp2(5634).Text, obj6);
     }
     items5[1] = tmp25;
     tmp20Result = tmp20(tmp21, obj4);

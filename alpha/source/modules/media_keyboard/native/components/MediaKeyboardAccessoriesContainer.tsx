@@ -1,16 +1,16 @@
-// Module ID: 18565
-// Function ID: 18566
+// Module ID: 18628
+// Function ID: 18629
 // Name: MediaKeyboardAccessoriesContainer
-// Dependencies: [19, 17, 10232, 21, 1378, 5012, 1653, 504, 2]
+// Dependencies: [19, 17, 10274, 21, 1379, 5043, 1654, 504, 2]
 // Exports: default
 
-// Module 18565 (MediaKeyboardAccessoriesContainer)
+// Module 18628 (MediaKeyboardAccessoriesContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10232 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import NativeMenuStore from "NativeMenuStore" /* 10274 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,7 +59,7 @@ export default function MediaKeyboardAccessoriesContainer(arg0) {
     return obj;
   }, items);
   importDefault = react.useRef(false);
-  let obj = require("module_1653");
+  let obj = require("module_1654");
   sharedValue = obj.useSharedValue(false);
   const items1 = [sharedValue];
   const callback = react.useCallback(() => {
@@ -68,10 +68,10 @@ export default function MediaKeyboardAccessoriesContainer(arg0) {
       const result = sharedValue.set(true);
     }
   }, items1);
-  let tmp7 = require("module_1653");
+  let tmp7 = require("module_1654");
   const items2 = [closure_8, animateOnMount, sharedValue, animatedIndex, initialPosition, animatedPosition, , ];
   const useAnimatedStyle = tmp7.useAnimatedStyle;
-  items2[6] = require("module_1653").interpolate;
+  items2[6] = require("module_1654").interpolate;
   items2[7] = closure_6;
   let c0;
   let c1;
@@ -118,7 +118,7 @@ export default function MediaKeyboardAccessoriesContainer(arg0) {
   const tmp3Result = tmp3(sharedValue[7]);
   const stateFromStores = tmp3Result.useStateFromStores(items4, () => open.isOpen());
   let str;
-  const View = require("module_1653").View;
+  const View = require("module_1654").View;
   const tmp18 = jsx;
   if (stateFromStores) {
     str = "no-hide-descendants";

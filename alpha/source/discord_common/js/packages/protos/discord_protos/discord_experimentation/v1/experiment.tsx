@@ -1,14 +1,14 @@
-// Module ID: 5740
-// Function ID: 5741
+// Module ID: 5771
+// Function ID: 5772
 // Name: experiment
-// Dependencies: [32, 1196, 1225, 1226, 5741, 5742, 2]
+// Dependencies: [32, 1196, 1225, 1226, 5772, 5773, 2]
 
-// Module 5740 (experiment)
+// Module 5771 (experiment)
 import _mod1196 from "module_1196" /* 1196 */;
 import timestamp from "timestamp" /* 1225 */;
 import wrappers from "wrappers" /* 1226 */;
-import rules from "rules" /* 5741 */;
-import duration from "duration" /* 5742 */;
+import rules from "rules" /* 5772 */;
+import duration from "duration" /* 5773 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -1646,15 +1646,16 @@ const bucket_AllocationExposureModeType1 = new Bucket_AllocationExposureMode$Typ
 const MessageType11 = _mod1196.MessageType;
 class LifecyclePlan_MeasurementPlan$Type extends MessageType11 {
   constructor() {
-    let items = [, ];
+    let items = [, , ];
     const obj = { no: 1, name: "status", kind: "enum", T: T11 };
     items[0] = obj;
     items[1] = { no: 2, name: "ramp_steps", kind: "message", repeat: 1, T: T12 };
+    items[2] = { no: 3, name: "id", kind: "scalar", T: 6 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.LifecyclePlan.MeasurementPlan", items, new.target);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { status: 0, rampSteps: [] };
+    const obj = { status: 0, rampSteps: [], id: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
@@ -1682,6 +1683,9 @@ class LifecyclePlan_MeasurementPlan$Type extends MessageType11 {
         } else if (2 === tmp5) {
           let rampSteps = obj.rampSteps;
           let arr = rampSteps.push(lifecyclePlan_RolloutPlanType.internalBinaryRead(pos, pos.uint32(), readUnknownField));
+        } else if (3 === tmp5) {
+          let str4 = pos.fixed64();
+          obj.id = str4.toString();
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -1726,6 +1730,10 @@ class LifecyclePlan_MeasurementPlan$Type extends MessageType11 {
         num2 = num2 + 1;
         length = status.rampSteps.length;
       } while (num2 < length);
+    }
+    if ("0" !== status.id) {
+      const tagResult2 = tag.tag(3, _mod1196.WireType.Bit64);
+      tagResult2.fixed64(status.id);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
@@ -1739,24 +1747,26 @@ class LifecyclePlan_MeasurementPlan$Type extends MessageType11 {
   }
 }
 const prototype11 = LifecyclePlan_MeasurementPlan$Type.prototype;
-const items7 = [, ];
+const items7 = [, , ];
 const obj25 = { no: 1, name: "status", kind: "enum", T: T11 };
 items7[0] = obj25;
-const obj26 = { no: 2, name: "ramp_steps", kind: "message", repeat: 1, T: T12 };
-items7[1] = obj26;
+items7[1] = { no: 2, name: "ramp_steps", kind: "message", repeat: 1, T: T12 };
+const obj26 = { no: 3, name: "id", kind: "scalar", T: 6 };
+items7[2] = obj26;
 const bucket_AllocationExposureModeType2 = new Bucket_AllocationExposureMode$Type("discord_protos.discord_experimentation.v1.LifecyclePlan.MeasurementPlan", items7, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", LifecyclePlan_MeasurementPlan$Type, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj20, experimentType, tmp9, tmp10, tmp11, tmp12, tmp13, this, items41, this, items42, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, Bucket_AllocationExposureMode$Type, items7, this, exports, obj26, undefined);
 const MessageType12 = _mod1196.MessageType;
 class LifecyclePlan_RolloutPlan$Type extends MessageType12 {
   constructor() {
-    let items = [, ];
+    let items = [, , ];
     const obj = { no: 1, name: "status", kind: "enum", T: T13 };
     items[0] = obj;
     items[1] = { no: 2, name: "ramp_steps", kind: "message", repeat: 1, T: T14 };
+    items[2] = { no: 3, name: "id", kind: "scalar", T: 6 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.LifecyclePlan.RolloutPlan", items, new.target);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { status: 0, rampSteps: [] };
+    const obj = { status: 0, rampSteps: [], id: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
@@ -1784,6 +1794,9 @@ class LifecyclePlan_RolloutPlan$Type extends MessageType12 {
         } else if (2 === tmp5) {
           let rampSteps = obj.rampSteps;
           let arr = rampSteps.push(lifecyclePlan_RolloutPlanType.internalBinaryRead(pos, pos.uint32(), readUnknownField));
+        } else if (3 === tmp5) {
+          let str4 = pos.fixed64();
+          obj.id = str4.toString();
         } else {
           let onRead = readUnknownField.readUnknownField;
           if ("throw" === onRead) {
@@ -1829,6 +1842,10 @@ class LifecyclePlan_RolloutPlan$Type extends MessageType12 {
         length = status.rampSteps.length;
       } while (num2 < length);
     }
+    if ("0" !== status.id) {
+      const tagResult2 = tag.tag(3, _mod1196.WireType.Bit64);
+      tagResult2.fixed64(status.id);
+    }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
@@ -1841,11 +1858,12 @@ class LifecyclePlan_RolloutPlan$Type extends MessageType12 {
   }
 }
 const prototype12 = LifecyclePlan_RolloutPlan$Type.prototype;
-const items8 = [, ];
+const items8 = [, , ];
 const obj27 = { no: 1, name: "status", kind: "enum", T: T13 };
 items8[0] = obj27;
-const obj28 = { no: 2, name: "ramp_steps", kind: "message", repeat: 1, T: T14 };
-items8[1] = obj28;
+items8[1] = { no: 2, name: "ramp_steps", kind: "message", repeat: 1, T: T14 };
+const obj28 = { no: 3, name: "id", kind: "scalar", T: 6 };
+items8[2] = obj28;
 const lifecyclePlan_MeasurementPlanType = new LifecyclePlan_MeasurementPlan$Type("discord_protos.discord_experimentation.v1.LifecyclePlan.RolloutPlan", items8, tmp6, tmp5, "create", LifecyclePlan_RolloutPlan$Type, "internalBinaryRead", "internalBinaryWrite", LifecyclePlan_MeasurementPlan$Type, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, obj17, obj18, obj19, obj20, experimentType, tmp9, tmp10, tmp11, tmp12, tmp13, this, items41, this, items42, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, items8, this, exports, obj28, undefined, 8, 7, 6);
 const MessageType13 = _mod1196.MessageType;
 class LifecyclePlan_RampStep$Type extends MessageType13 {

@@ -1,20 +1,20 @@
-// Module ID: 10715
-// Function ID: 10716
+// Module ID: 10760
+// Function ID: 10761
 // Name: markUnread
-// Dependencies: [5, 4946, 4861, 6360, 6901, 1386, 1071, 3, 11, 8072, 1284, 2]
+// Dependencies: [5, 4977, 4892, 6391, 6932, 1387, 1071, 3, 11, 8114, 1285, 2]
 // Exports: default
 
-// Module 10715 (markUnread)
+// Module 10760 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1071 */;
-import ReadStateStore from "ReadStateStore" /* 6901 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8072 */;
+import ReadStateStore from "ReadStateStore" /* 6932 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8114 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4946 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import MessageStore from "MessageStore" /* 6360 */;
-import UserStore from "UserStore" /* 1386 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import MessageStore from "MessageStore" /* 6391 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_2, closure_3, closure_4, currentUser, mention_count, messages;
@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

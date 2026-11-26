@@ -1,14 +1,14 @@
-// Module ID: 13716
-// Function ID: 13717
+// Module ID: 13768
+// Function ID: 13769
 // Name: HubActionCreators
-// Dependencies: [5, 1071, 6104, 1263, 4873, 1284, 572, 2]
+// Dependencies: [5, 1071, 6135, 1264, 4904, 1285, 572, 2]
 
-// Module 13716 (HubActionCreators)
+// Module 13768 (HubActionCreators)
 import Constants from "Constants" /* 1071 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import TypeUtils from "TypeUtils" /* 4873 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6104 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import TypeUtils from "TypeUtils" /* 4904 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6135 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -147,7 +147,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp29) {
           body = tmp29;
           if (0 === c3) {
@@ -179,7 +179,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -213,7 +213,7 @@ let obj = {
                 return obj7;
               } else {
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
             }
           } else if (1 === constants) {

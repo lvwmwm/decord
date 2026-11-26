@@ -1,8 +1,8 @@
-// Module ID: 13679
-// Function ID: 13680
+// Module ID: 13731
+// Function ID: 13732
 // Dependencies: [2]
 
-// Module 13679
+// Module 13731
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LeafIllocon-1x.png.js");

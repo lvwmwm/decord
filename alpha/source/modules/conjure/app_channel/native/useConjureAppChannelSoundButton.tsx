@@ -1,19 +1,19 @@
-// Module ID: 14011
-// Function ID: 14012
+// Module ID: 14063
+// Function ID: 14064
 // Name: useConjureAppChannelSoundButton
-// Dependencies: [19, 6905, 6906, 7571, 5656, 14012, 504, 14013, 10356, 7136, 1112, 4244, 5694, 9954, 2]
+// Dependencies: [19, 6936, 6937, 7602, 5687, 14064, 504, 14065, 10401, 7167, 1112, 4245, 5725, 9996, 2]
 // Exports: default
 
-// Module 14011 (useConjureAppChannelSoundButton)
+// Module 14063 (useConjureAppChannelSoundButton)
 import intl2 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5656 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
-import FramesConstants from "FramesConstants" /* 6906 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9954 */;
-import VoiceXIcon from "VoiceXIcon" /* 10356 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
+import FramesConstants from "FramesConstants" /* 6937 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9996 */;
+import VoiceXIcon from "VoiceXIcon" /* 10401 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6905 */;
+import FramesStore from "FramesStore" /* 6936 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ export default function useConjureAppChannelSoundButton(application_id, arg1) {
           onPress() {
                   let intl;
                   if (stateFromStores) {
-                    const obj = { text: intl.string(_modDef4244.W8Q9fy), icon: VoiceXIcon.VoiceXIcon };
+                    const obj = { text: intl.string(_modDef4245.W8Q9fy), icon: VoiceXIcon.VoiceXIcon };
                     const open = ToastActionCreatorsDefault.open;
                     ToastActionCreatorsDefault;
                     intl = intl2.intl;

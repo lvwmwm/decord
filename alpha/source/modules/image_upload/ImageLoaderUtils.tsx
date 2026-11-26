@@ -1,18 +1,18 @@
-// Module ID: 1447
-// Function ID: 1448
+// Module ID: 1448
+// Function ID: 1449
 // Name: ImageLoaderUtils
-// Dependencies: [32, 5, 1071, 1448, 1454, 559, 1478, 1488, 1379, 1491, 1449, 2022, 12, 2]
+// Dependencies: [32, 5, 1071, 1449, 1455, 559, 1479, 1489, 1380, 1492, 1450, 2023, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1447 (ImageLoaderUtils)
+// Module 1448 (ImageLoaderUtils)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1379 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1448 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1449 */;
-import LRUCacheDefault from "LRUCache" /* 1454 */;
-import _modDef1488 from "module_1488" /* 1488 */;
-import ImageUtils from "ImageUtils" /* 1491 */;
-import react_nativeDefault from "react-native" /* 2022 */;
+import URLUtilsDefault from "URLUtils" /* 1380 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1449 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1450 */;
+import LRUCacheDefault from "LRUCache" /* 1455 */;
+import _modDef1489 from "module_1489" /* 1489 */;
+import ImageUtils from "ImageUtils" /* 1492 */;
+import react_nativeDefault from "react-native" /* 2023 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
@@ -80,7 +80,7 @@ function getSrcWithWidthAndHeight(quality) {
     if (!obj.isDiscordCdnUrl(src)) {
       let tmp5 = _slicedToArray(src.split("?"), 2);
       [tmp6, tmp7] = tmp5;
-      const tmp2Result = _modDef1488;
+      const tmp2Result = _modDef1489;
       const parsed = tmp2Result.parse(tmp7);
       delete tmp8[""];
       const items = [tmp6, parsed];
@@ -128,7 +128,7 @@ function getSrcWithWidthAndHeight(quality) {
       let text = tmp10;
       const tmp2Result3 = _modDef12;
       if (!tmp2Result3.isEmpty(tmp11)) {
-        _modDef1488;
+        _modDef1489;
         text = `${tmp10}?${obj8.stringify(tmp11)}`;
       }
       return text;
@@ -152,7 +152,7 @@ export function isImageLoaded(arg0) {
 }
 export function loadImage(url, bind) {
   let image;
-  const f121801 = async (arg0, value) => {
+  const f122188 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -176,7 +176,7 @@ export function loadImage(url, bind) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -225,7 +225,7 @@ export function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f140605);
+                let failResult = closure_129_2.fail(f141070);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -236,7 +236,7 @@ export function loadImage(url, bind) {
               }
               let num4 = 3;
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           }
         } catch (tmp18) {
@@ -255,7 +255,7 @@ export function loadImage(url, bind) {
     let fn;
     if (value.loaded) {
       if (null != bind) {
-        const obj2 = image(1478);
+        const obj2 = image(1479);
         const awaitOnlineResult = obj2.awaitOnline();
         awaitOnlineResult.then(() => {
           let url;
@@ -293,7 +293,7 @@ export function loadImage(url, bind) {
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f121801);
+    image.onerror = _asyncToGenerator(f122188);
     image.onload = () => {
       let callbacks;
       let url;

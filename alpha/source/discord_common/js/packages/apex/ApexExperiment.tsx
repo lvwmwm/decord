@@ -1,10 +1,10 @@
-// Module ID: 1452
-// Function ID: 1453
+// Module ID: 1453
+// Function ID: 1454
 // Name: discord_common/apex/ApexExperiment
 // Dependencies: [32, 19, 4, 504, 2]
 // Exports: default
 
-// Module 1452 (discord_common/apex/ApexExperiment)
+// Module 1453 (discord_common/apex/ApexExperiment)
 import logger_Logger from "logger/Logger" /* 4 */;
 import react from "react" /* 19 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

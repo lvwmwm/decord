@@ -1,52 +1,52 @@
-// Module ID: 17912
-// Function ID: 17913
+// Module ID: 17969
+// Function ID: 17970
 // Name: GuildTooltipActionSheets
-// Dependencies: [32, 19, 4858, 21, 17913, 2119, 17915, 17918, 17920, 17921, 4845, 17922, 6890, 17923, 11029, 11030, 1706, 2]
+// Dependencies: [32, 19, 4889, 21, 17970, 2120, 17972, 17975, 17977, 17978, 4876, 17979, 6921, 17980, 11075, 11076, 1707, 2]
 // Exports: default
 
-// Module 17912 (GuildTooltipActionSheets)
+// Module 17969 (GuildTooltipActionSheets)
 import Fragment from "Fragment" /* 21 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import dismissible_content from "dismissible_content" /* 4845 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 11029 */;
-import DismissibleActionSheet from "DismissibleActionSheet" /* 11030 */;
-import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 17922 */;
-import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 17923 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import dismissible_content from "dismissible_content" /* 4876 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 11075 */;
+import DismissibleActionSheet from "DismissibleActionSheet" /* 11076 */;
+import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 17979 */;
+import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 17980 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 function GuildRoleSubscriptionsUpsellActionSheetImporter() {
-  return asyncRequire(17913, dependencyMap.paths);
+  return asyncRequire(17970, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsIAPUpsellActionSheetImporter() {
-  return asyncRequire(17915, dependencyMap.paths);
+  return asyncRequire(17972, dependencyMap.paths);
 }
 function CreatorMonetizationOnboardingV2UpsellActionSheetImporter() {
-  return asyncRequire(17918, dependencyMap.paths);
+  return asyncRequire(17975, dependencyMap.paths);
 }
 function TierTemplatesUpsellActionSheetImporter() {
-  return asyncRequire(17920, dependencyMap.paths);
+  return asyncRequire(17977, dependencyMap.paths);
 }
 class GuildTooltipActionSheets {
   constructor(guild) {
     const id = guild.guild.id;
     const items = [];
-    const obj = id(17921);
+    const obj = id(17978);
     if (obj.useCanSeeCreatorMonetizationOnboardingV2Upsell(id)) {
-      items.push(id(4845).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL);
+      items.push(id(4876).DismissibleContent.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL);
     }
     if (useIsGuildEligibleForRoleSubscriptionsUpsellDefault(id)) {
-      items.push(id(4845).DismissibleContent.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL);
+      items.push(id(4876).DismissibleContent.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL);
     }
-    const tmpResult = id(6890);
+    const tmpResult = id(6921);
     if (tmpResult.useCanUseRoleSubscriptionIAP(id)) {
-      items.push(id(4845).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL);
+      items.push(id(4876).DismissibleContent.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL);
     }
     if (useIsEligibleForTierTemplateUpsellDefault(id)) {
-      items.push(id(4845).DismissibleContent.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
+      items.push(id(4876).DismissibleContent.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
     }
     return jsx(SelectedDismissibleContentDefault, {
       contentTypes: items,
@@ -85,9 +85,9 @@ export default function GuildTooltipActionSheetsGuard(arg0) {
     let tmp3;
     let tmp4;
     const items = [closure_13, , ];
-    const scheduleOnUI = _mod1706.scheduleOnUI;
-    _mod1706;
-    items[1] = _mod1706.scheduleOnRN;
+    const scheduleOnUI = _mod1707.scheduleOnUI;
+    _mod1707;
+    items[1] = _mod1707.scheduleOnRN;
     items[2] = require;
     let c0;
     let c1;

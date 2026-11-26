@@ -1,17 +1,17 @@
-// Module ID: 11409
-// Function ID: 11410
+// Module ID: 11456
+// Function ID: 11457
 // Name: publishConjureCopy
-// Dependencies: [5, 6903, 1071, 11410, 11412, 11414, 11429, 1112, 4244, 572, 11424, 1098, 8558, 2]
+// Dependencies: [5, 6934, 1071, 11457, 11459, 11461, 11476, 1112, 4245, 572, 11471, 1098, 8600, 2]
 // Exports: openConjureCopy, publishConjureCopy
 
-// Module 11409 (publishConjureCopy)
+// Module 11456 (publishConjureCopy)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
-import transitionToGuild from "transitionToGuild" /* 8558 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 11410 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11412 */;
+import transitionToGuild from "transitionToGuild" /* 8600 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 11457 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11459 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, message, ok;
@@ -70,7 +70,7 @@ let obj = function _publishConjureCopy() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

@@ -1,14 +1,14 @@
-// Module ID: 9337
-// Function ID: 9338
+// Module ID: 9379
+// Function ID: 9380
 // Name: getPartnerMarketingComponent
-// Dependencies: [32, 1386, 9120, 9123, 9180, 2]
+// Dependencies: [32, 1387, 9162, 9165, 9222, 2]
 // Exports: default
 
-// Module 9337 (getPartnerMarketingComponent)
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9123 */;
+// Module 9379 (getPartnerMarketingComponent)
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9165 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1386 */;
-import PromotionsStore from "PromotionsStore" /* 9120 */;
+import UserStore from "UserStore" /* 1387 */;
+import PromotionsStore from "PromotionsStore" /* 9162 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

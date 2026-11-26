@@ -1,21 +1,21 @@
-// Module ID: 12420
-// Function ID: 12421
+// Module ID: 12469
+// Function ID: 12470
 // Name: ForumPostPlaceholder
-// Dependencies: [32, 19, 5013, 21, 5012, 575, 504, 1653, 5222, 6114, 2]
+// Dependencies: [32, 19, 5044, 21, 5043, 575, 504, 1654, 5253, 6145, 2]
 
-// Module 12420 (ForumPostPlaceholder)
+// Module 12469 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import createStyles from "createStyles" /* 5012 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 
 let obj2;
 const jsx = Fragment.jsx;
@@ -42,16 +42,16 @@ const memoResult = react.memo(function ForumPostPlaceholder() {
     let Easing;
     let obj2;
     const obj = { timingConfig: obj2 };
-    obj2 = { duration: 1000 + 500 * Math.random(), easing: Easing.inOut(_mod1653.Easing.sin) };
-    Easing = _mod1653.Easing;
+    obj2 = { duration: 1000 + 500 * Math.random(), easing: Easing.inOut(_mod1654.Easing.sin) };
+    Easing = _mod1654.Easing;
     return obj;
   }), 1)[0].timingConfig;
   const items1 = [closure_8, stateFromStores, 0.55, , , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  items1[3] = _mod1653.withDelay;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  items1[3] = _mod1654.withDelay;
   items1[4] = 1000;
-  items1[5] = _mod1653.withRepeat;
-  items1[6] = _mod1653.withSequence;
+  items1[5] = _mod1654.withRepeat;
+  items1[6] = _mod1654.withSequence;
   items1[7] = timing_timing.withTiming;
   items1[8] = timingConfig;
   let c0;
@@ -83,7 +83,7 @@ const memoResult = react.memo(function ForumPostPlaceholder() {
   ForumPostPlaceholderTsx1.__workletHash = 3389663500091;
   ForumPostPlaceholderTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(ForumPostPlaceholderTsx1);
-  const View = _modDef1653.View;
+  const View = _modDef1654.View;
   return <View style={animatedStyle} pointerEvents="none">{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");

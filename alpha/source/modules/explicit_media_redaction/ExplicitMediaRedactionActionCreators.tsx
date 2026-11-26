@@ -1,12 +1,12 @@
-// Module ID: 10038
-// Function ID: 10039
+// Module ID: 10080
+// Function ID: 10081
 // Name: ExplicitMediaRedactionActionCreators
-// Dependencies: [1071, 1284, 2]
+// Dependencies: [1071, 1285, 2]
 // Exports: reportFailedSendFalsePositive, reportFalsePositive, sendMessagesForScanning, sendMultiChannelMessagesForScanning
 
-// Module 10038 (ExplicitMediaRedactionActionCreators)
+// Module 10080 (ExplicitMediaRedactionActionCreators)
 import Constants from "Constants" /* 1071 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

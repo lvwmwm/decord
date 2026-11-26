@@ -1,21 +1,21 @@
-// Module ID: 17611
-// Function ID: 17612
+// Module ID: 17668
+// Function ID: 17669
 // Name: register
-// Dependencies: [5, 17612, 502, 1071, 1096, 2168, 1255, 6104, 1263, 5762, 5778, 572, 17613, 17614, 17615, 2]
+// Dependencies: [5, 17669, 502, 1071, 1096, 2169, 1256, 6135, 1264, 5793, 5809, 572, 17670, 17671, 17672, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 17611 (register)
+// Module 17668 (register)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import _modDef2168 from "module_2168" /* 2168 */;
-import APIErrorDefault from "APIError" /* 5762 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5778 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6104 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17613 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17615 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import APIErrorDefault from "APIError" /* 5793 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5809 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6135 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17670 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17672 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17612 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17669 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1071 */;
 import AgeGateConstants from "AgeGateConstants" /* 1096 */;
@@ -45,7 +45,7 @@ let obj = function _scorePassword() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ obj = function _registerPhone() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -245,7 +245,7 @@ function registerFull(giftCodeSKUId) {
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     const tmp4Result = AnalyticsUtilsDefault;
     tmp4Result.track(metroRequire.AGE_GATE_ACTION, obj2);
-    const obj10 = _modDef2168();
+    const obj10 = _modDef2169();
     const diffResult = obj10.diff(birthday, "years");
     const tmp15 = metroRequire;
     if (diffResult >= 13) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(17614)(birthday);
+    tmp9 = tmp4(17671)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

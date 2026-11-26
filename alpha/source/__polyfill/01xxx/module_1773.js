@@ -1,61 +1,108 @@
 // Module ID: 1773
 // Function ID: 1774
-// Dependencies: [1666]
-// Exports: createSingleCSSAnimationProperties
+// Dependencies: [1763, 1760]
+// Exports: normalizeDelay, normalizeDuration, normalizeTimingFunction
 
 // Module 1773
-import _mod1666 from "module_1666" /* 1666 */;
+import _mod1760 from "module_1760" /* 1760 */;
+import _mod1763 from "module_1763" /* 1763 */;
 
+const ERROR_MESSAGES = {
+  invalidDelay(animationDelay) {
+    return "Invalid delay \"" + animationDelay + "\". Expected a number, \"ms\", or \"s\".";
+  },
+  invalidDuration(animationDuration) {
+    return "Invalid duration \"" + animationDuration + "\". Expected a number, \"ms\", or \"s\".";
+  },
+  negativeDuration(animationDuration) {
+    return "Duration cannot be negative, received \"" + animationDuration + "\".";
+  },
+  invalidPredefinedTimingFunction(ease) {
+    const VALID_PREDEFINED_TIMING_FUNCTIONS = _mod1763.VALID_PREDEFINED_TIMING_FUNCTIONS;
+    return "Invalid predefined timing function \"" + ease + "\". Supported values are: " + VALID_PREDEFINED_TIMING_FUNCTIONS.join(", ") + ".";
+  },
+  invalidParametrizedTimingFunction(ease) {
+    let str;
+    if (ease != null) {
+      str = ease.toString();
+    }
+    return "Invalid parametrized timing function \"" + str + "\".";
+  }
+};
 
-export function createSingleCSSAnimationProperties(arg0) {
-  let animationName;
-  let closure_129_0;
-  let closure_129_1;
-  let closure_129_2;
-  let closure_129_3;
-  let closure_129_4;
-  let closure_129_5;
-  let closure_129_6;
-  let obj = _mod1666;
-  const result = obj.convertPropertiesToArrays(arg0);
-  ({ animationName, animationDuration: closure_129_0, animationTimingFunction: closure_129_1, animationDelay: closure_129_2, animationIterationCount: closure_129_3, animationDirection: closure_129_4, animationFillMode: closure_129_5, animationPlayState: closure_129_6 } = result);
-  return animationName.map((animationName, index) => {
-    let tmp;
-    let tmp2;
-    let tmp3;
-    let tmp4;
-    let tmp5;
-    let tmp6;
-    let tmp7;
-    const obj = { animationName, animationDuration: tmp, animationTimingFunction: tmp2, animationDelay: tmp3, animationIterationCount: tmp4, animationDirection: tmp5, animationFillMode: tmp6, animationPlayState: tmp7 };
-    tmp = undefined;
-    if (closure_1_0 != null) {
-      tmp = arr[index % arr.length];
+export { ERROR_MESSAGES };
+export function normalizeDelay(animationDelay) {
+  let num = animationDelay;
+  if (animationDelay === undefined) {
+    num = 0;
+  }
+  const obj = _mod1760;
+  const normalizeTimeUnitResult = obj.normalizeTimeUnit(num);
+  if (null === normalizeTimeUnitResult) {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
+    const error = new Error("[Reanimated] " + obj.invalidDelay(num));
+    throw error;
+  } else {
+    return normalizeTimeUnitResult;
+  }
+}
+export function normalizeDuration(animationDuration) {
+  let num = animationDuration;
+  if (animationDuration === undefined) {
+    num = 0;
+  }
+  const obj = _mod1760;
+  const normalizeTimeUnitResult = obj.normalizeTimeUnit(num);
+  if (null === normalizeTimeUnitResult) {
+    const _Error2 = Error;
+    const _HermesInternal2 = HermesInternal;
+    const self3 = this;
+    const self4 = this;
+    const error = new Error("[Reanimated] " + obj.invalidDuration(num));
+    throw error;
+  } else if (normalizeTimeUnitResult < 0) {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
+    const error1 = new Error("[Reanimated] " + obj.negativeDuration(num));
+    throw error1;
+  } else {
+    return normalizeTimeUnitResult;
+  }
+}
+export function normalizeTimingFunction(animationTimingFunction) {
+  let obj;
+  let str = animationTimingFunction;
+  if (animationTimingFunction === undefined) {
+    str = "ease";
+  }
+  if (typeof str === "string") {
+    obj = _mod1760;
+    if (obj.isPredefinedTimingFunction(str)) {
+      return str;
+    } else {
+      const _Error2 = Error;
+      const _HermesInternal2 = HermesInternal;
+      const self3 = this;
+      const self4 = this;
+      const error = new Error("[Reanimated] " + obj.invalidPredefinedTimingFunction(str));
+      throw error;
     }
-    tmp2 = undefined;
-    if (closure_1_1 != null) {
-      tmp2 = arr2[index % arr2.length];
+  } else {
+    if (str.normalize) {
+      if (typeof str.normalize === "function") {
+        return str.normalize();
+      }
     }
-    tmp3 = undefined;
-    if (closure_1_2 != null) {
-      tmp3 = arr3[index % arr3.length];
-    }
-    tmp4 = undefined;
-    if (closure_1_3 != null) {
-      tmp4 = arr4[index % arr4.length];
-    }
-    tmp5 = undefined;
-    if (closure_1_4 != null) {
-      tmp5 = arr5[index % arr5.length];
-    }
-    tmp6 = undefined;
-    if (closure_1_5 != null) {
-      tmp6 = arr6[index % arr6.length];
-    }
-    tmp7 = undefined;
-    if (closure_1_6 != null) {
-      tmp7 = arr7[index % arr7.length];
-    }
-    return obj;
-  });
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
+    const error1 = new Error("[Reanimated] " + obj.invalidParametrizedTimingFunction(str));
+    throw error1;
+  }
 }

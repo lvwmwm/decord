@@ -1,25 +1,25 @@
-// Module ID: 18436
-// Function ID: 18437
+// Module ID: 18499
+// Function ID: 18500
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 4918, 1071, 21, 5012, 575, 504, 6904, 5226, 1112, 4244, 7515, 5603, 7476, 8465, 7375, 6109, 7150, 18437, 18412, 18426, 18428, 6113, 18442, 2119, 18442, 18443, 15407, 18444, 18455, 2]
+// Dependencies: [5, 32, 19, 17, 4949, 1071, 21, 5043, 575, 504, 6935, 5257, 1112, 4245, 7546, 5634, 7507, 8507, 7406, 6140, 7181, 18500, 18473, 18488, 18490, 6144, 18505, 2120, 18505, 18506, 15457, 18507, 18518, 2]
 // Exports: default
 
-// Module 18436 (useConjureProjectSettingsForm)
+// Module 18499 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl15 from "intl" /* 1112 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6904 */;
-import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18442 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
+import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18505 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4918 */;
+import GuildRoleStore from "GuildRoleStore" /* 4949 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -125,13 +125,13 @@ function ConjureCollaboratorRolesSheet(guildId) {
   let intl = guildId(onSave[12]).intl;
   let formatToPlainString = intl.formatToPlainString;
   let obj2 = { count: first.size, max: guildId(onSave[10]).MAX_PROJECT_COLLABORATOR_ROLES };
-  const g5I05P = require("module_4244").g5I05P;
+  const g5I05P = require("module_4245").g5I05P;
   let formatToPlainStringResult = formatToPlainString(g5I05P, obj2);
-  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_4244").un99lK), footer: closure_9(closure_6, obj4), header: closure_9(BottomSheetTitleHeader, obj5), children: items4 };
+  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_4245").un99lK), footer: closure_9(closure_6, obj4), header: closure_9(BottomSheetTitleHeader, obj5), children: items4 };
   const ActionSheet = guildId(onSave[14]).ActionSheet;
   intl2 = guildId(onSave[12]).intl;
   obj4 = { style: tmp.roleListFooter, children: closure_9(guildId(onSave[15]).Text, { variant: "body-xs/normal", color: "text-muted", children: formatToPlainStringResult }) };
-  obj5 = { title: intl3.string(require("module_4244")["pO3+p5"]), trailing: closure_9(ActionSheetHeaderPressableText, obj6) };
+  obj5 = { title: intl3.string(require("module_4245")["pO3+p5"]), trailing: closure_9(ActionSheetHeaderPressableText, obj6) };
   BottomSheetTitleHeader = guildId(onSave[16]).BottomSheetTitleHeader;
   intl3 = guildId(onSave[12]).intl;
   obj6 = { label: intl4.string(guildId(onSave[12]).t.i4jeWR), onPress: callback };
@@ -195,7 +195,7 @@ function ConjureCollaboratorRolesSheet(guildId) {
             const intl = guildId(onSave[12]).intl;
             const formatToPlainString = intl.formatToPlainString;
             const obj4 = { max: guildId(onSave[10]).MAX_PROJECT_COLLABORATOR_ROLES };
-            const prop = require("module_4244")["dH7+/Z"];
+            const prop = require("module_4245")["dH7+/Z"];
             formatToPlainStringResult = formatToPlainString(prop, obj4);
           }
           return closure_1_9(TableCheckboxRow, obj2, children.id);
@@ -344,7 +344,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
     let mapped;
     const tmp = showsManageServerDefault;
     if (tmp) {
-      let obj = { id: "anyone_with_manage_server", label: intl.string(_modDef4244.Ukbq9W) };
+      let obj = { id: "anyone_with_manage_server", label: intl.string(_modDef4245.Ukbq9W) };
       intl = intl15.intl;
       const items = [obj];
       mapped = items;
@@ -384,7 +384,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -410,7 +410,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
         } else if (1 === tmp4) {
           sharingOptions = 0;
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -440,11 +440,11 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
             showActionSheet(obj);
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp20) {
         if (0 === sharingOptions) {
           c4 = 3;
@@ -483,7 +483,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
               const obj = { options: sharingOptions, value, onChange };
-              const tmp2 = asyncRequire(18442, dependencyMap.paths);
+              const tmp2 = asyncRequire(18505, dependencyMap.paths);
               return openLazy(tmp2, ConjureSharingModeSheet.CONJURE_SHARING_MODE_SHEET_KEY, obj, "stack");
             }
       };

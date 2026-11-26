@@ -1,24 +1,24 @@
-// Module ID: 7661
-// Function ID: 7662
+// Module ID: 7692
+// Function ID: 7693
 // Name: conjureAppInServer
-// Dependencies: [5, 2164, 6132, 4942, 4883, 4944, 1071, 6103, 7571, 6904, 2]
+// Dependencies: [5, 2165, 6163, 4973, 4914, 4975, 1071, 6134, 7602, 6935, 2]
 // Exports: canRemoveConjureBot, fetchConjureAppInGuild, findConjureAppChannels, readConjureAppServerPresence, readConjureBotInGuild
 
-// Module 7661 (conjureAppInServer)
+// Module 7692 (conjureAppInServer)
 import Constants from "Constants" /* 1071 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4942 */;
-import ConjureUtils from "ConjureUtils" /* 7571 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4973 */;
+import ConjureUtils from "ConjureUtils" /* 7602 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2164 */;
-import UserProfileStore from "UserProfileStore" /* 6132 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import UserProfileStore from "UserProfileStore" /* 6163 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
 let c3, c4, c5;
 
-const f91576 = (channel) => channel.channel;
+const f91818 = (channel) => channel.channel;
 function conjureProductionBotUserId(project) {
   const application = ApplicationStore.getApplication(project.application_id);
   let id;
@@ -82,7 +82,7 @@ let obj = function _fetchConjureAppInGuild() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -205,7 +205,7 @@ export function canRemoveConjureBot(guild, found2) {
 export function findConjureAppChannels(id, application_id) {
   let closure_0 = application_id;
   const arr = GuildChannelStore.getChannels(id)[closure_6];
-  const mapped = arr.map(f91576);
+  const mapped = arr.map(f91818);
   return mapped.filter((item) => {
     obj = ConjureUtils;
     return obj.conjureChannelAppId(item) === application_id;
@@ -243,7 +243,7 @@ export function readConjureAppServerPresence(install_scope) {
         if (true !== tmp6) {
           const application_id = install_scope.application_id;
           const arr2 = GuildChannelStore.getChannels(install_scope.guild_id)[closure_6];
-          const mapped = arr2.map(f91576);
+          const mapped = arr2.map(f91818);
           str2 = "in_server";
           if (mapped.filter((item) => {
             obj = ConjureUtils;
@@ -259,7 +259,7 @@ export function readConjureAppServerPresence(install_scope) {
             }
             let tmp7 = null;
             if (num > 0) {
-              const obj2 = application_id(6904);
+              const obj2 = application_id(6935);
               if (obj2.projectUsesAppChannels(install_scope)) {
                 tmp7 = "not_in_server";
               } else {

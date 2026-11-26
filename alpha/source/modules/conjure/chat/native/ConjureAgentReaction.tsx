@@ -1,22 +1,22 @@
-// Module ID: 18636
-// Function ID: 18637
+// Module ID: 18699
+// Function ID: 18700
 // Name: ConjureAgentReaction
-// Dependencies: [19, 17, 21, 5012, 575, 4837, 1412, 7632, 7457, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 4868, 1413, 7663, 7488, 2]
 // Exports: default
 
-// Module 18636 (ConjureAgentReaction)
+// Module 18699 (ConjureAgentReaction)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import UserSettings from "UserSettings" /* 4837 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import UserSettings from "UserSettings" /* 4868 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp2;
-const conjureAgentReaction = tmp2(7632);
+const conjureAgentReaction = tmp2(7663);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { pill: obj2, emoji: { width: 18, height: 18 } };

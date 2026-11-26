@@ -1,12 +1,12 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 16966
+// Function ID: 16967
 // Name: getDisplayNameStylesGradientLocations
-// Dependencies: [1395, 1397, 558, 2]
+// Dependencies: [1396, 1398, 558, 2]
 // Exports: default
 
-// Module 16915 (getDisplayNameStylesGradientLocations)
+// Module 16966 (getDisplayNameStylesGradientLocations)
 import shallowEqual from "shallowEqual" /* 558 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1396 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

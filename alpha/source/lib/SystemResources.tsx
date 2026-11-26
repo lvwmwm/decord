@@ -1,12 +1,12 @@
-// Module ID: 5951
-// Function ID: 5952
+// Module ID: 5982
+// Function ID: 5983
 // Name: SystemResources
-// Dependencies: [5, 5943, 1372, 5952, 2]
+// Dependencies: [5, 5974, 1373, 5983, 2]
 
-// Module 5951 (SystemResources)
-import ProcessUtilsDefault from "ProcessUtils" /* 1372 */;
-import Histogram from "Histogram" /* 5943 */;
-import DeviceState from "DeviceState" /* 5952 */;
+// Module 5982 (SystemResources)
+import ProcessUtilsDefault from "ProcessUtils" /* 1373 */;
+import Histogram from "Histogram" /* 5974 */;
+import DeviceState from "DeviceState" /* 5983 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -158,7 +158,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -189,7 +189,7 @@ class SystemResources {
           } else {
             closure_0.lastBattery = value;
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp6) {
           c2 = 3;
@@ -211,7 +211,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

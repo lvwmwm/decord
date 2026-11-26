@@ -1,9 +1,9 @@
-// Module ID: 1337
-// Function ID: 1338
+// Module ID: 1338
+// Function ID: 1339
 // Name: V8APIError
 // Dependencies: [32, 2]
 
-// Module 1337 (V8APIError)
+// Module 1338 (V8APIError)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

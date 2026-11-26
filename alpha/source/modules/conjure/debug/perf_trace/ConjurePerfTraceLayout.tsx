@@ -1,18 +1,19 @@
-// Module ID: 7684
-// Function ID: 7685
+// Module ID: 7717
+// Function ID: 7718
 // Name: ConjurePerfTraceLayout
-// Dependencies: [32, 2]
+// Dependencies: [32, 7718, 2]
 // Exports: collapsedView, expandSubtree, expandedView, extendView, findPerfTraceNode, formatSpanAttrs, overviewView, perfSpanSelfTimes, perfTimelineTicks, perfTraceExtent, perfTraceFinished, perfTraceInterrupted, perfTraceKeys, perfTraceRoot, perfTraceStatus, perfTraceTree, toggleNode, visiblePerfTraceRows
 
-// Module 7684 (ConjurePerfTraceLayout)
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 7717 (ConjurePerfTraceLayout)
+import ConjurePerfTraceFrameLaunch from "ConjurePerfTraceFrameLaunch" /* 7718 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let map, set, set2;
+let map, marker, set, set2;
 
-const f91605 = (parent) => null == parent.parent;
-const f91606 = (end) => null != end.end;
-const f916072 = (depth) => {
+const f91853 = (parent) => null == parent.parent;
+const f91854 = (end) => null != end.end;
+const f918552 = (depth) => {
   let tmp = depth.depth > 0;
   if (tmp) {
     const children = depth.children;
@@ -20,7 +21,7 @@ const f916072 = (depth) => {
   }
   return tmp;
 };
-const f91608 = (item) => {
+const f91856 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -82,7 +83,7 @@ function describePerfSpan(nextResult) {
       combined = "" + formatted + " \u00B7 " + cmd;
     }
   }
-  str5 = closure_1[substr];
+  str5 = closure_3[substr];
   if (str5 == null) {
     str5 = "other";
   }
@@ -95,7 +96,7 @@ function foldKey(attrs) {
   if (null != attrs) {
     const _Object = Object;
     const entries = Object.entries(attrs);
-    const mapped = entries.map(f91608);
+    const mapped = entries.map(f91856);
     str = mapped.join(" ");
   }
   return "" + name + " " + str;
@@ -125,7 +126,7 @@ function coveredMs(arg0, arr, arg2, arg3) {
   let tmp6;
   let tmp7;
   let closure_0 = arg0;
-  closure_1 = arg2;
+  let closure_1 = arg2;
   let closure_2 = arg3;
   const mapped = arr.map((start) => {
     const items = [Math.max(start.start, closure_1), ];
@@ -160,14 +161,14 @@ function coveredMs(arg0, arr, arg2, arg3) {
   }
   return num;
 }
-let _slicedToArray = _slicedToArray_mod;
-let closure_1 = { op: "op", ws: "op", turn: "op", alarm: "op", side_chat: "op", session: "op", step: "op", model: "model", version_note: "model", tool: "tool", mcp: "tool", sandbox: "sandbox", worktree: "worktree", build: "build", deps: "build", api: "platform", state: "platform", publish: "platform", preview: "platform", healthcheck: "platform", usage: "platform", live: "platform", replay: "platform", template: "setup", workspace: "setup", declarations: "setup", manifest: "setup", storage: "setup", conversation: "setup", runtime: "setup", attachments: "setup", upstream: "setup", remix: "setup", repo: "setup" };
+let closure_3 = { op: "op", ws: "op", turn: "op", alarm: "op", side_chat: "op", session: "op", step: "op", model: "model", version_note: "model", tool: "tool", mcp: "tool", sandbox: "sandbox", worktree: "worktree", build: "build", deps: "build", api: "platform", state: "platform", publish: "platform", preview: "platform", healthcheck: "platform", usage: "platform", live: "platform", replay: "platform", launch: "op", request: "platform", template: "setup", workspace: "setup", declarations: "setup", manifest: "setup", storage: "setup", conversation: "setup", runtime: "setup", attachments: "setup", upstream: "setup", remix: "setup", repo: "setup" };
 let result = size.fileFinishedImporting("modules/conjure/debug/perf_trace/ConjurePerfTraceLayout.tsx");
 
+export const PERF_TRACE_MARKER_NAMES = ConjurePerfTraceFrameLaunch.FRAME_LAUNCH_MOMENT_SPAN_NAMES;
 export const PERF_CATEGORIES = ["op", "model", "tool", "setup", "worktree", "sandbox", "build", "platform", "other"];
 export function perfTraceRoot(spans) {
   spans = spans.spans;
-  let found = spans.find(f91605);
+  let found = spans.find(f91853);
   if (found == null) {
     found = null;
   }
@@ -192,7 +193,7 @@ export function perfTraceStatus(trace) {
   let str = "error";
   if (!spans.some((error) => null != error.error)) {
     const spans1 = trace.spans;
-    let found = spans1.find(f91605);
+    let found = spans1.find(f91853);
     if (found == null) {
       found = null;
     }
@@ -208,13 +209,13 @@ export function perfTraceStatus(trace) {
       let tmp4 = !trace.live;
       if (tmp4) {
         const spans2 = trace.spans;
-        tmp4 = !spans2.every(f91606);
+        tmp4 = !spans2.every(f91854);
       }
       str = "error";
       if (!tmp4) {
         const spans3 = trace.spans;
         let str2 = "running";
-        if (spans3.every(f91606)) {
+        if (spans3.every(f91854)) {
           str2 = "ok";
         }
         str = str2;
@@ -225,62 +226,62 @@ export function perfTraceStatus(trace) {
 }
 export function perfTraceFinished(timingTrace) {
   const spans = timingTrace.spans;
-  return spans.every(f91606);
+  return spans.every(f91854);
 }
 export function perfTraceInterrupted(live) {
   let tmp = !live.live;
   if (tmp) {
     const spans = live.spans;
-    tmp = !spans.every(f91606);
+    tmp = !spans.every(f91854);
   }
   return tmp;
 }
 export function perfTraceTree(spans) {
-  let closure_0 = spans;
-  function isLeaf(buildResult) {
-    const hasItem = map.has(buildResult.id);
-    return !hasItem && null != buildResult.end && null == buildResult.error;
+  function isLeaf(id) {
+    const hasItem = map.has(id.id);
+    return !hasItem && null != id.end && null == id.error;
   }
   map = childrenByParent(spans);
   spans = spans.spans;
-  let found = spans.find(f91605);
+  let found = spans.find(f91853);
   if (found == null) {
     found = null;
   }
   if (null == found) {
     return null;
   } else {
-    function build(items, depth, arg2, arg3) {
+    function build(buildResult, depth, arg2, arg3) {
       let children;
       let closure_2;
       let combined;
       let diff;
-      let item10128;
+      let item10139;
       let items2;
       let items3;
+      spans = buildResult;
       map = depth;
       isLeaf = arg2;
-      const first = items[0];
-      items = [...items.map((start) => start.start)];
+      const first = buildResult[0];
+      let items = [...buildResult.map((start) => start.start)];
       const applyResult = Math.min.apply(items);
       const items1 = [
-        ...items.map((end) => {
+        ...buildResult.map((end) => {
           let as_of = end.end;
           if (as_of == null) {
-            as_of = items.as_of;
+            as_of = buildResult.as_of;
           }
           return as_of;
         })
       ];
       const applyResult1 = Math.max.apply(items1);
-      let mapped = items.map((end) => {
+      let mapped = buildResult.map((end) => {
         let as_of = end.end;
         if (as_of == null) {
-          as_of = items.as_of;
+          as_of = buildResult.as_of;
         }
         return as_of - end.start;
       });
-      if (1 === items.length) {
+      if (1 === buildResult.length) {
         let tmp4 = map;
         let items4 = map.get(first.id);
         let tmp5 = null;
@@ -291,7 +292,12 @@ export function perfTraceTree(spans) {
       } else {
         items2 = [];
       }
-      if (1 === items.length) {
+      let hasItem = 1 === buildResult.length;
+      if (hasItem) {
+        const FRAME_LAUNCH_MOMENT_SPAN_NAMES = spans(map[1]).FRAME_LAUNCH_MOMENT_SPAN_NAMES;
+        hasItem = FRAME_LAUNCH_MOMENT_SPAN_NAMES.has(first.name);
+      }
+      if (1 === buildResult.length) {
         const _HermesInternal2 = HermesInternal;
         let str2 = "span-";
         combined = "span-" + first.id;
@@ -304,15 +310,15 @@ export function perfTraceTree(spans) {
         key: combined,
         depth,
         span: first,
-        count: items.length,
+        count: buildResult.length,
         start: applyResult,
         end: applyResult1,
         totalMs: mapped.reduce((acc, item) => acc + item, 0),
         maxMs: Math.max.apply(items3),
-        selfMs: diff - coveredMs(items, items2, applyResult, applyResult1),
+        selfMs: diff - coveredMs(spans, items2, applyResult, applyResult1),
         running: null == first.end,
         failed: null != first.error,
-        parallel: items.some((item) => closure_2.some((end) => {
+        parallel: buildResult.some((item) => closure_2.some((end) => {
           const hasItem = item.includes(end);
           let tmp2 = !hasItem;
           if (tmp2) {
@@ -337,26 +343,31 @@ export function perfTraceTree(spans) {
         })),
         outlivedParent: applyResult1 > arg3,
         significant: false,
+        marker: hasItem,
         children: [],
         descendants: children.reduce((acc, count) => acc + count.count + count.descendants, 0)
       };
       items3 = [...mapped];
       diff = applyResult1 - applyResult;
-      const merged = Object.assign(closure_3(first));
+      const merged = Object.assign(describePerfSpan(first));
       map = new Map();
-      for (const item10104 of items2) {
-        let tmp9 = item10104;
-        if (isLeaf(item10104)) {
+      for (const item10113 of items2) {
+        let tmp12 = item10113;
+        if (isLeaf(item10113)) {
           set = map.set;
-          let tmp13 = build(tmp9);
-          let num = map.get(build(tmp9)) ?? 0;
-          let result = set(tmp13, num + 1);
+          let tmp16 = foldKey(tmp12);
+          let num = map.get(foldKey(tmp12)) ?? 0;
+          let result = set(tmp16, num + 1);
         }
         continue;
       }
       const set1 = new Set();
-      for (const item10128 of items2) {
-        let tmp16Result = tmp16();
+      let num2 = Infinity;
+      if (!obj.marker) {
+        num2 = applyResult1;
+      }
+      for (const item10139 of items2) {
+        let tmp19Result = tmp19();
         continue;
       }
       children = obj.children;
@@ -364,18 +375,23 @@ export function perfTraceTree(spans) {
     }
     let items = [found];
     let num = Infinity;
+    let num2 = 0;
     let tmp2 = items;
     const buildResult = build(items, 0, [], Infinity);
-    let closure_3 = 0.1 * (buildResult.end - buildResult.start);
-    let tmp4 = isLeaf;
-    let tmp5 = isLeaf(buildResult, (count) => {
-      let totalMs;
-      if (count.count > 1) {
-        totalMs = count.totalMs;
-      } else {
-        totalMs = count.end - count.start;
+    closure_3 = 0.1 * (buildResult.end - buildResult.start);
+    let tmp4 = build;
+    let tmp5 = build(buildResult, (marker) => {
+      marker = marker.marker;
+      if (!marker) {
+        let totalMs;
+        if (marker.count > 1) {
+          totalMs = marker.totalMs;
+        } else {
+          totalMs = marker.end - marker.start;
+        }
+        marker = totalMs >= closure_3;
       }
-      count.significant = totalMs >= closure_3;
+      marker.significant = marker;
     });
     return buildResult;
   }
@@ -455,10 +471,10 @@ export function visiblePerfTraceRows(key, arg1) {
   return items;
 }
 export function overviewView(children) {
-  const f91607 = f916072;
+  const f91855 = f918552;
   const obj = { collapsed: set, revealed: new Set() };
   function walk(children) {
-    const tmp = children.children.length > 0 && f91623(children);
+    const tmp = children.children.length > 0 && f91871(children);
     if (tmp) {
       set.add(children.key);
     }
@@ -474,9 +490,9 @@ export function overviewView(children) {
   return obj;
 }
 export function extendView(collapsed, memo, current) {
-  const f91607 = f916072;
+  const f91855 = f918552;
   function walk(children) {
-    const tmp = children.children.length > 0 && f91623(children);
+    const tmp = children.children.length > 0 && f91871(children);
     if (tmp) {
       set.add(children.key);
     }
@@ -513,12 +529,12 @@ export function perfTraceKeys(memo) {
 }
 export function expandedView(children) {
   let set1;
-  const f91622 = () => true;
+  const f91870 = () => true;
   const obj = { collapsed: new Set(), revealed: set1 };
   new Set();
   set1 = new Set();
   function walk(children) {
-    const tmp = children.children.length > 0 && f91623(children);
+    const tmp = children.children.length > 0 && f91871(children);
     if (tmp) {
       set.add(children.key);
     }
@@ -532,11 +548,11 @@ export function expandedView(children) {
   return obj;
 }
 export function collapsedView(children) {
-  const f91623 = (depth) => depth.depth > 0;
+  const f91871 = (depth) => depth.depth > 0;
   const obj = { collapsed: set, revealed: new Set() };
   set = new Set();
   function walk(children) {
-    const tmp = children.children.length > 0 && f91623(children);
+    const tmp = children.children.length > 0 && f91871(children);
     if (tmp) {
       set.add(children.key);
     }
@@ -602,7 +618,7 @@ export function findPerfTraceNode(findPerfTraceNodeResult, arg1) {
 }
 export function perfSpanSelfTimes(spans) {
   let closure_0 = spans;
-  closure_1 = childrenByParent(spans);
+  let closure_1 = childrenByParent(spans);
   spans = spans.spans;
   map = new Map(spans.map((end) => {
     let as_of = end.end;
@@ -624,11 +640,11 @@ export function perfSpanSelfTimes(spans) {
 export function perfTimelineTicks(arg0) {
   let num;
   const result = arg0 / 6;
-  _slicedToArray = result;
-  closure_1 = 10 ** Math.floor(Math.log10(result));
+  require = result;
+  let closure_1 = 10 ** Math.floor(Math.log10(result));
   const items = [1, 2, 5, 10];
   const mapped = items.map((item) => item * closure_1);
-  let found = mapped.find((item) => item >= _slicedToArray);
+  let found = mapped.find((item) => item >= require);
   if (found == null) {
     found = result;
   }
@@ -643,7 +659,7 @@ export function formatSpanAttrs(attrs) {
   if (null != attrs) {
     const _Object = Object;
     const entries = Object.entries(attrs);
-    const mapped = entries.map(f91608);
+    const mapped = entries.map(f91856);
     str = mapped.join(" ");
   }
   return str;

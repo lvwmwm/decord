@@ -28,7 +28,7 @@ let obj = function _flushWithTimeout() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;
@@ -74,7 +74,7 @@ let obj = function _flushWithTimeout() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp23) {
         closure_3 = tmp23;

@@ -1,10 +1,10 @@
-// Module ID: 8883
-// Function ID: 8884
+// Module ID: 8925
+// Function ID: 8926
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: withDiscoverRequestDeadline
 
-// Module 8883 (_asyncToGenerator)
+// Module 8925 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let obj = function _withDiscoverRequestDeadline() {
     let c6 = 0;
     let c5 = 0;
     return (async function(arg0, value) {
-      const f137583 = function(arg0, arg1) {
+      const f138031 = function(arg0, arg1) {
         function observeRequest() {
           return obj(...arguments);
         }
@@ -57,7 +57,7 @@ let obj = function _withDiscoverRequestDeadline() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let timeout;
@@ -85,8 +85,8 @@ let obj = function _withDiscoverRequestDeadline() {
               let self2 = this;
               c3 = 2;
               c6 = 1;
-              let obj4 = { value: new Promise(f137583), done: false };
-              const promise = new Promise(f137583);
+              let obj4 = { value: new Promise(f138031), done: false };
+              const promise = new Promise(f138031);
               return obj4;
             }
           } else if (1 === tmp3) {

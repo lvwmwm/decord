@@ -1,23 +1,23 @@
-// Module ID: 14541
-// Function ID: 14542
+// Module ID: 14593
+// Function ID: 14594
 // Name: UserProfileWidgetGameTags
-// Dependencies: [19, 17, 502, 6106, 21, 7262, 575, 6093, 5012, 5603, 1112, 7216, 14506, 14518, 5021, 6351, 6078, 14542, 2]
+// Dependencies: [19, 17, 502, 6137, 21, 7293, 575, 6124, 5043, 5634, 1112, 7247, 14558, 14570, 5052, 6382, 6109, 14594, 2]
 
-// Module 14541 (UserProfileWidgetGameTags)
+// Module 14593 (UserProfileWidgetGameTags)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5021 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Constants from "Constants" /* 6106 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6351 */;
-import IconSize from "IconSize" /* 7262 */;
-import WidgetUtils from "WidgetUtils" /* 14518 */;
-import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 14542 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Constants from "Constants" /* 6137 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6382 */;
+import IconSize from "IconSize" /* 7293 */;
+import WidgetUtils from "WidgetUtils" /* 14570 */;
+import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 14594 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ function GameTag(removeButtonRef) {
     obj5 = { tag: metadata.getText() };
     GCn1ne = tmp8(1112).t.GCn1ne;
     obj6 = { size: tmp5, color: nativeDefault.colors.ICON_MUTED };
-    XSmallIcon = tmp8(7216).XSmallIcon;
+    XSmallIcon = tmp8(7247).XSmallIcon;
     tmp4Result = tmp4(React3, obj4);
   }
   items[2] = tmp4Result;

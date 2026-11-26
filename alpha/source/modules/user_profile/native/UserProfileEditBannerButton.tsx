@@ -1,24 +1,24 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16047
+// Function ID: 16048
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 9395, 6106, 21, 5012, 575, 6348, 6350, 6351, 6102, 6121, 1112, 5603, 9582, 8444, 14797, 9468, 16018, 2]
+// Dependencies: [19, 17, 9437, 6137, 21, 5043, 575, 6379, 6381, 6382, 6133, 6152, 1112, 5634, 9624, 8486, 14850, 9510, 16048, 2]
 // Exports: default
 
-// Module 16017 (UserProfileEditBannerButton)
+// Module 16047 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6102 */;
-import Constants from "Constants" /* 6106 */;
-import Pressables from "Pressables" /* 6121 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6351 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8444 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 9468 */;
-import PencilIcon2 from "PencilIcon" /* 9582 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 14797 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
+import Constants from "Constants" /* 6137 */;
+import Pressables from "Pressables" /* 6152 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6382 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 8486 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 9510 */;
+import PencilIcon2 from "PencilIcon" /* 9624 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 14850 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9395 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9437 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -26,7 +26,7 @@ let metroImportDefault;
 let rect;
 let size;
 let tmp2;
-const EditButtonDefault = tmp2(16018);
+const EditButtonDefault = tmp2(16048);
 function ProfilePreviewButton(userId) {
   let Text;
   let intl;

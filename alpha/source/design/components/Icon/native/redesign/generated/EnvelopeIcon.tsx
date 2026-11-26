@@ -1,14 +1,14 @@
-// Module ID: 7405
-// Function ID: 7406
+// Module ID: 7436
+// Function ID: 7437
 // Name: EnvelopeIcon
-// Dependencies: [19, 21, 575, 5698, 7406, 2]
+// Dependencies: [19, 21, 575, 5729, 7437, 2]
 // Exports: EnvelopeIcon
 
-// Module 7405 (EnvelopeIcon)
+// Module 7436 (EnvelopeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 7406 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 7437 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

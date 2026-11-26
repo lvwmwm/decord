@@ -1,12 +1,12 @@
-// Module ID: 12483
-// Function ID: 12484
+// Module ID: 12532
+// Function ID: 12533
 // Name: VoiceMessageAnalytics
-// Dependencies: [1071, 1255, 2]
+// Dependencies: [1071, 1256, 2]
 // Exports: logVoiceMessagePlaybackEnded, logVoiceMessagePlaybackFailed, logVoiceMessagePlaybackStarted
 
-// Module 12483 (VoiceMessageAnalytics)
+// Module 12532 (VoiceMessageAnalytics)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -1,12 +1,12 @@
-// Module ID: 15329
-// Function ID: 15330
+// Module ID: 15379
+// Function ID: 15380
 // Name: LeaveServerAlert
-// Dependencies: [1071, 21, 6021, 1112, 6021, 8531, 2]
+// Dependencies: [1071, 21, 6052, 1112, 6052, 8573, 2]
 // Exports: default
 
-// Module 15329 (LeaveServerAlert)
+// Module 15379 (LeaveServerAlert)
 import Constants from "Constants" /* 1071 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export default function LeaveServerAlert(guild) {
   let stringResult;
   guild = guild.guild;
   const features = guild.features;
-  const AlertModal = guild(6021).AlertModal;
+  const AlertModal = guild(6052).AlertModal;
   const hasItem = features.has(GuildFeatures.HUB);
   const intl = guild(1112).intl;
   const string = intl.string;
@@ -41,7 +41,7 @@ export default function LeaveServerAlert(guild) {
   intl2 = tmp2(1112).intl;
   obj2 = { name: guild.name };
   obj3 = { children: items };
-  AlertActions = tmp2(6021).AlertActions;
+  AlertActions = tmp2(6052).AlertActions;
   const obj4 = {
     variant: "destructive",
     onPress() {
@@ -50,11 +50,11 @@ export default function LeaveServerAlert(guild) {
     },
     text: intl3.string(guild(1112).t.p89ACt)
   };
-  const AlertActionButton = tmp2(6021).AlertActionButton;
+  const AlertActionButton = tmp2(6052).AlertActionButton;
   intl3 = tmp2(1112).intl;
   items = [closure_4(AlertActionButton, obj4, "confirm"), ];
   const obj5 = { variant: "secondary", text: intl4.string(guild(1112).t.gm1Vej) };
-  const AlertActionButton2 = tmp2(6021).AlertActionButton;
+  const AlertActionButton2 = tmp2(6052).AlertActionButton;
   intl4 = tmp2(1112).intl;
   items[1] = closure_4(AlertActionButton2, obj5, "cancel");
   return closure_4(AlertModal, obj);

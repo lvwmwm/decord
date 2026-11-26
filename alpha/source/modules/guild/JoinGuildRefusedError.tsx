@@ -1,10 +1,10 @@
-// Module ID: 6964
-// Function ID: 6965
+// Module ID: 6995
+// Function ID: 6996
 // Name: JoinGuildRefusedError
 // Dependencies: [2]
 // Exports: ignoreJoinGuildRefused
 
-// Module 6964 (JoinGuildRefusedError)
+// Module 6995 (JoinGuildRefusedError)
 import size from "module_2" /* 2 */;
 
 class JoinGuildRefusedError extends Error {

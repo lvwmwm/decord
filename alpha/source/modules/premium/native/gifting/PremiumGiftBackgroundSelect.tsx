@@ -1,31 +1,31 @@
-// Module ID: 11271
-// Function ID: 11272
+// Module ID: 11317
+// Function ID: 11318
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 1653, 5012, 575, 1494, 1186, 5222, 11272, 11096, 2]
+// Dependencies: [32, 19, 17, 21, 1654, 5043, 575, 1495, 1186, 5253, 11318, 11142, 2]
 // Exports: default
 
-// Module 11271 (PremiumGiftBackgroundSelect)
+// Module 11317 (PremiumGiftBackgroundSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import NativeGiftContext from "NativeGiftContext" /* 11096 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import NativeGiftContext from "NativeGiftContext" /* 11142 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const module_1653 = _mod1653;
+const module_1654 = _mod1654;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const PremiumGiftBackgroundAnimationDefault = tmp2(11272);
+const PremiumGiftBackgroundAnimationDefault = tmp2(11318);
 class GiftBackgroundSelect {
   constructor(withConsistentHeight) {
     let closure_1;
@@ -46,15 +46,15 @@ class GiftBackgroundSelect {
     let tmp = closure_9();
     const width = useWindowDimensionsDefault().width;
     [first, closure_1] = react.useState();
-    let obj = _mod1653;
+    let obj = _mod1654;
     const sharedValue = obj.useSharedValue(false);
     const items = [first, sharedValue];
     const effect = react.useEffect(() => {
       const result = sharedValue.set(null != first);
     }, items);
     const items1 = [closure_10, , , ];
-    const useAnimatedStyle = _mod1653.useAnimatedStyle;
-    _mod1653;
+    const useAnimatedStyle = _mod1654.useAnimatedStyle;
+    _mod1654;
     items1[1] = native.STANDARD_EASING;
     items1[2] = timing_timing.withTiming;
     items1[3] = sharedValue;
@@ -111,7 +111,7 @@ class GiftBackgroundSelect {
 }
 const ScrollView = react_native.ScrollView;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = module_1653.createAnimatedComponent(ScrollView);
+let closure_8 = module_1654.createAnimatedComponent(ScrollView);
 let obj = { scrollView: obj2, contentContainer: { justifyContent: "center" } };
 obj2 = { flex: 1, marginTop: nativeDefault.space.PX_24 };
 const React4 = createStyles.createStyles(obj);

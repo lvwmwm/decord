@@ -1,10 +1,10 @@
-// Module ID: 13117
-// Function ID: 13118
+// Module ID: 13169
+// Function ID: 13170
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1112, 5762, 2]
+// Dependencies: [5, 32, 19, 1112, 5793, 2]
 // Exports: default
 
-// Module 13117 (useRequest)
+// Module 13169 (useRequest)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ export default function useRequest(arg0) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -99,7 +99,7 @@ export default function useRequest(arg0) {
               c4 = 0;
               closure_130_1(false);
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;

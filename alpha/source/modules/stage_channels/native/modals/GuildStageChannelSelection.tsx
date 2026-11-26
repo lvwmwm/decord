@@ -1,20 +1,20 @@
-// Module ID: 14280
-// Function ID: 14281
+// Module ID: 14332
+// Function ID: 14333
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4954, 1386, 21, 5012, 8459, 5628, 2018, 5226, 8457, 2119, 1112, 5603, 2]
+// Dependencies: [19, 4985, 1387, 21, 5043, 8501, 5659, 2019, 5257, 8499, 2120, 1112, 5634, 2]
 // Exports: default
 
-// Module 14280 (GuildStageChannelSelection)
+// Module 14332 (GuildStageChannelSelection)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2018 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import Text_Text from "Text/Text" /* 5603 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2019 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import Text_Text from "Text/Text" /* 5634 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
-import createStyles from "createStyles" /* 5012 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -52,7 +52,7 @@ export default function GuildStageChannelSelection(channel) {
       selectedItem: id,
       hasIcons: false
     };
-    const tmp4 = asyncRequire(8457, dependencyMap.paths);
+    const tmp4 = asyncRequire(8499, dependencyMap.paths);
     intl = intl2.intl;
     id = undefined;
     if (channel != null) {

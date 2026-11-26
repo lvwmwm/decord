@@ -1,26 +1,26 @@
-// Module ID: 12081
-// Function ID: 12082
+// Module ID: 12131
+// Function ID: 12132
 // Name: CharacterFallbackAbstractUI
-// Dependencies: [19, 21, 12082, 12083, 12084, 7230, 5699, 2]
+// Dependencies: [19, 21, 12132, 12133, 12134, 7261, 5730, 2]
 // Exports: CharacterFallbackAbstractUI
 
-// Module 12081 (CharacterFallbackAbstractUI)
+// Module 12131 (CharacterFallbackAbstractUI)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7230 */;
-import _modDef12082 from "module_12082" /* 12082 */;
-import _modDef12083 from "module_12083" /* 12083 */;
-import _modDef12084 from "module_12084" /* 12084 */;
+import react_native from "react-native" /* 7261 */;
+import _modDef12132 from "module_12132" /* 12132 */;
+import _modDef12133 from "module_12133" /* 12133 */;
+import _modDef12134 from "module_12134" /* 12134 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12082 };
+let obj2 = { uri: _modDef12132 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef12083 };
+let obj3 = { uri: _modDef12133 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef12084 };
-({ uri: _modDef12084 });
+obj[3] = { uri: _modDef12134 };
+({ uri: _modDef12134 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CharacterFallbackAbstractUI.native.tsx");
 

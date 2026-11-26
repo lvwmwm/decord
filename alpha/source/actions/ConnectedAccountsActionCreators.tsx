@@ -1,18 +1,18 @@
-// Module ID: 7501
-// Function ID: 7502
+// Module ID: 7532
+// Function ID: 7533
 // Name: ConnectedAccountsActionCreators
-// Dependencies: [5, 7431, 1071, 3, 1284, 7433, 1255, 6339, 7434, 6104, 1263, 572, 2]
+// Dependencies: [5, 7462, 1071, 3, 1285, 7464, 1256, 6370, 7465, 6135, 1264, 572, 2]
 
-// Module 7501 (ConnectedAccountsActionCreators)
+// Module 7532 (ConnectedAccountsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6104 */;
-import fetchConnectedAccounts from "fetchConnectedAccounts" /* 7433 */;
-import postConnectionCallback from "postConnectionCallback" /* 7434 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6135 */;
+import fetchConnectedAccounts from "fetchConnectedAccounts" /* 7464 */;
+import postConnectionCallback from "postConnectionCallback" /* 7465 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7462 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -216,7 +216,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;

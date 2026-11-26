@@ -1,14 +1,14 @@
-// Module ID: 12494
-// Function ID: 12495
+// Module ID: 12543
+// Function ID: 12544
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [7878, 1450, 7851, 504, 2]
+// Dependencies: [7912, 1451, 7885, 504, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 12494 (ExpressiveModalV2Experiment)
+// Module 12543 (ExpressiveModalV2Experiment)
 import get_initialized from "get initialized" /* 504 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7851 */;
-import SafetyHubStore from "SafetyHubStore" /* 7878 */;
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7885 */;
+import SafetyHubStore from "SafetyHubStore" /* 7912 */;
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

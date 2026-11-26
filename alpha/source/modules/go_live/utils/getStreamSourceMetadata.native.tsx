@@ -1,10 +1,10 @@
-// Module ID: 8374
-// Function ID: 8375
+// Module ID: 8416
+// Function ID: 8417
 // Name: getStreamSourceMetadata
 // Dependencies: [2]
 // Exports: default
 
-// Module 8374 (getStreamSourceMetadata)
+// Module 8416 (getStreamSourceMetadata)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/go_live/utils/getStreamSourceMetadata.native.tsx");

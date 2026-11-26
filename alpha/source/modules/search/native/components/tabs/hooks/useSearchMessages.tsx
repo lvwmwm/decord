@@ -1,13 +1,13 @@
-// Module ID: 18961
-// Function ID: 18962
+// Module ID: 19024
+// Function ID: 19025
 // Name: useSearchMessages
-// Dependencies: [6922, 13248, 504, 13241, 2]
+// Dependencies: [6953, 13300, 504, 13293, 2]
 // Exports: useSearchMessages
 
-// Module 18961 (useSearchMessages)
-import SearchUtils from "SearchUtils" /* 13241 */;
-import SearchMessageStore from "SearchMessageStore" /* 6922 */;
-import SearchQueryStore from "SearchQueryStore" /* 13248 */;
+// Module 19024 (useSearchMessages)
+import SearchUtils from "SearchUtils" /* 13293 */;
+import SearchMessageStore from "SearchMessageStore" /* 6953 */;
+import SearchQueryStore from "SearchQueryStore" /* 13300 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

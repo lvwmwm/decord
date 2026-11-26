@@ -1,15 +1,15 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 17939
+// Function ID: 17940
 // Name: useConjureGuildUnreadSummary
-// Dependencies: [19, 6901, 6903, 6137, 504, 7638, 7636, 2]
+// Dependencies: [19, 6932, 6934, 6168, 504, 7669, 7667, 2]
 // Exports: default
 
-// Module 17882 (useConjureGuildUnreadSummary)
-import ReadStateConstants from "ReadStateConstants" /* 6137 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
+// Module 17939 (useConjureGuildUnreadSummary)
+import ReadStateConstants from "ReadStateConstants" /* 6168 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6901 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import ReadStateStore from "ReadStateStore" /* 6932 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 let resourceIds;
@@ -41,6 +41,6 @@ export default function useConjureGuildUnreadSummary(arg0) {
       const missingConjureProjects = obj.loadMissingConjureProjects(tmp);
     }
   }, items1);
-  const obj2 = stateFromStoresArray(7638);
+  const obj2 = stateFromStoresArray(7669);
   return obj2.useConjureUnreadSummary(arg0);
 };

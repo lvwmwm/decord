@@ -1,12 +1,12 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8060
+// Function ID: 8061
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 1500, 6794, 7886, 7851, 5780, 5785, 1112, 3498, 7854, 7856, 6084, 5603, 6832, 5610, 6797, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1501, 6825, 7920, 7885, 5811, 5816, 1112, 3499, 7888, 7890, 6115, 5634, 6863, 5641, 6828, 2]
 // Exports: default
 
-// Module 8026 (GoogleWalletVerificationScreen)
+// Module 8060 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6797 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6828 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -111,7 +111,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let tmp50;
@@ -240,7 +240,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp50) {
           if (0 === c3) {

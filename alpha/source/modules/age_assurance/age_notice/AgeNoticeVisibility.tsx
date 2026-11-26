@@ -1,15 +1,15 @@
-// Module ID: 16168
-// Function ID: 16169
+// Module ID: 16219
+// Function ID: 16220
 // Name: AgeNoticeVisibility
-// Dependencies: [1386, 2117, 5674, 6799, 504, 2]
+// Dependencies: [1387, 2118, 5705, 6830, 504, 2]
 // Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
-// Module 16168 (AgeNoticeVisibility)
+// Module 16219 (AgeNoticeVisibility)
 import get_initialized from "get initialized" /* 504 */;
-import Server from "Server" /* 2117 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6799 */;
-import UserStore from "UserStore" /* 1386 */;
+import Server from "Server" /* 2118 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5705 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6830 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/AgeNoticeVisibility.tsx");

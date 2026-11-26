@@ -1,19 +1,17 @@
 // Module ID: 15744
 // Function ID: 15745
-// Dependencies: [15696, 15703]
+// Dependencies: [15745, 15759]
 
 // Module 15744
-import _mod15696 from "module_15696" /* 15696 */;
-import _mod15703 from "module_15703" /* 15703 */;
+import _mod15745 from "module_15745" /* 15745 */;
+import _mod15759 from "module_15759" /* 15759 */;
 
-let closure_2 = _mod15696("keys");
 
 export default (arg0) => {
-  let tmp2 = closure_2[arg0];
-  if (!tmp2) {
-    const tmp5 = _mod15703(arg0);
-    tmp[arg0] = tmp5;
-    tmp2 = tmp5;
+  const tmp = _mod15745(arg0, "string");
+  let text = tmp;
+  if (!_mod15759(tmp)) {
+    text = `${tmp}`;
   }
-  return tmp2;
+  return text;
 };

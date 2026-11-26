@@ -1,11 +1,11 @@
-// Module ID: 15352
-// Function ID: 15353
+// Module ID: 15402
+// Function ID: 15403
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1499, 14442, 12241, 6349, 5664, 6940, 7813, 5197, 1626, 2]
+// Dependencies: [5, 1500, 14494, 12291, 6380, 5695, 6971, 7847, 5228, 1627, 2]
 // Exports: default
 
-// Module 15352 (openActivityDMLauncher)
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
+// Module 15402 (openActivityDMLauncher)
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1500 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _openActivityDMLauncher() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ let obj = function _openActivityDMLauncher() {
               }
             }
             linkChannelId = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp30) {
           linkChannelId = 3;

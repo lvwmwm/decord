@@ -1,22 +1,22 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17395
+// Function ID: 17396
 // Name: ExperimentOverrideActiveSetting
-// Dependencies: [5629, 1245, 21, 15972, 504, 17345, 16298, 11914, 17157, 2]
+// Dependencies: [5660, 1246, 21, 16023, 504, 17396, 16349, 11962, 17208, 2]
 
-// Module 17344 (ExperimentOverrideActiveSetting)
+// Module 17395 (ExperimentOverrideActiveSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 15972 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16298 */;
-import BeakerIcon from "BeakerIcon" /* 17157 */;
-import DevToolsContent from "DevToolsContent" /* 17345 */;
-import ExperimentStore from "ExperimentStore" /* 5629 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 16023 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16349 */;
+import BeakerIcon from "BeakerIcon" /* 17208 */;
+import DevToolsContent from "DevToolsContent" /* 17396 */;
+import ExperimentStore from "ExperimentStore" /* 5660 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
-const f112082 = () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length;
-const f112083 = () => Object.keys(clientOverrides.getClientOverrides()).length;
+const f112396 = () => Object.keys(allExperimentOverrideDescriptors.getAllExperimentOverrideDescriptors()).length;
+const f112397 = () => Object.keys(clientOverrides.getClientOverrides()).length;
 const jsx = Fragment.jsx;
 let obj = {
   useTitle() {
@@ -27,10 +27,10 @@ let obj = {
   useDescription: function useExperimentOverrideActiveDescription() {
     const items = [ExperimentStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f112082);
+    const stateFromStores = obj.useStateFromStores(items, f112396);
     const items1 = [ApexExperimentStore];
     const obj2 = get_initialized;
-    const str = stateFromStores + obj2.useStateFromStores(items1, f112083);
+    const str = stateFromStores + obj2.useStateFromStores(items1, f112397);
     const DevToolsContentSubLabel = DevToolsContent.DevToolsContentSubLabel;
     return <DevToolsContentSubLabel label="Experiments overridden: " value={str.toString()} />;
   },
@@ -41,10 +41,10 @@ let obj = {
     const staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
     const items = [ExperimentStore];
     const obj2 = get_initialized;
-    const stateFromStores = obj2.useStateFromStores(items, f112082);
+    const stateFromStores = obj2.useStateFromStores(items, f112396);
     const items1 = [ApexExperimentStore];
     const obj3 = get_initialized;
-    const tmp3 = stateFromStores + obj3.useStateFromStores(items1, f112083) > 0 && staffOrDeveloperSettingPredicate;
+    const tmp3 = stateFromStores + obj3.useStateFromStores(items1, f112397) > 0 && staffOrDeveloperSettingPredicate;
     return tmp3;
   },
   onPress: function handleExperimentOverrideActivePress() {

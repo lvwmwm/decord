@@ -1,64 +1,25 @@
 // Module ID: 1755
 // Function ID: 1756
-// Dependencies: [41, 42, 93, 95, 98, 1756, 1785]
+// Dependencies: [1711, 1718]
+// Exports: createSynchronizable
 
 // Module 1755
-import _mod1756 from "module_1756" /* 1756 */;
-import CSSCallbackStore from "CSSCallbackStore" /* 1785 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import WorkletsModule2 from "WorkletsModule" /* 1711 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+let tmp3;
+const registerCustomSerializable = tmp3(1718);
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+export function createSynchronizable(__initData, fixedType) {
+  fixedType = undefined;
+  if (fixedType != null) {
+    fixedType = fixedType.fixedType;
   }
+  const WorkletsModule = WorkletsModule2.WorkletsModule;
+  let serializable = __initData;
+  const createSynchronizable = WorkletsModule.createSynchronizable;
+  if (!fixedType) {
+    const tmp3Result = registerCustomSerializable;
+    serializable = tmp3Result.createSerializable(__initData);
+  }
+  return globalThis.__synchronizableUnpacker(createSynchronizable(serializable, fixedType), fixedType);
 }
-class CSSKeyframesRuleImpl {
-  constructor(animationName, json) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, CSSKeyframesRuleImpl);
-    const items = [animationName, json];
-    const obj = _getPrototypeOf(CSSKeyframesRuleImpl);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.normalizedKeyframesCache_ = {};
-    return tmp3Result;
-  }
-}
-_inherits(CSSKeyframesRuleImpl, CSSCallbackStore.CSSKeyframesRuleBase);
-const entry = {
-  key: "getNormalizedKeyframesConfig",
-  value: function getNormalizedKeyframesConfig(compoundComponentName) {
-    const self = this;
-    const normalizedKeyframesCache_ = this.normalizedKeyframesCache_;
-    if (normalizedKeyframesCache_[compoundComponentName] == null) {
-      const obj = _mod1756;
-      normalizedKeyframesCache_[compoundComponentName] = obj.normalizeAnimationKeyframes(self.cssRules, compoundComponentName);
-    }
-    return self.normalizedKeyframesCache_[compoundComponentName];
-  }
-};
-let items = [entry];
-
-export default _createClass(CSSKeyframesRuleImpl, items);

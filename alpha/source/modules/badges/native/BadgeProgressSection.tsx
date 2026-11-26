@@ -1,18 +1,18 @@
-// Module ID: 13808
-// Function ID: 13809
+// Module ID: 13860
+// Function ID: 13861
 // Name: BadgeProgressSection
-// Dependencies: [19, 17, 21, 5012, 575, 9836, 5603, 1112, 9814, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 9878, 5634, 1112, 9856, 2]
 // Exports: default
 
-// Module 13808 (BadgeProgressSection)
+// Module 13860 (BadgeProgressSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 9814 */;
-import BadgeDetailsUtils from "BadgeDetailsUtils" /* 9836 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 9856 */;
+import BadgeDetailsUtils from "BadgeDetailsUtils" /* 9878 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -83,7 +83,7 @@ export default function BadgeProgressSection(arg0) {
   }
   const obj2 = { style: tmp.section, children: items };
   const obj3 = { variant: "body-sm/medium", color: "text-default", children: intl.string(intl3.t["2m/g2c"]) };
-  const Text = tmp2(5603).Text;
+  const Text = tmp2(5634).Text;
   intl = tmp2(1112).intl;
   items = [React3(Text, obj3), ];
   let tmp9Result = null != currentArtUrl;
@@ -97,7 +97,7 @@ export default function BadgeProgressSection(arg0) {
   const obj6 = { style: tmp.content, children: items2 };
   if (tmp9Result4) {
     const obj7 = { variant: "body-sm/medium", "aria-hidden": null != threshold, children: helperText };
-    tmp9Result4 = tmp9(tmp2(5603).Text, obj7);
+    tmp9Result4 = tmp9(tmp2(5634).Text, obj7);
   }
   items2 = [tmp9Result4, ];
   let tmp9Result5 = null != threshold;

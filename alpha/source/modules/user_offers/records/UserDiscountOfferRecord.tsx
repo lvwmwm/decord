@@ -1,11 +1,11 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9145
+// Function ID: 9146
 // Name: UserDiscountOfferRecord
-// Dependencies: [1406, 9098, 2]
+// Dependencies: [1407, 9140, 2]
 
-// Module 9103 (UserDiscountOfferRecord)
-import Record from "Record" /* 1406 */;
-import DiscountRecord from "DiscountRecord" /* 9098 */;
+// Module 9145 (UserDiscountOfferRecord)
+import Record from "Record" /* 1407 */;
+import DiscountRecord from "DiscountRecord" /* 9140 */;
 import size from "module_2" /* 2 */;
 
 class UserDiscountOfferRecord extends Record {

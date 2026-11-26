@@ -1,10 +1,10 @@
-// Module ID: 10168
-// Function ID: 10169
+// Module ID: 10210
+// Function ID: 10211
 // Name: EmbeddedAppShimActionCreators
 // Dependencies: [572, 2]
-// Exports: disconnectShim, shimPipeOpened, updateShimState
+// Exports: disconnectShim, shimConnected, shimPipeOpened, updateShimState
 
-// Module 10168 (EmbeddedAppShimActionCreators)
+// Module 10210 (EmbeddedAppShimActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -13,6 +13,11 @@ const result = size.fileFinishedImporting("modules/embedded_apps/shim_host/Embed
 export function shimPipeOpened(pipeId, pipe) {
   const obj = DispatcherDefault;
   const obj2 = { type: "EMBEDDED_APP_SHIM_PIPE_OPEN", iframeId: pipeId, pipe };
+  obj.dispatch(obj2);
+}
+export function shimConnected(iframeId) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "EMBEDDED_APP_SHIM_CONNECT", iframeId };
   obj.dispatch(obj2);
 }
 export function updateShimState(iframeId, state) {

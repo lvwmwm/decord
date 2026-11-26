@@ -1,31 +1,31 @@
-// Module ID: 14512
-// Function ID: 14513
+// Module ID: 14564
+// Function ID: 14565
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 14513, 6106, 21, 5012, 575, 6113, 2151, 2152, 8024, 5699, 13302, 5587, 7374, 13301, 504, 14514, 6140, 14515, 10825, 14521, 14516, 14517, 14518, 5021, 1112, 6078, 6351, 9171, 5226, 14511, 5240, 7476, 7375, 7016, 5603, 7380, 2]
+// Dependencies: [32, 19, 17, 502, 14565, 6137, 21, 5043, 575, 6144, 2152, 2153, 8058, 5730, 13354, 5618, 7405, 13353, 504, 14566, 6171, 14567, 10871, 14573, 14568, 14569, 14570, 5052, 1112, 6109, 6382, 9213, 5257, 14563, 5271, 7507, 7406, 7047, 5634, 7411, 2]
 // Exports: default
 
-// Module 14512 (UserProfileAddGameActionSheet)
+// Module 14564 (UserProfileAddGameActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2151 */;
-import StringUtils from "StringUtils" /* 2152 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5021 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import Constants from "Constants" /* 6106 */;
-import TableRow2 from "TableRow" /* 6113 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6140 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6351 */;
-import _extends from "_extends" /* 9171 */;
-import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 13302 */;
-import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 14511 */;
-import WidgetUtils from "WidgetUtils" /* 14518 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2152 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import Constants from "Constants" /* 6137 */;
+import TableRow2 from "TableRow" /* 6144 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6171 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 6382 */;
+import _extends from "_extends" /* 9213 */;
+import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 13354 */;
+import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 14563 */;
+import WidgetUtils from "WidgetUtils" /* 14570 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WidgetStore from "WidgetStore" /* 14513 */;
+import WidgetStore from "WidgetStore" /* 14565 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let map, set;
@@ -91,13 +91,13 @@ let closure_12 = react.memo(function AddGameRow(option) {
     const tmp12 = require;
     if (obj3.isNullOrEmpty(tmp7Result)) {
       const obj4 = { size: "sm", style: tmp.gameIcon };
-      tmp11Result = tmp11(tmp12(8024).UnknownGameIcon, obj4);
+      tmp11Result = tmp11(tmp12(8058).UnknownGameIcon, obj4);
     } else {
       const obj5 = { style: items, source: obj6 };
       items = [, ];
       ({ gameIcon: arr[0], gameIconBackground: arr[1] } = tmp);
       obj6 = { uri: tmp7Result };
-      tmp11Result = tmp11(tmp5(5699), obj5);
+      tmp11Result = tmp11(tmp5(5730), obj5);
     }
     let platformAvailability;
     tmp5Result = GamePlatformBadgeRowDefault;
@@ -366,7 +366,7 @@ export default function UserProfileAddGameActionSheet(widgetType) {
       if (gameIds.includes(gameId)) {
         onAddGame(gameId);
       }
-      const AccessibilityAnnouncer = tmp5(5021).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp5(5052).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = tmp5(1112).intl;
       announce(intl.string(intl4.t.q0U3DE));

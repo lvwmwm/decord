@@ -1,0 +1,10 @@
+// Module ID: 4596
+// Function ID: 4597
+// Name: AssetRegistry
+// Dependencies: [1118]
+
+// Module 4596 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1118 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/promotions/third_party/macaron", scales: [1], hash: "a7545cdfe95ea5258ea978b753aaaa14", name: "MacaronPhase1.compiled.messages", type: "jsona" });

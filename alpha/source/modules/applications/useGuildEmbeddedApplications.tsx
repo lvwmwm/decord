@@ -1,16 +1,16 @@
-// Module ID: 8494
-// Function ID: 8495
+// Module ID: 8536
+// Function ID: 8537
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 2164, 1071, 504, 1088, 1254, 6940, 2]
+// Dependencies: [5, 19, 2165, 1071, 504, 1088, 1255, 6971, 2]
 // Exports: useGuildEmbeddedApplications
 
-// Module 8494 (useGuildEmbeddedApplications)
+// Module 8536 (useGuildEmbeddedApplications)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6940 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6971 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2164 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: "+95" };
     }
   } else {
     try {
@@ -90,7 +90,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
         return obj;
       }
       c3 = 3;
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: "+95" };
     } catch (tmp10) {
       c3 = 3;
       throw tmp10;

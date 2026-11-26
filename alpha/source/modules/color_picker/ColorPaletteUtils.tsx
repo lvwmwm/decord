@@ -1,10 +1,10 @@
-// Module ID: 1398
-// Function ID: 1399
+// Module ID: 1399
+// Function ID: 1400
 // Name: ColorPaletteUtils
 // Dependencies: [2]
 // Exports: getPresetPalettesWithCustom, isCustomColorPalette
 
-// Module 1398 (ColorPaletteUtils)
+// Module 1399 (ColorPaletteUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/color_picker/ColorPaletteUtils.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 8261
-// Function ID: 8262
+// Module ID: 8303
+// Function ID: 8304
 // Name: ConversationMessageCacheUtils
-// Dependencies: [502, 4954, 6362, 4956, 2]
+// Dependencies: [502, 4985, 6393, 4987, 2]
 // Exports: applyHydratedMessages, applyReaction, applyRelationshipFlags, removeHydratedMessage, replaceHydratedMessage
 
-// Module 8261 (ConversationMessageCacheUtils)
-import ReactionUtils from "ReactionUtils" /* 4956 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6362 */;
+// Module 8303 (ConversationMessageCacheUtils)
+import ReactionUtils from "ReactionUtils" /* 4987 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6393 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conversations/ConversationMessageCacheUtils.tsx");

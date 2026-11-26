@@ -1,21 +1,21 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9571
+// Function ID: 9572
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 5012, 575, 1653, 5576, 9530, 5613, 5603, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 5607, 9572, 5644, 5634, 2]
 // Exports: Tooltip
 
-// Module 9529 (Tooltip)
+// Module 9571 (Tooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import useToken from "useToken" /* 5576 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import reactDefault from "react" /* 9530 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import useToken from "useToken" /* 5607 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import reactDefault from "react" /* 9572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -77,7 +77,7 @@ export function Tooltip(targetMeasurements) {
   targetMeasurements = targetMeasurements.targetMeasurements;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  let obj = _mod1653;
+  let obj = _mod1654;
   const sharedValue = obj.useSharedValue(0);
   const obj2 = useToken;
   const token = obj2.useToken(nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT);
@@ -102,10 +102,10 @@ export function Tooltip(targetMeasurements) {
     tmp14 = "right" === position;
   }
   const items2 = [closure_10, , , , , , ];
-  const useAnimatedStyle = tmp2(1653).useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = tmp2(1654).useAnimatedStyle;
+  _mod1654;
   items2[1] = spring_spring.withSpring;
-  items2[2] = _mod1653.interpolateColor;
+  items2[2] = _mod1654.interpolateColor;
   items2[3] = sharedValue;
   items2[4] = token;
   items2[5] = token1;
@@ -131,10 +131,10 @@ export function Tooltip(targetMeasurements) {
   TooltipNativeTsx1.__initData = tmp17;
   const animatedStyle = useAnimatedStyle(TooltipNativeTsx1);
   const items4 = [closure_11, , , , , , , ];
-  const useAnimatedStyle2 = tmp2(1653).useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle2 = tmp2(1654).useAnimatedStyle;
+  _mod1654;
   items4[1] = spring_spring.withSpring;
-  items4[2] = _mod1653.interpolateColor;
+  items4[2] = _mod1654.interpolateColor;
   items4[3] = sharedValue;
   items4[4] = token;
   items4[5] = token1;
@@ -214,7 +214,7 @@ export function Tooltip(targetMeasurements) {
     const obj6 = { left: -adjustmentX };
     items7[2] = obj6;
     items7[3] = animatedStyle2;
-    tmp38 = metroRequire(tmp5(1653).View, obj5);
+    tmp38 = metroRequire(tmp5(1654).View, obj5);
   } else {
     let str2 = "right";
     tmp38 = null;
@@ -225,13 +225,13 @@ export function Tooltip(targetMeasurements) {
       const obj8 = { top: -adjustmentY };
       items8[2] = obj8;
       items8[3] = animatedStyle2;
-      tmp38 = metroRequire(tmp5(1653).View, obj7);
+      tmp38 = metroRequire(tmp5(1654).View, obj7);
     }
   }
   items9 = [tmp38, , ];
   const obj9 = { style: items10, children: metroRequire(Text_Text.Text, obj10) };
   items10 = [tmp.textContainer, animatedStyle];
-  const View = tmp5(1653).View;
+  const View = tmp5(1654).View;
   obj10 = { style: tmp.text, variant: "body-xs/semibold", color: "text-overlay-light", children: label };
   items9[1] = metroRequire(View, obj9);
   if ("top" === position) {
@@ -241,7 +241,7 @@ export function Tooltip(targetMeasurements) {
     const obj12 = { left: -adjustmentX };
     items11[2] = obj12;
     items11[3] = animatedStyle2;
-    tmp41Result = tmp41(tmp5(1653).View, obj11);
+    tmp41Result = tmp41(tmp5(1654).View, obj11);
   } else {
     tmp41Result = null;
     if ("left" === position) {
@@ -251,7 +251,7 @@ export function Tooltip(targetMeasurements) {
       const obj14 = { top: -adjustmentY };
       items12[2] = obj14;
       items12[3] = animatedStyle2;
-      tmp41Result = tmp41(tmp5(1653).View, obj13);
+      tmp41Result = tmp41(tmp5(1654).View, obj13);
     }
   }
   items9[2] = tmp41Result;

@@ -1,21 +1,21 @@
-// Module ID: 11178
-// Function ID: 11179
+// Module ID: 11224
+// Function ID: 11225
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1388, 21, 5012, 575, 5603, 1112, 9666, 7130, 9595, 2]
+// Dependencies: [19, 17, 1389, 21, 5043, 575, 5634, 1112, 9708, 7161, 9637, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 11178 (CollectiblesBadges)
+// Module 11224 (CollectiblesBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import LockIcon3 from "LockIcon" /* 7130 */;
-import NitroWheelIcon3 from "NitroWheelIcon" /* 9595 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9666 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import LockIcon3 from "LockIcon" /* 7161 */;
+import NitroWheelIcon3 from "NitroWheelIcon" /* 9637 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9708 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

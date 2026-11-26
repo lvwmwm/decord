@@ -1,16 +1,16 @@
-// Module ID: 16040
-// Function ID: 16041
+// Module ID: 16098
+// Function ID: 16099
 // Name: HexagonCampaignDaysLeftBadge
-// Dependencies: [19, 21, 16041, 6128, 1112, 4662, 5721, 2]
+// Dependencies: [19, 21, 16099, 6159, 1112, 4663, 5752, 2]
 // Exports: default
 
-// Module 16040 (HexagonCampaignDaysLeftBadge)
+// Module 16098 (HexagonCampaignDaysLeftBadge)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4662 from "module_4662" /* 4662 */;
-import ClockIcon from "ClockIcon" /* 5721 */;
-import Badge_Badge from "Badge/Badge" /* 6128 */;
-import useHexagonCampaignDaysLeft from "useHexagonCampaignDaysLeft" /* 16041 */;
+import _modDef4663 from "module_4663" /* 4663 */;
+import ClockIcon from "ClockIcon" /* 5752 */;
+import Badge_Badge from "Badge/Badge" /* 6159 */;
+import useHexagonCampaignDaysLeft from "useHexagonCampaignDaysLeft" /* 16099 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ export default function HexagonCampaignDaysLeftBadge(variant) {
   }
   const obj = useHexagonCampaignDaysLeft;
   const hexagonCampaignDaysLeft = obj.useHexagonCampaignDaysLeft(perk);
-  const obj3 = { text: intl.formatToPlainString(_modDef4662["noGK/D"], { days: hexagonCampaignDaysLeft }) };
+  const obj3 = { text: intl.formatToPlainString(_modDef4663["noGK/D"], { days: hexagonCampaignDaysLeft }) };
   const Badge = Badge_Badge.Badge;
   intl = intl2.intl;
   return <Badge type={obj3} variant={str} icon={ClockIcon.ClockIcon} />;

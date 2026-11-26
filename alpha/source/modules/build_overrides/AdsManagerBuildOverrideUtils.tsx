@@ -1,10 +1,10 @@
-// Module ID: 1383
-// Function ID: 1384
+// Module ID: 1384
+// Function ID: 1385
 // Name: AdsManagerBuildOverrideUtils
 // Dependencies: [2]
 // Exports: adsManagerOverrideLinkMeta
 
-// Module 1383 (AdsManagerBuildOverrideUtils)
+// Module 1384 (AdsManagerBuildOverrideUtils)
 import size from "module_2" /* 2 */;
 
 function isAdsManagerBuildOverrideLink(url) {

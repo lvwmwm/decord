@@ -1,22 +1,22 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12142
+// Function ID: 12143
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 4861, 1499, 7042, 7043, 21, 5664, 5189, 5226, 1626, 6016, 1112, 1186, 12093, 5693, 7507, 4837, 11035, 7512, 12095, 5603, 5197, 12097, 7147, 2]
+// Dependencies: [19, 4892, 1500, 7073, 7074, 21, 5695, 5220, 5257, 1627, 6047, 1112, 1186, 12143, 5724, 7538, 4868, 11081, 7543, 12145, 5634, 5228, 12147, 7178, 2]
 // Exports: default
 
-// Module 12092 (MarkupReactCommandRule)
+// Module 12142 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1626 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5664 */;
-import ToastUtils from "ToastUtils" /* 5693 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7042 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 7043 */;
-import ClipboardUtils from "ClipboardUtils" /* 7507 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 12097 */;
+import KeyboardTypes from "KeyboardTypes" /* 1627 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5695 */;
+import ToastUtils from "ToastUtils" /* 5724 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 7074 */;
+import ClipboardUtils from "ClipboardUtils" /* 7538 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 12147 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1500 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -175,10 +175,10 @@ export default function MarkupReactCommandRule(node) {
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(12095).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(12145).AppLauncherContext);
   dependencyMap = closure_6();
-  const Text = node(5603).Text;
-  let obj2 = node(7147);
+  const Text = node(5634).Text;
+  let obj2 = node(7178);
   const items = ["/", obj2.smartOutput(node, output, state)];
   return <Text style={style} variant="body-md/semibold" onPress={function onPress() {
     let str;

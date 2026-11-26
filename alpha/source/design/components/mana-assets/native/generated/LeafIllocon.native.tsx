@@ -1,27 +1,27 @@
-// Module ID: 13678
-// Function ID: 13679
+// Module ID: 13730
+// Function ID: 13731
 // Name: LeafIllocon
-// Dependencies: [19, 21, 13679, 13680, 13681, 7230, 5699, 2]
+// Dependencies: [19, 21, 13731, 13732, 13733, 7261, 5730, 2]
 // Exports: LeafIllocon
 
-// Module 13678 (LeafIllocon)
+// Module 13730 (LeafIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import react_native from "react-native" /* 7230 */;
-import _modDef13679 from "module_13679" /* 13679 */;
-import _modDef13680 from "module_13680" /* 13680 */;
-import _modDef13681 from "module_13681" /* 13681 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import react_native from "react-native" /* 7261 */;
+import _modDef13731 from "module_13731" /* 13731 */;
+import _modDef13732 from "module_13732" /* 13732 */;
+import _modDef13733 from "module_13733" /* 13733 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13679 };
+let obj2 = { uri: _modDef13731 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13680 };
-({ uri: _modDef13680 });
-obj[3] = { uri: _modDef13681 };
-({ uri: _modDef13681 });
+obj[2] = { uri: _modDef13732 };
+({ uri: _modDef13732 });
+obj[3] = { uri: _modDef13733 };
+({ uri: _modDef13733 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/LeafIllocon.native.tsx");
 
@@ -43,6 +43,6 @@ export function LeafIllocon(size) {
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(7230);
+  obj2 = num(7261);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 }

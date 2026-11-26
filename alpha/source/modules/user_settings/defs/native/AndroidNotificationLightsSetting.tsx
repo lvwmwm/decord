@@ -1,18 +1,18 @@
-// Module ID: 17065
-// Function ID: 17066
+// Module ID: 17116
+// Function ID: 17117
 // Name: AndroidNotificationLightsSetting
-// Dependencies: [17045, 9513, 1378, 17047, 1112, 11914, 15802, 3206, 17051, 2]
+// Dependencies: [17096, 9555, 1379, 17098, 1112, 11962, 15853, 3207, 17102, 2]
 
-// Module 17065 (AndroidNotificationLightsSetting)
+// Module 17116 (AndroidNotificationLightsSetting)
 import intl2 from "intl" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15802 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17047 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17045 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15853 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17098 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17102 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17096 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -63,7 +63,7 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.ndEta2);
+    return intl.string(_modDef3207.ndEta2);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {

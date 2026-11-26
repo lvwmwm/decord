@@ -1,23 +1,23 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8929
+// Function ID: 8930
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 8081, 4861, 6360, 1386, 1071, 1089, 6372, 4837, 1404, 1379, 1254, 6364, 2117, 6371, 11, 2]
+// Dependencies: [19, 8123, 4892, 6391, 1387, 1071, 1089, 6403, 4868, 1405, 1380, 1255, 6395, 2118, 6402, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 8887 (ForumPostMediaUtils)
+// Module 8929 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import URLUtilsDefault from "URLUtils" /* 1379 */;
-import FlagUtils from "FlagUtils" /* 1404 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6364 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6372 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import URLUtilsDefault from "URLUtils" /* 1380 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6395 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6403 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 8081 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import MessageStore from "MessageStore" /* 6360 */;
-import UserStore from "UserStore" /* 1386 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 8123 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import MessageStore from "MessageStore" /* 6391 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -226,7 +226,7 @@ function useForumPostEmbeds(embeds, hasSpoilerEmbeds) {
               }
             }
           });
-          found = mapped.filter(tmp(1254).isNotNullish);
+          found = mapped.filter(tmp(1255).isNotNullish);
         }
         return found;
       }
@@ -325,7 +325,7 @@ function useForumPostMediaProperties(firstResult, flag) {
             return null;
           }
         });
-        items1 = flatMapResult.filter(tmp2(1254).isNotNullish);
+        items1 = flatMapResult.filter(tmp2(1255).isNotNullish);
       }
     }
     items1 = [];
@@ -475,7 +475,7 @@ export function useForumPostComponentsMedia(components) {
             return null;
           }
         });
-        found = flatMapResult.filter(tmp(1254).isNotNullish);
+        found = flatMapResult.filter(tmp(1255).isNotNullish);
       }
       return found;
     }
@@ -603,7 +603,7 @@ export function useFindFirstMediaProperties(firstMessage, hasSpoilerEmbeds) {
             return null;
           }
         });
-        items = flatMapResult.filter(tmp(1254).isNotNullish);
+        items = flatMapResult.filter(tmp(1255).isNotNullish);
       }
     }
     items = [];

@@ -1,25 +1,25 @@
-// Module ID: 9690
-// Function ID: 9691
+// Module ID: 9732
+// Function ID: 9733
 // Name: EmojiPickerListRow
-// Dependencies: [19, 17, 1191, 9498, 1227, 21, 5012, 575, 1378, 671, 7130, 9691, 6121, 5699, 5019, 7458, 7459, 1186, 9692, 2]
+// Dependencies: [19, 17, 1191, 9540, 1227, 21, 5043, 575, 1379, 671, 7161, 9733, 6152, 5730, 5050, 7489, 7490, 1186, 9734, 2]
 
-// Module 9690 (EmojiPickerListRow)
+// Module 9732 (EmojiPickerListRow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
-import shared from "shared" /* 5019 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import Pressables from "Pressables" /* 6121 */;
-import LockIcon from "LockIcon" /* 7130 */;
-import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9691 */;
-import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9692 */;
+import shared from "shared" /* 5050 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import Pressables from "Pressables" /* 6152 */;
+import LockIcon from "LockIcon" /* 7161 */;
+import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9733 */;
+import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9734 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9498 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9540 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -84,9 +84,9 @@ class EmojiItem {
       const tmp2Result = FastImageDefault;
       const tmp6Result = shared;
       if (tmp6Result.isThemeDark(ThemeStore.theme)) {
-        tmp2Result2 = tmp2(7458);
+        tmp2Result2 = tmp2(7489);
       } else {
-        tmp2Result2 = tmp2(7459);
+        tmp2Result2 = tmp2(7490);
       }
       obj3 = { uri: tmp4 };
       tmp10Result = tmp10(tmp2Result, obj2);

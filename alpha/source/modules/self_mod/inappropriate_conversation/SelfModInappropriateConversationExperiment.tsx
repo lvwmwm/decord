@@ -1,11 +1,11 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11512
+// Function ID: 11513
 // Name: SelfModInappropriateConversationExperiment
-// Dependencies: [1451, 2]
+// Dependencies: [1452, 2]
 // Exports: isEligibleForInappropriateConversationWarning, useIsEligibleForInappropriateConversationWarning
 
-// Module 11465 (SelfModInappropriateConversationExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
+// Module 11512 (SelfModInappropriateConversationExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-inappropriate-conversations-prescan", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

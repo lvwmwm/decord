@@ -1,21 +1,21 @@
-// Module ID: 13982
-// Function ID: 13983
+// Module ID: 14034
+// Function ID: 14035
 // Name: GiftCodeRow
-// Dependencies: [19, 17, 1071, 21, 5012, 575, 5073, 11880, 5759, 8648, 7263, 5603, 5610, 1112, 13983, 2168, 1186, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 5104, 11928, 5790, 8690, 7294, 5634, 5641, 1112, 14035, 2169, 1186, 2]
 
-// Module 13982 (GiftCodeRow)
+// Module 14034 (GiftCodeRow)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
-import native2 from "native" /* 5073 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5759 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8648 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11880 */;
-import copyGiftCodeDefault from "copyGiftCode" /* 13983 */;
+import native2 from "native" /* 5104 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5790 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8690 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11928 */;
+import copyGiftCodeDefault from "copyGiftCode" /* 14035 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -145,7 +145,7 @@ class GiftCodeRow extends PureComponent {
       const t = tmp7(tmp8[13]).t;
       if (canRevoke) {
         const obj11 = {
-          hours: expiresAt2.diff(require("module_2168")(), "h"),
+          hours: expiresAt2.diff(require("module_2169")(), "h"),
           revokeHook(children, arg1) {
                 let code;
                 let items;
@@ -167,7 +167,7 @@ class GiftCodeRow extends PureComponent {
         const b1BfWD = t.b1BfWD;
         formatResult = format(b1BfWD, obj11);
       } else {
-        const obj12 = { hours: expiresAt.diff(require("module_2168")(), "h") };
+        const obj12 = { hours: expiresAt.diff(require("module_2169")(), "h") };
         expiresAt = giftCode.expiresAt;
         const ltVZcJ = t.ltVZcJ;
         formatResult = format(ltVZcJ, obj12);

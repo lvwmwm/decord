@@ -1,10 +1,10 @@
-// Module ID: 1233
-// Function ID: 1234
+// Module ID: 1234
+// Function ID: 1235
 // Name: ProtoUtils
 // Dependencies: [1196, 2]
 // Exports: b64ToProto, protoToB64
 
-// Module 1233 (ProtoUtils)
+// Module 1234 (ProtoUtils)
 import _mod1196 from "module_1196" /* 1196 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16363
+// Function ID: 16364
 // Name: showDataPrivacyRateLimitAlert
-// Dependencies: [6015, 1112, 2]
+// Dependencies: [6046, 1112, 2]
 // Exports: showDataPrivacyRateLimitAlert
 
-// Module 16312 (showDataPrivacyRateLimitAlert)
+// Module 16363 (showDataPrivacyRateLimitAlert)
 import intl3 from "intl" /* 1112 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/showDataPrivacyRateLimitAlert.tsx");

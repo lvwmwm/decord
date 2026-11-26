@@ -1,13 +1,13 @@
-// Module ID: 18864
-// Function ID: 18865
+// Module ID: 18927
+// Function ID: 18928
 // Name: useSearchSuggestionsGesture
-// Dependencies: [19, 1653, 13234, 5272, 2]
+// Dependencies: [19, 1654, 13286, 5303, 2]
 // Exports: useSearchSuggestionsContext, useSearchSuggestionsGesture
 
-// Module 18864 (useSearchSuggestionsGesture)
-import _mod1653 from "module_1653" /* 1653 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13234 */;
+// Module 18927 (useSearchSuggestionsGesture)
+import _mod1654 from "module_1654" /* 1654 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13286 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,13 +53,13 @@ export function useSearchSuggestionsContext() {
 export function useSearchSuggestionsGesture(channelDetailsSearchContext) {
   let sharedValue1;
   _require = channelDetailsSearchContext;
-  let obj = require("module_1653");
+  let obj = require("module_1654");
   const sharedValue = obj.useSharedValue(false);
-  const obj2 = require("module_1653");
+  const obj2 = require("module_1654");
   sharedValue1 = obj2.useSharedValue(false);
-  const obj3 = require("module_1653");
+  const obj3 = require("module_1654");
   const animatedRef = obj3.useAnimatedRef();
-  const obj4 = require("module_1653");
+  const obj4 = require("module_1654");
   const animatedRef1 = obj4.useAnimatedRef();
   let items = [sharedValue];
   const callback = animatedRef.useCallback((arg0, arg1) => {
@@ -87,7 +87,7 @@ export function useSearchSuggestionsGesture(channelDetailsSearchContext) {
     const items = [closure_7, sharedValue1, , , , , , ];
     const onTouchesDown = ManualResult.manualActivation(true).onTouchesDown;
     ManualResult.manualActivation(true);
-    items[2] = _mod1653.measure;
+    items[2] = _mod1654.measure;
     items[3] = animatedRef1;
     items[4] = animatedRef;
     items[5] = measureRelativeTo;

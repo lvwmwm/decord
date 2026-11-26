@@ -1,11 +1,11 @@
-// Module ID: 10202
-// Function ID: 10203
+// Module ID: 10244
+// Function ID: 10245
 // Name: useWebViewPlatformProps
-// Dependencies: [10203, 2]
+// Dependencies: [10245, 2]
 // Exports: default
 
-// Module 10202 (useWebViewPlatformProps)
-import createEmbeddedAppFrameScript from "createEmbeddedAppFrameScript" /* 10203 */;
+// Module 10244 (useWebViewPlatformProps)
+import createEmbeddedAppFrameScript from "createEmbeddedAppFrameScript" /* 10245 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/native/webview/useWebViewPlatformProps.android.tsx");

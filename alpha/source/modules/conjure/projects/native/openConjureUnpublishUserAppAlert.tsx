@@ -1,15 +1,15 @@
-// Module ID: 18454
-// Function ID: 18455
+// Module ID: 18517
+// Function ID: 18518
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2164, 21, 504, 11424, 1112, 4244, 5694, 6021, 5603, 6017, 2]
+// Dependencies: [5, 32, 19, 2165, 21, 504, 11471, 1112, 4245, 5725, 6052, 5634, 6048, 2]
 // Exports: default
 
-// Module 18454 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 6017 */;
+// Module 18517 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 6048 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2164 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ function ConjureUnpublishUserAppAlert(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ function ConjureUnpublishUserAppAlert(project) {
             obj7 = { app: closure_129_2 };
             open("CONJURE_USER_APP_UNPUBLISHED", obj);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           } else {
             const intl = tmp(c2[7]).intl;
             tmp = intl.string(tmp4(c2[8])["rE/0SD"]);
@@ -127,7 +127,7 @@ function ConjureUnpublishUserAppAlert(project) {
     }
     return name;
   }, items1);
-  let obj2 = { title: intl.formatToPlainString(require("module_4244").m8KWic, { app: stateFromStores }), content: string(wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
+  let obj2 = { title: intl.formatToPlainString(require("module_4245").m8KWic, { app: stateFromStores }), content: string(wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
   const AlertModal = project(stateFromStores[10]).AlertModal;
   intl = project(stateFromStores[7]).intl;
   let intl2 = project(stateFromStores[7]).intl;

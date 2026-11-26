@@ -1,11 +1,11 @@
-// Module ID: 7548
-// Function ID: 7549
+// Module ID: 7579
+// Function ID: 7580
 // Name: FakePlaceholderPrivateChannel
-// Dependencies: [4865, 1071, 2]
+// Dependencies: [4896, 1071, 2]
 
-// Module 7548 (FakePlaceholderPrivateChannel)
+// Module 7579 (FakePlaceholderPrivateChannel)
 import Constants from "Constants" /* 1071 */;
-import ChannelRecord from "ChannelRecord" /* 4865 */;
+import ChannelRecord from "ChannelRecord" /* 4896 */;
 import size from "module_2" /* 2 */;
 
 const obj = { id: "131", type: Constants.ChannelTypes.DM, name: "Placeholder Channel" };

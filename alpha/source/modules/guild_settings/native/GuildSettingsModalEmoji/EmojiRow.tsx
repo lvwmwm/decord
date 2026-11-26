@@ -1,23 +1,23 @@
-// Module ID: 19923
-// Function ID: 19924
+// Module ID: 19987
+// Function ID: 19988
 // Name: EmojiRow
-// Dependencies: [32, 19, 17, 4883, 1386, 21, 5012, 575, 1378, 7451, 504, 8429, 9719, 4962, 19924, 5242, 5603, 1186, 6113, 5694, 1112, 5699, 1412, 6776, 5068, 6121, 19926, 2]
+// Dependencies: [32, 19, 17, 4914, 1387, 21, 5043, 575, 1379, 7482, 504, 8471, 9761, 4993, 19988, 5273, 5634, 1186, 6144, 5725, 1112, 5730, 1413, 6807, 5099, 6152, 19990, 2]
 // Exports: EmojiRow
 
-// Module 19923 (EmojiRow)
+// Module 19987 (EmojiRow)
 import nativeDefault from "native" /* 575 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4962 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5242 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9719 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 19924 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4993 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5273 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9761 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 19988 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import UserStore from "UserStore" /* 1386 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let c10;

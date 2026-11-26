@@ -1,21 +1,21 @@
-// Module ID: 12414
-// Function ID: 12415
+// Module ID: 12463
+// Function ID: 12464
 // Name: GameInvitesChannelUtils
-// Dependencies: [109, 19, 4861, 1071, 4868, 8126, 8491, 504, 10724, 11657, 38, 8677, 6940, 12415, 5984, 8359, 6953, 2]
+// Dependencies: [109, 19, 4892, 1071, 4899, 8168, 8533, 504, 10770, 11705, 38, 8719, 6971, 12464, 6015, 8401, 6984, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags, useFirstMessage, useGameInviteVoiceChatState, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
-// Module 12414 (GameInvitesChannelUtils)
+// Module 12463 (GameInvitesChannelUtils)
 import react from "react" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
-import ChannelConstants from "ChannelConstants" /* 4868 */;
-import ActivityTypes from "ActivityTypes" /* 5984 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6953 */;
-import ForumConstants from "ForumConstants" /* 8126 */;
-import hasFlagDefault from "hasFlag" /* 8359 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 8491 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 11657 */;
+import ChannelConstants from "ChannelConstants" /* 4899 */;
+import ActivityTypes from "ActivityTypes" /* 6015 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6984 */;
+import ForumConstants from "ForumConstants" /* 8168 */;
+import hasFlagDefault from "hasFlag" /* 8401 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 8533 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 11705 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

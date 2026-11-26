@@ -1,21 +1,21 @@
-// Module ID: 15533
-// Function ID: 15534
+// Module ID: 15584
+// Function ID: 15585
 // Name: Collapsible
-// Dependencies: [32, 19, 17, 21, 5012, 575, 1653, 5613, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 5644, 2]
 // Exports: default
 
-// Module 15533 (Collapsible)
+// Module 15584 (Collapsible)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import spring_spring from "spring/spring" /* 5613 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import spring_spring from "spring/spring" /* 5644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 
 let metroImportDefault;
 let metroRequire;
@@ -70,8 +70,8 @@ export default function Collapsible(isExpanded) {
     num = 0;
     const sum = first1 + num;
     const items1 = [closure_10, , , ];
-    const useAnimatedStyle = _mod1653.useAnimatedStyle;
-    _mod1653;
+    const useAnimatedStyle = _mod1654.useAnimatedStyle;
+    _mod1654;
     items1[1] = spring_spring.withSpring;
     items1[2] = sum;
     items1[3] = closure_8;
@@ -97,7 +97,7 @@ export default function Collapsible(isExpanded) {
     }, items3);
     const items4 = [tmp.collapsible, ];
     let tmp28 = null;
-    View = _modDef1653.View;
+    View = _modDef1654.View;
     tmp26 = metroImportDefault;
     if (sum > 0) {
       tmp28 = animatedStyle;

@@ -1,13 +1,13 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15262
+// Function ID: 15263
 // Name: getStorefrontSkuFetchOptions
-// Dependencies: [9070, 1071, 1358, 2]
+// Dependencies: [9112, 1071, 1359, 2]
 // Exports: default
 
-// Module 15212 (getStorefrontSkuFetchOptions)
+// Module 15262 (getStorefrontSkuFetchOptions)
 import Constants from "Constants" /* 1071 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import GenericIAPStore from "GenericIAPStore" /* 9070 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
+import GenericIAPStore from "GenericIAPStore" /* 9112 */;
 import size from "module_2" /* 2 */;
 
 const PaymentGateways = Constants.PaymentGateways;

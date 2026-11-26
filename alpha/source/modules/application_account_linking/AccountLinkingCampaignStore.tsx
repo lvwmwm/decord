@@ -1,9 +1,9 @@
-// Module ID: 19242
-// Function ID: 19243
+// Module ID: 19305
+// Function ID: 19306
 // Name: AccountLinkingCampaignStore
 // Dependencies: [504, 572, 2]
 
-// Module 19242 (AccountLinkingCampaignStore)
+// Module 19305 (AccountLinkingCampaignStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

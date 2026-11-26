@@ -1,15 +1,15 @@
-// Module ID: 17893
-// Function ID: 17894
+// Module ID: 17950
+// Function ID: 17951
 // Name: getChannelAppLaunchTarget
-// Dependencies: [4861, 4944, 6906, 1071, 6802, 6818, 5653, 2]
+// Dependencies: [4892, 4975, 6937, 1071, 6833, 6849, 5684, 2]
 // Exports: default
 
-// Module 17893 (getChannelAppLaunchTarget)
-import getURLForApplicationDefault from "getURLForApplication" /* 5653 */;
-import AgeGateUtils from "AgeGateUtils" /* 6802 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import FramesConstants from "FramesConstants" /* 6906 */;
+// Module 17950 (getChannelAppLaunchTarget)
+import getURLForApplicationDefault from "getURLForApplication" /* 5684 */;
+import AgeGateUtils from "AgeGateUtils" /* 6833 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import FramesConstants from "FramesConstants" /* 6937 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export default function getChannelAppLaunchTarget(arg0) {
           const tmp6 = require;
           if (!obj.isChannelContentGated(channel)) {
             tmp8 = null;
-            const tmp6Result = tmp6(6818);
+            const tmp6Result = tmp6(6849);
             if (!tmp6Result.isChannelSpoilerGated(channel)) {
               tmp8 = null;
               if (null != getURLForApplicationDefault(application_id)) {

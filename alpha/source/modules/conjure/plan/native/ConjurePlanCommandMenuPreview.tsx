@@ -1,20 +1,20 @@
-// Module ID: 18738
-// Function ID: 18739
+// Module ID: 18801
+// Function ID: 18802
 // Name: ConjurePlanCommandMenuPreview
-// Dependencies: [19, 17, 21, 5012, 575, 12210, 5603, 1112, 5699, 1412, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 12260, 5634, 1112, 5730, 1413, 2]
 // Exports: default
 
-// Module 18738 (ConjurePlanCommandMenuPreview)
+// Module 18801 (ConjurePlanCommandMenuPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import AvatarUtils from "AvatarUtils" /* 1412 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12210 */;
+import AvatarUtils from "AvatarUtils" /* 1413 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12260 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

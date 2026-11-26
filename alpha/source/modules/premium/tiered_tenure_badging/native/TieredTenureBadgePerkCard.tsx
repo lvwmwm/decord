@@ -1,22 +1,22 @@
-// Module ID: 13820
-// Function ID: 13821
+// Module ID: 13872
+// Function ID: 13873
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [19, 17, 1386, 1071, 21, 5012, 9822, 13821, 9820, 9808, 13822, 504, 9782, 1255, 9831, 6107, 5226, 9781, 2119, 9781, 1112, 13824, 5603, 9807, 9333, 5699, 2]
+// Dependencies: [19, 17, 1387, 1071, 21, 5043, 9864, 13873, 9862, 9850, 13874, 504, 9824, 1256, 9873, 6138, 5257, 9823, 2120, 9823, 1112, 13876, 5634, 9849, 9375, 5730, 2]
 // Exports: TieredTenureBadgePerkCard
 
-// Module 13820 (TieredTenureBadgePerkCard)
+// Module 13872 (TieredTenureBadgePerkCard)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import BadgeId from "BadgeId" /* 6107 */;
-import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 9781 */;
-import openBadgeDetailsSheet2 from "openBadgeDetailsSheet" /* 9831 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import BadgeId from "BadgeId" /* 6138 */;
+import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 9823 */;
+import openBadgeDetailsSheet2 from "openBadgeDetailsSheet" /* 9873 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

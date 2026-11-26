@@ -1,10 +1,10 @@
-// Module ID: 7009
-// Function ID: 7010
+// Module ID: 7040
+// Function ID: 7041
 // Name: AuthBackgroundArt
-// Dependencies: [19, 17, 21, 7010, 1653, 5222, 5225, 7011, 7014, 7015, 2]
+// Dependencies: [19, 17, 21, 7041, 1654, 5253, 5256, 7042, 7045, 7046, 2]
 
-// Module 7009 (AuthBackgroundArt)
-import timing_timing from "timing/timing" /* 5222 */;
+// Module 7040 (AuthBackgroundArt)
+import timing_timing from "timing/timing" /* 5253 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -17,7 +17,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const timingPresets = tmp2(5225);
+const timingPresets = tmp2(5256);
 const StyleSheet = react_native.StyleSheet;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -37,12 +37,12 @@ const memoResult = react.memo(function AuthBackgroundArt() {
   let tmp9;
   let tmpResult2;
   let tmp2 = dependencyMap;
-  const tmp3 = sharedValue(7010)();
+  const tmp3 = sharedValue(7041)();
   _require = tmp3;
   const tmp4 = _require;
   let num = 0;
-  const useSharedValue = require("module_1653").useSharedValue;
-  require("module_1653");
+  const useSharedValue = require("module_1654").useSharedValue;
+  require("module_1654");
   if ("square" === tmp3) {
     num = 1;
   }
@@ -61,7 +61,7 @@ const memoResult = react.memo(function AuthBackgroundArt() {
   const items1 = [closure_9, sharedValue];
   let c0;
   [tmp8, tmp9] = items1;
-  const tmp4Result = tmp4(1653);
+  const tmp4Result = tmp4(1654);
   class AuthBackgroundArtTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -74,14 +74,14 @@ const memoResult = react.memo(function AuthBackgroundArt() {
   AuthBackgroundArtTsx1.__initData = tmp8;
   let obj = { style: container.container, pointerEvents: "none", accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items3 };
   const animatedStyle = tmp4Result.useAnimatedStyle(AuthBackgroundArtTsx1);
-  const obj2 = { backgroundImageSource: sharedValue(7014), backgroundImageCover: true };
-  const tmpResult = sharedValue(7011);
+  const obj2 = { backgroundImageSource: sharedValue(7045), backgroundImageCover: true };
+  const tmpResult = sharedValue(7042);
   items3 = [closure_6(tmpResult, obj2), ];
   const obj3 = { style: items4, children: closure_6(tmpResult2, obj4) };
   items4 = [StyleSheet.absoluteFill, animatedStyle];
-  View = tmp(1653).View;
-  obj4 = { backgroundImageSource: sharedValue(7015), backgroundImageCover: true };
-  tmpResult2 = sharedValue(7011);
+  View = tmp(1654).View;
+  obj4 = { backgroundImageSource: sharedValue(7046), backgroundImageCover: true };
+  tmpResult2 = sharedValue(7042);
   items3[1] = closure_6(View, obj3);
   return closure_7(View, obj);
 });

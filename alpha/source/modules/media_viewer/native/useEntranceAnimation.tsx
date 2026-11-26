@@ -1,14 +1,14 @@
-// Module ID: 14106
-// Function ID: 14107
+// Module ID: 14158
+// Function ID: 14159
 // Name: useEntranceAnimation
-// Dependencies: [32, 19, 1186, 560, 1262, 5222, 1706, 2]
+// Dependencies: [32, 19, 1186, 560, 1263, 5253, 1707, 2]
 // Exports: useEntranceAnimation
 
-// Module 14106 (useEntranceAnimation)
+// Module 14158 (useEntranceAnimation)
 import native from "native" /* 1186 */;
-import react_native from "react-native" /* 1262 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import react_native from "react-native" /* 1263 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import module_560 from "module_560" /* 560 */;
@@ -51,7 +51,7 @@ export function useEntranceAnimation(entranceAnimationDriver) {
     set = entranceAnimationDriver.set;
     const withTiming = timing_timing.withTiming;
     timing_timing;
-    items[1] = _mod1706.scheduleOnRN;
+    items[1] = _mod1707.scheduleOnRN;
     items[2] = setUseEntranceAnimationState;
     let c0;
     let c1;
@@ -78,7 +78,7 @@ export function useEntranceAnimation(entranceAnimationDriver) {
       set = tmp.set;
       const items = [closure_8, , , ];
       const withTiming = timing_timing.withTiming;
-      items[1] = _mod1706.scheduleOnRN;
+      items[1] = _mod1707.scheduleOnRN;
       items[2] = setUseEntranceAnimationState;
       items[3] = callback;
       let c0;

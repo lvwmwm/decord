@@ -1,24 +1,24 @@
-// Module ID: 10187
-// Function ID: 10188
+// Module ID: 10229
+// Function ID: 10230
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [32, 5, 19, 5655, 1071, 21, 5012, 3, 10188, 10189, 7862, 10190, 10192, 1377, 10175, 10193, 10194, 1379, 10195, 10196, 1255, 563, 6015, 1112, 10202, 10166, 6800, 2]
+// Dependencies: [32, 5, 19, 5686, 1071, 21, 5043, 3, 10230, 10231, 7896, 10232, 10234, 1378, 10217, 10235, 10236, 1380, 10237, 10238, 1256, 563, 6046, 1112, 10244, 10208, 6831, 2]
 // Exports: BaseEmbeddedAppWebView
 
-// Module 10187 (BaseEmbeddedAppWebView)
+// Module 10229 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import URLUtilsDefault from "URLUtils" /* 1379 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
-import WebView2 from "WebView" /* 7862 */;
-import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import URLUtilsDefault from "URLUtils" /* 1380 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
+import WebView2 from "WebView" /* 7896 */;
+import useEmbeddedAppCSPDefault from "useEmbeddedAppCSP" /* 10230 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5655 */;
-import createStyles from "createStyles" /* 5012 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5686 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, c8, c9, closure_6, constants;
@@ -352,7 +352,7 @@ function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
             } else {
               let c7;
@@ -460,7 +460,7 @@ function BaseEmbeddedAppWebViewContent(deepLinkQueryParams) {
                   c7 = 0;
                 }
                 c9 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               } catch (tmp31) {
                 closure_6 = tmp31;
                 if (0 === c7) {

@@ -1,13 +1,13 @@
-// Module ID: 6348
-// Function ID: 6349
+// Module ID: 6379
+// Function ID: 6380
 // Name: useAnalyticsLocations
-// Dependencies: [32, 19, 21, 12, 1343, 2]
+// Dependencies: [32, 19, 21, 12, 1344, 2]
 // Exports: AnalyticsLocationProvider, default, useLocationStackFromLocationContext
 
-// Module 6348 (useAnalyticsLocations)
+// Module 6379 (useAnalyticsLocations)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import _modDef1343 from "module_1343" /* 1343 */;
+import _modDef1344 from "module_1344" /* 1344 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ export default function useAnalyticsLocations() {
   const items3 = [items, first];
   const effect = context.useEffect(() => {
     const tmp = items;
-    if (!_modDef1343(items, first)) {
+    if (!_modDef1344(items, first)) {
       closure_2(tmp);
     }
   }, items3);

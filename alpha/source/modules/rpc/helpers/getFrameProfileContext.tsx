@@ -1,16 +1,16 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15924
+// Function ID: 15925
 // Name: getFrameProfileContext
-// Dependencies: [5656, 6908, 7646, 2]
+// Dependencies: [5687, 6939, 7677, 2]
 // Exports: default
 
-// Module 15873 (getFrameProfileContext)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5656 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6908 */;
+// Module 15924 (getFrameProfileContext)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6939 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const conjurePreviewSurface = tmp(7646);
+const conjurePreviewSurface = tmp(7677);
 const result = size.fileFinishedImporting("modules/rpc/helpers/getFrameProfileContext.tsx");
 
 export default function getFrameProfileContext(surface) {

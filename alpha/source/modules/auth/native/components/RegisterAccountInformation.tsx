@@ -1,25 +1,25 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 17679
+// Function ID: 17680
 // Name: RegisterAccountInformation
-// Dependencies: [5, 32, 19, 17, 6810, 5731, 10388, 17599, 17600, 1071, 21, 5012, 575, 1653, 7277, 17596, 504, 17623, 17625, 17608, 1112, 17617, 17598, 17616, 7299, 17626, 17627, 5610, 7273, 7017, 2]
+// Dependencies: [5, 32, 19, 17, 6841, 5762, 10433, 17656, 17657, 1071, 21, 5043, 575, 1654, 7308, 17653, 504, 17680, 17682, 17665, 1112, 17674, 17655, 17673, 7330, 17683, 17684, 5641, 7304, 7048, 2]
 // Exports: default
 
-// Module 17622 (RegisterAccountInformation)
+// Module 17679 (RegisterAccountInformation)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7277 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7308 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConsentStore_mod from "ConsentStore" /* 6810 */;
-import InviteStore from "InviteStore" /* 5731 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 10388 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17599 */;
-import RegistrationConstants from "RegistrationConstants" /* 17600 */;
+import ConsentStore_mod from "ConsentStore" /* 6841 */;
+import InviteStore from "InviteStore" /* 5762 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 10433 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17656 */;
+import RegistrationConstants from "RegistrationConstants" /* 17657 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, dependencyMap;
@@ -35,12 +35,12 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const _modDef1653 = tmp(1653);
-const KeyboardAwareViewDefault = tmp(7017);
-const FreeFormErrorLabelDefault = tmp(7273);
-const AuthFormViewDefault = tmp(7299);
-const useInitialRegistrationStepDefault = tmp(17616);
-const useAuthFlowBackHandlerDefault = tmp(17617);
+const _modDef1654 = tmp(1654);
+const KeyboardAwareViewDefault = tmp(7048);
+const FreeFormErrorLabelDefault = tmp(7304);
+const AuthFormViewDefault = tmp(7330);
+const useInitialRegistrationStepDefault = tmp(17673);
+const useAuthFlowBackHandlerDefault = tmp(17674);
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 let ConsentStore = ConsentStore_mod;
 ({ setRegistrationErrors: unpackModuleId, updateRegistrationOptions: closure_12, useRegistrationUIStore: map1 } = RegistrationUIStore);
@@ -59,10 +59,10 @@ let closure_19 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let obj = { layout: easingResult.duration(300) };
-const LinearTransition = _mod1653.LinearTransition;
+const LinearTransition = _mod1654.LinearTransition;
 const easing = LinearTransition.easing;
-const Easing = _mod1653.Easing;
-easingResult = easing(Easing.inOut(_mod1653.Easing.quad));
+const Easing = _mod1654.Easing;
+easingResult = easing(Easing.inOut(_mod1654.Easing.quad));
 let result = size.fileFinishedImporting("modules/auth/native/components/RegisterAccountInformation.tsx");
 
 export default function RegisterAccountInformation() {
@@ -100,7 +100,7 @@ export default function RegisterAccountInformation() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -166,7 +166,7 @@ export default function RegisterAccountInformation() {
               closure_1_12(closure_129_7);
               closure_129_5(closure_129_8);
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           }
         } catch (tmp41) {
@@ -186,7 +186,7 @@ export default function RegisterAccountInformation() {
   const tmp3 = useWideAuthViewDefault();
   const tmp4 = closure_19(tmp3);
   obj = react;
-  context = react.useContext(context(17596).TrackRegistrationContext);
+  context = react.useContext(context(17653).TrackRegistrationContext);
   const tmp7 = closure_13((registrationOptions) => registrationOptions.registrationOptions);
   let tmp8 = closure_13((submitting) => submitting.submitting);
   [tmp10, importDefault] = _slicedToArray(react.useState(false), 2);
@@ -205,10 +205,10 @@ export default function RegisterAccountInformation() {
     return invite;
   });
   const ref = react.useRef(null);
-  let obj4 = context(17623);
+  let obj4 = context(17680);
   const passwordRegistrationStep = obj4.usePasswordRegistrationStep();
   ({ password, validatePassword: _slicedToArray, setPassword, passwordScore, preventSubmitPassword } = passwordRegistrationStep);
-  let obj5 = context(17625);
+  let obj5 = context(17682);
   const usernameRegistrationStep = obj5.useUsernameRegistrationStep(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   ({ transitionToNextStepOrSubmit: react, username, preventSubmitUsername, validateUsername: closure_6 } = usernameRegistrationStep);
   let obj6 = { username, password, invite: code };
@@ -222,7 +222,7 @@ export default function RegisterAccountInformation() {
   const tmp5Result = context(504);
   const stateFromStores1 = tmp5Result.useStateFromStores(items2, () => ConsentStore.getAuthenticationConsentRequired());
   let obj7 = { isConsentRequired: true === stateFromStores1 };
-  const tmp5Result3 = context(17608);
+  const tmp5Result3 = context(17665);
   const result = tmp5Result3.hasAllRegistrationFieldsCompleted(obj6, obj7);
   ConsentStore = result;
   const intl = tmp5(1112).intl;
@@ -237,7 +237,7 @@ export default function RegisterAccountInformation() {
     return obj(...arguments);
   }
   const tmpResult = useAuthFlowBackHandlerDefault;
-  const tmp5Result4 = context(17598);
+  const tmp5Result4 = context(17655);
   tmpResult(tmp5Result4.getPreviousRegistrationTransitionStep(AuthStates.REGISTER_ACCOUNT_INFORMATION));
   useInitialRegistrationStepDefault(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   const items3 = [context];
@@ -256,14 +256,14 @@ export default function RegisterAccountInformation() {
   intl2 = tmp5(1112).intl;
   obj9 = { contentContainerStyle: { flexGrow: 1 }, keyboardShouldPersistTaps: "handled", children: items4 };
   items4 = [, , ];
-  const obj10 = { style: tmp4.container, children: closure_17(context(17626).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
+  const obj10 = { style: tmp4.container, children: closure_17(context(17683).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
   items4[0] = closure_17(closure_6, obj10);
   const obj11 = { style: tmp4.password, children: closure_17(RegisterPasswordInput, obj12) };
-  const View = _modDef1653.View;
+  const View = _modDef1654.View;
   const merged1 = Object.assign(obj);
   obj12 = { ref, password, onPasswordChange: setPassword, onSubmitEditing: handleSubmit, passwordScore, returnKeyType: str };
   str = "next";
-  RegisterPasswordInput = tmp5(17627).RegisterPasswordInput;
+  RegisterPasswordInput = tmp5(17684).RegisterPasswordInput;
   tmp30 = obj6;
   const tmp31 = obj;
   if (result) {
@@ -271,9 +271,9 @@ export default function RegisterAccountInformation() {
   }
   items4[1] = closure_17(View, obj11);
   const obj13 = { style: tmp4.button, children: items5 };
-  const View2 = _modDef1653.View;
+  const View2 = _modDef1654.View;
   const merged2 = Object.assign(tmp31);
-  const Button = tmp5(5610).Button;
+  const Button = tmp5(5641).Button;
   if (!tmp8) {
     tmp8 = tmp10;
   }

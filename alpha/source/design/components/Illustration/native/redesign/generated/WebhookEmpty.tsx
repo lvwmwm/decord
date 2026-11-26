@@ -1,14 +1,14 @@
-// Module ID: 19123
-// Function ID: 19124
+// Module ID: 19186
+// Function ID: 19187
 // Name: WebhookEmpty
-// Dependencies: [19, 21, 8524, 19124, 19125, 19126, 5019, 5699, 2]
+// Dependencies: [19, 21, 8566, 19187, 19188, 19189, 5050, 5730, 2]
 // Exports: WebhookEmpty, getWebhookEmptySource, useWebhookEmptySource
 
-// Module 19123 (WebhookEmpty)
+// Module 19186 (WebhookEmpty)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5019 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import _mod8524 from "module_8524" /* 8524 */;
+import shared from "shared" /* 5050 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import _mod8566 from "module_8566" /* 8566 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/WebhookEmpty.tsx");
 
 export function getWebhookEmptySource(theme) {
-  const obj = _mod8524;
+  const obj = _mod8566;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useWebhookEmptySource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8524;
+  const obj2 = _mod8566;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function WebhookEmpty(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8524;
+  const obj2 = _mod8566;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

@@ -1,17 +1,17 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17298
+// Function ID: 17299
 // Name: MfaOptionScreen
-// Dependencies: [19, 17, 21, 7277, 17248, 7449, 6084, 5603, 17249, 7011, 2]
+// Dependencies: [19, 17, 21, 7308, 17299, 7480, 6115, 5634, 17300, 7042, 2]
 // Exports: default
 
-// Module 17247 (MfaOptionScreen)
+// Module 17298 (MfaOptionScreen)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7011 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7277 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7449 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 17248 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7042 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7308 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7480 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 17299 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,13 +62,13 @@ export default function MFAOptionScreen(arg0) {
   let tmp10Result = null != subtitle;
   if (tmp10Result) {
     const obj4 = { variant: "heading-xs/medium", color: "text-default", children: subtitle };
-    tmp10Result = tmp10(tmp8(5603).Text, obj4);
+    tmp10Result = tmp10(tmp8(5634).Text, obj4);
   }
   items[2] = tmp10Result;
   let tmp10Result4 = null != error;
   if (tmp10Result4) {
     const obj5 = { variant: "body-sm/normal", color: "text-feedback-critical", children: error };
-    tmp10Result4 = tmp10(tmp8(5603).Text, obj5);
+    tmp10Result4 = tmp10(tmp8(5634).Text, obj5);
   }
   let tmp10Result5 = type === mfaMethod;
   const obj6 = { children: items1 };
@@ -77,10 +77,10 @@ export default function MFAOptionScreen(arg0) {
   items2 = [hasOwnProperty(Stack, obj6), content, ];
   const obj7 = { style: screenStyles.submit, children: items3 };
   items3 = [submit, ];
-  const Stack3 = tmp8(6084).Stack;
+  const Stack3 = tmp8(6115).Stack;
   if (tmp10Result5) {
     const obj8 = { props: screenProps };
-    tmp10Result5 = tmp10(tmp(17249), obj8);
+    tmp10Result5 = tmp10(tmp(17300), obj8);
   }
   items3[1] = tmp10Result5;
   items2[2] = hasOwnProperty(Stack3, obj7);

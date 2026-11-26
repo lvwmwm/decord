@@ -1,12 +1,12 @@
-// Module ID: 19795
-// Function ID: 19796
+// Module ID: 19859
+// Function ID: 19860
 // Name: SavedMessagesManager
-// Dependencies: [5, 11673, 19796, 7444, 2]
+// Dependencies: [5, 11721, 19860, 7475, 2]
 
-// Module 19795 (SavedMessagesManager)
-import SavedMessagesActions from "SavedMessagesActions" /* 11673 */;
+// Module 19859 (SavedMessagesManager)
+import SavedMessagesActions from "SavedMessagesActions" /* 11721 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -24,7 +24,7 @@ let obj = function _refreshSavedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -56,7 +56,7 @@ let obj = function _refreshSavedMessages() {
           obj = closure_128_0(closure_128_1[2]);
           const result = obj.showOverdueRemindersToast();
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp10) {
         c2 = 3;

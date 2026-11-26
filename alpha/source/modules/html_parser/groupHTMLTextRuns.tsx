@@ -1,10 +1,10 @@
-// Module ID: 9939
-// Function ID: 9940
+// Module ID: 9981
+// Function ID: 9982
 // Name: groupHTMLTextRuns
 // Dependencies: [2]
 // Exports: groupHTMLTextRuns
 
-// Module 9939 (groupHTMLTextRuns)
+// Module 9981 (groupHTMLTextRuns)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/html_parser/groupHTMLTextRuns.tsx");

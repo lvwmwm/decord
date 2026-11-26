@@ -1,9 +1,9 @@
-// Module ID: 7674
-// Function ID: 7675
+// Module ID: 7705
+// Function ID: 7706
 // Name: ConjurePreviewAddBotPromptStore
 // Dependencies: [504, 572, 2]
 
-// Module 7674 (ConjurePreviewAddBotPromptStore)
+// Module 7705 (ConjurePreviewAddBotPromptStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

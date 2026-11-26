@@ -1,31 +1,31 @@
-// Module ID: 19756
-// Function ID: 19757
+// Module ID: 19820
+// Function ID: 19821
 // Name: InterestGuildRecommendations
-// Dependencies: [32, 19, 17, 4863, 1071, 21, 7160, 5012, 575, 5603, 1112, 17993, 5576, 1412, 6121, 2654, 5226, 17965, 9378, 7021, 6084, 8693, 4875, 7527, 17968, 504, 17990, 17991, 1255, 7166, 7449, 8962, 17969, 1653, 19757, 5610, 2]
+// Dependencies: [32, 19, 17, 4894, 1071, 21, 7191, 5043, 575, 5634, 1112, 18046, 5607, 1413, 6152, 2655, 5257, 18022, 9420, 7052, 6115, 8735, 4906, 7558, 18025, 504, 18050, 18051, 1256, 7197, 7480, 9004, 18026, 1654, 19821, 5641, 2]
 // Exports: default
 
-// Module 19756 (InterestGuildRecommendations)
+// Module 19820 (InterestGuildRecommendations)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import _modDef2654 from "module_2654" /* 2654 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import GuildIconDefault from "GuildIcon" /* 7021 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 8693 */;
-import ClipViewDefault from "ClipView" /* 9378 */;
-import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 17965 */;
-import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 17968 */;
-import InterestGuildActions from "InterestGuildActions" /* 17969 */;
-import InterestGhostDefault from "InterestGhost" /* 17993 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import _modDef2655 from "module_2655" /* 2655 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import GuildIconDefault from "GuildIcon" /* 7052 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 8735 */;
+import ClipViewDefault from "ClipView" /* 9420 */;
+import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 18022 */;
+import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 18025 */;
+import InterestGuildActions from "InterestGuildActions" /* 18026 */;
+import InterestGhostDefault from "InterestGhost" /* 18046 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4863 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4894 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import NavigatorHeader from "NavigatorHeader" /* 7160 */;
-import createStyles from "createStyles" /* 5012 */;
+import NavigatorHeader from "NavigatorHeader" /* 7191 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -193,9 +193,9 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
   ({ rowPosition: importDefault, onRowLayout: dependencyMap, onJoinTapped: _slicedToArray, onProfileOpened: react, onJoinResult: View } = guild);
   const tmp = closure_13();
   let tmp2 = guild;
-  let obj = guild(5576);
+  let obj = guild(5607);
   const token = obj.useToken(nativeDefault.modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
-  let obj2 = guild(5576);
+  let obj2 = guild(5607);
   const token1 = obj2.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   const obj5 = {
     onLayout(arg0) {
@@ -209,7 +209,7 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
   const obj6 = {
     accessibilityRole: "button",
     accessibilityLabel: guild.name,
-    accessibilityHint: intl.string(_modDef2654.nkweXX),
+    accessibilityHint: intl.string(_modDef2655.nkweXX),
     onPress: function openProfile() {
       let user;
       react(guild.id, importDefault);
@@ -231,7 +231,7 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
     style: tmp.row,
     children: items6
   };
-  const PressableHighlight = guild(6121).PressableHighlight;
+  const PressableHighlight = guild(6152).PressableHighlight;
   intl = guild(1112).intl;
   const obj7 = { style: tmp.rowHeader, children: items5 };
   const obj8 = { style: tmp.profile, children: items1 };
@@ -240,15 +240,15 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
   const obj10 = { borderRadius: token * nativeDefault.space.PX_40 / token1 };
   items[1] = obj10;
   const tmp11 = ClipViewDefault;
-  obj11 = { icon: guildIconURL, value: guild.name, size: guild(7021).GuildIconSizes.NORMAL, selected: false, style: tmp.guildIconImage };
+  obj11 = { icon: guildIconURL, value: guild.name, size: guild(7052).GuildIconSizes.NORMAL, selected: false, style: tmp.guildIconImage };
   tmp12 = GuildIconDefault;
   items1 = [closure_9(tmp11, obj9), ];
   const obj12 = { style: tmp.details, spacing: nativeDefault.space.PX_0, children: items3 };
-  const Stack = guild(6084).Stack;
+  const Stack = guild(6115).Stack;
   const obj13 = { style: tmp.name, children: items2 };
   items2 = [, , ];
   const obj14 = { style: tmp.nameText, variant: "body-md/semibold", color: "text-strong", lineClamp: 1, children: guild.name };
-  items2[0] = closure_9(guild(5603).Text, obj14);
+  items2[0] = closure_9(guild(5634).Text, obj14);
   const features = guild.features;
   let hasItem = features.includes(constants2.VERIFIED);
   const tmp13 = constants2;
@@ -264,20 +264,20 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
     const self = this;
     const self2 = this;
     const tmp4Result = GuildBadgeV2Default;
-    constructFromPartialGuildRecord = tmp2(4875).constructFromPartialGuildRecord;
-    tmp2(4875);
+    constructFromPartialGuildRecord = tmp2(4906).constructFromPartialGuildRecord;
+    tmp2(4906);
     set = new Set(guild.features);
     hasItem = tmp10(tmp4Result, obj15);
   }
   items2[1] = hasItem;
-  items2[2] = closure_9(tmp2(7527).ChevronSmallRightIcon, { size: "xxs", accessible: false });
+  items2[2] = closure_9(tmp2(7558).ChevronSmallRightIcon, { size: "xxs", accessible: false });
   items3 = [closure_10(View, obj13), ];
   const obj18 = { style: tmp.online, children: items4 };
   items4 = [, ];
   const obj19 = { style: tmp.dot };
   items4[0] = closure_9(View, obj19);
   const obj20 = { variant: "body-xs/medium", color: "text-muted", children: intl2.format(tmp2(1112).t["LC+S+m"], obj21) };
-  const Text = tmp2(5603).Text;
+  const Text = tmp2(5634).Text;
   intl2 = tmp2(1112).intl;
   obj21 = { membersOnline: guild.approximate_presence_count };
   items4[1] = closure_9(Text, obj20);
@@ -290,7 +290,7 @@ let closure_15 = react.memo(function InterestGuildRow(guild) {
   let tmp10Result = null != guild.description && "" !== guild.description;
   if (tmp10Result) {
     const obj23 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: guild.description };
-    tmp10Result = tmp10(tmp2(5603).Text, obj23);
+    tmp10Result = tmp10(tmp2(5634).Text, obj23);
   }
   items6[1] = tmp10Result;
   items7 = [closure_10(PressableHighlight, obj6), ];
@@ -453,7 +453,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const SafeAreaPaddingView = tmp8(tmp5[30]).SafeAreaPaddingView;
   intl = tmp8(tmp5[10]).intl;
   items6 = [ref(View, obj6), , ];
-  const obj8 = { title: intl2.string(require("module_2654")["mdhU/Q"]), scrollY };
+  const obj8 = { title: intl2.string(require("module_2655")["mdhU/Q"]), scrollY };
   const InterestCompactTitle = tmp8(tmp5[27]).InterestCompactTitle;
   intl2 = tmp8(tmp5[10]).intl;
   items6[1] = ref(InterestCompactTitle, obj8);
@@ -500,11 +500,11 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const obj12 = { contentContainerStyle: tmp6.content, onScroll, onLayout: tmp10.onViewportLayout, scrollEventThrottle: 16, children: items9 };
   const obj13 = { style: tmp6.intro, children: items8 };
   const ScrollView = tmp4(tmp5[33]).ScrollView;
-  const obj14 = { variant: "heading-xl/semibold", color: "text-strong", children: intl4.string(require("module_2654").TQdfcH) };
+  const obj14 = { variant: "heading-xl/semibold", color: "text-strong", children: intl4.string(require("module_2655").TQdfcH) };
   const Heading = tmp8(tmp5[9]).Heading;
   intl4 = tmp8(tmp5[10]).intl;
   items8 = [ref(Heading, obj14), ];
-  const obj15 = { variant: "body-sm/normal", color: "text-default", style: tmp6.centered, lineBreakStrategyIOS: "push-out", textBreakStrategy: "balanced", children: intl5.string(require("module_2654")["G++b7J"]) };
+  const obj15 = { variant: "body-sm/normal", color: "text-default", style: tmp6.centered, lineBreakStrategyIOS: "push-out", textBreakStrategy: "balanced", children: intl5.string(require("module_2655")["G++b7J"]) };
   const Text = tmp8(tmp5[9]).Text;
   intl5 = tmp8(tmp5[10]).intl;
   items8[1] = ref(Text, obj15);
@@ -527,7 +527,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const tmp20Result4 = 0 === syncExternalStore.guilds.length && "loading" === syncExternalStore.status && tmp20(InterestGuildSkeleton, {});
   if (tmp18Result) {
     const obj19 = { style: tmp6.empty, children: items10 };
-    const obj20 = { variant: "body-lg/normal", color: "text-muted", style: tmp6.centered, children: intl6.string(require("module_2654").A3YsGV) };
+    const obj20 = { variant: "body-lg/normal", color: "text-muted", style: tmp6.centered, children: intl6.string(require("module_2655").A3YsGV) };
     const Text2 = tmp8(tmp5[9]).Text;
     intl6 = tmp8(tmp5[10]).intl;
     items10 = [ref(Text2, obj20), ];

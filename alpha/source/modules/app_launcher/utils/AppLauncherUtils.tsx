@@ -1,30 +1,30 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 10087
+// Function ID: 10088
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 10005, 2142, 10046, 1071, 7042, 5017, 1112, 2150, 5656, 6942, 5663, 1378, 2117, 5664, 10048, 8302, 8202, 6015, 1412, 10047, 10056, 8141, 10057, 2]
+// Dependencies: [109, 5, 10047, 2143, 10088, 1071, 7073, 5048, 1112, 2151, 5687, 6973, 5694, 1379, 2118, 5695, 10090, 8344, 8244, 6046, 1413, 10089, 10098, 8183, 10099, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getConjureProjectId, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getInstallableApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isConjureAppWithoutIcon, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 10045 (AppLauncherUtils)
+// Module 10087 (AppLauncherUtils)
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import Server from "Server" /* 2117 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2150 */;
-import MessageConstants from "MessageConstants" /* 5017 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5656 */;
-import getPlatformDefault from "getPlatform" /* 5663 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6942 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7042 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8141 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10047 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 10056 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 10057 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import Server from "Server" /* 2118 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2151 */;
+import MessageConstants from "MessageConstants" /* 5048 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
+import getPlatformDefault from "getPlatform" /* 5694 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6973 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8183 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10089 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 10098 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 10099 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10005 */;
-import ApplicationRecord from "ApplicationRecord" /* 2142 */;
-import AppLauncherStore from "AppLauncherStore" /* 10046 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10047 */;
+import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import AppLauncherStore from "AppLauncherStore" /* 10088 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -201,7 +201,7 @@ export function executeAppLauncherCommand(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -277,7 +277,7 @@ export function executeAppLauncherCommand(arg0) {
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp37) {
         commandTargetId = tmp37;

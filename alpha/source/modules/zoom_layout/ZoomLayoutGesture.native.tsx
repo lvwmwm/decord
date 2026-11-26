@@ -1,17 +1,17 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 14164
+// Function ID: 14165
 // Name: ZoomLayoutGesture
-// Dependencies: [19, 17, 21, 5224, 5613, 1653, 5012, 5272, 1706, 2]
+// Dependencies: [19, 17, 21, 5255, 5644, 1654, 5043, 5303, 1707, 2]
 
-// Module 14112 (ZoomLayoutGesture)
+// Module 14164 (ZoomLayoutGesture)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5224 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import spring_spring from "spring/spring" /* 5613 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5255 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import spring_spring from "spring/spring" /* 5644 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, _undefined2, activateResult, diff, diff1, point2, point3, result3, result4, result5, set, set2, set2Result, set3, set3Result, value1;
@@ -41,7 +41,7 @@ let items1 = [tmp3];
 resistTranslation.__closure = items1;
 resistTranslation.__workletHash = 234320700197;
 resistTranslation.__initData = tmp2;
-let items2 = [{ code: "(function releaseTranslation_ZoomLayoutGestureNativeTsx3(translation,bound,velocity){let[MAX_PAN_VELOCITY,accessibilityPreferencesSharedValue,withSpring,SPRING_CONFIG,MAX_FLING_OVERSHOOT,withDecay,PAN_DECELERATION,_worklet_10161841114284_init_data]=this.__closure;const position=translation.get();const clamped=Math.max(-bound,Math.min(bound,position));const releaseVelocity=Math.max(-MAX_PAN_VELOCITY,Math.min(MAX_PAN_VELOCITY,velocity));if(accessibilityPreferencesSharedValue.get().reduceMotion){translation.set(clamped);}else if(position!==clamped||bound===0){translation.set(withSpring(clamped,SPRING_CONFIG));}else{const overshoot=Math.min(MAX_FLING_OVERSHOOT,Math.abs(releaseVelocity)*0.02);translation.set(withDecay({velocity:releaseVelocity,deceleration:PAN_DECELERATION,clamp:[-bound-overshoot,bound+overshoot]},function releaseTranslation_ZoomLayoutGestureNativeTsx3([_worklet_10161841114284_init_data,bound,translation,withSpring,SPRING_CONFIG]){const ZoomLayoutGestureNativeTsx2=function(finished){if(!finished)return;const restingPosition=Math.max(-bound,Math.min(bound,translation.get()));if(restingPosition!==translation.get())translation.set(withSpring(restingPosition,SPRING_CONFIG));};ZoomLayoutGestureNativeTsx2.__closure=[bound,translation,withSpring,SPRING_CONFIG];ZoomLayoutGestureNativeTsx2.__workletHash=10161841114284;ZoomLayoutGestureNativeTsx2.__initData=_worklet_10161841114284_init_data;return ZoomLayoutGestureNativeTsx2;}([_worklet_10161841114284_init_data,bound,translation,withSpring,SPRING_CONFIG])));}})" }, 4000, reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, spring_spring.withSpring, obj, 48, _mod1653.withDecay, 0.998, { code: "(function ZoomLayoutGestureNativeTsx2(finished){let[bound,translation,withSpring,SPRING_CONFIG]=this.__closure;if(!finished)return;const restingPosition=Math.max(-bound,Math.min(bound,translation.get()));if(restingPosition!==translation.get())translation.set(withSpring(restingPosition,SPRING_CONFIG));})" }];
+let items2 = [{ code: "(function releaseTranslation_ZoomLayoutGestureNativeTsx3(translation,bound,velocity){let[MAX_PAN_VELOCITY,accessibilityPreferencesSharedValue,withSpring,SPRING_CONFIG,MAX_FLING_OVERSHOOT,withDecay,PAN_DECELERATION,_worklet_10161841114284_init_data]=this.__closure;const position=translation.get();const clamped=Math.max(-bound,Math.min(bound,position));const releaseVelocity=Math.max(-MAX_PAN_VELOCITY,Math.min(MAX_PAN_VELOCITY,velocity));if(accessibilityPreferencesSharedValue.get().reduceMotion){translation.set(clamped);}else if(position!==clamped||bound===0){translation.set(withSpring(clamped,SPRING_CONFIG));}else{const overshoot=Math.min(MAX_FLING_OVERSHOOT,Math.abs(releaseVelocity)*0.02);translation.set(withDecay({velocity:releaseVelocity,deceleration:PAN_DECELERATION,clamp:[-bound-overshoot,bound+overshoot]},function releaseTranslation_ZoomLayoutGestureNativeTsx3([_worklet_10161841114284_init_data,bound,translation,withSpring,SPRING_CONFIG]){const ZoomLayoutGestureNativeTsx2=function(finished){if(!finished)return;const restingPosition=Math.max(-bound,Math.min(bound,translation.get()));if(restingPosition!==translation.get())translation.set(withSpring(restingPosition,SPRING_CONFIG));};ZoomLayoutGestureNativeTsx2.__closure=[bound,translation,withSpring,SPRING_CONFIG];ZoomLayoutGestureNativeTsx2.__workletHash=10161841114284;ZoomLayoutGestureNativeTsx2.__initData=_worklet_10161841114284_init_data;return ZoomLayoutGestureNativeTsx2;}([_worklet_10161841114284_init_data,bound,translation,withSpring,SPRING_CONFIG])));}})" }, 4000, reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue, spring_spring.withSpring, obj, 48, _mod1654.withDecay, 0.998, { code: "(function ZoomLayoutGestureNativeTsx2(finished){let[bound,translation,withSpring,SPRING_CONFIG]=this.__closure;if(!finished)return;const restingPosition=Math.max(-bound,Math.min(bound,translation.get()));if(restingPosition!==translation.get())translation.set(withSpring(restingPosition,SPRING_CONFIG));})" }];
 let c0;
 let c1;
 let c2;

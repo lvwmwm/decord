@@ -1,21 +1,21 @@
-// Module ID: 12447
-// Function ID: 12448
+// Module ID: 12496
+// Function ID: 12497
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1386, 4926, 1071, 21, 5012, 8785, 5573, 1255, 12446, 5694, 1112, 6087, 5603, 6776, 11377, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 4957, 1071, 21, 5043, 8827, 5604, 1256, 12495, 5725, 1112, 6118, 5634, 6807, 11423, 2]
 // Exports: default
 
-// Module 12447 (GuildEnableCommunicationAlert)
+// Module 12496 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import CountDownDefault from "CountDown" /* 11377 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import CountDownDefault from "CountDown" /* 11423 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4926 */;
+import UserStore from "UserStore" /* 1387 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4957 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, dependencyMap;
@@ -69,7 +69,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
             intl = tmp3(c2[14]).intl;
             open("GUILD_ENABLE_COMMUNICATION_SUCCESS", obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -116,8 +116,8 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const tmp2 = closure_12();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  let closure_3 = obj(userId(8785)(userId, guildId), 1)[0];
-  userId(5573)(() => {
+  let closure_3 = obj(userId(8827)(userId, guildId), 1)[0];
+  userId(5604)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type: metroImportDefault, guild_id: guildId, other_user_id: userId };
     obj.track(constants.OPEN_MODAL, obj2);
@@ -134,7 +134,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(6087);
+  const tmp7 = userId(6118);
   const merged1 = Object.assign(merged);
   intl = guildId(1112).intl;
   intl2 = guildId(1112).intl;
@@ -145,12 +145,12 @@ export default function GuildEnableCommunicationAlert(guildId) {
   intl3 = tmp9(1112).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "body-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(5603).Text;
+  const Text = tmp9(5634).Text;
   const intl4 = tmp9(1112).intl;
   format = intl4.format;
   prop = tmp9(1112).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(6776);
+  const tmp3Result = tmp3(6807);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_11;
   tmp12 = View;
@@ -175,7 +175,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
   let obj5 = { style: items1, variant: "body-sm/medium", children: intl5.format(tmp9(1112).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(5603).Text;
+  const Text2 = tmp9(5634).Text;
   intl5 = tmp9(1112).intl;
   obj6 = { link };
   items[1] = closure_10(Text2, obj5);

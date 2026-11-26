@@ -1,22 +1,22 @@
-// Module ID: 13295
-// Function ID: 13296
+// Module ID: 13347
+// Function ID: 13348
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 5013, 5241, 1389, 21, 5012, 1378, 575, 504, 6121, 7457, 1412, 9499, 1494, 4962, 9507, 9495, 5594, 9662, 2]
+// Dependencies: [19, 17, 5044, 5272, 1390, 21, 5043, 1379, 575, 504, 6152, 7488, 1413, 9541, 1495, 4993, 9549, 9537, 5625, 9704, 2]
 
-// Module 13295 (SelectDoubleTapEmojiRow)
+// Module 13347 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5241 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5594 */;
-import EmojiDefault from "Emoji" /* 7457 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9495 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5625 */;
+import EmojiDefault from "Emoji" /* 7488 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9537 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import EmojiConstants from "EmojiConstants" /* 1389 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import EmojiConstants from "EmojiConstants" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1379 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -89,7 +89,7 @@ let closure_13 = react.memo(function EmojiButton(emoji) {
   };
   items1 = [tmp.emojiPressable, ];
   let prop;
-  const PressableOpacity = emoji(6121).PressableOpacity;
+  const PressableOpacity = emoji(6152).PressableOpacity;
   if (selected) {
     prop = tmp.selectedEmojiPressable;
   }
@@ -111,7 +111,7 @@ let closure_13 = react.memo(function EmojiButton(emoji) {
   if (null != emoji.id) {
     const obj5 = { id: emoji.id, animated, size };
     animated = !stateFromStores;
-    const getEmojiURL = tmp8(1412).getEmojiURL;
+    const getEmojiURL = tmp8(1413).getEmojiURL;
     AvatarUtilsDefault;
     if (!stateFromStores) {
       animated = emoji.animated;

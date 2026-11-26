@@ -1,15 +1,15 @@
-// Module ID: 17538
-// Function ID: 17539
+// Module ID: 17595
+// Function ID: 17596
 // Name: ParentalControlsSensitiveContentFiltersScreen
-// Dependencies: [19, 9513, 21, 1112, 11914, 16139, 2]
+// Dependencies: [19, 9555, 21, 1112, 11962, 16190, 2]
 // Exports: default
 
-// Module 17538 (ParentalControlsSensitiveContentFiltersScreen)
+// Module 17595 (ParentalControlsSensitiveContentFiltersScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
-import SettingLayoutDefault from "SettingLayout" /* 16139 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
+import SettingLayoutDefault from "SettingLayout" /* 16190 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

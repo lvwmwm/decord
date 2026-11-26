@@ -1,16 +1,16 @@
-// Module ID: 14275
-// Function ID: 14276
+// Module ID: 14327
+// Function ID: 14328
 // Name: StartEventUtils
-// Dependencies: [5, 4865, 4861, 4883, 4867, 1071, 8483, 38, 7834, 8436, 2]
+// Dependencies: [5, 4896, 4892, 4914, 4898, 1071, 8525, 38, 7868, 8478, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 14275 (StartEventUtils)
+// Module 14327 (StartEventUtils)
 import Constants from "Constants" /* 1071 */;
-import ChannelRecord from "ChannelRecord" /* 4865 */;
+import ChannelRecord from "ChannelRecord" /* 4896 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4867 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
 import size from "module_2" /* 2 */;
 
 let permissionOverwrites;
@@ -37,7 +37,7 @@ let obj = function _createStageChannelForEvent() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _preStartEventActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -182,7 +182,7 @@ obj = function _preStartEventActions() {
             closure_131_1(closure_131_2[7])(null != entity_type, "could not find or create channel");
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp16) {
           c5 = 3;
           throw tmp16;

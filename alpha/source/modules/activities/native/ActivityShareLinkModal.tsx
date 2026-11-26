@@ -1,31 +1,31 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 15905
+// Function ID: 15906
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 4861, 1386, 4860, 8902, 5017, 21, 5012, 575, 504, 8903, 13040, 15853, 7484, 1254, 15855, 8202, 8302, 5694, 1112, 7507, 5693, 1494, 1378, 8961, 7717, 5708, 10546, 11477, 11490, 2]
+// Dependencies: [5, 32, 19, 17, 4892, 1387, 4891, 8944, 5048, 21, 5043, 575, 504, 8945, 13092, 15904, 7515, 1255, 15906, 8244, 8344, 5725, 1112, 7538, 5724, 1495, 1379, 9003, 7751, 5739, 10591, 11524, 11538, 2]
 // Exports: default
 
-// Module 15854 (ActivityShareLinkModal)
+// Module 15905 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import MessageConstants from "MessageConstants" /* 5017 */;
-import ToastUtils from "ToastUtils" /* 5693 */;
-import LinkIcon from "LinkIcon" /* 5708 */;
-import ClipboardUtils from "ClipboardUtils" /* 7507 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7717 */;
-import UserRowConstants from "UserRowConstants" /* 8902 */;
-import formatResults from "formatResults" /* 8903 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 13040 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15853 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import MessageConstants from "MessageConstants" /* 5048 */;
+import ToastUtils from "ToastUtils" /* 5724 */;
+import LinkIcon from "LinkIcon" /* 5739 */;
+import ClipboardUtils from "ClipboardUtils" /* 7538 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7751 */;
+import UserRowConstants from "UserRowConstants" /* 8944 */;
+import formatResults from "formatResults" /* 8945 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 13092 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15904 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import UserStore from "UserStore" /* 1386 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import UserStore from "UserStore" /* 1387 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, channel, closure_0;
@@ -132,7 +132,7 @@ export default function ActivityShareLinkModal(applicationId) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -185,7 +185,7 @@ export default function ActivityShareLinkModal(applicationId) {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: "+95" };
                   }
                 } else {
                   try {
@@ -220,7 +220,7 @@ export default function ActivityShareLinkModal(applicationId) {
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: "+95" };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -242,7 +242,7 @@ export default function ActivityShareLinkModal(applicationId) {
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

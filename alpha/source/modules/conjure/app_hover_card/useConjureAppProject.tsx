@@ -1,13 +1,13 @@
-// Module ID: 11504
-// Function ID: 11505
+// Module ID: 11552
+// Function ID: 11553
 // Name: useConjureAppProject
-// Dependencies: [19, 6903, 6938, 7636, 504, 2]
+// Dependencies: [19, 6934, 6969, 7667, 504, 2]
 // Exports: default
 
-// Module 11504 (useConjureAppProject)
-import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
+// Module 11552 (useConjureAppProject)
+import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6903 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

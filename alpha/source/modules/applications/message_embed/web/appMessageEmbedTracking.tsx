@@ -1,12 +1,12 @@
-// Module ID: 8314
-// Function ID: 8315
+// Module ID: 8356
+// Function ID: 8357
 // Name: appMessageEmbedTracking
-// Dependencies: [19, 1071, 1255, 8315, 8316, 2]
+// Dependencies: [19, 1071, 1256, 8357, 8358, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, trackAppEmbedViewed, useTrackAppEmbedViewed
 
-// Module 8314 (appMessageEmbedTracking)
+// Module 8356 (appMessageEmbedTracking)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

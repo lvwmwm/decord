@@ -1,24 +1,24 @@
-// Module ID: 19667
-// Function ID: 19668
+// Module ID: 19731
+// Function ID: 19732
 // Name: FrecencyUserSettingsManager
-// Dependencies: [5, 10007, 10006, 6852, 6892, 6895, 6954, 1230, 1081, 1363, 1088, 7444, 4842, 1231, 1232, 12, 2]
+// Dependencies: [5, 10049, 10048, 6883, 6923, 6926, 6985, 1231, 1081, 1364, 1088, 7475, 4873, 1232, 1233, 12, 2]
 
-// Module 19667 (FrecencyUserSettingsManager)
+// Module 19731 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import frecency_user_settings from "frecency_user_settings" /* 1231 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1232 */;
-import ApplicationConstants from "ApplicationConstants" /* 1363 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4842 */;
-import FrecencyStore2 from "FrecencyStore" /* 6954 */;
+import frecency_user_settings from "frecency_user_settings" /* 1232 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
+import ApplicationConstants from "ApplicationConstants" /* 1364 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4873 */;
+import FrecencyStore2 from "FrecencyStore" /* 6985 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 10007 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10006 */;
-import EmojiStore from "EmojiStore" /* 6852 */;
-import SoundboardStore from "SoundboardStore" /* 6892 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 6895 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 10049 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10048 */;
+import EmojiStore from "EmojiStore" /* 6883 */;
+import SoundboardStore from "SoundboardStore" /* 6923 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 6926 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 const FrecencyStore = FrecencyStore2;
@@ -75,7 +75,7 @@ let actions = function _saveProtos() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -107,12 +107,12 @@ let actions = function _saveProtos() {
               }
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else if (1 === tmp4) {
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;

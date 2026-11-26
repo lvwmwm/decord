@@ -1,13 +1,13 @@
-// Module ID: 9469
-// Function ID: 9470
+// Module ID: 9511
+// Function ID: 9512
 // Name: profile_customization/ProfileCustomizationUtils
-// Dependencies: [1412, 9470, 1089, 2]
+// Dependencies: [1413, 9512, 1089, 2]
 // Exports: getAvatarSource, useUserProfileBannerBackgroundColor
 
-// Module 9469 (profile_customization/ProfileCustomizationUtils)
+// Module 9511 (profile_customization/ProfileCustomizationUtils)
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
-import AvatarUtils from "AvatarUtils" /* 1412 */;
-import VideoBackground from "VideoBackground" /* 9470 */;
+import AvatarUtils from "AvatarUtils" /* 1413 */;
+import VideoBackground from "VideoBackground" /* 9512 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");
@@ -49,21 +49,23 @@ export function getAvatarSource(getAvatarURL, arg1, arg2, arg3) {
   let tmp = null;
   if (null != getAvatarURL) {
     let memoizedImageSourceResult;
-    let userAvatarURL = arg2;
     if (undefined === arg2) {
+      const obj4 = VideoBackground;
+      memoizedImageSourceResult = obj4.memoizedImageSource(getAvatarURL.getAvatarURL(arg1, 80, !arg3));
+    } else if (null != arg2) {
+      const obj3 = VideoBackground;
+      memoizedImageSourceResult = obj3.memoizedImageSource(arg2);
+    } else if (null != arg1) {
       const obj2 = VideoBackground;
-      memoizedImageSourceResult = obj2.memoizedImageSource(getAvatarURL.getAvatarURL(arg1, 80, !arg3));
+      memoizedImageSourceResult = obj2.memoizedImageSource(getAvatarURL.getAvatarURL(undefined, 80, !arg3));
     } else {
       const memoizedImageSource = VideoBackground.memoizedImageSource;
       VideoBackground;
-      if (userAvatarURL == null) {
-        const obj = { avatar: null };
-        const getUserAvatarURL = tmp3(1412).getUserAvatarURL;
-        AvatarUtils;
-        const merged = Object.assign(getAvatarURL);
-        userAvatarURL = getUserAvatarURL(obj);
-      }
-      memoizedImageSourceResult = memoizedImageSource(userAvatarURL);
+      const obj = { avatar: null };
+      const getUserAvatarURL = AvatarUtils.getUserAvatarURL;
+      AvatarUtils;
+      const merged = Object.assign(getAvatarURL);
+      memoizedImageSourceResult = memoizedImageSource(getUserAvatarURL(obj));
     }
     tmp = memoizedImageSourceResult;
   }

@@ -1,26 +1,26 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16127
+// Function ID: 16128
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 8537, 21, 5012, 1378, 575, 8536, 5074, 6113, 5226, 1112, 7021, 8680, 7223, 14258, 12, 5021, 14261, 6349, 7515, 7476, 5610, 7375, 5240, 5603, 7451, 8046, 2]
+// Dependencies: [32, 19, 17, 8579, 21, 5043, 1379, 575, 8578, 5105, 6144, 5257, 1112, 7052, 8722, 7254, 14310, 12, 5052, 14313, 6380, 7546, 7507, 5641, 7406, 5271, 5634, 7482, 8088, 2]
 // Exports: default
 
-// Module 16069 (UserPrimaryGuildListBottomSheet)
+// Module 16127 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl11 from "intl" /* 1112 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5021 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import GuildIconDefault from "GuildIcon" /* 7021 */;
-import _mod8046 from "module_8046" /* 8046 */;
-import GuildTagConstants from "GuildTagConstants" /* 8537 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14261 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
+import GuildIconDefault from "GuildIcon" /* 7052 */;
+import _mod8088 from "module_8088" /* 8088 */;
+import GuildTagConstants from "GuildTagConstants" /* 8579 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14313 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -65,15 +65,15 @@ let closure_11 = react.memo(function Item(item) {
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge;
-    const getGuildTagBadgeUrl = item(8536).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = item(8578).getGuildTagBadgeUrl;
     let id = item.id;
-    item(8536);
+    item(8578);
     if (profile != null) {
       badge = profile.badge;
     }
     guildTagBadgeUrl = getGuildTagBadgeUrl(id, badge, GuildTagBadgeSize.SIZE_24);
   }
-  let obj = item(5074);
+  let obj = item(5105);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj2 = {
@@ -98,7 +98,7 @@ let closure_11 = react.memo(function Item(item) {
     accessibilityState,
     trailing: tmp15(tmp16, obj4)
   };
-  const TableRow = item(6113).TableRow;
+  const TableRow = item(6144).TableRow;
   if (null != item) {
     name = item.name;
   } else {
@@ -107,7 +107,7 @@ let closure_11 = react.memo(function Item(item) {
   }
   tmp11Result = null;
   if (null != item) {
-    const obj3 = { style: tmp.guildIcon, guild: item, size: item(7021).GuildIconSizes.SMALL_32 };
+    const obj3 = { style: tmp.guildIcon, guild: item, size: item(7052).GuildIconSizes.SMALL_32 };
     const tmp14 = GuildIconDefault;
     tmp11Result = tmp11(tmp14, obj3);
   }
@@ -122,10 +122,10 @@ let closure_11 = react.memo(function Item(item) {
     const obj9 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-sm/semibold", textColor: "text-strong" };
     ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp);
     tag = profile.tag;
-    const BaseGuildTagChiplet = tmp8(8680).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp8(8722).BaseGuildTagChiplet;
     tmp11Result2 = tmp11(BaseGuildTagChiplet, obj9);
   }
-  items = [tmp11Result2, closure_7(item(7223).FormRadio, { selected })];
+  items = [tmp11Result2, closure_7(item(7254).FormRadio, { selected })];
   return closure_7(TableRow, obj2);
 });
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserPrimaryGuildListBottomSheet.tsx");
@@ -291,7 +291,7 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
     ListEmptyComponent: memo(Text2, obj16),
     ItemSeparatorComponent() {
       const obj = { iconPush: true, style: divider.divider };
-      return metroImportDefault(_mod8046.FormDivider, obj);
+      return metroImportDefault(_mod8088.FormDivider, obj);
     },
     data: memo1,
     contentContainerStyle: { padding: 16 },

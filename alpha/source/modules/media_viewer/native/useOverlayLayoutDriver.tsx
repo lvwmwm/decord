@@ -1,13 +1,13 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14127
+// Function ID: 14128
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 1653, 8832, 5222, 1186, 2]
+// Dependencies: [19, 1654, 8874, 5253, 1186, 2]
 // Exports: useFooterLayoutAnimation, useHeaderLayoutAnimation, useOverlayLayoutDriver
 
-// Module 14075 (useOverlayLayoutDriver)
+// Module 14127 (useOverlayLayoutDriver)
 import native from "native" /* 1186 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,9 +19,9 @@ let result = size.fileFinishedImporting("modules/media_viewer/native/useOverlayL
 
 export function useOverlayLayoutDriver() {
   let sharedValue;
-  let obj = sharedValue(1653);
+  let obj = sharedValue(1654);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(8832);
+  let obj2 = sharedValue(8874);
   const mediaViewerDimensions = obj2.useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);
@@ -38,9 +38,9 @@ export function useHeaderLayoutAnimation(animationDriver) {
   let tmp3;
   let tmp4;
   let items = [closure_3, , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
-  items[1] = _mod1653.interpolate;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
+  items[1] = _mod1654.interpolate;
   items[2] = animationDriver;
   let c0;
   let c1;
@@ -63,9 +63,9 @@ export function useFooterLayoutAnimation(overlayLayoutDriver) {
   let tmp3;
   let tmp4;
   let items = [closure_4, , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
-  items[1] = _mod1653.interpolate;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
+  items[1] = _mod1654.interpolate;
   items[2] = overlayLayoutDriver;
   let c0;
   let c1;

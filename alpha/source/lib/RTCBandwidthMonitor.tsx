@@ -1,10 +1,10 @@
-// Module ID: 6005
-// Function ID: 6006
+// Module ID: 6036
+// Function ID: 6037
 // Name: RTCBandwidthMonitor
 // Dependencies: [12, 2]
 // Exports: getRTCTotalBytes
 
-// Module 6005 (RTCBandwidthMonitor)
+// Module 6036 (RTCBandwidthMonitor)
 import _modDef12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

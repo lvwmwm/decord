@@ -1,29 +1,29 @@
-// Module ID: 8386
-// Function ID: 8387
+// Module ID: 8428
+// Function ID: 8429
 // Name: GuildRoomConstants
-// Dependencies: [1112, 2686, 8387, 8388, 8389, 8384, 8390, 8391, 8392, 8393, 8394, 8395, 8396, 8397, 8398, 8399, 8400, 8401, 8402, 2]
+// Dependencies: [1112, 2687, 8429, 8430, 8431, 8426, 8432, 8433, 8434, 8435, 8436, 8437, 8438, 8439, 8440, 8441, 8442, 8443, 8444, 2]
 // Exports: getBlurredBackgroundScale
 
-// Module 8386 (GuildRoomConstants)
+// Module 8428 (GuildRoomConstants)
 import intl4 from "intl" /* 1112 */;
-import _modDef2686 from "module_2686" /* 2686 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 8384 */;
-import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 8387 */;
-import _modDef8388 from "module_8388" /* 8388 */;
-import _modDef8389 from "module_8389" /* 8389 */;
-import GuildRoomBackgroundPositions from "GuildRoomBackgroundPositions" /* 8390 */;
-import _modDef8391 from "module_8391" /* 8391 */;
-import _modDef8392 from "module_8392" /* 8392 */;
-import _modDef8393 from "module_8393" /* 8393 */;
-import _modDef8394 from "module_8394" /* 8394 */;
-import _modDef8395 from "module_8395" /* 8395 */;
-import _modDef8396 from "module_8396" /* 8396 */;
-import _modDef8397 from "module_8397" /* 8397 */;
-import _modDef8398 from "module_8398" /* 8398 */;
-import _modDef8399 from "module_8399" /* 8399 */;
-import _modDef8400 from "module_8400" /* 8400 */;
-import _modDef8401 from "module_8401" /* 8401 */;
-import _modDef8402 from "module_8402" /* 8402 */;
+import _modDef2687 from "module_2687" /* 2687 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 8426 */;
+import GuildRoomBackgrounds from "GuildRoomBackgrounds" /* 8429 */;
+import _modDef8430 from "module_8430" /* 8430 */;
+import _modDef8431 from "module_8431" /* 8431 */;
+import GuildRoomBackgroundPositions from "GuildRoomBackgroundPositions" /* 8432 */;
+import _modDef8433 from "module_8433" /* 8433 */;
+import _modDef8434 from "module_8434" /* 8434 */;
+import _modDef8435 from "module_8435" /* 8435 */;
+import _modDef8436 from "module_8436" /* 8436 */;
+import _modDef8437 from "module_8437" /* 8437 */;
+import _modDef8438 from "module_8438" /* 8438 */;
+import _modDef8439 from "module_8439" /* 8439 */;
+import _modDef8440 from "module_8440" /* 8440 */;
+import _modDef8441 from "module_8441" /* 8441 */;
+import _modDef8442 from "module_8442" /* 8442 */;
+import _modDef8443 from "module_8443" /* 8443 */;
+import _modDef8444 from "module_8444" /* 8444 */;
 import size from "module_2" /* 2 */;
 
 let C_LGlh, yG_xS0;
@@ -37,7 +37,7 @@ const getLabel = () => {
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { seatType: intl2.string(ytIYuY), number };
-  const crFI7e = _modDef2686.crFI7e;
+  const crFI7e = _modDef2687.crFI7e;
   intl2 = intl4.intl;
   return formatToPlainString(crFI7e, obj);
 };
@@ -47,24 +47,24 @@ const getLabel2 = () => {
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { seatType: intl2.string(C_LGlh), position: intl3.string(Qt29nt) };
-  const LFdLjz = _modDef2686.LFdLjz;
+  const LFdLjz = _modDef2687.LFdLjz;
   intl2 = intl4.intl;
   intl3 = intl4.intl;
   return formatToPlainString(LFdLjz, obj);
 };
 let obj = {};
 const obj2 = {
-  background: _modDef8388,
-  backgroundBlurred: _modDef8389,
+  background: _modDef8430,
+  backgroundBlurred: _modDef8431,
   aspectRatio: 1.366583541147132,
   getName() {
     const intl = intl4.intl;
-    return intl.formatToPlainString(_modDef2686["3xb4VY"], { number: 1 });
+    return intl.formatToPlainString(_modDef2687["3xb4VY"], { number: 1 });
   },
   seats: obj3,
   plants: items,
-  duck: { asset: _modDef8395, position: { x: 67.3, y: 45 }, width: 4.8 },
-  notePad: { asset: _modDef8396, position: { x: 81.5, y: 84.5 }, width: 4 },
+  duck: { asset: _modDef8437, position: { x: 67.3, y: 45 }, width: 4.8 },
+  notePad: { asset: _modDef8438, position: { x: 81.5, y: 84.5 }, width: 4 },
   screen: { topLeft: { x: 56.8, y: 16.15 }, topRight: { x: 75.85, y: 23 }, bottomRight: { x: 75.3, y: 41.3 }, bottomLeft: { x: 56.95, y: 33.75 } }
 };
 const DEFAULT = GuildRoomBackgrounds.GuildRoomBackgrounds.DEFAULT;
@@ -135,25 +135,25 @@ obj3[SEAT_21] = obj24;
 const obj25 = { name: "PC_SEAT_4", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.DEFAULT][21] };
 const SEAT_22 = GuildRoomSeats.GuildRoomSeats.SEAT_22;
 obj3[SEAT_22] = obj25;
-const point = { plantDeadAsset: _modDef8391, plantDyingAsset: _modDef8392, plantLiveAsset: _modDef8393, plantVaseAsset: _modDef8394, x: 45.57, y: 50.62 };
+const point = { plantDeadAsset: _modDef8433, plantDyingAsset: _modDef8434, plantLiveAsset: _modDef8435, plantVaseAsset: _modDef8436, x: 45.57, y: 50.62 };
 items = [point];
-({ asset: _modDef8395, position: { x: 67.3, y: 45 }, width: 4.8 });
+({ asset: _modDef8437, position: { x: 67.3, y: 45 }, width: 4.8 });
 obj[DEFAULT] = obj2;
 const obj28 = {
-  background: _modDef8397,
-  backgroundBlurred: _modDef8389,
+  background: _modDef8439,
+  backgroundBlurred: _modDef8431,
   aspectRatio: 1.2894117647058823,
   getName() {
     const intl = intl4.intl;
-    return intl.formatToPlainString(_modDef2686["3xb4VY"], { number: 2 });
+    return intl.formatToPlainString(_modDef2687["3xb4VY"], { number: 2 });
   },
   seats: obj29,
   plants: items1,
-  duck: { asset: _modDef8402, position: { x: 64.6, y: 58.5 }, width: 4.8 },
-  notePad: { asset: _modDef8396, position: { x: 69, y: 78.5 }, width: 4 },
+  duck: { asset: _modDef8444, position: { x: 64.6, y: 58.5 }, width: 4.8 },
+  notePad: { asset: _modDef8438, position: { x: 69, y: 78.5 }, width: 4 },
   screen: { topLeft: { x: 51.85, y: 33.5 }, topRight: { x: 69.15, y: 40.5 }, bottomRight: { x: 69.3, y: 57.3 }, bottomLeft: { x: 51.95, y: 49.1 } }
 };
-({ asset: _modDef8396, position: { x: 81.5, y: 84.5 }, width: 4 });
+({ asset: _modDef8438, position: { x: 81.5, y: 84.5 }, width: 4 });
 const LIVING_ROOM_2 = GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2;
 obj29 = {};
 const obj30 = { name: "PC_SEAT_1", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][0] };
@@ -167,35 +167,35 @@ const SEAT_32 = GuildRoomSeats.GuildRoomSeats.SEAT_3;
 obj29[SEAT_32] = obj32;
 const obj33 = { name: "DUO_SEAT_1", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][3] };
 const SEAT_42 = GuildRoomSeats.GuildRoomSeats.SEAT_4;
-const YpJ7QS = _modDef2686.YpJ7QS;
+const YpJ7QS = _modDef2687.YpJ7QS;
 obj29[SEAT_42] = obj33;
 const obj34 = { name: "DUO_SEAT_2", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][4] };
 const SEAT_52 = GuildRoomSeats.GuildRoomSeats.SEAT_5;
-const wxkoLF = _modDef2686.wxkoLF;
+const wxkoLF = _modDef2687.wxkoLF;
 obj29[SEAT_52] = obj34;
 const obj35 = { name: "DUO_SEAT_STANDING_1", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][5] };
 const SEAT_62 = GuildRoomSeats.GuildRoomSeats.SEAT_6;
-const p7JgFM = _modDef2686.p7JgFM;
+const p7JgFM = _modDef2687.p7JgFM;
 obj29[SEAT_62] = obj35;
 const obj36 = { name: "MAIN_COUCH_SEAT_1", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][6] };
 const SEAT_72 = GuildRoomSeats.GuildRoomSeats.SEAT_7;
-const lQKxC5 = _modDef2686.lQKxC5;
+const lQKxC5 = _modDef2687.lQKxC5;
 obj29[SEAT_72] = obj36;
 const obj37 = { name: "MAIN_COUCH_SEAT_2", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][7] };
 const SEAT_82 = GuildRoomSeats.GuildRoomSeats.SEAT_8;
-const WMBV4i = _modDef2686.WMBV4i;
+const WMBV4i = _modDef2687.WMBV4i;
 obj29[SEAT_82] = obj37;
 const obj38 = { name: "MAIN_COUCH_SEAT_3", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][8] };
 const SEAT_92 = GuildRoomSeats.GuildRoomSeats.SEAT_9;
-yG_xS0 = _modDef2686["yG+xS0"];
+yG_xS0 = _modDef2687["yG+xS0"];
 obj29[SEAT_92] = obj38;
 const obj39 = { name: "MAIN_COUCH_SEAT_4", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][9] };
 const SEAT_102 = GuildRoomSeats.GuildRoomSeats.SEAT_10;
 obj29[SEAT_102] = obj39;
 const obj40 = { name: "MAIN_COUCH_SEAT_5", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][10] };
 const SEAT_112 = GuildRoomSeats.GuildRoomSeats.SEAT_11;
-const wjBOG8 = _modDef2686.wjBOG8;
-const iVfA9i = _modDef2686.iVfA9i;
+const wjBOG8 = _modDef2687.wjBOG8;
+const iVfA9i = _modDef2687.iVfA9i;
 obj29[SEAT_112] = obj40;
 const obj41 = { name: "SIDE_GROUP_SEAT_1", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][11] };
 const SEAT_122 = GuildRoomSeats.GuildRoomSeats.SEAT_12;
@@ -208,8 +208,8 @@ const SEAT_142 = GuildRoomSeats.GuildRoomSeats.SEAT_14;
 obj29[SEAT_142] = obj43;
 const obj44 = { name: "SIDE_GROUP_SEAT_STANDING_1", getLabel: getLabel2, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][14] };
 const SEAT_152 = GuildRoomSeats.GuildRoomSeats.SEAT_15;
-C_LGlh = _modDef2686["C+LGlh"];
-const Qt29nt = _modDef2686.Qt29nt;
+C_LGlh = _modDef2687["C+LGlh"];
+const Qt29nt = _modDef2687.Qt29nt;
 obj29[SEAT_152] = obj44;
 const obj45 = { name: "BACKROOM_SEAT_1", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][15] };
 const SEAT_162 = GuildRoomSeats.GuildRoomSeats.SEAT_16;
@@ -219,7 +219,7 @@ const SEAT_172 = GuildRoomSeats.GuildRoomSeats.SEAT_17;
 obj29[SEAT_172] = obj46;
 const obj47 = { name: "BACKROOM_SEAT_3", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][17] };
 const SEAT_182 = GuildRoomSeats.GuildRoomSeats.SEAT_18;
-const lkzfot = _modDef2686.lkzfot;
+const lkzfot = _modDef2687.lkzfot;
 obj29[SEAT_182] = obj47;
 const obj48 = { name: "RAFTERS_SEAT_1", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][18] };
 const SEAT_192 = GuildRoomSeats.GuildRoomSeats.SEAT_19;
@@ -229,18 +229,18 @@ const SEAT_202 = GuildRoomSeats.GuildRoomSeats.SEAT_20;
 obj29[SEAT_202] = obj49;
 const obj50 = { name: "RAFTERS_SEAT_3", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][20] };
 const SEAT_212 = GuildRoomSeats.GuildRoomSeats.SEAT_21;
-const IE3e0y = _modDef2686.IE3e0y;
+const IE3e0y = _modDef2687.IE3e0y;
 obj29[SEAT_212] = obj50;
 const obj51 = { name: "PC_SEAT_4", getLabel, position: GuildRoomBackgroundPositions.GUILD_ROOM_BACKGROUND_POSITIONS[GuildRoomBackgrounds.GuildRoomBackgrounds.LIVING_ROOM_2][21] };
 const SEAT_222 = GuildRoomSeats.GuildRoomSeats.SEAT_22;
-const ytIYuY = _modDef2686.ytIYuY;
+const ytIYuY = _modDef2687.ytIYuY;
 let c1 = 4;
 obj29[SEAT_222] = obj51;
-const point1 = { plantDeadAsset: _modDef8398, plantDyingAsset: _modDef8399, plantLiveAsset: _modDef8400, plantVaseAsset: _modDef8401, x: 41, y: 46 };
+const point1 = { plantDeadAsset: _modDef8440, plantDyingAsset: _modDef8441, plantLiveAsset: _modDef8442, plantVaseAsset: _modDef8443, x: 41, y: 46 };
 items1 = [point1];
-({ asset: _modDef8402, position: { x: 64.6, y: 58.5 }, width: 4.8 });
+({ asset: _modDef8444, position: { x: 64.6, y: 58.5 }, width: 4.8 });
 obj[LIVING_ROOM_2] = obj28;
-({ asset: _modDef8396, position: { x: 69, y: 78.5 }, width: 4 });
+({ asset: _modDef8438, position: { x: 69, y: 78.5 }, width: 4 });
 const result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomConstants.tsx");
 
 export const DEFAULT_BACKGROUND_POSITION = { imageOffsetX: 0, imageOffsetY: 0, imageWidth: 0, imageHeight: 0 };

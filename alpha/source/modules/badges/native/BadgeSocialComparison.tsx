@@ -1,24 +1,24 @@
-// Module ID: 13805
-// Function ID: 13806
+// Module ID: 13857
+// Function ID: 13858
 // Name: BadgeSocialComparison
-// Dependencies: [19, 17, 1386, 6352, 21, 5012, 575, 6107, 13806, 1112, 2152, 9814, 5603, 5699, 13807, 1653, 504, 9828, 2]
+// Dependencies: [19, 17, 1387, 6383, 21, 5043, 575, 6138, 13858, 1112, 2153, 9856, 5634, 5730, 13859, 1654, 504, 9870, 2]
 // Exports: default
 
-// Module 13805 (BadgeSocialComparison)
+// Module 13857 (BadgeSocialComparison)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1653 from "module_1653" /* 1653 */;
-import StringUtils from "StringUtils" /* 2152 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import BadgeId from "BadgeId" /* 6107 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 9814 */;
-import BadgeUtils from "BadgeUtils" /* 9828 */;
+import _modDef1654 from "module_1654" /* 1654 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import BadgeId from "BadgeId" /* 6138 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 9856 */;
+import BadgeUtils from "BadgeUtils" /* 9870 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6352 */;
+import UserStore from "UserStore" /* 1387 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -33,9 +33,9 @@ function getActivityStatCount(badge) {
   const tmp3 = badge_id === BadgeId.BadgeId.GAME_VARIETY || badge_id === BadgeId.BadgeId.STREAMING || badge_id === BadgeId.BadgeId.GAME_TIME;
   if (tmp3) {
     if (badge.badge_id === BadgeId.BadgeId.GAME_VARIETY) {
-      let HOURS = tmp(13806).BadgeUnit.GAMES;
+      let HOURS = tmp(13858).BadgeUnit.GAMES;
     } else {
-      HOURS = tmp(13806).BadgeUnit.HOURS;
+      HOURS = tmp(13858).BadgeUnit.HOURS;
     }
     const stats = badge.stats;
     let value;
@@ -81,12 +81,12 @@ function EligibleBadgeSocialComparison(arg0) {
   ({ contentOpacity, viewerTier, displayedTier } = arg0);
   const tmp = closure_8();
   let tmp3 = dependencyMap;
-  let obj = displayedUserId(13807);
+  let obj = displayedUserId(13859);
   const badgeSocialComparisonMobileEnabled = obj.useBadgeSocialComparisonMobileEnabled({ location: "BadgeSocialComparisonMobile" });
   const items = [closure_11, contentOpacity];
   let c0;
   [tmp5, tmp6] = items;
-  const obj2 = displayedUserId(1653);
+  const obj2 = displayedUserId(1654);
   class BadgeSocialComparisonTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -113,12 +113,12 @@ function EligibleBadgeSocialComparison(arg0) {
     tmp13Result = null;
     if (tmp9) {
       const badge_id = badge.badge_id;
-      const tmp11 = badge_id === displayedUserId(6107).BadgeId.GAME_VARIETY || badge_id === displayedUserId(6107).BadgeId.STREAMING || badge_id === displayedUserId(6107).BadgeId.GAME_TIME;
+      const tmp11 = badge_id === displayedUserId(6138).BadgeId.GAME_VARIETY || badge_id === displayedUserId(6138).BadgeId.STREAMING || badge_id === displayedUserId(6138).BadgeId.GAME_TIME;
       if (!tmp11) {
         const obj3 = { style: items6, pointerEvents: str, "aria-hidden": !isContentShown, children: tmp15(tmp16, obj4) };
         items6 = [tmp.wrapper, animatedStyle];
         str = "none";
-        View = _modDef1653.View;
+        View = _modDef1654.View;
         if (isContentShown) {
           str = "auto";
         }

@@ -1,20 +1,20 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 16906
+// Function ID: 16907
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2188, 16856, 21, 1653, 1186, 5012, 575, 563, 9378, 5699, 5603, 2025, 16857, 16858, 16859, 2]
+// Dependencies: [19, 17, 2189, 16907, 21, 1654, 1186, 5043, 575, 563, 9420, 5730, 5634, 2026, 16908, 16909, 16910, 2]
 // Exports: default
 
-// Module 16855 (SettingsAppearanceActivityCardItem)
+// Module 16906 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import ClipView from "ClipView" /* 9378 */;
+import ClipView from "ClipView" /* 9420 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2188 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16856 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16907 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1653 from "module_1653" /* 1653 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import module_1654 from "module_1654" /* 1654 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ let size2;
 ({ View: c3, StyleSheet } = react_native);
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HappeningNowConstants);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = module_1653.createAnimatedComponent(native.Icon);
+let closure_7 = module_1654.createAnimatedComponent(native.Icon);
 let createStyles = createStyles_mod;
 let obj = { card: obj2, cardBadgeWrapper: { position: "absolute", top: 0, right: 0 }, cardImage: obj3, cardBadge: size, cardImageAssetContainer: obj4, cardImageAssetBackground: size1, cardImageAsset: size2, shiftedAvatar: { marginLeft: -4 }, userCounter: obj5 };
 obj2 = { borderRadius: nativeDefault.radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" };

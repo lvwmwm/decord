@@ -1,15 +1,15 @@
-// Module ID: 17063
-// Function ID: 17064
+// Module ID: 17114
+// Function ID: 17115
 // Name: EmailCategoryNotificationSettings
-// Dependencies: [15179, 9513, 17061, 504, 1112, 3206, 11914, 17060, 2]
+// Dependencies: [15229, 9555, 17112, 504, 1112, 3207, 11962, 17111, 2]
 
-// Module 17063 (EmailCategoryNotificationSettings)
+// Module 17114 (EmailCategoryNotificationSettings)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15179 */;
-import EmailSettingsConstants from "EmailSettingsConstants" /* 17061 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15229 */;
+import EmailSettingsConstants from "EmailSettingsConstants" /* 17112 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ function useMarketingEmailsDisabled() {
 function createEmailSettings(EMAIL_NOTIFICATIONS) {
   let obj2;
   let obj4;
-  const f111446 = (category) => category.category === RECOMMENDATIONS_AND_EVENTS;
+  const f111757 = (category) => category.category === RECOMMENDATIONS_AND_EVENTS;
   function useValue() {
     let emailSettings;
     let closure_0 = RECOMMENDATIONS_AND_EVENTS;
@@ -42,7 +42,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
   }
   let tmp = EmailCategories;
   const COMMUNICATION = EmailCategories.COMMUNICATION;
-  const found = closure_6.find(f111446);
+  const found = closure_6.find(f111757);
   if (null == found) {
     const _Error5 = Error;
     const _HermesInternal5 = HermesInternal;
@@ -63,8 +63,8 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
     obj4 = { useTitle: null, useDescription: null, parent: EMAIL_NOTIFICATIONS, useValue, onValueChange };
     ({ label: obj3.useTitle, subLabel: obj3.useDescription } = tmp5);
     const SOCIAL = tmp.SOCIAL;
-    obj2 = COMMUNICATION(11914);
-    const found1 = arr.find(f111446);
+    obj2 = COMMUNICATION(11962);
+    const found1 = arr.find(f111757);
     if (null == found1) {
       const _Error4 = Error;
       const _HermesInternal4 = HermesInternal;
@@ -83,10 +83,10 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
       }
       const obj6 = { useTitle: null, useDescription: null, parent: EMAIL_NOTIFICATIONS, useValue, onValueChange };
       ({ label: obj5.useTitle, subLabel: obj5.useDescription } = tmp11);
-      const tmp6Result = COMMUNICATION(11914);
+      const tmp6Result = COMMUNICATION(11962);
       obj.social = tmp6Result.createToggle(obj6);
       const UPDATES_AND_ANNOUNCEMENTS = tmp.UPDATES_AND_ANNOUNCEMENTS;
-      const found2 = arr.find(f111446);
+      const found2 = arr.find(f111757);
       if (null == found2) {
         const _Error3 = Error;
         const _HermesInternal3 = HermesInternal;
@@ -105,10 +105,10 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
         }
         const obj8 = { useTitle: null, useDescription: null, parent: EMAIL_NOTIFICATIONS, useValue, onValueChange };
         ({ label: obj7.useTitle, subLabel: obj7.useDescription } = tmp15);
-        const tmp6Result5 = COMMUNICATION(11914);
+        const tmp6Result5 = COMMUNICATION(11962);
         obj.updatesAndAnnouncements = tmp6Result5.createToggle(obj8);
         const TIPS = tmp.TIPS;
-        const found3 = arr.find(f111446);
+        const found3 = arr.find(f111757);
         if (null == found3) {
           const _Error2 = Error;
           const _HermesInternal2 = HermesInternal;
@@ -127,10 +127,10 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
           }
           const obj10 = { useTitle: null, useDescription: null, parent: EMAIL_NOTIFICATIONS, useValue, onValueChange };
           ({ label: obj9.useTitle, subLabel: obj9.useDescription } = tmp19);
-          const tmp6Result6 = COMMUNICATION(11914);
+          const tmp6Result6 = COMMUNICATION(11962);
           obj.tips = tmp6Result6.createToggle(obj10);
           const RECOMMENDATIONS_AND_EVENTS = tmp.RECOMMENDATIONS_AND_EVENTS;
-          const found4 = arr.find(f111446);
+          const found4 = arr.find(f111757);
           if (null == found4) {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -149,7 +149,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
             }
             const obj12 = { useTitle: null, useDescription: null, parent: EMAIL_NOTIFICATIONS, useValue, onValueChange };
             ({ label: obj11.useTitle, subLabel: obj11.useDescription } = tmp23);
-            const tmp6Result7 = COMMUNICATION(11914);
+            const tmp6Result7 = COMMUNICATION(11962);
             obj.recommendationsAndEvents = tmp6Result7.createToggle(obj12);
             let closure_0 = EMAIL_NOTIFICATIONS;
             const obj18 = {
@@ -159,7 +159,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
                           const string = intl.string;
                           const tmp = COMMUNICATION;
                           if (closure_0 === constants.REDESIGN_EMAIL_NOTIFICATIONS) {
-                            Ra9Pwk = require("module_3206").tNdxQ1;
+                            Ra9Pwk = require("module_3207").tNdxQ1;
                           } else {
                             Ra9Pwk = tmp(tmp2[4]).t.Ra9Pwk;
                           }
@@ -168,10 +168,10 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
               parent: EMAIL_NOTIFICATIONS,
               variant: "danger",
               useIsDisabled: useMarketingEmailsDisabled,
-              onPress: COMMUNICATION(17060).updateMarketingEmailSettings
+              onPress: COMMUNICATION(17111).updateMarketingEmailSettings
             };
-            const createPressable = COMMUNICATION(11914).createPressable;
-            COMMUNICATION(11914);
+            const createPressable = COMMUNICATION(11962).createPressable;
+            COMMUNICATION(11962);
             obj.unsubscribeFromAllMarketing = createPressable(obj18);
             return obj;
           }
@@ -186,51 +186,51 @@ const EmailCategories = EmailSettingsConstants.EmailCategories;
 let obj = {
   label() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.KcqVQg);
+    return intl.string(_modDef3207.KcqVQg);
   },
   subLabel() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.rjpJyr);
+    return intl.string(_modDef3207.rjpJyr);
   }
 };
 let obj2 = {
   label() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.ZtaadX);
+    return intl.string(_modDef3207.ZtaadX);
   },
   subLabel() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.oBkSU3);
+    return intl.string(_modDef3207.oBkSU3);
   }
 };
 const obj3 = {
   label() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.gsNOLn);
+    return intl.string(_modDef3207.gsNOLn);
   },
   subLabel() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.VKva4A);
+    return intl.string(_modDef3207.VKva4A);
   }
 };
 let obj4 = {
   label() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.KniwB2);
+    return intl.string(_modDef3207.KniwB2);
   },
   subLabel() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.KpbEAR);
+    return intl.string(_modDef3207.KpbEAR);
   }
 };
 const obj5 = {
   label() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.WEPL42);
+    return intl.string(_modDef3207.WEPL42);
   },
   subLabel() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.AmcFNU);
+    return intl.string(_modDef3207.AmcFNU);
   }
 };
 let closure_8 = { [EmailCategories.COMMUNICATION]: obj, [EmailCategories.SOCIAL]: obj2, [EmailCategories.UPDATES_AND_ANNOUNCEMENTS]: obj3, [EmailCategories.TIPS]: obj4, [EmailCategories.RECOMMENDATIONS_AND_EVENTS]: obj5 };

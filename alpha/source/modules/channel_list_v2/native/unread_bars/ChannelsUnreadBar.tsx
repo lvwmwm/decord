@@ -1,20 +1,20 @@
-// Module ID: 17847
-// Function ID: 17848
+// Module ID: 17904
+// Function ID: 17905
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 6092, 1071, 21, 1653, 5012, 575, 1378, 8972, 5618, 6093, 5982, 16635, 1706, 5613, 5614, 7125, 17349, 17347, 5603, 1112, 2]
+// Dependencies: [32, 19, 17, 6123, 1071, 21, 1654, 5043, 575, 1379, 9014, 5649, 6124, 6013, 16686, 1707, 5644, 5645, 7156, 17400, 17398, 5634, 1112, 2]
 
-// Module 17847 (ChannelsUnreadBar)
+// Module 17904 (ChannelsUnreadBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6092 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6123 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1653 from "module_1653" /* 1653 */;
-import createStyles from "createStyles" /* 5012 */;
+import module_1654 from "module_1654" /* 1654 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let bodyxssemibold;
@@ -27,7 +27,7 @@ const Pressable = react_native.Pressable;
 ({ getScaledSearchBarHeight: hasOwnProperty, VIEWABILITY_CONFIG: metroRequire } = RedesignChannelListConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let closure_10 = module_1653.createAnimatedComponent(Pressable);
+let closure_10 = module_1654.createAnimatedComponent(Pressable);
 let closure_11 = createStyles.createStyles((arg0, arg1) => {
   let RED_400;
   let num2;

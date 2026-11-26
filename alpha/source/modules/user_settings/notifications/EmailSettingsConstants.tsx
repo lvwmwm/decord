@@ -1,9 +1,9 @@
-// Module ID: 17061
-// Function ID: 17062
+// Module ID: 17112
+// Function ID: 17113
 // Name: EmailSettingsConstants
 // Dependencies: [1112, 2]
 
-// Module 17061 (EmailSettingsConstants)
+// Module 17112 (EmailSettingsConstants)
 import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 

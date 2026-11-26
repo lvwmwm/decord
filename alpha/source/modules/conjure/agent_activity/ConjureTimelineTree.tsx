@@ -1,12 +1,12 @@
-// Module ID: 18579
-// Function ID: 18580
+// Module ID: 18642
+// Function ID: 18643
 // Name: ConjureTimelineTree
-// Dependencies: [32, 4244, 1112, 2]
+// Dependencies: [32, 4245, 1112, 2]
 // Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 18579 (ConjureTimelineTree)
+// Module 18642 (ConjureTimelineTree)
 import intl2 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
+import _modDef4245 from "module_4245" /* 4245 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -599,7 +599,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef4244.iwOTgo, preview_ready: _modDef4244.okkgSB, working: _modDef4244.t8skVB, error: _modDef4244.avt0ax, error_service_unavailable: _modDef4244.yreXyD, error_rate_limited: _modDef4244.d8lNBq, error_timeout: _modDef4244.t1R7Rt, error_usage_limit: _modDef4244["9zBM8L"], error_internal_error: _modDef4244.ZnbiGS };
+let obj = { healthcheck_failed: _modDef4245.iwOTgo, preview_ready: _modDef4245.okkgSB, working: _modDef4245.t8skVB, error: _modDef4245.avt0ax, error_service_unavailable: _modDef4245.yreXyD, error_rate_limited: _modDef4245.d8lNBq, error_timeout: _modDef4245.t1R7Rt, error_usage_limit: _modDef4245["9zBM8L"], error_internal_error: _modDef4245.ZnbiGS };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
@@ -624,7 +624,7 @@ export function describeNode(currentStepResult) {
   const intl = intl2.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef4244.t8skVB;
+    t8skVB = _modDef4245.t8skVB;
   }
   return string(t8skVB);
 }

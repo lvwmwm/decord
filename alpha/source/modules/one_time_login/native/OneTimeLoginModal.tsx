@@ -1,30 +1,30 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15265
+// Function ID: 15266
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1386, 1071, 1239, 21, 5012, 575, 1628, 1494, 1358, 1255, 6099, 5188, 1098, 6017, 6021, 7247, 1112, 6021, 6808, 10546, 5182, 5699, 15216, 5603, 7274, 2]
+// Dependencies: [5, 19, 17, 502, 1387, 1071, 1240, 21, 5043, 575, 1629, 1495, 1359, 1256, 6130, 5219, 1098, 6048, 6052, 7278, 1112, 6052, 6839, 10591, 5213, 5730, 15266, 5634, 7305, 2]
 // Exports: default
 
-// Module 15215 (OneTimeLoginModal)
+// Module 15265 (OneTimeLoginModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import useAlertStore from "useAlertStore" /* 6017 */;
-import AlertModal2 from "AlertModal" /* 6021 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7247 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10546 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import useAlertStore from "useAlertStore" /* 6048 */;
+import AlertModal2 from "AlertModal" /* 6052 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7278 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10591 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let bottom, c4, c5, dependencyMap, importDefault;
@@ -162,9 +162,9 @@ export default function OneTimeLoginModal(token) {
       str = "current user";
     }
     obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
-    AlertActions = tmp(6021).AlertActions;
+    AlertActions = tmp(6052).AlertActions;
     obj4 = { onPress: callback1, text: intl3.string(intl4.t["3PatSz"]) };
-    AlertActionButton = tmp(6021).AlertActionButton;
+    AlertActionButton = tmp(6052).AlertActionButton;
     intl3 = tmp(1112).intl;
     openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
   }, items3);
@@ -183,7 +183,7 @@ export default function OneTimeLoginModal(token) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -258,7 +258,7 @@ export default function OneTimeLoginModal(token) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp41) {
         bottom = tmp41;
@@ -277,29 +277,29 @@ export default function OneTimeLoginModal(token) {
   }, items5);
   let obj = { style: memo, children: items6 };
   let obj2 = { absolute: true, wide: true, tall: true, gradientOverride: closure_11[5], mix: true, angleOverride: 0, mixAmount: obj3 };
-  obj3 = { dark: token(5182).OverlayOpacity.LEVEL_1 };
+  obj3 = { dark: token(5213).OverlayOpacity.LEVEL_1 };
   const tmp11 = ThemedGradientDefault;
   items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(15216), style: tmp.logo };
+  let obj6 = { source: token(15266), style: tmp.logo };
   const tmp12 = FastImageDefault;
   items7 = [closure_12(tmp12, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };
   items8 = [closure_12(callback2, {}), ];
   let obj8 = { variant: "body-lg/semibold", children: intl.string(token(1112).t.W9uNdG) };
-  const Text = token(5603).Text;
+  const Text = token(5634).Text;
   intl = token(1112).intl;
   items8[1] = closure_12(Text, obj8);
   items7[1] = closure_13(callback1, obj7);
   items9 = [closure_13(callback1, obj5), ];
   let obj9 = { style: tmp.bottomContent, children: items10 };
   let obj10 = { variant: "body-sm/normal", children: intl2.string(token(1112).t["ZXe5/Y"]) };
-  const Text2 = token(5603).Text;
+  const Text2 = token(5634).Text;
   intl2 = token(1112).intl;
   items10 = [closure_12(Text2, obj10), ];
   let obj11 = { textColor: "text-default", text: intl3.string(token(1112).t.FIEwfG), variant: "body-sm/medium", onPress, textStyle: tmp.link };
-  const LinkButton = token(7274).LinkButton;
+  const LinkButton = token(7305).LinkButton;
   intl3 = token(1112).intl;
   items10[1] = closure_12(LinkButton, obj11);
   items9[1] = closure_13(callback1, obj9);

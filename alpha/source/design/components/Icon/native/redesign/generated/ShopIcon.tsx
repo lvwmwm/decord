@@ -1,14 +1,14 @@
-// Module ID: 13050
-// Function ID: 13051
+// Module ID: 13102
+// Function ID: 13103
 // Name: ShopIcon
-// Dependencies: [19, 21, 575, 5698, 13051, 2]
+// Dependencies: [19, 21, 575, 5729, 13103, 2]
 // Exports: ShopIcon
 
-// Module 13050 (ShopIcon)
+// Module 13102 (ShopIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 13051 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 13103 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

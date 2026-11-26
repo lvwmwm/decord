@@ -1,14 +1,14 @@
-// Module ID: 8093
-// Function ID: 8094
+// Module ID: 8135
+// Function ID: 8136
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 8085, 8094, 8086, 2]
+// Dependencies: [5, 3, 38, 8127, 8136, 8128, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 8093 (AttachmentFile)
+// Module 8135 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import UploadPlatform from "UploadPlatform" /* 8085 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8094 */;
+import UploadPlatform from "UploadPlatform" /* 8127 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8136 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _getAttachmentFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _cancelGetAttachmentFile() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ obj = function _cancelGetAttachmentFile() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -193,7 +193,7 @@ export function fileIsInAppDir(uri) {
     const tmp2 = require;
     if (startsWithResult) {
       const startsWith = replaced.startsWith;
-      const tmp2Result = tmp2(8094);
+      const tmp2Result = tmp2(8136);
       startsWithResult = startsWith(tmp2Result.getAppDir());
     }
     return startsWithResult;

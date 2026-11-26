@@ -1,18 +1,18 @@
-// Module ID: 13147
-// Function ID: 13148
+// Module ID: 13199
+// Function ID: 13200
 // Name: ChatInputActionButtonTransitionItem
-// Dependencies: [19, 17, 12908, 21, 5073, 1653, 5222, 1706, 13148, 2]
+// Dependencies: [19, 17, 12960, 21, 5104, 1654, 5253, 1707, 13200, 2]
 // Exports: default, interactivityProps
 
-// Module 13147 (ChatInputActionButtonTransitionItem)
+// Module 13199 (ChatInputActionButtonTransitionItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _modDef1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import native from "native" /* 5073 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import ChatInputConstants from "ChatInputConstants" /* 12908 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13148 */;
+import _modDef1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import native from "native" /* 5104 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import ChatInputConstants from "ChatInputConstants" /* 12960 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13200 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ function FadeTransitionItem(state) {
       const items = [closure_7, , ];
       const withTiming = timing_timing.withTiming;
       const tmpResult = timing_timing;
-      items[1] = _mod1706.scheduleOnRN;
+      items[1] = _mod1707.scheduleOnRN;
       items[2] = cleanup;
       let c0;
       let c1;
@@ -122,7 +122,7 @@ function BounceTransitionItem(state) {
   items = [closure_6.transitionItemCentered, animatedStyle];
   let str = "none";
   tmp(obj);
-  const View = _modDef1653.View;
+  const View = _modDef1654.View;
   const tmp3 = jsx;
   if (isInteractive) {
     str = "auto";

@@ -1,20 +1,20 @@
-// Module ID: 14803
-// Function ID: 14804
+// Module ID: 14856
+// Function ID: 14857
 // Name: useUserProfileOverscrollStyles
-// Dependencies: [32, 19, 5013, 1494, 504, 1653, 1706, 2]
+// Dependencies: [32, 19, 5044, 1495, 504, 1654, 1707, 2]
 // Exports: default
 
-// Module 14803 (useUserProfileOverscrollStyles)
+// Module 14856 (useUserProfileOverscrollStyles)
 import get_initialized from "get initialized" /* 504 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import _mod1653 from "module_1653" /* 1653 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import _mod1654 from "module_1654" /* 1654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const _mod1706 = tmp2(1706);
+const _mod1707 = tmp2(1707);
 let closure_6 = { code: "(function useUserProfileOverscrollStylesTsx1(){let[position]=this.__closure;return position.get()<=0;})" };
 let closure_7 = { code: "(function useUserProfileOverscrollStylesTsx2(){let[isNegativeScrollPosition,position]=this.__closure;const transform=isNegativeScrollPosition.get()?[{translateY:position.get()}]:[];return{transform:transform};})" };
 let closure_8 = { code: "(function useUserProfileOverscrollStylesTsx3(){let[interpolate,position,minScrollPosition,SCALE_FACTOR,translateOnScale,isNegativeScrollPosition]=this.__closure;const scale=interpolate(position.get(),[minScrollPosition,0],[SCALE_FACTOR,1]);const translateY=interpolate(position.get(),[minScrollPosition,0],[translateOnScale,0]);const transform=isNegativeScrollPosition.get()?[{scale:scale},{translateY:translateY}]:[];return{transform:transform};})" };
@@ -70,7 +70,7 @@ export default function useUserProfileOverscrollStyles(arg0) {
     }
     return num;
   }, []);
-  let obj2 = _mod1653;
+  let obj2 = _mod1654;
   if (scrollPosition == null) {
     scrollPosition = obj2.useSharedValue(0);
   }
@@ -83,7 +83,7 @@ export default function useUserProfileOverscrollStyles(arg0) {
   useUserProfileOverscrollStylesTsx1.__closure = items2;
   useUserProfileOverscrollStylesTsx1.__workletHash = 921106787598;
   useUserProfileOverscrollStylesTsx1.__initData = tmp4;
-  const tmp2Result = _mod1653;
+  const tmp2Result = _mod1654;
   const derivedValue = tmp2Result.useDerivedValue(useUserProfileOverscrollStylesTsx1);
   let items3 = [closure_7, derivedValue, scrollPosition];
   [tmp7, tmp8, tmp9] = items3;
@@ -102,12 +102,12 @@ export default function useUserProfileOverscrollStyles(arg0) {
   useUserProfileOverscrollStylesTsx2.__closure = items4;
   useUserProfileOverscrollStylesTsx2.__workletHash = 3658505627420;
   useUserProfileOverscrollStylesTsx2.__initData = tmp7;
-  const tmp2Result6 = _mod1653;
+  const tmp2Result6 = _mod1654;
   const bannerAnimatedStyle = tmp2Result6.useAnimatedStyle(useUserProfileOverscrollStylesTsx2);
   const items5 = [closure_8, , , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
-  items5[1] = _mod1653.interpolate;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
+  items5[1] = _mod1654.interpolate;
   items5[2] = scrollPosition;
   items5[3] = -bannerHeight;
   items5[4] = 1.5;
@@ -156,13 +156,13 @@ export default function useUserProfileOverscrollStyles(arg0) {
   useUserProfileOverscrollStylesTsx4.__closure = items8;
   useUserProfileOverscrollStylesTsx4.__workletHash = 2257948482275;
   useUserProfileOverscrollStylesTsx4.__initData = tmp20;
-  const tmp2Result8 = _mod1653;
+  const tmp2Result8 = _mod1654;
   const contentAnimatedStyle = tmp2Result8.useAnimatedStyle(useUserProfileOverscrollStylesTsx4);
   const items9 = [closure_10, , , , , ];
-  const useAnimatedProps = _mod1653.useAnimatedProps;
-  _mod1653;
-  items9[1] = _mod1653.clamp;
-  items9[2] = _mod1653.interpolate;
+  const useAnimatedProps = _mod1654.useAnimatedProps;
+  _mod1654;
+  items9[1] = _mod1654.clamp;
+  items9[2] = _mod1654.interpolate;
   items9[3] = scrollPosition;
   items9[4] = height;
   items9[5] = stateFromStores;
@@ -193,9 +193,9 @@ export default function useUserProfileOverscrollStyles(arg0) {
   useUserProfileOverscrollStylesTsx6.__workletHash = 4981140014420;
   useUserProfileOverscrollStylesTsx6.__initData = tmp37;
   const items13 = [closure_12, , ];
-  const useAnimatedReaction = _mod1653.useAnimatedReaction;
-  _mod1653;
-  items13[1] = _mod1706.scheduleOnRN;
+  const useAnimatedReaction = _mod1654.useAnimatedReaction;
+  _mod1654;
+  items13[1] = _mod1707.scheduleOnRN;
   items13[2] = tmp35;
   let c0;
   let c1;

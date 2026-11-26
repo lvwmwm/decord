@@ -1,14 +1,14 @@
-// Module ID: 15837
-// Function ID: 15838
+// Module ID: 15888
+// Function ID: 15889
 // Name: commands/confirmModal
-// Dependencies: [5766, 1071, 15838, 15822, 15815, 15839, 2]
+// Dependencies: [5797, 1071, 15889, 15873, 15866, 15890, 2]
 
-// Module 15837 (commands/confirmModal)
+// Module 15888 (commands/confirmModal)
 import Constants from "Constants" /* 1071 */;
-import Constants2 from "Constants" /* 5766 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15815 */;
-import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15838 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15822 */;
+import Constants2 from "Constants" /* 5797 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15866 */;
+import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15889 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15873 */;
 import size from "module_2" /* 2 */;
 
 let c1, title;

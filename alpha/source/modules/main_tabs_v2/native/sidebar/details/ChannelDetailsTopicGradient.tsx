@@ -1,10 +1,10 @@
-// Module ID: 18999
-// Function ID: 19000
+// Module ID: 19062
+// Function ID: 19063
 // Name: ChannelDetailsTopicGradient
-// Dependencies: [19, 5576, 575, 671, 2]
+// Dependencies: [19, 5607, 575, 671, 2]
 // Exports: useChannelTopicGradientBackground
 
-// Module 18999 (ChannelDetailsTopicGradient)
+// Module 19062 (ChannelDetailsTopicGradient)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/d
 
 export function useChannelTopicGradientBackground() {
   let token;
-  let obj = token(5576);
+  let obj = token(5607);
   token = obj.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   return react.useMemo(() => {

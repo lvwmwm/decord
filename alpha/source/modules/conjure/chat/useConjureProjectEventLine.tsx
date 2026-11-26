@@ -1,14 +1,14 @@
-// Module ID: 18639
-// Function ID: 18640
+// Module ID: 18702
+// Function ID: 18703
 // Name: useConjureProjectEventLine
-// Dependencies: [19, 4883, 1386, 11505, 504, 5068, 18640, 1112, 4244, 2]
+// Dependencies: [19, 4914, 1387, 11553, 504, 5099, 18703, 1112, 4245, 2]
 // Exports: default
 
-// Module 18639 (useConjureProjectEventLine)
-import conjureMessageAuthors from "conjureMessageAuthors" /* 11505 */;
+// Module 18702 (useConjureProjectEventLine)
+import conjureMessageAuthors from "conjureMessageAuthors" /* 11553 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import UserStore from "UserStore" /* 1386 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -192,10 +192,10 @@ export default function useConjureProjectEventLine(arg0, actor_user_id, arg2) {
   } else if ("remixed" === type) {
     const intl3 = tmp2(tmp3[7]).intl;
     const obj15 = { source: actor_user_id.source_name };
-    return intl3.format(require("module_4244").mHCXtm, obj15);
+    return intl3.format(require("module_4245").mHCXtm, obj15);
   } else if ("voice_channel_pin" === type) {
     const intl2 = tmp2(tmp3[7]).intl;
-    return intl2.string(require("module_4244").UGAfl9);
+    return intl2.string(require("module_4245").UGAfl9);
   } else {
     return "staff_notice" === type ? actor_user_id.message : undefined;
   }

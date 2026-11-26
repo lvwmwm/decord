@@ -1,15 +1,15 @@
-// Module ID: 18015
-// Function ID: 18016
+// Module ID: 18074
+// Function ID: 18075
 // Name: GuildsBarDnDStore
-// Dependencies: [6133, 1257, 1653, 1262, 1241, 4927, 2]
+// Dependencies: [6164, 1258, 1654, 1263, 1242, 4958, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 18015 (GuildsBarDnDStore)
-import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import react_native from "react-native" /* 1262 */;
-import _slicedToArray from "_slicedToArray" /* 4927 */;
-import SortedGuildStore from "SortedGuildStore" /* 6133 */;
-import module_1257 from "module_1257" /* 1257 */;
+// Module 18074 (GuildsBarDnDStore)
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import react_native from "react-native" /* 1263 */;
+import _slicedToArray from "_slicedToArray" /* 4958 */;
+import SortedGuildStore from "SortedGuildStore" /* 6164 */;
+import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let _require, set;
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
-const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
   let closure_5;
   let obj;
   let obj2;
@@ -77,7 +77,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "isArray" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "text" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -108,7 +108,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "top" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -124,11 +124,11 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       }
     }
   };
-  obj2 = require("module_1653");
-  obj3 = require("module_1653");
-  obj4 = require("module_1653");
-  obj5 = require("module_1653");
-  obj6 = require("module_1653");
+  obj2 = require("module_1654");
+  obj3 = require("module_1654");
+  obj4 = require("module_1654");
+  obj5 = require("module_1654");
+  obj6 = require("module_1654");
   return obj;
 });
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");

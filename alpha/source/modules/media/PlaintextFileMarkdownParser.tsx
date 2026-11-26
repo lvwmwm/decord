@@ -1,15 +1,15 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12075
+// Function ID: 12076
 // Name: PlaintextFileMarkdownParser
-// Dependencies: [12028, 12033, 5757, 7044, 5730, 2]
+// Dependencies: [12076, 12081, 5788, 7075, 5761, 2]
 // Exports: parseMarkdownPreview
 
-// Module 12027 (PlaintextFileMarkdownParser)
-import findCodedLinks from "findCodedLinks" /* 5730 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5757 */;
-import MarkupLinkRule from "MarkupLinkRule" /* 7044 */;
-import _modDef12028 from "module_12028" /* 12028 */;
-import dollarmathPlugin from "dollarmathPlugin" /* 12033 */;
+// Module 12075 (PlaintextFileMarkdownParser)
+import findCodedLinks from "findCodedLinks" /* 5761 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5788 */;
+import MarkupLinkRule from "MarkupLinkRule" /* 7075 */;
+import _modDef12076 from "module_12076" /* 12076 */;
+import dollarmathPlugin from "dollarmathPlugin" /* 12081 */;
 import size from "module_2" /* 2 */;
 
 function createLinkNode(arr) {
@@ -433,7 +433,7 @@ function parseMarkdownTokens(arg0, remaining) {
   }
   return items[0].children;
 }
-let obj = new _modDef12028({ html: false, linkify: false, typographer: false });
+let obj = new _modDef12076({ html: false, linkify: false, typographer: false });
 let closure_2 = obj.use(dollarmathPlugin.dollarmathPlugin, { allow_space: false, allow_digits: false, allow_labels: false });
 const set = new Set(["h1", "h2", "h3", "h4", "h5", "h6", "p", "ul", "ol", "li", "em", "strong", "s", "blockquote", "table", "thead", "tbody", "tr", "th", "td"]);
 const re4 = /(?:https?|steam):\/\/[^\s<]/i;

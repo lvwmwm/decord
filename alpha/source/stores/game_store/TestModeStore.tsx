@@ -1,15 +1,15 @@
-// Module ID: 5654
-// Function ID: 5655
+// Module ID: 5685
+// Function ID: 5686
 // Name: TestModeStore
-// Dependencies: [1192, 1230, 2162, 504, 4837, 572, 2]
+// Dependencies: [1192, 1231, 2163, 504, 4868, 572, 2]
 
-// Module 5654 (TestModeStore)
+// Module 5685 (TestModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import UserSettings from "UserSettings" /* 4837 */;
+import UserSettings from "UserSettings" /* 4868 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 2162 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 2163 */;
 import size from "module_2" /* 2 */;
 
 let originURL;

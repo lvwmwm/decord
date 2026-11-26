@@ -1,16 +1,16 @@
-// Module ID: 8342
-// Function ID: 8343
+// Module ID: 8384
+// Function ID: 8385
 // Name: DeveloperExperimentStore
-// Dependencies: [4883, 1386, 5630, 1403, 1402, 504, 572, 2]
+// Dependencies: [4914, 1387, 5661, 1404, 1403, 504, 572, 2]
 
-// Module 8342 (DeveloperExperimentStore)
+// Module 8384 (DeveloperExperimentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import UserStoreUtils from "UserStoreUtils" /* 1402 */;
-import UserStoreConstants from "UserStoreConstants" /* 1403 */;
-import ExperimentConstants from "ExperimentConstants" /* 5630 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStoreUtils from "UserStoreUtils" /* 1403 */;
+import UserStoreConstants from "UserStoreConstants" /* 1404 */;
+import ExperimentConstants from "ExperimentConstants" /* 5661 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const ExperimentBuckets = ExperimentConstants.ExperimentBuckets;
@@ -42,7 +42,7 @@ class DeveloperExperimentStore extends Store {
       }
     };
     Object.defineProperties(this, obj);
-    const obj3 = self(1402);
+    const obj3 = self(1403);
     closure_5 = obj3.isStaffEnv(UserStore.getCurrentUser());
     const timerId = setTimeout(() => Object.freeze(self));
   }

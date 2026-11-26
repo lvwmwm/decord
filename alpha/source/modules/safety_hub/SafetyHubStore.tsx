@@ -1,14 +1,14 @@
-// Module ID: 7878
-// Function ID: 7879
+// Module ID: 7912
+// Function ID: 7913
 // Name: SafetyHubStore
-// Dependencies: [7852, 7853, 7879, 504, 572, 2]
+// Dependencies: [7886, 7887, 7913, 504, 572, 2]
 
-// Module 7878 (SafetyHubStore)
+// Module 7912 (SafetyHubStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SafetyHubModels from "SafetyHubModels" /* 7853 */;
-import createAggregatorDefault from "createAggregator" /* 7879 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7852 */;
+import SafetyHubModels from "SafetyHubModels" /* 7887 */;
+import createAggregatorDefault from "createAggregator" /* 7913 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7886 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;

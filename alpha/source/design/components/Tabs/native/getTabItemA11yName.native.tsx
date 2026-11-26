@@ -1,12 +1,12 @@
-// Module ID: 13562
-// Function ID: 13563
+// Module ID: 13614
+// Function ID: 13615
 // Name: getTabItemA11yName
-// Dependencies: [1112, 2223, 2]
+// Dependencies: [1112, 2224, 2]
 // Exports: getTabItemA11yName
 
-// Module 13562 (getTabItemA11yName)
+// Module 13614 (getTabItemA11yName)
 import intl4 from "intl" /* 1112 */;
-import _modDef2223 from "module_2223" /* 2223 */;
+import _modDef2224 from "module_2224" /* 2224 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Tabs/native/getTabItemA11yName.native.tsx");
@@ -17,7 +17,7 @@ export function getTabItemA11yName(label, count, indicatorDot) {
     if (null != count) {
       const intl3 = intl4.intl;
       const obj2 = { label, count };
-      formatToPlainStringResult = intl3.formatToPlainString(_modDef2223.qbmavE, obj2);
+      formatToPlainStringResult = intl3.formatToPlainString(_modDef2224.qbmavE, obj2);
     }
     return formatToPlainStringResult;
   } else {
@@ -26,11 +26,11 @@ export function getTabItemA11yName(label, count, indicatorDot) {
     if (null != count) {
       const intl2 = intl4.intl;
       const obj3 = { label, count, status: accessibilityLabel };
-      formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2223.paONe3, obj3);
+      formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2224.paONe3, obj3);
     } else {
       const intl = intl4.intl;
       const obj = { label, status: accessibilityLabel };
-      formatToPlainStringResult1 = intl.formatToPlainString(_modDef2223.gmsmxI, obj);
+      formatToPlainStringResult1 = intl.formatToPlainString(_modDef2224.gmsmxI, obj);
     }
     return formatToPlainStringResult1;
   }

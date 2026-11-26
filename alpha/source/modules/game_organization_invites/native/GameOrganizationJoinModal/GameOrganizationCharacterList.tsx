@@ -1,22 +1,22 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 12337
+// Function ID: 12338
 // Name: GameOrganizationCharacterList
-// Dependencies: [19, 17, 21, 5012, 575, 1112, 2650, 5603, 6084, 7247, 5576, 5074, 6114, 12076, 6109, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1112, 2651, 5634, 6115, 7278, 5607, 5105, 6145, 12126, 6140, 2]
 // Exports: default
 
-// Module 12287 (GameOrganizationCharacterList)
+// Module 12337 (GameOrganizationCharacterList)
 import nativeDefault from "native" /* 575 */;
-import _modDef2650 from "module_2650" /* 2650 */;
-import react_native from "react-native" /* 5074 */;
-import useToken from "useToken" /* 5576 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7247 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12076 */;
+import _modDef2651 from "module_2651" /* 2651 */;
+import react_native from "react-native" /* 5105 */;
+import useToken from "useToken" /* 5607 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7278 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12126 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -95,7 +95,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     if (description == null) {
       const intl = tmp2(1112).intl;
       const formatToPlainString = intl.formatToPlainString;
-      const VNY3C1 = tmp4(2650).VNY3C1;
+      const VNY3C1 = tmp4(2651).VNY3C1;
       if (displayNoun == null) {
         displayNoun = "other";
       }
@@ -115,7 +115,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     accessibilityLabel: name,
     children: metroRequire(Stack, obj5)
   };
-  const Card = tmp2(6114).Card;
+  const Card = tmp2(6145).Card;
   if (null != formatToPlainStringResult) {
     const _HermesInternal = HermesInternal;
     name = "" + character.name + ", " + formatToPlainStringResult;
@@ -123,7 +123,7 @@ let closure_9 = react.memo(function CharacterCard(character) {
     name = character.name;
   }
   obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_16, align: "center", style: items, children: items1 };
-  Stack = tmp2(6084).Stack;
+  Stack = tmp2(6115).Stack;
   items = [tmp.cardContent, selected && tmp.selectedCardContent];
   let tmp10Result = selected;
   if (tmp10Result) {
@@ -135,10 +135,10 @@ let closure_9 = react.memo(function CharacterCard(character) {
   const tmp4Result = GameOrganizationIconDefault;
   items1[1] = hasOwnProperty(tmp4Result, obj7);
   const obj8 = { spacing: nativeDefault.space.PX_4, style: tmp.labels, children: items2 };
-  const Stack2 = tmp2(6084).Stack;
+  const Stack2 = tmp2(6115).Stack;
   const obj9 = { variant: token, color: str3, children: character.name };
   str3 = "text-default";
-  const Text = tmp2(5603).Text;
+  const Text = tmp2(5634).Text;
   if (!eligible) {
     str3 = "text-muted";
   }
@@ -182,13 +182,13 @@ export default function GameOrganizationCharacterList(characters) {
   }, items);
   let someResult = characters.some((eligible) => !eligible.eligible);
   let obj = { spacing: nativeDefault.space.PX_12, children: items1 };
-  const Stack = characters(6084).Stack;
+  const Stack = characters(6115).Stack;
   const obj2 = { style: tmp.title, title: formatToPlainString(prop, { displayNoun: str }) };
-  const TableRowGroupTitle = characters(6109).TableRowGroupTitle;
+  const TableRowGroupTitle = characters(6140).TableRowGroupTitle;
   const intl = characters(1112).intl;
   formatToPlainString = intl.formatToPlainString;
   str = displayNoun;
-  prop = _modDef2650["Xm+emB"];
+  prop = _modDef2651["Xm+emB"];
   const tmp3 = closure_6;
   if (displayNoun == null) {
     str = "other";
@@ -204,14 +204,14 @@ export default function GameOrganizationCharacterList(characters) {
   };
   items1[1] = closure_5(closure_4, obj3);
   if (someResult) {
-    const Text = tmp4(5603).Text;
+    const Text = tmp4(5634).Text;
     const intl2 = tmp4(1112).intl;
     const formatToPlainString2 = intl2.formatToPlainString;
-    const ybJIQJ = _modDef2650.ybJIQJ;
+    const ybJIQJ = _modDef2651.ybJIQJ;
     if (displayNoun == null) {
       displayNoun = "other";
     }
-    const obj4 = { variant: "body-md/medium", color: "text-subtle", children: formatToPlainString2(ybJIQJ, obj5) };
+    const obj4 = { variant: "body-md/normal", color: "text-muted", children: formatToPlainString2(ybJIQJ, obj5) };
     obj5 = { displayNoun };
     someResult = tmp7(Text, obj4);
   }

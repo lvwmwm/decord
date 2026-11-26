@@ -1,12 +1,12 @@
-// Module ID: 11589
-// Function ID: 11590
+// Module ID: 11637
+// Function ID: 11638
 // Name: OneDayFractionalNitroExperiment
-// Dependencies: [1450, 11590, 2]
+// Dependencies: [1451, 11638, 2]
 // Exports: useOneDayFractionalNitroEnabled
 
-// Module 11589 (OneDayFractionalNitroExperiment)
-import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 11590 */;
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 11637 (OneDayFractionalNitroExperiment)
+import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 11638 */;
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-one-day-fractional-nitro", kind: "user", defaultConfig: false, variations: { 1: true } });

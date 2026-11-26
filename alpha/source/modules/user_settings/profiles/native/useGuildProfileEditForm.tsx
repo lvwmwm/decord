@@ -1,21 +1,21 @@
-// Module ID: 15986
-// Function ID: 15987
+// Module ID: 16063
+// Function ID: 16064
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 6345, 6132, 4924, 4883, 6133, 1386, 1071, 5037, 504, 12482, 4856, 9397, 15987, 9390, 5040, 7314, 15983, 6843, 15984, 5761, 1112, 9392, 2]
+// Dependencies: [109, 5, 19, 6376, 6163, 4955, 4914, 6164, 1387, 1071, 5068, 504, 12531, 4887, 9439, 16064, 9432, 5071, 7345, 16060, 6874, 16061, 5792, 1112, 9434, 2]
 // Exports: default
 
-// Module 15986 (useGuildProfileEditForm)
+// Module 16063 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1071 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5037 */;
-import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 6345 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
+import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 6376 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 6132 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import SortedGuildStore from "SortedGuildStore" /* 6133 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserProfileStore from "UserProfileStore" /* 6163 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import SortedGuildStore from "SortedGuildStore" /* 6164 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -141,7 +141,7 @@ export default function useGuildProfileEditForm() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -240,7 +240,7 @@ export default function useGuildProfileEditForm() {
               }
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {

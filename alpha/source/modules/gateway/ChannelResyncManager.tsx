@@ -1,22 +1,22 @@
-// Module ID: 19614
-// Function ID: 19615
+// Module ID: 19677
+// Function ID: 19678
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4861, 6135, 4883, 5818, 1071, 4868, 3, 1088, 7444, 1255, 572, 8273, 1404, 2]
+// Dependencies: [5, 502, 4892, 6166, 4914, 5849, 1071, 4899, 3, 1088, 7475, 1256, 572, 8315, 1405, 2]
 
-// Module 19614 (ChannelResyncManager)
+// Module 19677 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import ChannelConstants from "ChannelConstants" /* 4868 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 8273 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ChannelConstants from "ChannelConstants" /* 4899 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 8315 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6135 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6166 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c3, c4, closure_18, mutableGuildChannelsForGuild, set, socket;
@@ -141,7 +141,7 @@ let obj = function _scheduleGuildResyncs() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -289,7 +289,7 @@ let obj = function _scheduleGuildResyncs() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp8) {
         c4 = 3;
@@ -312,7 +312,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {

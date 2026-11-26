@@ -1,19 +1,19 @@
-// Module ID: 19957
-// Function ID: 19958
+// Module ID: 20021
+// Function ID: 20022
 // Name: SoundboardWaveformTrimHandles
-// Dependencies: [32, 19, 17, 21, 19947, 5012, 575, 1653, 5272, 1112, 2]
+// Dependencies: [32, 19, 17, 21, 20011, 5043, 575, 1654, 5303, 1112, 2]
 // Exports: default
 
-// Module 19957 (SoundboardWaveformTrimHandles)
+// Module 20021 (SoundboardWaveformTrimHandles)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import SoundboardAudioNative from "SoundboardAudioNative" /* 19947 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import SoundboardAudioNative from "SoundboardAudioNative" /* 20011 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let max, maxResult, min, minResult, result1, set, tmp5;
@@ -137,7 +137,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     const items2 = [closure_13, sharedValue, width, endRatio, c8, startRatio, sharedValue2, closure_9, , ];
     const onUpdate = enabledResult.onBegin(SoundboardWaveformTrimHandlesTsx1).onUpdate;
     enabledResult.onBegin(SoundboardWaveformTrimHandlesTsx1);
-    items2[8] = _mod1653.runOnJS;
+    items2[8] = _mod1654.runOnJS;
     items2[9] = callback;
     c0 = undefined;
     c1 = undefined;
@@ -172,7 +172,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     const items4 = [closure_14, , ];
     const onFinalize = onUpdate(SoundboardWaveformTrimHandlesTsx2).onFinalize;
     onUpdate(SoundboardWaveformTrimHandlesTsx2);
-    items4[1] = _mod1653.runOnJS;
+    items4[1] = _mod1654.runOnJS;
     items4[2] = callback;
     c0 = undefined;
     c1 = undefined;
@@ -229,7 +229,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     const items2 = [closure_16, sharedValue1, width, startRatio, c8, endRatio, sharedValue3, closure_9, , ];
     const onUpdate = enabledResult.onBegin(SoundboardWaveformTrimHandlesTsx4).onUpdate;
     enabledResult.onBegin(SoundboardWaveformTrimHandlesTsx4);
-    items2[8] = _mod1653.runOnJS;
+    items2[8] = _mod1654.runOnJS;
     items2[9] = callback;
     c0 = undefined;
     c1 = undefined;
@@ -264,7 +264,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     const items4 = [closure_17, , ];
     const onFinalize = onUpdate(SoundboardWaveformTrimHandlesTsx5).onFinalize;
     onUpdate(SoundboardWaveformTrimHandlesTsx5);
-    items4[1] = _mod1653.runOnJS;
+    items4[1] = _mod1654.runOnJS;
     items4[2] = callback;
     c0 = undefined;
     c1 = undefined;

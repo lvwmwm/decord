@@ -1,17 +1,17 @@
-// Module ID: 10588
-// Function ID: 10589
+// Module ID: 10633
+// Function ID: 10634
 // Name: InAppMessageSoundsStore
-// Dependencies: [510, 1257, 4927, 2]
+// Dependencies: [510, 1258, 4958, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10588 (InAppMessageSoundsStore)
+// Module 10633 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
-import _slicedToArray from "_slicedToArray" /* 4927 */;
-import module_1257 from "module_1257" /* 1257 */;
+import _slicedToArray from "_slicedToArray" /* 4958 */;
+import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
-let closure_3 = module_1257.createWithEqualityFn(() => {
+let closure_3 = module_1258.createWithEqualityFn(() => {
   const Storage = Storage2.Storage;
   let isEnabled = Storage.get(InAppMessageSoundsEnabled);
   if (isEnabled == null) {

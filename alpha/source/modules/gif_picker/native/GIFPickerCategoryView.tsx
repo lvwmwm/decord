@@ -1,20 +1,20 @@
-// Module ID: 10780
-// Function ID: 10781
+// Module ID: 10826
+// Function ID: 10827
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1071, 21, 5012, 575, 1112, 8522, 5699, 10781, 9725, 5603, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 1112, 8564, 5730, 10827, 9767, 5634, 2]
 // Exports: default
 
-// Module 10780 (GIFPickerCategoryView)
+// Module 10826 (GIFPickerCategoryView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import reactDefault from "react" /* 8522 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import reactDefault from "react" /* 8564 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -69,13 +69,13 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   const tmp8 = hasOwnProperty;
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-    const AnalyticsIcon = tmp3(10781).AnalyticsIcon;
+    const AnalyticsIcon = tmp3(10827).AnalyticsIcon;
     tmp10Result = tmp10(AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-      const StarIcon = tmp3(9725).StarIcon;
+      const StarIcon = tmp3(9767).StarIcon;
       tmp10Result = tmp10(StarIcon, obj7);
     }
   }

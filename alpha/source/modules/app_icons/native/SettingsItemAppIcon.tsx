@@ -1,23 +1,23 @@
-// Module ID: 17096
-// Function ID: 17097
+// Module ID: 17147
+// Function ID: 17148
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 9616, 21, 5012, 575, 13849, 5038, 11606, 16566, 2]
+// Dependencies: [19, 9658, 21, 5043, 575, 13901, 5069, 11654, 16617, 2]
 // Exports: default
 
-// Module 17096 (SettingsItemAppIcon)
+// Module 17147 (SettingsItemAppIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AppIconTypes from "AppIconTypes" /* 5038 */;
-import AppIconConstants from "AppIconConstants" /* 9616 */;
-import AppIconUtils from "AppIconUtils" /* 13849 */;
-import AppIconDefault from "AppIcon" /* 16566 */;
+import AppIconTypes from "AppIconTypes" /* 5069 */;
+import AppIconConstants from "AppIconConstants" /* 9658 */;
+import AppIconUtils from "AppIconUtils" /* 13901 */;
+import AppIconDefault from "AppIcon" /* 16617 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp4;
-const ClydeIcon = tmp4(11606);
+const ClydeIcon = tmp4(11654);
 const getIconById = AppIconConstants.getIconById;
 const jsx = Fragment.jsx;
 let obj = { icon: obj2 };

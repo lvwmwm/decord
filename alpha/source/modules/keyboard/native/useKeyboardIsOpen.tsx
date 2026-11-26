@@ -1,14 +1,14 @@
-// Module ID: 7267
-// Function ID: 7268
+// Module ID: 7298
+// Function ID: 7299
 // Name: useKeyboardIsOpen
-// Dependencies: [1496, 1497, 1498, 1626, 2]
+// Dependencies: [1497, 1498, 1499, 1627, 2]
 // Exports: default, getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 7267 (useKeyboardIsOpen)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1497 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1498 */;
-import KeyboardTypes from "KeyboardTypes" /* 1626 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1496 */;
+// Module 7298 (useKeyboardIsOpen)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1498 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1499 */;
+import KeyboardTypes from "KeyboardTypes" /* 1627 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1497 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ export default function useKeyboardIsOpen() {
   if (flag === undefined) {
     flag = false;
   }
-  const obj = flag(1497);
+  const obj = flag(1498);
   importDefault = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => {
     let tmp2;

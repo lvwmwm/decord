@@ -1,14 +1,14 @@
-// Module ID: 8523
-// Function ID: 8524
+// Module ID: 8565
+// Function ID: 8566
 // Name: NoResultsAlt
-// Dependencies: [19, 21, 8524, 8525, 8526, 7379, 5019, 5699, 2]
+// Dependencies: [19, 21, 8566, 8567, 8568, 7410, 5050, 5730, 2]
 // Exports: NoResultsAlt, getNoResultsAltSource, useNoResultsAltSource
 
-// Module 8523 (NoResultsAlt)
+// Module 8565 (NoResultsAlt)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5019 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import _mod8524 from "module_8524" /* 8524 */;
+import shared from "shared" /* 5050 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import _mod8566 from "module_8566" /* 8566 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoResultsAlt.tsx");
 
 export function getNoResultsAltSource(theme) {
-  const obj = _mod8524;
+  const obj = _mod8566;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useNoResultsAltSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8524;
+  const obj2 = _mod8566;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function NoResultsAlt(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8524;
+  const obj2 = _mod8566;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

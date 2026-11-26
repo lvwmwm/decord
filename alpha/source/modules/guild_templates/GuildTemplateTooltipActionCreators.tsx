@@ -1,13 +1,13 @@
-// Module ID: 7830
-// Function ID: 7831
+// Module ID: 7864
+// Function ID: 7865
 // Name: GuildTemplateTooltipActionCreators
-// Dependencies: [5, 4944, 1071, 7831, 572, 2]
+// Dependencies: [5, 4975, 1071, 7865, 572, 2]
 
-// Module 7830 (GuildTemplateTooltipActionCreators)
+// Module 7864 (GuildTemplateTooltipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import size from "module_2" /* 2 */;
 
 let c1;
@@ -26,7 +26,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ let obj = {
             return obj;
           }
           guildId = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp6) {
           guildId = 3;
           throw tmp6;

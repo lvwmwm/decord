@@ -1,19 +1,19 @@
-// Module ID: 14644
-// Function ID: 14645
+// Module ID: 14697
+// Function ID: 14698
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1082, 21, 5012, 575, 1112, 3012, 5603, 5610, 1186, 2]
+// Dependencies: [19, 17, 1082, 21, 5043, 575, 1112, 3013, 5634, 5641, 1186, 2]
 // Exports: default
 
-// Module 14644 (InAppReportsBottomButton)
+// Module 14697 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl6 from "intl" /* 1112 */;
-import _modDef3012 from "module_3012" /* 3012 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
+import _modDef3013 from "module_3013" /* 3013 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -54,7 +54,7 @@ export default function InAppReportsBottomButton(button) {
       const intl2 = tmp15(1112).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        stringResult = string(_modDef3012.ZUyreS);
+        stringResult = string(_modDef3013.ZUyreS);
       } else {
         const stringResult1 = string(intl6.t["G+vU89"]);
         const intl3 = tmp15(1112).intl;
@@ -77,7 +77,7 @@ export default function InAppReportsBottomButton(button) {
     const intl4 = tmp15(1112).intl;
     const string2 = intl4.string;
     if (isModeratorReport) {
-      string2Result = string2(_modDef3012.psKFdJ);
+      string2Result = string2(_modDef3013.psKFdJ);
     } else {
       string2Result = string2(tmp15(1112).t.h6D8Vy);
     }
@@ -88,7 +88,7 @@ export default function InAppReportsBottomButton(button) {
     const obj3 = { style: tmp.paddingHorizontal, children: items1 };
     if (null != tmp3) {
       const obj4 = { style: tmp.descriptionText, variant: "body-xs/medium", color: "text-default", children: tmp3 };
-      tmp12Result = tmp12(tmp15(5603).Text, obj4);
+      tmp12Result = tmp12(tmp15(5634).Text, obj4);
     }
     items1 = [tmp12Result, , ];
     const obj5 = {

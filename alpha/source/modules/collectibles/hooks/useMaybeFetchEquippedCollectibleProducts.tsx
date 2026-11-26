@@ -1,13 +1,13 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14849
+// Function ID: 14850
 // Name: useMaybeFetchEquippedCollectibleProducts
-// Dependencies: [19, 1386, 504, 6131, 6913, 11337, 11556, 2]
+// Dependencies: [19, 1387, 504, 6162, 6944, 11383, 11604, 2]
 // Exports: default
 
-// Module 14796 (useMaybeFetchEquippedCollectibleProducts)
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 11556 */;
+// Module 14849 (useMaybeFetchEquippedCollectibleProducts)
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 11604 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

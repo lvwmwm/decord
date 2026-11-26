@@ -1,17 +1,17 @@
-// Module ID: 19114
-// Function ID: 19115
+// Module ID: 19177
+// Function ID: 19178
 // Name: ChannelPermissionOverwriteEditActionCreators
-// Dependencies: [5, 4861, 19109, 572, 5694, 1112, 19110, 7813, 2]
+// Dependencies: [5, 4892, 19172, 572, 5725, 1112, 19173, 7847, 2]
 // Exports: updateChannelPermissionOverwrite
 
-// Module 19114 (ChannelPermissionOverwriteEditActionCreators)
+// Module 19177 (ChannelPermissionOverwriteEditActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
-import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 19109 */;
-import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19110 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
+import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 19172 */;
+import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19173 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;
 
 let c10, c5, c9, closure_5, closure_8, editId;
@@ -47,7 +47,7 @@ let obj = function _runEditValidation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _runEditValidation() {
                   closure_133_12(channelId, overwriteId);
                   c6 = 0;
                   c8 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: "+95" };
                 }
               } else if (arg0 === 1) {
                 c8 = 3;
@@ -117,7 +117,7 @@ let obj = function _runEditValidation() {
                 c6 = 0;
               }
               c8 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
             c6 = 2;
             const items = [closure_2];
@@ -170,7 +170,7 @@ obj = function _runEditDrain() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c6;
@@ -269,7 +269,7 @@ obj = function _runEditDrain() {
             closure_132_12(closure_0, closure_1);
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp94) {
         closure_5 = tmp94;
@@ -302,7 +302,7 @@ obj = function _drainPendingEdits() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c7;
@@ -340,7 +340,7 @@ obj = function _drainPendingEdits() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: "+95" };
                 }
               } else {
                 try {
@@ -364,7 +364,7 @@ obj = function _drainPendingEdits() {
                       readyEdits = c5.getReadyEdits(closure_0, pendingEdits);
                       if (0 === readyEdits.length) {
                         c7 = 3;
-                        const obj4 = { value: { v: "top" }, done: true };
+                        const obj4 = { value: { v: "r" }, done: true };
                         return obj4;
                       } else {
                         mapped = readyEdits.map((editId) => {
@@ -411,7 +411,7 @@ obj = function _drainPendingEdits() {
                       return obj7;
                     } else {
                       c7 = 3;
-                      const obj8 = { value: { v: "top" }, done: true };
+                      const obj8 = { value: { v: "r" }, done: true };
                       return obj8;
                     }
                   } else if (2 === c6) {
@@ -459,7 +459,7 @@ obj = function _drainPendingEdits() {
                       return obj14;
                     } else {
                       c7 = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: "+95" };
                     }
                   } else if (arg0 === 1) {
                     c7 = 3;

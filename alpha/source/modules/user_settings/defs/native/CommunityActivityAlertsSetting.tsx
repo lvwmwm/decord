@@ -1,17 +1,17 @@
-// Module ID: 17069
-// Function ID: 17070
+// Module ID: 17120
+// Function ID: 17121
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [10550, 9513, 1071, 504, 1112, 11914, 17070, 3206, 17051, 2]
+// Dependencies: [10595, 9555, 1071, 504, 1112, 11962, 17121, 3207, 17102, 2]
 
-// Module 17069 (CommunityActivityAlertsSetting)
+// Module 17120 (CommunityActivityAlertsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10550 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17102 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10595 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,11 +48,11 @@ const createRoute = SettingBuilders.createRoute;
 const obj2 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.GI8o2C);
+    return intl.string(_modDef3207.GI8o2C);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206["5g09KR"]);
+    return intl.string(_modDef3207["5g09KR"]);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_SERVERS
 };

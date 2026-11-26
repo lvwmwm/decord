@@ -1,17 +1,17 @@
-// Module ID: 14065
-// Function ID: 14066
+// Module ID: 14117
+// Function ID: 14118
 // Name: Checkpoint2026ForwardPreview
-// Dependencies: [17, 21, 5012, 6738, 6391, 12603, 12605, 1653, 12600, 14066, 575, 2]
+// Dependencies: [17, 21, 5043, 6769, 6422, 12639, 12641, 1654, 12636, 14118, 575, 2]
 // Exports: default
 
-// Module 14065 (Checkpoint2026ForwardPreview)
+// Module 14117 (Checkpoint2026ForwardPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6391 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6738 */;
-import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 12603 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6422 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6769 */;
+import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 12639 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,7 +19,7 @@ let closure_4;
 let items;
 let obj2;
 let tmp2;
-const ExperimentalCheckpointIcon2 = tmp2(14066);
+const ExperimentalCheckpointIcon2 = tmp2(14118);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let obj = { preview: { width: 56, height: 56, alignItems: "center", justifyContent: "center" }, layer: obj2 };
@@ -50,7 +50,7 @@ export default function Checkpoint2026ForwardPreview(checkpointData) {
     if (null != character) {
       const obj5 = { style: items1, children: null };
       items1 = [absoluteFill.absoluteFill, tmp.layer, tmp7];
-      const View = tmp5(1653).View;
+      const View = tmp5(1654).View;
       tmp9Result = tmp9(View, obj5);
     } else {
       const obj7 = { color: nativeDefault.colors.BLACK };

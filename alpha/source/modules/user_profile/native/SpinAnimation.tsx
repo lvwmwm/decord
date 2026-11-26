@@ -1,13 +1,13 @@
-// Module ID: 16108
-// Function ID: 16109
+// Module ID: 16053
+// Function ID: 16054
 // Name: SpinAnimation
-// Dependencies: [19, 21, 1653, 5222, 2]
+// Dependencies: [19, 21, 1654, 5253, 2]
 // Exports: default
 
-// Module 16108 (SpinAnimation)
+// Module 16053 (SpinAnimation)
 import Fragment from "Fragment" /* 21 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,9 +23,9 @@ export default function SpinAnimation(shouldAnimate) {
   shouldAnimate = shouldAnimate.shouldAnimate;
   const children = shouldAnimate.children;
   let tmp = dependencyMap;
-  let obj = shouldAnimate(1653);
+  let obj = shouldAnimate(1654);
   const sharedValue = obj.useSharedValue(0);
-  let obj2 = shouldAnimate(1653);
+  let obj2 = shouldAnimate(1654);
   let items = [closure_5, sharedValue];
   let c0;
   [tmp3, tmp4] = items;
@@ -50,23 +50,23 @@ export default function SpinAnimation(shouldAnimate) {
     const tmp = shouldAnimate;
     if (tmp) {
       set = sharedValue.set;
-      const withRepeat = _mod1653.withRepeat;
-      _mod1653;
+      const withRepeat = _mod1654.withRepeat;
+      _mod1654;
       const obj2 = { duration: 3000, easing: Easing.bezier(0.25, 0.1, 0.25, 1) };
       const withTiming = timing_timing.withTiming;
       timing_timing;
-      Easing = _mod1653.Easing;
+      Easing = _mod1654.Easing;
       const result = set(withRepeat(withTiming(360, obj2), -1));
       fn = () => {
         const obj = shouldAnimate(dependencyMap[2]);
         return obj.cancelAnimation(sharedValue);
       };
     } else {
-      let obj = _mod1653;
+      let obj = _mod1654;
       obj.cancelAnimation(sharedValue);
       const result1 = sharedValue.set(0);
     }
     return fn;
   }, items2);
-  return jsx(sharedValue(1653).View, { style, children });
+  return jsx(sharedValue(1654).View, { style, children });
 };

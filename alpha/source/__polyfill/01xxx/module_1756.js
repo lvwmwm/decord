@@ -1,21 +1,64 @@
 // Module ID: 1756
 // Function ID: 1757
-// Dependencies: [1757, 1771, 1776]
+// Dependencies: [41, 42, 93, 95, 98, 1757, 1786]
 
 // Module 1756
-import normalizeAnimationKeyframes from "normalizeAnimationKeyframes" /* 1757 */;
-import normalizeDelay from "normalizeDelay" /* 1771 */;
-import normalizeCSSTransitionProperties from "normalizeCSSTransitionProperties" /* 1776 */;
+import _mod1757 from "module_1757" /* 1757 */;
+import CSSCallbackStore from "CSSCallbackStore" /* 1786 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-for (const key10013 in normalizeAnimationKeyframes) {
-  exports[key10013] = normalizeAnimationKeyframes[key10013];
-  continue;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
 }
-for (const key10017 in normalizeDelay) {
-  exports[key10017] = normalizeDelay[key10017];
-  continue;
+class CSSKeyframesRuleImpl {
+  constructor(animationName, json) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, CSSKeyframesRuleImpl);
+    const items = [animationName, json];
+    const obj = _getPrototypeOf(CSSKeyframesRuleImpl);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.normalizedKeyframesCache_ = {};
+    return tmp3Result;
+  }
 }
-for (const key10021 in normalizeCSSTransitionProperties) {
-  exports[key10021] = normalizeCSSTransitionProperties[key10021];
-  continue;
-}
+_inherits(CSSKeyframesRuleImpl, CSSCallbackStore.CSSKeyframesRuleBase);
+const entry = {
+  key: "getNormalizedKeyframesConfig",
+  value: function getNormalizedKeyframesConfig(compoundComponentName) {
+    const self = this;
+    const normalizedKeyframesCache_ = this.normalizedKeyframesCache_;
+    if (normalizedKeyframesCache_[compoundComponentName] == null) {
+      const obj = _mod1757;
+      normalizedKeyframesCache_[compoundComponentName] = obj.normalizeAnimationKeyframes(self.cssRules, compoundComponentName);
+    }
+    return self.normalizedKeyframesCache_[compoundComponentName];
+  }
+};
+let items = [entry];
+
+export default _createClass(CSSKeyframesRuleImpl, items);

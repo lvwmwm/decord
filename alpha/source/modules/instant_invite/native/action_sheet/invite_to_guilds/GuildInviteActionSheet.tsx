@@ -1,26 +1,26 @@
-// Module ID: 14810
-// Function ID: 14811
+// Module ID: 14863
+// Function ID: 14864
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 5012, 575, 1186, 1112, 14811, 14812, 14808, 5603, 5587, 9764, 14813, 7476, 5240, 7375, 10385, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1186, 1112, 14864, 14865, 14861, 5634, 5618, 9806, 14866, 7507, 5271, 7406, 10430, 2]
 // Exports: default
 
-// Module 14810 (GuildInviteActionSheet)
+// Module 14863 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5240 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import SearchBar2 from "SearchBar" /* 7375 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7476 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10385 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14811 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14812 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 14813 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import SearchBar2 from "SearchBar" /* 7406 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10430 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14864 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14865 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 14866 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -55,7 +55,7 @@ function GuildList(recipientId) {
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(14808);
+  let obj = recipientId(14861);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {
@@ -63,7 +63,7 @@ function GuildList(recipientId) {
       items = [];
     }
     let tmp5 = 0 === arr.length;
-    const insets = source(5587)().insets;
+    const insets = source(5618)().insets;
     const tmp4 = source;
     if (!tmp5) {
       tmp5 = 0 === arr2.length;
@@ -100,7 +100,7 @@ function GuildList(recipientId) {
         },
       ListEmptyComponent: EmptyGuildList
     };
-    const UserProfileStackedActionSheetSectionList = tmp(9764).UserProfileStackedActionSheetSectionList;
+    const UserProfileStackedActionSheetSectionList = tmp(9806).UserProfileStackedActionSheetSectionList;
     const tmp6 = closure_6;
     if (tmp5) {
       num = 24;

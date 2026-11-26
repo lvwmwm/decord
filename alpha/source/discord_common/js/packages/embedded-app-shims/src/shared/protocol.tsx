@@ -1,11 +1,11 @@
-// Module ID: 19637
-// Function ID: 19638
+// Module ID: 19700
+// Function ID: 19701
 // Name: protocol
-// Dependencies: [19638, 2]
+// Dependencies: [19701, 2]
 // Exports: generateNonce, isSameChildState, isShimWindowMessage, mergeChildStates, readNonce
 
-// Module 19637 (protocol)
-import Safe2 from "Safe" /* 19638 */;
+// Module 19700 (protocol)
+import Safe2 from "Safe" /* 19701 */;
 import size from "module_2" /* 2 */;
 
 const discordEmbeddedAppShim = "discordEmbeddedAppShim";
@@ -56,5 +56,5 @@ export function isSameChildState(arg0, arg1) {
   const _ArrayResult = _Array(_Object.keys(arg0));
   return _ArrayResult.every((item) => closure_0[item] === closure_1[item]);
 }
-export const ParentToChildEvent = { STATE_UPDATED: 0, [0]: "STATE_UPDATED", KEYBINDS_UPDATED: 1, [1]: "KEYBINDS_UPDATED" };
-export const ChildToParentEvent = { STATE_UPDATED: 0, [0]: "STATE_UPDATED", DISCONNECTED: 1, [1]: "DISCONNECTED", CONNECTION_ACCEPTED: 2, [2]: "CONNECTION_ACCEPTED", KEYBIND_CAPTURED: 3, [3]: "KEYBIND_CAPTURED" };
+export const ParentToChildEvent = { STATE_UPDATED: 0, [0]: "STATE_UPDATED", KEYBINDS_UPDATED: 1, [1]: "KEYBINDS_UPDATED", LAUNCH_TIMINGS_REQUEST: 2, [2]: "LAUNCH_TIMINGS_REQUEST" };
+export const ChildToParentEvent = { STATE_UPDATED: 0, [0]: "STATE_UPDATED", DISCONNECTED: 1, [1]: "DISCONNECTED", CONNECTION_ACCEPTED: 2, [2]: "CONNECTION_ACCEPTED", KEYBIND_CAPTURED: 3, [3]: "KEYBIND_CAPTURED", LAUNCH_TIMINGS_RESPONSE: 4, [4]: "LAUNCH_TIMINGS_RESPONSE" };

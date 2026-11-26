@@ -1,14 +1,14 @@
-// Module ID: 13540
-// Function ID: 13541
+// Module ID: 13592
+// Function ID: 13593
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 13541, 1112, 13542, 10478, 6021, 2]
+// Dependencies: [21, 13593, 1112, 13594, 10523, 6052, 2]
 // Exports: default
 
-// Module 13540 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 13592 (UserSettingsAuthedAppDeleteWarningModal)
 import intl7 from "intl" /* 1112 */;
-import InfoBox from "InfoBox" /* 10478 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 13541 */;
-import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 13542 */;
+import InfoBox from "InfoBox" /* 10523 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 13593 */;
+import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 13594 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -72,13 +72,13 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   items[1] = tmp12;
   const obj8 = { title: formatToPlainStringResult, content: formatToPlainStringResult1, extraContent: hasOwnProperty(React3, { children: items }), actions: hasOwnProperty(React3, obj9) };
   obj9 = { children: items1 };
-  const AlertModal = tmp(6021).AlertModal;
+  const AlertModal = tmp(6052).AlertModal;
   const obj10 = { variant: "destructive", text: intl5.string(intl7.t.xUqheM), onPress: onDelete };
-  const AlertActionButton = tmp(6021).AlertActionButton;
+  const AlertActionButton = tmp(6052).AlertActionButton;
   intl5 = tmp(1112).intl;
   items1 = [_false(AlertActionButton, obj10, "confirm"), ];
   const obj11 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp(6021).AlertActionButton;
+  const AlertActionButton2 = tmp(6052).AlertActionButton;
   intl6 = tmp(1112).intl;
   items1[1] = _false(AlertActionButton2, obj11, "cancel");
   return _false(AlertModal, obj8);

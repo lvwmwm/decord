@@ -1,18 +1,18 @@
-// Module ID: 18548
-// Function ID: 18549
+// Module ID: 18611
+// Function ID: 18612
 // Name: ConjurePublishStatusBadge
-// Dependencies: [19, 17, 21, 5012, 18547, 575, 5576, 1653, 5222, 13532, 2]
+// Dependencies: [19, 17, 21, 5043, 18610, 575, 5607, 1654, 5253, 13584, 2]
 // Exports: conjurePublishBadgeSize, default
 
-// Module 18548 (ConjurePublishStatusBadge)
+// Module 18611 (ConjurePublishStatusBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 18547 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 18610 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -23,17 +23,17 @@ function ConjurePublishSpinner() {
   let tmp7;
   let tmp8;
   const tmp = closure_6();
-  let obj = sharedValue(5576);
+  let obj = sharedValue(5607);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BRAND);
-  let obj2 = sharedValue(1653);
+  let obj2 = sharedValue(1654);
   sharedValue = obj2.useSharedValue(0);
   let items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = _mod1653.withRepeat;
-    _mod1653;
+    const withRepeat = _mod1654.withRepeat;
+    _mod1654;
     let obj = timing_timing;
-    const obj2 = { duration: 800, easing: _mod1653.Easing.linear };
+    const obj2 = { duration: 800, easing: _mod1654.Easing.linear };
     const result = set(withRepeat(obj.withTiming(360, obj2), -1, false));
     return () => {
       const obj = sharedValue(dependencyMap[7]);
@@ -43,7 +43,7 @@ function ConjurePublishSpinner() {
   const items1 = [closure_7, sharedValue];
   let c0;
   [tmp7, tmp8] = items1;
-  const obj3 = sharedValue(1653);
+  const obj3 = sharedValue(1654);
   class ConjurePublishStatusBadgeTsx1 {
     constructor() {
       let items;
@@ -59,7 +59,7 @@ function ConjurePublishSpinner() {
   ConjurePublishStatusBadgeTsx1.__initData = tmp7;
   const animatedStyle = obj3.useAnimatedStyle(ConjurePublishStatusBadgeTsx1);
   const items3 = [tmp.spinner, animatedStyle];
-  View = tmp3(1653).View;
+  View = tmp3(1654).View;
   return <View style={items3}>{null}</View>;
 }
 let View = react_native.View;

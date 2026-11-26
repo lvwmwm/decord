@@ -1,17 +1,17 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 13132
+// Function ID: 13133
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [19, 17, 1499, 21, 5012, 575, 5240, 7476, 7516, 5226, 2]
+// Dependencies: [19, 17, 1500, 21, 5043, 575, 5271, 7507, 7547, 5257, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 13080 (AppLauncherCommandOptionActionSheet)
+// Module 13132 (AppLauncherCommandOptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1500 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -39,9 +39,9 @@ export function AppLauncherCommandOptionActionSheet(startExpanded) {
   }
   const merged = Object.assign(startExpanded, Object.assign({ option: 0, children: 0, contentContainerStyles: 0, scrollable: 0, startExpanded: 0 }));
   const tmp2 = closure_5();
-  const BottomSheet = merged(5240).BottomSheet;
+  const BottomSheet = merged(5271).BottomSheet;
   const merged1 = Object.assign(merged);
-  const BottomSheetTitleHeader = merged(7476).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = merged(7507).BottomSheetTitleHeader;
   ({ displayName: obj2.title, displayDescription: obj2.subtitle } = option);
   const items = [tmp2.contentContainer, contentContainerStyles];
   return <BottomSheet key={option.name} backgroundStyles={tmp2.actionSheetBackground} scrollable={scrollable} startExpanded={flag} header={<BottomSheetTitleHeader leading={null} title={null} subtitle={null} />}><View style={items}>{children}</View></BottomSheet>;

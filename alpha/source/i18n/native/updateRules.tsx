@@ -1,15 +1,15 @@
-// Module ID: 19553
-// Function ID: 19554
+// Module ID: 19616
+// Function ID: 19617
 // Name: updateRules
-// Dependencies: [19, 1071, 21, 5026, 5576, 575, 5691, 2068, 1186, 2]
+// Dependencies: [19, 1071, 21, 5057, 5607, 575, 5722, 2069, 1186, 2]
 // Exports: default
 
-// Module 19553 (updateRules)
+// Module 19616 (updateRules)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
-import _modDef2068 from "module_2068" /* 2068 */;
-import LinkingDefault from "Linking" /* 5691 */;
+import _modDef2069 from "module_2069" /* 2069 */;
+import LinkingDefault from "Linking" /* 5722 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ class I18nLink {
       obj.onClick = () => {
         const openURL = LinkingDefault.openURL;
         LinkingDefault;
-        const obj = _modDef2068;
+        const obj = _modDef2069;
         return openURL(obj.sanitizeUrl(node.target));
       };
     }

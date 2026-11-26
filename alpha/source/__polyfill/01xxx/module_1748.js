@@ -1,47 +1,82 @@
 // Module ID: 1748
 // Function ID: 1749
 // Dependencies: []
-// Exports: setupSetTimeout
+// Exports: setupRequestAnimationFrame
 
 // Module 1748
-let map;
+let closure_1, closure_3, closure_4, closure_5, length;
 
 let tmp2;
-let items = [{ code: "(function setupSetTimeout_Pnpm_setTimeoutPolyfillTs1(){const timeoutHandleToRafHandle=new Map();const setTimeoutPolyfill=function(callback,delay=0,...args){const start=performance.now();let timeoutHandle=0;const rafCallback=function(){const now=performance.now();if(now-start>=delay){callback(...args);timeoutHandleToRafHandle.delete(timeoutHandle);}else{const rafHandle=requestAnimationFrame(rafCallback);timeoutHandleToRafHandle.set(timeoutHandle,rafHandle);}};timeoutHandle=requestAnimationFrame(rafCallback);timeoutHandleToRafHandle.set(timeoutHandle,timeoutHandle);return timeoutHandle;};const clearTimeoutPolyfill=function(timeoutHandle){const rafHandle=timeoutHandleToRafHandle.get(timeoutHandle);timeoutHandleToRafHandle.delete(timeoutHandle);cancelAnimationFrame(rafHandle);};globalThis.setTimeout=setTimeoutPolyfill;globalThis.clearTimeout=clearTimeoutPolyfill;})" }];
+let items = [{ code: "(function setupRequestAnimationFrame_Pnpm_requestAnimationFrameTs1(){let queuedCallbacks=[];let queuedCallbacksBegin=0;let queuedCallbacksEnd=0;let flushedCallbacks=queuedCallbacks;let flushedCallbacksBegin=0;let flushedCallbacksEnd=0;let queuedFinalizers=[];function executeQueue(timestamp){flushedCallbacks=queuedCallbacks;queuedCallbacks=[];flushedCallbacksBegin=queuedCallbacksBegin;flushedCallbacksEnd=queuedCallbacksEnd;queuedCallbacksBegin=queuedCallbacksEnd;if(flushedCallbacks.length>0){for(const callback of flushedCallbacks){callback(timestamp);globalThis.__drainMicrotasks();}}else{globalThis.__drainMicrotasks();}flushedCallbacksBegin=flushedCallbacksEnd;const finalizers=queuedFinalizers;queuedFinalizers=[];for(const finalizer of finalizers){finalizer();}}function requestAnimationFrame(callback){const handle=queuedCallbacksEnd++;queuedCallbacks.push(callback);return handle;}function cancelAnimationFrame(handle){if(handle<flushedCallbacksBegin||handle>=queuedCallbacksEnd){return;}if(handle<flushedCallbacksEnd){flushedCallbacks[handle-flushedCallbacksBegin]=function(){};}else{queuedCallbacks[handle-queuedCallbacksBegin]=function(){};}}function nativeFlushQueue(timestamp){flushQueue(timestamp);globalThis.__nativeRequestAnimationFrame(nativeFlushQueue);}function flushQueue(timestamp){globalThis.__frameTimestamp=timestamp;executeQueue(timestamp);globalThis.__frameTimestamp=undefined;}globalThis.requestAnimationFrame=requestAnimationFrame;globalThis.cancelAnimationFrame=cancelAnimationFrame;globalThis.requestAnimationFrameFinalizer=function(callback){queuedFinalizers.push(callback);};globalThis.__nativeRequestAnimationFrame(nativeFlushQueue);globalThis.__flushAnimationFrame=function(eventTimestamp){flushQueue(eventTimestamp);};})" }];
 [tmp2] = items;
-function setupSetTimeout() {
-  map = new Map();
-  globalThis.setTimeout = (arg0) => {
-    let closure_0;
-    map = arg0;
-    let num = arg1;
-    if (arg1 === undefined) {
-      num = 0;
+function setupRequestAnimationFrame() {
+  function executeQueue(__frameTimestamp) {
+    closure_3 = length;
+    length = [];
+    closure_4 = closure_1;
+    closure_5 = closure_1_2;
+    closure_1 = closure_1_2;
+    if (length.length > 0) {
+      const iter = closure_3[Symbol.iterator]();
+      while (iter !== undefined) {
+        let tmp8 = iter.next()(__frameTimestamp);
+        let _globalThis2 = globalThis;
+        let __drainMicrotasksResult = globalThis.__drainMicrotasks();
+        continue;
+      }
+    } else {
+      const _globalThis = globalThis;
+      globalThis.__drainMicrotasks();
     }
-    let closure_2 = [...arguments].slice();
-    let closure_3 = performance.now();
-    function rafCallback() {
-      if (performance.now() - closure_3 >= num) {
-        const items = [];
-        HermesBuiltin.arraySpread(items, closure_2, 0);
-        HermesBuiltin.apply(closure_0, items, undefined);
-        map.delete(animationFrame);
+    closure_4 = closure_5;
+    closure_6 = [];
+    for (const item10031 of closure_6) {
+      let item10031Result = item10031();
+      continue;
+    }
+  }
+  const items = [];
+  let c1 = 0;
+  let closure_2 = 0;
+  let c4 = 0;
+  let c5 = 0;
+  let closure_6 = [];
+  globalThis.requestAnimationFrame = function requestAnimationFrame(arg0) {
+    closure_2 = closure_2 + 1;
+    items.push(arg0);
+    return closure_2;
+  };
+  globalThis.cancelAnimationFrame = function cancelAnimationFrame(arg0) {
+    const tmp = arg0 < c4 || arg0 >= closure_2;
+    if (!tmp) {
+      if (arg0 < c5) {
+        items[arg0 - c4] = () => {
+
+        };
       } else {
-        const _requestAnimationFrame = requestAnimationFrame;
-        const result = map.set(animationFrame, requestAnimationFrame(rafCallback));
+        items[arg0 - c1] = () => {
+
+        };
       }
     }
-    const animationFrame = requestAnimationFrame(rafCallback);
-    let result = map.set(animationFrame, animationFrame);
-    return animationFrame;
   };
-  globalThis.clearTimeout = (arg0) => {
-    const value = map.get(arg0);
-    map.delete(arg0);
-    cancelAnimationFrame(value);
+  globalThis.requestAnimationFrameFinalizer = (arg0) => {
+    closure_6.push(arg0);
+  };
+  function nativeFlushQueue(__frameTimestamp) {
+    globalThis.__frameTimestamp = __frameTimestamp;
+    executeQueue(__frameTimestamp);
+    globalThis.__frameTimestamp = undefined;
+    const result = globalThis.__nativeRequestAnimationFrame(nativeFlushQueue);
+  }
+  let result = globalThis.__nativeRequestAnimationFrame(nativeFlushQueue);
+  globalThis.__flushAnimationFrame = (__frameTimestamp) => {
+    globalThis.__frameTimestamp = __frameTimestamp;
+    executeQueue(__frameTimestamp);
+    globalThis.__frameTimestamp = undefined;
   };
 }
-setupSetTimeout.__workletHash = 2751764254925;
-setupSetTimeout.__initData = tmp2;
+setupRequestAnimationFrame.__workletHash = 4828216215772;
+setupRequestAnimationFrame.__initData = tmp2;
 
-export { setupSetTimeout };
+export { setupRequestAnimationFrame };

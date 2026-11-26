@@ -1,18 +1,18 @@
-// Module ID: 1451
-// Function ID: 1452
+// Module ID: 1452
+// Function ID: 1453
 // Name: apex/ApexExperiment
-// Dependencies: [32, 502, 1245, 1452, 1252, 504, 1253, 1254, 2]
+// Dependencies: [32, 502, 1246, 1453, 1253, 504, 1254, 1255, 2]
 // Exports: default
 
-// Module 1451 (apex/ApexExperiment)
+// Module 1452 (apex/ApexExperiment)
 import get_initialized from "get initialized" /* 504 */;
-import ApexUnitUtils from "ApexUnitUtils" /* 1252 */;
-import FingerprintUtils from "FingerprintUtils" /* 1253 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import discord_common_apex_ApexExperiment from "discord_common/apex/ApexExperiment" /* 1452 */;
+import ApexUnitUtils from "ApexUnitUtils" /* 1253 */;
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import discord_common_apex_ApexExperiment from "discord_common/apex/ApexExperiment" /* 1453 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import size from "module_2" /* 2 */;
 
 const discord_common_apex_ApexExperimentDefault = discord_common_apex_ApexExperiment;

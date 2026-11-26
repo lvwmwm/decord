@@ -1,23 +1,23 @@
-// Module ID: 5819
-// Function ID: 5820
+// Module ID: 5850
+// Function ID: 5851
 // Name: PassTheControllerStore
-// Dependencies: [2139, 502, 5820, 8361, 15040, 1071, 6783, 5824, 6785, 1404, 5837, 15041, 15048, 572, 15049, 15052, 504, 2]
+// Dependencies: [2140, 502, 5851, 8403, 15090, 1071, 6814, 5855, 6816, 1405, 5868, 15091, 15098, 572, 15099, 15102, 504, 2]
 
-// Module 5819 (PassTheControllerStore)
+// Module 5850 (PassTheControllerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants2 from "Constants" /* 5824 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5837 */;
-import Constants3 from "Constants" /* 6783 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6785 */;
-import Constants4 from "Constants" /* 15040 */;
-import InputEvent from "InputEvent" /* 15048 */;
-import InputHostDefault from "InputHost" /* 15049 */;
-import InputGuestDefault from "InputGuest" /* 15052 */;
-import RunningGameStore from "RunningGameStore" /* 2139 */;
+import Constants2 from "Constants" /* 5855 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5868 */;
+import Constants3 from "Constants" /* 6814 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
+import Constants4 from "Constants" /* 15090 */;
+import InputEvent from "InputEvent" /* 15098 */;
+import InputHostDefault from "InputHost" /* 15099 */;
+import InputGuestDefault from "InputGuest" /* 15102 */;
+import RunningGameStore from "RunningGameStore" /* 2140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8361 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8403 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let c10;
 let c9;
 let metroImportAll;
 let tmp;
-const FlagUtils = tmp(1404);
+const FlagUtils = tmp(1405);
 function handleControllerGrab(arg0) {
   if (arg0 !== c17) {
     c17 = arg0;
@@ -237,9 +237,9 @@ let obj = {
                 if (null != rTCConnection) {
                   const self5 = this;
                   const self6 = this;
-                  const inputConnection = new inputConnection1(15041).InputConnection(rTCConnection, AuthenticationStore.getId());
+                  const inputConnection = new inputConnection1(15091).InputConnection(rTCConnection, AuthenticationStore.getId());
                   h = h2;
-                  inputConnection.on(inputConnection1(15048).InputEvent.Disconnect, h);
+                  inputConnection.on(inputConnection1(15098).InputEvent.Disconnect, h);
                   inputConnection.connect();
                   inputConnection1 = inputConnection;
                   tmp44 = inputConnection;
@@ -258,7 +258,7 @@ let obj = {
                 }
                 obj = { streamKey, inputHost: tmp502 };
                 const tmp50 = InputHostDefault;
-                const obj8 = inputConnection1(6785);
+                const obj8 = inputConnection1(6816);
                 let guildId = obj8.decodeStreamKey(streamKey).guildId;
                 if (guildId == null) {
                   guildId = null;
@@ -293,9 +293,9 @@ let obj = {
           if (null != rTCConnection2) {
             const self = this;
             const self2 = this;
-            inputConnection1 = new inputConnection1(15041).InputConnection(rTCConnection2, AuthenticationStore.getId());
+            inputConnection1 = new inputConnection1(15091).InputConnection(rTCConnection2, AuthenticationStore.getId());
             h = h2;
-            inputConnection1.on(inputConnection1(15048).InputEvent.Disconnect, h);
+            inputConnection1.on(inputConnection1(15098).InputEvent.Disconnect, h);
             inputConnection1.connect();
             tmp13 = inputConnection1;
           }
@@ -418,7 +418,7 @@ let obj = {
         const inputHost = _null2.inputHost;
         inputHost.takeBackController();
       }
-      const encodeStreamKey = tmp(6785).encodeStreamKey;
+      const encodeStreamKey = tmp(6816).encodeStreamKey;
       StreamKeyUtils;
       if (null != guildId) {
         CALL = StreamTypes.GUILD;

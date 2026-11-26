@@ -1,12 +1,12 @@
-// Module ID: 19355
-// Function ID: 19356
+// Module ID: 19418
+// Function ID: 19419
 // Name: VoicePanelIconButton
-// Dependencies: [19, 21, 1653, 7910, 2]
+// Dependencies: [19, 21, 1654, 7944, 2]
 
-// Module 19355 (VoicePanelIconButton)
+// Module 19418 (VoicePanelIconButton)
 import Fragment from "Fragment" /* 21 */;
-import _modDef1653 from "module_1653" /* 1653 */;
-import IconButton2 from "IconButton" /* 7910 */;
+import _modDef1654 from "module_1654" /* 1654 */;
+import IconButton2 from "IconButton" /* 7944 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const memoResult = react.memo(function VoicePanelIconButton(overrideVariant) {
   let str = overrideVariant.overrideVariant;
   ({ style, layout, ref } = overrideVariant);
   const merged = Object.assign(overrideVariant, Object.assign({ style: 0, overrideVariant: 0, layout: 0, ref: 0 }));
-  const View = _modDef1653.View;
+  const View = _modDef1654.View;
   const IconButton = IconButton2.IconButton;
   const merged1 = Object.assign(merged);
   if (str == null) {

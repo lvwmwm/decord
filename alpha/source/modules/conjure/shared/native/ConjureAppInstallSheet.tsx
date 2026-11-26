@@ -1,12 +1,12 @@
-// Module ID: 7695
-// Function ID: 7696
+// Module ID: 7729
+// Function ID: 7730
 // Name: ConjureAppInstallSheet
-// Dependencies: [19, 21, 5571, 5226, 7696, 2]
+// Dependencies: [19, 21, 5602, 5257, 7730, 2]
 // Exports: default
 
-// Module 7695 (ConjureAppInstallSheet)
+// Module 7729 (ConjureAppInstallSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

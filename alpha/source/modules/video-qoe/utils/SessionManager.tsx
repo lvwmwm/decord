@@ -1,9 +1,9 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16730
+// Function ID: 16731
 // Name: SessionManager
 // Dependencies: [2]
 
-// Module 16679 (SessionManager)
+// Module 16730 (SessionManager)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video-qoe/utils/SessionManager.tsx");

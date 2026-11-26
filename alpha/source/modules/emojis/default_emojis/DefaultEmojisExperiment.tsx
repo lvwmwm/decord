@@ -1,11 +1,11 @@
-// Module ID: 4964
-// Function ID: 4965
+// Module ID: 4995
+// Function ID: 4996
 // Name: DefaultEmojisExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: useDefaultEmojisEnabled
 
-// Module 4964 (DefaultEmojisExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 4995 (DefaultEmojisExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-default-emojis", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

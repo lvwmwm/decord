@@ -1,24 +1,24 @@
-// Module ID: 15206
-// Function ID: 15207
+// Module ID: 15256
+// Function ID: 15257
 // Name: AddFriendModalActionCreators
-// Dependencies: [1386, 6099, 15207, 2119, 2]
+// Dependencies: [1387, 6130, 15257, 2120, 2]
 
-// Module 15206 (AddFriendModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
-import UserStore from "UserStore" /* 1386 */;
+// Module 15256 (AddFriendModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
   openAddFriendModalDeeplink() {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(15207, dependencyMap.paths));
+    obj.pushLazy(asyncRequire(15257, dependencyMap.paths));
   },
   openAddFriendModal(sourceMetadata) {
     if (null != UserStore.getCurrentUser()) {
       const obj2 = { sourceMetadata };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(15207, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(15257, dependencyMap.paths), obj2);
     }
   }
 };

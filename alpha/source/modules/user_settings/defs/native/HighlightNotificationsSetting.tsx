@@ -1,18 +1,18 @@
-// Module ID: 17071
-// Function ID: 17072
+// Module ID: 17122
+// Function ID: 17123
 // Name: HighlightNotificationsSetting
-// Dependencies: [4883, 9513, 1071, 504, 11914, 1112, 17072, 3206, 17051, 2]
+// Dependencies: [4914, 9555, 1071, 504, 11962, 1112, 17123, 3207, 17102, 2]
 // Exports: useHighlightNotifications
 
-// Module 17071 (HighlightNotificationsSetting)
+// Module 17122 (HighlightNotificationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17102 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,11 +50,11 @@ const createRoute = SettingBuilders.createRoute;
 const obj2 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206["Sq+zmG"]);
+    return intl.string(_modDef3207["Sq+zmG"]);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206.yHrluZ);
+    return intl.string(_modDef3207.yHrluZ);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS
 };

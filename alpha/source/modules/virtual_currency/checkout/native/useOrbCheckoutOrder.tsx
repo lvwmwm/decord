@@ -1,12 +1,12 @@
-// Module ID: 11568
-// Function ID: 11569
+// Module ID: 11616
+// Function ID: 11617
 // Name: useOrbCheckoutOrder
-// Dependencies: [5, 32, 19, 5729, 1082, 11569, 9081, 9228, 4825, 5763, 2]
+// Dependencies: [5, 32, 19, 5760, 1082, 11617, 9123, 9270, 4856, 5794, 2]
 // Exports: useOrbCheckoutOrder
 
-// Module 11568 (useOrbCheckoutOrder)
+// Module 11616 (useOrbCheckoutOrder)
 import Constants from "Constants" /* 1082 */;
-import PaymentConstants from "PaymentConstants" /* 5729 */;
+import PaymentConstants from "PaymentConstants" /* 5760 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -36,7 +36,7 @@ export function useOrbCheckoutOrder(skuId) {
   c3 = undefined;
   _slicedToArray = undefined;
   react = undefined;
-  let obj = isOrdersCheckout(11569);
+  let obj = isOrdersCheckout(11617);
   isOrdersCheckout = obj.useConfig({ location: "orb_checkout_modal" }).enabled;
   let tmp = _slicedToArray(react.useState(null), 2);
   [tmp2, c2] = tmp;
@@ -77,7 +77,7 @@ export function useOrbCheckoutOrder(skuId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -171,7 +171,7 @@ export function useOrbCheckoutOrder(skuId) {
               c3 = 0;
               c3(false);
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp59) {
             closure_2 = tmp59;

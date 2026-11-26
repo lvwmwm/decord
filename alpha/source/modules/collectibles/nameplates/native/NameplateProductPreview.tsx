@@ -1,22 +1,22 @@
-// Module ID: 11243
-// Function ID: 11244
+// Module ID: 11289
+// Function ID: 11290
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 5013, 21, 5012, 575, 9389, 2109, 1112, 5603, 5567, 9373, 9480, 6344, 504, 5068, 6740, 9766, 9767, 1186, 11244, 6113, 2]
+// Dependencies: [19, 17, 5044, 21, 5043, 575, 9431, 2110, 1112, 5634, 5598, 9415, 9522, 6375, 504, 5099, 6771, 9808, 9809, 1186, 11290, 6144, 2]
 // Exports: default
 
-// Module 11243 (NameplateProductPreview)
+// Module 11289 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import utils from "utils" /* 2109 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import TableRow2 from "TableRow" /* 6113 */;
-import useShopProductItems from "useShopProductItems" /* 9389 */;
+import utils from "utils" /* 2110 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import TableRow2 from "TableRow" /* 6144 */;
+import useShopProductItems from "useShopProductItems" /* 9431 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": null };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: "handshake_medium_light_skin_tone", "aria-hidden": "1f3fc" };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);
@@ -126,7 +126,7 @@ export default function NameplateProductPreview(arg0) {
     const obj7 = { user: nameplateSampleUsers.mallow, end: true };
     items = [metroRequire(PlaceholderUser, obj7), , , , , , ];
     const obj8 = { maxFontSizeMultiplier: 2, variant: "body-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
-    const Text = tmp2(5603).Text;
+    const Text = tmp2(5634).Text;
     const intl2 = tmp2(1112).intl;
     items1 = [intl2.string(intl4.t["yzW/fZ"]), " \u2014 3"];
     items[1] = metroImportDefault(Text, obj8);
@@ -137,7 +137,7 @@ export default function NameplateProductPreview(arg0) {
     const obj11 = { user: nameplateSampleUsers.locke, end: true };
     items[4] = metroRequire(PlaceholderUser, obj11);
     const obj12 = { maxFontSizeMultiplier: 2, variant: "body-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
-    const Text2 = tmp2(5603).Text;
+    const Text2 = tmp2(5634).Text;
     const intl3 = tmp2(1112).intl;
     items2 = [intl3.string(intl4.t["NG43/6"]), " \u2014 12"];
     items[5] = metroImportDefault(Text2, obj12);

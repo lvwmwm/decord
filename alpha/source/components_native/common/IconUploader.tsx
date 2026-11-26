@@ -1,22 +1,22 @@
-// Module ID: 11375
-// Function ID: 11376
+// Module ID: 11421
+// Function ID: 11422
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1071, 21, 5012, 8094, 7021, 1412, 5699, 11376, 6121, 1112, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 5043, 8136, 7052, 1413, 5730, 11422, 6152, 1112, 2]
 // Exports: default
 
-// Module 11375 (IconUploader)
+// Module 11421 (IconUploader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import AvatarUtils from "AvatarUtils" /* 1412 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import Pressables from "Pressables" /* 6121 */;
-import GuildIcon from "GuildIcon" /* 7021 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11376 */;
+import AvatarUtils from "AvatarUtils" /* 1413 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import Pressables from "Pressables" /* 6152 */;
+import GuildIcon from "GuildIcon" /* 7052 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -71,7 +71,7 @@ export default function IconUploader(disabled) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ export default function IconUploader(disabled) {
             closure_129_2.current = false;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp21) {
           c3 = 3;
           throw tmp21;

@@ -1,16 +1,16 @@
-// Module ID: 18543
-// Function ID: 18544
+// Module ID: 18606
+// Function ID: 18607
 // Name: ConjureArchivePicker
-// Dependencies: [5, 7662, 10656, 18429, 1112, 4244, 18469, 2]
+// Dependencies: [5, 7693, 10701, 18491, 1112, 4245, 18532, 2]
 // Exports: describeConjureArchiveRejection, pickConjureArchive, sendConjureArchiveImport
 
-// Module 18543 (ConjureArchivePicker)
-import _modDef4244 from "module_4244" /* 4244 */;
-import FilePickerUtils from "FilePickerUtils" /* 10656 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 18429 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18469 */;
+// Module 18606 (ConjureArchivePicker)
+import _modDef4245 from "module_4245" /* 4245 */;
+import FilePickerUtils from "FilePickerUtils" /* 10701 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 18491 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 18532 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7662 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 7693 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, c6;
@@ -31,7 +31,7 @@ let obj = function _pickConjureArchive() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _sendConjureArchiveImport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -182,7 +182,7 @@ obj = function _sendConjureArchiveImport() {
           const items = [closure_2];
           closure_132_5(closure_0, closure_1, items);
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp13) {
         c6 = 3;
@@ -208,7 +208,7 @@ export function describeConjureArchiveRejection(bytes) {
     const intl = tmp(1112).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { size: formatConjureAttachmentLimit(tmpResult2.conjureAttachmentLimit(bytes.contentType)) };
-    const ThxcOX = _modDef4244.ThxcOX;
+    const ThxcOX = _modDef4245.ThxcOX;
     formatConjureAttachmentLimit = ConjureAttachmentTypes.formatConjureAttachmentLimit;
     ConjureAttachmentTypes;
     tmpResult2 = ConjureAttachmentTypes;

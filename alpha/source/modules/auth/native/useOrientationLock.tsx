@@ -1,18 +1,18 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 17719
+// Function ID: 17720
 // Name: useOrientationLock
-// Dependencies: [19, 4969, 1625, 7277, 8868, 2]
+// Dependencies: [19, 5000, 1626, 7308, 8910, 2]
 // Exports: default
 
-// Module 17662 (useOrientationLock)
-import DeviceUtils from "DeviceUtils" /* 4969 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7277 */;
+// Module 17719 (useOrientationLock)
+import DeviceUtils from "DeviceUtils" /* 5000 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7308 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MetaQuestUtils = tmp(1625);
-const DeviceOrientation = tmp(8868);
+const MetaQuestUtils = tmp(1626);
+const DeviceOrientation = tmp(8910);
 const result = size.fileFinishedImporting("modules/auth/native/useOrientationLock.tsx");
 
 export default function usePortraitOrientationOnly() {

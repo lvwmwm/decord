@@ -1,20 +1,20 @@
-// Module ID: 14256
-// Function ID: 14257
+// Module ID: 14308
+// Function ID: 14309
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 8686, 5221, 5576, 575, 5567, 7908, 5603, 1112, 6121, 2]
+// Dependencies: [19, 17, 21, 8728, 5252, 5607, 575, 5598, 7942, 5634, 1112, 6152, 2]
 // Exports: default
 
-// Module 14256 (GuildProfileLoadingError)
+// Module 14308 (GuildProfileLoadingError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import useThemeDefault from "useTheme" /* 5221 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import useToken from "useToken" /* 5576 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Pressables from "Pressables" /* 6121 */;
-import WarningIcon3 from "WarningIcon" /* 7908 */;
-import GuildProfileView from "GuildProfileView" /* 8686 */;
+import useThemeDefault from "useTheme" /* 5252 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import useToken from "useToken" /* 5607 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Pressables from "Pressables" /* 6152 */;
+import WarningIcon3 from "WarningIcon" /* 7942 */;
+import GuildProfileView from "GuildProfileView" /* 8728 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

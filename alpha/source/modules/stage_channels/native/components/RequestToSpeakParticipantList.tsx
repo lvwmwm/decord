@@ -1,18 +1,18 @@
-// Module ID: 10285
-// Function ID: 10286
+// Module ID: 10327
+// Function ID: 10328
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1071, 21, 5012, 575, 6348, 6121, 6102, 10286, 1186, 5603, 10287, 1112, 10288, 6772, 7718, 6830, 7805, 7397, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 6379, 6152, 6133, 10328, 1186, 5634, 10329, 1112, 10330, 6803, 7752, 6861, 7839, 7428, 2]
 // Exports: default
 
-// Module 10285 (RequestToSpeakParticipantList)
+// Module 10327 (RequestToSpeakParticipantList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6102 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7805 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7839 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

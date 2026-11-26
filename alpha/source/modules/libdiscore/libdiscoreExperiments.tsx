@@ -1,14 +1,14 @@
-// Module ID: 4887
-// Function ID: 4888
+// Module ID: 4918
+// Function ID: 4919
 // Name: libdiscoreExperiments
-// Dependencies: [4888, 3, 1364, 38, 2]
+// Dependencies: [4919, 3, 1365, 38, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
-// Module 4887 (libdiscoreExperiments)
+// Module 4918 (libdiscoreExperiments)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import shim from "shim" /* 1364 */;
-import BridgedStore from "BridgedStore" /* 4888 */;
+import shim from "shim" /* 1365 */;
+import BridgedStore from "BridgedStore" /* 4919 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -46,7 +46,7 @@ class LibdiscoreCachedExperiment {
       const obj = shim;
       const tmp = require;
       if (obj.isLibdiscoreInitialized()) {
-        const tmpResult = tmp(1364);
+        const tmpResult = tmp(1365);
         const experimentCacher = tmpResult.getExperimentCacher();
         self.cachedConfig = experimentCacher.getConfig(self.id);
       } else {

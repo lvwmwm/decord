@@ -1,17 +1,17 @@
-// Module ID: 19925
-// Function ID: 19926
+// Module ID: 19989
+// Function ID: 19990
 // Name: EmojiOverflowActionSheet
-// Dependencies: [5, 19, 17, 21, 5012, 7515, 5699, 1412, 5603, 6109, 6113, 5719, 1112, 9719, 9582, 5761, 5693, 7216, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 7546, 5730, 1413, 5634, 6140, 6144, 5750, 1112, 9761, 9624, 5792, 5724, 7247, 2]
 // Exports: default
 
-// Module 19925 (EmojiOverflowActionSheet)
+// Module 19989 (EmojiOverflowActionSheet)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9719 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;
@@ -49,20 +49,20 @@ export default function EmojiOverflowActionSheet(emoji) {
   const tmp3 = emoji;
   const tmp4 = dependencyMap;
   let obj = { style: tmp.header, children: items };
-  const ActionSheet = emoji(7515).ActionSheet;
+  const ActionSheet = emoji(7546).ActionSheet;
   let obj2 = { style: tmp.emojiImage, source: obj3 };
   obj3 = { uri: obj4.getEmojiURL(obj5) };
   const tmp6 = FastImageDefault;
-  obj4 = onSelectRolesForEmoji(1412);
+  obj4 = onSelectRolesForEmoji(1413);
   obj5 = { id: emoji.id, animated: emoji.animated, size: 48 };
   items = [closure_6(tmp6, obj2), ];
   let obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: ":" + emoji.name + ":" };
-  const Text = emoji(5603).Text;
+  const Text = emoji(5634).Text;
   items[1] = closure_6(Text, obj6);
   const items1 = [closure_7(View, obj), ];
-  const TableRowGroup = emoji(6109).TableRowGroup;
+  const TableRowGroup = emoji(6140).TableRowGroup;
   let obj7 = {
-    icon: closure_6(emoji(5719).TrashIcon, { color: "text-feedback-critical" }),
+    icon: closure_6(emoji(5750).TrashIcon, { color: "text-feedback-critical" }),
     label: closure_6(Text2, obj8),
     onPress() {
       const obj = EmojiActionCreators;
@@ -70,28 +70,28 @@ export default function EmojiOverflowActionSheet(emoji) {
       onClose();
     }
   };
-  const TableRow = emoji(6113).TableRow;
+  const TableRow = emoji(6144).TableRow;
   obj8 = { variant: "body-md/semibold", color: "text-feedback-critical", children: intl.string(emoji(1112).t.oyYWHE) };
-  Text2 = emoji(5603).Text;
+  Text2 = emoji(5634).Text;
   intl = emoji(1112).intl;
   const items2 = [closure_6(TableRow, obj7), , , ];
   const obj9 = {
-    icon: closure_6(emoji(9582).PencilIcon, {}),
+    icon: closure_6(emoji(9624).PencilIcon, {}),
     label: closure_6(Text3, obj10),
     onPress() {
       dependencyMap();
       onClose();
     }
   };
-  const TableRow2 = emoji(6113).TableRow;
+  const TableRow2 = emoji(6144).TableRow;
   obj10 = { variant: "body-md/semibold", children: intl2.string(emoji(1112).t.bt75uw) };
-  Text3 = emoji(5603).Text;
+  Text3 = emoji(5634).Text;
   intl2 = emoji(1112).intl;
   items2[1] = closure_6(TableRow2, obj9);
   let tmp5Result = null;
   if (null != onSelectRolesForEmoji) {
     const obj11 = {
-      icon: closure_6(tmp3(9582).PencilIcon, {}),
+      icon: closure_6(tmp3(9624).PencilIcon, {}),
       label: closure_6(Text4, obj12),
       onPress: onClose(function*(arg0, value) {
           let obj2;
@@ -105,7 +105,7 @@ export default function EmojiOverflowActionSheet(emoji) {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } else {
             let c4;
@@ -177,7 +177,7 @@ export default function EmojiOverflowActionSheet(emoji) {
                 }
                 closure_130_4();
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
             } catch (tmp38) {
               closure_3 = tmp38;
@@ -191,19 +191,19 @@ export default function EmojiOverflowActionSheet(emoji) {
           }
         })
     };
-    const TableRow3 = tmp3(6113).TableRow;
+    const TableRow3 = tmp3(6144).TableRow;
     obj12 = { variant: "body-md/semibold", children: intl3.string(tmp3(1112).t["+riKdA"]) };
-    Text4 = tmp3(5603).Text;
+    Text4 = tmp3(5634).Text;
     intl3 = tmp3(1112).intl;
     tmp5Result = tmp5(TableRow3, obj11);
   }
   const obj13 = { children: items1 };
   const obj14 = { hasIcons: true, children: items2 };
   items2[2] = tmp5Result;
-  const obj15 = { icon: closure_6(tmp3(7216).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
-  const TableRow4 = tmp3(6113).TableRow;
+  const obj15 = { icon: closure_6(tmp3(7247).XSmallIcon, {}), label: closure_6(Text5, obj16), onPress: onClose };
+  const TableRow4 = tmp3(6144).TableRow;
   obj16 = { variant: "body-md/semibold", children: intl4.string(tmp3(1112).t["ETE/oC"]) };
-  Text5 = tmp3(5603).Text;
+  Text5 = tmp3(5634).Text;
   intl4 = tmp3(1112).intl;
   items2[3] = closure_6(TableRow4, obj15);
   items1[1] = closure_7(TableRowGroup, obj14);

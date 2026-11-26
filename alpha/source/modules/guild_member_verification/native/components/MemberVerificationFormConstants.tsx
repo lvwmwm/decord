@@ -1,12 +1,12 @@
-// Module ID: 7005
-// Function ID: 7006
+// Module ID: 7036
+// Function ID: 7037
 // Name: MemberVerificationFormConstants
-// Dependencies: [575, 1494, 2]
+// Dependencies: [575, 1495, 2]
 // Exports: useBannerHeight
 
-// Module 7005 (MemberVerificationFormConstants)
+// Module 7036 (MemberVerificationFormConstants)
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2 = 0.5625;

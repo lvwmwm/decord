@@ -1,13 +1,13 @@
-// Module ID: 16783
-// Function ID: 16784
+// Module ID: 16834
+// Function ID: 16835
 // Name: GuildRoleSubscriptionCancelSettingScreen
-// Dependencies: [19, 21, 7319, 16784, 2]
+// Dependencies: [19, 21, 7350, 16835, 2]
 // Exports: default
 
-// Module 16783 (GuildRoleSubscriptionCancelSettingScreen)
+// Module 16834 (GuildRoleSubscriptionCancelSettingScreen)
 import Fragment from "Fragment" /* 21 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7319 */;
-import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 16784 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7350 */;
+import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 16835 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

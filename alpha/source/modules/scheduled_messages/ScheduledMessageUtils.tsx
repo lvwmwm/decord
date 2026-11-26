@@ -1,28 +1,28 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9609
+// Function ID: 9610
 // Name: ScheduledMessageUtils
-// Dependencies: [32, 4944, 1386, 1071, 1388, 9554, 3, 8304, 1404, 1255, 504, 2168, 1112, 11, 2108, 6362, 9568, 1254, 2]
+// Dependencies: [32, 4975, 1387, 1071, 1389, 9596, 3, 8346, 1405, 1256, 504, 2169, 1112, 11, 2109, 6393, 9610, 1255, 2]
 // Exports: canSendScheduledMessagesInChannel, convertServerScheduledMessageCreateArgs, convertServerScheduledMessageSend, getDefaultScheduledTime, getEarliestScheduledTime, getLatestScheduledTime, getMessageForState, getPresetScheduledTimes, getScheduledMessagesLimit, getScheduledTimeError, parseContentAndFlagsForSilentMessage, trackScheduledMessageTimePickerOpened, unparseContentAndFlagsForSilentMessage, useCanSendScheduledMessagesInChannel, useScheduledMessagesLimit
 
-// Module 9567 (ScheduledMessageUtils)
+// Module 9609 (ScheduledMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl7 from "intl" /* 1112 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import FlagUtils from "FlagUtils" /* 1404 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
-import _modDef2168 from "module_2168" /* 2168 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6362 */;
-import parseContentForSuppressNotificationsDefault from "parseContentForSuppressNotifications" /* 8304 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9568 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2109 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6393 */;
+import parseContentForSuppressNotificationsDefault from "parseContentForSuppressNotifications" /* 8346 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9610 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import UserStore from "UserStore" /* 1386 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9554 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9596 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const parseContentForSuppressNotifications = tmp(8304);
+const parseContentForSuppressNotifications = tmp(8346);
 ({ AnalyticEvents: metroRequire, MessageFlags: metroImportDefault, Permissions: metroImportAll } = Constants);
 const PremiumTypes = PremiumConstants.PremiumTypes;
 ({ MAX_SCHEDULE_TIME_AFTER_CREATION_SECONDS: c10, MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: unpackModuleId, MAX_SCHEDULED_MESSAGES_PER_USER: closure_12, MAX_SCHEDULED_MESSAGES_PER_USER_WITHOUT_NITRO: map1, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: closure_14 } = ScheduledMessagesConstants);
@@ -119,12 +119,12 @@ export function getPresetScheduledTimes() {
   let tmp6;
   let tmp7;
   let tmp9;
-  const obj = _modDef2168();
+  const obj = _modDef2169();
   const addResult = obj.add(gesture, "seconds");
-  const obj2 = _modDef2168();
+  const obj2 = _modDef2169();
   const startOfResult = obj2.startOf("day");
   const result = startOfResult.set("hours", 9);
-  const obj5 = _modDef2168();
+  const obj5 = _modDef2169();
   const startOfResult1 = obj5.startOf("day");
   const result1 = startOfResult1.set("hours", 13);
   const obj3 = { label: null, value: null };
@@ -161,19 +161,19 @@ export function getPresetScheduledTimes() {
   items[1] = tmp9;
   const obj6 = { label: intl3.string(tmp6(1112).t["+P5MmK"]), value: addResult1.set("hours", 9) };
   intl3 = tmp6(1112).intl;
-  const obj11 = _modDef2168();
+  const obj11 = _modDef2169();
   const startOfResult2 = obj11.startOf("isoWeek");
   items[2] = obj6;
   addResult1 = startOfResult2.add(1, "week");
   return items;
 }
 export function getDefaultScheduledTime() {
-  const obj = _modDef2168();
+  const obj = _modDef2169();
   const startOfResult = obj.startOf("hour");
   const addResult = startOfResult.add(1, "hour");
   const isBefore = addResult.isBefore;
   let addResult1 = addResult;
-  const obj4 = _modDef2168();
+  const obj4 = _modDef2169();
   if (isBefore(obj4.add(gesture, "seconds"))) {
     addResult1 = addResult.add(1, "hour");
   }
@@ -182,20 +182,20 @@ export function getDefaultScheduledTime() {
 export function getScheduledTimeError(isBefore, arg1) {
   let stringResult;
   isBefore = isBefore.isBefore;
-  const obj = _modDef2168();
+  const obj = _modDef2169();
   if (isBefore(obj.add(gesture, "seconds"))) {
     const intl2 = intl7.intl;
     stringResult = intl2.string(intl7.t["w/fgvh"]);
   } else {
     const isAfter = isBefore.isAfter;
-    const obj2 = _modDef2168();
+    const obj2 = _modDef2169();
     const addResult = obj2.add(unpackModuleId, "seconds");
     let minResult = addResult;
     if (null != arg1) {
-      const tmpResult = _modDef2168;
+      const tmpResult = _modDef2169;
       const tmpResult3 = SnowflakeUtilsDefault;
       const tmpResultResult = tmpResult(tmpResult3.extractTimestamp(arg1));
-      const tmpResult4 = _modDef2168;
+      const tmpResult4 = _modDef2169;
       minResult = tmpResult4.min(addResult, tmpResultResult.add(authStore, "seconds"));
     }
     stringResult = null;
@@ -207,19 +207,19 @@ export function getScheduledTimeError(isBefore, arg1) {
   return stringResult;
 }
 export function getEarliestScheduledTime() {
-  const obj = _modDef2168();
+  const obj = _modDef2169();
   return obj.add(gesture, "seconds");
 }
 export function getLatestScheduledTime(arg0) {
-  const obj = _modDef2168();
+  const obj = _modDef2169();
   const addResult = obj.add(unpackModuleId, "seconds");
   if (null == arg0) {
     return addResult;
   } else {
-    const tmpResult = _modDef2168;
+    const tmpResult = _modDef2169;
     const tmpResult3 = SnowflakeUtilsDefault;
     const tmpResultResult = tmpResult(tmpResult3.extractTimestamp(arg0));
-    const tmpResult4 = _modDef2168;
+    const tmpResult4 = _modDef2169;
     return tmpResult4.min(addResult, tmpResultResult.add(authStore, "seconds"));
   }
 }

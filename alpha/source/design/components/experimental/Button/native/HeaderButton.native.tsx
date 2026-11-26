@@ -1,15 +1,15 @@
-// Module ID: 8450
-// Function ID: 8451
+// Module ID: 8492
+// Function ID: 8493
 // Name: Button/HeaderButton
-// Dependencies: [19, 21, 5616, 5603, 5012, 5611, 2]
+// Dependencies: [19, 21, 5647, 5634, 5043, 5642, 2]
 
-// Module 8450 (Button/HeaderButton)
+// Module 8492 (Button/HeaderButton)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import BaseTextButton2 from "BaseTextButton" /* 5611 */;
-import ButtonConstants from "ButtonConstants" /* 5616 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import BaseTextButton2 from "BaseTextButton" /* 5642 */;
+import ButtonConstants from "ButtonConstants" /* 5647 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 class HeaderButton {

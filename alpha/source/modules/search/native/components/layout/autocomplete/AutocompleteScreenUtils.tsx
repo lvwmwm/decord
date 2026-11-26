@@ -1,31 +1,31 @@
-// Module ID: 18990
-// Function ID: 18991
+// Module ID: 19053
+// Function ID: 19054
 // Name: AutocompleteScreenUtils
-// Dependencies: [4924, 4954, 1386, 13248, 8977, 1071, 1112, 8958, 5708, 14678, 11044, 9576, 10594, 7122, 13463, 10596, 12359, 12220, 18991, 13241, 5068, 2]
+// Dependencies: [4955, 4985, 1387, 13300, 9019, 1071, 1112, 9000, 5739, 14731, 11090, 9618, 10639, 7153, 13515, 10641, 12409, 12270, 19054, 13293, 5099, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 18990 (AutocompleteScreenUtils)
+// Module 19053 (AutocompleteScreenUtils)
 import Constants from "Constants" /* 1071 */;
 import intl10 from "intl" /* 1112 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import LinkIcon from "LinkIcon" /* 5708 */;
-import ImageIcon from "ImageIcon" /* 7122 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 8958 */;
-import SearchConstants from "SearchConstants" /* 8977 */;
-import AttachmentIcon from "AttachmentIcon" /* 9576 */;
-import VideoIcon from "VideoIcon" /* 10594 */;
-import StickerIcon from "StickerIcon" /* 10596 */;
-import PollsIcon from "PollsIcon" /* 11044 */;
-import RobotIcon from "RobotIcon" /* 12220 */;
-import UserIcon from "UserIcon" /* 12359 */;
-import SearchUtils from "SearchUtils" /* 13241 */;
-import SoundboardIcon from "SoundboardIcon" /* 13463 */;
-import EmbedIcon from "EmbedIcon" /* 14678 */;
-import WebhookIcon from "WebhookIcon" /* 18991 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
-import SearchQueryStore from "SearchQueryStore" /* 13248 */;
+import UserUtilsDefault from "UserUtils" /* 5099 */;
+import LinkIcon from "LinkIcon" /* 5739 */;
+import ImageIcon from "ImageIcon" /* 7153 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 9000 */;
+import SearchConstants from "SearchConstants" /* 9019 */;
+import AttachmentIcon from "AttachmentIcon" /* 9618 */;
+import VideoIcon from "VideoIcon" /* 10639 */;
+import StickerIcon from "StickerIcon" /* 10641 */;
+import PollsIcon from "PollsIcon" /* 11090 */;
+import RobotIcon from "RobotIcon" /* 12270 */;
+import UserIcon from "UserIcon" /* 12409 */;
+import SearchUtils from "SearchUtils" /* 13293 */;
+import SoundboardIcon from "SoundboardIcon" /* 13515 */;
+import EmbedIcon from "EmbedIcon" /* 14731 */;
+import WebhookIcon from "WebhookIcon" /* 19054 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
+import SearchQueryStore from "SearchQueryStore" /* 13300 */;
 import size from "module_2" /* 2 */;
 
 let set;

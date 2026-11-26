@@ -1,105 +1,106 @@
 // Module ID: 5373
 // Function ID: 5374
-// Dependencies: [32, 5316, 5343, 5360, 5334]
-// Exports: usePanGesture
+// Dependencies: []
+// Exports: containsDuplicates, isComposedGesture, prepareRelations
 
 // Module 5373
-import reanimatedWrapper from "reanimatedWrapper" /* 5316 */;
-import ComposedGestureName from "ComposedGestureName" /* 5334 */;
-import _mod5343 from "module_5343" /* 5343 */;
-import _mod5360 from "module_5360" /* 5360 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+let set;
 
-let tmp3;
-let tmp4;
-function transformOffsetProp(iter, activeOffsetX) {
-  let tmp10;
-  let tmp9;
-  if (undefined !== iter[activeOffsetX]) {
-    const _Array = Array;
-    if (Array.isArray(iter[activeOffsetX])) {
-      const _HermesInternal4 = HermesInternal;
-      iter["" + activeOffsetX + "Start"] = iter[activeOffsetX][0];
-      const _HermesInternal5 = HermesInternal;
-      iter["" + activeOffsetX + "End"] = iter[activeOffsetX][1];
+
+export function isComposedGesture(gesture) {
+  return "handlerTags" in gesture;
+}
+export function prepareRelations(config, handlerTag) {
+  let items;
+  let items1;
+  let items2;
+  const f87881 = (handlerTags) => {
+    if ("handlerTags" in handlerTags) {
+      handlerTags = handlerTags.handlerTags;
     } else {
-      const Reanimated = reanimatedWrapper.Reanimated;
-      let isSharedValueResult;
-      const tmp3 = require;
-      if (Reanimated != null) {
-        isSharedValueResult = Reanimated.isSharedValue(iter);
-      }
-      if (isSharedValueResult) {
-        const tmp3Result = tmp3(5343);
-        const _HermesInternal2 = HermesInternal;
-        [tmp9, tmp10] = tmp3Result.splitSingleOffset(iter[activeOffsetX].value);
-        iter["" + activeOffsetX + "Start"] = tmp9;
-        const _HermesInternal3 = HermesInternal;
-        iter["" + activeOffsetX + "End"] = tmp10;
-        _slicedToArray(tmp3Result.splitSingleOffset(iter[activeOffsetX].value), 2);
-      } else {
-        let str = "End";
-        if (iter[activeOffsetX] < 0) {
-          str = "Start";
+      handlerTags = [handlerTags.handlerTag];
+    }
+    return handlerTags;
+  };
+  const simultaneousWith1 = config.simultaneousWith;
+  let closure_0 = handlerTag;
+  if (simultaneousWith1) {
+    let tmp = globalThis;
+    const _Array = Array;
+    if (Array.isArray(simultaneousWith1)) {
+      const item = simultaneousWith1.forEach(function processSingleGesture(externalSimultaneousHandlers) {
+        let prop;
+        if ("handlerTags" in externalSimultaneousHandlers) {
+          prop = externalSimultaneousHandlers.externalSimultaneousHandlers;
+        } else {
+          prop = externalSimultaneousHandlers.gestureRelations.simultaneousHandlers;
         }
-        const _HermesInternal = HermesInternal;
-        iter["" + activeOffsetX + str] = iter[activeOffsetX];
+        const tmp = handlerTag;
+        if (!prop.includes(handlerTag)) {
+          prop.push(tmp);
+        }
+      });
+    } else {
+      let prop;
+      if ("handlerTags" in simultaneousWith1) {
+        prop = simultaneousWith1.externalSimultaneousHandlers;
+      } else {
+        prop = simultaneousWith1.gestureRelations.simultaneousHandlers;
+      }
+      if (!prop.includes(handlerTag)) {
+        prop.push(handlerTag);
       }
     }
-    delete tmp[tmp2];
   }
-}
-function transformPanProps(iter) {
-  transformOffsetProp(iter, "activeOffsetY");
-  transformOffsetProp(iter, "failOffsetX");
-  transformOffsetProp(iter, "failOffsetY");
-  transformOffsetProp(iter, "activeOffsetX");
-  const obj = _mod5343;
-  iter.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  iter.fillInDefaultValues = fillInDefaultValues;
-  return iter;
-}
-const items = [["minDistance", "minDist"], ["averageTouches", "avgTouches"]];
-const map = new Map(items);
-const items1 = [{ code: "(function diffCalculator_Pnpm_usePanGestureTs1(current,previous){return{changeX:previous?current.translationX-previous.translationX:current.translationX,changeY:previous?current.translationY-previous.translationY:current.translationY};})" }];
-[tmp3] = items1;
-function diffCalculator(translationX, translationX2) {
-  let diff;
-  let diff1;
-  translationX = translationX.translationX;
-  if (translationX2) {
-    diff = translationX - translationX2.translationX;
+  const simultaneousWith = config.simultaneousWith;
+  if (simultaneousWith) {
+    let flatMapResult;
+    const _Array2 = Array;
+    if (Array.isArray(simultaneousWith)) {
+      flatMapResult = simultaneousWith.flatMap(f87881);
+    } else if ("handlerTags" in simultaneousWith) {
+      flatMapResult = simultaneousWith.handlerTags;
+    } else {
+      flatMapResult = [simultaneousWith.handlerTag];
+    }
+    items = flatMapResult;
   } else {
-    diff = translationX;
+    items = [];
   }
-  const translationY = translationX.translationY;
-  const obj = { changeX: diff, changeY: diff1 };
-  if (translationX2) {
-    diff1 = translationY - translationX2.translationY;
+  const requireToFail = config.requireToFail;
+  const obj = { simultaneousHandlers: items, waitFor: items1, blocksHandlers: items2 };
+  if (requireToFail) {
+    let flatMapResult1;
+    const _Array3 = Array;
+    if (Array.isArray(requireToFail)) {
+      flatMapResult1 = requireToFail.flatMap(f87881);
+    } else if ("handlerTags" in requireToFail) {
+      flatMapResult1 = requireToFail.handlerTags;
+    } else {
+      flatMapResult1 = [requireToFail.handlerTag];
+    }
+    items1 = flatMapResult1;
   } else {
-    diff1 = translationY;
+    items1 = [];
+  }
+  const block = config.block;
+  if (block) {
+    let flatMapResult2;
+    const _Array4 = Array;
+    if (Array.isArray(block)) {
+      flatMapResult2 = block.flatMap(f87881);
+    } else if ("handlerTags" in block) {
+      flatMapResult2 = block.handlerTags;
+    } else {
+      flatMapResult2 = [block.handlerTag];
+    }
+    items2 = flatMapResult2;
+  } else {
+    items2 = [];
   }
   return obj;
 }
-diffCalculator.__workletHash = 15159965948275;
-diffCalculator.__initData = tmp3;
-const items2 = [{ code: "(function fillInDefaultValues_Pnpm_usePanGestureTs2(event){event.changeX=0;event.changeY=0;})" }];
-[tmp4] = items2;
-function fillInDefaultValues(arg0) {
-  arg0.changeX = 0;
-  arg0.changeY = 0;
-}
-fillInDefaultValues.__workletHash = 1036941275160;
-fillInDefaultValues.__initData = tmp4;
-let closure_8 = {};
-
-export function usePanGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_8;
-  }
-  const obj = _mod5343;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPanProps);
-  const obj2 = _mod5360;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pan, clonedAndRemappedConfig);
+export function containsDuplicates(flatMapResult1) {
+  set = new Set(flatMapResult1);
+  return set.size !== flatMapResult1.length;
 }

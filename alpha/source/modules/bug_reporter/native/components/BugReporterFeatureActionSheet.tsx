@@ -1,19 +1,19 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 10728
+// Function ID: 10729
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 5012, 575, 5603, 7222, 10647, 5226, 5587, 12, 6957, 7374, 10684, 5240, 7476, 1112, 7375, 7380, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 7253, 10692, 5257, 5618, 12, 6988, 7405, 10729, 5271, 7507, 1112, 7406, 7411, 2]
 // Exports: default
 
-// Module 10683 (BugReporterFeatureActionSheet)
+// Module 10728 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import Text_Text from "Text/Text" /* 5603 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import Text_Text from "Text/Text" /* 5634 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -61,11 +61,11 @@ let closure_10 = react.memo(function BugReporterFeature(item) {
       obj.hideActionSheet();
     }
   };
-  const TableRadioRow = item(7222).TableRadioRow;
-  obj2 = item(10647);
-  const obj3 = item(10647);
+  const TableRadioRow = item(7253).TableRadioRow;
+  obj2 = item(10692);
+  const obj3 = item(10692);
   featureId = obj3.getFeatureId(item);
-  obj4 = item(10647);
+  obj4 = item(10692);
   return closure_6(TableRadioRow, obj);
 });
 const result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

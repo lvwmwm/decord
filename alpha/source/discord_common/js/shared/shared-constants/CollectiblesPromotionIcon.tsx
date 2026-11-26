@@ -1,9 +1,9 @@
-// Module ID: 11083
-// Function ID: 11084
+// Module ID: 11129
+// Function ID: 11130
 // Name: CollectiblesPromotionIcon
 // Dependencies: [2]
 
-// Module 11083 (CollectiblesPromotionIcon)
+// Module 11129 (CollectiblesPromotionIcon)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesPromotionIcon.tsx");

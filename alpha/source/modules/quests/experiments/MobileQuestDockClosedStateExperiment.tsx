@@ -1,10 +1,10 @@
-// Module ID: 16634
-// Function ID: 16635
+// Module ID: 16685
+// Function ID: 16686
 // Name: MobileQuestDockClosedStateExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 16634 (MobileQuestDockClosedStateExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 16685 (MobileQuestDockClosedStateExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-11-mobile-quest-bar-closed-state", kind: "user", defaultConfig: { autoCloseEnabled: true }, variations: { 0: { autoCloseEnabled: true }, 1: { autoCloseEnabled: false } } };

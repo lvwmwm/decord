@@ -1,17 +1,17 @@
-// Module ID: 19613
-// Function ID: 19614
+// Module ID: 19676
+// Function ID: 19677
 // Name: ChannelCallManager
-// Dependencies: [10257, 6909, 10554, 5069, 5660, 5823, 10256, 7444, 2]
+// Dependencies: [10299, 6940, 10599, 5100, 5691, 5854, 10298, 7475, 2]
 
-// Module 19613 (ChannelCallManager)
-import SoundpackStore from "SoundpackStore" /* 10257 */;
-import CallStore from "CallStore" /* 6909 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 10554 */;
-import StreamerModeStore from "StreamerModeStore" /* 5069 */;
-import VoiceStateStore from "VoiceStateStore" /* 5660 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5823 */;
-import SoundUtils from "SoundUtils" /* 10256 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+// Module 19676 (ChannelCallManager)
+import SoundpackStore from "SoundpackStore" /* 10299 */;
+import CallStore from "CallStore" /* 6940 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 10599 */;
+import StreamerModeStore from "StreamerModeStore" /* 5100 */;
+import VoiceStateStore from "VoiceStateStore" /* 5691 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5854 */;
+import SoundUtils from "SoundUtils" /* 10298 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let currentClientVoiceChannelId, map;

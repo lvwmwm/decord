@@ -1,19 +1,19 @@
-// Module ID: 13081
-// Function ID: 13082
+// Module ID: 13133
+// Function ID: 13134
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 5012, 1628, 13012, 5179, 1186, 13082, 1112, 7375, 2]
+// Dependencies: [19, 17, 21, 5043, 1629, 13064, 5210, 1186, 13134, 1112, 7406, 2]
 // Exports: AppLauncherList, AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 13081 (AppLauncherList)
+// Module 13133 (AppLauncherList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import mergeProps from "mergeProps" /* 5179 */;
-import SearchBar2 from "SearchBar" /* 7375 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13082 */;
+import mergeProps from "mergeProps" /* 5210 */;
+import SearchBar2 from "SearchBar" /* 7406 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13134 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -25,8 +25,8 @@ export function AppLauncherList(ref) {
   ref = ref.ref;
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   let appLauncherFlashListProps;
-  const bottom = appLauncherFlashListProps(1628)().bottom;
-  let obj = ref(13012);
+  const bottom = appLauncherFlashListProps(1629)().bottom;
+  let obj = ref(13064);
   appLauncherFlashListProps = obj.useAppLauncherFlashListProps();
   const items = [appLauncherFlashListProps.scrollerRef, ref];
   const memo = react.useMemo(() => {
@@ -34,7 +34,7 @@ export function AppLauncherList(ref) {
     return obj.mergeRefs(appLauncherFlashListProps.scrollerRef, ref);
   }, items);
   const items1 = [{ paddingBottom: bottom }, merged.contentContainerStyle];
-  appLauncherFlashListProps(13012);
+  appLauncherFlashListProps(13064);
   const merged1 = Object.assign(merged);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
   return <tmp4 contentContainerStyle={items1} scrollIndicatorInsets={{ bottom }} ref={memo} />;

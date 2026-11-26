@@ -1,18 +1,18 @@
-// Module ID: 18164
-// Function ID: 18165
+// Module ID: 18223
+// Function ID: 18224
 // Name: VoicePanelDockBadgedIcon
-// Dependencies: [19, 17, 11757, 21, 1186, 18058, 5012, 5073, 5222, 1706, 1653, 9378, 2]
+// Dependencies: [19, 17, 11805, 21, 1186, 18117, 5043, 5104, 5253, 1707, 1654, 9420, 2]
 // Exports: default
 
-// Module 18164 (VoicePanelDockBadgedIcon)
+// Module 18223 (VoicePanelDockBadgedIcon)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1186 */;
-import native2 from "native" /* 5073 */;
+import native2 from "native" /* 5104 */;
 import react from "react" /* 19 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11757 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11805 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18058 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18117 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, tmp2;
@@ -25,8 +25,8 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const _mod1706 = tmp(1706);
-const timing_timing = tmp(5222);
+const _mod1707 = tmp(1707);
+const timing_timing = tmp(5253);
 function StreamBadge(progress) {
   let items1;
   let tmp3Result;
@@ -46,7 +46,7 @@ function StreamBadge(progress) {
       const items = [closure_14, , ];
       const withTiming = timing_timing.withTiming;
       const tmpResult = timing_timing;
-      items[1] = _mod1706.scheduleOnRN;
+      items[1] = _mod1707.scheduleOnRN;
       items[2] = cleanUp;
       let c0;
       let c1;
@@ -134,19 +134,19 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   const children = streaming.children;
   const tmp = closure_13();
   let num = 0;
-  const useSharedValue = sharedValue(1653).useSharedValue;
-  const tmp4 = sharedValue(1653);
+  const useSharedValue = sharedValue(1654).useSharedValue;
+  const tmp4 = sharedValue(1654);
   if (streaming) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
   let items = [closure_16, , , , , ];
-  const useAnimatedStyle = tmp2(1653).useAnimatedStyle;
-  sharedValue(1653);
-  items[1] = sharedValue(1653).interpolate;
+  const useAnimatedStyle = tmp2(1654).useAnimatedStyle;
+  sharedValue(1654);
+  items[1] = sharedValue(1654).interpolate;
   items[2] = sharedValue;
   items[3] = 0.7;
-  items[4] = sharedValue(1653).Extrapolation;
+  items[4] = sharedValue(1654).Extrapolation;
   items[5] = 0.8;
   let c0;
   let c1;
@@ -173,14 +173,14 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   VoicePanelDockBadgedIconTsx2.__initData = tmp7;
   animatedStyle = useAnimatedStyle(VoicePanelDockBadgedIconTsx2);
   const items2 = [closure_17, sharedValue, , , , , , , , , ];
-  const useAnimatedProps = tmp2(1653).useAnimatedProps;
-  sharedValue(1653);
-  items2[2] = sharedValue(1653).interpolate;
+  const useAnimatedProps = tmp2(1654).useAnimatedProps;
+  sharedValue(1654);
+  items2[2] = sharedValue(1654).interpolate;
   items2[3] = 0.7;
-  items2[4] = sharedValue(1653).Extrapolation;
+  items2[4] = sharedValue(1654).Extrapolation;
   items2[5] = 0.8;
   items2[6] = sum2;
-  items2[7] = sharedValue(9378).CutoutShape;
+  items2[7] = sharedValue(9420).CutoutShape;
   items2[8] = closure_10;
   items2[9] = closure_11;
   items2[10] = closure_9;
@@ -225,8 +225,8 @@ export default function VoicePanelDockBadgedIcon(streaming) {
     return hasOwnProperty(StreamBadge, obj, arg0);
   }, items4);
   let obj = { style: tmp.clip, animatedProps, children };
-  const items5 = [closure_5(tmp2(9378).ClipViewAnimated, obj), ];
-  const TransitionItem = tmp2(5073).TransitionItem;
+  const items5 = [closure_5(tmp2(9420).ClipViewAnimated, obj), ];
+  const TransitionItem = tmp2(5104).TransitionItem;
   let obj2 = { children: items5 };
   items5[1] = closure_5(TransitionItem, { item: streaming, renderItem: callback });
   return closure_7(RoundedRect, obj2);

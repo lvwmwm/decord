@@ -1,9 +1,9 @@
-// Module ID: 19899
-// Function ID: 19900
+// Module ID: 19963
+// Function ID: 19964
 // Name: GuildFeedItemTypes
 // Dependencies: [2]
 
-// Module 19899 (GuildFeedItemTypes)
+// Module 19963 (GuildFeedItemTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["conversation", "forum_post", "message", "message_bundle"]) };

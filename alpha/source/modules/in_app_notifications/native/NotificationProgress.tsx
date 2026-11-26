@@ -1,17 +1,17 @@
-// Module ID: 10633
-// Function ID: 10634
+// Module ID: 10678
+// Function ID: 10679
 // Name: NotificationProgress
-// Dependencies: [32, 19, 17, 21, 5012, 575, 1653, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 2]
 // Exports: default
 
-// Module 10633 (NotificationProgress)
+// Module 10678 (NotificationProgress)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
+import _mod1654 from "module_1654" /* 1654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -35,7 +35,7 @@ export default function NotificationProgress(percent) {
   [tmp3, c0] = react.useState(0);
   _slicedToArray(react.useState(0), 2);
   const callback = react.useCallback((nativeEvent) => _undefined(nativeEvent.nativeEvent.layout.width), []);
-  let obj = _mod1653;
+  let obj = _mod1654;
   let items = [closure_8, percent, tmp3];
   c0 = undefined;
   let c1;

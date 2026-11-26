@@ -1,12 +1,12 @@
-// Module ID: 7321
-// Function ID: 7322
+// Module ID: 7352
+// Function ID: 7353
 // Name: SettingSearchSessionAnalyticsManager
-// Dependencies: [1071, 1268, 1255, 2]
+// Dependencies: [1071, 1269, 1256, 2]
 
-// Module 7321 (SettingSearchSessionAnalyticsManager)
+// Module 7352 (SettingSearchSessionAnalyticsManager)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import v1 from "v1" /* 1268 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import v1 from "v1" /* 1269 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

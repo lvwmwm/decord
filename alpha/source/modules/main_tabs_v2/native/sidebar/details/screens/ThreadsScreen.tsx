@@ -1,20 +1,20 @@
-// Module ID: 18971
-// Function ID: 18972
+// Module ID: 19034
+// Function ID: 19035
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 4861, 1071, 1111, 21, 5012, 575, 7597, 5587, 11636, 6095, 18972, 563, 1501, 2]
+// Dependencies: [19, 17, 4892, 1071, 1111, 21, 5043, 575, 7628, 5618, 11684, 6126, 19035, 563, 1502, 2]
 
-// Module 18971 (ThreadsScreen)
+// Module 19034 (ThreadsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5587 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 11636 */;
-import ThreadListDefault from "ThreadList" /* 18972 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5618 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 11684 */;
+import ThreadListDefault from "ThreadList" /* 19035 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import createStyles from "createStyles" /* 5012 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -23,7 +23,7 @@ function ThreadsScreen(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(7597);
+  let obj = channel(7628);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function SearchTabsThreadScreen(searchContext) {
 });
 const memoResult1 = react.memo(function ConnectedThreadsScreen() {
   let channelId;
-  const obj = channelId(1501);
+  const obj = channelId(1502);
   channelId = obj.useRoute().params.channelId;
   const items = [ChannelStore];
   const obj2 = channelId(563);

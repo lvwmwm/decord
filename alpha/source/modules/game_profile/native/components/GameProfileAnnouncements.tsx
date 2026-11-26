@@ -1,29 +1,29 @@
-// Module ID: 14141
-// Function ID: 14142
+// Module ID: 14193
+// Function ID: 14194
 // Name: GameProfileAnnouncements
-// Dependencies: [19, 17, 8749, 21, 1112, 5012, 575, 14136, 7278, 14135, 14142, 14143, 5603, 5699, 14144, 14146, 4834, 9662, 6348, 14163, 8712, 8707, 14166, 14115, 2]
+// Dependencies: [19, 17, 8791, 21, 1112, 5043, 575, 14188, 7309, 14187, 14194, 14195, 5634, 5730, 14196, 14198, 4865, 9704, 6379, 14215, 8754, 8749, 14218, 14167, 2]
 // Exports: default
 
-// Module 14141 (GameProfileAnnouncements)
+// Module 14193 (GameProfileAnnouncements)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import DateUtils from "DateUtils" /* 4834 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7278 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8707 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8712 */;
-import GameProfileConstants from "GameProfileConstants" /* 8749 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 14136 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 14142 */;
-import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 14143 */;
-import ImageWithPlaceholder from "ImageWithPlaceholder" /* 14144 */;
-import AnnouncementMarkupDefault from "AnnouncementMarkup" /* 14146 */;
-import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 14166 */;
+import DateUtils from "DateUtils" /* 4865 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7309 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8749 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8754 */;
+import GameProfileConstants from "GameProfileConstants" /* 8791 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 14188 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 14194 */;
+import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 14195 */;
+import ImageWithPlaceholder from "ImageWithPlaceholder" /* 14196 */;
+import AnnouncementMarkupDefault from "AnnouncementMarkup" /* 14198 */;
+import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 14218 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj10;
 let obj11;
 let obj12;
 let obj13;
-let obj15;
+let obj14;
 let obj16;
 let obj2;
 let obj3;
@@ -65,6 +65,7 @@ function EmbedAnnouncementCard(message) {
   let items6;
   let numberFormat;
   let obj12;
+  let obj14;
   let obj16;
   let obj19;
   let obj4;
@@ -153,7 +154,7 @@ function EmbedAnnouncementCard(message) {
     items3[2] = tmp8Result8;
     let tmp8Result9 = message.body.length > 0;
     if (tmp8Result9) {
-      const obj15 = { variant: "body-sm/medium", color: "text-default", lineClamp: 3, children: metroImportDefault(AnnouncementMarkupDefault, obj16) };
+      obj15 = { variant: "body-sm/medium", color: "text-default", lineClamp: 3, children: metroImportDefault(AnnouncementMarkupDefault, obj16) };
       const Text2 = Text_Text.Text;
       obj16 = { content: message.body, guildId, channelId };
       tmp8Result9 = tmp8(Text2, obj15);
@@ -187,13 +188,13 @@ function EmbedAnnouncementCard(message) {
     if (tmp10Result2) {
       const obj21 = { style: tmp.reactionInfo, children: items6 };
       const obj22 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const ReactionIcon = tmp35(9662).ReactionIcon;
+      const ReactionIcon = tmp35(9704).ReactionIcon;
       items6 = [metroImportDefault(ReactionIcon, obj22), ];
-      let tmp45 = null != obj14;
-      const Text4 = tmp35(5603).Text;
+      let tmp45 = null != obj15;
+      const Text4 = tmp35(5634).Text;
       const reactionCount = message.reactionCount;
       if (tmp45) {
-        tmp45 = obj14.locale === tmp35(1112).intl.currentLocale;
+        tmp45 = obj15.locale === tmp35(1112).intl.currentLocale;
       }
       if (!tmp45) {
         const _Intl = Intl;
@@ -201,10 +202,10 @@ function EmbedAnnouncementCard(message) {
         const self4 = this;
         const obj23 = { locale: intl3.intl.currentLocale, format: numberFormat };
         numberFormat = new Intl.NumberFormat(tmp35(1112).intl.currentLocale);
-        obj14 = obj23;
+        obj15 = obj23;
       }
       const obj24 = { variant: "body-xs/medium", color: "text-muted", children: format.format(reactionCount) };
-      format = obj14.format;
+      format = obj15.format;
       items6[1] = metroImportDefault(Text4, obj24);
       tmp10Result2 = tmp10(tmp11, obj21);
     }
@@ -215,6 +216,7 @@ function EmbedAnnouncementCard(message) {
   }
 }
 function MessageAnnouncementCard(message) {
+  let attachmentFilenames;
   let channelId;
   let closure_129_1;
   let date;
@@ -281,7 +283,7 @@ function MessageAnnouncementCard(message) {
     obj7 = { content: message.title, guildId, channelId };
     tmp15 = metroImportDefault(Text, obj6);
   }
-  items1 = [tmp15, , ];
+  items1 = [tmp15, , , ];
   let tmp20 = message.body.length > 0;
   if (tmp20) {
     const obj8 = { variant: "body-sm/medium", color: "text-default", lineClamp: 3, children: metroImportDefault(AnnouncementMarkupDefault, obj9) };
@@ -290,39 +292,47 @@ function MessageAnnouncementCard(message) {
     tmp20 = metroImportDefault(Text2, obj8);
   }
   items1[1] = tmp20;
-  const obj10 = { style: tmp.metadataRow, children: items2 };
-  const obj11 = { variant: "body-xs/medium", color: "text-muted", children: dateFormat(date, "LL") };
-  const Text3 = Text_Text.Text;
+  let tmp25 = null != message.attachmentFilenames && message.attachmentFilenames.length > 0;
+  if (tmp25) {
+    const obj10 = { variant: "body-sm/medium", color: "text-default", lineClamp: 3, children: attachmentFilenames.join(", ") };
+    attachmentFilenames = message.attachmentFilenames;
+    const Text3 = Text_Text.Text;
+    tmp25 = metroImportDefault(Text3, obj10);
+  }
+  items1[2] = tmp25;
+  const obj11 = { style: tmp.metadataRow, children: items2 };
+  const obj12 = { variant: "body-xs/medium", color: "text-muted", children: dateFormat(date, "LL") };
+  const Text4 = Text_Text.Text;
   dateFormat = DateUtils.dateFormat;
   DateUtils;
   date = new Date(message.timestamp);
-  items2 = [metroImportDefault(Text3, obj11), ];
+  items2 = [metroImportDefault(Text4, obj12), ];
   let tmp7Result = message.reactionCount > 0;
   if (tmp7Result) {
-    const obj12 = { style: tmp.reactionInfo, children: items3 };
-    const obj13 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-    const ReactionIcon = tmp26(9662).ReactionIcon;
-    items3 = [metroImportDefault(ReactionIcon, obj13), ];
-    let tmp33 = null != obj14;
-    const Text4 = tmp26(5603).Text;
+    const obj13 = { style: tmp.reactionInfo, children: items3 };
+    const obj14 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
+    const ReactionIcon = tmp30(9704).ReactionIcon;
+    items3 = [metroImportDefault(ReactionIcon, obj14), ];
+    let tmp37 = null != obj15;
+    const Text5 = tmp30(5634).Text;
     const reactionCount = message.reactionCount;
-    if (tmp33) {
-      tmp33 = obj14.locale === tmp26(1112).intl.currentLocale;
+    if (tmp37) {
+      tmp37 = obj15.locale === tmp30(1112).intl.currentLocale;
     }
-    if (!tmp33) {
-      obj14 = { locale: intl3.intl.currentLocale, format: numberFormat };
+    if (!tmp37) {
+      obj15 = { locale: intl3.intl.currentLocale, format: numberFormat };
       const _Intl = Intl;
       const self = this;
       const self2 = this;
-      numberFormat = new Intl.NumberFormat(tmp26(1112).intl.currentLocale);
+      numberFormat = new Intl.NumberFormat(tmp30(1112).intl.currentLocale);
     }
-    const obj15 = { variant: "body-xs/medium", color: "text-muted", children: format.format(reactionCount) };
-    format = obj14.format;
-    items3[1] = metroImportDefault(Text4, obj15);
-    tmp7Result = tmp7(tmp14, obj12);
+    const obj16 = { variant: "body-xs/medium", color: "text-muted", children: format.format(reactionCount) };
+    format = obj15.format;
+    items3[1] = metroImportDefault(Text5, obj16);
+    tmp7Result = tmp7(tmp14, obj13);
   }
   items2[1] = tmp7Result;
-  items1[2] = metroImportAll(React3, obj10);
+  items1[3] = metroImportAll(React3, obj11);
   items[1] = metroImportAll(React3, obj5);
   return metroImportAll(tmp8, obj2);
 }
@@ -362,7 +372,7 @@ function PollAnnouncementCard(message) {
     };
     obj3 = { style: tmp.cardBody, children: items };
     const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: poll.question.text };
-    items = [closure_7(message(5603).Text, obj4), , ];
+    items = [closure_7(message(5634).Text, obj4), , ];
     const obj5 = { style: tmp.pollAnswers, children: items1 };
     items1 = [
       substr.map((poll_media) => {
@@ -383,7 +393,7 @@ function PollAnnouncementCard(message) {
     const tmp8 = closure_5;
     if (tmp7Result) {
       let obj = { variant: "body-xs/medium", color: "text-muted", style: tmp.pollMoreOptions, children: intl.format(message(1112).t["mv/nIa"], obj6) };
-      let Text = tmp11(5603).Text;
+      let Text = tmp11(5634).Text;
       intl = tmp11(1112).intl;
       obj6 = { count: diff };
       tmp7Result = tmp7(Text, obj);
@@ -392,7 +402,7 @@ function PollAnnouncementCard(message) {
     items[1] = closure_8(closure_4, obj5);
     const obj7 = { style: tmp.metadataRow, children: closure_7(Text2, obj8) };
     obj8 = { variant: "body-xs/medium", color: "text-muted", children: format(t0FTsH, obj9) };
-    Text2 = tmp11(5603).Text;
+    Text2 = tmp11(5634).Text;
     const intl2 = tmp11(1112).intl;
     format = intl2.format;
     const _Date = Date;
@@ -401,7 +411,7 @@ function PollAnnouncementCard(message) {
     obj9 = { createdAt: date, expiryLabel: tmp11Result.getPollExpiryLabel(poll) };
     t0FTsH = tmp11(1112).t.t0FTsH;
     date = new Date(message.timestamp);
-    tmp11Result = message(14143);
+    tmp11Result = message(14195);
     items[2] = closure_7(closure_4, obj7);
     return closure_7(tmp8, obj2);
   }
@@ -409,7 +419,7 @@ function PollAnnouncementCard(message) {
 ({ View: closure_4, Pressable: hasOwnProperty } = react_native);
 const MAX_VISIBLE_ANNOUNCEMENTS = GameProfileConstants.MAX_VISIBLE_ANNOUNCEMENTS;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let obj14 = null;
+let obj15 = null;
 let createStyles = createStyles_mod;
 let obj = { smallCardsScroller: obj2, skeletonCardsScroller: obj3, smallCardsContainer: obj4, skeletonCardsContainer: obj5, card: obj6, cardBody: obj7, smallCardMedia: { height: 120, overflow: "hidden", flexShrink: 0 }, mediaImage: { width: "100%", height: "100%", resizeMode: "cover" }, metadataRow: obj8, reactionInfo: obj9, embedContentArea: obj10, embedAuthorRow: obj11, embedAuthorIcon: size, embedProviderIcon: { width: 16, height: 16 }, embedMedia: obj12, pollAnswers: obj13, pollAnswerOption: obj14, pollMoreOptions: obj15, skeletonCard: { height: 282 }, skeletonCardLarge: { height: 264 }, skeletonAnimationRoot: { flex: 1 }, skeletonCardImage: { width: "100%" }, skeletonCardBody: obj16, skeletonCardContent: size1, skeletonCardMetadata: size2 };
 obj2 = { marginHorizontal: -nativeDefault.space.PX_16, overflow: "visible" };

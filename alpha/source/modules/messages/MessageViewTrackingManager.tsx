@@ -1,16 +1,16 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11981
+// Function ID: 11982
 // Name: MessageViewTrackingManager
-// Dependencies: [1071, 1263, 6349, 1254, 7444, 1454, 1255, 2]
+// Dependencies: [1071, 1264, 6380, 1255, 7475, 1455, 1256, 2]
 
-// Module 11933 (MessageViewTrackingManager)
+// Module 11981 (MessageViewTrackingManager)
 import Constants from "Constants" /* 1071 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import LRUCacheDefault from "LRUCache" /* 1454 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import LRUCacheDefault from "LRUCache" /* 1455 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let set;

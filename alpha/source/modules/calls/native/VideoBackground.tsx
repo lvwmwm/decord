@@ -1,20 +1,20 @@
-// Module ID: 9470
-// Function ID: 9471
+// Module ID: 9512
+// Function ID: 9513
 // Name: VideoBackground
-// Dependencies: [32, 19, 17, 1071, 21, 5012, 12, 9471, 9472, 5009, 575, 2023, 9473, 1186, 5567, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5043, 12, 9513, 9514, 5040, 575, 2024, 9515, 1186, 5598, 2]
 // Exports: useDominantColorFromImage
 
-// Module 9470 (VideoBackground)
+// Module 9512 (VideoBackground)
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
-import react_nativeDefault from "react-native" /* 2023 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 9472 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 9473 */;
+import react_nativeDefault from "react-native" /* 2024 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 9514 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 9515 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp6;
-const LinearGradientDefault = tmp6(5567);
+const LinearGradientDefault = tmp6(5598);
 function useDominantRGBFromImage(arg0, arg1) {
   let closure_0;
   let closure_2;
@@ -40,13 +40,13 @@ function useDominantRGBFromImage(arg0, arg1) {
     tmp = first;
   }
   let tmp3 = first;
-  const tmp5 = first(9471)();
+  const tmp5 = first(9513)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
   if (null != arg0) {
-    hexToRgbResult = tmp3(9472).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(9514).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");

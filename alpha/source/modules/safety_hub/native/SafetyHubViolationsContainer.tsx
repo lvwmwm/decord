@@ -1,29 +1,29 @@
-// Module ID: 16199
-// Function ID: 16200
+// Module ID: 16250
+// Function ID: 16251
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 7878, 7852, 1071, 21, 5012, 575, 12490, 7908, 5603, 1112, 14003, 9774, 7851, 11, 16200, 7853, 6099, 12488, 2119, 12493, 504, 1255, 12491, 2]
+// Dependencies: [32, 19, 17, 7912, 7886, 1071, 21, 5043, 575, 12539, 7942, 5634, 1112, 14055, 9816, 7885, 11, 16251, 7887, 6130, 12537, 2120, 12542, 504, 1256, 12540, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 16199 (SafetyHubViolationsContainer)
+// Module 16250 (SafetyHubViolationsContainer)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7851 */;
-import SafetyHubModels from "SafetyHubModels" /* 7853 */;
-import WarningIcon2 from "WarningIcon" /* 7908 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 12490 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12491 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7885 */;
+import SafetyHubModels from "SafetyHubModels" /* 7887 */;
+import WarningIcon2 from "WarningIcon" /* 7942 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 12539 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 12540 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 7878 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7852 */;
+import SafetyHubStore from "SafetyHubStore" /* 7912 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7886 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -68,7 +68,7 @@ function SafetyHubViolationsHeader(count) {
   obj3 = { color: "active" === status ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_MUTED, size: "xs" };
   items = [unpackModuleId(metroRequire, obj2), , ];
   const obj4 = { style: tmp.headerTextContainer, children: items1 };
-  const Text = tmp7(5603).Text;
+  const Text = tmp7(5634).Text;
   const intl = tmp7(1112).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp7(1112).t;
@@ -82,7 +82,7 @@ function SafetyHubViolationsHeader(count) {
     formatToPlainStringResult = formatToPlainString(fZAHBT, obj6);
   }
   items1 = [unpackModuleId(Text, { variant: "heading-xs/semibold", children: formatToPlainStringResult }), ];
-  const Text2 = tmp7(5603).Text;
+  const Text2 = tmp7(5634).Text;
   const intl2 = tmp7(1112).intl;
   const string = intl2.string;
   const t2 = tmp7(1112).t;
@@ -94,9 +94,9 @@ function SafetyHubViolationsHeader(count) {
   items1[1] = unpackModuleId(Text2, { variant: "footnote/normal", color: "text-muted", children: stringResult });
   items[1] = authStore2(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(14003).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(14055).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(9774).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(9816).ChevronSmallDownIcon;
   }
   const obj7 = { size: "md", style: tmp.chevron };
   items[2] = unpackModuleId(ChevronSmallDownIcon, obj7);
@@ -226,7 +226,7 @@ function ClassificationDetail(classification) {
     onPress() {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { classificationId: id, source: metroImportAll.StandingTab };
-      obj.pushLazy(asyncRequire(12488, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(12537, dependencyMap.paths), obj2);
     },
     children: tmp12(closure_6, obj5)
   };
@@ -255,7 +255,7 @@ class SafetyHubViolationsContainer {
     let obj11;
     let obj9;
     let status;
-    const f109612 = (classification) => {
+    const f109923 = (classification) => {
       const obj = { classification };
       return closure_1_11(ClassificationDetail, obj, classification.id);
     };
@@ -270,7 +270,7 @@ class SafetyHubViolationsContainer {
     const tmp4 = first1(react.useState(3), 2);
     first1 = tmp4[0];
     react = tmp4[1];
-    let obj = classifications(12493);
+    let obj = classifications(12542);
     const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
     const items = [memo];
     const obj2 = classifications(504);
@@ -305,9 +305,9 @@ class SafetyHubViolationsContainer {
     items3[0] = closure_11(SafetyHubViolationsHeader, obj4);
     if (opened) {
       const obj5 = { style: tmp.separator };
-      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f109612), , , ];
+      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f109923), , , ];
       let tmp11Result = memo.length < classifications.length;
-      memo.length > 0 && memo.map(f109612);
+      memo.length > 0 && memo.map(f109923);
       if (tmp11Result) {
         const obj6 = { children: items5 };
         const obj7 = { style: tmp.separator };
@@ -321,7 +321,7 @@ class SafetyHubViolationsContainer {
           children: closure_11(Text, obj10)
         };
         obj10 = { variant: "heading-xs/semibold", children: intl.format(classifications(1112).t["9Ml56H"], obj11) };
-        Text = tmp6(5603).Text;
+        Text = tmp6(5634).Text;
         intl = tmp6(1112).intl;
         obj11 = { nextPageSize: num };
         items5[1] = closure_11(stateFromStores, obj8);

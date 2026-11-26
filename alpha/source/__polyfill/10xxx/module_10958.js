@@ -1,71 +1,111 @@
 // Module ID: 10958
 // Function ID: 10959
-// Dependencies: [41, 42, 93, 95, 98, 10851]
+// Dependencies: [10875, 10882, 10884, 10908, 10959, 10961, 10962, 10963, 10964, 10965, 10966, 10915]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10958
-import _mod10851 from "module_10851" /* 10851 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10908 from "module_10908" /* 10908 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10915 */;
+import _mod10959 from "module_10959" /* 10959 */;
+import _mod10961 from "module_10961" /* 10961 */;
+import _mod10962 from "module_10962" /* 10962 */;
+import _mod10963 from "module_10963" /* 10963 */;
+import _mod10964 from "module_10964" /* 10964 */;
+import _mod10965 from "module_10965" /* 10965 */;
+import _mod10966 from "module_10966" /* 10966 */;
+import { Chrono } from "module_10875" /* 10875 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function createConfiguration(flag, arg1) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
-}
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class ZHHansMergeDateRangeRefiner {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ZHHansMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(ZHHansMergeDateRangeRefiner);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
   }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10908.default(flag2), , , ];
+  new module_10908.default(flag2);
+  items[1] = new module_10959.default();
+  new module_10959.default();
+  items[2] = new module_10961.default();
+  new module_10961.default();
+  items[3] = new module_10964.default();
+  new module_10964.default();
+  items1 = [new module_10962.default(), ];
+  new module_10962.default();
+  items1[1] = new module_10963.default();
+  new module_10963.default();
+  return includeCommonConfiguration(obj, flag);
 }
-_inherits(ZHHansMergeDateRangeRefiner, fn(_mod10851).default);
-const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(至|到|-|~|～|－|ー)\s*$/i;
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
-};
-const items = [entry];
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const tmp = createConfiguration(false, flag);
+  const parsers = tmp.parsers;
+  const push = parsers.push;
+  const _default = new module_10965.default();
+  push(_default);
+  const parsers1 = tmp.parsers;
+  const push2 = parsers1.push;
+  const _default1 = new module_10966.default();
+  push2(_default1);
+  return tmp;
+}
+const module_10908 = fn(_mod10908);
+const module_10959 = fn(_mod10959);
+const module_10961 = fn(_mod10961);
+const module_10962 = fn(_mod10962);
+const module_10963 = fn(_mod10963);
+const module_10964 = fn(_mod10964);
+const module_10965 = fn(_mod10965);
+const module_10966 = fn(_mod10966);
+const configuration = createConfiguration(false, true);
+let parsers = configuration.parsers;
+let push = parsers.push;
+let _default = new module_10965.default();
+push(_default);
+let parsers1 = configuration.parsers;
+let push2 = parsers1.push;
+let _default1 = new module_10966.default();
+push2(_default1);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10875").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10875").Chrono;
 
-export default _createClass(ZHHansMergeDateRangeRefiner, items);
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
+}
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+}
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

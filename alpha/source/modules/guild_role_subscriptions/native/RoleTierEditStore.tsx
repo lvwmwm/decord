@@ -1,17 +1,17 @@
-// Module ID: 20155
-// Function ID: 20156
+// Module ID: 20219
+// Function ID: 20220
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1262, 1257, 7582, 4927, 5573, 16772, 2]
+// Dependencies: [32, 5, 1263, 1258, 7613, 4958, 5604, 16823, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 20155 (RoleTierEditStore)
-import react_native from "react-native" /* 1262 */;
-import _slicedToArray2 from "_slicedToArray" /* 4927 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7582 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16772 */;
+// Module 20219 (RoleTierEditStore)
+import react_native from "react-native" /* 1263 */;
+import _slicedToArray2 from "_slicedToArray" /* 4958 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7613 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16823 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1257 from "module_1257" /* 1257 */;
+import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ function usePriceTiers(guildId) {
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5573)(() => {
+  tiers(5604)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {
@@ -53,7 +53,7 @@ function usePriceTiers(guildId) {
 }
 const LoadingState = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
 let closure_7 = Object.freeze({ currentScene: null, groupCover: null, groupDescription: "", groupIsFullGate: false });
-const withEqualityFn = module_1257.createWithEqualityFn((arg0) => {
+const withEqualityFn = module_1258.createWithEqualityFn((arg0) => {
   let obj;
   function nestedUpdate(arg0) {
     closure_0 = arg0;
@@ -90,7 +90,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           let c2;
@@ -146,7 +146,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0) => {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp21) {
             if (0 === c2) {

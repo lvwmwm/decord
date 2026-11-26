@@ -1,13 +1,13 @@
-// Module ID: 1491
-// Function ID: 1492
+// Module ID: 1492
+// Function ID: 1493
 // Name: ImageUtils
-// Dependencies: [5, 1492, 1493, 12, 38, 2]
+// Dependencies: [5, 1493, 1494, 12, 38, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
-// Module 1491 (ImageUtils)
+// Module 1492 (ImageUtils)
 import _modDef38 from "module_38" /* 38 */;
-import quantizeDefault from "quantize" /* 1492 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1493 */;
+import quantizeDefault from "quantize" /* 1493 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1494 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_12 from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -126,7 +126,7 @@ let obj = function _dataUrlToFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

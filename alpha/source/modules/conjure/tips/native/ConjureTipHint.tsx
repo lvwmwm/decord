@@ -1,18 +1,18 @@
-// Module ID: 18611
-// Function ID: 18612
+// Module ID: 18674
+// Function ID: 18675
 // Name: ConjureTipHint
-// Dependencies: [19, 17, 21, 5012, 575, 5603, 18612, 7910, 7216, 1112, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5634, 18675, 7944, 7247, 1112, 2]
 // Exports: default
 
-// Module 18611 (ConjureTipHint)
+// Module 18674 (ConjureTipHint)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 18612 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 18675 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -56,9 +56,9 @@ export default function ConjureTipHint(onDismiss) {
   if (null != onDismiss) {
     const obj5 = { style: tmp.dismiss, children: React3(IconButton, obj6) };
     obj6 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon, obj7), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-    IconButton = tmp8(7910).IconButton;
+    IconButton = tmp8(7944).IconButton;
     obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    XSmallIcon = tmp8(7216).XSmallIcon;
+    XSmallIcon = tmp8(7247).XSmallIcon;
     intl = tmp8(1112).intl;
     tmp2Result = tmp2(tmp7, obj5);
   }

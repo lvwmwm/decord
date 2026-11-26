@@ -1,14 +1,14 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 17012
+// Function ID: 17013
 // Name: EmojiWoozyFaceIcon
-// Dependencies: [19, 21, 575, 5698, 16962, 2]
+// Dependencies: [19, 21, 575, 5729, 17013, 2]
 // Exports: EmojiWoozyFaceIcon
 
-// Module 16961 (EmojiWoozyFaceIcon)
+// Module 17012 (EmojiWoozyFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 16962 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 17013 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

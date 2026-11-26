@@ -1,20 +1,20 @@
-// Module ID: 19196
-// Function ID: 19197
+// Module ID: 19259
+// Function ID: 19260
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 4858, 21, 5012, 575, 4970, 5228, 5229, 572, 1653, 5222, 1706, 11029, 4845, 1186, 5595, 5603, 1112, 5073, 2]
+// Dependencies: [32, 19, 17, 4889, 21, 5043, 575, 5001, 5259, 5260, 572, 1654, 5253, 1707, 11075, 4876, 1186, 5626, 5634, 1112, 5104, 2]
 // Exports: default
 
-// Module 19196 (BurstReactionAnimationContainer)
+// Module 19259 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4970 */;
-import native from "native" /* 5073 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 5001 */;
+import native from "native" /* 5104 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,11 +69,11 @@ function BurstReactionAnimationContainerInner() {
   let tmp7 = dependencyMap;
   const tmp6 = _require;
   let items = [closure_13, first, first1, , , , ];
-  const useAnimatedStyle = require("module_1653").useAnimatedStyle;
-  const tmp8 = require("module_1653");
+  const useAnimatedStyle = require("module_1654").useAnimatedStyle;
+  const tmp8 = require("module_1654");
   items[3] = require("timing/timing").withTiming;
   items[4] = closure_12;
-  items[5] = require("module_1706").scheduleOnRN;
+  items[5] = require("module_1707").scheduleOnRN;
   items[6] = function handleComponentFinish() {
     if (false === ref.current) {
       closure_2(null);
@@ -208,8 +208,8 @@ function BurstReactionAnimationContainerInner() {
         }
     };
     items2 = [];
-    const tmp19 = first(11029);
-    items2[0] = tmp6(4845).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
+    const tmp19 = first(11075);
+    items2[0] = tmp6(4876).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
     tmp16 = closure_8(tmp19, obj);
   }
   return tmp16;

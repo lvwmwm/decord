@@ -1,15 +1,15 @@
-// Module ID: 7900
-// Function ID: 7901
+// Module ID: 7934
+// Function ID: 7935
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 6795, 7851, 7883, 572, 2]
+// Dependencies: [5, 32, 19, 6826, 7885, 7917, 572, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 7900 (useAgeVerificationMethodsV2)
+// Module 7934 (useAgeVerificationMethodsV2)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 6795 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 6826 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c6;
@@ -27,7 +27,7 @@ export function useAgeVerificationMethodsV2() {
   let tmp2;
   let tmp4;
   let tmp6;
-  const f92037 = () => callback.methodsV2OutageBannerMessage;
+  const f92287 = () => callback.methodsV2OutageBannerMessage;
   const tmp = _slicedToArray(react.useState(() => {
     let methodsV2 = callback.methodsV2;
     if (methodsV2 == null) {
@@ -38,8 +38,8 @@ export function useAgeVerificationMethodsV2() {
   [tmp2, require] = tmp;
   const tmp3 = _slicedToArray(react.useState(() => callback.methodsV2FooterMessage), 2);
   [tmp4, importDefault] = tmp3;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(f92037), 2);
-  const tmp5 = _slicedToArray(react.useState(f92037), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(f92287), 2);
+  const tmp5 = _slicedToArray(react.useState(f92287), 2);
   [first, _asyncToGenerator] = react.useState(() => null == callback.methodsV2);
   [first1, _slicedToArray] = react.useState(false);
   react = react.useRef(true);
@@ -58,7 +58,7 @@ export function useAgeVerificationMethodsV2() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -164,7 +164,7 @@ export function useAgeVerificationMethodsV2() {
             tmp66(false);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp66) {
         if (0 === c4) {

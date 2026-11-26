@@ -1,35 +1,35 @@
-// Module ID: 19284
-// Function ID: 19285
+// Module ID: 19347
+// Function ID: 19348
 // Name: LaunchPadSearchResults
-// Dependencies: [19, 17, 2188, 6945, 4883, 6137, 21, 5012, 575, 18909, 8558, 504, 5618, 19285, 6121, 18910, 19286, 7021, 18912, 19287, 8905, 19288, 19293, 19294, 19296, 17777, 5603, 1112, 1494, 18911, 7397, 2]
+// Dependencies: [19, 17, 2189, 6976, 4914, 6168, 21, 5043, 575, 18972, 8600, 504, 5649, 19348, 6152, 18973, 19349, 7052, 18975, 19350, 8947, 19351, 19356, 19357, 19359, 17834, 5634, 1112, 1495, 18974, 7428, 2]
 
-// Module 19284 (LaunchPadSearchResults)
+// Module 19347 (LaunchPadSearchResults)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import ReadStateConstants from "ReadStateConstants" /* 6137 */;
-import GuildIconDefault from "GuildIcon" /* 7021 */;
-import transitionToGuild from "transitionToGuild" /* 8558 */;
-import _mod8905 from "module_8905" /* 8905 */;
-import RedesignCategory from "RedesignCategory" /* 17777 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18909 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 18910 */;
-import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 18911 */;
-import renderChannelContentDefault from "renderChannelContent" /* 18912 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19285 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 19286 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 19287 */;
-import shared_TextChannelDefault from "shared/TextChannel" /* 19288 */;
-import shared_DMChannelDefault from "shared/DMChannel" /* 19293 */;
-import VoiceOrStageChannelDefault from "VoiceOrStageChannel" /* 19294 */;
-import LaunchPadSearchResultUserDefault from "LaunchPadSearchResultUser" /* 19296 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import ReadStateConstants from "ReadStateConstants" /* 6168 */;
+import GuildIconDefault from "GuildIcon" /* 7052 */;
+import transitionToGuild from "transitionToGuild" /* 8600 */;
+import _mod8947 from "module_8947" /* 8947 */;
+import RedesignCategory from "RedesignCategory" /* 17834 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18972 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18973 */;
+import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 18974 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18975 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19348 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 19349 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 19350 */;
+import shared_TextChannelDefault from "shared/TextChannel" /* 19351 */;
+import shared_DMChannelDefault from "shared/DMChannel" /* 19356 */;
+import VoiceOrStageChannelDefault from "VoiceOrStageChannel" /* 19357 */;
+import LaunchPadSearchResultUserDefault from "LaunchPadSearchResultUser" /* 19359 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2188 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6945 */;
-import GuildStore from "GuildStore" /* 4883 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6976 */;
+import GuildStore from "GuildStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -44,23 +44,23 @@ function renderItemJSX(result) {
     return null;
   } else {
     const type = result.type;
-    if (_mod8905.AutocompleterResultTypes.GUILD === type) {
+    if (_mod8947.AutocompleterResultTypes.GUILD === type) {
       const obj2 = { guild: result.record };
       return React4(closure_14, obj2);
-    } else if (_mod8905.AutocompleterResultTypes.TEXT_CHANNEL === type) {
+    } else if (_mod8947.AutocompleterResultTypes.TEXT_CHANNEL === type) {
       const obj3 = { channel: result.record, navigationReplace: true, showGuildBadgeIcon: true };
       return React4(shared_TextChannelDefault, obj3);
-    } else if (_mod8905.AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (_mod8947.AutocompleterResultTypes.GROUP_DM === type) {
       const obj5 = { channel: result.record, navigationReplace: true };
       return React4(shared_DMChannelDefault, obj5);
-    } else if (_mod8905.AutocompleterResultTypes.VOICE_CHANNEL === type) {
+    } else if (_mod8947.AutocompleterResultTypes.VOICE_CHANNEL === type) {
       const obj6 = { channel: result.record };
       return React4(VoiceOrStageChannelDefault, obj6);
-    } else if (_mod8905.AutocompleterResultTypes.USER === type) {
+    } else if (_mod8947.AutocompleterResultTypes.USER === type) {
       const obj7 = { user: null, comparator: null };
       ({ record: obj4.user, comparator: obj4.comparator } = result);
       return React4(LaunchPadSearchResultUserDefault, obj7);
-    } else if (_mod8905.AutocompleterResultTypes.HEADER === type) {
+    } else if (_mod8947.AutocompleterResultTypes.HEADER === type) {
       const obj8 = { name: result.record.text, styles: tmp };
       const tmp13Result = RedesignCategory;
       return tmp13Result.renderCategoryItem(obj8);
@@ -113,7 +113,7 @@ let closure_14 = react.memo(function Guild(guild) {
     return obj;
   });
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  const obj2 = guild(5618);
+  const obj2 = guild(5649);
   const fontScale = obj2.useFontScale();
   const items2 = [LocaleStore];
   const obj3 = guild(504);
@@ -121,7 +121,7 @@ let closure_14 = react.memo(function Guild(guild) {
   const obj4 = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items3, children: tmp8(closure_11(closure_10, obj5), { fontScale }) };
   items3 = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
   const tmp7 = renderChannelPressableWrapperDefault;
-  const PressableHighlight = guild(6121).PressableHighlight;
+  const PressableHighlight = guild(6152).PressableHighlight;
   obj5 = { children: items4 };
   items4 = [, , ];
   const obj6 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
@@ -243,7 +243,7 @@ const memoResult = react.memo(function InitialResultsInner(history) {
       } else {
         tmp3 = unreads[arg1];
       }
-      if (tmp3.type === _mod8905.AutocompleterResultTypes.VOICE_CHANNEL) {
+      if (tmp3.type === _mod8947.AutocompleterResultTypes.VOICE_CHANNEL) {
         diff = getScaledChannelRowHeightDefault(fontScale) + voiceUsers.voiceUsers.height - 2;
       } else {
         diff = getScaledChannelRowHeightDefault(fontScale);

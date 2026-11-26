@@ -1,35 +1,35 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 11306
+// Function ID: 11307
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 6298, 1073, 1071, 9387, 1388, 21, 5012, 575, 7910, 11261, 5226, 11263, 1112, 11209, 11252, 11185, 5617, 1500, 6348, 6099, 11560, 2119, 6279, 11571, 1074, 11572, 9368, 9423, 5603, 5611, 2112, 9373, 504, 9777, 2173, 6292, 6291, 11210, 9227, 11574, 11575, 11201, 9386, 11576, 11577, 1628, 5610, 11578, 1241, 1378, 5781, 6016, 2]
+// Dependencies: [32, 19, 17, 6329, 1073, 1071, 9429, 1389, 21, 5043, 575, 7944, 11307, 5257, 11309, 1112, 11255, 11298, 11231, 5648, 1501, 6379, 6130, 11608, 2120, 6310, 11619, 1074, 11620, 9410, 9465, 5634, 5642, 2113, 9415, 504, 9819, 2174, 6323, 6322, 11256, 9269, 11622, 11623, 11247, 9428, 11624, 11625, 1629, 5641, 11626, 1242, 1379, 5812, 6047, 2]
 // Exports: default
 
-// Module 11260 (ProductDetailsActionSheetPurchaseSection)
+// Module 11306 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
-import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import ReleaseChannelUtils from "ReleaseChannelUtils" /* 5781 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9368 */;
-import MainTabsConstants from "MainTabsConstants" /* 9387 */;
-import OrbsIcon from "OrbsIcon" /* 9423 */;
-import openGiftModal from "openGiftModal" /* 11263 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import ReleaseChannelUtils from "ReleaseChannelUtils" /* 5812 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9410 */;
+import MainTabsConstants from "MainTabsConstants" /* 9429 */;
+import OrbsIcon from "OrbsIcon" /* 9465 */;
+import openGiftModal from "openGiftModal" /* 11309 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6298 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6329 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, navigation;
@@ -111,12 +111,12 @@ function VCButton(balance) {
   const tmp = closure_17();
   react = tmp;
   const tmp2 = balance;
-  let obj = balance(11209);
+  let obj = balance(11255);
   const virtualCurrencyData = obj.useVirtualCurrencyData(product, flag);
   ({ price, canAfford } = virtualCurrencyData);
-  let obj2 = balance(11252);
+  let obj2 = balance(11298);
   let isDisabled = obj2.useProductDisableState(product.skuId).isDisabled;
-  let obj3 = balance(11185);
+  let obj3 = balance(11231);
   const isPartiallyOwnedBundle = obj3.useProductPurchaseState(product).isPartiallyOwnedBundle;
   if (!isDisabled) {
     isDisabled = !canAfford;
@@ -129,9 +129,9 @@ function VCButton(balance) {
   } else {
     str = "primary";
   }
-  const tmp2Result = tmp2(5617);
+  const tmp2Result = tmp2(5648);
   color = tmp2Result.useButtonTextColorStyles(str);
-  const tmp2Result2 = tmp2(1500);
+  const tmp2Result2 = tmp2(1501);
   navigation = tmp2Result2.useNavigation();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   let items = [navigation, product, balance, analyticsLocations, stageCollectibleChangeForEditProfile];
@@ -197,7 +197,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(11560, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(11608, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;
@@ -236,7 +236,7 @@ function VCButton(balance) {
     };
     intl = tmp2(1112).intl;
     obj6 = { orbPrice: price.amount };
-    const obj7 = { style: tmp.buttonContainer, children: closure_13(tmp2(5611).BaseTextButton, obj8) };
+    const obj7 = { style: tmp.buttonContainer, children: closure_13(tmp2(5642).BaseTextButton, obj8) };
     obj8 = {
       loading: false,
       textElement: closure_13(color, obj5),
@@ -340,7 +340,7 @@ export default function ProductDetailsActionSheetPurchaseSection(product) {
   const result1 = obj7.isFreeCollectiblesProduct(product);
   const obj8 = require("CollectiblesProductUtils");
   const result2 = obj8.isOrbsExclusiveProduct(product);
-  const obj9 = require("module_11210");
+  const obj9 = require("module_11256");
   const balance = obj9.useFetchVirtualCurrencyBalance().balance;
   const obj10 = require("NativePaymentHooks");
   nativePaymentsConnected = obj10.useNativeIAPPayments().nativePaymentsConnected;

@@ -1,14 +1,14 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 9866
+// Function ID: 9867
 // Name: trackBadgeDirectoryAction
-// Dependencies: [1386, 6352, 1071, 1255, 2]
+// Dependencies: [1387, 6383, 1071, 1256, 2]
 // Exports: trackOwnBadgeDirectoryOpened
 
-// Module 9824 (trackBadgeDirectoryAction)
+// Module 9866 (trackBadgeDirectoryAction)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import UserStore from "UserStore" /* 1386 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6352 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import UserStore from "UserStore" /* 1387 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6383 */;
 import size from "module_2" /* 2 */;
 
 function trackBadgeDirectoryAction(arg0) {

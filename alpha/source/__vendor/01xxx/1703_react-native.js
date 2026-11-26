@@ -1,11 +1,10 @@
 // Module ID: 1703
 // Function ID: 1704
 // Name: react-native
-// Dependencies: [17]
+// Dependencies: [1704]
 
 // Module 1703 (react-native)
-import react_native from "react-native" /* 17 */;
+import react_nativeDefault from "react-native" /* 1704 */;
 
-const TurboModuleRegistry = react_native.TurboModuleRegistry;
 
-export default TurboModuleRegistry.get("ReanimatedModule");
+export const ReanimatedTurboModule = react_nativeDefault;

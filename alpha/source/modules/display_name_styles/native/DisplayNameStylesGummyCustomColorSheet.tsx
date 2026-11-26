@@ -1,19 +1,19 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 16959
+// Function ID: 16960
 // Name: DisplayNameStylesGummyCustomColorSheet
-// Dependencies: [19, 17, 1395, 21, 5012, 575, 1653, 1394, 1089, 5228, 5226, 5240, 16901, 1112, 5610, 16909, 16014, 2]
+// Dependencies: [19, 17, 1396, 21, 5043, 575, 1654, 1395, 1089, 5259, 5257, 5271, 16952, 1112, 5641, 16960, 16044, 2]
 // Exports: default
 
-// Module 16908 (DisplayNameStylesGummyCustomColorSheet)
+// Module 16959 (DisplayNameStylesGummyCustomColorSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import HapticUtils from "HapticUtils" /* 5228 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1395 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import HapticUtils from "HapticUtils" /* 5259 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1396 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,10 +49,10 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
   onSelect = onSelect.onSelect;
   const initialColor = onSelect.initialColor;
   const tmp = closure_9();
-  const useSharedValue = onSelect(1653).useSharedValue;
-  const tmp2 = onSelect(1653);
-  const wrapHue = onSelect(1394).wrapHue;
-  onSelect(1394);
+  const useSharedValue = onSelect(1654).useSharedValue;
+  const tmp2 = onSelect(1654);
+  const wrapHue = onSelect(1395).wrapHue;
+  onSelect(1395);
   let obj = onSelect(1089);
   const sharedValue = useSharedValue(wrapHue(obj.int2hslRaw(initialColor).h));
   const items = [sharedValue, onSelect];
@@ -69,18 +69,18 @@ export default function DisplayNameStylesGummyCustomColorSheet(onSelect) {
     obj3.hideActionSheet();
   }, items);
   let obj2 = { header: closure_7(tmp7, obj3), children: closure_8(View, obj5) };
-  const BottomSheet = onSelect(5240).BottomSheet;
+  const BottomSheet = onSelect(5271).BottomSheet;
   obj3 = { title: intl.string(onSelect(1112).t.WTqQ5e), trailing: closure_7(Button, obj4) };
-  tmp7 = sharedValue(16901);
+  tmp7 = sharedValue(16952);
   intl = onSelect(1112).intl;
   obj4 = { variant: "primary", size: "sm", text: intl2.string(onSelect(1112).t.XqMe3N), onPress: callback1 };
-  Button = onSelect(5610).Button;
+  Button = onSelect(5641).Button;
   intl2 = onSelect(1112).intl;
   obj5 = { style: tmp.body, children: items1 };
   const obj6 = { style: tmp.previewWrapper, children: closure_7(View, obj7) };
-  obj7 = { style: tmp.preview, children: closure_7(sharedValue(16909), { hue: sharedValue }) };
+  obj7 = { style: tmp.preview, children: closure_7(sharedValue(16960), { hue: sharedValue }) };
   items1 = [closure_7(View, obj6), ];
-  const obj8 = { style: tmp.huePickerInset, children: closure_7(sharedValue(16014), obj9) };
+  const obj8 = { style: tmp.huePickerInset, children: closure_7(sharedValue(16044), obj9) };
   obj9 = { hue: sharedValue, onPanFinalize: callback, saturation, lightness, fullWidth: true };
   items1[1] = closure_7(View, obj8);
   return closure_7(BottomSheet, obj2);

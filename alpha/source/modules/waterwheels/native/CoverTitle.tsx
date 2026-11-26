@@ -1,16 +1,16 @@
-// Module ID: 17975
-// Function ID: 17976
+// Module ID: 18032
+// Function ID: 18033
 // Name: CoverTitle
-// Dependencies: [32, 19, 17, 21, 5012, 5603, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 5634, 2]
 // Exports: default
 
-// Module 17975 (CoverTitle)
+// Module 18032 (CoverTitle)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5603 */;
+import Text_Text from "Text/Text" /* 5634 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

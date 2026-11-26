@@ -1,10 +1,10 @@
-// Module ID: 18492
-// Function ID: 18493
+// Module ID: 18555
+// Function ID: 18556
 // Name: useConjureModelSettingsDraft
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 18492 (useConjureModelSettingsDraft)
+// Module 18555 (useConjureModelSettingsDraft)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

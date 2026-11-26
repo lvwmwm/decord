@@ -1,10 +1,10 @@
-// Module ID: 8434
-// Function ID: 8435
+// Module ID: 8476
+// Function ID: 8477
 // Name: LazyAPIPromise
-// Dependencies: [5, 32, 19, 5761, 2]
+// Dependencies: [5, 32, 19, 5792, 2]
 // Exports: default
 
-// Module 8434 (LazyAPIPromise)
+// Module 8476 (LazyAPIPromise)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ export default function useLazyAPIPromise(arg0, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;

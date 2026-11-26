@@ -1,19 +1,19 @@
-// Module ID: 18181
-// Function ID: 18182
+// Module ID: 18240
+// Function ID: 18241
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1386, 6894, 504, 10359, 2173, 9552, 9555, 5694, 1112, 9323, 2]
+// Dependencies: [19, 1387, 6925, 504, 10404, 2174, 9594, 9597, 5725, 1112, 9365, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 18181 (useSoundboardSoundLock)
+// Module 18240 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1112 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
-import SoundboardConstants from "SoundboardConstants" /* 6894 */;
-import BoostGemIcon from "BoostGemIcon" /* 9323 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9552 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9555 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
+import SoundboardConstants from "SoundboardConstants" /* 6925 */;
+import BoostGemIcon from "BoostGemIcon" /* 9365 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9594 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9597 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

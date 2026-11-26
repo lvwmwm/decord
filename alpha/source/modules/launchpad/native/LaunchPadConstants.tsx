@@ -1,12 +1,12 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 11958
+// Function ID: 11959
 // Name: LaunchPadConstants
-// Dependencies: [17, 1378, 4969, 2]
+// Dependencies: [17, 1379, 5000, 2]
 
-// Module 11910 (LaunchPadConstants)
+// Module 11958 (LaunchPadConstants)
 import react_native from "react-native" /* 17 */;
-import DeviceUtils from "DeviceUtils" /* 4969 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import DeviceUtils from "DeviceUtils" /* 5000 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size_mod from "module_2" /* 2 */;
 
 const Dimensions = react_native.Dimensions;

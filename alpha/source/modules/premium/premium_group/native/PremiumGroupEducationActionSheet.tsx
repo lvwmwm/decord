@@ -1,20 +1,20 @@
-// Module ID: 13925
-// Function ID: 13926
+// Module ID: 13977
+// Function ID: 13978
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 2186, 21, 5012, 575, 5240, 7247, 5603, 1112, 3690, 2]
+// Dependencies: [17, 2187, 21, 5043, 575, 5271, 7278, 5634, 1112, 3691, 2]
 // Exports: default
 
-// Module 13925 (PremiumGroupEducationActionSheet)
+// Module 13977 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2186 */;
-import _modDef3690 from "module_3690" /* 3690 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5240 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7247 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
+import _modDef3691 from "module_3691" /* 3691 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7278 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -46,7 +46,7 @@ export default function PremiumGroupEducationActionSheet(aboutText) {
   const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3690.ah1Ecm, obj7) };
+  const obj6 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3691.ah1Ecm, obj7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   obj7 = { helpCenterLink: HELP_CENTER_LINK };

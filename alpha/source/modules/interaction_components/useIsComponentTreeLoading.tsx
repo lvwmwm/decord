@@ -1,13 +1,13 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12413
+// Function ID: 12414
 // Name: useIsComponentTreeLoading
-// Dependencies: [19, 6364, 8782, 6374, 6800, 2]
+// Dependencies: [19, 6395, 8824, 6405, 6831, 2]
 // Exports: useIsComponentTreeLoading
 
-// Module 12363 (useIsComponentTreeLoading)
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6364 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6374 */;
-import usePreviousDefault from "usePrevious" /* 6800 */;
+// Module 12413 (useIsComponentTreeLoading)
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6395 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6405 */;
+import usePreviousDefault from "usePrevious" /* 6831 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export function useIsComponentTreeLoading(memo, callback) {
       obj = { loading: true, component: tmp };
       const obj2 = { loading: true, component: tmp };
     } else {
-      obj = { loading: false, component: "Array" };
+      obj = { loading: false, component: "r" };
     }
     return obj;
   }, items1);

@@ -1,15 +1,15 @@
-// Module ID: 12018
-// Function ID: 12019
+// Module ID: 12066
+// Function ID: 12067
 // Name: showLongPressURLActionSheet
-// Dependencies: [5228, 1112, 5693, 7507, 5691, 8648, 12019, 7512, 2]
+// Dependencies: [5259, 1112, 5724, 7538, 5722, 5220, 5219, 8690, 12067, 7543, 2]
 // Exports: default
 
-// Module 12018 (showLongPressURLActionSheet)
-import LinkingDefault from "Linking" /* 5691 */;
-import ToastUtils from "ToastUtils" /* 5693 */;
-import ClipboardUtils from "ClipboardUtils" /* 7507 */;
-import showShareActionSheet from "showShareActionSheet" /* 8648 */;
-import handleContentLinkingDefault from "handleContentLinking" /* 12019 */;
+// Module 12066 (showLongPressURLActionSheet)
+import LinkingDefault from "Linking" /* 5722 */;
+import ToastUtils from "ToastUtils" /* 5724 */;
+import ClipboardUtils from "ClipboardUtils" /* 7538 */;
+import showShareActionSheet from "showShareActionSheet" /* 8690 */;
+import handleContentLinkingDefault from "handleContentLinking" /* 12067 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");
@@ -19,6 +19,7 @@ export default function showLongPressURLActionSheet(urlString) {
   let closure_3;
   let disableHapticFeedback;
   let guildId;
+  let index;
   let intl;
   let intl2;
   let intl3;
@@ -26,7 +27,8 @@ export default function showLongPressURLActionSheet(urlString) {
   let intl5;
   let intl6;
   let messageId;
-  let obj9;
+  let obj10;
+  let routes;
   const str = urlString.urlString;
   ({ guildId: importDefault, channelId } = urlString);
   ({ messageId: closure_3, disableHapticFeedback } = urlString);
@@ -34,7 +36,9 @@ export default function showLongPressURLActionSheet(urlString) {
     disableHapticFeedback = false;
   }
   let match;
+  let closure_5;
   if (!disableHapticFeedback) {
+    let tmp2 = str;
     let obj = str(channelId[0]);
     const result = obj.triggerHapticFeedback(str(channelId[0]).HapticFeedbackTypes.IMPACT_LIGHT);
   }
@@ -46,9 +50,9 @@ export default function showLongPressURLActionSheet(urlString) {
     const intl7 = str(channelId[1]).intl;
     const string = intl7.string;
     if ("mailto" === match[1]) {
-      ZYLVKo = tmp15(tmp16[1]).t.ZYLVKo;
+      ZYLVKo = tmp23(tmp24[1]).t.ZYLVKo;
     } else {
-      ZYLVKo = tmp15(tmp16[1]).t["3zozoR"];
+      ZYLVKo = tmp23(tmp24[1]).t["3zozoR"];
     }
     let obj2 = {
       label: string(ZYLVKo),
@@ -69,20 +73,67 @@ export default function showLongPressURLActionSheet(urlString) {
               obj.openURL(str.replace("tel:", "sms:"));
             }
       };
-      intl = tmp15(tmp16[1]).intl;
+      intl = tmp23(tmp24[1]).intl;
       push(obj3);
     }
   }
-  const obj4 = {
+  const obj4 = str(channelId[5]);
+  const rootNavigationRef = obj4.getRootNavigationRef();
+  let rootState;
+  if (rootNavigationRef != null) {
+    rootState = rootNavigationRef.getRootState();
+  }
+  let coerceMainRouteResult;
+  if (null != rootState) {
+    const tmp9Result = str(channelId[6]);
+    coerceMainRouteResult = tmp9Result.coerceMainRoute(rootState.routes[rootState.index]);
+  }
+  let found;
+  if (coerceMainRouteResult != null) {
+    const state = coerceMainRouteResult.state;
+    if (state != null) {
+      const routes1 = state.routes;
+      const mapped = routes1.map(tmp9(tmp10[6]).coerceTabsRoute);
+      found = mapped.find((item) => null != item);
+    }
+  }
+  let state1;
+  if (found != null) {
+    state1 = found.state;
+  }
+  let tmp15;
+  if (state1 != null) {
+    ({ index, routes } = state1);
+    if (index == null) {
+      index = 0;
+    }
+    tmp15 = routes[index];
+  }
+  let name;
+  if (tmp15 != null) {
+    name = tmp15.name;
+  }
+  let tmp17 = "notifications" === name;
+  if (!tmp17) {
+    let name1;
+    if (tmp15 != null) {
+      name1 = tmp15.name;
+    }
+    tmp17 = "icymi" === name1;
+  }
+  closure_5 = tmp17;
+  const obj5 = {
     label: intl2.string(str(channelId[1]).t.wuRE8M),
     onPress() {
-      const obj = LinkingDefault;
-      obj.openURL(str);
+      const openURL = LinkingDefault.openURL;
+      LinkingDefault;
+      const obj = { navigationReplace: !closure_5 };
+      openURL(str, undefined, true, obj);
     }
   };
-  intl2 = str(channelId[1]).intl;
-  const items1 = [obj4, , ];
-  const obj5 = {
+  intl2 = tmp9(tmp10[1]).intl;
+  const items1 = [obj5, , ];
+  const obj6 = {
     label: intl3.string(str(channelId[1]).t.WqhZss),
     onPress() {
       const obj = ToastUtils;
@@ -91,9 +142,9 @@ export default function showLongPressURLActionSheet(urlString) {
       obj2.copy(str);
     }
   };
-  intl3 = str(channelId[1]).intl;
-  items1[1] = obj5;
-  const obj6 = {
+  intl3 = tmp9(tmp10[1]).intl;
+  items1[1] = obj6;
+  const obj7 = {
     label: intl4.string(str(channelId[1]).t.Ej3B3Y),
     onPress() {
       const obj = showShareActionSheet;
@@ -102,24 +153,26 @@ export default function showLongPressURLActionSheet(urlString) {
     }
   };
   const arraySpreadResult = HermesBuiltin.arraySpread(items1, items, 2);
-  intl4 = str(channelId[1]).intl;
-  items1[arraySpreadResult] = obj6;
+  intl4 = tmp9(tmp10[1]).intl;
+  items1[arraySpreadResult] = obj7;
   if (null != channelId) {
     const unshift = items1.unshift;
-    const obj7 = {
+    const obj8 = {
       label: intl5.string(str(channelId[1]).t.aW2YlJ),
       onPress() {
-          const obj = { guildId: importDefault, channelId, messageId, navigationSettings: { navigationReplace: true, safe: true } };
+          let obj2;
+          const obj = { guildId: importDefault, channelId, messageId, navigationSettings: obj2 };
+          obj2 = { navigationReplace: !closure_5, safe: true };
           handleContentLinkingDefault(obj);
         }
     };
     intl5 = tmp9(tmp10[1]).intl;
-    unshift(obj7);
+    unshift(obj8);
   }
-  const obj8 = { key: "LongPressUrl", header: obj9, options: items1, hasIcons: false };
-  obj9 = { title: intl6.string(str(channelId[1]).t["5oIOLX"]), subtitle: str };
-  const showSimpleActionSheet = str(channelId[7]).showSimpleActionSheet;
-  str(channelId[7]);
+  const obj9 = { key: "LongPressUrl", header: obj10, options: items1, hasIcons: false };
+  obj10 = { title: intl6.string(str(channelId[1]).t["5oIOLX"]), subtitle: str };
+  const showSimpleActionSheet = str(channelId[9]).showSimpleActionSheet;
+  str(channelId[9]);
   intl6 = tmp9(tmp10[1]).intl;
-  const result1 = showSimpleActionSheet(obj8);
+  const result1 = showSimpleActionSheet(obj9);
 };

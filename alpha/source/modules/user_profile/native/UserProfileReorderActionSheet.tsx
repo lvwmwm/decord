@@ -1,15 +1,15 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14596
+// Function ID: 14597
 // Name: UserProfileReorderActionSheet
-// Dependencies: [19, 21, 5012, 575, 1628, 6078, 7515, 5244, 5603, 1112, 2]
+// Dependencies: [19, 21, 5043, 575, 1629, 6109, 7546, 5275, 5634, 1112, 2]
 // Exports: default
 
-// Module 14544 (UserProfileReorderActionSheet)
+// Module 14596 (UserProfileReorderActionSheet)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,8 +29,9 @@ export default function UserProfileReorderActionSheet(returnFocusRef) {
   let items1;
   let items2;
   let obj2;
+  let scrollRef;
   returnFocusRef = returnFocusRef.returnFocusRef;
-  ({ dismissAccessibilityLabel, children } = returnFocusRef);
+  ({ dismissAccessibilityLabel, children, scrollRef } = returnFocusRef);
   const items = [returnFocusRef];
   const tmp = closure_6();
   const bottom = useSafeAreaInsetsDefault().bottom;
@@ -43,12 +44,12 @@ export default function UserProfileReorderActionSheet(returnFocusRef) {
     };
   }, items);
   let obj = { scrollable: true, startExpanded: true, dismissAccessibilityLabel, children: closure_5(BottomSheetScrollView, obj2) };
-  const ActionSheet = returnFocusRef(7515).ActionSheet;
-  obj2 = { contentContainerStyle: items1, children: items2 };
+  const ActionSheet = returnFocusRef(7546).ActionSheet;
+  obj2 = { ref: scrollRef, contentContainerStyle: items1, children: items2 };
   items1 = [tmp.content, { paddingBottom: bottom }];
-  BottomSheetScrollView = returnFocusRef(5244).BottomSheetScrollView;
+  BottomSheetScrollView = returnFocusRef(5275).BottomSheetScrollView;
   const obj3 = { variant: "body-sm/medium", color: "text-subtle", children: intl.string(returnFocusRef(1112).t["S7X7/T"]) };
-  const Text = returnFocusRef(5603).Text;
+  const Text = returnFocusRef(5634).Text;
   intl = returnFocusRef(1112).intl;
   items2 = [closure_4(Text, obj3), children];
   return closure_4(ActionSheet, obj);

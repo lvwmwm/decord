@@ -1,15 +1,15 @@
-// Module ID: 12580
-// Function ID: 12581
+// Module ID: 12629
+// Function ID: 12630
 // Name: useCheckpointGuildsBarEntrypoint
-// Dependencies: [32, 4858, 5044, 4845, 6738, 9519, 2]
+// Dependencies: [32, 4889, 5075, 4876, 6769, 9561, 2]
 // Exports: dismissCheckpointIntro, useCheckpointGuildsBarEntrypoint
 
-// Module 12580 (useCheckpointGuildsBarEntrypoint)
-import dismissible_content from "dismissible_content" /* 4845 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6738 */;
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9519 */;
+// Module 12629 (useCheckpointGuildsBarEntrypoint)
+import dismissible_content from "dismissible_content" /* 4876 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5075 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6769 */;
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9561 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -18,12 +18,12 @@ const guilds_bar = "guilds_bar";
 let result = size.fileFinishedImporting("modules/checkpoint/useCheckpointGuildsBarEntrypoint.tsx");
 
 export const CHECKPOINT_GUILDS_BAR_SOURCE = "guilds_bar";
-export function dismissCheckpointIntro(arg0) {
+export function dismissCheckpointIntro(devtools) {
   let INDIRECT_ACTION;
   const UNSAFE_markDismissibleContentAsDismissed = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed;
   DismissibleContentUnsafeUtils;
   const BUILD_A_BEAR_INTRO = dismissible_content.DismissibleContent.BUILD_A_BEAR_INTRO;
-  if (arg0 === guilds_bar) {
+  if (devtools === guilds_bar) {
     INDIRECT_ACTION = ContentDismissActionType.TAKE_ACTION;
   } else {
     INDIRECT_ACTION = ContentDismissActionType.INDIRECT_ACTION;

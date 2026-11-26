@@ -1,12 +1,12 @@
-// Module ID: 18486
-// Function ID: 18487
+// Module ID: 18549
+// Function ID: 18550
 // Name: conjureLinkedAppData
-// Dependencies: [4244, 1112, 2]
+// Dependencies: [4245, 1112, 2]
 // Exports: linkedAppCallerSides, linkedAppChatAria, linkedAppChatData, linkedAppDataSummary, linkedAppHeaderAria, linkedAppPurpose, linkedAppSettings, linkedAppTargetSides
 
-// Module 18486 (conjureLinkedAppData)
+// Module 18549 (conjureLinkedAppData)
 import intl6 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
+import _modDef4245 from "module_4245" /* 4245 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ function settingOption(targetLive, data, arg2, arg3) {
     if (!targetLive.targetLive) {
       const intl = intl6.intl;
       obj = { target: targetLive.target };
-      formatToPlainStringResult = intl.formatToPlainString(_modDef4244.GNcOoY, obj);
+      formatToPlainStringResult = intl.formatToPlainString(_modDef4245.GNcOoY, obj);
     }
     obj2 = { data, label: intl3.string(obj[data]), description: formatToPlainStringResult, disabled: tmp13 };
     intl3 = intl6.intl;
@@ -30,15 +30,15 @@ function settingOption(targetLive, data, arg2, arg3) {
     if ("preview" === data) {
       if (targetLive.callerLiveOnVibeyard) {
         const intl2 = intl6.intl;
-        stringResult = intl2.string(_modDef4244.bSQXpN);
+        stringResult = intl2.string(_modDef4245.bSQXpN);
       }
     }
   }
   formatToPlainStringResult = stringResult;
 }
-let obj = { live: _modDef4244.MLa86y, preview: _modDef4244["6uafcy"] };
-let obj2 = { live: _modDef4244["PeX+1n"], preview: _modDef4244["Gtd/KL"] };
-let obj3 = { gets: _modDef4244.aiHmSc, sends: _modDef4244.i1D8eM, both: _modDef4244.QEIP5j };
+let obj = { live: _modDef4245.MLa86y, preview: _modDef4245["6uafcy"] };
+let obj2 = { live: _modDef4245["PeX+1n"], preview: _modDef4245["Gtd/KL"] };
+let obj3 = { gets: _modDef4245.aiHmSc, sends: _modDef4245.i1D8eM, both: _modDef4245.QEIP5j };
 const result = size.fileFinishedImporting("modules/conjure/linked_apps/conjureLinkedAppData.tsx");
 
 export function linkedAppCallerSides(project_id, has_preview) {
@@ -56,7 +56,7 @@ export function linkedAppChatData(targetHasPreview, build) {
     obj2 = { target: targetHasPreview.target };
     let str = "preview";
     if ("preview" === build) {
-      obj3 = { sentence: intl5.formatToPlainString(_modDef4244.Q0D9Ie, obj2), options: [] };
+      obj3 = { sentence: intl5.formatToPlainString(_modDef4245.Q0D9Ie, obj2), options: [] };
       intl5 = intl6.intl;
       return obj3;
     } else if (targetHasPreview.callerHasPreview) {
@@ -68,9 +68,9 @@ export function linkedAppChatData(targetHasPreview, build) {
       const intl2 = intl6.intl;
       const formatToPlainString = intl2.formatToPlainString;
       if ("live" === str) {
-        FKHnHv = _modDef4244["9iFuxr"];
+        FKHnHv = _modDef4245["9iFuxr"];
       } else {
-        FKHnHv = _modDef4244.FKHnHv;
+        FKHnHv = _modDef4245.FKHnHv;
       }
       const obj4 = { sentence: formatToPlainString(FKHnHv, obj2), options: null };
       if (targetHasPreview.targetLive) {
@@ -88,7 +88,7 @@ export function linkedAppChatData(targetHasPreview, build) {
       }
       return tmp9;
     } else {
-      const obj7 = { sentence: intl.formatToPlainString(_modDef4244.QhPlAe, obj2), options: [] };
+      const obj7 = { sentence: intl.formatToPlainString(_modDef4245.QhPlAe, obj2), options: [] };
       intl = intl6.intl;
       return obj7;
     }
@@ -118,7 +118,7 @@ export function linkedAppSettings(targetHasPreview, build) {
     const intl = require("intl").intl;
     const formatToPlainString = intl.formatToPlainString;
     const callerHasPreview = targetHasPreview.callerHasPreview;
-    const tmp5 = require("module_4244");
+    const tmp5 = require("module_4245");
     if (callerHasPreview) {
       YbEDjJ = tmp5.zxQdoh;
       tmp6 = tmp4;
@@ -201,7 +201,7 @@ export function linkedAppDataSummary(linkedAppTargetSidesResult, build) {
     const callerHasPreview = linkedAppTargetSidesResult.callerHasPreview;
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const tmp6 = _modDef4244;
+    const tmp6 = _modDef4245;
     if (callerHasPreview) {
       obj2 = { caller: linkedAppTargetSidesResult.caller, preview: intl3.string(obj2[str5]), live: intl4.string(tmp9[str6]) };
       str5 = "preview";
@@ -253,7 +253,7 @@ export function linkedAppHeaderAria(caller, flow) {
   const intl = intl6.intl;
   const formatToPlainString = intl.formatToPlainString;
   if (null == flow) {
-    tkCyiM = _modDef4244.tkCyiM;
+    tkCyiM = _modDef4245.tkCyiM;
   } else {
     tkCyiM = obj3[flow];
   }
@@ -263,5 +263,5 @@ export function linkedAppHeaderAria(caller, flow) {
 export function linkedAppChatAria(caller) {
   const intl = intl6.intl;
   obj = { caller: caller.caller, target: caller.target };
-  return intl.formatToPlainString(_modDef4244.rCqv8t, obj);
+  return intl.formatToPlainString(_modDef4245.rCqv8t, obj);
 }

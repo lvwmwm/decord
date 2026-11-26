@@ -1,29 +1,29 @@
-// Module ID: 14137
-// Function ID: 14138
+// Module ID: 14189
+// Function ID: 14190
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 5013, 1653, 5222, 504, 2]
+// Dependencies: [19, 5044, 1654, 5253, 504, 2]
 // Exports: useSkeletonPulseStyle
 
-// Module 14137 (GameProfileSkeletonPulse)
+// Module 14189 (GameProfileSkeletonPulse)
 import get_initialized from "get initialized" /* 504 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import module_1653_mod from "module_1653" /* 1653 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import module_1654_mod from "module_1654" /* 1654 */;
 import size from "module_2" /* 2 */;
 
 let closure_7, set;
 
-let module_1653;
+let module_1654;
 let tmp3;
 let tmp4;
 let tmp5;
 let tmp6;
 let c4 = 1300;
-const Easing = module_1653.Easing;
-const inOutResult = Easing.inOut(module_1653.Easing.quad);
-module_1653 = module_1653_mod;
-let closure_5 = module_1653.makeMutable(0);
+const Easing = module_1654.Easing;
+const inOutResult = Easing.inOut(module_1654.Easing.quad);
+module_1654 = module_1654_mod;
+let closure_5 = module_1654.makeMutable(0);
 let c6 = 0;
 let c7 = false;
 let items = [{ code: "(function getPulseOpacity_GameProfileSkeletonPulseTsx1(phase,phaseOffset){let[MIN_OPACITY,MAX_OPACITY,DEFAULT_TIMING_EASING]=this.__closure;const shiftedPhase=(phase+phaseOffset)%1;const cyclePhase=shiftedPhase<0?shiftedPhase+1:shiftedPhase;const pulseProgress=cyclePhase<0.5?cyclePhase*2:(1-cyclePhase)*2;return MIN_OPACITY+(MAX_OPACITY-MIN_OPACITY)*DEFAULT_TIMING_EASING(pulseProgress);})" }, 0.05, 0.1, inOutResult];
@@ -75,7 +75,7 @@ export function useSkeletonPulseStyle(animationDelayMs) {
     }
     if (tmp2 !== closure_7) {
       closure_7 = tmp2;
-      let obj2 = module_1653;
+      let obj2 = module_1654;
       let tmp10 = closure_1_5;
       obj2.cancelAnimation(closure_1_5);
       let result = closure_1_5.set(0);
@@ -117,22 +117,22 @@ export function useSkeletonPulseStyle(animationDelayMs) {
   const effect1 = react.useEffect(() => {
     if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_7) {
       closure_7 = tmp;
-      const obj2 = module_1653;
+      const obj2 = module_1654;
       obj2.cancelAnimation(closure_1_5);
       const result = closure_1_5.set(0);
       const tmp9 = closure_1_5;
       if (sum > 0 && !AccessibilityStore.useReducedMotion) {
         set = tmp9.set;
-        const withRepeat = module_1653.withRepeat;
-        module_1653;
-        const obj = { duration, easing: module_1653.Easing.linear };
+        const withRepeat = module_1654.withRepeat;
+        module_1654;
+        const obj = { duration, easing: module_1654.Easing.linear };
         const withTiming = timing_timing.withTiming;
         timing_timing;
         const result1 = set(withRepeat(withTiming(1, obj), -1, false));
       }
     }
   }, items1);
-  let obj2 = module_1653;
+  let obj2 = module_1654;
   const items2 = [closure_9, stateFromStores, 0.1, getPulseOpacity, closure_5, -animationDelayMs % c4 / c4];
   let c0;
   let c1;

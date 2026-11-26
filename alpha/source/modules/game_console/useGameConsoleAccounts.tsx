@@ -1,14 +1,14 @@
-// Module ID: 10463
-// Function ID: 10464
+// Module ID: 10508
+// Function ID: 10509
 // Name: useGameConsoleAccounts
-// Dependencies: [7431, 1071, 504, 1254, 2]
+// Dependencies: [7462, 1071, 504, 1255, 2]
 // Exports: default
 
-// Module 10463 (useGameConsoleAccounts)
+// Module 10508 (useGameConsoleAccounts)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7462 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

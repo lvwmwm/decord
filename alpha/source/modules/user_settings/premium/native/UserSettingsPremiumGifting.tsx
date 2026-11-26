@@ -1,32 +1,32 @@
-// Module ID: 13967
-// Function ID: 13968
+// Module ID: 14019
+// Function ID: 14020
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 6352, 2178, 6328, 1071, 1388, 21, 5012, 575, 6109, 9064, 1500, 1628, 504, 13968, 12, 5759, 9067, 13970, 6107, 13971, 13972, 9334, 6332, 9069, 6357, 7316, 7320, 9653, 5699, 13973, 5603, 1112, 13974, 13980, 2910, 13984, 13996, 13999, 14001, 9221, 7322, 2942, 14002, 7016, 2]
+// Dependencies: [32, 19, 17, 6383, 2179, 6359, 1071, 1389, 21, 5043, 575, 6140, 9106, 1501, 1629, 504, 14020, 12, 5790, 9109, 14022, 6138, 14023, 14024, 9376, 6363, 9111, 6388, 7347, 7351, 9695, 5730, 14025, 5634, 1112, 14026, 14032, 2911, 14036, 14048, 14051, 14053, 9263, 7353, 2943, 14054, 7047, 2]
 // Exports: default
 
-// Module 13967 (UserSettingsPremiumGifting)
+// Module 14019 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5759 */;
-import TableRowGroup from "TableRowGroup" /* 6109 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 6332 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7316 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7320 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 9069 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9653 */;
-import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 13968 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13974 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13984 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5790 */;
+import TableRowGroup from "TableRowGroup" /* 6140 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 6363 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7347 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7351 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 9111 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9695 */;
+import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 14020 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14026 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14036 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6352 */;
-import SubscriptionStore from "SubscriptionStore" /* 2178 */;
-import EntitlementStore from "EntitlementStore" /* 6328 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6383 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import EntitlementStore from "EntitlementStore" /* 6359 */;
 import Constants from "Constants" /* 1071 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

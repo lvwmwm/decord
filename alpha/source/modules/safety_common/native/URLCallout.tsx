@@ -1,17 +1,17 @@
-// Module ID: 14662
-// Function ID: 14663
+// Module ID: 14715
+// Function ID: 14716
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 5012, 575, 14663, 5603, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 14716, 5634, 2]
 // Exports: URLCallout
 
-// Module 14662 (URLCallout)
+// Module 14715 (URLCallout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import SharedStateUtils from "SharedStateUtils" /* 14663 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import SharedStateUtils from "SharedStateUtils" /* 14716 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;

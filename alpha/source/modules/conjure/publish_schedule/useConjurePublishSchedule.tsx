@@ -1,13 +1,13 @@
-// Module ID: 18482
-// Function ID: 18483
+// Module ID: 18545
+// Function ID: 18546
 // Name: useConjurePublishSchedule
-// Dependencies: [5, 32, 19, 7662, 504, 14696, 1112, 4244, 14697, 2]
+// Dependencies: [5, 32, 19, 7693, 504, 14749, 1112, 4245, 14750, 2]
 // Exports: default
 
-// Module 18482 (useConjurePublishSchedule)
+// Module 18545 (useConjurePublishSchedule)
 import intl3 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import ConjureConnectionStore2 from "ConjureConnectionStore" /* 7662 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import ConjureConnectionStore2 from "ConjureConnectionStore" /* 7693 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -83,7 +83,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
         nextPromise.catch(() => {
           if (ref.current.value === closure_1) {
             const intl = intl3.intl;
-            closure_8(intl.string(_modDef4244.n25haz));
+            closure_8(intl.string(_modDef4245.n25haz));
             closure_4(false);
           }
         });
@@ -120,7 +120,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -207,7 +207,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
                   closure_129_7(false);
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               } else {
                 closure_129_3(tmp);
                 result = closure_129_9;
@@ -224,7 +224,7 @@ export default function useConjurePublishSchedule(arg0, arg1) {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp72) {
           message = tmp72;
           if (0 === c3) {

@@ -1,16 +1,16 @@
-// Module ID: 7620
-// Function ID: 7621
+// Module ID: 7651
+// Function ID: 7652
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 7621, 1071, 38, 3, 1284, 572, 1447, 2]
+// Dependencies: [32, 5, 7652, 1071, 38, 3, 1285, 572, 1448, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 7620 (ApplicationAssetUtils)
+// Module 7651 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1448 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7621 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 7652 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f91446 = (item) => {
+const f91688 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -104,7 +104,7 @@ obj = function _resolveExternalAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       while (true) {
@@ -175,7 +175,7 @@ obj = function _resolveExternalAssets() {
           }
         }
         c9 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     }
   });
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f91446).length > 0) {
+  if (arr.filter(f91688).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -522,7 +522,7 @@ export { fetchAssetIds };
 export function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f91446).length > 0) {
+  if (arr.filter(f91688).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

@@ -1,27 +1,27 @@
-// Module ID: 12810
-// Function ID: 12811
+// Module ID: 12859
+// Function ID: 12860
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1386, 6365, 21, 575, 5012, 1494, 504, 5068, 1112, 3462, 12811, 12589, 12812, 12823, 3494, 12824, 2]
+// Dependencies: [17, 1387, 6396, 21, 575, 5043, 1495, 504, 5099, 1112, 3463, 12860, 12850, 12861, 12872, 3495, 12873, 2]
 // Exports: default
 
-// Module 12810 (CheckpointWelcomeScreen)
+// Module 12859 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import _modDef3462 from "module_3462" /* 3462 */;
-import _modDef3494 from "module_3494" /* 3494 */;
-import UserUtils from "UserUtils" /* 5068 */;
-import CheckpointScreen from "CheckpointScreen" /* 12589 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12811 */;
-import CheckpointNavigationControls from "CheckpointNavigationControls" /* 12812 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 12823 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12824 */;
-import UserStore from "UserStore" /* 1386 */;
-import CheckpointConstants from "CheckpointConstants" /* 6365 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import _modDef3463 from "module_3463" /* 3463 */;
+import _modDef3495 from "module_3495" /* 3495 */;
+import UserUtils from "UserUtils" /* 5099 */;
+import CheckpointScreen from "CheckpointScreen" /* 12850 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12860 */;
+import CheckpointNavigationControls from "CheckpointNavigationControls" /* 12861 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 12872 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12873 */;
+import UserStore from "UserStore" /* 1387 */;
+import CheckpointConstants from "CheckpointConstants" /* 6396 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointScreenDefault = CheckpointScreen;
@@ -77,7 +77,7 @@ export default function CheckpointWelcomeScreen() {
   const obj2 = UserUtils;
   const name = obj2.useName(stateFromStores);
   const intl = intl4.intl;
-  const stringResult = intl.string(_modDef3462["CdU/PF"]);
+  const stringResult = intl.string(_modDef3463["CdU/PF"]);
   let str = "Check\u200Bpoint";
   if ("Checkpoint" !== stringResult) {
     str = stringResult;
@@ -99,7 +99,7 @@ export default function CheckpointWelcomeScreen() {
     ({ titleText: arr7[0], wideTitleText: arr7[1] } = tmp);
     items3 = [hasOwnProperty(TextWritingAnimationDefault, obj6), ];
     ({ wideSubtitle: obj19.style, wideSubtitleText: obj19.textStyle } = tmp);
-    const obj7 = { style: null, textStyle: null, text: intl3.formatToPlainString(_modDef3494.xhZ23b, obj8), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+    const obj7 = { style: null, textStyle: null, text: intl3.formatToPlainString(_modDef3495.xhZ23b, obj8), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
     const tmp2Result4 = TextWritingAnimationDefault;
     intl3 = tmp5(1112).intl;
     obj8 = { username: name };
@@ -131,7 +131,7 @@ export default function CheckpointWelcomeScreen() {
     }
     obj15 = { children: hasOwnProperty(View, obj9) };
     items6 = [hasOwnProperty(tmp2Result5, obj14), , ];
-    const obj16 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3494.xhZ23b, obj17), delay: tmp17 + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+    const obj16 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3495.xhZ23b, obj17), delay: tmp17 + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
     const tmp2Result6 = TextWritingAnimationDefault;
     intl2 = tmp5(1112).intl;
     obj17 = { username: name };

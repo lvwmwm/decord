@@ -1,13 +1,13 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 10042
+// Function ID: 10043
 // Name: useIsScreenLandscape
-// Dependencies: [19, 1495, 1497, 2]
+// Dependencies: [19, 1496, 1498, 2]
 // Exports: getIsScreenLandscape, useIsScreenLandscape
 
-// Module 10000 (useIsScreenLandscape)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1497 */;
+// Module 10042 (useIsScreenLandscape)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1498 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1495 */;
+import DimensionsStore from "DimensionsStore" /* 1496 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/screen/useIsScreenLandscape.native.tsx");

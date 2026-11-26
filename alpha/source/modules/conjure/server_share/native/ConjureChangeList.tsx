@@ -1,29 +1,29 @@
-// Module ID: 18451
-// Function ID: 18452
+// Module ID: 18514
+// Function ID: 18515
 // Name: ConjureChangeList
-// Dependencies: [19, 17, 21, 12220, 7141, 17157, 7891, 7722, 10036, 7124, 12359, 11438, 11399, 10409, 5012, 575, 6084, 5603, 1112, 4244, 2]
+// Dependencies: [19, 17, 21, 12270, 7172, 17208, 7925, 7756, 10078, 7155, 12409, 11485, 11445, 10454, 5043, 575, 6115, 5634, 1112, 4245, 2]
 // Exports: default
 
-// Module 18451 (ConjureChangeList)
+// Module 18514 (ConjureChangeList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import GroupIcon from "GroupIcon" /* 7124 */;
-import AppsIcon from "AppsIcon" /* 7141 */;
-import GameControllerIcon from "GameControllerIcon" /* 7722 */;
-import IdCardIcon from "IdCardIcon" /* 7891 */;
-import ShieldIcon from "ShieldIcon" /* 10036 */;
-import SettingsIcon from "SettingsIcon" /* 10409 */;
-import ServerIcon from "ServerIcon" /* 11399 */;
-import MagicWandIcon from "MagicWandIcon" /* 11438 */;
-import RobotIcon from "RobotIcon" /* 12220 */;
-import UserIcon from "UserIcon" /* 12359 */;
-import BeakerIcon from "BeakerIcon" /* 17157 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import GroupIcon from "GroupIcon" /* 7155 */;
+import AppsIcon from "AppsIcon" /* 7172 */;
+import GameControllerIcon from "GameControllerIcon" /* 7756 */;
+import IdCardIcon from "IdCardIcon" /* 7925 */;
+import ShieldIcon from "ShieldIcon" /* 10078 */;
+import SettingsIcon from "SettingsIcon" /* 10454 */;
+import ServerIcon from "ServerIcon" /* 11445 */;
+import MagicWandIcon from "MagicWandIcon" /* 11485 */;
+import RobotIcon from "RobotIcon" /* 12270 */;
+import UserIcon from "UserIcon" /* 12409 */;
+import BeakerIcon from "BeakerIcon" /* 17208 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ export default function ConjureChangeList(rows) {
   _require = tmp;
   obj = { spacing: 8, children: items };
   let Stack = require("Stack/Stack").Stack;
-  let obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4244["kG/2e8"]) };
+  let obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4245["kG/2e8"]) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items = [closure_4(Text, obj2), ];

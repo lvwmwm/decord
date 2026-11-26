@@ -1,28 +1,28 @@
-// Module ID: 19485
-// Function ID: 19486
+// Module ID: 19548
+// Function ID: 19549
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [32, 19, 17, 2131, 11734, 21, 1653, 7024, 1186, 5012, 575, 10246, 11743, 11733, 5613, 19319, 5272, 1706, 19486, 2]
+// Dependencies: [32, 19, 17, 2132, 11782, 21, 1654, 7055, 1186, 5043, 575, 10288, 11791, 11781, 5644, 19382, 5303, 1707, 19549, 2]
 // Exports: default
 
-// Module 19485 (VoicePanelPIPPushToTalkOverlay)
+// Module 19548 (VoicePanelPIPPushToTalkOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import NativeViewDefault from "NativeView" /* 7024 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11743 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import NativeViewDefault from "NativeView" /* 7055 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import MediaEngineStore from "MediaEngineStore" /* 2132 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1653_mod = _mod1653;
+const module_1654_mod = _mod1654;
 let flag, importDefault, tmp2, tmp3;
 
 let c9;
@@ -32,16 +32,16 @@ let obj2;
 let size;
 let tmp;
 let tmp4;
-const LegacyBaseButton = tmp(5272);
-const VoicePanelPIPUtils = tmp(19319);
-const AssetRegistryDefault = tmp4(19486);
+const LegacyBaseButton = tmp(5303);
+const VoicePanelPIPUtils = tmp(19382);
+const AssetRegistryDefault = tmp4(19549);
 const StyleSheet = react_native.StyleSheet;
 const PUSH_TO_TALK_PIP_PHYSICS = VoicePanelConstants.PUSH_TO_TALK_PIP_PHYSICS;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
-let module_1653 = module_1653_mod;
-const NativeView = module_1653.createAnimatedComponent(NativeViewDefault);
-module_1653 = module_1653_mod;
-let closure_11 = module_1653.createAnimatedComponent(native.Icon);
+let module_1654 = module_1654_mod;
+const NativeView = module_1654.createAnimatedComponent(NativeViewDefault);
+module_1654 = module_1654_mod;
+let closure_11 = module_1654.createAnimatedComponent(native.Icon);
 const hitSlop = { top: 6, bottom: 6, left: 6, right: 6 };
 let createStyles = createStyles_mod;
 let obj = { iconContainer: size, overlay: obj2 };
@@ -96,7 +96,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
   const pIPState = obj.usePIPState();
   const isDockEnabled = react.useContext(VoicePanelStateContextDefault).isDockEnabled;
   const tmp5 = closure_13();
-  const obj3 = _mod1653;
+  const obj3 = _mod1654;
   const sharedValue = obj3.useSharedValue(false);
   importDefault = react.useRef(false);
   let items = [sharedValue];
@@ -116,7 +116,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
   require = tmp9;
   const WHITE = nativeDefault.unsafe_rawColors.WHITE;
   const BLACK = nativeDefault.unsafe_rawColors.BLACK;
-  const tmp10 = _mod1653;
+  const tmp10 = _mod1654;
   let items2 = [closure_14, tmp8, 48, 32, , , ];
   const useAnimatedStyle = tmp10.useAnimatedStyle;
   items2[4] = spring_spring.withSpring;
@@ -158,8 +158,8 @@ export default function VoicePanelPIPPushToTalkOverlay() {
   VoicePanelPIPPushToTalkOverlayTsx1.__initData = tmp12;
   const animatedStyle = useAnimatedStyle(VoicePanelPIPPushToTalkOverlayTsx1);
   let items4 = [closure_15, , , , , ];
-  const useAnimatedStyle2 = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle2 = _mod1654.useAnimatedStyle;
+  _mod1654;
   items4[1] = spring_spring.withSpring;
   items4[2] = tmp8;
   items4[3] = BLACK;
@@ -183,8 +183,8 @@ export default function VoicePanelPIPPushToTalkOverlay() {
   VoicePanelPIPPushToTalkOverlayTsx2.__initData = tmp21;
   const animatedStyle2 = useAnimatedStyle2(VoicePanelPIPPushToTalkOverlayTsx2);
   const items6 = [closure_16, , , , , , ];
-  const useAnimatedStyle3 = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle3 = _mod1654.useAnimatedStyle;
+  _mod1654;
   items6[1] = spring_spring.withSpring;
   items6[2] = tmp8;
   items6[3] = tmp11;
@@ -236,7 +236,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
     const items = [closure_17, , ];
     const onEnd = TapResult.maxDistance(30).onEnd;
     TapResult.maxDistance(30);
-    items[1] = _mod1706.scheduleOnRN;
+    items[1] = _mod1707.scheduleOnRN;
     items[2] = tmp9;
     let c0;
     let c1;
@@ -264,7 +264,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
     const result = maxPointersResult.shouldCancelWhenOutside(false);
     const items2 = [closure_18, , ];
     const onBegin = result.onBegin;
-    items2[1] = _mod1706.scheduleOnRN;
+    items2[1] = _mod1707.scheduleOnRN;
     items2[2] = tmp9;
     c0 = undefined;
     c1 = undefined;
@@ -282,7 +282,7 @@ export default function VoicePanelPIPPushToTalkOverlay() {
     const items4 = [closure_19, , ];
     const onFinalize = onBegin(VoicePanelPIPPushToTalkOverlayTsx5).onFinalize;
     onBegin(VoicePanelPIPPushToTalkOverlayTsx5);
-    items4[1] = _mod1706.scheduleOnRN;
+    items4[1] = _mod1707.scheduleOnRN;
     items4[2] = tmp9;
     c0 = undefined;
     c1 = undefined;

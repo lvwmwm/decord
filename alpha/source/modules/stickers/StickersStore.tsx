@@ -1,18 +1,18 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6927
+// Function ID: 6928
 // Name: StickersStore
-// Dependencies: [5, 4863, 4883, 6897, 6898, 4890, 4910, 10, 6899, 572, 504, 2]
+// Dependencies: [5, 4894, 4914, 6928, 6929, 4921, 4941, 10, 6930, 572, 504, 2]
 
-// Module 6896 (StickersStore)
+// Module 6927 (StickersStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4890 */;
-import TryLoad from "TryLoad" /* 4910 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4921 */;
+import TryLoad from "TryLoad" /* 4941 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4863 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import GuildStickersStore from "GuildStickersStore" /* 6897 */;
-import StickersPackStore from "StickersPackStore" /* 6898 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4894 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import GuildStickersStore from "GuildStickersStore" /* 6928 */;
+import StickersPackStore from "StickersPackStore" /* 6929 */;
 import size from "module_2" /* 2 */;
 
 let Loaded, c2, c3;
@@ -33,7 +33,7 @@ let obj = function _loadSavedGuildStickers() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ let obj = function _loadSavedGuildStickers() {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp14) {
         c3 = 3;
         throw tmp14;

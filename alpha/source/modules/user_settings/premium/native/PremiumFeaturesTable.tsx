@@ -1,27 +1,27 @@
-// Module ID: 13885
-// Function ID: 13886
+// Module ID: 13937
+// Function ID: 13938
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1071, 1388, 21, 5012, 575, 6837, 5221, 5019, 1186, 13886, 13887, 5603, 1112, 5567, 9655, 2173, 13888, 13889, 5699, 13890, 13891, 13892, 13893, 13894, 2]
+// Dependencies: [32, 19, 17, 1071, 1389, 21, 5043, 575, 6868, 5252, 5050, 1186, 13938, 13939, 5634, 1112, 5598, 9697, 2174, 13940, 13941, 5730, 13942, 13943, 13944, 13945, 13946, 2]
 // Exports: default
 
-// Module 13885 (PremiumFeaturesTable)
+// Module 13937 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl32 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import shared from "shared" /* 5019 */;
-import useThemeDefault from "useTheme" /* 5221 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import LegacyTokens from "LegacyTokens" /* 6837 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13886 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13887 */;
+import shared from "shared" /* 5050 */;
+import useThemeDefault from "useTheme" /* 5252 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import LegacyTokens from "LegacyTokens" /* 6868 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13938 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13939 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;

@@ -1,11 +1,11 @@
-// Module ID: 9393
-// Function ID: 9394
+// Module ID: 9435
+// Function ID: 9436
 // Name: useShouldConvertBioEmoji
-// Dependencies: [4837, 2]
+// Dependencies: [4868, 2]
 // Exports: default, getShouldConvertBioEmoji
 
-// Module 9393 (useShouldConvertBioEmoji)
-import UserSettings from "UserSettings" /* 4837 */;
+// Module 9435 (useShouldConvertBioEmoji)
+import UserSettings from "UserSettings" /* 4868 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useShouldConvertBioEmoji.tsx");

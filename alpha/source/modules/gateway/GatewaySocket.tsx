@@ -1,10 +1,10 @@
-// Module ID: 15055
-// Function ID: 15056
+// Module ID: 15105
+// Function ID: 15106
 // Name: GatewaySocket
-// Dependencies: [32, 5, 1360, 1071, 3, 15056, 15058, 1088, 15059, 559, 15060, 15067, 15069, 15088, 10, 9, 5018, 15065, 1378, 1284, 1255, 38, 504, 8270, 8274, 8277, 8275, 500, 15089, 15072, 1352, 5780, 5785, 1241, 572, 2]
+// Dependencies: [32, 5, 1361, 1071, 3, 15106, 15108, 1088, 15109, 559, 15110, 15117, 15119, 15138, 10, 9, 5049, 15115, 1379, 1285, 1256, 38, 504, 8312, 8316, 8319, 8317, 500, 15139, 15122, 1353, 5811, 5816, 1242, 572, 2]
 // Exports: setAccountSwitchUserId
 
-// Module 15055 (GatewaySocket)
+// Module 15105 (GatewaySocket)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -12,22 +12,22 @@ import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1352 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5018 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5780 */;
-import MetricEvents from "MetricEvents" /* 5785 */;
-import GatewayEncodingDefault from "GatewayEncoding" /* 15056 */;
-import GatewaySocketOpCodes2 from "GatewaySocketOpCodes" /* 15059 */;
-import GatewaySocketDispatcherDefault from "GatewaySocketDispatcher" /* 15060 */;
-import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 15065 */;
-import ConnectionStateDefault from "ConnectionState" /* 15067 */;
-import GatewayCompressionHandler from "GatewayCompressionHandler" /* 15069 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15088 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1353 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5049 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5811 */;
+import MetricEvents from "MetricEvents" /* 5816 */;
+import GatewayEncodingDefault from "GatewayEncoding" /* 15106 */;
+import GatewaySocketOpCodes2 from "GatewaySocketOpCodes" /* 15109 */;
+import GatewaySocketDispatcherDefault from "GatewaySocketDispatcher" /* 15110 */;
+import GatewaySocketAnalytics from "GatewaySocketAnalytics" /* 15115 */;
+import ConnectionStateDefault from "ConnectionState" /* 15117 */;
+import GatewayCompressionHandler from "GatewayCompressionHandler" /* 15119 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 15138 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1360 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1361 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         logger.info("Skipping _connect because socket is paused");
       } else {
         const tmp5 = self;
-        self.connectionState = self(15067).CONNECTING;
+        self.connectionState = self(15117).CONNECTING;
         self.nextReconnectIsImmediate = false;
         let compressionHandler = self.compressionHandler;
         const algorithm = compressionHandler.getAlgorithm();
@@ -243,7 +243,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         const str1 = str11.toString();
         ({ compressionHandler: compressionHandler2, _handleClose } = self);
         let closure_1 = _handleClose.bind(self);
-        const f107411 = (byteLength, compressed_byte_size) => {
+        const f107714 = (byteLength, compressed_byte_size) => {
           let compressionHandler;
           let d;
           let num3;
@@ -318,7 +318,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         let closure_3 = 0;
         compressionHandler2.dataReady((arg0) => {
           try {
-            f107411(arg0, closure_3);
+            f107714(arg0, closure_3);
             closure_3 = 0;
           } catch (tmp5) {
             closure_3 = 0;
@@ -400,7 +400,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
           }
         }
         if (null == tmp30) {
-          const tmp46 = tmp5(15058)(str1);
+          const tmp46 = tmp5(15108)(str1);
           tmp46.binaryType = "arraybuffer";
           tmp30 = tmp46;
         }
@@ -641,7 +641,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
     if (isIOSResult) {
       self.iosGoingAwayEventCount = self.iosGoingAwayEventCount + 1;
       if (3 === self.iosGoingAwayEventCount) {
-        const HTTP = tmp(1284).HTTP;
+        const HTTP = tmp(1285).HTTP;
         const obj2 = { url: constants2.ME, headers: obj3, rejectWithError: false };
         obj3 = { authorization: self.token };
         const value = HTTP.get(obj2);
@@ -798,7 +798,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -934,7 +934,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
             closure_1_9.warn("Skipping identify because connectionState or identifyStartTime has changed");
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp87) {
           c3 = 3;
           throw tmp87;
@@ -1026,7 +1026,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
   }
   isConnected() {
     const self = this;
-    const tmp3 = this.connectionState === ConnectionStateDefault.IDENTIFYING || self.connectionState === tmp(15067).RESUMING || self.connectionState === tmp(15067).SESSION_ESTABLISHED;
+    const tmp3 = this.connectionState === ConnectionStateDefault.IDENTIFYING || self.connectionState === tmp(15117).RESUMING || self.connectionState === tmp(15117).SESSION_ESTABLISHED;
     return tmp3;
   }
   connect() {

@@ -1,12 +1,12 @@
-// Module ID: 7052
-// Function ID: 7053
+// Module ID: 7083
+// Function ID: 7084
 // Name: MarkupAttachmentLinkRule
-// Dependencies: [7053, 2068, 2]
+// Dependencies: [7084, 2069, 2]
 // Exports: matchAttachmentUrl
 
-// Module 7052 (MarkupAttachmentLinkRule)
-import _modDef2068 from "module_2068" /* 2068 */;
-import AttachmentUrlConstants from "AttachmentUrlConstants" /* 7053 */;
+// Module 7083 (MarkupAttachmentLinkRule)
+import _modDef2069 from "module_2069" /* 2069 */;
+import AttachmentUrlConstants from "AttachmentUrlConstants" /* 7084 */;
 import size from "module_2" /* 2 */;
 
 function match(arg0) {
@@ -21,8 +21,8 @@ function parse(attachmentUrl) {
 const arr = Array.from(AttachmentUrlConstants.ATTACHMENT_PATH_PREFIXES);
 const mapped = arr.map((item) => item.replaceAll("/", ""));
 const regExp = new RegExp("^https://(?:[A-Za-z0-9-]+\\.)*(?:(?:media|images)" + "(?:-[A-Za-z0-9]+)?" + "\\.discordapp\\.net|(?:cdn" + "(?:-[A-Za-z0-9]+)?" + "\\.discordapp\\.com))/(?:" + mapped.join("|") + ")/\\d+/\\d+/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?");
-let obj = { attachmentLink: { order: _modDef2068.defaultRules.url.order - 0.5, requiredFirstCharacters: ["h"], match, parse } };
-({ order: _modDef2068.defaultRules.url.order - 0.5, requiredFirstCharacters: ["h"], match, parse });
+let obj = { attachmentLink: { order: _modDef2069.defaultRules.url.order - 0.5, requiredFirstCharacters: ["h"], match, parse } };
+({ order: _modDef2069.defaultRules.url.order - 0.5, requiredFirstCharacters: ["h"], match, parse });
 const result = size.fileFinishedImporting("modules/markup/MarkupAttachmentLinkRule.tsx");
 
 export default obj;

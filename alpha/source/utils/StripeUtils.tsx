@@ -1,15 +1,15 @@
-// Module ID: 5790
-// Function ID: 5791
+// Module ID: 5821
+// Function ID: 5822
 // Name: StripeUtils
-// Dependencies: [5, 32, 2188, 1071, 3, 5791, 1241, 5792, 1284, 504, 2]
+// Dependencies: [5, 32, 2189, 1071, 3, 5822, 1242, 5823, 1285, 504, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getPendingPaymentChallenge, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 5790 (StripeUtils)
+// Module 5821 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2188 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ function getStripe(payment_gateway_merchant_account_id) {
   } else {
     const tmp3 = _require;
     let tmp4 = dependencyMap;
-    let obj2 = require("module_5792");
+    let obj2 = require("module_5823");
     let closure_1 = obj2.loadStripe(tmp);
     const tmp6 = (async (arg0, value) => {
       if (c5 === 2) {
@@ -79,7 +79,7 @@ function getStripe(payment_gateway_merchant_account_id) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -182,7 +182,7 @@ obj = function _authenticatePaymentIntentForPaymentId() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12506
+// Function ID: 12507
 // Name: ConjureRemoveFromServerForm
-// Dependencies: [5, 19, 21, 12458, 5694, 6084, 5603, 12456, 5610, 1112, 4244, 2]
+// Dependencies: [5, 19, 21, 12507, 5725, 6115, 5634, 12505, 5641, 1112, 4245, 2]
 // Exports: default
 
-// Module 12457 (ConjureRemoveFromServerForm)
+// Module 12506 (ConjureRemoveFromServerForm)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -41,7 +41,7 @@ export default function ConjureRemoveFromServerForm(onRemoved) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ export default function ConjureRemoveFromServerForm(onRemoved) {
               closure_129_0();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp17) {
           c3 = 3;

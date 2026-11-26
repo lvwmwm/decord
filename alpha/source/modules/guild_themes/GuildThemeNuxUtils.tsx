@@ -1,14 +1,14 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17884
+// Function ID: 17885
 // Name: GuildThemeNuxUtils
-// Dependencies: [5, 1230, 6753, 4842, 2]
+// Dependencies: [5, 1231, 6784, 4873, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 17827 (GuildThemeNuxUtils)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4842 */;
-import flow_Client from "flow/Client" /* 6753 */;
+// Module 17884 (GuildThemeNuxUtils)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4873 */;
+import flow_Client from "flow/Client" /* 6784 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -29,7 +29,7 @@ let obj = function _saveGuildThemeNuxPreference() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _saveGuildThemeNuxPreference() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp12) {
         c5 = 3;
@@ -98,9 +98,9 @@ export function getInitialGuildThemeNuxSelection() {
   let GUILD;
   const defaultGuildThemePreference = UserSettingsProtoStore.getDefaultGuildThemePreference();
   if (defaultGuildThemePreference === flow_Client.GuildThemeSourcePreference.PERSONAL) {
-    GUILD = tmp2(6753).GuildThemeSourcePreference.PERSONAL;
+    GUILD = tmp2(6784).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(6753).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(6784).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 }

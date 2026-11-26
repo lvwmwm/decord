@@ -1,21 +1,21 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16501
+// Function ID: 16502
 // Name: QuestHomeSetting
-// Dependencies: [32, 19, 9848, 6840, 21, 5012, 575, 1500, 4927, 7316, 16451, 16470, 2]
+// Dependencies: [32, 19, 9890, 6871, 21, 5043, 575, 1501, 4958, 7347, 16502, 16521, 2]
 // Exports: default
 
-// Module 16450 (QuestHomeSetting)
+// Module 16501 (QuestHomeSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useNavigation from "useNavigation" /* 1500 */;
-import _slicedToArray2 from "_slicedToArray" /* 4927 */;
-import useQuestHomeHeaderDefault from "useQuestHomeHeader" /* 16451 */;
-import QuestHomeDefault from "QuestHome" /* 16470 */;
+import useNavigation from "useNavigation" /* 1501 */;
+import _slicedToArray2 from "_slicedToArray" /* 4958 */;
+import useQuestHomeHeaderDefault from "useQuestHomeHeader" /* 16502 */;
+import QuestHomeDefault from "QuestHome" /* 16521 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9848 */;
-import QuestConstants from "QuestConstants" /* 6840 */;
-import createStyles from "createStyles" /* 5012 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9890 */;
+import QuestConstants from "QuestConstants" /* 6871 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, navigation;
@@ -39,9 +39,9 @@ export default function QuestHomeSetting() {
   let tmp4;
   let tmp6;
   let tmp7;
-  const f110029 = (item) => closure_1_7(item);
-  const f110030 = (item) => null != item;
-  const f110031 = () => {
+  const f110340 = (item) => closure_1_7(item);
+  const f110341 = (item) => null != item;
+  const f110342 = () => {
     let SUGGESTED = QuestHomeNavigationStore.getField("sort");
     if (null == SUGGESTED) {
       SUGGESTED = constants.SUGGESTED;
@@ -51,15 +51,15 @@ export default function QuestHomeSetting() {
     }
     return SUGGESTED;
   };
-  const f110032 = () => {
+  const f110343 = () => {
     let found;
     const str = QuestHomeNavigationStore.getField("filter");
     if (null == str) {
       found = closure_1_10;
     } else {
       const parts = str.split(",");
-      const mapped = parts.map(f110029);
-      found = mapped.filter(f110030);
+      const mapped = parts.map(f110340);
+      found = mapped.filter(f110341);
       if (found.length <= 0) {
         found = closure_1_10;
       }
@@ -67,12 +67,12 @@ export default function QuestHomeSetting() {
     return found;
   };
   let tmp = closure_9();
-  [tmp3, tmp4] = _slicedToArray(react.useState(f110031), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f110342), 2);
   require = tmp4;
-  const tmp2 = _slicedToArray(react.useState(f110031), 2);
-  [tmp6, tmp7] = _slicedToArray(react.useState(f110032), 2);
+  const tmp2 = _slicedToArray(react.useState(f110342), 2);
+  [tmp6, tmp7] = _slicedToArray(react.useState(f110343), 2);
   importDefault = tmp7;
-  const tmp5 = _slicedToArray(react.useState(f110032), 2);
+  const tmp5 = _slicedToArray(react.useState(f110343), 2);
   const effect = react.useEffect(() => {
     const obj = { equalityFn: _slicedToArray2.shallow, fireImmediately: true };
     return QuestHomeNavigationStore.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
@@ -94,8 +94,8 @@ export default function QuestHomeSetting() {
           found = closure_2_10;
         } else {
           const parts = str.split(",");
-          const mapped = parts.map(f110029);
-          found = mapped.filter(f110030);
+          const mapped = parts.map(f110340);
+          found = mapped.filter(f110341);
           if (found.length <= 0) {
             found = closure_2_10;
           }

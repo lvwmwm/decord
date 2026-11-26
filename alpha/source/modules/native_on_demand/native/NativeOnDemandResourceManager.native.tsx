@@ -1,16 +1,16 @@
-// Module ID: 19726
-// Function ID: 19727
+// Module ID: 19790
+// Function ID: 19791
 // Name: NativeOnDemandResourceManager
-// Dependencies: [5, 2131, 2118, 1071, 7444, 8673, 510, 5965, 2]
+// Dependencies: [5, 2132, 2119, 1071, 7475, 8715, 510, 5996, 2]
 
-// Module 19726 (NativeOnDemandResourceManager)
+// Module 19790 (NativeOnDemandResourceManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1071 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5965 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5996 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import AppStateStore from "AppStateStore" /* 2118 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import MediaEngineStore from "MediaEngineStore" /* 2132 */;
+import AppStateStore from "AppStateStore" /* 2119 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -51,7 +51,7 @@ class NativeOnDemandResourceManager extends AutomaticLifecycleManager {
           const obj7 = { value, done: true };
           return obj7;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -124,7 +124,7 @@ class NativeOnDemandResourceManager extends AutomaticLifecycleManager {
             closure_129_0.restoreAutoThreshold();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp32) {
           c3 = 3;
           throw tmp32;

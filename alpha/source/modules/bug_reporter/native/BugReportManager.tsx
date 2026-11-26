@@ -1,16 +1,16 @@
-// Module ID: 10686
-// Function ID: 10687
+// Module ID: 10731
+// Function ID: 10732
 // Name: BugReportManager
-// Dependencies: [5, 17, 1360, 1071, 7838, 1378, 10581, 10583, 1268, 7444, 7845, 10687, 2]
+// Dependencies: [5, 17, 1361, 1071, 7872, 1379, 10626, 10628, 1269, 7475, 7879, 10732, 2]
 
-// Module 10686 (BugReportManager)
+// Module 10731 (BugReportManager)
 import Constants from "Constants" /* 1071 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7838 */;
-import react_nativeDefault from "react-native" /* 7845 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
+import react_nativeDefault from "react-native" /* 7879 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1360 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1361 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_3, duration;
@@ -29,7 +29,7 @@ function showNotification(uri) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ function showNotification(uri) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -105,7 +105,7 @@ function showNotification(uri) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -161,7 +161,7 @@ function showNotification(uri) {
             obj8 = tmp(duration[8]);
             enqueueNotification(obj10);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -216,7 +216,7 @@ class BugReportManager extends AutomaticLifecycleManager {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -263,7 +263,7 @@ class BugReportManager extends AutomaticLifecycleManager {
               addScreenshotEvent();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp12) {
           c3 = 3;

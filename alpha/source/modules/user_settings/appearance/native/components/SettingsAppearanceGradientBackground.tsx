@@ -1,16 +1,16 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16911
+// Function ID: 16912
 // Name: SettingsAppearanceGradientBackground
-// Dependencies: [19, 17, 16834, 21, 1653, 5567, 16861, 5222, 5225, 575, 16862, 2]
+// Dependencies: [19, 17, 16885, 21, 1654, 5598, 16912, 5253, 5256, 575, 16913, 2]
 
-// Module 16860 (SettingsAppearanceGradientBackground)
+// Module 16911 (SettingsAppearanceGradientBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import LinearGradient from "LinearGradient" /* 5567 */;
-import SettingsAppearancePickerUtils from "SettingsAppearancePickerUtils" /* 16861 */;
+import LinearGradient from "LinearGradient" /* 5598 */;
+import SettingsAppearancePickerUtils from "SettingsAppearancePickerUtils" /* 16912 */;
 import react from "react" /* 19 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16834 */;
-import module_1653_mod from "module_1653" /* 1653 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16885 */;
+import module_1654_mod from "module_1654" /* 1654 */;
 import size_mod from "module_2" /* 2 */;
 
 let colors, nativeEvent, num2, point, point1, set, themeCurrent, themePrev, tmp4, tmp5, tmp6, tmp7, value, value1;
@@ -18,13 +18,13 @@ let colors, nativeEvent, num2, point, point1, set, themeCurrent, themePrev, tmp4
 let items;
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
-let module_1653 = module_1653_mod;
-let num = module_1653.processColor("rgba(0, 0, 0, 0)");
+let module_1654 = module_1654_mod;
+let num = module_1654.processColor("rgba(0, 0, 0, 0)");
 if (num == null) {
   num = 0;
 }
-module_1653 = module_1653_mod;
-let closure_7 = module_1653.createAnimatedComponent(LinearGradient.LinearGradientNativeComponent);
+module_1654 = module_1654_mod;
+let closure_7 = module_1654.createAnimatedComponent(LinearGradient.LinearGradientNativeComponent);
 let obj = { colors: items, locations: [], startPoint: { x: 0, y: 0 }, endPoint: { x: 0, y: 0 } };
 items = [num, num];
 let closure_9 = { code: "(function SettingsAppearanceGradientBackgroundTsx1(){let[gradientSize,animatedLinearGradientLoadingProps,themeState,interpolate,tweener,getGradientStartPoint,processColor,interpolateColor]=this.__closure;const{width:width,height:height}=gradientSize.get();if(width===0||height===0){return animatedLinearGradientLoadingProps;}const{themePrev:{colors:colorsPrev,angle:anglePrev},themeCurrent:{colors:colorsCurrent,angle:angleCurrent}}=themeState.get();const angle=90-interpolate(tweener.get(),[0,1],[anglePrev,angleCurrent]);const originPoint=getGradientStartPoint(angle,width,height);return{colors:colorsPrev.map(function(_,i){var _processColor;return(_processColor=processColor(interpolateColor(tweener.get(),[0,1],[colorsPrev[i].hex,colorsCurrent[i].hex])))!==null&&_processColor!==void 0?_processColor:0;}),locations:colorsPrev.map(function(_,i){return interpolate(tweener.get(),[0,1],[colorsPrev[i].stop/100,colorsCurrent[i].stop/100]);}),startPoint:{x:(width/2+originPoint[0])/width,y:(height/2-originPoint[1])/height},endPoint:{x:(width/2-originPoint[0])/width,y:(height/2+originPoint[1])/height}};})" };

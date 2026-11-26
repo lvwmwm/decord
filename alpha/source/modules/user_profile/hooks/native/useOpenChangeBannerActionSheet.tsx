@@ -1,21 +1,22 @@
-// Module ID: 16001
-// Function ID: 16002
+// Module ID: 16031
+// Function ID: 16032
 // Name: useOpenChangeBannerActionSheet
-// Dependencies: [19, 5226, 16002, 2119, 9392, 11898, 16016, 16016, 2]
+// Dependencies: [19, 5257, 16032, 2120, 9434, 11946, 16046, 16046, 2]
 // Exports: default
 
-// Module 16001 (useOpenChangeBannerActionSheet)
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+// Module 16031 (useOpenChangeBannerActionSheet)
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const UserProfileActionCreators = tmp3(9392);
+const UserProfileActionCreators = tmp3(9434);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useOpenChangeBannerActionSheet.tsx");
 
 export default function useOpenChangeBannerActionSheet(user) {
   user = user.user;
+  const guildId = user.guildId;
   const analyticsLocations = user.analyticsLocations;
   let flag = user.isTryItOut;
   if (flag === undefined) {
@@ -25,8 +26,8 @@ export default function useOpenChangeBannerActionSheet(user) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let items = [user, analyticsLocations, flag, flag2];
-  return flag2.useCallback(() => {
+  let items = [user, guildId, analyticsLocations, flag, flag2];
+  return flag.useCallback(() => {
     let fn;
     let items;
     const tmp2 = ActionSheetActionCreatorsDefault;
@@ -36,22 +37,23 @@ export default function useOpenChangeBannerActionSheet(user) {
       user,
       analyticsLocations: items,
       onBannerChange: fn,
+      guildId,
       showRemoveBanner: flag2,
       isTryItOut: flag,
       onGifBannerSelect: function openGifPicker() {
         let GIFSelectionContext;
-        const obj = analyticsLocations(flag[1]);
+        const obj = guildId(analyticsLocations[1]);
         obj.hideActionSheet();
-        const openLazy = analyticsLocations(flag[1]).openLazy;
-        const obj2 = { profileAssetType: user(flag[7]).ProfileAssetType.BANNER, selectionContext: closure_1_2 ? GIFSelectionContext.PROFILE_TRY_IT_OUT : GIFSelectionContext.PROFILE_EDIT };
-        analyticsLocations(flag[1]);
-        const tmp3 = user(flag[3])(flag[6], flag.paths);
-        GIFSelectionContext = user(flag[7]).GIFSelectionContext;
+        const openLazy = guildId(analyticsLocations[1]).openLazy;
+        const obj2 = { profileAssetType: user(analyticsLocations[7]).ProfileAssetType.BANNER, selectionContext: flag ? GIFSelectionContext.PROFILE_TRY_IT_OUT : GIFSelectionContext.PROFILE_EDIT, guildId };
+        guildId(analyticsLocations[1]);
+        const tmp3 = user(analyticsLocations[3])(analyticsLocations[6], analyticsLocations.paths);
+        GIFSelectionContext = user(analyticsLocations[7]).GIFSelectionContext;
         openLazy(tmp3, "Select GIF Banner", obj2);
       }
     };
     items = analyticsLocations;
-    const tmp4 = asyncRequire(16002, dependencyMap.paths);
+    const tmp4 = asyncRequire(16032, dependencyMap.paths);
     if (analyticsLocations == null) {
       items = [];
     }
@@ -59,8 +61,8 @@ export default function useOpenChangeBannerActionSheet(user) {
       fn = UserProfileActionCreators.setTryItOutBanner;
     } else {
       fn = (banner) => {
-        const obj = user(flag[5]);
-        const obj2 = { banner };
+        const obj = user(analyticsLocations[5]);
+        const obj2 = { guildId, banner };
         return obj.setPendingChanges(obj2);
       };
     }

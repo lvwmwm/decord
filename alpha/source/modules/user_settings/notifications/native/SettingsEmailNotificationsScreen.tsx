@@ -1,18 +1,18 @@
-// Module ID: 17058
-// Function ID: 17059
+// Module ID: 17109
+// Function ID: 17110
 // Name: SettingsEmailNotificationsScreen
-// Dependencies: [19, 15179, 9513, 21, 5012, 575, 15802, 17059, 504, 17060, 11914, 1112, 3206, 7364, 6084, 7907, 16139, 2]
+// Dependencies: [19, 15229, 9555, 21, 5043, 575, 15853, 17110, 504, 17111, 11962, 1112, 3207, 7395, 6115, 7941, 16190, 2]
 
-// Module 17058 (SettingsEmailNotificationsScreen)
+// Module 17109 (SettingsEmailNotificationsScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
-import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17060 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
+import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17111 */;
 import react from "react" /* 19 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15179 */;
-import createStyles from "createStyles" /* 5012 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15229 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let emailSettings;
@@ -71,7 +71,7 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
     SettingBuilders;
     if (isDeclarativeSettingsUIAvailable) {
       const intl = tmp3(1112).intl;
-      stringResult = intl.string(_modDef3206.dpeWco);
+      stringResult = intl.string(_modDef3207.dpeWco);
     }
     const obj = { label: stringResult, settings: tmp2.categories, subLabel: stringResult1 };
     stringResult1 = undefined;
@@ -80,7 +80,7 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
       const intl2 = tmp3(1112).intl;
       const string = intl2.string;
       if (isDeclarativeSettingsUIAvailable) {
-        WViBDk = _modDef3206.aPtRHt;
+        WViBDk = _modDef3207.aPtRHt;
       } else {
         WViBDk = tmp3(1112).t.WViBDk;
       }

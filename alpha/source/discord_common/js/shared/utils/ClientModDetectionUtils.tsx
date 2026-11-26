@@ -1,10 +1,10 @@
-// Module ID: 1352
-// Function ID: 1353
+// Module ID: 1353
+// Function ID: 1354
 // Name: ClientModDetectionUtils
 // Dependencies: [2]
 // Exports: usesClientMods
 
-// Module 1352 (ClientModDetectionUtils)
+// Module 1353 (ClientModDetectionUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/ClientModDetectionUtils.tsx");

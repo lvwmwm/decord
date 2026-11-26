@@ -1,21 +1,21 @@
-// Module ID: 19128
-// Function ID: 19129
+// Module ID: 19191
+// Function ID: 19192
 // Name: IconLabelBlock
-// Dependencies: [109, 19, 17, 21, 5012, 575, 5073, 1186, 5603, 11375, 5699, 5019, 2]
+// Dependencies: [109, 19, 17, 21, 5043, 575, 5104, 1186, 5634, 11421, 5730, 5050, 2]
 
-// Module 19128 (IconLabelBlock)
+// Module 19191 (IconLabelBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import shared from "shared" /* 5019 */;
-import native2 from "native" /* 5073 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import IconUploaderDefault from "IconUploader" /* 11375 */;
+import shared from "shared" /* 5050 */;
+import native2 from "native" /* 5104 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import IconUploaderDefault from "IconUploader" /* 11421 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

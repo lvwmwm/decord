@@ -1,12 +1,12 @@
-// Module ID: 14527
-// Function ID: 14528
+// Module ID: 14579
+// Function ID: 14580
 // Name: openUserProfileWidgetEditOptionsActionSheet
-// Dependencies: [5226, 14528, 2119, 2]
+// Dependencies: [5257, 14580, 2120, 2]
 // Exports: default
 
-// Module 14527 (openUserProfileWidgetEditOptionsActionSheet)
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+// Module 14579 (openUserProfileWidgetEditOptionsActionSheet)
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import size from "module_2" /* 2 */;
 
 const UserProfileWidgetEditOptionsActionSheet = "UserProfileWidgetEditOptionsActionSheet";
@@ -14,6 +14,6 @@ const result = size.fileFinishedImporting("modules/user_profile/native/openUserP
 
 export default function openUserProfileWidgetEditOptionsActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(14528, dependencyMap.paths), UserProfileWidgetEditOptionsActionSheet, arg0);
+  obj.openLazy(asyncRequire(14580, dependencyMap.paths), UserProfileWidgetEditOptionsActionSheet, arg0);
 };
 export const USER_PROFILE_WIDGET_EDIT_OPTIONS_ACTION_SHEET_KEY = "UserProfileWidgetEditOptionsActionSheet";

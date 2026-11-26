@@ -1,10 +1,10 @@
-// Module ID: 5963
-// Function ID: 5964
+// Module ID: 5994
+// Function ID: 5995
 // Name: SingleCpuCopyExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 5963 (SingleCpuCopyExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 5994 (SingleCpuCopyExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

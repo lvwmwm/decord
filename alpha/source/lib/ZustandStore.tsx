@@ -1,10 +1,10 @@
-// Module ID: 5201
-// Function ID: 5202
+// Module ID: 5232
+// Function ID: 5233
 // Name: ZustandStore
-// Dependencies: [1257, 5202, 1262, 2]
+// Dependencies: [1258, 5233, 1263, 2]
 // Exports: createZustandStore
 
-// Module 5201 (ZustandStore)
+// Module 5232 (ZustandStore)
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("lib/ZustandStore.tsx");
 export function createZustandStore(arg0) {
   let closure_1;
   _require = arg0;
-  let tmp = require("module_1257");
+  let tmp = require("module_1258");
   const createWithEqualityFn = tmp.createWithEqualityFn;
   let obj = require("combine");
   dependencyMap = createWithEqualityFn(obj.subscribeWithSelector((arg0, arg1, arg2) => {

@@ -1,27 +1,27 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 16796
+// Function ID: 16797
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 5013, 6840, 16629, 1071, 21, 5012, 16630, 1653, 5613, 16633, 16719, 8577, 1494, 1628, 504, 16628, 671, 16746, 1378, 9847, 16747, 2023, 8838, 5699, 5567, 2]
+// Dependencies: [32, 19, 17, 5044, 6871, 16680, 1071, 21, 5043, 16681, 1654, 5644, 16684, 16770, 8619, 1495, 1629, 504, 16679, 671, 16797, 1379, 9889, 16798, 2024, 8880, 5730, 5598, 2]
 
-// Module 16745 (QuestDockVideoBackground)
+// Module 16796 (QuestDockVideoBackground)
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1071 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import react_nativeDefault from "react-native" /* 2023 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import QuestDockUtils from "QuestDockUtils" /* 16628 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16630 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import react_nativeDefault from "react-native" /* 2024 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import QuestDockUtils from "QuestDockUtils" /* 16679 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16681 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import QuestConstants from "QuestConstants" /* 6840 */;
-import QuestDockConstants from "QuestDockConstants" /* 16629 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import QuestConstants from "QuestConstants" /* 6871 */;
+import QuestDockConstants from "QuestDockConstants" /* 16680 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let constants;
 
 let StyleSheet;
@@ -54,8 +54,8 @@ function QuestDockBackgroundMediaFade(arg0) {
   let tmp = closure_19();
   const activeQuestDockMode = react.useContext(QuestDockGestureContext.QuestDockGestureContext).activeQuestDockMode;
   const items = [closure_20, , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items[1] = spring_spring.withSpring;
   items[2] = activeQuestDockMode;
   items[3] = React4;
@@ -83,7 +83,7 @@ function QuestDockBackgroundMediaFade(arg0) {
   const animatedStyle = useAnimatedStyle(QuestDockVideoBackgroundTsx1);
   let obj = { style: items2, children };
   items2 = [tmp.media, style, animatedStyle];
-  return gesture(_modDef1653.View, obj);
+  return gesture(_modDef1654.View, obj);
 }
 let _slicedToArray = _slicedToArray_mod;
 ({ AppState: hasOwnProperty, Pressable: metroRequire, StyleSheet, View: metroImportDefault } = react_native);

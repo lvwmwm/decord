@@ -1,10 +1,10 @@
-// Module ID: 12799
-// Function ID: 12800
+// Module ID: 12844
+// Function ID: 12845
 // Name: useCheckpointCharacterTextureSwaps
 // Dependencies: [32, 5, 19, 2]
 // Exports: useCheckpointCharacterTextureSwaps
 
-// Module 12799 (useCheckpointCharacterTextureSwaps)
+// Module 12844 (useCheckpointCharacterTextureSwaps)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -68,7 +68,7 @@ let obj = function _swapTextures() {
                           const obj2 = { value, done: true };
                           return obj2;
                         } else {
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: "+95" };
                         }
                       } else {
                         try {
@@ -102,7 +102,7 @@ let obj = function _swapTextures() {
                               const result = closure_1_5.set(closure_0, closure_1);
                             }
                             c4 = 3;
-                            return { value: "HermesInternal", done: "HermesInternal" };
+                            return { value: "HermesInternal", done: "+95" };
                           }
                         } catch (tmp16) {
                           c4 = 3;
@@ -210,7 +210,7 @@ export function useCheckpointCharacterTextureSwaps(textureManager) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -251,7 +251,7 @@ export function useCheckpointCharacterTextureSwaps(textureManager) {
                 closure_2_4(referencedAssets);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp12) {
             c2 = 3;

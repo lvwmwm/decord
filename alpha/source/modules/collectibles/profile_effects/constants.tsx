@@ -1,9 +1,9 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 9472
+// Function ID: 9473
 // Name: profile_effects/constants
 // Dependencies: [2]
 
-// Module 9430 (profile_effects/constants)
+// Module 9472 (profile_effects/constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_effects/constants.tsx");

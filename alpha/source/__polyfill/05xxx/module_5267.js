@@ -1,14 +1,13 @@
 // Module ID: 5267
 // Function ID: 5268
-// Dependencies: []
-// Exports: isFabricInstalled
+// Dependencies: [5268]
 
 // Module 5267
+import "PATTERN_CHARS";
+import PATTERN_CHARS_mod from "PATTERN_CHARS" /* 5268 */;
 
-export function isFabricInstalled() {
-  let prop;
-  if (global != null) {
-    prop = global.nativeFabricUIManager;
-  }
-  return null != prop;
-}
+let PATTERN_CHARS;
+const obj = { success: PATTERN_CHARS.pattern("oO.O"), error: PATTERN_CHARS.pattern("OO.OO"), warning: PATTERN_CHARS.pattern("O.O"), heartbeat: PATTERN_CHARS.pattern("oO--oO"), tripleClick: PATTERN_CHARS.pattern("o.o.o"), notification: PATTERN_CHARS.pattern("o-O=o") };
+PATTERN_CHARS = PATTERN_CHARS_mod;
+
+export const Patterns = obj;

@@ -1,21 +1,21 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 11850
+// Function ID: 11851
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1386, 11771, 21, 5012, 575, 504, 11803, 5068, 7816, 7811, 8149, 6087, 5610, 1112, 5603, 2]
+// Dependencies: [19, 17, 1387, 11819, 21, 5043, 575, 504, 11851, 5099, 7850, 7845, 8191, 6118, 5641, 1112, 5634, 2]
 // Exports: default
 
-// Module 11802 (ConfirmBlockUserAlert)
+// Module 11850 (ConfirmBlockUserAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7816 */;
-import ReportModals from "ReportModals" /* 8149 */;
-import Constants from "Constants" /* 11771 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7850 */;
+import ReportModals from "ReportModals" /* 8191 */;
+import Constants from "Constants" /* 11819 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

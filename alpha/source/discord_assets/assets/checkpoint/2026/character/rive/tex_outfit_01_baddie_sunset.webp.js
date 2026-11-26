@@ -1,8 +1,8 @@
-// Module ID: 12695
-// Function ID: 12696
+// Module ID: 12740
+// Function ID: 12741
 // Dependencies: [2]
 
-// Module 12695
+// Module 12740
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_01_baddie_sunset.webp.js");

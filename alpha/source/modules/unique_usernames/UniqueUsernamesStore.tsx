@@ -1,13 +1,13 @@
-// Module ID: 16160
-// Function ID: 16161
+// Module ID: 16211
+// Function ID: 16212
 // Name: UniqueUsernamesStore
-// Dependencies: [1454, 1088, 504, 572, 2]
+// Dependencies: [1455, 1088, 504, 572, 2]
 
-// Module 16160 (UniqueUsernamesStore)
+// Module 16211 (UniqueUsernamesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import LRUCacheDefault from "LRUCache" /* 1454 */;
+import LRUCacheDefault from "LRUCache" /* 1455 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -17,7 +17,7 @@ let tmp2;
 let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
 let obj = { validations: tmp2, currentUsernameInvalid: false, retryAfterTime: null, suggestions: obj2 };
 tmp2 = new LRUCacheDefault({ max: 100, maxAge: 60000 });
-obj2 = { migration: { suggestion: { username: "top" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "top" }, source: "Path", fetched: null } };
+obj2 = { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "Path", fetched: null } };
 const Store = get_initializedDefault.Store;
 class UniqueUsernamesStore extends Store {
   isRateLimited() {
@@ -97,8 +97,8 @@ const obj3 = {
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
-    obj.suggestions.migration = { suggestion: { username: "top" }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.registration = { suggestion: { username: "top" }, source: "Path", fetched: null };
+    obj.suggestions.migration = { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false };
+    obj.suggestions.registration = { suggestion: { username: "r" }, source: "Path", fetched: null };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;

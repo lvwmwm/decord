@@ -1,10 +1,10 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16067
+// Function ID: 16068
 // Name: useConfigureProfileEditorScreen
-// Dependencies: [19, 21, 1500, 1112, 15990, 7160, 7717, 2]
+// Dependencies: [19, 21, 1501, 1112, 16068, 7191, 7751, 2]
 // Exports: default
 
-// Module 15989 (useConfigureProfileEditorScreen)
+// Module 16067 (useConfigureProfileEditorScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import react from "react" /* 19 */;

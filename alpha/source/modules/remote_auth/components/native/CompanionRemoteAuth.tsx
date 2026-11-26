@@ -1,17 +1,17 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17700
+// Function ID: 17701
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 1071, 21, 5012, 17644, 7016, 5603, 1112, 5610, 1186, 5068, 1500, 6743, 1255, 17645, 17649, 6016, 7299, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 17701, 7047, 5634, 1112, 5641, 1186, 5099, 1501, 6774, 1256, 17702, 17706, 6047, 7330, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 17643 (CompanionRemoteAuth)
+// Module 17700 (CompanionRemoteAuth)
 import react_native from "react-native" /* 17 */;
 import intl7 from "intl" /* 1112 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

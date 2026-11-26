@@ -1,24 +1,24 @@
-// Module ID: 13880
-// Function ID: 13881
+// Module ID: 13932
+// Function ID: 13933
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1071, 9084, 1388, 21, 575, 5012, 5567, 1091, 5603, 5699, 1112, 13881, 13882, 13883, 13884, 5242, 1625, 11130, 1186, 6348, 8444, 1494, 1255, 2]
+// Dependencies: [32, 19, 17, 1071, 9126, 1389, 21, 575, 5043, 5598, 1091, 5634, 5730, 1112, 13933, 13934, 13935, 13936, 5273, 1626, 11176, 1186, 6379, 8486, 1495, 1256, 2]
 // Exports: default
 
-// Module 13880 (PremiumFeaturesCarouselSection)
+// Module 13932 (PremiumFeaturesCarouselSection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import ColorConstants from "ColorConstants" /* 9084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import ColorConstants from "ColorConstants" /* 9126 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -73,7 +73,7 @@ function PremiumFeaturesCarousel(arg0) {
   let mapped;
   react = undefined;
   const tmp = closure_14();
-  let obj = onEndReached(5242);
+  let obj = onEndReached(5273);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const tmp5 = mapped(react.useState(0), 2);
   dependencyMap = tmp7;
@@ -141,7 +141,7 @@ function PremiumFeaturesCarousel(arg0) {
   const tmp15 = closure_11;
   const tmp16 = closure_6;
   const tmp2 = onEndReached;
-  if (!onEndReached(1625).isThumbstickScrollDevice) {
+  if (!onEndReached(1626).isThumbstickScrollDevice) {
     let tmp17;
     let tmp19;
     if (!isScreenReaderEnabled) {
@@ -162,7 +162,7 @@ function PremiumFeaturesCarousel(arg0) {
         modeConfig: { parallaxScrollingScale: 1, parallaxScrollingOffset: 45 },
         onSnapToItem: tmp5[1]
       };
-      tmp19 = closure_10(currentIndex(11130), obj3);
+      tmp19 = closure_10(currentIndex(11176), obj3);
     }
     let items3 = [tmp19, ];
     let obj4 = { containerStyle: tmp.indicators, numberOfItems: mapped.length, currentIndex };
@@ -211,13 +211,13 @@ export default function PremiumFeaturesCarouselSection(style) {
   dependencyMap = undefined;
   style = style.style;
   let tmp = closure_14();
-  const analyticsLocations = first(6348)().analyticsLocations;
+  const analyticsLocations = first(6379)().analyticsLocations;
   let obj = react;
   [first, dependencyMap] = react.useState(false);
-  ({ width, ref, onLayout } = first(8444)());
-  const tmp5 = first(8444)();
+  ({ width, ref, onLayout } = first(8486)());
+  const tmp5 = first(8486)();
   if (undefined === width) {
-    let obj2 = analyticsLocations(1494);
+    let obj2 = analyticsLocations(1495);
     width = obj2.getWindowDimensions().width;
   }
   const items = [analyticsLocations, first];
@@ -233,7 +233,7 @@ export default function PremiumFeaturesCarouselSection(style) {
     }
   }, items);
   const obj4 = { style: tmp.headerText, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1112).t.RGadQR) };
-  const Text = analyticsLocations(5603).Text;
+  const Text = analyticsLocations(5634).Text;
   intl = analyticsLocations(1112).intl;
   items2 = [closure_10(Text, obj4), closure_10(PremiumFeaturesCarousel, { width, onEndReached: callback })];
   return closure_11(closure_6, obj3);

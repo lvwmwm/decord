@@ -1,21 +1,21 @@
-// Module ID: 16725
-// Function ID: 16726
+// Module ID: 16776
+// Function ID: 16777
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 6840, 16629, 21, 5012, 575, 16630, 1653, 5613, 16628, 5575, 1112, 2]
+// Dependencies: [19, 17, 6871, 16680, 21, 5043, 575, 16681, 1654, 5644, 16679, 5606, 1112, 2]
 
-// Module 16725 (QuestDockDragHandle)
+// Module 16776 (QuestDockDragHandle)
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import QuestConstants from "QuestConstants" /* 6840 */;
-import QuestDockConstants from "QuestDockConstants" /* 16629 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16630 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import QuestConstants from "QuestConstants" /* 6871 */;
+import QuestDockConstants from "QuestDockConstants" /* 16680 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16681 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let num, obj1, tmp4;
 
 let StyleSheet;
@@ -27,9 +27,9 @@ let obj3;
 let obj4;
 let tmp2;
 const intl2 = tmp2(1112);
-const ActionSheetHeaderBar2 = tmp2(5575);
-const spring_spring = tmp2(5613);
-const QuestDockUtils = tmp2(16628);
+const ActionSheetHeaderBar2 = tmp2(5606);
+const spring_spring = tmp2(5644);
+const QuestDockUtils = tmp2(16679);
 ({ StyleSheet, View: closure_4 } = react_native);
 const QuestDockMode = QuestConstants.QuestDockMode;
 let closure_6 = QuestDockConstants.QUEST_DOCK_MODE_CHANGE_PHYSICS;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   const tmp = closure_9();
   let tmp2 = require;
   const activeQuestDockMode = react.useContext(QuestDockGestureContext.QuestDockGestureContext).activeQuestDockMode;
-  let obj = _mod1653;
+  let obj = _mod1654;
   let items = [closure_10, activeQuestDockMode, ];
   items[2] = QuestDockMode;
   let c0;
@@ -106,8 +106,8 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   QuestDockDragHandleTsx1.__initData = tmp5;
   const animatedStyle = obj.useAnimatedStyle(QuestDockDragHandleTsx1);
   const items2 = [closure_11, , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items2[1] = spring_spring.withSpring;
   items2[2] = "default" === variant;
   items2[3] = activeQuestDockMode;
@@ -142,8 +142,8 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   QuestDockDragHandleTsx2.__initData = tmp12;
   const animatedStyle1 = useAnimatedStyle(QuestDockDragHandleTsx2);
   const items4 = [closure_12, , , , , ];
-  const useAnimatedStyle2 = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle2 = _mod1654.useAnimatedStyle;
+  _mod1654;
   items4[1] = spring_spring.withSpring;
   items4[2] = "default" === variant;
   items4[3] = activeQuestDockMode;
@@ -180,10 +180,10 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   const animatedStyle2 = useAnimatedStyle2(QuestDockDragHandleTsx3);
   obj3 = { style: items6, layout: QuestDockUtils.dimensionsLayoutTransition, children: items8 };
   items6 = [tmp.dragHandle, animatedStyle];
-  View = _modDef1653.View;
+  View = _modDef1654.View;
   const obj4 = { style: items7, children: metroImportDefault(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };
   items7 = [tmp.dragHandleOverlay, animatedStyle2];
-  const View2 = _modDef1653.View;
+  const View2 = _modDef1654.View;
   ActionSheetHeaderBar = ActionSheetHeaderBar2.ActionSheetHeaderBar;
   const intl = intl2.intl;
   const string = intl.string;
@@ -198,7 +198,7 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   items8 = [metroImportDefault(View2, obj4), ];
   const obj5 = { style: items9, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: metroImportDefault(ActionSheetHeaderBar2.ActionSheetHeaderBar, { variant: "default" }) };
   items9 = [tmp.dragHandleOverlay, animatedStyle1];
-  const View3 = _modDef1653.View;
+  const View3 = _modDef1654.View;
   items8[1] = metroImportDefault(View3, obj5);
   return metroImportDefault(tmp28, obj2);
 });

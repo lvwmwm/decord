@@ -1,18 +1,18 @@
-// Module ID: 14369
-// Function ID: 14370
+// Module ID: 14421
+// Function ID: 14422
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5012, 575, 6837, 6088, 5603, 14370, 7147, 14371, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 6868, 6119, 5634, 14422, 7178, 14423, 2]
 
-// Module 14369 (utils/ChangeLogUtils)
+// Module 14421 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import LegacyTokens from "LegacyTokens" /* 6837 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 14371 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import LegacyTokens from "LegacyTokens" /* 6868 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 14423 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import CustomMarkup from "CustomMarkup" /* 6088 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import CustomMarkup from "CustomMarkup" /* 6119 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let closure_4, dependencyMap, item, length;
 let obj2;
 let obj3;
 let tmp2;
-const MarkupRulesUtils = tmp2(7147);
+const MarkupRulesUtils = tmp2(7178);
 function ChangeLogLink(arg0) {
   let node;
   let output;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5603).Text;
+    Paragraph = output(5634).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(14370);
+  const obj = output(14422);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(14370);
+    const tmp5Result = tmp5(14422);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;

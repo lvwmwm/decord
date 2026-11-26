@@ -1,17 +1,17 @@
-// Module ID: 13094
-// Function ID: 13095
+// Module ID: 13146
+// Function ID: 13147
 // Name: AppLauncherMentionableListActionSheet
-// Dependencies: [32, 19, 4924, 1071, 21, 504, 12356, 11025, 8141, 6838, 5226, 13080, 13081, 11310, 5603, 5068, 13095, 6956, 13093, 11364, 6113, 2]
+// Dependencies: [32, 19, 4955, 1071, 21, 504, 12406, 11071, 8183, 6869, 5257, 13132, 13133, 11356, 5634, 5099, 13147, 6987, 13145, 11410, 6144, 2]
 // Exports: default
 
-// Module 13094 (AppLauncherMentionableListActionSheet)
+// Module 13146 (AppLauncherMentionableListActionSheet)
 import Constants from "Constants" /* 1071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6838 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8141 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6869 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8183 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

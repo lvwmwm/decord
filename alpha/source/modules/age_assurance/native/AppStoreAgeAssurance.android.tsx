@@ -1,10 +1,10 @@
-// Module ID: 8032
-// Function ID: 8033
+// Module ID: 8063
+// Function ID: 8064
 // Name: AppStoreAgeAssurance
-// Dependencies: [5, 8033, 2]
+// Dependencies: [5, 8064, 2]
 
-// Module 8032 (AppStoreAgeAssurance)
-import PlayAgeSignals from "PlayAgeSignals" /* 8033 */;
+// Module 8063 (AppStoreAgeAssurance)
+import PlayAgeSignals from "PlayAgeSignals" /* 8064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

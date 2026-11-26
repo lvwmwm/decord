@@ -1,12 +1,12 @@
-// Module ID: 18881
-// Function ID: 18882
+// Module ID: 18944
+// Function ID: 18945
 // Name: search/useSuggestedSearches
-// Dependencies: [13235, 13236, 13280, 504, 2]
+// Dependencies: [13287, 13288, 13332, 504, 2]
 // Exports: useSuggestedSearches
 
-// Module 18881 (search/useSuggestedSearches)
-import SuggestedSearchStore2 from "SuggestedSearchStore" /* 13235 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13236 */;
+// Module 18944 (search/useSuggestedSearches)
+import SuggestedSearchStore2 from "SuggestedSearchStore" /* 13287 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13288 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

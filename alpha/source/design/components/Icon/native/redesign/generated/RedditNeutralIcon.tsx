@@ -1,14 +1,14 @@
-// Module ID: 14185
-// Function ID: 14186
+// Module ID: 14237
+// Function ID: 14238
 // Name: RedditNeutralIcon
-// Dependencies: [19, 21, 575, 5698, 14186, 2]
+// Dependencies: [19, 21, 575, 5729, 14238, 2]
 // Exports: RedditNeutralIcon
 
-// Module 14185 (RedditNeutralIcon)
+// Module 14237 (RedditNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 14186 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 14238 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

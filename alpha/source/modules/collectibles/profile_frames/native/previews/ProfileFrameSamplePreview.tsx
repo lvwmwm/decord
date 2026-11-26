@@ -1,24 +1,24 @@
-// Module ID: 11123
-// Function ID: 11124
+// Module ID: 11169
+// Function ID: 11170
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 9425, 7526, 21, 5012, 575, 9462, 5576, 9463, 9454, 7200, 5699, 11124, 2]
+// Dependencies: [19, 17, 9467, 7557, 21, 5043, 575, 9504, 5607, 9505, 9496, 7231, 5730, 11170, 2]
 // Exports: default
 
-// Module 11123 (ProfileFrameSamplePreview)
+// Module 11169 (ProfileFrameSamplePreview)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5576 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import _modDef7200 from "module_7200" /* 7200 */;
-import Constants from "Constants" /* 7526 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9425 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 9454 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 9462 */;
-import ProfileFrameDefault from "ProfileFrame" /* 9463 */;
-import _modDef11124 from "module_11124" /* 11124 */;
+import useToken from "useToken" /* 5607 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import _modDef7231 from "module_7231" /* 7231 */;
+import Constants from "Constants" /* 7557 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9467 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 9496 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 9504 */;
+import ProfileFrameDefault from "ProfileFrame" /* 9505 */;
+import _modDef11170 from "module_11170" /* 11170 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -70,7 +70,7 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   obj4 = { style: absoluteFill.absoluteFill, children: items };
   items = [, , , , , , , ];
   const obj5 = { style: { position: "absolute", top: 0, left: 0, right: 0, height: overflowTop, backgroundColor: "black" } };
-  const tmp13 = _modDef7200;
+  const tmp13 = _modDef7231;
   items[0] = metroRequire(React3, obj5);
   const obj6 = { style: { position: "absolute", bottom: 0, left: 0, right: 0, height: overflowBottom, backgroundColor: "black" } };
   items[1] = metroRequire(React3, obj6);
@@ -105,7 +105,7 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   items3[1] = tmp16;
   const obj16 = { style: items3, children: metroRequire(tmp3Result, obj17) };
   obj17 = { source: obj18, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj18 = { uri: _modDef11124 };
+  obj18 = { uri: _modDef11170 };
   tmp3Result = FastImageDefault;
   items2[1] = metroRequire(React3, obj16);
   const obj19 = { frame: profileFrame, filterLayer: tmp10, profileThemeType: tmp11.PREVIEW, frameOrder: ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT, containerWidth: result, containerHeight: previewHeight - overflowTop - overflowBottom };

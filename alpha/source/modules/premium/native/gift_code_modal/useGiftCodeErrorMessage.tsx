@@ -1,13 +1,13 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 11935
+// Function ID: 11936
 // Name: useGiftCodeErrorMessage
-// Dependencies: [32, 6298, 11879, 504, 11885, 1112, 5759, 2]
+// Dependencies: [32, 6329, 11927, 504, 11933, 1112, 5790, 2]
 // Exports: default
 
-// Module 11887 (useGiftCodeErrorMessage)
+// Module 11935 (useGiftCodeErrorMessage)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6298 */;
-import GiftCodeStore from "GiftCodeStore" /* 11879 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6329 */;
+import GiftCodeStore from "GiftCodeStore" /* 11927 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

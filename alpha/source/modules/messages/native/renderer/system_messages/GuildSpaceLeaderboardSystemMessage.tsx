@@ -1,21 +1,21 @@
-// Module ID: 14393
-// Function ID: 14394
+// Module ID: 14445
+// Function ID: 14446
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [4861, 1386, 5012, 575, 4932, 10571, 6776, 11952, 1112, 14320, 8779, 8758, 14321, 2]
+// Dependencies: [4892, 1387, 5043, 575, 4963, 10616, 6807, 12000, 1112, 14372, 8821, 8800, 14373, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 14393 (GuildSpaceLeaderboardSystemMessage)
+// Module 14445 (GuildSpaceLeaderboardSystemMessage)
 import nativeDefault from "native" /* 575 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4932 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6776 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8758 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8779 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 10571 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 11952 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14320 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import UserStore from "UserStore" /* 1386 */;
-import createStyles from "createStyles" /* 5012 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4963 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8800 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8821 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 10616 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 12000 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 14372 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import UserStore from "UserStore" /* 1387 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_MUTED };
@@ -123,7 +123,7 @@ export function createGuildSpaceLeaderboardSystemMessage(theme) {
           }
           const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult10.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
           tmpResult10 = renderer_EmbedUtils;
-          const merged1 = Object.assign(tmp26(14321)(theme));
+          const merged1 = Object.assign(tmp26(14373)(theme));
           return obj5;
         }
       }

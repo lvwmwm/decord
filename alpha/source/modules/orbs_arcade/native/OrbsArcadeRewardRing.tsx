@@ -1,18 +1,18 @@
-// Module ID: 16592
-// Function ID: 16593
+// Module ID: 16643
+// Function ID: 16644
 // Name: OrbsArcadeRewardRing
-// Dependencies: [19, 17, 21, 1653, 7912, 2]
+// Dependencies: [19, 17, 21, 1654, 7946, 2]
 // Exports: default
 
-// Module 16592 (OrbsArcadeRewardRing)
+// Module 16643 (OrbsArcadeRewardRing)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import inlineStyles from "inlineStyles" /* 7912 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import inlineStyles from "inlineStyles" /* 7946 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const module_1653 = _mod1653;
+const module_1654 = _mod1654;
 
 function RingArc(arcLength) {
   let color;
@@ -24,7 +24,7 @@ function RingArc(arcLength) {
   let tmp3;
   arcLength = arcLength.arcLength;
   ({ d, color, progress, strokeWidth } = arcLength);
-  let obj = _mod1653;
+  let obj = _mod1654;
   const items = [closure_5, arcLength, progress];
   let c0;
   let c1;
@@ -48,7 +48,7 @@ function RingArc(arcLength) {
 }
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
-let closure_4 = module_1653.createAnimatedComponent(inlineStyles.Path);
+let closure_4 = module_1654.createAnimatedComponent(inlineStyles.Path);
 let closure_5 = { code: "(function OrbsArcadeRewardRingTsx1(){let[arcLength,progress]=this.__closure;return{strokeDashoffset:arcLength*(1-progress.get()),strokeOpacity:progress.get()>0?1:0};})" };
 let result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeRewardRing.tsx");
 

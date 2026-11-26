@@ -1,13 +1,13 @@
-// Module ID: 20134
-// Function ID: 20135
+// Module ID: 20198
+// Function ID: 20199
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 4879, 1386, 1071, 7587, 563, 20135, 20136, 20137, 7579, 1112, 2187, 20138, 2]
+// Dependencies: [19, 4910, 1387, 1071, 7618, 563, 20199, 20200, 20201, 7610, 1112, 2188, 20202, 2]
 // Exports: default
 
-// Module 20134 (useOnboardingMonetizationEnableFlow)
-import GuildRecord from "GuildRecord" /* 4879 */;
+// Module 20198 (useOnboardingMonetizationEnableFlow)
+import GuildRecord from "GuildRecord" /* 4910 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -57,23 +57,23 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(20135);
+  const tmp10 = refresh(20199);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(20136);
+  const tmp9Result = refresh(20200);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(20137)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(20201)(eligibility));
   let hasItem2;
-  refresh(20137)(eligibility);
+  refresh(20201)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -88,8 +88,8 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     tmp19 = true === hasItem3;
   }
   let id2;
-  const useIsMonetizationReapplicationDisabled = tmp(7579).useIsMonetizationReapplicationDisabled;
-  tmp(7579);
+  const useIsMonetizationReapplicationDisabled = tmp(7610).useIsMonetizationReapplicationDisabled;
+  tmp(7610);
   if (features != null) {
     id2 = features.id;
   }
@@ -107,7 +107,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   }
   const intl = tmp(1112).intl;
   const aJUdOi = tmp(1112).t.aJUdOi;
-  const tmp9Result3 = refresh(2187);
+  const tmp9Result3 = refresh(2188);
   ({ faqUrl: null }.faqUrl) = tmp9Result3.getArticleURL(constants2.CREATOR_FAQ);
   const tmp26 = constants2;
   if (isApplicationRejected) {
@@ -129,7 +129,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(20138);
+    const tmpResult4 = tmp(20202);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {
@@ -161,7 +161,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     const format = intl2.format;
     const obj5 = { requestCooldownDuration, creatorRevenuePolicyUrl: tmp9Result4.getArticleURL(tmp26.CREATOR_POLICY) };
     const TvX207 = tmp(1112).t.TvX207;
-    tmp9Result4 = refresh(2187);
+    tmp9Result4 = refresh(2188);
     formatResult2 = format(TvX207, obj5);
   }
 };

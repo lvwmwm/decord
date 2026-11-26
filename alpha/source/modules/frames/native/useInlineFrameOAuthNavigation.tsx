@@ -1,18 +1,18 @@
-// Module ID: 18553
-// Function ID: 18554
+// Module ID: 18616
+// Function ID: 18617
 // Name: useInlineFrameOAuthNavigation
-// Dependencies: [5, 19, 6905, 6906, 1071, 10070, 6099, 7696, 2119, 1107, 2]
+// Dependencies: [5, 19, 6936, 6937, 1071, 10112, 6130, 7730, 2120, 1107, 2]
 // Exports: default
 
-// Module 18553 (useInlineFrameOAuthNavigation)
+// Module 18616 (useInlineFrameOAuthNavigation)
 import Constants from "Constants" /* 1071 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
-import FramesConstants from "FramesConstants" /* 6906 */;
-import Constants2 from "Constants" /* 10070 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
+import FramesConstants from "FramesConstants" /* 6937 */;
+import Constants2 from "Constants" /* 10112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6905 */;
+import FramesStore from "FramesStore" /* 6936 */;
 import size from "module_2" /* 2 */;
 
 let c0, closure_1;
@@ -54,7 +54,7 @@ export default function useInlineFrameOAuthNavigation(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } else {
             try {
@@ -98,7 +98,7 @@ export default function useInlineFrameOAuthNavigation(arg0) {
                 }
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             } catch (tmp20) {
               c3 = 3;
               throw tmp20;

@@ -1,49 +1,49 @@
-// Module ID: 19849
-// Function ID: 19850
+// Module ID: 19913
+// Function ID: 19914
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 4879, 4861, 4942, 5633, 4944, 4954, 1386, 8532, 1071, 21, 5012, 575, 1112, 5073, 5693, 7160, 7717, 8531, 11714, 19850, 1404, 7512, 6016, 6087, 7243, 5628, 6109, 6113, 10563, 19620, 7556, 7518, 7220, 7222, 2187, 19853, 1412, 11750, 7409, 6982, 8046, 6084, 5586, 1500, 504, 2]
+// Dependencies: [19, 4910, 4892, 4973, 5664, 4975, 4985, 1387, 8574, 1071, 21, 5043, 575, 1112, 5104, 5724, 7191, 7751, 8573, 11762, 19914, 1405, 7543, 6047, 6118, 7274, 5659, 6140, 6144, 10608, 19683, 7587, 7549, 7251, 7253, 2188, 19917, 1413, 11798, 7440, 7013, 8088, 6115, 5617, 1501, 504, 2]
 // Exports: default
 
-// Module 19849 (GuildSettingsModalOverview)
+// Module 19913 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1112 */;
-import FlagUtils from "FlagUtils" /* 1404 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import GuildRecord from "GuildRecord" /* 4879 */;
-import native from "native" /* 5073 */;
-import NavScrim from "NavScrim" /* 5586 */;
-import useChannelName from "useChannelName" /* 5628 */;
-import ToastUtils from "ToastUtils" /* 5693 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import AlertDefault from "Alert" /* 6087 */;
-import TableRowGroup2 from "TableRowGroup" /* 6109 */;
-import TableRow3 from "TableRow" /* 6113 */;
-import GuildProfileLimits from "GuildProfileLimits" /* 6982 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7220 */;
-import TableRadioRow3 from "TableRadioRow" /* 7222 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7243 */;
-import TextArea2 from "TextArea" /* 7409 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7512 */;
-import TableSwitchRow8 from "TableSwitchRow" /* 7518 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7717 */;
-import _mod8046 from "module_8046" /* 8046 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11714 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11750 */;
-import AssetChooserDefault from "AssetChooser" /* 19853 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import GuildRecord from "GuildRecord" /* 4910 */;
+import native from "native" /* 5104 */;
+import NavScrim from "NavScrim" /* 5617 */;
+import useChannelName from "useChannelName" /* 5659 */;
+import ToastUtils from "ToastUtils" /* 5724 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import AlertDefault from "Alert" /* 6118 */;
+import TableRowGroup2 from "TableRowGroup" /* 6140 */;
+import TableRow3 from "TableRow" /* 6144 */;
+import GuildProfileLimits from "GuildProfileLimits" /* 7013 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7251 */;
+import TableRadioRow3 from "TableRadioRow" /* 7253 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7274 */;
+import TextArea2 from "TextArea" /* 7440 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7543 */;
+import TableSwitchRow8 from "TableSwitchRow" /* 7549 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7751 */;
+import _mod8088 from "module_8088" /* 8088 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11762 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 11798 */;
+import AssetChooserDefault from "AssetChooser" /* 19917 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildChannelStore from "GuildChannelStore" /* 4942 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5633 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8532 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildChannelStore from "GuildChannelStore" /* 4973 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5664 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8574 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set;
@@ -411,15 +411,15 @@ class GuildSettingsModalOverview extends PureComponent {
       labelResult = obj2.label();
     }
     const obj3 = { title: intl2.string(tmp4(1112).t.qyGmGt), description: intl3.string(tmp4(1112).t.ffEOKP), hasIcons: false, children: items };
-    const TableRowGroup = tmp4(6109).TableRowGroup;
+    const TableRowGroup = tmp4(6140).TableRowGroup;
     intl2 = tmp4(1112).intl;
     intl3 = tmp4(1112).intl;
-    const obj4 = { label: intl4.string(tmp4(1112).t.KuYcnU), disabled: !canManage, trailing: closure_20(tmp4(6113).TableRow.TrailingText, { text: channelName }), arrow: true, onPress: self.handleAfkChannelChange };
-    const TableRow = tmp4(6113).TableRow;
+    const obj4 = { label: intl4.string(tmp4(1112).t.KuYcnU), disabled: !canManage, trailing: closure_20(tmp4(6144).TableRow.TrailingText, { text: channelName }), arrow: true, onPress: self.handleAfkChannelChange };
+    const TableRow = tmp4(6144).TableRow;
     intl4 = tmp4(1112).intl;
     items = [closure_20(TableRow, obj4), ];
-    const obj5 = { label: intl5.string(tmp4(1112).t.brhYaR), disabled: tmp15, trailing: closure_20(tmp4(6113).TableRow.TrailingText, { text: labelResult }), arrow: true, onPress: self.handleAFKTimeoutChange };
-    const TableRow2 = tmp4(6113).TableRow;
+    const obj5 = { label: intl5.string(tmp4(1112).t.brhYaR), disabled: tmp15, trailing: closure_20(tmp4(6144).TableRow.TrailingText, { text: labelResult }), arrow: true, onPress: self.handleAFKTimeoutChange };
+    const TableRow2 = tmp4(6144).TableRow;
     intl5 = tmp4(1112).intl;
     tmp15 = !canManage;
     const tmp13 = closure_21;
@@ -465,82 +465,82 @@ class GuildSettingsModalOverview extends PureComponent {
       const intl = intl13.intl;
       channelName = intl.string(intl13.t.ibUhoa);
     }
-    const tmpResult = tmp(10563);
+    const tmpResult = tmp(10608);
     const result = tmpResult.isEligibleForRoleSubscriptionPurchaseSystemMessageSettings(guild);
     let hasFlagResult = result;
     if (!hasFlagResult) {
-      const tmpResult13 = tmp(1404);
+      const tmpResult13 = tmp(1405);
       hasFlagResult = tmpResult13.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS);
     }
     let hasFlagResult1 = result;
     if (!hasFlagResult1) {
-      const tmpResult14 = tmp(1404);
+      const tmpResult14 = tmp(1405);
       hasFlagResult1 = tmpResult14.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     }
-    const tmpResult15 = tmp(19620);
+    const tmpResult15 = tmp(19683);
     let result1 = tmpResult15.isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
     if (!result1) {
-      const tmpResult16 = tmp(1404);
+      const tmpResult16 = tmp(1405);
       result1 = tmpResult16.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_VOICE_SESSION_NOTIFICATIONS);
     }
-    const tmpResult17 = tmp(7556);
+    const tmpResult17 = tmp(7587);
     let guildSpaceExperimentEnabled = tmpResult17.getGuildSpaceExperimentEnabled(guild.id, "GuildSettingsModalOverview");
     const obj2 = { title: intl2.string(tmp(1112).t.DP39VH), description: intl3.string(tmp(1112).t.BT9zR3), hasIcons: false, children: items };
-    const TableRowGroup = tmp(6109).TableRowGroup;
+    const TableRowGroup = tmp(6140).TableRowGroup;
     intl2 = tmp(1112).intl;
     intl3 = tmp(1112).intl;
-    const obj3 = { label: intl4.string(tmp(1112).t.GK18KJ), disabled: !canManage, trailing: closure_20(tmp(6113).TableRow.TrailingText, { text: channelName }), arrow: true, onPress: self.handleSystemChannelChange };
-    const TableRow = tmp(6113).TableRow;
+    const obj3 = { label: intl4.string(tmp(1112).t.GK18KJ), disabled: !canManage, trailing: closure_20(tmp(6144).TableRow.TrailingText, { text: channelName }), arrow: true, onPress: self.handleSystemChannelChange };
+    const TableRow = tmp(6144).TableRow;
     intl4 = tmp(1112).intl;
     items = [closure_20(TableRow, obj3), , , , , , , , ];
     const obj4 = { label: intl5.string(tmp(1112).t["+f0bXQ"]), disabled: !canManage, value: !tmpResult18.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_JOIN_NOTIFICATIONS), onValueChange: self.handleSystemJoinMessages };
-    const TableSwitchRow = tmp(7518).TableSwitchRow;
+    const TableSwitchRow = tmp(7549).TableSwitchRow;
     intl5 = tmp(1112).intl;
-    tmpResult18 = tmp(1404);
+    tmpResult18 = tmp(1405);
     items[1] = closure_20(TableSwitchRow, obj4);
     const obj5 = { label: intl6.string(tmp(1112).t["72k7jf"]), disabled: !canManage, value: !tmpResult19.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_JOIN_NOTIFICATION_REPLIES), onValueChange: self.handleSystemJoinMessageReplies };
-    const TableSwitchRow2 = tmp(7518).TableSwitchRow;
+    const TableSwitchRow2 = tmp(7549).TableSwitchRow;
     intl6 = tmp(1112).intl;
-    tmpResult19 = tmp(1404);
+    tmpResult19 = tmp(1405);
     items[2] = closure_20(TableSwitchRow2, obj5);
     const obj6 = { label: intl7.string(tmp(1112).t["2L8NCN"]), disabled: !canManage, value: !tmpResult20.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_PREMIUM_SUBSCRIPTIONS), onValueChange: self.handleSystemPremiumSubscribe };
-    const TableSwitchRow3 = tmp(7518).TableSwitchRow;
+    const TableSwitchRow3 = tmp(7549).TableSwitchRow;
     intl7 = tmp(1112).intl;
-    tmpResult20 = tmp(1404);
+    tmpResult20 = tmp(1405);
     items[3] = closure_20(TableSwitchRow3, obj6);
     const obj7 = { label: intl8.string(tmp(1112).t["NvnW+V"]), disabled: !canManage, value: !tmpResult21.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS), onValueChange: self.handleSystemReminderNotifications };
-    const TableSwitchRow4 = tmp(7518).TableSwitchRow;
+    const TableSwitchRow4 = tmp(7549).TableSwitchRow;
     intl8 = tmp(1112).intl;
-    tmpResult21 = tmp(1404);
+    tmpResult21 = tmp(1405);
     items[4] = closure_20(TableSwitchRow4, obj7);
     const tmp16 = closure_21;
     if (hasFlagResult) {
       const obj8 = { label: intl9.string(tmp(1112).t["54n19R"]), disabled: !canManage, value: !tmpResult22.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), onValueChange: self.handleSystemGuildRoleSubscriptionPurchaseMessages };
-      const TableSwitchRow5 = tmp(7518).TableSwitchRow;
+      const TableSwitchRow5 = tmp(7549).TableSwitchRow;
       intl9 = tmp(1112).intl;
-      tmpResult22 = tmp(1404);
+      tmpResult22 = tmp(1405);
       hasFlagResult = tmp17(TableSwitchRow5, obj8);
     }
     items[5] = hasFlagResult;
     if (hasFlagResult1) {
       const obj9 = { label: intl10.string(tmp(1112).t["IhF5d+"]), disabled: !canManage, value: !tmpResult23.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES), onValueChange: self.handleSystemGuildRoleSubscriptionPurchaseMessageReplies };
-      const TableSwitchRow6 = tmp(7518).TableSwitchRow;
+      const TableSwitchRow6 = tmp(7549).TableSwitchRow;
       intl10 = tmp(1112).intl;
-      tmpResult23 = tmp(1404);
+      tmpResult23 = tmp(1405);
       hasFlagResult1 = tmp17(TableSwitchRow6, obj9);
     }
     items[6] = hasFlagResult1;
     if (result1) {
       const obj10 = { label: intl11.string(tmp(1112).t.IMtHBW), disabled: !canManage, value: !tmpResult24.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_VOICE_SESSION_NOTIFICATIONS), onValueChange: self.handleSystemVoiceSessionMessages };
-      const TableSwitchRow7 = tmp(7518).TableSwitchRow;
+      const TableSwitchRow7 = tmp(7549).TableSwitchRow;
       intl11 = tmp(1112).intl;
-      tmpResult24 = tmp(1404);
+      tmpResult24 = tmp(1405);
       result1 = tmp17(TableSwitchRow7, obj10);
     }
     items[7] = result1;
     if (guildSpaceExperimentEnabled) {
       const obj11 = { label: intl12.string(tmp(1112).t.OBskVU), arrow: true, onPress: self.handleGuildSpaceSettingsPress };
-      const TableRow2 = tmp(6113).TableRow;
+      const TableRow2 = tmp(6144).TableRow;
       intl12 = tmp(1112).intl;
       guildSpaceExperimentEnabled = tmp17(TableRow2, obj11);
     }
@@ -587,7 +587,7 @@ class GuildSettingsModalOverview extends PureComponent {
     }
     items = [closure_20(TableRadioRow, obj2), ];
     const obj3 = { value: tmp5.ONLY_MENTIONS, label: intl5.format(intl13.t.L2hmYy, {}), disabled: !canManage };
-    const TableRadioRow2 = tmp2(7222).TableRadioRow;
+    const TableRadioRow2 = tmp2(7253).TableRadioRow;
     intl5 = tmp2(1112).intl;
     items[1] = closure_20(TableRadioRow2, obj3);
     return tmp(TableRadioGroup, obj);
@@ -669,10 +669,10 @@ class GuildSettingsModalOverview extends PureComponent {
       obj3 = HelpdeskUtilsDefault;
       const obj4 = { title: intl2.string(intl13.t.XPDhcc), description: formatResult, hasIcons: false, children: closure_20(TableSwitchRow, obj5) };
       formatResult = format(prop, obj2);
-      const TableRowGroup = tmp(6109).TableRowGroup;
+      const TableRowGroup = tmp(6140).TableRowGroup;
       intl2 = tmp(1112).intl;
       obj5 = { label: intl3.string(intl13.t.vmEDQs), value: features.has(constants3.SUMMARIES_ENABLED_BY_USER), disabled: !canManage, onValueChange: this.handleSummariesToggle };
-      TableSwitchRow = tmp(7518).TableSwitchRow;
+      TableSwitchRow = tmp(7549).TableSwitchRow;
       intl3 = tmp(1112).intl;
       features = guild.features;
       return closure_20(TableRowGroup, obj4);
@@ -770,7 +770,7 @@ class GuildSettingsModalOverview extends PureComponent {
     const obj = { children: items2 };
     const obj2 = { style: tmp.overview, contentContainerStyle: items, children: closure_21(Stack, obj3) };
     items = [tmp.overviewContent, this.props.contentContainerStyle];
-    const Form = _mod8046.Form;
+    const Form = _mod8088.Form;
     obj3 = { style: tmp.stackPadding, spacing: nativeDefault.space.PX_24, children: items1 };
     Stack = Stack_Stack.Stack;
     items1 = [this.renderGuildName(), this.renderSummaries(), this.renderAFKSettings(), this.renderSystemMessageSettings(), this.renderDefaultNotificationSettings(), this.renderBoostProgressBar(), this.renderDescription(), this.renderBanner(), this.renderSplash(), this.renderDeleteGuild()];
@@ -787,7 +787,7 @@ export default function ConnectedGuildSettingsModalOverview(contentContainerStyl
   let submitting;
   let guild;
   contentContainerStyle = contentContainerStyle.contentContainerStyle;
-  let obj = guild(1500);
+  let obj = guild(1501);
   navigation = obj.useNavigation();
   const items = [GuildSettingsStore];
   const obj2 = guild(504);

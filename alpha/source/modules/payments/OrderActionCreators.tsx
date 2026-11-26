@@ -1,18 +1,18 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 7600
+// Function ID: 7601
 // Name: OrderActionCreators
-// Dependencies: [5, 7568, 1071, 3, 5763, 7570, 1112, 2450, 1284, 5777, 2]
+// Dependencies: [5, 7599, 1071, 3, 5794, 7601, 1112, 2451, 1285, 5808, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7569 (OrderActionCreators)
+// Module 7600 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import _modDef2450 from "module_2450" /* 2450 */;
-import BillingError2 from "BillingError" /* 5763 */;
-import OrderConstants from "OrderConstants" /* 7568 */;
-import OrderSigningErrors from "OrderSigningErrors" /* 7570 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import _modDef2451 from "module_2451" /* 2451 */;
+import BillingError2 from "BillingError" /* 5794 */;
+import OrderConstants from "OrderConstants" /* 7599 */;
+import OrderSigningErrors from "OrderSigningErrors" /* 7601 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c11, c12, c7, closure_10, closure_4, error;
 
 let SPENDING_LIMIT_REACHED;
 let SPENDING_LIMIT_WILL_EXCEED;
-const f91230 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
+const f91472 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
 function isOrderShape(obj) {
   return null != obj && typeof obj === "object" && "id" in obj && "status" in obj;
 }
@@ -46,7 +46,7 @@ function getOrderSigningConstraintsError(status) {
                 const unsatisfied_constraints = body2.unsatisfied_constraints;
                 let someResult;
                 if (unsatisfied_constraints != null) {
-                  someResult = unsatisfied_constraints.some(f91230);
+                  someResult = unsatisfied_constraints.some(f91472);
                 }
                 let orderSigningError = null;
                 if (someResult) {
@@ -115,7 +115,7 @@ let obj = function _signOrder() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c5;
@@ -251,7 +251,7 @@ obj = function _getOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -329,7 +329,7 @@ obj = function _fetchOrderEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;
@@ -407,7 +407,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c9;
@@ -460,7 +460,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: "+95" };
                   }
                 } else {
                   try {
@@ -513,7 +513,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     } else {
                       length = value;
                       c3 = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: "+95" };
                     }
                   } catch (tmp13) {
                     c3 = 3;
@@ -642,7 +642,7 @@ class OrderSigningFailedWithConstraintsError extends BillingError {
     unsatisfied_constraints = unsatisfied_constraints.unsatisfied_constraints;
     let someResult;
     if (unsatisfied_constraints != null) {
-      someResult = unsatisfied_constraints.some(f91230);
+      someResult = unsatisfied_constraints.some(f91472);
     }
     let orderSigningError = null;
     if (someResult) {
@@ -695,9 +695,9 @@ class OrderSigningOrderChangedError extends OrderSigningFailedWithConstraintsErr
     const intl = intl2.intl;
     const string = intl.string;
     if (true === someResult) {
-      vfMgld = _modDef2450.vfMgld;
+      vfMgld = _modDef2451.vfMgld;
     } else {
-      vfMgld = _modDef2450["Wq++Jf"];
+      vfMgld = _modDef2451["Wq++Jf"];
     }
     tmp4.message = string(vfMgld);
     return tmp4;

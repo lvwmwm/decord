@@ -1,20 +1,20 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15293
+// Function ID: 15294
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 5012, 1112, 5749, 5699, 1412, 15242, 5603, 5610, 2]
+// Dependencies: [19, 17, 21, 5043, 1112, 5780, 5730, 1413, 15292, 5634, 5641, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 15243 (ActivateDeviceSuccess)
+// Module 15293 (ActivateDeviceSuccess)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1112 */;
-import AvatarUtils from "AvatarUtils" /* 1412 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import scopes2 from "scopes" /* 5749 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15242 */;
+import AvatarUtils from "AvatarUtils" /* 1413 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import scopes2 from "scopes" /* 5780 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15292 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -68,14 +68,14 @@ export function ActivateDeviceSuccess(onComplete) {
   const tmp15 = View;
   if (null != stringResult) {
     const obj5 = { variant: "body-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: stringResult };
-    const Text2 = tmp19(5603).Text;
+    const Text2 = tmp19(5634).Text;
     tmp18Result = tmp18(Text2, obj5);
   }
   const obj6 = { children: items };
   items1[1] = tmp18Result;
   items[1] = hasOwnProperty(tmp15, obj3);
   const obj7 = { size: "lg", text: intl4.string(intl5.t.cpT0Cq), onPress: onComplete, grow: true };
-  const Button = tmp19(5610).Button;
+  const Button = tmp19(5641).Button;
   intl4 = tmp19(1112).intl;
   items[2] = React3(Button, obj7);
   return hasOwnProperty(tmp8, obj6);

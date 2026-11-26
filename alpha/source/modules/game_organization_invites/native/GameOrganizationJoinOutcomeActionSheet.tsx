@@ -1,20 +1,17 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 12348
+// Function ID: 12349
 // Name: GameOrganizationJoinOutcomeActionSheet
-// Dependencies: [19, 11869, 21, 5226, 12291, 10702, 7476, 5610, 2]
+// Dependencies: [19, 11917, 21, 5257, 12341, 10747, 7507, 5641, 2]
 // Exports: default
 
-// Module 12298 (GameOrganizationJoinOutcomeActionSheet)
+// Module 12348 (GameOrganizationJoinOutcomeActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import PromoSheet2 from "PromoSheet" /* 10702 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11869 */;
-import useGameOrganizationJoinOutcome from "useGameOrganizationJoinOutcome" /* 12291 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import PromoSheet2 from "PromoSheet" /* 10747 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11917 */;
+import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 12341 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
-
-const useGameOrganizationJoinOutcomeDefault = useGameOrganizationJoinOutcome;
 
 function hideSheet() {
   const obj = ActionSheetActionCreatorsDefault;
@@ -34,10 +31,5 @@ export default function GameOrganizationJoinOutcomeActionSheet(arg0) {
   const cta = tmp.cta;
   ({ title, subtitle } = tmp);
   const PromoSheet = PromoSheet2.PromoSheet;
-  const Button = components_Button_Button.Button;
-  let str = "primary";
-  if (cta.type === useGameOrganizationJoinOutcome.GameOrganizationJoinOutcomeCtaType.CLOSE) {
-    str = "secondary";
-  }
   return <PromoSheet header={null} title={title} description={subtitle} actions={null} />;
 };

@@ -1,19 +1,19 @@
-// Module ID: 12349
-// Function ID: 12350
+// Module ID: 12399
+// Function ID: 12400
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 2164, 1071, 21, 5012, 1378, 575, 504, 5240, 1186, 5603, 1112, 2187, 2]
+// Dependencies: [19, 17, 2165, 1071, 21, 5043, 1379, 575, 504, 5271, 1186, 5634, 1112, 2188, 2]
 // Exports: default
 
-// Module 12349 (MessageGameIconActionSheet)
+// Module 12399 (MessageGameIconActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2164 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -51,7 +51,7 @@ export default function MessageGameIconActionSheet(applicationId) {
   if (null != stateFromStores) {
     const obj2 = { style: tmp.contentWrapper, children: closure_7(View, obj3) };
     obj3 = { style: tmp.gameDescriptionWrapperOuter, children: items1 };
-    const BottomSheet = tmp2(5240).BottomSheet;
+    const BottomSheet = tmp2(5271).BottomSheet;
     let str;
     const obj4 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
     const Icon = tmp2(1186).Icon;
@@ -66,9 +66,9 @@ export default function MessageGameIconActionSheet(applicationId) {
     items1 = [closure_6(Icon, obj4), ];
     const obj7 = { style: tmp.gameDescriptionWrapper, children: items2 };
     const obj8 = { style: tmp.timestamp, variant: "body-xs/medium", color: "text-muted", children: messageTimestamp };
-    items2 = [closure_6(applicationId(5603).Text, obj8), ];
+    items2 = [closure_6(applicationId(5634).Text, obj8), ];
     const obj9 = { variant: "body-sm/medium", children: items3 };
-    const Text = tmp2(5603).Text;
+    const Text = tmp2(5634).Text;
     const intl = tmp2(1112).intl;
     const obj10 = { applicationName: stateFromStores.name };
     items3 = [intl.format(applicationId(1112).t.J3s8JP, obj10), " ", ];

@@ -1,12 +1,12 @@
-// Module ID: 6343
-// Function ID: 6344
+// Module ID: 6374
+// Function ID: 6375
 // Name: DisplayProfile
-// Dependencies: [1388, 6140, 2173, 1412, 6344, 2]
+// Dependencies: [1389, 6171, 2174, 1413, 6375, 2]
 
-// Module 6343 (DisplayProfile)
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import AvatarUtils from "AvatarUtils" /* 1412 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 6344 */;
+// Module 6374 (DisplayProfile)
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import AvatarUtils from "AvatarUtils" /* 1413 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 6375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -214,10 +214,10 @@ class DisplayProfile {
     }
     return getProfilePreviewValue(obj);
   }
-  getPreviewPronouns(pendingValue) {
+  getPreviewPronouns(pendingPronouns) {
     let pronouns;
     const _guildMemberProfile = this._guildMemberProfile;
-    const obj = { pendingValue, userValue: this._userProfile.pronouns, guildValue: pronouns, guildId: this.guildId };
+    const obj = { pendingValue: pendingPronouns, userValue: this._userProfile.pronouns, guildValue: pronouns, guildId: this.guildId };
     pronouns = undefined;
     const getProfilePreviewValue = ProfileCustomizationUtils.getProfilePreviewValue;
     ProfileCustomizationUtils;

@@ -1,9 +1,9 @@
-// Module ID: 20251
-// Function ID: 20252
+// Module ID: 20315
+// Function ID: 20316
 // Name: GlobalDiscoveryServersLimits
 // Dependencies: [2]
 
-// Module 20251 (GlobalDiscoveryServersLimits)
+// Module 20315 (GlobalDiscoveryServersLimits)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GlobalDiscoveryServersLimits.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 9316
-// Function ID: 9317
+// Module ID: 9358
+// Function ID: 9359
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1071, 21, 5012, 575, 1186, 9317, 5603, 1112, 2173, 5610, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 1186, 9359, 5634, 1112, 2174, 5641, 2]
 // Exports: default
 
-// Module 9316 (SubscriptionAccountHoldNotice)
+// Module 9358 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import PremiumUtils from "PremiumUtils" /* 2173 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9317 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9359 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -46,12 +46,12 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     const Icon = subscription(1186).Icon;
     items = [closure_6(Icon, obj3), ];
     const obj4 = { style: tmp.text, variant: "body-sm/medium", children: format(v7I21Iz, obj5) };
-    const Text = subscription(5603).Text;
+    const Text = subscription(5634).Text;
     const intl = subscription(1112).intl;
     format = intl.format;
     obj5 = { endDate: subscription.currentPeriodEnd, planDescription: obj6.getDisplayName(subscription.planId) };
     v7I21Iz = subscription(1112).t["7I21Iz"];
-    obj6 = subscription(2173);
+    obj6 = subscription(2174);
     items[1] = closure_6(Text, obj4);
     items1 = [closure_7(closure_4, obj2), ];
     const obj7 = {
@@ -63,7 +63,7 @@ export default function SubscriptionAccountHoldNotice(subscription) {
           return c3(obj.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
         }
     };
-    const Button = subscription(5610).Button;
+    const Button = subscription(5641).Button;
     intl2 = subscription(1112).intl;
     items1[1] = closure_6(Button, obj7);
     tmp2 = closure_7(closure_4, obj);

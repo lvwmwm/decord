@@ -1,16 +1,16 @@
-// Module ID: 5988
-// Function ID: 5989
+// Module ID: 6019
+// Function ID: 6020
 // Name: getDefaultBackgroundData
-// Dependencies: [5977, 5989, 1112, 5990, 5991, 5992, 2]
+// Dependencies: [6008, 6020, 1112, 6021, 6022, 6023, 2]
 // Exports: default
 
-// Module 5988 (getDefaultBackgroundData)
+// Module 6019 (getDefaultBackgroundData)
 import intl5 from "intl" /* 1112 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5977 */;
-import _modDef5989 from "module_5989" /* 5989 */;
-import _modDef5990 from "module_5990" /* 5990 */;
-import _modDef5991 from "module_5991" /* 5991 */;
-import _modDef5992 from "module_5992" /* 5992 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6008 */;
+import _modDef6020 from "module_6020" /* 6020 */;
+import _modDef6021 from "module_6021" /* 6021 */;
+import _modDef6022 from "module_6022" /* 6022 */;
+import _modDef6023 from "module_6023" /* 6023 */;
 import size from "module_2" /* 2 */;
 
 const DefaultVideoBackground = VideoBackgroundConstants.DefaultVideoBackground;
@@ -24,19 +24,19 @@ export default function getDefaultBackgroundData() {
   let intl4;
   const obj = {};
   const OPTION_1 = DefaultVideoBackground.OPTION_1;
-  const obj2 = { id: DefaultVideoBackground.OPTION_1, source: _modDef5989, name: intl.string(intl5.t.SHUTBj) };
+  const obj2 = { id: DefaultVideoBackground.OPTION_1, source: _modDef6020, name: intl.string(intl5.t.SHUTBj) };
   intl = intl5.intl;
   obj[OPTION_1] = obj2;
   const OPTION_2 = DefaultVideoBackground.OPTION_2;
-  const obj3 = { id: DefaultVideoBackground.OPTION_2, source: _modDef5990, name: intl2.string(intl5.t.UxTcIq) };
+  const obj3 = { id: DefaultVideoBackground.OPTION_2, source: _modDef6021, name: intl2.string(intl5.t.UxTcIq) };
   intl2 = intl5.intl;
   obj[OPTION_2] = obj3;
   const OPTION_3 = DefaultVideoBackground.OPTION_3;
-  const obj4 = { id: DefaultVideoBackground.OPTION_3, source: _modDef5991, name: intl3.string(intl5.t.HFBsc8) };
+  const obj4 = { id: DefaultVideoBackground.OPTION_3, source: _modDef6022, name: intl3.string(intl5.t.HFBsc8) };
   intl3 = intl5.intl;
   obj[OPTION_3] = obj4;
   const OPTION_4 = DefaultVideoBackground.OPTION_4;
-  const obj5 = { id: DefaultVideoBackground.OPTION_4, source: _modDef5992, name: intl4.string(intl5.t["/Dl3+Z"]) };
+  const obj5 = { id: DefaultVideoBackground.OPTION_4, source: _modDef6023, name: intl4.string(intl5.t["/Dl3+Z"]) };
   intl4 = intl5.intl;
   obj[OPTION_4] = obj5;
   obj[DefaultVideoBackground.OPTION_7] = closure_4;

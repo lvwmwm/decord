@@ -1,16 +1,16 @@
-// Module ID: 18048
-// Function ID: 18049
+// Module ID: 18107
+// Function ID: 18108
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [4946, 4865, 4861, 12407, 558, 18045, 18046, 504, 11, 2]
+// Dependencies: [4977, 4896, 4892, 11531, 558, 18104, 18105, 504, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 18048 (useHomeDrawerGuildTyping)
+// Module 18107 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 558 */;
-import ChannelRecord from "ChannelRecord" /* 4865 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4946 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import TypingStore from "TypingStore" /* 12407 */;
+import ChannelRecord from "ChannelRecord" /* 4896 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import TypingStore from "TypingStore" /* 11531 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) 
   return result;
 }
 const isThread = ChannelRecord.isThread;
-let obj = { typingChannelId: "Array", typingChannelName: "analyticsLocations", typingUserIds: [] };
+let obj = { typingChannelId: "Array", typingChannelName: "channel_id", typingUserIds: [] };
 let result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerGuildTyping.tsx");
 
 export function useHomeDrawerGuildTyping(id) {

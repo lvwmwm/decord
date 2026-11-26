@@ -1,18 +1,18 @@
-// Module ID: 18457
-// Function ID: 18458
+// Module ID: 18520
+// Function ID: 18521
 // Name: ConjureAwaitingUser
-// Dependencies: [19, 5013, 21, 575, 5012, 18456, 504, 1653, 5222, 2]
+// Dependencies: [19, 5044, 21, 575, 5043, 18519, 504, 1654, 5253, 2]
 // Exports: ConjureAwaitingPulseRing
 
-// Module 18457 (ConjureAwaitingUser)
+// Module 18520 (ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 18456 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 18519 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import createStyles from "createStyles" /* 5012 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -35,7 +35,7 @@ export function ConjureAwaitingPulseRing() {
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
   stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = stateFromStores(1653);
+  let obj2 = stateFromStores(1654);
   const sharedValue = obj2.useSharedValue(0);
   const items1 = [sharedValue, stateFromStores];
   const effect = react.useEffect(() => {
@@ -43,17 +43,17 @@ export function ConjureAwaitingPulseRing() {
     let fn;
     const tmp = stateFromStores;
     if (tmp) {
-      const obj2 = _mod1653;
+      const obj2 = _mod1654;
       obj2.cancelAnimation(sharedValue);
       const result = sharedValue.set(0);
     } else {
       set = sharedValue.set;
-      const withRepeat = _mod1653.withRepeat;
-      _mod1653;
-      let obj = { duration: 1000, easing: Easing.inOut(_mod1653.Easing.ease) };
+      const withRepeat = _mod1654.withRepeat;
+      _mod1654;
+      let obj = { duration: 1000, easing: Easing.inOut(_mod1654.Easing.ease) };
       const withTiming = timing_timing.withTiming;
       timing_timing;
-      Easing = _mod1653.Easing;
+      Easing = _mod1654.Easing;
       const result1 = set(withRepeat(withTiming(0.35, obj), -1, true));
       fn = () => {
         const obj = stateFromStores(dependencyMap[7]);
@@ -65,7 +65,7 @@ export function ConjureAwaitingPulseRing() {
   const items2 = [closure_7, sharedValue];
   let c0;
   [tmp6, tmp7] = items2;
-  const obj3 = stateFromStores(1653);
+  const obj3 = stateFromStores(1654);
   class ConjureAwaitingUserTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -78,5 +78,5 @@ export function ConjureAwaitingPulseRing() {
   ConjureAwaitingUserTsx1.__initData = tmp6;
   const animatedStyle = obj3.useAnimatedStyle(ConjureAwaitingUserTsx1);
   const items4 = [tmp.ring, animatedStyle];
-  return jsx(sharedValue(1653).View, { pointerEvents: "none", style: items4 });
+  return jsx(sharedValue(1654).View, { pointerEvents: "none", style: items4 });
 }

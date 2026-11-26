@@ -1,12 +1,12 @@
-// Module ID: 6286
-// Function ID: 6287
+// Module ID: 6317
+// Function ID: 6318
 // Name: ProfileEffectRecord
-// Dependencies: [2111, 2112, 2]
+// Dependencies: [2112, 2113, 2]
 // Exports: isProfileEffectRecord
 
-// Module 6286 (ProfileEffectRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 2111 */;
+// Module 6317 (ProfileEffectRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 2112 */;
 import size from "module_2" /* 2 */;
 
 class ProfileEffectRecord extends BaseCollectiblesItemRecord {

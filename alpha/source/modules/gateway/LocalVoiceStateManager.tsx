@@ -1,25 +1,25 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15143
+// Function ID: 15144
 // Name: LocalVoiceStateManager
-// Dependencies: [5819, 5998, 502, 4861, 4883, 2131, 5911, 1071, 6783, 15091, 4837, 1404, 14304, 6785, 15094, 15095, 2]
+// Dependencies: [5850, 6029, 502, 4892, 4914, 2132, 5942, 1071, 6814, 15141, 4868, 1405, 14356, 6816, 15144, 15145, 2]
 
-// Module 15093 (LocalVoiceStateManager)
-import FlagUtils from "FlagUtils" /* 1404 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import Constants2 from "Constants" /* 6783 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6785 */;
-import isClipsEnabled from "isClipsEnabled" /* 14304 */;
-import StreamDrawingChannel from "StreamDrawingChannel" /* 15094 */;
-import StreamDrawingExperiment from "StreamDrawingExperiment" /* 15095 */;
-import PassTheControllerStore from "PassTheControllerStore" /* 5819 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5998 */;
+// Module 15143 (LocalVoiceStateManager)
+import FlagUtils from "FlagUtils" /* 1405 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import Constants2 from "Constants" /* 6814 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6816 */;
+import isClipsEnabled from "isClipsEnabled" /* 14356 */;
+import StreamDrawingChannel from "StreamDrawingChannel" /* 15144 */;
+import StreamDrawingExperiment from "StreamDrawingExperiment" /* 15145 */;
+import PassTheControllerStore from "PassTheControllerStore" /* 5850 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6029 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCRegionStore from "RTCRegionStore" /* 5911 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import MediaEngineStore from "MediaEngineStore" /* 2132 */;
+import RTCRegionStore from "RTCRegionStore" /* 5942 */;
 import Constants from "Constants" /* 1071 */;
-import StateManager from "StateManager" /* 15091 */;
+import StateManager from "StateManager" /* 15141 */;
 import size from "module_2" /* 2 */;
 
 let c10;

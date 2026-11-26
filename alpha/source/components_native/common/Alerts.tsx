@@ -1,23 +1,23 @@
-// Module ID: 19199
-// Function ID: 19200
+// Module ID: 19262
+// Function ID: 19263
 // Name: Alerts
-// Dependencies: [19, 17, 5013, 15193, 15781, 11975, 21, 19200, 19201, 19205, 5012, 575, 504, 1653, 5073, 5222, 1706, 5613, 5614, 6016, 6079, 6074, 7017, 6022, 558, 19206, 2]
+// Dependencies: [19, 17, 5044, 15243, 15832, 12023, 21, 19263, 19264, 19268, 5043, 575, 504, 1654, 5104, 5253, 1707, 5644, 5645, 6047, 6110, 6105, 7048, 6053, 558, 19269, 2]
 
-// Module 19199 (Alerts)
+// Module 19262 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5073 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
-import OverlayViewDefault from "OverlayView" /* 6022 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19200 */;
+import native from "native" /* 5104 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
+import OverlayViewDefault from "OverlayView" /* 6053 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19263 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15193 */;
-import PermissionVADStore from "PermissionVADStore" /* 15781 */;
-import AlertStore from "AlertStore" /* 11975 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15243 */;
+import PermissionVADStore from "PermissionVADStore" /* 15832 */;
+import AlertStore from "AlertStore" /* 12023 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return unpackModuleId(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "sa", renderKey: "isArray", props: "isArray" });
+let closure_23 = Object.freeze({ renderAlert: "radii", renderKey: "id", props: "clearTimeout" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -337,7 +337,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "sa", renderKey: "isArray", props: "isArray" };
+        return { renderAlert: "radii", renderKey: "id", props: "clearTimeout" };
       }
     }
   });

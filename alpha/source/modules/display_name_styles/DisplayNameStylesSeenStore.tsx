@@ -1,9 +1,9 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16084
+// Function ID: 16085
 // Name: DisplayNameStylesSeenStore
 // Dependencies: [504, 572, 2]
 
-// Module 16026 (DisplayNameStylesSeenStore)
+// Module 16084 (DisplayNameStylesSeenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

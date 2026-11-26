@@ -1,19 +1,19 @@
-// Module ID: 10231
-// Function ID: 10232
+// Module ID: 10273
+// Function ID: 10274
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 5227, 6902, 10232, 4861, 5820, 21, 10227, 504, 10088, 8407, 1112, 10233, 1653, 10225, 2]
+// Dependencies: [19, 17, 5258, 6933, 10274, 4892, 5851, 21, 10269, 504, 10130, 8449, 1112, 10275, 1654, 10267, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 10231 (GlobalStatusIndicator)
-import _mod1653 from "module_1653" /* 1653 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8407 */;
+// Module 10273 (GlobalStatusIndicator)
+import _mod1654 from "module_1654" /* 1654 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8449 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 5227 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
-import NativeMenuStore from "NativeMenuStore" /* 10232 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import ActionSheetStore from "ActionSheetStore" /* 5258 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
+import NativeMenuStore from "NativeMenuStore" /* 10274 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -172,7 +172,7 @@ export default function GlobalStatusIndicator(children) {
 };
 export function useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState) {
   let closure_0 = globalStatusIndicatorState;
-  const obj = _mod1653;
+  const obj = _mod1654;
   const sharedValue = obj.useSharedValue(globalStatusIndicatorState.height);
   const items = [globalStatusIndicatorState.height, sharedValue];
   const effect = react.useEffect(() => {

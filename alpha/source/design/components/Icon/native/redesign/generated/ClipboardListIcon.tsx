@@ -1,14 +1,14 @@
-// Module ID: 6971
-// Function ID: 6972
+// Module ID: 7002
+// Function ID: 7003
 // Name: ClipboardListIcon
-// Dependencies: [19, 21, 575, 5698, 6972, 2]
+// Dependencies: [19, 21, 575, 5729, 7003, 2]
 // Exports: ClipboardListIcon
 
-// Module 6971 (ClipboardListIcon)
+// Module 7002 (ClipboardListIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 6972 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 7003 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

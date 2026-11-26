@@ -1,11 +1,11 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 16707
+// Function ID: 16708
 // Name: ReturnFullQuestStatusInDecisionExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: getReturnFullQuestStatusInDecision
 
-// Module 16656 (ReturnFullQuestStatusInDecisionExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 16707 (ReturnFullQuestStatusInDecisionExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-11-return-full-quest-status-in-decision", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true }, 2: { enabled: true }, 3: { enabled: true }, 4: { enabled: true }, 5: { enabled: true }, 6: { enabled: true }, 7: { enabled: true }, 8: { enabled: true }, 9: { enabled: true } } };

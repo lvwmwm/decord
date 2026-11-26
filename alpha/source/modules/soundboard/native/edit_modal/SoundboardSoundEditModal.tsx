@@ -1,14 +1,14 @@
-// Module ID: 19951
-// Function ID: 19952
+// Module ID: 20015
+// Function ID: 20016
 // Name: SoundboardSoundEditModal
-// Dependencies: [19, 1071, 21, 6099, 1112, 7160, 19952, 5573, 1255, 7324, 2]
+// Dependencies: [19, 1071, 21, 6130, 1112, 7191, 20016, 5604, 1256, 7355, 2]
 
-// Module 19951 (SoundboardSoundEditModal)
+// Module 20015 (SoundboardSoundEditModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import useMountEffectDefault from "useMountEffect" /* 5573 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import useMountEffectDefault from "useMountEffect" /* 5604 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let _require;
 let ModalAnimation;
 let closure_4;
 let tmp;
-const NavigatorHeader = tmp(7160);
+const NavigatorHeader = tmp(7191);
 function close() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();

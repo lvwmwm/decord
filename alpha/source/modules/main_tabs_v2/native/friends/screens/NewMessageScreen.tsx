@@ -1,49 +1,49 @@
-// Module ID: 19018
-// Function ID: 19019
+// Module ID: 19081
+// Function ID: 19082
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 4865, 4861, 4954, 7547, 8902, 1071, 21, 1653, 5603, 5012, 575, 1378, 7813, 7548, 572, 504, 1255, 19019, 5222, 19020, 8962, 1112, 11725, 18560, 6348, 6349, 5587, 5573, 12054, 12052, 12051, 8974, 1098, 12055, 5693, 10503, 10504, 5703, 5702, 11489, 5610, 13270, 18957, 2]
+// Dependencies: [5, 32, 19, 17, 4896, 4892, 4985, 7578, 8944, 1071, 21, 1654, 5634, 5043, 575, 1379, 7847, 7579, 572, 504, 1256, 19082, 5253, 19083, 9004, 1112, 11773, 18623, 6379, 6380, 5618, 5604, 12102, 12100, 12099, 9016, 1098, 12103, 5724, 10548, 10549, 5734, 5733, 11537, 5641, 13322, 19020, 2]
 // Exports: default
 
-// Module 19018 (NewMessageScreen)
+// Module 19081 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1098 */;
 import intl4 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import ChannelRecord from "ChannelRecord" /* 4865 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import useMountEffectDefault from "useMountEffect" /* 5573 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5587 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import UserPlusIcon from "UserPlusIcon" /* 5702 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5703 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
-import UserRowConstants from "UserRowConstants" /* 8902 */;
-import HeaderShared from "HeaderShared" /* 8962 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10503 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10504 */;
-import NoResultsDefault from "NoResults" /* 11489 */;
-import ChatViewDefault from "ChatView" /* 11725 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 19019 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19020 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import ChannelRecord from "ChannelRecord" /* 4896 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import useMountEffectDefault from "useMountEffect" /* 5604 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5618 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
+import UserPlusIcon from "UserPlusIcon" /* 5733 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5734 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
+import UserRowConstants from "UserRowConstants" /* 8944 */;
+import HeaderShared from "HeaderShared" /* 9004 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10548 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10549 */;
+import NoResultsDefault from "NoResults" /* 11537 */;
+import ChatViewDefault from "ChatView" /* 11773 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 19082 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19083 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7547 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7578 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const module_1653 = _mod1653;
+const module_1654 = _mod1654;
 let c3, closure_2, dependencyMap;
 
 let closure_12;
@@ -57,10 +57,10 @@ let obj2;
 let obj3;
 let str;
 let tmp2;
-const getGroupDMRecipientLimitDefault = tmp2(12052);
-const GroupDMNitroCapExperimentDefault = tmp2(12054);
-const NewMessageUserListDefault = tmp2(13270);
-const GroupDMNitroUpsellBannerDefault = tmp2(18957);
+const getGroupDMRecipientLimitDefault = tmp2(12100);
+const GroupDMNitroCapExperimentDefault = tmp2(12102);
+const NewMessageUserListDefault = tmp2(13322);
+const GroupDMNitroUpsellBannerDefault = tmp2(19020);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -127,7 +127,7 @@ let obj = function _findMatchingPrivateChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;
@@ -206,7 +206,7 @@ function Header(recipientLimit) {
   const items = [recipientLimit, numInGroup];
   const tmp = closure_20();
   const memo = react.useMemo(() => recipientLimit - (numInGroup + 1), items);
-  _mod1653;
+  _mod1654;
   const items1 = [closure_24, numInGroup, 5, timing_timing.withTiming];
   let c0;
   let c1;
@@ -293,8 +293,8 @@ function ChatPreview(channelId) {
   const obj3 = { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
   items2[0] = closure_17(ChatViewDefault, obj3);
   const obj4 = { portal: obj5.isAndroid() };
-  const PortalKeyboardRenderer = channelId(18560).PortalKeyboardRenderer;
-  obj5 = channelId(1378);
+  const PortalKeyboardRenderer = channelId(18623).PortalKeyboardRenderer;
+  obj5 = channelId(1379);
   items2[1] = closure_17(PortalKeyboardRenderer, obj4);
   return closure_17(View, obj);
 }
@@ -304,7 +304,7 @@ const PrivateChannelRecord = ChannelRecord.PrivateChannelRecord;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ AnalyticEvents: closure_12, AnalyticsSections: map1, ChannelTypes: closure_14, ME: closure_15, Routes: closure_16 } = Constants);
 ({ jsx: closure_17, jsxs: closure_18 } = Fragment);
-let closure_19 = module_1653.createAnimatedComponent(Text_Text.Text);
+let closure_19 = module_1654.createAnimatedComponent(Text_Text.Text);
 let createStyles = createStyles_mod;
 obj = { container: { flex: 1 }, background: obj2, header: { flexDirection: "column", alignItems: str }, emptyContainer: { flexGrow: 1, justifyContent: "center" }, emptyKeyboardView: { flexGrow: 1 }, addFriendsButtonContainer: obj3 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -436,7 +436,7 @@ export default function NewMessageScreen(navigation) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -475,7 +475,7 @@ export default function NewMessageScreen(navigation) {
               }
               tmp8(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp17) {
             c3 = 3;
@@ -523,9 +523,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "text" } };
           obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "text" });
           obj.dispatch(obj2);
         };
       }
@@ -545,13 +545,13 @@ export default function NewMessageScreen(navigation) {
   const config = tmp2Result.useConfig({ location: "NewMessageScreen" });
   const tmp20 = getGroupDMRecipientLimitDefault({ useNitroCapExperiment: true });
   relationshipCount = tmp20;
-  let obj4 = navigation(12051);
+  let obj4 = navigation(12099);
   const result = obj4.shouldUseGroupDMParticipantLimitUI(config.enabled, tmp20);
   c10 = result;
-  navigation(12051);
+  navigation(12099);
   enabled = config.enabled;
   if (enabled) {
-    const tmp13Result = navigation(12051);
+    const tmp13Result = navigation(12099);
     enabled = tmp13Result.isGroupDMNitroUpsellAudience(tmp23);
   }
   const items7 = [navigation, selectedUserIds.length, FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, tmp20, result];
@@ -599,7 +599,7 @@ export default function NewMessageScreen(navigation) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -651,7 +651,7 @@ export default function NewMessageScreen(navigation) {
               closure_1_5(items);
               closure_1_7(false);
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             } else {
               c3 = 1;
               c4 = 1;
@@ -701,7 +701,7 @@ export default function NewMessageScreen(navigation) {
         const tmp31 = closure_17;
         const tmp32 = ChatPreview;
         if (null == FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp13(7548).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp13(7579).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
         }
         let obj3 = { channelId: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, navigateToChannel, tagListInputRef: ref };
         tmp31Result = tmp31(tmp32, obj3, tmp29);
@@ -799,7 +799,7 @@ export default function NewMessageScreen(navigation) {
     return authStore4(View, obj);
   }, items13);
   let obj5 = { value: analyticsLocations, children: closure_17(tmp2Result2, obj6) };
-  const AnalyticsLocationProvider = tmp13(6348).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp13(6379).AnalyticsLocationProvider;
   obj6 = { actions: memo, noResultActions: memo1, rowMode: enabled.NONE, tagListInputRef: ref, onSelectUser: callback1, onQueryChanged: callback3, selectedUserIds, withAffinitySuggestions: true, overrideResults: tmp31Result, afterSearchContent: closure_17(GroupDMNitroUpsellBannerDefault, obj7), withGuildMembers: 0 === selectedUserIds.length, withGDMNames: true, forceSearchResults: tmp10, onForceSearchResults: callback2, defaultNoResultsFound: memo2, autoFocusSearch: true };
   obj7 = { location: "NewMessageScreen", memberCount: selectedUserIds.length + 1, recipientLimit: tmp20 };
   tmp2Result2 = NewMessageUserListDefault;

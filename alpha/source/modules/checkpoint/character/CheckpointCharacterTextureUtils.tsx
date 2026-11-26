@@ -1,12 +1,12 @@
-// Module ID: 12627
-// Function ID: 12628
+// Module ID: 12672
+// Function ID: 12673
 // Name: CheckpointCharacterTextureUtils
-// Dependencies: [2022, 12628, 2]
+// Dependencies: [2023, 12673, 2]
 // Exports: getCheckpointCharacterTextureRole, getCheckpointCharacterTextureScale, getCheckpointCharacterTextureUrl
 
-// Module 12627 (CheckpointCharacterTextureUtils)
-import react_nativeDefault from "react-native" /* 2022 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12628 */;
+// Module 12672 (CheckpointCharacterTextureUtils)
+import react_nativeDefault from "react-native" /* 2023 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12673 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointCharacterTextureType = { SLOT: "slot", TRAIT: "trait", LAYOUT: "layout", ALWAYS: "always" };

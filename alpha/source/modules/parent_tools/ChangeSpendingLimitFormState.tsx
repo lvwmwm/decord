@@ -1,15 +1,15 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16415
+// Function ID: 16416
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 8170, 16273, 504, 6295, 16275, 16365, 8172, 2]
+// Dependencies: [5, 32, 19, 8212, 16324, 504, 6326, 16326, 16416, 8214, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 16364 (ChangeSpendingLimitFormState)
-import SpendingLimitUtils from "SpendingLimitUtils" /* 16275 */;
+// Module 16415 (ChangeSpendingLimitFormState)
+import SpendingLimitUtils from "SpendingLimitUtils" /* 16326 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8170 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8212 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -141,7 +141,7 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -177,7 +177,7 @@ export function useChangeSpendingLimitFormState(teenId, closeChangeSpendingLimit
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else if (1 === c1) {
           c3 = 0;

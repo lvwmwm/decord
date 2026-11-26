@@ -1,19 +1,19 @@
-// Module ID: 19364
-// Function ID: 19365
+// Module ID: 19427
+// Function ID: 19428
 // Name: PlayableActivityFrameHeader
-// Dependencies: [19, 17, 5638, 6840, 21, 5012, 575, 19365, 19359, 19344, 7660, 5272, 16516, 5603, 1112, 4726, 7910, 7216, 6021, 2]
+// Dependencies: [19, 17, 5669, 6871, 21, 5043, 575, 19428, 19422, 19407, 7691, 5303, 16567, 5634, 1112, 4727, 7944, 7247, 6052, 2]
 // Exports: default
 
-// Module 19364 (PlayableActivityFrameHeader)
+// Module 19427 (PlayableActivityFrameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
-import AlertModal from "AlertModal" /* 6021 */;
-import QuestConstants from "QuestConstants" /* 6840 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5669 */;
+import AlertModal from "AlertModal" /* 6052 */;
+import QuestConstants from "QuestConstants" /* 6871 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,25 +56,29 @@ export default function PlayableActivityFrameHeader(arg0) {
   let pipState;
   let playable;
   let productName;
+  let tmp9;
   let wrapperOffset;
+  const f134558 = () => {
+    const obj = require("leaveFrame");
+    return obj.leaveFrame(closure_1_0);
+  };
   ({ frameId: require, playable } = arg0);
+  let isClaimed;
   let setMode;
   function onLeave() {
     setMode(ActivityPanelModes.DISCONNECTED);
-    const timerId = setTimeout(() => {
-      const obj = require("leaveFrame");
-      return obj.leaveFrame(closure_1_0);
-    }, 400);
+    const timerId = setTimeout(f134558, 400);
   }
-  const tmp = closure_9();
-  const tmp4 = setMode(onLeave[7])(playable.id);
-  let isClaimed = tmp4.isClaimed;
+  let tmp = closure_9();
+  const tmp4 = isClaimed(setMode[7])(playable.id);
+  isClaimed = tmp4.isClaimed;
   const remainingSeconds = tmp4.remainingSeconds;
-  const context = react.useContext(setMode(onLeave[8]));
+  const context = onLeave.useContext(isClaimed(setMode[8]));
   setMode = context.setMode;
   ({ wrapperOffset, pipState } = context);
   let obj = require("ActivityPanelHeader");
-  const obj2 = { gesture: obj.useBaseActivityPanelHeaderContent({ landscape: false, setMode, wrapperOffset, pipState }).gesture, children: closure_8(View, obj3) };
+  const obj2 = { gesture: obj.useBaseActivityPanelHeaderContent({ landscape: false, setMode, wrapperOffset, pipState }).gesture, children: tmp8(tmp9, obj3) };
+  tmp9 = View;
   obj3 = { style: tmp.header, children: items };
   const obj4 = { style: tmp.handleWrapper, pointerEvents: "none", children: closure_7(View, obj5) };
   obj5 = { style: tmp.handle };
@@ -83,7 +87,7 @@ export default function PlayableActivityFrameHeader(arg0) {
   const obj6 = { style: tmp.info, children: items1 };
   items1 = [, ];
   const obj7 = { isCompleted: isClaimed, totalSeconds: playable.rewardTimerSeconds, remainingSeconds };
-  items1[0] = closure_7(setMode(onLeave[12]), obj7);
+  items1[0] = closure_7(isClaimed(setMode[12]), obj7);
   const obj8 = { style: tmp.titleGroup, children: items2 };
   const obj9 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: tmp.textShadow, children: productName };
   const Text = require("Text/Text").Text;
@@ -93,9 +97,9 @@ export default function PlayableActivityFrameHeader(arg0) {
   } else {
     productName = playable.productName;
   }
-  items2 = [closure_7(Text, obj9), ];
+  items2 = [tmp7(Text, obj9), ];
   if (isClaimed) {
-    const obj10 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: items3, children: intl2.formatToPlainString(setMode(onLeave[15]).Hshnic, obj11) };
+    const obj10 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: items3, children: intl2.formatToPlainString(isClaimed(setMode[15]).Hshnic, obj11) };
     items3 = [, ];
     ({ textShadow: arr4[0], subtitle: arr4[1] } = tmp);
     const Text2 = tmp6(tmp3[13]).Text;
@@ -104,8 +108,8 @@ export default function PlayableActivityFrameHeader(arg0) {
     isClaimed = tmp7(Text2, obj10);
   }
   items2[1] = isClaimed;
-  items1[1] = closure_8(View, obj8);
-  items[1] = closure_8(View, obj6);
+  items1[1] = closure_8(tmp9, obj8);
+  items[1] = closure_8(tmp9, obj6);
   const obj12 = {
     size: "sm",
     variant: "secondary-overlay",
@@ -116,18 +120,25 @@ export default function PlayableActivityFrameHeader(arg0) {
       let intl2;
       let intl3;
       let intl4;
-      const obj = { key: "playable-leave-game-confirm", title: intl.string(intl5.t.sfp1IW), content: intl2.string(intl5.t.N9rsFG), confirmText: intl3.string(intl5.t["Hi1/aQ"]), cancelText: intl4.string(intl5.t.DvApnG), onConfirm: onLeave };
-      const showConfirmModal = AlertModal.showConfirmModal;
-      AlertModal;
-      intl = intl5.intl;
-      intl2 = intl5.intl;
-      intl3 = intl5.intl;
-      intl4 = intl5.intl;
-      showConfirmModal(obj);
+      const tmp = isClaimed;
+      if (tmp) {
+        let obj = { key: "playable-leave-game-confirm", title: intl.string(intl5.t.sfp1IW), content: intl2.string(intl5.t.N9rsFG), confirmText: intl3.string(intl5.t["Hi1/aQ"]), cancelText: intl4.string(intl5.t.DvApnG), onConfirm: onLeave };
+        const showConfirmModal = AlertModal.showConfirmModal;
+        AlertModal;
+        intl = intl5.intl;
+        intl2 = intl5.intl;
+        intl3 = intl5.intl;
+        intl4 = intl5.intl;
+        showConfirmModal(obj);
+      } else {
+        setMode(ActivityPanelModes.DISCONNECTED);
+        const _setTimeout = setTimeout;
+        const timerId = setTimeout(f134558, 400);
+      }
     }
   };
   const IconButton = tmp6(tmp3[16]).IconButton;
-  obj13 = { size: "sm", color: setMode(onLeave[6]).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
+  obj13 = { size: "sm", color: isClaimed(setMode[6]).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
   XSmallIcon = tmp6(tmp3[17]).XSmallIcon;
   intl3 = tmp6(tmp3[14]).intl;
   items[2] = closure_7(IconButton, obj12);

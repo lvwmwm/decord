@@ -1,17 +1,17 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 15832
+// Function ID: 15833
 // Name: PermissionVADStore
-// Dependencies: [502, 4861, 2131, 4944, 5820, 5660, 1071, 572, 504, 2]
+// Dependencies: [502, 4892, 2132, 4975, 5851, 5691, 1071, 572, 504, 2]
 
-// Module 15781 (PermissionVADStore)
+// Module 15832 (PermissionVADStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
-import VoiceStateStore from "VoiceStateStore" /* 5660 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import MediaEngineStore from "MediaEngineStore" /* 2132 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
+import VoiceStateStore from "VoiceStateStore" /* 5691 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

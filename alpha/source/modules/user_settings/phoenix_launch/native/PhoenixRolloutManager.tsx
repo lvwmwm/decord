@@ -1,14 +1,14 @@
-// Module ID: 19784
-// Function ID: 19785
+// Module ID: 19848
+// Function ID: 19849
 // Name: PhoenixRolloutManager
-// Dependencies: [5, 502, 3, 17330, 17332, 17331, 17329, 7444, 2]
+// Dependencies: [5, 502, 3, 17381, 17383, 17382, 17380, 7475, 2]
 
-// Module 19784 (PhoenixRolloutManager)
+// Module 19848 (PhoenixRolloutManager)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 17330 */;
+import react_nativeDefault from "react-native" /* 17381 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, c5, closure_2, id;
@@ -28,7 +28,7 @@ let obj = function _applyPhoenixRollout() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -105,7 +105,7 @@ let obj = function _applyPhoenixRollout() {
           closure_129_5.error("The launch switch was not stored");
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp30) {
         c3 = 3;
         throw tmp30;
@@ -137,7 +137,7 @@ class PhoenixRolloutManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -178,7 +178,7 @@ class PhoenixRolloutManager extends AutomaticLifecycleManager {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp12) {
           closure_2 = tmp12;

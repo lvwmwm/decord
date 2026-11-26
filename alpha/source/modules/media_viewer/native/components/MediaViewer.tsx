@@ -1,17 +1,17 @@
-// Module ID: 14102
-// Function ID: 14103
+// Module ID: 14154
+// Function ID: 14155
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1378, 1653, 14103, 14104, 8577, 5272, 7397, 6348, 6349, 8832, 14109, 14110, 14087, 6079, 5222, 1706, 8765, 8868, 9976, 14111, 9978, 2]
+// Dependencies: [32, 19, 17, 21, 1379, 1654, 14155, 14156, 8619, 5303, 7428, 6379, 6380, 8874, 14161, 14162, 14139, 6110, 5253, 1707, 8807, 8910, 10018, 14163, 10020, 2]
 
-// Module 14102 (MediaViewer)
-import useVideoControls from "useVideoControls" /* 8765 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8832 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 14104 */;
+// Module 14154 (MediaViewer)
+import useVideoControls from "useVideoControls" /* 8807 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 8874 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 14156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, _undefined2;

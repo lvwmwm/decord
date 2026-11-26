@@ -1,27 +1,27 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16573
+// Function ID: 16574
 // Name: BountiesScrollRecapPage
-// Dependencies: [19, 17, 5013, 21, 575, 5012, 1378, 5699, 16523, 8838, 16524, 1628, 504, 16525, 5603, 1112, 9423, 5610, 2]
+// Dependencies: [19, 17, 5044, 21, 575, 5043, 1379, 5730, 16574, 8880, 16575, 1629, 504, 16576, 5634, 1112, 9465, 5641, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 16522 (BountiesScrollRecapPage)
+// Module 16573 (BountiesScrollRecapPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import OrbsIcon from "OrbsIcon" /* 9423 */;
-import _modDef16523 from "module_16523" /* 16523 */;
-import _modDef16524 from "module_16524" /* 16524 */;
-import _modDef16525 from "module_16525" /* 16525 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import OrbsIcon from "OrbsIcon" /* 9465 */;
+import _modDef16574 from "module_16574" /* 16574 */;
+import _modDef16575 from "module_16575" /* 16575 */;
+import _modDef16576 from "module_16576" /* 16576 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -29,7 +29,7 @@ let closure_4;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const common_Video = tmp(8838);
+const common_Video = tmp(8880);
 function BountiesRecapOrbsBackground(arg0) {
   let obj3;
   let obj4;
@@ -43,12 +43,12 @@ function BountiesRecapOrbsBackground(arg0) {
   if (obj.isAndroid()) {
     const obj2 = { style, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: metroRequire(tmp8, obj3) };
     obj3 = { source: obj4, style: _false.absoluteFillObject, resizeMode: "contain", enableAnimation: !reducedMotion };
-    obj4 = { uri: _modDef16523 };
+    obj4 = { uri: _modDef16574 };
     tmp8 = FastImageDefault;
     tmp3Result = tmp3(React3, obj2);
   } else {
     const obj5 = { source: obj6, style, resizeMode: "contain", paused: reducedMotion, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-    obj6 = { uri: _modDef16524 };
+    obj6 = { uri: _modDef16575 };
     const VideoComponent = common_Video.VideoComponent;
     tmp3Result = tmp3(VideoComponent, obj5);
   }
@@ -104,7 +104,7 @@ export function BountiesScrollRecapPage(orbAmount) {
   items1 = [tmp.root, style];
   const obj3 = { style: _false.absoluteFillObject, pointerEvents: "none", children: items2 };
   const obj4 = { source: obj5, style: _false.absoluteFillObject, resizeMode: "cover", paused: stateFromStores, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
-  obj5 = { uri: _modDef16525 };
+  obj5 = { uri: _modDef16576 };
   const VideoComponent = common_Video.VideoComponent;
   items2 = [metroRequire(VideoComponent, obj4), ];
   const obj6 = { style: tmp.orbsBackground, reducedMotion: stateFromStores };

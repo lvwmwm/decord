@@ -1,22 +1,22 @@
-// Module ID: 11945
-// Function ID: 11946
+// Module ID: 11993
+// Function ID: 11994
 // Name: useConjureProjectLinkEmbeds
-// Dependencies: [19, 5013, 2164, 4861, 4924, 4883, 4944, 1386, 6903, 11946, 5734, 5756, 504, 1450, 11947, 11954, 11505, 11950, 2]
+// Dependencies: [19, 5044, 2165, 4892, 4955, 4914, 4975, 1387, 6934, 11994, 5765, 5787, 504, 1451, 11995, 12002, 11553, 11998, 2]
 // Exports: default
 
-// Module 11945 (useConjureProjectLinkEmbeds)
-import ChannelStore2 from "ChannelStore" /* 4861 */;
-import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11947 */;
-import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11954 */;
+// Module 11993 (useConjureProjectLinkEmbeds)
+import ChannelStore2 from "ChannelStore" /* 4892 */;
+import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11995 */;
+import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 12002 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import ApplicationStore from "ApplicationStore" /* 2164 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import UserStore from "UserStore" /* 1386 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11946 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import UserStore from "UserStore" /* 1387 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11994 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -151,7 +151,7 @@ export default function useConjureProjectLinkEmbeds(channelId) {
           tmp14 = null == tmp12.creator;
         }
         if (tmp14) {
-          let tmp9Result = tmp9(11505);
+          let tmp9Result = tmp9(11553);
           let messageAuthor = tmp9Result.requestMessageAuthor(tmp12.ownerId);
         }
         let status = ConjureSharedProjectStore.getStatus(tmp4, tmp5);
@@ -166,7 +166,7 @@ export default function useConjureProjectLinkEmbeds(channelId) {
         }
         let sharedProjectHomeGuildId = null;
         if (null != project) {
-          let tmp9Result2 = tmp9(11950);
+          let tmp9Result2 = tmp9(11998);
           sharedProjectHomeGuildId = tmp9Result2.getSharedProjectHomeGuildId(tmp27);
         }
         if (null != sharedProjectHomeGuildId) {

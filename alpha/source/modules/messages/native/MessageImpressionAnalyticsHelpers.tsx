@@ -1,18 +1,18 @@
-// Module ID: 11932
-// Function ID: 11933
+// Module ID: 11980
+// Function ID: 11981
 // Name: MessageImpressionAnalyticsHelpers
-// Dependencies: [19, 5731, 5823, 1071, 8310, 5745, 11933, 7595, 5734, 5743, 5732, 2]
+// Dependencies: [19, 5762, 5854, 1071, 8352, 5776, 11981, 7626, 5765, 5774, 5763, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 11932 (MessageImpressionAnalyticsHelpers)
-import CodedLink from "CodedLink" /* 5734 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 5743 */;
-import Constants2 from "Constants" /* 5745 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 8310 */;
-import MessageViewTrackingManager from "MessageViewTrackingManager" /* 11933 */;
+// Module 11980 (MessageImpressionAnalyticsHelpers)
+import CodedLink from "CodedLink" /* 5765 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 5774 */;
+import Constants2 from "Constants" /* 5776 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 8352 */;
+import MessageViewTrackingManager from "MessageViewTrackingManager" /* 11981 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5731 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5823 */;
+import InviteStore from "InviteStore" /* 5762 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5854 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -281,10 +281,10 @@ export function handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEm
                   let voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(tmp11, tmp14);
                   someResult = voiceStatesForChannelAlt.some((voiceState) => voiceState.voiceState.selfStream);
                 }
-                let obj = { type: tmp7(11933).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp14, inviteChannelId: tmp11, inviteInstanceId, hasActiveStream: tmp21 };
+                let obj = { type: tmp7(11981).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp14, inviteChannelId: tmp11, inviteInstanceId, hasActiveStream: tmp21 };
                 tmp21 = someResult;
                 let push = items.push;
-                let tmp7Result = tmp7(5732);
+                let tmp7Result = tmp7(5763);
                 inviteInstanceId = tmp7Result.getInviteInstanceId(tmp6.code, message.id);
                 if (inviteInstanceId == null) {
                   inviteInstanceId = null;

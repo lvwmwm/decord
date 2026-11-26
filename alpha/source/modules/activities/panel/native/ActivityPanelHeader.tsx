@@ -1,28 +1,28 @@
-// Module ID: 19344
-// Function ID: 19345
+// Module ID: 19407
+// Function ID: 19408
 // Name: ActivityPanelHeader
-// Dependencies: [32, 19, 17, 4860, 5638, 1082, 21, 5012, 575, 1628, 1706, 19341, 5073, 5272, 19345, 504, 7484, 19346, 19350, 19351, 19191, 19336, 2]
+// Dependencies: [32, 19, 17, 4891, 5669, 1082, 21, 5043, 575, 1629, 1707, 19404, 5104, 5303, 19408, 504, 7515, 19409, 19413, 19414, 19254, 19399, 2]
 // Exports: useBaseActivityPanelHeader
 
-// Module 19344 (ActivityPanelHeader)
+// Module 19407 (ActivityPanelHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import native from "native" /* 5073 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7484 */;
-import LeaveActivityButtonDefault from "LeaveActivityButton" /* 19191 */;
-import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 19345 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 19346 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19350 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import native from "native" /* 5104 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7515 */;
+import LeaveActivityButtonDefault from "LeaveActivityButton" /* 19254 */;
+import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 19408 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 19409 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19413 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5669 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -38,7 +38,7 @@ let obj2;
 let obj4;
 let size;
 let tmp2;
-const useMorphablePanelGestureDefault = tmp2(19341);
+const useMorphablePanelGestureDefault = tmp2(19404);
 function useBaseActivityPanelHeaderContent(landscape) {
   let closure_1;
   let closure_2;
@@ -100,7 +100,7 @@ function useBaseActivityPanelHeaderContent(landscape) {
     return items;
   }, items1);
   const useCallback = react.useCallback;
-  items2[1] = landscape(1706).scheduleOnRN;
+  items2[1] = landscape(1707).scheduleOnRN;
   items2[2] = setMode;
   items2[3] = closure_10;
   let c0;
@@ -120,7 +120,7 @@ function useBaseActivityPanelHeaderContent(landscape) {
   const items4 = [setMode];
   let obj = { gesture: tmp2Result(obj2), headerWrapperStyles: memo, headerStyles: memo1, styles: tmp };
   const callback = useCallback(ActivityPanelHeaderTsx1, items4);
-  obj2 = { mode: tmp8(19341).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  obj2 = { mode: tmp8(19404).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
   tmp2Result = useMorphablePanelGestureDefault;
   return obj;
 }
@@ -225,7 +225,7 @@ let closure_19 = react.memo(function ActivityPanelHeaderContentInner(wrapperOffs
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
-    tmp8Result2 = tmp8(tmp5(19351), obj5);
+    tmp8Result2 = tmp8(tmp5(19414), obj5);
   }
   items3[1] = tmp8Result2;
   let tmp20 = null;
@@ -249,7 +249,7 @@ const memoResult = react.memo(function ActivityPanelHeader() {
   let setMode;
   let wrapperOffset;
   let wrapperDimensions;
-  let tmp = wrapperDimensions(19336);
+  let tmp = wrapperDimensions(19399);
   const tmp2 = closure_14();
   const headerContainer = tmp2;
   const context = react.useContext(tmp);

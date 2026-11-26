@@ -1,14 +1,14 @@
-// Module ID: 8024
-// Function ID: 8025
+// Module ID: 8058
+// Function ID: 8059
 // Name: UnknownGameIcon
-// Dependencies: [19, 21, 575, 5698, 8025, 2]
+// Dependencies: [19, 21, 575, 5729, 8059, 2]
 // Exports: UnknownGameIcon
 
-// Module 8024 (UnknownGameIcon)
+// Module 8058 (UnknownGameIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 8025 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 8059 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

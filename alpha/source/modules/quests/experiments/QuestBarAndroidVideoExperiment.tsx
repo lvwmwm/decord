@@ -1,10 +1,10 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 16798
+// Function ID: 16799
 // Name: QuestBarAndroidVideoExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 16747 (QuestBarAndroidVideoExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 16798 (QuestBarAndroidVideoExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-11-quest-bar-android-video", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

@@ -1,11 +1,11 @@
-// Module ID: 16918
-// Function ID: 16919
+// Module ID: 16969
+// Function ID: 16970
 // Name: CustomTypingIndicatorNewPresetsExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: useCustomTypingIndicatorNewPresetsConfig
 
-// Module 16918 (CustomTypingIndicatorNewPresetsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 16969 (CustomTypingIndicatorNewPresetsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-11-cti-new-presets", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

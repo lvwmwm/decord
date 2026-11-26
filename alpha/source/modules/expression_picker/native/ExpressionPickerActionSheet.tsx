@@ -1,25 +1,25 @@
-// Module ID: 10753
-// Function ID: 10754
+// Module ID: 10799
+// Function ID: 10800
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 4861, 5241, 10754, 21, 1653, 5199, 1626, 504, 10755, 5226, 1494, 1628, 5566, 1378, 9537, 5240, 10756, 2]
+// Dependencies: [19, 4892, 5272, 10800, 21, 1654, 5230, 1627, 504, 10801, 5257, 1495, 1629, 5597, 1379, 9579, 5271, 10802, 2]
 // Exports: default
 
-// Module 10753 (ExpressionPickerActionSheet)
+// Module 10799 (ExpressionPickerActionSheet)
 import get_initialized from "get initialized" /* 504 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import KeyboardTypes from "KeyboardTypes" /* 1626 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import useKeyboardType from "useKeyboardType" /* 5199 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5241 */;
-import NavigatorConstants from "NavigatorConstants" /* 5566 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10754 */;
-import react_native from "react-native" /* 10755 */;
-import ExpressionPickerDefault from "ExpressionPicker" /* 10756 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import KeyboardTypes from "KeyboardTypes" /* 1627 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import useKeyboardType from "useKeyboardType" /* 5230 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
+import NavigatorConstants from "NavigatorConstants" /* 5597 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10800 */;
+import react_native from "react-native" /* 10801 */;
+import ExpressionPickerDefault from "ExpressionPicker" /* 10802 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export default function ExpressionPickerActionSheet(arg0) {
   ({ channelId: require, onPressEmoji: importDefault, onPressSticker: dependencyMap, onPressGIF: react } = arg0);
   ({ hideGifFavorites, onDismiss, visibleTabs, initialGifQuery } = arg0);
   const ref = react.useRef(null);
-  let obj = _mod1653;
+  let obj = _mod1654;
   const sharedValue = obj.useSharedValue(-1);
   let obj2 = useKeyboardType;
   const type = obj2.useKeyboardContextForType(KeyboardTypes.KeyboardTypes.EXPRESSION).type;
@@ -58,12 +58,12 @@ export default function ExpressionPickerActionSheet(arg0) {
     const tmp15 = closure_8;
     if (isIOSResult) {
       const obj4 = { animatedSheetIndex: sharedValue, followSystemKeyboard: true, constrainToActionSheet: true };
-      isIOSResult = closure_7(tmp6(9537), obj4);
+      isIOSResult = closure_7(tmp6(9579), obj4);
     }
     const obj5 = { children: items1 };
     items1 = [isIOSResult, ];
     const obj6 = { scrollable: true, animatedIndex: sharedValue, startHeight: height * closure_5, containerHeight: diff, onDismiss, children: closure_7(ExpressionPickerDefault, obj7) };
-    const BottomSheet = tmp2(5240).BottomSheet;
+    const BottomSheet = tmp2(5271).BottomSheet;
     obj7 = {
       bottomSheetRef: ref,
       bottomSheetIndex: sharedValue,

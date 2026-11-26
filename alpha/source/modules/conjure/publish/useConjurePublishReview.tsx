@@ -1,49 +1,57 @@
-// Module ID: 18409
-// Function ID: 18410
+// Module ID: 18470
+// Function ID: 18471
 // Name: useConjurePublishReview
-// Dependencies: [5, 32, 19, 4883, 4944, 1386, 6903, 7675, 1071, 18410, 18412, 18413, 18414, 504, 18419, 18405, 8484, 7636, 2]
+// Dependencies: [5, 32, 19, 4914, 4975, 1387, 6934, 7706, 1071, 6935, 18471, 18473, 18474, 18475, 504, 18480, 18464, 18481, 18465, 8526, 7667, 2]
 // Exports: default
 
-// Module 18409 (useConjurePublishReview)
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8484 */;
-import conjurePublishReview from "conjurePublishReview" /* 18405 */;
-import useConjureAppIdentityDraftDefault from "useConjureAppIdentityDraft" /* 18410 */;
-import useConjurePreviewDevicePermissionsDefault from "useConjurePreviewDevicePermissions" /* 18413 */;
-import useConjurePublishRemixDefault from "useConjurePublishRemix" /* 18414 */;
+// Module 18470 (useConjurePublishReview)
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8526 */;
+import conjurePublishReview from "conjurePublishReview" /* 18464 */;
+import useConjureAppIdentityDraftDefault from "useConjureAppIdentityDraft" /* 18471 */;
+import useConjurePreviewDevicePermissionsDefault from "useConjurePreviewDevicePermissions" /* 18474 */;
+import useConjurePublishRemixDefault from "useConjurePublishRemix" /* 18475 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import UserStore from "UserStore" /* 1386 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7675 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import UserStore from "UserStore" /* 1387 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7706 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c4, closure_2, dependencyMap, importDefault;
+let _require, c1, c4, closure_2, constants, dependencyMap, importDefault;
 
 let closure_12;
+let tmp;
 let unpackModuleId;
+const useConjureViewPlacementDefault = tmp(18481);
 let isProjectOwner = ConjureProjectStore.isProjectOwner;
 ({ ChannelTypes: unpackModuleId, Permissions: closure_12 } = Constants);
+let items = ["app_channel", ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL];
+const set = new Set(items);
 let result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishReview.tsx");
 
 export default function useConjurePublishReview(id, arg1) {
+  let appChannels;
   let closure_1;
+  let length;
   let result1;
   let saving;
-  let tmp13;
   let tmp14;
-  let tmp23;
-  let tmp24;
+  let tmp15;
+  let tmp27;
+  let tmp28;
+  let tmp29;
   _require = id;
   importDefault = arg1;
   let obj = function _save() {
     let name;
     let user;
-    let obj = _asyncToGenerator(async function(arg0, value) {
+    obj = _asyncToGenerator(async function(arg0, value) {
       let closure_0;
       if (c4 === 2) {
         c4 = 3;
@@ -55,7 +63,7 @@ export default function useConjurePublishReview(id, arg1) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -82,9 +90,9 @@ export default function useConjurePublishReview(id, arg1) {
                   }
                   if (tmp22) {
                     const obj4 = { name };
-                    const updateProjectSettings = tmp(closure_2[17]).updateProjectSettings;
+                    const updateProjectSettings = tmp(closure_2[20]).updateProjectSettings;
                     id = user.id;
-                    const tmp27 = tmp(closure_2[17]);
+                    const tmp27 = tmp(closure_2[20]);
                     const merged = Object.assign(closure_2_2.changes);
                     c1 = 2;
                     c4 = 1;
@@ -118,7 +126,7 @@ export default function useConjurePublishReview(id, arg1) {
             c3 = 0;
             closure_128_6(false);
             c4 = 3;
-            const obj = { value, done: true };
+            obj = { value, done: true };
             return obj;
           } else if (value) {
             c3 = 0;
@@ -149,64 +157,86 @@ export default function useConjurePublishReview(id, arg1) {
     });
     return obj(...arguments);
   };
-  const tmp = dependencyMap;
-  const tmp2 = useConjureAppIdentityDraftDefault(id.id);
-  dependencyMap = tmp2;
-  const tmp3 = _require;
+  const tmp = importDefault;
+  const tmp3 = useConjureAppIdentityDraftDefault(id.id);
+  dependencyMap = tmp3;
   obj = require("useConjureManagedCopy");
   const isConjureManagedCopy = obj.useIsConjureManagedCopy(id.id);
-  const tmp5 = useConjurePreviewDevicePermissionsDefault(id.id);
-  const tmp6 = useConjurePublishRemixDefault(id.id);
-  let closure_3 = tmp6;
+  const tmp6 = useConjurePreviewDevicePermissionsDefault(id.id);
+  const tmp7 = useConjurePublishRemixDefault(id.id);
+  let closure_3 = tmp7;
   let obj2 = require("get initialized");
   const items = [result1];
   const items1 = [id.id];
   const stateFromStores = obj2.useStateFromStores(items, () => ConjurePublishStatusStore.getPublishStatus(id.id), items1);
   let obj3 = saving;
-  const tmp8 = stateFromStores(saving.useState(id.name), 2);
-  const tmp9 = tmp8[1];
-  const tmp10 = stateFromStores(saving.useState(false), 2);
-  saving = tmp10[0];
-  let closure_6 = tmp10[1];
-  [tmp13, tmp14] = stateFromStores(saving.useState(false), 2);
-  const tmp12 = stateFromStores(saving.useState(false), 2);
-  const tmp15 = isProjectOwner(id);
-  let closure_7 = tmp15;
+  const tmp9 = stateFromStores(saving.useState(id.name), 2);
+  const tmp10 = tmp9[1];
+  const tmp11 = stateFromStores(saving.useState(false), 2);
+  saving = tmp11[0];
+  let closure_6 = tmp11[1];
+  [tmp14, tmp15] = stateFromStores(saving.useState(false), 2);
+  const tmp13 = stateFromStores(saving.useState(false), 2);
+  const tmp16 = isProjectOwner(id);
+  let closure_7 = tmp16;
   const trimmed = str.trim();
   let result = null;
-  if (tmp15) {
-    const tmp3Result = tmp3(18419);
-    result = tmp3Result.conjureProjectNameError(trimmed);
+  if (tmp16) {
+    const tmp4Result = require("conjureProjectNameError");
+    result = tmp4Result.conjureProjectNameError(trimmed);
   }
   isProjectOwner = result;
-  const tmp3Result5 = tmp3(18405);
-  result1 = tmp3Result5.conjurePublishReviewReason(id, stateFromStores);
-  const items2 = [id, stateFromStores, result1];
+  const tmp4Result6 = require("conjurePublishReview");
+  result1 = tmp4Result6.conjurePublishReviewReason(id, stateFromStores);
+  const tmp20 = useConjureViewPlacementDefault(id, stateFromStores);
+  let closure_11 = tmp21;
+  const items2 = [id, stateFromStores, result1, tmp21];
   const memo = obj3.useMemo(() => {
-    const obj = conjurePublishReview;
-    return obj.conjurePublishIncludes(id, stateFromStores, result1);
+    obj = conjurePublishReview;
+    result = obj.conjurePublishIncludes(id, stateFromStores, result1);
+    let found = result;
+    if (closure_11) {
+      found = result.filter((icon) => !set.has(icon.icon));
+    }
+    return found;
   }, items2);
-  const length = memo.filter((creates) => creates.creates).length;
-  let tmp19 = null;
-  if (tmp15) {
-    tmp19 = null;
+  if (stateFromStores != null) {
+    const views = stateFromStores.views;
+    if (views != null) {
+      appChannels = views.mounts.appChannels;
+    }
+  }
+  if (null == tmp20) {
+    length = memo.filter((creates) => creates.creates).length;
+  } else {
+    const conjureViewPlacementCreatedChannels = tmp4(18465).conjureViewPlacementCreatedChannels;
+    const draft = tmp20.draft;
+    require("conjureViewPlacement");
+    if (appChannels == null) {
+      appChannels = [];
+    }
+    length = conjureViewPlacementCreatedChannels(draft, appChannels);
+  }
+  let tmp23 = null;
+  if (tmp16) {
+    tmp23 = null;
     if (length > 0) {
-      tmp19 = null;
+      tmp23 = null;
       if ("guild" === id.install_scope) {
-        tmp19 = null;
+        tmp23 = null;
         if (id.guild_id === arg1) {
-          tmp19 = arg1;
+          tmp23 = arg1;
         }
       }
     }
   }
-  let closure_11 = tmp19;
+  constants = tmp23;
   const items3 = [closure_6, closure_7];
-  const items4 = [tmp19];
-  const tmp3Result6 = tmp3(504);
-  const stateFromStores1 = tmp3Result6.useStateFromStores(items3, () => {
+  const items4 = [tmp23];
+  const tmp4Result8 = require("get initialized");
+  const stateFromStores1 = tmp4Result8.useStateFromStores(items3, () => {
     let guild = null;
-    if (null != closure_11) {
+    if (null != constants) {
       guild = GuildStore.getGuild(tmp);
     }
     let canResult = null != guild && PermissionStore.can(constants.MANAGE_CHANNELS, guild);
@@ -221,8 +251,8 @@ export default function useConjurePublishReview(id, arg1) {
   }, items4);
   const items5 = [closure_6];
   const items6 = [arg1];
-  const tmp3Result7 = tmp3(504);
-  const stateFromStores2 = tmp3Result7.useStateFromStores(items5, () => {
+  const tmp4Result9 = require("get initialized");
+  const stateFromStores2 = tmp4Result9.useStateFromStores(items5, () => {
     let guild = null;
     if (null != closure_1) {
       guild = GuildStore.getGuild(tmp);
@@ -230,44 +260,49 @@ export default function useConjurePublishReview(id, arg1) {
     return guild;
   }, items6);
   const items7 = [trimmed];
-  const tmp3Result8 = tmp3(504);
-  const stateFromStores3 = tmp3Result8.useStateFromStores(items7, () => trimmed.getCurrentUser());
+  const tmp4Result10 = require("get initialized");
+  const stateFromStores3 = tmp4Result10.useStateFromStores(items7, () => trimmed.getCurrentUser());
   let obj4 = {
     projectId: id.id,
     reason: result1,
-    editable: tmp15,
+    editable: tmp16,
     managedCopy: isConjureManagedCopy,
-    identity: tmp2,
+    identity: tmp3,
     name: str,
-    setName: tmp9,
+    setName: tmp10,
     nameError: result,
     includes: memo,
-    appChannelsPrivate: tmp23,
-    devicePermissions: tmp5,
-    remix: tmp6,
-    destination: tmp24,
+    placement: tmp20,
+    appChannelsPrivate: tmp27,
+    devicePermissions: tmp6,
+    remix: tmp7,
+    destination: tmp29,
     saving,
     save() {
       return obj(...arguments);
     }
   };
-  tmp23 = null;
+  tmp27 = null;
   if (stateFromStores1) {
-    let obj5 = { isPrivate: tmp13, setPrivate: tmp14, shared: length > 1 };
-    tmp23 = obj5;
+    let obj5 = { isPrivate: tmp14, setPrivate: tmp15, shared: tmp28 };
+    tmp28 = null != tmp20;
+    if (!tmp28) {
+      tmp28 = length > 1;
+    }
+    tmp27 = obj5;
   }
   if ("user" === id.install_scope) {
-    let tmp25 = null;
+    let tmp30 = null;
     if (null != stateFromStores3) {
       let obj6 = { type: "account", user: stateFromStores3 };
-      tmp25 = obj6;
+      tmp30 = obj6;
     }
-    tmp24 = tmp25;
+    tmp29 = tmp30;
   } else {
-    tmp24 = null;
+    tmp29 = null;
     if (null != stateFromStores2) {
       let obj7 = { type: "server", guild: stateFromStores2 };
-      tmp24 = obj7;
+      tmp29 = obj7;
     }
   }
   return obj4;

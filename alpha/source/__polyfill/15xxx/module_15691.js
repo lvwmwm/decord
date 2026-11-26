@@ -1,18 +1,25 @@
 // Module ID: 15691
 // Function ID: 15692
-// Dependencies: [15692]
+// Dependencies: [1158]
+// Exports: isMissingLocaleDataError
 
 // Module 15691
-import _mod15692 from "module_15692" /* 15692 */;
+import module_1158 from "module_1158" /* 1158 */;
 
-
-export default function(arg0) {
-  if (_mod15692(arg0)) {
-    const self = this;
-    const self2 = this;
-    const tmp2 = new TypeError("Can't call method on " + arg0);
-    throw tmp2;
-  } else {
-    return arg0;
+module_1158.__extends(function MissingLocaleDataError() {
+  const self = this;
+  let applyResult = null !== Error;
+  const obj = Error;
+  if (applyResult) {
+    applyResult = obj(...arguments);
   }
-};
+  if (!applyResult) {
+    applyResult = self;
+  }
+  applyResult.type = "MISSING_LOCALE_DATA";
+  return applyResult;
+}, Error);
+
+export function isMissingLocaleDataError(type) {
+  return "MISSING_LOCALE_DATA" === type.type;
+}

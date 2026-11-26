@@ -1,12 +1,12 @@
-// Module ID: 7559
-// Function ID: 7560
+// Module ID: 7590
+// Function ID: 7591
 // Name: SocialLayerStorefrontStore
-// Dependencies: [2188, 502, 504, 572, 2]
+// Dependencies: [2189, 502, 504, 572, 2]
 
-// Module 7559 (SocialLayerStorefrontStore)
+// Module 7590 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LocaleStore from "LocaleStore" /* 2188 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -405,7 +405,7 @@ obj = {
       const merged7 = Object.assign(obj12);
       obj12 = obj8;
     } else {
-      obj = { state: "error", fetchedAt: Date.now(), storefront: "o" };
+      obj = { state: "error", fetchedAt: Date.now(), storefront: "Array" };
       const _Date = Date;
       if (null != guildId) {
         const obj9 = {};

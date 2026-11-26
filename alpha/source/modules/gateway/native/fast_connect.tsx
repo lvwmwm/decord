@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 16
 // Name: fast_connect
-// Dependencies: [16, 17, 499, 3, 500, 1263, 10314, 15089, 15577, 8270, 15071, 15058, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 1264, 10356, 15139, 15628, 8312, 15121, 15108, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (fast_connect)
@@ -11,11 +11,11 @@ import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import react_native from "react-native" /* 17 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
 import QosToken from "QosToken" /* 500 */;
-import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1263 */;
-import isCacheEnabled from "isCacheEnabled" /* 8270 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10314 */;
-import GatewayCapabilities from "GatewayCapabilities" /* 15089 */;
-import react_nativeDefault from "react-native" /* 15577 */;
+import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1264 */;
+import isCacheEnabled from "isCacheEnabled" /* 8312 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10356 */;
+import GatewayCapabilities from "GatewayCapabilities" /* 15139 */;
+import react_nativeDefault from "react-native" /* 15628 */;
 import checkEnv from "checkEnv" /* 16 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ function createFastConnectSocket() {
   let obj;
   let obj3;
   if (null != window.WebSocket) {
-    obj = obj3(15071);
+    obj = obj3(15121);
     constants = obj.getConstants();
     let flag;
     if (constants != null) {
@@ -45,7 +45,7 @@ function createFastConnectSocket() {
     obj.log(`[FAST CONNECT] ${tmp7}`);
     const _Date = Date;
     let closure_0 = Date.now();
-    const tmp9 = obj3(15058)(combined);
+    const tmp9 = obj3(15108)(combined);
     const _parseFloat = parseFloat;
     const parsed = parseFloat(tmp9._socketId);
     const _isNaN = isNaN;
@@ -53,7 +53,7 @@ function createFastConnectSocket() {
     if (isNaN(parsed)) {
       obj2.log("[FAST CONNECT] Unable to create socketId from NaN value ", tmp9._socketId);
     } else {
-      const tmp3Result = obj3(15071);
+      const tmp3Result = obj3(15121);
       if (flag) {
         const result = tmp3Result.enableZstdStreamSupport(parsed);
       } else {

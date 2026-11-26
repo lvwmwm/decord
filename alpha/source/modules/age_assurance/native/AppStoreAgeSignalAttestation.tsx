@@ -1,19 +1,19 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 8074
+// Function ID: 8075
 // Name: AppStoreAgeSignalAttestation
-// Dependencies: [5, 1386, 1071, 8029, 510, 8030, 1378, 8031, 5796, 2]
+// Dependencies: [5, 1387, 1071, 8075, 510, 8076, 1379, 8077, 5827, 2]
 // Exports: buildIOSClientDataPayload, getAgeSignalIntegrityToken, getAppStoreAgeSignalAssertion, getAppStoreConsentReinstatementProof, warmAgeSignalAttestation
 
-// Module 8028 (AppStoreAgeSignalAttestation)
+// Module 8074 (AppStoreAgeSignalAttestation)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1071 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import TimeUtils from "TimeUtils" /* 5796 */;
-import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 8029 */;
-import react_nativeDefault from "react-native" /* 8030 */;
-import react_nativeDefault2 from "react-native" /* 8031 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import TimeUtils from "TimeUtils" /* 5827 */;
+import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 8075 */;
+import react_nativeDefault from "react-native" /* 8076 */;
+import react_nativeDefault2 from "react-native" /* 8077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let c0, c4, c8;
@@ -83,7 +83,7 @@ let obj = function _requestIOSChallenge() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -108,7 +108,7 @@ let obj = function _requestIOSChallenge() {
         } else if (1 === tmp3) {
           c3 = 0;
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } else if (arg0 === 1) {
           c1 = 3;
           throw value;
@@ -171,7 +171,7 @@ obj = function _registerAttestKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ obj = function _registerAttestKey() {
           return obj;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp19) {
         c4 = 3;
         throw tmp19;
@@ -293,7 +293,7 @@ obj = function _getAppAttestAssertion() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -339,13 +339,13 @@ obj = function _getAppAttestAssertion() {
               }
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else if (1 === tmp4) {
           c6 = 0;
           closure_133_13(null);
           c8 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } else {
           if (2 === tmp4) {
             if (arg0 === 1) {
@@ -361,7 +361,7 @@ obj = function _getAppAttestAssertion() {
               if (null == _null) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               } else {
                 keyId = closure_1;
                 nonce = _null.nonce;
@@ -390,7 +390,7 @@ obj = function _getAppAttestAssertion() {
               if (null == keyId) {
                 c6 = 0;
                 c8 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               } else {
                 c7 = 5;
                 c8 = 1;
@@ -427,7 +427,7 @@ obj = function _getAppAttestAssertion() {
             if (null == nonce) {
               c6 = 0;
               c8 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             } else {
               let tmp7 = currentUser;
               nonce = nonce.nonce;
@@ -503,7 +503,7 @@ obj = function _getAppStoreConsentReinstatementProof() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -554,7 +554,7 @@ obj = function _getAppStoreConsentReinstatementProof() {
             tmp = value;
             if (null == tmp) {
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             } else {
               const obj7 = { platform: "ios", attest_key_id: tmp.keyId, attest_assertion: tmp.assertion };
               c3 = 3;
@@ -597,7 +597,7 @@ obj = function _getAppStoreConsentReinstatementProof() {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp26) {
         c3 = 3;
@@ -655,7 +655,7 @@ obj = function _getAgeSignalChallenge() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c2;
@@ -682,13 +682,13 @@ obj = function _getAgeSignalChallenge() {
               return obj5;
             } else {
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           }
         } else if (1 === tmp3) {
           c2 = 0;
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } else if (arg0 === 1) {
           c0 = 3;
           throw value;
@@ -733,7 +733,7 @@ obj = function _getAgeSignalIntegrityToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -753,7 +753,7 @@ obj = function _getAgeSignalIntegrityToken() {
             return obj4;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else if (arg0 === 1) {
           c2 = 3;

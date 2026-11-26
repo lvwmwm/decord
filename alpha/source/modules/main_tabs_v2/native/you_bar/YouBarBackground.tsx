@@ -1,22 +1,22 @@
-// Module ID: 18116
-// Function ID: 18117
+// Module ID: 18175
+// Function ID: 18176
 // Name: YouBarBackground
-// Dependencies: [19, 17, 16632, 21, 5012, 575, 7200, 5567, 671, 5576, 16721, 1653, 5613, 2]
+// Dependencies: [19, 17, 16683, 21, 5043, 575, 7231, 5598, 671, 5607, 16772, 1654, 5644, 2]
 
-// Module 18116 (YouBarBackground)
+// Module 18175 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import useToken2 from "useToken" /* 5576 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import _modDef7200 from "module_7200" /* 7200 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16721 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import useToken2 from "useToken" /* 5607 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import _modDef7231 from "module_7231" /* 7231 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 16772 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 16632 */;
+import YouBarConstants from "YouBarConstants" /* 16683 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj1, tmp2;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp3;
-const _modDef1653 = tmp3(1653);
+const _modDef1654 = tmp3(1654);
 function YouBarMaskedBackground(barWidth) {
   let avatarSize;
   let backgroundColor;
@@ -46,7 +46,7 @@ function YouBarMaskedBackground(barWidth) {
   rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: YOU_BAR_HEIGHT / 2 - 1, backgroundColor: "black" };
   items = [, , ];
   const tmp = closure_8();
-  const tmp3 = _modDef7200;
+  const tmp3 = _modDef7231;
   items[0] = metroRequire(View, obj3);
   const obj4 = { style: { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" } };
   items[1] = metroRequire(View, obj4);
@@ -82,8 +82,8 @@ function YouBarAnimatedBackground(arg0) {
   const tmp5 = useQuestDockAnimatedBorderRadiusDefault(token);
   const items = [closure_10, condensedReason, , , , , ];
   const tmp7 = useQuestDockAnimatedBorderRadiusDefault(YOU_BAR_HEIGHT / 2, token);
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items[2] = spring_spring.withSpring;
   items[3] = tmp5;
   items[4] = YOU_BAR_SPRING_CONFIG;
@@ -127,7 +127,7 @@ function YouBarAnimatedBackground(arg0) {
   const animatedStyle = useAnimatedStyle(YouBarBackgroundTsx1);
   let obj2 = { style: items2 };
   items2 = [{ position: "absolute" }, tmp.youRowFloating, { width: barWidth, height: tmp6, backgroundColor }, { borderTopRightRadius: 0, borderTopLeftRadius: 0 }, animatedStyle];
-  return metroRequire(_modDef1653.View, obj2);
+  return metroRequire(_modDef1654.View, obj2);
 }
 const View = react_native.View;
 const YOU_BAR_HEIGHT = YouBarConstants.YOU_BAR_HEIGHT;

@@ -1,12 +1,12 @@
-// Module ID: 18982
-// Function ID: 18983
+// Module ID: 19045
+// Function ID: 19046
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 4837, 13560, 1653, 5073, 5613, 5614, 1706, 13354, 2]
+// Dependencies: [19, 21, 4868, 13612, 1654, 5104, 5644, 5645, 1707, 13406, 2]
 // Exports: default
 
-// Module 18982 (SearchTabsTransitionGroup)
+// Module 19045 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 5073 */;
+import native from "native" /* 5104 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -40,23 +40,23 @@ function AnimatedTabs(cleanUp) {
   let sharedValue;
   let tmp = transitionState;
   cleanUp = cleanUp.cleanUp;
-  let tmp3 = transitionState(1653);
+  let tmp3 = transitionState(1654);
   const useSharedValue = tmp3.useSharedValue;
   let num = 0;
-  if (transitionState === transitionState(5073).TransitionStates.MOUNTED) {
+  if (transitionState === transitionState(5104).TransitionStates.MOUNTED) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
   let items = [closure_7, , , , , , , , ];
-  const useAnimatedStyle = tmp(1653).useAnimatedStyle;
-  tmp(1653);
-  items[1] = tmp(5613).withSpring;
+  const useAnimatedStyle = tmp(1654).useAnimatedStyle;
+  tmp(1654);
+  items[1] = tmp(5644).withSpring;
   items[2] = sharedValue;
-  items[3] = tmp(5614).springStandard;
+  items[3] = tmp(5645).springStandard;
   items[4] = closure_6;
   items[5] = transitionState;
-  items[6] = tmp(5073).TransitionStates;
-  items[7] = tmp(1706).scheduleOnRN;
+  items[6] = tmp(5104).TransitionStates;
+  items[7] = tmp(1707).scheduleOnRN;
   items[8] = cleanUp;
   let c0;
   let c1;
@@ -128,7 +128,7 @@ function AnimatedTabs(cleanUp) {
     }
     const result = set(num);
   }, items2);
-  const SearchResultExactCountEnabled = tmp(4837).SearchResultExactCountEnabled;
+  const SearchResultExactCountEnabled = tmp(4868).SearchResultExactCountEnabled;
   const setting = SearchResultExactCountEnabled.useSetting();
   const items3 = [setting];
   const callback = react.useCallback((toLocaleString) => {
@@ -145,7 +145,7 @@ function AnimatedTabs(cleanUp) {
     const obj2 = transitionState(dependencyMap[3]);
     combined = "(" + obj2.defaultCountFormatter(toLocaleString) + ")";
   }, items3);
-  const context = react.useContext(tmp(13354).SwipeForMemberListContext);
+  const context = react.useContext(tmp(13406).SwipeForMemberListContext);
   const items4 = [closure_8, context];
   c0 = undefined;
   [tmp21, tmp22] = items4;
@@ -166,7 +166,7 @@ function AnimatedTabs(cleanUp) {
   const items7 = [closure_9, state];
   c0 = undefined;
   [tmp24, tmp25] = items7;
-  const tmpResult2 = tmp(1653);
+  const tmpResult2 = tmp(1654);
   class SearchTabsTransitionGroupTsx4 {
     constructor() {
       const scrollOffset = _undefined.scrollOffset;
@@ -195,10 +195,10 @@ function AnimatedTabs(cleanUp) {
   SearchTabsTransitionGroupTsx5.__workletHash = 15943463641590;
   SearchTabsTransitionGroupTsx5.__initData = tmp26;
   const animatedReaction = tmpResult2.useAnimatedReaction(SearchTabsTransitionGroupTsx4, SearchTabsTransitionGroupTsx5);
-  const View = sharedValue(1653).View;
+  const View = sharedValue(1654).View;
   let obj2 = { state, grow: false, formatCount: callback, simultaneousHandlers: gesture, onEndDrag: tmp31 };
   gesture = undefined;
-  const Tabs = tmp(13560).Tabs;
+  const Tabs = tmp(13612).Tabs;
   if (context != null) {
     gesture = context.gesture;
   }

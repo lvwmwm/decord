@@ -1,14 +1,14 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14165
+// Function ID: 14166
 // Name: ZoomLayoutPager
-// Dependencies: [32, 19, 17, 21, 5614, 1653, 1706, 5613, 5272, 2]
+// Dependencies: [32, 19, 17, 21, 5645, 1654, 1707, 5644, 5303, 2]
 
-// Module 14113 (ZoomLayoutPager)
+// Module 14165 (ZoomLayoutPager)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import springPresets from "springPresets" /* 5614 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import springPresets from "springPresets" /* 5645 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
@@ -560,7 +560,7 @@ const memoResult = react.memo(function ZoomLayoutPager(pageCount) {
     let c0;
     let c1;
     [tmp, tmp2, tmp3] = items;
-    obj = _mod1706;
+    obj = _mod1707;
     class ZoomLayoutPagerNativeTsx13 {
       constructor() {
         return closure_0(closure_1.get(), false);

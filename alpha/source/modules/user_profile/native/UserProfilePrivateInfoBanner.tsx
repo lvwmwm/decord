@@ -1,16 +1,16 @@
-// Module ID: 14986
-// Function ID: 14987
+// Module ID: 15036
+// Function ID: 15037
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 5012, 575, 5603, 1112, 2]
+// Dependencies: [17, 21, 5043, 575, 5634, 1112, 2]
 // Exports: default
 
-// Module 14986 (UserProfilePrivateInfoBanner)
+// Module 15036 (UserProfilePrivateInfoBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import createStyles from "createStyles" /* 5012 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

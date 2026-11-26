@@ -1,13 +1,13 @@
-// Module ID: 14101
-// Function ID: 14102
+// Module ID: 14153
+// Function ID: 14154
 // Name: MediaModalImage
-// Dependencies: [19, 21, 1378, 14098, 14099, 5699, 14100, 2]
+// Dependencies: [19, 21, 1379, 14150, 14151, 5730, 14152, 2]
 
-// Module 14101 (MediaModalImage)
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 14098 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14100 */;
+// Module 14153 (MediaModalImage)
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 14150 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 14152 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ const memoResult = react.memo(function MediaModalImage(source) {
   const tmp4 = react;
   if (hasError) {
     const obj = { style, status: "error" };
-    tmp7Result = React3(tmp(14099), obj);
+    tmp7Result = React3(tmp(14151), obj);
   } else {
     const Fragment = tmp4.Fragment;
     size = { accessibilityRole: "image", accessibilityLabel: source.description, fadeDuration, height: source.height, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, onProgress: callback, pointerEvents, resizeMethod: str, source: tmp6, style, width: source.width };
@@ -76,7 +76,7 @@ const memoResult = react.memo(function MediaModalImage(source) {
     let tmp8Result = null;
     if (isLoadingVisible) {
       const obj3 = { style, status: "loading", progress };
-      tmp8Result = tmp8(tmp(14099), obj3);
+      tmp8Result = tmp8(tmp(14151), obj3);
     }
     const obj4 = { children: items1 };
     items1[1] = tmp8Result;

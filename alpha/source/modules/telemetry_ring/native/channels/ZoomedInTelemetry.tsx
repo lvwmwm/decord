@@ -1,13 +1,13 @@
-// Module ID: 2122
-// Function ID: 2123
+// Module ID: 2123
+// Function ID: 2124
 // Name: ZoomedInTelemetry
-// Dependencies: [5, 2123, 2124, 2126, 2128, 1255, 2]
+// Dependencies: [5, 2124, 2125, 2127, 2129, 1256, 2]
 
-// Module 2122 (ZoomedInTelemetry)
-import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 2123 */;
-import TelemetryRingNative2 from "TelemetryRingNative" /* 2126 */;
+// Module 2123 (ZoomedInTelemetry)
+import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 2124 */;
+import TelemetryRingNative2 from "TelemetryRingNative" /* 2127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BaseTelemetryExportChannel from "BaseTelemetryExportChannel" /* 2124 */;
+import BaseTelemetryExportChannel from "BaseTelemetryExportChannel" /* 2125 */;
 import size from "module_2" /* 2 */;
 
 const TelemetryRingNative = TelemetryRingNative2;
@@ -50,7 +50,7 @@ class ZoomedInTelemetryImpl extends BaseTelemetryExportChannel {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         while (true) {

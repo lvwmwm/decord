@@ -1,25 +1,18 @@
-// Module ID: 18095
-// Function ID: 18096
+// Module ID: 18154
+// Function ID: 18155
 // Name: useIsCheckpointOpen
-// Dependencies: [12577, 5188, 2]
+// Dependencies: [12626, 5219, 2]
 // Exports: useIsCheckpointOpen
 
-// Module 18095 (useIsCheckpointOpen)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5188 */;
-import CheckpointModalConstants from "CheckpointModalConstants" /* 12577 */;
+// Module 18154 (useIsCheckpointOpen)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5219 */;
+import CheckpointModalConstants from "CheckpointModalConstants" /* 12626 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
-({ CHECKPOINT_MODAL_KEY: c2, CHECKPOINT_UNAVAILABLE_MODAL_KEY: c3 } = CheckpointModalConstants);
+const CHECKPOINT_MODAL_KEY = CheckpointModalConstants.CHECKPOINT_MODAL_KEY;
 const result = size.fileFinishedImporting("modules/checkpoint/useIsCheckpointOpen.native.tsx");
 
 export function useIsCheckpointOpen() {
   const obj = NavigationRouteUtils;
-  let isModalOpen = obj.useIsModalOpen(React2);
-  const obj2 = NavigationRouteUtils;
-  if (!isModalOpen) {
-    isModalOpen = obj2.useIsModalOpen(_false);
-  }
-  return isModalOpen;
+  return obj.useIsModalOpen(CHECKPOINT_MODAL_KEY);
 }

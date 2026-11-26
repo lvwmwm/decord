@@ -1,17 +1,17 @@
-// Module ID: 5728
-// Function ID: 5729
+// Module ID: 5759
+// Function ID: 5760
 // Name: MobileNativeUpdateConstants
-// Dependencies: [2168, 1378, 1379, 1377, 2]
+// Dependencies: [2169, 1379, 1380, 1378, 2]
 
-// Module 5728 (MobileNativeUpdateConstants)
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import URLUtilsDefault from "URLUtils" /* 1379 */;
-import module_2168 from "module_2168" /* 2168 */;
-import react_native_mod from "react-native" /* 1377 */;
+// Module 5759 (MobileNativeUpdateConstants)
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import URLUtilsDefault from "URLUtils" /* 1380 */;
+import module_2169 from "module_2169" /* 2169 */;
+import react_native_mod from "react-native" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let tmp3 = null;
-const durationResult = module_2168.duration(6, "hours");
+const durationResult = module_2169.duration(6, "hours");
 if (undefined !== process.env.INTERNAL_UPDATE_URL) {
   const _process = process;
   tmp3 = null;

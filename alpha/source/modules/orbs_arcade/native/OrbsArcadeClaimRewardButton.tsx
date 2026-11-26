@@ -1,17 +1,17 @@
-// Module ID: 16598
-// Function ID: 16599
+// Module ID: 16649
+// Function ID: 16650
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 16577, 21, 5694, 1112, 504, 16578, 16584, 16599, 5610, 2]
+// Dependencies: [5, 19, 16628, 21, 5725, 1112, 504, 16629, 16635, 16650, 5641, 2]
 // Exports: default
 
-// Module 16598 (OrbsArcadeClaimRewardButton)
+// Module 16649 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16578 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16629 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16577 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16628 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -61,7 +61,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -94,7 +94,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
           c2 = 0;
           showOrbsArcadeClaimRewardsError();
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -125,7 +125,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp20) {
         if (0 === c2) {
@@ -138,7 +138,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
     }
   }), items4);
   let obj3 = { grow: true, size, variant: "primary", text: string(WK589K), loading: stateFromStores, onPress: callback };
-  const Button = game(5610).Button;
+  const Button = game(5641).Button;
   const intl = game(1112).intl;
   string = intl.string;
   const tmp6 = jsx;

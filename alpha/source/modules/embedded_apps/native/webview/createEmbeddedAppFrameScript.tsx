@@ -1,10 +1,10 @@
-// Module ID: 10203
-// Function ID: 10204
+// Module ID: 10245
+// Function ID: 10246
 // Name: createEmbeddedAppFrameScript
 // Dependencies: [2]
 // Exports: createEmbeddedAppFrameScript
 
-// Module 10203 (createEmbeddedAppFrameScript)
+// Module 10245 (createEmbeddedAppFrameScript)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/native/webview/createEmbeddedAppFrameScript.tsx");

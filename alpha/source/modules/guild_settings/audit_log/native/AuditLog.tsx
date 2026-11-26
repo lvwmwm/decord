@@ -1,34 +1,34 @@
-// Module ID: 19910
-// Function ID: 19911
+// Module ID: 19974
+// Function ID: 19975
 // Name: AuditLog
-// Dependencies: [19, 17, 1191, 1405, 4954, 1386, 1071, 21, 5012, 575, 1415, 1412, 6147, 5019, 7484, 5603, 1378, 5073, 19898, 5068, 1186, 1112, 4875, 5628, 6770, 2168, 1254, 1089, 11033, 7457, 6114, 19902, 6121, 5226, 6102, 16015, 504, 2]
+// Dependencies: [19, 17, 1191, 1406, 4985, 1387, 1071, 21, 5043, 575, 1416, 1413, 6178, 5050, 7515, 5634, 1379, 5104, 19962, 5099, 1186, 1112, 4906, 5659, 6801, 2169, 1255, 1089, 11079, 7488, 6145, 19966, 6152, 5257, 6133, 16045, 504, 2]
 
-// Module 19910 (AuditLog)
+// Module 19974 (AuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4875 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import native2 from "native" /* 5073 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import PlatformsDefault from "Platforms" /* 6147 */;
-import EmojiDefault from "Emoji" /* 7457 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7484 */;
-import AppliedForumTag from "AppliedForumTag" /* 11033 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 19898 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4906 */;
+import UserUtilsDefault from "UserUtils" /* 5099 */;
+import native2 from "native" /* 5104 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import PlatformsDefault from "Platforms" /* 6178 */;
+import EmojiDefault from "Emoji" /* 7488 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7515 */;
+import AppliedForumTag from "AppliedForumTag" /* 11079 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 19962 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import UserRecord from "UserRecord" /* 1405 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles from "createStyles" /* 5043 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import get_initialized from "get initialized" /* 504 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const showUserProfileActionSheetDefault = tmp(6102);
+const showUserProfileActionSheetDefault = tmp(6133);
 function ApplicationHook(applicationId) {
   applicationId = applicationId.applicationId;
   const obj = useGetOrFetchApplications;
@@ -199,7 +199,7 @@ class AuditLog extends PureComponent {
                 const tmp15 = require;
                 if (obj6.isGuildRecord(target)) {
                   const obj5 = { variant: "body-md/medium", color: "text-default", children: target.name };
-                  tmp8Result = gesture(tmp15(5603).Text, obj5, `target${tmp5.id}`);
+                  tmp8Result = gesture(tmp15(5634).Text, obj5, `target${tmp5.id}`);
                 }
               }
             }
@@ -670,7 +670,7 @@ class AuditLog extends PureComponent {
     const obj4 = { accessible: false, style: items1, variant: str2, border: str3, onPress: onHeaderClick, children: null };
     items1 = [tmp.container, containerStyle];
     str2 = "secondary";
-    const Card = tmp10(6114).Card;
+    const Card = tmp10(6145).Card;
     if (expanded) {
       str2 = "primary";
     }
@@ -681,7 +681,7 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(19902), obj6);
+    items2[0] = closure_14(user(19966), obj6);
     const obj7 = {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(tmp10(1112).t.iXAna6),
@@ -696,7 +696,7 @@ class AuditLog extends PureComponent {
       },
       children: null
     };
-    const PressableOpacity = tmp10(6121).PressableOpacity;
+    const PressableOpacity = tmp10(6152).PressableOpacity;
     intl = tmp10(1112).intl;
     username = undefined;
     const tmp16 = View;
@@ -710,13 +710,13 @@ class AuditLog extends PureComponent {
           let source;
           if (log.action !== constants2.AUTO_MODERATION_QUARANTINE_USER) {
             if (null != log.options.integration_type) {
-              const tmp18Result = user(6147);
+              const tmp18Result = user(6178);
               const value = tmp18Result.get(log.options.integration_type);
               if (null != value) {
                 const icon = value.icon;
-                const tmp9Result = tmp9(5019);
+                const tmp9Result = tmp9(5050);
                 const tmp25 = tmp9Result.isThemeDark(theme) ? icon.darkPNG : icon.lightPNG;
-                const tmp9Result5 = tmp9(1412);
+                const tmp9Result5 = tmp9(1413);
                 source = tmp9Result5.makeSource(tmp25);
               }
             }
@@ -735,12 +735,12 @@ class AuditLog extends PureComponent {
           items2[1] = closure_14(PressableOpacity, obj7);
           const obj9 = { accessibilityRole: "button", accessibilityState: obj10, onPress: onHeaderClick, style: tmp.titleContainer, disabled: !checkChangesToRenderResult, children: items3 };
           obj10 = { expanded, disabled: !checkChangesToRenderResult };
-          const PressableOpacity2 = tmp10(6121).PressableOpacity;
+          const PressableOpacity2 = tmp10(6152).PressableOpacity;
           items3 = [self.renderTitle(), tmp8];
           items2[2] = closure_15(PressableOpacity2, obj9);
           let tmp17Result = null;
           if (checkChangesToRenderResult) {
-            const obj11 = { style: items4, size: tmp10(1186).Icon.Sizes.CUSTOM, source: user(16015) };
+            const obj11 = { style: items4, size: tmp10(1186).Icon.Sizes.CUSTOM, source: user(16045) };
             items4 = [tmp.arrow, rotate90];
             const Icon = tmp10(1186).Icon;
             tmp17Result = tmp17(Icon, obj11);
@@ -758,11 +758,11 @@ class AuditLog extends PureComponent {
         }
       }
     }
-    const ensureAvatarSource = tmp9(1415).ensureAvatarSource;
-    tmp9(1415);
-    const makeSource = tmp9(1412).makeSource;
-    tmp9(1412);
-    const tmp9Result8 = tmp9(1415);
+    const ensureAvatarSource = tmp9(1416).ensureAvatarSource;
+    tmp9(1416);
+    const makeSource = tmp9(1413).makeSource;
+    tmp9(1413);
+    const tmp9Result8 = tmp9(1416);
     source = ensureAvatarSource(makeSource(tmp9Result8.getAutomodAvatarURL()));
   }
 }

@@ -1,18 +1,18 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15555
+// Function ID: 15556
 // Name: KeyboardLayoutMapUtils
-// Dependencies: [32, 5, 1360, 8235, 3, 1378, 15503, 510, 2]
+// Dependencies: [32, 5, 1361, 8277, 3, 1379, 15554, 510, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 15504 (KeyboardLayoutMapUtils)
+// Module 15555 (KeyboardLayoutMapUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import keyCodeDefault from "keyCode" /* 15503 */;
+import keyCodeDefault from "keyCode" /* 15554 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1360 */;
-import KeyboardConstants from "KeyboardConstants" /* 8235 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1361 */;
+import KeyboardConstants from "KeyboardConstants" /* 8277 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c4, c5;
@@ -23,7 +23,7 @@ let WindowsKeyToCode;
 function createKeyboardMapper() {
   return obj(...arguments);
 }
-const f108330 = (item) => {
+const f108634 = (item) => {
   let tmp;
   [tmp, obj] = item;
   const items = [tmp, ];
@@ -56,7 +56,7 @@ let obj = function _syncKeyboardLayoutMap() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -174,7 +174,7 @@ obj = function _createKeyboardMapper() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -220,7 +220,7 @@ obj = function _createKeyboardMapper() {
             }
           });
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -255,7 +255,7 @@ obj = function _resetKeyboardMapper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -288,7 +288,7 @@ obj = function _resetKeyboardMapper() {
             obj.reset();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp9) {
         c2 = 3;
@@ -389,8 +389,8 @@ class DiscordKeyboardLayoutMap {
     }
     obj = Object.create(new.target.prototype);
     const entries = Object.entries(tmp);
-    obj.map = new Map(entries.map(f108330));
-    new Map(entries.map(f108330));
+    obj.map = new Map(entries.map(f108634));
+    new Map(entries.map(f108634));
     return obj;
   }
   get(arg0) {
@@ -430,7 +430,7 @@ Object.defineProperty(DiscordKeyboardLayoutMap.prototype, "size", {
 });
 obj = Object.create(DiscordKeyboardLayoutMap.prototype);
 let entries = Object.entries(frozen);
-let map = new Map(entries.map(f108330));
+let map = new Map(entries.map(f108634));
 obj.map = map;
 let c15 = "keyboard-layout-map";
 class BaseKeyboardMapper {

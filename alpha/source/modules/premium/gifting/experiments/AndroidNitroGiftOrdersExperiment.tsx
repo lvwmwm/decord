@@ -1,10 +1,10 @@
-// Module ID: 9190
-// Function ID: 9191
+// Module ID: 9232
+// Function ID: 9233
 // Name: AndroidNitroGiftOrdersExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 9190 (AndroidNitroGiftOrdersExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 9232 (AndroidNitroGiftOrdersExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

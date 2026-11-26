@@ -1,14 +1,14 @@
-// Module ID: 11273
-// Function ID: 11274
+// Module ID: 11319
+// Function ID: 11320
 // Name: PremiumGiftingUtils
-// Dependencies: [5, 4861, 5017, 7813, 38, 5759, 8202, 8302, 2]
+// Dependencies: [5, 4892, 5048, 7847, 38, 5790, 8244, 8344, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 11273 (PremiumGiftingUtils)
-import MessageConstants from "MessageConstants" /* 5017 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
+// Module 11319 (PremiumGiftingUtils)
+import MessageConstants from "MessageConstants" /* 5048 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
@@ -31,7 +31,7 @@ let obj = function _sendGiftMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

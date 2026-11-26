@@ -1,225 +1,229 @@
 // Module ID: 1793
 // Function ID: 1794
-// Dependencies: [41, 42, 93, 95, 98, 1657, 1785]
+// Dependencies: [32, 41, 42, 1760, 1757, 1763, 1664]
 
 // Module 1793
-import cssCallbacksRegistry2 from "cssCallbacksRegistry" /* 1657 */;
-import CSSCallbackStore from "CSSCallbackStore" /* 1785 */;
+import _createClassDefault from "_createClass" /* 42 */;
+import _mod1664 from "module_1664" /* 1664 */;
+import _mod1760 from "module_1760" /* 1760 */;
+import _mod1763 from "module_1763" /* 1763 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class AnimationCallbacks {
-  constructor(onMaskChange) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, AnimationCallbacks);
-    const items = [Object.values(cssCallbacksRegistry2.ANIMATION_CALLBACK_PROP_BY_EVENT_TYPE)];
-    const obj = _getPrototypeOf(AnimationCallbacks);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+let tmp2;
+const _mod1757 = tmp2(1757);
+function nullifyUndefinedValues(buildResult) {
+  for (const key10005 in buildResult) {
+    if (undefined !== buildResult[key10005]) {
+      continue;
     } else {
-      constructResult = obj.apply(self, items);
+      buildResult[key10005] = null;
+      continue;
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.onMaskChange = onMaskChange;
-    tmp3Result.eventMask = 0;
-    return tmp3Result;
+    continue;
   }
 }
-_inherits(AnimationCallbacks, CSSCallbackStore.CSSCallbackStore);
+function getPropertyTransitionSettings(nextResult, specificProperties) {
+  let tmp = null;
+  if (specificProperties) {
+    let tmp3;
+    if (!specificProperties.specificProperties) {
+      let all = specificProperties.settings[nextResult];
+      if (all == null) {
+        all = specificProperties.settings.all;
+      }
+      if (all == null) {
+        all = null;
+      }
+      tmp3 = all;
+    } else {
+      specificProperties = specificProperties.specificProperties;
+      tmp3 = null;
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+}
+class CSSPseudoStylesManager {
+  constructor(shadowNodeWrapper, viewTag, propsBuilder, componentName) {
+    _classCallCheck(this, CSSPseudoStylesManager);
+    this.prevPseudoStylesBySelector = null;
+    this.prevTransitionProperties = null;
+    this.isRegistered = false;
+    this.shadowNodeWrapper = shadowNodeWrapper;
+    this.viewTag = viewTag;
+    this.propsBuilder = propsBuilder;
+    this.componentName = componentName;
+  }
+}
 const entry = {
-  key: "getMask",
-  value: function getMask() {
-    return this.eventMask;
+  key: "update",
+  value: function update(prevPseudoStylesBySelector, prevTransitionProperties) {
+    function hasRemovedNativeSelector(prevPseudoStylesBySelector, prevPseudoStylesBySelector2) {
+      const tmp = prevPseudoStylesBySelector;
+      if (tmp) {
+        const _Set = Set;
+        if (prevPseudoStylesBySelector) {
+          const _Object = Object;
+          const self3 = this;
+          const self4 = this;
+          let _Set1 = new _Set(Object.keys(prevPseudoStylesBySelector));
+        } else {
+          const self = this;
+          const self2 = this;
+          _Set1 = new _Set();
+        }
+        const _Object2 = Object;
+        const keys = Object.keys(prevPseudoStylesBySelector);
+        return keys.some((item) => {
+          const NATIVE_PSEUDO_SELECTORS = _mod1763.NATIVE_PSEUDO_SELECTORS;
+          const hasItem = NATIVE_PSEUDO_SELECTORS.has(item) && !_Set1.has(item);
+          return hasItem;
+        });
+      } else {
+        return false;
+      }
+    }
+    let self = this;
+    let tmp = require;
+    const obj = _mod1760;
+    if (!obj.deepEqual(prevPseudoStylesBySelector, this.prevPseudoStylesBySelector)) {
+      self.prevPseudoStylesBySelector = prevPseudoStylesBySelector;
+      self.prevTransitionProperties = prevTransitionProperties;
+      let isRegistered = self.isRegistered;
+      if (prevPseudoStylesBySelector) {
+        if (isRegistered) {
+          isRegistered = hasRemovedNativeSelector(self.prevPseudoStylesBySelector, prevPseudoStylesBySelector);
+        }
+        if (isRegistered) {
+          self.detach();
+        }
+        let result = null;
+        if (prevTransitionProperties) {
+          const tmp2Result = _mod1757;
+          result = tmp2Result.normalizeCSSTransitionProperties(prevTransitionProperties);
+        }
+        const obj2 = {};
+        let _Object = Object;
+        const entries = Object.entries(prevPseudoStylesBySelector);
+        const tmp15 = entries[Symbol.iterator]();
+        while (tmp15 !== undefined) {
+          let tmp20 = _slicedToArray(tmp17, 2);
+          let defaultStyle = tmp20[1].defaultStyle;
+          let first = tmp20[0];
+          let NATIVE_PSEUDO_SELECTORS = _mod1763.NATIVE_PSEUDO_SELECTORS;
+          if (NATIVE_PSEUDO_SELECTORS.has(first)) {
+            let _Object2 = Object;
+            let merged = Object.assign(obj2, defaultStyle);
+          }
+          continue;
+        }
+        const propsBuilder = self.propsBuilder;
+        const buildResult = propsBuilder.build(obj2, { includeUnprocessed: true });
+        nullifyUndefinedValues(buildResult);
+        const items = [];
+        const _Object3 = Object;
+        const entries1 = Object.entries(prevPseudoStylesBySelector);
+        for (const item10081 of entries1) {
+          let tmp35 = _slicedToArray(item10081, 2);
+          let first1 = tmp35[0];
+          let selectorStyle = tmp35[1].selectorStyle;
+          let tmp37 = first1;
+          let NATIVE_PSEUDO_SELECTORS2 = _mod1763.NATIVE_PSEUDO_SELECTORS;
+          if (NATIVE_PSEUDO_SELECTORS2.has(first1)) {
+            let arr = items.push(self.buildPseudoStyleEntry(tmp37, selectorStyle, buildResult, result));
+          }
+          continue;
+        }
+        if (items.length > 0) {
+          const obj3 = { defaultStyle: buildResult, selectors: items };
+          const obj5 = _mod1664;
+          obj5.registerPseudoStyles(self.shadowNodeWrapper, obj3);
+          self.isRegistered = true;
+        }
+      } else if (isRegistered) {
+        self.detach();
+      }
+    } else {
+      _mod1760;
+    }
   }
 };
 let items = [
   entry,
   {
-    key: "handleEvent",
-    value: function handleEvent(animationName) {
-      const obj = { animationName: animationName.name, elapsedTime: animationName.elapsedTime };
-      this.invoke(cssCallbacksRegistry2.ANIMATION_CALLBACK_PROP_BY_EVENT_TYPE[animationName.type], obj);
-    }
-  },
-  {
-    key: "onPresenceChanged",
-    value: function onPresenceChanged(arg0) {
-      const obj = cssCallbacksRegistry2;
-      this.eventMask = obj.getAnimationEventMaskFromProps(arg0);
-      this.onMaskChange();
-    }
-  }
-];
-let closure_6 = _createClass(AnimationCallbacks, items);
-class TransitionCallbacks {
-  constructor(onMaskChange) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, TransitionCallbacks);
-    const items = [Object.values(cssCallbacksRegistry2.TRANSITION_CALLBACK_PROP_BY_EVENT_TYPE)];
-    const obj = _getPrototypeOf(TransitionCallbacks);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.onMaskChange = onMaskChange;
-    tmp3Result.eventMask = 0;
-    return tmp3Result;
-  }
-}
-_inherits(TransitionCallbacks, CSSCallbackStore.CSSCallbackStore);
-const entry1 = {
-  key: "getMask",
-  value: function getMask() {
-    return this.eventMask;
-  }
-};
-const items1 = [
-  entry1,
-  {
-    key: "handleEvent",
-    value: function handleEvent(name) {
-      const obj = { propertyName: name.name, elapsedTime: name.elapsedTime };
-      this.invoke(cssCallbacksRegistry2.TRANSITION_CALLBACK_PROP_BY_EVENT_TYPE[name.type], obj);
-    }
-  },
-  {
-    key: "onPresenceChanged",
-    value: function onPresenceChanged(arg0) {
-      const obj = cssCallbacksRegistry2;
-      this.eventMask = obj.getTransitionEventMaskFromProps(arg0);
-      this.onMaskChange();
-    }
-  }
-];
-let closure_7 = _createClass(TransitionCallbacks, items1);
-class CSSCallbacksManager {
-  constructor(viewTag) {
-    const self = this;
-    _classCallCheck(this, CSSCallbacksManager);
-    this.viewTag = viewTag;
-    function updateRegistration() {
-      return self.updateRegistration();
-    }
-    this.animationCallbacks = new closure_6(updateRegistration);
-    new closure_6(updateRegistration);
-    this.transitionCallbacks = new closure_7(updateRegistration);
-    new closure_7(updateRegistration);
-  }
-}
-const entry2 = {
-  key: "getAnimationEventMask",
-  value: function getAnimationEventMask() {
-    const animationCallbacks = this.animationCallbacks;
-    return animationCallbacks.getMask();
-  }
-};
-const items2 = [
-  entry2,
-  {
-    key: "getTransitionEventMask",
-    value: function getTransitionEventMask() {
-      const transitionCallbacks = this.transitionCallbacks;
-      return transitionCallbacks.getMask();
-    }
-  },
-  {
-    key: "syncAnimationCallbacks",
-    value: function syncAnimationCallbacks(arg0) {
-      let obj = arg0;
-      const sync = this.animationCallbacks.sync;
-      if (arg0 == null) {
-        obj = {};
+    key: "unmountCleanup",
+    value: function unmountCleanup() {
+      const self = this;
+      if (this.isRegistered) {
+        self.detach();
       }
-      sync(obj);
-    }
-  },
-  {
-    key: "syncTransitionCallbacks",
-    value: function syncTransitionCallbacks(arg0) {
-      let obj = arg0;
-      const sync = this.transitionCallbacks.sync;
-      if (arg0 == null) {
-        obj = {};
-      }
-      sync(obj);
+      self.prevPseudoStylesBySelector = null;
+      self.prevTransitionProperties = null;
     }
   },
   {
     key: "detach",
     value: function detach() {
-      const animationCallbacks = this.animationCallbacks;
-      animationCallbacks.detach();
-      const transitionCallbacks = this.transitionCallbacks;
-      transitionCallbacks.detach();
+      const obj = _mod1664;
+      const result = obj.unregisterPseudoStyles(this.viewTag);
+      this.isRegistered = false;
     }
   },
   {
-    key: "retire",
-    value: function retire() {
-      const self = this;
-      if (-1 !== this.viewTag) {
-        const cssCallbacksRegistry = cssCallbacksRegistry2.cssCallbacksRegistry;
-        cssCallbacksRegistry.retire(self.viewTag, self);
-      }
-    }
-  },
-  {
-    key: "handleCSSEvent",
-    value: function handleCSSEvent(nextResult) {
-      const self = this;
-      if (nextResult.type in cssCallbacksRegistry2.ANIMATION_CALLBACK_PROP_BY_EVENT_TYPE) {
-        const animationCallbacks = self.animationCallbacks;
-        animationCallbacks.handleEvent(nextResult);
-      } else if (nextResult.type in cssCallbacksRegistry2.TRANSITION_CALLBACK_PROP_BY_EVENT_TYPE) {
-        const transitionCallbacks = self.transitionCallbacks;
-        transitionCallbacks.handleEvent(nextResult);
-      }
-    }
-  },
-  {
-    key: "updateRegistration",
-    value: function updateRegistration() {
-      const self = this;
-      if (-1 !== this.viewTag) {
-        const animationEventMask = self.getAnimationEventMask();
-        const tmp2 = animationEventMask | self.getTransitionEventMask();
-        const cssCallbacksRegistry = cssCallbacksRegistry2.cssCallbacksRegistry;
-        if (tmp2) {
-          cssCallbacksRegistry.register(self.viewTag, self);
-        } else {
-          cssCallbacksRegistry.unregister(self.viewTag, self);
+    key: "buildPseudoStyleEntry",
+    value: function buildPseudoStyleEntry(selector, selectorStyle, buildResult, result) {
+      let flag;
+      let items;
+      let num;
+      let num2;
+      let str;
+      const propsBuilder = this.propsBuilder;
+      buildResult = propsBuilder.build(selectorStyle, { includeUnprocessed: true });
+      nullifyUndefinedValues(buildResult);
+      const obj = {};
+      const keys = Object.keys(buildResult);
+      const iter = keys[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp6 = getPropertyTransitionSettings(nextResult, result);
+        let tmp7 = tmp6;
+        let obj2 = { value: items, duration: num, delay: num2, timingFunction: str, allowDiscrete: flag };
+        items = [buildResult[nextResult], buildResult[nextResult]];
+        num = undefined;
+        if (tmp6 != null) {
+          num = tmp6.duration;
         }
+        if (num == null) {
+          num = 0;
+        }
+        num2 = undefined;
+        if (tmp7 != null) {
+          num2 = tmp7.delay;
+        }
+        if (num2 == null) {
+          num2 = 0;
+        }
+        str = undefined;
+        if (tmp7 != null) {
+          str = tmp7.timingFunction;
+        }
+        if (str == null) {
+          str = "ease";
+        }
+        flag = undefined;
+        if (tmp7 != null) {
+          flag = tmp7.allowDiscrete;
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        obj[nextResult] = obj2;
+        continue;
       }
+      return { selector, selectorStyle: buildResult, transition: obj };
     }
   }
 ];
 
-export default _createClass(CSSCallbacksManager, items2);
+export default _createClassDefault(CSSPseudoStylesManager, items);

@@ -1,19 +1,19 @@
-// Module ID: 12502
-// Function ID: 12503
+// Module ID: 12551
+// Function ID: 12552
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 6795, 6796, 504, 7901, 6797, 7886, 5780, 5785, 12503, 7850, 1112, 2]
+// Dependencies: [5, 32, 19, 6826, 6827, 504, 7935, 6828, 7920, 5811, 5816, 12552, 7884, 1112, 2]
 // Exports: default
 
-// Module 12502 (useAgeVerificationMethods)
+// Module 12551 (useAgeVerificationMethods)
 import intl3 from "intl" /* 1112 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5780 */;
-import MetricEvents from "MetricEvents" /* 5785 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7850 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5811 */;
+import MetricEvents from "MetricEvents" /* 5816 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7884 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 6795 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6796 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 6826 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6827 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, id;
@@ -60,7 +60,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
         const tmp6 = require;
         const tmp9 = closure_4;
         if (result) {
-          const tmp6Result = tmp6(12503);
+          const tmp6Result = tmp6(12552);
           result = tmp6Result.isGoogleWalletEnabled("age_verification_methods");
         }
         tmp9(result);
@@ -121,7 +121,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: "+95" };
                 }
               } else {
                 try {
@@ -152,7 +152,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
                     return obj;
                   } else {
                     c1 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: "+95" };
                   }
                 } catch (tmp4) {
                   c1 = 3;

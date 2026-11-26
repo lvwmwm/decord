@@ -1,19 +1,19 @@
-// Module ID: 17968
-// Function ID: 17969
+// Module ID: 18025
+// Function ID: 18026
 // Name: InterestGuildJoinButton
-// Dependencies: [5, 32, 19, 17, 4863, 21, 5012, 575, 504, 6978, 5048, 9471, 17969, 1112, 2654, 5610, 2]
+// Dependencies: [5, 32, 19, 17, 4894, 21, 5043, 575, 504, 7009, 5079, 9513, 18026, 1112, 2655, 5641, 2]
 // Exports: default
 
-// Module 17968 (InterestGuildJoinButton)
+// Module 18025 (InterestGuildJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import reactDefault from "react" /* 9471 */;
+import reactDefault from "react" /* 9513 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4863 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4894 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -64,7 +64,7 @@ export default function InterestGuildJoinButton(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -121,7 +121,7 @@ export default function InterestGuildJoinButton(guildId) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp31) {
           closure_2 = tmp31;
           if (0 === c3) {
@@ -141,13 +141,13 @@ export default function InterestGuildJoinButton(guildId) {
   const items = [closure_7];
   const items1 = [guildId];
   let stateFromStores = obj.useStateFromStores(items, () => GuildMembershipStore.isMember(guildId), items1);
-  let obj2 = guildId(6978);
+  let obj2 = guildId(7009);
   const currentUserGuildJoinRequest = obj2.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  const tmp7 = applicationStatus === guildId(5048).GuildJoinRequestApplicationStatuses.SUBMITTED;
+  const tmp7 = applicationStatus === guildId(5079).GuildJoinRequestApplicationStatuses.SUBMITTED;
   _slicedToArray = tmp7;
   [loading, closure_6] = loading.useState(false);
   closure_7 = reactDefault();
@@ -158,17 +158,17 @@ export default function InterestGuildJoinButton(guildId) {
     stringResult = string(t.cEnaWx);
     const intl4 = tmp2(1112).intl;
     let obj3 = { guild: guildName };
-    formatToPlainStringResult = intl4.formatToPlainString(tmp10(2654).t1du0D, obj3);
+    formatToPlainStringResult = intl4.formatToPlainString(tmp10(2655).t1du0D, obj3);
   } else if (tmp7) {
     stringResult = string(t.tQqnak);
     const intl3 = tmp2(1112).intl;
     let obj4 = { guild: guildName };
-    formatToPlainStringResult = intl3.formatToPlainString(tmp10(2654).nQnkb3, obj4);
+    formatToPlainStringResult = intl3.formatToPlainString(tmp10(2655).nQnkb3, obj4);
   } else {
     stringResult = string(t.VJlc0S);
     const intl2 = tmp2(1112).intl;
     let obj5 = { guild: guildName };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp10(2654).NOfX8z, obj5);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp10(2655).NOfX8z, obj5);
   }
   let button;
   const tmp14 = closure_6;
@@ -177,7 +177,7 @@ export default function InterestGuildJoinButton(guildId) {
   }
   let str = "sm";
   const obj6 = { style: button, children: obj(Button, obj7) };
-  Button = tmp2(5610).Button;
+  Button = tmp2(5641).Button;
   if (fullWidth) {
     str = "lg";
   }

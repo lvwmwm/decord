@@ -1,13 +1,13 @@
-// Module ID: 13167
-// Function ID: 13168
+// Module ID: 13219
+// Function ID: 13220
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 5242, 1378, 1112, 2]
+// Dependencies: [19, 17, 21, 5273, 1379, 1112, 2]
 
-// Module 13167 (ChatInputAccessibilityDivider)
+// Module 13219 (ChatInputAccessibilityDivider)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5242 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5273 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;

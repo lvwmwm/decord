@@ -1,24 +1,24 @@
-// Module ID: 16739
-// Function ID: 16740
+// Module ID: 16790
+// Function ID: 16791
 // Name: QuestDockEnrolledBody
-// Dependencies: [5, 19, 17, 8323, 16627, 6840, 16629, 21, 5012, 575, 16633, 16630, 8577, 16623, 16666, 6843, 16662, 16661, 16664, 16663, 1628, 8347, 2]
+// Dependencies: [5, 19, 17, 8374, 16678, 6871, 16680, 21, 5043, 575, 16684, 16681, 8619, 16674, 16717, 6874, 16713, 16712, 16715, 16714, 1629, 8389, 2]
 
-// Module 16739 (QuestDockEnrolledBody)
+// Module 16790 (QuestDockEnrolledBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import QuestTypes from "QuestTypes" /* 6843 */;
-import QuestBottomSheet from "QuestBottomSheet" /* 16661 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 16662 */;
-import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 16664 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import QuestTypes from "QuestTypes" /* 6874 */;
+import QuestBottomSheet from "QuestBottomSheet" /* 16712 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 16713 */;
+import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 16715 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 8323 */;
-import QuestDockStore from "QuestDockStore" /* 16627 */;
-import QuestConstants from "QuestConstants" /* 6840 */;
-import QuestDockConstants from "QuestDockConstants" /* 16629 */;
+import QuestStore from "QuestStore" /* 8374 */;
+import QuestDockStore from "QuestDockStore" /* 16678 */;
+import QuestConstants from "QuestConstants" /* 6871 */;
+import QuestDockConstants from "QuestDockConstants" /* 16680 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -83,7 +83,7 @@ function EnrolledBodyWatchTask(quest) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -130,7 +130,7 @@ function EnrolledBodyWatchTask(quest) {
               c1(constants.COLLAPSED);
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           } catch (tmp24) {
             c2 = 3;
             throw tmp24;
@@ -209,10 +209,10 @@ const memoResult = react.memo(function QuestDockEnrolledBody() {
   let items2;
   let minExpandedContentHeight;
   let tmp5Result;
-  let obj = minExpandedContentHeight(16663);
+  let obj = minExpandedContentHeight(16714);
   const questDockQuest = obj.useQuestDockQuest();
   const tmp2 = closure_15();
-  minExpandedContentHeight = react.useContext(minExpandedContentHeight(16630).QuestDockGestureContext).minExpandedContentHeight;
+  minExpandedContentHeight = react.useContext(minExpandedContentHeight(16681).QuestDockGestureContext).minExpandedContentHeight;
   const items = [minExpandedContentHeight];
   const bottom = useSafeAreaInsetsDefault().bottom;
   const items1 = [minExpandedContentHeight];
@@ -232,7 +232,7 @@ const memoResult = react.memo(function QuestDockEnrolledBody() {
   const obj2 = { style: items2, onLayout: callback, children: tmp5Result };
   items2 = [tmp2.wrapper, { paddingBottom: Math.max(bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) }];
   ({ paddingBottom: Math.max(bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) });
-  const obj4 = minExpandedContentHeight(8347);
+  const obj4 = minExpandedContentHeight(8389);
   const tmp6 = View;
   if (obj4.hasWatchVideoTasks(questDockQuest)) {
     const obj5 = { quest: questDockQuest };

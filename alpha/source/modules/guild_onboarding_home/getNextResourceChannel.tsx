@@ -1,11 +1,11 @@
-// Module ID: 13179
-// Function ID: 13180
+// Module ID: 13231
+// Function ID: 13232
 // Name: getNextResourceChannel
-// Dependencies: [7550, 504, 2]
+// Dependencies: [7581, 504, 2]
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 13179 (getNextResourceChannel)
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7550 */;
+// Module 13231 (getNextResourceChannel)
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7581 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

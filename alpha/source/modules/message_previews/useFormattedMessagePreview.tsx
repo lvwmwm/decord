@@ -1,20 +1,20 @@
-// Module ID: 10575
-// Function ID: 10576
+// Module ID: 10620
+// Function ID: 10621
 // Name: useFormattedMessagePreview
-// Dependencies: [502, 4954, 1386, 1071, 1087, 504, 10576, 6739, 1112, 6372, 5626, 12, 10561, 10577, 2]
+// Dependencies: [502, 4985, 1387, 1071, 1087, 504, 10621, 6770, 1112, 6403, 5657, 12, 10606, 10622, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 10575 (useFormattedMessagePreview)
+// Module 10620 (useFormattedMessagePreview)
 import Constants from "Constants" /* 1071 */;
 import MessageTypes from "MessageTypes" /* 1087 */;
 import intl31 from "intl" /* 1112 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5626 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 6739 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 10561 */;
-import useIsCallActiveDefault from "useIsCallActive" /* 10576 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5657 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 6770 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 10606 */;
+import useIsCallActiveDefault from "useIsCallActive" /* 10621 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -415,7 +415,7 @@ function formatMessagePreview(type, isBlocked) {
                         } else if (type.type === tmp4(1087).MessageTypes.VOICE_SESSION) {
                           const obj57 = { type: "text", text: tmp4Result.getVoiceSessionMessageContent(type) };
                           tmp21 = obj57;
-                          tmp4Result = tmp4(10577);
+                          tmp4Result = tmp4(10622);
                         }
                       }
                     }
@@ -495,12 +495,12 @@ export function useFormattedMessagePreview(message, channel) {
     }
     return user;
   });
-  const tmpResult3 = tmp(6739);
+  const tmpResult3 = tmp(6770);
   const nick2 = tmpResult3.useNullableUserAuthor(stateFromStores1, channel).nick;
   const obj3 = { message, channel, currentUserId: stateFromStores, authorNick: stringResult, actorNick: nick1, otherUser: stateFromStores1, otherUserNick: nick2, isBlocked, isIgnored, isCallActive: tmp4 };
   nick1 = undefined;
   const tmp8 = formatMessagePreview;
-  const tmpResult4 = tmp(6739);
+  const tmpResult4 = tmp(6770);
   if (null != message.actor) {
     nick1 = tmpResult4.useNullableUserAuthor(message.actor, channel).nick;
   }

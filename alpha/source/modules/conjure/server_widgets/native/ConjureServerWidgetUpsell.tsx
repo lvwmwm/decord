@@ -1,19 +1,19 @@
-// Module ID: 14940
-// Function ID: 14941
+// Module ID: 14990
+// Function ID: 14991
 // Name: ConjureServerWidgetUpsell
-// Dependencies: [19, 17, 1386, 21, 5012, 575, 14941, 6084, 7021, 5603, 1112, 4244, 11514, 5610, 14949, 14555, 504, 2]
+// Dependencies: [19, 17, 1387, 21, 5043, 575, 14991, 6115, 7052, 5634, 1112, 4245, 11562, 5641, 14999, 14608, 504, 2]
 // Exports: default
 
-// Module 14940 (ConjureServerWidgetUpsell)
+// Module 14990 (ConjureServerWidgetUpsell)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import useConjureServerWidgetUpsell from "useConjureServerWidgetUpsell" /* 14941 */;
-import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 14949 */;
+import useConjureServerWidgetUpsell from "useConjureServerWidgetUpsell" /* 14991 */;
+import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 14999 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -46,7 +46,7 @@ function ServerWidgetUpsellCard(cardStyle) {
   ({ guildId, onDismiss } = cardStyle);
   cardStyle = cardStyle.cardStyle;
   const tmp = closure_7();
-  const obj = widget(14941);
+  const obj = widget(14991);
   const conjureServerWidgetUpsellDetails = obj.useConjureServerWidgetUpsellDetails(userId, widget, guildId);
   if (null == conjureServerWidgetUpsellDetails) {
     return null;
@@ -55,49 +55,49 @@ function ServerWidgetUpsellCard(cardStyle) {
     const obj2 = { style: tmp.cta, children: items2 };
     ({ application, rendererProps } = conjureServerWidgetUpsellDetails);
     const obj3 = { direction: "horizontal", spacing: onDismiss(575).space.PX_12, align: "flex-start", children: items };
-    const Stack2 = tmp2(6084).Stack;
-    const obj4 = { guild, size: widget(7021).GuildIconSizes.SMALL_36 };
-    const tmp11 = onDismiss(7021);
+    const Stack2 = tmp2(6115).Stack;
+    const obj4 = { guild, size: widget(7052).GuildIconSizes.SMALL_36 };
+    const tmp11 = onDismiss(7052);
     items = [closure_5(tmp11, obj4), ];
     const obj5 = { spacing: onDismiss(575).space.PX_4, style: tmp.copy, children: items1 };
-    const Stack3 = tmp2(6084).Stack;
-    const obj6 = { variant: "body-md/semibold", color: "text-strong", children: intl3.formatToPlainString(onDismiss(4244)["uIb8U+"], obj7) };
-    const Text = tmp2(5603).Text;
+    const Stack3 = tmp2(6115).Stack;
+    const obj6 = { variant: "body-md/semibold", color: "text-strong", children: intl3.formatToPlainString(onDismiss(4245)["uIb8U+"], obj7) };
+    const Text = tmp2(5634).Text;
     intl3 = tmp2(1112).intl;
     obj7 = { guildName: guild.name };
     items1 = [closure_5(Text, obj6), , ];
-    const obj8 = { variant: "body-sm/normal", color: "text-default", children: intl4.formatToPlainString(onDismiss(4244).ZZywee, obj9) };
-    const Text2 = tmp2(5603).Text;
+    const obj8 = { variant: "body-sm/normal", color: "text-default", children: intl4.formatToPlainString(onDismiss(4245).ZZywee, obj9) };
+    const Text2 = tmp2(5634).Text;
     intl4 = tmp2(1112).intl;
     obj9 = { applicationName: application.name };
     items1[1] = closure_5(Text2, obj8);
     let tmp10Result = null;
     if (null != creator) {
       const obj10 = { creator, guildId };
-      tmp10Result = tmp10(tmp9(11514), obj10);
+      tmp10Result = tmp10(tmp9(11562), obj10);
     }
     items1[2] = tmp10Result;
     items[1] = closure_6(Stack3, obj5);
     items2 = [closure_6(Stack2, obj3), ];
     const obj11 = { direction: "horizontal", spacing: onDismiss(575).space.PX_8, justify: "flex-end", children: items3 };
-    const Stack = tmp2(6084).Stack;
+    const Stack = tmp2(6115).Stack;
     const obj12 = { variant: "secondary", size: "sm", text: intl.string(widget(1112).t.WAI6xu), onPress: onDismiss };
-    const Button = tmp2(5610).Button;
+    const Button = tmp2(5641).Button;
     intl = tmp2(1112).intl;
     items3 = [closure_5(Button, obj12), ];
     const obj13 = {
       variant: "primary",
       size: "sm",
-      text: intl2.string(onDismiss(4244).j6ztO0),
+      text: intl2.string(onDismiss(4245).j6ztO0),
       onPress() {
           return turnOnConjureServerWidgetDefault(widget.applicationId, onDismiss);
         }
     };
-    const Button2 = tmp2(5610).Button;
+    const Button2 = tmp2(5641).Button;
     intl2 = tmp2(1112).intl;
     items3[1] = closure_5(Button2, obj13);
     items2[1] = closure_6(Stack, obj11);
-    const obj14 = { style: tmp.container, children: closure_5(onDismiss(14555), obj15) };
+    const obj14 = { style: tmp.container, children: closure_5(onDismiss(14608), obj15) };
     obj15 = { userId, widget, cardStyle, rendererProps, footer: closure_6(View, obj2) };
     closure_6(View, obj2);
     return closure_5(View, obj14);

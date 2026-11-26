@@ -1,9 +1,9 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 9114
+// Function ID: 9115
 // Name: GiftPromotionStore
 // Dependencies: [504, 572, 2]
 
-// Module 9072 (GiftPromotionStore)
+// Module 9114 (GiftPromotionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

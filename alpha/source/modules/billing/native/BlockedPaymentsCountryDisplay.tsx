@@ -1,22 +1,22 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9263
+// Function ID: 9264
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1071, 21, 5012, 575, 5221, 1186, 1112, 2187, 5699, 5019, 9222, 9223, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 5252, 1186, 1112, 2188, 5730, 5050, 9264, 9265, 2]
 // Exports: default
 
-// Module 9221 (BlockedPaymentsCountryDisplay)
+// Module 9263 (BlockedPaymentsCountryDisplay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import shared from "shared" /* 5019 */;
-import useThemeDefault from "useTheme" /* 5221 */;
-import FastImageDefault from "FastImage" /* 5699 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import shared from "shared" /* 5050 */;
+import useThemeDefault from "useTheme" /* 5252 */;
+import FastImageDefault from "FastImage" /* 5730 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -60,9 +60,9 @@ export default function BlockedPaymentsCountryDisplay() {
   const tmp6 = View;
   const tmp7 = hasOwnProperty;
   if (obj7.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(9222);
+    tmp2Result = tmp2(9264);
   } else {
-    tmp2Result = tmp2(9223);
+    tmp2Result = tmp2(9265);
   }
   items[2] = tmp7(tmp8, obj6);
   return tmp5(tmp6, obj);

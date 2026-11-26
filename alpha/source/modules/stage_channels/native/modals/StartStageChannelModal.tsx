@@ -1,33 +1,33 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14329
+// Function ID: 14330
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 4866, 6769, 1071, 4867, 21, 5012, 575, 6099, 6121, 1112, 1186, 7413, 8585, 7021, 504, 7531, 8046, 5603, 12490, 14278, 14279, 5573, 1255, 2018, 7805, 7535, 5761, 13130, 14280, 7835, 5610, 7449, 7017, 2]
+// Dependencies: [5, 32, 19, 17, 4897, 6800, 1071, 4898, 21, 5043, 575, 6130, 6152, 1112, 1186, 7444, 8627, 7052, 504, 7562, 8088, 5634, 12539, 14330, 14331, 5604, 1256, 2019, 7839, 7566, 5792, 13182, 14332, 7869, 5641, 7480, 7048, 2]
 // Exports: default
 
-// Module 14277 (StartStageChannelModal)
+// Module 14329 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl9 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2018 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4867 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
-import Pressables from "Pressables" /* 6121 */;
-import GuildIcon from "GuildIcon" /* 7021 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7413 */;
-import HotspotStore2 from "HotspotStore" /* 7531 */;
-import _mod8046 from "module_8046" /* 8046 */;
-import StageSparkleDefault from "StageSparkle" /* 8585 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2019 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
+import Pressables from "Pressables" /* 6152 */;
+import GuildIcon from "GuildIcon" /* 7052 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7444 */;
+import HotspotStore2 from "HotspotStore" /* 7562 */;
+import _mod8088 from "module_8088" /* 8088 */;
+import StageSparkleDefault from "StageSparkle" /* 8627 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 4866 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6769 */;
+import StageInstanceStore from "StageInstanceStore" /* 4897 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6800 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,9 +108,9 @@ class NotificationToggle {
     });
     const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: gesture(native.Checkbox, { selected: sendStartNotification }) };
     obj2 = { style: tmp.label, children: items1 };
-    const FormRow = _mod8046.FormRow;
+    const FormRow = _mod8088.FormRow;
     const obj3 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = _mod8046.FormLabel;
+    const FormLabel = _mod8088.FormLabel;
     intl = intl9.intl;
     items1 = [gesture(FormLabel, obj3), ];
     let tmp6Result = null;
@@ -118,7 +118,7 @@ class NotificationToggle {
     if (stateFromStores) {
       const obj4 = { style: tmp.pill, children: gesture(Text, obj5) };
       obj5 = { style: tmp.pillLabel, variant: "footnote/semibold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-      Text = tmp2(5603).Text;
+      Text = tmp2(5634).Text;
       intl2 = tmp2(1112).intl;
       tmp6Result = tmp6(tmp8, obj4);
     }
@@ -201,7 +201,7 @@ export default function StartStageChannelModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -291,7 +291,7 @@ export default function StartStageChannelModal(arg0) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp61) {
           if (0 === c3) {
             c5 = 3;

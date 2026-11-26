@@ -1,11 +1,11 @@
-// Module ID: 11206
-// Function ID: 11207
+// Module ID: 11252
+// Function ID: 11253
 // Name: CollectiblesStorefrontPricingIntegrationExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: getCollectiblesStorefrontPricingFetchOnShopButtonPrefetch, useCollectiblesStorefrontPricingIntegrationEnabled
 
-// Module 11206 (CollectiblesStorefrontPricingIntegrationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 11252 (CollectiblesStorefrontPricingIntegrationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-collectibles-storefront-pricing-integration", kind: "user", defaultConfig: { enabled: false, fetchOnShopButtonPrefetch: false }, variations: { 0: { enabled: false, fetchOnShopButtonPrefetch: false }, 1: { enabled: true, fetchOnShopButtonPrefetch: true }, 2: { enabled: true, fetchOnShopButtonPrefetch: false } } };

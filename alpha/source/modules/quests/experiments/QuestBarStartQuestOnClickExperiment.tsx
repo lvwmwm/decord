@@ -1,10 +1,10 @@
-// Module ID: 16744
-// Function ID: 16745
+// Module ID: 16795
+// Function ID: 16796
 // Name: QuestBarStartQuestOnClickExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 16744 (QuestBarStartQuestOnClickExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 16795 (QuestBarStartQuestOnClickExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-11-quest-bar-start-quest-on-click", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

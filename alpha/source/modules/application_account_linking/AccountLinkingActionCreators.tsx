@@ -1,10 +1,10 @@
-// Module ID: 7487
-// Function ID: 7488
+// Module ID: 7518
+// Function ID: 7519
 // Name: AccountLinkingActionCreators
 // Dependencies: [572, 2]
 // Exports: accountLinkAuthorizationCompleted, accountLinkAuthorizationStarted, devtoolsSetGloballyDisabledAuthorizationFlows
 
-// Module 7487 (AccountLinkingActionCreators)
+// Module 7518 (AccountLinkingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

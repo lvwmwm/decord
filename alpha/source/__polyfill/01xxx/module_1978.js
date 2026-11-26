@@ -1,31 +1,74 @@
 // Module ID: 1978
 // Function ID: 1979
-// Dependencies: [1979, 1980, 1981, 1982, 1983]
+// Dependencies: [32, 19, 1973, 1644]
+// Exports: useKeyboardState
 
 // Module 1978
-import _mod1979 from "module_1979" /* 1979 */;
-import _mod1980 from "module_1980" /* 1980 */;
-import _mod1981 from "module_1981" /* 1981 */;
-import _mod1982 from "module_1982" /* 1982 */;
-import _mod1983 from "module_1983" /* 1983 */;
+import KeyboardController3 from "KeyboardController" /* 1973 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-for (const key10013 in _mod1979) {
-  exports[key10013] = _mod1979[key10013];
-  continue;
+let c3;
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
+let closure_5 = ["keyboardWillShow", "keyboardDidHide"];
+function getLatestState() {
+
 }
-for (const key10017 in _mod1980) {
-  exports[key10017] = _mod1980[key10017];
-  continue;
+function defaultSelector(arg0) {
+  return arg0;
 }
-for (const key10021 in _mod1981) {
-  exports[key10021] = _mod1981[key10021];
-  continue;
-}
-for (const key10025 in _mod1982) {
-  exports[key10025] = _mod1982[key10025];
-  continue;
-}
-for (const key10029 in _mod1983) {
-  exports[key10029] = _mod1983[key10029];
-  continue;
+
+export function useKeyboardState(arg0) {
+  let closure_1;
+  let first;
+  let tmp = arg0;
+  if (arg0 === undefined) {
+    tmp = defaultSelector;
+  }
+  let closure_0 = tmp;
+  closure_1 = undefined;
+  [first, closure_1] = closure_4(() => {
+    let KeyboardController2;
+    if (typeof getLatestState === "function") {
+      const obj = { isVisible: KeyboardController2.isVisible() };
+      const KeyboardController = KeyboardController3.KeyboardController;
+      const merged = Object.assign(KeyboardController.state());
+      KeyboardController2 = KeyboardController3.KeyboardController;
+      return tmp(obj);
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  });
+  const tmp4 = closure_3(() => {
+    let KeyboardController2;
+    closure_0 = closure_1_5.map((item) => {
+      const KeyboardEvents = closure_0(closure_1[3]).KeyboardEvents;
+      return KeyboardEvents.addListener(item, () => {
+        let KeyboardController2;
+        if (typeof closure_2_6 === "function") {
+          const obj = { isVisible: KeyboardController2.isVisible() };
+          const KeyboardController = closure_0(closure_2_1[2]).KeyboardController;
+          const merged = Object.assign(KeyboardController.state());
+          KeyboardController2 = closure_0(closure_2_1[2]).KeyboardController;
+          return tmp(tmp2(obj));
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      });
+    });
+    if (typeof getLatestState === "function") {
+      let obj = { isVisible: KeyboardController2.isVisible() };
+      let KeyboardController = closure_0(closure_1[2]).KeyboardController;
+      let merged = Object.assign(KeyboardController.state());
+      KeyboardController2 = closure_0(closure_1[2]).KeyboardController;
+      tmp(tmp2(obj));
+      return () => {
+        const item = closure_0.forEach((remove) => remove.remove());
+      };
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }, []);
+  return first;
 }

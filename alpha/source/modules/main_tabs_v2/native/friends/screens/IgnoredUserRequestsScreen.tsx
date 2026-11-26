@@ -1,17 +1,17 @@
-// Module ID: 19042
-// Function ID: 19043
+// Module ID: 19105
+// Function ID: 19106
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4954, 1386, 8902, 1071, 21, 6348, 6349, 504, 19040, 6102, 11308, 2]
+// Dependencies: [19, 4985, 1387, 8944, 1071, 21, 6379, 6380, 504, 19103, 6133, 11354, 2]
 // Exports: default
 
-// Module 19042 (IgnoredUserRequestsScreen)
+// Module 19105 (IgnoredUserRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6102 */;
-import UserRowConstants from "UserRowConstants" /* 8902 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
+import UserRowConstants from "UserRowConstants" /* 8944 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const UserRowModes = UserRowConstants.UserRowModes;

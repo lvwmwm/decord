@@ -1,26 +1,26 @@
-// Module ID: 7903
-// Function ID: 7904
+// Module ID: 7937
+// Function ID: 7938
 // Name: AgeVerificationSpotIllustration
-// Dependencies: [19, 21, 7904, 7905, 7906, 7230, 5699, 2]
+// Dependencies: [19, 21, 7938, 7939, 7940, 7261, 5730, 2]
 // Exports: AgeVerificationSpotIllustration
 
-// Module 7903 (AgeVerificationSpotIllustration)
+// Module 7937 (AgeVerificationSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7230 */;
-import _modDef7904 from "module_7904" /* 7904 */;
-import _modDef7905 from "module_7905" /* 7905 */;
-import _modDef7906 from "module_7906" /* 7906 */;
+import react_native from "react-native" /* 7261 */;
+import _modDef7938 from "module_7938" /* 7938 */;
+import _modDef7939 from "module_7939" /* 7939 */;
+import _modDef7940 from "module_7940" /* 7940 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef7904 };
+let obj2 = { uri: _modDef7938 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef7905 };
+let obj3 = { uri: _modDef7939 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef7906 };
-({ uri: _modDef7906 });
+obj[3] = { uri: _modDef7940 };
+({ uri: _modDef7940 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AgeVerificationSpotIllustration.native.tsx");
 

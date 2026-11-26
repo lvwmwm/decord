@@ -1,10 +1,10 @@
-// Module ID: 8432
-// Function ID: 8433
+// Module ID: 8474
+// Function ID: 8475
 // Name: GuildEventModalConstants
 // Dependencies: [2]
 // Exports: isGuildEventValid
 
-// Module 8432 (GuildEventModalConstants)
+// Module 8474 (GuildEventModalConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/GuildEventModalConstants.tsx");

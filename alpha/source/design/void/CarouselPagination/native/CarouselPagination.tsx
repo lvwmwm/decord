@@ -1,25 +1,25 @@
-// Module ID: 15562
-// Function ID: 15563
+// Module ID: 15613
+// Function ID: 15614
 // Name: CarouselPagination
-// Dependencies: [19, 17, 21, 5012, 575, 1653, 5222, 15357, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1654, 5253, 15407, 2]
 // Exports: default
 
-// Module 15562 (CarouselPagination)
+// Module 15613 (CarouselPagination)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import Easing_Easing from "Easing/Easing" /* 15357 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import Easing_Easing from "Easing/Easing" /* 15407 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let num;
 
 let size;
 let tmp10;
-const _modDef1653 = tmp10(1653);
+const _modDef1654 = tmp10(1654);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -44,8 +44,8 @@ let closure_8 = react.memo(function Dot(active) {
   active = active.active;
   let tmp = closure_5();
   let items = [closure_6, , , ];
-  const useDerivedValue = _mod1653.useDerivedValue;
-  _mod1653;
+  const useDerivedValue = _mod1654.useDerivedValue;
+  _mod1654;
   items[1] = timing_timing.withTiming;
   items[2] = active;
   items[3] = Easing_Easing.STANDARD_EASING;
@@ -72,11 +72,11 @@ let closure_8 = react.memo(function Dot(active) {
   const BRAND_500 = nativeDefault.unsafe_rawColors.BRAND_500;
   const backgroundColor = tmp.dot.backgroundColor;
   const items2 = [closure_7, , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
-  items2[1] = _mod1653.interpolate;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
+  items2[1] = _mod1654.interpolate;
   items2[2] = derivedValue;
-  items2[3] = _mod1653.interpolateColor;
+  items2[3] = _mod1654.interpolateColor;
   items2[4] = backgroundColor;
   items2[5] = BRAND_500;
   c0 = undefined;
@@ -101,7 +101,7 @@ let closure_8 = react.memo(function Dot(active) {
   CarouselPaginationTsx2.__initData = tmp12;
   const animatedStyle = useAnimatedStyle(CarouselPaginationTsx2);
   const items4 = [tmp.dot, animatedStyle];
-  return jsx(_modDef1653.View, { style: items4 });
+  return jsx(_modDef1654.View, { style: items4 });
 });
 size = size_mod;
 const result = size.fileFinishedImporting("design/void/CarouselPagination/native/CarouselPagination.tsx");

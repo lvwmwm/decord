@@ -1,14 +1,14 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 14766
+// Function ID: 14767
 // Name: isGuildSpaceEmbeddedActivity
-// Dependencies: [4861, 4860, 7734, 4933, 1092, 2]
+// Dependencies: [4892, 4891, 7768, 4964, 1092, 2]
 // Exports: default
 
-// Module 14713 (isGuildSpaceEmbeddedActivity)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4933 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7734 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
+// Module 14766 (isGuildSpaceEmbeddedActivity)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4964 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7768 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isGuildSpaceEmbeddedActivity.tsx");

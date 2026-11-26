@@ -1,14 +1,10 @@
 // Module ID: 1924
 // Function ID: 1925
 // Name: react-native
-// Dependencies: [17, 65]
+// Dependencies: [1925]
 
 // Module 1924 (react-native)
-import react_native from "react-native" /* 17 */;
-import module_65 from "module_65" /* 65 */;
+import react_nativeDefault from "react-native" /* 1925 */;
 
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "REASharedTransitionBoundary", validAttributes: { isActive: true } };
 
-export default module_65.get("REASharedTransitionBoundary", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default react_nativeDefault;

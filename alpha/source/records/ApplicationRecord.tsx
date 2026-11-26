@@ -1,19 +1,19 @@
-// Module ID: 2142
-// Function ID: 2143
+// Module ID: 2143
+// Function ID: 2144
 // Name: ApplicationRecord
-// Dependencies: [1406, 2143, 1405, 2144, 1363, 1083, 2148, 1412, 2149, 11, 2150, 2]
+// Dependencies: [1407, 2144, 1406, 2145, 1364, 1083, 2149, 1413, 2150, 11, 2151, 2]
 // Exports: createExecutable
 
-// Module 2142 (ApplicationRecord)
+// Module 2143 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
-import ApplicationConstants from "ApplicationConstants" /* 1363 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2149 */;
-import Record from "Record" /* 1406 */;
-import CompanyRecord from "CompanyRecord" /* 2143 */;
-import UserRecord from "UserRecord" /* 1405 */;
-import Constants from "Constants" /* 2144 */;
+import ApplicationConstants from "ApplicationConstants" /* 1364 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2150 */;
+import Record from "Record" /* 1407 */;
+import CompanyRecord from "CompanyRecord" /* 2144 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import Constants from "Constants" /* 2145 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

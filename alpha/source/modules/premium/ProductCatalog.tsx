@@ -1,15 +1,15 @@
-// Module ID: 9780
-// Function ID: 9781
+// Module ID: 9822
+// Function ID: 9823
 // Name: ProductCatalog
-// Dependencies: [1387, 1388, 3, 1399, 1392, 2]
+// Dependencies: [1388, 1389, 3, 1400, 1393, 2]
 // Exports: canUserUse
 
-// Module 9780 (ProductCatalog)
+// Module 9822 (ProductCatalog)
 import LoggerDefault from "Logger" /* 3 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PerksStateUtils from "PerksStateUtils" /* 1392 */;
-import user from "user" /* 1399 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1387 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import PerksStateUtils from "PerksStateUtils" /* 1393 */;
+import user from "user" /* 1400 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;

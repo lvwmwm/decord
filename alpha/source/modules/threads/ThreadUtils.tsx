@@ -1,22 +1,22 @@
-// Module ID: 8143
-// Function ID: 8144
+// Module ID: 8185
+// Function ID: 8186
 // Name: ThreadUtils
-// Dependencies: [109, 6901, 6136, 4946, 1111, 1071, 1112, 8144, 5982, 1255, 8127, 7440, 1404, 504, 11, 2168, 2]
+// Dependencies: [109, 6932, 6167, 4977, 1111, 1071, 1112, 8186, 6013, 1256, 8169, 7471, 1405, 504, 11, 2169, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 8143 (ThreadUtils)
+// Module 8185 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1111 */;
 import intl2 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import _modDef2168 from "module_2168" /* 2168 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8127 */;
-import getTimestampStringDefault from "getTimestampString" /* 8144 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8169 */;
+import getTimestampStringDefault from "getTimestampString" /* 8186 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 6901 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6136 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4946 */;
+import ReadStateStore from "ReadStateStore" /* 6932 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6167 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(7440);
+const NotificationSettingsUtils = tmp(7471);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };
@@ -137,7 +137,7 @@ export function useLastMessageTimestamp(thread) {
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    const obj3 = _modDef2168(createTimestamp);
+    const obj3 = _modDef2169(createTimestamp);
     valueOfResult = obj3.valueOf();
   }
   if (extractTimestampResult == null) {

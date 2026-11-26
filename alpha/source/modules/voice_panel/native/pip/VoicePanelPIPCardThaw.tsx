@@ -1,19 +1,19 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11790
+// Function ID: 11791
 // Name: VoicePanelPIPCardThaw
-// Dependencies: [19, 1653, 11743, 1706, 2]
+// Dependencies: [19, 1654, 11791, 1707, 2]
 // Exports: usePIPCardThaw, usePIPCardThawRequested
 
-// Module 11742 (VoicePanelPIPCardThaw)
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
+// Module 11790 (VoicePanelPIPCardThaw)
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, animationFrame, dependencyMap;
 
-const f100482 = () => requested.isRequested();
+const f100776 = () => requested.isRequested();
 let closure_3 = { code: "(function VoicePanelPIPCardThawTsx1(){let[pipCardSize,pipScale,pipWidth,pipHeight,MAX_FRAMES,scheduleOnRN,finish]=this.__closure;let frames=0;const waitForCards=function(){const{width:width,height:height}=pipCardSize.get();const scale=pipScale.get();const caughtUp=Math.abs(width-pipWidth*scale)<1&&Math.abs(height-pipHeight*scale)<1;if(caughtUp&&frames>0||frames>=MAX_FRAMES){scheduleOnRN(finish);return;}frames++;requestAnimationFrame(waitForCards);};requestAnimationFrame(waitForCards);})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPCardThaw.tsx");
@@ -24,9 +24,9 @@ class VoicePanelPIPCardThaw {
     obj3.onThawed = null;
     obj3.listeners = new Set();
     new Set();
-    const obj = _mod1653;
+    const obj = _mod1654;
     obj3.thawing = obj.makeMutable(false);
-    const obj2 = _mod1653;
+    const obj2 = _mod1654;
     obj3.pipCardSize = obj2.makeMutable({ width: 0, height: 0 });
     obj3.finish = function finish() {
       const onThawed = obj3.onThawed;
@@ -86,7 +86,7 @@ export default VoicePanelPIPCardThaw;
 export function usePIPCardThawRequested(subscribe) {
   let closure_0 = subscribe;
   const items = [subscribe];
-  return react.useSyncExternalStore(subscribe.subscribe, react.useCallback(f100482, items));
+  return react.useSyncExternalStore(subscribe.subscribe, react.useCallback(f100776, items));
 }
 export function usePIPCardThaw(cardThaw, arg1) {
   let closure_1;
@@ -99,7 +99,7 @@ export function usePIPCardThaw(cardThaw, arg1) {
   const scale = size.scale;
   _require = cardThaw;
   let items = [cardThaw];
-  const syncExternalStore = width.useSyncExternalStore(cardThaw.subscribe, width.useCallback(f100482, items));
+  const syncExternalStore = width.useSyncExternalStore(cardThaw.subscribe, width.useCallback(f100776, items));
   const finish = cardThaw.finish;
   const pipCardSize = cardThaw.pipCardSize;
   let items1 = [cardThaw, arg1];
@@ -125,8 +125,8 @@ export function usePIPCardThaw(cardThaw, arg1) {
       items[3] = width;
       items[4] = height;
       items[5] = 10;
-      const scheduleOnUI = _mod1706.scheduleOnUI;
-      items[6] = _mod1706.scheduleOnRN;
+      const scheduleOnUI = _mod1707.scheduleOnUI;
+      items[6] = _mod1707.scheduleOnRN;
       items[7] = finish;
       let c0;
       let c1;
@@ -139,7 +139,7 @@ export function usePIPCardThaw(cardThaw, arg1) {
       class VoicePanelPIPCardThawTsx1 {
         constructor() {
           closure_0 = 0;
-          waitForCards = function waitForCards() { /* body not rendered: F141418 */ };
+          waitForCards = function waitForCards() { /* body not rendered: F141883 */ };
           animationFrame = requestAnimationFrame(waitForCards);
           return;
         }

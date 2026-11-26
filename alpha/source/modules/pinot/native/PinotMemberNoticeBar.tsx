@@ -1,21 +1,21 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 11896
+// Function ID: 11897
 // Name: PinotMemberNoticeBar
-// Dependencies: [19, 17, 1071, 21, 5012, 575, 11849, 11843, 5691, 2187, 5603, 1112, 3562, 6121, 7216, 2]
+// Dependencies: [19, 17, 1071, 21, 5043, 575, 11897, 11891, 5722, 2188, 5634, 1112, 3563, 6152, 7247, 2]
 // Exports: PinotMemberNoticeBar
 
-// Module 11848 (PinotMemberNoticeBar)
+// Module 11896 (PinotMemberNoticeBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import LinkingDefault from "Linking" /* 5691 */;
-import PinotAnalytics from "PinotAnalytics" /* 11843 */;
-import PinotMemberNoticeCaret from "PinotMemberNoticeCaret" /* 11849 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import LinkingDefault from "Linking" /* 5722 */;
+import PinotAnalytics from "PinotAnalytics" /* 11891 */;
+import PinotMemberNoticeCaret from "PinotMemberNoticeCaret" /* 11897 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -64,8 +64,8 @@ export function PinotMemberNoticeBar(channel) {
   }, items);
   let obj = { style: tmp.underlay, children: closure_7(View, obj2) };
   obj2 = { style: tmp.bar, children: items1 };
-  let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3562).Jry6Gr, obj4) };
-  const Text = channel(5603).Text;
+  let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3563).Jry6Gr, obj4) };
+  const Text = channel(5634).Text;
   intl = channel(1112).intl;
   obj4 = {
     learnMoreHook(children, arg1) {
@@ -84,9 +84,9 @@ export function PinotMemberNoticeBar(channel) {
       const result = obj.trackPinotNoticeAction(obj2, "dismiss");
       onDismiss();
     },
-    children: closure_6(channel(7216).XSmallIcon, { size: "sm", color: "icon-muted" })
+    children: closure_6(channel(7247).XSmallIcon, { size: "sm", color: "icon-muted" })
   };
-  const PressableOpacity = channel(6121).PressableOpacity;
+  const PressableOpacity = channel(6152).PressableOpacity;
   intl2 = channel(1112).intl;
   items1[1] = closure_6(PressableOpacity, obj5);
   return closure_6(View, obj);

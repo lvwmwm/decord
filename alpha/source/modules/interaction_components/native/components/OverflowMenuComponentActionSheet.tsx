@@ -1,15 +1,15 @@
-// Module ID: 12362
-// Function ID: 12363
+// Module ID: 12412
+// Function ID: 12413
 // Name: OverflowMenuComponentActionSheet
-// Dependencies: [19, 21, 6364, 8782, 5226, 12363, 7515, 6109, 12364, 2117, 2]
+// Dependencies: [19, 21, 6395, 8824, 5257, 12413, 7546, 6140, 12414, 2118, 2]
 // Exports: default
 
-// Module 12362 (OverflowMenuComponentActionSheet)
+// Module 12412 (OverflowMenuComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import TableRowGroup2 from "TableRowGroup" /* 6109 */;
-import ComponentStateContext from "ComponentStateContext" /* 8782 */;
-import renderComponents from "renderComponents" /* 12364 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import TableRowGroup2 from "TableRowGroup" /* 6140 */;
+import ComponentStateContext from "ComponentStateContext" /* 8824 */;
+import renderComponents from "renderComponents" /* 12414 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -18,9 +18,9 @@ let dependencyMap;
 function OverflowMenuSheetContent(component) {
   let hasIcons;
   component = component.component;
-  const getOverflowMenuComponentActionSheetKey = component(6364).getOverflowMenuComponentActionSheetKey;
-  const tmp = component(6364);
-  let obj = component(8782);
+  const getOverflowMenuComponentActionSheetKey = component(6395).getOverflowMenuComponentActionSheetKey;
+  const tmp = component(6395);
+  let obj = component(8824);
   const overflowMenuComponentActionSheetKey = getOverflowMenuComponentActionSheetKey(obj.useComponentContainerId(), component.id);
   const groups = component.groups;
   dependencyMap = groups.some((components) => {
@@ -39,10 +39,10 @@ function OverflowMenuSheetContent(component) {
     const items = [component];
     return items;
   }, items1);
-  let obj2 = component(12363);
+  let obj2 = component(12413);
   const isComponentTreeLoading = obj2.useIsComponentTreeLoading(memo, callback);
   const groups1 = component.groups;
-  const ActionSheet = component(7515).ActionSheet;
+  const ActionSheet = component(7546).ActionSheet;
   return <ActionSheet>{groups1.map((label, index) => {
     const TableRowGroup = TableRowGroup2.TableRowGroup;
     const components = label.components;

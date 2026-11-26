@@ -1,16 +1,16 @@
-// Module ID: 1246
-// Function ID: 1247
+// Module ID: 1247
+// Function ID: 1248
 // Name: BaseApexExperimentStore
-// Dependencies: [109, 32, 1082, 4, 1247, 1248, 1250, 504, 510, 2]
+// Dependencies: [109, 32, 1082, 4, 1248, 1249, 1251, 504, 510, 2]
 
-// Module 1246 (BaseApexExperimentStore)
+// Module 1247 (BaseApexExperimentStore)
 import logger_Logger from "logger/Logger" /* 4 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1082 */;
-import _mod1247 from "module_1247" /* 1247 */;
-import ApexTypes from "ApexTypes" /* 1248 */;
-import _modDef1250 from "module_1250" /* 1250 */;
+import _mod1248 from "module_1248" /* 1248 */;
+import ApexTypes from "ApexTypes" /* 1249 */;
+import _modDef1251 from "module_1251" /* 1251 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -45,16 +45,6 @@ function _toPropertyKey(obj) {
   }
   return text;
 }
-function getHash(arg0) {
-  let tmp2 = closure_20[arg0];
-  if (null == tmp2) {
-    obj = _modDef1250;
-    const v3Result = obj.v3(arg0);
-    tmp[arg0] = v3Result;
-    tmp2 = v3Result;
-  }
-  return tmp2;
-}
 const WebAnalyticsEvents = Constants.WebAnalyticsEvents;
 const logger = new logger_Logger.Logger("ApexExperimentStore");
 let tmp3 = typeof window === "undefined";
@@ -69,7 +59,7 @@ if (!tmp3) {
   tmp3 = tmp4;
 }
 if (!tmp3) {
-  const _module = _mod1247;
+  const _module = _mod1248;
 }
 let items = [ApexTypes.UnitType.User, ApexTypes.UnitType.Installation];
 let obj = { user: {}, guild: {}, installation: {} };
@@ -163,7 +153,7 @@ class BaseApexExperimentStore extends PersistedStore {
       for (const key10020 in buildOverrideExperiments) {
         let tmp9 = closure_20[key10020];
         if (null == tmp9) {
-          let obj2 = _modDef1250;
+          let obj2 = _modDef1251;
           let v3Result = obj2.v3(key10020);
           tmp12[key10020] = v3Result;
           tmp9 = v3Result;
@@ -323,7 +313,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const merged = Object.assign(closure_11);
     let tmp3 = closure_20[experimentName];
     if (null == tmp3) {
-      const obj2 = _modDef1250;
+      const obj2 = _modDef1251;
       const v3Result = obj2.v3(experimentName);
       tmp2[experimentName] = v3Result;
       tmp3 = v3Result;
@@ -341,7 +331,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const merged = Object.assign(closure_12);
     let tmp3 = closure_20[experimentName];
     if (null == tmp3) {
-      const obj2 = _modDef1250;
+      const obj2 = _modDef1251;
       const v3Result = obj2.v3(experimentName);
       tmp2[experimentName] = v3Result;
       tmp3 = v3Result;
@@ -424,16 +414,16 @@ class BaseApexExperimentStore extends PersistedStore {
   getServerAssignment(kind, id, name) {
     let tmp2 = closure_20[name];
     if (null == tmp2) {
-      obj = _modDef1250;
+      obj = _modDef1251;
       const v3Result = obj.v3(name);
       tmp[name] = v3Result;
       tmp2 = v3Result;
     }
     return null != obj[kind][id] ? obj[kind][id].assignments[tmp2] : undefined;
   }
-  getEvaluation(user, arg1) {
+  getEvaluation(installation, arg1) {
     let evaluationId;
-    if (obj[user][arg1] != null) {
+    if (obj[installation][arg1] != null) {
       evaluationId = tmp.evaluationId;
     }
     return evaluationId;
@@ -453,7 +443,7 @@ class BaseApexExperimentStore extends PersistedStore {
         let tmp3 = closure_20[arg2];
         const assignments = tmp10.assignments;
         if (null == tmp3) {
-          obj = _modDef1250;
+          obj = _modDef1251;
           const v3Result = obj.v3(arg2);
           tmp2[arg2] = v3Result;
           tmp3 = v3Result;
@@ -538,7 +528,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const combined = "" + experimentName + "|" + revision + "|" + trackedVariantId + "|" + location + "|" + arg6 + "|1";
     let tmp3 = closure_20[combined];
     if (null == tmp3) {
-      obj = _modDef1250;
+      obj = _modDef1251;
       const v3Result = obj.v3(combined);
       tmp2[combined] = v3Result;
       tmp3 = v3Result;
@@ -560,40 +550,43 @@ class BaseApexExperimentStore extends PersistedStore {
       });
     }
   }
-  trackCommonTriggerPointExposures(exposure_location, arg1) {
+  trackCommonTriggerPointExposures(exposure_location, arg1, installation_id) {
     const self = this;
+    importDefault = exposure_location;
+    dependencyMap = installation_id;
     const evaluation = this.getEvaluation("user", arg1);
     if (null != evaluation) {
-      const tmp2 = getHash;
-      let tmp3 = globalThis;
       const _HermesInternal = HermesInternal;
-      self.withExposureTracking(getHash("" + evaluation + "|" + exposure_location), () => {
+      const combined = "" + evaluation + "|" + exposure_location;
+      let tmp5 = closure_20[combined];
+      if (null == tmp5) {
+        obj = _modDef1251;
+        const v3Result = obj.v3(combined);
+        tmp4[combined] = v3Result;
+        tmp5 = v3Result;
+      }
+      self.withExposureTracking(tmp5, () => {
         obj = { evaluation_id: evaluation, exposure_location, unit_type: "user" };
         return self.track(WebAnalyticsEvents.EXPERIMENT_USER_EVALUATION_EXPOSED, obj, { flush: true });
       });
     }
-    function _loop(evaluationId, unitId) {
-      const evaluation_id = evaluationId;
-      exposure_location = unitId;
-      const combined = "" + evaluationId + "|" + exposure_location;
-      let tmp3 = closure_1_20[combined];
-      if (null == tmp3) {
-        obj = exposure_location(self[6]);
-        const v3Result = obj.v3(combined);
-        tmp2[combined] = v3Result;
-        tmp3 = v3Result;
+    if (null != installation_id) {
+      const evaluation1 = self.getEvaluation("installation", installation_id);
+      if (null != evaluation1) {
+        const _HermesInternal2 = HermesInternal;
+        const combined1 = "" + evaluation1 + "|" + exposure_location;
+        let tmp14 = closure_20[combined1];
+        if (null == tmp14) {
+          const obj2 = _modDef1251;
+          const v3Result1 = obj2.v3(combined1);
+          tmp13[combined1] = v3Result1;
+          tmp14 = v3Result1;
+        }
+        self.withExposureTracking(tmp14, () => {
+          obj = { evaluation_id: evaluation1, exposure_location, unit_type: "installation", installation_id };
+          return self.track(WebAnalyticsEvents.EXPERIMENT_INSTALLATION_EVALUATION_EXPOSED, obj, { flush: true });
+        });
       }
-      self.withExposureTracking(tmp3, () => {
-        obj = { evaluation_id, exposure_location: unitId, unit_type: "installation", installation_id: unitId };
-        return self.track(WebAnalyticsEvents.EXPERIMENT_INSTALLATION_EVALUATION_EXPOSED, obj, { flush: true });
-      });
-    }
-    const result = self.evaluationsWithUnitIds("installation");
-    const iter = result[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let _loopResult = _loop(nextResult.evaluationId, nextResult.unitId);
-      continue;
     }
   }
   withExposureTracking(v3Result, fn) {
@@ -605,47 +598,35 @@ class BaseApexExperimentStore extends PersistedStore {
       self.saveTrackedExposures(closure_19);
     }
   }
+  getInstallationUnitIdForSuppression() {
+    let first = Object.keys(obj.installation)[0];
+    if (first == null) {
+      first = null;
+    }
+    return first;
+  }
   trackExposureSuppression(experiment, suppression_source) {
     if (null != closure_10[experiment]) {
       const self = this;
       if ("user" === closure_10[experiment].kind) {
-        obj = { experiment, unit_type: closure_10[experiment].kind, suppression_source };
-        self.track(WebAnalyticsEvents.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, obj, { flush: true });
+        const obj2 = { experiment, unit_type: closure_10[experiment].kind, suppression_source };
+        self.track(WebAnalyticsEvents.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, obj2, { flush: true });
       } else if ("installation" === closure_10[experiment].kind) {
-        const _Object = Object;
-        const first = Object.keys(obj.installation)[0];
-        if (null != first) {
-          const obj2 = { experiment, unit_type: closure_10[experiment].kind, suppression_source, installation_id: first };
-          self.track(WebAnalyticsEvents.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED, obj2, { flush: true });
+        const installationUnitIdForSuppression = self.getInstallationUnitIdForSuppression();
+        const tmp3 = null != installationUnitIdForSuppression && null != obj.installation[installationUnitIdForSuppression];
+        if (tmp3) {
+          obj = { experiment, unit_type: closure_10[experiment].kind, suppression_source, installation_id: installationUnitIdForSuppression };
+          self.track(WebAnalyticsEvents.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED, obj, { flush: true });
         }
       } else if ("guild" === closure_10[experiment].kind) {
-        const _Object2 = Object;
-        const first1 = Object.keys(obj.guild)[0];
-        if (null != first1) {
-          const obj3 = { experiment, unit_type: closure_10[experiment].kind, suppression_source, guild_id: first1 };
+        const _Object = Object;
+        const first = Object.keys(obj.guild)[0];
+        if (null != first) {
+          const obj3 = { experiment, unit_type: closure_10[experiment].kind, suppression_source, guild_id: first };
           self.track(WebAnalyticsEvents.EXPERIMENT_GUILD_EXPOSURE_SUPPRESSED, obj3, { flush: true });
         }
       }
     }
-  }
-  evaluationIds(arg0) {
-    const values = Object.values(obj[arg0]);
-    const mapped = values.map((evaluationId) => evaluationId.evaluationId);
-    return mapped.filter((item) => null != item);
-  }
-  evaluationsWithUnitIds(installation) {
-    const entries = Object.entries(obj[installation]);
-    const found = entries.filter((item) => {
-      let tmp;
-      [, tmp] = item;
-      return null != tmp.evaluationId;
-    });
-    return found.map((item) => {
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = item;
-      return { evaluationId: tmp2.evaluationId, unitId: tmp };
-    });
   }
   shouldTrackExposure(v3Result) {
     let tmp2 = null == tmp;
@@ -730,7 +711,7 @@ class BaseApexExperimentStore extends PersistedStore {
   getHash(arg0) {
     let tmp2 = closure_20[arg0];
     if (null == tmp2) {
-      obj = _modDef1250;
+      obj = _modDef1251;
       const v3Result = obj.v3(arg0);
       tmp[arg0] = v3Result;
       tmp2 = v3Result;
@@ -761,7 +742,7 @@ class BaseApexExperimentStore extends PersistedStore {
     if (null != id) {
       if (null != apexExperiments) {
         const assignments = {};
-        function _loop2() {
+        function _loop() {
           let closure_0;
           let gatewayGenerations;
           apexExperiments = apexExperiments(self[5]).UnitTypeToKind[closure_4];
@@ -793,7 +774,7 @@ class BaseApexExperimentStore extends PersistedStore {
         let num = 0;
         while (iter !== undefined) {
           let closure_4 = iter.next();
-          let _loop2Result = _loop2();
+          let _loopResult = _loop();
           continue;
         }
         const setExperimentAssignments = self.setExperimentAssignments;

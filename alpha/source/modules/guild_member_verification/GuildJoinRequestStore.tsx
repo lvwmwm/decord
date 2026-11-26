@@ -1,18 +1,18 @@
-// Module ID: 6975
-// Function ID: 6976
+// Module ID: 7006
+// Function ID: 7007
 // Name: GuildJoinRequestStore
-// Dependencies: [1386, 5046, 2168, 5048, 4939, 5047, 1088, 504, 572, 2]
+// Dependencies: [1387, 5077, 2169, 5079, 4970, 5078, 1088, 504, 572, 2]
 
-// Module 6975 (GuildJoinRequestStore)
+// Module 7006 (GuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import _modDef2168 from "module_2168" /* 2168 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4939 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5047 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import UserStore from "UserStore" /* 1386 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4970 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5077 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5078 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5079 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatus) {
@@ -21,12 +21,12 @@ function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatu
       const tmp12 = require;
       if (DELETED === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         closure_6[guildId] = closure_6[guildId] + 1;
-        const result = map.set(guildId, _modDef2168());
+        const result = map.set(guildId, _modDef2169());
       }
-      if (applicationStatus === tmp12(5048).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (applicationStatus === tmp12(5079).GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         closure_6[guildId] = Math.max(0, closure_6[guildId] - 1);
-        const result1 = map.set(guildId, _modDef2168());
+        const result1 = map.set(guildId, _modDef2169());
       }
     }
   }
@@ -72,7 +72,7 @@ function handleGuildJoinRequestCreateOrUpdate(guildId) {
         secondaryIndexMap2.delete(tmp.joinRequestId);
         const result1 = secondaryIndexMap1.set(tmp.joinRequestId, tmp);
       }
-      const tmp8Result = tmp8(5047);
+      const tmp8Result = tmp8(5078);
       if (tmp8Result.isActionedApplicationStatus(tmp.applicationStatus)) {
         secondaryIndexMap1.delete(tmp.joinRequestId);
         const result2 = secondaryIndexMap2.set(tmp.joinRequestId, tmp);
@@ -139,7 +139,7 @@ class GuildJoinRequestStoreV2 extends Store {
       const value = obj.get(arg0);
       let tmp3 = null != value;
       if (tmp3) {
-        const obj2 = _modDef2168();
+        const obj2 = _modDef2169();
         tmp3 = obj2.diff(value, "seconds") < closure_19;
       }
       return tmp3;
@@ -217,7 +217,7 @@ let obj = {
     if (status === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED) {
       let tmp3 = closure_6;
       closure_6[guildId] = total;
-      let result = map.set(guildId, _modDef2168());
+      let result = map.set(guildId, _modDef2169());
     }
     const item = requests.forEach((joinRequestId) => {
       closure_1_18[joinRequestId.joinRequestId] = joinRequestId;
@@ -277,7 +277,7 @@ let obj = {
       if (obj.isActionedApplicationStatus(applicationStatus)) {
         secondaryIndexMap2.clear();
       }
-      const tmpResult = tmp(5047);
+      const tmpResult = tmp(5078);
       if (tmpResult.isSubmittedApplicationStatus(applicationStatus)) {
         secondaryIndexMap1.clear();
       }

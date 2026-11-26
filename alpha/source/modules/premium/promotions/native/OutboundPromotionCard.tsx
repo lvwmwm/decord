@@ -1,25 +1,25 @@
-// Module ID: 13974
-// Function ID: 13975
+// Module ID: 14026
+// Function ID: 14027
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1071, 21, 5012, 575, 6837, 5240, 7476, 1112, 5603, 7036, 5221, 9359, 13975, 6016, 13976, 2119, 9358, 5699, 5610, 5226, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5043, 575, 6868, 5271, 7507, 1112, 5634, 7067, 5252, 9401, 14027, 6047, 14028, 2120, 9400, 5730, 5641, 5257, 2]
 // Exports: default
 
-// Module 13974 (OutboundPromotionCard)
+// Module 14026 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5240 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
-import LegacyTokens from "LegacyTokens" /* 6837 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 7036 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7476 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
+import LegacyTokens from "LegacyTokens" /* 6868 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 7067 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

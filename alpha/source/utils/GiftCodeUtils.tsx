@@ -1,23 +1,23 @@
-// Module ID: 5759
-// Function ID: 5760
+// Module ID: 5790
+// Function ID: 5791
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 5760, 1386, 1071, 1388, 5637, 5771, 5772, 1255, 4833, 5804, 1112, 5805, 1254, 504, 2173, 2]
+// Dependencies: [5, 32, 5791, 1387, 1071, 1389, 5668, 5802, 5803, 1256, 4864, 5835, 1112, 5836, 1255, 504, 2174, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 5759 (GiftCodeUtils)
+// Module 5790 (GiftCodeUtils)
 import intl12 from "intl" /* 1112 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import PremiumUtils from "PremiumUtils" /* 2173 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5771 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 5804 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5802 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 5835 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 5760 */;
-import UserStore from "UserStore" /* 1386 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 5791 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import RegexUtils from "RegexUtils" /* 5637 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import RegexUtils from "RegexUtils" /* 5668 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f88514 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
+const f88759 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (gift_code) => {
     let closure_1 = arg1;
@@ -50,7 +50,7 @@ let obj = function _resolveGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -216,16 +216,16 @@ const items3 = [
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const ArrayResult = Array(4);
 const fillResult = ArrayResult.fill(undefined);
-let mapped = fillResult.map(f88514);
+let mapped = fillResult.map(f88759);
 const items4 = [mapped.join("-?"), , , ];
 const ArrayResult1 = Array(6);
 const fillResult1 = ArrayResult1.fill(undefined);
-const mapped1 = fillResult1.map(f88514);
+const mapped1 = fillResult1.map(f88759);
 items4[1] = mapped1.join("-?");
 let c0 = 5;
 const ArrayResult2 = Array(3);
 const fillResult2 = ArrayResult2.fill(undefined);
-const mapped2 = fillResult2.map(f88514);
+const mapped2 = fillResult2.map(f88759);
 items4[2] = mapped2.join("-?");
 items4[3] = "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}";
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -618,7 +618,7 @@ export function getBodyText(arg0) {
   } else if (constants3.SUCCESS === step) {
     let otherwiseResult;
     if (null != subscriptionPlan) {
-      const str = subscriptionPlan(5805);
+      const str = subscriptionPlan(5836);
       const match = str.match(subscriptionPlan);
       const obj3 = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
       const obj4 = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };

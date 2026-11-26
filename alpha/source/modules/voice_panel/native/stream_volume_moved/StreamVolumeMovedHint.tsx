@@ -1,17 +1,17 @@
-// Module ID: 19427
-// Function ID: 19428
+// Module ID: 19490
+// Function ID: 19491
 // Name: StreamVolumeMovedHint
-// Dependencies: [19, 17, 14897, 21, 5012, 575, 1653, 1112, 5021, 5603, 2]
+// Dependencies: [19, 17, 14947, 21, 5043, 575, 1654, 1112, 5052, 5634, 2]
 // Exports: default
 
-// Module 19427 (StreamVolumeMovedHint)
+// Module 19490 (StreamVolumeMovedHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5021 */;
-import StreamVolumeMovedStore2 from "StreamVolumeMovedStore" /* 14897 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5052 */;
+import StreamVolumeMovedStore2 from "StreamVolumeMovedStore" /* 14947 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const StreamVolumeMovedStore = StreamVolumeMovedStore2;
@@ -43,9 +43,9 @@ export default function StreamVolumeMovedHint(streamKey) {
   const longPressProgress = streamKey.longPressProgress;
   let tmp = closure_8();
   let items = [closure_9, , , ];
-  const useAnimatedStyle = streamKey(1653).useAnimatedStyle;
-  const tmp4 = streamKey(1653);
-  items[1] = streamKey(1653).interpolate;
+  const useAnimatedStyle = streamKey(1654).useAnimatedStyle;
+  const tmp4 = streamKey(1654);
+  items[1] = streamKey(1654).interpolate;
   items[2] = longPressProgress;
   items[3] = 0.9;
   let c0;
@@ -86,7 +86,7 @@ export default function StreamVolumeMovedHint(streamKey) {
   if (state) {
     let obj2 = { style: items4, children: null };
     items4 = [tmp.pill, animatedStyle];
-    View = state(1653).View;
+    View = state(1654).View;
     tmp14 = <View style={tmp.container} pointerEvents="none">{null}</View>;
   }
   return tmp14;

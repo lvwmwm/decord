@@ -1,23 +1,23 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 16017
+// Function ID: 16018
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11866, 21, 5012, 504, 12267, 5610, 1112, 5073, 1241, 572, 1186, 10403, 5603, 2]
+// Dependencies: [5, 32, 19, 17, 11914, 21, 5043, 504, 12317, 5641, 1112, 5104, 1242, 572, 1186, 10448, 5634, 2]
 
-// Module 15966 (components_native/ErrorBoundary)
+// Module 16017 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import native2 from "native" /* 5073 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import AppCrash from "AppCrash" /* 10403 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import native2 from "native" /* 5104 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import AppCrash from "AppCrash" /* 10448 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11866 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ function MaybeClearBuildOverride() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -84,7 +84,7 @@ function MaybeClearBuildOverride() {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp13) {
           closure_2 = tmp13;
@@ -125,7 +125,7 @@ function MaybeClearBuildOverride() {
           return obj(...arguments);
         }
     };
-    const Button = tmp3(5610).Button;
+    const Button = tmp3(5641).Button;
     intl = tmp3(1112).intl;
     return closure_9(Button, obj2);
   }
@@ -214,7 +214,7 @@ class ErrorBoundary extends PureComponent {
       const obj3 = { style: tmp.buttons, children: items1 };
       items1 = [React4(MaybeClearBuildOverride, {}), ];
       const obj4 = { text: intl3.string(intl4.t["4n8OJn"]), onPress: self.handleReload };
-      const Button = tmp3(5610).Button;
+      const Button = tmp3(5641).Button;
       intl3 = tmp3(1112).intl;
       items1[1] = React4(Button, obj4);
       items[1] = authStore(metroImportDefault, obj3);

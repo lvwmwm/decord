@@ -1,31 +1,31 @@
-// Module ID: 13948
-// Function ID: 13949
+// Module ID: 14000
+// Function ID: 14001
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2188, 1386, 1071, 9084, 1388, 21, 5012, 575, 7155, 1112, 2025, 504, 2173, 5567, 1091, 5603, 5699, 13949, 13950, 9675, 5610, 2]
+// Dependencies: [19, 17, 2189, 1387, 1071, 9126, 1389, 21, 5043, 575, 7186, 1112, 2026, 504, 2174, 5598, 1091, 5634, 5730, 14001, 14002, 9717, 5641, 2]
 // Exports: default
 
-// Module 13948 (PremiumSubscriptionUpsell)
+// Module 14000 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import intl7 from "intl" /* 1112 */;
-import NumberUtils from "NumberUtils" /* 2025 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7155 */;
-import ColorConstants from "ColorConstants" /* 9084 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9675 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13949 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13950 */;
+import NumberUtils from "NumberUtils" /* 2026 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7186 */;
+import ColorConstants from "ColorConstants" /* 9126 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9717 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14001 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14002 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2188 */;
-import UserStore from "UserStore" /* 1386 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import UserStore from "UserStore" /* 1387 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -97,18 +97,18 @@ export default function PremiumSubscriptionUpsell(arg0) {
     if (tmp5Result5.isPremium(stateFromStores)) {
       const obj5 = { children: items2 };
       const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl7.t.YYfHlx) };
-      const Text2 = tmp2(5603).Text;
+      const Text2 = tmp2(5634).Text;
       intl2 = tmp2(1112).intl;
       items2 = [React4(Text2, obj6), ];
       const obj7 = { style: tmp.subtitle, variant: "body-md/semibold", color: "text-overlay-light", children: intl3.format(intl7.t.Af0zEZ, obj8) };
-      const Text3 = tmp2(5603).Text;
+      const Text3 = tmp2(5634).Text;
       intl3 = tmp2(1112).intl;
       obj8 = { numFreeGuildSubscriptions: metroImportDefault };
       items2[1] = React4(Text3, obj7);
       tmp7Result1 = tmp9(authStore, obj5);
     } else {
       const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl7.t["qUl+K4"]) };
-      const Text = tmp2(5603).Text;
+      const Text = tmp2(5634).Text;
       intl = tmp2(1112).intl;
       tmp7Result1 = tmp7(Text, obj9);
     }
@@ -138,7 +138,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     items3[1] = unpackModuleId(_false, obj10);
     const obj19 = { style: tmp.upsellButton, children: React4(Button, obj20) };
     obj20 = { variant: "experimental_premium-secondary", text: intl6.string(intl7.t.fJOECn), onPress: onLearnMorePremium };
-    Button = tmp2(5610).Button;
+    Button = tmp2(5641).Button;
     intl6 = tmp2(1112).intl;
     items3[2] = React4(_false, obj19);
     tmp7Result = tmp7(tmp8, obj3);

@@ -1,20 +1,20 @@
-// Module ID: 19542
-// Function ID: 19543
+// Module ID: 19605
+// Function ID: 19606
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 5013, 4860, 6934, 15933, 5638, 11735, 21, 1653, 1628, 19322, 15932, 504, 19543, 2]
+// Dependencies: [32, 19, 5044, 4891, 6965, 15984, 5669, 11783, 21, 1654, 1629, 19385, 15983, 504, 19606, 2]
 // Exports: default
 
-// Module 19542 (MediaPlaybackPanelController)
+// Module 19605 (MediaPlaybackPanelController)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11735 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15932 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15933 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5669 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11783 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15983 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15984 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5013 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4860 */;
-import VoicePanelStore from "VoicePanelStore" /* 6934 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5044 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4891 */;
+import VoicePanelStore from "VoicePanelStore" /* 6965 */;
 import size from "module_2" /* 2 */;
 
 let set;

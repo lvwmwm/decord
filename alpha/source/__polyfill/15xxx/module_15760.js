@@ -1,44 +1,27 @@
 // Module ID: 15760
 // Function ID: 15761
-// Dependencies: []
+// Dependencies: [15758, 15732]
 
 // Module 15760
-const obj = {
-  isASCIIDigit(decodeResult) {
-    return decodeResult >= 48 && decodeResult <= 57;
-  },
-  isASCIIAlpha(input) {
-    let tmp = input >= 65 && input <= 90;
-    if (!tmp) {
-      tmp = input >= 97 && input <= 122;
-      const tmp2 = input >= 97 && input <= 122;
-    }
-    return tmp;
-  },
-  isASCIIAlphanumeric(arg0) {
-    let tmp = arg0 >= 65 && arg0 <= 90;
-    if (!tmp) {
-      tmp = arg0 >= 97 && arg0 <= 122;
-      const tmp2 = arg0 >= 97 && arg0 <= 122;
-    }
-    if (!tmp) {
-      tmp = arg0 >= 48 && arg0 <= 57;
-      const tmp3 = arg0 >= 48 && arg0 <= 57;
-    }
-    return tmp;
-  },
-  isASCIIHex(decodeResult) {
-    let tmp = decodeResult >= 48 && decodeResult <= 57;
-    if (!tmp) {
-      tmp = decodeResult >= 65 && decodeResult <= 70;
-      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
-    }
-    if (!tmp) {
-      tmp = decodeResult >= 97 && decodeResult <= 102;
-      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
-    }
-    return tmp;
-  }
-};
+import _mod15732 from "module_15732" /* 15732 */;
+import _mod15758 from "module_15758" /* 15758 */;
 
-export default obj;
+
+export default function(arg0, arg1) {
+  let tmp3;
+  if (arguments.length < 2) {
+    const tmp7 = _mod15732[arg0];
+    let tmp8;
+    if (_mod15758(tmp7)) {
+      tmp8 = tmp7;
+    }
+    tmp3 = tmp8;
+  } else {
+    tmp3 = _mod15732[arg0];
+    const tmp = require;
+    if (tmp3) {
+      tmp3 = tmp(15732)[arg0][arg1];
+    }
+  }
+  return tmp3;
+};

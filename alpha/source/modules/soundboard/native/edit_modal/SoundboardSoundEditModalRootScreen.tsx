@@ -1,20 +1,20 @@
-// Module ID: 19952
-// Function ID: 19953
+// Module ID: 20016
+// Function ID: 20017
 // Name: SoundboardSoundEditModalRootScreen
-// Dependencies: [5, 32, 19, 17, 6894, 1389, 21, 5012, 575, 19953, 19954, 9471, 5573, 1148, 9452, 19946, 10361, 5762, 5693, 19955, 7243, 1112, 5603, 6121, 9495, 7457, 1412, 9662, 14893, 5610, 2]
+// Dependencies: [5, 32, 19, 17, 6925, 1390, 21, 5043, 575, 20017, 20018, 9513, 5604, 1148, 9494, 20010, 10406, 5793, 5724, 20019, 7274, 1112, 5634, 6152, 9537, 7488, 1413, 9704, 10398, 5641, 2]
 // Exports: default
 
-// Module 19952 (SoundboardSoundEditModalRootScreen)
+// Module 20016 (SoundboardSoundEditModalRootScreen)
 import nativeDefault from "native" /* 575 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9495 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9537 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardConstants from "SoundboardConstants" /* 6894 */;
-import EmojiConstants from "EmojiConstants" /* 1389 */;
+import SoundboardConstants from "SoundboardConstants" /* 6925 */;
+import EmojiConstants from "EmojiConstants" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -105,7 +105,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c5;
@@ -217,7 +217,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
               closure_131_3();
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp72) {
           closure_4 = tmp72;
@@ -311,7 +311,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           while (true) {
@@ -387,7 +387,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
                 c6 = 0;
                 closure_1.return();
                 c8 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
               let _decodeURI = decodeURI;
               decodeURI(closure_0.replace(/^file:\/\//, ""));
@@ -420,7 +420,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
                 }
               }
               c8 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           }
         }

@@ -1,12 +1,12 @@
-// Module ID: 14172
-// Function ID: 14173
+// Module ID: 14224
+// Function ID: 14225
 // Name: GameProfileVisibilityUtils
-// Dependencies: [8704, 7145, 2]
+// Dependencies: [8746, 7176, 2]
 // Exports: isGameDisplayable
 
-// Module 14172 (GameProfileVisibilityUtils)
-import useGameProfileObscured from "useGameProfileObscured" /* 7145 */;
-import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 8704 */;
+// Module 14224 (GameProfileVisibilityUtils)
+import useGameProfileObscured from "useGameProfileObscured" /* 7176 */;
+import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 8746 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_profile/GameProfileVisibilityUtils.tsx");

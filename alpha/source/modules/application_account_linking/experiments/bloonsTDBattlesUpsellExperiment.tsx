@@ -1,11 +1,11 @@
-// Module ID: 19251
-// Function ID: 19252
+// Module ID: 19314
+// Function ID: 19315
 // Name: bloonsTDBattlesUpsellExperiment
-// Dependencies: [1450, 19252, 2]
+// Dependencies: [1451, 19315, 2]
 
-// Module 19251 (bloonsTDBattlesUpsellExperiment)
-import accountLinkUpsellExperimentConfig from "accountLinkUpsellExperimentConfig" /* 19252 */;
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 19314 (bloonsTDBattlesUpsellExperiment)
+import accountLinkUpsellExperimentConfig from "accountLinkUpsellExperimentConfig" /* 19315 */;
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const obj = { 0: { enabled: true, orbQuantity: 100 }, 1: { enabled: true, orbQuantity: 200 } };

@@ -1,20 +1,20 @@
-// Module ID: 14000
-// Function ID: 14001
+// Module ID: 14052
+// Function ID: 14053
 // Name: renderPremiumButtonText
-// Dependencies: [19, 17, 1388, 21, 5012, 5009, 575, 2173, 1112, 1186, 2]
+// Dependencies: [19, 17, 1389, 21, 5043, 5040, 575, 2174, 1112, 1186, 2]
 // Exports: default
 
-// Module 14000 (renderPremiumButtonText)
+// Module 14052 (renderPremiumButtonText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import ColorUtils_mod from "ColorUtils" /* 5009 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import ColorUtils_mod from "ColorUtils" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;

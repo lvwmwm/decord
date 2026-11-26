@@ -1,12 +1,12 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12294
+// Function ID: 12295
 // Name: Constants
-// Dependencies: [1071, 1254, 2]
+// Dependencies: [1071, 1255, 2]
 // Exports: detectableGamesPayloadCdnUrl, detectableNonGamesPayloadCdnUrl
 
-// Module 12244 (Constants)
+// Module 12294 (Constants)
 import Constants from "Constants" /* 1071 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

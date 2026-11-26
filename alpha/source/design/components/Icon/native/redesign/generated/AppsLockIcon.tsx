@@ -1,14 +1,14 @@
-// Module ID: 7140
-// Function ID: 7141
+// Module ID: 7171
+// Function ID: 7172
 // Name: AppsLockIcon
-// Dependencies: [19, 21, 575, 5698, 7104, 2]
+// Dependencies: [19, 21, 575, 5729, 7135, 2]
 // Exports: AppsLockIcon
 
-// Module 7140 (AppsLockIcon)
+// Module 7171 (AppsLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 7104 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 7135 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

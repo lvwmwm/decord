@@ -1,16 +1,16 @@
-// Module ID: 11874
-// Function ID: 11875
+// Module ID: 11922
+// Function ID: 11923
 // Name: MediaPostSharePromptStore
-// Dependencies: [4916, 502, 4861, 11875, 11, 504, 572, 2]
+// Dependencies: [4947, 502, 4892, 11923, 11, 504, 572, 2]
 
-// Module 11874 (MediaPostSharePromptStore)
+// Module 11922 (MediaPostSharePromptStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 11875 */;
-import GatedChannelStore from "GatedChannelStore" /* 4916 */;
+import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 11923 */;
+import GatedChannelStore from "GatedChannelStore" /* 4947 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;
 
 let set = new Set();

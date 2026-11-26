@@ -1,13 +1,13 @@
-// Module ID: 14695
-// Function ID: 14696
+// Module ID: 14748
+// Function ID: 14749
 // Name: conjurePreviewAddBotPromptConnection
-// Dependencies: [6903, 572, 7642, 2]
+// Dependencies: [6934, 572, 7673, 2]
 // Exports: answerConjurePreviewAddBotPrompt, conjurePreviewBotAdded
 
-// Module 14695 (conjurePreviewAddBotPromptConnection)
+// Module 14748 (conjurePreviewAddBotPromptConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 7642 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 7673 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

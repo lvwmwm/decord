@@ -1,13 +1,13 @@
-// Module ID: 17801
-// Function ID: 17802
+// Module ID: 17858
+// Function ID: 17859
 // Name: useChannelListSpecs
-// Dependencies: [19, 6092, 17802, 1494, 17690, 5618, 1628, 11488, 2]
+// Dependencies: [19, 6123, 17859, 1495, 17747, 5649, 1629, 11536, 2]
 // Exports: default
 
-// Module 17801 (useChannelListSpecs)
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11488 */;
+// Module 17858 (useChannelListSpecs)
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11536 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6092 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6123 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -21,15 +21,15 @@ export default function useChannelListSpecs(banner) {
   let closure_2;
   let height;
   let redesignGuildHeaderHeight;
-  let obj = redesignGuildHeaderHeight(17802);
+  let obj = redesignGuildHeaderHeight(17859);
   redesignGuildHeaderHeight = obj.useRedesignGuildHeaderHeight(banner);
-  height = height(1494)({ ignoreKeyboard: true }).height;
-  const tmp2 = height(17690)();
+  height = height(1495)({ ignoreKeyboard: true }).height;
+  const tmp2 = height(17747)();
   dependencyMap = tmp2;
-  const obj2 = redesignGuildHeaderHeight(5618);
+  const obj2 = redesignGuildHeaderHeight(5649);
   const fontScale = obj2.useFontScale();
   let closure_4 = tmp4;
-  const top = height(1628)().top;
+  const top = height(1629)().top;
   const items = [tmp4, tmp2, height, redesignGuildHeaderHeight, top, fontScale];
   return fontScale.useMemo(() => {
     let num = 0;

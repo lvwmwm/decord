@@ -1,25 +1,25 @@
-// Module ID: 14078
-// Function ID: 14079
+// Module ID: 14130
+// Function ID: 14131
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 8651, 21, 5012, 14075, 8870, 12158, 5188, 1653, 5222, 8655, 8656, 1112, 7216, 1186, 575, 5603, 14079, 9025, 1378, 14080, 7711, 2]
+// Dependencies: [19, 17, 8693, 21, 5043, 14127, 8912, 12208, 5219, 1654, 5253, 8697, 8698, 1112, 7247, 1186, 575, 5634, 14131, 9067, 1379, 14132, 7745, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 14078 (MediaModalOverlayHeader)
+// Module 14130 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5188 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8651 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8656 */;
-import MediaShareActions from "MediaShareActions" /* 8870 */;
-import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 12158 */;
-import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 14075 */;
-import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 14079 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5219 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8693 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8698 */;
+import MediaShareActions from "MediaShareActions" /* 8912 */;
+import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 12208 */;
+import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 14127 */;
+import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 14131 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -29,10 +29,10 @@ let metroRequire;
 let tmp2;
 const intl2 = tmp2(1112);
 const native = tmp2(1186);
-const Text_Text = tmp2(5603);
-const XSmallIcon = tmp2(7216);
-const MediaModalOverlayHeaderWrapper2 = tmp2(8655);
-const ContextMenu = tmp2(9025);
+const Text_Text = tmp2(5634);
+const XSmallIcon = tmp2(7247);
+const MediaModalOverlayHeaderWrapper2 = tmp2(8697);
+const ContextMenu = tmp2(9067);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const SHARE_PREPARING_MODAL_KEY = SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -79,8 +79,8 @@ export function MediaModalOverlayHeader(arg0) {
   const obj3 = NavigationRouteUtils;
   const isModalOpen = obj3.useIsModalOpen(SHARE_PREPARING_MODAL_KEY);
   const items = [closure_9, , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items[1] = timing_timing.withTiming;
   items[2] = isModalOpen;
   let c0;
@@ -104,12 +104,12 @@ export function MediaModalOverlayHeader(arg0) {
   const animatedStyle = useAnimatedStyle(MediaModalOverlayHeaderTsx1);
   const obj4 = { style: items2, children: metroRequire(View2, obj6) };
   const obj5 = { bottom: undefined };
-  const View = tmp6(1653).View;
+  const View = tmp6(1654).View;
   let merged = Object.assign(absoluteFillObject.absoluteFillObject);
   items2 = [obj5, headerLayoutAnimation];
   obj6 = { style: animatedStyle, pointerEvents: str, children: metroImportDefault(MediaModalOverlayHeaderWrapper, obj7) };
   str = "box-none";
-  View2 = tmp6(1653).View;
+  View2 = tmp6(1654).View;
   if (isModalOpen) {
     str = "none";
   }

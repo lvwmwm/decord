@@ -1,17 +1,17 @@
-// Module ID: 7301
-// Function ID: 7302
+// Module ID: 7332
+// Function ID: 7333
 // Name: AuthHeader
-// Dependencies: [19, 1071, 21, 5012, 6791, 575, 1186, 2]
+// Dependencies: [19, 1071, 21, 5043, 6822, 575, 1186, 2]
 // Exports: default
 
-// Module 7301 (AuthHeader)
+// Module 7332 (AuthHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import TextStyles from "TextStyles" /* 6791 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import TextStyles from "TextStyles" /* 6822 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,26 +1,26 @@
-// Module ID: 13980
-// Function ID: 13981
+// Module ID: 14032
+// Function ID: 14033
 // Name: GiftSubscriptionInventoryCard
-// Dependencies: [32, 19, 17, 11879, 1386, 6328, 6329, 1388, 21, 5012, 575, 1112, 13968, 2450, 2910, 504, 5068, 6114, 11880, 5699, 13981, 5603, 7477, 7016, 13982, 2]
+// Dependencies: [32, 19, 17, 11927, 1387, 6359, 6360, 1389, 21, 5043, 575, 1112, 14020, 2451, 2911, 504, 5099, 6145, 11928, 5730, 14033, 5634, 7508, 7047, 14034, 2]
 
-// Module 13980 (GiftSubscriptionInventoryCard)
+// Module 14032 (GiftSubscriptionInventoryCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import _modDef2450 from "module_2450" /* 2450 */;
-import _modDef2910 from "module_2910" /* 2910 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7477 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11880 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13981 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import _modDef2451 from "module_2451" /* 2451 */;
+import _modDef2911 from "module_2911" /* 2911 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7508 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11928 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GiftCodeStore from "GiftCodeStore" /* 11879 */;
-import UserStore from "UserStore" /* 1386 */;
-import EntitlementStore from "EntitlementStore" /* 6328 */;
-import SKUStore from "SKUStore" /* 6329 */;
+import GiftCodeStore from "GiftCodeStore" /* 11927 */;
+import UserStore from "UserStore" /* 1387 */;
+import EntitlementStore from "EntitlementStore" /* 6359 */;
+import SKUStore from "SKUStore" /* 6360 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -80,7 +80,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
   let closure_7;
   const tmp = closure_13();
   let tmp2 = recipientUserId;
-  let obj = recipientUserId(13968);
+  let obj = recipientUserId(14020);
   const giftedSubscriptionRowState = obj.getGiftedSubscriptionRowState(subscription);
   recipientUserId = null;
   if ("pending" !== giftedSubscriptionRowState.kind) {
@@ -96,7 +96,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
     return user;
   });
   ({ initialEntitlementId: c1, initialGiftCode: c2 } = subscription.giftSubscription);
-  const tmp2Result6 = tmp2(5068);
+  const tmp2Result6 = tmp2(5099);
   const userTag = tmp2Result6.useUserTag(stateFromStores, { decoration: "auto" });
   const items1 = [EntitlementStore];
   const tmp2Result7 = tmp2(504);
@@ -153,18 +153,18 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
     if ("active" === kind) {
       const intl2 = tmp2(1112).intl;
       const obj3 = { renewalDate: giftedSubscriptionRowState.renewsAt };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef2450.MR4VnX, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef2451.MR4VnX, obj3);
     } else if ("canceled" === kind) {
       const intl = tmp2(1112).intl;
-      formatToPlainStringResult = intl.string(_modDef2910.bWW0Gp);
+      formatToPlainStringResult = intl.string(_modDef2911.bWW0Gp);
     } else if ("payment_failed" === kind) {
       const intl7 = tmp2(1112).intl;
-      formatToPlainStringResult = intl7.string(_modDef2910.nZIlOV);
+      formatToPlainStringResult = intl7.string(_modDef2911.nZIlOV);
     }
   }
   let tmp21 = !tmp14;
   const obj4 = { style: tmp.card, children: items7 };
-  const Card = tmp2(6114).Card;
+  const Card = tmp2(6145).Card;
   if ("pending" === giftedSubscriptionRowState.kind && null != stateFromStores1 && null != stateFromStores2) {
     tmp21 = !first1;
   }
@@ -194,10 +194,10 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
   const tmp24 = FastImageDefault;
   items4 = [closure_11(tmp24, obj8), , ];
   const obj9 = { style: tmp.details, children: items5 };
-  const Text = tmp2(5603).Text;
+  const Text = tmp2(5634).Text;
   const intl4 = tmp2(1112).intl;
   const stringResult = intl4.string(tmp2(1112).t.lG6a5x);
-  const tmp2Result10 = tmp2(13968);
+  const tmp2Result10 = tmp2(14020);
   const giftSubscriptionInterval = tmp2Result10.getGiftSubscriptionInterval(subscription.planId);
   let formatToPlainString2Result = stringResult;
   if (null != giftSubscriptionInterval) {
@@ -217,15 +217,15 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
   if ("pending" !== giftedSubscriptionRowState.kind) {
     tmp20Result = null;
     if (null != stateFromStores) {
-      const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl6.formatToPlainString(_modDef2910.kVUGot, obj12) };
-      const Text2 = tmp2(5603).Text;
+      const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl6.formatToPlainString(_modDef2911.kVUGot, obj12) };
+      const Text2 = tmp2(5634).Text;
       intl6 = tmp2(1112).intl;
       obj12 = { username: userTag };
       tmp20Result = tmp20(Text2, obj11);
     }
   }
   items5[1] = tmp20Result;
-  items5[2] = closure_11(tmp2(5603).Text, { variant: "body-sm/medium", color: "text-muted", children: formatToPlainStringResult });
+  items5[2] = closure_11(tmp2(5634).Text, { variant: "body-sm/medium", color: "text-muted", children: formatToPlainStringResult });
   items4[1] = closure_12(first, obj9);
   let tmp20Result4 = null;
   if ("pending" === giftedSubscriptionRowState.kind && null != stateFromStores1 && null != stateFromStores2) {
@@ -248,7 +248,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
       let tmp20Result5 = null;
       const obj14 = { style: tmp.body, children: items8 };
       if (isFetching) {
-        tmp20Result5 = tmp20(tmp2(7016).ActivityIndicator, {});
+        tmp20Result5 = tmp20(tmp2(7047).ActivityIndicator, {});
       }
       items8 = [tmp20Result5, ];
       let tmp20Result6 = null;
@@ -258,7 +258,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
           tmp20Result6 = null;
           if (null != stateFromStores2) {
             const obj15 = { giftCode, sku: stateFromStores2, isFirst: true, canRevoke: false, showCopy: true };
-            tmp20Result6 = tmp20(tmp23(13982), obj15);
+            tmp20Result6 = tmp20(tmp23(14034), obj15);
           }
         }
       }

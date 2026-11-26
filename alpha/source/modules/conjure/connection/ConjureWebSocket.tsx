@@ -1,9 +1,9 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14758
+// Function ID: 14759
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 14705 (ConjureWebSocket)
+// Module 14758 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -193,21 +193,30 @@ class ConjureWebSocket {
     const error = new Error("Not connected");
     throw error;
   }
-  sendPublish(destination_id, flag) {
-    if (flag === undefined) {
-      flag = false;
+  sendPublish(destination_id, arg1) {
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
     }
     const self = this;
     if (null != this.socket) {
       const _WebSocket = WebSocket;
       if (self.socket.readyState === WebSocket.OPEN) {
+        let obj4;
         const socket = self.socket;
         const send = socket.send;
         const _JSON = JSON;
-        const obj = { type: "publish", destination_id };
-        const tmp3 = flag ? { app_channels_private: true } : {};
-        const merged = Object.assign(tmp3);
-        send(stringify(obj));
+        const obj2 = { type: "publish", destination_id };
+        const tmp = true === obj.appChannelsPrivate ? { app_channels_private: true } : {};
+        const merged = Object.assign(tmp);
+        if (null != obj.viewMounts) {
+          obj4 = { view_mounts: obj.viewMounts };
+          const obj3 = { view_mounts: obj.viewMounts };
+        } else {
+          obj4 = {};
+        }
+        const merged1 = Object.assign(obj4);
+        send(stringify(obj2));
       }
     }
     const error = new Error("WebSocket not open");

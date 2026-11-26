@@ -1,18 +1,18 @@
-// Module ID: 10067
-// Function ID: 10068
+// Module ID: 10109
+// Function ID: 10110
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 4861, 10005, 2117, 10011, 10009, 5627, 2]
+// Dependencies: [5, 19, 4892, 10047, 2118, 10053, 10051, 5658, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 10067 (getPrimaryAppCommand)
-import Server from "Server" /* 2117 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5627 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 10009 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10011 */;
+// Module 10109 (getPrimaryAppCommand)
+import Server from "Server" /* 2118 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5658 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 10051 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10053 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10005 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10047 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ let obj = function _getPrimaryAppCommand() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {

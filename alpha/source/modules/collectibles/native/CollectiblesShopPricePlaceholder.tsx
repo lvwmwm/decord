@@ -1,19 +1,19 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11263
+// Function ID: 11264
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 5012, 575, 1653, 5222, 2]
+// Dependencies: [19, 21, 5043, 575, 1654, 5253, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 11217 (CollectiblesShopPricePlaceholder)
+// Module 11263 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let set;
 
 let obj2;
@@ -30,20 +30,20 @@ export function CollectiblesShopPricePlaceholder(style) {
   let sharedValue;
   style = style.style;
   const tmp = closure_5();
-  let obj = sharedValue(1653);
+  let obj = sharedValue(1654);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = _mod1653.withRepeat;
-    _mod1653;
+    const withRepeat = _mod1654.withRepeat;
+    _mod1654;
     const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 650 }), -1, true));
   }, items);
   const items1 = [closure_6, sharedValue];
   let c0;
   [tmp5, tmp6] = items1;
-  const obj2 = sharedValue(1653);
+  const obj2 = sharedValue(1654);
   class CollectiblesShopPricePlaceholderTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -56,5 +56,5 @@ export function CollectiblesShopPricePlaceholder(style) {
   CollectiblesShopPricePlaceholderTsx1.__initData = tmp5;
   const animatedStyle = obj2.useAnimatedStyle(CollectiblesShopPricePlaceholderTsx1);
   const items3 = [tmp.skeletonContainer, style, animatedStyle];
-  return jsx(_modDef1653.View, { style: items3 });
+  return jsx(_modDef1654.View, { style: items3 });
 }

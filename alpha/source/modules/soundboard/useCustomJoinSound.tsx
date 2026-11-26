@@ -1,12 +1,12 @@
-// Module ID: 10367
-// Function ID: 10368
+// Module ID: 10412
+// Function ID: 10413
 // Name: useCustomJoinSound
-// Dependencies: [1230, 6894, 504, 2]
+// Dependencies: [1231, 6925, 504, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 10367 (useCustomJoinSound)
-import SoundboardConstants from "SoundboardConstants" /* 6894 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+// Module 10412 (useCustomJoinSound)
+import SoundboardConstants from "SoundboardConstants" /* 6925 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

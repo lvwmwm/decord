@@ -1,27 +1,27 @@
-// Module ID: 13700
-// Function ID: 13701
+// Module ID: 13752
+// Function ID: 13753
 // Name: useEaseInEaseOutLayoutAnimations
-// Dependencies: [32, 19, 5013, 1653, 504, 1378, 2]
+// Dependencies: [32, 19, 5044, 1654, 504, 1379, 2]
 // Exports: default, useTriggeredLayoutTransition
 
-// Module 13700 (useEaseInEaseOutLayoutAnimations)
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import _mod1653 from "module_1653" /* 1653 */;
+// Module 13752 (useEaseInEaseOutLayoutAnimations)
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import _mod1654 from "module_1654" /* 1654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 
-const f104696 = () => useReducedMotion.useReducedMotion;
-const Easing = _mod1653.Easing;
-let closure_5 = Easing.inOut(_mod1653.Easing.ease);
+const f104994 = () => useReducedMotion.useReducedMotion;
+const Easing = _mod1654.Easing;
+let closure_5 = Easing.inOut(_mod1654.Easing.ease);
 const result = size.fileFinishedImporting("modules/animations/native/useEaseInEaseOutLayoutAnimations.tsx");
 
 export default function useEaseInEaseOutLayoutAnimations() {
   let stateFromStores;
   const items = [AccessibilityStore];
   const obj = stateFromStores(504);
-  stateFromStores = obj.useStateFromStores(items, f104696);
+  stateFromStores = obj.useStateFromStores(items, f104994);
   const items1 = [stateFromStores];
   return react.useMemo(() => {
     let easingResult;
@@ -29,18 +29,18 @@ export default function useEaseInEaseOutLayoutAnimations() {
     let easingResult2;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      return { entering: "sa", exiting: "isArray", layout: "isArray" };
+      return { entering: "radii", exiting: "id", layout: "clearTimeout" };
     } else {
-      const ReduceMotion = tmp(1653).ReduceMotion;
+      const ReduceMotion = tmp(1654).ReduceMotion;
       const tmp4 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
       const obj2 = { entering: easingResult.reduceMotion(tmp4), exiting: easingResult1.reduceMotion(tmp4), layout: easingResult2.reduceMotion(tmp4) };
-      const FadeIn = tmp(1653).FadeIn;
+      const FadeIn = tmp(1654).FadeIn;
       const durationResult = FadeIn.duration(300);
       easingResult = durationResult.easing(closure_5);
-      const FadeOut = tmp(1653).FadeOut;
+      const FadeOut = tmp(1654).FadeOut;
       const durationResult1 = FadeOut.duration(300);
       easingResult1 = durationResult1.easing(closure_5);
-      const LinearTransition = tmp(1653).LinearTransition;
+      const LinearTransition = tmp(1654).LinearTransition;
       const durationResult2 = LinearTransition.duration(300);
       easingResult2 = durationResult2.easing(closure_5);
       return obj2;
@@ -54,7 +54,7 @@ export function useTriggeredLayoutTransition() {
   let useReducedMotion;
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
-  stateFromStores = obj.useStateFromStores(items, f104696);
+  stateFromStores = obj.useStateFromStores(items, f104994);
   let obj2 = react;
   const items1 = [stateFromStores];
   const layout = react.useMemo(() => {
@@ -63,18 +63,18 @@ export function useTriggeredLayoutTransition() {
     let easingResult2;
     const obj = PlatformUtils;
     if (obj.isAndroid()) {
-      return { entering: "sa", exiting: "isArray", layout: "isArray" };
+      return { entering: "radii", exiting: "id", layout: "clearTimeout" };
     } else {
-      const ReduceMotion = tmp(1653).ReduceMotion;
+      const ReduceMotion = tmp(1654).ReduceMotion;
       const tmp4 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
       const obj2 = { entering: easingResult.reduceMotion(tmp4), exiting: easingResult1.reduceMotion(tmp4), layout: easingResult2.reduceMotion(tmp4) };
-      const FadeIn = tmp(1653).FadeIn;
+      const FadeIn = tmp(1654).FadeIn;
       const durationResult = FadeIn.duration(300);
       easingResult = durationResult.easing(closure_5);
-      const FadeOut = tmp(1653).FadeOut;
+      const FadeOut = tmp(1654).FadeOut;
       const durationResult1 = FadeOut.duration(300);
       easingResult1 = durationResult1.easing(closure_5);
-      const LinearTransition = tmp(1653).LinearTransition;
+      const LinearTransition = tmp(1654).LinearTransition;
       const durationResult2 = LinearTransition.duration(300);
       easingResult2 = durationResult2.easing(closure_5);
       return obj2;

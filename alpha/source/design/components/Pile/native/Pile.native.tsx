@@ -1,18 +1,18 @@
-// Module ID: 11518
-// Function ID: 11519
+// Module ID: 11566
+// Function ID: 11567
 // Name: Pile
-// Dependencies: [19, 17, 21, 5012, 1254, 12, 9378, 11519, 2]
+// Dependencies: [19, 17, 21, 5043, 1255, 12, 9420, 11567, 2]
 // Exports: Pile
 
-// Module 11518 (Pile)
+// Module 11566 (Pile)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import ClipView from "ClipView" /* 9378 */;
-import PileOverflow from "PileOverflow" /* 11519 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import ClipView from "ClipView" /* 9420 */;
+import PileOverflow from "PileOverflow" /* 11567 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -23,12 +23,13 @@ let closure_6 = createStyles.createStyles({ pile: { flexDirection: "row" } });
 let size = size_mod;
 let result = size.fileFinishedImporting("design/components/Pile/native/Pile.native.tsx");
 
-export function Pile(aria_label) {
+export function Pile(arg0) {
   let Children1;
   let children;
-  ({ shape: require, size } = aria_label);
-  ({ gap: dependencyMap, depthX: react, depthY: View, children } = aria_label);
-  const prop = aria_label["aria-label"];
+  let tmp;
+  let tmp7;
+  ({ "aria-label": tmp, shape: require, size } = arg0);
+  ({ gap: dependencyMap, depthX: react, depthY: View, children } = arg0);
   const Children = react.Children;
   const tmp2 = closure_6();
   const toArrayResult = Children.toArray(children);
@@ -37,18 +38,20 @@ export function Pile(aria_label) {
   const tmp3 = react;
   if (obj.isArray(size)) {
     if (size.length !== length) {
+      let tmp8 = globalThis;
       const _Error = Error;
       const self = this;
       const self2 = this;
       const error = new Error("Pile: size array must have the same number of elements as children");
-      let tmp6 = error;
       throw error;
     }
   }
   let obj2 = {
     style: tmp2.pile,
-    accessible: true,
-    "aria-label": prop,
+    accessible: tmp4,
+    "aria-label": tmp7,
+    accessibilityElementsHidden: !tmp4,
+    importantForAccessibility: "no-hide-descendants",
     children: Children1.map(children, (type, arg1) => {
       let items1;
       let result;
@@ -142,6 +145,12 @@ export function Pile(aria_label) {
       }
     })
   };
+  tmp7 = undefined;
+  const tmp5 = length;
+  let tmp6 = View;
+  if ("" !== tmp) {
+    tmp7 = tmp;
+  }
   Children1 = tmp3.Children;
-  return length(View, obj2);
+  return tmp5(tmp6, obj2);
 }

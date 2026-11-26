@@ -1,18 +1,18 @@
-// Module ID: 14549
-// Function ID: 14550
+// Module ID: 14602
+// Function ID: 14603
 // Name: UserProfileWidgetExpandableItems
-// Dependencies: [32, 19, 17, 21, 5012, 575, 5603, 1112, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5634, 1112, 2]
 // Exports: WidgetViewMoreButton, useExpandableItems
 
-// Module 14549 (UserProfileWidgetExpandableItems)
+// Module 14602 (UserProfileWidgetExpandableItems)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5603 */;
+import Text_Text from "Text/Text" /* 5634 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

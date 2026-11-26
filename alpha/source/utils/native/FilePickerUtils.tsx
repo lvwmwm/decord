@@ -1,15 +1,15 @@
-// Module ID: 10656
-// Function ID: 10657
+// Module ID: 10701
+// Function ID: 10702
 // Name: FilePickerUtils
-// Dependencies: [5, 1071, 10657, 1378, 6016, 1112, 5982, 2]
+// Dependencies: [5, 1071, 10702, 1379, 6047, 1112, 6013, 2]
 // Exports: handleDocumentSelection
 
-// Module 10656 (FilePickerUtils)
+// Module 10701 (FilePickerUtils)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let code, length2, type;
+let closure_3, code, length2, type;
 
 let obj = function _handleDocumentSelection() {
   obj = _asyncToGenerator(async () => {
@@ -25,6 +25,7 @@ let obj = function _handleDocumentSelection() {
       let intl2;
       let intl3;
       let intl4;
+      let iosMode;
       let tmp3;
       function getPickerTypesForExtensions(c1) {
         const items = [];
@@ -67,13 +68,14 @@ let obj = function _handleDocumentSelection() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
+        let c4;
         try {
           let closure_1;
           let flag;
-          let closure_4;
+          let closure_5;
           c6 = 2;
           let tmp4 = c5;
           if (0 === c5) {
@@ -88,14 +90,18 @@ let obj = function _handleDocumentSelection() {
               closure_1 = tmp4;
               flag = undefined;
               length2 = undefined;
+              iosMode = undefined;
               let obj5 = closure_0;
               if (closure_0 === undefined) {
                 obj5 = {};
               }
               flag = obj5.pickMultiple ?? true;
-              ({ extensions: c1, types: c2 } = obj5);
+              ({ extensions: c1, types: c2, iosMode } = obj5);
+              if (iosMode === undefined) {
+                iosMode = "open";
+              }
               type = undefined;
-              closure_4 = undefined;
+              closure_5 = undefined;
               c5 = 1;
               c6 = 1;
               return { value: "Path", done: true };
@@ -110,7 +116,6 @@ let obj = function _handleDocumentSelection() {
             } else {
               let tmp56;
               if (null != length2) {
-                let obj8;
                 if (length2.length > 0) {
                   tmp56 = length2;
                 }
@@ -120,16 +125,18 @@ let obj = function _handleDocumentSelection() {
                 closure_130_0(closure_130_2[2]);
                 const obj7 = closure_130_0(closure_130_2[3]);
                 if (obj7.isIOS()) {
-                  obj8 = { mode: "open" };
-                } else {
-                  obj8 = { mode: "import" };
+                  let obj8;
+                  if ("open" === iosMode) {
+                    obj8 = { mode: "open" };
+                  }
+                  const obj9 = { allowMultiSelection: flag, type };
+                  const merged = Object.assign(obj8);
+                  c5 = 3;
+                  c6 = 1;
+                  const obj10 = { value: pick(obj9), done: false };
+                  return obj10;
                 }
-                const obj9 = { allowMultiSelection: flag, type };
-                const merged = Object.assign(obj8);
-                c5 = 3;
-                c6 = 1;
-                const obj10 = { value: pick(obj9), done: false };
-                return obj10;
+                obj8 = { mode: "import" };
               }
               if (null != length) {
                 if (length.length > 0) {
@@ -139,12 +146,12 @@ let obj = function _handleDocumentSelection() {
             }
           } else if (2 === tmp4) {
             c4 = 0;
-            code = type;
+            code = closure_3;
             const obj4 = closure_130_0(closure_130_2[2]);
             if (obj4.isErrorWithCode(code)) {
               if (code.code === closure_130_0(closure_130_2[2]).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
             }
             const _JSON = JSON;
@@ -160,7 +167,7 @@ let obj = function _handleDocumentSelection() {
             intl4 = closure_130_0(closure_130_2[5]).intl;
             show2(obj12);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -170,8 +177,8 @@ let obj = function _handleDocumentSelection() {
             return { value, done: true };
           } else {
             let tmp6;
-            closure_4 = value;
-            if (closure_4.some((size) => 0 === size.size)) {
+            closure_5 = value;
+            if (closure_5.some((size) => 0 === size.size)) {
               let tmp8 = closure_130_1;
               let tmp9 = closure_130_2;
               let tmp10 = closure_130_1(closure_130_2[4]);
@@ -186,17 +193,17 @@ let obj = function _handleDocumentSelection() {
               show(obj);
             } else {
               const tmp5 = closure_1;
-              tmp6 = closure_4;
+              tmp6 = closure_5;
             }
             c4 = 0;
             c6 = 3;
             return { value: tmp6, done: true };
           }
-        } catch (tmp75) {
-          type = tmp75;
+        } catch (tmp77) {
+          closure_3 = tmp77;
           if (0 === c4) {
             c6 = 3;
-            throw tmp75;
+            throw tmp77;
           } else {
             c5 = 2;
           }

@@ -1,10 +1,10 @@
-// Module ID: 17927
-// Function ID: 17928
+// Module ID: 17984
+// Function ID: 17985
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 17928, 1653, 1706, 7397, 11522, 2]
+// Dependencies: [19, 21, 17985, 1654, 1707, 7428, 11570, 2]
 
-// Module 17927 (ChannelListLegendList)
-import FastList from "FastList" /* 7397 */;
+// Module 17984 (ChannelListLegendList)
+import FastList from "FastList" /* 7428 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -96,7 +96,7 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
       return Math.max(0, Math.min(diff, contentSize + insetEnd - listViewportHeight));
     }
   }, []);
-  let obj2 = require("module_1653");
+  let obj2 = require("module_1654");
   const sharedValue = obj2.useSharedValue(memo);
   const ref2 = listViewportHeight.useRef(tmp3);
   ref2.current = tmp3;
@@ -302,10 +302,10 @@ const memoResult = react.memo(function ChannelListLegendList(listViewportHeight)
   }, items);
   const items1 = [memo1];
   const imperativeHandle = listViewportHeight.useImperativeHandle(ref, () => memo1, items1);
-  const tmp11 = require("module_1653");
+  const tmp11 = require("module_1654");
   const items2 = [getIndex, sharedValue, onScrollWorklet, onScroll, ];
   const useAnimatedScrollHandler = tmp11.useAnimatedScrollHandler;
-  items2[4] = require("module_1706").scheduleOnRN;
+  items2[4] = require("module_1707").scheduleOnRN;
   let c0;
   let c1;
   let c2;

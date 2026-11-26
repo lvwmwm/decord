@@ -1,14 +1,14 @@
-// Module ID: 19946
-// Function ID: 19947
+// Module ID: 20010
+// Function ID: 20011
 // Name: SoundboardCreationUtils
-// Dependencies: [32, 5, 1112, 6016, 10656, 1378, 10657, 19947, 10361, 7513, 5226, 19948, 2119, 19950, 2]
+// Dependencies: [32, 5, 1112, 6047, 10701, 1379, 10702, 20011, 1148, 9494, 10406, 7544, 5257, 20012, 2120, 20014, 2]
 // Exports: createSoundboardSound, showAddSoundboardSoundOptions
 
-// Module 19946 (SoundboardCreationUtils)
+// Module 20010 (SoundboardCreationUtils)
 import intl5 from "intl" /* 1112 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -35,12 +35,13 @@ function pickSoundboardSoundFile() {
 let obj = function _pickSoundboardSoundFile() {
   let extensions;
   obj = _asyncToGenerator(async function(arg0, value) {
+    let decodeURIResult;
     let fileName;
     let formatToPlainString;
     let intl2;
     let items1;
-    let obj12;
-    let obj4;
+    let obj19;
+    let obj7;
     let prop;
     if (c7 === 2) {
       c7 = 3;
@@ -52,11 +53,11 @@ let obj = function _pickSoundboardSoundFile() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c5;
-      let code;
+      let closure_4;
       try {
         let uri;
         let first;
@@ -66,6 +67,7 @@ let obj = function _pickSoundboardSoundFile() {
         let closure_6;
         let closure_7;
         let preview;
+        let CacheDirPath;
         c7 = 2;
         if (0 === c6) {
           if (arg0 === 1) {
@@ -81,23 +83,24 @@ let obj = function _pickSoundboardSoundFile() {
             first = undefined;
             localUri = undefined;
             closure_3 = undefined;
-            code = undefined;
+            closure_4 = undefined;
             str = undefined;
             closure_6 = undefined;
             closure_7 = undefined;
             preview = undefined;
-            const obj5 = { pickMultiple: false, extensions, types: items };
+            CacheDirPath = undefined;
+            const obj4 = { pickMultiple: false, extensions, types: items, iosMode: "import" };
             const handleDocumentSelection = require("FilePickerUtils").handleDocumentSelection;
-            const tmp103 = require("FilePickerUtils");
+            const tmp114 = require("FilePickerUtils");
             items = undefined;
-            const obj17 = require("PlatformUtils");
-            if (!obj17.isIOS()) {
+            const obj20 = require("PlatformUtils");
+            if (!obj20.isIOS()) {
               items = ["audio/*", "application/ogg"];
             }
             c6 = 1;
             c7 = 1;
-            const obj6 = { value: handleDocumentSelection(obj5), done: false };
-            return obj6;
+            const obj5 = { value: handleDocumentSelection(obj4), done: false };
+            return obj5;
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -105,8 +108,8 @@ let obj = function _pickSoundboardSoundFile() {
             throw value;
           } else if (arg0 === 2) {
             c7 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
+            const obj6 = { value, done: true };
+            return obj6;
           } else {
             uri = value;
             first = undefined;
@@ -123,10 +126,10 @@ let obj = function _pickSoundboardSoundFile() {
                 uri = first.uri;
               }
               closure_3 = uri;
-              code = closure_3.lastIndexOf(".");
+              closure_4 = closure_3.lastIndexOf(".");
               str = "";
-              if (code >= 0) {
-                const str2 = closure_3.slice(code + 1);
+              if (closure_4 >= 0) {
+                const str2 = closure_3.slice(closure_4 + 1);
                 str = str2.toLowerCase();
               }
               if (closure_131_6.includes(str)) {
@@ -135,7 +138,7 @@ let obj = function _pickSoundboardSoundFile() {
                 const name = first.name;
                 fileName = name;
                 const keepLocalCopy = closure_131_0(closure_131_2[6]).keepLocalCopy;
-                const tmp79 = closure_131_0(closure_131_2[6]);
+                const tmp90 = closure_131_0(closure_131_2[6]);
                 if (name == null) {
                   const _HermesInternal = HermesInternal;
                   fileName = "sound." + str;
@@ -144,8 +147,8 @@ let obj = function _pickSoundboardSoundFile() {
                 items1 = [obj8];
                 c6 = 4;
                 c7 = 1;
-                const obj10 = { value: keepLocalCopy(obj9), done: false };
-                return obj10;
+                const obj11 = { value: keepLocalCopy(obj9), done: false };
+                return obj11;
               } else {
                 closure_131_7();
                 c7 = 3;
@@ -159,81 +162,113 @@ let obj = function _pickSoundboardSoundFile() {
           closure_131_7(intl4.string(closure_131_0(closure_131_2[2]).t["6w+Dyr"]));
           c7 = 3;
           return { value: null, done: true };
-        } else if (3 === c6) {
-          c5 = 0;
-          code = undefined;
-          if (code != null) {
-            code = code.code;
-          }
-          if ("SOUNDBOARD_AUDIO_TOO_LONG" === code) {
-            const obj11 = { title: intl2.string(closure_131_0(closure_131_2[2]).t["/tGlcj"]), body: formatToPlainString(prop, obj12) };
-            const show = closure_131_1(closure_131_2[3]).show;
-            const tmp36 = closure_131_1(closure_131_2[3]);
-            intl2 = closure_131_0(closure_131_2[2]).intl;
-            const intl3 = closure_131_0(closure_131_2[2]).intl;
-            formatToPlainString = intl3.formatToPlainString;
-            obj12 = { limit: closure_131_0(closure_131_2[7]).MAX_SOUNDBOARD_SOURCE_DURATION_MS / 1000 };
-            prop = closure_131_0(closure_131_2[2]).t["e12/z4"];
-            show(obj11);
-          } else {
-            const intl = closure_131_0(closure_131_2[2]).intl;
-            closure_131_7(intl.string(closure_131_0(closure_131_2[2]).t["6w+Dyr"]));
-          }
-          c7 = 3;
-          return { value: null, done: true };
-        } else if (4 === c6) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 0;
-            c7 = 3;
-            const obj13 = { value, done: true };
-            return obj13;
-          } else {
-            closure_6 = value;
-            closure_7 = closure_131_3(closure_6, 1)[0];
-            if ("success" !== closure_7.status) {
-              const _Error = Error;
-              const self = this;
-              const self2 = this;
-              const error = new Error(closure_7.copyError);
-              throw error;
-            } else {
-              localUri = closure_7.localUri;
-              c5 = 2;
-              c6 = 5;
-              c7 = 1;
-              const obj14 = { value: obj4.loadSoundboardAudioPreview(localUri, closure_131_0(closure_131_2[7]).WAVEFORM_BAR_COUNT), done: false };
-              obj4 = closure_131_0(closure_131_2[7]);
-              return obj14;
-            }
-          }
-        } else if (arg0 === 1) {
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          c7 = 3;
-          const obj15 = { value, done: true };
-          return obj15;
         } else {
-          preview = value;
-          obj = { uri: localUri, isOgg: closure_131_5.has(str), preview };
-          c5 = 0;
-          c7 = 3;
-          const obj16 = { value: obj, done: true };
-          return obj16;
+          let code;
+          if (3 === c6) {
+            code = closure_4;
+            c5 = 3;
+            const obj10 = closure_131_1(closure_131_2[8]);
+            CacheDirPath = obj10.getConstants().CacheDirPath;
+            const _decodeURI = decodeURI;
+            const removeFile = closure_131_0(closure_131_2[9]).removeFile;
+            const tmp57 = closure_131_0(closure_131_2[9]);
+            c6 = 7;
+            c7 = 1;
+            const obj12 = { value: removeFile("cache", decodeURIResult.slice(CacheDirPath.length + 1)), done: false };
+            decodeURIResult = decodeURI(localUri.replace(/^file:\/\//, ""));
+            return obj12;
+          } else if (4 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              const obj13 = { value, done: true };
+              return obj13;
+            } else {
+              closure_6 = value;
+              closure_7 = closure_131_3(closure_6, 1)[0];
+              if ("success" !== closure_7.status) {
+                const _Error = Error;
+                const self = this;
+                const self2 = this;
+                const error = new Error(closure_7.copyError);
+                throw error;
+              } else {
+                localUri = closure_7.localUri;
+                c5 = 2;
+                c6 = 6;
+                c7 = 1;
+                const obj14 = { value: obj7.loadSoundboardAudioPreview(localUri, closure_131_0(closure_131_2[7]).WAVEFORM_BAR_COUNT), done: false };
+                obj7 = closure_131_0(closure_131_2[7]);
+                return obj14;
+              }
+            }
+          } else {
+            if (5 === c6) {
+              c5 = 0;
+            } else if (6 === c6) {
+              if (arg0 === 1) {
+                c7 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 0;
+                c7 = 3;
+                const obj15 = { value, done: true };
+                return obj15;
+              } else {
+                preview = value;
+                const obj16 = { uri: localUri, isOgg: closure_131_5.has(str), preview };
+                c5 = 0;
+                c7 = 3;
+                const obj17 = { value: obj16, done: true };
+                return obj17;
+              }
+            } else if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              c7 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              c5 = 0;
+            }
+            code = undefined;
+            if (code != null) {
+              code = code.code;
+            }
+            if ("SOUNDBOARD_AUDIO_TOO_LONG" === code) {
+              const obj18 = { title: intl2.string(closure_131_0(closure_131_2[2]).t["/tGlcj"]), body: formatToPlainString(prop, obj19) };
+              const show = closure_131_1(closure_131_2[3]).show;
+              const tmp23 = closure_131_1(closure_131_2[3]);
+              intl2 = closure_131_0(closure_131_2[2]).intl;
+              const intl3 = closure_131_0(closure_131_2[2]).intl;
+              formatToPlainString = intl3.formatToPlainString;
+              obj19 = { limit: closure_131_0(closure_131_2[7]).MAX_SOUNDBOARD_SOURCE_DURATION_MS / 1000 };
+              prop = closure_131_0(closure_131_2[2]).t["e12/z4"];
+              show(obj18);
+            } else {
+              const intl = closure_131_0(closure_131_2[2]).intl;
+              closure_131_7(intl.string(closure_131_0(closure_131_2[2]).t["6w+Dyr"]));
+            }
+            c7 = 3;
+            return { value: null, done: true };
+          }
         }
-      } catch (tmp85) {
-        code = tmp85;
+      } catch (tmp96) {
+        closure_4 = tmp96;
         if (0 === c5) {
           c7 = 3;
-          throw tmp85;
-        } else if (1 === tmp87) {
+          throw tmp96;
+        } else if (1 === c5) {
           c6 = 2;
-        } else {
+        } else if (2 === c5) {
           c6 = 3;
+        } else {
+          c6 = 5;
         }
       }
     }
@@ -384,7 +419,7 @@ obj = function _createSoundboardSound() {
         obj = { value: uploadSound(obj10), done: true };
         return obj;
       }
-      const tmp24 = closure_132_0(closure_132_2[8]);
+      const tmp24 = closure_132_0(closure_132_2[10]);
       let closure_6 = tmp24;
       uploadSound = tmp24.uploadSound;
       obj10 = { guildId, name };
@@ -422,7 +457,7 @@ export function showAddSoundboardSoundOptions(guildId) {
     onPress() {
       obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId, analyticsSource: "guild_settings_record" };
-      return obj.openLazy(asyncRequire(19948, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
+      return obj.openLazy(asyncRequire(20012, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
     }
   };
   intl2 = require("intl").intl;
@@ -445,7 +480,7 @@ export function showAddSoundboardSoundOptions(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -477,10 +512,10 @@ export function showAddSoundboardSoundOptions(guildId) {
           localSource = value;
           if (null != localSource) {
             obj = { guildId: closure_129_0, localSource, analyticsSource: "guild_settings_upload" };
-            tmp4(c2[13])(obj);
+            tmp4(c2[15])(obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp16) {
         c3 = 3;

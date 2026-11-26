@@ -1,23 +1,23 @@
-// Module ID: 11632
-// Function ID: 11633
+// Module ID: 11680
+// Function ID: 11681
 // Name: PremiumGiftPurchaseSuccess
-// Dependencies: [19, 17, 6329, 1388, 1071, 21, 5012, 575, 11096, 1500, 5759, 11068, 8648, 5610, 1112, 2173, 7507, 5693, 11272, 5603, 8447, 5713, 2]
+// Dependencies: [19, 17, 6360, 1389, 1071, 21, 5043, 575, 11142, 1501, 5790, 11114, 8690, 5641, 1112, 2174, 7538, 5724, 11318, 5634, 8489, 5744, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 11632 (PremiumGiftPurchaseSuccess)
+// Module 11680 (PremiumGiftPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import ToastUtils from "ToastUtils" /* 5693 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5759 */;
-import ClipboardUtils from "ClipboardUtils" /* 7507 */;
-import showShareActionSheet from "showShareActionSheet" /* 8648 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 11068 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import ToastUtils from "ToastUtils" /* 5724 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5790 */;
+import ClipboardUtils from "ClipboardUtils" /* 7538 */;
+import showShareActionSheet from "showShareActionSheet" /* 8690 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 11114 */;
 import react from "react" /* 19 */;
-import SKUStore from "SKUStore" /* 6329 */;
+import SKUStore from "SKUStore" /* 6360 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -58,10 +58,10 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   let subscriptionPlanId;
   giftCodeRecord = giftCodeRecord.giftCodeRecord;
   let tmp = closure_11();
-  let obj = giftCodeRecord(11096);
+  let obj = giftCodeRecord(11142);
   const nativeGiftContext = obj.useNativeGiftContext();
   ({ giftStyle, premiumType, planInterval } = nativeGiftContext);
-  let obj2 = giftCodeRecord(5759);
+  let obj2 = giftCodeRecord(5790);
   const giftCodeURL = obj2.getGiftCodeURL(giftCodeRecord.code);
   if (null != giftCodeRecord.giftStyle) {
     giftStyle = giftCodeRecord.giftStyle;
@@ -69,16 +69,16 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   if (null != giftCodeRecord.subscriptionPlanId) {
     subscriptionPlanId = giftCodeRecord.subscriptionPlanId;
   } else {
-    const tmp2Result = giftCodeRecord(2173);
+    const tmp2Result = giftCodeRecord(2174);
     subscriptionPlanId = tmp2Result.getPlanIdForPremiumType(premiumType, planInterval);
   }
-  const obj4 = giftCodeURL(2173);
+  const obj4 = giftCodeURL(2174);
   const tierDisplayNameByPlanId = obj4.getTierDisplayNameByPlanId(subscriptionPlanId);
   const items = [giftCodeRecord, giftCodeURL];
-  const obj5 = giftCodeURL(2173);
+  const obj5 = giftCodeURL(2174);
   const intervalType = obj5.getInterval(subscriptionPlanId).intervalType;
   const YEAR = SubscriptionIntervalTypes.YEAR;
-  let obj3 = { children: closure_8(giftCodeURL(11272), { giftStyle }) };
+  let obj3 = { children: closure_8(giftCodeURL(11318), { giftStyle }) };
   const callback = react.useCallback(() => {
     const value = SKUStore.get(giftCodeRecord.skuId);
     const tmp = giftCodeRecord;
@@ -93,11 +93,11 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   }, items);
   const items1 = [closure_8(View, obj3), , , , ];
   const obj6 = { style: tmp.title, variant: "heading-lg/semibold", children: intl.string(giftCodeRecord(1112).t["/s1xR7"]) };
-  const Text = tmp2(5603).Text;
+  const Text = tmp2(5634).Text;
   intl = tmp2(1112).intl;
   items1[1] = closure_8(Text, obj6);
   const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(bUdTqI, { intervalCount: 1, name: tierDisplayNameByPlanId }) };
-  const Text2 = tmp2(5603).Text;
+  const Text2 = tmp2(5634).Text;
   const intl2 = tmp2(1112).intl;
   format = intl2.format;
   const tmp10 = closure_9;
@@ -112,15 +112,15 @@ export default function PremiumGiftSuccessBody(giftCodeRecord) {
   items1[2] = closure_8(Text2, obj7);
   const obj9 = { style: tmp.input, children: items2 };
   const obj10 = { style: tmp.inputLabel, variant: "heading-sm/semibold", children: intl3.string(giftCodeRecord(1112).t["qS+yMo"]) };
-  const Text3 = tmp2(5603).Text;
+  const Text3 = tmp2(5634).Text;
   intl3 = tmp2(1112).intl;
   items2 = [closure_8(Text3, obj10), ];
-  const obj11 = { text: giftCodeURL, icon: tmp6(5713), iconPosition: "end", onPress: callback };
-  const InputButton = tmp2(8447).InputButton;
+  const obj11 = { text: giftCodeURL, icon: tmp6(5744), iconPosition: "end", onPress: callback };
+  const InputButton = tmp2(8489).InputButton;
   items2[1] = closure_8(InputButton, obj11);
   items1[3] = closure_10(tmp12, obj9);
   const obj12 = { style: tmp.disclaimer, variant: "body-xs/normal", children: intl4.string(giftCodeRecord(1112).t.As9eLl) };
-  const Text4 = tmp2(5603).Text;
+  const Text4 = tmp2(5634).Text;
   intl4 = tmp2(1112).intl;
   items1[4] = closure_8(Text4, obj12);
   return closure_10(tmp10, obj8);

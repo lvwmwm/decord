@@ -1,52 +1,53 @@
-// Module ID: 14995
-// Function ID: 14996
+// Module ID: 15045
+// Function ID: 15046
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [17, 12571, 21, 5226, 14996, 2119, 6738, 504, 6113, 1112, 3494, 14066, 12576, 2]
+// Dependencies: [21, 5257, 15046, 2120, 6769, 6144, 1112, 3495, 14118, 12625, 2]
 // Exports: default
 
-// Module 14995 (CheckpointProfileEntrypoint)
-import react_native from "react-native" /* 17 */;
+// Module 15045 (CheckpointProfileEntrypoint)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6738 */;
-import openCheckpoint from "openCheckpoint" /* 12576 */;
-import CheckpointStore from "CheckpointStore" /* 12571 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6769 */;
+import openCheckpoint from "openCheckpoint" /* 12625 */;
 import size from "module_2" /* 2 */;
 
 function CheckpointProfileEntrypointRow(source) {
-  let isFetching;
-  let tmp5Result;
-  source = source.source;
-  let obj = source(6738);
-  const checkpointQAMode = obj.useCheckpointQAMode("CheckpointProfileEntrypoint");
-  let obj2 = source(504);
-  const items = [CheckpointStore];
-  const stateFromStores = obj2.useStateFromStores(items, () => isFetching.isFetching);
-  const TableRow = source(6113).TableRow;
-  const intl = source(1112).intl;
-  const intl2 = source(1112).intl;
-  if (stateFromStores) {
-    tmp5Result = tmp5(ActivityIndicator, {});
-  } else {
-    const obj4 = { IconComponent: source(14066).ExperimentalCheckpointIcon };
-    const Icon = tmp(6113).TableRow.Icon;
-    tmp5Result = tmp5(Icon, obj4);
-  }
   let fn;
+  let intl;
+  let intl2;
+  source = source.source;
+  let obj = source(6769);
+  const checkpointQAMode = obj.useCheckpointQAMode("CheckpointProfileEntrypoint");
+  let obj2 = {
+    label: intl.string(checkpointQAMode(3495)["8hclXY"]),
+    subLabel: intl2.string(checkpointQAMode(3495).BFc4lY),
+    icon: null,
+    onPress() {
+      const obj = openCheckpoint;
+      return obj.openCheckpoint(source);
+    },
+    onLongPress: fn,
+    arrow: true,
+    start: true,
+    end: true
+  };
+  const TableRow = source(6144).TableRow;
+  intl = source(1112).intl;
+  intl2 = source(1112).intl;
+  ({ IconComponent: source(14118).ExperimentalCheckpointIcon });
+  const Icon = source(6144).TableRow.Icon;
+  fn = undefined;
+  const tmp2 = jsx;
   if ("off" !== checkpointQAMode) {
     fn = () => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { mode: checkpointQAMode };
-      obj.openLazy(asyncRequire(14996, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
+      obj.openLazy(asyncRequire(15046, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
     };
   }
-  return <TableRow label={intl.string(checkpointQAMode(3494)["8hclXY"])} subLabel={intl2.string(checkpointQAMode(3494).BFc4lY)} icon={tmp5Result} onPress={function onPress() {
-    const obj = openCheckpoint;
-    return obj.openCheckpoint(source);
-  }} onLongPress={fn} arrow start end />;
+  return tmp2(TableRow, obj2);
 }
-const ActivityIndicator = react_native.ActivityIndicator;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointProfileEntrypoint.tsx");
 

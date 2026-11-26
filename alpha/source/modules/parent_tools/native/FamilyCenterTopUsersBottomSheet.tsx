@@ -1,23 +1,23 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16404
+// Function ID: 16405
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1386, 21, 5012, 8176, 6113, 5068, 1186, 7515, 5603, 1112, 2846, 6109, 2]
+// Dependencies: [19, 1387, 21, 5043, 8218, 6144, 5099, 1186, 7546, 5634, 1112, 2847, 6140, 2]
 // Exports: default
 
-// Module 16353 (FamilyCenterTopUsersBottomSheet)
+// Module 16404 (FamilyCenterTopUsersBottomSheet)
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import _modDef2846 from "module_2846" /* 2846 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import TableRowGroup2 from "TableRowGroup" /* 6109 */;
-import TableRow2 from "TableRow" /* 6113 */;
-import ActionSheet2 from "ActionSheet" /* 7515 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8176 */;
+import _modDef2847 from "module_2847" /* 2847 */;
+import UserUtilsDefault from "UserUtils" /* 5099 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import TableRowGroup2 from "TableRowGroup" /* 6140 */;
+import TableRow2 from "TableRow" /* 6144 */;
+import ActionSheet2 from "ActionSheet" /* 7546 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8218 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,7 +52,7 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2846.BxbvS7) };
+  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2847.BxbvS7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

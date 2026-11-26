@@ -1,12 +1,12 @@
-// Module ID: 19428
-// Function ID: 19429
+// Module ID: 19491
+// Function ID: 19492
 // Name: VoicePanelUserActionCreators
-// Dependencies: [5226, 19429, 2119, 2]
+// Dependencies: [5257, 19492, 2120, 2]
 // Exports: closeVoicePanelUserActionSheet, openVoicePanelUserActionSheet
 
-// Module 19428 (VoicePanelUserActionCreators)
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+// Module 19491 (VoicePanelUserActionCreators)
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelUserActionSheet = "VoicePanelUserActionSheet";
@@ -20,5 +20,5 @@ export function closeVoicePanelUserActionSheet() {
 export function openVoicePanelUserActionSheet(guildId, channelId, userId) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { guildId, channelId, userId };
-  obj.openLazy(asyncRequire(19429, dependencyMap.paths), VoicePanelUserActionSheet, obj2);
+  obj.openLazy(asyncRequire(19492, dependencyMap.paths), VoicePanelUserActionSheet, obj2);
 }

@@ -1,10 +1,10 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9402
+// Function ID: 9403
 // Name: passesTrialOfferGate
 // Dependencies: [2]
 // Exports: default
 
-// Module 9360 (passesTrialOfferGate)
+// Module 9402 (passesTrialOfferGate)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/promotions/utils/passesTrialOfferGate.tsx");

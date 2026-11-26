@@ -1,10 +1,10 @@
-// Module ID: 13869
-// Function ID: 13870
+// Module ID: 13921
+// Function ID: 13922
 // Name: PremiumMarketingFloatingSubscribeExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 13869 (PremiumMarketingFloatingSubscribeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 13921 (PremiumMarketingFloatingSubscribeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-07-nitro-floating-subscribe", kind: "user", defaultConfig: { enabled: false, showAfterLastCard: false }, variations: { 0: { enabled: false, showAfterLastCard: false }, 1: { enabled: true, showAfterLastCard: false }, 2: { enabled: true, showAfterLastCard: true } } };

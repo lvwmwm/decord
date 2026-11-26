@@ -1,30 +1,30 @@
-// Module ID: 10493
-// Function ID: 10494
+// Module ID: 10538
+// Function ID: 10539
 // Name: GestureContainer
-// Dependencies: [19, 17, 9966, 9973, 21, 5012, 575, 1494, 1653, 5272, 1706, 6099, 5222, 1186, 2]
+// Dependencies: [19, 17, 10008, 10015, 21, 5043, 575, 1495, 1654, 5303, 1707, 6130, 5253, 1186, 2]
 // Exports: default
 
-// Module 10493 (GestureContainer)
+// Module 10538 (GestureContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import ChannelCallStore from "ChannelCallStore" /* 9966 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import ChannelCallStore from "ChannelCallStore" /* 10008 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 9973 */;
-import createStyles from "createStyles" /* 5012 */;
+import Constants from "Constants" /* 10015 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp3;
-const ModalActionCreatorsDefault = tmp3(6099);
+const ModalActionCreatorsDefault = tmp3(6130);
 const View = react_native.View;
 const useChannelCallStore = ChannelCallStore.useChannelCallStore;
 ({ PAN_GESTURE_FAIL_OFFSET_Y: hasOwnProperty, SWIPE_TO_CHAT_ACTIVE_OFFSET: metroRequire } = Constants);
@@ -56,7 +56,7 @@ export default function GestureContainer(children) {
   const tmp = closure_8();
   const tmp2 = useChannelCallStore((isGestureEnabled) => isGestureEnabled.isGestureEnabled);
   const height = useWindowDimensionsDefault().height;
-  let obj = _mod1653;
+  let obj = _mod1654;
   const sharedValue = obj.useSharedValue(0);
   const Gesture = LegacyBaseButton.Gesture;
   let items = [closure_9, 200, sharedValue];
@@ -77,7 +77,7 @@ export default function GestureContainer(children) {
   const items2 = [closure_10, sharedValue, 500, , , , ];
   const onEnd = enabledResult.onUpdate(GestureContainerTsx1).onEnd;
   enabledResult.onUpdate(GestureContainerTsx1);
-  items2[3] = _mod1706.scheduleOnRN;
+  items2[3] = _mod1707.scheduleOnRN;
   items2[4] = ModalActionCreatorsDefault;
   items2[5] = timing_timing.withTiming;
   items2[6] = native.DECELERATED_EASING;
@@ -111,9 +111,9 @@ export default function GestureContainer(children) {
   const activeOffsetYResult = onEndResult.activeOffsetY(items4);
   const items6 = [closure_11, , , ];
   const failOffsetXResult = activeOffsetYResult.failOffsetX(items5);
-  const useAnimatedStyle = tmp5(1653).useAnimatedStyle;
-  _mod1653;
-  items6[1] = _mod1653.interpolate;
+  const useAnimatedStyle = tmp5(1654).useAnimatedStyle;
+  _mod1654;
+  items6[1] = _mod1654.interpolate;
   items6[2] = sharedValue;
   items6[3] = height;
   c0 = undefined;
@@ -138,6 +138,6 @@ export default function GestureContainer(children) {
   GestureContainerTsx3.__initData = tmp20;
   const animatedStyle = useAnimatedStyle(GestureContainerTsx3);
   const obj3 = { gesture: failOffsetXResult, children: null };
-  const GestureDetector = tmp5(5272).GestureDetector;
+  const GestureDetector = tmp5(5303).GestureDetector;
   return <View style={tmp.background}>{null}</View>;
 };

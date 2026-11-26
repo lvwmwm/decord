@@ -1,26 +1,26 @@
-// Module ID: 9602
-// Function ID: 9603
+// Module ID: 9644
+// Function ID: 9645
 // Name: NitroScheduleMessageSpotIllustration
-// Dependencies: [19, 21, 9603, 9604, 9605, 7230, 5699, 2]
+// Dependencies: [19, 21, 9645, 9646, 9647, 7261, 5730, 2]
 // Exports: NitroScheduleMessageSpotIllustration
 
-// Module 9602 (NitroScheduleMessageSpotIllustration)
+// Module 9644 (NitroScheduleMessageSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7230 */;
-import _modDef9603 from "module_9603" /* 9603 */;
-import _modDef9604 from "module_9604" /* 9604 */;
-import _modDef9605 from "module_9605" /* 9605 */;
+import react_native from "react-native" /* 7261 */;
+import _modDef9645 from "module_9645" /* 9645 */;
+import _modDef9646 from "module_9646" /* 9646 */;
+import _modDef9647 from "module_9647" /* 9647 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef9603 };
+let obj2 = { uri: _modDef9645 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef9604 };
+let obj3 = { uri: _modDef9646 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef9605 };
-({ uri: _modDef9605 });
+obj[3] = { uri: _modDef9647 };
+({ uri: _modDef9647 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/NitroScheduleMessageSpotIllustration.native.tsx");
 

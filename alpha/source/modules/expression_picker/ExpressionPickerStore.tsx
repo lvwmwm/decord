@@ -1,14 +1,14 @@
-// Module ID: 18170
-// Function ID: 18171
+// Module ID: 18229
+// Function ID: 18230
 // Name: ExpressionPickerStore
-// Dependencies: [1227, 6086, 1257, 5202, 1262, 2]
+// Dependencies: [1227, 6117, 1258, 5233, 1263, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, setShowEmojiPacks, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 18170 (ExpressionPickerStore)
+// Module 18229 (ExpressionPickerStore)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
-import uniqueIdDefault from "uniqueId" /* 6086 */;
-import module_1257_mod from "module_1257" /* 1257 */;
-import combine from "combine" /* 5202 */;
+import uniqueIdDefault from "uniqueId" /* 6117 */;
+import module_1258_mod from "module_1258" /* 1258 */;
+import combine from "combine" /* 5233 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,15 +17,15 @@ let _require, dependencyMap;
 const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewType;
 let obj = { activeView: null, lastActiveView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, searchQuery: "", isSearchSuggestion: false, pickerId: uniqueIdDefault("uid_"), isNitroLockedSectionVisible: false, areOnlyNitroLockedSectionsVisible: false };
 let closure_3 = Object.freeze(obj);
-let module_1257 = module_1257_mod;
-module_1257 = module_1257.createWithEqualityFn();
+let module_1258 = module_1258_mod;
+module_1258 = module_1258.createWithEqualityFn();
 let obj2 = {
   name: "expression-picker-last-active-view",
   partialize(lastActiveView) {
     return { lastActiveView: lastActiveView.lastActiveView };
   }
 };
-const withEqualityFnResult = module_1257(combine.persist(() => closure_3, obj2));
+const withEqualityFnResult = module_1258(combine.persist(() => closure_3, obj2));
 const result = size.fileFinishedImporting("modules/expression_picker/ExpressionPickerStore.tsx");
 
 export function openExpressionPicker(arg0, arg1, arg2, arg3) {
@@ -65,7 +65,7 @@ export function closeExpressionPicker(arg0, arg1) {
   }
   if (!tmp2) {
     if (null !== state.activeView) {
-      const obj = state(1262);
+      const obj = state(1263);
       obj.batchUpdates(() => {
         const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, showSelectedEmojiPackId: "Array", lastActiveView: state1.activeView };
         return state.setState(obj);
@@ -84,7 +84,7 @@ export function toggleMultiExpressionPicker(arg0, arg1) {
     }
     let closure_1 = arg0;
     let closure_2 = arg1;
-    const obj3 = state1(1262);
+    const obj3 = state1(1263);
     obj3.batchUpdates(() => {
       let flag;
       let obj;
@@ -110,7 +110,7 @@ export function toggleMultiExpressionPicker(arg0, arg1) {
       if (state.activeChannelId === arg1) {
         state1 = obj.getState();
         if (null !== state1.activeView) {
-          const obj4 = state1(1262);
+          const obj4 = state1(1263);
           obj4.batchUpdates(() => {
             const obj = { activeView: null, activeViewType: null, activeChannelId: null, showEmojiPacks: false, showSelectedEmojiPackId: "Array", lastActiveView: state1.activeView };
             return state.setState(obj);
@@ -122,7 +122,7 @@ export function toggleMultiExpressionPicker(arg0, arg1) {
     closure_1 = arg0;
     closure_2 = arg1;
     let c3;
-    const obj2 = state1(1262);
+    const obj2 = state1(1263);
     obj2.batchUpdates(() => {
       let flag;
       let obj;
@@ -190,7 +190,7 @@ export function setExpressionPickerView(activeView) {
   _require = activeView;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "analyticsLocations" };
+    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "sa" };
     return withEqualityFnResult.setState(obj);
   });
 }

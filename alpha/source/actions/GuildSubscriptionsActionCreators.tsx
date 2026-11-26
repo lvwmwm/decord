@@ -1,12 +1,12 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12085
+// Function ID: 12086
 // Name: GuildSubscriptionsActionCreators
-// Dependencies: [572, 12038, 2]
+// Dependencies: [572, 12086, 2]
 // Exports: subscribeChannel, subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers
 
-// Module 12037 (GuildSubscriptionsActionCreators)
+// Module 12085 (GuildSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12038 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12086 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("actions/GuildSubscriptionsActionCreators.tsx");

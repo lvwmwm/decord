@@ -1,13 +1,13 @@
-// Module ID: 8926
-// Function ID: 8927
+// Module ID: 8968
+// Function ID: 8969
 // Name: NitroFetchExperiment
-// Dependencies: [502, 1450, 8927, 2]
+// Dependencies: [502, 1451, 8969, 2]
 // Exports: getMessagePrefetchKey, initializeNitroFetchExperiment
 
-// Module 8926 (NitroFetchExperiment)
-import _mod8927 from "module_8927" /* 8927 */;
+// Module 8968 (NitroFetchExperiment)
+import _mod8969 from "module_8969" /* 8969 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 function synchronizeNetworkLayer() {
@@ -15,7 +15,7 @@ function synchronizeNetworkLayer() {
   if (tmp !== closure_7) {
     if (tmp) {
       if (null == closure_8) {
-        closure_8 = _mod8927;
+        closure_8 = _mod8969;
       }
       global.XMLHttpRequest = closure_8.XMLHttpRequest;
     } else {
@@ -44,7 +44,7 @@ export function initializeNitroFetchExperiment() {
     if (tmp7 !== closure_7) {
       if (tmp7) {
         if (null == closure_8) {
-          closure_8 = tmp2(8927);
+          closure_8 = tmp2(8969);
         }
         global.XMLHttpRequest = closure_8.XMLHttpRequest;
       } else {

@@ -1,8 +1,8 @@
-// Module ID: 6619
-// Function ID: 6620
+// Module ID: 6650
+// Function ID: 6651
 // Dependencies: [2]
 
-// Module 6619
+// Module 6650
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/face/cry_baby.png.js");

@@ -1,9 +1,9 @@
-// Module ID: 6139
-// Function ID: 6140
+// Module ID: 6170
+// Function ID: 6171
 // Name: WidgetType
 // Dependencies: [2]
 
-// Module 6139 (WidgetType)
+// Module 6170 (WidgetType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/WidgetType.tsx");

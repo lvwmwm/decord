@@ -1,22 +1,22 @@
-// Module ID: 6762
-// Function ID: 6763
+// Module ID: 6793
+// Function ID: 6794
 // Name: NetStats
-// Dependencies: [5, 17, 5818, 6763, 4883, 1071, 3, 1480, 1479, 6005, 1088, 510, 572, 5195, 6764, 8207, 9, 2]
+// Dependencies: [5, 17, 5849, 6794, 4914, 1071, 3, 1481, 1480, 6036, 1088, 510, 572, 5226, 6795, 8249, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 6762 (NetStats)
+// Module 6793 (NetStats)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import configure from "configure" /* 1480 */;
-import react_nativeDefault from "react-native" /* 5195 */;
-import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 6005 */;
+import configure from "configure" /* 1481 */;
+import react_nativeDefault from "react-native" /* 5226 */;
+import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 6036 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6763 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import NetworkUtils_mod from "utils/NetworkUtils" /* 1479 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6794 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import NetworkUtils_mod from "utils/NetworkUtils" /* 1480 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let c14, c2, c3, c6, c7, closure_1_11, fileOnly, nativeStats, sendMessageOptions
 
 let AppState;
 let closure_4;
-const f89865 = (arg0) => {
+const f90107 = (arg0) => {
   let obj2;
   nativeStats = arg0;
   if (null == closure_1_11) {
@@ -42,7 +42,7 @@ function receiveNetworkInfoformation(result) {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f89865);
+    const networkUsage = getNetworkUsage(f90107);
   }
 }
 function updateNetworkUsage() {
@@ -50,7 +50,7 @@ function updateNetworkUsage() {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f89865);
+    const networkUsage = getNetworkUsage(f90107);
   }
 }
 ({ NativeModules: closure_4, AppState } = react_native);
@@ -149,7 +149,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ class EventTracker {
             const result = Storage.set("previousNetStatsEvents", length);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp23) {
           c3 = 3;
           throw tmp23;
@@ -221,7 +221,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ class EventTracker {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;
@@ -308,7 +308,7 @@ class EventTracker {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

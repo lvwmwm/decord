@@ -1,20 +1,20 @@
-// Module ID: 13415
-// Function ID: 13416
+// Module ID: 13467
+// Function ID: 13468
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 8255, 21, 5012, 575, 7594, 13416, 13426, 13446, 1628, 6348, 13451, 13452, 13484, 6099, 10327, 7167, 1112, 2878, 8962, 7160, 13491, 13493, 13501, 13507, 13517, 13525, 2]
+// Dependencies: [19, 17, 8297, 21, 5043, 575, 7625, 13468, 13478, 13498, 1629, 6379, 13503, 13504, 13536, 6130, 10369, 7198, 1112, 2879, 9004, 7191, 13543, 13545, 13553, 13559, 13569, 13577, 2]
 // Exports: default
 
-// Module 13415 (GuildPowerupsModal)
+// Module 13467 (GuildPowerupsModal)
 import nativeDefault from "native" /* 575 */;
-import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 13452 */;
-import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 13484 */;
-import GuildPowerupsLevelsSectionDefault from "GuildPowerupsLevelsSection" /* 13501 */;
-import GuildPowerupsPerksSectionDefault from "GuildPowerupsPerksSection" /* 13507 */;
+import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 13504 */;
+import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 13536 */;
+import GuildPowerupsLevelsSectionDefault from "GuildPowerupsLevelsSection" /* 13553 */;
+import GuildPowerupsPerksSectionDefault from "GuildPowerupsPerksSection" /* 13559 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8255 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8297 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let type;

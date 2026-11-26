@@ -1,16 +1,16 @@
-// Module ID: 19919
-// Function ID: 19920
+// Module ID: 19983
+// Function ID: 19984
 // Name: ConjureServerAppsSection
-// Dependencies: [5, 19, 21, 12454, 5693, 1112, 4244, 18544, 19917, 11508, 575, 2]
+// Dependencies: [5, 19, 21, 12503, 5724, 1112, 4245, 18607, 19981, 11556, 575, 2]
 // Exports: default
 
-// Module 19919 (ConjureServerAppsSection)
+// Module 19983 (ConjureServerAppsSection)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 11508 */;
-import GuildSettingsModalIntegrationsAppsDefault from "GuildSettingsModalIntegrationsApps" /* 19917 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 11556 */;
+import GuildSettingsModalIntegrationsAppsDefault from "GuildSettingsModalIntegrationsApps" /* 19981 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let obj = function _removeApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -98,7 +98,7 @@ let obj = function _removeApp() {
               presentError(intl.string(closure_132_1(closure_132_2[6]).PJ2Fkn));
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp30) {
           c6 = 3;
@@ -118,7 +118,7 @@ export default function ConjureServerAppsSection(apps) {
   ({ guildId: require, onRemoveIntegration: importDefault } = apps);
   apps = apps.apps;
   const intl = intl2.intl;
-  return <tmp title={intl.string(_modDef4244.EPSYTs)} apps={apps} renderIcon={function renderIcon(application) {
+  return <tmp title={intl.string(_modDef4245.EPSYTs)} apps={apps} renderIcon={function renderIcon(application) {
     ConjureAppSheetIconDefault;
     return <tmp application={arg0} size={24} radius={nativeDefault.radii.xs} />;
   }} onRemove={function onRemove(arg0) {

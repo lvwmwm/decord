@@ -1,17 +1,17 @@
-// Module ID: 16366
-// Function ID: 16367
+// Module ID: 16417
+// Function ID: 16418
 // Name: SpendingLimitDisplay
-// Dependencies: [1230, 8170, 1388, 504, 16275, 6294, 6295, 1112, 2846, 2]
+// Dependencies: [1231, 8212, 1389, 504, 16326, 6325, 6326, 1112, 2847, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 16366 (SpendingLimitDisplay)
+// Module 16417 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import _modDef2846 from "module_2846" /* 2846 */;
-import PriceUtils from "PriceUtils" /* 6294 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 16275 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8170 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import _modDef2847 from "module_2847" /* 2847 */;
+import PriceUtils from "PriceUtils" /* 6325 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 16326 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8212 */;
 import size from "module_2" /* 2 */;
 
 function getSpendingLimitDisplayState(amount, arg1) {
@@ -33,7 +33,7 @@ function getSpendingLimitDisplayState(amount, arg1) {
       return { kind: "spent", monthlyText: formatRateResult };
     } else {
       let obj;
-      let num = tmp6(6295).CurrencyExponents[amount.currency];
+      let num = tmp6(6326).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }
@@ -43,7 +43,7 @@ function getSpendingLimitDisplayState(amount, arg1) {
         const intl = tmp6(1112).intl;
         formatToPlainString = intl.formatToPlainString;
         obj4 = { amount: tmp6Result.formatPrice(diff, currency) };
-        prop = _modDef2846["+Q+bU1"];
+        prop = _modDef2847["+Q+bU1"];
         obj = obj3;
         tmp6Result = PriceUtils;
       } else {

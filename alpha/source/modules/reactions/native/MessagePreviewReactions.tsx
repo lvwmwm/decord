@@ -1,15 +1,15 @@
-// Module ID: 14007
-// Function ID: 14008
+// Module ID: 14059
+// Function ID: 14060
 // Name: MessagePreviewReactions
-// Dependencies: [19, 8260, 8263, 8894, 21, 504, 6348, 6349, 12192, 2]
+// Dependencies: [19, 8302, 8305, 8936, 21, 504, 6379, 6380, 12242, 2]
 // Exports: default
 
-// Module 14007 (MessagePreviewReactions)
+// Module 14059 (MessagePreviewReactions)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8260 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8263 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8894 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8302 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8305 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8936 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -36,14 +36,14 @@ export default function MessagePreviewReactions(emoji) {
     }
     return null != message ? message.reactions : closure_7;
   }, items1);
-  const tmp3 = messageId(6348);
-  const obj2 = { value: tmp3(messageId(6349).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: tmp4Result };
-  const AnalyticsLocationProvider = channelId(6348).AnalyticsLocationProvider;
+  const tmp3 = messageId(6379);
+  const obj2 = { value: tmp3(messageId(6380).MESSAGE_PREVIEW_REACTIONS).analyticsLocations, children: tmp4Result };
+  const AnalyticsLocationProvider = channelId(6379).AnalyticsLocationProvider;
   if (stateFromStores.length > 0) {
     const obj3 = { channelId, messageId, emoji, reactions: stateFromStores };
-    tmp4Result = tmp4(tmp(12192).MessageReactionsContent, obj3);
+    tmp4Result = tmp4(tmp(12242).MessageReactionsContent, obj3);
   } else {
-    tmp4Result = tmp4(tmp(12192).MessageReactionsEmpty, {});
+    tmp4Result = tmp4(tmp(12242).MessageReactionsEmpty, {});
   }
   return jsx(AnalyticsLocationProvider, obj2);
 };

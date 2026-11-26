@@ -1,28 +1,28 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13397
+// Function ID: 13398
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 5013, 1071, 21, 1186, 1653, 5613, 5073, 5222, 1706, 504, 6348, 6349, 13311, 13346, 13348, 9681, 9544, 2]
+// Dependencies: [32, 19, 5044, 1071, 21, 1186, 1654, 5644, 5104, 5253, 1707, 504, 6379, 6380, 13363, 13398, 13400, 9723, 9586, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 13345 (EmojiSuggestionBarUtils)
+// Module 13397 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import native2 from "native" /* 5073 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9544 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import native2 from "native" /* 5104 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9586 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, set, set2, tmp2;
 
 let tmp;
-const _mod1706 = tmp(1706);
-const timing_timing = tmp(5222);
+const _mod1707 = tmp(1707);
+const timing_timing = tmp(5253);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
@@ -102,8 +102,8 @@ export function EmojiEntranceAnimation(index) {
       num = 20 * index;
     }
     set = sharedValue.set;
-    const withDelay = _mod1653.withDelay;
-    _mod1653;
+    const withDelay = _mod1654.withDelay;
+    _mod1654;
     const obj = spring_spring;
     const result = set(withDelay(num, obj.withSpring(1, obj2)));
   }, items);
@@ -133,7 +133,7 @@ export function useSuggestionBarHeight(transitionState, cleanUp, arg2, onOccupie
   let closure_1 = cleanUp;
   dependencyMap = arg2;
   let closure_3 = onOccupiedHeightChange;
-  const obj = require("module_1653");
+  const obj = require("module_1654");
   const sharedValue = obj.useSharedValue(0);
   let items = [transitionState, sharedValue, cleanUp, arg2, onOccupiedHeightChange];
   const effect = sharedValue.useEffect(() => {
@@ -149,7 +149,7 @@ export function useSuggestionBarHeight(transitionState, cleanUp, arg2, onOccupie
       const items = [closure_12, , ];
       const withTiming = timing_timing.withTiming;
       const tmpResult = timing_timing;
-      items[1] = _mod1706.scheduleOnRN;
+      items[1] = _mod1707.scheduleOnRN;
       items[2] = cleanUp;
       let c0;
       let c1;
@@ -208,15 +208,15 @@ export function useEmojiSuggestionBarState(merged, MAX_SUGGESTIONS_LARGE, minUnl
   obj2 = chatInputRef(504);
   const items = [setDataImmediate];
   const stateFromStores = obj2.useStateFromStores(items, () => setDataImmediate.useReducedMotion);
-  let tmp5 = chatInputStateRef(6348);
-  analyticsLocations = tmp5(chatInputStateRef(6349).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp6 = chatInputStateRef(13311)(tmp3, 16);
+  let tmp5 = chatInputStateRef(6379);
+  analyticsLocations = tmp5(chatInputStateRef(6380).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp6 = chatInputStateRef(13363)(tmp3, 16);
   setData = tmp6.setData;
   setDataImmediate = tmp6.setDataImmediate;
   const items1 = [setData];
   const imperativeHandle = setData.useImperativeHandle(ref, () => ({ setData }), items1);
   let obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount: MAX_SUGGESTIONS_LARGE, minUnlockedEmojis };
-  const tmp8 = chatInputStateRef(13346);
+  const tmp8 = chatInputStateRef(13398);
   if (focused) {
     focused = !suppressed;
   }

@@ -1,17 +1,17 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9821
+// Function ID: 9822
 // Name: PremiumPerkGates
-// Dependencies: [1388, 8087, 5767, 9780, 1399, 2108, 1392, 2]
+// Dependencies: [1389, 8129, 5798, 9822, 1400, 2109, 1393, 2]
 // Exports: canEditDiscriminator, canInstallPremiumApplications, canRedeemPremiumPerks, canStreamQuality, canUploadLargeFiles, canUseAnimatedAvatar, canUseAnimatedEmojis, canUseBadges, canUseClientThemes, canUseCollectibles, canUseCustomBackgrounds, canUseCustomCallSounds, canUseCustomStickersEverywhere, canUseEmojisEverywhere, canUseHighVideoUploadQuality, canUseIncreasedGuildCap, canUseIncreasedMessageLength, canUseMonthlyOrbs, canUseMoreQuestOrbs, canUsePremiumAppIcons, canUsePremiumGuildMemberProfile, canUsePremiumProfileCustomization, canUseQuestOrbMultiplier, canUseShopDiscounts, canUseSoundboardEverywhere, canUseTenureBadge, getMaxFileSizeForPremiumType, hasBoostDiscount, hasFreeBoosts
 
-// Module 9779 (PremiumPerkGates)
-import PerksStateUtils from "PerksStateUtils" /* 1392 */;
-import user2 from "user" /* 1399 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
-import FileSizeUtils from "FileSizeUtils" /* 5767 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8087 */;
-import ProductCatalog from "ProductCatalog" /* 9780 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+// Module 9821 (PremiumPerkGates)
+import PerksStateUtils from "PerksStateUtils" /* 1393 */;
+import user2 from "user" /* 1400 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2109 */;
+import FileSizeUtils from "FileSizeUtils" /* 5798 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8129 */;
+import ProductCatalog from "ProductCatalog" /* 9822 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -101,9 +101,9 @@ export function canUsePremiumAppIcons(currentUser) {
   const obj = ProductCatalog;
   return obj.canUserUse(user2.Perk.APP_ICONS, currentUser);
 }
-export function canUsePremiumGuildMemberProfile(currentUser) {
+export function canUsePremiumGuildMemberProfile(user) {
   const obj = ProductCatalog;
-  return obj.canUserUse(user2.Perk.PREMIUM_GUILD_MEMBER_PROFILE, currentUser);
+  return obj.canUserUse(user2.Perk.PREMIUM_GUILD_MEMBER_PROFILE, user);
 }
 export function canUseClientThemes(currentUser) {
   const obj = ProductCatalog;
@@ -128,7 +128,7 @@ export function canStreamQuality(MID, currentUser) {
     }
     if (isPremiumAtLeastResult) {
       const tmp5Result = ProductCatalog;
-      isPremiumAtLeastResult = tmp5Result.canUserUse(tmp5(1399).Perk.STREAM_HIGH_QUALITY, currentUser);
+      isPremiumAtLeastResult = tmp5Result.canUserUse(tmp5(1400).Perk.STREAM_HIGH_QUALITY, currentUser);
     }
     isPremiumAtLeast2Result = isPremiumAtLeastResult;
   } else {
@@ -148,7 +148,7 @@ export function canStreamQuality(MID, currentUser) {
     }
     if (isPremiumAtLeast2Result) {
       const tmp13Result = ProductCatalog;
-      isPremiumAtLeast2Result = tmp13Result.canUserUse(tmp13(1399).Perk.STREAM_MID_QUALITY, currentUser);
+      isPremiumAtLeast2Result = tmp13Result.canUserUse(tmp13(1400).Perk.STREAM_MID_QUALITY, currentUser);
     }
   }
   return isPremiumAtLeast2Result;
@@ -197,10 +197,10 @@ export function canUseShopDiscounts(currentUser) {
   if (currentUser != null) {
     perks = currentUser.perks;
   }
-  let hasPerkResult = hasPerk(perks, tmp(1399).Perk.SHOP_DISCOUNTS);
+  let hasPerkResult = hasPerk(perks, tmp(1400).Perk.SHOP_DISCOUNTS);
   if (!hasPerkResult) {
     const tmpResult = ProductCatalog;
-    hasPerkResult = tmpResult.canUserUse(tmp(1399).Perk.PREMIUM_COLLECTIBLES, currentUser);
+    hasPerkResult = tmpResult.canUserUse(tmp(1400).Perk.PREMIUM_COLLECTIBLES, currentUser);
   }
   return hasPerkResult;
 }
@@ -211,7 +211,7 @@ export function canUseMoreQuestOrbs(perks) {
   if (perks != null) {
     perks = perks.perks;
   }
-  let hasPerkResult = hasPerk(perks, tmp(1399).Perk.MORE_QUEST_ORBS);
+  let hasPerkResult = hasPerk(perks, tmp(1400).Perk.MORE_QUEST_ORBS);
   if (!hasPerkResult) {
     let isPremiumExactlyResult = null != perks && !perks.isFractionalPremiumWithNoStandardSub();
     if (isPremiumExactlyResult) {

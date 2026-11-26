@@ -1,10 +1,10 @@
-// Module ID: 11082
-// Function ID: 11083
+// Module ID: 11128
+// Function ID: 11129
 // Name: StorefrontCollectiblesTypes
-// Dependencies: [2, 11083]
+// Dependencies: [2, 11129]
 
-// Module 11082 (StorefrontCollectiblesTypes)
-import CollectiblesPromotionIcon from "CollectiblesPromotionIcon" /* 11083 */;
+// Module 11128 (StorefrontCollectiblesTypes)
+import CollectiblesPromotionIcon from "CollectiblesPromotionIcon" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/storefront/collectibles/StorefrontCollectiblesTypes.tsx");

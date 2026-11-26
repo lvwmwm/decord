@@ -1,17 +1,17 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11793
+// Function ID: 11794
 // Name: useIsSelectedResourceChannel
-// Dependencies: [6921, 4861, 4915, 1071, 4868, 563, 1404, 11746, 7549, 2]
+// Dependencies: [6952, 4892, 4946, 1071, 4899, 563, 1405, 11794, 7580, 2]
 // Exports: default
 
-// Module 11745 (useIsSelectedResourceChannel)
+// Module 11793 (useIsSelectedResourceChannel)
 import Constants from "Constants" /* 1071 */;
-import FlagUtils from "FlagUtils" /* 1404 */;
-import ChannelConstants from "ChannelConstants" /* 4868 */;
-import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 11746 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6921 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import ChannelConstants from "ChannelConstants" /* 4899 */;
+import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 11794 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6952 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

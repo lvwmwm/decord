@@ -1,16 +1,16 @@
-// Module ID: 9400
-// Function ID: 9401
+// Module ID: 9442
+// Function ID: 9443
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 6329, 1071, 3, 572, 1284, 5761, 9271, 1241, 2]
+// Dependencies: [5, 6360, 1071, 3, 572, 1285, 5792, 9313, 1242, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9400 (VirtualCurrencyActionCreators)
+// Module 9442 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6329 */;
+import SKUStore from "SKUStore" /* 6360 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, checkout_session_id, closure_2;
@@ -104,7 +104,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -205,7 +205,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               tmp61(billingError);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

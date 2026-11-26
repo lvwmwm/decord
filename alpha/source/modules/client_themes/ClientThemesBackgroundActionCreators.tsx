@@ -1,10 +1,10 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16613
+// Function ID: 16614
 // Name: ClientThemesBackgroundActionCreators
 // Dependencies: [572, 2]
 // Exports: resetBackgroundGradientPreset, resetPreviewClientTheme, updateBackgroundGradientPreset, updateMobilePendingThemeIndex
 
-// Module 16562 (ClientThemesBackgroundActionCreators)
+// Module 16613 (ClientThemesBackgroundActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

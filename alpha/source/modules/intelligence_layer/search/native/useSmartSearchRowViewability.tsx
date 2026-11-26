@@ -1,15 +1,15 @@
-// Module ID: 18934
-// Function ID: 18935
+// Module ID: 18997
+// Function ID: 18998
 // Name: useSmartSearchRowViewability
-// Dependencies: [19, 2118, 5188, 13354, 1501, 5191, 13264, 13262, 504, 1091, 2]
+// Dependencies: [19, 2119, 5219, 13406, 1502, 5222, 13316, 13314, 504, 1091, 2]
 // Exports: useSmartSearchRowViewability
 
-// Module 18934 (useSmartSearchRowViewability)
-import useChatLayoutDefault from "useChatLayout" /* 5191 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13262 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13264 */;
+// Module 18997 (useSmartSearchRowViewability)
+import useChatLayoutDefault from "useChatLayout" /* 5222 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13314 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13316 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 2118 */;
+import AppStateStore from "AppStateStore" /* 2119 */;
 import size from "module_2" /* 2 */;
 
 let state;
@@ -18,18 +18,18 @@ let result = size.fileFinishedImporting("modules/intelligence_layer/search/nativ
 
 export function useSmartSearchRowViewability() {
   let stateFromStores;
-  let obj = stateFromStores(5188);
+  let obj = stateFromStores(5219);
   const currentNavigationRouteName = obj.useCurrentNavigationRouteName();
-  const context = react.useContext(stateFromStores(13354).SwipeForMemberListContext);
-  const obj3 = stateFromStores(1501);
+  const context = react.useContext(stateFromStores(13406).SwipeForMemberListContext);
+  const obj3 = stateFromStores(1502);
   const isFocused = obj3.useIsFocused();
   let isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
-  const obj4 = stateFromStores(5188);
+  const obj4 = stateFromStores(5219);
   let tmp6 = null != obj4.coerceChannelRoute({ name: currentNavigationRouteName });
   if (!tmp6) {
     if (isChatLockedOpen) {
       const obj5 = { name: currentNavigationRouteName };
-      const tmpResult = stateFromStores(5188);
+      const tmpResult = stateFromStores(5219);
       isChatLockedOpen = null != tmpResult.coerceGuildsRoute(obj5);
     }
     tmp6 = isChatLockedOpen;

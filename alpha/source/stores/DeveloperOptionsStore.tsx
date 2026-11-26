@@ -1,17 +1,17 @@
-// Module ID: 1360
-// Function ID: 1361
+// Module ID: 1361
+// Function ID: 1362
 // Name: DeveloperOptionsStore
-// Dependencies: [1071, 559, 1088, 1284, 1097, 1361, 510, 1241, 504, 572, 2]
+// Dependencies: [1071, 559, 1088, 1285, 1097, 1362, 510, 1242, 504, 572, 2]
 
-// Module 1360 (DeveloperOptionsStore)
+// Module 1361 (DeveloperOptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import TokenManagerAll from "TokenManager" /* 1097 */;
-import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 

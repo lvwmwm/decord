@@ -1,18 +1,18 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 15006
+// Function ID: 15007
 // Name: UserProfileApplicationWidgetPreview
-// Dependencies: [32, 19, 17, 502, 21, 575, 5012, 504, 14610, 14597, 14556, 14558, 14602, 14605, 5699, 2]
+// Dependencies: [32, 19, 17, 502, 21, 575, 5043, 504, 14663, 14650, 14609, 14611, 14655, 14658, 5730, 2]
 // Exports: default
 
-// Module 14956 (UserProfileApplicationWidgetPreview)
+// Module 15006 (UserProfileApplicationWidgetPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 14610 */;
+import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 14663 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -101,7 +101,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
     layout = tmp13.layout;
   }
   const tmp15 = layout === require("ApplicationWidgetLayoutName").ApplicationWidgetLayoutName.ADD_WIDGET_PREVIEW_HERO;
-  const tmp8Result = require("module_14558");
+  const tmp8Result = require("module_14611");
   const result = tmp8Result.bindResolveFieldValue(resolutionContext);
   if (tmp15) {
     let hero_image;
@@ -116,7 +116,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
   if (contained_image != null) {
     image = contained_image.fields.image;
   }
-  const items1 = [require("module_14558").ResolvedValueType.MEDIA];
+  const items1 = [require("module_14611").ResolvedValueType.MEDIA];
   const resultResult = result(image, items1);
   const obj2 = { style: tmp.preview, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: items6 };
   const obj3 = { style: tmp.contentColumn, children: closure_8(View, obj4) };
@@ -154,7 +154,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
     }
     if (tmp23Result) {
       const obj16 = { style: tmp.imageSkeleton };
-      tmp23Result = tmp23(tmp8(14602).ImageSkeleton, obj16);
+      tmp23Result = tmp23(tmp8(14655).ImageSkeleton, obj16);
     }
     const items7 = [tmp23Result, ];
     let tmp23Result5 = null != resultResult;
@@ -162,7 +162,7 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
       const obj17 = { style: tmp.heroImage, onLayout: callback, children: tmp23Result4 };
       if (tmp23Result4) {
         size = { media: resultResult.media, width: tmp3, height: tmp5, fillContainer: true };
-        tmp23Result4 = tmp23(tmp11(14605), size);
+        tmp23Result4 = tmp23(tmp11(14658), size);
       }
       tmp23Result5 = tmp23(tmp22, obj17);
     }
@@ -174,10 +174,10 @@ export default function UserProfileApplicationWidgetPreview(applicationId) {
     if (null != resultResult) {
       const obj20 = { source: obj21, style: tmp.containedImage, resizeMode: "contain" };
       obj21 = { uri: resultResult.media.url };
-      tmp23Result6 = tmp23(tmp11(5699), obj20);
+      tmp23Result6 = tmp23(tmp11(5730), obj20);
     } else {
       const obj22 = { style: tmp.containedImageSkeleton };
-      tmp23Result6 = tmp23(tmp8(14602).ImageSkeleton, obj22);
+      tmp23Result6 = tmp23(tmp8(14655).ImageSkeleton, obj22);
     }
     tmp23Result7 = tmp23(tmp22, obj19);
   }

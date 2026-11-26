@@ -1,19 +1,19 @@
-// Module ID: 13856
-// Function ID: 13857
+// Module ID: 13908
+// Function ID: 13909
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 4858, 21, 5012, 575, 1628, 5226, 5240, 6084, 13857, 5603, 1112, 2484, 5610, 2]
+// Dependencies: [19, 17, 4889, 21, 5043, 575, 1629, 5257, 5271, 6115, 13909, 5634, 1112, 2485, 5641, 2]
 // Exports: default
 
-// Module 13856 (GiftCardMobileConsumptionActionSheet)
+// Module 13908 (GiftCardMobileConsumptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import _modDef2484 from "module_2484" /* 2484 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import _modDef2485 from "module_2485" /* 2485 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -84,26 +84,26 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   };
   obj2 = { style: items2, children: closure_7(Stack, obj3) };
   items2 = [tmp.container, { paddingBottom: bottom }];
-  const BottomSheet = markAsDismissed(5240).BottomSheet;
+  const BottomSheet = markAsDismissed(5271).BottomSheet;
   obj3 = { spacing: nativeDefault.space.PX_16, children: items3 };
-  Stack = markAsDismissed(6084).Stack;
+  Stack = markAsDismissed(6115).Stack;
   items3 = [, , ];
-  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(13857).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
+  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(13909).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
   items3[0] = closure_6(View, obj4);
-  const obj5 = { variant: "body-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2484.V3DI1E) };
-  const Text = markAsDismissed(5603).Text;
+  const obj5 = { variant: "body-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2485.V3DI1E) };
+  const Text = markAsDismissed(5634).Text;
   intl = markAsDismissed(1112).intl;
   items3[1] = closure_6(Text, obj5);
   const obj6 = {
     size: "lg",
     variant: "secondary",
     grow: true,
-    text: intl2.string(_modDef2484.YZePWx),
+    text: intl2.string(_modDef2485.YZePWx),
     onPress() {
       return closure_3(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = markAsDismissed(5610).Button;
+  const Button = markAsDismissed(5641).Button;
   intl2 = markAsDismissed(1112).intl;
   items3[2] = closure_6(Button, obj6);
   return closure_6(BottomSheet, obj);

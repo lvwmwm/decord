@@ -1,19 +1,19 @@
-// Module ID: 11176
-// Function ID: 11177
+// Module ID: 11222
+// Function ID: 11223
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1257, 4927, 11166, 6291, 2]
+// Dependencies: [1258, 4958, 11212, 6322, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 11176 (CollectiblesShopVariantsUIStore)
-import _slicedToArray from "_slicedToArray" /* 4927 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6291 */;
-import module_1257 from "module_1257" /* 1257 */;
+// Module 11222 (CollectiblesShopVariantsUIStore)
+import _slicedToArray from "_slicedToArray" /* 4958 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6322 */;
+import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, map;
 
-const state = module_1257.createWithEqualityFn(() => {
+const state = module_1258.createWithEqualityFn(() => {
   const obj = { selectionStates: new Map() };
   new Map();
   return obj;

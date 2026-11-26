@@ -1,16 +1,16 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7181
+// Function ID: 7182
 // Name: TableCheckboxRow
-// Dependencies: [19, 21, 1653, 5074, 6113, 6130, 7151, 2]
+// Dependencies: [19, 21, 1654, 5105, 6144, 6161, 7182, 2]
 // Exports: TableCheckboxRow
 
-// Module 7150 (TableCheckboxRow)
+// Module 7181 (TableCheckboxRow)
 import Fragment from "Fragment" /* 21 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import react_native from "react-native" /* 5074 */;
-import TableRow2 from "TableRow" /* 6113 */;
-import TableRowBadge from "TableRowBadge" /* 6130 */;
-import FormCheckbox from "FormCheckbox" /* 7151 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import react_native from "react-native" /* 5105 */;
+import TableRow2 from "TableRow" /* 6144 */;
+import TableRowBadge from "TableRowBadge" /* 6161 */;
+import FormCheckbox from "FormCheckbox" /* 7182 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -30,9 +30,10 @@ export function TableCheckboxRow(checked) {
     disabled = false;
   }
   const onPress = checked.onPress;
+  let accessibilityLabel = checked.accessibilityLabel;
   const accessibilityHint = checked.accessibilityHint;
-  const merged = Object.assign(checked, Object.assign({ checked: 0, label: 0, subLabel: 0, badge: 0, disabled: 0, onPress: 0, accessibilityHint: 0 }));
-  const obj = _mod1653;
+  const merged = Object.assign(checked, Object.assign({ checked: 0, label: 0, subLabel: 0, badge: 0, disabled: 0, onPress: 0, accessibilityLabel: 0, accessibilityHint: 0 }));
+  const obj = _mod1654;
   const sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const items1 = [onPress, sharedValue, checked];
@@ -48,6 +49,9 @@ export function TableCheckboxRow(checked) {
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const TableRow = TableRow2.TableRow;
   const merged1 = Object.assign(merged);
-  const obj4 = TableRowBadge;
-  return <TableRow arrow={false} label={label} subLabel={subLabel} badge={badge} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={obj4.getTableRowAccessibilityLabel(label, subLabel, badge)} accessibilityHint={accessibilityHint} onPressIn={callback} onPress={callback1} trailing={jsx(FormCheckbox.FormCheckbox, { checked })} />;
+  if (accessibilityLabel == null) {
+    const tmp2Result = TableRowBadge;
+    accessibilityLabel = tmp2Result.getTableRowAccessibilityLabel(label, subLabel, badge);
+  }
+  return <TableRow arrow={false} label={label} subLabel={subLabel} badge={badge} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={accessibilityLabel} accessibilityHint={accessibilityHint} onPressIn={callback} onPress={callback1} trailing={jsx(FormCheckbox.FormCheckbox, { checked })} />;
 }

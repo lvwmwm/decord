@@ -1,31 +1,235 @@
 // Module ID: 1759
 // Function ID: 1760
-// Dependencies: [1760, 1761, 1767, 1768, 1769]
+// Dependencies: [32, 1760, 1667, 1772]
+// Exports: normalizeAnimationKeyframes, processKeyframes
 
 // Module 1759
-import deepEqual from "deepEqual" /* 1760 */;
-import smellsLikeTimingFunction from "smellsLikeTimingFunction" /* 1761 */;
-import splitByComma from "splitByComma" /* 1767 */;
-import _slicedToArray from "_slicedToArray" /* 1768 */;
-import filterCSSAndStyleProperties from "filterCSSAndStyleProperties" /* 1769 */;
+import _mod1667 from "module_1667" /* 1667 */;
+import normalizeDelay from "normalizeDelay" /* 1772 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-for (const key10013 in deepEqual) {
-  exports[key10013] = deepEqual[key10013];
-  continue;
+const require = globalThis.__r;
+let _require, obj;
+
+const f82390 = (offset, offset2) => offset.offset - offset2.offset;
+const f82391 = (arr, item) => {
+  if (arr[arr.length - 1]) {
+    if (arr[arr.length - 1].offset === item.offset) {
+      const props = {};
+      const merged = Object.assign(tmp.props);
+      const merged1 = Object.assign(item.props);
+      arr[arr.length - 1].props = props;
+      arr[arr.length - 1].timingFunction = item.timingFunction;
+    }
+    return arr;
+  }
+  arr.push(item);
+};
+function normalizeKeyframeSelector(str) {
+  let mapped;
+  if (typeof str === "string") {
+    const parts = str.split(",");
+    mapped = parts.map((item) => item.trim());
+  } else {
+    mapped = [str];
+  }
+  return mapped.map(function(item) {
+    obj = require("module_1760");
+    const offsetOfResult = obj.offsetOf(item);
+    if (null === offsetOfResult) {
+      const _Error2 = Error;
+      const _HermesInternal2 = HermesInternal;
+      const self3 = this;
+      const self4 = this;
+      const error = new Error("[Reanimated] " + closure_1_3.invalidOffsetType(item));
+      throw error;
+    } else {
+      if (offsetOfResult >= 0) {
+        if (offsetOfResult <= 1) {
+          return offsetOfResult;
+        }
+      }
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error1 = new Error("[Reanimated] " + closure_1_3.invalidOffsetRange(item));
+      throw error1;
+    }
+  });
 }
-for (const key10017 in smellsLikeTimingFunction) {
-  exports[key10017] = smellsLikeTimingFunction[key10017];
-  continue;
+function processProps(offset, props, arg2, has) {
+  let tmp6;
+  let tmp7;
+  const entries = Object.entries(props);
+  const tmp2 = entries[Symbol.iterator]();
+  while (tmp2 !== undefined) {
+    let tmp5 = _slicedToArray(tmp3, 2);
+    [tmp6, tmp7] = tmp5;
+    let tmp8 = tmp7;
+    obj = _mod1667;
+    if (obj.isDefined(tmp7)) {
+      if (typeof tmp8 === "object") {
+        if (has.has(tmp6)) {
+          let tmp18 = arg2[tmp6];
+          let tmp15 = processProps;
+          let tmp16 = tmp7;
+          if (tmp18 == null) {
+            let _Array = Array;
+            let tmp20 = Array.isArray(tmp8) ? [] : {};
+            arg2[tmp6] = tmp20;
+            tmp18 = tmp20;
+          }
+          let tmp15Result = tmp15(offset, tmp16, tmp18, has);
+        }
+      }
+      let arr = arg2[tmp6];
+      if (arr == null) {
+        let items = [];
+        arg2[tmp6] = items;
+        arr = items;
+      }
+      let obj2 = { offset, value: tmp8 };
+      let arr2 = arr.push(obj2);
+    }
+    continue;
+  }
 }
-for (const key10021 in splitByComma) {
-  exports[key10021] = splitByComma[key10021];
-  continue;
+const ERROR_MESSAGES = {
+  invalidOffsetType(item) {
+    return "Invalid keyframe selector \"" + item + "\". Only numbers, percentages, \"from\", and \"to\" are supported.";
+  },
+  invalidOffsetRange(item) {
+    return "Invalid keyframe selector \"" + item + "\". Expected a number between 0 and 1 or a percentage between 0% and 100%.";
+  }
+};
+
+export { ERROR_MESSAGES };
+export { normalizeKeyframeSelector };
+export function processKeyframes(arg0, arg1) {
+  let closure_0 = arg1;
+  const entries = Object.entries(arg0);
+  const flatMapResult = entries.flatMap((item) => {
+    let nextResult;
+    let nextResult1;
+    let tmp6;
+    const iter = item[Symbol.iterator]();
+    let tmp2 = iter === undefined;
+    if (!tmp2) {
+      nextResult = iter.next();
+    }
+    let tmp3 = tmp2;
+    if (tmp3) {
+      let mapped;
+      tmp6 = tmp3;
+      let tmp8 = tmp3;
+      const animationTimingFunction = nextResult1.animationTimingFunction;
+      obj = {};
+      let merged = Object.assign(nextResult1, Object.assign({ animationTimingFunction: 0 }));
+      if (!tmp8) {
+        iter.return();
+      }
+      let c1 = propsBuilder.build(merged);
+      const buildResult = propsBuilder.build(merged);
+      if (c1) {
+        const arr2 = normalizeKeyframeSelector(nextResult);
+        mapped = arr2.map((item) => {
+          let tmp2 = animationTimingFunction;
+          obj = { offset: item, props };
+          if (tmp2) {
+            tmp2 = { timingFunction: tmp };
+            const obj2 = { timingFunction: tmp };
+          }
+          const merged = Object.assign(tmp2);
+          return obj;
+        });
+      } else {
+        mapped = [];
+      }
+      return mapped;
+    } else {
+      tmp6 = tmp5;
+      if (!tmp6) {
+        nextResult1 = iter.next();
+        tmp3 = tmp5;
+      }
+    }
+    nextResult1 = {};
+    tmp8 = tmp6;
+  });
+  const sorted = flatMapResult.sort(f82390);
+  return sorted.reduce(f82391, []);
 }
-for (const key10025 in _slicedToArray) {
-  exports[key10025] = _slicedToArray[key10025];
-  continue;
-}
-for (const key10029 in filterCSSAndStyleProperties) {
-  exports[key10029] = filterCSSAndStyleProperties[key10029];
-  continue;
+export function normalizeAnimationKeyframes(cssRules, compoundComponentName) {
+  let closure_0;
+  let obj3;
+  obj = require("module_1667");
+  const propsBuilder = obj.getPropsBuilder(compoundComponentName);
+  let obj2 = require("module_1667");
+  _require = obj2.getSeparatelyInterpolatedNestedProperties(compoundComponentName);
+  obj3 = {};
+  const obj4 = {};
+  const entries = Object.entries(cssRules);
+  const flatMapResult = entries.flatMap((item) => {
+    let nextResult;
+    let nextResult1;
+    let tmp6;
+    const iter = item[Symbol.iterator]();
+    let tmp2 = iter === undefined;
+    if (!tmp2) {
+      nextResult = iter.next();
+    }
+    let tmp3 = tmp2;
+    if (tmp3) {
+      let mapped;
+      tmp6 = tmp3;
+      let tmp8 = tmp3;
+      const animationTimingFunction = nextResult1.animationTimingFunction;
+      obj = {};
+      let merged = Object.assign(nextResult1, Object.assign({ animationTimingFunction: 0 }));
+      if (!tmp8) {
+        iter.return();
+      }
+      let c1 = propsBuilder.build(merged);
+      const buildResult = propsBuilder.build(merged);
+      if (c1) {
+        const arr2 = normalizeKeyframeSelector(nextResult);
+        mapped = arr2.map((item) => {
+          let tmp2 = animationTimingFunction;
+          obj = { offset: item, props };
+          if (tmp2) {
+            tmp2 = { timingFunction: tmp };
+            const obj2 = { timingFunction: tmp };
+          }
+          const merged = Object.assign(tmp2);
+          return obj;
+        });
+      } else {
+        mapped = [];
+      }
+      return mapped;
+    } else {
+      tmp6 = tmp5;
+      if (!tmp6) {
+        nextResult1 = iter.next();
+        tmp3 = tmp5;
+      }
+    }
+    nextResult1 = {};
+    tmp8 = tmp6;
+  });
+  const sorted = flatMapResult.sort(f82390);
+  const reduced = sorted.reduce(f82391, []);
+  const item = reduced.forEach((props) => {
+    let offset;
+    let timingFunction;
+    ({ offset, timingFunction } = props);
+    processProps(offset, props.props, obj3, closure_0);
+    const tmp2 = timingFunction && offset < 1;
+    if (tmp2) {
+      obj = normalizeDelay;
+      obj4[offset] = obj.normalizeTimingFunction(timingFunction);
+    }
+  });
+  return { propKeyframes: obj3, keyframeTimingFunctions: obj4 };
 }

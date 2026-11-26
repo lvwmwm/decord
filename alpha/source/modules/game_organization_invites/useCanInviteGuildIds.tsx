@@ -1,15 +1,15 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12089
+// Function ID: 12090
 // Name: useCanInviteGuildIds
-// Dependencies: [19, 4924, 4918, 4883, 4944, 12042, 504, 12043, 2]
+// Dependencies: [19, 4955, 4949, 4914, 4975, 12090, 504, 12091, 2]
 // Exports: default
 
-// Module 12041 (useCanInviteGuildIds)
+// Module 12089 (useCanInviteGuildIds)
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import GuildRoleStore from "GuildRoleStore" /* 4918 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import GuildRoleStore from "GuildRoleStore" /* 4949 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/useCanInviteGuildIds.tsx");

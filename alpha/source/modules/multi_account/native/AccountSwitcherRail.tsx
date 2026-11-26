@@ -1,30 +1,30 @@
-// Module ID: 19003
-// Function ID: 19004
+// Module ID: 19066
+// Function ID: 19067
 // Name: AccountSwitcherRail
-// Dependencies: [19, 17, 1405, 5069, 1386, 13333, 15054, 13334, 1071, 21, 575, 5012, 5074, 5068, 1112, 5699, 1412, 7460, 5716, 1628, 5576, 17605, 504, 18107, 1255, 6349, 13336, 5702, 10409, 9025, 2]
+// Dependencies: [19, 17, 1406, 5100, 1387, 13385, 15104, 13386, 1071, 21, 575, 5043, 5105, 5099, 1112, 5730, 1413, 7491, 5747, 1629, 5607, 17662, 504, 18166, 1256, 6380, 13388, 5733, 10454, 9067, 2]
 
-// Module 19003 (AccountSwitcherRail)
+// Module 19066 (AccountSwitcherRail)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import SettingsIcon2 from "SettingsIcon" /* 10409 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 13333 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13336 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 18107 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
+import SettingsIcon2 from "SettingsIcon" /* 10454 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 13385 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13388 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 18166 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserRecord from "UserRecord" /* 1405 */;
-import StreamerModeStore from "StreamerModeStore" /* 5069 */;
-import UserStore from "UserStore" /* 1386 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15054 */;
-import Constants_mod from "Constants" /* 13334 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import StreamerModeStore from "StreamerModeStore" /* 5100 */;
+import UserStore from "UserStore" /* 1387 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15104 */;
+import Constants_mod from "Constants" /* 13386 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ function AccountButton(user) {
   dependencyMap = closure_22();
   let tmp = user;
   let tmp2 = dependencyMap;
-  let obj = user(5074);
+  let obj = user(5105);
   const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const tmp4 = new UserRecord(user);
@@ -125,11 +125,11 @@ function AccountButton(user) {
         items2[1] = tmp12;
         if (selected) {
           const obj4 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT, accessible: false };
-          const CheckmarkSmallIcon = tmp13(7460).CheckmarkSmallIcon;
+          const CheckmarkSmallIcon = tmp13(7491).CheckmarkSmallIcon;
           tmp3Result = tmp3(CheckmarkSmallIcon, obj4);
         } else {
           const obj5 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessible: false };
-          const CircleInformationIcon = tmp13(5716).CircleInformationIcon;
+          const CircleInformationIcon = tmp13(5747).CircleInformationIcon;
           tmp3Result = tmp3(CircleInformationIcon, obj5);
         }
         tmp3Result2 = tmp3(tmp4, obj3);
@@ -141,10 +141,10 @@ function AccountButton(user) {
     }
   };
   str = "always";
-  getUserTag = selected(5068).getUserTag;
+  getUserTag = selected(5099).getUserTag;
   const tmp6 = closure_17;
   const tmp7 = RailButton;
-  const tmp8 = selected(5068);
+  const tmp8 = selected(5099);
   if (hidePersonalInformation) {
     str = "never";
   }

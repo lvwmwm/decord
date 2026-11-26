@@ -1,22 +1,22 @@
-// Module ID: 12300
-// Function ID: 12301
+// Module ID: 12350
+// Function ID: 12351
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 5012, 6114, 6084, 5603, 9652, 12301, 1112, 12302, 1186, 1494, 2]
+// Dependencies: [32, 19, 17, 21, 575, 5043, 6145, 6115, 5634, 9694, 12351, 1112, 12352, 1186, 1495, 2]
 // Exports: default
 
-// Module 12300 (GameOrganizationBenefitsCarousel)
+// Module 12350 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Card_Card from "Card/Card" /* 6114 */;
-import GameOrganizationBenefits from "GameOrganizationBenefits" /* 12301 */;
-import GameOrganizationBenefitIllustrations from "GameOrganizationBenefitIllustrations" /* 12302 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Card_Card from "Card/Card" /* 6145 */;
+import GameOrganizationBenefits from "GameOrganizationBenefits" /* 12351 */;
+import GameOrganizationBenefitIllustrations from "GameOrganizationBenefitIllustrations" /* 12352 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -41,7 +41,7 @@ function BenefitCard(isLast) {
   items[1] = cardSpacing;
   const obj = { border: "none", radius: 12, style: items, children: metroImportDefault(Stack, obj2) };
   obj2 = { spacing: nativeDefault.space.PX_24, children: items1 };
-  Stack = tmp3(6084).Stack;
+  Stack = tmp3(6115).Stack;
   items1 = [metroRequire(Illustration, { width: "100%", accessible: false }), metroRequire(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", children: text })];
   return metroRequire(Card, obj);
 }
@@ -122,19 +122,19 @@ function BenefitsCarousel(cardWidth) {
       return tmp(tmp2, obj, key.key);
     })
   };
-  tmp13 = displayNoun(9652);
-  prop = cardWidth(12301).GAME_ORGANIZATION_BENEFITS;
+  tmp13 = displayNoun(9694);
+  prop = cardWidth(12351).GAME_ORGANIZATION_BENEFITS;
   const children = [closure_6(closure_5, obj), ];
   let tmp11Result = null;
   const tmp10 = closure_5;
   const tmp11 = closure_6;
   const tmp9 = closure_7;
-  if (cardWidth(12301).GAME_ORGANIZATION_BENEFITS.length > 1) {
+  if (cardWidth(12351).GAME_ORGANIZATION_BENEFITS.length > 1) {
     tmp11Result = null;
     if (tmp6 > 0) {
       tmp11Result = null;
       if (first > tmp6) {
-        const obj3 = { containerStyle: tmp2.pagination, numberOfItems: cardWidth(12301).GAME_ORGANIZATION_BENEFITS.length, currentIndex: tmp4 };
+        const obj3 = { containerStyle: tmp2.pagination, numberOfItems: cardWidth(12351).GAME_ORGANIZATION_BENEFITS.length, currentIndex: tmp4 };
         const CarouselPagination = tmp14(1186).CarouselPagination;
         tmp11Result = tmp11(CarouselPagination, obj3);
       }

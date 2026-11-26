@@ -1,10 +1,10 @@
-// Module ID: 16185
-// Function ID: 16186
+// Module ID: 16236
+// Function ID: 16237
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1500, 6801, 6017, 5693, 1112, 6021, 3498, 6021, 2]
+// Dependencies: [5, 21, 1501, 6832, 6048, 5724, 1112, 6052, 3499, 6052, 2]
 // Exports: default
 
-// Module 16185 (SettingsAgeGroupResetAlert)
+// Module 16236 (SettingsAgeGroupResetAlert)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ export default function SettingsAgeGroupResetAlert() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c2;
@@ -87,7 +87,7 @@ export default function SettingsAgeGroupResetAlert() {
             closure_128_0.goBack();
             c2 = 0;
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp25) {
           if (0 === c2) {
@@ -103,7 +103,7 @@ export default function SettingsAgeGroupResetAlert() {
   };
   obj = require("useNavigation");
   _require = obj.useNavigation();
-  let obj2 = { title: intl.string(obj(3498)["bD//cU"]), content: intl2.string(obj(3498).FbTAmI), actions: closure_5(AlertActions, obj3) };
+  let obj2 = { title: intl.string(obj(3499)["bD//cU"]), content: intl2.string(obj(3499).FbTAmI), actions: closure_5(AlertActions, obj3) };
   const AlertModal = require("AlertModal").AlertModal;
   intl = require("intl").intl;
   intl2 = require("intl").intl;
@@ -114,7 +114,7 @@ export default function SettingsAgeGroupResetAlert() {
     onPress: function handleConfirm() {
       return obj(...arguments);
     },
-    text: intl3.string(obj(3498).V822Mp)
+    text: intl3.string(obj(3499).V822Mp)
   };
   const AlertActionButton = require("AlertModal").AlertActionButton;
   intl3 = require("intl").intl;

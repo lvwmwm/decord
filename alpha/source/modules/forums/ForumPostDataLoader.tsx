@@ -1,18 +1,18 @@
-// Module ID: 11657
-// Function ID: 11658
+// Module ID: 11705
+// Function ID: 11706
 // Name: ForumPostDataLoader
-// Dependencies: [5, 4861, 8986, 8077, 10692, 1071, 12, 11, 504, 1284, 572, 2]
+// Dependencies: [5, 4892, 9028, 8119, 10737, 1071, 12, 11, 504, 1285, 572, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 11657 (ForumPostDataLoader)
+// Module 11705 (ForumPostDataLoader)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 8986 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 9028 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8077 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 10692 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8119 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 10737 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let obj = function _loadForumPostData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -58,7 +58,7 @@ let obj = function _loadForumPostData() {
               c3 = 0;
               c11 = null;
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           }
         } else if (1 === tmp4) {
@@ -109,7 +109,7 @@ obj = function _loadForumPostDataForChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;
@@ -138,7 +138,7 @@ obj = function _loadForumPostDataForChannelId() {
               postResult = closure_2_10;
               closure_2_10.finishRequesting(closure_0, nextBatch);
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             } else {
               channel = channel.getChannel(tmp44);
               guild_id = undefined;
@@ -150,7 +150,7 @@ obj = function _loadForumPostDataForChannelId() {
                 postResult = closure_2_10;
                 closure_2_10.finishRequesting(closure_0, nextBatch);
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               } else {
                 const HTTP = require("HTTPUtils").HTTP;
                 const request = { url: Endpoints.FORUM_POSTS(closure_0), body: obj4, rejectWithError: true };
@@ -192,7 +192,7 @@ obj = function _loadForumPostDataForChannelId() {
           postResult = closure_0;
           closure_130_10.finishRequesting(closure_0, nextBatch);
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp37) {
         closure_3 = tmp37;

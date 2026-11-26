@@ -1,17 +1,17 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12458
+// Function ID: 12459
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 5012, 575, 8985, 12410, 12411, 1653, 1186, 5603, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 9027, 12459, 12460, 1654, 1186, 5634, 2]
 // Exports: default
 
-// Module 12409 (ForumPostTypingUsers)
+// Module 12458 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import _modDef1653 from "module_1653" /* 1653 */;
+import _modDef1654 from "module_1654" /* 1654 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ export default function ForumPostTypingUsers(hasUnreads) {
   let c1;
   let c2;
   [tmp8, tmp9, tmp10, tmp11] = items;
-  const obj4 = require("module_1653");
+  const obj4 = require("module_1654");
   const tmp4 = facepileUsers;
   class ForumPostTypingUsersTsx1 {
     constructor() {
@@ -93,7 +93,7 @@ export default function ForumPostTypingUsers(hasUnreads) {
               let obj2;
               const items = [closure_0.typingUser, animatedStyle, ];
               let lastTypingUser = index === facepileUsers.length - 1;
-              View = _modDef1653.View;
+              View = _modDef1654.View;
               if (lastTypingUser) {
                 lastTypingUser = closure_0.lastTypingUser;
               }

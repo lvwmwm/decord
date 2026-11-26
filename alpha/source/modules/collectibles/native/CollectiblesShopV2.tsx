@@ -1,34 +1,34 @@
-// Module ID: 17427
-// Function ID: 17428
+// Module ID: 17484
+// Function ID: 17485
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 5606, 1191, 1386, 6280, 5669, 6317, 1073, 1071, 21, 5012, 6349, 13851, 17428, 11226, 11227, 504, 5591, 1268, 11103, 17429, 17431, 17432, 11555, 1378, 11199, 9227, 9373, 11069, 5019, 6348, 1500, 17434, 2185, 17436, 1255, 6333, 6278, 17437, 17438, 17440, 17476, 1241, 11168, 11266, 11219, 17479, 17480, 17449, 17481, 17483, 5781, 1625, 2]
+// Dependencies: [32, 19, 17, 5637, 1191, 1387, 6311, 5700, 6348, 1073, 1071, 21, 5043, 6380, 13903, 17485, 11272, 11273, 504, 5622, 1269, 11149, 17486, 17488, 17489, 11603, 1379, 11245, 9269, 9415, 11115, 5050, 6379, 1501, 17491, 2186, 17493, 1256, 6364, 6309, 17494, 17495, 17497, 17533, 1242, 11214, 11312, 11265, 17536, 17537, 17506, 17538, 17540, 5812, 1626, 2]
 
-// Module 17427 (CollectiblesShopV2)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2185 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6278 */;
-import FeedBlockRecord2 from "FeedBlockRecord" /* 6317 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 6333 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9227 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11199 */;
-import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 11219 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 11555 */;
-import takeWhileDefault from "takeWhile" /* 17434 */;
-import ShopCategory from "ShopCategory" /* 17438 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17440 */;
+// Module 17484 (CollectiblesShopV2)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 6309 */;
+import FeedBlockRecord2 from "FeedBlockRecord" /* 6348 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 6364 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9269 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11245 */;
+import ImprovedMobileShopLoadingExperiment from "ImprovedMobileShopLoadingExperiment" /* 11265 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 11603 */;
+import takeWhileDefault from "takeWhile" /* 17491 */;
+import ShopCategory from "ShopCategory" /* 17495 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 17497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5606 */;
+import DevSettingsStore from "DevSettingsStore" /* 5637 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import UserStore from "UserStore" /* 1386 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6280 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5669 */;
+import UserStore from "UserStore" /* 1387 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6311 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 5700 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let kind, map, navigation;
@@ -45,7 +45,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const SentryUtilsDefault = tmp(1241);
+const SentryUtilsDefault = tmp(1242);
 function ImprovedLoadingCollectiblesShopInternal(arg0) {
   let isImprovedMobileShopLoadingEnabled;
   const obj2 = { improvedLoading: isImprovedMobileShopLoadingEnabled };
@@ -92,8 +92,8 @@ class CollectiblesShopV2 {
         return () => clearTimeout(closure_0);
       }
     }, items1);
-    const tmp5Result = nativePaymentsConnected(1378);
-    const tmp11 = tmp5Result.isIOS() && !nativePaymentsConnected(5781).isStable && isStaffResult;
+    const tmp5Result = nativePaymentsConnected(1379);
+    const tmp11 = tmp5Result.isIOS() && !nativePaymentsConnected(5812).isStable && isStaffResult;
     if (!nativePaymentsConnected) {
       if (!tmp11) {
         if (!tmp9) {
@@ -106,13 +106,13 @@ class CollectiblesShopV2 {
     if (tmp9) {
       const captureMessage = SentryUtilsDefault.captureMessage;
       SentryUtilsDefault;
-      nativePaymentsConnected(1378);
+      nativePaymentsConnected(1379);
       const text = `collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`;
-      captureMessage(`${`collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`} isStable: ${nativePaymentsConnected(5781).isStable}`);
+      captureMessage(`${`collectibles mobile shop failed to connect to native payments isIOS: ${obj6.isIOS()}`} isStable: ${nativePaymentsConnected(5812).isStable}`);
     }
     if (screen.screen !== constants.ORBS) {
       let tmp23;
-      const tmp5Result4 = nativePaymentsConnected(1625);
+      const tmp5Result4 = nativePaymentsConnected(1626);
       if (!tmp5Result4.isMetaQuest()) {
         const obj4 = { storeFront, screen: screen.screen };
         const merged = Object.assign(screen);
@@ -301,7 +301,7 @@ function CollectiblesShopInternal(analyticsSource) {
       if (true !== isFetchingCategories) {
         const obj = PlatformUtils;
         if (false !== obj.isAndroid()) {
-          const getGoogleSkuIds = tmp4(11199).getGoogleSkuIds;
+          const getGoogleSkuIds = tmp4(11245).getGoogleSkuIds;
           const items = [];
           collectibles_CollectiblesUtils;
           HermesBuiltin.arraySpread(items, categories.values(), 0);

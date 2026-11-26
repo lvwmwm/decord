@@ -1,31 +1,31 @@
-// Module ID: 19528
-// Function ID: 19529
+// Module ID: 19591
+// Function ID: 19592
 // Name: VoicePanelVoiceControls
-// Dependencies: [19, 17, 4861, 11732, 21, 5012, 575, 1653, 11733, 19523, 10083, 4837, 19403, 10349, 14296, 10229, 6084, 19529, 6109, 19539, 1112, 10371, 504, 13013, 5242, 5272, 1625, 7024, 7449, 13177, 2]
+// Dependencies: [19, 17, 4892, 11780, 21, 5043, 575, 1654, 11781, 19586, 10125, 4868, 19466, 10391, 14348, 10271, 6115, 19592, 6140, 19602, 1112, 10416, 504, 13065, 5273, 5303, 1626, 7055, 7480, 13229, 2]
 
-// Module 19528 (VoicePanelVoiceControls)
+// Module 19591 (VoicePanelVoiceControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 10083 */;
-import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10229 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10349 */;
-import UserSettingsVoiceProcessing from "UserSettingsVoiceProcessing" /* 10371 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
-import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 14296 */;
-import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19403 */;
-import useShowConnectedControlsDefault from "useShowConnectedControls" /* 19523 */;
-import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 19529 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1626 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 10125 */;
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10271 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10391 */;
+import UserSettingsVoiceProcessing from "UserSettingsVoiceProcessing" /* 10416 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11780 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
+import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 14348 */;
+import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19466 */;
+import useShowConnectedControlsDefault from "useShowConnectedControls" /* 19586 */;
+import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 19592 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import module_1653 from "module_1653" /* 1653 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import module_1654 from "module_1654" /* 1654 */;
 import size from "module_2" /* 2 */;
 
 const MobileGoLiveEntrypointExperimentDefault = MobileGoLiveEntrypointExperiment;
@@ -36,7 +36,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const StreamVolumeMovedNoticeDefault = tmp(19539);
+const StreamVolumeMovedNoticeDefault = tmp(19602);
 function NOOP() {
 
 }
@@ -49,7 +49,7 @@ obj2 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16, marginTop: CONTROLS_DRAWER_HEADER_EXPANDED_SIZE };
 let closure_8 = createStyles(obj);
-let closure_9 = module_1653.createAnimatedComponent(ScrollView);
+let closure_9 = module_1654.createAnimatedComponent(ScrollView);
 let closure_10 = react.memo(function ListItems(arg0) {
   let StreamVolumeItem;
   let channel;
@@ -79,24 +79,24 @@ let closure_10 = react.memo(function ListItems(arg0) {
   }
   if (tmp10) {
     const obj5 = { channel, openTab };
-    tmp10 = hasOwnProperty(tmp4(19529).StageButtons, obj5);
+    tmp10 = hasOwnProperty(tmp4(19592).StageButtons, obj5);
   }
   const children = [tmp10, , , , , , , ];
   let tmp9Result = tmp3 && !isStageUnifiedCall;
   if (tmp9Result) {
     let tmp13Result;
-    const TableRowGroup = tmp4(6109).TableRowGroup;
+    const TableRowGroup = tmp4(6140).TableRowGroup;
     const obj6 = { openTab };
     const items1 = [hasOwnProperty(VoicePanelVoiceControlsButtons.ActivitiesButton, obj6), ];
     if (MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT === treatment) {
       const obj7 = { openTab };
-      tmp13Result = tmp13(tmp4(19529).ChatButton, obj7);
+      tmp13Result = tmp13(tmp4(19592).ChatButton, obj7);
     } else if (MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD === treatment) {
       const obj8 = { channel };
-      tmp13Result = tmp13(tmp4(19529).SoundboardButton, obj8);
+      tmp13Result = tmp13(tmp4(19592).SoundboardButton, obj8);
     } else {
       const obj9 = { channel };
-      tmp13Result = tmp13(tmp4(19529).ScreenshareButton, obj9);
+      tmp13Result = tmp13(tmp4(19592).ScreenshareButton, obj9);
     }
     const obj10 = { hasIcons: true, children: items1 };
     items1[1] = tmp13Result;
@@ -106,42 +106,42 @@ let closure_10 = react.memo(function ListItems(arg0) {
   let tmp15 = !isStageUnifiedCall;
   if (tmp15) {
     const obj11 = { channel, connected: tmp3 };
-    tmp15 = hasOwnProperty(tmp4(19529).GameConsoles, obj11);
+    tmp15 = hasOwnProperty(tmp4(19592).GameConsoles, obj11);
   }
   children[2] = tmp15;
   if (nonContextualStreamOutputPresent) {
-    StreamVolumeItem = tmp4(19529).StreamVolumeItem;
+    StreamVolumeItem = tmp4(19592).StreamVolumeItem;
   } else {
     StreamVolumeItem = StreamVolumeMovedNoticeDefault;
   }
   children[3] = hasOwnProperty(StreamVolumeItem, {});
   const obj12 = { title: intl.string(intl3.t.dsXapM), hasIcons: true, children: items2 };
-  const TableRowGroup2 = tmp4(6109).TableRowGroup;
+  const TableRowGroup2 = tmp4(6140).TableRowGroup;
   intl = tmp4(1112).intl;
   items2 = [hasOwnProperty(VoicePanelVoiceControlsButtons.DeafenSwitch, {}), hasOwnProperty(VoicePanelVoiceControlsButtons.AudioRouteButton, { channel, connected: tmp3 }), , , ];
   let tmp17Result = !isStageUnifiedCall;
   if (tmp17Result) {
     const obj13 = { channelId };
-    tmp17Result = tmp17(tmp4(19529).HideNonVideoParticipants, obj13);
+    tmp17Result = tmp17(tmp4(19592).HideNonVideoParticipants, obj13);
   }
   items2[2] = tmp17Result;
   items2[3] = hasOwnProperty(VoicePanelVoiceControlsButtons.HideSelfVideo, {});
   let tmp17Result3 = tmp3;
   if (tmp17Result3) {
     const obj14 = { channel, connected: tmp3 };
-    tmp17Result3 = tmp17(tmp4(19529).InviteButton, obj14);
+    tmp17Result3 = tmp17(tmp4(19592).InviteButton, obj14);
   }
   items2[4] = tmp17Result3;
   children[4] = metroRequire(TableRowGroup2, obj12);
   children[5] = hasOwnProperty(UserSettingsVoiceProcessing.VoiceProcessingOptions, {});
-  const TableRowGroup3 = tmp4(6109).TableRowGroup;
+  const TableRowGroup3 = tmp4(6140).TableRowGroup;
   const items3 = [, ];
   const obj15 = { guildId: channel.guild_id };
   items3[0] = hasOwnProperty(VoicePanelVoiceControlsButtons.VoiceSettingsButton, obj15);
   let tmp17Result4 = null != tmp7;
   if (tmp17Result4) {
     const obj16 = { stream: tmp7 };
-    tmp17Result4 = tmp17(tmp4(19529).ReportStreamIssueButton, obj16);
+    tmp17Result4 = tmp17(tmp4(19592).ReportStreamIssueButton, obj16);
   }
   items3[1] = tmp17Result4;
   children[6] = metroRequire(TableRowGroup3, { hasIcons: true, children: items3 });
@@ -152,7 +152,7 @@ let closure_10 = react.memo(function ListItems(arg0) {
       tmp9Result2 = null;
       if (embeddedActivityLaunchability === getEmbeddedActivityLaunchability.EmbeddedActivityLaunchability.CAN_LAUNCH) {
         const obj17 = { title: intl2.string(intl3.t.J6rqB7), hasIcons: true, children: items4 };
-        const TableRowGroup4 = tmp4(6109).TableRowGroup;
+        const TableRowGroup4 = tmp4(6140).TableRowGroup;
         intl2 = tmp4(1112).intl;
         items4 = [hasOwnProperty(VoicePanelVoiceControlsButtons.LeaveActivitiesButton, {}), hasOwnProperty(VoicePanelVoiceControlsButtons.ShareActivityLogsButton, {}), hasOwnProperty(VoicePanelVoiceControlsButtons.ToggleShowActivitiesDebugOverlay, {})];
         tmp9Result2 = tmp9(TableRowGroup4, obj17);

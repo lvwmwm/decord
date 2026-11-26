@@ -1,13 +1,13 @@
-// Module ID: 8568
-// Function ID: 8569
+// Module ID: 8610
+// Function ID: 8611
 // Name: EditGuildScheduledEventResetWarningAlert
-// Dependencies: [19, 21, 6087, 1112, 2]
+// Dependencies: [19, 21, 6118, 1112, 2]
 // Exports: default
 
-// Module 8568 (EditGuildScheduledEventResetWarningAlert)
+// Module 8610 (EditGuildScheduledEventResetWarningAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1112 */;
-import AlertDefault from "Alert" /* 6087 */;
+import AlertDefault from "Alert" /* 6118 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

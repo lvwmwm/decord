@@ -1,18 +1,18 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14608
+// Function ID: 14609
 // Name: UserProfileApplicationWidgetCard
-// Dependencies: [19, 17, 2188, 502, 21, 5012, 575, 14556, 14557, 14606, 14607, 14608, 14609, 5618, 504, 14558, 7484, 8677, 8703, 8712, 14610, 7481, 6348, 6349, 6350, 13536, 14616, 14597, 14620, 5750, 7528, 14526, 7525, 5603, 1112, 5610, 14621, 6121, 10640, 2]
+// Dependencies: [19, 17, 2189, 502, 21, 5043, 575, 14609, 14610, 14659, 14660, 14661, 14662, 5649, 504, 14611, 7515, 8719, 8745, 8754, 14663, 7512, 6379, 6380, 6381, 13588, 14669, 14650, 14673, 5781, 7559, 14578, 7556, 5634, 1112, 5641, 14674, 6152, 10685, 2]
 // Exports: default
 
-// Module 14555 (UserProfileApplicationWidgetCard)
+// Module 14608 (UserProfileApplicationWidgetCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod14558 from "module_14558" /* 14558 */;
+import _mod14611 from "module_14611" /* 14611 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2188 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -85,7 +85,7 @@ export default function UserProfileApplicationWidgetCard(userId) {
   stateFromStores = obj2.useStateFromStores(items, () => token.locale);
   const items1 = [stateFromStores];
   const memo = hasAlreadyLinked.useMemo(() => {
-    const obj = _mod14558;
+    const obj = _mod14611;
     return obj.createCompactNumberFormat(stateFromStores);
   }, items1);
   const items2 = [analyticsLocations];

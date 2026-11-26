@@ -1,16 +1,16 @@
-// Module ID: 16358
-// Function ID: 16359
+// Module ID: 16409
+// Function ID: 16410
 // Name: FamilyCenterActivityPurchaseRowUtils
-// Dependencies: [6285, 6286, 1388, 2112, 1112, 2846, 1412, 2]
+// Dependencies: [6316, 6317, 1389, 2113, 1112, 2847, 1413, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 16358 (FamilyCenterActivityPurchaseRowUtils)
-import AvatarUtils from "AvatarUtils" /* 1412 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import _modDef2846 from "module_2846" /* 2846 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6285 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 6286 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+// Module 16409 (FamilyCenterActivityPurchaseRowUtils)
+import AvatarUtils from "AvatarUtils" /* 1413 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
+import _modDef2847 from "module_2847" /* 2847 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 6316 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 6317 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -18,19 +18,19 @@ let metroRequire;
 function getCollectibleTypeName(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = tmp(1112).intl;
-    return intl5.string(_modDef2846.obi47v);
+    return intl5.string(_modDef2847.obi47v);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = tmp(1112).intl;
-    return intl4.string(_modDef2846.RX8BMR);
+    return intl4.string(_modDef2847.RX8BMR);
   } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = tmp(1112).intl;
-    return intl3.string(_modDef2846.nNGEHk);
+    return intl3.string(_modDef2847.nNGEHk);
   } else if (CollectiblesItemType.CollectiblesItemType.BUNDLE === type) {
     const intl2 = tmp(1112).intl;
-    return intl2.string(_modDef2846.VS1fKo);
+    return intl2.string(_modDef2847.VS1fKo);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1112).intl;
-    return intl.string(_modDef2846.JiIY1l);
+    return intl.string(_modDef2847.JiIY1l);
   } else {
     return "";
   }

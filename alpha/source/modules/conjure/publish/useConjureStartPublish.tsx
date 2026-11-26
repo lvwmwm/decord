@@ -1,17 +1,18 @@
-// Module ID: 18404
-// Function ID: 18405
+// Module ID: 18463
+// Function ID: 18464
 // Name: useConjureStartPublish
-// Dependencies: [5, 19, 6903, 7675, 11412, 18405, 18406, 2]
+// Dependencies: [5, 19, 6934, 7706, 11459, 18464, 18465, 18467, 2]
 // Exports: default
 
-// Module 18404 (useConjureStartPublish)
-import useConjurePublishAction from "useConjurePublishAction" /* 11412 */;
-import conjurePublishReview from "conjurePublishReview" /* 18405 */;
-import openConjurePublishReview from "openConjurePublishReview" /* 18406 */;
+// Module 18463 (useConjureStartPublish)
+import useConjurePublishAction from "useConjurePublishAction" /* 11459 */;
+import conjurePublishReview from "conjurePublishReview" /* 18464 */;
+import conjureViewPlacement from "conjureViewPlacement" /* 18465 */;
+import openConjurePublishReview from "openConjurePublishReview" /* 18467 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7675 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7706 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +34,7 @@ let obj = function _publishNow() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c6;
@@ -70,7 +71,7 @@ let obj = function _publishNow() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;
@@ -90,22 +91,45 @@ function startConjurePublish(projectId, entryPoint, context) {
     return obj(...arguments);
   }
   const project = ConjureProjectStore.getProject(projectId);
-  let tmp2 = null != project && true !== context.busy;
-  if (tmp2) {
-    obj = useConjurePublishAction;
-    tmp2 = !obj.approvalPending(projectId);
+  let flag = false;
+  if (null != project) {
+    flag = false;
+    if (true !== context.busy) {
+      flag = false;
+      const obj5 = useConjurePublishAction;
+      if (!obj5.approvalPending(projectId)) {
+        obj = ConjurePublishStatusStore;
+        flag = false;
+        if (!ConjurePublishStatusStore.isProjectPublishing(projectId)) {
+          const publishStatus = obj.getPublishStatus(projectId);
+          const tmp12Result = conjurePublishReview;
+          let tmp3 = null != tmp12Result.conjurePublishReviewReason(project, publishStatus);
+          if (!tmp3) {
+            let safetyHold;
+            if (publishStatus != null) {
+              safetyHold = publishStatus.safetyHold;
+            }
+            let result = true !== safetyHold;
+            if (result) {
+              let views;
+              const conjureViewPlacementNeeded = conjureViewPlacement.conjureViewPlacementNeeded;
+              conjureViewPlacement;
+              if (publishStatus != null) {
+                views = publishStatus.views;
+              }
+              result = conjureViewPlacementNeeded(views);
+            }
+            tmp3 = result;
+          }
+          flag = tmp3;
+        }
+      }
+    }
   }
-  if (tmp2) {
-    tmp2 = !ConjurePublishStatusStore.isProjectPublishing(projectId);
-  }
-  if (tmp2) {
-    const obj2 = conjurePublishReview;
-    tmp2 = null != obj2.conjurePublishReviewReason(project, ConjurePublishStatusStore.getPublishStatus(projectId));
-  }
-  if (tmp2) {
-    const obj4 = { projectId, publishOptions: context, entryPoint };
+  if (flag) {
+    const obj2 = { projectId, publishOptions: context, entryPoint };
     const obj3 = openConjurePublishReview;
-    const result = obj3.openConjurePublishReview(obj4);
+    const result1 = obj3.openConjurePublishReview(obj2);
   } else {
     publishNow(projectId, entryPoint, context);
   }

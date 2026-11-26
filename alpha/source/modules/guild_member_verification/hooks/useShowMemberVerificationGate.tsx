@@ -1,14 +1,14 @@
-// Module ID: 7094
-// Function ID: 7095
+// Module ID: 7125
+// Function ID: 7126
 // Name: useShowMemberVerificationGate
-// Dependencies: [4924, 4883, 1386, 7032, 504, 2]
+// Dependencies: [4955, 4914, 1387, 7063, 504, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 7094 (useShowMemberVerificationGate)
-import MemberVerificationUtils from "MemberVerificationUtils" /* 7032 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import UserStore from "UserStore" /* 1386 */;
+// Module 7125 (useShowMemberVerificationGate)
+import MemberVerificationUtils from "MemberVerificationUtils" /* 7063 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

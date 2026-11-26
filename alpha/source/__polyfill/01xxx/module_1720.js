@@ -1,23 +1,20 @@
 // Module ID: 1720
 // Function ID: 1721
 // Dependencies: []
-// Exports: isSynchronizable
+// Exports: isWorkletFunction
 
 // Module 1720
 let tmp2;
-const items = [{ code: "(function isSynchronizable_Pnpm_isSynchronizableTs1(value){return typeof value==='object'&&value!==null&&!!value.__synchronizableRef;})" }];
+const items = [{ code: "(function isWorkletFunction_Pnpm_workletFunctionTs1(value){return(typeof value==='function'&&!!value.__workletHash);})" }];
 [tmp2] = items;
-function isSynchronizable(__synchronizableRef) {
-  __synchronizableRef = typeof __synchronizableRef === "object";
-  if (typeof __synchronizableRef === "object") {
-    __synchronizableRef = null !== __synchronizableRef;
+function isWorkletFunction(initializer) {
+  let __workletHash = typeof initializer === "function";
+  if (typeof initializer === "function") {
+    __workletHash = initializer.__workletHash;
   }
-  if (__synchronizableRef) {
-    __synchronizableRef = __synchronizableRef.__synchronizableRef;
-  }
-  return __synchronizableRef;
+  return __workletHash;
 }
-isSynchronizable.__workletHash = 15473062699358;
-isSynchronizable.__initData = tmp2;
+isWorkletFunction.__workletHash = 10543175955225;
+isWorkletFunction.__initData = tmp2;
 
-export { isSynchronizable };
+export { isWorkletFunction };

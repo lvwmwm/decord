@@ -1,18 +1,18 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15581
+// Function ID: 15582
 // Name: IconPill
-// Dependencies: [19, 17, 1082, 21, 5012, 575, 5612, 8063, 2]
+// Dependencies: [19, 17, 1082, 21, 5043, 575, 5643, 8105, 2]
 // Exports: default
 
-// Module 15530 (IconPill)
+// Module 15581 (IconPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
-import IconDefault from "Icon" /* 5612 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8063 */;
+import IconDefault from "Icon" /* 5643 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8105 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;

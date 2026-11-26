@@ -1,12 +1,12 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11481
+// Function ID: 11482
 // Name: conjurePublishEvalConnection
-// Dependencies: [572, 1268, 7642, 2]
+// Dependencies: [572, 1269, 7673, 2]
 // Exports: releasePublishEvalOnTicketRefused, sendConjurePublishEval
 
-// Module 11434 (conjurePublishEvalConnection)
+// Module 11481 (conjurePublishEvalConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import v1 from "v1" /* 1268 */;
+import v1 from "v1" /* 1269 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPublishEval(projectId) {
@@ -98,7 +98,7 @@ export function sendConjurePublishEval(projectId, arg1) {
       const result = obj.set(tmp, obj3);
       const tmp3 = require;
       try {
-        const tmp3Result = tmp3(7642);
+        const tmp3Result = tmp3(7673);
         const conjureSocket = tmp3Result.getConjureSocket(tmp);
         const tmp9 = conjureSocket;
         if (null == conjureSocket) {

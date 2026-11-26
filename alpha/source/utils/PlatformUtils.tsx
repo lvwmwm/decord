@@ -1,10 +1,10 @@
-// Module ID: 1378
-// Function ID: 1379
+// Module ID: 1379
+// Function ID: 1380
 // Name: PlatformUtils
-// Dependencies: [2, 1358]
+// Dependencies: [2, 1359]
 
-// Module 1378 (PlatformUtils)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+// Module 1379 (PlatformUtils)
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/PlatformUtils.tsx");

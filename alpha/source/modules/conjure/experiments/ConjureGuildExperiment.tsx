@@ -1,14 +1,14 @@
-// Module ID: 6938
-// Function ID: 6939
+// Module ID: 6969
+// Function ID: 6970
 // Name: ConjureGuildExperiment
-// Dependencies: [4883, 1071, 1450, 6939, 504, 2]
+// Dependencies: [4914, 1071, 1451, 6970, 504, 2]
 // Exports: hasConjureExperimentGuild, useHasConjureGuild, useIsConjureGuildEnabled
 
-// Module 6938 (ConjureGuildExperiment)
+// Module 6969 (ConjureGuildExperiment)
 import Constants from "Constants" /* 1071 */;
-import ConjureUserExperiment from "ConjureUserExperiment" /* 6939 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+import ConjureUserExperiment from "ConjureUserExperiment" /* 6970 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

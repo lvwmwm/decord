@@ -1,14 +1,14 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 11250
+// Function ID: 11251
 // Name: CollectiblesPricingPromotionUtils
-// Dependencies: [7563, 11080, 1386, 1071, 6291, 11205, 11207, 11206, 504, 2173, 2]
+// Dependencies: [7594, 11126, 1387, 1071, 6322, 11251, 11253, 11252, 504, 2174, 2]
 // Exports: getPricingPromotionForCollectiblesProduct, useCollectiblesPricingPromotionForProduct
 
-// Module 11204 (CollectiblesPricingPromotionUtils)
+// Module 11250 (CollectiblesPricingPromotionUtils)
 import Constants from "Constants" /* 1071 */;
-import SKUPricesStore from "SKUPricesStore" /* 7563 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 11080 */;
-import UserStore from "UserStore" /* 1386 */;
+import SKUPricesStore from "SKUPricesStore" /* 7594 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 11126 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let closure_6 = Constants.COLLECTIBLES_APPLICATION_ID;
@@ -76,14 +76,14 @@ export function useCollectiblesPricingPromotionForProduct(skuId) {
   let pricingPromotionIds;
   let promotions;
   let promotionsForApplication;
-  let obj = collectiblesStorefrontPricingIntegrationEnabled(11206);
+  let obj = collectiblesStorefrontPricingIntegrationEnabled(11252);
   collectiblesStorefrontPricingIntegrationEnabled = obj.useCollectiblesStorefrontPricingIntegrationEnabled(collectibles_pricing_promotion_eligibility);
   skuId = undefined;
   const tmp3 = collectibles_pricing_promotion_eligibility;
   if (skuId != null) {
     skuId = skuId.skuId;
   }
-  const tmpResult = collectiblesStorefrontPricingIntegrationEnabled(11205);
+  const tmpResult = collectiblesStorefrontPricingIntegrationEnabled(11251);
   const collectiblesStorefrontPrices = tmpResult.useCollectiblesStorefrontPrices(skuId, tmp3);
   const items = [SKUPricesStore];
   const tmpResult4 = collectiblesStorefrontPricingIntegrationEnabled(504);

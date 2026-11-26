@@ -1,16 +1,16 @@
-// Module ID: 20178
-// Function ID: 20179
+// Module ID: 20242
+// Function ID: 20243
 // Name: FormChannelPicker
-// Dependencies: [19, 4861, 21, 504, 5628, 16802, 7115, 6113, 5603, 1112, 5226, 20179, 2119, 2]
+// Dependencies: [19, 4892, 21, 504, 5659, 16853, 7146, 6144, 5634, 1112, 5257, 20243, 2120, 2]
 // Exports: default
 
-// Module 20178 (FormChannelPicker)
+// Module 20242 (FormChannelPicker)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import useChannelNameDefault from "useChannelName" /* 5628 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import useChannelNameDefault from "useChannelName" /* 5659 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -31,15 +31,15 @@ export default function FormChannelPicker(channelId) {
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   let tmp5Result = useChannelNameDefault(stateFromStores);
   if (null != stateFromStores) {
-    const tmpResult = tmp(16802);
+    const tmpResult = tmp(16853);
     let TextIcon = tmpResult.getChannelIconComponentOrDefault(stateFromStores);
   } else {
-    TextIcon = tmp(7115).TextIcon;
+    TextIcon = tmp(7146).TextIcon;
   }
-  const TableRow = tmp(6113).TableRow;
+  const TableRow = tmp(6144).TableRow;
   if (tmp5Result == null) {
     const obj3 = { variant: "body-md/medium", color: "text-muted", children: intl.string(tmp(1112).t.r2ptsz) };
-    const Text = tmp(5603).Text;
+    const Text = tmp(5634).Text;
     intl = tmp(1112).intl;
     tmp5Result = tmp5(Text, obj3);
   }
@@ -49,7 +49,7 @@ export default function FormChannelPicker(channelId) {
     const obj = { guildId: importDefault, selectedChannelId: id, onChannelSelected: dependencyMap };
     id = undefined;
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(20179, dependencyMap.paths);
+    const tmp2 = asyncRequire(20243, dependencyMap.paths);
     if (stateFromStores != null) {
       id = stateFromStores.id;
     }

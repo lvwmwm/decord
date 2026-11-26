@@ -1,16 +1,16 @@
-// Module ID: 10039
-// Function ID: 10040
+// Module ID: 10081
+// Function ID: 10082
 // Name: useCanToggleCommunicationDisableOnUser
-// Dependencies: [4879, 4883, 4944, 1386, 1071, 4949, 504, 2]
+// Dependencies: [4910, 4914, 4975, 1387, 1071, 4980, 504, 2]
 // Exports: default
 
-// Module 10039 (useCanToggleCommunicationDisableOnUser)
+// Module 10081 (useCanToggleCommunicationDisableOnUser)
 import Constants from "Constants" /* 1071 */;
-import GuildRecord from "GuildRecord" /* 4879 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4949 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import UserStore from "UserStore" /* 1386 */;
+import GuildRecord from "GuildRecord" /* 4910 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4980 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

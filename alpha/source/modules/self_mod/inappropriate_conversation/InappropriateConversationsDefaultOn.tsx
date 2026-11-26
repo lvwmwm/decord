@@ -1,11 +1,11 @@
-// Module ID: 11468
-// Function ID: 11469
+// Module ID: 11515
+// Function ID: 11516
 // Name: InappropriateConversationsDefaultOn
-// Dependencies: [1451, 2]
+// Dependencies: [1452, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn, useIsEligibleForInappropriateConversationDefaultOn
 
-// Module 11468 (InappropriateConversationsDefaultOn)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
+// Module 11515 (InappropriateConversationsDefaultOn)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-inappropriate-conversations-default-on", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

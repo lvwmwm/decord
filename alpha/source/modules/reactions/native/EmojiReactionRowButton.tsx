@@ -1,21 +1,21 @@
-// Module ID: 12208
-// Function ID: 12209
+// Module ID: 12258
+// Function ID: 12259
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1389, 21, 5012, 575, 5019, 6121, 1112, 9662, 7457, 1412, 4961, 2]
+// Dependencies: [19, 17, 1390, 21, 5043, 575, 5050, 6152, 1112, 9704, 7488, 1413, 4992, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 12208 (EmojiReactionRowButton)
+// Module 12258 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import EmojiConstants from "EmojiConstants" /* 1389 */;
-import EmojiTypes from "EmojiTypes" /* 4961 */;
-import shared from "shared" /* 5019 */;
-import Pressables from "Pressables" /* 6121 */;
-import EmojiDefault from "Emoji" /* 7457 */;
+import EmojiConstants from "EmojiConstants" /* 1390 */;
+import EmojiTypes from "EmojiTypes" /* 4992 */;
+import shared from "shared" /* 5050 */;
+import Pressables from "Pressables" /* 6152 */;
+import EmojiDefault from "Emoji" /* 7488 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const Platform = react_native.Platform;
@@ -48,10 +48,10 @@ export function EmojiPickerRowButton(iconSize) {
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(6121).PressableOpacity;
+  const PressableOpacity = tmp2(6152).PressableOpacity;
   const intl = tmp2(1112).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(9662).ReactionIcon;
+  const ReactionIcon = tmp2(9704).ReactionIcon;
   if (str == null) {
     str = "md";
   }
@@ -92,7 +92,7 @@ export function EmojiReactionRowButton(emoji) {
     if (null != emoji.id) {
       const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
       ({ id: obj4.id, animated: obj4.animated } = emoji);
-      const tmp9Result = tmp9(1412);
+      const tmp9Result = tmp9(1413);
       url = tmp9Result.getEmojiURL(obj6);
     } else {
       url = emoji.url;

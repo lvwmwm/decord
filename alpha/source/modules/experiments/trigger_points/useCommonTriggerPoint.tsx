@@ -1,13 +1,13 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13903
+// Function ID: 13904
 // Name: useCommonTriggerPoint
-// Dependencies: [32, 19, 5629, 504, 2]
+// Dependencies: [32, 19, 5660, 504, 2]
 // Exports: useCommonTriggerPoint
 
-// Module 13851 (useCommonTriggerPoint)
+// Module 13903 (useCommonTriggerPoint)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 5629 */;
+import ExperimentStore from "ExperimentStore" /* 5660 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ let _require;
 const result = size.fileFinishedImporting("modules/experiments/trigger_points/useCommonTriggerPoint.tsx");
 
 export function useCommonTriggerPoint(OpenNitroTriggerPoint) {
-  const f105041 = () => {
+  const f105339 = () => {
     const items = [authStore.getAllUserExperimentDescriptors(), authStore.getGuildExperiments()];
     return items;
   };
@@ -24,8 +24,8 @@ export function useCommonTriggerPoint(OpenNitroTriggerPoint) {
   let items = [ExperimentStore];
   const obj = require("get initialized");
   const items1 = [OpenNitroTriggerPoint, , ];
-  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f105041);
-  _slicedToArray(obj.useStateFromStoresArray(items, f105041), 2);
+  [arr2[1], arr2[2]] = obj.useStateFromStoresArray(items, f105339);
+  _slicedToArray(obj.useStateFromStoresArray(items, f105339), 2);
   const effect = react.useEffect(() => {
     OpenNitroTriggerPoint.trigger();
   }, items1);

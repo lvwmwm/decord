@@ -1,20 +1,20 @@
-// Module ID: 18377
-// Function ID: 18378
+// Module ID: 18436
+// Function ID: 18437
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6975, 21, 5012, 575, 5068, 5603, 18378, 1412, 6113, 1186, 1628, 18383, 5048, 18384, 504, 1112, 7451, 11548, 5586, 2]
+// Dependencies: [19, 17, 7006, 21, 5043, 575, 5099, 5634, 18437, 1413, 6144, 1186, 1629, 18442, 5079, 18443, 504, 1112, 7482, 11596, 5617, 2]
 
-// Module 18377 (GuildSettingsModalMemberApplications)
+// Module 18436 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18378 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5079 */;
+import UserUtilsDefault from "UserUtils" /* 5099 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18437 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6975 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7006 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -77,7 +77,7 @@ let closure_12 = react.memo(function GuildSettingsModalMemberApplication(joinReq
         userAvatarSource = obj.getUserAvatarSource(user);
       }
       const obj2 = { arrow: true, icon: closure_7(Avatar, obj3), label: closure_7(closure_11, obj4), onPress: tmp, start, end };
-      const TableRow = joinRequest(6113).TableRow;
+      const TableRow = joinRequest(6144).TableRow;
       obj3 = { source: userAvatarSource, size: joinRequest(1186).AvatarSizes.SMALL };
       Avatar = joinRequest(1186).Avatar;
       obj4 = { user };
@@ -97,11 +97,11 @@ const memoResult1 = react.memo(function GuildSettingsModalMemberApplications(gui
   let onEndReached;
   let tmp = closure_10();
   dependencyMap = tmp;
-  const bottom = applicationStatus(1628)().bottom;
-  let obj = guildId(18383);
-  let obj2 = { guildId, applicationStatus, sortOrder: guildId(5048).GuildJoinRequestSortOrders.TIMESTAMP_DESC };
+  const bottom = applicationStatus(1629)().bottom;
+  let obj = guildId(18442);
+  let obj2 = { guildId, applicationStatus, sortOrder: guildId(5079).GuildJoinRequestSortOrders.TIMESTAMP_DESC };
   const guildJoinRequests = obj.useSortedMemberApplications(obj2).guildJoinRequests;
-  const obj3 = guildId(18384);
+  const obj3 = guildId(18443);
   const fetchNextPage = obj3.usePaginatedMemberApplications({ guildId, guildJoinRequests }).fetchNextPage;
   const items = [onEndReached];
   const items1 = [guildId, applicationStatus];
@@ -132,13 +132,13 @@ const memoResult1 = react.memo(function GuildSettingsModalMemberApplications(gui
       return closure_7(stateFromStores, obj5);
     }
   }
-  if (guildId(5048).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
+  if (guildId(5079).GuildJoinRequestApplicationStatuses.SUBMITTED === applicationStatus) {
     const intl2 = tmp4(1112).intl;
     stringResult = intl2.string(tmp4(1112).t["/wqiSv"]);
-  } else if (guildId(5048).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
+  } else if (guildId(5079).GuildJoinRequestApplicationStatuses.APPROVED === applicationStatus) {
     const intl = tmp4(1112).intl;
     stringResult = intl.string(tmp4(1112).t.bv82GS);
-  } else if (guildId(5048).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
+  } else if (guildId(5079).GuildJoinRequestApplicationStatuses.REJECTED === applicationStatus) {
     const intl3 = tmp4(1112).intl;
     stringResult = intl3.string(tmp4(1112).t["7YSJ6f"]);
   }
@@ -165,15 +165,15 @@ const memoResult1 = react.memo(function GuildSettingsModalMemberApplications(gui
         }
     };
     obj9 = { paddingBottom: bottom + tmp2(575).space.PX_16 };
-    const FlashList = tmp4(7451).FlashList;
+    const FlashList = tmp4(7482).FlashList;
     tmp13Result = tmp13(FlashList, obj8);
   } else {
-    const obj10 = { Illustration: guildId(11548).NoResults, body: stringResult };
+    const obj10 = { Illustration: guildId(11596).NoResults, body: stringResult };
     const EmptyState = tmp4(1186).EmptyState;
     tmp13Result = tmp13(EmptyState, obj10);
   }
   const obj11 = { children: items5 };
-  items5 = [closure_7(tmp14, obj7), closure_7(tmp4(5586).NavScrim, {})];
+  items5 = [closure_7(tmp14, obj7), closure_7(tmp4(5617).NavScrim, {})];
   return tmp11(tmp12, obj11);
 });
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMemberApplications.tsx");

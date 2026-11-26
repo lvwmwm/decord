@@ -1,13 +1,13 @@
-// Module ID: 9328
-// Function ID: 9329
+// Module ID: 9370
+// Function ID: 9371
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [9099, 9329, 504, 2]
+// Dependencies: [9141, 9371, 504, 2]
 // Exports: useIsEligibleSenderForReferralProgram
 
-// Module 9328 (useIsEligibleSenderForReferralProgram)
+// Module 9370 (useIsEligibleSenderForReferralProgram)
 import get_initialized from "get initialized" /* 504 */;
-import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 9329 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 9099 */;
+import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 9371 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 9141 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx");

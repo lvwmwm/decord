@@ -1,18 +1,18 @@
-// Module ID: 17989
-// Function ID: 17990
+// Module ID: 18049
+// Function ID: 18050
 // Name: useInterestGameSearch
-// Dependencies: [5, 32, 19, 7143, 8914, 7144, 8913, 10825, 8912, 2]
+// Dependencies: [5, 32, 19, 7174, 8956, 7175, 8955, 10871, 8954, 2]
 // Exports: default
 
-// Module 17989 (useInterestGameSearch)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 7144 */;
-import GameSearchSession from "GameSearchSession" /* 8913 */;
-import GameSearchFilterGroup from "GameSearchFilterGroup" /* 8914 */;
-import GameSearchSurfaces from "GameSearchSurfaces" /* 10825 */;
+// Module 18049 (useInterestGameSearch)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 7175 */;
+import GameSearchSession from "GameSearchSession" /* 8955 */;
+import GameSearchFilterGroup from "GameSearchFilterGroup" /* 8956 */;
+import GameSearchSurfaces from "GameSearchSurfaces" /* 10871 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 7143 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 7174 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, dependencyMap, results;
@@ -67,7 +67,7 @@ export default function useInterestGameSearch(name) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           let c4;
@@ -97,7 +97,7 @@ export default function useInterestGameSearch(name) {
                 } else if (query.signal.aborted) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: "+95" };
                 } else {
                   results = GameAutocompleteStore.getResults(query, DEFAULT);
                   query = results;
@@ -127,7 +127,7 @@ export default function useInterestGameSearch(name) {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           } catch (tmp39) {
             closure_3 = tmp39;
             if (0 === c4) {

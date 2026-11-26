@@ -1,26 +1,26 @@
-// Module ID: 17952
-// Function ID: 17953
+// Module ID: 18009
+// Function ID: 18010
 // Name: useWaterwheelsActions
-// Dependencies: [5, 19, 2140, 502, 4883, 13329, 1071, 7838, 5694, 8890, 8893, 1112, 2654, 7778, 17953, 572, 8704, 8678, 8707, 8712, 7713, 6964, 7846, 13337, 5048, 6960, 7094, 8883, 1284, 17954, 6965, 2]
+// Dependencies: [5, 19, 2141, 502, 4914, 13381, 1071, 7872, 5725, 8932, 8935, 1112, 2655, 7812, 18010, 572, 8746, 8720, 8749, 8754, 7747, 6995, 7880, 13389, 5079, 6991, 7125, 8925, 1285, 18011, 6996, 2]
 // Exports: useWaterwheelsActions
 
-// Module 17952 (useWaterwheelsActions)
+// Module 18009 (useWaterwheelsActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7838 */;
-import react_nativeDefault from "react-native" /* 7846 */;
-import GameActionCreators from "GameActionCreators" /* 8678 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8890 */;
-import NotificationUtilsDefault from "NotificationUtils" /* 13337 */;
-import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 17953 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5079 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
+import react_nativeDefault from "react-native" /* 7880 */;
+import GameActionCreators from "GameActionCreators" /* 8720 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8932 */;
+import NotificationUtilsDefault from "NotificationUtils" /* 13389 */;
+import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 18010 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2140 */;
+import GameStore from "GameStore" /* 2141 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13329 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13381 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ let obj = function _openWaterwheelsGame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ let obj = function _openWaterwheelsGame() {
                       gamesWithSupplementalData = assert;
                       assert.dispose();
                       c13 = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: "+95" };
                     }
                   } else {
                     c10 = 9;
@@ -171,7 +171,7 @@ let obj = function _openWaterwheelsGame() {
                       c10 = 0;
                       gamesWithSupplementalData = assert.dispose();
                       c13 = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: "+95" };
                     }
                   }
                 }
@@ -679,7 +679,7 @@ obj = function _requestNotifications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -710,7 +710,7 @@ obj = function _requestNotifications() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp9) {
         c0 = 3;
         throw tmp9;
@@ -752,7 +752,7 @@ obj = function _joinWaterwheelsGuild() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } else {
             let c2;
@@ -794,7 +794,7 @@ obj = function _joinWaterwheelsGuild() {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             } catch (tmp10) {
               if (0 === c2) {
                 c0 = 3;
@@ -892,7 +892,7 @@ obj = function _joinWaterwheelsGuild() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           let c11;
@@ -975,7 +975,7 @@ obj = function _joinWaterwheelsGuild() {
                     }
                   }
                   c14 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: "+95" };
                 }
                 break;
               }
@@ -1475,7 +1475,7 @@ obj = function _joinWaterwheelsGuild() {
                   return { value, done: true };
                 } else {
                   c14 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: "+95" };
                 }
                 break;
               }
@@ -1731,7 +1731,7 @@ obj = function _joinWaterwheelsGuild() {
                   return { value, done: true };
                 } else {
                   c14 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: "+95" };
                 }
                 break;
               }
@@ -1921,7 +1921,7 @@ obj = function _runGuarded() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;
@@ -1961,7 +1961,7 @@ obj = function _runGuarded() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp13) {
         if (0 === c4) {

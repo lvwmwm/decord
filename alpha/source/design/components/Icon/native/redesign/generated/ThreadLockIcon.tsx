@@ -1,14 +1,14 @@
-// Module ID: 7107
-// Function ID: 7108
+// Module ID: 7138
+// Function ID: 7139
 // Name: ThreadLockIcon
-// Dependencies: [19, 21, 575, 5698, 7066, 2]
+// Dependencies: [19, 21, 575, 5729, 7097, 2]
 // Exports: ThreadLockIcon
 
-// Module 7107 (ThreadLockIcon)
+// Module 7138 (ThreadLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 7066 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 7097 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

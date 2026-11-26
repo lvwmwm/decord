@@ -1,27 +1,27 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12505
+// Function ID: 12506
 // Name: ConjureRemovedItems
-// Dependencies: [19, 17, 21, 5012, 575, 1112, 8590, 7141, 12220, 7109, 6084, 5603, 5074, 7151, 4244, 6109, 7150, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1112, 8632, 7172, 12270, 7140, 6115, 5634, 5105, 7182, 4245, 6140, 7181, 2]
 // Exports: ConjureRemoveEverythingField, default, formatWithAppTag
 
-// Module 12456 (ConjureRemovedItems)
+// Module 12505 (ConjureRemovedItems)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import react_native from "react-native" /* 5074 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import TableRowGroup2 from "TableRowGroup" /* 6109 */;
-import FolderIcon from "FolderIcon" /* 7109 */;
-import AppsIcon from "AppsIcon" /* 7141 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 7150 */;
-import FormCheckbox from "FormCheckbox" /* 7151 */;
-import BotTagDefault from "BotTag" /* 8590 */;
-import RobotIcon from "RobotIcon" /* 12220 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import react_native from "react-native" /* 5105 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import TableRowGroup2 from "TableRowGroup" /* 6140 */;
+import FolderIcon from "FolderIcon" /* 7140 */;
+import AppsIcon from "AppsIcon" /* 7172 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 7181 */;
+import FormCheckbox from "FormCheckbox" /* 7182 */;
+import BotTagDefault from "BotTag" /* 8632 */;
+import RobotIcon from "RobotIcon" /* 12270 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -109,7 +109,7 @@ function OptionalItemRow(arg0) {
   }
   obj3 = { direction: "horizontal", spacing: 8, align: "center", children: items };
   const obj4 = { kind: item.kind };
-  Stack = tmp2(6084).Stack;
+  Stack = tmp2(6115).Stack;
   items = [metroRequire(ItemIcon, obj4), , ];
   const obj5 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.optionalLabel, children: item.label };
   items[1] = metroRequire(Text_Text.Text, obj5);
@@ -134,7 +134,7 @@ export default function ConjureRemovedItems(optionalItems) {
   }
   let obj = { spacing: 8, children: items1 };
   const Stack = Stack_Stack.Stack;
-  const obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4244["+E2PqP"]) };
+  const obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4245["+E2PqP"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1 = [metroRequire(Text, obj2), ];
@@ -175,7 +175,7 @@ export function ConjureRemoveEverythingField(checked) {
   const Stack = Stack_Stack.Stack;
   const obj2 = { hasIcons: false, children: metroRequire(TableCheckboxRow, obj3) };
   const TableRowGroup = TableRowGroup2.TableRowGroup;
-  obj3 = { label: intl.string(_modDef4244.gKA9tU), checked, onPress: onChange };
+  obj3 = { label: intl.string(_modDef4245.gKA9tU), checked, onPress: onChange };
   TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
   intl = intl2.intl;
   items1 = [metroRequire(TableRowGroup, obj2), ];

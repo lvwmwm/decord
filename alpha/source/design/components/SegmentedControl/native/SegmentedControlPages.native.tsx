@@ -1,17 +1,17 @@
-// Module ID: 13563
-// Function ID: 13564
+// Module ID: 13615
+// Function ID: 13616
 // Name: SegmentedControlPages
-// Dependencies: [32, 19, 17, 21, 1653, 1706, 13564, 1378, 5272, 6078, 6046, 2]
+// Dependencies: [32, 19, 17, 21, 1654, 1707, 13616, 1379, 5303, 6109, 6077, 2]
 // Exports: SegmentedControlPages
 
-// Module 13563 (SegmentedControlPages)
+// Module 13615 (SegmentedControlPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import react_native2 from "react-native" /* 6078 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import react_native2 from "react-native" /* 6109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_1653 from "module_1653" /* 1653 */;
+import module_1654 from "module_1654" /* 1654 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -49,7 +49,7 @@ function SegmentedControlPage(reportedPageIndex) {
   let tmp6;
   let tmp7;
   let tmp9;
-  const f104397 = () => {
+  const f104695 = () => {
     let tmp2 = index >= activePageRangeStart.get();
     const tmp = index;
     if (tmp2) {
@@ -184,8 +184,8 @@ function SegmentedControlPage(reportedPageIndex) {
   SegmentedControlPagesNativeTsx17.__workletHash = 15945321321692;
   SegmentedControlPagesNativeTsx17.__initData = tmp27;
   const animatedStyle = tmp2Result5.useAnimatedStyle(SegmentedControlPagesNativeTsx17);
-  [tmp31, tmp32] = activePageRangeEnd(obj3.useState(f104397), 2);
-  activePageRangeEnd(obj3.useState(f104397), 2);
+  [tmp31, tmp32] = activePageRangeEnd(obj3.useState(f104695), 2);
+  activePageRangeEnd(obj3.useState(f104695), 2);
   const items11 = [closure_24, activePageRangeStart, activePageRangeEnd];
   c0 = undefined;
   c1 = undefined;
@@ -243,7 +243,7 @@ function SegmentedControlPage(reportedPageIndex) {
 }
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
-let closure_6 = module_1653.createAnimatedComponent(ScrollView);
+let closure_6 = module_1654.createAnimatedComponent(ScrollView);
 let closure_7 = { code: "(function SegmentedControlPagesNativeTsx1(){let[activeIndex]=this.__closure;return activeIndex.get();})" };
 let closure_8 = { code: "(function SegmentedControlPagesNativeTsx2(value){let[scheduleOnRN,updateCurrentActiveIndex]=this.__closure;scheduleOnRN(updateCurrentActiveIndex,value);})" };
 let closure_9 = { code: "(function SegmentedControlPagesNativeTsx3(){let[pageIndex]=this.__closure;return pageIndex.get();})" };

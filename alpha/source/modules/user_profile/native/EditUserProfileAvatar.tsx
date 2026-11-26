@@ -1,26 +1,27 @@
-// Module ID: 16107
-// Function ID: 16108
+// Module ID: 16050
+// Function ID: 16051
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 5013, 21, 5012, 6348, 6349, 2173, 11896, 9460, 16098, 5226, 16099, 2119, 16016, 16016, 14403, 6344, 504, 4837, 9479, 16108, 16018, 1112, 6121, 16109, 1186, 2]
+// Dependencies: [19, 17, 5044, 4955, 21, 5043, 6379, 6380, 2174, 11944, 9502, 504, 16051, 5257, 16052, 2120, 16046, 16046, 14455, 6375, 4868, 9521, 16053, 16048, 1112, 6152, 16054, 1186, 2]
 // Exports: default
 
-// Module 16107 (EditUserProfileAvatar)
+// Module 16050 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
+let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let tmp3;
-const ProfileCustomizationUtils = tmp3(6344);
+const ProfileCustomizationUtils = tmp3(6375);
 const View = react_native.View;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let closure_9 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });
 let result = size.fileFinishedImporting("modules/user_profile/native/EditUserProfileAvatar.tsx");
 
 export default function EditUserProfileAvatar(user) {
@@ -31,16 +32,17 @@ export default function EditUserProfileAvatar(user) {
   let intl;
   let intl2;
   let isUserProfileEditingRefresh;
-  let items3;
   let items4;
   let items5;
+  let items6;
   let pendingAvatarDecoration;
   let setPendingAvatar;
   let statusStyle;
   let str;
   let style;
-  let tmp21Result;
+  let tmp23Result;
   user = user.user;
+  const guildId = user.guildId;
   ({ disabled, style, disableStatus } = user);
   ({ statusStyle, avatarStyle, editIconStyle } = user);
   if (disableStatus === undefined) {
@@ -56,88 +58,142 @@ export default function EditUserProfileAvatar(user) {
   }
   ({ size, isUserProfileEditingRefresh } = user);
   setPendingAvatar = undefined;
+  let stateFromStores;
   let avatarDecoration;
   let handleUploadAvatarSelect;
   let onPress;
   let ref;
-  let tmp = avatarDecoration();
-  let tmp2 = flag;
-  let tmp3 = flag2;
-  let tmp4 = flag(flag2[5]);
-  const analyticsLocations = tmp4(flag(flag2[6]).EDIT_AVATAR).analyticsLocations;
-  let obj = flag(flag2[7]);
+  let tmp = stateFromStores();
+  let tmp2 = guildId;
+  let tmp3 = flag;
+  let tmp4 = guildId(flag[6]);
+  const analyticsLocations = tmp4(guildId(flag[7]).EDIT_AVATAR).analyticsLocations;
+  let obj = guildId(flag[8]);
   const tmp6 = !obj.canUseAnimatedAvatar(user) && !flag;
   const showAnimatedAvatarUpsell = tmp6;
-  const tmp7 = tmp2(tmp3[8])({ isTryItOut: flag, analyticsLocations });
+  let tmp7 = tmp2(tmp3[9])({ isTryItOut: flag, analyticsLocations, guildId });
   const pendingAvatar = tmp7.pendingAvatar;
   ({ pendingAvatarDecoration, setPendingAvatar } = tmp7);
-  let obj2 = user(tmp3[9]);
+  let tmp8 = user;
+  let obj2 = user(tmp3[10]);
   const obj3 = { userId: user.id, image: pendingAvatar };
   const pendingAvatarSrc = obj2.getPendingAvatarSrc(obj3);
-  avatarDecoration = pendingAvatarDecoration;
-  if (undefined === pendingAvatarDecoration) {
+  const items = [showAnimatedAvatarUpsell];
+  const obj4 = user(tmp3[11]);
+  stateFromStores = obj4.useStateFromStores(items, () => {
+    let member = null;
+    if (null != guildId) {
+      member = GuildMemberStore.getMember(tmp, user.id);
+    }
+    return member;
+  });
+  let result = null == guildId;
+  if (!result) {
+    const tmp2Result = tmp2(tmp3[8]);
+    result = tmp2Result.canUsePremiumGuildMemberProfile(user);
+  }
+  if (null != guildId) {
+    let avatarDecoration1;
+    if (stateFromStores != null) {
+      avatarDecoration1 = stateFromStores.avatarDecoration;
+    }
+    avatarDecoration = avatarDecoration1;
+  } else {
     avatarDecoration = user.avatarDecoration;
   }
-  const tmp10 = tmp2(tmp3[10])({ isTryItOut: flag, analyticsLocations });
-  handleUploadAvatarSelect = tmp10;
-  const items = [user, analyticsLocations, pendingAvatar, setPendingAvatar, tmp10, tmp6, avatarDecoration, flag, isUserProfileEditingRefresh];
-  onPress = isUserProfileEditingRefresh.useCallback(() => {
+  if (undefined !== pendingAvatarDecoration) {
+    avatarDecoration = pendingAvatarDecoration;
+  }
+  const tmp13 = tmp2(tmp3[12])({ isTryItOut: flag, analyticsLocations, guildId });
+  handleUploadAvatarSelect = tmp13;
+  const items1 = [user, guildId, , , , , , , , , ];
+  let avatar;
+  const useCallback = flag2.useCallback;
+  if (stateFromStores != null) {
+    avatar = stateFromStores.avatar;
+  }
+  items1[2] = avatar;
+  items1[3] = analyticsLocations;
+  items1[4] = pendingAvatar;
+  items1[5] = setPendingAvatar;
+  items1[6] = tmp13;
+  items1[7] = tmp6;
+  items1[8] = avatarDecoration;
+  items1[9] = flag;
+  items1[10] = isUserProfileEditingRefresh;
+  onPress = useCallback(() => {
+    let avatar;
     let currentAvatarDecoration;
     let editAvatarDecoration;
-    let tmp3Result;
+    let showRemoveAvatar;
+    let tmp7;
+    let tmp8;
     const tmp2 = ActionSheetActionCreatorsDefault;
     let openLazy = tmp2.openLazy;
     let tmp3 = require;
     let obj = {
       showAnimatedAvatarUpsell,
       handleRemoveAvatarSelect: function removeAvatar() {
-        const obj = flag(flag2[11]);
+        const obj = guildId(flag[13]);
         obj.hideActionSheet();
         setPendingAvatar(null);
       },
       handleUploadAvatarSelect,
       handleUploadGIFAvatarSelect: function uploadAvatarGIF() {
         let GIFSelectionContext;
-        const obj = flag(flag2[11]);
+        const obj = guildId(flag[13]);
         obj.hideActionSheet();
-        const openLazy = flag(flag2[11]).openLazy;
-        const obj2 = { profileAssetType: user(flag2[15]).ProfileAssetType.AVATAR, selectionContext: closure_1_1 ? GIFSelectionContext.PROFILE_TRY_IT_OUT : GIFSelectionContext.PROFILE_EDIT };
-        flag(flag2[11]);
-        const tmp3 = user(flag2[13])(flag2[14], flag2.paths);
-        GIFSelectionContext = user(flag2[15]).GIFSelectionContext;
+        const openLazy = guildId(flag[13]).openLazy;
+        const obj2 = { profileAssetType: user(flag[17]).ProfileAssetType.AVATAR, selectionContext: closure_1_2 ? GIFSelectionContext.PROFILE_TRY_IT_OUT : GIFSelectionContext.PROFILE_EDIT, guildId };
+        guildId(flag[13]);
+        const tmp3 = user(flag[15])(flag[16], flag.paths);
+        GIFSelectionContext = user(flag[17]).GIFSelectionContext;
         openLazy(tmp3, "Select GIF Avatar", obj2);
       },
       handleEditAvatarDecorationSelect: editAvatarDecoration,
-      showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar),
+      showRemoveAvatar: showRemoveAvatar(tmp7, avatar),
+      guildId: tmp8,
       analyticsLocations
     };
-    const tmp4 = asyncRequire(16099, dependencyMap.paths);
+    const tmp4 = asyncRequire(16052, dependencyMap.paths);
     if (!flag) {
       editAvatarDecoration = function editAvatarDecoration() {
-        const obj = user(flag2[16]);
-        const obj2 = { user, currentAvatarDecoration, analyticsLocations };
+        const obj = user(flag[18]);
+        const obj2 = { user, guildId, currentAvatarDecoration, analyticsLocations };
         const result = obj.openAvatarDecorationActionSheet(obj2);
       };
     }
-    tmp3Result = ProfileCustomizationUtils;
+    showRemoveAvatar = ProfileCustomizationUtils.showRemoveAvatar;
+    ProfileCustomizationUtils;
+    tmp7 = pendingAvatar;
+    tmp8 = guildId;
+    if (null != guildId) {
+      let avatar1;
+      if (stateFromStores != null) {
+        avatar1 = stateFromStores.avatar;
+      }
+      avatar = avatar1;
+    } else {
+      avatar = user.avatar;
+    }
     openLazy(tmp4, "Change Avatar", obj);
-  }, items);
-  ref = isUserProfileEditingRefresh.useRef(false);
-  const items1 = [user, flag2, onPress];
-  const effect = isUserProfileEditingRefresh.useEffect(() => {
+  }, items1);
+  ref = obj6.useRef(false);
+  const items2 = [user, flag2, onPress];
+  const effect = obj6.useEffect(() => {
     const tmp = flag2 && !ref.current;
     if (tmp) {
       ref.current = true;
       callback();
     }
-  }, items1);
-  const items2 = [showAnimatedAvatarUpsell];
-  const tmp8Result = user(tmp3[18]);
-  const stateFromStores = tmp8Result.useStateFromStores(items2, () => showAnimatedAvatarUpsell.useReducedMotion);
-  const GifAutoPlay = tmp8(tmp3[19]).GifAutoPlay;
+  }, items2);
+  const items3 = [analyticsLocations];
+  const tmp8Result = tmp8(tmp3[11]);
+  const stateFromStores1 = tmp8Result.useStateFromStores(items3, () => analyticsLocations.useReducedMotion);
+  const GifAutoPlay = tmp8(tmp3[20]).GifAutoPlay;
   const setting = GifAutoPlay.useSetting();
-  const tmp16 = pendingAvatar(tmp2(tmp3[20]), { style: avatarStyle, user, pendingAvatarSrc, pendingAvatarDecoration, statusStyle, disableStatus, size });
-  const tmp2Result = tmp2(tmp3[21]);
+  const tmp20 = pendingAvatar(tmp2(tmp3[21]), { style: avatarStyle, user, guildId, pendingAvatarSrc, pendingAvatarDecoration, statusStyle, disableStatus, size });
+  const tmp2Result4 = tmp2(tmp3[22]);
   if (flag) {
     flag = null == pendingAvatarSrc;
   }
@@ -145,34 +201,38 @@ export default function EditUserProfileAvatar(user) {
     flag = null == pendingAvatarDecoration;
   }
   if (flag) {
-    flag = !stateFromStores;
+    flag = !stateFromStores1;
   }
   if (flag) {
     flag = setting;
   }
-  const tmp15Result = pendingAvatar(tmp2Result, { shouldAnimate: flag, children: tmp16 });
+  const tmp19Result = pendingAvatar(tmp2Result4, { shouldAnimate: flag, children: tmp20 });
   if (isUserProfileEditingRefresh) {
-    const obj4 = { style, children: items3 };
-    items3 = [tmp15Result, ];
-    const obj5 = { style: tmp.editButton, onPress, accessibilityLabel: intl2.string(user(tmp3[23]).t["70lEQe"]), disabled };
-    const tmp2Result3 = tmp2(tmp3[22]);
-    intl2 = tmp8(tmp3[23]).intl;
-    items3[1] = pendingAvatar(tmp2Result3, obj5);
-    tmp21Result = tmp21(analyticsLocations, obj4);
+    const obj5 = { style, children: items4 };
+    items4 = [tmp19Result, ];
+    const tmp26 = isUserProfileEditingRefresh;
+    if (result) {
+      const obj7 = { style: tmp.editButton, onPress, accessibilityLabel: intl2.string(tmp8(tmp3[24]).t["70lEQe"]), disabled };
+      const tmp2Result5 = tmp2(tmp3[23]);
+      intl2 = tmp8(tmp3[24]).intl;
+      result = tmp19(tmp2Result5, obj7);
+    }
+    items4[1] = result;
+    tmp23Result = tmp23(tmp26, obj5);
   } else {
-    const obj6 = { style, disabled, onPress, accessibilityRole: "button", accessibilityLabel: intl.string(user(tmp3[23]).t.MUgHIN), children: items4 };
-    const PressableOpacity = tmp8(tmp3[24]).PressableOpacity;
-    intl = tmp8(tmp3[23]).intl;
-    items4 = [tmp15Result, ];
-    const obj7 = { style: items5, size: str };
-    items5 = [tmp.editIcon, editIconStyle];
+    const obj8 = { style, disabled, onPress, accessibilityRole: "button", accessibilityLabel: intl.string(tmp8(tmp3[24]).t.MUgHIN), children: items5 };
+    const PressableOpacity = tmp8(tmp3[25]).PressableOpacity;
+    intl = tmp8(tmp3[24]).intl;
+    items5 = [tmp19Result, ];
+    const obj9 = { style: items6, size: str };
+    items6 = [tmp.editIcon, editIconStyle];
     str = "xs";
-    const tmp2Result4 = tmp2(tmp3[25]);
-    if (size === user(tmp3[26]).AvatarSizes.EDIT_AVATAR_DECORATION) {
+    const tmp2Result6 = tmp2(tmp3[26]);
+    if (size === tmp8(tmp3[27]).AvatarSizes.EDIT_AVATAR_DECORATION) {
       str = "sm";
     }
-    items4[1] = pendingAvatar(tmp2Result4, obj7);
-    tmp21Result = tmp21(PressableOpacity, obj6);
+    items5[1] = pendingAvatar(tmp2Result6, obj9);
+    tmp23Result = tmp23(PressableOpacity, obj8);
   }
-  return tmp21Result;
+  return tmp23Result;
 };

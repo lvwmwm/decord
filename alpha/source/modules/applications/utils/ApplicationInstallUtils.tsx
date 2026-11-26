@@ -1,17 +1,17 @@
-// Module ID: 10057
-// Function ID: 10058
+// Module ID: 10099
+// Function ID: 10100
 // Name: ApplicationInstallUtils
-// Dependencies: [10005, 7042, 6914, 5627, 2]
+// Dependencies: [10047, 7073, 6945, 5658, 2]
 // Exports: canInstallApplication, hasInstallConfiguration, isAppUserInstallable, isKnownConjureApplication, shouldInstallApplicationOnDemand
 
-// Module 10057 (ApplicationInstallUtils)
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5627 */;
-import isConjureApplicationDefault from "isConjureApplication" /* 6914 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7042 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10005 */;
+// Module 10099 (ApplicationInstallUtils)
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5658 */;
+import isConjureApplicationDefault from "isConjureApplication" /* 6945 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10047 */;
 import size from "module_2" /* 2 */;
 
-const f96801 = (oauth2_install_params) => {
+const f97087 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -37,7 +37,7 @@ export function hasInstallConfiguration(application) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f96801);
+      someResult = values.some(f97087);
     }
     tmp = someResult;
   }
@@ -60,7 +60,7 @@ export function canInstallApplication(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f96801);
+      someResult = values.some(f97087);
     }
     tmp = someResult;
   }
@@ -83,7 +83,7 @@ export function isAppUserInstallable(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f96801);
+      someResult = values.some(f97087);
     }
     tmp = someResult;
   }

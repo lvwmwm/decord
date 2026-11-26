@@ -1,14 +1,14 @@
-// Module ID: 12590
-// Function ID: 12591
+// Module ID: 12852
+// Function ID: 12853
 // Name: CheckpointText
-// Dependencies: [19, 6365, 21, 12586, 5603, 2]
+// Dependencies: [19, 6396, 21, 12670, 5634, 2]
 // Exports: default
 
-// Module 12590 (CheckpointText)
+// Module 12852 (CheckpointText)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import CheckpointConstants from "CheckpointConstants" /* 6365 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12586 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import CheckpointConstants from "CheckpointConstants" /* 6396 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12670 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

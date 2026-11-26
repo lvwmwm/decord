@@ -1,10 +1,10 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 16922
+// Function ID: 16923
 // Name: actions/AnalyticsTrackingActionCreators
 // Dependencies: [572, 2]
 // Exports: track
 
-// Module 16871 (actions/AnalyticsTrackingActionCreators)
+// Module 16922 (actions/AnalyticsTrackingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

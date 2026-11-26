@@ -1,30 +1,30 @@
-// Module ID: 17287
-// Function ID: 17288
+// Module ID: 17338
+// Function ID: 17339
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1230, 13500, 4883, 5045, 17288, 1071, 21, 5012, 575, 1284, 2168, 10324, 13423, 17190, 7518, 13429, 4842, 4845, 1628, 504, 5603, 6109, 6113, 2]
+// Dependencies: [5, 19, 17, 1231, 13552, 4914, 5076, 17339, 1071, 21, 5043, 575, 1285, 2169, 10366, 13475, 17241, 7549, 13481, 4873, 4876, 1629, 504, 5634, 6140, 6144, 2]
 // Exports: default
 
-// Module 17287 (DevToolsGuildPowerupsScreen)
+// Module 17338 (DevToolsGuildPowerupsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import _modDef2168 from "module_2168" /* 2168 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4842 */;
-import dismissible_content from "dismissible_content" /* 4845 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7518 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13429 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17190 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4873 */;
+import dismissible_content from "dismissible_content" /* 4876 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7549 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13481 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17241 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13500 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 17288 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13552 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 17339 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c5, c6, dependencyMap, importDefault;
@@ -61,7 +61,7 @@ let obj = function _setWarningBoosts() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -83,7 +83,7 @@ let obj = function _setWarningBoosts() {
             const patch = HTTP.patch;
             addResult = null;
             if (!closure_2) {
-              const obj4 = _modDef2168();
+              const obj4 = _modDef2169();
               addResult = obj4.add(1, "day");
             }
             c5 = 1;
@@ -104,7 +104,7 @@ let obj = function _setWarningBoosts() {
           const obj2 = closure_132_0(closure_132_2[15]);
           const guildBoostEntitlements = obj2.fetchGuildBoostEntitlements(closure_0, true);
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp19) {
         c6 = 3;
@@ -127,7 +127,7 @@ obj = function _sendPowerupsSystemMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -158,7 +158,7 @@ obj = function _sendPowerupsSystemMessage() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -196,7 +196,7 @@ function GuildDCSwitchRow(dc) {
     }
   }, items);
   obj = { label: closure_14(dc), value: isDismissed, onValueChange: callback };
-  const TableSwitchRow = dc(7518).TableSwitchRow;
+  const TableSwitchRow = dc(7549).TableSwitchRow;
   return closure_17(TableSwitchRow, obj);
 }
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
@@ -273,7 +273,7 @@ export default function DevToolsGuildPowerupsScreen() {
     return items;
   });
   if (null == stateFromStores) {
-    const obj5 = { style: items4, children: closure_17(stateFromStores(5603).Text, { variant: "heading-sm/semibold", color: "text-muted", children: "No guild selected" }) };
+    const obj5 = { style: items4, children: closure_17(stateFromStores(5634).Text, { variant: "heading-sm/semibold", color: "text-muted", children: "No guild selected" }) };
     items4 = [, ];
     ({ container: arr7[0], noGuildContainer: arr7[1] } = tmp);
     tmp15Result = closure_17(closure_6, obj5);
@@ -283,13 +283,13 @@ export default function DevToolsGuildPowerupsScreen() {
     items5[1] = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
     let str = stateFromStores1;
     const obj7 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-    const TableRowGroup6 = tmp5(6109).TableRowGroup;
+    const TableRowGroup6 = tmp5(6140).TableRowGroup;
     const tmp16 = closure_5;
     if (stateFromStores1 == null) {
       str = "Unknown";
     }
     const _HermesInternal = HermesInternal;
-    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_17(stateFromStores(6113).TableRow, obj9) };
+    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_17(stateFromStores(6144).TableRow, obj9) };
     obj9 = {
       label: "Reset Notification Indicators",
       onPress() {
@@ -299,21 +299,21 @@ export default function DevToolsGuildPowerupsScreen() {
     };
     items6 = [closure_17(TableRowGroup6, obj8), , , , , ];
     const obj10 = { title: "Warning State", hasIcons: false, children: items7 };
-    const TableRowGroup = tmp5(6109).TableRowGroup;
+    const TableRowGroup = tmp5(6140).TableRowGroup;
     const obj11 = {
       label: "Set Half Boosts expiring in 1 day",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2.slice(Math.floor(closure_2.length / 2)), false);
         }
     };
-    items7 = [closure_17(tmp5(6113).TableRow, obj11), ];
+    items7 = [closure_17(tmp5(6144).TableRow, obj11), ];
     const obj12 = {
       label: "Reset End Date",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2, true);
         }
     };
-    items7[1] = closure_17(stateFromStores(6113).TableRow, obj12);
+    items7[1] = closure_17(stateFromStores(6144).TableRow, obj12);
     items6[1] = closure_18(TableRowGroup, obj10);
     const obj13 = {
       title: "User Level DCs",
@@ -323,7 +323,7 @@ export default function DevToolsGuildPowerupsScreen() {
           return closure_1_17(UserDCSwitchRow, obj, dc);
         })
     };
-    const TableRowGroup2 = tmp5(6109).TableRowGroup;
+    const TableRowGroup2 = tmp5(6140).TableRowGroup;
     items6[2] = closure_17(TableRowGroup2, obj13);
     const obj14 = {
       title: "Guild Level DCs",
@@ -333,7 +333,7 @@ export default function DevToolsGuildPowerupsScreen() {
           return authStore4(GuildDCSwitchRow, obj, dc);
         })
     };
-    const TableRowGroup3 = tmp5(6109).TableRowGroup;
+    const TableRowGroup3 = tmp5(6140).TableRowGroup;
     items6[3] = closure_17(TableRowGroup3, obj14);
     const obj15 = {
       title: "Server Tag Guild Level DCs",
@@ -343,10 +343,10 @@ export default function DevToolsGuildPowerupsScreen() {
           return authStore4(GuildDCSwitchRow, obj, dc);
         })
     };
-    const TableRowGroup4 = tmp5(6109).TableRowGroup;
+    const TableRowGroup4 = tmp5(6140).TableRowGroup;
     items6[4] = closure_17(TableRowGroup4, obj15);
-    const obj16 = { title: "System Messages", hasIcons: false, children: closure_17(stateFromStores(6113).TableRow, obj17) };
-    const TableRowGroup5 = tmp5(6109).TableRowGroup;
+    const obj16 = { title: "System Messages", hasIcons: false, children: closure_17(stateFromStores(6144).TableRow, obj17) };
+    const TableRowGroup5 = tmp5(6140).TableRowGroup;
     obj17 = {
       label: "Send Powerups System Message",
       onPress() {

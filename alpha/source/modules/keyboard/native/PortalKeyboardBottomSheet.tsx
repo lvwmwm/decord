@@ -1,24 +1,24 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 13041
+// Function ID: 13042
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 10232, 21, 1378, 5012, 575, 8447, 5242, 1653, 12990, 5073, 5572, 12991, 504, 5244, 5228, 6932, 1706, 2018, 5573, 5576, 1628, 1494, 5204, 5184, 6075, 9537, 5586, 2]
+// Dependencies: [32, 19, 17, 10274, 21, 1379, 5043, 575, 8489, 5273, 1654, 13042, 5104, 5603, 13043, 504, 5275, 5259, 6963, 1707, 2019, 5604, 5607, 1629, 1495, 5235, 5215, 6106, 9579, 5617, 2]
 // Exports: default
 
-// Module 12989 (PortalKeyboardBottomSheet)
+// Module 13041 (PortalKeyboardBottomSheet)
 import nativeDefault from "native" /* 575 */;
-import _modDef1653 from "module_1653" /* 1653 */;
-import HapticUtils from "HapticUtils" /* 5228 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5242 */;
-import BottomSheetModal from "BottomSheetModal" /* 5244 */;
-import isChannelFocused from "isChannelFocused" /* 6932 */;
-import native from "native" /* 8447 */;
+import _modDef1654 from "module_1654" /* 1654 */;
+import HapticUtils from "HapticUtils" /* 5259 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5273 */;
+import BottomSheetModal from "BottomSheetModal" /* 5275 */;
+import isChannelFocused from "isChannelFocused" /* 6963 */;
+import native from "native" /* 8489 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NativeMenuStore from "NativeMenuStore" /* 10232 */;
+import NativeMenuStore from "NativeMenuStore" /* 10274 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let Platform;
@@ -54,7 +54,7 @@ function PortalKeyboardBackground(arg0) {
   const obj = { pointerEvents, style: items };
   items = [style, closure_10().background, roundingStyle];
   closure_10();
-  return metroImportDefault(_modDef1653.View, obj);
+  return metroImportDefault(_modDef1654.View, obj);
 }
 ({ Platform, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

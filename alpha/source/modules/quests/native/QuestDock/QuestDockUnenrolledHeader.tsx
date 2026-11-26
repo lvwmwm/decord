@@ -1,34 +1,34 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16780
+// Function ID: 16781
 // Name: QuestDockUnenrolledHeader
-// Dependencies: [19, 17, 6840, 16629, 1082, 21, 575, 5012, 16663, 16626, 16648, 6843, 8350, 5221, 5019, 16623, 16730, 5603, 1112, 16691, 9861, 5699, 16733, 16734, 16735, 16630, 1653, 5613, 13783, 2]
+// Dependencies: [19, 17, 6871, 16680, 1082, 21, 575, 5043, 16714, 16677, 16699, 6874, 8392, 5252, 5050, 16674, 16781, 5634, 1112, 16742, 9903, 5730, 16784, 16785, 16786, 16681, 1654, 5644, 13835, 2]
 
-// Module 16729 (QuestDockUnenrolledHeader)
+// Module 16780 (QuestDockUnenrolledHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl2 from "intl" /* 1112 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import useThemeDefault from "useTheme" /* 5221 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import QuestConstants from "QuestConstants" /* 6840 */;
-import QuestTypes from "QuestTypes" /* 6843 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8350 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 13783 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16630 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16648 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16663 */;
-import QuestGameLogotypeDefault from "QuestGameLogotype" /* 16691 */;
-import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 16735 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import useThemeDefault from "useTheme" /* 5252 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import QuestConstants from "QuestConstants" /* 6871 */;
+import QuestTypes from "QuestTypes" /* 6874 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8392 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 13835 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16681 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16699 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16714 */;
+import QuestGameLogotypeDefault from "QuestGameLogotype" /* 16742 */;
+import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 16786 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16629 */;
+import QuestDockConstants from "QuestDockConstants" /* 16680 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let num, obj1, tmp2;
 
 let QUEST_DOCK_COLLAPSED_HEADER_PADDING_LEFT;
@@ -58,8 +58,8 @@ function QuestDockHeaderRewardTile() {
   const questDockQuest = obj.useQuestDockQuest();
   const activeQuestDockMode = react.useContext(QuestDockGestureContext.QuestDockGestureContext).activeQuestDockMode;
   const items = [closure_15, , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items[1] = spring_spring.withSpring;
   items[2] = activeQuestDockMode;
   items[3] = QuestDockMode;
@@ -88,7 +88,7 @@ function QuestDockHeaderRewardTile() {
   const animatedStyle = useAnimatedStyle(QuestDockUnenrolledHeaderTsx1);
   obj3 = { style: items2, children: metroImportAll(QuestRewardTileDefault, size) };
   items2 = [tmp.squareAssetOverlay, animatedStyle];
-  View = _modDef1653.View;
+  View = _modDef1654.View;
   size = { quest: questDockQuest, height: PX_40, width: PX_40, withAnimation: false };
   return metroImportAll(View, obj2);
 }
@@ -103,7 +103,7 @@ function QuestDockRewardLogotype(children) {
   children = children.children;
   const activeQuestDockMode = react.useContext(QuestDockGestureContext.QuestDockGestureContext).activeQuestDockMode;
   let items = [closure_17, activeQuestDockMode, QuestDockMode, PX_10, closure_12, , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
   items[5] = spring_spring.withSpring;
   items[6] = metroRequire;
   let c0;
@@ -134,7 +134,7 @@ function QuestDockRewardLogotype(children) {
   QuestDockUnenrolledHeaderTsx2.__workletHash = 8253036165059;
   QuestDockUnenrolledHeaderTsx2.__initData = tmp3;
   const style = useAnimatedStyle(QuestDockUnenrolledHeaderTsx2);
-  return metroImportAll(_modDef1653.View, { style, children });
+  return metroImportAll(_modDef1654.View, { style, children });
 }
 function QuestDockOrbAmountCopy(orbCount) {
   let intl;
@@ -189,11 +189,11 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader(squareAsset) {
   }
   const orbCount = squareAsset.orbCount;
   let questCreative;
-  let obj = questCreative(16663);
+  let obj = questCreative(16714);
   const questDockQuest = obj.useQuestDockQuest();
-  let obj2 = questCreative(16663);
+  let obj2 = questCreative(16714);
   questCreative = obj2.useQuestCreative(questDockQuest);
-  const obj3 = questCreative(16626);
+  const obj3 = questCreative(16677);
   const items = [questCreative];
   const actionSheetPressHandler = obj3.useActionSheetPressHandler(questCreative);
   const callback = react.useCallback(() => {
@@ -203,7 +203,7 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader(squareAsset) {
     obj.showModal(obj2);
   }, items);
   const tmp8 = useThemeDefault();
-  const obj4 = questCreative(5019);
+  const obj4 = questCreative(5050);
   if (obj4.isThemeDark(tmp8)) {
     LIGHT = tmp9.DARK;
     tmp10 = tmp9;
@@ -212,10 +212,10 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader(squareAsset) {
     tmp10 = tmp9;
   }
   const tmp11 = closure_13();
-  const tmpResult = questCreative(16623);
+  const tmpResult = questCreative(16674);
   const questGameLogotypeAssetUrl = tmpResult.useQuestGameLogotypeAssetUrl(questDockQuest);
   if ("bountyIllustration" === str2) {
-    tmp16 = closure_8(tmp(16730).QuestDockBountyOrbIllustration, {});
+    tmp16 = closure_8(tmp(16781).QuestDockBountyOrbIllustration, {});
     tmp15 = closure_8;
   } else {
     if ("orbAmount" === str2) {
@@ -227,17 +227,17 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader(squareAsset) {
     }
     tmp15 = closure_8;
     const obj6 = { style: tmp11.getRewardLabel, variant: "body-sm/medium", color: "interactive-text-active", children: intl.string(questCreative(1112).t["3mgEQf"]) };
-    const Text = tmp(5603).Text;
+    const Text = tmp(5634).Text;
     intl = tmp(1112).intl;
     tmp16 = closure_8(Text, obj6);
   }
   const obj7 = { assetUrl: questGameLogotypeAssetUrl, height: 36, maxWidth: 120, style: tmp11.logo };
   const tmp15Result = tmp15(QuestGameLogotypeDefault, obj7);
   if ("advertiser" === str) {
-    const obj8 = { assetUrl: tmpResult2.getQuestAsset(questDockQuest, questCreative(9861).QuestAssetType.GAME_TILE, LIGHT).url };
-    tmpResult2 = questCreative(9861);
+    const obj8 = { assetUrl: tmpResult2.getQuestAsset(questDockQuest, questCreative(9903).QuestAssetType.GAME_TILE, LIGHT).url };
+    tmpResult2 = questCreative(9903);
     tmp15Result3 = tmp15(QuestDockAdvertiserAsset, obj8);
-    const obj9 = { style: tmp11.advertiserName, children: tmp15(questCreative(5603).Text, obj10) };
+    const obj9 = { style: tmp11.advertiserName, children: tmp15(questCreative(5634).Text, obj10) };
     obj10 = { variant: "body-sm/semibold", color: "text-strong", lineClamp: 2, style: tmp11.advertiserNameText, children: questDockQuest.config.messages.gamePublisher };
     tmp15Result4 = tmp15(View, obj9);
   } else if ("reward" === str) {
@@ -248,9 +248,9 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader(squareAsset) {
     let tmp7Result3;
     const tmp7Result = FastImageDefault;
     if (LIGHT === tmp10.DARK) {
-      tmp7Result3 = tmp7(16733);
+      tmp7Result3 = tmp7(16784);
     } else {
-      tmp7Result3 = tmp7(16734);
+      tmp7Result3 = tmp7(16785);
     }
     const obj12 = { source: tmp7Result3, resizeMode: "contain", style: tmp11.wreathImage };
     tmp15Result3 = tmp15(tmp7Result, obj12);
@@ -261,7 +261,7 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader(squareAsset) {
   const obj13 = { blurHash: questBarHeroBlurhash, collapsedContent: tmp16, secondaryContentWidth: prop, secondaryContentLayout: str5, withPressableDisclosure: true, onDisclosurePress: callback, onSubmenuPress: actionSheetPressHandler, children: tmp32(tmp33, obj14) };
   prop = undefined;
   if ("bountyIllustration" === str2) {
-    prop = tmp(16730).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH;
+    prop = tmp(16781).QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH;
   }
   str5 = "overlay";
   if ("advertiser" === str) {

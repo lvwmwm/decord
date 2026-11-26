@@ -1,12 +1,12 @@
-// Module ID: 15839
-// Function ID: 15840
+// Module ID: 15890
+// Function ID: 15891
 // Name: confirmModal
-// Dependencies: [19, 21, 6017, 6021, 1112, 2]
+// Dependencies: [19, 21, 6048, 6052, 1112, 2]
 // Exports: openFrameConfirmModal
 
-// Module 15839 (confirmModal)
-import useAlertStore from "useAlertStore" /* 6017 */;
-import AlertModal2 from "AlertModal" /* 6021 */;
+// Module 15890 (confirmModal)
+import useAlertStore from "useAlertStore" /* 6048 */;
+import AlertModal2 from "AlertModal" /* 6052 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ export function openFrameConfirmModal(arg0) {
   tmp6 = React3;
   tmp7 = _false;
   if ("confirm" === type) {
-    const AlertActionButton = tmp(6021).AlertActionButton;
+    const AlertActionButton = tmp(6052).AlertActionButton;
     if (cancelText == null) {
       const intl = tmp(1112).intl;
       cancelText = intl.string(tmp(1112).t["ETE/oC"]);

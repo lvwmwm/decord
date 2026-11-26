@@ -1,25 +1,25 @@
-// Module ID: 7813
-// Function ID: 7814
+// Module ID: 7847
+// Function ID: 7848
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7814, 4865, 4861, 6901, 1071, 7815, 1284, 7821, 7828, 6962, 5189, 6095, 6766, 572, 6952, 1255, 1098, 5019, 1112, 7830, 6097, 5772, 2]
+// Dependencies: [32, 5, 7848, 4896, 4892, 6932, 1071, 7849, 1285, 7855, 7862, 6993, 5220, 6126, 6797, 572, 6983, 1256, 1098, 5050, 1112, 7864, 6128, 5803, 2]
 
-// Module 7813 (ChannelActionCreators)
+// Module 7847 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import ChannelRecord from "ChannelRecord" /* 4865 */;
-import shared from "shared" /* 5019 */;
-import RootNavigationRef from "RootNavigationRef" /* 5189 */;
-import preloadChannelDefault from "preloadChannel" /* 6097 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6766 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6952 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7821 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import ChannelRecord from "ChannelRecord" /* 4896 */;
+import shared from "shared" /* 5050 */;
+import RootNavigationRef from "RootNavigationRef" /* 5220 */;
+import preloadChannelDefault from "preloadChannel" /* 6128 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6797 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6983 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7855 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7814 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import ReadStateStore from "ReadStateStore" /* 6901 */;
+import ChangelogStore from "ChangelogStore" /* 7848 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import ReadStateStore from "ReadStateStore" /* 6932 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -32,8 +32,8 @@ let map1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(6095);
-const SurveyActionTypes = tmp(7828);
+const transitionToChannel = tmp5(6126);
+const SurveyActionTypes = tmp(7862);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -76,7 +76,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -316,7 +316,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(6095);
+          const tmp6Result = tmp6(6126);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -371,7 +371,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -492,17 +492,17 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "isArray" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "text" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {
       const obj5 = flag3(1098);
       obj5.transitionTo(constants2.FRIENDS);
     }
-    const HTTP = flag3(1284).HTTP;
+    const HTTP = flag3(1285).HTTP;
     const request = { url: closure_11.CHANNEL(id), query: { silent: flag2 }, oldFormErrors: true, rejectWithError: obj7.rejectWithMigratedError() };
     const del = HTTP.del;
-    obj7 = flag3(1284);
+    obj7 = flag3(1285);
     const delResult = del(request);
     const nextPromise = delResult.then(() => {
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
@@ -680,7 +680,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -827,7 +827,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;

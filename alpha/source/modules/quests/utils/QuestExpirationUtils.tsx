@@ -1,10 +1,10 @@
-// Module ID: 8330
-// Function ID: 8331
+// Module ID: 8380
+// Function ID: 8381
 // Name: QuestExpirationUtils
 // Dependencies: [2]
 // Exports: findNextUpcomingExpirationEpochMs, isQuestConfigExpired, isQuestExpired
 
-// Module 8330 (QuestExpirationUtils)
+// Module 8380 (QuestExpirationUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/utils/QuestExpirationUtils.tsx");

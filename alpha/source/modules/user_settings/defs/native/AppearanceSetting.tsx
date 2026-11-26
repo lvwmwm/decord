@@ -1,26 +1,26 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 16872
+// Function ID: 16873
 // Name: AppearanceSetting
-// Dependencies: [5036, 1194, 1071, 5221, 504, 1238, 8973, 1112, 3110, 11914, 16822, 16824, 2]
+// Dependencies: [5067, 1194, 1071, 5252, 504, 1239, 9015, 1112, 3111, 11962, 16873, 16875, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 16821 (AppearanceSetting)
+// Module 16872 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import ThemeConstants from "ThemeConstants" /* 1194 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1238 */;
-import useThemeDefault from "useTheme" /* 5221 */;
-import useActiveTheme from "useActiveTheme" /* 8973 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16822 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5036 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import useThemeDefault from "useTheme" /* 5252 */;
+import useActiveTheme from "useActiveTheme" /* 9015 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16873 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5067 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const _modDef3110 = tmp(3110);
+const _modDef3111 = tmp(3111);
 function useAppearanceSettingTrailing() {
   let gradientPreset;
   const items = [ClientThemesBackgroundStore];
@@ -33,7 +33,7 @@ function useAppearanceSettingTrailing() {
   const activeThemeType = obj3.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
     const intl2 = tmp4(1112).intl;
-    return intl2.string(_modDef3110.KSBBpC);
+    return intl2.string(_modDef3111.KSBBpC);
   } else if (ActiveThemeType.CLIENT === activeThemeType) {
     let name;
     if (stateFromStores != null) {

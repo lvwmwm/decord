@@ -1,11 +1,11 @@
-// Module ID: 5008
-// Function ID: 5009
+// Module ID: 5039
+// Function ID: 5040
 // Name: BurstReactionEffectUtils
-// Dependencies: [5009, 12, 2]
+// Dependencies: [5040, 12, 2]
 // Exports: replaceAnimationColors
 
-// Module 5008 (BurstReactionEffectUtils)
-import ColorUtils from "ColorUtils" /* 5009 */;
+// Module 5039 (BurstReactionEffectUtils)
+import ColorUtils from "ColorUtils" /* 5040 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

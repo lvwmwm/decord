@@ -1,20 +1,20 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14498
+// Function ID: 14499
 // Name: InviteEmbed
-// Dependencies: [5731, 1386, 1071, 5745, 14447, 5743, 14451, 14453, 14454, 14457, 14459, 2]
+// Dependencies: [5762, 1387, 1071, 5776, 14499, 5774, 14503, 14505, 14506, 14509, 14511, 2]
 // Exports: createInviteEmbed
 
-// Module 14446 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 5743 */;
-import Constants2 from "Constants" /* 5745 */;
-import GuildInvite from "GuildInvite" /* 14447 */;
-import GroupDMInvite from "GroupDMInvite" /* 14451 */;
-import FriendInvite from "FriendInvite" /* 14453 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14454 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14457 */;
-import GuildProfileInvite from "GuildProfileInvite" /* 14459 */;
-import InviteStore from "InviteStore" /* 5731 */;
-import UserStore from "UserStore" /* 1386 */;
+// Module 14498 (InviteEmbed)
+import InviteTypeUtils from "InviteTypeUtils" /* 5774 */;
+import Constants2 from "Constants" /* 5776 */;
+import GuildInvite from "GuildInvite" /* 14499 */;
+import GroupDMInvite from "GroupDMInvite" /* 14503 */;
+import FriendInvite from "FriendInvite" /* 14505 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14506 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14509 */;
+import GuildProfileInvite from "GuildProfileInvite" /* 14511 */;
+import InviteStore from "InviteStore" /* 5762 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

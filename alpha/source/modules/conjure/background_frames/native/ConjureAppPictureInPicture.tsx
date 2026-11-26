@@ -1,26 +1,26 @@
-// Module ID: 19326
-// Function ID: 19327
+// Module ID: 19389
+// Function ID: 19390
 // Name: ConjureAppPictureInPicture
-// Dependencies: [19, 17, 6905, 4883, 1071, 19189, 6906, 11735, 21, 4969, 5012, 575, 19325, 7617, 504, 7021, 5603, 14013, 10356, 7136, 7484, 10192, 19327, 15901, 1653, 11460, 5228, 5272, 1706, 5222, 5613, 1112, 4244, 5073, 18556, 15905, 2]
+// Dependencies: [19, 17, 6936, 4914, 1071, 19252, 6937, 11783, 21, 5000, 5043, 575, 19388, 7648, 504, 7052, 5634, 14065, 10401, 7167, 7515, 10234, 19390, 15952, 1654, 11507, 5259, 5303, 1707, 5253, 5644, 1112, 4245, 5104, 18619, 15956, 2]
 
-// Module 19326 (ConjureAppPictureInPicture)
+// Module 19389 (ConjureAppPictureInPicture)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 7617 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11735 */;
-import conjureFrameSound from "conjureFrameSound" /* 14013 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19189 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19325 */;
-import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19327 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 7648 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11783 */;
+import conjureFrameSound from "conjureFrameSound" /* 14065 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19252 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19388 */;
+import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19390 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6905 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import FramesConstants from "FramesConstants" /* 6906 */;
+import FramesStore from "FramesStore" /* 6936 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import FramesConstants from "FramesConstants" /* 6937 */;
 import Fragment from "Fragment" /* 21 */;
-import DeviceUtils_mod from "DeviceUtils" /* 4969 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import DeviceUtils_mod from "DeviceUtils" /* 5000 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,8 +39,8 @@ let size;
 let tmp;
 let tmp2;
 let unpackModuleId;
-const _mod1706 = tmp(1706);
-const GuildIconDefault = tmp2(7021);
+const _mod1707 = tmp(1707);
+const GuildIconDefault = tmp2(7052);
 function StaticCard(arg0) {
   let appName;
   let closure_0;
@@ -74,9 +74,9 @@ function SoundBadge(frame) {
   if (obj.showsFrameSoundToggle(frame)) {
     let VoiceNormalIcon;
     if (frame.data.userMuted) {
-      VoiceNormalIcon = tmp2(10356).VoiceXIcon;
+      VoiceNormalIcon = tmp2(10401).VoiceXIcon;
     } else {
-      VoiceNormalIcon = tmp2(7136).VoiceNormalIcon;
+      VoiceNormalIcon = tmp2(7167).VoiceNormalIcon;
     }
     const obj2 = { style: tmp.soundBadge, pointerEvents: "none", children: authStore(VoiceNormalIcon, obj3) };
     obj3 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
@@ -369,7 +369,7 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
     items2[4] = closeTargetCenter;
     items2[5] = sharedValue4;
     items2[6] = closeTargetHovered;
-    items2[7] = _mod1706.scheduleOnRN;
+    items2[7] = _mod1707.scheduleOnRN;
     items2[8] = callback4;
     c0 = undefined;
     c1 = undefined;
@@ -413,7 +413,7 @@ const memoResult = react.memo(function ConjureAppPictureInPicture(frameId) {
     const items4 = [closure_22, sharedValue4, sharedValue5, , , , , , ];
     const onEnd = onUpdate(ConjureAppPictureInPictureTsx3).onEnd;
     onUpdate(ConjureAppPictureInPictureTsx3);
-    items4[3] = _mod1706.scheduleOnRN;
+    items4[3] = _mod1707.scheduleOnRN;
     items4[4] = callback3;
     items4[5] = sharedValue;
     items4[6] = conjureAppPictureInPictureLayout.getSnappedPosition;

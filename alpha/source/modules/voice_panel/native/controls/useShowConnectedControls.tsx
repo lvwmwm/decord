@@ -1,31 +1,44 @@
-// Module ID: 19523
-// Function ID: 19524
+// Module ID: 19586
+// Function ID: 19587
 // Name: useShowConnectedControls
-// Dependencies: [19, 18189, 11733, 8577, 2]
+// Dependencies: [19, 4892, 18248, 11781, 8619, 504, 2]
 // Exports: default
 
-// Module 19523 (useShowConnectedControls)
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8577 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18189 */;
+// Module 19586 (useShowConnectedControls)
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8619 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18248 */;
 import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/useShowConnectedControls.tsx");
 
 export default function useShowConnectedControls(arg0) {
+  let closure_0;
   let connected;
   let dockJoinMorphOrigin;
   let isDockEnabled;
+  _require = arg0;
   let tmp = useIsConnectedToVoiceChannelDefault(arg0);
   const context = react.useContext(VoicePanelStateContextDefault);
   ({ connected, isDockEnabled, dockJoinMorphOrigin } = context);
-  let tmp3 = useStateFromSharedValueDefault(connected);
+  let stateFromStores = useStateFromSharedValueDefault(connected);
+  const items = [ChannelStore];
+  const items1 = [arg0];
+  const tmp4 = null != useStateFromSharedValueDefault(dockJoinMorphOrigin);
+  const obj = require("get initialized");
   if (isDockEnabled) {
-    if (tmp3) {
-      tmp3 = null == useStateFromSharedValueDefault(dockJoinMorphOrigin);
+    if (stateFromStores) {
+      stateFromStores = obj.useStateFromStores(items, () => null != ChannelStore.getChannel(closure_0), items1);
     }
-    tmp = tmp3;
+    if (stateFromStores) {
+      stateFromStores = !tmp4;
+    }
+    tmp = stateFromStores;
   }
   return tmp;
 };

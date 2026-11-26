@@ -1,14 +1,14 @@
-// Module ID: 7032
-// Function ID: 7033
+// Module ID: 7063
+// Function ID: 7064
 // Name: MemberVerificationUtils
-// Dependencies: [7002, 1071, 5048, 1254, 2]
+// Dependencies: [7033, 1071, 5079, 1255, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 7032 (MemberVerificationUtils)
+// Module 7063 (MemberVerificationUtils)
 import Constants from "Constants" /* 1071 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5048 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 7002 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5079 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 7033 */;
 import size from "module_2" /* 2 */;
 
 let has;

@@ -1,19 +1,19 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17546
+// Function ID: 17547
 // Name: CollectiblesProgressiveImage
-// Dependencies: [19, 17, 21, 1653, 5699, 5222, 2]
+// Dependencies: [19, 17, 21, 1654, 5730, 5253, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 17489 (CollectiblesProgressiveImage)
+// Module 17546 (CollectiblesProgressiveImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import FastImageDefault from "FastImage" /* 5699 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import FastImageDefault from "FastImage" /* 5730 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
@@ -28,12 +28,12 @@ export function CollectiblesProgressiveImage(arg0) {
   ({ source, style } = arg0);
   const merged = Object.assign(arg0, Object.assign({ source: 0, style: 0 }));
   let sharedValue;
-  let obj = sharedValue(1653);
+  let obj = sharedValue(1654);
   sharedValue = obj.useSharedValue(0);
   const items = [closure_5, sharedValue];
   let c0;
   [tmp4, tmp5] = items;
-  const obj2 = sharedValue(1653);
+  const obj2 = sharedValue(1654);
   class CollectiblesProgressiveImageTsx1 {
     constructor() {
       obj = { opacity: closure_0.get() };
@@ -46,7 +46,7 @@ export function CollectiblesProgressiveImage(arg0) {
   CollectiblesProgressiveImageTsx1.__initData = tmp4;
   const animatedStyle = obj2.useAnimatedStyle(CollectiblesProgressiveImageTsx1);
   const items2 = [style, animatedStyle];
-  const View = _modDef1653.View;
+  const View = _modDef1654.View;
   FastImageDefault;
   const merged1 = Object.assign(merged);
   return <View style={items2}>{null}</View>;

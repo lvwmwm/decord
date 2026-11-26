@@ -1,12 +1,12 @@
-// Module ID: 18820
-// Function ID: 18821
+// Module ID: 18883
+// Function ID: 18884
 // Name: ConjurePerfTraceFormat
-// Dependencies: [32, 7684, 18821, 2]
-// Exports: formatDuration, formatSpanCount, formatTokens, perfCategoryTotal, perfModelSummary, perfNodeSections, perfSmallerLabel, perfTickLabel, perfTraceDuration, perfTraceSummary
+// Dependencies: [32, 7717, 18884, 2]
+// Exports: formatDuration, formatSpanCount, formatTokens, perfCategoryTotal, perfModelSummary, perfNodeSections, perfNodeTimeLabel, perfSmallerLabel, perfTickLabel, perfTraceDuration, perfTraceSummary
 
-// Module 18820 (ConjurePerfTraceFormat)
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 7684 */;
-import ConjureTimeFormat from "ConjureTimeFormat" /* 18821 */;
+// Module 18883 (ConjurePerfTraceFormat)
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 7717 */;
+import ConjureTimeFormat from "ConjureTimeFormat" /* 18884 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -65,9 +65,9 @@ function sectionFor(service, str) {
   }
   return str;
 }
-function detail(Duration, value) {
+function detail(Start, value) {
   let hasItem;
-  const obj = { label: Duration, value, block: hasItem };
+  const obj = { label: Start, value, block: hasItem };
   hasItem = value.length > 80 || value.includes("\n");
   return obj;
 }
@@ -130,6 +130,42 @@ export function formatSpanCount(dropped) {
   return "" + dropped + " " + str + str2;
 }
 export { perfNodeDuration };
+export function perfNodeTimeLabel(marker) {
+  let combined1;
+  if (marker.marker) {
+    let combined;
+    const _Math2 = Math;
+    const rounded = Math.round(marker.start);
+    if (rounded < 1000) {
+      const _HermesInternal4 = HermesInternal;
+      combined = "" + rounded + "ms";
+    } else {
+      const result = rounded / 1000;
+      const _HermesInternal3 = HermesInternal;
+      combined = "" + result.toFixed(1) + "s";
+    }
+    const _HermesInternal5 = HermesInternal;
+    combined1 = "at " + combined;
+  } else {
+    let totalMs;
+    if (marker.count > 1) {
+      totalMs = marker.totalMs;
+    } else {
+      totalMs = marker.end - marker.start;
+    }
+    const _Math = Math;
+    const rounded1 = Math.round(totalMs);
+    if (rounded1 < 1000) {
+      const _HermesInternal2 = HermesInternal;
+      combined1 = "" + rounded1 + "ms";
+    } else {
+      const result1 = rounded1 / 1000;
+      const _HermesInternal = HermesInternal;
+      combined1 = "" + result1.toFixed(1) + "s";
+    }
+  }
+  return combined1;
+}
 export function perfSmallerLabel(row) {
   const count = row.count;
   let str = "s";
@@ -158,8 +194,11 @@ export function perfTickLabel(arg0) {
 }
 export function perfNodeSections(node) {
   let first;
-  let tmp23;
-  let items = [detail("Start", "+" + formatPerfMs(node.start)), detail("Duration", perfNodeDuration(node))];
+  let tmp26;
+  let items = [detail("Start", "+" + formatPerfMs(node.start))];
+  if (!node.marker) {
+    items.push(detail("Duration", perfNodeDuration(node)));
+  }
   if (node.count > 1) {
     const _String = String;
     const push = items.push;
@@ -174,21 +213,21 @@ export function perfNodeSections(node) {
     const _HermesInternal = HermesInternal;
     items.push(detail("Waited on", "" + waits_on.span_name + " in " + waits_on.trace_name));
   }
-  let str7 = null;
-  if (node.parallel) {
-    str7 = "ran in parallel with a sibling";
-  }
-  const items1 = [str7, , ];
   let str8 = null;
-  if (node.running) {
-    str8 = "still running";
+  if (node.parallel) {
+    str8 = "ran in parallel with a sibling";
   }
-  items1[1] = str8;
+  const items1 = [str8, , ];
   let str9 = null;
-  if (node.outlivedParent) {
-    str9 = "outlived its parent";
+  if (node.running) {
+    str9 = "still running";
   }
-  items1[2] = str9;
+  items1[1] = str9;
+  let str10 = null;
+  if (node.outlivedParent) {
+    str10 = "outlived its parent";
+  }
+  items1[2] = str10;
   const found = items1.filter((item) => null != item);
   if (found.length > 0) {
     items.push(detail("Notes", found.join(", ")));
@@ -205,29 +244,29 @@ export function perfNodeSections(node) {
   }
   const merged1 = Object.assign(details);
   const entries = Object.entries(obj);
-  const tmp18 = entries[Symbol.iterator]();
-  while (tmp18 !== undefined) {
+  const tmp21 = entries[Symbol.iterator]();
+  while (tmp21 !== undefined) {
     let StringResult;
-    [first, tmp23] = tmp19;
-    let str13 = first;
-    let tmp25 = sectionFor(node, first);
+    [first, tmp26] = tmp22;
+    let str14 = first;
+    let tmp28 = sectionFor(node, first);
     if ("cost_usd" === first) {
       let _Number = Number;
-      StringResult = formatUsd(Number(tmp23));
+      StringResult = formatUsd(Number(tmp26));
     } else {
       let _String2 = String;
-      StringResult = String(tmp23);
+      StringResult = String(tmp26);
     }
-    let tmp30 = StringResult;
+    let tmp33 = StringResult;
     set = map.set;
-    let items4 = map.get(tmp25);
+    let items4 = map.get(tmp28);
     if (items4 == null) {
       items4 = [];
     }
     let items2 = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(items2, items4, 0);
-    items2[arraySpreadResult] = detail(str13.replace(/_/g, " "), tmp30);
-    let result = set(tmp25, items2);
+    items2[arraySpreadResult] = detail(str14.replace(/_/g, " "), tmp33);
+    let result = set(tmp28, items2);
     continue;
   }
   const items3 = [

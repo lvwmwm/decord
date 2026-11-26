@@ -1,12 +1,12 @@
-// Module ID: 19652
-// Function ID: 19653
+// Module ID: 19716
+// Function ID: 19717
 // Name: FeedbackConfig
-// Dependencies: [5820, 12118, 7531, 2]
+// Dependencies: [5851, 12168, 7562, 2]
 
-// Module 19652 (FeedbackConfig)
-import HotspotStore from "HotspotStore" /* 7531 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
-import Constants from "Constants" /* 12118 */;
+// Module 19716 (FeedbackConfig)
+import HotspotStore from "HotspotStore" /* 7562 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
+import Constants from "Constants" /* 12168 */;
 import size from "module_2" /* 2 */;
 
 let FeedbackGroup;

@@ -1,11 +1,11 @@
-// Module ID: 5938
-// Function ID: 5939
+// Module ID: 5969
+// Function ID: 5970
 // Name: LinuxGpuDecodeExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: getLinuxGpuDecodeExperimentConfig
 
-// Module 5938 (LinuxGpuDecodeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 5969 (LinuxGpuDecodeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-09-linux-gpu-decode", defaultConfig: { mode: "all" }, variations: { 0: { mode: "all" }, 1: { mode: "disable_nvidia" }, 2: { mode: "disable_all" } } };

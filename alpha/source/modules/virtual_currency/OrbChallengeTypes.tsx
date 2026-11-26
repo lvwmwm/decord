@@ -1,9 +1,9 @@
-// Module ID: 15181
-// Function ID: 15182
+// Module ID: 15231
+// Function ID: 15232
 // Name: OrbChallengeTypes
 // Dependencies: [2]
 
-// Module 15181 (OrbChallengeTypes)
+// Module 15231 (OrbChallengeTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/virtual_currency/OrbChallengeTypes.tsx");

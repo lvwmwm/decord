@@ -1,9 +1,9 @@
-// Module ID: 8744
-// Function ID: 8745
+// Module ID: 8786
+// Function ID: 8787
 // Name: GameProfileNavTypes
 // Dependencies: [2]
 
-// Module 8744 (GameProfileNavTypes)
+// Module 8786 (GameProfileNavTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_profile/GameProfileNavTypes.tsx");

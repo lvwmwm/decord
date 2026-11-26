@@ -1,7 +1,7 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1070, 1071, 1096, 3, 1097, 510, 1098, 1255, 15573, 572, 15574, 7281, 5762, 1253, 15575, 1241, 13335, 504, 11930, 2119, 15576, 8289, 2117, 2]
+// Dependencies: [503, 1070, 1071, 1096, 3, 1097, 510, 1098, 1256, 15624, 572, 15625, 7312, 5793, 1254, 15626, 1242, 13387, 504, 11978, 2120, 15627, 8331, 2118, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -10,17 +10,17 @@ import Storage6 from "Storage" /* 510 */;
 import Dispatcher2 from "Dispatcher" /* 572 */;
 import TokenManagerAll from "TokenManager" /* 1097 */;
 import router_utils from "router_utils" /* 1098 */;
-import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import FingerprintUtils from "FingerprintUtils" /* 1253 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import Server from "Server" /* 2117 */;
-import APIErrorDefault from "APIError" /* 5762 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7281 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 8289 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 13335 */;
-import fetchExperiments2 from "fetchExperiments" /* 15573 */;
-import awaitExperiments from "awaitExperiments" /* 15574 */;
-import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 15575 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Server from "Server" /* 2118 */;
+import APIErrorDefault from "APIError" /* 5793 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 7312 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 8331 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 13387 */;
+import fetchExperiments2 from "fetchExperiments" /* 15624 */;
+import awaitExperiments from "awaitExperiments" /* 15625 */;
+import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 15626 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1070 */;
 import Constants from "Constants" /* 1071 */;
@@ -38,7 +38,7 @@ let c10;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-const f79148 = (body) => {
+const f79367 = (body) => {
   let assignments;
   let guild_experiments;
   body = body.body;
@@ -64,12 +64,12 @@ const f79148 = (body) => {
   const obj6 = awaitExperiments;
   obj6.onExperimentsLoaded();
 };
-const f79149 = () => {
+const f79368 = () => {
   c33 = null;
   const obj = Dispatcher;
   obj.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
 };
-const f79150 = () => {
+const f79369 = () => {
   const obj = router_utils;
   obj.transitionTo(constants.REGISTER);
 };
@@ -132,7 +132,7 @@ function fetchFingerprint(arg0) {
           fetchExperiments2;
           tmpResult4 = router_utils;
           const experiments = fetchExperiments(obj3);
-          nextPromise = experiments.then(f79148, f79149);
+          nextPromise = experiments.then(f79367, f79368);
           closure_33 = nextPromise;
         }
         return nextPromise;
@@ -471,7 +471,7 @@ let obj = {
         c26 = true;
         handleLogout();
         const obj4 = Dispatcher;
-        obj4.wait(f79150);
+        obj4.wait(f79369);
       } else {
         const obj3 = { user_id: Storage2.get(user_id_cache) };
         const track = AnalyticsUtilsDefault.track;
@@ -780,7 +780,7 @@ let obj = {
     const fetchExperiments = tmp5.fetchExperiments;
     obj5 = router_utils;
     const experiments = fetchExperiments(obj3);
-    closure_33 = experiments.then(f79148, f79149);
+    closure_33 = experiments.then(f79367, f79368);
   },
   CURRENT_USER_UPDATE: function handleUserUpdate(user) {
     user = user.user;
@@ -795,7 +795,7 @@ let obj = {
     c26 = true;
     handleLogout();
     const obj = Dispatcher;
-    obj.wait(f79150);
+    obj.wait(f79369);
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
     c34 = null;

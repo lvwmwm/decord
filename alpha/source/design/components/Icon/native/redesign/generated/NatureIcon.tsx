@@ -1,14 +1,14 @@
-// Module ID: 9738
-// Function ID: 9739
+// Module ID: 9780
+// Function ID: 9781
 // Name: NatureIcon
-// Dependencies: [19, 21, 575, 5698, 9739, 2]
+// Dependencies: [19, 21, 575, 5729, 9781, 2]
 // Exports: NatureIcon
 
-// Module 9738 (NatureIcon)
+// Module 9780 (NatureIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 9739 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 9781 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

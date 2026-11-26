@@ -1,20 +1,20 @@
-// Module ID: 15940
-// Function ID: 15941
+// Module ID: 15991
+// Function ID: 15992
 // Name: ICYMIManager
-// Dependencies: [8879, 8881, 1088, 2121, 572, 8884, 2]
+// Dependencies: [8921, 8923, 1088, 2122, 572, 8926, 2]
 
-// Module 15940 (ICYMIManager)
+// Module 15991 (ICYMIManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8881 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8884 */;
-import LifecycleManager from "LifecycleManager" /* 2121 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8923 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8926 */;
+import LifecycleManager from "LifecycleManager" /* 2122 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const WaterwheelsDiscoverExperiment = tmp(8879);
+const WaterwheelsDiscoverExperiment = tmp(8921);
 let closure_3 = null;
 class ICYMIManager extends LifecycleManager {
   _initialize() {
@@ -27,7 +27,7 @@ class ICYMIManager extends LifecycleManager {
   }
   handlePostConnectionOpen() {
     let timeout;
-    const f109057 = () => {
+    const f109361 = () => {
       let timeout;
       const obj = WaterwheelsDiscoverExperiment;
       if (!obj.getWaterwheelsDiscoverEnabled("ICYMIManager")) {
@@ -39,7 +39,7 @@ class ICYMIManager extends LifecycleManager {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
-      timeout = setTimeout(f109057, 15 * require("Durations").Millis.MINUTE);
+      timeout = setTimeout(f109361, 15 * require("Durations").Millis.MINUTE);
     };
     const tmp = require;
     let obj = ICYMIExperiment;
@@ -55,7 +55,7 @@ class ICYMIManager extends LifecycleManager {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f109057, 15 * DurationsDefault.Millis.MINUTE);
+      timeout = setTimeout(f109361, 15 * DurationsDefault.Millis.MINUTE);
       const obj5 = ICYMIActionCreatorsDefault;
       const guildChannelScores = obj5.getGuildChannelScores();
       const obj6 = ICYMIActionCreatorsDefault;

@@ -1,14 +1,13 @@
-// Module ID: 2028
-// Function ID: 2029
+// Module ID: 2029
+// Function ID: 2030
 // Name: i18n
-// Dependencies: [2029, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 2065, 568, 2066, 1349, 2]
+// Dependencies: [2030, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 2065, 2066, 568, 2067, 1350, 2]
 
-// Module 2028 (i18n)
+// Module 2029 (i18n)
 import _mod568 from "module_568" /* 568 */;
-import react_native from "react-native" /* 1349 */;
-import _modDef2029 from "module_2029" /* 2029 */;
-import parse from "parse" /* 2066 */;
-import module_2038 from "module_2038" /* 2038 */;
+import react_native from "react-native" /* 1350 */;
+import _modDef2030 from "module_2030" /* 2030 */;
+import parse from "parse" /* 2067 */;
 import module_2039 from "module_2039" /* 2039 */;
 import module_2040 from "module_2040" /* 2040 */;
 import module_2041 from "module_2041" /* 2041 */;
@@ -36,11 +35,12 @@ import module_2062 from "module_2062" /* 2062 */;
 import module_2063 from "module_2063" /* 2063 */;
 import module_2064 from "module_2064" /* 2064 */;
 import module_2065 from "module_2065" /* 2065 */;
+import module_2066 from "module_2066" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 let _instance_members_initializer_I18N_;
 
-global.IntlMessageFormat = _modDef2029;
+global.IntlMessageFormat = _modDef2030;
 delete global["IntlMessageFormat"];
 const React2 = "en-US";
 class Provider {
@@ -167,15 +167,15 @@ class I18N extends EventEmitter {
     let getLanguages;
     let initialLocale;
     let tmp8;
-    const f82926 = (resolveLanguageLoaded) => {
+    const f83141 = (resolveLanguageLoaded) => {
       obj.resolveLanguageLoaded = resolveLanguageLoaded;
     };
     ({ initialLocale, getLanguages } = getMessages);
     getMessages = getMessages.getMessages;
     const obj = new I18N(tmp4, tmp3, new.target, this, tmp2, tmp, getLanguages);
     _instance_members_initializer_I18N_();
-    obj.initialLanguageLoad = new Promise(f82926);
-    new Promise(f82926);
+    obj.initialLanguageLoad = new Promise(f83141);
+    new Promise(f83141);
     obj._languages = getLanguages();
     if (null != window.Proxy) {
       const self2 = this;

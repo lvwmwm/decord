@@ -1,16 +1,16 @@
-// Module ID: 17988
-// Function ID: 17989
+// Module ID: 18047
+// Function ID: 18048
 // Name: InterestTileEdge
-// Dependencies: [19, 17973, 21, 5012, 575, 1653, 2]
+// Dependencies: [19, 18030, 21, 5043, 575, 1654, 2]
 // Exports: default
 
-// Module 17988 (InterestTileEdge)
+// Module 18047 (InterestTileEdge)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1653 from "module_1653" /* 1653 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17973 */;
+import _modDef1654 from "module_1654" /* 1654 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18030 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const GRID_COVER_HAIRLINE_WIDTH = InterestGamePickerConstants.GRID_COVER_HAIRLINE_WIDTH;
@@ -26,5 +26,5 @@ export default function InterestTileEdge(style) {
   style = style.style;
   const items = [closure_4(style.radius).edge, style];
   closure_4(style.radius);
-  return jsx(_modDef1653.View, { accessible: false, pointerEvents: "none", style: items });
+  return jsx(_modDef1654.View, { accessible: false, pointerEvents: "none", style: items });
 };

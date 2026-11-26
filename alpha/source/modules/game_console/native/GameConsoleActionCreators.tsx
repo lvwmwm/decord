@@ -1,11 +1,11 @@
-// Module ID: 10468
-// Function ID: 10469
+// Module ID: 10513
+// Function ID: 10514
 // Name: game_console/GameConsoleActionCreators
-// Dependencies: [5, 10469, 6015, 1112, 2]
+// Dependencies: [5, 10514, 6046, 1112, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 10468 (game_console/GameConsoleActionCreators)
-import transferToPlayStation from "transferToPlayStation" /* 10469 */;
+// Module 10513 (game_console/GameConsoleActionCreators)
+import transferToPlayStation from "transferToPlayStation" /* 10514 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _transferToPlaystationWithAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ let obj = function _transferToPlaystationWithAlert() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp26) {
           closure_5 = tmp26;

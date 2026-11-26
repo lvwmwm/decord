@@ -1,10 +1,10 @@
-// Module ID: 18508
-// Function ID: 18509
+// Module ID: 18571
+// Function ID: 18572
 // Name: ConjureMcpConnectionPanel
-// Dependencies: [32, 5, 19, 18509, 2]
+// Dependencies: [32, 5, 19, 18572, 2]
 // Exports: useMcpConnectionPanel
 
-// Module 18508 (ConjureMcpConnectionPanel)
+// Module 18571 (ConjureMcpConnectionPanel)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -54,7 +54,7 @@ class McpConnectionPanel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c2;
@@ -96,7 +96,7 @@ class McpConnectionPanel {
             c2 = 0;
             if (closure_129_1.isStale(c1)) {
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             } else {
               connection = null;
               const update2 = closure_129_1.update;
@@ -137,7 +137,7 @@ class McpConnectionPanel {
               closure_129_1.armTimer(connection);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp48) {
           if (0 === c2) {

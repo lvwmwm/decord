@@ -1,30 +1,30 @@
-// Module ID: 5621
-// Function ID: 5622
+// Module ID: 5652
+// Function ID: 5653
 // Name: ButtonPill
-// Dependencies: [32, 19, 17, 21, 5616, 5012, 575, 5617, 5073, 5576, 5622, 5567, 1653, 5019, 5623, 5026, 5613, 5614, 2]
+// Dependencies: [32, 19, 17, 21, 5647, 5043, 575, 5648, 5104, 5607, 5653, 5598, 1654, 5050, 5654, 5057, 5644, 5645, 2]
 // Exports: ButtonPill
 
-// Module 5621 (ButtonPill)
+// Module 5652 (ButtonPill)
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import shared from "shared" /* 5019 */;
-import react2 from "react" /* 5026 */;
-import native from "native" /* 5073 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import useToken from "useToken" /* 5576 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import springPresets from "springPresets" /* 5614 */;
-import ButtonHooks from "ButtonHooks" /* 5617 */;
-import ButtonEllipsis from "ButtonEllipsis" /* 5623 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import shared from "shared" /* 5050 */;
+import react2 from "react" /* 5057 */;
+import native from "native" /* 5104 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import useToken from "useToken" /* 5607 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import springPresets from "springPresets" /* 5645 */;
+import ButtonHooks from "ButtonHooks" /* 5648 */;
+import ButtonEllipsis from "ButtonEllipsis" /* 5654 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ButtonConstants_mod from "ButtonConstants" /* 5616 */;
-import createStyles from "createStyles" /* 5012 */;
+import ButtonConstants_mod from "ButtonConstants" /* 5647 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let num2, num3, obj1, tmp, tmp2;
 
 let c9;
@@ -75,7 +75,7 @@ function PillWrapper(pressed) {
   let tmp7 = null;
   if (shiny) {
     const obj7 = { variant };
-    tmp7 = metroImportDefault(tmp(5622).ButtonShine, obj7);
+    tmp7 = metroImportDefault(tmp(5653).ButtonShine, obj7);
   }
   if ("experimental_premium-primary" !== variant) {
     let obj11;
@@ -85,7 +85,7 @@ function PillWrapper(pressed) {
         const obj8 = { style: items2, children: metroImportDefault(ExpressiveButtonRive, obj9) };
         items2 = [metroRequire.absoluteFill, tmp5.expressivePill];
         obj9 = { withReducedMotion: "short-loop", ref: expressiveRiveRef, fit: "layout", artboard: str, dataBinding: obj10 };
-        ExpressiveButtonRive = tmp(5073).ExpressiveButtonRive;
+        ExpressiveButtonRive = tmp(5104).ExpressiveButtonRive;
         str = "Mobile Expressive Button Dark Mode";
         const tmp12 = hasOwnProperty;
         const tmpResult = shared;
@@ -101,7 +101,7 @@ function PillWrapper(pressed) {
       const obj12 = { style: items4, children: items5 };
       items4 = [style, buttonPillStyles];
       items5 = [children, tmp7];
-      items3[1] = metroImportAll(_modDef1653.View, obj12);
+      items3[1] = metroImportAll(_modDef1654.View, obj12);
     }
     return metroImportAll(tmp10, obj11);
   }
@@ -117,7 +117,7 @@ function PillWrapper(pressed) {
   const obj15 = { style: items8, children: items9 };
   items8 = [style, buttonPillStyles];
   items9 = [children, tmp7];
-  items7[1] = metroImportAll(_modDef1653.View, obj15);
+  items7[1] = metroImportAll(_modDef1654.View, obj15);
   obj11 = obj14;
 }
 class BasicButtonPill {
@@ -208,10 +208,10 @@ class LoadingButtonPill {
     const obj2 = { style: items2, children };
     items2 = [tmp3.childContainer, tmp8];
     const tmp7 = _slicedToArray(useLoadingStyles(flag, DEFAULT_BUTTON_SIZE), 2);
-    items3 = [metroImportDefault(_modDef1653.View, obj2), ];
+    items3 = [metroImportDefault(_modDef1654.View, obj2), ];
     const obj3 = { style: items4, children: tmp12Result };
     items4 = [tmp3.ellipsis, tmp9];
-    const View = _modDef1653.View;
+    const View = _modDef1654.View;
     const tmp10 = metroImportAll;
     const tmp11 = PillWrapper;
     if (tmp12Result) {
@@ -248,14 +248,14 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     num = 18;
   }
-  let tmpResult = tmp(1653);
+  let tmpResult = tmp(1654);
   let items = [closure_17, , , , , , , ];
   const useAnimatedStyle = tmpResult.useAnimatedStyle;
   items[1] = spring_spring.withSpring;
   items[2] = flag;
   items[3] = springPresets.SUBTLE_SPRING;
   items[4] = enabled;
-  items[5] = _mod1653.withDelay;
+  items[5] = _mod1654.withDelay;
   items[6] = 300;
   items[7] = num;
   let c0;
@@ -313,13 +313,13 @@ function useLoadingStyles(flag, DEFAULT_BUTTON_SIZE) {
   ButtonPillNativeTsx1.__initData = tmp4;
   const animatedStyle = useAnimatedStyle(ButtonPillNativeTsx1);
   const items2 = [closure_18, , , , , , , ];
-  const useAnimatedStyle2 = tmp(1653).useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle2 = tmp(1654).useAnimatedStyle;
+  _mod1654;
   items2[1] = spring_spring.withSpring;
   items2[2] = flag;
   items2[3] = springPresets.SUBTLE_SPRING;
   items2[4] = enabled;
-  items2[5] = _mod1653.withDelay;
+  items2[5] = _mod1654.withDelay;
   items2[6] = 300;
   items2[7] = num;
   c0 = undefined;

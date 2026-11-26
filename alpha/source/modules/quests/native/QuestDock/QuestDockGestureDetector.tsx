@@ -1,17 +1,17 @@
-// Module ID: 16722
-// Function ID: 16723
+// Module ID: 16773
+// Function ID: 16774
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 6840, 16629, 21, 16663, 16626, 16630, 11760, 16633, 16719, 1653, 16635, 16631, 5272, 16628, 1706, 5228, 2]
+// Dependencies: [19, 6871, 16680, 21, 16714, 16677, 16681, 11808, 16684, 16770, 1654, 16686, 16682, 5303, 16679, 1707, 5259, 2]
 
-// Module 16722 (QuestDockGestureDetector)
+// Module 16773 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import HapticUtils from "HapticUtils" /* 5228 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import QuestConstants from "QuestConstants" /* 6840 */;
-import QuestDockUtils from "QuestDockUtils" /* 16628 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import HapticUtils from "HapticUtils" /* 5259 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import QuestConstants from "QuestConstants" /* 6871 */;
+import QuestDockUtils from "QuestDockUtils" /* 16679 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16629 */;
+import QuestDockConstants from "QuestDockConstants" /* 16680 */;
 import size from "module_2" /* 2 */;
 
 let SOFT_DISMISSED, _Math, _Math2, _Math3, _Math4, _Math5, absolute, absoluteX, bound, bound1, diff, diff1, first, flag, flag2, left, left2, merged, merged1, merged2, merged3, merged4, num, num2, num3, num4, num5, num6, num7, num8, obj1, obj10, obj11, obj12, obj13, obj4, result1, result2, result3, result4, result5, result6, right, right2, set, set2, set2Result, set3, set3Result, set4, set4Result, set5, set5Result, set6, set6Result, sum, tmp14, tmp25, tmp3, tmp52, tmp62, tmp63, tmp64, tmp66, tmp67, tmp69, tmp70, tmp71, tmp73, tmp74, tmp75, tmp76, tmp78, tmp79, value, width, width2, width3;
@@ -290,7 +290,7 @@ function useQuestDockSwipeGesture() {
     items4[17] = hasOwnProperty;
     items4[18] = gesture;
     items4[19] = questDockOffset;
-    items4[20] = _mod1706.scheduleOnRN;
+    items4[20] = _mod1707.scheduleOnRN;
     items4[21] = HapticUtils.triggerHapticFeedback;
     items4[22] = HapticUtils.HapticFeedbackTypes;
     items4[23] = metroImportDefault;
@@ -515,7 +515,7 @@ function useQuestDockSwipeGesture() {
     const items6 = [constants, authStore2, tmp6, tmp7, tmp4, tmp26, , , ];
     const onEnd = onChange(QuestDockGestureDetectorTsx3).onEnd;
     onChange(QuestDockGestureDetectorTsx3);
-    items6[6] = _mod1706.scheduleOnRN;
+    items6[6] = _mod1707.scheduleOnRN;
     items6[7] = questDockExpandHandler;
     items6[8] = setRestingQuestDockMode;
     c0 = undefined;

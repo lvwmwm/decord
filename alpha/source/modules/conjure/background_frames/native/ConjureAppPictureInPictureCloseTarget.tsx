@@ -1,21 +1,21 @@
-// Module ID: 19328
-// Function ID: 19329
+// Module ID: 19391
+// Function ID: 19392
 // Name: ConjureAppPictureInPictureCloseTarget
-// Dependencies: [19, 21, 5012, 19325, 575, 1653, 5222, 5613, 10271, 2]
+// Dependencies: [19, 21, 5043, 19388, 575, 1654, 5253, 5644, 10313, 2]
 // Exports: default
 
-// Module 19328 (ConjureAppPictureInPictureCloseTarget)
+// Module 19391 (ConjureAppPictureInPictureCloseTarget)
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19325 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19388 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let diff, num, num2, num3, obj1, obj6, obj7, obj8, tmp3;
 
 let c3;
@@ -23,7 +23,7 @@ let closure_4;
 let rect;
 let size;
 let tmp2;
-const DoorExitIcon3 = tmp2(10271);
+const DoorExitIcon3 = tmp2(10313);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = { mass: 0.4, damping: 18, stiffness: 300 };
 let closure_6 = { duration: 150 };
@@ -70,8 +70,8 @@ export default function ConjureAppPictureInPictureCloseTarget(shown) {
   let tmp2 = require;
   ({ x, y } = center);
   let items = [closure_8, , , , , , , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items[1] = timing_timing.withTiming;
   items[2] = shown;
   items[3] = closure_6;
@@ -132,8 +132,8 @@ export default function ConjureAppPictureInPictureCloseTarget(shown) {
   ConjureAppPictureInPictureCloseTargetTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(ConjureAppPictureInPictureCloseTargetTsx1);
   const items2 = [closure_9, , , ];
-  const useAnimatedStyle2 = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle2 = _mod1654.useAnimatedStyle;
+  _mod1654;
   items2[1] = timing_timing.withTiming;
   items2[2] = hovered;
   items2[3] = tmp5;
@@ -159,13 +159,13 @@ export default function ConjureAppPictureInPictureCloseTarget(shown) {
   const animatedStyle2 = useAnimatedStyle2(ConjureAppPictureInPictureCloseTargetTsx2);
   let obj = { style: items4, pointerEvents: "none", importantForAccessibility: "no-hide-descendants", children: items5 };
   items4 = [tmp.target, animatedStyle];
-  const View = _modDef1653.View;
+  const View = _modDef1654.View;
   let obj2 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
   const DoorExitIcon = DoorExitIcon3.DoorExitIcon;
   items5 = [_false(DoorExitIcon, obj2), ];
   let obj3 = { style: items6, children: _false(DoorExitIcon2, obj4) };
   items6 = [tmp.fill, animatedStyle2];
-  const View2 = _modDef1653.View;
+  const View2 = _modDef1654.View;
   obj4 = { size: "md", color: nativeDefault.colors.WHITE };
   DoorExitIcon2 = DoorExitIcon3.DoorExitIcon;
   items5[1] = _false(View2, obj3);

@@ -1,22 +1,22 @@
-// Module ID: 9846
-// Function ID: 9847
+// Module ID: 9888
+// Function ID: 9889
 // Name: badgeDetailsCtas
-// Dependencies: [1071, 1073, 5189, 1501, 6107, 1112, 5687, 8067, 6279, 6349, 9847, 6845, 9851, 11067, 2]
+// Dependencies: [1071, 1073, 5220, 1502, 6138, 1112, 5718, 8109, 6310, 6380, 9889, 6876, 9893, 11113, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 9846 (badgeDetailsCtas)
+// Module 9888 (badgeDetailsCtas)
 import Constants from "Constants" /* 1071 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import intl2 from "intl" /* 1112 */;
-import RootNavigationRef from "RootNavigationRef" /* 5189 */;
-import openURLDefault from "openURL" /* 5687 */;
-import BadgeId from "BadgeId" /* 6107 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6279 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import QuestContent from "QuestContent" /* 6845 */;
-import QuestUtils from "QuestUtils" /* 9847 */;
-import QuestsEligibility from "QuestsEligibility" /* 9851 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 11067 */;
+import RootNavigationRef from "RootNavigationRef" /* 5220 */;
+import openURLDefault from "openURL" /* 5718 */;
+import BadgeId from "BadgeId" /* 6138 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6310 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
+import QuestContent from "QuestContent" /* 6876 */;
+import QuestUtils from "QuestUtils" /* 9889 */;
+import QuestsEligibility from "QuestsEligibility" /* 9893 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 11113 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -24,8 +24,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const Link = tmp(1501);
-const openUserSettings = tmp(8067);
+const Link = tmp(1502);
+const openUserSettings = tmp(8109);
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 let obj = { [BadgeId.BadgeId.STAFF]: obj2, [BadgeId.BadgeId.PREMIUM_TENURE]: obj3, [BadgeId.BadgeId.GUILD_BOOSTER]: obj4, [BadgeId.BadgeId.ORB_PROFILE]: obj5 };

@@ -1,22 +1,22 @@
-// Module ID: 16012
-// Function ID: 16013
+// Module ID: 16042
+// Function ID: 16043
 // Name: HSVColorPicker
-// Dependencies: [19, 17, 21, 5012, 1653, 16013, 16014, 2]
+// Dependencies: [19, 17, 21, 5043, 1654, 16043, 16044, 2]
 // Exports: default
 
-// Module 16012 (HSVColorPicker)
+// Module 16042 (HSVColorPicker)
 import react_native from "react-native" /* 17 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 16013 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 16043 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp9;
-const HuePickerDefault = tmp9(16014);
+const HuePickerDefault = tmp9(16044);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ hsvColorPicker: { alignItems: "center" } });
@@ -39,12 +39,12 @@ export default function HSVColorPicker(arg0) {
   ({ hue, saturation, value, onPanUpdate, onPanFinalize } = arg0);
   ({ saturationValuePickerStyle, saturationValueColorBoxStyle, saturationValueColorBoxInnerStyle, saturationValueSelectorStyle, huePickerStyle, hueColorBarInnerStyle, hueSliderStyle } = arg0);
   const tmp = closure_6();
-  const obj = _mod1653;
+  const obj = _mod1654;
   const sharedValue = obj.useSharedValue(0);
-  const obj2 = _mod1653;
+  const obj2 = _mod1654;
   const sharedValue1 = obj2.useSharedValue(1);
   const obj4 = { style: tmp.hsvColorPicker, children: items };
-  const obj3 = _mod1653;
+  const obj3 = _mod1654;
   const sharedValue2 = obj3.useSharedValue(1);
   let tmp11 = hue;
   const tmp10 = SaturationValueColorPickerDefault;

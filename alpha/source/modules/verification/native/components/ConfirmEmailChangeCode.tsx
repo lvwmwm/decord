@@ -1,13 +1,13 @@
-// Module ID: 7240
-// Function ID: 7241
+// Module ID: 7271
+// Function ID: 7272
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 7159, 21, 1500, 1091, 7241, 7238, 1112, 2]
+// Dependencies: [5, 19, 7190, 21, 1501, 1091, 7272, 7269, 1112, 2]
 // Exports: default
 
-// Module 7240 (ConfirmEmailChangeCode)
+// Module 7271 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7159 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7190 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/verification/native/component
 
 export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj = isChangeEmail(1500);
+  let obj = isChangeEmail(1501);
   navigation = obj.useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = react.useCallback((arg0) => {
@@ -38,7 +38,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(7241);
+  navigation(7272);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;
@@ -62,7 +62,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
           return obj;
         } else {
           isChangeEmail = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp6) {
         isChangeEmail = 3;

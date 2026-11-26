@@ -1,10 +1,10 @@
-// Module ID: 16579
-// Function ID: 16580
+// Module ID: 16630
+// Function ID: 16631
 // Name: OrbsArcadeTypes
 // Dependencies: [32, 2]
 // Exports: orbsArcadeApplicationGameFromServer, orbsArcadeClaimedRewardFromServer, orbsArcadeGamesFromServer
 
-// Module 16579 (OrbsArcadeTypes)
+// Module 16630 (OrbsArcadeTypes)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 

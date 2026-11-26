@@ -1,26 +1,28 @@
-// Module ID: 11359
-// Function ID: 11360
+// Module ID: 11405
+// Function ID: 11406
 // Name: ChannelRow
-// Dependencies: [19, 17, 4861, 4883, 6901, 4954, 1386, 8902, 6137, 21, 5012, 575, 504, 5628, 11360, 11517, 7123, 7115, 5603, 4834, 2168, 7150, 6113, 2]
+// Dependencies: [19, 17, 4892, 4914, 6932, 4985, 1387, 8944, 6168, 21, 5043, 575, 504, 5659, 11406, 11565, 7154, 7146, 5634, 4865, 2169, 8587, 5209, 7181, 6144, 2]
 
-// Module 11359 (ChannelRow)
+// Module 11405 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DateUtils from "DateUtils" /* 4834 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import useChannelName from "useChannelName" /* 5628 */;
-import ReadStateConstants from "ReadStateConstants" /* 6137 */;
-import UserRowConstants from "UserRowConstants" /* 8902 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11360 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11517 */;
+import DateUtils from "DateUtils" /* 4865 */;
+import getNodeText from "getNodeText" /* 5209 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import useChannelName from "useChannelName" /* 5659 */;
+import ReadStateConstants from "ReadStateConstants" /* 6168 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8587 */;
+import UserRowConstants from "UserRowConstants" /* 8944 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11406 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11565 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import ReadStateStore from "ReadStateStore" /* 6901 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import ReadStateStore from "ReadStateStore" /* 6932 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -28,21 +30,21 @@ let closure_14;
 let map1;
 let obj2;
 const View = react_native.View;
-const UserRowModes = UserRowConstants.UserRowModes;
+let UserRowModes = UserRowConstants.UserRowModes;
 const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = Fragment);
 let obj = { guildIcon: { flexShrink: 0, flexGrow: 0 }, subLabel: { display: "flex", flexDirection: "row", alignItems: "center" }, subLabelIcon: { width: 12, height: 12, marginRight: 2 }, subLabelSeparator: obj2, threadName: { flexShrink: 1 } };
 obj2 = { marginHorizontal: nativeDefault.space.PX_4 };
 let closure_15 = createStyles.createStyles(obj);
 const memoResult = react.memo(function ChannelRow(channel) {
-  let stateFromStores1;
-  let tmp17Result;
-  let tmp18;
+  let closure_10;
+  let tmp18Result;
+  let tmp19;
   channel = channel.channel;
   let NONE = channel.mode;
   if (NONE === undefined) {
-    let tmp = stateFromStores1;
-    NONE = stateFromStores1.NONE;
+    let tmp = UserRowModes;
+    NONE = UserRowModes.NONE;
   }
   let flag = channel.selected;
   if (flag === undefined) {
@@ -57,18 +59,20 @@ const memoResult = react.memo(function ChannelRow(channel) {
   const trailing = channel.trailing;
   const subLabel = channel.subLabel;
   const label = channel.label;
-  const merged = Object.assign(channel, Object.assign({ channel: 0, mode: 0, selected: 0, disabled: 0, onPress: 0, onLongPress: 0, trailing: 0, subLabel: 0, label: 0 }));
+  const accessibilityLabel = channel.accessibilityLabel;
+  const merged = Object.assign(channel, Object.assign({ channel: 0, mode: 0, selected: 0, disabled: 0, onPress: 0, onLongPress: 0, trailing: 0, subLabel: 0, label: 0, accessibilityLabel: 0 }));
+  let memo2;
   let tmp3 = closure_15();
-  let closure_7 = tmp3;
+  let closure_8 = tmp3;
   const tmp5 = onPress;
   let obj = channel(onPress[12]);
   let items = [label];
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   let tmp7 = flag2(onPress[13])(channel);
-  let closure_9 = tmp7;
+  UserRowModes = tmp7;
   let obj2 = channel(onPress[12]);
-  let items1 = [subLabel, closure_9, stateFromStores];
-  stateFromStores1 = obj2.useStateFromStores(items1, () => {
+  let items1 = [subLabel, stateFromStores, closure_8];
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
     channel = ChannelStore.getChannel(channel.parent_id);
     let channelName = null;
     if (null != channel) {
@@ -78,7 +82,7 @@ const memoResult = react.memo(function ChannelRow(channel) {
     return channelName;
   });
   let obj3 = channel(onPress[12]);
-  const items2 = [closure_7];
+  const items2 = [accessibilityLabel];
   const stateFromStores2 = obj3.useStateFromStores(items2, () => ReadStateStore.lastMessageTimestamp(channel.id, ReadStateTypes.CHANNEL));
   let obj4 = onLongPress;
   const items3 = [channel, onPress];
@@ -101,7 +105,7 @@ const memoResult = react.memo(function ChannelRow(channel) {
   const memo = onLongPress.useMemo(() => {
     let tmp2 = null;
     if (null != stateFromStores) {
-      const obj = { "aria-label": "", style: closure_7.guildIcon, guild: tmp, channel, size: GuildIconWithChannelType2.GuildIconWithChannelTypeSizes.SMALL_32 };
+      const obj = { "aria-label": "", style: closure_8.guildIcon, guild: tmp, channel, size: GuildIconWithChannelType2.GuildIconWithChannelTypeSizes.SMALL_32 };
       const GuildIconWithChannelType = GuildIconWithChannelType2.GuildIconWithChannelType;
       tmp2 = authStore2(GuildIconWithChannelType, obj);
     }
@@ -112,7 +116,7 @@ const memoResult = react.memo(function ChannelRow(channel) {
   const memo1 = onLongPress.useMemo(() => {
     let tmp = label;
     if (undefined === label) {
-      tmp = closure_9;
+      tmp = closure_10;
     }
     return tmp;
   }, items6);
@@ -125,8 +129,7 @@ const memoResult = react.memo(function ChannelRow(channel) {
   items7[3] = stateFromStores1;
   ({ subLabel: arr8[4], subLabelIcon: arr8[5], subLabelSeparator: arr8[6], threadName: arr8[7] } = tmp3);
   items7[8] = subLabel;
-  const items8 = [trailing, flag2];
-  const memo2 = useMemo(() => {
+  memo2 = useMemo(() => {
     let items;
     let items1;
     let obj7;
@@ -144,24 +147,24 @@ const memoResult = react.memo(function ChannelRow(channel) {
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(7123).ForumIcon;
+        TextIcon = tmp3(7154).ForumIcon;
       } else {
-        TextIcon = tmp3(7115).TextIcon;
+        TextIcon = tmp3(7146).TextIcon;
       }
-      const obj = { style: closure_7.subLabel, children: items };
-      const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };
+      const obj = { style: closure_8.subLabel, children: items };
+      const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_8.subLabelIcon };
       items = [authStore2(TextIcon, obj2), , ];
-      const obj3 = { style: closure_7.threadName, variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores1 };
+      const obj3 = { style: closure_8.threadName, variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores1 };
       items[1] = authStore2(Text_Text.Text, obj3);
       let tmp5Result = null;
       const tmp6 = View;
-      const tmp7 = closure_7;
+      const tmp7 = closure_8;
       const tmp9 = importDefault;
       if (null != stateFromStores2) {
         const obj4 = { children: items1 };
         const obj5 = { style: tmp7.subLabelSeparator, variant: "body-xs/medium", color: "text-subtle", children: "\u2022" };
         items1 = [authStore2(Text_Text.Text, obj5), ];
-        const obj6 = { variant: "body-xs/medium", color: "text-subtle", children: obj7.calendarFormatCompact(tmp9(2168)(tmp14)) };
+        const obj6 = { variant: "body-xs/medium", color: "text-subtle", children: obj7.calendarFormatCompact(tmp9(2169)(tmp14)) };
         const Text = Text_Text.Text;
         obj7 = DateUtils;
         items1[1] = authStore2(Text, obj6);
@@ -171,7 +174,27 @@ const memoResult = react.memo(function ChannelRow(channel) {
       return gesture(tmp6, obj);
     }
   }, items7);
+  const items8 = [accessibilityLabel, channel, label, memo2, trailing];
+  const items9 = [trailing, flag2];
   const memo3 = obj4.useMemo(() => {
+    let tmp = accessibilityLabel;
+    if (undefined === accessibilityLabel) {
+      let joined;
+      if (undefined === label) {
+        if (null == trailing) {
+          const obj = { channel };
+          const items = [getChannelA11yLabelDefault(obj), ];
+          const obj2 = getNodeText;
+          items[1] = obj2.getNodeText(memo2);
+          const found = items.filter((item) => null != item && "" !== item);
+          joined = found.join(", ");
+        }
+      }
+      tmp = joined;
+    }
+    return tmp;
+  }, items8);
+  const memo4 = obj4.useMemo(() => {
     let tmp = trailing;
     if (null == trailing) {
       let tmp3;
@@ -181,22 +204,23 @@ const memoResult = react.memo(function ChannelRow(channel) {
       tmp = tmp3;
     }
     return tmp;
-  }, items8);
-  let obj5 = { disabled: flag2, icon: memo, onPress: callback, onLongPress: callback1, label: tmp18, subLabel: memo2 };
-  tmp18 = closure_12(channel(tmp5[18]).Text, { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: memo1 });
+  }, items9);
+  let obj5 = { disabled: flag2, icon: memo, onPress: callback, onLongPress: callback1, label: tmp19, subLabel: memo2, accessibilityLabel: memo3 };
+  tmp19 = stateFromStores2(channel(tmp5[18]).Text, { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: memo1 });
   const merged1 = Object.assign(merged);
-  if (NONE === stateFromStores1.TOGGLE) {
+  if (NONE === UserRowModes.TOGGLE) {
     let obj6 = { height: "100%", checked: flag };
-    const TableCheckboxRow = tmp4(tmp5[21]).TableCheckboxRow;
+    const TableCheckboxRow = tmp4(tmp5[23]).TableCheckboxRow;
     const merged2 = Object.assign(obj5);
-    tmp17Result = tmp17(TableCheckboxRow, obj6);
+    tmp18Result = tmp18(TableCheckboxRow, obj6);
   } else {
-    let obj7 = { height: "100%", trailing: memo3 };
-    const TableRow = tmp4(tmp5[22]).TableRow;
+    let obj7 = { height: "100%", trailing: memo4 };
+    const TableRow = tmp4(tmp5[24]).TableRow;
     const merged3 = Object.assign(obj5);
-    tmp17Result = tmp17(TableRow, obj7);
+    const str = "100%";
+    tmp18Result = tmp18(TableRow, obj7);
   }
-  return tmp17Result;
+  return tmp18Result;
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/ChannelRow.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 11091
-// Function ID: 11092
+// Module ID: 11137
+// Function ID: 11138
 // Name: ContentInventoryOutboxStore
-// Dependencies: [504, 8714, 572, 2]
+// Dependencies: [504, 8756, 572, 2]
 
-// Module 11091 (ContentInventoryOutboxStore)
+// Module 11137 (ContentInventoryOutboxStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import matchUtils from "matchUtils" /* 8714 */;
+import matchUtils from "matchUtils" /* 8756 */;
 import size from "module_2" /* 2 */;
 
 let map = new Map();

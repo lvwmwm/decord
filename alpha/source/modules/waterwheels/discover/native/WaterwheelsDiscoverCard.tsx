@@ -1,31 +1,31 @@
-// Module ID: 17970
-// Function ID: 17971
+// Module ID: 18027
+// Function ID: 18028
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 2140, 4883, 1071, 21, 575, 5012, 4875, 504, 17971, 5618, 8890, 5699, 5603, 8693, 7527, 1112, 2654, 5610, 17960, 11399, 5567, 8756, 17972, 6128, 14251, 17690, 7722, 17959, 17958, 2]
+// Dependencies: [32, 19, 17, 2141, 4914, 1071, 21, 575, 5043, 4906, 504, 18028, 5649, 8932, 5730, 5634, 8735, 7558, 1112, 2655, 5641, 18017, 11445, 5598, 8798, 18029, 6159, 14303, 17747, 7756, 18016, 18015, 2]
 // Exports: default
 
-// Module 17970 (WaterwheelsDiscoverCard)
+// Module 18027 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
-import _modDef2654 from "module_2654" /* 2654 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4875 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import GameControllerIcon2 from "GameControllerIcon" /* 7722 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8890 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17690 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17958 */;
-import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17959 */;
-import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 17960 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17971 */;
+import _modDef2655 from "module_2655" /* 2655 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4906 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import GameControllerIcon2 from "GameControllerIcon" /* 7756 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 8932 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17747 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18015 */;
+import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 18016 */;
+import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 18017 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 18028 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameStore from "GameStore" /* 2140 */;
-import GuildStore from "GuildStore" /* 4883 */;
+import GameStore from "GameStore" /* 2141 */;
+import GuildStore from "GuildStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -55,7 +55,10 @@ let obj24;
 let obj25;
 let obj26;
 let obj27;
+let obj28;
+let obj29;
 let obj3;
+let obj30;
 let obj4;
 let obj5;
 let obj6;
@@ -93,7 +96,7 @@ function ServerIdentity(server) {
     flag = false;
   }
   const onAction = server.onAction;
-  let obj = server(5618);
+  let obj = server(5649);
   const fontScale = obj.useFontScale();
   const tmp4 = closure_17();
   const guildId = server.guildId;
@@ -104,7 +107,7 @@ function ServerIdentity(server) {
     const obj = selectDiscoverServerAction;
     return obj.selectDiscoverServerAction(GuildStore.getGuild(guildId));
   }, items1);
-  const OPEN_GUILD = server(8890).WaterwheelsActionType.OPEN_GUILD;
+  const OPEN_GUILD = server(8932).WaterwheelsActionType.OPEN_GUILD;
   set = new Set();
   if (server.verified) {
     set.add(GuildFeatures.VERIFIED);
@@ -116,7 +119,7 @@ function ServerIdentity(server) {
   if (0 !== set.size) {
     const obj3 = { id: null, name: null, icon: null, features: set };
     ({ guildId: obj5.id, name: obj5.name } = server);
-    const tmpResult = server(4875);
+    const tmpResult = server(4906);
     result = tmpResult.constructFromPartialGuildRecord(obj3);
   }
   const tmp11 = closure_18(fontScale, flag);
@@ -124,7 +127,7 @@ function ServerIdentity(server) {
   if (null != server.iconUrl) {
     const items2 = [tmp4.icon, ];
     let iconCompact2 = flag;
-    const tmp19 = onAction(5699);
+    const tmp19 = onAction(5730);
     if (flag) {
       iconCompact2 = tmp4.iconCompact;
     }
@@ -148,7 +151,7 @@ function ServerIdentity(server) {
   const items4 = [tmp14Result4, ];
   const obj8 = { style: tmp4.identityCopy, children: items6 };
   const obj9 = { style: tmp4.nameRow, children: items5 };
-  const tmpResult2 = server(5603);
+  const tmpResult2 = server(5634);
   if (flag) {
     const obj10 = { variant: "body-sm/semibold", color: "text-strong", lineClamp: 1, style: tmp4.name, children: server.name };
     tmp14Result = tmp14(tmpResult2.Text, obj10);
@@ -160,13 +163,13 @@ function ServerIdentity(server) {
   let tmp14Result5 = null;
   if (null != result) {
     const obj12 = { guild: result, style: tmp4.badge };
-    tmp14Result5 = tmp14(onAction(8693), obj12);
+    tmp14Result5 = tmp14(onAction(8735), obj12);
   }
   items5[1] = tmp14Result5;
   let tmp14Result6 = null;
   if (stateFromStores === OPEN_GUILD) {
     const obj13 = { size: "xxs", color: onAction(575).colors.ICON_MUTED };
-    const ChevronSmallRightIcon = tmp(7527).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp(7558).ChevronSmallRightIcon;
     tmp14Result6 = tmp14(ChevronSmallRightIcon, obj13);
   }
   items5[2] = tmp14Result6;
@@ -177,7 +180,7 @@ function ServerIdentity(server) {
   const obj16 = { style: tmp4.dot };
   items7[0] = tmp14(closure_7, obj16);
   const obj17 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl.format(server(1112).t["LC+S+m"], obj18) };
-  const Text = tmp(5603).Text;
+  const Text = tmp(5634).Text;
   intl = tmp(1112).intl;
   obj18 = { membersOnline: server.online };
   items7[1] = tmp14(Text, obj17);
@@ -190,7 +193,7 @@ function ServerIdentity(server) {
     ({ dot: arr10[0], mutedDot: arr10[1] } = tmp4);
     items10 = [tmp14(closure_7, obj20), ];
     const obj21 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl2.format(server(1112).t.zRl6XR, obj22) };
-    const Text2 = tmp(5603).Text;
+    const Text2 = tmp(5634).Text;
     intl2 = tmp(1112).intl;
     obj22 = { count: server.members };
     items10[1] = tmp14(Text2, obj21);
@@ -258,18 +261,18 @@ class ServerActionButton {
       const obj = selectDiscoverServerAction;
       return obj.selectDiscoverServerAction(GuildStore.getGuild(guildId));
     }, items1);
-    const tmp4 = stateFromStores === guildId(8890).WaterwheelsActionType.OPEN_GUILD;
+    const tmp4 = stateFromStores === guildId(8932).WaterwheelsActionType.OPEN_GUILD;
     const intl = guildId(1112).intl;
     const string = intl.string;
     const t = guildId(1112).t;
     const stringResult = string(tmp4 ? t["HO/oXl"] : t.VJlc0S);
     const intl2 = tmp(1112).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const tmp6 = _modDef2654;
+    const tmp6 = _modDef2655;
     let obj2 = { guild: server.name };
     let str = "sm";
     const formatToPlainStringResult = formatToPlainString(tmp4 ? tmp6.qGeMEE : tmp6.NOfX8z, obj2);
-    const Button = tmp(5610).Button;
+    const Button = tmp(5641).Button;
     const tmp8 = closure_11;
     if (flag) {
       str = "lg";
@@ -358,10 +361,10 @@ function ServerRowCard(server) {
   let tmp14 = null;
   const joined = found.join(", ");
   if (showSectionLabel) {
-    const obj7 = { icon: unpackModuleId(ServerIcon, obj8), text: intl3.string(_modDef2654["2iP+h2"]) };
+    const obj7 = { icon: unpackModuleId(ServerIcon, obj8), text: intl3.string(_modDef2655["2iP+h2"]) };
     obj8 = { size: "sm", color: nativeDefault.colors.ICON_MUTED, accessible: false };
     const tmp17 = WaterwheelsSectionLabelDefault;
-    ServerIcon = tmp9(11399).ServerIcon;
+    ServerIcon = tmp9(11445).ServerIcon;
     intl3 = tmp9(1112).intl;
     tmp14 = unpackModuleId(tmp17, obj7);
   }
@@ -370,7 +373,7 @@ function ServerRowCard(server) {
   const obj10 = {
     accessibilityRole: "button",
     accessibilityLabel: joined,
-    accessibilityHint: intl4.string(_modDef2654.nkweXX),
+    accessibilityHint: intl4.string(_modDef2655.nkweXX),
     onPress: function openProfile() {
       onProfileOpen(server);
     },
@@ -382,7 +385,7 @@ function ServerRowCard(server) {
   if (null != server.bannerUrl) {
     const obj11 = { accessible: false, style: tmp.serverBanner, source: obj12, resizeMode: "cover" };
     obj12 = { uri: server.bannerUrl };
-    tmp20 = unpackModuleId(tmp19(5699), obj11);
+    tmp20 = unpackModuleId(tmp19(5730), obj11);
   }
   items3 = [tmp20, ];
   const items4 = [tmp.serverContent, ];
@@ -419,7 +422,7 @@ function ServerRowCard(server) {
   let tmp23Result = null;
   if (null != result) {
     const obj21 = { guild: result, style: tmp.badge };
-    tmp23Result = tmp23(tmp19(8693), obj21);
+    tmp23Result = tmp23(tmp19(8735), obj21);
   }
   items8[1] = tmp23Result;
   items9 = [authStore2(metroImportDefault, obj19), ];
@@ -432,7 +435,7 @@ function ServerRowCard(server) {
   ({ dot: arr12[0], serverOnlineDot: arr12[1] } = tmp);
   items12 = [tmp23(metroImportDefault, obj24), ];
   const obj25 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.metaText, children: intl5.format(intl7.t["LC+S+m"], obj26) };
-  const Text = tmp9(5603).Text;
+  const Text = tmp9(5634).Text;
   intl5 = tmp9(1112).intl;
   obj26 = { membersOnline: server.online };
   items12[1] = tmp23(Text, obj25);
@@ -443,7 +446,7 @@ function ServerRowCard(server) {
   ({ dot: arr15[0], serverOfflineDot: arr15[1] } = tmp);
   items15 = [tmp23(metroImportDefault, obj28), ];
   const obj29 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.metaText, children: intl6.format(intl7.t.zRl6XR, obj30) };
-  const Text2 = tmp9(5603).Text;
+  const Text2 = tmp9(5634).Text;
   intl6 = tmp9(1112).intl;
   obj30 = { count: server.members };
   items15[1] = tmp23(Text2, obj29);
@@ -455,7 +458,7 @@ function ServerRowCard(server) {
     tmp23Result3 = null;
     if ("" !== server.description) {
       const obj31 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: server.description };
-      tmp23Result3 = tmp23(tmp9(5603).Text, obj31);
+      tmp23Result3 = tmp23(tmp9(5634).Text, obj31);
     }
   }
   items16[1] = tmp23Result3;
@@ -589,9 +592,10 @@ function GamePoster(game) {
   let intl2;
   let intl3;
   let items3;
-  let obj6;
-  let obj7;
+  let obj10;
+  let obj5;
   let obj8;
+  let obj9;
   game = game.game;
   const onAction = game.onAction;
   const tmp = closure_17();
@@ -603,7 +607,7 @@ function GamePoster(game) {
   if (null != game.l30Rank) {
     const intl = tmp2(1112).intl;
     let obj2 = { rank: game.l30Rank };
-    formatToPlainStringResult = intl.formatToPlainString(onAction(2654).mnK52O, obj2);
+    formatToPlainStringResult = intl.formatToPlainString(onAction(2655).mnK52O, obj2);
   }
   const items2 = [game.name, formatToPlainStringResult, game.description];
   const found = items2.filter((item) => null != item);
@@ -611,7 +615,7 @@ function GamePoster(game) {
     style: tmp.poster,
     accessibilityRole: "button",
     accessibilityLabel: found.join(", "),
-    accessibilityHint: intl2.string(onAction(2654).xH6QTw),
+    accessibilityHint: intl2.string(onAction(2655).xH6QTw),
     onPress() {
       let obj2;
       const obj = { type: WaterwheelsCardTypes.WaterwheelsActionType.OPEN_GAME, value: obj2 };
@@ -621,22 +625,25 @@ function GamePoster(game) {
     children: items3
   };
   intl2 = tmp2(1112).intl;
-  items3 = [, ];
-  const obj4 = { gameId: game.gameId, name: game.name, coverUrl: game.coverUrl, iconGame: stateFromStores, width: 114, aspectRatio: 0.6909090909090909 };
-  items3[0] = closure_11(game(17972).GameCoverFromURLs, obj4);
+  const obj4 = { style: tmp.posterClip, children: closure_11(game(18029).GameCoverFromURLs, obj5) };
+  obj5 = { gameId: game.gameId, name: game.name, coverUrl: game.coverUrl, iconGame: stateFromStores, width: 114, aspectRatio: 0.6909090909090909 };
+  items3 = [closure_11(closure_7, obj4), , ];
+  const obj6 = { pointerEvents: "none", style: tmp.posterBorder };
+  items3[1] = closure_11(closure_7, obj6);
   let tmp9Result = null;
+  const tmp10 = closure_7;
   const tmp7 = closure_12;
   const tmp8 = closure_5;
   if (null != game.l30Rank) {
-    const obj5 = { style: tmp.posterRank, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(Badge, obj6) };
-    obj6 = { type: obj7, variant: "inverted", icon: game(14251).FireIcon };
-    obj7 = { text: intl3.formatToPlainString(game(1112).t.UA6RoE, obj8) };
-    Badge = tmp2(6128).Badge;
+    const obj7 = { style: tmp.posterRank, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(Badge, obj8) };
+    obj8 = { type: obj9, variant: "inverted", icon: game(14303).FireIcon };
+    obj9 = { text: intl3.formatToPlainString(game(1112).t.UA6RoE, obj10) };
+    Badge = tmp2(6159).Badge;
     intl3 = tmp2(1112).intl;
-    obj8 = { rank: game.l30Rank };
-    tmp9Result = tmp9(closure_7, obj5);
+    obj10 = { rank: game.l30Rank };
+    tmp9Result = tmp9(tmp10, obj7);
   }
-  items3[1] = tmp9Result;
+  items3[2] = tmp9Result;
   return tmp7(tmp8, obj3);
 }
 function CarouselCard(arg0) {
@@ -733,7 +740,7 @@ function WaterwheelsDiscoverCardContent(entry) {
   }
 }
 let _slicedToArray = _slicedToArray_mod;
-({ Pressable: hasOwnProperty, ScrollView: metroRequire, View: metroImportDefault, StyleSheet } = react_native);
+({ Pressable: hasOwnProperty, ScrollView: metroRequire, StyleSheet, View: metroImportDefault } = react_native);
 const GuildFeatures = Constants.GuildFeatures;
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 const PX_40 = nativeDefault.space.PX_40;
@@ -743,42 +750,48 @@ const PX_10 = nativeDefault.space.PX_10;
 const PX_16 = nativeDefault.space.PX_16;
 const colors = ["rgba(0,0,0,0.65)", "rgba(0,0,0,0.85)"];
 let createStyles = createStyles_mod;
-let obj = { row: obj2, carouselSection: obj3, carouselContent: { gap: PX_10 }, poster: size, posterRank: rect, serverRow: obj4, serverProfile: obj5, serverCard: obj6, serverBanner: { height: 111, width: "100%" }, serverContent: obj7, serverContentWithoutBanner: obj8, serverIcon: size1, serverIconOverlap: { marginTop: -30 }, serverCopy: obj9, serverTitle: obj10, serverMeta: obj11, serverOnlineDot: obj12, serverOfflineDot: obj13, badge: size2, identity: { flex: 1, flexDirection: "row", alignItems: "center", gap: PX_12, minWidth: 0 }, identityCompact: obj14, identityCopy: obj15, nameRow: obj16, name: { flexShrink: 1 }, icon: size3, iconCompact: size4, meta: obj17, metaItem: obj18, metaText: { flexShrink: 1 }, dot: size5, mutedDot: obj19, hero: obj20, heroBody: obj21, heroArt: obj22, heroImage: StyleSheet.absoluteFillObject, heroTop: obj23, heroTitle: obj24, heroRank: obj25, cover: size6, heroCta: obj26, heroServer: obj27 };
+let obj = { row: obj2, carouselSection: obj3, carouselContent: obj4, poster: size, posterClip: obj5, posterBorder: obj6, posterRank: rect, serverRow: obj7, serverProfile: obj8, serverCard: obj9, serverBanner: { height: 111, width: "100%" }, serverContent: obj10, serverContentWithoutBanner: obj11, serverIcon: size1, serverIconOverlap: { marginTop: -30 }, serverCopy: obj12, serverTitle: obj13, serverMeta: obj14, serverOnlineDot: obj15, serverOfflineDot: obj16, badge: size2, identity: { flex: 1, flexDirection: "row", alignItems: "center", gap: PX_12, minWidth: 0 }, identityCompact: obj17, identityCopy: obj18, nameRow: obj19, name: { flexShrink: 1 }, icon: size3, iconCompact: size4, meta: obj20, metaItem: obj21, metaText: { flexShrink: 1 }, dot: size5, mutedDot: obj22, hero: obj23, heroBody: obj24, heroArt: obj25, heroImage: StyleSheet.absoluteFillObject, heroTop: obj26, heroTitle: obj27, heroRank: obj28, cover: size6, heroCta: obj29, heroServer: obj30 };
 obj2 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
-size = { width: 114, height: 165, borderRadius: nativeDefault.radii.lg, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
-rect = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8 };
-obj4 = { paddingHorizontal: nativeDefault.space.PX_16 };
-obj5 = { paddingVertical: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12 };
-obj6 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
-obj7 = { paddingHorizontal: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
-obj8 = { paddingTop: nativeDefault.space.PX_12 };
+obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
+obj4 = { gap: PX_10, paddingTop: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_12 };
+size = { width: 114, height: 165, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
+let merged = Object.assign(nativeDefault.shadows.SHADOW_MEDIUM);
+obj5 = { borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" };
+const merged1 = Object.assign(StyleSheet.absoluteFillObject);
+obj6 = { borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
+const merged2 = Object.assign(StyleSheet.absoluteFillObject);
+rect = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, alignItems: "flex-start", overflow: "hidden" };
+obj7 = { paddingHorizontal: nativeDefault.space.PX_16 };
+obj8 = { paddingVertical: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12 };
+obj9 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden" };
+obj10 = { paddingHorizontal: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
+obj11 = { paddingTop: nativeDefault.space.PX_12 };
 size1 = { width: nativeDefault.space.PX_48, height: nativeDefault.space.PX_48, borderRadius: nativeDefault.radii.md, borderWidth: 4, borderColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj9 = { gap: nativeDefault.space.PX_12 };
-obj10 = { gap: nativeDefault.space.PX_4 };
-obj11 = { gap: nativeDefault.space.PX_12 };
-obj12 = { backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
-obj13 = { backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
+obj12 = { gap: nativeDefault.space.PX_12 };
+obj13 = { gap: nativeDefault.space.PX_4 };
+obj14 = { gap: nativeDefault.space.PX_12 };
+obj15 = { backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
+obj16 = { backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
 size2 = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16, marginRight: 0 };
-obj14 = { gap: nativeDefault.space.PX_8 };
-obj15 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
-obj16 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, minWidth: 0 };
+obj17 = { gap: nativeDefault.space.PX_8 };
+obj18 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
+obj19 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, minWidth: 0 };
 size3 = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 size4 = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.sm };
-obj17 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj18 = { flexDirection: "row", maxWidth: "100%", flexShrink: 1, alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj20 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 };
+obj21 = { flexDirection: "row", maxWidth: "100%", flexShrink: 1, alignItems: "center", gap: nativeDefault.space.PX_4 };
 size5 = { flexShrink: 0, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.ICON_STATUS_ONLINE };
-obj19 = { backgroundColor: nativeDefault.colors.ICON_STATUS_OFFLINE };
-obj20 = { borderRadius: nativeDefault.radii.xl, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj21 = { padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
-obj22 = { minHeight: 184, borderRadius: nativeDefault.radii.lg, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "flex-end", padding: nativeDefault.space.PX_12 };
-obj23 = { flexDirection: "row", alignItems: "flex-end", gap: nativeDefault.space.PX_12 };
-obj24 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
-obj25 = { flexDirection: "row", minHeight: 20, marginBottom: nativeDefault.space.PX_4 };
+obj22 = { backgroundColor: nativeDefault.colors.ICON_STATUS_OFFLINE };
+obj23 = { borderRadius: nativeDefault.radii.xl, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj24 = { padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
+obj25 = { minHeight: 184, borderRadius: nativeDefault.radii.lg, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "flex-end", padding: nativeDefault.space.PX_12 };
+obj26 = { flexDirection: "row", alignItems: "flex-end", gap: nativeDefault.space.PX_12 };
+obj27 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
+obj28 = { flexDirection: "row", minHeight: 20, marginBottom: nativeDefault.space.PX_4 };
 size6 = { width: 72, height: 96, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-obj26 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingTop: nativeDefault.space.PX_12 };
-obj27 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+obj29 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingTop: nativeDefault.space.PX_12 };
+obj30 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_17 = createStyles(obj);
 createStyles = createStyles_mod;
 let closure_18 = createStyles.createStyles((arg0, arg1) => {

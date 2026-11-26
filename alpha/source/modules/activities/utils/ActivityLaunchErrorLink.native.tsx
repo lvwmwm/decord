@@ -1,12 +1,12 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 10004
+// Function ID: 10005
 // Name: ActivityLaunchErrorLink
-// Dependencies: [19, 21, 9963, 2]
+// Dependencies: [19, 21, 10005, 2]
 // Exports: default
 
-// Module 9962 (ActivityLaunchErrorLink)
+// Module 10004 (ActivityLaunchErrorLink)
 import Fragment from "Fragment" /* 21 */;
-import IntlLink from "IntlLink" /* 9963 */;
+import IntlLink from "IntlLink" /* 10005 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

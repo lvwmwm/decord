@@ -1,15 +1,15 @@
-// Module ID: 19382
-// Function ID: 19383
+// Module ID: 19445
+// Function ID: 19446
 // Name: useIsDockCoveredByActivity
-// Dependencies: [6905, 5638, 6906, 19331, 504, 2]
+// Dependencies: [6936, 5669, 6937, 19394, 504, 2]
 // Exports: default
 
-// Module 19382 (useIsDockCoveredByActivity)
+// Module 19445 (useIsDockCoveredByActivity)
 import get_initialized from "get initialized" /* 504 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5638 */;
-import FramesConstants from "FramesConstants" /* 6906 */;
-import ActivityPanelUtils from "ActivityPanelUtils" /* 19331 */;
-import FramesStore from "FramesStore" /* 6905 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5669 */;
+import FramesConstants from "FramesConstants" /* 6937 */;
+import ActivityPanelUtils from "ActivityPanelUtils" /* 19394 */;
+import FramesStore from "FramesStore" /* 6936 */;
 import size from "module_2" /* 2 */;
 
 let mainFrame;

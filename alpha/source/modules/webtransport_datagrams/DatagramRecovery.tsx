@@ -1,9 +1,9 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15097
+// Function ID: 15098
 // Name: DatagramRecovery
 // Dependencies: [559, 2]
 
-// Module 15047 (DatagramRecovery)
+// Module 15097 (DatagramRecovery)
 import BackoffDefault from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 

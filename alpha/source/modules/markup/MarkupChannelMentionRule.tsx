@@ -1,26 +1,26 @@
-// Module ID: 7049
-// Function ID: 7050
+// Module ID: 7080
+// Function ID: 7081
 // Name: MarkupChannelMentionRule
-// Dependencies: [4916, 4861, 4883, 4944, 4954, 1386, 1071, 2152, 1412, 1112, 7050, 6770, 5628, 7051, 5635, 7048, 2068, 2]
+// Dependencies: [4947, 4892, 4914, 4975, 4985, 1387, 1071, 2153, 1413, 1112, 7081, 6801, 5659, 7082, 5666, 7079, 2069, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 7049 (MarkupChannelMentionRule)
+// Module 7080 (MarkupChannelMentionRule)
 import intl3 from "intl" /* 1112 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import _modDef2068 from "module_2068" /* 2068 */;
-import StringUtils from "StringUtils" /* 2152 */;
-import useChannelName from "useChannelName" /* 5628 */;
-import LinkUtils from "LinkUtils" /* 5635 */;
-import ChannelUtils from "ChannelUtils" /* 6770 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 7048 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 7050 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 7051 */;
-import GatedChannelStore from "GatedChannelStore" /* 4916 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import _modDef2069 from "module_2069" /* 2069 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import useChannelName from "useChannelName" /* 5659 */;
+import LinkUtils from "LinkUtils" /* 5666 */;
+import ChannelUtils from "ChannelUtils" /* 6801 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 7079 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 7081 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 7082 */;
+import GatedChannelStore from "GatedChannelStore" /* 4947 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -313,7 +313,7 @@ obj2 = {
   }
 };
 obj3 = {
-  order: _modDef2068.defaultRules.url.order - 0.5,
+  order: _modDef2069.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE;
@@ -377,7 +377,7 @@ obj3 = {
   }
 };
 obj4 = {
-  order: _modDef2068.defaultRules.url.order - 0.5,
+  order: _modDef2069.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const MEDIA_POST_URL_RE = LinkUtils.MEDIA_POST_URL_RE;

@@ -1,13 +1,13 @@
-// Module ID: 18610
-// Function ID: 18611
+// Module ID: 18673
+// Function ID: 18674
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 11412, 18611, 10036, 1112, 4244, 18615, 2]
+// Dependencies: [5, 19, 21, 11459, 18674, 10078, 1112, 4245, 18678, 2]
 
-// Module 18610 (ConjureBotPermissionsTip)
+// Module 18673 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 18611 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 18615 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 18674 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 18678 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ function BotPermissionsHint(projectId) {
   let closure_1;
   let closure_2;
   projectId = projectId.projectId;
-  dependencyMap = react.useContext(projectId(11412).ConjurePublishActionContext);
+  dependencyMap = react.useContext(projectId(11459).ConjurePublishActionContext);
   ConjureTipHintDefault;
   const intl = projectId(1112).intl;
   const format = intl.format;
@@ -27,7 +27,7 @@ function BotPermissionsHint(projectId) {
       return closure_1(...arguments);
     }
   };
-  const v0S9HY8 = _modDef4244["0S9HY8"];
+  const v0S9HY8 = _modDef4245["0S9HY8"];
   importDefault = _asyncToGenerator(async (arg0, value) => {
     let v3;
     if (projectId === 2) {
@@ -40,7 +40,7 @@ function BotPermissionsHint(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -69,14 +69,14 @@ function BotPermissionsHint(projectId) {
           return obj;
         }
         projectId = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp9) {
         projectId = 3;
         throw tmp9;
       }
     }
   });
-  return <tmp icon={projectId(10036).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
+  return <tmp icon={projectId(10078).ShieldIcon}>{format(v0S9HY8, obj2)}</tmp>;
 }
 const jsx = Fragment.jsx;
 let obj = {

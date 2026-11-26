@@ -1,28 +1,28 @@
-// Module ID: 18995
-// Function ID: 18996
+// Module ID: 19058
+// Function ID: 19059
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 4861, 4883, 4944, 5983, 1386, 1071, 21, 5012, 575, 504, 1186, 5628, 1500, 6095, 6121, 5603, 1112, 6770, 4180, 9574, 7065, 9766, 6348, 6102, 2]
+// Dependencies: [19, 17, 4892, 4914, 4975, 6014, 1387, 1071, 21, 5043, 575, 504, 1186, 5659, 1501, 6126, 6152, 5634, 1112, 6801, 4181, 9616, 7096, 9808, 6379, 6133, 2]
 
-// Module 18995 (ChannelNameHeader)
+// Module 19058 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import _modDef4180 from "module_4180" /* 4180 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import transitionToChannel from "transitionToChannel" /* 6095 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6102 */;
-import ChannelUtils from "ChannelUtils" /* 6770 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7065 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 9574 */;
+import _modDef4181 from "module_4181" /* 4181 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import transitionToChannel from "transitionToChannel" /* 6126 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 6133 */;
+import ChannelUtils from "ChannelUtils" /* 6801 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7096 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 9616 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import PresenceStore from "PresenceStore" /* 5983 */;
-import UserStore from "UserStore" /* 1386 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import PresenceStore from "PresenceStore" /* 6014 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -127,9 +127,9 @@ function ChannelSubtitle(channel) {
     let stringResult;
     if (channel.isGameInvitesChannel()) {
       const intl = tmp(1112).intl;
-      stringResult = intl.string(_modDef4180["D+2/QP"]);
+      stringResult = intl.string(_modDef4181["D+2/QP"]);
     } else {
-      const tmpResult = tmp(6770);
+      const tmpResult = tmp(6801);
       stringResult = tmpResult.channelTypeString(channel);
     }
     stateFromStores = stringResult;
@@ -139,7 +139,7 @@ function ChannelSubtitle(channel) {
     tmp6 = null;
     if ("" !== stateFromStores) {
       const obj2 = { variant: "body-sm/medium", color: "text-muted", lineClamp: 1, children: stateFromStores };
-      tmp6 = closure_12(tmp(5603).Text, obj2);
+      tmp6 = closure_12(tmp(5634).Text, obj2);
     }
   }
   return tmp6;
@@ -255,7 +255,7 @@ function DMChannelNameHeader(channel) {
   let analyticsLocations;
   const containerStyle = channel.containerStyle;
   let tmp = closure_15();
-  analyticsLocations = analyticsLocations(6348)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6379)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = react.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -267,7 +267,7 @@ function DMChannelNameHeader(channel) {
   }, items);
   let obj = { style: items1, onPress: callback, children: closure_12(ChannelNameHeaderContent, { channel }) };
   items1 = [tmp.container, containerStyle];
-  const PressableOpacity = channel(6121).PressableOpacity;
+  const PressableOpacity = channel(6152).PressableOpacity;
   return closure_12(PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {

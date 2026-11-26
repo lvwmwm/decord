@@ -1,19 +1,19 @@
-// Module ID: 19694
-// Function ID: 19695
+// Module ID: 19758
+// Function ID: 19759
 // Name: ImageLoadMetricsManager
-// Dependencies: [17, 1245, 1193, 5950, 1071, 19695, 1450, 7444, 19696, 1255, 2]
+// Dependencies: [17, 1246, 1193, 5981, 1071, 19759, 1451, 7475, 19760, 1256, 2]
 
-// Module 19694 (ImageLoadMetricsManager)
+// Module 19758 (ImageLoadMetricsManager)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import react_nativeDefault from "react-native" /* 19695 */;
-import buildImageLoadMetricProperties from "buildImageLoadMetricProperties" /* 19696 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import react_nativeDefault from "react-native" /* 19759 */;
+import buildImageLoadMetricProperties from "buildImageLoadMetricProperties" /* 19760 */;
 import react_native from "react-native" /* 17 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
-import NetworkStore from "NetworkStore" /* 5950 */;
-import ApexExperiment from "ApexExperiment" /* 1450 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import NetworkStore from "NetworkStore" /* 5981 */;
+import ApexExperiment from "ApexExperiment" /* 1451 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let NativeEventEmitter;

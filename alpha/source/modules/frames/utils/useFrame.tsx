@@ -1,11 +1,11 @@
-// Module ID: 18852
-// Function ID: 18853
+// Module ID: 18915
+// Function ID: 18916
 // Name: useFrame
-// Dependencies: [6905, 504, 2]
+// Dependencies: [6936, 504, 2]
 // Exports: default
 
-// Module 18852 (useFrame)
-import FramesStore from "FramesStore" /* 6905 */;
+// Module 18915 (useFrame)
+import FramesStore from "FramesStore" /* 6936 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

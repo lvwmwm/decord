@@ -1,16 +1,16 @@
-// Module ID: 7759
-// Function ID: 7760
+// Module ID: 7793
+// Function ID: 7794
 // Name: PlayStationLinkError
-// Dependencies: [19, 7751, 1071, 21, 1500, 7745, 1112, 7746, 2]
+// Dependencies: [19, 7785, 1071, 21, 1501, 7779, 1112, 7780, 2]
 // Exports: PlayStationLinkError
 
-// Module 7759 (PlayStationLinkError)
+// Module 7793 (PlayStationLinkError)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import useNavigation from "useNavigation" /* 1500 */;
-import react2 from "react" /* 7745 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7751 */;
+import useNavigation from "useNavigation" /* 1501 */;
+import react2 from "react" /* 7779 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7785 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export function PlayStationLinkError(arg0) {
     const intl = tmp(1112).intl;
     stringResult = intl.string(tmp(1112).t.qE9nqE);
   }
-  const TwoWayLinkError = tmp(7746).TwoWayLinkError;
+  const TwoWayLinkError = tmp(7780).TwoWayLinkError;
   const intl3 = tmp(1112).intl;
   return <TwoWayLinkError title={intl3.string(intl4.t.eY3qHd)} body={stringResult} onClose={onClose} onRetry={connectRetry} />;
 }

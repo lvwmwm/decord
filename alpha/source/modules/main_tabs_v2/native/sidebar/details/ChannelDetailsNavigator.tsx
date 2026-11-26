@@ -1,23 +1,23 @@
-// Module ID: 19076
-// Function ID: 19077
+// Module ID: 19139
+// Function ID: 19140
 // Name: ChannelDetailsNavigator
-// Dependencies: [19, 17, 4861, 11363, 1071, 18890, 21, 9005, 563, 7597, 11636, 8962, 1112, 13760, 1255, 8070, 19077, 7324, 7166, 5189, 19136, 1378, 19137, 19138, 9016, 9017, 9042, 19139, 19140, 18971, 19043, 2]
+// Dependencies: [19, 17, 4892, 11409, 1071, 18953, 21, 9047, 563, 7628, 11684, 9004, 1112, 13812, 1256, 8112, 19140, 7355, 7197, 5220, 19199, 1379, 19200, 19201, 9058, 9059, 9084, 19202, 19203, 19034, 19106, 2]
 
-// Module 19076 (ChannelDetailsNavigator)
+// Module 19139 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import HeaderShared from "HeaderShared" /* 8962 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11363 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 11636 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13760 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18890 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 19077 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HeaderShared from "HeaderShared" /* 9004 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 11409 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 11684 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13812 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18953 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 19140 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9005 */;
+import NativeStackView from "NativeStackView" /* 9047 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -37,13 +37,13 @@ function ConnectedCreateThreadHeaderButton(channelId) {
 function CreateThreadHeaderButton(channel) {
   let intl;
   channel = channel.channel;
-  let obj = channel(7597);
+  let obj = channel(7628);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
   if (canStartThread) {
     const obj2 = { accessibilityLabel: intl.string(channel(1112).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
-    const HeaderIconButton = tmp(8962).HeaderIconButton;
+    const HeaderIconButton = tmp(9004).HeaderIconButton;
     intl = tmp(1112).intl;
     tmp5 = closure_9(HeaderIconButton, obj2);
   }

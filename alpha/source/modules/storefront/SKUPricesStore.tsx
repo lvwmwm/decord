@@ -1,16 +1,16 @@
-// Module ID: 7563
-// Function ID: 7564
+// Module ID: 7594
+// Function ID: 7595
 // Name: SKUPricesStore
-// Dependencies: [2188, 504, 1254, 572, 2]
+// Dependencies: [2189, 504, 1255, 572, 2]
 
-// Module 7563 (SKUPricesStore)
+// Module 7594 (SKUPricesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import LocaleStore from "LocaleStore" /* 2188 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import size from "module_2" /* 2 */;
 
-const f91222 = (skuId) => {
+const f91464 = (skuId) => {
   let combined;
   obj = { type: "sku", skuId };
   if ("application" === obj.type) {
@@ -42,7 +42,7 @@ function setPriceIdState(priceId, arg1) {
     const merged1 = Object.assign(obj4);
     const _Object = Object;
     const skuIds = priceId.skuIds;
-    const merged2 = Object.assign(Object.fromEntries(skuIds.map(f91222)));
+    const merged2 = Object.assign(Object.fromEntries(skuIds.map(f91464)));
   }
 }
 function resetStoreState() {
@@ -158,7 +158,7 @@ let obj = {
       const merged1 = Object.assign(obj4);
       const _Object = Object;
       const skuIds = priceId.skuIds;
-      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f91222)));
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f91464)));
     }
   },
   SKUS_PRICING_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
@@ -220,7 +220,7 @@ let obj = {
       const merged1 = Object.assign(obj4);
       const _Object = Object;
       const skuIds = priceId.skuIds;
-      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f91222)));
+      const merged2 = Object.assign(Object.fromEntries(skuIds.map(f91464)));
     }
   },
   STOREFRONT_PROMOTION_ID_OVERRIDE_SET: resetStoreState

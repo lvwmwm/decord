@@ -1,10 +1,10 @@
-// Module ID: 11569
-// Function ID: 11570
+// Module ID: 11617
+// Function ID: 11618
 // Name: MobileOrbRedemptionOrdersExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 11569 (MobileOrbRedemptionOrdersExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 11617 (MobileOrbRedemptionOrdersExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-11-mobile-orb-redemption-thru-orders", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

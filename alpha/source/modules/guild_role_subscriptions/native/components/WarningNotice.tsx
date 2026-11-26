@@ -1,17 +1,17 @@
-// Module ID: 20084
-// Function ID: 20085
+// Module ID: 20148
+// Function ID: 20149
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 5012, 575, 7247, 5603, 5610, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 7278, 5634, 5641, 2]
 // Exports: default
 
-// Module 20084 (WarningNotice)
+// Module 20148 (WarningNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7247 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7278 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp5;
-const components_Button_Button = tmp5(5610);
+const components_Button_Button = tmp5(5641);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;

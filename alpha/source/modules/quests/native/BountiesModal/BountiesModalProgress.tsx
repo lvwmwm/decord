@@ -1,22 +1,22 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16547
+// Function ID: 16548
 // Name: BountiesModalProgress
-// Dependencies: [32, 19, 17, 21, 5012, 575, 1653, 5222, 5225, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 5253, 5256, 2]
 // Exports: default
 
-// Module 16496 (BountiesModalProgress)
+// Module 16547 (BountiesModalProgress)
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import timingPresets from "timingPresets" /* 5225 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import timingPresets from "timingPresets" /* 5256 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let num;
 
 let hasOwnProperty;
@@ -71,8 +71,8 @@ export default function BountiesModalProgress(progress) {
     tmp4(progress < first);
   }
   const items = [closure_10, , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items[1] = timing_timing.withTiming;
   items[2] = visible;
   items[3] = timingPresets.timingFast;
@@ -97,8 +97,8 @@ export default function BountiesModalProgress(progress) {
   BountiesModalProgressTsx1.__initData = tmp12;
   const animatedStyle = useAnimatedStyle(BountiesModalProgressTsx1);
   const items2 = [closure_11, , , , , ];
-  const useAnimatedStyle2 = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle2 = _mod1654.useAnimatedStyle;
+  _mod1654;
   items2[1] = timing_timing.withTiming;
   items2[2] = progress;
   items2[3] = tmp3;
@@ -124,14 +124,14 @@ export default function BountiesModalProgress(progress) {
   let obj = { style: items4, children: items5 };
   items4 = [tmp.progressContainer, style, animatedStyle];
   const obj2 = { style: tmp.progressTrack };
-  const View = _modDef1653.View;
+  const View = _modDef1654.View;
   items5 = [metroImportDefault(metroRequire, obj2), , ];
   const obj3 = { style: items6 };
   items6 = [tmp.progressBarGlowLayer, animatedStyle2];
-  items5[1] = metroImportDefault(_modDef1653.View, obj3);
+  items5[1] = metroImportDefault(_modDef1654.View, obj3);
   const obj4 = { style: items7 };
   items7 = [tmp.progressBar, animatedStyle2];
-  items5[2] = metroImportDefault(_modDef1653.View, obj4);
+  items5[2] = metroImportDefault(_modDef1654.View, obj4);
   return metroImportAll(View, obj);
 };
 export const PROGRESS_BAR_HEIGHT = 4;

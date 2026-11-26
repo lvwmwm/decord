@@ -1,11 +1,11 @@
-// Module ID: 2108
-// Function ID: 2109
+// Module ID: 2109
+// Function ID: 2110
 // Name: PremiumTypeUtils
-// Dependencies: [1388, 2]
+// Dependencies: [1389, 2]
 // Exports: isPremium, isPremiumAtLeast, isPremiumAtMost, isPremiumExactly
 
-// Module 2108 (PremiumTypeUtils)
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+// Module 2109 (PremiumTypeUtils)
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 function isPremiumAtLeast(premiumType, TIER_2) {

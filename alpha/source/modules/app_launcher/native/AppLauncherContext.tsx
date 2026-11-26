@@ -1,13 +1,13 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12145
+// Function ID: 12146
 // Name: AppLauncherContext
-// Dependencies: [19, 1653, 10047, 12096, 2]
+// Dependencies: [19, 1654, 10089, 12146, 2]
 // Exports: useAppLauncherChatInputRefDummy, useAppLauncherContext, useRequiredAppLauncherContext
 
-// Module 12095 (AppLauncherContext)
-import _mod1653 from "module_1653" /* 1653 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10047 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12096 */;
+// Module 12145 (AppLauncherContext)
+import _mod1654 from "module_1654" /* 1654 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10089 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12146 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -70,9 +70,9 @@ export function useAppLauncherContext() {
   let obj;
   let closure_0 = react.useRef(obj.DISMISSED);
   let closure_1 = react.useRef(undefined);
-  obj = _mod1653;
+  obj = _mod1654;
   const sharedValue = obj.useSharedValue(-1);
-  const obj2 = _mod1653;
+  const obj2 = _mod1654;
   const sharedValue1 = obj2.useSharedValue(0);
   const TEXT = AppLauncherTypes.AppLauncherEntrypoint.TEXT;
   const obj3 = useDefaultAppLauncherWidth;

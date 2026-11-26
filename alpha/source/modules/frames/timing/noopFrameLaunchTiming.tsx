@@ -1,9 +1,9 @@
-// Module ID: 7655
-// Function ID: 7656
+// Module ID: 7686
+// Function ID: 7687
 // Name: noopFrameLaunchTiming
 // Dependencies: [2]
 
-// Module 7655 (noopFrameLaunchTiming)
+// Module 7686 (noopFrameLaunchTiming)
 import size from "module_2" /* 2 */;
 
 const obj = {

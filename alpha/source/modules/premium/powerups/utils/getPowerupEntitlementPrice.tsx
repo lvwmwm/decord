@@ -1,10 +1,10 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10371
+// Function ID: 10372
 // Name: getPowerupEntitlementPrice
 // Dependencies: [2]
 // Exports: default
 
-// Module 10329 (getPowerupEntitlementPrice)
+// Module 10371 (getPowerupEntitlementPrice)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");

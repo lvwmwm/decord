@@ -1,19 +1,19 @@
-// Module ID: 9573
-// Function ID: 9574
+// Module ID: 9615
+// Function ID: 9616
 // Name: ForLaterCardHeader
-// Dependencies: [17, 4883, 21, 5012, 575, 7527, 504, 7021, 9574, 1186, 7106, 5628, 7065, 1112, 5603, 2]
+// Dependencies: [17, 4914, 21, 5043, 575, 7558, 504, 7052, 9616, 1186, 7137, 5659, 7096, 1112, 5634, 2]
 // Exports: ForLaterCardHeader
 
-// Module 9573 (ForLaterCardHeader)
+// Module 9615 (ForLaterCardHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useChannelNameDefault from "useChannelName" /* 5628 */;
-import GuildIconDefault from "GuildIcon" /* 7021 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7527 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 9574 */;
-import GuildStore from "GuildStore" /* 4883 */;
+import useChannelNameDefault from "useChannelName" /* 5659 */;
+import GuildIconDefault from "GuildIcon" /* 7052 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7558 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 9616 */;
+import GuildStore from "GuildStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -27,7 +27,7 @@ function HeaderIcon(channel) {
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   if (null != stateFromStores) {
-    const obj2 = { guild: stateFromStores, size: channel(7021).GuildIconSizes.XSMALL };
+    const obj2 = { guild: stateFromStores, size: channel(7052).GuildIconSizes.XSMALL };
     const tmp13 = GuildIconDefault;
     tmp6Result = closure_5(tmp13, obj2);
   } else {
@@ -40,7 +40,7 @@ function HeaderIcon(channel) {
       const tmp10 = GroupDMAvatarDefault;
       tmp6Result = tmp6(tmp10, obj3);
     } else {
-      const obj4 = { style: tmp.dmIcon, children: closure_5(channel(7106).ChatIcon, { size: "xxs" }) };
+      const obj4 = { style: tmp.dmIcon, children: closure_5(channel(7137).ChatIcon, { size: "xxs" }) };
       tmp6Result = tmp6(View, obj4);
     }
   }
@@ -54,7 +54,7 @@ function ChannelName(channel) {
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   const tmp5 = useChannelNameDefault(channel, false);
-  const obj2 = channel(7065);
+  const obj2 = channel(7096);
   const channelIconComponentWithGuild = obj2.getChannelIconComponentWithGuild(channel, stateFromStores);
   let formatToPlainStringResult = tmp5;
   const isPrivateResult = channel.isPrivate() || null == channelIconComponentWithGuild;
@@ -73,7 +73,7 @@ function ChannelName(channel) {
   }
   items1 = [tmp12, ];
   const obj6 = { style: tmp.channelName, variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: formatToPlainStringResult };
-  items1[1] = closure_5(channel(5603).Text, obj6);
+  items1[1] = closure_5(channel(5634).Text, obj6);
   return tmp10(tmp11, obj4);
 }
 const View = react_native.View;

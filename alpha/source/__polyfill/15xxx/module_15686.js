@@ -1,13 +1,23 @@
 // Module ID: 15686
 // Function ID: 15687
-// Dependencies: [15687, 15691]
+// Dependencies: [15676, 15679]
+// Exports: LookupSupportedLocales
 
 // Module 15686
-import _mod15687 from "module_15687" /* 15687 */;
-import _mod15691 from "module_15691" /* 15691 */;
+import _mod15676 from "module_15676" /* 15676 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 15679 */;
 
 
-export default (arg0) => {
-  const tmp = _mod15687;
-  return tmp(_mod15691(arg0));
-};
+export function LookupSupportedLocales(arg0, arg1) {
+  let num;
+  const items = [];
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod15676.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
+    }
+  }
+  return items;
+}

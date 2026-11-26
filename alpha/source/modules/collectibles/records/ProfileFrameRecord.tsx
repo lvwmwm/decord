@@ -1,12 +1,12 @@
-// Module ID: 6287
-// Function ID: 6288
+// Module ID: 6318
+// Function ID: 6319
 // Name: ProfileFrameRecord
-// Dependencies: [2111, 2112, 2]
+// Dependencies: [2112, 2113, 2]
 // Exports: isProfileFrameRecord
 
-// Module 6287 (ProfileFrameRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 2111 */;
+// Module 6318 (ProfileFrameRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 2112 */;
 import size from "module_2" /* 2 */;
 
 class ProfileFrameRecord extends BaseCollectiblesItemRecord {

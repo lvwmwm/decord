@@ -1,11 +1,11 @@
-// Module ID: 2024
-// Function ID: 2025
+// Module ID: 2025
+// Function ID: 2026
 // Name: ForceSdrEmojisStickersExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: getForceSdrEmojisStickersConfig
 
-// Module 2024 (ForceSdrEmojisStickersExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 2025 (ForceSdrEmojisStickersExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2025-10-force-sdr-emojis-stickers", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

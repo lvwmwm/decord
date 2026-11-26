@@ -1,15 +1,15 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 11625
+// Function ID: 11626
 // Name: useCanGiftProduct
-// Dependencies: [9373, 6292, 6291, 2173, 2112, 2185, 2]
+// Dependencies: [9415, 6323, 6322, 2174, 2113, 2186, 2]
 // Exports: useCanGiftProduct
 
-// Module 11577 (useCanGiftProduct)
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2185 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6291 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6292 */;
-import useCurrentUser from "useCurrentUser" /* 9373 */;
+// Module 11625 (useCanGiftProduct)
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6322 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;
+import useCurrentUser from "useCurrentUser" /* 9415 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
@@ -36,7 +36,7 @@ export function useCanGiftProduct(product) {
     result = result2;
   }
   if (!result) {
-    result = product.type === tmp(2112).CollectiblesItemType.EXTERNAL_SKU;
+    result = product.type === tmp(2113).CollectiblesItemType.EXTERNAL_SKU;
   }
   if (!result) {
     let currency;

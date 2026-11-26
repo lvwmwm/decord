@@ -1,13 +1,13 @@
-// Module ID: 1365
-// Function ID: 1366
+// Module ID: 1366
+// Function ID: 1367
 // Name: ExperimentCacher
-// Dependencies: [17, 1366, 2, 1367]
+// Dependencies: [17, 1367, 2, 1368]
 // Exports: consumeLogs, crash, generateLaunchSignature, getFluxApi, getHttpClientAPI, registerDevLogListener, rustMultiply
 
-// Module 1365 (ExperimentCacher)
+// Module 1366 (ExperimentCacher)
 import react_native from "react-native" /* 17 */;
-import global_types from "global_types" /* 1366 */;
-import clock from "clock" /* 1367 */;
+import global_types from "global_types" /* 1367 */;
+import clock from "clock" /* 1368 */;
 import size from "module_2" /* 2 */;
 
 let LibDiscoreModule;

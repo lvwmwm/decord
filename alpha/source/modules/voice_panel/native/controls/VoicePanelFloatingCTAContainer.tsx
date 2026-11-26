@@ -1,24 +1,24 @@
-// Module ID: 19494
-// Function ID: 19495
+// Module ID: 19557
+// Function ID: 19558
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 4861, 11734, 11737, 1082, 21, 13101, 575, 5012, 6084, 8048, 5073, 11733, 19379, 9520, 563, 19376, 19495, 1653, 13175, 11488, 5613, 11029, 2]
+// Dependencies: [32, 19, 4892, 11782, 11785, 1082, 21, 13153, 575, 5043, 6115, 8090, 5104, 11781, 19442, 9562, 563, 19439, 19558, 1654, 13227, 11536, 5644, 11075, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 19494 (VoicePanelFloatingCTAContainer)
+// Module 19557 (VoicePanelFloatingCTAContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
-import native from "native" /* 5073 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import RowButton2 from "RowButton" /* 8048 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11737 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13101 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19376 */;
+import native from "native" /* 5104 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import RowButton2 from "RowButton" /* 8090 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11785 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13153 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19439 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import createStyles from "createStyles" /* 5012 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let rect;

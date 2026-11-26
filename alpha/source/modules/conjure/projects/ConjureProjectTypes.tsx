@@ -1,10 +1,10 @@
-// Module ID: 6904
-// Function ID: 6905
+// Module ID: 6935
+// Function ID: 6936
 // Name: ConjureProjectTypes
 // Dependencies: [2]
 // Exports: conjureProjectServerIds, isProjectGuildCollaborationEnabled, isProjectPublic, projectSupportsCollaboratorRoles, projectSupportsVisibility, projectUsesAppChannels, usesPreviewApp
 
-// Module 6904 (ConjureProjectTypes)
+// Module 6935 (ConjureProjectTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ APP_CHANNEL: 1, VOICE_CHANNEL: 2, PROFILE_WIDGET: 3, AUTOMOD: 4, BOT: 5, APPLICATION_COMMANDS: 6, OVERLAY: 7, ACTIVITY: 8 });

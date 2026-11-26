@@ -1,35 +1,35 @@
-// Module ID: 16125
-// Function ID: 16126
+// Module ID: 16178
+// Function ID: 16179
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 6352, 4924, 6132, 1071, 1388, 21, 2173, 6348, 6349, 16017, 5226, 16002, 2119, 6344, 1112, 11898, 16016, 16016, 9544, 9110, 16019, 5587, 16106, 16046, 575, 5603, 9445, 6347, 7267, 9757, 15986, 504, 6131, 9446, 9461, 9820, 6357, 9460, 15320, 16126, 9443, 9447, 5073, 16127, 9483, 9485, 9765, 16023, 5068, 16024, 16048, 16052, 16053, 16057, 16061, 9059, 9653, 2]
+// Dependencies: [109, 19, 17, 6383, 4955, 6163, 1071, 1389, 21, 2174, 6379, 6380, 16047, 5257, 16032, 2120, 6375, 11946, 16046, 16046, 9586, 1112, 9152, 16049, 5618, 16162, 16104, 575, 5634, 9487, 6378, 7298, 9799, 16063, 504, 6162, 9488, 9503, 9862, 6388, 9502, 15370, 16179, 9485, 9489, 5104, 16180, 9525, 9527, 9807, 16081, 5099, 16082, 16106, 16110, 16111, 16115, 16119, 9101, 9695, 2]
 // Exports: default
 
-// Module 16125 (GuildProfileEditForm)
+// Module 16178 (GuildProfileEditForm)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 6344 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 6357 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9059 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 9110 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9544 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9653 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 11898 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16017 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16019 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16046 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16106 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 6375 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 6388 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9101 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 9152 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9586 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9695 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 11946 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16047 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16049 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16104 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16162 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6352 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import UserProfileStore from "UserProfileStore" /* 6132 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6383 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import UserProfileStore from "UserProfileStore" /* 6163 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -47,6 +47,7 @@ let unpackModuleId;
 function EditGuildProfileBanner(user) {
   let disabled;
   let displayProfile;
+  let guildId;
   let guildMember;
   let intl;
   let obj3;
@@ -63,7 +64,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(6348).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(6379).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -74,21 +75,19 @@ function EditGuildProfileBanner(user) {
     showEditButton: result,
     onPressEdit: function handleEditBanner() {
       let banner;
-      let guildId;
-      let intl;
       let obj3;
       let obj4;
       let showRemoveBanner;
-      let tmp19;
+      let tmp20;
       if (c4) {
         let openLazy = ActionSheetActionCreatorsDefault.openLazy;
         let obj = {
           user,
           analyticsLocations,
-          showRemoveBanner: showRemoveBanner(tmp19, banner),
-          removeText: intl.string(intl7.t.jHlJNS),
+          guildId: importDefault,
+          showRemoveBanner: showRemoveBanner(tmp20, banner),
           onBannerChange(banner) {
-              const obj = user(dependencyMap[18]);
+              const obj = user(dependencyMap[17]);
               const obj2 = { guildId, banner };
               return obj.setPendingChanges(obj2);
             },
@@ -96,22 +95,21 @@ function EditGuildProfileBanner(user) {
               const obj = ActionSheetActionCreatorsDefault;
               obj.hideActionSheet();
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-              const obj2 = { profileAssetType: user(dependencyMap[20]).ProfileAssetType.BANNER, selectionContext: user(dependencyMap[20]).GIFSelectionContext.PROFILE_EDIT, guildId };
+              const obj2 = { profileAssetType: user(dependencyMap[19]).ProfileAssetType.BANNER, selectionContext: user(dependencyMap[19]).GIFSelectionContext.PROFILE_EDIT, guildId: importDefault };
               ActionSheetActionCreatorsDefault;
-              const tmp3 = user(dependencyMap[15])(dependencyMap[19], dependencyMap.paths);
+              const tmp3 = user(dependencyMap[15])(dependencyMap[18], dependencyMap.paths);
               openLazy(tmp3, "Select GIF Banner", obj2);
             }
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(16002, dependencyMap.paths);
+        const tmp14 = asyncRequire(16032, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
-        tmp19 = pendingBanner;
+        tmp20 = pendingBanner;
         if (dependencyMap != null) {
           banner = dependencyMap.banner;
         }
-        intl = tmp10(1112).intl;
         openLazy(tmp14, "Change Banner", obj);
       } else {
         let obj2 = { initialUpsellKey: constants.PREMIUM_GUILD_PROFILE, analyticsLocation: obj3, analyticsLocations, analyticsProperties: obj4 };
@@ -160,7 +158,7 @@ function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
     const tmp3Result2 = UserProfileUpsellCardDefault;
     intl = tmp(1112).intl;
     obj5 = { variant: "body-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5603).Text;
+    Text = tmp(5634).Text;
     intl2 = tmp(1112).intl;
     tmp6Result = tmp6(tmp3Result2, obj3);
   }
@@ -486,8 +484,8 @@ export default function GuildProfileEditForm(currentUser) {
             const _Object = Object;
             let stringResult = null;
             if (Object.keys(tmp35).length > 0) {
-              const intl = tmp5(tmp2[17]).intl;
-              stringResult = intl.string(tmp5(tmp2[17]).t.s35OuK);
+              const intl = tmp5(tmp2[21]).intl;
+              stringResult = intl.string(tmp5(tmp2[21]).t.s35OuK);
             }
             first3 = stringResult;
           }
@@ -506,7 +504,7 @@ export default function GuildProfileEditForm(currentUser) {
       items13 = [tmp51, , , , , , , , , ];
       const obj31 = {
         inputRef: ref1,
-        label: intl2.string(currentUser(tmp2[17]).t.me1lRk),
+        label: intl2.string(currentUser(tmp2[21]).t.me1lRk),
         errorMessage: first,
         value: pendingNickname,
         onFocus,
@@ -520,7 +518,7 @@ export default function GuildProfileEditForm(currentUser) {
         disabled: tmp57
       };
       const tmpResult13 = tmp(tmp2[50]);
-      intl2 = tmp5(tmp2[17]).intl;
+      intl2 = tmp5(tmp2[21]).intl;
       if (pendingNickname == null) {
         pendingNickname = str;
       }
@@ -538,9 +536,9 @@ export default function GuildProfileEditForm(currentUser) {
       items13[2] = tmp64Result6;
       const obj33 = {
         inputRef: ref2,
-        label: intl3.string(currentUser(tmp2[17]).t["+T3RI/"]),
+        label: intl3.string(currentUser(tmp2[21]).t["+T3RI/"]),
         errorMessage: first1,
-        description: intl4.string(currentUser(tmp2[17]).t.NZqtIp),
+        description: intl4.string(currentUser(tmp2[21]).t.NZqtIp),
         value: pendingPronouns,
         onFocus,
         onChange(pronouns) {
@@ -555,16 +553,16 @@ export default function GuildProfileEditForm(currentUser) {
         disabled: isDisabled
       };
       const tmpResult15 = tmp(tmp2[50]);
-      intl3 = tmp5(tmp2[17]).intl;
-      intl4 = tmp5(tmp2[17]).intl;
+      intl3 = tmp5(tmp2[21]).intl;
+      intl4 = tmp5(tmp2[21]).intl;
       items13[3] = closure_17(tmpResult15, obj33);
       let tmp64Result7 = null;
       if (result) {
         const obj34 = {
           inputRef: ref3,
-          label: intl5.string(currentUser(tmp2[17]).t.ZzAR2Y),
+          label: intl5.string(currentUser(tmp2[21]).t.ZzAR2Y),
           errorMessage: first2,
-          description: intl6.string(currentUser(tmp2[17]).t.S5O8U2),
+          description: intl6.string(currentUser(tmp2[21]).t.S5O8U2),
           value: pendingBio,
           onFocus,
           onChange(bio) {
@@ -578,8 +576,8 @@ export default function GuildProfileEditForm(currentUser) {
           disabled: isDisabled
         };
         const tmpResult16 = tmp(tmp2[50]);
-        intl5 = tmp5(tmp2[17]).intl;
-        intl6 = tmp5(tmp2[17]).intl;
+        intl5 = tmp5(tmp2[21]).intl;
+        intl6 = tmp5(tmp2[21]).intl;
         if (pendingBio == null) {
           pendingBio = str4;
         }

@@ -1,14 +1,14 @@
-// Module ID: 19066
-// Function ID: 19067
+// Module ID: 19129
+// Function ID: 19130
 // Name: useProfileCoachmarkPosition
-// Dependencies: [32, 19, 575, 1494, 1628, 14208, 2]
+// Dependencies: [32, 19, 575, 1495, 1629, 14260, 2]
 // Exports: default
 
-// Module 19066 (useProfileCoachmarkPosition)
+// Module 19129 (useProfileCoachmarkPosition)
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 14208 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 14260 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

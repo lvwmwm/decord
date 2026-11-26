@@ -1,9 +1,9 @@
-// Module ID: 4858
-// Function ID: 4859
+// Module ID: 4889
+// Function ID: 4890
 // Name: DismissibleContentConstants
 // Dependencies: [2]
 
-// Module 4858 (DismissibleContentConstants)
+// Module 4889 (DismissibleContentConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentConstants.tsx");

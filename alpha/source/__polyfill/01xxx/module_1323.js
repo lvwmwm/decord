@@ -4,4 +4,4 @@
 
 // Module 1323
 
-export default Math.pow;
+export default Math.min;

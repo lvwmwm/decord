@@ -1,18 +1,11 @@
 // Module ID: 15730
 // Function ID: 15731
-// Dependencies: [15731]
+// Dependencies: [15731, 15796]
 
 // Module 15730
-import _mod15731 from "module_15731" /* 15731 */;
+import _mod15796 from "module_15796" /* 15796 */;
+import module_15731 from "module_15731" /* 15731 */;
 
-
-export default (arg0) => {
-  let num = 0;
-  {
-    num = 0;
-    if (0 !== +arg0) {
-      num = _mod15731(tmp);
-    }
-  }
-  return num;
-};
+const obj = { target: "Object", stat: true, arity: 2, forced: Object.assign !== _mod15796 };
+const obj2 = { assign: _mod15796 };
+module_15731(obj, obj2);

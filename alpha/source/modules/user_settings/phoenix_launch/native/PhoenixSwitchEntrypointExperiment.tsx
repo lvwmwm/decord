@@ -1,10 +1,10 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17378
+// Function ID: 17379
 // Name: PhoenixSwitchEntrypointExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 17327 (PhoenixSwitchEntrypointExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 17378 (PhoenixSwitchEntrypointExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

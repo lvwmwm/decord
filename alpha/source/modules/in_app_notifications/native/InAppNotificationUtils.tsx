@@ -1,17 +1,17 @@
-// Module ID: 10581
-// Function ID: 10582
+// Module ID: 10626
+// Function ID: 10627
 // Name: InAppNotificationUtils
-// Dependencies: [19, 10582, 1071, 12, 1268, 1358, 1088, 5626, 5982, 2]
+// Dependencies: [19, 10627, 1071, 12, 1269, 1359, 1088, 5657, 6013, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, useHasPreviewableMedia
 
-// Module 10581 (InAppNotificationUtils)
+// Module 10626 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import v1 from "v1" /* 1268 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5626 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10582 */;
+import v1 from "v1" /* 1269 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5657 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10627 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -97,7 +97,7 @@ export function getNotificationDuration(ALERT) {
 export function useHasPreviewableMedia(message) {
   const items = [message];
   return react.useMemo(() => {
-    const f97605 = (type) => type.type === constants.GIFV;
+    const f97893 = (type) => type.type === constants.GIFV;
     let hasFlagResult = message.hasFlag(constants.IS_VOICE_MESSAGE);
     if (!hasFlagResult) {
       hasFlagResult = tmp.attachments.length > 0;
@@ -106,7 +106,7 @@ export function useHasPreviewableMedia(message) {
       let everyResult = tmp.embeds.length > 0;
       if (everyResult) {
         let embeds = tmp.embeds;
-        everyResult = embeds.every(f97605);
+        everyResult = embeds.every(f97893);
       }
       hasFlagResult = everyResult;
     }
@@ -124,7 +124,7 @@ export function useHasPreviewableMedia(message) {
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f97605);
+              everyResult = embeds.every(f97893);
             }
             hasFlagResult = everyResult;
           }

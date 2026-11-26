@@ -1,10 +1,10 @@
-// Module ID: 20297
-// Function ID: 20298
+// Module ID: 20361
+// Function ID: 20362
 // Name: ResendVerificationCodeButton
-// Dependencies: [5, 32, 19, 17, 21, 20288, 5693, 5694, 1112, 3174, 5603, 2]
+// Dependencies: [5, 32, 19, 17, 21, 20352, 5724, 5725, 1112, 3175, 5634, 2]
 // Exports: default
 
-// Module 20297 (ResendVerificationCodeButton)
+// Module 20361 (ResendVerificationCodeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -61,7 +61,7 @@ export default function ResendVerificationCodeButton(flowId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -115,7 +115,7 @@ export default function ResendVerificationCodeButton(flowId) {
             closure_128_1(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp37) {
           countdown = tmp37;
           if (0 === c3) {

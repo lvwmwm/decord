@@ -1,12 +1,12 @@
-// Module ID: 8510
-// Function ID: 8511
+// Module ID: 8552
+// Function ID: 8553
 // Name: PinotExperiment
-// Dependencies: [1245, 1450, 504, 2]
+// Dependencies: [1246, 1451, 504, 2]
 // Exports: isPinotAdminEnabled, isPinotMemberEnabled, useIsPinotAdminEnabled, useIsPinotChannelDiscoverableEnabled, useIsPinotMemberEnabled, useIsPinotMemberEnabledWithoutExposure, useIsPinotMemberNoticeEnabled, useIsPinotSummaryManagementEnabled
 
-// Module 8510 (PinotExperiment)
-import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1450 */;
+// Module 8552 (PinotExperiment)
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,17 +1,17 @@
-// Module ID: 7767
-// Function ID: 7768
+// Module ID: 7801
+// Function ID: 7802
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [19, 7762, 1071, 7768, 21, 5012, 1500, 7730, 7769, 1112, 2]
+// Dependencies: [19, 7796, 1071, 7802, 21, 5043, 1501, 7764, 7803, 1112, 2]
 // Exports: default
 
-// Module 7767 (CrunchyrollLinkPreConnect)
+// Module 7801 (CrunchyrollLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 7762 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 7768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7769 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 7796 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 7802 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7803 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -25,7 +25,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default function CrunchyrollLinkPreConnect() {
   const tmp = closure_8();
-  const obj = navigation(1500);
+  const obj = navigation(1501);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -35,7 +35,7 @@ export default function CrunchyrollLinkPreConnect() {
   const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  const TwoWayLinkPreConnect = navigation(7730).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(7764).TwoWayLinkPreConnect;
   const intl = navigation(1112).intl;
   const intl2 = navigation(1112).intl;
   return <TwoWayLinkPreConnect platformType={PlatformTypes.CRUNCHYROLL} onError={callback1} onNext={callback} img={AssetRegistryDefault} imgStyle={tmp.image} title={intl.string(navigation(1112).t.siPkNp)} body={intl2.string(navigation(1112).t.oS4NEH)} redirectDestination={redirectDestination} />;

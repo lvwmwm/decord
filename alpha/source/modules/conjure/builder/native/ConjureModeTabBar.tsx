@@ -1,17 +1,17 @@
-// Module ID: 18549
-// Function ID: 18550
+// Module ID: 18612
+// Function ID: 18613
 // Name: ConjureModeTabBar
-// Dependencies: [19, 17, 21, 5012, 575, 5576, 1653, 5613, 1378, 8577, 1112, 5603, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5607, 1654, 5644, 1379, 8619, 1112, 5634, 2]
 // Exports: default
 
-// Module 18549 (ConjureModeTabBar)
+// Module 18612 (ConjureModeTabBar)
 import nativeDefault from "native" /* 575 */;
-import _modDef1653 from "module_1653" /* 1653 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 8577 */;
+import _modDef1654 from "module_1654" /* 1654 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8619 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,10 +24,10 @@ let metroImportDefault;
 let metroRequire;
 let tmp2;
 const intl2 = tmp2(1112);
-const PlatformUtils = tmp2(1378);
-const _mod1653 = tmp2(1653);
-const Text_Text = tmp2(5603);
-const spring_spring = tmp2(5613);
+const PlatformUtils = tmp2(1379);
+const _mod1654 = tmp2(1654);
+const Text_Text = tmp2(5634);
+const spring_spring = tmp2(5644);
 function ConjureModeTab(index) {
   let activeIndex;
   let closure_129_2;
@@ -72,7 +72,7 @@ function ConjureModeTab(index) {
   } else {
     inactive = tmp.inactive;
   }
-  let tmp2Result = _mod1653;
+  let tmp2Result = _mod1654;
   let items = [closure_17, pressed, tmp, index, activeIndex, , ];
   const useAnimatedStyle = tmp2Result.useAnimatedStyle;
   items[5] = spring_spring.withSpring;
@@ -261,11 +261,11 @@ export default function ConjureModeTabBar(arg0) {
   const length = items.length;
   let tmp3 = closure_11(obj.useToken(activeIndex(pressedIndex[4]).modules.mobile.SEGMENTED_CONTROL_BORDER_RADIUS), length);
   let closure_5 = tmp3;
-  const obj2 = require("module_1653");
+  const obj2 = require("module_1654");
   const sharedValue = obj2.useSharedValue(0);
-  const obj3 = require("module_1653");
+  const obj3 = require("module_1654");
   const sharedValue1 = obj3.useSharedValue(0);
-  let obj4 = require("module_1653");
+  let obj4 = require("module_1654");
   const items1 = [closure_13, sharedValue];
   let c0;
   [tmp6, tmp7] = items1;
@@ -385,7 +385,7 @@ export default function ConjureModeTabBar(arg0) {
     id = id.id;
     const tmp = sharedValue2.get() === index;
     let tmp3;
-    const View = _modDef1653.View;
+    const View = _modDef1654.View;
     const tmp2 = metroImportDefault;
     if (tmp) {
       tmp3 = metroImportDefault;

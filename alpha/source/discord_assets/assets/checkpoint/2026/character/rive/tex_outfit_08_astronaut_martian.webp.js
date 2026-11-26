@@ -1,8 +1,8 @@
-// Module ID: 12729
-// Function ID: 12730
+// Module ID: 12774
+// Function ID: 12775
 // Dependencies: [2]
 
-// Module 12729
+// Module 12774
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_08_astronaut_martian.webp.js");

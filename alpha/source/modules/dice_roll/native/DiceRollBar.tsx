@@ -1,19 +1,19 @@
-// Module ID: 13296
-// Function ID: 13297
+// Module ID: 13348
+// Function ID: 13349
 // Name: DiceRollBar
-// Dependencies: [19, 17, 5013, 12905, 21, 5012, 575, 504, 1653, 5222, 1186, 13297, 11179, 5603, 2]
+// Dependencies: [19, 17, 5044, 12957, 21, 5043, 575, 504, 1654, 5253, 1186, 13349, 11225, 5634, 2]
 // Exports: default
 
-// Module 13296 (DiceRollBar)
+// Module 13348 (DiceRollBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import DiceRollStore from "DiceRollStore" /* 12905 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import DiceRollStore from "DiceRollStore" /* 12957 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let duration, set, set2;
@@ -90,9 +90,9 @@ export default function DiceRollBar(channelId) {
       const tmp2 = stateFromStores;
       if (!tmp2) {
         set = sharedValue2.set;
-        const withRepeat = _mod1653.withRepeat;
-        _mod1653;
-        const obj = { duration: 800, easing: _mod1653.Easing.linear };
+        const withRepeat = _mod1654.withRepeat;
+        _mod1654;
+        const obj = { duration: 800, easing: _mod1654.Easing.linear };
         const withTiming = timing_timing.withTiming;
         timing_timing;
         const result = set(withRepeat(withTiming(360, obj), -1, false));

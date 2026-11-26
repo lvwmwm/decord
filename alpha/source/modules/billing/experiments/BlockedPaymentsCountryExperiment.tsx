@@ -1,11 +1,11 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9109
+// Function ID: 9110
 // Name: BlockedPaymentsCountryExperiment
-// Dependencies: [1450, 9068, 2]
+// Dependencies: [1451, 9110, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 9067 (BlockedPaymentsCountryExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 9109 (BlockedPaymentsCountryExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

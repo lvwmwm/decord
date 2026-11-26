@@ -1,9 +1,9 @@
-// Module ID: 1362
-// Function ID: 1363
+// Module ID: 1363
+// Function ID: 1364
 // Name: AccessibilityConstants
 // Dependencies: [2]
 
-// Module 1362 (AccessibilityConstants)
+// Module 1363 (AccessibilityConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/AccessibilityConstants.tsx");

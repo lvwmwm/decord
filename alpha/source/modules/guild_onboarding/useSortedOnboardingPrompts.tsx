@@ -1,12 +1,12 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 12033
+// Function ID: 12034
 // Name: useSortedOnboardingPrompts
-// Dependencies: [19, 7424, 563, 2]
+// Dependencies: [19, 7455, 563, 2]
 // Exports: default
 
-// Module 11985 (useSortedOnboardingPrompts)
+// Module 12033 (useSortedOnboardingPrompts)
 import react from "react" /* 19 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7424 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7455 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

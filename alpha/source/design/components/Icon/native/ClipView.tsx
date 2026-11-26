@@ -1,16 +1,16 @@
-// Module ID: 9378
-// Function ID: 9379
+// Module ID: 9420
+// Function ID: 9421
 // Name: ClipView
-// Dependencies: [19, 17, 21, 9379, 9381, 1653, 2]
+// Dependencies: [19, 17, 21, 9421, 9423, 1654, 2]
 // Exports: default
 
-// Module 9378 (ClipView)
-import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9379 */;
-import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9381 */;
+// Module 9420 (ClipView)
+import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9421 */;
+import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9423 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1653 from "module_1653" /* 1653 */;
+import module_1654 from "module_1654" /* 1654 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -66,7 +66,7 @@ obj3 = {};
 const create = StyleSheet.create;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_10 = create(obj2);
-const ClipViewNativeComponent = module_1653.createAnimatedComponent(ClipViewNativeComponentDefault);
+const ClipViewNativeComponent = module_1654.createAnimatedComponent(ClipViewNativeComponentDefault);
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/Icon/native/ClipView.tsx");
 

@@ -1,20 +1,20 @@
-// Module ID: 13171
-// Function ID: 13172
+// Module ID: 13223
+// Function ID: 13224
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 9048, 5818, 6360, 21, 5012, 575, 1378, 5576, 504, 10228, 1112, 13172, 13173, 13174, 2]
+// Dependencies: [19, 17, 9090, 5849, 6391, 21, 5043, 575, 1379, 5607, 504, 10270, 1112, 13224, 13225, 13226, 2]
 // Exports: default
 
-// Module 13171 (JumpToPresentButton)
+// Module 13223 (JumpToPresentButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5576 */;
+import useToken from "useToken" /* 5607 */;
 import react from "react" /* 19 */;
-import useChatBottomManagerUIStore_mod from "useChatBottomManagerUIStore" /* 9048 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5818 */;
-import MessageStore from "MessageStore" /* 6360 */;
-import createStyles from "createStyles" /* 5012 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import useChatBottomManagerUIStore_mod from "useChatBottomManagerUIStore" /* 9090 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5849 */;
+import MessageStore from "MessageStore" /* 6391 */;
+import createStyles from "createStyles" /* 5043 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, showingAutoComplete;
@@ -75,9 +75,9 @@ export default function JumpToPresentButton(channelId) {
     }
     return tmp;
   });
-  const obj2 = channelId(10228);
+  const obj2 = channelId(10270);
   const isVoicePanelMounted = obj2.useIsVoicePanelMounted(channelId);
-  const obj3 = channelId(10228);
+  const obj3 = channelId(10270);
   const isVoicePanelOpen = obj3.useIsVoicePanelOpen(channelId);
   const items1 = [MessageStore];
   const obj4 = channelId(504);
@@ -86,7 +86,7 @@ export default function JumpToPresentButton(channelId) {
     return null;
   }
   let tmp10 = tmp2;
-  const tmp3Result = tmp3(1378);
+  const tmp3Result = tmp3(1379);
   if (tmp3Result.isIOS()) {
     const items2 = [tmp.containerIOS, tmp2];
     tmp10 = items2;
@@ -101,11 +101,11 @@ export default function JumpToPresentButton(channelId) {
   }
   const items3 = [tmp.container, tmp10];
   if (tmp5) {
-    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(13173), onPress: onJumpToPresent };
-    const tmp16 = screenIndex(13172);
+    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(13225), onPress: onJumpToPresent };
+    const tmp16 = screenIndex(13224);
     tmp12Result = tmp12(tmp16, obj6);
   } else {
-    tmp12Result = tmp12(tmp3(13174).MemoedVoicePanelDismissChatButton, {});
+    tmp12Result = tmp12(tmp3(13226).MemoedVoicePanelDismissChatButton, {});
   }
   return <tmp13 style={items3}>{tmp12Result}</tmp13>;
 };

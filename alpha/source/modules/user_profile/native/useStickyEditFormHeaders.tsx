@@ -1,12 +1,12 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16065
+// Function ID: 16066
 // Name: useStickyEditFormHeaders
-// Dependencies: [19, 1653, 1706, 2]
+// Dependencies: [19, 1654, 1707, 2]
 // Exports: default
 
-// Module 16021 (useStickyEditFormHeaders)
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
+// Module 16065 (useStickyEditFormHeaders)
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -40,20 +40,20 @@ export default function useStickyEditFormHeaders(arg0, arg1, arg2) {
   let tmp31;
   let useStickyEditFormHeadersTsx1;
   let closure_0 = arg1;
-  let obj = _mod1653;
+  let obj = _mod1654;
   const sharedValue = obj.useSharedValue(0);
-  const obj2 = _mod1653;
+  const obj2 = _mod1654;
   const sharedValue1 = obj2.useSharedValue(0);
-  const obj3 = _mod1653;
+  const obj3 = _mod1654;
   const sharedValue2 = obj3.useSharedValue(0);
-  const obj4 = _mod1653;
+  const obj4 = _mod1654;
   const sharedValue3 = obj4.useSharedValue(0);
-  const obj5 = _mod1653;
+  const obj5 = _mod1654;
   const sharedValue4 = obj5.useSharedValue(0);
   const ref = react.useRef(null);
   let items = [closure_3, arg0, arg2, , , , ];
-  const useAnimatedScrollHandler = _mod1653.useAnimatedScrollHandler;
-  items[3] = _mod1706.scheduleOnRN;
+  const useAnimatedScrollHandler = _mod1654.useAnimatedScrollHandler;
+  items[3] = _mod1707.scheduleOnRN;
   items[4] = sharedValue;
   items[5] = sharedValue2;
   items[6] = sharedValue1;
@@ -102,7 +102,7 @@ export default function useStickyEditFormHeaders(arg0, arg1, arg2) {
   useStickyEditFormHeadersTsx2.__workletHash = 2869064830561;
   useStickyEditFormHeadersTsx2.__initData = tmp18;
   const animatedScrollHandler = useAnimatedScrollHandler(obj7);
-  const tmpResult = _mod1653;
+  const tmpResult = _mod1654;
   const derivedValue = tmpResult.useDerivedValue(useStickyEditFormHeadersTsx2);
   const items4 = [closure_5, derivedValue];
   [tmp23, tmp24] = items4;
@@ -117,7 +117,7 @@ export default function useStickyEditFormHeaders(arg0, arg1, arg2) {
   useStickyEditFormHeadersTsx3.__closure = items5;
   useStickyEditFormHeadersTsx3.__workletHash = 13231650278188;
   useStickyEditFormHeadersTsx3.__initData = tmp23;
-  const tmpResult3 = _mod1653;
+  const tmpResult3 = _mod1654;
   const animatedStyle = tmpResult3.useAnimatedStyle(useStickyEditFormHeadersTsx3);
   const items6 = [closure_6, sharedValue3, arg0, sharedValue1, sharedValue, derivedValue];
   let c0;
@@ -148,7 +148,7 @@ export default function useStickyEditFormHeaders(arg0, arg1, arg2) {
   useStickyEditFormHeadersTsx4.__workletHash = 17221813634962;
   useStickyEditFormHeadersTsx4.__initData = tmp26;
   const items8 = [sharedValue, sharedValue1];
-  const tmpResult4 = _mod1653;
+  const tmpResult4 = _mod1654;
   const derivedValue1 = tmpResult4.useDerivedValue(useStickyEditFormHeadersTsx4);
   const items9 = [sharedValue4];
   const callback = obj6.useCallback((nativeEvent) => {

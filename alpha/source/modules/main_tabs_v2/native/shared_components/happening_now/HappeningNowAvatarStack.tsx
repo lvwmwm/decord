@@ -1,21 +1,21 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 17812
+// Function ID: 17813
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2188, 14879, 21, 5012, 575, 1186, 1653, 563, 5613, 1706, 9378, 5603, 2025, 17756, 2]
+// Dependencies: [32, 19, 17, 2189, 14932, 21, 5043, 575, 1186, 1654, 563, 5644, 1707, 9420, 5634, 2026, 17813, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 17755 (HappeningNowAvatarStack)
+// Module 17812 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import ClipView from "ClipView" /* 9378 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14879 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import ClipView from "ClipView" /* 9420 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore_mod from "LocaleStore" /* 2188 */;
+import LocaleStore_mod from "LocaleStore" /* 2189 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ let set;
 let c9;
 let metroImportAll;
 let tmp2;
-const _mod1706 = tmp2(1706);
+const _mod1707 = tmp2(1707);
 let View = react_native.View;
 let LocaleStore = LocaleStore_mod;
 const CHANNEL_SPRING_CONFIG = ChannelAnimationConstants.CHANNEL_SPRING_CONFIG;
@@ -114,7 +114,7 @@ export function HappeningNowAvatarStack(userLimit) {
   [tmp5, c7] = tmp4;
   let tmp6 = require;
   let tmp7 = isStage;
-  const tmp8 = require("module_1653");
+  const tmp8 = require("module_1654");
   let num4 = 0;
   const useSharedValue = tmp8.useSharedValue;
   if (isTyping) {
@@ -160,7 +160,7 @@ export function HappeningNowAvatarStack(userLimit) {
     if (isTyping) {
       num = 1;
     }
-    const items = [closure_13, _mod1706.scheduleOnRN, c7, tmp5];
+    const items = [closure_13, _mod1707.scheduleOnRN, c7, tmp5];
     let c0;
     let c1;
     let c2;

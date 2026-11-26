@@ -1,15 +1,15 @@
-// Module ID: 2109
-// Function ID: 2110
+// Module ID: 2110
+// Function ID: 2111
 // Name: utils
-// Dependencies: [2110, 1082, 2113, 2115, 1112, 2]
+// Dependencies: [2111, 1082, 2114, 2116, 1112, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 2109 (utils)
+// Module 2110 (utils)
 import Constants from "Constants" /* 1082 */;
 import intl6 from "intl" /* 1112 */;
-import NameplateRecord from "NameplateRecord" /* 2110 */;
-import nameplates_constants from "nameplates/constants" /* 2113 */;
-import _modDef2115 from "module_2115" /* 2115 */;
+import NameplateRecord from "NameplateRecord" /* 2111 */;
+import nameplates_constants from "nameplates/constants" /* 2114 */;
+import _modDef2116 from "module_2116" /* 2116 */;
 import size_mod from "module_2" /* 2 */;
 
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -26,7 +26,7 @@ export function getNameplateData(nameplate) {
     INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[nameplate.palette];
     const tmp2 = require;
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(2113).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(2114).INVALID_NAMEPLATE_PALETTE;
     }
     tmp = obj;
   }
@@ -48,7 +48,7 @@ export function getNameplateDataFromProductRecord(product) {
         INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[palette];
         const tmp2 = require;
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(2113).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(2114).INVALID_NAMEPLATE_PALETTE;
         }
         tmp = obj;
       }
@@ -105,9 +105,9 @@ export function getNameplatePalette(arg0) {
   return INVALID_NAMEPLATE_PALETTE;
 }
 export function parseFirstFrame(arg0) {
-  const decoder = _modDef2115;
+  const decoder = _modDef2116;
   size = decoder.decode(arg0);
-  const obj = _modDef2115;
+  const obj = _modDef2116;
   const first = obj.toRGBA8(size)[0];
   const element = <canvas />;
   ({ width: obj2.width, height: obj2.height } = size);

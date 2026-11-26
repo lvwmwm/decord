@@ -1,21 +1,21 @@
-// Module ID: 19245
-// Function ID: 19246
+// Module ID: 19308
+// Function ID: 19309
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 1071, 21, 19246, 1112, 3756, 5610, 14051, 575, 5226, 5691, 2187, 2]
+// Dependencies: [19, 1071, 21, 19309, 1112, 3757, 5641, 14103, 575, 5257, 5722, 2188, 2]
 // Exports: default
 
-// Module 19245 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 19308 (IncentivizedAccountLinkConfirmationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import _modDef3756 from "module_3756" /* 3756 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import LinkingDefault from "Linking" /* 5691 */;
-import WindowLaunchIcon2 from "WindowLaunchIcon" /* 14051 */;
-import IncentivizedAccountLinkConfirmationPromoSheetDefault from "IncentivizedAccountLinkConfirmationPromoSheet" /* 19246 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import _modDef3757 from "module_3757" /* 3757 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
+import LinkingDefault from "Linking" /* 5722 */;
+import WindowLaunchIcon2 from "WindowLaunchIcon" /* 14103 */;
+import IncentivizedAccountLinkConfirmationPromoSheetDefault from "IncentivizedAccountLinkConfirmationPromoSheet" /* 19309 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -47,5 +47,5 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet(orbCount)
   intl3 = intl4.intl;
   ({ size: "sm", color: nativeDefault.colors.WHITE });
   const WindowLaunchIcon = WindowLaunchIcon2.WindowLaunchIcon;
-  return <tmp title={intl.formatToPlainString(_modDef3756.g56Cg0, { orbCount })} description={intl2.string(_modDef3756["Mh/Ooc"])} actions={null} />;
+  return <tmp title={intl.formatToPlainString(_modDef3757.g56Cg0, { orbCount })} description={intl2.string(_modDef3757["Mh/Ooc"])} actions={null} />;
 };

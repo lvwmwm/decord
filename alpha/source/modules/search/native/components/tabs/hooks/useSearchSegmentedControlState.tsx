@@ -1,13 +1,13 @@
-// Module ID: 18981
-// Function ID: 18982
+// Module ID: 19044
+// Function ID: 19045
 // Name: useSearchSegmentedControlState
-// Dependencies: [19, 1653, 8574, 1706, 2]
+// Dependencies: [19, 1654, 8616, 1707, 2]
 // Exports: useSearchSegmentedControlState
 
-// Module 18981 (useSearchSegmentedControlState)
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import SegmentedControlState from "SegmentedControlState" /* 8574 */;
+// Module 19044 (useSearchSegmentedControlState)
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import SegmentedControlState from "SegmentedControlState" /* 8616 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ export function useSearchSegmentedControlState(visibleTabs) {
   let width;
   visibleTabs = visibleTabs.visibleTabs;
   ({ items, onSelectedTabChange, width } = visibleTabs);
-  const obj = _mod1653;
+  const obj = _mod1654;
   const sharedValue = obj.useSharedValue(visibleTabs[0]);
   const items1 = [closure_3, visibleTabs];
   [tmp4, tmp5] = items1;
@@ -55,7 +55,7 @@ export function useSearchSegmentedControlState(visibleTabs) {
   useSearchSegmentedControlStateTsx1.__closure = items2;
   useSearchSegmentedControlStateTsx1.__workletHash = 15809985377575;
   useSearchSegmentedControlStateTsx1.__initData = tmp4;
-  const obj2 = _mod1653;
+  const obj2 = _mod1654;
   const derivedValue = obj2.useDerivedValue(useSearchSegmentedControlStateTsx1);
   const tmpResult = SegmentedControlState;
   const segmentedControlState = tmpResult.useSegmentedControlState({ items, defaultIndex: 0, pageWidth: width });
@@ -70,7 +70,7 @@ export function useSearchSegmentedControlState(visibleTabs) {
   useSearchSegmentedControlStateTsx2.__closure = items4;
   useSearchSegmentedControlStateTsx2.__workletHash = 486888790446;
   useSearchSegmentedControlStateTsx2.__initData = tmp8;
-  const tmpResult4 = _mod1653;
+  const tmpResult4 = _mod1654;
   const derivedValue1 = tmpResult4.useDerivedValue(useSearchSegmentedControlStateTsx2);
   const items5 = [closure_5, derivedValue];
   [tmp13, tmp14] = items5;
@@ -82,9 +82,9 @@ export function useSearchSegmentedControlState(visibleTabs) {
   useSearchSegmentedControlStateTsx3.__workletHash = 2804619280412;
   useSearchSegmentedControlStateTsx3.__initData = tmp13;
   const items7 = [closure_6, sharedValue, , ];
-  const useAnimatedReaction = tmp(1653).useAnimatedReaction;
-  _mod1653;
-  items7[2] = _mod1706.scheduleOnRN;
+  const useAnimatedReaction = tmp(1654).useAnimatedReaction;
+  _mod1654;
+  items7[2] = _mod1707.scheduleOnRN;
   items7[3] = setActiveIndex;
   [tmp15, tmp16, tmp17, tmp18] = items7;
   function useSearchSegmentedControlStateTsx4(arr) {
@@ -111,9 +111,9 @@ export function useSearchSegmentedControlState(visibleTabs) {
   useSearchSegmentedControlStateTsx5.__workletHash = 4304064409818;
   useSearchSegmentedControlStateTsx5.__initData = tmp21;
   const items11 = [closure_8, sharedValue, , ];
-  const useAnimatedReaction2 = tmp(1653).useAnimatedReaction;
-  _mod1653;
-  items11[2] = _mod1706.scheduleOnRN;
+  const useAnimatedReaction2 = tmp(1654).useAnimatedReaction;
+  _mod1654;
+  items11[2] = _mod1707.scheduleOnRN;
   items11[3] = onSelectedTabChange;
   let c0;
   let c1;

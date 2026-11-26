@@ -1,34 +1,34 @@
-// Module ID: 13037
-// Function ID: 13038
+// Module ID: 13089
+// Function ID: 13090
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 10005, 1499, 1071, 7042, 21, 5012, 13038, 575, 12965, 6113, 12095, 13015, 8141, 10068, 1112, 1628, 10053, 2117, 13046, 10045, 5664, 12962, 1378, 13048, 5603, 13050, 13012, 13052, 13058, 1186, 13061, 13063, 5226, 5982, 10069, 2]
+// Dependencies: [5, 19, 17, 10047, 1500, 1071, 7073, 21, 5043, 13090, 575, 13017, 6144, 12145, 13067, 8183, 10110, 1112, 1629, 10095, 2118, 13098, 10087, 5695, 13014, 1379, 13100, 5634, 13102, 13064, 13104, 13110, 1186, 13113, 13115, 5257, 6013, 10111, 2]
 // Exports: default
 
-// Module 13037 (AppDetailContent)
+// Module 13089 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5664 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
-import TableRow2 from "TableRow" /* 6113 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7042 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8141 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 10045 */;
-import AppLauncherContext from "AppLauncherContext" /* 12095 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12962 */;
-import react2 from "react" /* 12965 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 13015 */;
-import Header from "Header" /* 13038 */;
-import BillIcon from "BillIcon" /* 13048 */;
-import ShopIcon from "ShopIcon" /* 13050 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5695 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
+import TableRow2 from "TableRow" /* 6144 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8183 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10087 */;
+import AppLauncherContext from "AppLauncherContext" /* 12145 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13014 */;
+import react2 from "react" /* 13017 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 13067 */;
+import Header from "Header" /* 13090 */;
+import BillIcon from "BillIcon" /* 13100 */;
+import ShopIcon from "ShopIcon" /* 13102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10005 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10047 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1500 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, navigation;
@@ -92,7 +92,7 @@ class CommandRow {
     let onPressSend;
     ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
     let tmp = command;
-    let obj = command(12095);
+    let obj = command(12145);
     const entrypoint = obj.useAppLauncherContext().entrypoint;
     const tmp3 = onPressSend(true, true);
     hasOptions(context, true, true);
@@ -112,8 +112,8 @@ class CommandRow {
       sectionName
     };
     fn = undefined;
-    const useCommandRowSend = command(13015).useCommandRowSend;
-    const tmp5 = command(13015);
+    const useCommandRowSend = command(13067).useCommandRowSend;
+    const tmp5 = command(13067);
     if (installOnDemand) {
       let closure_0 = _asyncToGenerator(async (arg0, value) => {
         let obj5;
@@ -129,7 +129,7 @@ class CommandRow {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -170,7 +170,7 @@ class CommandRow {
                 closure_0();
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -219,7 +219,7 @@ class CommandRow {
       onAccessibilityAction: callback,
       trailing: closure_13(CommandRowButtonDefault, { hasOptions, sending, onPressSend })
     };
-    const TableRow = tmp(6113).TableRow;
+    const TableRow = tmp(6144).TableRow;
     return closure_13(TableRow, obj3);
   }
 }
@@ -405,7 +405,7 @@ export default function AppDetailContent(context) {
       const obj2 = { style: closure_7.monetizationDisclosureStyle, children: items };
       items = [map1(BillIcon.BillIcon, { size: "sm", color: "icon-muted" }), ];
       const obj3 = { style: closure_7.monetizationDisclosureTextStyle, variant: "body-xs/normal", color: "text-subtle", lineClamp: 1, children: intl.string(intl3.t["5khEk8"]) };
-      const Text = tmp(5603).Text;
+      const Text = tmp(5634).Text;
       intl = tmp(1112).intl;
       items[1] = map1(Text, obj3);
       tmp6 = gesture(View, obj2);
@@ -415,7 +415,7 @@ export default function AppDetailContent(context) {
       const obj4 = { style: closure_7.monetizationDisclosureStyle, children: items1 };
       items1 = [map1(ShopIcon.ShopIcon, { size: "sm", color: "icon-muted" }), ];
       const obj5 = { style: closure_7.monetizationDisclosureTextStyle, variant: "body-xs/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(intl3.t["8z5B2U"]) };
-      const Text2 = tmp(5603).Text;
+      const Text2 = tmp(5634).Text;
       intl2 = tmp(1112).intl;
       items1[1] = map1(Text2, obj5);
       tmp11 = gesture(View, obj4);

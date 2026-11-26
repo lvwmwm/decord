@@ -1,14 +1,14 @@
-// Module ID: 10594
-// Function ID: 10595
+// Module ID: 10639
+// Function ID: 10640
 // Name: VideoIcon
-// Dependencies: [19, 21, 575, 5698, 10595, 2]
+// Dependencies: [19, 21, 575, 5729, 10640, 2]
 // Exports: VideoIcon
 
-// Module 10594 (VideoIcon)
+// Module 10639 (VideoIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 10595 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 10640 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

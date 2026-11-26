@@ -1,21 +1,21 @@
-// Module ID: 18175
-// Function ID: 18176
+// Module ID: 18234
+// Function ID: 18235
 // Name: TopSoundboardSoundsActionCreators
-// Dependencies: [1386, 6892, 6893, 1071, 5063, 572, 1284, 2]
+// Dependencies: [1387, 6923, 6924, 1071, 5094, 572, 1285, 2]
 // Exports: fetchTopSoundboardSounds, maybeFetchTopSoundboardSoundsByGuild
 
-// Module 18175 (TopSoundboardSoundsActionCreators)
+// Module 18234 (TopSoundboardSoundsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import UserStore from "UserStore" /* 1386 */;
-import SoundboardStore from "SoundboardStore" /* 6892 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6893 */;
+import UserStore from "UserStore" /* 1387 */;
+import SoundboardStore from "SoundboardStore" /* 6923 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6924 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f114094 = (body) => {
+const f114440 = (body) => {
   let mapped;
   const items = body.body.items;
   const obj = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH_SUCCESS", guildId, topSoundsMetadata: mapped.sort((rank, rank2) => rank.rank - rank2.rank) };
@@ -24,7 +24,7 @@ const f114094 = (body) => {
   mapped = items.map((soundId) => ({ soundId: soundId.sound_id, rank: soundId.sound_rank }));
   return dispatch(obj);
 };
-const f114095 = () => {
+const f114441 = () => {
   const obj = DispatcherDefault;
   const obj2 = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH_FAILURE", guildId };
   return obj.dispatch(obj2);
@@ -51,11 +51,11 @@ export function maybeFetchTopSoundboardSoundsByGuild(id) {
           let obj2 = DispatcherDefault;
           const obj3 = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH", guildId: id };
           obj2.dispatch(obj3);
-          const HTTP = tmp2(1284).HTTP;
+          const HTTP = tmp2(1285).HTTP;
           const get = HTTP.get;
           const obj4 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(id), oldFormErrors: true, rejectWithError: true };
           const value = get(obj4);
-          value.then(f114094, f114095);
+          value.then(f114440, f114441);
         }
       }
     }
@@ -69,10 +69,10 @@ export function fetchTopSoundboardSounds(guildId) {
     const obj3 = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH", guildId };
     const obj2 = DispatcherDefault;
     obj2.dispatch(obj3);
-    const HTTP = tmp(1284).HTTP;
+    const HTTP = tmp(1285).HTTP;
     const get = HTTP.get;
     const obj4 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(guildId), oldFormErrors: true, rejectWithError: true };
     const value = get(obj4);
-    value.then(f114094, f114095);
+    value.then(f114440, f114441);
   }
 }

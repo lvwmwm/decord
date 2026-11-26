@@ -1,14 +1,14 @@
-// Module ID: 8162
-// Function ID: 8163
+// Module ID: 8204
+// Function ID: 8205
 // Name: IarSettingsUpsellsConfigDmSpamFilter
-// Dependencies: [1112, 8150, 1092, 4837, 1195, 2]
+// Dependencies: [1112, 8192, 1092, 4868, 1195, 2]
 
-// Module 8162 (IarSettingsUpsellsConfigDmSpamFilter)
+// Module 8204 (IarSettingsUpsellsConfigDmSpamFilter)
 import ChannelTypes from "ChannelTypes" /* 1092 */;
 import intl2 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import MenuTypes from "MenuTypes" /* 8150 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import MenuTypes from "MenuTypes" /* 8192 */;
 import size from "module_2" /* 2 */;
 
 let items;

@@ -1,13 +1,13 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14252
+// Function ID: 14253
 // Name: useGameProfileCommunitiesLocaleFilter
-// Dependencies: [19, 14201, 12, 1254, 2]
+// Dependencies: [19, 14253, 12, 1255, 2]
 // Exports: default
 
-// Module 14200 (useGameProfileCommunitiesLocaleFilter)
+// Module 14252 (useGameProfileCommunitiesLocaleFilter)
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import GameProfileCommunitiesLocaleFilterStore from "GameProfileCommunitiesLocaleFilterStore" /* 14201 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import GameProfileCommunitiesLocaleFilterStore from "GameProfileCommunitiesLocaleFilterStore" /* 14253 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

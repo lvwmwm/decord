@@ -1,19 +1,19 @@
-// Module ID: 11838
-// Function ID: 11839
+// Module ID: 11886
+// Function ID: 11887
 // Name: PinotChannelLabel
-// Dependencies: [19, 17, 21, 5012, 1112, 3562, 11839, 11840, 11845, 2]
+// Dependencies: [19, 17, 21, 5043, 1112, 3563, 11887, 11888, 11893, 2]
 // Exports: PinotChannelLabel, getPinotChannelLabelText
 
-// Module 11838 (PinotChannelLabel)
+// Module 11886 (PinotChannelLabel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef3562 from "module_3562" /* 3562 */;
-import PinotChannelLabelAnchor from "PinotChannelLabelAnchor" /* 11839 */;
-import useAttachPinotMemberCoachmark from "useAttachPinotMemberCoachmark" /* 11840 */;
-import ChannelHeaderShared from "ChannelHeaderShared" /* 11845 */;
+import _modDef3563 from "module_3563" /* 3563 */;
+import PinotChannelLabelAnchor from "PinotChannelLabelAnchor" /* 11887 */;
+import useAttachPinotMemberCoachmark from "useAttachPinotMemberCoachmark" /* 11888 */;
+import ChannelHeaderShared from "ChannelHeaderShared" /* 11893 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -26,7 +26,7 @@ const result = size.fileFinishedImporting("modules/pinot/native/PinotChannelLabe
 
 export function getPinotChannelLabelText() {
   const intl = intl2.intl;
-  return intl.string(_modDef3562.uneDIi);
+  return intl.string(_modDef3563.uneDIi);
 }
 export function PinotChannelLabel(arg0) {
   let channel;
@@ -45,7 +45,7 @@ export function PinotChannelLabel(arg0) {
   const obj2 = useAttachPinotMemberCoachmark;
   const attachPinotMemberCoachmark = obj2.useAttachPinotMemberCoachmark(ref1, channel, "bottom");
   const items = [ref];
-  ({ children: intl.string(_modDef3562.uneDIi) });
+  ({ children: intl.string(_modDef3563.uneDIi) });
   const SubtitleText = ChannelHeaderShared.SubtitleText;
   intl = intl2.intl;
   return <View ref={react.useCallback((current) => {

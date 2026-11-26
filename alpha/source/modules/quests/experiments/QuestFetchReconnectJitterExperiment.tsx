@@ -1,12 +1,12 @@
-// Module ID: 20238
-// Function ID: 20239
+// Module ID: 20302
+// Function ID: 20303
 // Name: QuestFetchReconnectJitterExperiment
-// Dependencies: [1088, 1450, 2]
+// Dependencies: [1088, 1451, 2]
 // Exports: getQuestFetchReconnectJitterConfig
 
-// Module 20238 (QuestFetchReconnectJitterExperiment)
+// Module 20302 (QuestFetchReconnectJitterExperiment)
 import DurationsDefault from "Durations" /* 1088 */;
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

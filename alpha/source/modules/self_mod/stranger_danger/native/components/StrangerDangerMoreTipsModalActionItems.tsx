@@ -1,20 +1,20 @@
-// Module ID: 11798
-// Function ID: 11799
+// Module ID: 11846
+// Function ID: 11847
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4954, 1386, 11362, 21, 504, 5068, 11778, 7816, 1112, 7259, 7257, 9034, 6109, 11799, 2]
+// Dependencies: [32, 19, 4985, 1387, 11408, 21, 504, 5099, 11826, 7850, 1112, 7290, 7288, 9076, 6140, 11847, 2]
 // Exports: default
 
-// Module 11798 (StrangerDangerMoreTipsModalActionItems)
+// Module 11846 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1112 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7816 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11362 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11778 */;
+import UserUtilsDefault from "UserUtils" /* 5099 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7850 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11408 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11826 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
@@ -92,9 +92,9 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(7259).EyeIcon;
+      let EyeSlashIcon = tmp11(7290).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(7257).EyeSlashIcon;
+      EyeSlashIcon = tmp11(7288).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

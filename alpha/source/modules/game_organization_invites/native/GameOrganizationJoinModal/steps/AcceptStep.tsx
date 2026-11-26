@@ -1,19 +1,19 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 12338
+// Function ID: 12339
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 11869, 12283, 21, 5012, 575, 12281, 1500, 7160, 12047, 12289, 12297, 5694, 1112, 7854, 7856, 6084, 12285, 5603, 2650, 12299, 2652, 12300, 11567, 6832, 5610, 2]
+// Dependencies: [5, 32, 19, 17, 11917, 12333, 21, 5043, 575, 12331, 1501, 7191, 12095, 12339, 12347, 5725, 1112, 7888, 7890, 6115, 12335, 5634, 2651, 12349, 2653, 12350, 11615, 6863, 5641, 2]
 // Exports: AcceptStep
 
-// Module 12288 (AcceptStep)
+// Module 12338 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12283 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12333 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11869 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11917 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, id, navigation;
@@ -71,7 +71,7 @@ export function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c4;
@@ -165,7 +165,7 @@ export function AcceptStep(code) {
             c4 = 0;
             closure_130_5(false);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp57) {
           closure_3 = tmp57;

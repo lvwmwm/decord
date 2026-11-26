@@ -1,13 +1,13 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16529
+// Function ID: 16530
 // Name: useVisibilityTransition
-// Dependencies: [32, 19, 1653, 5222, 1706, 2]
+// Dependencies: [32, 19, 1654, 5253, 1707, 2]
 // Exports: useVisibilityTransition
 
-// Module 16478 (useVisibilityTransition)
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5222 */;
+// Module 16529 (useVisibilityTransition)
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -50,15 +50,15 @@ export function useVisibilityTransition(visible) {
     num = 1;
   }
   let items = [closure_5, , , , , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items[1] = timing_timing.withTiming;
   items[2] = num;
   items[3] = visible;
   items[4] = entranceTiming;
   items[5] = exitTiming;
   items[6] = closure_4;
-  items[7] = _mod1706.scheduleOnRN;
+  items[7] = _mod1707.scheduleOnRN;
   items[8] = callback;
   let c0;
   let c1;

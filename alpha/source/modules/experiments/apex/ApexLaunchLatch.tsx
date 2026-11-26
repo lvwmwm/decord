@@ -1,15 +1,15 @@
-// Module ID: 1385
-// Function ID: 1386
+// Module ID: 1386
+// Function ID: 1387
 // Name: ApexLaunchLatch
-// Dependencies: [32, 502, 1082, 4, 510, 1250, 1251, 1252, 2]
+// Dependencies: [32, 502, 1082, 4, 510, 1251, 1252, 1253, 2]
 
-// Module 1385 (ApexLaunchLatch)
+// Module 1386 (ApexLaunchLatch)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage2 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1082 */;
-import _modDef1250 from "module_1250" /* 1250 */;
-import ApexLaunchLatchFlags from "ApexLaunchLatchFlags" /* 1251 */;
-import ApexUnitUtils from "ApexUnitUtils" /* 1252 */;
+import _modDef1251 from "module_1251" /* 1251 */;
+import ApexLaunchLatchFlags from "ApexLaunchLatchFlags" /* 1252 */;
+import ApexUnitUtils from "ApexUnitUtils" /* 1253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -241,7 +241,7 @@ class ApexLaunchLatch {
       let tmp4;
       if (launchUserEvaluation != null) {
         const assignments = launchUserEvaluation.assignments;
-        const obj = _modDef1250;
+        const obj = _modDef1251;
         tmp4 = assignments[obj.v3(obj, experimentName)];
       }
       hasItem = null != tmp4;
@@ -277,7 +277,7 @@ class ApexLaunchLatch {
       }
       if (launchUserEvaluation != null) {
         const assignments = launchUserEvaluation.assignments;
-        const obj = _modDef1250;
+        const obj = _modDef1251;
         tmp8 = assignments[obj.v3(obj, experimentName)];
       }
       let str3 = "latch_no_unit";

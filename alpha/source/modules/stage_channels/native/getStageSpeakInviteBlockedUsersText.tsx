@@ -1,10 +1,10 @@
-// Module ID: 10240
-// Function ID: 10241
+// Module ID: 10282
+// Function ID: 10283
 // Name: getStageSpeakInviteBlockedUsersText
 // Dependencies: [1112, 2]
 // Exports: default
 
-// Module 10240 (getStageSpeakInviteBlockedUsersText)
+// Module 10282 (getStageSpeakInviteBlockedUsersText)
 import intl4 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 

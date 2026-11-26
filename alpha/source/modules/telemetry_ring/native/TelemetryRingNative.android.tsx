@@ -1,10 +1,10 @@
-// Module ID: 2126
-// Function ID: 2127
+// Module ID: 2127
+// Function ID: 2128
 // Name: TelemetryRingNative
-// Dependencies: [2127, 2]
+// Dependencies: [2128, 2]
 
-// Module 2126 (TelemetryRingNative)
-import react_nativeDefault from "react-native" /* 2127 */;
+// Module 2127 (TelemetryRingNative)
+import react_nativeDefault from "react-native" /* 2128 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

@@ -1,16 +1,16 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16380
+// Function ID: 16381
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 5012, 575, 16321, 16322, 5691, 5603, 16330, 1112, 2846, 2]
+// Dependencies: [19, 21, 5043, 575, 16372, 16373, 5722, 5634, 16381, 1112, 2847, 2]
 // Exports: default
 
-// Module 16329 (FamilyCenterParentalConsentNotice)
+// Module 16380 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 16330 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 16381 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,11 +56,11 @@ export default function FamilyCenterParentalConsentNotice() {
         if (0 === daysRemaining) {
           const intl2 = tmp2(1112).intl;
           const obj4 = { learnMoreHook };
-          formatResult = intl2.format(tmp9(2846).S5kmfO, obj4);
+          formatResult = intl2.format(tmp9(2847).S5kmfO, obj4);
         } else {
           const intl = tmp2(1112).intl;
           const obj5 = { count: daysRemaining, learnMoreHook };
-          formatResult = intl.format(tmp9(2846)["5jm+T3"], obj5);
+          formatResult = intl.format(tmp9(2847)["5jm+T3"], obj5);
         }
         return tmp8(tmp10, obj3);
       }

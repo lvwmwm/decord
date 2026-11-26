@@ -1,38 +1,38 @@
-// Module ID: 14454
-// Function ID: 14455
+// Module ID: 14506
+// Function ID: 14507
 // Name: GuildScheduledEventEmbed
-// Dependencies: [5, 32, 17, 5744, 4879, 4861, 4883, 4954, 1386, 12883, 4867, 5745, 7036, 12335, 8779, 8551, 8427, 8424, 8563, 1112, 8556, 10413, 8185, 575, 14455, 8438, 5628, 8544, 8562, 14456, 8436, 4875, 8439, 8440, 2]
+// Dependencies: [5, 32, 17, 5775, 4910, 4892, 4914, 4985, 1387, 12935, 4898, 5776, 7067, 12385, 8821, 8593, 8469, 8466, 8605, 1112, 8598, 10458, 8227, 575, 14507, 8480, 5659, 8586, 8604, 14508, 8478, 4906, 8481, 8482, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 14454 (GuildScheduledEventEmbed)
+// Module 14506 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1112 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4867 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4875 */;
-import GuildRecord from "GuildRecord" /* 4879 */;
-import useChannelName from "useChannelName" /* 5628 */;
-import Constants from "Constants" /* 5745 */;
-import react_native2 from "react-native" /* 8185 */;
-import ScheduleUtils from "ScheduleUtils" /* 8424 */;
-import useEventSchedule from "useEventSchedule" /* 8427 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8436 */;
-import EntityUtils from "EntityUtils" /* 8438 */;
-import GuildEventUtils from "GuildEventUtils" /* 8544 */;
-import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8551 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8562 */;
-import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 8563 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8779 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12335 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 12883 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14456 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4906 */;
+import GuildRecord from "GuildRecord" /* 4910 */;
+import useChannelName from "useChannelName" /* 5659 */;
+import Constants from "Constants" /* 5776 */;
+import react_native2 from "react-native" /* 8227 */;
+import ScheduleUtils from "ScheduleUtils" /* 8466 */;
+import useEventSchedule from "useEventSchedule" /* 8469 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8478 */;
+import EntityUtils from "EntityUtils" /* 8480 */;
+import GuildEventUtils from "GuildEventUtils" /* 8586 */;
+import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8593 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8604 */;
+import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 8605 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8821 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 12385 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 12935 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14508 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 5744 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
-import MarkupUtils from "MarkupUtils" /* 7036 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 5775 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
+import MarkupUtils from "MarkupUtils" /* 7067 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_1, importDefault;
@@ -113,9 +113,9 @@ function createGuildScheduledEventEmbed(type) {
   const intl = tmp7(1112).intl;
   const stringResult = intl.string(intl5.t.DlcqlU);
   const tmp7Result12 = renderer_EmbedUtils;
-  const assetUriForEmbed1 = tmp7Result12.getAssetUriForEmbed(tmp(8556));
+  const assetUriForEmbed1 = tmp7Result12.getAssetUriForEmbed(tmp(8598));
   const tmp7Result13 = renderer_EmbedUtils;
-  const assetUriForEmbed2 = tmp7Result13.getAssetUriForEmbed(tmp(10413));
+  const assetUriForEmbed2 = tmp7Result13.getAssetUriForEmbed(tmp(10458));
   if (null != guild) {
     if (tmp9) {
       let stringResult1;
@@ -135,7 +135,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(14455));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(14507));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;
@@ -314,7 +314,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
   let obj = GuildScheduledEventStore;
   const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(tmp3);
   if (nextRecurrenceIdInEvent == null) {
-    let obj2 = first(8424);
+    let obj2 = first(8466);
     nextRecurrenceIdInEvent = obj2.getNextRecurrenceIdInEvent(guildScheduledEvent);
   }
   if (null != guildScheduledEvent) {
@@ -341,7 +341,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
       return tmp13(obj3);
     }
   }
-  let obj4 = first(8439);
+  let obj4 = first(8481);
   const guardGuildEventFetchResult = obj4.guardGuildEventFetch(first, tmp3, _asyncToGenerator(async function(arg0, value) {
     if (c3 === 2) {
       c3 = 3;
@@ -353,7 +353,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {

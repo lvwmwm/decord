@@ -1,11 +1,11 @@
-// Module ID: 20226
-// Function ID: 20227
+// Module ID: 20290
+// Function ID: 20291
 // Name: classifyClipsHardware
-// Dependencies: [8089, 2]
+// Dependencies: [8131, 2]
 // Exports: classifyClipsHardware
 
-// Module 20226 (classifyClipsHardware)
-import ClipsConstants from "ClipsConstants" /* 8089 */;
+// Module 20290 (classifyClipsHardware)
+import ClipsConstants from "ClipsConstants" /* 8131 */;
 import size from "module_2" /* 2 */;
 
 function isHardwareH264Encoder(arr) {

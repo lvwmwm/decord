@@ -1,13 +1,13 @@
-// Module ID: 11583
-// Function ID: 11584
+// Module ID: 11631
+// Function ID: 11632
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1071, 6099, 11584, 11586, 1255, 1253, 11587, 1379, 5691, 2]
+// Dependencies: [5, 502, 1071, 6130, 11632, 11634, 1256, 1254, 11635, 1380, 5722, 2]
 
-// Module 11583 (MobileWebHandoffLinking)
-import FingerprintUtils from "FingerprintUtils" /* 1253 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 11584 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 11586 */;
+// Module 11631 (MobileWebHandoffLinking)
+import FingerprintUtils from "FingerprintUtils" /* 1254 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 11632 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 11634 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1071 */;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const AnalyticsUtilsDefault = tmp(1255);
+const AnalyticsUtilsDefault = tmp(1256);
 function createHandoffTokenWithLoadingModal(arg0) {
   let authenticated;
   let fingerprint;
@@ -141,7 +141,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
             const obj5 = closure_131_1(closure_131_2[10]);
             obj5.performURLNavigation(uRL.href);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp6) {
           c5 = 3;

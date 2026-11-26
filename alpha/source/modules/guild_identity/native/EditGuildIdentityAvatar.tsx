@@ -1,20 +1,20 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16180
+// Function ID: 16181
 // Name: EditGuildIdentityAvatar
-// Dependencies: [19, 4924, 1386, 1071, 1388, 21, 5012, 504, 6348, 6349, 11896, 16098, 9460, 2173, 6344, 9544, 5226, 16099, 2119, 16016, 16016, 14403, 6121, 1112, 9479, 16109, 2]
+// Dependencies: [19, 4955, 1387, 1071, 1389, 21, 5043, 504, 6379, 6380, 11944, 16051, 9502, 2174, 6375, 9586, 5257, 16052, 2120, 16046, 16046, 14455, 6152, 1112, 9521, 16054, 2]
 // Exports: default
 
-// Module 16127 (EditGuildIdentityAvatar)
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9544 */;
+// Module 16180 (EditGuildIdentityAvatar)
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9586 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import UserStore from "UserStore" /* 1386 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import UserStore from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -39,8 +39,6 @@ export default function EditGuildIdentityAvatar(guildId) {
   let setPendingAvatar;
   let statusStyle;
   let style;
-  let tmp24;
-  let tmp25;
   guildId = guildId.guildId;
   ({ disabled, disableStatus } = guildId);
   const userId = guildId.userId;
@@ -112,19 +110,11 @@ export default function EditGuildIdentityAvatar(guildId) {
     const obj6 = { style, disabled, onPress: tmp18, accessibilityRole: "button", accessibilityLabel: intl.string(tmp2(tmp3[23]).t["70lEQe"]), children: items3 };
     const PressableOpacity = tmp2(tmp3[22]).PressableOpacity;
     intl = tmp2(tmp3[23]).intl;
-    const obj7 = { user: stateFromStores, guildId: tmp24, pendingAvatarSrc: tmp25, pendingAvatarDecoration, statusStyle, disableStatus, style: avatarStyle };
-    tmp24 = undefined;
-    const tmp20 = closure_11;
-    const tmp6Result = tmp6(tmp3[24]);
-    if (null !== pendingAvatar) {
-      tmp24 = guildId;
-    }
-    tmp25 = undefined;
-    if (null !== pendingAvatar) {
-      tmp25 = pendingAvatarSrc;
-    }
-    items3 = [closure_10(tmp6Result, obj7), ];
+    const obj7 = { user: stateFromStores, guildId, pendingAvatarSrc, pendingAvatarDecoration, statusStyle, disableStatus, style: avatarStyle };
+    items3 = [closure_10(tmp6(tmp3[24]), obj7), ];
     let tmp21Result = !disabled;
+    const tmp20 = closure_11;
+    const tmp21 = closure_10;
     if (tmp21Result) {
       const obj8 = { style: tmp.editAvatarIcon };
       tmp21Result = tmp21(tmp6(tmp3[25]), obj8);

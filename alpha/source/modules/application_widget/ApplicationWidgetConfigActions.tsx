@@ -1,15 +1,15 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11472
+// Function ID: 11473
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 11426, 1071, 5132, 559, 1088, 572, 1284, 1241, 2]
+// Dependencies: [5, 11473, 1071, 5163, 559, 1088, 572, 1285, 1242, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 11425 (ApplicationWidgetConfigActions)
+// Module 11472 (ApplicationWidgetConfigActions)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5132 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11426 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5163 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11473 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Backoff from "Backoff" /* 559 */;
 import Dispatcher from "Dispatcher" /* 572 */;
@@ -46,7 +46,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
           closure_129_9.succeed();
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -137,7 +137,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -189,7 +189,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
           obj.dispatch(obj10);
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -219,7 +219,7 @@ obj = function _fetchWidgetConfigsFromApi() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -272,7 +272,7 @@ obj = function _fetchWidgetConfigsFromApi() {
             dispatch(obj);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp28) {
           closure_3 = tmp28;

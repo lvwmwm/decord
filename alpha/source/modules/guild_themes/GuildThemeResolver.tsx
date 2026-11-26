@@ -1,13 +1,13 @@
-// Module ID: 5215
-// Function ID: 5216
+// Module ID: 5246
+// Function ID: 5247
 // Name: GuildThemeResolver
-// Dependencies: [5216, 5185, 504, 2]
+// Dependencies: [5247, 5216, 504, 2]
 // Exports: getActiveGuildTheme, isRenderableGuildThemeSettings, resolveRenderableGuildThemeSettings, useActiveGuildTheme, useActiveGuildThemeForGuildId, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive
 
-// Module 5215 (GuildThemeResolver)
+// Module 5246 (GuildThemeResolver)
 import get_initialized from "get initialized" /* 504 */;
-import GuildThemePresets from "GuildThemePresets" /* 5185 */;
-import GuildThemePreviewStore from "GuildThemePreviewStore" /* 5216 */;
+import GuildThemePresets from "GuildThemePresets" /* 5216 */;
+import GuildThemePreviewStore from "GuildThemePreviewStore" /* 5247 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_themes/GuildThemeResolver.tsx");

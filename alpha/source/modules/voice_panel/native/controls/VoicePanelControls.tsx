@@ -1,36 +1,36 @@
-// Module ID: 19487
-// Function ID: 19488
+// Module ID: 19550
+// Function ID: 19551
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6902, 11734, 11737, 11732, 1071, 21, 5012, 575, 1625, 19488, 8447, 11733, 1653, 19395, 5576, 5272, 1706, 18144, 11739, 13175, 5228, 5242, 12944, 9753, 19489, 19376, 19490, 5073, 19494, 19496, 7023, 19499, 5613, 18189, 19523, 18178, 1262, 19524, 19525, 1107, 1628, 1494, 11488, 11764, 19495, 13013, 19526, 19466, 19498, 19527, 2]
+// Dependencies: [32, 19, 17, 6933, 11782, 11785, 11780, 1071, 21, 5043, 575, 1626, 19551, 8489, 11781, 1654, 19458, 5607, 5303, 1707, 18203, 11787, 13227, 5259, 5273, 12996, 9795, 19552, 19439, 19553, 5104, 19557, 19559, 7054, 19562, 5644, 18248, 19586, 18237, 1263, 19587, 19588, 1107, 1629, 1495, 11536, 11812, 19558, 13065, 19589, 19529, 19561, 19590, 2]
 
-// Module 19487 (VoicePanelControls)
+// Module 19550 (VoicePanelControls)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import native from "native" /* 5073 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import useRefValueDefault from "useRefValue" /* 7023 */;
-import native2 from "native" /* 8447 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18144 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19376 */;
-import useControlsLockDefault from "useControlsLock" /* 19395 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 19488 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19490 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19494 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19496 */;
-import useControlsButtonsDefault from "useControlsButtons" /* 19499 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import native from "native" /* 5104 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import useRefValueDefault from "useRefValue" /* 7054 */;
+import native2 from "native" /* 8489 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18203 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19439 */;
+import useControlsLockDefault from "useControlsLock" /* 19458 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 19551 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19553 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19557 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19559 */;
+import useControlsButtonsDefault from "useControlsButtons" /* 19562 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11737 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11785 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11780 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1626 */;
 import size_mod from "module_2" /* 2 */;
 
 let _Math2, absolute, activateResult, closure_0, controlsProps, diff, diff1, failResult, failResult1, flag, flag2, flag3, flag4, height2, merged3, num3, obj1, result1, result2, set, set2, set2Result, set3, set3Result, set4, set4Result, str, str2, tmp18, value1, velocityY, width, width2;
@@ -55,7 +55,7 @@ let rect;
 let rect1;
 let tmp2;
 let unpackModuleId;
-const _modDef1653 = tmp2(1653);
+const _modDef1654 = tmp2(1654);
 let react = react_mod;
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 ({ UI_SHOW_HIDE_PHYSICS: metroImportDefault, MODE_CHANGE_PHYSICS: metroImportAll, BORDER_RADIUS_PHYSICS: c9, PANEL_CONTROLS_HEIGHT_PHYSICS: c10, VoicePanelModes: unpackModuleId } = VoicePanelConstants);
@@ -134,7 +134,7 @@ let closure_37 = react.memo(function FloatingBars(controlsSpecs) {
   const obj2 = { item: tmp11, renderItem: VoicePanelFloatingCTAContainer.renderVoicePanelFloatingCTA };
   items2[0] = closure_18(TransitionItem, obj2);
   let tmp12;
-  const TransitionItem2 = tmp(5073).TransitionItem;
+  const TransitionItem2 = tmp(5104).TransitionItem;
   if (isConnectingOrConnectedToConsole) {
     tmp12 = memo;
   }
@@ -171,7 +171,7 @@ let closure_39 = react.memo(function VoicePanelButtonsInner(sharedTab) {
   ({ controlsSpecs, connected } = context);
   const arr = useControlsButtonsDefault();
   let items = [closure_38, controlsSpecs, connected, sharedTab, wrapperSpecs, c22, gesture, , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
   items[7] = spring_spring.withSpring;
   items[8] = metroImportAll;
   let c0;
@@ -237,7 +237,7 @@ let closure_39 = react.memo(function VoicePanelButtonsInner(sharedTab) {
     ref.current = false;
   }, []);
   const obj2 = { skipEntering: tmp4, children: closure_18(View, obj3) };
-  const LayoutAnimationConfig = _mod1653.LayoutAnimationConfig;
+  const LayoutAnimationConfig = _mod1654.LayoutAnimationConfig;
   obj3 = {
     style: items2,
     children: arr.map((props) => {
@@ -246,7 +246,7 @@ let closure_39 = react.memo(function VoicePanelButtonsInner(sharedTab) {
     })
   };
   items2 = [tmp5.buttonsWrapper, animatedStyle];
-  View = _modDef1653.View;
+  View = _modDef1654.View;
   return closure_18(LayoutAnimationConfig, obj2);
 });
 let closure_40 = { code: "(function VoicePanelControlsTsx13(){let[wrapperSpecs,CALL_TILE_GUTTER,accessoryHeights]=this.__closure;return wrapperSpecs.get().height+CALL_TILE_GUTTER+accessoryHeights.get();})" };

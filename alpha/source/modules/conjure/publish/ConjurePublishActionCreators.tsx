@@ -1,21 +1,21 @@
-// Module ID: 11424
-// Function ID: 11425
+// Module ID: 11471
+// Function ID: 11472
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1386, 6903, 7675, 1071, 7681, 1284, 7636, 572, 6103, 11425, 7691, 11427, 2]
+// Dependencies: [5, 1387, 6934, 7706, 1071, 7714, 1285, 7667, 572, 6134, 11472, 7725, 11474, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishLiveApp
 
-// Module 11424 (ConjurePublishActionCreators)
+// Module 11471 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 7681 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7691 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11425 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11427 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 7714 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7725 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11472 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1386 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7675 */;
+import UserStore from "UserStore" /* 1387 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7706 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, c4, closure_4, delete_channels;
@@ -43,7 +43,7 @@ let obj = function _unpublishProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -123,7 +123,9 @@ let obj = function _unpublishProject() {
 obj = function _unpublishLiveApp() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_2;
+    let obj9;
     let promise2;
+    let tmp11;
     let closure_0 = arg0;
     if (c4 === 2) {
       c4 = 3;
@@ -135,7 +137,7 @@ obj = function _unpublishLiveApp() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -187,9 +189,17 @@ obj = function _unpublishLiveApp() {
           } else {
             tmp = closure_130_6.getPublishStatus(id);
             if (null != tmp) {
-              const obj8 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId: id, publishState: "not_live", surface: tmp.surface, previewAppChannels: tmp.previewAppChannels, previewDevicePermissions: tmp.previewDevicePermissions };
-              obj = closure_130_1(closure_130_2[8]);
-              obj.dispatch(obj8);
+              const obj8 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId: id, publishState: "not_live", surface: tmp.surface, previewAppChannels: tmp.previewAppChannels, previewDevicePermissions: tmp.previewDevicePermissions, views: tmp11 };
+              tmp11 = null;
+              const dispatch = closure_130_1(closure_130_2[8]).dispatch;
+              const tmp41 = closure_130_1(closure_130_2[8]);
+              if (null != tmp.views) {
+                obj = { mounts: obj9, placed: false, missingViews: [] };
+                const merged = Object.assign(tmp.views);
+                obj9 = { activity: null, voiceChannel: null, appChannels: [] };
+                tmp11 = obj;
+              }
+              dispatch(obj8);
             }
             const currentUser = closure_130_4.getCurrentUser();
             id1 = undefined;
@@ -207,9 +217,9 @@ obj = function _unpublishLiveApp() {
             return { value: true, done: true };
           }
         }
-      } catch (tmp29) {
+      } catch (tmp26) {
         c4 = 3;
-        throw tmp29;
+        throw tmp26;
       }
     }
   });
@@ -233,7 +243,7 @@ obj = function _refreshPublishedProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -371,7 +381,7 @@ obj = function _refreshPublishedProject() {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -400,7 +410,7 @@ obj = function _refreshPublishedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -442,7 +452,7 @@ obj = function _refreshPublishedApplication() {
               closure_132_14(applicationId, closure_1, closure_2);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp15) {
           c6 = 3;

@@ -1,23 +1,23 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16708
+// Function ID: 16709
 // Name: useAdRefreshLoop
-// Dependencies: [19, 8320, 6840, 9851, 8321, 6931, 9882, 16658, 6843, 504, 2]
+// Dependencies: [19, 8362, 6871, 9893, 8363, 6962, 9924, 16709, 6874, 504, 2]
 // Exports: useAdRefreshLoop
 
-// Module 16657 (useAdRefreshLoop)
+// Module 16708 (useAdRefreshLoop)
 import react from "react" /* 19 */;
-import QuestConstants from "QuestConstants" /* 6840 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6931 */;
-import QuestsEligibility from "QuestsEligibility" /* 9851 */;
-import AdDeliveryActionCreators from "AdDeliveryActionCreators" /* 9882 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8320 */;
+import QuestConstants from "QuestConstants" /* 6871 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6962 */;
+import QuestsEligibility from "QuestsEligibility" /* 9893 */;
+import AdDeliveryActionCreators from "AdDeliveryActionCreators" /* 9924 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8362 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus) {
-  const f110571 = (item) => {
+  const f110882 = (item) => {
     const obj = require("AdDecisionUtils");
     return obj.isAdDecisionValid(item);
   };
@@ -25,8 +25,8 @@ function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus
   const isEligibleForQuests = obj.getIsEligibleForQuests();
   let tmp5 = !isEligibleForQuests;
   if (isEligibleForQuests) {
-    tmp5 = arr.length > 0 && arr.every(f110571);
-    arr.length > 0 && arr.every(f110571);
+    tmp5 = arr.length > 0 && arr.every(f110882);
+    arr.length > 0 && arr.every(f110882);
   }
   if (!tmp5) {
     const obj2 = DiscordAppStateDefault;
@@ -38,7 +38,7 @@ function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus
       }
     } else if (arr.length > 0) {
       const _Math = Math;
-      const clearQuestAdDecision = tmp2(9882).clearQuestAdDecision;
+      const clearQuestAdDecision = tmp2(9924).clearQuestAdDecision;
       const items = [];
       AdDeliveryActionCreators;
       HermesBuiltin.arraySpread(items, arr.map((ttlMillis) => ttlMillis.ttlMillis), 0);

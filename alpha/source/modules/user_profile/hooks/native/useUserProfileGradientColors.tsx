@@ -1,13 +1,13 @@
-// Module ID: 9484
-// Function ID: 9485
+// Module ID: 9526
+// Function ID: 9527
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 5013, 504, 5073, 7503, 9372, 2]
+// Dependencies: [19, 5044, 504, 5104, 7534, 9414, 2]
 // Exports: useUserProfileGradientColors
 
-// Module 9484 (useUserProfileGradientColors)
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 9372 */;
+// Module 9526 (useUserProfileGradientColors)
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 9414 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

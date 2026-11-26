@@ -1,14 +1,14 @@
-// Module ID: 11435
-// Function ID: 11436
+// Module ID: 11482
+// Function ID: 11483
 // Name: conjurePublishAction
-// Dependencies: [11428, 1112, 4244, 11410, 2]
+// Dependencies: [11475, 1112, 4245, 11457, 2]
 // Exports: conjurePublishButtonState
 
-// Module 11435 (conjurePublishAction)
+// Module 11482 (conjurePublishAction)
 import intl4 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 11410 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 11428 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 11457 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11475 */;
 import size from "module_2" /* 2 */;
 
 function resolveConjurePublishAction(input) {
@@ -69,7 +69,7 @@ function resolveConjurePublishAction(input) {
     if (false === tmp12) {
       const intl = intl4.intl;
       const format = intl.format;
-      const N4NkyR = _modDef4244.N4NkyR;
+      const N4NkyR = _modDef4245.N4NkyR;
       if (str3 == null) {
         str3 = "";
       }
@@ -96,7 +96,7 @@ function resolveConjurePublishAction(input) {
     prop1 = integrationStatus.bot_permissions_changed;
   }
   let result = requiresPermissionReview(obj6);
-  const obj7 = { label: intl2.string(_modDef4244["120EFN"]), intent: str4, permissionsChanged: result, isUpdate: "live_outdated" === tmp.publishState && !tmp9, upToDate: tmp26, disabledReason: formatResult, confirmReason: tmp27, missingSurface: tmp31 };
+  const obj7 = { label: intl2.string(_modDef4245["120EFN"]), intent: str4, permissionsChanged: result, isUpdate: "live_outdated" === tmp.publishState && !tmp9, upToDate: tmp26, disabledReason: formatResult, confirmReason: tmp27, missingSurface: tmp31 };
   intl2 = tmp17(1112).intl;
   str4 = "publish";
   if (result) {
@@ -121,7 +121,7 @@ function resolveConjurePublishAction(input) {
         if (false === tmp28) {
           const intl3 = tmp17(1112).intl;
           const format2 = intl3.format;
-          const eHYXFg = _modDef4244.eHYXFg;
+          const eHYXFg = _modDef4245.eHYXFg;
           if (str6 == null) {
             str6 = "";
           }

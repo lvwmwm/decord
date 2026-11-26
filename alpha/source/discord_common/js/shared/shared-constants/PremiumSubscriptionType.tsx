@@ -1,9 +1,9 @@
-// Module ID: 9177
-// Function ID: 9178
+// Module ID: 9219
+// Function ID: 9220
 // Name: PremiumSubscriptionType
 // Dependencies: [2]
 
-// Module 9177 (PremiumSubscriptionType)
+// Module 9219 (PremiumSubscriptionType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/PremiumSubscriptionType.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 8830
-// Function ID: 8831
+// Module ID: 8872
+// Function ID: 8873
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 8831, 1378, 8764, 1653, 8832, 1628, 1706, 8833, 8768, 5613, 5614, 8834, 2]
+// Dependencies: [32, 19, 8873, 1379, 8806, 1654, 8874, 1629, 1707, 8875, 8810, 5644, 5645, 8876, 2]
 // Exports: useMediaViewerSyncer
 
-// Module 8830 (useMediaViewerSyncer)
-import _mod1653 from "module_1653" /* 1653 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8768 */;
+// Module 8872 (useMediaViewerSyncer)
+import _mod1654 from "module_1654" /* 1654 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 8831 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import Constants from "Constants" /* 8873 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -71,14 +71,14 @@ export function useMediaViewerSyncer(sources) {
     let obj8;
     let obj9;
     const obj = { selectedIndex: obj2.makeMutable(initialIndex), thumbnailsIndex: obj3.makeMutable(initialIndex), thumbnailsScrolling: obj4.makeMutable(0), thumbnailsAnimateTo: obj5.makeMutable(-1), viewerPos: obj6.makeMutable(initialIndex), viewerScrolling: obj7.makeMutable(0), zoomed: obj8.makeMutable(false), swipeSource: obj9.makeMutable(undefined) };
-    obj2 = _mod1653;
-    obj3 = _mod1653;
-    obj4 = _mod1653;
-    obj5 = _mod1653;
-    obj6 = _mod1653;
-    obj7 = _mod1653;
-    obj8 = _mod1653;
-    obj9 = _mod1653;
+    obj2 = _mod1654;
+    obj3 = _mod1654;
+    obj4 = _mod1654;
+    obj5 = _mod1654;
+    obj6 = _mod1654;
+    obj7 = _mod1654;
+    obj8 = _mod1654;
+    obj9 = _mod1654;
     return obj;
   }, items);
   let items1 = [sources, memo, onEndReached, onEndReachedThreshold];

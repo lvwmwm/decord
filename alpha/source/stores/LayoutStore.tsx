@@ -1,20 +1,20 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15168
+// Function ID: 15169
 // Name: LayoutStore
-// Dependencies: [15119, 15120, 1071, 15121, 15122, 1268, 15123, 12, 504, 510, 572, 2]
+// Dependencies: [15169, 15170, 1071, 15171, 15172, 1269, 15173, 12, 504, 510, 572, 2]
 
-// Module 15118 (LayoutStore)
+// Module 15168 (LayoutStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import v1 from "v1" /* 1268 */;
-import LayoutStoreTypes from "LayoutStoreTypes" /* 15122 */;
-import LayoutUtils from "LayoutUtils" /* 15123 */;
-import LayoutRecord from "LayoutRecord" /* 15119 */;
-import WidgetRecord from "WidgetRecord" /* 15120 */;
-import OverlayLayoutConstants from "OverlayLayoutConstants" /* 15121 */;
+import v1 from "v1" /* 1269 */;
+import LayoutStoreTypes from "LayoutStoreTypes" /* 15172 */;
+import LayoutUtils from "LayoutUtils" /* 15173 */;
+import LayoutRecord from "LayoutRecord" /* 15169 */;
+import WidgetRecord from "WidgetRecord" /* 15170 */;
+import OverlayLayoutConstants from "OverlayLayoutConstants" /* 15171 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -116,7 +116,7 @@ class LayoutStore extends PersistedStore {
                   defaultSettings = tmp19.defaultSettings;
                 }
                 if (null == defaultSettings) {
-                  return { v: "top" };
+                  return { v: "r" };
                 } else {
                   obj = { type: iter, id: v4Result, layoutId, zIndex: widgetsForLayout.length };
                   const merged = Object.assign(defaultSettings);
@@ -302,7 +302,7 @@ let items = [
     let closure_129_1;
     let items2;
     let pinnedWidgets;
-    const f130507 = (id) => {
+    const f130910 = (id) => {
       let rect = null;
       if (null != closure_1_0) {
         rect = closure_1_0[id];
@@ -332,9 +332,9 @@ let items = [
         let items = [];
         const items1 = [migrated, ];
         obj2 = { layouts: items2, widgets: items };
-        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f130507) };
+        items1[1] = { id: migrated, widgets: pinnedWidgets.map(f130910) };
         items2 = [items1];
-        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f130507) };
+        const obj3 = { id: migrated, widgets: pinnedWidgets.map(f130910) };
         return obj2;
       }
     }

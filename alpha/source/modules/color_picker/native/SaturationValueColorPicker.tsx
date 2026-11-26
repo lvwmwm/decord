@@ -1,23 +1,23 @@
-// Module ID: 16013
-// Function ID: 16014
+// Module ID: 16043
+// Function ID: 16044
 // Name: SaturationValueColorPicker
-// Dependencies: [32, 19, 17, 21, 5012, 575, 1653, 16011, 1706, 5567, 5272, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 16041, 1707, 5598, 5303, 2]
 // Exports: default
 
-// Module 16013 (SaturationValueColorPicker)
+// Module 16043 (SaturationValueColorPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16011 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let _HermesInternal, importDefault, str, str2, str3, str4, str5;
 
 let metroImportDefault;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp5;
-const _mod1706 = tmp5(1706);
+const _mod1707 = tmp5(1707);
 function ColorBox(arg0) {
   let colorBoxInnerStyle;
   let colorBoxStyle;
@@ -49,8 +49,8 @@ function ColorBox(arg0) {
   [tmp3, tmp4] = _slicedToArray(react.useState("rgb(0,0,0)"), 2);
   const items = [closure_9, , ];
   const tmp2 = _slicedToArray(react.useState("rgb(0,0,0)"), 2);
-  const useAnimatedReaction = _mod1653.useAnimatedReaction;
-  _mod1653;
+  const useAnimatedReaction = _mod1654.useAnimatedReaction;
+  _mod1654;
   items[1] = ColorPickerUtils.hslToRgbWorklet;
   items[2] = hue;
   let c0;
@@ -66,7 +66,7 @@ function ColorBox(arg0) {
   SaturationValueColorPickerTsx1.__closure = items1;
   SaturationValueColorPickerTsx1.__workletHash = 16511625483345;
   SaturationValueColorPickerTsx1.__initData = tmp8;
-  const items2 = [closure_10, _mod1706.scheduleOnRN, tmp4];
+  const items2 = [closure_10, _mod1707.scheduleOnRN, tmp4];
   c0 = undefined;
   c1 = undefined;
   [tmp11, tmp12, tmp13] = items2;
@@ -185,7 +185,7 @@ export default function SaturationValueColorPicker(arg0) {
   items[4] = value;
   items[5] = first1;
   items[6] = onPanUpdate;
-  items[7] = _mod1706.scheduleOnRN;
+  items[7] = _mod1707.scheduleOnRN;
   let c0;
   let c1;
   let c2;
@@ -208,7 +208,7 @@ export default function SaturationValueColorPicker(arg0) {
   SaturationValueColorPickerTsx3.__closure = items1;
   SaturationValueColorPickerTsx3.__workletHash = 12886468679050;
   SaturationValueColorPickerTsx3.__initData = tmp11;
-  const items2 = [closure_13, saturation, ColorPickerUtils.normalizeValue, first, value, first1, onPanUpdate, _mod1706.scheduleOnRN];
+  const items2 = [closure_13, saturation, ColorPickerUtils.normalizeValue, first, value, first1, onPanUpdate, _mod1707.scheduleOnRN];
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -230,7 +230,7 @@ export default function SaturationValueColorPicker(arg0) {
   SaturationValueColorPickerTsx4.__closure = items3;
   SaturationValueColorPickerTsx4.__workletHash = 11287600813869;
   SaturationValueColorPickerTsx4.__initData = tmp19;
-  const items4 = [closure_14, onPanFinalize, _mod1706.scheduleOnRN];
+  const items4 = [closure_14, onPanFinalize, _mod1707.scheduleOnRN];
   c0 = undefined;
   c1 = undefined;
   [tmp27, tmp28, tmp29] = items4;
@@ -247,8 +247,8 @@ export default function SaturationValueColorPicker(arg0) {
   SaturationValueColorPickerTsx5.__initData = tmp27;
   const panGesture = usePanGesture(obj2);
   const items6 = [closure_15, , , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items6[1] = ColorPickerUtils.hsvToRgbWorklet;
   items6[2] = hue;
   items6[3] = saturation;
@@ -304,10 +304,10 @@ export default function SaturationValueColorPicker(arg0) {
   ];
   const obj4 = { gesture: panGesture, children: metroRequire(View, obj5) };
   obj5 = { onLayout: callback, hitSlop: { top: result, bottom: result, left: result, right: result }, children: metroRequire(ColorBox, { hue, colorBoxStyle, colorBoxInnerStyle }) };
-  const GestureDetector = tmp8(5272).GestureDetector;
+  const GestureDetector = tmp8(5303).GestureDetector;
   items10 = [metroRequire(GestureDetector, obj4), ];
   const obj6 = { onLayout: callback1, pointerEvents: "box-none", style: items11 };
   items11 = [tmp.selector, animatedStyle, selectorStyle];
-  items10[1] = metroRequire(_modDef1653.View, obj6);
+  items10[1] = metroRequire(_modDef1654.View, obj6);
   return metroImportDefault(View, obj3);
 };

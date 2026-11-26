@@ -1,13 +1,13 @@
-// Module ID: 13075
-// Function ID: 13076
+// Module ID: 13127
+// Function ID: 13128
 // Name: useOptionAnimations
-// Dependencies: [32, 19, 5222, 1653, 1706, 2]
+// Dependencies: [32, 19, 5253, 1654, 1707, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 13075 (useOptionAnimations)
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5222 */;
+// Module 13127 (useOptionAnimations)
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ export function useOptionEnteringAnimation() {
   let closure_1;
   let closure_2;
   let sharedValue;
-  let obj = sharedValue(1653);
+  let obj = sharedValue(1654);
   sharedValue = obj.useSharedValue(false);
   dependencyMap = react.useRef([]);
   let items = [sharedValue];
@@ -84,7 +84,7 @@ export function useOptionEnteringAnimation() {
       let tmp5;
       let tmp6;
       let tmp7;
-      let items = [closure_5, timing_timing.withTiming, _mod1653.Easing, c4, _mod1653.withDelay, _mod1706.scheduleOnRN, closure_2];
+      let items = [closure_5, timing_timing.withTiming, _mod1654.Easing, c4, _mod1654.withDelay, _mod1707.scheduleOnRN, closure_2];
       let c0;
       let c1;
       let c2;

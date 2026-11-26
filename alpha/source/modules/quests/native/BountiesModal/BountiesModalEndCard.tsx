@@ -1,20 +1,20 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16580
+// Function ID: 16581
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 5012, 1653, 5222, 5225, 5567, 16518, 2]
+// Dependencies: [17, 21, 5043, 1654, 5253, 5256, 5598, 16569, 2]
 // Exports: default
 
-// Module 16529 (BountiesModalEndCard)
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import timingPresets from "timingPresets" /* 5225 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
+// Module 16580 (BountiesModalEndCard)
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import timingPresets from "timingPresets" /* 5256 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let num;
 
 let c3;
@@ -48,7 +48,7 @@ export default function BountiesModalEndCard(visible) {
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   let tmp = closure_7();
-  _mod1653;
+  _mod1654;
   const items = [closure_8, timing_timing.withTiming, visible, timingPresets.timingStandard];
   let c0;
   let c1;
@@ -73,7 +73,7 @@ export default function BountiesModalEndCard(visible) {
     let obj = { style: items2, pointerEvents: "box-none", children: items3 };
     items2 = [tmp.container, tmp8];
     const obj2 = { style: tmp.backdropTint };
-    const View = _modDef1653.View;
+    const View = _modDef1654.View;
     items3 = [hasOwnProperty(React3, obj2), , ];
     const obj3 = { colors: ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"], locations: [0, 0.841], style: tmp.backdropGradient };
     items3[1] = hasOwnProperty(LinearGradientDefault, obj3);

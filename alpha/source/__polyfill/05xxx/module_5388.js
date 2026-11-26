@@ -1,72 +1,60 @@
 // Module ID: 5388
 // Function ID: 5389
-// Dependencies: [5343, 5276, 5316]
-// Exports: useComposedGesture
+// Dependencies: [19, 5307, 5351]
+// Exports: Wrap
 
 // Module 5388
-import _mod5343 from "module_5343" /* 5343 */;
+import react2 from "react" /* 19 */;
+import assignRef2 from "assignRef" /* 5351 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, handlerTags;
+const react = react2;
 
+const useCallback = react2.useCallback;
 
-export function useComposedGesture(type) {
-  let _undefined;
-  _require = type;
-  const substr = [...arguments].slice();
-  const flatMapResult = substr.flatMap((type) => {
-    const obj = _mod5343;
-    if (obj.isComposedGesture(type)) {
-      let gestures;
-      if (type.type === type) {
-        gestures = type.gestures;
-      }
-      return gestures;
-    }
-    gestures = [type];
-  });
-  dependencyMap = flatMapResult;
-  const flatMapResult1 = flatMapResult.flatMap((handlerTags) => {
-    const obj = type(_undefined[0]);
-    if (obj.isComposedGesture(handlerTags)) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
-    }
-    return handlerTags;
-  });
-  let tmp2 = _require;
-  const obj2 = require("module_5343");
-  if (obj2.containsDuplicates(flatMapResult1)) {
-    const _Error2 = Error;
-    const self3 = this;
-    const self4 = this;
-    const tmp2Result = tmp2(5276);
-    const error = new Error(tmp2Result.tagMessage("Each gesture can be used only once in the gesture composition."));
+export const Wrap = function(ref) {
+  ref = ref.ref;
+  let ref2;
+  try {
+    let obj = react;
+    const Children = react.Children;
+    const onlyResult = Children.only(tmp);
+    const tmp3 = onlyResult;
+    ref2 = onlyResult.props.ref;
+    const items = [ref2, ref];
+    let obj2 = {
+      collapsable: false,
+      ref: useCallback((__internalInstanceHandle) => {
+          let assignRefResult1;
+          let obj = ref(ref2[2]);
+          let assignRefResult = obj.assignRef(assignRefResult1, __internalInstanceHandle);
+          ref = assignRefResult;
+          const assignRef = ref(ref2[2]).assignRef;
+          ref(ref2[2]);
+          let obj2 = ref(ref2[2]);
+          assignRefResult1 = assignRef(ref, obj2.preferHostInstance(__internalInstanceHandle));
+          return () => {
+            if (typeof assignRefResult === "function") {
+              tmp();
+            } else {
+              const obj = assignRef2;
+              assignRefResult = obj.assignRef(ref2, null);
+            }
+            if (typeof assignRefResult1 === "function") {
+              tmp3();
+            } else {
+              const obj2 = assignRef2;
+              assignRefResult1 = obj2.assignRef(ref, null);
+            }
+          };
+        }, items)
+    };
+    return obj.cloneElement(onlyResult, obj2, onlyResult.props.children);
+  } catch (err) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const obj3 = ref(ref2[1]);
+    const error = new Error(obj3.tagMessage("VirtualGestureDetector expects exactly one React element as its child. To use a gesture with multiple views, wrap them in a single parent view and attach the gesture to that."));
     throw error;
-  } else {
-    let obj = { shouldUseReanimatedDetector: flatMapResult.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: flatMapResult.some((config) => config.config.dispatchesAnimatedEvents) };
-    if (obj.shouldUseReanimatedDetector) {
-      if (obj.dispatchesAnimatedEvents) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const tmp2Result2 = tmp2(5276);
-        const error1 = new Error(tmp2Result2.tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
-        throw error1;
-      }
-    }
-    const Reanimated = tmp2(5316).Reanimated;
-    let composedEventHandler;
-    if (Reanimated != null) {
-      composedEventHandler = Reanimated.useComposedEventHandler(flatMapResult.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
-    }
-    const found = flatMapResult.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
-    let animatedEventHandler;
-    if (found.length > 0) {
-      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
-    }
-    const obj3 = { handlerTags: flatMapResult1, type, config: obj, detectorCallbacks: obj4, externalSimultaneousHandlers: [], gestures: flatMapResult };
-    return obj3;
   }
-}
+};

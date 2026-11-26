@@ -1,10 +1,10 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 16672
+// Function ID: 16673
 // Name: OrbsHoldoutExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 16621 (OrbsHoldoutExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 16672 (OrbsHoldoutExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-06-orbs-holdout", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

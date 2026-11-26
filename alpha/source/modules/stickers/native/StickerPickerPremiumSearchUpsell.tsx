@@ -1,18 +1,18 @@
-// Module ID: 10816
-// Function ID: 10817
+// Module ID: 10862
+// Function ID: 10863
 // Name: StickerPickerPremiumSearchUpsell
-// Dependencies: [19, 1071, 1388, 21, 5012, 575, 6348, 9544, 9610, 9555, 9591, 1255, 2173, 9695, 1112, 9595, 2]
+// Dependencies: [19, 1071, 1389, 21, 5043, 575, 6379, 9586, 9652, 9597, 9633, 1256, 2174, 9737, 1112, 9637, 2]
 // Exports: default
 
-// Module 10816 (StickerPickerPremiumSearchUpsell)
+// Module 10862 (StickerPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import PremiumUtils from "PremiumUtils" /* 2173 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import createStyles from "createStyles" /* 5012 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

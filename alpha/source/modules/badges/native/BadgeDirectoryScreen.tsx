@@ -1,18 +1,18 @@
-// Module ID: 9826
-// Function ID: 9827
+// Module ID: 9868
+// Function ID: 9869
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1386, 21, 5012, 5566, 575, 504, 1112, 7160, 9825, 9827, 7324, 11570, 2]
+// Dependencies: [19, 1387, 21, 5043, 5597, 575, 504, 1112, 7191, 9867, 9869, 7355, 11618, 2]
 // Exports: default
 
-// Module 9826 (BadgeDirectoryScreen)
+// Module 9868 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5566 */;
-import NavigatorHeader from "NavigatorHeader" /* 7160 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 9825 */;
+import NavigatorConstants from "NavigatorConstants" /* 5597 */;
+import NavigatorHeader from "NavigatorHeader" /* 7191 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 9867 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import UserStore from "UserStore" /* 1387 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, dependencyMap;
@@ -89,14 +89,14 @@ export default function BadgeDirectoryScreen(targetUserId) {
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(9825);
+      const tmp2Result = targetUserId(9867);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
-        tmp9Result = tmp9(tmp2(7324).Navigator, obj4);
+        tmp9Result = tmp9(tmp2(7355).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(11570).Modal, obj5);
+        tmp9Result = tmp9(tmp2(11618).Modal, obj5);
       }
       return tmp9Result;
     }

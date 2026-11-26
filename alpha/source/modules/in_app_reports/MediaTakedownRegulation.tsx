@@ -1,10 +1,10 @@
-// Module ID: 5681
-// Function ID: 5682
+// Module ID: 5712
+// Function ID: 5713
 // Name: MediaTakedownRegulation
 // Dependencies: [2]
 // Exports: isMediaTakedownRegulation
 
-// Module 5681 (MediaTakedownRegulation)
+// Module 5712 (MediaTakedownRegulation)
 import size from "module_2" /* 2 */;
 
 const MediaTakedownRegulation = { TIDA: "tida", UK_STOPNCII: "uk_stopncii", BRAZIL_ONLINE_SAFETY_OF_WOMEN: "brazil_online_safety_of_women" };

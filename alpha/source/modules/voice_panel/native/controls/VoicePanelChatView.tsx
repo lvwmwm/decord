@@ -1,23 +1,23 @@
-// Module ID: 13174
-// Function ID: 13175
+// Module ID: 13226
+// Function ID: 13227
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 11732, 1071, 21, 5012, 6098, 1107, 13172, 1112, 10717, 11733, 1653, 10546, 8971, 1494, 1628, 13175, 7813, 5184, 11935, 5073, 6075, 13176, 11725, 2]
+// Dependencies: [19, 17, 11780, 1071, 21, 5043, 6129, 1107, 13224, 1112, 10762, 11781, 1654, 10591, 9013, 1495, 1629, 13227, 7847, 5215, 11983, 5104, 6106, 13228, 11773, 2]
 
-// Module 13174 (VoicePanelChatView)
+// Module 13226 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1112 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6098 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10546 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10717 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13172 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6129 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10591 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10762 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11780 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 13224 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ let closure_10 = react.memo(function GradientHack() {
   let c0;
   [tmp4, tmp5] = items;
   const tmp3 = closure_8();
-  const obj = _mod1653;
+  const obj = _mod1654;
   class VoicePanelChatViewTsx1 {
     constructor() {
       size = { width: closure_0.get().width, height: closure_0.get().height };
@@ -67,7 +67,7 @@ let closure_10 = react.memo(function GradientHack() {
   const animatedStyle = obj.useAnimatedStyle(VoicePanelChatViewTsx1);
   const obj2 = { style: items2, children: metroRequire(ThemedGradientDefault, { absolute: true }) };
   items2 = [tmp3.gradientWrapper, animatedStyle];
-  const View = tmp(1653).View;
+  const View = tmp(1654).View;
   return metroRequire(View, obj2);
 });
 const memoResult1 = react.memo(function VoicePanelChatView(shown) {

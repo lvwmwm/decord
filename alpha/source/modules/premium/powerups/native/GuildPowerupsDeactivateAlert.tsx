@@ -1,18 +1,18 @@
-// Module ID: 13478
-// Function ID: 13479
+// Module ID: 13530
+// Function ID: 13531
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 5012, 575, 13479, 13480, 13481, 6021, 7247, 1112, 2878, 6021, 5603, 2]
+// Dependencies: [17, 21, 5043, 575, 13531, 13532, 13533, 6052, 7278, 1112, 2879, 6052, 5634, 2]
 // Exports: default
 
-// Module 13478 (GuildPowerupsDeactivateAlert)
+// Module 13530 (GuildPowerupsDeactivateAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2878 from "module_2878" /* 2878 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 13479 */;
-import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 13480 */;
+import _modDef2879 from "module_2879" /* 2879 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import useGuildPowerupOnDeactivateDefault from "useGuildPowerupOnDeactivate" /* 13531 */;
+import useDeactivateWarningTextDefault from "useDeactivateWarningText" /* 13532 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,7 +64,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   const arr = useDeactivateWarningTextDefault(guildId, powerup);
   let obj = require("GuildPowerupAnalytics");
   const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, require("GuildPowerupAnalytics").ModalType.DEACTIVATE);
-  const obj2 = { header: closure_4(View, obj3), title: intl.formatToPlainString(_modDef2878.iEBw1M, obj5), content: intl2.formatToPlainString(_modDef2878["7o0K+2"], obj6), actions: tmp9(AlertActions, obj8), extraContent: closure_4(tmp8, obj11) };
+  const obj2 = { header: closure_4(View, obj3), title: intl.formatToPlainString(_modDef2879.iEBw1M, obj5), content: intl2.formatToPlainString(_modDef2879["7o0K+2"], obj6), actions: tmp9(AlertActions, obj8), extraContent: closure_4(tmp8, obj11) };
   obj3 = { style: tmp.headerContainer, children: closure_4(CircleErrorIcon, obj4) };
   const AlertModal = require("AlertModal").AlertModal;
   obj4 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "custom", style: { width: 40, height: 40 } };
@@ -79,7 +79,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   tmp9 = closure_5;
   if (tmp7Result) {
     const obj7 = { style: tmp.warningText, variant: "body-xs/semibold", color: "text-feedback-critical", children: error };
-    tmp7Result = tmp7(tmp5(5603).Text, obj7);
+    tmp7Result = tmp7(tmp5(5634).Text, obj7);
   }
   obj8 = { children: items };
   items = [tmp7Result, , ];
@@ -89,9 +89,9 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
       stopPropagation.stopPropagation();
       return _undefined();
     },
-    text: intl3.string(_modDef2878.PYPdl4)
+    text: intl3.string(_modDef2879.PYPdl4)
   };
-  const AlertActionButton = tmp5(6021).AlertActionButton;
+  const AlertActionButton = tmp5(6052).AlertActionButton;
   intl3 = tmp5(1112).intl;
   items[1] = closure_4(AlertActionButton, obj9, "deactivate");
   const obj10 = {
@@ -101,7 +101,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
     variant: "secondary",
     text: intl4.string(require("intl").t["ETE/oC"])
   };
-  const AlertActionButton2 = tmp5(6021).AlertActionButton;
+  const AlertActionButton2 = tmp5(6052).AlertActionButton;
   intl4 = tmp5(1112).intl;
   items[2] = closure_4(AlertActionButton2, obj10, "cancel");
   obj11 = {

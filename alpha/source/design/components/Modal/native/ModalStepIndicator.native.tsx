@@ -1,17 +1,17 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 12366
+// Function ID: 12367
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 5012, 575, 1653, 5576, 5613, 1112, 2223, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1654, 5607, 5644, 1112, 2224, 2]
 // Exports: ModalStepIndicator
 
-// Module 12316 (ModalStepIndicator)
+// Module 12366 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef2223 from "module_2223" /* 2223 */;
-import spring_spring from "spring/spring" /* 5613 */;
+import _modDef2224 from "module_2224" /* 2224 */;
+import spring_spring from "spring/spring" /* 5644 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -43,16 +43,16 @@ function StepPill(isActive) {
   sharedValue = undefined;
   let num2 = 0;
   const tmp5 = closure_7();
-  const useSharedValue = isActive(1653).useSharedValue;
-  isActive(1653);
+  const useSharedValue = isActive(1654).useSharedValue;
+  isActive(1654);
   if (isActive) {
     num2 = 1;
   }
   sharedValue = useSharedValue(num2);
-  const tmp6Result = isActive(5576);
+  const tmp6Result = isActive(5607);
   const token = tmp6Result.useToken(TEXT_BRAND);
   let items = [isActive, sharedValue];
-  const tmp6Result3 = isActive(5576);
+  const tmp6Result3 = isActive(5607);
   const token1 = tmp6Result3.useToken(BACKGROUND_MOD_STRONG);
   const effect = react.useEffect(() => {
     let num = 0;
@@ -64,13 +64,13 @@ function StepPill(isActive) {
     const result = set(obj.withSpring(num, closure_6));
   }, items);
   let items1 = [closure_8, , , , , , , , ];
-  const useAnimatedStyle = isActive(1653).useAnimatedStyle;
-  isActive(1653);
-  items1[1] = isActive(1653).interpolate;
+  const useAnimatedStyle = isActive(1654).useAnimatedStyle;
+  isActive(1654);
+  items1[1] = isActive(1654).interpolate;
   items1[2] = sharedValue;
   items1[3] = 12;
   items1[4] = 36;
-  items1[5] = isActive(1653).interpolateColor;
+  items1[5] = isActive(1654).interpolateColor;
   items1[6] = token1;
   items1[7] = token;
   items1[8] = num;
@@ -101,7 +101,7 @@ function StepPill(isActive) {
   ModalStepIndicatorNativeTsx1.__initData = tmp14;
   const animatedStyle = useAnimatedStyle(ModalStepIndicatorNativeTsx1);
   const items3 = [animatedStyle, tmp5.stepPill];
-  return jsx(sharedValue(1653).View, { style: items3 });
+  return jsx(sharedValue(1654).View, { style: items3 });
 }
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -132,7 +132,7 @@ export function ModalStepIndicator(arg0) {
     } else {
       const intl = intl2.intl;
       const range = { min: 1, max: totalSteps, now: currentStep + 1 };
-      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2223.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
+      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2224.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
     }
   }
 }

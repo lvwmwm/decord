@@ -1,12 +1,12 @@
-// Module ID: 14179
-// Function ID: 14180
+// Module ID: 14231
+// Function ID: 14232
 // Name: useGameProfilePlatforms
-// Dependencies: [19, 8716, 1112, 2]
+// Dependencies: [19, 8758, 1112, 2]
 // Exports: default, getGameProfilePlatformText
 
-// Module 14179 (useGameProfilePlatforms)
+// Module 14231 (useGameProfilePlatforms)
 import intl7 from "intl" /* 1112 */;
-import PlatformType from "PlatformType" /* 8716 */;
+import PlatformType from "PlatformType" /* 8758 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,11 +19,11 @@ export default function useGameProfilePlatforms(platforms) {
   items = [platforms.platforms];
   return react.useMemo(() => {
     set = new Set(platforms.platforms);
-    let hasItem = set.has(PlatformType.PlatformType.MACOS) || set.has(tmp(8716).PlatformType.LINUX);
+    let hasItem = set.has(PlatformType.PlatformType.MACOS) || set.has(tmp(8758).PlatformType.LINUX);
     if (hasItem) {
       set.add(PlatformType.PlatformType.DESKTOP);
     }
-    const hasItem1 = set.has(tmp(8716).PlatformType.IOS) || set.has(tmp(8716).PlatformType.ANDROID);
+    const hasItem1 = set.has(tmp(8758).PlatformType.IOS) || set.has(tmp(8758).PlatformType.ANDROID);
     return items.filter((item) => {
       let hasItem;
       if ("mobile" === item) {

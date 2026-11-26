@@ -1,18 +1,18 @@
-// Module ID: 19495
-// Function ID: 19496
+// Module ID: 19558
+// Function ID: 19559
 // Name: useControlsHiddenPresentation
-// Dependencies: [11734, 5073, 1653, 5613, 1706, 2]
+// Dependencies: [11782, 5104, 1654, 5644, 1707, 2]
 // Exports: default
 
-// Module 19495 (useControlsHiddenPresentation)
-import _mod1653 from "module_1653" /* 1653 */;
-import native from "native" /* 5073 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
+// Module 19558 (useControlsHiddenPresentation)
+import _mod1654 from "module_1654" /* 1654 */;
+import native from "native" /* 5104 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const _mod1706 = tmp(1706);
-const spring_spring = tmp(5613);
+const _mod1707 = tmp(1707);
+const spring_spring = tmp(5644);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 let obj = { overshootClamping: true };
 const merged = Object.assign(VoicePanelConstants.MODE_CHANGE_PHYSICS);
@@ -59,17 +59,17 @@ export default function useControlsHiddenPresentation(arg0, arg1) {
   useControlsHiddenPresentationTsx1.__closure = items1;
   useControlsHiddenPresentationTsx1.__workletHash = 10191676178362;
   useControlsHiddenPresentationTsx1.__initData = tmp4;
-  const obj2 = _mod1653;
+  const obj2 = _mod1654;
   const animatedProps = obj2.useAnimatedProps(useControlsHiddenPresentationTsx1);
   const items2 = [closure_5, , , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items2[1] = spring_spring.withSpring;
   items2[2] = tmp3;
   items2[3] = arg1;
   items2[4] = obj;
   items2[5] = cleanUp;
-  items2[6] = _mod1706.scheduleOnRN;
+  items2[6] = _mod1707.scheduleOnRN;
   let c0;
   let c1;
   let c2;

@@ -1,23 +1,23 @@
-// Module ID: 11853
-// Function ID: 11854
+// Module ID: 11901
+// Function ID: 11902
 // Name: ForumPostActionBar
-// Dependencies: [19, 17, 4945, 4946, 4861, 1071, 21, 5012, 575, 504, 11657, 9047, 8971, 11854, 6121, 1112, 7155, 5603, 8555, 5708, 8202, 11, 6753, 11855, 2]
+// Dependencies: [19, 17, 4976, 4977, 4892, 1071, 21, 5043, 575, 504, 11705, 9089, 9013, 11902, 6152, 1112, 7186, 5634, 8597, 5739, 8244, 11, 6784, 11903, 2]
 // Exports: default
 
-// Module 11853 (ForumPostActionBar)
+// Module 11901 (ForumPostActionBar)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import flow_Client from "flow/Client" /* 6753 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8202 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9047 */;
+import flow_Client from "flow/Client" /* 6784 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8244 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9089 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4945 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4946 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import LurkingStore from "LurkingStore" /* 4976 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -56,7 +56,7 @@ export default function ForumPostActionBar(channel) {
   let obj = channel(504);
   const items = [ChannelStore];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel.parent_id));
-  let obj2 = channel(11657);
+  let obj2 = channel(11705);
   const firstMessage = obj2.useFirstForumPostMessage(channel).firstMessage;
   const items1 = [JoinedThreadsStore];
   const obj3 = channel(504);
@@ -70,11 +70,11 @@ export default function ForumPostActionBar(channel) {
   });
   const obj6 = { style: items3, children: items4 };
   items3 = [tmp.actionBarContainer, ];
-  const obj5 = channel(8971);
+  const obj5 = channel(9013);
   items3[1] = obj5.useGradientTop();
   let tmp9 = null != firstMessage;
   if (tmp9) {
-    const obj7 = { style: tmp.reactionRow, children: closure_8(channel(11854).ForumPostActionBarReactions, obj8) };
+    const obj7 = { style: tmp.reactionRow, children: closure_8(channel(11902).ForumPostActionBarReactions, obj8) };
     obj8 = { thread: channel, parentChannel: stateFromStores, firstMessage };
     tmp9 = closure_8(tmp8, obj7);
   }
@@ -90,7 +90,7 @@ export default function ForumPostActionBar(channel) {
       const result = obj.handleToggleFollowForumPost(channel, stateFromStores1);
     }
     const obj10 = { accessible: true, accessibilityLabel: null, style: null, onPress: null, children: null };
-    const PressableOpacity = tmp2(6121).PressableOpacity;
+    const PressableOpacity = tmp2(6152).PressableOpacity;
     const intl = tmp2(1112).intl;
     const string = intl.string;
     const t = tmp2(1112).t;
@@ -98,9 +98,9 @@ export default function ForumPostActionBar(channel) {
       obj10.accessibilityLabel = string(t.G3ooHD);
       obj10.style = tmp.actionButton;
       obj10.onPress = handleFollow;
-      const items6 = [closure_8(channel(7155).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
+      const items6 = [closure_8(channel(7186).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
       const obj11 = { style: tmp.buttonText, variant: "body-sm/semibold", color: "text-brand", children: intl3.string(channel(1112).t["OtF+lC"]) };
-      const Text2 = tmp2(5603).Text;
+      const Text2 = tmp2(5634).Text;
       intl3 = tmp2(1112).intl;
       items6[1] = closure_8(Text2, obj11);
       obj10.children = items6;
@@ -109,9 +109,9 @@ export default function ForumPostActionBar(channel) {
       obj10.accessibilityLabel = string(t["DjZ+6E"]);
       obj10.style = tmp.actionButton;
       obj10.onPress = handleFollow;
-      const items7 = [closure_8(channel(8555).BellIcon, { size: "xs" }), ];
+      const items7 = [closure_8(channel(8597).BellIcon, { size: "xs" }), ];
       const obj12 = { style: tmp.buttonText, variant: "body-sm/semibold", color: "interactive-text-default", children: intl2.string(channel(1112).t["0rQinA"]) };
-      const Text = tmp2(5603).Text;
+      const Text = tmp2(5634).Text;
       intl2 = tmp2(1112).intl;
       items7[1] = closure_8(Text, obj12);
       obj10.children = items7;
@@ -133,9 +133,9 @@ export default function ForumPostActionBar(channel) {
         const result = obj.handleCopyLinkForumPost(guildId, tmp.id, obj2);
       }
     },
-    children: closure_8(channel(5708).LinkIcon, { size: "xs" })
+    children: closure_8(channel(5739).LinkIcon, { size: "xs" })
   };
-  const PressableOpacity2 = tmp2(6121).PressableOpacity;
+  const PressableOpacity2 = tmp2(6152).PressableOpacity;
   intl4 = tmp2(1112).intl;
   items8[1] = closure_8(PressableOpacity2, obj13);
   const obj14 = {
@@ -150,9 +150,9 @@ export default function ForumPostActionBar(channel) {
       obj2 = SnowflakeUtilsDefault;
       jumpToMessage(obj);
     },
-    children: closure_8(channel(11855).ArrowLargeUpIcon, { size: "xs" })
+    children: closure_8(channel(11903).ArrowLargeUpIcon, { size: "xs" })
   };
-  const PressableOpacity3 = tmp2(6121).PressableOpacity;
+  const PressableOpacity3 = tmp2(6152).PressableOpacity;
   intl5 = tmp2(1112).intl;
   items9 = [, ];
   ({ actionButton: arr10[0], lastActionButton: arr10[1] } = tmp);

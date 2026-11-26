@@ -1,24 +1,24 @@
-// Module ID: 17269
-// Function ID: 17270
+// Module ID: 17320
+// Function ID: 17321
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1388, 21, 5012, 12359, 1112, 14670, 7109, 8087, 2173, 17270, 5603, 17274, 5610, 9595, 575, 2]
+// Dependencies: [19, 17, 1389, 21, 5043, 12409, 1112, 14723, 7140, 8129, 2174, 17321, 5634, 17325, 5641, 9637, 575, 2]
 
-// Module 17269 (PremiumTrialOfferActionSheetContent)
+// Module 17320 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumUtils from "PremiumUtils" /* 2173 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FolderIcon from "FolderIcon" /* 7109 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8087 */;
-import UserIcon from "UserIcon" /* 12359 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14670 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17270 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 17274 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FolderIcon from "FolderIcon" /* 7140 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8129 */;
+import UserIcon from "UserIcon" /* 12409 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14723 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17321 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 17325 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -106,10 +106,10 @@ const memoResult = react.memo(function PremiumTrialOfferActionSheetContent(onCon
   items1[2] = hasOwnProperty(PremiumPerksListDefault, { perks: items });
   const obj10 = { style: tmp.buttonContainer, children: hasOwnProperty(Button, obj11) };
   obj11 = { size: "lg", text: intl9.formatToPlainString(intl10.t.xASjq5, { duration: intervalDuration }), onPress: onConfirm, grow: true, icon: hasOwnProperty(NitroWheelIcon, obj12) };
-  Button = tmp3(5610).Button;
+  Button = tmp3(5641).Button;
   intl9 = tmp3(1112).intl;
   obj12 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-  NitroWheelIcon = tmp3(9595).NitroWheelIcon;
+  NitroWheelIcon = tmp3(9637).NitroWheelIcon;
   items1[3] = hasOwnProperty(View, obj10);
   return tmp6(View, obj7);
 });

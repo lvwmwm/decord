@@ -1,14 +1,14 @@
-// Module ID: 17087
-// Function ID: 17088
+// Module ID: 17138
+// Function ID: 17139
 // Name: ServerTrendingNotificationSetting
-// Dependencies: [9513, 11914, 1112, 4837, 17088, 2]
+// Dependencies: [9555, 11962, 1112, 4868, 17139, 2]
 
-// Module 17087 (ServerTrendingNotificationSetting)
+// Module 17138 (ServerTrendingNotificationSetting)
 import intl2 from "intl" /* 1112 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import ServerTrendingNotificationUtils from "ServerTrendingNotificationUtils" /* 17088 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import ServerTrendingNotificationUtils from "ServerTrendingNotificationUtils" /* 17139 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

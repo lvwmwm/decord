@@ -1,14 +1,14 @@
-// Module ID: 9527
-// Function ID: 9528
+// Module ID: 9569
+// Function ID: 9570
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 1268, 5592, 9528, 1494, 9533, 2]
+// Dependencies: [32, 5, 19, 21, 3, 1269, 5623, 9570, 1495, 9575, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 9527 (useTooltip)
+// Module 9569 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 9528 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 9570 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -41,10 +41,10 @@ export function useTooltip(ref, memo) {
     context.add(arg0, <AnimatedTooltip targetMeasurements={arg1} surfaceMeasurements={arg2} />);
   }, items);
   let closure_1 = ref;
-  const tmp8 = context(1494)();
+  const tmp8 = context(1495)();
   let closure_3 = tmp8;
   let closure_4 = obj.useRef(tmp8);
-  const context1 = obj.useContext(tmp(5592).LayerContext);
+  const context1 = obj.useContext(tmp(5623).LayerContext);
   let closure_6 = obj.useRef(null);
   const items1 = [context1, ref];
   const effect = obj.useEffect(() => {
@@ -79,7 +79,7 @@ export function useTooltip(ref, memo) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } else {
             try {
@@ -130,7 +130,7 @@ export function useTooltip(ref, memo) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -205,7 +205,7 @@ export function useTooltipHelper(ref, targetRef, callback) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } else {
             try {
@@ -256,7 +256,7 @@ export function useTooltipHelper(ref, targetRef, callback) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
             } catch (tmp18) {
               closure_3 = tmp18;

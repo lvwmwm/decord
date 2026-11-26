@@ -1,18 +1,18 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17241
+// Function ID: 17242
 // Name: toggleDismissibleContentDismissState
-// Dependencies: [19, 5045, 5671, 4859, 4846, 4842, 11, 504, 5044, 1088, 4852, 2]
+// Dependencies: [19, 5076, 5702, 4890, 4877, 4873, 11, 504, 5075, 1088, 4883, 2]
 // Exports: default
 
-// Module 17190 (toggleDismissibleContentDismissState)
+// Module 17241 (toggleDismissibleContentDismissState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4842 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4846 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4852 */;
-import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4859 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5671 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4873 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4877 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4883 */;
+import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4890 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5702 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -86,7 +86,7 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
             const fromTimestamp2 = SnowflakeUtilsDefault.fromTimestamp;
             SnowflakeUtilsDefault;
             const timestamp = Date.now();
-            const result5 = addSnowflakeBoundDismissedContent(tmp3, fromTimestamp2(timestamp + tmp(4846).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), nextNumTimesDismissed1);
+            const result5 = addSnowflakeBoundDismissedContent(tmp3, fromTimestamp2(timestamp + tmp(4877).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), nextNumTimesDismissed1);
             flag9 = true;
           }
           flag = flag9;
@@ -200,7 +200,7 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
                       const fromTimestamp = SnowflakeUtilsDefault.fromTimestamp;
                       SnowflakeUtilsDefault;
                       const timestamp1 = Date.now();
-                      const result17 = UNSAFE_addSnowflakeBoundGuildDismissedContent(tmp3, fromTimestamp(timestamp1 + tmp(4846).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), tmp10, num2);
+                      const result17 = UNSAFE_addSnowflakeBoundGuildDismissedContent(tmp3, fromTimestamp(timestamp1 + tmp(4877).SNOWFLAKE_BOUND_DISMISSIBLE_CONTENT_DURATION_MS), tmp10, num2);
                       flag3 = true;
                     }
                     flag2 = flag3;

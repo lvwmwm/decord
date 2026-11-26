@@ -1,13 +1,13 @@
-// Module ID: 17630
-// Function ID: 17631
+// Module ID: 17687
+// Function ID: 17688
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 1500, 7277, 504, 6808, 17243, 1358, 575, 2]
+// Dependencies: [19, 502, 21, 12, 1501, 7308, 504, 6839, 17294, 1359, 575, 2]
 // Exports: default
 
-// Module 17630 (components/MFA)
+// Module 17687 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6808 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6839 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -34,10 +34,10 @@ export default function ConnectedMFA() {
     obj = {};
   }
   ({ inContainer, isMultiAccount } = obj);
-  let obj2 = isMultiAccount(1500);
+  let obj2 = isMultiAccount(1501);
   navigation = obj2.useNavigation();
   if (inContainer) {
-    inContainer = navigation(7277)();
+    inContainer = navigation(7308)();
   }
   const items = [AuthenticationStore];
   const items1 = [isMultiAccount];
@@ -61,7 +61,7 @@ export default function ConnectedMFA() {
   }, items2);
   const obj3 = { mfaChallenge: stateFromStores, finish: callback, handleOnClose: callback1, ignoreKeyboard: inContainer, containerStyle: tmp9, headerStatusBarHeight: num, headerLeftContainerStyle: tmp10, headerRightContainerStyle: tmp12 };
   tmp9 = undefined;
-  const MFAModal = tmp(17243).MFAModal;
+  const MFAModal = tmp(17294).MFAModal;
   const tmp8 = jsx;
   if (inContainer) {
     tmp9 = closure_7;
@@ -72,7 +72,7 @@ export default function ConnectedMFA() {
   }
   tmp10 = undefined;
   if (inContainer) {
-    const tmpResult2 = isMultiAccount(1358);
+    const tmpResult2 = isMultiAccount(1359);
     const isAndroidResult = tmpResult2.isAndroid();
     const space = tmp4(575).space;
     tmp10 = { paddingLeft: isAndroidResult ? space.PX_8 : space.PX_16, paddingTop: navigation(575).space.PX_12 };

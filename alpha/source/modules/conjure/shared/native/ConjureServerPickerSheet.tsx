@@ -1,23 +1,23 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11454
+// Function ID: 11455
 // Name: ConjureServerPickerSheet
-// Dependencies: [32, 19, 17, 21, 5012, 575, 7515, 7476, 7375, 1112, 4244, 5244, 5603, 7220, 5226, 7222, 7021, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 7546, 7507, 7406, 1112, 4245, 5275, 5634, 7251, 5257, 7253, 7052, 2]
 // Exports: default
 
-// Module 11408 (ConjureServerPickerSheet)
+// Module 11454 (ConjureServerPickerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import GuildIcon from "GuildIcon" /* 7021 */;
-import TableRadioRow2 from "TableRadioRow" /* 7222 */;
-import SearchBar2 from "SearchBar" /* 7375 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7476 */;
-import ActionSheet2 from "ActionSheet" /* 7515 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import GuildIcon from "GuildIcon" /* 7052 */;
+import TableRadioRow2 from "TableRadioRow" /* 7253 */;
+import SearchBar2 from "SearchBar" /* 7406 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7507 */;
+import ActionSheet2 from "ActionSheet" /* 7546 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let name;
@@ -90,7 +90,7 @@ export default function ConjureServerPickerSheet(selectedGuildId) {
   }
   let obj = { scrollable: true, startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_6(BottomSheetTitleHeader.BottomSheetTitleHeader, { title }), children: null };
   const ActionSheet = ActionSheet2.ActionSheet;
-  let obj2 = { size: "md", round: true, grow: false, accessibilityLabel: intl.string(guilds(4244)["+g5NWE"]), placeholder: intl2.string(guilds(4244)["+g5NWE"]), onChange: tmp4 };
+  let obj2 = { size: "md", round: true, grow: false, accessibilityLabel: intl.string(guilds(4245)["+g5NWE"]), placeholder: intl2.string(guilds(4245)["+g5NWE"]), onChange: tmp4 };
   const SearchBar = SearchBar2.SearchBar;
   intl = intl4.intl;
   intl2 = intl4.intl;
@@ -102,7 +102,7 @@ export default function ConjureServerPickerSheet(selectedGuildId) {
     if (null == tmp6) {
       const obj4 = { style: tmp2.empty, children: closure_6(Text, obj5) };
       obj5 = { variant: "body-md/normal", color: "text-muted", children: intl3.string(intl4.t.V6nAfF) };
-      Text = tmp8(5603).Text;
+      Text = tmp8(5634).Text;
       intl3 = tmp8(1112).intl;
       tmp10Result = tmp10(View, obj4);
     }
@@ -112,7 +112,7 @@ export default function ConjureServerPickerSheet(selectedGuildId) {
     return tmp7(ActionSheet, obj);
   }
   let selected;
-  const TableRadioGroup = tmp8(7220).TableRadioGroup;
+  const TableRadioGroup = tmp8(7251).TableRadioGroup;
   if (otherOption != null) {
     selected = otherOption.selected;
   }
@@ -146,7 +146,7 @@ export default function ConjureServerPickerSheet(selectedGuildId) {
   if (null != tmp6) {
     const obj8 = { value: other, label: null, labelLineClamp: 1, icon: null };
     ({ label: obj7.label, icon: obj7.icon } = tmp6);
-    const items2 = [tmp10(tmp8(7222).TableRadioRow, obj8, other)];
+    const items2 = [tmp10(tmp8(7253).TableRadioRow, obj8, other)];
     items3 = items2;
   } else {
     items3 = [];

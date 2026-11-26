@@ -1,19 +1,19 @@
-// Module ID: 18614
-// Function ID: 18615
+// Module ID: 18677
+// Function ID: 18678
 // Name: ConjureShimmer
-// Dependencies: [32, 19, 17, 5013, 21, 5012, 504, 1653, 5222, 671, 7200, 5567, 2]
+// Dependencies: [32, 19, 17, 5044, 21, 5043, 504, 1654, 5253, 671, 7231, 5598, 2]
 // Exports: default
 
-// Module 18614 (ConjureShimmer)
+// Module 18677 (ConjureShimmer)
 import _modDef671 from "module_671" /* 671 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,9 +83,9 @@ export default function ConjureShimmer(epoch) {
     if (tmp) {
       const result = sharedValue.set(0);
       set = sharedValue.set;
-      const withRepeat = _mod1653.withRepeat;
-      _mod1653;
-      const obj2 = { duration: 2000, easing: _mod1653.Easing.linear };
+      const withRepeat = _mod1654.withRepeat;
+      _mod1654;
+      const obj2 = { duration: 2000, easing: _mod1654.Easing.linear };
       const withTiming = timing_timing.withTiming;
       timing_timing;
       const result1 = set(withRepeat(withTiming(1, obj2), -1, false));
@@ -94,7 +94,7 @@ export default function ConjureShimmer(epoch) {
         return obj.cancelAnimation(closure_1_2);
       };
     } else {
-      let obj = _mod1653;
+      let obj = _mod1654;
       obj.cancelAnimation(sharedValue);
       const result2 = sharedValue.set(0);
     }
@@ -154,13 +154,13 @@ export default function ConjureShimmer(epoch) {
     const obj5 = { style: closure_5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp22, obj6) };
     obj6 = { style: closure_5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
     obj7 = { children: renderFace() };
-    tmp22 = require("module_7200");
+    tmp22 = require("module_7231");
     obj8 = { style: items6, children: closure_8(require("LinearGradient"), obj10) };
     items6 = [tmp.band, , ];
     const obj9 = { width: result };
     items6[1] = obj9;
     items6[2] = animatedStyle;
-    View = require("module_1653").View;
+    View = require("module_1654").View;
     obj10 = { style: tmp.fill, start, end, colors: memo, locations };
     tmp18 = closure_8(tmp17, obj5);
   }

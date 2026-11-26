@@ -1,28 +1,28 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11759
+// Function ID: 11760
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 4865, 4861, 4942, 4883, 4944, 6133, 1071, 21, 5012, 575, 8682, 5221, 504, 5628, 5573, 5019, 11712, 11713, 5240, 5244, 5699, 7021, 1186, 7065, 5603, 1112, 6084, 6109, 6113, 5226, 8457, 2119, 11714, 8046, 6832, 5610, 11717, 5575, 2]
+// Dependencies: [32, 19, 17, 4896, 4892, 4973, 4914, 4975, 6164, 1071, 21, 5043, 575, 8724, 5252, 504, 5659, 5604, 5050, 11760, 11761, 5271, 5275, 5730, 7052, 1186, 7096, 5634, 1112, 6115, 6140, 6144, 5257, 8499, 2120, 11762, 8088, 6863, 5641, 11765, 5606, 2]
 // Exports: default
 
-// Module 11711 (NewChannelFollower)
+// Module 11759 (NewChannelFollower)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ChannelRecord from "ChannelRecord" /* 4865 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4942 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11714 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11717 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ChannelRecord from "ChannelRecord" /* 4896 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4973 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11762 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11765 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import SortedGuildStore from "SortedGuildStore" /* 6133 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import SortedGuildStore from "SortedGuildStore" /* 6164 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -232,7 +232,7 @@ export default function NewChannelFollower(targetChannelId) {
         },
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8457, dependencyMap.paths);
+      const tmp2 = asyncRequire(8499, dependencyMap.paths);
       intl = intl10.intl;
       const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
       reduce = flattenedGuildIds.reduce;

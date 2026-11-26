@@ -1,13 +1,13 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 11260
+// Function ID: 11261
 // Name: OrderSigningDeferral
-// Dependencies: [5, 5729, 11215, 11216, 2]
+// Dependencies: [5, 5760, 11261, 11262, 2]
 // Exports: getPaymentRedirectContext, getSigningDeferralDeadline, getSigningDeferralMerchantAccountId, getStripeNextActionContext, isAwaitingStripeNextAction, isSigningDeferralExpired, performSigningDeferralAction
 
-// Module 11214 (OrderSigningDeferral)
-import PaymentConstants from "PaymentConstants" /* 5729 */;
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 11215 */;
-import StripeNextAction from "StripeNextAction" /* 11216 */;
+// Module 11260 (OrderSigningDeferral)
+import PaymentConstants from "PaymentConstants" /* 5760 */;
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 11261 */;
+import StripeNextAction from "StripeNextAction" /* 11262 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = function _performSigningDeferralAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -108,7 +108,7 @@ let obj = function _performSigningDeferralAction() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp12) {
         c1 = 3;
         throw tmp12;

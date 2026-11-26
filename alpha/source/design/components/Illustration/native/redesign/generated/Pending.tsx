@@ -1,14 +1,14 @@
-// Module ID: 19165
-// Function ID: 19166
+// Module ID: 19228
+// Function ID: 19229
 // Name: Pending
-// Dependencies: [19, 21, 8524, 19166, 19167, 19168, 5019, 5699, 2]
+// Dependencies: [19, 21, 8566, 19229, 19230, 19231, 5050, 5730, 2]
 // Exports: Pending, getPendingSource, usePendingSource
 
-// Module 19165 (Pending)
+// Module 19228 (Pending)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5019 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import _mod8524 from "module_8524" /* 8524 */;
+import shared from "shared" /* 5050 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import _mod8566 from "module_8566" /* 8566 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/Pending.tsx");
 
 export function getPendingSource(theme) {
-  const obj = _mod8524;
+  const obj = _mod8566;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function usePendingSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8524;
+  const obj2 = _mod8566;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function Pending(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8524;
+  const obj2 = _mod8566;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

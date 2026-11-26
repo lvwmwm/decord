@@ -1,27 +1,27 @@
-// Module ID: 12866
-// Function ID: 12867
+// Module ID: 12917
+// Function ID: 12918
 // Name: FinalizeTraitPicker
-// Dependencies: [19, 17, 21, 5012, 12867, 575, 6734, 12869, 5603, 1112, 3494, 12868, 12876, 12877, 12872, 12878, 6411, 6412, 2]
+// Dependencies: [19, 17, 21, 5043, 12918, 575, 6765, 12920, 5634, 1112, 3495, 12919, 12927, 12928, 12923, 12929, 6442, 6443, 2]
 // Exports: default
 
-// Module 12866 (FinalizeTraitPicker)
+// Module 12917 (FinalizeTraitPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import _modDef3494 from "module_3494" /* 3494 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6411 */;
-import CheckpointTrait from "CheckpointTrait" /* 6412 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
-import TraitOptionList from "TraitOptionList" /* 12867 */;
-import TraitOptionItem from "TraitOptionItem" /* 12868 */;
-import TraitPicker from "TraitPicker" /* 12869 */;
-import useTraitPicker from "useTraitPicker" /* 12872 */;
-import useLastColorwayIdByOutfitIdDefault from "useLastColorwayIdByOutfitId" /* 12876 */;
-import useLastMoreTabOptionDefault from "useLastMoreTabOption" /* 12877 */;
-import FinalizeTraitTabs from "FinalizeTraitTabs" /* 12878 */;
+import _modDef3495 from "module_3495" /* 3495 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6442 */;
+import CheckpointTrait from "CheckpointTrait" /* 6443 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6765 */;
+import TraitOptionList from "TraitOptionList" /* 12918 */;
+import TraitOptionItem from "TraitOptionItem" /* 12919 */;
+import TraitPicker from "TraitPicker" /* 12920 */;
+import useTraitPicker from "useTraitPicker" /* 12923 */;
+import useLastColorwayIdByOutfitIdDefault from "useLastColorwayIdByOutfitId" /* 12927 */;
+import useLastMoreTabOptionDefault from "useLastMoreTabOption" /* 12928 */;
+import FinalizeTraitTabs from "FinalizeTraitTabs" /* 12929 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp6;
-const Text_Text = tmp6(5603);
+const Text_Text = tmp6(5634);
 function ColorwayDetails(option) {
   let combined;
   let items;
@@ -80,11 +80,11 @@ function NoOutfitColorways(minHeight) {
   }
   const obj2 = { style: items, children: items1 };
   items[1] = tmp4;
-  const obj3 = { variant: "body-lg/medium", color: "text-default", children: intl.string(_modDef3494.zsYYN1) };
+  const obj3 = { variant: "body-lg/medium", color: "text-default", children: intl.string(_modDef3495.zsYYN1) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items1 = [React3(Text, obj3), ];
-  const obj4 = { variant: "body-md/medium", color: "text-subtle", style: tmp.description, children: intl2.string(_modDef3494.BkuqWx) };
+  const obj4 = { variant: "body-md/medium", color: "text-subtle", style: tmp.description, children: intl2.string(_modDef3495.BkuqWx) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items1[1] = React3(Text2, obj4);

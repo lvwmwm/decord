@@ -1,19 +1,19 @@
-// Module ID: 13715
-// Function ID: 13716
+// Module ID: 13767
+// Function ID: 13768
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 17, 21, 5012, 575, 5240, 7476, 1112, 5603, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5271, 7507, 1112, 5634, 2]
 // Exports: default
 
-// Module 13715 (HubEmailConnectionDescriptionActionsheet)
+// Module 13767 (HubEmailConnectionDescriptionActionsheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5240 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7476 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;

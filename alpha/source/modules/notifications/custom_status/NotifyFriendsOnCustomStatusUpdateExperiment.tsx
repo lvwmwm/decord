@@ -1,11 +1,11 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 17616
+// Function ID: 17617
 // Name: NotifyFriendsOnCustomStatusUpdateExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: getNotifyFriendsOnCustomStatusUpdateExperiment, useNotifyFriendsOnCustomStatusUpdateExperiment
 
-// Module 17559 (NotifyFriendsOnCustomStatusUpdateExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 17616 (NotifyFriendsOnCustomStatusUpdateExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-11-notify-friends-on-custom-status-update", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

@@ -1,15 +1,15 @@
-// Module ID: 7266
-// Function ID: 7267
+// Module ID: 7297
+// Function ID: 7298
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1496, 1071, 21, 7267, 5573, 5242, 7268, 5073, 5177, 2]
+// Dependencies: [19, 17, 1497, 1071, 21, 7298, 5604, 5273, 7299, 5104, 5208, 2]
 // Exports: NativeTextInput, useKeyboardBlurring
 
-// Module 7266 (NativeTextInput)
+// Module 7297 (NativeTextInput)
 import Constants from "Constants" /* 1071 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7268 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7299 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1496 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1497 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -43,8 +43,7 @@ export function useKeyboardBlurring(ref) {
   }, items);
 }
 export const NativeTextInput = function TextInput(ref) {
-  let absoluteFillObject;
-  let items4;
+  let items3;
   let tmp6Result4;
   ref = ref.ref;
   const iter = Object.assign(ref, Object.assign({ ref: 0 }));
@@ -81,7 +80,7 @@ export const NativeTextInput = function TextInput(ref) {
       setNativeProps(obj);
     }
   }, items1);
-  let obj = ref1(5573);
+  let obj = ref1(5604);
   const mountLayoutEffect = obj.useMountLayoutEffect(() => {
     const current = ref1.current;
     if (current != null) {
@@ -89,10 +88,9 @@ export const NativeTextInput = function TextInput(ref) {
       current.setNativeProps(obj);
     }
   });
-  const obj2 = ref1(5242);
-  const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   const items2 = [ref1];
-  const items3 = [isScreenReaderEnabled];
+  const obj2 = ref1(5273);
+  const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   const callback = react.useCallback(() => {
     const current = ref1.current;
     let focusResult;
@@ -101,46 +99,40 @@ export const NativeTextInput = function TextInput(ref) {
     }
     return focusResult;
   }, items2);
-  const memo = react.useMemo(() => {
-    let str;
-    const obj = { display: str };
-    const merged = Object.assign(absoluteFillObject.absoluteFillObject);
-    str = "flex";
-    if (isScreenReaderEnabled) {
-      str = "none";
-    }
-    return obj;
-  }, items3);
-  ref1(5073);
+  ref1(5104);
   if (null == iter.keyboardAppearance) {
-    const tmp6Result = ref1(5177);
-    iter.keyboardAppearance = tmp6Result.isThemeDark(tmp12) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
+    const tmp6Result = ref1(5208);
+    iter.keyboardAppearance = tmp6Result.isThemeDark(tmp11) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   }
   const obj3 = { ref: tmp6Result4.mergeRefs(ref1, ref) };
-  const tmp6Result3 = ref1(5177);
-  let merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "Array", defaultValue: "analyticsLocations" }));
-  tmp6Result4 = ref1(5177);
-  const tmp16 = closure_10(closure_5, obj3);
-  let tmp18Result = tmp16;
-  const tmp14 = closure_10;
+  const tmp6Result3 = ref1(5208);
+  const merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "Array", defaultValue: "channel_id" }));
+  tmp6Result4 = ref1(5208);
+  const tmp15 = closure_10(closure_5, obj3);
+  let tmp17Result = tmp15;
+  const tmp13 = closure_10;
   if (!iter.multiline) {
-    const obj4 = { style: { flexBasis: 0, flexGrow: 1 }, children: items4 };
-    items4 = [tmp16, ];
-    let current = ref1.current;
-    let isFocusedResult;
-    const tmp18 = closure_11;
-    const tmp19 = closure_7;
-    const tmp20 = closure_4;
-    if (current != null) {
-      isFocusedResult = current.isFocused();
+    const obj4 = { style: { flexBasis: 0, flexGrow: 1 }, children: items3 };
+    items3 = [tmp15, ];
+    let tmp13Result = null;
+    const tmp17 = closure_11;
+    const tmp18 = closure_7;
+    if (!isScreenReaderEnabled) {
+      let current = ref1.current;
+      let isFocusedResult;
+      const tmp20 = closure_4;
+      if (current != null) {
+        isFocusedResult = current.isFocused();
+      }
+      let str = "auto";
+      if (isFocusedResult) {
+        str = "none";
+      }
+      const obj5 = { pointerEvents: str, onPress: callback, style: absoluteFillObject.absoluteFillObject };
+      tmp13Result = tmp13(tmp20, obj5);
     }
-    let str = "auto";
-    if (isFocusedResult) {
-      str = "none";
-    }
-    const obj5 = { pointerEvents: str, onPress: callback, style: memo };
-    items4[1] = tmp14(tmp20, obj5);
-    tmp18Result = tmp18(tmp19, obj4);
+    items3[1] = tmp13Result;
+    tmp17Result = tmp17(tmp18, obj4);
   }
-  return tmp18Result;
+  return tmp17Result;
 };

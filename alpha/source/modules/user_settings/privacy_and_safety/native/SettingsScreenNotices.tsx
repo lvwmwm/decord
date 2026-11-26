@@ -1,30 +1,30 @@
-// Module ID: 16268
-// Function ID: 16269
+// Module ID: 16319
+// Function ID: 16320
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1386, 21, 5012, 575, 8176, 16269, 16270, 5674, 6799, 6794, 16278, 16279, 2]
+// Dependencies: [19, 17, 1387, 21, 5043, 575, 8218, 16320, 16321, 5705, 6830, 6825, 16329, 16330, 2]
 // Exports: default
 
-// Module 16268 (SettingsScreenNotices)
+// Module 16319 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6799 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8176 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 16269 */;
-import AgeNoticeSettingsNoticesLazy from "AgeNoticeSettingsNoticesLazy" /* 16270 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 16278 */;
-import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 16279 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5705 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6830 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8218 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 16320 */;
+import AgeNoticeSettingsNoticesLazy from "AgeNoticeSettingsNoticesLazy" /* 16321 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 16329 */;
+import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 16330 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import UserStore from "UserStore" /* 1387 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let items;
 let items1;
 let items2;
 let tmp;
-const AgeVerificationUtils = tmp(6794);
+const AgeVerificationUtils = tmp(6825);
 function predicate() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);

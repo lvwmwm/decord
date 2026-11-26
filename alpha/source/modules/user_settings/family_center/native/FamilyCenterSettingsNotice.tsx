@@ -1,16 +1,16 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 16320
+// Function ID: 16321
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 7806, 21, 8169, 16137, 2846, 9115, 6324, 5693, 1112, 2]
+// Dependencies: [19, 7840, 21, 8211, 16188, 2847, 9157, 6355, 5724, 1112, 2]
 // Exports: default
 
-// Module 16269 (FamilyCenterSettingsNotice)
+// Module 16320 (FamilyCenterSettingsNotice)
 import Fragment from "Fragment" /* 21 */;
-import _modDef2846 from "module_2846" /* 2846 */;
-import LayerActionCreators from "LayerActionCreators" /* 6324 */;
-import Constants from "Constants" /* 7806 */;
-import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9115 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16137 */;
+import _modDef2847 from "module_2847" /* 2847 */;
+import LayerActionCreators from "LayerActionCreators" /* 6355 */;
+import Constants from "Constants" /* 7840 */;
+import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9157 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16188 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,10 +20,10 @@ const result = size.fileFinishedImporting("modules/user_settings/family_center/n
 
 export default function FamilyCenterSettingsParentalControlsNotice() {
   let activeLinkUserIds;
-  let obj = activeLinkUserIds(8169);
+  let obj = activeLinkUserIds(8211);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   let tmp = SafetySettingsNoticeDefault;
-  return <tmp label={_modDef2846.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {
+  return <tmp label={_modDef2847.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {
     let length;
     const tmp = openLinkedUsersChannelDefault;
     tmp(activeLinkUserIds, LayerActionCreators.popLayer, () => {
@@ -31,7 +31,7 @@ export default function FamilyCenterSettingsParentalControlsNotice() {
       activeLinkUserIds(dependencyMap[8]);
       const intl = activeLinkUserIds(dependencyMap[9]).intl;
       const obj = { count: length.length };
-      return presentFailedToast(intl.formatToPlainString(_modDef2846.D1BwNC, obj));
+      return presentFailedToast(intl.formatToPlainString(_modDef2847.D1BwNC, obj));
     });
   }} count={activeLinkUserIds.length} />;
 };

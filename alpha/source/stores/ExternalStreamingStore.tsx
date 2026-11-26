@@ -1,19 +1,19 @@
-// Module ID: 14710
-// Function ID: 14711
+// Module ID: 14763
+// Function ID: 14764
 // Name: ExternalStreamingStore
-// Dependencies: [5, 7431, 5069, 1071, 1088, 1284, 7501, 572, 7620, 6147, 1343, 504, 2]
+// Dependencies: [5, 7462, 5100, 1071, 1088, 1285, 7532, 572, 7651, 6178, 1344, 504, 2]
 
-// Module 14710 (ExternalStreamingStore)
+// Module 14763 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import _modDef1343 from "module_1343" /* 1343 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7501 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import _modDef1344 from "module_1344" /* 1344 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7532 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7431 */;
-import StreamerModeStore from "StreamerModeStore" /* 5069 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7462 */;
+import StreamerModeStore from "StreamerModeStore" /* 5100 */;
 import size from "module_2" /* 2 */;
 
 let _null, c7, c8, closure_11, constants;
@@ -126,7 +126,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c6;
@@ -315,7 +315,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c4;
@@ -528,7 +528,7 @@ const prototype2 = ExternalStreamingStore.prototype;
 ExternalStreamingStore.displayName = "ExternalStreamingStore";
 obj = {
   STREAMING_UPDATE: function streamUpdate(stream) {
-    if (_modDef1343(stream.stream, stream)) {
+    if (_modDef1344(stream.stream, stream)) {
       return false;
     } else {
       stream = stream.stream;

@@ -1,21 +1,21 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 14136
+// Function ID: 14137
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5012, 575, 1653, 11959, 5222, 1186, 14085, 5272, 1706, 7449, 5575, 14086, 14076, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 12007, 5253, 1186, 14137, 5303, 1707, 7480, 5606, 14138, 14128, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 14084 (MediaModalOverlayFooter)
+// Module 14136 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11959 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 12007 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_0, closure_1, closure_2, flag, flag2, flag3, num3, obj1, result2, result3, set, str, str2, tmp23, tmp39, translationY;
@@ -25,10 +25,10 @@ let metroRequire;
 let obj2;
 let tmp;
 let tmp3;
-const _mod1653 = tmp(1653);
+const _mod1654 = tmp(1654);
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "analyticsLocations" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "top" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "analyticsLocations" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;
@@ -407,7 +407,7 @@ export function MediaModalOverlayFooter(channelId) {
     const items = [closure_17, , ];
     const onStart = FlingResult.direction(LegacyBaseButton.Directions.UP).onStart;
     FlingResult.direction(LegacyBaseButton.Directions.UP);
-    items[1] = _mod1706.scheduleOnRN;
+    items[1] = _mod1707.scheduleOnRN;
     items[2] = callback2;
     let c0;
     let c1;
@@ -453,7 +453,7 @@ export function MediaModalOverlayFooter(channelId) {
     items[5] = native.STANDARD_EASING;
     items[6] = closure_18;
     items[7] = 0;
-    items[8] = _mod1706.scheduleOnRN;
+    items[8] = _mod1707.scheduleOnRN;
     items[9] = callback2;
     let c0;
     let c1;
@@ -560,7 +560,7 @@ export function MediaModalOverlayFooter(channelId) {
     const onUpdate = maxPointersResult.activeOffsetY(10).onUpdate;
     const tmp4 = sharedValue1;
     maxPointersResult.activeOffsetY(10);
-    items[11] = _mod1706.scheduleOnRN;
+    items[11] = _mod1707.scheduleOnRN;
     items[12] = closure_6;
     items[13] = 3;
     items[14] = 40;
@@ -625,12 +625,12 @@ export function MediaModalOverlayFooter(channelId) {
     let items2 = [closure_23, tmp5, 0.75, , , , , , , , , , , , ];
     const onEnd = onUpdate(MediaModalOverlayFooterTsx11).onEnd;
     onUpdate(MediaModalOverlayFooterTsx11);
-    items2[3] = _mod1706.scheduleOnRN;
+    items2[3] = _mod1707.scheduleOnRN;
     items2[4] = closure_6;
     items2[5] = sharedValue;
     items2[6] = 0;
     items2[7] = tmp4;
-    items2[8] = _mod1653.withDelay;
+    items2[8] = _mod1654.withDelay;
     items2[9] = timing_timing.withTiming;
     items2[10] = c9;
     items2[11] = native.STANDARD_EASING;

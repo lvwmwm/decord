@@ -1,12 +1,12 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 12619
+// Function ID: 12620
 // Name: CheckpointSessionAnalyticsManager
-// Dependencies: [12571, 1268, 6736, 2]
+// Dependencies: [12620, 1269, 6767, 2]
 
-// Module 12570 (CheckpointSessionAnalyticsManager)
-import v1 from "v1" /* 1268 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6736 */;
-import CheckpointStore from "CheckpointStore" /* 12571 */;
+// Module 12619 (CheckpointSessionAnalyticsManager)
+import v1 from "v1" /* 1269 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6767 */;
+import CheckpointStore from "CheckpointStore" /* 12620 */;
 import size from "module_2" /* 2 */;
 
 class CheckpointSessionAnalyticsManager {

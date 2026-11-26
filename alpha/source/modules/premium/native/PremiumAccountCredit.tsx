@@ -1,20 +1,20 @@
-// Module ID: 9322
-// Function ID: 9323
+// Module ID: 9364
+// Function ID: 9365
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 6328, 1071, 21, 5012, 575, 7488, 2173, 1112, 3690, 9323, 5603, 504, 12, 2]
+// Dependencies: [19, 17, 6359, 1071, 21, 5043, 575, 7519, 2174, 1112, 3691, 9365, 5634, 504, 12, 2]
 // Exports: default
 
-// Module 9322 (PremiumAccountCredit)
+// Module 9364 (PremiumAccountCredit)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
-import PremiumUtils from "PremiumUtils" /* 2173 */;
-import GameIcon from "GameIcon" /* 7488 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import GameIcon from "GameIcon" /* 7519 */;
 import react from "react" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 6328 */;
+import EntitlementStore from "EntitlementStore" /* 6359 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -60,7 +60,7 @@ function AccountCreditTier(arg0) {
   }
   if (hasPremiumGroup) {
     const intl3 = tmp2(1112).intl;
-    stringResult = intl3.string(tmp5(3690)["5asczk"]);
+    stringResult = intl3.string(tmp5(3691)["5asczk"]);
   } else {
     if (null != currentSubscription) {
       if (currentSubscription.planId === planId) {
@@ -107,7 +107,7 @@ function AccountCreditTier(arg0) {
   if (result1) {
     const obj7 = { style: tmp.boostIcon, children: metroRequire(BoostGemIcon, obj8) };
     obj8 = { size: "md", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    BoostGemIcon = tmp2(9323).BoostGemIcon;
+    BoostGemIcon = tmp2(9365).BoostGemIcon;
     tmp22Result = tmp22(tmp20, obj7);
     tmp25 = tmp22;
   } else {
@@ -119,18 +119,18 @@ function AccountCreditTier(arg0) {
   items1 = [tmp22Result, , ];
   const obj10 = { style: tmp.textContainer, children: items2 };
   const obj11 = { style: tmp.headerText, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl4.format(intl6.t.LzobT9, { planName: displayName }) };
-  const Text = tmp2(5603).Text;
+  const Text = tmp2(5634).Text;
   intl4 = tmp2(1112).intl;
   items2 = [tmp25(Text, obj11), ];
   let tmp25Result = !tmp16;
   if (tmp25Result) {
     const obj12 = { style: tmp.subText, variant: "body-xs/medium", color: "text-default", children: stringResult };
-    tmp25Result = tmp25(tmp2(5603).Text, obj12);
+    tmp25Result = tmp25(tmp2(5634).Text, obj12);
   }
   items2[1] = tmp25Result;
   items1[1] = metroImportDefault(View, obj10);
   const obj13 = { style: tmp.timeText, variant: "body-md/medium", color: "text-default", children: intl5.format(intl6.t["ess/xl"], { count: months }) };
-  const Text2 = tmp2(5603).Text;
+  const Text2 = tmp2(5634).Text;
   intl5 = tmp2(1112).intl;
   items1[2] = tmp25(Text2, obj13);
   return metroImportDefault(View, obj6);
@@ -193,7 +193,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       c3 = valueResult;
       const obj2 = { style, children: items1 };
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "body-sm/medium", color: "text-default", children: intl.string(currentSubscription(1112).t.YugZY0) };
-      const Text = tmp2(5603).Text;
+      const Text = tmp2(5634).Text;
       intl = tmp2(1112).intl;
       items1 = [closure_6(Text, obj3), , , ];
       const obj4 = {
@@ -209,7 +209,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       keys = Object.keys(valueResult);
       items1[1] = closure_6(c3, obj4);
       const obj5 = { style: tmp.creditDescription, variant: "body-sm/medium", children: intl2.string(currentSubscription(1112).t.Z5b2Gf) };
-      const Text2 = tmp2(5603).Text;
+      const Text2 = tmp2(5634).Text;
       intl2 = tmp2(1112).intl;
       items1[2] = closure_6(Text2, obj5);
       let tmp9Result = null;
@@ -220,7 +220,7 @@ export default function PremiumAccountCredit(currentSubscription) {
         tmp9Result = null;
         if (currentSubscription.isPurchasedExternally) {
           const obj6 = { style: tmp.creditDescription, variant: "body-sm/medium", children: intl3.string(currentSubscription(1112).t.azRP0E) };
-          const Text3 = tmp2(5603).Text;
+          const Text3 = tmp2(5634).Text;
           intl3 = tmp2(1112).intl;
           tmp9Result = tmp9(Text3, obj6);
         }

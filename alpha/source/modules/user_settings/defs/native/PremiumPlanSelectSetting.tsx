@@ -1,13 +1,13 @@
-// Module ID: 16445
-// Function ID: 16446
+// Module ID: 16496
+// Function ID: 16497
 // Name: PremiumPlanSelectSetting
-// Dependencies: [9513, 1071, 11914, 1112, 16446, 2]
+// Dependencies: [9555, 1071, 11962, 1112, 16497, 2]
 
-// Module 16445 (PremiumPlanSelectSetting)
+// Module 16496 (PremiumPlanSelectSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

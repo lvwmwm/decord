@@ -1,13 +1,13 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12419
+// Function ID: 12420
 // Name: TextInputActionComponent
-// Dependencies: [32, 19, 21, 8782, 12370, 2117, 7250, 7410, 7244, 2]
+// Dependencies: [32, 19, 21, 8824, 12420, 2118, 7281, 7441, 7275, 2]
 
-// Module 12369 (TextInputActionComponent)
+// Module 12419 (TextInputActionComponent)
 import Fragment from "Fragment" /* 21 */;
-import Server from "Server" /* 2117 */;
-import ComponentStateContext from "ComponentStateContext" /* 8782 */;
-import InteractionModalUtils from "InteractionModalUtils" /* 12370 */;
+import Server from "Server" /* 2118 */;
+import ComponentStateContext from "ComponentStateContext" /* 8824 */;
+import InteractionModalUtils from "InteractionModalUtils" /* 12420 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -68,17 +68,17 @@ const memoResult = react.memo(function TextInputActionComponent(type) {
   }
   items = [type, executeStateUpdate];
   if (Server.TextInputComponentStyle.SMALL === style) {
-    const TextField = tmp(7250).TextField;
+    const TextField = tmp(7281).TextField;
     const merged = Object.assign(obj2);
     tmp8 = <TextField />;
   } else if (Server.TextInputComponentStyle.PARAGRAPH === style) {
-    const TextAreaField = tmp(7410).TextAreaField;
+    const TextAreaField = tmp(7441).TextAreaField;
     const merged1 = Object.assign(obj2);
     tmp8 = <TextAreaField />;
   }
   let tmp17 = tmp8;
   if (null != label) {
-    tmp17 = jsx(tmp(7244).Input, { label, required, errorMessage: error, children: tmp8 });
+    tmp17 = jsx(tmp(7275).Input, { label, required, errorMessage: error, children: tmp8 });
   }
   return tmp17;
 });

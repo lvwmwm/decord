@@ -1,15 +1,15 @@
-// Module ID: 12327
-// Function ID: 12328
+// Module ID: 12377
+// Function ID: 12378
 // Name: useConjureSharedProjectLaunch
-// Dependencies: [5, 32, 19, 4883, 504, 11950, 12322, 2]
+// Dependencies: [5, 32, 19, 4914, 504, 11998, 12372, 2]
 // Exports: default
 
-// Module 12327 (useConjureSharedProjectLaunch)
-import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11950 */;
+// Module 12377 (useConjureSharedProjectLaunch)
+import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11998 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4883 */;
+import GuildStore from "GuildStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -69,7 +69,7 @@ export default function useConjureSharedProjectLaunch(arg0, arg1, guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;

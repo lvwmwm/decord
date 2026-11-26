@@ -1,18 +1,18 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 14841
+// Function ID: 14842
 // Name: sampleWithUserId
-// Dependencies: [1250, 2]
+// Dependencies: [1251, 2]
 // Exports: sampleWithUserId
 
-// Module 14788 (sampleWithUserId)
-import _modDef1250 from "module_1250" /* 1250 */;
+// Module 14841 (sampleWithUserId)
+import _modDef1251 from "module_1251" /* 1251 */;
 import size from "module_2" /* 2 */;
 
 let c2 = 2147483647;
 const result = size.fileFinishedImporting("modules/app_analytics/sampleWithUserId.tsx");
 
 export function sampleWithUserId(id, arg1) {
-  const obj = _modDef1250;
+  const obj = _modDef1251;
   const v3Result = obj.v3(String(id));
   let sum = v3Result;
   if (v3Result < 0) {

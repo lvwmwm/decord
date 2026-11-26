@@ -1,18 +1,18 @@
-// Module ID: 13926
-// Function ID: 13927
+// Module ID: 13978
+// Function ID: 13979
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 5012, 575, 5226, 13927, 2119, 1112, 5603, 2]
+// Dependencies: [17, 21, 5043, 575, 5257, 13979, 2120, 1112, 5634, 2]
 // Exports: default
 
-// Module 13926 (BoostingCountDownPill)
+// Module 13978 (BoostingCountDownPill)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import Text_Text from "Text/Text" /* 5603 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import Text_Text from "Text/Text" /* 5634 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,7 +26,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13927, dependencyMap.paths);
+  const tmp2 = asyncRequire(13979, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }

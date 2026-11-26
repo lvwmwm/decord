@@ -1,23 +1,23 @@
-// Module ID: 11669
-// Function ID: 11670
+// Module ID: 11717
+// Function ID: 11718
 // Name: ForLaterScreen
-// Dependencies: [32, 19, 17, 11670, 21, 5012, 575, 1653, 5613, 5614, 11671, 11666, 504, 6348, 6349, 6085, 1263, 1088, 11675, 11691, 7451, 2]
+// Dependencies: [32, 19, 17, 11718, 21, 5043, 575, 1654, 5644, 5645, 11719, 11714, 504, 6379, 6380, 6116, 1264, 1088, 11723, 11739, 7482, 2]
 
-// Module 11669 (ForLaterScreen)
+// Module 11717 (ForLaterScreen)
 import nativeDefault from "native" /* 575 */;
-import _modDef1653 from "module_1653" /* 1653 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6085 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6348 */;
-import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 11671 */;
-import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 11675 */;
-import ForLaterIntroDefault from "ForLaterIntro" /* 11691 */;
+import _modDef1654 from "module_1654" /* 1654 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6116 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6379 */;
+import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 11719 */;
+import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 11723 */;
+import ForLaterIntroDefault from "ForLaterIntro" /* 11739 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11670 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11718 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp2;
-const springPresets = tmp2(5614);
+const springPresets = tmp2(5645);
 function keyExtractor(saveData) {
   return saveData.saveData.messageId;
 }
@@ -55,7 +55,7 @@ function ForLaterPage(type) {
   const tmp4 = useSavedMessagesForPageDefault(type);
   ({ savedMessages, fetchState } = tmp4);
   const loadMore = tmp4.loadMore;
-  const LOADING = throttledNow(11666).BookmarksFetchState.LOADING;
+  const LOADING = throttledNow(11714).BookmarksFetchState.LOADING;
   let obj = throttledNow(504);
   const items = [SavedMessagesStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -63,12 +63,12 @@ function ForLaterPage(type) {
     return obj;
   });
   ({ overdueReminderCount, bookmarkCount } = stateFromStoresObject);
-  if (type !== throttledNow(11666).SavedMessageSortTypes.BOOKMARK) {
+  if (type !== throttledNow(11714).SavedMessageSortTypes.BOOKMARK) {
     bookmarkCount = savedMessages.length;
   }
   const tmp2Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp2Result(tmp2(6349).FOR_LATER_POPOUT).analyticsLocations;
-  const obj2 = { type: throttledNow(1263).ImpressionTypes.MODAL, name: throttledNow(1263).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: { tab_type: type, total_count: bookmarkCount, overdue_count: overdueReminderCount } };
+  const analyticsLocations = tmp2Result(tmp2(6380).FOR_LATER_POPOUT).analyticsLocations;
+  const obj2 = { type: throttledNow(1264).ImpressionTypes.MODAL, name: throttledNow(1264).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: { tab_type: type, total_count: bookmarkCount, overdue_count: overdueReminderCount } };
   const items1 = [bookmarkCount, overdueReminderCount];
   const tmp2Result2 = useTrackImpressionDefault;
   tmp2Result2(obj2, {}, items1);
@@ -89,9 +89,9 @@ function ForLaterPage(type) {
   if (0 === savedMessages.length) {
     if (fetchState !== LOADING) {
       let tmp20;
-      if (fetchState !== throttledNow(11666).BookmarksFetchState.LOADED_HAS_MORE) {
+      if (fetchState !== throttledNow(11714).BookmarksFetchState.LOADED_HAS_MORE) {
         const obj3 = { value: analyticsLocations, children: closure_8(ForLaterIntroDefault, obj4) };
-        const AnalyticsLocationProvider = tmp5(6348).AnalyticsLocationProvider;
+        const AnalyticsLocationProvider = tmp5(6379).AnalyticsLocationProvider;
         obj4 = { type };
         tmp20 = closure_8(AnalyticsLocationProvider, obj3);
       }
@@ -102,10 +102,10 @@ function ForLaterPage(type) {
   } else {
     const obj6 = { value: analyticsLocations, children: closure_8(tmp24, obj7) };
     obj7 = { style: tmp.listContainer, children: closure_8(FlashList, obj8) };
-    const AnalyticsLocationProvider2 = tmp5(6348).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider2 = tmp5(6379).AnalyticsLocationProvider;
     obj8 = { data: savedMessages, renderItem: tmp15, contentContainerStyle: tmp.cardContainer, keyExtractor, onScroll: handleScroll, onEndReached: loadMore, ListFooterComponent: tmp23Result };
     tmp23Result = null;
-    FlashList = tmp5(7451).FlashList;
+    FlashList = tmp5(7482).FlashList;
     tmp24 = closure_6;
     if (fetchState === LOADING) {
       const obj9 = { style: tmp.loading };
@@ -133,7 +133,7 @@ const memoResult = react.memo(function ForLaterScreen(type) {
   type = type.type;
   const tmp = closure_10();
   let tmp2 = dependencyMap;
-  let obj = sharedValue(1653);
+  let obj = sharedValue(1654);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const callback = react.useCallback((nativeEvent) => {
@@ -149,7 +149,7 @@ const memoResult = react.memo(function ForLaterScreen(type) {
   const items1 = [closure_11, sharedValue];
   let c0;
   [tmp5, tmp6] = items1;
-  const obj2 = sharedValue(1653);
+  const obj2 = sharedValue(1654);
   class ForLaterScreenTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -164,7 +164,7 @@ const memoResult = react.memo(function ForLaterScreen(type) {
   const animatedStyle = obj2.useAnimatedStyle(ForLaterScreenTsx1);
   const obj4 = { style: items3 };
   items3 = [tmp.headerBorder, animatedStyle];
-  items4 = [closure_8(_modDef1653.View, obj4), closure_8(ForLaterPage, { type, handleScroll: callback })];
+  items4 = [closure_8(_modDef1654.View, obj4), closure_8(ForLaterPage, { type, handleScroll: callback })];
   return closure_9(closure_6, obj3);
 });
 size = size_mod;

@@ -1,37 +1,15 @@
 // Module ID: 5444
 // Function ID: 5445
-// Dependencies: [19, 17, 21, 5445, 5446]
+// Dependencies: [5445, 5447, 5448, 5449]
 
 // Module 5444
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import react_native2 from "react-native" /* 5445 */;
-import react_mod from "react" /* 19 */;
+import _modDef5445 from "module_5445" /* 5445 */;
+import _modDef5447 from "module_5447" /* 5447 */;
+import _modDef5448 from "module_5448" /* 5448 */;
+import _modDef5449 from "module_5449" /* 5449 */;
 
-let react = react_mod;
-const useMemo = react.useMemo;
-const memo = react.memo;
-react = react_mod;
-const StyleSheet = react_native.StyleSheet;
-const jsx = Fragment.jsx;
-const memoResult = memo((arg0) => {
-  let animatedIndex;
-  let animatedPosition;
-  let backgroundComponent;
-  let backgroundStyle;
-  ({ backgroundComponent, backgroundStyle } = arg0);
-  let items = [backgroundStyle];
-  ({ animatedIndex, animatedPosition } = arg0);
-  const style = useMemo(() => {
-    const flatten = StyleSheet.flatten;
-    const items = [react_native2.styles.container, backgroundStyle];
-    return flatten(items);
-  }, items);
-  if (backgroundComponent == null) {
-    backgroundComponent = backgroundStyle(5446).BottomSheetBackground;
-  }
-  return <backgroundComponent pointerEvents="none" animatedIndex={animatedIndex} animatedPosition={animatedPosition} style={style} />;
-});
-memoResult.displayName = "BottomSheetBackgroundContainer";
 
-export const BottomSheetBackgroundContainer = memoResult;
+export const TouchableHighlight = _modDef5445;
+export const TouchableNativeFeedback = _modDef5447;
+export const TouchableOpacity = _modDef5448;
+export const TouchableWithoutFeedback = _modDef5449;

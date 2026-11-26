@@ -1,14 +1,14 @@
-// Module ID: 14338
-// Function ID: 14339
+// Module ID: 14390
+// Function ID: 14391
 // Name: GuildDiscoverySystemMessage
-// Dependencies: [4861, 4883, 1112, 14321, 2]
+// Dependencies: [4892, 4914, 1112, 14373, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
-// Module 14338 (GuildDiscoverySystemMessage)
+// Module 14390 (GuildDiscoverySystemMessage)
 import intl3 from "intl" /* 1112 */;
-import createCommonMessageDefault from "createCommonMessage" /* 14321 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
+import createCommonMessageDefault from "createCommonMessage" /* 14373 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx");

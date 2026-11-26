@@ -1,27 +1,27 @@
-// Module ID: 5730
-// Function ID: 5731
+// Module ID: 5761
+// Function ID: 5762
 // Name: findCodedLinks
-// Dependencies: [5731, 1071, 1073, 5637, 1381, 5734, 5735, 1375, 5736, 5732, 5743, 5748, 5750, 5754, 5751, 5755, 5756, 5757, 2]
+// Dependencies: [5762, 1071, 1073, 5668, 1382, 5765, 5766, 1376, 5767, 5763, 5774, 5779, 5781, 5785, 5782, 5786, 5787, 5788, 2]
 // Exports: containsCodedLink, default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, parseUserWishlistCodedLink, remainingPathFromDiscordHostMatch, tryParseSocialLayerStorefrontPath
 
-// Module 5730 (findCodedLinks)
+// Module 5761 (findCodedLinks)
 import Constants from "Constants" /* 1071 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1375 */;
-import urlParse from "urlParse" /* 1381 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5732 */;
-import CodedLink from "CodedLink" /* 5734 */;
-import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 5735 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 5736 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 5743 */;
-import Authorize from "Authorize" /* 5748 */;
-import _mod5751 from "module_5751" /* 5751 */;
-import _slicedToArray from "_slicedToArray" /* 5754 */;
-import storefrontCodedLink2 from "storefrontCodedLink" /* 5755 */;
-import conjureProjectLink from "conjureProjectLink" /* 5756 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5757 */;
-import InviteStore from "InviteStore" /* 5731 */;
-import RegexUtils_mod from "RegexUtils" /* 5637 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1376 */;
+import urlParse from "urlParse" /* 1382 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5763 */;
+import CodedLink from "CodedLink" /* 5765 */;
+import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 5766 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 5767 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 5774 */;
+import Authorize from "Authorize" /* 5779 */;
+import _mod5782 from "module_5782" /* 5782 */;
+import _slicedToArray from "_slicedToArray" /* 5785 */;
+import storefrontCodedLink2 from "storefrontCodedLink" /* 5786 */;
+import conjureProjectLink from "conjureProjectLink" /* 5787 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5788 */;
+import InviteStore from "InviteStore" /* 5762 */;
+import RegexUtils_mod from "RegexUtils" /* 5668 */;
 import size from "module_2" /* 2 */;
 
 let WEBAPP_ENDPOINT, invite, set;
@@ -31,7 +31,7 @@ let obj17;
 let obj20;
 let obj4;
 let obj7;
-const f88351 = (arg0, arg1, arg2, arg3) => {
+const f88596 = (arg0, arg1, arg2, arg3) => {
   let combined = arg0;
   if (null == arg2) {
     const _HermesInternal = HermesInternal;
@@ -55,7 +55,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
         let templateHostRemainingPath;
         let tmp101;
         let url;
-        const f88353 = (item) => {
+        const f88598 = (item) => {
           let parts;
           if (typeof item === "string") {
             parts = item.split(",");
@@ -370,7 +370,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
               const skuId = tmp99.skuId;
               let parsed = null;
               if (null != query) {
-                const tmp4Result24 = _mod5751;
+                const tmp4Result24 = _mod5782;
                 parsed = tmp4Result24.parse(query);
               }
               if (typeof skuId === "string") {
@@ -389,7 +389,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                   const _Array = Array;
                   if (Array.isArray(skuIds)) {
                     const tmp4Result27 = storefrontCodedLink2;
-                    result1 = tmp4Result27.normalizeStorefrontSkuIds(skuIds.flatMap(f88353));
+                    result1 = tmp4Result27.normalizeStorefrontSkuIds(skuIds.flatMap(f88598));
                   } else {
                     result1 = [];
                   }
@@ -519,7 +519,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
               let applicationId2;
               let parsed1 = null;
               if (null != query) {
-                const tmp4Result30 = _mod5751;
+                const tmp4Result30 = _mod5782;
                 parsed1 = tmp4Result30.parse(query);
               }
               let str16;
@@ -553,7 +553,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                       const _Array2 = Array;
                       if (Array.isArray(skuIds1)) {
                         const tmp4Result33 = storefrontCodedLink2;
-                        result3 = tmp4Result33.normalizeStorefrontSkuIds(skuIds1.flatMap(f88353));
+                        result3 = tmp4Result33.normalizeStorefrontSkuIds(skuIds1.flatMap(f88598));
                       } else {
                         result3 = [];
                       }
@@ -1009,7 +1009,7 @@ function findCodedLinks(str) {
   if (null == str) {
     return [];
   } else {
-    str = str.replace(regExp2, f88351);
+    str = str.replace(regExp2, f88596);
     const tmp4 = findCodedLinkUrlsDefault(str);
     let match = str.match(re25);
     const concat = tmp4.concat;
@@ -1264,7 +1264,7 @@ export function findCodedLink(sanitizeUrlResult) {
   if (null == sanitizeUrlResult) {
     items = [];
   } else {
-    const str = sanitizeUrlResult.replace(regExp2, f88351);
+    const str = sanitizeUrlResult.replace(regExp2, f88596);
     const tmp4 = findCodedLinkUrlsDefault(str);
     let match = str.match(re25);
     const concat = tmp4.concat;
@@ -1287,7 +1287,7 @@ export function containsCodedLink(displayTarget) {
       items = [];
     } else {
       let tmp4 = regExp2;
-      const str2 = str.replace(regExp2, f88351);
+      const str2 = str.replace(regExp2, f88596);
       let tmp5 = importDefault;
       const tmp6 = findCodedLinkUrlsDefault(str2);
       let match = str2.match(re25);

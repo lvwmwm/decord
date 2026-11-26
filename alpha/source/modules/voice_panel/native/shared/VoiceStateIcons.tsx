@@ -1,23 +1,23 @@
-// Module ID: 8606
-// Function ID: 8607
+// Module ID: 8648
+// Function ID: 8649
 // Name: VoiceStateIcons
-// Dependencies: [19, 17, 21, 5012, 575, 8607, 8609, 8611, 8613, 8615, 1254, 1186, 7912, 8617, 8618, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 8649, 8651, 8653, 8655, 8657, 1255, 1186, 7946, 8659, 8660, 2]
 
-// Module 8606 (VoiceStateIcons)
+// Module 8648 (VoiceStateIcons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import GlobalUtils from "GlobalUtils" /* 1254 */;
-import inlineStyles from "inlineStyles" /* 7912 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8607 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 8611 */;
-import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 8613 */;
-import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 8615 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8617 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8618 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import inlineStyles from "inlineStyles" /* 7946 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8649 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 8653 */;
+import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 8655 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 8657 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8659 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8660 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -58,7 +58,7 @@ function VideoDisabledSvgIcon(size) {
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "top" } };
+let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "r" } };
 obj2 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
@@ -75,7 +75,7 @@ const memoResult = react.memo(function MuteDeafenIcon(arg0) {
   if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED_SERVER === state) {
     const items = [style, ];
     let redTint = null;
-    const HeadphonesDenyIcon = tmp2(8609).HeadphonesDenyIcon;
+    const HeadphonesDenyIcon = tmp2(8651).HeadphonesDenyIcon;
     const tmp10 = React3;
     if (!alwaysWhite) {
       redTint = tmp.redTint;
@@ -89,7 +89,7 @@ const memoResult = react.memo(function MuteDeafenIcon(arg0) {
   } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_SERVER === state) {
     const items1 = [style, ];
     let redTint1 = null;
-    const MicrophoneDenyIcon = tmp2(8613).MicrophoneDenyIcon;
+    const MicrophoneDenyIcon = tmp2(8655).MicrophoneDenyIcon;
     const tmp7 = React3;
     if (!alwaysWhite) {
       redTint1 = tmp.redTint;

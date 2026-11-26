@@ -1,11 +1,11 @@
-// Module ID: 13807
-// Function ID: 13808
+// Module ID: 13859
+// Function ID: 13860
 // Name: BadgeSocialComparisonMobileExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: useBadgeSocialComparisonMobileEnabled
 
-// Module 13807 (BadgeSocialComparisonMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 13859 (BadgeSocialComparisonMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-11-badge-social-comparison-mobile", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

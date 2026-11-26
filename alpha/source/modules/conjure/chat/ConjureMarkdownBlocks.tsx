@@ -1,10 +1,10 @@
-// Module ID: 18526
-// Function ID: 18527
+// Module ID: 18589
+// Function ID: 18590
 // Name: ConjureMarkdownBlocks
 // Dependencies: [2]
 // Exports: splitMarkdownBlocks
 
-// Module 18526 (ConjureMarkdownBlocks)
+// Module 18589 (ConjureMarkdownBlocks)
 import size from "module_2" /* 2 */;
 
 const re0 = /^( *)([-*]|\d+\.) +(.*)$/;

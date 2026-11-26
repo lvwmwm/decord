@@ -1,12 +1,12 @@
-// Module ID: 15268
-// Function ID: 15269
+// Module ID: 15318
+// Function ID: 15319
 // Name: GameOrganizationStore
-// Dependencies: [11870, 504, 572, 2]
+// Dependencies: [11918, 504, 572, 2]
 
-// Module 15268 (GameOrganizationStore)
+// Module 15318 (GameOrganizationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GameOrganizationModels from "GameOrganizationModels" /* 11870 */;
+import GameOrganizationModels from "GameOrganizationModels" /* 11918 */;
 import size from "module_2" /* 2 */;
 
 const React2 = {};

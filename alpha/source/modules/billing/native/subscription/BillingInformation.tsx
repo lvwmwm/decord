@@ -1,10 +1,10 @@
-// Module ID: 9319
-// Function ID: 9320
+// Module ID: 9361
+// Function ID: 9362
 // Name: BillingInformation
-// Dependencies: [5, 1071, 9311, 2173, 1358, 1112, 9237, 2]
+// Dependencies: [5, 1071, 9353, 2174, 1359, 1112, 9279, 2]
 // Exports: useBillingInformationNative
 
-// Module 9319 (BillingInformation)
+// Module 9361 (BillingInformation)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -36,10 +36,10 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
   if (null == subscriptionPeriodStart) {
     return null;
   } else {
-    const tmp2Result = tmp2(2173);
+    const tmp2Result = tmp2(2174);
     const billingInformationString = tmp2Result.getBillingInformationString(subscription, subscriptionPeriodStart, tmp, flag, fractionalPremiumInfo);
     let formatResult = billingInformationString;
-    const tmp2Result2 = tmp2(1358);
+    const tmp2Result2 = tmp2(1359);
     if (tmp2Result2.isIOS()) {
       formatResult = billingInformationString;
       if (subscription.isPurchasedViaApple) {
@@ -69,7 +69,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: "+95" };
                 }
               } else {
                 try {
@@ -98,7 +98,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: "+95" };
                   }
                 } catch (tmp6) {
                   c0 = 3;

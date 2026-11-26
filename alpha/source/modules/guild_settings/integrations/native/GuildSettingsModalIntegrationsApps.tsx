@@ -1,20 +1,20 @@
-// Module ID: 19917
-// Function ID: 19918
+// Module ID: 19981
+// Function ID: 19982
 // Name: GuildSettingsModalIntegrationsApps
-// Dependencies: [19, 21, 5012, 575, 1112, 6109, 5699, 1412, 6113, 6127, 2]
+// Dependencies: [19, 21, 5043, 575, 1112, 6140, 5730, 1413, 6144, 6158, 2]
 // Exports: default
 
-// Module 19917 (GuildSettingsModalIntegrationsApps)
+// Module 19981 (GuildSettingsModalIntegrationsApps)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import TableRowGroup2 from "TableRowGroup" /* 6109 */;
-import TableRow3 from "TableRow" /* 6113 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 6127 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import TableRowGroup2 from "TableRowGroup" /* 6140 */;
+import TableRow3 from "TableRow" /* 6144 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 6158 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let application;

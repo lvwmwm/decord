@@ -1,11 +1,11 @@
-// Module ID: 9902
-// Function ID: 9903
+// Module ID: 9944
+// Function ID: 9945
 // Name: useMediaModalFooterAction
-// Dependencies: [560, 1262, 2]
+// Dependencies: [560, 1263, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 9902 (useMediaModalFooterAction)
-import react_native from "react-native" /* 1262 */;
+// Module 9944 (useMediaModalFooterAction)
+import react_native from "react-native" /* 1263 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -27,5 +27,5 @@ export function setMediaModalFooterAction(footerAction) {
 export function clearMediaModalFooterAction() {
   let state;
   const obj = react_native;
-  obj.batchUpdates(() => state.setState({ footerAction: "top" }));
+  obj.batchUpdates(() => state.setState({ footerAction: "r" }));
 }

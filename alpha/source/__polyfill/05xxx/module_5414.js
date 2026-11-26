@@ -1,142 +1,102 @@
 // Module ID: 5414
 // Function ID: 5415
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5415]
+// Dependencies: [5, 32, 19, 17]
+// Exports: useIsScreenReaderEnabled
 
 // Module 5414
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5415 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import metroRequire from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-const react = react2;
+let c4, c5;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+let c2;
+let c3;
+({ useEffect: c2, useState: c3 } = react);
+const AccessibilityInfo = react_native.AccessibilityInfo;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let closure_3 = ["style"];
-const Component = react2.Component;
-const View = react_native.View;
-const jsx = Fragment.jsx;
-class TouchableHighlight {
-  constructor(arg0) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, TouchableHighlight);
-    const items = [arg0];
-    const obj = _getPrototypeOf(TouchableHighlight);
-    let tmp3 = metroRequire;
-    const tmp2 = _getPrototypeOf;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
+export function useIsScreenReaderEnabled() {
+  let closure_0;
+  let first;
+  [first, closure_0] = closure_3(false);
+  const tmp3 = closure_2(() => {
+    function checkStatus() {
+      return closure_0(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    tmp3Result.showUnderlay = () => {
-      let obj3;
-      let obj4;
-      if (closure_0.hasPressHandler()) {
-        const obj2 = { extraChildStyle: obj3, extraUnderlayStyle: obj4 };
-        obj3 = { opacity: closure_0.props.activeOpacity };
-        obj4 = { backgroundColor: closure_0.props.underlayColor };
-        closure_0.setState(obj2);
-        const props = obj.props;
-        const onShowUnderlay = props.onShowUnderlay;
-        if (onShowUnderlay != null) {
-          onShowUnderlay();
+    closure_0(function*(arg0, value) {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: "+95" };
+        }
+      } else {
+        let c3;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_1 = tmp;
+              closure_0 = undefined;
+              c3 = 1;
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value: screenReaderEnabled.isScreenReaderEnabled(), done: false };
+              return obj4;
+            }
+          } else {
+            if (1 === c4) {
+              c3 = 0;
+              const _console = console;
+              console.warn("Could not read accessibility info: defaulting to false");
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0 = value;
+              closure_0(closure_0);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "HermesInternal", done: "+95" };
+          }
+        } catch (tmp13) {
+          let closure_2 = tmp13;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp13;
+          } else {
+            c4 = 1;
+          }
         }
       }
+    });
+    const tmp = checkStatus();
+    closure_0 = AccessibilityInfo.addEventListener("screenReaderChanged", (event) => {
+      closure_0(event);
+    });
+    return () => {
+      closure_0.remove();
     };
-    tmp3Result.hasPressHandler = () => closure_0.props.onPress || closure_0.props.onPressIn || closure_0.props.onPressOut || closure_0.props.onLongPress;
-    tmp3Result.hideUnderlay = () => {
-      closure_0.setState({ extraChildStyle: null, extraUnderlayStyle: null });
-      const props = closure_0.props;
-      const onHideUnderlay = props.onHideUnderlay;
-      if (onHideUnderlay != null) {
-        onHideUnderlay();
-      }
-    };
-    tmp3Result.onStateChange = (arg0, arg1) => {
-      if (arg1 === TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.BEGAN) {
-        closure_0.showUnderlay();
-      } else {
-        const tmp3 = arg1 !== TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.UNDETERMINED && arg1 !== TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.MOVED_OUTSIDE;
-        if (!tmp3) {
-          closure_0.hideUnderlay();
-        }
-      }
-    };
-    tmp3Result.state = { extraChildStyle: null, extraUnderlayStyle: null };
-    return tmp3Result;
-  }
+  }, []);
+  return first;
 }
-_inherits(TouchableHighlight, Component);
-const entry = {
-  key: "renderChildren",
-  value: function renderChildren() {
-    const self = this;
-    if (this.props.children) {
-      let tmp5;
-      const Children = react.Children;
-      const onlyResult = Children.only(self.props.children);
-      const style = onlyResult.props.style;
-      const cloneElement = react.cloneElement;
-      if (self.state.extraChildStyle) {
-        const items = [style, self.state.extraChildStyle];
-        tmp5 = items;
-      } else {
-        tmp5 = style;
-      }
-      const obj = { style: tmp5 };
-      return cloneElement(onlyResult, obj);
-    } else {
-      return <View />;
-    }
-  }
-};
-let items = [
-  entry,
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let style = props.style;
-      if (undefined === style) {
-        style = {};
-      }
-      const extraUnderlayStyle = self.state.extraUnderlayStyle;
-      const tmp = _objectWithoutProperties(props, closure_3);
-      TOUCHABLE_STATEDefault;
-      const merged = Object.assign(tmp);
-      const items = [style, extraUnderlayStyle];
-      return <tmp2 style={items} onStateChange={self.onStateChange}>{self.renderChildren()}</tmp2>;
-    }
-  }
-];
-const importDefaultResultResult = _createClass(TouchableHighlight, items);
-let obj = { activeOpacity: 0.85, delayPressOut: 100, underlayColor: "black" };
-let merged = Object.assign(TOUCHABLE_STATEDefault.defaultProps);
-importDefaultResultResult.defaultProps = obj;
-
-export default importDefaultResultResult;

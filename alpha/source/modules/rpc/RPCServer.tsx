@@ -1,16 +1,16 @@
-// Module ID: 7610
-// Function ID: 7611
+// Module ID: 7641
+// Function ID: 7642
 // Name: RPCServer
-// Dependencies: [5, 5766, 1071, 12, 7611, 7613, 7615, 1255, 38, 7616, 7618, 4856, 1088, 2]
+// Dependencies: [5, 5797, 1071, 12, 7642, 7644, 7646, 1256, 38, 7647, 7649, 4887, 1088, 2]
 
-// Module 7610 (RPCServer)
+// Module 7641 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import Constants2 from "Constants" /* 5766 */;
-import transformUserDefault from "transformUser" /* 7611 */;
-import RPCErrorDefault from "RPCError" /* 7613 */;
-import validateScopeDefault from "validateScope" /* 7615 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 7618 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Constants2 from "Constants" /* 5797 */;
+import transformUserDefault from "transformUser" /* 7642 */;
+import RPCErrorDefault from "RPCError" /* 7644 */;
+import validateScopeDefault from "validateScope" /* 7646 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 7649 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f124809 = function() {
+    const f125194 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -148,7 +148,7 @@ class RPCServer {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f124809).then;
-    then(f124809);
+    const then2 = then(f125194).then;
+    then(f125194);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

@@ -1,25 +1,25 @@
-// Module ID: 15823
-// Function ID: 15824
+// Module ID: 15874
+// Function ID: 15875
 // Name: definitions
-// Dependencies: [1082, 10149, 7734, 10175, 1092, 5656, 2172, 5750, 2145, 15824, 15820, 15825, 5746, 5984, 11329, 15826, 2]
+// Dependencies: [1082, 10191, 7768, 10217, 1092, 5687, 2173, 5781, 2146, 15875, 15871, 15876, 5777, 6015, 11375, 15877, 2]
 
-// Module 15823 (definitions)
+// Module 15874 (definitions)
 import Constants2 from "Constants" /* 1082 */;
 import ChannelTypes from "ChannelTypes" /* 1092 */;
-import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2145 */;
-import EntitlementTypes from "EntitlementTypes" /* 2172 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5656 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 5746 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 5750 */;
-import ActivityTypes from "ActivityTypes" /* 5984 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7734 */;
-import ActivityPlatform from "ActivityPlatform" /* 10175 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 11329 */;
-import ThermalStates from "ThermalStates" /* 15820 */;
-import SKUTypes from "SKUTypes" /* 15824 */;
-import discord_common_helpers from "discord_common/helpers" /* 15825 */;
-import contextMenuIcons from "contextMenuIcons" /* 15826 */;
-import Constants from "Constants" /* 10149 */;
+import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2146 */;
+import EntitlementTypes from "EntitlementTypes" /* 2173 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 5777 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 5781 */;
+import ActivityTypes from "ActivityTypes" /* 6015 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7768 */;
+import ActivityPlatform from "ActivityPlatform" /* 10217 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 11375 */;
+import ThermalStates from "ThermalStates" /* 15871 */;
+import SKUTypes from "SKUTypes" /* 15875 */;
+import discord_common_helpers from "discord_common/helpers" /* 15876 */;
+import contextMenuIcons from "contextMenuIcons" /* 15877 */;
+import Constants from "Constants" /* 10191 */;
 import size_mod from "module_2" /* 2 */;
 
 let ActivityIntent;
@@ -283,16 +283,16 @@ class Message {
     let numberResult;
     let numberResult1;
     let numberResult11;
-    let numberResult12;
-    let numberResult14;
+    let numberResult13;
     let numberResult15;
-    let numberResult17;
+    let numberResult16;
     let numberResult18;
     let numberResult19;
     let numberResult20;
     let numberResult21;
     let numberResult22;
-    let obj220;
+    let numberResult23;
+    let obj223;
     let object20;
     let object20Result;
     let object21;
@@ -303,6 +303,7 @@ class Message {
     let object49Result;
     let object50Result;
     let object52Result;
+    let optionalResult;
     let stringResult;
     let stringResult1;
     let stringResult10;
@@ -329,7 +330,7 @@ class Message {
     let stringResult8;
     let stringResult9;
     object = object.object;
-    const obj = { id: stringResult.required(), channel_id: stringResult1.required(), guild_id: allowResult.optional(), author: allowResult1.optional(), member: allowResult3.optional(), content: allowResult4.required(), timestamp: stringResult6.required(), edited_timestamp: allowResult5.optional(), tts: booleanResult2.required(), mention_everyone: booleanResult3.required(), mentions: itemsResult1.required(), mention_roles: itemsResult2.required(), mention_channels: itemsResult3.optional(), attachments: items2Result.required(), embeds: items3Result.required(), components: items5Result.optional(), reactions: allowResult45.optional(), nonce: _tryResult.optional(), pinned: booleanResult7.required(), webhook_id: allowResult46.optional(), type: numberResult14.required(), activity: allowResult48.optional(), application: allowResult51.optional(), message_reference: allowResult55.optional(), flags: allowResult56.optional(), application_id: stringResult50.optional(), sticker_items: items7Result.optional(), poll: object20Result.optional(), interaction_metadata: keys1.optional(), role_subscription_data: object52Result.optional(), blocked: booleanResult14.optional(), nick: allowResult63.optional(), author_color: allowResult64.optional() };
+    const obj = { id: stringResult.required(), channel_id: stringResult1.required(), guild_id: allowResult.optional(), author: allowResult1.optional(), member: allowResult3.optional(), content: allowResult4.required(), timestamp: stringResult6.required(), edited_timestamp: allowResult5.optional(), tts: booleanResult2.required(), mention_everyone: booleanResult3.required(), mentions: itemsResult1.required(), mention_roles: itemsResult2.required(), mention_channels: itemsResult3.optional(), attachments: items2Result.required(), embeds: items3Result.required(), components: items5Result.optional(), reactions: allowResult45.optional(), nonce: _tryResult.optional(), pinned: booleanResult7.required(), webhook_id: allowResult46.optional(), type: numberResult15.required(), activity: allowResult48.optional(), application: allowResult51.optional(), message_reference: allowResult55.optional(), flags: allowResult56.optional(), application_id: stringResult50.optional(), sticker_items: items7Result.optional(), poll: object20Result.optional(), interaction_metadata: keys1.optional(), role_subscription_data: object52Result.optional(), blocked: booleanResult14.optional(), nick: allowResult63.optional(), author_color: allowResult64.optional() };
     stringResult = object.string();
     stringResult1 = object.string();
     const stringResult2 = object.string();
@@ -473,18 +474,21 @@ class Message {
     const items4Result = items4(object12(obj9));
     allowResult41 = items4Result.allow(null);
     items3Result = items3(object5(obj4));
-    const obj10 = { type: numberResult11.required() };
+    const obj10 = { type: numberResult11.required(), id: optionalResult.meta({ className: "ComponentId" }) };
     const items5 = object.array().items;
     const object13 = object.object;
     object.array();
     numberResult11 = object.number();
+    const numberResult12 = object.number();
+    const integerResult = numberResult12.integer();
+    optionalResult = integerResult.optional();
     const object39Result = object13(obj10);
     items5Result = items5(object39Result.unknown(true));
-    const obj11 = { count: numberResult12.required(), me: booleanResult5.required(), emoji: object41Result.required() };
+    const obj11 = { count: numberResult13.required(), me: booleanResult5.required(), emoji: object41Result.required() };
     const items6 = object.array().items;
     const object14 = object.object;
     object.array();
-    numberResult12 = object.number();
+    numberResult13 = object.number();
     booleanResult5 = object.boolean();
     const object15 = object.object;
     const obj12 = { id: allowResult42.required(), name: allowResult43.required(), animated: allowResult44.optional() };
@@ -500,15 +504,15 @@ class Message {
     const _try = object.alternatives().try;
     object.alternatives();
     const stringResult39 = object.string();
-    const numberResult13 = object.number();
-    _tryResult = _try(stringResult39, numberResult13, object.valid(null));
+    const numberResult14 = object.number();
+    _tryResult = _try(stringResult39, numberResult14, object.valid(null));
     booleanResult7 = object.boolean();
     const stringResult40 = object.string();
     allowResult46 = stringResult40.allow(null);
-    numberResult14 = object.number();
-    const object16 = object.object;
-    const obj13 = { type: numberResult15.required(), party_id: allowResult47.optional() };
     numberResult15 = object.number();
+    const object16 = object.object;
+    const obj13 = { type: numberResult16.required(), party_id: allowResult47.optional() };
+    numberResult16 = object.number();
     const stringResult41 = object.string();
     allowResult47 = stringResult41.allow(null);
     const object42Result = object16(obj13);
@@ -534,18 +538,18 @@ class Message {
     allowResult54 = stringResult49.allow(null);
     const object44Result = object18(obj15);
     allowResult55 = object44Result.allow(null);
-    const numberResult16 = object.number();
-    allowResult56 = numberResult16.allow(null);
+    const numberResult17 = object.number();
+    allowResult56 = numberResult17.allow(null);
     stringResult50 = object.string();
-    const obj16 = { id: stringResult51.required(), name: stringResult52.required(), format_type: numberResult17.required() };
+    const obj16 = { id: stringResult51.required(), name: stringResult52.required(), format_type: numberResult18.required() };
     const items7 = object.array().items;
     const object19 = object.object;
     object.array();
     stringResult51 = object.string();
     stringResult52 = object.string();
-    numberResult17 = object.number();
+    numberResult18 = object.number();
     items7Result = items7(object19(obj16));
-    const obj17 = { question: object21Result.required(), answers: items8Result.required(), expiry: stringResult59.required(), allow_multiselect: booleanResult10.required(), layout_type: numberResult19.required(), results: object50Result.optional() };
+    const obj17 = { question: object21Result.required(), answers: items8Result.required(), expiry: stringResult59.required(), allow_multiselect: booleanResult10.required(), layout_type: numberResult20.required(), results: object50Result.optional() };
     ({ object: object20, object: object21 } = object);
     const obj18 = { text: stringResult53.optional(), emoji: object46Result.optional() };
     stringResult53 = object.string();
@@ -559,11 +563,11 @@ class Message {
     allowResult59 = booleanResult8.allow(null);
     object46Result = object22(obj19);
     object21Result = object21(obj18);
-    const obj20 = { answer_id: numberResult18.required(), poll_media: object48Result.required() };
+    const obj20 = { answer_id: numberResult19.required(), poll_media: object48Result.required() };
     const items8 = object.array().items;
     const object23 = object.object;
     object.array();
-    numberResult18 = object.number();
+    numberResult19 = object.number();
     const object24 = object.object;
     const obj21 = { text: stringResult56.optional(), emoji: object49Result.optional() };
     stringResult56 = object.string();
@@ -580,30 +584,30 @@ class Message {
     items8Result = items8(object23(obj20));
     stringResult59 = object.string();
     booleanResult10 = object.boolean();
-    numberResult19 = object.number();
+    numberResult20 = object.number();
     const object26 = object.object;
     const obj23 = { is_finalized: booleanResult11.required(), answer_counts: items9Result.required() };
     booleanResult11 = object.boolean();
-    const obj24 = { id: numberResult20.required(), count: numberResult21.required(), me_voted: booleanResult12.required() };
+    const obj24 = { id: numberResult21.required(), count: numberResult22.required(), me_voted: booleanResult12.required() };
     const items9 = object.array().items;
     const object27 = object.object;
     object.array();
-    numberResult20 = object.number();
     numberResult21 = object.number();
+    numberResult22 = object.number();
     booleanResult12 = object.boolean();
     items9Result = items9(object27(obj24));
     object50Result = object26(obj23);
     object20Result = object20(obj17);
-    const obj25 = { triggering_interaction_metadata: obj220.optional() };
+    const obj25 = { triggering_interaction_metadata: obj223.optional() };
     const keys = InteractionMetadata(object).keys;
     InteractionMetadata(object);
-    obj220 = InteractionMetadata(object);
+    obj223 = InteractionMetadata(object);
     keys1 = keys(obj25);
     const object28 = object.object;
-    const obj26 = { role_subscription_listing_id: stringResult60.required(), tier_name: stringResult61.required(), total_months_subscribed: numberResult22.required(), is_renewal: booleanResult13.required() };
+    const obj26 = { role_subscription_listing_id: stringResult60.required(), tier_name: stringResult61.required(), total_months_subscribed: numberResult23.required(), is_renewal: booleanResult13.required() };
     stringResult60 = object.string();
     stringResult61 = object.string();
-    numberResult22 = object.number();
+    numberResult23 = object.number();
     booleanResult13 = object.boolean();
     object52Result = object28(obj26);
     booleanResult14 = object.boolean();

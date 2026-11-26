@@ -1,16 +1,16 @@
-// Module ID: 7645
-// Function ID: 7646
+// Module ID: 7676
+// Function ID: 7677
 // Name: prefetchConjurePreviewFrame
-// Dependencies: [7637, 6903, 6906, 7646, 7648, 7654, 2]
+// Dependencies: [7668, 6934, 6937, 7677, 7679, 7685, 2]
 // Exports: prefetchConjurePreviewFrame
 
-// Module 7645 (prefetchConjurePreviewFrame)
-import FramesConstants from "FramesConstants" /* 6906 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 7646 */;
-import frameLaunchSteps from "frameLaunchSteps" /* 7648 */;
-import FrameLaunchTimingTypes from "FrameLaunchTimingTypes" /* 7654 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 7637 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+// Module 7676 (prefetchConjurePreviewFrame)
+import FramesConstants from "FramesConstants" /* 6937 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 7677 */;
+import frameLaunchSteps from "frameLaunchSteps" /* 7679 */;
+import FrameLaunchTimingTypes from "FrameLaunchTimingTypes" /* 7685 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 7668 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 const isLaunched = FramesConstants.isLaunched;

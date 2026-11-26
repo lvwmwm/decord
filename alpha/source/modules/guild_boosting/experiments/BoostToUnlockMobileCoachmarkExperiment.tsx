@@ -1,10 +1,10 @@
-// Module ID: 13439
-// Function ID: 13440
+// Module ID: 13491
+// Function ID: 13492
 // Name: BoostToUnlockMobileCoachmarkExperiment
-// Dependencies: [1451, 2]
+// Dependencies: [1452, 2]
 
-// Module 13439 (BoostToUnlockMobileCoachmarkExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
+// Module 13491 (BoostToUnlockMobileCoachmarkExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-boost-to-unlock-mobile-coachmark", kind: "user", defaultConfig: { showCoachmark: false }, variations: { 0: { showCoachmark: false }, 1: { showCoachmark: true } } };

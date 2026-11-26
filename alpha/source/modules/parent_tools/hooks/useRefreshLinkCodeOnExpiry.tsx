@@ -1,11 +1,11 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16384
+// Function ID: 16385
 // Name: useRefreshLinkCodeOnExpiry
-// Dependencies: [19, 7297, 2]
+// Dependencies: [19, 7328, 2]
 // Exports: default
 
-// Module 16333 (useRefreshLinkCodeOnExpiry)
-import useStableCallbackDefault from "useStableCallback" /* 7297 */;
+// Module 16384 (useRefreshLinkCodeOnExpiry)
+import useStableCallbackDefault from "useStableCallback" /* 7328 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

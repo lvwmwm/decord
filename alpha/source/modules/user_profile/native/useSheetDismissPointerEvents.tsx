@@ -1,13 +1,13 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 14868
+// Function ID: 14869
 // Name: useSheetDismissPointerEvents
-// Dependencies: [5244, 1653, 5272, 2]
+// Dependencies: [5275, 1654, 5303, 2]
 // Exports: default
 
-// Module 14815 (useSheetDismissPointerEvents)
-import _mod1653 from "module_1653" /* 1653 */;
-import BottomSheetModal from "BottomSheetModal" /* 5244 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
+// Module 14868 (useSheetDismissPointerEvents)
+import _mod1654 from "module_1654" /* 1654 */;
+import BottomSheetModal from "BottomSheetModal" /* 5275 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = { code: "(function useSheetDismissPointerEventsTsx1(){let[contentGestureState,State,handleGestureState]=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?'none':'box-none'};})" };
@@ -29,8 +29,8 @@ export default function useSheetDismissPointerEvents() {
     prop1 = bottomSheetInternal.animatedHandleGestureState;
   }
   const items = [closure_2, prop, , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items[2] = LegacyBaseButton.State;
   items[3] = prop1;
   let c0;

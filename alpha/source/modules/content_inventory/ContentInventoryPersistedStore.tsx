@@ -1,9 +1,9 @@
-// Module ID: 12566
-// Function ID: 12567
+// Module ID: 12615
+// Function ID: 12616
 // Name: ContentInventoryPersistedStore
 // Dependencies: [32, 1088, 504, 572, 2]
 
-// Module 12566 (ContentInventoryPersistedStore)
+// Module 12615 (ContentInventoryPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;

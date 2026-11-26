@@ -1,11 +1,11 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8757
+// Function ID: 8758
 // Name: ContentInventoryTypes
-// Dependencies: [8548, 8716, 2]
+// Dependencies: [8590, 8758, 2]
 // Exports: isApplicationEntry, isConsoleEntry, isGamingLikeEntry, isLaunchedActivityEntry, isListenedSessionEntry, isListeningLikeEntry, isPlayedGameEntry, isPlaystationEntry, isRecentActivityEntry, isTopArtistEntry, isTopGameEntry, isWatchedMediaEntry, isXboxEntry
 
-// Module 8715 (ContentInventoryTypes)
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8548 */;
+// Module 8757 (ContentInventoryTypes)
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8590 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryTypes.tsx");
@@ -101,9 +101,9 @@ export function isXboxEntry(content_type) {
     if (content_type != null) {
       content_type1 = content_type.content_type;
     }
-    tmp4 = content_type1 === tmp2(8548).ContentInventoryEntryType.TOP_GAME;
+    tmp4 = content_type1 === tmp2(8590).ContentInventoryEntryType.TOP_GAME;
   }
-  const tmp6 = tmp4 && content_type.extra.platform === tmp2(8716).PlatformType.XBOX;
+  const tmp6 = tmp4 && content_type.extra.platform === tmp2(8758).PlatformType.XBOX;
   return tmp6;
 }
 export function isPlaystationEntry(content_type) {
@@ -117,9 +117,9 @@ export function isPlaystationEntry(content_type) {
     if (content_type != null) {
       content_type1 = content_type.content_type;
     }
-    tmp4 = content_type1 === tmp2(8548).ContentInventoryEntryType.TOP_GAME;
+    tmp4 = content_type1 === tmp2(8590).ContentInventoryEntryType.TOP_GAME;
   }
-  const tmp6 = tmp4 && content_type.extra.platform === tmp2(8716).PlatformType.PLAYSTATION;
+  const tmp6 = tmp4 && content_type.extra.platform === tmp2(8758).PlatformType.PLAYSTATION;
   return tmp6;
 }
 export function isConsoleEntry(content_type) {
@@ -133,24 +133,24 @@ export function isConsoleEntry(content_type) {
     if (content_type != null) {
       content_type1 = content_type.content_type;
     }
-    tmp4 = content_type1 === tmp2(8548).ContentInventoryEntryType.TOP_GAME;
+    tmp4 = content_type1 === tmp2(8590).ContentInventoryEntryType.TOP_GAME;
   }
-  let tmp6 = tmp4 && content_type.extra.platform === tmp2(8716).PlatformType.XBOX;
+  let tmp6 = tmp4 && content_type.extra.platform === tmp2(8758).PlatformType.XBOX;
   if (!tmp6) {
     let content_type2;
     if (content_type != null) {
       content_type2 = content_type.content_type;
     }
-    let tmp8 = content_type2 === tmp2(8548).ContentInventoryEntryType.PLAYED_GAME;
+    let tmp8 = content_type2 === tmp2(8590).ContentInventoryEntryType.PLAYED_GAME;
     if (!tmp8) {
       let content_type3;
       if (content_type != null) {
         content_type3 = content_type.content_type;
       }
-      tmp8 = content_type3 === tmp2(8548).ContentInventoryEntryType.TOP_GAME;
+      tmp8 = content_type3 === tmp2(8590).ContentInventoryEntryType.TOP_GAME;
     }
-    tmp6 = tmp8 && content_type.extra.platform === tmp2(8716).PlatformType.PLAYSTATION;
-    const tmp10 = tmp8 && content_type.extra.platform === tmp2(8716).PlatformType.PLAYSTATION;
+    tmp6 = tmp8 && content_type.extra.platform === tmp2(8758).PlatformType.PLAYSTATION;
+    const tmp10 = tmp8 && content_type.extra.platform === tmp2(8758).PlatformType.PLAYSTATION;
   }
   return tmp6;
 }
@@ -172,21 +172,21 @@ export function isRecentActivityEntry(content_type) {
     if (content_type != null) {
       content_type1 = content_type.content_type;
     }
-    tmp4 = content_type1 === tmp2(8548).ContentInventoryEntryType.TOP_GAME;
+    tmp4 = content_type1 === tmp2(8590).ContentInventoryEntryType.TOP_GAME;
   }
   if (!tmp4) {
     let content_type2;
     if (content_type != null) {
       content_type2 = content_type.content_type;
     }
-    tmp4 = content_type2 === tmp2(8548).ContentInventoryEntryType.LISTENED_SESSION;
+    tmp4 = content_type2 === tmp2(8590).ContentInventoryEntryType.LISTENED_SESSION;
   }
   if (!tmp4) {
     let content_type3;
     if (content_type != null) {
       content_type3 = content_type.content_type;
     }
-    tmp4 = content_type3 === tmp2(8548).ContentInventoryEntryType.WATCHED_MEDIA;
+    tmp4 = content_type3 === tmp2(8590).ContentInventoryEntryType.WATCHED_MEDIA;
   }
   if (!tmp4) {
     let extra;

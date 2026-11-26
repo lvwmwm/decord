@@ -1,9 +1,9 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 9747
+// Function ID: 9748
 // Name: EmojiPickerNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 9705 (EmojiPickerNativeComponent)
+// Module 9747 (EmojiPickerNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;

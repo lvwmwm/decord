@@ -1,15 +1,15 @@
-// Module ID: 1239
-// Function ID: 1240
+// Module ID: 1240
+// Function ID: 1241
 // Name: ClientThemesConstants
-// Dependencies: [1082, 1195, 1240, 1112, 4662, 12, 2]
+// Dependencies: [1082, 1195, 1241, 1112, 4663, 12, 2]
 // Exports: isSelectableGradientPreset
 
-// Module 1239 (ClientThemesConstants)
+// Module 1240 (ClientThemesConstants)
 import Constants from "Constants" /* 1082 */;
 import intl2 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1240 */;
-import _modDef4662 from "module_4662" /* 4662 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
+import _modDef4663 from "module_4663" /* 4663 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -405,7 +405,7 @@ const obj24 = {
   angle: 135,
   getName() {
     const intl = intl2.intl;
-    return intl.string(_modDef4662["+xs8ZP"]);
+    return intl.string(_modDef4663["+xs8ZP"]);
   },
   midpointPercentage: 35,
   unsupported_overlayOpacityMultiplier: 0.8

@@ -12,7 +12,7 @@ import _mod738 from "module_738" /* 738 */;
 
 let data, integrations;
 
-const f79577 = (stacktrace) => {
+const f79796 = (stacktrace) => {
   stacktrace = stacktrace.stacktrace;
   if (stacktrace != null) {
     const frames = stacktrace.frames;
@@ -81,7 +81,7 @@ export function applyDebugIds(exception, stackParser) {
   if (exception != null) {
     const values = exception.values;
     if (values != null) {
-      const item = values.forEach(f79577);
+      const item = values.forEach(f79796);
     }
   }
 }
@@ -201,7 +201,7 @@ export function prepareEvent(options, event_id, event_id2, clone, self, setLastE
     if (exception != null) {
       let values = exception.values;
       if (values != null) {
-        let item = values.forEach(f79577);
+        let item = values.forEach(f79796);
       }
     }
   }

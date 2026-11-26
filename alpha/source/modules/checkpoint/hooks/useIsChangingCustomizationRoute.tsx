@@ -1,14 +1,14 @@
-// Module ID: 12611
-// Function ID: 12612
+// Module ID: 12653
+// Function ID: 12654
 // Name: useIsChangingCustomizationRoute
-// Dependencies: [32, 19, 5013, 12595, 504, 6736, 2]
+// Dependencies: [32, 19, 5044, 12631, 504, 6767, 2]
 // Exports: default
 
-// Module 12611 (useIsChangingCustomizationRoute)
-import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12595 */;
+// Module 12653 (useIsChangingCustomizationRoute)
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12631 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -33,9 +33,9 @@ export default function useIsChangingCustomizationRoute(stepName) {
   dependencyMap = tmp9;
   const obj2 = react;
   if (stepName !== first) {
-    const tmpResult = tmp(6736);
+    const tmpResult = tmp(6767);
     const result = tmpResult.isCheckpointCustomizationRoute(first);
-    const tmpResult2 = tmp(6736);
+    const tmpResult2 = tmp(6767);
     const result1 = tmpResult2.isCheckpointCustomizationRoute(stepName);
     tmp6(stepName);
     const tmp13 = !stateFromStores && result && result1;

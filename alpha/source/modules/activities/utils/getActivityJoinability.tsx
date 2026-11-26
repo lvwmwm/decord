@@ -1,21 +1,21 @@
-// Module ID: 14883
-// Function ID: 14884
+// Module ID: 14936
+// Function ID: 14937
 // Name: getActivityJoinability
-// Dependencies: [1071, 12237, 12233, 10044, 5656, 10152, 9995, 8359, 14483, 1378, 12230, 12231, 12232, 2]
+// Dependencies: [1071, 12287, 12283, 10086, 5687, 10194, 10037, 8401, 14535, 1379, 12280, 12281, 12282, 2]
 // Exports: default
 
-// Module 14883 (getActivityJoinability)
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5656 */;
-import hasFlagDefault from "hasFlag" /* 8359 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9995 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 10044 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10152 */;
-import _slicedToArray from "_slicedToArray" /* 12230 */;
-import hasPartySize from "hasPartySize" /* 12231 */;
-import getIsInParty from "getIsInParty" /* 12233 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12237 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14483 */;
+// Module 14936 (getActivityJoinability)
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5687 */;
+import hasFlagDefault from "hasFlag" /* 8401 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 10037 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 10086 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10194 */;
+import _slicedToArray from "_slicedToArray" /* 12280 */;
+import hasPartySize from "hasPartySize" /* 12281 */;
+import getIsInParty from "getIsInParty" /* 12283 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12287 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14535 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ export default function getActivityJoinability(arg0) {
           const frameSurfaces = obj11.getFrameSurfaces(application);
           const tmp57 = require;
           if (frameSurfaces.has(EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL)) {
-            const tmp57Result = tmp57(10044);
+            const tmp57Result = tmp57(10086);
             if (!tmp57Result.canOpenFrame(application)) {
               const voiceStateForUser = VoiceStateStore.getVoiceStateForUser(user.id);
               let channelId1;
@@ -131,7 +131,7 @@ export default function getActivityJoinability(arg0) {
       const obj8 = hasPartySize;
       const tmp40 = require;
       if (obj8.hasPartySize(partySize)) {
-        const tmp40Result = tmp40(12232);
+        const tmp40Result = tmp40(12282);
         if (!tmp40Result.isPartyFull(partySize)) {
           const tmp43 = importDefault;
           const tmp44 = constants;
@@ -140,7 +140,7 @@ export default function getActivityJoinability(arg0) {
               return obj.CAN_JOIN;
             }
           }
-          if (tmp43(8359)(activity, tmp44.PARTY_PRIVACY_VOICE_CHANNEL)) {
+          if (tmp43(8401)(activity, tmp44.PARTY_PRIVACY_VOICE_CHANNEL)) {
             const channel1 = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
             if (null != channel1) {
               if (VoiceStateStore.isInChannel(channel1.id, user.id)) {

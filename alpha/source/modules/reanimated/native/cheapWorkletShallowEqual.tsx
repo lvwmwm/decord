@@ -1,10 +1,10 @@
-// Module ID: 9753
-// Function ID: 9754
+// Module ID: 9795
+// Function ID: 9796
 // Name: cheapWorkletShallowEqual
 // Dependencies: [2]
 // Exports: cheapWorkletArrayShallowEqual, cheapWorkletShallowEqual
 
-// Module 9753 (cheapWorkletShallowEqual)
+// Module 9795 (cheapWorkletShallowEqual)
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,19 +1,19 @@
-// Module ID: 13027
-// Function ID: 13028
+// Module ID: 13079
+// Function ID: 13080
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 6358, 1386, 13028, 2144, 7042, 2117, 10053, 504, 7486, 5750, 13029, 10042, 10045, 10067, 2]
+// Dependencies: [19, 6389, 1387, 13080, 2145, 7073, 2118, 10095, 504, 7517, 5781, 13081, 10084, 10087, 10109, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 13027 (useAppLauncherFrecents)
-import Server from "Server" /* 2117 */;
-import Constants from "Constants" /* 2144 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6358 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7486 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10053 */;
+// Module 13079 (useAppLauncherFrecents)
+import Server from "Server" /* 2118 */;
+import Constants from "Constants" /* 2145 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6389 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7517 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10095 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 13028 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7042 */;
+import UserStore from "UserStore" /* 1387 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 13080 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 7073 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;

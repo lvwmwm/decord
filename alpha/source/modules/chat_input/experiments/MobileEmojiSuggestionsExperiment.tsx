@@ -1,11 +1,11 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12961
+// Function ID: 12962
 // Name: MobileEmojiSuggestionsExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: trackMobileEmojiSuggestionsExposure, useMobileEmojiSuggestionsConfig
 
-// Module 12909 (MobileEmojiSuggestionsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 12961 (MobileEmojiSuggestionsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-07-mobile-emoji-suggestions", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, style: "large", searchDebounceMs: 500 }, 2: { enabled: true, style: "small" }, 3: { enabled: true, style: "button" } } };

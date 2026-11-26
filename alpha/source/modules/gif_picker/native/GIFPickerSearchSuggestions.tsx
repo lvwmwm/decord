@@ -1,15 +1,15 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 10815
+// Function ID: 10816
 // Name: GIFPickerSearchSuggestions
-// Dependencies: [19, 17, 10761, 21, 5012, 575, 504, 5603, 1112, 5610, 2]
+// Dependencies: [19, 17, 10807, 21, 5043, 575, 504, 5634, 1112, 5641, 2]
 
-// Module 10769 (GIFPickerSearchSuggestions)
+// Module 10815 (GIFPickerSearchSuggestions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 10761 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10807 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -39,7 +39,7 @@ const memoResult = react.memo(function GIFPickerSearchSuggestions(onClickSuggest
   if (0 !== stateFromStoresArray.length) {
     const obj2 = { style: tmp.footerSuggestionsContainer, children: items1 };
     const obj3 = { style: tmp.footerSuggestionsTitle, variant: "body-md/medium", color: "text-default", children: intl.string(onClickSuggestion(1112).t["3JGJo2"]) };
-    const Text = tmp2(5603).Text;
+    const Text = tmp2(5634).Text;
     intl = tmp2(1112).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = {

@@ -1,13 +1,13 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7417
+// Function ID: 7418
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7387, 5009, 2]
+// Dependencies: [19, 17, 7418, 5040, 2]
 // Exports: default
 
-// Module 7386 (useFastestListPropsPlaceholder)
+// Module 7417 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
-import ColorUtils from "ColorUtils" /* 5009 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7387 */;
+import ColorUtils from "ColorUtils" /* 5040 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7418 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "v", borderBottomLeftRadius: "userId", borderBottomRightRadius: "Button", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "value", dividerPaddingRight: "Button", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "values", placeholderShapeGap: "Button", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "variant", placeholderFeedColor: "Button", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "width", placeholderFeedLabelSecondarySize: "Button", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "channel_id", placeholderType: NONE, width: null, height: null, verticalAlignment: null, horizontalAlignment: null };
+  size = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "v", borderBottomLeftRadius: "userId", borderBottomRightRadius: "Button", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "value", dividerPaddingRight: "Button", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "values", placeholderShapeGap: "Button", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "variant", placeholderFeedColor: "Button", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "width", placeholderFeedLabelSecondarySize: "Button", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "channel_id", placeholderType: NONE, width: "v", height: "window", verticalAlignment: "Button", horizontalAlignment: "isArray" };
   if (null == listFooter) {
     return size;
   } else {

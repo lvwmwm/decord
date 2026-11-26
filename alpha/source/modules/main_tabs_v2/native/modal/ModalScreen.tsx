@@ -1,18 +1,18 @@
-// Module ID: 19149
-// Function ID: 19150
+// Module ID: 19212
+// Function ID: 19213
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1071, 21, 5012, 575, 7278, 4969, 19150, 17664, 6099, 6085, 1263, 8207, 15970, 1378, 18560, 2]
+// Dependencies: [109, 19, 17, 1071, 21, 5043, 575, 7309, 5000, 19213, 17721, 6130, 6116, 1264, 8249, 16021, 1379, 18623, 2]
 // Exports: default
 
-// Module 19149 (modal/ModalScreen)
+// Module 19212 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7278 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7309 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -22,9 +22,9 @@ let c9;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const useTrackImpressionDefault = tmp(6085);
-const ModalActionCreatorsDefault = tmp(6099);
-const useAppFrameDefault = tmp(17664);
+const useTrackImpressionDefault = tmp(6116);
+const ModalActionCreatorsDefault = tmp(6130);
+const useAppFrameDefault = tmp(17721);
 let closure_3 = ["impressionName", "impressionProperties"];
 ({ View: metroRequire, StyleSheet: metroImportDefault } = react_native);
 const NOOP = Constants.NOOP;
@@ -55,14 +55,14 @@ export default function Modal(route) {
   const presentation = params.presentation;
   let isIpadOSResult = useIsWindowLargeDefault();
   if (isIpadOSResult) {
-    let obj = modal(4969);
+    let obj = modal(5000);
     isIpadOSResult = obj.isIpadOS();
   }
   if (isIpadOSResult) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const obj2 = modal(19150);
+    const obj2 = modal(19213);
     isIpadOSResult = obj2.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const obj3 = { enabled: !isIpadOSResult };
@@ -79,7 +79,7 @@ export default function Modal(route) {
     const arr = closure_1(dependencyMap[11]);
     arr.pop();
   }, []);
-  const obj4 = { type: modal(1263).ImpressionTypes.MODAL, name: impressionName, properties: impressionProperties };
+  const obj4 = { type: modal(1264).ImpressionTypes.MODAL, name: impressionName, properties: impressionProperties };
   const tmpResult = useTrackImpressionDefault;
   tmpResult(obj4);
   let callbacks = modal.callbacks;
@@ -130,7 +130,7 @@ export default function Modal(route) {
   items1 = [tmp7.content, styles.content];
   const obj8 = { style: items2, collapsable: null == styles.container, children: null };
   items2 = [tmp7.content, styles.body];
-  SafeAreaProvider = tmp12(15970).SafeAreaProvider;
+  SafeAreaProvider = tmp12(16021).SafeAreaProvider;
   const createElement = obj5.createElement;
   const modal2 = modal.modal;
   const merged = Object.assign(tmp9);
@@ -142,8 +142,8 @@ export default function Modal(route) {
   }
   items3[1] = tmp18Result;
   items4 = [closure_10(closure_6, obj7), ];
-  const tmp12Result = modal(1378);
-  items4[1] = tmp12Result.isIOS() && closure_9(modal(18560).PortalKeyboardRenderer, { portal: false });
-  tmp12Result.isIOS() && closure_9(modal(18560).PortalKeyboardRenderer, { portal: false });
+  const tmp12Result = modal(1379);
+  items4[1] = tmp12Result.isIOS() && closure_9(modal(18623).PortalKeyboardRenderer, { portal: false });
+  tmp12Result.isIOS() && closure_9(modal(18623).PortalKeyboardRenderer, { portal: false });
   return closure_9(closure_6, obj6);
 };

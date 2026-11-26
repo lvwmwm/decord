@@ -1,13 +1,13 @@
-// Module ID: 8216
-// Function ID: 8217
+// Module ID: 8258
+// Function ID: 8259
 // Name: isReadableChannel
-// Dependencies: [4865, 4861, 4944, 1071, 2]
+// Dependencies: [4896, 4892, 4975, 1071, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 8216 (isReadableChannel)
-import ChannelRecord from "ChannelRecord" /* 4865 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+// Module 8258 (isReadableChannel)
+import ChannelRecord from "ChannelRecord" /* 4896 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

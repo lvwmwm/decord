@@ -1,22 +1,22 @@
-// Module ID: 17687
-// Function ID: 17688
+// Module ID: 17744
+// Function ID: 17745
 // Name: HomeDrawerStore
-// Dependencies: [1071, 1257, 1653, 5222, 17688, 4927, 2]
+// Dependencies: [1071, 1258, 1654, 5253, 17745, 4958, 2]
 // Exports: computeMaxX
 
-// Module 17687 (HomeDrawerStore)
+// Module 17744 (HomeDrawerStore)
 import Constants from "Constants" /* 1071 */;
-import _slicedToArray from "_slicedToArray" /* 4927 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 17688 */;
-import module_1257 from "module_1257" /* 1257 */;
+import _slicedToArray from "_slicedToArray" /* 4958 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 17745 */;
+import module_1258 from "module_1258" /* 1258 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, set, set2, set3;
 
 const DM_WIDTH = Constants.DM_WIDTH;
-const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
   let closure_0;
   let closure_1;
   let obj2;
@@ -54,7 +54,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
         set3(withTiming(num, HomeDrawerAnimations.HOME_DRAWER_SETTLE_TIMING, "animate-always"));
         set = snapX.set;
         const tmp9Result = timing_timing;
-        const result1 = set(tmp9Result.withTiming(0, tmp9(17688).HOME_DRAWER_SETTLE_TIMING, "animate-always"));
+        const result1 = set(tmp9Result.withTiming(0, tmp9(17745).HOME_DRAWER_SETTLE_TIMING, "animate-always"));
         const obj = { active: false };
         set2 = gestureState.set;
         const merged = Object.assign(gestureState.get());
@@ -69,11 +69,11 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       closure_1().lastInteractionAt.current = Date.now();
     }
   };
-  obj2 = require("module_1653");
-  obj3 = require("module_1653");
-  obj4 = require("module_1653");
-  obj5 = require("module_1653");
-  obj6 = require("module_1653");
+  obj2 = require("module_1654");
+  obj3 = require("module_1654");
+  obj4 = require("module_1654");
+  obj5 = require("module_1654");
+  obj6 = require("module_1654");
   return obj;
 }, _slicedToArray.shallow);
 let result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");

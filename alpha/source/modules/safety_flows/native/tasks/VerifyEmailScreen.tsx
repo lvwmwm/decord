@@ -1,10 +1,10 @@
-// Module ID: 20296
-// Function ID: 20297
+// Module ID: 20360
+// Function ID: 20361
 // Name: VerifyEmailScreen
-// Dependencies: [5, 32, 19, 21, 20291, 20292, 20286, 5694, 1112, 3174, 20295, 6084, 575, 5603, 7243, 20297, 2]
+// Dependencies: [5, 32, 19, 21, 20355, 20356, 20350, 5725, 1112, 3175, 20359, 6115, 575, 5634, 7274, 20361, 2]
 // Exports: default
 
-// Module 20296 (VerifyEmailScreen)
+// Module 20360 (VerifyEmailScreen)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -65,7 +65,7 @@ export default function _default() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -116,7 +116,7 @@ export default function _default() {
           c3 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp28) {
         first = tmp28;
         if (0 === c3) {
@@ -139,19 +139,19 @@ export default function _default() {
       callback();
     }
   }, items2);
-  let obj3 = { title: intl.string(require("module_3174")["Qm6K/s"]), action: intl2.string(require("module_3174").wq2RDq), onAction, submitting: first1, children: tmp15(Stack, obj4) };
+  let obj3 = { title: intl.string(require("module_3175")["Qm6K/s"]), action: intl2.string(require("module_3175").wq2RDq), onAction, submitting: first1, children: tmp15(Stack, obj4) };
   const tmp14 = require("SafetyFlowTaskScreen");
   intl = onTaskComplete(value[8]).intl;
   intl2 = onTaskComplete(value[8]).intl;
   obj4 = { spacing: require("native").space.PX_16, children: items3 };
   Stack = onTaskComplete(value[11]).Stack;
-  let obj5 = { variant: "body-sm/medium", color: "text-subtle", children: intl3.string(require("module_3174").aveKoG) };
+  let obj5 = { variant: "body-sm/medium", color: "text-subtle", children: intl3.string(require("module_3175").aveKoG) };
   const Text = onTaskComplete(value[13]).Text;
   intl3 = onTaskComplete(value[8]).intl;
   items3 = [onAction(Text, obj5), ];
   let obj6 = { spacing: require("native").space.PX_8, children: items4 };
   const Stack2 = onTaskComplete(value[11]).Stack;
-  const obj7 = { placeholder: intl4.string(require("module_3174").d9Ykjr), maxLength: 6, returnKeyType: "done", value, onChange: tmp4 };
+  const obj7 = { placeholder: intl4.string(require("module_3175").d9Ykjr), maxLength: 6, returnKeyType: "done", value, onChange: tmp4 };
   const TextInput = onTaskComplete(value[14]).TextInput;
   intl4 = onTaskComplete(value[8]).intl;
   items4 = [onAction(TextInput, obj7), ];

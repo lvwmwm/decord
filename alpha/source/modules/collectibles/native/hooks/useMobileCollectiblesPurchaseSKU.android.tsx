@@ -1,14 +1,14 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11577
+// Function ID: 11578
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1386, 504, 11199, 11530, 2]
+// Dependencies: [1387, 504, 11245, 11578, 2]
 // Exports: default
 
-// Module 11529 (useMobileCollectiblesPurchaseSKU)
+// Module 11577 (useMobileCollectiblesPurchaseSKU)
 import get_initialized from "get initialized" /* 504 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11199 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 11530 */;
-import UserStore from "UserStore" /* 1386 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11245 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 11578 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/native/hooks/useMobileCollectiblesPurchaseSKU.android.tsx");

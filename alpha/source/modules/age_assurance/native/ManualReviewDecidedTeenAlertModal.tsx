@@ -1,21 +1,21 @@
-// Module ID: 8038
-// Function ID: 8039
+// Module ID: 8080
+// Function ID: 8081
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 6796, 21, 5603, 7836, 2187, 1112, 3594, 6021, 6021, 1263, 2]
+// Dependencies: [19, 6827, 21, 5634, 7870, 2188, 1112, 3595, 6052, 6052, 1264, 2]
 // Exports: default
 
-// Module 8038 (ManualReviewDecidedTeenAlertModal)
+// Module 8080 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef3594 from "module_3594" /* 3594 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import AlertModal2 from "AlertModal" /* 6021 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6796 */;
+import _modDef3595 from "module_3595" /* 3595 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import AlertModal2 from "AlertModal" /* 6052 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6827 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const discord_common_AnalyticsUtils = tmp2(1263);
+const discord_common_AnalyticsUtils = tmp2(1264);
 const FALLBACK_TEEN_AGE_RANGE = AgeVerificationConstants.FALLBACK_TEEN_AGE_RANGE;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewDecidedTeenAlertModal.tsx");
@@ -47,12 +47,12 @@ export default function ManualReviewDecidedTeenAlertModal(teenAgeRange) {
   }
   const tmp = jsx;
   const decidedPassed = teenAgeRange.decidedPassed;
-  const obj = { title: intl.string(_modDef3594.AA3xYb), content: formatResult, actions: tmp(AlertActions, obj4), trackingProps: obj6 };
+  const obj = { title: intl.string(_modDef3595.AA3xYb), content: formatResult, actions: tmp(AlertActions, obj4), trackingProps: obj6 };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl4.intl;
   const intl2 = intl4.intl;
   const format = intl2.format;
-  const tmp4 = _modDef3594;
+  const tmp4 = _modDef3595;
   if (decidedPassed) {
     const prop = tmp4["2+f8w1"];
     if (teenAgeRange == null) {

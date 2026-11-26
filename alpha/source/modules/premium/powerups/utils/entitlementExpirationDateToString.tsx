@@ -1,11 +1,11 @@
-// Module ID: 13460
-// Function ID: 13461
+// Module ID: 13512
+// Function ID: 13513
 // Name: entitlementExpirationDateToString
-// Dependencies: [2188, 2]
+// Dependencies: [2189, 2]
 // Exports: default
 
-// Module 13460 (entitlementExpirationDateToString)
-import LocaleStore from "LocaleStore" /* 2188 */;
+// Module 13512 (entitlementExpirationDateToString)
+import LocaleStore from "LocaleStore" /* 2189 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/entitlementExpirationDateToString.tsx");

@@ -1,27 +1,27 @@
-// Module ID: 13077
-// Function ID: 13078
+// Module ID: 13129
+// Function ID: 13130
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1499, 21, 5012, 575, 2117, 13078, 13084, 13086, 13089, 13091, 13092, 13094, 6956, 13097, 13098, 13104, 6121, 7253, 2]
+// Dependencies: [19, 17, 1500, 21, 5043, 575, 2118, 13130, 13136, 13138, 13141, 13143, 13144, 13146, 6987, 13149, 13150, 13156, 6152, 7284, 2]
 // Exports: default
 
-// Module 13077 (AppLauncherCommandOption)
+// Module 13129 (AppLauncherCommandOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6956 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 13078 */;
-import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 13084 */;
-import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 13086 */;
-import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 13089 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 13091 */;
-import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 13092 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13094 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 13097 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 13098 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 13104 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1500 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6987 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 13130 */;
+import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 13136 */;
+import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 13138 */;
+import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 13141 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 13143 */;
+import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 13144 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13146 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 13149 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 13150 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 13156 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -65,12 +65,12 @@ export default function AppLauncherCommandOption(option) {
   let type = option.type;
   let tmp2 = option;
   let tmp3 = dependencyMap;
-  if (option(2117).ApplicationCommandOptionType.STRING !== type) {
-    if (tmp2(2117).ApplicationCommandOptionType.INTEGER !== type) {
+  if (option(2118).ApplicationCommandOptionType.STRING !== type) {
+    if (tmp2(2118).ApplicationCommandOptionType.INTEGER !== type) {
       let tmp28Result;
       let tmp13;
-      if (tmp2(2117).ApplicationCommandOptionType.NUMBER !== type) {
-        if (tmp2(2117).ApplicationCommandOptionType.ATTACHMENT === type) {
+      if (tmp2(2118).ApplicationCommandOptionType.NUMBER !== type) {
+        if (tmp2(2118).ApplicationCommandOptionType.ATTACHMENT === type) {
           let obj2 = {
             option,
             onSelectAttachment(text) {
@@ -94,7 +94,7 @@ export default function AppLauncherCommandOption(option) {
           };
           tmp28Result = onDismiss(AppLauncherAttachmentOptionDefault, obj2, option.name);
           tmp13 = onDismiss;
-        } else if (tmp2(2117).ApplicationCommandOptionType.BOOLEAN === type) {
+        } else if (tmp2(2118).ApplicationCommandOptionType.BOOLEAN === type) {
           let obj3 = {
             option,
             initialValue: first,
@@ -114,7 +114,7 @@ export default function AppLauncherCommandOption(option) {
           }
           tmp28Result = tmp35(tmp37, obj3, option.name);
           tmp13 = tmp35;
-        } else if (tmp2(2117).ApplicationCommandOptionType.MENTIONABLE === type) {
+        } else if (tmp2(2118).ApplicationCommandOptionType.MENTIONABLE === type) {
           let obj4 = {
             option,
             initialValue: first1,
@@ -162,7 +162,7 @@ export default function AppLauncherCommandOption(option) {
           }
           tmp28Result = tmp28(tmp30, obj4);
           tmp13 = tmp28;
-        } else if (tmp2(2117).ApplicationCommandOptionType.ROLE === type) {
+        } else if (tmp2(2118).ApplicationCommandOptionType.ROLE === type) {
           const obj5 = {
             option,
             initialValue: first2,
@@ -194,7 +194,7 @@ export default function AppLauncherCommandOption(option) {
           }
           tmp28Result = tmp21(tmp23, obj5, option.name);
           tmp13 = tmp21;
-        } else if (tmp2(2117).ApplicationCommandOptionType.USER === type) {
+        } else if (tmp2(2118).ApplicationCommandOptionType.USER === type) {
           const obj6 = {
             option,
             initialValue: first3,
@@ -230,7 +230,7 @@ export default function AppLauncherCommandOption(option) {
           }
           tmp28Result = tmp14(tmp16, obj6, option.name);
           tmp13 = tmp14;
-        } else if (tmp2(2117).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp2(2118).ApplicationCommandOptionType.CHANNEL === type) {
           let obj = {
             option,
             initialValue: first4,
@@ -277,9 +277,9 @@ export default function AppLauncherCommandOption(option) {
           onPress() {
                   return onDismiss(option);
                 },
-          children: tmp13(tmp2(7253).CircleXIcon, { size: "md" })
+          children: tmp13(tmp2(7284).CircleXIcon, { size: "md" })
         };
-        const PressableOpacity = tmp2(6121).PressableOpacity;
+        const PressableOpacity = tmp2(6152).PressableOpacity;
         items[1] = tmp13(PressableOpacity, obj9);
         tmp61 = closure_6(View, obj7);
       }

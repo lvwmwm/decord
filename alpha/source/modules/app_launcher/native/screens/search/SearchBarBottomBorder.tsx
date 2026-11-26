@@ -1,17 +1,17 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13059
+// Function ID: 13060
 // Name: SearchBarBottomBorder
-// Dependencies: [19, 21, 5012, 575, 1653, 5613, 5614, 2]
+// Dependencies: [19, 21, 5043, 575, 1654, 5644, 5645, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 13007 (SearchBarBottomBorder)
+// Module 13059 (SearchBarBottomBorder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import spring_spring from "spring/spring" /* 5613 */;
-import springPresets from "springPresets" /* 5614 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import spring_spring from "spring/spring" /* 5644 */;
+import springPresets from "springPresets" /* 5645 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -35,7 +35,7 @@ export function usePinnedSearchBarBottomBorder(arg0) {
     triggerScrollHeight = 1;
   }
   let tmp = closure_5();
-  let obj = _mod1653;
+  let obj = _mod1654;
   const sharedValue = obj.useSharedValue(0);
   const items = [key, sharedValue];
   const effect = react.useEffect(() => {
@@ -46,8 +46,8 @@ export function usePinnedSearchBarBottomBorder(arg0) {
     const result = sharedValue.set(offset.offset);
   }, items1);
   const items2 = [closure_6, , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items2[1] = spring_spring.withSpring;
   items2[2] = sharedValue;
   items2[3] = triggerScrollHeight;

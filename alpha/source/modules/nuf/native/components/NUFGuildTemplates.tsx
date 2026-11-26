@@ -1,23 +1,23 @@
-// Module ID: 13649
-// Function ID: 13650
+// Module ID: 13701
+// Function ID: 13702
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 5049, 1071, 13650, 7304, 21, 6960, 13406, 12097, 13651, 13731, 1255, 1263, 7160, 13625, 1098, 13653, 13682, 13228, 1112, 13696, 13697, 13732, 13710, 7324, 2]
+// Dependencies: [5, 19, 17, 5080, 1071, 13702, 7335, 21, 6991, 13458, 12147, 13703, 13783, 1256, 1264, 7191, 13677, 1098, 13705, 13734, 13280, 1112, 13748, 13749, 13784, 13762, 7355, 2]
 // Exports: default
 
-// Module 13649 (NUFGuildTemplates)
+// Module 13701 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
-import NavigatorHeader from "NavigatorHeader" /* 7160 */;
-import Navigator2 from "Navigator" /* 7324 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 13650 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
+import NavigatorHeader from "NavigatorHeader" /* 7191 */;
+import Navigator2 from "Navigator" /* 7355 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 13702 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5049 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5080 */;
 import Constants from "Constants" /* 1071 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7304 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7335 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -43,7 +43,7 @@ let obj = function _onCreateGuild() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -84,7 +84,7 @@ let obj = function _onCreateGuild() {
           const obj9 = closure_130_1(closure_130_2[13]);
           obj9.track(closure_130_7.USER_FLOW_TRANSITION, obj10);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp8) {
         c4 = 3;
@@ -111,7 +111,7 @@ obj = function _onCreateServer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ obj = function _onCreateServer() {
             return { value, done: true };
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp7) {
           c3 = 3;
           throw tmp7;

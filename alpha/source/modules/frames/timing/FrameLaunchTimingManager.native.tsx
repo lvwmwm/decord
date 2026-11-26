@@ -1,11 +1,11 @@
-// Module ID: 7656
-// Function ID: 7657
+// Module ID: 7687
+// Function ID: 7688
 // Name: FrameLaunchTimingManager
-// Dependencies: [7655, 2]
+// Dependencies: [7686, 2]
 // Exports: getFrameLaunchTiming, getFrameLaunchTimingForIframe, startLaunchTiming
 
-// Module 7656 (FrameLaunchTimingManager)
-import noopFrameLaunchTiming from "noopFrameLaunchTiming" /* 7655 */;
+// Module 7687 (FrameLaunchTimingManager)
+import noopFrameLaunchTiming from "noopFrameLaunchTiming" /* 7686 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/timing/FrameLaunchTimingManager.native.tsx");

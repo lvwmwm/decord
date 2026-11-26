@@ -1,11 +1,11 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13920
+// Function ID: 13921
 // Name: NitroMobileRefreshExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: useIsNitroMobileRefreshEnabled
 
-// Module 13868 (NitroMobileRefreshExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 13920 (NitroMobileRefreshExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-11-nitro-mobile-refresh", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

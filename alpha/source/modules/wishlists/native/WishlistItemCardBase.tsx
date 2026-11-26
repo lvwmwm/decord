@@ -1,22 +1,22 @@
-// Module ID: 11120
-// Function ID: 11121
+// Module ID: 11166
+// Function ID: 11167
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 575, 5012, 5694, 9746, 5073, 9447, 5576, 11069, 1112, 11121, 1254, 11122, 8666, 7130, 9414, 2]
+// Dependencies: [19, 17, 21, 575, 5043, 5725, 9788, 5104, 9489, 5607, 11115, 1112, 11167, 1255, 11168, 8708, 7161, 9456, 2]
 // Exports: default
 
-// Module 11120 (WishlistItemCardBase)
+// Module 11166 (WishlistItemCardBase)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import native from "native" /* 5073 */;
-import useToken from "useToken" /* 5576 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5694 */;
-import IndicatorDot from "IndicatorDot" /* 9414 */;
-import useUserProfileColors from "useUserProfileColors" /* 9447 */;
-import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 11121 */;
+import native from "native" /* 5104 */;
+import useToken from "useToken" /* 5607 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5725 */;
+import IndicatorDot from "IndicatorDot" /* 9456 */;
+import useUserProfileColors from "useUserProfileColors" /* 9489 */;
+import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 11167 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -47,7 +47,7 @@ function SourceIcon(toastText) {
     children: closure_5(HeartIcon, obj2)
   };
   obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  HeartIcon = toastText(9746).HeartIcon;
+  HeartIcon = toastText(9788).HeartIcon;
   return closure_5(closure_3, obj);
 }
 ({ Pressable: c3, View: closure_4, StyleSheet } = react_native);
@@ -127,7 +127,7 @@ export default function WishlistItemCardBase(shopUnpublishCountdown) {
     obj6 = { width: size, aspectRatio: 1 };
   }
   items[2] = obj6;
-  const WISHLIST = tmp2(11069).WishlistItemSource.WISHLIST;
+  const WISHLIST = tmp2(11115).WishlistItemSource.WISHLIST;
   const intl = tmp2(1112).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl5.t.p3RmJF, { username: recipientName });
   const items1 = [accessibilityLabel, , , ];
@@ -154,7 +154,7 @@ export default function WishlistItemCardBase(shopUnpublishCountdown) {
     result = tmp2Result.formatWishlistShopUnpublishLabel(shopUnpublishCountdown, "expanded");
   }
   items1[3] = result;
-  const found = items1.filter(tmp2(1254).isNotNullish);
+  const found = items1.filter(tmp2(1255).isNotNullish);
   const joined = found.join(", ");
   let formatToPlainStringResult1 = joined;
   if (isNew) {
@@ -176,14 +176,14 @@ export default function WishlistItemCardBase(shopUnpublishCountdown) {
   let tmp18Result = null != shopUnpublishCountdown;
   if (tmp18Result) {
     const obj9 = { countdown: shopUnpublishCountdown };
-    tmp18Result = tmp18(tmp5(11122), obj9);
+    tmp18Result = tmp18(tmp5(11168), obj9);
   }
   items3[1] = tmp18Result;
   let tmp18Result4 = overlay === tmp9.OWNED;
   if (tmp18Result4) {
     const obj10 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj11) };
     obj11 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-    CheckmarkLargeBoldIcon = tmp2(8666).CheckmarkLargeBoldIcon;
+    CheckmarkLargeBoldIcon = tmp2(8708).CheckmarkLargeBoldIcon;
     tmp18Result4 = tmp18(tmp19, obj10);
   }
   items3[2] = tmp18Result4;
@@ -191,7 +191,7 @@ export default function WishlistItemCardBase(shopUnpublishCountdown) {
   if (tmp18Result5) {
     const obj12 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj13) };
     obj13 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-    LockIcon = tmp2(7130).LockIcon;
+    LockIcon = tmp2(7161).LockIcon;
     tmp18Result5 = tmp18(tmp19, obj12);
   }
   items3[3] = tmp18Result5;

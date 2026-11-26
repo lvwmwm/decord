@@ -1,11 +1,11 @@
-// Module ID: 9490
-// Function ID: 9491
+// Module ID: 9532
+// Function ID: 9533
 // Name: getRandomCustomStatusPrompt
-// Dependencies: [9489, 1112, 2]
+// Dependencies: [9531, 1112, 2]
 // Exports: default
 
-// Module 9490 (getRandomCustomStatusPrompt)
-import Constants from "Constants" /* 9489 */;
+// Module 9532 (getRandomCustomStatusPrompt)
+import Constants from "Constants" /* 9531 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;

@@ -1,16 +1,16 @@
-// Module ID: 17539
-// Function ID: 17540
+// Module ID: 17596
+// Function ID: 17597
 // Name: ParentalControlsDirectMessages
-// Dependencies: [8170, 9513, 16272, 16277, 16273, 11914, 1112, 2]
+// Dependencies: [8212, 9555, 16323, 16328, 16324, 11962, 1112, 2]
 
-// Module 17539 (ParentalControlsDirectMessages)
+// Module 17596 (ParentalControlsDirectMessages)
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16272 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16273 */;
-import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16277 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8170 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16323 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16324 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16328 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8212 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

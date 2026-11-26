@@ -1,26 +1,26 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11740
+// Function ID: 11741
 // Name: ReminderWatchSpotIllustration
-// Dependencies: [19, 21, 11693, 11694, 11695, 7230, 5699, 2]
+// Dependencies: [19, 21, 11741, 11742, 11743, 7261, 5730, 2]
 // Exports: ReminderWatchSpotIllustration
 
-// Module 11692 (ReminderWatchSpotIllustration)
+// Module 11740 (ReminderWatchSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7230 */;
-import _modDef11693 from "module_11693" /* 11693 */;
-import _modDef11694 from "module_11694" /* 11694 */;
-import _modDef11695 from "module_11695" /* 11695 */;
+import react_native from "react-native" /* 7261 */;
+import _modDef11741 from "module_11741" /* 11741 */;
+import _modDef11742 from "module_11742" /* 11742 */;
+import _modDef11743 from "module_11743" /* 11743 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef11693 };
+let obj2 = { uri: _modDef11741 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef11694 };
+let obj3 = { uri: _modDef11742 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef11695 };
-({ uri: _modDef11695 });
+obj[3] = { uri: _modDef11743 };
+({ uri: _modDef11743 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ReminderWatchSpotIllustration.native.tsx");
 

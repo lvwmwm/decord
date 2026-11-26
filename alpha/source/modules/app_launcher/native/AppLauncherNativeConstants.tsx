@@ -1,13 +1,13 @@
-// Module ID: 1499
-// Function ID: 1500
+// Module ID: 1500
+// Function ID: 1501
 // Name: AppLauncherNativeConstants
-// Dependencies: [1500, 575, 2, 1623]
+// Dependencies: [1501, 575, 2, 1624]
 // Exports: useAppLauncherNavigation
 
-// Module 1499 (AppLauncherNativeConstants)
+// Module 1500 (AppLauncherNativeConstants)
 import nativeDefault from "native" /* 575 */;
-import useNavigation from "useNavigation" /* 1500 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1623 */;
+import useNavigation from "useNavigation" /* 1501 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1624 */;
 import size from "module_2" /* 2 */;
 
 const PX_16 = nativeDefault.space.PX_16;

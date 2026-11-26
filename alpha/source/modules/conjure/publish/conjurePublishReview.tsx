@@ -1,30 +1,30 @@
-// Module ID: 18405
-// Function ID: 18406
+// Module ID: 18464
+// Function ID: 18465
 // Name: conjurePublishReview
-// Dependencies: [6904, 4244, 1112, 11428, 2]
+// Dependencies: [6935, 4245, 1112, 11475, 2]
 // Exports: conjureAddedSurfaces, conjurePublishIncludes, conjurePublishReviewReason, conjureReviewComponents
 
-// Module 18405 (conjurePublishReview)
-import _modDef4244 from "module_4244" /* 4244 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6904 */;
+// Module 18464 (conjurePublishReview)
+import _modDef4245 from "module_4245" /* 4245 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4244.UnoAgo];
+let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4245.UnoAgo];
 let items1 = [items, , , , , ];
-let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4244["I88/iG"]];
+let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4245["I88/iG"]];
 items1[1] = items2;
-let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4244.skjf5I];
+let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4245.skjf5I];
 items1[2] = items3;
-let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4244.gXY1x1];
+let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4245.gXY1x1];
 items1[3] = items4;
-const items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4244.Q9ruoM];
+const items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4245.Q9ruoM];
 items1[4] = items5;
-const items6 = [ConjureProjectTypes.ConjureSupportedSurface.OVERLAY, _modDef4244.KR5R34];
+const items6 = [ConjureProjectTypes.ConjureSupportedSurface.OVERLAY, _modDef4245.KR5R34];
 items1[5] = items6;
-let obj = { screen_capture: _modDef4244["8/7kE7"], connect_user_to_voice: _modDef4244.uvDWXa };
+let obj = { screen_capture: _modDef4245["8/7kE7"], connect_user_to_voice: _modDef4245.uvDWXa };
 const items7 = [
   ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL,
   ...items1.map((item) => {
@@ -90,7 +90,7 @@ export function conjurePublishReviewReason(project, publishStatus) {
     tmp = null;
     if (true !== publishStatus.safetyHold) {
       let str = "first_publish";
-      const obj = _Set1(11428);
+      const obj = _Set1(11475);
       if (obj.isConjureLive(publishStatus.publishState)) {
         let tmp7;
         let supported_surfaces = project.supported_surfaces;

@@ -1,25 +1,25 @@
-// Module ID: 13503
-// Function ID: 13504
+// Module ID: 13555
+// Function ID: 13556
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 8255, 1071, 13504, 21, 5012, 575, 5567, 9323, 13486, 13462, 5603, 1112, 2878, 13437, 13454, 13505, 13506, 13459, 2]
+// Dependencies: [19, 17, 8297, 1071, 13556, 21, 5043, 575, 5598, 9365, 13538, 13514, 5634, 1112, 2879, 13489, 13506, 13557, 13558, 13511, 2]
 // Exports: default
 
-// Module 13503 (GuildPowerupsLevelCard)
+// Module 13555 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import LinearGradientDefault from "LinearGradient" /* 5567 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9323 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13437 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13454 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 13459 */;
-import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 13504 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13505 */;
+import LinearGradientDefault from "LinearGradient" /* 5598 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9365 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13489 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13506 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 13511 */;
+import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 13556 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13557 */;
 import react from "react" /* 19 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8255 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8297 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ let size;
 let size1;
 let tmp2;
 let unpackModuleId;
-const GuildPowerupsCardDefault = tmp2(13506);
+const GuildPowerupsCardDefault = tmp2(13558);
 function GuildLevelPowerupHeader(arg0) {
   let BoostGemIcon;
   let active;
@@ -148,7 +148,7 @@ class GuildPowerupLevelBody {
 
     ];
     let obj2 = { style: tmp.perkRow, children: closure_10(Text, obj3) };
-    obj3 = { color: textColor, variant: "body-sm/normal", children: intl.string(require("module_2878").nIj3LZ) };
+    obj3 = { color: textColor, variant: "body-sm/normal", children: intl.string(require("module_2879").nIj3LZ) };
     Text = index(textColor[12]).Text;
     intl = index(textColor[13]).intl;
     items1[1] = closure_10(View, obj2);

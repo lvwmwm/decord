@@ -1,23 +1,23 @@
-// Module ID: 19467
-// Function ID: 19468
+// Module ID: 19530
+// Function ID: 19531
 // Name: VoicePanelDismissableContent
-// Dependencies: [32, 19, 6902, 11734, 5662, 21, 19468, 2119, 11733, 1653, 1706, 4845, 11029, 11030, 2]
+// Dependencies: [32, 19, 6933, 11782, 5693, 21, 19531, 2120, 11781, 1654, 1707, 4876, 11075, 11076, 2]
 
-// Module 19467 (VoicePanelDismissableContent)
+// Module 19530 (VoicePanelDismissableContent)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import CallConstants from "CallConstants" /* 5662 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11734 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import CallConstants from "CallConstants" /* 5693 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11782 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6902 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6933 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SelectedDismissibleContentDefault = tmp(11029);
+const SelectedDismissibleContentDefault = tmp(11075);
 function VoiceControlsNuxActionSheetImporter() {
-  return asyncRequire(19468, dependencyMap.paths);
+  return asyncRequire(19531, dependencyMap.paths);
 }
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const isActivityParticipant = CallConstants.isActivityParticipant;
@@ -54,7 +54,7 @@ const memoResult = react.memo(function VoicePanelDismissibleContent() {
   let c1;
   let c2;
   [tmp9, tmp10, tmp11, tmp12] = items1;
-  const tmp8 = channelId(1653);
+  const tmp8 = channelId(1654);
   class VoicePanelDismissableContentTsx1 {
     constructor() {
       let tmp;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function VoicePanelDismissibleContent() {
   VoicePanelDismissableContentTsx1.__initData = tmp9;
   const items3 = [closure_11, , ];
   const useAnimatedReaction = tmp8.useAnimatedReaction;
-  items3[1] = channelId(1706).scheduleOnRN;
+  items3[1] = channelId(1707).scheduleOnRN;
   items3[2] = callback;
   c0 = undefined;
   c1 = undefined;
@@ -93,7 +93,7 @@ const memoResult = react.memo(function VoicePanelDismissibleContent() {
   VoicePanelDismissableContentTsx2.__initData = tmp13;
   const animatedReaction = useAnimatedReaction(VoicePanelDismissableContentTsx1, VoicePanelDismissableContentTsx2);
   if (first) {
-    const items5 = [channelId(4845).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
+    const items5 = [channelId(4876).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
     items6 = items5;
   } else {
     items6 = [];

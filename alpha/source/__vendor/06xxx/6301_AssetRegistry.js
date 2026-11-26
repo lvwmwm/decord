@@ -1,0 +1,10 @@
+// Module ID: 6301
+// Function ID: 6302
+// Name: AssetRegistry
+// Dependencies: [1118]
+
+// Module 6301 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1118 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "85e85e0480cc3ad94f292bfe35b1a958", name: "img_amazon_music", type: "svg" });

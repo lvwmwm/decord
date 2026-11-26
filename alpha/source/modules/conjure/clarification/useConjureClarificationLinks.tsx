@@ -1,14 +1,14 @@
-// Module ID: 18740
-// Function ID: 18741
+// Module ID: 18803
+// Function ID: 18804
 // Name: useConjureClarificationLinks
-// Dependencies: [5, 32, 19, 6903, 18577, 18480, 504, 6904, 18486, 2]
+// Dependencies: [5, 32, 19, 6934, 18640, 18543, 504, 6935, 18549, 2]
 // Exports: default
 
-// Module 18740 (useConjureClarificationLinks)
+// Module 18803 (useConjureClarificationLinks)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,7 +73,7 @@ export default function useConjureClarificationLinks(arg0, arg1, arg2) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           let c5;
@@ -121,7 +121,7 @@ export default function useConjureClarificationLinks(arg0, arg1, arg2) {
                 c5 = 0;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp14) {
             if (0 === c5) {

@@ -1,10 +1,10 @@
-// Module ID: 1235
-// Function ID: 1236
+// Module ID: 1236
+// Function ID: 1237
 // Name: GuildThemeSourcePreferenceUtils
 // Dependencies: [1195, 2]
 // Exports: resolveDefaultGuildThemePreference, resolveGuildThemeSourcePreference
 
-// Module 1235 (GuildThemeSourcePreferenceUtils)
+// Module 1236 (GuildThemeSourcePreferenceUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import size from "module_2" /* 2 */;
 

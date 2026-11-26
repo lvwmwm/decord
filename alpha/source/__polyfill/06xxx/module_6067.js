@@ -1,23 +1,73 @@
 // Module ID: 6067
 // Function ID: 6068
-// Dependencies: [19, 17, 21, 6068]
-// Exports: SafeAreaView
+// Dependencies: [19, 17, 6059]
+// Exports: useTabsScreen
 
 // Module 6067
 import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import react_nativeDefault from "react-native" /* 6068 */;
+import RNSLog2 from "RNSLog" /* 6059 */;
 import react from "react" /* 19 */;
 
-const StyleSheet = react_native.StyleSheet;
-const jsx = Fragment.jsx;
-const styles = StyleSheet.create({ flex: { flex: 1 } });
+const findNodeHandle = react_native.findNodeHandle;
 
-export function SafeAreaView(style) {
-  react_nativeDefault;
-  const merged = Object.assign(style);
-  const items = [styles.flex, style.style];
-  const rect = { top: false, bottom: false, left: false, right: false };
-  const merged1 = Object.assign(style.edges);
-  return <tmp style={items} edges={rect} />;
+export function useTabsScreen(componentNodeRef) {
+  componentNodeRef = componentNodeRef.componentNodeRef;
+  const onDidAppear = componentNodeRef.onDidAppear;
+  const onDidDisappear = componentNodeRef.onDidDisappear;
+  const onWillAppear = componentNodeRef.onWillAppear;
+  const onWillDisappear = componentNodeRef.onWillDisappear;
+  const screenKey = componentNodeRef.screenKey;
+  const ref = onDidDisappear.useRef(-1);
+  const effect = onDidDisappear.useEffect(() => {
+    if (null != componentNodeRef.current) {
+      let num2 = findNodeHandle(tmp.current);
+      const tmp3 = ref;
+      if (num2 == null) {
+        num2 = -1;
+      }
+      tmp3.current = num2;
+    } else {
+      ref.current = -1;
+    }
+  }, []);
+  const items = [onWillAppear];
+  const items1 = [onDidAppear];
+  const callback = onDidDisappear.useCallback((arg0) => {
+    const RNSLog = RNSLog2.RNSLog;
+    RNSLog.log("TabsScreen [" + ref.current + "] onWillAppear received");
+    if (onWillAppear != null) {
+      tmp2(arg0);
+    }
+  }, items);
+  const items2 = [onWillDisappear];
+  const callback1 = onDidDisappear.useCallback((arg0) => {
+    const RNSLog = RNSLog2.RNSLog;
+    RNSLog.log("TabsScreen [" + ref.current + "] onDidAppear received");
+    if (onDidAppear != null) {
+      tmp2(arg0);
+    }
+  }, items1);
+  const items3 = [onDidDisappear];
+  const callback2 = onDidDisappear.useCallback((arg0) => {
+    const RNSLog = RNSLog2.RNSLog;
+    RNSLog.log("TabsScreen [" + ref.current + "] onWillDisappear received");
+    if (onWillDisappear != null) {
+      tmp2(arg0);
+    }
+  }, items2);
+  const callback3 = onDidDisappear.useCallback((arg0) => {
+    const RNSLog = RNSLog2.RNSLog;
+    RNSLog.log("TabsScreen [" + ref.current + "] onDidDisappear received");
+    if (onDidDisappear != null) {
+      tmp2(arg0);
+    }
+  }, items3);
+  let RNSLog = componentNodeRef(onDidAppear[2]).RNSLog;
+  let num = ref.current;
+  const log = RNSLog.log;
+  if (num == null) {
+    num = -1;
+  }
+  log("TabsScreen [" + num + "] render; screenKey: " + screenKey);
+  return { componentNodeRef, lifecycleCallbacks: { onWillAppear: callback, onDidAppear: callback1, onWillDisappear: callback2, onDidDisappear: callback3 } };
 }

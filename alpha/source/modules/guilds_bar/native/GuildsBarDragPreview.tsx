@@ -1,17 +1,17 @@
-// Module ID: 18088
-// Function ID: 18089
+// Module ID: 18147
+// Function ID: 18148
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 6133, 18015, 18012, 21, 5012, 17693, 1653, 5613, 1706, 5073, 5576, 575, 18023, 18043, 4927, 2]
+// Dependencies: [19, 6164, 18074, 18071, 21, 5043, 17750, 1654, 5644, 1707, 5104, 5607, 575, 18082, 18102, 4958, 2]
 
-// Module 18088 (GuildsBarDragPreview)
+// Module 18147 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
-import _slicedToArray from "_slicedToArray" /* 4927 */;
-import native from "native" /* 5073 */;
-import SortedGuildStore from "SortedGuildStore" /* 6133 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18012 */;
+import _slicedToArray from "_slicedToArray" /* 4958 */;
+import native from "native" /* 5104 */;
+import SortedGuildStore from "SortedGuildStore" /* 6164 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18071 */;
 import react from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18015 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18074 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let _undefined2, set, tmp3;
@@ -56,9 +56,9 @@ function PreviewItem(overState) {
   ({ dropComplete, gestureState, dropPosition } = overState);
   let tmp = closure_8();
   const tmp2 = overNode;
-  let obj = overNode(17693);
+  let obj = overNode(17750);
   const isHomeDrawerEnabled = obj.useIsHomeDrawerEnabled();
-  let obj2 = overNode(1653);
+  let obj2 = overNode(1654);
   let items = [closure_11, scrollPosition, dragRegion, listInsets];
   let c0;
   let c1;
@@ -89,7 +89,7 @@ function PreviewItem(overState) {
   let c3;
   let c4;
   [tmp10, tmp11, tmp12, tmp13, tmp14, tmp15] = items2;
-  const tmp2Result = tmp2(1653);
+  const tmp2Result = tmp2(1654);
   class GuildsBarDragPreviewTsx2 {
     constructor() {
       let diff1;
@@ -116,12 +116,12 @@ function PreviewItem(overState) {
   GuildsBarDragPreviewTsx2.__initData = tmp10;
   const derivedValue1 = tmp2Result.useDerivedValue(GuildsBarDragPreviewTsx2);
   const items4 = [closure_14, dropPosition, scrollPosition, gestureState, draggedHeight, derivedValue, derivedValue1, windowSize, , , , , ];
-  const useAnimatedStyle = tmp2(1653).useAnimatedStyle;
-  tmp2(1653);
-  items4[8] = tmp2(5613).withSpring;
+  const useAnimatedStyle = tmp2(1654).useAnimatedStyle;
+  tmp2(1654);
+  items4[8] = tmp2(5644).withSpring;
   items4[9] = closure_10;
   items4[10] = closure_13;
-  items4[11] = tmp2(1706).scheduleOnRN;
+  items4[11] = tmp2(1707).scheduleOnRN;
   items4[12] = dropComplete;
   c0 = undefined;
   c1 = undefined;
@@ -196,7 +196,7 @@ function PreviewItem(overState) {
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Path", name: "Array", color: "analyticsLocations", expanded: true, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Path", name: "Array", color: "analyticsLocations", expanded: null, children: items };
         items = [tmp2];
         return element;
       }
@@ -204,13 +204,13 @@ function PreviewItem(overState) {
   }, items6);
   const items7 = [tmp.dragPreview, , ];
   let dragPreviewHome = null;
-  const View = overState(1653).View;
+  const View = overState(1654).View;
   if (isHomeDrawerEnabled) {
     dragPreviewHome = tmp.dragPreviewHome;
   }
   items7[1] = dragPreviewHome;
   items7[2] = animatedStyle;
-  const TransitionGroup = tmp2(5073).TransitionGroup;
+  const TransitionGroup = tmp2(5104).TransitionGroup;
   if (null != memo) {
     draggedNode = memo;
   }
@@ -243,32 +243,32 @@ function AnimatedItemPreview(cleanUp) {
   cleanUp = cleanUp.cleanUp;
   const tmp2 = transitionState;
   let tmp = closure_8();
-  let obj = transitionState(5576);
+  let obj = transitionState(5607);
   const tmp4 = sharedValue;
   const tmp5 = closure_9(GUILD_ITEM_INSET_LEFT + obj.useToken(sharedValue(575).modules.mobile.GUILD_BAR_ITEM_SIZE) / 2);
-  let obj2 = transitionState(17693);
+  let obj2 = transitionState(17750);
   let isHomeDrawerEnabled = obj2.useIsHomeDrawerEnabled();
-  const useSharedValue = transitionState(1653).useSharedValue;
+  const useSharedValue = transitionState(1654).useSharedValue;
   let num = 1;
-  const tmp7 = transitionState(1653);
-  if (transitionState === transitionState(5073).TransitionStates.ENTERED) {
+  const tmp7 = transitionState(1654);
+  if (transitionState === transitionState(5104).TransitionStates.ENTERED) {
     num = 0;
   }
   sharedValue = useSharedValue(num);
-  const YEETED = tmp2(5073).TransitionStates.YEETED;
+  const YEETED = tmp2(5104).TransitionStates.YEETED;
   const tmp9 = GuildsNodeType;
   if (isHomeDrawerEnabled) {
     isHomeDrawerEnabled = !tmp10;
   }
   let items = [closure_19, tmp10, sharedValue, , , , , , , ];
-  const useAnimatedStyle = tmp2(1653).useAnimatedStyle;
-  tmp2(1653);
-  items[3] = tmp2(5613).withSpring;
+  const useAnimatedStyle = tmp2(1654).useAnimatedStyle;
+  tmp2(1654);
+  items[3] = tmp2(5644).withSpring;
   items[4] = closure_10;
   items[5] = closure_18;
   items[6] = transitionState;
-  items[7] = tmp2(5073).TransitionStates;
-  items[8] = tmp2(1706).scheduleOnRN;
+  items[7] = tmp2(5104).TransitionStates;
+  items[8] = tmp2(1707).scheduleOnRN;
   items[9] = cleanUp;
   let c0;
   let c1;
@@ -379,7 +379,7 @@ function AnimatedItemPreview(cleanUp) {
   });
   let items2 = [tmp.animatedPreviewStyle, , ];
   let prop = null;
-  const View = tmp4(1653).View;
+  const View = tmp4(1654).View;
   if (isHomeDrawerEnabled) {
     prop = tmp5.animatedPreviewStyleHome;
   }
@@ -388,11 +388,11 @@ function AnimatedItemPreview(cleanUp) {
   if (node.type === tmp9.FOLDER) {
     let obj4 = { id: null, expanded: null, color: null, name: null, childNodes: null, isDragPreview: true, hideExpandedChildren: !isHomeDrawerEnabled };
     ({ id: obj5.id, expanded: obj5.expanded, color: obj5.color, name: obj5.name, children: obj5.childNodes } = node);
-    tmp24Result = tmp24(tmp4(18023), obj4);
+    tmp24Result = tmp24(tmp4(18082), obj4);
   } else {
     const obj8 = { guildId: node.id, isDragPreview: true, hideExpandedChildren: tmp27 };
     tmp27 = !isHomeDrawerEnabled;
-    const tmp4Result = tmp4(18043);
+    const tmp4Result = tmp4(18102);
     if (isHomeDrawerEnabled) {
       tmp27 = transitionState === YEETED;
     }

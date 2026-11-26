@@ -1,16 +1,16 @@
-// Module ID: 8536
-// Function ID: 8537
+// Module ID: 8578
+// Function ID: 8579
 // Name: GuildTagUtils
-// Dependencies: [4924, 4883, 1386, 8537, 1071, 504, 4950, 2]
+// Dependencies: [4955, 4914, 1387, 8579, 1071, 504, 4981, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 8536 (GuildTagUtils)
+// Module 8578 (GuildTagUtils)
 import Constants from "Constants" /* 1071 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4950 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import UserStore from "UserStore" /* 1386 */;
-import GuildTagConstants from "GuildTagConstants" /* 8537 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4981 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import UserStore from "UserStore" /* 1387 */;
+import GuildTagConstants from "GuildTagConstants" /* 8579 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

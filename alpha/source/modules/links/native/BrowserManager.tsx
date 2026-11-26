@@ -1,17 +1,17 @@
-// Module ID: 5723
-// Function ID: 5724
+// Module ID: 5754
+// Function ID: 5755
 // Name: BrowserManager
-// Dependencies: [5, 17, 1378, 5724, 5725, 560, 1091, 5691, 1254, 2]
+// Dependencies: [5, 17, 1379, 5755, 5756, 560, 1091, 5722, 1255, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
-// Module 5723 (BrowserManager)
+// Module 5754 (BrowserManager)
 import react_native from "react-native" /* 17 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
-import LinkingDefault from "Linking" /* 5691 */;
-import react_native2 from "react-native" /* 5724 */;
-import react_nativeDefault2 from "react-native" /* 5725 */;
+import LinkingDefault from "Linking" /* 5722 */;
+import react_native2 from "react-native" /* 5755 */;
+import react_nativeDefault2 from "react-native" /* 5756 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c0, c1, closure_7;
 
 let importDefaultResult;
 let tmp2;
-const GlobalUtils = tmp2(1254);
+const GlobalUtils = tmp2(1255);
 let obj = function _browserManagerClearWebsiteData() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj3;
@@ -35,7 +35,7 @@ let obj = function _browserManagerClearWebsiteData() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ let obj = function _browserManagerClearWebsiteData() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp7) {
         c0 = 3;
         throw tmp7;

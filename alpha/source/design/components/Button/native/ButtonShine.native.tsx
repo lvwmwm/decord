@@ -1,25 +1,25 @@
-// Module ID: 5622
-// Function ID: 5623
+// Module ID: 5653
+// Function ID: 5654
 // Name: ButtonShine
-// Dependencies: [32, 19, 21, 5617, 671, 5019, 1653, 5222, 5012, 2]
+// Dependencies: [32, 19, 21, 5648, 671, 5050, 1654, 5253, 5043, 2]
 // Exports: ButtonShine
 
-// Module 5622 (ButtonShine)
+// Module 5653 (ButtonShine)
 import Fragment from "Fragment" /* 21 */;
 import _modDef671 from "module_671" /* 671 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import shared from "shared" /* 5019 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import ButtonHooks from "ButtonHooks" /* 5617 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import shared from "shared" /* 5050 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import ButtonHooks from "ButtonHooks" /* 5648 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let num, num2, obj1, obj6, obj7, obj8, str, tmp3, tmp4, tmp5;
 
 let tmp;
-const createStyles = tmp(5012);
+const createStyles = tmp(5043);
 function useShineEffectStyles(arg0, variant) {
   let animatedStyle;
   let items2;
@@ -43,11 +43,11 @@ function useShineEffectStyles(arg0, variant) {
   const hexResult = alphaResult.hex();
   const enabled = react.useContext(shared.AccessibilityPreferencesContext).reducedMotion.enabled;
   let items = [closure_6, arg0, 120, enabled, 56, , , , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  items[5] = _mod1653.withRepeat;
-  items[6] = _mod1653.withSequence;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  items[5] = _mod1654.withRepeat;
+  items[6] = _mod1654.withSequence;
   items[7] = timing_timing.withTiming;
-  items[8] = _mod1653.withDelay;
+  items[8] = _mod1654.withDelay;
   items[9] = 750;
   items[10] = 2000;
   let c0;
@@ -133,8 +133,8 @@ export function ButtonShine(variant) {
   const tmp2 = useShineEffectStyles(tmp[0], variant);
   const shineStyles = tmp2.shineStyles;
   const items = [shineStyles.shineContainer, tmp2.shineAnimatedStyle];
-  const View = _modDef1653.View;
-  const View2 = _modDef1653.View;
+  const View = _modDef1654.View;
+  const View2 = _modDef1654.View;
   return <View onLayout={function onLayout(nativeEvent) {
     return closure_0(nativeEvent.nativeEvent.layout.width);
   }} style={items}>{null}</View>;

@@ -1,13 +1,13 @@
-// Module ID: 11313
-// Function ID: 11314
+// Module ID: 11359
+// Function ID: 11360
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1071, 5761, 6015, 1112, 1284, 5019, 2]
+// Dependencies: [5, 1071, 5792, 6046, 1112, 1285, 5050, 2]
 
-// Module 11313 (GameRelationshipActionCreators)
+// Module 11359 (GameRelationshipActionCreators)
 import intl3 from "intl" /* 1112 */;
-import shared from "shared" /* 5019 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5761 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
+import shared from "shared" /* 5050 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5792 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -136,7 +136,7 @@ obj = {
     }
     ({ userId, applicationId } = arg0);
     const FRIEND = constants.FRIEND;
-    const HTTP = onSuccess(1284).HTTP;
+    const HTTP = onSuccess(1285).HTTP;
     const request = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: FRIEND }, oldFormErrors: true, rejectWithError: false };
     const putResult = HTTP.put(request);
     const nextPromise = putResult.then(() => {

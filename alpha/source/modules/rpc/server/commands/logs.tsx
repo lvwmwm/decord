@@ -1,13 +1,13 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 15908
+// Function ID: 15909
 // Name: logs
-// Dependencies: [1071, 3, 15822, 10179, 2]
+// Dependencies: [1071, 3, 15873, 10221, 2]
 
-// Module 15857 (logs)
+// Module 15908 (logs)
 import LoggerDefault from "Logger" /* 3 */;
-import RPCHelpers from "RPCHelpers" /* 10179 */;
+import RPCHelpers from "RPCHelpers" /* 10221 */;
 import Constants from "Constants" /* 1071 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15822 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15873 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

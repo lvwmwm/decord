@@ -1,24 +1,24 @@
-// Module ID: 18072
-// Function ID: 18073
+// Module ID: 18131
+// Function ID: 18132
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 5012, 575, 5576, 17693, 1653, 7024, 2]
+// Dependencies: [19, 21, 5043, 575, 5607, 17750, 1654, 7055, 2]
 
-// Module 18072 (GuildsBarSeparator)
+// Module 18131 (GuildsBarSeparator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import useToken from "useToken" /* 5576 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17693 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import useToken from "useToken" /* 5607 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17750 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj1;
 
 let tmp2;
 let tmp3;
-const _modDef1653 = tmp3(1653);
-const NativeViewDefault = tmp2(7024);
+const _modDef1654 = tmp3(1654);
+const NativeViewDefault = tmp2(7055);
 function GuildsBarHomeDrawerSeparator(guildItemSize) {
   let tmp5;
   let tmp6;
@@ -35,7 +35,7 @@ function GuildsBarHomeDrawerSeparator(guildItemSize) {
   let c1;
   let c2;
   [tmp5, tmp6, tmp7, tmp8] = items;
-  const obj3 = _mod1653;
+  const obj3 = _mod1654;
   class GuildsBarSeparatorTsx1 {
     constructor() {
       obj = { backgroundColor: closure_0, transform: null };
@@ -52,7 +52,7 @@ function GuildsBarHomeDrawerSeparator(guildItemSize) {
   GuildsBarSeparatorTsx1.__initData = tmp5;
   const animatedStyle = obj3.useAnimatedStyle(GuildsBarSeparatorTsx1);
   const items2 = [tmp.separator, animatedStyle];
-  return jsx(_modDef1653.View, { style: items2 });
+  return jsx(_modDef1654.View, { style: items2 });
 }
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles((width) => {

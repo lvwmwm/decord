@@ -1,16 +1,16 @@
-// Module ID: 9365
-// Function ID: 9366
+// Module ID: 9407
+// Function ID: 9408
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 4883, 7559, 1071, 9366, 7557, 1098, 8893, 7785, 2]
+// Dependencies: [5, 4914, 7590, 1071, 9408, 7588, 1098, 8935, 7819, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 9365 (navigateToSocialLayerStorefront)
+// Module 9407 (navigateToSocialLayerStorefront)
 import router_utils from "router_utils" /* 1098 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7557 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 9366 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7588 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 9408 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7559 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7590 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -121,7 +121,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
                 }
               } else {
                 c4 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
             }
           } else if (2 === c3) {

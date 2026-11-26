@@ -1,24 +1,29 @@
-// Module ID: 17990
-// Function ID: 17991
+// Module ID: 18050
+// Function ID: 18051
 // Name: useInterestRowVisibility
-// Dependencies: [32, 19, 2]
+// Dependencies: [32, 19, 7328, 2]
 // Exports: default
 
-// Module 17990 (useInterestRowVisibility)
+// Module 18050 (useInterestRowVisibility)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let map;
+const require = globalThis.__r;
+let importDefault, map;
 
+let react = react_mod;
 let result = size.fileFinishedImporting("modules/waterwheels/interest/native/useInterestRowVisibility.tsx");
 
 export default function useInterestRowVisibility(arg0) {
+  let closure_0;
   let items2;
   let items3;
   let items4;
   let items5;
-  let closure_0 = arg0;
+  let ref;
+  let tmp4;
+  importDefault = arg0;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = true;
@@ -27,47 +32,51 @@ export default function useInterestRowVisibility(arg0) {
   if (arg2 === undefined) {
     num = 0;
   }
-  const ref = flag.useRef(0);
-  const useRef = flag.useRef;
+  react = undefined;
+  react = react.useRef(0);
+  const useRef = react.useRef;
   map = new Map();
-  const ref2 = useRef(map);
-  const ref3 = flag.useRef({ offset: 0, height: 0 });
-  const ref4 = flag.useRef(null);
+  let closure_4 = useRef(map);
+  const ref2 = react.useRef({ offset: 0, height: 0 });
+  const ref3 = react.useRef(null);
+  const ref4 = react.useRef(true);
   const items = [flag, num, arg0];
-  const callback = flag.useCallback(() => {
+  const callback = react.useCallback(() => {
     let tmp10;
-    let tmp9;
+    let tmp11;
     const tmp = flag;
     if (tmp) {
-      if (null != num) {
-        if (null != ref4.current) {
-          if (ref3.current.height > num) {
-            const offset = tmp26.current.offset;
-            const current = ref2.current;
-            const diff = offset + tmp26.current.height - tmp2;
-            const tmp30 = current[Symbol.iterator]();
-            while (tmp30 !== undefined) {
-              let tmp8 = _slicedToArray(tmp5, 2);
-              [tmp9, tmp10] = tmp8;
-              let sum = ref4.current + tmp10.y;
-              let tmp14 = tmp10.height > 0;
-              let tmp11 = tmp10;
-              if (tmp14) {
-                tmp14 = sum < diff;
-              }
-              if (tmp14) {
-                tmp14 = sum + tmp11.height > offset;
-              }
-              if (tmp14) {
-                tmp14 = tmp9 > ref.current;
-              }
-              if (tmp14) {
-                ref.current = tmp9;
-                if (closure_0 != null) {
-                  let tmp22Result = tmp22(tmp9);
+      if (ref4.current) {
+        if (null != num) {
+          if (null != ref3.current) {
+            if (ref2.current.height > num) {
+              const offset = tmp27.current.offset;
+              const current = closure_4.current;
+              const diff = offset + tmp27.current.height - tmp3;
+              const tmp31 = current[Symbol.iterator]();
+              while (tmp31 !== undefined) {
+                let tmp9 = _slicedToArray(tmp6, 2);
+                [tmp10, tmp11] = tmp9;
+                let sum = ref3.current + tmp11.y;
+                let tmp15 = tmp11.height > 0;
+                let tmp12 = tmp11;
+                if (tmp15) {
+                  tmp15 = sum < diff;
                 }
+                if (tmp15) {
+                  tmp15 = sum + tmp12.height > offset;
+                }
+                if (tmp15) {
+                  tmp15 = tmp10 > ref.current;
+                }
+                if (tmp15) {
+                  ref.current = tmp10;
+                  if (closure_0 != null) {
+                    let tmp23Result = tmp23(tmp10);
+                  }
+                }
+                continue;
               }
-              continue;
             }
           }
         }
@@ -75,43 +84,53 @@ export default function useInterestRowVisibility(arg0) {
     }
   }, items);
   const items1 = [flag, callback];
-  const layoutEffect = flag.useLayoutEffect(() => {
+  const layoutEffect = react.useLayoutEffect(() => {
     const tmp = flag;
     if (!tmp) {
-      const current = ref2.current;
+      const current = closure_4.current;
       current.clear();
     }
     callback();
   }, items1);
   let obj = {
-    onScroll: flag.useCallback((offset, height) => {
+    onScroll: react.useCallback((offset, height) => {
       const obj = { offset, height };
-      ref3.current = obj;
+      ref2.current = obj;
       callback();
     }, items2),
-    onScrollTo: flag.useCallback((offset) => {
-      ref3.current.offset = offset;
+    onScrollTo: react.useCallback((offset) => {
+      ref2.current.offset = offset;
     }, []),
-    onViewportLayout: flag.useCallback((nativeEvent) => {
-      ref3.current.height = nativeEvent.nativeEvent.layout.height;
+    onViewportLayout: react.useCallback((nativeEvent) => {
+      ref2.current.height = nativeEvent.nativeEvent.layout.height;
       callback();
     }, items3),
-    onContentLayout: flag.useCallback((nativeEvent) => {
-      ref4.current = nativeEvent.nativeEvent.layout.y;
+    onContentLayout: react.useCallback((nativeEvent) => {
+      ref3.current = nativeEvent.nativeEvent.layout.y;
       callback();
     }, items4),
-    onRowLayout: flag.useCallback((arg0, nativeEvent) => {
+    onRowLayout: react.useCallback((arg0, nativeEvent) => {
       const tmp = flag;
       if (tmp) {
-        const current = ref2.current;
+        const current = closure_4.current;
         const result = current.set(arg0, nativeEvent.nativeEvent.layout);
         callback();
       }
-    }, items5)
+    }, items5),
+    setGridRevealed: tmp4
   };
   items2 = [callback];
   items3 = [callback];
   items4 = [callback];
   items5 = [flag, callback];
+  tmp4 = require("useStableCallback")((current) => {
+    ref4.current = current;
+    if (current) {
+      callback();
+    } else {
+      current = closure_4.current;
+      current.clear();
+    }
+  });
   return obj;
 };

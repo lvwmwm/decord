@@ -1,17 +1,17 @@
-// Module ID: 8750
-// Function ID: 8751
+// Module ID: 8792
+// Function ID: 8793
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2140, 4863, 5731, 1071, 8722, 504, 1088, 7785, 8677, 2]
+// Dependencies: [5, 19, 2141, 4894, 5762, 1071, 8764, 504, 1088, 7819, 8719, 2]
 // Exports: default, hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 8750 (useGameProfileInvite)
+// Module 8792 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1088 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7785 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7819 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2140 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4863 */;
-import InviteStore from "InviteStore" /* 5731 */;
+import GameStore from "GameStore" /* 2141 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4894 */;
+import InviteStore from "InviteStore" /* 5762 */;
 import Constants from "Constants" /* 1071 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f93880 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f94162 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -96,7 +96,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: "+95" };
     }
   } else {
     try {
@@ -136,7 +136,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
         throw error;
       }
       c4 = 3;
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: "+95" };
     } catch (tmp19) {
       c4 = 3;
       throw tmp19;
@@ -159,7 +159,7 @@ export default function useGameProfileInvite(websites, set) {
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f93880);
+      found = websites.find(f94162);
     }
   }
   let arr;
@@ -247,7 +247,7 @@ export function preloadGameProfileInvite(arg0) {
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f93880);
+        found = websites.find(f94162);
       }
     }
     let arr;

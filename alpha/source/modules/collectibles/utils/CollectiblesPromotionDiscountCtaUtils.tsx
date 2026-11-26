@@ -1,14 +1,14 @@
-// Module ID: 11575
-// Function ID: 11576
+// Module ID: 11623
+// Function ID: 11624
 // Name: CollectiblesPromotionDiscountCtaUtils
-// Dependencies: [11231, 11206, 11203, 11208, 1112, 2]
+// Dependencies: [11277, 11252, 11249, 11254, 1112, 2]
 // Exports: useDiscountPromotionPurchaseCtaText
 
-// Module 11575 (CollectiblesPromotionDiscountCtaUtils)
-import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 11203 */;
-import CollectiblesStorefrontPricingIntegrationExperiment from "CollectiblesStorefrontPricingIntegrationExperiment" /* 11206 */;
-import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 11208 */;
-import useCollectiblesPromotionForProduct from "useCollectiblesPromotionForProduct" /* 11231 */;
+// Module 11623 (CollectiblesPromotionDiscountCtaUtils)
+import CollectiblesTargetedOfferPromotionUtils from "CollectiblesTargetedOfferPromotionUtils" /* 11249 */;
+import CollectiblesStorefrontPricingIntegrationExperiment from "CollectiblesStorefrontPricingIntegrationExperiment" /* 11252 */;
+import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 11254 */;
+import useCollectiblesPromotionForProduct from "useCollectiblesPromotionForProduct" /* 11277 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionDiscountCtaUtils.tsx");

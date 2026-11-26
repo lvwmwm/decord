@@ -1,8 +1,8 @@
-// Module ID: 5170
-// Function ID: 5171
+// Module ID: 5201
+// Function ID: 5202
 // Dependencies: [2]
 
-// Module 5170
+// Module 5201
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/QuestBar_2DOrbs.riv.js");

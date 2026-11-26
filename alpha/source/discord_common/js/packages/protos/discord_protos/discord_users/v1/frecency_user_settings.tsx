@@ -1,9 +1,9 @@
-// Module ID: 1231
-// Function ID: 1232
+// Module ID: 1232
+// Function ID: 1233
 // Name: frecency_user_settings
 // Dependencies: [32, 1196, 1224, 2]
 
-// Module 1231 (frecency_user_settings)
+// Module 1232 (frecency_user_settings)
 import _mod1196 from "module_1196" /* 1196 */;
 import user_settings_shared from "user_settings_shared" /* 1224 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

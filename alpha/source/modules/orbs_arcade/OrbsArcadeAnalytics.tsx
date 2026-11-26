@@ -1,14 +1,14 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16638
+// Function ID: 16639
 // Name: OrbsArcadeAnalytics
-// Dependencies: [9399, 16577, 1071, 1255, 2]
+// Dependencies: [9441, 16628, 1071, 1256, 2]
 // Exports: trackOrbsArcadeCtaClicked, trackOrbsArcadeGameClosed, trackOrbsArcadeGameTileViewed
 
-// Module 16587 (OrbsArcadeAnalytics)
+// Module 16638 (OrbsArcadeAnalytics)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9399 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16577 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9441 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16628 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/waterwheels", scales: [1], hash: "42a3603c57743dd3e04d841666369049", name: "Waterwheels.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy93YXRlcndoZWVscw==", scales: [1], hash: "f4b703c6a619c92394c1e23f267397ef", name: "zh-TW.messages.f4b703c6a619c92394c1e23f267397ef.compiled.messages", type: "jsona" });

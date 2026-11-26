@@ -1,19 +1,19 @@
-// Module ID: 14893
-// Function ID: 14894
+// Module ID: 10398
+// Function ID: 10399
 // Name: Slider
-// Dependencies: [32, 19, 17, 21, 5012, 575, 5073, 8817, 5228, 5229, 5177, 14894, 14895, 1378, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 5104, 8859, 5259, 5260, 5208, 10399, 10400, 1379, 2]
 // Exports: Slider, useLatestSliderValue
 
-// Module 14893 (Slider)
+// Module 10398 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5228 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5229 */;
-import _modDef8817 from "module_8817" /* 8817 */;
+import HapticUtils from "HapticUtils" /* 5259 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5260 */;
+import _modDef8859 from "module_8859" /* 8859 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -96,7 +96,7 @@ export function Slider(maxValue) {
   ({ accessibilityLabel, accessibilityHint, testID } = maxValue);
   const tmp = closure_8();
   const tmp2 = step;
-  let obj = step(5073);
+  let obj = step(5104);
   const theme = obj.useThemeContext().theme;
   [first, _slicedToArray] = react.useState(false);
   let tmp7 = defaultValue;
@@ -182,15 +182,15 @@ export function Slider(maxValue) {
     testID,
     onResponderGrant: fn
   };
-  const tmp24 = _modDef8817;
+  const tmp24 = _modDef8859;
   if (value == null) {
     value = first1;
   }
-  const tmp2Result = tmp2(5177);
+  const tmp2Result = tmp2(5208);
   if (tmp2Result.isThemeDark(theme)) {
-    tmp2Result3 = tmp2(14894);
+    tmp2Result3 = tmp2(10399);
   } else {
-    tmp2Result3 = tmp2(14895);
+    tmp2Result3 = tmp2(10400);
   }
   tmp26 = undefined;
   if (null != formatValue) {
@@ -198,7 +198,7 @@ export function Slider(maxValue) {
     const obj6 = { text: formatValue(first2) };
   }
   fn = undefined;
-  const tmp2Result4 = tmp2(1378);
+  const tmp2Result4 = tmp2(1379);
   if (tmp2Result4.isAndroid()) {
     fn = () => true;
   }

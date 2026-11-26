@@ -1,21 +1,21 @@
-// Module ID: 17672
-// Function ID: 17673
+// Module ID: 17729
+// Function ID: 17730
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 17, 21, 5012, 575, 1628, 1653, 8971, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 1629, 1654, 9013, 2]
 // Exports: default
 
-// Module 17672 (ChannelScreenAnimatedFrame)
+// Module 17729 (ChannelScreenAnimatedFrame)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8971 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9013 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1653 = _mod1653;
+const _modDef1654 = _mod1654;
 let num2, opacity, tmp2, tmp3, tmp4, tmp5;
 
 let c3;
@@ -59,11 +59,11 @@ export default function ChannelScreenAnimatedFrame(arg0) {
   const tmp = closure_6();
   const top = useSafeAreaInsetsDefault().top;
   let items = [closure_7, isChatLockedOpen, , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  items[2] = _mod1653.interpolate;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  items[2] = _mod1654.interpolate;
   items[3] = translateX;
   items[4] = maxWidth;
-  items[5] = _mod1653.Extrapolation;
+  items[5] = _mod1654.Extrapolation;
   let c0;
   let c1;
   let c2;
@@ -93,12 +93,12 @@ export default function ChannelScreenAnimatedFrame(arg0) {
   ChannelScreenAnimatedFrameTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(ChannelScreenAnimatedFrameTsx1);
   const items2 = [closure_8, isChatLockedOpen, , , , ];
-  const useAnimatedStyle2 = tmp4(1653).useAnimatedStyle;
-  _mod1653;
-  items2[2] = _mod1653.interpolate;
+  const useAnimatedStyle2 = tmp4(1654).useAnimatedStyle;
+  _mod1654;
+  items2[2] = _mod1654.interpolate;
   items2[3] = translateX;
   items2[4] = maxWidth;
-  items2[5] = _mod1653.Extrapolation;
+  items2[5] = _mod1654.Extrapolation;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -133,9 +133,9 @@ export default function ChannelScreenAnimatedFrame(arg0) {
   const gradientTop = tmp4Result2.useGradientTop();
   const obj2 = { pointerEvents: "none", style: items4 };
   items4 = [tmp.container, { height: top }, gradientTop, animatedStyle];
-  items5 = [_false(tmp2(1653).View, obj2), ];
+  items5 = [_false(tmp2(1654).View, obj2), ];
   const obj3 = { pointerEvents: "none", style: items6 };
   items6 = [tmp.splitDivider, { top }, animatedStyle2];
-  items5[1] = _false(_modDef1653.View, obj3);
+  items5[1] = _false(_modDef1654.View, obj3);
   return hasOwnProperty(constants, obj);
 };

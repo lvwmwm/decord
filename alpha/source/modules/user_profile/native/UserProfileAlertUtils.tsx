@@ -1,19 +1,19 @@
-// Module ID: 13566
-// Function ID: 13567
+// Module ID: 13618
+// Function ID: 13619
 // Name: UserProfileAlertUtils
-// Dependencies: [19, 21, 6017, 13567, 13568, 13569, 13570, 13571, 13572, 13573, 2]
+// Dependencies: [19, 21, 6048, 13619, 13620, 13621, 13622, 13623, 13624, 13625, 2]
 // Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmRemoveWidget, confirmThreadRemove, confirmVideoUnstableConnection
 
-// Module 13566 (UserProfileAlertUtils)
+// Module 13618 (UserProfileAlertUtils)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 6017 */;
-import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 13567 */;
-import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 13568 */;
-import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 13569 */;
-import UserProfileConfirmVideoUnstableConnectionDefault from "UserProfileConfirmVideoUnstableConnection" /* 13570 */;
-import UserProfileAlertUserReportedDefault from "UserProfileAlertUserReported" /* 13571 */;
-import UserProfileConfirmThreadRemoveDefault from "UserProfileConfirmThreadRemove" /* 13572 */;
-import UserProfileConfirmRemoveWidgetDefault from "UserProfileConfirmRemoveWidget" /* 13573 */;
+import useAlertStore from "useAlertStore" /* 6048 */;
+import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 13619 */;
+import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 13620 */;
+import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 13621 */;
+import UserProfileConfirmVideoUnstableConnectionDefault from "UserProfileConfirmVideoUnstableConnection" /* 13622 */;
+import UserProfileAlertUserReportedDefault from "UserProfileAlertUserReported" /* 13623 */;
+import UserProfileConfirmThreadRemoveDefault from "UserProfileConfirmThreadRemove" /* 13624 */;
+import UserProfileConfirmRemoveWidgetDefault from "UserProfileConfirmRemoveWidget" /* 13625 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

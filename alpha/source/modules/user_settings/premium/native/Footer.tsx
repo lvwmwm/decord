@@ -1,21 +1,21 @@
-// Module ID: 13902
-// Function ID: 13903
+// Module ID: 13954
+// Function ID: 13955
 // Name: Footer
-// Dependencies: [19, 17, 21, 5012, 13903, 6349, 5603, 1112, 5610, 5699, 13904, 2]
+// Dependencies: [19, 17, 21, 5043, 13955, 6380, 5634, 1112, 5641, 5730, 13956, 2]
 // Exports: default
 
-// Module 13902 (Footer)
+// Module 13954 (Footer)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6349 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13903 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13904 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6380 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 13955 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13956 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,23 +1,23 @@
-// Module ID: 19462
-// Function ID: 19463
+// Module ID: 19525
+// Function ID: 19526
 // Name: VoicePanelVoiceChannelApp
-// Dependencies: [19, 17, 4861, 6934, 11732, 21, 5012, 575, 11733, 5576, 2021, 19395, 1653, 19463, 1706, 19464, 18189, 19420, 504, 2]
+// Dependencies: [19, 17, 4892, 6965, 11780, 21, 5043, 575, 11781, 5607, 2022, 19458, 1654, 19526, 1707, 19527, 18248, 19483, 504, 2]
 // Exports: default
 
-// Module 19462 (VoicePanelVoiceChannelApp)
+// Module 19525 (VoicePanelVoiceChannelApp)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 2021 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11732 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11733 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18189 */;
-import useControlsLockDefault from "useControlsLock" /* 19395 */;
-import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 19420 */;
+import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 2022 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11780 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11781 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18248 */;
+import useControlsLockDefault from "useControlsLock" /* 19458 */;
+import useVoiceChannelAppSurface from "useVoiceChannelAppSurface" /* 19483 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import VoicePanelStore from "VoicePanelStore" /* 6934 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import VoicePanelStore from "VoicePanelStore" /* 6965 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ let _require;
 
 let obj2;
 let tmp2;
-const _modDef1653 = tmp2(1653);
+const _modDef1654 = tmp2(1654);
 function VoiceChannelAppLayer(channel) {
   let closure_0;
   let safeArea;
@@ -61,7 +61,7 @@ function VoiceChannelAppLayer(channel) {
   const items1 = [closure_9, controlsSpecs];
   let c0;
   [tmp11, tmp12] = items1;
-  const tmp10 = require("module_1653");
+  const tmp10 = require("module_1654");
   class VoicePanelVoiceChannelAppTsx1 {
     constructor() {
       return _undefined.get().mode;
@@ -74,7 +74,7 @@ function VoiceChannelAppLayer(channel) {
   const items3 = [closure_10, , , ];
   const useAnimatedReaction = tmp10.useAnimatedReaction;
   items3[1] = require("voiceChannelAppLayerLayout").shouldRestoreVoiceChannelAppControls;
-  items3[2] = require("module_1706").scheduleOnRN;
+  items3[2] = require("module_1707").scheduleOnRN;
   items3[3] = showControls;
   c0 = undefined;
   let c1;
@@ -93,8 +93,8 @@ function VoiceChannelAppLayer(channel) {
   VoicePanelVoiceChannelAppTsx2.__initData = tmp13;
   const animatedReaction = useAnimatedReaction(VoicePanelVoiceChannelAppTsx1, VoicePanelVoiceChannelAppTsx2);
   const items5 = [closure_11, , , , , ];
-  const useAnimatedStyle = require("module_1653").useAnimatedStyle;
-  require("module_1653");
+  const useAnimatedStyle = require("module_1654").useAnimatedStyle;
+  require("module_1654");
   items5[1] = require("voiceChannelAppLayerLayout").getVoiceChannelAppLayerInsets;
   items5[2] = safeArea;
   items5[3] = token;
@@ -118,7 +118,7 @@ function VoiceChannelAppLayer(channel) {
   VoicePanelVoiceChannelAppTsx3.__initData = tmp19;
   const animatedStyle = useAnimatedStyle(VoicePanelVoiceChannelAppTsx3);
   const items7 = [tmp.layer, animatedStyle];
-  const View = _modDef1653.View;
+  const View = _modDef1654.View;
   return <View style={items7}>{null}</View>;
 }
 function VoicePanelVoiceChannelAppForChannel(channel) {

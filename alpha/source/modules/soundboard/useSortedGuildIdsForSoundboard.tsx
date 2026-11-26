@@ -1,17 +1,17 @@
-// Module ID: 18174
-// Function ID: 18175
+// Module ID: 18233
+// Function ID: 18234
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 4944, 6133, 1386, 1071, 1082, 563, 2173, 2]
+// Dependencies: [19, 4975, 6164, 1387, 1071, 1082, 563, 2174, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 18174 (useSortedGuildIdsForSoundboard)
+// Module 18233 (useSortedGuildIdsForSoundboard)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import SortedGuildStore from "SortedGuildStore" /* 6133 */;
-import UserStore from "UserStore" /* 1386 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import SortedGuildStore from "SortedGuildStore" /* 6164 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

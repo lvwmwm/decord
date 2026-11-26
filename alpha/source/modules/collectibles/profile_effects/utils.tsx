@@ -1,10 +1,10 @@
-// Module ID: 9429
-// Function ID: 9430
+// Module ID: 9471
+// Function ID: 9472
 // Name: utils
 // Dependencies: [32, 19, 12, 2]
 // Exports: sortEffectLayers, usePotentiallyRandomizedProfileEffect
 
-// Module 9429 (utils)
+// Module 9471 (utils)
 import _mod12 from "module_12" /* 12 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -32,7 +32,7 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
   let tmp6;
   let tmp8;
   let tmp9;
-  const f95670 = (acc, randomizedSources) => {
+  const f95952 = (acc, randomizedSources) => {
     randomizedSources = randomizedSources.randomizedSources;
     let num;
     if (randomizedSources != null) {
@@ -52,7 +52,7 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
     }
     return tmp;
   };
-  const f95671 = (randomizedSources) => {
+  const f95953 = (randomizedSources) => {
     const tmp = null != randomizedSources.randomizedSources && randomizedSources.randomizedSources.length > 0;
     if (tmp) {
       randomizedSources.src = randomizedSources.randomizedSources[rounded1].src;
@@ -74,7 +74,7 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
     const obj2 = _mod12;
     const cloneDeepResult = obj2.cloneDeep(arg0);
     const effects = cloneDeepResult.effects;
-    const reduced = effects.reduce(f95670, 0);
+    const reduced = effects.reduce(f95952, 0);
     if (null == tmp) {
       let num = 1;
       const _Math2 = Math;
@@ -86,7 +86,7 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
       rounded = Math.floor(tmp * reduced);
     }
     const effects1 = cloneDeepResult.effects;
-    cloneDeepResult.effects = effects1.map(f95671);
+    cloneDeepResult.effects = effects1.map(f95953);
     tmp10 = cloneDeepResult;
   }
   [tmp16, tmp17] = _slicedToArray(useState(tmp10), 2);
@@ -102,7 +102,7 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
       const tmp18Result = _mod12;
       const cloneDeepResult1 = tmp18Result.cloneDeep(arg0);
       const effects2 = cloneDeepResult1.effects;
-      const reduced1 = effects2.reduce(f95670, 0);
+      const reduced1 = effects2.reduce(f95952, 0);
       if (null == tmp) {
         const _Math5 = Math;
         const _Math6 = Math;
@@ -113,7 +113,7 @@ export function usePotentiallyRandomizedProfileEffect(arg0) {
         rounded1 = Math.floor(tmp * reduced1);
       }
       const effects3 = cloneDeepResult1.effects;
-      cloneDeepResult1.effects = effects3.map(f95671);
+      cloneDeepResult1.effects = effects3.map(f95953);
       tmp23 = cloneDeepResult1;
     }
     tmp17(tmp23);

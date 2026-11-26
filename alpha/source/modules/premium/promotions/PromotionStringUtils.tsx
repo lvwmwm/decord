@@ -1,22 +1,22 @@
-// Module ID: 13819
-// Function ID: 13820
+// Module ID: 13871
+// Function ID: 13872
 // Name: PromotionStringUtils
-// Dependencies: [2177, 1388, 504, 2173, 6294, 1112, 2187, 2]
+// Dependencies: [2178, 1389, 504, 2174, 6325, 1112, 2188, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 13819 (PromotionStringUtils)
+// Module 13871 (PromotionStringUtils)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2177 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const PriceUtils = tmp(6294);
+const PriceUtils = tmp(6325);
 ({ PremiumSubscriptionSKUs: closure_4, SubscriptionPlans: hasOwnProperty } = PremiumConstants);
 const result = size.fileFinishedImporting("modules/premium/promotions/PromotionStringUtils.tsx");
 

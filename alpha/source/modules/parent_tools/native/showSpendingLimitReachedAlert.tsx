@@ -1,15 +1,15 @@
-// Module ID: 9114
-// Function ID: 9115
+// Module ID: 9156
+// Function ID: 9157
 // Name: showSpendingLimitReachedAlert
-// Dependencies: [5761, 5763, 8169, 6016, 1112, 9115, 6324, 5693, 2846, 2]
+// Dependencies: [5792, 5794, 8211, 6047, 1112, 9157, 6355, 5724, 2847, 2]
 // Exports: isSpendingLimitError, showSpendingLimitReachedAlert
 
-// Module 9114 (showSpendingLimitReachedAlert)
-import _modDef2846 from "module_2846" /* 2846 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5761 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6016 */;
-import LayerActionCreators from "LayerActionCreators" /* 6324 */;
-import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9115 */;
+// Module 9156 (showSpendingLimitReachedAlert)
+import _modDef2847 from "module_2847" /* 2847 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5792 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6047 */;
+import LayerActionCreators from "LayerActionCreators" /* 6355 */;
+import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9157 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/native/showSpendingLimitReachedAlert.tsx");
@@ -17,8 +17,8 @@ const result = size.fileFinishedImporting("modules/parent_tools/native/showSpend
 export function isSpendingLimitError(billingError) {
   let tmp3 = billingError instanceof V6OrEarlierAPIError.BillingError;
   if (tmp3) {
-    tmp3 = billingError.code === tmp(5763).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(5763).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
-    const tmp4 = billingError.code === tmp(5763).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(5763).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+    tmp3 = billingError.code === tmp(5794).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(5794).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
+    const tmp4 = billingError.code === tmp(5794).ErrorCodes.BILLING_SPENDING_LIMIT_REACHED || billingError.code === tmp(5794).ErrorCodes.BILLING_SPENDING_LIMIT_WILL_EXCEED;
   }
   return tmp3;
 }
@@ -30,7 +30,7 @@ export function showSpendingLimitReachedAlert() {
   let intl4;
   let obj4;
   let tmp = activeLinkUserIds;
-  let obj = activeLinkUserIds(8169);
+  let obj = activeLinkUserIds(8211);
   activeLinkUserIds = obj.getActiveLinkUserIds();
   const obj2 = { title: intl.string(activeLinkUserIds(1112).t.QJKKrT), body: intl2.string(activeLinkUserIds(1112).t["73Islf"]), isDismissable: true };
   const show = actions_AlertActionCreatorsDefault.show;
@@ -48,7 +48,7 @@ export function showSpendingLimitReachedAlert() {
             activeLinkUserIds(dependencyMap[7]);
             const intl = activeLinkUserIds(dependencyMap[4]).intl;
             const obj = { count: length.length };
-            return presentFailedToast(intl.formatToPlainString(_modDef2846.D1BwNC, obj));
+            return presentFailedToast(intl.formatToPlainString(_modDef2847.D1BwNC, obj));
           });
         },
       cancelText: intl4.string(tmp(1112).t.L5eIZ2)

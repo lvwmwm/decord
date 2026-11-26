@@ -1,11 +1,11 @@
-// Module ID: 7062
-// Function ID: 7063
+// Module ID: 7093
+// Function ID: 7094
 // Name: MarkupListRule
-// Dependencies: [2068, 38, 2]
+// Dependencies: [2069, 38, 2]
 
-// Module 7062 (MarkupListRule)
+// Module 7093 (MarkupListRule)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef2068 from "module_2068" /* 2068 */;
+import _modDef2069 from "module_2069" /* 2069 */;
 import size from "module_2" /* 2 */;
 
 let _listLevel, closure_4, dependencyMap, importDefault;
@@ -138,7 +138,7 @@ let obj = {
     return obj;
   }
 };
-let merged = Object.assign(_modDef2068.defaultRules.list);
+let merged = Object.assign(_modDef2069.defaultRules.list);
 const result = size.fileFinishedImporting("modules/markup/MarkupListRule.tsx");
 
 export default obj;

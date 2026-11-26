@@ -1,12 +1,12 @@
-// Module ID: 8168
-// Function ID: 8169
+// Module ID: 8210
+// Function ID: 8211
 // Name: useUserIsTeen
-// Dependencies: [1386, 504, 2]
+// Dependencies: [1387, 504, 2]
 // Exports: useUserIsTeen
 
-// Module 8168 (useUserIsTeen)
+// Module 8210 (useUserIsTeen)
 import get_initialized from "get initialized" /* 504 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

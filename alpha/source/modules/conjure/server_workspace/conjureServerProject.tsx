@@ -1,13 +1,13 @@
-// Module ID: 7544
-// Function ID: 7545
+// Module ID: 7575
+// Function ID: 7576
 // Name: conjureServerProject
-// Dependencies: [6903, 7545, 7546, 2]
+// Dependencies: [6934, 7576, 7577, 2]
 // Exports: conjureProjectRoute, conjureServerProjectGuildId, getConjureServerProjects
 
-// Module 7544 (conjureServerProject)
-import ConjureActivity from "ConjureActivity" /* 7545 */;
-import conjurePageRoutes from "conjurePageRoutes" /* 7546 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+// Module 7575 (conjureServerProject)
+import ConjureActivity from "ConjureActivity" /* 7576 */;
+import conjurePageRoutes from "conjurePageRoutes" /* 7577 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/server_workspace/conjureServerProject.tsx");

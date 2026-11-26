@@ -1,10 +1,10 @@
-// Module ID: 7289
-// Function ID: 7290
+// Module ID: 7320
+// Function ID: 7321
 // Name: makePasswordResetLink
 // Dependencies: [1071, 2]
 // Exports: default
 
-// Module 7289 (makePasswordResetLink)
+// Module 7320 (makePasswordResetLink)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

@@ -1,27 +1,27 @@
-// Module ID: 14988
-// Function ID: 14989
+// Module ID: 15038
+// Function ID: 15039
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1071, 4858, 21, 5012, 575, 1195, 1112, 8168, 4837, 4845, 9519, 5603, 8067, 5716, 6121, 7216, 2]
+// Dependencies: [32, 19, 17, 1071, 4889, 21, 5043, 575, 1195, 1112, 8210, 4868, 4876, 9561, 5634, 8109, 5747, 6152, 7247, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 14988 (UserProfilePrivacyNotice)
+// Module 15038 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import dismissible_content from "dismissible_content" /* 4845 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5716 */;
-import XSmallIcon from "XSmallIcon" /* 7216 */;
-import useUserIsTeen from "useUserIsTeen" /* 8168 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9519 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import dismissible_content from "dismissible_content" /* 4876 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5747 */;
+import XSmallIcon from "XSmallIcon" /* 7247 */;
+import useUserIsTeen from "useUserIsTeen" /* 8210 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9561 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,7 +55,7 @@ export default function UserProfilePrivacyNotice() {
     if (tmp) {
       const tmp3 = require;
       if (setting !== preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
-        const items = [tmp3(4845).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
+        const items = [tmp3(4876).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
       }
       return [];
     }
@@ -94,7 +94,7 @@ export default function UserProfilePrivacyNotice() {
     const obj4 = { style: tmp.icon, children: closure_7(CircleInformationIcon.CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
     items1 = [closure_7(View, obj4), , ];
     const obj5 = { style: tmp.text, variant: "body-sm/normal", color: "text-default", children: intl.format(dqQ7AN, obj6) };
-    const Text = tmp2(5603).Text;
+    const Text = tmp2(5634).Text;
     intl = tmp2(1112).intl;
     obj6 = { privacySettingsLink: callback };
     items1[1] = closure_7(Text, obj5);
@@ -107,7 +107,7 @@ export default function UserProfilePrivacyNotice() {
       style: tmp.closeButton,
       children: closure_7(XSmallIcon.XSmallIcon, { size: "xs", color: "icon-feedback-info" })
     };
-    const PressableOpacity = tmp2(6121).PressableOpacity;
+    const PressableOpacity = tmp2(6152).PressableOpacity;
     intl2 = tmp2(1112).intl;
     items1[2] = closure_7(PressableOpacity, obj7);
     return closure_8(View, obj3);
@@ -126,7 +126,7 @@ export function useIsPrivacyNoticeVisible() {
     if (tmp) {
       const tmp3 = require;
       if (setting !== preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
-        const items = [tmp3(4845).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
+        const items = [tmp3(4876).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
       }
       return [];
     }

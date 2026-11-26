@@ -1,15 +1,15 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16609
+// Function ID: 16610
 // Name: applyHexagonCampaignPerks
-// Dependencies: [5, 1386, 15779, 5037, 1239, 13849, 16559, 5040, 16560, 15982, 16561, 5038, 16564, 16565, 2]
+// Dependencies: [5, 1387, 15830, 5068, 1240, 13901, 16610, 5071, 16611, 16059, 16612, 5069, 16615, 16616, 2]
 // Exports: applyHexagonCampaignPerks
 
-// Module 16558 (applyHexagonCampaignPerks)
-import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5037 */;
+// Module 16609 (applyHexagonCampaignPerks)
+import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1386 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15779 */;
+import UserStore from "UserStore" /* 1387 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15830 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
@@ -36,7 +36,7 @@ let obj = function _applyHexagonCampaignPerks() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -93,7 +93,7 @@ let obj = function _applyHexagonCampaignPerks() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: "+95" };
                   }
                 } else {
                   try {

@@ -1,10 +1,10 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12320
+// Function ID: 12321
 // Name: RecentBuildOverrides
 // Dependencies: [510, 2]
 // Exports: getRecentDeviceBuildOverrides, recordDeviceBuildOverride
 
-// Module 12270 (RecentBuildOverrides)
+// Module 12320 (RecentBuildOverrides)
 import Storage3 from "Storage" /* 510 */;
 import size from "module_2" /* 2 */;
 

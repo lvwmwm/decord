@@ -1,16 +1,16 @@
-// Module ID: 11760
-// Function ID: 11761
+// Module ID: 11808
+// Function ID: 11809
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [1653, 1628, 10191, 11738, 1641, 1497, 2]
+// Dependencies: [1654, 1629, 10233, 11786, 1642, 1498, 2]
 // Exports: default
 
-// Module 11760 (useSafeAreaInsetsSharedValue)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1497 */;
-import AppEntryKey from "AppEntryKey" /* 1641 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10191 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11738 */;
-import module_1653_mod from "module_1653" /* 1653 */;
-import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1628 */;
+// Module 11808 (useSafeAreaInsetsSharedValue)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1498 */;
+import AppEntryKey from "AppEntryKey" /* 1642 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10233 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11786 */;
+import module_1654_mod from "module_1654" /* 1654 */;
+import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1629 */;
 import size from "module_2" /* 2 */;
 
 let makeMutable;
@@ -36,13 +36,13 @@ function getSafeAreaInsetsWorklet_useSafeAreaInsetsSharedValueNativeTsx1Factory(
   return getSafeAreaInsetsWorklet;
 }
 let obj = { main: makeMutable(obj2), share: makeMutable2(obj3) };
-let module_1653 = module_1653_mod;
-makeMutable = module_1653.makeMutable;
+let module_1654 = module_1654_mod;
+makeMutable = module_1654.makeMutable;
 obj2 = {};
 let useSafeAreaInsets = useSafeAreaInsets_mod;
 const merged = Object.assign(useSafeAreaInsets.getSafeAreaInsets("main"));
-module_1653 = module_1653_mod;
-makeMutable2 = module_1653.makeMutable;
+module_1654 = module_1654_mod;
+makeMutable2 = module_1654.makeMutable;
 obj3 = {};
 useSafeAreaInsets = useSafeAreaInsets_mod;
 const merged1 = Object.assign(useSafeAreaInsets.getSafeAreaInsets("share"));

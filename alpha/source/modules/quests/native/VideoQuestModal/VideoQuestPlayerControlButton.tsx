@@ -1,15 +1,15 @@
-// Module ID: 16505
-// Function ID: 16506
+// Module ID: 16556
+// Function ID: 16557
 // Name: VideoQuestPlayerControlButton
-// Dependencies: [19, 21, 5012, 575, 671, 6121, 5580, 2]
+// Dependencies: [19, 21, 5043, 575, 671, 6152, 5611, 2]
 
-// Module 16505 (VideoQuestPlayerControlButton)
+// Module 16556 (VideoQuestPlayerControlButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5580 */;
-import Pressables from "Pressables" /* 6121 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5611 */;
+import Pressables from "Pressables" /* 6152 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import module_671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 

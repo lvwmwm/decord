@@ -1,14 +1,14 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9452
+// Function ID: 9453
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 1653, 5026, 5613, 1706, 9411, 5603, 2]
+// Dependencies: [32, 19, 21, 1654, 5057, 5644, 1707, 9453, 5634, 2]
 
-// Module 9410 (BalanceCounter)
+// Module 9452 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import react2 from "react" /* 5026 */;
-import spring_spring from "spring/spring" /* 5613 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import react2 from "react" /* 5057 */;
+import spring_spring from "spring/spring" /* 5644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5603);
+const Text_Text = tmp(5634);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;
@@ -80,7 +80,7 @@ class BalanceCounter {
     dependencyMap = closure_6(null);
     const tmp2 = dependencyMap;
     let tmp = require;
-    let obj = _mod1653;
+    let obj = _mod1654;
     const sharedValue = obj.useSharedValue(0);
     const ref2 = closure_6(null);
     const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
@@ -112,7 +112,7 @@ class BalanceCounter {
       items[0] = closure_10;
       const withSpring = spring_spring.withSpring;
       spring_spring;
-      items[1] = _mod1706.scheduleOnRN;
+      items[1] = _mod1707.scheduleOnRN;
       items[2] = _undefined2;
       let c0;
       let c1;
@@ -170,8 +170,8 @@ class BalanceCounter {
         ref.current = duration;
       }
     }, items);
-    _mod1653;
-    let items1 = [closure_11, tmp13, sharedValue, _mod1706.scheduleOnRN, tmp8, tmp11];
+    _mod1654;
+    let items1 = [closure_11, tmp13, sharedValue, _mod1707.scheduleOnRN, tmp8, tmp11];
     let c0;
     let c1;
     let c2;
@@ -199,7 +199,7 @@ class BalanceCounter {
       const items3 = [tmp23, ];
       const obj3 = { minWidth: 7 * tmp10, marginBottom: num };
       num = 0;
-      const View = onValueChange(1653).View;
+      const View = onValueChange(1654).View;
       if (trimBottomFontSpace) {
         num = -first;
       }

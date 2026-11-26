@@ -1,28 +1,28 @@
-// Module ID: 6351
-// Function ID: 6352
+// Module ID: 6382
+// Function ID: 6383
 // Name: UserProfileAnalyticsUtils
-// Dependencies: [6352, 6358, 8280, 6782, 4924, 5983, 4954, 1386, 6132, 6106, 1071, 1082, 1412, 5984, 6131, 1255, 5982, 14791, 2]
+// Dependencies: [6383, 6389, 8322, 6813, 4955, 6014, 4985, 1387, 6163, 6137, 1071, 1082, 1413, 6015, 6162, 1256, 6013, 14844, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 6351 (UserProfileAnalyticsUtils)
+// Module 6382 (UserProfileAnalyticsUtils)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import AvatarUtils from "AvatarUtils" /* 1412 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5982 */;
-import ActivityTypes from "ActivityTypes" /* 5984 */;
-import Constants3 from "Constants" /* 6106 */;
-import useDisplayProfile from "useDisplayProfile" /* 6131 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6358 */;
-import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 14791 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6352 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8280 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6782 */;
-import GuildMemberStore from "GuildMemberStore" /* 4924 */;
-import PresenceStore from "PresenceStore" /* 5983 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
-import UserProfileStore from "UserProfileStore" /* 6132 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AvatarUtils from "AvatarUtils" /* 1413 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6013 */;
+import ActivityTypes from "ActivityTypes" /* 6015 */;
+import Constants3 from "Constants" /* 6137 */;
+import useDisplayProfile from "useDisplayProfile" /* 6162 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6389 */;
+import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 14844 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 6383 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8322 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6813 */;
+import GuildMemberStore from "GuildMemberStore" /* 4955 */;
+import PresenceStore from "PresenceStore" /* 6014 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
+import UserProfileStore from "UserProfileStore" /* 6163 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
@@ -492,8 +492,8 @@ export function trackUserProfileActivityJoined(userId) {
       if ("VOICE" !== activityType) {
         const _Object = Object;
         const _Object2 = Object;
-        const keys = Object.keys(tmp3(5984).ActivityTypes);
-        const values = Object.values(tmp3(5984).ActivityTypes);
+        const keys = Object.keys(tmp3(6015).ActivityTypes);
+        const values = Object.values(tmp3(6015).ActivityTypes);
         str2 = keys[values.indexOf(values, activityType)];
       }
       tmp11 = str2;
@@ -560,7 +560,7 @@ export function trackUserProfileActivityAction(userId) {
   }
   const merged3 = Object.assign(obj4);
   if (null != stream) {
-    type = tmp3(5984).ActivityTypes.STREAMING;
+    type = tmp3(6015).ActivityTypes.STREAMING;
   } else if (activity != null) {
     type = activity.type;
   }
@@ -570,8 +570,8 @@ export function trackUserProfileActivityAction(userId) {
     if ("VOICE" !== type) {
       const _Object = Object;
       const _Object2 = Object;
-      const keys = Object.keys(tmp3(5984).ActivityTypes);
-      const values = Object.values(tmp3(5984).ActivityTypes);
+      const keys = Object.keys(tmp3(6015).ActivityTypes);
+      const values = Object.values(tmp3(6015).ActivityTypes);
       str = keys[values.indexOf(values, type)];
     }
     tmp11 = str;

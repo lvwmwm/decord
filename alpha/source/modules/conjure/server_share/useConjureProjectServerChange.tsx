@@ -1,16 +1,16 @@
-// Module ID: 18445
-// Function ID: 18446
+// Module ID: 18508
+// Function ID: 18509
 // Name: useConjureProjectServerChange
-// Dependencies: [5, 32, 19, 6903, 18446, 504, 7544, 7636, 12459, 18447, 1112, 4244, 18448, 2]
+// Dependencies: [5, 32, 19, 6934, 18509, 504, 7575, 7667, 12508, 18510, 1112, 4245, 18511, 2]
 // Exports: default, useConjureProjectServerCandidates
 
-// Module 18445 (useConjureProjectServerChange)
-import ConjureActionCreators from "ConjureActionCreators" /* 7636 */;
-import conjureChangeRows from "conjureChangeRows" /* 18447 */;
+// Module 18508 (useConjureProjectServerChange)
+import ConjureActionCreators from "ConjureActionCreators" /* 7667 */;
+import conjureChangeRows from "conjureChangeRows" /* 18510 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6903 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6934 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,9 +60,9 @@ export default function useConjureProjectServerChange(id) {
       const result = obj.refreshConjureInstallState(id);
     }
   }, items5);
+  let tmp8 = require("conjureRemoveApp");
   let tmp9 = null;
-  const useConjureRemoveTarget = require("conjureRemoveApp").useConjureRemoveTarget;
-  const tmp8 = require("conjureRemoveApp");
+  const useConjureRemoveTarget = tmp8.useConjureRemoveTarget;
   if (moving) {
     tmp9 = id;
   }
@@ -137,7 +137,7 @@ export default function useConjureProjectServerChange(id) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c3;
@@ -213,9 +213,14 @@ export default function useConjureProjectServerChange(id) {
             let yHhjsi;
             c3 = 0;
             closure_129_9(false);
-            const tmp6 = null == closure_129_1 || closure_129_2;
-            if (!tmp6) {
-              tmp(body[12])(closure_129_1, "added");
+            if (null != closure_129_1) {
+              str = "added";
+              const tmp8 = tmp(body[12]);
+              const tmp9 = closure_129_1;
+              if (closure_129_2) {
+                str = "moved";
+              }
+              tmp8(tmp9, str);
             }
             const intl = id(body[10]).intl;
             const formatToPlainString = intl.formatToPlainString;

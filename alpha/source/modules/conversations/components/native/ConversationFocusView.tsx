@@ -1,18 +1,18 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9085
+// Function ID: 9086
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 5012, 575, 5576, 9001, 9016, 1112, 5603, 5610, 9044, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 5607, 9043, 9058, 1112, 5634, 5641, 9086, 2]
 // Exports: default
 
-// Module 9043 (ConversationFocusView)
+// Module 9085 (ConversationFocusView)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9001 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9016 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9043 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9058 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

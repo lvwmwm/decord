@@ -1,16 +1,16 @@
-// Module ID: 18759
-// Function ID: 18760
+// Module ID: 18822
+// Function ID: 18823
 // Name: ConjurePublishScheduleProposalCard
-// Dependencies: [19, 21, 18760, 18456, 6084, 5603, 1112, 4244, 5610, 2]
+// Dependencies: [19, 21, 18823, 18519, 6115, 5634, 1112, 4245, 5641, 2]
 // Exports: default
 
-// Module 18759 (ConjurePublishScheduleProposalCard)
+// Module 18822 (ConjurePublishScheduleProposalCard)
 import intl5 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18456 */;
-import useConjurePublishScheduleProposalDefault from "useConjurePublishScheduleProposal" /* 18760 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18519 */;
+import useConjurePublishScheduleProposalDefault from "useConjurePublishScheduleProposal" /* 18823 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ export default function ConjurePublishScheduleProposalCard(arg0) {
   const tmp3 = useConjurePublishScheduleProposalDefault(projectId, proposal, current);
   const tmp5 = ConjureNativeCardSurfaceDefault;
   const Stack = Stack_Stack.Stack;
-  const obj = { variant: "body-sm/semibold", color: "text-muted", children: intl.string(_modDef4244.ZtfX9V) };
+  const obj = { variant: "body-sm/semibold", color: "text-muted", children: intl.string(_modDef4245.ZtfX9V) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   const items = [_false(Text, obj), , ];
@@ -43,17 +43,17 @@ export default function ConjurePublishScheduleProposalCard(arg0) {
   let tmp4Result = null;
   if (null != tmp3.firstPublish) {
     const obj3 = { variant: "body-sm/normal", color: "text-muted", children: tmp3.firstPublish };
-    tmp4Result = tmp4(tmp7(5603).Text, obj3);
+    tmp4Result = tmp4(tmp7(5634).Text, obj3);
   }
   items1[1] = tmp4Result;
-  const obj4 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(_modDef4244.cxNHma) };
-  const Text2 = tmp7(5603).Text;
+  const obj4 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(_modDef4245.cxNHma) };
+  const Text2 = tmp7(5634).Text;
   intl2 = tmp7(1112).intl;
   items1[2] = _false(Text2, obj4);
   let tmp4Result4 = null;
   if ("on" === tmp3.status) {
-    const obj5 = { variant: "body-sm/normal", color: "text-default", accessibilityRole: "alert", children: intl3.string(_modDef4244.k4IRsm) };
-    const Text3 = tmp7(5603).Text;
+    const obj5 = { variant: "body-sm/normal", color: "text-default", accessibilityRole: "alert", children: intl3.string(_modDef4245.k4IRsm) };
+    const Text3 = tmp7(5634).Text;
     intl3 = tmp7(1112).intl;
     tmp4Result4 = tmp4(Text3, obj5);
   }
@@ -61,14 +61,14 @@ export default function ConjurePublishScheduleProposalCard(arg0) {
   let tmp4Result5 = null;
   if ("error" === tmp3.status) {
     const obj6 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp3.error };
-    tmp4Result5 = tmp4(tmp7(5603).Text, obj6);
+    tmp4Result5 = tmp4(tmp7(5634).Text, obj6);
   }
   items1[4] = tmp4Result5;
   items[1] = React3(Stack2, { direction: "vertical", spacing: 4, children: items1 });
   let tmp4Result6 = null;
   if (null != tmp3.onTurnOn) {
-    const obj7 = { text: intl4.string(_modDef4244.EuhBSG), variant: "secondary", loading: "sending" === tmp3.status, disabled: "sending" === tmp3.status, onPress: tmp3.onTurnOn };
-    const Button = tmp7(5610).Button;
+    const obj7 = { text: intl4.string(_modDef4245.EuhBSG), variant: "secondary", loading: "sending" === tmp3.status, disabled: "sending" === tmp3.status, onPress: tmp3.onTurnOn };
+    const Button = tmp7(5641).Button;
     intl4 = tmp7(1112).intl;
     tmp4Result6 = tmp4(Button, obj7);
   }

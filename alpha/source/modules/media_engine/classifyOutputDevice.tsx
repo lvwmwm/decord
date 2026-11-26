@@ -1,11 +1,11 @@
-// Module ID: 6003
-// Function ID: 6004
+// Module ID: 6034
+// Function ID: 6035
 // Name: classifyOutputDevice
-// Dependencies: [5824, 2]
+// Dependencies: [5855, 2]
 // Exports: default
 
-// Module 6003 (classifyOutputDevice)
-import Constants from "Constants" /* 5824 */;
+// Module 6034 (classifyOutputDevice)
+import Constants from "Constants" /* 5855 */;
 import size from "module_2" /* 2 */;
 
 const DEFAULT_DEVICE_ID = Constants.DEFAULT_DEVICE_ID;

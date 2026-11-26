@@ -1,9 +1,9 @@
-// Module ID: 7671
-// Function ID: 7672
+// Module ID: 7702
+// Function ID: 7703
 // Name: ConjureManagedCopyStore
 // Dependencies: [504, 572, 2]
 
-// Module 7671 (ConjureManagedCopyStore)
+// Module 7702 (ConjureManagedCopyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

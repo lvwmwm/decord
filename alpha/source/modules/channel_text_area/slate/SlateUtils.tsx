@@ -1,13 +1,13 @@
-// Module ID: 8307
-// Function ID: 8308
+// Module ID: 8349
+// Function ID: 8350
 // Name: SlateUtils
 // Dependencies: [2]
 // Exports: createEmptyState, createState, toRichValue, voidToOptionValue
 
-// Module 8307 (SlateUtils)
+// Module 8349 (SlateUtils)
 import size from "module_2" /* 2 */;
 
-const f93093 = (text) => {
+const f93371 = (text) => {
   let items;
   const element = { type: "line", children: items };
   items = [];
@@ -28,13 +28,13 @@ export function createEmptyState() {
 }
 export function createState(textValue) {
   let parts;
-  let obj = { textValue, richValue: parts.map(f93093) };
+  let obj = { textValue, richValue: parts.map(f93371) };
   parts = textValue.split("\n");
   return obj;
 }
 export function toRichValue(content) {
   const parts = content.split("\n");
-  return parts.map(f93093);
+  return parts.map(f93371);
 }
 export function voidToOptionValue(type) {
   type = type.type;

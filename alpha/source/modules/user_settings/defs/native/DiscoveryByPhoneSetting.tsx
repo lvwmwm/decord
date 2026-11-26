@@ -1,16 +1,16 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16354
+// Function ID: 16355
 // Name: DiscoveryByPhoneSetting
-// Dependencies: [9513, 1071, 1112, 4837, 1404, 13626, 11914, 2]
+// Dependencies: [9555, 1071, 1112, 4868, 1405, 13678, 11962, 2]
 
-// Module 16303 (DiscoveryByPhoneSetting)
+// Module 16354 (DiscoveryByPhoneSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import FlagUtils from "FlagUtils" /* 1404 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13626 */;
-import SettingBuilders from "SettingBuilders" /* 11914 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13678 */;
+import SettingBuilders from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

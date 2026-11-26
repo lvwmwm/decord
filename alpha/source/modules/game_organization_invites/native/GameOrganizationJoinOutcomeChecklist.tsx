@@ -1,18 +1,18 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 12346
+// Function ID: 12347
 // Name: GameOrganizationJoinOutcomeChecklist
-// Dependencies: [19, 17, 21, 5012, 575, 12291, 7494, 5721, 7247, 6084, 5603, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 12341, 7525, 5752, 7278, 6115, 5634, 2]
 // Exports: default
 
-// Module 12296 (GameOrganizationJoinOutcomeChecklist)
+// Module 12346 (GameOrganizationJoinOutcomeChecklist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import useGameOrganizationJoinOutcome from "useGameOrganizationJoinOutcome" /* 12291 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import useGameOrganizationJoinOutcome from "useGameOrganizationJoinOutcome" /* 12341 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, subtitle;
@@ -25,15 +25,15 @@ function RowIcon(status) {
   status = status.status;
   if (useGameOrganizationJoinOutcome.GameOrganizationJoinOutcomeRowStatus.SUCCESS === status) {
     const obj2 = { size: "refresh_sm", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const CircleCheckIcon = tmp(7494).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7525).CircleCheckIcon;
     return React3(CircleCheckIcon, obj2);
   } else if (useGameOrganizationJoinOutcome.GameOrganizationJoinOutcomeRowStatus.PENDING === status) {
     const obj3 = { size: "refresh_sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-    const ClockIcon = tmp(5721).ClockIcon;
+    const ClockIcon = tmp(5752).ClockIcon;
     return React3(ClockIcon, obj3);
   } else if (useGameOrganizationJoinOutcome.GameOrganizationJoinOutcomeRowStatus.ERROR === status) {
     const obj = { size: "refresh_sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    const CircleErrorIcon = tmp(7247).CircleErrorIcon;
+    const CircleErrorIcon = tmp(7278).CircleErrorIcon;
     return React3(CircleErrorIcon, obj);
   }
 }
@@ -90,6 +90,6 @@ export default function GameOrganizationJoinOutcomeChecklist(rows) {
       return hasOwnProperty(Stack, obj, key);
     })
   };
-  let Stack = rows(6084).Stack;
+  let Stack = rows(6115).Stack;
   return closure_4(Stack, obj);
 };

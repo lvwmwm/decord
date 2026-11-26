@@ -1,25 +1,25 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13776
+// Function ID: 13777
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 13702, 21, 5012, 575, 8046, 7021, 4875, 5603, 1112, 1628, 5610, 1186, 1500, 7717, 7376, 13716, 5761, 13710, 7451, 2]
+// Dependencies: [5, 32, 19, 17, 13754, 21, 5043, 575, 8088, 7052, 4906, 5634, 1112, 1629, 5641, 1186, 1501, 7751, 7407, 13768, 5792, 13762, 7482, 2]
 // Exports: default
 
-// Module 13724 (HubEmailConnectionGuildSelect)
+// Module 13776 (HubEmailConnectionGuildSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4875 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import GuildIconDefault from "GuildIcon" /* 7021 */;
-import _mod8046 from "module_8046" /* 8046 */;
-import HubConstants from "HubConstants" /* 13702 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4906 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
+import GuildIconDefault from "GuildIcon" /* 7052 */;
+import _mod8088 from "module_8088" /* 8088 */;
+import HubConstants from "HubConstants" /* 13754 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, navigation;
@@ -43,8 +43,8 @@ class HubEmailConnectionGuildSelectRow {
     guildInfo = guildInfo.guildInfo;
     ({ signup, loading } = guildInfo);
     const tmp = closure_10();
-    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(_mod8046.FormRow.Arrow, {}) };
-    const FormRow = _mod8046.FormRow;
+    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(_mod8088.FormRow.Arrow, {}) };
+    const FormRow = _mod8088.FormRow;
     obj2 = { style: tmp.guildIcon, guild: fromGuildBasic(obj3) };
     obj3 = { features: [] };
     tmp2 = GuildIconDefault;
@@ -182,7 +182,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } else {
             let c3;
@@ -237,7 +237,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 c3 = 0;
                 constants(false);
                 c5 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: "+95" };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

@@ -1,12 +1,12 @@
-// Module ID: 11951
-// Function ID: 11952
+// Module ID: 11999
+// Function ID: 12000
 // Name: findLoadedAppChannel
-// Dependencies: [4861, 4944, 1071, 2]
+// Dependencies: [4892, 4975, 1071, 2]
 // Exports: default
 
-// Module 11951 (findLoadedAppChannel)
-import ChannelStore from "ChannelStore" /* 4861 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+// Module 11999 (findLoadedAppChannel)
+import ChannelStore from "ChannelStore" /* 4892 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

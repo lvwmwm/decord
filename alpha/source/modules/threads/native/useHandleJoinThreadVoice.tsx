@@ -1,12 +1,12 @@
-// Module ID: 8994
-// Function ID: 8995
+// Module ID: 9036
+// Function ID: 9037
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 4946, 7094, 7000, 2119, 8072, 8407, 2]
+// Dependencies: [5, 4977, 7125, 7031, 2120, 8114, 8449, 2]
 // Exports: default
 
-// Module 8994 (useHandleJoinThreadVoice)
+// Module 9036 (useHandleJoinThreadVoice)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4946 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4977 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -64,7 +64,7 @@ export default function useHandleJoinThreadVoice(arg0) {
     } else {
       value.openGuildVoiceModal(closure_129_0, "Thread Header");
       c3 = 3;
-      return { value: "HermesInternal", done: "HermesInternal" };
+      return { value: "HermesInternal", done: "+95" };
     }
     await guildId(c2[4])(c2[6], c2.paths);
     return value.openMemberVerificationModal(guildId);

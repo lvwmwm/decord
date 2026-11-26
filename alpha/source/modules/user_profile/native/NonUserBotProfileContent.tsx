@@ -1,24 +1,24 @@
-// Module ID: 14802
-// Function ID: 14803
+// Module ID: 14855
+// Function ID: 14856
 // Name: NonUserBotProfileContent
-// Dependencies: [19, 17, 7526, 5241, 21, 9445, 6350, 6776, 5068, 9461, 14797, 14803, 1628, 9443, 9447, 7507, 5693, 14804, 1653, 9478, 9765, 1112, 13814, 2]
+// Dependencies: [19, 17, 7557, 5272, 21, 9487, 6381, 6807, 5099, 9503, 14850, 14856, 1629, 9485, 9489, 7538, 5724, 14857, 1654, 9520, 9807, 1112, 13866, 2]
 
-// Module 14802 (NonUserBotProfileContent)
+// Module 14855 (NonUserBotProfileContent)
 import react_native from "react-native" /* 17 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5241 */;
-import ToastUtils from "ToastUtils" /* 5693 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6776 */;
-import ClipboardUtils from "ClipboardUtils" /* 7507 */;
-import useProfileThemeDefault from "useProfileTheme" /* 9443 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9445 */;
-import useBadgesDefault from "useBadges" /* 9461 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 9765 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 13814 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 14797 */;
-import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 14803 */;
+import UserUtilsDefault from "UserUtils" /* 5099 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
+import ToastUtils from "ToastUtils" /* 5724 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
+import ClipboardUtils from "ClipboardUtils" /* 7538 */;
+import useProfileThemeDefault from "useProfileTheme" /* 9485 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9487 */;
+import useBadgesDefault from "useBadges" /* 9503 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 9807 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 13866 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 14850 */;
+import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 14856 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7526 */;
+import Constants from "Constants" /* 7557 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const memoResult = react.memo(function NonUserBotProfileContent(scrollPosition) 
   importDefault = undefined;
   scrollPosition = scrollPosition.scrollPosition;
   const tmp3 = UserProfileSharedStylesDefault();
-  let obj = trackUserProfileAction(6350);
+  let obj = trackUserProfileAction(6381);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let guild_id;
   const useName = NicknameUtilsDefault.useName;
@@ -82,22 +82,22 @@ const memoResult = react.memo(function NonUserBotProfileContent(scrollPosition) 
   const tmp10 = useUserProfileBannerHeightDefault(ACTION_SHEET_MAX_WIDTH);
   ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = useUserProfileOverscrollStylesDefault({ scrollPosition, bannerHeight: tmp10 }));
   useUserProfileOverscrollStylesDefault({ scrollPosition, bannerHeight: tmp10 });
-  const bottom = tmp(1628)().bottom;
+  const bottom = tmp(1629)().bottom;
   ({ theme, primaryColor, secondaryColor } = useProfileThemeDefault({ user, displayProfile }));
   useProfileThemeDefault({ user, displayProfile });
-  const tmp4Result = trackUserProfileAction(9447);
+  const tmp4Result = trackUserProfileAction(9489);
   const userProfileColors = tmp4Result.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const containerBackground = userProfileColors.containerBackground;
   if (null == user) {
     return null;
   } else {
     let obj2 = { user, displayProfile, bannerHeight: tmp10, bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur };
-    const items = [closure_7(tmp(14804), obj2), ];
+    const items = [closure_7(tmp(14857), obj2), ];
     const obj3 = { style: contentAnimatedStyle, children: items1 };
-    View = tmp(1653).View;
+    View = tmp(1654).View;
     const obj4 = { user, guildId, backgroundColor: tmp14, disableStatus: true };
     guildId = undefined;
-    const OpenableUserProfileAvatar = tmp4(9478).OpenableUserProfileAvatar;
+    const OpenableUserProfileAvatar = tmp4(9520).OpenableUserProfileAvatar;
     const tmp23 = closure_9;
     if (displayProfile != null) {
       guildId = displayProfile.guildId;

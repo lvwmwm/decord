@@ -1,17 +1,17 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 12925
+// Function ID: 12926
 // Name: useTraitPickerOptions
-// Dependencies: [19, 1386, 12571, 6413, 6366, 504, 2108, 6734, 6735, 6411, 1112, 2]
+// Dependencies: [19, 1387, 12620, 6444, 6397, 504, 2109, 6765, 6766, 6442, 1112, 2]
 // Exports: getTraitOptionStatus, useTraitPickerOptions
 
-// Module 12874 (useTraitPickerOptions)
+// Module 12925 (useTraitPickerOptions)
 import intl2 from "intl" /* 1112 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6366 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6413 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6397 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6444 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6765 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import CheckpointStore from "CheckpointStore" /* 12571 */;
+import UserStore from "UserStore" /* 1387 */;
+import CheckpointStore from "CheckpointStore" /* 12620 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5, earnedCount, totalCount;
@@ -34,11 +34,11 @@ export function getTraitOptionStatus(isSavedOption) {
     if (rarity === CheckpointTraitRarity.CheckpointTraitRarity.NITRO) {
       let UNLOCKED;
       if (!tmp) {
-        UNLOCKED = tmp5(6413).CheckpointTraitOptionStatus.NITRO_LOCKED;
+        UNLOCKED = tmp5(6444).CheckpointTraitOptionStatus.NITRO_LOCKED;
       }
       LOCKED = UNLOCKED;
     }
-    UNLOCKED = tmp5(6413).CheckpointTraitOptionStatus.UNLOCKED;
+    UNLOCKED = tmp5(6444).CheckpointTraitOptionStatus.UNLOCKED;
   }
   return LOCKED;
 }

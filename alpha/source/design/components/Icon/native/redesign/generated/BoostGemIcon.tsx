@@ -1,14 +1,14 @@
-// Module ID: 9323
-// Function ID: 9324
+// Module ID: 9365
+// Function ID: 9366
 // Name: BoostGemIcon
-// Dependencies: [19, 21, 575, 5698, 9324, 2]
+// Dependencies: [19, 21, 575, 5729, 9366, 2]
 // Exports: BoostGemIcon
 
-// Module 9323 (BoostGemIcon)
+// Module 9365 (BoostGemIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 9324 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 9366 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

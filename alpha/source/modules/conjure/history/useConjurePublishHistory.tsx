@@ -1,14 +1,14 @@
-// Module ID: 18523
-// Function ID: 18524
+// Module ID: 18586
+// Function ID: 18587
 // Name: useConjurePublishHistory
-// Dependencies: [32, 19, 1112, 4244, 2168, 18524, 18518, 2]
+// Dependencies: [32, 19, 1112, 4245, 2169, 18587, 18581, 2]
 // Exports: publishHistoryTitle, useConjurePublishHistory, useConjurePublishHistoryNotes
 
-// Module 18523 (useConjurePublishHistory)
+// Module 18586 (useConjurePublishHistory)
 import intl2 from "intl" /* 1112 */;
-import _modDef2168 from "module_2168" /* 2168 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 18524 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 18587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,8 +23,8 @@ export function publishHistoryTitle(publishedAt) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { date: obj2.format("LLL") };
-  const prop = _modDef4244["/spQzC"];
-  obj2 = _modDef2168(publishedAt);
+  const prop = _modDef4245["/spQzC"];
+  obj2 = _modDef2169(publishedAt);
   return formatToPlainString(prop, obj);
 }
 export function useConjurePublishHistory(projectId) {

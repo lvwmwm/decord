@@ -1,12 +1,12 @@
-// Module ID: 18761
-// Function ID: 18762
+// Module ID: 18824
+// Function ID: 18825
 // Name: ConjureServerChangeButtons
-// Dependencies: [19, 21, 18762, 6084, 5610, 18452, 18450, 5603, 2]
+// Dependencies: [19, 21, 18825, 6115, 5641, 18515, 18513, 5634, 2]
 // Exports: default
 
-// Module 18761 (ConjureServerChangeButtons)
-import showConjureProjectServerSheetDefault from "showConjureProjectServerSheet" /* 18450 */;
-import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 18452 */;
+// Module 18824 (ConjureServerChangeButtons)
+import showConjureProjectServerSheetDefault from "showConjureProjectServerSheet" /* 18513 */;
+import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 18515 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export default function ConjureServerChangeButtons(projectId) {
   dependencyMap = undefined;
   action = undefined;
   const tmp = dependencyMap;
-  const iter = onReply(18762)(projectId, change);
+  const iter = onReply(18825)(projectId, change);
   ({ project: c2, action } = iter);
   let done = iter.done;
   const keep_label = change.keep_label;
@@ -49,7 +49,7 @@ export default function ConjureServerChangeButtons(projectId) {
   }
   if (null != done) {
     let tmp9Result = null;
-    const Stack = projectId(6084).Stack;
+    const Stack = projectId(6115).Stack;
     const tmp6 = keep_label;
     if (tmp2) {
       let obj = {
@@ -73,7 +73,7 @@ export default function ConjureServerChangeButtons(projectId) {
             }
       };
       str = "primary";
-      const Button = tmp7(5610).Button;
+      const Button = tmp7(5641).Button;
       const tmp9 = action;
       if ("remove_from_server" === action.kind) {
         str = "critical-secondary";
@@ -94,7 +94,7 @@ export default function ConjureServerChangeButtons(projectId) {
                       return onReply(keep_label);
                     }
           };
-          tmp10 = action(tmp7(5610).Button, obj2);
+          tmp10 = action(tmp7(5641).Button, obj2);
         }
       }
     }
@@ -102,7 +102,7 @@ export default function ConjureServerChangeButtons(projectId) {
     let tmp12 = null;
     if (null != done) {
       const obj3 = { variant: "body-sm/normal", color: "text-muted", children: done };
-      tmp12 = action(tmp7(5603).Text, obj3);
+      tmp12 = action(tmp7(5634).Text, obj3);
     }
     const obj4 = { direction: "vertical", spacing: 8, children: items };
     items[2] = tmp12;

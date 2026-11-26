@@ -1,26 +1,26 @@
-// Module ID: 5036
-// Function ID: 5037
+// Module ID: 5067
+// Function ID: 5068
 // Name: ClientThemesBackgroundStore
-// Dependencies: [1192, 1191, 1193, 1230, 4865, 4861, 1386, 1239, 5037, 1194, 5040, 5042, 4837, 5044, 4845, 5068, 2173, 5071, 5072, 504, 1238, 572, 2]
+// Dependencies: [1192, 1191, 1193, 1231, 4896, 4892, 1387, 1240, 5068, 1194, 5071, 5073, 4868, 5075, 4876, 5099, 2174, 5102, 5103, 504, 1239, 572, 2]
 
-// Module 5036 (ClientThemesBackgroundStore)
+// Module 5067 (ClientThemesBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ThemeConstants from "ThemeConstants" /* 1194 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1238 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import dismissible_content from "dismissible_content" /* 4845 */;
-import ChannelRecord from "ChannelRecord" /* 4865 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5037 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5072 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import dismissible_content from "dismissible_content" /* 4876 */;
+import ChannelRecord from "ChannelRecord" /* 4896 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5075 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5103 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ function handleUserStoreChange() {
         tmp6 = null == UserStore.getCurrentUser();
       }
       if (!tmp6) {
-        const tmp3Result = tmp3(5042);
+        const tmp3Result = tmp3(5073);
         tmp6 = !tmp3Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
       }
       if (!tmp6) {
@@ -234,7 +234,7 @@ class ClientThemesBackgroundStore extends PersistedStore {
             tmp7 = null == UserStore.getCurrentUser();
           }
           if (!tmp7) {
-            const tmp4Result = tmp4(5042);
+            const tmp4Result = tmp4(5073);
             tmp7 = !tmp4Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
           }
           if (tmp7) {
@@ -404,7 +404,7 @@ let obj = {
       let result = obj.isHexagonCampaignClientThemePreset(presetId);
       const tmp3 = require;
       if (result) {
-        const tmp3Result = tmp3(5042);
+        const tmp3Result = tmp3(5073);
         result = !tmp3Result.isHexagonCampaignPerkExpiredForCurrentUser(HexagonCampaignPerk.CLIENT_THEME);
       }
       tmp = !result;
@@ -441,7 +441,7 @@ let obj = {
         const obj2 = DismissibleContentUnsafeUtils;
         const tmp6 = require;
         if (!obj2.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.CLIENT_THEMES_COACHMARK)) {
-          const tmp6Result = tmp6(5068);
+          const tmp6Result = tmp6(5099);
           if (tmp6Result.ageEligibleForPremiumUpsell(tmp)) {
             const channel = ChannelStore.getChannel(channelId);
             const tmp4 = null != channel && isGuildTextChannelType(channel.type);

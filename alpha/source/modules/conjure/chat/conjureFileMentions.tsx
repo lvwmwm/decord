@@ -1,17 +1,17 @@
-// Module ID: 18465
-// Function ID: 18466
+// Module ID: 18528
+// Function ID: 18529
 // Name: conjureFileMentions
-// Dependencies: [19, 2068, 2]
+// Dependencies: [19, 2069, 2]
 // Exports: conjureFileMentionIds, createConjureFileMentionRule, filterConjureFileCandidates, hasConjureFileMentions, withoutInlineFileMentions
 
-// Module 18465 (conjureFileMentions)
-import _modDef2068 from "module_2068" /* 2068 */;
+// Module 18528 (conjureFileMentions)
+import _modDef2069 from "module_2069" /* 2069 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-const f115044 = (arg0) => arg0[1];
+const f115431 = (arg0) => arg0[1];
 let c2 = "<file:(\\d{16}-[a-z0-9]{6})>";
 let regExp = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>", "g");
 const regExp1 = new RegExp("<file:(\\d{16}-[a-z0-9]{6})>");
@@ -24,8 +24,8 @@ export function hasConjureFileMentions(arg0) {
   return regExp1.test(arg0);
 }
 export function conjureFileMentionIds(str) {
-  const items = [...new Set(Array.from(str.matchAll(regExp), f115044))];
-  new Set(Array.from(str.matchAll(regExp), f115044));
+  const items = [...new Set(Array.from(str.matchAll(regExp), f115431))];
+  new Set(Array.from(str.matchAll(regExp), f115431));
   return items;
 }
 export function filterConjureFileCandidates(arr, text) {
@@ -61,7 +61,7 @@ export function withoutInlineFileMentions(attachments, content) {
       const self = this;
       const self2 = this;
       const items = [];
-      set = new Set(Array.from(content.matchAll(regExp), f115044));
+      set = new Set(Array.from(content.matchAll(regExp), f115431));
       HermesBuiltin.arraySpread(items, set, 0);
       const self3 = this;
       const self4 = this;
@@ -78,7 +78,7 @@ export function createConjureFileMentionRule(arg0) {
   let closure_0 = arg0;
   regExp = new RegExp("^" + c2);
   const obj = {
-    order: _modDef2068.defaultRules.autolink.order - 0.5,
+    order: _modDef2069.defaultRules.autolink.order - 0.5,
     requiredFirstCharacters: ["<"],
     match(arg0) {
       return regExp.exec(arg0);

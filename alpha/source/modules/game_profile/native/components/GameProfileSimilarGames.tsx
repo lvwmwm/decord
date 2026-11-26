@@ -1,24 +1,24 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14222
+// Function ID: 14223
 // Name: GameProfileSimilarGames
-// Dependencies: [19, 17, 8749, 21, 575, 5012, 8704, 8712, 8707, 1112, 8754, 14136, 14135, 14142, 14171, 1494, 7451, 14115, 2]
+// Dependencies: [19, 17, 8791, 21, 575, 5043, 8746, 8754, 8749, 1112, 8796, 14188, 14187, 14194, 14223, 1495, 7482, 14167, 2]
 // Exports: default
 
-// Module 14170 (GameProfileSimilarGames)
+// Module 14222 (GameProfileSimilarGames)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8707 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8712 */;
-import GameProfileConstants from "GameProfileConstants" /* 8749 */;
-import GameProfileHorizontalScrollViewDefault from "GameProfileHorizontalScrollView" /* 14115 */;
-import GameProfileSectionDefault from "GameProfileSection" /* 14135 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 14136 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 14142 */;
-import useSimilarGamesDefault from "useSimilarGames" /* 14171 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8749 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8754 */;
+import GameProfileConstants from "GameProfileConstants" /* 8791 */;
+import GameProfileHorizontalScrollViewDefault from "GameProfileHorizontalScrollView" /* 14167 */;
+import GameProfileSectionDefault from "GameProfileSection" /* 14187 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 14188 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 14194 */;
+import useSimilarGamesDefault from "useSimilarGames" /* 14223 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault;
@@ -107,7 +107,7 @@ let closure_15 = react.memo(function GameProfileSimilarGameSkeleton(cardWidth) {
 let closure_16 = react.memo(function GameProfileSimilarGamesSkeleton(cardWidth) {
   cardWidth = cardWidth.cardWidth;
   const tmp = closure_11();
-  const GameProfileSectionSkeleton = cardWidth(14135).GameProfileSectionSkeleton;
+  const GameProfileSectionSkeleton = cardWidth(14187).GameProfileSectionSkeleton;
   ({ contentContainerStyle: tmp.skeletonCards, children: Array.from({ length: 4 }, (arg0, arg1) => <closure_15 key={arg1} animationDelayMs={arg1 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS} cardWidth={cardWidth} />) });
   GameProfileSkeletonCardRowDefault;
   return <GameProfileSectionSkeleton style={tmp.container} headerStyle={tmp.header} showViewAllSkeleton={false} skeletonTitleWidth={124}>{null}</GameProfileSectionSkeleton>;
@@ -149,7 +149,7 @@ export default function GameProfileSimilarGames(trackAction) {
         decelerationRate: "fast",
         snapToInterval: result + tmp5
       });
-      const FlashList = trackAction(7451).FlashList;
+      const FlashList = trackAction(7482).FlashList;
       tmp7 = <tmp2Result style={null} headerStyle={null} title={intl.string(trackAction(1112).t["6rLyQB"])}>{null}</tmp2Result>;
     }
   }

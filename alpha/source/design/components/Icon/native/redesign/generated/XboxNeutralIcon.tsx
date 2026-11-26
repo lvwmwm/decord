@@ -1,14 +1,14 @@
-// Module ID: 8741
-// Function ID: 8742
+// Module ID: 8783
+// Function ID: 8784
 // Name: XboxNeutralIcon
-// Dependencies: [19, 21, 575, 5698, 8742, 2]
+// Dependencies: [19, 21, 575, 5729, 8784, 2]
 // Exports: XboxNeutralIcon
 
-// Module 8741 (XboxNeutralIcon)
+// Module 8783 (XboxNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 8742 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 8784 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

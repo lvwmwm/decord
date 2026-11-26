@@ -1,17 +1,17 @@
-// Module ID: 20237
-// Function ID: 20238
+// Module ID: 20301
+// Function ID: 20302
 // Name: QuestFetchManager
-// Dependencies: [5, 8323, 1088, 7444, 9851, 1241, 9852, 1378, 6931, 20238, 2]
+// Dependencies: [5, 8374, 1088, 7475, 9893, 1242, 9894, 1379, 6962, 20302, 2]
 
-// Module 20237 (QuestFetchManager)
+// Module 20301 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1088 */;
-import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import QuestsEligibility from "QuestsEligibility" /* 9851 */;
-import QuestActionCreators from "QuestActionCreators" /* 9852 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import QuestsEligibility from "QuestsEligibility" /* 9893 */;
+import QuestActionCreators from "QuestActionCreators" /* 9894 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 8323 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import QuestStore from "QuestStore" /* 8374 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -57,7 +57,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {
@@ -76,7 +76,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
                 obj._fetch("post_connect_recurring");
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: "+95" };
             }
           } catch (tmp6) {
             c0 = 3;
@@ -159,7 +159,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(6931);
+        const tmp6Result = tmp6(6962);
         const state = tmp6Result.getState();
       }
     }

@@ -1,17 +1,17 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16097
+// Function ID: 16098
 // Name: useHexagonCampaignDisplayNameStyleToggle
-// Dependencies: [5, 32, 19, 1386, 5037, 6344, 6740, 5040, 5573, 11898, 15982, 2]
+// Dependencies: [5, 32, 19, 1387, 5068, 6375, 6771, 5071, 5604, 11946, 16059, 2]
 // Exports: useHexagonCampaignDisplayNameStyleToggle
 
-// Module 16039 (useHexagonCampaignDisplayNameStyleToggle)
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6740 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 11898 */;
+// Module 16097 (useHexagonCampaignDisplayNameStyleToggle)
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6771 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 11946 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5037 */;
+import UserStore from "UserStore" /* 1387 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5068 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,14 +35,14 @@ export function useHexagonCampaignDisplayNameStyleToggle(user, showEnrollmentErr
   const tmp3 = useDisplayNameStylesDefault(obj2);
   let result = null != tmp3;
   if (result) {
-    const tmpResult = tmp(5040);
+    const tmpResult = tmp(5071);
     result = tmpResult.isHexagonCampaignDisplayNameStyle(tmp3);
   }
   let tmp5 = _slicedToArray(react.useState(false), 2);
   [tmp6, importDefault] = tmp5;
   dependencyMap = react.useRef(false);
   _asyncToGenerator = react.useRef(true);
-  const tmpResult2 = tmp(5573);
+  const tmpResult2 = tmp(5604);
   const unmountEffect = tmpResult2.useUnmountEffect(() => {
     closure_3.current = false;
   });
@@ -63,7 +63,7 @@ export function useHexagonCampaignDisplayNameStyleToggle(user, showEnrollmentErr
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ export function useHexagonCampaignDisplayNameStyleToggle(user, showEnrollmentErr
       const tmp5 = require;
       if (null != displayNameStyles) {
         tmp8 = null;
-        const tmp5Result = tmp5(5040);
+        const tmp5Result = tmp5(5071);
         if (!tmp5Result.isHexagonCampaignDisplayNameStyle(displayNameStyles)) {
           tmp8 = displayNameStyles;
         }

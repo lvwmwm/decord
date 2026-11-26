@@ -1,17 +1,17 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9468
+// Function ID: 9469
 // Name: ProfileEffectSampleV2
-// Dependencies: [17, 9425, 21, 5012, 575, 5699, 9427, 9428, 2]
+// Dependencies: [17, 9467, 21, 5043, 575, 5730, 9469, 9470, 2]
 // Exports: default
 
-// Module 9426 (ProfileEffectSampleV2)
+// Module 9468 (ProfileEffectSampleV2)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9425 */;
-import _modDef9427 from "module_9427" /* 9427 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9467 */;
+import _modDef9469 from "module_9469" /* 9469 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -19,7 +19,7 @@ let closure_4;
 let obj2;
 let size;
 let tmp5;
-const ProfileEffectDefault = tmp5(9428);
+const ProfileEffectDefault = tmp5(9470);
 const View = react_native.View;
 const SAMPLE_PROFILE_ASPECT_RATIO = CollectiblesPreviewConstants.SAMPLE_PROFILE_ASPECT_RATIO;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
@@ -50,7 +50,7 @@ export default function ProfileEffectSample(hideBackground) {
   const obj = { style: items, children: items1 };
   items[1] = profileBackground;
   const obj2 = { style: tmp.sampleProfileImage, source: obj3, accessible: false, resizeMode: "cover" };
-  obj3 = { uri: _modDef9427 };
+  obj3 = { uri: _modDef9469 };
   const tmp7 = FastImageDefault;
   items1 = [_false(tmp7, obj2), , ];
   let tmp4Result = !flag;

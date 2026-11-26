@@ -1,30 +1,32 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17352
+// Function ID: 17353
 // Name: DevToolsComponentsTestingScreen
-// Dependencies: [32, 19, 17, 4915, 21, 5012, 575, 6364, 2117, 8782, 6114, 5603, 12366, 12372, 5610, 6084, 12373, 572, 2]
+// Dependencies: [32, 19, 17, 4946, 21, 5043, 575, 6395, 2118, 6405, 8824, 6145, 5634, 12416, 12422, 5641, 6115, 12423, 572, 2]
 // Exports: default
 
-// Module 17301 (DevToolsComponentsTestingScreen)
+// Module 17352 (DevToolsComponentsTestingScreen)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import Server from "Server" /* 2117 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import Stack_Stack from "Stack/Stack" /* 6084 */;
-import Card_Card from "Card/Card" /* 6114 */;
-import ComponentStateContext from "ComponentStateContext" /* 8782 */;
-import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 12366 */;
-import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 12372 */;
-import TextDisplayComponentDefault from "TextDisplayComponent" /* 12373 */;
+import Server from "Server" /* 2118 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
+import Stack_Stack from "Stack/Stack" /* 6115 */;
+import Card_Card from "Card/Card" /* 6145 */;
+import ComponentStateContext from "ComponentStateContext" /* 8824 */;
+import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 12416 */;
+import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 12422 */;
+import TextDisplayComponentDefault from "TextDisplayComponent" /* 12423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6364 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6395 */;
+import InteractionComponentTypes_mod from "InteractionComponentTypes" /* 6405 */;
 import size from "module_2" /* 2 */;
 
+let InteractionComponentTypes;
 let closure_12;
 let items;
 let metroImportAll;
@@ -37,6 +39,7 @@ function Select(type) {
   let items;
   let items1;
   let num;
+  let obj2;
   let tmp2;
   let tmp7Result;
   let tmp7Result1;
@@ -44,28 +47,29 @@ function Select(type) {
   c0 = undefined;
   const title = type.title;
   [tmp2, c0] = react.useState(false);
-  const obj = { maxValues: num, type, id: String(type) };
+  const obj = { maxValues: num, type, id: obj2.asComponentId(type) };
   _slicedToArray(react.useState(false), 2);
   const merged = Object.assign(unpackModuleId);
   num = 1;
   if (tmp2) {
     num = 4;
   }
-  const obj2 = ComponentStateContext;
-  const state = obj2.useComponentState(obj).state;
-  const obj3 = { style: { gap: 8 }, children: items };
+  obj2 = InteractionComponentTypes;
+  const obj3 = ComponentStateContext;
+  const state = obj3.useComponentState(obj).state;
+  const obj4 = { style: { gap: 8 }, children: items };
   const Card = Card_Card.Card;
   items = [metroImportDefault(Text_Text.Text, { variant: "heading-lg/medium", children: title }), , , ];
   if (obj.type === Server.ComponentType.STRING_SELECT) {
-    const obj4 = {};
+    const obj5 = {};
     const tmp15 = StringSelectActionComponentDefault;
     const merged1 = Object.assign(obj);
-    tmp7Result = tmp7(tmp15, obj4);
+    tmp7Result = tmp7(tmp15, obj5);
   } else {
-    const obj5 = { type: obj.type };
+    const obj6 = { type: obj.type };
     const tmp9 = SearchableSelectActionComponentDefault;
     const merged2 = Object.assign(obj);
-    tmp7Result = tmp7(tmp9, obj5);
+    tmp7Result = tmp7(tmp9, obj6);
   }
   items[1] = tmp7Result;
   let type1;
@@ -74,34 +78,34 @@ function Select(type) {
   }
   if (type1 === obj.type) {
     let mapped;
-    const Text = tmp4(5603).Text;
+    const Text = tmp4(5634).Text;
     if ("values" in state) {
       mapped = state.values;
     } else {
       const selectedOptions = state.selectedOptions;
       mapped = selectedOptions.map((label) => label.label);
     }
-    const obj6 = { variant: "body-md/normal", children: items1 };
+    const obj7 = { variant: "body-md/normal", children: items1 };
     items1 = ["Selected values: ", mapped.join(", ")];
-    tmp7Result1 = tmp6(Text, obj6);
+    tmp7Result1 = tmp6(Text, obj7);
   } else {
-    tmp7Result1 = tmp7(tmp4(5603).Text, { variant: "body-md/normal", children: "Nothing selected" });
+    tmp7Result1 = tmp7(tmp4(5634).Text, { variant: "body-md/normal", children: "Nothing selected" });
   }
   items[2] = tmp7Result1;
   let str3 = "off";
-  const Button = tmp4(5610).Button;
+  const Button = tmp4(5641).Button;
   if (tmp2) {
     str3 = "on";
   }
-  const obj7 = {
+  const obj8 = {
     text: "Toggle Multi Select (" + str3 + ")",
     onPress() {
       return _undefined((arg0) => !arg0);
     },
     size: "sm"
   };
-  items[3] = metroImportDefault(Button, obj7);
-  return metroImportAll(Card, obj3);
+  items[3] = metroImportDefault(Button, obj8);
+  return metroImportAll(Card, obj4);
 }
 const ScrollView = react_native.ScrollView;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -111,11 +115,13 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
 let closure_9 = createStyles(obj);
-let obj4 = { type: Server.ComponentType.STRING_SELECT, custom_id: "test", max_values: 1, min_values: 1, placeholder: "Choose...", options: items };
+let obj4 = { type: Server.ComponentType.STRING_SELECT, id: InteractionComponentTypes.asComponentId(0), custom_id: "test", max_values: 1, min_values: 1, placeholder: "Choose...", options: items };
 const transformComponents = InteractionComponentUtils.transformComponents;
+InteractionComponentTypes = InteractionComponentTypes_mod;
 items = [{ label: "test with a long label", value: "test" }, { label: "test 2 with a long label", value: "test2", description: "with description!" }, { label: "star with a long label", value: "star", emoji: { name: "\u2B50" } }, { label: "advaith", value: "advaith", emoji: { id: "889887673425199124", name: "advaith_anim", animated: true } }];
 let items1 = [obj4, ];
-let obj5 = { type: Server.ComponentType.TEXT_DISPLAY, content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
+let obj5 = { type: Server.ComponentType.TEXT_DISPLAY, id: InteractionComponentTypes.asComponentId(1), content: "hello world! :eyes: **bold** `code` https://cdn.discordapp.com/attachments/1408191424968523819/1408191500277387274/advaith.webp\nhttps://discord.com [google](https://google.com) ||spoiler|| <t:1755730638:t> <a:wumpus_party:393564669765353483>" };
+InteractionComponentTypes = InteractionComponentTypes_mod;
 items1[1] = obj5;
 const transformComponentsResult = transformComponents(items1);
 let c10 = transformComponentsResult;

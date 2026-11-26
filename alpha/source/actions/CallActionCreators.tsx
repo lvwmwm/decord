@@ -1,19 +1,19 @@
-// Module ID: 7815
-// Function ID: 7816
+// Module ID: 7849
+// Function ID: 7850
 // Name: CallActionCreators
-// Dependencies: [4861, 4954, 1386, 1071, 6766, 1284, 1255, 6015, 1112, 7816, 7829, 572, 2]
+// Dependencies: [4892, 4985, 1387, 1071, 6797, 1285, 1256, 6046, 1112, 7850, 7863, 572, 2]
 
-// Module 7815 (CallActionCreators)
+// Module 7849 (CallActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl5 from "intl" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6766 */;
-import useCanRing from "useCanRing" /* 7829 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import RelationshipStore_mod from "RelationshipStore" /* 4954 */;
-import UserStore_mod from "UserStore" /* 1386 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6797 */;
+import useCanRing from "useCanRing" /* 7863 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import RelationshipStore_mod from "RelationshipStore" /* 4985 */;
+import UserStore_mod from "UserStore" /* 1387 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -109,7 +109,7 @@ let obj = {
       const result = obj5.canRingUsersInChannel(channel);
       const tmp8 = require;
       if (result) {
-        const HTTP = tmp8(1284).HTTP;
+        const HTTP = tmp8(1285).HTTP;
         const request = { url: metroRequire.CALL_RING(channelId), body: obj2, oldFormErrors: true, rejectWithError: true };
         const post = HTTP.post;
         obj2 = { recipients: items, analytics_location: gdm_invite };

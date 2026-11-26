@@ -1,11 +1,11 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12860
+// Function ID: 12861
 // Name: useIsCheckpointWide
-// Dependencies: [1494, 2]
+// Dependencies: [1495, 2]
 // Exports: default
 
-// Module 12811 (useIsCheckpointWide)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+// Module 12860 (useIsCheckpointWide)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1495 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

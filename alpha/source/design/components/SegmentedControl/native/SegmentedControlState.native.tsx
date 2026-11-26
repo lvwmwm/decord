@@ -1,11 +1,11 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 8616
+// Function ID: 8617
 // Name: SegmentedControlState
-// Dependencies: [19, 575, 5026, 1653, 5228, 5242, 2]
+// Dependencies: [19, 575, 5057, 1654, 5259, 5273, 2]
 // Exports: useSegmentedControlState
 
-// Module 8574 (SegmentedControlState)
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5242 */;
+// Module 8616 (SegmentedControlState)
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5273 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

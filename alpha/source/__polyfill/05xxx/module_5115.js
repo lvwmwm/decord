@@ -1,98 +1,69 @@
 // Module ID: 5115
 // Function ID: 5116
-// Dependencies: [32, 19, 5104]
-// Exports: useRive
+// Dependencies: [5116, 5121, 5122, 5123, 5124, 5125, 5126, 5117, 5127, 5128, 5129, 5130, 5131]
 
 // Module 5115
-import react2 from "react" /* 5104 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import installedNitro1 from "installedNitro1" /* 5117 */;
+import _mod5121 from "module_5121" /* 5121 */;
+import _mod5122 from "module_5122" /* 5122 */;
+import _mod5123 from "module_5123" /* 5123 */;
+import _mod5124 from "module_5124" /* 5124 */;
+import _mod5125 from "module_5125" /* 5125 */;
+import _mod5126 from "module_5126" /* 5126 */;
+import _mod5127 from "module_5127" /* 5127 */;
+import _mod5128 from "module_5128" /* 5128 */;
+import _mod5129 from "module_5129" /* 5129 */;
+import react_native from "react-native" /* 5130 */;
+import _mod5131 from "module_5131" /* 5131 */;
+import installWorkletsSupport_mod from "installWorkletsSupport" /* 5116 */;
 
-let ref;
-
-let c3;
-let closure_4;
-let useCallback;
-({ useRef: c3, useCallback, useState: closure_4 } = react);
-
-export function useRive() {
-  let closure_129_1;
-  let first;
-  let tmp4;
-  let tmp6;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(4);
-  const tmp2 = _false(null);
-  let closure_0 = tmp2;
-  const tmp3 = _slicedToArray(React3(null), 2);
-  [tmp4, closure_129_1] = tmp3;
-  let closure_2 = _false(null);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(current) {
-      ref = current;
-      if (ref.current !== current) {
-        ref.current = current;
-        if (ref2.current) {
-          let _clearTimeout = clearTimeout;
-          clearTimeout(tmp9.current);
-        }
-        const self = this;
-        const self2 = this;
-        const promise = new Promise((arg0, arg1) => {
-          let closure_0 = arg1;
-          ref.current = setTimeout(() => {
-            const error = new Error("Rive view ready timeout");
-            closure_0(error);
-          }, 5000);
-        });
-        let awaitViewReadyResult;
-        if (current != null) {
-          awaitViewReadyResult = current.awaitViewReady();
-        }
-        const items = [awaitViewReadyResult, promise];
-        const raceResult = race(items);
-        const nextPromise = raceResult.then((result) => {
-          if (true === result) {
-            closure_2_1(current);
-          } else {
-            const _console = console;
-            console.warn("Rive view ready check returned false");
-            closure_2_1(null);
-          }
-        });
-        const catchPromise = nextPromise.catch((error) => {
-          console.warn("Failed to initialize Rive view:", error);
-          closure_1_1(null);
-        });
-        catchPromise.finally(() => {
-          if (ref.current) {
-            const _clearTimeout = clearTimeout;
-            clearTimeout(ref.current);
-            ref.current = null;
-          }
-        });
-      }
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { f: first };
-    cResult[1] = obj2;
-    tmp6 = obj2;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] !== tmp4) {
-    const obj3 = { riveRef: tmp2, riveViewRef: tmp4, setHybridRef: tmp6 };
-    cResult[2] = tmp4;
-    cResult[3] = obj3;
-    tmp7 = obj3;
-  } else {
-    tmp7 = cResult[3];
-  }
-  return tmp7;
+let installWorkletsSupport = installWorkletsSupport_mod;
+installWorkletsSupport = installWorkletsSupport.installWorkletsSupport();
+for (const key10017 in _mod5121) {
+  exports[key10017] = _mod5121[key10017];
+  continue;
+}
+for (const key10021 in _mod5122) {
+  exports[key10021] = _mod5122[key10021];
+  continue;
+}
+for (const key10025 in _mod5123) {
+  exports[key10025] = _mod5123[key10025];
+  continue;
+}
+for (const key10029 in _mod5124) {
+  exports[key10029] = _mod5124[key10029];
+  continue;
+}
+for (const key10033 in _mod5125) {
+  exports[key10033] = _mod5125[key10033];
+  continue;
+}
+for (const key10037 in _mod5126) {
+  exports[key10037] = _mod5126[key10037];
+  continue;
+}
+for (const key10041 in installedNitro1) {
+  exports[key10041] = installedNitro1[key10041];
+  continue;
+}
+for (const key10045 in _mod5127) {
+  exports[key10045] = _mod5127[key10045];
+  continue;
+}
+for (const key10049 in _mod5128) {
+  exports[key10049] = _mod5128[key10049];
+  continue;
+}
+for (const key10053 in _mod5129) {
+  exports[key10053] = _mod5129[key10053];
+  continue;
+}
+for (const key10057 in react_native) {
+  exports[key10057] = react_native[key10057];
+  continue;
+}
+for (const key10061 in _mod5131) {
+  exports[key10061] = _mod5131[key10061];
+  continue;
 }

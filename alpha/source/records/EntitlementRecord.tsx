@@ -1,14 +1,14 @@
-// Module ID: 2165
-// Function ID: 2166
+// Module ID: 2166
+// Function ID: 2167
 // Name: EntitlementRecord
-// Dependencies: [1406, 2166, 1405, 2172, 2173, 15431, 2]
+// Dependencies: [1407, 2167, 1406, 2173, 2174, 15482, 2]
 
-// Module 2165 (EntitlementRecord)
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15431 */;
-import Record from "Record" /* 1406 */;
-import SKURecord from "SKURecord" /* 2166 */;
-import UserRecord from "UserRecord" /* 1405 */;
+// Module 2166 (EntitlementRecord)
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import EntitlementTenantFulfillmentStatus from "EntitlementTenantFulfillmentStatus" /* 15482 */;
+import Record from "Record" /* 1407 */;
+import SKURecord from "SKURecord" /* 2167 */;
+import UserRecord from "UserRecord" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

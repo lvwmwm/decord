@@ -1,25 +1,25 @@
-// Module ID: 11040
-// Function ID: 11041
+// Module ID: 11086
+// Function ID: 11087
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 8075, 1071, 5241, 21, 5012, 575, 38, 8085, 1494, 1628, 5573, 5226, 8095, 11041, 1255, 5694, 8094, 11637, 11638, 5240, 5244, 6084, 5603, 1378, 8838, 11057, 6109, 6113, 11639, 11641, 1112, 7150, 11644, 10020, 7122, 11646, 5610, 5719, 2]
+// Dependencies: [32, 19, 17, 8117, 1071, 5272, 21, 5043, 575, 38, 8127, 1495, 1629, 5604, 5257, 8137, 11087, 1256, 5725, 8136, 11685, 11686, 5271, 5275, 6115, 5634, 1379, 8880, 11103, 6140, 6144, 11687, 11689, 1112, 7181, 11692, 10062, 7153, 11694, 5641, 5750, 2]
 // Exports: default
 
-// Module 11040 (UploadPreviewActionSheet)
+// Module 11086 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5241 */;
-import DraftStore from "DraftStore" /* 8075 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8094 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10020 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11041 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11641 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
+import DraftStore from "DraftStore" /* 8117 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8136 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10062 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11087 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11689 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let cropRect;

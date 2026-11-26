@@ -1,13 +1,13 @@
-// Module ID: 1630
-// Function ID: 1631
+// Module ID: 1631
+// Function ID: 1632
 // Name: SafeAreaConstants
-// Dependencies: [1631, 2]
+// Dependencies: [1632, 2]
 
-// Module 1630 (SafeAreaConstants)
-import _mod1631 from "module_1631" /* 1631 */;
+// Module 1631 (SafeAreaConstants)
+import _mod1632 from "module_1632" /* 1632 */;
 import size from "module_2" /* 2 */;
 
-const initialWindowMetrics = _mod1631.initialWindowMetrics;
+const initialWindowMetrics = _mod1632.initialWindowMetrics;
 let insets;
 if (initialWindowMetrics != null) {
   insets = initialWindowMetrics.insets;

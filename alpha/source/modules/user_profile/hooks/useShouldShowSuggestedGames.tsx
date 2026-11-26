@@ -1,12 +1,12 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14576
+// Function ID: 14577
 // Name: useShouldShowSuggestedGames
-// Dependencies: [32, 19, 14525, 14518, 2]
+// Dependencies: [32, 19, 14577, 14570, 2]
 // Exports: useShouldShowSuggestedGames
 
-// Module 14524 (useShouldShowSuggestedGames)
-import WidgetUtils from "WidgetUtils" /* 14518 */;
-import useHasSavedWidget from "useHasSavedWidget" /* 14525 */;
+// Module 14576 (useShouldShowSuggestedGames)
+import WidgetUtils from "WidgetUtils" /* 14570 */;
+import useHasSavedWidget from "useHasSavedWidget" /* 14577 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

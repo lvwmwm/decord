@@ -1,14 +1,14 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16760
+// Function ID: 16761
 // Name: QuestHomeRoundtripTracker
-// Dependencies: [1071, 1255, 5780, 5785, 6931, 2]
+// Dependencies: [1071, 1256, 5811, 5816, 6962, 2]
 
-// Module 16709 (QuestHomeRoundtripTracker)
+// Module 16760 (QuestHomeRoundtripTracker)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5780 */;
-import MetricEvents from "MetricEvents" /* 5785 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6931 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5811 */;
+import MetricEvents from "MetricEvents" /* 5816 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6962 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -32,7 +32,7 @@ class QuestHomeRoundtripTracker {
     obj.track(AnalyticEvents.QUEST_HOME_ROUNDTRIP, obj2);
     if (Math.random() <= 0.1) {
       const obj3 = { name: MetricEvents.MetricEvents.QUEST_HOME_ROUNDTRIP, tags: items };
-      const distribution = tmp(5780).distribution;
+      const distribution = tmp(5811).distribution;
       MonitoringAgentDefault;
       const _HermesInternal = HermesInternal;
       items = ["includes_bounties:" + arg2, ];

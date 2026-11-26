@@ -1,20 +1,20 @@
-// Module ID: 12225
-// Function ID: 12226
+// Module ID: 12275
+// Function ID: 12276
 // Name: SpotifyUtils
-// Dependencies: [5, 2139, 7603, 7600, 7601, 1071, 1088, 6147, 7602, 12226, 2]
+// Dependencies: [5, 2140, 7634, 7631, 7632, 1071, 1088, 6178, 7633, 12276, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 12225 (SpotifyUtils)
+// Module 12275 (SpotifyUtils)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import PlatformsDefault from "Platforms" /* 6147 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 7602 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 12226 */;
+import PlatformsDefault from "Platforms" /* 6178 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 7633 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 12276 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2139 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 7603 */;
-import SpotifyStore from "SpotifyStore" /* 7600 */;
-import SpotifyConstants from "SpotifyConstants" /* 7601 */;
+import RunningGameStore from "RunningGameStore" /* 2140 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 7634 */;
+import SpotifyStore from "SpotifyStore" /* 7631 */;
+import SpotifyConstants from "SpotifyConstants" /* 7632 */;
 import size from "module_2" /* 2 */;
 
 let TRACK, closure_3, closure_4;
@@ -52,7 +52,7 @@ let value = function _getSpotifyMetadataFromActivity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ export function ensureSpotifyPlayable() {
     if (isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        const obj3 = playableComputerDevices(7602);
+        const obj3 = playableComputerDevices(7633);
         obj3.setActiveDevice(socket.accountId, device.id);
         const obj4 = { socket, device };
         return Promise.resolve(obj4);

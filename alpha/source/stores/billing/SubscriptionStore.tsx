@@ -1,15 +1,15 @@
-// Module ID: 2178
-// Function ID: 2179
+// Module ID: 2179
+// Function ID: 2180
 // Name: SubscriptionStore
-// Dependencies: [1387, 2170, 2179, 502, 1071, 504, 572, 2]
+// Dependencies: [1388, 2171, 2180, 502, 1071, 504, 572, 2]
 // Exports: getSubscriptionOfType
 
-// Module 2178 (SubscriptionStore)
+// Module 2179 (SubscriptionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2170 */;
-import SubscriptionRecord2 from "SubscriptionRecord" /* 2179 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1387 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2171 */;
+import SubscriptionRecord2 from "SubscriptionRecord" /* 2180 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1388 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -271,7 +271,7 @@ obj = {
     });
   },
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: function handleSubscriptionUpdate(subscription) {
-    const f83611 = (id) => id.id === result.id;
+    const f83826 = (id) => id.id === result.id;
     subscription = subscription.subscription;
     if (subscription.user_id === AuthenticationStore.getId()) {
       const fromServer = SubscriptionRecord.createFromServer(subscription);
@@ -293,7 +293,7 @@ obj = {
       const tmp12 = null != items3 && result.type === hasOwnProperty.GUILD;
       if (tmp12) {
         let tmp20;
-        const findIndexResult = items3.findIndex(f83611);
+        const findIndexResult = items3.findIndex(f83826);
         if (-1 === findIndexResult) {
           const items = [result];
           HermesBuiltin.arraySpread(items, items3, 1);
@@ -315,7 +315,7 @@ obj = {
       const tmp25 = null != _null && result.type === hasOwnProperty.APPLICATION;
       if (tmp25) {
         let tmp33;
-        const findIndexResult1 = _null.findIndex(f83611);
+        const findIndexResult1 = _null.findIndex(f83826);
         if (-1 === findIndexResult1) {
           const items2 = [result];
           HermesBuiltin.arraySpread(items2, _null, 1);

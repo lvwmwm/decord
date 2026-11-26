@@ -1,16 +1,16 @@
-// Module ID: 19443
-// Function ID: 19444
+// Module ID: 19506
+// Function ID: 19507
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 5012, 575, 11733, 6348, 10157, 10209, 6121, 19444, 19445, 7024, 2]
+// Dependencies: [5, 19, 17, 21, 5043, 575, 11781, 6379, 10199, 10251, 6152, 19507, 19508, 7055, 2]
 
-// Module 19443 (ActivityItemMissingCard)
+// Module 19506 (ActivityItemMissingCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NativeViewDefault from "NativeView" /* 7024 */;
+import NativeViewDefault from "NativeView" /* 7055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1;
@@ -46,7 +46,7 @@ function ActivityItemEmptyCard(activity) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -76,7 +76,7 @@ function ActivityItemEmptyCard(activity) {
           return obj;
         } else {
           activity = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp4) {
         activity = 3;

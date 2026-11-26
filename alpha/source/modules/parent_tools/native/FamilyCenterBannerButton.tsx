@@ -1,29 +1,29 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16383
+// Function ID: 16384
 // Name: FamilyCenterBannerButton
-// Dependencies: [19, 17, 1386, 8170, 8171, 1071, 7838, 21, 5012, 575, 8169, 5693, 1112, 12542, 563, 16333, 1255, 16334, 5226, 16335, 2119, 6084, 5610, 12822, 2846, 16338, 6099, 1379, 12539, 1625, 7839, 15226, 2]
+// Dependencies: [19, 17, 1387, 8212, 8213, 1071, 7872, 21, 5043, 575, 8211, 5724, 1112, 12591, 563, 16384, 1256, 16385, 5257, 16386, 2120, 6115, 5641, 12871, 2847, 16389, 6130, 1380, 12588, 1626, 7873, 15276, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 16332 (FamilyCenterBannerButton)
+// Module 16383 (FamilyCenterBannerButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
-import asyncRequire from "asyncRequire" /* 2119 */;
-import _modDef2846 from "module_2846" /* 2846 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import components_Button_Button from "components/Button/Button" /* 5610 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7838 */;
-import useUserLinks from "useUserLinks" /* 8169 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 16334 */;
-import QrCodeIcon from "QrCodeIcon" /* 16338 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1626 */;
+import asyncRequire from "asyncRequire" /* 2120 */;
+import _modDef2847 from "module_2847" /* 2847 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import components_Button_Button from "components/Button/Button" /* 5641 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7872 */;
+import useUserLinks from "useUserLinks" /* 8211 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 16385 */;
+import QrCodeIcon from "QrCodeIcon" /* 16389 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8170 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8171 */;
+import UserStore from "UserStore" /* 1387 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8212 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8213 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const NativePermissionUtilsDefault = tmp(7839);
+const NativePermissionUtilsDefault = tmp(7873);
 function FamilyCenterTeenQRCodeButtonInner() {
   let currentUser;
   let getLinkCode;
@@ -99,7 +99,7 @@ function FamilyCenterTeenQRCodeButtonInner() {
       obj.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj2);
       const obj4 = { linkCode: tmp, expiresAt: stateFromStores2, onRefresh: getLinkCode2 };
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(16335, dependencyMap.paths), metroImportDefault, obj4);
+      obj3.openLazy(asyncRequire(16386, dependencyMap.paths), metroImportDefault, obj4);
     }
   }, items4);
   const obj8 = { direction: "horizontal", spacing: getLinkCode2(stateFromStores[9]).space.PX_8, style: tmp.container, children: items5 };
@@ -186,14 +186,14 @@ export function FamilyCenterParentQRCodeButton() {
     return tmp4;
   }
   let tmp = handleQrCodeScanSucess;
-  let obj = handleQrCodeScanSucess(8169);
+  let obj = handleQrCodeScanSucess(8211);
   if (obj.useHasMaxConnections()) {
     const tmp6 = null;
     return null;
   } else {
     let tmp4 = FamilyCenterBannerButton;
     let obj2 = {
-      text: intl.string(_modDef2846.z4a9HP),
+      text: intl.string(_modDef2847.z4a9HP),
       onPress() {
           let onScanSuccess;
           let tmp = importDefault;

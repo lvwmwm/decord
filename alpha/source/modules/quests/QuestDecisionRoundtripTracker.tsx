@@ -1,17 +1,17 @@
-// Module ID: 9854
-// Function ID: 9855
+// Module ID: 9896
+// Function ID: 9897
 // Name: QuestDecisionRoundtripTracker
-// Dependencies: [8320, 5950, 1071, 6847, 8321, 6762, 1255, 8206, 9855, 2]
+// Dependencies: [8362, 5981, 1071, 6878, 8363, 6793, 1256, 8248, 9897, 2]
 
-// Module 9854 (QuestDecisionRoundtripTracker)
+// Module 9896 (QuestDecisionRoundtripTracker)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import NetStats from "NetStats" /* 6762 */;
-import AdCreativeType from "AdCreativeType" /* 6847 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 8206 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 8321 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8320 */;
-import NetworkStore from "NetworkStore" /* 5950 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import NetStats from "NetStats" /* 6793 */;
+import AdCreativeType from "AdCreativeType" /* 6878 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8248 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 8363 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8362 */;
+import NetworkStore from "NetworkStore" /* 5981 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
@@ -58,7 +58,7 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     if (fetchedAt == null) {
       fetchedAt = null;
     }
-    tmp2Result = tmp2(9855);
+    tmp2Result = tmp2(9897);
     track(QUEST_DECISION_ROUNDTRIP, obj3);
   }
 }
@@ -199,7 +199,7 @@ class QuestDecisionRoundtripTracker {
             }
             const deliveredAdCreativeId = getDeliveredAdCreativeId(creative);
             let creative1;
-            const getDeliveredAdCreativeId2 = tmp12(8321).getDeliveredAdCreativeId;
+            const getDeliveredAdCreativeId2 = tmp12(8363).getDeliveredAdCreativeId;
             AdDecisionUtils;
             if (tmp6 != null) {
               creative1 = tmp6.creative;

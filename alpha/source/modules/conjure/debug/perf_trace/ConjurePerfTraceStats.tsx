@@ -1,11 +1,11 @@
-// Module ID: 18822
-// Function ID: 18823
+// Module ID: 18885
+// Function ID: 18886
 // Name: ConjurePerfTraceStats
-// Dependencies: [7684, 2]
+// Dependencies: [7717, 2]
 // Exports: sumPerfTraceStats
 
-// Module 18822 (ConjurePerfTraceStats)
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 7684 */;
+// Module 18885 (ConjurePerfTraceStats)
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 7717 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -78,7 +78,7 @@ export function sumPerfTraceStats(memo) {
   let obj = {
     categories: PERF_CATEGORIES.map((category) => {
       let closure_0 = category;
-      const f133499 = (categories) => {
+      const f133947 = (categories) => {
         categories = categories.categories;
         const found = categories.find((category) => category.category === closure_1_0);
         let num;
@@ -90,20 +90,20 @@ export function sumPerfTraceStats(memo) {
         }
         return num;
       };
-      const obj = { category, ms: mapped.reduce((acc, item) => acc + f133499(item), 0) };
+      const obj = { category, ms: mapped.reduce((acc, item) => acc + f133947(item), 0) };
       return obj;
     }),
-    busyMs: mapped.reduce((acc, item) => acc + f133499(item), 0),
-    model: { calls: mapped.reduce((acc, item) => acc + f133499(item), 0), input: mapped.reduce((acc, item) => acc + f133499(item), 0), output: mapped.reduce((acc, item) => acc + f133499(item), 0), cacheRead: mapped.reduce((acc, item) => acc + f133499(item), 0), cacheWrite: mapped.reduce((acc, item) => acc + f133499(item), 0), costUsd: mapped.reduce((acc, item) => acc + f133499(item), 0) }
+    busyMs: mapped.reduce((acc, item) => acc + f133947(item), 0),
+    model: { calls: mapped.reduce((acc, item) => acc + f133947(item), 0), input: mapped.reduce((acc, item) => acc + f133947(item), 0), output: mapped.reduce((acc, item) => acc + f133947(item), 0), cacheRead: mapped.reduce((acc, item) => acc + f133947(item), 0), cacheWrite: mapped.reduce((acc, item) => acc + f133947(item), 0), costUsd: mapped.reduce((acc, item) => acc + f133947(item), 0) }
   };
   PERF_CATEGORIES = ConjurePerfTraceLayout.PERF_CATEGORIES;
-  const f116080 = (busyMs) => busyMs.busyMs;
-  const f116081 = (model) => model.model.calls;
-  const f116082 = (model) => model.model.input;
-  const f116083 = (model) => model.model.output;
-  const f116084 = (model) => model.model.cacheRead;
-  const f116085 = (model) => model.model.cacheWrite;
-  const f116086 = (model) => model.model.costUsd;
-  ({ calls: mapped.reduce((acc, item) => acc + f133499(item), 0), input: mapped.reduce((acc, item) => acc + f133499(item), 0), output: mapped.reduce((acc, item) => acc + f133499(item), 0), cacheRead: mapped.reduce((acc, item) => acc + f133499(item), 0), cacheWrite: mapped.reduce((acc, item) => acc + f133499(item), 0), costUsd: mapped.reduce((acc, item) => acc + f133499(item), 0) });
+  const f116467 = (busyMs) => busyMs.busyMs;
+  const f116468 = (model) => model.model.calls;
+  const f116469 = (model) => model.model.input;
+  const f116470 = (model) => model.model.output;
+  const f116471 = (model) => model.model.cacheRead;
+  const f116472 = (model) => model.model.cacheWrite;
+  const f116473 = (model) => model.model.costUsd;
+  ({ calls: mapped.reduce((acc, item) => acc + f133947(item), 0), input: mapped.reduce((acc, item) => acc + f133947(item), 0), output: mapped.reduce((acc, item) => acc + f133947(item), 0), cacheRead: mapped.reduce((acc, item) => acc + f133947(item), 0), cacheWrite: mapped.reduce((acc, item) => acc + f133947(item), 0), costUsd: mapped.reduce((acc, item) => acc + f133947(item), 0) });
   return obj;
 }

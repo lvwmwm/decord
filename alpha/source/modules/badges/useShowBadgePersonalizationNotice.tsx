@@ -1,14 +1,14 @@
-// Module ID: 9835
-// Function ID: 9836
+// Module ID: 9877
+// Function ID: 9878
 // Name: useShowBadgePersonalizationNotice
-// Dependencies: [6810, 1071, 504, 9828, 2]
+// Dependencies: [6841, 1071, 504, 9870, 2]
 // Exports: default
 
-// Module 9835 (useShowBadgePersonalizationNotice)
+// Module 9877 (useShowBadgePersonalizationNotice)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
-import BadgeUtils from "BadgeUtils" /* 9828 */;
-import ConsentStore from "ConsentStore" /* 6810 */;
+import BadgeUtils from "BadgeUtils" /* 9870 */;
+import ConsentStore from "ConsentStore" /* 6841 */;
 import size from "module_2" /* 2 */;
 
 const Consents = Constants.Consents;

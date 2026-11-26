@@ -1,13 +1,13 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 13868
+// Function ID: 13869
 // Name: useFriendsSinceDate
-// Dependencies: [2188, 4954, 1071, 563, 6339, 2]
+// Dependencies: [2189, 4985, 1071, 563, 6370, 2]
 // Exports: useFriendsSinceDate
 
-// Module 13816 (useFriendsSinceDate)
+// Module 13868 (useFriendsSinceDate)
 import Constants from "Constants" /* 1071 */;
-import LocaleStore from "LocaleStore" /* 2188 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

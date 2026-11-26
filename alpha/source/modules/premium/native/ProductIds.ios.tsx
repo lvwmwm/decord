@@ -1,12 +1,12 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 9107
+// Function ID: 9108
 // Name: ProductIds
-// Dependencies: [1388, 9066, 2]
+// Dependencies: [1389, 9108, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 9065 (ProductIds)
-import AppleProductIds from "AppleProductIds" /* 9066 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+// Module 9107 (ProductIds)
+import AppleProductIds from "AppleProductIds" /* 9108 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;

@@ -1,14 +1,14 @@
-// Module ID: 8959
-// Function ID: 8960
+// Module ID: 9001
+// Function ID: 9002
 // Name: ArrowAngleRightUpIcon
-// Dependencies: [19, 21, 575, 5698, 8960, 2]
+// Dependencies: [19, 21, 575, 5729, 9002, 2]
 // Exports: ArrowAngleRightUpIcon
 
-// Module 8959 (ArrowAngleRightUpIcon)
+// Module 9001 (ArrowAngleRightUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5698 */;
-import AssetRegistry from "AssetRegistry" /* 8960 */;
+import BaseIconImage2 from "BaseIconImage" /* 5729 */;
+import AssetRegistry from "AssetRegistry" /* 9002 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

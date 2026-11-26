@@ -1,15 +1,15 @@
-// Module ID: 17799
-// Function ID: 17800
+// Module ID: 17856
+// Function ID: 17857
 // Name: VoiceUserSummary
-// Dependencies: [19, 17, 21, 1186, 5012, 8972, 8971, 7132, 7136, 2]
+// Dependencies: [19, 17, 21, 1186, 5043, 9014, 9013, 7163, 7167, 2]
 
-// Module 17799 (VoiceUserSummary)
+// Module 17856 (VoiceUserSummary)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1186 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8972 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9014 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -35,13 +35,13 @@ const memoResult = react.memo(function UserSummaryItem(guildId) {
   if (useIsUsingClientThemeDefault()) {
     transparentBorder = tmp.transparentBorder;
   }
-  let obj = guildId(8971);
+  let obj = guildId(9013);
   const obj2 = { style: items, children: null };
   items = [noPadding ? tmp.containerNoPadding : tmp.container, obj.useClientThemesOverride()];
   if (renderIcon) {
     let VoiceNormalIcon;
     if (stageIcon) {
-      VoiceNormalIcon = tmp4(7132).StageIcon;
+      VoiceNormalIcon = tmp4(7163).StageIcon;
     }
     const obj3 = { size: "sm", color: "channel-icon", style: tmp.redesignChannelIcon };
     const items1 = [closure_4(VoiceNormalIcon, obj3), ];
@@ -70,7 +70,7 @@ const memoResult = react.memo(function UserSummaryItem(guildId) {
     obj2.children = items1;
     return tmp5(tmp6, obj2);
   }
-  VoiceNormalIcon = tmp4(7136).VoiceNormalIcon;
+  VoiceNormalIcon = tmp4(7167).VoiceNormalIcon;
 });
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUserSummary.tsx");
 

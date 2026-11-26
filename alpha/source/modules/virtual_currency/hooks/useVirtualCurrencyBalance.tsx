@@ -1,12 +1,12 @@
-// Module ID: 11566
-// Function ID: 11567
+// Module ID: 11614
+// Function ID: 11615
 // Name: useVirtualCurrencyBalance
-// Dependencies: [9399, 504, 2]
+// Dependencies: [9441, 504, 2]
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
 
-// Module 11566 (useVirtualCurrencyBalance)
+// Module 11614 (useVirtualCurrencyBalance)
 import get_initialized from "get initialized" /* 504 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9399 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9441 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

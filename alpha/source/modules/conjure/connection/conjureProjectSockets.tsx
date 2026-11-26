@@ -1,10 +1,10 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7673
+// Function ID: 7674
 // Name: conjureProjectSockets
 // Dependencies: [2]
 // Exports: deleteConjureSocket, getConjureSocket, sendOnConjureSocket, setConjureSocket
 
-// Module 7642 (conjureProjectSockets)
+// Module 7673 (conjureProjectSockets)
 import size from "module_2" /* 2 */;
 
 const map = new Map();

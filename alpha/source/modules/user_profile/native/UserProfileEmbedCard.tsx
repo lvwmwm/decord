@@ -1,16 +1,16 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 11973
+// Function ID: 11974
 // Name: UserProfileEmbedCard
-// Dependencies: [4954, 1386, 6132, 4837, 6131, 6776, 8779, 2]
+// Dependencies: [4985, 1387, 6163, 4868, 6162, 6807, 8821, 2]
 // Exports: userProfileEmbedCardKey
 
-// Module 11925 (UserProfileEmbedCard)
-import useDisplayProfile from "useDisplayProfile" /* 6131 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6776 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8779 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
-import UserProfileStore from "UserProfileStore" /* 6132 */;
+// Module 11973 (UserProfileEmbedCard)
+import useDisplayProfile from "useDisplayProfile" /* 6162 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8821 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
+import UserProfileStore from "UserProfileStore" /* 6163 */;
 import size from "module_2" /* 2 */;
 
 function readUserProfileEmbedCard(code, guild_id, id) {
@@ -44,7 +44,7 @@ function readUserProfileEmbedCard(code, guild_id, id) {
         }
         tmp8 = str;
       } else {
-        const IgnoreProfileSpeedbumpDisabled = tmp12(4837).IgnoreProfileSpeedbumpDisabled;
+        const IgnoreProfileSpeedbumpDisabled = tmp12(4868).IgnoreProfileSpeedbumpDisabled;
         tmp8 = null;
       }
     } else {

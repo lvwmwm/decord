@@ -1,13 +1,13 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14129
+// Function ID: 14130
 // Name: useMediaItemSpoilerState
-// Dependencies: [32, 19, 8767, 1653, 5222, 1186, 1706, 2]
+// Dependencies: [32, 19, 8809, 1654, 5253, 1186, 1707, 2]
 // Exports: useMediaItemSpoilerState
 
-// Module 14077 (useMediaItemSpoilerState)
+// Module 14129 (useMediaItemSpoilerState)
 import native from "native" /* 1186 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import timing_timing from "timing/timing" /* 5222 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import timing_timing from "timing/timing" /* 5253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,11 +25,11 @@ export function useMediaItemSpoilerState(index) {
   let tmp5;
   let tmp9;
   const tmp = mediaItemHasSpoiler;
-  let obj = mediaItemHasSpoiler(8767);
+  let obj = mediaItemHasSpoiler(8809);
   mediaItemHasSpoiler = obj.useMediaItemHasSpoiler(index);
   const tmp4 = sharedValue(react.useState(mediaItemHasSpoiler), 2);
   [tmp5, dependencyMap] = tmp4;
-  const tmp6 = mediaItemHasSpoiler(1653);
+  const tmp6 = mediaItemHasSpoiler(1654);
   let num = 0;
   const useSharedValue = tmp6.useSharedValue;
   const obj2 = react;
@@ -52,7 +52,7 @@ export function useMediaItemSpoilerState(index) {
     }
     const items = [closure_4, , , ];
     const obj = { duration: 200, easing: native.STANDARD_EASING };
-    items[1] = _mod1706.scheduleOnRN;
+    items[1] = _mod1707.scheduleOnRN;
     items[2] = dependencyMap;
     items[3] = mediaItemHasSpoiler;
     let c0;
@@ -80,7 +80,7 @@ export function useMediaItemSpoilerState(index) {
   useMediaItemSpoilerStateTsx2.__workletHash = 9056847135964;
   useMediaItemSpoilerStateTsx2.__initData = tmp9;
   const items3 = [tmp5, ];
-  const tmpResult = tmp(1653);
+  const tmpResult = tmp(1654);
   items3[1] = tmpResult.useAnimatedStyle(useMediaItemSpoilerStateTsx2);
   return items3;
 }

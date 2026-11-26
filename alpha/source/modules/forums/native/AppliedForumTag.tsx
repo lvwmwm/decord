@@ -1,21 +1,21 @@
-// Module ID: 11033
-// Function ID: 11034
+// Module ID: 11079
+// Function ID: 11080
 // Name: AppliedForumTag
-// Dependencies: [19, 17, 6852, 1389, 21, 5012, 575, 504, 11034, 1112, 7457, 1412, 5603, 2]
+// Dependencies: [19, 17, 6883, 1390, 21, 5043, 575, 504, 11080, 1112, 7488, 1413, 5634, 2]
 // Exports: AppliedForumTagPill
 
-// Module 11033 (AppliedForumTag)
+// Module 11079 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import EmojiConstants from "EmojiConstants" /* 1389 */;
-import EmojiDefault from "Emoji" /* 7457 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 11034 */;
+import EmojiConstants from "EmojiConstants" /* 1390 */;
+import EmojiDefault from "Emoji" /* 7488 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 11080 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6852 */;
+import EmojiStore from "EmojiStore" /* 6883 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp5;
-const Text_Text = tmp5(5603);
+const Text_Text = tmp5(5634);
 class AppliedForumTag {
   constructor(hasUnreads) {
     let c2;
@@ -88,7 +88,7 @@ class AppliedForumTag {
           if (null != closure_5) {
             const obj6 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
             ({ id: obj5.id, animated: obj5.animated } = tmp14);
-            const tmp12Result = tmp12(1412);
+            const tmp12Result = tmp12(1413);
             emojiURL = tmp12Result.getEmojiURL(obj6);
           }
           if (str == null) {

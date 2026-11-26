@@ -1,11 +1,11 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 16029
+// Function ID: 16030
 // Name: UserProfileMobileEditingRefreshExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: useIsUserProfileEditingRefreshEnabled
 
-// Module 15978 (UserProfileMobileEditingRefreshExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 16029 (UserProfileMobileEditingRefreshExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

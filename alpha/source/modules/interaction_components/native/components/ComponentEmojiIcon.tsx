@@ -1,15 +1,15 @@
-// Module ID: 12354
-// Function ID: 12355
+// Module ID: 12404
+// Function ID: 12405
 // Name: ComponentEmojiIcon
-// Dependencies: [19, 21, 5012, 575, 7457, 2]
+// Dependencies: [19, 21, 5043, 575, 7488, 2]
 // Exports: default
 
-// Module 12354 (ComponentEmojiIcon)
+// Module 12404 (ComponentEmojiIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import EmojiDefault from "Emoji" /* 7457 */;
+import EmojiDefault from "Emoji" /* 7488 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

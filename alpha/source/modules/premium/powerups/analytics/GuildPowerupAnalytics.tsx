@@ -1,12 +1,12 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 13533
+// Function ID: 13534
 // Name: GuildPowerupAnalytics
-// Dependencies: [19, 1071, 1255, 2]
+// Dependencies: [19, 1071, 1256, 2]
 // Exports: useLogPowerupModalOpened
 
-// Module 13481 (GuildPowerupAnalytics)
+// Module 13533 (GuildPowerupAnalytics)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

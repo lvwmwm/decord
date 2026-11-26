@@ -1,21 +1,21 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16046
+// Function ID: 16047
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 5012, 575, 16003, 7309, 16004, 9460, 9392, 11898, 6344, 7315, 5226, 5240, 7476, 1112, 9595, 10760, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5043, 575, 16033, 7340, 16034, 9502, 9434, 11946, 6375, 7346, 5257, 5271, 7507, 1112, 9637, 10806, 2]
 // Exports: default
 
-// Module 16016 (ProfileGIFSelectActionSheet)
+// Module 16046 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5240 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7476 */;
-import GIFPickerDefault from "GIFPicker" /* 10760 */;
-import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 16003 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7507 */;
+import GIFPickerDefault from "GIFPicker" /* 10806 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 16033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let obj2;
 let tmp2;
 const intl3 = tmp2(1112);
-const NitroWheelIcon = tmp2(9595);
+const NitroWheelIcon = tmp2(9637);
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { titleWrapper: { flex: 0 }, titleContainer: { justifyContent: "flex-start" }, gifPicker: obj2 };
@@ -56,7 +56,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             const obj10 = src(closure_2[15]);
             obj10.hideActionSheet();
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp53) {
           c5 = 3;

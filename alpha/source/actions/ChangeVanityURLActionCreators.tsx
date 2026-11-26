@@ -1,12 +1,12 @@
-// Module ID: 20020
-// Function ID: 20021
+// Module ID: 20084
+// Function ID: 20085
 // Name: ChangeVanityURLActionCreators
-// Dependencies: [1071, 572, 1284, 2]
+// Dependencies: [1071, 572, 1285, 2]
 
-// Module 20020 (ChangeVanityURLActionCreators)
+// Module 20084 (ChangeVanityURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
@@ -34,7 +34,7 @@ let obj = {
     const self = this;
     let obj = DispatcherDefault;
     obj.dispatch({ type: "CHANGE_VANITY_URL_MODAL_SUBMIT" });
-    const HTTP = self(1284).HTTP;
+    const HTTP = self(1285).HTTP;
     const request = { url: Endpoints.GUILD_VANITY_URL(id), body: obj2, oldFormErrors: true, rejectWithError: true };
     obj2 = { code: vanityURLCode };
     const patchResult = HTTP.patch(request);

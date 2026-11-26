@@ -1,18 +1,18 @@
-// Module ID: 19270
-// Function ID: 19271
+// Module ID: 19333
+// Function ID: 19334
 // Name: useLaunchPadGesture
-// Dependencies: [19, 11910, 5188, 1628, 5272, 1378, 12944, 11738, 1706, 5228, 2]
+// Dependencies: [19, 11958, 5219, 1629, 5303, 1379, 12996, 11786, 1707, 5259, 2]
 // Exports: default
 
-// Module 19270 (useLaunchPadGesture)
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import HapticUtils from "HapticUtils" /* 5228 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5272 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11738 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12944 */;
+// Module 19333 (useLaunchPadGesture)
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import HapticUtils from "HapticUtils" /* 5259 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11786 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12996 */;
 import react from "react" /* 19 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11910 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11958 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -237,7 +237,7 @@ export default function useLaunchPadGesture(launchPadType) {
       items4[6] = 70;
       items4[7] = updaters;
       items4[8] = updateSharedValueIfChangedDefault;
-      items4[9] = _mod1706.scheduleOnRN;
+      items4[9] = _mod1707.scheduleOnRN;
       items4[10] = HapticUtils.triggerHapticFeedback;
       items4[11] = HapticUtils.HapticFeedbackTypes;
       let c7;

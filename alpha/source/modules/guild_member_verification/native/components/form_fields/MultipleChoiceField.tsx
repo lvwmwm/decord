@@ -1,17 +1,17 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7443
+// Function ID: 7444
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 1082, 21, 5012, 6791, 575, 5603, 7220, 7222, 2]
+// Dependencies: [19, 17, 1082, 21, 5043, 6822, 575, 5634, 7251, 7253, 2]
 // Exports: default
 
-// Module 7412 (MultipleChoiceField)
+// Module 7443 (MultipleChoiceField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import TextStyles from "TextStyles" /* 6791 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import TextStyles from "TextStyles" /* 6822 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

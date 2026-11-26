@@ -1,27 +1,27 @@
-// Module ID: 20216
-// Function ID: 20217
+// Module ID: 20280
+// Function ID: 20281
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 4861, 10384, 4883, 4944, 1071, 21, 5012, 575, 1500, 504, 38, 12, 20217, 10390, 6015, 1112, 5573, 7717, 8046, 20218, 10385, 1263, 7160, 7324, 2]
+// Dependencies: [32, 19, 4892, 10429, 4914, 4975, 1071, 21, 5043, 575, 1501, 504, 38, 12, 20281, 10435, 6046, 1112, 5604, 7751, 8088, 20282, 10430, 1264, 7191, 7355, 2]
 // Exports: default
 
-// Module 20216 (InviteSettingsModal)
+// Module 20280 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
-import NavigatorHeader from "NavigatorHeader" /* 7160 */;
-import Navigator from "Navigator" /* 7324 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10390 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20217 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
+import NavigatorHeader from "NavigatorHeader" /* 7191 */;
+import Navigator from "Navigator" /* 7355 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 10435 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 20281 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 10384 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 10429 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, getGuild, navigation;
@@ -38,7 +38,7 @@ function AdvancedInstantInviteScreen() {
   let inviteSettings;
   let settings;
   let tmp = closure_12();
-  let obj = navigation(1500);
+  let obj = navigation(1501);
   navigation = obj.useNavigation();
   let obj2 = navigation(504);
   const items = [ChannelStore, CreateInviteModalStore, GuildStore];
@@ -97,7 +97,7 @@ function AdvancedInstantInviteScreen() {
       }
     }
   }, items1);
-  const tmp2Result2 = navigation(5573);
+  const tmp2Result2 = navigation(5604);
   const unmountEffect = tmp2Result2.useUnmountEffect(() => {
     const obj = channel(closure_2[15]);
     obj.resetSettings();
@@ -162,9 +162,9 @@ function AdvancedInstantInviteScreen() {
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8046).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(10385).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(20218);
+  const Form = tmp2(8088).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(10430).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(20282);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 }

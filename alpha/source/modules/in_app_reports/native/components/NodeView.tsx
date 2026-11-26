@@ -1,32 +1,32 @@
-// Module ID: 8156
-// Function ID: 8157
+// Module ID: 8198
+// Function ID: 8199
 // Name: NodeView
-// Dependencies: [32, 19, 17, 5606, 4861, 4944, 8157, 8155, 1071, 1082, 21, 5012, 575, 5591, 6088, 5603, 5009, 5716, 504, 8158, 8159, 1500, 5242, 6078, 8152, 8150, 5982, 8161, 8168, 8169, 7449, 8177, 8178, 8179, 8180, 14503, 14504, 14626, 14627, 14628, 14629, 14630, 14631, 14632, 14634, 14635, 14636, 14637, 14638, 14639, 14640, 14641, 14644, 2]
+// Dependencies: [32, 19, 17, 5637, 4892, 4975, 8199, 8197, 1071, 1082, 21, 5043, 575, 5622, 6119, 5634, 5040, 5747, 504, 8200, 8201, 1501, 5273, 6109, 8194, 8192, 6013, 8203, 8210, 8211, 7480, 8219, 8220, 8221, 8222, 14555, 14556, 14679, 14680, 14681, 14682, 14683, 14684, 14685, 14687, 14688, 14689, 14690, 14691, 14692, 14693, 14694, 14697, 2]
 // Exports: default
 
-// Module 8156 (NodeView)
+// Module 8198 (NodeView)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1082 */;
-import ColorUtils from "ColorUtils" /* 5009 */;
-import reactDefault from "react" /* 5591 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5716 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5982 */;
-import CustomMarkupAll from "CustomMarkup" /* 6088 */;
-import MenuTypes from "MenuTypes" /* 8150 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 8155 */;
-import MenuConstants from "MenuConstants" /* 8157 */;
-import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 8158 */;
-import ArrowDefault from "Arrow" /* 8159 */;
+import ColorUtils from "ColorUtils" /* 5040 */;
+import reactDefault from "react" /* 5622 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5747 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6013 */;
+import CustomMarkupAll from "CustomMarkup" /* 6119 */;
+import MenuTypes from "MenuTypes" /* 8192 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 8197 */;
+import MenuConstants from "MenuConstants" /* 8199 */;
+import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 8200 */;
+import ArrowDefault from "Arrow" /* 8201 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5606 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+import DevSettingsStore from "DevSettingsStore" /* 5637 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -137,7 +137,7 @@ function ChildItem(child) {
   }
   if (stateFromStores) {
     const obj3 = { style: tmp.debugText, variant: "body-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp10(tmp6(5603).Text, obj3);
+    stateFromStores = tmp10(tmp6(5634).Text, obj3);
   }
   return closure_16(tmp11, obj2);
 }

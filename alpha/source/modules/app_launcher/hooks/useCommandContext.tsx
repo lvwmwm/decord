@@ -1,12 +1,12 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 12470
+// Function ID: 12471
 // Name: useCommandContext
-// Dependencies: [19, 4883, 2]
+// Dependencies: [19, 4914, 2]
 // Exports: getCommandContext, useCommandContext
 
-// Module 12421 (useCommandContext)
+// Module 12470 (useCommandContext)
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4883 */;
+import GuildStore from "GuildStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/app_launcher/hooks/useCommand
 export function getCommandContext(type) {
   let obj;
   if ("contextless" === type.type) {
-    obj = { channel: "Array", guild: "analyticsLocations" };
+    obj = { channel: "Array", guild: "channel_id" };
   } else {
     obj = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
   }
@@ -27,7 +27,7 @@ export function useCommandContext(context) {
   return react.useMemo(() => {
     let obj;
     if ("contextless" === context.type) {
-      obj = { channel: "Array", guild: "analyticsLocations" };
+      obj = { channel: "Array", guild: "channel_id" };
     } else {
       obj = { channel: context.channel, guild: GuildStore.getGuild(context.channel.guild_id) };
     }

@@ -1,11 +1,11 @@
-// Module ID: 14791
-// Function ID: 14792
+// Module ID: 14844
+// Function ID: 14845
 // Name: UserProfilePerformanceAnalyticsExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: isUserProfilePerformanceAnalyticsEnabled
 
-// Module 14791 (UserProfilePerformanceAnalyticsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 14844 (UserProfilePerformanceAnalyticsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-04-user-profile-performance-analytics", defaultConfig: { performanceAnalyticsEnabled: false }, variations: { 0: { performanceAnalyticsEnabled: false }, 1: { performanceAnalyticsEnabled: true } } };

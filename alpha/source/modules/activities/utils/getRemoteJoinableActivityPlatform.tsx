@@ -1,16 +1,16 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12285
+// Function ID: 12286
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [6359, 5822, 1071, 1358, 7734, 1404, 12236, 2]
+// Dependencies: [6390, 5853, 1071, 1359, 7768, 1405, 12286, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 12235 (getRemoteJoinableActivityPlatform)
+// Module 12285 (getRemoteJoinableActivityPlatform)
 import Constants from "Constants" /* 1071 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import FlagUtils from "FlagUtils" /* 1404 */;
-import ActivityFlagUtils from "ActivityFlagUtils" /* 12236 */;
-import ConnectedAppsStore from "ConnectedAppsStore" /* 6359 */;
-import SessionsStore from "SessionsStore" /* 5822 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1359 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import ActivityFlagUtils from "ActivityFlagUtils" /* 12286 */;
+import ConnectedAppsStore from "ConnectedAppsStore" /* 6390 */;
+import SessionsStore from "SessionsStore" /* 5853 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFlags = Constants.ActivityFlags;
@@ -58,10 +58,10 @@ export function getRemoteJoinableActivityPlatform(presenceActivity) {
                 const platform = remoteApplicationActivity.platform;
                 const tmp9Result5 = utils_PlatformUtils;
                 if (tmp9Result5.isAndroid()) {
-                  platform === tmp9(7734).ActivityGamePlatforms.ANDROID;
+                  platform === tmp9(7768).ActivityGamePlatforms.ANDROID;
                 } else {
                   const tmp9Result6 = utils_PlatformUtils;
-                  tmp9Result6.isIOS() && platform === tmp9(7734).ActivityGamePlatforms.IOS;
+                  tmp9Result6.isIOS() && platform === tmp9(7768).ActivityGamePlatforms.IOS;
                 }
                 tmp4 = null;
               }

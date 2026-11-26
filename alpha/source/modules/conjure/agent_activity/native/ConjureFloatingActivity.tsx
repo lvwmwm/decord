@@ -1,21 +1,21 @@
-// Module ID: 18765
-// Function ID: 18766
+// Module ID: 18828
+// Function ID: 18829
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 5012, 575, 1653, 5222, 18707, 6121, 1112, 4244, 11438, 5603, 15406, 6972, 2]
+// Dependencies: [32, 19, 17, 21, 5043, 575, 1654, 5253, 18770, 6152, 1112, 4245, 11485, 5634, 15456, 7003, 2]
 // Exports: default
 
-// Module 18765 (ConjureFloatingActivity)
+// Module 18828 (ConjureFloatingActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1653 from "module_1653" /* 1653 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import timing_timing from "timing/timing" /* 5222 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6972 */;
-import ConjureTodoListDefault from "ConjureTodoList" /* 18707 */;
+import _modDef1654 from "module_1654" /* 1654 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import timing_timing from "timing/timing" /* 5253 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7003 */;
+import ConjureTodoListDefault from "ConjureTodoList" /* 18770 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -72,7 +72,7 @@ export default function ConjureFloatingActivity(agents) {
   importDefault = undefined;
   agents = agents.agents;
   const tmp = closure_8();
-  let obj = sharedValue(1653);
+  let obj = sharedValue(1654);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -87,7 +87,7 @@ export default function ConjureFloatingActivity(agents) {
   const items1 = [closure_9, sharedValue];
   let c0;
   [tmp6, tmp7] = items1;
-  const obj3 = sharedValue(1653);
+  const obj3 = sharedValue(1654);
   class ConjureFloatingActivityTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -105,7 +105,7 @@ export default function ConjureFloatingActivity(agents) {
   const obj4 = { style: items3, pointerEvents: "box-none", children: items4 };
   items3 = [tmp.root, { bottom }, animatedStyle];
   let tmp14 = null;
-  View = _modDef1653.View;
+  View = _modDef1654.View;
   if (tmp10) {
     tmp14 = null;
     if (null != todos) {
@@ -116,20 +116,20 @@ export default function ConjureFloatingActivity(agents) {
   }
   items4 = [tmp14, ];
   const obj7 = { style: tmp.pill, children: items6 };
-  const obj8 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef4244.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items5 };
-  const PressableOpacity = tmp2(6121).PressableOpacity;
+  const obj8 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef4245.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items5 };
+  const PressableOpacity = tmp2(6152).PressableOpacity;
   intl = tmp2(1112).intl;
   const obj9 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const MagicWandIcon = tmp2(11438).MagicWandIcon;
+  const MagicWandIcon = tmp2(11485).MagicWandIcon;
   items5 = [closure_6(MagicWandIcon, obj9), ];
-  const obj10 = { style: tmp.label, children: closure_6(sharedValue(5603).Text, { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
+  const obj10 = { style: tmp.label, children: closure_6(sharedValue(5634).Text, { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
   items5[1] = closure_6(View, obj10);
   items6 = [closure_7(PressableOpacity, obj8), ];
   let tmp18Result = null;
   if (null != todos) {
     const obj11 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj12) };
-    obj12 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp10, accessibilityLabel: intl2.string(_modDef4244.Qp2isI), onPress: callback };
-    ToggleIconButton = tmp2(15406).ToggleIconButton;
+    obj12 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp10, accessibilityLabel: intl2.string(_modDef4245.Qp2isI), onPress: callback };
+    ToggleIconButton = tmp2(15456).ToggleIconButton;
     intl2 = tmp2(1112).intl;
     tmp18Result = tmp18(tmp17, obj11);
   }

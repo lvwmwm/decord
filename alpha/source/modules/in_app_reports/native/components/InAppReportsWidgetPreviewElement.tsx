@@ -1,18 +1,18 @@
-// Module ID: 14504
-// Function ID: 14505
+// Module ID: 14556
+// Function ID: 14557
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5012, 575, 9445, 6140, 14505, 5603, 1112, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 9487, 6171, 14557, 5634, 1112, 2]
 // Exports: default
 
-// Module 14504 (InAppReportsWidgetPreviewElement)
+// Module 14556 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6140 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9445 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6171 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 9487 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -40,14 +40,14 @@ export default function WidgetPreview(widget) {
     if (widget.games.length > 0) {
       const obj2 = { userId, widget, disableInteraction: true, cardStyle: items };
       items = [tmp3.card, tmp.card];
-      tmp5 = React3(tmp4(14505).WidgetSection, obj2);
+      tmp5 = React3(tmp4(14557).WidgetSection, obj2);
     }
   }
   let tmp7 = null;
   if (null !== tmp5) {
     const obj3 = { style: tmp.container, children: items1 };
     const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "body-sm/medium", children: intl.string(intl2.t.SpsnDY) };
-    const Text = tmp4(5603).Text;
+    const Text = tmp4(5634).Text;
     intl = tmp4(1112).intl;
     items1 = [React3(Text, obj4), tmp5];
     tmp7 = hasOwnProperty(View, obj3);

@@ -1,12 +1,12 @@
-// Module ID: 15291
-// Function ID: 15292
+// Module ID: 15341
+// Function ID: 15342
 // Name: GuildBadgeLava
-// Dependencies: [19, 21, 15276, 7912, 2]
+// Dependencies: [19, 21, 15326, 7946, 2]
 // Exports: GuildBadgeLava
 
-// Module 15291 (GuildBadgeLava)
-import inlineStyles from "inlineStyles" /* 7912 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15276 */;
+// Module 15341 (GuildBadgeLava)
+import inlineStyles from "inlineStyles" /* 7946 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15326 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

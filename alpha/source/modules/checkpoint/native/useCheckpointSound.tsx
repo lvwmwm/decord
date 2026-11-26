@@ -1,13 +1,13 @@
-// Module ID: 12621
-// Function ID: 12622
+// Module ID: 12665
+// Function ID: 12666
 // Name: useCheckpointSound
-// Dependencies: [19, 12571, 504, 10256, 2]
+// Dependencies: [19, 12620, 504, 10298, 2]
 // Exports: default
 
-// Module 12621 (useCheckpointSound)
-import SoundUtils from "SoundUtils" /* 10256 */;
+// Module 12665 (useCheckpointSound)
+import SoundUtils from "SoundUtils" /* 10298 */;
 import react_mod from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 12571 */;
+import CheckpointStore from "CheckpointStore" /* 12620 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

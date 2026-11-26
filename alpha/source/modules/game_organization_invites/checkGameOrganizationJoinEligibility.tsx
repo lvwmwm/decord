@@ -1,16 +1,16 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12325
+// Function ID: 12326
 // Name: checkGameOrganizationJoinEligibility
-// Dependencies: [5, 4915, 12276, 11868, 11869, 12277, 12278, 2]
+// Dependencies: [5, 4946, 12326, 11916, 11917, 12327, 12328, 2]
 // Exports: default
 
-// Module 12275 (checkGameOrganizationJoinEligibility)
-import withGameOrganizationJoinFlowPendingDefault from "withGameOrganizationJoinFlowPending" /* 12277 */;
+// Module 12325 (checkGameOrganizationJoinEligibility)
+import withGameOrganizationJoinFlowPendingDefault from "withGameOrganizationJoinFlowPending" /* 12327 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
-import GameOrganizationCharacterEligibilityStore from "GameOrganizationCharacterEligibilityStore" /* 12276 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11868 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11869 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
+import GameOrganizationCharacterEligibilityStore from "GameOrganizationCharacterEligibilityStore" /* 12326 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11916 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11917 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, invite;
@@ -34,7 +34,7 @@ let obj = function _checkGameOrganizationJoinEligibility() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {

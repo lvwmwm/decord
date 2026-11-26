@@ -1,11 +1,11 @@
-// Module ID: 2152
-// Function ID: 2153
+// Module ID: 2153
+// Function ID: 2154
 // Name: StringUtils
-// Dependencies: [2, 2153]
+// Dependencies: [2, 2154]
 // Exports: isNullOrEmpty
 
-// Module 2152 (StringUtils)
-import utils_StringUtils from "utils/StringUtils" /* 2153 */;
+// Module 2153 (StringUtils)
+import utils_StringUtils from "utils/StringUtils" /* 2154 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/StringUtils.tsx");

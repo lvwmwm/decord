@@ -1,18 +1,18 @@
-// Module ID: 17821
-// Function ID: 17822
+// Module ID: 17878
+// Function ID: 17879
 // Name: FavoritesGuildAddCategoryActionSheet
-// Dependencies: [32, 19, 4874, 21, 5012, 575, 4886, 10696, 5226, 5240, 7476, 1112, 7243, 5610, 2]
+// Dependencies: [32, 19, 4905, 21, 5043, 575, 4917, 10741, 5257, 5271, 7507, 1112, 7274, 5641, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 17821 (FavoritesGuildAddCategoryActionSheet)
+// Module 17878 (FavoritesGuildAddCategoryActionSheet)
 import nativeDefault from "native" /* 575 */;
-import FavoritesConstants from "FavoritesConstants" /* 4874 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5226 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10696 */;
+import FavoritesConstants from "FavoritesConstants" /* 4905 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5257 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10741 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -34,7 +34,7 @@ function FavoritesGuildAddCategoryActionSheet() {
   let value;
   let tmp = closure_9();
   [value, tmp4] = react.useState("");
-  let obj = value(4886);
+  let obj = value(4917);
   const result = obj.isFavoritesGuildCategoryNameValid(value);
   importDefault = result;
   const items = [result, value];
@@ -48,17 +48,17 @@ function FavoritesGuildAddCategoryActionSheet() {
     }
   }, items);
   let obj2 = { contentStyles: tmp.content, bodyStyles: tmp.body, keyboardShouldPersistTaps: "always", header: closure_6(BottomSheetTitleHeader, obj3), children: items1 };
-  const BottomSheet = value(5240).BottomSheet;
+  const BottomSheet = value(5271).BottomSheet;
   obj3 = { title: intl.string(value(1112).t["ISN+NM"]) };
-  BottomSheetTitleHeader = value(7476).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = value(7507).BottomSheetTitleHeader;
   intl = value(1112).intl;
   const obj4 = { label: intl2.string(value(1112).t.OCAkGP), placeholder: intl3.string(value(1112).t.eTVbtx), value, onChange: tmp4, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: callback };
-  const TextInput = value(7243).TextInput;
+  const TextInput = value(7274).TextInput;
   intl2 = value(1112).intl;
   intl3 = value(1112).intl;
   items1 = [closure_6(TextInput, obj4), ];
   const obj5 = { text: intl4.string(value(1112).t.CumH4u), onPress: callback, disabled: !result };
-  const Button = value(5610).Button;
+  const Button = value(5641).Button;
   intl4 = value(1112).intl;
   items1[1] = closure_6(Button, obj5);
   return closure_7(BottomSheet, obj2);

@@ -1,15 +1,15 @@
-// Module ID: 18152
-// Function ID: 18153
+// Module ID: 18211
+// Function ID: 18212
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 5012, 5240, 5244, 7449, 18153, 2]
+// Dependencies: [19, 21, 5043, 5271, 5275, 7480, 18212, 2]
 
-// Module 18152 (VoicePanelSettingsActionSheet)
+// Module 18211 (VoicePanelSettingsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5240 */;
-import BottomSheetModal from "BottomSheetModal" /* 5244 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7449 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5271 */;
+import BottomSheetModal from "BottomSheetModal" /* 5275 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7480 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

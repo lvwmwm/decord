@@ -1,38 +1,38 @@
-// Module ID: 11251
-// Function ID: 11252
+// Module ID: 11297
+// Function ID: 11298
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 9062, 1071, 21, 5012, 5603, 2112, 6291, 6292, 9423, 1112, 9373, 2173, 11252, 11199, 11209, 504, 11217, 1378, 11031, 9595, 11253, 575, 2]
+// Dependencies: [19, 17, 9104, 1071, 21, 5043, 5634, 2113, 6322, 6323, 9465, 1112, 9415, 2174, 11298, 11245, 11255, 504, 11263, 1379, 11077, 9637, 11299, 575, 2]
 // Exports: default
 
-// Module 11251 (InlinePriceTag)
+// Module 11297 (InlinePriceTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6291 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6292 */;
-import useCurrentUser from "useCurrentUser" /* 9373 */;
-import OrbsIcon from "OrbsIcon" /* 9423 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11199 */;
-import useVirtualCurrencyData from "useVirtualCurrencyData" /* 11209 */;
-import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 11217 */;
-import useProductDisableState from "useProductDisableState" /* 11252 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2113 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6322 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 6323 */;
+import useCurrentUser from "useCurrentUser" /* 9415 */;
+import OrbsIcon from "OrbsIcon" /* 9465 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 11245 */;
+import useVirtualCurrencyData from "useVirtualCurrencyData" /* 11255 */;
+import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 11263 */;
+import useProductDisableState from "useProductDisableState" /* 11298 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 9062 */;
+import IAPStore from "IAPStore" /* 9104 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp6;
-const ExpressiveNitroUpsellDefault = tmp6(11253);
+const ExpressiveNitroUpsellDefault = tmp6(11299);
 function PriceTag(color) {
   let icon;
   let items;
@@ -90,7 +90,7 @@ function OrbsPriceTag(arg0) {
     const productDiscount = tmp17Result2.getProductDiscount(product, eligibleForShopDiscount, CurrencyCodes.DISCORD_ORB);
     ({ original, discountPercentage } = productDiscount);
     if (result) {
-      result = discountPercentage >= tmp17(6292).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+      result = discountPercentage >= tmp17(6323).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
     }
     const items = [tmp.priceTagRow, ];
     const canAfford = vcData.canAfford;
@@ -122,7 +122,7 @@ function OrbsPriceTag(arg0) {
     const tmp11 = PriceTag;
     if (!result) {
       const obj6 = { color: "interactive-text-active", size: "sm", style: tmp.orbsIcon };
-      tmp10Result = tmp10(tmp17(9423).OrbsIcon, obj6);
+      tmp10Result = tmp10(tmp17(9465).OrbsIcon, obj6);
     }
     const intl2 = tmp17(1112).intl;
     const formatToPlainString2 = intl2.formatToPlainString;
@@ -259,10 +259,10 @@ export default function InlinePriceTag(product) {
       }
       if (shopDiscountSource === CollectiblesUtils.ShopDiscountSource.THIRDPARTY) {
         const obj17 = { color: "interactive-text-active", style: tmp.nitroIcon };
-        tmp26Result5 = tmp26(tmp2(11031).TagIcon, obj17);
+        tmp26Result5 = tmp26(tmp2(11077).TagIcon, obj17);
       } else {
         const obj18 = { color: "interactive-text-active", style: tmp.nitroIcon };
-        tmp26Result5 = tmp26(tmp2(9595).NitroWheelIcon, obj18);
+        tmp26Result5 = tmp26(tmp2(9637).NitroWheelIcon, obj18);
       }
       tmp26Result6 = tmp26(tmp27, obj15);
     }

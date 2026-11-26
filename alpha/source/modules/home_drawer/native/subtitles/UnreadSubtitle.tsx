@@ -1,13 +1,13 @@
-// Module ID: 18054
-// Function ID: 18055
+// Module ID: 18113
+// Function ID: 18114
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 18052, 7065, 7115, 1112, 5603, 2]
+// Dependencies: [19, 17, 21, 18111, 7096, 7146, 1112, 5634, 2]
 // Exports: default
 
-// Module 18054 (UnreadSubtitle)
+// Module 18113 (UnreadSubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5603 */;
+import Text_Text from "Text/Text" /* 5634 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

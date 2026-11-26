@@ -1,12 +1,12 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11390
+// Function ID: 11391
 // Name: GuildLeaderboardStatCopy
-// Dependencies: [4932, 1112, 2718, 2]
+// Dependencies: [4963, 1112, 2719, 2]
 // Exports: getStatName
 
-// Module 11344 (GuildLeaderboardStatCopy)
-import _modDef2718 from "module_2718" /* 2718 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4932 */;
+// Module 11390 (GuildLeaderboardStatCopy)
+import _modDef2719 from "module_2719" /* 2719 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4963 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/GuildLeaderboardStatCopy.tsx");
@@ -21,22 +21,22 @@ export function getStatName(currentLeaderStat) {
   let intl7;
   let intl8;
   if (GuildLeaderboardTypes.GamingLeaderboardStat.GAMING_LEADERBOARD_STAT_HOURS_PLAYED === currentLeaderStat) {
-    const obj2 = { name: intl7.string(_modDef2718["8aHNu0"]), question: intl8.string(_modDef2718["A+HRrQ"]) };
+    const obj2 = { name: intl7.string(_modDef2719["8aHNu0"]), question: intl8.string(_modDef2719["A+HRrQ"]) };
     intl7 = tmp(1112).intl;
     intl8 = tmp(1112).intl;
     return obj2;
   } else if (GuildLeaderboardTypes.GamingLeaderboardStat.GAMING_LEADERBOARD_STAT_DAYS_PLAYED === currentLeaderStat) {
-    const obj3 = { name: intl5.string(_modDef2718.ZwDYuP), question: intl6.string(_modDef2718["9FItmd"]) };
+    const obj3 = { name: intl5.string(_modDef2719.ZwDYuP), question: intl6.string(_modDef2719["9FItmd"]) };
     intl5 = tmp(1112).intl;
     intl6 = tmp(1112).intl;
     return obj3;
   } else if (GuildLeaderboardTypes.GamingLeaderboardStat.GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED === currentLeaderStat) {
-    const obj4 = { name: intl3.string(_modDef2718.JeFo7p), question: intl4.string(_modDef2718.GXDPol) };
+    const obj4 = { name: intl3.string(_modDef2719.JeFo7p), question: intl4.string(_modDef2719.GXDPol) };
     intl3 = tmp(1112).intl;
     intl4 = tmp(1112).intl;
     return obj4;
   } else {
-    const obj = { name: intl.string(_modDef2718.btBTIw), question: intl2.string(_modDef2718.H8RhX0) };
+    const obj = { name: intl.string(_modDef2719.btBTIw), question: intl2.string(_modDef2719.H8RhX0) };
     intl = tmp(1112).intl;
     intl2 = tmp(1112).intl;
     return obj;

@@ -1,25 +1,25 @@
-// Module ID: 14987
-// Function ID: 14988
+// Module ID: 15037
+// Function ID: 15038
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1386, 6106, 9084, 4858, 21, 5012, 575, 14988, 6350, 504, 2173, 11029, 4845, 1186, 5603, 1112, 6121, 7216, 5610, 9595, 13050, 2]
+// Dependencies: [19, 17, 1387, 6137, 9126, 4889, 21, 5043, 575, 15038, 6381, 504, 2174, 11075, 4876, 1186, 5634, 1112, 6152, 7247, 5641, 9637, 13102, 2]
 // Exports: default
 
-// Module 14987 (UserProfileDismissibleUpsells)
+// Module 15037 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import dismissible_content from "dismissible_content" /* 4845 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4858 */;
-import Constants from "Constants" /* 6106 */;
-import XSmallIcon from "XSmallIcon" /* 7216 */;
-import ColorConstants from "ColorConstants" /* 9084 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9595 */;
-import ShopIcon from "ShopIcon" /* 13050 */;
+import dismissible_content from "dismissible_content" /* 4876 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4889 */;
+import Constants from "Constants" /* 6137 */;
+import XSmallIcon from "XSmallIcon" /* 7247 */;
+import ColorConstants from "ColorConstants" /* 9126 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9637 */;
+import ShopIcon from "ShopIcon" /* 13102 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -110,7 +110,7 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
             const merged1 = Object.assign(tmp4);
             const obj4 = { style: upsellContainer.header, children: items };
             const obj5 = { accessibilityRole: "header", variant: "body-sm/semibold", children: intl.string(intl5.t.EIYbj6) };
-            const Text = tmp(5603).Text;
+            const Text = tmp(5634).Text;
             intl = tmp(1112).intl;
             items = [metroImportAll(Text, obj5), ];
             const obj6 = {
@@ -121,13 +121,13 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
                 },
               children: metroImportAll(XSmallIcon.XSmallIcon, { size: "sm" })
             };
-            const PressableOpacity = tmp(6121).PressableOpacity;
+            const PressableOpacity = tmp(6152).PressableOpacity;
             intl2 = tmp(1112).intl;
             items[1] = metroImportAll(PressableOpacity, obj6);
             items1 = [React4(View, obj4), ];
             const obj7 = { style: upsellContainer.upsellButtonsContainer, children: items2 };
             const obj8 = { style: upsellContainer.upsellButton, children: metroImportAll(Button, obj9) };
-            Button = tmp(5610).Button;
+            Button = tmp(5641).Button;
             const intl3 = tmp(1112).intl;
             const string = intl3.string;
             const t = tmp(1112).t;
@@ -140,7 +140,7 @@ export default function UserProfileDismissibleUpsells(navigateToShop) {
             items2 = [metroImportAll(View, obj8), ];
             const obj10 = { style: upsellContainer.upsellButton, children: metroImportAll(Button2, obj11) };
             obj11 = { text: intl4.string(intl5.t.pWG4ze), onPress, icon: metroImportAll(ShopIcon.ShopIcon, { size: "sm" }), iconPosition: "start", variant: "secondary" };
-            Button2 = tmp(5610).Button;
+            Button2 = tmp(5641).Button;
             intl4 = tmp(1112).intl;
             items2[1] = metroImportAll(View, obj10);
             items1[1] = React4(View, obj7);

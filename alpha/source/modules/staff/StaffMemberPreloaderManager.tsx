@@ -1,11 +1,11 @@
-// Module ID: 19810
-// Function ID: 19811
+// Module ID: 19874
+// Function ID: 19875
 // Name: StaffMemberPreloaderManager
-// Dependencies: [7444, 19811, 2]
+// Dependencies: [7475, 19875, 2]
 
-// Module 19810 (StaffMemberPreloaderManager)
-import StaffMemberPreloader from "StaffMemberPreloader" /* 19811 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+// Module 19874 (StaffMemberPreloaderManager)
+import StaffMemberPreloader from "StaffMemberPreloader" /* 19875 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 class StaffMemberPreloaderManager extends AutomaticLifecycleManager {

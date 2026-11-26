@@ -1,18 +1,18 @@
-// Module ID: 17055
-// Function ID: 17056
+// Module ID: 17106
+// Function ID: 17107
 // Name: IOSNativePhoneIntegrationSetting
-// Dependencies: [9513, 17056, 1378, 1112, 4837, 11914, 15802, 3206, 17051, 2]
+// Dependencies: [9555, 17107, 1379, 1112, 4868, 11962, 15853, 3207, 17102, 2]
 
-// Module 17055 (IOSNativePhoneIntegrationSetting)
+// Module 17106 (IOSNativePhoneIntegrationSetting)
 import intl2 from "intl" /* 1112 */;
-import PlatformUtils from "PlatformUtils" /* 1378 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import UserSettings from "UserSettings" /* 4837 */;
-import SettingsConstants from "SettingsConstants" /* 9513 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15802 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17051 */;
-import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 17056 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11914 */;
+import PlatformUtils from "PlatformUtils" /* 1379 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import UserSettings from "UserSettings" /* 4868 */;
+import SettingsConstants from "SettingsConstants" /* 9555 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15853 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17102 */;
+import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 17107 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11962 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -48,7 +48,7 @@ SettingBuilders = SettingBuilders_mod;
 let obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3206["eled/j"]);
+    return intl.string(_modDef3207["eled/j"]);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {

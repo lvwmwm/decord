@@ -1,12 +1,12 @@
-// Module ID: 17703
-// Function ID: 17704
+// Module ID: 17760
+// Function ID: 17761
 // Name: useCallA11yState
-// Dependencies: [502, 6909, 504, 2]
+// Dependencies: [502, 6940, 504, 2]
 // Exports: default
 
-// Module 17703 (useCallA11yState)
+// Module 17760 (useCallA11yState)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6909 */;
+import CallStore from "CallStore" /* 6940 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

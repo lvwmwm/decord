@@ -1,17 +1,17 @@
-// Module ID: 9100
-// Function ID: 9101
+// Module ID: 9142
+// Function ID: 9143
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 9101, 1405, 4915, 1071, 1284, 559, 1088, 572, 1241, 8202, 2]
+// Dependencies: [5, 9143, 1406, 4946, 1071, 1285, 559, 1088, 572, 1242, 8244, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 9100 (ReferralTrialActionCreators)
+// Module 9142 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9101 */;
-import UserRecord from "UserRecord" /* 1405 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 9143 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
 import Constants from "Constants" /* 1071 */;
 import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         while (true) {

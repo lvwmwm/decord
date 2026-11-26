@@ -1,14 +1,14 @@
-// Module ID: 8313
-// Function ID: 8314
+// Module ID: 8355
+// Function ID: 8356
 // Name: applicationDirectoryAnalytics
-// Dependencies: [4915, 5045, 1071, 1255, 2]
+// Dependencies: [4946, 5076, 1071, 1256, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 8313 (applicationDirectoryAnalytics)
+// Module 8355 (applicationDirectoryAnalytics)
 import Constants from "Constants" /* 1071 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

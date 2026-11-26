@@ -1,17 +1,17 @@
-// Module ID: 9989
-// Function ID: 9990
+// Module ID: 10031
+// Function ID: 10032
 // Name: useActionBarHeight
-// Dependencies: [2131, 1071, 5241, 9990, 9993, 9999, 504, 2]
+// Dependencies: [2132, 1071, 5272, 10032, 10035, 10041, 504, 2]
 // Exports: default
 
-// Module 9989 (useActionBarHeight)
+// Module 10031 (useActionBarHeight)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5241 */;
-import CallBarAction from "CallBarAction" /* 9990 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9993 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9999 */;
-import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5272 */;
+import CallBarAction from "CallBarAction" /* 10032 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 10035 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 10041 */;
+import MediaEngineStore from "MediaEngineStore" /* 2132 */;
 import size from "module_2" /* 2 */;
 
 const InputModes = Constants.InputModes;

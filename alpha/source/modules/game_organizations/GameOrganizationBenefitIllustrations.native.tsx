@@ -1,12 +1,12 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 12352
+// Function ID: 12353
 // Name: GameOrganizationBenefitIllustrations
-// Dependencies: [12303, 12307, 12311, 2]
+// Dependencies: [12353, 12357, 12361, 2]
 
-// Module 12302 (GameOrganizationBenefitIllustrations)
-import GuildRolesAbstractUI from "GuildRolesAbstractUI" /* 12303 */;
-import GuildChatAbstractUI from "GuildChatAbstractUI" /* 12307 */;
-import GuildInviteAbstractUI from "GuildInviteAbstractUI" /* 12311 */;
+// Module 12352 (GameOrganizationBenefitIllustrations)
+import GuildRolesAbstractUI from "GuildRolesAbstractUI" /* 12353 */;
+import GuildChatAbstractUI from "GuildChatAbstractUI" /* 12357 */;
+import GuildInviteAbstractUI from "GuildInviteAbstractUI" /* 12361 */;
 import size from "module_2" /* 2 */;
 
 const obj = { roles: GuildRolesAbstractUI.GuildRolesAbstractUI, chat: GuildChatAbstractUI.GuildChatAbstractUI, invites: GuildInviteAbstractUI.GuildInviteAbstractUI };

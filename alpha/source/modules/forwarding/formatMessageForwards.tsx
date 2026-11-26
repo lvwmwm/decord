@@ -1,22 +1,22 @@
-// Module ID: 14317
-// Function ID: 14318
+// Module ID: 14369
+// Function ID: 14370
 // Name: formatMessageForwards
-// Dependencies: [11872, 4861, 4883, 4944, 4954, 1386, 1412, 1112, 5626, 4834, 11, 5628, 2]
+// Dependencies: [11920, 4892, 4914, 4975, 4985, 1387, 1413, 1112, 5657, 4865, 11, 5659, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 14317 (formatMessageForwards)
+// Module 14369 (formatMessageForwards)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl4 from "intl" /* 1112 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import DateUtils from "DateUtils" /* 4834 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5626 */;
-import useChannelName from "useChannelName" /* 5628 */;
-import BasicGuildStore from "BasicGuildStore" /* 11872 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import RelationshipStore from "RelationshipStore" /* 4954 */;
-import UserStore from "UserStore" /* 1386 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1413 */;
+import DateUtils from "DateUtils" /* 4865 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5657 */;
+import useChannelName from "useChannelName" /* 5659 */;
+import BasicGuildStore from "BasicGuildStore" /* 11920 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import RelationshipStore from "RelationshipStore" /* 4985 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 class MessageForward {

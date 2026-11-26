@@ -1,18 +1,18 @@
-// Module ID: 16619
-// Function ID: 16620
+// Module ID: 16670
+// Function ID: 16671
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [5, 19, 1386, 21, 16584, 5694, 1112, 504, 9420, 16587, 16588, 14025, 9025, 7910, 7712, 2]
+// Dependencies: [5, 19, 1387, 21, 16635, 5725, 1112, 504, 9462, 16638, 16639, 14077, 9067, 7944, 7746, 2]
 // Exports: default
 
-// Module 16619 (OrbsArcadeGameContextMenu)
+// Module 16670 (OrbsArcadeGameContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 9420 */;
-import RefreshIcon from "RefreshIcon" /* 14025 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16584 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 9462 */;
+import RefreshIcon from "RefreshIcon" /* 14077 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 16635 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1386 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, currentUser;
@@ -32,7 +32,7 @@ let obj = function _handleResetGame() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -75,7 +75,7 @@ let obj = function _handleResetGame() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp17) {
         if (0 === c3) {
@@ -147,7 +147,7 @@ export default function OrbsArcadeGameContextMenu(game) {
     const items = [obj];
     return items;
   }, items2);
-  const ContextMenu = game(9025).ContextMenu;
+  const ContextMenu = game(9067).ContextMenu;
   const tmp4 = jsx;
   if (stateFromStores) {
     const items3 = [memo, memo1];

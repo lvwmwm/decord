@@ -1,123 +1,95 @@
 // Module ID: 7215
 // Function ID: 7216
-// Dependencies: [32, 19, 17, 21, 1631, 7195, 7207, 7191, 7188, 7174, 1501]
-// Exports: Screen
+// Dependencies: [19, 17, 21, 1502, 7207, 7216, 7217]
+// Exports: Button
 
 // Module 7215
-import react_native from "react-native" /* 7188 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
+import Link from "Link" /* 1502 */;
+import ColorDefault from "Color" /* 7207 */;
+import Text from "Text" /* 7217 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
+let Platform;
 let StyleSheet;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ StyleSheet, View: closure_4 } = react_native2);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const container = StyleSheet.create({ container: { flex: 1 }, content: { flex: 1 }, header: { zIndex: 1 }, absolute: { position: "absolute", top: 0, start: 0, end: 0 } });
-
-export function Screen(modal) {
-  let Provider;
-  let Provider2;
+function ButtonLink(arg0) {
+  let action;
+  let href;
+  let params;
+  let screen;
+  ({ screen, params, action, href } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ screen: 0, params: 0, action: 0, href: 0 }));
+  const obj = Link;
+  const linkProps = obj.useLinkProps({ screen, params, action, href });
+  const merged1 = Object.assign(merged);
+  const merged2 = Object.assign(linkProps);
+  return <ButtonBase />;
+}
+function ButtonBase(variant) {
+  let android_ripple;
   let children;
-  let headerStatusBarHeight;
-  let headerTransparent;
-  let items1;
-  let items4;
-  let obj6;
-  let obj7;
-  let obj9;
-  let route;
+  let color;
+  let fadeResult1;
+  let str3;
   let style;
-  let tmp10;
-  let obj = modal(headerStatusBarHeight[4]);
-  const safeAreaInsets = obj.useSafeAreaInsets();
-  const context = react.useContext(modal(headerStatusBarHeight[5]).HeaderShownContext);
-  let num = react.useContext(modal(headerStatusBarHeight[6]).HeaderHeightContext);
-  modal = modal.modal;
-  let tmp5 = undefined !== modal;
-  const focused = modal.focused;
-  if (tmp5) {
-    tmp5 = modal;
+  let tmp5;
+  let str = variant.variant;
+  if (str === undefined) {
+    str = "tinted";
   }
-  modal = tmp5;
-  const headerShown = modal.headerShown;
-  let tmp6 = undefined === headerShown;
-  const header = modal.header;
-  if (!tmp6) {
-    tmp6 = headerShown;
+  ({ color, android_ripple } = variant);
+  ({ style, children } = variant);
+  const merged = Object.assign(variant, Object.assign({ variant: 0, color: 0, android_ripple: 0, style: 0, children: 0 }));
+  const obj = Link;
+  const theme = obj.useTheme();
+  const fonts = theme.fonts;
+  if (color == null) {
+    color = theme.colors.primary;
   }
-  ({ headerStatusBarHeight, headerTransparent } = modal);
-  if (undefined === headerStatusBarHeight) {
-    let num2 = 0;
-    if (!context) {
-      num2 = safeAreaInsets.top;
+  if ("plain" === str) {
+    str3 = "transparent";
+    tmp5 = color;
+  } else if ("tinted" === str) {
+    const obj4 = ColorDefault(color);
+    const fadeResult = obj4.fade(0.85);
+    str3 = fadeResult.string();
+    tmp5 = color;
+  } else if ("filled" === str) {
+    let str4 = "white";
+    const obj11 = ColorDefault(color);
+    const tmp9 = importDefault;
+    if (!obj11.isDark()) {
+      const obj2 = tmp9(7207)(color);
+      const darkenResult = obj2.darken(0.71);
+      str4 = darkenResult.string();
     }
-    headerStatusBarHeight = num2;
+    tmp5 = str4;
+    str3 = color;
   }
-  ({ route, navigation, children, style } = modal);
-  const tmpResult = modal(headerStatusBarHeight[7]);
-  const frameSize = tmpResult.useFrameSize((layout) => {
-    const obj = react_native;
-    return obj.getDefaultHeaderHeight(layout, modal, headerStatusBarHeight);
-  });
-  const ref = obj2.useRef(null);
-  const tmp9 = ref(react.useState(frameSize), 2);
-  [tmp10, react] = tmp9;
-  const items = [route.name];
-  const layoutEffect = obj2.useLayoutEffect(() => {
-    const current = ref.current;
-    if (current != null) {
-      current.measure((arg0, arg1, arg2, arg3) => {
-        closure_1_3(arg3);
-      });
+  const PlatformPressable = tmp2(7216).PlatformPressable;
+  const merged1 = Object.assign(merged);
+  const obj5 = { radius: 40, color: fadeResult1.string() };
+  const obj8 = ColorDefault(tmp5);
+  fadeResult1 = obj8.fade(0.85);
+  const merged2 = Object.assign(android_ripple);
+  const items = [{ backgroundColor: str3 }, closure_6.button, style];
+  const items1 = [{ color: tmp5 }, fonts.regular, closure_6.text];
+  return <PlatformPressable android_ripple={obj5} pressOpacity={1} hoverEffect={{ color: tmp5 }} style={items}>{jsx(Text.Text, { style: items1, children })}</PlatformPressable>;
+}
+({ Platform, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
+const styles = StyleSheet.create({ button: { paddingHorizontal: 24, paddingVertical: 10, borderRadius: 40, borderCurve: "continuous" }, text: { fontSize: 14, lineHeight: 20, letterSpacing: 0.1, textAlign: "center" } });
+
+export function Button(arg0) {
+  if (!("screen" in arg0)) {
+    let tmp2;
+    if (!("action" in arg0)) {
+      tmp2 = ButtonBase;
     }
-  }, items);
-  const obj3 = { "aria-hidden": !focused, style: items1, collapsable: false, children: items4 };
-  items1 = [container.container, style];
-  let tmp15Result = null;
-  const Background = tmp(tmp2[9]).Background;
-  const tmp12 = closure_6;
-  if (tmp6) {
-    const items2 = [container.header, ];
-    let tmp17 = null;
-    const obj4 = { route, navigation, children: closure_5(closure_4, obj6) };
-    const NavigationProvider = tmp(tmp2[10]).NavigationProvider;
-    if (headerTransparent) {
-      const items3 = [container.absolute, ];
-      const obj5 = { minHeight: tmp10 };
-      items3[1] = obj5;
-      tmp17 = items3;
-    }
-    items2[1] = tmp17;
-    obj6 = { style: items2, children: closure_5(closure_4, obj7) };
-    obj7 = {
-      ref,
-      pointerEvents: "box-none",
-      onLayout(nativeEvent) {
-          react(nativeEvent.nativeEvent.layout.height);
-        },
-      children: header
-    };
-    tmp15Result = tmp15(NavigationProvider, obj4);
+    const obj = {};
+    const merged = Object.assign(arg0);
+    return tmp(tmp2, obj);
   }
-  items4 = [tmp15Result, ];
-  let tmp20 = context;
-  const obj8 = { style: container.content, children: closure_5(Provider, obj9) };
-  Provider = tmp(tmp2[5]).HeaderShownContext.Provider;
-  const tmp19 = closure_4;
-  if (!context) {
-    tmp20 = false !== tmp6;
-  }
-  obj9 = { value: tmp20, children: closure_5(Provider2, { value: tmp10, children }) };
-  Provider2 = tmp(tmp2[6]).HeaderHeightContext.Provider;
-  if (!tmp6) {
-    if (num == null) {
-      num = 0;
-    }
-  }
-  items4[1] = closure_5(tmp19, obj8);
-  return tmp12(Background, obj3);
+  tmp2 = ButtonLink;
 }

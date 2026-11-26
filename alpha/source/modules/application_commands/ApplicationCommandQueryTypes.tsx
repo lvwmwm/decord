@@ -1,9 +1,9 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10053
+// Function ID: 10054
 // Name: ApplicationCommandQueryTypes
 // Dependencies: [2]
 
-// Module 10011 (ApplicationCommandQueryTypes)
+// Module 10053 (ApplicationCommandQueryTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandQueryTypes.tsx");

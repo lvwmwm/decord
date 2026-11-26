@@ -1,12 +1,12 @@
-// Module ID: 13359
-// Function ID: 13360
+// Module ID: 13411
+// Function ID: 13412
 // Name: VoicePanelDockSlotStore
-// Dependencies: [19, 5820, 560, 504, 2]
+// Dependencies: [19, 5851, 560, 504, 2]
 // Exports: useShareVoicePanelDockState, useVoicePanelDockState
 
-// Module 13359 (VoicePanelDockSlotStore)
+// Module 13411 (VoicePanelDockSlotStore)
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 5963
+// Function ID: 5964
 // Name: VoiceQualityScoringExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 
-// Module 5932 (VoiceQualityScoringExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 5963 (VoiceQualityScoringExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

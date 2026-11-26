@@ -1,18 +1,16 @@
-// Module ID: 5688
-// Function ID: 5689
+// Module ID: 5719
+// Function ID: 5720
 // Name: handleURL
-// Dependencies: [5, 17, 5227, 1071, 3, 5689, 5690, 5691, 5692, 2068, 5693, 1112, 5723, 1378, 5226, 5726, 1381, 5727, 5814, 5815, 2]
+// Dependencies: [5, 17, 5258, 1071, 3, 5720, 5721, 5722, 5723, 2069, 5724, 1112, 5754, 1379, 5257, 5757, 1382, 5758, 5845, 5846, 2]
 // Exports: default
 
-// Module 5688 (handleURL)
+// Module 5719 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5227 */;
+import ActionSheetStore from "ActionSheetStore" /* 5258 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
-
-let constants;
 
 let metroImportDefault;
 let metroRequire;
@@ -36,10 +34,10 @@ let obj = function _handleURL() {
     let iter = (async (arg0, value) => {
       let flag;
       let flag2;
+      let navigationReplace;
       let open;
       let openInBrowser;
       let tmp4;
-      let tmp62;
       function tryHandleCustomScheme(tryHandleUniversalLink) {
         let protocol;
         let regex;
@@ -163,19 +161,19 @@ let obj = function _handleURL() {
             }
             openInBrowser();
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           } else {
             tryHandleUniversalLink = closure_132_1(closure_132_2[15])(tryHandleUniversalLink);
             let obj6 = /^https?:/i;
             tryHandleUniversalLink = obj6.test(tryHandleUniversalLink);
             if (tryHandleUniversalLink) {
               let obj7 = closure_132_1(closure_132_2[16]);
-              tmp62 = obj7.parse(tryHandleUniversalLink);
-              tmp62.pathname = closure_132_9(tmp62.pathname);
-              tmp62.search = closure_132_9(tmp62.search);
-              tmp62.hash = closure_132_9(tmp62.hash);
+              let closure_6 = obj7.parse(tryHandleUniversalLink);
+              closure_6.pathname = closure_132_9(closure_6.pathname);
+              closure_6.search = closure_132_9(closure_6.search);
+              closure_6.hash = closure_132_9(closure_6.hash);
               const obj8 = closure_132_1(closure_132_2[16]);
-              tryHandleUniversalLink = obj8.format(tmp62);
+              tryHandleUniversalLink = obj8.format(closure_6);
               c6 = 0;
             }
             const payload = closure_132_1(closure_132_2[17])(tryHandleUniversalLink).payload;
@@ -184,11 +182,11 @@ let obj = function _handleURL() {
               const obj9 = closure_132_0(closure_132_2[18]);
               tryHandleUniversalLink = obj9.queueFrameDeepLinkFromUrl(payload.channelId, tryHandleUniversalLink);
             }
-            const obj10 = { payload, safe: true };
+            const obj10 = { payload, safe: true, navigationReplace };
             tryHandleUniversalLink = closure_132_1(closure_132_2[19])(obj10);
             if (!tryHandleUniversalLink) {
-              const tmp53 = flag;
-              if (tmp53) {
+              const tmp54 = flag;
+              if (tmp54) {
                 tryHandleUniversalLink = function tryHandleUniversalLink(flag) {
                   closure_0 = flag;
                   const promise = new Promise((arg0) => {
@@ -215,10 +213,9 @@ let obj = function _handleURL() {
           }
         }
       } else if (2 === tmp4) {
-        let tmp12 = tmp62;
         c6 = 0;
         c8 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;
@@ -227,8 +224,8 @@ let obj = function _handleURL() {
           c8 = 3;
           return { value, done: true };
         } else {
-          constants = value;
-          tryHandleUniversalLink = constants;
+          const logger = value;
+          tryHandleUniversalLink = logger;
           if (!tryHandleUniversalLink) {
             let tmp11 = tryHandleUniversalLink;
             tryHandleUniversalLink = tryHandleCustomScheme(tryHandleUniversalLink);
@@ -245,8 +242,8 @@ let obj = function _handleURL() {
           c8 = 3;
           return { value, done: true };
         } else {
-          const logger = value;
-          tryHandleUniversalLink = logger;
+          let closure_9 = value;
+          tryHandleUniversalLink = closure_9;
           if (!tryHandleUniversalLink) {
             let tmp9 = tryHandleUniversalLink;
             tryHandleUniversalLink = tryHandleWhitelistedURL(tryHandleUniversalLink);
@@ -264,8 +261,8 @@ let obj = function _handleURL() {
         return obj;
       } else {
         let tmp5 = tryHandleUniversalLink;
-        let closure_9 = value;
-        tryHandleUniversalLink = closure_9;
+        let closure_10 = value;
+        tryHandleUniversalLink = closure_10;
         if (!tryHandleUniversalLink) {
           let tmp6 = openInBrowser;
           let tmp7 = openInBrowser();
@@ -279,6 +276,7 @@ let obj = function _handleURL() {
       }
       flag = obj4.allowExternal ?? true;
       flag2 = obj4.forceExternalBrowser ?? false;
+      navigationReplace = obj4.navigationReplace;
       openInBrowser = function openInBrowser() {
         const tmp = closure_2_1;
         obj = closure_2_1(closure_2_2[9]);

@@ -1,9 +1,9 @@
-// Module ID: 1357
-// Function ID: 1358
+// Module ID: 1358
+// Function ID: 1359
 // Name: DesignIds
 // Dependencies: [2]
 
-// Module 1357 (DesignIds)
+// Module 1358 (DesignIds)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/DesignIds.tsx");

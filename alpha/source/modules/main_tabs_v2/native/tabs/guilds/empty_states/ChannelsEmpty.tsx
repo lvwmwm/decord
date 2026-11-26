@@ -1,22 +1,22 @@
-// Module ID: 17924
-// Function ID: 17925
+// Module ID: 17981
+// Function ID: 17982
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4944, 1071, 21, 5012, 5603, 575, 563, 8531, 8487, 16635, 8048, 1186, 17925, 1112, 5699, 17926, 5611, 2]
+// Dependencies: [19, 17, 4975, 1071, 21, 5043, 5634, 575, 563, 8573, 8529, 16686, 8090, 1186, 17982, 1112, 5730, 17983, 5642, 2]
 
-// Module 17924 (ChannelsEmpty)
+// Module 17981 (ChannelsEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastImageDefault from "FastImage" /* 5699 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8487 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17925 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17926 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastImageDefault from "FastImage" /* 5730 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8529 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17982 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17983 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -72,13 +72,13 @@ const memoResult = react.memo(function ChannelsEmpty(guild) {
   }, items3);
   const obj3 = { style: items4, children: items5 };
   items4 = [tmp.wrapper, ];
-  const obj2 = guild(16635);
+  const obj2 = guild(16686);
   items4[1] = { paddingBottom: obj2.useYouBarTotalHeight(16) };
   ({ paddingBottom: obj2.useYouBarTotalHeight(16) });
   if (canCustomizeGuild) {
     const obj5 = { style: tmp.personalizeButtonWrapper, children: closure_7(RowButton, obj6) };
     obj6 = { icon: closure_7(Icon, obj7), label: intl.string(guild(1112).t["Yhi9/N"]), onPress: callback };
-    RowButton = tmp2(8048).RowButton;
+    RowButton = tmp2(8090).RowButton;
     obj7 = { source: AssetRegistryDefault, disableColor: true };
     Icon = tmp2(1186).Icon;
     intl = tmp2(1112).intl;
@@ -92,17 +92,17 @@ const memoResult = react.memo(function ChannelsEmpty(guild) {
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-sm/semibold", style: items7, children: intl2.string(guild(1112).t.o4s29v) };
   items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
-  const Text = tmp2(5603).Text;
+  const Text = tmp2(5634).Text;
   intl2 = tmp2(1112).intl;
   items6[1] = closure_7(Text, obj10);
   const obj11 = { color: "text-default", variant: "body-md/medium", style: tmp.text, children: intl3.string(guild(1112).t.iypvFu) };
-  const Text2 = tmp2(5603).Text;
+  const Text2 = tmp2(5634).Text;
   intl3 = tmp2(1112).intl;
   items6[2] = closure_7(Text2, obj11);
   if (canCreateChannel) {
     const obj12 = { style: tmp.buttonWrapper, children: closure_7(BaseTextButton, obj13) };
     obj13 = { shrink: true, size: "md", pillStyle: tmp.buttonPill, text: intl4.string(guild(1112).t["63PyJQ"]), onPress: callback1 };
-    BaseTextButton = tmp2(5611).BaseTextButton;
+    BaseTextButton = tmp2(5642).BaseTextButton;
     intl4 = tmp2(1112).intl;
     canCreateChannel = tmp11(tmp8, obj12);
   }

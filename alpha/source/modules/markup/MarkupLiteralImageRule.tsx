@@ -1,22 +1,22 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14657
+// Function ID: 14658
 // Name: MarkupLiteralImageRule
-// Dependencies: [2068, 6089, 2]
+// Dependencies: [2069, 6120, 2]
 
-// Module 14604 (MarkupLiteralImageRule)
-import _modDef2068 from "module_2068" /* 2068 */;
-import MarkupTypes from "MarkupTypes" /* 6089 */;
+// Module 14657 (MarkupLiteralImageRule)
+import _modDef2069 from "module_2069" /* 2069 */;
+import MarkupTypes from "MarkupTypes" /* 6120 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
-  order: _modDef2068.defaultRules.link.order - 0.5,
+  order: _modDef2069.defaultRules.link.order - 0.5,
   requiredFirstCharacters: ["!"],
   parse(content) {
     const obj = { type: MarkupTypes.AST_KEY.TEXT, content: content[0] };
     return obj;
   }
 };
-const merged = Object.assign(_modDef2068.defaultRules.image);
+const merged = Object.assign(_modDef2069.defaultRules.image);
 const result = size.fileFinishedImporting("modules/markup/MarkupLiteralImageRule.tsx");
 
 export default obj;

@@ -1,19 +1,19 @@
-// Module ID: 19915
-// Function ID: 19916
+// Module ID: 19979
+// Function ID: 19980
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 4944, 8532, 1071, 21, 5012, 575, 5576, 1500, 504, 5221, 19916, 19845, 8046, 6084, 6109, 6113, 1112, 18991, 19116, 14025, 6147, 5699, 1412, 5019, 19917, 19918, 19919, 8531, 5586, 2]
+// Dependencies: [19, 4975, 8574, 1071, 21, 5043, 575, 5607, 1501, 504, 5252, 19980, 19909, 8088, 6115, 6140, 6144, 1112, 19054, 19179, 14077, 6178, 5730, 1413, 5050, 19981, 19982, 19983, 8573, 5617, 2]
 // Exports: default
 
-// Module 19915 (GuildSettingsModalIntegrations)
+// Module 19979 (GuildSettingsModalIntegrations)
 import nativeDefault from "native" /* 575 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8531 */;
-import openGuildSettingsRemoveAppAlertDefault from "openGuildSettingsRemoveAppAlert" /* 19918 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8573 */;
+import openGuildSettingsRemoveAppAlertDefault from "openGuildSettingsRemoveAppAlert" /* 19982 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4944 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8532 */;
+import PermissionStore from "PermissionStore" /* 4975 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8574 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

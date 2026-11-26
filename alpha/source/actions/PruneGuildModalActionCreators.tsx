@@ -1,11 +1,11 @@
-// Module ID: 18376
-// Function ID: 18377
+// Module ID: 18435
+// Function ID: 18436
 // Name: PruneGuildModalActionCreators
-// Dependencies: [5, 1071, 1284, 2]
+// Dependencies: [5, 1071, 1285, 2]
 
-// Module 18376 (PruneGuildModalActionCreators)
+// Module 18435 (PruneGuildModalActionCreators)
 import Constants from "Constants" /* 1071 */;
-import HTTPUtils from "HTTPUtils" /* 1284 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = {
             return obj;
           } else {
             id = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp4) {
           id = 3;

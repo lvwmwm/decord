@@ -1,14 +1,14 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 11944
+// Function ID: 11945
 // Name: usePendingAvatarSettings
-// Dependencies: [19, 6345, 11897, 563, 11898, 6344, 9392, 2]
+// Dependencies: [19, 6376, 11945, 563, 11946, 6375, 9434, 2]
 // Exports: default
 
-// Module 11896 (usePendingAvatarSettings)
+// Module 11944 (usePendingAvatarSettings)
 import react from "react" /* 19 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 6344 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 11898 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6345 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 6375 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 11946 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 6376 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -23,7 +23,7 @@ export default function usePendingAvatarSettings(isTryItOut) {
   let pendingErrors;
   isTryItOut = isTryItOut.isTryItOut;
   const guildId = isTryItOut.guildId;
-  const tmp2 = guildId(11897)(isTryItOut.analyticsLocations);
+  const tmp2 = guildId(11945)(isTryItOut.analyticsLocations);
   dependencyMap = tmp2;
   let obj = isTryItOut(563);
   const items = [UserProfileSettingsStore];
@@ -71,10 +71,10 @@ export default function usePendingAvatarSettings(isTryItOut) {
   }, items2);
   let obj2 = { pendingAvatar, pendingAvatarDecoration, pendingErrors, setPendingAvatar: setTryItOutAvatar, setPendingAvatarDecoration: setTryItOutAvatarDecoration };
   if (isTryItOut) {
-    setTryItOutAvatar = tmp3(9392).setTryItOutAvatar;
+    setTryItOutAvatar = tmp3(9434).setTryItOutAvatar;
   }
   if (isTryItOut) {
-    setTryItOutAvatarDecoration = tmp3(9392).setTryItOutAvatarDecoration;
+    setTryItOutAvatarDecoration = tmp3(9434).setTryItOutAvatarDecoration;
   }
   return obj2;
 };

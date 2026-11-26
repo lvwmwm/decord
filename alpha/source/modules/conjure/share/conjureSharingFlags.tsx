@@ -1,11 +1,11 @@
-// Module ID: 18418
-// Function ID: 18419
+// Module ID: 18479
+// Function ID: 18480
 // Name: conjureSharingFlags
-// Dependencies: [6904, 2]
+// Dependencies: [6935, 2]
 // Exports: conjureSharingFlags
 
-// Module 18418 (conjureSharingFlags)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6904 */;
+// Module 18479 (conjureSharingFlags)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6935 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharingFlags.tsx");

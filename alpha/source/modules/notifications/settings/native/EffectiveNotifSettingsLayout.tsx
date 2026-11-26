@@ -1,20 +1,20 @@
-// Module ID: 17575
-// Function ID: 17576
+// Module ID: 17632
+// Function ID: 17633
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1230, 502, 15099, 21, 5012, 575, 17576, 6084, 7907, 1112, 3206, 15113, 504, 572, 16139, 7364, 2]
+// Dependencies: [19, 1231, 502, 15149, 21, 5043, 575, 17633, 6115, 7941, 1112, 3207, 15163, 504, 572, 16190, 7395, 2]
 // Exports: default
 
-// Module 17575 (EffectiveNotifSettingsLayout)
+// Module 17632 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3206 from "module_3206" /* 3206 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17576 */;
+import _modDef3207 from "module_3207" /* 3207 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17633 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15099 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15149 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -51,9 +51,9 @@ function EffectiveSettingsHeader() {
   let tmp8 = null;
   if (unavailable) {
     let obj = { style: tmp.notice, children: closure_7(InlineNotice, obj2) };
-    const Stack = loading(6084).Stack;
-    obj2 = { type: "warning", role: "status", message: intl.string(_modDef3206.Nu2TMI), action: obj3 };
-    InlineNotice = loading(7907).InlineNotice;
+    const Stack = loading(6115).Stack;
+    obj2 = { type: "warning", role: "status", message: intl.string(_modDef3207.Nu2TMI), action: obj3 };
+    InlineNotice = loading(7941).InlineNotice;
     intl = loading(1112).intl;
     obj3 = { text: intl2.string(loading(1112).t["5911Lb"]), onPress: callback, loading };
     intl2 = loading(1112).intl;

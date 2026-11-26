@@ -1,34 +1,34 @@
-// Module ID: 15827
-// Function ID: 15828
+// Module ID: 15878
+// Function ID: 15879
 // Name: NativeRPCImplementation
-// Dependencies: [5013, 5036, 1237, 1191, 1230, 5069, 15828, 15886, 15887, 15888, 15890, 15891, 15892, 15894, 15895, 15907, 15908, 15909, 15911, 15913, 15914, 15915, 15916, 7608, 10170, 2]
+// Dependencies: [5044, 5067, 1238, 1191, 1231, 5100, 15879, 15937, 15938, 15939, 15941, 15942, 15943, 15945, 15946, 15958, 15959, 15960, 15962, 15964, 15965, 15966, 15967, 7639, 10212, 2]
 
-// Module 15827 (NativeRPCImplementation)
-import NativeRPCServerDefault from "NativeRPCServer" /* 7608 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10170 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15828 */;
-import commands_activitiesDefault from "commands/activities" /* 15886 */;
-import audioSessionDefault from "audioSession" /* 15887 */;
-import authDefault from "auth" /* 15888 */;
-import screenCaptureDefault from "screenCapture" /* 15890 */;
-import setRunsInBackgroundDefault from "setRunsInBackground" /* 15891 */;
-import toastDefault from "toast" /* 15892 */;
-import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 15894 */;
-import pictureInPictureInteractiveDefault from "pictureInPictureInteractive" /* 15895 */;
-import voiceSettingsDefault from "voiceSettings" /* 15907 */;
-import userPopoutDefault from "userPopout" /* 15908 */;
-import unsupportedDefault from "unsupported" /* 15909 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15911 */;
-import getNativeDiscordCustomThemeDefault from "getNativeDiscordCustomTheme" /* 15914 */;
-import screenCaptureEvents from "screenCaptureEvents" /* 15915 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15916 */;
-import AccessibilityStore from "AccessibilityStore" /* 5013 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5036 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1237 */;
+// Module 15878 (NativeRPCImplementation)
+import NativeRPCServerDefault from "NativeRPCServer" /* 7639 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10212 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15879 */;
+import commands_activitiesDefault from "commands/activities" /* 15937 */;
+import audioSessionDefault from "audioSession" /* 15938 */;
+import authDefault from "auth" /* 15939 */;
+import screenCaptureDefault from "screenCapture" /* 15941 */;
+import setRunsInBackgroundDefault from "setRunsInBackground" /* 15942 */;
+import toastDefault from "toast" /* 15943 */;
+import frameRelaunchDeepLinkDefault from "frameRelaunchDeepLink" /* 15945 */;
+import pictureInPictureInteractiveDefault from "pictureInPictureInteractive" /* 15946 */;
+import voiceSettingsDefault from "voiceSettings" /* 15958 */;
+import userPopoutDefault from "userPopout" /* 15959 */;
+import unsupportedDefault from "unsupported" /* 15960 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15962 */;
+import getNativeDiscordCustomThemeDefault from "getNativeDiscordCustomTheme" /* 15965 */;
+import screenCaptureEvents from "screenCaptureEvents" /* 15966 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15967 */;
+import AccessibilityStore from "AccessibilityStore" /* 5044 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5067 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import StreamerModeStore from "StreamerModeStore" /* 5069 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15913 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import StreamerModeStore from "StreamerModeStore" /* 5100 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15964 */;
 import size from "module_2" /* 2 */;
 
 let items;

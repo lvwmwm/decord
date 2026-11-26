@@ -1,19 +1,19 @@
-// Module ID: 20003
-// Function ID: 20004
+// Module ID: 20067
+// Function ID: 20068
 // Name: RoleGradientPickerActionSheet
-// Dependencies: [32, 19, 17, 19986, 21, 5012, 575, 4921, 1254, 5226, 16008, 5240, 7476, 1112, 5610, 5567, 16912, 6121, 1089, 2]
+// Dependencies: [32, 19, 17, 20050, 21, 5043, 575, 4952, 1255, 5257, 16038, 5271, 7507, 1112, 5641, 5598, 16963, 6152, 1089, 2]
 // Exports: default
 
-// Module 20003 (RoleGradientPickerActionSheet)
+// Module 20067 (RoleGradientPickerActionSheet)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5226 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16008 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5257 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 16038 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19986 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20050 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

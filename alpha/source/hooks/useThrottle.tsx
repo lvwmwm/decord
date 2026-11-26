@@ -1,10 +1,10 @@
-// Module ID: 10283
-// Function ID: 10284
+// Module ID: 10325
+// Function ID: 10326
 // Name: useThrottle
 // Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10283 (useThrottle)
+// Module 10325 (useThrottle)
 import _mod12 from "module_12" /* 12 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,21 +1,21 @@
-// Module ID: 11758
-// Function ID: 11759
+// Module ID: 11806
+// Function ID: 11807
 // Name: GestureConstants
-// Dependencies: [1653, 2]
+// Dependencies: [1654, 2]
 
-// Module 11758 (GestureConstants)
-import _mod1653 from "module_1653" /* 1653 */;
+// Module 11806 (GestureConstants)
+import _mod1654 from "module_1654" /* 1654 */;
 import size from "module_2" /* 2 */;
 
 let Easing2;
 let Easing3;
 let out;
 const obj = { duration: 200, easing: out(Easing2.poly(4)) };
-const Easing = _mod1653.Easing;
+const Easing = _mod1654.Easing;
 out = Easing.out;
-Easing2 = _mod1653.Easing;
+Easing2 = _mod1654.Easing;
 const obj2 = { duration: 200, easing: Easing3.bezier(0, 0, 0.2, 1) };
-Easing3 = _mod1653.Easing;
+Easing3 = _mod1654.Easing;
 const result = size.fileFinishedImporting("modules/gesture_handlers/native/GestureConstants.tsx");
 
 export const PULL_GESTURE_ACTIVATION_DISTANCE = 10;

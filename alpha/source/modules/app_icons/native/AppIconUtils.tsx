@@ -1,22 +1,22 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13901
+// Function ID: 13902
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 9616, 1071, 1388, 3, 13850, 5038, 5573, 572, 1255, 5694, 1112, 8067, 1625, 2]
+// Dependencies: [32, 5, 19, 9658, 1071, 1389, 3, 13902, 5069, 5604, 572, 1256, 5725, 1112, 8109, 1626, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 13849 (AppIconUtils)
+// Module 13901 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
-import AppIconTypes from "AppIconTypes" /* 5038 */;
-import useMountEffectDefault from "useMountEffect" /* 5573 */;
-import openUserSettings from "openUserSettings" /* 8067 */;
-import react_nativeDefault from "react-native" /* 13850 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1626 */;
+import AppIconTypes from "AppIconTypes" /* 5069 */;
+import useMountEffectDefault from "useMountEffect" /* 5604 */;
+import openUserSettings from "openUserSettings" /* 8109 */;
+import react_nativeDefault from "react-native" /* 13902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 9616 */;
+import AppIconConstants from "AppIconConstants" /* 9658 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let obj = function _fetchCurrentAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -123,7 +123,7 @@ obj = function _setAppIcon() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -243,7 +243,7 @@ export function useCurrentAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -275,7 +275,7 @@ export function useCurrentAppIcon() {
           closure_0 = value;
           closure_129_0(closure_0);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -315,7 +315,7 @@ export function useAppIcons() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -347,7 +347,7 @@ export function useAppIcons() {
           closure_0 = value;
           closure_129_0(closure_0);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -382,7 +382,7 @@ export function useAppIcons() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;
@@ -442,7 +442,7 @@ export function useAppIcons() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } catch (tmp22) {
         closure_3 = tmp22;

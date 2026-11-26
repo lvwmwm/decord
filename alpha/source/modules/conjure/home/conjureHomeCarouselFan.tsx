@@ -1,10 +1,10 @@
-// Module ID: 18782
-// Function ID: 18783
+// Module ID: 18845
+// Function ID: 18846
 // Name: conjureHomeCarouselFan
 // Dependencies: [2]
 // Exports: conjureHomeCarouselFan, wrapConjureHomeCarouselDistance
 
-// Module 18782 (conjureHomeCarouselFan)
+// Module 18845 (conjureHomeCarouselFan)
 import size from "module_2" /* 2 */;
 
 let tmp2;

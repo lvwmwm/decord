@@ -1,18 +1,18 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12296
+// Function ID: 12297
 // Name: joinFrameActivity
-// Dependencies: [5, 2164, 4861, 5660, 6906, 1071, 10149, 572, 10044, 5656, 10062, 9964, 1112, 10085, 12247, 11918, 9959, 5762, 11463, 10061, 7604, 7813, 12226, 2]
+// Dependencies: [5, 2165, 4892, 5691, 6937, 1071, 10191, 572, 10086, 5687, 10104, 10006, 1112, 10127, 12297, 11966, 10001, 5793, 11510, 10103, 7635, 7847, 12276, 2]
 // Exports: default
 
-// Module 12246 (joinFrameActivity)
-import FramesConstants from "FramesConstants" /* 6906 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7813 */;
-import Constants2 from "Constants" /* 10149 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 12226 */;
+// Module 12296 (joinFrameActivity)
+import FramesConstants from "FramesConstants" /* 6937 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7847 */;
+import Constants2 from "Constants" /* 10191 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 12276 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2164 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import VoiceStateStore from "VoiceStateStore" /* 5660 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import VoiceStateStore from "VoiceStateStore" /* 5691 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let obj = function _joinFrameActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         let c8;
@@ -473,7 +473,7 @@ obj = function _getVoiceChannelAppChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -563,7 +563,7 @@ obj = function _getActivityChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c4;
@@ -590,7 +590,7 @@ obj = function _getActivityChannelId() {
         } else if (1 === c3) {
           c4 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;

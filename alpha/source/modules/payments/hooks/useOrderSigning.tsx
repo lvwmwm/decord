@@ -1,13 +1,13 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 11259
+// Function ID: 11260
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5729, 5777, 5763, 7569, 11214, 1112, 7570, 2]
+// Dependencies: [5, 32, 19, 5760, 5808, 5794, 7600, 11260, 1112, 7601, 2]
 // Exports: useOrderSigning
 
-// Module 11213 (useOrderSigning)
-import PaymentConstants from "PaymentConstants" /* 5729 */;
-import BillingErrorDefault from "BillingError" /* 5763 */;
-import ClientBillingError2 from "ClientBillingError" /* 5777 */;
+// Module 11259 (useOrderSigning)
+import PaymentConstants from "PaymentConstants" /* 5760 */;
+import BillingErrorDefault from "BillingError" /* 5794 */;
+import ClientBillingError2 from "ClientBillingError" /* 5808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -67,12 +67,12 @@ export function useOrderSigning(order) {
     if (!(arg0 instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp4 = new tmp3(5763)(arg0);
+      tmp4 = new tmp3(5794)(arg0);
     }
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp4 = new tmp3(5763)(arg2);
+      tmp4 = new tmp3(5794)(arg2);
     }
     closure_5(tmp4);
     return tmp4;
@@ -100,7 +100,7 @@ export function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } else {
           try {

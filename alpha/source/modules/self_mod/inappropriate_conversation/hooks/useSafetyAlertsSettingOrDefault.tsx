@@ -1,15 +1,15 @@
-// Module ID: 11467
-// Function ID: 11468
+// Module ID: 11514
+// Function ID: 11515
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1230, 1386, 504, 8168, 11468, 2]
+// Dependencies: [1231, 1387, 504, 8210, 11515, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 11467 (useSafetyAlertsSettingOrDefault)
+// Module 11514 (useSafetyAlertsSettingOrDefault)
 import get_initialized from "get initialized" /* 504 */;
-import useUserIsTeen from "useUserIsTeen" /* 8168 */;
-import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11468 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import UserStore from "UserStore" /* 1386 */;
+import useUserIsTeen from "useUserIsTeen" /* 8210 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11515 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import UserStore from "UserStore" /* 1387 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");

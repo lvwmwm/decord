@@ -1,32 +1,32 @@
-// Module ID: 8638
-// Function ID: 8639
+// Module ID: 8680
+// Function ID: 8681
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2131, 5820, 8361, 1386, 5830, 8639, 1071, 2187, 8640, 8641, 8623, 8642, 1112, 5068, 2168, 1088, 38, 206, 1284, 1241, 6015, 6776, 2]
+// Dependencies: [32, 5, 502, 2132, 5851, 8403, 1387, 5861, 8681, 1071, 2188, 8682, 8683, 8665, 8684, 1112, 5099, 2169, 1088, 38, 206, 1285, 1242, 6046, 6807, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 8638 (SecureFramesUtils)
+// Module 8680 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import intl15 from "intl" /* 1112 */;
-import _modDef2168 from "module_2168" /* 2168 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
-import UserUtilsDefault from "UserUtils" /* 5068 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6015 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6776 */;
-import _mod8623 from "module_8623" /* 8623 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 8640 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 8641 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8642 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import UserUtilsDefault from "UserUtils" /* 5099 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6046 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6807 */;
+import _mod8665 from "module_8665" /* 8665 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 8682 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 8683 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8684 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5820 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8361 */;
-import UserStore from "UserStore" /* 1386 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5830 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8639 */;
+import MediaEngineStore from "MediaEngineStore" /* 2132 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5851 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8403 */;
+import UserStore from "UserStore" /* 1387 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5861 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8681 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ obj = function _isPublicKeyMatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ obj = function _uploadCurrentUserPublicKey() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(key_version);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: "+95" };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -254,7 +254,7 @@ obj = function _ensureCurrentUserPublicKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _ensureCurrentUserPublicKey() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -309,7 +309,7 @@ obj = function _isCurrentUserPublicKeyMatch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       try {
@@ -478,8 +478,8 @@ export function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod8623.serializeKey;
-    _mod8623;
+    const serializeKey = _mod8665.serializeKey;
+    _mod8665;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;
@@ -534,8 +534,8 @@ export function deleteUserPersistentVerifications(userId) {
   let result = openSecureFramesUpdateConfirmation(obj2);
 }
 export function getSecureFramesUserVerifiedTimestamp(timestamp) {
-  const tmp3 = _modDef2168(timestamp);
-  obj = _modDef2168();
+  const tmp3 = _modDef2169(timestamp);
+  obj = _modDef2169();
   const diffResult = obj.diff(tmp3, "s");
   if (diffResult > 12 * DurationsDefault.Seconds.DAYS_30) {
     const _Math6 = Math;

@@ -1,8 +1,8 @@
-// Module ID: 18677
-// Function ID: 18678
+// Module ID: 18740
+// Function ID: 18741
 // Dependencies: [2]
 
-// Module 18677
+// Module 18740
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CatIllocon-2x.png.js");

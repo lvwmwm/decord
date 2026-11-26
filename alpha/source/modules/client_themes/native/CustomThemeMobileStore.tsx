@@ -1,19 +1,19 @@
-// Module ID: 1237
-// Function ID: 1238
+// Module ID: 1238
+// Function ID: 1239
 // Name: CustomThemeMobileStore
-// Dependencies: [1192, 1191, 1193, 1230, 1081, 1238, 5071, 1195, 572, 504, 2]
+// Dependencies: [1192, 1191, 1193, 1231, 1081, 1239, 5102, 1195, 572, 504, 2]
 
-// Module 1237 (CustomThemeMobileStore)
+// Module 1238 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1238 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5071 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5102 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_3, prop;
@@ -98,7 +98,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "Array", customTheme: "analyticsLocations" };
+      obj = { theme: "Array", customTheme: "channel_id" };
     }
     return obj;
   }
@@ -181,7 +181,7 @@ class CustomThemeMobileStore extends PersistedStore {
         if (null == prop) {
           theme = tmp3.theme;
         } else {
-          const tmp10Result = tmp10(1238);
+          const tmp10Result = tmp10(1239);
           theme = tmp10Result.getCustomThemeBaseTheme(tmp3.theme);
         }
         obj = { baseTheme: theme, customTheme: prop };

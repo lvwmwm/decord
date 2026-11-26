@@ -1,29 +1,29 @@
-// Module ID: 10813
-// Function ID: 10814
+// Module ID: 10859
+// Function ID: 10860
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 6896, 10788, 10754, 1071, 21, 5012, 575, 1186, 10814, 5603, 1112, 9686, 6749, 1653, 9703, 9539, 504, 10815, 9685, 10816, 10800, 12, 7387, 10817, 7380, 5588, 9695, 9708, 9555, 2]
+// Dependencies: [32, 19, 17, 6927, 10834, 10800, 1071, 21, 5043, 575, 1186, 10860, 5634, 1112, 9728, 6780, 1654, 9745, 9581, 504, 10861, 9727, 10862, 10846, 12, 7418, 10863, 7411, 5619, 9737, 9750, 9597, 2]
 
-// Module 10813 (StickerPickerList)
+// Module 10859 (StickerPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7387 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9685 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9686 */;
-import StickerPickerStore from "StickerPickerStore" /* 10788 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10800 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10814 */;
-import useStickerPickerListData from "useStickerPickerListData" /* 10815 */;
-import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10816 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7418 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9727 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9728 */;
+import StickerPickerStore from "StickerPickerStore" /* 10834 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 10846 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10860 */;
+import useStickerPickerListData from "useStickerPickerListData" /* 10861 */;
+import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10862 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6896 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10754 */;
+import StickersStore from "StickersStore" /* 6927 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10800 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let constants;

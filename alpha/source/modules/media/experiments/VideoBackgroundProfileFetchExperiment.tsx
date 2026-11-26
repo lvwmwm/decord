@@ -1,11 +1,11 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9516
+// Function ID: 9517
 // Name: VideoBackgroundProfileFetchExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1451, 2]
 // Exports: useIsVideoBackgroundProfileFetchEnabled
 
-// Module 9474 (VideoBackgroundProfileFetchExperiment)
-import ApexExperiment from "ApexExperiment" /* 1450 */;
+// Module 9516 (VideoBackgroundProfileFetchExperiment)
+import ApexExperiment from "ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-video-background-profile-fetch", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

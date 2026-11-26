@@ -1,18 +1,18 @@
-// Module ID: 12453
-// Function ID: 12454
+// Module ID: 12502
+// Function ID: 12503
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 4883, 1386, 21, 5012, 575, 5587, 9757, 504, 12454, 6960, 5699, 12455, 5603, 1112, 5068, 12456, 4244, 12457, 12458, 7409, 5610, 2]
+// Dependencies: [32, 19, 17, 4914, 1387, 21, 5043, 575, 5618, 9799, 504, 12503, 6991, 5730, 12504, 5634, 1112, 5099, 12505, 4245, 12506, 12507, 7440, 5641, 2]
 
-// Module 12453 (KickConfirm)
+// Module 12502 (KickConfirm)
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6960 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6991 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4883 */;
-import UserStore from "UserStore" /* 1386 */;
+import GuildStore from "GuildStore" /* 4914 */;
+import UserStore from "UserStore" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let tmp4Result9;
   let tmp7Result4;
   let v1Ie87p;
-  const f102272 = () => ({ kicking: false, kickError: false });
+  const f102566 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -107,10 +107,10 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   }
   const conjureServerApp = useConjureServerApp(guildId, result);
   ref = obj.useRef("");
-  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f102272), 2);
+  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f102566), 2);
   const items3 = [stateFromStores, onKick, stateFromStores1];
   let tmp19Result6 = null;
-  stateFromStores(stateFromStores1.useState(f102272), 2);
+  stateFromStores(stateFromStores1.useState(f102566), 2);
   if (null != stateFromStores1) {
     tmp19Result6 = null;
     if (null != stateFromStores) {

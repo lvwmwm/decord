@@ -1,18 +1,18 @@
-// Module ID: 19583
-// Function ID: 19584
+// Module ID: 19646
+// Function ID: 19647
 // Name: AgeGateManager
-// Dependencies: [5, 4861, 4915, 5045, 1096, 1071, 7444, 6802, 6099, 19584, 2119, 19588, 1091, 2]
+// Dependencies: [5, 4892, 4946, 5076, 1096, 1071, 7475, 6833, 6130, 19647, 2120, 19651, 1091, 2]
 
-// Module 19583 (AgeGateManager)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6099 */;
-import AgeGateUtils from "AgeGateUtils" /* 6802 */;
+// Module 19646 (AgeGateManager)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6130 */;
+import AgeGateUtils from "AgeGateUtils" /* 6833 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4915 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4946 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5076 */;
 import AgeGateConstants from "AgeGateConstants" /* 1096 */;
 import Constants from "Constants" /* 1071 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7444 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7475 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_1, importDefault;
@@ -57,7 +57,7 @@ class AgeGateManager extends AutomaticLifecycleManager {
   handleAgeGateModalOpen(source) {
     source = source.source;
     const channelId = source.channelId;
-    let obj = source(6802);
+    let obj = source(6833);
     importDefault = obj.getAgeGateType(source);
     let obj2 = ModalActionCreatorsDefault;
     obj2.pushLazy(_asyncToGenerator(async (arg0, value) => {
@@ -71,7 +71,7 @@ class AgeGateManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: "+95" };
         }
       } else {
         try {

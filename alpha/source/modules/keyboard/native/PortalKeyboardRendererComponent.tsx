@@ -1,14 +1,14 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18624
+// Function ID: 18625
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 4861, 21, 5073, 6079, 7548, 1626, 12946, 10047, 18562, 18568, 2]
+// Dependencies: [19, 4892, 21, 5104, 6110, 7579, 1627, 12998, 10089, 18625, 18631, 2]
 
-// Module 18561 (PortalKeyboardRendererComponent)
+// Module 18624 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
-import useBackPressHandler from "useBackPressHandler" /* 6079 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7548 */;
+import useBackPressHandler from "useBackPressHandler" /* 6110 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7579 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4892 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -28,7 +28,7 @@ const memoResult = react.memo(function PortalKeyboardRendererComponent(item) {
   let memo;
   let tmp = channelId;
   let tmp2 = dependencyMap;
-  const tmp3 = state === channelId(5073).TransitionStates.YEETED;
+  const tmp3 = state === channelId(5104).TransitionStates.YEETED;
   dependencyMap = tmp3;
   const items = [chatInputRef, tmp3];
   const layoutEffect = channel.useLayoutEffect(() => {
@@ -64,13 +64,13 @@ const memoResult = react.memo(function PortalKeyboardRendererComponent(item) {
   }, items2);
   if (null != memo) {
     if (undefined !== memo1) {
-      if (tmp(1626).KeyboardTypes.APP_LAUNCHER === type) {
-        chatInputRef(12946);
-        return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(10047).AppLauncherEntrypoint.TEXT} />;
-      } else if (tmp(1626).KeyboardTypes.MEDIA === type) {
-        return jsx(chatInputRef(18562), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
-      } else if (tmp(1626).KeyboardTypes.EXPRESSION === type) {
-        return jsx(chatInputRef(18568), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+      if (tmp(1627).KeyboardTypes.APP_LAUNCHER === type) {
+        chatInputRef(12998);
+        return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(10089).AppLauncherEntrypoint.TEXT} />;
+      } else if (tmp(1627).KeyboardTypes.MEDIA === type) {
+        return jsx(chatInputRef(18625), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+      } else if (tmp(1627).KeyboardTypes.EXPRESSION === type) {
+        return jsx(chatInputRef(18631), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
       } else {
         return null;
       }

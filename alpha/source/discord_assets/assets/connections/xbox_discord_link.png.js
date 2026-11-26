@@ -1,8 +1,8 @@
-// Module ID: 7729
-// Function ID: 7730
+// Module ID: 7763
+// Function ID: 7764
 // Dependencies: [2]
 
-// Module 7729
+// Module 7763
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/connections/xbox_discord_link.png.js");

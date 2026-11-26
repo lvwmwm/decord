@@ -1,19 +1,19 @@
-// Module ID: 13711
-// Function ID: 13712
+// Module ID: 13763
+// Function ID: 13764
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [19, 17, 13702, 1071, 21, 5012, 6791, 575, 1500, 13710, 1186, 1112, 7464, 5699, 13712, 1255, 13713, 2]
+// Dependencies: [19, 17, 13754, 1071, 21, 5043, 6822, 575, 1501, 13762, 1186, 1112, 7495, 5730, 13764, 1256, 13765, 2]
 // Exports: default
 
-// Module 13711 (HubEmailConnectionStudentPrompt)
+// Module 13763 (HubEmailConnectionStudentPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import HubConstants from "HubConstants" /* 13702 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HubConstants from "HubConstants" /* 13754 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
-import TextStyles from "TextStyles" /* 6791 */;
+import createStyles_mod from "createStyles" /* 5043 */;
+import TextStyles from "TextStyles" /* 6822 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -52,11 +52,11 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   onClose = onClose.onClose;
   const invite = onClose.invite;
   const tmp = closure_8();
-  let obj = onClose(1500);
+  let obj = onClose(1501);
   dependencyMap = obj.useNavigation();
   let obj2 = { children: closure_7(View, obj3) };
   obj3 = { style: tmp.container, children: items };
-  const HubEmailConnectionScreen = onClose(13710).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = onClose(13762).HubEmailConnectionScreen;
   const obj4 = { style: tmp.header, children: intl.string(onClose(1112).t["+/Pv0h"]) };
   const LegacyText = onClose(1186).LegacyText;
   intl = onClose(1112).intl;
@@ -64,7 +64,7 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   const obj5 = {
     DEPRECATED_style: tmp.row,
     leading: closure_6(tmp3, obj6),
-    trailing: invite(7464).Arrow,
+    trailing: invite(7495).Arrow,
     label: intl2.string(onClose(1112).t["a7a/D+"]),
     subLabel: intl3.string(onClose(1112).t.Gsegk8),
     onPress: function onContinue() {
@@ -74,16 +74,16 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
       closure_2.push(HubEmailConnectionSteps.VERIFY_EMAIL, obj2);
     }
   };
-  obj6 = { source: invite(13712) };
-  const tmp2 = invite(7464);
-  tmp3 = invite(5699);
+  obj6 = { source: invite(13764) };
+  const tmp2 = invite(7495);
+  tmp3 = invite(5730);
   intl2 = onClose(1112).intl;
   intl3 = onClose(1112).intl;
   items[1] = closure_6(tmp2, obj5);
-  const obj7 = { DEPRECATED_style: tmp.row, leading: closure_6(tmp5, obj8), trailing: invite(7464).Arrow, label: intl4.string(onClose(1112).t.GLG9n4), onPress: onClose };
-  obj8 = { source: invite(13713) };
-  const tmp4 = invite(7464);
-  tmp5 = invite(5699);
+  const obj7 = { DEPRECATED_style: tmp.row, leading: closure_6(tmp5, obj8), trailing: invite(7495).Arrow, label: intl4.string(onClose(1112).t.GLG9n4), onPress: onClose };
+  obj8 = { source: invite(13765) };
+  const tmp4 = invite(7495);
+  tmp5 = invite(5730);
   intl4 = onClose(1112).intl;
   items[2] = closure_6(tmp4, obj7);
   return closure_6(HubEmailConnectionScreen, obj2);

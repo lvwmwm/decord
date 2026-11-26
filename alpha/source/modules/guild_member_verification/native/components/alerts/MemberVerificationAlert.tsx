@@ -1,17 +1,17 @@
-// Module ID: 6970
-// Function ID: 6971
+// Module ID: 7001
+// Function ID: 7002
 // Name: MemberVerificationAlert
-// Dependencies: [19, 17, 21, 5012, 575, 6087, 5603, 2]
+// Dependencies: [19, 17, 21, 5043, 575, 6118, 5634, 2]
 // Exports: default
 
-// Module 6970 (MemberVerificationAlert)
+// Module 7001 (MemberVerificationAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5603 */;
-import AlertDefault from "Alert" /* 6087 */;
+import Text_Text from "Text/Text" /* 5634 */;
+import AlertDefault from "Alert" /* 6118 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,25 +1,25 @@
-// Module ID: 4837
-// Function ID: 4838
+// Module ID: 4868
+// Function ID: 4869
 // Name: UserSettings
-// Dependencies: [4838, 1081, 4839, 1071, 4840, 4841, 1226, 1195, 558, 5673, 12, 504, 5674, 5682, 1235, 2]
+// Dependencies: [4869, 1081, 4870, 1071, 4871, 4872, 1226, 1195, 558, 5704, 12, 504, 5705, 5713, 1236, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
-// Module 4837 (UserSettings)
+// Module 4868 (UserSettings)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import wrappers from "wrappers" /* 1226 */;
-import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1235 */;
-import StickersConstants from "StickersConstants" /* 4840 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5673 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5674 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5682 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4838 */;
+import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1236 */;
+import StickersConstants from "StickersConstants" /* 4871 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5704 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5705 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5713 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4869 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4839 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4870 */;
 import Constants from "Constants" /* 1071 */;
-import UserSettingDefinitions_mod from "UserSettingDefinitions" /* 4841 */;
+import UserSettingDefinitions_mod from "UserSettingDefinitions" /* 4872 */;
 import "UserSettingDefinitions";
 import size from "module_2" /* 2 */;
 

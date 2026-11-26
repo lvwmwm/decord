@@ -1,13 +1,13 @@
-// Module ID: 18415
-// Function ID: 18416
+// Module ID: 18476
+// Function ID: 18477
 // Name: useConjureSharingMode
-// Dependencies: [5, 32, 19, 6903, 1112, 4244, 504, 18416, 18417, 7636, 6904, 2]
+// Dependencies: [5, 32, 19, 6934, 1112, 4245, 504, 18477, 18478, 7667, 6935, 2]
 // Exports: conjureSharingOptions, default
 
-// Module 18415 (useConjureSharingMode)
+// Module 18476 (useConjureSharingMode)
 import intl4 from "intl" /* 1112 */;
-import _modDef4244 from "module_4244" /* 4244 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6903 */;
+import _modDef4245 from "module_4245" /* 4245 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -65,7 +65,7 @@ export default function useConjureSharingMode(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: "+95" };
       }
     } else {
       let c3;
@@ -210,13 +210,13 @@ export function conjureSharingOptions() {
   let intl;
   let intl2;
   let intl3;
-  const obj = { value: "collaborators", label: intl.string(_modDef4244["a/Tlqf"]) };
+  const obj = { value: "collaborators", label: intl.string(_modDef4245["a/Tlqf"]) };
   intl = intl4.intl;
   const items = [obj, , ];
-  const obj2 = { value: "link", label: intl2.string(_modDef4244.e0VakN) };
+  const obj2 = { value: "link", label: intl2.string(_modDef4245.e0VakN) };
   intl2 = intl4.intl;
   items[1] = obj2;
-  const obj3 = { value: "public", label: intl3.string(_modDef4244["98MAcX"]) };
+  const obj3 = { value: "public", label: intl3.string(_modDef4245["98MAcX"]) };
   intl3 = intl4.intl;
   items[2] = obj3;
   return items;

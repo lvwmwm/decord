@@ -1,12 +1,12 @@
-// Module ID: 2170
-// Function ID: 2171
+// Module ID: 2171
+// Function ID: 2172
 // Name: SubscriptionPlanRecord
-// Dependencies: [1406, 1388, 2]
+// Dependencies: [1407, 1389, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 2170 (SubscriptionPlanRecord)
-import Record from "Record" /* 1406 */;
-import PremiumConstants from "PremiumConstants" /* 1388 */;
+// Module 2171 (SubscriptionPlanRecord)
+import Record from "Record" /* 1407 */;
+import PremiumConstants from "PremiumConstants" /* 1389 */;
 import size from "module_2" /* 2 */;
 
 let _window;

@@ -1,21 +1,21 @@
-// Module ID: 13561
-// Function ID: 13562
+// Module ID: 13613
+// Function ID: 13614
 // Name: TabItem
-// Dependencies: [19, 17, 21, 1653, 5012, 575, 5613, 5603, 1706, 13562, 1378, 1112, 9414, 2]
+// Dependencies: [19, 17, 21, 1654, 5043, 575, 5644, 5634, 1707, 13614, 1379, 1112, 9456, 2]
 // Exports: TabItem
 
-// Module 13561 (TabItem)
+// Module 13613 (TabItem)
 import nativeDefault from "native" /* 575 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import spring_spring from "spring/spring" /* 5613 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import spring_spring from "spring/spring" /* 5644 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5012 */;
+import createStyles_mod from "createStyles" /* 5043 */;
 import size from "module_2" /* 2 */;
 
-const module_1653 = _mod1653;
+const module_1654 = _mod1654;
 let active, value;
 
 let Pressable;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5603);
+const Text_Text = tmp2(5634);
 function useAnimatedTextStyle(arg0) {
   let activeIndex;
   let index;
@@ -43,7 +43,7 @@ function useAnimatedTextStyle(arg0) {
   if ("overlay" === variant) {
     tmp = closure_12();
   }
-  let tmp2 = _mod1653;
+  let tmp2 = _mod1654;
   const items = [closure_13, tmp, pressed, index, activeIndex, , ];
   const useAnimatedStyle = tmp2.useAnimatedStyle;
   items[5] = spring_spring.withSpring;
@@ -94,19 +94,19 @@ function TabItemCount(arg0) {
   let variant;
   ({ count, index, activeIndex, pressed, variant } = arg0);
   const tmp = closure_10();
-  let obj = _mod1653;
+  let obj = _mod1654;
   const sharedValue = obj.useSharedValue(0);
   let items = [sharedValue];
   const layoutEffect = react.useLayoutEffect(() => {
     const result = sharedValue.set(1);
   }, items);
   const items1 = [closure_15, , , , ];
-  const useAnimatedStyle = _mod1653.useAnimatedStyle;
-  _mod1653;
+  const useAnimatedStyle = _mod1654.useAnimatedStyle;
+  _mod1654;
   items1[1] = spring_spring.withSpring;
   items1[2] = sharedValue;
   items1[3] = closure_9;
-  items1[4] = _mod1653.interpolate;
+  items1[4] = _mod1654.interpolate;
   let c0;
   let c1;
   let c2;
@@ -129,12 +129,12 @@ function TabItemCount(arg0) {
   const obj2 = { style: items3, children: hasOwnProperty(Text_Text.Text, { animated: true, variant: "body-sm/medium", style: tmp13, lineClamp: 1, children: count }) };
   items3 = [tmp.count, animatedStyle];
   tmp13 = useAnimatedTextStyle({ index, activeIndex, pressed, variant });
-  const View = module_1653.View;
+  const View = module_1654.View;
   return hasOwnProperty(View, obj2);
 }
 ({ View: closure_4, Pressable } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = module_1653.createAnimatedComponent(Pressable);
+let closure_7 = module_1654.createAnimatedComponent(Pressable);
 let closure_8 = { mass: 0.3, damping: 13, stiffness: 250, overshootClamping: true };
 let closure_9 = { mass: 2, damping: 30, stiffness: 300, overshootClamping: true };
 let createStyles = createStyles_mod;
@@ -180,7 +180,7 @@ export function TabItem(arg0) {
   const merged = Object.assign(arg0, Object.assign({ label: 0, count: 0, indicatorDot: 0, index: 0, itemCount: 0, state: 0, pressed: 0, grow: 0, variant: 0 }));
   ({ activeIndex, setItemDimensions: c1 } = state);
   const tmp2 = closure_10();
-  let obj = index(1653);
+  let obj = index(1654);
   const items = [closure_17, activeIndex, index];
   let c0;
   c1 = undefined;
@@ -208,7 +208,7 @@ export function TabItem(arg0) {
   const obj2 = {
     style: items2,
     onLayout: function handleLayout(nativeEvent) {
-      const obj = _mod1706;
+      const obj = _mod1707;
       obj.scheduleOnUI(c1, index, nativeEvent.nativeEvent.layout);
     },
     accessibilityRole: "tab",
@@ -220,14 +220,14 @@ export function TabItem(arg0) {
   items2[1] = { flexGrow: num };
   const merged1 = Object.assign(merged);
   formatToPlainStringResult = undefined;
-  tmp3Result = index(13562);
-  const tmp3Result2 = index(1378);
+  tmp3Result = index(13614);
+  const tmp3Result2 = index(1379);
   if (tmp3Result2.isAndroid()) {
     const intl = tmp3(1112).intl;
     const obj3 = { position: index + 1, tabCount: itemCount };
     formatToPlainStringResult = intl.formatToPlainString(tmp3(1112).t["4EsQA1"], obj3);
   }
-  items3 = [closure_5(index(5603).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
+  items3 = [closure_5(index(5634).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
   let tmp14Result = null;
   if (null != count) {
     const obj4 = { count, index, activeIndex, pressed, variant };
@@ -238,7 +238,7 @@ export function TabItem(arg0) {
   if (null != indicatorDot) {
     let str = "primary";
     const obj5 = { style: tmp2.indicatorDot, children: closure_5(IndicatorDot, obj6) };
-    IndicatorDot = tmp3(9414).IndicatorDot;
+    IndicatorDot = tmp3(9456).IndicatorDot;
     const tmp18 = closure_4;
     if ("overlay" === variant) {
       str = "neutral";

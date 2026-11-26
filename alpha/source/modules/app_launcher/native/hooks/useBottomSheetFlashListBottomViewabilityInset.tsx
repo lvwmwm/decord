@@ -1,10 +1,10 @@
-// Module ID: 13008
-// Function ID: 13009
+// Module ID: 13060
+// Function ID: 13061
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [19, 1494, 12095, 11762, 12, 1653, 1706, 2]
+// Dependencies: [19, 1495, 12145, 11810, 12, 1654, 1707, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 13008 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 13060 (useBottomSheetFlashListBottomViewabilityInset)
 import _modDef12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,14 +23,14 @@ export function useBottomSheetFlashListBottomViewabilityInset() {
   let tmp16;
   let tmp17;
   let obj = react;
-  const tmp3 = bottomVisibilityInsetRef(1494)();
-  const context = react.useContext(flashListRef(12095).AppLauncherContext);
+  const tmp3 = bottomVisibilityInsetRef(1495)();
+  const context = react.useContext(flashListRef(12145).AppLauncherContext);
   let bottomSheetPosition;
   const tmp = bottomVisibilityInsetRef;
   if (context != null) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
-  const maximum = tmp(11762)().maximum;
+  const maximum = tmp(11810)().maximum;
   flashListRef = obj.useRef(null);
   const diff = tmp3.height - maximum;
   bottomVisibilityInsetRef = obj.useRef(9999);
@@ -63,9 +63,9 @@ export function useBottomSheetFlashListBottomViewabilityInset() {
   useBottomSheetFlashListBottomViewabilityInsetTsx1.__workletHash = 15442314305075;
   useBottomSheetFlashListBottomViewabilityInsetTsx1.__initData = tmp12;
   const items2 = [closure_5, diff, , ];
-  const useAnimatedReaction = flashListRef(1653).useAnimatedReaction;
-  flashListRef(1653);
-  items2[2] = flashListRef(1706).scheduleOnRN;
+  const useAnimatedReaction = flashListRef(1654).useAnimatedReaction;
+  flashListRef(1654);
+  items2[2] = flashListRef(1707).scheduleOnRN;
   items2[3] = memo;
   let c0;
   let c1;

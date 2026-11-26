@@ -1,16 +1,16 @@
-// Module ID: 8563
-// Function ID: 8564
+// Module ID: 8605
+// Function ID: 8606
 // Name: GuildScheduledEventHeaderUtils
-// Dependencies: [5744, 4867, 8424, 575, 8564, 1112, 8065, 8565, 2]
+// Dependencies: [5775, 4898, 8466, 575, 8606, 1112, 8107, 8607, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 8563 (GuildScheduledEventHeaderUtils)
+// Module 8605 (GuildScheduledEventHeaderUtils)
 import nativeDefault from "native" /* 575 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4867 */;
-import ScheduleUtils from "ScheduleUtils" /* 8424 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8564 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8565 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5744 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4898 */;
+import ScheduleUtils from "ScheduleUtils" /* 8466 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8606 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8607 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 5775 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -52,7 +52,7 @@ export function getGuildScheduledEventHeaderProps(eventTimeData) {
     const intl4 = tmp(1112).intl;
     let stringResult = intl4.string(tmp(1112).t["X2K3/4"]);
     if (isStage) {
-      tmp8Result = tmp8(8065);
+      tmp8Result = tmp8(8107);
     }
     let entity_type;
     if (event != null) {
@@ -66,11 +66,11 @@ export function getGuildScheduledEventHeaderProps(eventTimeData) {
     stringResult1 = stringResult;
     tmp8Result3 = tmp8Result;
   } else if (tmp7) {
-    tmp8Result3 = tmp8(8565);
+    tmp8Result3 = tmp8(8607);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result3 = tmp8(8565);
+    tmp8Result3 = tmp8(8607);
     const intl3 = tmp(1112).intl;
     stringResult1 = intl3.string(tmp(1112).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;

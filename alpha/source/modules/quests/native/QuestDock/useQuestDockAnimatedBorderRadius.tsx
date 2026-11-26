@@ -1,12 +1,12 @@
-// Module ID: 16721
-// Function ID: 16722
+// Module ID: 16772
+// Function ID: 16773
 // Name: useQuestDockAnimatedBorderRadius
-// Dependencies: [19, 16633, 1653, 2]
+// Dependencies: [19, 16684, 1654, 2]
 // Exports: default
 
-// Module 16721 (useQuestDockAnimatedBorderRadius)
-import _mod1653 from "module_1653" /* 1653 */;
-import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 16633 */;
+// Module 16772 (useQuestDockAnimatedBorderRadius)
+import _mod1654 from "module_1654" /* 1654 */;
+import QuestDockExternalCoordinationContext from "QuestDockExternalCoordinationContext" /* 16684 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,13 +26,13 @@ export default function useQuestDockAnimatedBorderRadius(arg0) {
   }
   const questDockOffset = react.useContext(QuestDockExternalCoordinationContext.QuestDockExternalCoordinationContext).questDockOffset;
   let items = [closure_3, , , , , ];
-  const useDerivedValue = _mod1653.useDerivedValue;
-  _mod1653;
-  items[1] = _mod1653.interpolate;
+  const useDerivedValue = _mod1654.useDerivedValue;
+  _mod1654;
+  items[1] = _mod1654.interpolate;
   items[2] = questDockOffset;
   items[3] = num;
   items[4] = arg0;
-  items[5] = _mod1653.Extrapolation;
+  items[5] = _mod1654.Extrapolation;
   let c0;
   let c1;
   let c2;

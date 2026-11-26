@@ -1,15 +1,15 @@
-// Module ID: 17892
-// Function ID: 17893
+// Module ID: 17949
+// Function ID: 17950
 // Name: preloadChannelAppFrame
-// Dependencies: [6905, 17893, 7656, 7654, 7648, 2]
+// Dependencies: [6936, 17950, 7687, 7685, 7679, 2]
 // Exports: preloadChannelAppFrame
 
-// Module 17892 (preloadChannelAppFrame)
-import frameLaunchSteps from "frameLaunchSteps" /* 7648 */;
-import FrameLaunchTimingTypes from "FrameLaunchTimingTypes" /* 7654 */;
-import FrameLaunchTimingManager from "FrameLaunchTimingManager" /* 7656 */;
-import getChannelAppLaunchTargetDefault from "getChannelAppLaunchTarget" /* 17893 */;
-import FramesStore from "FramesStore" /* 6905 */;
+// Module 17949 (preloadChannelAppFrame)
+import frameLaunchSteps from "frameLaunchSteps" /* 7679 */;
+import FrameLaunchTimingTypes from "FrameLaunchTimingTypes" /* 7685 */;
+import FrameLaunchTimingManager from "FrameLaunchTimingManager" /* 7687 */;
+import getChannelAppLaunchTargetDefault from "getChannelAppLaunchTarget" /* 17950 */;
+import FramesStore from "FramesStore" /* 6936 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/preloadChannelAppFrame.tsx");
@@ -26,7 +26,7 @@ export function preloadChannelAppFrame(id) {
       let frameLaunchTiming = obj2.getFrameLaunchTiming(frameId);
       if (null == frameLaunchTiming) {
         const tmp6Result = FrameLaunchTimingManager;
-        frameLaunchTiming = tmp6Result.startLaunchTiming(tmp6(7654).LaunchTrigger.SIDEBAR_MOUSEDOWN, frameId, applicationId, surface);
+        frameLaunchTiming = tmp6Result.startLaunchTiming(tmp6(7685).LaunchTrigger.SIDEBAR_MOUSEDOWN, frameId, applicationId, surface);
       }
       const finish = frameLaunchTiming.finish;
       const obj3 = { type: FrameLaunchTimingTypes.FrameLaunchCloseType.REUSED };

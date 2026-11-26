@@ -1,20 +1,20 @@
-// Module ID: 9752
-// Function ID: 9753
+// Module ID: 9794
+// Function ID: 9795
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1071, 21, 5012, 1653, 9753, 1706, 6121, 1112, 9735, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 5043, 1654, 9795, 1707, 6152, 1112, 9777, 2]
 // Exports: default
 
-// Module 9752 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 9794 (EmojiPickerCategoriesUnicodeShortcutItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import _mod1653 from "module_1653" /* 1653 */;
-import _mod1706 from "module_1706" /* 1706 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9753 */;
+import _mod1654 from "module_1654" /* 1654 */;
+import _mod1707 from "module_1707" /* 1707 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9795 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import createStyles from "createStyles" /* 5012 */;
+import createStyles from "createStyles" /* 5043 */;
 import size_mod from "module_2" /* 2 */;
 
 let end, num, tmp, tmp2, tmp5;
@@ -55,7 +55,7 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(category) {
   const items = [closure_9, blockRef];
   let c0;
   [tmp7, tmp8] = items;
-  const tmp6 = _mod1653;
+  const tmp6 = _mod1654;
   class EmojiPickerCategoriesUnicodeShortcutItemTsx1 {
     constructor() {
       return closure_0.get();
@@ -71,7 +71,7 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(category) {
   items2[2] = categoryIndex;
   items2[3] = metroRequire;
   items2[4] = first;
-  items2[5] = _mod1706.scheduleOnRN;
+  items2[5] = _mod1707.scheduleOnRN;
   items2[6] = tmp3;
   c0 = undefined;
   let c1;
@@ -111,7 +111,7 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(category) {
   let tmp19 = null;
   const tmp17 = closure_8();
   if (first) {
-    const PressableOpacity = tmp4(6121).PressableOpacity;
+    const PressableOpacity = tmp4(6152).PressableOpacity;
     const intl = tmp4(1112).intl;
     const items5 = [, ];
     ({ itemInner: arr6[0], fadedItemOpacity: arr6[1] } = tmp17);
