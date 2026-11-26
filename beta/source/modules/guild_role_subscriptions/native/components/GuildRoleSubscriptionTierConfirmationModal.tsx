@@ -1,21 +1,21 @@
-// Module ID: 20048
-// Function ID: 20049
+// Module ID: 20052
+// Function ID: 20053
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 20016, 21, 4913, 575, 20017, 20027, 20019, 1112, 7348, 5600, 5504, 20049, 2]
+// Dependencies: [5, 32, 19, 17, 20020, 21, 4913, 575, 20021, 20031, 20023, 1112, 7348, 5600, 5504, 20053, 2]
 // Exports: default
 
-// Module 20048 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 20052 (GuildRoleSubscriptionTierConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import FormStylesDefault from "FormStyles" /* 20017 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20019 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 20027 */;
+import FormStylesDefault from "FormStyles" /* 20021 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20023 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 20031 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20016 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20020 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -162,6 +162,6 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     items2[1] = React4(View, obj7);
     flag = tmp14(tmp17, obj3);
   }
-  items4 = [flag, metroImportAll(tmp6(20049).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  items4 = [flag, metroImportAll(tmp6(20053).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   return React4(tmp15, obj2);
 };

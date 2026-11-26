@@ -1,10 +1,10 @@
-// Module ID: 18164
-// Function ID: 18165
+// Module ID: 18168
+// Function ID: 18169
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 6633, 4762, 4784, 21, 18102, 575, 7583, 1112, 7575, 5529, 7578, 8008, 10043, 7568, 6835, 7571, 18143, 11, 5504, 8013, 7038, 1186, 504, 2]
+// Dependencies: [19, 17, 6633, 4762, 4784, 21, 18106, 575, 7583, 1112, 7575, 5529, 7578, 8008, 10043, 7568, 6835, 7571, 18147, 11, 5504, 8013, 7038, 1186, 504, 2]
 // Exports: default
 
-// Module 18164 (ICYMIGuildEventRow)
+// Module 18168 (ICYMIGuildEventRow)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import transitionToGuild from "transitionToGuild" /* 6835 */;
@@ -17,7 +17,7 @@ import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6633 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18102 */;
+import createICYMIStyles from "createICYMIStyles" /* 18106 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -117,7 +117,7 @@ function ICYMIGuildEventRow(event) {
   }
   let obj5 = { actionLabel: intl.string(event(1112).t["6pFsLQ"]), id: event.id, interactionType: "guild_event", channelId: id1, guildId: guild.id, timestamp: tmp2Result4.extractTimestamp(event.id), onHeaderPress: callback1, onHeaderLongPress: callback1, children: closure_12(tmp23, obj6) };
   const tmp2ResultResult = tmp2Result(guild_id, id, nextRecurrenceIdInEvent);
-  const tmp2Result3 = guild(18143);
+  const tmp2Result3 = guild(18147);
   intl = tmp8(1112).intl;
   id1 = undefined;
   if (channel != null) {

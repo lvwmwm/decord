@@ -1,10 +1,10 @@
-// Module ID: 12752
-// Function ID: 12753
+// Module ID: 12753
+// Function ID: 12754
 // Name: CheckpointNumberUtils
 // Dependencies: [2160, 1112, 3440, 2]
 // Exports: formatCheckpointStatAccessibilityLabel, formatCheckpointStatNumber
 
-// Module 12752 (CheckpointNumberUtils)
+// Module 12753 (CheckpointNumberUtils)
 import intl8 from "intl" /* 1112 */;
 import _modDef3440 from "module_3440" /* 3440 */;
 import FunctionUtils from "FunctionUtils" /* 2160 */;

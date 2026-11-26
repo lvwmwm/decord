@@ -1,11 +1,11 @@
-// Module ID: 19651
-// Function ID: 19652
+// Module ID: 19655
+// Function ID: 19656
 // Name: ProximitySensorManager
-// Dependencies: [4761, 6400, 5654, 5674, 19652, 5675, 1378, 7484, 2]
+// Dependencies: [4761, 6400, 5654, 5674, 19656, 5675, 1378, 7484, 2]
 
-// Module 19651 (ProximitySensorManager)
+// Module 19655 (ProximitySensorManager)
 import VoiceCallTypes from "VoiceCallTypes" /* 5675 */;
-import react_nativeDefault from "react-native" /* 19652 */;
+import react_nativeDefault from "react-native" /* 19656 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;

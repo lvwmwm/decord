@@ -795,18 +795,18 @@ export function coerceModalRoute(name) {
   }
 }
 export { isModalOpen };
-export function useIsModalOpen(SHARE_PREPARING_MODAL_KEY) {
+export function useIsModalOpen(CHECKPOINT_MODAL_KEY) {
   let closure_1;
   let first;
-  let closure_0 = SHARE_PREPARING_MODAL_KEY;
-  [first, closure_1] = closure_5(() => isModalOpen(SHARE_PREPARING_MODAL_KEY));
-  const items = [SHARE_PREPARING_MODAL_KEY];
+  let closure_0 = CHECKPOINT_MODAL_KEY;
+  [first, closure_1] = closure_5(() => isModalOpen(CHECKPOINT_MODAL_KEY));
+  const items = [CHECKPOINT_MODAL_KEY];
   closure_4(() => {
     const obj = RootNavigationRef;
     const rootNavigationRef = obj.getRootNavigationRef();
     if (null != rootNavigationRef) {
       return rootNavigationRef.addListener("state", () => {
-        closure_1_1(isModalOpen(SHARE_PREPARING_MODAL_KEY));
+        closure_1_1(isModalOpen(CHECKPOINT_MODAL_KEY));
       });
     }
   }, items);

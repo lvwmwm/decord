@@ -1,7 +1,7 @@
 // Module ID: 12743
 // Function ID: 12744
 // Name: TextWritingAnimation
-// Dependencies: [32, 19, 17, 4914, 21, 4913, 12510, 504, 12514, 2]
+// Dependencies: [32, 19, 17, 4914, 21, 4913, 12540, 504, 12722, 2]
 // Exports: default
 
 // Module 12743 (TextWritingAnimation)

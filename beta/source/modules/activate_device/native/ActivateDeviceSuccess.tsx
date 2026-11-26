@@ -1,17 +1,17 @@
-// Module ID: 15108
-// Function ID: 15109
+// Module ID: 15111
+// Function ID: 15112
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4913, 1112, 7005, 5600, 1412, 15107, 5504, 5511, 2]
+// Dependencies: [19, 17, 21, 4913, 1112, 7005, 5600, 1412, 15110, 5504, 5511, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 15108 (ActivateDeviceSuccess)
+// Module 15111 (ActivateDeviceSuccess)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1112 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import scopes2 from "scopes" /* 7005 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15107 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15110 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

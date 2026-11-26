@@ -1,10 +1,10 @@
-// Module ID: 14105
-// Function ID: 14106
+// Module ID: 14108
+// Function ID: 14109
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4914, 1071, 21, 4913, 575, 1628, 504, 14103, 7539, 671, 1653, 5123, 5468, 10957, 2]
+// Dependencies: [19, 17, 4914, 1071, 21, 4913, 575, 1628, 504, 14106, 7539, 671, 1653, 5123, 5468, 10957, 2]
 // Exports: default
 
-// Module 14105 (PremiumMarketingFloatingSubscribeButton)
+// Module 14108 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10957 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14103 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14106 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;

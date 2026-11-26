@@ -1,9 +1,9 @@
-// Module ID: 14181
-// Function ID: 14182
+// Module ID: 14184
+// Function ID: 14185
 // Name: GiftCodeRow
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 4974, 11911, 6347, 9718, 7241, 5504, 5511, 1112, 14182, 2168, 1186, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 4974, 11911, 6347, 9718, 7241, 5504, 5511, 1112, 14185, 2168, 1186, 2]
 
-// Module 14181 (GiftCodeRow)
+// Module 14184 (GiftCodeRow)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
@@ -11,7 +11,7 @@ import native2 from "native" /* 4974 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 6347 */;
 import showShareActionSheet2 from "showShareActionSheet" /* 9718 */;
 import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11911 */;
-import copyGiftCodeDefault from "copyGiftCode" /* 14182 */;
+import copyGiftCodeDefault from "copyGiftCode" /* 14185 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

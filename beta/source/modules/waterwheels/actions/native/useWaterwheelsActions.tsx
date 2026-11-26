@@ -1,10 +1,10 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17814
+// Function ID: 17815
 // Name: useWaterwheelsActions
-// Dependencies: [5, 19, 2140, 502, 4784, 13282, 1071, 6496, 5595, 10051, 6834, 1112, 2643, 7255, 17811, 572, 9766, 9054, 9769, 9774, 7024, 6516, 7803, 13291, 4949, 6511, 7285, 10045, 1284, 17812, 6517, 2]
+// Dependencies: [5, 19, 2140, 502, 4784, 13285, 1071, 6496, 5595, 10051, 6834, 1112, 2643, 7255, 17815, 572, 9766, 9054, 9769, 9774, 7024, 6516, 7803, 13294, 4949, 6511, 7285, 10045, 1284, 17816, 6517, 2]
 // Exports: useWaterwheelsActions
 
-// Module 17810 (useWaterwheelsActions)
+// Module 17814 (useWaterwheelsActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4949 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
@@ -13,14 +13,14 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
 import react_nativeDefault from "react-native" /* 7803 */;
 import GameActionCreators from "GameActionCreators" /* 9054 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;
-import NotificationUtilsDefault from "NotificationUtils" /* 13291 */;
-import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 17811 */;
+import NotificationUtilsDefault from "NotificationUtils" /* 13294 */;
+import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 17815 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13282 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13285 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

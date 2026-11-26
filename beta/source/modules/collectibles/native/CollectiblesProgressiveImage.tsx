@@ -1,10 +1,10 @@
-// Module ID: 17348
-// Function ID: 17349
+// Module ID: 17352
+// Function ID: 17353
 // Name: CollectiblesProgressiveImage
 // Dependencies: [19, 17, 21, 1653, 5600, 5123, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 17348 (CollectiblesProgressiveImage)
+// Module 17352 (CollectiblesProgressiveImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1653 from "module_1653" /* 1653 */;

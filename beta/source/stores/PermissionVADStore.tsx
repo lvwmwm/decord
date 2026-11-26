@@ -1,9 +1,9 @@
-// Module ID: 15646
-// Function ID: 15647
+// Module ID: 15650
+// Function ID: 15651
 // Name: PermissionVADStore
 // Dependencies: [502, 4762, 2131, 4845, 5654, 5561, 1071, 572, 504, 2]
 
-// Module 15646 (PermissionVADStore)
+// Module 15650 (PermissionVADStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

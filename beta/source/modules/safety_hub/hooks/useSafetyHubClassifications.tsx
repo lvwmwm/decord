@@ -16,8 +16,8 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f102197 = () => classifications.getClassifications();
-const f102198 = (id, id2) => {
+const f102204 = () => classifications.getClassifications();
+const f102205 = (id, id2) => {
   const obj = SnowflakeUtilsDefault;
   const extractTimestampResult = obj.extractTimestamp(id2.id);
   const obj2 = SnowflakeUtilsDefault;
@@ -29,8 +29,8 @@ const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHub
 export function useSafetyHubClassifications() {
   const items = [SafetyHubStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102197);
-  return stateFromStoresArray.sort(f102198);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102204);
+  return stateFromStoresArray.sort(f102205);
 }
 export function useSafetyHubClassification(classificationId) {
   let USER;
@@ -85,8 +85,8 @@ export function useSafetyHubClassification(classificationId) {
 export function useActiveSafetyHubClassifications() {
   const items = [SafetyHubStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102197);
-  const sorted = stateFromStoresArray.sort(f102198);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102204);
+  const sorted = stateFromStoresArray.sort(f102205);
   let date = new Date();
   return sorted.filter((max_expiration_time) => {
     date = new Date(max_expiration_time.max_expiration_time);
@@ -97,8 +97,8 @@ export function useExpiredSafetyHubClassifications() {
   let classifications;
   let obj = get_initialized;
   const items = [SafetyHubStore];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102197);
-  const sorted = stateFromStoresArray.sort(f102198);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102204);
+  const sorted = stateFromStoresArray.sort(f102205);
   let date = new Date();
   return sorted.filter((max_expiration_time) => {
     date = new Date(max_expiration_time.max_expiration_time);

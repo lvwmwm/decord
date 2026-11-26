@@ -1,10 +1,10 @@
-// Module ID: 18710
-// Function ID: 18711
+// Module ID: 18714
+// Function ID: 18715
 // Name: useIsFrameRenderingElsewhere
 // Dependencies: [2]
 // Exports: default
 
-// Module 18710 (useIsFrameRenderingElsewhere)
+// Module 18714 (useIsFrameRenderingElsewhere)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/useIsFrameRenderingElsewhere.native.tsx");

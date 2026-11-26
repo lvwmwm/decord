@@ -1,7 +1,7 @@
 // Module ID: 12729
 // Function ID: 12730
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1386, 5969, 21, 575, 4913, 1494, 504, 4969, 1112, 3408, 12730, 12513, 12731, 12743, 3440, 12744, 2]
+// Dependencies: [17, 1386, 5969, 21, 575, 4913, 1494, 504, 4969, 1112, 3408, 12730, 12720, 12731, 12743, 3440, 12744, 2]
 // Exports: default
 
 // Module 12729 (CheckpointWelcomeScreen)
@@ -13,7 +13,7 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _modDef3408 from "module_3408" /* 3408 */;
 import _modDef3440 from "module_3440" /* 3440 */;
 import UserUtils from "UserUtils" /* 4969 */;
-import CheckpointScreen from "CheckpointScreen" /* 12513 */;
+import CheckpointScreen from "CheckpointScreen" /* 12720 */;
 import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12730 */;
 import CheckpointNavigationControls from "CheckpointNavigationControls" /* 12731 */;
 import TextWritingAnimation from "TextWritingAnimation" /* 12743 */;

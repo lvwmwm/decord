@@ -1,18 +1,18 @@
-// Module ID: 16065
-// Function ID: 16066
+// Module ID: 16069
+// Function ID: 16070
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4913, 16066, 16062, 7017, 5600, 16067, 5504, 1112, 2]
+// Dependencies: [19, 17, 21, 4913, 16070, 16066, 7017, 5600, 16071, 5504, 1112, 2]
 // Exports: default
 
-// Module 16065 (TwoFASetupLanding)
+// Module 16069 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 16062 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 16066 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16067 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 16066 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 16070 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16071 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

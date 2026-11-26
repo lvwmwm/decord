@@ -1,9 +1,9 @@
-// Module ID: 16242
-// Function ID: 16243
+// Module ID: 16246
+// Function ID: 16247
 // Name: FamilyCenterSettingParentalControlsSetting
-// Dependencies: [8712, 1071, 11942, 1112, 2824, 16243, 2]
+// Dependencies: [8712, 1071, 11942, 1112, 2824, 16247, 2]
 
-// Module 16242 (FamilyCenterSettingParentalControlsSetting)
+// Module 16246 (FamilyCenterSettingParentalControlsSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef2824 from "module_2824" /* 2824 */;

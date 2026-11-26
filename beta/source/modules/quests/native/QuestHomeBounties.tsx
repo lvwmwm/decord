@@ -1,15 +1,15 @@
-// Module ID: 16386
-// Function ID: 16387
+// Module ID: 16390
+// Function ID: 16391
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 8403, 4759, 21, 575, 4913, 4746, 9080, 16387, 572, 16393, 9958, 504, 16400, 16406, 2]
+// Dependencies: [32, 19, 17, 8403, 4759, 21, 575, 4913, 4746, 9080, 16391, 572, 16397, 9958, 504, 16404, 16410, 2]
 
-// Module 16386 (QuestHomeBounties)
+// Module 16390 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16400 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16406 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16404 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import BountyStore from "BountyStore" /* 8403 */;
@@ -113,8 +113,8 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
     if (!stateFromStores) {
       let tmp11 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp11) {
-        tmp11 = orbShopProducts.length >= tmp(16393).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-        orbShopProducts.length >= tmp(16393).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp11 = orbShopProducts.length >= tmp(16397).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        orbShopProducts.length >= tmp(16397).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp14Result = null;
       if (tmp11) {

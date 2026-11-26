@@ -1,10 +1,10 @@
-// Module ID: 19232
-// Function ID: 19233
+// Module ID: 19236
+// Function ID: 19237
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 6620, 19233, 6633, 4762, 4768, 21, 5122, 11754, 18047, 8017, 563, 7633, 7575, 7571, 5127, 7592, 19234, 14309, 7711, 8048, 1112, 7151, 17998, 11061, 10860, 10855, 10853, 10871, 10929, 5929, 575, 7591, 6503, 7499, 11727, 10850, 7620, 6497, 19235, 9081, 10603, 4945, 7225, 4746, 18026, 13420, 5140, 2]
+// Dependencies: [32, 19, 17, 6620, 19237, 6633, 4762, 4768, 21, 5122, 11754, 18051, 8017, 563, 7633, 7575, 7571, 5127, 7592, 19238, 14312, 7711, 8048, 1112, 7151, 18002, 11061, 10860, 10855, 10853, 10871, 10929, 5929, 575, 7591, 6503, 7499, 11727, 10850, 7620, 6497, 19239, 9081, 10603, 4945, 7225, 4746, 18030, 13423, 5140, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 19232 (VoicePanelFloatingCTAUtils)
+// Module 19236 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1112 */;
 import dismissible_content from "dismissible_content" /* 4746 */;
@@ -14,11 +14,11 @@ import StageChannelActionCreators from "StageChannelActionCreators" /* 6503 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6633 */;
 import XSmallIcon from "XSmallIcon" /* 7151 */;
 import speakOnStageDefault from "speakOnStage" /* 11727 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18026 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18030 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
-import EventBannerStore from "EventBannerStore" /* 19233 */;
+import EventBannerStore from "EventBannerStore" /* 19237 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let closure_12;
 let tmp;
 let unpackModuleId;
 const getDeviceSpecificString2 = tmp(5140);
-const SoundboardIcon = tmp(13420);
+const SoundboardIcon = tmp(13423);
 function useStageCTAProps(stateFromStores) {
   let Icon;
   let Icon2;
@@ -53,7 +53,7 @@ function useStageCTAProps(stateFromStores) {
   let tmp = showControls;
   const context = react.useContext(showControls(11754));
   showControls = context.showControls;
-  const tmp4 = showControls(18047)(context.channelId);
+  const tmp4 = showControls(18051)(context.channelId);
   const obj2 = require("StageChannelUnifiedCallExperiment");
   const isStageUnifiedCall = obj2.useIsStageUnifiedCall(stateFromStores, "VoicePanelFloatingCTA");
   const tmp7 = showControls(10855)();
@@ -118,7 +118,7 @@ function useStageCTAProps(stateFromStores) {
     tmp16 = obj3;
   }
   _require = stateFromStores;
-  const tmp20 = tmp(18047)(obj.useContext(tmp(11754)).channelId);
+  const tmp20 = tmp(18051)(obj.useContext(tmp(11754)).channelId);
   const tmp5Result3 = require("StageChannelUnifiedCallExperiment");
   const isStageUnifiedCall1 = tmp5Result3.useIsStageUnifiedCall(stateFromStores, "VoicePanelFloatingCTA");
   let id2;
@@ -199,7 +199,7 @@ function useFloatingCTAProps(stateFromStores) {
   let nextRecurrenceIdInEvent;
   const tmp5 = setShowFloatingCTA(5122)();
   let id1;
-  const tmp6 = setShowFloatingCTA(18047)(react.useContext(setShowFloatingCTA(11754)).channelId);
+  const tmp6 = setShowFloatingCTA(18051)(react.useContext(setShowFloatingCTA(11754)).channelId);
   const useImminentUpcomingGuildEvents = require("useGuildScheduledEvents").useImminentUpcomingGuildEvents;
   require("useGuildScheduledEvents");
   if (stateFromStores != null) {
@@ -273,7 +273,7 @@ function useFloatingCTAProps(stateFromStores) {
   const context = obj.useContext(tmp(11754));
   ({ channelId, isDockEnabled } = context);
   const items4 = [ChannelRTCStore];
-  const tmp29 = tmp(18047)(channelId);
+  const tmp29 = tmp(18051)(channelId);
   const tmp7Result11 = require("useStateFromStores");
   const stateFromStores1 = tmp7Result11.useStateFromStores(items4, () => {
     let id;

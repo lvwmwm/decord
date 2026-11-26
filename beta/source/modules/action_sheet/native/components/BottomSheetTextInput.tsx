@@ -1,9 +1,9 @@
-// Module ID: 13046
-// Function ID: 13047
+// Module ID: 13049
+// Function ID: 13050
 // Name: components/BottomSheetTextInput
 // Dependencies: [2, 7781]
 
-// Module 13046 (components/BottomSheetTextInput)
+// Module 13049 (components/BottomSheetTextInput)
 import Sheet_BottomSheetTextInput from "Sheet/BottomSheetTextInput" /* 7781 */;
 import size from "module_2" /* 2 */;
 

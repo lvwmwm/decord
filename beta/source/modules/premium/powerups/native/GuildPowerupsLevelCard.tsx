@@ -1,20 +1,20 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 13461
+// Function ID: 13462
 // Name: GuildPowerupsLevelCard
-// Dependencies: [19, 17, 8332, 1071, 13459, 21, 4913, 575, 5468, 9370, 13441, 13419, 5504, 1112, 2856, 13394, 13411, 13460, 13461, 13416, 2]
+// Dependencies: [19, 17, 8332, 1071, 13462, 21, 4913, 575, 5468, 9370, 13444, 13422, 5504, 1112, 2856, 13397, 13414, 13463, 13464, 13419, 2]
 // Exports: default
 
-// Module 13458 (GuildPowerupsLevelCard)
+// Module 13461 (GuildPowerupsLevelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import BoostGemIcon2 from "BoostGemIcon" /* 9370 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13394 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13411 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 13416 */;
-import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 13459 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13460 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13397 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 13414 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 13419 */;
+import GuildBoostingMarketingConstants from "GuildBoostingMarketingConstants" /* 13462 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 13463 */;
 import react from "react" /* 19 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8332 */;
 import Constants from "Constants" /* 1071 */;
@@ -41,7 +41,7 @@ let size;
 let size1;
 let tmp2;
 let unpackModuleId;
-const GuildPowerupsCardDefault = tmp2(13461);
+const GuildPowerupsCardDefault = tmp2(13464);
 function GuildLevelPowerupHeader(arg0) {
   let BoostGemIcon;
   let active;

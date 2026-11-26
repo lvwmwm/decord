@@ -1,10 +1,10 @@
-// Module ID: 13786
-// Function ID: 13787
+// Module ID: 13789
+// Function ID: 13790
 // Name: ConjureProjectsSheet
-// Dependencies: [32, 19, 21, 4913, 575, 13787, 1628, 9951, 5474, 6933, 7553, 7515, 1112, 4190, 7591, 11677, 5145, 7427, 7348, 7045, 13790, 12293, 13791, 2]
+// Dependencies: [32, 19, 21, 4913, 575, 13790, 1628, 9951, 5474, 6933, 7553, 7515, 1112, 4190, 7591, 11677, 5145, 7427, 7348, 7045, 13793, 12293, 13794, 2]
 // Exports: default
 
-// Module 13786 (ConjureProjectsSheet)
+// Module 13789 (ConjureProjectsSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
@@ -16,9 +16,9 @@ import ActionSheet2 from "ActionSheet" /* 7553 */;
 import useConjureEntryPointPlacementDefault from "useConjureEntryPointPlacement" /* 9951 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11677 */;
 import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 12293 */;
-import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 13787 */;
-import ConjureProjectIcon from "ConjureProjectIcon" /* 13790 */;
-import ConjureProjectGroupListDefault from "ConjureProjectGroupList" /* 13791 */;
+import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 13790 */;
+import ConjureProjectIcon from "ConjureProjectIcon" /* 13793 */;
+import ConjureProjectGroupListDefault from "ConjureProjectGroupList" /* 13794 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

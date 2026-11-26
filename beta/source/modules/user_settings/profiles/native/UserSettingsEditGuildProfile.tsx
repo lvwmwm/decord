@@ -1,14 +1,14 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 15971
+// Function ID: 15972
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8132, 1386, 21, 4913, 575, 7520, 7539, 504, 15968, 9427, 8073, 15970, 7045, 7322, 14205, 5127, 15972, 2119, 15973, 2]
+// Dependencies: [19, 17, 8132, 1386, 21, 4913, 575, 7520, 7539, 504, 15972, 9427, 8073, 15974, 7045, 7322, 14208, 5127, 15976, 2119, 15977, 2]
 // Exports: default
 
-// Module 15967 (UserSettingsEditGuildProfile)
+// Module 15971 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 575 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9427 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 14205 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 14208 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;
@@ -67,7 +67,7 @@ export default function UserSettingsEditGuildProfile(arg0) {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp7 = guild(15968)();
+  const tmp7 = guild(15972)();
   guild = tmp7.guild;
   ({ resetPending: c2, handleSubmit: c3 } = tmp7);
   let obj2 = stateFromStores(504);
@@ -129,12 +129,12 @@ export default function UserSettingsEditGuildProfile(arg0) {
       items3 = [showGuildSelector, ];
       const _HermesInternal = HermesInternal;
       const obj7 = { currentUser: stateFromStores, header };
-      const tmp2Result2 = tmp2(15973);
+      const tmp2Result2 = tmp2(15977);
       items3[1] = tmp11(tmp2Result2, obj7, "" + stateFromStores.id + "-" + guild.id);
       return tmp15(AnalyticsLocationProvider, obj6);
     }
   }
   const obj8 = { children: items4 };
-  items4 = [header, closure_7(tmp2(15970), {})];
+  items4 = [header, closure_7(tmp2(15974), {})];
   return closure_9(closure_8, obj8);
 };

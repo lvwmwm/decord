@@ -1,9 +1,9 @@
-// Module ID: 17949
-// Function ID: 17950
+// Module ID: 17953
+// Function ID: 17954
 // Name: YouBar
-// Dependencies: [5, 19, 17, 4937, 4946, 1386, 16486, 1071, 4759, 21, 4913, 575, 16477, 12830, 11772, 11780, 11959, 16485, 16489, 1653, 5514, 10041, 10046, 9951, 17950, 16021, 504, 8166, 17959, 5090, 5129, 1254, 12, 17960, 2119, 5089, 12114, 6835, 4746, 1112, 8194, 11775, 5173, 1706, 1186, 17974, 17975, 17976, 17981, 17983, 17985, 13310, 4974, 17986, 17987, 2]
+// Dependencies: [5, 19, 17, 4937, 4946, 1386, 16490, 1071, 4759, 21, 4913, 575, 16481, 12833, 11772, 11780, 11959, 16489, 16493, 1653, 5514, 10041, 10046, 9951, 17954, 16025, 504, 8166, 17963, 5090, 5129, 1254, 12, 17964, 2119, 5089, 12114, 6835, 4746, 1112, 8194, 11775, 5173, 1706, 1186, 17978, 17979, 17980, 17985, 17987, 17989, 13313, 4974, 17990, 17991, 2]
 
-// Module 17949 (YouBar)
+// Module 17953 (YouBar)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,15 +18,15 @@ import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
 import transitionToGuild from "transitionToGuild" /* 6835 */;
 import openUserSettings from "openUserSettings" /* 8194 */;
 import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 12114 */;
-import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 17986 */;
-import ConnectionBannerDefault from "ConnectionBanner" /* 17987 */;
+import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 17990 */;
+import ConnectionBannerDefault from "ConnectionBanner" /* 17991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
 import UserStore from "UserStore" /* 1386 */;
-import YouBarConstants from "YouBarConstants" /* 16486 */;
+import YouBarConstants from "YouBarConstants" /* 16490 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

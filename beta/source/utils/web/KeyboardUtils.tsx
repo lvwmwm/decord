@@ -1,13 +1,13 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15371
+// Function ID: 15372
 // Name: KeyboardUtils
-// Dependencies: [32, 8297, 1378, 12, 15368, 15369, 15370, 1254, 2]
+// Dependencies: [32, 8297, 1378, 12, 15372, 15373, 15374, 1254, 2]
 // Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toKeyNames, toString
 
-// Module 15367 (KeyboardUtils)
+// Module 15371 (KeyboardUtils)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import keyCodeDefault from "keyCode" /* 15368 */;
-import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 15369 */;
+import keyCodeDefault from "keyCode" /* 15372 */;
+import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 15373 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import KeyboardConstants from "KeyboardConstants" /* 8297 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
@@ -43,7 +43,7 @@ function _codeToKey(items1) {
   }
   return tmp14;
 }
-const f107785 = (item) => {
+const f107796 = (item) => {
   let combined;
   let items1;
   let tmp;
@@ -353,7 +353,7 @@ function codeToKey(items1) {
   }
 }
 function toKeyNames(arr) {
-  const mapped = arr.map(f107785);
+  const mapped = arr.map(f107796);
   return mapped.filter(GlobalUtils.isNotNullish);
 }
 const frozen2 = Object.freeze(invertResult2);
@@ -478,7 +478,7 @@ export function toCombo(shortcut) {
   }
   let str = shortcut.replace(/numpad plus/i, "");
   const str2 = str.replace(/NUMPAD \+/i, "numpad plus");
-  const str3 = str2.replace(/mod/i, KEYBOARD_KEY(15370).modKey);
+  const str3 = str2.replace(/mod/i, KEYBOARD_KEY(15374).modKey);
   const parts = str3.split("+");
   const mapped = parts.map((item) => {
     const str = item.trim();
@@ -518,7 +518,7 @@ export function toString(arr) {
   if (arg1 === undefined) {
     flag = false;
   }
-  const mapped = arr.map(f107785);
+  const mapped = arr.map(f107796);
   const found = mapped.filter(GlobalUtils.isNotNullish);
   if (flag) {
     const tmp2 = global;

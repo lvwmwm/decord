@@ -1,14 +1,18 @@
 // Module ID: 15601
 // Function ID: 15602
-// Dependencies: [15549, 15550]
+// Dependencies: [15599]
 
 // Module 15601
-import _mod15549 from "module_15549" /* 15549 */;
-import _mod15550 from "module_15550" /* 15550 */;
+import _mod15599 from "module_15599" /* 15599 */;
 
-const f65830 = () => 42 !== Object.defineProperty(() => {
 
-}, "prototype", { value: 42, writable: false }).prototype;
-_mod15549 && _mod15550(f65830);
-
-export default _mod15549 && _mod15550(f65830);
+export default (arg0, arg1) => {
+  let tmp3;
+  const tmp = _mod15599(arg0);
+  if (tmp < 0) {
+    tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
+  }
+  return tmp3;
+};

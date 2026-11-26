@@ -1,10 +1,10 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 12906
+// Function ID: 12907
 // Name: useKeyboardStateSharedValue
 // Dependencies: [1496, 1653, 5489, 2021, 5100, 11759, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 12903 (useKeyboardStateSharedValue)
+// Module 12906 (useKeyboardStateSharedValue)
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11759 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1496 */;
 import module_1653 from "module_1653" /* 1653 */;

@@ -1,14 +1,14 @@
-// Module ID: 17368
-// Function ID: 17369
+// Module ID: 17372
+// Function ID: 17373
 // Name: DataAndPrivacySetting
-// Dependencies: [19, 1071, 16165, 16168, 11942, 1112, 13820, 17369, 2]
+// Dependencies: [19, 1071, 16169, 16172, 11942, 1112, 13823, 17373, 2]
 
-// Module 17368 (DataAndPrivacySetting)
+// Module 17372 (DataAndPrivacySetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 13820 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16165 */;
-import RequestYourDataSetting from "RequestYourDataSetting" /* 16168 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 13823 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 16169 */;
+import RequestYourDataSetting from "RequestYourDataSetting" /* 16172 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;

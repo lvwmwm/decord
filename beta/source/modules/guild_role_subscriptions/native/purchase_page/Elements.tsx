@@ -1,10 +1,10 @@
-// Module ID: 18199
-// Function ID: 18200
+// Module ID: 18203
+// Function ID: 18204
 // Name: Elements
-// Dependencies: [32, 19, 17, 2177, 1071, 21, 4913, 575, 5504, 1112, 7030, 1186, 18200, 9247, 16638, 563, 9495, 6856, 2]
+// Dependencies: [32, 19, 17, 2177, 1071, 21, 4913, 575, 5504, 1112, 7030, 1186, 18204, 9247, 16642, 563, 9495, 6856, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 18199 (Elements)
+// Module 18203 (Elements)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5504 */;
 import Pressables from "Pressables" /* 7030 */;
 import NativePaymentHooksDefault from "NativePaymentHooks" /* 9247 */;
 import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 9495 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16638 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18200 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16642 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

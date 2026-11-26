@@ -1,30 +1,30 @@
-// Module ID: 13284
-// Function ID: 13285
+// Module ID: 13287
+// Function ID: 13288
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 502, 13282, 13283, 1071, 6496, 7802, 1255, 1241, 10870, 13285, 13291, 13292, 504, 2]
+// Dependencies: [32, 5, 19, 17, 502, 13285, 13286, 1071, 6496, 7802, 1255, 1241, 10870, 13288, 13294, 13295, 504, 2]
 // Exports: enableProvisionalPushNotification, requestAndroidNotificationPermission, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 13284 (NotificationPermissionUtil)
+// Module 13287 (NotificationPermissionUtil)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
 import react_nativeDefault from "react-native" /* 7802 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13283 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13285 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 13292 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13286 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13288 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 13295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13282 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13285 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c4, closure_3, closure_4;
 
 let metroImportDefault;
 let metroRequire;
-const f103823 = () => state.authorizationStatus;
+const f103834 = () => state.authorizationStatus;
 let obj = function _requestAndroidNotificationPermission() {
   let Version;
   let token;
@@ -388,7 +388,7 @@ export function useCanSeePushNotificationNudge() {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f103823);
+  const stateFromStores = obj2.useStateFromStores(items, f103834);
   [tmp4, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {
@@ -423,7 +423,7 @@ export function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f103823);
+  const stateFromStores = obj2.useStateFromStores(items, f103834);
   [tmp7, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {

@@ -1,10 +1,10 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 12988
+// Function ID: 12989
 // Name: AppLauncherGlobalSearchOnboardingBanner
 // Dependencies: [19, 17, 1499, 4759, 21, 4913, 575, 7704, 9089, 1112, 2]
 // Exports: default
 
-// Module 12985 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 12988 (AppLauncherGlobalSearchOnboardingBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

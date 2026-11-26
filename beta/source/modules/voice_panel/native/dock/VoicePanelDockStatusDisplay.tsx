@@ -1,9 +1,9 @@
-// Module ID: 18018
-// Function ID: 18019
+// Module ID: 18022
+// Function ID: 18023
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 6627, 4762, 5561, 18019, 11773, 21, 5504, 4913, 1653, 1112, 3376, 5123, 5514, 18020, 4974, 1706, 11754, 504, 2]
+// Dependencies: [32, 19, 17, 6627, 4762, 5561, 18023, 11773, 21, 5504, 4913, 1653, 1112, 3376, 5123, 5514, 18024, 4974, 1706, 11754, 504, 2]
 
-// Module 18018 (VoicePanelDockStatusDisplay)
+// Module 18022 (VoicePanelDockStatusDisplay)
 import _mod1653 from "module_1653" /* 1653 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import Text_Text from "Text/Text" /* 5504 */;
@@ -14,7 +14,7 @@ import react_native from "react-native" /* 17 */;
 import CallStore from "CallStore" /* 6627 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import VoiceStateStore from "VoiceStateStore" /* 5561 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18019 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18023 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11773 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -627,7 +627,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let tmp12;
   let tmp17;
   let userId;
-  const f113494 = () => {
+  const f113505 = () => {
     let items;
     if ("channel" === obj5.kind) {
       items = [];
@@ -706,8 +706,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp13 = first(obj.useState(() => ({ status: obj5, enter: null })), 2);
   first = tmp13[0];
-  [arr7, tmp17] = first(obj.useState(f113494), 2);
-  first(obj.useState(f113494), 2);
+  [arr7, tmp17] = first(obj.useState(f113505), 2);
+  first(obj.useState(f113505), 2);
   const tmp18 = first(obj.useState(() => {
     map = new Map();
     return map;

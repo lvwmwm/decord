@@ -1,27 +1,27 @@
-// Module ID: 13628
-// Function ID: 13629
+// Module ID: 13631
+// Function ID: 13632
 // Name: HeartIllocon
-// Dependencies: [19, 21, 13629, 13630, 13631, 7357, 5600, 2]
+// Dependencies: [19, 21, 13632, 13633, 13634, 7357, 5600, 2]
 // Exports: HeartIllocon
 
-// Module 13628 (HeartIllocon)
+// Module 13631 (HeartIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef13629 from "module_13629" /* 13629 */;
-import _modDef13630 from "module_13630" /* 13630 */;
-import _modDef13631 from "module_13631" /* 13631 */;
+import _modDef13632 from "module_13632" /* 13632 */;
+import _modDef13633 from "module_13633" /* 13633 */;
+import _modDef13634 from "module_13634" /* 13634 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13629 };
+let obj2 = { uri: _modDef13632 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13630 };
-({ uri: _modDef13630 });
-obj[3] = { uri: _modDef13631 };
-({ uri: _modDef13631 });
+obj[2] = { uri: _modDef13633 };
+({ uri: _modDef13633 });
+obj[3] = { uri: _modDef13634 };
+({ uri: _modDef13634 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HeartIllocon.native.tsx");
 

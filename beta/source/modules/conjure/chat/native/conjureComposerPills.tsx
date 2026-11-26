@@ -1,19 +1,19 @@
-// Module ID: 18631
-// Function ID: 18632
+// Module ID: 18635
+// Function ID: 18636
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1386, 18326, 11154, 4969, 18481, 1112, 4190, 12862, 2]
+// Dependencies: [32, 17, 1386, 18330, 11154, 4969, 18485, 1112, 4190, 12865, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
-// Module 18631 (conjureComposerPills)
+// Module 18635 (conjureComposerPills)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import UserUtils from "UserUtils" /* 4969 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11154 */;
-import ChatInputParser from "ChatInputParser" /* 12862 */;
+import ChatInputParser from "ChatInputParser" /* 12865 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 18326 */;
+import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 18330 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -67,7 +67,7 @@ export function conjureUserPillLabel(id) {
 export function decodeConjurePills(draft) {
   map = new Map();
   let obj = {
-    text: draft.replace(map(18481).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
+    text: draft.replace(map(18485).CONJURE_ANY_MENTION, (raw, arg1, arg2) => {
       let combined;
       let uri;
       if (null != arg1) {

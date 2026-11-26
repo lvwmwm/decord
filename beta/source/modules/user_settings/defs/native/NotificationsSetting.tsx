@@ -1,13 +1,13 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 16900
+// Function ID: 16901
 // Name: NotificationsSetting
-// Dependencies: [1071, 11942, 1112, 11244, 15668, 16897, 2]
+// Dependencies: [1071, 11942, 1112, 11244, 15672, 16901, 2]
 
-// Module 16896 (NotificationsSetting)
+// Module 16900 (NotificationsSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import BellIcon from "BellIcon" /* 11244 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15668 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15672 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

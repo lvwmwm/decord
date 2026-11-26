@@ -1,10 +1,10 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 16760
+// Function ID: 16761
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 1395, 21, 4913, 575, 8149, 16751, 5129, 5127, 5141, 16754, 1112, 3248, 5511, 5929, 9460, 9454, 9455, 2]
+// Dependencies: [32, 19, 17, 1395, 21, 4913, 575, 8149, 16755, 5129, 5127, 5141, 16758, 1112, 3248, 5511, 5929, 9460, 9454, 9455, 2]
 // Exports: default
 
-// Module 16756 (DisplayNameStylesEffectPickerSheet)
+// Module 16760 (DisplayNameStylesEffectPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
@@ -115,7 +115,7 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let tmp3 = dependencyMap;
   let obj = userId(8149);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(16751);
+  let obj2 = userId(16755);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(closure_7);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -130,7 +130,7 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
     const obj3 = { ref: bottomSheetRef, header: closure_8(tmp12, obj4), children: closure_8(closure_5, obj6) };
     const BottomSheet = tmp2(5141).BottomSheet;
     obj4 = { title: intl.string(onSelectEffect(3248).RVtMxT), trailing: closure_8(Button, obj5) };
-    tmp12 = onSelectEffect(16754);
+    tmp12 = onSelectEffect(16758);
     intl = tmp2(1112).intl;
     obj5 = { text: intl2.string(userId(1112).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
     Button = tmp2(5511).Button;

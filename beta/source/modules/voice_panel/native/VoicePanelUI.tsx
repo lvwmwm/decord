@@ -1,9 +1,9 @@
-// Module ID: 19250
-// Function ID: 19251
+// Module ID: 19254
+// Function ID: 19255
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 6620, 10020, 6495, 11755, 11753, 5563, 11756, 21, 3, 5514, 4913, 575, 1653, 1625, 11754, 1628, 5173, 10661, 1706, 11759, 19251, 19252, 5129, 11780, 19175, 5477, 11760, 10856, 12904, 11764, 19236, 10093, 5765, 19253, 6366, 19255, 19256, 7520, 7539, 1262, 19257, 5491, 19258, 19280, 19314, 19318, 19321, 19322, 10628, 19323, 19325, 19335, 19343, 2]
+// Dependencies: [32, 19, 17, 6620, 10020, 6495, 11755, 11753, 5563, 11756, 21, 3, 5514, 4913, 575, 1653, 1625, 11754, 1628, 5173, 10661, 1706, 11759, 19255, 19256, 5129, 11780, 19179, 5477, 11760, 10856, 12907, 11764, 19240, 10093, 5765, 19257, 6366, 19259, 19260, 7520, 7539, 1262, 19261, 5491, 19262, 19284, 19318, 19322, 19325, 19326, 10628, 19327, 19329, 19339, 19347, 2]
 
-// Module 19250 (VoicePanelUI)
+// Module 19254 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
@@ -16,7 +16,7 @@ import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 108
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11753 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11756 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12904 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12907 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -73,20 +73,20 @@ const cheapWorkletShallowEqual = tmp3(10661);
 const updateSharedValueIfChangedDefault = tmp(11759);
 const calculateVoicePanelHeaderSpecsDefault = tmp2(11760);
 const VoicePanelPIPStateContext = tmp3(11764);
-const PanelSizeUtils = tmp3(19236);
-const useControlsLockDefault = tmp2(19251);
-const VoicePanelDockSheet = tmp3(19253);
-const VoicePanelDockSheetLayersDefault = tmp(19255);
-const voicePanelLayoutTransitionDefault = tmp(19256);
-const useControlsHoverGestureDefault = tmp2(19257);
-const VoicePanelHeaderDefault = tmp2(19258);
-const VoicePanelCardViewDefault = tmp2(19280);
-const VoicePanelPreJoinContentDefault = tmp2(19314);
-const VoicePanelVoiceChannelAppDefault = tmp2(19318);
-const VoicePanelSystemUIManagerDefault = tmp2(19321);
-const VoicePanelAccessibilityViewDefault = tmp2(19322);
-const VoicePanelDismissableContentDefault = tmp2(19323);
-const VoicePanelControlsDefault = tmp2(19343);
+const PanelSizeUtils = tmp3(19240);
+const useControlsLockDefault = tmp2(19255);
+const VoicePanelDockSheet = tmp3(19257);
+const VoicePanelDockSheetLayersDefault = tmp(19259);
+const voicePanelLayoutTransitionDefault = tmp(19260);
+const useControlsHoverGestureDefault = tmp2(19261);
+const VoicePanelHeaderDefault = tmp2(19262);
+const VoicePanelCardViewDefault = tmp2(19284);
+const VoicePanelPreJoinContentDefault = tmp2(19318);
+const VoicePanelVoiceChannelAppDefault = tmp2(19322);
+const VoicePanelSystemUIManagerDefault = tmp2(19325);
+const VoicePanelAccessibilityViewDefault = tmp2(19326);
+const VoicePanelDismissableContentDefault = tmp2(19327);
+const VoicePanelControlsDefault = tmp2(19347);
 function NOOP() {
 
 }
@@ -2343,11 +2343,11 @@ const memoResult = react.memo(function VoicePanelUI() {
     const tmp119 = AnimatedWrapper;
     if (isDockEnabled) {
       const obj22 = { children: tmp113 };
-      tmp111Result = tmp111(tmp14(19253).VoicePanelContentWithDock, obj22);
+      tmp111Result = tmp111(tmp14(19257).VoicePanelContentWithDock, obj22);
     }
     items37[1] = tmp111(tmp119, obj21);
     obj23 = { children: items36 };
-    items37[2] = tmp111(tmp2(isDockEnabled ? 19325 : 19335), {});
+    items37[2] = tmp111(tmp2(isDockEnabled ? 19329 : 19339), {});
     const obj24 = { gestureState: sharedValue4 };
     items37[3] = tmp111(VoicePanelControlsDefault, obj24);
     items36[2] = tmp111(GestureDetector3, obj19);

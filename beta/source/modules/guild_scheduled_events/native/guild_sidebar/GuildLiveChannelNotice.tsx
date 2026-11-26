@@ -1,10 +1,10 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 17716
+// Function ID: 17717
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 6534, 4767, 6400, 4845, 5657, 4768, 1082, 21, 575, 1186, 5637, 11146, 8802, 5643, 1378, 5517, 4913, 5504, 13422, 11135, 6419, 2018, 6494, 7280, 5122, 8571, 5511, 4920, 5529, 504, 1112, 7636, 8048, 7578, 7617, 7568, 6543, 6537, 6533, 8017, 7620, 17711, 13846, 7047, 2]
+// Dependencies: [19, 17, 6534, 4767, 6400, 4845, 5657, 4768, 1082, 21, 575, 1186, 5637, 11146, 8802, 5643, 1378, 5517, 4913, 5504, 13425, 11135, 6419, 2018, 6494, 7280, 5122, 8571, 5511, 4920, 5529, 504, 1112, 7636, 8048, 7578, 7617, 7568, 6543, 6537, 6533, 8017, 7620, 17715, 13849, 7047, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 17712 (GuildLiveChannelNotice)
+// Module 17716 (GuildLiveChannelNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -22,7 +22,7 @@ import LocationIcon from "LocationIcon" /* 7617 */;
 import CalendarIcon from "CalendarIcon" /* 8048 */;
 import MarkupRulesUtils from "MarkupRulesUtils" /* 8802 */;
 import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11146 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13846 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13849 */;
 import react from "react" /* 19 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6534 */;
 import StageInstanceStore from "StageInstanceStore" /* 4767 */;
@@ -123,7 +123,7 @@ function UserSummaryRow(arg0) {
       items2 = [, ];
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       let obj4 = { size: "custom", style: obj5.makeSizeStyle(14) };
-      const HeadphonesIcon = max(13422).HeadphonesIcon;
+      const HeadphonesIcon = max(13425).HeadphonesIcon;
       obj5 = max(11135);
       items3 = [tmp8(HeadphonesIcon, obj4), ];
       let obj6 = { variant: "body-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
@@ -448,7 +448,7 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
   const style = guild.style;
   const tmp2 = activeEventOrStageInstanceChannel;
   const tmp = closure_29();
-  let obj = activeEventOrStageInstanceChannel(17711);
+  let obj = activeEventOrStageInstanceChannel(17715);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj2 = activeEventOrStageInstanceChannel(8017);
   const guildActiveEvent = obj2.useGuildActiveEvent(guild.id);

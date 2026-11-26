@@ -1,9 +1,9 @@
-// Module ID: 13343
-// Function ID: 13344
+// Module ID: 13346
+// Function ID: 13347
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4846, 4762, 12828, 1071, 21, 504, 1098, 5650, 11731, 13195, 1195, 6834, 6511, 6516, 13336, 1112, 2]
+// Dependencies: [19, 4846, 4762, 12831, 1071, 21, 504, 1098, 5650, 11731, 13198, 1195, 6834, 6511, 6516, 13339, 1112, 2]
 
-// Module 13343 (ChatInputGuardLurking)
+// Module 13346 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
@@ -11,8 +11,8 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
 import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6516 */;
 import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6834 */;
 import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11731 */;
-import ChatInputConstants from "ChatInputConstants" /* 12828 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 13195 */;
+import ChatInputConstants from "ChatInputConstants" /* 12831 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 13198 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4846 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(13336);
+    guildId(13339);
     const intl9 = tmp2(1112).intl;
     const intl10 = tmp2(1112).intl;
     const intl11 = tmp2(1112).intl;
@@ -107,7 +107,7 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(13336);
+    const tmp17 = guildId(13339);
     if (null != channel.pendingGameProfileReturn) {
       let obj3 = { type: "button-action", message: intl6.string(tmp2(1112).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1112).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1112).t.RLch70), buttonPrimaryOnPress: callback2 };
       intl6 = tmp2(1112).intl;

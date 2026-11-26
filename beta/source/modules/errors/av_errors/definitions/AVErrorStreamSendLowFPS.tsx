@@ -1,16 +1,16 @@
-// Module ID: 20123
-// Function ID: 20124
+// Module ID: 20127
+// Function ID: 20128
 // Name: AVErrorStreamSendLowFPS
-// Dependencies: [6620, 6400, 6396, 1071, 1088, 6401, 20120, 5836, 5843, 20117, 2]
+// Dependencies: [6620, 6400, 6396, 1071, 1088, 6401, 20124, 5836, 5843, 20121, 2]
 
-// Module 20123 (AVErrorStreamSendLowFPS)
+// Module 20127 (AVErrorStreamSendLowFPS)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import StreamQualityUtils from "StreamQualityUtils" /* 5836 */;
 import AVError from "AVError" /* 5843 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
-import AVErrorContext from "AVErrorContext" /* 20117 */;
-import AVErrorUtils from "AVErrorUtils" /* 20120 */;
+import AVErrorContext from "AVErrorContext" /* 20121 */;
+import AVErrorUtils from "AVErrorUtils" /* 20124 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6396 */;

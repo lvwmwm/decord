@@ -1,10 +1,10 @@
-// Module ID: 14467
-// Function ID: 14468
+// Module ID: 14470
+// Function ID: 14471
 // Name: isOnPlayStation
 // Dependencies: [7074, 2]
 // Exports: default
 
-// Module 14467 (isOnPlayStation)
+// Module 14470 (isOnPlayStation)
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7074 */;
 import size from "module_2" /* 2 */;
 

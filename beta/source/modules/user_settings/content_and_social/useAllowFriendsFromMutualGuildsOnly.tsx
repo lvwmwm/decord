@@ -1,10 +1,10 @@
-// Module ID: 17382
-// Function ID: 17383
+// Module ID: 17386
+// Function ID: 17387
 // Name: useAllowFriendsFromMutualGuildsOnly
 // Dependencies: [19, 4738, 7415, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 17382 (useAllowFriendsFromMutualGuildsOnly)
+// Module 17386 (useAllowFriendsFromMutualGuildsOnly)
 import UserSettingsUtils from "UserSettingsUtils" /* 7415 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

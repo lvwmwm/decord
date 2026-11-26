@@ -1,10 +1,10 @@
-// Module ID: 18420
-// Function ID: 18421
+// Module ID: 18424
+// Function ID: 18425
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1499, 21, 1653, 12111, 10681, 12112, 5141, 12952, 13071, 5472, 2]
+// Dependencies: [32, 19, 1499, 21, 1653, 12111, 10681, 12112, 5141, 12955, 13074, 5472, 2]
 // Exports: useAppLauncherActionSheet
 
-// Module 18420 (AppLauncherActionSheet)
+// Module 18424 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import _mod1653 from "module_1653" /* 1653 */;
@@ -13,8 +13,8 @@ import reactDefault from "react" /* 5472 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10681 */;
 import AppLauncherContext from "AppLauncherContext" /* 12111 */;
 import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12112 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12952 */;
-import getAppDMApplication from "getAppDMApplication" /* 13071 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12955 */;
+import getAppDMApplication from "getAppDMApplication" /* 13074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

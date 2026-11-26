@@ -1,9 +1,9 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16601
+// Function ID: 16602
 // Name: QuestBarStartQuestOnClickExperiment
 // Dependencies: [1450, 2]
 
-// Module 16597 (QuestBarStartQuestOnClickExperiment)
+// Module 16601 (QuestBarStartQuestOnClickExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 19633
-// Function ID: 19634
+// Module ID: 19637
+// Function ID: 19638
 // Name: NotifSettingsProtoManager
-// Dependencies: [14946, 15664, 17435, 14960, 17443, 15669, 572, 7484, 1450, 2]
+// Dependencies: [14949, 15668, 17439, 14963, 17447, 15673, 572, 7484, 1450, 2]
 
-// Module 19633 (NotifSettingsProtoManager)
+// Module 19637 (NotifSettingsProtoManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApexExperiment from "ApexExperiment" /* 1450 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14960 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15664 */;
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 15669 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17435 */;
-import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 17443 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14946 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14963 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15668 */;
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 15673 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17439 */;
+import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 17447 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14949 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 
-const f118254 = () => {
+const f118265 = () => {
   c3 = undefined;
   const obj = closure_1_0(closure_1_2[2]);
   const effectiveNotifSettings = obj.fetchEffectiveNotifSettings();
@@ -37,7 +37,7 @@ function handleRemoteSettingsUpdate() {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
         const _setTimeout = setTimeout;
-        timeout = setTimeout(f118254, 250);
+        timeout = setTimeout(f118265, 250);
       }
     }
   }
@@ -55,7 +55,7 @@ function handleConnectionRestored() {
     const _clearTimeout = clearTimeout;
     clearTimeout(timeout);
     const _setTimeout = setTimeout;
-    timeout = setTimeout(f118254, 250);
+    timeout = setTimeout(f118265, 250);
   }
 }
 function handleAppStateUpdate(state) {
@@ -67,14 +67,14 @@ function handleAppStateUpdate(state) {
   }
 }
 function handleAssignmentChange() {
-  const f118256 = (item) => null != item;
+  const f118267 = (item) => null != item;
   let obj = DeclarativeNotificationSettingsRedesignExperiment;
   const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("effectiveNotifSettingsAssignment");
   require = result;
   const mapped = NOTIF_SETTINGS.map((experiment) => experiment.experiment);
-  let items = [...new Set(mapped.filter(f118256))];
+  let items = [...new Set(mapped.filter(f118267))];
   const items1 = [result];
-  new Set(mapped.filter(f118256));
+  new Set(mapped.filter(f118267));
   const sorted = items.sort();
   HermesBuiltin.arraySpread(items1, sorted.map((item) => {
     const items = [item, ];
@@ -113,7 +113,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
             const _clearTimeout = clearTimeout;
             clearTimeout(timeout);
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f118254, 250);
+            timeout = setTimeout(f118265, 250);
           }
         }
       },
@@ -132,7 +132,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
             const _clearTimeout = clearTimeout;
             clearTimeout(timeout);
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f118254, 250);
+            timeout = setTimeout(f118265, 250);
           }
         }
       },
@@ -154,7 +154,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
               const _clearTimeout = clearTimeout;
               clearTimeout(timeout);
               const _setTimeout = setTimeout;
-              timeout = setTimeout(f118254, 250);
+              timeout = setTimeout(f118265, 250);
             }
           }
         }

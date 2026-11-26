@@ -1,10 +1,10 @@
-// Module ID: 12968
-// Function ID: 12969
+// Module ID: 12971
+// Function ID: 12972
 // Name: useBottomSheetFlashListBottomViewabilityInset
 // Dependencies: [19, 1494, 12111, 11778, 12, 1653, 1706, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 12968 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 12971 (useBottomSheetFlashListBottomViewabilityInset)
 import _modDef12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

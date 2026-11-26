@@ -1,11 +1,11 @@
-// Module ID: 18272
-// Function ID: 18273
+// Module ID: 18276
+// Function ID: 18277
 // Name: useConjurePublishRemix
-// Dependencies: [32, 19, 18273, 2]
+// Dependencies: [32, 19, 18277, 2]
 // Exports: default
 
-// Module 18272 (useConjurePublishRemix)
-import useConjureSharingModeDefault from "useConjureSharingMode" /* 18273 */;
+// Module 18276 (useConjurePublishRemix)
+import useConjureSharingModeDefault from "useConjureSharingMode" /* 18277 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

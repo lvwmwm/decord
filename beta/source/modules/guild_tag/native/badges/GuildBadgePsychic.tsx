@@ -1,12 +1,12 @@
-// Module ID: 15157
-// Function ID: 15158
+// Module ID: 15160
+// Function ID: 15161
 // Name: GuildBadgePsychic
-// Dependencies: [19, 21, 15141, 7865, 2]
+// Dependencies: [19, 21, 15144, 7865, 2]
 // Exports: GuildBadgePsychic
 
-// Module 15157 (GuildBadgePsychic)
+// Module 15160 (GuildBadgePsychic)
 import inlineStyles from "inlineStyles" /* 7865 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15141 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15144 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

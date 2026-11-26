@@ -1,16 +1,16 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 15829
+// Function ID: 15830
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 11899, 21, 4913, 504, 12223, 5511, 1112, 4974, 1241, 572, 1186, 14652, 5504, 2]
+// Dependencies: [5, 32, 19, 17, 11899, 21, 4913, 504, 12223, 5511, 1112, 4974, 1241, 572, 1186, 14655, 5504, 2]
 
-// Module 15825 (components_native/ErrorBoundary)
+// Module 15829 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import native2 from "native" /* 4974 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import AppCrash from "AppCrash" /* 14652 */;
+import AppCrash from "AppCrash" /* 14655 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

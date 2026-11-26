@@ -1,10 +1,10 @@
-// Module ID: 12782
-// Function ID: 12783
+// Module ID: 12783
+// Function ID: 12784
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 4914, 12495, 5969, 21, 575, 4913, 1358, 12730, 504, 12513, 5993, 7597, 12783, 12514, 1112, 3440, 1494, 1412, 7977, 3408, 7322, 5504, 6339, 10274, 12758, 4859, 7496, 5600, 12752, 12724, 2]
+// Dependencies: [19, 17, 4914, 12495, 5969, 21, 575, 4913, 1358, 12730, 504, 12720, 5993, 7597, 12784, 12722, 1112, 3440, 1494, 1412, 7977, 3408, 7322, 5504, 6339, 10274, 12759, 4859, 7496, 5600, 12753, 12721, 2]
 // Exports: default
 
-// Module 12782 (CheckpointSummaryStatsScreen)
+// Module 12783 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,13 +18,13 @@ import GuildIcon from "GuildIcon" /* 7322 */;
 import EmojiDefault from "Emoji" /* 7496 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7597 */;
 import FlagIcon from "FlagIcon" /* 10274 */;
-import CheckpointScreen from "CheckpointScreen" /* 12513 */;
-import CheckpointTextDefault from "CheckpointText" /* 12514 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12724 */;
+import CheckpointScreen from "CheckpointScreen" /* 12720 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12721 */;
+import CheckpointTextDefault from "CheckpointText" /* 12722 */;
 import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12730 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12752 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12758 */;
-import CheckpointRecapCard from "CheckpointRecapCard" /* 12783 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12753 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12759 */;
+import CheckpointRecapCard from "CheckpointRecapCard" /* 12784 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import CheckpointStore from "CheckpointStore" /* 12495 */;
@@ -202,14 +202,14 @@ function UserSummaryStats(stats) {
     let num2 = 240;
     const _Math = Math;
     if (1 < num) {
-      num2 = tmp5(12783).CARD_HEIGHT * num;
+      num2 = tmp5(12784).CARD_HEIGHT * num;
     }
     minResult = min(num2, checkpointScreenContentHeight);
   }
   if (null != diff) {
     const _Math2 = Math;
     const _Math3 = Math;
-    map1 = PX_24 + Math.min(Math.max(diff - tmp5(12783).CARD_HEIGHT * num, 0), PX_48 - PX_24);
+    map1 = PX_24 + Math.min(Math.max(diff - tmp5(12784).CARD_HEIGHT * num, 0), PX_48 - PX_24);
   } else {
     map1 = PX_24;
   }
@@ -305,9 +305,9 @@ function UserSummaryStats(stats) {
     let tmp39 = tmp4;
     if (tmp39) {
       let CARD_HEIGHT = minResult;
-      const CARD_WIDTH = tmp5(12783).CARD_WIDTH;
+      const CARD_WIDTH = tmp5(12784).CARD_WIDTH;
       if (minResult == null) {
-        CARD_HEIGHT = tmp5(12783).CARD_HEIGHT;
+        CARD_HEIGHT = tmp5(12784).CARD_HEIGHT;
       }
       const obj12 = { width: result / CheckpointRecapCard.CARD_HEIGHT };
       result = CARD_WIDTH * CARD_HEIGHT;

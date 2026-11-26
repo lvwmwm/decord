@@ -1,9 +1,9 @@
-// Module ID: 15698
-// Function ID: 15699
+// Module ID: 15702
+// Function ID: 15703
 // Name: ActivityShelfStore
 // Dependencies: [504, 572, 2]
 
-// Module 15698 (ActivityShelfStore)
+// Module 15702 (ActivityShelfStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

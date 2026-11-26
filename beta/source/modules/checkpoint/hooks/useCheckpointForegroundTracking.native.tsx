@@ -1,10 +1,10 @@
-// Module ID: 12509
-// Function ID: 12510
+// Module ID: 12521
+// Function ID: 12522
 // Name: useCheckpointForegroundTracking
 // Dependencies: [19, 2118, 1071, 504, 12494, 2]
 // Exports: default
 
-// Module 12509 (useCheckpointForegroundTracking)
+// Module 12521 (useCheckpointForegroundTracking)
 import Constants from "Constants" /* 1071 */;
 import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 12494 */;
 import react from "react" /* 19 */;

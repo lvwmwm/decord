@@ -1,10 +1,10 @@
-// Module ID: 12777
-// Function ID: 12778
+// Module ID: 12778
+// Function ID: 12779
 // Name: SidekickMessageInput
-// Dependencies: [5, 17, 5969, 21, 575, 4913, 1494, 5093, 12778, 12503, 5594, 1112, 1186, 12493, 9465, 7539, 12471, 5611, 2]
+// Dependencies: [5, 17, 5969, 21, 575, 4913, 1494, 5093, 12779, 12503, 5594, 1112, 1186, 12493, 9465, 7539, 12471, 5611, 2]
 // Exports: default, useSidekickMessageInputKeyboardOffset
 
-// Module 12777 (SidekickMessageInput)
+// Module 12778 (SidekickMessageInput)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5093 */;
@@ -72,7 +72,7 @@ export default function SidekickMessageInput(user) {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       let obj2;
-      const f140889 = (arg0) => {
+      const f140899 = (arg0) => {
         obj = { isSending: false };
         const merged = Object.assign(arg0);
         return obj;
@@ -120,7 +120,7 @@ export default function SidekickMessageInput(user) {
             }
           } else if (1 === c4) {
             c3 = 0;
-            closure_129_1(f140889);
+            closure_129_1(f140899);
             throw closure_2;
           } else {
             if (2 === c4) {
@@ -134,7 +134,7 @@ export default function SidekickMessageInput(user) {
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              closure_129_1(f140889);
+              closure_129_1(f140899);
               c5 = 3;
               obj = { value, done: true };
               return obj;
@@ -147,7 +147,7 @@ export default function SidekickMessageInput(user) {
               c3 = 1;
             }
             c3 = 0;
-            closure_129_1(f140889);
+            closure_129_1(f140899);
           }
           c5 = 3;
           return { value: "HermesInternal", done: null };

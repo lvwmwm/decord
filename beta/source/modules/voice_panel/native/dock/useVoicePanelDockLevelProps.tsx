@@ -1,13 +1,13 @@
-// Module ID: 13312
-// Function ID: 13313
+// Module ID: 13315
+// Function ID: 13316
 // Name: useVoicePanelDockLevelProps
-// Dependencies: [19, 4762, 2131, 4816, 6535, 13313, 1071, 12830, 504, 11014, 10990, 2]
+// Dependencies: [19, 4762, 2131, 4816, 6535, 13316, 1071, 12833, 504, 11014, 10990, 2]
 // Exports: useVoicePanelDockGlowLevelProps, useVoicePanelDockSpeakerLevelProps
 
-// Module 13312 (useVoicePanelDockLevelProps)
+// Module 13315 (useVoicePanelDockLevelProps)
 import Constants from "Constants" /* 1071 */;
 import MediaEngineStore2 from "MediaEngineStore" /* 2131 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13313 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13316 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
@@ -33,7 +33,7 @@ export function useVoicePanelDockGlowLevelProps() {
   let voiceChannelId;
   let obj = react;
   const context = react.useContext(closure_9);
-  const obj2 = num2(12830);
+  const obj2 = num2(12833);
   const shouldAnimateSpeakerLevels = obj2.useShouldAnimateSpeakerLevels("VoicePanelDock");
   const items = [SelectedChannelStore, ChannelStore];
   const obj3 = num2(504);

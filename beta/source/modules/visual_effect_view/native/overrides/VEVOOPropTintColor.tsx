@@ -1,15 +1,15 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17453
+// Function ID: 17454
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5482, 21, 4913, 575, 17446, 4910, 7709, 7557, 17448, 15848, 1089, 2]
+// Dependencies: [32, 19, 17, 5482, 21, 4913, 575, 17450, 4910, 7709, 7557, 17452, 15852, 1089, 2]
 
-// Module 17449 (VEVOOPropTintColor)
+// Module 17453 (VEVOOPropTintColor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import ColorUtils from "ColorUtils" /* 4910 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15848 */;
-import VEVOO from "VEVOO" /* 17446 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15852 */;
+import VEVOO from "VEVOO" /* 17450 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import VEVOOStore from "VEVOOStore" /* 5482 */;
@@ -131,7 +131,7 @@ const memoResult = react.memo(function VEVOOPropTintColor() {
   items = [tmp.tintColor, { backgroundColor }];
   const FormRow2 = tmp2(7709).FormRow;
   const items1 = [closure_8(FormRow2, obj5), ];
-  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(17448), obj9) };
+  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(17452), obj9) };
   str2 = undefined;
   const FormRow3 = tmp2(7709).FormRow;
   tmp14 = closure_10;

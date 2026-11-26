@@ -1,15 +1,15 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14580
+// Function ID: 14581
 // Name: LibraryApplicationStatisticsActionCreators
-// Dependencies: [5, 14576, 1071, 1088, 1284, 572, 2]
+// Dependencies: [5, 14579, 1071, 1088, 1284, 572, 2]
 // Exports: fetchActivityStatistics
 
-// Module 14577 (LibraryApplicationStatisticsActionCreators)
+// Module 14580 (LibraryApplicationStatisticsActionCreators)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LibraryApplicationStatisticsStore from "LibraryApplicationStatisticsStore" /* 14576 */;
+import LibraryApplicationStatisticsStore from "LibraryApplicationStatisticsStore" /* 14579 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, lastFetched;

@@ -1,13 +1,13 @@
-// Module ID: 18635
-// Function ID: 18636
+// Module ID: 18639
+// Function ID: 18640
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 6925, 6967, 21, 575, 4913, 18636, 1500, 1628, 18246, 1653, 18649, 18304, 18632, 18650, 18651, 18602, 6933, 1501, 18251, 1112, 4190, 6937, 5595, 18653, 7061, 5504, 18654, 18630, 18656, 2]
+// Dependencies: [5, 32, 19, 17, 6925, 6967, 21, 575, 4913, 18640, 1500, 1628, 18250, 1653, 18653, 18308, 18636, 18654, 18655, 18606, 6933, 1501, 18255, 1112, 4190, 6937, 5595, 18657, 7061, 5504, 18658, 18634, 18660, 2]
 // Exports: default
 
-// Module 18635 (ConjureHomeLanding)
+// Module 18639 (ConjureHomeLanding)
 import nativeDefault from "native" /* 575 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;
-import ConjureHomeCarousel from "ConjureHomeCarousel" /* 18636 */;
+import ConjureHomeCarousel from "ConjureHomeCarousel" /* 18640 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -180,12 +180,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f141991 = (role) => "user" === role.role;
+        const f142001 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = ref.getMessages(closure_0);
           const obj = ref;
-          if (messages.some(f141991)) {
+          if (messages.some(f142001)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -200,7 +200,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f141991)) {
+        if (messages.some(f142001)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);

@@ -1,10 +1,10 @@
-// Module ID: 18054
-// Function ID: 18055
+// Module ID: 18058
+// Function ID: 18059
 // Name: NotificationCenterActionButton
-// Dependencies: [19, 21, 7591, 7023, 5127, 18055, 2119, 1112, 2]
+// Dependencies: [19, 21, 7591, 7023, 5127, 18059, 2119, 1112, 2]
 // Exports: default
 
-// Module 18054 (NotificationCenterActionButton)
+// Module 18058 (NotificationCenterActionButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7023 */;

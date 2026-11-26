@@ -1,11 +1,11 @@
-// Module ID: 19508
-// Function ID: 19509
+// Module ID: 19512
+// Function ID: 19513
 // Name: FeedbackConfig
-// Dependencies: [5654, 10558, 8038, 19509, 2]
+// Dependencies: [5654, 10558, 8038, 19513, 2]
 
-// Module 19508 (FeedbackConfig)
+// Module 19512 (FeedbackConfig)
 import HotspotStore from "HotspotStore" /* 8038 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 19509 */;
+import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 19513 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import Constants from "Constants" /* 10558 */;
 import size from "module_2" /* 2 */;

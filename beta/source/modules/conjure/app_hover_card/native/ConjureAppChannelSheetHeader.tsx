@@ -1,10 +1,10 @@
-// Module ID: 13900
-// Function ID: 13901
+// Module ID: 13903
+// Function ID: 13904
 // Name: ConjureAppChannelSheetHeader
 // Dependencies: [19, 21, 4913, 5929, 575, 12287, 5504, 12290, 2]
 // Exports: default
 
-// Module 13900 (ConjureAppChannelSheetHeader)
+// Module 13903 (ConjureAppChannelSheetHeader)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;

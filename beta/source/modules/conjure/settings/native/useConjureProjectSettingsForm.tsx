@@ -1,17 +1,17 @@
-// Module ID: 18294
-// Function ID: 18295
+// Module ID: 18298
+// Function ID: 18299
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 4819, 1071, 21, 4913, 575, 504, 6622, 5127, 1112, 4190, 7553, 5504, 7515, 7623, 7427, 7348, 7335, 18295, 18270, 18284, 18286, 7045, 18300, 2119, 18300, 18301, 18302, 18313, 2]
+// Dependencies: [5, 32, 19, 17, 4819, 1071, 21, 4913, 575, 504, 6622, 5127, 1112, 4190, 7553, 5504, 7515, 7623, 7427, 7348, 7335, 18299, 18274, 18288, 18290, 7045, 18304, 2119, 18304, 18305, 18306, 18317, 2]
 // Exports: default
 
-// Module 18294 (useConjureProjectSettingsForm)
+// Module 18298 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
-import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18300 */;
+import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 18304 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -437,7 +437,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
               const obj = { options: sharingOptions, value, onChange };
-              const tmp2 = asyncRequire(18300, dependencyMap.paths);
+              const tmp2 = asyncRequire(18304, dependencyMap.paths);
               return openLazy(tmp2, ConjureSharingModeSheet.CONJURE_SHARING_MODE_SHEET_KEY, obj, "stack");
             }
       };

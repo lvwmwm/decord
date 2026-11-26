@@ -1,10 +1,10 @@
-// Module ID: 14322
-// Function ID: 14323
+// Module ID: 14325
+// Function ID: 14326
 // Name: getSocialLayerStorefrontSkuEmbedDetails
 // Dependencies: [17, 1112, 6847, 9605, 2]
 // Exports: getSocialLayerStorefrontSkuEmbedDetails
 
-// Module 14322 (getSocialLayerStorefrontSkuEmbedDetails)
+// Module 14325 (getSocialLayerStorefrontSkuEmbedDetails)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1112 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6847 */;

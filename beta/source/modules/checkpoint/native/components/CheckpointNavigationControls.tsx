@@ -1,7 +1,7 @@
 // Module ID: 12731
 // Function ID: 12732
 // Name: CheckpointNavigationControls
-// Dependencies: [5, 17, 12495, 5969, 10118, 1071, 21, 560, 4913, 575, 5477, 12730, 12732, 12733, 12734, 1112, 7208, 12514, 3440, 5592, 2187, 12736, 12737, 10348, 12739, 6013, 12503, 5594, 12741, 12742, 504, 5993, 10142, 12539, 6336, 6338, 1628, 12544, 2]
+// Dependencies: [5, 17, 12495, 5969, 10118, 1071, 21, 560, 4913, 575, 5477, 12730, 12732, 12733, 12734, 1112, 7208, 12722, 3440, 5592, 2187, 12736, 12737, 10348, 12739, 6013, 12503, 5594, 12741, 12742, 504, 5993, 10142, 12534, 6336, 6338, 1628, 12539, 2]
 // Exports: default, useCheckpointHomeControlsHeight
 
 // Module 12731 (CheckpointNavigationControls)
@@ -15,8 +15,8 @@ import useToken from "useToken" /* 5477 */;
 import CheckpointCardColors from "CheckpointCardColors" /* 5993 */;
 import ShareIcon from "ShareIcon" /* 10142 */;
 import RetryIcon from "RetryIcon" /* 10348 */;
-import CheckpointTextDefault from "CheckpointText" /* 12514 */;
-import CheckpointFadeLayerDefault from "CheckpointFadeLayer" /* 12544 */;
+import CheckpointFadeLayerDefault from "CheckpointFadeLayer" /* 12539 */;
+import CheckpointTextDefault from "CheckpointText" /* 12722 */;
 import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12730 */;
 import useCheckpointPressSoundDefault from "useCheckpointPressSound" /* 12732 */;
 import _modDef12733 from "module_12733" /* 12733 */;
@@ -419,7 +419,7 @@ function RouteControls(arg0) {
   let checkpointRouteBlockedTrait;
   ({ isLastRoute, onSave, onReplay, onShare } = arg0);
   const tmp = closure_16();
-  const tmp4 = checkpointRouteBlockedTrait(12539)();
+  const tmp4 = checkpointRouteBlockedTrait(12534)();
   const obj = onNext(6336);
   checkpointRouteBlockedTrait = obj.getCheckpointRouteBlockedTrait(activeRoute, tmp4);
   if (null != checkpointRouteBlockedTrait) {

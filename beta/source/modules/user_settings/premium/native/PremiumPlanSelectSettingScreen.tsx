@@ -1,13 +1,13 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16304
+// Function ID: 16305
 // Name: PremiumPlanSelectSettingScreen
-// Dependencies: [19, 21, 7414, 14151, 2]
+// Dependencies: [19, 21, 7414, 14154, 2]
 // Exports: default
 
-// Module 16300 (PremiumPlanSelectSettingScreen)
+// Module 16304 (PremiumPlanSelectSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7414 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 14151 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 14154 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

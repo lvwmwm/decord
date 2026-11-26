@@ -1,7 +1,7 @@
 // Module ID: 6867
 // Function ID: 6868
 // Name: safeTransitionTo
-// Dependencies: [5, 4784, 1071, 5536, 6868, 1098, 6869, 5861, 1112, 11253, 2958, 13668, 14773, 2]
+// Dependencies: [5, 4784, 1071, 5536, 6868, 1098, 6869, 5861, 1112, 11253, 2958, 13671, 14776, 2]
 // Exports: default
 
 // Module 6867 (safeTransitionTo)
@@ -166,7 +166,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp68 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "r" };
+          closure_2 = { guildId: "format" };
         }
         c5 = 2;
         c6 = 1;

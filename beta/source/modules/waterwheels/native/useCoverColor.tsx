@@ -1,10 +1,10 @@
-// Module ID: 17832
-// Function ID: 17833
+// Module ID: 17836
+// Function ID: 17837
 // Name: useCoverColor
 // Dependencies: [5, 32, 19, 4920, 1454, 671, 1491, 2]
 // Exports: coverArtColor, default
 
-// Module 17832 (useCoverColor)
+// Module 17836 (useCoverColor)
 import _modDef671 from "module_671" /* 671 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
 import shared from "shared" /* 4920 */;

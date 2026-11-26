@@ -1,10 +1,10 @@
-// Module ID: 14466
-// Function ID: 14467
+// Module ID: 14469
+// Function ID: 14470
 // Name: isOnXbox
 // Dependencies: [2144, 7074, 2]
 // Exports: default
 
-// Module 14466 (isOnXbox)
+// Module 14469 (isOnXbox)
 import Constants from "Constants" /* 2144 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7074 */;
 import size from "module_2" /* 2 */;

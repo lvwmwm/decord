@@ -1,10 +1,10 @@
-// Module ID: 16757
-// Function ID: 16758
+// Module ID: 16761
+// Function ID: 16762
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1395, 16758, 1071, 21, 1394, 4913, 575, 9460, 1397, 16759, 558, 5129, 16760, 1255, 5127, 5141, 16754, 5511, 1112, 16763, 15876, 2]
+// Dependencies: [32, 19, 17, 1395, 16762, 1071, 21, 1394, 4913, 575, 9460, 1397, 16763, 558, 5129, 16764, 1255, 5127, 5141, 16758, 5511, 1112, 16767, 15880, 2]
 // Exports: default
 
-// Module 16757 (DisplayNameStylesGummyColorPickerSheet)
+// Module 16761 (DisplayNameStylesGummyColorPickerSheet)
 import shallowEqual from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -14,8 +14,8 @@ import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 9460 */;
-import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 16758 */;
-import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 16760 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 16762 */;
+import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 16764 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -94,7 +94,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(arg0) {
   }), 2);
   colors = tmp6[0];
   let closure_5 = tmp6[1];
-  const tmp8 = onSelectColors(16759);
+  const tmp8 = onSelectColors(16763);
   const tmp8Result = tmp8(DisplayNameEffect.DisplayNameEffect.GUMMY);
   const findIndexResult = tmp8Result.findIndex((colors) => {
     colors = colors.colors;
@@ -154,7 +154,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(arg0) {
   const BottomSheet = Sheet_BottomSheet.BottomSheet;
   obj4 = { title: displayNameStylesEffectConfig.name, trailing: closure_9(Button, obj5) };
   obj5 = { variant: "primary", size: "sm", text: intl.string(intl3.t.XqMe3N), onPress: callback2 };
-  tmp7Result = onSelectColors(16754);
+  tmp7Result = onSelectColors(16758);
   Button = components_Button_Button.Button;
   intl = intl3.intl;
   const obj7 = { style: items2, children: items3 };
@@ -162,7 +162,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(arg0) {
   obj6 = { style: tmp.body, children: items4 };
   ({ sheetContentColumn: arr5[0], optionContainer: arr5[1] } = tmp);
   let tmp21;
-  const tmp7Result2 = onSelectColors(16763);
+  const tmp7Result2 = onSelectColors(16767);
   if (colors.length > 0 && findIndexResult < 0) {
     tmp21 = colors;
   }

@@ -1,11 +1,11 @@
-// Module ID: 15774
-// Function ID: 15775
+// Module ID: 15778
+// Function ID: 15779
 // Name: screenCaptureEvents
-// Dependencies: [6354, 1071, 15680, 2]
+// Dependencies: [6354, 1071, 15684, 2]
 
-// Module 15774 (screenCaptureEvents)
+// Module 15778 (screenCaptureEvents)
 import Constants2 from "Constants" /* 1071 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15680 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15684 */;
 import Constants from "Constants" /* 6354 */;
 import size from "module_2" /* 2 */;
 

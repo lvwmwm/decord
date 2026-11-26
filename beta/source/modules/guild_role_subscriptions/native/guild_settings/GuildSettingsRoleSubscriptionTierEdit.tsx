@@ -1,10 +1,10 @@
-// Module ID: 20058
-// Function ID: 20059
+// Module ID: 20062
+// Function ID: 20063
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4838, 20016, 16618, 1071, 4759, 21, 4913, 575, 1500, 20027, 20023, 6873, 7348, 5504, 5511, 5620, 7017, 20054, 20052, 20030, 16625, 20012, 13086, 20059, 1112, 16638, 5594, 7095, 7029, 7586, 4746, 20060, 2119, 11617, 11618, 11283, 2]
+// Dependencies: [32, 19, 17, 4838, 20020, 16622, 1071, 4759, 21, 4913, 575, 1500, 20031, 20027, 6873, 7348, 5504, 5511, 5620, 7017, 20058, 20056, 20034, 16629, 20016, 13089, 20063, 1112, 16642, 5594, 7095, 7029, 7586, 4746, 20064, 2119, 11617, 11618, 11283, 2]
 // Exports: default
 
-// Module 20058 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 20062 (GuildSettingsRoleSubscriptionTierEdit)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -19,20 +19,20 @@ import TrashIcon2 from "TrashIcon" /* 5620 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6873 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
 import TableRowGroup from "TableRowGroup" /* 7348 */;
-import ErrorBlockDefault from "ErrorBlock" /* 13086 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16618 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16625 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20012 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20023 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 20027 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 20030 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 20052 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 20054 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 20059 */;
+import ErrorBlockDefault from "ErrorBlock" /* 13089 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16622 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16629 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20016 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20027 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 20031 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 20034 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 20056 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 20058 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 20063 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20016 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20020 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -226,7 +226,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f119358 = (currentScene) => {
+  const f119369 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -306,9 +306,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f119358), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f119369), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f119358), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f119369), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

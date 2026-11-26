@@ -1,16 +1,16 @@
-// Module ID: 17809
-// Function ID: 17810
+// Module ID: 17813
+// Function ID: 17814
 // Name: WaterwheelsDiscoverPanel
-// Dependencies: [5, 32, 19, 17, 1245, 502, 1386, 21, 4913, 575, 16488, 17810, 17813, 17820, 5127, 17823, 17828, 10051, 17835, 7490, 1112, 2643, 10041, 504, 17836, 17580, 17838, 2]
+// Dependencies: [5, 32, 19, 17, 1245, 502, 1386, 21, 4913, 575, 16492, 17814, 17817, 17824, 5127, 17827, 17832, 10051, 17839, 7490, 1112, 2643, 10041, 504, 17840, 17584, 17842, 2]
 // Exports: default
 
-// Module 17809 (WaterwheelsDiscoverPanel)
+// Module 17813 (WaterwheelsDiscoverPanel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;
-import WaterwheelsDiscoverCardDefault from "WaterwheelsDiscoverCard" /* 17828 */;
-import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17836 */;
+import WaterwheelsDiscoverCardDefault from "WaterwheelsDiscoverCard" /* 17832 */;
+import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17840 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -59,7 +59,7 @@ function WaterwheelsDiscoverFeed(enabled) {
   let tmp = closure_14();
   const tmp2 = youBarTotalHeight;
   const tmp3 = dependencyMap;
-  let obj = youBarTotalHeight(16488);
+  let obj = youBarTotalHeight(16492);
   youBarTotalHeight = obj.useYouBarTotalHeight();
   let tmp5 = entries(memo.useState(() => {
     set = new Set();
@@ -81,10 +81,10 @@ function WaterwheelsDiscoverFeed(enabled) {
       return set;
     });
   }, []);
-  let obj2 = youBarTotalHeight(17810);
+  let obj2 = youBarTotalHeight(17814);
   const waterwheelsActions = obj2.useWaterwheelsActions(callback);
   let tmp9 = joiningGuildIds;
-  const tmp10 = joiningGuildIds(17813)(enabled);
+  const tmp10 = joiningGuildIds(17817)(enabled);
   ({ snapshot, entries } = tmp10);
   ({ status, retry } = tmp10);
   const items = [entries];
@@ -107,10 +107,10 @@ function WaterwheelsDiscoverFeed(enabled) {
   }, items);
   const items1 = [joiningGuildIds, memo];
   const memo1 = memo.useMemo(() => ({ joiningGuildIds, serverRunStartKeys: memo }), items1);
-  let tmp13 = joiningGuildIds(17820)(snapshot.loadId, entries);
+  let tmp13 = joiningGuildIds(17824)(snapshot.loadId, entries);
   const trackAction = tmp13.trackAction;
   ({ visible, viewabilityConfigCallbackPairs } = tmp13);
-  let obj3 = youBarTotalHeight(17813);
+  let obj3 = youBarTotalHeight(17817);
   const waterwheelsDiscoverInitialRequest = obj3.useWaterwheelsDiscoverInitialRequest(enabled, visible, snapshot);
   const useCallback = memo.useCallback;
   let closure_0 = waterwheelsActions((arg0, arg1, arg2) => {
@@ -263,7 +263,7 @@ function WaterwheelsDiscoverFeed(enabled) {
   }, items5);
   const tmp20 = trackAction;
   if ("cards" !== status) {
-    let obj4 = { style: items6, children: tmp19(tmp9(17835), obj5) };
+    let obj4 = { style: items6, children: tmp19(tmp9(17839), obj5) };
     items6 = [tmp.feed, memo2.contentContainer];
     obj5 = { status, onRetry: retry, retryAfterAt: snapshot.retryAfterAt };
     obj6 = obj4;
@@ -274,7 +274,7 @@ function WaterwheelsDiscoverFeed(enabled) {
     FlashList = tmp2(7490).FlashList;
     if ("error" === snapshot.status) {
       const obj13 = { onRetry: retry, retryAfterAt: snapshot.retryAfterAt };
-      tmp19Result = tmp19(tmp2(17835).WaterwheelsDiscoverRefreshError, obj13);
+      tmp19Result = tmp19(tmp2(17839).WaterwheelsDiscoverRefreshError, obj13);
     }
     ({ contentContainer: obj8.contentContainerStyle, scrollIndicator: obj8.scrollIndicatorInsets } = memo2);
     intl = tmp2(1112).intl;
@@ -325,10 +325,10 @@ export default function WaterwheelsDiscoverPanel(style) {
   const obj3 = { style, children: tmp9 };
   tmp9 = null;
   const tmp7 = gateReady;
-  const tmp8 = gateReady(17580);
+  const tmp8 = gateReady(17584);
   if (waterwheelsDiscoverEnabled) {
     const obj4 = { style: tmp.content, children: items2 };
-    items2 = [closure_10(tmp7(17838), {}), ];
+    items2 = [closure_10(tmp7(17842), {}), ];
     const obj5 = { enabled: waterwheelsDiscoverEnabled };
     items2[1] = closure_10(WaterwheelsDiscoverFeed, obj5, userId);
     tmp9 = closure_11(View, obj4);

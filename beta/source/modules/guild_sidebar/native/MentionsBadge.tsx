@@ -1,10 +1,10 @@
-// Module ID: 17758
-// Function ID: 17759
+// Module ID: 17762
+// Function ID: 17763
 // Name: MentionsBadge
 // Dependencies: [19, 21, 1186, 2]
 // Exports: default
 
-// Module 17758 (MentionsBadge)
+// Module 17762 (MentionsBadge)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
 import react from "react" /* 19 */;

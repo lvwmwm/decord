@@ -1,9 +1,9 @@
-// Module ID: 16251
-// Function ID: 16252
+// Module ID: 16255
+// Function ID: 16256
 // Name: AuthorizedAppsSetting
-// Dependencies: [8712, 1071, 11942, 1112, 7386, 16252, 2]
+// Dependencies: [8712, 1071, 11942, 1112, 7386, 16256, 2]
 
-// Module 16251 (AuthorizedAppsSetting)
+// Module 16255 (AuthorizedAppsSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import KeyIcon from "KeyIcon" /* 7386 */;

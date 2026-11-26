@@ -1,7 +1,10 @@
 // Module ID: 15529
 // Function ID: 15530
-// Dependencies: []
+// Dependencies: [15530, 15531]
 
 // Module 15529
+const require = globalThis.__r;
 
-export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];
+
+export const shouldPolyfill = require("module_15530").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

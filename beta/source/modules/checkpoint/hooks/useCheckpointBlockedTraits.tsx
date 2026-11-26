@@ -1,10 +1,10 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12534
+// Function ID: 12535
 // Name: useCheckpointBlockedTraits
 // Dependencies: [1386, 12495, 504, 2108, 6014, 6013, 2]
 // Exports: default
 
-// Module 12539 (useCheckpointBlockedTraits)
+// Module 12534 (useCheckpointBlockedTraits)
 import get_initialized from "get initialized" /* 504 */;
 import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6013 */;
 import UserStore from "UserStore" /* 1386 */;

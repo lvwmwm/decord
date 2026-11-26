@@ -1,10 +1,10 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15961
+// Function ID: 15962
 // Name: TryItOutEditableTileBannerImageButton
-// Dependencies: [19, 17, 4914, 8132, 6956, 21, 1089, 575, 504, 4738, 8072, 15958, 15959, 1112, 15948, 5600, 1412, 2]
+// Dependencies: [19, 17, 4914, 8132, 6956, 21, 1089, 575, 504, 4738, 8072, 15962, 15963, 1112, 15952, 5600, 1412, 2]
 // Exports: default
 
-// Module 15957 (TryItOutEditableTileBannerImageButton)
+// Module 15961 (TryItOutEditableTileBannerImageButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,8 +13,8 @@ import AvatarUtils from "AvatarUtils" /* 1412 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import useDisplayProfileDefault from "useDisplayProfile" /* 8072 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15948 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15959 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15952 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15963 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
@@ -57,7 +57,7 @@ function EditableTileBannerImageButtonBase(bannerChange) {
   if (primaryColor == null) {
     primaryColor = closure_9;
   }
-  const hex = tmp5(15958)(primaryColor).hex;
+  const hex = tmp5(15962)(primaryColor).hex;
   UserProfileEditableTileBaseDefault;
   const intl = tmp(1112).intl;
   const tmpResult = UserProfileEditingAccessibilityUtils;

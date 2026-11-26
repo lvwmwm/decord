@@ -1,10 +1,10 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12931
+// Function ID: 12932
 // Name: useActivityShelfItem
-// Dependencies: [5, 4761, 2144, 1071, 5564, 1378, 10839, 12929, 12930, 2117, 6661, 10781, 10780, 6864, 4834, 7520, 12195, 10784, 10631, 2]
+// Dependencies: [5, 4761, 2144, 1071, 5564, 1378, 10839, 12932, 12933, 2117, 6661, 10781, 10780, 6864, 4834, 7520, 12195, 10784, 10631, 2]
 // Exports: default, getStaffReleasePhase
 
-// Module 12928 (useActivityShelfItem)
+// Module 12931 (useActivityShelfItem)
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import Constants2 from "Constants" /* 2144 */;
@@ -17,14 +17,14 @@ import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10631 */;
 import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 10780 */;
 import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 10781 */;
 import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10839 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12930 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12933 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 
-const f102821 = (str) => str.toUpperCase();
+const f102832 = (str) => str.toUpperCase();
 function useActivityAction(applicationId) {
   let context;
   let fetchesApplication;
@@ -316,7 +316,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(12929)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(12932)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -339,7 +339,7 @@ export default function useActivityShelfItem(backgroundResolution) {
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f102821);
+      replaced = str4.replace(/(^\w|\s\w)/g, f102832);
     }
     tmp16 = replaced;
   } else {
@@ -366,7 +366,7 @@ export function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f102821);
+    replaced = str4.replace(/(^\w|\s\w)/g, f102832);
   }
   return replaced;
 }

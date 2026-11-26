@@ -1,10 +1,10 @@
-// Module ID: 18983
-// Function ID: 18984
+// Module ID: 18987
+// Function ID: 18988
 // Name: IntegrationsSettingsEditWebhook
-// Dependencies: [19, 4843, 4845, 4855, 1386, 1071, 21, 4913, 575, 4974, 1378, 8568, 7095, 8561, 1112, 18976, 11735, 1284, 7545, 5861, 5932, 5504, 7709, 5929, 18984, 1412, 7221, 7348, 7045, 5529, 1186, 7636, 1500, 5487, 2]
+// Dependencies: [19, 4843, 4845, 4855, 1386, 1071, 21, 4913, 575, 4974, 1378, 8568, 7095, 8561, 1112, 18980, 11735, 1284, 7545, 5861, 5932, 5504, 7709, 5929, 18988, 1412, 7221, 7348, 7045, 5529, 1186, 7636, 1500, 5487, 2]
 // Exports: default
 
-// Module 18983 (IntegrationsSettingsEditWebhook)
+// Module 18987 (IntegrationsSettingsEditWebhook)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
@@ -19,7 +19,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
 import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 8568 */;
 import openChannelPickerDefault from "openChannelPicker" /* 11735 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 18976 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 18980 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -41,7 +41,7 @@ let obj2;
 let obj3;
 let tmp8;
 let unpackModuleId;
-const IconLabelBlockDefault = tmp8(18984);
+const IconLabelBlockDefault = tmp8(18988);
 let closure_3 = GuildChannelStore.GUILD_SELECTABLE_CHANNELS_KEY;
 ({ Endpoints: metroImportDefault, NON_USER_BOT_DISCRIMINATOR: metroImportAll, Permissions: c9, WebhookTypes: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);

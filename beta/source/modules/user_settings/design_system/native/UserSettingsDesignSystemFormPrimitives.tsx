@@ -1,10 +1,10 @@
-// Module ID: 17270
-// Function ID: 17271
+// Module ID: 17274
+// Function ID: 17275
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 5504, 7347, 7349, 7348, 7556, 14732, 7335, 7045, 14512, 10986, 7034, 14511, 5929, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 5504, 7347, 7349, 7348, 7556, 14735, 7335, 7045, 14515, 10986, 7034, 14514, 5929, 2]
 // Exports: default
 
-// Module 17270 (UserSettingsDesignSystemFormPrimitives)
+// Module 17274 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import Text_Text from "Text/Text" /* 5504 */;
@@ -17,9 +17,9 @@ import TableRowGroup3 from "TableRowGroup" /* 7348 */;
 import TableRadioRow from "TableRadioRow" /* 7349 */;
 import TableSwitchRow5 from "TableSwitchRow" /* 7556 */;
 import VoiceXIcon from "VoiceXIcon" /* 10986 */;
-import TableSliderRow from "TableSliderRow" /* 14511 */;
-import Slider2 from "Slider" /* 14512 */;
-import Checkbox from "Checkbox" /* 14732 */;
+import TableSliderRow from "TableSliderRow" /* 14514 */;
+import Slider2 from "Slider" /* 14515 */;
+import Checkbox from "Checkbox" /* 14735 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -51,24 +51,24 @@ function Switch() {
   let tmp4;
   let tmp6;
   let tmp8;
-  const f111694 = (arg0) => {
+  const f111705 = (arg0) => {
     _undefined(arg0);
   };
   [tmp2, closure_129_0] = _slicedToArray(react.useState(true), 2);
   const tmp = _slicedToArray(react.useState(true), 2);
-  const obj = { value: tmp2, onValueChange: react.useCallback(f111694, []) };
+  const obj = { value: tmp2, onValueChange: react.useCallback(f111705, []) };
   [tmp4, c0] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  const obj2 = { value: tmp4, onValueChange: react.useCallback(f111694, []) };
+  const obj2 = { value: tmp4, onValueChange: react.useCallback(f111705, []) };
   [tmp6, c0] = react.useState(true);
   _slicedToArray(react.useState(true), 2);
   c0 = undefined;
-  const obj3 = { value: tmp6, onValueChange: react.useCallback(f111694, []) };
+  const obj3 = { value: tmp6, onValueChange: react.useCallback(f111705, []) };
   [tmp8, c0] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const obj5 = { children: items };
   items = [, , , ];
-  const obj4 = { value: tmp8, onValueChange: react.useCallback(f111694, []) };
+  const obj4 = { value: tmp8, onValueChange: react.useCallback(f111705, []) };
   items[0] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Switch" });
   items[1] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Toggle the state of a single setting on or off, immediately" });
   const obj6 = { title: "Emoji", hasIcons: false, children: metroRequire(TableSwitchRow, obj7) };

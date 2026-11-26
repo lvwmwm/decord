@@ -1,10 +1,10 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 17665
+// Function ID: 17666
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 4914, 5128, 5642, 1071, 21, 8571, 5122, 4920, 5519, 17662, 4787, 17634, 5643, 5477, 575, 5517, 10093, 4913, 1653, 9659, 17663, 1494, 504, 1501, 5514, 5515, 15129, 1412, 1112, 5600, 17701, 2]
+// Dependencies: [19, 17, 4914, 5128, 5642, 1071, 21, 8571, 5122, 4920, 5519, 17666, 4787, 17638, 5643, 5477, 575, 5517, 10093, 4913, 1653, 9659, 17667, 1494, 504, 1501, 5514, 5515, 15132, 1412, 1112, 5600, 17705, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 17661 (RedesignGuildHeader)
+// Module 17665 (RedesignGuildHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
@@ -19,10 +19,10 @@ import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8571 */;
 import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10093 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15129 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17634 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17662 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17663 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15132 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17638 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17666 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17667 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;

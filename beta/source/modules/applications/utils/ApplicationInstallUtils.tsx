@@ -11,7 +11,7 @@ import isConjureApplicationDefault from "isConjureApplication" /* 6632 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10441 */;
 import size from "module_2" /* 2 */;
 
-const f98176 = (oauth2_install_params) => {
+const f98183 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -37,7 +37,7 @@ export function hasInstallConfiguration(application) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f98176);
+      someResult = values.some(f98183);
     }
     tmp = someResult;
   }
@@ -60,7 +60,7 @@ export function canInstallApplication(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f98176);
+      someResult = values.some(f98183);
     }
     tmp = someResult;
   }
@@ -83,7 +83,7 @@ export function isAppUserInstallable(integrationTypesConfig) {
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f98176);
+      someResult = values.some(f98183);
     }
     tmp = someResult;
   }

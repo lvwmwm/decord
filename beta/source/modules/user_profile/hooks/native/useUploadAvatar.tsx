@@ -1,10 +1,10 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 15948
+// Function ID: 15949
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1386, 1071, 1388, 563, 10464, 5127, 8474, 2173, 15844, 8912, 8910, 8909, 8131, 2]
+// Dependencies: [5, 19, 1386, 1071, 1388, 563, 10464, 5127, 8474, 2173, 15848, 8912, 8910, 8909, 8131, 2]
 // Exports: default
 
-// Module 15944 (useUploadAvatar)
+// Module 15948 (useUploadAvatar)
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10464 */;

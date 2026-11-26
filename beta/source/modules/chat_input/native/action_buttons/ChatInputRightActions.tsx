@@ -1,17 +1,17 @@
-// Module ID: 13305
-// Function ID: 13306
+// Module ID: 13308
+// Function ID: 13309
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 12828, 21, 4913, 575, 5477, 4974, 13306, 1626, 13047, 13110, 1653, 13109, 13108, 2]
+// Dependencies: [32, 19, 17, 12831, 21, 4913, 575, 5477, 4974, 13309, 1626, 13050, 13113, 1653, 13112, 13111, 2]
 
-// Module 13305 (ChatInputRightActions)
+// Module 13308 (ChatInputRightActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1653 from "module_1653" /* 1653 */;
 import native from "native" /* 4974 */;
-import ChatInputConstants from "ChatInputConstants" /* 12828 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 13108 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13109 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13110 */;
+import ChatInputConstants from "ChatInputConstants" /* 12831 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 13111 */;
+import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13112 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13113 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -80,12 +80,12 @@ class ChatInputRightActions {
     items1 = [tmp15Result, ];
     if (null != suggestedExpressions) {
       const obj5 = { ref: suggestedExpressionsRef, active: keyboardType === channel(1626).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression, channel };
-      const EmojiSuggestionChatButton = tmp(13306).EmojiSuggestionChatButton;
+      const EmojiSuggestionChatButton = tmp(13309).EmojiSuggestionChatButton;
       const merged = Object.assign(suggestedExpressions);
       tmp19 = closure_7(EmojiSuggestionChatButton, obj5);
     } else {
       const obj6 = { active: keyboardType === channel(1626).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-      const tmp3Result = tmp3(13047);
+      const tmp3Result = tmp3(13050);
       tmp19 = closure_7(tmp3Result, obj6);
     }
     items1[1] = tmp19;

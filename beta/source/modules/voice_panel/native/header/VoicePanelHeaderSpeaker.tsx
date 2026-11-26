@@ -1,9 +1,9 @@
-// Module ID: 19266
-// Function ID: 19267
+// Module ID: 19270
+// Function ID: 19271
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 19267, 5655, 5674, 19268, 4762, 5656, 1071, 21, 19269, 19251, 9663, 10965, 10858, 563, 13823, 11020, 19273, 1378, 9670, 5675, 1112, 9667, 9669, 19274, 13822, 4945, 4746, 7324, 19211, 15228, 2]
+// Dependencies: [109, 19, 17, 19271, 5655, 5674, 19272, 4762, 5656, 1071, 21, 19273, 19255, 9663, 10965, 10858, 563, 13826, 11020, 19277, 1378, 9670, 5675, 1112, 9667, 9669, 19278, 13825, 4945, 4746, 7324, 19215, 15231, 2]
 
-// Module 19266 (VoicePanelHeaderSpeaker)
+// Module 19270 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -11,15 +11,15 @@ import PlatformUtils from "PlatformUtils" /* 1378 */;
 import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
 import NativeViewDefault from "NativeView" /* 7324 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 13823 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19211 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19267 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19269 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13826 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19215 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19271 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19273 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5655 */;
 import AudioRouteStore from "AudioRouteStore" /* 5674 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19268 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19272 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import SessionsStore from "SessionsStore" /* 5656 */;
 import Fragment from "Fragment" /* 21 */;

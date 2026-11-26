@@ -1,10 +1,10 @@
-// Module ID: 13993
-// Function ID: 13994
+// Module ID: 13996
+// Function ID: 13997
 // Name: BadgeUtils
 // Dependencies: [8069, 8070, 1112, 8138, 2152, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getBadgeUnlockLabel, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 13993 (BadgeUtils)
+// Module 13996 (BadgeUtils)
 import intl2 from "intl" /* 1112 */;
 import Constants from "Constants" /* 8069 */;
 import BadgeId from "BadgeId" /* 8070 */;

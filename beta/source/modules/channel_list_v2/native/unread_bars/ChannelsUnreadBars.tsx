@@ -1,9 +1,9 @@
-// Module ID: 17705
-// Function ID: 17706
+// Module ID: 17709
+// Function ID: 17710
 // Name: ChannelsUnreadBars
-// Dependencies: [32, 19, 17, 4914, 4847, 4762, 6664, 6619, 6552, 5642, 6553, 21, 4913, 8321, 5519, 7449, 16488, 551, 558, 504, 1653, 1706, 17660, 7373, 5129, 5130, 17706, 2]
+// Dependencies: [32, 19, 17, 4914, 4847, 4762, 6664, 6619, 6552, 5642, 6553, 21, 4913, 8321, 5519, 7449, 16492, 551, 558, 504, 1653, 1706, 17664, 7373, 5129, 5130, 17710, 2]
 
-// Module 17705 (ChannelsUnreadBars)
+// Module 17709 (ChannelsUnreadBars)
 import debounceDefault from "debounce" /* 551 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;

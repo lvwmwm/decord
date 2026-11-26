@@ -1,9 +1,9 @@
-// Module ID: 14345
-// Function ID: 14346
+// Module ID: 14348
+// Function ID: 14349
 // Name: MessageActivityInviteCoverImageStore
 // Dependencies: [1454, 504, 572, 2]
 
-// Module 14345 (MessageActivityInviteCoverImageStore)
+// Module 14348 (MessageActivityInviteCoverImageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;

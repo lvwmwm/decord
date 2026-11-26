@@ -1,10 +1,10 @@
-// Module ID: 19805
-// Function ID: 19806
+// Module ID: 19809
+// Function ID: 19810
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6614, 21, 504, 11374, 5595, 1112, 5141, 7515, 575, 7348, 7045, 11247, 19797, 5620, 2]
+// Dependencies: [5, 32, 19, 17, 6614, 21, 504, 11374, 5595, 1112, 5141, 7515, 575, 7348, 7045, 11247, 19801, 5620, 2]
 
-// Module 19805 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19797 */;
+// Module 19809 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

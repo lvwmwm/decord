@@ -13,8 +13,8 @@ import size from "module_2" /* 2 */;
 
 const ChannelSafetyWarningsStore = ChannelSafetyWarningsStore2;
 
-const f100697 = (type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1;
-const f100698 = (dismiss_timestamp) => null == dismiss_timestamp.dismiss_timestamp;
+const f100704 = (type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1;
+const f100705 = (dismiss_timestamp) => null == dismiss_timestamp.dismiss_timestamp;
 const SafetyWarningTypes = ChannelSafetyWarningsStore2.SafetyWarningTypes;
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationUtils.tsx");
 
@@ -56,14 +56,14 @@ export function shouldShowInappropriateConversationTakeoverForChannelRecord(safe
   let tmp = null != safetyWarnings.safetyWarnings;
   if (tmp) {
     safetyWarnings = safetyWarnings.safetyWarnings;
-    const found = safetyWarnings.filter(f100697);
-    tmp = found.length > 0 && found.every(f100698);
-    const everyResult = found.length > 0 && found.every(f100698);
+    const found = safetyWarnings.filter(f100704);
+    tmp = found.length > 0 && found.every(f100705);
+    const everyResult = found.length > 0 && found.every(f100705);
   }
   return tmp;
 }
 export function shouldShowTakeoverForWarnings(inappropriateConversationWarningsForChannel) {
-  const found = inappropriateConversationWarningsForChannel.filter(f100697);
-  const everyResult = found.length > 0 && found.every(f100698);
+  const found = inappropriateConversationWarningsForChannel.filter(f100704);
+  const everyResult = found.length > 0 && found.every(f100705);
   return everyResult;
 }

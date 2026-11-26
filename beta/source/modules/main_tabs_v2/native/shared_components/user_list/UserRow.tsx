@@ -1,7 +1,7 @@
 // Module ID: 9661
 // Function ID: 9662
 // Name: UserRow
-// Dependencies: [19, 17, 4914, 2164, 8362, 4762, 5651, 4855, 9646, 1071, 21, 1358, 4913, 575, 7737, 38, 9662, 10256, 5594, 10257, 7740, 8363, 504, 1186, 5504, 4969, 13510, 7520, 6631, 1112, 13824, 10278, 7340, 5511, 2153, 8612, 7672, 8067, 2119, 8166, 13825, 9370, 5942, 8699, 6342, 9456, 9454, 10392, 13827, 9743, 13828, 7335, 13842, 7045, 2]
+// Dependencies: [19, 17, 4914, 2164, 8362, 4762, 5651, 4855, 9646, 1071, 21, 1358, 4913, 575, 7737, 38, 9662, 10256, 5594, 10257, 7740, 8363, 504, 1186, 5504, 4969, 13513, 7520, 6631, 1112, 13827, 10278, 7340, 5511, 2153, 8612, 7672, 8067, 2119, 8166, 13828, 9370, 5942, 8699, 6342, 9456, 9454, 10392, 13830, 9743, 13831, 7335, 13845, 7045, 2]
 
 // Module 9661 (UserRow)
 import react_native from "react-native" /* 17 */;
@@ -25,9 +25,9 @@ import UserRowConstants from "UserRowConstants" /* 9646 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10256 */;
 import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10257 */;
 import XLargeIcon from "XLargeIcon" /* 10278 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13510 */;
-import ActionButtonDefault from "ActionButton" /* 13824 */;
-import CrownIcon2 from "CrownIcon" /* 13825 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13513 */;
+import ActionButtonDefault from "ActionButton" /* 13827 */;
+import CrownIcon2 from "CrownIcon" /* 13828 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
@@ -115,7 +115,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "r" };
+  obj = { lineHeight: "format" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;

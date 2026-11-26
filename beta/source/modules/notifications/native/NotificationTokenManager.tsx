@@ -1,9 +1,9 @@
-// Module ID: 15663
-// Function ID: 15664
+// Module ID: 15667
+// Function ID: 15668
 // Name: NotificationTokenManager
-// Dependencies: [17, 1245, 13286, 14903, 502, 15664, 1071, 2121, 1378, 15667, 572, 10866, 15670, 1241, 1112, 3152, 15671, 1255, 13285, 2]
+// Dependencies: [17, 1245, 13289, 14906, 502, 15668, 1071, 2121, 1378, 15671, 572, 10866, 15674, 1241, 1112, 3152, 15675, 1255, 13288, 2]
 
-// Module 15663 (NotificationTokenManager)
+// Module 15667 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,13 +13,13 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _modDef3152 from "module_3152" /* 3152 */;
 import PushNotificationDefault from "PushNotification" /* 10866 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13285 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15664 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15670 */;
-import react_nativeDefault from "react-native" /* 15671 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13288 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15668 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15674 */;
+import react_nativeDefault from "react-native" /* 15675 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
-import MultiAccountStore from "MultiAccountStore" /* 13286 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14903 */;
+import MultiAccountStore from "MultiAccountStore" /* 13289 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14906 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
@@ -111,7 +111,7 @@ class NotificationTokenManager extends LifecycleManager {
     const obj = self(1378);
     const tmp = self;
     if (obj.isAndroid()) {
-      const tmpResult = tmp(15667);
+      const tmpResult = tmp(15671);
       self._denylistUnsubscribe = tmpResult.initializeClientNotifDenylist();
     }
     if (null != self.token) {

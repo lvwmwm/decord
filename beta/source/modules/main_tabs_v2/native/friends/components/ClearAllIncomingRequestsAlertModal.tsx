@@ -1,10 +1,10 @@
-// Module ID: 18895
-// Function ID: 18896
+// Module ID: 18899
+// Function ID: 18900
 // Name: ClearAllIncomingRequestsAlertModal
 // Dependencies: [5, 19, 21, 7740, 5866, 1112, 5866, 2]
 // Exports: default
 
-// Module 18895 (ClearAllIncomingRequestsAlertModal)
+// Module 18899 (ClearAllIncomingRequestsAlertModal)
 import intl5 from "intl" /* 1112 */;
 import AlertModal2 from "AlertModal" /* 5866 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7740 */;

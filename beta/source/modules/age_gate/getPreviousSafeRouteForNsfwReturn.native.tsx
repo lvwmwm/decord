@@ -1,10 +1,10 @@
-// Module ID: 14847
-// Function ID: 14848
+// Module ID: 14850
+// Function ID: 14851
 // Name: getPreviousSafeRouteForNsfwReturn
 // Dependencies: [6653, 4762, 4843, 4784, 4816, 1071, 6419, 6439, 2]
 // Exports: default
 
-// Module 14847 (getPreviousSafeRouteForNsfwReturn)
+// Module 14850 (getPreviousSafeRouteForNsfwReturn)
 import AgeGateUtils from "AgeGateUtils" /* 6419 */;
 import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6439 */;
 import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 6653 */;

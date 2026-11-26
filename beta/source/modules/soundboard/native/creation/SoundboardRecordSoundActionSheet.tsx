@@ -1,10 +1,10 @@
-// Module ID: 19809
-// Function ID: 19810
+// Module ID: 19813
+// Function ID: 19814
 // Name: SoundboardRecordSoundActionSheet
-// Dependencies: [32, 5, 19, 17, 2131, 6496, 12827, 21, 5679, 13122, 4913, 575, 12, 7795, 5594, 7784, 1112, 7553, 5504, 19810, 8492, 5511, 19811, 2]
+// Dependencies: [32, 5, 19, 17, 2131, 6496, 12830, 21, 5679, 13125, 4913, 575, 12, 7795, 5594, 7784, 1112, 7553, 5504, 19814, 8492, 5511, 19815, 2]
 // Exports: default
 
-// Module 19809 (SoundboardRecordSoundActionSheet)
+// Module 19813 (SoundboardRecordSoundActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,12 +12,12 @@ import intl6 from "intl" /* 1112 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
 import reactDefault from "react" /* 7784 */;
 import utils_TimeUtils from "utils/TimeUtils" /* 8492 */;
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19811 */;
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19815 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12827 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12830 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -36,8 +36,8 @@ let obj5;
 let obj6;
 let tmp13;
 let unpackModuleId;
-const SoundboardRecordingWaveformDefault = tmp13(19810);
-const f118748 = (arg0) => {
+const SoundboardRecordingWaveformDefault = tmp13(19814);
+const f118759 = (arg0) => {
   let num = arg0;
   if (arg0 == null) {
     num = 0;
@@ -45,7 +45,7 @@ const f118748 = (arg0) => {
   return num;
 };
 function getRecordedLevels(arg0) {
-  return Array.from(arg0, f118748);
+  return Array.from(arg0, f118759);
 }
 let obj = function _startSoundboardRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -253,7 +253,7 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
           ref4.current(true);
         } else {
           const _Array = Array;
-          memo(diff, Array.from(tmp5.current, f118748));
+          memo(diff, Array.from(tmp5.current, f118759));
         }
       }
     }

@@ -1,27 +1,27 @@
-// Module ID: 20167
-// Function ID: 20168
+// Module ID: 20171
+// Function ID: 20172
 // Name: PlaneIllocon
-// Dependencies: [19, 21, 20168, 13370, 20169, 7357, 5600, 2]
+// Dependencies: [19, 21, 20172, 13373, 20173, 7357, 5600, 2]
 // Exports: PlaneIllocon
 
-// Module 20167 (PlaneIllocon)
+// Module 20171 (PlaneIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef13370 from "module_13370" /* 13370 */;
-import _modDef20168 from "module_20168" /* 20168 */;
-import _modDef20169 from "module_20169" /* 20169 */;
+import _modDef13373 from "module_13373" /* 13373 */;
+import _modDef20172 from "module_20172" /* 20172 */;
+import _modDef20173 from "module_20173" /* 20173 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20168 };
+let obj2 = { uri: _modDef20172 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13370 };
-({ uri: _modDef13370 });
-obj[3] = { uri: _modDef20169 };
-({ uri: _modDef20169 });
+obj[2] = { uri: _modDef13373 };
+({ uri: _modDef13373 });
+obj[3] = { uri: _modDef20173 };
+({ uri: _modDef20173 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PlaneIllocon.native.tsx");
 

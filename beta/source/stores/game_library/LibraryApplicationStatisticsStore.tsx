@@ -1,9 +1,9 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14579
+// Function ID: 14580
 // Name: LibraryApplicationStatisticsStore
 // Dependencies: [1071, 504, 572, 2]
 
-// Module 14576 (LibraryApplicationStatisticsStore)
+// Module 14579 (LibraryApplicationStatisticsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;

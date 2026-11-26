@@ -60,14 +60,14 @@ export function bodySize(size) {
 }
 export function sendXMLHttpRequest(request, arg1) {
   let _true;
-  const f1253602 = () => {
+  const f1253712 = () => {
     const items = [...arguments];
     const tmp2 = c3;
     if (!tmp2) {
       try {
         const items1 = [];
         HermesBuiltin.arraySpread(items1, items, 0);
-        HermesBuiltin.apply(f93710, items1, undefined);
+        HermesBuiltin.apply(f93717, items1, undefined);
       } catch (tmp10) {
         abortController.abort();
         fail(tmp10);
@@ -114,7 +114,7 @@ export function sendXMLHttpRequest(request, arg1) {
     c6 = true;
     closure_1.onResponse(arg0, arg1, arg2);
   }
-  const f93707 = (httpStatusCode) => {
+  const f93714 = (httpStatusCode) => {
     httpStatusCode = httpStatusCode.httpStatusCode;
     const nitroHeaders = new request(closure_1[2]).NitroHeaders(httpStatusCode.allHeadersAsList);
     const obj = {};
@@ -128,7 +128,7 @@ export function sendXMLHttpRequest(request, arg1) {
       throw new TypeError("Trying to call a non-function");
     }
   };
-  let f125360 = f1253602;
+  let f125371 = f1253712;
   let c9 = null;
   let responseType = request.responseType;
   let tmp2 = "arraybuffer" === responseType;
@@ -143,7 +143,7 @@ export function sendXMLHttpRequest(request, arg1) {
       closure_1.onProgress(c9);
     }
   }
-  const f93709 = (arg0) => {
+  const f93716 = (arg0) => {
     const tmp = closure_1_6;
     if (tmp) {
       const tmp2 = closure_1_10;
@@ -155,11 +155,11 @@ export function sendXMLHttpRequest(request, arg1) {
   };
   let c13 = false;
   let c14 = 0;
-  const f93710 = (byteLength) => {
+  const f93717 = (byteLength) => {
     c9 = null;
     c13 = true;
     closure_14 = closure_14 + byteLength.byteLength;
-    const responseType = f93710.responseType;
+    const responseType = f93717.responseType;
     let tmp2 = "arraybuffer" === responseType;
     onChunk = onChunk.onChunk;
     const _Uint8Array = Uint8Array;
@@ -173,9 +173,9 @@ export function sendXMLHttpRequest(request, arg1) {
     const _Uint8Array1 = new _Uint8Array(substr);
     onChunk(_Uint8Array1, closure_14);
   };
-  f125360 = f1253602;
+  f125371 = f1253712;
   function onData(buf2stringResult) {
-    f125360(buf2stringResult);
+    f125371(buf2stringResult);
     return !c3;
   }
   const str2 = request.method;

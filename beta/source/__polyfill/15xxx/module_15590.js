@@ -1,41 +1,27 @@
 // Module ID: 15590
 // Function ID: 15591
-// Dependencies: [15553, 15551, 15569, 15591, 15592]
+// Dependencies: [15591, 15604, 15552, 15573]
 
 // Module 15590
-import _mod15551 from "module_15551" /* 15551 */;
-import _mod15553 from "module_15553" /* 15553 */;
-import _mod15569 from "module_15569" /* 15569 */;
+import _mod15573 from "module_15573" /* 15573 */;
 import _mod15591 from "module_15591" /* 15591 */;
+import defineProperty2 from "defineProperty2" /* 15604 */;
 
-let closure_2 = _mod15553([].push);
 
-export default (arg0, arg1) => {
+export default (arg0, arg1, arg2) => {
   let num;
-  const tmp = _mod15551(arg0);
-  const items = [];
-  for (const key10010 in tmp) {
-    let tmp12 = require;
-    let tmp14 = _mod15569;
-    let tmp14Result = tmp14(_mod15591, key10010);
-    let tmp2 = !tmp14Result && tmp12(15569)(tmp, key10010);
-    if (!tmp2) {
-      continue;
-    } else {
-      let tmp4 = closure_2(items, key10010);
-      continue;
+  const arr = _mod15591(arg1);
+  const f = defineProperty2.f;
+  for (let num = 0; num < arr.length; num = num + 1) {
+    let tmp2 = arr[num];
+    let tmp3 = require;
+    let tmp5 = _mod15573(arg0, tmp2);
+    if (!tmp5) {
+      let tmp7 = arg2 && tmp3(15573)(arg2, tmp2);
+      tmp5 = tmp7;
     }
-    continue;
-  }
-  for (let num = 0; arg1.length > num; num = num + 1) {
-    let tmp5 = require;
-    let tmp7 = arg1[num];
-    if (_mod15569(tmp, tmp7)) {
-      let tmp5Result = tmp5(15592);
-      if (!(~tmp5Result.indexOf(items, tmp7))) {
-        let tmp10 = closure_2(items, tmp7);
-      }
+    if (!tmp5) {
+      let fResult = f(arg0, tmp2, tmp(arg1, tmp2));
     }
   }
-  return items;
 };

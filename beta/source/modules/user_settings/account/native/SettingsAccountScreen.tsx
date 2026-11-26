@@ -1,9 +1,9 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 15989
+// Function ID: 15990
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 15986, 8712, 1071, 21, 4913, 575, 1500, 7047, 5600, 15987, 5504, 1112, 5511, 504, 15988, 7379, 6433, 7348, 15989, 11942, 15990, 15993, 5474, 12422, 2]
+// Dependencies: [32, 19, 17, 15990, 8712, 1071, 21, 4913, 575, 1500, 7047, 5600, 15991, 5504, 1112, 5511, 504, 15992, 7379, 6433, 7348, 15993, 11942, 15994, 15997, 5474, 12422, 2]
 
-// Module 15985 (SettingsAccountScreen)
+// Module 15989 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -15,12 +15,12 @@ import TableRowGroup from "TableRowGroup" /* 7348 */;
 import MFAUtils from "MFAUtils" /* 7379 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12422 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 15989 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 15990 */;
-import SettingLayoutDefault from "SettingLayout" /* 15993 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 15993 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 15994 */;
+import SettingLayoutDefault from "SettingLayout" /* 15997 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 15986 */;
+import WebAuthnStore from "WebAuthnStore" /* 15990 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -95,7 +95,7 @@ function AccountTwoFALabel() {
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(15988);
+  const obj2 = first(15992);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {

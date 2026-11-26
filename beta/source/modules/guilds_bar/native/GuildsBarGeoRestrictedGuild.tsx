@@ -1,17 +1,17 @@
-// Module ID: 17932
-// Function ID: 17933
+// Module ID: 17936
+// Function ID: 17937
 // Name: GuildsBarGeoRestrictedGuild
-// Dependencies: [19, 17870, 21, 4913, 575, 17886, 17882, 1412, 7322, 5860, 1112, 7994, 17933, 17902, 5600, 2]
+// Dependencies: [19, 17874, 21, 4913, 575, 17890, 17886, 1412, 7322, 5860, 1112, 7994, 17937, 17906, 5600, 2]
 
-// Module 17932 (GuildsBarGeoRestrictedGuild)
+// Module 17936 (GuildsBarGeoRestrictedGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
 import GuildIcon from "GuildIcon" /* 7322 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17870 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 17882 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 17886 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17874 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 17886 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 17890 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ const memoResult = react.memo(function GuildsBarGeoRestrictedGuild(restrictedGui
   let tmp8Result;
   restrictedGuild = restrictedGuild.restrictedGuild;
   let tmp = closure_5();
-  let obj = restrictedGuild(17882);
+  let obj = restrictedGuild(17886);
   let animatableSourceWithFallback = null;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const tmp2 = restrictedGuild;
@@ -82,7 +82,7 @@ const memoResult = react.memo(function GuildsBarGeoRestrictedGuild(restrictedGui
     const tmp9Result = GuildIconDefault;
     tmp8Result = tmp8(tmp9Result, obj7);
   }
-  return <tmp10 selected={false} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={restrictedGuild.name} isDragTarget={false} config={memo} cutouts={items} overState="a" externalChildren="relative" expandedChildren="row">{tmp8Result}</tmp10>;
+  return <tmp10 selected={false} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={restrictedGuild.name} isDragTarget={false} config={memo} cutouts={items} overState="a" externalChildren={-16.334} expandedChildren={68.828}>{tmp8Result}</tmp10>;
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx");

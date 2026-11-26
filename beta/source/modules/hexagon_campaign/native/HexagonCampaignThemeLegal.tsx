@@ -1,16 +1,16 @@
-// Module ID: 16422
-// Function ID: 16423
+// Module ID: 16426
+// Function ID: 16427
 // Name: HexagonCampaignThemeLegal
-// Dependencies: [19, 17, 4938, 21, 4913, 575, 5504, 1112, 4597, 15882, 5600, 16423, 2]
+// Dependencies: [19, 17, 4938, 21, 4913, 575, 5504, 1112, 4597, 15886, 5600, 16427, 2]
 // Exports: default
 
-// Module 16422 (HexagonCampaignThemeLegal)
+// Module 16426 (HexagonCampaignThemeLegal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4597 from "module_4597" /* 4597 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16423 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16427 */;
 import react from "react" /* 19 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const openHexagonCampaignLearnMore = tmp2(15882);
+const openHexagonCampaignLearnMore = tmp2(15886);
 const View = react_native.View;
 ({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: closure_4, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: hasOwnProperty } = HexagonCampaignConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

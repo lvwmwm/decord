@@ -18,12 +18,12 @@ const guilds_bar = "guilds_bar";
 let result = size.fileFinishedImporting("modules/checkpoint/useCheckpointGuildsBarEntrypoint.tsx");
 
 export const CHECKPOINT_GUILDS_BAR_SOURCE = "guilds_bar";
-export function dismissCheckpointIntro(arg0) {
+export function dismissCheckpointIntro(devtools) {
   let INDIRECT_ACTION;
   const UNSAFE_markDismissibleContentAsDismissed = DismissibleContentUnsafeUtils.UNSAFE_markDismissibleContentAsDismissed;
   DismissibleContentUnsafeUtils;
   const BUILD_A_BEAR_INTRO = dismissible_content.DismissibleContent.BUILD_A_BEAR_INTRO;
-  if (arg0 === guilds_bar) {
+  if (devtools === guilds_bar) {
     INDIRECT_ACTION = ContentDismissActionType.TAKE_ACTION;
   } else {
     INDIRECT_ACTION = ContentDismissActionType.INDIRECT_ACTION;

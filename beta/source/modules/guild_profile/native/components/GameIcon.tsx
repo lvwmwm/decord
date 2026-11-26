@@ -1,15 +1,15 @@
-// Module ID: 13804
-// Function ID: 13805
+// Module ID: 13807
+// Function ID: 13808
 // Name: GameIcon
-// Dependencies: [19, 17, 21, 4913, 575, 1412, 13805, 7030, 5600, 13806, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1412, 13808, 7030, 5600, 13809, 2]
 // Exports: default
 
-// Module 13804 (GameIcon)
+// Module 13807 (GameIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ClanGameplayActivity from "ClanGameplayActivity" /* 13805 */;
+import ClanGameplayActivity from "ClanGameplayActivity" /* 13808 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -77,7 +77,7 @@ export default function GameIcon(arg0) {
       if (tmp14Result) {
         const obj4 = { style: tmp.gameIconMask, children: hasOwnProperty(FireIcon2, obj5) };
         obj5 = { style: tmp.fireIcon, color: tmp15(575).unsafe_rawColors.ORANGE_260 };
-        FireIcon2 = tmp7(13806).FireIcon;
+        FireIcon2 = tmp7(13809).FireIcon;
         tmp14Result = tmp14(View, obj4);
       }
       items2[1] = tmp14Result;
@@ -93,7 +93,7 @@ export default function GameIcon(arg0) {
       if (tmp19Result) {
         const obj8 = { style: tmp.gameIconMask, children: hasOwnProperty(FireIcon, obj9) };
         obj9 = { style: tmp.fireIcon, color: tmp20(575).unsafe_rawColors.ORANGE_330 };
-        FireIcon = tmp7(13806).FireIcon;
+        FireIcon = tmp7(13809).FireIcon;
         tmp19Result = tmp19(tmp18, obj8);
       }
       items4[1] = tmp19Result;

@@ -1,18 +1,18 @@
-// Module ID: 16154
-// Function ID: 16155
+// Module ID: 16158
+// Function ID: 16159
 // Name: ContactSyncSettings
-// Dependencies: [5, 19, 1386, 13587, 1071, 21, 13588, 5595, 1112, 13592, 1255, 13584, 504, 4738, 1404, 7709, 6429, 16155, 2119, 2]
+// Dependencies: [5, 19, 1386, 13590, 1071, 21, 13591, 5595, 1112, 13595, 1255, 13587, 504, 4738, 1404, 7709, 6429, 16159, 2119, 2]
 // Exports: default, handleSyncContacts
 
-// Module 16154 (ContactSyncSettings)
+// Module 16158 (ContactSyncSettings)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13584 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13588 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13592 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13587 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13591 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13595 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13587 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13590 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -265,7 +265,7 @@ export default function ContactSyncSettings() {
   let obj9;
   const tmp = contactSyncAccount;
   const tmp2 = dependencyMap;
-  obj = contactSyncAccount(13588);
+  obj = contactSyncAccount(13591);
   contactSyncAccount = obj.useContactSyncAccount();
   let obj2 = contactSyncAccount(504);
   const items = [UserStore];
@@ -278,7 +278,7 @@ export default function ContactSyncSettings() {
   if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
   }
-  const tmpResult = tmp(13588);
+  const tmpResult = tmp(13591);
   const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
   const FriendDiscoverySettings = tmp(4738).FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
@@ -293,7 +293,7 @@ export default function ContactSyncSettings() {
   let tmp10Result = null;
   if (isStaffResult) {
     const obj4 = { children: items1 };
-    const obj5 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: tmp(13588).adminDeleteContactSync };
+    const obj5 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: tmp(13591).adminDeleteContactSync };
     const FormSwitchRow = tmp(7709).FormSwitchRow;
     items1 = [closure_10(FormSwitchRow, obj5), closure_10(tmp(7709).FormDivider, {})];
     tmp10Result = tmp10(tmp11, obj4);
@@ -344,7 +344,7 @@ export default function ContactSyncSettings() {
   const FormHint = tmp(7709).FormHint;
   const intl4 = tmp(1112).intl;
   format = intl4.format;
-  obj12 = { onClick: tmp(13588).handleOpenLearnMoreLink };
+  obj12 = { onClick: tmp(13591).handleOpenLearnMoreLink };
   BoR0dO = tmp(1112).t.BoR0dO;
   items4[1] = closure_10(FormHint, obj11);
   const obj13 = { children: intl5.string(tmp(1112).t.cW1nr9) };

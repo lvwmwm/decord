@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "setTimeout", left: "analyticsLocations", right: "guildId", bottom: "a" };
+let closure_0 = { top: "Array", left: "s", right: "analyticsLocations", bottom: "v" };
 
 export default function insetsDiffer(arg0, arg1) {
   const rect = arg0 || closure_0;

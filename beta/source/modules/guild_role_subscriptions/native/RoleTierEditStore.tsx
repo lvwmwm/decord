@@ -1,14 +1,14 @@
-// Module ID: 20016
-// Function ID: 20017
+// Module ID: 20020
+// Function ID: 20021
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1262, 1257, 6876, 4828, 5474, 16625, 2]
+// Dependencies: [32, 5, 1262, 1257, 6876, 4828, 5474, 16629, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 20016 (RoleTierEditStore)
+// Module 20020 (RoleTierEditStore)
 import react_native from "react-native" /* 1262 */;
 import _slicedToArray2 from "_slicedToArray" /* 4828 */;
 import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6876 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16625 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16629 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1257 from "module_1257" /* 1257 */;

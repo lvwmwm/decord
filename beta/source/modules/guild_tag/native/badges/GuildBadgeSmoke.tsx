@@ -1,12 +1,12 @@
-// Module ID: 15158
-// Function ID: 15159
+// Module ID: 15161
+// Function ID: 15162
 // Name: GuildBadgeSmoke
-// Dependencies: [19, 21, 15141, 7865, 2]
+// Dependencies: [19, 21, 15144, 7865, 2]
 // Exports: GuildBadgeSmoke
 
-// Module 15158 (GuildBadgeSmoke)
+// Module 15161 (GuildBadgeSmoke)
 import inlineStyles from "inlineStyles" /* 7865 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15141 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15144 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

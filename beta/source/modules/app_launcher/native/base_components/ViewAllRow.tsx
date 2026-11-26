@@ -1,10 +1,10 @@
-// Module ID: 12964
-// Function ID: 12965
+// Module ID: 12967
+// Function ID: 12968
 // Name: ViewAllRow
 // Dependencies: [19, 17, 21, 4913, 7045, 1112, 5504, 2]
 // Exports: default
 
-// Module 12964 (ViewAllRow)
+// Module 12967 (ViewAllRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;

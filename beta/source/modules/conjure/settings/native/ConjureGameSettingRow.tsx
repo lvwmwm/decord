@@ -1,15 +1,15 @@
-// Module ID: 18332
-// Function ID: 18333
+// Module ID: 18336
+// Function ID: 18337
 // Name: ConjureGameSettingRow
-// Dependencies: [19, 17, 21, 4913, 575, 18333, 18334, 1112, 4190, 5504, 7348, 7045, 5127, 18335, 7335, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 18337, 18338, 1112, 4190, 5504, 7348, 7045, 5127, 18339, 7335, 2]
 // Exports: default
 
-// Module 18332 (ConjureGameSettingRow)
+// Module 18336 (ConjureGameSettingRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
-import ConjureGamePickerSheetDefault from "ConjureGamePickerSheet" /* 18335 */;
+import ConjureGamePickerSheetDefault from "ConjureGamePickerSheet" /* 18339 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -37,14 +37,14 @@ export default function ConjureGameSettingRow(def) {
   def = def.def;
   ({ hint, value, pickingEmpty, disabled, onChange: importDefault, onPickingEmptyChange: dependencyMap } = def);
   let tmp = closure_6();
-  let obj = def(18333);
+  let obj = def(18337);
   let closure_3 = obj.useConjureGameNameLookup();
   let items = value;
   if (!Array.isArray(value)) {
     items = [];
   }
   const isArray = Array.isArray(value) && 0 === value.length && !pickingEmpty;
-  if (def.key === def(18334).CONJURE_OVERLAY_GAMES_SETTING_KEY) {
+  if (def.key === def(18338).CONJURE_OVERLAY_GAMES_SETTING_KEY) {
     const intl = tmp2(1112).intl;
     hint = intl.string(_modDef4190.cqWCNY);
   } else if (hint == null) {

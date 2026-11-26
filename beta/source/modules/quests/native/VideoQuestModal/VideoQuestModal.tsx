@@ -1,15 +1,15 @@
-// Module ID: 16520
-// Function ID: 16521
+// Module ID: 16524
+// Function ID: 16525
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 16483, 1071, 21, 4913, 575, 16521, 13766, 8421, 16484, 10603, 1653, 5514, 1628, 16522, 7017, 16525, 16552, 9955, 9958, 13760, 6561, 12048, 2]
+// Dependencies: [32, 19, 17, 16487, 1071, 21, 4913, 575, 16525, 13769, 8421, 16488, 10603, 1653, 5514, 1628, 16526, 7017, 16529, 16556, 9955, 9958, 13763, 6561, 12048, 2]
 
-// Module 16520 (VideoQuestModal)
+// Module 16524 (VideoQuestModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsActions from "AnalyticsActions" /* 8421 */;
 import QuestUtils from "QuestUtils" /* 9955 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 13766 */;
-import QuestDockConstants from "QuestDockConstants" /* 16483 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 13769 */;
+import QuestDockConstants from "QuestDockConstants" /* 16487 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

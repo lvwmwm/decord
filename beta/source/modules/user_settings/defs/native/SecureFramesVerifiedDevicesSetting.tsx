@@ -1,9 +1,9 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17359
+// Function ID: 17360
 // Name: SecureFramesVerifiedDevicesSetting
-// Dependencies: [8712, 1071, 11942, 1112, 17356, 2]
+// Dependencies: [8712, 1071, 11942, 1112, 17360, 2]
 
-// Module 17355 (SecureFramesVerifiedDevicesSetting)
+// Module 17359 (SecureFramesVerifiedDevicesSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

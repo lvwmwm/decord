@@ -1,10 +1,10 @@
-// Module ID: 16240
-// Function ID: 16241
+// Module ID: 16244
+// Function ID: 16245
 // Name: FamilyCenterModalCancel
-// Dependencies: [19, 17, 21, 4913, 575, 9137, 6429, 5594, 1112, 12463, 38, 7811, 7813, 16235, 7032, 5504, 2824, 16202, 12245, 6545, 5511, 7095, 12048, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 9137, 6429, 5594, 1112, 12463, 38, 7811, 7813, 16239, 7032, 5504, 2824, 16206, 12245, 6545, 5511, 7095, 12048, 2]
 // Exports: default
 
-// Module 16240 (FamilyCenterModalCancel)
+// Module 16244 (FamilyCenterModalCancel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
@@ -57,13 +57,13 @@ function FamilyCenterModalCancelScreen(otherUser) {
   obj4 = { style: tmp.header, children: items1 };
   const ModalContent = otherUser(7813).ModalContent;
   const obj5 = { otherUser, iconSrc: cancelLinkRequest(7032) };
-  const tmp8 = cancelLinkRequest(16235);
+  const tmp8 = cancelLinkRequest(16239);
   items1 = [closure_5(tmp8, obj5), , ];
   const obj6 = { style: tmp.headerText, variant: "body-lg/semibold", children: intl.string(cancelLinkRequest(2824).HynllX) };
   const Text = otherUser(5504).Text;
   intl = otherUser(1112).intl;
   items1[1] = closure_5(Text, obj6);
-  items1[2] = closure_5(cancelLinkRequest(16202), { user: otherUser });
+  items1[2] = closure_5(cancelLinkRequest(16206), { user: otherUser });
   items2 = [closure_5(ModalContent, obj3), ];
   const obj7 = { children: closure_6(ButtonGroup, obj8) };
   const ModalFooter = otherUser(12245).ModalFooter;

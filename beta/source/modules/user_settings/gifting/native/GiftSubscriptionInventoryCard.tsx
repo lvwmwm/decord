@@ -1,9 +1,9 @@
-// Module ID: 14179
-// Function ID: 14180
+// Module ID: 14182
+// Function ID: 14183
 // Name: GiftSubscriptionInventoryCard
-// Dependencies: [32, 19, 17, 11910, 1386, 8120, 6674, 1388, 21, 4913, 575, 1112, 14168, 2439, 2888, 504, 4969, 7047, 11911, 5600, 14180, 5504, 7516, 7020, 14181, 2]
+// Dependencies: [32, 19, 17, 11910, 1386, 8120, 6674, 1388, 21, 4913, 575, 1112, 14171, 2439, 2888, 504, 4969, 7047, 11911, 5600, 14183, 5504, 7516, 7020, 14184, 2]
 
-// Module 14179 (GiftSubscriptionInventoryCard)
+// Module 14182 (GiftSubscriptionInventoryCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
@@ -12,7 +12,7 @@ import _modDef2888 from "module_2888" /* 2888 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7516 */;
 import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11911 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14180 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14183 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GiftCodeStore from "GiftCodeStore" /* 11910 */;
@@ -80,7 +80,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
   let closure_7;
   const tmp = closure_13();
   let tmp2 = recipientUserId;
-  let obj = recipientUserId(14168);
+  let obj = recipientUserId(14171);
   const giftedSubscriptionRowState = obj.getGiftedSubscriptionRowState(subscription);
   recipientUserId = null;
   if ("pending" !== giftedSubscriptionRowState.kind) {
@@ -197,7 +197,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
   const Text = tmp2(5504).Text;
   const intl4 = tmp2(1112).intl;
   const stringResult = intl4.string(tmp2(1112).t.lG6a5x);
-  const tmp2Result10 = tmp2(14168);
+  const tmp2Result10 = tmp2(14171);
   const giftSubscriptionInterval = tmp2Result10.getGiftSubscriptionInterval(subscription.planId);
   let formatToPlainString2Result = stringResult;
   if (null != giftSubscriptionInterval) {
@@ -258,7 +258,7 @@ const memoResult = react.memo(function GiftSubscriptionInventoryCard(subscriptio
           tmp20Result6 = null;
           if (null != stateFromStores2) {
             const obj15 = { giftCode, sku: stateFromStores2, isFirst: true, canRevoke: false, showCopy: true };
-            tmp20Result6 = tmp20(tmp23(14181), obj15);
+            tmp20Result6 = tmp20(tmp23(14184), obj15);
           }
         }
       }

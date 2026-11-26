@@ -1,15 +1,15 @@
-// Module ID: 16924
-// Function ID: 16925
+// Module ID: 16928
+// Function ID: 16929
 // Name: HighlightNotificationsSetting
-// Dependencies: [4784, 8712, 1071, 504, 11942, 1112, 16925, 16904, 2]
+// Dependencies: [4784, 8712, 1071, 504, 11942, 1112, 16929, 16908, 2]
 // Exports: useHighlightNotifications
 
-// Module 16924 (HighlightNotificationsSetting)
+// Module 16928 (HighlightNotificationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16904 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16908 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import SettingBuilders_mod from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;

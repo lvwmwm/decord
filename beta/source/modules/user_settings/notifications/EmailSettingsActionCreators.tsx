@@ -1,17 +1,17 @@
-// Module ID: 16913
-// Function ID: 16914
+// Module ID: 16917
+// Function ID: 16918
 // Name: EmailSettingsActionCreators
-// Dependencies: [5, 15026, 16914, 1071, 572, 6432, 1263, 4774, 16915, 2]
+// Dependencies: [5, 15029, 16918, 1071, 572, 6432, 1263, 4774, 16919, 2]
 // Exports: fetchEmailSettings, updateEmailSetting, updateMarketingEmailSettings
 
-// Module 16913 (EmailSettingsActionCreators)
+// Module 16917 (EmailSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6432 */;
-import EmailSettingsConstants from "EmailSettingsConstants" /* 16914 */;
+import EmailSettingsConstants from "EmailSettingsConstants" /* 16918 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15026 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15029 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_3, closure_4;

@@ -1,18 +1,18 @@
-// Module ID: 18954
-// Function ID: 18955
+// Module ID: 18958
+// Function ID: 18959
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 11257, 4762, 1071, 21, 4913, 575, 1628, 504, 11256, 13849, 1186, 13864, 13865, 1112, 7190, 18955, 7432, 2]
+// Dependencies: [32, 19, 17, 11257, 4762, 1071, 21, 4913, 575, 1628, 504, 11256, 13852, 1186, 13867, 13868, 1112, 7190, 18959, 7432, 2]
 // Exports: default
 
-// Module 18954 (ChannelSettingsInstantInvites)
+// Module 18958 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import FastestListDefault from "FastestList" /* 7432 */;
-import InstantInvite from "InstantInvite" /* 13849 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13864 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13865 */;
+import InstantInvite from "InstantInvite" /* 13852 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13867 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13868 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelSettingsStore from "ChannelSettingsStore" /* 11257 */;
@@ -153,7 +153,7 @@ export default function ConnectedChannelSettingsInstantInvites() {
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(18955), obj8);
+    tmp19Result = tmp19(tmp2(18959), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);

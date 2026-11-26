@@ -1,10 +1,10 @@
-// Module ID: 19367
-// Function ID: 19368
+// Module ID: 19371
+// Function ID: 19372
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 4761, 6400, 4762, 6495, 11755, 21, 4913, 575, 11754, 6629, 1653, 1706, 10631, 5649, 6456, 10902, 6497, 6529, 10373, 19368, 8614, 19358, 1112, 2]
+// Dependencies: [32, 19, 4761, 6400, 4762, 6495, 11755, 21, 4913, 575, 11754, 6629, 1653, 1706, 10631, 5649, 6456, 10902, 6497, 6529, 10373, 19372, 8614, 19362, 1112, 2]
 // Exports: default
 
-// Module 19367 (VoicePanelDisconnectCancelButton)
+// Module 19371 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5649 */;

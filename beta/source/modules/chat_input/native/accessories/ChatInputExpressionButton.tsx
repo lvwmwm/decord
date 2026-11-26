@@ -1,9 +1,9 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13050
+// Function ID: 13051
 // Name: ChatInputExpressionButton
 // Dependencies: [19, 21, 4913, 575, 5477, 7030, 1112, 1186, 11667, 9490, 2]
 
-// Module 13047 (ChatInputExpressionButton)
+// Module 13050 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

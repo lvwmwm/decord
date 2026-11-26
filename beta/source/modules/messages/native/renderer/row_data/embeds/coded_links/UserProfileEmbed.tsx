@@ -1,10 +1,10 @@
-// Module ID: 14327
-// Function ID: 14328
+// Module ID: 14330
+// Function ID: 14331
 // Name: UserProfileEmbed
 // Dependencies: [6956, 1386, 8438, 8680, 1112, 8072, 8245, 5943, 12228, 2]
 // Exports: createUserProfileEmbed
 
-// Module 14327 (UserProfileEmbed)
+// Module 14330 (UserProfileEmbed)
 import intl5 from "intl" /* 1112 */;
 import useDisplayProfile from "useDisplayProfile" /* 8072 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;

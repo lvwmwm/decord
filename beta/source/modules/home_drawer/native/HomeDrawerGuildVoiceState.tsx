@@ -1,10 +1,10 @@
-// Module ID: 17905
-// Function ID: 17906
+// Module ID: 17909
+// Function ID: 17910
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4843, 4855, 6552, 5657, 1071, 21, 4913, 575, 14496, 1186, 5504, 1112, 11089, 5600, 5468, 17904, 504, 12, 14999, 2]
+// Dependencies: [19, 17, 4843, 4855, 6552, 5657, 1071, 21, 4913, 575, 14499, 1186, 5504, 1112, 11089, 5600, 5468, 17908, 504, 12, 15002, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 17905 (HomeDrawerGuildVoiceState)
+// Module 17909 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,7 +16,7 @@ import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11089 */;
-import AvatarPile2 from "AvatarPile" /* 14496 */;
+import AvatarPile2 from "AvatarPile" /* 14499 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;

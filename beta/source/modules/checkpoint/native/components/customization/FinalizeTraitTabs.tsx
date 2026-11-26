@@ -1,10 +1,10 @@
-// Module ID: 12798
-// Function ID: 12799
+// Module ID: 12800
+// Function ID: 12801
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 4914, 5969, 21, 575, 5127, 12799, 2119, 4913, 1378, 1112, 12735, 5504, 6336, 504, 5477, 12742, 3440, 12800, 2]
+// Dependencies: [19, 17, 4914, 5969, 21, 575, 5127, 12801, 2119, 4913, 1378, 1112, 12735, 5504, 6336, 504, 5477, 12742, 3440, 12802, 2]
 // Exports: FinalizeTraitTabs
 
-// Module 12798 (FinalizeTraitTabs)
+// Module 12800 (FinalizeTraitTabs)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -358,7 +358,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
           if (tmp3) {
             const obj = { selectedOption: activeCustomizationOption, onSelectOption: dependencyMap };
             const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.openLazy(asyncRequire(12799, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+            obj2.openLazy(asyncRequire(12801, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
           } else if (null != moreTabOption) {
             dependencyMap(tmp4);
           }
@@ -368,7 +368,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
     onLayout(nativeEvent) {
       handleTabLayout("more", nativeEvent);
     },
-    trailing: str(tmp2(12800).ChevronSmallDownIcon, { color: token, size: "xs" })
+    trailing: str(tmp2(12802).ChevronSmallDownIcon, { color: token, size: "xs" })
   };
   const tmp20 = ref2;
   if (null != customizationOptionName) {

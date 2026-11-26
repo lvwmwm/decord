@@ -1,9 +1,9 @@
-// Module ID: 14992
-// Function ID: 14993
+// Module ID: 14995
+// Function ID: 14996
 // Name: OnlineFriendsStore
 // Dependencies: [5651, 4855, 1071, 6643, 4779, 504, 1450, 572, 2]
 
-// Module 14992 (OnlineFriendsStore)
+// Module 14995 (OnlineFriendsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;

@@ -1,10 +1,10 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14708
+// Function ID: 14709
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 4825, 1386, 10528, 1071, 21, 4913, 575, 1112, 2187, 1255, 10447, 7316, 5600, 14706, 5504, 5511, 2]
+// Dependencies: [19, 17, 4825, 1386, 10528, 1071, 21, 4913, 575, 1112, 2187, 1255, 10447, 7316, 5600, 14709, 5504, 5511, 2]
 // Exports: default
 
-// Module 14705 (NsfwGateGuild)
+// Module 14708 (NsfwGateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -84,7 +84,7 @@ export default function NsfwGateGuild(guildId) {
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
   items1 = [closure_10(currentUser(7316), {}), , , , , ];
-  const obj4 = { source: currentUser(14706), style: tmp.image };
+  const obj4 = { source: currentUser(14709), style: tmp.image };
   const tmp7 = currentUser(5600);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };

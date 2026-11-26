@@ -1,10 +1,10 @@
-// Module ID: 13193
-// Function ID: 13194
+// Module ID: 13196
+// Function ID: 13197
 // Name: CreateGuild
 // Dependencies: [19, 17, 1386, 1071, 21, 4913, 575, 5143, 5923, 5929, 5504, 1112, 12214, 7221, 7556, 5511, 7251, 2]
 // Exports: default
 
-// Module 13193 (CreateGuild)
+// Module 13196 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

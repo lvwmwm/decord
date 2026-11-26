@@ -1,10 +1,10 @@
-// Module ID: 18295
-// Function ID: 18296
+// Module ID: 18299
+// Function ID: 18300
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6621, 504, 18296, 18268, 18298, 6990, 18274, 18273, 6622, 6865, 18299, 6955, 12301, 1112, 4190, 18277, 6933, 2]
+// Dependencies: [5, 32, 19, 6621, 504, 18300, 18272, 18302, 6990, 18278, 18277, 6622, 6865, 18303, 6955, 12301, 1112, 4190, 18281, 6933, 2]
 // Exports: default
 
-// Module 18295 (useConjureProjectSettingsDraft)
+// Module 18299 (useConjureProjectSettingsDraft)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

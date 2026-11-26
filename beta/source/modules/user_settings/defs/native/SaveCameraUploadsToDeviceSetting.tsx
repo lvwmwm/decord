@@ -1,9 +1,9 @@
-// Module ID: 16881
-// Function ID: 16882
+// Module ID: 16885
+// Function ID: 16886
 // Name: SaveCameraUploadsToDeviceSetting
 // Dependencies: [1193, 8712, 504, 5826, 11942, 1112, 2]
 
-// Module 16881 (SaveCameraUploadsToDeviceSetting)
+// Module 16885 (SaveCameraUploadsToDeviceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5826 */;

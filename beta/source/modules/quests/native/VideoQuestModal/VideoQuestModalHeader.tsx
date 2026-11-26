@@ -1,10 +1,10 @@
-// Module ID: 16546
-// Function ID: 16547
+// Module ID: 16550
+// Function ID: 16551
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 8406, 21, 4913, 575, 16521, 9958, 8427, 4828, 10620, 5504, 1112, 16542, 2]
+// Dependencies: [19, 17, 8406, 21, 4913, 575, 16525, 9958, 8427, 4828, 10620, 5504, 1112, 16546, 2]
 // Exports: default
 
-// Module 16546 (VideoQuestModalHeader)
+// Module 16550 (VideoQuestModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import VideoQuestUIStore from "VideoQuestUIStore" /* 8406 */;
@@ -50,7 +50,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp2 = closure_7();
-  let obj = quest(16521);
+  let obj = quest(16525);
   quest = obj.useVideoQuestModalContext().quest;
   let obj2 = quest(9958);
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
@@ -100,6 +100,6 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
     }
   }
   items1[1] = closure_5(Text2, obj7);
-  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(16542), { iconColor: closeButtonIconColor, onClose })];
+  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(16546), { iconColor: closeButtonIconColor, onClose })];
   return closure_6(View, obj3);
 };

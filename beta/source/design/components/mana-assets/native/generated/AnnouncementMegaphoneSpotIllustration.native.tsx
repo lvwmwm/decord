@@ -1,26 +1,26 @@
-// Module ID: 19959
-// Function ID: 19960
+// Module ID: 19963
+// Function ID: 19964
 // Name: AnnouncementMegaphoneSpotIllustration
-// Dependencies: [19, 21, 19960, 19961, 19962, 7357, 5600, 2]
+// Dependencies: [19, 21, 19964, 19965, 19966, 7357, 5600, 2]
 // Exports: AnnouncementMegaphoneSpotIllustration
 
-// Module 19959 (AnnouncementMegaphoneSpotIllustration)
+// Module 19963 (AnnouncementMegaphoneSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef19960 from "module_19960" /* 19960 */;
-import _modDef19961 from "module_19961" /* 19961 */;
-import _modDef19962 from "module_19962" /* 19962 */;
+import _modDef19964 from "module_19964" /* 19964 */;
+import _modDef19965 from "module_19965" /* 19965 */;
+import _modDef19966 from "module_19966" /* 19966 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19960 };
+let obj2 = { uri: _modDef19964 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19961 };
+let obj3 = { uri: _modDef19965 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19962 };
-({ uri: _modDef19962 });
+obj[3] = { uri: _modDef19966 };
+({ uri: _modDef19966 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AnnouncementMegaphoneSpotIllustration.native.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 17959
-// Function ID: 17960
+// Module ID: 17963
+// Function ID: 17964
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [6400, 4762, 4845, 5651, 4855, 6920, 5561, 1071, 4969, 4738, 9052, 7999, 504, 13512, 13513, 13519, 1112, 5652, 13521, 2]
+// Dependencies: [6400, 4762, 4845, 5651, 4855, 6920, 5561, 1071, 4969, 4738, 9052, 7999, 504, 13515, 13516, 13522, 1112, 5652, 13524, 2]
 // Exports: useYouBarAccessibilityLabel
 
-// Module 17959 (useYouBarAccessibilityLabel)
+// Module 17963 (useYouBarAccessibilityLabel)
 import Constants from "Constants" /* 1071 */;
 import UserUtils from "UserUtils" /* 4969 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 13512 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 13513 */;
-import isGameActivityDefault from "isGameActivity" /* 13519 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 13521 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 13515 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 13516 */;
+import isGameActivityDefault from "isGameActivity" /* 13522 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 13524 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import PermissionStore from "PermissionStore" /* 4845 */;

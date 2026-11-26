@@ -1,17 +1,17 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15875
+// Function ID: 15876
 // Name: useHexagonCampaignNewFontBadge
-// Dependencies: [19, 15872, 15644, 4938, 4943, 504, 15873, 15861, 15862, 6561, 2]
+// Dependencies: [19, 15876, 15648, 4938, 4943, 504, 15877, 15865, 15866, 6561, 2]
 // Exports: useHexagonCampaignDisplayNameStylePromo, useHexagonCampaignHasVisitedDisplayNameStyles, useHexagonCampaignNewFontBadge, useMarkHexagonCampaignDisplayNameStylesVisited
 
-// Module 15871 (useHexagonCampaignNewFontBadge)
+// Module 15875 (useHexagonCampaignNewFontBadge)
 import get_initialized from "get initialized" /* 504 */;
 import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 4943 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 15861 */;
-import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15862 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 15865 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 15866 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15872 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15644 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 15876 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15648 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require, seenFonts;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f108682 = () => HexagonCampaignPersistedStore.hasVisitedDisplayNameStyles;
+const f108693 = () => HexagonCampaignPersistedStore.hasVisitedDisplayNameStyles;
 ({ HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: hasOwnProperty, HexagonCampaignPerk: metroRequire, HexagonCampaignPerkAvailability: metroImportDefault } = HexagonCampaignConstants);
 let result = size.fileFinishedImporting("modules/hexagon_campaign/useHexagonCampaignNewFontBadge.tsx");
 
@@ -48,7 +48,7 @@ export function useHexagonCampaignNewFontBadge(DisplayNameStylesEditScreen) {
 export function useHexagonCampaignHasVisitedDisplayNameStyles() {
   const items = [HexagonCampaignPersistedStore];
   const obj = get_initialized;
-  return obj.useStateFromStores(items, f108682);
+  return obj.useStateFromStores(items, f108693);
 }
 export function useMarkHexagonCampaignDisplayNameStylesVisited(DisplayNameStylesEditScreen) {
   let closure_0;
@@ -58,7 +58,7 @@ export function useMarkHexagonCampaignDisplayNameStylesVisited(DisplayNameStyles
   _require = tmp;
   const items = [HexagonCampaignPersistedStore];
   const obj2 = require("get initialized");
-  stateFromStores = obj2.useStateFromStores(items, f108682);
+  stateFromStores = obj2.useStateFromStores(items, f108693);
   const items1 = [tmp, stateFromStores];
   const effect = react.useEffect(() => {
     const tmp = closure_0 && !stateFromStores;
@@ -89,12 +89,12 @@ export function useHexagonCampaignDisplayNameStylePromo(arg0) {
   }
   const useTrackHexagonCampaignContentViewed = HexagonCampaignAnalytics.useTrackHexagonCampaignContentViewed;
   HexagonCampaignAnalytics;
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6561).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(15862).HexagonCampaignContentSurface.PROFILE_ROW_PROMO, tmp3);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6561).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(15866).HexagonCampaignContentSurface.PROFILE_ROW_PROMO, tmp3);
   const items = [HexagonCampaignPersistedStore];
   const obj2 = { showCampaignPromo: tmp3, showCampaignNewBadge: tmp3 };
   const tmpResult2 = get_initialized;
   if (tmp3) {
-    tmp3 = !tmpResult2.useStateFromStores(items, f108682);
+    tmp3 = !tmpResult2.useStateFromStores(items, f108693);
   }
   return obj2;
 }

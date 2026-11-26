@@ -1,10 +1,10 @@
-// Module ID: 19407
-// Function ID: 19408
+// Module ID: 19411
+// Function ID: 19412
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 19408, 19410, 17, 19434, 2189, 4816, 2118, 8254, 19435, 1071, 9, 3, 20181, 1378, 8285, 20182, 10, 20184, 20185, 12225, 504, 1262, 1243, 20186, 2122, 20187, 15786, 572, 20188, 8268, 1241, 20189, 20190, 10866, 510, 1255, 15442, 4808, 8581, 10444, 2190, 1151, 20191, 2119, 9431, 20193, 15639, 8372, 20211, 20212, 20213, 8579, 8281, 8269, 5091, 1191, 4914, 15656, 19123, 19124, 1097, 15439, 8253, 15663, 15677, 6664, 20214, 5173, 8255, 8269, 2]
+// Dependencies: [32, 5, 19412, 19414, 17, 19438, 2189, 4816, 2118, 8254, 19439, 1071, 9, 3, 20185, 1378, 8285, 20186, 10, 20188, 20189, 12225, 504, 1262, 1243, 20190, 2122, 20191, 15790, 572, 20192, 8268, 1241, 20193, 20194, 10866, 510, 1255, 15446, 4808, 8581, 10444, 2190, 1151, 20195, 2119, 9431, 20197, 15643, 8372, 20215, 20216, 20217, 8579, 8281, 8269, 5091, 1191, 4914, 15660, 19127, 19128, 1097, 15443, 8253, 15667, 15681, 6664, 20218, 5173, 8255, 8269, 2]
 // Exports: init, initHeadlessTask
 
-// Module 19407 (NativeAppStartup)
+// Module 19411 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
@@ -17,19 +17,19 @@ import IntlLoaderStore from "IntlLoaderStore" /* 2189 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 4808 */;
 import timeRequireDefault from "timeRequire" /* 8285 */;
 import Future from "Future" /* 10444 */;
-import react_nativeDefault from "react-native" /* 15442 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20184 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20185 */;
+import react_nativeDefault from "react-native" /* 15446 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20188 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20189 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_19408 from "module_19408" /* 19408 */;
-import superagentPatch from "superagentPatch" /* 19410 */;
+import module_19412 from "module_19412" /* 19412 */;
+import superagentPatch from "superagentPatch" /* 19414 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19434 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19438 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8254 */;
-import ManagerRegistry from "ManagerRegistry" /* 19435 */;
+import ManagerRegistry from "ManagerRegistry" /* 19439 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f133918 = () => _true(handleNotification[33]);
+  const f133928 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f133918).default(arg0, false);
+      timeRequireDefault("receiveNotification", f133928).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f133918).default(arg0, false);
+        timeRequireDefault("receiveNotification", f133928).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);

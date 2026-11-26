@@ -1,10 +1,10 @@
-// Module ID: 14263
-// Function ID: 14264
+// Module ID: 14266
+// Function ID: 14267
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 8075, 8090, 563, 8087, 1112, 14264, 2]
+// Dependencies: [32, 19, 8075, 8090, 563, 8087, 1112, 14267, 2]
 // Exports: default
 
-// Module 14263 (useAvatarDecorationSections)
+// Module 14266 (useAvatarDecorationSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1112 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
@@ -80,7 +80,7 @@ export default function useAvatarDecorationSections() {
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14264)(tmp5, obj.PREVIEW);
+  return first(14267)(tmp5, obj.PREVIEW);
 };
 export { Section };
 export const NONE_ITEM = obj2;

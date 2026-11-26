@@ -1,14 +1,14 @@
-// Module ID: 13771
-// Function ID: 13772
+// Module ID: 13774
+// Function ID: 13775
 // Name: useConjureWandStatus
-// Dependencies: [6621, 13772, 5474, 6933, 1112, 4190, 2]
+// Dependencies: [6621, 13775, 5474, 6933, 1112, 4190, 2]
 // Exports: default
 
-// Module 13771 (useConjureWandStatus)
+// Module 13774 (useConjureWandStatus)
 import intl5 from "intl" /* 1112 */;
 import useMountEffectDefault from "useMountEffect" /* 5474 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
-import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 13772 */;
+import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 13775 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 

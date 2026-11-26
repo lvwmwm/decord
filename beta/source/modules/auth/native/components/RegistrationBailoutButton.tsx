@@ -1,10 +1,10 @@
-// Module ID: 17488
-// Function ID: 17489
+// Module ID: 17492
+// Function ID: 17493
 // Name: RegistrationBailoutButton
 // Dependencies: [19, 21, 4913, 1186, 1112, 2]
 // Exports: default
 
-// Module 17488 (RegistrationBailoutButton)
+// Module 17492 (RegistrationBailoutButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;

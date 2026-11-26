@@ -1,9 +1,9 @@
-// Module ID: 16734
-// Function ID: 16735
+// Module ID: 16738
+// Function ID: 16739
 // Name: RemoteFetchData
 // Dependencies: [5, 2]
 
-// Module 16734 (RemoteFetchData)
+// Module 16738 (RemoteFetchData)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

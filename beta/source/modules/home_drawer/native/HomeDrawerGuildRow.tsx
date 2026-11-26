@@ -1,20 +1,20 @@
-// Module ID: 17902
-// Function ID: 17903
+// Module ID: 17906
+// Function ID: 17907
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4847, 4766, 4762, 4843, 6664, 4784, 6619, 4855, 6552, 1386, 1071, 6553, 21, 4913, 504, 5095, 5092, 11706, 10369, 5504, 17903, 17904, 5529, 11, 17905, 17906, 12835, 17907, 17908, 17909, 17911, 17912, 17894, 2]
+// Dependencies: [19, 17, 4847, 4766, 4762, 4843, 6664, 4784, 6619, 4855, 6552, 1386, 1071, 6553, 21, 4913, 504, 5095, 5092, 11706, 10369, 5504, 17907, 17908, 5529, 11, 17909, 17910, 12838, 17911, 17912, 17913, 17915, 17916, 17898, 2]
 // Exports: default
 
-// Module 17902 (HomeDrawerGuildRow)
+// Module 17906 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import useChannelName from "useChannelName" /* 5529 */;
 import ReadStateConstants from "ReadStateConstants" /* 6553 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 17907 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 17908 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 17909 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 17911 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 17912 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 17911 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 17912 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 17913 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 17915 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 17916 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

@@ -1,15 +1,15 @@
-// Module ID: 17186
-// Function ID: 17187
+// Module ID: 17190
+// Function ID: 17191
 // Name: PhoenixLaunchSetting
-// Dependencies: [16152, 17187, 17188, 17190, 11942, 1112, 7388, 2]
+// Dependencies: [16156, 17191, 17192, 17194, 11942, 1112, 7388, 2]
 
-// Module 17186 (PhoenixLaunchSetting)
+// Module 17190 (PhoenixLaunchSetting)
 import intl2 from "intl" /* 1112 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 7388 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16152 */;
-import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17187 */;
-import PhoenixRolloutExperimentDefault from "PhoenixRolloutExperiment" /* 17188 */;
-import PhoenixLaunchState from "PhoenixLaunchState" /* 17190 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16156 */;
+import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17191 */;
+import PhoenixRolloutExperimentDefault from "PhoenixRolloutExperiment" /* 17192 */;
+import PhoenixLaunchState from "PhoenixLaunchState" /* 17194 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

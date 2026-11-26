@@ -1,10 +1,10 @@
-// Module ID: 13684
-// Function ID: 13685
+// Module ID: 13687
+// Function ID: 13688
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 4762, 13672, 1071, 21, 4913, 575, 4927, 1500, 5488, 5127, 13685, 2119, 13686, 6349, 1112, 5504, 13680, 13687, 7219, 1186, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 4762, 13675, 1071, 21, 4913, 575, 4927, 1500, 5488, 5127, 13688, 2119, 13689, 6349, 1112, 5504, 13683, 13690, 7219, 1186, 5511, 2]
 // Exports: default
 
-// Module 13684 (HubEmailConnectionContent)
+// Module 13687 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl8 from "intl" /* 1112 */;
@@ -15,7 +15,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
-import HubConstants from "HubConstants" /* 13672 */;
+import HubConstants from "HubConstants" /* 13675 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -33,8 +33,8 @@ let tmp;
 const native = tmp(1186);
 const Text_Text = tmp(5504);
 const components_Button_Button = tmp(5511);
-const HubEmailConnectionModal = tmp(13680);
-const InkQuillSpotIllustration = tmp(13687);
+const HubEmailConnectionModal = tmp(13683);
+const InkQuillSpotIllustration = tmp(13690);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ HubEmailConnectionSteps: c9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);

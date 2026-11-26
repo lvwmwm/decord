@@ -1,9 +1,9 @@
-// Module ID: 16267
-// Function ID: 16268
+// Module ID: 16271
+// Function ID: 16272
 // Name: AuthorizedAppPermissionsSetting
-// Dependencies: [8712, 1071, 11942, 1112, 16268, 2]
+// Dependencies: [8712, 1071, 11942, 1112, 16272, 2]
 
-// Module 16267 (AuthorizedAppPermissionsSetting)
+// Module 16271 (AuthorizedAppPermissionsSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

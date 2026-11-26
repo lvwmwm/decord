@@ -1,7 +1,7 @@
 // Module ID: 11992
 // Function ID: 11993
 // Name: MessagesHandlers
-// Dependencies: [109, 5, 32, 2164, 8632, 11900, 6660, 11106, 6633, 8878, 8404, 8339, 10424, 4847, 8143, 502, 4762, 11910, 4825, 4784, 5632, 6921, 5964, 4845, 5651, 4816, 4946, 6920, 8531, 1386, 8670, 1071, 11901, 8438, 1388, 7809, 1111, 7539, 10533, 11993, 2119, 10385, 11994, 12031, 12032, 8720, 6494, 7550, 1112, 8612, 11131, 12108, 5127, 12113, 5565, 12115, 10524, 5628, 8437, 10525, 10440, 10386, 10388, 11390, 1378, 8784, 6893, 11265, 8783, 12116, 9744, 8067, 11, 12118, 12119, 8634, 8637, 10423, 5976, 12127, 8709, 5129, 5130, 12145, 1098, 12134, 12177, 6546, 5650, 8301, 8706, 12178, 5652, 12179, 7074, 1404, 12182, 12191, 10678, 12192, 12193, 12194, 12195, 10697, 5592, 12207, 10941, 11946, 5633, 7592, 8066, 1625, 8400, 9955, 6563, 9959, 8430, 5635, 10415, 10416, 7262, 12208, 12223, 9589, 12227, 12229, 6835, 12230, 12231, 12274, 12276, 12278, 8899, 8239, 12327, 10700, 12335, 1255, 6419, 6439, 7280, 6529, 12336, 10464, 10526, 7342, 9312, 6429, 11914, 12337, 9110, 8194, 12338, 9465, 12339, 5930, 1263, 12341, 5595, 12343, 575, 9814, 12345, 5617, 12346, 8250, 5968, 2117, 5860, 10635, 12348, 12351, 12359, 8738, 12361, 6503, 8765, 8763, 12362, 12366, 12402, 12403, 5646, 7545, 5594, 12414, 12415, 5536, 6834, 12416, 12417, 8448, 7793, 6414, 12419, 12146, 8223, 8217, 12457, 10517, 12460, 7993, 8705, 10537, 10535, 12482, 12483, 12484, 10056, 12485, 12489, 12492, 12804, 12809, 12812, 2]
+// Dependencies: [109, 5, 32, 2164, 8632, 11900, 6660, 11106, 6633, 8878, 8404, 8339, 10424, 4847, 8143, 502, 4762, 11910, 4825, 4784, 5632, 6921, 5964, 4845, 5651, 4816, 4946, 6920, 8531, 1386, 8670, 1071, 11901, 8438, 1388, 7809, 1111, 7539, 10533, 11993, 2119, 10385, 11994, 12031, 12032, 8720, 6494, 7550, 1112, 8612, 11131, 12108, 5127, 12113, 5565, 12115, 10524, 5628, 8437, 10525, 10440, 10386, 10388, 11390, 1378, 8784, 6893, 11265, 8783, 12116, 9744, 8067, 11, 12118, 12119, 8634, 8637, 10423, 5976, 12127, 8709, 5129, 5130, 12145, 1098, 12134, 12177, 6546, 5650, 8301, 8706, 12178, 5652, 12179, 7074, 1404, 12182, 12191, 10678, 12192, 12193, 12194, 12195, 10697, 5592, 12207, 10941, 11946, 5633, 7592, 8066, 1625, 8400, 9955, 6563, 9959, 8430, 5635, 10415, 10416, 7262, 12208, 12223, 9589, 12227, 12229, 6835, 12230, 12231, 12274, 12276, 12278, 8899, 8239, 12327, 10700, 12335, 1255, 6419, 6439, 7280, 6529, 12336, 10464, 10526, 7342, 9312, 6429, 11914, 12337, 9110, 8194, 12338, 9465, 12339, 5930, 1263, 12341, 5595, 12343, 575, 9814, 12345, 5617, 12346, 8250, 5968, 2117, 5860, 10635, 12348, 12351, 12359, 8738, 12361, 6503, 8765, 8763, 12362, 12366, 12402, 12403, 5646, 7545, 5594, 12414, 12415, 5536, 6834, 12416, 12417, 8448, 7793, 6414, 12419, 12146, 8223, 8217, 12457, 10517, 12460, 7993, 8705, 10537, 10535, 12482, 12483, 12484, 10056, 12485, 12489, 12492, 12807, 12812, 12815, 2]
 
 // Module 11992 (MessagesHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -107,9 +107,9 @@ import jumpToReferencedMessageDefault from "jumpToReferencedMessage" /* 12482 */
 import handleForwardBreadcrumbDefault from "handleForwardBreadcrumb" /* 12483 */;
 import getInlineForwardOptions from "getInlineForwardOptions" /* 12484 */;
 import openSoundmojiActionSheetDefault from "openSoundmojiActionSheet" /* 12485 */;
-import createAppMessageEmbed from "createAppMessageEmbed" /* 12804 */;
-import previewSharedClientTheme from "previewSharedClientTheme" /* 12809 */;
-import sharedClientThemeViewed from "sharedClientThemeViewed" /* 12812 */;
+import createAppMessageEmbed from "createAppMessageEmbed" /* 12807 */;
+import previewSharedClientTheme from "previewSharedClientTheme" /* 12812 */;
+import sharedClientThemeViewed from "sharedClientThemeViewed" /* 12815 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -2922,7 +2922,7 @@ class MessagesHandlers {
       const message = obj.params.getMessage(nativeSyntheticEventData.messageId);
       if (null != message) {
         const obj2 = { message };
-        const handleTapAppMessageEmbed = tmp(12804).handleTapAppMessageEmbed;
+        const handleTapAppMessageEmbed = tmp(12807).handleTapAppMessageEmbed;
         createAppMessageEmbed;
         const merged = Object.assign(nativeSyntheticEventData);
         const result = handleTapAppMessageEmbed(obj2);
@@ -2934,7 +2934,7 @@ class MessagesHandlers {
       const message = obj.params.getMessage(nativeSyntheticEventData.messageId);
       if (null != message) {
         const obj2 = { message };
-        const handleTapPreviewSharedClientTheme = tmp(12809).handleTapPreviewSharedClientTheme;
+        const handleTapPreviewSharedClientTheme = tmp(12812).handleTapPreviewSharedClientTheme;
         previewSharedClientTheme;
         const merged = Object.assign(nativeSyntheticEventData);
         const result = handleTapPreviewSharedClientTheme(obj2);
@@ -2946,7 +2946,7 @@ class MessagesHandlers {
       const message = obj.params.getMessage(nativeSyntheticEventData.messageId);
       if (null != message) {
         const obj2 = { message };
-        const handleSharedClientThemeViewed = tmp(12812).handleSharedClientThemeViewed;
+        const handleSharedClientThemeViewed = tmp(12815).handleSharedClientThemeViewed;
         sharedClientThemeViewed;
         const merged = Object.assign(nativeSyntheticEventData);
         const result = handleSharedClientThemeViewed(obj2);

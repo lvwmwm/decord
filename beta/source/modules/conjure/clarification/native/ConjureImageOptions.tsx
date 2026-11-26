@@ -1,17 +1,17 @@
-// Module ID: 18600
-// Function ID: 18601
+// Module ID: 18604
+// Function ID: 18605
 // Name: ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 18329, 7682, 5504, 1112, 4190, 5600, 4975, 7047, 7336, 7350, 18598, 7591, 5620, 18601, 7597, 18327, 8217, 18602, 5511, 18288, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 18333, 7682, 5504, 1112, 4190, 5600, 4975, 7047, 7336, 7350, 18602, 7591, 5620, 18605, 7597, 18331, 8217, 18606, 5511, 18292, 2]
 // Exports: default
 
-// Module 18600 (ConjureImageOptions)
+// Module 18604 (ConjureImageOptions)
 import nativeDefault from "native" /* 575 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import react_native from "react-native" /* 4975 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import openMediaModal from "openMediaModal" /* 8217 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 18329 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 18598 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 18333 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 18602 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -251,7 +251,7 @@ function ImageOptionTile(option) {
       if (null != onRemove) {
         MaximizeIcon = tmp2(5620).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(18601).MaximizeIcon;
+        MaximizeIcon = tmp2(18605).MaximizeIcon;
       }
       obj19 = { icon: tmp13(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef4190.JGjZMs, obj20) };
       if (null == onRemove) {

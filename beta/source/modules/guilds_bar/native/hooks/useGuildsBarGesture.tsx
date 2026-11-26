@@ -1,10 +1,10 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 17876
+// Function ID: 17877
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 4784, 6550, 17873, 17870, 1653, 551, 5129, 4920, 12, 1241, 1112, 7449, 17552, 5477, 575, 4828, 10093, 1262, 6511, 5826, 8660, 1378, 1628, 5143, 17874, 17875, 8660, 16487, 5173, 1706, 2]
+// Dependencies: [5, 19, 17, 4784, 6550, 17877, 17874, 1653, 551, 5129, 4920, 12, 1241, 1112, 7449, 17556, 5477, 575, 4828, 10093, 1262, 6511, 5826, 8660, 1378, 1628, 5143, 17878, 17879, 8660, 16491, 5173, 1706, 2]
 // Exports: default
 
-// Module 17872 (useGuildsBarGesture)
+// Module 17876 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1112 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
@@ -20,8 +20,8 @@ import ContextMenuState from "ContextMenuState" /* 8660 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17873 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17870 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17877 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17874 */;
 import "module_1653";
 import module_1653_mod from "module_1653" /* 1653 */;
 import debounce from "debounce" /* 551 */;

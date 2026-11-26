@@ -1,14 +1,14 @@
-// Module ID: 16738
-// Function ID: 16739
+// Module ID: 16742
+// Function ID: 16743
 // Name: FavoritesGuildToggleSetting
-// Dependencies: [8712, 11942, 1112, 3802, 16739, 11224, 2]
+// Dependencies: [8712, 11942, 1112, 3802, 16743, 11224, 2]
 
-// Module 16738 (FavoritesGuildToggleSetting)
+// Module 16742 (FavoritesGuildToggleSetting)
 import intl2 from "intl" /* 1112 */;
 import _modDef3802 from "module_3802" /* 3802 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 11224 */;
-import useIsFavoritesGuildVisibleDefault from "useIsFavoritesGuildVisible" /* 16739 */;
+import useIsFavoritesGuildVisibleDefault from "useIsFavoritesGuildVisible" /* 16743 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

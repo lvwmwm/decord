@@ -1,10 +1,10 @@
-// Module ID: 16653
-// Function ID: 16654
+// Module ID: 16657
+// Function ID: 16658
 // Name: useEmojiByIdOrName
 // Dependencies: [6573, 504, 2]
 // Exports: default, useEmojiByIdOrName
 
-// Module 16653 (useEmojiByIdOrName)
+// Module 16657 (useEmojiByIdOrName)
 import EmojiStore from "EmojiStore" /* 6573 */;
 import size from "module_2" /* 2 */;
 

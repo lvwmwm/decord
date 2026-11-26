@@ -1,10 +1,10 @@
-// Module ID: 13130
-// Function ID: 13131
+// Module ID: 13133
+// Function ID: 13134
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6614, 5964, 1386, 21, 4913, 575, 5083, 5477, 4910, 5595, 13131, 8250, 1112, 504, 1087, 4969, 13132, 11374, 1653, 5123, 1186, 11373, 5468, 7030, 11170, 5504, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 6614, 5964, 1386, 21, 4913, 575, 5083, 5477, 4910, 5595, 13134, 8250, 1112, 504, 1087, 4969, 13135, 11374, 1653, 5123, 1186, 11373, 5468, 7030, 11170, 5504, 5511, 2]
 // Exports: default
 
-// Module 13130 (DMMessageStickerGreeting)
+// Module 13133 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5083 */;
@@ -85,7 +85,7 @@ export default function DMMessageStickerGreeting(channel) {
   }
   const intl2 = tmp(1112).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1112).t.m0zYbV, { username: name });
-  const tmpResult = tmp(13132);
+  const tmpResult = tmp(13135);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];

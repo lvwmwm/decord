@@ -1,19 +1,19 @@
-// Module ID: 17486
-// Function ID: 17487
+// Module ID: 17490
+// Function ID: 17491
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 7370, 17458, 21, 4913, 575, 1653, 17483, 1112, 5504, 15293, 7385, 504, 5579, 7221, 5080, 2]
+// Dependencies: [109, 32, 19, 7370, 17462, 21, 4913, 575, 1653, 17487, 1112, 5504, 15296, 7385, 504, 5579, 7221, 5080, 2]
 // Exports: RegisterPasswordInput
 
-// Module 17486 (RegisterPasswordInput)
+// Module 17490 (RegisterPasswordInput)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import usePasswordScore from "usePasswordScore" /* 17483 */;
+import usePasswordScore from "usePasswordScore" /* 17487 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PhoneStore from "PhoneStore" /* 7370 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17458 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17462 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -123,7 +123,7 @@ export function RegisterPasswordInput(ref) {
   const ref1 = react.useRef(null);
   const obj2 = { inputRef: ref1, enabled: autoFocus };
   const tmp4 = isPasswordFocused;
-  const tmp6 = isPasswordFocused(15293);
+  const tmp6 = isPasswordFocused(15296);
   if (autoFocus == null) {
     autoFocus = false;
   }

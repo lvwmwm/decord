@@ -1,10 +1,10 @@
-// Module ID: 18307
-// Function ID: 18308
+// Module ID: 18311
+// Function ID: 18312
 // Name: conjureSendToProject
-// Dependencies: [5, 6940, 14761, 2]
+// Dependencies: [5, 6940, 14764, 2]
 // Exports: sendConjureMessageToProject
 
-// Module 18307 (conjureSendToProject)
+// Module 18311 (conjureSendToProject)
 import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6940 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

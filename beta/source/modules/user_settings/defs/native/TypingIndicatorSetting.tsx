@@ -1,21 +1,21 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 16774
+// Function ID: 16775
 // Name: TypingIndicatorSetting
-// Dependencies: [19, 1071, 21, 16771, 16029, 4746, 16028, 4743, 11942, 1112, 4192, 16772, 12834, 16774, 2]
+// Dependencies: [19, 1071, 21, 16775, 16033, 4746, 16032, 4743, 11942, 1112, 4192, 16776, 12837, 16778, 2]
 
-// Module 16770 (TypingIndicatorSetting)
+// Module 16774 (TypingIndicatorSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4192 from "module_4192" /* 4192 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4743 */;
 import dismissible_content from "dismissible_content" /* 4746 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12834 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16028 */;
-import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 16771 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 16772 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 12837 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16032 */;
+import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 16775 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 16776 */;
 import react from "react" /* 19 */;
-import DismissibleBadgeUtils_mod from "DismissibleBadgeUtils" /* 16029 */;
+import DismissibleBadgeUtils_mod from "DismissibleBadgeUtils" /* 16033 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let obj = {
   usePreNavigationAction() {
     let closure_2;
     let enabled;
-    let obj = enabled(16771);
+    let obj = enabled(16775);
     enabled = obj.useCustomTypingIndicatorNewPresetsConfig(TypingIndicatorSetting).enabled;
     const tmp = closure_6();
     let closure_1 = tmp;

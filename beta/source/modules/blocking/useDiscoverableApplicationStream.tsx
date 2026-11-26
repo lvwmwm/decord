@@ -1,10 +1,10 @@
-// Module ID: 13512
-// Function ID: 13513
+// Module ID: 13515
+// Function ID: 13516
 // Name: useDiscoverableApplicationStream
 // Dependencies: [6400, 4855, 1071, 504, 2]
 // Exports: default
 
-// Module 13512 (useDiscoverableApplicationStream)
+// Module 13515 (useDiscoverableApplicationStream)
 import Constants from "Constants" /* 1071 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;

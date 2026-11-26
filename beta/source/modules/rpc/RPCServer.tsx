@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f123870 = function() {
+    const f123881 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f123870).then;
-    then(f123870);
+    const then2 = then(f123881).then;
+    then(f123881);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

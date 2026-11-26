@@ -1,10 +1,10 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12780
+// Function ID: 12781
 // Name: FriendsAnimation
 // Dependencies: [17, 1386, 5969, 21, 1358, 4913, 1412, 504, 1494, 4969, 5050, 2]
 // Exports: default
 
-// Module 12779 (FriendsAnimation)
+// Module 12780 (FriendsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;

@@ -1,13 +1,13 @@
-// Module ID: 17813
-// Function ID: 17814
+// Module ID: 17817
+// Function ID: 17818
 // Name: useWaterwheelsDiscoverFeed
-// Dependencies: [19, 1245, 10033, 502, 1386, 10044, 10043, 504, 10040, 17814, 17819, 2]
+// Dependencies: [19, 1245, 10033, 502, 1386, 10044, 10043, 504, 10040, 17818, 17823, 2]
 // Exports: default, useWaterwheelsDiscoverInitialRequest
 
-// Module 17813 (useWaterwheelsDiscoverFeed)
+// Module 17817 (useWaterwheelsDiscoverFeed)
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
-import useWaterwheelsCardEligibilityDefault from "useWaterwheelsCardEligibility" /* 17814 */;
-import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 17819 */;
+import useWaterwheelsCardEligibilityDefault from "useWaterwheelsCardEligibility" /* 17818 */;
+import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 17823 */;
 import react_mod from "react" /* 19 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import ICYMIStore from "ICYMIStore" /* 10033 */;
@@ -51,7 +51,7 @@ export default function useWaterwheelsDiscoverFeed(arg0) {
     const obj = WaterwheelsDiscoverFeedState;
     return obj.selectWaterwheelsDiscoverEntries(EMPTY_DISCOVER_SNAPSHOT, closure_1);
   }, items1);
-  const tmpResult = EMPTY_DISCOVER_SNAPSHOT(17819);
+  const tmpResult = EMPTY_DISCOVER_SNAPSHOT(17823);
   const obj2 = { snapshot: EMPTY_DISCOVER_SNAPSHOT, entries: memo, status: tmpResult.getWaterwheelsDiscoverFeedStatus(EMPTY_DISCOVER_SNAPSHOT, memo.length), retry: requestWaterwheelsDiscover };
   return obj2;
 };

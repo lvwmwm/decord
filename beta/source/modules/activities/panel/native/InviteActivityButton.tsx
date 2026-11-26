@@ -1,9 +1,9 @@
-// Module ID: 19202
-// Function ID: 19203
+// Module ID: 19206
+// Function ID: 19207
 // Name: InviteActivityButton
-// Dependencies: [19, 6921, 6920, 21, 5127, 19203, 2119, 504, 12191, 5511, 11060, 1112, 2]
+// Dependencies: [19, 6921, 6920, 21, 5127, 19207, 2119, 504, 12191, 5511, 11060, 1112, 2]
 
-// Module 19202 (InviteActivityButton)
+// Module 19206 (InviteActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -31,7 +31,7 @@ const memoResult = react.memo(function InviteActivityButton(applicationId) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activity: stateFromStores };
-      const tmp2 = asyncRequire(19203, dependencyMap.paths);
+      const tmp2 = asyncRequire(19207, dependencyMap.paths);
       openLazy(tmp2, "ActivityInviteSheet-" + stateFromStores.session_id, obj);
     }} icon={stateFromStores(11060)} text={intl.string(tmp(1112).t["OzOM/q"])} accessibilityLabel={intl2.string(tmp(1112).t["OzOM/q"])} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
   }

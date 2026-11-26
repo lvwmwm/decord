@@ -1,10 +1,10 @@
-// Module ID: 14028
-// Function ID: 14029
+// Module ID: 14031
+// Function ID: 14032
 // Name: useReferralProgramBannerDetails
 // Dependencies: [19, 1386, 8842, 504, 6954, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 14028 (useReferralProgramBannerDetails)
+// Module 14031 (useReferralProgramBannerDetails)
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import ReferralTrialStore from "ReferralTrialStore" /* 8842 */;

@@ -1,10 +1,10 @@
-// Module ID: 13991
-// Function ID: 13992
+// Module ID: 13994
+// Function ID: 13995
 // Name: BadgeDetailsSheet
-// Dependencies: [5, 32, 19, 17, 4914, 1386, 13992, 8137, 1071, 5142, 21, 4913, 575, 5617, 5504, 1653, 13993, 504, 13994, 13995, 13996, 1706, 13997, 2152, 1390, 13998, 14007, 14008, 5127, 13990, 14009, 8194, 1112, 7061, 14015, 14013, 14020, 5511, 14021, 8142, 5123, 1628, 13956, 14014, 13933, 8149, 5472, 5141, 5145, 5476, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 1386, 13995, 8137, 1071, 5142, 21, 4913, 575, 5617, 5504, 1653, 13996, 504, 13997, 13998, 13999, 1706, 14000, 2152, 1390, 14001, 14010, 14011, 5127, 13993, 14012, 8194, 1112, 7061, 14018, 14016, 14023, 5511, 14024, 8142, 5123, 1628, 13959, 14017, 13936, 8149, 5472, 5141, 5145, 5476, 2]
 // Exports: default
 
-// Module 13991 (BadgeDetailsSheet)
+// Module 13994 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import _mod1653 from "module_1653" /* 1653 */;
@@ -14,17 +14,17 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5617 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 13990 */;
-import BadgeUtils from "BadgeUtils" /* 13993 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 14008 */;
-import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 14014 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 13993 */;
+import BadgeUtils from "BadgeUtils" /* 13996 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 14011 */;
+import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 14017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import UserStore from "UserStore" /* 1386 */;
-import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 13992 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 13995 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8137 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

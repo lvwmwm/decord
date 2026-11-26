@@ -1,11 +1,11 @@
-// Module ID: 14891
-// Function ID: 14892
+// Module ID: 14894
+// Function ID: 14895
 // Name: acquireDatagramConnection
-// Dependencies: [14892, 14893, 14895, 2]
+// Dependencies: [14895, 14896, 14898, 2]
 // Exports: subscribeToDatagramConnection
 
-// Module 14891 (acquireDatagramConnection)
-import DatagramConnectionRecoveryDefault from "DatagramConnectionRecovery" /* 14895 */;
+// Module 14894 (acquireDatagramConnection)
+import DatagramConnectionRecoveryDefault from "DatagramConnectionRecovery" /* 14898 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

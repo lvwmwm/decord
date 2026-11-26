@@ -1,13 +1,13 @@
-// Module ID: 12881
-// Function ID: 12882
+// Module ID: 12884
+// Function ID: 12885
 // Name: MediaPostGridThumbnail
-// Dependencies: [19, 17, 21, 5600, 12879, 1378, 2]
+// Dependencies: [19, 17, 21, 5600, 12882, 1378, 2]
 // Exports: default
 
-// Module 12881 (MediaPostGridThumbnail)
+// Module 12884 (MediaPostGridThumbnail)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ForumPostMedia from "ForumPostMedia" /* 12879 */;
+import ForumPostMedia from "ForumPostMedia" /* 12882 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,14 +1,14 @@
-// Module ID: 12746
-// Function ID: 12747
+// Module ID: 12747
+// Function ID: 12748
 // Name: CheckpointStatsIntroScreen
-// Dependencies: [19, 17, 21, 4913, 575, 12730, 12513, 12514, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 12730, 12720, 12722, 2]
 // Exports: default
 
-// Module 12746 (CheckpointStatsIntroScreen)
+// Module 12747 (CheckpointStatsIntroScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12513 */;
-import CheckpointTextDefault from "CheckpointText" /* 12514 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12720 */;
+import CheckpointTextDefault from "CheckpointText" /* 12722 */;
 import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12730 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

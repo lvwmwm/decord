@@ -1,10 +1,10 @@
-// Module ID: 12923
-// Function ID: 12924
+// Module ID: 12926
+// Function ID: 12927
 // Name: FrecencySection
-// Dependencies: [32, 19, 17, 4761, 12924, 1071, 21, 4913, 575, 10679, 1254, 6864, 12925, 12111, 504, 10681, 5650, 1653, 5123, 1112, 10393, 12926, 12922, 2117, 7600, 12927, 5504, 8658, 12800, 7030, 12928, 5565, 5600, 12931, 2]
+// Dependencies: [32, 19, 17, 4761, 12927, 1071, 21, 4913, 575, 10679, 1254, 6864, 12928, 12111, 504, 10681, 5650, 1653, 5123, 1112, 10393, 12929, 12925, 2117, 7600, 12930, 5504, 8658, 12802, 7030, 12931, 5565, 5600, 12934, 2]
 // Exports: default
 
-// Module 12923 (FrecencySection)
+// Module 12926 (FrecencySection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -13,9 +13,9 @@ import Text_Text from "Text/Text" /* 5504 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 10679 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10681 */;
-import FrecencySectionStore2 from "FrecencySectionStore" /* 12924 */;
-import react2 from "react" /* 12925 */;
-import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 12926 */;
+import FrecencySectionStore2 from "FrecencySectionStore" /* 12927 */;
+import react2 from "react" /* 12928 */;
+import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 12929 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let size1;
 let size2;
 let tmp6;
 let unpackModuleId;
-const ChevronSmallDownIcon = tmp6(12800);
+const ChevronSmallDownIcon = tmp6(12802);
 function Placeholder() {
   let items;
   let items1;
@@ -72,7 +72,7 @@ function FrecentActivityOneClickCTA(context) {
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f102804 = () => {
+  const f102815 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -92,8 +92,8 @@ function FrecentActivityOneClickCTA(context) {
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[14]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f102804);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f102804), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f102815);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f102815), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[30]);
   const obj5 = { context, applicationId: app.applicationId };
@@ -135,7 +135,7 @@ function FrecentApp(app) {
   if (null == app.section) {
     return null;
   } else {
-    const obj4 = app(12922);
+    const obj4 = app(12925);
     const appLauncherIconSource = obj4.getAppLauncherIconSource(app.section.application);
     let obj = {
       style: disabled ? tmp.appContainerDisabled : tmp.appContainer,
@@ -171,7 +171,7 @@ function FrecentApp(app) {
     }
     items = [tmp3, ];
     const obj3 = { submitting, style: tmp.submittingOverlay };
-    items[1] = closure_11(tmp7(12931).SubmittingOverlay, obj3);
+    items[1] = closure_11(tmp7(12934).SubmittingOverlay, obj3);
     return tmp10(PressableOpacity, obj, app.applicationId);
   }
 }

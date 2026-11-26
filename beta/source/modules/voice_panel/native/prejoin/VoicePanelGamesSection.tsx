@@ -1,16 +1,16 @@
-// Module ID: 19315
-// Function ID: 19316
+// Module ID: 19319
+// Function ID: 19320
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 9053, 9765, 9774, 1112, 9742, 7045, 19316, 9674, 2]
+// Dependencies: [19, 21, 9053, 9765, 9774, 1112, 9742, 7045, 19320, 9674, 2]
 
-// Module 19315 (VoicePanelGamesSection)
+// Module 19319 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
 import useGame from "useGame" /* 9053 */;
 import FormComponents from "FormComponents" /* 9674 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9765 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9774 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 19316 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 19320 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

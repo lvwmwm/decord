@@ -1,10 +1,10 @@
-// Module ID: 12965
-// Function ID: 12966
+// Module ID: 12968
+// Function ID: 12969
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 5592, 2187, 1112, 12966, 10681, 5504, 7030, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 5592, 2187, 1112, 12969, 10681, 5504, 7030, 2]
 // Exports: default
 
-// Module 12965 (LearnMoreAboutAppsSection)
+// Module 12968 (LearnMoreAboutAppsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -14,7 +14,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import LinkingDefault from "Linking" /* 5592 */;
 import Pressables from "Pressables" /* 7030 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10681 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12966 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12969 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

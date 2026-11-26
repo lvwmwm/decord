@@ -1,17 +1,17 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15191
+// Function ID: 15192
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [19, 17, 15133, 21, 4913, 575, 8065, 15189, 15190, 15186, 504, 1112, 2639, 7553, 5929, 5504, 7427, 15191, 15192, 2]
+// Dependencies: [19, 17, 15136, 21, 4913, 575, 8065, 15192, 15193, 15189, 504, 1112, 2639, 7553, 5929, 5504, 7427, 15194, 15195, 2]
 // Exports: default
 
-// Module 15188 (GameOrganizationInviteActionSheet)
+// Module 15191 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8065 */;
-import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 15189 */;
-import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 15190 */;
+import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 15192 */;
+import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 15193 */;
 import react from "react" /* 19 */;
-import GameOrganizationStore from "GameOrganizationStore" /* 15133 */;
+import GameOrganizationStore from "GameOrganizationStore" /* 15136 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   useGameOrganizationInviteSuggestionsDefault();
   ({ getSendState, handleInvite } = useLinkedGameOrganizationInviteSenderDefault(guildId));
   useLinkedGameOrganizationInviteSenderDefault(guildId);
-  const obj = guildId(15186);
+  const obj = guildId(15189);
   const data = obj.useLinkedGameOrganization(guildId).data;
   const items = [GameOrganizationStore];
   const items1 = [guildId];
@@ -126,10 +126,10 @@ export default function GameOrganizationInviteActionSheet(guildId) {
     tmp9Result = tmp9(Loading, {});
   } else if (hasNoFriends) {
     const obj11 = { displayNoun: stateFromStores };
-    tmp9Result = tmp9(tmp2(15191), obj11);
+    tmp9Result = tmp9(tmp2(15194), obj11);
   } else {
     const obj12 = { users, getSendState, onInvite: handleInvite };
-    tmp9Result = tmp9(tmp2(15192), obj12);
+    tmp9Result = tmp9(tmp2(15195), obj12);
   }
   return closure_5(ActionSheet, obj5);
 };

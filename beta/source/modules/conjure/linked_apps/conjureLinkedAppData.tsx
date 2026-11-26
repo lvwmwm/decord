@@ -1,10 +1,10 @@
-// Module ID: 18344
-// Function ID: 18345
+// Module ID: 18348
+// Function ID: 18349
 // Name: conjureLinkedAppData
 // Dependencies: [4190, 1112, 2]
 // Exports: linkedAppCallerSides, linkedAppChatAria, linkedAppChatData, linkedAppDataSummary, linkedAppHeaderAria, linkedAppPurpose, linkedAppSettings, linkedAppTargetSides
 
-// Module 18344 (conjureLinkedAppData)
+// Module 18348 (conjureLinkedAppData)
 import intl6 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import size from "module_2" /* 2 */;

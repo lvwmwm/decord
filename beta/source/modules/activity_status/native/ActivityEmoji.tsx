@@ -1,10 +1,10 @@
-// Module ID: 13528
-// Function ID: 13529
+// Module ID: 13531
+// Function ID: 13532
 // Name: ActivityEmoji
 // Dependencies: [19, 21, 4913, 4738, 1412, 9489, 7496, 2]
 // Exports: default
 
-// Module 13528 (ActivityEmoji)
+// Module 13531 (ActivityEmoji)
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import EmojiDefault from "Emoji" /* 7496 */;

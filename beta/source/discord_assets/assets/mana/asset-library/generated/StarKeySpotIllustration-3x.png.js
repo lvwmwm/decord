@@ -1,8 +1,8 @@
-// Module ID: 19987
-// Function ID: 19988
+// Module ID: 19991
+// Function ID: 19992
 // Dependencies: [2]
 
-// Module 19987
+// Module 19991
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StarKeySpotIllustration-3x.png.js");

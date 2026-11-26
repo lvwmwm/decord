@@ -1,12 +1,12 @@
-// Module ID: 14168
-// Function ID: 14169
+// Module ID: 14171
+// Function ID: 14172
 // Name: GiftedSubscriptionUtils
-// Dependencies: [1388, 14169, 1071, 11, 2]
+// Dependencies: [1388, 14172, 1071, 11, 2]
 // Exports: getGiftSubscriptionInterval, getGiftedSubscriptionRowState, getGiftedSubscriptions, getPendingGiftSubscriptionGrants
 
-// Module 14168 (GiftedSubscriptionUtils)
+// Module 14171 (GiftedSubscriptionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import GiftSubscriptionConstants from "GiftSubscriptionConstants" /* 14169 */;
+import GiftSubscriptionConstants from "GiftSubscriptionConstants" /* 14172 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

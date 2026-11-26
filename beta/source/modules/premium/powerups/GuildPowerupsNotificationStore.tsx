@@ -1,12 +1,12 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 13387
+// Function ID: 13388
 // Name: GuildPowerupsNotificationStore
-// Dependencies: [8750, 4784, 8331, 13385, 504, 572, 2]
+// Dependencies: [8750, 4784, 8331, 13388, 504, 572, 2]
 
-// Module 13384 (GuildPowerupsNotificationStore)
+// Module 13387 (GuildPowerupsNotificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 13385 */;
+import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 13388 */;
 import GameServerStore from "GameServerStore" /* 8750 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 8331 */;

@@ -1,10 +1,10 @@
-// Module ID: 12764
-// Function ID: 12765
+// Module ID: 12765
+// Function ID: 12766
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 4914, 12495, 5969, 21, 4913, 575, 1378, 12730, 12732, 12765, 1412, 12735, 1112, 3440, 7496, 12514, 1494, 12513, 504, 6339, 3408, 12766, 12523, 12768, 12750, 12752, 12751, 12753, 1343, 2]
+// Dependencies: [32, 19, 17, 4914, 12495, 5969, 21, 4913, 575, 1378, 12730, 12732, 12766, 1412, 12735, 1112, 3440, 7496, 12722, 1494, 12720, 504, 6339, 3408, 12767, 12510, 12769, 12751, 12753, 12752, 12754, 1343, 2]
 // Exports: default
 
-// Module 12764 (CheckpointEmojiStatsScreen)
+// Module 12765 (CheckpointEmojiStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -12,11 +12,11 @@ import _modDef1343 from "module_1343" /* 1343 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import _modDef3440 from "module_3440" /* 3440 */;
 import EmojiDefault from "Emoji" /* 7496 */;
-import CheckpointTextDefault from "CheckpointText" /* 12514 */;
+import CheckpointTextDefault from "CheckpointText" /* 12722 */;
 import useIsCheckpointWide from "useIsCheckpointWide" /* 12730 */;
 import useCheckpointPressSoundDefault from "useCheckpointPressSound" /* 12732 */;
 import CheckpointPressableDefault from "CheckpointPressable" /* 12735 */;
-import _modDef12765 from "module_12765" /* 12765 */;
+import _modDef12766 from "module_12766" /* 12766 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
@@ -62,7 +62,7 @@ function EmojiChip(emoji) {
   ({ rank, isActive, isReducedMotion, onSelect: closure_129_1 } = emoji);
   const tmp = closure_12();
   const obj = {
-    source: _modDef12765,
+    source: _modDef12766,
     onPress() {
       return closure_1_1(emoji);
     }
@@ -227,17 +227,17 @@ export default function CheckpointEmojiStatsScreen() {
     }
   }
   if (!stateFromStores2 && !(!stateFromStores2 && null != stateFromStores1)) {
-    EmojiSlightlySmilingFaceIcon = tmp5(12766).EmojiFrowningFaceIcon;
+    EmojiSlightlySmilingFaceIcon = tmp5(12767).EmojiFrowningFaceIcon;
   } else {
-    EmojiSlightlySmilingFaceIcon = tmp5(12523).EmojiSlightlySmilingFaceIcon;
+    EmojiSlightlySmilingFaceIcon = tmp5(12510).EmojiSlightlySmilingFaceIcon;
   }
   const obj7 = { centered: tmp4, children: closure_10(View, obj8) };
   obj8 = { style: tmp4 ? tmp.wideContainer : tmp.container, children: items4 };
   const obj9 = { style: tmp4 ? tmp.wideCubeContainer : tmp.emojiCubeContainer, children: closure_9(tmp2Result4, obj10) };
   obj10 = { emoji, scale: tmp25 };
   tmp25 = undefined;
-  const tmp2Result = tmp2(12513);
-  tmp2Result4 = tmp2(12768);
+  const tmp2Result = tmp2(12720);
+  tmp2Result4 = tmp2(12769);
   if (tmp4) {
     tmp25 = result;
   }
@@ -254,24 +254,24 @@ export default function CheckpointEmojiStatsScreen() {
   const obj13 = { size: "xs", color };
   items6[0] = closure_9(EmojiSlightlySmilingFaceIcon, obj13);
   const obj14 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp2Result5 = tmp2(12514);
+  const tmp2Result5 = tmp2(12722);
   items6[1] = closure_9(tmp2Result5, obj14);
   items7 = [closure_10(View, obj12), , , , ];
   let tmp20Result = tmp15;
   if (tmp20Result) {
     const obj15 = { value: stateFromStores1.numEmojisSent };
-    tmp20Result = tmp20(tmp2(12750), obj15);
+    tmp20Result = tmp20(tmp2(12751), obj15);
   }
   items7[1] = tmp20Result;
   if (stateFromStores2) {
-    const obj16 = { accessible: true, accessibilityLabel: tmp5Result3.formatCheckpointStatAccessibilityLabel("emoji", roundResult), style: tmp.number, children: closure_9(tmp2(12751), obj17) };
+    const obj16 = { accessible: true, accessibilityLabel: tmp5Result3.formatCheckpointStatAccessibilityLabel("emoji", roundResult), style: tmp.number, children: closure_9(tmp2(12752), obj17) };
     obj17 = { end: roundResult };
     tmp5Result3 = require("CheckpointNumberUtils");
     stateFromStores2 = tmp20(tmp23, obj16);
   }
   items7[2] = stateFromStores2;
   const obj18 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatToPlainStringResult1 };
-  const tmp2Result6 = tmp2(12514);
+  const tmp2Result6 = tmp2(12722);
   if (!stateFromStores2 && null != stateFromStores1) {
     const intl6 = tmp5(1112).intl;
     const formatToPlainString = intl6.formatToPlainString;

@@ -1,10 +1,10 @@
-// Module ID: 16893
-// Function ID: 16894
+// Module ID: 16897
+// Function ID: 16898
 // Name: SelectWebBrowserSetting
 // Dependencies: [8712, 5624, 1112, 1091, 1378, 11942, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 16893 (SelectWebBrowserSetting)
+// Module 16897 (SelectWebBrowserSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import intl4 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;

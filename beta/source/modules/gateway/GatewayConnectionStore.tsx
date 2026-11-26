@@ -1,7 +1,7 @@
 // Module ID: 6394
 // Function ID: 6395
 // Name: GatewayConnectionStore
-// Dependencies: [5, 6395, 1230, 502, 6627, 4762, 2131, 5654, 5753, 4816, 6920, 6396, 1071, 1081, 14902, 14943, 3, 510, 15051, 6529, 1378, 6651, 14937, 12, 6401, 14916, 504, 572, 2]
+// Dependencies: [5, 6395, 1230, 502, 6627, 4762, 2131, 5654, 5753, 4816, 6920, 6396, 1071, 1081, 14905, 14946, 3, 510, 15054, 6529, 1378, 6651, 14940, 12, 6401, 14919, 504, 572, 2]
 
 // Module 6394 (GatewayConnectionStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -11,10 +11,10 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import DiscordAppStateDefault from "DiscordAppState" /* 6651 */;
-import GatewaySocketSingleton from "GatewaySocketSingleton" /* 14902 */;
-import ConnectionStateDefault from "ConnectionState" /* 14916 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 14937 */;
-import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 14943 */;
+import GatewaySocketSingleton from "GatewaySocketSingleton" /* 14905 */;
+import ConnectionStateDefault from "ConnectionState" /* 14919 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 14940 */;
+import dispatchSocketMessageDefault from "dispatchSocketMessage" /* 14946 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PassTheControllerStore from "PassTheControllerStore" /* 6395 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
@@ -258,9 +258,9 @@ obj = {
     const socket2 = GatewaySocketSingleton.socket;
     let connectResult = socket2.isSessionEstablished();
     if (connectResult) {
-      const socket3 = tmp(14902).socket;
+      const socket3 = tmp(14905).socket;
       socket3.close();
-      const socket4 = tmp(14902).socket;
+      const socket4 = tmp(14905).socket;
       connectResult = socket4.connect();
     }
     return connectResult;
@@ -288,12 +288,12 @@ obj = {
         tmp6 = obj2.getState() !== constants2.BACKGROUND;
       }
       if (!tmp6) {
-        tmp6 = null != tmp(14902).localVoiceState.channelId;
+        tmp6 = null != tmp(14905).localVoiceState.channelId;
       }
       if (tmp6) {
         const obj3 = PauseGatewaySocketAll;
         obj3.setIsPaused(false);
-        const socket2 = tmp(14902).socket;
+        const socket2 = tmp(14905).socket;
         socket2.connect();
       }
     }
@@ -340,14 +340,14 @@ obj = {
     const isIOSResult = tmpResult.isIOS() && state === constants2.BACKGROUND;
     if (isIOSResult) {
       if (null == guildId.channelId) {
-        const socket3 = tmp(14902).socket;
+        const socket3 = tmp(14905).socket;
         socket3.close(true);
       } else {
-        const socket = tmp(14902).socket;
+        const socket = tmp(14905).socket;
         if (socket.isClosed()) {
           const obj3 = PauseGatewaySocketAll;
           obj3.setIsPaused(false);
-          const socket2 = tmp(14902).socket;
+          const socket2 = tmp(14905).socket;
           socket2.connect();
         }
       }
@@ -415,20 +415,20 @@ obj = {
         if (state === constants2.INACTIVE) {
           if (state.state === constants2.BACKGROUND) {
             if (null == GatewaySocketSingleton.localVoiceState.channelId) {
-              const socket4 = tmp(14902).socket;
+              const socket4 = tmp(14905).socket;
               socket4.close(true);
             }
           }
         }
         let isClosedResult = state === tmp7.BACKGROUND && state.state === tmp7.ACTIVE;
         if (isClosedResult) {
-          const socket2 = tmp(14902).socket;
+          const socket2 = tmp(14905).socket;
           isClosedResult = socket2.isClosed();
         }
         if (isClosedResult) {
           const obj2 = PauseGatewaySocketAll;
           obj2.setIsPaused(false);
-          const socket3 = tmp(14902).socket;
+          const socket3 = tmp(14905).socket;
           socket3.connect();
         }
       }
@@ -437,7 +437,7 @@ obj = {
       const obj3 = PauseGatewaySocketAll;
       obj3.setIsPaused(false);
       if (AuthenticationStore.isAuthenticated()) {
-        const socket = tmp(14902).socket;
+        const socket = tmp(14905).socket;
         socket.resetBackoff("App state is active");
       }
     }
@@ -457,7 +457,7 @@ obj = {
           const guildMembers = socket.requestGuildMembers(userIds.guildIds, obj);
         });
       } else {
-        const socket2 = tmp(14902).socket;
+        const socket2 = tmp(14905).socket;
         obj = { query: null, limit: null, presences: userIds.presences };
         ({ query: obj.query, limit: obj.limit } = userIds);
         let guildMembers = socket2.requestGuildMembers(userIds.guildIds, obj);
@@ -527,14 +527,14 @@ obj = {
           region = call.region;
         }
       }
-      const socket2 = tmp(14902).socket;
+      const socket2 = tmp(14905).socket;
       const streamCreate = socket2.streamCreate;
       if (region == null) {
         region = RTCRegionStore.getPreferredRegion();
       }
       streamCreate(streamType, guildId, channelId, region);
     }
-    const localVoiceState = tmp(14902).localVoiceState;
+    const localVoiceState = tmp(14905).localVoiceState;
     localVoiceState.update();
     return false;
   },
@@ -566,7 +566,7 @@ obj = {
           }
         });
       }
-      let socket2 = tmp(14902).socket;
+      let socket2 = tmp(14905).socket;
       socket2.streamWatch(streamKey);
     }
     return false;
@@ -575,10 +575,10 @@ obj = {
     streamKey = streamKey.streamKey;
     const socket = GatewaySocketSingleton.socket;
     if (socket.isSessionEstablished()) {
-      const socket2 = tmp(14902).socket;
+      const socket2 = tmp(14905).socket;
       socket2.streamDelete(streamKey);
     }
-    const localVoiceState = tmp(14902).localVoiceState;
+    const localVoiceState = tmp(14905).localVoiceState;
     localVoiceState.update();
     return false;
   },

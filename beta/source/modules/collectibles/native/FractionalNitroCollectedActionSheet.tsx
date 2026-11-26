@@ -1,10 +1,10 @@
-// Module ID: 14253
-// Function ID: 14254
+// Module ID: 14256
+// Function ID: 14257
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1071, 1388, 21, 4913, 575, 9552, 5600, 14254, 5122, 8117, 4920, 9226, 9227, 5504, 1112, 2187, 5592, 5141, 9119, 7030, 9449, 5511, 5127, 5476, 2]
+// Dependencies: [19, 17, 1071, 1388, 21, 4913, 575, 9552, 5600, 14257, 5122, 8117, 4920, 9226, 9227, 5504, 1112, 2187, 5592, 5141, 9119, 7030, 9449, 5511, 5127, 5476, 2]
 // Exports: default
 
-// Module 14253 (FractionalNitroCollectedActionSheet)
+// Module 14256 (FractionalNitroCollectedActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import shared from "shared" /* 4920 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9552 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14254 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14257 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;

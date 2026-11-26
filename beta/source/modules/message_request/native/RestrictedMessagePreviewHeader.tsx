@@ -1,10 +1,10 @@
-// Module ID: 19030
-// Function ID: 19031
+// Module ID: 19034
+// Function ID: 19035
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 13331, 21, 4913, 575, 7520, 4969, 8067, 7545, 5594, 5127, 13501, 2119, 8136, 6835, 6429, 7030, 1112, 1186, 5504, 19013, 7322, 19031, 2]
+// Dependencies: [19, 17, 13334, 21, 4913, 575, 7520, 4969, 8067, 7545, 5594, 5127, 13504, 2119, 8136, 6835, 6429, 7030, 1112, 1186, 5504, 19017, 7322, 19035, 2]
 // Exports: default
 
-// Module 19030 (RestrictedMessagePreviewHeader)
+// Module 19034 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127
 import ToastUtils from "ToastUtils" /* 5594 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 13331 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 13334 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(13501, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(13504, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;

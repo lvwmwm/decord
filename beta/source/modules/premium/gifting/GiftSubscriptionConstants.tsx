@@ -1,9 +1,9 @@
-// Module ID: 14169
-// Function ID: 14170
+// Module ID: 14172
+// Function ID: 14173
 // Name: GiftSubscriptionConstants
 // Dependencies: [2]
 
-// Module 14169 (GiftSubscriptionConstants)
+// Module 14172 (GiftSubscriptionConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/GiftSubscriptionConstants.tsx");

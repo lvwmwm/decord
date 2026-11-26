@@ -1,10 +1,10 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12791
+// Function ID: 12792
 // Name: TraitPicker
-// Dependencies: [19, 17, 21, 4913, 12787, 575, 6336, 1112, 3440, 5504, 12514, 1494, 5093, 12790, 12792, 2]
+// Dependencies: [19, 17, 21, 4913, 12789, 575, 6336, 1112, 3440, 5504, 12722, 1494, 5093, 12792, 6015, 5970, 12794, 2]
 // Exports: default, useTraitOptionSize
 
-// Module 12789 (TraitPicker)
+// Module 12791 (TraitPicker)
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -12,10 +12,10 @@ import _modDef3440 from "module_3440" /* 3440 */;
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5093 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6336 */;
-import CheckpointTextDefault from "CheckpointText" /* 12514 */;
-import TraitOptionList from "TraitOptionList" /* 12787 */;
-import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12790 */;
-import useTraitPicker from "useTraitPicker" /* 12792 */;
+import CheckpointTextDefault from "CheckpointText" /* 12722 */;
+import TraitOptionList from "TraitOptionList" /* 12789 */;
+import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12792 */;
+import useTraitPicker from "useTraitPicker" /* 12794 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -87,12 +87,22 @@ class TraitPickerDetails {
 }
 class TraitPickerOptionList {
   constructor(customizationOption) {
+    let options;
+    let options2;
+    let tmp4;
     customizationOption = customizationOption.customizationOption;
     const merged = Object.assign(customizationOption, Object.assign({ customizationOption: 0 }));
-    TraitOptionListDefault;
-    const merged1 = Object.assign(merged);
-    const obj2 = CheckpointCustomizationUtils;
-    return <tmp2 key={customizationOption} customizationOption={customizationOption} hideRarity={!obj2.getIsTraitRarityVisible(customizationOption)} />;
+    ({ options, options: options2 } = merged);
+    const someResult = options.some((optionId) => optionId.optionId === merged.selectedOptionId);
+    if (someResult) {
+      TraitOptionListDefault;
+      const merged1 = Object.assign(merged);
+      tmp4 = <tmp8 key={customizationOption} customizationOption={customizationOption} hideRarity={!merged(6336).getIsTraitRarityVisible(customizationOption)} />;
+      const obj2 = merged(6336);
+    } else {
+      tmp4 = null;
+    }
+    return tmp4;
   }
 }
 class TraitPickerPortrait {

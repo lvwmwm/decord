@@ -1,14 +1,14 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17404
+// Function ID: 17405
 // Name: ParentalControlsFriendRequestsEveryoneSetting
-// Dependencies: [19, 8335, 8712, 1071, 9138, 16127, 7415, 16131, 11942, 1112, 2]
+// Dependencies: [19, 8335, 8712, 1071, 9138, 16131, 7415, 16135, 11942, 1112, 2]
 
-// Module 17400 (ParentalControlsFriendRequestsEveryoneSetting)
+// Module 17404 (ParentalControlsFriendRequestsEveryoneSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7415 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16127 */;
-import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16131 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16131 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16135 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8335 */;
 import Constants from "Constants" /* 1071 */;
@@ -29,7 +29,7 @@ let obj = {
     let controlledSetting;
     let obj = controlledSetting(9138);
     const selectedTeenId = obj.useSelectedTeenId();
-    const ParentalControlledFriendSourceFlags = controlledSetting(16127).ParentalControlledFriendSourceFlags;
+    const ParentalControlledFriendSourceFlags = controlledSetting(16131).ParentalControlledFriendSourceFlags;
     controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return react.useMemo(() => {

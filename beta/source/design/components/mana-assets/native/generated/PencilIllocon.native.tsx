@@ -1,27 +1,27 @@
-// Module ID: 13621
-// Function ID: 13622
+// Module ID: 13624
+// Function ID: 13625
 // Name: PencilIllocon
-// Dependencies: [19, 21, 13622, 13485, 13623, 7357, 5600, 2]
+// Dependencies: [19, 21, 13625, 13488, 13626, 7357, 5600, 2]
 // Exports: PencilIllocon
 
-// Module 13621 (PencilIllocon)
+// Module 13624 (PencilIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef13485 from "module_13485" /* 13485 */;
-import _modDef13622 from "module_13622" /* 13622 */;
-import _modDef13623 from "module_13623" /* 13623 */;
+import _modDef13488 from "module_13488" /* 13488 */;
+import _modDef13625 from "module_13625" /* 13625 */;
+import _modDef13626 from "module_13626" /* 13626 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13622 };
+let obj2 = { uri: _modDef13625 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13485 };
-({ uri: _modDef13485 });
-obj[3] = { uri: _modDef13623 };
-({ uri: _modDef13623 });
+obj[2] = { uri: _modDef13488 };
+({ uri: _modDef13488 });
+obj[3] = { uri: _modDef13626 };
+({ uri: _modDef13626 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PencilIllocon.native.tsx");
 

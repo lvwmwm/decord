@@ -1,10 +1,10 @@
-// Module ID: 13525
-// Function ID: 13526
+// Module ID: 13528
+// Function ID: 13529
 // Name: StageChannelRichPresenceUtils
 // Dependencies: [32, 502, 4762, 4784, 6536, 6500, 1071, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 13525 (StageChannelRichPresenceUtils)
+// Module 13528 (StageChannelRichPresenceUtils)
 import Constants from "Constants" /* 1071 */;
 import StageChannelsConstants from "StageChannelsConstants" /* 6500 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

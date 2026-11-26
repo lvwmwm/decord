@@ -1,12 +1,12 @@
-// Module ID: 18618
-// Function ID: 18619
+// Module ID: 18622
+// Function ID: 18623
 // Name: ConjureServerChangeButtons
-// Dependencies: [19, 21, 18619, 5929, 5511, 18310, 18308, 5504, 2]
+// Dependencies: [19, 21, 18623, 5929, 5511, 18314, 18312, 5504, 2]
 // Exports: default
 
-// Module 18618 (ConjureServerChangeButtons)
-import showConjureProjectServerSheetDefault from "showConjureProjectServerSheet" /* 18308 */;
-import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 18310 */;
+// Module 18622 (ConjureServerChangeButtons)
+import showConjureProjectServerSheetDefault from "showConjureProjectServerSheet" /* 18312 */;
+import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 18314 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export default function ConjureServerChangeButtons(projectId) {
   dependencyMap = undefined;
   action = undefined;
   const tmp = dependencyMap;
-  const iter = onReply(18619)(projectId, change);
+  const iter = onReply(18623)(projectId, change);
   ({ project: c2, action } = iter);
   let done = iter.done;
   const keep_label = change.keep_label;

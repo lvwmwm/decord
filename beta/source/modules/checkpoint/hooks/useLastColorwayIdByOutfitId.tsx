@@ -1,10 +1,10 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 12798
+// Function ID: 12799
 // Name: useLastColorwayIdByOutfitId
 // Dependencies: [32, 19, 12495, 504, 6014, 6013, 2]
 // Exports: default
 
-// Module 12796 (useLastColorwayIdByOutfitId)
+// Module 12798 (useLastColorwayIdByOutfitId)
 import get_initialized from "get initialized" /* 504 */;
 import CheckpointTrait from "CheckpointTrait" /* 6014 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

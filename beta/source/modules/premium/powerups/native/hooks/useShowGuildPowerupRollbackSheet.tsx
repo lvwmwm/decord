@@ -1,12 +1,12 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13406
+// Function ID: 13407
 // Name: useShowGuildPowerupRollbackSheet
-// Dependencies: [32, 19, 4759, 13404, 9080, 13406, 5127, 2]
+// Dependencies: [32, 19, 4759, 13407, 9080, 13409, 5127, 2]
 // Exports: default
 
-// Module 13403 (useShowGuildPowerupRollbackSheet)
+// Module 13406 (useShowGuildPowerupRollbackSheet)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 13406 */;
+import openGuildPowerupRollbackSheetDefault from "openGuildPowerupRollbackSheet" /* 13409 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -33,8 +33,8 @@ export default function useShowGuildPowerupRollbackSheet(arg0, arg1) {
   dependencyMap = undefined;
   _slicedToArray = undefined;
   let tmp = dependencyMap;
-  ({ shouldShow, modalConfig } = first(13404)(arg0, arg1));
-  const tmp2 = first(13404)(arg0, arg1);
+  ({ shouldShow, modalConfig } = first(13407)(arg0, arg1));
+  const tmp2 = first(13407)(arg0, arg1);
   if (shouldShow) {
     shouldShow = null != modalConfig;
   }

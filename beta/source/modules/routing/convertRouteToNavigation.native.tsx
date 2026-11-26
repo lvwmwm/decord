@@ -1,10 +1,10 @@
-// Module ID: 13748
-// Function ID: 13749
+// Module ID: 13751
+// Function ID: 13752
 // Name: convertRouteToNavigation
 // Dependencies: [1071, 4769, 8578, 5092, 5089, 5090, 4951, 4964, 6657, 12293, 2]
 // Exports: convertRouteToNavigation
 
-// Module 13748 (convertRouteToNavigation)
+// Module 13751 (convertRouteToNavigation)
 import Constants from "Constants" /* 1071 */;
 import ChannelConstants from "ChannelConstants" /* 4769 */;
 import matchPathCompat from "matchPathCompat" /* 4951 */;

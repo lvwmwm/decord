@@ -1,10 +1,10 @@
-// Module ID: 19467
-// Function ID: 19468
+// Module ID: 19471
+// Function ID: 19472
 // Name: react-native
 // Dependencies: [1377, 2]
 // Exports: getAppMajorVersion
 
-// Module 19467 (react-native)
+// Module 19471 (react-native)
 import react_native from "react-native" /* 1377 */;
 import size from "module_2" /* 2 */;
 

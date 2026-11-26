@@ -1,10 +1,10 @@
-// Module ID: 18273
-// Function ID: 18274
+// Module ID: 18277
+// Function ID: 18278
 // Name: useConjureSharingMode
-// Dependencies: [5, 32, 19, 6621, 1112, 4190, 504, 18274, 18275, 6933, 6622, 2]
+// Dependencies: [5, 32, 19, 6621, 1112, 4190, 504, 18278, 18279, 6933, 6622, 2]
 // Exports: conjureSharingOptions, default
 
-// Module 18273 (useConjureSharingMode)
+// Module 18277 (useConjureSharingMode)
 import intl4 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;

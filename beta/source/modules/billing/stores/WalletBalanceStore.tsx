@@ -1,9 +1,9 @@
-// Module ID: 14055
-// Function ID: 14056
+// Module ID: 14058
+// Function ID: 14059
 // Name: WalletBalanceStore
 // Dependencies: [504, 572, 2]
 
-// Module 14055 (WalletBalanceStore)
+// Module 14058 (WalletBalanceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

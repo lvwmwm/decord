@@ -1,10 +1,10 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13265
+// Function ID: 13266
 // Name: TimestampSearchHeader
 // Dependencies: [19, 17, 21, 5643, 4913, 575, 5622, 5504, 1112, 7709, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 13262 (TimestampSearchHeader)
+// Module 13265 (TimestampSearchHeader)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5504 */;

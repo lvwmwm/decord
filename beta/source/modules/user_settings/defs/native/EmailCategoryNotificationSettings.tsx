@@ -1,13 +1,13 @@
-// Module ID: 16916
-// Function ID: 16917
+// Module ID: 16920
+// Function ID: 16921
 // Name: EmailCategoryNotificationSettings
-// Dependencies: [15026, 8712, 16914, 504, 11942, 16913, 1112, 2]
+// Dependencies: [15029, 8712, 16918, 504, 11942, 16917, 1112, 2]
 
-// Module 16916 (EmailCategoryNotificationSettings)
+// Module 16920 (EmailCategoryNotificationSettings)
 import get_initialized from "get initialized" /* 504 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15026 */;
-import EmailSettingsConstants from "EmailSettingsConstants" /* 16914 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15029 */;
+import EmailSettingsConstants from "EmailSettingsConstants" /* 16918 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -25,7 +25,7 @@ function useMarketingEmailsDisabled() {
 function createEmailSettings(EMAIL_NOTIFICATIONS) {
   let obj2;
   let obj4;
-  const f110899 = (category) => category.category === RECOMMENDATIONS_AND_EVENTS;
+  const f110910 = (category) => category.category === RECOMMENDATIONS_AND_EVENTS;
   function useValue() {
     let emailSettings;
     let closure_0 = RECOMMENDATIONS_AND_EVENTS;
@@ -38,7 +38,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
     return obj.updateEmailSetting(RECOMMENDATIONS_AND_EVENTS, arg0);
   }
   const COMMUNICATION = constants.COMMUNICATION;
-  const found = closure_4.find(f110899);
+  const found = closure_4.find(f110910);
   if (null == found) {
     const _Error5 = Error;
     const _HermesInternal5 = HermesInternal;
@@ -52,7 +52,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
     ({ label: obj3.useTitle, subLabel: obj3.useDescription } = found);
     const SOCIAL = tmp.SOCIAL;
     obj2 = COMMUNICATION(11942);
-    const found1 = arr.find(f110899);
+    const found1 = arr.find(f110910);
     if (null == found1) {
       const _Error4 = Error;
       const _HermesInternal4 = HermesInternal;
@@ -66,7 +66,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
       const tmp19Result = COMMUNICATION(11942);
       obj.social = tmp19Result.createToggle(obj6);
       const UPDATES_AND_ANNOUNCEMENTS = tmp.UPDATES_AND_ANNOUNCEMENTS;
-      const found2 = arr.find(f110899);
+      const found2 = arr.find(f110910);
       if (null == found2) {
         const _Error3 = Error;
         const _HermesInternal3 = HermesInternal;
@@ -80,7 +80,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
         const tmp19Result5 = COMMUNICATION(11942);
         obj.updatesAndAnnouncements = tmp19Result5.createToggle(obj8);
         const TIPS = tmp.TIPS;
-        const found3 = arr.find(f110899);
+        const found3 = arr.find(f110910);
         if (null == found3) {
           const _Error2 = Error;
           const _HermesInternal2 = HermesInternal;
@@ -94,7 +94,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
           const tmp19Result6 = COMMUNICATION(11942);
           obj.tips = tmp19Result6.createToggle(obj10);
           const RECOMMENDATIONS_AND_EVENTS = tmp.RECOMMENDATIONS_AND_EVENTS;
-          const found4 = arr.find(f110899);
+          const found4 = arr.find(f110910);
           if (null == found4) {
             const _Error = Error;
             const _HermesInternal = HermesInternal;
@@ -115,7 +115,7 @@ function createEmailSettings(EMAIL_NOTIFICATIONS) {
               parent: EMAIL_NOTIFICATIONS,
               variant: "danger",
               useIsDisabled: useMarketingEmailsDisabled,
-              onPress: COMMUNICATION(16913).updateMarketingEmailSettings
+              onPress: COMMUNICATION(16917).updateMarketingEmailSettings
             };
             const createPressable = COMMUNICATION(11942).createPressable;
             COMMUNICATION(11942);

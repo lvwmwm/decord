@@ -1,10 +1,10 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 16322
+// Function ID: 16323
 // Name: LocalSvg
 // Dependencies: [5, 32, 19, 17, 21, 1148, 7865, 2]
 // Exports: default
 
-// Module 16318 (LocalSvg)
+// Module 16322 (LocalSvg)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

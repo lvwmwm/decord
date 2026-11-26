@@ -1,18 +1,18 @@
-// Module ID: 16164
-// Function ID: 16165
+// Module ID: 16168
+// Function ID: 16169
 // Name: UseDataToImproveDiscordSetting
-// Dependencies: [6427, 8712, 1071, 16126, 5860, 1112, 5932, 16165, 16166, 504, 11942, 2]
+// Dependencies: [6427, 8712, 1071, 16130, 5860, 1112, 5932, 16169, 16170, 504, 11942, 2]
 
-// Module 16164 (UseDataToImproveDiscordSetting)
+// Module 16168 (UseDataToImproveDiscordSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
 import AlertDefault from "Alert" /* 5932 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16126 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16165 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16166 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16130 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 16169 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16170 */;
 import ConsentStore from "ConsentStore" /* 6427 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;

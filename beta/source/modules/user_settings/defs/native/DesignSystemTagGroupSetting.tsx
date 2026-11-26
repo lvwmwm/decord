@@ -1,9 +1,9 @@
-// Module ID: 17262
-// Function ID: 17263
+// Module ID: 17266
+// Function ID: 17267
 // Name: DesignSystemTagGroupSetting
-// Dependencies: [8712, 1071, 11942, 17263, 2]
+// Dependencies: [8712, 1071, 11942, 17267, 2]
 
-// Module 17262 (DesignSystemTagGroupSetting)
+// Module 17266 (DesignSystemTagGroupSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;

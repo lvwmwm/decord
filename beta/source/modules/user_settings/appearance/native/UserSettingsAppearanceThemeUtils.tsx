@@ -1,10 +1,10 @@
-// Module ID: 16415
-// Function ID: 16416
+// Module ID: 16419
+// Function ID: 16420
 // Name: UserSettingsAppearanceThemeUtils
-// Dependencies: [1237, 1191, 1194, 1071, 1388, 1240, 1195, 16416, 12811, 5826, 1238, 4973, 16417, 1255, 2]
+// Dependencies: [1237, 1191, 1194, 1071, 1388, 1240, 1195, 16420, 12814, 5826, 1238, 4973, 16421, 1255, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 16415 (UserSettingsAppearanceThemeUtils)
+// Module 16419 (UserSettingsAppearanceThemeUtils)
 import Constants from "Constants" /* 1071 */;
 import ThemeConstants from "ThemeConstants" /* 1194 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1238 */;
@@ -13,9 +13,9 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import ThemeActionCreators from "ThemeActionCreators" /* 4973 */;
 import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5826 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 12811 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16416 */;
-import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 16417 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 12814 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16420 */;
+import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 16421 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1237 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import size from "module_2" /* 2 */;

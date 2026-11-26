@@ -1,18 +1,18 @@
-// Module ID: 18768
-// Function ID: 18769
+// Module ID: 18772
+// Function ID: 18773
 // Name: renderChannelContent
-// Dependencies: [19, 17, 5642, 6553, 21, 4913, 1378, 18765, 6823, 18769, 5504, 7695, 7763, 17648, 2]
+// Dependencies: [19, 17, 5642, 6553, 21, 4913, 1378, 18769, 6823, 18773, 5504, 7695, 7763, 17652, 2]
 // Exports: default
 
-// Module 18768 (renderChannelContent)
+// Module 18772 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
 import ReadStateConstants from "ReadStateConstants" /* 6553 */;
 import LockIcon from "LockIcon" /* 7695 */;
 import WarningIcon from "WarningIcon" /* 7763 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18765 */;
-import ChannelTitleDefault from "ChannelTitle" /* 18769 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18769 */;
+import ChannelTitleDefault from "ChannelTitle" /* 18773 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -115,7 +115,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(17648), obj12);
+      isSubscriptionGated = tmp9(tmp2(17652), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);

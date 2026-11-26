@@ -1,16 +1,8 @@
 // Module ID: 15324
 // Function ID: 15325
-// Dependencies: [15317]
+// Dependencies: []
 
 // Module 15324
-import _mod15317 from "module_15317" /* 15317 */;
+const tmp = Number.MAX_SAFE_INTEGER || 9007199254740991;
 
-
-export default (arg0, arg1) => {
-  const tmp = _mod15317(arg0, arg1);
-  let version = null;
-  if (tmp) {
-    version = tmp.version;
-  }
-  return version;
-};
+export default { MAX_LENGTH: 256, MAX_SAFE_COMPONENT_LENGTH: 16, MAX_SAFE_BUILD_LENGTH: 250, MAX_SAFE_INTEGER: tmp, RELEASE_TYPES: ["major", "premajor", "minor", "preminor", "patch", "prepatch", "prerelease"], SEMVER_SPEC_VERSION: "2.0.0", FLAG_INCLUDE_PRERELEASE: 1, FLAG_LOOSE: 2 };

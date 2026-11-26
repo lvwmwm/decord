@@ -1,10 +1,10 @@
-// Module ID: 14489
-// Function ID: 14490
+// Module ID: 14492
+// Function ID: 14493
 // Name: useCanRequestStreamFromUser
 // Dependencies: [4762, 4825, 4819, 4845, 1071, 504, 12, 4850, 2]
 // Exports: default
 
-// Module 14489 (useCanRequestStreamFromUser)
+// Module 14492 (useCanRequestStreamFromUser)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4850 */;

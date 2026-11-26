@@ -1,14 +1,14 @@
-// Module ID: 18584
-// Function ID: 18585
+// Module ID: 18588
+// Function ID: 18589
 // Name: conjurePlanExperienceSections
-// Dependencies: [4190, 1112, 18575, 18585, 18576, 2]
+// Dependencies: [4190, 1112, 18579, 18589, 18580, 2]
 // Exports: conjurePlanDisplayedSections, conjurePlanExperienceIsApp, conjurePlanExperienceKindLabel, conjurePlanExperienceKindNote, conjurePlanFrameFeatures, conjurePlanRequirementGroups, conjurePlanRequirementsSectionId
 
-// Module 18584 (conjurePlanExperienceSections)
+// Module 18588 (conjurePlanExperienceSections)
 import intl4 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import conjurePlanFormat from "conjurePlanFormat" /* 18576 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18585 */;
+import conjurePlanFormat from "conjurePlanFormat" /* 18580 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18589 */;
 import size from "module_2" /* 2 */;
 
 let changes, set;
@@ -135,8 +135,8 @@ export function conjurePlanRequirementGroups(proposal, guild) {
   }
   let items = [{ key: "permissions", caption: _modDef4190["2UbW6r"], names: proposal.bot_permissions, label }, ];
   ({ key: "permissions", caption: _modDef4190["2UbW6r"], names: proposal.bot_permissions, label });
-  items[1] = { key: "intents", caption: _modDef4190["7TKfpj"], names: proposal.privileged_intents, label: guildPermissionSpecMap(18576).formatConjurePlanRequirementLabel };
-  ({ key: "intents", caption: _modDef4190["7TKfpj"], names: proposal.privileged_intents, label: guildPermissionSpecMap(18576).formatConjurePlanRequirementLabel });
+  items[1] = { key: "intents", caption: _modDef4190["7TKfpj"], names: proposal.privileged_intents, label: guildPermissionSpecMap(18580).formatConjurePlanRequirementLabel };
+  ({ key: "intents", caption: _modDef4190["7TKfpj"], names: proposal.privileged_intents, label: guildPermissionSpecMap(18580).formatConjurePlanRequirementLabel });
   return items.flatMap(function(names) {
     let intl;
     let items;

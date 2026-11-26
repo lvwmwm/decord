@@ -1,14 +1,14 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13480
+// Function ID: 13481
 // Name: BoostGemSlashIcon
-// Dependencies: [19, 21, 575, 5599, 13478, 2]
+// Dependencies: [19, 21, 575, 5599, 13481, 2]
 // Exports: BoostGemSlashIcon
 
-// Module 13477 (BoostGemSlashIcon)
+// Module 13480 (BoostGemSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 13478 */;
+import AssetRegistry from "AssetRegistry" /* 13481 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

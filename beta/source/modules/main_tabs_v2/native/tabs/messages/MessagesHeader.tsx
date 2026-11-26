@@ -1,10 +1,10 @@
-// Module ID: 17557
-// Function ID: 17558
+// Module ID: 17561
+// Function ID: 17562
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1071, 21, 575, 13062, 5643, 5517, 4913, 1653, 5514, 5515, 17552, 5090, 13200, 7096, 7591, 10266, 1112, 5504, 7429, 17558, 5511, 5604, 2]
+// Dependencies: [19, 17, 1071, 21, 575, 13065, 5643, 5517, 4913, 1653, 5514, 5515, 17556, 5090, 13203, 7096, 7591, 10266, 1112, 5504, 7429, 17562, 5511, 5604, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 17557 (MessagesHeader)
+// Module 17561 (MessagesHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import _modDef1653 from "module_1653" /* 1653 */;
@@ -13,8 +13,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 5604 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
 import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7096 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 7429 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13062 */;
-import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17558 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13065 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17562 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -100,7 +100,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   MessagesHeaderTsx1.__workletHash = 7032090280260;
   MessagesHeaderTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(MessagesHeaderTsx1);
-  const tmp3Result = height(17552);
+  const tmp3Result = height(17556);
   const isHomeDrawerEnabled = tmp3Result.useIsHomeDrawerEnabled();
   const callback = obj.useCallback(() => {
     const obj = height(dependencyMap[13]);

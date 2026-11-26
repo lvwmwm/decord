@@ -1,10 +1,10 @@
-// Module ID: 14574
-// Function ID: 14575
+// Module ID: 14577
+// Function ID: 14578
 // Name: UserProfileApplicationWidgetPreview
 // Dependencies: [32, 19, 17, 502, 21, 575, 4913, 504, 10335, 10322, 10281, 10283, 10327, 10330, 5600, 2]
 // Exports: default
 
-// Module 14574 (UserProfileApplicationWidgetPreview)
+// Module 14577 (UserProfileApplicationWidgetPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useApplicationWidgetLayoutRendererPropsDefault from "useApplicationWidgetLayoutRendererProps" /* 10335 */;

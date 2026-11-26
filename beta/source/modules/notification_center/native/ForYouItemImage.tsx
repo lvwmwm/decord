@@ -1,9 +1,9 @@
-// Module ID: 18071
-// Function ID: 18072
+// Module ID: 18075
+// Function ID: 18076
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 4780, 4784, 1386, 18072, 21, 4913, 575, 6637, 14680, 18073, 18074, 18075, 18076, 5600, 18077, 1186, 18078, 18079, 7520, 504, 7030, 8067, 8203, 18080, 5504, 2]
+// Dependencies: [19, 17, 4780, 4784, 1386, 18076, 21, 4913, 575, 6637, 14683, 18077, 18078, 18079, 18080, 5600, 18081, 1186, 18082, 18083, 7520, 504, 7030, 8067, 8203, 18084, 5504, 2]
 
-// Module 18071 (ForYouItemImage)
+// Module 18075 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import profile_customization_ProfileCustomizationUtils from "profile_customizati
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
-import Constants from "Constants" /* 18072 */;
+import Constants from "Constants" /* 18076 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 

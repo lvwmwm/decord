@@ -1,9 +1,9 @@
-// Module ID: 13858
-// Function ID: 13859
+// Module ID: 13861
+// Function ID: 13862
 // Name: DetailedGuildIdentityUserRow
 // Dependencies: [19, 17, 1386, 21, 4913, 575, 5943, 4969, 10391, 1186, 504, 7709, 7045, 2]
 
-// Module 13858 (DetailedGuildIdentityUserRow)
+// Module 13861 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function DetailedGuildIdentityUser(contentHeight) 
     let tmp8Result = null;
     const obj3 = { style: tmp.mainIdentity, children: items1 };
     if (hasAvatarForGuildResult) {
-      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "Array" };
+      const obj4 = { size: native.AvatarSizes.SIZE_16, style: tmp.primaryAvatar, user, guildId: "a" };
       const Avatar = native.Avatar;
       tmp8Result = tmp8(Avatar, obj4);
     }

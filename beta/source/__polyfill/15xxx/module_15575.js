@@ -1,9 +1,17 @@
 // Module ID: 15575
 // Function ID: 15576
-// Dependencies: [15553]
+// Dependencies: [15576]
 
 // Module 15575
-import _mod15553 from "module_15553" /* 15553 */;
+import _mod15576 from "module_15576" /* 15576 */;
 
 
-export default _mod15553({}.isPrototypeOf);
+export default (obj) => {
+  let tmp2;
+  if (typeof obj === "object") {
+    tmp2 = null !== obj;
+  } else {
+    tmp2 = _mod15576(obj);
+  }
+  return tmp2;
+};

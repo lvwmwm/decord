@@ -1,20 +1,18 @@
 // Module ID: 15568
 // Function ID: 15569
-// Dependencies: [15553]
+// Dependencies: [15569]
 
 // Module 15568
-import _mod15553 from "module_15553" /* 15553 */;
+import prop_mod from "module_15569" /* 15569 */;
 
-let _window = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod15553((1).toString);
+let prop = prop_mod;
+if (prop) {
+  const _Symbol = Symbol;
+  prop = !Symbol.sham;
+}
+if (prop) {
+  const _Symbol2 = Symbol;
+  prop = typeof Symbol.iterator === "symbol";
+}
 
-export default (arg0) => {
-  let _window;
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
-  }
-  _window = _window + 1;
-  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
-};
+export default prop;

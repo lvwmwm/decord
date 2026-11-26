@@ -48,7 +48,7 @@ export default function NativeVideo(ref) {
   let tmp21;
   let tmp6;
   let type;
-  const f94909 = (item) => {
+  const f94916 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -95,7 +95,7 @@ export default function NativeVideo(ref) {
   }
   const tmp4Result = str(obj.useState(() => {
     let entries;
-    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f94909) };
+    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f94916) };
     c10 = c10 + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -109,7 +109,7 @@ export default function NativeVideo(ref) {
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f94909) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f94916) };
     const _String = String;
     sum = closure_10 + 1;
     closure_10 = sum;

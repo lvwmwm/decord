@@ -1,26 +1,26 @@
-// Module ID: 13838
-// Function ID: 13839
+// Module ID: 13841
+// Function ID: 13842
 // Name: WinnerTrophyBadge
-// Dependencies: [19, 21, 13839, 13840, 13841, 7357, 5600, 2]
+// Dependencies: [19, 21, 13842, 13843, 13844, 7357, 5600, 2]
 // Exports: WinnerTrophyBadge
 
-// Module 13838 (WinnerTrophyBadge)
+// Module 13841 (WinnerTrophyBadge)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef13839 from "module_13839" /* 13839 */;
-import _modDef13840 from "module_13840" /* 13840 */;
-import _modDef13841 from "module_13841" /* 13841 */;
+import _modDef13842 from "module_13842" /* 13842 */;
+import _modDef13843 from "module_13843" /* 13843 */;
+import _modDef13844 from "module_13844" /* 13844 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13839 };
+let obj2 = { uri: _modDef13842 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef13840 };
+let obj3 = { uri: _modDef13843 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef13841 };
-({ uri: _modDef13841 });
+obj[3] = { uri: _modDef13844 };
+({ uri: _modDef13844 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/WinnerTrophyBadge.native.tsx");
 

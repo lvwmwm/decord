@@ -1,15 +1,15 @@
-// Module ID: 14568
-// Function ID: 14569
+// Module ID: 14571
+// Function ID: 14572
 // Name: conjureServerWidgetConsent
-// Dependencies: [5, 10212, 14559, 14569, 6961, 10222, 10224, 1112, 4190, 1241, 10345, 6913, 5528, 1379, 2]
+// Dependencies: [5, 10212, 14562, 14572, 6961, 10222, 10224, 1112, 4190, 1241, 10345, 6913, 5528, 1379, 2]
 // Exports: getConjureServerWidgetConsentRequest
 
-// Module 14568 (conjureServerWidgetConsent)
+// Module 14571 (conjureServerWidgetConsent)
 import URLUtilsDefault from "URLUtils" /* 1379 */;
 import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 10224 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import WidgetStore from "WidgetStore" /* 10212 */;
-import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14559 */;
+import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14562 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

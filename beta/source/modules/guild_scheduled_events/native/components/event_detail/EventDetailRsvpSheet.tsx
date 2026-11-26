@@ -1,10 +1,10 @@
-// Module ID: 14696
-// Function ID: 14697
+// Module ID: 14699
+// Function ID: 14700
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 5651, 1386, 1082, 21, 4913, 575, 6407, 8035, 14697, 5504, 1112, 7709, 5600, 7520, 504, 1186, 10391, 4969, 8067, 14698, 5145, 7020, 7490, 2]
+// Dependencies: [19, 17, 5651, 1386, 1082, 21, 4913, 575, 6407, 8035, 14700, 5504, 1112, 7709, 5600, 7520, 504, 1186, 10391, 4969, 8067, 14701, 5145, 7020, 7490, 2]
 // Exports: default
 
-// Module 14696 (EventDetailRsvpSheet)
+// Module 14699 (EventDetailRsvpSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -15,8 +15,8 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import _mod7709 from "module_7709" /* 7709 */;
 import StageSparkleDefault from "StageSparkle" /* 8035 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14697 */;
-import EventDetailTypes from "EventDetailTypes" /* 14698 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14700 */;
+import EventDetailTypes from "EventDetailTypes" /* 14701 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
 import UserStore from "UserStore" /* 1386 */;

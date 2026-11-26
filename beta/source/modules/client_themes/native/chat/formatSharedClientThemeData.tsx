@@ -1,10 +1,10 @@
-// Module ID: 14282
-// Function ID: 14283
+// Module ID: 14285
+// Function ID: 14286
 // Name: formatSharedClientThemeData
 // Dependencies: [17, 8840, 1112, 3056, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 14282 (formatSharedClientThemeData)
+// Module 14285 (formatSharedClientThemeData)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef3056 from "module_3056" /* 3056 */;

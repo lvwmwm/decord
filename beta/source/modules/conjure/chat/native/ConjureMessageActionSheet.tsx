@@ -1,10 +1,10 @@
-// Module ID: 18484
-// Function ID: 18485
+// Module ID: 18488
+// Function ID: 18489
 // Name: ConjureMessageActionSheet
-// Dependencies: [19, 21, 8067, 5127, 7545, 5595, 1112, 5613, 7553, 7555, 4190, 18485, 7151, 12357, 16497, 17197, 2]
+// Dependencies: [19, 21, 8067, 5127, 7545, 5595, 1112, 5613, 7553, 7555, 4190, 18489, 7151, 12357, 16501, 17201, 2]
 // Exports: openMessageAuthorProfile, showConjureMessageActions
 
-// Module 18484 (ConjureMessageActionSheet)
+// Module 18488 (ConjureMessageActionSheet)
 import intl6 from "intl" /* 1112 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;

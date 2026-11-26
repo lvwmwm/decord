@@ -1,10 +1,10 @@
-// Module ID: 17837
-// Function ID: 17838
+// Module ID: 17841
+// Function ID: 17842
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
 // Dependencies: [4816, 4946, 1071, 5090, 5089, 5646, 6835, 2]
 // Exports: default
 
-// Module 17837 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+// Module 17841 (transitionGuildsBarToGuildOrOpenSelectedChannel)
 import Constants from "Constants" /* 1071 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
 import RootNavigationRef from "RootNavigationRef" /* 5090 */;

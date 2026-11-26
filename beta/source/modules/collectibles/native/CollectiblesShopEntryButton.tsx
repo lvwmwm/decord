@@ -1,13 +1,13 @@
-// Module ID: 13801
-// Function ID: 13802
+// Module ID: 13804
+// Function ID: 13805
 // Name: CollectiblesShopEntryButton
-// Dependencies: [32, 19, 5566, 4759, 21, 9080, 4746, 13777, 13010, 1112, 13802, 563, 5567, 8097, 11617, 2]
+// Dependencies: [32, 19, 5566, 4759, 21, 9080, 4746, 13780, 13013, 1112, 13805, 563, 5567, 8097, 11617, 2]
 // Exports: default
 
-// Module 13801 (CollectiblesShopEntryButton)
+// Module 13804 (CollectiblesShopEntryButton)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 13777 */;
-import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 13802 */;
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 13780 */;
+import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 13805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 5566 */;
@@ -36,7 +36,7 @@ function CoachmarkVariant(shopButtonRef) {
   const obj2 = { children: items };
   const obj3 = {
     ref: shopButtonRef,
-    IconComponent: navigateToShop(13010).ShopIcon,
+    IconComponent: navigateToShop(13013).ShopIcon,
     accessibilityLabel: intl.string(navigateToShop(1112).t.pWG4ze),
     onPress() {
       const tmp = closure_2;

@@ -1,10 +1,10 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14607
+// Function ID: 14608
 // Name: UserProfilePrivateInfoBanner
 // Dependencies: [17, 21, 4913, 575, 5504, 1112, 2]
 // Exports: default
 
-// Module 14604 (UserProfilePrivateInfoBanner)
+// Module 14607 (UserProfilePrivateInfoBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

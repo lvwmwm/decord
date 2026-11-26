@@ -1,10 +1,10 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 15795
+// Function ID: 15796
 // Name: MediaPlayerManager
-// Dependencies: [17, 4761, 6495, 4762, 5964, 4845, 2118, 1071, 5539, 15792, 1082, 3, 560, 1262, 2121, 5090, 572, 1378, 558, 8250, 6652, 2]
+// Dependencies: [17, 4761, 6495, 4762, 5964, 4845, 2118, 1071, 5539, 15796, 1082, 3, 560, 1262, 2121, 5090, 572, 1378, 558, 8250, 6652, 2]
 // Exports: isPlaybackComplete
 
-// Module 15791 (MediaPlayerManager)
+// Module 15795 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import MessageStore from "MessageStore" /* 5964 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15792 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15796 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "sa", rate: false, isPlaying: false, wasPipClosedByUser: "CONJURE_PARTICIPATING_PROJECTS_MARK" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "sa", rate: false, isPlaying: false, wasPipClosedByUser: "response" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

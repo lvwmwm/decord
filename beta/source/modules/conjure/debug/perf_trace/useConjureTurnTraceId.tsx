@@ -1,10 +1,10 @@
-// Module ID: 18490
-// Function ID: 18491
+// Module ID: 18494
+// Function ID: 18495
 // Name: useConjureTurnTraceId
-// Dependencies: [6968, 18388, 6926, 504, 2]
+// Dependencies: [6968, 18392, 6926, 504, 2]
 // Exports: default
 
-// Module 18490 (useConjureTurnTraceId)
+// Module 18494 (useConjureTurnTraceId)
 import ConjureDebugStore from "ConjureDebugStore" /* 6968 */;
 import size from "module_2" /* 2 */;
 

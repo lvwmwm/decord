@@ -1,10 +1,10 @@
-// Module ID: 13543
-// Function ID: 13544
+// Module ID: 13546
+// Function ID: 13547
 // Name: useProvisionalAccountApplication
 // Dependencies: [8360, 504, 6864, 2]
 // Exports: default
 
-// Module 13543 (useProvisionalAccountApplication)
+// Module 13546 (useProvisionalAccountApplication)
 import GameRelationshipStore from "GameRelationshipStore" /* 8360 */;
 import size from "module_2" /* 2 */;
 

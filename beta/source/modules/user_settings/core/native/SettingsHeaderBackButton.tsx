@@ -1,16 +1,16 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 15982
+// Function ID: 15983
 // Name: SettingsHeaderBackButton
-// Dependencies: [19, 17, 21, 4913, 575, 7030, 1112, 15979, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7030, 1112, 15983, 2]
 // Exports: default
 
-// Module 15978 (SettingsHeaderBackButton)
+// Module 15982 (SettingsHeaderBackButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Pressables from "Pressables" /* 7030 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 15979 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 15983 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

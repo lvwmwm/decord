@@ -1,15 +1,15 @@
-// Module ID: 18691
-// Function ID: 18692
+// Module ID: 18695
+// Function ID: 18696
 // Name: ConjureDebugAnalytics
-// Dependencies: [19, 21, 18689, 1112, 4190, 18686, 18687, 2]
+// Dependencies: [19, 21, 18693, 1112, 4190, 18690, 18691, 2]
 // Exports: ConjureDebugAgentAnalyticsRows, ConjureDebugWorkerAnalyticsSection
 
-// Module 18691 (ConjureDebugAnalytics)
+// Module 18695 (ConjureDebugAnalytics)
 import intl7 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 18686 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 18687 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18689 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 18690 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 18691 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18693 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ export function ConjureDebugAgentAnalyticsRows(analytics) {
       const tmp18 = importDefault;
       if (null != analyticsMemoryValueResult) {
         const obj = { label: intl.string(tmp18(4190).lmFmMO), value: analyticsMemoryValueResult };
-        const DebugStatRow = tmp12(18689).DebugStatRow;
+        const DebugStatRow = tmp12(18693).DebugStatRow;
         intl = tmp12(1112).intl;
         tmp17Result = tmp17(DebugStatRow, obj);
       }

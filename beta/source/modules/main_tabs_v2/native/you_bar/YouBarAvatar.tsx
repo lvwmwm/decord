@@ -1,9 +1,9 @@
-// Module ID: 17978
-// Function ID: 17979
+// Module ID: 17982
+// Function ID: 17983
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 4914, 6920, 1386, 16486, 1071, 21, 4913, 575, 504, 1186, 4974, 1653, 6631, 9023, 5514, 1706, 5477, 9022, 8905, 5129, 8194, 2119, 5173, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 6920, 1386, 16490, 1071, 21, 4913, 575, 504, 1186, 4974, 1653, 6631, 9023, 5514, 1706, 5477, 9022, 8905, 5129, 8194, 2119, 5173, 2]
 
-// Module 17978 (YouBarAvatar)
+// Module 17982 (YouBarAvatar)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
@@ -18,7 +18,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
 import UserStore from "UserStore" /* 1386 */;
-import YouBarConstants from "YouBarConstants" /* 16486 */;
+import YouBarConstants from "YouBarConstants" /* 16490 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

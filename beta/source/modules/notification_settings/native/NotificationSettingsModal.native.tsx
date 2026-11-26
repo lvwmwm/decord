@@ -1,10 +1,10 @@
-// Module ID: 20075
-// Function ID: 20076
+// Module ID: 20079
+// Function ID: 20080
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 4766, 4762, 7477, 5534, 4784, 19692, 4855, 6552, 1386, 1071, 6553, 1081, 21, 4913, 575, 4974, 5650, 5127, 11161, 2119, 7485, 7480, 11160, 7347, 1112, 7349, 7348, 7556, 5504, 1186, 5592, 2187, 7045, 11163, 7057, 13710, 4848, 7636, 5529, 7709, 5929, 11164, 1500, 504, 7478, 5487, 7095, 20076, 11159, 7092, 2]
+// Dependencies: [109, 19, 17, 4766, 4762, 7477, 5534, 4784, 19696, 4855, 6552, 1386, 1071, 6553, 1081, 21, 4913, 575, 4974, 5650, 5127, 11161, 2119, 7485, 7480, 11160, 7347, 1112, 7349, 7348, 7556, 5504, 1186, 5592, 2187, 7045, 11163, 7057, 13713, 4848, 7636, 5529, 7709, 5929, 11164, 1500, 504, 7478, 5487, 7095, 20080, 11159, 7092, 2]
 // Exports: default
 
-// Module 20075 (NotificationSettingsModal)
+// Module 20079 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -33,7 +33,7 @@ import _mod7709 from "module_7709" /* 7709 */;
 import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11160 */;
 import MutedUntilTextDefault from "MutedUntilText" /* 11163 */;
 import notifications_NotificationUtils from "notifications/NotificationUtils" /* 11164 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 13710 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13713 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
@@ -41,7 +41,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 7477 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19692 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19696 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import UserStore from "UserStore" /* 1386 */;

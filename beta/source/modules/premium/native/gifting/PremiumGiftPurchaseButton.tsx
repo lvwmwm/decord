@@ -1,10 +1,10 @@
-// Module ID: 13947
-// Function ID: 13948
+// Module ID: 13950
+// Function ID: 13951
 // Name: PremiumGiftPurchaseButton
 // Dependencies: [19, 17, 8137, 9143, 1071, 21, 4913, 575, 5488, 1500, 9468, 9287, 504, 9147, 9496, 8070, 9208, 9466, 11923, 1112, 9505, 9507, 2888, 11247, 9509, 9482, 7539, 5504, 2187, 5511, 5098, 2]
 // Exports: default
 
-// Module 13947 (PremiumGiftPurchaseButton)
+// Module 13950 (PremiumGiftPurchaseButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ChatInputUtils from "ChatInputUtils" /* 5098 */;

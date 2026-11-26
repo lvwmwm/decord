@@ -1,10 +1,10 @@
-// Module ID: 17251
-// Function ID: 17252
+// Module ID: 17255
+// Function ID: 17256
 // Name: UserSettingsDesignSystemStack
 // Dependencies: [19, 17, 21, 4913, 575, 5929, 7047, 5504, 2]
 // Exports: default
 
-// Module 17251 (UserSettingsDesignSystemStack)
+// Module 17255 (UserSettingsDesignSystemStack)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;

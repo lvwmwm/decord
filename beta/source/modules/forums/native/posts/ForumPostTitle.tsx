@@ -1,10 +1,10 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 12889
+// Function ID: 12890
 // Name: ForumPostTitle
 // Dependencies: [19, 21, 4913, 1358, 5504, 2]
 // Exports: default
 
-// Module 12886 (ForumPostTitle)
+// Module 12889 (ForumPostTitle)
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import react from "react" /* 19 */;

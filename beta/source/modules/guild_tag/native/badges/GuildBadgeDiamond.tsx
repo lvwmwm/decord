@@ -1,12 +1,12 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15171
+// Function ID: 15172
 // Name: GuildBadgeDiamond
-// Dependencies: [19, 21, 15141, 7865, 2]
+// Dependencies: [19, 21, 15144, 7865, 2]
 // Exports: GuildBadgeDiamond
 
-// Module 15168 (GuildBadgeDiamond)
+// Module 15171 (GuildBadgeDiamond)
 import inlineStyles from "inlineStyles" /* 7865 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15141 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15144 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

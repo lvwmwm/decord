@@ -1,10 +1,10 @@
-// Module ID: 14384
-// Function ID: 14385
+// Module ID: 14387
+// Function ID: 14388
 // Name: ConfirmStartCall
 // Dependencies: [19, 21, 5866, 1112, 5866, 5862, 2]
 // Exports: confirmStartCall
 
-// Module 14384 (ConfirmStartCall)
+// Module 14387 (ConfirmStartCall)
 import intl5 from "intl" /* 1112 */;
 import useAlertStore from "useAlertStore" /* 5862 */;
 import AlertModal2 from "AlertModal" /* 5866 */;

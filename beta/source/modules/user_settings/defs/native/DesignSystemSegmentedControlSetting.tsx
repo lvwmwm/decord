@@ -1,9 +1,9 @@
-// Module ID: 17233
-// Function ID: 17234
+// Module ID: 17237
+// Function ID: 17238
 // Name: DesignSystemSegmentedControlSetting
-// Dependencies: [8712, 1071, 11942, 17234, 2]
+// Dependencies: [8712, 1071, 11942, 17238, 2]
 
-// Module 17233 (DesignSystemSegmentedControlSetting)
+// Module 17237 (DesignSystemSegmentedControlSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;

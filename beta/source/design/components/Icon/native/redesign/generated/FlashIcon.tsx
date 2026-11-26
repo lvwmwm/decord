@@ -1,14 +1,14 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14478
+// Function ID: 14479
 // Name: FlashIcon
-// Dependencies: [19, 21, 575, 5599, 14476, 2]
+// Dependencies: [19, 21, 575, 5599, 14479, 2]
 // Exports: FlashIcon
 
-// Module 14475 (FlashIcon)
+// Module 14478 (FlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 14476 */;
+import AssetRegistry from "AssetRegistry" /* 14479 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

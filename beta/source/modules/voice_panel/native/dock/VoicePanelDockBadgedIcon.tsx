@@ -1,17 +1,17 @@
-// Module ID: 18022
-// Function ID: 18023
+// Module ID: 18026
+// Function ID: 18027
 // Name: VoicePanelDockBadgedIcon
-// Dependencies: [19, 17, 11773, 21, 1186, 17916, 4913, 4974, 5123, 1706, 1653, 9023, 2]
+// Dependencies: [19, 17, 11773, 21, 1186, 17920, 4913, 4974, 5123, 1706, 1653, 9023, 2]
 // Exports: default
 
-// Module 18022 (VoicePanelDockBadgedIcon)
+// Module 18026 (VoicePanelDockBadgedIcon)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1186 */;
 import native2 from "native" /* 4974 */;
 import react from "react" /* 19 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11773 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17916 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17920 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 

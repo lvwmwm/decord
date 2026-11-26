@@ -1,10 +1,10 @@
-// Module ID: 18877
-// Function ID: 18878
+// Module ID: 18881
+// Function ID: 18882
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 4762, 15042, 5654, 1386, 9646, 1071, 21, 4913, 575, 7737, 6494, 7739, 12202, 5127, 504, 12066, 12068, 12065, 1255, 5595, 1112, 18876, 8561, 12069, 5594, 8571, 14658, 7262, 8066, 1186, 9647, 18813, 2]
+// Dependencies: [32, 5, 19, 17, 4762, 15045, 5654, 1386, 9646, 1071, 21, 4913, 575, 7737, 6494, 7739, 12202, 5127, 504, 12066, 12068, 12065, 1255, 5595, 1112, 18880, 8561, 12069, 5594, 8571, 14661, 7262, 8066, 1186, 9647, 18817, 2]
 // Exports: default
 
-// Module 18877 (NewGroupDMScreen)
+// Module 18881 (NewGroupDMScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -13,13 +13,13 @@ import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
 import UserRowConstants from "UserRowConstants" /* 9646 */;
 import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12069 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18876 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18880 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15042 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15045 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;

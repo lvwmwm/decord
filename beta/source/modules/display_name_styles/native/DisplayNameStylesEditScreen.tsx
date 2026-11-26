@@ -1,10 +1,10 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16752
+// Function ID: 16753
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 4914, 1386, 1395, 1071, 1624, 21, 1397, 4913, 575, 1501, 5930, 1263, 16749, 504, 15884, 8131, 6342, 5122, 1396, 1394, 9460, 9461, 558, 5595, 1112, 16750, 16751, 15871, 1255, 5129, 8910, 8909, 5127, 16752, 2119, 16756, 16757, 16767, 16769, 15874, 4974, 6344, 16421, 3248, 5504, 1186, 7565, 1089, 15875, 5511, 8953, 8667, 1628, 1653, 5514, 2]
+// Dependencies: [32, 19, 17, 4914, 1386, 1395, 1071, 1624, 21, 1397, 4913, 575, 1501, 5930, 1263, 16753, 504, 15888, 8131, 6342, 5122, 1396, 1394, 9460, 9461, 558, 5595, 1112, 16754, 16755, 15875, 1255, 5129, 8910, 8909, 5127, 16756, 2119, 16760, 16761, 16771, 16773, 15878, 4974, 6344, 16425, 3248, 5504, 1186, 7565, 1089, 15879, 5511, 8953, 8667, 1628, 1653, 5514, 2]
 // Exports: default
 
-// Module 16748 (DisplayNameStylesEditScreen)
+// Module 16752 (DisplayNameStylesEditScreen)
 import shallowEqual from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -466,7 +466,7 @@ export default function DisplayNameStylesEditScreen() {
     }
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName, isTryItOut };
-    obj.openLazy(asyncRequire(16752, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
+    obj.openLazy(asyncRequire(16756, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
   }, items6);
   const useCallback = displayNameStylesPendingName.useCallback;
   if (stateFromStores != null) {
@@ -484,7 +484,7 @@ export default function DisplayNameStylesEditScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let id;
     ActionSheetActionCreatorsDefault;
-    const tmp5 = asyncRequire(16756, dependencyMap.paths);
+    const tmp5 = asyncRequire(16760, dependencyMap.paths);
     if (stateFromStores != null) {
       id = stateFromStores.id;
     }
@@ -500,7 +500,7 @@ export default function DisplayNameStylesEditScreen() {
           }
       };
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(16757, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+      obj3.openLazy(asyncRequire(16761, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
     } else {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
@@ -513,10 +513,10 @@ export default function DisplayNameStylesEditScreen() {
                 return callback(first1, arg0);
               }
         };
-        openLazy(tmp2Result(16767, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+        openLazy(tmp2Result(16771, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
       } else {
         const obj = { selectedColor: first3, selectedEffectId: first1, onSelectColor };
-        openLazy(tmp2Result(16769, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
+        openLazy(tmp2Result(16773, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
       }
     }
   }, items8);

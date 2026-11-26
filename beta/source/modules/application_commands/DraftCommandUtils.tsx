@@ -1,10 +1,10 @@
-// Module ID: 12864
-// Function ID: 12865
+// Module ID: 12867
+// Function ID: 12868
 // Name: DraftCommandUtils
 // Dependencies: [5938, 8316, 10687, 2]
 // Exports: resolveDraftCommand, toDraftCommand
 
-// Module 12864 (DraftCommandUtils)
+// Module 12867 (DraftCommandUtils)
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5938 */;
 import DraftCommand from "DraftCommand" /* 8316 */;
 import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10687 */;

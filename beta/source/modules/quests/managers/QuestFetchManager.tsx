@@ -1,9 +1,9 @@
-// Module ID: 20098
-// Function ID: 20099
+// Module ID: 20102
+// Function ID: 20103
 // Name: QuestFetchManager
-// Dependencies: [5, 8404, 1088, 7484, 9950, 1241, 9959, 1378, 6651, 20099, 2]
+// Dependencies: [5, 8404, 1088, 7484, 9950, 1241, 9959, 1378, 6651, 20103, 2]
 
-// Module 20098 (QuestFetchManager)
+// Module 20102 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1088 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;

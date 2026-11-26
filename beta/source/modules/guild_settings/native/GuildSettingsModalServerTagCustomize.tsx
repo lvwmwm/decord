@@ -1,10 +1,10 @@
-// Module ID: 19823
-// Function ID: 19824
+// Module ID: 19827
+// Function ID: 19828
 // Name: GuildSettingsModalServerTagCustomize
-// Dependencies: [32, 19, 17, 7759, 7995, 8000, 21, 575, 4913, 7998, 1494, 7760, 504, 7761, 7994, 5127, 19824, 2119, 7190, 13811, 7709, 5929, 7221, 1112, 5617, 5504, 19825, 19829, 2]
+// Dependencies: [32, 19, 17, 7759, 7995, 8000, 21, 575, 4913, 7998, 1494, 7760, 504, 7761, 7994, 5127, 19828, 2119, 7190, 13814, 7709, 5929, 7221, 1112, 5617, 5504, 19829, 19833, 2]
 // Exports: default
 
-// Module 19823 (GuildSettingsModalServerTagCustomize)
+// Module 19827 (GuildSettingsModalServerTagCustomize)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;

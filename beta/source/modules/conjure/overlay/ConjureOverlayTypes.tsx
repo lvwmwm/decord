@@ -1,9 +1,9 @@
-// Module ID: 18334
-// Function ID: 18335
+// Module ID: 18338
+// Function ID: 18339
 // Name: ConjureOverlayTypes
 // Dependencies: [2]
 
-// Module 18334 (ConjureOverlayTypes)
+// Module 18338 (ConjureOverlayTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/overlay/ConjureOverlayTypes.tsx");

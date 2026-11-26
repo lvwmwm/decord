@@ -49,7 +49,7 @@ export default function AppealIngestionModal(classificationId) {
   let c0;
   let classification;
   let intl;
-  const f102247 = () => {
+  const f102254 = () => {
     let obj11;
     let obj3;
     let obj5;
@@ -154,8 +154,8 @@ export default function AppealIngestionModal(classificationId) {
   if (!flag2) {
     flag2 = false;
   }
-  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5492)(f102247), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
-  flag(5492)(f102247);
+  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5492)(f102254), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
+  flag(5492)(f102254);
   const Navigator = tmp(7092).Navigator;
   intl = tmp(1112).intl;
   return closure_12(Navigator, obj2);

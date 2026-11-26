@@ -1,10 +1,10 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15832
+// Function ID: 15833
 // Name: ThemedStatusBar
 // Dependencies: [19, 1191, 502, 21, 504, 5089, 4920, 10856, 10606, 2]
 // Exports: default
 
-// Module 15828 (ThemedStatusBar)
+// Module 15832 (ThemedStatusBar)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import shared from "shared" /* 4920 */;

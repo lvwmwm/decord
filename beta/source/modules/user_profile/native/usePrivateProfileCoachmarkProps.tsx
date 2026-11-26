@@ -1,17 +1,17 @@
-// Module ID: 17954
-// Function ID: 17955
+// Module ID: 17958
+// Function ID: 17959
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1071, 4759, 21, 4913, 17955, 1195, 1112, 10197, 4738, 4746, 8194, 2]
+// Dependencies: [19, 17, 1071, 4759, 21, 4913, 17959, 1195, 1112, 10197, 4738, 4746, 8194, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 17954 (usePrivateProfileCoachmarkProps)
+// Module 17958 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
 import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 17955 */;
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 17959 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

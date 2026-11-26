@@ -1,11 +1,11 @@
-// Module ID: 18462
-// Function ID: 18463
+// Module ID: 18466
+// Function ID: 18467
 // Name: useConjureRemixSettingsRequest
-// Dependencies: [6982, 504, 18463, 1112, 4190, 2]
+// Dependencies: [6982, 504, 18467, 1112, 4190, 2]
 // Exports: default
 
-// Module 18462 (useConjureRemixSettingsRequest)
-import conjureSettingsRequest from "conjureSettingsRequest" /* 18463 */;
+// Module 18466 (useConjureRemixSettingsRequest)
+import conjureSettingsRequest from "conjureSettingsRequest" /* 18467 */;
 import ConjureSettingsStore from "ConjureSettingsStore" /* 6982 */;
 import size from "module_2" /* 2 */;
 

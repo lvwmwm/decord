@@ -1,15 +1,15 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12508
+// Function ID: 12509
 // Name: CheckpointCardFrame
-// Dependencies: [19, 17, 21, 4913, 5993, 7865, 12522, 9604, 575, 10120, 2]
+// Dependencies: [19, 17, 21, 4913, 5993, 7865, 12509, 9604, 575, 10120, 2]
 // Exports: default
 
-// Module 12521 (CheckpointCardFrame)
+// Module 12508 (CheckpointCardFrame)
 import nativeDefault from "native" /* 575 */;
 import CheckpointCardColors from "CheckpointCardColors" /* 5993 */;
 import inlineStyles from "inlineStyles" /* 7865 */;
 import CheckpointCharacterCompositeDefault from "CheckpointCharacterComposite" /* 10120 */;
-import _modDef12522 from "module_12522" /* 12522 */;
+import _modDef12509 from "module_12509" /* 12509 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -151,7 +151,7 @@ export default function CheckpointCardFrame(canvasHeight) {
     const _HermesInternal4 = HermesInternal;
     obj9 = { rotation: 180, origin: "" + x + width / 2 + ", " + c10 + c12 / 2, children: metroRequire(Image2, size3) };
     G2 = tmp3(7865).G;
-    size3 = { href: _modDef12522, x, y: c10 - 0.4348 * c12, width, height: 1.4348 * c12, preserveAspectRatio: "none" };
+    size3 = { href: _modDef12509, x, y: c10 - 0.4348 * c12, width, height: 1.4348 * c12, preserveAspectRatio: "none" };
     Image2 = tmp3(7865).Image;
     items8[1] = metroRequire(G, obj8);
     items9 = [metroImportDefault(tmp13Result, size1), ];
@@ -172,7 +172,7 @@ export default function CheckpointCardFrame(canvasHeight) {
     const _HermesInternal7 = HermesInternal;
     obj13 = { rotation: 180, origin: "" + styles.x + styles.width / 2 + ", " + styles.y + styles.height / 2, children: metroRequire(Image3, obj14) };
     G4 = tmp3(7865).G;
-    obj14 = { href: _modDef12522, opacity: 0.5, preserveAspectRatio: "xMidYMid slice" };
+    obj14 = { href: _modDef12509, opacity: 0.5, preserveAspectRatio: "xMidYMid slice" };
     Image3 = tmp3(7865).Image;
     const merged = Object.assign(styles);
     items11[1] = metroRequire(G3, obj12);
@@ -189,7 +189,7 @@ export default function CheckpointCardFrame(canvasHeight) {
     ClipPath = tmp3(7865).ClipPath;
     size7 = { width: canvasWidth, height: num };
     items13 = [metroRequire(Defs, obj15), ];
-    const size8 = { href: _modDef12522, width: canvasWidth, height: num, preserveAspectRatio: "xMidYMid slice", clipPath: "url(#" + id + ")" };
+    const size8 = { href: _modDef12509, width: canvasWidth, height: num, preserveAspectRatio: "xMidYMid slice", clipPath: "url(#" + id + ")" };
     const Image = tmp3(7865).Image;
     const _HermesInternal = HermesInternal;
     items13[1] = metroRequire(Image, size8);

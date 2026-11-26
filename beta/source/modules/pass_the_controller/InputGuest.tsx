@@ -1,12 +1,12 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 14904
+// Function ID: 14905
 // Name: InputGuest
-// Dependencies: [5, 3, 14897, 572, 2]
+// Dependencies: [5, 3, 14900, 572, 2]
 
-// Module 14901 (InputGuest)
+// Module 14904 (InputGuest)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import InputEvent from "InputEvent" /* 14897 */;
+import InputEvent from "InputEvent" /* 14900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

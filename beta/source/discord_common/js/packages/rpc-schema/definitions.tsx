@@ -1,9 +1,9 @@
-// Module ID: 15689
-// Function ID: 15690
+// Module ID: 15693
+// Function ID: 15694
 // Name: definitions
-// Dependencies: [1082, 10779, 7074, 10805, 1092, 5557, 2172, 6913, 2145, 15690, 15686, 15691, 7267, 5652, 13522, 15692, 2]
+// Dependencies: [1082, 10779, 7074, 10805, 1092, 5557, 2172, 6913, 2145, 15694, 15690, 15695, 7267, 5652, 13525, 15696, 2]
 
-// Module 15689 (definitions)
+// Module 15693 (definitions)
 import Constants2 from "Constants" /* 1082 */;
 import ChannelTypes from "ChannelTypes" /* 1092 */;
 import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2145 */;
@@ -14,11 +14,11 @@ import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7074 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 7267 */;
 import ActivityPlatform from "ActivityPlatform" /* 10805 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 13522 */;
-import ThermalStates from "ThermalStates" /* 15686 */;
-import SKUTypes from "SKUTypes" /* 15690 */;
-import discord_common_helpers from "discord_common/helpers" /* 15691 */;
-import contextMenuIcons from "contextMenuIcons" /* 15692 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 13525 */;
+import ThermalStates from "ThermalStates" /* 15690 */;
+import SKUTypes from "SKUTypes" /* 15694 */;
+import discord_common_helpers from "discord_common/helpers" /* 15695 */;
+import contextMenuIcons from "contextMenuIcons" /* 15696 */;
 import Constants from "Constants" /* 10779 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 17210
-// Function ID: 17211
+// Module ID: 17214
+// Function ID: 17215
 // Name: DesignSystemsSetting
-// Dependencies: [1071, 11942, 16675, 17211, 17043, 2]
+// Dependencies: [1071, 11942, 16679, 17215, 17047, 2]
 
-// Module 17210 (DesignSystemsSetting)
+// Module 17214 (DesignSystemsSetting)
 import Constants from "Constants" /* 1071 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16675 */;
-import useDesignSystemsSettingPredicate from "useDesignSystemsSettingPredicate" /* 17211 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16679 */;
+import useDesignSystemsSettingPredicate from "useDesignSystemsSettingPredicate" /* 17215 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14505
+// Function ID: 14506
 // Name: getActivityJoinability
-// Dependencies: [1071, 12191, 12187, 10678, 5557, 10782, 10668, 8061, 14339, 1378, 12184, 12185, 12186, 2]
+// Dependencies: [1071, 12191, 12187, 10678, 5557, 10782, 10668, 8061, 14342, 1378, 12184, 12185, 12186, 2]
 // Exports: default
 
-// Module 14502 (getActivityJoinability)
+// Module 14505 (getActivityJoinability)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
 import hasFlagDefault from "hasFlag" /* 8061 */;
@@ -15,7 +15,7 @@ import _slicedToArray from "_slicedToArray" /* 12184 */;
 import hasPartySize from "hasPartySize" /* 12185 */;
 import getIsInParty from "getIsInParty" /* 12187 */;
 import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12191 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14339 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14342 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

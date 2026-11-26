@@ -1,9 +1,9 @@
-// Module ID: 13608
-// Function ID: 13609
+// Module ID: 13611
+// Function ID: 13612
 // Name: FriendsScreenConstants
 // Dependencies: [2]
 
-// Module 13608 (FriendsScreenConstants)
+// Module 13611 (FriendsScreenConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/FriendsScreenConstants.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 14628
-// Function ID: 14629
+// Module ID: 14631
+// Function ID: 14632
 // Name: UserProfileWishlistSuggestionsGrid
-// Dependencies: [19, 17, 4914, 8983, 8069, 7564, 1071, 1073, 21, 575, 4913, 504, 14629, 8135, 14441, 7520, 5492, 1268, 14630, 8989, 5127, 8074, 7539, 5511, 13010, 1112, 14631, 1653, 5504, 7591, 7151, 14632, 2]
+// Dependencies: [19, 17, 4914, 8983, 8069, 7564, 1071, 1073, 21, 575, 4913, 504, 14632, 8135, 14444, 7520, 5492, 1268, 14633, 8989, 5127, 8074, 7539, 5511, 13013, 1112, 14634, 1653, 5504, 7591, 7151, 14635, 2]
 // Exports: default
 
-// Module 14628 (UserProfileWishlistSuggestionsGrid)
+// Module 14631 (UserProfileWishlistSuggestionsGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1071 */;
@@ -15,9 +15,9 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import Constants3 from "Constants" /* 8069 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
-import useCardGridLayoutDefault from "useCardGridLayout" /* 14441 */;
-import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 14629 */;
-import AddToWishlistGridDefault from "AddToWishlistGrid" /* 14632 */;
+import useCardGridLayoutDefault from "useCardGridLayout" /* 14444 */;
+import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 14632 */;
+import AddToWishlistGridDefault from "AddToWishlistGrid" /* 14635 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import WishlistStore from "WishlistStore" /* 8983 */;
@@ -137,7 +137,7 @@ function WishlistSuggestionsGridContents(arg0) {
     const obj = trackUserProfileWishlistAction(dependencyMap[17]);
     return obj.v4();
   });
-  const obj4 = trackUserProfileWishlistAction(14630);
+  const obj4 = trackUserProfileWishlistAction(14633);
   const obj5 = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: trackUserProfileWishlistAction(8989).WishlistFetchSource.USER_PROFILE };
   const items2 = obj4.useAddToWishlistGridItems(obj5).items;
   const items3 = [trackUserProfileWishlistAction];
@@ -158,14 +158,14 @@ function WishlistSuggestionsGridContents(arg0) {
   }, items3);
   if (0 === items2.length) {
     const obj6 = { style: tmp3.shopButtonContainer, children: closure_12(Button2, obj7) };
-    obj7 = { size: "md", variant: "secondary", icon: closure_12(tmp(13010).ShopIcon, { size: "sm" }), text: intl3.string(tmp(1112).t.RSyoZu), onPress: callback };
+    obj7 = { size: "md", variant: "secondary", icon: closure_12(tmp(13013).ShopIcon, { size: "sm" }), text: intl3.string(tmp(1112).t.RSyoZu), onPress: callback };
     Button2 = tmp(5511).Button;
     intl3 = tmp(1112).intl;
     tmp13Result = closure_12(View, obj6);
   } else {
     const obj8 = { newValue: obj9, children: closure_13(View, obj10) };
     obj9 = { impressionSessionId: tmp7, surface: "user_profile_wishlist_suggestions_grid", wishlistOwnerId: userId, wishlistId, analyticsLocations };
-    const WishlistAnalyticsProvider = tmp(14631).WishlistAnalyticsProvider;
+    const WishlistAnalyticsProvider = tmp(14634).WishlistAnalyticsProvider;
     obj10 = { style: tmp3.container, entering: null, exiting: null, layout: null, children: items6 };
     ({ entering: obj16.entering, exiting: obj16.exiting, layout: obj16.layout } = memo);
     const obj11 = { style: tmp3.headerRow, children: items4 };
@@ -196,7 +196,7 @@ function WishlistSuggestionsGridContents(arg0) {
     const obj17 = { items: items2, wishlist, analyticsLocations, cardSize: cardWidth };
     items6[1] = closure_12(AddToWishlistGridDefault, obj17);
     const obj18 = { style: tmp3.shopButtonContainer, children: closure_12(Button, obj33) };
-    obj33 = { size: "md", variant: "secondary", icon: closure_12(tmp(13010).ShopIcon, { size: "sm" }), text: intl2.string(tmp(1112).t.RSyoZu), onPress: callback };
+    obj33 = { size: "md", variant: "secondary", icon: closure_12(tmp(13013).ShopIcon, { size: "sm" }), text: intl2.string(tmp(1112).t.RSyoZu), onPress: callback };
     Button = tmp(5511).Button;
     intl2 = tmp(1112).intl;
     items6[2] = closure_12(View, obj18);

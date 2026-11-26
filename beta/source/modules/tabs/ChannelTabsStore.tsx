@@ -23,15 +23,15 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _null, _require, tabs;
 
-const f96644 = (arg0) => {
+const f96651 = (arg0) => {
   const tmp = handleChannelSelect(arg0);
   const found = tabs.find((id) => id.id === closure_1_12);
   const hasItem = null != found && set.has(found.id) && setFirstPage(found);
   return false !== tmp || hasItem;
 };
-const f96650 = (pinned) => pinned.pinned;
-const f96651 = (pinned) => !pinned.pinned;
-const f96653 = (id) => id.id === closure_1_12;
+const f96657 = (pinned) => pinned.pinned;
+const f96658 = (pinned) => !pinned.pinned;
+const f96660 = (id) => id.id === closure_1_12;
 function pruneOpenedChannels() {
   set = new Set(closure_22.frequently);
   const keys = Object.keys(closure_22.usageHistory);
@@ -184,8 +184,8 @@ function navigateTo(routeTabForLocation1, PUSH) {
                   return tmp;
                 });
                 const items1 = [];
-                const arraySpreadResult = HermesBuiltin.arraySpread(items1, mapped.filter(f96650), 0);
-                HermesBuiltin.arraySpread(items1, mapped.filter(f96651), arraySpreadResult);
+                const arraySpreadResult = HermesBuiltin.arraySpread(items1, mapped.filter(f96657), 0);
+                HermesBuiltin.arraySpread(items1, mapped.filter(f96658), arraySpreadResult);
                 _require = routeTabForLocation1;
                 tabs = items1.map((id) => {
                   let diff;
@@ -415,7 +415,7 @@ class ChannelTabsStore extends PersistedStore {
       }
       return tmp2;
     });
-    const items1 = [...mapped.filter(f96650), ...mapped.filter(f96651)];
+    const items1 = [...mapped.filter(f96657), ...mapped.filter(f96658)];
     tabs = items1;
     activeTabId = undefined;
     if (enabled != null) {
@@ -784,8 +784,8 @@ let obj2 = {
     }
     return false;
   },
-  CHANNEL_TABS_BACK: f96644,
-  CHANNEL_TABS_FORWARD: f96644,
+  CHANNEL_TABS_BACK: f96651,
+  CHANNEL_TABS_FORWARD: f96651,
   CHANNEL_TABS_SET_ENABLED: function handleSetEnabled(enabled) {
     let guildId;
     enabled = enabled.enabled;
@@ -842,8 +842,8 @@ let obj2 = {
       }
     }
   },
-  CHANNEL_TABS_NAVIGATE_ROUTE: f96644,
-  CHANNEL_SELECT: f96644,
+  CHANNEL_TABS_NAVIGATE_ROUTE: f96651,
+  CHANNEL_SELECT: f96651,
   CHANNEL_DELETE: handleChannelDelete,
   CONNECTION_OPEN: function handleConnectionOpen() {
     let c13;
@@ -983,8 +983,8 @@ let obj2 = {
                 return tmp;
               });
               const items2 = [];
-              const arraySpreadResult = HermesBuiltin.arraySpread(items2, mapped.filter(f96650), 0);
-              HermesBuiltin.arraySpread(items2, mapped.filter(f96651), arraySpreadResult);
+              const arraySpreadResult = HermesBuiltin.arraySpread(items2, mapped.filter(f96657), 0);
+              HermesBuiltin.arraySpread(items2, mapped.filter(f96658), arraySpreadResult);
               tabs = items2;
             }
             flag4 = true;
@@ -1029,13 +1029,13 @@ let obj2 = {
     closure_22.overwriteHistory({});
   }
 };
-let f52145 = () => {
+let f52149 = () => {
   let c13;
-  const found = closure_11.find(f96653);
+  const found = closure_11.find(f96660);
   flag = false;
   if (null != found) {
     const sum = found.index + -1;
-    f52145 = sum;
+    f52149 = sum;
     let closure_1 = tmp3;
     flag = false;
     if (null != found.entries[sum]) {
@@ -1057,7 +1057,7 @@ let f52145 = () => {
         let entries;
         let tmp = id;
         if (id.id === activeTabId) {
-          const obj = { id: id.id, pinned: true === id.pinned, entries, index: f52146 };
+          const obj = { id: id.id, pinned: true === id.pinned, entries, index: f52150 };
           entries = id.entries;
           const merged = Object.assign(closure_1);
           tmp = obj;
@@ -1068,13 +1068,13 @@ let f52145 = () => {
   }
   return flag;
 };
-let f52146 = () => {
+let f52150 = () => {
   let c13;
-  const found = closure_11.find(f96653);
+  const found = closure_11.find(f96660);
   flag = false;
   if (null != found) {
     const sum = found.index + 1;
-    f52146 = sum;
+    f52150 = sum;
     let closure_1 = tmp3;
     flag = false;
     if (null != found.entries[sum]) {
@@ -1096,7 +1096,7 @@ let f52146 = () => {
         let entries;
         let tmp = id;
         if (id.id === activeTabId) {
-          const obj = { id: id.id, pinned: true === id.pinned, entries, index: f52146 };
+          const obj = { id: id.id, pinned: true === id.pinned, entries, index: f52150 };
           entries = id.entries;
           const merged = Object.assign(closure_1);
           tmp = obj;

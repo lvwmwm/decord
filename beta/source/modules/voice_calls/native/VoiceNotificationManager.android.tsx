@@ -1,9 +1,9 @@
-// Module ID: 15672
-// Function ID: 15673
+// Module ID: 15676
+// Function ID: 15677
 // Name: VoiceNotificationManager
-// Dependencies: [32, 17, 4761, 2164, 6400, 4762, 2131, 5654, 4855, 1386, 1071, 575, 8454, 8452, 11067, 13523, 5529, 1112, 15673, 2121, 2]
+// Dependencies: [32, 17, 4761, 2164, 6400, 4762, 2131, 5654, 4855, 1386, 1071, 575, 8454, 8452, 11067, 13526, 5529, 1112, 15677, 2121, 2]
 
-// Module 15672 (VoiceNotificationManager)
+// Module 15676 (VoiceNotificationManager)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,8 +12,8 @@ import useChannelName from "useChannelName" /* 5529 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8452 */;
 import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 8454 */;
 import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11067 */;
-import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 13523 */;
-import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 15673 */;
+import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 13526 */;
+import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 15677 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
@@ -69,7 +69,7 @@ class VoiceNotificationManager {
     let createAction;
     obj = Object.create(new.target.prototype);
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "kimono", isPushToTalk: "sari", embeddedActivity: 0, isStreaming: "thong_sandal" };
+    obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "_createPressabilityConfig", isPushToTalk: null, embeddedActivity: "\u{1FAC6}", isStreaming: 16 };
     obj.handleVoiceStateChange = handleVoiceStateChange;
     obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
       const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -244,7 +244,7 @@ class VoiceNotificationManager {
 const prototype = VoiceNotificationManager.prototype;
 let obj = Object.create(VoiceNotificationManager.prototype);
 obj.voiceServiceHandlerId = 9000;
-obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "kimono", isPushToTalk: "sari", embeddedActivity: 0, isStreaming: "thong_sandal" };
+obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "_createPressabilityConfig", isPushToTalk: null, embeddedActivity: "\u{1FAC6}", isStreaming: 16 };
 obj.handleVoiceStateChange = handleVoiceStateChange;
 obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
   const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();

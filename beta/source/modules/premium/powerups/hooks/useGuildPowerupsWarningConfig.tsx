@@ -1,14 +1,14 @@
-// Module ID: 13454
-// Function ID: 13455
+// Module ID: 13457
+// Function ID: 13458
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [19, 13455, 8749, 504, 1112, 2856, 2]
+// Dependencies: [19, 13458, 8749, 504, 1112, 2856, 2]
 // Exports: default
 
-// Module 13454 (useGuildPowerupsWarningConfig)
+// Module 13457 (useGuildPowerupsWarningConfig)
 import intl3 from "intl" /* 1112 */;
 import _modDef2856 from "module_2856" /* 2856 */;
 import react_mod from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13455 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13458 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

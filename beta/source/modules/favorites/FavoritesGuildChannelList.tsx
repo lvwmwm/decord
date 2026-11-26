@@ -1,10 +1,10 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17864
+// Function ID: 17865
 // Name: FavoritesGuildChannelList
 // Dependencies: [32, 19, 4761, 6394, 6633, 6618, 4847, 4766, 7483, 4762, 8320, 4784, 4845, 6619, 4816, 6552, 4765, 4844, 4775, 8327, 1082, 8321, 1195, 11238, 12, 11237, 1254, 11225, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 17860 (FavoritesGuildChannelList)
+// Module 17864 (FavoritesGuildChannelList)
 import Constants from "Constants" /* 1082 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4844 */;
@@ -92,7 +92,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
   let closure_12;
   let closure_3;
   let closure_4;
-  const f131941 = (arg0) => {
+  const f131951 = (arg0) => {
     let position;
     let record;
     let sum;
@@ -272,7 +272,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
           activeJoinedUnreadThreadsForParent = closure_3_6.getActiveJoinedRelevantThreadsForParent(isPrivate.guild_id, isPrivate.id);
         });
         const found = mapped.filter(favoriteChannels(_undefined[26]).isNotNullish);
-        const iter = found.sortBy(f131941);
+        const iter = found.sortBy(f131951);
         closure_7 = iter.value();
       }
       return closure_7;
@@ -416,7 +416,7 @@ function computeFavoritesState(favoriteChannels, arg1) {
               });
               let tmp4 = items;
               const found = mapped.filter(items(_undefined[26]).isNotNullish);
-              const iter = found.sortBy(f131941);
+              const iter = found.sortBy(f131951);
               closure_1 = iter.value();
             }
             return closure_1;

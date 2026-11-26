@@ -1,10 +1,10 @@
-// Module ID: 18190
-// Function ID: 18191
+// Module ID: 18194
+// Function ID: 18195
 // Name: NavigationTTIRegionDebugOverlay
-// Dependencies: [32, 19, 17, 21, 4913, 575, 10431, 10432, 18188, 10434, 5504, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 10431, 10432, 18192, 10434, 5504, 2]
 // Exports: NavigationTTIRegionDebugOverlay
 
-// Module 18190 (NavigationTTIRegionDebugOverlay)
+// Module 18194 (NavigationTTIRegionDebugOverlay)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 10432 */;

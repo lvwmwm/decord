@@ -1,10 +1,10 @@
-// Module ID: 18494
-// Function ID: 18495
+// Module ID: 18498
+// Function ID: 18499
 // Name: ConjureContextBoundaryRow
-// Dependencies: [19, 17, 21, 4913, 575, 18298, 12074, 5504, 5862, 5866, 1112, 4190, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 18302, 12074, 5504, 5862, 5866, 1112, 4190, 2]
 // Exports: default
 
-// Module 18494 (ConjureContextBoundaryRow)
+// Module 18498 (ConjureContextBoundaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -50,7 +50,7 @@ export default function ConjureContextBoundaryRow(arg0) {
   let action;
   ({ projectId, contextSwitch } = arg0);
   const tmp = closure_7();
-  let obj = action(18298);
+  let obj = action(18302);
   const conjureContextSwitchRow = obj.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;

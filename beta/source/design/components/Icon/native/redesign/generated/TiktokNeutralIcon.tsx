@@ -1,14 +1,14 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13220
+// Function ID: 13221
 // Name: TiktokNeutralIcon
-// Dependencies: [19, 21, 575, 5599, 13218, 2]
+// Dependencies: [19, 21, 575, 5599, 13221, 2]
 // Exports: TiktokNeutralIcon
 
-// Module 13217 (TiktokNeutralIcon)
+// Module 13220 (TiktokNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 13218 */;
+import AssetRegistry from "AssetRegistry" /* 13221 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

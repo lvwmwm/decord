@@ -1,9 +1,9 @@
-// Module ID: 16884
-// Function ID: 16885
+// Module ID: 16888
+// Function ID: 16889
 // Name: ChatEmojiEmoticonsSetting
 // Dependencies: [8712, 11942, 1112, 4738, 2]
 
-// Module 16884 (ChatEmojiEmoticonsSetting)
+// Module 16888 (ChatEmojiEmoticonsSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

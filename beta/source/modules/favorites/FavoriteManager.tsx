@@ -1,14 +1,14 @@
-// Module ID: 19686
-// Function ID: 19687
+// Module ID: 19690
+// Function ID: 19691
 // Name: FavoriteManager
-// Dependencies: [502, 17726, 1071, 11224, 4787, 7484, 2]
+// Dependencies: [502, 17730, 1071, 11224, 4787, 7484, 2]
 
-// Module 19686 (FavoriteManager)
+// Module 19690 (FavoriteManager)
 import Constants from "Constants" /* 1071 */;
 import FavoritesUtils from "FavoritesUtils" /* 4787 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 11224 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17726 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17730 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 19273
-// Function ID: 19274
+// Module ID: 19277
+// Function ID: 19278
 // Name: useCanConnect
 // Dependencies: [4762, 4784, 4845, 5561, 1082, 504, 5948, 2]
 // Exports: default
 
-// Module 19273 (useCanConnect)
+// Module 19277 (useCanConnect)
 import Constants from "Constants" /* 1082 */;
 import ChannelUtils from "ChannelUtils" /* 5948 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

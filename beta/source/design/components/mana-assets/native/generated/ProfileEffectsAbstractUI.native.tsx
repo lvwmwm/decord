@@ -1,26 +1,26 @@
-// Module ID: 14413
-// Function ID: 14414
+// Module ID: 14416
+// Function ID: 14417
 // Name: ProfileEffectsAbstractUI
-// Dependencies: [19, 21, 14414, 14415, 14416, 7357, 5600, 2]
+// Dependencies: [19, 21, 14417, 14418, 14419, 7357, 5600, 2]
 // Exports: ProfileEffectsAbstractUI
 
-// Module 14413 (ProfileEffectsAbstractUI)
+// Module 14416 (ProfileEffectsAbstractUI)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef14414 from "module_14414" /* 14414 */;
-import _modDef14415 from "module_14415" /* 14415 */;
-import _modDef14416 from "module_14416" /* 14416 */;
+import _modDef14417 from "module_14417" /* 14417 */;
+import _modDef14418 from "module_14418" /* 14418 */;
+import _modDef14419 from "module_14419" /* 14419 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14414 };
+let obj2 = { uri: _modDef14417 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14415 };
+let obj3 = { uri: _modDef14418 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14416 };
-({ uri: _modDef14416 });
+obj[3] = { uri: _modDef14419 };
+({ uri: _modDef14419 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ProfileEffectsAbstractUI.native.tsx");
 

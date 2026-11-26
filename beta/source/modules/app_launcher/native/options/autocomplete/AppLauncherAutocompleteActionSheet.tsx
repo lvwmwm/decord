@@ -1,10 +1,10 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13047
+// Function ID: 13048
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 8516, 4784, 1071, 5937, 21, 12, 10682, 4913, 575, 563, 5127, 13039, 13040, 1112, 38, 7045, 6382, 5504, 1186, 13041, 2]
+// Dependencies: [32, 19, 17, 8516, 4784, 1071, 5937, 21, 12, 10682, 4913, 575, 563, 5127, 13042, 13043, 1112, 38, 7045, 6382, 5504, 1186, 13044, 2]
 // Exports: default
 
-// Module 13044 (AppLauncherAutocompleteActionSheet)
+// Module 13047 (AppLauncherAutocompleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,7 +17,7 @@ import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */
 import merged5 from "merged5" /* 6382 */;
 import TableRow from "TableRow" /* 7045 */;
 import executeCommandDefault from "executeCommand" /* 10682 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13041 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13044 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8516 */;

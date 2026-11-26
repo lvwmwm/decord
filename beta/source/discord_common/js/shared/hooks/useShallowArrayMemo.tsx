@@ -1,10 +1,10 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17660
+// Function ID: 17661
 // Name: useShallowArrayMemo
 // Dependencies: [8938, 558, 2]
 // Exports: default
 
-// Module 17656 (useShallowArrayMemo)
+// Module 17660 (useShallowArrayMemo)
 import shallowEqual from "shallowEqual" /* 558 */;
 import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 8938 */;
 import size from "module_2" /* 2 */;

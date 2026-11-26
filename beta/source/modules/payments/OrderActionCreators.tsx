@@ -21,7 +21,7 @@ let c11, c12, c7, closure_10, closure_4;
 
 let SPENDING_LIMIT_REACHED;
 let SPENDING_LIMIT_WILL_EXCEED;
-const f89743 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
+const f89750 = (reason_code) => reason_code.reason_code === constants.PURCHASE_RESTRICTED;
 function isOrderShape(obj) {
   return null != obj && typeof obj === "object" && "id" in obj && "status" in obj;
 }
@@ -46,7 +46,7 @@ function getOrderSigningConstraintsError(status) {
                 const unsatisfied_constraints = body2.unsatisfied_constraints;
                 let someResult;
                 if (unsatisfied_constraints != null) {
-                  someResult = unsatisfied_constraints.some(f89743);
+                  someResult = unsatisfied_constraints.some(f89750);
                 }
                 let orderSigningError = null;
                 if (someResult) {
@@ -648,7 +648,7 @@ class OrderSigningFailedWithConstraintsError extends BillingError {
     unsatisfied_constraints = unsatisfied_constraints.unsatisfied_constraints;
     let someResult;
     if (unsatisfied_constraints != null) {
-      someResult = unsatisfied_constraints.some(f89743);
+      someResult = unsatisfied_constraints.some(f89750);
     }
     let orderSigningError = null;
     if (someResult) {

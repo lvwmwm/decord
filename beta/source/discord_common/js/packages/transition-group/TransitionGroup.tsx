@@ -1,10 +1,10 @@
-// Module ID: 13296
-// Function ID: 13297
+// Module ID: 13299
+// Function ID: 13300
 // Name: TransitionGroup
-// Dependencies: [109, 19, 13297, 2]
+// Dependencies: [109, 19, 13300, 2]
 
-// Module 13296 (TransitionGroup)
-import react2 from "react" /* 13297 */;
+// Module 13299 (TransitionGroup)
+import react2 from "react" /* 13300 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

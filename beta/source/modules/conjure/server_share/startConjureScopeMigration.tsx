@@ -1,16 +1,16 @@
-// Module ID: 18306
-// Function ID: 18307
+// Module ID: 18310
+// Function ID: 18311
 // Name: startConjureScopeMigration
-// Dependencies: [5, 6980, 4, 4190, 8447, 18307, 5662, 6940, 13497, 1112, 2]
+// Dependencies: [5, 6980, 4, 4190, 8447, 18311, 5662, 6940, 13500, 1112, 2]
 // Exports: default
 
-// Module 18306 (startConjureScopeMigration)
+// Module 18310 (startConjureScopeMigration)
 import logger_Logger from "logger/Logger" /* 4 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import createNonce from "createNonce" /* 8447 */;
-import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13497 */;
-import conjureSendToProject from "conjureSendToProject" /* 18307 */;
+import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13500 */;
+import conjureSendToProject from "conjureSendToProject" /* 18311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
 import size from "module_2" /* 2 */;

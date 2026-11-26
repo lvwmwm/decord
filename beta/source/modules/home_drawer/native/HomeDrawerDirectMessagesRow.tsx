@@ -1,10 +1,10 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 17901
+// Function ID: 17902
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 5651, 4855, 1071, 21, 4913, 575, 504, 5504, 1112, 17894, 5095, 5092, 2]
+// Dependencies: [19, 17, 5651, 4855, 1071, 21, 4913, 575, 504, 5504, 1112, 17898, 5095, 5092, 2]
 // Exports: default
 
-// Module 17897 (HomeDrawerDirectMessagesRow)
+// Module 17901 (HomeDrawerDirectMessagesRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -51,7 +51,7 @@ function HomeDrawerDMsRow() {
     tmp5 = metroImportAll(View, obj2);
   }
   const obj6 = { title: metroImportDefault(Text2, obj7), subtitle: tmp5 };
-  const HomeDrawerSharedItem = tmp2(17894).HomeDrawerSharedItem;
+  const HomeDrawerSharedItem = tmp2(17898).HomeDrawerSharedItem;
   obj7 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
   Text2 = tmp2(5504).Text;
   intl2 = tmp2(1112).intl;

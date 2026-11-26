@@ -1,10 +1,10 @@
-// Module ID: 17873
-// Function ID: 17874
+// Module ID: 17877
+// Function ID: 17878
 // Name: GuildsBarDnDStore
 // Dependencies: [6550, 1257, 1653, 1262, 1241, 4828, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 17873 (GuildsBarDnDStore)
+// Module 17877 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import react_native from "react-native" /* 1262 */;
 import _slicedToArray from "_slicedToArray" /* 4828 */;
@@ -77,7 +77,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "isArray" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "analyticsLocations" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -108,7 +108,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "format" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {

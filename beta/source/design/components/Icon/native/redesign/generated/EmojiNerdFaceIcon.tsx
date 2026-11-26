@@ -1,14 +1,14 @@
-// Module ID: 16798
-// Function ID: 16799
+// Module ID: 16802
+// Function ID: 16803
 // Name: EmojiNerdFaceIcon
-// Dependencies: [19, 21, 575, 5599, 16799, 2]
+// Dependencies: [19, 21, 575, 5599, 16803, 2]
 // Exports: EmojiNerdFaceIcon
 
-// Module 16798 (EmojiNerdFaceIcon)
+// Module 16802 (EmojiNerdFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 16799 */;
+import AssetRegistry from "AssetRegistry" /* 16803 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

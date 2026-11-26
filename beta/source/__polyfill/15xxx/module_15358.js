@@ -1,13 +1,18 @@
 // Module ID: 15358
 // Function ID: 15359
-// Dependencies: [15347]
+// Dependencies: [15351]
 
 // Module 15358
-import _mod15347 from "module_15347" /* 15347 */;
+import _mod15351 from "module_15351" /* 15351 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const obj = new _mod15347(arg0, arg2);
-  const tmp = new _mod15347(arg1, arg2);
-  return obj.intersects(tmp, arg2);
+export default function(arg0, arg1) {
+  try {
+    const self = this;
+    const self2 = this;
+    const str = new _mod15351(arg0, arg1).range || "*";
+    return str;
+  } catch (err) {
+    return null;
+  }
 };

@@ -1,25 +1,25 @@
-// Module ID: 19355
-// Function ID: 19356
+// Module ID: 19359
+// Function ID: 19360
 // Name: useControlsButtons
-// Dependencies: [19, 4762, 2131, 11753, 1071, 21, 19356, 19359, 19365, 19367, 19369, 19370, 19371, 19374, 19375, 19376, 19378, 19259, 1625, 11754, 19379, 504, 10860, 10672, 6533, 1653, 13137, 10603, 2]
+// Dependencies: [19, 4762, 2131, 11753, 1071, 21, 19360, 19363, 19369, 19371, 19373, 19374, 19375, 19378, 19379, 19380, 19382, 19263, 1625, 11754, 19383, 504, 10860, 10672, 6533, 1653, 13140, 10603, 2]
 // Exports: default
 
-// Module 19355 (useControlsButtons)
+// Module 19359 (useControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
-import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19259 */;
-import VoicePanelMicButton from "VoicePanelMicButton" /* 19356 */;
-import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19359 */;
-import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19365 */;
-import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19367 */;
-import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19369 */;
-import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19370 */;
-import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19371 */;
-import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19374 */;
-import VoicePanelRaiseHandButtonDefault from "VoicePanelRaiseHandButton" /* 19375 */;
-import VoicePanelStageAudienceButtonDefault from "VoicePanelStageAudienceButton" /* 19376 */;
-import VoicePanelLeaveStageButtonDefault from "VoicePanelLeaveStageButton" /* 19378 */;
+import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19263 */;
+import VoicePanelMicButton from "VoicePanelMicButton" /* 19360 */;
+import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19363 */;
+import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19369 */;
+import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19371 */;
+import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19373 */;
+import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19374 */;
+import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19375 */;
+import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19378 */;
+import VoicePanelRaiseHandButtonDefault from "VoicePanelRaiseHandButton" /* 19379 */;
+import VoicePanelStageAudienceButtonDefault from "VoicePanelStageAudienceButton" /* 19380 */;
+import VoicePanelLeaveStageButtonDefault from "VoicePanelLeaveStageButton" /* 19382 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
@@ -100,7 +100,7 @@ function getButtons(arg0, stateFromStores, treatment, memo) {
       const obj15 = { type: "icon-large", key: "connected-ptt", render: redux.ptt };
       items1.push(obj15);
     }
-    if (treatment === tmp11(19259).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
+    if (treatment === tmp11(19263).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
       const obj16 = { type: "icon-normal", key: "connected-screenshare", render: redux.screenshare };
       items1.push(obj16);
     } else {

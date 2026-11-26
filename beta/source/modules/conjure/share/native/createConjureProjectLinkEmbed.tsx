@@ -1,10 +1,10 @@
-// Module ID: 14328
-// Function ID: 14329
+// Module ID: 14331
+// Function ID: 14332
 // Name: createConjureProjectLinkEmbed
-// Dependencies: [17, 10418, 4913, 575, 1112, 4190, 11878, 11976, 8680, 12806, 8691, 11977, 2]
+// Dependencies: [17, 10418, 4913, 575, 1112, 4190, 11878, 11976, 8680, 12809, 8691, 11977, 2]
 // Exports: default
 
-// Module 14328 (createConjureProjectLinkEmbed)
+// Module 14331 (createConjureProjectLinkEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4190 from "module_4190" /* 4190 */;
@@ -13,7 +13,7 @@ import CodedLinksConstants from "CodedLinksConstants" /* 10418 */;
 import conjureDefaultAppIcon2 from "conjureDefaultAppIcon" /* 11878 */;
 import conjureProjectLinkCard2 from "conjureProjectLinkCard" /* 11976 */;
 import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 11977 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 12806 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12809 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ export default function createConjureProjectLinkEmbed(applicationId, ticket, the
       }
       const obj4 = { displayType: "ready" === conjureProjectLinkCard.type ? ConjureProjectEmbedDisplayType.READY : ConjureProjectEmbedDisplayType.INFO_ONLY, title: application.name, description: tmp21, creatorContent: formatToPartsResult, creatorAvatarUrl, projectTypes: mapped, noticeText: stringResult1, iconUrl: iconURL, iconFallback: tmp27, coverUrl: coverImageURL, installLabel: stringResult2, remixLabel: null, coverAction, coverActionLabel: stringResult3, accessibilityLabel: intl6.formatToPlainString(_modDef4190.c8DqSD, obj8) };
       const merged3 = Object.assign(obj2);
-      ConjureProjectEmbedDisplayType = tmp(12806).ConjureProjectEmbedDisplayType;
+      ConjureProjectEmbedDisplayType = tmp(12809).ConjureProjectEmbedDisplayType;
       tmp21 = null;
       if ("" !== str3) {
         tmp21 = str3;

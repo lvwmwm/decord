@@ -1,21 +1,21 @@
-// Module ID: 18964
-// Function ID: 18965
+// Module ID: 18968
+// Function ID: 18969
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 18965, 4780, 4762, 4819, 4784, 4845, 4855, 1386, 1071, 21, 4913, 575, 504, 18967, 1500, 1628, 6866, 12084, 18966, 18970, 4850, 7736, 1083, 2117, 4969, 5860, 1112, 5592, 2187, 4770, 18585, 8561, 5504, 5529, 13858, 7045, 7762, 7348, 18589, 1378, 2]
+// Dependencies: [32, 5, 19, 17, 18969, 4780, 4762, 4819, 4784, 4845, 4855, 1386, 1071, 21, 4913, 575, 504, 18971, 1500, 1628, 6866, 12084, 18970, 18974, 4850, 7736, 1083, 2117, 4969, 5860, 1112, 5592, 2187, 4770, 18589, 8561, 5504, 5529, 13861, 7045, 7762, 7348, 18593, 1378, 2]
 // Exports: default
 
-// Module 18964 (ChannelSettingsPermissionsOverrides)
+// Module 18968 (ChannelSettingsPermissionsOverrides)
 import nativeDefault from "native" /* 575 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4770 */;
 import GuildRecord from "GuildRecord" /* 4780 */;
 import TableRowGroup2 from "TableRowGroup" /* 7348 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12084 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18585 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18589 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 18965 */;
+import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 18969 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildRoleStore from "GuildRoleStore" /* 4819 */;
 import GuildStore from "GuildStore" /* 4784 */;
@@ -340,7 +340,7 @@ export default function ChannelSettingsPermissionsOverrides(channelId) {
   const tmp12 = closure_20(Text, obj5);
   if (type === constants.MEMBER) {
     let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp12 };
-    tmp11Result = tmp11(tmp5(13858), obj6);
+    tmp11Result = tmp11(tmp5(13861), obj6);
   } else {
     let tmp13 = GuildRoleStore;
     let TableRow = tmp2(7045).TableRow;

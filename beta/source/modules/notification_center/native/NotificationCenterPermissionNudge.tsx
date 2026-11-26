@@ -1,19 +1,19 @@
-// Module ID: 18058
-// Function ID: 18059
+// Module ID: 18062
+// Function ID: 18063
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1071, 4759, 13283, 21, 4913, 575, 1255, 10369, 5504, 1112, 5511, 13284, 7030, 7151, 16899, 9080, 4746, 2]
+// Dependencies: [32, 19, 17, 1071, 4759, 13286, 21, 4913, 575, 1255, 10369, 5504, 1112, 5511, 13287, 7030, 7151, 16903, 9080, 4746, 2]
 // Exports: default
 
-// Module 18058 (NotificationCenterPermissionNudge)
+// Module 18062 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16899 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13283 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13286 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

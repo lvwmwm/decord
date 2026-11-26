@@ -1,10 +1,10 @@
-// Module ID: 18893
-// Function ID: 18894
+// Module ID: 18897
+// Function ID: 18898
 // Name: UserSettingsFriendRequests
 // Dependencies: [19, 17, 1071, 21, 4738, 7415, 7348, 1112, 7556, 1404, 2]
 // Exports: default
 
-// Module 18893 (UserSettingsFriendRequests)
+// Module 18897 (UserSettingsFriendRequests)
 import react_native from "react-native" /* 17 */;
 import FlagUtilsAll from "FlagUtils" /* 1404 */;
 import UserSettings from "UserSettings" /* 4738 */;

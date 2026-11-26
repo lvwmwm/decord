@@ -1,10 +1,10 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14258
+// Function ID: 14259
 // Name: CollectiblesPromotionDiscountCtaUtils
 // Dependencies: [8960, 8964, 8970, 8966, 1112, 2]
 // Exports: useDiscountPromotionPurchaseCtaText
 
-// Module 14255 (CollectiblesPromotionDiscountCtaUtils)
+// Module 14258 (CollectiblesPromotionDiscountCtaUtils)
 import useCollectiblesPromotionForProduct from "useCollectiblesPromotionForProduct" /* 8960 */;
 import CollectiblesStorefrontPricingIntegrationExperiment from "CollectiblesStorefrontPricingIntegrationExperiment" /* 8964 */;
 import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 8966 */;

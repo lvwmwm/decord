@@ -1,19 +1,19 @@
-// Module ID: 15945
-// Function ID: 15946
+// Module ID: 15949
+// Function ID: 15950
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1386, 1071, 21, 4913, 575, 504, 2173, 15843, 7553, 7515, 1112, 8952, 7348, 7045, 7709, 15845, 7520, 15847, 15846, 2]
+// Dependencies: [19, 17, 1386, 1071, 21, 4913, 575, 504, 2173, 15847, 7553, 7515, 1112, 8952, 7348, 7045, 7709, 15849, 7520, 15851, 15850, 2]
 // Exports: default
 
-// Module 15945 (ChangeAvatarActionSheet)
+// Module 15949 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
-import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15843 */;
-import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 15845 */;
-import ProfileEditNitroSubLabelDefault from "ProfileEditNitroSubLabel" /* 15846 */;
-import ProfileEditNitroUpsellRowDefault from "ProfileEditNitroUpsellRow" /* 15847 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15847 */;
+import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 15849 */;
+import ProfileEditNitroSubLabelDefault from "ProfileEditNitroSubLabel" /* 15850 */;
+import ProfileEditNitroUpsellRowDefault from "ProfileEditNitroUpsellRow" /* 15851 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;

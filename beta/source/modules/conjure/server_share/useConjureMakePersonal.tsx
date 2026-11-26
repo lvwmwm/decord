@@ -1,12 +1,12 @@
-// Module ID: 18311
-// Function ID: 18312
+// Module ID: 18315
+// Function ID: 18316
 // Name: useConjureMakePersonal
-// Dependencies: [5, 32, 19, 6621, 6933, 12390, 18305, 1112, 4190, 18306, 2]
+// Dependencies: [5, 32, 19, 6621, 6933, 12390, 18309, 1112, 4190, 18310, 2]
 // Exports: default
 
-// Module 18311 (useConjureMakePersonal)
+// Module 18315 (useConjureMakePersonal)
 import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
-import conjureChangeRows from "conjureChangeRows" /* 18305 */;
+import conjureChangeRows from "conjureChangeRows" /* 18309 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 18929
-// Function ID: 18930
+// Module ID: 18933
+// Function ID: 18934
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 15009, 1071, 8951, 1388, 21, 1088, 4913, 575, 18930, 1255, 1112, 2168, 563, 8859, 8956, 18928, 2187, 5504, 2173, 7030, 1186, 8952, 5468, 7563, 2]
+// Dependencies: [19, 17, 15012, 1071, 8951, 1388, 21, 1088, 4913, 575, 18934, 1255, 1112, 2168, 563, 8859, 8956, 18932, 2187, 5504, 2173, 7030, 1186, 8952, 5468, 7563, 2]
 // Exports: default
 
-// Module 18929 (YouExpiringTrialOfferCard)
+// Module 18933 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1088 */;
@@ -14,9 +14,9 @@ import _modDef2168 from "module_2168" /* 2168 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import ColorConstants from "ColorConstants" /* 8951 */;
 import useCountdownDefault from "useCountdown" /* 8956 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 18930 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 18934 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 15009 */;
+import NoticeStore from "NoticeStore" /* 15012 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -87,7 +87,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const time = tmp7(num, closure_15);
-  const tmp4Result = tmp4(18928);
+  const tmp4Result = tmp4(18932);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {

@@ -1,10 +1,10 @@
-// Module ID: 13874
-// Function ID: 13875
+// Module ID: 13877
+// Function ID: 13878
 // Name: ChannelVoiceChatModal
 // Dependencies: [19, 21, 5085, 4974, 11102, 5529, 5649, 10542, 7620, 5115, 2]
 // Exports: default
 
-// Module 13874 (ChannelVoiceChatModal)
+// Module 13877 (ChannelVoiceChatModal)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 4974 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5085 */;

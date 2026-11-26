@@ -1,10 +1,10 @@
-// Module ID: 18912
-// Function ID: 18913
+// Module ID: 18916
+// Function ID: 18917
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1071, 4759, 21, 4913, 575, 1112, 4192, 7520, 7539, 8194, 9087, 12840, 1399, 12843, 12844, 2]
+// Dependencies: [19, 17, 1071, 4759, 21, 4913, 575, 1112, 4192, 7520, 7539, 8194, 9087, 12843, 1399, 12846, 12847, 2]
 // Exports: default
 
-// Module 18912 (CustomTypingIndicatorProfileCoachmark)
+// Module 18916 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,9 +13,9 @@ import intl3 from "intl" /* 1112 */;
 import user from "user" /* 1399 */;
 import _modDef4192 from "module_4192" /* 4192 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12840 */;
-import _modDef12843 from "module_12843" /* 12843 */;
-import _modDef12844 from "module_12844" /* 12844 */;
+import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12843 */;
+import _modDef12846 from "module_12846" /* 12846 */;
+import _modDef12847 from "module_12847" /* 12847 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function CoachmarkPreview() {
   const tmp = closure_8();
   ({ name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "body-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: items });
   CustomTypingIndicatorDynamicAssetDefault;
-  items = [_modDef12843, _modDef12844, _modDef12843];
+  items = [_modDef12846, _modDef12847, _modDef12846];
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 }
 let react = react_mod;

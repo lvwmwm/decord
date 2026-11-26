@@ -1,14 +1,14 @@
-// Module ID: 19736
-// Function ID: 19737
+// Module ID: 19740
+// Function ID: 19741
 // Name: ChannelListPlusIcon
-// Dependencies: [19, 21, 575, 5599, 19737, 2]
+// Dependencies: [19, 21, 575, 5599, 19741, 2]
 // Exports: ChannelListPlusIcon
 
-// Module 19736 (ChannelListPlusIcon)
+// Module 19740 (ChannelListPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 19737 */;
+import AssetRegistry from "AssetRegistry" /* 19741 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 17245
-// Function ID: 17246
+// Module ID: 17249
+// Function ID: 17250
 // Name: DesignSystemsTooltipSetting
-// Dependencies: [8712, 1071, 11942, 17246, 2]
+// Dependencies: [8712, 1071, 11942, 17250, 2]
 
-// Module 17245 (DesignSystemsTooltipSetting)
+// Module 17249 (DesignSystemsTooltipSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;

@@ -1,10 +1,10 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13852
+// Function ID: 13853
 // Name: InstantInvite
-// Dependencies: [19, 17, 4766, 1386, 1071, 21, 4913, 575, 504, 6864, 13850, 13851, 5861, 1112, 12739, 1098, 13852, 7047, 5929, 7526, 5504, 8658, 7591, 13856, 13857, 13859, 13862, 13863, 2]
+// Dependencies: [19, 17, 4766, 1386, 1071, 21, 4913, 575, 504, 6864, 13853, 13854, 5861, 1112, 12739, 1098, 13855, 7047, 5929, 7526, 5504, 8658, 7591, 13859, 13860, 13862, 13865, 13866, 2]
 // Exports: LinkedChannelInvite
 
-// Module 13849 (InstantInvite)
+// Module 13852 (InstantInvite)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,10 +12,10 @@ import intl3 from "intl" /* 1112 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
 import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 12739 */;
-import InstantInviteIconsDefault from "InstantInviteIcons" /* 13852 */;
-import InstantInviteCreatorDefault from "InstantInviteCreator" /* 13857 */;
-import InviteRolesDisplayDefault from "InviteRolesDisplay" /* 13862 */;
-import InstantInviteUsesLabelDefault from "InstantInviteUsesLabel" /* 13863 */;
+import InstantInviteIconsDefault from "InstantInviteIcons" /* 13855 */;
+import InstantInviteCreatorDefault from "InstantInviteCreator" /* 13860 */;
+import InviteRolesDisplayDefault from "InviteRolesDisplay" /* 13865 */;
+import InstantInviteUsesLabelDefault from "InstantInviteUsesLabel" /* 13866 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function InstantInvite(invite) {
   }
   const items = [invite];
   const memo = react.useMemo(() => closure_5(invite.channel), items);
-  let obj = invite(13859);
+  let obj = invite(13862);
   const items1 = [invite.roles];
   const inviteActions = obj.useInviteActions({ invite, onInviteRevoked });
   const memo1 = react.useMemo(() => {
@@ -81,7 +81,7 @@ const memoResult = react.memo(function InstantInvite(invite) {
   items2[1] = closure_8(invite(8658).ContextMenu, obj4);
   const items3 = [closure_9(Stack, obj2), , , ];
   const obj5 = { channel: memo, expiresAt: invite.getExpiresAt() };
-  const InstantInviteDetails = tmp4(13856).InstantInviteDetails;
+  const InstantInviteDetails = tmp4(13859).InstantInviteDetails;
   items3[1] = closure_8(InstantInviteDetails, obj5);
   if (tmp9Result) {
     const obj6 = { roleIds: memo1, guildId: id };
@@ -132,11 +132,11 @@ export function LinkedChannelInvite(channel) {
     application_id = linkedLobby.application_id;
   }
   const getOrFetchApplication = useGetOrFetchApplication(application_id);
-  const tmp2Result = channel(13850);
+  const tmp2Result = channel(13853);
   canUnlinkLobbyChannel = tmp2Result.useCanUnlinkLobbyChannel(channel);
   let str;
   const id = channel.id;
-  const tmp10 = canUnlinkLobbyChannel(13851);
+  const tmp10 = canUnlinkLobbyChannel(13854);
   if (getOrFetchApplication != null) {
     str = getOrFetchApplication.name;
   }
@@ -212,9 +212,9 @@ export function LinkedChannelInvite(channel) {
     }
   };
   items4[1] = closure_8(channel(8658).ContextMenu, obj7);
-  items5 = [closure_9(Stack, obj6), closure_8(tmp2(13856).InstantInviteDetails, { channel }), ];
+  items5 = [closure_9(Stack, obj6), closure_8(tmp2(13859).InstantInviteDetails, { channel }), ];
   const obj8 = { direction: "horizontal", align: "flex-end", children: closure_8(View, obj9) };
-  obj9 = { style: tmp.creatorWrapper, children: closure_8(canUnlinkLobbyChannel(13857), obj10) };
+  obj9 = { style: tmp.creatorWrapper, children: closure_8(canUnlinkLobbyChannel(13860), obj10) };
   const Stack2 = tmp2(5929).Stack;
   obj10 = { user: stateFromStores, guildId: channel.guild_id };
   items5[2] = closure_8(Stack2, obj8);

@@ -1,9 +1,9 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17374
+// Function ID: 17375
 // Name: ContentAndSocialSetting
-// Dependencies: [1071, 11942, 1112, 5598, 17371, 2]
+// Dependencies: [1071, 11942, 1112, 5598, 17375, 2]
 
-// Module 17370 (ContentAndSocialSetting)
+// Module 17374 (ContentAndSocialSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import FriendsIcon from "FriendsIcon" /* 5598 */;

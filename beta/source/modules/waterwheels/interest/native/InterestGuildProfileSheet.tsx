@@ -1,10 +1,10 @@
-// Module ID: 17823
-// Function ID: 17824
+// Module ID: 17827
+// Function ID: 17828
 // Name: InterestGuildProfileSheet
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 5122, 5477, 8149, 1494, 1628, 17824, 671, 9745, 17825, 17826, 5141, 5468, 5145, 5476, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 5122, 5477, 8149, 1494, 1628, 17828, 671, 9745, 17829, 17830, 5141, 5468, 5145, 5476, 2]
 // Exports: default
 
-// Module 17823 (InterestGuildProfileSheet)
+// Module 17827 (InterestGuildProfileSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -16,8 +16,8 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
 import BottomSheetModal from "BottomSheetModal" /* 5145 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5476 */;
-import InterestGuildProfileBannerDefault from "InterestGuildProfileBanner" /* 17825 */;
-import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 17826 */;
+import InterestGuildProfileBannerDefault from "InterestGuildProfileBanner" /* 17829 */;
+import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 17830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -84,8 +84,8 @@ export default function InterestGuildProfileSheet(guildId) {
   [tmp9, c10] = _slicedToArray(react.useState(0), 2);
   let obj5 = { windowHeight: height, contentHeight: tmp7, footerHeight: sum, safeAreaBottom: bottom };
   const tmp8 = _slicedToArray(react.useState(0), 2);
-  const getInterestGuildProfileSheetLayout = guildId(17824).getInterestGuildProfileSheetLayout;
-  guildId(17824);
+  const getInterestGuildProfileSheetLayout = guildId(17828).getInterestGuildProfileSheetLayout;
+  guildId(17828);
   if (sum <= 0) {
     sum = nativeDefault.space.PX_48 + nativeDefault.space.PX_32;
   }

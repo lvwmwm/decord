@@ -1,14 +1,14 @@
-// Module ID: 14496
-// Function ID: 14497
+// Module ID: 14499
+// Function ID: 14500
 // Name: AvatarPile
-// Dependencies: [19, 21, 14497, 10131, 12289, 9023, 10132, 2]
+// Dependencies: [19, 21, 14500, 10131, 12289, 9023, 10132, 2]
 // Exports: AvatarPile
 
-// Module 14496 (AvatarPile)
+// Module 14499 (AvatarPile)
 import ClipView from "ClipView" /* 9023 */;
 import Pile2 from "Pile" /* 10131 */;
 import ListUtils from "ListUtils" /* 12289 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14497 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14500 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

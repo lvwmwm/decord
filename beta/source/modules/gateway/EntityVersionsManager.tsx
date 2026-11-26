@@ -1,9 +1,9 @@
-// Module ID: 19499
-// Function ID: 19500
+// Module ID: 19503
+// Function ID: 19504
 // Name: EntityVersionsManager
 // Dependencies: [6573, 6614, 4762, 4819, 4784, 6394, 3, 7484, 572, 504, 8353, 1250, 11, 2]
 
-// Module 19499 (EntityVersionsManager)
+// Module 19503 (EntityVersionsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -44,7 +44,7 @@ function handleDeletedEntityIds(guild_id) {
         let obj3;
         if (!set.has(id)) {
           const obj2 = { type: "CHANNEL_DELETE", channel: obj3 };
-          obj3 = { guild_id: guild_id2, id, parent_id: "sa" };
+          obj3 = { guild_id: guild_id2, id, parent_id: "Array" };
           const obj = guild_id(closure_2_1[8]);
           obj.dispatch(obj2);
         }

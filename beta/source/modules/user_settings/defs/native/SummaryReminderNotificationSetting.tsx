@@ -1,14 +1,14 @@
-// Module ID: 16945
-// Function ID: 16946
+// Module ID: 16949
+// Function ID: 16950
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [8712, 16946, 11942, 1112, 4738, 16947, 2]
+// Dependencies: [8712, 16950, 11942, 1112, 4738, 16951, 2]
 
-// Module 16945 (SummaryReminderNotificationSetting)
+// Module 16949 (SummaryReminderNotificationSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 16946 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 16947 */;
+import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 16950 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 16951 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

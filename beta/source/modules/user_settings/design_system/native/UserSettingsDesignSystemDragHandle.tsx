@@ -1,10 +1,10 @@
-// Module ID: 17274
-// Function ID: 17275
+// Module ID: 17278
+// Function ID: 17279
 // Name: UserSettingsDesignSystemDragHandle
 // Dependencies: [19, 17, 1071, 21, 4913, 575, 5504, 7049, 5929, 5468, 7348, 7045, 10376, 7047, 2]
 // Exports: default
 
-// Module 17274 (UserSettingsDesignSystemDragHandle)
+// Module 17278 (UserSettingsDesignSystemDragHandle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;

@@ -1,10 +1,10 @@
-// Module ID: 14332
-// Function ID: 14333
+// Module ID: 14335
+// Function ID: 14336
 // Name: EmbeddedApplicationInstanceUtils
 // Dependencies: [19, 1112, 7466, 10782, 2]
 // Exports: useJoinOrStartButtonState
 
-// Module 14332 (EmbeddedApplicationInstanceUtils)
+// Module 14335 (EmbeddedApplicationInstanceUtils)
 import intl12 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

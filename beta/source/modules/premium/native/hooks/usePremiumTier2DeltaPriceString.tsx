@@ -1,10 +1,10 @@
-// Module ID: 14163
-// Function ID: 14164
+// Module ID: 14166
+// Function ID: 14167
 // Name: usePremiumTier2DeltaPriceString
 // Dependencies: [19, 9112, 8851, 1388, 9131, 8170, 1378, 6856, 4726, 504, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 14163 (usePremiumTier2DeltaPriceString)
+// Module 14166 (usePremiumTier2DeltaPriceString)
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import ProductIds from "ProductIds" /* 8170 */;
 import NativeCheckoutStore from "NativeCheckoutStore" /* 9112 */;

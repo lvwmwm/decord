@@ -1,17 +1,17 @@
-// Module ID: 17524
-// Function ID: 17525
+// Module ID: 17528
+// Function ID: 17529
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1071, 21, 3, 4913, 575, 17525, 5090, 1501, 5092, 11959, 11957, 11960, 17526, 5098, 17527, 5646, 1107, 17528, 7737, 17531, 1653, 7097, 8572, 11775, 17532, 17533, 5173, 17540, 17541, 18176, 18177, 18178, 18857, 17992, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 3, 4913, 575, 17529, 5090, 1501, 5092, 11959, 11957, 11960, 17530, 5098, 17531, 5646, 1107, 17532, 7737, 17535, 1653, 7097, 8572, 11775, 17536, 17537, 5173, 17544, 17545, 18180, 18181, 18182, 18861, 17996, 2]
 
-// Module 17524 (MainTabsNavigatorPanel)
+// Module 17528 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import RootNavigationRef from "RootNavigationRef" /* 5090 */;
 import ChatInputUtils from "ChatInputUtils" /* 5098 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17525 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17526 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 17531 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17529 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17530 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 17535 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -73,7 +73,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let tmp77;
   let tmp78;
   let type1;
-  const f131607 = () => first4;
+  const f131617 = () => first4;
   let flag = showHeaderGradient.showHeaderGradient;
   if (flag === undefined) {
     flag = true;
@@ -187,9 +187,9 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     const obj = navigation(drawerWidth[8]);
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp25, c3] = react.useState(f131607);
+  [tmp25, c3] = react.useState(f131617);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f131607), 2);
+  _slicedToArray(react.useState(f131617), 2);
   const effect1 = obj3.useEffect(() => {
     let addListenerResult1;
     let state;

@@ -1,9 +1,9 @@
-// Module ID: 17290
-// Function ID: 17291
+// Module ID: 17294
+// Function ID: 17295
 // Name: ShopHomeSortType
 // Dependencies: [2]
 
-// Module 17290 (ShopHomeSortType)
+// Module 17294 (ShopHomeSortType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ShopHomeSortType.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 13563
-// Function ID: 13564
+// Module ID: 13566
+// Function ID: 13567
 // Name: useIsHubRealNamePromptShowing
-// Dependencies: [19, 13564, 4825, 4784, 1386, 1071, 13565, 504, 13566, 2]
+// Dependencies: [19, 13567, 4825, 4784, 1386, 1071, 13568, 504, 13569, 2]
 // Exports: default
 
-// Module 13563 (useIsHubRealNamePromptShowing)
+// Module 13566 (useIsHubRealNamePromptShowing)
 import Constants from "Constants" /* 1071 */;
-import Constants2 from "Constants" /* 13565 */;
-import GuildPromptsActionCreatorsDefault from "GuildPromptsActionCreators" /* 13566 */;
+import Constants2 from "Constants" /* 13568 */;
+import GuildPromptsActionCreatorsDefault from "GuildPromptsActionCreators" /* 13569 */;
 import react from "react" /* 19 */;
-import GuildPromptsStore from "GuildPromptsStore" /* 13564 */;
+import GuildPromptsStore from "GuildPromptsStore" /* 13567 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;

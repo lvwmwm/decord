@@ -1,10 +1,10 @@
-// Module ID: 15979
-// Function ID: 15980
+// Module ID: 15983
+// Function ID: 15984
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 6664, 21, 4913, 575, 504, 15980, 1186, 9023, 1358, 7099, 7151, 10278, 2]
+// Dependencies: [19, 17, 6664, 21, 4913, 575, 504, 15984, 1186, 9023, 1358, 7099, 7151, 10278, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15979 (BackIconWithBadge)
+// Module 15983 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7099 */;

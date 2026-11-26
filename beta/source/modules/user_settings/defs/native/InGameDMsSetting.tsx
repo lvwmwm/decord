@@ -1,9 +1,9 @@
-// Module ID: 17393
-// Function ID: 17394
+// Module ID: 17397
+// Function ID: 17398
 // Name: InGameDMsSetting
 // Dependencies: [19, 8712, 4738, 1195, 1112, 11942, 2]
 
-// Module 17393 (InGameDMsSetting)
+// Module 17397 (InGameDMsSetting)
 import intl4 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import UserSettings from "UserSettings" /* 4738 */;

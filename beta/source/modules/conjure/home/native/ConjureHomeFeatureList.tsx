@@ -1,9 +1,9 @@
-// Module ID: 18654
-// Function ID: 18655
+// Module ID: 18658
+// Function ID: 18659
 // Name: ConjureHomeFeatureList
-// Dependencies: [19, 17, 21, 4913, 575, 7532, 5468, 9814, 5504, 8976, 12175, 1112, 4190, 5477, 5622, 10138, 671, 18655, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7532, 5468, 9814, 5504, 8976, 12175, 1112, 4190, 5477, 5622, 10138, 671, 18659, 2]
 
-// Module 18654 (ConjureHomeFeatureList)
+// Module 18658 (ConjureHomeFeatureList)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl3 from "intl" /* 1112 */;

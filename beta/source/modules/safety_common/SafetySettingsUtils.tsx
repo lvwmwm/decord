@@ -1,10 +1,10 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 15996
+// Function ID: 15997
 // Name: SafetySettingsUtils
 // Dependencies: [1071, 1255, 2]
 // Exports: trackSafetySettingsNoticeAnalytics
 
-// Module 15992 (SafetySettingsUtils)
+// Module 15996 (SafetySettingsUtils)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;

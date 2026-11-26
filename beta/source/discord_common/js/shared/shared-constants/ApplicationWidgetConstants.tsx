@@ -1,9 +1,9 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 14582
+// Function ID: 14583
 // Name: ApplicationWidgetConstants
 // Dependencies: [2]
 
-// Module 14579 (ApplicationWidgetConstants)
+// Module 14582 (ApplicationWidgetConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetConstants.tsx");

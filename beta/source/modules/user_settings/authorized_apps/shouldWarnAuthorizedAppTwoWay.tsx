@@ -1,10 +1,10 @@
-// Module ID: 13496
-// Function ID: 13497
+// Module ID: 13499
+// Function ID: 13500
 // Name: shouldWarnAuthorizedAppTwoWay
 // Dependencies: [7079, 2]
 // Exports: default, useShouldWarnAuthorizedAppTwoWay
 
-// Module 13496 (shouldWarnAuthorizedAppTwoWay)
+// Module 13499 (shouldWarnAuthorizedAppTwoWay)
 import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 7079 */;
 import size from "module_2" /* 2 */;
 

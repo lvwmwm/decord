@@ -1,10 +1,10 @@
-// Module ID: 19388
-// Function ID: 19389
+// Module ID: 19392
+// Function ID: 19393
 // Name: useHideSelfVideo
 // Dependencies: [502, 2131, 1071, 5658, 504, 5809, 2]
 // Exports: default
 
-// Module 19388 (useHideSelfVideo)
+// Module 19392 (useHideSelfVideo)
 import Constants2 from "Constants" /* 1071 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5809 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

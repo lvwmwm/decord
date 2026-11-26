@@ -1,9 +1,9 @@
-// Module ID: 17193
-// Function ID: 17194
+// Module ID: 17197
+// Function ID: 17198
 // Name: BuildOverridesScreen
-// Dependencies: [5, 32, 19, 17, 11899, 21, 4913, 575, 5488, 504, 12223, 12226, 12224, 1375, 7545, 5594, 5929, 7348, 7045, 5613, 7388, 14376, 5620, 7347, 7349, 9041, 17194, 7221, 5511, 5609, 5504, 2]
+// Dependencies: [5, 32, 19, 17, 11899, 21, 4913, 575, 5488, 504, 12223, 12226, 12224, 1375, 7545, 5594, 5929, 7348, 7045, 5613, 7388, 14379, 5620, 7347, 7349, 9041, 17198, 7221, 5511, 5609, 5504, 2]
 
-// Module 17193 (BuildOverridesScreen)
+// Module 17197 (BuildOverridesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
@@ -324,7 +324,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   let tmp18Result = null != stateFromStores;
   if (tmp18Result) {
     let obj5 = { children: items3 };
-    let obj6 = { icon: tmp16(tmp3(14376).RefreshIcon, {}), label: "Refresh override", onPress: tmp3(12223).refreshBuildOverride, arrow: true };
+    let obj6 = { icon: tmp16(tmp3(14379).RefreshIcon, {}), label: "Refresh override", onPress: tmp3(12223).refreshBuildOverride, arrow: true };
     const TableRow2 = tmp3(7045).TableRow;
     items3 = [tmp16(TableRow2, obj6), ];
     let obj7 = {
@@ -364,7 +364,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   const obj11 = { value: "branch", label: "Branch name", icon: tmp16(tmp3(9041).TagIcon, {}) };
   const TableRadioRow = tmp3(7349).TableRadioRow;
   items6 = [tmp16(TableRadioRow, obj11), ];
-  const obj12 = { value: "id", label: "Commit SHA", icon: tmp16(tmp3(17194).HashmarkIcon, {}) };
+  const obj12 = { value: "id", label: "Commit SHA", icon: tmp16(tmp3(17198).HashmarkIcon, {}) };
   const TableRadioRow2 = tmp3(7349).TableRadioRow;
   items6[1] = tmp16(TableRadioRow2, obj12);
   items5[1] = obj(TableRadioGroup, obj10);
@@ -372,7 +372,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   if ("branch" === first.type) {
     HashmarkIcon = tmp3(9041).TagIcon;
   } else {
-    HashmarkIcon = tmp3(17194).HashmarkIcon;
+    HashmarkIcon = tmp3(17198).HashmarkIcon;
   }
   const obj13 = {
     leadingIcon: HashmarkIcon,
@@ -422,7 +422,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   items4[1] = obj(Stack2, obj14);
   const TableRowGroup3 = tmp3(7348).TableRowGroup;
   if (0 === arr2.length) {
-    const obj16 = { icon: tmp16(tmp3(14376).RefreshIcon, {}), label: "No recent builds", subLabel: "Your recent builds will appear here after you apply an override." };
+    const obj16 = { icon: tmp16(tmp3(14379).RefreshIcon, {}), label: "No recent builds", subLabel: "Your recent builds will appear here after you apply an override." };
     const TableRow5 = tmp3(7045).TableRow;
     mapped = tmp16(TableRow5, obj16);
   } else {

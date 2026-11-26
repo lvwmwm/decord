@@ -1,10 +1,10 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14366
+// Function ID: 14367
 // Name: useFrameBySurface
 // Dependencies: [6623, 504, 2]
 // Exports: default
 
-// Module 14363 (useFrameBySurface)
+// Module 14366 (useFrameBySurface)
 import FramesStore from "FramesStore" /* 6623 */;
 import size from "module_2" /* 2 */;
 

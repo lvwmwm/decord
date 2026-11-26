@@ -1,13 +1,13 @@
-// Module ID: 14487
-// Function ID: 14488
+// Module ID: 14490
+// Function ID: 14491
 // Name: useRequestToStreamData
-// Dependencies: [19, 6400, 502, 1071, 8529, 504, 14488, 6659, 14489, 11946, 14490, 2]
+// Dependencies: [19, 6400, 502, 1071, 8529, 504, 14491, 6659, 14492, 11946, 14493, 2]
 // Exports: useRequestToStreamData
 
-// Module 14487 (useRequestToStreamData)
+// Module 14490 (useRequestToStreamData)
 import Constants from "Constants" /* 1071 */;
 import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11946 */;
-import RequestToStreamActionCreators from "RequestToStreamActionCreators" /* 14490 */;
+import RequestToStreamActionCreators from "RequestToStreamActionCreators" /* 14493 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

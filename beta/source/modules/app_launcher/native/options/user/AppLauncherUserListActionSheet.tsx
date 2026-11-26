@@ -1,10 +1,10 @@
-// Module ID: 13060
-// Function ID: 13061
+// Module ID: 13063
+// Function ID: 13064
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1499, 21, 4913, 5127, 8314, 1186, 13041, 1112, 13039, 13061, 12050, 13040, 7045, 2]
+// Dependencies: [19, 1499, 21, 4913, 5127, 8314, 1186, 13044, 1112, 13042, 13064, 12050, 13043, 7045, 2]
 // Exports: default
 
-// Module 13060 (AppLauncherUserListActionSheet)
+// Module 13063 (AppLauncherUserListActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -18,7 +18,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
   const query = onPressRow.query;
   const items = [query];
   closure_6();
-  return jsx(onPressRow(13040).AppLauncherList, {
+  return jsx(onPressRow(13043).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: items,
     renderItem(label) {

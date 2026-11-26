@@ -1,10 +1,10 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12796
+// Function ID: 12797
 // Name: useTraitPickerOptions
 // Dependencies: [19, 1386, 12495, 6015, 5970, 504, 2108, 6336, 6337, 6013, 1112, 2]
 // Exports: getTraitOptionStatus, useTraitPickerOptions
 
-// Module 12794 (useTraitPickerOptions)
+// Module 12796 (useTraitPickerOptions)
 import intl2 from "intl" /* 1112 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5970 */;
 import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6015 */;

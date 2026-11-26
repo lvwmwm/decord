@@ -1,9 +1,9 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16096
+// Function ID: 16097
 // Name: AccountWebAuthnRegisterSetting
-// Dependencies: [8712, 1071, 11942, 1112, 16093, 2]
+// Dependencies: [8712, 1071, 11942, 1112, 16097, 2]
 
-// Module 16092 (AccountWebAuthnRegisterSetting)
+// Module 16096 (AccountWebAuthnRegisterSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

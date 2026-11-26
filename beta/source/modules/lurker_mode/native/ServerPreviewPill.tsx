@@ -1,10 +1,10 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17706
+// Function ID: 17707
 // Name: ServerPreviewPill
 // Dependencies: [19, 17, 21, 4913, 575, 5504, 1112, 2]
 // Exports: default
 
-// Module 17702 (ServerPreviewPill)
+// Module 17706 (ServerPreviewPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,16 +1,16 @@
-// Module ID: 14558
-// Function ID: 14559
+// Module ID: 14561
+// Function ID: 14562
 // Name: useConjureServerWidgetUpsell
-// Dependencies: [32, 19, 4784, 14559, 510, 14560, 504, 6864, 11982, 10335, 2]
+// Dependencies: [32, 19, 4784, 14562, 510, 14563, 504, 6864, 11982, 10335, 2]
 // Exports: useConjureServerWidgetUpsellDetails, useConjureServerWidgetUpsellOffer
 
-// Module 14558 (useConjureServerWidgetUpsell)
+// Module 14561 (useConjureServerWidgetUpsell)
 import Storage3 from "Storage" /* 510 */;
-import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 14560 */;
+import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 14563 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14559 */;
+import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14562 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

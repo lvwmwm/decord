@@ -1,10 +1,10 @@
-// Module ID: 18286
-// Function ID: 18287
+// Module ID: 18290
+// Function ID: 18291
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 4913, 8442, 8475, 18287, 1112, 4190, 1491, 18269, 9487, 12325, 8658, 15955, 7047, 18288, 5600, 5929, 7221, 6622, 5504, 7461, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 4913, 8442, 8475, 18291, 1112, 4190, 1491, 18273, 9487, 12325, 8658, 15959, 7047, 18292, 5600, 5929, 7221, 6622, 5504, 7461, 2]
 // Exports: ConjureAppIdentitySection
 
-// Module 18286 (ConjureAppIdentity)
+// Module 18290 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -338,7 +338,7 @@ function IconTileCard(arg0) {
   t = tmp4(1112).t;
   if (null == iconURL) {
     const obj2 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImagePlusIcon = tmp4(18288).ImagePlusIcon;
+    const ImagePlusIcon = tmp4(18292).ImagePlusIcon;
     tmp3Result = tmp3(ImagePlusIcon, obj2);
   } else {
     const obj3 = { source: obj4, style: tmp.tileImage, resizeMode: "cover" };

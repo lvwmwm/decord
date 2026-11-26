@@ -1,14 +1,14 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14026
+// Function ID: 14027
 // Name: useTenureBadgeRequirementString
-// Dependencies: [1388, 13959, 6963, 1112, 2]
+// Dependencies: [1388, 13962, 6963, 1112, 2]
 // Exports: getTenureBadgeRequirementString, useTenureBadgeRequirementString
 
-// Module 14023 (useTenureBadgeRequirementString)
+// Module 14026 (useTenureBadgeRequirementString)
 import intl3 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 6963 */;
-import useTenureBadging from "useTenureBadging" /* 13959 */;
+import useTenureBadging from "useTenureBadging" /* 13962 */;
 import size from "module_2" /* 2 */;
 
 const TieredTenureBadge = PremiumConstants.TieredTenureBadge;

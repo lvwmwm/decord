@@ -1,13 +1,13 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15134
+// Function ID: 15135
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 4738, 7415, 7555, 1112, 13333, 2]
+// Dependencies: [19, 21, 4738, 7415, 7555, 1112, 13336, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 15131 (useMessageRequestPrivacyOption)
+// Module 15134 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7415 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13333 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13336 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

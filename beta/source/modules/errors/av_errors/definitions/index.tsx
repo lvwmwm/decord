@@ -1,27 +1,27 @@
-// Module ID: 20115
-// Function ID: 20116
+// Module ID: 20119
+// Function ID: 20120
 // Name: ErrorDefinitions
-// Dependencies: [5843, 20116, 20118, 20119, 20121, 20122, 20123, 20124, 20125, 20126, 20127, 20128, 20129, 20130, 20131, 20132, 20133, 20134, 2]
+// Dependencies: [5843, 20120, 20122, 20123, 20125, 20126, 20127, 20128, 20129, 20130, 20131, 20132, 20133, 20134, 20135, 20136, 20137, 20138, 2]
 
-// Module 20115 (ErrorDefinitions)
+// Module 20119 (ErrorDefinitions)
 import AVError from "AVError" /* 5843 */;
-import AVErrorNoAudioInputDetected from "AVErrorNoAudioInputDetected" /* 20116 */;
-import AVErrorNoInputDevices from "AVErrorNoInputDevices" /* 20118 */;
-import AVErrorStreamViewLowFPS from "AVErrorStreamViewLowFPS" /* 20119 */;
-import AVErrorStreamViewHighPacketLoss from "AVErrorStreamViewHighPacketLoss" /* 20121 */;
-import AVErrorStreamSendHighPacketLoss from "AVErrorStreamSendHighPacketLoss" /* 20122 */;
-import AVErrorStreamSendLowFPS from "AVErrorStreamSendLowFPS" /* 20123 */;
-import AVErrorStreamBadNetworkQuality from "AVErrorStreamBadNetworkQuality" /* 20124 */;
-import AVErrorStreamSoundshareFailed from "AVErrorStreamSoundshareFailed" /* 20125 */;
-import AVErrorStreamFailedToStart from "AVErrorStreamFailedToStart" /* 20126 */;
-import AVErrorStreamReconnecting from "AVErrorStreamReconnecting" /* 20127 */;
-import AVErrorScreenshareOSError from "AVErrorScreenshareOSError" /* 20128 */;
-import AVErrorAudioCaptureSampleRateMismatch from "AVErrorAudioCaptureSampleRateMismatch" /* 20129 */;
-import AVErrorVideoStreamSenderReadyTimeout from "AVErrorVideoStreamSenderReadyTimeout" /* 20130 */;
-import AVErrorVideoStreamReceiverReadyTimeout from "AVErrorVideoStreamReceiverReadyTimeout" /* 20131 */;
-import AVErrorVideoStreamSenderReadyTimeoutNoStream from "AVErrorVideoStreamSenderReadyTimeoutNoStream" /* 20132 */;
-import AVErrorVideoStreamReceiverReadyTimeoutNoStream from "AVErrorVideoStreamReceiverReadyTimeoutNoStream" /* 20133 */;
-import AVErrorCameraSendLowFPS from "AVErrorCameraSendLowFPS" /* 20134 */;
+import AVErrorNoAudioInputDetected from "AVErrorNoAudioInputDetected" /* 20120 */;
+import AVErrorNoInputDevices from "AVErrorNoInputDevices" /* 20122 */;
+import AVErrorStreamViewLowFPS from "AVErrorStreamViewLowFPS" /* 20123 */;
+import AVErrorStreamViewHighPacketLoss from "AVErrorStreamViewHighPacketLoss" /* 20125 */;
+import AVErrorStreamSendHighPacketLoss from "AVErrorStreamSendHighPacketLoss" /* 20126 */;
+import AVErrorStreamSendLowFPS from "AVErrorStreamSendLowFPS" /* 20127 */;
+import AVErrorStreamBadNetworkQuality from "AVErrorStreamBadNetworkQuality" /* 20128 */;
+import AVErrorStreamSoundshareFailed from "AVErrorStreamSoundshareFailed" /* 20129 */;
+import AVErrorStreamFailedToStart from "AVErrorStreamFailedToStart" /* 20130 */;
+import AVErrorStreamReconnecting from "AVErrorStreamReconnecting" /* 20131 */;
+import AVErrorScreenshareOSError from "AVErrorScreenshareOSError" /* 20132 */;
+import AVErrorAudioCaptureSampleRateMismatch from "AVErrorAudioCaptureSampleRateMismatch" /* 20133 */;
+import AVErrorVideoStreamSenderReadyTimeout from "AVErrorVideoStreamSenderReadyTimeout" /* 20134 */;
+import AVErrorVideoStreamReceiverReadyTimeout from "AVErrorVideoStreamReceiverReadyTimeout" /* 20135 */;
+import AVErrorVideoStreamSenderReadyTimeoutNoStream from "AVErrorVideoStreamSenderReadyTimeoutNoStream" /* 20136 */;
+import AVErrorVideoStreamReceiverReadyTimeoutNoStream from "AVErrorVideoStreamReceiverReadyTimeoutNoStream" /* 20137 */;
+import AVErrorCameraSendLowFPS from "AVErrorCameraSendLowFPS" /* 20138 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13249
+// Function ID: 13250
 // Name: useEventsButtonProps
-// Dependencies: [19, 6619, 6552, 6553, 504, 8017, 7285, 7286, 7592, 5127, 13247, 2119, 1112, 13251, 2]
+// Dependencies: [19, 6619, 6552, 6553, 504, 8017, 7285, 7286, 7592, 5127, 13250, 2119, 1112, 13254, 2]
 // Exports: default
 
-// Module 13246 (useEventsButtonProps)
+// Module 13249 (useEventsButtonProps)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import ReadStateConstants from "ReadStateConstants" /* 6553 */;
@@ -61,7 +61,7 @@ export default function useEventsButtonProps(id) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { guildId: user.id };
-    const tmp2 = asyncRequire(13247, dependencyMap.paths);
+    const tmp2 = asyncRequire(13250, dependencyMap.paths);
     openLazy(tmp2, "UpcomingEventsLongPress-" + user.id, obj);
   }, items4);
   if (arr4.length > 0) {
@@ -72,10 +72,10 @@ export default function useEventsButtonProps(id) {
     const intl = tmp(1112).intl;
     name = intl.string(tmp(1112).t.tlopTM);
   }
-  let mode = tmp(13251).ChannelModes.DEFAULT;
+  let mode = tmp(13254).ChannelModes.DEFAULT;
   const tmp8 = hasUnread && !eventsMuted;
   if (tmp8) {
-    mode = tmp(13251).ChannelModes.UNREAD_IMPORTANT;
+    mode = tmp(13254).ChannelModes.UNREAD_IMPORTANT;
   }
   return { hasUnread, mentionCount, mode, name, eventsMuted, handlePress, handleLongPress };
 };

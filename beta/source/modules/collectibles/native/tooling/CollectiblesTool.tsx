@@ -1,10 +1,10 @@
-// Module ID: 17163
-// Function ID: 17164
+// Module ID: 17167
+// Function ID: 17168
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 9469, 1386, 8075, 8090, 8153, 1071, 1388, 21, 4913, 575, 9545, 5504, 5512, 11913, 563, 9475, 17164, 1186, 9410, 2]
+// Dependencies: [32, 19, 17, 9469, 1386, 8075, 8090, 8153, 1071, 1388, 21, 4913, 575, 9545, 5504, 5512, 11913, 563, 9475, 17168, 1186, 9410, 2]
 // Exports: default
 
-// Module 17163 (CollectiblesTool)
+// Module 17167 (CollectiblesTool)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;

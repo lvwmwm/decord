@@ -1,10 +1,10 @@
-// Module ID: 13034
-// Function ID: 13035
+// Module ID: 13037
+// Function ID: 13038
 // Name: useOptionAnimations
 // Dependencies: [32, 19, 5123, 1653, 1706, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 13034 (useOptionAnimations)
+// Module 13037 (useOptionAnimations)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import timing_timing from "timing/timing" /* 5123 */;

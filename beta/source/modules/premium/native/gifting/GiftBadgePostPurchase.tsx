@@ -1,10 +1,10 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 13933
+// Function ID: 13934
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8137, 13931, 4759, 21, 4913, 575, 1628, 6429, 5090, 5511, 12471, 1112, 2920, 13932, 5504, 9482, 504, 8070, 13933, 5129, 5130, 8142, 9484, 13934, 4945, 4746, 2]
+// Dependencies: [19, 17, 8137, 13934, 4759, 21, 4913, 575, 1628, 6429, 5090, 5511, 12471, 1112, 2920, 13935, 5504, 9482, 504, 8070, 13936, 5129, 5130, 8142, 9484, 13937, 4945, 4746, 2]
 // Exports: default
 
-// Module 13930 (GiftBadgePostPurchase)
+// Module 13933 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,10 +17,10 @@ import Text_Text from "Text/Text" /* 5504 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import BadgeId from "BadgeId" /* 8070 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
-import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 13932 */;
+import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 13935 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8137 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 13931 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 13934 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const GiftingBadgeIconDefault = tmp(9484);
-const GiftingBadgeLevelUpProgressDefault = tmp(13934);
+const GiftingBadgeLevelUpProgressDefault = tmp(13937);
 function PostPurchaseFooter(onSendGift) {
   let GiftIcon;
   let intl;
@@ -137,7 +137,7 @@ function LevelUpScreen(newTier) {
     }
     return true === has_updates && badgeById.current_tier === newTier.key;
   }, items1);
-  const obj3 = newTier(13933);
+  const obj3 = newTier(13936);
   const tmp7 = stateFromStores && obj3.useIsBadgeUnreadStateEnabled({ location: "GiftBadgePostPurchase", hasUnread: stateFromStores });
   importDefault = tmp7;
   const effect = react.useEffect(() => {

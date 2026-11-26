@@ -1,18 +1,18 @@
-// Module ID: 13521
-// Function ID: 13522
+// Module ID: 13524
+// Function ID: 13525
 // Name: getActivityStatusText
-// Dependencies: [5652, 13522, 8060, 6932, 13523, 1112, 13524, 13525, 8999, 2]
+// Dependencies: [5652, 13525, 8060, 6932, 13526, 1112, 13527, 13528, 8999, 2]
 // Exports: default
 
-// Module 13521 (getActivityStatusText)
+// Module 13524 (getActivityStatusText)
 import intl9 from "intl" /* 1112 */;
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 6932 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8060 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8999 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 13522 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 13524 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13525 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 13525 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 13527 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13528 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activity_status/getActivityStatusText.tsx");
@@ -210,6 +210,6 @@ export default function getActivityStatusText(name) {
       obj17 = {};
     }
   }
-  const text = tmp20(13523)(tmp2);
+  const text = tmp20(13526)(tmp2);
   return { text, tooltip: text };
 };

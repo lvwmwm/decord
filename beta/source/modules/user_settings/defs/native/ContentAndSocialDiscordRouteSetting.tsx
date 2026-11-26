@@ -1,14 +1,14 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17393
+// Function ID: 17394
 // Name: ContentAndSocialDiscordRouteSetting
-// Dependencies: [8712, 1071, 11942, 1112, 5598, 17371, 2]
+// Dependencies: [8712, 1071, 11942, 1112, 5598, 17375, 2]
 
-// Module 17389 (ContentAndSocialDiscordRouteSetting)
+// Module 17393 (ContentAndSocialDiscordRouteSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import FriendsIcon from "FriendsIcon" /* 5598 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import ContentAndSocialScreen from "ContentAndSocialScreen" /* 17371 */;
+import ContentAndSocialScreen from "ContentAndSocialScreen" /* 17375 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

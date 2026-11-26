@@ -1,16 +1,16 @@
-// Module ID: 18267
-// Function ID: 18268
+// Module ID: 18271
+// Function ID: 18272
 // Name: useConjurePublishReview
-// Dependencies: [5, 32, 19, 4784, 4845, 1386, 6621, 6980, 1071, 18268, 18270, 18271, 18272, 504, 18277, 18263, 7734, 6933, 2]
+// Dependencies: [5, 32, 19, 4784, 4845, 1386, 6621, 6980, 1071, 18272, 18274, 18275, 18276, 504, 18281, 18267, 7734, 6933, 2]
 // Exports: default
 
-// Module 18267 (useConjurePublishReview)
+// Module 18271 (useConjurePublishReview)
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 7734 */;
-import conjurePublishReview from "conjurePublishReview" /* 18263 */;
-import useConjureAppIdentityDraftDefault from "useConjureAppIdentityDraft" /* 18268 */;
-import useConjurePreviewDevicePermissionsDefault from "useConjurePreviewDevicePermissions" /* 18271 */;
-import useConjurePublishRemixDefault from "useConjurePublishRemix" /* 18272 */;
+import conjurePublishReview from "conjurePublishReview" /* 18267 */;
+import useConjureAppIdentityDraftDefault from "useConjureAppIdentityDraft" /* 18272 */;
+import useConjurePreviewDevicePermissionsDefault from "useConjurePreviewDevicePermissions" /* 18275 */;
+import useConjurePublishRemixDefault from "useConjurePublishRemix" /* 18276 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -175,11 +175,11 @@ export default function useConjurePublishReview(id, arg1) {
   const trimmed = str.trim();
   let result = null;
   if (tmp15) {
-    const tmp3Result = tmp3(18277);
+    const tmp3Result = tmp3(18281);
     result = tmp3Result.conjureProjectNameError(trimmed);
   }
   isProjectOwner = result;
-  const tmp3Result5 = tmp3(18263);
+  const tmp3Result5 = tmp3(18267);
   result1 = tmp3Result5.conjurePublishReviewReason(id, stateFromStores);
   const items2 = [id, stateFromStores, result1];
   const memo = obj3.useMemo(() => {

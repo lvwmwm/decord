@@ -1,17 +1,17 @@
-// Module ID: 18514
-// Function ID: 18515
+// Module ID: 18518
+// Function ID: 18519
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 18479, 575, 18515, 18436, 12324, 1112, 4190, 18470, 18561, 5504, 18287, 7763, 18562, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 18483, 575, 18519, 18440, 12324, 1112, 4190, 18474, 18565, 5504, 18291, 7763, 18566, 2]
 // Exports: default, stretchOf
 
-// Module 18514 (ConjureActivityBox)
+// Module 18518 (ConjureActivityBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 18470 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 18479 */;
-import ConjureSubagentMark from "ConjureSubagentMark" /* 18515 */;
+import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 18474 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 18483 */;
+import ConjureSubagentMark from "ConjureSubagentMark" /* 18519 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,7 +30,7 @@ let obj5;
 let tmp2;
 let tmp5;
 const WarningIcon2 = tmp2(7763);
-const ConjureNativeStepImagesDefault = tmp5(18562);
+const ConjureNativeStepImagesDefault = tmp5(18566);
 function TurnStatusLine(epoch) {
   let _undefined;
   let c3;
@@ -252,7 +252,7 @@ function TimelineRow(inGutter) {
   let obj = { line: obj2.describeNode(node), live: flag2, settled: tmp9, failed: "failed" === node.status, presentation: str2, crestColor, inGutter: flag, epoch, trailing: tmp4Result };
   let tmp8 = node;
   let tmp7 = ConjureNativeStatusLineDefault;
-  obj2 = node(18436);
+  obj2 = node(18440);
   str2 = "detail";
   tmp9 = !flag2 && "failed" !== node.status;
   if (flag2) {

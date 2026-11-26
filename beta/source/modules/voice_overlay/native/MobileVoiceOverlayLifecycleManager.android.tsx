@@ -1,9 +1,9 @@
-// Module ID: 15777
-// Function ID: 15778
+// Module ID: 15781
+// Function ID: 15782
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [4762, 4843, 4784, 2131, 4845, 5654, 4855, 6535, 1386, 5561, 10968, 1071, 15778, 15779, 15780, 15781, 7032, 14874, 15782, 15783, 14850, 1112, 15784, 10998, 8452, 5529, 6556, 1255, 5650, 2121, 2]
+// Dependencies: [4762, 4843, 4784, 2131, 4845, 5654, 4855, 6535, 1386, 5561, 10968, 1071, 15782, 15783, 15784, 15785, 7032, 14877, 15786, 15787, 14853, 1112, 15788, 10998, 8452, 5529, 6556, 1255, 5650, 2121, 2]
 
-// Module 15777 (MobileVoiceOverlayLifecycleManager)
+// Module 15781 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
@@ -12,7 +12,7 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6556 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8452 */;
 import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 10998 */;
-import react_nativeDefault from "react-native" /* 15784 */;
+import react_nativeDefault from "react-native" /* 15788 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
@@ -25,7 +25,7 @@ import VoiceStateStore from "VoiceStateStore" /* 5561 */;
 import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10968 */;
 import Constants from "Constants" /* 1071 */;
 import "AssetRegistry";
-import AssetRegistry from "AssetRegistry" /* 14850 */;
+import AssetRegistry from "AssetRegistry" /* 14853 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 

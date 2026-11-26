@@ -1,10 +1,10 @@
-// Module ID: 14469
-// Function ID: 14470
+// Module ID: 14472
+// Function ID: 14473
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 21, 4913, 10351, 8060, 6932, 7704, 5652, 13516, 10899, 7040, 14470, 14471, 575, 14472, 8010, 7038, 5504, 12120, 2]
+// Dependencies: [19, 17, 21, 4913, 10351, 8060, 6932, 7704, 5652, 13519, 10899, 7040, 14473, 14474, 575, 14475, 8010, 7038, 5504, 12120, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 14469 (UserProfileActivityBadges)
+// Module 14472 (UserProfileActivityBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
@@ -12,9 +12,9 @@ import ActivityTypes from "ActivityTypes" /* 5652 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 6932 */;
 import utils from "utils" /* 8010 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8060 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14470 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14471 */;
-import Badges from "Badges" /* 14472 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 14473 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14474 */;
+import Badges from "Badges" /* 14475 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -69,7 +69,7 @@ export function TimestampBadge(activity) {
           const tmp2Result = conjurePresenceActivity;
           if (!tmp2Result.isConjurePresenceActivity(activity)) {
             if (activity.type === ActivityTypes.ActivityTypes.WATCHING) {
-              AppsIcon = tmp2(13516).TvIcon;
+              AppsIcon = tmp2(13519).TvIcon;
             } else if (activity.type === ActivityTypes.ActivityTypes.LISTENING) {
               AppsIcon = tmp2(10899).MusicIcon;
             } else {

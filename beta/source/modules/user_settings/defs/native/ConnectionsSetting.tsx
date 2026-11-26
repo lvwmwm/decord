@@ -1,9 +1,9 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16283
+// Function ID: 16284
 // Name: ConnectionsSetting
-// Dependencies: [1071, 11942, 1112, 5609, 16252, 2]
+// Dependencies: [1071, 11942, 1112, 5609, 16256, 2]
 
-// Module 16279 (ConnectionsSetting)
+// Module 16283 (ConnectionsSetting)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import LinkIcon from "LinkIcon" /* 5609 */;

@@ -1,9 +1,9 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 16677
+// Function ID: 16678
 // Name: AdvancedVoiceActivitySetting
 // Dependencies: [2131, 8712, 504, 5809, 1112, 11942, 2]
 
-// Module 16673 (AdvancedVoiceActivitySetting)
+// Module 16677 (AdvancedVoiceActivitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5809 */;

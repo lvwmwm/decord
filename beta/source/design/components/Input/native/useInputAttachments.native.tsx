@@ -92,14 +92,14 @@ export function useInputAttachments(merged, leadingPressableProps) {
   let tmp28;
   let tmp29;
   let trailingIcon;
-  const f90526 = () => {
+  const f90533 = () => {
     let num = 0;
     if (null != leadingIcon) {
       num = IconSize.ICON_SIZE.xs + tmp;
     }
     return num;
   };
-  const f90527 = () => {
+  const f90534 = () => {
     let num = 0;
     if (null != trailingIcon) {
       num = IconSize.ICON_SIZE.xs + tmp;
@@ -197,11 +197,11 @@ export function useInputAttachments(merged, leadingPressableProps) {
       let trailingIcon2 = inputStyles.trailingText;
     }
     let num = 2;
-    [tmp25, tmp26] = trailingIcon(react.useState(f90526), 2);
-    trailingIcon(react.useState(f90526), 2);
+    [tmp25, tmp26] = trailingIcon(react.useState(f90533), 2);
+    trailingIcon(react.useState(f90533), 2);
     let num3 = 0;
-    [tmp28, tmp29] = trailingIcon(react.useState(f90527), 2);
-    trailingIcon(react.useState(f90527), 2);
+    [tmp28, tmp29] = trailingIcon(react.useState(f90534), 2);
+    trailingIcon(react.useState(f90534), 2);
     if (null != prop && tmp6 && null != leadingText) {
       num3 = inputStyles.padding.paddingHorizontal;
     }

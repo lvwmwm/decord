@@ -1,9 +1,9 @@
-// Module ID: 16294
-// Function ID: 16295
+// Module ID: 16298
+// Function ID: 16299
 // Name: PremiumManagePlanSetting
-// Dependencies: [8712, 1071, 11942, 1112, 16295, 2]
+// Dependencies: [8712, 1071, 11942, 1112, 16299, 2]
 
-// Module 16294 (PremiumManagePlanSetting)
+// Module 16298 (PremiumManagePlanSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

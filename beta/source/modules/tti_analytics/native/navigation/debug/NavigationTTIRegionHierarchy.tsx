@@ -1,10 +1,10 @@
-// Module ID: 18189
-// Function ID: 18190
+// Module ID: 18193
+// Function ID: 18194
 // Name: NavigationTTIRegionHierarchy
 // Dependencies: [32, 19, 3, 2]
 // Exports: useNavigationTTIRegionHierarchy
 
-// Module 18189 (NavigationTTIRegionHierarchy)
+// Module 18193 (NavigationTTIRegionHierarchy)
 import LoggerDefault from "Logger" /* 3 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

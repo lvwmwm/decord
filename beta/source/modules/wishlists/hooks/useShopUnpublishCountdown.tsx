@@ -1,10 +1,10 @@
-// Module ID: 14620
-// Function ID: 14621
+// Module ID: 14623
+// Function ID: 14624
 // Name: useShopUnpublishCountdown
 // Dependencies: [32, 19, 9003, 2]
 // Exports: default, useHasShopUnpublishCountdown
 
-// Module 14620 (useShopUnpublishCountdown)
+// Module 14623 (useShopUnpublishCountdown)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f106449 = (arg0) => arg0 + 1;
+const f106459 = (arg0) => arg0 + 1;
 let c4 = 2147483647;
 const result = size.fileFinishedImporting("modules/wishlists/hooks/useShopUnpublishCountdown.tsx");
 
@@ -23,7 +23,7 @@ export default function useShopUnpublishCountdown(getTime) {
     flag = true;
   }
   let time;
-  dependencyMap = time(react.useReducer(f106449, 0), 2)[1];
+  dependencyMap = time(react.useReducer(f106459, 0), 2)[1];
   time = undefined;
   const obj = react;
   if (getTime != null) {
@@ -92,7 +92,7 @@ export function useHasShopUnpublishCountdown(memo1) {
   const nextFutureShopUnpublishedAt = obj.getNextFutureShopUnpublishedAt(memo1);
   _require = false;
   let time;
-  dependencyMap = time(react.useReducer(f106449, 0), 2)[1];
+  dependencyMap = time(react.useReducer(f106459, 0), 2)[1];
   time = undefined;
   const obj3 = react;
   if (nextFutureShopUnpublishedAt != null) {

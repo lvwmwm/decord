@@ -1,9 +1,9 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17264
+// Function ID: 17265
 // Name: DesignSystemPileSetting
-// Dependencies: [8712, 1071, 11942, 17261, 2]
+// Dependencies: [8712, 1071, 11942, 17265, 2]
 
-// Module 17260 (DesignSystemPileSetting)
+// Module 17264 (DesignSystemPileSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;

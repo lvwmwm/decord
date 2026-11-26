@@ -1,10 +1,10 @@
-// Module ID: 17851
-// Function ID: 17852
+// Module ID: 17855
+// Function ID: 17856
 // Name: InterestGhost
 // Dependencies: [19, 17, 21, 4913, 575, 2]
 // Exports: default
 
-// Module 17851 (InterestGhost)
+// Module 17855 (InterestGhost)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

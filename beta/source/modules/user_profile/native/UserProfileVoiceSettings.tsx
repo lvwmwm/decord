@@ -1,10 +1,10 @@
-// Module ID: 14510
-// Function ID: 14511
+// Module ID: 14513
+// Function ID: 14514
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5961, 6400, 2131, 4845, 5654, 1071, 1082, 5658, 21, 4913, 8135, 504, 5950, 9735, 11045, 5679, 10970, 5809, 10985, 7348, 14511, 1112, 5817, 14513, 14515, 7563, 9684, 11016, 14516, 13420, 1255, 14518, 11131, 7225, 5504, 10252, 13820, 7709, 5127, 9711, 9707, 2]
+// Dependencies: [19, 17, 5961, 6400, 2131, 4845, 5654, 1071, 1082, 5658, 21, 4913, 8135, 504, 5950, 9735, 11045, 5679, 10970, 5809, 10985, 7348, 14514, 1112, 5817, 14516, 14518, 7563, 9684, 11016, 14519, 13423, 1255, 14521, 11131, 7225, 5504, 10252, 13823, 7709, 5127, 9711, 9707, 2]
 // Exports: default
 
-// Module 14510 (UserProfileVoiceSettings)
+// Module 14513 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
 import Constants2 from "Constants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -14,7 +14,7 @@ import AudioActionCreatorsDefault from "AudioActionCreators" /* 5809 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5817 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9711 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10252 */;
-import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 14515 */;
+import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 14518 */;
 import react from "react" /* 19 */;
 import SoundboardStore from "SoundboardStore" /* 5961 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;

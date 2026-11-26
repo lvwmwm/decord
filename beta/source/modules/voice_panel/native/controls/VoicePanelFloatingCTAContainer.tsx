@@ -1,10 +1,10 @@
-// Module ID: 19350
-// Function ID: 19351
+// Module ID: 19354
+// Function ID: 19355
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 4762, 11755, 11758, 1082, 21, 13062, 575, 4913, 5929, 7711, 4974, 11754, 19235, 9081, 563, 19232, 19351, 1653, 13137, 10093, 5514, 11617, 2]
+// Dependencies: [32, 19, 4762, 11755, 11758, 1082, 21, 13065, 575, 4913, 5929, 7711, 4974, 11754, 19239, 9081, 563, 19236, 19355, 1653, 13140, 10093, 5514, 11617, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 19350 (VoicePanelFloatingCTAContainer)
+// Module 19354 (VoicePanelFloatingCTAContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -13,8 +13,8 @@ import Stack_Stack from "Stack/Stack" /* 5929 */;
 import RowButton2 from "RowButton" /* 7711 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11755 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11758 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13062 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19232 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13065 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19236 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

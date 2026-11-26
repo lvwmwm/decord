@@ -1,9 +1,9 @@
-// Module ID: 19650
-// Function ID: 19651
+// Module ID: 19654
+// Function ID: 19655
 // Name: PromotionsManager
 // Dependencies: [2188, 2178, 9143, 1082, 7484, 9400, 2172, 2]
 
-// Module 19650 (PromotionsManager)
+// Module 19654 (PromotionsManager)
 import Constants from "Constants" /* 1082 */;
 import EntitlementTypes from "EntitlementTypes" /* 2172 */;
 import PromotionsActionCreators from "PromotionsActionCreators" /* 9400 */;

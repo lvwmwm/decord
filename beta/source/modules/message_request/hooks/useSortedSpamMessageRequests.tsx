@@ -1,10 +1,10 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 19030
+// Function ID: 19031
 // Name: useSortedSpamMessageRequests
-// Dependencies: [19, 4762, 1386, 6635, 504, 19016, 2]
+// Dependencies: [19, 4762, 1386, 6635, 504, 19020, 2]
 // Exports: default
 
-// Module 19026 (useSortedSpamMessageRequests)
+// Module 19030 (useSortedSpamMessageRequests)
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import UserStore from "UserStore" /* 1386 */;

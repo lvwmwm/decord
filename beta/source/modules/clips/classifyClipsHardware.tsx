@@ -1,10 +1,10 @@
-// Module ID: 20087
-// Function ID: 20088
+// Module ID: 20091
+// Function ID: 20092
 // Name: classifyClipsHardware
 // Dependencies: [8441, 2]
 // Exports: classifyClipsHardware
 
-// Module 20087 (classifyClipsHardware)
+// Module 20091 (classifyClipsHardware)
 import ClipsConstants from "ClipsConstants" /* 8441 */;
 import size from "module_2" /* 2 */;
 

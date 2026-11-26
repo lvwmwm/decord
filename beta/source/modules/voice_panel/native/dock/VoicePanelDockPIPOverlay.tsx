@@ -1,9 +1,9 @@
-// Module ID: 19328
-// Function ID: 19329
+// Module ID: 19332
+// Function ID: 19333
 // Name: VoicePanelDockPIPOverlay
-// Dependencies: [32, 19, 17, 4914, 1386, 5658, 21, 1653, 4913, 575, 5517, 7324, 11045, 5679, 5817, 19329, 7034, 14512, 1112, 11754, 5123, 1706, 11764, 10603, 504, 1186, 9036, 19211, 7152, 10958, 7035, 16363, 3376, 2]
+// Dependencies: [32, 19, 17, 4914, 1386, 5658, 21, 1653, 4913, 575, 5517, 7324, 11045, 5679, 5817, 19333, 7034, 14515, 1112, 11754, 5123, 1706, 11764, 10603, 504, 1186, 9036, 19215, 7152, 10958, 7035, 16367, 3376, 2]
 
-// Module 19328 (VoicePanelDockPIPOverlay)
+// Module 19332 (VoicePanelDockPIPOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
@@ -60,7 +60,7 @@ function StreamVolumeSlider(stacked) {
   handleVolumeChange = tmp4Result.handleVolumeChange;
   const items = [handleVolumeChange];
   const effectiveVolume = tmp4Result.effectiveVolume;
-  let obj = { Icon: handleVolumeChange(19329).VoiceLowIcon };
+  let obj = { Icon: handleVolumeChange(19333).VoiceLowIcon };
   const callback = react.useCallback((arg0) => {
     const obj = PerceptualVolumeUtils;
     return handleVolumeChange(obj.perceptualToAmplitude(arg0));
@@ -79,7 +79,7 @@ function StreamVolumeSlider(stacked) {
     accessibilityLabel: intl.string(handleVolumeChange(1112).t.pEAl4b)
   };
   const tmp11 = NativeViewDefault;
-  Slider = tmp5(14512).Slider;
+  Slider = tmp5(14515).Slider;
   tmp5Result = handleVolumeChange(5817);
   intl = tmp5(1112).intl;
   const tmp8Result = closure_9(tmp11, obj3);
@@ -313,7 +313,7 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       const obj9 = { pointerEvents: "none", children: tmp29Result4 };
       items10 = [closure_9(tmp2Result8, obj9), ];
       const obj10 = { icon: tmp2("video" === kind ? 7152 : 10958), onPress: onStopWatching, accessibilityLabel: stringResult };
-      const tmp2Result9 = tmp2(19211);
+      const tmp2Result9 = tmp2(19215);
       const intl = tmp12(1112).intl;
       const string = intl.string;
       const t = tmp12(1112).t;
@@ -336,14 +336,14 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       let tmp29Result5 = null;
       if ("video" !== kind) {
         const obj12 = { icon: tmp2(7035), onPress: onToggleVolume, accessibilityLabel: intl2.string(ownerId(1112).t.pEAl4b) };
-        const tmp2Result11 = tmp2(19211);
+        const tmp2Result11 = tmp2(19215);
         intl2 = tmp12(1112).intl;
         tmp29Result5 = tmp29(tmp2Result11, obj12);
       }
       items13 = [tmp29Result5, ];
       const obj13 = { children: items11 };
-      const obj14 = { icon: tmp2(16363), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3376).MPtef8) };
-      const tmp2Result12 = tmp2(19211);
+      const obj14 = { icon: tmp2(16367), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3376).MPtef8) };
+      const tmp2Result12 = tmp2(19215);
       intl3 = tmp12(1112).intl;
       items13[1] = closure_9(tmp2Result12, obj14);
       items11[1] = closure_10(tmp2Result10, obj11);

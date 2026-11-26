@@ -1,10 +1,10 @@
-// Module ID: 17667
-// Function ID: 17668
+// Module ID: 17671
+// Function ID: 17672
 // Name: useFavoritesGuildResetAction
 // Dependencies: [19, 4946, 1071, 4738, 4787, 1098, 11224, 1112, 3802, 2]
 // Exports: default
 
-// Module 17667 (useFavoritesGuildResetAction)
+// Module 17671 (useFavoritesGuildResetAction)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
 import intl3 from "intl" /* 1112 */;

@@ -1,9 +1,9 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 14988
+// Function ID: 14989
 // Name: RequestReviewStore
-// Dependencies: [5530, 1245, 4816, 1071, 1625, 14986, 5662, 14987, 5090, 5089, 7245, 14989, 1091, 510, 1255, 504, 572, 2]
+// Dependencies: [5530, 1245, 4816, 1071, 1625, 14989, 5662, 14990, 5090, 5089, 7245, 14992, 1091, 510, 1255, 504, 572, 2]
 
-// Module 14985 (RequestReviewStore)
+// Module 14988 (RequestReviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -15,8 +15,8 @@ import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
 import RootNavigationRef from "RootNavigationRef" /* 5090 */;
 import TimeUtils from "TimeUtils" /* 5662 */;
 import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7245 */;
-import requestReviewModalDefault from "requestReviewModal" /* 14987 */;
-import InstallTime from "InstallTime" /* 14989 */;
+import requestReviewModalDefault from "requestReviewModal" /* 14990 */;
+import InstallTime from "InstallTime" /* 14992 */;
 import ExperimentStore from "ExperimentStore" /* 5530 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
@@ -31,7 +31,7 @@ function delayShowReviewRequestModal() {
   }
   obj = MetaQuestUtils;
   if (!obj.isMetaQuest()) {
-    const RequestReviewNoTTIExperiment = tmp4(14986).RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = tmp4(14989).RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp6 = closure_10;
     if (tmp6) {

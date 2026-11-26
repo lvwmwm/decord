@@ -1,10 +1,10 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15193
+// Function ID: 15194
 // Name: useLinkedGameOrganizationInviteSender
 // Dependencies: [19, 12089, 4784, 504, 12090, 12103, 12106, 2]
 // Exports: default
 
-// Module 15190 (useLinkedGameOrganizationInviteSender)
+// Module 15193 (useLinkedGameOrganizationInviteSender)
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12089 */;
 import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 12090 */;
 import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 12103 */;

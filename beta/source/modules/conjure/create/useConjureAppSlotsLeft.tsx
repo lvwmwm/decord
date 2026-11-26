@@ -1,10 +1,10 @@
-// Module ID: 18662
-// Function ID: 18663
+// Module ID: 18666
+// Function ID: 18667
 // Name: useConjureAppSlotsLeft
 // Dependencies: [19, 6621, 6933, 504, 2]
 // Exports: default
 
-// Module 18662 (useConjureAppSlotsLeft)
+// Module 18666 (useConjureAppSlotsLeft)
 import get_initialized from "get initialized" /* 504 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
 import react from "react" /* 19 */;

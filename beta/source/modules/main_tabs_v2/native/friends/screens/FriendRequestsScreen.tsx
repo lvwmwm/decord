@@ -1,10 +1,10 @@
-// Module ID: 18894
-// Function ID: 18895
+// Module ID: 18898
+// Function ID: 18899
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 6636, 4855, 1386, 9646, 1071, 10259, 21, 4913, 575, 18895, 2119, 5862, 563, 6637, 4738, 18062, 6638, 11, 7520, 7539, 1255, 14534, 6864, 18896, 1343, 8067, 1112, 1500, 7348, 7045, 5504, 7586, 9659, 11283, 7030, 10094, 16504, 9656, 2]
+// Dependencies: [32, 19, 17, 6636, 4855, 1386, 9646, 1071, 10259, 21, 4913, 575, 18899, 2119, 5862, 563, 6637, 4738, 18066, 6638, 11, 7520, 7539, 1255, 14537, 6864, 18900, 1343, 8067, 1112, 1500, 7348, 7045, 5504, 7586, 9659, 11283, 7030, 10094, 16508, 9656, 2]
 // Exports: default
 
-// Module 18894 (FriendRequestsScreen)
+// Module 18898 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import useAlertStore from "useAlertStore" /* 5862 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
 import UserRowConstants from "UserRowConstants" /* 9646 */;
 import Constants2 from "Constants" /* 10259 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 18896 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 18900 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6636 */;
@@ -138,9 +138,9 @@ export default function FriendRequestsScreen() {
   }), 2);
   first = tmp10[0];
   dependencyMap = tmp12;
-  let obj3 = analyticsLocations(14534);
+  let obj3 = analyticsLocations(14537);
   gameRelationshipsByType = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj4 = analyticsLocations(14534);
+  let obj4 = analyticsLocations(14537);
   gameRelationshipsByType1 = obj4.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   const items3 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -395,7 +395,7 @@ export default function FriendRequestsScreen() {
       const intl4 = tmp5(1112).intl;
       stringResult = intl4.string(tmp5(1112).t["yvzX/Z"]);
     }
-    obj17 = { title: stringResult, illustration: tmp5(16504).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
+    obj17 = { title: stringResult, illustration: tmp5(16508).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
     tmp34Result2 = tmp34(tmp35, obj16);
   } else {
     const UsersFastList = tmp5(9656).UsersFastList;

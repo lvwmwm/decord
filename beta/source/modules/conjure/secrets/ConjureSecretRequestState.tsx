@@ -1,10 +1,10 @@
-// Module ID: 18437
-// Function ID: 18438
+// Module ID: 18441
+// Function ID: 18442
 // Name: ConjureSecretRequestState
 // Dependencies: [32, 19, 1112, 4190, 6926, 2]
 // Exports: markMcpSecretRequestSaved, newestOpenSecretRequest, secretRequestStatuses, unmarkMcpSecretRequestSaved, useSecretRequestStatusChanged
 
-// Module 18437 (ConjureSecretRequestState)
+// Module 18441 (ConjureSecretRequestState)
 import intl3 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import conjureChatTurns from "conjureChatTurns" /* 6926 */;

@@ -1,10 +1,10 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 15780
+// Function ID: 15781
 // Name: VoiceSettingsEventsFactory
 // Dependencies: [6354, 1071, 6913, 12, 2]
 // Exports: default
 
-// Module 15776 (VoiceSettingsEventsFactory)
+// Module 15780 (VoiceSettingsEventsFactory)
 import _modDef12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1071 */;
 import Constants from "Constants" /* 6354 */;

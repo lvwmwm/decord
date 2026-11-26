@@ -1,17 +1,17 @@
-// Module ID: 17850
-// Function ID: 17851
+// Module ID: 17854
+// Function ID: 17855
 // Name: InterestSearchShadow
-// Dependencies: [19, 17, 21, 4913, 575, 5477, 1653, 17849, 1378, 5468, 671, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5477, 1653, 17853, 1378, 5468, 671, 2]
 // Exports: default
 
-// Module 17850 (InterestSearchShadow)
+// Module 17854 (InterestSearchShadow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import useToken from "useToken" /* 5477 */;
-import InterestScrollHeader from "InterestScrollHeader" /* 17849 */;
+import InterestScrollHeader from "InterestScrollHeader" /* 17853 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

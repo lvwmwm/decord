@@ -1,10 +1,10 @@
-// Module ID: 18610
-// Function ID: 18611
+// Module ID: 18614
+// Function ID: 18615
 // Name: ConjureSecretsSheet
-// Dependencies: [5, 32, 19, 17, 6967, 21, 4913, 575, 7545, 18437, 18611, 1112, 4190, 7553, 7515, 7554, 18321, 5504, 5511, 7221, 2]
+// Dependencies: [5, 32, 19, 17, 6967, 21, 4913, 575, 7545, 18441, 18615, 1112, 4190, 7553, 7515, 7554, 18325, 5504, 5511, 7221, 2]
 // Exports: default
 
-// Module 18610 (ConjureSecretsSheet)
+// Module 18614 (ConjureSecretsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;
@@ -264,7 +264,7 @@ export default function ConjureSecretsSheet(projectId) {
     tmp13Result = null;
     if ("" !== request.note) {
       let obj5 = { text: request.note, variant: "body-sm/normal", color: "text-default" };
-      tmp13Result = tmp13(tmp16(18321), obj5);
+      tmp13Result = tmp13(tmp16(18325), obj5);
     }
   }
   items1 = [tmp13Result, , , , , , ];

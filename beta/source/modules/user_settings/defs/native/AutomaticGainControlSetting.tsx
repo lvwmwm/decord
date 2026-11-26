@@ -1,9 +1,9 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16676
+// Function ID: 16677
 // Name: AutomaticGainControlSetting
 // Dependencies: [2131, 8712, 504, 1112, 11942, 11000, 2]
 
-// Module 16672 (AutomaticGainControlSetting)
+// Module 16676 (AutomaticGainControlSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

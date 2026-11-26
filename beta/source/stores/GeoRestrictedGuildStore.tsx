@@ -1,9 +1,9 @@
-// Module ID: 15034
-// Function ID: 15035
+// Module ID: 15037
+// Function ID: 15038
 // Name: GeoRestrictedGuildStore
 // Dependencies: [504, 572, 2]
 
-// Module 15034 (GeoRestrictedGuildStore)
+// Module 15037 (GeoRestrictedGuildStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

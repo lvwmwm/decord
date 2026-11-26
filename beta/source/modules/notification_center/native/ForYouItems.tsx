@@ -1,9 +1,9 @@
-// Module ID: 18066
-// Function ID: 18067
+// Module ID: 18070
+// Function ID: 18071
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 4914, 2164, 4762, 4784, 1386, 18060, 1071, 6428, 21, 4913, 5504, 575, 5933, 18065, 1112, 1404, 8831, 8456, 11665, 11408, 11057, 504, 8236, 1186, 13541, 18067, 1500, 5628, 15069, 6637, 1255, 14288, 11341, 10555, 5595, 10578, 2119, 5127, 18068, 5620, 18062, 7550, 18069, 18070, 11, 7030, 18071, 6638, 14639, 1501, 4738, 5574, 18081, 18082, 18083, 18084, 18085, 18091, 674, 18092, 18093, 1254, 18064, 7597, 11772, 7490, 18094, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 2164, 4762, 4784, 1386, 18064, 1071, 6428, 21, 4913, 5504, 575, 5933, 18069, 1112, 1404, 8831, 8456, 11665, 11408, 11057, 504, 8236, 1186, 13544, 18071, 1500, 5628, 15072, 6637, 1255, 14291, 11341, 10555, 5595, 10578, 2119, 5127, 18072, 5620, 18066, 7550, 18073, 18074, 11, 7030, 18075, 6638, 14642, 1501, 4738, 5574, 18085, 18086, 18087, 18088, 18089, 18095, 674, 18096, 18097, 1254, 18068, 7597, 11772, 7490, 18098, 2]
 
-// Module 18066 (ForYouItems)
+// Module 18070 (ForYouItems)
 import nativeDefault from "native" /* 575 */;
 import _mod674 from "module_674" /* 674 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
@@ -14,18 +14,18 @@ import parseURLDefault from "parseURL" /* 5628 */;
 import CustomMarkupAll from "CustomMarkup" /* 5933 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6428 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6637 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13541 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15069 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 18064 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 18065 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 18081 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 18082 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 18083 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 18084 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 18085 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 18091 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 18092 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 18093 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13544 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15072 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 18068 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 18069 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 18085 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 18086 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 18087 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 18088 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 18089 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 18095 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 18096 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 18097 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ import ApplicationStore from "ApplicationStore" /* 2164 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 18060 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 18064 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

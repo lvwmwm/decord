@@ -1,17 +1,17 @@
-// Module ID: 15022
-// Function ID: 15023
+// Module ID: 15025
+// Function ID: 15026
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [2118, 15021, 15023, 1091, 5127, 15024, 2119, 1263, 2]
+// Dependencies: [2118, 15024, 15026, 1091, 5127, 15027, 2119, 1263, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 15022 (showVoiceChannelBlockedUserWarning)
+// Module 15025 (showVoiceChannelBlockedUserWarning)
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15023 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15026 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15021 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15024 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -32,7 +32,7 @@ export function showVoiceChannelBlockedUserWarning(channelId, items1) {
     ActionSheetActionCreatorsDefault;
     obj2 = { channel_id: channelId, blocked_user_ids: items, warning_surface: constants.POST_JOIN_SHEET };
     items = [items1];
-    const tmp12 = asyncRequire(15024, tmp3.paths);
+    const tmp12 = asyncRequire(15027, tmp3.paths);
     openLazy(tmp12, "gdm_blocked_user_action_sheet", obj);
   } else {
     React3();

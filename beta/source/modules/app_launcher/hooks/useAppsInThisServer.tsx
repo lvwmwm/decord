@@ -1,10 +1,10 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 12993
+// Function ID: 12994
 // Name: useAppsInThisServer
-// Dependencies: [19, 10441, 1386, 5937, 504, 10687, 2117, 10451, 12989, 12, 10523, 2]
+// Dependencies: [19, 10441, 1386, 5937, 504, 10687, 2117, 10451, 12992, 12, 10523, 2]
 // Exports: default
 
-// Module 12990 (useAppsInThisServer)
+// Module 12993 (useAppsInThisServer)
 import _modDef12 from "module_12" /* 12 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10441 */;

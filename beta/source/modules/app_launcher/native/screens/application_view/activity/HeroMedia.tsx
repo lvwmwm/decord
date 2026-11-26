@@ -1,10 +1,10 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12957
+// Function ID: 12958
 // Name: HeroMedia
-// Dependencies: [19, 4914, 1499, 21, 4913, 12112, 10839, 504, 6864, 12929, 9254, 1112, 2]
+// Dependencies: [19, 4914, 1499, 21, 4913, 12112, 10839, 504, 6864, 12932, 9254, 1112, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 12954 (HeroMedia)
+// Module 12957 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
@@ -17,7 +17,7 @@ import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp6;
-const getPreviewVideoAssetUrlDefault = tmp6(12929);
+const getPreviewVideoAssetUrlDefault = tmp6(12932);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });

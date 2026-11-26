@@ -1,9 +1,9 @@
-// Module ID: 18702
-// Function ID: 18703
+// Module ID: 18706
+// Function ID: 18707
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 8315, 8388, 1071, 21, 4913, 575, 10456, 8514, 7520, 7539, 1628, 5488, 9659, 7674, 18703, 7556, 1112, 18705, 5491, 12852, 12824, 13556, 11782, 1501, 1255, 5650, 5097, 1098, 11258, 18704, 5098, 2]
+// Dependencies: [5, 32, 19, 17, 8315, 8388, 1071, 21, 4913, 575, 10456, 8514, 7520, 7539, 1628, 5488, 9659, 7674, 18707, 7556, 1112, 18709, 5491, 12855, 12827, 13559, 11782, 1501, 1255, 5650, 5097, 1098, 11258, 18708, 5098, 2]
 
-// Module 18702 (CreateThreadView)
+// Module 18706 (CreateThreadView)
 import nativeDefault from "native" /* 575 */;
 import DraftStore from "DraftStore" /* 8315 */;
 import SlowmodeStore from "SlowmodeStore" /* 8388 */;
@@ -269,7 +269,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
   obj9 = { style: tmp.options, children: items7 };
   let obj10 = { style: tmp.optionsInner, children: items6 };
   const obj11 = { style: tmp.threadIconContainer, children: closure_13(tmp2(7674).ThreadIcon, { size: "lg" }) };
-  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(18703), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
+  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(18707), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
   let tmp23Result = null;
   const tmp25 = closure_7;
   if (!isForumLikeChannelResult) {
@@ -310,7 +310,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
     const obj15 = { style: tmp.border };
     items8 = [tmp23(tmp24, obj15), ];
     const obj16 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items8[1] = closure_13(threadSettingsDraft(18705).ThreadCreationStarterMessage, obj16);
+    items8[1] = closure_13(threadSettingsDraft(18709).ThreadCreationStarterMessage, obj16);
     tmp22Result = tmp22(tmp24, obj14);
   }
   items7[1] = tmp22Result;
@@ -318,16 +318,16 @@ function CreateThreadViewInner(threadSettingsDraft) {
   let tmp23Result2 = null;
   if (parentChannel.rateLimitPerUser > 0) {
     const obj17 = { children: closure_13(tmp24, obj18) };
-    obj18 = { style: tmp.typingWrapper, children: closure_13(parentChannel(12852), obj19) };
+    obj18 = { style: tmp.typingWrapper, children: closure_13(parentChannel(12855), obj19) };
     const LayerScope = tmp2(5491).LayerScope;
     obj19 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp23Result2 = tmp23(LayerScope, obj17);
   }
   items5[2] = tmp23Result2;
   const obj20 = { ref, channel: parentChannel, onJumpToPresent, screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: callback1 };
-  items5[3] = closure_13(parentChannel(12824), obj20);
+  items5[3] = closure_13(parentChannel(12827), obj20);
   const obj21 = { channelId: parentChannel.id };
-  items5[4] = closure_13(parentChannel(13556), obj21);
+  items5[4] = closure_13(parentChannel(13559), obj21);
   items3[1] = closure_14(tmp24, obj6);
   return closure_14(AnalyticsLocationProvider, obj5);
 }

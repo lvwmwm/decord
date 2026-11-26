@@ -1,13 +1,13 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 12708
+// Function ID: 12709
 // Name: CheckpointCharacterDataBinding
-// Dependencies: [6338, 6013, 12713, 12546, 2]
+// Dependencies: [6338, 6013, 12709, 12542, 2]
 // Exports: getCheckpointCharacterDataBinding, getCheckpointCharacterOutfitImageProperty
 
-// Module 12712 (CheckpointCharacterDataBinding)
+// Module 12708 (CheckpointCharacterDataBinding)
 import CheckpointNavigation from "CheckpointNavigation" /* 6338 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12546 */;
-import CheckpointCharacterRiveTraits from "CheckpointCharacterRiveTraits" /* 12713 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12542 */;
+import CheckpointCharacterRiveTraits from "CheckpointCharacterRiveTraits" /* 12709 */;
 import size from "module_2" /* 2 */;
 
 let items = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"];

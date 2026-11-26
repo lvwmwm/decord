@@ -1,16 +1,16 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 15826
+// Function ID: 15827
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4914, 1191, 1082, 21, 504, 5085, 15823, 4974, 11101, 5508, 2]
+// Dependencies: [19, 4914, 1191, 1082, 21, 504, 5085, 15827, 4974, 11101, 5508, 2]
 // Exports: RootThemeContextProvider
 
-// Module 15822 (RootThemeContextProvider)
+// Module 15826 (RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1082 */;
 import native from "native" /* 4974 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5085 */;
-import PlainTextExperiment from "PlainTextExperiment" /* 15823 */;
+import PlainTextExperiment from "PlainTextExperiment" /* 15827 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import ThemeStore from "ThemeStore" /* 1191 */;

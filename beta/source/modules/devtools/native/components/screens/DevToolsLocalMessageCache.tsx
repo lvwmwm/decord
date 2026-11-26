@@ -1,10 +1,10 @@
-// Module ID: 17015
-// Function ID: 17016
+// Module ID: 17019
+// Function ID: 17020
 // Name: DevToolsLocalMessageCache
 // Dependencies: [17, 4762, 21, 4913, 575, 7045, 5929, 7348, 8281, 5504, 2]
 // Exports: default
 
-// Module 17015 (DevToolsLocalMessageCache)
+// Module 17019 (DevToolsLocalMessageCache)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;

@@ -1,7 +1,7 @@
 // Module ID: 5645
 // Function ID: 5646
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 4914, 4762, 4819, 1071, 4769, 1082, 21, 575, 5641, 5504, 4913, 5646, 5536, 5090, 6429, 8067, 5860, 1112, 7545, 5594, 7322, 1186, 1379, 7255, 5592, 10524, 10421, 8802, 504, 4910, 8699, 5127, 12049, 2119, 11, 4738, 5600, 12107, 12012, 15060, 15062, 5609, 11995, 15064, 12108, 11146, 5934, 1378, 5936, 7636, 11142, 11147, 2]
+// Dependencies: [19, 17, 4914, 4762, 4819, 1071, 4769, 1082, 21, 575, 5641, 5504, 4913, 5646, 5536, 5090, 6429, 8067, 5860, 1112, 7545, 5594, 7322, 1186, 1379, 7255, 5592, 10524, 10421, 8802, 504, 4910, 8699, 5127, 12049, 2119, 11, 4738, 5600, 12107, 12012, 15063, 15065, 5609, 11995, 15067, 12108, 11146, 5934, 1378, 5936, 7636, 11142, 11147, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5645 (MarkupReactRules)
@@ -77,7 +77,7 @@ class MarkupText {
     let tmp = null;
     const merged = Object.assign(color, Object.assign({ children: 0, color: 0, variant: 0 }));
     if (react.useContext(Spoiler.SpoilerHiddenContext)) {
-      const obj = { style: items, onPress: "dispatch", onLongPress: "PX_8", accessibilityRole: "isArray" };
+      const obj = { style: items, onPress: "__workletHash", onLongPress: "names", accessibilityRole: "Object" };
       items = [merged.style, obj.spoilerHiddenText];
       tmp = obj;
     }
@@ -634,7 +634,7 @@ function MarkupStaticRouteLink(state) {
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_16();
-  let SignPostIcon = state(15060).SignPostIcon;
+  let SignPostIcon = state(15063).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -645,7 +645,7 @@ function MarkupStaticRouteLink(state) {
           }
         }
       }
-      SignPostIcon = tmp2(15062).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(15065).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -719,7 +719,7 @@ function MarkupStaticRouteLink(state) {
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(15060).SignPostIcon;
+  SignPostIcon = tmp2(15063).SignPostIcon;
 }
 function MarkupAttachmentLink(state) {
   let SMALL;
@@ -745,7 +745,7 @@ function MarkupAttachmentLink(state) {
     str2 = "body-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15064), size: SMALL };
+  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15067), size: SMALL };
   const ThemedIcon = tmp3(1186).ThemedIcon;
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {

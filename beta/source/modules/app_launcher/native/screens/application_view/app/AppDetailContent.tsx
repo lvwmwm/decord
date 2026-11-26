@@ -1,10 +1,10 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 13000
+// Function ID: 13001
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 10441, 1499, 1071, 5937, 21, 4913, 12998, 575, 12925, 7045, 12111, 12975, 8314, 10699, 1112, 1628, 10687, 2117, 13006, 10679, 5565, 12922, 1378, 13008, 5504, 13010, 12972, 13012, 13018, 1186, 13021, 13023, 5127, 5650, 10700, 2]
+// Dependencies: [5, 19, 17, 10441, 1499, 1071, 5937, 21, 4913, 13001, 575, 12928, 7045, 12111, 12978, 8314, 10699, 1112, 1628, 10687, 2117, 13009, 10679, 5565, 12925, 1378, 13011, 5504, 13013, 12975, 13015, 13021, 1186, 13024, 13026, 5127, 5650, 10700, 2]
 // Exports: default
 
-// Module 12997 (AppDetailContent)
+// Module 13000 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -17,12 +17,12 @@ import TableRow2 from "TableRow" /* 7045 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8314 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 10679 */;
 import AppLauncherContext from "AppLauncherContext" /* 12111 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12922 */;
-import react2 from "react" /* 12925 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 12975 */;
-import Header from "Header" /* 12998 */;
-import BillIcon from "BillIcon" /* 13008 */;
-import ShopIcon from "ShopIcon" /* 13010 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12925 */;
+import react2 from "react" /* 12928 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 12978 */;
+import Header from "Header" /* 13001 */;
+import BillIcon from "BillIcon" /* 13011 */;
+import ShopIcon from "ShopIcon" /* 13013 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10441 */;
@@ -112,8 +112,8 @@ class CommandRow {
       sectionName
     };
     fn = undefined;
-    const useCommandRowSend = command(12975).useCommandRowSend;
-    const tmp5 = command(12975);
+    const useCommandRowSend = command(12978).useCommandRowSend;
+    const tmp5 = command(12978);
     if (installOnDemand) {
       let closure_0 = _asyncToGenerator(async (arg0, value) => {
         let obj5;

@@ -1,19 +1,19 @@
-// Module ID: 19631
-// Function ID: 19632
+// Module ID: 19635
+// Function ID: 19636
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 13283, 1071, 21, 4913, 575, 1255, 13284, 5127, 5141, 5600, 19632, 5504, 1112, 6545, 5511, 2]
+// Dependencies: [19, 17, 13286, 1071, 21, 4913, 575, 1255, 13287, 5127, 5141, 5600, 19636, 5504, 1112, 6545, 5511, 2]
 // Exports: default
 
-// Module 19631 (NotificationReactivationActionSheet)
+// Module 19635 (NotificationReactivationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13283 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13284 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19632 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13286 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13287 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19636 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -61,7 +61,7 @@ export default function NotificationReactivationActionSheet(location) {
   const callback1 = react.useCallback(() => {
     const SKIP_STEP = EventActionType.SKIP_STEP;
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "sa" };
+    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();

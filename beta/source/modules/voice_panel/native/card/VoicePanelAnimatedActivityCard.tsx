@@ -1,9 +1,9 @@
-// Module ID: 19295
-// Function ID: 19296
+// Module ID: 19299
+// Function ID: 19300
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 4761, 10652, 4762, 11755, 11753, 1071, 2144, 10779, 21, 4913, 575, 11754, 18246, 504, 19296, 10670, 6864, 10780, 7520, 7539, 10741, 5558, 1653, 1706, 6629, 5173, 2145, 1494, 10646, 19297, 10788, 19298, 19299, 19303, 4974, 2]
+// Dependencies: [32, 19, 4761, 10652, 4762, 11755, 11753, 1071, 2144, 10779, 21, 4913, 575, 11754, 18250, 504, 19300, 10670, 6864, 10780, 7520, 7539, 10741, 5558, 1653, 1706, 6629, 5173, 2145, 1494, 10646, 19301, 10788, 19302, 19303, 19307, 4974, 2]
 
-// Module 19295 (VoicePanelAnimatedActivityCard)
+// Module 19299 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useWindowDimensions from "useWindowDimensions" /* 1494 */;

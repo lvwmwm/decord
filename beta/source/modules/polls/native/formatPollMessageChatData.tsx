@@ -1,10 +1,10 @@
-// Module ID: 14281
-// Function ID: 14282
+// Module ID: 14284
+// Function ID: 14285
 // Name: formatPollMessageChatData
 // Dependencies: [12149, 8791, 2]
 // Exports: default
 
-// Module 14281 (formatPollMessageChatData)
+// Module 14284 (formatPollMessageChatData)
 import MarkupParsers from "MarkupParsers" /* 8791 */;
 import formatPollMessageChatDataDefault from "formatPollMessageChatData" /* 12149 */;
 import size from "module_2" /* 2 */;

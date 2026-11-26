@@ -1,10 +1,10 @@
-// Module ID: 13791
-// Function ID: 13792
+// Module ID: 13794
+// Function ID: 13795
 // Name: ConjureProjectGroupList
-// Dependencies: [19, 17, 4784, 6980, 6621, 21, 4913, 575, 2018, 5127, 6838, 13792, 12293, 7020, 5504, 13773, 504, 13793, 5979, 1112, 4190, 7045, 7322, 12357, 13790, 7348, 13794, 7565, 12800, 7600, 13783, 13796, 5511, 6933, 2]
+// Dependencies: [19, 17, 4784, 6980, 6621, 21, 4913, 575, 2018, 5127, 6838, 13795, 12293, 7020, 5504, 13776, 504, 13796, 5979, 1112, 4190, 7045, 7322, 12357, 13793, 7348, 13797, 7565, 12802, 7600, 13786, 13799, 5511, 6933, 2]
 // Exports: default
 
-// Module 13791 (ConjureProjectGroupList)
+// Module 13794 (ConjureProjectGroupList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2018 */;
@@ -17,10 +17,10 @@ import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndic
 import GuildIcon from "GuildIcon" /* 7322 */;
 import TableRowGroup2 from "TableRowGroup" /* 7348 */;
 import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 12293 */;
-import useConjureProjectGroupsDefault from "useConjureProjectGroups" /* 13783 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13790 */;
-import openConjureProject from "openConjureProject" /* 13792 */;
-import useConjureProjectGroupState from "useConjureProjectGroupState" /* 13794 */;
+import useConjureProjectGroupsDefault from "useConjureProjectGroups" /* 13786 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13793 */;
+import openConjureProject from "openConjureProject" /* 13795 */;
+import useConjureProjectGroupState from "useConjureProjectGroupState" /* 13797 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
@@ -115,7 +115,7 @@ function ProjectGroup(arg0) {
   if (collapsed) {
     ChevronSmallDownIcon = tmp2(7565).ChevronSmallRightIcon;
   } else {
-    ChevronSmallDownIcon = tmp2(12800).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp2(12802).ChevronSmallDownIcon;
   }
   let tmp8 = null;
   const tmp7 = authStore;
@@ -245,7 +245,7 @@ let closure_15 = react.memo(function ProjectRow(project) {
     hideServer = false;
   }
   const tmp = closure_11();
-  let obj = project(13773);
+  let obj = project(13776);
   const conjureHomeProjectState = obj.useConjureHomeProjectState(project.id);
   let obj2 = project(504);
   const items = [ConjurePublishStatusStore];
@@ -261,11 +261,11 @@ let closure_15 = react.memo(function ProjectRow(project) {
     }
     return publishState;
   }, items1);
-  let obj3 = project(13773);
+  let obj3 = project(13776);
   let result = obj3.conjureHomeProjectShowsDraft(conjureHomeProjectState, stateFromStores);
-  let obj4 = project(13773);
+  let obj4 = project(13776);
   let result1 = obj4.conjureProjectLastActivityTime(project);
-  const obj5 = project(13793);
+  const obj5 = project(13796);
   const conjureProjectShareTargetDetails = obj5.useConjureProjectShareTargetDetails(project);
   if (!hideServer) {
     tmp11 = conjureProjectShareTargetDetails;
@@ -301,7 +301,7 @@ let closure_15 = react.memo(function ProjectRow(project) {
     }
     if (label == null) {
       let stringResult2 = null;
-      const tmp2Result = project(13793);
+      const tmp2Result = project(13796);
       if (tmp2Result.isConjureProjectWithoutServer(project)) {
         const intl2 = tmp2(1112).intl;
         stringResult2 = intl2.string(_modDef4190.poYQxw);

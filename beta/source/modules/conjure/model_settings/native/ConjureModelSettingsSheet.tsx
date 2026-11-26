@@ -1,10 +1,10 @@
-// Module ID: 18349
-// Function ID: 18350
+// Module ID: 18353
+// Function ID: 18354
 // Name: ConjureModelSettingsSheet
-// Dependencies: [32, 19, 17, 6967, 6977, 21, 504, 6994, 18350, 5929, 575, 18351, 5504, 1112, 4190, 7553, 7515, 2]
+// Dependencies: [32, 19, 17, 6967, 6977, 21, 504, 6994, 18354, 5929, 575, 18355, 5504, 1112, 4190, 7553, 7515, 2]
 // Exports: default
 
-// Module 18349 (ConjureModelSettingsSheet)
+// Module 18353 (ConjureModelSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -12,8 +12,8 @@ import _modDef4190 from "module_4190" /* 4190 */;
 import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 6994 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
 import ActionSheet2 from "ActionSheet" /* 7553 */;
-import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 18350 */;
-import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 18351 */;
+import useConjureModelSettingsDraftDefault from "useConjureModelSettingsDraft" /* 18354 */;
+import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 18355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;

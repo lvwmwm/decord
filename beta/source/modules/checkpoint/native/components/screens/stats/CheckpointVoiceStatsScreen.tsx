@@ -1,23 +1,23 @@
-// Module ID: 12747
-// Function ID: 12748
+// Module ID: 12748
+// Function ID: 12749
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [19, 17, 12495, 5969, 21, 4913, 575, 12730, 1494, 504, 6339, 1112, 3440, 12516, 12748, 12749, 12513, 11016, 12514, 12750, 12751, 12753, 2]
+// Dependencies: [19, 17, 12495, 5969, 21, 4913, 575, 12730, 1494, 504, 6339, 1112, 3440, 12724, 12749, 12750, 12720, 11016, 12722, 12751, 12752, 12754, 2]
 // Exports: default
 
-// Module 12747 (CheckpointVoiceStatsScreen)
+// Module 12748 (CheckpointVoiceStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _modDef3440 from "module_3440" /* 3440 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6339 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12513 */;
-import CheckpointTextDefault from "CheckpointText" /* 12514 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12516 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12720 */;
+import CheckpointTextDefault from "CheckpointText" /* 12722 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12724 */;
 import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12730 */;
-import _modDef12748 from "module_12748" /* 12748 */;
 import _modDef12749 from "module_12749" /* 12749 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12751 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12753 */;
+import _modDef12750 from "module_12750" /* 12750 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12752 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12754 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointStore from "CheckpointStore" /* 12495 */;
@@ -128,7 +128,7 @@ export default function CheckpointVoiceStatsScreen() {
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(3440)["5vpcvA"], obj3);
     }
   }
-  const obj4 = { animatedUri: _modDef12748, staticUri: _modDef12749, style: items3 };
+  const obj4 = { animatedUri: _modDef12749, staticUri: _modDef12750, style: items3 };
   items3 = [tmp.image, ];
   let tmp17 = wideText;
   const tmp2Result5 = CheckpointApngPlayerDefault;
@@ -172,7 +172,7 @@ export default function CheckpointVoiceStatsScreen() {
   if (tmp15Result7) {
     const obj14 = { value: null, accessibilityLabel: null };
     ({ value: obj15.value, label: obj15.accessibilityLabel } = memo);
-    tmp15Result7 = tmp15(tmp2(12750), obj14);
+    tmp15Result7 = tmp15(tmp2(12751), obj14);
   }
   items9[1] = tmp15Result7;
   let tmp15Result8 = !tmp8;

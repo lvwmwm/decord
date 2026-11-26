@@ -1,10 +1,10 @@
-// Module ID: 13750
-// Function ID: 13751
+// Module ID: 13753
+// Function ID: 13754
 // Name: useModalPanGesture
 // Dependencies: [1653, 5173, 1706, 5514, 6429, 2]
 // Exports: default
 
-// Module 13750 (useModalPanGesture)
+// Module 13753 (useModalPanGesture)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;

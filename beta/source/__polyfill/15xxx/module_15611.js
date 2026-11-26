@@ -1,14 +1,112 @@
 // Module ID: 15611
 // Function ID: 15612
-// Dependencies: [15590, 15589]
+// Dependencies: [15575, 15550, 15612, 15566, 15613, 15595, 15573, 15606]
 
 // Module 15611
-import _mod15589 from "module_15589" /* 15589 */;
-import _mod15590 from "module_15590" /* 15590 */;
+import _mod15550 from "module_15550" /* 15550 */;
+import _mod15566 from "module_15566" /* 15566 */;
+import _mod15575 from "module_15575" /* 15575 */;
+import _mod15595 from "module_15595" /* 15595 */;
+import _mod15606 from "module_15606" /* 15606 */;
+import _mod15612 from "module_15612" /* 15612 */;
+import _mod15613 from "module_15613" /* 15613 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod15590;
-  return tmp(arg0, _mod15589);
-});
+const require = globalThis.__r;
 
-export default tmp;
+let fn4;
+let fn5;
+let fn6;
+if (!_mod15612) {
+  let fn;
+  let fn2;
+  let fn3;
+  if (!_mod15566.state) {
+    let tmp = _mod15613("state");
+    let closure_6 = tmp;
+    _mod15595[tmp] = true;
+    fn = function t(facade, arg1) {
+      const tmp3 = closure_6;
+      if (require("module_15573")(facade, closure_6)) {
+        const self = this;
+        const self2 = this;
+        const typeError = new tmp(15550).TypeError("Object already initialized");
+        throw typeError;
+      } else {
+        arg1.facade = facade;
+        _mod15606(facade, tmp3, arg1);
+        return arg1;
+      }
+    };
+    fn4 = fn;
+    fn2 = function n(arg0) {
+      return require("module_15573")(arg0, closure_6) ? arg0[closure_6] : {};
+    };
+    fn5 = fn2;
+    fn3 = function u(arg0) {
+      return require("module_15573")(arg0, closure_6);
+    };
+    fn6 = fn3;
+  }
+  let obj = {
+    set: fn,
+    get: fn2,
+    has: fn3,
+    enforce(toString) {
+        let tmp2;
+        if (fn6(toString)) {
+          tmp2 = fn5(toString);
+        } else {
+          tmp2 = fn4(toString, {});
+        }
+        return tmp2;
+      },
+    getterFor(arg0) {
+        let closure_0 = arg0;
+        return (arg0) => {
+          if (_mod15575(arg0)) {
+            const tmp4 = fn5(arg0);
+            if (tmp4.type === closure_0) {
+              return tmp4;
+            }
+          }
+          const typeError = new _mod15550.TypeError("Incompatible receiver, " + closure_0 + " required");
+          throw typeError;
+        };
+      }
+  };
+  module.exports = obj;
+}
+let state = _mod15566.state;
+if (!state) {
+  const _module = _mod15566;
+  let self = this;
+  let self2 = this;
+  const weakMap = new _mod15550.WeakMap();
+  let tmp4 = weakMap;
+  _module.state = weakMap;
+  state = weakMap;
+}
+({ get: state.get, has: state.has, set: state.set } = state);
+fn4 = function t(facade, arg1) {
+  const obj = state;
+  if (state.has(facade)) {
+    const self = this;
+    const self2 = this;
+    const typeError = new _mod15550.TypeError("Object already initialized");
+    throw typeError;
+  } else {
+    arg1.facade = facade;
+    const result = obj.set(facade, arg1);
+    return arg1;
+  }
+};
+fn5 = function n(arg0) {
+  const tmp = state.get(arg0) || {};
+  return tmp;
+};
+fn6 = function u(arg0) {
+  return state.has(arg0);
+};
+fn3 = fn6;
+fn2 = fn5;
+fn = fn4;

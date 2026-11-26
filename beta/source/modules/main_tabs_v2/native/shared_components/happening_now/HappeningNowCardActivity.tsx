@@ -1,9 +1,9 @@
-// Module ID: 17605
-// Function ID: 17606
+// Module ID: 17609
+// Function ID: 17610
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 4767, 1386, 16709, 1071, 1082, 21, 17606, 17607, 4913, 575, 7520, 504, 6864, 5652, 1255, 12202, 2119, 8067, 17601, 5943, 17608, 16710, 17602, 1186, 17611, 13524, 17612, 10899, 14466, 9798, 7620, 7040, 1112, 4910, 1378, 11086, 5600, 17603, 17614, 11089, 6917, 17616, 8204, 2]
+// Dependencies: [19, 17, 4767, 1386, 16713, 1071, 1082, 21, 17610, 17611, 4913, 575, 7520, 504, 6864, 5652, 1255, 12202, 2119, 8067, 17605, 5943, 17612, 16714, 17606, 1186, 17615, 13527, 17616, 10899, 14469, 9798, 7620, 7040, 1112, 4910, 1378, 11086, 5600, 17607, 17618, 11089, 6917, 17620, 8204, 2]
 
-// Module 17605 (HappeningNowCardActivity)
+// Module 17609 (HappeningNowCardActivity)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
@@ -15,17 +15,17 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import StreamPreviewDefault from "StreamPreview" /* 11086 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11089 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 13524 */;
-import isOnXboxDefault from "isOnXbox" /* 14466 */;
-import useLiveStageData from "useLiveStageData" /* 17603 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17606 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17607 */;
-import HappeningNowAvatarStack2 from "HappeningNowAvatarStack" /* 17614 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 13527 */;
+import isOnXboxDefault from "isOnXbox" /* 14469 */;
+import useLiveStageData from "useLiveStageData" /* 17607 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17610 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17611 */;
+import HappeningNowAvatarStack2 from "HappeningNowAvatarStack" /* 17618 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StageInstanceStore from "StageInstanceStore" /* 4767 */;
 import UserStore from "UserStore" /* 1386 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16709 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16713 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -157,7 +157,7 @@ function IconOrPreview(arg0) {
       const substr = userId.slice(-1);
       tmp2Result = items[substr.charCodeAt(substr, 0) % items.length];
     } else {
-      tmp2Result = tmp2(17616);
+      tmp2Result = tmp2(17620);
     }
     assetImage = tmp2Result;
   }

@@ -1,10 +1,10 @@
-// Module ID: 19225
-// Function ID: 19226
+// Module ID: 19229
+// Function ID: 19230
 // Name: PlayableFrameBanner
-// Dependencies: [19, 16478, 21, 575, 4913, 1628, 504, 9996, 9998, 6565, 8430, 6561, 16369, 16368, 2]
+// Dependencies: [19, 16482, 21, 575, 4913, 1628, 504, 9996, 9998, 6565, 8430, 6561, 16373, 16372, 2]
 // Exports: default
 
-// Module 19225 (PlayableFrameBanner)
+// Module 19229 (PlayableFrameBanner)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import QuestTypes from "QuestTypes" /* 6561 */;
@@ -12,7 +12,7 @@ import AdCreativeType from "AdCreativeType" /* 6565 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8430 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9998 */;
 import react from "react" /* 19 */;
-import PlayableStore from "PlayableStore" /* 16478 */;
+import PlayableStore from "PlayableStore" /* 16482 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 18796
-// Function ID: 18797
+// Module ID: 18800
+// Function ID: 18801
 // Name: MessageSearchResultParser
-// Dependencies: [4856, 8576, 18797, 13207, 18798, 12, 2]
+// Dependencies: [4856, 8576, 18801, 13210, 18802, 12, 2]
 
-// Module 18796 (MessageSearchResultParser)
+// Module 18800 (MessageSearchResultParser)
 import _mod12 from "module_12" /* 12 */;
 import SearchConstants from "SearchConstants" /* 8576 */;
-import CachedSearchResultParser2 from "CachedSearchResultParser" /* 18797 */;
+import CachedSearchResultParser2 from "CachedSearchResultParser" /* 18801 */;
 import MessageRecord from "MessageRecord" /* 4856 */;
 import size from "module_2" /* 2 */;
 

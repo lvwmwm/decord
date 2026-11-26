@@ -1,9 +1,9 @@
-// Module ID: 15133
-// Function ID: 15134
+// Module ID: 15136
+// Function ID: 15137
 // Name: GameOrganizationStore
 // Dependencies: [11902, 504, 572, 2]
 
-// Module 15133 (GameOrganizationStore)
+// Module 15136 (GameOrganizationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GameOrganizationModels from "GameOrganizationModels" /* 11902 */;

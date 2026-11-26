@@ -1,10 +1,10 @@
-// Module ID: 18846
-// Function ID: 18847
+// Module ID: 18850
+// Function ID: 18851
 // Name: AutocompleteScreenUtils
-// Dependencies: [4825, 4855, 1386, 13214, 8576, 1071, 1112, 10077, 5609, 14734, 11628, 10109, 11131, 7688, 13420, 11133, 12357, 12175, 18847, 13207, 4969, 2]
+// Dependencies: [4825, 4855, 1386, 13217, 8576, 1071, 1112, 10077, 5609, 14737, 11628, 10109, 11131, 7688, 13423, 11133, 12357, 12175, 18851, 13210, 4969, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 18846 (AutocompleteScreenUtils)
+// Module 18850 (AutocompleteScreenUtils)
 import Constants from "Constants" /* 1071 */;
 import intl10 from "intl" /* 1112 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
@@ -18,14 +18,14 @@ import StickerIcon from "StickerIcon" /* 11133 */;
 import PollsIcon from "PollsIcon" /* 11628 */;
 import RobotIcon from "RobotIcon" /* 12175 */;
 import UserIcon from "UserIcon" /* 12357 */;
-import SearchUtils from "SearchUtils" /* 13207 */;
-import SoundboardIcon from "SoundboardIcon" /* 13420 */;
-import EmbedIcon from "EmbedIcon" /* 14734 */;
-import WebhookIcon from "WebhookIcon" /* 18847 */;
+import SearchUtils from "SearchUtils" /* 13210 */;
+import SoundboardIcon from "SoundboardIcon" /* 13423 */;
+import EmbedIcon from "EmbedIcon" /* 14737 */;
+import WebhookIcon from "WebhookIcon" /* 18851 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
-import SearchQueryStore from "SearchQueryStore" /* 13214 */;
+import SearchQueryStore from "SearchQueryStore" /* 13217 */;
 import size from "module_2" /* 2 */;
 
 let set;

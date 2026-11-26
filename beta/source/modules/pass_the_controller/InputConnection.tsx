@@ -1,12 +1,12 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 14893
+// Function ID: 14894
 // Name: InputConnection
-// Dependencies: [5682, 3, 14891, 14893, 14897, 2]
+// Dependencies: [5682, 3, 14894, 14896, 14900, 2]
 
-// Module 14890 (InputConnection)
+// Module 14893 (InputConnection)
 import LoggerDefault from "Logger" /* 3 */;
-import DatagramEvent from "DatagramEvent" /* 14893 */;
-import InputEvent from "InputEvent" /* 14897 */;
+import DatagramEvent from "DatagramEvent" /* 14896 */;
+import InputEvent from "InputEvent" /* 14900 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 5682 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 19449
-// Function ID: 19450
+// Module ID: 19453
+// Function ID: 19454
 // Name: AppAnalyticsManager
-// Dependencies: [2139, 2131, 5654, 6920, 6535, 5657, 1071, 1088, 7484, 4757, 5650, 5652, 18866, 6447, 2]
+// Dependencies: [2139, 2131, 5654, 6920, 6535, 5657, 1071, 1088, 7484, 4757, 5650, 5652, 18870, 6447, 2]
 
-// Module 19449 (AppAnalyticsManager)
+// Module 19453 (AppAnalyticsManager)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import Timers from "Timers" /* 4757 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6447 */;
-import getGamePlatformDefault from "getGamePlatform" /* 18866 */;
+import getGamePlatformDefault from "getGamePlatform" /* 18870 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;

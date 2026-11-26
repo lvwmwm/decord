@@ -1,10 +1,10 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13363
+// Function ID: 13364
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 4780, 4825, 4819, 21, 4913, 575, 1112, 504, 7734, 1254, 5504, 7030, 12082, 1186, 13359, 7038, 7779, 7776, 10933, 2]
+// Dependencies: [19, 17, 4780, 4825, 4819, 21, 4913, 575, 1112, 504, 7734, 1254, 5504, 7030, 12082, 1186, 13362, 7038, 7779, 7776, 10933, 2]
 // Exports: default
 
-// Module 13360 (ChannelAccessInfo)
+// Module 13363 (ChannelAccessInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -158,7 +158,7 @@ export default function ChannelAccessInfo(guild) {
     obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
     const length = existingMembers.length;
-    channel(13359);
+    channel(13362);
     items5 = [renderCounts(MEMBERS, length, 0, tmp2(7038).GroupIcon), ];
     const ROLES = constants.ROLES;
     const length2 = stateFromStoresArray.length;

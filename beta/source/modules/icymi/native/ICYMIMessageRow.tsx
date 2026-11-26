@@ -1,19 +1,19 @@
-// Module ID: 18145
-// Function ID: 18146
+// Module ID: 18149
+// Function ID: 18150
 // Name: ICYMIMessageRow
-// Dependencies: [19, 17, 4762, 4825, 4784, 4855, 6552, 1386, 18140, 1071, 21, 575, 18102, 1378, 18103, 8223, 10037, 504, 18146, 18147, 5504, 1112, 1186, 5943, 6511, 18133, 10043, 13846, 12127, 18141, 18143, 11, 7030, 8009, 18149, 2]
+// Dependencies: [19, 17, 4762, 4825, 4784, 4855, 6552, 1386, 18144, 1071, 21, 575, 18106, 1378, 18107, 8223, 10037, 504, 18150, 18151, 5504, 1112, 1186, 5943, 6511, 18137, 10043, 13849, 12127, 18145, 18147, 11, 7030, 8009, 18153, 2]
 // Exports: default
 
-// Module 18145 (ICYMIMessageRow)
+// Module 18149 (ICYMIMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
 import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 12127 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13846 */;
-import DesignConstants from "DesignConstants" /* 18140 */;
-import ICYMIShared from "ICYMIShared" /* 18141 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13849 */;
+import DesignConstants from "DesignConstants" /* 18144 */;
+import ICYMIShared from "ICYMIShared" /* 18145 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
@@ -23,7 +23,7 @@ import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18102 */;
+import createICYMIStyles from "createICYMIStyles" /* 18106 */;
 import size from "module_2" /* 2 */;
 
 let content_type;
@@ -56,7 +56,7 @@ class MessageRowContent {
     const tmp = closure_18();
     let tmp2 = message;
     let tmp3 = dependencyMap;
-    const context = react.useContext(message(18103).ICYMIContext);
+    const context = react.useContext(message(18107).ICYMIContext);
     const obj = message(8223);
     const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(10037).GRAVITY_VALID_EMBED_TYPES);
     const items = [UserGuildSettingsStore];
@@ -94,7 +94,7 @@ class MessageRowContent {
     if (tmp12Result) {
       const obj5 = { message, muted: stateFromStores, lineClamp: num, messageOptions: obj6, pointerEvents: str };
       obj6 = undefined;
-      const MessageRowPreview = tmp2(18146).MessageRowPreview;
+      const MessageRowPreview = tmp2(18150).MessageRowPreview;
       const tmp12 = closure_14;
       if (0 === result.length) {
         if (message.attachments.length > 0) {
@@ -112,14 +112,14 @@ class MessageRowContent {
     items3 = [tmp12Result, , ];
     let tmp13 = result.length > 0;
     if (tmp13) {
-      const obj7 = { style: tmp.media, children: closure_14(channel(18147), obj8) };
+      const obj7 = { style: tmp.media, children: closure_14(channel(18151), obj8) };
       obj8 = { message, visible: flag2, itemType: "message" };
       tmp13 = closure_14(tmp9, obj7);
     }
     items3[1] = tmp13;
     let tmp16 = 0 === result.length && message.embeds.length > 0;
     if (tmp16) {
-      const obj9 = { style: tmp.media, children: closure_14(tmp2(18146).NonMediaEmbedsRowPreview, obj10) };
+      const obj9 = { style: tmp.media, children: closure_14(tmp2(18150).NonMediaEmbedsRowPreview, obj10) };
       obj10 = { message, muted: stateFromStores, lineClamp: 3 };
       tmp16 = closure_14(tmp9, obj9);
     }
@@ -332,7 +332,7 @@ export default function MessageRowWrapper(arg0) {
   let visible;
   let gravityMessage;
   ({ message, messageContext, visible } = arg0);
-  const obj = gravityMessage(18133);
+  const obj = gravityMessage(18137);
   gravityMessage = obj.useGravityMessage(message);
   const items = [ChannelStore];
   const obj2 = gravityMessage(504);

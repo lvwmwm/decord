@@ -1,10 +1,10 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12785
+// Function ID: 12786
 // Name: CheckpointHeader
-// Dependencies: [17, 12495, 5969, 21, 4913, 575, 5129, 6429, 5998, 5999, 1628, 504, 10986, 7034, 12516, 12517, 12503, 1112, 7151, 2]
+// Dependencies: [17, 12495, 5969, 21, 4913, 575, 5129, 6429, 5998, 5999, 1628, 504, 10986, 7034, 12724, 12516, 12503, 1112, 7151, 2]
 // Exports: default
 
-// Module 12515 (CheckpointHeader)
+// Module 12785 (CheckpointHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,8 +16,8 @@ import _modDef5999 from "module_5999" /* 5999 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import XSmallIcon from "XSmallIcon" /* 7151 */;
 import CheckpointActionCreators from "CheckpointActionCreators" /* 12503 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12516 */;
-import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 12517 */;
+import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 12516 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12724 */;
 import CheckpointStore from "CheckpointStore" /* 12495 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;

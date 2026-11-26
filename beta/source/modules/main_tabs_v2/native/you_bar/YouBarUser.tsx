@@ -1,15 +1,15 @@
-// Module ID: 17976
-// Function ID: 17977
+// Module ID: 17980
+// Function ID: 17981
 // Name: YouBarUser
-// Dependencies: [19, 17, 1386, 16486, 21, 4913, 575, 504, 1653, 5514, 4969, 17977, 17978, 17979, 2]
+// Dependencies: [19, 17, 1386, 16490, 21, 4913, 575, 504, 1653, 5514, 4969, 17981, 17982, 17983, 2]
 
-// Module 17976 (YouBarUser)
+// Module 17980 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import spring_spring from "spring/spring" /* 5514 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import YouBarConstants from "YouBarConstants" /* 16486 */;
+import YouBarConstants from "YouBarConstants" /* 16490 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -86,8 +86,8 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
     if (null != name) {
       obj3 = { style: tmp.youButton, children: items4 };
       const obj5 = { isLargeAvatar: !isCondensed, onPress: onAvatarPress, coachmarkAnchorRef: avatarCoachmarkAnchorRef };
-      items4 = [closure_9(sharedValue(17978), obj5), ];
-      const obj6 = { style: items5, children: closure_9(sharedValue(17979), obj7) };
+      items4 = [closure_9(sharedValue(17982), obj5), ];
+      const obj6 = { style: items5, children: closure_9(sharedValue(17983), obj7) };
       items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       const View2 = tmp11(1653).View;
       obj7 = { userId: stateFromStores.id, username: name };
@@ -96,7 +96,7 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
     return tmp13(View, obj3);
   }
   const obj8 = { style: tmp.youButton, children: items6 };
-  items6 = [closure_9(sharedValue(17977), { isLarge: !isCondensed }), ];
+  items6 = [closure_9(sharedValue(17981), { isLarge: !isCondensed }), ];
   const obj9 = { style: items7, children: closure_9(View, obj10) };
   items7 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };

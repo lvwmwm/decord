@@ -1,10 +1,10 @@
-// Module ID: 14690
-// Function ID: 14691
+// Module ID: 14693
+// Function ID: 14694
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1071, 21, 4913, 6407, 575, 1186, 1112, 7030, 5127, 5090, 5504, 13658, 5488, 7490, 2]
+// Dependencies: [19, 1071, 21, 4913, 6407, 575, 1186, 1112, 7030, 5127, 5090, 5504, 13661, 5488, 7490, 2]
 // Exports: default
 
-// Module 14690 (InstantInviteFriendsList)
+// Module 14693 (InstantInviteFriendsList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 5090 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Pressables from "Pressables" /* 7030 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 13658 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 13661 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

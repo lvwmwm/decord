@@ -1,20 +1,20 @@
-// Module ID: 18482
-// Function ID: 18483
+// Module ID: 18486
+// Function ID: 18487
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 4913, 575, 18470, 18483, 5504, 7030, 1112, 11982, 4969, 18484, 4190, 1186, 5600, 18487, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 18474, 18487, 5504, 7030, 1112, 11982, 4969, 18488, 4190, 1186, 5600, 18491, 2]
 // Exports: ConjureAvatar, ConjureHeader, ConjureUserAvatar, ConjureUserHeader
 
-// Module 18482 (ConjureMessageAuthor)
+// Module 18486 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18470 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 18483 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18484 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18487 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18474 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 18487 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18488 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18491 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -126,7 +126,7 @@ export function ConjureUserAvatar(size) {
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1112).t.iXAna6), children: closure_5(messageAuthorUser(1186).Avatar, obj3) };
     const PressableOpacity = tmp3(7030).PressableOpacity;
     intl = tmp3(1112).intl;
-    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "sa" };
+    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "Array" };
     tmp7 = closure_5(PressableOpacity, obj2);
   }
   return tmp7;

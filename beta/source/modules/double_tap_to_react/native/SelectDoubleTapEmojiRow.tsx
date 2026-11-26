@@ -1,9 +1,9 @@
-// Module ID: 13255
-// Function ID: 13256
+// Module ID: 13258
+// Function ID: 13259
 // Name: SelectDoubleTapEmojiRow
 // Dependencies: [19, 17, 4914, 5142, 1389, 21, 4913, 1378, 575, 504, 7030, 7496, 1412, 9067, 1494, 4863, 8706, 9063, 5495, 9489, 2]
 
-// Module 13255 (SelectDoubleTapEmojiRow)
+// Module 13258 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;

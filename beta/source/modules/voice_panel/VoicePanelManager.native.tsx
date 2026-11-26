@@ -1,9 +1,9 @@
-// Module ID: 20083
-// Function ID: 20084
+// Module ID: 20087
+// Function ID: 20088
 // Name: VoicePanelManager
 // Dependencies: [4762, 5654, 6495, 10860, 7484, 2]
 
-// Module 20083 (VoicePanelManager)
+// Module 20087 (VoicePanelManager)
 import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10860 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;

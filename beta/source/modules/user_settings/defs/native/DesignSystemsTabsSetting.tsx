@@ -1,9 +1,9 @@
-// Module ID: 17235
-// Function ID: 17236
+// Module ID: 17239
+// Function ID: 17240
 // Name: DesignSystemsTabsSetting
-// Dependencies: [8712, 1071, 11942, 17236, 2]
+// Dependencies: [8712, 1071, 11942, 17240, 2]
 
-// Module 17235 (DesignSystemsTabsSetting)
+// Module 17239 (DesignSystemsTabsSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;

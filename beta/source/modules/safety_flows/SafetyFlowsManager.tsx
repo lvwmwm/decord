@@ -1,10 +1,10 @@
-// Module ID: 20145
-// Function ID: 20146
+// Module ID: 20149
+// Function ID: 20150
 // Name: SafetyFlowsManager
-// Dependencies: [20146, 7484, 2]
+// Dependencies: [20150, 7484, 2]
 
-// Module 20145 (SafetyFlowsManager)
-import openSafetyFlow from "openSafetyFlow" /* 20146 */;
+// Module 20149 (SafetyFlowsManager)
+import openSafetyFlow from "openSafetyFlow" /* 20150 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 

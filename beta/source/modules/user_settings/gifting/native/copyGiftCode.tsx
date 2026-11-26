@@ -1,10 +1,10 @@
-// Module ID: 14182
-// Function ID: 14183
+// Module ID: 14185
+// Function ID: 14186
 // Name: copyGiftCode
 // Dependencies: [5, 6347, 7545, 5594, 2]
 // Exports: default
 
-// Module 14182 (copyGiftCode)
+// Module 14185 (copyGiftCode)
 import GiftCodeUtils from "GiftCodeUtils" /* 6347 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

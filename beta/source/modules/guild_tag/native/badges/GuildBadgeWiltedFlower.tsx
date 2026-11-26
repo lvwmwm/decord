@@ -1,12 +1,12 @@
-// Module ID: 15177
-// Function ID: 15178
+// Module ID: 15180
+// Function ID: 15181
 // Name: GuildBadgeWiltedFlower
-// Dependencies: [19, 21, 15141, 7865, 2]
+// Dependencies: [19, 21, 15144, 7865, 2]
 // Exports: GuildBadgeWiltedFlower
 
-// Module 15177 (GuildBadgeWiltedFlower)
+// Module 15180 (GuildBadgeWiltedFlower)
 import inlineStyles from "inlineStyles" /* 7865 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15141 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15144 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

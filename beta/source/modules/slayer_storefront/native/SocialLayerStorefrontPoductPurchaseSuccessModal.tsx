@@ -1,10 +1,10 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13911
+// Function ID: 13912
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
 // Dependencies: [32, 717, 19, 17, 4914, 6674, 6850, 1071, 21, 4913, 575, 1653, 5514, 5123, 5129, 1494, 504, 8150, 6847, 5504, 5511, 1112, 5600, 5468, 7017, 7102, 7151, 9035, 6864, 7521, 11924, 7539, 1255, 5474, 9589, 4090, 9877, 4969, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 13908 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 13911 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;

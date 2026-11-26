@@ -1,27 +1,27 @@
-// Module ID: 13653
-// Function ID: 13654
+// Module ID: 13656
+// Function ID: 13657
 // Name: WorldIllocon
-// Dependencies: [19, 21, 13654, 13655, 13656, 7357, 5600, 2]
+// Dependencies: [19, 21, 13657, 13658, 13659, 7357, 5600, 2]
 // Exports: WorldIllocon
 
-// Module 13653 (WorldIllocon)
+// Module 13656 (WorldIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef13654 from "module_13654" /* 13654 */;
-import _modDef13655 from "module_13655" /* 13655 */;
-import _modDef13656 from "module_13656" /* 13656 */;
+import _modDef13657 from "module_13657" /* 13657 */;
+import _modDef13658 from "module_13658" /* 13658 */;
+import _modDef13659 from "module_13659" /* 13659 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13654 };
+let obj2 = { uri: _modDef13657 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13655 };
-({ uri: _modDef13655 });
-obj[3] = { uri: _modDef13656 };
-({ uri: _modDef13656 });
+obj[2] = { uri: _modDef13658 };
+({ uri: _modDef13658 });
+obj[3] = { uri: _modDef13659 };
+({ uri: _modDef13659 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/WorldIllocon.native.tsx");
 

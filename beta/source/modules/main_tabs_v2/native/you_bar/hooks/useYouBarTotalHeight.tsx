@@ -1,13 +1,13 @@
-// Module ID: 16488
-// Function ID: 16489
+// Module ID: 16492
+// Function ID: 16493
 // Name: useYouBarTotalHeight
-// Dependencies: [16486, 16485, 16489, 2]
+// Dependencies: [16490, 16489, 16493, 2]
 // Exports: useYouBarTotalHeight
 
-// Module 16488 (useYouBarTotalHeight)
-import useYouBarMargins from "useYouBarMargins" /* 16485 */;
-import YouBarConstants from "YouBarConstants" /* 16486 */;
-import useConnectionBannerHeight from "useConnectionBannerHeight" /* 16489 */;
+// Module 16492 (useYouBarTotalHeight)
+import useYouBarMargins from "useYouBarMargins" /* 16489 */;
+import YouBarConstants from "YouBarConstants" /* 16490 */;
+import useConnectionBannerHeight from "useConnectionBannerHeight" /* 16493 */;
 import size from "module_2" /* 2 */;
 
 const YOU_BAR_HEIGHT = YouBarConstants.YOU_BAR_HEIGHT;

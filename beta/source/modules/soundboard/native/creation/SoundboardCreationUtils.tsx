@@ -1,10 +1,10 @@
-// Module ID: 19807
-// Function ID: 19808
+// Module ID: 19811
+// Function ID: 19812
 // Name: SoundboardCreationUtils
-// Dependencies: [32, 5, 1112, 5861, 11186, 1378, 11187, 19808, 6830, 7551, 5127, 19809, 2119, 19811, 2]
+// Dependencies: [32, 5, 1112, 5861, 11186, 1378, 11187, 19812, 6830, 7551, 5127, 19813, 2119, 19815, 2]
 // Exports: createSoundboardSound, showAddSoundboardSoundOptions
 
-// Module 19807 (SoundboardCreationUtils)
+// Module 19811 (SoundboardCreationUtils)
 import intl5 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -422,7 +422,7 @@ export function showAddSoundboardSoundOptions(guildId) {
     onPress() {
       obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId, analyticsSource: "guild_settings_record" };
-      return obj.openLazy(asyncRequire(19809, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
+      return obj.openLazy(asyncRequire(19813, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
     }
   };
   intl2 = require("intl").intl;

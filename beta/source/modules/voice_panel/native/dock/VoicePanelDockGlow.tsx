@@ -1,10 +1,10 @@
-// Module ID: 17993
-// Function ID: 17994
+// Module ID: 17997
+// Function ID: 17998
 // Name: VoicePanelDockGlow
-// Dependencies: [32, 19, 17, 11773, 21, 11754, 1653, 5123, 5477, 575, 17994, 7865, 10603, 13312, 13311, 13314, 4910, 11780, 5468, 2]
+// Dependencies: [32, 19, 17, 11773, 21, 11754, 1653, 5123, 5477, 575, 17998, 7865, 10603, 13315, 13314, 13317, 4910, 11780, 5468, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
-// Module 17993 (VoicePanelDockGlow)
+// Module 17997 (VoicePanelDockGlow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
@@ -14,9 +14,9 @@ import inlineStyles from "inlineStyles" /* 7865 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10603 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11773 */;
-import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 13311 */;
-import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13312 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13314 */;
+import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 13314 */;
+import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13315 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13317 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -341,7 +341,7 @@ export function VoicePanelDockBottomLine(micLive) {
     items[2] = obj2.hexWithOpacity(token, 0);
     return items;
   }, items);
-  let obj2 = token(13312);
+  let obj2 = token(13315);
   const voicePanelDockGlowLevelProps = obj2.useVoicePanelDockGlowLevelProps();
   const items1 = [closure_21, getDockInset, dockPressProgress, isDockConnected, wrapperDimensions, , , , , , , ];
   const useAnimatedStyle = token(1653).useAnimatedStyle;

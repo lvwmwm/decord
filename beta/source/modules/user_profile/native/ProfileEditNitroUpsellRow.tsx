@@ -1,10 +1,10 @@
-// Module ID: 15847
-// Function ID: 15848
+// Module ID: 15851
+// Function ID: 15852
 // Name: ProfileEditNitroUpsellRow
-// Dependencies: [19, 1071, 1388, 21, 7520, 10464, 1255, 8545, 8547, 7045, 15846, 2]
+// Dependencies: [19, 1071, 1388, 21, 7520, 10464, 1255, 8545, 8547, 7045, 15850, 2]
 // Exports: default
 
-// Module 15847 (ProfileEditNitroUpsellRow)
+// Module 15851 (ProfileEditNitroUpsellRow)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;

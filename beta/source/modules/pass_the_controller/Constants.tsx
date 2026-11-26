@@ -1,12 +1,12 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14892
+// Function ID: 14893
 // Name: Constants
-// Dependencies: [2139, 6396, 14767, 504, 6401, 2]
+// Dependencies: [2139, 6396, 14770, 504, 6401, 2]
 // Exports: isPassTheControllerBlocked, useIsPassTheControllerBlocked
 
-// Module 14889 (Constants)
+// Module 14892 (Constants)
 import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
-import SocialSdkGameResolver from "SocialSdkGameResolver" /* 14767 */;
+import SocialSdkGameResolver from "SocialSdkGameResolver" /* 14770 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6396 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ export function useIsPassTheControllerBlocked(arg0) {
             const gameForPID = obj.getGameForPID(streamPid);
             flag = false;
             if (null != gameForPID) {
-              const tmp2Result = tmp2(14767);
+              const tmp2Result = tmp2(14770);
               const id = tmp2Result.withProcessIdentity(gameForPID).id;
               const hasItem = null != id && set.has(id);
               flag = hasItem;

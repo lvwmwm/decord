@@ -1,10 +1,10 @@
-// Module ID: 18764
-// Function ID: 18765
+// Module ID: 18768
+// Function ID: 18769
 // Name: renderChannelItem
-// Dependencies: [19, 17, 4784, 4855, 1386, 6553, 21, 8009, 1112, 4913, 575, 18765, 504, 7322, 13066, 6638, 18766, 10129, 18768, 5529, 2]
+// Dependencies: [19, 17, 4784, 4855, 1386, 6553, 21, 8009, 1112, 4913, 575, 18769, 504, 7322, 13069, 6638, 18770, 10129, 18772, 5529, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 18764 (renderChannelItem)
+// Module 18768 (renderChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -13,9 +13,9 @@ import ReadStateConstants from "ReadStateConstants" /* 6553 */;
 import NotificationCenterUtils from "NotificationCenterUtils" /* 6638 */;
 import GuildIconDefault from "GuildIcon" /* 7322 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8009 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18765 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 18766 */;
-import renderChannelContentDefault from "renderChannelContent" /* 18768 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18769 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18770 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18772 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -39,7 +39,7 @@ function LaunchpadChannelIcon(channel) {
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   obj4 = { guild: stateFromStores, size: tmp2.icon.guildBadgeIconSize };
-  items1 = [closure_8(View, obj3), closure_8(channel(13066).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
+  items1 = [closure_8(View, obj3), closure_8(channel(13069).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
   return closure_10(closure_9, obj2);
 }
 const View = react_native.View;

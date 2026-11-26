@@ -219,7 +219,7 @@ class MemberList {
             if (null != guild) {
               role = GuildRoleStore.getRole(guild.id, id);
             }
-            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "IconComponent" };
+            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "HermesInternal" };
             str = "";
             if (null != role) {
               str = role.name;
@@ -304,7 +304,7 @@ class MemberList {
             if (null != guild) {
               role = GuildRoleStore.getRole(guild.id, id);
             }
-            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "IconComponent" };
+            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "HermesInternal" };
             str = "";
             if (null != role) {
               str = role.name;

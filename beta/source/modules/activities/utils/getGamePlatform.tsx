@@ -1,12 +1,12 @@
-// Module ID: 18866
-// Function ID: 18867
+// Module ID: 18870
+// Function ID: 18871
 // Name: getGamePlatform
-// Dependencies: [5652, 14466, 7074, 2]
+// Dependencies: [5652, 14469, 7074, 2]
 // Exports: default
 
-// Module 18866 (getGamePlatform)
+// Module 18870 (getGamePlatform)
 import ActivityTypes from "ActivityTypes" /* 5652 */;
-import isOnXboxDefault from "isOnXbox" /* 14466 */;
+import isOnXboxDefault from "isOnXbox" /* 14469 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getGamePlatform.tsx");

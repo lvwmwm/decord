@@ -1,9 +1,9 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16720
+// Function ID: 16721
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
 // Dependencies: [19, 17, 4914, 1071, 21, 1653, 5468, 5514, 5515, 4913, 575, 7520, 7539, 9099, 10510, 5511, 1112, 1186, 504, 8947, 2]
 
-// Module 16716 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 16720 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;

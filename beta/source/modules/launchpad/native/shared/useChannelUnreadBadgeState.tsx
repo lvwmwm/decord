@@ -1,10 +1,10 @@
-// Module ID: 17927
-// Function ID: 17928
+// Module ID: 17931
+// Function ID: 17932
 // Name: useChannelUnreadBadgeState
 // Dependencies: [8325, 6619, 6552, 504, 6663, 2]
 // Exports: useBaseChannelUnreadBadgeState, useChannelUnreadBadgeState
 
-// Module 17927 (useChannelUnreadBadgeState)
+// Module 17931 (useChannelUnreadBadgeState)
 import NewChannelsStore from "NewChannelsStore" /* 8325 */;
 import ReadStateStore from "ReadStateStore" /* 6619 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;

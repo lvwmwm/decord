@@ -1,10 +1,10 @@
-// Module ID: 17829
-// Function ID: 17830
+// Module ID: 17833
+// Function ID: 17834
 // Name: selectDiscoverServerAction
 // Dependencies: [10051, 2]
 // Exports: selectDiscoverServerAction
 
-// Module 17829 (selectDiscoverServerAction)
+// Module 17833 (selectDiscoverServerAction)
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;
 import size from "module_2" /* 2 */;
 

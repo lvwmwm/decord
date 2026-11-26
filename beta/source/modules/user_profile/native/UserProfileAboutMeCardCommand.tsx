@@ -1,9 +1,9 @@
-// Module ID: 14225
-// Function ID: 14226
+// Module ID: 14228
+// Function ID: 14229
 // Name: UserProfileAboutMeCardCommand
 // Dependencies: [19, 1071, 21, 4913, 575, 5504, 5098, 12108, 1255, 5650, 5127, 12113, 8314, 5565, 2]
 
-// Module 14225 (UserProfileAboutMeCardCommand)
+// Module 14228 (UserProfileAboutMeCardCommand)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

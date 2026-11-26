@@ -1,13 +1,13 @@
-// Module ID: 19001
-// Function ID: 19002
+// Module ID: 19005
+// Function ID: 19006
 // Name: ContextMenuCommandNavigator
-// Dependencies: [19, 21, 8638, 4913, 575, 8268, 7092, 18899, 8561, 1112, 19002, 19004, 2]
+// Dependencies: [19, 21, 8638, 4913, 575, 8268, 7092, 18903, 8561, 1112, 19006, 19008, 2]
 // Exports: default
 
-// Module 19001 (ContextMenuCommandNavigator)
+// Module 19005 (ContextMenuCommandNavigator)
 import nativeDefault from "native" /* 575 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 18899 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 18903 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 8638 */;

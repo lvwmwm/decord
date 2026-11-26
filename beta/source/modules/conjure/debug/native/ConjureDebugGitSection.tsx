@@ -1,10 +1,10 @@
-// Module ID: 18694
-// Function ID: 18695
+// Module ID: 18698
+// Function ID: 18699
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 4913, 575, 7675, 11247, 13768, 18695, 8048, 18697, 12467, 18699, 10948, 11153, 7532, 7763, 7231, 17204, 17206, 18701, 18689, 5504, 4975, 5866, 5929, 7336, 5511, 10348, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 7675, 11247, 13771, 18699, 8048, 18701, 12467, 18703, 10948, 11153, 7532, 7763, 7231, 17208, 17210, 18705, 18693, 5504, 4975, 5866, 5929, 7336, 5511, 10348, 2]
 // Exports: ConjureDebugGitSection, ConjureDebugRestartAgent
 
-// Module 18694 (ConjureDebugGitSection)
+// Module 18698 (ConjureDebugGitSection)
 import nativeDefault from "native" /* 575 */;
 import AlertModal from "AlertModal" /* 5866 */;
 import CircleXIcon from "CircleXIcon" /* 7231 */;
@@ -16,14 +16,14 @@ import SpeedometerIcon from "SpeedometerIcon" /* 10948 */;
 import FileIcon from "FileIcon" /* 11153 */;
 import PencilIcon from "PencilIcon" /* 11247 */;
 import ServerIcon from "ServerIcon" /* 12467 */;
-import CloudIcon from "CloudIcon" /* 13768 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 17204 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 17206 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18689 */;
-import ListNumberedIcon from "ListNumberedIcon" /* 18695 */;
-import SaveIcon from "SaveIcon" /* 18697 */;
-import CloudDownloadIcon from "CloudDownloadIcon" /* 18699 */;
-import ConjureDebugGit from "ConjureDebugGit" /* 18701 */;
+import CloudIcon from "CloudIcon" /* 13771 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 17208 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 17210 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18693 */;
+import ListNumberedIcon from "ListNumberedIcon" /* 18699 */;
+import SaveIcon from "SaveIcon" /* 18701 */;
+import CloudDownloadIcon from "CloudDownloadIcon" /* 18703 */;
+import ConjureDebugGit from "ConjureDebugGit" /* 18705 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

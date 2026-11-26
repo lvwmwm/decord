@@ -1,14 +1,14 @@
-// Module ID: 17419
-// Function ID: 17420
+// Module ID: 17423
+// Function ID: 17424
 // Name: NotifyFriendsOnProfileUpdateSetting
-// Dependencies: [8712, 11942, 1112, 3024, 4738, 17420, 2]
+// Dependencies: [8712, 11942, 1112, 3024, 4738, 17424, 2]
 
-// Module 17419 (NotifyFriendsOnProfileUpdateSetting)
+// Module 17423 (NotifyFriendsOnProfileUpdateSetting)
 import intl2 from "intl" /* 1112 */;
 import _modDef3024 from "module_3024" /* 3024 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 17420 */;
+import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 17424 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

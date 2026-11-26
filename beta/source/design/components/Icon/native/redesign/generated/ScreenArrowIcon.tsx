@@ -1,10 +1,10 @@
-// Module ID: 13424
-// Function ID: 13425
+// Module ID: 13427
+// Function ID: 13428
 // Name: ScreenArrowIcon
 // Dependencies: [19, 21, 575, 5599, 10959, 2]
 // Exports: ScreenArrowIcon
 
-// Module 13424 (ScreenArrowIcon)
+// Module 13427 (ScreenArrowIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;

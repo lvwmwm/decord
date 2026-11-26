@@ -1,9 +1,9 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17569
+// Function ID: 17570
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 6619, 6553, 21, 4913, 575, 1186, 8147, 7236, 11162, 11677, 4935, 5122, 504, 16731, 2168, 6671, 17566, 11, 5529, 17567, 5477, 9454, 9455, 5504, 9743, 10392, 11130, 5574, 13510, 1112, 17569, 2]
+// Dependencies: [19, 17, 6619, 6553, 21, 4913, 575, 1186, 8147, 7236, 11162, 11677, 4935, 5122, 504, 16735, 2168, 6671, 17570, 11, 5529, 17571, 5477, 9454, 9455, 5504, 9743, 10392, 11130, 5574, 13513, 1112, 17573, 2]
 
-// Module 17565 (MessagesItemChannelContent)
+// Module 17569 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -19,9 +19,9 @@ import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9454 */;
 import BotTagDefault from "BotTag" /* 10392 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 11162 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 11677 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13510 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 16731 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 17567 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13513 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 16735 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 17571 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6619 */;
 import Fragment from "Fragment" /* 21 */;
@@ -171,8 +171,8 @@ const memoResult = react.memo(function MessagesItemChannelContent(channel) {
   if (tmp12) {
     tmp12 = !tmp3(6671)(channel.id);
   }
-  const useRelativeTimestamp = channel(17566).useRelativeTimestamp;
-  channel(17566);
+  const useRelativeTimestamp = channel(17570).useRelativeTimestamp;
+  channel(17570);
   let id = stateFromStores;
   const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
   SnowflakeUtilsDefault;
@@ -318,7 +318,7 @@ const memoResult = react.memo(function MessagesItemChannelContent(channel) {
       const tmp43 = closure_8;
       if (waveShouldShow) {
         const obj23 = { wavePressed, hasNameplate };
-        tmp22Result8 = tmp22(tmp3(17569), obj23);
+        tmp22Result8 = tmp22(tmp3(17573), obj23);
       }
       const obj24 = { children: items9 };
       items9[1] = tmp22Result8;

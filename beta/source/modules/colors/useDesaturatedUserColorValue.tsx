@@ -1,10 +1,10 @@
-// Module ID: 15958
-// Function ID: 15959
+// Module ID: 15962
+// Function ID: 15963
 // Name: useDesaturatedUserColorValue
 // Dependencies: [19, 4914, 504, 8085, 1089, 2]
 // Exports: default
 
-// Module 15958 (useDesaturatedUserColorValue)
+// Module 15962 (useDesaturatedUserColorValue)
 import react from "react" /* 19 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import _modDef8085 from "module_8085" /* 8085 */;

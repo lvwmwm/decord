@@ -1,20 +1,20 @@
-// Module ID: 17992
-// Function ID: 17993
+// Module ID: 17996
+// Function ID: 17997
 // Name: VoicePanelDockSlot
-// Dependencies: [19, 17, 16481, 13313, 21, 11780, 1653, 10603, 11754, 17993, 17995, 18050, 5514, 12830, 11959, 5094, 11775, 504, 2]
+// Dependencies: [19, 17, 16485, 13316, 21, 11780, 1653, 10603, 11754, 17997, 17999, 18054, 5514, 12833, 11959, 5094, 11775, 504, 2]
 
-// Module 17992 (VoicePanelDockSlot)
+// Module 17996 (VoicePanelDockSlot)
 import _mod1653 from "module_1653" /* 1653 */;
 import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5094 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11775 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11780 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13313 */;
-import VoicePanelDockGlow from "VoicePanelDockGlow" /* 17993 */;
-import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 18050 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13316 */;
+import VoicePanelDockGlow from "VoicePanelDockGlow" /* 17997 */;
+import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 18054 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestDockStore from "QuestDockStore" /* 16481 */;
+import QuestDockStore from "QuestDockStore" /* 16485 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let tmp6;
 const _modDef1653 = tmp(1653);
 const spring_spring = tmp(5514);
 const useStateFromSharedValueDefault = tmp(10603);
-const VoicePanelDockDefault = tmp(17995);
+const VoicePanelDockDefault = tmp(17999);
 function VoicePanelDockSlotDock(micLive) {
   let dockMinimizeProgress;
   let dockTouched;
@@ -389,7 +389,7 @@ let closure_21 = { code: "(function VoicePanelDockSlotTsx9(){let[dockHeight,shee
 const memoResult = react.memo(function VoicePanelDockSlot(placement) {
   let tmp7Result;
   placement = placement.placement;
-  const obj = placement(12830);
+  const obj = placement(12833);
   const isMobileRTCV2Enabled = obj.useIsMobileRTCV2Enabled("VoicePanelDockSlot");
   const tmp2 = useVoicePanelDockState();
   const obj2 = placement(11959);

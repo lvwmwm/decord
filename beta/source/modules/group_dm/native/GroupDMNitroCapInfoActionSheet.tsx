@@ -1,10 +1,10 @@
-// Module ID: 13064
-// Function ID: 13065
+// Module ID: 13067
+// Function ID: 13068
 // Name: GroupDMNitroCapInfoActionSheet
 // Dependencies: [19, 17, 12067, 21, 4913, 575, 5127, 5141, 5504, 1112, 5511, 2]
 // Exports: default
 
-// Module 13064 (GroupDMNitroCapInfoActionSheet)
+// Module 13067 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;

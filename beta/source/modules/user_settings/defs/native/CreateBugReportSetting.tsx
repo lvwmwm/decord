@@ -1,16 +1,16 @@
-// Module ID: 17209
-// Function ID: 17210
+// Module ID: 17213
+// Function ID: 17214
 // Name: CreateBugReportSetting
-// Dependencies: [1360, 1361, 11214, 504, 1378, 11942, 1112, 16989, 17196, 2]
+// Dependencies: [1360, 1361, 11214, 504, 1378, 11942, 1112, 16993, 17200, 2]
 
-// Module 17209 (CreateBugReportSetting)
+// Module 17213 (CreateBugReportSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1361 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import BugReportManagerDefault from "BugReportManager" /* 11214 */;
-import WrenchIcon from "WrenchIcon" /* 16989 */;
-import BugReporterSetting from "BugReporterSetting" /* 17196 */;
+import WrenchIcon from "WrenchIcon" /* 16993 */;
+import BugReporterSetting from "BugReporterSetting" /* 17200 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1360 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;

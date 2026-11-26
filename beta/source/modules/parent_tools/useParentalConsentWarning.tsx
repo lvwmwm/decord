@@ -1,12 +1,12 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 16180
+// Function ID: 16181
 // Name: useParentalConsentWarning
-// Dependencies: [16177, 504, 2]
+// Dependencies: [16181, 504, 2]
 // Exports: useParentalConsentWarning
 
-// Module 16176 (useParentalConsentWarning)
+// Module 16180 (useParentalConsentWarning)
 import get_initialized from "get initialized" /* 504 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 16177 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 16181 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/useParentalConsentWarning.tsx");

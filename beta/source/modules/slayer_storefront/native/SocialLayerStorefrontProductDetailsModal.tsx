@@ -350,7 +350,7 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
   let tmp43;
   let tmp70;
   let type;
-  const f95408 = () => {
+  const f95415 = () => {
     let result;
     let applicationId1;
     if (stateFromStores != null) {
@@ -473,9 +473,9 @@ function SocialLayerStorefrontProductDetailsModal(skuId) {
     track(SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, obj);
   }, items5);
   const items6 = [stateFromStores, stateFromStores2];
-  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f95408, items6), 2);
+  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f95415, items6), 2);
   let num = 0;
-  mobileStoreFront(stateFromStores.useMemo(f95408, items6), 2);
+  mobileStoreFront(stateFromStores.useMemo(f95415, items6), 2);
   if (first < arr9.length) {
     num = first;
   }

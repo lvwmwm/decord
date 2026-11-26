@@ -1,10 +1,10 @@
-// Module ID: 13790
-// Function ID: 13791
+// Module ID: 13793
+// Function ID: 13794
 // Name: ConjureProjectIcon
 // Dependencies: [19, 17, 21, 4913, 575, 11879, 5600, 1412, 11876, 5477, 671, 12325, 2]
 // Exports: ConjureNewProjectIcon, default
 
-// Module 13790 (ConjureProjectIcon)
+// Module 13793 (ConjureProjectIcon)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;

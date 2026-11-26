@@ -1,17 +1,17 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 14542
+// Function ID: 14543
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 4759, 21, 4913, 575, 14013, 14540, 14541, 14542, 14537, 14543, 14547, 14551, 1112, 14009, 9087, 2]
+// Dependencies: [19, 17, 4759, 21, 4913, 575, 14016, 14543, 14544, 14545, 14540, 14546, 14550, 14554, 1112, 14012, 9087, 2]
 // Exports: default
 
-// Module 14539 (BadgeDirectoryNuxCoachmark)
+// Module 14542 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 14013 */;
-import _modDef14540 from "module_14540" /* 14540 */;
-import _modDef14541 from "module_14541" /* 14541 */;
-import _modDef14542 from "module_14542" /* 14542 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 14016 */;
+import _modDef14543 from "module_14543" /* 14543 */;
+import _modDef14544 from "module_14544" /* 14544 */;
+import _modDef14545 from "module_14545" /* 14545 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -30,14 +30,14 @@ function NoProgressGraphic() {
   const obj = { style: items, children: items1 };
   items = [, ];
   ({ graphicRow: arr[0], badgeGraphicRow: arr[1] } = closure_9());
-  const obj2 = { url: _modDef14540, height: 44 };
+  const obj2 = { url: _modDef14543, height: 44 };
   closure_9();
   const tmp2 = BadgeArtImageDefault;
   items1 = [metroRequire(tmp2, obj2), , ];
-  const obj3 = { url: _modDef14541, height: 72 };
+  const obj3 = { url: _modDef14544, height: 72 };
   const tmp3 = BadgeArtImageDefault;
   items1[1] = metroRequire(tmp3, obj3);
-  const obj4 = { url: _modDef14542, height: 44 };
+  const obj4 = { url: _modDef14545, height: 44 };
   const tmp4 = BadgeArtImageDefault;
   items1[2] = metroRequire(tmp4, obj4);
   return metroImportDefault(View, obj);

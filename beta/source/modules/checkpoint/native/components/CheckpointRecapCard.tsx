@@ -1,24 +1,24 @@
-// Module ID: 12783
-// Function ID: 12784
+// Module ID: 12784
+// Function ID: 12785
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 10116, 10119, 12510, 5993, 6335, 1653, 12521, 12525, 2]
+// Dependencies: [19, 17, 21, 575, 10116, 10119, 12540, 5993, 6335, 1653, 12508, 12512, 2]
 // Exports: default
 
-// Module 12783 (CheckpointRecapCard)
+// Module 12784 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6335 */;
 import useCheckpointCharacterImagesDefault from "useCheckpointCharacterImages" /* 10116 */;
 import useCheckpointCompositeRevealStyleDefault from "useCheckpointCompositeRevealStyle" /* 10119 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12510 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12540 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const _modDef1653 = tmp(1653);
-const CheckpointCardFrameDefault = tmp(12521);
-const CheckpointShareCardYearDefault = tmp(12525);
+const CheckpointCardFrameDefault = tmp(12508);
+const CheckpointShareCardYearDefault = tmp(12512);
 let View = react_native.View;
 const jsx = Fragment.jsx;
 const rect = { size: 240, top: nativeDefault.space.PX_16, left: -20 };
@@ -62,7 +62,7 @@ export default function CheckpointRecapCard(character) {
     return checkpointCharacterAccessibilityLabel;
   }, items);
   View = _modDef1653.View;
-  ({ path: character(12525).YEAR_PATH, x: 200 - character(12525).YEAR_WIDTH, color: primaryBackgroundColor });
+  ({ path: character(12512).YEAR_PATH, x: 200 - character(12512).YEAR_WIDTH, color: primaryBackgroundColor });
   CheckpointCardFrameDefault;
   CheckpointShareCardYearDefault;
   const tmp13 = <View style={tmp4}>{null}</View>;

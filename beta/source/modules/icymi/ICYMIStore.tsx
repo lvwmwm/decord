@@ -41,7 +41,7 @@ let closure_24;
 let closure_25;
 let metroImportAll;
 let metroImportDefault;
-const f96486 = (id) => id.id;
+const f96493 = (id) => id.id;
 function handleDiscoverSessionReset() {
   const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
   discoverRequestGuard.resetSession();
@@ -517,7 +517,7 @@ function getNewUnreadItems(arr10, channelId) {
 }
 function maybeFilterChannelItems(channelId, score) {
   let closure_30;
-  const f96501 = (data) => {
+  const f96508 = (data) => {
     obj = channelId(dependencyMap[22]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -530,17 +530,17 @@ function maybeFilterChannelItems(channelId, score) {
   const numberToCustomScoreResult = obj.numberToCustomScore(score);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = channelId;
-    dehydratedItems = dehydratedItems.filter(f96501);
-    closure_48 = closure_48.filter(f96501);
-    closure_49 = closure_49.filter(f96501);
-    closure_33 = closure_33.filter(f96501);
+    dehydratedItems = dehydratedItems.filter(f96508);
+    closure_48 = closure_48.filter(f96508);
+    closure_49 = closure_49.filter(f96508);
+    closure_33 = closure_33.filter(f96508);
     _require = channelId;
-    closure_34 = closure_34.filter(f96501);
+    closure_34 = closure_34.filter(f96508);
   }
 }
 function maybeFilterGuildItems(guildId, guildScore) {
   let closure_30;
-  const f96502 = (data) => {
+  const f96509 = (data) => {
     obj = guildId(dependencyMap[22]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
@@ -553,12 +553,12 @@ function maybeFilterGuildItems(guildId, guildScore) {
   const numberToCustomScoreResult = obj.numberToCustomScore(guildScore);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = guildId;
-    dehydratedItems = dehydratedItems.filter(f96502);
-    closure_48 = closure_48.filter(f96502);
-    closure_49 = closure_49.filter(f96502);
-    closure_33 = closure_33.filter(f96502);
+    dehydratedItems = dehydratedItems.filter(f96509);
+    closure_48 = closure_48.filter(f96509);
+    closure_49 = closure_49.filter(f96509);
+    closure_33 = closure_33.filter(f96509);
     _require = guildId;
-    closure_34 = closure_34.filter(f96502);
+    closure_34 = closure_34.filter(f96509);
   }
 }
 function handleReaction(colors) {
@@ -658,7 +658,7 @@ function handleAck(channelId) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        new Set(items1.map(f96486));
+        new Set(items1.map(f96493));
         const substr = arr9.slice(0, 20);
         flag = substr.filter((id) => set1.has(id.id)).length >= 3;
       }
@@ -1355,7 +1355,7 @@ obj = {
           const _Set = Set;
           const self2 = this;
           const self3 = this;
-          const set1 = new Set(arr10.map(f96486));
+          const set1 = new Set(arr10.map(f96493));
           const substr = arr14.slice(0, 20);
           flag2 = substr.filter((id) => set1.has(id.id)).length >= 3;
         }

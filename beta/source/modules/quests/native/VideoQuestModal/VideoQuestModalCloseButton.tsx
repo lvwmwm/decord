@@ -1,10 +1,10 @@
-// Module ID: 16542
-// Function ID: 16543
+// Module ID: 16546
+// Function ID: 16547
 // Name: VideoQuestModalCloseButton
 // Dependencies: [21, 575, 7030, 1112, 7151, 2]
 // Exports: default
 
-// Module 16542 (VideoQuestModalCloseButton)
+// Module 16546 (VideoQuestModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

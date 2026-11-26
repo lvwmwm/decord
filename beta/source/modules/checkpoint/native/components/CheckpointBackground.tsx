@@ -1,10 +1,10 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12727
+// Function ID: 12728
 // Name: CheckpointBackground
 // Dependencies: [19, 5969, 1071, 21, 4913, 5468, 5600, 12502, 2]
 // Exports: default
 
-// Module 12511 (CheckpointBackground)
+// Module 12727 (CheckpointBackground)
 import Constants from "Constants" /* 1071 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import react from "react" /* 19 */;

@@ -1,19 +1,19 @@
-// Module ID: 18750
-// Function ID: 18751
+// Module ID: 18754
+// Function ID: 18755
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 8576, 21, 4913, 575, 18749, 1653, 18751, 12, 5504, 1112, 13200, 18752, 2]
+// Dependencies: [19, 17, 8576, 21, 4913, 575, 18753, 1653, 18755, 12, 5504, 1112, 13203, 18756, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 18750 (MediaGridPlaceholder)
+// Module 18754 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef1653 from "module_1653" /* 1653 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13200 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 18749 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 18751 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13203 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 18753 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 18755 */;
 import react from "react" /* 19 */;
 import SearchConstants from "SearchConstants" /* 8576 */;
 import Fragment_mod from "Fragment" /* 21 */;

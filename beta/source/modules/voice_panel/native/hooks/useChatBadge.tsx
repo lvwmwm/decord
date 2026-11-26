@@ -1,10 +1,10 @@
-// Module ID: 19279
-// Function ID: 19280
+// Module ID: 19283
+// Function ID: 19284
 // Name: useChatBadge
 // Dependencies: [6619, 504, 2]
 // Exports: default
 
-// Module 19279 (useChatBadge)
+// Module 19283 (useChatBadge)
 import ReadStateStore from "ReadStateStore" /* 6619 */;
 import size from "module_2" /* 2 */;
 

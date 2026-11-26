@@ -1,10 +1,10 @@
-// Module ID: 12973
-// Function ID: 12974
+// Module ID: 12976
+// Function ID: 12977
 // Name: useAnimatedScrollLock
 // Dependencies: [19, 1378, 1653, 1706, 2]
 // Exports: useAnimatedScrollLock
 
-// Module 12973 (useAnimatedScrollLock)
+// Module 12976 (useAnimatedScrollLock)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import react from "react" /* 19 */;

@@ -1,14 +1,14 @@
-// Module ID: 19216
-// Function ID: 19217
+// Module ID: 19220
+// Function ID: 19221
 // Name: FramePanelUI
-// Dependencies: [19, 21, 19217, 19218, 19226, 19193, 19215, 2]
+// Dependencies: [19, 21, 19221, 19222, 19230, 19197, 19219, 2]
 // Exports: default
 
-// Module 19216 (FramePanelUI)
+// Module 19220 (FramePanelUI)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelUI from "ActivityPanelUI" /* 19193 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19215 */;
-import FramePanelSystemUIManagerDefault from "FramePanelSystemUIManager" /* 19226 */;
+import ActivityPanelUI from "ActivityPanelUI" /* 19197 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19219 */;
+import FramePanelSystemUIManagerDefault from "FramePanelSystemUIManager" /* 19230 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -17,9 +17,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = jsx;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 19217;
+    tmp4 = 19221;
   } else {
-    tmp4 = 19218;
+    tmp4 = 19222;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);

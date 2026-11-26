@@ -1,9 +1,9 @@
-// Module ID: 17782
-// Function ID: 17783
+// Module ID: 17786
+// Function ID: 17787
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4845, 1071, 21, 4913, 5504, 575, 563, 7994, 7746, 16488, 7711, 1186, 17783, 1112, 5600, 17784, 5512, 2]
+// Dependencies: [19, 17, 4845, 1071, 21, 4913, 5504, 575, 563, 7994, 7746, 16492, 7711, 1186, 17787, 1112, 5600, 17788, 5512, 2]
 
-// Module 17782 (ChannelsEmpty)
+// Module 17786 (ChannelsEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -11,8 +11,8 @@ import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 7746 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7994 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17783 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17784 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17787 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17788 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function ChannelsEmpty(guild) {
   }, items3);
   const obj3 = { style: items4, children: items5 };
   items4 = [tmp.wrapper, ];
-  const obj2 = guild(16488);
+  const obj2 = guild(16492);
   items4[1] = { paddingBottom: obj2.useYouBarTotalHeight(16) };
   ({ paddingBottom: obj2.useYouBarTotalHeight(16) });
   if (canCustomizeGuild) {

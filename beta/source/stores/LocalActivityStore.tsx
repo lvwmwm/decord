@@ -1,7 +1,7 @@
 // Module ID: 6921
 // Function ID: 6922
 // Name: LocalActivityStore
-// Dependencies: [32, 4761, 2164, 2139, 6922, 6923, 6896, 1230, 6400, 4762, 2158, 14766, 4816, 5656, 1071, 4738, 9049, 5652, 12, 14767, 14768, 6447, 1343, 7074, 12190, 1404, 504, 572, 2]
+// Dependencies: [32, 4761, 2164, 2139, 6922, 6923, 6896, 1230, 6400, 4762, 2158, 14769, 4816, 5656, 1071, 4738, 9049, 5652, 12, 14770, 14771, 6447, 1343, 7074, 12190, 1404, 504, 572, 2]
 
 // Module 6921 (LocalActivityStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -23,7 +23,7 @@ import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import DetectableGameStore from "DetectableGameStore" /* 2158 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 14766 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 14769 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import SessionsStore from "SessionsStore" /* 5656 */;
 import size from "module_2" /* 2 */;

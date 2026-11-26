@@ -1,10 +1,10 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13015
+// Function ID: 13016
 // Name: ActivityDetailContent
-// Dependencies: [5, 32, 19, 17, 5556, 2142, 1071, 21, 575, 4913, 5504, 12111, 13013, 12928, 12922, 5565, 10679, 1112, 1255, 10681, 5511, 12195, 10698, 7520, 7539, 10093, 8150, 504, 7055, 7556, 12206, 7221, 6864, 13014, 13015, 13016, 7762, 12954, 13018, 7038, 13020, 2]
+// Dependencies: [5, 32, 19, 17, 5556, 2142, 1071, 21, 575, 4913, 5504, 12111, 13016, 12931, 12925, 5565, 10679, 1112, 1255, 10681, 5511, 12195, 10698, 7520, 7539, 10093, 8150, 504, 7055, 7556, 12206, 7221, 6864, 13017, 13018, 13019, 7762, 12957, 13021, 7038, 13023, 2]
 // Exports: default
 
-// Module 13012 (ActivityDetailContent)
+// Module 13015 (ActivityDetailContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -17,12 +17,12 @@ import AppLauncherUtils from "AppLauncherUtils" /* 10679 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10681 */;
 import AppLauncherContext from "AppLauncherContext" /* 12111 */;
 import DeveloperActivityShelfActionCreatorsAll from "DeveloperActivityShelfActionCreators" /* 12206 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 12928 */;
-import HeroMediaDefault from "HeroMedia" /* 12954 */;
-import useIsPrimaryEntryPointDisabledDefault from "useIsPrimaryEntryPointDisabled" /* 13015 */;
-import useShowTryItOutButtonInAppLauncherDefault from "useShowTryItOutButtonInAppLauncher" /* 13016 */;
-import DetailsHeaderDefault from "DetailsHeader" /* 13018 */;
-import getItemSubtitleForMaxPlayersDefault from "getItemSubtitleForMaxPlayers" /* 13020 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 12931 */;
+import HeroMediaDefault from "HeroMedia" /* 12957 */;
+import useIsPrimaryEntryPointDisabledDefault from "useIsPrimaryEntryPointDisabled" /* 13018 */;
+import useShowTryItOutButtonInAppLauncherDefault from "useShowTryItOutButtonInAppLauncher" /* 13019 */;
+import DetailsHeaderDefault from "DetailsHeader" /* 13021 */;
+import getItemSubtitleForMaxPlayersDefault from "getItemSubtitleForMaxPlayers" /* 13023 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -336,9 +336,9 @@ export default function ActivityDetailContent(application) {
       bot = getOrFetchApplication.bot;
     }
     const obj9 = { context, applicationId: application.id };
-    const tmp2Result9 = application(12928);
+    const tmp2Result9 = application(12931);
     const activityAction = tmp2Result9.useActivityAction(obj9);
-    const tmp2Result10 = application(13014);
+    const tmp2Result10 = application(13017);
     const delayedSwapToActivityActionLeave = tmp2Result10.useDelayedSwapToActivityActionLeave(activityAction);
     const obj10 = { context, application, activityAction: delayedSwapToActivityActionLeave };
     ({ reason, disabled } = useIsPrimaryEntryPointDisabledDefault(obj10));
@@ -423,8 +423,8 @@ export default function ActivityDetailContent(application) {
     const obj29 = { icon: closure_11(application(7038).GroupIcon, obj30), tagName: getItemSubtitleForMaxPlayersShort(num5), accessibilityLabel: tmp5Result4(num) };
     num5 = num;
     obj30 = { style: tmp.tagIcon, size: "xs" };
-    getItemSubtitleForMaxPlayersShort = application(13020).getItemSubtitleForMaxPlayersShort;
-    application(13020);
+    getItemSubtitleForMaxPlayersShort = application(13023).getItemSubtitleForMaxPlayersShort;
+    application(13023);
     const tmp51 = Tag;
     if (num == null) {
       num5 = 0;

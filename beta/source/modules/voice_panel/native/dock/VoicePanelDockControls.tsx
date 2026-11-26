@@ -1,9 +1,9 @@
-// Module ID: 18024
-// Function ID: 18025
+// Module ID: 18028
+// Function ID: 18029
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4762, 2131, 6495, 11773, 1071, 21, 4913, 575, 504, 11014, 10990, 5477, 5129, 7591, 1112, 9682, 9684, 11016, 6529, 8615, 13421, 11754, 18021, 18025, 18045, 18048, 2]
+// Dependencies: [19, 17, 4762, 2131, 6495, 11773, 1071, 21, 4913, 575, 504, 11014, 10990, 5477, 5129, 7591, 1112, 9682, 9684, 11016, 6529, 8615, 13424, 11754, 18025, 18029, 18049, 18052, 2]
 
-// Module 18024 (VoicePanelDockControls)
+// Module 18028 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
@@ -16,10 +16,10 @@ import AssetRegistryDefault from "AssetRegistry" /* 8615 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 11014 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11754 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11773 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13421 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 18021 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 18025 */;
-import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 18048 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13424 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 18025 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 18029 */;
+import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 18052 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
@@ -140,7 +140,7 @@ const memoResult = react.memo(function VoicePanelDockControls(measureGlowOffset)
   const tmp8 = authStore;
   if (obj.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK)) {
     const obj3 = { measureGlowOffset };
-    tmp10Result = tmp10(tmp2(18045), obj3);
+    tmp10Result = tmp10(tmp2(18049), obj3);
     tmp14 = tmp10;
   } else {
     const obj4 = { measureGlowOffset, hideWhilePressed: true, style: items1, children: React4(DockMuteButton, obj6) };

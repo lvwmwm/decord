@@ -1,15 +1,15 @@
-// Module ID: 16713
-// Function ID: 16714
+// Module ID: 16717
+// Function ID: 16718
 // Name: SettingsAppearanceGradientBackground
-// Dependencies: [19, 17, 16687, 21, 1653, 5468, 16714, 5123, 5126, 575, 16715, 2]
+// Dependencies: [19, 17, 16691, 21, 1653, 5468, 16718, 5123, 5126, 575, 16719, 2]
 
-// Module 16713 (SettingsAppearanceGradientBackground)
+// Module 16717 (SettingsAppearanceGradientBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import LinearGradient from "LinearGradient" /* 5468 */;
-import SettingsAppearancePickerUtils from "SettingsAppearancePickerUtils" /* 16714 */;
+import SettingsAppearancePickerUtils from "SettingsAppearancePickerUtils" /* 16718 */;
 import react from "react" /* 19 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16687 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16691 */;
 import module_1653_mod from "module_1653" /* 1653 */;
 import size_mod from "module_2" /* 2 */;
 

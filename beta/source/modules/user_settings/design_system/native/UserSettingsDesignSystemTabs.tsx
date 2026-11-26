@@ -1,10 +1,10 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17240
+// Function ID: 17241
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4913, 575, 5504, 5477, 4910, 7597, 7586, 5929, 13534, 13717, 13537, 5511, 7556, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 5504, 5477, 4910, 7597, 7586, 5929, 13537, 13720, 13540, 5511, 7556, 2]
 // Exports: default
 
-// Module 17236 (UserSettingsDesignSystemTabs)
+// Module 17240 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 575 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7597 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -101,17 +101,17 @@ export default function UserSettingsDesignSystemTabs() {
   items1[1] = obj3.hexWithOpacity(token, 0);
   const obj4 = { style: tmp15.container, ref, onLayout, children: closure_7(Stack, obj7) };
   Stack = first(5929).Stack;
-  const items2 = [closure_8(first(13534).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  const items2 = [closure_8(first(13537).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp21Result = first2;
   const tmp22 = closure_6;
   if (tmp21Result) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp21Result = tmp21(tmp(13717), obj5);
+    tmp21Result = tmp21(tmp(13720), obj5);
   }
   obj7 = { spacing: 24, children: items3 };
   items2[1] = tmp21Result;
   const obj6 = { children: closure_8(closure_5, obj4) };
-  items3 = [closure_7(closure_5, { children: items2 }), closure_8(first(13537).SegmentedControlPages, { state: segmentedControlState }), , ];
+  items3 = [closure_7(closure_5, { children: items2 }), closure_8(first(13540).SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj8 = { spacing: 8, direction: "horizontal", children: items4 };
   const Stack2 = tmp18(5929).Stack;
   items4 = [, ];

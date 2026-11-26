@@ -1,10 +1,10 @@
-// Module ID: 17305
-// Function ID: 17306
+// Module ID: 17309
+// Function ID: 17310
 // Name: HeroBlockOrbsArcadeHeader
-// Dependencies: [32, 19, 17, 4914, 9956, 1071, 21, 575, 9972, 17306, 4913, 9955, 6563, 7865, 5477, 671, 4910, 504, 16404, 1501, 5519, 9254, 5600, 17307, 5468, 5504, 1112, 5511, 5122, 4920, 4974, 2]
+// Dependencies: [32, 19, 17, 4914, 9956, 1071, 21, 575, 9972, 17310, 4913, 9955, 6563, 7865, 5477, 671, 4910, 504, 16408, 1501, 5519, 9254, 5600, 17311, 5468, 5504, 1112, 5511, 5122, 4920, 4974, 2]
 // Exports: default
 
-// Module 17305 (HeroBlockOrbsArcadeHeader)
+// Module 17309 (HeroBlockOrbsArcadeHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import shared from "shared" /* 4920 */;
@@ -15,7 +15,7 @@ import QuestContent from "QuestContent" /* 6563 */;
 import inlineStyles from "inlineStyles" /* 7865 */;
 import QuestUtils from "QuestUtils" /* 9955 */;
 import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9956 */;
-import _modDef17306 from "module_17306" /* 17306 */;
+import _modDef17310 from "module_17310" /* 17310 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -218,7 +218,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
         preventsDisplaySleepDuringVideoPlayback: false,
         importantForAccessibility: "no-hide-descendants"
       };
-      obj9 = { uri: require("module_17306") };
+      obj9 = { uri: require("module_17310") };
       const VideoComponent = tmp2(tmp3[21]).VideoComponent;
       tmp28 = !isInView;
       if (isInView) {
@@ -278,7 +278,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
     return closure_11(fontScale, obj5);
   }
   const obj21 = { source: obj22, style: tmp.image, accessible: false };
-  obj22 = { uri: require("module_17307") };
+  obj22 = { uri: require("module_17311") };
   const tmp4Result = require("FastImage");
   tmp26Result = tmp26(tmp4Result, obj21);
 }
@@ -290,7 +290,7 @@ const QuestHomeSection = QuestHomeNavigationStore.QuestHomeSection;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let c13 = 289;
 const PX_16 = nativeDefault.space.PX_16;
-const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef17306);
+const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef17310);
 const PX_48 = nativeDefault.space.PX_48;
 const ellipse = { cx: 85.5, cy: 267.5, rx: 329, ry: 217, rotation: 63 };
 const ellipse2 = { cx: 67, cy: 231, rx: 185, ry: 155 };

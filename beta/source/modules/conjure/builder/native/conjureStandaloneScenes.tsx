@@ -1,10 +1,10 @@
-// Module ID: 18251
-// Function ID: 18252
+// Module ID: 18255
+// Function ID: 18256
 // Name: conjureStandaloneScenes
 // Dependencies: [1071, 4769, 1098, 12293, 2]
 // Exports: projectOpener, pushServerProjectScreen, takeServerProjectEntryPoint
 
-// Module 18251 (conjureStandaloneScenes)
+// Module 18255 (conjureStandaloneScenes)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
 import ChannelConstants from "ChannelConstants" /* 4769 */;

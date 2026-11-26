@@ -1,10 +1,10 @@
-// Module ID: 15890
-// Function ID: 15891
+// Module ID: 15894
+// Function ID: 15895
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8132, 1386, 8137, 1071, 5142, 1388, 21, 4913, 575, 5129, 8659, 15891, 8658, 1112, 7237, 7235, 5617, 7047, 14012, 5504, 13993, 7600, 7392, 1653, 5123, 5126, 14601, 1706, 8660, 5173, 4922, 13958, 1628, 504, 2173, 7520, 7539, 5472, 9099, 10510, 8136, 1255, 8142, 5595, 5141, 10093, 15892, 7020, 7515, 5145, 2]
+// Dependencies: [19, 17, 8132, 1386, 8137, 1071, 5142, 1388, 21, 4913, 575, 5129, 8659, 15895, 8658, 1112, 7237, 7235, 5617, 7047, 14015, 5504, 13996, 7600, 7392, 1653, 5123, 5126, 14604, 1706, 8660, 5173, 4922, 13961, 1628, 504, 2173, 7520, 7539, 5472, 9099, 10510, 8136, 1255, 8142, 5595, 5141, 10093, 15896, 7020, 7515, 5145, 2]
 // Exports: default
 
-// Module 15890 (CustomizeBadgesSheet)
+// Module 15894 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -29,10 +29,10 @@ import ContextMenuConstants from "ContextMenuConstants" /* 8659 */;
 import ContextMenuState from "ContextMenuState" /* 8660 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10510 */;
-import BadgeUtils from "BadgeUtils" /* 13993 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 14012 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14601 */;
-import BadgeGrid from "BadgeGrid" /* 15891 */;
+import BadgeUtils from "BadgeUtils" /* 13996 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 14015 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14604 */;
+import BadgeGrid from "BadgeGrid" /* 15895 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;
@@ -98,7 +98,7 @@ function BadgeVisibilityMenu(badge) {
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(15891).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(15895).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";

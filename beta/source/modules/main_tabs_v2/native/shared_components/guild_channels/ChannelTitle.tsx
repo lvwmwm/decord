@@ -1,9 +1,9 @@
-// Module ID: 18763
-// Function ID: 18764
+// Module ID: 18767
+// Function ID: 18768
 // Name: guild_channels/ChannelTitle
 // Dependencies: [19, 6553, 21, 4913, 575, 11135, 5504, 2]
 
-// Module 18763 (guild_channels/ChannelTitle)
+// Module 18767 (guild_channels/ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ReadStateConstants from "ReadStateConstants" /* 6553 */;

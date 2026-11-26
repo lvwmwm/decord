@@ -1,107 +1,32 @@
 // Module ID: 13743
 // Function ID: 13744
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 4957, 4954]
+// Dependencies: [4957, 13744, 13745, 13746, 13747]
 
 // Module 13743
-import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import hasOwnProperty from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
-import module_4954_mod from "module_4954" /* 4954 */;
+import MemoryRouter from "MemoryRouter" /* 4957 */;
+import _modDef13744 from "module_13744" /* 13744 */;
+import _modDef13745 from "module_13745" /* 13745 */;
+import _modDef13746 from "module_13746" /* 13746 */;
+import NativeRouterDefault from "NativeRouter" /* 13747 */;
 
-const require = globalThis.__r;
-let _require;
+const MemoryRouter_export = MemoryRouter.MemoryRouter;
 
-let items1;
-let module_4954;
-let oneOfType;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let closure_2 = ["component", "to", "replace"];
-const TouchableHighlight = react_native.TouchableHighlight;
-const jsx = Fragment.jsx;
-class Link {
-  constructor() {
-    let constructResult;
-    const self = this;
-    const items = [...arguments];
-    let closure_0;
-    const tmp = _classCallCheck(this, Link);
-    const items1 = [...items];
-    const obj = _getPrototypeOf(Link);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = hasOwnProperty;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.handlePress = (defaultPrevented, str) => {
-      if (props.props.onPress) {
-        props = tmp.props;
-        props.onPress(defaultPrevented);
-      }
-      if (!defaultPrevented.defaultPrevented) {
-        const to = str.to;
-        if (props.props.replace) {
-          const replaced = str.replace(to);
-        } else {
-          str.push(to);
-        }
-      }
-    };
-    return tmp3Result;
-  }
-}
-_inherits(Link, react.Component);
-const entry = {
-  key: "render",
-  value: function render() {
-    let replace;
-    let to;
-    const self = this;
-    const props = this.props;
-    ({ component: dependencyMap, to, replace } = props);
-    _require = _objectWithoutProperties(props, self);
-    return jsx(require("MemoryRouter").__HistoryContext.Consumer, {
-      children(arg0) {
-        closure_0 = arg0;
-        const merged = Object.assign(closure_0);
-        return <closure_1 onPress={function onPress(arg0) {
-          return self.handlePress(arg0, closure_0);
-        }} />;
-      }
-    });
-  }
-};
-let items = [entry];
-const importDefaultResultResult = _createClass(Link, items);
-importDefaultResultResult.defaultProps = { component: TouchableHighlight, replace: false };
-let obj = { onPress: module_4954.func, component: module_4954.elementType, replace: module_4954.bool, to: oneOfType(items1) };
-module_4954 = module_4954_mod;
-oneOfType = module_4954.oneOfType;
-items1 = [module_4954.string, module_4954.object];
-importDefaultResultResult.propTypes = obj;
-
-export default importDefaultResultResult;
+export { MemoryRouter_export as MemoryRouter };
+export const Prompt = MemoryRouter.Prompt;
+export const Redirect = MemoryRouter.Redirect;
+export const Route = MemoryRouter.Route;
+export const Router = MemoryRouter.Router;
+export const StaticRouter = MemoryRouter.StaticRouter;
+export const Switch = MemoryRouter.Switch;
+export const generatePath = MemoryRouter.generatePath;
+export const matchPath = MemoryRouter.matchPath;
+export const withRouter = MemoryRouter.withRouter;
+export const useHistory = MemoryRouter.useHistory;
+export const useLocation = MemoryRouter.useLocation;
+export const useParams = MemoryRouter.useParams;
+export const useRouteMatch = MemoryRouter.useRouteMatch;
+export const BackButton = _modDef13744;
+export const AndroidBackButton = _modDef13744;
+export const DeepLinking = _modDef13745;
+export const Link = _modDef13746;
+export const NativeRouter = NativeRouterDefault;

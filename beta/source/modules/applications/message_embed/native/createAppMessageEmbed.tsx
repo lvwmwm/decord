@@ -1,10 +1,10 @@
-// Module ID: 12804
-// Function ID: 12805
+// Module ID: 12807
+// Function ID: 12808
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1386, 6918, 2164, 1499, 10418, 6659, 12805, 8680, 1112, 12806, 10679, 6917, 10678, 12807, 12808, 1412, 1379, 8393, 12195, 7539, 5565, 5098, 1626, 10700, 7545, 5594, 1254, 2]
+// Dependencies: [32, 1386, 6918, 2164, 1499, 10418, 6659, 12808, 8680, 1112, 12809, 10679, 6917, 10678, 12810, 12811, 1412, 1379, 8393, 12195, 7539, 5565, 5098, 1626, 10700, 7545, 5594, 1254, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 12804 (createAppMessageEmbed)
+// Module 12807 (createAppMessageEmbed)
 import intl7 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import URLUtilsDefault from "URLUtils" /* 1379 */;
@@ -26,10 +26,10 @@ import getFrameSurfaces from "getFrameSurfaces" /* 10678 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 10679 */;
 import ApplicationUtils from "ApplicationUtils" /* 10700 */;
 import GamesActionCreatorsDefault from "GamesActionCreators" /* 12195 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12805 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 12806 */;
-import getPlayInContext from "getPlayInContext" /* 12807 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12808 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12808 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12809 */;
+import getPlayInContext from "getPlayInContext" /* 12810 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1386 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;

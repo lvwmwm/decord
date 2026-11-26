@@ -1,10 +1,10 @@
-// Module ID: 19188
-// Function ID: 19189
+// Module ID: 19192
+// Function ID: 19193
 // Name: ActivityPanelController
-// Dependencies: [32, 19, 2164, 10020, 10845, 4762, 4761, 2144, 5539, 21, 2160, 2145, 19187, 1653, 1706, 9431, 19189, 1628, 1494, 19178, 19190, 10646, 10786, 10859, 19191, 7101, 10789, 5098, 504, 4834, 5560, 6529, 5646, 19192, 10676, 2]
+// Dependencies: [32, 19, 2164, 10020, 10845, 4762, 4761, 2144, 5539, 21, 2160, 2145, 19191, 1653, 1706, 9431, 19193, 1628, 1494, 19182, 19194, 10646, 10786, 10859, 19195, 7101, 10789, 5098, 504, 4834, 5560, 6529, 5646, 19196, 10676, 2]
 // Exports: default
 
-// Module 19188 (ActivityPanelController)
+// Module 19192 (ActivityPanelController)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 2144 */;
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2145 */;
@@ -332,6 +332,6 @@ export default function ActivityPanelController(children) {
       }
     }
   }, items1);
-  return <BaseActivityPanelController context={connectedActivityInTextChannelId(19192)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</BaseActivityPanelController>;
+  return <BaseActivityPanelController context={connectedActivityInTextChannelId(19196)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={EmbeddedActivitiesActionCreatorsAll.updateActivityPanelMode}>{children}</BaseActivityPanelController>;
 };
 export { BaseActivityPanelController };

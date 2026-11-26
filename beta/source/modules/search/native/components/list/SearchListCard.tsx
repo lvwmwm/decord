@@ -1,10 +1,10 @@
-// Module ID: 18774
-// Function ID: 18775
+// Module ID: 18778
+// Function ID: 18779
 // Name: SearchListCard
 // Dependencies: [19, 17, 21, 4913, 575, 1186, 5504, 4969, 5529, 10129, 7689, 1112, 7636, 7047, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 18774 (SearchListCard)
+// Module 18778 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

@@ -1,10 +1,10 @@
-// Module ID: 13211
-// Function ID: 13212
+// Module ID: 13214
+// Function ID: 13215
 // Name: isGuildLikeSearchContext
 // Dependencies: [1071, 2]
 // Exports: isGuildLikeSearchContext
 
-// Module 13211 (isGuildLikeSearchContext)
+// Module 13214 (isGuildLikeSearchContext)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

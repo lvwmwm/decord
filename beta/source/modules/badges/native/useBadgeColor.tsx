@@ -1,10 +1,10 @@
-// Module ID: 14016
-// Function ID: 14017
+// Module ID: 14019
+// Function ID: 14020
 // Name: useBadgeColor
-// Dependencies: [5, 32, 19, 575, 1454, 5033, 14017, 2023, 2]
+// Dependencies: [5, 32, 19, 575, 1454, 5033, 14020, 2023, 2]
 // Exports: useBadgeColor
 
-// Module 14016 (useBadgeColor)
+// Module 14019 (useBadgeColor)
 import nativeDefault from "native" /* 575 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
 import utils_FunctionUtils from "utils/FunctionUtils" /* 5033 */;

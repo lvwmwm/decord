@@ -1,10 +1,10 @@
-// Module ID: 16939
-// Function ID: 16940
+// Module ID: 16943
+// Function ID: 16944
 // Name: ProfileUpdatesNotificationUtils
 // Dependencies: [4858, 1071, 4738, 1255, 2]
 // Exports: onProfileUpdatesNotificationSettingsChanged
 
-// Module 16939 (ProfileUpdatesNotificationUtils)
+// Module 16943 (ProfileUpdatesNotificationUtils)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import UserSettings from "UserSettings" /* 4738 */;

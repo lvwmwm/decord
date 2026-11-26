@@ -1,10 +1,10 @@
-// Module ID: 19563
-// Function ID: 19564
+// Module ID: 19567
+// Function ID: 19568
 // Name: attachJankPanelReporters
-// Dependencies: [4761, 6620, 6623, 6495, 502, 4762, 4816, 5563, 17539, 6629, 19187, 19564, 2]
+// Dependencies: [4761, 6620, 6623, 6495, 502, 4762, 4816, 5563, 17543, 6629, 19191, 19568, 2]
 // Exports: default
 
-// Module 19563 (attachJankPanelReporters)
+// Module 19567 (attachJankPanelReporters)
 import CallConstants from "CallConstants" /* 5563 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
@@ -22,15 +22,15 @@ let c10 = false;
 let result = size.fileFinishedImporting("modules/jank_stats/native/attachJankPanelReporters.native.tsx");
 
 export default function attachJankPanelReporters() {
-  const f1180622 = () => {
+  const f1180732 = () => {
     const tmp = closure_1_1();
     if (tmp !== closure_2) {
       closure_2 = tmp;
-      const obj = voice(f118064[8]);
-      obj.setJankPanelOpen(f118062, tmp);
+      const obj = voice(f118075[8]);
+      obj.setJankPanelOpen(f118073, tmp);
     }
   };
-  const f134071 = (addChangeListener) => addChangeListener.addChangeListener(update);
+  const f134081 = (addChangeListener) => addChangeListener.addChangeListener(update);
   function getVoicePanelFocus() {
     const voicePanelsOpened = state.getState().voicePanelsOpened;
     if (0 === voicePanelsOpened.size) {
@@ -70,7 +70,7 @@ export default function attachJankPanelReporters() {
     c10 = true;
     let str = "voice";
     const voice = "voice";
-    const f118064 = () => {
+    const f118075 = () => {
       state = state.getState();
       return state.isAnyVoicePanelOpen();
     };
@@ -79,21 +79,21 @@ export default function attachJankPanelReporters() {
     let c2 = state.isAnyVoicePanelOpen();
     const isAnyVoicePanelOpenResult = state.isAnyVoicePanelOpen();
     if (c2) {
-      const obj3 = voice(f118064[8]);
+      const obj3 = voice(f118075[8]);
       obj3.setJankPanelOpen("voice", true);
     }
-    const subscription = obj.subscribe(f1180622);
+    const subscription = obj.subscribe(f1180732);
     const items = [c2, , ];
     let tmp8 = ChannelStore;
     items[1] = ChannelStore;
     items[2] = SelectedChannelStore;
     let str2 = "activity";
     const activity = "activity";
-    const f118065 = () => {
-      const obj = activity(f118065[10]);
+    const f118076 = () => {
+      const obj = activity(f118076[10]);
       let result = obj.isConnectedToActivityInText();
       const tmp = activity;
-      const tmp2 = f118065;
+      const tmp2 = f118076;
       if (result) {
         const tmpResult = tmp(tmp2[10]);
         result = tmpResult.isActivityPanelFullscreen();
@@ -102,8 +102,8 @@ export default function attachJankPanelReporters() {
     };
     c2 = undefined;
     let tmp10 = voice;
-    let tmp11 = f118064;
-    let obj4 = voice(f118064[10]);
+    let tmp11 = f118075;
+    let obj4 = voice(f118075[10]);
     let result = obj4.isConnectedToActivityInText();
     const tmp7 = c2;
     if (result) {
@@ -115,8 +115,8 @@ export default function attachJankPanelReporters() {
       const tmp10Result4 = tmp10(tmp11[8]);
       tmp10Result4.setJankPanelOpen("activity", true);
     }
-    let f118062 = f1180622;
-    const item = items.forEach(f134071);
+    let f118073 = f1180732;
+    const item = items.forEach(f134081);
     const isFramePanelFullscreen = tmp10(tmp11[11]).isFramePanelFullscreen;
     let tmp15 = FramesStore;
     const items1 = [FramesStore];
@@ -126,16 +126,16 @@ export default function attachJankPanelReporters() {
       const tmp10Result5 = tmp10(tmp11[8]);
       tmp10Result5.setJankPanelOpen("frame", true);
     }
-    f118062 = f1180622;
-    const item1 = items1.forEach(f134071);
+    f118073 = f1180732;
+    const item1 = items1.forEach(f134081);
     function update() {
-      let obj = voice(f118064[8]);
+      let obj = voice(f118075[8]);
       const result = obj.setJankVoicePanelFocus(getVoicePanelFocus());
     }
     const tmp10Result6 = tmp10(tmp11[8]);
     const result2 = tmp10Result6.setJankVoicePanelFocus(getVoicePanelFocus());
     const subscription1 = obj.subscribe(update);
     const items2 = [ChannelRTCStore, tmp7];
-    const item2 = items2.forEach(f134071);
+    const item2 = items2.forEach(f134081);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 12775
+// Function ID: 12776
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [32, 19, 17, 4914, 12495, 5969, 10118, 21, 575, 4913, 12730, 504, 12775, 12776, 12513, 4969, 6338, 12777, 1653, 1494, 12779, 12514, 1112, 3440, 12544, 12780, 3408, 12781, 2]
+// Dependencies: [32, 19, 17, 4914, 12495, 5969, 10118, 21, 575, 4913, 12730, 504, 12776, 12777, 12720, 4969, 6338, 12778, 1653, 1494, 12780, 12722, 1112, 3440, 12539, 12781, 3408, 12782, 2]
 // Exports: default
 
-// Module 12774 (CheckpointFriendsStatsScreen)
+// Module 12775 (CheckpointFriendsStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
@@ -326,7 +326,7 @@ export default function CheckpointFriendsStatsScreen(arg0) {
       }
       tmp36Result7 = tmp36Result6;
     } else {
-      const obj25 = { animationState, sidekickUser: user3, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: "sa" };
+      const obj25 = { animationState, sidekickUser: user3, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: "analyticsLocations" };
       user3 = undefined;
       const tmp23Result16 = width(height[20]);
       if (stateFromStores1 != null) {

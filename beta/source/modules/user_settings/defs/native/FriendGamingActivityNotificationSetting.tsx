@@ -1,13 +1,13 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 16940
+// Function ID: 16941
 // Name: FriendGamingActivityNotificationSetting
-// Dependencies: [8712, 11942, 1112, 4738, 16937, 2]
+// Dependencies: [8712, 11942, 1112, 4738, 16941, 2]
 
-// Module 16936 (FriendGamingActivityNotificationSetting)
+// Module 16940 (FriendGamingActivityNotificationSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 16937 */;
+import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 16941 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

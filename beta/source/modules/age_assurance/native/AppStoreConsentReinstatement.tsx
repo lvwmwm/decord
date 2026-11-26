@@ -1,14 +1,14 @@
-// Module ID: 19635
-// Function ID: 19636
+// Module ID: 19639
+// Function ID: 19640
 // Name: AppStoreConsentReinstatement
-// Dependencies: [5, 5576, 1386, 3, 19636, 7989, 1378, 7981, 7982, 2]
+// Dependencies: [5, 5576, 1386, 3, 19640, 7989, 1378, 7981, 7982, 2]
 // Exports: beginAppStoreConsentReinstatement, cancelAppStoreConsentReinstatement, isAppStoreConsentReinstatementEnabledForSession, settleAppStoreConsentReinstatement
 
-// Module 19635 (AppStoreConsentReinstatement)
+// Module 19639 (AppStoreConsentReinstatement)
 import LoggerDefault from "Logger" /* 3 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 7989 */;
-import AppStoreConsentReinstateEndpointExperiment from "AppStoreConsentReinstateEndpointExperiment" /* 19636 */;
+import AppStoreConsentReinstateEndpointExperiment from "AppStoreConsentReinstateEndpointExperiment" /* 19640 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5576 */;
 import UserStore from "UserStore" /* 1386 */;

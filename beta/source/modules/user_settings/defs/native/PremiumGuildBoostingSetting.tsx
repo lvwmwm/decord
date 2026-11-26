@@ -1,9 +1,9 @@
-// Module ID: 16301
-// Function ID: 16302
+// Module ID: 16305
+// Function ID: 16306
 // Name: PremiumGuildBoostingSetting
-// Dependencies: [1071, 11942, 1112, 9370, 14109, 2]
+// Dependencies: [1071, 11942, 1112, 9370, 14112, 2]
 
-// Module 16301 (PremiumGuildBoostingSetting)
+// Module 16305 (PremiumGuildBoostingSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import BoostGemIcon from "BoostGemIcon" /* 9370 */;

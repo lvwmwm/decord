@@ -1,10 +1,10 @@
-// Module ID: 17532
-// Function ID: 17533
+// Module ID: 17536
+// Function ID: 17537
 // Name: isJankScreenReportingEnabled
 // Dependencies: [1378, 4788, 4870, 2]
 // Exports: isJankScreenReportingEnabled
 
-// Module 17532 (isJankScreenReportingEnabled)
+// Module 17536 (isJankScreenReportingEnabled)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import DeviceUtils from "DeviceUtils" /* 4870 */;
 import size from "module_2" /* 2 */;

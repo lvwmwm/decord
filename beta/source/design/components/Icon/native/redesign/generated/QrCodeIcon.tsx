@@ -1,14 +1,14 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 16196
+// Function ID: 16197
 // Name: QrCodeIcon
-// Dependencies: [19, 21, 575, 5599, 14661, 2]
+// Dependencies: [19, 21, 575, 5599, 14664, 2]
 // Exports: QrCodeIcon
 
-// Module 16192 (QrCodeIcon)
+// Module 16196 (QrCodeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 14661 */;
+import AssetRegistry from "AssetRegistry" /* 14664 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12530
-// Function ID: 12531
+// Module ID: 12523
+// Function ID: 12524
 // Name: useIsChangingCustomizationRoute
 // Dependencies: [32, 19, 4914, 10118, 504, 6338, 2]
 // Exports: default
 
-// Module 12530 (useIsChangingCustomizationRoute)
+// Module 12523 (useIsChangingCustomizationRoute)
 import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 10118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

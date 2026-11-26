@@ -1,9 +1,9 @@
-// Module ID: 12962
-// Function ID: 12963
+// Module ID: 12965
+// Function ID: 12966
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1405, 1071, 21, 4913, 12111, 12954, 10839, 5600, 8072, 8202, 1412, 8128, 2]
+// Dependencies: [19, 17, 1405, 1071, 21, 4913, 12111, 12957, 10839, 5600, 8072, 8202, 1412, 8128, 2]
 
-// Module 12962 (RecommendationsBanner)
+// Module 12965 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
@@ -39,7 +39,7 @@ let closure_10 = react.memo(function RecommendationBannerEmbedded(applicationId)
   const tmp = dependencyMap;
   let obj = heroMediaDimensions(12111);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(12954);
+  let obj2 = heroMediaDimensions(12957);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);

@@ -1,12 +1,12 @@
-// Module ID: 19634
-// Function ID: 19635
+// Module ID: 19638
+// Function ID: 19639
 // Name: ParentalConsentManager
-// Dependencies: [1071, 7484, 19635, 7989, 2]
+// Dependencies: [1071, 7484, 19639, 7989, 2]
 
-// Module 19634 (ParentalConsentManager)
+// Module 19638 (ParentalConsentManager)
 import Constants from "Constants" /* 1071 */;
 import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 7989 */;
-import AppStoreConsentReinstatement from "AppStoreConsentReinstatement" /* 19635 */;
+import AppStoreConsentReinstatement from "AppStoreConsentReinstatement" /* 19639 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 

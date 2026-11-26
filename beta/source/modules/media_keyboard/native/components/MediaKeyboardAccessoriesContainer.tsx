@@ -1,10 +1,10 @@
-// Module ID: 18422
-// Function ID: 18423
+// Module ID: 18426
+// Function ID: 18427
 // Name: MediaKeyboardAccessoriesContainer
 // Dependencies: [19, 17, 10863, 21, 1378, 4913, 1653, 504, 2]
 // Exports: default
 
-// Module 18422 (MediaKeyboardAccessoriesContainer)
+// Module 18426 (MediaKeyboardAccessoriesContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

@@ -1,17 +1,18 @@
 // Module ID: 15602
 // Function ID: 15603
-// Dependencies: [15549, 15600, 15583]
+// Dependencies: [15575]
 
 // Module 15602
-import _mod15549 from "module_15549" /* 15549 */;
-import _mod15583 from "module_15583" /* 15583 */;
-import defineProperty2 from "defineProperty2" /* 15600 */;
+import _mod15575 from "module_15575" /* 15575 */;
 
 
-export default _mod15549 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod15583(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default function(arg0) {
+  if (_mod15575(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp3 = new TypeError(String(arg0) + " is not an object");
+    throw tmp3;
+  }
+};

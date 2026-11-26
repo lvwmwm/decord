@@ -1,10 +1,10 @@
-// Module ID: 15407
-// Function ID: 15408
+// Module ID: 15411
+// Function ID: 15412
 // Name: Status
-// Dependencies: [32, 19, 17, 1187, 1071, 14498, 21, 4913, 15405, 575, 15408, 15409, 15410, 15411, 15412, 15413, 15414, 15406, 5600, 15415, 1653, 5514, 15393, 2]
+// Dependencies: [32, 19, 17, 1187, 1071, 14501, 21, 4913, 15409, 575, 15412, 15413, 15414, 15415, 15416, 15417, 15418, 15410, 5600, 15419, 1653, 5514, 15397, 2]
 // Exports: StatusWithTyping, default
 
-// Module 15407 (Status)
+// Module 15411 (Status)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,13 +12,13 @@ import StatusConstants from "StatusConstants" /* 1187 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import spring_spring from "spring/spring" /* 5514 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import EllipsisDefault from "Ellipsis" /* 15393 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15405 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15406 */;
-import useFlashListAnimationDisabler2 from "useFlashListAnimationDisabler" /* 15415 */;
+import EllipsisDefault from "Ellipsis" /* 15397 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15409 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15410 */;
+import useFlashListAnimationDisabler2 from "useFlashListAnimationDisabler" /* 15419 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14498 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14501 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -106,23 +106,23 @@ export default function Status(isMobileOnline) {
   const tmp3 = View;
   tmp6 = FastImageDefault;
   if (streaming) {
-    tmp4Result = tmp4(15408);
-  } else if (flag2) {
-    tmp4Result = tmp4(15409);
-  } else if (flag) {
-    tmp4Result = tmp4(15410);
-  } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(15411);
-  } else if (StatusTypes.DND === status) {
     tmp4Result = tmp4(15412);
+  } else if (flag2) {
+    tmp4Result = tmp4(15413);
+  } else if (flag) {
+    tmp4Result = tmp4(15414);
+  } else if (StatusTypes.IDLE === status) {
+    tmp4Result = tmp4(15415);
+  } else if (StatusTypes.DND === status) {
+    tmp4Result = tmp4(15416);
   } else {
     if (StatusTypes.OFFLINE !== status) {
       if (StatusTypes.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(15414);
+        tmp4Result = tmp4(15418);
       }
     }
-    tmp4Result = tmp4(15413);
+    tmp4Result = tmp4(15417);
   }
   return authStore(tmp3, obj);
 };
@@ -277,23 +277,23 @@ export function StatusWithTyping(isMobileOnline) {
   obj6 = { style: tmp.statusIcon, source: tmp3Result2, resizeMode: "stretch" };
   tmp3Result = FastImageDefault;
   if (streaming) {
-    tmp3Result2 = tmp3(15408);
-  } else if (flag2) {
-    tmp3Result2 = tmp3(15409);
-  } else if (flag) {
-    tmp3Result2 = tmp3(15410);
-  } else if (StatusTypes.IDLE === status) {
-    tmp3Result2 = tmp3(15411);
-  } else if (StatusTypes.DND === status) {
     tmp3Result2 = tmp3(15412);
+  } else if (flag2) {
+    tmp3Result2 = tmp3(15413);
+  } else if (flag) {
+    tmp3Result2 = tmp3(15414);
+  } else if (StatusTypes.IDLE === status) {
+    tmp3Result2 = tmp3(15415);
+  } else if (StatusTypes.DND === status) {
+    tmp3Result2 = tmp3(15416);
   } else {
     if (StatusTypes.OFFLINE !== status) {
       if (StatusTypes.INVISIBLE !== status) {
         const ONLINE = tmp38.ONLINE;
-        tmp3Result2 = tmp3(15414);
+        tmp3Result2 = tmp3(15418);
       }
     }
-    tmp3Result2 = tmp3(15413);
+    tmp3Result2 = tmp3(15417);
   }
   items5[1] = authStore(View3, obj4);
   return tmp31(View, obj);

@@ -1,9 +1,9 @@
-// Module ID: 17394
-// Function ID: 17395
+// Module ID: 17398
+// Function ID: 17399
 // Name: DoubleTapEmojiSetting
 // Dependencies: [5, 19, 8712, 1071, 1389, 21, 4913, 575, 4738, 8706, 1412, 7496, 9063, 1255, 7539, 9075, 11942, 1112, 2]
 
-// Module 17394 (DoubleTapEmojiSetting)
+// Module 17398 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

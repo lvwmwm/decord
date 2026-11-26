@@ -1,10 +1,10 @@
-// Module ID: 12893
-// Function ID: 12894
+// Module ID: 12896
+// Function ID: 12897
 // Name: GameInvitesChannelUtils
 // Dependencies: [109, 19, 4762, 1071, 4769, 8506, 7750, 504, 11252, 11678, 38, 9053, 6659, 12383, 5652, 8061, 6672, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags, useFirstMessage, useGameInviteVoiceChatState, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
-// Module 12893 (GameInvitesChannelUtils)
+// Module 12896 (GameInvitesChannelUtils)
 import react from "react" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
 import ChannelConstants from "ChannelConstants" /* 4769 */;

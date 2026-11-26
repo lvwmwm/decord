@@ -1,14 +1,14 @@
-// Module ID: 16146
-// Function ID: 16147
+// Module ID: 16150
+// Function ID: 16151
 // Name: DirectMessageSpamFilterSetting
-// Dependencies: [19, 8712, 16147, 4738, 11942, 1112, 16149, 2]
+// Dependencies: [19, 8712, 16151, 4738, 11942, 1112, 16153, 2]
 
-// Module 16146 (DirectMessageSpamFilterSetting)
+// Module 16150 (DirectMessageSpamFilterSetting)
 import intl3 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import ModerationUtils from "ModerationUtils" /* 16147 */;
-import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 16149 */;
+import ModerationUtils from "ModerationUtils" /* 16151 */;
+import useDerivedDMSpamFilterSetting from "useDerivedDMSpamFilterSetting" /* 16153 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;

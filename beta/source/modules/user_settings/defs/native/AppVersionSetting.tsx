@@ -1,13 +1,13 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 16987
+// Function ID: 16988
 // Name: AppVersionSetting
-// Dependencies: [1377, 1112, 16984, 11942, 9604, 4738, 2]
+// Dependencies: [1377, 1112, 16988, 11942, 9604, 4738, 2]
 
-// Module 16983 (AppVersionSetting)
+// Module 16987 (AppVersionSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import ClydeIcon from "ClydeIcon" /* 9604 */;
-import CopyClientInfoSetting from "CopyClientInfoSetting" /* 16984 */;
+import CopyClientInfoSetting from "CopyClientInfoSetting" /* 16988 */;
 import react_native from "react-native" /* 1377 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;

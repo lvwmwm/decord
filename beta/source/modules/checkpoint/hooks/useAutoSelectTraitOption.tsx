@@ -1,10 +1,10 @@
-// Module ID: 12795
-// Function ID: 12796
+// Module ID: 12797
+// Function ID: 12798
 // Name: useAutoSelectTraitOption
 // Dependencies: [19, 5970, 6015, 2]
 // Exports: useAutoSelectTraitOption
 
-// Module 12795 (useAutoSelectTraitOption)
+// Module 12797 (useAutoSelectTraitOption)
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5970 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

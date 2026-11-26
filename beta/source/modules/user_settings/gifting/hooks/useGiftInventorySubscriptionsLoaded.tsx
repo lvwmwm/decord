@@ -1,10 +1,10 @@
-// Module ID: 14171
-// Function ID: 14172
+// Module ID: 14174
+// Function ID: 14175
 // Name: useGiftInventorySubscriptionsLoaded
 // Dependencies: [5, 32, 19, 6360, 2]
 // Exports: default
 
-// Module 14171 (useGiftInventorySubscriptionsLoaded)
+// Module 14174 (useGiftInventorySubscriptionsLoaded)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

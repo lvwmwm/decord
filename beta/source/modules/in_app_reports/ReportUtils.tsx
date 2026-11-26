@@ -339,7 +339,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "find", message_id: "analyticsLocations", stage_instance_id: "ix", guild_id: "it", guild_scheduled_event_id: "Array", user_id: "isArray", email_token: "channel_id", application_id: "id", entrypoint: "View", widget_id: "__d" };
+  let obj2 = { channel_id: "ddd", message_id: "channel_id", stage_instance_id: "onPress", guild_id: "clearTimeout", guild_scheduled_event_id: "globalThis", user_id: "formatToPlainString", email_token: "HermesInternal", application_id: "Error", entrypoint: "ind", widget_id: "channelId" };
   const tmp = require;
   let tmp2 = dependencyMap;
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {
@@ -494,7 +494,7 @@ export function submitReport(language, name, arr) {
       }
       let tmp14 = null;
       if (name.name === tmp4(10182).ModeratorReportNames.MESSAGE) {
-        let obj2 = { channel_id: "Array", message_id: "channel_id", guild_id: "tag" };
+        let obj2 = { channel_id: "flex", message_id: "channel_id", guild_id: "find" };
         obj4 = { name: name.name, channel_id, message_id: id };
         ({ channel_id, id } = name.record);
         let merged = Object.assign(obj);

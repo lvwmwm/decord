@@ -1,10 +1,10 @@
-// Module ID: 13418
-// Function ID: 13419
+// Module ID: 13421
+// Function ID: 13422
 // Name: useGuildPowerupLevelPerks
 // Dependencies: [19, 1388, 8332, 1112, 2856, 1254, 2]
 // Exports: default
 
-// Module 13418 (useGuildPowerupLevelPerks)
+// Module 13421 (useGuildPowerupLevelPerks)
 import intl4 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;

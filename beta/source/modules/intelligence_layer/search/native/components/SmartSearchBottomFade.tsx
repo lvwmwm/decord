@@ -1,9 +1,9 @@
-// Module ID: 18803
-// Function ID: 18804
+// Module ID: 18807
+// Function ID: 18808
 // Name: SmartSearchBottomFade
-// Dependencies: [19, 1071, 21, 4913, 18804, 671, 5468, 2]
+// Dependencies: [19, 1071, 21, 4913, 18808, 671, 5468, 2]
 
-// Module 18803 (SmartSearchBottomFade)
+// Module 18807 (SmartSearchBottomFade)
 import Fragment from "Fragment" /* 21 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1071 */;
@@ -24,7 +24,7 @@ let closure_7 = createStyles.createStyles((height) => {
 const memoResult = react.memo(function SmartSearchBottomFade(height) {
   let searchHostSurfaceColor;
   const tmp = closure_7(height.height);
-  let obj = searchHostSurfaceColor(18804);
+  let obj = searchHostSurfaceColor(18808);
   searchHostSurfaceColor = obj.useSearchHostSurfaceColor();
   let items = [searchHostSurfaceColor];
   const memo = react.useMemo(() => {

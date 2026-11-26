@@ -1,10 +1,10 @@
-// Module ID: 18603
-// Function ID: 18604
+// Module ID: 18607
+// Function ID: 18608
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4843, 4784, 21, 18304, 7348, 7045, 18433, 7322, 5127, 12297, 18446, 18604, 18317, 18605, 504, 6865, 11736, 1112, 4190, 18336, 2]
+// Dependencies: [19, 4843, 4784, 21, 18308, 7348, 7045, 18437, 7322, 5127, 12297, 18450, 18608, 18321, 18609, 504, 6865, 11736, 1112, 4190, 18340, 2]
 // Exports: default
 
-// Module 18603 (ConjureClarificationEntityPicker)
+// Module 18607 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
@@ -14,9 +14,9 @@ import TableRow2 from "TableRow" /* 7045 */;
 import TableRowGroup2 from "TableRowGroup" /* 7348 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11736 */;
 import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 12297 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18336 */;
-import ConjureClarification from "ConjureClarification" /* 18433 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 18446 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18340 */;
+import ConjureClarification from "ConjureClarification" /* 18437 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 18450 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 4784 */;
@@ -90,7 +90,7 @@ function ProjectPicker(arg0) {
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(18433);
+      const tmp4Result = tmp4(18437);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };

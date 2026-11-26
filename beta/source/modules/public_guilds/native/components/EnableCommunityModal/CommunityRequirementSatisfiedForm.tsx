@@ -1,10 +1,10 @@
-// Module ID: 19915
-// Function ID: 19916
+// Module ID: 19919
+// Function ID: 19920
 // Name: CommunityRequirementSatisfiedForm
-// Dependencies: [19, 17, 21, 5594, 19905, 7030, 2]
+// Dependencies: [19, 17, 21, 5594, 19909, 7030, 2]
 // Exports: default
 
-// Module 19915 (CommunityRequirementSatisfiedForm)
+// Module 19919 (CommunityRequirementSatisfiedForm)
 import react_native from "react-native" /* 17 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ export default function CommunityRequirementSatisfiedForm(formSwitchDisabled) {
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
   const children = formSwitchDisabled.children;
   let tmp = formSwitchDisabled;
-  let obj = formSwitchDisabled(19905);
+  let obj = formSwitchDisabled(19909);
   const enableCommunitySharedStyles = obj.useEnableCommunitySharedStyles();
   const obj2 = { style: enableCommunitySharedStyles.communityRequirementSatisfiedFormWrapper, children: items };
   items = [children, ];

@@ -1,13 +1,13 @@
-// Module ID: 15753
-// Function ID: 15754
+// Module ID: 15757
+// Function ID: 15758
 // Name: frameRelaunchDeepLink
-// Dependencies: [6354, 1071, 15688, 15680, 6909, 14773, 6943, 2]
+// Dependencies: [6354, 1071, 15692, 15684, 6909, 14776, 6943, 2]
 
-// Module 15753 (frameRelaunchDeepLink)
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15680 */;
+// Module 15757 (frameRelaunchDeepLink)
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15684 */;
 import Constants_mod from "Constants" /* 6354 */;
 import Constants_mod2 from "Constants" /* 1071 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15688 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15692 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -48,7 +48,7 @@ let obj2 = {
       } else {
         substr = hash1;
       }
-      const obj = socket(14773);
+      const obj = socket(14776);
       const frameDeepLinkChannelId = obj.getFrameDeepLinkChannelId(frame);
       const subscriptions = server.subscriptions;
       let tmp8 = null != frameDeepLinkChannelId;
@@ -61,7 +61,7 @@ let obj2 = {
         tmp8 = someResult;
       }
       if (tmp8) {
-        const tmp4Result2 = socket(14773);
+        const tmp4Result2 = socket(14776);
         const result = tmp4Result2.setFrameRelaunchDeepLink(frameDeepLinkChannelId, frame.applicationId, substr);
       }
       return { hash: substr };

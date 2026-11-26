@@ -1,10 +1,10 @@
-// Module ID: 14603
-// Function ID: 14604
+// Module ID: 14606
+// Function ID: 14607
 // Name: useWishlistViewerCoachmark
 // Dependencies: [32, 19, 4746, 9080, 2]
 // Exports: useWishlistViewerCoachmark
 
-// Module 14603 (useWishlistViewerCoachmark)
+// Module 14606 (useWishlistViewerCoachmark)
 import dismissible_content from "dismissible_content" /* 4746 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

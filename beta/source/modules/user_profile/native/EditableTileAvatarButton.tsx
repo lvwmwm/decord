@@ -1,10 +1,10 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 15964
+// Function ID: 15965
 // Name: EditableTileAvatarButton
-// Dependencies: [19, 4914, 8132, 21, 504, 4738, 8912, 1186, 1412, 15959, 1112, 15948, 15954, 2]
+// Dependencies: [19, 4914, 8132, 21, 504, 4738, 8912, 1186, 1412, 15963, 1112, 15952, 15958, 2]
 // Exports: TryItOutEditableTileAvatarButton
 
-// Module 15960 (EditableTileAvatarButton)
+// Module 15964 (EditableTileAvatarButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
@@ -12,9 +12,9 @@ import native from "native" /* 1186 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import RecentAvatarUtils from "RecentAvatarUtils" /* 8912 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15948 */;
-import SpinAnimationDefault from "SpinAnimation" /* 15954 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15959 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15952 */;
+import SpinAnimationDefault from "SpinAnimation" /* 15958 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15963 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;

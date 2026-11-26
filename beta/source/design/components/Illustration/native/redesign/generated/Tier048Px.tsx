@@ -1,10 +1,10 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14120
+// Function ID: 14121
 // Name: Tier048Px
-// Dependencies: [19, 21, 7786, 14118, 14119, 14120, 4920, 5600, 2]
+// Dependencies: [19, 21, 7786, 14121, 14122, 14123, 4920, 5600, 2]
 // Exports: Tier048Px, getTier048PxSource, useTier048PxSource
 
-// Module 14117 (Tier048Px)
+// Module 14120 (Tier048Px)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 4920 */;
 import FastImageDefault from "FastImage" /* 5600 */;

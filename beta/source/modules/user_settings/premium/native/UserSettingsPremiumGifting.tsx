@@ -1,10 +1,10 @@
-// Module ID: 14167
-// Function ID: 14168
+// Module ID: 14170
+// Function ID: 14171
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8137, 2178, 8120, 1071, 1388, 21, 4913, 575, 7348, 9102, 1500, 1628, 504, 14168, 12, 6347, 9105, 9946, 8070, 14170, 14171, 9376, 8123, 9107, 8142, 7411, 7415, 10510, 5600, 14172, 5504, 1112, 14173, 14179, 2888, 14183, 14195, 14198, 14200, 9242, 7417, 2920, 14201, 7020, 2]
+// Dependencies: [32, 19, 17, 8137, 2178, 8120, 1071, 1388, 21, 4913, 575, 7348, 9102, 1500, 1628, 504, 14171, 12, 6347, 9105, 9946, 8070, 14173, 14174, 9376, 8123, 9107, 8142, 7411, 7415, 10510, 5600, 14175, 5504, 1112, 14176, 14182, 2888, 14186, 14198, 14201, 14203, 9242, 7417, 2920, 14204, 7020, 2]
 // Exports: default
 
-// Module 14167 (UserSettingsPremiumGifting)
+// Module 14170 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 6347 */;
@@ -14,9 +14,9 @@ import UserSettingsUtils from "UserSettingsUtils" /* 7415 */;
 import EntitlementActionCreators from "EntitlementActionCreators" /* 8123 */;
 import BillingActionCreatorsDefault from "BillingActionCreators" /* 9107 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10510 */;
-import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 14168 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14173 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14183 */;
+import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 14171 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14176 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14186 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

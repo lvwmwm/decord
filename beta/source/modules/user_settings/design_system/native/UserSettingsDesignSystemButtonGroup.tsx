@@ -1,10 +1,10 @@
-// Module ID: 17222
-// Function ID: 17223
+// Module ID: 17226
+// Function ID: 17227
 // Name: UserSettingsDesignSystemButtonGroup
 // Dependencies: [19, 17, 21, 4913, 5929, 5504, 6545, 5511, 7591, 10377, 2]
 // Exports: default
 
-// Module 17222 (UserSettingsDesignSystemButtonGroup)
+// Module 17226 (UserSettingsDesignSystemButtonGroup)
 import Text_Text from "Text/Text" /* 5504 */;
 import components_Button_Button from "components/Button/Button" /* 5511 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;

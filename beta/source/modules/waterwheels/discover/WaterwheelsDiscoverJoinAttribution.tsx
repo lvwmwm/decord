@@ -1,10 +1,10 @@
-// Module ID: 17811
-// Function ID: 17812
+// Module ID: 17815
+// Function ID: 17816
 // Name: WaterwheelsDiscoverJoinAttribution
 // Dependencies: [2]
 // Exports: captureDiscoverJoinAttribution
 
-// Module 17811 (WaterwheelsDiscoverJoinAttribution)
+// Module 17815 (WaterwheelsDiscoverJoinAttribution)
 import size from "module_2" /* 2 */;
 
 let closure_0 = ["CONNECTION_OPEN", "OVERLAY_INITIALIZE", "CONNECTION_CLOSED", "AUTH_SESSION_CHANGE", "LOGIN_SUCCESS", "LOGIN_RESET", "LOGOUT", "REGISTER_SUCCESS", "UPDATE_TOKEN", "CURRENT_USER_UPDATE", "AGE_GATE_LOGOUT_UNDERAGE_NEW_USER", "CLOSE_SUSPENDED_USER"];

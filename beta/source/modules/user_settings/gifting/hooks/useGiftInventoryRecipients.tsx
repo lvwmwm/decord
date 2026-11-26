@@ -1,12 +1,12 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14173
+// Function ID: 14174
 // Name: useGiftInventoryRecipients
-// Dependencies: [5, 19, 1386, 6954, 14168, 2]
+// Dependencies: [5, 19, 1386, 6954, 14171, 2]
 // Exports: default
 
-// Module 14170 (useGiftInventoryRecipients)
+// Module 14173 (useGiftInventoryRecipients)
 import UserActionCreators from "UserActionCreators" /* 6954 */;
-import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 14168 */;
+import GiftedSubscriptionUtils from "GiftedSubscriptionUtils" /* 14171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;

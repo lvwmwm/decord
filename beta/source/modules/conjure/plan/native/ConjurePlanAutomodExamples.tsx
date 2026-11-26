@@ -1,16 +1,16 @@
-// Module ID: 18592
-// Function ID: 18593
+// Module ID: 18596
+// Function ID: 18597
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 4913, 575, 18593, 1186, 1412, 5504, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 18597, 1186, 1412, 5504, 2]
 // Exports: default
 
-// Module 18592 (ConjurePlanAutomodExamples)
+// Module 18596 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 18593 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 18597 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

@@ -1,9 +1,9 @@
-// Module ID: 19580
-// Function ID: 19581
+// Module ID: 19584
+// Function ID: 19585
 // Name: useGameOrganizationInviteFetch
 // Dependencies: [5, 11900, 11901, 1071, 504, 1088, 12060, 12061, 2]
 
-// Module 19580 (useGameOrganizationInviteFetch)
+// Module 19584 (useGameOrganizationInviteFetch)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11901 */;

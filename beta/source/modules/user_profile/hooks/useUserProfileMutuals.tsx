@@ -1,10 +1,10 @@
-// Module ID: 13502
-// Function ID: 13503
+// Module ID: 13505
+// Function ID: 13506
 // Name: useUserProfileMutuals
 // Dependencies: [32, 19, 8143, 6550, 6956, 504, 12, 8026, 2]
 // Exports: default
 
-// Module 13502 (useUserProfileMutuals)
+// Module 13505 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
 import reactDefault from "react" /* 8026 */;

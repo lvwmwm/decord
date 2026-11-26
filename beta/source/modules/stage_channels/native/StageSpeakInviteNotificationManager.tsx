@@ -1,9 +1,9 @@
-// Module ID: 19674
-// Function ID: 19675
+// Module ID: 19678
+// Function ID: 19679
 // Name: StageSpeakInviteNotificationManager
 // Dependencies: [6495, 502, 4762, 4784, 4855, 4816, 1386, 4767, 1071, 10866, 1112, 5529, 11111, 11120, 11118, 7484, 5950, 10860, 2]
 
-// Module 19674 (StageSpeakInviteNotificationManager)
+// Module 19678 (StageSpeakInviteNotificationManager)
 import Constants from "Constants" /* 1071 */;
 import useChannelName from "useChannelName" /* 5529 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5950 */;

@@ -1,10 +1,10 @@
-// Module ID: 12998
-// Function ID: 12999
+// Module ID: 13001
+// Function ID: 13002
 // Name: Header
-// Dependencies: [19, 17, 1386, 10680, 1499, 1071, 21, 575, 4913, 1653, 504, 12922, 5477, 8128, 12927, 10679, 2150, 5557, 12999, 5504, 1186, 7591, 5610, 1255, 7545, 13000, 5594, 1112, 13001, 2]
+// Dependencies: [19, 17, 1386, 10680, 1499, 1071, 21, 575, 4913, 1653, 504, 12925, 5477, 8128, 12930, 10679, 2150, 5557, 13002, 5504, 1186, 7591, 5610, 1255, 7545, 13003, 5594, 1112, 13004, 2]
 // Exports: default
 
-// Module 12998 (Header)
+// Module 13001 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -13,7 +13,7 @@ import ToastUtils from "ToastUtils" /* 5594 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import useAvatarColorDefault from "useAvatarColor" /* 8128 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 10679 */;
-import getApplicationInstallURL2 from "getApplicationInstallURL" /* 13000 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 13003 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import AppLauncherStore from "AppLauncherStore" /* 10680 */;
@@ -35,9 +35,9 @@ let size;
 let tmp5;
 const _modDef1653 = tmp5(1653);
 const AssetRegistryDefault = tmp5(5610);
-const EntityBorderAppIconDefault = tmp5(12927);
-const AppLauncherBackButtonDefault = tmp5(12999);
-const AppDetailsOverflowMenuDefault = tmp5(13001);
+const EntityBorderAppIconDefault = tmp5(12930);
+const AppLauncherBackButtonDefault = tmp5(13002);
+const AppDetailsOverflowMenuDefault = tmp5(13004);
 let View = react_native.View;
 ({ DEFAULT_CONTENT_PADDING, SCREEN_BACKGROUND_COLOR } = AppLauncherNativeConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -103,7 +103,7 @@ export default function Header(application) {
   const tmp3 = closure_11();
   let appLauncherIconSource = null;
   if (null != application) {
-    const tmpResult = application(12922);
+    const tmpResult = application(12925);
     appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
   }
   const tmpResult9 = application(5477);

@@ -1,13 +1,13 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14510
+// Function ID: 14511
 // Name: useUserProfileActivity
-// Dependencies: [19, 8994, 2131, 5651, 5658, 504, 13512, 14508, 8010, 8996, 8995, 2]
+// Dependencies: [19, 8994, 2131, 5651, 5658, 504, 13515, 14511, 8010, 8996, 8995, 2]
 // Exports: default
 
-// Module 14507 (useUserProfileActivity)
+// Module 14510 (useUserProfileActivity)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 5658 */;
-import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 14508 */;
+import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 14511 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8994 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
@@ -54,7 +54,7 @@ export default function useUserProfileActivity(arg0) {
     if (stateFromStores2 != null) {
       const entries = stateFromStores2.entries;
       found = entries.filter((extra) => {
-        const f138213 = (item) => {
+        const f138223 = (item) => {
           let result = null != item;
           if (result) {
             const obj = userProfileLiveActivities(closure_2_2[10]);
@@ -70,8 +70,8 @@ export default function useUserProfileActivity(arg0) {
           let result;
           const tmpResult = closure_2_0(stateFromStores2[9]);
           if (tmpResult.isListenedSessionEntry(extra)) {
-            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f138213);
-            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f138213);
+            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f138223);
+            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f138223);
           } else {
             const tmpResult3 = closure_2_0(stateFromStores2[9]);
             if (tmpResult3.isWatchedMediaEntry(extra)) {

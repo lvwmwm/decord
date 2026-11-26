@@ -1,14 +1,14 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 16990
+// Function ID: 16991
 // Name: MobilePhoneSettingsIcon
-// Dependencies: [19, 21, 575, 5599, 16987, 2]
+// Dependencies: [19, 21, 575, 5599, 16991, 2]
 // Exports: MobilePhoneSettingsIcon
 
-// Module 16986 (MobilePhoneSettingsIcon)
+// Module 16990 (MobilePhoneSettingsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 16987 */;
+import AssetRegistry from "AssetRegistry" /* 16991 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

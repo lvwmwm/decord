@@ -1,9 +1,9 @@
-// Module ID: 13259
-// Function ID: 13260
+// Module ID: 13262
+// Function ID: 13263
 // Name: Autocomplete
-// Dependencies: [19, 17, 4784, 4855, 1386, 1071, 11266, 21, 4913, 575, 7709, 504, 4969, 1186, 10391, 7045, 7060, 1112, 11616, 7636, 5529, 5504, 5600, 13260, 11373, 7030, 11170, 12, 8821, 10217, 2151, 2152, 7977, 10213, 2]
+// Dependencies: [19, 17, 4784, 4855, 1386, 1071, 11266, 21, 4913, 575, 7709, 504, 4969, 1186, 10391, 7045, 7060, 1112, 11616, 7636, 5529, 5504, 5600, 13263, 11373, 7030, 11170, 12, 8821, 10217, 2151, 2152, 7977, 10213, 2]
 
-// Module 13259 (Autocomplete)
+// Module 13262 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -23,7 +23,7 @@ import StickerDefault from "Sticker" /* 11170 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11266 */;
 import StickersHooks from "StickersHooks" /* 11373 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11616 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13260 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 13263 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;

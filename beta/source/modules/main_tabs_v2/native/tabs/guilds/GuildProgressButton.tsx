@@ -1,16 +1,16 @@
-// Module ID: 17721
-// Function ID: 17722
+// Module ID: 17725
+// Function ID: 17726
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 13062, 575, 5643, 13363, 13366, 7711, 17722, 1112, 13486, 2]
+// Dependencies: [19, 21, 13065, 575, 5643, 13366, 13369, 7711, 17726, 1112, 13489, 2]
 // Exports: default, getScaledGuildProgressButtonHeight
 
-// Module 17721 (GuildProgressButton)
+// Module 17725 (GuildProgressButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13062 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 13363 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13366 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13065 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 13366 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13369 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export default function GuildProgressButton(guild) {
   let percentComplete;
   let subtitle;
   guild = guild.guild;
-  let obj = guild(13363);
+  let obj = guild(13366);
   const guildProgressStep = obj.useGuildProgressStep(guild);
   const completed = guildProgressStep.completed;
   const items = [completed, guild.id];
@@ -44,7 +44,7 @@ export default function GuildProgressButton(guild) {
     obj2.openActionSheet(guild);
   }, items1);
   const RowButton = guild(7711).RowButton;
-  ({ source: completed(17722) });
+  ({ source: completed(17726) });
   const Icon = guild(7711).RowButton.Icon;
   const intl = guild(1112).intl;
   return <RowButton icon={null} label={intl.string(guild(1112).t.o3HK3d)} subLabel={subtitle} onPress={callback} trailing={null} />;

@@ -1,9 +1,9 @@
-// Module ID: 15708
-// Function ID: 15709
+// Module ID: 15712
+// Function ID: 15713
 // Name: links
-// Dependencies: [5, 4761, 2164, 6354, 1071, 2144, 15709, 1255, 4834, 1378, 15710, 15681, 15711, 4919, 15712, 5588, 7255, 15713, 6909, 15688, 10809, 10806, 8194, 2150, 15714, 15717, 2]
+// Dependencies: [5, 4761, 2164, 6354, 1071, 2144, 15713, 1255, 4834, 1378, 15714, 15685, 15715, 4919, 15716, 5588, 7255, 15717, 6909, 15692, 10809, 10806, 8194, 2150, 15718, 15721, 2]
 
-// Module 15708 (links)
+// Module 15712 (links)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
@@ -11,20 +11,20 @@ import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4919 *
 import RPCErrorDefault from "RPCError" /* 6909 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10806 */;
 import RPCHelpers from "RPCHelpers" /* 10809 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15681 */;
-import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15709 */;
-import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15710 */;
-import internalDeepLinks from "internalDeepLinks" /* 15711 */;
-import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15712 */;
-import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 15714 */;
-import getFrameChannelIdDefault from "getFrameChannelId" /* 15717 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 15685 */;
+import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15713 */;
+import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 15714 */;
+import internalDeepLinks from "internalDeepLinks" /* 15715 */;
+import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 15716 */;
+import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 15718 */;
+import getFrameChannelIdDefault from "getFrameChannelId" /* 15721 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import Constants_mod from "Constants" /* 6354 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import Constants_mod3 from "Constants" /* 2144 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15688 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15692 */;
 import size from "module_2" /* 2 */;
 
 let currentEmbeddedActivity, getApplication;

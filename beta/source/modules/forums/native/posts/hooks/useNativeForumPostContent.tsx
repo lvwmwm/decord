@@ -1,10 +1,10 @@
-// Module ID: 12895
-// Function ID: 12896
+// Module ID: 12898
+// Function ID: 12899
 // Name: useNativeForumPostContent
 // Dependencies: [1071, 4913, 1112, 6666, 6386, 2]
 // Exports: default
 
-// Module 12895 (useNativeForumPostContent)
+// Module 12898 (useNativeForumPostContent)
 import Constants from "Constants" /* 1071 */;
 import intl10 from "intl" /* 1112 */;
 import StickersUtils from "StickersUtils" /* 6386 */;

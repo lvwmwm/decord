@@ -1,14 +1,14 @@
-// Module ID: 17281
-// Function ID: 17282
+// Module ID: 17285
+// Function ID: 17286
 // Name: CollectiblesShopSetting
-// Dependencies: [1071, 11942, 1112, 13010, 17282, 8074, 7539, 2]
+// Dependencies: [1071, 11942, 1112, 13013, 17286, 8074, 7539, 2]
 
-// Module 17281 (CollectiblesShopSetting)
+// Module 17285 (CollectiblesShopSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
-import ShopIcon from "ShopIcon" /* 13010 */;
+import ShopIcon from "ShopIcon" /* 13013 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

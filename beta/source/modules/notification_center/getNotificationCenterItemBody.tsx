@@ -1,10 +1,10 @@
-// Module ID: 18070
-// Function ID: 18071
+// Module ID: 18074
+// Function ID: 18075
 // Name: getNotificationCenterItemBody
 // Dependencies: [6633, 4784, 4855, 1386, 1071, 1112, 4969, 6637, 2152, 38, 2]
 // Exports: default, getFriendRequestSentBody
 
-// Module 18070 (getNotificationCenterItemBody)
+// Module 18074 (getNotificationCenterItemBody)
 import _modDef38 from "module_38" /* 38 */;
 import intl13 from "intl" /* 1112 */;
 import StringUtils from "StringUtils" /* 2152 */;

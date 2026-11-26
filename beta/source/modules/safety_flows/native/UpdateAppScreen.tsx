@@ -1,10 +1,10 @@
-// Module ID: 20159
-// Function ID: 20160
+// Module ID: 20163
+// Function ID: 20164
 // Name: UpdateAppScreen
 // Dependencies: [17, 21, 4913, 575, 5504, 1112, 3120, 5511, 2]
 // Exports: default
 
-// Module 20159 (UpdateAppScreen)
+// Module 20163 (UpdateAppScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef3120 from "module_3120" /* 3120 */;

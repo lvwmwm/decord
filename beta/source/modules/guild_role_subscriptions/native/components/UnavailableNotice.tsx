@@ -1,15 +1,15 @@
-// Module ID: 18192
-// Function ID: 18193
+// Module ID: 18196
+// Function ID: 18197
 // Name: UnavailableNotice
-// Dependencies: [19, 17, 21, 4913, 575, 5600, 17772, 5504, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5600, 17776, 5504, 2]
 // Exports: default
 
-// Module 18192 (UnavailableNotice)
+// Module 18196 (UnavailableNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17772 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

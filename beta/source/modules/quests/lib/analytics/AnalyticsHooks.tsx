@@ -1,10 +1,10 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16409
+// Function ID: 16410
 // Name: AnalyticsHooks
 // Dependencies: [19, 1071, 9996, 8421, 8400, 8431, 8430, 8377, 1268, 1378, 8436, 6561, 6565, 1255, 2]
 // Exports: useBountyCarouselEmptyStateAnalytics, useQuestHomeEntrypointAnalyticsEvents, useQuestsEmbedFallbackAnalytics, useTrackAdContentClickedWithImpression, useTrackAdContentEventWithImpression, useTrackQuestContentClickedWithImpression, useTrackQuestEventWithImpression
 
-// Module 16405 (AnalyticsHooks)
+// Module 16409 (AnalyticsHooks)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import v1 from "v1" /* 1268 */;

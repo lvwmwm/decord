@@ -1,10 +1,10 @@
-// Module ID: 18193
-// Function ID: 18194
+// Module ID: 18197
+// Function ID: 18198
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1191, 4762, 4784, 1071, 21, 4913, 575, 5504, 1112, 1186, 10933, 16623, 16625, 16626, 563, 18194, 5529, 18196, 18197, 18198, 7636, 5600, 7322, 18199, 5929, 18201, 18202, 5592, 18203, 2]
+// Dependencies: [19, 17, 1191, 4762, 4784, 1071, 21, 4913, 575, 5504, 1112, 1186, 10933, 16627, 16629, 16630, 563, 18198, 5529, 18200, 18201, 18202, 7636, 5600, 7322, 18203, 5929, 18205, 18206, 5592, 18207, 2]
 // Exports: default
 
-// Module 18193 (GuildRoleSubscriptionPurchasePage)
+// Module 18197 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import LinkingDefault from "Linking" /* 5592 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10933 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 18203 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 18207 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1191 */;

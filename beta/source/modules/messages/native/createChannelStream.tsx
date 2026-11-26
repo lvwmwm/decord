@@ -1,15 +1,15 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 12817
+// Function ID: 12818
 // Name: createChannelStream
-// Dependencies: [11909, 8381, 8531, 8670, 1071, 11, 8697, 12815, 12816, 1112, 4735, 8713, 12177, 6893, 12819, 2]
+// Dependencies: [11909, 8381, 8531, 8670, 1071, 11, 8697, 12818, 12819, 1112, 4735, 8713, 12177, 6893, 12822, 2]
 // Exports: default
 
-// Module 12814 (createChannelStream)
+// Module 12817 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1071 */;
 import UnlinkedGamePlayerPlaceholders from "UnlinkedGamePlayerPlaceholders" /* 8697 */;
-import isNewMessageGroupDefault from "isNewMessageGroup" /* 12815 */;
-import tryInjectMessage from "tryInjectMessage" /* 12816 */;
+import isNewMessageGroupDefault from "isNewMessageGroup" /* 12818 */;
+import tryInjectMessage from "tryInjectMessage" /* 12819 */;
 import PushFeedbackStore_mod from "PushFeedbackStore" /* 11909 */;
 import EditMessageStore from "EditMessageStore" /* 8381 */;
 import UploadStore from "UploadStore" /* 8531 */;
@@ -189,7 +189,7 @@ export default function createChannelStream(roleStyle) {
     let tmp88;
     let tmp9;
     let tmp99;
-    const f128084 = (message) => {
+    const f128094 = (message) => {
       obj = { message, updateMessageIds, forceRender };
       return chatManager.determineChangeType(obj, false) !== constants.NOOP;
     };
@@ -345,8 +345,8 @@ export default function createChannelStream(roleStyle) {
         obj17.changeType = determineChangeType(message);
         let tmp148 = obj17.changeType === constants.NOOP;
         if (tmp148) {
-          tmp148 = null != length && tmp149 !== message.length || items.some(f128084);
-          null != length && tmp149 !== message.length || items.some(f128084);
+          tmp148 = null != length && tmp149 !== message.length || items.some(f128094);
+          null != length && tmp149 !== message.length || items.some(f128094);
         }
         if (tmp148) {
           obj17.changeType = constants.UPDATE;

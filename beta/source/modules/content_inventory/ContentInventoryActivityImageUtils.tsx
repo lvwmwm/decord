@@ -1,10 +1,10 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14462
+// Function ID: 14463
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 2164, 1071, 2144, 8996, 6917, 1112, 14460, 9053, 14462, 13525, 1412, 14466, 6691, 14467, 6932, 6864, 504, 1255, 8999, 2]
+// Dependencies: [19, 2164, 1071, 2144, 8996, 6917, 1112, 14463, 9053, 14465, 13528, 1412, 14469, 6691, 14470, 6932, 6864, 504, 1255, 8999, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 14459 (ContentInventoryActivityImageUtils)
+// Module 14462 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import intl5 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -17,10 +17,10 @@ import conjurePresenceActivity from "conjurePresenceActivity" /* 6932 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 8996 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8999 */;
 import useGame2 from "useGame" /* 9053 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13525 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14460 */;
-import isOnXboxDefault from "isOnXbox" /* 14466 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 14467 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13528 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14463 */;
+import isOnXboxDefault from "isOnXbox" /* 14469 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14470 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

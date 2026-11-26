@@ -1,14 +1,14 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 13831
+// Function ID: 13832
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 4784, 21, 4913, 504, 6844, 13829, 12341, 13830, 13834, 13838, 2]
+// Dependencies: [19, 17, 4784, 21, 4913, 504, 6844, 13832, 12341, 13833, 13837, 13841, 2]
 // Exports: default
 
-// Module 13828 (LeaderboardWinnerBadge)
+// Module 13831 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import canUseGuildSpace from "canUseGuildSpace" /* 6844 */;
-import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 13829 */;
+import useActiveLeaderboardWinnerDataDefault from "useActiveLeaderboardWinnerData" /* 13832 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -36,7 +36,7 @@ export default function LeaderboardWinnerBadge(guildId) {
     return result;
   }, items1);
   const tmp5 = useActiveLeaderboardWinnerDataDefault(guildId, userId);
-  const obj2 = guildId(13829);
+  const obj2 = guildId(13832);
   const activeLeaderboardLeaderData = obj2.useActiveLeaderboardLeaderData(guildId, userId);
   if (stateFromStores) {
     if (null == tmp5) {
@@ -52,9 +52,9 @@ export default function LeaderboardWinnerBadge(guildId) {
         num = 0;
       }
       if (num > 1) {
-        let WinnerTrophyBadge = tmp2(13834).StreakTrophyBadge;
+        let WinnerTrophyBadge = tmp2(13837).StreakTrophyBadge;
       } else {
-        WinnerTrophyBadge = tmp2(13838).WinnerTrophyBadge;
+        WinnerTrophyBadge = tmp2(13841).WinnerTrophyBadge;
       }
       const tmp2Result2 = guildId(12341);
       return <View style={tmp.container} accessible accessibilityLabel={tmp2Result2.getLeaderboardWinnerBadgeText(tmp5)}>{null}</View>;

@@ -1,17 +1,17 @@
-// Module ID: 15733
-// Function ID: 15734
+// Module ID: 15737
+// Function ID: 15738
 // Name: commands/userProfile
-// Dependencies: [5, 6354, 1071, 15709, 15681, 15734, 15735, 15688, 2]
+// Dependencies: [5, 6354, 1071, 15713, 15685, 15738, 15739, 15692, 2]
 
-// Module 15733 (commands/userProfile)
+// Module 15737 (commands/userProfile)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 6354 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15681 */;
-import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15709 */;
-import getFrameProfileContextDefault from "getFrameProfileContext" /* 15734 */;
-import userProfile from "userProfile" /* 15735 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15685 */;
+import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15713 */;
+import getFrameProfileContextDefault from "getFrameProfileContext" /* 15738 */;
+import userProfile from "userProfile" /* 15739 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15688 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15692 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, c4, iframeId, userId;

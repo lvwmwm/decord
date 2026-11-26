@@ -1,12 +1,12 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15154
+// Function ID: 15155
 // Name: GuildBadgeCompass
-// Dependencies: [19, 21, 15141, 7865, 2]
+// Dependencies: [19, 21, 15144, 7865, 2]
 // Exports: GuildBadgeCompass
 
-// Module 15151 (GuildBadgeCompass)
+// Module 15154 (GuildBadgeCompass)
 import inlineStyles from "inlineStyles" /* 7865 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15141 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15144 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

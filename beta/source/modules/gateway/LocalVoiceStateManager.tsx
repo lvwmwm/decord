@@ -1,21 +1,21 @@
-// Module ID: 14942
-// Function ID: 14943
+// Module ID: 14945
+// Function ID: 14946
 // Name: LocalVoiceStateManager
-// Dependencies: [6395, 502, 4762, 2131, 5753, 1071, 6397, 14940, 4738, 1404, 14888, 6401, 2]
+// Dependencies: [6395, 502, 4762, 2131, 5753, 1071, 6397, 14943, 4738, 1404, 14891, 6401, 2]
 
-// Module 14942 (LocalVoiceStateManager)
+// Module 14945 (LocalVoiceStateManager)
 import FlagUtils from "FlagUtils" /* 1404 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import Constants2 from "Constants" /* 6397 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
-import isClipsEnabled from "isClipsEnabled" /* 14888 */;
+import isClipsEnabled from "isClipsEnabled" /* 14891 */;
 import PassTheControllerStore from "PassTheControllerStore" /* 6395 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import RTCRegionStore from "RTCRegionStore" /* 5753 */;
 import Constants from "Constants" /* 1071 */;
-import StateManager from "StateManager" /* 14940 */;
+import StateManager from "StateManager" /* 14943 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

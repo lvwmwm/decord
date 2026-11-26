@@ -1,10 +1,10 @@
-// Module ID: 19820
-// Function ID: 19821
+// Module ID: 19824
+// Function ID: 19825
 // Name: GuildSettingsModalSoundboardSoundInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 5961, 21, 504, 19815, 5861, 1112, 1186, 6830, 5594, 5141, 7515, 575, 7348, 7045, 7034, 11247, 19811, 5620, 2]
+// Dependencies: [5, 32, 19, 17, 5961, 21, 504, 19819, 5861, 1112, 1186, 6830, 5594, 5141, 7515, 575, 7348, 7045, 7034, 11247, 19815, 5620, 2]
 
-// Module 19820 (GuildSettingsModalSoundboardSoundInfoActionSheet)
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19811 */;
+// Module 19824 (GuildSettingsModalSoundboardSoundInfoActionSheet)
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19815 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

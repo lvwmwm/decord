@@ -1,9 +1,9 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 15807
+// Function ID: 15808
 // Name: SessionAdManager
 // Dependencies: [502, 1071, 2121, 8256, 4757, 572, 1088, 1241, 8424, 1255, 2]
 
-// Module 15803 (SessionAdManager)
+// Module 15807 (SessionAdManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;

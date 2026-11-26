@@ -1,15 +1,15 @@
-// Module ID: 18396
-// Function ID: 18397
+// Module ID: 18400
+// Function ID: 18401
 // Name: conjureChatMoreSections
-// Dependencies: [6621, 1112, 4190, 10376, 10142, 18397, 14376, 11244, 6936, 5622, 10348, 7386, 5609, 18399, 5615, 16965, 17197, 18363, 10383, 7235, 18312, 5620, 2]
+// Dependencies: [6621, 1112, 4190, 10376, 10142, 18401, 14379, 11244, 6936, 5622, 10348, 7386, 5609, 18403, 5615, 16969, 17201, 18367, 10383, 7235, 18316, 5620, 2]
 // Exports: conjureChatMoreSections
 
-// Module 18396 (conjureChatMoreSections)
+// Module 18400 (conjureChatMoreSections)
 import _modDef4190 from "module_4190" /* 4190 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import conjureProjectMute from "conjureProjectMute" /* 6936 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 18312 */;
-import conjureProjectActions from "conjureProjectActions" /* 18399 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 18316 */;
+import conjureProjectActions from "conjureProjectActions" /* 18403 */;
 import size from "module_2" /* 2 */;
 
 const isProjectOwner = ConjureProjectStore.isProjectOwner;
@@ -55,7 +55,7 @@ export function conjureChatMoreSections(project) {
     push(obj2);
   }
   if (null != annotate) {
-    const entry = { kind: "switch", key: "annotate", label: intl15.string(tmp4(4190)["6GOFLB"]), IconComponent: tmp2(18397).ExperimentalDirectSelectIcon, value: null, disabled: null, subLabel: stringResult, closesOnEnable: true, onValueChange: annotate.onToggle };
+    const entry = { kind: "switch", key: "annotate", label: intl15.string(tmp4(4190)["6GOFLB"]), IconComponent: tmp2(18401).ExperimentalDirectSelectIcon, value: null, disabled: null, subLabel: stringResult, closesOnEnable: true, onValueChange: annotate.onToggle };
     const push10 = items.push;
     intl15 = tmp2(1112).intl;
     ({ active: obj15.value, busy: obj15.disabled } = annotate);
@@ -68,7 +68,7 @@ export function conjureChatMoreSections(project) {
   }
   if (null != onRefresh) {
     const push2 = items.push;
-    const obj3 = { kind: "action", key: "refresh", label: intl4.string(_modDef4190["p4B/7M"]), IconComponent: tmp2(14376).RefreshIcon, onPress: onRefresh };
+    const obj3 = { kind: "action", key: "refresh", label: intl4.string(_modDef4190["p4B/7M"]), IconComponent: tmp2(14379).RefreshIcon, onPress: onRefresh };
     intl4 = tmp2(1112).intl;
     push2(obj3);
   }
@@ -149,7 +149,7 @@ export function conjureChatMoreSections(project) {
       kind: "action",
       key: "import",
       label: intl9.string(_modDef4190.rWGY3e),
-      IconComponent: tmp2(16965).FileUpIcon,
+      IconComponent: tmp2(16969).FileUpIcon,
       onPress() {
           const obj = conjureProjectActions;
           return obj.importConjureProject(project);
@@ -161,13 +161,13 @@ export function conjureChatMoreSections(project) {
   const items3 = [];
   if (null != onDebug) {
     const push5 = items3.push;
-    const obj8 = { kind: "action", key: "debug", label: intl10.string(_modDef4190["Q4FN+H"]), IconComponent: tmp2(17197).BugIcon, onPress: onDebug };
+    const obj8 = { kind: "action", key: "debug", label: intl10.string(_modDef4190["Q4FN+H"]), IconComponent: tmp2(17201).BugIcon, onPress: onDebug };
     intl10 = tmp2(1112).intl;
     push5(obj8);
   }
   if (null != onConnectTool) {
     const push6 = items3.push;
-    const obj9 = { kind: "action", key: "connect-tool", label: intl11.string(_modDef4190.yOIql5), IconComponent: tmp2(18363).LinkPlusIcon, onPress: onConnectTool };
+    const obj9 = { kind: "action", key: "connect-tool", label: intl11.string(_modDef4190.yOIql5), IconComponent: tmp2(18367).LinkPlusIcon, onPress: onConnectTool };
     intl11 = tmp2(1112).intl;
     push6(obj9);
   }
@@ -184,7 +184,7 @@ export function conjureChatMoreSections(project) {
   };
   intl12 = tmp2(1112).intl;
   push7(obj10);
-  const tmp2Result = tmp2(18399);
+  const tmp2Result = tmp2(18403);
   if (tmp2Result.canUnpublishConjureUserApp(project)) {
     const push8 = items3.push;
     const obj11 = {

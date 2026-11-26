@@ -1,19 +1,19 @@
-// Module ID: 17838
-// Function ID: 17839
+// Module ID: 17842
+// Function ID: 17843
 // Name: WaterwheelsDiscoverHeader
-// Dependencies: [19, 17, 10044, 17831, 21, 575, 4913, 17839, 504, 10220, 17022, 5504, 1112, 2643, 5511, 7040, 17853, 2]
+// Dependencies: [19, 17, 10044, 17835, 21, 575, 4913, 17843, 504, 10220, 17026, 5504, 1112, 2643, 5511, 7040, 17857, 2]
 // Exports: default
 
-// Module 17838 (WaterwheelsDiscoverHeader)
+// Module 17842 (WaterwheelsDiscoverHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef2643 from "module_2643" /* 2643 */;
 import useGameRecordsDefault from "useGameRecords" /* 10220 */;
-import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 17839 */;
-import InterestGameCoverDefault from "InterestGameCover" /* 17853 */;
+import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 17843 */;
+import InterestGameCoverDefault from "InterestGameCover" /* 17857 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10044 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17831 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17835 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

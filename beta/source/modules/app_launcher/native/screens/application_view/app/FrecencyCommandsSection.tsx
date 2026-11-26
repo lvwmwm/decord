@@ -1,17 +1,17 @@
-// Module ID: 13021
-// Function ID: 13022
+// Module ID: 13024
+// Function ID: 13025
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 1071, 21, 4913, 12997, 13022, 5650, 10681, 5504, 1112, 5565, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 13000, 13025, 5650, 10681, 5504, 1112, 5565, 2]
 // Exports: default
 
-// Module 13021 (FrecencyCommandsSection)
+// Module 13024 (FrecencyCommandsSection)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5565 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10681 */;
-import AppDetailContent from "AppDetailContent" /* 12997 */;
-import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 13022 */;
+import AppDetailContent from "AppDetailContent" /* 13000 */;
+import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 13025 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

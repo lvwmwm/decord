@@ -1,9 +1,9 @@
-// Module ID: 17542
-// Function ID: 17543
+// Module ID: 17546
+// Function ID: 17547
 // Name: guilds/Guilds
-// Dependencies: [32, 19, 6394, 9420, 1071, 21, 5092, 9, 5095, 5089, 5090, 572, 1107, 17543, 5085, 9950, 17544, 4974, 16487, 17545, 17949, 17992, 16573, 17527, 2]
+// Dependencies: [32, 19, 6394, 9420, 1071, 21, 5092, 9, 5095, 5089, 5090, 572, 1107, 17547, 5085, 9950, 17548, 4974, 16491, 17549, 17953, 17996, 16577, 17531, 2]
 
-// Module 17542 (guilds/Guilds)
+// Module 17546 (guilds/Guilds)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
@@ -37,13 +37,13 @@ const memoResult = react.memo(function GuildsOnly() {
   let tmp12;
   let tmp = enabled;
   let tmp2 = dependencyMap;
-  let obj = enabled(17543);
+  let obj = enabled(17547);
   const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
   const tmp4 = first;
   const tmp5 = first(5085)();
   let obj2 = enabled(9950);
   const isEligibleForQuests = obj2.getIsEligibleForQuests();
-  const GuildsRenderExperiment = enabled(17544).GuildsRenderExperiment;
+  const GuildsRenderExperiment = enabled(17548).GuildsRenderExperiment;
   enabled = GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled;
   first = undefined;
   dependencyMap = undefined;
@@ -135,12 +135,12 @@ const memoResult = react.memo(function GuildsOnly() {
   if (!enabled) {
     const obj3 = { gradient: tmp5, children: tmp12(QuestDockExternalCoordinationContextProvider, obj4) };
     const ThemeContextProvider = tmp(4974).ThemeContextProvider;
-    QuestDockExternalCoordinationContextProvider = tmp(16487).QuestDockExternalCoordinationContextProvider;
-    const items1 = [closure_8(tmp4(17545), {}), closure_8(tmp4(17949), {}), closure_8(tmp4(17992), { placement: "channel-list" }), , ];
+    QuestDockExternalCoordinationContextProvider = tmp(16491).QuestDockExternalCoordinationContextProvider;
+    const items1 = [closure_8(tmp4(17549), {}), closure_8(tmp4(17953), {}), closure_8(tmp4(17996), { placement: "channel-list" }), , ];
     obj4 = { children: items1 };
-    items1[3] = isEligibleForQuests && closure_8(tmp4(16573), {});
-    isEligibleForQuests && closure_8(tmp4(16573), {});
-    items1[4] = closure_8(tmp(17527).BackgroundChatHost, {});
+    items1[3] = isEligibleForQuests && closure_8(tmp4(16577), {});
+    isEligibleForQuests && closure_8(tmp4(16577), {});
+    items1[4] = closure_8(tmp(17531).BackgroundChatHost, {});
     tmp11Result = tmp11(ThemeContextProvider, obj3);
     tmp12 = closure_9;
   } else {

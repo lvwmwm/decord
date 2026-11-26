@@ -1,20 +1,20 @@
-// Module ID: 17381
-// Function ID: 17382
+// Module ID: 17385
+// Function ID: 17386
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [4784, 17373, 8712, 11943, 16126, 17376, 4738, 5860, 1112, 5932, 7415, 17382, 11942, 2]
+// Dependencies: [4784, 17377, 8712, 11943, 16130, 17380, 4738, 5860, 1112, 5932, 7415, 17386, 11942, 2]
 
-// Module 17381 (SafetyGuildSettingDirectMessages)
+// Module 17385 (SafetyGuildSettingDirectMessages)
 import intl5 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
 import AlertDefault from "Alert" /* 5932 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 11943 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16126 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17376 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 17382 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16130 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17380 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 17386 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17373 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17377 */;
 import SettingBuilders from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

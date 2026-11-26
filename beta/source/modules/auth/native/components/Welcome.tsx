@@ -1,10 +1,10 @@
-// Module ID: 17460
-// Function ID: 17461
+// Module ID: 17464
+// Function ID: 17465
 // Name: Welcome
-// Dependencies: [19, 17, 17461, 5530, 8052, 1405, 5632, 8057, 1071, 7733, 8438, 21, 4913, 575, 13573, 1112, 38, 1186, 4969, 5504, 5600, 14317, 7373, 15081, 1500, 1628, 504, 17462, 5474, 8268, 1255, 510, 6425, 5492, 17463, 17457, 1501, 6545, 5511, 4974, 5467, 10437, 2]
+// Dependencies: [19, 17, 17465, 5530, 8052, 1405, 5632, 8057, 1071, 7733, 8438, 21, 4913, 575, 13576, 1112, 38, 1186, 4969, 5504, 5600, 14320, 7373, 15084, 1500, 1628, 504, 17466, 5474, 8268, 1255, 510, 6425, 5492, 17467, 17461, 1501, 6545, 5511, 4974, 5467, 10437, 2]
 // Exports: default
 
-// Module 17460 (Welcome)
+// Module 17464 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -18,13 +18,13 @@ import useIsWindowLargeDefault from "useIsWindowLarge" /* 7373 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7733 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8268 */;
 import Constants2 from "Constants" /* 8438 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13573 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14317 */;
-import AssetRegistry from "AssetRegistry" /* 15081 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17457 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13576 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14320 */;
+import AssetRegistry from "AssetRegistry" /* 15084 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17461 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 17461 */;
+import AgeGateStore from "AgeGateStore" /* 17465 */;
 import ExperimentStore from "ExperimentStore" /* 5530 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 8052 */;
 import UserRecord from "UserRecord" /* 1405 */;

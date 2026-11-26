@@ -1,14 +1,14 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 16930
+// Function ID: 16931
 // Name: FriendAnniversaryNotificationSetting
-// Dependencies: [8712, 11942, 1112, 4738, 16927, 16904, 2]
+// Dependencies: [8712, 11942, 1112, 4738, 16931, 16908, 2]
 
-// Module 16926 (FriendAnniversaryNotificationSetting)
+// Module 16930 (FriendAnniversaryNotificationSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16904 */;
-import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 16927 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16908 */;
+import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 16931 */;
 import SettingBuilders_mod from "SettingBuilders" /* 11942 */;
 import size from "module_2" /* 2 */;
 

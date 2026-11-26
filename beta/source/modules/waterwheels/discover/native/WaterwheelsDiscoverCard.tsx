@@ -1,10 +1,10 @@
-// Module ID: 17828
-// Function ID: 17829
+// Module ID: 17832
+// Function ID: 17833
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 2140, 4784, 1071, 21, 575, 4913, 4776, 504, 17829, 5519, 10051, 5600, 5504, 9755, 7565, 1112, 2643, 5511, 17818, 12467, 5468, 9813, 17830, 7061, 13806, 17549, 7040, 17817, 17816, 2]
+// Dependencies: [32, 19, 17, 2140, 4784, 1071, 21, 575, 4913, 4776, 504, 17833, 5519, 10051, 5600, 5504, 9755, 7565, 1112, 2643, 5511, 17822, 12467, 5468, 9813, 17834, 7061, 13809, 17553, 7040, 17821, 17820, 2]
 // Exports: default
 
-// Module 17828 (WaterwheelsDiscoverCard)
+// Module 17832 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
@@ -14,11 +14,11 @@ import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import GameControllerIcon2 from "GameControllerIcon" /* 7040 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17549 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17816 */;
-import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17817 */;
-import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 17818 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17829 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17553 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17820 */;
+import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17821 */;
+import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 17822 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17833 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -615,13 +615,13 @@ function GamePoster(game) {
   intl2 = tmp2(1112).intl;
   items3 = [, ];
   const obj4 = { gameId: game.gameId, name: game.name, coverUrl: game.coverUrl, iconGame: stateFromStores, width: 114, aspectRatio: 0.6909090909090909 };
-  items3[0] = closure_11(game(17830).GameCoverFromURLs, obj4);
+  items3[0] = closure_11(game(17834).GameCoverFromURLs, obj4);
   let tmp9Result = null;
   const tmp7 = closure_12;
   const tmp8 = closure_5;
   if (null != game.l30Rank) {
     const obj5 = { style: tmp.posterRank, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(Badge, obj6) };
-    obj6 = { type: obj7, variant: "inverted", icon: game(13806).FireIcon };
+    obj6 = { type: obj7, variant: "inverted", icon: game(13809).FireIcon };
     obj7 = { text: intl3.formatToPlainString(game(1112).t.UA6RoE, obj8) };
     Badge = tmp2(7061).Badge;
     intl3 = tmp2(1112).intl;

@@ -1,20 +1,20 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 12940
+// Function ID: 12941
 // Name: AppLauncherSearchUtils
-// Dependencies: [32, 19, 10443, 10441, 10442, 12938, 5937, 5938, 10446, 2117, 10679, 10522, 12910, 12940, 12, 10681, 504, 5528, 12939, 12941, 2]
+// Dependencies: [32, 19, 10443, 10441, 10442, 12941, 5937, 5938, 10446, 2117, 10679, 10522, 12913, 12943, 12, 10681, 504, 5528, 12942, 12944, 2]
 // Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
-// Module 12937 (AppLauncherSearchUtils)
+// Module 12940 (AppLauncherSearchUtils)
 import Server from "Server" /* 2117 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5528 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5938 */;
 import CommandPermissionContext from "CommandPermissionContext" /* 10446 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 10679 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12938 */;
-import SearchAppsRequestSource from "SearchAppsRequestSource" /* 12939 */;
-import ArraySearch from "ArraySearch" /* 12940 */;
-import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 12941 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12941 */;
+import SearchAppsRequestSource from "SearchAppsRequestSource" /* 12942 */;
+import ArraySearch from "ArraySearch" /* 12943 */;
+import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 12944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 10443 */;
