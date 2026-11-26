@@ -2169,6 +2169,13 @@
         "width": 216,
         "height": 216
     },
+    "ExperimentalBannerPlusIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalBannerPlusIcon.png",
+        "hash": "d9605a1498a06ca21ac974010c8a0307",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "ExperimentalCheckpointIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ExperimentalCheckpointIcon.png",
         "hash": "e2f35893f933ba61ccefbd78592b084f",
