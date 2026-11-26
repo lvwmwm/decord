@@ -1,17 +1,17 @@
-// Module ID: 7419
-// Function ID: 7420
+// Module ID: 7917
+// Function ID: 7918
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 2162, 1072, 21, 504, 7420, 6969, 1113, 7421, 7428, 1252, 5921, 7433, 2]
+// Dependencies: [19, 2165, 1072, 21, 504, 7918, 7055, 1113, 7919, 7924, 1256, 6057, 7929, 2]
 // Exports: default
 
-// Module 7419 (ApplicationConnectionCard)
+// Module 7917 (ApplicationConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6969 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7055 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ApplicationStore from "ApplicationStore" /* 2165 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

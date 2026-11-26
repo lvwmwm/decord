@@ -1,20 +1,20 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 17189
+// Function ID: 17190
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8835, 1385, 21, 5170, 575, 7420, 7445, 504, 16911, 11697, 8862, 16913, 7071, 7053, 11580, 5406, 16915, 2118, 16916, 2]
+// Dependencies: [19, 17, 8542, 1388, 21, 5306, 575, 7918, 7937, 504, 17190, 10037, 8483, 17192, 7443, 7720, 15464, 5542, 17194, 2121, 17195, 2]
 // Exports: default
 
-// Module 16910 (UserSettingsEditGuildProfile)
+// Module 17189 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 575 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8862 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11580 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11697 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10037 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 15464 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -62,12 +62,12 @@ export default function UserSettingsEditGuildProfile(arg0) {
   }
   let tmp2 = guild;
   let tmp = closure_10();
-  const tmp4 = guild(7420);
-  const analyticsLocations = tmp4(guild(7445).USER_SETTINGS_GUILD_PROFILE).analyticsLocations;
+  const tmp4 = guild(7918);
+  const analyticsLocations = tmp4(guild(7937).USER_SETTINGS_GUILD_PROFILE).analyticsLocations;
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp7 = guild(16911)();
+  const tmp7 = guild(17190)();
   guild = tmp7.guild;
   ({ resetPending: c2, handleSubmit: c3 } = tmp7);
   let obj2 = stateFromStores(504);
@@ -115,12 +115,12 @@ export default function UserSettingsEditGuildProfile(arg0) {
               let tmp = maybeShowUnsavedChangesAlertDefault(obj);
             }
       };
-      TableRow = tmp5(7071).TableRow;
-      obj5 = { guild, size: stateFromStores(7053).GuildIconSizes.XSMALL };
+      TableRow = tmp5(7443).TableRow;
+      obj5 = { guild, size: stateFromStores(7720).GuildIconSizes.XSMALL };
       const obj6 = { value: analyticsLocations, children: items3 };
-      tmp2Result = tmp2(7053);
+      tmp2Result = tmp2(7720);
       const tmp14 = closure_7(hasUnsavedChanges, obj3);
-      const AnalyticsLocationProvider = tmp5(7420).AnalyticsLocationProvider;
+      const AnalyticsLocationProvider = tmp5(7918).AnalyticsLocationProvider;
       const tmp11 = closure_7;
       const tmp15 = closure_9;
       if (showGuildSelector) {
@@ -129,12 +129,12 @@ export default function UserSettingsEditGuildProfile(arg0) {
       items3 = [showGuildSelector, ];
       const _HermesInternal = HermesInternal;
       const obj7 = { currentUser: stateFromStores, header };
-      const tmp2Result2 = tmp2(16916);
+      const tmp2Result2 = tmp2(17195);
       items3[1] = tmp11(tmp2Result2, obj7, "" + stateFromStores.id + "-" + guild.id);
       return tmp15(AnalyticsLocationProvider, obj6);
     }
   }
   const obj8 = { children: items4 };
-  items4 = [header, closure_7(tmp2(16913), {})];
+  items4 = [header, closure_7(tmp2(17192), {})];
   return closure_9(closure_8, obj8);
 };

@@ -1,19 +1,19 @@
-// Module ID: 12103
-// Function ID: 12104
+// Module ID: 12969
+// Function ID: 12970
 // Name: AgeVerificationSpeakerActionSheet
-// Dependencies: [19, 17, 21, 5170, 575, 1627, 5406, 7459, 7164, 5783, 1113, 5790, 8057, 6816, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 5542, 7951, 7751, 5919, 1113, 5926, 8190, 6823, 2]
 // Exports: default
 
-// Module 12103 (AgeVerificationSpeakerActionSheet)
+// Module 12969 (AgeVerificationSpeakerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6816 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8057 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -46,11 +46,11 @@ export default function AgeVerificationSpeakerActionSheet(onClose) {
   }
   const tmp = closure_6();
   let obj = { startExpanded: true, onDismiss: handleDismiss, contentStyles: { paddingBottom: useSafeAreaInsetsDefault().bottom }, header: closure_4(View, obj2), children: closure_5(View, obj3) };
-  obj2 = { style: tmp.header, children: closure_4(onClose(7164).TrafficConeSpotIllustration, { width: 120, height: 120 }) };
-  const ActionSheet = onClose(7459).ActionSheet;
+  obj2 = { style: tmp.header, children: closure_4(onClose(7751).TrafficConeSpotIllustration, { width: 120, height: 120 }) };
+  const ActionSheet = onClose(7951).ActionSheet;
   obj3 = { style: tmp.container, children: items };
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(onClose(1113).t.zvubnM) };
-  const Text = onClose(5783).Text;
+  const Text = onClose(5919).Text;
   intl = onClose(1113).intl;
   items = [closure_4(Text, obj4), ];
   const obj5 = { style: tmp.footer, children: items1 };
@@ -66,11 +66,11 @@ export default function AgeVerificationSpeakerActionSheet(onClose) {
     },
     text: intl2.string(onClose(1113).t.KXVgjt)
   };
-  const Button = onClose(5790).Button;
+  const Button = onClose(5926).Button;
   intl2 = onClose(1113).intl;
   items1 = [closure_4(Button, obj6), ];
   const obj7 = { size: "lg", onPress: handleDismiss, text: intl3.string(onClose(1113).t.WAI6xu), variant: "secondary" };
-  const Button2 = onClose(5790).Button;
+  const Button2 = onClose(5926).Button;
   intl3 = onClose(1113).intl;
   items1[1] = closure_4(Button2, obj7);
   items[1] = closure_5(View, obj5);

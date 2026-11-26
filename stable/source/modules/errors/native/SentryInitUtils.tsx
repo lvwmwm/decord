@@ -1,7 +1,7 @@
 // Module ID: 1243
 // Function ID: 1244
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1072, 1083, 674, 3, 1244, 1099, 1252, 16307, 6626, 6631, 1370, 1242, 1376, 6627, 1377, 5127, 1624, 1371, 1356, 16308, 2]
+// Dependencies: [5, 17, 1072, 1083, 674, 3, 1244, 1099, 1256, 16586, 6761, 6766, 1373, 1242, 1379, 6762, 1380, 5263, 1627, 1374, 1359, 16587, 2]
 // Exports: initSentry
 
 // Module 1243 (SentryInitUtils)
@@ -11,13 +11,13 @@ import Constants2 from "Constants" /* 1083 */;
 import router_utils from "router_utils" /* 1099 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1244 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import react_nativeAll from "react-native" /* 1376 */;
-import MetricEvents from "MetricEvents" /* 6631 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import react_nativeAll from "react-native" /* 1379 */;
+import MetricEvents from "MetricEvents" /* 6766 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import registerSpanErrorInstrumentation_mod from "module_674" /* 674 */;
-import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1370 */;
+import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1373 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
     let c3 = 0;
     return (async function(arg0, value) {
       let raceResult;
-      const f137055 = (arg0, arg1) => {
+      const f140106 = (arg0, arg1) => {
         let closure_0 = arg1;
         return setTimeout(() => {
           const error = new Error("TelemetryRing breadcrumb timeout");
@@ -70,10 +70,10 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
               items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
               const self = this;
               const self2 = this;
-              items[1] = new Promise(f137055);
+              items[1] = new Promise(f140106);
               c2 = 1;
               c3 = 1;
-              const promise = new Promise(f137055);
+              const promise = new Promise(f140106);
               const obj4 = { value: raceResult.catch(() => null), done: false };
               raceResult = race(items);
               return obj4;
@@ -568,9 +568,9 @@ function trackCrash(event, hint, arg2) {
     const tmp26Result = tmp26(1242);
     tmp26Result.markCrashHandled(event_id2);
   }
-  const AppCrashedReasons = tmp12(16307).AppCrashedReasons;
+  const AppCrashedReasons = tmp12(16586).AppCrashedReasons;
   const tmp42 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  const tmp27Result = tmp27(6626);
+  const tmp27Result = tmp27(6761);
   const increment = tmp27Result.increment;
   const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: items };
   items = ["reason:" + tmp42, ];
@@ -665,13 +665,13 @@ export function initSentry() {
             tunnel: `/error-reporting-proxy/${str2}`,
             autoInitializeNativeSdk: false,
             beforeSend,
-            dist: "35401200000000",
+            dist: "35501000000000",
             dsn: SentryStaffDsn,
             environment: ReleaseChannel,
             tracesSampleRate: 0,
             sampleRate: 1,
             ignoreErrors,
-            release: "discord_android@354.12.0-0+354012",
+            release: "discord_android@355.10.0-0+355010",
             tracePropagationTargets: items,
             integrations: items1,
             beforeBreadcrumb(data) {
@@ -707,7 +707,7 @@ export function initSentry() {
           items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
           init(obj3);
           const tmp17Result17 = require("module_674");
-          tmp17Result17.setTag("buildNumber", "35401200000000");
+          tmp17Result17.setTag("buildNumber", "35501000000000");
           const tmp17Result18 = require("module_674");
           tmp17Result18.setTag("appVersion", constants.Version);
           const _HermesInternal = HermesInternal;

@@ -1,34 +1,36 @@
-// Module ID: 18862
-// Function ID: 18863
+// Module ID: 19238
+// Function ID: 19239
 // Name: Notifications
-// Dependencies: [19, 17, 11691, 5016, 21, 5170, 575, 5347, 7216, 18863, 7388, 7076, 1113, 16922, 5783, 18864, 10343, 18865, 18423, 7420, 7445, 7763, 7103, 5770, 18869, 18870, 13600, 5342, 1627, 18443, 10887, 5231, 2]
+// Dependencies: [19, 17, 10030, 5152, 21, 5306, 575, 5483, 7771, 19239, 7415, 7428, 1113, 17201, 5919, 19240, 11905, 19241, 18717, 7918, 7937, 8678, 7499, 5906, 19245, 19246, 15124, 14206, 5478, 1630, 18737, 10271, 5367, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 18862 (Notifications)
+// Module 19238 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import native from "native" /* 5231 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5342 */;
-import RootNavigationRef from "RootNavigationRef" /* 5347 */;
-import LayerScope2 from "LayerScope" /* 5770 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7103 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7216 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7420 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10887 */;
-import MainTabsConstants from "MainTabsConstants" /* 11691 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13600 */;
-import useAppFrameDefault from "useAppFrame" /* 18423 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18443 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18863 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18864 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18865 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 18870 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import native from "native" /* 5367 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5478 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import LayerScope2 from "LayerScope" /* 5906 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7499 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7918 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import MainTabsConstants from "MainTabsConstants" /* 10030 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 14206 */;
+import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 15124 */;
+import useAppFrameDefault from "useAppFrame" /* 18717 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18737 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 19239 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 19240 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 19241 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 19245 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 19246 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,8 +44,6 @@ let obj3;
 let obj4;
 let size;
 let size1;
-let tmp2;
-const NotificationCenterPermissionNudgeDefault = tmp2(18869);
 function goBack() {
   const obj = RootNavigationRef;
   navigation = obj.getRootNavigationRef();
@@ -108,7 +108,11 @@ class Notifications {
     items[2] = styles.topBorder;
     items[3] = style;
     const obj4 = { zIndex: 1, children: metroImportDefault(AnalyticsLocationProvider, obj3) };
-    items1 = [metroImportDefault(closure_11, { nestedInLaunchPad: flag, inNestedNavigator: flag2 }), metroImportDefault(NotificationCenterPermissionNudgeDefault, {}), metroImportDefault(NotificationCenterForYou.NotificationCenterForYou, { nestedInLaunchPad: flag }), metroImportDefault(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "notifications" })];
+    items1 = [metroImportDefault(closure_11, { nestedInLaunchPad: flag, inNestedNavigator: flag2 }), metroImportDefault(NotificationCenterPermissionNudgeDefault, {}), metroImportDefault(NotificationCenterForYou.NotificationCenterForYou, { nestedInLaunchPad: flag }), , ];
+    const obj6 = { background: nativeDefault.colors.BACKGROUND_BASE_LOW };
+    const tmp2Result = VoicePanelDockScrimDefault;
+    items1[3] = metroImportDefault(tmp2Result, obj6);
+    items1[4] = metroImportDefault(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "notifications" });
     return metroImportDefault(LayerScope, obj4);
   }
 }
@@ -199,11 +203,11 @@ let closure_11 = react.memo(function HeaderInner(nestedInLaunchPad) {
   if (!nestedInLaunchPad) {
     const obj2 = { style: tmp.headerTitle, children: items1 };
     const obj3 = { style: tmp.headerClose, accessibilityLabel: intl.string(require("intl").t["13/7kX"]), onPress: goBack, children: closure_7(require("BackIconWithBadge").LeftBackIconWithBadge, {}) };
-    const PressableOpacity = tmp11(7076).PressableOpacity;
+    const PressableOpacity = tmp11(7428).PressableOpacity;
     intl = tmp11(1113).intl;
     items1 = [closure_7(PressableOpacity, obj3), , ];
     const obj4 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", style: tmp.headerText, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl2.string(require("intl").t.HcoRu0) };
-    const Text = tmp11(5783).Text;
+    const Text = tmp11(5919).Text;
     intl2 = tmp11(1113).intl;
     items1[1] = closure_7(Text, obj4);
     const obj5 = { style: tmp.actionButtons, children: items2 };

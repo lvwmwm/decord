@@ -1,21 +1,21 @@
-// Module ID: 15332
-// Function ID: 15333
+// Module ID: 9523
+// Function ID: 9524
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [17, 21, 5170, 575, 9102, 2111, 15333, 15335, 2]
+// Dependencies: [17, 21, 5306, 575, 7994, 2114, 9524, 9526, 2]
 // Exports: default
 
-// Module 15332 (ProductDetailsActionSheetPreview)
+// Module 9523 (ProductDetailsActionSheetPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9102 */;
-import createStyles from "createStyles" /* 5170 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp2;
-const BundleProductDetailsActionSheetPreviewDefault = tmp2(15333);
+const BundleProductDetailsActionSheetPreviewDefault = tmp2(9524);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const obj = { previewContainer: { flex: 1 }, previewDivider: obj2 };

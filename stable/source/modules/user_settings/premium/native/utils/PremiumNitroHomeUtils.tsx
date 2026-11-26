@@ -1,12 +1,12 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 10014
+// Function ID: 10015
 // Name: PremiumNitroHomeUtils
-// Dependencies: [1072, 1252, 2]
+// Dependencies: [1072, 1256, 2]
 // Exports: trackIfScrolledToBottom
 
-// Module 15619 (PremiumNitroHomeUtils)
+// Module 10014 (PremiumNitroHomeUtils)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

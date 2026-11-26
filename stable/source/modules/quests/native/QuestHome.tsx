@@ -1,42 +1,42 @@
-// Module ID: 17269
-// Function ID: 17270
+// Module ID: 17543
+// Function ID: 17544
 // Name: QuestHome
-// Dependencies: [32, 19, 17, 5171, 9803, 7955, 7977, 6869, 1072, 21, 5170, 575, 504, 1499, 17270, 572, 7592, 7599, 17328, 5790, 1113, 6831, 7668, 9805, 17330, 5783, 17353, 17374, 9797, 1627, 7962, 9806, 6876, 7951, 5869, 1252, 6192, 1260, 17419, 15023, 14955, 17420, 17380, 1500, 6872, 17272, 7976, 17345, 17350, 14964, 17421, 17500, 5201, 7390, 2]
+// Dependencies: [32, 19, 17, 5307, 10129, 8808, 8830, 6954, 1072, 21, 5306, 575, 504, 1502, 17544, 572, 6879, 6886, 17602, 5926, 1113, 6838, 8604, 10131, 17604, 5919, 17627, 17648, 10132, 1630, 8815, 10133, 6961, 8804, 6005, 1256, 6328, 1264, 17692, 15950, 15257, 17693, 17654, 1503, 6957, 17546, 8829, 17619, 17624, 15266, 17694, 17775, 5337, 7888, 2]
 
-// Module 17269 (QuestHome)
+// Module 17543 (QuestHome)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useNavigation from "useNavigation" /* 1499 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import components_Button_Button from "components/Button/Button" /* 5790 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import QuestConstants from "QuestConstants" /* 6869 */;
-import QuestTypes from "QuestTypes" /* 6872 */;
-import AdCreativeType from "AdCreativeType" /* 6876 */;
-import openUserSettings from "openUserSettings" /* 7668 */;
-import QuestDataUtils from "QuestDataUtils" /* 7951 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9805 */;
-import QuestActionCreators from "QuestActionCreators" /* 9806 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 14964 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17270 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 17272 */;
-import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 17328 */;
-import QuestHomeBountiesDefault from "QuestHomeBounties" /* 17330 */;
-import HexagonCampaignQuestHomeHeaderDefault from "HexagonCampaignQuestHomeHeader" /* 17353 */;
-import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 17419 */;
-import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 17500 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import useNavigation from "useNavigation" /* 1502 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
+import QuestDataUtils from "QuestDataUtils" /* 8804 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10131 */;
+import QuestActionCreators from "QuestActionCreators" /* 10133 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 15266 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17544 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 17546 */;
+import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 17602 */;
+import QuestHomeBountiesDefault from "QuestHomeBounties" /* 17604 */;
+import HexagonCampaignQuestHomeHeaderDefault from "HexagonCampaignQuestHomeHeader" /* 17627 */;
+import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 17692 */;
+import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 17775 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9803 */;
-import QuestStore from "QuestStore" /* 7955 */;
-import QuestUtmStore from "QuestUtmStore" /* 7977 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10129 */;
+import QuestStore from "QuestStore" /* 8808 */;
+import QuestUtmStore from "QuestUtmStore" /* 8830 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let item, navigation;
@@ -53,7 +53,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp4;
-const OrbsArcadeQuestHomeSectionDefault = tmp4(17374);
+const OrbsArcadeQuestHomeSectionDefault = tmp4(17648);
 function EmptyStateNoQuestsAvailable(hasContentAbove) {
   let Button;
   let intl;
@@ -63,12 +63,12 @@ function EmptyStateNoQuestsAvailable(hasContentAbove) {
   navigation = obj.useNavigation();
   const items = [navigation];
   const callback = react.useCallback(() => navigation.goBack(), items);
-  const obj2 = { hasContentAbove, action: authStore3(Button, obj3) };
+  const obj2 = { hasContentAbove, action: gesture(Button, obj3) };
   obj3 = { variant: "secondary", text: intl.string(intl4.t["/g10LC"]), onPress: callback };
   const tmp3 = QuestHomeEmptyStateDefault;
   Button = components_Button_Button.Button;
   intl = intl4.intl;
-  return authStore3(tmp3, obj2);
+  return gesture(tmp3, obj2);
 }
 function EmptyStateFiltered(arg0) {
   let Button;
@@ -79,14 +79,14 @@ function EmptyStateFiltered(arg0) {
   let obj2;
   let onClearFilters;
   ({ onClearFilters, hasContentAbove } = arg0);
-  const obj = { hasContentAbove, action: authStore3(Button, obj2), title: intl2.string(intl4.t.PBfFnx), subtitle: intl3.string(intl4.t.nwdKFC) };
+  const obj = { hasContentAbove, action: gesture(Button, obj2), title: intl2.string(intl4.t.PBfFnx), subtitle: intl3.string(intl4.t.nwdKFC) };
   obj2 = { variant: "secondary", text: intl.string(intl4.t.urZl31), onPress: onClearFilters };
   const tmp = QuestHomeEmptyStateDefault;
   Button = components_Button_Button.Button;
   intl = intl4.intl;
   intl2 = intl4.intl;
   intl3 = intl4.intl;
-  return authStore3(tmp, obj);
+  return gesture(tmp, obj);
 }
 function HeaderPreviewButton() {
   let Button;
@@ -104,11 +104,11 @@ function HeaderPreviewButton() {
   let obj = hooks_QuestHooks;
   let tmp5 = null;
   if (obj.useShouldShowPreviewToolTab()) {
-    let obj2 = { style: tmp.previewButton, children: authStore3(Button, obj3) };
+    let obj2 = { style: tmp.previewButton, children: gesture(Button, obj3) };
     obj3 = { grow: true, onPress: callback, variant: "primary", text: intl.string(intl4.t.tx5Ax5) };
-    Button = tmp3(5790).Button;
+    Button = tmp3(5926).Button;
     intl = tmp3(1113).intl;
-    tmp5 = authStore3(hasOwnProperty, obj2);
+    tmp5 = gesture(hasOwnProperty, obj2);
   }
   return tmp5;
 }
@@ -118,7 +118,7 @@ function HeaderWithBounties(arg0) {
   let shopCarouselConfig;
   let showOrbShopPlaceholderCarousel;
   ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = arg0);
-  return authStore3(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
+  return gesture(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
 }
 function QuestsSectionHeader(onLayout) {
   let Text;
@@ -126,14 +126,14 @@ function QuestsSectionHeader(onLayout) {
   let items;
   let obj2;
   onLayout = onLayout.onLayout;
-  const obj = { style: items, onLayout, children: authStore3(Text, obj2) };
+  const obj = { style: items, onLayout, children: gesture(Text, obj2) };
   items = [, ];
   ({ sectionHeader: arr[0], sectionHeaderWithTag: arr[1] } = closure_16());
   obj2 = { variant: "body-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
   closure_16();
   Text = Text_Text.Text;
   intl = intl4.intl;
-  return authStore3(hasOwnProperty, obj);
+  return gesture(hasOwnProperty, obj);
 }
 ({ View: hasOwnProperty, ActivityIndicator: metroRequire, StyleSheet } = react_native);
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
@@ -159,7 +159,7 @@ let closure_22 = react.memo(function MeasuredHeader(onLayout) {
   let showOrbShopPlaceholderCarousel;
   const obj = { onLayout: onLayout.onLayout, children: items };
   ({ shouldShowBounties, shouldShowOrbsArcade, onQuestsSectionHeaderLayout, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = onLayout);
-  items = [authStore3(HeaderPreviewButton, {}), authStore3(HexagonCampaignQuestHomeHeaderDefault, {}), , , ];
+  items = [gesture(HeaderPreviewButton, {}), gesture(HexagonCampaignQuestHomeHeaderDefault, {}), , , ];
   let tmp3Result = null;
   const tmp = closure_15;
   const tmp2 = hasOwnProperty;
@@ -174,7 +174,7 @@ let closure_22 = react.memo(function MeasuredHeader(onLayout) {
     tmp3Result2 = tmp3(OrbsArcadeQuestHomeSectionDefault, obj3);
   }
   items[3] = tmp3Result2;
-  items[4] = authStore3(QuestsSectionHeader, { onLayout: onQuestsSectionHeaderLayout });
+  items[4] = gesture(QuestsSectionHeader, { onLayout: onQuestsSectionHeaderLayout });
   return tmp(tmp2, obj);
 });
 const memoResult = react.memo(function QuestHome(filters) {
@@ -541,7 +541,7 @@ const memoResult = react.memo(function QuestHome(filters) {
   const items19 = [ref1];
   const callback8 = obj2.useCallback(() => {
     const obj = { shouldShowBounties: _undefined, shouldShowOrbsArcade: enabled4, onLayout: callback6, onQuestsSectionHeaderLayout: callback7, shopCarouselConfig: config, orbShopProducts: products, obtainableOrbRewards, showOrbShopPlaceholderCarousel: showPlaceholderCarousel };
-    return authStore3(closure_22, obj);
+    return gesture(closure_22, obj);
   }, items18);
   const items20 = [quests, callback4];
   const callback9 = obj2.useCallback((item) => {
@@ -562,7 +562,7 @@ const memoResult = react.memo(function QuestHome(filters) {
       }
     };
     const QuestContentImpressionTrackerNative = QuestContentImpressionTracker.QuestContentImpressionTrackerNative;
-    return authStore3(QuestContentImpressionTrackerNative, obj);
+    return gesture(QuestContentImpressionTrackerNative, obj);
   }, items19);
   let tmp52 = !isNavigationComplete;
   const callback10 = obj2.useCallback((arg0) => {

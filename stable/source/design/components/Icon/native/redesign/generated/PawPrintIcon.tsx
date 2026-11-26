@@ -1,14 +1,14 @@
-// Module ID: 17966
-// Function ID: 17967
+// Module ID: 18243
+// Function ID: 18244
 // Name: PawPrintIcon
-// Dependencies: [19, 21, 575, 5873, 17967, 2]
+// Dependencies: [19, 21, 575, 6009, 18244, 2]
 // Exports: PawPrintIcon
 
-// Module 17966 (PawPrintIcon)
+// Module 18243 (PawPrintIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 17967 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 18244 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

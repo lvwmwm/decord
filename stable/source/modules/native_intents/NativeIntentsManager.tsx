@@ -1,24 +1,24 @@
-// Module ID: 20520
-// Function ID: 20521
+// Module ID: 20860
+// Function ID: 20861
 // Name: NativeIntentsManager
-// Dependencies: [32, 5019, 5041, 5102, 5112, 5073, 1385, 1072, 20521, 20522, 5808, 15150, 1411, 1380, 5226, 7383, 2]
+// Dependencies: [32, 5155, 5177, 5238, 5248, 5209, 1388, 1072, 20861, 20862, 5944, 15563, 1414, 1255, 5362, 7882, 2]
 
-// Module 20520 (NativeIntentsManager)
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import UserUtilsDefault from "UserUtils" /* 5226 */;
-import useChannelName from "useChannelName" /* 5808 */;
-import getChannelIcon from "getChannelIcon" /* 15150 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 20521 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 20522 */;
+// Module 20860 (NativeIntentsManager)
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import getChannelIcon from "getChannelIcon" /* 15563 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 20861 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 20862 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -74,7 +74,7 @@ function makeSearchItem(channel, guild, flag) {
   }
   const sum = channelName + str2;
   id = undefined;
-  const CHANNEL = authStore3.CHANNEL;
+  const CHANNEL = gesture.CHANNEL;
   if (guild != null) {
     id = guild.id;
   }
@@ -136,7 +136,7 @@ function makeGuildDomain(guild1, flag) {
     flag = false;
   }
   const tmp = getGuildThumbnail(guild1);
-  const CHANNELResult = authStore3.CHANNEL(guild1.id);
+  const CHANNELResult = gesture.CHANNEL(guild1.id);
   const obj = { id: CHANNELResult, relatedUniqueIdentifier: CHANNELResult, type: "url", title: guild1.name, displayName: guild1.name, alternateNames: items, rankingHint: constants4.GUILD };
   items = ["*" + guild1.name];
   const items1 = [obj];
@@ -201,7 +201,7 @@ function setChannelActivity(channelId) {
       if (channel.type === unpackModuleId.DM) {
         const recipients = channel.recipients;
         const mapped = recipients.map(tmp12.getUser);
-        const first = _slicedToArray(mapped.filter(tmp11(1380).isNotNullish), 1)[0];
+        const first = _slicedToArray(mapped.filter(tmp11(1255).isNotNullish), 1)[0];
         if (null != first) {
           const tmpResult = UserUtilsDefault;
           const globalName = tmpResult.getGlobalName(first);
@@ -227,7 +227,7 @@ function setChannelActivity(channelId) {
       const _Set1 = new _Set(items);
       const items3 = [];
       HermesBuiltin.arraySpread(items3, _Set1, 0);
-      const CHANNELResult = authStore3.CHANNEL(channel.guild_id, channel.id);
+      const CHANNELResult = gesture.CHANNEL(channel.guild_id, channel.id);
       const _HermesInternal2 = HermesInternal;
       const obj3 = { webpageURL: "" + constants2.BASE_URL + CHANNELResult, relatedUniqueIdentifier: CHANNELResult, eligibleForHandoff: true, eligibleForSearch: true, title: sum, keywords: items3, displayName: sum, type: "com.discord.view-channel" };
       const tmpResult5 = IntentsBindingsDefault;

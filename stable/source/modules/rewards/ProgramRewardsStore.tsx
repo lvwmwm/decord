@@ -1,18 +1,18 @@
-// Module ID: 15954
-// Function ID: 15955
+// Module ID: 16230
+// Function ID: 16231
 // Name: ProgramRewardsStore
-// Dependencies: [32, 1385, 15952, 4615, 4643, 4598, 504, 1089, 15955, 15957, 572, 2]
+// Dependencies: [32, 1388, 16228, 4750, 4778, 4733, 504, 1089, 16231, 16233, 572, 2]
 
-// Module 15954 (ProgramRewardsStore)
+// Module 16230 (ProgramRewardsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import addMinutesDefault from "addMinutes" /* 4615 */;
-import NetworkTtlCache from "NetworkTtlCache" /* 15952 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15955 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15957 */;
+import addMinutesDefault from "addMinutes" /* 4750 */;
+import NetworkTtlCache from "NetworkTtlCache" /* 16228 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 16231 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 16233 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -222,8 +222,8 @@ class ProgramRewardsStore extends PersistedStore {
     }
     return { cache };
   }
-  getTotalDaysInDuration(NITRO) {
-    const rewardForProgram = this.getRewardForProgram(NITRO);
+  getTotalDaysInDuration(arg0) {
+    const rewardForProgram = this.getRewardForProgram(arg0);
     if (null == rewardForProgram) {
       return null;
     } else {
@@ -287,11 +287,11 @@ class ProgramRewardsStore extends PersistedStore {
   getStatus() {
     return networkTtlCache.getStatus();
   }
-  getRewardForProgram(NITRO) {
+  getRewardForProgram(arg0) {
     const value = networkTtlCache.getValue();
     let value2;
     if (value != null) {
-      value2 = value.get(NITRO);
+      value2 = value.get(arg0);
     }
     return value2;
   }

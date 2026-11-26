@@ -1,11 +1,11 @@
-// Module ID: 19820
-// Function ID: 19821
+// Module ID: 20161
+// Function ID: 20162
 // Name: RestrictedHoursActionCreators
-// Dependencies: [5, 6831, 19821, 2118, 2]
+// Dependencies: [5, 6838, 20162, 2121, 2]
 // Exports: openRestrictedHoursModal
 
-// Module 19820 (RestrictedHoursActionCreators)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+// Module 20161 (RestrictedHoursActionCreators)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

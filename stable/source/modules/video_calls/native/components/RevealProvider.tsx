@@ -1,18 +1,18 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 12717
+// Function ID: 12718
 // Name: RevealProvider
-// Dependencies: [19, 5407, 5926, 11162, 21, 504, 11164, 11897, 1377, 5401, 5177, 11384, 11898, 2]
+// Dependencies: [19, 5543, 6062, 11003, 21, 504, 11005, 12718, 1380, 5537, 5313, 11827, 12719, 2]
 // Exports: default
 
-// Module 11896 (RevealProvider)
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 11164 */;
-import StatusBarDefault from "StatusBar" /* 11384 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 11897 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 11898 */;
+// Module 12717 (RevealProvider)
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 11005 */;
+import StatusBarDefault from "StatusBar" /* 11827 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 12718 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 12719 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5407 */;
-import GameConsoleStore from "GameConsoleStore" /* 5926 */;
-import ChannelCallStore from "ChannelCallStore" /* 11162 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
+import GameConsoleStore from "GameConsoleStore" /* 6062 */;
+import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ function useRevealProviderValue(arg0, channel) {
     tmp = stateFromStores1;
   }
   stateFromStores1 = tmp;
-  const tmp2Result = tmp2(1377);
+  const tmp2Result = tmp2(1380);
   const tmp10 = tmp2Result.isIOS() && tmp8;
   importDefault = tmp10;
   const items2 = [tmp, tmp10];

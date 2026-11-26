@@ -1,27 +1,27 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14972
+// Function ID: 14973
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 5171, 13989, 13990, 21, 1652, 5170, 575, 1377, 5793, 5794, 5402, 5756, 8341, 5783, 2]
+// Dependencies: [32, 19, 17, 5307, 14572, 14573, 21, 1655, 5306, 575, 1380, 5929, 5930, 5538, 5892, 8897, 5919, 2]
 
-// Module 14488 (VoiceMessageChat)
+// Module 14972 (VoiceMessageChat)
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import spring_spring from "spring/spring" /* 5793 */;
-import springPresets from "springPresets" /* 5794 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8341 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13989 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8897 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 14572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13990 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 14573 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1652 = _mod1652;
+const module_1655 = _mod1655;
 let _require, dependencyMap, set, set2;
 
 let ActivityIndicator;
@@ -50,13 +50,13 @@ function WaveformBar(value) {
   let sharedValue1;
   const tmp2 = sharedValue1;
   const tmp = closure_16();
-  let obj = require("module_1652");
+  let obj = require("module_1655");
   const sharedValue = obj.useSharedValue(0);
-  let obj2 = require("module_1652");
+  let obj2 = require("module_1655");
   sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = require("module_1652");
+  let obj3 = require("module_1655");
   const sharedValue2 = obj3.useSharedValue(0);
-  let obj4 = require("module_1652");
+  let obj4 = require("module_1655");
   const items = [closure_17, sharedValue, sharedValue1, sharedValue2];
   let c0;
   let c1;
@@ -86,11 +86,11 @@ function WaveformBar(value) {
   const effect1 = react.useEffect(() => {
     set = sharedValue1.set;
     const obj = timing_timing;
-    const obj2 = { duration: 300, easing: _mod1652.Easing.linear };
+    const obj2 = { duration: 300, easing: _mod1655.Easing.linear };
     const result = set(obj.withTiming(2, obj2));
     set2 = sharedValue2.set;
     const obj3 = timing_timing;
-    const obj4 = { duration: 300, easing: _mod1652.Easing.linear };
+    const obj4 = { duration: 300, easing: _mod1655.Easing.linear };
     set2(obj3.withTiming(4, obj4));
   }, items3);
   const obj5 = { style: items4 };
@@ -186,7 +186,7 @@ function Duration(animationValue) {
   const items2 = [first1];
   const first2 = tmp14[0];
   const effect1 = react.useEffect(() => {
-    const f140054 = (arg0) => !arg0;
+    const f143181 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -198,10 +198,10 @@ function Duration(animationValue) {
           num = num2;
         }
         function flash() {
-          closure_6(f140054);
+          closure_6(f143181);
           const timeout = setTimeout(flash, num);
         }
-        closure_6(f140054);
+        closure_6(f143181);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {
@@ -217,7 +217,7 @@ function Duration(animationValue) {
   const items3 = [closure_21, animationValue];
   let c0;
   [tmp17, tmp18] = items3;
-  const obj2 = require("module_1652");
+  const obj2 = require("module_1655");
   const tmp10 = first;
   class VoiceMessageChatTsx2 {
     constructor() {
@@ -234,7 +234,7 @@ function Duration(animationValue) {
   items5 = [tmp.durationContainer, animatedStyle];
   const items6 = [tmp.dot, ];
   let tmp23 = null != tmp2;
-  const View = tmp10(1652).View;
+  const View = tmp10(1655).View;
   const tmp20 = closure_14;
   const tmp22 = closure_5;
   if (tmp23) {
@@ -244,7 +244,7 @@ function Duration(animationValue) {
   items7 = [closure_13(tmp22, { style: items6 }), ];
   const obj4 = { style: tmp.duration, variant: token, color: str, tabularNumbers: true, children: memo };
   str = "text-default";
-  const Text = tmp8(5783).Text;
+  const Text = tmp8(5919).Text;
   if (first2) {
     str = "text-feedback-critical";
   }
@@ -256,7 +256,7 @@ let react = react_mod;
 const useVoiceMessagesUIStore = VoiceMessagesUIStore.useVoiceMessagesUIStore;
 ({ VOICE_RECORDING_MAX_DURATION_MILLIS: metroImportAll, VOICE_RECORDING_MAX_DURATION_OFFSET: c9, VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS: c10, VOICE_RECORDING_WARN_DURATION_MILLIS: unpackModuleId, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageConstants);
 ({ jsx: map1, jsxs: closure_14 } = Fragment);
-let closure_15 = module_1652.createAnimatedComponent(ActivityIndicator);
+let closure_15 = module_1655.createAnimatedComponent(ActivityIndicator);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, loading: { position: "absolute", left: 12 }, dot: size, dotDismissed: { backgroundColor: "transparent" }, waveformContainer: { flex: 1, height: "100%", overflow: "hidden", justifyContent: "flex-end", flexDirection: "row", alignItems: "center" }, waveformBar: obj3, durationContainer: obj4, duration: obj5 };
 obj2 = { height: "100%", flexDirection: "row", alignItems: "center", paddingVertical: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, paddingHorizontal: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_PILL_PADDING_HORIZONTAL, gap: nativeDefault.modules.mobile.VOICE_MESSAGE_CHAT_GAP, borderRadius: nativeDefault.modules.mobile.VOICE_MESSAGE_RECORDING_PILL_BORDER_RADIUS, backgroundColor: nativeDefault.colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
@@ -305,9 +305,9 @@ const memoResult = react.memo(function VoiceMessageChat(isRecording) {
   let sharedValue;
   ({ initialAnimation, backgroundColor, leftAccessory, rightAccessory } = isRecording);
   let tmp = closure_16();
-  let obj = isRecording(5756);
+  let obj = isRecording(5892);
   const token = obj.useToken(sharedValue(575).colors.MOBILE_VOICE_MESSAGE_RECORDING_SPINNER_COLOR);
-  let obj2 = isRecording(1652);
+  let obj2 = isRecording(1655);
   const tmp4 = sharedValue;
   sharedValue = obj2.useSharedValue(0);
   const items = [sharedValue, isRecording];
@@ -326,13 +326,13 @@ const memoResult = react.memo(function VoiceMessageChat(isRecording) {
       };
     }
   }, items);
-  let obj3 = isRecording(1652);
+  let obj3 = isRecording(1655);
   const sharedValue1 = obj3.useSharedValue(0);
   const items1 = [closure_23, initialAnimation, isRecording];
   let c0;
   let c1;
   [tmp10, tmp11, tmp12] = items1;
-  const tmp9 = isRecording(1652);
+  const tmp9 = isRecording(1655);
   class VoiceMessageChatTsx3 {
     constructor() {
       const tmp = 1 === _undefined.get() && c1;
@@ -345,8 +345,8 @@ const memoResult = react.memo(function VoiceMessageChat(isRecording) {
   VoiceMessageChatTsx3.__initData = tmp10;
   const items3 = [closure_24, sharedValue1, , , ];
   const useAnimatedReaction = tmp9.useAnimatedReaction;
-  items3[2] = isRecording(5402).withTiming;
-  items3[3] = isRecording(1652).Easing;
+  items3[2] = isRecording(5538).withTiming;
+  items3[3] = isRecording(1655).Easing;
   items3[4] = sharedValue;
   c0 = undefined;
   c1 = undefined;
@@ -371,7 +371,7 @@ const memoResult = react.memo(function VoiceMessageChat(isRecording) {
   const items5 = [closure_25, backgroundColor];
   c0 = undefined;
   [tmp19, tmp20] = items5;
-  const tmp2Result = isRecording(1652);
+  const tmp2Result = isRecording(1655);
   class VoiceMessageChatTsx5 {
     constructor() {
       let obj3;
@@ -395,7 +395,7 @@ const memoResult = react.memo(function VoiceMessageChat(isRecording) {
   const items7 = [closure_26, sharedValue];
   c0 = undefined;
   [tmp22, tmp23] = items7;
-  const tmp2Result2 = isRecording(1652);
+  const tmp2Result2 = isRecording(1655);
   class VoiceMessageChatTsx6 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -410,7 +410,7 @@ const memoResult = react.memo(function VoiceMessageChat(isRecording) {
   let obj4 = { style: items9, children: items11 };
   items9 = [tmp.container, animatedStyle];
   let tmp26 = null;
-  const View = tmp4(1652).View;
+  const View = tmp4(1655).View;
   const tmp25 = closure_14;
   if (!isRecording) {
     const obj5 = { style: items10, color: token, size: "small" };

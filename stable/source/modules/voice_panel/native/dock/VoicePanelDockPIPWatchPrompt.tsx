@@ -1,100 +1,121 @@
-// Module ID: 19733
-// Function ID: 19734
+// Module ID: 20058
+// Function ID: 20059
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6801, 1385, 21, 5170, 575, 11394, 504, 6205, 8011, 19732, 5231, 1652, 5402, 1705, 7083, 1113, 5783, 3184, 7056, 5790, 8131, 7153, 2]
+// Dependencies: [19, 17, 6810, 1388, 1072, 21, 5306, 575, 11984, 7918, 7937, 6852, 1256, 20059, 504, 6341, 5367, 1655, 5538, 1708, 7722, 7459, 1113, 5919, 3253, 5926, 7988, 7549, 2]
+// Exports: useVoicePanelDockWatchPromptActions
 
-// Module 19733 (VoicePanelDockPIPWatchPrompt)
+// Module 20058 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1705 from "module_1705" /* 1705 */;
-import native from "native" /* 5231 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import StreamActionCreators from "StreamActionCreators" /* 8011 */;
-import VoicePanelDockActionCreators from "VoicePanelDockActionCreators" /* 19732 */;
+import Constants from "Constants" /* 1072 */;
+import _mod1708 from "module_1708" /* 1708 */;
+import native from "native" /* 5367 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
-import UserStore from "UserStore" /* 1385 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
+let dependencyMap, importDefault, streamForUser;
+
+let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let obj2;
 let obj3;
+let obj4;
 let rect;
 function WatchPrompt(ownerId) {
-  let Button;
   let IconButton;
+  let channelId;
+  let cleanUp;
+  let closure_2;
+  let guildId;
+  let hideContent;
   let intl;
   let intl2;
   let intl3;
   let intl4;
+  let isConnecting;
+  let items10;
   let items7;
   let items8;
   let obj11;
-  let obj13;
-  let obj7;
+  let obj14;
   let obj9;
   let str;
-  let str2;
-  let tmp13;
-  let tmp14;
+  let streamKey;
+  let tmp15;
+  let tmp16;
+  let transitionState;
   ownerId = ownerId.ownerId;
-  const streamKey = ownerId.streamKey;
-  const isConnecting = ownerId.isConnecting;
-  const cleanUp = ownerId.cleanUp;
-  let closure_5;
-  const transitionState = ownerId.transitionState;
-  let tmp = closure_9();
-  const tmp2 = streamKey;
-  const tmp3 = isConnecting;
-  const context = cleanUp.useContext(streamKey(isConnecting[7]));
-  const guildId = context.guildId;
+  ({ streamKey, isConnecting, cleanUp } = ownerId);
+  dependencyMap = undefined;
+  let sharedValue;
+  ({ hideContent, transitionState } = ownerId);
+  let tmp = closure_10();
+  const tmp2 = cleanUp;
+  let tmp3 = dependencyMap;
+  const context = sharedValue.useContext(cleanUp(11984));
   const tmp5 = ownerId;
-  const channelId = context.channelId;
-  let obj = ownerId(isConnecting[8]);
-  let items = [closure_5];
+  ({ channelId, guildId } = context);
+  let obj = ownerId(504);
+  let items = [UserStore];
   let items1 = [ownerId];
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(ownerId), items1);
-  let obj2 = streamKey(isConnecting[9]);
-  const items2 = [ownerId, guildId, isConnecting];
+  let obj2 = cleanUp(6341);
   const name = obj2.useName(guildId, channelId, stateFromStores);
-  const items3 = [isConnecting, streamKey];
-  const callback = cleanUp.useCallback(() => {
+  const context1 = sharedValue.useContext(cleanUp(11984));
+  const channelId2 = context1.channelId;
+  const guildId2 = context1.guildId;
+  const tmp9 = cleanUp(7918);
+  const analyticsLocations = tmp9(cleanUp(7937).STREAM_WATCH_PROMPT_PIP).analyticsLocations;
+  const items2 = [ownerId, guildId2, isConnecting, analyticsLocations];
+  const items3 = [guildId2, channelId2, isConnecting, streamKey, analyticsLocations];
+  const callback = sharedValue.useCallback(() => {
     const tmp = isConnecting;
     if (!tmp) {
-      const streamForUser = ApplicationStreamingStore.getStreamForUser(ownerId, guildId);
-      if (null != streamForUser) {
-        const obj = StreamActionCreators;
-        obj.watchStream(streamForUser, { forceMultiple: true, noFocus: true });
+      if (null != ownerId) {
+        streamForUser = streamForUser.getStreamForUser(tmp2, guildId2);
+        if (null != streamForUser) {
+          const obj2 = { forceMultiple: true, noFocus: true, analyticsLocations };
+          const obj = ownerId(isConnecting[11]);
+          obj.watchStream(streamForUser, obj2);
+        }
       }
     }
   }, items2);
-  const callback1 = cleanUp.useCallback(() => {
-    const tmp = isConnecting && null != streamKey;
-    if (tmp) {
-      const obj = StreamActionCreators;
-      obj.stopStream(streamKey, false);
+  const callback1 = sharedValue.useCallback(() => {
+    const obj = cleanUp(isConnecting[12]);
+    const obj2 = { guild_id: guildId2, channel_id: channelId2, location_stack: analyticsLocations };
+    obj.track(constants.STREAM_WATCH_PROMPT_PIP_DISMISSED, obj2);
+    const tmp3 = isConnecting && null != streamKey;
+    if (tmp3) {
+      const obj3 = ownerId(isConnecting[11]);
+      obj3.stopStream(streamKey, false);
     }
-    const obj2 = VoicePanelDockActionCreators;
-    const result = obj2.dismissVoicePanelDockWatchPrompt();
+    const obj4 = ownerId(isConnecting[13]);
+    const result = obj4.dismissVoicePanelDockWatchPrompt();
   }, items3);
-  const tmp10 = transitionState !== ownerId(isConnecting[12]).TransitionStates.YEETED;
-  closure_5 = tmp10;
-  const obj3 = ownerId(isConnecting[13]);
-  const sharedValue = obj3.useSharedValue(1);
-  const items4 = [sharedValue, tmp10, cleanUp];
-  const effect = cleanUp.useEffect(() => {
+  const tmp12 = transitionState !== ownerId(5367).TransitionStates.YEETED;
+  dependencyMap = tmp12;
+  let obj3 = ownerId(1655);
+  sharedValue = obj3.useSharedValue(1);
+  const items4 = [sharedValue, tmp12, cleanUp];
+  const effect = sharedValue.useEffect(() => {
     let tmp10;
     let tmp11;
     let tmp9;
-    if (closure_5) {
+    if (closure_2) {
       const result = set(1);
     } else {
-      const items = [closure_10, , ];
+      const items = [closure_11, , ];
       const withTiming = timing_timing.withTiming;
-      items[1] = _mod1705.scheduleOnRN;
+      items[1] = _mod1708.scheduleOnRN;
       items[2] = cleanUp;
       let c0;
       let c1;
@@ -116,91 +137,110 @@ function WatchPrompt(ownerId) {
       const result1 = set(withTiming(0, tmp5, "respect-motion-settings", VoicePanelDockPIPWatchPromptTsx1));
     }
   }, items4);
-  const items5 = [closure_11, sharedValue];
+  let obj4 = ownerId(1655);
+  const items5 = [closure_12, sharedValue];
   let c0;
-  [tmp13, tmp14] = items5;
-  const obj4 = ownerId(isConnecting[13]);
+  [tmp15, tmp16] = items5;
   class VoicePanelDockPIPWatchPromptTsx2 {
     constructor() {
       const obj = { opacity: _undefined.get() };
       return obj;
     }
   }
-  const items6 = [tmp14];
+  const items6 = [tmp16];
   VoicePanelDockPIPWatchPromptTsx2.__closure = items6;
   VoicePanelDockPIPWatchPromptTsx2.__workletHash = 9976352241568;
-  VoicePanelDockPIPWatchPromptTsx2.__initData = tmp13;
+  VoicePanelDockPIPWatchPromptTsx2.__initData = tmp15;
+  let tmp18 = !tmp12;
   const animatedStyle = obj4.useAnimatedStyle(VoicePanelDockPIPWatchPromptTsx2);
-  const obj5 = { style: items7, pointerEvents: str, accessibilityElementsHidden: !tmp10, importantForAccessibility: str2, children: items8 };
+  if (tmp12) {
+    tmp18 = hideContent;
+  }
+  const obj5 = { style: items7, pointerEvents: str, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items8 };
   items7 = [tmp.container, animatedStyle];
-  str = "none";
-  const View = tmp2(tmp3[13]).View;
-  const tmp16 = closure_7;
-  if (tmp10) {
-    str = "auto";
+  str = "auto";
+  const View = tmp2(1655).View;
+  if (tmp18) {
+    str = "none";
   }
-  str2 = "no-hide-descendants";
-  if (tmp10) {
-    str2 = "auto";
+  items8 = [, , ];
+  const obj6 = { style: tmp.border, pointerEvents: "none" };
+  items8[0] = closure_7(tmp2(7722), obj6);
+  const items9 = [tmp.content, ];
+  let hidden = null;
+  const tmp2Result = tmp2(7722);
+  if (tmp18) {
+    hidden = tmp.hidden;
   }
-  const obj6 = { type: obj7, variant: "critical" };
-  obj7 = { text: intl.string(tmp5(tmp3[17]).t.dI3q4h) };
-  const Badge = tmp5(tmp3[16]).Badge;
-  intl = tmp5(tmp3[17]).intl;
-  items8 = [sharedValue(Badge, obj6), , , ];
-  let tmp17Result = null != stateFromStores;
-  if (tmp17Result) {
-    const obj8 = { variant: "body-sm/medium", color: "text-default", lineClamp: 1, style: tmp.label, children: intl2.formatToPlainString(tmp2(tmp3[19])["g9x8/M"], obj9) };
-    const Text = tmp5(tmp3[18]).Text;
-    intl2 = tmp5(tmp3[17]).intl;
-    obj9 = { username: name };
-    tmp17Result = tmp17(Text, obj8);
+  const obj7 = { style: items9, children: items10 };
+  items9[1] = hidden;
+  const obj8 = { type: obj9, variant: "critical" };
+  obj9 = { text: intl.string(tmp5(1113).t.dI3q4h) };
+  const Badge = tmp5(7459).Badge;
+  intl = tmp5(1113).intl;
+  items10 = [closure_7(Badge, obj8), , ];
+  let tmp20Result = null != stateFromStores;
+  if (tmp20Result) {
+    const obj10 = { variant: "body-sm/medium", color: "text-default", lineClamp: 1, style: tmp.label, children: intl2.formatToPlainString(tmp2(3253)["g9x8/M"], obj11) };
+    const Text = tmp5(5919).Text;
+    intl2 = tmp5(1113).intl;
+    obj11 = { username: name };
+    tmp20Result = tmp20(Text, obj10);
   }
-  items8[1] = tmp17Result;
-  const obj10 = { style: tmp.buttonRow, children: sharedValue(Button, obj11) };
-  obj11 = { size: "sm", variant: "primary-overlay", text: intl3.string(tmp5(tmp3[17]).t.I6JG46), onPress: callback, loading: isConnecting, grow: true };
-  const tmp2Result = tmp2(tmp3[20]);
-  Button = tmp5(tmp3[21]).Button;
-  intl3 = tmp5(tmp3[17]).intl;
-  items8[2] = sharedValue(tmp2Result, obj10);
-  const obj12 = { style: tmp.dismissButton, children: sharedValue(IconButton, obj13) };
-  obj13 = { size: "sm", variant: "tertiary", icon: sharedValue(tmp5(tmp3[23]).XSmallIcon, { size: "sm" }), onPress: callback1, accessibilityLabel: intl4.string(tmp5(tmp3[17]).t.WAI6xu) };
-  const tmp2Result2 = tmp2(tmp3[20]);
-  IconButton = tmp5(tmp3[22]).IconButton;
-  intl4 = tmp5(tmp3[17]).intl;
-  items8[3] = sharedValue(tmp2Result2, obj12);
-  return tmp16(View, obj5);
+  items10[1] = tmp20Result;
+  const obj12 = { size: "sm", variant: "primary-overlay", text: intl3.string(tmp5(1113).t.I6JG46), onPress: callback, loading: isConnecting };
+  const Button = tmp5(5926).Button;
+  intl3 = tmp5(1113).intl;
+  items10[2] = closure_7(Button, obj12);
+  items8[1] = closure_8(tmp2Result, obj7);
+  const items11 = [tmp.dismissButton, ];
+  let hidden1 = null;
+  const tmp2Result2 = tmp2(7722);
+  if (tmp18) {
+    hidden1 = tmp.hidden;
+  }
+  items11[1] = hidden1;
+  const obj13 = { style: items11, children: closure_7(IconButton, obj14) };
+  obj14 = { size: "sm", variant: "tertiary", icon: closure_7(tmp5(7549).XSmallIcon, { size: "sm" }), onPress: callback1, accessibilityLabel: intl4.string(tmp5(1113).t.WAI6xu) };
+  IconButton = tmp5(7988).IconButton;
+  intl4 = tmp5(1113).intl;
+  items8[2] = closure_7(tmp2Result2, obj13);
+  return closure_8(View, obj5);
 }
 function renderWatchPrompt(arg0, arg1, transitionState, cleanUp) {
   const obj = { transitionState, cleanUp };
   const merged = Object.assign(arg1);
-  return metroRequire(WatchPrompt, obj, arg0);
+  return metroImportDefault(WatchPrompt, obj, arg0);
 }
 const StyleSheet = react_native.StyleSheet;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = { duration: 200 };
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let closure_9 = { duration: 200 };
 let createStyles = createStyles_mod;
-let obj = { container: obj2, dismissButton: rect, buttonRow: { flexDirection: "row", alignSelf: "stretch" }, label: obj3 };
+let obj = { container: obj2, border: obj3, content: { alignSelf: "stretch", alignItems: "center" }, hidden: { opacity: 0 }, dismissButton: rect, label: obj4 };
 obj2 = { alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 createStyles = createStyles.createStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
-rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8 };
-obj3 = { textAlign: "center", marginTop: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_16 };
-let closure_9 = createStyles(obj);
-let closure_10 = { code: "(function VoicePanelDockPIPWatchPromptTsx1(finished){let[scheduleOnRN,cleanUp]=this.__closure;if(finished===true){scheduleOnRN(cleanUp);}})" };
-let closure_11 = { code: "(function VoicePanelDockPIPWatchPromptTsx2(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
+obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };
+const merged1 = Object.assign(StyleSheet.absoluteFillObject);
+rect = { position: "absolute", top: nativeDefault.space.PX_4, right: nativeDefault.space.PX_4 };
+obj4 = { textAlign: "center", marginTop: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_8 };
+let closure_10 = createStyles(obj);
+let closure_11 = { code: "(function VoicePanelDockPIPWatchPromptTsx1(finished){let[scheduleOnRN,cleanUp]=this.__closure;if(finished===true){scheduleOnRN(cleanUp);}})" };
+let closure_12 = { code: "(function VoicePanelDockPIPWatchPromptTsx2(){let[opacity]=this.__closure;return{opacity:opacity.get()};})" };
 const memoResult = react.memo(function VoicePanelDockPIPWatchPrompt(arg0) {
+  let hideContent;
   let isConnecting;
   let ownerId;
   let streamKey;
   let visible;
-  ({ ownerId, streamKey, isConnecting, visible } = arg0);
+  ({ ownerId, streamKey, isConnecting, hideContent, visible } = arg0);
   let tmp2;
   const TransitionItem = native.TransitionItem;
-  const tmp = metroRequire;
+  const tmp = metroImportDefault;
   if (visible) {
-    tmp2 = { ownerId, streamKey, isConnecting };
-    const obj = { ownerId, streamKey, isConnecting };
+    tmp2 = { ownerId, streamKey, isConnecting, hideContent };
+    const obj = { ownerId, streamKey, isConnecting, hideContent };
   }
   const obj2 = { item: tmp2, renderItem: renderWatchPrompt };
   return tmp(TransitionItem, obj2);
@@ -208,3 +248,47 @@ const memoResult = react.memo(function VoicePanelDockPIPWatchPrompt(arg0) {
 let result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockPIPWatchPrompt.tsx");
 
 export default memoResult;
+export function useVoicePanelDockWatchPromptActions(ownerId, streamKey, arg2) {
+  let channelId;
+  let closure_2;
+  let items;
+  let items1;
+  let closure_0 = ownerId;
+  importDefault = streamKey;
+  dependencyMap = arg2;
+  const context = channelId.useContext(VoicePanelStateContextDefault);
+  channelId = context.channelId;
+  const guildId = context.guildId;
+  const tmp2 = useAnalyticsLocationsDefault;
+  const analyticsLocations = tmp2(AnalyticsLocationDefault.STREAM_WATCH_PROMPT_PIP).analyticsLocations;
+  const obj = {
+    handleWatch: channelId.useCallback(() => {
+      const tmp = isConnecting;
+      if (!tmp) {
+        if (null != ownerId) {
+          streamForUser = streamForUser.getStreamForUser(tmp2, guildId2);
+          if (null != streamForUser) {
+            const obj2 = { forceMultiple: true, noFocus: true, analyticsLocations };
+            const obj = ownerId(isConnecting[11]);
+            obj.watchStream(streamForUser, obj2);
+          }
+        }
+      }
+    }, items),
+    handleDismiss: channelId.useCallback(() => {
+      const obj = cleanUp(isConnecting[12]);
+      const obj2 = { guild_id: guildId2, channel_id: channelId2, location_stack: analyticsLocations };
+      obj.track(constants.STREAM_WATCH_PROMPT_PIP_DISMISSED, obj2);
+      const tmp3 = isConnecting && null != streamKey;
+      if (tmp3) {
+        const obj3 = ownerId(isConnecting[11]);
+        obj3.stopStream(streamKey, false);
+      }
+      const obj4 = ownerId(isConnecting[13]);
+      const result = obj4.dismissVoicePanelDockWatchPrompt();
+    }, items1)
+  };
+  items = [ownerId, guildId, arg2, analyticsLocations];
+  items1 = [guildId, channelId, arg2, streamKey, analyticsLocations];
+  return obj;
+}

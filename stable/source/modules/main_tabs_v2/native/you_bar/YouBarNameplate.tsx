@@ -1,20 +1,20 @@
-// Module ID: 18845
-// Function ID: 18846
+// Module ID: 19164
+// Function ID: 19165
 // Name: YouBarNameplate
-// Dependencies: [19, 5171, 17430, 21, 5756, 575, 17512, 504, 1652, 5793, 9631, 2]
+// Dependencies: [19, 5307, 17703, 21, 5892, 575, 17787, 504, 1655, 5929, 9508, 2]
 
-// Module 18845 (YouBarNameplate)
+// Module 19164 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import useToken from "useToken" /* 5756 */;
-import spring_spring from "spring/spring" /* 5793 */;
-import NameplateDefault from "Nameplate" /* 9631 */;
-import YouBarConstants from "YouBarConstants" /* 17430 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 17512 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import useToken from "useToken" /* 5892 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import NameplateDefault from "Nameplate" /* 9508 */;
+import YouBarConstants from "YouBarConstants" /* 17703 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 17787 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import size from "module_2" /* 2 */;
 
 const YOU_BAR_SPRING_CONFIG = YouBarConstants.YOU_BAR_SPRING_CONFIG;
@@ -42,8 +42,8 @@ const memoResult = react.memo(function YouBarNameplate(arg0) {
   const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => AccessibilityStore.animateYouBarNameplate);
   const items1 = [closure_6, , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items1[1] = spring_spring.withSpring;
   items1[2] = isQuestRendered;
   items1[3] = tmp4;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function YouBarNameplate(arg0) {
   const animatedStyle = useAnimatedStyle(YouBarNameplateTsx1);
   const rect = { position: "absolute", top: 0, left: avatarSize, right: -1, bottom: 0, borderTopRightRadius: num, borderTopLeftRadius: 0, borderBottomRightRadius: token, borderBottomLeftRadius: 0, overflow: "hidden", width: barWidth - avatarSize };
   num = 0;
-  const View = tmp2(1652).View;
+  const View = tmp2(1655).View;
   if (!isQuestRendered) {
     num = token;
   }

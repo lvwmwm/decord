@@ -1,16 +1,14 @@
-// Module ID: 9033
-// Function ID: 9034
+// Module ID: 10215
+// Function ID: 10216
 // Name: WaterwheelsDiscoverExperiment
-// Dependencies: [1246, 8666, 502, 1385, 1449, 9034, 504, 2]
+// Dependencies: [1246, 502, 1388, 1452, 504, 2]
 // Exports: getWaterwheelsDiscoverEnabled, useWaterwheelsDiscoverEnabled
 
-// Module 9033 (WaterwheelsDiscoverExperiment)
-import ICYMILabFeature from "ICYMILabFeature" /* 9034 */;
+// Module 10215 (WaterwheelsDiscoverExperiment)
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import LabFeatureStore from "LabFeatureStore" /* 8666 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1385 */;
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+import UserStore from "UserStore" /* 1388 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,37 +28,29 @@ export function getWaterwheelsDiscoverEnabled(fetchDehydrated) {
   if (flag == null) {
     flag = false;
   }
-  let value = !flag;
-  if (flag) {
-    value = LabFeatureStore.get(ICYMILabFeature.ICYMI_LAB_FEATURE);
-  }
-  let enabled = !value;
+  let enabled = flag;
   if (enabled) {
     const obj = { location: fetchDehydrated };
     enabled = apexExperiment.getConfig(obj).enabled;
   }
   return enabled;
 }
-export function useWaterwheelsDiscoverEnabled(guilds_bar) {
-  _require = guilds_bar;
+export function useWaterwheelsDiscoverEnabled(WaterwheelsDiscoverPanel_str) {
+  _require = WaterwheelsDiscoverPanel_str;
   let obj = require("get initialized");
-  const items = [ApexExperimentStore, AuthenticationStore, LabFeatureStore, UserStore];
-  const items1 = [guilds_bar];
+  const items = [ApexExperimentStore, AuthenticationStore, UserStore];
+  const items1 = [WaterwheelsDiscoverPanel_str];
   return obj.useStateFromStores(items, () => {
     const currentUser = UserStore.getCurrentUser();
     let flag;
-    const tmp = guilds_bar;
+    const tmp = WaterwheelsDiscoverPanel_str;
     if (currentUser != null) {
       flag = currentUser.isStaff();
     }
     if (flag == null) {
       flag = false;
     }
-    let value = !flag;
-    if (flag) {
-      value = LabFeatureStore.get(ICYMILabFeature.ICYMI_LAB_FEATURE);
-    }
-    let enabled = !value;
+    let enabled = flag;
     if (enabled) {
       const obj = { location: tmp };
       enabled = apexExperiment.getConfig(obj).enabled;

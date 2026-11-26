@@ -1,27 +1,27 @@
-// Module ID: 17355
-// Function ID: 17356
+// Module ID: 17629
+// Function ID: 17630
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1385, 16568, 5195, 5421, 1240, 1083, 21, 1395, 1396, 9403, 5170, 575, 5200, 504, 7420, 7445, 15654, 5198, 9102, 1627, 2171, 5196, 16808, 6872, 17356, 5869, 1113, 5406, 17354, 4411, 5753, 10887, 5783, 17364, 5420, 7415, 16831, 5790, 17365, 7159, 7462, 17366, 2]
+// Dependencies: [5, 32, 19, 17, 1193, 1388, 16847, 5331, 5557, 1240, 1083, 21, 1398, 1399, 10066, 5306, 575, 5336, 504, 7918, 7937, 15316, 5334, 7994, 1630, 2174, 5332, 17087, 6957, 17630, 6005, 1113, 5542, 17628, 4516, 5889, 10271, 5919, 17638, 5556, 7913, 17110, 5926, 17639, 7746, 7954, 17640, 2]
 // Exports: default
 
-// Module 17355 (HexagonCampaignSheet)
+// Module 17629 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import DisplayNameFont from "DisplayNameFont" /* 1395 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5421 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9403 */;
+import DisplayNameFont from "DisplayNameFont" /* 1398 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 10066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
-import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16568 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import UserStore from "UserStore" /* 1388 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16847 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,7 +76,7 @@ function ScaledPreview(arg0) {
   const obj2 = { style: tmp.scaledPreview, onLayout: callback, children };
   items1[0] = closure_15(metroRequire, obj2);
   items1[1] = overlay;
-  return authStore4(metroRequire, obj);
+  return authStore3(metroRequire, obj);
 }
 ({ Platform, View: metroRequire, StyleSheet } = react_native);
 const HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT = HexagonCampaignConstants.HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT;

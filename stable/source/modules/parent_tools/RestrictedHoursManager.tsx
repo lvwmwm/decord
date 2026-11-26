@@ -1,20 +1,20 @@
-// Module ID: 20553
-// Function ID: 20554
+// Module ID: 20893
+// Function ID: 20894
 // Name: RestrictedHoursManager
-// Dependencies: [11173, 1385, 7824, 1113, 2664, 1409, 11175, 572, 19820, 7383, 2]
+// Dependencies: [11014, 1388, 8740, 1113, 2701, 1412, 11016, 572, 20161, 7882, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 20553 (RestrictedHoursManager)
+// Module 20893 (RestrictedHoursManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
-import FamilyCenterModels from "FamilyCenterModels" /* 1409 */;
-import _modDef2664 from "module_2664" /* 2664 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11175 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19820 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 11173 */;
-import UserStore from "UserStore" /* 1385 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import FamilyCenterModels from "FamilyCenterModels" /* 1412 */;
+import _modDef2701 from "module_2701" /* 2701 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 11016 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 20161 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 11014 */;
+import UserStore from "UserStore" /* 1388 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let isInRestrictedHours, map;
@@ -62,7 +62,7 @@ function scheduleUpcomingWarning() {
         const _Date2 = Date;
         const self3 = this;
         const self4 = this;
-        const stringResult = intl.string(_modDef2664["0JlDg0"]);
+        const stringResult = intl.string(_modDef2701["0JlDg0"]);
         const JS_DAY_TO_DAY_OF_WEEK = FamilyCenterModels.JS_DAY_TO_DAY_OF_WEEK;
         const date2 = new Date(startAtMs);
         const items = [JS_DAY_TO_DAY_OF_WEEK[date2.getDay(date2)]];

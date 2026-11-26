@@ -1,22 +1,22 @@
-// Module ID: 13496
-// Function ID: 13497
+// Module ID: 14104
+// Function ID: 14105
 // Name: handleTapConjureProjectEmbed
-// Dependencies: [5, 6932, 11745, 11748, 11926, 13034, 5868, 1113, 4026, 9800, 13029, 13041, 2118, 2]
+// Dependencies: [5, 7017, 12441, 12444, 12759, 13783, 6004, 1113, 4131, 10516, 13778, 13792, 2121, 2]
 // Exports: default
 
-// Module 13496 (handleTapConjureProjectEmbed)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6932 */;
-import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11748 */;
-import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 13034 */;
+// Module 14104 (handleTapConjureProjectEmbed)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
+import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 12444 */;
+import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 13783 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11745 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 12441 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let closure_4, project, status;
 
 let tmp;
-const openFrameDefault = tmp(11926);
+const openFrameDefault = tmp(12759);
 function runConjureSharedProjectCoverAction(applicationId, arg1, arg2) {
   let channelId;
   let guildId;

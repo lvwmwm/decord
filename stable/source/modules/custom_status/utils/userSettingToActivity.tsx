@@ -1,15 +1,15 @@
-// Module ID: 11567
-// Function ID: 11568
+// Module ID: 9529
+// Function ID: 9530
 // Name: userSettingToActivity
-// Dependencies: [19, 6884, 5121, 5116, 5923, 4995, 504, 2]
+// Dependencies: [19, 6969, 5257, 5252, 6059, 5131, 504, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 11567 (userSettingToActivity)
+// Module 9529 (userSettingToActivity)
 import react from "react" /* 19 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
-import ActivityTypes from "ActivityTypes" /* 5923 */;
-import EmojiStore from "EmojiStore" /* 6884 */;
-import EmojiPackStore from "EmojiPackStore" /* 5121 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
+import ActivityTypes from "ActivityTypes" /* 6059 */;
+import EmojiStore from "EmojiStore" /* 6969 */;
+import EmojiPackStore from "EmojiPackStore" /* 5257 */;
 import size from "module_2" /* 2 */;
 
 function _activityFromSetting(emojiName, stateFromStores) {

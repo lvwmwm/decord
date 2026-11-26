@@ -1,31 +1,31 @@
-// Module ID: 9308
-// Function ID: 9309
+// Module ID: 15925
+// Function ID: 15926
 // Name: ImageButton
-// Dependencies: [19, 17, 21, 5170, 5796, 575, 5797, 1652, 5793, 5794, 5874, 5799, 8132, 5783, 2]
+// Dependencies: [19, 17, 21, 5306, 5932, 575, 5933, 1655, 5929, 5930, 6010, 5935, 7448, 5919, 2]
 // Exports: ImageButton
 
-// Module 9308 (ImageButton)
+// Module 15925 (ImageButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5793 */;
-import springPresets from "springPresets" /* 5794 */;
-import ButtonConstants from "ButtonConstants" /* 5796 */;
-import ButtonHooks from "ButtonHooks" /* 5797 */;
-import FastImageDefault from "FastImage" /* 5874 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
+import ButtonHooks from "ButtonHooks" /* 5933 */;
+import FastImageDefault from "FastImage" /* 6010 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const Text_Text = tmp2(5783);
-const Button_BaseButton = tmp2(5799);
-const BaseIconButton3 = tmp2(8132);
+const Text_Text = tmp2(5919);
+const Button_BaseButton = tmp2(5935);
+const BaseIconButton3 = tmp2(7448);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((arg0, arg1, arg2) => {
@@ -33,9 +33,9 @@ let closure_7 = createStyles.createStyles((arg0, arg1, arg2) => {
   let rect;
   let MEDIUM_BUTTON_PADDING = ButtonConstants.LARGE_BUTTON_PADDING;
   if ("sm" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5796).SMALL_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5932).SMALL_BUTTON_PADDING;
   } else if ("md" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5796).MEDIUM_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5932).MEDIUM_BUTTON_PADDING;
   }
   const sum = arg1 + 2 * MEDIUM_BUTTON_PADDING;
   const tmpResult = ButtonConstants;
@@ -79,7 +79,7 @@ export function ImageButton(size) {
   const tmp2 = require;
   let obj = ButtonHooks;
   const tmp4 = closure_7(str, obj.useIconSizeStyles(str, true, maxFontSizeMultiplier).width, grow);
-  const obj2 = _mod1652;
+  const obj2 = _mod1655;
   const sharedValue = obj2.useSharedValue(0);
   const items = [sharedValue, onPressIn];
   const callback = react.useCallback((arg0) => {
@@ -96,8 +96,8 @@ export function ImageButton(size) {
     }
   }, items1);
   const items2 = [closure_8, , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items2[1] = spring_spring.withSpring;
   items2[2] = sharedValue;
   items2[3] = springPresets.ON_PRESS_SPRING;
@@ -127,7 +127,7 @@ export function ImageButton(size) {
   items4[0] = hasOwnProperty(FastImageDefault, obj4);
   const obj5 = { style: items5 };
   items5 = [tmp4.imageDim, animatedStyle];
-  items4[1] = hasOwnProperty(_modDef1652.View, obj5);
+  items4[1] = hasOwnProperty(_modDef1655.View, obj5);
   const tmp16 = metroRequire(View, obj3);
   const tmp14 = metroRequire;
   if (null != label) {

@@ -1,20 +1,20 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17382
+// Function ID: 17383
 // Name: ProfilePrivacySetting
-// Dependencies: [8536, 4995, 17104, 5406, 17105, 2118, 1113, 1196, 11717, 2]
+// Dependencies: [9202, 5131, 17383, 5542, 17384, 2121, 1113, 1196, 12408, 2]
 
-// Module 17103 (ProfilePrivacySetting)
+// Module 17382 (ProfilePrivacySetting)
 import intl7 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17104 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17383 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const asyncRequire = tmp2(2118);
+const asyncRequire = tmp2(2121);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
@@ -39,7 +39,7 @@ let obj = {
       const obj4 = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
       ({ direction: obj3.direction, affectedGuildIds: obj3.affectedGuildIds, settingName: obj3.settingName, mappedActivityValue: obj3.mappedActivityValue } = profileToActivityUpsell);
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(17105, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
+      obj2.openLazy(asyncRequire(17384, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
     }
   },
   useOptions() {

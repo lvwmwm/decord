@@ -1,43 +1,55 @@
-// Module ID: 18157
-// Function ID: 18158
+// Module ID: 18440
+// Function ID: 18441
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 5170, 575, 7073, 6191, 7181, 8766, 16209, 5420, 7415, 7349, 5783, 8756, 7182, 7315, 8131, 7666, 7188, 5790, 5406, 7237, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 7445, 6327, 7619, 8087, 16489, 5556, 7913, 7789, 7859, 5919, 8078, 7620, 7825, 7988, 10569, 7626, 5926, 5542, 16490, 2]
 // Exports: default
 
-// Module 18157 (UserSettingsDesignSystemTextInput)
+// Module 18440 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5420 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import components_Button_Button from "components/Button/Button" /* 5790 */;
-import Stack_Stack from "Stack/Stack" /* 6191 */;
-import Card_Card from "Card/Card" /* 7073 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7181 */;
-import Input2 from "Input" /* 7182 */;
-import TextField from "TextField" /* 7188 */;
-import SplitTextInput from "SplitTextInput" /* 7237 */;
-import SearchBar from "SearchBar" /* 7315 */;
-import TextArea from "TextArea" /* 7349 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7415 */;
-import SettingsIcon from "SettingsIcon" /* 7666 */;
-import IconButton2 from "IconButton" /* 8131 */;
-import TextIcon from "TextIcon" /* 8756 */;
-import GhostInput2 from "GhostInput" /* 16209 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
+import Card_Card from "Card/Card" /* 7445 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7619 */;
+import Input2 from "Input" /* 7620 */;
+import TextField from "TextField" /* 7626 */;
+import SearchBar from "SearchBar" /* 7825 */;
+import TextArea from "TextArea" /* 7859 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7913 */;
+import IconButton2 from "IconButton" /* 7988 */;
+import TextIcon from "TextIcon" /* 8078 */;
+import SettingsIcon from "SettingsIcon" /* 10569 */;
+import GhostInput2 from "GhostInput" /* 16489 */;
+import SplitTextInput from "SplitTextInput" /* 16490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp6;
-const AtIcon = tmp6(8766);
+const AtIcon = tmp6(8087);
+const f117595 = () => {
+  let tmp = closure_0((arg0) => {
+    let tmp = closure_1_8[(closure_1_8.indexOf(closure_1_8, arg0) + 1) % closure_1_8.length];
+    if (tmp == null) {
+      tmp = arg0;
+    }
+    return tmp;
+  });
+};
 function Sample(children) {
   children = children.children;
-  const obj = { shadow: "low", style: closure_8().sample, children: metroRequire(Stack_Stack.Stack, { spacing: 24, children }) };
+  const obj = { shadow: "low", style: closure_9().sample, children: metroRequire(Stack_Stack.Stack, { spacing: 24, children }) };
   const Card = Card_Card.Card;
   return metroRequire(Card, obj);
 }
@@ -185,12 +197,54 @@ function CustomAttachmentExample() {
   }
   return tmp5(TextInput, obj);
 }
+function CountryCodeExample(label) {
+  let closure_0;
+  let obj2;
+  let tmp4;
+  label = label.label;
+  const tmp = _slicedToArray(react.useState("US +1"), 2);
+  _require = tmp[1];
+  const items = [tmp[0], react.useCallback(f117595, [])];
+  const tmp2 = _slicedToArray(items, 2);
+  const first = tmp2[0];
+  const obj = { label, description: "Tap the country code to cycle through a few examples.", placeholder: "Phone number", keyboardType: "phone-pad", leadingText: first, leadingPressableProps: obj2 };
+  obj2 = { accessibilityLabel: "Country code " + first, onPress: tmp4 };
+  tmp4 = tmp2[1];
+  const TextInput = require("TextInput/TextInput").TextInput;
+  return closure_6(TextInput, obj);
+}
+function PhoneOrEmailExample() {
+  let closure_0;
+  let first;
+  let tmp10;
+  let tmp4;
+  let tmp6;
+  let tmp7;
+  let tmp = _slicedToArray(react.useState("US +1"), 2);
+  _require = tmp[1];
+  const items = [tmp[0], react.useCallback(f117595, [])];
+  [first, tmp4] = items;
+  [tmp6, tmp7] = react.useState("");
+  _slicedToArray(react.useState(""), 2);
+  const obj = require("PhoneOrEmailUtils");
+  const result = obj.shouldShowCountryCodeSelector(undefined, tmp6);
+  const obj2 = { label: "Switches like login", description: "Type three or more digits to show the country code, or an email to hide it.", placeholder: "Email or phone number", autoCapitalize: "none", onChange: tmp7, leadingText: tmp10, leadingPressableProps: { accessibilityLabel: "Country code " + first, onPress: tmp4 } };
+  tmp10 = undefined;
+  const TextInput = require("TextInput/TextInput").TextInput;
+  const tmp9 = closure_6;
+  if (result) {
+    tmp10 = first;
+  }
+  ({ accessibilityLabel: "Country code " + first, onPress: tmp4 });
+  return tmp9(TextInput, obj2);
+}
 const ScrollView = react_native.ScrollView;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let closure_8 = ["US +1", "CA +1", "GB +44", "JP +81"];
 let obj = { container: { padding: 16 }, sample: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.xl };
-let closure_8 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTextInput.tsx");
+let closure_9 = createStyles.createStyles(obj);
+let result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTextInput.tsx");
 
 export default function UserSettingsDesignSystemTextInput() {
   let Input;
@@ -202,16 +256,17 @@ export default function UserSettingsDesignSystemTextInput() {
   let items4;
   let items5;
   let items6;
+  let items7;
   let obj11;
   let obj19;
   let obj2;
   let obj21;
   let obj = { children: metroImportDefault(Stack, obj2) };
-  obj2 = { spacing: 24, style: closure_8().container, children: items1 };
+  obj2 = { spacing: 24, style: closure_9().container, children: items1 };
   const obj3 = { children: items };
   Stack = Stack_Stack.Stack;
   items = [metroRequire(TextInput_TextInput.TextInput, { label: "Input Label", placeholder: "Placeholder text", description: "Descriptions give context for the input.", errorMessage: "Error messages communicate invalid states." }), metroRequire(TextArea.TextArea, { label: "Text Area", maxLength: 100, placeholder: "Multiline inputs use TextArea" }), metroRequire(TextInput_TextInput.TextInput, { label: "Password", secureTextEntry: true, placeholder: "Password", clearable: true }), metroRequire(TextInput_TextInput.TextInput, { label: "Required Field", placeholder: "Placeholder", description: "Required inputs are indicated with an asterisk.", required: true })];
-  items1 = [metroImportDefault(Sample, obj3), metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Sizing" }), metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "All inputs except TextArea accept a size prop, either sm, md, or lg. By default, inputs will use the large variant." }), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  items1 = [metroImportDefault(Sample, obj3), metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Sizing" }), metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "All inputs except TextArea accept a size prop, either sm, md, or lg. By default, inputs will use the large variant." }), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
   const obj4 = { children: items2 };
   items2 = [metroRequire(TextInput_TextInput.TextInput, { label: "Small", size: "sm" }), metroRequire(TextInput_TextInput.TextInput, { label: "Medium", size: "md" }), metroRequire(TextInput_TextInput.TextInput, { label: "Large (default)" })];
   items1[3] = metroImportDefault(Sample, obj4);
@@ -282,7 +337,7 @@ export default function UserSettingsDesignSystemTextInput() {
   obj19 = {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(() => Promise.resolve(closure_1_12), "ghost-input-sheet");
+      obj.openLazy(() => Promise.resolve(closure_1_13), "ghost-input-sheet");
     },
     text: "Show example"
   };
@@ -292,17 +347,39 @@ export default function UserSettingsDesignSystemTextInput() {
   obj21 = {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(() => Promise.resolve(closure_1_13), "ghost-input-sheet-left");
+      obj.openLazy(() => Promise.resolve(closure_1_14), "ghost-input-sheet-left");
     },
     text: "Show left-aligned example"
   };
   items1[37] = metroRequire(Sample, obj20);
-  items1[38] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Split Text Input" });
-  items1[39] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "SplitTextInput is a special TextInput extension that is primarily used for inputs that require selecting a prefix value." });
+  items1[38] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Static and Pressable Leading Attachments" });
+  items1[39] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Static leading attachments are muted. Passing leadingPressableProps gives them the value color, and pressable leading text is also separated from the value by a divider. Compare the pressable text with the deprecated SplitTextInput below." });
   const obj22 = { children: items6 };
-  items6 = [metroRequire(SplitTextInput.SplitTextInput, { label: "Small", size: "sm", placeholder: "Placeholder", leadingText: "Click", leadingPressableProps: { accessibilityLabel: "Click" } }), metroRequire(SplitTextInput.SplitTextInput, { label: "Medium", size: "md", placeholder: "Placeholder", leadingText: "Me", leadingPressableProps: { accessibilityLabel: "Me" } }), metroRequire(SplitTextInput.SplitTextInput, { label: "Large", size: "lg", placeholder: "Placeholder", leadingText: "Here", leadingPressableProps: { accessibilityLabel: "Here" } })];
+  items6 = [metroRequire(TextInput_TextInput.TextInput, { label: "TextInput: static leading text", leadingText: "https://", placeholder: "discord.com" }), metroRequire(CountryCodeExample, { label: "TextInput: pressable leading text" }), , , ];
+  const obj23 = { label: "TextInput: static leading icon", leadingIcon: AtIcon.AtIcon, placeholder: "username" };
+  const TextInput4 = TextInput_TextInput.TextInput;
+  items6[2] = metroRequire(TextInput4, obj23);
+  const obj24 = {
+    label: "TextInput: pressable leading icon",
+    leadingIcon: AtIcon.AtIcon,
+    leadingPressableProps: {
+      accessibilityLabel: "Mention",
+      onPress() {
+        return null;
+      }
+    },
+    placeholder: "username"
+  };
+  const TextInput5 = TextInput_TextInput.TextInput;
+  items6[3] = metroRequire(TextInput5, obj24);
+  items6[4] = metroRequire(PhoneOrEmailExample, {});
   items1[40] = metroImportDefault(Sample, obj22);
-  items1[41] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Data Types" });
-  items1[42] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Many special input types will have their own components. All inputs use a similar interface and support roughly the same set of props for styling and functionality. Examples will be added as these different types get implemented." });
+  items1[41] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Split Text Input (Deprecated)" });
+  items1[42] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "SplitTextInput is deprecated and should not be used in new work; use TextInput with pressable leading text instead. It's kept here for comparison." });
+  const obj25 = { children: items7 };
+  items7 = [metroRequire(SplitTextInput.SplitTextInput, { label: "SplitTextInput (deprecated)", placeholder: "Phone number", leadingText: "US +1", leadingPressableProps: { accessibilityLabel: "Country code US +1" } }), metroRequire(SplitTextInput.SplitTextInput, { label: "Small", size: "sm", placeholder: "Placeholder", leadingText: "Click", leadingPressableProps: { accessibilityLabel: "Click" } }), metroRequire(SplitTextInput.SplitTextInput, { label: "Medium", size: "md", placeholder: "Placeholder", leadingText: "Me", leadingPressableProps: { accessibilityLabel: "Me" } }), metroRequire(SplitTextInput.SplitTextInput, { label: "Large", size: "lg", placeholder: "Placeholder", leadingText: "Here", leadingPressableProps: { accessibilityLabel: "Here" } })];
+  items1[43] = metroImportDefault(Sample, obj25);
+  items1[44] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Data Types" });
+  items1[45] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Many special input types will have their own components. All inputs use a similar interface and support roughly the same set of props for styling and functionality. Examples will be added as these different types get implemented." });
   return metroRequire(ScrollView, obj);
 };

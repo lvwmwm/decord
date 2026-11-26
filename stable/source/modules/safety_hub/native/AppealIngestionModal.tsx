@@ -1,24 +1,24 @@
-// Module ID: 13584
-// Function ID: 13585
+// Module ID: 14190
+// Function ID: 14191
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 8097, 8072, 1072, 21, 5170, 575, 5783, 504, 13578, 1499, 8073, 13583, 13579, 8071, 7388, 1113, 5790, 7097, 13585, 1260, 13605, 13607, 13609, 13611, 5771, 7264, 2]
+// Dependencies: [5, 32, 19, 17, 8231, 8206, 1072, 21, 5306, 575, 5919, 504, 14184, 1502, 8207, 14189, 14185, 8205, 7415, 1113, 5926, 7493, 14191, 1264, 14211, 14213, 14215, 14217, 5907, 7490, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 13584 (AppealIngestionModal)
+// Module 14190 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import NavigatorHeader from "NavigatorHeader" /* 7097 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 13583 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 14189 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8097 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8072 */;
+import SafetyHubStore from "SafetyHubStore" /* 8231 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ export default function AppealIngestionModal(classificationId) {
   let c0;
   let classification;
   let intl;
-  const f106220 = () => {
+  const f109261 = () => {
     let obj11;
     let obj3;
     let obj5;
@@ -62,7 +62,7 @@ export default function AppealIngestionModal(classificationId) {
     const obj2 = {
       headerLeft: obj3.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
       headerTitle() {
-        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "add" });
+        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "alignItems" });
       },
       render() {
         const obj = { isDsaEligible, isCoppa, isDeveloperClassification };
@@ -77,7 +77,7 @@ export default function AppealIngestionModal(classificationId) {
     const obj4 = {
       headerLeft: obj5.getHeaderBackButton(),
       headerTitle() {
-        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "add" });
+        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "alignItems" });
       },
       render() {
         const obj = { isDsaEligible };
@@ -92,7 +92,7 @@ export default function AppealIngestionModal(classificationId) {
     const obj6 = {
       headerLeft: obj7.getHeaderBackButton(),
       headerTitle() {
-        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "add" });
+        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "alignItems" });
       },
       render() {
         const obj = { isDsaEligible };
@@ -107,7 +107,7 @@ export default function AppealIngestionModal(classificationId) {
     const obj8 = {
       headerLeft: obj9.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
       headerTitle() {
-        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "add" });
+        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "alignItems" });
       },
       render() {
         return closure_1_12(flag(closure_1_3[26]), {});
@@ -121,7 +121,7 @@ export default function AppealIngestionModal(classificationId) {
     const obj10 = {
       headerLeft: obj11.getHeaderCloseButton(AppealIngestionModalActionCreatorsDefault.close),
       headerTitle() {
-        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "add" });
+        return closure_1_12(c0(closure_1_3[10]).Text, { variant: "body-md/normal", children: "alignItems" });
       },
       render() {
         return closure_1_12(flag(closure_1_3[27]), {});
@@ -154,9 +154,9 @@ export default function AppealIngestionModal(classificationId) {
   if (!flag2) {
     flag2 = false;
   }
-  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5771)(f106220), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
-  flag(5771)(f106220);
-  const Navigator = tmp(7264).Navigator;
+  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5907)(f109261), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
+  flag(5907)(f109261);
+  const Navigator = tmp(7490).Navigator;
   intl = tmp(1113).intl;
   return closure_12(Navigator, obj2);
 };

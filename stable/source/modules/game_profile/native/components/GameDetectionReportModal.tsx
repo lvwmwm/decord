@@ -1,20 +1,20 @@
-// Module ID: 9731
-// Function ID: 9732
+// Module ID: 10495
+// Function ID: 10496
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1499, 9454, 9254, 9732, 9257, 6831, 1113, 7663, 7153, 7097, 5783, 7157, 7160, 7181, 5790, 7349, 7264, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1502, 10286, 10253, 10496, 10256, 6838, 1113, 7427, 7549, 7493, 5919, 7745, 7747, 7619, 5926, 7859, 7490, 2]
 // Exports: default
 
-// Module 9731 (GameDetectionReportModal)
+// Module 10495 (GameDetectionReportModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import NavigatorHeader from "NavigatorHeader" /* 7097 */;
-import Navigator from "Navigator" /* 7264 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9454 */;
+import Navigator from "Navigator" /* 7490 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation, results;

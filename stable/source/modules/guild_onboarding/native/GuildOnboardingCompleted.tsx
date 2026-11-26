@@ -1,22 +1,22 @@
-// Module ID: 7446
-// Function ID: 7447
+// Module ID: 7938
+// Function ID: 7939
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 5171, 5076, 5041, 1385, 7364, 21, 5170, 575, 1499, 504, 7393, 5231, 7447, 1411, 2021, 1380, 5422, 1652, 5402, 5874, 7388, 5783, 1113, 1187, 7448, 7053, 2166, 7472, 5790, 2]
+// Dependencies: [19, 17, 5307, 5212, 5177, 1388, 7869, 21, 5306, 575, 1502, 504, 7891, 5367, 7939, 1414, 2024, 1255, 5558, 1655, 5538, 6010, 7415, 5919, 1113, 1187, 7940, 7720, 2169, 7964, 5926, 2]
 // Exports: default
 
-// Module 7446 (GuildOnboardingCompleted)
+// Module 7938 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 575 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7448 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7940 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import GuildRoleStore from "GuildRoleStore" /* 5076 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import UserStore from "UserStore" /* 1385 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7364 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import GuildRoleStore from "GuildRoleStore" /* 5212 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserStore from "UserStore" /* 1388 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7869 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let duration, navigation;

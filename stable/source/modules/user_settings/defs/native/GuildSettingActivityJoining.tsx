@@ -1,15 +1,15 @@
-// Module ID: 18292
-// Function ID: 18293
+// Module ID: 18581
+// Function ID: 18582
 // Name: GuildSettingActivityJoining
-// Dependencies: [18278, 8536, 4995, 7260, 11717, 1113, 2]
+// Dependencies: [18567, 9202, 5131, 7813, 12408, 1113, 2]
 
-// Module 18292 (GuildSettingActivityJoining)
+// Module 18581 (GuildSettingActivityJoining)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7260 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18278 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18567 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 let c2;

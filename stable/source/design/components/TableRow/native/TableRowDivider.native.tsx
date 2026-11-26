@@ -1,29 +1,35 @@
-// Module ID: 7068
-// Function ID: 7069
+// Module ID: 7453
+// Function ID: 7454
 // Name: TableRowDivider
-// Dependencies: [19, 17, 7069, 21, 5170, 575, 5756, 2]
+// Dependencies: [19, 17, 7454, 21, 5306, 5932, 575, 5892, 2]
 // Exports: TableRowDivider
 
-// Module 7068 (TableRowDivider)
+// Module 7453 (TableRowDivider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5756 */;
-import TableRowConstants from "TableRowConstants" /* 7069 */;
+import useToken from "useToken" /* 5892 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
+import TableRowConstants from "TableRowConstants" /* 7454 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const TABLE_DIVIDER_WIDTH = TableRowConstants.TABLE_DIVIDER_WIDTH;
 const jsx = Fragment.jsx;
-let closure_6 = createStyles.createStyles((arg0, arg1) => {
+let closure_6 = createStyles.createStyles((arg0, arg1, arg2) => {
   let num;
-  const obj = { height: TABLE_DIVIDER_WIDTH, paddingStart: num, marginTop: -TABLE_DIVIDER_WIDTH };
+  let num2;
+  const obj = { height: TABLE_DIVIDER_WIDTH, paddingStart: num + num2, marginTop: -TABLE_DIVIDER_WIDTH };
   num = 12;
   const tmp2 = arg0;
   if (tmp2) {
-    num = arg1;
+    num = arg2;
+  }
+  num2 = 0;
+  if (arg1) {
+    num2 = ButtonConstants.MEDIUM_BUTTON_HEIGHT - 8;
   }
   const obj2 = { container: obj, divider: { height: TABLE_DIVIDER_WIDTH, backgroundColor: nativeDefault.colors.BORDER_SUBTLE } };
   ({ height: TABLE_DIVIDER_WIDTH, backgroundColor: nativeDefault.colors.BORDER_SUBTLE });
@@ -36,7 +42,11 @@ export function TableRowDivider(adjustSpacingForIcon) {
   if (flag === undefined) {
     flag = false;
   }
+  let flag2 = adjustSpacingForIcon.adjustSpacingForDragHandle;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
   const obj = useToken;
-  const tmp = closure_6(flag, obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_DIVIDER_PADDING));
+  const tmp = closure_6(flag, flag2, obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_DIVIDER_PADDING));
   return <View style={tmp.container}>{null}</View>;
 }

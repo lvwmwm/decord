@@ -1,11 +1,11 @@
-// Module ID: 20379
-// Function ID: 20380
+// Module ID: 20719
+// Function ID: 20720
 // Name: useCreatorMonetizationIneligibleReasons
-// Dependencies: [20328, 2]
+// Dependencies: [20668, 2]
 // Exports: useCreatorMonetizationIneligibleReasons
 
-// Module 20379 (useCreatorMonetizationIneligibleReasons)
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 20328 */;
+// Module 20719 (useCreatorMonetizationIneligibleReasons)
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 20668 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationIneligibleReasons.tsx");

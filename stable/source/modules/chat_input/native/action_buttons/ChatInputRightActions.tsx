@@ -1,21 +1,21 @@
-// Module ID: 14261
-// Function ID: 14262
+// Module ID: 14849
+// Function ID: 14850
 // Name: ChatInputRightActions
-// Dependencies: [32, 19, 17, 13055, 21, 5170, 575, 5756, 5231, 14262, 1625, 12741, 13056, 1652, 13054, 14070, 2]
+// Dependencies: [32, 19, 17, 13806, 21, 5306, 575, 5892, 5367, 14850, 1628, 13511, 13807, 1655, 13805, 14654, 2]
 
-// Module 14261 (ChatInputRightActions)
+// Module 14849 (ChatInputRightActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import native from "native" /* 5231 */;
-import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13054 */;
-import ChatInputConstants from "ChatInputConstants" /* 13055 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13056 */;
-import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14070 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import native from "native" /* 5367 */;
+import ChatInputActionButtonTransitionItem from "ChatInputActionButtonTransitionItem" /* 13805 */;
+import ChatInputConstants from "ChatInputConstants" /* 13806 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 13807 */;
+import ChatInputActionButtonGiftOrThreadDefault from "ChatInputActionButtonGiftOrThread" /* 14654 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -43,9 +43,9 @@ class ChatInputRightActions {
     ({ onPressExpression, suggestedExpressions } = channel);
     react = undefined;
     ({ shouldShowGiftButton, suggestedExpressionsRef, ref } = channel);
-    let obj = channel(5756);
+    let obj = channel(5892);
     const token = obj.useToken(onPressAction(575).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-    const obj2 = channel(5756);
+    const obj2 = channel(5892);
     const sum = token + 2 * obj2.useToken(onPressAction(575).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
     dependencyMap = sum;
     const tmp6 = closure_9();
@@ -69,7 +69,7 @@ class ChatInputRightActions {
     const tmp3 = onPressAction;
     if (shouldShowGiftButton) {
       let tmp16;
-      const TransitionItem = tmp(5231).TransitionItem;
+      const TransitionItem = tmp(5367).TransitionItem;
       const tmp15 = closure_7;
       if (tmp8) {
         tmp16 = memo;
@@ -79,13 +79,13 @@ class ChatInputRightActions {
     }
     items1 = [tmp15Result, ];
     if (null != suggestedExpressions) {
-      const obj5 = { ref: suggestedExpressionsRef, active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression, channel };
-      const EmojiSuggestionChatButton = tmp(14262).EmojiSuggestionChatButton;
+      const obj5 = { ref: suggestedExpressionsRef, active: keyboardType === channel(1628).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression, channel };
+      const EmojiSuggestionChatButton = tmp(14850).EmojiSuggestionChatButton;
       const merged = Object.assign(suggestedExpressions);
       tmp19 = closure_7(EmojiSuggestionChatButton, obj5);
     } else {
-      const obj6 = { active: keyboardType === channel(1625).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
-      const tmp3Result = tmp3(12741);
+      const obj6 = { active: keyboardType === channel(1628).KeyboardTypes.EXPRESSION, showKeyboardIcon, onPress: onPressExpression };
+      const tmp3Result = tmp3(13511);
       tmp19 = closure_7(tmp3Result, obj6);
     }
     items1[1] = tmp19;
@@ -106,10 +106,10 @@ function LeftSlot(state) {
   const YEETED = native.TransitionStates.YEETED;
   const obj = { visible: state !== YEETED, initiallyVisible: state !== native.TransitionStates.ENTERED, enterDelayMs, onExitComplete: cleanup };
   ({ animatedStyle, isInteractive } = useChatInputFloatingBounceDefault(obj));
-  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "flexDirection", shouldShowThread: "en-BE" }) };
+  const obj2 = { style: items, children: metroImportDefault(ChatInputActionButtonGiftOrThreadDefault, { canStartThreads: false, channel, onPress, styleButton: "Path", shouldShowThread: "Hong Kong" }) };
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
   useChatInputFloatingBounceDefault(obj);
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   const obj3 = ChatInputActionButtonTransitionItem;
   const merged = Object.assign(obj3.interactivityProps(isInteractive));
   return metroImportDefault(View, obj2);

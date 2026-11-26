@@ -1,14 +1,14 @@
-// Module ID: 7488
-// Function ID: 7489
+// Module ID: 7235
+// Function ID: 7236
 // Name: ConjureServerProjectRouteStore
-// Dependencies: [6932, 5026, 504, 7489, 572, 2]
+// Dependencies: [7017, 5162, 504, 7236, 572, 2]
 
-// Module 7488 (ConjureServerProjectRouteStore)
+// Module 7235 (ConjureServerProjectRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import conjureServerProject from "conjureServerProject" /* 7489 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import conjureServerProject from "conjureServerProject" /* 7236 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
@@ -24,7 +24,7 @@ class ConjureServerProjectRouteStore extends Store {
     if (null != value) {
       let tmp6 = null;
       const obj = conjureServerProject;
-      if (obj.conjureServerProjectGuildId(ConjureProjectStore.getProject(value)) === id) {
+      if (obj.isConjureServerProjectIn(ConjureProjectStore.getProject(value), id)) {
         tmp6 = value;
       }
       tmp2 = tmp6;

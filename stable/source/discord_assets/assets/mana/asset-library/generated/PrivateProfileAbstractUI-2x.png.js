@@ -1,8 +1,8 @@
-// Module ID: 18827
-// Function ID: 18828
+// Module ID: 19146
+// Function ID: 19147
 // Dependencies: [2]
 
-// Module 18827
+// Module 19146
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PrivateProfileAbstractUI-2x.png.js");

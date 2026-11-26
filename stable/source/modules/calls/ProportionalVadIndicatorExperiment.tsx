@@ -1,10 +1,10 @@
-// Module ID: 6045
-// Function ID: 6046
+// Module ID: 6181
+// Function ID: 6182
 // Name: ProportionalVadIndicatorExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1453, 2]
 
-// Module 6045 (ProportionalVadIndicatorExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1450 */;
+// Module 6181 (ProportionalVadIndicatorExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

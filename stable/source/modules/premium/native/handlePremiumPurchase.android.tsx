@@ -1,18 +1,18 @@
-// Module ID: 10718
-// Function ID: 10719
+// Module ID: 9612
+// Function ID: 9613
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 10067, 502, 2176, 7706, 1072, 1083, 1282, 10719, 6611, 10720, 1113, 4990, 6122, 7702, 504, 7736, 10722, 10723, 10711, 10729, 7511, 4983, 10066, 1252, 2]
+// Dependencies: [109, 5, 19, 9613, 502, 2179, 9302, 1072, 1083, 1285, 9614, 6747, 9615, 1113, 5126, 6258, 8580, 504, 9310, 9621, 9622, 9684, 9685, 7254, 5118, 9686, 1256, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10718 (handlePremiumPurchase)
+// Module 9612 (handlePremiumPurchase)
 import Constants2 from "Constants" /* 1083 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 10067 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9613 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import IAPStore from "IAPStore" /* 7706 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import IAPStore from "IAPStore" /* 9302 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let obj = function _validatePurchase() {
               ({ productId: c0, premiumSubscription: c1, offerId: c2, currency: c3, price: c4, isGift: c5 } = closure_0);
               is_gift = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else {
             let self;
@@ -485,7 +485,7 @@ export function useHandlePremiumPurchase() {
     flag = tmp207.isOneTimePurchase ?? false;
     flag2 = tmp207.allowPlanChange ?? true;
     ({ applicationId: c9, giftInfoOptions: c10, googleOfferId: c11, onPurchaseComplete: c12, onPurchaseError: c13 } = premiumSubscription);
-    return "flexDirection";
+    return "Path";
   });
   const items1 = [tmp5, paymentGatewayPlanId, prop, id, premiumTrialOffer, premiumDiscountOffer, stateFromStores, isEligibleForBogoOffer];
   return useCallback(function() {

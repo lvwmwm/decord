@@ -1,10 +1,10 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 12345
+// Function ID: 12346
 // Name: PinotDraft
 // Dependencies: [2]
 // Exports: draftFromFeature, eligibleChannelIds, isDraftDirty, patchBodyForDraft
 
-// Module 11508 (PinotDraft)
+// Module 12345 (PinotDraft)
 import size from "module_2" /* 2 */;
 
 let eligible;
@@ -13,11 +13,11 @@ const result = size.fileFinishedImporting("modules/pinot/PinotDraft.tsx");
 
 export function draftFromFeature(enabled) {
   let found;
-  const f100942 = (channelId) => channelId.channelId;
+  const f104814 = (channelId) => channelId.channelId;
   const channels = enabled.channels;
-  const obj = { enabled: enabled.enabled, includedChannelIds: new Set(found.map(f100942)) };
+  const obj = { enabled: enabled.enabled, includedChannelIds: new Set(found.map(f104814)) };
   found = channels.filter((included) => included.included);
-  new Set(found.map(f100942));
+  new Set(found.map(f104814));
   return obj;
 }
 export function isDraftDirty(enabled, enabled2) {

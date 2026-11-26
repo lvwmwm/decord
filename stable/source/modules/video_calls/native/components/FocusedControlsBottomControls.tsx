@@ -1,29 +1,29 @@
-// Module ID: 12060
-// Function ID: 12061
+// Module ID: 12927
+// Function ID: 12928
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 11162, 11163, 1072, 21, 1377, 5170, 575, 6810, 1187, 1627, 1652, 12061, 1092, 1113, 5755, 5402, 5452, 1705, 10402, 1493, 11911, 1108, 5231, 5760, 5177, 11382, 2]
+// Dependencies: [32, 19, 17, 11003, 11004, 1072, 21, 1380, 5306, 575, 6816, 1187, 1630, 1655, 12928, 1092, 1113, 5891, 5538, 5588, 1708, 11345, 1496, 12732, 1108, 5367, 5896, 5313, 11974, 2]
 // Exports: default
 
-// Module 12060 (FocusedControlsBottomControls)
+// Module 12927 (FocusedControlsBottomControls)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import CallPTTButton from "CallPTTButton" /* 11382 */;
-import useCanShowTooltip from "useCanShowTooltip" /* 12061 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import CallPTTButton from "CallPTTButton" /* 11974 */;
+import useCanShowTooltip from "useCanShowTooltip" /* 12928 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 11162 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 11163 */;
+import ChannelCallStore from "ChannelCallStore" /* 11003 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11004 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import TextStyles from "TextStyles" /* 6810 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size_mod from "module_2" /* 2 */;
 
 const CallPTTButtonDefault = CallPTTButton;
@@ -45,8 +45,8 @@ let obj3;
 let rect;
 let tmp2;
 let unpackModuleId;
-const _modDef1652 = tmp2(1652);
-const ActionSheetHeaderBar = tmp2(5755);
+const _modDef1655 = tmp2(1655);
+const ActionSheetHeaderBar = tmp2(5891);
 function FocusedControlsExpanded(availableHeight) {
   let closure_3;
   let expandedControls;
@@ -70,7 +70,7 @@ function FocusedControlsExpanded(availableHeight) {
       closure_3(nativeEvent.nativeEvent.layout.height > availableHeight - bottom);
     }
   }, items);
-  let obj = _mod1652;
+  let obj = _mod1655;
   const items1 = [closure_20, positionY, 20];
   let c0;
   let c1;
@@ -92,7 +92,7 @@ function FocusedControlsExpanded(availableHeight) {
   FocusedControlsBottomControlsTsx1.__workletHash = 1609383098366;
   FocusedControlsBottomControlsTsx1.__initData = tmp7;
   const obj2 = { style: { height: availableHeight }, children: map1(metroImportDefault, obj3) };
-  obj3 = { scrollEnabled: first, children: map1(_modDef1652.View, obj4) };
+  obj3 = { scrollEnabled: first, children: map1(_modDef1655.View, obj4) };
   const animatedStyle = obj.useAnimatedStyle(FocusedControlsBottomControlsTsx1);
   obj4 = { style: items3, onLayout: callback, children: expandedControls };
   items3 = [tmp.expandedControlsContainer, animatedStyle];
@@ -108,7 +108,7 @@ function FocusedControlsBottomDrawerTooltip(positionY) {
   const tmp = closure_17();
   let obj = useCanShowTooltip;
   const canShowTooltip = obj.useCanShowTooltip(ConstantsIOS.TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  _mod1652;
+  _mod1655;
   const items = [closure_22, positionY, 20];
   let c0;
   let c1;
@@ -126,7 +126,7 @@ function FocusedControlsBottomDrawerTooltip(positionY) {
   let tmp10 = null;
   if (canShowTooltip) {
     const obj2 = { style: tmp9, children: map1(Tooltip, obj5) };
-    const View = _modDef1652.View;
+    const View = _modDef1655.View;
     obj5 = { style: tmp.tooltipStyle, arrowPosition: native.TooltipArrowPositions.CENTER, arrowDirection: native.TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: intl.string(intl2.t.zYzy2i) };
     Tooltip = tmp2(1187).Tooltip;
     ({ containerStyle: obj3.containerStyle, labelStyle: obj3.labelStyle } = tmp);
@@ -153,7 +153,7 @@ function FocusedControlsAboveActionBarView(arg0) {
   ({ positionY, aboveActionBar } = arg0);
   ({ offsetY, onPressHeader, isExpanded } = arg0);
   const tmp = closure_17();
-  let obj = _mod1652;
+  let obj = _mod1655;
   const items = [closure_24, offsetY, 20, positionY];
   let c0;
   let c1;
@@ -175,12 +175,12 @@ function FocusedControlsAboveActionBarView(arg0) {
   items2 = [map1(FocusedControlsBottomDrawerTooltip, { positionY }), map1(ActionSheetHeaderBar.ActionSheetHeaderBar, {}), ];
   let tmp9Result = null != aboveActionBar;
   const tmp10 = metroRequire;
-  tmp11 = authStore3;
+  tmp11 = gesture;
   tmp12 = hasOwnProperty;
   if (tmp9Result) {
     obj4 = { style: items3, children: aboveActionBar };
     items3 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
-    tmp9Result = tmp9(_modDef1652.View, obj4);
+    tmp9Result = tmp9(_modDef1655.View, obj4);
   }
   items2[2] = tmp9Result;
   return map1(tmp10, obj2);
@@ -731,7 +731,7 @@ export default function FocusedControlsBottomControls(omitPTT) {
   items = [header, actionBar, ];
   let tmp4Result = null;
   const tmp5 = FocusedControlsBottomDrawer;
-  tmp6 = authStore3;
+  tmp6 = gesture;
   tmp7 = hasOwnProperty;
   if (!flag) {
     const obj3 = { look: CallPTTButton.CallPTTButtonLooks.BLUR, style: tmp.ptbButton, sendCallback: metroImportAll, stopCallback };

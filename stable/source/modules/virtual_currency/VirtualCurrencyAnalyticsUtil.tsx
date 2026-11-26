@@ -1,12 +1,12 @@
-// Module ID: 17254
-// Function ID: 17255
+// Module ID: 17530
+// Function ID: 17531
 // Name: VirtualCurrencyAnalyticsUtil
-// Dependencies: [1072, 1252, 2]
+// Dependencies: [1072, 1256, 2]
 // Exports: trackOrbsClick
 
-// Module 17254 (VirtualCurrencyAnalyticsUtil)
+// Module 17530 (VirtualCurrencyAnalyticsUtil)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

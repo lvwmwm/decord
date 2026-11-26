@@ -1,28 +1,31 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 12425
+// Function ID: 12426
 // Name: useDrawerWidth
-// Dependencies: [5203, 1072, 5351, 5349, 11735, 504, 2]
+// Dependencies: [5339, 1072, 5487, 5485, 12426, 504, 2]
 // Exports: useDrawerWidth
 
-// Module 11734 (useDrawerWidth)
+// Module 12425 (useDrawerWidth)
 import get_initialized from "get initialized" /* 504 */;
-import useChatLayoutDefault from "useChatLayout" /* 5349 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5351 */;
-import useFoldSeamDefault from "useFoldSeam" /* 11735 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import useChatLayoutDefault from "useChatLayout" /* 5485 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5487 */;
+import useFoldSeamDefault from "useFoldSeam" /* 12426 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
+let guildId;
+
+let hasOwnProperty;
+let metroRequire;
 const DM_WIDTH = Constants.DM_WIDTH;
-const MOBILE_GUILD_UPSELL_LIST = Constants.MOBILE_GUILD_UPSELL_LIST;
+({ MOBILE_GUILD_UPSELL_LIST: hasOwnProperty, WATERWHEELS: metroRequire } = Constants);
 const sum = 260 + DM_WIDTH;
-const metroRequire = sum;
-let closure_7 = 300 + DM_WIDTH;
+const metroImportDefault = sum;
+let closure_8 = 300 + DM_WIDTH;
 const result = size.fileFinishedImporting("modules/screen/native/drawer/useDrawerWidth.tsx");
 
 export const DRAWER_LEFT_WIDTH_MIN = sum;
 export function useDrawerWidth(arg0) {
-  let guildId;
   let isChatBesideChannelList;
   let isChatLockedOpen;
   let obj = arg0;
@@ -37,7 +40,10 @@ export function useDrawerWidth(arg0) {
   const items = [SelectedGuildStore];
   const obj2 = get_initialized;
   if (isChatBesideChannelList) {
-    if (!obj2.useStateFromStores(items, () => guildId.getGuildId() === MOBILE_GUILD_UPSELL_LIST)) {
+    if (!obj2.useStateFromStores(items, () => {
+      guildId = guildId.getGuildId();
+      return guildId === closure_1_5 || guildId === closure_1_6;
+    })) {
       let bound2;
       let seam;
       if (tmp2 != null) {
@@ -70,19 +76,19 @@ export function useDrawerWidth(arg0) {
             return bound;
           }
           if (isChatLockedOpen) {
-            bound1 = metroRequire;
+            bound1 = metroImportDefault;
           } else {
             const _Math2 = Math;
-            bound1 = Math.min(closure_7, width - 32);
+            bound1 = Math.min(closure_8, width - 32);
           }
           settledSeam = bound1;
         }
       }
       if (isChatLockedOpen) {
-        bound2 = metroRequire;
+        bound2 = metroImportDefault;
       } else {
         const _Math = Math;
-        bound2 = Math.min(closure_7, width - 32);
+        bound2 = Math.min(closure_8, width - 32);
       }
       seam = bound2;
     }

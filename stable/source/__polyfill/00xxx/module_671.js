@@ -13,10 +13,10 @@ let fn = function n() {
     obj = chroma$k(color);
     const rgbResult = obj.rgb();
     obj2 = chroma$k(color);
-    return chroma$k.rgb(f122396(rgbResult, obj2.rgb()));
+    return chroma$k.rgb(f125123(rgbResult, obj2.rgb()));
   };
-  const f1223962 = (arg0, arg1) => {
-    const items = [f122396(arg0[0], arg1[0]), f122396(arg0[1], arg1[1]), f122396(arg0[2], arg1[2])];
+  const f1251232 = (arg0, arg1) => {
+    const items = [f125123(arg0[0], arg1[0]), f125123(arg0[1], arg1[1]), f125123(arg0[2], arg1[2])];
     return items;
   };
   let obj = {};
@@ -3773,13 +3773,13 @@ let fn = function n() {
       throw error;
     }
   }
-  const f80393 = (arg0) => arg0;
+  const f82295 = (arg0) => arg0;
   blend.normal = normal;
-  const f80394 = (arg0, arg1) => arg0 * arg1 / 255;
+  const f82296 = (arg0, arg1) => arg0 * arg1 / 255;
   blend.multiply = normal;
-  const f80395 = (arg0, arg1) => 255 * (1 - (1 - arg0 / 255) * (1 - arg1 / 255));
+  const f82297 = (arg0, arg1) => 255 * (1 - (1 - arg0 / 255) * (1 - arg1 / 255));
   blend.screen = normal;
-  const f80396 = (arg0, arg1) => {
+  const f82298 = (arg0, arg1) => {
     if (arg1 < 128) {
       result = 2 * arg0 * arg1 / 255;
     } else {
@@ -3788,7 +3788,7 @@ let fn = function n() {
     return result;
   };
   blend.overlay = normal;
-  const f80397 = (arg0, arg1) => {
+  const f82299 = (arg0, arg1) => {
     let tmp = arg0;
     if (arg0 > arg1) {
       tmp = arg1;
@@ -3796,7 +3796,7 @@ let fn = function n() {
     return tmp;
   };
   blend.darken = normal;
-  const f80398 = (arg0, arg1) => {
+  const f82300 = (arg0, arg1) => {
     let tmp = arg1;
     if (arg0 > arg1) {
       tmp = arg0;
@@ -3804,7 +3804,7 @@ let fn = function n() {
     return tmp;
   };
   blend.lighten = normal;
-  const f80399 = (arg0, arg1) => {
+  const f82301 = (arg0, arg1) => {
     let num = 255;
     if (255 !== arg0) {
       result = arg1 / 255 * 255 / (1 - arg0 / 255);
@@ -3816,8 +3816,8 @@ let fn = function n() {
     return num;
   };
   blend.dodge = normal;
-  const f80400 = (arg0, arg1) => 255 * (1 - (1 - arg1 / 255) / (arg0 / 255));
-  const f122396 = f1223962;
+  const f82302 = (arg0, arg1) => 255 * (1 - (1 - arg1 / 255) / (arg0 / 255));
+  const f125123 = f1251232;
   blend.burn = normal;
   pow = Math.pow;
   sin = Math.sin;

@@ -1,12 +1,12 @@
-// Module ID: 13951
-// Function ID: 13952
+// Module ID: 14536
+// Function ID: 14537
 // Name: CustomizationControls
-// Dependencies: [21, 13952, 2]
+// Dependencies: [21, 14537, 2]
 // Exports: default
 
-// Module 13951 (CustomizationControls)
+// Module 14536 (CustomizationControls)
 import Fragment from "Fragment" /* 21 */;
-import TraitPickerControlsDefault from "TraitPickerControls" /* 13952 */;
+import TraitPickerControlsDefault from "TraitPickerControls" /* 14537 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

@@ -1,14 +1,14 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 13601
+// Function ID: 13602
 // Name: useConjureTipContext
-// Dependencies: [1385, 11021, 12292, 504, 12849, 12850, 12847, 12851, 11052, 12828, 12853, 2]
+// Dependencies: [1388, 7379, 13164, 504, 13602, 13603, 13600, 13604, 7388, 13579, 13606, 2]
 // Exports: default
 
-// Module 12848 (useConjureTipContext)
-import conjureTipImpressions from "conjureTipImpressions" /* 12847 */;
-import conjureTipDismissals from "conjureTipDismissals" /* 12853 */;
-import UserStore from "UserStore" /* 1385 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 11021 */;
+// Module 13601 (useConjureTipContext)
+import conjureTipImpressions from "conjureTipImpressions" /* 13600 */;
+import conjureTipDismissals from "conjureTipDismissals" /* 13606 */;
+import UserStore from "UserStore" /* 1388 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 7379 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

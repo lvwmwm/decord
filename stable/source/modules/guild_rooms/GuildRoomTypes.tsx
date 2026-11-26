@@ -1,9 +1,9 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 6858
+// Function ID: 6859
 // Name: GuildRoomTypes
 // Dependencies: [2]
 
-// Module 8017 (GuildRoomTypes)
+// Module 6858 (GuildRoomTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomTypes.tsx");

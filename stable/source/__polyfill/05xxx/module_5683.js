@@ -1,41 +1,30 @@
 // Module ID: 5683
 // Function ID: 5684
-// Dependencies: [5665, 19, 5684]
-// Exports: useLayoutState
+// Dependencies: [5659, 5676, 5650]
+// Exports: useLongPressGesture
 
 // Module 5683
-import react2 from "react" /* 5684 */;
-import _slicedToArray from "_slicedToArray" /* 5665 */;
-import react from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 5650 */;
+import _mod5659 from "module_5659" /* 5659 */;
+import _mod5676 from "module_5676" /* 5676 */;
 
-let c3;
-let closure_4;
-({ useState: c3, useCallback: closure_4 } = react);
+function transformLongPressProps(shouldCancelWhenOutside) {
+  if (undefined === shouldCancelWhenOutside.shouldCancelWhenOutside) {
+    shouldCancelWhenOutside.shouldCancelWhenOutside = true;
+  }
+  return shouldCancelWhenOutside;
+}
+const items = [["minDuration", "minDurationMs"], ["maxDistance", "maxDist"]];
+const map = new Map(items);
+let closure_4 = {};
 
-export function useLayoutState(arg0) {
-  let closure_0;
-  let first;
-  [first, closure_0] = _false(arg0);
-  let obj = react2;
-  const recyclerViewContext = obj.useRecyclerViewContext();
-  const items = [first, ];
-  const items1 = [recyclerViewContext];
-  items[1] = React3((arg0, arg1) => {
-    closure_0 = arg0;
-    const tmp = closure_0((arg0) => {
-      let tmpResult = closure_0;
-      if (typeof closure_0 === "function") {
-        tmpResult = tmp(arg0);
-      }
-      return tmpResult;
-    });
-    const tmp2 = arg1;
-    if (!tmp2) {
-      const obj = recyclerViewContext;
-      if (recyclerViewContext != null) {
-        obj.layout();
-      }
-    }
-  }, items1);
-  return items;
+export function useLongPressGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_4;
+  }
+  const obj = _mod5659;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformLongPressProps);
+  const obj2 = _mod5676;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.LongPress, clonedAndRemappedConfig);
 }

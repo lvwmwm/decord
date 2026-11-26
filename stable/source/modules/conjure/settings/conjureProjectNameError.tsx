@@ -1,13 +1,13 @@
-// Module ID: 12311
-// Function ID: 12312
+// Module ID: 13185
+// Function ID: 13186
 // Name: conjureProjectNameError
-// Dependencies: [1113, 4026, 6933, 2]
+// Dependencies: [1113, 4131, 7018, 2]
 // Exports: conjureProjectNameError
 
-// Module 12311 (conjureProjectNameError)
+// Module 13185 (conjureProjectNameError)
 import intl3 from "intl" /* 1113 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6933 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureProjectNameError.tsx");
@@ -16,7 +16,7 @@ export function conjureProjectNameError(trimmed) {
   let stringResult;
   if ("" === trimmed) {
     const intl2 = intl3.intl;
-    stringResult = intl2.string(_modDef4026.l669D8);
+    stringResult = intl2.string(_modDef4131.l669D8);
   } else {
     stringResult = null;
     if (trimmed.length < ConjureProjectTypes.MIN_PROJECT_NAME_LENGTH) {

@@ -1,28 +1,28 @@
-// Module ID: 5004
-// Function ID: 5005
+// Module ID: 5140
+// Function ID: 5141
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1231, 5005, 5006, 5011, 5016, 1072, 5010, 5017, 11, 5000, 5224, 504, 5003, 572, 5846, 1252, 5007, 5847, 2]
+// Dependencies: [32, 5, 1231, 5141, 5142, 5147, 5152, 1072, 5146, 5153, 11, 5136, 5360, 504, 5139, 572, 5982, 1256, 5143, 5983, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
-// Module 5004 (DismissibleContentUtils)
+// Module 5140 (DismissibleContentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import DCFEventStore from "DCFEventStore" /* 5005 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 5010 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 5017 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5224 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5846 */;
-import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5847 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5136 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import DCFEventStore from "DCFEventStore" /* 5141 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 5146 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 5153 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5360 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5982 */;
+import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5983 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 5006 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 5011 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 5142 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 5147 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let c9;
 let metroImportAll;
 let tmp7;
 let unpackModuleId;
-const DismissibleContentFatigueConfig = tmp7(5007);
+const DismissibleContentFatigueConfig = tmp7(5143);
 function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed) {
   let str;
   obj = { lastDismissedVersion: versionedDismissibleContentCurrentVersion, lastDismissedAtMs: str.toString(), lastDismissedObjectId: "0", numTimesDismissed: nextNumTimesDismissed };
@@ -475,7 +475,7 @@ const DCFEventTypes = DCFEventStore.DCFEventTypes;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let c14 = 2592000000;
-let items = [dismissible_content.DismissibleContent.ACCOUNT_LINK_INVITE_FRIENDS];
+let items = [dismissible_content.DismissibleContent.ACCOUNT_LINK_INVITE_FRIENDS, dismissible_content.DismissibleContent.AUTOCLIPPING_EARLY_ACCESS_FIRST_CALL_EDUCATION, dismissible_content.DismissibleContent.AUTOCLIPPING_EARLY_ACCESS_RTC_NUDGE_ACKNOWLEDGMENT];
 const set = new Set(items);
 let result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentUtils.tsx");
 
@@ -739,7 +739,7 @@ export function requestMarkDismissibleContentAsShown(PASSWORDLESS_UPSELL, guildI
   importDefault = guildId;
   let hasUserHitDCCapResult = closure_10(PASSWORDLESS_UPSELL);
   if (!hasUserHitDCCapResult) {
-    const tmp3 = null;
+    let tmp3 = null;
     guildId = undefined;
     const hasUserHitDCCap = DismissibleContentFrameworkStore.hasUserHitDCCap;
     if (guildId != null) {
@@ -770,16 +770,23 @@ export function requestMarkDismissibleContentAsShown(PASSWORDLESS_UPSELL, guildI
       content: PASSWORDLESS_UPSELL,
       groupName,
       onAdded(arg0) {
+          let prop;
+          if (closure_1 != null) {
+            prop = tmp.deduplicateImpressions;
+          }
           guildId = undefined;
+          const tmp3 = true === prop && null != DismissibleContentFrameworkStore.getRenderedAtTimestamp(PASSWORDLESS_UPSELL);
           const handleDCShownToUser = DismissibleContentFrameworkActionCreators.handleDCShownToUser;
           DismissibleContentFrameworkActionCreators;
           if (closure_1 != null) {
-            guildId = tmp3.guildId;
+            guildId = tmp.guildId;
           }
           handleDCShownToUser(PASSWORDLESS_UPSELL, guildId);
-          trackDismissibleContentShown(PASSWORDLESS_UPSELL, closure_1, arg0);
+          if (!tmp3) {
+            trackDismissibleContentShown(PASSWORDLESS_UPSELL, closure_1, arg0);
+          }
           if (closure_1 != null) {
-            const onShown = tmp3.onShown;
+            const onShown = tmp.onShown;
             if (onShown != null) {
               onShown();
             }

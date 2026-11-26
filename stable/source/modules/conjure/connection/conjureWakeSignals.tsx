@@ -1,13 +1,13 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 15986
+// Function ID: 15987
 // Name: conjureWakeSignals
-// Dependencies: [1377, 4981, 1477, 2]
+// Dependencies: [1380, 5116, 1480, 2]
 // Exports: listenForConjureWake
 
-// Module 11133 (conjureWakeSignals)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import NetworkUtilsDefault from "NetworkUtils" /* 1477 */;
-import DiscordNativeDefault from "DiscordNative" /* 4981 */;
+// Module 15986 (conjureWakeSignals)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import NetworkUtilsDefault from "NetworkUtils" /* 1480 */;
+import DiscordNativeDefault from "DiscordNative" /* 5116 */;
 import size from "module_2" /* 2 */;
 
 let c3 = false;

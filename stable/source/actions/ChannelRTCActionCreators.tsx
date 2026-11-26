@@ -1,13 +1,13 @@
-// Module ID: 5920
-// Function ID: 5921
+// Module ID: 6056
+// Function ID: 6057
 // Name: ChannelRTCActionCreators
-// Dependencies: [1072, 572, 1252, 5921, 1108, 2]
+// Dependencies: [1072, 572, 1256, 6057, 1108, 2]
 
-// Module 5920 (ChannelRTCActionCreators)
+// Module 6056 (ChannelRTCActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -74,10 +74,11 @@ let obj = {
     const obj2 = { type: "CHANNEL_RTC_UPDATE_STAGE_VIDEO_LIMIT_BOOST_UPSELL_DISMISSED", channelId, dismissed };
     obj.dispatch(obj2);
   },
-  updateChatOpen(channelId, shown) {
-    _require = channelId;
+  updateChatOpen(id, shown) {
+    let channelId;
+    _require = id;
     let obj = DispatcherDefault;
-    const obj2 = { type: "CHANNEL_RTC_UPDATE_CHAT_OPEN", channelId, chatOpen: shown };
+    const obj2 = { type: "CHANNEL_RTC_UPDATE_CHAT_OPEN", channelId: id, chatOpen: shown };
     obj.dispatch(obj2);
     if (shown) {
       const _setTimeout = setTimeout;

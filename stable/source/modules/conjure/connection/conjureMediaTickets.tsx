@@ -1,11 +1,11 @@
-// Module ID: 11086
-// Function ID: 11087
+// Module ID: 13222
+// Function ID: 13223
 // Name: conjureMediaTickets
-// Dependencies: [11034, 2]
+// Dependencies: [7336, 2]
 // Exports: clearMediaTickets, getMediaTicket, retireMediaTicket
 
-// Module 11086 (conjureMediaTickets)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11034 */;
+// Module 13222 (conjureMediaTickets)
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 7336 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,17 @@
-// Module ID: 18343
-// Function ID: 18344
+// Module ID: 18637
+// Function ID: 18638
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 15889, 1072, 3, 572, 1233, 15890, 1282, 15892, 1089, 15903, 15888, 2]
+// Dependencies: [5, 16165, 1072, 3, 572, 1233, 16166, 1285, 16168, 1089, 16179, 16164, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 18343 (NotifSettingsActionCreators)
+// Module 18637 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 15888 */;
-import notification_settings from "notification_settings" /* 15890 */;
+import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 16164 */;
+import notification_settings from "notification_settings" /* 16166 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 16179 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15889 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 16165 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -474,13 +475,35 @@ export function updateNotifSettingToggleValue(CALLS, toggle) {
   }
   tmp4(CALLS, obj2, effectiveDataVersion);
 }
-export function updateNotifSettingRadioValue(updatedSettingId, arg1) {
-  let closure_0 = arg1;
-  obj = {
-    update(radio) {
-      radio.radio = radio;
-      return radio.radio !== radio;
+export function updateNotifSettingRadioValue(REACTIONS_CHOICE, scrollLength) {
+  let closure_0 = scrollLength;
+  if (Number.isFinite(scrollLength)) {
+    let tmp = require;
+    let tmp2 = dependencyMap;
+    obj = DeclarativeNotificationSettingsRedesignExperiment;
+    const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("updateNotifSettingRadioValue");
+    let closure_2 = null != NotifSettingsProtoStore.getSetting(REACTIONS_CHOICE);
+    let effectiveDataVersion;
+    const obj2 = {
+      update(radio) {
+          radio.radio = radio;
+          let tmp2 = result;
+          radio = radio.radio;
+          const tmp = radio;
+          if (result) {
+            tmp2 = !closure_2;
+          }
+          if (!tmp2) {
+            tmp2 = radio !== tmp;
+          }
+          return tmp2;
+        }
+    };
+    const tmp6 = NotifSettingsProtoStore;
+    const tmp8 = updateNotifSettingValue;
+    if (result) {
+      effectiveDataVersion = tmp6.effectiveDataVersion;
     }
-  };
-  updateNotifSettingValue(updatedSettingId, obj);
+    tmp8(REACTIONS_CHOICE, obj2, effectiveDataVersion);
+  }
 }

@@ -1,21 +1,21 @@
-// Module ID: 9076
-// Function ID: 9077
+// Module ID: 7967
+// Function ID: 7968
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 5041, 6943, 5025, 21, 5170, 575, 1113, 7420, 7445, 504, 9077, 9090, 9091, 9078, 1627, 9092, 9093, 9327, 5420, 5424, 9329, 9330, 2]
+// Dependencies: [32, 19, 17, 5177, 7029, 5161, 21, 5306, 575, 1113, 7918, 7937, 504, 7968, 7981, 7982, 7969, 1630, 7983, 7984, 11251, 5556, 5560, 15931, 15932, 2]
 // Exports: default
 
-// Module 9076 (GuildScheduledEventDetailsActionSheet)
+// Module 7967 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9078 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 7969 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6943 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5025 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -55,7 +55,7 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f95266 = () => {
+  const f95062 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -140,9 +140,9 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f95266), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f95062), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[15])(f95266), 2);
+  tmp5(tmp2(tmp3[15])(f95062), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

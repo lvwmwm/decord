@@ -1,12 +1,12 @@
-// Module ID: 20511
-// Function ID: 20512
+// Module ID: 20851
+// Function ID: 20852
 // Name: AVErrorVideoStreamSenderReadyTimeoutNoStream
-// Dependencies: [502, 6938, 6111, 2]
+// Dependencies: [502, 7024, 6247, 2]
 
-// Module 20511 (AVErrorVideoStreamSenderReadyTimeoutNoStream)
-import AVError from "AVError" /* 6111 */;
+// Module 20851 (AVErrorVideoStreamSenderReadyTimeoutNoStream)
+import AVError from "AVError" /* 6247 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VideoStreamStore from "VideoStreamStore" /* 6938 */;
+import VideoStreamStore from "VideoStreamStore" /* 7024 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

@@ -1,58 +1,95 @@
-// Module ID: 19287
-// Function ID: 19288
+// Module ID: 19660
+// Function ID: 19661
 // Name: CheckpointTestingActionSheet
-// Dependencies: [21, 5406, 7459, 7415, 1113, 3250, 7159, 19288, 7071, 2]
+// Dependencies: [19661, 21, 5542, 1113, 3319, 7746, 7954, 19662, 7951, 7913, 7443, 2]
 // Exports: default
 
-// Module 19287 (CheckpointTestingActionSheet)
+// Module 19660 (CheckpointTestingActionSheet)
+import intl4 from "intl" /* 1113 */;
+import _modDef3319 from "module_3319" /* 3319 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import TableRowGroup2 from "TableRowGroup" /* 7746 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
+import ActionSheet2 from "ActionSheet" /* 7951 */;
+import TableSwitchRow from "TableSwitchRow" /* 7954 */;
+import CheckpointMitigationOverrideStore from "CheckpointMitigationOverrideStore" /* 19661 */;
+import CheckpointTestingOptions from "CheckpointTestingOptions" /* 19662 */;
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import _modDef3250 from "module_3250" /* 3250 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import TableRowGroup2 from "TableRowGroup" /* 7159 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7415 */;
-import ActionSheet2 from "ActionSheet" /* 7459 */;
-import CheckpointTestingOptions from "CheckpointTestingOptions" /* 19288 */;
 import size from "module_2" /* 2 */;
 
-const jsx = Fragment.jsx;
+let closure_4;
+let hasOwnProperty;
+function handleNoCharacterChange(isNoCharacter) {
+  const obj = { isNoCharacter };
+  closure_3.setState(obj);
+}
+function handleCompactAssetsChange(isCompactAssets) {
+  const obj = { isCompactAssets };
+  closure_3.setState(obj);
+}
+function CheckpointMitigationOverrides() {
+  let items;
+  const tmp = closure_3((isNoCharacter) => isNoCharacter.isNoCharacter);
+  const tmp2 = closure_3((isCompactAssets) => isCompactAssets.isCompactAssets);
+  const intl = intl4.intl;
+  const stringResult = intl.string(_modDef3319.kXGgZf);
+  const intl2 = intl4.intl;
+  const stringResult1 = intl2.string(_modDef3319.FbmMyu);
+  const intl3 = intl4.intl;
+  const obj = { title: stringResult, hasIcons: false, children: items };
+  const stringResult2 = intl3.string(_modDef3319.j5X4PU);
+  const TableRowGroup = TableRowGroup2.TableRowGroup;
+  items = [, ];
+  const obj2 = { label: stringResult1, value: tmp, onValueChange: handleNoCharacterChange };
+  items[0] = React3(TableSwitchRow.TableSwitchRow, obj2);
+  const obj3 = { label: stringResult2, value: tmp2, onValueChange: handleCompactAssetsChange };
+  items[1] = React3(TableSwitchRow.TableSwitchRow, obj3);
+  return hasOwnProperty(TableRowGroup, obj);
+}
+let closure_3 = CheckpointMitigationOverrideStore.useCheckpointMitigationOverrideStore;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const result = size.fileFinishedImporting("modules/checkpoint/testing/native/CheckpointTestingActionSheet.tsx");
 
-export default function CheckpointTestingActionSheet() {
-  let intl;
-  let prop;
+export default function CheckpointTestingActionSheet(mode) {
+  let BottomSheetTitleHeader;
+  let intl2;
+  let items;
+  let obj3;
+  mode = mode.mode;
+  let obj = CheckpointTestingOptions;
+  const checkpointTestingOptions = obj.getCheckpointTestingOptions(mode);
+  let intl = intl4.intl;
+  const obj2 = { header: React3(BottomSheetTitleHeader, obj3), children: items };
+  const stringResult = intl.string(_modDef3319.r0B3ck);
   const ActionSheet = ActionSheet2.ActionSheet;
-  ({ title: intl.string(_modDef3250["9dS734"]) });
-  const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
-  intl = intl3.intl;
-  ({
+  obj3 = { title: intl2.string(_modDef3319["9dS734"]) };
+  BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
+  intl2 = intl4.intl;
+  let tmp5Result = "all" === mode;
+  const tmp4 = hasOwnProperty;
+  if (tmp5Result) {
+    tmp5Result = tmp5(CheckpointMitigationOverrides, {});
+  }
+  items = [tmp5Result, ];
+  const obj4 = {
+    title: stringResult,
     hasIcons: false,
-    children: prop.map((label) => {
+    children: checkpointTestingOptions.map((label) => {
       let intl;
-      let stringResult;
       let obj = {
         label: intl.string(label.label),
-        subLabel: stringResult,
         onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
           label.action();
         }
       };
-      const TableRow = label(closure_2[8]).TableRow;
-      intl = label(closure_2[4]).intl;
-      stringResult = undefined;
-      const tmp = closure_3;
-      const tmp2 = label;
-      const tmp3 = closure_2;
-      if (null != label.description) {
-        const intl2 = tmp2(tmp3[4]).intl;
-        stringResult = intl2.string(label.description);
-      }
-      return tmp(TableRow, obj, label.id);
+      const TableRow = label(closure_2[10]).TableRow;
+      intl = label(closure_2[3]).intl;
+      return closure_4(TableRow, obj, label.id);
     })
-  });
+  };
   const TableRowGroup = TableRowGroup2.TableRowGroup;
-  prop = CheckpointTestingOptions.CHECKPOINT_TESTING_OPTIONS;
-  return <ActionSheet header={null}>{null}</ActionSheet>;
+  items[1] = React3(TableRowGroup, obj4);
+  return tmp4(ActionSheet, obj2);
 };

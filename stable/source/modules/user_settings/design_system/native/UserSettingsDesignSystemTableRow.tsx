@@ -1,36 +1,36 @@
-// Module ID: 18141
-// Function ID: 18142
+// Module ID: 18424
+// Function ID: 18425
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 5203, 1385, 1072, 21, 7071, 7666, 504, 1627, 6191, 7159, 5783, 5874, 1411, 1187, 7462, 7070, 7157, 7160, 7079, 16338, 16335, 16336, 16337, 8281, 5747, 2]
+// Dependencies: [32, 19, 17, 5339, 1388, 1072, 21, 7443, 10569, 504, 1630, 6327, 7746, 5919, 6010, 1414, 1187, 7954, 7733, 7745, 7747, 7455, 16617, 16614, 16615, 16616, 8108, 5883, 2]
 // Exports: default
 
-// Module 18141 (UserSettingsDesignSystemTableRow)
+// Module 18424 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import LinearGradientDefault from "LinearGradient" /* 5747 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import Stack_Stack from "Stack/Stack" /* 6191 */;
-import TableCheckboxRow4 from "TableCheckboxRow" /* 7070 */;
-import TableRow19 from "TableRow" /* 7071 */;
-import TableRowIcon5 from "TableRowIcon" /* 7079 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 7157 */;
-import TableRowGroup6 from "TableRowGroup" /* 7159 */;
-import TableRadioRow5 from "TableRadioRow" /* 7160 */;
-import TableSwitchRow4 from "TableSwitchRow" /* 7462 */;
-import SettingsIcon from "SettingsIcon" /* 7666 */;
-import RowButton3 from "RowButton" /* 8281 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16335 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16336 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16337 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16338 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import Stack_Stack from "Stack/Stack" /* 6327 */;
+import TableRow19 from "TableRow" /* 7443 */;
+import TableRowIcon5 from "TableRowIcon" /* 7455 */;
+import TableCheckboxRow4 from "TableCheckboxRow" /* 7733 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 7745 */;
+import TableRowGroup6 from "TableRowGroup" /* 7746 */;
+import TableRadioRow5 from "TableRadioRow" /* 7747 */;
+import TableSwitchRow4 from "TableSwitchRow" /* 7954 */;
+import RowButton3 from "RowButton" /* 8108 */;
+import SettingsIcon from "SettingsIcon" /* 10569 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16614 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16615 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16616 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import UserStore from "UserStore" /* 1385 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -253,7 +253,7 @@ export default function UserSettingsDesignSystemTableRow() {
   Icon16 = TableRow19.TableRow.Icon;
   items4[10] = closure_11(TableCheckboxRow2, obj42);
   items3[1] = closure_12(TableRowGroup2, obj21);
-  const obj44 = { title: "Draggable Table Rows", description: "Table rows can optionally show a drag handle. Note that this does not actually make them draggable, you need to implement that yourself.", hasIcons: true, children: items5 };
+  const obj44 = { title: "Draggable Table Rows", description: "Table rows can optionally show a drag handle. Note that this does not actually make them draggable, you need to implement that yourself.", hasIcons: true, isSortable: true, children: items5 };
   const TableRowGroup3 = TableRowGroup6.TableRowGroup;
   const obj45 = { draggable: true, onPress, icon: closure_11(Icon17, obj46), label: "Boost your Server", subLabel: "Unlock perks for the entire community", trailing: closure_11(TableRow19.TableRow.Arrow, {}) };
   const TableRow14 = TableRow19.TableRow;

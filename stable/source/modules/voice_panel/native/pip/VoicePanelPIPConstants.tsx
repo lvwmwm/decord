@@ -1,9 +1,9 @@
-// Module ID: 19524
-// Function ID: 19525
+// Module ID: 19914
+// Function ID: 19915
 // Name: VoicePanelPIPConstants
 // Dependencies: [2]
 
-// Module 19524 (VoicePanelPIPConstants)
+// Module 19914 (VoicePanelPIPConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPConstants.tsx");
@@ -14,3 +14,4 @@ export const PIPReferenceDimensions = { width: 200, height: 200 };
 export const SquarePIPReferenceDimensions = { width: 120, height: 120 };
 export const SquareActivityPIPReferenceDimensions = { width: 96, height: 96 };
 export const DEFAULT_PIP_POSITION_OFFSET = 72;
+export const PIP_FIRST_FRAME_DELAY_MS = 200;

@@ -1,20 +1,20 @@
-// Module ID: 17149
-// Function ID: 17150
+// Module ID: 17428
+// Function ID: 17429
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1385, 7824, 21, 5170, 575, 563, 5406, 17150, 2118, 17151, 9222, 1113, 2664, 5783, 1187, 7053, 2]
+// Dependencies: [19, 17, 1388, 8740, 21, 5306, 575, 563, 5542, 17429, 2121, 17430, 8451, 1113, 2701, 5919, 1187, 7720, 2]
 // Exports: default
 
-// Module 17149 (FamilyCenterTopActivity)
+// Module 17428 (FamilyCenterTopActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import GuildIcon from "GuildIcon" /* 7053 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import GuildIcon from "GuildIcon" /* 7720 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
+import UserStore from "UserStore" /* 1388 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ export default function FamilyCenterTopActivity() {
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { topUserActivities: stateFromStores };
-    obj.openLazy(asyncRequire(17150, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
+    obj.openLazy(asyncRequire(17429, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
   }, items2);
   if (0 !== stateFromStores.length) {
     let tmp9 = stateFromStores.length > 0;
@@ -86,7 +86,7 @@ export default function FamilyCenterTopActivity() {
               user = user.getUser(user_id.user_id);
               let tmp2 = null;
               if (null != user) {
-                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "r" };
+                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "Array" };
                 const Avatar = closure_0(stateFromStores1[16]).Avatar;
                 tmp2 = closure_1_7(Avatar, obj, user.id);
               }

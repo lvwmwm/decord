@@ -1,27 +1,27 @@
-// Module ID: 20274
-// Function ID: 20275
+// Module ID: 20614
+// Function ID: 20615
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 5019, 5100, 5102, 5112, 1385, 9188, 18938, 1072, 21, 5170, 575, 5756, 1499, 504, 9187, 1113, 7663, 7097, 5808, 5406, 9115, 2118, 8279, 6191, 7159, 7071, 2]
+// Dependencies: [19, 5155, 5236, 5238, 5248, 1388, 8405, 19314, 1072, 21, 5306, 575, 5892, 1502, 504, 8404, 1113, 7427, 7493, 5944, 5542, 8009, 2121, 8106, 6327, 7746, 7443, 2]
 // Exports: default
 
-// Module 20274 (GuildSettingsModalCommunity)
+// Module 20614 (GuildSettingsModalCommunity)
 import nativeDefault from "native" /* 575 */;
 import intl15 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 5100 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7663 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 18938 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 19314 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserStore from "UserStore" /* 1385 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9188 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8405 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
@@ -213,7 +213,7 @@ export default function GuildSettingsModalCommunity(guildId) {
           const obj = { onPress: handlePublicCancelChanges, text: intl.string(intl15.t["ETE/oC"]) };
           const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
           intl = intl15.intl;
-          return authStore4(HeaderActionButton, obj);
+          return authStore3(HeaderActionButton, obj);
         };
       }
     }
@@ -226,7 +226,7 @@ export default function GuildSettingsModalCommunity(guildId) {
         const obj = { onPress: handlePublicSaveChanges, text: intl.string(intl15.t["R3BPH+"]) };
         const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
         intl = intl15.intl;
-        return authStore4(HeaderActionButton, obj);
+        return authStore3(HeaderActionButton, obj);
       };
     }
     setOptions(obj);
@@ -269,7 +269,7 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(9115, dependencyMap.paths);
+    const tmp2 = asyncRequire(8009, dependencyMap.paths);
     intl = intl15.intl;
     let obj2 = { value: null, label: intl2.string(intl15.t.PoWNfe) };
     intl2 = intl15.intl;
@@ -304,7 +304,7 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(9115, dependencyMap.paths);
+    const tmp2 = asyncRequire(8009, dependencyMap.paths);
     intl = intl15.intl;
     let obj2 = { value: null, label: intl2.string(intl15.t.PoWNfe) };
     intl2 = intl15.intl;
@@ -337,7 +337,7 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(9115, dependencyMap.paths);
+    const tmp2 = asyncRequire(8009, dependencyMap.paths);
     intl = intl15.intl;
     id = undefined;
     if (safetyAlertsChannel != null) {

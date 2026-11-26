@@ -1,28 +1,27 @@
-// Module ID: 11313
-// Function ID: 11314
+// Module ID: 11903
+// Function ID: 11904
 // Name: ReminderNotification
-// Dependencies: [19, 17, 5019, 5041, 11185, 1072, 21, 5170, 1187, 5896, 575, 11184, 11244, 504, 1093, 11242, 11201, 11203, 5848, 38, 1113, 6831, 11314, 10343, 1252, 11240, 2]
+// Dependencies: [19, 17, 5155, 5177, 11026, 1072, 21, 5306, 1187, 6032, 575, 11025, 11091, 504, 1093, 11089, 11043, 11045, 5984, 38, 1113, 11077, 6838, 11904, 11905, 1256, 11087, 2]
 
-// Module 11313 (ReminderNotification)
+// Module 11903 (ReminderNotification)
 import react_native from "react-native" /* 17 */;
-import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ClockIcon2 from "ClockIcon" /* 5896 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 10343 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11184 */;
-import MessagePreviewTextDefault from "MessagePreviewText" /* 11201 */;
-import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 11242 */;
-import showForLaterModal from "showForLaterModal" /* 11314 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import ClockIcon2 from "ClockIcon" /* 6032 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
+import MessagePreviewTextDefault from "MessagePreviewText" /* 11043 */;
+import MessageNotificationHeaderDefault from "MessageNotificationHeader" /* 11089 */;
+import showForLaterModal from "showForLaterModal" /* 11904 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 11905 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11185 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11026 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let RIGHT_ACCESSORY_LEFT_MARGIN;
@@ -32,7 +31,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp2;
 let unpackModuleId;
-const MediaPreviewRightAccessory = tmp2(11244);
+const MediaPreviewRightAccessory = tmp2(11091);
 function NotificationAvatar(arg0) {
   let ClockIcon;
   let guildId;
@@ -60,7 +59,7 @@ function NotificationBody(channel) {
   const items1 = [ChannelStore];
   obj2 = channel(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channel.parent_id));
-  const obj3 = channel(11184);
+  const obj3 = channel(11025);
   const hasPreviewableMedia = obj3.useHasPreviewableMedia(message);
   const tmp6 = channel.type === channel(1093).ChannelTypes.DM;
   let num = 1;
@@ -68,7 +67,7 @@ function NotificationBody(channel) {
     num = closure_8;
   }
   let tmp10 = null;
-  const tmpResult = channel(11184);
+  const tmpResult = channel(11025);
   const messagePreviewTextVariant = tmpResult.getMessagePreviewTextVariant();
   const tmp8 = closure_11;
   const tmp9 = closure_12;
@@ -80,8 +79,8 @@ function NotificationBody(channel) {
   if (!hasPreviewableMedia) {
     let tmp14;
     if (null == message.poll) {
-      const obj5 = { channel, message, color: "text-default", layout: channel(5848).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
-      const ChannelRowPreview = tmp(11203).ChannelRowPreview;
+      const obj5 = { channel, message, color: "text-default", layout: channel(5984).ChannelListLayoutTypes.COZY, variant: messagePreviewTextVariant, muted: false, lineClamp: num };
+      const ChannelRowPreview = tmp(11045).ChannelRowPreview;
       tmp14 = closure_10(ChannelRowPreview, obj5);
     }
     const obj6 = { children: items2 };
@@ -113,12 +112,12 @@ let closure_16 = react.memo(function RightAccessory(message) {
 });
 const memoResult = react.memo(function ReminderNotification(notification) {
   notification = notification.notification;
+  let handleDismissNotification;
   const channel = notification.channel;
   const message = notification.savedMessage.message;
   const author = notification.author;
-  _modDef38(null != message, "Message in a notification should not be null.");
+  handleDismissNotification(38)(null != message, "Message in a notification should not be null.");
   let obj = { user: author, guildId: channel.guild_id };
-  const items = [notification];
   const tmp2 = closure_10(NotificationAvatar, obj);
   const memo = react.useMemo(() => {
     let intl;
@@ -126,9 +125,13 @@ const memoResult = react.memo(function ReminderNotification(notification) {
     intl = notification(dependencyMap[20]).intl;
     return obj;
   }, []);
+  obj2 = notification(11077);
+  handleDismissNotification = obj2.useInAppNotificationContext().handleDismissNotification;
+  const items = [handleDismissNotification, notification];
   const callback = react.useCallback(() => {
     let author;
     let savedMessage;
+    handleDismissNotification("click");
     const obj = ModalActionCreatorsDefault;
     obj.popAll();
     obj2 = showForLaterModal;
@@ -138,9 +141,9 @@ const memoResult = react.memo(function ReminderNotification(notification) {
     const obj4 = { message_id: savedMessage.saveData.messageId, message_author_id: author.id, notification_type: "IN_APP" };
     obj3.track(AnalyticEvents.FOR_LATER_REMINDER_NOTIFICATION_CLICKED, obj4);
   }, items);
-  obj2 = { icon: tmp2, header: memo, onPress: callback, notification, rightAccessory: closure_10(closure_16, { message }), children: closure_10(NotificationBody, { channel, message }) };
-  const NotificationPressable = notification(11240).NotificationPressable;
-  return closure_10(NotificationPressable, obj2);
+  let obj3 = { icon: tmp2, header: memo, onPress: callback, notification, rightAccessory: closure_10(closure_16, { message }), children: closure_10(NotificationBody, { channel, message }) };
+  const NotificationPressable = notification(11087).NotificationPressable;
+  return closure_10(NotificationPressable, obj3);
 });
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/ReminderNotification.tsx");
 

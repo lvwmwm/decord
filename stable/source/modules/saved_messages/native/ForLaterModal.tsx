@@ -1,19 +1,19 @@
-// Module ID: 11316
-// Function ID: 11317
+// Module ID: 11907
+// Function ID: 11908
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 5170, 575, 1627, 1113, 10343, 7104, 9935, 1377, 7097, 6831, 11317, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 1113, 11905, 7500, 9051, 1380, 7493, 6838, 11908, 2]
 // Exports: default
 
-// Module 11316 (ForLaterModal)
+// Module 11907 (ForLaterModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import HeaderShared from "HeaderShared" /* 9935 */;
-import ForLaterScreenDefault from "ForLaterScreen" /* 11317 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import HeaderShared from "HeaderShared" /* 9051 */;
+import ForLaterScreenDefault from "ForLaterScreen" /* 11908 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,7 +67,7 @@ export default function ForLaterModal(type) {
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = tmp4(7104).Header;
+  const Header = tmp4(7500).Header;
   num = 0;
   const tmp4Result = require("PlatformUtils");
   const tmp7 = closure_5;

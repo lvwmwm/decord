@@ -1,10 +1,10 @@
-// Module ID: 18037
-// Function ID: 18038
+// Module ID: 18314
+// Function ID: 18315
 // Name: MFA
-// Dependencies: [5, 1282, 2]
+// Dependencies: [5, 1285, 2]
 // Exports: trySubmit
 
-// Module 18037 (MFA)
+// Module 18314 (MFA)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _finishMFACheck() {
               }
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {

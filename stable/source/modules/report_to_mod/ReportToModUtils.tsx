@@ -1,25 +1,25 @@
-// Module ID: 7554
-// Function ID: 7555
+// Module ID: 11159
+// Function ID: 11160
 // Name: ReportToModUtils
-// Dependencies: [7555, 5019, 5041, 6226, 1385, 7556, 7557, 7537, 7558, 7536, 1084, 5107, 7559, 7560, 7564, 7571, 2]
+// Dependencies: [8867, 5155, 5177, 6362, 1388, 11160, 11161, 7284, 8738, 7282, 1084, 5243, 8854, 8634, 8638, 11162, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 7554 (ReportToModUtils)
+// Module 11159 (ReportToModUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7536 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7537 */;
-import ReportToModConstants from "ReportToModConstants" /* 7556 */;
-import ReportUtils from "ReportUtils" /* 7557 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7558 */;
-import SelfModUtils from "SelfModUtils" /* 7559 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7560 */;
-import ForumChannelTypes from "ForumChannelTypes" /* 7571 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7555 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import MessageStore from "MessageStore" /* 6226 */;
-import UserStore from "UserStore" /* 1385 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7282 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7284 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8634 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 8738 */;
+import SelfModUtils from "SelfModUtils" /* 8854 */;
+import ReportToModConstants from "ReportToModConstants" /* 11160 */;
+import ReportUtils from "ReportUtils" /* 11161 */;
+import ForumChannelTypes from "ForumChannelTypes" /* 11162 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8867 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const ReportToModPermissions = ReportToModConstants.ReportToModPermissions;
@@ -193,7 +193,7 @@ export function isSafeToTransitionToReportForCurrentUser(arg0) {
         }
         if (!tmp9) {
           const tmp10Result = ObscuredMediaUtils;
-          tmp9 = !tmp10Result.messageHasObscurableMediaForBitmask(firstMessage, tmp10(7564).ContentHarmTypeBitMask.EXPLICIT);
+          tmp9 = !tmp10Result.messageHasObscurableMediaForBitmask(firstMessage, tmp10(8638).ContentHarmTypeBitMask.EXPLICIT);
         }
         return tmp9;
       } else {

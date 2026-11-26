@@ -1,12 +1,12 @@
-// Module ID: 7220
-// Function ID: 7221
+// Module ID: 7775
+// Function ID: 7776
 // Name: NativeCeremonies
-// Dependencies: [5, 3, 6839, 6835, 1113, 1377, 7221, 7222, 1624, 2]
+// Dependencies: [5, 3, 6846, 6842, 1113, 1380, 7776, 7777, 1627, 2]
 
-// Module 7220 (NativeCeremonies)
+// Module 7775 (NativeCeremonies)
 import LoggerDefault from "Logger" /* 3 */;
 import intl2 from "intl" /* 1113 */;
-import react_nativeDefault from "react-native" /* 6839 */;
+import react_nativeDefault from "react-native" /* 6846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let obj = function _promptForRegisterCredential() {
             challenge = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -151,7 +151,7 @@ obj = {
                 closure_2 = tmp;
                 c5 = 1;
                 c6 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
             } else {
               let self;
@@ -219,7 +219,7 @@ obj = {
   },
   registerAndroidCredentialManagerPasskey(setError) {
     let setRegistering;
-    const registerPasskey = setRegistering(6839).registerPasskey;
+    const registerPasskey = setRegistering(6846).registerPasskey;
     setError = undefined;
     setError = setError.setError;
     setRegistering = setError.setRegistering;
@@ -250,7 +250,7 @@ obj = {
   },
   registerAndroidDevicePasskey(setError) {
     let setRegistering;
-    const register = setRegistering(6839).register;
+    const register = setRegistering(6846).register;
     setError = undefined;
     setError = setError.setError;
     setRegistering = setError.setRegistering;
@@ -282,9 +282,9 @@ obj = {
   registerPasskey(setError) {
     let cleanupPromise;
     let setRegistering;
-    obj = setError(1377);
+    obj = setError(1380);
     const isAndroidResult = obj.isAndroid();
-    const tmp2 = setRegistering(6839);
+    const tmp2 = setRegistering(6846);
     if (isAndroidResult) {
       const registerPasskey = tmp2.registerPasskey;
       setError = undefined;
@@ -347,7 +347,7 @@ obj = {
     let setRegistering;
     let register = fn;
     if (fn === undefined) {
-      register = setRegistering(6839).register;
+      register = setRegistering(6846).register;
     }
     setError = undefined;
     setError = setError.setError;
@@ -386,7 +386,7 @@ Object.defineProperty(obj, "shouldDisplayAndroidFidoSelector", {
     let isAndroidResult = obj.isAndroid();
     const tmp = require;
     if (isAndroidResult) {
-      const tmpResult = tmp(1624);
+      const tmpResult = tmp(1627);
       isAndroidResult = !tmpResult.isMetaQuest();
     }
     return isAndroidResult;

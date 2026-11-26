@@ -1,26 +1,26 @@
-// Module ID: 18321
-// Function ID: 18322
+// Module ID: 18613
+// Function ID: 18614
 // Name: NotifyFriendsOnProfileUpdateSetting
-// Dependencies: [8536, 11717, 1113, 2864, 4995, 18322, 2]
+// Dependencies: [9202, 12408, 1113, 2901, 5131, 18614, 2]
 
-// Module 18321 (NotifyFriendsOnProfileUpdateSetting)
+// Module 18613 (NotifyFriendsOnProfileUpdateSetting)
 import intl2 from "intl" /* 1113 */;
-import _modDef2864 from "module_2864" /* 2864 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 18322 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import _modDef2901 from "module_2901" /* 2901 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import NotifyFriendsOnProfileUpdateUtils from "NotifyFriendsOnProfileUpdateUtils" /* 18614 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2864.F3llsQ);
+    return intl.string(_modDef2901.F3llsQ);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2864["6goWcz"]);
+    return intl.string(_modDef2901["6goWcz"]);
   },
   parent: MobileUserSettings.DATA_AND_PRIVACY,
   useValue: UserSettings.NotifyFriendsOnProfileUpdate.useSetting,

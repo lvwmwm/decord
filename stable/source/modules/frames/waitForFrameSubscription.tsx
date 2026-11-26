@@ -1,11 +1,11 @@
-// Module ID: 9439
-// Function ID: 9440
+// Module ID: 7295
+// Function ID: 7296
 // Name: waitForFrameSubscription
-// Dependencies: [9440, 2]
+// Dependencies: [7296, 2]
 // Exports: default
 
-// Module 9439 (waitForFrameSubscription)
-import getSocketFrameDefault from "getSocketFrame" /* 9440 */;
+// Module 7295 (waitForFrameSubscription)
+import getSocketFrameDefault from "getSocketFrame" /* 7296 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/waitForFrameSubscription.tsx");

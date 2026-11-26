@@ -1,38 +1,38 @@
-// Module ID: 14652
-// Function ID: 14653
+// Module ID: 15141
+// Function ID: 15142
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 6655, 5023, 5019, 5041, 5922, 5112, 1385, 1072, 5026, 5016, 21, 5170, 6810, 575, 504, 1113, 8707, 5808, 10896, 14653, 14654, 1187, 14655, 14656, 5874, 14657, 10126, 7076, 5783, 5226, 8938, 9222, 5202, 5003, 10671, 14658, 2]
+// Dependencies: [19, 17, 6790, 5159, 5155, 5177, 6058, 5248, 1388, 1072, 5162, 5152, 21, 5306, 6816, 575, 504, 1113, 8033, 5944, 10845, 15142, 15143, 1187, 15144, 15145, 6010, 15146, 11259, 7428, 5919, 5362, 8625, 8451, 5338, 5139, 10568, 15147, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 14652 (ChannelNavbar)
+// Module 15141 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5202 */;
-import UserUtilsDefault from "UserUtils" /* 5226 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import useChannelName from "useChannelName" /* 5808 */;
-import Pressables from "Pressables" /* 7076 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8707 */;
-import isStreamingDefault from "isStreaming" /* 8938 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10896 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useChannelName from "useChannelName" /* 5944 */;
+import Pressables from "Pressables" /* 7428 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
+import isStreamingDefault from "isStreaming" /* 8625 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10845 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PresenceStore from "PresenceStore" /* 5922 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserStore from "UserStore" /* 1385 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PresenceStore from "PresenceStore" /* 6058 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import TextStyles from "TextStyles" /* 6810 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size_mod from "module_2" /* 2 */;
 
 let onPress;
@@ -66,15 +66,15 @@ function ChannelTitleContent(arg0) {
     if (!react.isValidElement(icon)) {
       const obj = { size: native.Icon.Sizes.CUSTOM, source: icon, style: tmp.channelIcon, color: tmp.channelIconColor.color };
       const Icon = native.Icon;
-      tmp4 = authStore4(Icon, obj);
+      tmp4 = authStore3(Icon, obj);
     }
     tmp2 = tmp4;
   }
   let tmp8 = title;
   if (!react.isValidElement(title)) {
-    const obj2 = { style: tmp.channelNameContainer, children: authStore4(Text_Text.Text, obj3) };
+    const obj2 = { style: tmp.channelNameContainer, children: authStore3(Text_Text.Text, obj3) };
     obj3 = { style: tmp.channelName, lineClamp: 1, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
-    tmp8 = authStore4(View, obj2);
+    tmp8 = authStore3(View, obj2);
   }
   const obj4 = { style: tmp.flexRow, children: items };
   items = [tmp2, ];
@@ -100,7 +100,7 @@ function ParentChannelSubTitle(parentChannel) {
   BjYvHO = intl10.t.BjYvHO;
   obj3 = useChannelName;
   obj4 = useChannelName;
-  return authStore4(Text, obj);
+  return authStore3(Text, obj);
 }
 function DMChannelName(userId) {
   let intl;
@@ -172,7 +172,7 @@ function ChannelTitleWrapper(arg0) {
   if (null == onPressTitle) {
     const obj2 = { style: items, children };
     items = [tmp.navbarTitleContainer, style];
-    tmp5 = authStore4(View, obj2);
+    tmp5 = authStore3(View, obj2);
   } else {
     const obj = {
       style: items1,
@@ -184,7 +184,7 @@ function ChannelTitleWrapper(arg0) {
       children
     };
     items1 = [tmp.navbarTitleContainer, style];
-    tmp5 = authStore4(Pressables.PressableOpacity, obj);
+    tmp5 = authStore3(Pressables.PressableOpacity, obj);
   }
   return tmp5;
 }
@@ -475,7 +475,7 @@ export function ChannelButtons(buttons) {
   buttons = buttons.buttons;
   let obj = { style: buttons.style, children: mapped };
   mapped = undefined;
-  let tmp = authStore4;
+  let tmp = authStore3;
   let tmp2 = View;
   if (buttons != null) {
     mapped = buttons.map((onPress, index) => {

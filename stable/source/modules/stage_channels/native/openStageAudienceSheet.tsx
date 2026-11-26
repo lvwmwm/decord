@@ -1,13 +1,13 @@
-// Module ID: 19770
-// Function ID: 19771
+// Module ID: 20109
+// Function ID: 20110
 // Name: openStageAudienceSheet
-// Dependencies: [6796, 5406, 12087, 2118, 2]
+// Dependencies: [6896, 5542, 12953, 2121, 2]
 // Exports: default
 
-// Module 19770 (openStageAudienceSheet)
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6796 */;
+// Module 20109 (openStageAudienceSheet)
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6896 */;
 import size from "module_2" /* 2 */;
 
 const STAGE_AUDIENCE_SHEET_KEY = StageChannelsConstants.STAGE_AUDIENCE_SHEET_KEY;
@@ -16,5 +16,5 @@ const result = size.fileFinishedImporting("modules/stage_channels/native/openSta
 export default function openStageAudienceSheet(channelId) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channelId };
-  obj.openLazy(asyncRequire(12087, dependencyMap.paths), STAGE_AUDIENCE_SHEET_KEY, obj2);
+  obj.openLazy(asyncRequire(12953, dependencyMap.paths), STAGE_AUDIENCE_SHEET_KEY, obj2);
 };

@@ -1,13 +1,13 @@
-// Module ID: 19651
-// Function ID: 19652
+// Module ID: 19237
+// Function ID: 19238
 // Name: useVoicePanelDockMicLive
-// Dependencies: [19, 5019, 504, 12168, 7631, 1652, 5402, 2]
+// Dependencies: [19, 5155, 504, 13048, 13024, 1655, 5538, 2]
 // Exports: default
 
-// Module 19651 (useVoicePanelDockMicLive)
-import timing_timing from "timing/timing" /* 5402 */;
+// Module 19237 (useVoicePanelDockMicLive)
+import timing_timing from "timing/timing" /* 5538 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ export default function useVoicePanelDockMicLive(arg0) {
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(closure_0));
   const obj2 = require("VoiceActionUtils");
   mute = obj2.createMuteHandler(mute(sharedValue[4])(stateFromStores)).mute;
-  const tmp2 = require("module_1652");
+  const tmp2 = require("module_1655");
   let num = 1;
   const useSharedValue = tmp2.useSharedValue;
   if (mute) {

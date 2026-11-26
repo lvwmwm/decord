@@ -1,16 +1,19 @@
-// Module ID: 13700
-// Function ID: 13701
+// Module ID: 14255
+// Function ID: 14256
 // Name: CheckpointStore
-// Dependencies: [1385, 2107, 6276, 6275, 504, 572, 2]
+// Dependencies: [1388, 2110, 6412, 6411, 14256, 14257, 6735, 504, 572, 2]
 
-// Module 13700 (CheckpointStore)
+// Module 14255 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6275 */;
-import CheckpointTrait from "CheckpointTrait" /* 6276 */;
-import UserStore from "UserStore" /* 1385 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6411 */;
+import CheckpointTrait from "CheckpointTrait" /* 6412 */;
+import CheckpointFlows from "CheckpointFlows" /* 14257 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
 
 let obj = { INIT: 0, [0]: "INIT", FETCHING: 1, [1]: "FETCHING", SUCCESS: 2, [2]: "SUCCESS", ERROR: 3, [3]: "ERROR" };
 let obj2 = { volume: 1, isMuted: false, progress: null };
@@ -21,9 +24,11 @@ obj = obj3;
 let c7 = null;
 let c8 = null;
 let c9 = null;
-let INIT = obj.INIT;
+let c10 = false;
 let c11 = null;
-let c12 = false;
+let INIT = obj.INIT;
+let c13 = null;
+let c14 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class CheckpointStore extends PersistedStore {
   getState() {
@@ -69,6 +74,24 @@ Object.defineProperty(prototype, "character", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "compactAssets", {
+  get: function compactAssets() {
+    return c10;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "availability", {
+  get: function availability() {
+    return c11;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "isCharacterCreatorEnabled", {
+  get: function isCharacterCreatorEnabled() {
+    return c11 === require("CheckpointAvailability").CheckpointAvailability.FULL;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "fetchState", {
   get: function fetchState() {
     return INIT;
@@ -83,7 +106,7 @@ Object.defineProperty(prototype, "isFetching", {
 });
 Object.defineProperty(prototype, "isSaving", {
   get: function isSaving() {
-    return c12;
+    return c14;
   },
   set: undefined
 });
@@ -95,8 +118,8 @@ Object.defineProperty(prototype, "progress", {
 });
 Object.defineProperty(prototype, "selectedCharacterTraits", {
   get: function selectedCharacterTraits() {
-    let tmp = c11;
-    if (c11 == null) {
+    let tmp = c13;
+    if (c13 == null) {
       tmp = c9;
     }
     if (tmp == null) {
@@ -117,6 +140,18 @@ const items = [
   (arg0) => {
     obj = { volume: 1 };
     const merged = Object.assign(arg0);
+    return obj;
+  },
+  (progress) => {
+    let tmp2;
+    obj = { progress: tmp2 };
+    const merged = Object.assign(progress);
+    tmp2 = null;
+    if (null != progress.progress) {
+      obj2 = { availability: require("CheckpointAvailability").CheckpointAvailability.FULL };
+      const merged1 = Object.assign(progress.progress);
+      tmp2 = obj2;
+    }
     return obj;
   }
 ];
@@ -139,9 +174,11 @@ let obj4 = {
     INIT = obj.FETCHING;
   },
   CHECKPOINT_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
+    let c11;
+    let c7;
+    let c9;
     let currentUser;
     let savedCharacter;
-    let stats;
     function getUnlockedTraits(selectedCharacterTraits) {
       obj2 = {};
       obj = PremiumTypeUtils;
@@ -166,36 +203,57 @@ let obj4 = {
       }
       return obj2;
     }
-    ({ stats: c7, globalStats: c8, character: c9 } = arg0);
+    ({ stats: c7, globalStats: c8, character: c9, compactAssets: c10, availability: c11 } = arg0);
     INIT = obj.SUCCESS;
-    if (null == c9) {
-      if (null != obj.progress) {
-        selectedCharacterTraits = getUnlockedTraits(obj.progress.selectedCharacterTraits);
+    const progress = obj.progress;
+    if (null != progress) {
+      let tmp5;
+      let tmp4 = dependencyMap;
+      if (c11 !== require("CheckpointAvailability").CheckpointAvailability.UNAVAILABLE) {
+        tmp5 = null;
+      }
+      tmp.progress = tmp5;
+      selectedCharacterTraits = null;
+      let tmp6 = obj;
+      const progress2 = obj.progress;
+      let tmp8 = require;
+      let tmp9 = dependencyMap;
+      let tmp10 = c11 === require("CheckpointAvailability").CheckpointAvailability.FULL;
+      if (tmp10) {
+        let tmp11 = c9;
+        tmp10 = null == c9;
+      }
+      if (tmp10) {
+        tmp10 = null != progress2;
+      }
+      if (tmp10) {
+        selectedCharacterTraits = getUnlockedTraits(progress2.selectedCharacterTraits);
+        let tmp12 = obj;
         obj = { selectedCharacterTraits, progress: obj };
-        let tmp4 = obj;
-        const merged = Object.assign(obj.progress);
-        let tmp6 = selectedCharacterTraits;
+        let tmp13 = obj;
+        let tmp14 = progress2;
+        const merged = Object.assign(progress2);
       }
     }
-    selectedCharacterTraits = null;
+    tmp5 = progress;
   },
   CHECKPOINT_FETCH_FAILED: function handleFetchFailed() {
     INIT = obj.ERROR;
   },
   CHECKPOINT_COMPLETE_START: function handleCompleteStart() {
-    c12 = true;
+    c14 = true;
   },
   CHECKPOINT_COMPLETE_SUCCESS: function handleCompleteSuccess(character) {
-    character = character.character;
-    let c11 = null;
-    c12 = false;
+    let c9 = character.character;
+    let c13 = null;
+    c14 = false;
   },
   CHECKPOINT_COMPLETE_FAILED: function handleCompleteFailed() {
-    c12 = false;
+    c14 = false;
   },
   CHECKPOINT_RESET_SUCCESS: function handleResetSuccess() {
-    c9 = null;
-    let c11 = null;
+    let c9 = null;
+    let c13 = null;
     obj.progress = null;
   },
   CHECKPOINT_SELECT_CHARACTER_TRAIT: function handleSelectCharacterTrait(trait) {
@@ -218,34 +276,56 @@ let obj4 = {
   },
   CHECKPOINT_SAVE_PROGRESS: function handleSaveProgress(stage) {
     stage = stage.stage;
-    let tmp = c11;
-    if (c11 == null) {
-      tmp = c9;
-    }
-    if (tmp == null) {
-      tmp = closure_5;
-    }
-    const progress = obj.progress;
-    let stage1;
-    if (progress != null) {
-      stage1 = progress.stage;
-    }
-    if (stage1 === stage) {
-      if (progress.selectedCharacterTraits === tmp) {
+    if (null == availability) {
+      return false;
+    } else {
+      const FULL = require("CheckpointAvailability").CheckpointAvailability.FULL;
+      const obj3 = { stats, character, isCharacterCreatorEnabled: availability === FULL };
+      obj2 = CheckpointFlows;
+      const tmp8 = require;
+      if (obj2.hasCheckpointSummaryRoute(obj3)) {
+        const progress = obj.progress;
+        let stage1;
+        if (progress != null) {
+          stage1 = progress.stage;
+        }
+        if (stage1 === tmp8(6735).CheckpointCharacterStage.SUMMARY) {
+          return false;
+        } else {
+          let tmp3 = c13;
+          if (c13 == null) {
+            tmp3 = character;
+          }
+          if (tmp3 == null) {
+            tmp3 = closure_5;
+          }
+          let stage2;
+          if (progress != null) {
+            stage2 = progress.stage;
+          }
+          if (stage2 === stage) {
+            if (progress.selectedCharacterTraits === tmp3) {
+              return false;
+            }
+          }
+          obj = { stage, selectedCharacterTraits: tmp3, availability, progress: obj };
+        }
+      } else {
         return false;
       }
     }
-    obj.progress = { stage, selectedCharacterTraits: tmp };
   },
   LOGOUT: function handleLogout() {
     obj = {};
     const merged = Object.assign(obj2);
-    c7 = null;
+    let c7 = null;
     c8 = null;
-    c9 = null;
-    INIT = obj.INIT;
+    let c9 = null;
+    c10 = false;
     let c11 = null;
-    c12 = false;
+    INIT = obj.INIT;
+    let c13 = null;
+    c14 = false;
   }
 };
 const checkpointStore = new CheckpointStore(DispatcherDefault, obj4);

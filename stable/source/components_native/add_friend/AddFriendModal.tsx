@@ -1,26 +1,26 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 16290
+// Function ID: 16291
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1385, 1072, 14513, 21, 5170, 6810, 575, 14515, 5753, 1252, 1377, 1502, 6831, 5226, 1113, 9043, 7663, 16016, 7097, 5783, 16017, 16018, 1627, 7264, 2]
+// Dependencies: [32, 19, 17, 1388, 1072, 14997, 21, 5306, 6816, 575, 14999, 5889, 1256, 1380, 1505, 6838, 5362, 1113, 10230, 7427, 16291, 7493, 5919, 16292, 16293, 1630, 7490, 2]
 // Exports: default
 
-// Module 16015 (AddFriendModal)
+// Module 16290 (AddFriendModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import NavigatorHeader from "NavigatorHeader" /* 7097 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14513 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14515 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14997 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14999 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import TextStyles from "TextStyles" /* 6810 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

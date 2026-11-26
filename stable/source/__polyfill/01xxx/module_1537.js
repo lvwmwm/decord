@@ -1,52 +1,41 @@
 // Module ID: 1537
 // Function ID: 1538
-// Dependencies: [19, 1538, 1546, 1547]
-// Exports: createNavigatorFactory
+// Dependencies: [19, 21]
+// Exports: EnsureSingleNavigator
 
 // Module 1537
+import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 
+const jsx = Fragment.jsx;
+const context = react.createContext(undefined);
 
-export function createNavigatorFactory(AccessibleNativeStackNavigator) {
-  let Navigator = AccessibleNativeStackNavigator;
-  let str = AccessibleNativeStackNavigator.displayName;
-  if (str == null) {
-    str = AccessibleNativeStackNavigator.name;
-  }
-  if (str == null) {
-    str = "Navigator";
-  }
-  return function createNavigator(config) {
-    Navigator = config;
-    if (null != config) {
-      const obj2 = { Navigator, Screen: Navigator(str[2]).Screen, Group: Navigator(str[3]).Group, config };
-      const createComponentForStaticNavigation = Navigator(str[1]).createComponentForStaticNavigation;
-      Navigator(str[1]);
-      Navigator = createComponentForStaticNavigation(obj2, Navigator);
-      return {
-        config,
-        with: (IMAGE_ONLY_ANSWERS) => {
-            config = IMAGE_ONLY_ANSWERS;
-            class WithComponent {
-              constructor() {
-                return <IMAGE_ONLY_ANSWERS Navigator={Navigator} />;
-              }
-            }
-            WithComponent.displayName = "" + Navigator + "With";
-            return {
-              config,
-              getComponent() {
-                return WithComponent;
-              }
-            };
-          },
-        getComponent() {
-            return Navigator;
+export const SingleNavigatorContext = context;
+export function EnsureSingleNavigator(children) {
+  children = children.children;
+  let closure_0 = react.useRef(undefined);
+  return <context.Provider value={react.useMemo(() => {
+    let ref;
+    return {
+      register(current) {
+        current = ref.current;
+        const tmp = ref;
+        if (undefined !== current) {
+          if (current !== current) {
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error = new Error("Another navigator is already registered for this container. You likely have multiple navigators under a single \"NavigationContainer\" or \"Screen\". Make sure each navigator is under a separate \"Screen\" container. See https://reactnavigation.org/docs/nesting-navigators for a guide on nesting.");
+            throw error;
           }
-      };
-    } else {
-      const obj = { Navigator, Screen: Navigator(str[2]).Screen, Group: Navigator(str[3]).Group };
-      return obj;
-    }
-  };
+        }
+        tmp.current = current;
+      },
+      unregister(arg0) {
+        if (arg0 === ref.current) {
+          tmp.current = undefined;
+        }
+      }
+    };
+  }, [])}>{children}</context.Provider>;
 }

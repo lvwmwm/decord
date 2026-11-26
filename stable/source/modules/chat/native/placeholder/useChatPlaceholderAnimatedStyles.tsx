@@ -1,16 +1,16 @@
-// Module ID: 14480
-// Function ID: 14481
+// Module ID: 14964
+// Function ID: 14965
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [5171, 1187, 504, 1652, 5402, 5405, 2]
+// Dependencies: [5307, 1187, 504, 1655, 5538, 5541, 2]
 // Exports: default
 
-// Module 14480 (useChatPlaceholderAnimatedStyles)
+// Module 14964 (useChatPlaceholderAnimatedStyles)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import timingPresets from "timingPresets" /* 5405 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import size from "module_2" /* 2 */;
 
 let obj = { duration: 1300, easing: native.STANDARD_EASING };
@@ -34,11 +34,11 @@ export default function useChatPlaceholderAnimatedStyles(arg0) {
   obj = get_initialized;
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let tmp2 = _mod1652;
+  let tmp2 = _mod1655;
   const items1 = [closure_4, visible, animated, stateFromStores, , , , , ];
   const useAnimatedStyle = tmp2.useAnimatedStyle;
-  items1[4] = _mod1652.withRepeat;
-  items1[5] = _mod1652.withSequence;
+  items1[4] = _mod1655.withRepeat;
+  items1[5] = _mod1655.withSequence;
   items1[6] = timing_timing.withTiming;
   items1[7] = timingPresets.timingNone;
   items1[8] = obj;

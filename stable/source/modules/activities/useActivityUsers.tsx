@@ -1,12 +1,12 @@
-// Module ID: 19697
-// Function ID: 19698
+// Module ID: 20034
+// Function ID: 20035
 // Name: useActivityUsers
-// Dependencies: [1385, 5018, 563, 2]
+// Dependencies: [1388, 5154, 563, 2]
 // Exports: default
 
-// Module 19697 (useActivityUsers)
-import UserStore from "UserStore" /* 1385 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+// Module 20034 (useActivityUsers)
+import UserStore from "UserStore" /* 1388 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

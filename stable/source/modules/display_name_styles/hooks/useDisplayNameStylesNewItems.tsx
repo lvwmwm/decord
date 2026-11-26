@@ -1,13 +1,13 @@
-// Module ID: 17685
-// Function ID: 17686
+// Module ID: 17962
+// Function ID: 17963
 // Name: useDisplayNameStylesNewItems
-// Dependencies: [19, 16817, 1394, 504, 16818, 2]
+// Dependencies: [19, 17096, 1397, 504, 17097, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 17685 (useDisplayNameStylesNewItems)
+// Module 17962 (useDisplayNameStylesNewItems)
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 16817 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 17096 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,29 +1,29 @@
-// Module ID: 16994
-// Function ID: 16995
+// Module ID: 17273
+// Function ID: 17274
 // Name: SafetyHubAccountStanding
-// Dependencies: [32, 19, 17, 1385, 8097, 8072, 21, 8073, 16995, 5170, 575, 1113, 16987, 7434, 7185, 11975, 7191, 7210, 504, 1411, 9624, 1187, 5783, 2]
+// Dependencies: [32, 19, 17, 1388, 8231, 8206, 21, 8207, 17274, 5306, 575, 1113, 17266, 7930, 7623, 12836, 7629, 7648, 504, 1414, 9501, 1187, 5919, 2]
 // Exports: default
 
-// Module 16994 (SafetyHubAccountStanding)
+// Module 17273 (SafetyHubAccountStanding)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7185 */;
-import CircleXIcon from "CircleXIcon" /* 7191 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7210 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7434 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8072 */;
-import SafetyHubModels from "SafetyHubModels" /* 8073 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11975 */;
-import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 16987 */;
-import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 16995 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7623 */;
+import CircleXIcon from "CircleXIcon" /* 7629 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7648 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7930 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
+import SafetyHubModels from "SafetyHubModels" /* 8207 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12836 */;
+import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 17266 */;
+import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 17274 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import SafetyHubStore from "SafetyHubStore" /* 8097 */;
+import UserStore from "UserStore" /* 1388 */;
+import SafetyHubStore from "SafetyHubStore" /* 8231 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -175,10 +175,10 @@ export default function SafetyHubAccountStanding() {
   const items2 = [UserStore];
   const stateFromStores = obj.useStateFromStores(items2, () => currentUser.getCurrentUser());
   if (null != stateFromStores) {
-    let obj2 = height(1411);
+    let obj2 = height(1414);
     userAvatarSource = obj2.getUserAvatarSource(stateFromStores);
   } else {
-    userAvatarSource = height(9624);
+    userAvatarSource = height(9501);
   }
   const style = tmp13.style;
   let obj3 = { style: tmp4.container, children: items3 };
@@ -197,7 +197,7 @@ export default function SafetyHubAccountStanding() {
   let obj6 = { style: tmp4.body, children: items5 };
   let obj7 = { style: tmp4.bodyText, children: items4 };
   const obj8 = { variant: "heading-lg/medium", color: "text-default", style: { textAlign: "center" }, children: intl.format(title, obj9) };
-  const Text = tmp7(5783).Text;
+  const Text = tmp7(5919).Text;
   intl = tmp7(1113).intl;
   obj9 = {
     hook(children, arg1) {
@@ -205,7 +205,7 @@ export default function SafetyHubAccountStanding() {
       return React4(Text_Text.Text, obj, arg1);
     }
   };
-  items4 = [closure_9(Text, obj8), closure_9(accountStanding(5783).Text, { variant: "body-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
+  items4 = [closure_9(Text, obj8), closure_9(accountStanding(5919).Text, { variant: "body-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: description })];
   items5 = [closure_10(style, obj7), ];
   const obj10 = { style: items6, children: items7 };
   items6 = [tmp4.health, { height }];

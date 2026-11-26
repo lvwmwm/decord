@@ -1,21 +1,21 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 9376
+// Function ID: 9377
 // Name: PlatformMarkupRules
-// Dependencies: [17, 8707, 8783, 2149, 1113, 5116, 2067, 8701, 6207, 1411, 6208, 6220, 2]
+// Dependencies: [17, 8033, 9377, 2152, 1113, 5252, 2070, 9371, 6343, 1414, 6344, 6356, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 8706 (PlatformMarkupRules)
+// Module 9376 (PlatformMarkupRules)
 import react_native from "react-native" /* 17 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import _modDef2067 from "module_2067" /* 2067 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2149 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 6207 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 6208 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 6220 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 8701 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8707 */;
-import useGameMentionData from "useGameMentionData" /* 8783 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import _modDef2070 from "module_2070" /* 2070 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2152 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 6343 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 6344 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 6356 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 9371 */;
+import useGameMentionData from "useGameMentionData" /* 9377 */;
 import size from "module_2" /* 2 */;
 
 let resolveAssetSource;
@@ -23,7 +23,7 @@ let resolveAssetSource;
 let obj2;
 let obj3;
 let obj4;
-const f94711 = (type) => {
+const f98113 = (type) => {
   let uri;
   let tmp = type;
   if ("channel" === type.type) {
@@ -114,7 +114,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f94711);
+          mapped = arr2.map(f98113);
         }
       }
       const inContent = parsed.inContent;
@@ -128,7 +128,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f94711);
+          mapped1 = arr4.map(f98113);
         }
       }
       return obj;
@@ -175,7 +175,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f94711);
+          mapped = arr2.map(f98113);
         }
       }
       const inContent = parsed.inContent;
@@ -189,7 +189,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f94711);
+          mapped1 = arr4.map(f98113);
         }
       }
       return obj;
@@ -214,7 +214,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f94711);
+          mapped = arr2.map(f98113);
         }
       }
       const inContent = parsed.inContent;
@@ -228,7 +228,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f94711);
+          mapped1 = arr4.map(f98113);
         }
       }
       return obj;
@@ -252,7 +252,7 @@ obj2 = {
     return { type: "text", content: "" };
   }
 };
-let merged = Object.assign(_modDef2067.defaultRules.escape);
+let merged = Object.assign(_modDef2070.defaultRules.escape);
 obj3 = {
   order: MarkupTextRuleDefault.order,
   requiredFirstCharacters: ["<"],
@@ -306,7 +306,7 @@ export function decorateWithIcon(content) {
         const items = [content];
         arr2 = items;
       }
-      mapped = arr2.map(f94711);
+      mapped = arr2.map(f98113);
     }
   }
   return mapped;

@@ -1,14 +1,14 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17463
+// Function ID: 17464
 // Name: useRefetchWhenSelectedTeenMissing
-// Dependencies: [5, 19, 7824, 4, 504, 8473, 7826, 2]
+// Dependencies: [5, 19, 8740, 4, 504, 9616, 8742, 2]
 // Exports: default
 
-// Module 17183 (useRefetchWhenSelectedTeenMissing)
+// Module 17463 (useRefetchWhenSelectedTeenMissing)
 import logger_Logger from "logger/Logger" /* 4 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -108,24 +108,22 @@ export default function useRefetchWhenSelectedTeenMissing() {
     };
     const tmp = hasActiveLinks;
     if (tmp) {
-      const tmp3 = isInitialized;
-      let current = !isInitialized;
-      if (isInitialized) {
-        const tmp4 = FamilyCenterStore;
-        current = FamilyCenterStore.isLoading();
+      const tmp3 = null;
+      if (null == selectedTeenId) {
+        const tmp4 = isInitialized;
+        let current = !isInitialized;
+        if (isInitialized) {
+          current = FamilyCenterStore.isLoading();
+        }
+        if (!current) {
+          current = ref.current;
+        }
+        if (!current) {
+          ref.current = true;
+          refetch();
+        }
       }
-      if (!current) {
-        current = null != selectedTeenId;
-      }
-      if (!current) {
-        current = ref.current;
-      }
-      if (!current) {
-        ref.current = true;
-        refetch();
-      }
-    } else {
-      ref.current = false;
     }
+    ref.current = false;
   }, items1);
 };

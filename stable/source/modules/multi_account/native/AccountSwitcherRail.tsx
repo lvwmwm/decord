@@ -1,30 +1,30 @@
-// Module ID: 19214
-// Function ID: 19215
+// Module ID: 19587
+// Function ID: 19588
 // Name: AccountSwitcherRail
-// Dependencies: [19, 17, 1404, 5227, 1385, 14243, 15844, 14244, 1072, 21, 575, 5170, 5232, 5226, 1113, 5874, 1411, 7399, 5891, 1627, 5756, 18364, 504, 18835, 1252, 7445, 14247, 5877, 7666, 10029, 2]
+// Dependencies: [19, 17, 1407, 5363, 1388, 14831, 16120, 14832, 1072, 21, 575, 5306, 5368, 5362, 1113, 6010, 1414, 7897, 6027, 1630, 5892, 18658, 504, 19154, 1256, 7937, 14835, 6013, 10569, 9148, 2]
 
-// Module 19214 (AccountSwitcherRail)
+// Module 19587 (AccountSwitcherRail)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7445 */;
-import SettingsIcon2 from "SettingsIcon" /* 7666 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 14243 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14247 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 18835 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
+import SettingsIcon2 from "SettingsIcon" /* 10569 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 14831 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14835 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 19154 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import StreamerModeStore from "StreamerModeStore" /* 5227 */;
-import UserStore from "UserStore" /* 1385 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15844 */;
-import Constants_mod from "Constants" /* 14244 */;
+import UserRecord from "UserRecord" /* 1407 */;
+import StreamerModeStore from "StreamerModeStore" /* 5363 */;
+import UserStore from "UserStore" /* 1388 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 16120 */;
+import Constants_mod from "Constants" /* 14832 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ function AccountButton(user) {
   dependencyMap = closure_22();
   let tmp = user;
   let tmp2 = dependencyMap;
-  let obj = user(5232);
+  let obj = user(5368);
   const radioA11yNative = obj.useRadioA11yNative({ selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const tmp4 = new UserRecord(user);
@@ -105,7 +105,7 @@ function AccountButton(user) {
       ({ circle: arr[0], accountRing: arr[1] } = closure_3);
       let activeRing = selected;
       const tmp = closure_19;
-      const tmp2 = authStore5;
+      const tmp2 = authStore4;
       if (!selected) {
         activeRing = pressed.pressed;
       }
@@ -125,11 +125,11 @@ function AccountButton(user) {
         items2[1] = tmp12;
         if (selected) {
           const obj4 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT, accessible: false };
-          const CheckmarkSmallIcon = tmp13(7399).CheckmarkSmallIcon;
+          const CheckmarkSmallIcon = tmp13(7897).CheckmarkSmallIcon;
           tmp3Result = tmp3(CheckmarkSmallIcon, obj4);
         } else {
           const obj5 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessible: false };
-          const CircleInformationIcon = tmp13(5891).CircleInformationIcon;
+          const CircleInformationIcon = tmp13(6027).CircleInformationIcon;
           tmp3Result = tmp3(CircleInformationIcon, obj5);
         }
         tmp3Result2 = tmp3(tmp4, obj3);
@@ -141,10 +141,10 @@ function AccountButton(user) {
     }
   };
   str = "always";
-  getUserTag = selected(5226).getUserTag;
+  getUserTag = selected(5362).getUserTag;
   const tmp6 = closure_17;
   const tmp7 = RailButton;
-  const tmp8 = selected(5226);
+  const tmp8 = selected(5362);
   if (hidePersonalInformation) {
     str = "never";
   }

@@ -1,72 +1,39 @@
 // Module ID: 5414
 // Function ID: 5415
-// Dependencies: [19, 5411, 5415]
-// Exports: useHaptics
+// Dependencies: [32, 5398, 5411]
+// Exports: useRiveBoolean
 
 // Module 5414
-import react from "react" /* 19 */;
-import _modDef5411 from "module_5411" /* 5411 */;
+import react from "react" /* 5398 */;
+import _mod5411 from "module_5411" /* 5411 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const useMemo = react.useMemo;
+function getBooleanProperty(booleanProperty, arg1) {
+  return booleanProperty.booleanProperty(arg1);
+}
 
-export function useHaptics(enableVibrateFallback) {
-  let closure_0 = enableVibrateFallback;
-  let prop;
-  if (enableVibrateFallback != null) {
-    prop = enableVibrateFallback.enableVibrateFallback;
+export function useRiveBoolean(reducedMotion, instance) {
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(4);
+  const obj2 = _mod5411;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(instance, reducedMotion, getBooleanProperty);
+  _slicedToArray(obj2.useRiveProperty(instance, reducedMotion, getBooleanProperty), 3);
+  if (cResult[0] === tmp5) {
+    if (cResult[1] === tmp4) {
+      let tmp6;
+      if (cResult[2] === tmp3) {
+        tmp6 = cResult[3];
+      }
+      return tmp6;
+    }
   }
-  let prop1;
-  if (enableVibrateFallback != null) {
-    prop1 = enableVibrateFallback.ignoreAndroidSystemSettings;
-  }
-  const items = [prop, prop1];
-  return useMemo(() => {
-    let obj = {
-      trigger(arg0, arg1) {
-        const trigger = _modDef5411.trigger;
-        const obj = {};
-        _modDef5411;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg1);
-        trigger(arg0, obj);
-      },
-      triggerPattern(arg0, arg1) {
-        const triggerPattern = _modDef5411.triggerPattern;
-        const obj = {};
-        _modDef5411;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg1);
-        triggerPattern(arg0, obj);
-      },
-      stop() {
-        const obj = closure_1_1(closure_1_2[1]);
-        obj.stop();
-      },
-      isSupported() {
-        const obj = closure_1_1(closure_1_2[1]);
-        return obj.isSupported();
-      },
-      playHaptic(arg0, arg1, arg2) {
-        const playHaptic = closure_0(dependencyMap[2]).playHaptic;
-        const obj = {};
-        closure_0(dependencyMap[2]);
-        const merged = Object.assign(closure_1_0);
-        const merged1 = Object.assign(arg2);
-        return playHaptic(arg0, arg1, obj);
-      },
-      impact(arg0, arg1, arg2) {
-        const impact = _modDef5411.impact;
-        const obj = {};
-        _modDef5411;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg2);
-        impact(arg0, arg1, obj);
-      },
-      setEnabled: _modDef5411.setEnabled,
-      isEnabled: _modDef5411.isEnabled,
-      getSystemHapticStatus: _modDef5411.getSystemHapticStatus,
-      playAHAP: _modDef5411.playAHAP
-    };
-    return obj;
-  }, items);
+  const obj3 = { value: tmp3, setValue: tmp4, error: tmp5 };
+  cResult[0] = tmp5;
+  cResult[1] = tmp4;
+  cResult[2] = tmp3;
+  cResult[3] = obj3;
+  tmp6 = obj3;
 }

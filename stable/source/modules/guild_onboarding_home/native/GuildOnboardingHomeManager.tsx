@@ -1,25 +1,25 @@
-// Module ID: 19918
-// Function ID: 19919
+// Module ID: 20261
+// Function ID: 20262
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 5075, 502, 5019, 5082, 5041, 5203, 7495, 8443, 5088, 7383, 1403, 6831, 19919, 2118, 7496, 1092, 14099, 7494, 7497, 2]
+// Dependencies: [32, 5, 5211, 502, 5155, 5218, 5177, 5339, 7080, 9001, 5224, 7882, 1406, 6838, 20262, 2121, 7081, 1092, 14684, 7079, 7082, 2]
 
-// Module 19918 (GuildOnboardingHomeManager)
+// Module 20261 (GuildOnboardingHomeManager)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5088 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 5075 */;
+import ImpersonateStore from "ImpersonateStore" /* 5211 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7495 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8443 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7080 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 9001 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5;
@@ -105,9 +105,9 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
             if (0 !== num) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               const obj = { initialPercent: (num - 1) / num, numActions: num };
-              const tmp11 = asyncRequire(19919, tmp2.paths);
+              const tmp11 = asyncRequire(20262, tmp2.paths);
               const obj2 = { animation: ConstantsIOS.ModalAnimation.FADE };
-              const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(7496).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
+              const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(7081).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
               pushLazy(tmp11, obj, NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj2);
             }
           }
@@ -169,7 +169,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
       await "HermesInternal";
       closure_2 = tmp4;
       ({ guildId: c0, channelId: c1 } = closure_0);
-      return "flexDirection";
+      return "Path";
     });
     applyArgumentsResult.handleChannelSelect = function() {
       return closure_0(...arguments);

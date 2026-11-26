@@ -1,13 +1,13 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 9345
+// Function ID: 9346
 // Name: NativeMarkdownExperiment
-// Dependencies: [8666, 1449, 8668, 2]
+// Dependencies: [9346, 1452, 9348, 2]
 // Exports: isNativeMarkdownEnabled, useNativeMarkdown
 
-// Module 8665 (NativeMarkdownExperiment)
-import useLabFeatureDefault from "useLabFeature" /* 8668 */;
-import LabFeatureStore from "LabFeatureStore" /* 8666 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
+// Module 9345 (NativeMarkdownExperiment)
+import useLabFeatureDefault from "useLabFeature" /* 9348 */;
+import LabFeatureStore from "LabFeatureStore" /* 9346 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let ApexExperiment = ApexExperiment_mod;

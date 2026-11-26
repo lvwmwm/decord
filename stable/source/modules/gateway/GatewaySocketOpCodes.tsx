@@ -1,13 +1,13 @@
-// Module ID: 15849
-// Function ID: 15850
+// Module ID: 16125
+// Function ID: 16126
 // Name: GatewaySocketOpCodes
-// Dependencies: [6024, 568, 2128, 11, 2]
+// Dependencies: [6160, 568, 2131, 11, 2]
 
-// Module 15849 (GatewaySocketOpCodes)
+// Module 16125 (GatewaySocketOpCodes)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _mod568 from "module_568" /* 568 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2128 */;
-import RTCRegionStore from "RTCRegionStore" /* 6024 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2131 */;
+import RTCRegionStore from "RTCRegionStore" /* 6160 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -76,11 +76,12 @@ class GatewaySocketOpCodes extends EventEmitter {
   }
   requestGuildMembers(guildIds, arg1) {
     let limit;
+    let nonce;
     let presences;
     let query;
     let userIds;
-    ({ query, limit, userIds, presences } = arg1);
-    const obj = { guild_id: guildIds, query, limit, user_ids: userIds, presences };
+    ({ query, limit, userIds, presences, nonce } = arg1);
+    const obj = { guild_id: guildIds, query, limit, user_ids: userIds, presences, nonce };
     this.send(GatewaySocketOpcode.Opcode.REQUEST_GUILD_MEMBERS, obj);
   }
   searchRecentMembers(guild_id, arg1) {

@@ -1,28 +1,28 @@
-// Module ID: 20218
-// Function ID: 20219
+// Module ID: 20558
+// Function ID: 20559
 // Name: GuildSettingsModalRolesStore
-// Dependencies: [5076, 5041, 1072, 14246, 5177, 1113, 1084, 504, 572, 2]
+// Dependencies: [5212, 5177, 1072, 14834, 5313, 1113, 1084, 504, 572, 2]
 
-// Module 20218 (GuildSettingsModalRolesStore)
+// Module 20558 (GuildSettingsModalRolesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import intl3 from "intl" /* 1113 */;
-import shared from "shared" /* 5177 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 14246 */;
-import GuildRoleStore from "GuildRoleStore" /* 5076 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import shared from "shared" /* 5313 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 14834 */;
+import GuildRoleStore from "GuildRoleStore" /* 5212 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;
 
 let _null2;
 
-const f120670 = (id) => id.id;
+const f123399 = (id) => id.id;
 function handleGuildRoleCreateOrUpdate(arg0) {
   const tmp2 = c8;
   if (tmp2) {
     const sortedRoles = GuildRoleStore.getSortedRoles(tmp);
-    let c9 = sortedRoles.map(f120670);
+    let c9 = sortedRoles.map(f123399);
   }
 }
 const FormStates = Constants.FormStates;
@@ -106,7 +106,7 @@ let obj = {
     guildId = guildId.guildId;
     c8 = true;
     const sortedRoles = GuildRoleStore.getSortedRoles(guildId);
-    let c9 = sortedRoles.map(f120670);
+    let c9 = sortedRoles.map(f123399);
     const guild = GuildStore.getGuild(guildId);
     clearTimeout(closure_15);
   },

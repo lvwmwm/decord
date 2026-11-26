@@ -1,34 +1,34 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12657
+// Function ID: 12658
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5171, 6884, 5019, 6226, 1385, 21, 5170, 575, 504, 1411, 7396, 1113, 7076, 5783, 8507, 5452, 12780, 7420, 12786, 10247, 5774, 6205, 5226, 7071, 1187, 9314, 8854, 1652, 5402, 7390, 5401, 5874, 5177, 12787, 12788, 7445, 5406, 5420, 2]
+// Dependencies: [32, 5, 19, 17, 5307, 6969, 5155, 6362, 1388, 21, 5306, 575, 504, 1414, 7894, 1113, 7428, 5919, 8861, 5588, 12658, 7918, 12664, 11868, 5910, 6341, 5362, 7443, 1187, 10930, 8476, 1655, 5538, 7888, 5537, 6010, 5313, 12665, 12666, 7937, 5542, 5556, 2]
 // Exports: default
 
-// Module 12779 (PollVotesActionSheet)
+// Module 12657 (PollVotesActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5177 */;
-import useThemeDefault from "useTheme" /* 5401 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import Pressables from "Pressables" /* 7076 */;
-import EmojiDefault from "Emoji" /* 7396 */;
-import PollsUtils from "PollsUtils" /* 8507 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 12780 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import shared from "shared" /* 5313 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import Pressables from "Pressables" /* 7428 */;
+import EmojiDefault from "Emoji" /* 7894 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import PollsUtils from "PollsUtils" /* 8861 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 12658 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import EmojiStore from "EmojiStore" /* 6884 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MessageStore from "MessageStore" /* 6226 */;
-import UserStore from "UserStore" /* 1385 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import EmojiStore from "EmojiStore" /* 6969 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c2, item, ref2, set, user;
@@ -117,14 +117,14 @@ function PollAnswerButton(answer) {
   let tmp11 = null;
   if (null != answer.poll_media.text) {
     const obj4 = { style: tmp.answerText, variant: "body-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp11 = map1(tmp3(5783).Text, obj4);
+    tmp11 = map1(tmp3(5919).Text, obj4);
   }
   items2[1] = tmp11;
   const obj5 = { variant: "body-sm/semibold", color: str, lineClamp: 1, children: items3 };
-  const Text = tmp3(5783).Text;
+  const Text = tmp3(5919).Text;
   items3 = [" ", "(", num.toLocaleString(), ")"];
-  items2[2] = authStore3(Text, obj5);
-  return authStore3(PressableHighlight, obj2);
+  items2[2] = gesture(Text, obj5);
+  return gesture(PressableHighlight, obj2);
 }
 function PollVotesHeader(message) {
   let answers;
@@ -459,20 +459,20 @@ function NoResults() {
   const tmp4 = useThemeDefault();
   const tmp8 = FastImageDefault;
   const obj3 = shared;
-  const tmp5 = authStore3;
+  const tmp5 = gesture;
   const tmp6 = metroRequire;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(12787);
+    tmp2Result = tmp2(12665);
   } else {
-    tmp2Result = tmp2(12788);
+    tmp2Result = tmp2(12666);
   }
   items = [map1(tmp8, obj2), , ];
   const obj4 = { style: tmp.noResultsTitle, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };
-  const Text = tmp9(5783).Text;
+  const Text = tmp9(5919).Text;
   intl = tmp9(1113).intl;
   items[1] = map1(Text, obj4);
   const obj5 = { style: tmp.noResultsSubtitle, variant: "body-sm/semibold", color: "text-default", children: intl2.string(intl3.t.bwytdh) };
-  const Text2 = tmp9(5783).Text;
+  const Text2 = tmp9(5919).Text;
   intl2 = tmp9(1113).intl;
   items[2] = map1(Text2, obj5);
   return tmp5(tmp6, obj);

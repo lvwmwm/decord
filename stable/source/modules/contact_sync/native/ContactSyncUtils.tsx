@@ -1,26 +1,26 @@
-// Module ID: 14515
-// Function ID: 14516
+// Module ID: 14999
+// Function ID: 15000
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 6659, 14514, 14513, 1072, 1357, 6834, 1260, 572, 14516, 4995, 1242, 504, 1403, 2185, 5866, 6831, 2]
+// Dependencies: [5, 17, 7085, 14998, 14997, 1072, 1360, 6841, 1264, 572, 15000, 5131, 1242, 504, 1406, 2188, 6002, 6838, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 14515 (ContactSyncUtils)
+// Module 14999 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import LinkingDefault from "Linking" /* 5866 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6834 */;
-import ContactSyncManager from "ContactSyncManager" /* 14516 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
+import FlagUtils from "FlagUtils" /* 1406 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import LinkingDefault from "Linking" /* 6002 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6841 */;
+import ContactSyncManager from "ContactSyncManager" /* 15000 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6659 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14514 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14513 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14998 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14997 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let obj = function _uploadContacts() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

@@ -1,12 +1,12 @@
-// Module ID: 17296
-// Function ID: 17297
+// Module ID: 17570
+// Function ID: 17571
 // Name: pickBountyVideoRendition
-// Dependencies: [9817, 38, 2]
+// Dependencies: [10145, 38, 2]
 // Exports: pickBountyVideoRenditionWithFallback
 
-// Module 17296 (pickBountyVideoRendition)
+// Module 17570 (pickBountyVideoRendition)
 import _modDef38 from "module_38" /* 38 */;
-import BountyAspectRatio from "BountyAspectRatio" /* 9817 */;
+import BountyAspectRatio from "BountyAspectRatio" /* 10145 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -66,18 +66,19 @@ export const BOUNTY_MOBILE_MODAL_RENDITION_PICK = obj;
 export const BOUNTY_DESKTOP_MODAL_RENDITION_PICK = obj2;
 export { pickBountyVideoRendition };
 export function pickBountyVideoRenditionWithFallback(videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK) {
-  let tmp2;
-  if (null == videoRenditions.videoRenditions) {
+  let tmp = null;
+  if (null != videoRenditions.videoRenditions) {
+    tmp = pickBountyVideoRendition(videoRenditions.videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK);
+  }
+  if (null == tmp) {
     const supported = BOUNTY_MOBILE_MODAL_RENDITION_PICK.supported;
     let tmp5 = null;
     const tmp3 = require;
     if (supported.includes(BountyAspectRatio.BountyAspectRatio.PORTRAIT)) {
-      tmp5 = { url: videoRenditions.videoHls, aspectRatio: tmp3(9817).BountyAspectRatio.PORTRAIT };
-      const obj = { url: videoRenditions.videoHls, aspectRatio: tmp3(9817).BountyAspectRatio.PORTRAIT };
+      tmp5 = { url: videoRenditions.videoHls, aspectRatio: tmp3(10145).BountyAspectRatio.PORTRAIT };
+      const obj = { url: videoRenditions.videoHls, aspectRatio: tmp3(10145).BountyAspectRatio.PORTRAIT };
     }
-    tmp2 = tmp5;
-  } else {
-    tmp2 = pickBountyVideoRendition(videoRenditions.videoRenditions, BOUNTY_MOBILE_MODAL_RENDITION_PICK);
+    tmp = tmp5;
   }
-  return tmp2;
+  return tmp;
 }

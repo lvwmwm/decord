@@ -1,22 +1,22 @@
-// Module ID: 19831
-// Function ID: 19832
+// Module ID: 20172
+// Function ID: 20173
 // Name: AgeAssuranceGateModal
-// Dependencies: [19, 5019, 1097, 19832, 21, 19833, 7097, 1260, 19834, 11390, 504, 5808, 6813, 6826, 7264, 1113, 2]
+// Dependencies: [19, 5155, 1097, 20173, 21, 20174, 7493, 1264, 20175, 11980, 504, 5944, 6820, 6833, 7490, 1113, 2]
 // Exports: default
 
-// Module 19831 (AgeAssuranceGateModal)
+// Module 20172 (AgeAssuranceGateModal)
 import Fragment from "Fragment" /* 21 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6826 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19832 */;
-import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 19833 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6833 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 20173 */;
+import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 20174 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const discord_common_AnalyticsUtils = tmp(1260);
-const NavigatorHeader = tmp(7097);
+const discord_common_AnalyticsUtils = tmp(1264);
+const NavigatorHeader = tmp(7493);
 let react = react_mod;
 const AgeGateSource = AgeGateConstants.AgeGateSource;
 let closure_6 = ExistingUserAgeGateConstants.ExistingUserAgeGateScreens;

@@ -1,17 +1,17 @@
-// Module ID: 18115
-// Function ID: 18116
+// Module ID: 18398
+// Function ID: 18399
 // Name: BugReporterSetting
-// Dependencies: [11251, 6831, 11252, 2118, 11292, 11717, 1113, 12432, 2]
+// Dependencies: [11099, 6838, 11100, 2121, 11141, 12408, 1113, 13324, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 18115 (BugReporterSetting)
+// Module 18398 (BugReporterSetting)
 import intl2 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import BugReporterExperimentDefault from "BugReporterExperiment" /* 11292 */;
-import BugIcon from "BugIcon" /* 12432 */;
-import BugReportStore from "BugReportStore" /* 11251 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import BugReporterExperimentDefault from "BugReporterExperiment" /* 11141 */;
+import BugIcon from "BugIcon" /* 13324 */;
+import BugReportStore from "BugReportStore" /* 11099 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 function useBugReporterExperimentSettingPredicate() {
@@ -30,7 +30,7 @@ let obj = {
     if (!BugReportStore.getField("isReportOpen")) {
       obj.setState({ isReportOpen: true });
       const obj2 = ModalActionCreatorsDefault;
-      obj2.pushLazy(asyncRequire(11252, dependencyMap.paths));
+      obj2.pushLazy(asyncRequire(11100, dependencyMap.paths));
     }
   },
   withArrow: true,

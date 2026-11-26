@@ -1,16 +1,16 @@
-// Module ID: 15249
-// Function ID: 15250
+// Module ID: 12142
+// Function ID: 12143
 // Name: UserProfileGameDetailsList
-// Dependencies: [19, 17, 21, 5170, 575, 15250, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 12143, 2]
 // Exports: default
 
-// Module 15249 (UserProfileGameDetailsList)
+// Module 12142 (UserProfileGameDetailsList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import UserProfileWidgetExpandableItems from "UserProfileWidgetExpandableItems" /* 15250 */;
+import UserProfileWidgetExpandableItems from "UserProfileWidgetExpandableItems" /* 12143 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;

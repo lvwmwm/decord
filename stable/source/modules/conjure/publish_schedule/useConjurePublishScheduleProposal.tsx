@@ -1,12 +1,12 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13760
+// Function ID: 13761
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6932, 504, 11121, 11122, 1113, 4026, 12365, 2]
+// Dependencies: [5, 32, 19, 7017, 504, 13248, 13249, 1113, 4131, 13250, 2]
 // Exports: default
 
-// Module 13012 (useConjurePublishScheduleProposal)
-import _modDef4026 from "module_4026" /* 4026 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6932 */;
+// Module 13760 (useConjurePublishScheduleProposal)
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -126,13 +126,13 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
     let intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
-    const orZDqY = _modDef4026.orZDqY;
-    tmpResult = tmp(12365);
+    const orZDqY = _modDef4131.orZDqY;
+    tmpResult = tmp(13250);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(12365);
+  tmpResult2 = tmp(13250);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

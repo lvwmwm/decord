@@ -1,18 +1,18 @@
-// Module ID: 7022
-// Function ID: 7023
+// Module ID: 7694
+// Function ID: 7695
 // Name: Spellchecker
-// Dependencies: [5, 32, 2186, 3, 4981, 7023, 7024, 7025, 7026, 1380, 12, 2153, 2]
+// Dependencies: [5, 32, 2189, 3, 5116, 7695, 7696, 7697, 7698, 1255, 12, 2156, 2]
 // Exports: install
 
-// Module 7022 (Spellchecker)
+// Module 7694 (Spellchecker)
 import LoggerDefault from "Logger" /* 3 */;
-import DOMUtils from "DOMUtils" /* 2153 */;
-import fallbackLocalesDefault from "fallbackLocales" /* 7023 */;
-import _mod7024 from "module_7024" /* 7024 */;
+import DOMUtils from "DOMUtils" /* 2156 */;
+import fallbackLocalesDefault from "fallbackLocales" /* 7695 */;
+import _mod7696 from "module_7696" /* 7696 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import DiscordNative from "DiscordNative" /* 4981 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import DiscordNative from "DiscordNative" /* 5116 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod7024;
+      obj = _mod7696;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -172,8 +172,12 @@ class Spellchecker {
   getCachedMisspelling() {
     return { misspelledWord: this.misspelledWord, corrections: this.corrections };
   }
-  replaceMisspelling(arg0) {
-    spellCheck.replaceMisspelling(arg0);
+  clearCachedMisspelling() {
+    this.misspelledWord = "";
+    this.corrections = [];
+  }
+  replaceMisspelling(arg0, arg1) {
+    spellCheck.replaceMisspelling(arg0, arg1);
   }
   applyLocale(mapped1) {
     let closure_0 = mapped1;
@@ -203,7 +207,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod7024;
+      obj = _mod7696;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -233,7 +237,7 @@ class Spellchecker {
       }
       logger.error("" + str2 + " is not a valid locale.");
     });
-    set = new Set(mapped.filter(mapped1(1380).isNotNullish));
+    set = new Set(mapped.filter(mapped1(1255).isNotNullish));
     const fromResult = from(set);
     if (0 !== fromResult.length) {
       mapped1 = fromResult.map((item) => {

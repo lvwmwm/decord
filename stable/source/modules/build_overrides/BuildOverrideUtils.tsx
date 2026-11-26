@@ -1,19 +1,19 @@
-// Module ID: 1374
-// Function ID: 1375
+// Module ID: 1377
+// Function ID: 1378
 // Name: BuildOverrideUtils
-// Dependencies: [1375, 1072, 1376, 1377, 1378, 1282, 1381, 1383, 1384, 2]
+// Dependencies: [1378, 1072, 1379, 1380, 1381, 1285, 1383, 1385, 1386, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
-// Module 1374 (BuildOverrideUtils)
+// Module 1377 (BuildOverrideUtils)
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import BuildOverrideConstants from "BuildOverrideConstants" /* 1375 */;
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import urlParseAll from "urlParse" /* 1381 */;
-import AdsManagerBuildOverrideUtils from "AdsManagerBuildOverrideUtils" /* 1383 */;
-import _modDef1384 from "module_1384" /* 1384 */;
-import react_native_mod from "react-native" /* 1376 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import BuildOverrideConstants from "BuildOverrideConstants" /* 1378 */;
+import URLUtilsDefault from "URLUtils" /* 1381 */;
+import urlParseAll from "urlParse" /* 1383 */;
+import AdsManagerBuildOverrideUtils from "AdsManagerBuildOverrideUtils" /* 1385 */;
+import _modDef1386 from "module_1386" /* 1386 */;
+import react_native_mod from "react-native" /* 1379 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 let Version;
@@ -123,7 +123,7 @@ export function getBuildOverrideMeta(url) {
         }
         const _window = window;
         safeParseWithQueryResult.host = window.location.host;
-        const HTTP = tmp(1282).HTTP;
+        const HTTP = tmp(1285).HTTP;
         const get = HTTP.get;
         const obj7 = { url: obj4.format(safeParseWithQueryResult), oldFormErrors: true, rejectWithError: false };
         obj4 = urlParseAll;
@@ -141,7 +141,7 @@ export function getBuildOverrideExperiments() {
   try {
     let obj2;
     const _window = window;
-    const obj = _modDef1384;
+    const obj = _modDef1386;
     const tmp5 = obj.parse(window.document.cookie)[closure_4];
     if (null == tmp5) {
       obj2 = {};

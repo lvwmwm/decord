@@ -1,15 +1,15 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 17240
+// Function ID: 17241
 // Name: AccountEmailSetting
-// Dependencies: [1385, 8536, 504, 7094, 11717, 1113, 2]
+// Dependencies: [1388, 9202, 504, 7740, 12408, 1113, 2]
 
-// Module 16961 (AccountEmailSetting)
+// Module 17240 (AccountEmailSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7094 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import UserStore from "UserStore" /* 1385 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7740 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import UserStore from "UserStore" /* 1388 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

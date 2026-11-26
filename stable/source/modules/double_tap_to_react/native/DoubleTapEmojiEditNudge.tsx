@@ -1,22 +1,22 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 12673
+// Function ID: 12674
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 5171, 1494, 1072, 1388, 21, 5170, 575, 4995, 8530, 1496, 504, 1411, 10094, 1252, 10106, 5783, 1113, 7396, 7076, 2]
+// Dependencies: [5, 19, 17, 5307, 1497, 1072, 1391, 21, 5306, 575, 5131, 9196, 1499, 504, 1414, 9543, 1256, 9555, 5919, 1113, 7894, 7428, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 14808 (DoubleTapEmojiEditNudge)
+// Module 12673 (DoubleTapEmojiEditNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8530 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import DimensionsStore from "DimensionsStore" /* 1494 */;
-import EmojiConstants from "EmojiConstants" /* 1388 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import DimensionsStore from "DimensionsStore" /* 1497 */;
+import EmojiConstants from "EmojiConstants" /* 1391 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, c4, closure_2, dependencyMap;
@@ -36,7 +36,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
   const _location = location.location;
   const emoji = location.emoji;
   let tmp = _location;
-  let obj = _location(1496);
+  let obj = _location(1499);
   dependencyMap = obj.useAppEntryKey();
   const tmp3 = DimensionsStore((arg0) => arg0.byAppEntry[closure_2].fontScale);
   let obj2 = _location(504);
@@ -135,12 +135,12 @@ function DoubleTapEmojiEditNudgeInner(location) {
     let result = openEmojiPickerActionSheet(obj, "stack");
   }, items2);
   let obj4 = { color: "text-subtle", variant: "body-sm/normal", children: intl.string(_location(1113).t["1EUr/W"]) };
-  const Text = _location(5783).Text;
+  const Text = _location(5919).Text;
   intl = _location(1113).intl;
   items3 = [closure_11(Text, obj4), , ];
   let obj5 = { style: tmp5.doubleTapEmojiContainer, fastImageStyle: tmp5.doubleTapCustomEmoji, textEmojiStyle: tmp5.doubleTapTextEmoji, src: memo, name: str };
   str = "";
-  const tmp11 = emoji(7396);
+  const tmp11 = emoji(7894);
   const tmp8 = closure_12;
   const tmp9 = View;
   if (null == emoji.id) {
@@ -148,9 +148,9 @@ function DoubleTapEmojiEditNudgeInner(location) {
   }
   items3[1] = closure_11(tmp11, obj5);
   let obj6 = { accessibilityRole: "button", onPress: callback, hitSlop, style: tmp5.editButton, children: closure_11(Text2, obj7) };
-  const PressableOpacity = tmp(7076).PressableOpacity;
+  const PressableOpacity = tmp(7428).PressableOpacity;
   obj7 = { color: "text-brand", variant: "body-sm/normal", children: intl2.string(tmp(1113).t.bt75uw) };
-  Text2 = tmp(5783).Text;
+  Text2 = tmp(5919).Text;
   intl2 = tmp(1113).intl;
   items3[2] = closure_11(PressableOpacity, obj6);
   return tmp8(tmp9, obj3);
@@ -175,7 +175,7 @@ let result = size.fileFinishedImporting("modules/double_tap_to_react/native/Doub
 export function DoubleTapEmojiEditNudge(location) {
   const _location = location.location;
   let setting;
-  const DoubleTapReactionEmoji = setting(4995).DoubleTapReactionEmoji;
+  const DoubleTapReactionEmoji = setting(5131).DoubleTapReactionEmoji;
   setting = DoubleTapReactionEmoji.useSetting();
   const items = [setting];
   const memo = react.useMemo(() => {

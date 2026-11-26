@@ -1,74 +1,207 @@
-// Module ID: 9031
-// Function ID: 9032
+// Module ID: 10217
+// Function ID: 10218
 // Name: ICYMIActionCreators
-// Dependencies: [5, 9032, 502, 1385, 1072, 572, 9033, 1282, 1242, 9035, 9036, 4995, 2]
+// Dependencies: [5, 10218, 502, 1388, 1072, 10214, 572, 1242, 10215, 10219, 1285, 10220, 10221, 5131, 2]
 
-// Module 9031 (ICYMIActionCreators)
+// Module 10217 (ICYMIActionCreators)
 import Constants from "Constants" /* 1072 */;
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 9033 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 9035 */;
+import DiscoverRequestState from "DiscoverRequestState" /* 10214 */;
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 10215 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 10220 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 9032 */;
-import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore_mod from "UserStore" /* 1385 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10218 */;
+import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
+import UserStore_mod from "UserStore" /* 1388 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, c8, closure_5, constants;
+const require = globalThis.__r;
+let c8, closure_6, constants, identity;
 
+function notifyDiscoverRequestListeners() {
+  for (const item10005 of set) {
+    let item10005Result = item10005();
+    continue;
+  }
+}
 function setDiscoverUser(arg0) {
   if (id !== arg0) {
-    c9 = null;
-    closure_8 = {};
-    closure_12 = {};
+    c15 = null;
+    closure_14 = {};
+    c11 = 0;
+    c12 = 0;
+    const obj = c9;
+    if (c9 != null) {
+      obj.abort();
+    }
+    closure_18 = {};
+    const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+    discoverRequestGuard.resetSession();
     id = arg0;
     authSessionIdHash = null;
   }
 }
+function setDiscoverAuthSessionIdHash(arg0) {
+  if (null != arg0) {
+    const tmp2 = null != authSessionIdHash && authSessionIdHash !== arg0;
+    if (tmp2) {
+      c15 = null;
+      closure_14 = {};
+      c11 = 0;
+      c12 = 0;
+      const obj = c9;
+      if (c9 != null) {
+        obj.abort();
+      }
+      closure_18 = {};
+      const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+      discoverRequestGuard.resetSession();
+    }
+    authSessionIdHash = arg0;
+  }
+}
+let timeout = function _dispatchDiscoverPickerCommit() {
+  const obj = _asyncToGenerator(async (identity) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      let obj3;
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              closure_1 = tmp4;
+              c4 = 1;
+              c5 = 2;
+              c6 = 1;
+              const obj6 = { type: "DISCOVER_PICKER_COMMIT", identity };
+              const obj7 = { value: obj3.dispatch(obj6), done: false };
+              obj3 = Dispatcher;
+              return obj7;
+            }
+          } else {
+            if (1 === c5) {
+              c4 = 0;
+              identity = closure_3;
+              const obj2 = closure_130_1(closure_130_2[7]);
+              obj2.captureException(identity);
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp16) {
+          closure_3 = tmp16;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp16;
+          } else {
+            c5 = 1;
+          }
+        }
+      }
+    })();
+  });
+  return obj(...arguments);
+};
 function fetchDiscoverDehydrated(arg0) {
+  let closure_5;
   let isDiscoverPickerCommit;
   function captureRequestErrors() {
     return obj(...arguments);
   }
   ({ isInitialLoad: require, isReloading: importDefault, isDiscoverPickerCommit } = arg0);
   let closure_4;
+  AuthenticationStore = undefined;
   UserStore = undefined;
-  let closure_6;
-  let closure_9;
-  closure_7 = function isSameUser() {
-    let tmp = closure_6 === closure_12 && null != id;
-    if (tmp) {
+  authSessionIdHash = undefined;
+  closure_8 = undefined;
+  c9 = undefined;
+  let closure_10;
+  closure_14 = undefined;
+  function isSameUser() {
+    let isAuthenticatedResult = closure_6 === closure_18 && null != id && AuthenticationStore.isAuthenticated() && AuthenticationStore.getId() === id;
+    if (isAuthenticatedResult) {
       const currentUser = UserStore.getCurrentUser();
       id = undefined;
       if (currentUser != null) {
         id = currentUser.id;
       }
-      tmp = id === id;
+      isAuthenticatedResult = id === id;
     }
-    return tmp;
-  };
-  function canApply() {
-    let waterwheelsDiscoverEnabled = closure_6 === closure_12 && null != id;
-    if (waterwheelsDiscoverEnabled) {
-      const currentUser = UserStore.getCurrentUser();
-      id = undefined;
-      if (currentUser != null) {
-        id = currentUser.id;
+    if (isAuthenticatedResult) {
+      authSessionIdHash = AuthenticationStore.getAuthSessionIdHash();
+      if (authSessionIdHash == null) {
+        authSessionIdHash = null;
       }
-      waterwheelsDiscoverEnabled = id === id;
+      isAuthenticatedResult = authSessionIdHash === authSessionIdHash.authSessionIdHash;
     }
-    if (waterwheelsDiscoverEnabled) {
+    return isAuthenticatedResult;
+  }
+  function canRun() {
+    let canRunResult = isSameUser();
+    if (canRunResult) {
+      const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+      canRun = discoverRequestGuard.canRun;
       obj = WaterwheelsDiscoverExperiment;
-      waterwheelsDiscoverEnabled = obj.getWaterwheelsDiscoverEnabled("fetchDehydrated");
+      canRunResult = canRun(authSessionIdHash, obj.getWaterwheelsDiscoverEnabled("fetchDehydrated"));
     }
-    return waterwheelsDiscoverEnabled;
+    return canRunResult;
+  }
+  function canApply() {
+    let canRunResult = isSameUser();
+    if (canRunResult) {
+      const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+      canRun = discoverRequestGuard.canRun;
+      obj = WaterwheelsDiscoverExperiment;
+      canRunResult = canRun(authSessionIdHash, obj.getWaterwheelsDiscoverEnabled("fetchDehydrated"));
+    }
+    if (canRunResult) {
+      canRunResult = closure_5 === closure_14;
+    }
+    if (canRunResult) {
+      const discoverRequestGuard2 = DiscoverRequestState.discoverRequestGuard;
+      canRunResult = discoverRequestGuard2.matches(authSessionIdHash);
+    }
+    return canRunResult;
   }
   let obj = function _runRequest() {
     let value;
     obj = _asyncToGenerator(async function(arg0, value) {
+      let abortController;
       let closure_1;
+      let obj12;
+      let obj14;
       let picks2;
-      let tmp32;
+      let tmp56;
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -84,11 +217,13 @@ function fetchDiscoverDehydrated(arg0) {
       } else {
         let c7;
         try {
+          let picks;
           let closure_0;
           let uRLSearchParams;
           let c2;
           let startTime;
-          let picks;
+          let signal;
+          let tmp;
           c9 = 2;
           if (0 === c8) {
             if (arg0 === 1) {
@@ -96,19 +231,20 @@ function fetchDiscoverDehydrated(arg0) {
               throw value;
             } else if (arg0 === 2) {
               c9 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              const obj5 = { value, done: true };
+              return obj5;
             } else {
-              closure_5 = tmp;
+              picks = tmp4;
               closure_0 = undefined;
               uRLSearchParams = undefined;
               c2 = undefined;
               startTime = undefined;
-              picks = undefined;
+              signal = undefined;
+              tmp = undefined;
               c8 = 1;
               c9 = 1;
-              const obj7 = { value, done: false };
-              return obj7;
+              const obj6 = { value, done: false };
+              return obj6;
             }
           } else {
             if (1 === c8) {
@@ -117,22 +253,160 @@ function fetchDiscoverDehydrated(arg0) {
                 throw value;
               } else if (arg0 === 2) {
                 c9 = 3;
-                const obj10 = { value, done: true };
-                return obj10;
-              } else if (closure_133_8()) {
-                closure_0 = closure_133_4;
-                if (closure_133_4 == null) {
-                  closure_0 = c9;
+                const obj8 = { value, done: true };
+                return obj8;
+              } else {
+                if (closure_133_12()) {
+                  const tmp87 = closure_133_2;
+                  if (tmp87) {
+                    closure_0 = signal;
+                    if (signal == null) {
+                      closure_0 = c15;
+                    }
+                    if (closure_133_13()) {
+                      const obj10 = { type: "DISCOVER_REQUEST_STARTED", identity: discoverRequest };
+                      c8 = 2;
+                      c9 = 1;
+                      const obj13 = { value: obj14.dispatch(obj10), done: false };
+                      obj14 = picks2(closure_2[6]);
+                      return obj13;
+                    }
+                  }
                 }
-                const tmp69 = closure_133_1;
-                if (tmp69) {
-                  const obj9 = picks2(closure_2[5]);
-                  obj9.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: true });
+                c9 = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            } else if (2 === c8) {
+              if (arg0 === 1) {
+                c9 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c9 = 3;
+                const obj15 = { value, done: true };
+                return obj15;
+              } else {
+                c8 = true;
+              }
+            } else if (3 === c8) {
+              c7 = 0;
+              const tmp75 = closure_6;
+              if (c9 === abortController) {
+                c9 = null;
+              }
+              const tmp79 = isReloading && closure_133_11();
+              if (tmp79) {
+                const obj9 = picks2(closure_2[6]);
+                obj9.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
+              }
+              throw tmp75;
+            } else if (4 === c8) {
+              c7 = 1;
+              closure_2.return();
+              throw closure_6;
+            } else if (5 === c8) {
+              if (arg0 === 1) {
+                c9 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 0;
+                if (c9 === abortController) {
+                  c9 = null;
                 }
-                c7 = 1;
+                const tmp65 = isReloading && closure_133_11();
+                if (tmp65) {
+                  const obj7 = picks2(closure_2[6]);
+                  obj7.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
+                }
+                c9 = 3;
+                const obj16 = { value, done: true };
+                return obj16;
+              } else {
+                tmp = value;
+                if (closure_133_13()) {
+                  if ("broker_error" !== tmp.body.error_code) {
+                    const obj17 = { type: "LOAD_ICYMI_DEHYDRATED", items: tmp.body.items, loadId: tmp.body.load_id, startTime, isReloading, isInitialLoad: tmp56, discoverRequest };
+                    tmp56 = null != closure_0;
+                    const dispatch = picks2(closure_2[6]).dispatch;
+                    const tmp50 = picks2(closure_2[6]);
+                    if (!tmp56) {
+                      tmp56 = closure_133_0;
+                    }
+                    c8 = 6;
+                    c9 = 1;
+                    const obj18 = { value: dispatch(obj17), done: false };
+                    return obj18;
+                  }
+                  if (0 === tmp.body.items.length) {
+                    const _Error = Error;
+                    const self = this;
+                    const self2 = this;
+                    const error = new Error("Discover feed failed");
+                    throw error;
+                  }
+                } else {
+                  c7 = 0;
+                  if (c9 === abortController) {
+                    c9 = null;
+                  }
+                  const tmp32 = isReloading && closure_133_11();
+                  if (tmp32) {
+                    const obj4 = picks2(closure_2[6]);
+                    obj4.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
+                  }
+                  c9 = 3;
+                  return { value: "HermesInternal", done: null };
+                }
+              }
+            } else if (arg0 === 1) {
+              c9 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 0;
+              if (c9 === abortController) {
+                c9 = null;
+              }
+              const tmp23 = isReloading && closure_133_11();
+              if (tmp23) {
+                const obj2 = picks2(closure_2[6]);
+                obj2.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
+              }
+              c9 = 3;
+              const obj19 = { value, done: true };
+              return obj19;
+            } else {
+              const tmp9 = closure_133_13() && c15 === closure_0;
+              if (tmp9) {
+                c15 = null;
+              }
+              c7 = 0;
+              if (c9 === abortController) {
+                c9 = null;
+              }
+              const tmp14 = isReloading && closure_133_11();
+              if (tmp14) {
+                obj = picks2(closure_2[6]);
+                obj.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
+              }
+            }
+            if (closure_133_12()) {
+              const tmp103 = isReloading;
+              if (tmp103) {
+                const obj11 = picks2(closure_2[6]);
+                obj11.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: true });
+              }
+              c7 = 1;
+              const _Date = Date;
+              if (Date.now() < canRun) {
+                let closure_9 = canRun;
+                const _Error2 = Error;
+                const self5 = this;
+                const self6 = this;
+                const error1 = new Error("Discover is rate limited");
+                throw error1;
+              } else {
                 const _URLSearchParams = URLSearchParams;
-                const self = this;
-                const self2 = this;
+                const self7 = this;
+                const self8 = this;
                 uRLSearchParams = new URLSearchParams();
                 picks = undefined;
                 if (closure_0 != null) {
@@ -145,7 +419,7 @@ function fetchDiscoverDehydrated(arg0) {
                 startTime = picks2;
                 closure_2 = picks2[Symbol.iterator]();
                 while (closure_2 !== undefined) {
-                  c2 = tmp83;
+                  c2 = tmp116;
                   let appendResult = uRLSearchParams.append("game_ids", c2);
                   c7 = 1;
                   continue;
@@ -153,109 +427,40 @@ function fetchDiscoverDehydrated(arg0) {
                 if (null != closure_0) {
                   uRLSearchParams.append("refresh", "true");
                 }
-                const _Date = Date;
+                const _Date2 = Date;
                 startTime = Date.now();
-                const HTTP = closure_0(closure_2[7]).HTTP;
-                const request = { url: constants.GRAVITY_ITEMS_DEHYDRATED, query: uRLSearchParams.toString(), rejectWithError: false };
-                const get = HTTP.get;
-                c8 = 4;
+                let closure_11 = startTime;
+                const _AbortController = AbortController;
+                const self3 = this;
+                const self4 = this;
+                abortController = new AbortController();
+                signal = abortController.signal;
+                c8 = 5;
                 c9 = 1;
-                const obj11 = { value: get(request), done: false };
-                return obj11;
-              }
-            } else if (2 === c8) {
-              c7 = 0;
-              let tmp53 = closure_133_1;
-              const tmp51 = constants;
-              if (closure_133_1) {
-                tmp53 = closure_133_7();
-              }
-              if (tmp53) {
-                const obj8 = picks2(closure_2[5]);
-                obj8.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
-              }
-              throw tmp51;
-            } else if (3 === c8) {
-              c7 = 1;
-              closure_2.return();
-              throw constants;
-            } else if (4 === c8) {
-              if (arg0 === 1) {
-                c9 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 0;
-                const tmp41 = closure_133_1 && closure_133_7();
-                if (tmp41) {
-                  const obj6 = picks2(closure_2[5]);
-                  obj6.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
-                }
-                c9 = 3;
-                const obj12 = { value, done: true };
-                return obj12;
-              } else {
-                picks = value;
-                if (closure_133_8()) {
-                  if (closure_133_5 === c8) {
-                    const obj13 = { type: "LOAD_ICYMI_DEHYDRATED", items: picks.body.items, loadId: picks.body.load_id, startTime, isReloading: closure_133_1, isInitialLoad: tmp32 };
-                    tmp32 = null != closure_0;
-                    const dispatch = picks2(closure_2[5]).dispatch;
-                    const tmp115 = picks2(closure_2[5]);
-                    if (!tmp32) {
-                      tmp32 = closure_133_0;
-                    }
-                    c8 = 5;
-                    c9 = 1;
-                    const obj14 = { value: dispatch(obj13), done: false };
-                    return obj14;
-                  }
-                }
-                c7 = 0;
-                const tmp34 = closure_133_1 && closure_133_7();
-                if (tmp34) {
-                  const obj5 = picks2(closure_2[5]);
-                  obj5.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
-                }
-                c9 = 3;
-                return { value: "HermesInternal", done: null };
-              }
-            } else if (arg0 === 1) {
-              c9 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 0;
-              const tmp22 = closure_133_1 && closure_133_7();
-              if (tmp22) {
-                const obj2 = picks2(closure_2[5]);
-                obj2.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
-              }
-              c9 = 3;
-              const obj15 = { value, done: true };
-              return obj15;
-            } else {
-              const tmp8 = closure_133_8() && closure_133_5 === c8 && c9 === closure_0;
-              if (tmp8) {
-                c9 = null;
-              }
-              c7 = 0;
-              const tmp15 = closure_133_1 && closure_133_7();
-              if (tmp15) {
-                obj = picks2(closure_2[5]);
-                obj.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: false });
+                const obj20 = {
+                  value: obj12.withDiscoverRequestDeadline(abortController, () => {
+                              const HTTP = closure_0(closure_2[10]).HTTP;
+                              const request = { url: constants.GRAVITY_ITEMS_DEHYDRATED, query: closure_1_1.toString(), rejectWithError: false, failImmediatelyWhenRateLimited: true, signal, timeout };
+                              const get = HTTP.get;
+                              timeout = { deadline: closure_0(closure_2[9]).DISCOVER_REQUEST_DEADLINE_MS };
+                              return get(request);
+                            }),
+                  done: false
+                };
+                obj12 = closure_0(closure_2[9]);
+                return obj20;
               }
             }
-            c9 = 3;
-            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp99) {
-          constants = tmp99;
+        } catch (tmp144) {
+          closure_6 = tmp144;
           if (0 === c7) {
             c9 = 3;
-            throw tmp99;
-          } else if (1 === tmp101) {
-            c8 = 2;
-          } else {
+            throw tmp144;
+          } else if (1 === tmp146) {
             c8 = 3;
+          } else {
+            c8 = 4;
           }
         }
       }
@@ -264,12 +469,14 @@ function fetchDiscoverDehydrated(arg0) {
   };
   obj = function _captureRequestErrors() {
     obj = _asyncToGenerator(async (arg0, value) => {
-      let closure_1;
+      let bound;
+      let obj4;
+      let status;
       function runRequest() {
-        return closure_1_10(...arguments);
+        return closure_1_15(...arguments);
       }
-      if (c5 === 2) {
-        c5 = 3;
+      if (c6 === 2) {
+        c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -281,53 +488,133 @@ function fetchDiscoverDehydrated(arg0) {
           return { value: "HermesInternal", done: null };
         }
       } else {
-        let c3;
+        let c4;
         try {
-          let closure_0;
-          c5 = 2;
-          if (0 === c4) {
+          let closure_2;
+          let retry_after;
+          let closure_1;
+          let DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS;
+          c6 = 2;
+          if (0 === c5) {
             if (arg0 === 1) {
-              c5 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_0 = tmp4;
-              c3 = 1;
-              c4 = 2;
-              c5 = 1;
-              const obj5 = { value: runRequest(), done: false };
+              c6 = 3;
+              const obj5 = { value, done: true };
               return obj5;
-            }
-          } else {
-            if (1 === c4) {
-              c3 = 0;
-              closure_0 = closure_2;
-              const obj2 = tmp(closure_2[8]);
-              obj2.captureException(closure_0);
-            } else if (arg0 === 1) {
+            } else {
+              closure_2 = tmp;
+              retry_after = undefined;
+              closure_1 = undefined;
+              DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS = undefined;
+              c4 = 2;
               c5 = 3;
+              c6 = 1;
+              const obj6 = { value: runRequest(), done: false };
+              return obj6;
+            }
+          } else if (1 === c5) {
+            c4 = 0;
+            closure_10 = closure_10 - 1;
+            closure_1_19();
+            throw status;
+          } else {
+            if (2 === c5) {
+              c4 = 1;
+              const tmp25 = closure_130_8;
+              if (tmp25) {
+                if (closure_130_13()) {
+                  if (null != status) {
+                    if (typeof status === "object") {
+                      if ("status" in status) {
+                        if (429 === status.status) {
+                          retry_after = status;
+                          const retryAfter = retry_after.retryAfter;
+                          retry_after = retryAfter;
+                          if (retryAfter == null) {
+                            const body = retry_after.body;
+                            retry_after = undefined;
+                            if (body != null) {
+                              retry_after = body.retry_after;
+                            }
+                          }
+                          closure_1 = retry_after;
+                          if (typeof closure_1 === "number") {
+                            const _Number = Number;
+                            if (Number.isFinite(closure_1)) {
+                              if (closure_1 >= 0) {
+                                const _Math = Math;
+                                DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS = Math.max(1, closure_1);
+                              }
+                              const _Math2 = Math;
+                              const _Date = Date;
+                              bound = Math.max(bound, Date.now() + 1000 * DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS);
+                            }
+                          }
+                          DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS = retry_after(closure_2[10]).DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS;
+                        }
+                      }
+                    }
+                  }
+                  c4 = 3;
+                  const obj7 = { type: "DISCOVER_REQUEST_FAILED", identity, retryAfterAt: bound };
+                  c5 = 5;
+                  c6 = 1;
+                  const obj8 = { value: obj4.dispatch(obj7), done: false };
+                  obj4 = closure_1(closure_2[6]);
+                  return obj8;
+                }
+              }
+            } else if (3 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                closure_10 = closure_10 - 1;
+                closure_1_19();
+                c6 = 3;
+                const obj9 = { value, done: true };
+                return obj9;
+              } else {
+                c4 = 1;
+              }
+            } else if (4 === c5) {
+              c4 = 1;
+              closure_4 = status;
+              const obj2 = closure_1(closure_2[7]);
+              obj2.captureException(closure_4);
+            } else if (arg0 === 1) {
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
+              c4 = 0;
+              closure_10 = closure_10 - 1;
+              closure_1_19();
+              c6 = 3;
               obj = { value, done: true };
               return obj;
             } else {
-              c3 = 0;
+              c4 = 1;
             }
-            c5 = 3;
+            c4 = 0;
+            closure_10 = closure_10 - 1;
+            closure_1_19();
+            c6 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp13) {
-          closure_2 = tmp13;
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp13;
+        } catch (tmp64) {
+          status = tmp64;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp64;
+          } else if (1 === c4) {
+            c5 = 1;
+          } else if (2 === c4) {
+            c5 = 2;
           } else {
-            c4 = 1;
+            c5 = 4;
           }
         }
       }
@@ -341,47 +628,80 @@ function fetchDiscoverDehydrated(arg0) {
   }
   let tmp3 = null;
   if (isDiscoverPickerCommit) {
-    tmp3 = closure_9;
+    tmp3 = obj;
   }
   closure_4 = tmp3;
-  UserStore = canApply;
-  closure_6 = closure_12;
-  closure_9 = closure_7;
-  const tmp4 = captureRequestErrors();
-  closure_7 = tmp4;
-  return tmp4;
+  AuthenticationStore = closure_14;
+  UserStore = closure_18;
+  let discoverRequestGuard = require("DiscoverRequestState").discoverRequestGuard;
+  const observeGate = discoverRequestGuard.observeGate;
+  obj = require("WaterwheelsDiscoverExperiment");
+  observeGate(obj.getWaterwheelsDiscoverEnabled("fetchDehydrated"));
+  let discoverRequestGuard2 = require("DiscoverRequestState").discoverRequestGuard;
+  const capture = discoverRequestGuard2.capture;
+  if (id == null) {
+    id = null;
+  }
+  authSessionIdHash = AuthenticationStore.getAuthSessionIdHash();
+  if (authSessionIdHash == null) {
+    authSessionIdHash = null;
+  }
+  authSessionIdHash = capture(id, authSessionIdHash);
+  closure_8 = false;
+  c9 = null;
+  closure_10 = null;
+  closure_14 = closure_8;
+  closure_10 = closure_10 + 1;
+  const tmp6 = captureRequestErrors();
+  closure_8 = tmp6;
+  notifyDiscoverRequestListeners();
+  return tmp6;
 }
+let AuthenticationStore = AuthenticationStore_mod;
 let UserStore = UserStore_mod;
 const Endpoints = Constants.Endpoints;
-let closure_7 = Promise.resolve();
-let closure_8 = {};
+let closure_8 = Promise.resolve();
 let c9 = null;
-let tmp2 = null;
+let c10 = 0;
+let c11 = 0;
+let c12 = 0;
+const set = new Set();
+let closure_14 = {};
+let c15 = null;
+let tmp3 = null;
 if (AuthenticationStore.isAuthenticated()) {
   let id = AuthenticationStore.getId();
   if (id == null) {
     id = null;
   }
-  tmp2 = id;
+  tmp3 = id;
 }
-id = tmp2;
-let tmp4 = null;
-if (null != tmp2) {
+id = tmp3;
+let tmp5 = null;
+if (null != tmp3) {
   let authSessionIdHash = AuthenticationStore.getAuthSessionIdHash();
   if (authSessionIdHash == null) {
     authSessionIdHash = null;
   }
-  tmp4 = authSessionIdHash;
+  tmp5 = authSessionIdHash;
 }
 function resetDiscoverAccount() {
-  c9 = null;
-  closure_8 = {};
-  closure_12 = {};
+  c15 = null;
+  closure_14 = {};
+  c11 = 0;
+  c12 = 0;
+  const obj = c9;
+  if (c9 != null) {
+    obj.abort();
+  }
+  closure_18 = {};
+  const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+  discoverRequestGuard.resetSession();
   id = null;
   authSessionIdHash = null;
 }
-authSessionIdHash = tmp4;
-let closure_12 = {};
+authSessionIdHash = tmp5;
+let closure_18 = {};
 let Dispatcher = Dispatcher_mod;
 const subscription = Dispatcher.subscribe("LOGOUT", resetDiscoverAccount);
 Dispatcher = Dispatcher_mod;
@@ -389,9 +709,17 @@ const subscription1 = Dispatcher.subscribe("LOGIN_SUCCESS", resetDiscoverAccount
 Dispatcher = Dispatcher_mod;
 const subscription2 = Dispatcher.subscribe("LOGIN_RESET", (isMultiAccount) => {
   if (!isMultiAccount.isMultiAccount) {
-    c9 = null;
-    closure_8 = {};
-    closure_12 = {};
+    c15 = null;
+    closure_14 = {};
+    c11 = 0;
+    c12 = 0;
+    const obj = c9;
+    if (c9 != null) {
+      obj.abort();
+    }
+    closure_18 = {};
+    const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+    discoverRequestGuard.resetSession();
     id = null;
     authSessionIdHash = null;
   }
@@ -403,9 +731,17 @@ const subscription4 = Dispatcher.subscribe("CLOSE_SUSPENDED_USER", resetDiscover
 Dispatcher = Dispatcher_mod;
 const subscription5 = Dispatcher.subscribe("CONNECTION_CLOSED", (code) => {
   if (4004 === code.code) {
-    c9 = null;
-    closure_8 = {};
-    closure_12 = {};
+    c15 = null;
+    closure_14 = {};
+    c11 = 0;
+    c12 = 0;
+    const obj = c9;
+    if (c9 != null) {
+      obj.abort();
+    }
+    closure_18 = {};
+    const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+    discoverRequestGuard.resetSession();
     id = null;
     authSessionIdHash = null;
   }
@@ -415,17 +751,33 @@ const subscription6 = Dispatcher.subscribe("CONNECTION_OPEN", (authSessionIdHash
   authSessionIdHash = authSessionIdHash.authSessionIdHash;
   id = authSessionIdHash.user.id;
   if (id !== id) {
-    c9 = null;
-    closure_8 = {};
-    closure_12 = {};
+    c15 = null;
+    closure_14 = {};
+    c11 = 0;
+    c12 = 0;
+    const obj = c9;
+    if (c9 != null) {
+      obj.abort();
+    }
+    closure_18 = {};
+    const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+    discoverRequestGuard.resetSession();
     authSessionIdHash = null;
   }
   if (null != authSessionIdHash) {
-    const tmp3 = null != authSessionIdHash && authSessionIdHash !== authSessionIdHash;
-    if (tmp3) {
-      c9 = null;
-      closure_8 = {};
-      closure_12 = {};
+    const tmp7 = null != authSessionIdHash && authSessionIdHash !== authSessionIdHash;
+    if (tmp7) {
+      c15 = null;
+      closure_14 = {};
+      c11 = 0;
+      c12 = 0;
+      const obj2 = c9;
+      if (c9 != null) {
+        obj2.abort();
+      }
+      closure_18 = {};
+      const discoverRequestGuard2 = DiscoverRequestState.discoverRequestGuard;
+      discoverRequestGuard2.resetSession();
     }
   }
 });
@@ -435,13 +787,21 @@ const subscription7 = Dispatcher.subscribe("AUTH_SESSION_CHANGE", (authSessionId
   if (null != authSessionIdHash) {
     const tmp2 = null != authSessionIdHash && authSessionIdHash !== authSessionIdHash;
     if (tmp2) {
-      c9 = null;
-      closure_8 = {};
-      closure_12 = {};
+      c15 = null;
+      closure_14 = {};
+      c11 = 0;
+      c12 = 0;
+      const obj = c9;
+      if (c9 != null) {
+        obj.abort();
+      }
+      closure_18 = {};
+      const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+      discoverRequestGuard.resetSession();
     }
   }
 });
-let obj = {
+timeout = {
   fetchPopularGuildsFromCategories(stateFromStoresArray1, sum) {
     let closure_0 = stateFromStoresArray1;
     let closure_1 = sum;
@@ -478,7 +838,7 @@ let obj = {
               const category_ids = tmp4;
               guilds = undefined;
               c3 = 1;
-              const HTTP = category_ids(closure_2[7]).HTTP;
+              const HTTP = category_ids(closure_2[10]).HTTP;
               const request = { url: constants.GRAVITY_TOPIC_GUILDS, body: obj5, rejectWithError: false };
               obj5 = { category_ids, offset };
               c4 = 2;
@@ -489,7 +849,7 @@ let obj = {
           } else if (1 === c4) {
             c3 = 0;
             offset = closure_2;
-            const obj4 = offset(closure_2[8]);
+            const obj4 = offset(closure_2[7]);
             obj4.captureException(offset);
             c5 = 3;
             return { value: false, done: true };
@@ -504,7 +864,7 @@ let obj = {
           } else {
             guilds = value.body.guilds;
             const obj8 = { type: "LOAD_ICYMI_POPULAR_GUILDS", categoryIds: closure_129_0, guilds, offset: closure_129_1 };
-            const obj = offset(closure_2[5]);
+            const obj = offset(closure_2[6]);
             obj.dispatch(obj8);
             c3 = 0;
             c5 = 3;
@@ -522,6 +882,16 @@ let obj = {
       }
     })();
   },
+  subscribeDiscoverRequests(requestWhenReady) {
+    let closure_0 = requestWhenReady;
+    set.add(requestWhenReady);
+    return () => {
+      set.delete(requestWhenReady);
+    };
+  },
+  hasDiscoverRequestInFlight() {
+    return c10 > 0;
+  },
   fetchDehydrated(arg0) {
     let obj = arg0;
     if (arg0 === undefined) {
@@ -532,8 +902,9 @@ let obj = {
       let c0;
       let closure_3;
       let isReloading;
-      let obj15;
-      let obj9;
+      let obj12;
+      let obj18;
+      let picks;
       if (constants === 2) {
         constants = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -547,10 +918,11 @@ let obj = {
           return { value: "HermesInternal", done: null };
         }
       } else {
-        let tmp27;
         try {
           let isInitialLoad;
           let startTime;
+          let tmp;
+          let _null;
           constants = 2;
           if (0 === currentUser) {
             if (arg0 === 1) {
@@ -564,12 +936,12 @@ let obj = {
               isInitialLoad = undefined;
               isReloading = undefined;
               startTime = undefined;
-              tmp27 = undefined;
+              tmp = undefined;
               ({ isInitialLoad: c0, isReloading } = obj);
               const forceRefresh = obj.forceRefresh;
               currentUser = currentUser.getCurrentUser();
               id = undefined;
-              const tmp45 = setDiscoverUser;
+              const tmp60 = setDiscoverUser;
               if (currentUser != null) {
                 id = currentUser.id;
               }
@@ -577,77 +949,108 @@ let obj = {
               if (id == null) {
                 isInitialLoad = null;
               }
-              tmp45(isInitialLoad);
-              const isDiscoverPickerCommit = tmp44.isDiscoverPickerCommit && null != closure_1_10;
+              tmp60(isInitialLoad);
+              setDiscoverAuthSessionIdHash(authSessionIdHash.getAuthSessionIdHash());
+              let isDiscoverPickerCommit = tmp59.isDiscoverPickerCommit;
+              const obj5 = authSessionIdHash;
               if (isDiscoverPickerCommit) {
-                closure_8 = {};
-                const obj5 = { picks: picks.getPicks() };
+                isDiscoverPickerCommit = null != closure_1_16;
               }
-              const obj6 = isInitialLoad(startTime[9]);
-              if (obj6.icymiEnabled("fetchDehydrated")) {
-                const tmp18Result = isInitialLoad(startTime[6]);
-                if (tmp18Result.getWaterwheelsDiscoverEnabled("fetchDehydrated")) {
+              if (isDiscoverPickerCommit) {
+                const obj6 = closure_1_9;
+                if (closure_1_9 != null) {
+                  obj6.abort();
+                }
+                closure_14 = {};
+                const obj7 = { picks: picks.getPicks() };
+                const discoverRequestGuard = isInitialLoad(HTTP[5]).discoverRequestGuard;
+                const observeGate = discoverRequestGuard.observeGate;
+                const obj8 = isInitialLoad(HTTP[8]);
+                observeGate(obj8.getWaterwheelsDiscoverEnabled("fetchDehydrated"));
+                const discoverRequestGuard2 = isInitialLoad(HTTP[5]).discoverRequestGuard;
+                discoverRequestGuard2.commitPicker();
+                const discoverRequestGuard3 = isInitialLoad(HTTP[5]).discoverRequestGuard;
+                const capture = discoverRequestGuard3.capture;
+                authSessionIdHash = obj5.getAuthSessionIdHash();
+                _null = authSessionIdHash;
+                const tmp28 = closure_1_16;
+                if (authSessionIdHash == null) {
+                  _null = null;
+                }
+                function dispatchDiscoverPickerCommit() {
+                  return closure_1_22(...arguments);
+                }
+                const result = dispatchDiscoverPickerCommit(capture(tmp28, _null));
+              }
+              const obj9 = isInitialLoad(HTTP[11]);
+              if (obj9.icymiEnabled("fetchDehydrated")) {
+                const tmp32Result = isInitialLoad(HTTP[8]);
+                if (tmp32Result.getWaterwheelsDiscoverEnabled("fetchDehydrated")) {
+                  if (obj.isDiscoverBackground) {
+                    constants = 3;
+                    return { value: "HermesInternal", done: null };
+                  }
                   constants = 3;
-                  const obj7 = { value: fetchDiscoverDehydrated(obj), done: true };
-                  return obj7;
+                  const obj10 = { value: fetchDiscoverDehydrated(obj), done: true };
+                  return obj10;
                 } else if (!obj.isDiscoverPickerCommit) {
                   if (isReloading) {
-                    const obj8 = HTTP(startTime[5]);
-                    obj8.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: true });
+                    const obj11 = _null(HTTP[6]);
+                    obj11.dispatch({ type: "ICYMI_SET_REFRESHING", refreshing: true });
                   }
-                  picks = 1;
+                  authSessionIdHash = 1;
                   const _Date = Date;
                   startTime = Date.now();
-                  HTTP = tmp18(startTime[7]).HTTP;
-                  const request = { url: constants.GRAVITY_ITEMS_DEHYDRATED, query: obj9, rejectWithError: false };
-                  obj9 = { refresh: forceRefresh };
+                  HTTP = tmp32(HTTP[10]).HTTP;
+                  const request = { url: constants.GRAVITY_ITEMS_DEHYDRATED, query: obj12, rejectWithError: false };
+                  obj12 = { refresh: forceRefresh };
                   currentUser = 2;
                   constants = 1;
-                  const obj10 = { value: HTTP.get(request), done: false };
-                  return obj10;
+                  const obj13 = { value: HTTP.get(request), done: false };
+                  return obj13;
                 }
               }
             }
           } else if (1 === currentUser) {
-            picks = 0;
-            let closure_4 = tmp27;
-            const obj4 = HTTP(startTime[8]);
-            obj4.captureException(closure_4);
+            authSessionIdHash = 0;
+            const obj4 = _null(HTTP[7]);
+            obj4.captureException(picks);
           } else if (2 === currentUser) {
             if (arg0 === 1) {
               constants = 3;
               throw value;
             } else if (arg0 === 2) {
-              picks = 0;
+              authSessionIdHash = 0;
               constants = 3;
-              const obj11 = { value, done: true };
-              return obj11;
+              const obj14 = { value, done: true };
+              return obj14;
             } else {
-              tmp27 = value;
-              const obj12 = { type: "LOAD_ICYMI_DEHYDRATED", items: tmp27.body.items, loadId: tmp27.body.load_id, startTime, isReloading, isInitialLoad };
+              tmp = value;
+              const obj15 = { type: "LOAD_ICYMI_DEHYDRATED", items: tmp.body.items, loadId: tmp.body.load_id, startTime, isReloading, isInitialLoad };
               currentUser = 3;
               constants = 1;
-              const obj13 = { value: obj15.dispatch(obj12), done: false };
-              obj15 = HTTP(startTime[5]);
-              return obj13;
+              const obj16 = { value: obj18.dispatch(obj15), done: false };
+              obj18 = _null(HTTP[6]);
+              return obj16;
             }
           } else if (arg0 === 1) {
             constants = 3;
             throw value;
           } else if (arg0 === 2) {
-            picks = 0;
+            authSessionIdHash = 0;
             constants = 3;
             obj = { value, done: true };
             return obj;
           } else {
-            picks = 0;
+            authSessionIdHash = 0;
           }
           constants = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp27) {
-          if (0 === picks) {
+        } catch (tmp42) {
+          picks = tmp42;
+          if (0 === authSessionIdHash) {
             constants = 3;
-            throw tmp27;
+            throw tmp42;
           } else {
             currentUser = 1;
           }
@@ -688,12 +1091,12 @@ let obj = {
             } else {
               _location = tmp;
               items = tmp4;
-              const obj8 = items(closure_2[9]);
+              const obj8 = items(closure_2[11]);
               const tmp23 = items;
               if (obj8.icymiEnabled("gravityJoinGuild")) {
                 if (0 !== items.length) {
                   c3 = 1;
-                  const HTTP = tmp23(closure_2[7]).HTTP;
+                  const HTTP = tmp23(closure_2[10]).HTTP;
                   const request = { url: constants.GRAVITY_JOIN_GUILD, body: obj5, rejectWithError: false };
                   obj5 = { guild_ids: tmp13, location: _location };
                   c4 = 2;
@@ -708,7 +1111,7 @@ let obj = {
           } else if (1 === c4) {
             c3 = 0;
             items = closure_2;
-            const obj2 = _location(closure_2[8]);
+            const obj2 = _location(closure_2[7]);
             obj2.captureException(items);
             c5 = 3;
             return { value: false, done: true };
@@ -770,11 +1173,11 @@ let obj = {
             } else {
               message_id = tmp;
               channel_id = undefined;
-              const obj11 = channel_id(closure_2[9]);
+              const obj11 = channel_id(closure_2[11]);
               const tmp31 = channel_id;
               if (obj11.icymiEnabled("fetchInitial")) {
                 c3 = 1;
-                const HTTP = tmp31(closure_2[7]).HTTP;
+                const HTTP = tmp31(closure_2[10]).HTTP;
                 const request = { url: constants.GRAVITY_ITEMS_HYDRATE, body: obj5, rejectWithError: false };
                 obj5 = { message_items: items, activity_items: [] };
                 const obj6 = { channel_id, message_id };
@@ -788,7 +1191,7 @@ let obj = {
           } else if (1 === c4) {
             c3 = 0;
             message_id = closure_2;
-            const obj4 = message_id(closure_2[8]);
+            const obj4 = message_id(closure_2[7]);
             obj4.captureException(message_id);
           } else if (arg0 === 1) {
             c5 = 3;
@@ -806,7 +1209,7 @@ let obj = {
               return { value: "HermesInternal", done: null };
             } else {
               const obj9 = { type: "LOAD_ICYMI_FROM_NOTIFICATION", messageItem: channel_id.body.message_items[0] };
-              const obj = message_id(closure_2[5]);
+              const obj = message_id(closure_2[6]);
               obj.dispatch(obj9);
               c3 = 0;
             }
@@ -876,19 +1279,19 @@ let obj = {
               activityItems = undefined;
               tmp30 = undefined;
               hydrationId = undefined;
-              const obj15 = startingIndex(tmp30[9]);
+              const obj15 = startingIndex(tmp30[11]);
               if (obj15.icymiEnabled("fetchHydrated")) {
                 messageItems = tmp30.messageItems;
                 activityItems = tmp30.activityItems;
                 if (0 === messageItems.length) {
                   if (0 === activityItems.length) {
                     const obj8 = { type: "LOAD_ICYMI_HYDRATED", requestMessageItems: [], requestActivityItems: [], messageItems: [], activityItems: [], startingIndex, endingIndex };
-                    const obj6 = endingIndex(tmp30[5]);
+                    const obj6 = endingIndex(tmp30[6]);
                     obj6.dispatch(obj8);
                   }
                 }
                 c3 = 1;
-                const HTTP = startingIndex(tmp30[7]).HTTP;
+                const HTTP = startingIndex(tmp30[10]).HTTP;
                 const request = { url: constants.GRAVITY_ITEMS_HYDRATE, body: obj9, rejectWithError: false };
                 obj9 = { message_items: messageItems, activity_items: activityItems };
                 c4 = 2;
@@ -900,12 +1303,12 @@ let obj = {
           } else if (1 === c4) {
             c3 = 0;
             let closure_4 = tmp30;
-            const obj2 = endingIndex(tmp30[8]);
+            const obj2 = endingIndex(tmp30[7]);
             obj2.captureException(closure_4);
-            const obj3 = startingIndex(tmp30[10]);
+            const obj3 = startingIndex(tmp30[12]);
             hydrationId = obj3.generateHydrationId(closure_129_0, closure_129_1);
             const obj11 = { type: "LOAD_ICYMI_HYDRATED_FAILED", hydrationId };
-            const obj4 = endingIndex(tmp30[5]);
+            const obj4 = endingIndex(tmp30[6]);
             obj4.dispatch(obj11);
           } else if (arg0 === 1) {
             c5 = 3;
@@ -918,7 +1321,7 @@ let obj = {
           } else {
             tmp30 = value;
             const obj12 = { type: "LOAD_ICYMI_HYDRATED", requestMessageItems: messageItems, requestActivityItems: activityItems, messageItems: tmp30.body.message_items, activityItems: tmp30.body.activity_items, startingIndex: closure_129_0, endingIndex: closure_129_1 };
-            const obj13 = endingIndex(tmp30[5]);
+            const obj13 = endingIndex(tmp30[6]);
             obj13.dispatch(obj12);
             c3 = 0;
           }
@@ -970,7 +1373,7 @@ let obj = {
               const tmp27 = require;
               if (obj9.icymiEnabled("guildChannelScores")) {
                 c3 = 1;
-                const HTTP = tmp27(dependencyMap[7]).HTTP;
+                const HTTP = tmp27(dependencyMap[10]).HTTP;
                 const obj5 = { url: constants.GRAVITY_CUSTOM_SCORES, rejectWithError: false };
                 c4 = 2;
                 c5 = 1;
@@ -981,7 +1384,7 @@ let obj = {
           } else if (1 === c4) {
             c3 = 0;
             closure_1 = closure_2;
-            const obj4 = closure_129_1(closure_129_2[8]);
+            const obj4 = closure_129_1(closure_129_2[7]);
             obj4.captureException(closure_1);
           } else if (arg0 === 1) {
             c5 = 3;
@@ -994,7 +1397,7 @@ let obj = {
           } else {
             body = value;
             const obj8 = { type: "LOAD_ICYMI_CUSTOM_SCORES", scores: body.body };
-            const obj = closure_129_1(closure_129_2[5]);
+            const obj = closure_129_1(closure_129_2[6]);
             obj.dispatch(obj8);
             c3 = 0;
           }
@@ -1047,7 +1450,7 @@ let obj = {
               const tmp27 = require;
               if (obj9.icymiEnabled("recommendedGuilds")) {
                 c3 = 1;
-                const HTTP = tmp27(dependencyMap[7]).HTTP;
+                const HTTP = tmp27(dependencyMap[10]).HTTP;
                 const obj5 = { url: constants.GRAVITY_RECOMMENDED_GUILDS, rejectWithError: false };
                 c4 = 2;
                 c5 = 1;
@@ -1058,7 +1461,7 @@ let obj = {
           } else if (1 === c4) {
             c3 = 0;
             closure_1 = closure_2;
-            const obj4 = closure_129_1(closure_129_2[8]);
+            const obj4 = closure_129_1(closure_129_2[7]);
             obj4.captureException(closure_1);
           } else if (arg0 === 1) {
             c5 = 3;
@@ -1071,7 +1474,7 @@ let obj = {
           } else {
             body = value;
             const obj8 = { type: "LOAD_ICYMI_RECOMMENDED_GUILDS", guilds: body.body.guilds };
-            const obj = closure_129_1(closure_129_2[5]);
+            const obj = closure_129_1(closure_129_2[6]);
             obj.dispatch(obj8);
             c3 = 0;
           }
@@ -1123,12 +1526,12 @@ let obj = {
               body = undefined;
               const obj7 = ICYMIExperiment;
               if (obj7.icymiEnabled("mediaForCurrentStatus")) {
-                const CustomStatusSetting = tmp32(dependencyMap[11]).CustomStatusSetting;
+                const CustomStatusSetting = tmp32(dependencyMap[13]).CustomStatusSetting;
                 setting = CustomStatusSetting.getSetting();
                 if (null != setting) {
                   if (null != setting.createdAtMs) {
                     c3 = 1;
-                    HTTP = tmp32(dependencyMap[7]).HTTP;
+                    HTTP = tmp32(dependencyMap[10]).HTTP;
                     const obj4 = { url: constants.GRAVITY_ATTACHMENTS, rejectWithError: false };
                     c4 = 2;
                     c5 = 1;
@@ -1140,7 +1543,7 @@ let obj = {
             }
           } else if (1 === tmp4) {
             c3 = 0;
-            HTTP = closure_129_1(closure_129_2[8]);
+            HTTP = closure_129_1(closure_129_2[7]);
             HTTP.captureException(closure_2);
           } else if (arg0 === 1) {
             c5 = 3;
@@ -1152,7 +1555,7 @@ let obj = {
             return obj6;
           } else {
             body = value;
-            HTTP = closure_129_1(closure_129_2[5]);
+            HTTP = closure_129_1(closure_129_2[6]);
             const obj = { type: "LOAD_ICYMI_CURRENT_STATUS_MEDIA", attachments: body.body.attachments, createdAtMs: Number(setting.createdAtMs) };
             const _Number = Number;
             const dispatch = HTTP.dispatch;
@@ -1274,6 +1677,6 @@ let obj = {
     dispatch(obj);
   }
 };
-const result = size.fileFinishedImporting("modules/icymi/ICYMIActionCreators.tsx");
+let result = size.fileFinishedImporting("modules/icymi/ICYMIActionCreators.tsx");
 
-export default obj;
+export default timeout;

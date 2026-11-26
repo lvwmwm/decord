@@ -1,37 +1,37 @@
-// Module ID: 9953
-// Function ID: 9954
+// Module ID: 9069
+// Function ID: 9070
 // Name: MessageManager
-// Dependencies: [32, 6931, 6655, 5023, 6950, 5019, 5041, 6930, 5073, 5203, 1072, 5026, 1089, 3, 9954, 6650, 9984, 5397, 6981, 7745, 9985, 510, 5208, 1099, 6952, 6122, 1113, 572, 7383, 2]
+// Dependencies: [32, 7016, 6790, 5159, 7036, 5155, 5177, 7015, 5209, 5339, 1072, 5162, 1089, 3, 9070, 6785, 9100, 5533, 7067, 8660, 9101, 510, 5344, 1099, 7038, 6258, 1113, 572, 7882, 2]
 
-// Module 9953 (MessageManager)
+// Module 9069 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl3 from "intl" /* 1113 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import matchPathCompat from "matchPathCompat" /* 5208 */;
-import flow_Client from "flow/Client" /* 5397 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6650 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6952 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7745 */;
-import getNitroMessagePrefetchKey from "getNitroMessagePrefetchKey" /* 9954 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9984 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9985 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import matchPathCompat from "matchPathCompat" /* 5344 */;
+import flow_Client from "flow/Client" /* 5533 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6785 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 7038 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
+import getNitroMessagePrefetchKey from "getNitroMessagePrefetchKey" /* 9070 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9100 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9101 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6655 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6950 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import ReadStateStore from "ReadStateStore" /* 6930 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7036 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let map, obj4;
@@ -109,7 +109,7 @@ function fetchMessages(arg0) {
             if (!GatewayConnectionStore.isConnected()) {
               flag = true;
             }
-            const hasUnreadResult = tmp11(6981)(channelId) && ReadStateStore.hasUnread(channelId);
+            const hasUnreadResult = tmp11(7067)(channelId) && ReadStateStore.hasUnread(channelId);
             if (hasUnreadResult) {
               flag = true;
             }
@@ -271,8 +271,11 @@ function loadSelectedChannelIfNecessary() {
       if (isTextChannel(channel.type)) {
         const obj2 = ChannelMessagesDefault;
         const orCreate = obj2.getOrCreate(channelId);
-        const tmp7 = orCreate.ready && orCreate.hasFetched;
-        if (!tmp7) {
+        let loadingMore = orCreate.loadingMore;
+        if (!loadingMore) {
+          loadingMore = orCreate.ready && orCreate.hasFetched;
+        }
+        if (!loadingMore) {
           ({ id: obj3.channelId, id: id2 } = channel);
           const obj5 = { guildId: channel.getGuildId(), channelId: null, messageId: message };
           const matchPath = matchPathCompat.matchPath;
@@ -363,7 +366,7 @@ function handleChannelPreload(context) {
   let channelId;
   let guildId;
   ({ guildId, channelId } = context);
-  if (context.context === authStore4) {
+  if (context.context === authStore3) {
     const obj = { guildId, channelId };
     fetchMessages(obj);
     const currentSidebarChannelId = ChannelSectionStore.getCurrentSidebarChannelId(channelId);
@@ -480,7 +483,7 @@ function handleAppWillBecomeActive() {
     return false;
   } else {
     const obj = MessageActionCreatorsDefault;
-    const newLocalMessages = obj.fetchNewLocalMessages(channelId, authStore3);
+    const newLocalMessages = obj.fetchNewLocalMessages(channelId, gesture);
   }
 }
 const isTextChannel = ChannelRecord.isTextChannel;

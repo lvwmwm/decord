@@ -1,13 +1,13 @@
-// Module ID: 13952
-// Function ID: 13953
+// Module ID: 14537
+// Function ID: 14538
 // Name: TraitPickerControls
-// Dependencies: [21, 13953, 13954, 2]
+// Dependencies: [21, 14538, 14540, 2]
 // Exports: default
 
-// Module 13952 (TraitPickerControls)
+// Module 14537 (TraitPickerControls)
 import Fragment from "Fragment" /* 21 */;
-import useTraitPickerSelection from "useTraitPickerSelection" /* 13953 */;
-import TraitPickerDefault from "TraitPicker" /* 13954 */;
+import useTraitPickerSelection from "useTraitPickerSelection" /* 14538 */;
+import TraitPickerDefault from "TraitPicker" /* 14540 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

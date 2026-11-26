@@ -1,21 +1,21 @@
-// Module ID: 13057
-// Function ID: 13058
+// Module ID: 13808
+// Function ID: 13809
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 5194, 21, 5170, 575, 1113, 5401, 5177, 5167, 1377, 13058, 13062, 13047, 2]
+// Dependencies: [19, 5330, 21, 5306, 575, 1113, 5537, 5313, 5303, 1380, 13809, 13813, 13800, 2]
 
-// Module 13057 (chat_input/ChatInputNativeComponent)
+// Module 13808 (chat_input/ChatInputNativeComponent)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ColorUtils from "ColorUtils" /* 5167 */;
-import shared from "shared" /* 5177 */;
-import useTheme from "useTheme" /* 5401 */;
-import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 13047 */;
-import MobileMarkdownFormatMenuExperiment from "MobileMarkdownFormatMenuExperiment" /* 13062 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import ColorUtils from "ColorUtils" /* 5303 */;
+import shared from "shared" /* 5313 */;
+import useTheme from "useTheme" /* 5537 */;
+import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 13800 */;
+import MobileMarkdownFormatMenuExperiment from "MobileMarkdownFormatMenuExperiment" /* 13813 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5194 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -89,7 +89,7 @@ class ChatInputNativeComponent {
     if (isThemeDarkResult) {
       num2 = 1;
     }
-    const tmp14 = tmp10(13058)(onMaxHeightChanged);
+    const tmp14 = tmp10(13809)(onMaxHeightChanged);
     const tmp4Result6 = MobileMarkdownFormatMenuExperiment;
     const isMobileMarkdownFormatMenuEnabled = tmp4Result6.useIsMobileMarkdownFormatMenuEnabled("ChatInputNativeComponent");
     const obj3 = { accessible, accessibilityLabel: tmp12, children: tmp13, editable, showFormatMenu: isMobileMarkdownFormatMenuEnabled, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset };

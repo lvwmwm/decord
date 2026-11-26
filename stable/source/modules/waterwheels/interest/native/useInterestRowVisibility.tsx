@@ -1,10 +1,10 @@
-// Module ID: 18806
-// Function ID: 18807
+// Module ID: 19043
+// Function ID: 19044
 // Name: useInterestRowVisibility
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 18806 (useInterestRowVisibility)
+// Module 19043 (useInterestRowVisibility)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

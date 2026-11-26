@@ -1,12 +1,12 @@
-// Module ID: 19787
-// Function ID: 19788
+// Module ID: 20126
+// Function ID: 20127
 // Name: getStreamIssueReportOptions
-// Dependencies: [6802, 1113, 2]
+// Dependencies: [6793, 1113, 2]
 // Exports: default
 
-// Module 19787 (getStreamIssueReportOptions)
+// Module 20126 (getStreamIssueReportOptions)
 import intl10 from "intl" /* 1113 */;
-import Constants from "Constants" /* 6802 */;
+import Constants from "Constants" /* 6793 */;
 import size from "module_2" /* 2 */;
 
 const StreamIssueReportReasons = Constants.StreamIssueReportReasons;

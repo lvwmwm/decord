@@ -1,16 +1,16 @@
-// Module ID: 17239
-// Function ID: 17240
+// Module ID: 17518
+// Function ID: 17519
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1072, 7711, 11547, 9794, 1113, 11717, 17240, 2171, 17238, 2]
+// Dependencies: [19, 1072, 9585, 9788, 10511, 1113, 12408, 17519, 2174, 17517, 2]
 
-// Module 17239 (PremiumManageSubscriptionsSetting)
+// Module 17518 (PremiumManageSubscriptionsSetting)
 import Constants from "Constants" /* 1072 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7711 */;
-import MapleSyrupExperiments from "MapleSyrupExperiments" /* 9794 */;
-import SubscriptionIcon from "SubscriptionIcon" /* 17240 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 9585 */;
+import MapleSyrupExperiments from "MapleSyrupExperiments" /* 10511 */;
+import SubscriptionIcon from "SubscriptionIcon" /* 17519 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

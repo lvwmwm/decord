@@ -1,55 +1,59 @@
-// Module ID: 11586
-// Function ID: 11587
+// Module ID: 15469
+// Function ID: 15470
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 8867, 1385, 8858, 7470, 1072, 8497, 8869, 21, 575, 5170, 1377, 10923, 10924, 9315, 7076, 11587, 5783, 11589, 5347, 11620, 1113, 11622, 8859, 5874, 11623, 7668, 5869, 8922, 9808, 9811, 6872, 11625, 11626, 5756, 504, 11628, 8865, 11629, 11630, 11634, 11660, 1493, 8134, 11661, 8840, 9408, 5226, 2]
+// Dependencies: [32, 19, 17, 8547, 1388, 8479, 7962, 1072, 8410, 8549, 21, 575, 5306, 1380, 10064, 10065, 10870, 7428, 10560, 5919, 15470, 5483, 15472, 1113, 15474, 8480, 6010, 15278, 8604, 6005, 8608, 10135, 10138, 6957, 9503, 10078, 15475, 504, 11819, 8545, 15274, 15275, 10113, 15476, 1496, 9487, 13999, 8409, 10654, 5362, 2]
 // Exports: default
 
-// Module 11586 (UserProfilePrimaryInfo)
+// Module 15469 (UserProfilePrimaryInfo)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5226 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import QuestTypes from "QuestTypes" /* 6872 */;
-import openUserSettings from "openUserSettings" /* 7668 */;
-import GuildTagConstants from "GuildTagConstants" /* 8497 */;
-import GuildTagUtils from "GuildTagUtils" /* 8840 */;
-import Constants3 from "Constants" /* 8858 */;
-import BadgeId from "BadgeId" /* 8859 */;
-import Constants4 from "Constants" /* 8869 */;
-import useBadges from "useBadges" /* 8922 */;
-import BotTagDefault from "BotTag" /* 9315 */;
-import GuildTagDefault from "GuildTag" /* 9408 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9808 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9811 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10923 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11629 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11630 */;
-import BadgeUtils from "BadgeUtils" /* 11634 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import GuildTagUtils from "GuildTagUtils" /* 8409 */;
+import GuildTagConstants from "GuildTagConstants" /* 8410 */;
+import Constants3 from "Constants" /* 8479 */;
+import BadgeId from "BadgeId" /* 8480 */;
+import Constants4 from "Constants" /* 8549 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
+import useBadges from "useBadges" /* 8608 */;
+import ClipView from "ClipView" /* 9503 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10064 */;
+import BadgeUtils from "BadgeUtils" /* 10113 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 10135 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10138 */;
+import GuildTagDefault from "GuildTag" /* 10654 */;
+import BotTagDefault from "BotTag" /* 10870 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15274 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 15275 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
-import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 7470 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8547 */;
+import UserStore from "UserStore" /* 1388 */;
+import Constants from "Constants" /* 7962 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-let importDefault;
+let dependencyMap, importDefault;
 
+let StyleSheet;
 let UserProfileThemeTypes;
 let c10;
-let c9;
-let closure_14;
 let closure_15;
 let closure_16;
-let closure_4;
+let closure_17;
 let hasOwnProperty;
+let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+let obj5;
 let tmp4;
-const PlatformUtils = tmp4(1377);
+let unpackModuleId;
+const PlatformUtils = tmp4(1380);
 class DisplayName {
   constructor(user) {
     let closure_1;
@@ -70,52 +74,52 @@ class DisplayName {
       showChevron = false;
     }
     ({ pendingDisplayNameStyles, displayNameAccessibilityRole } = user);
-    let tmp = closure_19();
+    let tmp = closure_20();
     importDefault = tmp;
     let tmp2;
     if (null != themeType) {
-      tmp2 = closure_21[themeType];
+      tmp2 = closure_22[themeType];
     }
     if (tmp2 == null) {
-      tmp2 = closure_20;
+      tmp2 = closure_21;
     }
     function renderBotTag() {
       let tmp;
       if (user.isSystemUser()) {
         const obj2 = { style: closure_1.botTag, type: BotTagDefault.Types.SYSTEM_DM, verified: user.isVerifiedBot() };
         const tmp12 = BotTagDefault;
-        tmp = authStore3(tmp12, obj2);
+        tmp = closure_15(tmp12, obj2);
       } else {
         tmp = null;
         if (user.bot) {
           const obj3 = { style: closure_1.botTag, type: BotTagDefault.Types.BOT, verified: user.isVerifiedBot() };
           const tmp5 = BotTagDefault;
-          tmp = authStore3(tmp5, obj3);
+          tmp = closure_15(tmp5, obj3);
         }
       }
       return tmp;
     }
     const headingVariant = tmp2.headingVariant;
     if (null == onPress) {
-      let tmp5 = closure_15;
+      let tmp5 = closure_16;
       const obj = { children: items };
-      let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10924).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+      let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10065).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
       ({ displayNameText: obj2.style, displayNameText: obj2.containerStyle } = tmp);
       const tmp10 = UsernameWithEffectsDefault;
-      items = [closure_14(tmp10, obj3), renderBotTag()];
-      tmp12Result = closure_15(closure_5, obj);
+      items = [closure_15(tmp10, obj3), renderBotTag()];
+      tmp12Result = closure_16(closure_6, obj);
     } else {
-      let tmp12 = closure_15;
+      let tmp12 = closure_16;
       const obj7 = { onPress, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint, style: tmp.displayName, children: items1 };
-      const PressableOpacity = user(7076).PressableOpacity;
-      const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10924).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+      const PressableOpacity = user(7428).PressableOpacity;
+      const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10065).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
       ({ displayNameText: obj4.style, displayNameText: obj4.containerStyle } = tmp);
       const tmp17 = UsernameWithEffectsDefault;
-      items1 = [closure_14(tmp17, obj8), renderBotTag(), ];
+      items1 = [closure_15(tmp17, obj8), renderBotTag(), ];
       const tmp13 = user;
-      const tmp15 = closure_14;
+      const tmp15 = closure_15;
       if (showChevron) {
-        showChevron = tmp15(tmp13(11587).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+        showChevron = tmp15(tmp13(10560).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
       }
       items1[2] = showChevron;
       tmp12Result = tmp12(PressableOpacity, obj7);
@@ -132,47 +136,48 @@ class UserTagAndPronouns {
     let onPressUserTag;
     let pronouns;
     let pronounsAccessibilityHint;
+    let text;
     let themeType;
     userTag = userTag.userTag;
     ({ pronouns, themeType, onPressUserTag } = userTag);
     const userTagAccessibilityHint = userTag.userTagAccessibilityHint;
     let textVariant;
-    let text;
+    react = undefined;
     ({ onPressPronouns, pronounsAccessibilityHint } = userTag);
     let tmp8Result = null != pronouns;
-    const tmp = closure_19();
+    const tmp = closure_20();
     if (tmp8Result) {
       tmp8Result = pronouns.length > 0;
     }
     let tmp3;
     if (null != themeType) {
-      tmp3 = closure_21[themeType];
+      tmp3 = closure_22[themeType];
     }
     if (tmp3 == null) {
-      tmp3 = closure_20;
+      tmp3 = closure_21;
     }
     textVariant = tmp3.textVariant;
     const tmp5 = userTag;
     let tmp6 = userTagAccessibilityHint;
-    const tmp7 = closure_22(userTag(userTagAccessibilityHint[18]).TextStyleSheet[textVariant].lineHeight);
-    text = tmp7;
+    const tmp7 = closure_23(userTag(userTagAccessibilityHint[19]).TextStyleSheet[textVariant].lineHeight);
+    react = tmp7;
     const items = [onPressUserTag, tmp7.text, textVariant, userTag, userTagAccessibilityHint];
     let obj = { style: tmp.detailsText, children: items1 };
     items1 = [
-      textVariant.useCallback(() => {
+      react.useCallback(() => {
         if (null == userTag) {
           return null;
         } else {
           let tmp5Result;
           const obj2 = { variant: textVariant, color: "mobile-text-heading-primary", lineClamp: 2, style: text.text, children: userTag };
-          const tmp10 = authStore3(Text_Text.Text, obj2);
+          const tmp10 = closure_15(Text_Text.Text, obj2);
           const tmp6 = require;
           if (null != onPressUserTag) {
             const obj3 = { onPress: tmp11, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp10 };
-            tmp5Result = tmp5(tmp6(7076).PressableOpacity, obj3);
+            tmp5Result = tmp5(tmp6(7428).PressableOpacity, obj3);
           } else {
             const obj = { children: tmp10 };
-            tmp5Result = tmp5(hasOwnProperty, obj);
+            tmp5Result = tmp5(metroRequire, obj);
           }
           return tmp5Result;
         }
@@ -181,17 +186,17 @@ class UserTagAndPronouns {
     ];
     if (tmp8Result) {
       let tmp11Result;
-      const tmp11 = closure_14;
-      let tmp10 = closure_16;
+      const tmp11 = closure_15;
+      let tmp10 = closure_17;
       let obj2 = { variant: textVariant, color: "mobile-text-heading-primary", style: tmp7.text, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-      const items2 = [closure_14(tmp5(tmp6[18]).Text, obj2), ];
+      const items2 = [closure_15(tmp5(tmp6[19]).Text, obj2), ];
       if (null != onPressUserTag) {
-        let obj3 = { onPress: onPressPronouns, accessibilityRole: "button", accessibilityLabel: pronouns, accessibilityHint: pronounsAccessibilityHint, children: tmp11(tmp5(tmp6[18]).Text, obj4) };
-        const PressableOpacity = tmp5(tmp6[16]).PressableOpacity;
+        let obj3 = { onPress: onPressPronouns, accessibilityRole: "button", accessibilityLabel: pronouns, accessibilityHint: pronounsAccessibilityHint, children: tmp11(tmp5(tmp6[19]).Text, obj4) };
+        const PressableOpacity = tmp5(tmp6[17]).PressableOpacity;
         obj4 = { variant: textVariant, color: "mobile-text-heading-primary", lineClamp: 1, style: tmp7.text, children: pronouns };
         tmp11Result = tmp11(PressableOpacity, obj3);
       } else {
-        const obj5 = { children: tmp11(tmp5(tmp6[18]).Text, obj6) };
+        const obj5 = { children: tmp11(tmp5(tmp6[19]).Text, obj6) };
         obj6 = { variant: textVariant, color: "mobile-text-heading-primary", lineClamp: 1, style: tmp7.text, children: pronouns };
         tmp11Result = tmp11(tmp9, obj5);
       }
@@ -200,13 +205,12 @@ class UserTagAndPronouns {
       tmp8Result = tmp8(tmp10, obj7);
     }
     items1[1] = tmp8Result;
-    return closure_15(closure_5, obj);
+    return closure_16(closure_6, obj);
   }
 }
 function ProfileBadge(source) {
   let badgeSize;
   let catalogBadge;
-  let closure_3;
   let id;
   let items;
   let items2;
@@ -223,15 +227,15 @@ function ProfileBadge(source) {
   if (showToastOnPress === undefined) {
     showToastOnPress = true;
   }
-  react = undefined;
-  const tmp = closure_19();
+  let closure_3;
+  const tmp = closure_20();
   if (null != badgeSize) {
     size = { width: badgeSize, height: badgeSize };
   }
   const ref = react.useRef(null);
-  let obj2 = source(label[19]);
-  react = obj2.useTieredTenureBadgeClickHandler(id, userId, themeType);
-  let obj3 = source(label[20]);
+  let obj2 = source(label[20]);
+  closure_3 = obj2.useTieredTenureBadgeClickHandler(id, userId, themeType);
+  let obj3 = source(label[21]);
   const rootNavigationRef = obj3.getRootNavigationRef();
   let currentRoute;
   if (null != rootNavigationRef) {
@@ -250,10 +254,10 @@ function ProfileBadge(source) {
     flag = false;
   }
   let obj = { disabled: !flag };
-  const tmp4Result = source(label[21]);
+  const tmp4Result = source(label[22]);
   const orbsBadgeCoachmark = tmp4Result.useOrbsBadgeCoachmark(obj);
-  const intl = tmp4(tmp5[22]).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(source(label[22]).t.A0LN9t, { badgeLabel: label });
+  const intl = tmp4(tmp5[23]).intl;
+  const formatToPlainStringResult = intl.formatToPlainString(source(label[23]).t.A0LN9t, { badgeLabel: label });
   let tmp10 = themeType === UserProfileThemeTypes.YOU_SCREEN;
   const tmp9 = UserProfileThemeTypes;
   if (tmp10) {
@@ -262,14 +266,14 @@ function ProfileBadge(source) {
   let tmp11 = null;
   if (tmp10) {
     let obj4 = { targetRef: ref, badgeId: id };
-    tmp11 = closure_14(id(tmp5[23]), obj4);
+    tmp11 = closure_15(id(tmp5[24]), obj4);
   }
   let tmp14 = themeType !== tmp9.YOU_SCREEN || typeof id !== "string";
   if (!tmp14) {
     let tmp15 = "orb_profile_badge" !== id;
     if (tmp15) {
       let tmp16 = getBadgeName;
-      tmp15 = id !== getBadgeName(tmp4(tmp5[24]).BadgeId.ORB_PROFILE);
+      tmp15 = id !== getBadgeName(tmp4(tmp5[25]).BadgeId.ORB_PROFILE);
     }
     tmp14 = tmp15;
   }
@@ -280,13 +284,13 @@ function ProfileBadge(source) {
   if (!tmp14) {
     let tmp19 = id;
     const obj5 = { badgeRef: ref };
-    const tmp20 = id(label[21]);
+    const tmp20 = id(label[22]);
     const merged = Object.assign(orbsBadgeCoachmark.props);
-    tmp17 = closure_14(tmp20, obj5);
+    tmp17 = closure_15(tmp20, obj5);
   }
   const obj6 = { children: null };
-  const tmp23 = closure_15;
-  const tmp24 = closure_16;
+  const tmp23 = closure_16;
+  const tmp24 = closure_17;
   if (showToastOnPress) {
     const obj7 = {
       accessibilityRole: "image",
@@ -298,7 +302,7 @@ function ProfileBadge(source) {
             if (id !== getBadgeName(BadgeId.BadgeId.GIFTING)) {
               let tmp10;
               if (null != source) {
-                const assetSource = React3.resolveAssetSource(tmp9);
+                const assetSource = hasOwnProperty.resolveAssetSource(tmp9);
                 let uri;
                 if (assetSource != null) {
                   uri = assetSource.uri;
@@ -337,40 +341,70 @@ function ProfileBadge(source) {
       ref,
       children: tmp25Result
     };
-    const PressableOpacity = tmp4(tmp5[16]).PressableOpacity;
+    const PressableOpacity = tmp4(tmp5[17]).PressableOpacity;
     if (null != source) {
       const obj8 = { style: items, source };
       items = [tmp.badge, tmp2];
-      tmp25Result = tmp25(id(tmp5[25]), obj8);
+      tmp25Result = tmp25(id(tmp5[26]), obj8);
     } else {
       tmp25Result = null;
       if (null != catalogBadge) {
         const obj9 = { badge: catalogBadge, size: badgeSize };
-        tmp25Result = tmp25(id(tmp5[26]), obj9);
+        tmp25Result = tmp25(id(tmp5[27]), obj9);
       }
     }
-    const items1 = [closure_14(PressableOpacity, obj7), tmp11, tmp17];
+    const items1 = [closure_15(PressableOpacity, obj7), tmp11, tmp17];
     obj6.children = items1;
     tmp30 = obj6;
   } else {
     const obj10 = { accessible: true, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, ref, children: tmp25Result2 };
-    const tmp26 = closure_5;
+    const tmp26 = closure_6;
     if (null != source) {
       const obj11 = { style: items2, source };
       items2 = [tmp.badge, tmp2];
-      tmp25Result2 = tmp25(id(tmp5[25]), obj11);
+      tmp25Result2 = tmp25(id(tmp5[26]), obj11);
     } else {
       tmp25Result2 = null;
       if (null != catalogBadge) {
         const obj12 = { badge: catalogBadge, size: badgeSize };
-        tmp25Result2 = tmp25(id(tmp5[26]), obj12);
+        tmp25Result2 = tmp25(id(tmp5[27]), obj12);
       }
     }
-    const items3 = [closure_14(tmp26, obj10), tmp11, tmp17];
+    const items3 = [closure_15(tmp26, obj10), tmp11, tmp17];
     obj6.children = items3;
     tmp30 = obj6;
   }
   return tmp23(tmp24, tmp30);
+}
+function UnreadDotCutoutLayer(showDot) {
+  let closure_2;
+  let first;
+  let items1;
+  let obj2;
+  showDot = showDot.showDot;
+  first = undefined;
+  dependencyMap = undefined;
+  const style = showDot.style;
+  let tmp = closure_20();
+  [first, dependencyMap] = react.useState(null);
+  let items = [showDot, first];
+  const callback = react.useCallback((nativeEvent) => closure_2(nativeEvent.nativeEvent.layout.width), []);
+  const memo = react.useMemo(() => {
+    let tmp;
+    if (showDot) {
+      if (null != first) {
+        const point = { shape: ClipView.CutoutShape.Circle, x: tmp2 - 1 - PX_6 - 2, y: -1, size };
+        const items = [point];
+        tmp = items;
+      }
+    }
+    return tmp;
+  }, items);
+  const obj = { style: tmp.cutoutLayer, cutouts: memo, onLayout: callback, pointerEvents: "none", children: closure_15(closure_6, obj2) };
+  obj2 = { style: items1 };
+  items1 = [tmp.cutoutLayerFill, style];
+  const tmp6 = first(9503);
+  return closure_15(tmp6, obj);
 }
 class ProfileBadgeRows {
   constructor(userId) {
@@ -378,21 +412,20 @@ class ProfileBadgeRows {
     let canOpenBadgeDirectory;
     let catalogBadges;
     let combined;
+    let combined1;
     let date;
     let formatToPlainString;
-    let intl2;
-    let intl7;
+    let intl4;
+    let intl9;
     let isTryItOut;
     let items10;
-    let items11;
     let items7;
     let items8;
     let items9;
-    let obj15;
+    let obj16;
     let obj4;
     let onOpenBadgeDirectory;
-    let result;
-    let tmp42Result;
+    let tmp53Result2;
     let v8zbGNR;
     userId = userId.userId;
     const badges = userId.badges;
@@ -401,13 +434,16 @@ class ProfileBadgeRows {
       canOpenBadgeDirectory = false;
     }
     ({ badgeDirectoryEntryPointRef, onOpenBadgeDirectory } = userId);
+    let flag = userId.showsUnreadDot;
+    if (flag === undefined) {
+      flag = false;
+    }
     const style = userId.style;
     const themeType = userId.themeType;
-    let flag = userId.showToastOnPress;
-    if (flag === undefined) {
-      flag = true;
+    let flag2 = userId.showToastOnPress;
+    if (flag2 === undefined) {
+      flag2 = true;
     }
-    let profileBackgroundColor = userId.profileBackgroundColor;
     let badgeSize;
     let badgeRowHorizontalPadding;
     let isBadgeManagementEnabled;
@@ -421,60 +457,53 @@ class ProfileBadgeRows {
     let closure_16;
     let mapped;
     let width;
-    let tmp = closure_19();
+    let tmp = closure_20();
     const badgeRow = tmp;
     let tmp2;
     if (null != themeType) {
-      let tmp3 = closure_21;
-      tmp2 = closure_21[themeType];
+      let tmp3 = closure_22;
+      tmp2 = closure_22[themeType];
     }
     if (tmp2 == null) {
-      tmp2 = closure_20;
+      tmp2 = closure_21;
     }
     badgeSize = tmp2.badgeSize;
     badgeRowHorizontalPadding = tmp2.badgeRowHorizontalPadding;
     let tmp4 = userId;
     let tmp5 = onOpenBadgeDirectory;
     const textVariant = tmp2.textVariant;
-    let obj = userId(onOpenBadgeDirectory[33]);
+    let obj = userId(onOpenBadgeDirectory[35]);
     isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: "ProfileBadgeRows" });
-    let obj2 = userId(onOpenBadgeDirectory[34]);
-    const tmp7 = obj2.useCanOpenBadgeDirectoryFromProfile({ location: "ProfileBadgeRows" }) && canOpenBadgeDirectory && flag;
+    let obj2 = userId(onOpenBadgeDirectory[36]);
+    const tmp7 = obj2.useCanOpenBadgeDirectoryFromProfile({ location: "ProfileBadgeRows" }) && canOpenBadgeDirectory && flag2;
     showToastOnPress = tmp8;
-    const currentUser = badgeRowHorizontalPadding.getCurrentUser();
+    const currentUser = isBadgeManagementEnabled.getCurrentUser();
     let id;
     if (currentUser != null) {
       id = currentUser.id;
     }
     closure_10 = tmp11;
-    const tmp4Result = tmp4(tmp5[35]);
-    const token = tmp4Result.useToken(badges(tmp5[10]).colors.BADGE_PRIMARY_BACKGROUND);
-    let tmp15 = tmp11;
-    const tmp4Result5 = tmp4(tmp5[35]);
-    const token1 = tmp4Result5.useToken(badges(tmp5[10]).colors.BACKGROUND_SURFACE_HIGH);
-    if (userId === id) {
-      tmp15 = isBadgeManagementEnabled;
+    let tmp12 = tmp11 && isBadgeManagementEnabled;
+    if (tmp12) {
+      tmp12 = tmp7 || flag;
     }
-    if (tmp15) {
-      tmp15 = tmp7;
-    }
-    closure_11 = tmp15;
-    let items = [badgeSize];
-    const items1 = [tmp15, userId];
-    const tmp4Result6 = tmp4(tmp5[36]);
-    stateFromStores = tmp4Result6.useStateFromStores(items, () => {
+    closure_11 = tmp12;
+    let items = [badgeRowHorizontalPadding];
+    const items1 = [tmp12, userId];
+    const tmp4Result = tmp4(tmp5[37]);
+    stateFromStores = tmp4Result.useStateFromStores(items, () => {
       const tmp = closure_11 && BadgeDirectoryStore.getUnreadBadges(userId).length > 0;
       return tmp;
     }, items1);
-    const tmp4Result7 = tmp4(tmp5[37]);
+    const tmp4Result3 = tmp4(tmp5[38]);
     if (stateFromStores) {
-      stateFromStores = tmp4Result7.useIsBadgeUnreadStateEnabled({ location: "ProfileBadgeRows", hasUnread: stateFromStores });
+      stateFromStores = tmp4Result3.useIsBadgeUnreadStateEnabled({ location: "ProfileBadgeRows", hasUnread: stateFromStores });
     }
-    const tmp4Result8 = tmp4(tmp5[38]);
-    trackUserProfileAction = tmp4Result8.useUserProfileAnalyticsContext().trackUserProfileAction;
-    ref = style.useRef(false);
+    const tmp4Result4 = tmp4(tmp5[39]);
+    trackUserProfileAction = tmp4Result4.useUserProfileAnalyticsContext().trackUserProfileAction;
+    ref = themeType.useRef(false);
     const items2 = [stateFromStores, trackUserProfileAction];
-    const effect = style.useEffect(() => {
+    const effect = themeType.useEffect(() => {
       const tmp = stateFromStores && !ref.current;
       if (tmp) {
         ref.current = true;
@@ -482,7 +511,7 @@ class ProfileBadgeRows {
       }
     }, items2);
     const items3 = [stateFromStores, userId === id, userId, onOpenBadgeDirectory];
-    const callback = style.useCallback(() => {
+    const callback = themeType.useCallback(() => {
       if (onOpenBadgeDirectory != null) {
         tmp();
       }
@@ -493,12 +522,12 @@ class ProfileBadgeRows {
       const result = obj2.openBadgeDirectoryScreen(obj3);
     }, items3);
     const items4 = [badges];
-    closure_15 = style.useMemo(() => {
+    closure_15 = themeType.useMemo(() => {
       const obj = BadgeUtils;
       return obj.getLegacyIconUrlByBadgeId(badges);
     }, items4);
     const items5 = [badges];
-    closure_16 = style.useMemo(() => {
+    closure_16 = themeType.useMemo(() => {
       const obj = BadgeUtils;
       return obj.getLegacyDescriptionByBadgeId(badges);
     }, items5);
@@ -510,50 +539,51 @@ class ProfileBadgeRows {
       obj2 = { uri: obj3.getProfileBadgeIconUrl(id) };
       obj3 = BadgeUtils;
       obj4 = BadgeUtils;
-      return authStore3(ProfileBadge, obj, id.id);
+      return closure_15(ProfileBadge, obj, id.id);
     });
-    const obj8 = style;
+    const obj6 = themeType;
     if (isTryItOut) {
       isTryItOut = null == badges.find((id) => "premium" === id.id);
     }
     if (isTryItOut) {
-      let obj3 = { source: badges(tmp5[42]), id: "premium", userId, label: formatToPlainString(v8zbGNR, obj4), badgeSize, showToastOnPress: tmp8 };
+      let obj3 = { source: badges(tmp5[43]), id: "premium", userId, label: formatToPlainString(v8zbGNR, obj4), badgeSize, showToastOnPress: tmp8 };
       const push = mapped.push;
-      const intl = tmp4(tmp5[22]).intl;
+      const intl = tmp4(tmp5[23]).intl;
       formatToPlainString = intl.formatToPlainString;
       obj4 = { date };
       const _Date = Date;
       const self = this;
       const self2 = this;
-      v8zbGNR = tmp4(tmp5[22]).t["8zbGNR"];
+      v8zbGNR = tmp4(tmp5[23]).t["8zbGNR"];
       date = new Date();
-      push(ref(ProfileBadge, obj3));
+      push(closure_15(ProfileBadge, obj3));
     }
-    width = tmp12(tmp5[43])().width;
+    width = badges(tmp5[44])().width;
     const items6 = [mapped, badgeRowHorizontalPadding, badgeSize, width, isBadgeManagementEnabled];
-    const memo = obj8.useMemo(() => {
+    const memo = obj6.useMemo(() => {
       const tmp = isBadgeManagementEnabled;
       if (tmp) {
         return [];
       } else {
         const _Math = Math;
-        const rounded = Math.floor((width - 2 * closure_10 - 2 * badgeRowHorizontalPadding + 4) / (badgeSize + 4));
+        const rounded = Math.floor((width - 2 * closure_11 - 2 * badgeRowHorizontalPadding - 2 + 4) / (badgeSize + 4));
         const _Array = Array;
         const _Math2 = Math;
         const obj = { length: Math.ceil(mapped.length / rounded) };
         return from(obj, (arg0, arg1) => mapped.slice(arg1 * rounded, (arg1 + 1) * rounded));
       }
     }, items6);
+    const tmp25 = badges;
     if (isBadgeManagementEnabled) {
       let mapped1;
       if (catalogBadges != null) {
-        const substr = catalogBadges.slice(0, tmp4(tmp5[41]).MAX_DISPLAYED_PROFILE_BADGES);
+        const substr = catalogBadges.slice(0, tmp4(tmp5[42]).MAX_DISPLAYED_PROFILE_BADGES);
         mapped1 = substr.map((badge_id) => {
           let obj4;
           let tmp5;
           const value = closure_15.get(badge_id.badge_id);
           let obj = getBadgeName(badge_id.badge_id);
-          const tmp2 = authStore3;
+          const tmp2 = closure_15;
           const tmp3 = ProfileBadge;
           const tmp4 = DEFAULT_PREMIUM_BADGE_ID;
           if (obj.startsWith(DEFAULT_PREMIUM_BADGE_ID)) {
@@ -570,7 +600,7 @@ class ProfileBadgeRows {
         });
       }
       if (mapped1 == null) {
-        mapped1 = mapped.slice(0, tmp4(tmp5[41]).MAX_DISPLAYED_PROFILE_BADGES);
+        mapped1 = mapped.slice(0, tmp4(tmp5[42]).MAX_DISPLAYED_PROFILE_BADGES);
       }
       let length;
       if (catalogBadges != null) {
@@ -581,99 +611,96 @@ class ProfileBadgeRows {
       }
       const diff = length - mapped1.length;
       let tmp32Result = null;
-      if (tmp7) {
-        tmp32Result = null;
-        if (stateFromStores) {
-          size = { width, height: width, style: tmp.unreadDot, pointerEvents: "none", "aria-hidden": true, children: items7 };
-          const obj5 = { cx: result, cy: result, r: result, fill: profileBackgroundColor };
-          result = width / 2;
-          const tmp12Result = badges(tmp5[44]);
-          const Circle = tmp4(tmp5[44]).Circle;
-          const tmp32 = closure_15;
-          if (profileBackgroundColor == null) {
-            profileBackgroundColor = token1;
-          }
-          items7 = [ref(Circle, obj5), ];
-          const obj6 = { cx: result, cy: result, r: mapped / 2, fill: token };
-          items7[1] = ref(tmp4(tmp5[44]).Circle, obj6);
-          tmp32Result = tmp32(tmp12Result, size);
+      if (stateFromStores) {
+        const obj5 = { style: tmp.unreadDot, pointerEvents: "none", accessible: !tmp7, accessibilityLabel: combined, children: closure_15(tmp4(tmp5[45]).IndicatorDot, { size: "sm" }) };
+        combined = undefined;
+        const tmp33 = badgeSize;
+        if (!tmp7) {
+          const intl2 = tmp4(tmp5[23]).intl;
+          const stringResult = intl2.string(tmp4(tmp5[23]).t.l6w3Vj);
+          const intl3 = tmp4(tmp5[23]).intl;
+          const _HermesInternal = HermesInternal;
+          combined = "" + stringResult + ", " + intl3.string(tmp4(tmp5[23]).t.y2b7CA);
         }
+        tmp32Result = tmp32(tmp33, obj5);
       }
       if (0 === mapped1.length) {
-        let tmp48Result = null;
+        let tmp45Result = null;
         if (tmp7) {
-          tmp48Result = null;
+          tmp45Result = null;
           if (userId === id) {
-            const obj7 = { ref: badgeDirectoryEntryPointRef, accessibilityRole: "button", accessibilityLabel: combined, onPress: callback, style: items8, children: items9 };
-            const PressableOpacity2 = tmp4(tmp5[16]).PressableOpacity;
-            const intl5 = tmp4(tmp5[22]).intl;
-            const stringResult = intl5.string(tmp4(tmp5[22]).t.l6w3Vj);
-            const tmp48 = closure_15;
+            const obj7 = { ref: badgeDirectoryEntryPointRef, accessibilityRole: "button", accessibilityLabel: combined1, onPress: callback, style: items7, children: items8 };
+            const PressableOpacity2 = tmp4(tmp5[17]).PressableOpacity;
+            const intl7 = tmp4(tmp5[23]).intl;
+            const stringResult1 = intl7.string(tmp4(tmp5[23]).t.l6w3Vj);
+            const tmp45 = closure_16;
             if (stateFromStores) {
-              const intl6 = tmp4(tmp5[22]).intl;
-              const _HermesInternal3 = HermesInternal;
-              combined = "" + stringResult + ", " + intl6.string(tmp4(tmp5[22]).t.y2b7CA);
+              const intl8 = tmp4(tmp5[23]).intl;
+              const _HermesInternal4 = HermesInternal;
+              combined1 = "" + stringResult1 + ", " + intl8.string(tmp4(tmp5[23]).t.y2b7CA);
             } else {
-              combined = stringResult;
+              combined1 = stringResult1;
             }
-            items8 = [tmp.addBadgesChip, , ];
-            const obj9 = { minHeight: badgeSize + 4 };
-            items8[1] = obj9;
-            items8[2] = style;
-            const obj10 = { size: "xs", color: badges(tmp5[10]).colors.TEXT_STRONG };
-            const PlusMediumIcon = tmp4(tmp5[45]).PlusMediumIcon;
-            items9 = [ref(PlusMediumIcon, obj10), , ];
-            const obj11 = { variant: "body-xs/normal", color: "text-strong", children: intl7.string(tmp4(tmp5[22]).t.l6w3Vj) };
-            const Text2 = tmp4(tmp5[18]).Text;
-            intl7 = tmp4(tmp5[22]).intl;
-            items9[1] = ref(Text2, obj11);
-            items9[2] = tmp32Result;
-            tmp48Result = tmp48(PressableOpacity2, obj7);
+            items7 = [, , ];
+            ({ addBadgesChip: arr12[0], cutoutEntry: arr12[1] } = tmp);
+            const obj8 = { minHeight: badgeSize + 6 };
+            items7[2] = obj8;
+            const obj9 = { showDot: stateFromStores, style };
+            items8 = [closure_15(UnreadDotCutoutLayer, obj9), , , ];
+            const obj10 = { size: "xs", color: tmp25(tmp5[11]).colors.TEXT_STRONG };
+            const PlusMediumIcon = tmp4(tmp5[46]).PlusMediumIcon;
+            items8[1] = closure_15(PlusMediumIcon, obj10);
+            const obj11 = { variant: "body-xs/normal", color: "text-strong", children: intl9.string(tmp4(tmp5[23]).t.l6w3Vj) };
+            const Text2 = tmp4(tmp5[19]).Text;
+            intl9 = tmp4(tmp5[23]).intl;
+            items8[2] = closure_15(Text2, obj11);
+            items8[3] = tmp32Result;
+            tmp45Result = tmp45(PressableOpacity2, obj7);
           }
         }
-        return tmp48Result;
+        return tmp45Result;
       } else {
-        const obj12 = { style: items10, children: items11 };
-        items10 = [, , , ];
-        ({ badgeRow: arr15[0], limitedBadgeRow: arr15[1] } = tmp);
+        const obj12 = { style: items9, children: items10 };
+        items9 = [, , , ];
+        ({ badgeRow: arr14[0], limitedBadgeRow: arr14[1], cutoutEntry: arr14[2] } = tmp);
         const obj13 = { paddingHorizontal: badgeRowHorizontalPadding };
-        items10[2] = obj13;
-        items10[3] = style;
-        items11 = [mapped1, , ];
-        let tmp40 = diff > 0;
-        const tmp53 = closure_15;
-        if (tmp40) {
-          const obj14 = { variant: textVariant, color: "mobile-text-heading-primary", accessibilityLabel: intl2.formatToPlainString(tmp4(tmp5[22]).t.eIHfGZ, obj15), children: "+" + diff };
-          const Text = tmp4(tmp5[18]).Text;
-          intl2 = tmp4(tmp5[22]).intl;
-          const _HermesInternal = HermesInternal;
-          obj15 = { overflow_count: diff };
-          tmp40 = ref(Text, obj14);
+        items9[3] = obj13;
+        const obj14 = { showDot: stateFromStores, style };
+        items10 = [closure_15(UnreadDotCutoutLayer, obj14), mapped1, , ];
+        let tmp53Result = diff > 0;
+        const tmp51 = closure_16;
+        if (tmp53Result) {
+          const obj15 = { variant: textVariant, color: "mobile-text-heading-primary", accessibilityLabel: intl4.formatToPlainString(tmp4(tmp5[23]).t.eIHfGZ, obj16), children: "+" + diff };
+          const Text = tmp4(tmp5[19]).Text;
+          intl4 = tmp4(tmp5[23]).intl;
+          const _HermesInternal2 = HermesInternal;
+          obj16 = { overflow_count: diff };
+          tmp53Result = tmp53(Text, obj15);
         }
-        items11[1] = tmp40;
-        items11[2] = tmp32Result;
-        const tmp53Result = tmp53(badgeRow, obj12);
-        const obj16 = { style: tmp.badges, ref: badgeDirectoryEntryPointRef, collapsable: false, children: tmp42Result };
-        tmp42Result = tmp53Result;
+        items10[2] = tmp53Result;
+        items10[3] = tmp32Result;
+        const tmp51Result = tmp51(badgeSize, obj12);
+        const obj17 = { style: tmp.badges, ref: badgeDirectoryEntryPointRef, collapsable: false, children: tmp53Result2 };
+        tmp53Result2 = tmp51Result;
         if (tmp7) {
-          let combined1;
-          const PressableOpacity = tmp4(tmp5[16]).PressableOpacity;
-          const intl3 = tmp4(tmp5[22]).intl;
-          const stringResult1 = intl3.string(tmp4(tmp5[22]).t.PEjP4L);
+          let combined2;
+          const PressableOpacity = tmp4(tmp5[17]).PressableOpacity;
+          const intl5 = tmp4(tmp5[23]).intl;
+          const stringResult2 = intl5.string(tmp4(tmp5[23]).t.PEjP4L);
           if (stateFromStores) {
-            const intl4 = tmp4(tmp5[22]).intl;
-            const _HermesInternal2 = HermesInternal;
-            combined1 = "" + stringResult1 + ", " + intl4.string(tmp4(tmp5[22]).t.y2b7CA);
+            const intl6 = tmp4(tmp5[23]).intl;
+            const _HermesInternal3 = HermesInternal;
+            combined2 = "" + stringResult2 + ", " + intl6.string(tmp4(tmp5[23]).t.y2b7CA);
           } else {
-            combined1 = stringResult1;
+            combined2 = stringResult2;
           }
-          const obj17 = { accessibilityRole: "button", accessibilityLabel: combined1, onPress: callback, children: tmp53Result };
-          tmp42Result = tmp42(PressableOpacity, obj17);
+          const obj18 = { accessibilityRole: "button", accessibilityLabel: combined2, onPress: callback, children: tmp51Result };
+          tmp53Result2 = tmp53(PressableOpacity, obj18);
         }
-        return ref(badgeRow, obj16);
+        return closure_15(badgeSize, obj17);
       }
     } else {
-      const obj18 = {
+      const obj19 = {
         style: tmp.badges,
         children: memo.map((children, index) => {
             let items;
@@ -682,10 +709,10 @@ class ProfileBadgeRows {
             const obj2 = { paddingHorizontal: badgeRowHorizontalPadding };
             items[1] = obj2;
             items[2] = style;
-            return authStore3(hasOwnProperty, obj, index);
+            return closure_15(metroRequire, obj, index);
           })
       };
-      return ref(badgeRow, obj18);
+      return closure_15(badgeSize, obj19);
     }
   }
 }
@@ -708,7 +735,7 @@ function GuildTag(style) {
     showToastOnPress = false;
   }
   let primaryGuildOverride = style.primaryGuildOverride;
-  const tmp = closure_19();
+  const tmp = closure_20();
   if (undefined === primaryGuildOverride) {
     let primaryGuild;
     if (user != null) {
@@ -721,10 +748,10 @@ function GuildTag(style) {
   let tmp7;
   ({ tag, guildId } = userPrimaryGuild);
   if (null != themeType) {
-    tmp7 = closure_21[themeType];
+    tmp7 = closure_22[themeType];
   }
   if (tmp7 == null) {
-    tmp7 = closure_20;
+    tmp7 = closure_21;
   }
   ({ guildTagTextVariant, badgeSize, guildTagBadgeSize, guildTagHorizontalPadding } = tmp7);
   PlatformUtils;
@@ -732,40 +759,42 @@ function GuildTag(style) {
   if (null != tag) {
     tmp10 = null;
     if (null != guildId) {
-      const obj2 = { style: items, children: authStore3(GuildTagDefault, obj4) };
+      const obj2 = { style: items, children: closure_15(GuildTagDefault, obj4) };
       items = [tmp.guildTag, , ];
-      const obj3 = { minHeight: badgeSize + 4, paddingHorizontal: guildTagHorizontalPadding };
+      const obj3 = { minHeight: badgeSize + 6, paddingHorizontal: guildTagHorizontalPadding };
       items[1] = obj3;
       items[2] = style;
       obj4 = { primaryGuild: primaryGuildOverride, disabledTooltip: !showToastOnPress, containerStyles: tmp.transparentBackground, textStyle: obj5, badgeSize: guildTagBadgeSize, textVariant: guildTagTextVariant };
       obj5 = { lineHeight: tmp9 };
-      tmp10 = authStore3(hasOwnProperty, obj2);
+      tmp10 = closure_15(metroRequire, obj2);
     }
   }
   return tmp10;
 }
 let react = react_mod;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
+({ Image: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
 const getBadgeName = Constants3.getBadgeName;
-({ DIVIDER_DOT: c9, PROFILE_SIDE_PADDING: c10, UserProfileThemeTypes } = Constants);
+({ DIVIDER_DOT: c10, PROFILE_SIDE_PADDING: unpackModuleId, UserProfileThemeTypes } = Constants);
 const UserSettingsSections = Constants2.UserSettingsSections;
 const GuildTagBadgeSize = GuildTagConstants.GuildTagBadgeSize;
 const DEFAULT_PREMIUM_BADGE_ID = Constants4.DEFAULT_PREMIUM_BADGE_ID;
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
+({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = Fragment);
 const PX_6 = nativeDefault.space.PX_6;
-let closure_18 = PX_6 + 4;
+let closure_19 = PX_6 + 4;
 let createStyles = createStyles_mod;
-let obj = { container: { flexDirection: "column" }, displayName: { flexDirection: "row", alignItems: "center", columnGap: 4 }, displayNameText: { flexShrink: 1, minWidth: 0 }, details: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, detailsText: { flexDirection: "row", flexWrap: "wrap", alignContent: "center", paddingVertical: 2 }, botTag: { marginLeft: 4 }, guildTag: obj2, transparentBackground: { backgroundColor: "transparent" }, badge: { resizeMode: "contain" }, badges: { alignSelf: "center", flexDirection: "column", justifyContent: "flex-start", rowGap: 8 }, badgeRow: obj3, limitedBadgeRow: { alignItems: "center" }, unreadDot: { position: "absolute", top: -2, right: -2 }, addBadgesChip: obj4 };
-obj2 = { alignSelf: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, columnGap: 4 };
+let obj = { container: { flexDirection: "column" }, displayName: { flexDirection: "row", alignItems: "center", columnGap: 4 }, displayNameText: { flexShrink: 1, minWidth: 0 }, details: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, detailsText: { flexDirection: "row", flexWrap: "wrap", alignContent: "center", paddingVertical: 2 }, botTag: { marginLeft: 4 }, guildTag: obj2, transparentBackground: { backgroundColor: "transparent" }, badge: { resizeMode: "contain" }, badges: { alignSelf: "center", flexDirection: "column", justifyContent: "flex-start", rowGap: 8 }, badgeRow: obj3, limitedBadgeRow: { alignItems: "center" }, unreadDot: { position: "absolute", top: 0, right: 0 }, cutoutEntry: { borderColor: "transparent" }, cutoutLayer: { position: "absolute", top: -1, right: -1, bottom: -1, left: -1 }, cutoutLayerFill: obj4, addBadgesChip: obj5 };
+obj2 = { alignSelf: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, columnGap: 4 };
 createStyles = createStyles.createStyles;
-obj3 = { borderRadius: nativeDefault.radii.sm, paddingVertical: 2, justifyContent: "flex-start", flexDirection: "row", marginRight: "auto", columnGap: 4 };
-obj4 = { flexDirection: "row", alignItems: "center", alignSelf: "center", columnGap: 2, paddingHorizontal: nativeDefault.space.PX_6, borderRadius: nativeDefault.radii.sm };
-let closure_19 = createStyles(obj);
-let closure_20 = { headingVariant: "heading-xl/semibold", textVariant: "body-md/normal", badgeSize: 20, badgeRowHorizontalPadding: 7, guildTagBadgeSize: GuildTagBadgeSize.SIZE_16, guildTagTextVariant: "body-sm/medium", guildTagHorizontalPadding: 8 };
-let obj5 = { headingVariant: "heading-lg/semibold", textVariant: "body-sm/normal", badgeSize: 16, badgeRowHorizontalPadding: 6, guildTagBadgeSize: GuildTagBadgeSize.SIZE_12, guildTagTextVariant: "body-xs/medium", guildTagHorizontalPadding: 6 };
-let closure_21 = { [UserProfileThemeTypes.PREVIEW]: obj5 };
+obj3 = { borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, paddingVertical: 2, justifyContent: "flex-start", flexDirection: "row", marginRight: "auto", columnGap: 4 };
+obj4 = { borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+obj5 = { flexDirection: "row", alignItems: "center", alignSelf: "center", columnGap: 2, paddingHorizontal: nativeDefault.space.PX_6, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+let closure_20 = createStyles(obj);
+let closure_21 = { headingVariant: "heading-xl/semibold", textVariant: "body-md/normal", badgeSize: 20, badgeRowHorizontalPadding: 7, guildTagBadgeSize: GuildTagBadgeSize.SIZE_16, guildTagTextVariant: "body-sm/medium", guildTagHorizontalPadding: 8 };
+let obj6 = { headingVariant: "heading-lg/semibold", textVariant: "body-sm/normal", badgeSize: 16, badgeRowHorizontalPadding: 6, guildTagBadgeSize: GuildTagBadgeSize.SIZE_12, guildTagTextVariant: "body-xs/medium", guildTagHorizontalPadding: 6 };
+const authStore5 = { [UserProfileThemeTypes.PREVIEW]: obj6 };
 createStyles = createStyles_mod;
-const authStore6 = createStyles.createStyles((arg0) => {
+const sidebars = createStyles.createStyles((arg0) => {
   let sum = arg0;
   const obj = PlatformUtils;
   if (obj.isIOS()) {
@@ -796,22 +825,22 @@ export default function UserProfilePrimaryInfo(arg0) {
   let onPressUserTag;
   let pendingDisplayNameStyles;
   let primaryGuildOverride;
-  let profileBackgroundColor;
   let pronouns;
   let pronounsAccessibilityHint;
   let showBadgeToastOnPress;
   let showChevron;
+  let showsBadgeUnreadDot;
   let style;
   let themeType;
   let tmp8;
   let user;
   let userTagAccessibilityHint;
   ({ user, displayName, themeType, showBadgeToastOnPress, hideBadges } = arg0);
-  ({ guildId, pronouns, style, badges, catalogBadges, badgeContainerBackground, profileBackgroundColor, onPressDisplayName, displayNameAccessibilityHint, displayNameAccessibilityRole, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint, showChevron, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, pendingDisplayNameStyles, primaryGuildOverride } = arg0);
+  ({ guildId, pronouns, style, badges, catalogBadges, badgeContainerBackground, onPressDisplayName, displayNameAccessibilityHint, displayNameAccessibilityRole, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint, showChevron, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, showsBadgeUnreadDot, pendingDisplayNameStyles, primaryGuildOverride } = arg0);
   if (hideBadges === undefined) {
     hideBadges = false;
   }
-  const tmp = closure_19();
+  const tmp = closure_20();
   const obj = { backgroundColor: badgeContainerBackground };
   const obj2 = UserUtilsDefault;
   const name = obj2.useName(user);
@@ -828,22 +857,22 @@ export default function UserProfilePrimaryInfo(arg0) {
     }
     tmp8 = displayName;
   }
-  items1 = [authStore3(tmp7, obj5), ];
+  items1 = [closure_15(tmp7, obj5), ];
   let tmp11 = null;
   const obj6 = { style: tmp.details, children: items2 };
   const tmp10 = UserTagAndPronouns;
   if (!user.isProvisional) {
     tmp11 = userTag;
   }
-  items2 = [authStore3(tmp10, { userTag: tmp11, pronouns, themeType, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint }), authStore3(GuildTag, { user, themeType, style: obj, showToastOnPress: showBadgeToastOnPress, primaryGuildOverride }), ];
+  items2 = [closure_15(tmp10, { userTag: tmp11, pronouns, themeType, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint }), closure_15(GuildTag, { user, themeType, style: obj, showToastOnPress: showBadgeToastOnPress, primaryGuildOverride }), ];
   let tmp6Result = !hideBadges;
   if (tmp6Result) {
-    const obj7 = { userId: user.id, badges, catalogBadges, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, style: obj, themeType, showToastOnPress: showBadgeToastOnPress, profileBackgroundColor };
+    const obj7 = { userId: user.id, badges, catalogBadges, canOpenBadgeDirectory, badgeDirectoryEntryPointRef, onOpenBadgeDirectory, showsUnreadDot: showsBadgeUnreadDot, style: obj, themeType, showToastOnPress: showBadgeToastOnPress };
     tmp6Result = tmp6(ProfileBadgeRows, obj7);
   }
   items2[2] = tmp6Result;
-  items1[1] = closure_15(hasOwnProperty, obj6);
-  return closure_15(hasOwnProperty, obj4);
+  items1[1] = authStore3(metroRequire, obj6);
+  return authStore3(metroRequire, obj4);
 };
 export { DisplayName };
 export { UserTagAndPronouns };

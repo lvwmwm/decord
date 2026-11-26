@@ -1,13 +1,13 @@
-// Module ID: 19822
-// Function ID: 19823
+// Module ID: 20163
+// Function ID: 20164
 // Name: useFormattedEndTime
-// Dependencies: [1385, 1113, 504, 2]
+// Dependencies: [1388, 1113, 504, 2]
 // Exports: default
 
-// Module 19822 (useFormattedEndTime)
+// Module 20163 (useFormattedEndTime)
 import get_initialized from "get initialized" /* 504 */;
 import intl from "intl" /* 1113 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

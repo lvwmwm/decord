@@ -1,19 +1,19 @@
-// Module ID: 16197
-// Function ID: 16198
+// Module ID: 15762
+// Function ID: 15763
 // Name: TableSliderRow
-// Dependencies: [32, 19, 17, 21, 5170, 7072, 16198, 7073, 5783, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 7444, 15763, 7445, 5919, 2]
 // Exports: TableSliderRow
 
-// Module 16197 (TableSliderRow)
+// Module 15762 (TableSliderRow)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import react2 from "react" /* 7072 */;
-import Card_Card from "Card/Card" /* 7073 */;
-import Slider2 from "Slider" /* 16198 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import react2 from "react" /* 7444 */;
+import Card_Card from "Card/Card" /* 7445 */;
+import Slider2 from "Slider" /* 15763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -69,7 +69,7 @@ export function TableSliderRow(end) {
   let tmp11Result = null;
   if (null != formatValue) {
     const obj5 = { variant: "body-md/medium", color: "text-muted", children: formatValue(first) };
-    const Text = tmp3(5783).Text;
+    const Text = tmp3(5919).Text;
     tmp11Result = tmp11(Text, obj5);
   }
   items[1] = tmp11Result;
@@ -88,7 +88,7 @@ export function TableSliderRow(end) {
     },
     accessibilityLabel: label
   };
-  Slider = tmp3(16198).Slider;
+  Slider = tmp3(15763).Slider;
   const merged1 = Object.assign(merged);
   items1[1] = hasOwnProperty(View, obj6);
   return metroRequire(Card, obj2);

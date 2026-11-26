@@ -1,56 +1,69 @@
 // Module ID: 2006
 // Function ID: 2007
-// Dependencies: [19, 21, 1998, 1999, 2004, 1971, 1997]
+// Dependencies: [19, 17, 21, 2001, 1976, 2007, 1974, 2000]
 // Exports: default
 
 // Module 2006
-import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import KeyboardController2 from "KeyboardController" /* 1971 */;
-import _modDef1998 from "module_1998" /* 1998 */;
-import _modDef1999 from "module_1999" /* 1999 */;
+import KeyboardController2 from "KeyboardController" /* 1974 */;
+import "react";
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-const useCallback = react2.useCallback;
+let StyleSheet;
+let c3;
+let closure_4;
+let hasOwnProperty;
+({ useCallback: c3, useMemo: closure_4 } = react);
+({ StyleSheet, Text: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
+const doneButtonContainer = StyleSheet.create({ doneButton: { fontWeight: "600", fontSize: 15 }, doneButtonContainer: { marginRight: 16, marginLeft: 8 } });
 
-export default function _default(icon) {
+export default function _default(rippleRadius) {
   let button;
   let children;
-  let disabled;
+  let doneButton;
+  let keyboardState;
   let onPress;
-  let rippleRadius;
-  let style;
-  ({ children, onPress } = icon);
-  ({ disabled, button } = icon);
-  ({ rippleRadius, style } = icon);
+  let text;
+  let theme;
+  ({ children, onPress } = rippleRadius);
+  let num = rippleRadius.rippleRadius;
+  if (num === undefined) {
+    num = 28;
+  }
+  ({ button, text } = rippleRadius);
   if (button === undefined) {
-    const tmp = importDefault;
-    button = _modDef1998;
+    const tmp = keyboardState;
+    button = keyboardState(theme[3]);
   }
-  icon = icon.icon;
-  if (icon === undefined) {
-    icon = _modDef1999;
-  }
-  const obj = onPress(2004);
-  const toolbarContext = obj.useToolbarContext();
-  const theme = toolbarContext.theme;
-  const tmp5 = onPress;
-  if (disabled == null) {
-    disabled = toolbarContext.isPrevDisabled;
-  }
-  const items = [onPress];
-  const tmp8 = useCallback((isDefaultPrevented) => {
+  theme = undefined;
+  let obj = onPress(theme[4]);
+  keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
+  const obj2 = onPress(theme[5]);
+  theme = obj2.useToolbarContext().theme;
+  let items = [keyboardState, theme];
+  const items1 = [onPress];
+  const tmp4 = closure_4(() => {
+    const items = [doneButton.doneButton, ];
+    const obj = { color: theme[keyboardState].primary };
+    items[1] = obj;
+    return items;
+  }, items);
+  const tmp5 = closure_3((isDefaultPrevented) => {
     if (onPress != null) {
       tmp(isDefaultPrevented);
     }
     if (!isDefaultPrevented.isDefaultPrevented()) {
       const KeyboardController = KeyboardController2.KeyboardController;
-      KeyboardController.setFocusTo("prev");
+      KeyboardController.dismiss();
     }
-  }, items);
+  }, items1);
   if (children == null) {
-    const obj3 = { disabled, theme, type: "prev" };
-    children = tmp9(icon, obj3);
+    children = text;
   }
-  return <button accessibilityHint="Moves focus to the previous field" accessibilityLabel="Previous" disabled={disabled} rippleRadius={rippleRadius} style={style} testID={tmp5(1997).TEST_ID_KEYBOARD_TOOLBAR_PREVIOUS} theme={theme} onPress={tmp8}>{children}</button>;
+  if (children == null) {
+    children = "Done";
+  }
+  return <button accessibilityHint="Closes the keyboard" accessibilityLabel="Done" rippleRadius={num} style={doneButtonContainer.doneButtonContainer} testID={onPress(theme[7]).TEST_ID_KEYBOARD_TOOLBAR_DONE} theme={theme} onPress={tmp5}>{null}</button>;
 };

@@ -1,15 +1,15 @@
-// Module ID: 7356
-// Function ID: 7357
+// Module ID: 16066
+// Function ID: 16067
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [19, 5204, 21, 563, 7032, 6996, 1113, 7000, 7357, 5790, 2]
+// Dependencies: [19, 5340, 21, 563, 7684, 6914, 1113, 6918, 16067, 5926, 2]
 // Exports: default
 
-// Module 7356 (MemberVerificationAlertIncomplete)
+// Module 16066 (MemberVerificationAlertIncomplete)
 import intl5 from "intl" /* 1113 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6996 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7032 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6914 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7684 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5204 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5340 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -66,16 +66,16 @@ export default function MemberVerificationAlertIncomplete(guildId) {
     let intl = tmp2(1113).intl;
     formatToPlainStringResult = intl.string(tmp2(1113).t["0sTyEb"]);
   }
-  const obj3 = { icon: guildId(7357).ListViewIcon, header: formatToPlainStringResult, buttons: closure_7(closure_6, obj4) };
-  const tmp9 = onClose(7000);
+  const obj3 = { icon: guildId(16067).ListViewIcon, header: formatToPlainStringResult, buttons: closure_7(closure_6, obj4) };
+  const tmp9 = onClose(6918);
   const merged1 = Object.assign(merged);
   obj4 = { children: items4 };
   const obj5 = { variant: "secondary", text: intl3.string(guildId(1113).t.h3aGmv), onPress: callback };
-  const Button = tmp2(5790).Button;
+  const Button = tmp2(5926).Button;
   intl3 = tmp2(1113).intl;
   items4 = [closure_5(Button, obj5), ];
   const obj6 = { text: intl4.string(guildId(1113).t.OQFlFD), variant: "destructive", onPress: callback1 };
-  const Button2 = tmp2(5790).Button;
+  const Button2 = tmp2(5926).Button;
   intl4 = tmp2(1113).intl;
   items4[1] = closure_5(Button2, obj6);
   return closure_5(tmp9, obj3);

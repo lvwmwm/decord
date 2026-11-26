@@ -1,15 +1,15 @@
-// Module ID: 14976
-// Function ID: 14977
+// Module ID: 10519
+// Function ID: 10520
 // Name: useConjureWandStatus
-// Dependencies: [6932, 14977, 5753, 11028, 1113, 4026, 2]
+// Dependencies: [7017, 10520, 5889, 7329, 1113, 4131, 2]
 // Exports: default
 
-// Module 14976 (useConjureWandStatus)
+// Module 10519 (useConjureWandStatus)
 import intl5 from "intl" /* 1113 */;
-import useMountEffectDefault from "useMountEffect" /* 5753 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
-import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 14977 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
+import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 10520 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/title_bar/native/useConjureWandStatus.tsx");
@@ -32,11 +32,11 @@ export default function useConjureWandStatus() {
   });
   let obj = { working: tmp5, hasBadge: !tmp5 && hasUnread, accessibilityLabel: found.join(", ") };
   const intl = intl5.intl;
-  const items = [intl.string(tmp(4026).uk6jhJ), , , ];
+  const items = [intl.string(tmp(4131).uk6jhJ), , , ];
   let stringResult = null;
   if ("working" === kind) {
     const intl2 = tmp7(1113).intl;
-    stringResult = intl2.string(tmp(4026)["Y8pS+n"]);
+    stringResult = intl2.string(tmp(4131)["Y8pS+n"]);
   }
   items[1] = stringResult;
   let kind1;
@@ -46,7 +46,7 @@ export default function useConjureWandStatus() {
   let stringResult1 = null;
   if ("needs_input" === kind1) {
     const intl3 = tmp7(1113).intl;
-    stringResult1 = intl3.string(tmp(4026).hfIuc7);
+    stringResult1 = intl3.string(tmp(4131).hfIuc7);
   }
   items[2] = stringResult1;
   let kind2;
@@ -56,7 +56,7 @@ export default function useConjureWandStatus() {
   let stringResult2 = null;
   if ("unread" === kind2) {
     const intl4 = tmp7(1113).intl;
-    stringResult2 = intl4.string(tmp(4026)["6XGnHJ"]);
+    stringResult2 = intl4.string(tmp(4131)["6XGnHJ"]);
   }
   items[3] = stringResult2;
   found = items.filter((item) => null != item);

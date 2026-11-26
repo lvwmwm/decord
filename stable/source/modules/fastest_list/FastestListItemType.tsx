@@ -1,9 +1,9 @@
-// Module ID: 7329
-// Function ID: 7330
+// Module ID: 7839
+// Function ID: 7840
 // Name: FastestListItemType
 // Dependencies: [2]
 
-// Module 7329 (FastestListItemType)
+// Module 7839 (FastestListItemType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/fastest_list/FastestListItemType.tsx");

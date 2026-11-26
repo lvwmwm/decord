@@ -1,16 +1,16 @@
-// Module ID: 18265
-// Function ID: 18266
+// Module ID: 18554
+// Function ID: 18555
 // Name: UseDataForQuests3PSetting
-// Dependencies: [8536, 4995, 18263, 17069, 11717, 1113, 18264, 2]
+// Dependencies: [9202, 5131, 18552, 17348, 12408, 1113, 18553, 2]
 
-// Module 18265 (UseDataForQuests3PSetting)
+// Module 18554 (UseDataForQuests3PSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17069 */;
-import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 18263 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18264 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11717 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17348 */;
+import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 18552 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18553 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 function useDataToSupportQuests3PSettingValue() {

@@ -1,131 +1,88 @@
 // Module ID: 16561
 // Function ID: 16562
-// Dependencies: [42, 41, 93, 95, 98, 158, 17, 16562]
+// Dependencies: [32, 16534, 16551]
 
 // Module 16561
-import react_native from "react-native" /* 17 */;
-import base64Decode from "base64Decode" /* 16562 */;
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import _mod16534 from "module_16534" /* 16534 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
+let _require;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const NativeModules = react_native.NativeModules;
-class TypeMismatchError {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, TypeMismatchError);
-    const obj = _getPrototypeOf(TypeMismatchError);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+
+export default (arr, arg1, arg2) => {
+  let closure_0;
+  let first;
+  let raw;
+  let tmp22;
+  let tmp = arg1;
+  _require = arg2;
+  const items = [];
+  let tmp2 = null;
+  let tmp3 = null;
+  const sorted = arr.sort((arg0, arg1) => _mod16534(arg0, arg1, closure_0));
+  for (const item10017 of sorted) {
+    if (require("module_16551")(item10017, tmp, arg2)) {
+      tmp3 = item10017;
+      let tmp12 = tmp2;
+      if (!tmp12) {
+        tmp2 = item10017;
+      }
     } else {
-      constructResult = obj(...arguments);
+      let tmp8 = tmp3;
+      if (tmp8) {
+        let items1 = [tmp2, ];
+        items1[1] = tmp3;
+        arr = items.push(items1);
+      }
+      tmp3 = null;
+      tmp2 = null;
     }
-    return tmp3(self, constructResult);
+    continue;
   }
-}
-_inherits(TypeMismatchError, _wrapNativeSuper(Error));
-let closure_8 = _createClass(TypeMismatchError);
-class QuotaExceededError {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, QuotaExceededError);
-    const obj = _getPrototypeOf(QuotaExceededError);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+  const tmp13 = tmp2;
+  if (tmp13) {
+    const items2 = [tmp2, null];
+    items.push(items2);
+  }
+  const items3 = [];
+  const tmp16 = items[Symbol.iterator]();
+  while (tmp16 !== undefined) {
+    [first, tmp22] = tmp17;
+    let tmp21 = first;
+    let tmp23 = tmp22;
+    if (first === tmp22) {
+      let arr3 = items3.push(tmp21);
     } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(QuotaExceededError, _wrapNativeSuper(Error));
-let closure_9 = _createClass(QuotaExceededError);
-if (typeof global.crypto !== "object") {
-  global.crypto = {};
-}
-if (typeof global.crypto.getRandomValues !== "function") {
-  global.crypto.getRandomValues = function getRandomValues(uint8Array) {
-    if (!(uint8Array instanceof Int8Array)) {
-      const _Uint8Array = Uint8Array;
-      if (!(uint8Array instanceof Uint8Array)) {
-        const _Int16Array = Int16Array;
-        if (!(uint8Array instanceof Int16Array)) {
-          const _Uint16Array = Uint16Array;
-          if (!(uint8Array instanceof Uint16Array)) {
-            const _Int32Array = Int32Array;
-            if (!(uint8Array instanceof Int32Array)) {
-              const _Uint32Array = Uint32Array;
-              if (!(uint8Array instanceof Uint32Array)) {
-                const _Uint8ClampedArray = Uint8ClampedArray;
-                if (!(uint8Array instanceof Uint8ClampedArray)) {
-                  const self = this;
-                  const self2 = this;
-                  const tmp2 = new closure_8("Expected an integer array");
-                  throw tmp2;
-                }
-              }
-            }
-          }
+      if (!tmp23) {
+        if (tmp21 === sorted[0]) {
+          let arr4 = items3.push("*");
         }
       }
-    }
-    if (uint8Array.byteLength > 65536) {
-      const self7 = this;
-      const self8 = this;
-      const tmp11 = new closure_9("Can only request a maximum of 65536 bytes");
-      throw tmp11;
-    } else {
-      let randomBase64;
-      const byteLength = uint8Array.byteLength;
-      const tmp15 = base64Decode;
-      if (NativeModules.RNGetRandomValues) {
-        const RNGetRandomValues = tmp16.RNGetRandomValues;
-        randomBase64 = RNGetRandomValues.getRandomBase64(byteLength);
-      } else if (NativeModules.ExpoRandom) {
-        const ExpoRandom2 = tmp16.ExpoRandom;
-        randomBase64 = ExpoRandom2.getRandomBase64String(byteLength);
-      } else if (global.ExpoModules) {
-        const ExpoRandom = global.ExpoModules.ExpoRandom;
-        randomBase64 = ExpoRandom.getRandomBase64String(byteLength);
+      if (tmp23) {
+        if (tmp21 === sorted[0]) {
+          let _HermesInternal3 = HermesInternal;
+          let arr5 = items3.push("<=" + tmp23);
+        } else {
+          let _HermesInternal2 = HermesInternal;
+          let arr6 = items3.push("" + tmp21 + " - " + tmp23);
+        }
       } else {
-        const _Error = Error;
-        const self3 = this;
-        const self4 = this;
-        const error = new Error("Native module not found");
-        throw error;
+        let _HermesInternal = HermesInternal;
+        let arr13 = items3.push(">=" + tmp21);
       }
-      const _Uint8Array2 = Uint8Array;
-      const self5 = this;
-      const self6 = this;
-      uint8Array = new Uint8Array(uint8Array.buffer, uint8Array.byteOffset, uint8Array.byteLength);
-      tmp15(randomBase64, uint8Array);
-      return uint8Array;
     }
-  };
-}
+    continue;
+  }
+  const joined = items3.join(" || ");
+  if (typeof tmp.raw === "string") {
+    raw = tmp.raw;
+  } else {
+    const _String = String;
+    raw = String(tmp);
+  }
+  if (joined.length < raw.length) {
+    tmp = joined;
+  }
+  return tmp;
+};

@@ -1,20 +1,22 @@
-// Module ID: 17875
-// Function ID: 17876
+// Module ID: 18140
+// Function ID: 18141
 // Name: ScreenDowntimeReminderSetting
-// Dependencies: [11173, 8536, 17164, 8473, 11717, 1113, 504, 17876, 2]
+// Dependencies: [11014, 9202, 17444, 9616, 12408, 1113, 504, 18141, 18115, 2]
 
-// Module 17875 (ScreenDowntimeReminderSetting)
+// Module 18140 (ScreenDowntimeReminderSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import useUserLinks from "useUserLinks" /* 8473 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17164 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 17876 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 11173 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import useUserLinks from "useUserLinks" /* 9616 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17444 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 18141 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 11014 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let SettingBuilders = SettingBuilders_mod;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -44,6 +46,12 @@ let obj = {
   }
 };
 const toggle = SettingBuilders.createToggle(obj);
+SettingBuilders = SettingBuilders_mod;
+const createToggle = SettingBuilders.createToggle;
+const obj2 = { parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY };
+const merged = Object.assign(toggle);
+const toggle1 = createToggle(obj2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/ScreenDowntimeReminderSetting.tsx");
 
 export default toggle;
+export const RedesignScreenDowntimeReminderSetting = toggle1;

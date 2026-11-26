@@ -1,21 +1,21 @@
-// Module ID: 18882
-// Function ID: 18883
+// Module ID: 19258
+// Function ID: 19259
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 5037, 5041, 1385, 18883, 21, 5170, 575, 6947, 9299, 18884, 18885, 18886, 18887, 5874, 18888, 1187, 18889, 18890, 7420, 504, 7076, 8854, 8927, 18891, 5783, 2]
+// Dependencies: [19, 17, 5173, 5177, 1388, 19259, 21, 5306, 575, 7033, 15916, 19260, 19261, 19262, 19263, 6010, 19264, 1187, 19265, 19266, 7918, 504, 7428, 8476, 8613, 19267, 5919, 2]
 
-// Module 18882 (ForYouItemImage)
+// Module 19258 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import GuildRecord from "GuildRecord" /* 5037 */;
-import Pressables from "Pressables" /* 7076 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8927 */;
+import GuildRecord from "GuildRecord" /* 5173 */;
+import Pressables from "Pressables" /* 7428 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8613 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 18883 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserStore from "UserStore" /* 1388 */;
+import Constants from "Constants" /* 19259 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let FRIEND_BACKGROUND;

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../node_modules/.pnpm/@react-navigation+elements@2.9.34_shb2al3n4oohkkhnm35rfpv56i/node_modules/@react-navigation/elements/lib/module/assets", width: 96, height: 96, scales: [1, 1, 2, 3, 4], hash: "3162e8a244d8f6fbd259e79043e23ce4", name: "close-icon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "a9a658fd475f7a20d9e2c83953494ec4", name: "img_bungie_dark", type: "svg" });

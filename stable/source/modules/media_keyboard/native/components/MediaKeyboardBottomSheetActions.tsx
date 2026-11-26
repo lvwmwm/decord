@@ -1,19 +1,19 @@
-// Module ID: 10690
-// Function ID: 10691
+// Module ID: 11642
+// Function ID: 11643
 // Name: MediaKeyboardBottomSheetActions
-// Dependencies: [19, 17, 21, 5170, 575, 1377, 5340, 671, 1627, 5756, 5747, 7076, 5783, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1380, 5476, 671, 1630, 5892, 5883, 7428, 5919, 2]
 
-// Module 10690 (MediaKeyboardBottomSheetActions)
+// Module 11642 (MediaKeyboardBottomSheetActions)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import LinearGradientDefault from "LinearGradient" /* 5747 */;
-import Pressables from "Pressables" /* 7076 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import Pressables from "Pressables" /* 7428 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const Text_Text = tmp2(5783);
+const Text_Text = tmp2(5919);
 let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -67,8 +67,8 @@ const memoResult = react.memo(function MediaKeyboardBottomSheetActions(onHeightC
   let variant;
   let tmp = onHeightChange;
   let tmp2 = dependencyMap;
-  let obj = onHeightChange(5340);
-  const gradientValue = obj.useGradientValue(onHeightChange(5340).GradientPercentage.END);
+  let obj = onHeightChange(5476);
+  const gradientValue = obj.useGradientValue(onHeightChange(5476).GradientPercentage.END);
   let hexResult = null;
   if (null != gradientValue) {
     let obj2 = _modDef671(gradientValue);
@@ -76,14 +76,14 @@ const memoResult = react.memo(function MediaKeyboardBottomSheetActions(onHeightC
     hexResult = alphaResult.hex();
   }
   const bottom = useSafeAreaInsetsDefault().bottom;
-  const tmpResult = tmp(5756);
+  const tmpResult = tmp(5892);
   const tmp6 = closure_8(bottom, tmpResult.useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND_HIGHER), hexResult);
   importDefault = tmp6;
-  const tmpResult4 = tmp(5756);
+  const tmpResult4 = tmp(5892);
   dependencyMap = tmpResult4.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_ICON_COLOR_ACTIVE);
-  const tmpResult5 = tmp(5756);
+  const tmpResult5 = tmp(5892);
   react = tmpResult5.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_COLOR_ACTIVE);
-  const tmpResult6 = tmp(5756);
+  const tmpResult6 = tmp(5892);
   variant = tmpResult6.useToken(nativeDefault.modules.mobile.MEDIA_KEYBOARD_BUTTON_TEXT_VARIANT);
   let items = [tmp6.gradient.color];
   const memo = react.useMemo(() => {

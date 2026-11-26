@@ -1,28 +1,28 @@
-// Module ID: 20258
-// Function ID: 20259
+// Module ID: 20598
+// Function ID: 20599
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 20259, 5041, 9188, 1072, 21, 5170, 575, 7097, 7663, 1113, 20260, 9242, 5783, 20101, 7181, 5874, 20261, 1499, 504, 5766, 2]
+// Dependencies: [19, 17, 20599, 5177, 8405, 1072, 21, 5306, 575, 7493, 7427, 1113, 20600, 8475, 5919, 20441, 7619, 6010, 20601, 1502, 504, 5902, 2]
 // Exports: default
 
-// Module 20258 (GuildSettingsModalVanityURL)
+// Module 20598 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7181 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7663 */;
-import getInviteURLDefault from "getInviteURL" /* 9242 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 20101 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 20260 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20261 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7619 */;
+import getInviteURLDefault from "getInviteURL" /* 8475 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 20441 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 20600 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20601 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 20259 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9188 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 20599 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8405 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation, props;
@@ -107,7 +107,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
       if (submitting) {
         fn = () => null;
       } else if (isEditing) {
-        let obj = self(7097);
+        let obj = self(7493);
         fn = obj.getHeaderConditionalBackButton(this.handleCancel);
       }
       const obj2 = { headerLeft: fn, headerRight: fn2 };
@@ -219,7 +219,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
     items2[2] = metroImportAll(Text3, obj10);
     if (tmp17Result) {
       const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl5.string(intl7.t.o3kmm3) };
-      const Text4 = tmp18(5783).Text;
+      const Text4 = tmp18(5919).Text;
       intl5 = tmp18(1113).intl;
       tmp17Result = tmp17(Text4, obj11);
     }
@@ -243,7 +243,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
   guildId = guildId.guildId;
   const contentContainerStyle = guildId.contentContainerStyle;
   const tmp = closure_11();
-  const obj = guildId(1499);
+  const obj = guildId(1502);
   navigation = obj.useNavigation();
   const items = [GuildStore];
   const obj2 = guildId(504);
@@ -262,7 +262,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
   if (null != stateFromStores) {
     const obj5 = { children: items3 };
     const obj6 = { guild: stateFromStores, vanityURLCode: stateFromStores1, submitting: tmp8, errorDetails: tmp9, navigation, styles: tmp, contentContainerStyle };
-    items3 = [closure_8(GuildSettingsModalVanityURL, obj6), closure_8(tmp2(5766).NavScrim, {})];
+    items3 = [closure_8(GuildSettingsModalVanityURL, obj6), closure_8(tmp2(5902).NavScrim, {})];
     tmp10 = closure_9(closure_10, obj5);
   }
   return tmp10;

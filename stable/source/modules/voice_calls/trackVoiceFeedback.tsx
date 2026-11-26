@@ -1,13 +1,13 @@
-// Module ID: 19909
-// Function ID: 19910
+// Module ID: 20252
+// Function ID: 20253
 // Name: trackVoiceFeedback
-// Dependencies: [109, 5, 2130, 6054, 1252, 2]
+// Dependencies: [109, 5, 2133, 6190, 1256, 2]
 // Exports: default
 
-// Module 19909 (trackVoiceFeedback)
+// Module 20252 (trackVoiceFeedback)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _trackVoiceFeedback() {
@@ -90,7 +90,7 @@ let obj = function _trackVoiceFeedback() {
             closure_21 = undefined;
             feedback = 1;
             c7 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === feedback) {
           if (arg0 === 1) {

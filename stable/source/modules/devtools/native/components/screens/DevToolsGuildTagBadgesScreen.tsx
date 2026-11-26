@@ -1,19 +1,19 @@
-// Module ID: 18075
-// Function ID: 18076
+// Module ID: 18353
+// Function ID: 18354
 // Name: DevToolsGuildTagBadgesScreen
-// Dependencies: [32, 19, 17, 8497, 21, 5170, 575, 6191, 5783, 5790, 16081, 2]
+// Dependencies: [32, 19, 17, 8410, 21, 5306, 575, 6327, 5919, 5926, 16357, 2]
 // Exports: default
 
-// Module 18075 (DevToolsGuildTagBadgesScreen)
+// Module 18353 (DevToolsGuildTagBadgesScreen)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import badges_GuildBadge from "badges/GuildBadge" /* 16081 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import badges_GuildBadge from "badges/GuildBadge" /* 16357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildTagConstants from "GuildTagConstants" /* 8497 */;
+import GuildTagConstants from "GuildTagConstants" /* 8410 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ let closure_9 = found.map((item) => {
   return { name, value };
 });
 let items = [
-  { label: "Untinted", primary: "disabled", secondary: "it" },
+  { label: "Untinted", primary: "sa", secondary: "it" },
   ...GUILD_TAG_BADGE_PALETTE_PRESETS.map((primary, index) => {
     const obj = { label: "P" + index + 1, primary: primary.primary, secondary: primary.secondary };
     return obj;

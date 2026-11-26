@@ -1,17 +1,18 @@
-// Module ID: 17839
-// Function ID: 17840
+// Module ID: 18116
+// Function ID: 18117
 // Name: SystemNotificationsSetting
-// Dependencies: [5, 8536, 1072, 8042, 14240, 8065, 14248, 1252, 11072, 11717, 1113, 2]
+// Dependencies: [5, 9202, 1072, 6892, 14828, 8199, 14836, 1256, 12922, 12408, 1113, 18115, 2]
 
-// Module 17839 (SystemNotificationsSetting)
+// Module 18116 (SystemNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8042 */;
-import react_nativeDefault from "react-native" /* 8065 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
+import react_nativeDefault from "react-native" /* 8199 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14240 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14828 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -105,6 +106,7 @@ const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const AnalyticEvents = Constants.AnalyticEvents;
 let closure_5 = NativePermissionConstants.NotificationAuthorizationStatus;
 ({ EventActionType: metroRequire, EventActionLocation: metroImportDefault } = NotificationPermissionConstants);
+let SettingBuilders = SettingBuilders_mod;
 obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -117,6 +119,12 @@ obj = {
   withArrow: true
 };
 const pressable = SettingBuilders.createPressable(obj);
+SettingBuilders = SettingBuilders_mod;
+let obj2 = { parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN };
+const createPressable = SettingBuilders.createPressable;
+const merged = Object.assign(pressable);
+const pressable1 = createPressable(obj2);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/SystemNotificationsSetting.tsx");
 
 export default pressable;
+export const RedesignSystemNotificationsSetting = pressable1;

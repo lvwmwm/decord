@@ -1,31 +1,57 @@
 // Module ID: 1665
 // Function ID: 1666
-// Dependencies: [1666, 1669, 1670, 1681, 1674]
+// Dependencies: [1666]
+// Exports: applyCSSAnimations, markNodeAsRemovable, registerCSSKeyframes, registerPseudoStyles, runCSSTransition, setCSSEventHandler, setViewStyle, unmarkNodeAsRemovable, unregisterCSSAnimations, unregisterCSSKeyframes, unregisterCSSTransition, unregisterPseudoStyles
 
 // Module 1665
-import FONT_WEIGHT_MAPPINGS from "FONT_WEIGHT_MAPPINGS" /* 1666 */;
-import ReanimatedLogLevel from "ReanimatedLogLevel" /* 1669 */;
-import _mod1670 from "module_1670" /* 1670 */;
-import _mod1674 from "module_1674" /* 1674 */;
-import ValueProcessorTarget from "ValueProcessorTarget" /* 1681 */;
+import ReanimatedModule2 from "ReanimatedModule" /* 1666 */;
 
-for (const key10013 in FONT_WEIGHT_MAPPINGS) {
-  exports[key10013] = FONT_WEIGHT_MAPPINGS[key10013];
-  continue;
+
+export function setViewStyle(arg0, arg1) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  ReanimatedModule.setViewStyle(arg0, arg1);
 }
-for (const key10017 in ReanimatedLogLevel) {
-  exports[key10017] = ReanimatedLogLevel[key10017];
-  continue;
+export function setCSSEventHandler(arg0) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  ReanimatedModule.setCSSEventHandler(arg0);
 }
-for (const key10021 in _mod1670) {
-  exports[key10021] = _mod1670[key10021];
-  continue;
+export function markNodeAsRemovable(arg0) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  ReanimatedModule.markNodeAsRemovable(arg0);
 }
-for (const key10025 in ValueProcessorTarget) {
-  exports[key10025] = ValueProcessorTarget[key10025];
-  continue;
+export function unmarkNodeAsRemovable(arg0) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  const result = ReanimatedModule.unmarkNodeAsRemovable(arg0);
 }
-for (const key10029 in _mod1674) {
-  exports[key10029] = _mod1674[key10029];
-  continue;
+export function registerCSSKeyframes(arg0, arg1, arg2) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  ReanimatedModule.registerCSSKeyframes(arg0, arg1, arg2);
+}
+export function unregisterCSSKeyframes(arg0, arg1) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  const result = ReanimatedModule.unregisterCSSKeyframes(arg0, arg1);
+}
+export function applyCSSAnimations(arg0, arg1, arg2) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  ReanimatedModule.applyCSSAnimations(arg0, arg1, arg2);
+}
+export function unregisterCSSAnimations(arg0) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  const result = ReanimatedModule.unregisterCSSAnimations(arg0);
+}
+export function runCSSTransition(arg0, arg1, arg2) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  ReanimatedModule.runCSSTransition(arg0, arg1, arg2);
+}
+export function unregisterCSSTransition(arg0) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  const result = ReanimatedModule.unregisterCSSTransition(arg0);
+}
+export function registerPseudoStyles(arg0, arg1) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  ReanimatedModule.registerPseudoStyles(arg0, arg1);
+}
+export function unregisterPseudoStyles(arg0) {
+  const ReanimatedModule = ReanimatedModule2.ReanimatedModule;
+  const result = ReanimatedModule.unregisterPseudoStyles(arg0);
 }

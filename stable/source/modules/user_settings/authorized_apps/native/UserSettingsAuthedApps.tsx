@@ -1,26 +1,26 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 17485
+// Function ID: 17486
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7372, 1072, 21, 5170, 575, 9869, 9163, 14887, 5891, 504, 1500, 7426, 5783, 1113, 1499, 7071, 9154, 7256, 7260, 2]
+// Dependencies: [19, 17, 7221, 1072, 21, 5306, 575, 7406, 8163, 15970, 6027, 504, 1503, 7410, 5919, 1113, 1502, 7443, 8151, 7809, 7813, 2]
 // Exports: AuthorizedAppRow, AuthorizedAppsEmpty, AuthorizedAppsHeader, DisclosureIcon, useAuthorizedApps
 
-// Module 17205 (UserSettingsAuthedApps)
+// Module 17485 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7256 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7260 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7372 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9154 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9163 */;
-import applications from "applications" /* 9869 */;
-import EmbedIcon from "EmbedIcon" /* 14887 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7221 */;
+import applications from "applications" /* 7406 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8151 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 8163 */;
+import EmbedIcon from "EmbedIcon" /* 15970 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
@@ -78,7 +78,7 @@ export function useAuthorizedApps() {
   });
   appAuthTokens = stateFromStoresObject.appAuthTokens;
   const fetchState = stateFromStoresObject.fetchState;
-  const obj2 = appAuthTokens(1500);
+  const obj2 = appAuthTokens(1503);
   const focusEffect = obj2.useFocusEffect(react.useCallback(() => {
     const obj = closure_1(dependencyMap[13]);
     return obj.fetch();
@@ -143,7 +143,7 @@ export function AuthorizedAppRow(app) {
   let start;
   app = app.app;
   ({ start, end } = app);
-  let obj = app(1499);
+  let obj = app(1502);
   importDefault = obj.useNavigation();
   let obj2 = {
     icon: closure_10(TableRowApplicationIconDefault, obj3),
@@ -163,7 +163,7 @@ export function AuthorizedAppRow(app) {
     start,
     end
   };
-  const TableRow = app(7071).TableRow;
+  const TableRow = app(7443).TableRow;
   obj3 = { application: app.application };
   return closure_10(TableRow, obj2);
 }

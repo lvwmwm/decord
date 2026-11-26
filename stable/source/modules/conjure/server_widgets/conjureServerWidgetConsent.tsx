@@ -1,15 +1,15 @@
-// Module ID: 15219
-// Function ID: 15220
+// Module ID: 15818
+// Function ID: 15819
 // Name: conjureServerWidgetConsent
-// Dependencies: [5, 12582, 6932, 15220, 7886, 12581, 12584, 1113, 4026, 1242, 12411, 9017, 5807, 1378, 2]
+// Dependencies: [5, 12091, 7017, 15819, 7357, 12090, 12093, 1113, 4131, 1242, 12274, 7307, 5943, 1381, 2]
 // Exports: getConjureServerWidgetConsentRequest
 
-// Module 15219 (conjureServerWidgetConsent)
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12584 */;
+// Module 15818 (conjureServerWidgetConsent)
+import URLUtilsDefault from "URLUtils" /* 1381 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12093 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import WidgetStore from "WidgetStore" /* 12582 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import WidgetStore from "WidgetStore" /* 12091 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -202,7 +202,7 @@ obj = function _exchangeAndAdd() {
             ({ onTurnedOn: c3, showToast: c4 } = closure_3);
             c8 = 1;
             c9 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else {
           let result;

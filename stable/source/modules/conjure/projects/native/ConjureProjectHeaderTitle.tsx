@@ -1,20 +1,20 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 13329
+// Function ID: 13330
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 5170, 575, 7076, 1113, 4026, 12317, 5783, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7428, 1113, 4131, 10543, 5919, 2]
 // Exports: default
 
-// Module 12437 (ConjureProjectHeaderTitle)
+// Module 13329 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import Pressables from "Pressables" /* 7076 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12317 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Pressables from "Pressables" /* 7428 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 10543 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,7 +41,7 @@ export default function ConjureProjectHeaderTitle(project) {
   const obj = { style: tmp.row, children: items };
   const tmp2 = hasOwnProperty;
   if (null != project) {
-    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef4026.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
+    const obj2 = { onPress: onPressIcon, hitSlop, accessibilityRole: "button", accessibilityLabel: intl.string(_modDef4131.FzfmQ8), children: React3(ConjureProjectIconDefault, obj3) };
     const PressableOpacity = Pressables.PressableOpacity;
     intl = intl2.intl;
     obj3 = { project, size: "list" };

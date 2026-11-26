@@ -1,15 +1,15 @@
-// Module ID: 12261
-// Function ID: 12262
+// Module ID: 13122
+// Function ID: 13123
 // Name: DefaultRouteActionCreators
-// Dependencies: [5103, 1072, 5208, 5221, 572, 2]
+// Dependencies: [5239, 1072, 5344, 5357, 572, 2]
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 12261 (DefaultRouteActionCreators)
+// Module 13122 (DefaultRouteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import matchPathCompat from "matchPathCompat" /* 5208 */;
-import RouteUtils from "RouteUtils" /* 5221 */;
-import LurkingStore from "LurkingStore" /* 5103 */;
+import matchPathCompat from "matchPathCompat" /* 5344 */;
+import RouteUtils from "RouteUtils" /* 5357 */;
+import LurkingStore from "LurkingStore" /* 5239 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

@@ -1,25 +1,23 @@
-// Module ID: 17539
-// Function ID: 17540
+// Module ID: 17796
+// Function ID: 17797
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5171, 6869, 17427, 21, 5170, 17535, 17424, 9621, 17540, 504, 1377, 5874, 5231, 9814, 2]
+// Dependencies: [19, 17, 5307, 6954, 17700, 21, 5306, 17797, 17697, 504, 6010, 17798, 5367, 10141, 2]
 
-// Module 17539 (QuestDockBountyIllustration)
+// Module 17796 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import native from "native" /* 5231 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import QuestConstants from "QuestConstants" /* 6869 */;
-import APNGPlayer2 from "APNGPlayer" /* 9621 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9814 */;
-import QuestDockHooks from "QuestDockHooks" /* 17424 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17535 */;
-import _modDef17540 from "module_17540" /* 17540 */;
+import native from "native" /* 5367 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 10141 */;
+import QuestDockHooks from "QuestDockHooks" /* 17697 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17797 */;
+import _modDef17798 from "module_17798" /* 17798 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import QuestDockConstants from "QuestDockConstants" /* 17427 */;
-import createStyles from "createStyles" /* 5170 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import QuestDockConstants from "QuestDockConstants" /* 17700 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let current;
@@ -88,45 +86,24 @@ function IllustrationFrame(arg0) {
   const items = [closure_8().frame, style];
   return <View style={items} pointerEvents="none" accessible={false} importantForAccessibility="no-hide-descendants">{children}</View>;
 }
-function QuestDock3DOrbsAPNGPlayer(shouldAnimate) {
-  shouldAnimate = shouldAnimate.shouldAnimate;
-  const tmp = closure_8();
-  const ref = react.useRef(null);
-  const obj = APNGPlayer2;
-  const aPNGPlayerControls = obj.useAPNGPlayerControls(ref);
-  const items = [aPNGPlayerControls, shouldAnimate];
-  const effect = react.useEffect(() => {
-    if (shouldAnimate) {
-      aPNGPlayerControls.play();
-    } else {
-      aPNGPlayerControls.pause();
-    }
-  }, items);
-  const APNGPlayer = APNGPlayer2.APNGPlayer;
-  return <APNGPlayer ref={ref} url={_modDef17540} style={tmp.fill} autoplay={false} />;
-}
 function QuestDock3DOrbsIllustration() {
-  let obj5;
-  let tmp8Result;
+  let obj4;
   let useReducedMotion;
   const items = [AccessibilityStore];
   const tmp = closure_8();
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp6 = useIsQuestDockContentVisibleDefault();
+  const tmp5 = useIsQuestDockContentVisibleDefault();
   const obj2 = QuestDockHooks;
-  const tmp7 = tmp6 && !obj2.useIsQuestDockExpanded() && !stateFromStores;
-  const tmp2Result = PlatformUtils;
-  if (tmp2Result.isAndroid()) {
-    const obj3 = { shouldAnimate: tmp7 };
-    tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
-  } else {
-    const obj4 = { source: obj5, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp7, accessible: false };
-    obj5 = { uri: _modDef17540 };
-    const tmp5Result = FastImageDefault;
-    tmp8Result = tmp8(tmp5Result, obj4);
+  let tmp6 = tmp5 && !obj2.useIsQuestDockExpanded();
+  const obj3 = { source: obj4, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp6, accessible: false };
+  obj4 = { uri: _modDef17798 };
+  const tmp4Result = FastImageDefault;
+  const tmp7 = jsx;
+  if (tmp6) {
+    tmp6 = !stateFromStores;
   }
-  return tmp8Result;
+  return tmp7(tmp4Result, obj3);
 }
 function QuestDock2DOrbsIllustration() {
   const ref = useRivePlaybackGateRef();
@@ -135,6 +112,11 @@ function QuestDock2DOrbsIllustration() {
 function QuestDockOrbHandsIllustration() {
   const ref = useRivePlaybackGateRef();
   return jsx(native.OrbsIllustration_HandsRive, { ref, stateMachine: "State Machine 1", fit: "contain" });
+}
+class QuestDockBountyOrbIllustration {
+  constructor() {
+    return <IllustrationFrame style={closure_8().orbs}><QuestDock3DOrbsIllustration /></IllustrationFrame>;
+  }
 }
 const View = react_native.View;
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
@@ -145,7 +127,7 @@ obj2 = { marginRight: -QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT + 5 };
 size = { width: 124, height: QUEST_DOCK_COLLAPSED_HEIGHT, transform: items };
 items = [{ translateY: -2 }];
 size1 = { width: 120, height: 70, marginBottom: QUEST_DOCK_COLLAPSED_HEIGHT - 70 };
-let closure_8 = createStyles.createStyles(obj);
+const metroImportAll = createStyles.createStyles(obj);
 const memoResult = react.memo(function QuestDockBountyIllustration() {
   const tmp = closure_8();
   const BountiesMobileQuestBarExperiment = BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarExperiment;
@@ -156,7 +138,7 @@ const memoResult = react.memo(function QuestDockBountyIllustration() {
   } else if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
     return <IllustrationFrame style={tmp.hands}><QuestDockOrbHandsIllustration /></IllustrationFrame>;
   } else if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
-    return <IllustrationFrame style={tmp.orbs}><QuestDock3DOrbsIllustration /></IllustrationFrame>;
+    return <QuestDockBountyOrbIllustration />;
   }
 });
 size = size_mod;
@@ -164,3 +146,4 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestDock/Quest
 
 export default memoResult;
 export const QUEST_DOCK_BOUNTY_ILLUSTRATION_RESERVED_WIDTH = 95;
+export { QuestDockBountyOrbIllustration };

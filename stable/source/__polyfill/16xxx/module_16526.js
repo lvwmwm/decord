@@ -1,17 +1,16 @@
 // Module ID: 16526
 // Function ID: 16527
-// Dependencies: [16473, 16524, 16507]
+// Dependencies: [16519]
 
 // Module 16526
-import _mod16473 from "module_16473" /* 16473 */;
-import _mod16507 from "module_16507" /* 16507 */;
-import defineProperty2 from "defineProperty2" /* 16524 */;
+import _mod16519 from "module_16519" /* 16519 */;
 
 
-export default _mod16473 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod16507(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default (arg0, arg1) => {
+  const tmp = _mod16519(arg0, arg1);
+  let version = null;
+  if (tmp) {
+    version = tmp.version;
+  }
+  return version;
+};

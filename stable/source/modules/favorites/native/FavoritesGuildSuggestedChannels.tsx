@@ -1,24 +1,24 @@
-// Module ID: 18628
-// Function ID: 18629
+// Module ID: 18922
+// Function ID: 18923
 // Name: FavoritesGuildSuggestedChannels
-// Dependencies: [19, 17, 18629, 1072, 5914, 21, 575, 5170, 18536, 1113, 3608, 7153, 7314, 18630, 18631, 5790, 13648, 2]
+// Dependencies: [19, 17, 18923, 1072, 6050, 21, 575, 5306, 18830, 1113, 3679, 7549, 7824, 18924, 18925, 5926, 10245, 2]
 // Exports: default, getFavoritesSuggestionsNoticeHeight
 
-// Module 18628 (FavoritesGuildSuggestedChannels)
+// Module 18922 (FavoritesGuildSuggestedChannels)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5790 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;
-import XSmallIcon from "XSmallIcon" /* 7153 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 7314 */;
-import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 18630 */;
-import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 18631 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import XSmallIcon from "XSmallIcon" /* 7549 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 7824 */;
+import SearchableDestinationListRowDefault from "SearchableDestinationListRow" /* 18924 */;
+import handleFavoritesGuildAddSuggestedChannelDefault from "handleFavoritesGuildAddSuggestedChannel" /* 18925 */;
 import react_mod from "react" /* 19 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18629 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18923 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -28,7 +28,7 @@ let c9;
 let hasOwnProperty;
 let metroRequire;
 let tmp7;
-const _modDef3608 = tmp7(3608);
+const _modDef3679 = tmp7(3679);
 let react = react_mod;
 const View = react_native.View;
 ({ useFavoritesGuildSuggestions: hasOwnProperty, useFavoritesGuildSuggestionsDismissal: metroRequire } = FavoritesGuildSuggestionsStore);
@@ -50,7 +50,7 @@ export default function FavoritesGuildSuggestedChannels() {
   let perform;
   let style;
   let tmp = closure_13();
-  let obj = arr(18536);
+  let obj = arr(18830);
   const categoryStyles = obj.useCategoryStyles();
   arr = closure_5();
   const tmp5 = closure_6();
@@ -58,7 +58,7 @@ export default function FavoritesGuildSuggestedChannels() {
   const items = [tmp5];
   const memo = react.useMemo(() => {
     let intl;
-    const obj = { label: intl.string(_modDef3608.F3dWTe), perform, Icon: XSmallIcon.XSmallIcon };
+    const obj = { label: intl.string(_modDef3679.F3dWTe), perform, Icon: XSmallIcon.XSmallIcon };
     intl = intl2.intl;
     return obj;
   }, items);
@@ -69,9 +69,9 @@ export default function FavoritesGuildSuggestedChannels() {
   let tmp9 = null;
   if (0 !== arr.length) {
     let obj2 = { style: tmp.container, children: items2 };
-    let obj3 = { name: intl.string(_modDef3608.oHWnLy), withMarginTop: false, styles: categoryStyles, trailingAction: memo };
-    const renderCategoryItem = arr(18536).renderCategoryItem;
-    arr(18536);
+    let obj3 = { name: intl.string(_modDef3679.oHWnLy), withMarginTop: false, styles: categoryStyles, trailingAction: memo };
+    const renderCategoryItem = arr(18830).renderCategoryItem;
+    arr(18830);
     intl = tmp2(1113).intl;
     items2 = [renderCategoryItem(obj3), ];
     const obj4 = {

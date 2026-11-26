@@ -1,37 +1,37 @@
-// Module ID: 19108
-// Function ID: 19109
+// Module ID: 19481
+// Function ID: 19482
 // Name: SearchList
-// Dependencies: [19, 17, 9950, 21, 5170, 19109, 19110, 19111, 19126, 19105, 19128, 19130, 19125, 19112, 19131, 19135, 19136, 19139, 19140, 19141, 19142, 19143, 19144, 19094, 19161, 1627, 19096, 1113, 7390, 2]
+// Dependencies: [19, 17, 9066, 21, 5306, 19482, 19483, 19484, 19499, 19478, 19501, 19503, 19498, 19485, 19504, 19508, 19509, 19512, 19513, 19514, 19515, 19516, 19517, 19466, 19534, 1630, 19468, 1113, 7888, 2]
 
-// Module 19108 (SearchList)
+// Module 19481 (SearchList)
 import intl2 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7390 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 19094 */;
-import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 19105 */;
-import DMRowDefault from "DMRow" /* 19109 */;
-import GroupDMRowDefault from "GroupDMRow" /* 19110 */;
-import SearchHistoryRowDefault from "SearchHistoryRow" /* 19111 */;
-import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 19112 */;
-import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 19125 */;
-import MediaGridItemDefault from "MediaGridItem" /* 19126 */;
-import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 19128 */;
-import MediaGridDefault from "MediaGrid" /* 19130 */;
-import MessageRowDefault from "MessageRow" /* 19131 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19135 */;
-import LinkGridItemDefault from "LinkGridItem" /* 19136 */;
-import FileGridItemDefault from "FileGridItem" /* 19139 */;
-import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 19140 */;
-import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 19141 */;
-import GenericTextRowDefault from "GenericTextRow" /* 19142 */;
-import SearchListSectionDefault from "SearchListSection" /* 19143 */;
-import SmartSearchRowDefault from "SmartSearchRow" /* 19144 */;
-import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 19161 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7888 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 19466 */;
+import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 19478 */;
+import DMRowDefault from "DMRow" /* 19482 */;
+import GroupDMRowDefault from "GroupDMRow" /* 19483 */;
+import SearchHistoryRowDefault from "SearchHistoryRow" /* 19484 */;
+import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 19485 */;
+import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 19498 */;
+import MediaGridItemDefault from "MediaGridItem" /* 19499 */;
+import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 19501 */;
+import MediaGridDefault from "MediaGrid" /* 19503 */;
+import MessageRowDefault from "MessageRow" /* 19504 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19508 */;
+import LinkGridItemDefault from "LinkGridItem" /* 19509 */;
+import FileGridItemDefault from "FileGridItem" /* 19512 */;
+import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 19513 */;
+import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 19514 */;
+import GenericTextRowDefault from "GenericTextRow" /* 19515 */;
+import SearchListSectionDefault from "SearchListSection" /* 19516 */;
+import SmartSearchRowDefault from "SmartSearchRow" /* 19517 */;
+import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 19534 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchConstants from "SearchConstants" /* 9950 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -41,7 +41,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp4;
-const ErrorScreenDefault = tmp4(19096);
+const ErrorScreenDefault = tmp4(19468);
 function keyExtractor(type) {
   let key;
   const type2 = type.type;
@@ -309,3 +309,4 @@ const memoResult = react.memo(function SearchList(arg0) {
 const result = size.fileFinishedImporting("modules/search/native/components/list/SearchList.tsx");
 
 export default memoResult;
+export const SEARCH_LIST_BOTTOM_PADDING = 16;

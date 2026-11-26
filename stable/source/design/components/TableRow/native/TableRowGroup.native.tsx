@@ -1,22 +1,22 @@
-// Module ID: 7159
-// Function ID: 7160
+// Module ID: 7746
+// Function ID: 7747
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 5170, 575, 5783, 5756, 7068, 7072, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 5892, 7453, 7444, 2]
 // Exports: TableRowGroup
 
-// Module 7159 (TableRowGroup)
+// Module 7746 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5756 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import TableRowDivider from "TableRowDivider" /* 7068 */;
-import react2 from "react" /* 7072 */;
+import useToken from "useToken" /* 5892 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import react2 from "react" /* 7444 */;
+import TableRowDivider from "TableRowDivider" /* 7453 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-let c1, importDefault;
+let c2, dependencyMap;
 
 let hasOwnProperty;
 let metroImportDefault;
@@ -48,13 +48,14 @@ const result = size.fileFinishedImporting("design/components/TableRow/native/Tab
 
 export { TableRowGroupTitle };
 export function TableRowGroup(children) {
+  let adjustSpacingForDragHandle;
   let adjustSpacingForIcon;
   let description;
   let hasTrailingText;
   let helperText;
   let items;
   let title;
-  ({ title, description, helperText, hasIcons: require, hasTrailingText } = children);
+  ({ title, description, helperText, hasIcons: require, isSortable: importDefault, hasTrailingText } = children);
   children = children.children;
   if (hasTrailingText === undefined) {
     hasTrailingText = false;
@@ -63,12 +64,13 @@ export function TableRowGroup(children) {
   if (str === undefined) {
     str = "none";
   }
+  dependencyMap = undefined;
   const accessibilityLabel = children.accessibilityLabel;
   let tmp = closure_8();
   let tmp2 = require;
   let tmp3 = dependencyMap;
   let obj = useToken;
-  importDefault = false;
+  dependencyMap = false;
   const Children = react.Children;
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_GROUP_HELPER_TEXT_STYLE);
   const mapped = Children.map(children, (arg0) => {
@@ -76,14 +78,14 @@ export function TableRowGroup(children) {
     let tmp = null;
     if (null != arg0) {
       let tmp3;
-      const tmp2 = c1;
+      const tmp2 = c2;
       if (tmp2) {
         const obj = { children: items };
-        const obj2 = { adjustSpacingForIcon: require };
+        const obj2 = { adjustSpacingForIcon: require, adjustSpacingForDragHandle: importDefault };
         items = [hasOwnProperty(TableRowDivider.TableRowDivider, obj2), arg0];
         tmp3 = metroImportDefault(metroRequire, obj);
       } else {
-        c1 = true;
+        c2 = true;
         tmp3 = arg0;
       }
       tmp = tmp3;

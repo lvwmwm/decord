@@ -1,13 +1,13 @@
-// Module ID: 7393
-// Function ID: 7394
+// Module ID: 7891
+// Function ID: 7892
 // Name: useGuildRoleMemberCounts
-// Dependencies: [19, 7394, 504, 7395, 2]
+// Dependencies: [19, 7892, 504, 7893, 2]
 // Exports: default
 
-// Module 7393 (useGuildRoleMemberCounts)
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7395 */;
+// Module 7891 (useGuildRoleMemberCounts)
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7893 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7394 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

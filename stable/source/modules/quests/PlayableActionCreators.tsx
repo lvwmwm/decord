@@ -1,12 +1,12 @@
-// Module ID: 20556
-// Function ID: 20557
+// Module ID: 20896
+// Function ID: 20897
 // Name: PlayableActionCreators
-// Dependencies: [5, 1072, 7750, 7975, 7951, 1282, 572, 6612, 2]
+// Dependencies: [5, 1072, 8665, 8828, 8804, 1285, 572, 6748, 2]
 // Exports: claimPlayableReward
 
-// Module 20556 (PlayableActionCreators)
+// Module 20896 (PlayableActionCreators)
 import Constants from "Constants" /* 1072 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7750 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8665 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

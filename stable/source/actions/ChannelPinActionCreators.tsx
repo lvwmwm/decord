@@ -1,11 +1,11 @@
-// Module ID: 14799
-// Function ID: 14800
+// Module ID: 12648
+// Function ID: 12649
 // Name: ChannelPinActionCreators
-// Dependencies: [5, 14800, 1072, 8304, 1282, 6611, 1113, 6122, 572, 2]
+// Dependencies: [5, 12649, 1072, 8864, 1285, 6747, 1113, 6258, 572, 2]
 
-// Module 14799 (ChannelPinActionCreators)
+// Module 12648 (ChannelPinActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 14800 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 12649 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

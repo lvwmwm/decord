@@ -1,13 +1,13 @@
-// Module ID: 18200
-// Function ID: 18201
+// Module ID: 18487
+// Function ID: 18488
 // Name: useCollectiblesShopDeepLinkProps
-// Dependencies: [19, 7829, 7868, 504, 7840, 2]
+// Dependencies: [19, 8485, 8525, 504, 8496, 2]
 // Exports: useCollectiblesShopDeepLinkProps
 
-// Module 18200 (useCollectiblesShopDeepLinkProps)
+// Module 18487 (useCollectiblesShopDeepLinkProps)
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7829 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 7868 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 8525 */;
 import size from "module_2" /* 2 */;
 
 const useMemo = react.useMemo;

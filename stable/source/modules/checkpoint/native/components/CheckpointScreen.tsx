@@ -1,18 +1,18 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 14272
+// Function ID: 14273
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 6231, 21, 575, 5170, 1493, 1627, 2]
+// Dependencies: [19, 17, 6367, 21, 575, 5306, 1496, 1630, 2]
 // Exports: default, useCheckpointScreenContentHeight, useCheckpointScreenFrame
 
-// Module 13908 (CheckpointScreen)
+// Module 14272 (CheckpointScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6231 */;
-import createStyles from "createStyles" /* 5170 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -40,16 +40,17 @@ export default function CheckpointScreen(centered) {
   if (flag === undefined) {
     flag = false;
   }
+  const contentContainerStyle = centered.contentContainerStyle;
   const tmp = closure_11();
-  const tmp2 = flag(1627)();
+  const tmp2 = flag(1630)();
   dependencyMap = tmp2;
-  size = flag(1493)({ ignoreKeyboard: true });
+  size = flag(1496)({ ignoreKeyboard: true });
   const width = size.width;
   const height = size.height;
   const items = [tmp2, flag, width, height];
   let obj = { style: tmp.container, children: tmp4(tmp6, obj2) };
   obj2 = { style: tmp.scroll, contentContainerStyle: items1, showsVerticalScrollIndicator: false, children };
-  items1 = [tmp.scrollContent, , ];
+  items1 = [tmp.scrollContent, , , ];
   const memo = width.useMemo(() => {
     let bottom;
     let num5;
@@ -86,9 +87,10 @@ export default function CheckpointScreen(centered) {
   }
   items1[1] = flag;
   items1[2] = memo;
+  items1[3] = contentContainerStyle;
   return jsx(tmp5, obj);
 };
-export function useCheckpointScreenContentHeight() {
+export function useCheckpointScreenContentHeight(arg0) {
   let diff;
   let flag = arg0;
   if (arg0 === undefined) {

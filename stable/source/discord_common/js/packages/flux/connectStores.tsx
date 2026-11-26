@@ -11,14 +11,14 @@ import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let Component, applyArgumentsResult, attachResult, batchedStoreListener, c1, c2, clearResult, closure_0, detachResult, listener, memoizedGetStateFromStores, merged, merged1, obj;
+let Component, applyArgumentsResult, attachResult, batchedStoreListener, c2, clearResult, closure_0, detachResult, listener, memoizedGetStateFromStores, merged, merged1, obj;
 
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/connectStores.tsx");
 
 export default function connectStores(items, arg1, arg2) {
   const clear = () => {
-    c1 = null;
+    let c1 = null;
     c2 = null;
   };
   if (null != arg2) {
@@ -46,13 +46,13 @@ export default function connectStores(items, arg1, arg2) {
             applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
             closure_0 = applyArgumentsResult;
             closure_0 = closure_1;
-            memoizedFunction = function memoizedFunction() { /* body not rendered: F80229 */ };
+            memoizedFunction = function memoizedFunction() { /* body not rendered: F82131 */ };
             c1 = null;
             c2 = null;
-            memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F80228 */ };
-            memoizedFunction.clear = function clear() { /* body not rendered: F80230 */ };
+            memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F82130 */ };
+            memoizedFunction.clear = function clear() { /* body not rendered: F82132 */ };
             applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-            batchedStoreListener = new closure_0(closure_3_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F141760 */ });
+            batchedStoreListener = new closure_0(closure_3_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F144889 */ });
             applyArgumentsResult.listener = batchedStoreListener;
             return applyArgumentsResult;
           }
@@ -102,13 +102,13 @@ export default function connectStores(items, arg1, arg2) {
         applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
         closure_0 = applyArgumentsResult;
         closure_0 = closure_1;
-        memoizedFunction = function memoizedFunction() { /* body not rendered: F80229 */ };
+        memoizedFunction = function memoizedFunction() { /* body not rendered: F82131 */ };
         c1 = null;
         c2 = null;
-        memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F80228 */ };
-        memoizedFunction.clear = function clear() { /* body not rendered: F80230 */ };
+        memoizedFunction.getCachedResult = function getCachedResult() { /* body not rendered: F82130 */ };
+        memoizedFunction.clear = function clear() { /* body not rendered: F82132 */ };
         applyArgumentsResult.memoizedGetStateFromStores = memoizedFunction;
-        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F141761 */ });
+        batchedStoreListener = new closure_0(closure_2[3]).BatchedStoreListener(closure_0, function() { /* body not rendered: F144890 */ });
         applyArgumentsResult.listener = batchedStoreListener;
         return applyArgumentsResult;
       }

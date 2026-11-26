@@ -1,8 +1,8 @@
-// Module ID: 9830
-// Function ID: 9831
+// Module ID: 10158
+// Function ID: 10159
 // Dependencies: [2]
 
-// Module 9830
+// Module 10158
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/reward_tile_v3_mobile.mp4.js");

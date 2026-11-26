@@ -1,24 +1,24 @@
-// Module ID: 11107
-// Function ID: 11108
+// Module ID: 13160
+// Function ID: 13161
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1385, 6932, 11019, 1072, 11025, 1282, 11028, 572, 8856, 11108, 11058, 11110, 2]
+// Dependencies: [5, 1388, 7017, 7377, 1072, 7383, 1285, 7329, 572, 7350, 12270, 7394, 13161, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 11107 (ConjurePublishActionCreators)
+// Module 13160 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 11025 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11058 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11108 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11110 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 7383 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12270 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 13161 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11019 */;
+import UserStore from "UserStore" /* 1388 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7377 */;
 import size from "module_2" /* 2 */;
 
-let also_remove_preview_bot, closure_4, ok;
+let also_remove_preview_bot, closure_4, delete_channels, ok;
 
 function unpublishProject() {
   return obj(...arguments);
@@ -32,6 +32,7 @@ let obj = function _unpublishProject() {
     const iter = (async (arg0, value) => {
       let c1;
       let c2;
+      let c3;
       let obj7;
       if (c7 === 2) {
         c7 = 3;
@@ -55,13 +56,14 @@ let obj = function _unpublishProject() {
               c7 = 3;
               return { value, done: true };
             } else {
-              closure_3 = tmp;
+              let closure_3 = tmp;
               guild_id = undefined;
               also_remove_preview_bot = undefined;
-              ({ guildId: c1, alsoRemovePreviewBot: c2 } = closure_1);
+              delete_channels = undefined;
+              ({ guildId: c1, alsoRemovePreviewBot: c2, deleteChannels: c3 } = closure_1);
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -77,7 +79,7 @@ let obj = function _unpublishProject() {
               const post = HTTP.post;
               c6 = 3;
               c7 = 1;
-              obj7 = { guild_id, also_remove_preview_bot };
+              obj7 = { guild_id, also_remove_preview_bot, delete_channels };
               const obj8 = { value: post(request), done: false };
               return obj8;
             }
@@ -260,7 +262,7 @@ obj = function _refreshPublishedProject() {
             obj8 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

@@ -1,74 +1,123 @@
 // Module ID: 10619
 // Function ID: 10620
-// Dependencies: [41, 42, 93, 95, 98, 10607, 10480, 10481, 10609]
+// Dependencies: []
+// Exports: bool, exists, hash, isBytes, number, output
 
 // Module 10619
-import REGEX_PARTS from "REGEX_PARTS" /* 10607 */;
-import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10609 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
+function number(NumberResult) {
+  const error = new Error("positive integer expected, not " + NumberResult);
+  throw error;
 }
-class RUTimeUnitCasualRelativeFormatParser {
-  constructor() {
-    let constructResult;
+function bool(flag) {
+  if (typeof flag !== "boolean") {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
     const self = this;
-    _classCallCheck(this, RUTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(RUTimeUnitCasualRelativeFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    const self2 = this;
+    const error = new Error("boolean expected, not " + flag);
+    throw error;
   }
 }
-_inherits(RUTimeUnitCasualRelativeFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
-const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(\u044D\u0442\u0438|\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435|\u043F\u0440\u043E\u0448\u043B\u044B\u0435|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435|\u043F\u043E\u0441\u043B\u0435|\u0441\u043F\u0443\u0441\u0442\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")";
+function bytes(obj) {
+  const substr = [...arguments].slice();
+  let tmp = obj instanceof Uint8Array;
+  if (!tmp) {
+    tmp = null != obj && typeof obj === "object" && "Uint8Array" === obj.constructor.name;
+    const tmp3 = null != obj && typeof obj === "object" && "Uint8Array" === obj.constructor.name;
   }
-};
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[2]);
-      if ("\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435" !== formatted) {
-        let reverseDurationResult;
-        if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0435" !== formatted) {
-          reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(10481).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+  if (tmp) {
+    if (substr.length > 0) {
+      if (!substr.includes(obj.length)) {
+        const _Error2 = Error;
+        const _HermesInternal = HermesInternal;
+        const self3 = this;
+        const self4 = this;
+        const error = new Error("Uint8Array expected of length " + substr + ", not of length=" + obj.length);
+        throw error;
       }
-      reverseDurationResult = tmp2(10480).reverseDuration(parseDurationResult);
+    }
+  } else {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error1 = new Error("Uint8Array expected");
+    throw error1;
+  }
+}
+function hash(create) {
+  if (typeof create === "function") {
+    if (typeof create.create === "function") {
+      const outputLen = create.outputLen;
+      const _Number2 = Number;
+      if (Number.isSafeInteger(outputLen)) {
+        if (outputLen >= 0) {
+          const blockLen = create.blockLen;
+          const _Number = Number;
+          const _Error = Error;
+          const _HermesInternal = HermesInternal;
+          const self = this;
+          const self2 = this;
+          const error = new Error("positive integer expected, not " + blockLen);
+          throw error;
+        }
+      }
+      const _Error2 = Error;
+      const _HermesInternal2 = HermesInternal;
+      const self3 = this;
+      const self4 = this;
+      const error1 = new Error("positive integer expected, not " + outputLen);
+      throw error1;
     }
   }
-];
+  const error2 = new Error("Hash should be wrapped by utils.wrapConstructor");
+  throw error2;
+}
+function exists(destroyed) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = true;
+  }
+  if (destroyed.destroyed) {
+    const _Error2 = Error;
+    const self3 = this;
+    const self4 = this;
+    const error = new Error("Hash instance has been destroyed");
+    throw error;
+  } else if (flag) {
+    if (destroyed.finished) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error1 = new Error("Hash#digest() has already been called");
+      throw error1;
+    }
+  }
+}
+function output(arg0, outputLen) {
+  bytes(arg0);
+  outputLen = outputLen.outputLen;
+  if (arg0.length < outputLen) {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
+    const error = new Error("digestInto() expects output buffer of length at least " + outputLen);
+    throw error;
+  }
+}
 
-export default _createClass(RUTimeUnitCasualRelativeFormatParser, items);
+export function isBytes(obj) {
+  let tmp = obj instanceof Uint8Array;
+  if (!tmp) {
+    tmp = null != obj && typeof obj === "object" && "Uint8Array" === obj.constructor.name;
+    const tmp3 = null != obj && typeof obj === "object" && "Uint8Array" === obj.constructor.name;
+  }
+  return tmp;
+}
+export { number };
+export { bool };
+export { bytes };
+export { hash };
+export { exists };
+export { output };
+export default { number, bool, bytes, hash, exists, output };

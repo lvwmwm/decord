@@ -1,11 +1,11 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7805
+// Function ID: 7806
 // Name: safetyScannedUploadSurfaces
-// Dependencies: [7253, 2]
+// Dependencies: [7806, 2]
 // Exports: getSafetyScannedUploadSurfaceForProfileCustomization
 
-// Module 7252 (safetyScannedUploadSurfaces)
-import ImageCroppingConstants from "ImageCroppingConstants" /* 7253 */;
+// Module 7805 (safetyScannedUploadSurfaces)
+import ImageCroppingConstants from "ImageCroppingConstants" /* 7806 */;
 import size from "module_2" /* 2 */;
 
 const UploadTypes = ImageCroppingConstants.UploadTypes;

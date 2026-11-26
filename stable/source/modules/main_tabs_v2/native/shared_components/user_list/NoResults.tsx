@@ -1,15 +1,15 @@
-// Module ID: 13667
-// Function ID: 13668
+// Module ID: 11788
+// Function ID: 11789
 // Name: NoResults
-// Dependencies: [19, 17, 21, 5170, 5783, 2]
+// Dependencies: [19, 17, 21, 5306, 5919, 2]
 // Exports: default
 
-// Module 13667 (NoResults)
-import Text_Text from "Text/Text" /* 5783 */;
+// Module 11788 (NoResults)
+import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c2;

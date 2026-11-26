@@ -1,16 +1,16 @@
-// Module ID: 14073
-// Function ID: 14074
+// Module ID: 14657
+// Function ID: 14658
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 5171, 21, 5170, 575, 5756, 504, 1377, 1652, 7076, 5777, 2]
+// Dependencies: [19, 5307, 21, 5306, 575, 5892, 504, 1380, 1655, 7428, 5913, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 14073 (PremiumAnimatedGiftButton)
+// Module 14657 (PremiumAnimatedGiftButton)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import createStyles from "createStyles" /* 5170 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,19 +81,19 @@ export function PremiumAnimatedGiftButton(arg0) {
     }
   }, items1);
   let FadeOut;
-  const View = stateFromStores(1652).View;
+  const View = stateFromStores(1655).View;
   if (!stateFromStores) {
-    FadeOut = tmp(1652).FadeOut;
+    FadeOut = tmp(1655).FadeOut;
   }
   const items2 = [tmp7.containerRefresh, style, ];
-  const PressableOpacity = tmp(7076).PressableOpacity;
+  const PressableOpacity = tmp(7428).PressableOpacity;
   if (active) {
     active = !disabled;
   }
   if (active) {
     active = activeStyle;
   }
-  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5777), obj8) });
+  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5913), obj8) });
   items2[2] = active;
   tmp14 = undefined;
   if (bound > 0) {

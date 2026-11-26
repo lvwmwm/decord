@@ -1,21 +1,21 @@
-// Module ID: 18422
-// Function ID: 18423
+// Module ID: 18716
+// Function ID: 18717
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5170, 575, 5342, 9946, 18423, 5756, 5231, 10887, 18424, 19214, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5478, 9062, 18717, 5892, 5367, 10271, 18718, 19587, 2]
 
-// Module 18422 (MainTabs)
+// Module 18716 (MainTabs)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5231 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5342 */;
-import useToken from "useToken" /* 5756 */;
-import useActiveTheme from "useActiveTheme" /* 9946 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10887 */;
-import useAppFrameDefault from "useAppFrame" /* 18423 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18424 */;
+import native from "native" /* 5367 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5478 */;
+import useToken from "useToken" /* 5892 */;
+import useActiveTheme from "useActiveTheme" /* 9062 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
+import useAppFrameDefault from "useAppFrame" /* 18717 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18718 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -60,7 +60,7 @@ const memoResult = react.memo(function MainTabs() {
   if (left > 0) {
     tmp10 = null;
     if (null == styles.container) {
-      tmp10 = hasOwnProperty(tmp(10887), { absolute: true, mix: true });
+      tmp10 = hasOwnProperty(tmp(10271), { absolute: true, mix: true });
     }
   } else {
     tmp10 = null;
@@ -85,7 +85,7 @@ const memoResult = react.memo(function MainTabs() {
   items6 = [metroRequire(ThemeContextProvider, obj4), ];
   let tmp12Result2 = null;
   if (null != styles.container) {
-    tmp12Result2 = tmp12(tmp(19214), {});
+    tmp12Result2 = tmp12(tmp(19587), {});
   }
   items6[1] = tmp12Result2;
   return metroRequire(React3, obj3);

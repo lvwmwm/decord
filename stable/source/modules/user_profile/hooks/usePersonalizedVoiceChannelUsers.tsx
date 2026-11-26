@@ -1,15 +1,15 @@
-// Module ID: 15145
-// Function ID: 15146
+// Module ID: 15745
+// Function ID: 15746
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [7910, 6829, 1385, 5928, 1072, 504, 2]
+// Dependencies: [8553, 6836, 1388, 6064, 1072, 504, 2]
 // Exports: default
 
-// Module 15145 (usePersonalizedVoiceChannelUsers)
+// Module 15745 (usePersonalizedVoiceChannelUsers)
 import Constants from "Constants" /* 1072 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7910 */;
-import ConsentStore from "ConsentStore" /* 6829 */;
-import UserStore from "UserStore" /* 1385 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5928 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8553 */;
+import ConsentStore from "ConsentStore" /* 6836 */;
+import UserStore from "UserStore" /* 1388 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

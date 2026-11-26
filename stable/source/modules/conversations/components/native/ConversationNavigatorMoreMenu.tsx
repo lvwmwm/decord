@@ -1,22 +1,22 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 9141
+// Function ID: 9142
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [19, 17, 10003, 21, 5170, 575, 504, 1113, 10023, 10002, 10005, 5868, 10025, 5883, 7451, 10027, 10029, 8131, 9879, 2]
+// Dependencies: [19, 17, 9122, 21, 5306, 575, 504, 1113, 9142, 9121, 9124, 6004, 9144, 6019, 7943, 9146, 9148, 7988, 7420, 2]
 // Exports: default
 
-// Module 10022 (ConversationNavigatorMoreMenu)
+// Module 9141 (ConversationNavigatorMoreMenu)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import LinkIcon from "LinkIcon" /* 5883 */;
-import IconButton2 from "IconButton" /* 8131 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9879 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 10023 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 10025 */;
+import LinkIcon from "LinkIcon" /* 6019 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7420 */;
+import IconButton2 from "IconButton" /* 7988 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 9142 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 9144 */;
 import react_mod from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 10003 */;
-import createStyles from "createStyles" /* 5170 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9122 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

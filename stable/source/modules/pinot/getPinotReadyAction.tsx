@@ -1,11 +1,11 @@
-// Module ID: 15990
-// Function ID: 15991
+// Module ID: 16265
+// Function ID: 16266
 // Name: getPinotReadyAction
-// Dependencies: [11500, 2]
+// Dependencies: [12337, 2]
 // Exports: getPinotReadyAction
 
-// Module 15990 (getPinotReadyAction)
-import PinotMemberSettingStore from "PinotMemberSettingStore" /* 11500 */;
+// Module 16265 (getPinotReadyAction)
+import PinotMemberSettingStore from "PinotMemberSettingStore" /* 12337 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/pinot/getPinotReadyAction.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 7203
-// Function ID: 7204
+// Module ID: 7641
+// Function ID: 7642
 // Name: BaseTextField
-// Dependencies: [19, 21, 1377, 7201, 5338, 7204, 7207, 5337, 2]
+// Dependencies: [19, 21, 1380, 7639, 5474, 7642, 7645, 5473, 2]
 // Exports: BaseTextField
 
-// Module 7203 (BaseTextField)
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import mergeProps from "mergeProps" /* 5337 */;
-import useFocus from "useFocus" /* 5338 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7201 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 7207 */;
+// Module 7641 (BaseTextField)
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import mergeProps from "mergeProps" /* 5473 */;
+import useFocus from "useFocus" /* 5474 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7639 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 7645 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -85,11 +85,11 @@ export function BaseTextField(onChangeText) {
     }
   }, items);
   const obj6 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp(7201).InputFieldContainer;
+  const InputFieldContainer = tmp(7639).InputFieldContainer;
   const merged = Object.assign(iter);
   items1 = [iter.leading, , ];
   const obj7 = { value: replaced, defaultValue: replaced1, onChangeText: callback, ref: tmpResult10.mergeRefs(ref1, ref), style: items2, placeholderTextColor: inputStyles.placeholderText.color };
-  const NativeTextInput = tmp(7204).NativeTextInput;
+  const NativeTextInput = tmp(7642).NativeTextInput;
   const merged1 = Object.assign(tmp6);
   const propsForNativeTextInput = _objectWithoutProperties.propsForNativeTextInput;
   _objectWithoutProperties;

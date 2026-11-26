@@ -1,28 +1,28 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 10537
+// Function ID: 10538
 // Name: ConjureProjectsSheet
-// Dependencies: [32, 19, 21, 5170, 575, 13257, 1627, 9798, 5753, 11028, 7459, 7415, 1113, 4026, 8131, 11142, 5424, 7315, 7159, 7071, 12317, 11136, 13260, 2]
+// Dependencies: [32, 19, 21, 5306, 575, 10538, 1630, 10514, 5889, 7329, 7951, 7913, 1113, 4131, 7988, 10540, 5560, 7825, 7746, 7443, 10543, 10536, 10550, 2]
 // Exports: default
 
-// Module 13256 (ConjureProjectsSheet)
+// Module 10537 (ConjureProjectsSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import useMountEffectDefault from "useMountEffect" /* 5753 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7415 */;
-import ActionSheet2 from "ActionSheet" /* 7459 */;
-import useConjureEntryPointPlacementDefault from "useConjureEntryPointPlacement" /* 9798 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11136 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11142 */;
-import ConjureProjectIcon from "ConjureProjectIcon" /* 12317 */;
-import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 13257 */;
-import ConjureProjectGroupListDefault from "ConjureProjectGroupList" /* 13260 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
+import ActionSheet2 from "ActionSheet" /* 7951 */;
+import useConjureEntryPointPlacementDefault from "useConjureEntryPointPlacement" /* 10514 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10536 */;
+import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 10538 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10540 */;
+import ConjureProjectIcon from "ConjureProjectIcon" /* 10543 */;
+import ConjureProjectGroupListDefault from "ConjureProjectGroupList" /* 10550 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -67,36 +67,36 @@ export default function ConjureProjectsSheet() {
     obj.listProjects();
   });
   const ActionSheet = ActionSheet2.ActionSheet;
-  let obj = { title: intl.string(_modDef4026.uk6jhJ), trailing: tmp10Result };
+  let obj = { title: intl.string(_modDef4131.uk6jhJ), trailing: tmp10Result };
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl7.intl;
   tmp10Result = undefined;
   if ("you_screen" === placement) {
-    const obj2 = { icon: AssetRegistryDefault, variant: "tertiary", size: "sm", accessibilityLabel: intl2.string(_modDef4026.qCBh6V), onPress: confirmPin };
-    const IconButton = tmp11(8131).IconButton;
+    const obj2 = { icon: AssetRegistryDefault, variant: "tertiary", size: "sm", accessibilityLabel: intl2.string(_modDef4131.qCBh6V), onPress: confirmPin };
+    const IconButton = tmp11(7988).IconButton;
     intl2 = tmp11(1113).intl;
     tmp10Result = tmp10(IconButton, obj2);
   }
   const obj3 = { scrollable: true, startExpanded: true, header: hasOwnProperty(BottomSheetTitleHeader, obj), children: metroRequire(BottomSheetScrollView, obj4) };
   obj4 = { contentContainerStyle: tmp3.scrollContent, scrollIndicatorInsets: { bottom }, keyboardShouldPersistTaps: "handled", children: items };
-  BottomSheetScrollView = tmp11(5424).BottomSheetScrollView;
-  const obj5 = { size: "md", onChange: tmp6, placeholder: intl3.string(_modDef4026["2y8sUh"]), accessibilityLabel: intl4.string(_modDef4026.u0kEN9) };
-  const SearchBar = tmp11(7315).SearchBar;
+  BottomSheetScrollView = tmp11(5560).BottomSheetScrollView;
+  const obj5 = { size: "md", onChange: tmp6, placeholder: intl3.string(_modDef4131["2y8sUh"]), accessibilityLabel: intl4.string(_modDef4131.u0kEN9) };
+  const SearchBar = tmp11(7825).SearchBar;
   intl3 = tmp11(1113).intl;
   intl4 = tmp11(1113).intl;
   items = [hasOwnProperty(SearchBar, obj5), , ];
   const obj6 = { hasIcons: true, children: hasOwnProperty(TableRow, obj7) };
-  const TableRowGroup = tmp11(7159).TableRowGroup;
+  const TableRowGroup = tmp11(7746).TableRowGroup;
   obj7 = {
-    label: intl5.string(_modDef4026.bnVYYC),
-    subLabel: intl6.string(_modDef4026.gnzLwZ),
+    label: intl5.string(_modDef4131.bnVYYC),
+    subLabel: intl6.string(_modDef4131.gnzLwZ),
     icon: hasOwnProperty(ConjureProjectIcon.ConjureNewProjectIcon, { size: "list" }),
     arrow: true,
     onPress() {
       return openConjureHomeScreenDefault(undefined, { focusComposer: true });
     }
   };
-  TableRow = tmp11(7071).TableRow;
+  TableRow = tmp11(7443).TableRow;
   intl5 = tmp11(1113).intl;
   intl6 = tmp11(1113).intl;
   items[1] = hasOwnProperty(TableRowGroup, obj6);

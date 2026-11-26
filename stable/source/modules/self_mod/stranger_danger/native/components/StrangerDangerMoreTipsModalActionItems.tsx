@@ -1,20 +1,20 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 12057
+// Function ID: 12058
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 5112, 1385, 10955, 21, 504, 5226, 11441, 7585, 1113, 7197, 7195, 10038, 7159, 11463, 2]
+// Dependencies: [32, 19, 5248, 1388, 10896, 21, 504, 5362, 12038, 8137, 1113, 7635, 7633, 9157, 7746, 12058, 2]
 // Exports: default
 
-// Module 11462 (StrangerDangerMoreTipsModalActionItems)
+// Module 12057 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5226 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7585 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10955 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11441 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10896 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 12038 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserStore from "UserStore" /* 1385 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
@@ -92,9 +92,9 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(7197).EyeIcon;
+      let EyeSlashIcon = tmp11(7635).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(7195).EyeSlashIcon;
+      EyeSlashIcon = tmp11(7633).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

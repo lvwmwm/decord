@@ -1,32 +1,32 @@
-// Module ID: 12267
-// Function ID: 12268
+// Module ID: 13128
+// Function ID: 13129
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 17, 5082, 5041, 5102, 6932, 7486, 1072, 21, 5170, 575, 7097, 1113, 4026, 7053, 504, 7490, 12268, 1499, 13064, 12282, 12269, 6967, 9800, 11028, 13065, 13230, 13270, 12457, 7264, 2]
+// Dependencies: [32, 19, 17, 5218, 5177, 5238, 7017, 7233, 1072, 21, 5306, 575, 7493, 1113, 4131, 7720, 504, 7237, 13129, 1502, 13815, 13141, 13130, 7053, 10516, 7329, 13816, 13981, 14003, 13345, 7490, 2]
 // Exports: default
 
-// Module 12267 (ConjureStandaloneScreen)
+// Module 13128 (ConjureStandaloneScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef4026 from "module_4026" /* 4026 */;
-import GuildIcon from "GuildIcon" /* 7053 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 7097 */;
-import ConjureActivity from "ConjureActivity" /* 7490 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 12268 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12282 */;
-import selectConjureChannelDefault from "selectConjureChannel" /* 13064 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 13270 */;
+import _modDef4131 from "module_4131" /* 4131 */;
+import ConjureActivity from "ConjureActivity" /* 7237 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7493 */;
+import GuildIcon from "GuildIcon" /* 7720 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 13129 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 13141 */;
+import selectConjureChannelDefault from "selectConjureChannel" /* 13815 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 14003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7486 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7233 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -47,11 +47,11 @@ function ServerProjectsHeader(guild) {
   const tmp = closure_15();
   const NavigatorHeader = NavigatorHeader2.NavigatorHeader;
   if (null == guild) {
-    const obj = { title: intl.string(_modDef4026.uk6jhJ) };
+    const obj = { title: intl.string(_modDef4131.uk6jhJ) };
     intl = tmp3(1113).intl;
     obj2 = obj;
   } else {
-    obj2 = { title: guild.name, subtitle: intl2.string(_modDef4026.IF7qLs), icon: authStore2(View, obj3) };
+    obj2 = { title: guild.name, subtitle: intl2.string(_modDef4131.IF7qLs), icon: authStore2(View, obj3) };
     intl2 = tmp3(1113).intl;
     obj3 = { style: tmp.headerGuildIcon, children: authStore2(tmp8, obj4) };
     obj4 = { guild, size: GuildIcon.GuildIconSizes.XSMALL_20, selected: false };
@@ -80,7 +80,7 @@ function GlobalChatScene(projectId) {
     }
     return result;
   }, items1);
-  return closure_12(fallbackGuildId(12268), { guildId, projectId, entryPoint, onExit });
+  return closure_12(fallbackGuildId(13129), { guildId, projectId, entryPoint, onExit });
 }
 function RoutedProjectOpener(guildId) {
   guildId = guildId.guildId;
@@ -255,8 +255,8 @@ export default function ConjureStandaloneScreen(guildId) {
       tmp4 = { key: num, projectId, entryPoint };
       const obj2 = { key: num, projectId, entryPoint };
     } else if (null != projectId) {
-      tmp4 = { key: projectId, projectId, entryPoint: "r" };
-      const obj = { key: projectId, projectId, entryPoint: "r" };
+      tmp4 = { key: projectId, projectId, entryPoint: "Array" };
+      const obj = { key: projectId, projectId, entryPoint: "Array" };
     }
     return tmp4;
   }, items11);
@@ -273,7 +273,7 @@ export default function ConjureStandaloneScreen(guildId) {
       let intl;
       let tmpResult;
       if (closure_5) {
-        const obj2 = { title: intl.string(_modDef4026.uk6jhJ) };
+        const obj2 = { title: intl.string(_modDef4131.uk6jhJ) };
         const NavigatorHeader = NavigatorHeader2.NavigatorHeader;
         intl = intl3.intl;
         tmpResult = tmp(NavigatorHeader, obj2);
@@ -287,14 +287,14 @@ export default function ConjureStandaloneScreen(guildId) {
       let tmp3Result;
       const obj = { guildId, inline, request: memo, sceneProjectId: "Array", handledKeyRef };
       const children = [authStore2(RoutedProjectOpener, obj), ];
-      const tmp = authStore3;
+      const tmp = gesture;
       const tmp2 = map1;
       if (closure_5) {
         const obj2 = { forMeGuildId: guildId, focusRequest };
-        tmp3Result = tmp3(tmp5(13065), obj2);
+        tmp3Result = tmp3(tmp5(13816), obj2);
       } else {
         const obj3 = { guildId };
-        tmp3Result = tmp3(tmp5(13230), obj3);
+        tmp3Result = tmp3(tmp5(13981), obj3);
       }
       children[1] = tmp3Result;
       return tmp(tmp2, { children });
@@ -316,7 +316,7 @@ export default function ConjureStandaloneScreen(guildId) {
       const children = [, ];
       const obj = { guildId, inline, request: memo, sceneProjectId: projectId, handledKeyRef };
       children[0] = authStore2(RoutedProjectOpener, obj);
-      const tmp = authStore3;
+      const tmp = gesture;
       const tmp2 = map1;
       const tmp5 = closure_5;
       if (tmp5) {
@@ -346,7 +346,7 @@ export default function ConjureStandaloneScreen(guildId) {
       const obj2 = { guildId, inline, request: memo, sceneProjectId: projectId, handledKeyRef };
       items[0] = authStore2(RoutedProjectOpener, obj2);
       items[1] = authStore2(ConjureDebugSceneDefault, { projectId });
-      return authStore3(map1, obj);
+      return gesture(map1, obj);
     }
   };
   const first = navigation(obj2.useState(() => {

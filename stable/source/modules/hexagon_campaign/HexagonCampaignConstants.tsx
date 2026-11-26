@@ -1,16 +1,16 @@
-// Module ID: 5195
-// Function ID: 5196
+// Module ID: 5331
+// Function ID: 5332
 // Name: HexagonCampaignConstants
-// Dependencies: [1387, 1395, 1396, 5196, 1398, 1196, 5197, 2]
+// Dependencies: [1390, 1398, 1399, 5332, 1401, 1196, 5333, 2]
 
-// Module 5195 (HexagonCampaignConstants)
+// Module 5331 (HexagonCampaignConstants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import DisplayNameFont from "DisplayNameFont" /* 1395 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import user from "user" /* 1398 */;
-import AppIconTypes from "AppIconTypes" /* 5196 */;
-import HexagonCampaignDates from "HexagonCampaignDates" /* 5197 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import DisplayNameFont from "DisplayNameFont" /* 1398 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
+import user from "user" /* 1401 */;
+import AppIconTypes from "AppIconTypes" /* 5332 */;
+import HexagonCampaignDates from "HexagonCampaignDates" /* 5333 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
@@ -44,6 +44,7 @@ export const HEXAGON_CAMPAIGN_DISPLAY_NAME_STYLES = frozen;
 export const HEXAGON_CAMPAIGN_LEARN_MORE_URL = "https://dis.gd/vice-city-theme-available-in-discord";
 export const HEXAGON_CAMPAIGN_QUEST_HOME_HERO_ID = "1560067021281042513";
 export const HEXAGON_CAMPAIGN_AD_CONTENT_ID = "1560067021281042513";
+export const HEXAGON_CAMPAIGN_QUEST_HOME_REDIRECT_UTM_CONTENT = "app_open";
 export const DEFAULT_HEXAGON_CAMPAIGN_CLIENT_THEME = { theme: "system" };
 export const DEFAULT_HEXAGON_CAMPAIGN_APP_ICON_ID = DEFAULT;
 export const HexagonCampaignPerk = obj2;

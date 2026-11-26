@@ -1,23 +1,23 @@
-// Module ID: 9573
-// Function ID: 9574
+// Module ID: 10416
+// Function ID: 10417
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1192, 7829, 1074, 21, 5170, 575, 9574, 7840, 9575, 8853, 9580, 9581, 1113, 5869, 7420, 9640, 9642, 504, 5177, 7076, 7841, 5783, 9643, 9646, 9648, 9645, 9649, 9651, 9656, 9667, 9576, 5406, 8851, 2171, 9654, 9694, 9695, 9697, 1266, 2]
+// Dependencies: [19, 17, 1192, 8485, 1074, 21, 5306, 575, 10417, 8496, 10418, 9409, 9520, 9460, 1113, 6005, 7918, 10419, 9517, 504, 5313, 7428, 8497, 5919, 9433, 9437, 9439, 9436, 9442, 9455, 10421, 10432, 9420, 5542, 9407, 2174, 9518, 10451, 10452, 10454, 1269, 2]
 
-// Module 9573 (CollectiblesShopCardV2)
+// Module 10416 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import v1 from "v1" /* 1266 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8851 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9576 */;
+import v1 from "v1" /* 1269 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 9407 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9420 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7829 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let PixelRatio;

@@ -1,13 +1,13 @@
-// Module ID: 20403
-// Function ID: 20404
+// Module ID: 20743
+// Function ID: 20744
 // Name: GuildRoleSettingsActionCreators
-// Dependencies: [20395, 1072, 9187, 2]
+// Dependencies: [20735, 1072, 8404, 2]
 // Exports: pushTierEditScene, pushTierTemplateSelectionScene
 
-// Module 20403 (GuildRoleSettingsActionCreators)
+// Module 20743 (GuildRoleSettingsActionCreators)
 import Constants from "Constants" /* 1072 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9187 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20395 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20735 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsSections = Constants.GuildSettingsSections;

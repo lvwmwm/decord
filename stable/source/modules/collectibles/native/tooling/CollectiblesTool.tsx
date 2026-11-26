@@ -1,28 +1,28 @@
-// Module ID: 18088
-// Function ID: 18089
+// Module ID: 18371
+// Function ID: 18372
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10714, 1385, 7829, 7844, 8880, 1072, 1387, 21, 5170, 575, 9573, 5783, 5791, 11546, 563, 10757, 18089, 1187, 14760, 2]
+// Dependencies: [32, 19, 17, 11665, 1388, 8485, 8500, 8563, 1072, 1390, 21, 5306, 575, 10416, 5919, 5927, 12381, 563, 11671, 18372, 1187, 10020, 2]
 // Exports: default
 
-// Module 18088 (CollectiblesTool)
+// Module 18371 (CollectiblesTool)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import BaseTextButton from "BaseTextButton" /* 5791 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8880 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9573 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11546 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14760 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import BaseTextButton from "BaseTextButton" /* 5927 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8563 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10020 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 10416 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 12381 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10714 */;
-import UserStore from "UserStore" /* 1385 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7829 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7844 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 11665 */;
+import UserStore from "UserStore" /* 1388 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8500 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -119,14 +119,14 @@ function FramePreviewOverrideSection() {
     str3 = str4;
   }
   const obj = { style: tmp.section, children: items };
-  const obj2 = { style: tmp.sectionHeader, children: authStore3(Text_Text.Text, obj3) };
+  const obj2 = { style: tmp.sectionHeader, children: gesture(Text_Text.Text, obj3) };
   obj3 = { variant: "heading-sm/semibold", style: tmp.sectionTitle, children: "Frame Preview Override" };
-  items = [authStore3(metroRequire, obj2), , , , ];
+  items = [gesture(metroRequire, obj2), , , , ];
   const obj4 = { variant: "body-sm/normal", style: tmp.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
-  items[1] = authStore3(Text_Text.Text, obj4);
+  items[1] = gesture(Text_Text.Text, obj4);
   const obj5 = { variant: "body-xs/normal", style: items1, children: str3 };
   items1 = [tmp.statusText, statusError];
-  items[2] = authStore3(Text_Text.Text, obj5);
+  items[2] = gesture(Text_Text.Text, obj5);
   const obj6 = {
     pillStyle: tmp.secondaryButton,
     text: "Load from device",
@@ -134,11 +134,11 @@ function FramePreviewOverrideSection() {
       closure_0();
     }
   };
-  items[3] = authStore3(BaseTextButton.BaseTextButton, obj6);
+  items[3] = gesture(BaseTextButton.BaseTextButton, obj6);
   let tmp12Result = null != tmp2;
   const tmp10 = closure_15;
   const tmp11 = metroRequire;
-  const tmp12 = authStore3;
+  const tmp12 = gesture;
   if (tmp12Result) {
     const obj7 = { pillStyle: tmp.secondaryButton, text: "Clear override", onPress: tmp4 };
     tmp12Result = tmp12(BaseTextButton.BaseTextButton, obj7);

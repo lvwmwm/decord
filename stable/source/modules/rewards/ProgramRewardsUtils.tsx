@@ -1,16 +1,16 @@
-// Module ID: 15955
-// Function ID: 15956
+// Module ID: 16231
+// Function ID: 16232
 // Name: ProgramRewardsUtils
-// Dependencies: [1385, 1387, 4794, 15956, 15957, 2171, 2]
+// Dependencies: [1388, 1390, 4929, 16232, 16233, 2174, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isProgramRewardStale
 
-// Module 15955 (ProgramRewardsUtils)
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PremiumUtils from "PremiumUtils" /* 2171 */;
-import isPastDefault from "isPast" /* 4794 */;
-import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 15956 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15957 */;
-import UserStore from "UserStore" /* 1385 */;
+// Module 16231 (ProgramRewardsUtils)
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumUtils from "PremiumUtils" /* 2174 */;
+import isPastDefault from "isPast" /* 4929 */;
+import useHasXboxMonthlyOrbsPerk from "useHasXboxMonthlyOrbsPerk" /* 16232 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 16233 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 function canFetchNitroProgramReward() {

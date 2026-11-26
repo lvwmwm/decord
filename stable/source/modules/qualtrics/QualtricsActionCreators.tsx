@@ -1,18 +1,18 @@
-// Module ID: 7592
-// Function ID: 7593
+// Module ID: 6879
+// Function ID: 6880
 // Name: QualtricsActionCreators
-// Dependencies: [32, 5, 7593, 7595, 7596, 7597, 1072, 1282, 572, 1242, 7598, 2]
+// Dependencies: [32, 5, 6880, 6882, 6883, 6884, 1072, 1285, 572, 1242, 6885, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 7592 (QualtricsActionCreators)
+// Module 6879 (QualtricsActionCreators)
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import QualtricsResponseStore from "QualtricsResponseStore" /* 7595 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import QualtricsResponseStore from "QualtricsResponseStore" /* 6882 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SurveyStore from "SurveyStore" /* 7593 */;
-import QualtricsStore from "QualtricsStore" /* 7596 */;
-import QualtricsConstants from "QualtricsConstants" /* 7597 */;
+import SurveyStore from "SurveyStore" /* 6880 */;
+import QualtricsStore from "QualtricsStore" /* 6883 */;
+import QualtricsConstants from "QualtricsConstants" /* 6884 */;
 import size from "module_2" /* 2 */;
 
 let c8, closure_3, force_survey_id, state;
@@ -364,7 +364,7 @@ obj = function _fireSurveyAction() {
               const request = { url: constants.EMBEDDED_SURVEY_ACTION, query: obj5, body: obj4, rejectWithError: true };
               c6 = 2;
               c7 = 1;
-              obj5 = { force_survey_id };
+              obj5 = { force_survey_id, supports_native: false };
               const obj6 = { value: HTTP.post(request), done: false };
               return obj6;
             }

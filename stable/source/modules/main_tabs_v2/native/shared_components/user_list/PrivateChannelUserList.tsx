@@ -1,20 +1,20 @@
-// Module ID: 12756
-// Function ID: 12757
+// Module ID: 13524
+// Function ID: 13525
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 5019, 5112, 1385, 1072, 21, 7420, 504, 12, 1380, 11812, 11819, 11818, 5756, 575, 12757, 1113, 9645, 12758, 8854, 10884, 2]
+// Dependencies: [32, 19, 17, 5155, 5248, 1388, 1072, 21, 7918, 504, 12, 1255, 12530, 12544, 12543, 5892, 575, 13525, 1113, 9436, 13526, 8476, 10577, 2]
 
-// Module 12756 (PrivateChannelUserList)
+// Module 13524 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12758 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 13526 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserStore from "UserStore" /* 1385 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let c9;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const NitroWheelIcon2 = tmp(9645);
+const NitroWheelIcon2 = tmp(9436);
 const View = react_native.View;
 ({ RelationshipTypes: c9, MAX_GROUP_DM_PARTICIPANTS: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);

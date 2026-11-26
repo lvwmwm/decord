@@ -1,23 +1,23 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 16029
+// Function ID: 16030
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 5171, 21, 5170, 575, 1113, 5874, 15809, 5777, 15810, 15811, 5783, 14409, 2]
+// Dependencies: [19, 17, 5307, 21, 5306, 575, 1113, 6010, 16030, 5913, 16031, 16032, 5919, 10771, 2]
 // Exports: default
 
-// Module 15808 (GuildBoostingMarketingTopPerksCards)
+// Module 16029 (GuildBoostingMarketingTopPerksCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5777 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15809 */;
-import _mod15810 from "module_15810" /* 15810 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15811 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5913 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16030 */;
+import _mod16031 from "module_16031" /* 16031 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16032 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ let items = [
       return intl.string(intl2.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod15810, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod16031, autoPlay: !AccessibilityStore.useReducedMotion, style };
       const tmp = LottieAnimationViewDefault;
       return hasOwnProperty(tmp, obj);
     }

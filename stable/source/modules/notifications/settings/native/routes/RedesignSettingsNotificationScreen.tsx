@@ -1,87 +1,51 @@
-// Module ID: 18329
-// Function ID: 18330
+// Module ID: 18621
+// Function ID: 18622
 // Name: RedesignSettingsNotificationScreen
-// Dependencies: [19, 17832, 8536, 21, 18330, 1113, 2992, 17833, 11717, 17835, 5753, 18331, 18335, 2]
+// Dependencies: [19, 18109, 9202, 21, 18622, 1113, 3029, 12408, 5889, 18623, 2]
 
-// Module 18329 (RedesignSettingsNotificationScreen)
+// Module 18621 (RedesignSettingsNotificationScreen)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import _modDef2992 from "module_2992" /* 2992 */;
-import useMountEffectDefault from "useMountEffect" /* 5753 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17832 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17833 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17835 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18330 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18335 */;
+import intl2 from "intl" /* 1113 */;
+import _modDef3029 from "module_3029" /* 3029 */;
+import useMountEffectDefault from "useMountEffect" /* 5889 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 18109 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18622 */;
+import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 18623 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-function getNotificationSettings() {
-  let intl;
-  let intl2;
-  let items1;
-  let items2;
-  let items3;
-  const items = [, , , ];
-  const obj = MobileNotifSettingsRouteBuilders;
-  items[0] = obj.buildOverviewCategoriesSection();
-  const obj2 = { label: intl.string(_modDef2992.nvBHcD), settings: items1 };
-  intl = intl3.intl;
-  items1 = [, , , , , , ];
-  ({ REDESIGN_IN_APP_NOTIFICATIONS: arr2[0], REDESIGN_IN_APP_MESSAGE_SOUNDS: arr2[1], REDESIGN_ANDROID_MESSAGE_NOTIFICATIONS: arr2[2], REDESIGN_IOS_NATIVE_PHONE_INTEGRATION: arr2[3], REDESIGN_ANDROID_NOTIFICATION_LIGHTS: arr2[4], REDESIGN_ANDROID_NOTIFICATION_VIBRATIONS: arr2[5], REDESIGN_ANDROID_NOTIFICATION_SOUNDS: arr2[6] } = MobileUserSettings);
-  items[1] = obj2;
-  const obj3 = { settings: items2 };
-  items2 = [MobileUserSettings.REDESIGN_EMAIL_NOTIFICATIONS];
-  items[2] = obj3;
-  const obj4 = { label: intl2.string(_modDef2992["1S8d9h"]), settings: items3 };
-  intl2 = intl3.intl;
-  items3 = [, , , , ];
-  ({ REACTION_NOTIFICATIONS: arr4[0], HIGHLIGHT_NOTIFICATIONS: arr4[1], FRIEND_ANNIVERSARY_NOTIFICATIONS: arr4[2], UPCOMING_SERVER_EVENT_NOTIFICATIONS: arr4[3], SUMMARY_REMINDER_NOTIFICATIONS: arr4[4] } = MobileUserSettings);
-  items[3] = obj4;
-  return items;
-}
 let closure_4 = AndroidNotificationSettingsStore.initializeAndroidNotificationSettingsStore;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
 const memoResult = react.memo(function RedesignSettingsNotificationsScreen() {
-  let obj = ContextualOptInNudgeHoldoutExperimentDefault;
-  const tmp = !obj.useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
-  let closure_0 = tmp;
-  const items = [tmp];
   const node = react.useMemo(() => {
-    let tmp3;
-    const tmp2 = SettingBuilders;
-    const createList = tmp2.createList;
-    const obj = { sections: getNotificationSettings(), ListHeaderComponent: tmp3 };
-    tmp3 = undefined;
-    if (closure_0) {
-      tmp3 = NotificationPermissionSettingsHeaderDefault;
-    }
-    return createList(obj);
-  }, items);
-  let tmp3 = useMountEffectDefault(() => {
-    const obj = closure_0(dependencyMap[11]);
-    const result = obj.refreshSystemNotifPermissionsAsync("notification_settings_screen");
-    closure_1_4();
-  });
-  const items1 = [tmp];
-  const unavailableNode = react.useMemo(() => {
-    let arr;
-    let tmp3;
-    const obj = { sections: arr.slice(1), ListHeaderComponent: tmp3 };
+    let intl;
+    let items;
+    let items1;
+    let items2;
+    const obj = { sections: items };
     const createList = SettingBuilders.createList;
     SettingBuilders;
-    tmp3 = undefined;
-    arr = getNotificationSettings();
-    if (closure_0) {
-      tmp3 = NotificationPermissionSettingsHeaderDefault;
-    }
+    items = [, , ];
+    const obj2 = MobileNotifSettingsRouteBuilders;
+    items[0] = obj2.buildOverviewCategoriesSection();
+    const obj3 = { label: intl.string(_modDef3029.nvBHcD), settings: items1 };
+    intl = intl2.intl;
+    items1 = [, , , , , , , ];
+    ({ REDESIGN_SYSTEM_NOTIFICATIONS: arr2[0], REDESIGN_IN_APP_NOTIFICATIONS: arr2[1], REDESIGN_IN_APP_MESSAGE_SOUNDS: arr2[2], REDESIGN_ANDROID_MESSAGE_NOTIFICATIONS: arr2[3], REDESIGN_IOS_NATIVE_PHONE_INTEGRATION: arr2[4], REDESIGN_ANDROID_NOTIFICATION_LIGHTS: arr2[5], REDESIGN_ANDROID_NOTIFICATION_VIBRATIONS: arr2[6], REDESIGN_ANDROID_NOTIFICATION_SOUNDS: arr2[7] } = constants);
+    items[1] = obj3;
+    const obj4 = { settings: items2 };
+    items2 = [constants.REDESIGN_EMAIL_NOTIFICATIONS];
+    items[2] = obj4;
     return createList(obj);
-  }, items1);
-  return jsx(EffectiveNotifSettingsLayoutDefault, { node, unavailableNode });
+  }, []);
+  useMountEffectDefault(() => {
+    closure_1_4();
+  });
+  return jsx(SystemNotifPermissionLayoutDefault, { node, unavailableNode: node });
 });
-let result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsNotificationScreen.tsx");
+const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsNotificationScreen.tsx");
 
 export default memoResult;

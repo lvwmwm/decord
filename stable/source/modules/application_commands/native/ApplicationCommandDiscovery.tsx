@@ -1,31 +1,31 @@
-// Module ID: 14224
-// Function ID: 14225
+// Module ID: 14812
+// Function ID: 14813
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 6199, 14225, 10376, 1072, 21, 14226, 5170, 575, 5798, 14227, 10467, 2116, 9891, 5179, 1113, 5921, 12, 14228, 5839, 14229, 14230, 1187, 10454, 2]
+// Dependencies: [32, 19, 17, 6335, 14813, 11234, 1072, 21, 14814, 5306, 575, 5934, 14815, 11405, 2119, 11412, 5315, 1113, 6057, 12, 14816, 5975, 14817, 14818, 1187, 11390, 2]
 // Exports: default
 
-// Module 14224 (ApplicationCommandDiscovery)
+// Module 14812 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Server from "Server" /* 2116 */;
-import useFontScale from "useFontScale" /* 5798 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9891 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10376 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10454 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 14225 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 14226 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 14227 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 14228 */;
+import Server from "Server" /* 2119 */;
+import useFontScale from "useFontScale" /* 5934 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11234 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11390 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 11412 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 14813 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 14814 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 14815 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 14816 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6199 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,7 +96,7 @@ export default function ApplicationCommandDiscovery(channel) {
   ref = ref.useRef(false);
   let obj3 = ApplicationCommandDiscoveryManager;
   const commandDiscoveryManager = obj3.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let tmp8 = channel(10467);
+  let tmp8 = channel(11405);
   const obj4 = { context: { channel, type: "channel" }, filters: obj5, options: obj6, allowFetch: true };
   obj5 = { commandTypes: items, builtIns: canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW, applicationCommands: !canOnlyUseTextCommands };
   const useDiscovery = tmp8.useDiscovery;
@@ -371,11 +371,11 @@ export default function ApplicationCommandDiscovery(channel) {
       section = section.section;
       const children = [, ];
       const obj = { section: section.section, guildId: channel.guild_id };
-      children[0] = authStore3(ApplicationSectionHeaderDefault, obj, section.section.id);
+      children[0] = gesture(ApplicationSectionHeaderDefault, obj, section.section.id);
       let tmp3Result = 0 === section.data.length;
-      const tmp = authStore4;
+      const tmp = authStore3;
       const tmp2 = closure_15;
-      const tmp3 = authStore3;
+      const tmp3 = gesture;
       if (tmp3Result) {
         const obj3 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, body: intl.format(intl2.t.WoQXT6, obj5), containerStyle: null, imageStyle: null };
         const ThemedEmptyState = native.ThemedEmptyState;
@@ -393,7 +393,7 @@ export default function ApplicationCommandDiscovery(channel) {
   obj9 = null;
   const memo1 = obj2.useMemo(() => {
     const obj = { onPressSection, sections: sectionDescriptors, selectedIndex, guildId: channel.guild_id };
-    return authStore3(ApplicationCommandsCategoriesDefault, obj);
+    return gesture(ApplicationCommandsCategoriesDefault, obj);
   }, items7);
   let tmp20 = filterSection;
   let tmp21 = selectedIndex;

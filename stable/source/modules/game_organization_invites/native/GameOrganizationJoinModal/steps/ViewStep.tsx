@@ -1,16 +1,16 @@
-// Module ID: 13479
-// Function ID: 13480
+// Module ID: 14077
+// Function ID: 14078
 // Name: ViewStep
-// Dependencies: [32, 19, 11536, 13478, 21, 5170, 1499, 13475, 13472, 13476, 13480, 8076, 6191, 575, 13481, 5783, 1113, 2530, 8765, 13482, 13484, 5790, 2]
+// Dependencies: [32, 19, 12369, 14076, 21, 5306, 1502, 14074, 14071, 12541, 8208, 8210, 6327, 575, 14078, 5919, 1113, 2565, 7436, 14079, 14081, 5926, 2]
 // Exports: ViewStep
 
-// Module 13479 (ViewStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11536 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13478 */;
+// Module 14077 (ViewStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 14076 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,20 +79,20 @@ export function ViewStep(code) {
     ({ memberCount, maxMembers } = organization);
     const obj2 = { displayNoun: tmp5.displayNoun, lowercase: true };
     const tmp16 = require("getGameOrganizationDisplayNoun")(obj2);
-    const tmp4Result = require("GameOrganizationJoinModalScreen");
+    const ModalScreen = tmp2(tmp3[10]).ModalScreen;
     const ModalContent = tmp2(tmp3[11]).ModalContent;
     const obj3 = { spacing: require("native").space.PX_48, children: items5 };
     const Stack2 = tmp2(tmp3[12]).Stack;
-    const obj4 = { spacing: require("native").space.PX_24, children: items1 };
+    const obj4 = { spacing: require("native").space.PX_8, children: items1 };
     const Stack3 = tmp2(tmp3[12]).Stack;
     const obj5 = { spacing: require("native").space.PX_16, align: "center", children: items };
     const Stack4 = tmp2(tmp3[12]).Stack;
     const obj6 = { iconUrl: organization.iconUrl, size: 64 };
     items = [closure_7(tmp4(tmp3[14]), obj6), ];
-    const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2530").gptW7Y, obj8) };
+    const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2565").gptW7Y, obj8) };
     const Text2 = tmp2(tmp3[15]).Text;
     intl3 = tmp2(tmp3[16]).intl;
-    obj8 = { noun: tmp16, orgName: organization.name };
+    obj8 = { noun: tmp16, orgName: organization.name, gameName: application.name };
     items[1] = closure_7(Text2, obj7);
     items1 = [closure_8(Stack4, obj5), ];
     const obj9 = { direction: "horizontal", align: "center", justify: "center", spacing: require("native").space.PX_16, children: items3 };
@@ -100,8 +100,8 @@ export function ViewStep(code) {
     const obj10 = { spacing: require("native").space.PX_4, direction: "horizontal", align: "center", style: tmp.inlineStack, children: items2 };
     const Stack6 = tmp2(tmp3[12]).Stack;
     const obj11 = { iconUrl: application.iconUrl, size: 16, borderRadius: require("native").radii.xs };
-    const tmp4Result2 = require("GameOrganizationIcon");
-    items2 = [closure_7(tmp4Result2, obj11), ];
+    const tmp4Result = require("GameOrganizationIcon");
+    items2 = [closure_7(tmp4Result, obj11), ];
     const obj12 = { variant: "heading-sm/medium", children: application.name };
     items2[1] = closure_7(tmp2(tmp3[15]).Text, obj12);
     items3 = [closure_8(Stack6, obj10), ];
@@ -112,7 +112,7 @@ export function ViewStep(code) {
       const obj14 = { size: "xs", color: require("native").colors.ICON_MUTED };
       const GroupIcon = tmp2(tmp3[18]).GroupIcon;
       items4 = [closure_7(GroupIcon, obj14), ];
-      const obj15 = { variant: "heading-sm/medium", children: intl.formatToPlainString(require("module_2530").VuENGl, obj16) };
+      const obj15 = { variant: "heading-sm/medium", children: intl.formatToPlainString(require("module_2565").VuENGl, obj16) };
       const Text = tmp2(tmp3[15]).Text;
       intl = tmp2(tmp3[16]).intl;
       obj16 = { count: memberCount, max: maxMembers };
@@ -122,12 +122,12 @@ export function ViewStep(code) {
     items3[1] = tmp17Result;
     items1[1] = closure_8(Stack5, obj9);
     items5 = [closure_8(Stack3, obj4), ];
-    let tmp19Result = tmp7;
-    if (tmp19Result) {
+    let tmp18Result = tmp7;
+    if (tmp18Result) {
       const obj17 = { characters: data, selectedCharacterId, onSelect: tmp12, noun: tmp16 };
-      tmp19Result = tmp19(tmp4(tmp3[19]), obj17);
+      tmp18Result = tmp18(tmp4(tmp3[19]), obj17);
     }
-    items5[1] = tmp19Result;
+    items5[1] = tmp18Result;
     const obj18 = { children: closure_8(Stack2, obj3) };
     const items6 = [closure_7(ModalContent, obj18), ];
     const ModalFooter = tmp2(tmp3[20]).ModalFooter;
@@ -156,6 +156,6 @@ export function ViewStep(code) {
     const obj20 = { children: items6 };
     const obj21 = { children: closure_7(Button, obj19) };
     items6[1] = closure_7(ModalFooter, obj21);
-    return closure_8(tmp4Result, obj20);
+    return closure_8(ModalScreen, obj20);
   }
 }

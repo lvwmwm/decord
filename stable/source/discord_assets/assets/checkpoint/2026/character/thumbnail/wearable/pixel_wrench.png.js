@@ -1,8 +1,8 @@
-// Module ID: 6553
-// Function ID: 6554
+// Module ID: 6689
+// Function ID: 6690
 // Dependencies: [2]
 
-// Module 6553
+// Module 6689
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/wearable/pixel_wrench.png.js");

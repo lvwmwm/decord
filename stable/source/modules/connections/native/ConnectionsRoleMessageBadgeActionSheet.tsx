@@ -1,40 +1,40 @@
-// Module ID: 13513
-// Function ID: 13514
+// Module ID: 14122
+// Function ID: 14123
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1404, 502, 5082, 5076, 5041, 13514, 7443, 1072, 21, 5170, 575, 1113, 7442, 7092, 5783, 5401, 12, 5756, 6661, 11784, 9315, 1187, 1411, 5177, 38, 7420, 7445, 504, 1252, 5921, 6990, 5420, 7465, 5790, 5406, 11788, 8854, 2]
+// Dependencies: [32, 19, 17, 1407, 502, 5218, 5212, 5177, 14123, 7423, 1072, 21, 5306, 575, 1113, 7467, 7738, 5919, 5537, 12, 5892, 7087, 12485, 10870, 1187, 1414, 5313, 38, 7918, 7937, 504, 1256, 6057, 6907, 5556, 7957, 5926, 5542, 12489, 8476, 2]
 // Exports: default
 
-// Module 13513 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 14122 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AvatarUtils from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5177 */;
-import useThemeDefault from "useTheme" /* 5401 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5921 */;
-import PlatformsDefault from "Platforms" /* 6661 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6990 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7092 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7442 */;
-import Constants2 from "Constants" /* 7443 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11788 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import shared from "shared" /* 5313 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
+import PlatformsDefault from "Platforms" /* 7087 */;
+import Constants2 from "Constants" /* 7423 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7467 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7738 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 12489 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserRecord from "UserRecord" /* 1404 */;
+import UserRecord from "UserRecord" /* 1407 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildRoleStore from "GuildRoleStore" /* 5076 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13514 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildRoleStore from "GuildRoleStore" /* 5212 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 14123 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -90,9 +90,9 @@ function PopoutCheck(arg0) {
   if (null != formatResult) {
     const obj5 = { style: tmp.popoutCheck, children: items };
     const obj6 = { size: "sm", style: tmp.popoutCheckIcon };
-    items = [authStore4(CheckmarkLargeIcon.CheckmarkLargeIcon, obj6), ];
+    items = [authStore3(CheckmarkLargeIcon.CheckmarkLargeIcon, obj6), ];
     const obj7 = { variant: "body-xs/medium", color: "mobile-text-heading-primary", children: formatResult };
-    items[1] = authStore4(Text_Text.Text, obj7);
+    items[1] = authStore3(Text_Text.Text, obj7);
     tmp10 = closure_17(metroRequire, obj5);
   }
   return tmp10;
@@ -119,7 +119,7 @@ class PopoutChecks {
     let c3 = groupByResult;
     const keys = Object.keys(groupByResult);
     let closure_4 = keys.length - 1;
-    let obj2 = guildId(5756);
+    let obj2 = guildId(5892);
     const roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
     let obj3 = {
       children: keys.map(function(item, index) {
@@ -158,10 +158,10 @@ class PopoutChecks {
         }
         if (includes(str)) {
           const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-          tmp10 = authStore4(tmp2(11784), obj2);
+          tmp10 = authStore3(tmp2(12485), obj2);
         } else if (null != tmp7) {
           const obj3 = { style: closure_1.botTag, verified: false };
-          tmp10 = authStore4(tmp2(9315), obj3);
+          tmp10 = authStore3(tmp2(10870), obj3);
         }
         const items = [closure_1.popoutChecksGroup, ];
         let prop = null;
@@ -179,19 +179,19 @@ class PopoutChecks {
           AvatarUtils;
           icon = value.icon;
           tmp9Result2 = shared;
-          tmp22Result = authStore4(Icon, obj6);
+          tmp22Result = authStore3(Icon, obj6);
         }
         items1 = [tmp22Result, , , ];
         let tmp25 = null;
         if (null != tmp7) {
           const obj7 = { style: closure_1.popoutCheckGroupPlatformIcon, user: tmp7, size: native.AvatarSizes.XSMALL, guildId: "a" };
           const Avatar = tmp9(1187).Avatar;
-          tmp25 = authStore4(Avatar, obj7);
+          tmp25 = authStore3(Avatar, obj7);
         }
         items1[1] = tmp25;
         let name;
-        const Text = tmp9(5783).Text;
-        const tmp27 = authStore4;
+        const Text = tmp9(5919).Text;
+        const tmp27 = authStore3;
         if (value != null) {
           name = value.name;
         }

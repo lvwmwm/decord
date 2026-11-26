@@ -1,11 +1,11 @@
-// Module ID: 16009
-// Function ID: 16010
+// Module ID: 16284
+// Function ID: 16285
 // Name: findCodedLinkUrlsUsingRegex
-// Dependencies: [1379, 2]
+// Dependencies: [1382, 2]
 // Exports: default
 
-// Module 16009 (findCodedLinkUrlsUsingRegex)
-import ip from "ip" /* 1379 */;
+// Module 16284 (findCodedLinkUrlsUsingRegex)
+import ip from "ip" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 function trimTrailingPunctuation(str) {

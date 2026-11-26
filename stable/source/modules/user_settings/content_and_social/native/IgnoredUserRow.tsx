@@ -1,16 +1,16 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17338
+// Function ID: 17339
 // Name: IgnoredUserRow
-// Dependencies: [5, 19, 1385, 21, 7585, 7420, 1113, 8854, 7071, 1187, 17056, 5790, 504, 8856, 2]
+// Dependencies: [5, 19, 1388, 21, 8137, 7918, 1113, 8476, 7443, 1187, 17335, 5926, 504, 7350, 2]
 // Exports: default
 
-// Module 17059 (IgnoredUserRow)
+// Module 17338 (IgnoredUserRow)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7585 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -19,7 +19,7 @@ function IgnoredUserRow(userRecord) {
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7420)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7918)().analyticsLocations;
   const intl = userRecord(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
@@ -32,7 +32,7 @@ function IgnoredUserRow(userRecord) {
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(e3qAIz, { name: username });
-  const TableRow = tmp2(7071).TableRow;
+  const TableRow = tmp2(7443).TableRow;
   let obj2 = { source: userRecord.getAvatarSource(undefined), size: tmp2(1187).AvatarSizes.REFRESH_MEDIUM_32 };
   const Avatar = tmp2(1187).Avatar;
   const items = [{ name: "activate" }, { name: "unignore", label: formatToPlainStringResult }];
@@ -47,7 +47,7 @@ function IgnoredUserRow(userRecord) {
       obj.unignoreUser(id, "ignored-users-list-mobile");
     }
   });
-  const Button = tmp2(5790).Button;
+  const Button = tmp2(5926).Button;
   intl2 = tmp2(1113).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
 }

@@ -1,24 +1,82 @@
 // Module ID: 1749
 // Function ID: 1750
-// Dependencies: [1716, 1717]
-// Exports: callMicrotasks
+// Dependencies: []
+// Exports: setupRequestAnimationFrame
 
 // Module 1749
-import registerCustomSerializable from "registerCustomSerializable" /* 1716 */;
-import serializableMappingFlag from "serializableMappingFlag" /* 1717 */;
+let closure_1, closure_3, closure_4, closure_5, length;
 
 let tmp2;
-const items = [{ code: "(function callMicrotasks_Pnpm_deprecatedTs1(){})" }];
+let items = [{ code: "(function setupRequestAnimationFrame_Pnpm_requestAnimationFrameTs1(){let queuedCallbacks=[];let queuedCallbacksBegin=0;let queuedCallbacksEnd=0;let flushedCallbacks=queuedCallbacks;let flushedCallbacksBegin=0;let flushedCallbacksEnd=0;let queuedFinalizers=[];function executeQueue(timestamp){flushedCallbacks=queuedCallbacks;queuedCallbacks=[];flushedCallbacksBegin=queuedCallbacksBegin;flushedCallbacksEnd=queuedCallbacksEnd;queuedCallbacksBegin=queuedCallbacksEnd;if(flushedCallbacks.length>0){for(const callback of flushedCallbacks){callback(timestamp);globalThis.__drainMicrotasks();}}else{globalThis.__drainMicrotasks();}flushedCallbacksBegin=flushedCallbacksEnd;const finalizers=queuedFinalizers;queuedFinalizers=[];for(const finalizer of finalizers){finalizer();}}function requestAnimationFrame(callback){const handle=queuedCallbacksEnd++;queuedCallbacks.push(callback);return handle;}function cancelAnimationFrame(handle){if(handle<flushedCallbacksBegin||handle>=queuedCallbacksEnd){return;}if(handle<flushedCallbacksEnd){flushedCallbacks[handle-flushedCallbacksBegin]=function(){};}else{queuedCallbacks[handle-queuedCallbacksBegin]=function(){};}}function nativeFlushQueue(timestamp){flushQueue(timestamp);globalThis.__nativeRequestAnimationFrame(nativeFlushQueue);}function flushQueue(timestamp){globalThis.__frameTimestamp=timestamp;executeQueue(timestamp);globalThis.__frameTimestamp=undefined;}globalThis.requestAnimationFrame=requestAnimationFrame;globalThis.cancelAnimationFrame=cancelAnimationFrame;globalThis.requestAnimationFrameFinalizer=function(callback){queuedFinalizers.push(callback);};globalThis.__nativeRequestAnimationFrame(nativeFlushQueue);globalThis.__flushAnimationFrame=function(eventTimestamp){flushQueue(eventTimestamp);};})" }];
 [tmp2] = items;
-function callMicrotasks() {
+function setupRequestAnimationFrame() {
+  function executeQueue(__frameTimestamp) {
+    closure_3 = length;
+    length = [];
+    closure_4 = closure_1;
+    closure_5 = closure_1_2;
+    closure_1 = closure_1_2;
+    if (length.length > 0) {
+      const iter = closure_3[Symbol.iterator]();
+      while (iter !== undefined) {
+        let tmp8 = iter.next()(__frameTimestamp);
+        let _globalThis2 = globalThis;
+        let __drainMicrotasksResult = globalThis.__drainMicrotasks();
+        continue;
+      }
+    } else {
+      const _globalThis = globalThis;
+      globalThis.__drainMicrotasks();
+    }
+    closure_4 = closure_5;
+    closure_6 = [];
+    for (const item10031 of closure_6) {
+      let item10031Result = item10031();
+      continue;
+    }
+  }
+  const items = [];
+  let c1 = 0;
+  let closure_2 = 0;
+  let c4 = 0;
+  let c5 = 0;
+  let closure_6 = [];
+  globalThis.requestAnimationFrame = function requestAnimationFrame(arg0) {
+    closure_2 = closure_2 + 1;
+    items.push(arg0);
+    return closure_2;
+  };
+  globalThis.cancelAnimationFrame = function cancelAnimationFrame(arg0) {
+    const tmp = arg0 < c4 || arg0 >= closure_2;
+    if (!tmp) {
+      if (arg0 < c5) {
+        items[arg0 - c4] = () => {
 
+        };
+      } else {
+        items[arg0 - c1] = () => {
+
+        };
+      }
+    }
+  };
+  globalThis.requestAnimationFrameFinalizer = (arg0) => {
+    closure_6.push(arg0);
+  };
+  function nativeFlushQueue(__frameTimestamp) {
+    globalThis.__frameTimestamp = __frameTimestamp;
+    executeQueue(__frameTimestamp);
+    globalThis.__frameTimestamp = undefined;
+    const result = globalThis.__nativeRequestAnimationFrame(nativeFlushQueue);
+  }
+  let result = globalThis.__nativeRequestAnimationFrame(nativeFlushQueue);
+  globalThis.__flushAnimationFrame = (__frameTimestamp) => {
+    globalThis.__frameTimestamp = __frameTimestamp;
+    executeQueue(__frameTimestamp);
+    globalThis.__frameTimestamp = undefined;
+  };
 }
-callMicrotasks.__workletHash = 2444743836321;
-callMicrotasks.__initData = tmp2;
+setupRequestAnimationFrame.__workletHash = 4828216215772;
+setupRequestAnimationFrame.__initData = tmp2;
 
-export const makeShareable = registerCustomSerializable.makeShareable;
-export const makeShareableCloneOnUIRecursive = registerCustomSerializable.makeShareableCloneOnUIRecursive;
-export const makeShareableCloneRecursive = registerCustomSerializable.createSerializable;
-export const isShareableRef = registerCustomSerializable.isSerializableRef;
-export const shareableMappingCache = serializableMappingFlag.serializableMappingCache;
-export { callMicrotasks };
+export { setupRequestAnimationFrame };

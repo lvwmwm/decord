@@ -1,12 +1,12 @@
-// Module ID: 13475
-// Function ID: 13476
+// Module ID: 14074
+// Function ID: 14075
 // Name: useResolvedGameOrganizationInvite
-// Dependencies: [11535, 11536, 504, 2]
+// Dependencies: [12368, 12369, 504, 2]
 // Exports: default
 
-// Module 13475 (useResolvedGameOrganizationInvite)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11536 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11535 */;
+// Module 14074 (useResolvedGameOrganizationInvite)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12368 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,23 +1,23 @@
-// Module ID: 17589
-// Function ID: 17590
+// Module ID: 17866
+// Function ID: 17867
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1385, 21, 7713, 6123, 1113, 17590, 2118, 504, 1377, 11717, 9645, 2]
+// Dependencies: [1388, 21, 9587, 6259, 1113, 17867, 2121, 504, 1380, 12408, 9436, 2]
 
-// Module 17589 (PremiumRestoreSubscriptionSetting)
+// Module 17866 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6123 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7713 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9645 */;
-import UserStore from "UserStore" /* 1385 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 9587 */;
+import UserStore from "UserStore" /* 1388 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const PlatformUtils = tmp(1377);
+const PlatformUtils = tmp(1380);
 const jsx = Fragment.jsx;
 let obj = {
   useTitle() {

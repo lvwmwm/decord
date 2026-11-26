@@ -1,21 +1,21 @@
-// Module ID: 8015
-// Function ID: 8016
+// Module ID: 6856
+// Function ID: 6857
 // Name: guildRoomConnect
-// Dependencies: [5, 502, 8016, 1072, 8018, 1282, 8019, 572, 8037, 7592, 7599, 11, 8017, 8038, 8039, 2]
+// Dependencies: [5, 502, 6857, 1072, 6859, 1285, 6860, 572, 6878, 6879, 6886, 11, 6858, 6887, 6888, 2]
 // Exports: clearGuildRoomPendingPosition, createGuildRoomNote, deleteGuildRoomNote, fetchGuildRoom, guildRoomConnect, guildRoomDisconnect, guildRoomLocalDisconnect, guildRoomObjectUpdate, guildRoomToggleLayout, guildRoomUpdate, maybeSetGuildRoomVideoOverlay, placePendingGuildRoomNote, selectGuildRoomLocalPosition, setGuildRoomRememberVideoOverlayVisibility, setGuildRoomVideoOverlayVisibility, startPendingGuildRoomNote
 
-// Module 8015 (guildRoomConnect)
+// Module 6856 (guildRoomConnect)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 8017 */;
-import GuildRoomSeats from "GuildRoomSeats" /* 8018 */;
-import GuildRoomAnalytics from "GuildRoomAnalytics" /* 8037 */;
-import GuildRoomsExperiment from "GuildRoomsExperiment" /* 8039 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 6858 */;
+import GuildRoomSeats from "GuildRoomSeats" /* 6859 */;
+import GuildRoomAnalytics from "GuildRoomAnalytics" /* 6878 */;
+import GuildRoomsExperiment from "GuildRoomsExperiment" /* 6888 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoomStore from "GuildRoomStore" /* 8016 */;
+import GuildRoomStore from "GuildRoomStore" /* 6857 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5, closure_6, closure_8, originalRoom, originalRoomObjects, originalRoomUsers, pendingPosition, pendingSeat, room, update;
@@ -722,7 +722,7 @@ export function maybeSetGuildRoomVideoOverlay(value, guildId, channelId) {
     obj3.dispatch(obj4);
     if (value !== videoOverlayVisibility) {
       let str = "video_overlay_closed";
-      const trackGuildRoomInteracted = tmp(8037).trackGuildRoomInteracted;
+      const trackGuildRoomInteracted = tmp(6878).trackGuildRoomInteracted;
       GuildRoomAnalytics;
       if (value) {
         str = "video_overlay_opened";

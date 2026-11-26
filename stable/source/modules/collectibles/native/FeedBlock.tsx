@@ -1,21 +1,21 @@
-// Module ID: 18235
-// Function ID: 18236
+// Module ID: 18522
+// Function ID: 18523
 // Name: FeedBlock
-// Dependencies: [19, 17, 5171, 1192, 1074, 21, 5170, 575, 504, 5177, 9689, 18217, 18196, 9700, 18218, 7828, 9668, 10065, 17340, 7445, 7420, 1113, 5783, 7076, 5406, 18236, 2118, 5891, 5790, 18230, 5874, 18237, 1377, 9622, 18238, 18239, 18240, 2]
+// Dependencies: [19, 17, 5307, 1192, 1074, 21, 5306, 575, 504, 5313, 10446, 18504, 18483, 10457, 18505, 8484, 10433, 9723, 17614, 7937, 7918, 1113, 5919, 7428, 5542, 18523, 2121, 6027, 5926, 18517, 6010, 18524, 18525, 18526, 18527, 2]
 // Exports: default
 
-// Module 18235 (FeedBlock)
+// Module 18522 (FeedBlock)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9668 */;
-import uniqByDefault from "uniqBy" /* 18218 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 10433 */;
+import uniqByDefault from "uniqBy" /* 18505 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,12 +56,11 @@ export default function _default(screen) {
   let items8;
   let items9;
   let obj15;
-  let obj18;
   let obj5;
   let preferVCPrice;
   let resolvedSkuIds;
   let stringResult;
-  let tmp19Result4;
+  let tmp26;
   screen = screen.screen;
   let isInImprovedMobileShopLoading;
   importDefault = undefined;
@@ -146,15 +145,15 @@ export default function _default(screen) {
     }
     return found;
   }, items4);
-  const tmp2Result4 = isInImprovedMobileShopLoading(shownSkuIds[18]);
+  const tmp2Result3 = isInImprovedMobileShopLoading(shownSkuIds[18]);
   const obj3 = { products: memo2, maxProducts: isInImprovedMobileShopLoading(shownSkuIds[12]).MAX_FEED_PRODUCTS, screen };
-  const filteredAndSortedProducts = tmp2Result4.useFilteredAndSortedProducts(obj3);
+  const filteredAndSortedProducts = tmp2Result3.useFilteredAndSortedProducts(obj3);
   const ORBS = constants.ORBS;
   const items5 = [memo];
-  const tmp2Result5 = isInImprovedMobileShopLoading(shownSkuIds[8]);
-  const stateFromStores1 = tmp2Result5.useStateFromStores(items5, () => memo.useReducedMotion);
-  const tmp6Result7 = require("useAnalyticsLocations");
-  const analyticsLocations = tmp6Result7(tmp6(tmp3[19]).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations;
+  const tmp2Result4 = isInImprovedMobileShopLoading(shownSkuIds[8]);
+  const stateFromStores1 = tmp2Result4.useStateFromStores(items5, () => memo.useReducedMotion);
+  const tmp6Result4 = require("useAnalyticsLocations");
+  const analyticsLocations = tmp6Result4(tmp6(tmp3[19]).COLLECTIBLES_SHOP_POPULAR_PICKS).analyticsLocations;
   const intl = tmp2(tmp3[21]).intl;
   const string = intl.string;
   const t = tmp2(tmp3[21]).t;
@@ -204,8 +203,8 @@ export default function _default(screen) {
   items7[1] = tmp19Result;
   items8 = [closure_9(collectiblesShopProducts, obj6), , ];
   const obj10 = { products: filteredAndSortedProducts, loadingCardsNum: isInImprovedMobileShopLoading(shownSkuIds[12]).MAX_FEED_PRODUCTS, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground };
-  const tmp6Result8 = require("FeedProductList");
-  items8[1] = closure_8(tmp6Result8, obj10);
+  const tmp6Result5 = require("FeedProductList");
+  items8[1] = closure_8(tmp6Result5, obj10);
   const obj11 = { style: tmp.feedFooter, children: items9 };
   const obj12 = { variant: "heading-lg/semibold", accessibilityRole: "header", children: intl4.string(isInImprovedMobileShopLoading(shownSkuIds[21]).t.Yr70c4) };
   const Text = tmp2(tmp3[22]).Text;
@@ -215,43 +214,24 @@ export default function _default(screen) {
   const Button2 = tmp2(tmp3[28]).Button;
   intl5 = tmp2(tmp3[21]).intl;
   items9[1] = closure_8(Button2, obj13);
+  const tmp6Result6 = require("FastImage");
   if (screen === ORBS) {
-    let tmp19Result3;
-    if (stateFromStores1) {
-      const obj14 = { source: obj15, style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-      obj15 = { uri: require("module_18237") };
-      const tmp6Result9 = require("FastImage");
-      tmp19Result3 = tmp19(tmp6Result9, obj14);
-    } else {
-      const tmp2Result6 = isInImprovedMobileShopLoading(shownSkuIds[32]);
-      if (tmp2Result6.isAndroid()) {
-        const obj16 = { url: require("module_18238"), autoplay: true, style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        const tmp6Result10 = require("APNGDecorationNativeComponent");
-        tmp19Result3 = tmp19(tmp6Result10, obj16);
-      } else {
-        const obj17 = { source: obj18, enableAnimation: true, resizeMode: "contain", style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-        obj18 = { uri: require("module_18238") };
-        const tmp6Result11 = require("FastImage");
-        tmp19Result3 = tmp19(tmp6Result11, obj17);
-      }
-    }
-    tmp19Result4 = tmp19Result3;
+    const obj14 = { source: obj15, enableAnimation: !stateFromStores1, resizeMode: "contain", style: tmp.feedFooterOrbImage, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
+    tmp26 = obj14;
+    obj15 = { uri: importDefault(stateFromStores1 ? shownSkuIds[31] : shownSkuIds[32]) };
   } else {
-    let tmp26;
-    const obj19 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-    const tmp6Result12 = require("FastImage");
+    const obj16 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     if (stateFromStores) {
-      obj19.source = isInImprovedMobileShopLoading(shownSkuIds[35]);
-      obj19.style = tmp.feedFooterImage;
-      tmp26 = obj19;
+      obj16.source = isInImprovedMobileShopLoading(shownSkuIds[33]);
+      obj16.style = tmp.feedFooterImage;
+      tmp26 = obj16;
     } else {
-      obj19.source = isInImprovedMobileShopLoading(shownSkuIds[36]);
-      obj19.style = tmp.feedFooterImage;
-      tmp26 = obj19;
+      obj16.source = isInImprovedMobileShopLoading(shownSkuIds[34]);
+      obj16.style = tmp.feedFooterImage;
+      tmp26 = obj16;
     }
-    tmp19Result4 = tmp19(tmp6Result12, tmp26);
   }
-  items9[2] = tmp19Result4;
+  items9[2] = closure_8(tmp6Result6, tmp26);
   items8[2] = closure_9(collectiblesShopProducts, obj11);
   return closure_8(AnalyticsLocationProvider, obj4);
 };

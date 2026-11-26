@@ -1,23 +1,23 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 17185
+// Function ID: 17186
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 7470, 21, 5170, 575, 16905, 8921, 9102, 15206, 7883, 15245, 5355, 1113, 16907, 15235, 15221, 15307, 9092, 1652, 12374, 2]
+// Dependencies: [32, 19, 17, 7962, 21, 5306, 575, 17184, 8607, 7994, 12121, 7354, 12137, 5491, 1113, 17186, 12131, 15820, 15870, 7983, 1655, 13264, 2]
 
-// Module 16906 (UserProfileEditFormTabs)
+// Module 17185 (UserProfileEditFormTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ChatInputUtils from "ChatInputUtils" /* 5355 */;
-import Constants from "Constants" /* 7470 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7883 */;
-import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 15221 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 15235 */;
-import reactDefault from "react" /* 16905 */;
-import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 16907 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7354 */;
+import Constants from "Constants" /* 7962 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 12131 */;
+import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 15820 */;
+import reactDefault from "react" /* 17184 */;
+import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 17186 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -76,9 +76,9 @@ const memoResult = react.memo(function UserProfileEditFormTabs(userId) {
   dependencyMap = tmp;
   const tmp2 = containerBackground;
   let tmp3 = dependencyMap;
-  const tmp4 = containerBackground(8921)();
+  const tmp4 = containerBackground(8607)();
   _slicedToArray = tmp4;
-  const tmp5 = containerBackground(9102)();
+  const tmp5 = containerBackground(7994)();
   const width = tmp5.width;
   let num = 0;
   ({ ref, onLayout } = tmp5);
@@ -90,11 +90,11 @@ const memoResult = react.memo(function UserProfileEditFormTabs(userId) {
     num2 = 1;
   }
   [first, closure_5] = first.useState(num2);
-  arr = tmp2(15206)(userId);
+  arr = tmp2(12121)(userId);
   closure_7 = tmp8;
   let items1 = [arr];
   const memo = first.useMemo(() => arr.filter(UserProfileGameWidgetTypes.isGameWidget), items1);
-  let obj = userId(15245);
+  let obj = userId(12137);
   const fetchSuggestedGames = obj.useFetchSuggestedGames(true, memo);
   let items2 = [userId, first, tmp8, containerBackground, tmp.page, tmp4.card];
   const callback = first.useCallback((arg0) => {
@@ -132,12 +132,12 @@ const memoResult = react.memo(function UserProfileEditFormTabs(userId) {
     items[1] = obj2;
     return items;
   }, items2);
-  let obj2 = userId(15307);
+  let obj2 = userId(15870);
   const measuredTabItems = obj2.useMeasuredTabItems(memo1);
   ({ items, pageHeights } = measuredTabItems);
-  let obj3 = userId(9092);
+  let obj3 = userId(7983);
   const segmentedControlState = obj3.useSegmentedControlState({ pageWidth: num, defaultIndex: num2, items, onPageChange: callback });
-  let obj4 = userId(1652);
+  let obj4 = userId(1655);
   const items3 = [closure_11, segmentedControlState, 1];
   let c0;
   let c1;
@@ -169,13 +169,13 @@ const memoResult = react.memo(function UserProfileEditFormTabs(userId) {
   let obj5 = { style: tmp.tabbedContainer, ref, onLayout, children: items7 };
   let obj6 = { state: segmentedControlState, variant: str };
   str = undefined;
-  const Tabs = tmp10(12374).Tabs;
+  const Tabs = tmp10(13264).Tabs;
   const tmp22 = closure_8;
   const tmp23 = closure_5;
   if (hasCustomProfileTheme) {
     str = "overlay";
   }
-  items7 = [arr(Tabs, obj6), arr(tmp2(15307), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
+  items7 = [arr(Tabs, obj6), arr(tmp2(15870), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
   return tmp22(tmp23, obj5);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormTabs.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 14527
-// Function ID: 14528
+// Module ID: 15011
+// Function ID: 15012
 // Dependencies: [2]
 
-// Module 14527
+// Module 15011
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FindFriendsSpotIllustration-3x.png.js");

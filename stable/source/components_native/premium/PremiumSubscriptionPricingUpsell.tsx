@@ -1,25 +1,25 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 15412
+// Function ID: 15413
 // Name: PremiumSubscriptionPricingUpsell
-// Dependencies: [32, 19, 17, 2186, 1385, 2175, 2176, 7706, 1072, 1387, 21, 5170, 504, 2171, 15597, 7713, 7702, 5783, 1377, 7511, 7510, 1113, 2024, 2]
+// Dependencies: [32, 19, 17, 2189, 1388, 2178, 2179, 9302, 1072, 1390, 21, 5306, 504, 2174, 9987, 9587, 8580, 5919, 1380, 7254, 7253, 1113, 2027, 2]
 // Exports: default
 
-// Module 15741 (PremiumSubscriptionPricingUpsell)
+// Module 15412 (PremiumSubscriptionPricingUpsell)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 15597 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 9987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import UserStore from "UserStore" /* 1385 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2175 */;
-import SubscriptionStore from "SubscriptionStore" /* 2176 */;
-import IAPStore from "IAPStore" /* 7706 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import UserStore from "UserStore" /* 1388 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
+import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import IAPStore from "IAPStore" /* 9302 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ function PricingSubheadingCopy() {
   let tmp16;
   let tmp2Result17;
   let tmp2Result18;
-  const f110207 = () => {
+  const f111672 = () => {
     const items = [IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_MONTHLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_YEARLY), IAPStore.getProduct(closure_0(str3[16]).ProductIds.PREMIUM_TIER_2_PREMIUM_GUILD_1_YEARLY)];
     return items;
   };
@@ -101,8 +101,8 @@ function PricingSubheadingCopy() {
   }, []);
   const items4 = [IAPStore];
   const obj7 = require("get initialized");
-  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f110207), 5);
-  str2(obj7.useStateFromStoresArray(items4, f110207), 5);
+  [tmp12, tmp13, tmp14, tmp15, tmp16] = str2(obj7.useStateFromStoresArray(items4, f111672), 5);
+  str2(obj7.useStateFromStoresArray(items4, f111672), 5);
   const obj8 = IAPStore;
   if (stateFromStores2 == null) {
     stateFromStores2 = closure_13[constants.PREMIUM_MONTH_GUILD];
@@ -199,7 +199,7 @@ function PricingSubheadingCopy() {
                       let tmp = null;
                       if (str3 !== str2) {
                         const obj = { style: closure_0.originalPrice, variant: "body-sm/medium", color: "text-muted", children };
-                        tmp = authStore5(Text_Text.Text, obj, arg1);
+                        tmp = authStore4(Text_Text.Text, obj, arg1);
                       }
                       return tmp;
                     }
@@ -269,11 +269,11 @@ export default function PremiumSubscriptionPricingUpsell() {
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl6.t["3x1PFE"]) };
   const Text = Text_Text.Text;
   intl = intl6.intl;
-  items = [authStore5(Text, obj3), ];
+  items = [authStore4(Text, obj3), ];
   let tmp5Result = null;
   const tmp3 = closure_20;
   const tmp4 = View;
-  const tmp5 = authStore5;
+  const tmp5 = authStore4;
   if (subscriptionPlansLoaded) {
     tmp5Result = tmp5(PricingSubheadingCopy, {});
   }

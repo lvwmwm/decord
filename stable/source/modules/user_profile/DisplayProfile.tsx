@@ -1,12 +1,12 @@
-// Module ID: 8864
-// Function ID: 8865
+// Module ID: 8540
+// Function ID: 8541
 // Name: DisplayProfile
-// Dependencies: [1387, 7883, 2171, 1411, 8841, 2]
+// Dependencies: [1390, 7354, 2174, 1414, 8541, 2]
 
-// Module 8864 (DisplayProfile)
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import AvatarUtils from "AvatarUtils" /* 1411 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8841 */;
+// Module 8540 (DisplayProfile)
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import AvatarUtils from "AvatarUtils" /* 1414 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8541 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

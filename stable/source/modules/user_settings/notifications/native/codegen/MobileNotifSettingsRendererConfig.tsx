@@ -1,12 +1,12 @@
-// Module ID: 18326
-// Function ID: 18327
+// Module ID: 18618
+// Function ID: 18619
 // Name: MobileNotifSettingsRendererConfig
-// Dependencies: [17838, 18327, 18342, 2]
+// Dependencies: [18115, 18619, 18636, 2]
 
-// Module 18326 (MobileNotifSettingsRendererConfig)
-import MobileNotifSettings from "MobileNotifSettings" /* 17838 */;
-import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 18327 */;
-import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 18342 */;
+// Module 18618 (MobileNotifSettingsRendererConfig)
+import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
+import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 18619 */;
+import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 18636 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
@@ -16,10 +16,13 @@ obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS]
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY] = MobileNotifSettingsRoutesAll.CategoryFriendsActivityRoute;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_ACTIVITY_TITLE] = MobileNotifSettingsRoutesAll.FriendActivityTitleRoute;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_SERVERS] = MobileNotifSettingsRoutesAll.CategoryServersRoute;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS_CHOICE_ROUTE] = MobileNotifSettingsRoutesAll.ReactionsChoiceRoute;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUESTS] = MobileNotifSettingsNodesAll.FriendRequests;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_CALLS] = MobileNotifSettingsNodesAll.Calls;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_LOW] = MobileNotifSettingsNodesAll.MissedMessagesLow;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_DEFAULT] = MobileNotifSettingsNodesAll.MissedMessagesDefault;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_SUMMARY_REMINDER] = MobileNotifSettingsNodesAll.SummaryReminder;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS_CHOICE] = MobileNotifSettingsNodesAll.ReactionsChoice;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_INVITES_RECONNECTING] = MobileNotifSettingsNodesAll.InvitesReconnecting;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_TRENDING_SUGGESTIONS] = MobileNotifSettingsNodesAll.TrendingSuggestions;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_UPDATES_OFFERS] = MobileNotifSettingsNodesAll.UpdatesOffers;
@@ -39,6 +42,7 @@ obj[MobileNotifSettings.MobileNotifSettings.NOTIF_VOICE_CHANNEL_ACTIVITY] = Mobi
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_POLLS] = MobileNotifSettingsNodesAll.Polls;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS] = MobileNotifSettingsNodesAll.Reactions;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_GUILD_EVENT_NOTIFICATIONS] = MobileNotifSettingsNodesAll.GuildEventNotifications;
+obj[MobileNotifSettings.MobileNotifSettings.NOTIF_UPCOMING_SERVER_EVENT] = MobileNotifSettingsNodesAll.UpcomingServerEvent;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_FORUM_NOTIFICATIONS] = MobileNotifSettingsNodesAll.ForumNotifications;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_OTHER_GUILD] = MobileNotifSettingsNodesAll.OtherGuild;
 obj[MobileNotifSettings.MobileNotifSettings.NOTIF_SAFETY_ALERTS] = MobileNotifSettingsNodesAll.SafetyAlerts;

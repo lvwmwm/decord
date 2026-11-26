@@ -1,12 +1,12 @@
-// Module ID: 17133
-// Function ID: 17134
+// Module ID: 17412
+// Function ID: 17413
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 7824, 8473, 504, 5753, 7826, 2]
+// Dependencies: [19, 8740, 9616, 504, 5889, 8742, 2]
 // Exports: default
 
-// Module 17133 (useOnNewPendingRequest)
+// Module 17412 (useOnNewPendingRequest)
 import react_mod from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

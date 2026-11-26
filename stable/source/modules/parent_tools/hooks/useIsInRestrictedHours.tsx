@@ -1,13 +1,13 @@
-// Module ID: 19824
-// Function ID: 19825
+// Module ID: 20165
+// Function ID: 20166
 // Name: useIsInRestrictedHours
-// Dependencies: [1385, 7824, 504, 2]
+// Dependencies: [1388, 8740, 504, 2]
 // Exports: default
 
-// Module 19824 (useIsInRestrictedHours)
+// Module 20165 (useIsInRestrictedHours)
 import get_initialized from "get initialized" /* 504 */;
-import UserStore from "UserStore" /* 1385 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
+import UserStore from "UserStore" /* 1388 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useIsInRestrictedHours.tsx");

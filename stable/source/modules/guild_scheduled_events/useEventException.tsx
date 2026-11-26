@@ -1,11 +1,11 @@
-// Module ID: 9088
-// Function ID: 9089
+// Module ID: 7979
+// Function ID: 7980
 // Name: useEventException
-// Dependencies: [6943, 504, 2]
+// Dependencies: [7029, 504, 2]
 // Exports: default, getEventException
 
-// Module 9088 (useEventException)
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6943 */;
+// Module 7979 (useEventException)
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,8 +16,8 @@ const result = size.fileFinishedImporting("modules/guild_scheduled_events/useEve
 export default function useEventException(arg0, arg1) {
   let closure_0;
   _require = arg1;
-  let obj = require("get initialized");
-  let items = [GuildScheduledEventStore];
+  const obj = require("get initialized");
+  const items = [GuildScheduledEventStore];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(closure_0);
     let prop;

@@ -1,10 +1,10 @@
-// Module ID: 7055
-// Function ID: 7056
+// Module ID: 7416
+// Function ID: 7417
 // Name: useRefValue
 // Dependencies: [2]
 // Exports: default
 
-// Module 7055 (useRefValue)
+// Module 7416 (useRefValue)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("hooks/useRefValue.tsx");

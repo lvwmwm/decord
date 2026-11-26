@@ -1,28 +1,28 @@
-// Module ID: 13271
-// Function ID: 13272
+// Module ID: 14004
+// Function ID: 14005
 // Name: ConjurePerfTraceTab
-// Dependencies: [32, 5, 19, 17, 11008, 21, 5170, 575, 6831, 13272, 2118, 7073, 13278, 11051, 5783, 13274, 1266, 8882, 13279, 11264, 1627, 504, 13276, 7390, 7315, 12438, 5889, 13273, 2]
+// Dependencies: [32, 5, 19, 17, 7366, 21, 5306, 575, 6838, 14005, 2121, 7445, 14011, 7387, 5919, 14007, 1269, 8565, 14012, 11113, 1630, 504, 14009, 7888, 7825, 13330, 6025, 14006, 2]
 // Exports: default, openPerfTrace
 
-// Module 13271 (ConjurePerfTraceTab)
+// Module 14004 (ConjurePerfTraceTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import v1 from "v1" /* 1266 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import Card_Card from "Card/Card" /* 7073 */;
-import FileManagerUtils from "FileManagerUtils" /* 8882 */;
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11051 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13274 */;
-import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 13276 */;
-import ConjurePerfTraceList from "ConjurePerfTraceList" /* 13279 */;
+import v1 from "v1" /* 1269 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 7387 */;
+import Card_Card from "Card/Card" /* 7445 */;
+import FileManagerUtils from "FileManagerUtils" /* 8565 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 14007 */;
+import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 14009 */;
+import ConjurePerfTraceList from "ConjurePerfTraceList" /* 14012 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 11008 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 7366 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -63,7 +63,7 @@ function PerfTraceRow(arg0) {
       const id = trace.id;
       const obj = ModalActionCreatorsDefault;
       const obj2 = { projectId: require, traceId: id };
-      obj.pushLazy(asyncRequire(13272, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+      obj.pushLazy(asyncRequire(14005, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
     },
     accessibilityLabel: trace.name,
     children: tmp8(View, obj3)
@@ -72,7 +72,7 @@ function PerfTraceRow(arg0) {
   const obj4 = { style: tmp.rowTop, children: items };
   Card = Card_Card.Card;
   const obj5 = { status: obj6.perfTraceStatus(trace) };
-  const tmp9 = trace(13278);
+  const tmp9 = trace(14011);
   obj6 = ConjurePerfTraceLayout;
   items = [closure_8(tmp9, obj5), , ];
   const obj7 = { variant: "body-sm/semibold", color: "text-default", style: tmp.rowName, lineClamp: 1, children: trace.name };
@@ -299,5 +299,5 @@ export default function ConjurePerfTraceTab(projectId) {
 export function openPerfTrace(projectId, traceId) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { projectId, traceId };
-  obj.pushLazy(asyncRequire(13272, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+  obj.pushLazy(asyncRequire(14005, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
 }

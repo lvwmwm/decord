@@ -1,13 +1,13 @@
-// Module ID: 20555
-// Function ID: 20556
+// Module ID: 20895
+// Function ID: 20896
 // Name: PlayableProgressManager
-// Dependencies: [5, 17423, 3, 7383, 572, 20556, 6872, 5869, 17289, 2]
+// Dependencies: [5, 17696, 3, 7882, 572, 20896, 6957, 6005, 17563, 2]
 
-// Module 20555 (PlayableProgressManager)
+// Module 20895 (PlayableProgressManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlayableStore from "PlayableStore" /* 17423 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import PlayableStore from "PlayableStore" /* 17696 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_2, logger;

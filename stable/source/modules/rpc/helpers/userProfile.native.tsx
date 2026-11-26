@@ -1,14 +1,14 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16970
+// Function ID: 16971
 // Name: userProfile
-// Dependencies: [5, 5407, 1385, 8854, 8856, 2]
+// Dependencies: [5, 5543, 1388, 8476, 7350, 2]
 // Exports: isAnyUserProfileOpen, openUserProfile
 
-// Module 16691 (userProfile)
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8854 */;
+// Module 16970 (userProfile)
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8476 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5407 */;
-import UserStore from "UserStore" /* 1385 */;
+import ActionSheetStore from "ActionSheetStore" /* 5543 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, key;

@@ -1,37 +1,37 @@
-// Module ID: 19409
-// Function ID: 19410
+// Module ID: 19787
+// Function ID: 19788
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 5018, 6931, 10050, 502, 2130, 1072, 5837, 21, 5170, 1187, 575, 11904, 504, 6939, 11897, 8041, 11903, 8877, 11906, 9010, 11948, 11952, 11960, 11973, 11982, 11893, 11949, 11902, 6961, 1652, 5402, 5746, 19410, 1627, 2]
+// Dependencies: [32, 19, 17, 5154, 7016, 11865, 502, 2133, 1072, 5973, 21, 5306, 1187, 575, 12725, 504, 7025, 12718, 6890, 12724, 8560, 12727, 10041, 12785, 12789, 12797, 12810, 12843, 12714, 12786, 12723, 7048, 1655, 5538, 5882, 19788, 1630, 2]
 // Exports: default
 
-// Module 19409 (PictureInPictureGlobal)
+// Module 19787 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import NavigatorConstants from "NavigatorConstants" /* 5746 */;
-import CallConstants from "CallConstants" /* 5837 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6939 */;
-import isChannelFocused from "isChannelFocused" /* 6961 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10050 */;
-import transitionToActivityDefault from "transitionToActivity" /* 11893 */;
-import PictureInPictureDefault from "PictureInPicture" /* 11902 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19410 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import CallConstants from "CallConstants" /* 5973 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 7025 */;
+import isChannelFocused from "isChannelFocused" /* 7048 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11865 */;
+import transitionToActivityDefault from "transitionToActivity" /* 12714 */;
+import PictureInPictureDefault from "PictureInPicture" /* 12723 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 19788 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6931 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import native_mod from "native" /* 1187 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 
 let closure_15;
 let closure_16;
@@ -233,11 +233,11 @@ let closure_18 = react.memo(function PIPContent(channel) {
 let closure_19 = react.memo(function PIPContentContainer(channel) {
   let tmp2;
   let tmp3;
-  const f118439 = () => constants.TOP_RIGHT;
+  const f121313 = () => constants.TOP_RIGHT;
   channel = channel.channel;
-  [tmp2, tmp3] = react.useState(f118439);
+  [tmp2, tmp3] = react.useState(f121313);
   const obj = { channel, preferredPosition: tmp2, onMove: tmp3, children: closure_15(closure_18, { channel }) };
-  _slicedToArray(react.useState(f118439), 2);
+  _slicedToArray(react.useState(f121313), 2);
   const tmp4 = PictureInPictureDefault;
   return closure_15(tmp4, obj);
 });
@@ -271,8 +271,8 @@ export default function PictureInPictureGlobal(channel) {
   }
   let items = [closure_20, , , ];
   const tmp4 = closure_10();
-  const useDerivedValue = _mod1652.useDerivedValue;
-  _mod1652;
+  const useDerivedValue = _mod1655.useDerivedValue;
+  _mod1655;
   items[1] = timing_timing.withTiming;
   items[2] = num;
   items[3] = native.STANDARD_EASING;
@@ -292,9 +292,9 @@ export default function PictureInPictureGlobal(channel) {
   PictureInPictureGlobalTsx1.__initData = tmp6;
   const derivedValue = useDerivedValue(PictureInPictureGlobalTsx1);
   const items2 = [closure_21, , , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
-  items2[1] = _mod1652.interpolate;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
+  items2[1] = _mod1655.interpolate;
   items2[2] = derivedValue;
   items2[3] = NavigatorConstants.NAV_BAR_HEIGHT;
   items2[4] = 12;
@@ -331,6 +331,6 @@ export default function PictureInPictureGlobal(channel) {
   items4 = [metroRequire.absoluteFill, { paddingLeft: rect.left, paddingRight: rect.right }];
   obj3 = { style: items5, pointerEvents: "box-none", children: closure_15(closure_19, { channel }) };
   items5 = [tmp.container, animatedStyle];
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   return closure_15(hasOwnProperty, obj2);
 };

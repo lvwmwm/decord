@@ -1,16 +1,16 @@
-// Module ID: 18578
-// Function ID: 18579
+// Module ID: 18872
+// Function ID: 18873
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 8131, 11662, 18579, 1113, 3608, 2]
+// Dependencies: [19, 21, 7988, 13541, 18873, 1113, 3679, 2]
 // Exports: FavoritesGuildHeaderActionButton
 
-// Module 18578 (FavoritesGuildHeaderActions)
+// Module 18872 (FavoritesGuildHeaderActions)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3608 from "module_3608" /* 3608 */;
-import IconButton2 from "IconButton" /* 8131 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11662 */;
-import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 18579 */;
+import _modDef3679 from "module_3679" /* 3679 */;
+import IconButton2 from "IconButton" /* 7988 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13541 */;
+import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 18873 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,5 +20,5 @@ const result = size.fileFinishedImporting("modules/favorites/native/FavoritesGui
 export function FavoritesGuildHeaderActionButton() {
   const IconButton = IconButton2.IconButton;
   const intl = intl2.intl;
-  return <IconButton variant="secondary" size="sm" icon={AssetRegistryDefault} onPress={FavoritesGuildAddActionSheet.openFavoritesGuildAddActionSheet} accessibilityLabel={intl.string(_modDef3608.G9fGlP)} maxFontSizeMultiplier={1} />;
+  return <IconButton variant="secondary" size="sm" icon={AssetRegistryDefault} onPress={FavoritesGuildAddActionSheet.openFavoritesGuildAddActionSheet} accessibilityLabel={intl.string(_modDef3679.G9fGlP)} maxFontSizeMultiplier={1} />;
 }

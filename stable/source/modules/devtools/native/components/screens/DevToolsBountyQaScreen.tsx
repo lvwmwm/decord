@@ -1,21 +1,21 @@
-// Module ID: 18024
-// Function ID: 18025
+// Module ID: 18301
+// Function ID: 18302
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7952, 21, 5170, 575, 5869, 1627, 504, 6872, 7953, 14956, 9806, 5783, 7157, 7160, 7159, 7071, 12381, 17439, 7197, 6876, 2]
+// Dependencies: [5, 32, 19, 17, 8805, 21, 5306, 575, 6005, 1630, 504, 6957, 8806, 15258, 10133, 5919, 7745, 7747, 7746, 7443, 13271, 17712, 7635, 6961, 2]
 // Exports: default
 
-// Module 18024 (DevToolsBountyQaScreen)
+// Module 18301 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import AdCreativeType from "AdCreativeType" /* 6876 */;
-import QuestActionCreators from "QuestActionCreators" /* 9806 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
+import QuestActionCreators from "QuestActionCreators" /* 10133 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7952 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3;
@@ -41,6 +41,7 @@ let closure_11 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBountyQaScreen.tsx");
 
 export default function DevToolsBountyQaScreen() {
+  let adDecisionsForPlacement;
   let first;
   let items4;
   let items5;
@@ -151,13 +152,15 @@ export default function DevToolsBountyQaScreen() {
   obj = stateFromStores(obj[10]);
   items = [AdDeliveryStore];
   stateFromStores = obj.useStateFromStores(items, () => {
-    const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
-    const value = deliveryAdDecisionByPlacement.get(stateFromStores(obj[11]).AdPlacement.MOBILE_HOME_DOCK_AREA);
+    let first = adDecisionsForPlacement.getAdDecisionsForPlacement(stateFromStores(obj[11]).AdPlacement.MOBILE_HOME_DOCK_AREA)[0];
+    if (first == null) {
+      first = null;
+    }
     let creative;
-    const getDeliveredBounty = stateFromStores(obj[12]).getDeliveredBounty;
+    const getDeliveredBounty = tmp(tmp2[12]).getDeliveredBounty;
     stateFromStores(obj[12]);
-    if (value != null) {
-      creative = value.creative;
+    if (first != null) {
+      creative = first.creative;
     }
     const deliveredBounty = getDeliveredBounty(creative);
     let id;

@@ -1,8 +1,8 @@
-// Module ID: 17540
-// Function ID: 17541
+// Module ID: 17798
+// Function ID: 17799
 // Dependencies: [2]
 
-// Module 17540
+// Module 17798
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/quests/bounties/QuestBar_3DOrbs_2X.png.js");

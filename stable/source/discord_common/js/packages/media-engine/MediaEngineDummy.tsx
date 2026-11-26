@@ -1,12 +1,12 @@
-// Module ID: 6023
-// Function ID: 6024
+// Module ID: 6159
+// Function ID: 6160
 // Name: MediaEngineDummy
-// Dependencies: [5929, 5953, 5959, 2]
+// Dependencies: [6065, 6089, 6095, 2]
 
-// Module 6023 (MediaEngineDummy)
-import MediaEngineEvent from "MediaEngineEvent" /* 5959 */;
-import Constants from "Constants" /* 5929 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5953 */;
+// Module 6159 (MediaEngineDummy)
+import MediaEngineEvent from "MediaEngineEvent" /* 6095 */;
+import Constants from "Constants" /* 6065 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 6089 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -283,6 +283,10 @@ class MediaEngineDummy extends TypedEventEmitter {
     fn([]);
   }
   getMLSSigningKey() {
+    const error = new Error("NOT_IMPLEMENTED");
+    return reject(error);
+  }
+  generateDavePairwiseFingerprint() {
     const error = new Error("NOT_IMPLEMENTED");
     return reject(error);
   }

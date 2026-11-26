@@ -1,13 +1,13 @@
-// Module ID: 20195
-// Function ID: 20196
+// Module ID: 20535
+// Function ID: 20536
 // Name: guildSettingsStickerToasts
-// Dependencies: [5869, 1113, 5891, 2]
+// Dependencies: [6005, 1113, 6027, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 20195 (guildSettingsStickerToasts)
+// Module 20535 (guildSettingsStickerToasts)
 import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");

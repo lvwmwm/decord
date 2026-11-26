@@ -1,26 +1,26 @@
-// Module ID: 11591
-// Function ID: 11592
+// Module ID: 15288
+// Function ID: 15289
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1385, 1387, 1072, 21, 5170, 575, 11592, 7890, 11617, 5874, 5783, 1113, 11618, 504, 2107, 6192, 1260, 1627, 7668, 5406, 8854, 10184, 10441, 5420, 5424, 2]
+// Dependencies: [19, 17, 1388, 1390, 1072, 21, 5306, 575, 10085, 7361, 15289, 6010, 5919, 1113, 10079, 504, 15290, 2110, 6328, 1264, 1630, 8604, 5542, 8476, 11279, 10074, 5556, 5560, 2]
 // Exports: default
 
-// Module 11591 (TieredTenureBadgeActionSheet)
+// Module 15288 (TieredTenureBadgeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import openUserSettings from "openUserSettings" /* 7668 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7890 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8854 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11592 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11617 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7361 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8476 */;
+import openUserSettings from "openUserSettings" /* 8604 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 10085 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 15289 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
+import UserStore from "UserStore" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,7 +71,7 @@ function TieredTenureBadgeItem(arg0) {
     const obj3 = { resizeMode: "contain", source: small };
     items1 = [authStore(FastImageDefault, obj3), , , ];
     const obj4 = { style: tmp.badgeName, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(tieredTenureBadgeData.nameUnformatted) };
-    const Text = tmp2(5783).Text;
+    const Text = tmp2(5919).Text;
     intl = tmp2(1113).intl;
     items1[1] = authStore(Text, obj4);
     const obj5 = { style: tmp.badgeRequirement, variant: "body-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
@@ -82,7 +82,7 @@ function TieredTenureBadgeItem(arg0) {
     }
     if (isUsersBadge) {
       const obj6 = { style: tmp.badgePremiumSince, variant: "body-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj7) };
-      const Text2 = tmp2(5783).Text;
+      const Text2 = tmp2(5919).Text;
       const intl2 = tmp2(1113).intl;
       formatToPlainString = intl2.formatToPlainString;
       const _Date = Date;
@@ -121,12 +121,12 @@ export default function TieredTenureBadgeActionSheet(userId) {
   let items5;
   let items6;
   let loading;
-  let obj15;
+  let obj16;
   let onPress;
   let string2Result;
   let stringResult;
   let stringResult1;
-  let tmp27;
+  let tmp28;
   userId = userId.userId;
   let flag = userId.shouldShowCTA;
   if (flag === undefined) {
@@ -145,18 +145,20 @@ export default function TieredTenureBadgeActionSheet(userId) {
   let items = [UserStore];
   const stateFromStores = obj3.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj4 = userId(tieredTenureBadgeDataForUser[16]);
-  const isPremiumResult = obj4.isPremium(stateFromStores, TIER_2.TIER_2);
+  const canUseTenureBadge = obj4.useCanUseTenureBadge();
+  const obj5 = userId(tieredTenureBadgeDataForUser[17]);
   let premiumType;
-  const isPremiumAtLeast = userId(tieredTenureBadgeDataForUser[16]).isPremiumAtLeast;
-  userId(tieredTenureBadgeDataForUser[16]);
-  const tmp6 = TIER_2;
+  const isPremiumResult = obj5.isPremium(stateFromStores, TIER_2.TIER_2);
+  const isPremiumAtLeast = userId(tieredTenureBadgeDataForUser[17]).isPremiumAtLeast;
+  userId(tieredTenureBadgeDataForUser[17]);
+  const tmp7 = TIER_2;
   if (stateFromStores != null) {
     premiumType = stateFromStores.premiumType;
   }
-  const obj5 = { type: tmp2(tmp3[18]).ImpressionTypes.HALFSHEET, name: tmp2(tmp3[18]).ImpressionNames.TIERED_TENURE_BADGE_MODAL, properties: { badge: id, premium_type: isPremiumResult, viewed_user_id: userId } };
-  const isPremiumAtLeastResult = isPremiumAtLeast(premiumType, tmp6.TIER_0);
+  const obj6 = { type: tmp2(tmp3[19]).ImpressionTypes.HALFSHEET, name: tmp2(tmp3[19]).ImpressionNames.TIERED_TENURE_BADGE_MODAL, properties: { badge: id, premium_type: isPremiumResult, viewed_user_id: userId } };
+  const isPremiumAtLeastResult = isPremiumAtLeast(premiumType, tmp7.TIER_0);
   id = undefined;
-  const tmp12 = require("useTrackImpression");
+  const tmp13 = require("useTrackImpression");
   if (tieredTenureBadgeDataForUser != null) {
     id = tieredTenureBadgeDataForUser.id;
   }
@@ -165,13 +167,13 @@ export default function TieredTenureBadgeActionSheet(userId) {
     id1 = tieredTenureBadgeDataForUser.id;
   }
   let id2;
-  const obj6 = { disableTrack: null == id1 };
+  const obj7 = { disableTrack: null == id1 };
   if (tieredTenureBadgeDataForUser != null) {
     id2 = tieredTenureBadgeDataForUser.id;
   }
   const items1 = [id2];
-  tmp12(obj5, obj6, items1);
-  const bottom = tmp11(tmp3[19])().bottom;
+  tmp13(obj6, obj7, items1);
+  const bottom = tmp12(tmp3[20])().bottom;
   const items2 = [userId];
   const callback = react.useCallback(() => {
     const obj = openUserSettings;
@@ -202,39 +204,39 @@ export default function TieredTenureBadgeActionSheet(userId) {
     }
     return items;
   }, []);
-  const obj7 = { style: tmp.headerContainer, children: items3 };
-  const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: stringResult };
+  const obj8 = { style: tmp.headerContainer, children: items3 };
+  const obj9 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: stringResult };
   const Text = tmp2(tmp3[12]).Text;
   const intl = tmp2(tmp3[13]).intl;
   const string = intl.string;
   const t = tmp2(tmp3[13]).t;
-  if (isPremiumResult) {
+  if (canUseTenureBadge) {
     stringResult = string(t.Og62j7);
   } else {
     stringResult = string(t.RtGeFS);
   }
-  items3 = [closure_10(Text, obj8), ];
-  const obj9 = { variant: "body-md/medium", color: "text-default", style: tmp.subtitle, children: stringResult1 };
+  items3 = [closure_10(Text, obj9), ];
+  const obj10 = { variant: "body-md/medium", color: "text-default", style: tmp.subtitle, children: stringResult1 };
   const Text2 = tmp2(tmp3[12]).Text;
   const intl2 = tmp2(tmp3[13]).intl;
-  if (isPremiumResult) {
+  if (canUseTenureBadge) {
     stringResult1 = intl2.string(tmp2(tmp3[13]).t.IdAP91);
   } else {
-    const obj10 = { learnMoreHook: callback };
-    stringResult1 = intl2.format(tmp2(tmp3[13]).t["bF+q7R"], obj10);
+    const obj11 = { learnMoreHook: callback };
+    stringResult1 = intl2.format(tmp2(tmp3[13]).t["bF+q7R"], obj11);
   }
-  items3[1] = closure_10(Text2, obj9);
-  const obj11 = { style: items4, children: null };
+  items3[1] = closure_10(Text2, obj10);
+  const obj12 = { style: items4, children: null };
   items4 = [tmp.footer, { paddingBottom: bottom }];
-  const tmp19Result = closure_11(View, obj7);
-  const tmp11Result = require("NitroUpsellButton");
-  if (isPremiumResult) {
-    const obj12 = { shiny: false, text: intl4.string(tmp2(tmp3[13]).t.hvVgAZ), onPress: callback };
+  const tmp20Result = closure_11(View, obj8);
+  const tmp12Result = require("NitroUpsellButton");
+  if (canUseTenureBadge) {
+    const obj13 = { shiny: false, text: intl4.string(tmp2(tmp3[13]).t.hvVgAZ), onPress: callback };
     intl4 = tmp2(tmp3[13]).intl;
-    obj11.children = closure_10(tmp11Result, obj12);
-    tmp27 = obj11;
+    obj12.children = closure_10(tmp12Result, obj13);
+    tmp28 = obj12;
   } else {
-    const obj13 = { loading, text: string2Result, onPress };
+    const obj14 = { loading, text: string2Result, onPress };
     const intl3 = tmp2(tmp3[13]).intl;
     const string2 = intl3.string;
     const t2 = tmp2(tmp3[13]).t;
@@ -243,22 +245,22 @@ export default function TieredTenureBadgeActionSheet(userId) {
     } else {
       string2Result = string2(t2.pj0XBN);
     }
-    obj11.children = closure_10(tmp11Result, obj13);
-    tmp27 = obj11;
+    obj12.children = closure_10(tmp12Result, obj14);
+    tmp28 = obj12;
   }
-  let tmp29;
-  const tmp21Result = closure_10(View, tmp27);
-  const BottomSheet = tmp2(tmp3[25]).BottomSheet;
+  let tmp30;
+  const tmp22Result = closure_10(View, tmp28);
+  const BottomSheet = tmp2(tmp3[26]).BottomSheet;
   if (flag) {
-    tmp29 = tmp21Result;
+    tmp30 = tmp22Result;
   }
-  const obj14 = { scrollable: true, startExpanded: true, footer: tmp29, children: closure_11(BottomSheetScrollView, obj15) };
-  obj15 = { contentContainerStyle: items5, children: items6 };
+  const obj15 = { scrollable: true, startExpanded: true, footer: tmp30, children: closure_11(BottomSheetScrollView, obj16) };
+  obj16 = { contentContainerStyle: items5, children: items6 };
   items5 = [tmp.container, ];
-  const obj16 = { paddingBottom: bottom + 64 };
-  items5[1] = obj16;
-  items6 = [tmp19Result, ];
-  BottomSheetScrollView = tmp2(tmp3[26]).BottomSheetScrollView;
+  const obj17 = { paddingBottom: bottom + 64 };
+  items5[1] = obj17;
+  items6 = [tmp20Result, ];
+  BottomSheetScrollView = tmp2(tmp3[27]).BottomSheetScrollView;
   items6[1] = memo.map((arr, index) => {
     let premiumSince;
     let user;
@@ -293,6 +295,6 @@ export default function TieredTenureBadgeActionSheet(userId) {
     items[1] = rowContainerWithUsersBadge;
     return tmp2(tmp3, obj, index);
   });
-  return closure_10(BottomSheet, obj14);
+  return closure_10(BottomSheet, obj15);
 };
 export const TIERED_TENURE_BADGE_ACTION_SHEET_KEY = "TIERED_TENURE_BADGE_ACTION_SHEET";

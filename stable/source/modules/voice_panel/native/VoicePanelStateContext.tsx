@@ -1,18 +1,18 @@
-// Module ID: 11394
-// Function ID: 11395
+// Module ID: 11984
+// Function ID: 11985
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11395, 11393, 11396, 7338, 11397, 1629, 11403, 2]
+// Dependencies: [19, 11985, 11983, 11986, 7848, 11987, 1632, 11993, 2]
 
-// Module 11394 (VoicePanelStateContext)
-import SafeAreaConstants from "SafeAreaConstants" /* 1629 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11396 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11397 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11403 */;
+// Module 11984 (VoicePanelStateContext)
+import SafeAreaConstants from "SafeAreaConstants" /* 1632 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11987 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11993 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11393 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7338 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7848 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;
@@ -25,7 +25,7 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsConstants);
 const obj = {
   channelId: "context-not-initialized",
-  channelType: "e",
+  channelType: "fileFinishedImporting",
   connected: ReanimatedHelperTypes.createFakeSharedValue(false),
   contentDimensions: ReanimatedHelperTypes.createFakeSharedValue({ width: 0, height: 0 }),
   controlsSpecs: ReanimatedHelperTypes.createFakeSharedValue(obj2),
@@ -35,6 +35,14 @@ const obj = {
     throw error;
   },
   dockContentSwap: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockRestLeft: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockRestWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockSlotWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockSheetWidth: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockSheetLeft: ReanimatedHelperTypes.createFakeSharedValue(0),
+  dockTouched: ReanimatedHelperTypes.createFakeSharedValue(false),
+  isDockInLayout: ReanimatedHelperTypes.createFakeSharedValue(false),
+  isDockSlotEmpty: ReanimatedHelperTypes.createFakeSharedValue(false),
   dockEntryProgress: ReanimatedHelperTypes.createFakeSharedValue(1),
   dockHeight: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockJoinMorphOrigin: ReanimatedHelperTypes.createFakeSharedValue(null),

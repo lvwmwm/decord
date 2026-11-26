@@ -1,14 +1,14 @@
-// Module ID: 8096
-// Function ID: 8097
+// Module ID: 8230
+// Function ID: 8231
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [8097, 1449, 8071, 504, 2]
+// Dependencies: [8231, 1452, 8205, 504, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 8096 (ExpressiveModalV2Experiment)
+// Module 8230 (ExpressiveModalV2Experiment)
 import get_initialized from "get initialized" /* 504 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8071 */;
-import SafetyHubStore from "SafetyHubStore" /* 8097 */;
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8205 */;
+import SafetyHubStore from "SafetyHubStore" /* 8231 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

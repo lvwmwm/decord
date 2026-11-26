@@ -1,32 +1,32 @@
-// Module ID: 8463
-// Function ID: 8464
+// Module ID: 12070
+// Function ID: 12071
 // Name: NodeView
-// Dependencies: [32, 19, 17, 5786, 5019, 5102, 8464, 8461, 1072, 1083, 21, 5170, 575, 5771, 6195, 5783, 5167, 5891, 504, 8465, 8466, 1499, 5422, 6185, 8458, 8456, 5921, 8468, 8472, 8473, 7388, 8477, 8478, 8479, 8480, 15469, 15470, 15471, 15472, 15473, 15474, 15475, 15476, 15477, 15479, 15480, 15481, 15482, 15483, 15484, 15485, 15486, 15489, 2]
+// Dependencies: [32, 19, 17, 5922, 5155, 5238, 12071, 12069, 1072, 1083, 21, 5306, 575, 5907, 6331, 5919, 5303, 6027, 504, 12072, 12073, 1502, 5558, 6321, 12066, 12064, 6057, 12075, 12029, 9616, 7415, 12079, 12080, 12081, 12082, 12083, 12084, 12280, 12281, 12282, 12283, 12284, 12285, 12286, 12288, 12291, 12292, 12293, 12294, 12297, 12298, 12299, 12302, 2]
 // Exports: default
 
-// Module 8463 (NodeView)
+// Module 12070 (NodeView)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
-import ColorUtils from "ColorUtils" /* 5167 */;
-import reactDefault from "react" /* 5771 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5891 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5921 */;
-import CustomMarkupAll from "CustomMarkup" /* 6195 */;
-import MenuTypes from "MenuTypes" /* 8456 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 8461 */;
-import MenuConstants from "MenuConstants" /* 8464 */;
-import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 8465 */;
-import ArrowDefault from "Arrow" /* 8466 */;
+import ColorUtils from "ColorUtils" /* 5303 */;
+import reactDefault from "react" /* 5907 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
+import CustomMarkupAll from "CustomMarkup" /* 6331 */;
+import MenuTypes from "MenuTypes" /* 12064 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 12069 */;
+import MenuConstants from "MenuConstants" /* 12071 */;
+import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 12072 */;
+import ArrowDefault from "Arrow" /* 12073 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5786 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ function HeaderView(node) {
   }
   if (tmp6) {
     const obj2 = { ref: headerRef, style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: header };
-    tmp6 = authStore4(Text_Text.Text, obj2);
+    tmp6 = authStore3(Text_Text.Text, obj2);
   }
   items = [tmp6, , ];
   let tmp9 = null;
@@ -71,7 +71,7 @@ function HeaderView(node) {
     if (subheader.length > 0) {
       const obj3 = { style: tmp.subheader, variant: "body-md/medium", color: "text-default", children: tmp3(subheader) };
       const Text = Text_Text.Text;
-      tmp9 = authStore4(Text, obj3);
+      tmp9 = authStore3(Text, obj3);
     }
   }
   items[1] = tmp9;
@@ -80,7 +80,7 @@ function HeaderView(node) {
     tmp12 = null;
     if (description.length > 0) {
       const obj4 = { style: tmp.description, variant: "body-xs/medium", color: "text-default", children: description };
-      tmp12 = authStore4(Text_Text.Text, obj4);
+      tmp12 = authStore3(Text_Text.Text, obj4);
     }
   }
   items[2] = tmp12;
@@ -102,11 +102,11 @@ function InfoView(node) {
     items[1] = obj2;
     obj3 = ColorUtils;
     const obj4 = { size: "md", color: tmp.infoBox.backgroundColor };
-    items1 = [authStore4(CircleInformationIcon.CircleInformationIcon, obj4), ];
-    const obj5 = { style: tmp.infoBoxText, children: authStore4(Text, obj6) };
+    items1 = [authStore3(CircleInformationIcon.CircleInformationIcon, obj4), ];
+    const obj5 = { style: tmp.infoBoxText, children: authStore3(Text, obj6) };
     obj6 = { variant: "body-sm/normal", color: "interactive-text-active", includeFontPadding: true, children: tmp3(info) };
     Text = Text_Text.Text;
-    items1[1] = authStore4(metroRequire, obj5);
+    items1[1] = authStore3(metroRequire, obj5);
     tmp4 = closure_17(metroRequire, obj);
   }
   return tmp4;
@@ -137,7 +137,7 @@ function ChildItem(child) {
   }
   if (stateFromStores) {
     const obj3 = { style: tmp.debugText, variant: "body-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp10(tmp6(5783).Text, obj3);
+    stateFromStores = tmp10(tmp6(5919).Text, obj3);
   }
   return closure_16(tmp11, obj2);
 }
@@ -157,7 +157,7 @@ function ChildrenView(node) {
         children: children.map((child) => {
               const tmp = _slicedToArray(child, 2);
               const obj = { child, nodeMap: importDefault, onPress: require };
-              return authStore4(ChildItem, obj, "" + tmp[0] + "+" + tmp[1]);
+              return authStore3(ChildItem, obj, "" + tmp[0] + "+" + tmp[1]);
             })
       };
       tmp2 = closure_16(closure_6, obj);

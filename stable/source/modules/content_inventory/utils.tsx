@@ -1,17 +1,17 @@
-// Module ID: 8822
-// Function ID: 8823
+// Module ID: 8419
+// Function ID: 8420
 // Name: utils
-// Dependencies: [1089, 11, 1113, 2166, 8823, 4596, 8818, 2]
+// Dependencies: [1089, 11, 1113, 2169, 8420, 4731, 8421, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8822 (utils)
+// Module 8419 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import _mod4596 from "module_4596" /* 4596 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8818 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8823 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import _mod4731 from "module_4731" /* 4731 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8420 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8421 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -107,8 +107,8 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef2166(timestamp);
-  const tmp3 = _modDef2166;
+  const obj2 = _modDef2169(timestamp);
+  const tmp3 = _modDef2169;
   const obj3 = SnowflakeUtilsDefault;
   const diffResult = obj2.diff(tmp3(obj3.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
@@ -427,8 +427,8 @@ export function getFullResurrectedBadgeText(start) {
   let num4;
   let num5;
   const obj = { start, end: new Date() };
-  const intervalToDuration = _mod4596.intervalToDuration;
-  _mod4596;
+  const intervalToDuration = _mod4731.intervalToDuration;
+  _mod4731;
   new Date();
   const intervalToDurationResult = intervalToDuration(obj);
   const months = intervalToDurationResult.months;
@@ -466,13 +466,13 @@ export function getFullResurrectedBadgeText(start) {
 export function getEpisodeBadgeText(large_text) {
   if (null != large_text) {
     if ("" !== large_text) {
-      const obj2 = /\w+ (\d+), \w+ (\d+)/;
-      const match = obj2.exec(large_text);
+      const obj = /\w+ (\d+), \w+ (\d+)/;
+      const match = obj.exec(large_text);
       let formatToPlainStringResult = null;
       if (null != match) {
         const intl = intl4.intl;
-        const obj = { seasonNum: match[1], episodeNum: match[2] };
-        formatToPlainStringResult = intl.formatToPlainString(intl4.t.ijVm6y, obj);
+        const obj2 = { seasonNum: match[1], episodeNum: match[2] };
+        formatToPlainStringResult = intl.formatToPlainString(intl4.t.ijVm6y, obj2);
       }
       return formatToPlainStringResult;
     }

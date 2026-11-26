@@ -1,14 +1,14 @@
-// Module ID: 14223
-// Function ID: 14224
+// Module ID: 14811
+// Function ID: 14812
 // Name: useAutocompleteAnimatedHeightStyles
-// Dependencies: [5356, 1652, 5402, 5405, 2]
+// Dependencies: [5492, 1655, 5538, 5541, 2]
 // Exports: default
 
-// Module 14223 (useAutocompleteAnimatedHeightStyles)
-import _mod1652 from "module_1652" /* 1652 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 5356 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import timingPresets from "timingPresets" /* 5405 */;
+// Module 14811 (useAutocompleteAnimatedHeightStyles)
+import _mod1655 from "module_1655" /* 1655 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 5492 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import timingPresets from "timingPresets" /* 5541 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = { code: "(function useAutocompleteAnimatedHeightStylesTsx1(){let[withTiming,height,timingStandard,isFrozenSharedValue]=this.__closure;return{height:withTiming(height,timingStandard),display:!isFrozenSharedValue.get()?'flex':'none'};})" };
@@ -23,8 +23,8 @@ export default function useAutocompleteAnimatedHeightStyles(arg0, arg1) {
   let obj = ScreenIndexFrozen;
   const isScreenIndexFrozenSharedValue = obj.useIsScreenIndexFrozenSharedValue(arg1);
   const items = [closure_2, , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[1] = timing_timing.withTiming;
   items[2] = arg0;
   items[3] = timingPresets.timingStandard;

@@ -1,23 +1,23 @@
-// Module ID: 19846
-// Function ID: 19847
+// Module ID: 20187
+// Function ID: 20188
 // Name: AudioSessionModeManager
-// Dependencies: [17, 5018, 6845, 6801, 502, 5019, 2130, 5073, 5835, 2117, 1072, 1377, 19847, 7383, 2]
+// Dependencies: [17, 5154, 6932, 6810, 502, 5155, 2133, 5209, 5971, 2120, 1072, 1380, 20188, 7882, 2]
 
-// Module 19846 (AudioSessionModeManager)
+// Module 20187 (AudioSessionModeManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import VoicePermissionManager from "VoicePermissionManager" /* 19847 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6845 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
+import VoicePermissionManager from "VoicePermissionManager" /* 20188 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6932 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MediaEngineStore from "MediaEngineStore" /* 2130 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import VoiceStateStore from "VoiceStateStore" /* 5835 */;
-import AppStateStore from "AppStateStore" /* 2117 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import AppStateStore from "AppStateStore" /* 2120 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let map;

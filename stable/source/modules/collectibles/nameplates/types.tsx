@@ -1,9 +1,9 @@
-// Module ID: 2113
-// Function ID: 2114
+// Module ID: 2116
+// Function ID: 2117
 // Name: types
 // Dependencies: [2]
 
-// Module 2113 (types)
+// Module 2116 (types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/types.tsx");

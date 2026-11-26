@@ -1,229 +1,142 @@
 // Module ID: 1791
 // Function ID: 1792
-// Dependencies: [32, 41, 42, 1758, 1755, 1761, 1662]
+// Dependencies: [32, 41, 42, 1668, 1792, 1793, 1794, 1761, 1665, 1795]
 
 // Module 1791
 import _createClassDefault from "_createClass" /* 42 */;
-import _mod1662 from "module_1662" /* 1662 */;
-import _mod1758 from "module_1758" /* 1758 */;
+import _mod1665 from "module_1665" /* 1665 */;
+import _mod1668 from "module_1668" /* 1668 */;
 import _mod1761 from "module_1761" /* 1761 */;
+import _modDef1792 from "module_1792" /* 1792 */;
+import _modDef1793 from "module_1793" /* 1793 */;
+import _modDef1794 from "module_1794" /* 1794 */;
+import _modDef1795 from "module_1795" /* 1795 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let tmp2;
-const _mod1755 = tmp2(1755);
-function nullifyUndefinedValues(buildResult) {
-  for (const key10005 in buildResult) {
-    if (undefined !== buildResult[key10005]) {
-      continue;
-    } else {
-      buildResult[key10005] = null;
-      continue;
+class CSSManager {
+  constructor(_getViewInfoResult, name) {
+    let reactViewName;
+    let shadowNodeWrapper;
+    let viewTag;
+    ({ shadowNodeWrapper, viewTag, reactViewName } = _getViewInfoResult);
+    if (reactViewName === undefined) {
+      reactViewName = "RCTView";
     }
-    continue;
-  }
-}
-function getPropertyTransitionSettings(nextResult, specificProperties) {
-  let tmp = null;
-  if (specificProperties) {
-    let tmp3;
-    if (!specificProperties.specificProperties) {
-      let all = specificProperties.settings[nextResult];
-      if (all == null) {
-        all = specificProperties.settings.all;
-      }
-      if (all == null) {
-        all = null;
-      }
-      tmp3 = all;
-    } else {
-      specificProperties = specificProperties.specificProperties;
-      tmp3 = null;
+    let str = name;
+    if (name === undefined) {
+      str = "";
     }
-    tmp = tmp3;
-  }
-  return tmp;
-}
-class CSSPseudoStylesManager {
-  constructor(shadowNodeWrapper, viewTag, propsBuilder, componentName) {
-    _classCallCheck(this, CSSPseudoStylesManager);
-    this.prevPseudoStylesBySelector = null;
-    this.prevTransitionProperties = null;
-    this.isRegistered = false;
-    this.shadowNodeWrapper = shadowNodeWrapper;
+    _classCallCheck(this, CSSManager);
+    this.cssCallbacksManager = null;
+    this.hadTransitionLastUpdate = false;
     this.viewTag = viewTag;
-    this.propsBuilder = propsBuilder;
-    this.componentName = componentName;
+    const obj = _mod1668;
+    const compoundComponentName = obj.getCompoundComponentName(reactViewName, str);
+    const obj2 = _mod1668;
+    this.propsBuilder = obj2.getPropsBuilder(compoundComponentName);
+    this.cssAnimationsManager = new _modDef1792(shadowNodeWrapper, viewTag, compoundComponentName);
+    new _modDef1792(shadowNodeWrapper, viewTag, compoundComponentName);
+    this.cssTransitionsManager = new _modDef1793(shadowNodeWrapper, viewTag);
+    new _modDef1793(shadowNodeWrapper, viewTag);
+    this.cssPseudoStylesManager = new _modDef1794(shadowNodeWrapper, viewTag, this.propsBuilder, compoundComponentName);
+    new _modDef1794(shadowNodeWrapper, viewTag, this.propsBuilder, compoundComponentName);
   }
 }
 const entry = {
   key: "update",
-  value: function update(prevPseudoStylesBySelector, prevTransitionProperties) {
-    function hasRemovedNativeSelector(prevPseudoStylesBySelector, prevPseudoStylesBySelector2) {
-      const tmp = prevPseudoStylesBySelector;
-      if (tmp) {
-        const _Set = Set;
-        if (prevPseudoStylesBySelector) {
-          const _Object = Object;
-          const self3 = this;
-          const self4 = this;
-          let _Set1 = new _Set(Object.keys(prevPseudoStylesBySelector));
-        } else {
-          const self = this;
-          const self2 = this;
-          _Set1 = new _Set();
+  value: function update(iter) {
+    let buildResult;
+    let tmp4;
+    let tmp5;
+    let obj = arg1;
+    if (arg1 === undefined) {
+      obj = {};
+    }
+    const self = this;
+    const obj2 = _mod1761;
+    const tmp3 = _slicedToArray(obj2.filterCSSAndStyleProperties(iter), 4);
+    [tmp4, tmp5] = tmp3;
+    let tmp8 = null !== tmp4;
+    const cssAnimationsManager = this.cssAnimationsManager;
+    const tmp6 = tmp3[2];
+    const tmp7 = tmp3[3];
+    const result = cssAnimationsManager.hasAttachedAnimations();
+    const obj3 = _mod1761;
+    const tmp11 = _slicedToArray(obj3.splitCSSCallbacks(obj), 2);
+    this.syncCallbacks(tmp11[0], tmp11[1]);
+    if (!tmp8) {
+      if (null === tmp5) {
+        const cssTransitionsManager = self.cssTransitionsManager;
+        let tmp17 = buildResult;
+        if (tmp17) {
+          if (!tmp8) {
+            tmp8 = result;
+          }
+          if (!tmp8) {
+            let IS_ANDROID = tmp(1668).IS_ANDROID;
+            if (IS_ANDROID) {
+              IS_ANDROID = null !== tmp5 || tmp15;
+            }
+            tmp8 = IS_ANDROID;
+          }
+          tmp17 = tmp8;
         }
-        const _Object2 = Object;
-        const keys = Object.keys(prevPseudoStylesBySelector);
-        return keys.some((item) => {
-          const NATIVE_PSEUDO_SELECTORS = _mod1761.NATIVE_PSEUDO_SELECTORS;
-          const hasItem = NATIVE_PSEUDO_SELECTORS.has(item) && !_Set1.has(item);
-          return hasItem;
-        });
-      } else {
-        return false;
+        if (tmp17) {
+          const tmpResult = _mod1665;
+          tmpResult.setViewStyle(self.viewTag, buildResult);
+        }
+        const cssAnimationsManager2 = self.cssAnimationsManager;
+        cssAnimationsManager2.update(tmp4, tmp13);
+        const cssPseudoStylesManager = self.cssPseudoStylesManager;
+        cssPseudoStylesManager.update(tmp6, tmp5);
+        self.hadTransitionLastUpdate = null !== tmp5;
       }
     }
-    let self = this;
-    let tmp = require;
-    const obj = _mod1758;
-    if (!obj.deepEqual(prevPseudoStylesBySelector, this.prevPseudoStylesBySelector)) {
-      self.prevPseudoStylesBySelector = prevPseudoStylesBySelector;
-      self.prevTransitionProperties = prevTransitionProperties;
-      let isRegistered = self.isRegistered;
-      if (prevPseudoStylesBySelector) {
-        if (isRegistered) {
-          isRegistered = hasRemovedNativeSelector(self.prevPseudoStylesBySelector, prevPseudoStylesBySelector);
-        }
-        if (isRegistered) {
-          self.detach();
-        }
-        let result = null;
-        if (prevTransitionProperties) {
-          const tmp2Result = _mod1755;
-          result = tmp2Result.normalizeCSSTransitionProperties(prevTransitionProperties);
-        }
-        const obj2 = {};
-        let _Object = Object;
-        const entries = Object.entries(prevPseudoStylesBySelector);
-        const tmp15 = entries[Symbol.iterator]();
-        while (tmp15 !== undefined) {
-          let tmp20 = _slicedToArray(tmp17, 2);
-          let defaultStyle = tmp20[1].defaultStyle;
-          let first = tmp20[0];
-          let NATIVE_PSEUDO_SELECTORS = _mod1761.NATIVE_PSEUDO_SELECTORS;
-          if (NATIVE_PSEUDO_SELECTORS.has(first)) {
-            let _Object2 = Object;
-            let merged = Object.assign(obj2, defaultStyle);
-          }
-          continue;
-        }
-        const propsBuilder = self.propsBuilder;
-        const buildResult = propsBuilder.build(obj2, { includeUnprocessed: true });
-        nullifyUndefinedValues(buildResult);
-        const items = [];
-        const _Object3 = Object;
-        const entries1 = Object.entries(prevPseudoStylesBySelector);
-        for (const item10081 of entries1) {
-          let tmp35 = _slicedToArray(item10081, 2);
-          let first1 = tmp35[0];
-          let selectorStyle = tmp35[1].selectorStyle;
-          let tmp37 = first1;
-          let NATIVE_PSEUDO_SELECTORS2 = _mod1761.NATIVE_PSEUDO_SELECTORS;
-          if (NATIVE_PSEUDO_SELECTORS2.has(first1)) {
-            let arr = items.push(self.buildPseudoStyleEntry(tmp37, selectorStyle, buildResult, result));
-          }
-          continue;
-        }
-        if (items.length > 0) {
-          const obj3 = { defaultStyle: buildResult, selectors: items };
-          const obj5 = _mod1662;
-          obj5.registerPseudoStyles(self.shadowNodeWrapper, obj3);
-          self.isRegistered = true;
-        }
-      } else if (isRegistered) {
-        self.detach();
-      }
-    } else {
-      _mod1758;
-    }
+    const propsBuilder = self.propsBuilder;
+    buildResult = propsBuilder.build(tmp7);
   }
 };
-let items = [
+const items = [
   entry,
   {
     key: "unmountCleanup",
     value: function unmountCleanup() {
       const self = this;
-      if (this.isRegistered) {
-        self.detach();
+      if (this.cssCallbacksManager != null) {
+        this.cssCallbacksManager.retire();
       }
-      self.prevPseudoStylesBySelector = null;
-      self.prevTransitionProperties = null;
+      const cssAnimationsManager = self.cssAnimationsManager;
+      cssAnimationsManager.unmountCleanup();
+      const cssTransitionsManager = self.cssTransitionsManager;
+      cssTransitionsManager.unmountCleanup();
+      const cssPseudoStylesManager = self.cssPseudoStylesManager;
+      cssPseudoStylesManager.unmountCleanup();
     }
   },
   {
-    key: "detach",
-    value: function detach() {
-      const obj = _mod1662;
-      const result = obj.unregisterPseudoStyles(this.viewTag);
-      this.isRegistered = false;
-    }
-  },
-  {
-    key: "buildPseudoStyleEntry",
-    value: function buildPseudoStyleEntry(selector, selectorStyle, buildResult, result) {
-      let flag;
-      let items;
-      let num;
-      let num2;
-      let str;
-      const propsBuilder = this.propsBuilder;
-      buildResult = propsBuilder.build(selectorStyle, { includeUnprocessed: true });
-      nullifyUndefinedValues(buildResult);
-      const obj = {};
-      const keys = Object.keys(buildResult);
-      const iter = keys[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        let tmp6 = getPropertyTransitionSettings(nextResult, result);
-        let tmp7 = tmp6;
-        let obj2 = { value: items, duration: num, delay: num2, timingFunction: str, allowDiscrete: flag };
-        items = [buildResult[nextResult], buildResult[nextResult]];
-        num = undefined;
-        if (tmp6 != null) {
-          num = tmp6.duration;
+    key: "syncCallbacks",
+    value: function syncCallbacks(arg0, arg1) {
+      const self = this;
+      if (!this.cssCallbacksManager) {
+        if (!arg0) {
+          if (!arg1) {
+            return { animationEventMask: 0, transitionEventMask: 0 };
+          }
         }
-        if (num == null) {
-          num = 0;
-        }
-        num2 = undefined;
-        if (tmp7 != null) {
-          num2 = tmp7.delay;
-        }
-        if (num2 == null) {
-          num2 = 0;
-        }
-        str = undefined;
-        if (tmp7 != null) {
-          str = tmp7.timingFunction;
-        }
-        if (str == null) {
-          str = "ease";
-        }
-        flag = undefined;
-        if (tmp7 != null) {
-          flag = tmp7.allowDiscrete;
-        }
-        if (flag == null) {
-          flag = false;
-        }
-        obj[nextResult] = obj2;
-        continue;
+        const self2 = this;
+        const self3 = this;
+        self.cssCallbacksManager = new _modDef1795(self.viewTag);
+        const tmp3 = new _modDef1795(self.viewTag);
       }
-      return { selector, selectorStyle: buildResult, transition: obj };
+      const cssCallbacksManager = self.cssCallbacksManager;
+      const result = cssCallbacksManager.syncAnimationCallbacks(arg0);
+      const cssCallbacksManager2 = self.cssCallbacksManager;
+      const result1 = cssCallbacksManager2.syncTransitionCallbacks(arg1);
+      const obj = { animationEventMask: cssCallbacksManager3.getAnimationEventMask(), transitionEventMask: cssCallbacksManager4.getTransitionEventMask() };
+      return obj;
     }
   }
 ];
 
-export default _createClassDefault(CSSPseudoStylesManager, items);
+export default _createClassDefault(CSSManager, items);

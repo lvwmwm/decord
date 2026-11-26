@@ -1,14 +1,14 @@
-// Module ID: 14855
-// Function ID: 14856
+// Module ID: 15656
+// Function ID: 15657
 // Name: VideoDenyIcon
-// Dependencies: [19, 21, 575, 5873, 14856, 2]
+// Dependencies: [19, 21, 575, 6009, 15657, 2]
 // Exports: VideoDenyIcon
 
-// Module 14855 (VideoDenyIcon)
+// Module 15656 (VideoDenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 14856 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 15657 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

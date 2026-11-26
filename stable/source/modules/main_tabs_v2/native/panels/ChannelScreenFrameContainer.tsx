@@ -1,19 +1,19 @@
-// Module ID: 18999
-// Function ID: 19000
+// Module ID: 19371
+// Function ID: 19372
 // Name: ChannelScreenFrameContainer
-// Dependencies: [19, 17, 21, 5170, 575, 18423, 5756, 1652, 5127, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 18717, 5892, 1655, 5263, 2]
 // Exports: ChannelScreenFrameTopBorder, default
 
-// Module 18999 (ChannelScreenFrameContainer)
+// Module 19371 (ChannelScreenFrameContainer)
 import nativeDefault from "native" /* 575 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import DeviceUtils from "DeviceUtils" /* 5127 */;
-import useToken from "useToken" /* 5756 */;
-import useAppFrameDefault from "useAppFrame" /* 18423 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import DeviceUtils from "DeviceUtils" /* 5263 */;
+import useToken from "useToken" /* 5892 */;
+import useAppFrameDefault from "useAppFrame" /* 18717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let _Math, _Math2, borderRadius, num, tmp3;
@@ -43,8 +43,8 @@ function FramedContainer(translateX) {
   let obj = useToken;
   const token = obj.useToken(tmp3(575).modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH);
   const items = [closure_9, tmp5, translateX, ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[3] = nativeDefault;
   let c0;
   let c1;
@@ -70,8 +70,8 @@ function FramedContainer(translateX) {
   ChannelScreenFrameContainerTsx1.__initData = tmp9;
   const animatedStyle = useAnimatedStyle(ChannelScreenFrameContainerTsx1);
   const items2 = [closure_10, translateX, , ];
-  const useAnimatedStyle2 = tmp6(1652).useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle2 = tmp6(1655).useAnimatedStyle;
+  _mod1655;
   items2[2] = nativeDefault;
   items2[3] = token;
   c0 = undefined;
@@ -95,7 +95,7 @@ function FramedContainer(translateX) {
   ChannelScreenFrameContainerTsx2.__initData = tmp15;
   const animatedStyle2 = useAnimatedStyle2(ChannelScreenFrameContainerTsx2);
   const obj2 = { style: items4, children };
-  View = tmp3(1652).View;
+  View = tmp3(1655).View;
   const merged1 = Object.assign(merged);
   items4 = [StyleSheet.absoluteFill, , ];
   let clip;
@@ -111,7 +111,7 @@ function FramedContainer(translateX) {
   if (tmp5) {
     const obj3 = { pointerEvents: "none", style: items6 };
     items6 = [tmp2.border, animatedStyle2];
-    tmp22Result = tmp22(tmp3(1652).View, obj3);
+    tmp22Result = tmp22(tmp3(1655).View, obj3);
   }
   children1[1] = tmp22Result;
   return tmp20(tmp21, { children: children1 });

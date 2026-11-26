@@ -1,26 +1,26 @@
-// Module ID: 19223
-// Function ID: 19224
+// Module ID: 19596
+// Function ID: 19597
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7909, 5112, 21, 5170, 575, 1499, 7420, 7445, 1627, 504, 19224, 2017, 8854, 19225, 19228, 18901, 5885, 1113, 7071, 13667, 17446, 5790, 10879, 13600, 2]
+// Dependencies: [19, 17, 8765, 5248, 21, 5306, 575, 1502, 7918, 7937, 1630, 504, 19597, 2020, 8476, 19598, 19601, 19277, 6021, 1113, 7443, 11788, 17719, 5926, 11781, 14206, 2]
 // Exports: default
 
-// Module 19223 (FriendsScreen)
+// Module 19596 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import components_Button_Button from "components/Button/Button" /* 5790 */;
-import SendMessageIcon from "SendMessageIcon" /* 5885 */;
-import TableRow2 from "TableRow" /* 7071 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8854 */;
-import NoResultsDefault from "NoResults" /* 13667 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 17446 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18901 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import SendMessageIcon from "SendMessageIcon" /* 6021 */;
+import TableRow2 from "TableRow" /* 7443 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import NoResultsDefault from "NoResults" /* 11788 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 17719 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19277 */;
 import react from "react" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7909 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 8765 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

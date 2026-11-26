@@ -1,14 +1,14 @@
-// Module ID: 17921
-// Function ID: 17922
+// Module ID: 18198
+// Function ID: 18199
 // Name: WrenchIcon
-// Dependencies: [19, 21, 575, 5873, 17922, 2]
+// Dependencies: [19, 21, 575, 6009, 18199, 2]
 // Exports: WrenchIcon
 
-// Module 17921 (WrenchIcon)
+// Module 18198 (WrenchIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5873 */;
-import AssetRegistry from "AssetRegistry" /* 17922 */;
+import BaseIconImage2 from "BaseIconImage" /* 6009 */;
+import AssetRegistry from "AssetRegistry" /* 18199 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

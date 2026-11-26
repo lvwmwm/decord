@@ -1,13 +1,13 @@
-// Module ID: 20525
-// Function ID: 20526
+// Module ID: 20865
+// Function ID: 20866
 // Name: openSafetyFlow
-// Dependencies: [5, 5013, 1072, 20526, 6831, 20527, 20031, 20528, 8258, 20529, 2118, 2]
+// Dependencies: [5, 5149, 1072, 20866, 6838, 20867, 20371, 20868, 8387, 20869, 2121, 2]
 // Exports: openSafetyFlow
 
-// Module 20525 (openSafetyFlow)
+// Module 20865 (openSafetyFlow)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 5013 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 5149 */;
 import size from "module_2" /* 2 */;
 
 let c6;
@@ -166,7 +166,7 @@ let obj = function _openSafetyFlow() {
       obj6 = {};
     }
     requiredAction = obj6.requiredAction;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

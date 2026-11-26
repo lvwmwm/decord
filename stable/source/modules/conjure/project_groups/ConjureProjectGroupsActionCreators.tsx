@@ -1,10 +1,10 @@
-// Module ID: 13268
-// Function ID: 13269
+// Module ID: 10559
+// Function ID: 10560
 // Name: ConjureProjectGroupsActionCreators
 // Dependencies: [572, 2]
 // Exports: setConjureProjectGroupCollapsed
 
-// Module 13268 (ConjureProjectGroupsActionCreators)
+// Module 10559 (ConjureProjectGroupsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,17 @@
-// Module ID: 15269
-// Function ID: 15270
+// Module ID: 12088
+// Function ID: 12089
 // Name: WidgetAssetUtils
-// Dependencies: [1072, 1411, 2]
+// Dependencies: [1414, 2]
 // Exports: getWidgetAssetURL
 
-// Module 15269 (WidgetAssetUtils)
-import Constants from "Constants" /* 1072 */;
-import AvatarUtils from "AvatarUtils" /* 1411 */;
+// Module 12088 (WidgetAssetUtils)
+import AvatarUtils from "AvatarUtils" /* 1414 */;
 import size from "module_2" /* 2 */;
 
-let CDN_HOST;
-
-const DEFAULT_CDN_HOST = Constants.DEFAULT_CDN_HOST;
 const result = size.fileFinishedImporting("modules/user_profile/WidgetAssetUtils.tsx");
 
 export function getWidgetAssetURL(arg0, fileId, arg2) {
+  let combined;
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -23,16 +20,20 @@ export function getWidgetAssetURL(arg0, fileId, arg2) {
   if (flag === undefined) {
     flag = false;
   }
-  if (CDN_HOST == null) {
-    CDN_HOST = DEFAULT_CDN_HOST;
+  if (null != CDN_HOST) {
+    const _HermesInternal = HermesInternal;
+    combined = "https://" + CDN_HOST;
+  } else {
+    const _location = location;
+    combined = location.protocol + tmp;
   }
-  let str = "webp";
+  let str2 = "webp";
   if (!AvatarUtils.SUPPORTS_WEBP) {
-    let str2 = "png";
+    let str3 = "png";
     if (flag) {
-      str2 = "gif";
+      str3 = "gif";
     }
-    str = str2;
+    str2 = str3;
   }
-  return "https://" + CDN_HOST + "/widget-assets/" + arg0 + "/" + fileId + "?format=" + str + "&animated=" + flag;
+  return "" + combined + "/widget-assets/" + arg0 + "/" + fileId + "?format=" + str2 + "&animated=" + flag;
 }

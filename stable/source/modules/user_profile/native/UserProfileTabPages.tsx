@@ -1,13 +1,13 @@
-// Module ID: 15307
-// Function ID: 15308
+// Module ID: 15870
+// Function ID: 15871
 // Name: UserProfileTabPages
-// Dependencies: [32, 19, 17, 21, 1652, 1493, 1627, 5422, 1705, 14464, 2]
+// Dependencies: [32, 19, 17, 21, 1655, 1496, 1630, 5558, 1708, 14946, 2]
 // Exports: useMeasuredTabItems
 
-// Module 15307 (UserProfileTabPages)
+// Module 15870 (UserProfileTabPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5422 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -355,7 +355,7 @@ export function useMeasuredTabItems(memo) {
   let items1;
   let ref;
   _require = memo;
-  let obj = require("module_1652");
+  let obj = require("module_1655");
   const sharedValue = obj.useSharedValue([]);
   dependencyMap = react.useRef([]);
   let items = [sharedValue];

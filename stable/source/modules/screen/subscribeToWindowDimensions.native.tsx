@@ -1,11 +1,11 @@
-// Module ID: 13061
-// Function ID: 13062
+// Module ID: 13812
+// Function ID: 13813
 // Name: subscribeToWindowDimensions
-// Dependencies: [1494, 2]
+// Dependencies: [1497, 2]
 // Exports: default
 
-// Module 13061 (subscribeToWindowDimensions)
-import DimensionsStore from "DimensionsStore" /* 1494 */;
+// Module 13812 (subscribeToWindowDimensions)
+import DimensionsStore from "DimensionsStore" /* 1497 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/screen/subscribeToWindowDimensions.native.tsx");

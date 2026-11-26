@@ -1,22 +1,26 @@
-// Module ID: 19366
-// Function ID: 19367
+// Module ID: 19744
+// Function ID: 19745
 // Name: shouldExcludeSafeAreaForModalKey
-// Dependencies: [1072, 11068, 9046, 8041, 2]
+// Dependencies: [1072, 14261, 12767, 10233, 6890, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 19366 (shouldExcludeSafeAreaForModalKey)
+// Module 19744 (shouldExcludeSafeAreaForModalKey)
 import Constants2 from "Constants" /* 1072 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8041 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9046 */;
-import Constants from "Constants" /* 11068 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 10233 */;
+import CheckpointModalConstants from "CheckpointModalConstants" /* 14261 */;
+import Constants from "Constants" /* 12767 */;
 import size from "module_2" /* 2 */;
 
+let CHECKPOINT_MODAL_KEY;
+let CHECKPOINT_UNAVAILABLE_MODAL_KEY;
 let OAUTH2_AUTHORIZE_MODAL_KEY;
 let OAUTH2_ERROR_RESULT_MODAL_KEY;
 let OAUTH2_SUCCESS_RESULT_MODAL_KEY;
 const MEDIA_MODAL_KEY = Constants2.MEDIA_MODAL_KEY;
+({ CHECKPOINT_MODAL_KEY, CHECKPOINT_UNAVAILABLE_MODAL_KEY } = CheckpointModalConstants);
 ({ OAUTH2_AUTHORIZE_MODAL_KEY, OAUTH2_ERROR_RESULT_MODAL_KEY, OAUTH2_SUCCESS_RESULT_MODAL_KEY } = Constants);
-const items = [MEDIA_MODAL_KEY, OAUTH2_AUTHORIZE_MODAL_KEY, OAUTH2_SUCCESS_RESULT_MODAL_KEY, OAUTH2_ERROR_RESULT_MODAL_KEY, SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY];
+const items = [CHECKPOINT_MODAL_KEY, CHECKPOINT_UNAVAILABLE_MODAL_KEY, MEDIA_MODAL_KEY, OAUTH2_AUTHORIZE_MODAL_KEY, OAUTH2_SUCCESS_RESULT_MODAL_KEY, OAUTH2_ERROR_RESULT_MODAL_KEY, SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/safe_area/shouldExcludeSafeAreaForModalKey.native.tsx");
 

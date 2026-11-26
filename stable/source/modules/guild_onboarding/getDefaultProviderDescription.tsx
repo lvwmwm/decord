@@ -1,10 +1,10 @@
-// Module ID: 7438
-// Function ID: 7439
+// Module ID: 7934
+// Function ID: 7935
 // Name: getDefaultProviderDescription
 // Dependencies: [1072, 1113, 2]
 // Exports: default
 
-// Module 7438 (getDefaultProviderDescription)
+// Module 7934 (getDefaultProviderDescription)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;

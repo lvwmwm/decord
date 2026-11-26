@@ -1,16 +1,16 @@
-// Module ID: 18752
-// Function ID: 18753
+// Module ID: 19089
+// Function ID: 19090
 // Name: GuildsBarPendingGuildFolder
-// Dependencies: [19, 5203, 1072, 21, 18739, 13495, 504, 18732, 1652, 5408, 6990, 1113, 18738, 12594, 2]
+// Dependencies: [19, 5339, 1072, 21, 19076, 10804, 504, 19069, 1655, 5544, 6907, 1113, 19075, 12277, 2]
 
-// Module 18752 (GuildsBarPendingGuildFolder)
+// Module 19089 (GuildsBarPendingGuildFolder)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 13495 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18732 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 18739 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 10804 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 19069 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 19076 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5203 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, includes;
@@ -24,7 +24,7 @@ const memoResult = react.memo(function GuildsBarPendingGuildFolder(id) {
   let onAccessibilityAction;
   id = id.id;
   ({ expanded, childNodes } = id);
-  let obj = id(18739);
+  let obj = id(19076);
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   importDefault = usePendingFolderGuildIdsDefault();
   let obj2 = id(504);
@@ -58,7 +58,7 @@ const memoResult = react.memo(function GuildsBarPendingGuildFolder(id) {
   }, items1);
   ({ accessibilityActions, onAccessibilityAction } = memo);
   const items2 = [id];
-  const obj3 = id(1652);
+  const obj3 = id(1655);
   const sharedValue = obj3.useSharedValue("" + id);
   const memo1 = react.useMemo(() => {
     let obj = {
@@ -77,9 +77,9 @@ const memoResult = react.memo(function GuildsBarPendingGuildFolder(id) {
   const tmp = id;
   if (expanded) {
     const obj5 = { folderId: id, totalItems: childNodes.length };
-    tmp8Result = tmp8(tmp(18738).GuildsBarGuildFolderBG, obj5);
+    tmp8Result = tmp8(tmp(19075).GuildsBarGuildFolderBG, obj5);
   }
-  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1113).t["scsU+l"])} sharedId={sharedValue} cutouts="HermesInternal" overState="a" preventClipping="UPLOAD_ATTACHMENT_REMOVE_FILES" config={memo1} externalChildren={tmp8Result}>{null}</tmp9>;
+  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1113).t["scsU+l"])} sharedId={sharedValue} cutouts="HermesInternal" overState="a" preventClipping="absolute" config={memo1} externalChildren={tmp8Result}>{null}</tmp9>;
 });
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

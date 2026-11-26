@@ -1,13 +1,13 @@
-// Module ID: 6114
-// Function ID: 6115
+// Module ID: 6250
+// Function ID: 6251
 // Name: VideoQualityStats
-// Dependencies: [32, 6057, 6065, 5933, 2]
+// Dependencies: [32, 6193, 6201, 6069, 2]
 // Exports: parseCodecType
 
-// Module 6114 (VideoQualityStats)
-import TimeUtils from "TimeUtils" /* 5933 */;
-import Histogram from "Histogram" /* 6057 */;
-import SystemResourcesDefault from "SystemResources" /* 6065 */;
+// Module 6250 (VideoQualityStats)
+import TimeUtils from "TimeUtils" /* 6069 */;
+import Histogram from "Histogram" /* 6193 */;
+import SystemResourcesDefault from "SystemResources" /* 6201 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 9920
-// Function ID: 9921
+// Module ID: 9038
+// Function ID: 9039
 // Name: ReactionsSpotIllustration
-// Dependencies: [19, 21, 9921, 9922, 9923, 7168, 5874, 2]
+// Dependencies: [19, 21, 9039, 9040, 9041, 7755, 6010, 2]
 // Exports: ReactionsSpotIllustration
 
-// Module 9920 (ReactionsSpotIllustration)
+// Module 9038 (ReactionsSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7168 */;
-import _modDef9921 from "module_9921" /* 9921 */;
-import _modDef9922 from "module_9922" /* 9922 */;
-import _modDef9923 from "module_9923" /* 9923 */;
+import react_native from "react-native" /* 7755 */;
+import _modDef9039 from "module_9039" /* 9039 */;
+import _modDef9040 from "module_9040" /* 9040 */;
+import _modDef9041 from "module_9041" /* 9041 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef9921 };
+let obj2 = { uri: _modDef9039 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef9922 };
+let obj3 = { uri: _modDef9040 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef9923 };
-({ uri: _modDef9923 });
+obj[3] = { uri: _modDef9041 };
+({ uri: _modDef9041 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ReactionsSpotIllustration.native.tsx");
 

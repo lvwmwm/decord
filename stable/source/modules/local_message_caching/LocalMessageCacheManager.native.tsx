@@ -1,28 +1,28 @@
-// Module ID: 16757
-// Function ID: 16758
+// Module ID: 17036
+// Function ID: 17037
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 5113, 502, 5019, 6226, 10351, 1072, 16758, 3, 1089, 510, 2166, 4992, 10470, 7745, 11866, 14801, 2118, 2120, 572, 6650, 9953, 2]
+// Dependencies: [5, 32, 5249, 502, 5155, 6362, 12642, 1072, 17037, 3, 1089, 510, 2169, 5128, 8851, 8660, 12687, 12650, 2121, 2123, 572, 6785, 9069, 2]
 
-// Module 16757 (LocalMessageCacheManager)
+// Module 17036 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import _modDef2166 from "module_2166" /* 2166 */;
-import DateUtils from "DateUtils" /* 4992 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7745 */;
-import createMessageDefault from "createMessage" /* 10470 */;
-import UploadActionCreatorsDefault from "UploadActionCreators" /* 11866 */;
+import _modDef2169 from "module_2169" /* 2169 */;
+import DateUtils from "DateUtils" /* 5128 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
+import createMessageDefault from "createMessage" /* 8851 */;
+import UploadActionCreatorsDefault from "UploadActionCreators" /* 12687 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 5113 */;
+import MessageRecord from "MessageRecord" /* 5249 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import MessageStore from "MessageStore" /* 6226 */;
-import SendMessageOptionsStore from "SendMessageOptionsStore" /* 10351 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import SendMessageOptionsStore from "SendMessageOptionsStore" /* 12642 */;
 import Constants from "Constants" /* 1072 */;
-import MutexUtils from "MutexUtils" /* 16758 */;
-import LifecycleManager from "LifecycleManager" /* 2120 */;
+import MutexUtils from "MutexUtils" /* 17037 */;
+import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size from "module_2" /* 2 */;
 
 let _self, channel, closure_8, set;
@@ -55,8 +55,8 @@ function getAllCachedMessages() {
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
-    const tmp4 = _modDef2166();
-    const tmp5 = _modDef2166(arg0);
+    const tmp4 = _modDef2169();
+    const tmp5 = _modDef2169(arg0);
     obj = DateUtils;
     return obj.isWithinInterval(tmp4, tmp5, arg1);
   } else {

@@ -1,29 +1,29 @@
-// Module ID: 19986
-// Function ID: 19987
+// Module ID: 20330
+// Function ID: 20331
 // Name: AddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8835, 1072, 21, 5170, 575, 5746, 6810, 1627, 504, 16792, 19987, 8844, 8928, 8323, 8839, 8841, 5783, 1113, 19996, 1187, 5790, 19984, 1260, 7663, 7097, 7264, 2]
+// Dependencies: [5, 32, 19, 17, 8542, 1072, 21, 5306, 575, 5882, 6816, 1630, 504, 17071, 20331, 9401, 8614, 8879, 9398, 8541, 5919, 1113, 20340, 1187, 5926, 20328, 1264, 7427, 7493, 7490, 2]
 
-// Module 19986 (AddAvatarModal)
+// Module 20330 (AddAvatarModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import NavigatorConstants from "NavigatorConstants" /* 5746 */;
-import NavigatorHeader from "NavigatorHeader" /* 7097 */;
-import Navigator from "Navigator" /* 7264 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8844 */;
-import VideoBackground from "VideoBackground" /* 8928 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 16792 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19984 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
+import NavigatorConstants from "NavigatorConstants" /* 5882 */;
+import Navigator from "Navigator" /* 7490 */;
+import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import VideoBackground from "VideoBackground" /* 8614 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 9401 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 17071 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 20328 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import TextStyles from "TextStyles" /* 6810 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import TextStyles from "TextStyles" /* 6816 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -142,14 +142,14 @@ function AddAvatarScreen() {
   const tmp4 = obj(react.useState(), 2);
   const selectedAvatar = tmp4[0];
   dependencyMap = tmp6;
-  const bottom = selectedAvatar(1627)().bottom;
+  const bottom = selectedAvatar(1630)().bottom;
   obj = get_initialized;
   const items = [UserProfileSettingsStore];
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != selectedAvatar) {
-    let obj2 = { imageUri: tmp9(19987).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
-    let createPendingImage = tmp9(16792).createPendingImage;
+    let obj2 = { imageUri: tmp9(20331).DEFAULT_AVATARS[selectedAvatar], description: tmp9Result3.generateAvatarDescription() };
+    let createPendingImage = tmp9(17071).createPendingImage;
     ProfilePendingImageUtils;
     tmp9Result3 = RecentAvatarUtils;
     pendingImage = createPendingImage(obj2);
@@ -158,7 +158,7 @@ function AddAvatarScreen() {
     pendingImage = stateFromStores;
   }
   let imageUri;
-  const memoizedImageSource = tmp9(8928).memoizedImageSource;
+  const memoizedImageSource = tmp9(8614).memoizedImageSource;
   VideoBackground;
   if (pendingImage != null) {
     imageUri = pendingImage.imageUri;
@@ -175,11 +175,11 @@ function AddAvatarScreen() {
   let obj4 = { style: tmp.headerContainer, children: items3 };
   let obj5 = { children: items2 };
   let obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp9(1113).t.XQRWvR) };
-  const Text = tmp9(5783).Text;
+  const Text = tmp9(5919).Text;
   intl = tmp9(1113).intl;
   items2 = [closure_9(Text, obj6), ];
   let obj7 = { style: tmp.subtitle, variant: "body-xs/medium", color: "text-default", children: intl2.string(tmp9(1113).t.fH9TLT) };
-  const Text2 = tmp9(5783).Text;
+  const Text2 = tmp9(5919).Text;
   intl2 = tmp9(1113).intl;
   items2[1] = closure_9(Text2, obj7);
   items3 = [tmp16(tmp17, obj5), , ];
@@ -190,7 +190,7 @@ function AddAvatarScreen() {
       return obj(...arguments);
     }
   };
-  items3[1] = closure_9(selectedAvatar(19996), obj8);
+  items3[1] = closure_9(selectedAvatar(20340), obj8);
   let obj9 = { style: tmp.errorContainer, children: tmp18(LegacyText, obj10) };
   obj10 = { style: tmp.errorText, children: stringResult };
   LegacyText = tmp9(1187).LegacyText;
@@ -199,7 +199,7 @@ function AddAvatarScreen() {
     stringResult = intl3.string(intl5.t.XyLlVm);
   }
   items3[2] = closure_9(tmp17, obj9);
-  items4 = [tmp16(tmp17, obj4), tmp18(tmp7(19987), { onAvatarSelect: tmp6, selectedAvatar }), ];
+  items4 = [tmp16(tmp17, obj4), tmp18(tmp7(20331), { onAvatarSelect: tmp6, selectedAvatar }), ];
   const obj11 = { style: tmp.buttonContainer, children: closure_9(Button, obj12) };
   obj12 = {
     text: intl4.string(intl5.t.PDTjLN),
@@ -210,7 +210,7 @@ function AddAvatarScreen() {
     },
     disabled: null == pendingImage
   };
-  Button = tmp9(5790).Button;
+  Button = tmp9(5926).Button;
   intl4 = tmp9(1113).intl;
   items4[2] = closure_9(tmp17, obj11);
   return closure_10(tmp17, obj3);

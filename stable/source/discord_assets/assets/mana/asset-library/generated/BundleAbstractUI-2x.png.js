@@ -1,8 +1,8 @@
-// Module ID: 17372
-// Function ID: 17373
+// Module ID: 17646
+// Function ID: 17647
 // Dependencies: [2]
 
-// Module 17372
+// Module 17646
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BundleAbstractUI-2x.png.js");

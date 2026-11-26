@@ -1,11 +1,11 @@
-// Module ID: 5956
-// Function ID: 5957
+// Module ID: 6092
+// Function ID: 6093
 // Name: DirectVideoStream
-// Dependencies: [2132, 2]
+// Dependencies: [2135, 2]
 // Exports: acquireDirectVideoStream, getDirectVideoStreamConsumerCount, supportsDirectVideoStreams
 
-// Module 5956 (DirectVideoStream)
-import inject from "inject" /* 2132 */;
+// Module 6092 (DirectVideoStream)
+import inject from "inject" /* 2135 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

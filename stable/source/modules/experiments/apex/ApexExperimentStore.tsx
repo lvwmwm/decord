@@ -1,14 +1,15 @@
 // Module ID: 1246
 // Function ID: 1247
 // Name: ApexExperimentStore
-// Dependencies: [32, 1247, 502, 1072, 572, 1252, 1374, 2]
+// Dependencies: [32, 1247, 502, 1072, 572, 1252, 1256, 1377, 1387, 2]
 
 // Module 1246 (ApexExperimentStore)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import BaseApexExperimentStore2 from "BaseApexExperimentStore" /* 1247 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1374 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1377 */;
+import ApexLaunchLatch from "ApexLaunchLatch" /* 1387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -24,12 +25,18 @@ class ApexExperimentStore extends BaseApexExperimentStore {
     let tmp;
     _require = undefined;
     const tmp2 = DispatcherDefault;
-    const obj = {
+    let obj = {
       CONNECTION_OPEN(arg0) {
         return closure_0.handleConnectionOpen(arg0);
       },
       CONNECTION_OPEN_STATE_UPDATE(apexExperiments) {
-        return closure_0.setExperimentAssignments(apexExperiments.apexExperiments);
+        const result = closure_0.updateLaunchLatchUnits();
+        const result1 = closure_0.setExperimentAssignments(apexExperiments.apexExperiments);
+        const obj = closure_0;
+        if (null != apexExperiments.apexExperiments) {
+          const result2 = obj.drainLaunchLatchReceipts();
+        }
+        return result1;
       },
       GUILD_CREATE(arg0) {
         return closure_0.handleGuildCreate(arg0);
@@ -59,7 +66,12 @@ class ApexExperimentStore extends BaseApexExperimentStore {
         return closure_0.handleFetchStart(unitId.unitId);
       },
       APEX_EXPERIMENTS_FETCH_SUCCESS(unitId) {
-        return closure_0.handleFetchSuccess(unitId.unitId, unitId.experiments);
+        const result = closure_0.updateLaunchLatchUnits();
+        closure_0.handleFetchSuccess(unitId.unitId, unitId.experiments);
+        const obj = closure_0;
+        if (null != unitId.experiments) {
+          const result1 = obj.drainLaunchLatchReceipts();
+        }
       },
       APEX_EXPERIMENTS_FETCH_FAILURE(unitId) {
         return closure_0.handleFetchFailure(unitId.unitId);
@@ -68,8 +80,9 @@ class ApexExperimentStore extends BaseApexExperimentStore {
         return closure_0.handleLogout(isSwitchingAccount.isSwitchingAccount);
       }
     };
-    const tmp3 = new tmp(tmp2, obj, require("Dispatcher").DispatchBand.Early, new.target, tmp, tmp2, obj, this);
+    const tmp3 = new tmp(tmp2, obj, require("Dispatcher").DispatchBand.Early, new.target, tmp, tmp2, obj, this, _require, undefined);
     _require = tmp3;
+    tmp3.registerExperiment(require("ApexLaunchLatchFlags").ApexLaunchLatchFlags);
     tmp3.track = () => {
       const items = [...arguments];
       const items1 = [...items];
@@ -85,6 +98,8 @@ class ApexExperimentStore extends BaseApexExperimentStore {
     const loadStoredState = this.loadStoredState;
     const obj = BuildOverrideUtils;
     const storedState = loadStoredState(version, obj.getBuildOverrideExperiments());
+    const result = this.initializeLaunchLatch();
+    const result1 = this.updateLaunchLatchUnits();
   }
   maybeEmitDebugExperimentEvent() {
     const self = this;
@@ -105,14 +120,67 @@ class ApexExperimentStore extends BaseApexExperimentStore {
     }
     self.lastEmittedDebugVariantId = undefined;
   }
+  initializeLaunchLatch() {
+    const apexLaunchLatchController = new ApexLaunchLatch.ApexLaunchLatchController(this, this.track);
+    this.launchLatch = apexLaunchLatchController;
+  }
+  updateLaunchLatchUnits() {
+    const launchLatch = this.launchLatch;
+    if (launchLatch != null) {
+      launchLatch.updateUnits();
+    }
+  }
+  onAssignmentsIngested(arg0, arg1, arg2) {
+    const launchLatch = this.launchLatch;
+    if (launchLatch != null) {
+      const result = launchLatch.onAssignmentsIngested(arg0, arg1, arg2);
+    }
+  }
+  resolveConfigAssignment(arg0, arg1, arg2) {
+    const launchLatch = this.launchLatch;
+    let configAssignment;
+    if (launchLatch != null) {
+      configAssignment = launchLatch.resolveConfigAssignment(arg0, arg1, arg2);
+    }
+    return configAssignment;
+  }
+  onConfigApplied(arg0, arg1, arg2) {
+    const launchLatch = this.launchLatch;
+    if (launchLatch != null) {
+      launchLatch.onConfigApplied(arg0, arg1, arg2);
+    }
+  }
+  drainLaunchLatchReceipts(arg0) {
+    const launchLatch = this.launchLatch;
+    if (launchLatch != null) {
+      launchLatch.drainReceipts(arg0);
+    }
+  }
+  handleLogout(arg0) {
+    const launchLatch = this.launchLatch;
+    if (launchLatch != null) {
+      launchLatch.logout(true === arg0);
+    }
+    super.handleLogout(arg0);
+  }
+  clearForTests() {
+    super.clearForTests();
+    const result = this.initializeLaunchLatch();
+  }
   handleConnectionOpen(guilds) {
+    const self = this;
+    const result = this.updateLaunchLatchUnits();
     guilds = guilds.guilds;
-    return this.setExperimentAssignments(guilds.apexExperiments, guilds.reduce((acc, experiments) => {
+    const result1 = this.setExperimentAssignments(guilds.apexExperiments, guilds.reduce((acc, experiments) => {
       if (null != experiments.experiments) {
         acc[experiments.id] = experiments.experiments;
       }
       return acc;
     }, {}));
+    if (null != guilds.apexExperiments) {
+      const result2 = self.drainLaunchLatchReceipts();
+    }
+    return result1;
   }
   handleGuildCreate(guild) {
     const experiments = guild.guild.experiments;
@@ -129,7 +197,7 @@ class ApexExperimentStore extends BaseApexExperimentStore {
 const prototype = ApexExperimentStore.prototype;
 const ExperimentAssignment = BaseApexExperimentStore2.ExperimentAssignment;
 const apexExperimentStore = new ApexExperimentStore();
-const result = size.fileFinishedImporting("modules/experiments/apex/ApexExperimentStore.tsx");
+let result = size.fileFinishedImporting("modules/experiments/apex/ApexExperimentStore.tsx");
 
 export default apexExperimentStore;
 export { ExperimentAssignment };

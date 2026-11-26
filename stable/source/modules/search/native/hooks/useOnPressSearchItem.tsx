@@ -1,27 +1,27 @@
-// Module ID: 19100
-// Function ID: 19101
+// Module ID: 19473
+// Function ID: 19474
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7879, 5019, 14166, 9950, 19101, 9949, 1072, 5026, 14152, 14177, 1378, 5868, 1113, 9052, 5866, 1499, 14264, 19102, 14155, 10002, 10020, 1108, 6841, 8940, 7582, 5917, 8041, 2118, 6821, 15010, 6209, 8736, 7032, 1099, 14173, 2]
+// Dependencies: [5, 19, 8748, 5155, 14756, 9066, 19474, 9065, 1072, 5162, 14742, 14767, 1381, 6004, 1113, 7653, 6002, 1502, 14852, 19475, 14745, 9121, 9139, 1108, 6848, 8627, 8134, 6053, 6890, 2121, 6828, 15938, 6345, 7683, 7684, 1099, 14763, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 19100 (useOnPressSearchItem)
+// Module 19473 (useOnPressSearchItem)
 import intl2 from "intl" /* 1113 */;
-import URLUtilsDefault from "URLUtils" /* 1378 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import ToastUtils from "ToastUtils" /* 5868 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7582 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 9052 */;
-import TrackingConstants from "TrackingConstants" /* 9949 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14152 */;
-import TrackingDefault from "Tracking" /* 14173 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14177 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19101 */;
+import URLUtilsDefault from "URLUtils" /* 1381 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
+import TrackingConstants from "TrackingConstants" /* 9065 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14742 */;
+import TrackingDefault from "Tracking" /* 14763 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14767 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7879 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import SearchQueryStore from "SearchQueryStore" /* 14166 */;
-import SearchConstants from "SearchConstants" /* 9950 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8748 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import SearchQueryStore from "SearchQueryStore" /* 14756 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -434,7 +434,7 @@ export function useOnPressMediaItem(searchContext) {
 }
 export function useOnPressGroupDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1499);
+  obj = searchContext(1502);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((channelId) => {
@@ -463,7 +463,7 @@ export function useOnPressGroupDMItem(searchContext) {
 }
 export function useOnPressDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1499);
+  obj = searchContext(1502);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((userId, arg1) => {

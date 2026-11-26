@@ -1,20 +1,20 @@
-// Module ID: 18621
-// Function ID: 18622
+// Module ID: 18915
+// Function ID: 18916
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1385, 5016, 21, 575, 7428, 5915, 5796, 5170, 563, 7420, 7445, 7073, 7076, 7153, 1187, 5783, 1113, 5790, 9554, 2]
+// Dependencies: [19, 17, 1388, 5152, 21, 575, 7924, 6051, 5932, 5306, 563, 7918, 7937, 7445, 7428, 7549, 1187, 5919, 1113, 5926, 10386, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 18621 (AccountLinkBanner)
+// Module 18915 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import ButtonConstants from "ButtonConstants" /* 5796 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5915 */;
-import GameIcon from "GameIcon" /* 7428 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6051 */;
+import GameIcon from "GameIcon" /* 7924 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ function AccountLinkLargeBanner(arg0) {
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
     const Avatar = tmp2(tmp3[16]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);

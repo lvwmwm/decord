@@ -1,46 +1,48 @@
-// Module ID: 19014
-// Function ID: 19015
+// Module ID: 19386
+// Function ID: 19387
 // Name: Elements
-// Dependencies: [32, 19, 17, 2175, 21, 5170, 575, 5783, 1113, 7076, 1187, 19015, 10065, 17571, 563, 10068, 7510, 2]
+// Dependencies: [32, 19, 17, 2178, 1072, 21, 5306, 575, 5919, 1113, 7428, 1187, 19387, 9723, 17848, 563, 10957, 7253, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 19014 (Elements)
+// Module 19386 (Elements)
 import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import Pressables from "Pressables" /* 7076 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 10065 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10068 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17571 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19015 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import Pressables from "Pressables" /* 7428 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9723 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10957 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17848 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2175 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let c10;
-let c9;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+let unpackModuleId;
 ({ TouchableOpacity: metroRequire, View: metroImportDefault } = react_native);
-({ jsx: c9, jsxs: c10 } = Fragment);
+const constants = Constants.PriceSetAssignmentPurchaseTypes;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { toggleTruncateButton: obj2, arrowButton: obj3, arrowButtonText: { flexGrow: 1, flexShrink: 1 }, arrowButtonIcon: obj4 };
 obj2 = { alignSelf: "flex-start", borderBottomWidth: 0.8, borderColor: nativeDefault.colors.TEXT_DEFAULT, marginTop: 2 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, height: 40, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj4 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-let closure_11 = createStyles(obj);
+let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/purchase_page/Elements.tsx");
 
 export function TruncatedText(lineClamp) {
@@ -61,7 +63,7 @@ export function TruncatedText(lineClamp) {
   c1 = undefined;
   first = undefined;
   closure_3 = undefined;
-  const tmp2 = closure_11();
+  const tmp2 = closure_12();
   [tmp4, c1] = _slicedToArray(react.useState(false), 2);
   const tmp3 = _slicedToArray(react.useState(false), 2);
   [first, closure_3] = react.useState(false);
@@ -69,7 +71,7 @@ export function TruncatedText(lineClamp) {
   let tmp8Result = first;
   if (tmp8Result) {
     let stringResult;
-    const obj = { style: tmp2.toggleTruncateButton, children: React4(Text, obj2) };
+    const obj = { style: tmp2.toggleTruncateButton, children: authStore(Text, obj2) };
     Text = Text_Text.Text;
     const intl = intl2.intl;
     const string = intl.string;
@@ -93,7 +95,7 @@ export function TruncatedText(lineClamp) {
     children: items
   };
   num2 = 1;
-  const tmp13 = authStore;
+  const tmp13 = unpackModuleId;
   const tmp14 = metroRequire;
   if (first) {
     num2 = 0.8;
@@ -110,7 +112,7 @@ export function TruncatedText(lineClamp) {
   const Text2 = Text_Text.Text;
   const merged1 = Object.assign(merged);
   tmp17 = undefined;
-  const tmp15 = React4;
+  const tmp15 = authStore;
   if (first) {
     if (!tmp4) {
       tmp17 = num;
@@ -124,16 +126,16 @@ export function ArrowButton(arg0) {
   let onPress;
   let text;
   ({ text, onPress } = arg0);
-  const tmp = closure_11();
+  const tmp = closure_12();
   const obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress, children: items };
   const PressableOpacity = Pressables.PressableOpacity;
   items = [, ];
   const obj2 = { variant: "body-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
-  items[0] = React4(Text_Text.Text, obj2);
+  items[0] = authStore(Text_Text.Text, obj2);
   const obj3 = { size: native.Icon.Sizes.SMALL, source: AssetRegistryDefault, style: tmp.arrowButtonIcon };
   const Icon = native.Icon;
-  items[1] = React4(Icon, obj3);
-  return authStore(PressableOpacity, obj);
+  items[1] = authStore(Icon, obj3);
+  return unpackModuleId(PressableOpacity, obj);
 }
 export function useFormattedSubscriptionPlan(listingId) {
   let id;
@@ -144,12 +146,12 @@ export function useFormattedSubscriptionPlan(listingId) {
   const items = [SubscriptionPlanStore];
   const obj3 = require("useStateFromStores");
   const stateFromStores = obj3.useStateFromStores(items, () => SubscriptionPlanStore.get(id.id));
-  const price = useStoreFrontPriceDefault(stateFromStores, mobileStoreFront).price;
+  const price = useStoreFrontPriceDefault(stateFromStores, mobileStoreFront, constants.MOBILE).price;
   let str = "No Price Available";
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7510);
+    const tmp3Result = tmp3(7253);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

@@ -1,16 +1,16 @@
-// Module ID: 16800
-// Function ID: 16801
+// Module ID: 17079
+// Function ID: 17080
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 5170, 575, 5452, 16797, 1705, 1652, 5747, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 5588, 17076, 1708, 1655, 5883, 2]
 // Exports: default
 
-// Module 16800 (HuePicker)
+// Module 17079 (HuePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

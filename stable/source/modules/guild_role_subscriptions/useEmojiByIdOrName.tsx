@@ -1,11 +1,11 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17863
+// Function ID: 17864
 // Name: useEmojiByIdOrName
-// Dependencies: [6884, 504, 2]
+// Dependencies: [6969, 504, 2]
 // Exports: default, useEmojiByIdOrName
 
-// Module 17586 (useEmojiByIdOrName)
-import EmojiStore from "EmojiStore" /* 6884 */;
+// Module 17863 (useEmojiByIdOrName)
+import EmojiStore from "EmojiStore" /* 6969 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

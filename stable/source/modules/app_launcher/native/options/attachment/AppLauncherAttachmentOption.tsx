@@ -1,18 +1,18 @@
-// Module ID: 12743
-// Function ID: 12744
+// Module ID: 13512
+// Function ID: 13513
 // Name: AppLauncherAttachmentOption
-// Dependencies: [19, 17, 7810, 8310, 21, 5170, 575, 11275, 11226, 2116, 12725, 504, 9901, 12744, 1113, 8313, 12745, 2]
+// Dependencies: [19, 17, 8725, 8872, 21, 5306, 575, 11124, 11073, 2119, 13495, 504, 11153, 13513, 1113, 8850, 11846, 2]
 // Exports: default
 
-// Module 12743 (AppLauncherAttachmentOption)
+// Module 13512 (AppLauncherAttachmentOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import DraftStore from "DraftStore" /* 7810 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11275 */;
+import DraftStore from "DraftStore" /* 8725 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11124 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8310 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

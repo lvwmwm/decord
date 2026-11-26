@@ -1,17 +1,17 @@
-// Module ID: 16740
-// Function ID: 16741
+// Module ID: 17019
+// Function ID: 17020
 // Name: FramesManager
-// Dependencies: [5023, 6934, 1072, 7383, 16654, 11047, 5831, 16741, 1252, 2]
+// Dependencies: [5159, 7019, 1072, 7882, 16933, 7349, 5967, 17020, 1256, 2]
 
-// Module 16740 (FramesManager)
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5831 */;
-import leaveFrame from "leaveFrame" /* 11047 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16654 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 16741 */;
-import FramesStore from "FramesStore" /* 6934 */;
+// Module 17019 (FramesManager)
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
+import leaveFrame from "leaveFrame" /* 7349 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16933 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 17020 */;
+import FramesStore from "FramesStore" /* 7019 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -132,7 +132,7 @@ class FramesManager extends AutomaticLifecycleManager {
             if (reason.code !== metroRequire.CLOSE_NORMAL) {
               const obj = { rpc_close_code: null, rpc_message: null, application_id: frameByEmbeddedContext.applicationId };
               ({ code: obj2.rpc_close_code, message: obj2.rpc_message } = reason);
-              const tmp7Result = tmp7(1252);
+              const tmp7Result = tmp7(1256);
               tmp7Result.track(hasOwnProperty.ACTIVITY_CLOSED_RPC_ERROR, obj);
               const result = require.showRPCDisconnectErrorUI(reason);
             }

@@ -1,13 +1,13 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7788
+// Function ID: 7789
 // Name: PhoneOrEmailInput
-// Dependencies: [32, 19, 21, 7234, 7235, 1113, 7237, 2]
+// Dependencies: [32, 19, 21, 7789, 7790, 1113, 7619, 2]
 // Exports: default
 
-// Module 7233 (PhoneOrEmailInput)
+// Module 7788 (PhoneOrEmailInput)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7234 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7789 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -148,7 +148,7 @@ export default function PhoneOrEmailInput(onChange) {
   const memo = obj.useMemo(() => {
     let intl;
     let str;
-    const obj = { onPress: onPressCountrySelector, accessibilityRole: "button", accessibilityLabel: str, accessibilityHint: intl.string(intl2.t.GwAW3k) };
+    const obj = { onPress: onPressCountrySelector, accessibilityRole: "button", accessibilityLabel: str, accessibilityHint: intl.string(intl2.t.GwAW3k), hitSlop: { top: 8, bottom: 8 } };
     str = combined;
     if (combined == null) {
       str = "";
@@ -157,7 +157,7 @@ export default function PhoneOrEmailInput(onChange) {
     return obj;
   }, items2);
   const obj3 = { ref: ref1, onChange: callback, leadingText: combined, leadingPressableProps: memo };
-  const SplitTextInput = tmp6(tmp7[6]).SplitTextInput;
+  const TextInput = tmp6(tmp7[6]).TextInput;
   const merged1 = Object.assign(merged);
-  return ref1(SplitTextInput, obj3);
+  return ref1(TextInput, obj3);
 };

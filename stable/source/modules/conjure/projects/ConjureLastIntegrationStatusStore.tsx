@@ -1,9 +1,9 @@
-// Module ID: 11029
-// Function ID: 11030
+// Module ID: 7330
+// Function ID: 7331
 // Name: ConjureLastIntegrationStatusStore
 // Dependencies: [504, 572, 2]
 
-// Module 11029 (ConjureLastIntegrationStatusStore)
+// Module 7330 (ConjureLastIntegrationStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ const obj2 = {
     const statuses = closure_1.statuses;
     obj = { statuses: items.slice(-20) };
     items = [];
-    items[HermesBuiltin.arraySpread(items, statuses.filter((projectId) => projectId.projectId !== as_of), 0)] = { projectId, status: projectId.integrationStatus };
+    items[HermesBuiltin.arraySpread(items, statuses.filter((projectId) => projectId.projectId !== closure_0), 0)] = { projectId, status: projectId.integrationStatus };
     closure_1 = obj;
   },
   CONJURE_PROJECT_DELETE_SUCCESS: function handleProjectDeleteSuccess(projectId) {

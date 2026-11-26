@@ -1,21 +1,26 @@
 // Module ID: 1755
 // Function ID: 1756
-// Dependencies: [1756, 1770, 1775]
+// Dependencies: [1712, 1719]
+// Exports: createShareable
 
 // Module 1755
-import normalizeAnimationKeyframes from "normalizeAnimationKeyframes" /* 1756 */;
-import normalizeDelay from "normalizeDelay" /* 1770 */;
-import normalizeCSSTransitionProperties from "normalizeCSSTransitionProperties" /* 1775 */;
+import WorkletsModule2 from "WorkletsModule" /* 1712 */;
+import registerCustomSerializable from "registerCustomSerializable" /* 1719 */;
 
-for (const key10013 in normalizeAnimationKeyframes) {
-  exports[key10013] = normalizeAnimationKeyframes[key10013];
-  continue;
-}
-for (const key10017 in normalizeDelay) {
-  exports[key10017] = normalizeDelay[key10017];
-  continue;
-}
-for (const key10021 in normalizeCSSTransitionProperties) {
-  exports[key10021] = normalizeCSSTransitionProperties[key10021];
-  continue;
+
+export function createShareable(arg0, __initData, arg2) {
+  let hostDecorator;
+  let initSynchronously;
+  const tmp = arg2 || {};
+  const guestDecorator = tmp.guestDecorator;
+  ({ hostDecorator, initSynchronously } = tmp);
+  const WorkletsModule = WorkletsModule2.WorkletsModule;
+  const createShareable = WorkletsModule.createShareable;
+  const obj = registerCustomSerializable;
+  const serializable = obj.createSerializable(__initData);
+  const tmp3 = !initSynchronously;
+  const obj2 = registerCustomSerializable;
+  const serializable1 = obj2.createSerializable(hostDecorator);
+  const obj3 = registerCustomSerializable;
+  return globalThis.__shareableGuestUnpacker(arg0, createShareable(arg0, serializable, !tmp3, serializable1, obj3.createSerializable(guestDecorator)), guestDecorator);
 }

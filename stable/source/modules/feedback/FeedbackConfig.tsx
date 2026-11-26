@@ -1,13 +1,13 @@
-// Module ID: 19899
-// Function ID: 19900
+// Module ID: 20242
+// Function ID: 20243
 // Name: FeedbackConfig
-// Dependencies: [5925, 10311, 7474, 19900, 2]
+// Dependencies: [6061, 12598, 8447, 20243, 2]
 
-// Module 19899 (FeedbackConfig)
-import HotspotStore from "HotspotStore" /* 7474 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 19900 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
-import Constants from "Constants" /* 10311 */;
+// Module 20242 (FeedbackConfig)
+import HotspotStore from "HotspotStore" /* 8447 */;
+import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 20243 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import Constants from "Constants" /* 12598 */;
 import size from "module_2" /* 2 */;
 
 let FeedbackGroup;

@@ -1,14 +1,14 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7274
+// Function ID: 7275
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1385, 7531, 7532, 5094, 2]
+// Dependencies: [1388, 7275, 7276, 5230, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 7530 (canUserSeeMonetizationOnboarding)
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 5094 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7531 */;
-import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7532 */;
-import UserStore from "UserStore" /* 1385 */;
+// Module 7274 (canUserSeeMonetizationOnboarding)
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 5230 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7275 */;
+import CreatorMonetizationEligibilityExperimentUtils from "CreatorMonetizationEligibilityExperimentUtils" /* 7276 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/creator_monetization/canUserSeeMonetizationOnboarding.tsx");

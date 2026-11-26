@@ -1,25 +1,25 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 10661
+// Function ID: 10662
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2186, 502, 5082, 9417, 21, 5170, 575, 504, 7991, 11, 5033, 9418, 9419, 5869, 5406, 7627, 7053, 5783, 7076, 9420, 1113, 2]
+// Dependencies: [19, 17, 2189, 502, 5218, 10662, 21, 5306, 575, 504, 8843, 11, 5169, 10392, 10391, 6005, 5542, 7231, 7720, 5919, 7428, 10390, 1113, 2]
 // Exports: default
 
-// Module 9416 (GuildProfileHeader)
+// Module 10661 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5033 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import transitionToGuild from "transitionToGuild" /* 7627 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9417 */;
-import GuildTraits from "GuildTraits" /* 9418 */;
-import BadgeCategory from "BadgeCategory" /* 9419 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import transitionToGuild from "transitionToGuild" /* 7231 */;
+import BadgeCategory from "BadgeCategory" /* 10391 */;
+import GuildTraits from "GuildTraits" /* 10392 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 10662 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;

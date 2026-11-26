@@ -1,9 +1,9 @@
-// Module ID: 2144
-// Function ID: 2145
+// Module ID: 2147
+// Function ID: 2148
 // Name: EmbeddedActivitySupportedPlatforms
 // Dependencies: [2]
 
-// Module 2144 (EmbeddedActivitySupportedPlatforms)
+// Module 2147 (EmbeddedActivitySupportedPlatforms)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedActivitySupportedPlatforms.tsx");

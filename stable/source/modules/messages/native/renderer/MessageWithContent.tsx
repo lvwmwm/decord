@@ -1,15 +1,15 @@
-// Module ID: 8486
-// Function ID: 8487
+// Module ID: 9164
+// Function ID: 9165
 // Name: MessageWithContent
-// Dependencies: [8487, 8482, 8492, 1113, 8794, 2]
+// Dependencies: [9165, 9160, 9167, 1113, 9387, 2]
 // Exports: generateMessageRowData
 
-// Module 8486 (MessageWithContent)
+// Module 9164 (MessageWithContent)
 import intl6 from "intl" /* 1113 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8482 */;
-import createMessageContentDefault from "createMessageContent" /* 8492 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8794 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8487 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 9160 */;
+import createMessageContentDefault from "createMessageContent" /* 9167 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 9387 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 9165 */;
 import size from "module_2" /* 2 */;
 
 const RowType = RowGeneratorConstants.RowType;
@@ -37,8 +37,10 @@ export function generateMessageRowData(canShowImages, options, theme) {
   let renderContentOnly;
   let roleStyle;
   let separatorBefore;
+  let showContentInventoryEntryFallbackEmbed;
   let tmp11;
   let truncation;
+  let unlinkedGamePlayerPlaceholders;
   ({ message, isEditing, isSystemDM } = canShowImages);
   let tmp = undefined !== isSystemDM;
   ({ changeType, roleStyle, isFirst, separatorBefore, canAddNewReactions, reactionsTheme } = canShowImages);
@@ -54,8 +56,9 @@ export function generateMessageRowData(canShowImages, options, theme) {
     tmp3 = alwaysShowAddReaction;
   }
   let overrideBackgroundHighlight = canShowImages.overrideBackgroundHighlight;
+  ({ showContentInventoryEntryFallbackEmbed, unlinkedGamePlayerPlaceholders } = canShowImages);
   const obj = { type: RowType.MESSAGE, message: createMessageContentDefault(obj2), canAddNewReactions, addNewReactionAccessibilityLabel: intl.string(intl6.t.lfIHs4), reactionsTheme, highlightLabel: intl2.string(intl6.t["IOS/dU"]), renderContentOnly, separatorBefore, changeType, truncation, alwaysShowAddReaction: tmp3, backgroundHighlight: overrideBackgroundHighlight, swipeActions: createSwipeActions(canReply, tmp11), replyAccessibilityLabel: intl3.string(intl6.t["5IEsGx"]), forwardAccessibilityLabel: intl4.string(intl6.t.I3ltXO), threadAccessibilityLabel: intl5.string(intl6.t.rBIGBL), forcedTheme };
-  obj2 = { options, message, roleStyle, isFirst, isEditing, canShowImages: tmp2, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed: canShowImages.showContentInventoryEntryFallbackEmbed };
+  obj2 = { options, message, roleStyle, isFirst, isEditing, canShowImages: tmp2, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed, unlinkedGamePlayerPlaceholders };
   intl = intl6.intl;
   intl2 = intl6.intl;
   if (overrideBackgroundHighlight == null) {

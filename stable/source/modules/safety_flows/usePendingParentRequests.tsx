@@ -1,17 +1,17 @@
-// Module ID: 20542
-// Function ID: 20543
+// Module ID: 20882
+// Function ID: 20883
 // Name: usePendingParentRequests
-// Dependencies: [32, 19, 7824, 1385, 7825, 504, 8473, 13623, 2]
+// Dependencies: [32, 19, 8740, 1388, 8741, 504, 9616, 14226, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 20542 (usePendingParentRequests)
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7825 */;
-import useUserLinks from "useUserLinks" /* 8473 */;
-import useFamilyCenterActions from "useFamilyCenterActions" /* 13623 */;
+// Module 20882 (usePendingParentRequests)
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
+import useUserLinks from "useUserLinks" /* 9616 */;
+import useFamilyCenterActions from "useFamilyCenterActions" /* 14226 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7824 */;
-import UserStore from "UserStore" /* 1385 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -118,7 +118,7 @@ export function usePendingRequestListController(pendingRequests) {
   let tmp15;
   let tmp16;
   let tmp4;
-  const f121407 = () => {
+  const f124136 = () => {
     set = new Set();
     return set;
   };
@@ -147,8 +147,8 @@ export function usePendingRequestListController(pendingRequests) {
   const declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
   let closure_5 = tmp6;
-  [c6, c7] = tmp2(react.useState(f121407), 2);
-  tmp2(react.useState(f121407), 2);
+  [c6, c7] = tmp2(react.useState(f124136), 2);
+  tmp2(react.useState(f124136), 2);
   const callback = obj2.useCallback((arg0) => {
     let closure_0 = arg0;
     let tmp = _undefined3(function(has) {
@@ -231,7 +231,7 @@ export function usePendingRequestResolution(parent_id) {
   let stateFromStores;
   let tmp3;
   let tmp4;
-  const f121414 = () => {
+  const f124143 = () => {
     let str = "connected";
     if (stateFromStores !== UserLinkStatus.ACTIVE) {
       let str2;
@@ -255,8 +255,8 @@ export function usePendingRequestResolution(parent_id) {
     }
     return link_status;
   });
-  [tmp3, tmp4] = _slicedToArray(react.useState(f121414), 2);
-  const tmp2 = _slicedToArray(react.useState(f121414), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f124143), 2);
+  const tmp2 = _slicedToArray(react.useState(f124143), 2);
   const tmp5 = _slicedToArray(react.useState(stateFromStores), 2);
   const first = tmp5[0];
   if (stateFromStores !== first) {

@@ -1,18 +1,18 @@
-// Module ID: 18805
-// Function ID: 18806
+// Module ID: 19042
+// Function ID: 19043
 // Name: useInterestGameSearch
-// Dependencies: [5, 32, 19, 8784, 9257, 8785, 9256, 9732, 9255, 2]
+// Dependencies: [5, 32, 19, 9378, 10256, 9379, 10255, 10496, 10254, 2]
 // Exports: default
 
-// Module 18805 (useInterestGameSearch)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8785 */;
-import GameSearchSession from "GameSearchSession" /* 9256 */;
-import GameSearchFilterGroup from "GameSearchFilterGroup" /* 9257 */;
-import GameSearchSurfaces from "GameSearchSurfaces" /* 9732 */;
+// Module 19042 (useInterestGameSearch)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 9379 */;
+import GameSearchSession from "GameSearchSession" /* 10255 */;
+import GameSearchFilterGroup from "GameSearchFilterGroup" /* 10256 */;
+import GameSearchSurfaces from "GameSearchSurfaces" /* 10496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8784 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 9378 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, dependencyMap, results;

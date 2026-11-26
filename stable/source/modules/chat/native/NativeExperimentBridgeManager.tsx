@@ -1,24 +1,24 @@
-// Module ID: 20481
-// Function ID: 20482
+// Module ID: 20821
+// Function ID: 20822
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2186, 502, 8982, 1377, 11363, 6652, 7926, 1252, 20482, 1282, 7383, 2]
+// Dependencies: [17, 2189, 502, 9732, 1380, 11955, 6787, 8779, 1256, 20822, 1285, 7882, 2]
 
-// Module 20481 (NativeExperimentBridgeManager)
+// Module 20821 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6652 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 7926 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 20482 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6787 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8779 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 20822 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaPlaybackExperiment_mod from "MediaPlaybackExperiment" /* 8982 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import MediaPlaybackExperiment_mod from "MediaPlaybackExperiment" /* 9732 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YYTextReplacementExperiment = tmp(11363);
+const YYTextReplacementExperiment = tmp(11955);
 function syncYYTextReplacementExperiment() {
   const obj = PlatformUtils;
   if (obj.isIOS()) {

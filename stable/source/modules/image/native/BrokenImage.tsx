@@ -1,12 +1,12 @@
-// Module ID: 12648
-// Function ID: 12649
+// Module ID: 13418
+// Function ID: 13419
 // Name: BrokenImage
-// Dependencies: [19, 21, 8134, 2]
+// Dependencies: [19, 21, 8263, 2]
 // Exports: default
 
-// Module 12648 (BrokenImage)
+// Module 13418 (BrokenImage)
 import Fragment from "Fragment" /* 21 */;
-import inlineStyles from "inlineStyles" /* 8134 */;
+import inlineStyles from "inlineStyles" /* 8263 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

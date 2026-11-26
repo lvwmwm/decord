@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/tabs/guilds/empty_states/images", width: 148, height: 107, scales: [2, 3, 4], hash: "0068bea3a7b26b1d06c599bf3096c534", name: "channels-empty", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 182, height: 128, scales: [2, 3], hash: "d91cbec9959285a2fc129da0bb393a90", name: "img_wump_trash_dark", type: "png" });

@@ -1,13 +1,13 @@
-// Module ID: 19544
-// Function ID: 19545
+// Module ID: 19934
+// Function ID: 19935
 // Name: getActivityContainerPIPStylesSpec
-// Dependencies: [5813, 2143, 12646, 2]
+// Dependencies: [5949, 2146, 10576, 2]
 // Exports: default
 
-// Module 19544 (getActivityContainerPIPStylesSpec)
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12646 */;
+// Module 19934 (getActivityContainerPIPStylesSpec)
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2146 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,12 +1,12 @@
-// Module ID: 15640
-// Function ID: 15641
+// Module ID: 15302
+// Function ID: 15303
 // Name: ReferralProgramShareActionSheetUtils
-// Dependencies: [5112, 10878, 2]
+// Dependencies: [5248, 10244, 2]
 // Exports: buildReferralUserRow
 
-// Module 15640 (ReferralProgramShareActionSheetUtils)
-import UserRowConstants from "UserRowConstants" /* 10878 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+// Module 15302 (ReferralProgramShareActionSheetUtils)
+import UserRowConstants from "UserRowConstants" /* 10244 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import size from "module_2" /* 2 */;
 
 const UserRowModes = UserRowConstants.UserRowModes;

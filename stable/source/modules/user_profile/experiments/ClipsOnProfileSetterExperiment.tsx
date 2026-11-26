@@ -1,10 +1,10 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15815
+// Function ID: 15816
 // Name: ClipsOnProfileSetterExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 
-// Module 15214 (ClipsOnProfileSetterExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 15815 (ClipsOnProfileSetterExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-07-clips-on-profile-setter", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

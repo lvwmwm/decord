@@ -1,15 +1,15 @@
-// Module ID: 17585
-// Function ID: 17586
+// Module ID: 17862
+// Function ID: 17863
 // Name: EmojiIcon
-// Dependencies: [19, 21, 17586, 5874, 10132, 7396, 1411, 2]
+// Dependencies: [19, 21, 17863, 6010, 11265, 7894, 1414, 2]
 // Exports: default
 
-// Module 17585 (EmojiIcon)
+// Module 17862 (EmojiIcon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import EmojiDefault from "Emoji" /* 7396 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10132 */;
-import useEmojiByIdOrName from "useEmojiByIdOrName" /* 17586 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import EmojiDefault from "Emoji" /* 7894 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11265 */;
+import useEmojiByIdOrName from "useEmojiByIdOrName" /* 17863 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ export default function EmojiIcon(size) {
     if (null != emojiByIdOrName.id) {
       const obj6 = { id: null, animated: null, size: num };
       ({ id: obj4.id, animated: obj4.animated } = emojiByIdOrName);
-      const tmp9Result = tmp9(1411);
+      const tmp9Result = tmp9(1414);
       url = tmp9Result.getEmojiURL(obj6);
     } else {
       url = emojiByIdOrName.url;

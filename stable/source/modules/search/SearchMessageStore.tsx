@@ -1,18 +1,18 @@
-// Module ID: 6951
-// Function ID: 6952
+// Module ID: 7037
+// Function ID: 7038
 // Name: SearchMessageStore
-// Dependencies: [502, 5019, 5112, 1072, 6611, 6228, 5114, 504, 572, 2]
+// Dependencies: [502, 5155, 5248, 1072, 6747, 6364, 5250, 504, 572, 2]
 
-// Module 6951 (SearchMessageStore)
+// Module 7037 (SearchMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ReactionUtils from "ReactionUtils" /* 5114 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6228 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6611 */;
+import ReactionUtils from "ReactionUtils" /* 5250 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6747 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
 import size from "module_2" /* 2 */;
 
 let set;

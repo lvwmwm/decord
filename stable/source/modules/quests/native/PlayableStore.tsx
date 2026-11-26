@@ -1,21 +1,21 @@
-// Module ID: 17423
-// Function ID: 17424
+// Module ID: 17696
+// Function ID: 17697
 // Name: PlayableStore
-// Dependencies: [7952, 6934, 2117, 5813, 6935, 6960, 1092, 7953, 6872, 6876, 504, 572, 2]
+// Dependencies: [8805, 7019, 2120, 5949, 7020, 7047, 1092, 8806, 6957, 6961, 504, 572, 2]
 
-// Module 17423 (PlayableStore)
+// Module 17696 (PlayableStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5813 */;
-import QuestTypes from "QuestTypes" /* 6872 */;
-import AdCreativeType from "AdCreativeType" /* 6876 */;
-import FramesConstants from "FramesConstants" /* 6935 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6960 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7953 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7952 */;
-import FramesStore from "FramesStore" /* 6934 */;
-import AppStateStore from "AppStateStore" /* 2117 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
+import QuestTypes from "QuestTypes" /* 6957 */;
+import AdCreativeType from "AdCreativeType" /* 6961 */;
+import FramesConstants from "FramesConstants" /* 7020 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 7047 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 8806 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
+import FramesStore from "FramesStore" /* 7019 */;
+import AppStateStore from "AppStateStore" /* 2120 */;
 import size from "module_2" /* 2 */;
 
 function pauseOrResumeTimer(startedAt) {
@@ -134,13 +134,15 @@ obj = {
     if (null != obj) {
       return false;
     } else {
-      const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
       const getDeliveredPlayable = AdDecisionUtils.getDeliveredPlayable;
       AdDecisionUtils;
-      const value = deliveryAdDecisionByPlacement.get(QuestTypes.AdPlacement.MOBILE_HOME_DOCK_AREA);
+      let first = AdDeliveryStore.getAdDecisionsForPlacement(QuestTypes.AdPlacement.MOBILE_HOME_DOCK_AREA)[0];
+      if (first == null) {
+        first = null;
+      }
       let creative;
-      if (value != null) {
-        creative = value.creative;
+      if (first != null) {
+        creative = first.creative;
       }
       const deliveredPlayable = getDeliveredPlayable(creative);
       if (null != deliveredPlayable) {

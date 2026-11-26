@@ -1,13 +1,13 @@
-// Module ID: 9389
-// Function ID: 9390
+// Module ID: 10638
+// Function ID: 10639
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 5925, 7995, 504, 9378, 2]
+// Dependencies: [19, 6061, 6792, 504, 10627, 2]
 // Exports: useAlertIfSecureFramesKeyInconsistent, useIsSecureFramesKeyInconsistent
 
-// Module 9389 (useIsSecureFramesKeyInconsistent)
+// Module 10638 (useIsSecureFramesKeyInconsistent)
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5925 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7995 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesKeyInconsistent.tsx");

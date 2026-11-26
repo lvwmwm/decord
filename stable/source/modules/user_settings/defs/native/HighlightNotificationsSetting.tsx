@@ -1,16 +1,17 @@
-// Module ID: 17880
-// Function ID: 17881
+// Module ID: 18135
+// Function ID: 18136
 // Name: HighlightNotificationsSetting
-// Dependencies: [5041, 8536, 1072, 504, 11717, 1113, 17881, 2]
+// Dependencies: [5177, 9202, 1072, 504, 12408, 1113, 18136, 18115, 2]
 // Exports: useHighlightNotifications
 
-// Module 17880 (HighlightNotificationsSetting)
+// Module 18135 (HighlightNotificationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,6 +24,7 @@ function useHighlightNotifications() {
 }
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
+let SettingBuilders = SettingBuilders_mod;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -42,7 +44,13 @@ let obj = {
   }
 };
 const route = SettingBuilders.createRoute(obj);
+SettingBuilders = SettingBuilders_mod;
+const createRoute = SettingBuilders.createRoute;
+const obj2 = { parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS };
+const merged = Object.assign(route);
+const route1 = createRoute(obj2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/HighlightNotificationsSetting.tsx");
 
 export default route;
 export { useHighlightNotifications };
+export const RedesignHighlightNotificationsSetting = route1;

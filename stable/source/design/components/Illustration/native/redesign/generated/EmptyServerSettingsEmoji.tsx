@@ -1,14 +1,14 @@
-// Module ID: 20184
-// Function ID: 20185
+// Module ID: 20524
+// Function ID: 20525
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 21, 8913, 20185, 20186, 20187, 5177, 5874, 2]
+// Dependencies: [19, 21, 8183, 20525, 20526, 20527, 5313, 6010, 2]
 // Exports: EmptyServerSettingsEmoji, getEmptyServerSettingsEmojiSource, useEmptyServerSettingsEmojiSource
 
-// Module 20184 (EmptyServerSettingsEmoji)
+// Module 20524 (EmptyServerSettingsEmoji)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5177 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import _mod8913 from "module_8913" /* 8913 */;
+import shared from "shared" /* 5313 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import _mod8183 from "module_8183" /* 8183 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/EmptyServerSettingsEmoji.tsx");
 
 export function getEmptyServerSettingsEmojiSource(theme) {
-  const obj = _mod8913;
+  const obj = _mod8183;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useEmptyServerSettingsEmojiSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8913;
+  const obj2 = _mod8183;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function EmptyServerSettingsEmoji(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8913;
+  const obj2 = _mod8183;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

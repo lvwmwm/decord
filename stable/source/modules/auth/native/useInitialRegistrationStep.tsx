@@ -1,16 +1,16 @@
-// Module ID: 18375
-// Function ID: 18376
+// Module ID: 18669
+// Function ID: 18670
 // Name: useInitialRegistrationStep
-// Dependencies: [19, 502, 6829, 18358, 18357, 504, 6827, 2]
+// Dependencies: [19, 502, 6836, 18652, 18651, 504, 6834, 2]
 // Exports: default
 
-// Module 18375 (useInitialRegistrationStep)
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6827 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18357 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18358 */;
+// Module 18669 (useInitialRegistrationStep)
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 18651 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18652 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConsentStore from "ConsentStore" /* 6829 */;
+import ConsentStore from "ConsentStore" /* 6836 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

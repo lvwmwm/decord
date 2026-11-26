@@ -1,9 +1,9 @@
-// Module ID: 17250
-// Function ID: 17251
+// Module ID: 17529
+// Function ID: 17530
 // Name: OrbWalletConstants
 // Dependencies: [2]
 
-// Module 17250 (OrbWalletConstants)
+// Module 17529 (OrbWalletConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/virtual_currency/native/orb_wallet/OrbWalletConstants.tsx");

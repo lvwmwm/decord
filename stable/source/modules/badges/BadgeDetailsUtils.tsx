@@ -1,20 +1,20 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 10117
+// Function ID: 10118
 // Name: BadgeDetailsUtils
-// Dependencies: [8867, 1387, 8859, 1113, 8868, 11634, 2150, 2]
+// Dependencies: [8547, 1390, 8480, 1113, 8548, 10113, 2153, 2]
 // Exports: getBadgeArtUrls, getBadgeCtaVariant, getBadgeDescriptionText, getBadgeProgressDisplay, getBadgeStatusText, getBadgeTitle, isLegacyDisplayBadge, isUpgradeableNitroViewer, shouldShowLegacyUnavailableNotice
 
-// Module 11642 (BadgeDetailsUtils)
+// Module 10117 (BadgeDetailsUtils)
 import intl5 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1387 */;
-import StringUtils from "StringUtils" /* 2150 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8867 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8868 */;
-import BadgeUtils from "BadgeUtils" /* 11634 */;
+import PremiumConstants from "PremiumConstants" /* 1390 */;
+import StringUtils from "StringUtils" /* 2153 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8547 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8548 */;
+import BadgeUtils from "BadgeUtils" /* 10113 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BadgeId = tmp(8859);
+const BadgeId = tmp(8480);
 const getObtainedAtFromBadge = BadgeDirectoryStore.getObtainedAtFromBadge;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/badges/BadgeDetailsUtils.tsx");
@@ -120,7 +120,7 @@ export function getBadgeStatusText(badge, arg1) {
       stringResult = intl4.string(tmp5(1113).t["5LcHT0"]);
     } else {
       const tmp5Result = BadgeIdResolution;
-      const tmp7 = tmp5Result.isLegacyBadgeId(badge.badge_id) && !badge.is_earnable && badge.badge_id !== tmp5(8859).BadgeId.STAFF;
+      const tmp7 = tmp5Result.isLegacyBadgeId(badge.badge_id) && !badge.is_earnable && badge.badge_id !== tmp5(8480).BadgeId.STAFF;
       if (!tmp7) {
         if (null != tmp) {
           let formatToPlainStringResult;
@@ -291,7 +291,7 @@ export function getBadgeProgressDisplay(badge, viewerBadge) {
     simple_icon_url1 = prop1;
   }
   let progress_helper_text;
-  const isNullOrEmpty = tmp2(2150).isNullOrEmpty;
+  const isNullOrEmpty = tmp2(2153).isNullOrEmpty;
   StringUtils;
   if (first != null) {
     progress_helper_text = first.progress_helper_text;

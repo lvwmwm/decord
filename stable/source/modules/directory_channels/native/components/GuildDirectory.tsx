@@ -1,40 +1,40 @@
-// Module ID: 14503
-// Function ID: 14504
+// Module ID: 14987
+// Function ID: 14988
 // Name: GuildDirectory
-// Dependencies: [19, 17, 5041, 6930, 14126, 14119, 14124, 1072, 21, 5170, 575, 14504, 14505, 14149, 14150, 5783, 5874, 14506, 1113, 5790, 7316, 13600, 14507, 14121, 7076, 14122, 11661, 504, 1627, 11412, 7763, 9, 7375, 5214, 14130, 1252, 14631, 14635, 14114, 14636, 2]
+// Dependencies: [19, 17, 5177, 7015, 14711, 14704, 14709, 1072, 21, 5306, 575, 14988, 14989, 14736, 14739, 5919, 6010, 14990, 1113, 5926, 7826, 14206, 14991, 14706, 7428, 14707, 13999, 504, 1630, 12008, 8678, 9, 7874, 5350, 14715, 1256, 15120, 15124, 14699, 15125, 2]
 // Exports: default
 
-// Module 14503 (GuildDirectory)
+// Module 14987 (GuildDirectory)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import components_Button_Button from "components/Button/Button" /* 5790 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7316 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7763 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 11661 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13600 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14114 */;
-import GuildDirectoryConstants2 from "GuildDirectoryConstants" /* 14119 */;
-import useCanManageGuildDirectoryEntry from "useCanManageGuildDirectoryEntry" /* 14121 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 14122 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 14130 */;
-import GuildDirectoryRowDefault from "GuildDirectoryRow" /* 14149 */;
-import GuildDirectoryPlaceholderRowDefault from "GuildDirectoryPlaceholderRow" /* 14150 */;
-import GuildDirectoryRowGenerator from "GuildDirectoryRowGenerator" /* 14505 */;
-import AssetRegistry from "AssetRegistry" /* 14506 */;
-import GuildDirectoryCategorySelectorDefault from "GuildDirectoryCategorySelector" /* 14636 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import components_Button_Button from "components/Button/Button" /* 5926 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7826 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8678 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13999 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 14206 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14699 */;
+import GuildDirectoryConstants2 from "GuildDirectoryConstants" /* 14704 */;
+import useCanManageGuildDirectoryEntry from "useCanManageGuildDirectoryEntry" /* 14706 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 14707 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 14715 */;
+import GuildDirectoryRowDefault from "GuildDirectoryRow" /* 14736 */;
+import GuildDirectoryPlaceholderRowDefault from "GuildDirectoryPlaceholderRow" /* 14739 */;
+import GuildDirectoryRowGenerator from "GuildDirectoryRowGenerator" /* 14989 */;
+import AssetRegistry from "AssetRegistry" /* 14990 */;
+import GuildDirectoryCategorySelectorDefault from "GuildDirectoryCategorySelector" /* 15125 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import ReadStateStore from "ReadStateStore" /* 6930 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 14126 */;
-import GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 14124 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 14711 */;
+import GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 14709 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -55,7 +55,7 @@ let obj2;
 let obj3;
 let size;
 let tmp6;
-const HubProgressHeaderDefault = tmp6(14507);
+const HubProgressHeaderDefault = tmp6(14991);
 function keyExtractor(type, arg1) {
   let guildId;
   type = undefined;
@@ -82,18 +82,18 @@ function renderItem(item) {
   }
   if (GuildDirectoryRowGenerator.RowType.HEADER === type) {
     const obj2 = { children: item.header };
-    return authStore5(GuildDirectoryHeaderRowItem, obj2);
+    return authStore4(GuildDirectoryHeaderRowItem, obj2);
   } else if (GuildDirectoryRowGenerator.RowType.ENTRY === type) {
     const obj = { entry: item.entry };
-    return authStore5(GuildDirectoryRowDefault, obj);
+    return authStore4(GuildDirectoryRowDefault, obj);
   } else {
-    return authStore5(GuildDirectoryPlaceholderRowDefault, {});
+    return authStore4(GuildDirectoryPlaceholderRowDefault, {});
   }
 }
 function GuildDirectoryHeaderRowItem(children) {
   children = children.children;
   const obj = { style: closure_22().categorySectionText, variant: "body-md/semibold", color: "mobile-text-heading-primary", children };
-  return authStore5(Text_Text.Text, obj);
+  return authStore4(Text_Text.Text, obj);
 }
 function GuildDirectoryHeader(guild) {
   let intl;
@@ -109,27 +109,27 @@ function GuildDirectoryHeader(guild) {
   const hasItem = features.has(constants3.HUB);
   const obj2 = { source: AssetRegistry, style: tmp.backgroundImage };
   const tmp8 = FastImageDefault;
-  items = [authStore5(tmp8, obj2), ];
+  items = [authStore4(tmp8, obj2), ];
   const obj3 = { style: tmp.textWrapper, children: items1 };
   const obj4 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "text-overlay-light", children: intl.string(intl4.t.IT7qoC) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items1 = [authStore5(Text, obj4), , , ];
+  items1 = [authStore4(Text, obj4), , , ];
   const obj5 = { style: tmp.headerDescription, variant: "body-sm/medium", color: "text-overlay-light", children: intl2.string(intl4.t["5PoYts"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items1[1] = authStore5(Text2, obj5);
-  const obj6 = { variant: "primary-overlay", icon: authStore5(MagnifyingGlassIcon.MagnifyingGlassIcon, { size: "sm", color: "text-strong" }), text: intl3.string(intl4.t.nL2wKD), onPress: onPressSearch };
+  items1[1] = authStore4(Text2, obj5);
+  const obj6 = { variant: "primary-overlay", icon: authStore4(MagnifyingGlassIcon.MagnifyingGlassIcon, { size: "sm", color: "text-strong" }), text: intl3.string(intl4.t.nL2wKD), onPress: onPressSearch };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
-  items1[2] = authStore5(Button, obj6);
-  items1[3] = authStore5(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "hub_directory" });
+  items1[2] = authStore4(Button, obj6);
+  items1[3] = authStore4(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "hub_directory" });
   items[1] = closure_19(hasOwnProperty, obj3);
   const children = [closure_19(hasOwnProperty, obj), ];
   let tmp5Result = null;
   const tmp3 = closure_19;
   const tmp4 = closure_20;
-  const tmp5 = authStore5;
+  const tmp5 = authStore4;
   if (hasItem) {
     const obj7 = { guild, onDirectoryPage: true };
     tmp5Result = tmp5(HubProgressHeaderDefault, obj7);
@@ -162,13 +162,13 @@ function GuildDirectoryFooter(hideFooter) {
             },
         children: closure_19(closure_5, obj3)
       };
-      const PressableOpacity = tmp2(7076).PressableOpacity;
+      const PressableOpacity = tmp2(7428).PressableOpacity;
       intl = tmp2(1113).intl;
       obj3 = { style: tmp.footer, children: items };
       const obj4 = { style: tmp.addIcon, children: closure_18(PlusMediumIcon.PlusMediumIcon, {}) };
       items = [closure_18(closure_5, obj4), ];
       const obj5 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.H9jxS1) };
-      const Text = tmp2(5783).Text;
+      const Text = tmp2(5919).Text;
       intl2 = tmp2(1113).intl;
       items[1] = closure_18(Text, obj5);
       tmp4 = closure_18(PressableOpacity, obj2);
@@ -201,9 +201,9 @@ export default function GuildDirectory(channel) {
   let items11;
   let items12;
   let items9;
-  let obj12;
   let obj13;
-  let obj7;
+  let obj14;
+  let obj8;
   let sum;
   channel = channel.channel;
   const guildId = channel.guildId;
@@ -231,11 +231,13 @@ export default function GuildDirectory(channel) {
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
   let obj2 = react;
   dependencyMap = react.useRef(null);
-  const bound = Math.max(guildId(1627)().bottom, guildId(11412)());
-  const obj3 = channel(14504);
-  const hubProgressBarCompletedSteps = obj3.useHubProgressBarCompletedSteps(stateFromStores);
-  const obj4 = channel(14504);
-  if (null == obj4.getNextHubProgressStep(hubProgressBarCompletedSteps)) {
+  const bottom = guildId(1630)().bottom;
+  const obj3 = channel(12008);
+  const bound = Math.max(bottom, obj3.useChatDockHeight());
+  const obj4 = channel(14988);
+  const hubProgressBarCompletedSteps = obj4.useHubProgressBarCompletedSteps(stateFromStores);
+  const obj5 = channel(14988);
+  if (null == obj5.getNextHubProgressStep(hubProgressBarCompletedSteps)) {
     sum = ref2;
   } else {
     sum = _location + ref2;
@@ -310,9 +312,9 @@ export default function GuildDirectory(channel) {
   }, items4);
   ref = obj2.useRef(null);
   ref2 = obj2.useRef(0);
-  const tmp2Result3 = tmp2(5214);
+  const tmp2Result3 = tmp2(5350);
   _location = tmp2Result3.useLocation();
-  const tmp2Result4 = tmp2(5214);
+  const tmp2Result4 = tmp2(5350);
   history = tmp2Result4.useHistory();
   const items5 = [_location, history];
   const effect2 = obj2.useEffect(() => {
@@ -368,30 +370,30 @@ export default function GuildDirectory(channel) {
   let tmp24Result = null;
   if (null != stateFromStores) {
     if (!directoryIsFetching) {
-      let obj5;
+      let obj6;
       if (0 === allEntriesCount) {
-        obj5 = { style: tmp.container, children: items10 };
-        const obj6 = { style: obj7, children: items9 };
-        obj7 = { paddingBottom: bound };
-        const obj8 = { style: tmp.border };
-        items9 = [closure_18(currentCategoryId, obj8), , ];
-        const obj9 = { guild: stateFromStores, channel };
-        items9[1] = closure_18(guildId(14631), obj9);
-        items9[2] = closure_18(tmp2(13600).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
-        items10 = [closure_19(currentCategoryId, obj6), closure_18(tmp5(14635), {})];
+        obj6 = { style: tmp.container, children: items10 };
+        const obj7 = { style: obj8, children: items9 };
+        obj8 = { paddingBottom: bound };
+        const obj9 = { style: tmp.border };
+        items9 = [closure_18(currentCategoryId, obj9), , ];
+        const obj10 = { guild: stateFromStores, channel };
+        items9[1] = closure_18(guildId(15120), obj10);
+        items9[2] = closure_18(tmp2(14206).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
+        items10 = [closure_19(currentCategoryId, obj7), closure_18(tmp5(15124), {})];
       }
-      tmp24Result = tmp24(tmp25, obj5);
+      tmp24Result = tmp24(tmp25, obj6);
     }
-    const obj10 = { style: tmp.container, children: items12 };
-    const obj11 = {
+    const obj11 = { style: tmp.container, children: items12 };
+    const obj12 = {
       ref,
       onScroll: function handleScroll(nativeEvent) {
           ref2.current = nativeEvent.nativeEvent.contentOffset.y;
         },
       scrollEventThrottle: 16,
-      contentContainerStyle: obj12,
+      contentContainerStyle: obj13,
       windowSize: 10,
-      ListHeaderComponent: closure_18(GuildDirectoryHeader, obj13),
+      ListHeaderComponent: closure_18(GuildDirectoryHeader, obj14),
       sections: items11,
       stickySectionHeadersEnabled: true,
       style: tmp.list,
@@ -400,16 +402,16 @@ export default function GuildDirectory(channel) {
       renderItem,
       renderSectionHeader() {
           const obj = { onCategorySelected: handleTapCategory, channel, categoryCounts, allEntriesCount };
-          return authStore5(GuildDirectoryCategorySelectorDefault, obj);
+          return authStore4(GuildDirectoryCategorySelectorDefault, obj);
         },
       ListFooterComponent() {
           const obj = { guild: stateFromStores, channel, hideFooter: false };
-          return authStore5(GuildDirectoryFooter, obj);
+          return authStore4(GuildDirectoryFooter, obj);
         }
     };
     items11 = [{ data: memo }];
-    obj12 = { paddingBottom: bound };
-    obj13 = {
+    obj13 = { paddingBottom: bound };
+    obj14 = {
       guild: stateFromStores,
       onPressSearch: function handleTapSearch() {
           const obj = GuildDirectorySearchModalActionCreatorsDefault;
@@ -417,9 +419,12 @@ export default function GuildDirectory(channel) {
           obj.open(obj2);
         }
     };
-    const obj14 = { data: memo };
-    items12 = [closure_18(directoryEntries, obj11), closure_18(tmp5(14635), {})];
-    obj5 = obj10;
+    const obj15 = { data: memo };
+    items12 = [closure_18(directoryEntries, obj12), ];
+    const obj16 = { background: guildId(575).colors.BACKGROUND_BASE_LOW };
+    const tmp5Result = guildId(15124);
+    items12[1] = closure_18(tmp5Result, obj16);
+    obj6 = obj11;
   }
   return tmp24Result;
 };

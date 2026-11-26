@@ -1,12 +1,12 @@
-// Module ID: 17848
-// Function ID: 17849
+// Module ID: 18125
+// Function ID: 18126
 // Name: showEmailSettingsUpdateErrorToast
-// Dependencies: [5868, 1113, 2]
+// Dependencies: [6004, 1113, 2]
 // Exports: default
 
-// Module 17848 (showEmailSettingsUpdateErrorToast)
+// Module 18125 (showEmailSettingsUpdateErrorToast)
 import intl2 from "intl" /* 1113 */;
-import ToastUtils from "ToastUtils" /* 5868 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/notifications/showEmailSettingsUpdateErrorToast.native.tsx");

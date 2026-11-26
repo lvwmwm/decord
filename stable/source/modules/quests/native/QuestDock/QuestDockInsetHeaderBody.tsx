@@ -1,23 +1,23 @@
-// Module ID: 17528
-// Function ID: 17529
+// Module ID: 17808
+// Function ID: 17809
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 17427, 21, 575, 5170, 14958, 14957, 17424, 1627, 17495, 17492, 5783, 5790, 1187, 2]
+// Dependencies: [19, 17, 17700, 21, 575, 5306, 15260, 15259, 17697, 1630, 17770, 17767, 5919, 5926, 1187, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 17528 (QuestDockInsetHeaderBody)
+// Module 17808 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 14957 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14958 */;
-import QuestDockHooks from "QuestDockHooks" /* 17424 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17492 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 17495 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 15259 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 15260 */;
+import QuestDockHooks from "QuestDockHooks" /* 17697 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17767 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 17770 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 17427 */;
+import QuestDockConstants from "QuestDockConstants" /* 17700 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -123,7 +123,7 @@ const memoResult = react.memo(function QuestDockInsetHeaderBody(showBonusOrbsGra
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5790).Button;
+    const Button = tmp2(5926).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }

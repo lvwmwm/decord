@@ -1,16 +1,16 @@
-// Module ID: 15765
-// Function ID: 15766
+// Module ID: 15436
+// Function ID: 15437
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 2166, 4992, 2]
+// Dependencies: [19, 2169, 5128, 2]
 // Exports: default
 
-// Module 15765 (useOutboundPromotionRedemptionEndDate)
-import DateUtils from "DateUtils" /* 4992 */;
+// Module 15436 (useOutboundPromotionRedemptionEndDate)
+import DateUtils from "DateUtils" /* 5128 */;
 import react from "react" /* 19 */;
-import module_2166 from "module_2166" /* 2166 */;
+import module_2169 from "module_2169" /* 2169 */;
 import size from "module_2" /* 2 */;
 
-let closure_4 = module_2166.duration(30, "days");
+let closure_4 = module_2169.duration(30, "days");
 const result = size.fileFinishedImporting("modules/premium/hooks/useOutboundPromotionRedemptionEndDate.tsx");
 
 export default function useOutboundPromotionRedemptionEndDate(arg0, arg1) {
@@ -24,14 +24,14 @@ export default function useOutboundPromotionRedemptionEndDate(arg0, arg1) {
     if (closure_1) {
       let addResult;
       if (null != closure_0.outboundRedemptionEndDate) {
-        addResult = module_2166(tmp6.outboundRedemptionEndDate);
+        addResult = module_2169(tmp6.outboundRedemptionEndDate);
       } else {
-        const obj = module_2166(closure_0.endDate);
+        const obj = module_2169(closure_0.endDate);
         addResult = obj.add(closure_4);
       }
       tmp5 = addResult;
     } else {
-      tmp5 = module_2166(closure_0.endDate);
+      tmp5 = module_2169(closure_0.endDate);
     }
     return dateFormat(tmp5, "LL");
   }, items);

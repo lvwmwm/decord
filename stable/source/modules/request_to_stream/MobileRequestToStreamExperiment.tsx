@@ -1,10 +1,10 @@
-// Module ID: 15136
-// Function ID: 15137
+// Module ID: 15736
+// Function ID: 15737
 // Name: MobileRequestToStreamExperiment
-// Dependencies: [1450, 2]
+// Dependencies: [1453, 2]
 
-// Module 15136 (MobileRequestToStreamExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1450 */;
+// Module 15736 (MobileRequestToStreamExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", name: "2026-09-mobile-request-to-stream", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

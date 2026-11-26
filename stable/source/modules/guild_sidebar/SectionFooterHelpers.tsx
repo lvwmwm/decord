@@ -1,16 +1,16 @@
-// Module ID: 18671
-// Function ID: 18672
+// Module ID: 18965
+// Function ID: 18966
 // Name: SectionFooterHelpers
-// Dependencies: [7382, 5102, 7822, 1072, 7816, 5044, 2]
+// Dependencies: [7881, 5238, 8737, 1072, 8731, 5180, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 18671 (SectionFooterHelpers)
+// Module 18965 (SectionFooterHelpers)
 import Constants from "Constants" /* 1072 */;
-import FavoritesUtils from "FavoritesUtils" /* 5044 */;
-import ChannelListState from "ChannelListState" /* 7816 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7822 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7382 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
+import FavoritesUtils from "FavoritesUtils" /* 5180 */;
+import ChannelListState from "ChannelListState" /* 8731 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 8737 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7881 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
 import size from "module_2" /* 2 */;
 
 const ChannelListGuildActionRow = GuildSidebarConstants.ChannelListGuildActionRow;
@@ -33,18 +33,18 @@ export function getSectionFooterConfig(guildChannels, optInChannelsEnabled, sect
   }
   let tmp6 = !tmp3;
   if (tmp6) {
-    let tmp7 = section === tmp(7816).SECTION_INDEX_GUILD_ACTIONS;
+    let tmp7 = section === tmp(8731).SECTION_INDEX_GUILD_ACTIONS;
     if (!tmp7) {
       let tmp8;
       const tmpResult = FavoritesUtils;
       if (tmpResult.isFavoritesGuildId(guildChannels.id)) {
         tmp8 = section !== guildChannels.getSections(false).length - 1;
       } else {
-        tmp8 = section === tmp(7816).SECTION_INDEX_FAVORITES;
+        tmp8 = section === tmp(8731).SECTION_INDEX_FAVORITES;
         if (!tmp8) {
           let tmp10 = optInChannelsEnabled;
           if (tmp10) {
-            let tmp11 = section !== tmp(7816).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            let tmp11 = section !== tmp(8731).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             if (tmp11) {
               let flag2 = section === guildChannels.recentsSectionNumber;
               if (!flag2) {

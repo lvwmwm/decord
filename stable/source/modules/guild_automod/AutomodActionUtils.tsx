@@ -1,13 +1,13 @@
-// Module ID: 20125
-// Function ID: 20126
+// Module ID: 20465
+// Function ID: 20466
 // Name: AutomodActionUtils
-// Dependencies: [13557, 20122, 1380, 2]
+// Dependencies: [14168, 20462, 1255, 2]
 // Exports: getDefaultActions, getRuleActionsInOrder, getRuleDefaultActionsFromConfig, isActionBlockMessage, isActionFlagToChannel, isActionQuarantineUser, isActionUserCommunicationDisabled, setRuleAction
 
-// Module 20125 (AutomodActionUtils)
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import Constants from "Constants" /* 13557 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20122 */;
+// Module 20465 (AutomodActionUtils)
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import Constants from "Constants" /* 14168 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20462 */;
 import size from "module_2" /* 2 */;
 
 const AutomodActionType = Constants.AutomodActionType;

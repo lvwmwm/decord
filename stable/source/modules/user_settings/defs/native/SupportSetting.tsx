@@ -1,13 +1,13 @@
-// Module ID: 17895
-// Function ID: 17896
+// Module ID: 18172
+// Function ID: 18173
 // Name: SupportSetting
-// Dependencies: [11717, 1113, 14781, 17896, 2]
+// Dependencies: [12408, 1113, 10059, 18173, 2]
 
-// Module 17895 (SupportSetting)
+// Module 18172 (SupportSetting)
 import intl2 from "intl" /* 1113 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 14781 */;
-import SupportUtils from "SupportUtils" /* 17896 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 10059 */;
+import SupportUtils from "SupportUtils" /* 18173 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

@@ -1,14 +1,14 @@
-// Module ID: 13697
-// Function ID: 13698
+// Module ID: 14252
+// Function ID: 14253
 // Name: onTapCheckpointCard
-// Dependencies: [5019, 6602, 13698, 13701, 2]
+// Dependencies: [5155, 6738, 14253, 14260, 2]
 // Exports: onTapCheckpointCard
 
-// Module 13697 (onTapCheckpointCard)
-import CheckpointExperiments from "CheckpointExperiments" /* 6602 */;
-import Tracking from "Tracking" /* 13698 */;
-import openCheckpoint from "openCheckpoint" /* 13701 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
+// Module 14252 (onTapCheckpointCard)
+import CheckpointExperiments from "CheckpointExperiments" /* 6738 */;
+import Tracking from "Tracking" /* 14253 */;
+import openCheckpoint from "openCheckpoint" /* 14260 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/checkpoint/onTapCheckpointCard.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 14685
-// Function ID: 14686
+// Module ID: 15178
+// Function ID: 15179
 // Name: UsersLegendList
-// Dependencies: [32, 19, 17, 21, 5170, 5424, 1652, 1705, 1493, 7329, 14686, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 5560, 1655, 1708, 1496, 7839, 15179, 2]
 
-// Module 14685 (UsersLegendList)
+// Module 15178 (UsersLegendList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import BottomSheetModal from "BottomSheetModal" /* 5424 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7329 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7839 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let keyExtractor;

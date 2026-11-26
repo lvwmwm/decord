@@ -1,20 +1,19 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 14515
+// Function ID: 14516
 // Name: CheckpointGuildStats
-// Dependencies: [17, 6231, 21, 5170, 575, 1113, 3216, 12170, 13910, 8747, 2]
+// Dependencies: [17, 6367, 21, 5306, 575, 14508, 13050, 14273, 8069, 2]
 // Exports: default
 
-// Module 13930 (CheckpointGuildStats)
+// Module 14515 (CheckpointGuildStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import _modDef3216 from "module_3216" /* 3216 */;
-import CheckpointConstants from "CheckpointConstants" /* 6231 */;
-import ChatIcon from "ChatIcon" /* 8747 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12170 */;
-import CheckpointTextDefault from "CheckpointText" /* 13910 */;
+import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import ChatIcon from "ChatIcon" /* 8069 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 13050 */;
+import CheckpointTextDefault from "CheckpointText" /* 14273 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14508 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -30,7 +29,7 @@ obj2 = { flexDirection: "row", flexWrap: "wrap", columnGap: nativeDefault.space.
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_7 = createStyles(obj);
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointGuildStats.tsx");
+let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointGuildStats.tsx");
 
 export default function CheckpointGuildStats(arg0) {
   let items;
@@ -38,28 +37,32 @@ export default function CheckpointGuildStats(arg0) {
   let items2;
   let numMessagesSent;
   let numVoiceMinutes;
+  let obj5;
+  let obj9;
   ({ numVoiceMinutes, numMessagesSent } = arg0);
   const tmp = closure_7();
   const rounded = Math.round(numVoiceMinutes);
   const rounded1 = Math.round(numMessagesSent);
-  const intl = intl3.intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3216.UZbUtl, { numMinutes: rounded });
-  const intl2 = intl3.intl;
-  const obj = { style: tmp.stats, children: items1 };
-  const stringResult = intl2.string(_modDef3216.wWKySP);
-  const obj2 = { accessible: true, accessibilityLabel: "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase(), style: tmp.stat, children: items };
+  const obj = CheckpointNumberUtils;
+  const result = obj.formatCheckpointStatNumber(rounded);
+  const obj3 = { style: tmp.stats, children: items1 };
+  const obj4 = { accessible: true, accessibilityLabel: obj5.formatCheckpointStatAccessibilityLabel("voice", rounded), style: tmp.stat, children: items };
+  const obj2 = CheckpointNumberUtils;
+  const result1 = obj2.formatCheckpointStatNumber(rounded1);
   items = [, ];
-  const obj3 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items[0] = hasOwnProperty(MicrophoneIcon.MicrophoneIcon, obj3);
-  const obj4 = { variant: "mono-md/bold", style: tmp.text, children: rounded };
-  items[1] = hasOwnProperty(CheckpointTextDefault, obj4);
-  items1 = [metroRequire(View, obj2), ];
-  const obj5 = { accessible: true, accessibilityLabel: "" + rounded1 + " " + stringResult.toLocaleLowerCase(), style: tmp.stat, children: items2 };
-  items2 = [, ];
+  obj5 = CheckpointNumberUtils;
   const obj6 = { size: "xs", color: CHECKPOINT_PRIMARY };
-  items2[0] = hasOwnProperty(ChatIcon.ChatIcon, obj6);
-  const obj7 = { variant: "mono-md/bold", style: tmp.text, children: rounded1 };
-  items2[1] = hasOwnProperty(CheckpointTextDefault, obj7);
-  items1[1] = metroRequire(View, obj5);
-  return metroRequire(View, obj);
+  items[0] = hasOwnProperty(MicrophoneIcon.MicrophoneIcon, obj6);
+  const obj7 = { variant: "mono-md/bold", style: tmp.text, children: result };
+  items[1] = hasOwnProperty(CheckpointTextDefault, obj7);
+  items1 = [metroRequire(View, obj4), ];
+  const obj8 = { accessible: true, accessibilityLabel: obj9.formatCheckpointStatAccessibilityLabel("messages", rounded1), style: tmp.stat, children: items2 };
+  items2 = [, ];
+  const obj10 = { size: "xs", color: CHECKPOINT_PRIMARY };
+  obj9 = CheckpointNumberUtils;
+  items2[0] = hasOwnProperty(ChatIcon.ChatIcon, obj10);
+  const obj11 = { variant: "mono-md/bold", style: tmp.text, children: result1 };
+  items2[1] = hasOwnProperty(CheckpointTextDefault, obj11);
+  items1[1] = metroRequire(View, obj8);
+  return metroRequire(View, obj3);
 };

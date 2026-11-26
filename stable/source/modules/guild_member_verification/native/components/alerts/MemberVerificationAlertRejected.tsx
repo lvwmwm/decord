@@ -1,15 +1,15 @@
-// Module ID: 7007
-// Function ID: 7008
+// Module ID: 16062
+// Function ID: 16063
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 19, 5082, 1385, 5204, 21, 7008, 504, 7009, 7004, 7032, 1113, 7000, 7153, 5790, 2]
+// Dependencies: [5, 19, 5218, 1388, 5340, 21, 14889, 504, 16063, 6922, 7684, 1113, 6918, 7549, 5926, 2]
 // Exports: default
 
-// Module 7007 (MemberVerificationAlertRejected)
+// Module 16062 (MemberVerificationAlertRejected)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import UserStore from "UserStore" /* 1385 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5204 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import UserStore from "UserStore" /* 1388 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5340 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

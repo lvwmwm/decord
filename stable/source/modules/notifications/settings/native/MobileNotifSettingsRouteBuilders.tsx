@@ -1,13 +1,13 @@
-// Module ID: 18330
-// Function ID: 18331
+// Module ID: 18622
+// Function ID: 18623
 // Name: MobileNotifSettingsRouteBuilders
-// Dependencies: [1113, 2992, 17838, 2]
-// Exports: buildCategoryCallsMessagesSettingsSection, buildCategoryDiscoveryHighlightsSettingsSection, buildCategoryFriendsActivitySettingsSection, buildCategoryServersSettingsSection, buildFriendActivityTitleSettingsSection, buildOverviewCategoriesSection
+// Dependencies: [1113, 3029, 18115, 2]
+// Exports: buildCategoryCallsMessagesSettingsSection, buildCategoryDiscoveryHighlightsSettingsSection, buildCategoryFriendsActivitySettingsSection, buildCategoryServersSettingsSection, buildFriendActivityTitleSettingsSection, buildOverviewCategoriesSection, buildReactionsChoiceSettingsSection
 
-// Module 18330 (MobileNotifSettingsRouteBuilders)
+// Module 18622 (MobileNotifSettingsRouteBuilders)
 import intl2 from "intl" /* 1113 */;
-import _modDef2992 from "module_2992" /* 2992 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17838 */;
+import _modDef3029 from "module_3029" /* 3029 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/notifications/settings/native/MobileNotifSettingsRouteBuilders.tsx");
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/notifications/settings/native
 export function buildOverviewCategoriesSection() {
   let intl;
   let items;
-  const obj = { label: intl.string(_modDef2992["/UdAvP"]), settings: items };
+  const obj = { label: intl.string(_modDef3029["/UdAvP"]), settings: items };
   intl = intl2.intl;
   items = [MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_CALLS_MESSAGES, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_DISCOVERY_HIGHLIGHTS, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY, MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_SERVERS];
   return obj;
@@ -23,7 +23,7 @@ export function buildOverviewCategoriesSection() {
 export function buildCategoryCallsMessagesSettingsSection() {
   let items;
   const obj = { settings: items };
-  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUESTS, MobileNotifSettings.MobileNotifSettings.NOTIF_CALLS, MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_LOW, MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_DEFAULT];
+  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_FRIEND_REQUESTS, MobileNotifSettings.MobileNotifSettings.NOTIF_CALLS, MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_LOW, MobileNotifSettings.MobileNotifSettings.NOTIF_MISSED_MESSAGES_DEFAULT, MobileNotifSettings.MobileNotifSettings.NOTIF_SUMMARY_REMINDER, MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS_CHOICE_ROUTE];
   return obj;
 }
 export function buildCategoryDiscoveryHighlightsSettingsSection() {
@@ -47,6 +47,12 @@ export function buildFriendActivityTitleSettingsSection() {
 export function buildCategoryServersSettingsSection() {
   let items;
   const obj = { settings: items };
-  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_GUILD_EVENT_NOTIFICATIONS, MobileNotifSettings.MobileNotifSettings.NOTIF_FORUM_NOTIFICATIONS, MobileNotifSettings.MobileNotifSettings.NOTIF_OTHER_GUILD, MobileNotifSettings.MobileNotifSettings.NOTIF_SAFETY_ALERTS, MobileNotifSettings.MobileNotifSettings.NOTIF_STAGE_NOTIFICATIONS];
+  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_GUILD_EVENT_NOTIFICATIONS, MobileNotifSettings.MobileNotifSettings.NOTIF_UPCOMING_SERVER_EVENT, MobileNotifSettings.MobileNotifSettings.NOTIF_FORUM_NOTIFICATIONS, MobileNotifSettings.MobileNotifSettings.NOTIF_OTHER_GUILD, MobileNotifSettings.MobileNotifSettings.NOTIF_SAFETY_ALERTS, MobileNotifSettings.MobileNotifSettings.NOTIF_STAGE_NOTIFICATIONS];
+  return obj;
+}
+export function buildReactionsChoiceSettingsSection() {
+  let items;
+  const obj = { settings: items };
+  items = [MobileNotifSettings.MobileNotifSettings.NOTIF_REACTIONS_CHOICE];
   return obj;
 }

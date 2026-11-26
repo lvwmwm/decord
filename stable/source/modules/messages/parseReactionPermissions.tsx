@@ -1,10 +1,10 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 11900
+// Function ID: 11901
 // Name: parseReactionPermissions
 // Dependencies: [2]
 // Exports: default
 
-// Module 11310 (parseReactionPermissions)
+// Module 11900 (parseReactionPermissions)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");

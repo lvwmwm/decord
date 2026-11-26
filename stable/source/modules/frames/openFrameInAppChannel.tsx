@@ -1,10 +1,10 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 12758
+// Function ID: 12759
 // Name: openFrameInAppChannel
-// Dependencies: [5, 11926, 11927, 2]
+// Dependencies: [5, 12759, 12760, 2]
 // Exports: default
 
-// Module 11925 (openFrameInAppChannel)
+// Module 12758 (openFrameInAppChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let obj = function _openFrameInAppChannel() {
       closure_130_1(closure_130_2[1])(obj7);
       await "HermesInternal";
       ({ applicationId: c0, channelId: c1, analyticsContext: c2, launch: c3 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;

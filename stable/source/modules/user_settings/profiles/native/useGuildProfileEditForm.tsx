@@ -1,21 +1,21 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 17190
+// Function ID: 17191
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8835, 7881, 5082, 5041, 6860, 1385, 1072, 5195, 504, 13566, 5014, 11697, 16912, 11693, 5198, 7254, 16808, 6872, 16809, 6611, 1113, 8842, 2]
+// Dependencies: [109, 5, 19, 8542, 7352, 5218, 5177, 6946, 1388, 1072, 5331, 504, 14177, 5150, 10037, 17191, 10032, 5334, 7807, 17087, 6957, 17088, 6747, 1113, 9399, 2]
 // Exports: default
 
-// Module 16911 (useGuildProfileEditForm)
+// Module 17190 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1072 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
-import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8835 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8542 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7881 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SortedGuildStore from "SortedGuildStore" /* 6860 */;
-import UserStore from "UserStore" /* 1385 */;
+import UserProfileStore from "UserProfileStore" /* 7352 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SortedGuildStore from "SortedGuildStore" /* 6946 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;

@@ -1,18 +1,18 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17669
+// Function ID: 17670
 // Name: OrbsArcadeSheetActions
-// Dependencies: [19, 17375, 21, 5170, 1113, 5406, 17386, 504, 17382, 6855, 17390, 17394, 5790, 2]
+// Dependencies: [19, 17649, 21, 5306, 1113, 5542, 17660, 504, 17656, 6941, 17670, 17673, 5926, 2]
 // Exports: default
 
-// Module 17389 (OrbsArcadeSheetActions)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17382 */;
-import OrbsArcadeClaimRewardButtonDefault from "OrbsArcadeClaimRewardButton" /* 17390 */;
-import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 17394 */;
+// Module 17669 (OrbsArcadeSheetActions)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17656 */;
+import OrbsArcadeClaimRewardButtonDefault from "OrbsArcadeClaimRewardButton" /* 17670 */;
+import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 17673 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17375 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17649 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -63,7 +63,7 @@ export default function OrbsArcadeSheetActions(game) {
           text: intl.string(game(1113).t["uz4M/z"]),
           onPress() {
                   const obj = game(dependencyMap[6]);
-                  return obj.openOrbsArcadeHowToPlaySheet(game.id, surface);
+                  return obj.openOrbsArcadeInfoSheet(game.id, surface);
                 }
         };
         intl = game(1113).intl;
@@ -95,7 +95,7 @@ export default function OrbsArcadeSheetActions(game) {
       if (null != tmp7) {
         const obj5 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
         ({ text: obj6.text, onPress: obj6.onPress } = tmp7);
-        tmp19 = closure_4(tmp10(5790).Button, obj5);
+        tmp19 = closure_4(tmp10(5926).Button, obj5);
       }
       items3[1] = tmp19;
       obj4.children = items3;

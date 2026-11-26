@@ -1,12 +1,12 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6335
+// Function ID: 6336
 // Name: ApplicationCommandConstants
-// Dependencies: [1113, 2116, 2]
+// Dependencies: [1113, 2119, 2]
 // Exports: getValidationErrorText
 
-// Module 6199 (ApplicationCommandConstants)
+// Module 6335 (ApplicationCommandConstants)
 import intl10 from "intl" /* 1113 */;
-import Server from "Server" /* 2116 */;
+import Server from "Server" /* 2119 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];

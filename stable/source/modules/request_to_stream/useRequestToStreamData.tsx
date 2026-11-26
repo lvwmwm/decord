@@ -1,15 +1,15 @@
-// Module ID: 15137
-// Function ID: 15138
+// Module ID: 15737
+// Function ID: 15738
 // Name: useRequestToStreamData
-// Dependencies: [19, 6801, 502, 1072, 11874, 504, 15138, 6969, 15139, 11721, 15140, 2]
+// Dependencies: [19, 6810, 502, 1072, 9019, 504, 15738, 7055, 15739, 12412, 15740, 2]
 // Exports: useRequestToStreamData
 
-// Module 15137 (useRequestToStreamData)
+// Module 15737 (useRequestToStreamData)
 import Constants from "Constants" /* 1072 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11721 */;
-import RequestToStreamActionCreators from "RequestToStreamActionCreators" /* 15140 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 12412 */;
+import RequestToStreamActionCreators from "RequestToStreamActionCreators" /* 15740 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6801 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

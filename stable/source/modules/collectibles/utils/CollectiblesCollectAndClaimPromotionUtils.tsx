@@ -1,21 +1,21 @@
-// Module ID: 15330
-// Function ID: 15331
+// Module ID: 9450
+// Function ID: 9451
 // Name: CollectiblesCollectAndClaimPromotionUtils
-// Dependencies: [9701, 9600, 7829, 1074, 7841, 2]
+// Dependencies: [9451, 9416, 8485, 1074, 8497, 2]
 // Exports: getBundleChildSkuIds, getCollectAndClaimPromotionForCollectiblesProduct, getCollectiblesPromotionSurface
 
-// Module 15330 (CollectiblesCollectAndClaimPromotionUtils)
+// Module 9450 (CollectiblesCollectAndClaimPromotionUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7841 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9600 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9701 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7829 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9416 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9451 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, set;
 
-const f109716 = (skuId) => skuId.skuId;
+const f98204 = (skuId) => skuId.skuId;
 function getCollectionQualifyingSkuCount(bundledProducts, collectionId) {
   let _Set1;
   _require = collectionId;
@@ -47,7 +47,7 @@ function getCollectionQualifyingSkuCount(bundledProducts, collectionId) {
       const self3 = this;
       const self4 = this;
       const items = [];
-      set = new Set(bundledProducts.map(f109716));
+      set = new Set(bundledProducts.map(f98204));
       HermesBuiltin.arraySpread(items, set, 0);
       items1 = items;
     } else {
@@ -99,7 +99,7 @@ export function getBundleChildSkuIds(bundledProducts) {
     const self = this;
     const self2 = this;
     const items = [];
-    set = new Set(bundledProducts.map(f109716));
+    set = new Set(bundledProducts.map(f98204));
     HermesBuiltin.arraySpread(items, set, 0);
     return items;
   } else {

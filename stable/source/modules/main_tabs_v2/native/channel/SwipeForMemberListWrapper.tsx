@@ -1,26 +1,26 @@
-// Module ID: 19074
-// Function ID: 19075
+// Module ID: 19446
+// Function ID: 19447
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9948, 9936, 1072, 21, 3, 5170, 575, 5921, 11415, 5349, 1652, 5753, 5401, 7303, 5355, 11732, 1108, 18428, 8948, 18439, 12262, 5347, 5346, 6186, 1500, 18998, 14264, 18432, 18437, 18434, 5452, 19075, 13984, 18991, 10887, 5770, 19076, 2]
+// Dependencies: [32, 19, 17, 9064, 9052, 1072, 21, 3, 5306, 575, 6057, 12011, 5485, 1655, 5889, 5537, 7587, 5491, 12423, 1108, 18722, 11253, 18733, 13123, 5483, 5482, 6322, 1503, 19370, 14852, 18726, 18731, 18728, 5588, 19447, 14567, 19363, 10271, 5906, 19448, 15124, 2]
 // Exports: default
 
-// Module 19074 (SwipeForMemberListWrapper)
+// Module 19446 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
-import RootNavigationRef from "RootNavigationRef" /* 5347 */;
-import useChatLayout from "useChatLayout" /* 5349 */;
-import ChatInputUtils from "ChatInputUtils" /* 5355 */;
-import react_native from "react-native" /* 9936 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 18439 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import useChatLayout from "useChatLayout" /* 5485 */;
+import ChatInputUtils from "ChatInputUtils" /* 5491 */;
+import react_native from "react-native" /* 9052 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 18733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9948 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9064 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -67,7 +67,6 @@ export default function _default(channelId) {
   let children;
   let closure_4;
   let closure_5;
-  let gesture;
   let isDragging;
   let isNavigationTTIVisible;
   let items30;
@@ -76,7 +75,7 @@ export default function _default(channelId) {
   let items34;
   let items35;
   let movePanel;
-  let obj11;
+  let obj12;
   let obj6;
   let panelGestureContext;
   let str;
@@ -559,15 +558,18 @@ export default function _default(channelId) {
   const obj8 = { style: items33, accessibilityElementsHidden: tmp71, importantForAccessibility: str2, children: items34 };
   items33[3] = onyxRightOverflow;
   tmp71 = !derivedStateFromSharedValue;
-  items34 = [navigation(tmp2(tmp3[37]), { absolute: true, withOverlay: true, overlayOpacity: 0.5 }), , ];
+  items34 = [navigation(tmp2(tmp3[37]), { absolute: true, withOverlay: true, overlayOpacity: 0.5 }), , , ];
   let obj9 = { children: navigation(tmp2(tmp3[39]), { isShowing: derivedStateFromSharedValue, channelId: first, isSearchLocked: false, onBackPress: callback5, componentWidth: tmp9, onChannelDeleted: callback4 }) };
   const LayerScope = tmp13(tmp3[38]).LayerScope;
   items34[1] = navigation(LayerScope, obj9);
-  const obj10 = { style: items35, children: navigation(panelGestureContext, obj11) };
+  const obj10 = { background: tmp2(tmp3[9]).colors.MOBILE_ACTIONSHEET_BACKGROUND, ignoreTheme: true };
+  const tmp2Result2 = tmp2(tmp3[40]);
+  items34[2] = navigation(tmp2Result2, obj10);
+  const obj11 = { style: items35, children: navigation(panelGestureContext, obj12) };
   items35 = [StyleSheet.absoluteFill, animatedStyle];
-  obj11 = { style: tmp.memberListPreview };
+  obj12 = { style: tmp.memberListPreview };
   const View2 = tmp2(tmp3[13]).View;
-  items34[2] = navigation(View2, obj10);
+  items34[3] = navigation(View2, obj11);
   items32[1] = closure_14(View, obj8);
   items30[1] = navigation(GestureDetector, obj5);
   return closure_14(Provider, obj3);

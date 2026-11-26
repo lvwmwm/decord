@@ -1,27 +1,27 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17639
+// Function ID: 17640
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5171, 8835, 21, 5170, 575, 8841, 2108, 504, 8844, 11566, 1113, 3056, 11684, 17364, 6941, 8834, 4992, 1187, 8927, 10923, 10924, 5783, 2]
+// Dependencies: [19, 17, 5307, 8542, 21, 5306, 575, 8541, 2111, 504, 9401, 9528, 1113, 3125, 10063, 17638, 7027, 9396, 5128, 1187, 8613, 10064, 10065, 5919, 2]
 // Exports: default
 
-// Module 17365 (DisplayNameStylesEditPreview)
+// Module 17639 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import DateUtils from "DateUtils" /* 4992 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6941 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8834 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8844 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8927 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10923 */;
-import types from "types" /* 10924 */;
+import DateUtils from "DateUtils" /* 5128 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 7027 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8613 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 9396 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 9401 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10064 */;
+import types from "types" /* 10065 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8835 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -88,10 +88,10 @@ function ChatPreview(chatMessage) {
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
   const obj10 = { variant: "body-md/normal", color: "text-default", style: tmp.chatMessageText, children: chatMessage };
-  const Text = tmp2(5783).Text;
+  const Text = tmp2(5919).Text;
   if (chatMessage == null) {
     const intl = tmp2(1113).intl;
-    chatMessage = intl.string(tmp5(3056).h5Cuej);
+    chatMessage = intl.string(tmp5(3125).h5Cuej);
   }
   items3[1] = metroImportDefault(Text, obj10);
   items1[1] = metroImportAll(View, obj6);

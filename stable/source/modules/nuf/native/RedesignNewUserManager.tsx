@@ -1,25 +1,25 @@
-// Module ID: 19997
-// Function ID: 19998
+// Module ID: 20341
+// Function ID: 20342
 // Name: RedesignNewUserManager
-// Dependencies: [5, 14512, 502, 5013, 7021, 19998, 5347, 5346, 20001, 7383, 9231, 20002, 6831, 20003, 2118, 1377, 2]
+// Dependencies: [5, 14996, 502, 5149, 7662, 20342, 5483, 5482, 20345, 7882, 8460, 20346, 6838, 20347, 2121, 1380, 2]
 
-// Module 19997 (RedesignNewUserManager)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
-import RootNavigationRef from "RootNavigationRef" /* 5347 */;
-import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 19998 */;
+// Module 20341 (RedesignNewUserManager)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import RootNavigationRef from "RootNavigationRef" /* 5483 */;
+import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 20342 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14512 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14996 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 5013 */;
-import NewUserStore from "NewUserStore" /* 7021 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 5149 */;
+import NewUserStore from "NewUserStore" /* 7662 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
 
 let closure_4;
 let hasOwnProperty;
-const f119997 = (item) => {
+const f122736 = (item) => {
   const obj = closure_1_0(closure_1_2[7]);
   const coerceModalRouteResult = obj.coerceModalRoute(item);
   let key;
@@ -47,7 +47,7 @@ function isNewUserModalInStack() {
   null == rootNavigationRef || !rootNavigationRef.isReady();
   if (someResult) {
     const routes = rootNavigationRef.getRootState().routes;
-    someResult = routes.some(f119997);
+    someResult = routes.some(f122736);
   }
   return someResult;
 }
@@ -86,7 +86,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
         const tmp5 = null == rootNavigationRef || !rootNavigationRef.isReady();
         if (someResult) {
           const routes = rootNavigationRef.getRootState().routes;
-          someResult = routes.some(f119997);
+          someResult = routes.some(f122736);
         }
         if (!someResult) {
           let str = "nuf-verification-gate";
@@ -263,7 +263,7 @@ class RedesignNewUserManager extends AutomaticLifecycleManager {
           null == rootNavigationRef || !rootNavigationRef.isReady();
           if (someResult) {
             const routes = rootNavigationRef.getRootState().routes;
-            someResult = routes.some(f119997);
+            someResult = routes.some(f122736);
           }
           if (!someResult) {
             require.startOnboarding();

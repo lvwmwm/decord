@@ -1,22 +1,22 @@
-// Module ID: 19123
-// Function ID: 19124
+// Module ID: 19496
+// Function ID: 19497
 // Name: renderChannelContent
-// Dependencies: [19, 17, 5914, 6864, 21, 5170, 1377, 19120, 7371, 19124, 5783, 8771, 8129, 18548, 2]
+// Dependencies: [19, 17, 6050, 6949, 21, 5306, 1380, 19493, 7219, 19497, 5919, 8092, 8160, 18842, 2]
 // Exports: default
 
-// Module 19123 (renderChannelContent)
+// Module 19496 (renderChannelContent)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5914 */;
-import ReadStateConstants from "ReadStateConstants" /* 6864 */;
-import WarningIcon from "WarningIcon" /* 8129 */;
-import LockIcon from "LockIcon" /* 8771 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19120 */;
-import ChannelTitleDefault from "ChannelTitle" /* 19124 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import ReadStateConstants from "ReadStateConstants" /* 6949 */;
+import LockIcon from "LockIcon" /* 8092 */;
+import WarningIcon from "WarningIcon" /* 8160 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 19493 */;
+import ChannelTitleDefault from "ChannelTitle" /* 19497 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5306 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -53,7 +53,7 @@ function ChannelContent(arg0) {
   const tmp4 = getLayoutStylesDefault();
   if (tmp9Result5) {
     if (!locked) {
-      locked = tmp2(7371)(channel);
+      locked = tmp2(7219)(channel);
     }
     tmp9Result5 = locked;
   }
@@ -115,7 +115,7 @@ function ChannelContent(arg0) {
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {
       const obj12 = { locked: needSubscriptionToAccess, isInMainTabsExperiment: true };
-      isSubscriptionGated = tmp9(tmp2(18548), obj12);
+      isSubscriptionGated = tmp9(tmp2(18842), obj12);
     }
     items3[2] = isSubscriptionGated;
     tmp11Result = tmp11(tmp10, obj8);

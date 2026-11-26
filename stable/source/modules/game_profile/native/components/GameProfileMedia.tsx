@@ -1,23 +1,23 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 10326
+// Function ID: 10327
 // Name: GameProfileMedia
-// Dependencies: [32, 19, 17, 5171, 1083, 21, 575, 9495, 5170, 9454, 8940, 5874, 8980, 1113, 9496, 9482, 504, 9102, 9499, 8941, 7390, 9500, 2]
+// Dependencies: [32, 19, 17, 5307, 1083, 21, 575, 10327, 5306, 10286, 8627, 6010, 9730, 1113, 10328, 10314, 504, 7994, 10331, 8628, 7888, 10332, 2]
 // Exports: default
 
-// Module 9494 (GameProfileMedia)
+// Module 10326 (GameProfileMedia)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;
-import openMediaModal from "openMediaModal" /* 8940 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8941 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9454 */;
-import GameProfileMediaSources from "GameProfileMediaSources" /* 9495 */;
+import openMediaModal from "openMediaModal" /* 8627 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8628 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
+import GameProfileMediaSources from "GameProfileMediaSources" /* 10327 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let nativeEvent;
@@ -133,6 +133,7 @@ let closure_20 = react.memo(function ImageItem(index) {
       };
       obj.openMediaModal(obj2);
     }, items1),
+    accessibilityRole: "button",
     accessibilityLabel,
     children: items3
   };
@@ -214,6 +215,7 @@ let closure_21 = react.memo(function TrailerItem(sources) {
       };
       obj.openMediaModal(obj2);
     }, items),
+    accessibilityRole: "button",
     accessibilityLabel: intl.string(index(trackAction[13]).t.oRN0Og),
     children: tmp8Result
   };

@@ -1,28 +1,28 @@
-// Module ID: 9214
-// Function ID: 9215
+// Module ID: 8438
+// Function ID: 8439
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 5019, 5041, 5025, 9075, 21, 5170, 575, 6831, 7076, 1113, 1187, 7353, 5783, 9208, 504, 9133, 9215, 7388, 8056, 9218, 5790, 2]
+// Dependencies: [5, 32, 19, 17, 5155, 5177, 5161, 7966, 21, 5306, 575, 6838, 7428, 1113, 1187, 7863, 5919, 8431, 504, 8030, 8439, 7415, 8432, 8443, 5926, 2]
 // Exports: default
 
-// Module 9214 (StartEventModal)
+// Module 8438 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6831 */;
-import Pressables from "Pressables" /* 7076 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7353 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 9075 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9208 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+import Pressables from "Pressables" /* 7428 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7863 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 7966 */;
+import GuildEventCardDefault from "GuildEventCard" /* 8431 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5025 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -92,7 +92,7 @@ obj3 = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_2
 obj4 = { alignItems: "center", paddingTop: nativeDefault.space.PX_24 };
 obj5 = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_16 };
 obj6 = { borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, shadowColor: "#000", shadowOpacity: 0.2, shadowRadius: 16, shadowOffset: { height: 8, width: 0 } };
-const authStore3 = createStyles(obj);
+const gesture = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/StartEventModal.tsx");
 
 export default function StartEventModal(event) {

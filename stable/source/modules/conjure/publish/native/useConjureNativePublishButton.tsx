@@ -1,18 +1,18 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 13147
+// Function ID: 13148
 // Name: useConjureNativePublishButton
-// Dependencies: [19, 6932, 11118, 12288, 12290, 5869, 504, 6969, 12291, 5179, 2]
+// Dependencies: [19, 7017, 13148, 13150, 13162, 6005, 504, 7055, 13163, 5315, 2]
 // Exports: default
 
-// Module 12287 (useConjureNativePublishButton)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 11118 */;
-import ConjureSafetyHoldSheetDefault from "ConjureSafetyHoldSheet" /* 12288 */;
-import ConjurePublishDestinationSheetDefault from "ConjurePublishDestinationSheet" /* 12290 */;
-import useConjurePublishButtonDefault from "useConjurePublishButton" /* 12291 */;
+// Module 13147 (useConjureNativePublishButton)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 13148 */;
+import ConjureSafetyHoldSheetDefault from "ConjureSafetyHoldSheet" /* 13150 */;
+import ConjurePublishDestinationSheetDefault from "ConjurePublishDestinationSheet" /* 13162 */;
+import useConjurePublishButtonDefault from "useConjurePublishButton" /* 13163 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6932 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

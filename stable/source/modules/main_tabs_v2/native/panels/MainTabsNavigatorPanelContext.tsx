@@ -1,18 +1,18 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 12011
+// Function ID: 12012
 // Name: MainTabsNavigatorPanelContext
-// Dependencies: [19, 5452, 7338, 2]
+// Dependencies: [19, 5588, 7848, 2]
 
-// Module 11415 (MainTabsNavigatorPanelContext)
-import LegacyBaseButton from "LegacyBaseButton" /* 5452 */;
+// Module 12011 (MainTabsNavigatorPanelContext)
+import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import react from "react" /* 19 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7338 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7848 */;
 import size from "module_2" /* 2 */;
 
 let Gesture;
 let ReanimatedHelperTypes;
-const obj = { gesture: Gesture.Pan(), disallowGesture: ReanimatedHelperTypes.createFakeSharedValue(false), edgeSwipeOnly: ReanimatedHelperTypes.createFakeSharedValue(false), translateX: ReanimatedHelperTypes.createFakeSharedValue(0), isInMainTabs: false };
+const obj = { gesture: Gesture.Pan(), disallowGesture: ReanimatedHelperTypes.createFakeSharedValue(false), edgeSwipeOnly: ReanimatedHelperTypes.createFakeSharedValue(false), translateX: ReanimatedHelperTypes.createFakeSharedValue(0), isInMainTabs: false, isNavigatorPanelsBesideChannelList: false };
 Gesture = LegacyBaseButton.Gesture;
 ReanimatedHelperTypes = ReanimatedHelperTypes_mod;
 const context = react.createContext(obj);

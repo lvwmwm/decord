@@ -1,11 +1,11 @@
-// Module ID: 12033
-// Function ID: 12034
+// Module ID: 12896
+// Function ID: 12897
 // Name: WakeLock
-// Dependencies: [19, 12034, 2]
+// Dependencies: [19, 12897, 2]
 // Exports: default, useWakeLock
 
-// Module 12033 (WakeLock)
-import react_nativeDefault from "react-native" /* 12034 */;
+// Module 12896 (WakeLock)
+import react_nativeDefault from "react-native" /* 12897 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

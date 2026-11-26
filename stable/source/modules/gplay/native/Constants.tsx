@@ -1,9 +1,9 @@
-// Module ID: 7707
-// Function ID: 7708
+// Module ID: 9303
+// Function ID: 9304
 // Name: Constants
 // Dependencies: [2]
 
-// Module 7707 (Constants)
+// Module 9303 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gplay/native/Constants.tsx");

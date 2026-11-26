@@ -1,36 +1,36 @@
-// Module ID: 5791
-// Function ID: 5792
+// Module ID: 5927
+// Function ID: 5928
 // Name: BaseTextButton
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1652, 5792, 5793, 5794, 5796, 1377, 5797, 5783, 5184, 5408, 5799, 5335, 5801, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1655, 5928, 5929, 5930, 5932, 1380, 5933, 5919, 5320, 5544, 5935, 5471, 5937, 2]
 
-// Module 5791 (BaseTextButton)
+// Module 5927 (BaseTextButton)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1377 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import HapticUtils from "HapticUtils" /* 5408 */;
-import IconDefault from "Icon" /* 5792 */;
-import spring_spring from "spring/spring" /* 5793 */;
-import springPresets from "springPresets" /* 5794 */;
-import ButtonConstants from "ButtonConstants" /* 5796 */;
-import ButtonHooks from "ButtonHooks" /* 5797 */;
+import PlatformUtils from "PlatformUtils" /* 1380 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
+import IconDefault from "Icon" /* 5928 */;
+import spring_spring from "spring/spring" /* 5929 */;
+import springPresets from "springPresets" /* 5930 */;
+import ButtonConstants from "ButtonConstants" /* 5932 */;
+import ButtonHooks from "ButtonHooks" /* 5933 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1652 = _mod1652;
+const module_1655 = _mod1655;
 let nativeEvent, num2, obj1;
 
+let bound;
+let bound1;
+let bound2;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-let rect;
-let rect1;
-let rect2;
 function CollapsingText(collapseText) {
   let items7;
   let tmp10;
@@ -47,7 +47,7 @@ function CollapsingText(collapseText) {
   collapseText = collapseText.collapseText;
   const children = collapseText.children;
   let tmp2 = closure_10();
-  let obj = _mod1652;
+  let obj = _mod1655;
   const sharedValue = obj.useSharedValue(0);
   const items = [closure_14, sharedValue];
   let c0;
@@ -70,8 +70,8 @@ function CollapsingText(collapseText) {
   const items2 = [sharedValue];
   const callback = react.useCallback(BaseTextButtonNativeTsx1, items2);
   const items3 = [closure_16, sharedValue, , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items3[2] = spring_spring.withSpring;
   items3[3] = collapseText;
   items3[4] = springPresets.SUBTLE_SPRING;
@@ -116,7 +116,7 @@ function CollapsingText(collapseText) {
   c1 = undefined;
   c2 = undefined;
   [tmp16, tmp17, tmp18, tmp19] = items5;
-  const tmp3Result2 = _mod1652;
+  const tmp3Result2 = _mod1655;
   class BaseTextButtonNativeTsx3 {
     constructor() {
       if (0 === closure_0.get()) {
@@ -137,9 +137,9 @@ function CollapsingText(collapseText) {
   BaseTextButtonNativeTsx3.__workletHash = 8150809859497;
   BaseTextButtonNativeTsx3.__initData = tmp16;
   const animatedStyle1 = tmp3Result2.useAnimatedStyle(BaseTextButtonNativeTsx3);
-  let obj2 = { style: items7, onLayout: callback, children: metroImportDefault(module_1652.View, { style: animatedStyle1, children }) };
+  let obj2 = { style: items7, onLayout: callback, children: metroImportDefault(module_1655.View, { style: animatedStyle1, children }) };
   items7 = [tmp2.container, animatedStyle];
-  const View = module_1652.View;
+  const View = module_1655.View;
   return metroImportDefault(View, obj2);
 }
 function BaseTextButtonIcon(arg0) {
@@ -422,7 +422,7 @@ createStyles = createStyles_mod;
 let obj = { entityWrapper: obj2 };
 obj2 = { borderWidth: 1, borderRadius: nativeDefault.radii.round, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden" };
 let closure_11 = createStyles.createStyles(obj);
-const Icon = module_1652.createAnimatedComponent(IconDefault);
+const Icon = module_1655.createAnimatedComponent(IconDefault);
 react.createContext("md");
 let closure_14 = { code: "(function BaseTextButtonNativeTsx1({nativeEvent:nativeEvent}){let[containerWidth]=this.__closure;if(containerWidth.get()!==0)return;const{width:width}=nativeEvent.layout;containerWidth.set(width);})" };
 let closure_16 = { code: "(function BaseTextButtonNativeTsx2(){let[containerWidth,withSpring,collapsed,SUBTLE_SPRING]=this.__closure;if(containerWidth.get()===0)return{};return{width:withSpring(collapsed.get()===1?0:containerWidth.get(),SUBTLE_SPRING,'animate-always'),opacity:withSpring(collapsed.get()===1?0:1,SUBTLE_SPRING,'animate-always')};})" };
@@ -441,15 +441,12 @@ let closure_18 = createStyles.createStyles((arg0, marginLeft) => {
     return { offset: {} };
   }
 });
-let obj3 = { sm: rect, md: rect1, lg: rect2 };
+let obj3 = { sm: { top: bound, left: "Array", right: "alignItems", bottom: bound }, md: { top: bound1, left: "Array", right: "alignItems", bottom: bound1 }, lg: { top: bound2, left: "Array", right: "alignItems", bottom: bound2 } };
 const LARGE_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
-const bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
-rect = { top: bound, left: "Array", right: "add", bottom: bound };
+bound = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.SMALL_BUTTON_HEIGHT) / 2, 0);
 const LARGE_BUTTON_HEIGHT2 = ButtonConstants.LARGE_BUTTON_HEIGHT;
-const bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
-rect1 = { top: bound1, left: "Array", right: "add", bottom: bound1 };
-const bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
-rect2 = { top: bound2, left: "Array", right: "add", bottom: bound2 };
+bound1 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.MEDIUM_BUTTON_HEIGHT) / 2, 0);
+bound2 = Math.max((ButtonConstants.MINIMUM_HIT_AREA - ButtonConstants.LARGE_BUTTON_HEIGHT) / 2, 0);
 function getTextPlatformLineHeight(arg0, arg1) {
 
 }

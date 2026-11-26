@@ -1,11 +1,11 @@
-// Module ID: 19848
-// Function ID: 19849
+// Module ID: 20189
+// Function ID: 20190
 // Name: react-native
-// Dependencies: [2135, 2]
+// Dependencies: [2138, 2]
 // Exports: default
 
-// Module 19848 (react-native)
-import react_nativeDefault from "react-native" /* 2135 */;
+// Module 20189 (react-native)
+import react_nativeDefault from "react-native" /* 2138 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_calls/utils/setAudioInputEnabled.android.tsx");

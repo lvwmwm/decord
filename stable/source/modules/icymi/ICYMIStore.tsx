@@ -1,54 +1,133 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 10205
+// Function ID: 10206
 // Name: ICYMIStore
-// Dependencies: [32, 9014, 5386, 1246, 6943, 8666, 502, 5019, 9023, 5041, 6226, 5102, 6930, 5112, 6863, 1385, 9025, 9027, 1072, 9029, 1089, 9030, 9026, 9033, 9039, 8818, 8822, 9019, 9041, 9028, 9036, 7626, 6228, 504, 572, 2]
+// Dependencies: [32, 10206, 5522, 1246, 7029, 502, 5155, 10207, 5177, 6362, 5238, 7015, 5248, 6948, 1388, 10209, 10211, 1072, 10213, 1089, 10214, 10215, 10216, 10210, 10223, 8421, 8419, 9478, 10226, 10227, 10212, 10221, 7230, 6364, 504, 572, 2]
 
-// Module 9013 (ICYMIStore)
+// Module 10205 (ICYMIStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import ICYMITypes from "ICYMITypes" /* 9026 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 9029 */;
-import ICYMIUtils from "ICYMIUtils" /* 9030 */;
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 9033 */;
-import parseWaterwheelsCard2 from "parseWaterwheelsCard" /* 9039 */;
+import ICYMITypes from "ICYMITypes" /* 10210 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 10213 */;
+import DiscoverRequestState from "DiscoverRequestState" /* 10214 */;
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 10215 */;
+import ICYMIUtils from "ICYMIUtils" /* 10216 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 9014 */;
-import ExperimentStore from "ExperimentStore" /* 5386 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 10206 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6943 */;
-import LabFeatureStore from "LabFeatureStore" /* 8666 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 7029 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildAffinitiesStore from "GuildAffinitiesStore" /* 9023 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import MessageStore from "MessageStore" /* 6226 */;
-import PermissionStore from "PermissionStore" /* 5102 */;
-import ReadStateStore from "ReadStateStore" /* 6930 */;
-import RelationshipStore from "RelationshipStore" /* 5112 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6863 */;
-import UserStore from "UserStore" /* 1385 */;
-import ICYMIFiltersStore from "ICYMIFiltersStore" /* 9025 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 9027 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildAffinitiesStore from "GuildAffinitiesStore" /* 10207 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import MessageStore from "MessageStore" /* 6362 */;
+import PermissionStore from "PermissionStore" /* 5238 */;
+import ReadStateStore from "ReadStateStore" /* 7015 */;
+import RelationshipStore from "RelationshipStore" /* 5248 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import UserStore from "UserStore" /* 1388 */;
+import ICYMIFiltersStore from "ICYMIFiltersStore" /* 10209 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 10211 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _null, _require, closure_37, closure_41, guildIds, guildScheduledEventsForGuild, hasNewContent;
+let _null, _require, closure_37, closure_41, guildIds, guildScheduledEventsForGuild, hasNewContent, map;
 
 let c9;
+let closure_23;
 let closure_24;
 let closure_25;
-let closure_26;
 let metroImportAll;
 let metroImportDefault;
-const f95141 = (id) => id.id;
+const f99857 = (id) => id.id;
+function handleDiscoverSessionReset() {
+  const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+  discoverRequestGuard.resetSession();
+  closure_60 = DiscoverRequestState.EMPTY_DISCOVER_SNAPSHOT;
+  identity = null;
+}
+function handleDiscoverGateChange() {
+  const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+  const observeGate = discoverRequestGuard.observeGate;
+  obj = WaterwheelsDiscoverExperiment;
+  const observeGateResult = observeGate(obj.getWaterwheelsDiscoverEnabled(icymi_store));
+  if (null != identity) {
+    let flag;
+    let isAuthenticatedResult = null != identity.userId && AuthenticationStore.isAuthenticated() && AuthenticationStore.getId() === tmp17.userId;
+    if (isAuthenticatedResult) {
+      const currentUser = UserStore.getCurrentUser();
+      let id;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      isAuthenticatedResult = id === tmp17.userId;
+    }
+    if (isAuthenticatedResult) {
+      let authSessionIdHash = AuthenticationStore.getAuthSessionIdHash();
+      if (authSessionIdHash == null) {
+        authSessionIdHash = null;
+      }
+      isAuthenticatedResult = authSessionIdHash === tmp17.authSessionIdHash;
+    }
+    if (!isAuthenticatedResult) {
+      const discoverRequestGuard2 = tmp(10214).discoverRequestGuard;
+      discoverRequestGuard2.resetSession();
+      closure_60 = tmp(10214).EMPTY_DISCOVER_SNAPSHOT;
+      identity = null;
+      flag = true;
+    }
+    return flag;
+  }
+  let tmp13 = !observeGateResult;
+  if (tmp13) {
+    let matchesResult = null == identity;
+    if (!matchesResult) {
+      const discoverRequestGuard3 = tmp(10214).discoverRequestGuard;
+      matchesResult = discoverRequestGuard3.matches(identity);
+    }
+    tmp13 = matchesResult;
+  }
+  let flag2 = !tmp13;
+  if (flag2) {
+    closure_60 = tmp(10214).EMPTY_DISCOVER_SNAPSHOT;
+    identity = null;
+    flag2 = true;
+  }
+  flag = flag2;
+}
+function canApplyDiscover(identity) {
+  let isAuthenticatedResult = null != identity.userId && AuthenticationStore.isAuthenticated() && AuthenticationStore.getId() === identity.userId;
+  if (isAuthenticatedResult) {
+    const currentUser = UserStore.getCurrentUser();
+    let id;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    isAuthenticatedResult = id === identity.userId;
+  }
+  if (isAuthenticatedResult) {
+    let authSessionIdHash = AuthenticationStore.getAuthSessionIdHash();
+    if (authSessionIdHash == null) {
+      authSessionIdHash = null;
+    }
+    isAuthenticatedResult = authSessionIdHash === identity.authSessionIdHash;
+  }
+  if (isAuthenticatedResult) {
+    const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+    const canApply = discoverRequestGuard.canApply;
+    obj = WaterwheelsDiscoverExperiment;
+    isAuthenticatedResult = canApply(identity, obj.getWaterwheelsDiscoverEnabled(icymi_store));
+  }
+  return isAuthenticatedResult;
+}
 function filterStaffGuild(data) {
   if (ICYMIFiltersStore.filterStaffContent()) {
     obj = ICYMIUtils;
     const tmp2 = require;
     if (obj.isGuildItem(data)) {
-      if (data.data.guild_id === tmp2(9026).GAME_CONTENT_GUILD_ID) {
+      if (data.data.guild_id === tmp2(10210).GAME_CONTENT_GUILD_ID) {
         return true;
       } else {
         const guild = GuildStore.getGuild(data.data.guild_id);
@@ -61,34 +140,6 @@ function filterStaffGuild(data) {
     return true;
   } else {
     return true;
-  }
-}
-function hydrateDiscoverItem(type) {
-  if (type.type !== ICYMITypes.ICYMIItemTypes.DISCOVER_ITEM) {
-    return true;
-  } else {
-    const tmpResult = WaterwheelsDiscoverExperiment;
-    if (tmpResult.getWaterwheelsDiscoverEnabled("icymi_store")) {
-      const data = type.data;
-      let item;
-      const parseWaterwheelsCard = parseWaterwheelsCard2.parseWaterwheelsCard;
-      parseWaterwheelsCard2;
-      if (data != null) {
-        item = data.item;
-      }
-      const parseWaterwheelsCardResult = parseWaterwheelsCard(item);
-      let flag2 = parseWaterwheelsCardResult.ok;
-      if (flag2) {
-        const id = type.id;
-        obj = { card: parseWaterwheelsCardResult.card };
-        const merged = Object.assign(type);
-        closure_37[id] = obj;
-        flag2 = true;
-      }
-      return flag2;
-    } else {
-      return false;
-    }
   }
 }
 function injectItemsIntoList(arr, arr2, arg2, arg3) {
@@ -177,12 +228,12 @@ function finalizeNewDehydratedItemsContent() {
     closure_1_36[id.id] = id;
     const tmp = set;
     const tmp2 = type;
-    if (id.type === set(type[22]).ICYMIItemTypes.CUSTOM_STATUS) {
+    if (id.type === set(type[23]).ICYMIItemTypes.CUSTOM_STATUS) {
       if (blockedOrIgnored.isBlockedOrIgnored(id.data.user_id)) {
         closure_1_38[id.id] = true;
       } else {
         id = id.id;
-        const tmpResult = tmp(tmp2[21]);
+        const tmpResult = tmp(tmp2[22]);
         closure_1_37[id] = tmpResult.customStatusToContentInventoryEntry(id);
       }
     }
@@ -211,13 +262,13 @@ function reload(arg0) {
           let tmp12 = item10031;
           if (!closure_8(item10031)) {
             let tmp23 = items2;
-            if (closure_7(tmp12, 2 * items2(items2[20]).Seconds.DAY)) {
+            if (closure_7(tmp12, 2 * items2(items2[19]).Seconds.DAY)) {
               if (null == closure_37[tmp12.id]) {
-                let obj2 = { id: tmp12.id, type: items1(tmp23[22]).ICYMIItemTypes.GUILD_EVENT, score: 10, event_id: tmp12.id };
+                let obj2 = { id: tmp12.id, type: items1(tmp23[23]).ICYMIItemTypes.GUILD_EVENT, score: 10, event_id: tmp12.id };
                 let id = tmp12.id;
                 closure_37[id] = obj2;
               }
-              let obj3 = { id: tmp12.id, type: items1(tmp23[22]).ICYMIItemTypes.GUILD_EVENT, score: 10, data: obj7 };
+              let obj3 = { id: tmp12.id, type: items1(tmp23[23]).ICYMIItemTypes.GUILD_EVENT, score: 10, data: obj7 };
               let push = items.push;
               let obj7 = { guild_id: null, event_id: null, channel_id };
               ({ guild_id: obj4.guild_id, id: obj4.event_id, channel_id } = tmp12);
@@ -237,8 +288,8 @@ function reload(arg0) {
       continue;
     }
     const sorted = items.sort((data, data2) => {
-      const guildAffinity = closure_1_14.getGuildAffinity(data.data.guild_id);
-      const guildAffinity1 = closure_1_14.getGuildAffinity(data2.data.guild_id);
+      const guildAffinity = closure_1_13.getGuildAffinity(data.data.guild_id);
+      const guildAffinity1 = closure_1_13.getGuildAffinity(data2.data.guild_id);
       let num = 0;
       if (null != guildAffinity1) {
         num = guildAffinity1.score;
@@ -259,8 +310,8 @@ function reload(arg0) {
         items1.push(id);
       }
     });
-    closure_48 = closure_62(closure_48, items1, items1(items2[22]).ICYMIItemTypes.GUILD_EVENT, 7);
-    closure_49 = closure_62(closure_49, items2, items1(items2[22]).ICYMIItemTypes.GUILD_EVENT, 7);
+    closure_48 = closure_65(closure_48, items1, items1(items2[23]).ICYMIItemTypes.GUILD_EVENT, 7);
+    closure_49 = closure_65(closure_49, items2, items1(items2[23]).ICYMIItemTypes.GUILD_EVENT, 7);
   }
   if (closure_33.length > 0) {
     dehydratedItems = closure_33;
@@ -277,7 +328,7 @@ function reload(arg0) {
     items2 = [];
     let item = dehydratedItems.forEach((id) => {
       const tmp = null != readTimestamp.getReadTimestamp(id.id);
-      let tmp4 = id.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE;
+      let tmp4 = id.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE;
       if (tmp4) {
         const message_context = id.data.message_context;
         let prop;
@@ -290,7 +341,7 @@ function reload(arg0) {
       if (tmp4) {
         let tmp7 = tmp;
         if (!tmp7) {
-          const tmp2Result = set(dependencyMap[29]);
+          const tmp2Result = set(dependencyMap[30]);
           tmp7 = !tmp2Result.isItemUnreadInChannel(id.data.channel_id, id.data.message_id);
         }
         tmp6 = tmp7;
@@ -298,7 +349,7 @@ function reload(arg0) {
       if (tmp6) {
         items1.push(id);
       } else {
-        if (id.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE) {
+        if (id.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE) {
           if (id.data.has_mention) {
             items3.push(id);
           }
@@ -316,7 +367,7 @@ function reload(arg0) {
     const items4 = [
       items3,
       items.sort((id, id2) => {
-          obj = set(dependencyMap[21]);
+          obj = set(dependencyMap[22]);
           return obj.compareGravityUnreadIds(id.id, id2.id);
         })
     ];
@@ -364,10 +415,10 @@ function reload(arg0) {
         }
         if (null == closure_2_37[content.content.id]) {
           const id = content.content.id;
-          closure_2_37[id] = { id: content.content.id, type: items(items2[22]).ICYMIItemTypes.ACTIVITY, score: 15, activity: content.content };
-          const obj2 = { id: content.content.id, type: items(items2[22]).ICYMIItemTypes.ACTIVITY, score: 15, activity: content.content };
+          closure_2_37[id] = { id: content.content.id, type: items(items2[23]).ICYMIItemTypes.ACTIVITY, score: 15, activity: content.content };
+          const obj2 = { id: content.content.id, type: items(items2[23]).ICYMIItemTypes.ACTIVITY, score: 15, activity: content.content };
         }
-        const obj3 = { id: content.content.id, type: items(items2[22]).ICYMIItemTypes.ACTIVITY, score: 15, data: obj6 };
+        const obj3 = { id: content.content.id, type: items(items2[23]).ICYMIItemTypes.ACTIVITY, score: 15, data: obj6 };
         obj6 = { user_id: content.content.author_id, content_id: content.content.id };
         obj.add(content.content.id);
         closure_2_36[obj3.id] = obj3;
@@ -380,7 +431,7 @@ function reload(arg0) {
     }
   });
   let tmp8 = items;
-  items(items2[22]).ICYMIItemTypes.ACTIVITY;
+  items(items2[23]).ICYMIItemTypes.ACTIVITY;
   found = undefined;
   found = found.filter((type) => type.type !== ACTIVITY);
   const item2 = items5.forEach((item, index) => {
@@ -390,7 +441,7 @@ function reload(arg0) {
       found1.push(item);
     }
   });
-  const ACTIVITY = items(items2[22]).ICYMIItemTypes.ACTIVITY;
+  const ACTIVITY = items(items2[23]).ICYMIItemTypes.ACTIVITY;
   let c1 = 5;
   found1 = undefined;
   found1 = found1.filter((type) => type.type !== ACTIVITY);
@@ -414,7 +465,7 @@ function reload(arg0) {
     let tmp19 = hasNewContent;
     let tmp20 = found;
     let tmp21 = found1;
-    const tmp8Result = tmp8(items2[28]);
+    const tmp8Result = tmp8(items2[29]);
     tmp8Result.trackFeedLoaded(obj);
     let tmp23 = newTrackingProps;
     load_id = newTrackingProps.load_id;
@@ -428,8 +479,8 @@ function reload(arg0) {
     c57 = true;
   }
   const items7 = [...found1];
-  const tmp8Result2 = tmp8(items2[21]);
-  tmp8Result2.hydrateItems(items7, 0, tmp8(items2[22]).ICYMI_PAGE_SIZE, closure_37);
+  const tmp8Result2 = tmp8(items2[22]);
+  tmp8Result2.hydrateItems(items7, 0, tmp8(items2[23]).ICYMI_PAGE_SIZE, closure_37);
   let c54 = false;
 }
 function getNewUnreadItems(arr10, channelId) {
@@ -444,9 +495,9 @@ function getNewUnreadItems(arr10, channelId) {
       if (!set.has(tmp2.id)) {
         let tmp7 = null == ICYMIUnreadStateStore.getReadTimestamp(tmp2.id);
         if (tmp7) {
-          let tmp9 = tmp2.type !== tmp3(9026).ICYMIItemTypes.MESSAGE;
+          let tmp9 = tmp2.type !== tmp3(10210).ICYMIItemTypes.MESSAGE;
           if (!tmp9) {
-            let tmp3Result = tmp3(9028);
+            let tmp3Result = tmp3(10212);
             let result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
             if (result) {
               result = tmp2.data.channel_id !== channelId;
@@ -466,8 +517,8 @@ function getNewUnreadItems(arr10, channelId) {
 }
 function maybeFilterChannelItems(channelId, score) {
   let closure_30;
-  const f95156 = (data) => {
-    obj = channelId(dependencyMap[21]);
+  const f99872 = (data) => {
+    obj = channelId(dependencyMap[22]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
     if (isGuildItemResult) {
@@ -479,18 +530,18 @@ function maybeFilterChannelItems(channelId, score) {
   const numberToCustomScoreResult = obj.numberToCustomScore(score);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = channelId;
-    dehydratedItems = dehydratedItems.filter(f95156);
-    closure_48 = closure_48.filter(f95156);
-    closure_49 = closure_49.filter(f95156);
-    closure_33 = closure_33.filter(f95156);
+    dehydratedItems = dehydratedItems.filter(f99872);
+    closure_48 = closure_48.filter(f99872);
+    closure_49 = closure_49.filter(f99872);
+    closure_33 = closure_33.filter(f99872);
     _require = channelId;
-    closure_34 = closure_34.filter(f95156);
+    closure_34 = closure_34.filter(f99872);
   }
 }
 function maybeFilterGuildItems(guildId, guildScore) {
   let closure_30;
-  const f95157 = (data) => {
-    obj = guildId(dependencyMap[21]);
+  const f99873 = (data) => {
+    obj = guildId(dependencyMap[22]);
     const isGuildItemResult = obj.isGuildItem(data);
     let tmp2 = !isGuildItemResult;
     if (isGuildItemResult) {
@@ -502,12 +553,12 @@ function maybeFilterGuildItems(guildId, guildScore) {
   const numberToCustomScoreResult = obj.numberToCustomScore(guildScore);
   if (numberToCustomScoreResult === require("ICYMIUtils").ICYMICustomScore.MUTED) {
     let tmp2 = guildId;
-    dehydratedItems = dehydratedItems.filter(f95157);
-    closure_48 = closure_48.filter(f95157);
-    closure_49 = closure_49.filter(f95157);
-    closure_33 = closure_33.filter(f95157);
+    dehydratedItems = dehydratedItems.filter(f99873);
+    closure_48 = closure_48.filter(f99873);
+    closure_49 = closure_49.filter(f99873);
+    closure_33 = closure_33.filter(f99873);
     _require = guildId;
-    closure_34 = closure_34.filter(f95157);
+    closure_34 = closure_34.filter(f99873);
   }
 }
 function handleReaction(colors) {
@@ -553,7 +604,7 @@ function handleAck(channelId) {
   const items4 = [];
   const item1 = closure_33.forEach((id) => {
     const tmp = null != readTimestamp.getReadTimestamp(id.id);
-    let tmp4 = id.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE;
+    let tmp4 = id.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE;
     if (tmp4) {
       const message_context = id.data.message_context;
       let prop;
@@ -566,7 +617,7 @@ function handleAck(channelId) {
     if (tmp4) {
       let tmp7 = tmp;
       if (!tmp7) {
-        const tmp2Result = set(dependencyMap[29]);
+        const tmp2Result = set(dependencyMap[30]);
         tmp7 = !tmp2Result.isItemUnreadInChannel(id.data.channel_id, id.data.message_id);
       }
       tmp6 = tmp7;
@@ -574,7 +625,7 @@ function handleAck(channelId) {
     if (tmp6) {
       items1.push(id);
     } else {
-      if (id.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE) {
+      if (id.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE) {
         if (id.data.has_mention) {
           items3.push(id);
         }
@@ -586,7 +637,7 @@ function handleAck(channelId) {
   const items6 = [
     items5,
     items2.sort((id, id2) => {
-      obj = set(dependencyMap[21]);
+      obj = set(dependencyMap[22]);
       return obj.compareGravityUnreadIds(id.id, id2.id);
     })
   ];
@@ -594,8 +645,8 @@ function handleAck(channelId) {
   const arr8 = getNewUnreadItems(tmp4[0], channelId);
   const tmp5 = c44;
   if (tmp5) {
-    tmp6 = flag && arr8.length >= channelId(items1[22]).MIN_ITEMS_FOR_NEW_PILL;
-    const tmp14 = flag && arr8.length >= channelId(items1[22]).MIN_ITEMS_FOR_NEW_PILL;
+    tmp6 = flag && arr8.length >= channelId(items1[23]).MIN_ITEMS_FOR_NEW_PILL;
+    const tmp14 = flag && arr8.length >= channelId(items1[23]).MIN_ITEMS_FOR_NEW_PILL;
   } else {
     tmp6 = tmp2;
     if (tmp6) {
@@ -603,11 +654,11 @@ function handleAck(channelId) {
       const diff = Date.now() - closure_32;
       flag = false;
       const arr9 = closure_33;
-      if (diff > 6 * items(items1[20]).Millis.HOUR) {
+      if (diff > 6 * items(items1[19]).Millis.HOUR) {
         const _Set = Set;
         const self = this;
         const self2 = this;
-        new Set(items1.map(f95141));
+        new Set(items1.map(f99857));
         const substr = arr9.slice(0, 20);
         flag = substr.filter((id) => set1.has(id.id)).length >= 3;
       }
@@ -628,13 +679,13 @@ function handleAck(channelId) {
 let GuildScheduledEventStore = GuildScheduledEventStore_mod;
 ({ eventScheduledToStartWithin: metroImportDefault, isGuildEventEnded: metroImportAll, isGuildScheduledEventActive: c9 } = GuildScheduledEventStore);
 GuildScheduledEventStore = GuildScheduledEventStore_mod;
-({ ChannelTypes: closure_24, GuildFeatures: closure_25, Permissions: closure_26 } = Constants);
+({ ChannelTypes: closure_23, GuildFeatures: closure_24, Permissions: closure_25 } = Constants);
 const ContentInventoryFeedKey = ContentInventoryConstants.ContentInventoryFeedKey;
 const DAY = DurationsDefault.Millis.DAY;
+const icymi_store = "icymi_store";
 let closure_29 = 3 * DurationsDefault.Millis.DAY;
 let dehydratedItems = [];
 let c31 = null;
-const lastOpened = 0;
 let closure_33 = [];
 let closure_34 = [];
 let newTrackingProps = {};
@@ -662,10 +713,14 @@ let focused = false;
 let c57 = false;
 let timestamp = 0;
 let takenAt = 0;
+let closure_60 = DiscoverRequestState.EMPTY_DISCOVER_SNAPSHOT;
+let identity = null;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class ICYMIStore extends PersistedStore {
   initialize(dehydratedItems) {
-    this.waitFor(ApexExperimentStore, AuthenticationStore, ChannelStore, ContentInventoryStore, ExperimentStore, GuildAffinitiesStore, GuildScheduledEventStore, GuildStore, ICYMIFiltersStore, LabFeatureStore, ICYMIUnreadStateStore, MessageStore, PermissionStore, ReadStateStore, RelationshipStore, UserGuildSettingsStore, UserStore);
+    this.waitFor(ApexExperimentStore, AuthenticationStore, ChannelStore, ContentInventoryStore, ExperimentStore, GuildAffinitiesStore, GuildScheduledEventStore, GuildStore, ICYMIFiltersStore, ICYMIUnreadStateStore, MessageStore, PermissionStore, ReadStateStore, RelationshipStore, UserGuildSettingsStore, UserStore);
+    items = [ApexExperimentStore, AuthenticationStore, UserStore];
+    this.syncWith(items, handleDiscoverGateChange);
     if (null != dehydratedItems) {
       dehydratedItems = dehydratedItems.dehydratedItems;
       if (dehydratedItems == null) {
@@ -704,6 +759,16 @@ class ICYMIStore extends PersistedStore {
       }
       takenAt = num4;
     }
+  }
+  getDiscoverSnapshot() {
+    if (null != identity) {
+      let EMPTY_DISCOVER_SNAPSHOT;
+      if (canApplyDiscover(identity)) {
+        EMPTY_DISCOVER_SNAPSHOT = closure_60;
+      }
+      return EMPTY_DISCOVER_SNAPSHOT;
+    }
+    EMPTY_DISCOVER_SNAPSHOT = DiscoverRequestState.EMPTY_DISCOVER_SNAPSHOT;
   }
   getVersion() {
     return c41;
@@ -843,7 +908,7 @@ class ICYMIStore extends PersistedStore {
       return findIndexResult;
     }
     const items1 = [...closure_49];
-    findIndexResult = items1.findIndex((type) => type.type === id(dependencyMap[22]).ICYMIItemTypes.RECOMMENDED_GUILDS);
+    findIndexResult = items1.findIndex((type) => type.type === id(dependencyMap[23]).ICYMIItemTypes.RECOMMENDED_GUILDS);
   }
   getState() {
     obj = { dehydratedItems, numOpens, customGuildScores: obj, customChannelScoresByGuild: obj, lastOpened, lastJoinedRecommendedGuild, lastTakenICYMISurvey: takenAt };
@@ -855,6 +920,10 @@ ICYMIStore.displayName = "ICYMIStore";
 ICYMIStore.persistKey = "ICYMIStore";
 obj = {
   LOGOUT: function handleLogout() {
+    const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+    discoverRequestGuard.resetSession();
+    closure_60 = DiscoverRequestState.EMPTY_DISCOVER_SNAPSHOT;
+    identity = null;
     let closure_30 = [];
     closure_33 = [];
     closure_34 = [];
@@ -881,6 +950,105 @@ obj = {
     items = null;
     timestamp = 0;
   },
+  LOGIN_SUCCESS: handleDiscoverSessionReset,
+  LOGIN_RESET: function handleDiscoverLoginReset(isMultiAccount) {
+    if (isMultiAccount.isMultiAccount) {
+      return false;
+    } else {
+      const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+      discoverRequestGuard.resetSession();
+      closure_60 = DiscoverRequestState.EMPTY_DISCOVER_SNAPSHOT;
+      identity = null;
+    }
+  },
+  AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: handleDiscoverSessionReset,
+  CLOSE_SUSPENDED_USER: handleDiscoverSessionReset,
+  CONNECTION_CLOSED: function handleDiscoverConnectionClosed(code) {
+    if (4004 !== code.code) {
+      return false;
+    } else {
+      const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+      discoverRequestGuard.resetSession();
+      closure_60 = DiscoverRequestState.EMPTY_DISCOVER_SNAPSHOT;
+      identity = null;
+    }
+  },
+  CONNECTION_OPEN: handleDiscoverGateChange,
+  AUTH_SESSION_CHANGE: handleDiscoverGateChange,
+  CURRENT_USER_UPDATE: handleDiscoverGateChange,
+  USER_UPDATE: handleDiscoverGateChange,
+  CONNECTION_OPEN_STATE_UPDATE: handleDiscoverGateChange,
+  APEX_EXPERIMENT_OVERRIDE_CREATE: handleDiscoverGateChange,
+  APEX_EXPERIMENT_OVERRIDE_DELETE: handleDiscoverGateChange,
+  APEX_EXPERIMENT_OVERRIDE_CLEAR: handleDiscoverGateChange,
+  APEX_EXPERIMENT_SESSION_OVERRIDE_CREATE: handleDiscoverGateChange,
+  APEX_EXPERIMENT_SESSION_OVERRIDE_DELETE: handleDiscoverGateChange,
+  APEX_EXPERIMENT_CLEAR_FOR_TESTS: handleDiscoverGateChange,
+  APEX_EXPERIMENTS_METADATA_FETCH_SUCCESS: handleDiscoverGateChange,
+  APEX_EXPERIMENTS_FETCH_START: handleDiscoverGateChange,
+  APEX_EXPERIMENTS_FETCH_SUCCESS: handleDiscoverGateChange,
+  APEX_EXPERIMENTS_FETCH_FAILURE: handleDiscoverGateChange,
+  DISCOVER_PICKER_COMMIT: function handleDiscoverPickerCommit(identity) {
+    identity = identity.identity;
+    obj = WaterwheelsDiscoverExperiment;
+    const waterwheelsDiscoverEnabled = obj.getWaterwheelsDiscoverEnabled(icymi_store);
+    const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+    discoverRequestGuard.observeGate(waterwheelsDiscoverEnabled);
+    const discoverRequestGuard2 = DiscoverRequestState.discoverRequestGuard;
+    if (discoverRequestGuard2.matches(identity)) {
+      let isAuthenticatedResult = null != identity.userId && AuthenticationStore.isAuthenticated() && AuthenticationStore.getId() === identity.userId;
+      if (isAuthenticatedResult) {
+        const currentUser = UserStore.getCurrentUser();
+        let id;
+        if (currentUser != null) {
+          id = currentUser.id;
+        }
+        isAuthenticatedResult = id === identity.userId;
+      }
+      if (isAuthenticatedResult) {
+        let authSessionIdHash = AuthenticationStore.getAuthSessionIdHash();
+        if (authSessionIdHash == null) {
+          authSessionIdHash = null;
+        }
+        isAuthenticatedResult = authSessionIdHash === identity.authSessionIdHash;
+      }
+      if (isAuthenticatedResult) {
+        const obj2 = { type: "commit", enabled: waterwheelsDiscoverEnabled };
+        const tmpResult = DiscoverRequestState;
+        closure_60 = tmpResult.reduceDiscoverSnapshot(closure_60, obj2);
+      }
+    }
+    return false;
+  },
+  DISCOVER_REQUEST_STARTED: function handleDiscoverRequestStarted(identity) {
+    identity = identity.identity;
+    if (canApplyDiscover(identity)) {
+      let matchesResult = null != identity;
+      if (matchesResult) {
+        const discoverRequestGuard = DiscoverRequestState.discoverRequestGuard;
+        matchesResult = discoverRequestGuard.matches(identity);
+      }
+      if (!matchesResult) {
+        closure_60 = DiscoverRequestState.EMPTY_DISCOVER_SNAPSHOT;
+        identity = null;
+      }
+      obj = DiscoverRequestState;
+      closure_60 = obj.reduceDiscoverSnapshot(closure_60, { type: "start" });
+    } else {
+      return false;
+    }
+  },
+  DISCOVER_REQUEST_FAILED: function handleDiscoverRequestFailed(identity) {
+    identity = identity.identity;
+    const retryAfterAt = identity.retryAfterAt;
+    if (canApplyDiscover(identity)) {
+      const obj2 = { type: "error", retryAfterAt };
+      obj = DiscoverRequestState;
+      closure_60 = obj.reduceDiscoverSnapshot(closure_60, obj2);
+    } else {
+      return false;
+    }
+  },
   LOAD_ICYMI_FROM_NOTIFICATION: function handleLoadICYMIFromNotification(arg0) {
     let customStatusItem;
     let items1;
@@ -905,14 +1073,14 @@ obj = {
       }
       return true;
     } else if (null != messageItem) {
-      obj = { id: messageItem.message.id, type: items2(items4[22]).ICYMIItemTypes.MESSAGE, score: 50, data: obj2 };
+      obj = { id: messageItem.message.id, type: items2(items4[23]).ICYMIItemTypes.MESSAGE, score: 50, data: obj2 };
       obj2 = { channel_id: messageItem.channel_id, message_id: messageItem.message.id, guild_id: messageItem.guild_id, channel_type: constants.GUILD_TEXT };
       closure_36[messageItem.message.id] = obj;
       const id = messageItem.message.id;
       const obj3 = { message: obj4.createMessageRecord(messageItem.message) };
       const merged = Object.assign(obj);
       closure_37[id] = obj3;
-      obj4 = items2(items4[32]);
+      obj4 = items2(items4[33]);
       if (null == c31) {
         if (null == closure_35) {
           items1 = [obj];
@@ -922,7 +1090,7 @@ obj = {
           items4 = [];
           const item = items1.forEach((id) => {
             const tmp = null != readTimestamp.getReadTimestamp(id.id);
-            let tmp4 = id.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE;
+            let tmp4 = id.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE;
             if (tmp4) {
               const message_context = id.data.message_context;
               let prop;
@@ -935,7 +1103,7 @@ obj = {
             if (tmp4) {
               let tmp7 = tmp;
               if (!tmp7) {
-                const tmp2Result = set(dependencyMap[29]);
+                const tmp2Result = set(dependencyMap[30]);
                 tmp7 = !tmp2Result.isItemUnreadInChannel(id.data.channel_id, id.data.message_id);
               }
               tmp6 = tmp7;
@@ -943,7 +1111,7 @@ obj = {
             if (tmp6) {
               items1.push(id);
             } else {
-              if (id.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE) {
+              if (id.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE) {
                 if (id.data.has_mention) {
                   items3.push(id);
                 }
@@ -956,7 +1124,7 @@ obj = {
           const items6 = [
             items5,
             items2.sort((id, id2) => {
-                    obj = set(dependencyMap[21]);
+                    obj = set(dependencyMap[22]);
                     return obj.compareGravityUnreadIds(id.id, id2.id);
                   })
           ];
@@ -972,37 +1140,65 @@ obj = {
       return false;
     }
   },
-  LOAD_ICYMI_DEHYDRATED: function handleLoadDehydrated(items) {
+  LOAD_ICYMI_DEHYDRATED: function handleLoadDehydrated(arg0) {
     let arr10;
     let arr11;
     let c43;
+    let discoverRequest;
+    let discoverSnapshot;
     let isInitialLoad;
     let isReloading;
     let loadId;
     let readTimestamp;
     let startTime;
-    let str;
-    items = items.items;
-    set = undefined;
-    let tmp = set;
-    let tmp2 = dependencyMap;
-    ({ loadId, startTime, isInitialLoad, isReloading } = items);
+    let str2;
+    ({ items, loadId, discoverRequest } = arg0);
+    ({ startTime, isInitialLoad, isReloading } = arg0);
+    if (null != discoverRequest) {
+      let tmp = canApplyDiscover;
+      if (!canApplyDiscover(discoverRequest)) {
+        let flag = false;
+        return false;
+      }
+    }
+    let tmp2 = set;
+    let tmp3 = dependencyMap;
+    set = new Set(set(10210).SUPPORTED_ITEM_TYPES);
     const self = this;
-    set = new Set(set(9026).SUPPORTED_ITEM_TYPES);
+    map = new Map();
+    obj = set(10215);
+    if (obj.getWaterwheelsDiscoverEnabled(icymi_store)) {
+      let tmp2Result = tmp2(10223);
+      discoverSnapshot = tmp2Result.selectDiscoverSnapshot(items, (arg0, arg1) => map.set(arg0, arg1));
+    } else {
+      discoverSnapshot = [];
+    }
     const found = items.filter((type) => set.has(type.type));
-    const found1 = found.filter(hydrateDiscoverItem);
+    const found1 = found.filter((type) => {
+      if (type.type !== ICYMITypes.ICYMIItemTypes.DISCOVER_ITEM) {
+        return true;
+      } else {
+        const value = map.get(type);
+        let flag = null != value;
+        if (flag) {
+          closure_37[type.id] = value;
+          flag = true;
+        }
+        return flag;
+      }
+    });
     const found2 = found1.filter(filterStaffGuild);
     closure_33 = found2.map((type) => {
-      if (type.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE) {
+      if (type.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE) {
         if (null != type.data.message_context) {
           let tmp2 = null != type.data.message_context.reply_message_id;
           if (tmp2) {
             const _parseInt = parseInt;
             tmp2 = 0 !== parseInt(type.data.message_context.reply_message_id);
           }
-          const message_context = {};
+          obj = {};
           if (tmp2) {
-            message_context.reply_message_id = type.data.message_context.reply_message_id;
+            obj.reply_message_id = type.data.message_context.reply_message_id;
           }
           let tmp3 = null != type.data.message_context.before_message_id;
           if (tmp3) {
@@ -1010,7 +1206,7 @@ obj = {
             tmp3 = 0 !== parseInt(type.data.message_context.before_message_id);
           }
           if (tmp3) {
-            message_context.before_message_id = type.data.message_context.before_message_id;
+            obj.before_message_id = type.data.message_context.before_message_id;
           }
           let tmp5 = null != type.data.message_context.after_message_id;
           if (tmp5) {
@@ -1018,7 +1214,7 @@ obj = {
             tmp5 = 0 !== parseInt(type.data.message_context.after_message_id);
           }
           if (tmp5) {
-            message_context.after_message_id = type.data.message_context.after_message_id;
+            obj.after_message_id = type.data.message_context.after_message_id;
           }
           let tmp7 = null != type.data.message_context.external_content_application_id;
           if (tmp7) {
@@ -1026,7 +1222,7 @@ obj = {
             tmp7 = 0 !== parseInt(type.data.message_context.external_content_application_id);
           }
           if (tmp7) {
-            message_context.external_content_application_id = type.data.message_context.external_content_application_id;
+            obj.external_content_application_id = type.data.message_context.external_content_application_id;
           }
           let tmp9 = null != type.data.message_context.reference_message_id;
           if (tmp9) {
@@ -1034,115 +1230,144 @@ obj = {
             tmp9 = 0 !== parseInt(type.data.message_context.reference_message_id);
           }
           if (tmp9) {
-            message_context.reference_message_id = type.data.message_context.reference_message_id;
+            obj.reference_message_id = type.data.message_context.reference_message_id;
           }
-          type.data.message_context = message_context;
+          type.data.message_context = obj;
         }
       }
       return type;
     });
-    let tmp4 = finalizeNewDehydratedItemsContent();
-    newTrackingProps = { load_id: loadId, load_time_millis: Date.now() - startTime, feed_item_ids: closure_33.map((id) => id.id) };
-    const items1 = [];
-    const items2 = [];
-    const items3 = [];
-    const item = closure_33.forEach((id) => {
-      const tmp = null != readTimestamp.getReadTimestamp(id.id);
-      let tmp4 = id.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE;
-      if (tmp4) {
-        const message_context = id.data.message_context;
-        let prop;
-        if (message_context != null) {
-          prop = message_context.external_content_application_id;
-        }
-        tmp4 = null == prop;
+    if (null != discoverRequest) {
+      let tmp6 = closure_60;
+      const obj2 = { type: "success", items: discoverSnapshot, loadId };
+      const tmp2Result4 = tmp2(10214);
+      closure_60 = tmp2Result4.reduceDiscoverSnapshot(closure_60, obj2);
+    }
+    let tmp7 = finalizeNewDehydratedItemsContent();
+    if (null != discoverRequest) {
+      let tmp8;
+      if ("none" === loadId) {
+        tmp8 = null;
       }
-      let tmp6 = tmp;
-      if (tmp4) {
-        let tmp7 = tmp;
-        if (!tmp7) {
-          const tmp2Result = set(dependencyMap[29]);
-          tmp7 = !tmp2Result.isItemUnreadInChannel(id.data.channel_id, id.data.message_id);
+      const _Date = Date;
+      let tmp9 = closure_33;
+      const items1 = [];
+      const items2 = [];
+      const items3 = [];
+      const obj3 = {
+        load_id: tmp8,
+        load_time_millis: Date.now() - startTime,
+        feed_item_ids: closure_33.flatMap((item) => {
+            obj = set(dependencyMap[28]);
+            const dehydratedAnalyticsItemId = obj.getDehydratedAnalyticsItemId(item);
+            if (null == dehydratedAnalyticsItemId) {
+              items = [];
+            } else {
+              items = [dehydratedAnalyticsItemId];
+            }
+            return items;
+          })
+      };
+      const item = closure_33.forEach((id) => {
+        const tmp = null != readTimestamp.getReadTimestamp(id.id);
+        let tmp4 = id.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE;
+        if (tmp4) {
+          const message_context = id.data.message_context;
+          let prop;
+          if (message_context != null) {
+            prop = message_context.external_content_application_id;
+          }
+          tmp4 = null == prop;
         }
-        tmp6 = tmp7;
-      }
-      if (tmp6) {
-        items1.push(id);
-      } else {
-        if (id.type === set(dependencyMap[22]).ICYMIItemTypes.MESSAGE) {
-          if (id.data.has_mention) {
-            items3.push(id);
+        let tmp6 = tmp;
+        if (tmp4) {
+          let tmp7 = tmp;
+          if (!tmp7) {
+            const tmp2Result = set(dependencyMap[30]);
+            tmp7 = !tmp2Result.isItemUnreadInChannel(id.data.channel_id, id.data.message_id);
           }
+          tmp6 = tmp7;
         }
-        items2.push(id);
-      }
-    });
-    const items4 = [...items2];
-    const items5 = [
-      items4,
-      items1.sort((id, id2) => {
-        obj = set(dependencyMap[21]);
-        return obj.compareGravityUnreadIds(id.id, id2.id);
-      })
-    ];
-    let tmp6 = _slicedToArray(items5, 2);
-    [arr10, arr11] = tmp6;
-    let tmp7 = c44;
-    const arr12 = getNewUnreadItems(arr10);
-    if (tmp7) {
-      if (0 !== c41) {
-        if (!isInitialLoad) {
-          if (c41 > 0) {
-            let c46 = null;
-          }
-          let tmp9 = arr12.length > tmp(9026).MIN_ITEMS_FOR_NEW_PILL;
-          if (!isReloading) {
-            hasNewContent = tmp9;
-          }
-          if (tmp9) {
-            const items6 = [];
-            const hydrateItems = tmp(9030).hydrateItems;
-            const tmpResult = tmp(9030);
-            HermesBuiltin.arraySpread(items6, arr11, HermesBuiltin.arraySpread(items6, arr10, 0));
-            hydrateItems(items6, 0, tmp(9026).ICYMI_PAGE_SIZE, closure_37);
-            if (arr10.length + arr11.length === 0) {
-              c57 = true;
+        if (tmp6) {
+          items1.push(id);
+        } else {
+          if (id.type === set(dependencyMap[23]).ICYMIItemTypes.MESSAGE) {
+            if (id.data.has_mention) {
+              items3.push(id);
             }
           }
+          items2.push(id);
         }
-        const obj2 = { newTrackingProps, hasNewContent, unreadFeedItems: arr10, readFeedItems: arr11, homeSessionId: str };
-        str = "background_load";
-        const trackFeedLoaded = tmp(9041).trackFeedLoaded;
-        tmp(9041);
-        if (focused) {
-          str = "foreground_load";
+      });
+      const items4 = [];
+      HermesBuiltin.arraySpread(items4, items2, HermesBuiltin.arraySpread(items4, items3, 0));
+      const items5 = [
+        items4,
+        items1.sort((id, id2) => {
+            obj = set(dependencyMap[22]);
+            return obj.compareGravityUnreadIds(id.id, id2.id);
+          })
+      ];
+      [arr10, arr11] = items5;
+      _slicedToArray(items5, 2);
+      const arr12 = getNewUnreadItems(arr10);
+      const tmp20 = c44;
+      if (tmp20) {
+        if (0 !== c41) {
+          if (!isInitialLoad) {
+            if (c41 > 0) {
+              let c46 = null;
+            }
+            const tmp21 = arr12.length > tmp2(10210).MIN_ITEMS_FOR_NEW_PILL;
+            if (!isReloading) {
+              hasNewContent = tmp21;
+            }
+            if (tmp21) {
+              const items6 = [];
+              const hydrateItems = tmp2(10216).hydrateItems;
+              const tmp2Result5 = tmp2(10216);
+              HermesBuiltin.arraySpread(items6, arr11, HermesBuiltin.arraySpread(items6, arr10, 0));
+              hydrateItems(items6, 0, tmp2(10210).ICYMI_PAGE_SIZE, closure_37);
+              if (arr10.length + arr11.length === 0) {
+                c57 = true;
+              }
+            }
+          }
+          const obj4 = { newTrackingProps: obj3, hasNewContent, unreadFeedItems: arr10, readFeedItems: arr11, homeSessionId: str2 };
+          str2 = "background_load";
+          const trackFeedLoaded = tmp2(10227).trackFeedLoaded;
+          tmp2(10227);
+          if (focused) {
+            str2 = "foreground_load";
+          }
+          trackFeedLoaded(obj4);
         }
-        trackFeedLoaded(obj2);
       }
+      c41 = 0;
+      const tmp32 = focused;
+      if (!tmp32) {
+        const _Date2 = Date;
+        const diff = Date.now() - closure_32;
+        let flag2 = false;
+        const arr14 = closure_33;
+        if (diff > 6 * map(1089).Millis.HOUR) {
+          const _Set = Set;
+          const self2 = this;
+          const self3 = this;
+          const set1 = new Set(arr10.map(f99857));
+          const substr = arr14.slice(0, 20);
+          flag2 = substr.filter((id) => set1.has(id.id)).length >= 3;
+        }
+        if (flag2) {
+          hasNewContent = true;
+          c42 = true;
+        }
+        const obj5 = { newUnread: arr10, newRead: arr11 };
+        reload(obj5);
+      }
+      hasNewContent = false;
     }
-    c41 = 0;
-    const tmp20 = focused;
-    if (!tmp20) {
-      const _Date = Date;
-      const diff = Date.now() - closure_32;
-      let flag = false;
-      const arr14 = closure_33;
-      if (diff > 6 * DurationsDefault.Millis.HOUR) {
-        const _Set = Set;
-        const self2 = this;
-        const self3 = this;
-        const set1 = new Set(arr10.map(f95141));
-        const substr = arr14.slice(0, 20);
-        flag = substr.filter((id) => set1.has(id.id)).length >= 3;
-      }
-      if (flag) {
-        hasNewContent = true;
-        c42 = true;
-      }
-      const obj3 = { newUnread: arr10, newRead: arr11 };
-      reload(obj3);
-    }
-    hasNewContent = false;
+    tmp8 = loadId;
   },
   LOAD_ICYMI_HYDRATED: function handleLoadHydratedItems(arg0) {
     let activityItems;

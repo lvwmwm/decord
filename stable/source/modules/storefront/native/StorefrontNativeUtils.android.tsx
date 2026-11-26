@@ -1,12 +1,12 @@
-// Module ID: 10825
-// Function ID: 10826
+// Module ID: 11733
+// Function ID: 11734
 // Name: StorefrontNativeUtils
-// Dependencies: [19, 10066, 504, 7706, 2]
+// Dependencies: [19, 9686, 504, 9302, 2]
 // Exports: useFormattedSKUPrice
 
-// Module 10825 (StorefrontNativeUtils)
-import IAPStoreDefault from "IAPStore" /* 7706 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 10066 */;
+// Module 11733 (StorefrontNativeUtils)
+import IAPStoreDefault from "IAPStore" /* 9302 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9686 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export function useFormattedSKUPrice(sku) {
   }, items);
   const useStateFromStores = require("get initialized").useStateFromStores;
   const tmp4 = require("get initialized");
-  const items1 = [stateFromStores(7706)];
+  const items1 = [stateFromStores(9302)];
   const items2 = [tmp2];
   stateFromStores = useStateFromStores(items1, () => {
     let product = null;

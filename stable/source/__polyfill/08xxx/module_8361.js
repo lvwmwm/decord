@@ -1,85 +1,94 @@
 // Module ID: 8361
 // Function ID: 8362
-// Dependencies: [8354, 8355]
-// Exports: isBLEND, isDOC, isELF, isEXE, isINDD, isMACHO, isORC, isPARQUET, isPCAP, isPDF, isPS, isRTF, isSQLITE, isSTL, isTTF
+// Dependencies: [41, 42, 93, 95, 98, 19, 8362, 21, 8271, 8278, 8279, 8285, 8364, 8287]
 
 // Module 8361
-import _mod8354 from "module_8354" /* 8354 */;
-import _mod8355 from "module_8355" /* 8355 */;
+import Fragment from "Fragment" /* 21 */;
+import extractProps from "extractProps" /* 8278 */;
+import extractTextDefault from "extractText" /* 8285 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 8287 */;
+import _modDef8364 from "module_8364" /* 8364 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
+import TSpan from "TSpan" /* 8362 */;
 
+const extractPropsDefault = extractProps;
 
-export function isBLEND(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "blend");
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
 }
-export function isELF(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "elf");
+const jsx = Fragment.jsx;
+class Text {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    let tmp = _classCallCheck(this, Text);
+    const items1 = [...items];
+    let obj = _getPrototypeOf(Text);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.setNativeProps = (matrix) => {
+      const tmp = matrix && !matrix.matrix && closure_2_1(closure_2_2[8])(matrix);
+      if (tmp) {
+        matrix.matrix = tmp;
+      }
+      const obj = Text(closure_2_2[9]);
+      const propsAndStylesResult = obj.propsAndStyles(matrix);
+      const obj2 = Text(closure_2_2[10]);
+      assign(propsAndStylesResult, obj2.pickNotNil(closure_2_1(closure_2_2[11])(propsAndStylesResult, true)));
+      if (closure_0.root) {
+        const root = closure_0.root;
+        root.setNativeProps(propsAndStylesResult);
+      }
+    };
+    return tmp3Result;
+  }
 }
-export function isEXE(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "exe");
-}
-export function isMACHO(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "macho");
-}
-export function isINDD(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "indd");
-}
-export function isORC(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "orc");
-}
-export function isPARQUET(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "parquet");
-}
-export function isPDF(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "pdf");
-}
-export function isPS(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ps");
-}
-export function isRTF(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "rtf");
-}
-export function isSQLITE(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "sqlite");
-}
-export function isSTL(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "stl");
-}
-export function isTTF(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ttf");
-}
-export function isDOC(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "doc");
-}
-export function isPCAP(fileChunk) {
-  fileChunk = _mod8354.getFileChunk(fileChunk);
-  const FileTypes = _mod8355.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "pcap");
-}
+_inherits(Text, multiplyMatricesDefault);
+const entry = {
+  key: "render",
+  value: function render() {
+    const obj = extractProps;
+    const propsAndStylesResult = obj.propsAndStyles(this.props);
+    const obj2 = { x: null, y: null };
+    const tmp2 = extractPropsDefault;
+    const merged = Object.assign(propsAndStylesResult);
+    const tmp2Result = tmp2(obj2, this);
+    const merged1 = Object.assign(tmp2Result, extractTextDefault(propsAndStylesResult, true));
+    tmp2Result.ref = this.refMethod;
+    _modDef8364;
+    const merged2 = Object.assign(tmp2Result);
+    return <tmp6 />;
+  }
+};
+let items = [entry];
+const importDefaultResultResult = _createClass(Text, items);
+importDefaultResultResult.displayName = "Text";
+
+export default importDefaultResultResult;

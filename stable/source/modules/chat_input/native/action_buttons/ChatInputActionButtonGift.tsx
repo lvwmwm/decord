@@ -1,21 +1,21 @@
-// Module ID: 14071
-// Function ID: 14072
+// Module ID: 14655
+// Function ID: 14656
 // Name: ChatInputActionButtonGift
-// Dependencies: [32, 19, 17, 5171, 9747, 13055, 5016, 21, 5170, 575, 504, 10762, 2150, 14072, 7674, 5003, 14073, 13629, 1113, 5747, 13051, 5004, 14074, 2]
+// Dependencies: [32, 19, 17, 5307, 9623, 13806, 5152, 21, 5306, 575, 504, 9627, 2153, 14656, 9560, 5139, 14657, 11817, 1113, 5883, 13802, 5140, 14658, 2]
 
-// Module 14071 (ChatInputActionButtonGift)
+// Module 14655 (ChatInputActionButtonGift)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import dismissible_content from "dismissible_content" /* 5003 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5004 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import ChatInputConstants from "ChatInputConstants" /* 13055 */;
+import dismissible_content from "dismissible_content" /* 5139 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import ChatInputConstants from "ChatInputConstants" /* 13806 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import PromotionsStore from "PromotionsStore" /* 9747 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import PromotionsStore from "PromotionsStore" /* 9623 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,15 +71,12 @@ const memoResult = react.memo(function ChatInputActionButtonGift(arg0) {
   const items1 = [closure_7];
   const obj3 = require("get initialized");
   const stateFromStores1 = obj3.useStateFromStores(items1, () => {
-    const marketingComponentByType = closure_7.getMarketingComponentByType(require("MarketingComponentType").MarketingComponentType.GIFT_ICON);
-    let giftIcon = null;
-    if (null != marketingComponentByType) {
-      giftIcon = null;
-      if ("giftIcon" === marketingComponentByType.properties.properties.oneofKind) {
-        giftIcon = marketingComponentByType.properties.properties.giftIcon;
-      }
+    const marketingComponentBySurface = closure_7.getMarketingComponentBySurface(require("MarketingSurfaceType").MarketingSurfaceType.GIFT_ICON);
+    let surface = null;
+    if (null != marketingComponentBySurface) {
+      surface = marketingComponentBySurface.surface;
     }
-    return giftIcon;
+    return surface;
   });
   const items2 = [closure_7];
   const obj4 = require("get initialized");

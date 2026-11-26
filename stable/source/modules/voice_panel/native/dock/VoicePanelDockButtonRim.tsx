@@ -1,14 +1,14 @@
-// Module ID: 19649
-// Function ID: 19650
+// Module ID: 19235
+// Function ID: 19236
 // Name: VoicePanelDockButtonRim
-// Dependencies: [32, 19, 17, 11413, 21, 5756, 575, 8134, 1652, 5402, 14267, 2]
+// Dependencies: [32, 19, 17, 12009, 21, 5892, 575, 8263, 1655, 5538, 14855, 2]
 
-// Module 19649 (VoicePanelDockButtonRim)
+// Module 19235 (VoicePanelDockButtonRim)
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import useToken from "useToken" /* 5756 */;
-import inlineStyles from "inlineStyles" /* 8134 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11413 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import useToken from "useToken" /* 5892 */;
+import inlineStyles from "inlineStyles" /* 8263 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -57,7 +57,7 @@ let closure_10 = react.memo(function ButtonRimGradient(arg0) {
   items1[1] = metroImportAll(inlineStyles.Rect, size1);
   return React4(tmp3, size);
 });
-let closure_11 = { code: "(function VoicePanelDockButtonRimTsx1(){let[voicePanelDockRimOpacity,pressOpacity]=this.__closure;return{opacity:voicePanelDockRimOpacity.get()*0.5*pressOpacity.get()};})" };
+let closure_11 = { code: "(function VoicePanelDockButtonRimTsx1(){let[voicePanelDockRimOpacity,pressOpacity]=this.__closure;return{opacity:voicePanelDockRimOpacity.get()*pressOpacity.get()};})" };
 const memoResult = react.memo(function VoicePanelDockButtonRim(measureGlowOffset) {
   let VoicePanelDockRimLevel;
   let children;
@@ -164,15 +164,15 @@ const memoResult = react.memo(function VoicePanelDockButtonRim(measureGlowOffset
   const tmp8 = measureGlowOffset;
   class VoicePanelDockButtonRimTsx1 {
     constructor() {
-      let result;
-      const obj = { opacity: result * _undefined2.get() };
-      result = 0.5 * _undefined.get();
+      let value;
+      const obj = { opacity: value * _undefined2.get() };
+      value = _undefined.get();
       return obj;
     }
   }
   const items7 = [tmp15, tmp16];
   VoicePanelDockButtonRimTsx1.__closure = items7;
-  VoicePanelDockButtonRimTsx1.__workletHash = 6494940764025;
+  VoicePanelDockButtonRimTsx1.__workletHash = 7321079765112;
   VoicePanelDockButtonRimTsx1.__initData = tmp14;
   const obj2 = { ref, style, onLayout: callback1, onTouchStart: tmp20, onTouchEnd: tmp21, onTouchCancel: tmp22, children: items8 };
   tmp20 = undefined;

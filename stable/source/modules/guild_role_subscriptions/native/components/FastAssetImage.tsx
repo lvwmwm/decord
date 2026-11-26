@@ -1,12 +1,12 @@
-// Module ID: 17580
-// Function ID: 17581
+// Module ID: 17857
+// Function ID: 17858
 // Name: FastAssetImage
-// Dependencies: [32, 19, 21, 6620, 5874, 2]
+// Dependencies: [32, 19, 21, 6756, 6010, 2]
 // Exports: default
 
-// Module 17580 (FastAssetImage)
+// Module 17857 (FastAssetImage)
 import Fragment from "Fragment" /* 21 */;
-import StoreUtils from "StoreUtils" /* 6620 */;
+import StoreUtils from "StoreUtils" /* 6756 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

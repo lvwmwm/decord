@@ -1,8 +1,8 @@
-// Module ID: 6383
-// Function ID: 6384
+// Module ID: 6519
+// Function ID: 6520
 // Dependencies: [2]
 
-// Module 6383
+// Module 6519
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/streamer_flames.png.js");

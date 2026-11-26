@@ -1,11 +1,11 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 12883
+// Function ID: 12884
 // Name: EmbeddedAppShimExperiment
-// Dependencies: [1449, 2]
+// Dependencies: [1452, 2]
 // Exports: getEmbeddedAppShimVersion, useEmbeddedAppShimVersion
 
-// Module 12020 (EmbeddedAppShimExperiment)
-import ApexExperiment from "ApexExperiment" /* 1449 */;
+// Module 12883 (EmbeddedAppShimExperiment)
+import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

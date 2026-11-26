@@ -1,21 +1,21 @@
-// Module ID: 19112
-// Function ID: 19113
+// Module ID: 19485
+// Function ID: 19486
 // Name: GuildVoiceOrStageChannelRow
-// Dependencies: [19, 17, 5024, 9950, 21, 11208, 5226, 1113, 5170, 504, 19113, 6853, 6847, 19114, 19116, 14105, 2]
+// Dependencies: [19, 17, 5160, 9066, 21, 11050, 5362, 1113, 5306, 504, 19486, 6939, 6933, 19487, 19489, 14690, 2]
 
-// Module 19112 (GuildVoiceOrStageChannelRow)
+// Module 19485 (GuildVoiceOrStageChannelRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5226 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6853 */;
-import SearchConstants from "SearchConstants" /* 9950 */;
-import ChannelListLayout from "ChannelListLayout" /* 11208 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 19113 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 19116 */;
+import UserUtilsDefault from "UserUtils" /* 5362 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6939 */;
+import SearchConstants from "SearchConstants" /* 9066 */;
+import ChannelListLayout from "ChannelListLayout" /* 11050 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 19486 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 19489 */;
 import react from "react" /* 19 */;
-import StageInstanceStore from "StageInstanceStore" /* 5024 */;
-import createStyles from "createStyles" /* 5170 */;
+import StageInstanceStore from "StageInstanceStore" /* 5160 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 function GuildVoiceChannelSubtitle(channel) {

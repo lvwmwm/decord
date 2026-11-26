@@ -1,31 +1,31 @@
-// Module ID: 18100
-// Function ID: 18101
+// Module ID: 18383
+// Function ID: 18384
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6925, 5023, 5113, 5019, 5041, 5073, 1385, 1072, 21, 5170, 575, 5869, 11184, 11186, 6648, 11, 1627, 1187, 7159, 7071, 12440, 7080, 2]
+// Dependencies: [19, 17, 7010, 5159, 5249, 5155, 5177, 5209, 1388, 1072, 21, 5306, 575, 6005, 11025, 11027, 6783, 11, 1630, 1187, 7746, 7443, 13316, 7456, 2]
 // Exports: default
 
-// Module 18100 (DevToolsInAppNotificationTestingScreen)
+// Module 18383 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ChannelRecord from "ChannelRecord" /* 5023 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5869 */;
-import StickersTypes from "StickersTypes" /* 6648 */;
-import TableRowGroup2 from "TableRowGroup" /* 7159 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11184 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11186 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+import StickersTypes from "StickersTypes" /* 6783 */;
+import TableRowGroup2 from "TableRowGroup" /* 7746 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11027 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6925 */;
-import MessageRecord from "MessageRecord" /* 5113 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
-import UserStore from "UserStore" /* 1385 */;
+import StickersStore from "StickersStore" /* 7010 */;
+import MessageRecord from "MessageRecord" /* 5249 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -549,10 +549,10 @@ export default function DevToolsInAppNotificationTestingScreen() {
       };
       options = title.options;
       const TableRowGroup = TableRowGroup2.TableRowGroup;
-      items = [authStore3(TableRowGroup, obj2), ];
+      items = [gesture(TableRowGroup, obj2), ];
       const obj3 = { size: nativeDefault.space.PX_16 };
       const Spacer = native.Spacer;
-      items[1] = authStore3(Spacer, obj3);
+      items[1] = gesture(Spacer, obj3);
       return closure_15(Fragment, obj, title.title);
     }),
 

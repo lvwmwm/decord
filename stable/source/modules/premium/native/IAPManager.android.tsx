@@ -1,10 +1,10 @@
-// Module ID: 19934
-// Function ID: 19935
+// Module ID: 20276
+// Function ID: 20277
 // Name: IAPManager
-// Dependencies: [7383, 2]
+// Dependencies: [7882, 2]
 
-// Module 19934 (IAPManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+// Module 20276 (IAPManager)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 class IAPManager extends AutomaticLifecycleManager {

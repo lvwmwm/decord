@@ -1,11 +1,11 @@
-// Module ID: 18020
-// Function ID: 18021
+// Module ID: 18297
+// Function ID: 18298
 // Name: DevToolsProfilingUseStateFromStores
-// Dependencies: [32, 19, 21, 18021, 5783, 7159, 7462, 7071, 7188, 11832, 10414, 18022, 5894, 1113, 2]
+// Dependencies: [32, 19, 21, 18298, 5919, 7746, 7954, 7443, 7626, 12557, 11354, 18299, 6030, 1113, 2]
 // Exports: DevToolsProfilingUseStateFromStores
 
-// Module 18020 (DevToolsProfilingUseStateFromStores)
-import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 18021 */;
+// Module 18297 (DevToolsProfilingUseStateFromStores)
+import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 18298 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

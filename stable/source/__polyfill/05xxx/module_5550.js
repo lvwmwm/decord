@@ -1,57 +1,72 @@
 // Module ID: 5550
 // Function ID: 5551
-// Dependencies: [5523, 5540, 5514]
-// Exports: useHoverGesture
+// Dependencies: [19, 5547, 5551]
+// Exports: useHaptics
 
 // Module 5550
-import ComposedGestureName from "ComposedGestureName" /* 5514 */;
-import _mod5523 from "module_5523" /* 5523 */;
-import _mod5540 from "module_5540" /* 5540 */;
+import react from "react" /* 19 */;
+import _modDef5547 from "module_5547" /* 5547 */;
 
-let tmp2;
-let tmp3;
-function transformHoverProps(arg0) {
-  const obj = _mod5523;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-const items = [{ code: "(function diffCalculator_Pnpm_useHoverGestureTs1(current,previous){return{changeX:previous?current.x-previous.x:0,changeY:previous?current.y-previous.y:0};})" }];
-[tmp2] = items;
-function diffCalculator(arg0, arg1) {
-  let num2;
-  let num = 0;
-  if (arg1) {
-    num = arg0.x - arg1.x;
-  }
-  const obj = { changeX: num, changeY: num2 };
-  num2 = 0;
-  if (arg1) {
-    num2 = arg0.y - arg1.y;
-  }
-  return obj;
-}
-diffCalculator.__workletHash = 12913184752331;
-diffCalculator.__initData = tmp2;
-const items1 = [{ code: "(function fillInDefaultValues_Pnpm_useHoverGestureTs2(event){event.changeX=0;event.changeY=0;})" }];
-[tmp3] = items1;
-function fillInDefaultValues(arg0) {
-  arg0.changeX = 0;
-  arg0.changeY = 0;
-}
-fillInDefaultValues.__workletHash = 8758316487265;
-fillInDefaultValues.__initData = tmp3;
-const items2 = [["effect", "hoverEffect"]];
-const map = new Map(items2);
-let closure_6 = {};
+const useMemo = react.useMemo;
 
-export function useHoverGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_6;
+export function useHaptics(enableVibrateFallback) {
+  let closure_0 = enableVibrateFallback;
+  let prop;
+  if (enableVibrateFallback != null) {
+    prop = enableVibrateFallback.enableVibrateFallback;
   }
-  const obj = _mod5523;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformHoverProps);
-  const obj2 = _mod5540;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Hover, clonedAndRemappedConfig);
+  let prop1;
+  if (enableVibrateFallback != null) {
+    prop1 = enableVibrateFallback.ignoreAndroidSystemSettings;
+  }
+  const items = [prop, prop1];
+  return useMemo(() => {
+    let obj = {
+      trigger(arg0, arg1) {
+        const trigger = _modDef5547.trigger;
+        const obj = {};
+        _modDef5547;
+        const merged = Object.assign(enableVibrateFallback);
+        const merged1 = Object.assign(arg1);
+        trigger(arg0, obj);
+      },
+      triggerPattern(arg0, arg1) {
+        const triggerPattern = _modDef5547.triggerPattern;
+        const obj = {};
+        _modDef5547;
+        const merged = Object.assign(enableVibrateFallback);
+        const merged1 = Object.assign(arg1);
+        triggerPattern(arg0, obj);
+      },
+      stop() {
+        const obj = closure_1_1(closure_1_2[1]);
+        obj.stop();
+      },
+      isSupported() {
+        const obj = closure_1_1(closure_1_2[1]);
+        return obj.isSupported();
+      },
+      playHaptic(arg0, arg1, arg2) {
+        const playHaptic = closure_0(dependencyMap[2]).playHaptic;
+        const obj = {};
+        closure_0(dependencyMap[2]);
+        const merged = Object.assign(closure_1_0);
+        const merged1 = Object.assign(arg2);
+        return playHaptic(arg0, arg1, obj);
+      },
+      impact(arg0, arg1, arg2) {
+        const impact = _modDef5547.impact;
+        const obj = {};
+        _modDef5547;
+        const merged = Object.assign(enableVibrateFallback);
+        const merged1 = Object.assign(arg2);
+        impact(arg0, arg1, obj);
+      },
+      setEnabled: _modDef5547.setEnabled,
+      isEnabled: _modDef5547.isEnabled,
+      getSystemHapticStatus: _modDef5547.getSystemHapticStatus,
+      playAHAP: _modDef5547.playAHAP
+    };
+    return obj;
+  }, items);
 }

@@ -1,11 +1,11 @@
-// Module ID: 9671
-// Function ID: 9672
+// Module ID: 9445
+// Function ID: 9446
 // Name: usePromotionForApplication
-// Dependencies: [9599, 504, 2]
+// Dependencies: [9415, 504, 2]
 // Exports: default
 
-// Module 9671 (usePromotionForApplication)
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9599 */;
+// Module 9445 (usePromotionForApplication)
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9415 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

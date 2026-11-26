@@ -1,30 +1,30 @@
-// Module ID: 13066
-// Function ID: 13067
+// Module ID: 13817
+// Function ID: 13818
 // Name: ConjureHomeCarousel
-// Dependencies: [19, 17, 5171, 2117, 1072, 21, 575, 9850, 8782, 13067, 9708, 11453, 12300, 5170, 1652, 13069, 5874, 1411, 5783, 13070, 13213, 13221, 504, 1500, 9102, 1113, 4026, 2]
+// Dependencies: [19, 17, 5307, 2120, 1072, 21, 575, 7438, 8101, 13818, 10467, 11224, 12684, 5306, 1655, 13820, 6010, 1414, 5919, 13821, 13964, 13972, 504, 1503, 7994, 1113, 4131, 2]
 
-// Module 13066 (ConjureHomeCarousel)
+// Module 13817 (ConjureHomeCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import AppsIcon from "AppsIcon" /* 8782 */;
-import ScreenIcon from "ScreenIcon" /* 9708 */;
-import GameControllerIcon from "GameControllerIcon" /* 9850 */;
-import ShieldIcon from "ShieldIcon" /* 11453 */;
-import RobotIcon from "RobotIcon" /* 12300 */;
-import WidgetsIcon from "WidgetsIcon" /* 13067 */;
-import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 13069 */;
-import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 13213 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import GameControllerIcon from "GameControllerIcon" /* 7438 */;
+import AppsIcon from "AppsIcon" /* 8101 */;
+import ScreenIcon from "ScreenIcon" /* 10467 */;
+import ShieldIcon from "ShieldIcon" /* 11224 */;
+import RobotIcon from "RobotIcon" /* 12684 */;
+import WidgetsIcon from "WidgetsIcon" /* 13818 */;
+import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 13820 */;
+import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 13964 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5171 */;
-import AppStateStore from "AppStateStore" /* 2117 */;
+import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AppStateStore from "AppStateStore" /* 2120 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1652 = _mod1652;
+const _modDef1655 = _mod1655;
 let obj1;
 
 let c9;
@@ -39,10 +39,10 @@ let rect;
 let size;
 let size1;
 let tmp3;
-const AvatarUtils = tmp3(1411);
-const Text_Text = tmp3(5783);
-const SvgCss = tmp3(13070);
-const conjureHomeInspirationEntries = tmp3(13221);
+const AvatarUtils = tmp3(1414);
+const Text_Text = tmp3(5919);
+const SvgCss = tmp3(13821);
+const conjureHomeInspirationEntries = tmp3(13972);
 let View = react_native.View;
 const AppStates = Constants.AppStates;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -97,8 +97,8 @@ let closure_14 = react.memo(function ConjureHomeCarouselItem(inspiration) {
   let tmp3 = require;
   let tmp2 = obj[inspiration.category];
   let items = [closure_13, , , , , , , , ];
-  const useAnimatedStyle = _mod1652.useAnimatedStyle;
-  _mod1652;
+  const useAnimatedStyle = _mod1655.useAnimatedStyle;
+  _mod1655;
   items[1] = conjureHomeCarouselFan.wrapConjureHomeCarouselDistance;
   items[2] = index;
   items[3] = closure_10;
@@ -140,7 +140,7 @@ let closure_14 = react.memo(function ConjureHomeCarouselItem(inspiration) {
   obj = { style: items2, children: items4 };
   items2 = [tmp.item, animatedStyle];
   let obj2 = { style: tmp.promptRow, children: items3 };
-  View = _modDef1652.View;
+  View = _modDef1655.View;
   const obj3 = { style: tmp.avatar, source: makeSource(tmp3Result3.getDefaultAvatarURL(undefined, inspiration.authorAvatarSeed)) };
   const tmp16 = FastImageDefault;
   makeSource = AvatarUtils.makeSource;

@@ -1,22 +1,22 @@
-// Module ID: 19792
-// Function ID: 19793
+// Module ID: 20132
+// Function ID: 20133
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 12043, 16743, 11396, 11395, 21, 5170, 575, 1627, 1493, 19791, 1652, 10242, 11399, 19543, 5402, 5405, 5793, 19545, 5770, 5452, 19793, 2]
+// Dependencies: [32, 19, 12906, 17022, 11986, 11985, 21, 5306, 575, 1630, 1496, 20131, 1655, 11333, 11989, 19933, 5538, 5541, 5929, 19935, 5906, 5588, 20133, 2]
 // Exports: default
 
-// Module 19792 (MediaPlaybackPanelUI)
+// Module 20132 (MediaPlaybackPanelUI)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11395 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11396 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 19791 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import _mod1655 from "module_1655" /* 1655 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 20131 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12043 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 16743 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12906 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17022 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 const react = react2;
@@ -29,18 +29,18 @@ let obj3;
 let rect;
 let tmp3;
 let tmp7;
-const useSafeAreaInsetsDefault = tmp3(1627);
-const _modDef1652 = tmp3(1652);
-const timing_timing = tmp7(5402);
-const timingPresets = tmp7(5405);
-const LegacyBaseButton = tmp7(5452);
-const LayerScope2 = tmp7(5770);
-const spring_spring = tmp7(5793);
-const cheapWorkletShallowEqual = tmp7(10242);
-const updateSharedValueIfChangedDefault = tmp3(11399);
-const MorphablePanelUtils = tmp7(19543);
-const useMorphablePanelGesture = tmp7(19545);
-const useMorphablePanelGestureDefault = tmp3(19545);
+const useSafeAreaInsetsDefault = tmp3(1630);
+const _modDef1655 = tmp3(1655);
+const timing_timing = tmp7(5538);
+const timingPresets = tmp7(5541);
+const LegacyBaseButton = tmp7(5588);
+const LayerScope2 = tmp7(5906);
+const spring_spring = tmp7(5929);
+const cheapWorkletShallowEqual = tmp7(11333);
+const updateSharedValueIfChangedDefault = tmp3(11989);
+const MorphablePanelUtils = tmp7(19933);
+const useMorphablePanelGesture = tmp7(19935);
+const useMorphablePanelGestureDefault = tmp3(19935);
 const useContext = react2.useContext;
 ({ MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS: metroImportDefault, MediaPlaybackPanelModes: metroImportAll } = MediaPlaybackPanelConstants);
 const IS_IOS = MorphablePanelConstants.IS_IOS;
@@ -131,7 +131,7 @@ export default function MediaPlaybackPanelUI() {
   const tmp5 = useWindowDimensionsDefault();
   const tmp6 = useContext(MediaPlaybackPanelStateContextDefault);
   ({ wrapperDimensions, wrapperOffset } = tmp6);
-  let obj = _mod1652;
+  let obj = _mod1655;
   let items = [closure_19, tmp5];
   let c0;
   [tmp8, tmp9] = items;
@@ -155,7 +155,7 @@ export default function MediaPlaybackPanelUI() {
   const obj2 = react;
   const context = react.useContext(MediaPlaybackPanelStateContextDefault);
   ({ mode, pipState, pipAvoidanceSpecs, canShowPIP } = context);
-  const tmp7Result = _mod1652;
+  const tmp7Result = _mod1655;
   const items2 = [closure_13, mode, tmp13, canShowPIP];
   c0 = undefined;
   let c1;
@@ -207,13 +207,13 @@ export default function MediaPlaybackPanelUI() {
   MediaPlaybackPanelUITsx2.__workletHash = 13340145341918;
   MediaPlaybackPanelUITsx2.__initData = tmp21;
   const animatedReaction = useAnimatedReaction(MediaPlaybackPanelUITsx1, MediaPlaybackPanelUITsx2);
-  const tmp7Result9 = _mod1652;
+  const tmp7Result9 = _mod1655;
   const sharedValue = tmp7Result9.useSharedValue(0);
-  const tmp7Result10 = _mod1652;
+  const tmp7Result10 = _mod1655;
   const sharedValue1 = tmp7Result10.useSharedValue(0);
-  const tmp7Result11 = _mod1652;
+  const tmp7Result11 = _mod1655;
   const sharedValue2 = tmp7Result11.useSharedValue(0);
-  const tmp7Result12 = _mod1652;
+  const tmp7Result12 = _mod1655;
   const sharedValue3 = tmp7Result12.useSharedValue(false);
   const items6 = [closure_15, mode, wrapperDimensions, pipAvoidanceSpecs, wrapperOffset, tmp13, tmp12, pipState];
   c0 = undefined;
@@ -225,7 +225,7 @@ export default function MediaPlaybackPanelUI() {
   let c6;
   [tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41] = items6;
   const tmp32 = SafeAreaDisabledStore((shouldDisableSafeAreas) => shouldDisableSafeAreas.shouldDisableSafeAreas());
-  const tmp7Result13 = _mod1652;
+  const tmp7Result13 = _mod1655;
   class MediaPlaybackPanelUITsx3 {
     constructor() {
       const obj = { mode: _undefined.get(), wrapperDimensions: _undefined2.get(), pipAvoidanceSpecs: _undefined3.get(), wrapperOffset: _undefined4.get(), windowDimensions, safeArea, pipState: _undefined5.get() };
@@ -336,8 +336,8 @@ export default function MediaPlaybackPanelUI() {
         maskEmptyElevation2 = tmpResult.maskElevation;
       }
       const items10 = [closure_17, , , , , , , , , , ];
-      const useAnimatedStyle = _mod1652.useAnimatedStyle;
-      _mod1652;
+      const useAnimatedStyle = _mod1655.useAnimatedStyle;
+      _mod1655;
       items10[1] = timing_timing.withTiming;
       items10[2] = sharedValue2;
       items10[3] = timingPresets.timingFast;
@@ -399,7 +399,7 @@ export default function MediaPlaybackPanelUI() {
       MediaPlaybackPanelUITsx5.__initData = tmp59;
       animatedStyle1 = useAnimatedStyle(MediaPlaybackPanelUITsx5);
       const xl = nativeDefault.radii.xl;
-      _mod1652;
+      _mod1655;
       const items12 = [closure_18, , , , ];
       class MediaPlaybackPanelUITsx1 {
         constructor() {
@@ -467,7 +467,7 @@ export default function MediaPlaybackPanelUI() {
       const items17 = [closure_20, tmp2];
       c0 = undefined;
       [tmp88, tmp89] = items17;
-      const tmp7Result16 = _mod1652;
+      const tmp7Result16 = _mod1655;
       class MediaPlaybackPanelUITsx8 {
         constructor() {
           return { flexDirection: "column", backgroundColor: _undefined.content.backgroundColor, borderTopStartRadius: 0, borderTopEndRadius: 0, top: 0, overflow: "hidden" };
@@ -490,11 +490,11 @@ export default function MediaPlaybackPanelUI() {
           return obj;
         }
       }
-      const View = _modDef1652.View;
-      const View2 = _modDef1652.View;
+      const View = _modDef1655.View;
+      const View2 = _modDef1655.View;
       const GestureDetector = LegacyBaseButton.GestureDetector;
       const items19 = [tmp2.content, animatedStyle2];
-      const View3 = _modDef1652.View;
+      const View3 = _modDef1655.View;
       return <LayerScope>{null}</LayerScope>;
     }
     maskEmptyElevation2 = tmpResult.maskEmptyElevation;

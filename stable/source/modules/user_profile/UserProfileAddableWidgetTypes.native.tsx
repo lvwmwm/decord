@@ -1,13 +1,13 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15816
+// Function ID: 15817
 // Name: UserProfileAddableWidgetTypes
-// Dependencies: [7882, 2]
+// Dependencies: [7353, 2]
 
-// Module 15215 (UserProfileAddableWidgetTypes)
-import WidgetType from "WidgetType" /* 7882 */;
+// Module 15816 (UserProfileAddableWidgetTypes)
+import WidgetType from "WidgetType" /* 7353 */;
 import size from "module_2" /* 2 */;
 
-const items = [WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.PLAYED_GAMES, WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES];
+const items = [WidgetType.WidgetType.APPLICATION, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.PLAYED_GAMES, WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileAddableWidgetTypes.native.tsx");
 

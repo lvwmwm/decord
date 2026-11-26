@@ -1,14 +1,14 @@
-// Module ID: 12619
-// Function ID: 12620
+// Module ID: 13390
+// Function ID: 13391
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 575, 5170, 5874, 2]
+// Dependencies: [17, 21, 575, 5306, 6010, 2]
 // Exports: default
 
-// Module 12619 (EntityBorderAppIcon)
+// Module 13390 (EntityBorderAppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

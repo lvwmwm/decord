@@ -1,14 +1,14 @@
-// Module ID: 17859
-// Function ID: 17860
+// Module ID: 18138
+// Function ID: 18139
 // Name: FriendAnniversaryNotificationUtils
-// Dependencies: [1072, 5115, 4995, 1252, 2]
+// Dependencies: [1072, 5251, 5131, 1256, 2]
 // Exports: onFriendAnniversaryNotificationSettingsChanged
 
-// Module 17859 (FriendAnniversaryNotificationUtils)
+// Module 18138 (FriendAnniversaryNotificationUtils)
 import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import NotificationConstants from "NotificationConstants" /* 5115 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import NotificationConstants from "NotificationConstants" /* 5251 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

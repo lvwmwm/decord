@@ -1,15 +1,15 @@
-// Module ID: 20519
-// Function ID: 20520
+// Module ID: 20859
+// Function ID: 20860
 // Name: LibdiscoreExperimentManager
-// Dependencies: [1246, 1363, 5045, 558, 1449, 7383, 2]
+// Dependencies: [1246, 1366, 5181, 558, 1452, 7882, 2]
 
-// Module 20519 (LibdiscoreExperimentManager)
+// Module 20859 (LibdiscoreExperimentManager)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import shim from "shim" /* 1363 */;
-import ApexExperiment from "ApexExperiment" /* 1449 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 5045 */;
+import shim from "shim" /* 1366 */;
+import ApexExperiment from "ApexExperiment" /* 1452 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 5181 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7383 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 
 let map, treatmentId;
@@ -20,7 +20,7 @@ function experimentStoreUpdateHandler() {
     const tmpResult = libdiscoreExperiments;
     if (!tmpResult.isExperimentSyncDisabled()) {
       obj2 = {};
-      const ALL_LIBDISCORE_EXPERIMENTS = tmp(5045).ALL_LIBDISCORE_EXPERIMENTS;
+      const ALL_LIBDISCORE_EXPERIMENTS = tmp(5181).ALL_LIBDISCORE_EXPERIMENTS;
       for (const item10018 of ALL_LIBDISCORE_EXPERIMENTS) {
         let currentConfig = item10018.getCurrentConfig({ autoTrackExposure: false });
         obj2[item10018.id] = currentConfig;

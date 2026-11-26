@@ -1,14 +1,14 @@
-// Module ID: 7491
-// Function ID: 7492
+// Module ID: 7238
+// Function ID: 7239
 // Name: conjurePageRoutes
-// Dependencies: [1072, 5026, 5208, 5221, 2]
+// Dependencies: [1072, 5162, 5344, 5357, 2]
 // Exports: conjureOpenProjectId, conjurePageProjectId, conjurePageRoute, conjureServerHomeRoute, conjureServerProjectRoute, isConjurePagePath
 
-// Module 7491 (conjurePageRoutes)
+// Module 7238 (conjurePageRoutes)
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 5026 */;
-import matchPathCompat from "matchPathCompat" /* 5208 */;
-import RouteUtils from "RouteUtils" /* 5221 */;
+import ChannelConstants from "ChannelConstants" /* 5162 */;
+import matchPathCompat from "matchPathCompat" /* 5344 */;
+import RouteUtils from "RouteUtils" /* 5357 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -36,8 +36,8 @@ export function isConjurePagePath(pathname) {
   return null != obj.matchPath(pathname, obj2);
 }
 export const CONJURE_SERVER_PROJECT_PATH = CHANNELResult;
-export function conjureServerProjectRoute(result, arg1) {
-  return Routes.CHANNEL(result, StaticChannelRoute.CONJURE_PROJECT, arg1);
+export function conjureServerProjectRoute(guildId, arg1) {
+  return Routes.CHANNEL(guildId, StaticChannelRoute.CONJURE_PROJECT, arg1);
 }
 export function conjureServerHomeRoute(arg0) {
   return Routes.CHANNEL(arg0, StaticChannelRoute.CONJURE);

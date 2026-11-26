@@ -1,18 +1,8 @@
 // Module ID: 16522
 // Function ID: 16523
-// Dependencies: [16495]
+// Dependencies: []
 
 // Module 16522
-import _mod16495 from "module_16495" /* 16495 */;
+const tmp = Number.MAX_SAFE_INTEGER || 9007199254740991;
 
-
-export default function(arg0) {
-  if (_mod16495(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
-};
+export default { MAX_LENGTH: 256, MAX_SAFE_COMPONENT_LENGTH: 16, MAX_SAFE_BUILD_LENGTH: 250, MAX_SAFE_INTEGER: tmp, RELEASE_TYPES: ["major", "premajor", "minor", "preminor", "patch", "prepatch", "prerelease"], SEMVER_SPEC_VERSION: "2.0.0", FLAG_INCLUDE_PRERELEASE: 1, FLAG_LOOSE: 2 };

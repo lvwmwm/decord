@@ -1,24 +1,24 @@
-// Module ID: 14033
-// Function ID: 14034
+// Module ID: 14617
+// Function ID: 14618
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 5170, 575, 1187, 14034, 14035, 14036, 5783, 11732, 1380, 14037, 7553, 9038, 14041, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1187, 14618, 14619, 11857, 5919, 12423, 1255, 14620, 11158, 9111, 14624, 2]
 // Exports: default
 
-// Module 14033 (ForumPostGridBody)
+// Module 14617 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import Text_Text from "Text/Text" /* 5783 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9038 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14034 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14035 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14036 */;
-import ForumPostMedia from "ForumPostMedia" /* 14037 */;
+import GlobalUtils from "GlobalUtils" /* 1255 */;
+import Text_Text from "Text/Text" /* 5919 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9111 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11857 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14618 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14619 */;
+import ForumPostMedia from "ForumPostMedia" /* 14620 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, length;
@@ -32,13 +32,13 @@ let obj5;
 let size;
 function GIFIcon() {
   let tmp;
-  const obj = { size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault, disableColor: true, style: tmp.gifIcon };
+  const obj = { size: native.Icon.Sizes.CUSTOM, source: AssetRegistryDefault2, disableColor: true, style: tmp.gifIcon };
   tmp = closure_8();
   const Icon = native.Icon;
   return metroRequire(Icon, obj);
 }
 function PlayIcon() {
-  const obj = { size: native.Icon.Sizes.SMALL_20, source: AssetRegistryDefault2, disableColor: true };
+  const obj = { size: native.Icon.Sizes.SMALL_20, source: AssetRegistryDefault3, disableColor: true };
   const Icon = native.Icon;
   return metroRequire(Icon, obj);
 }
@@ -46,7 +46,7 @@ function ExtraMediaIcon(extraMediaCount) {
   extraMediaCount = extraMediaCount.extraMediaCount;
   const tmp = closure_8();
   const obj = { style: tmp.extraMediaCountContainer, children: items };
-  const obj2 = { source: AssetRegistryDefault3, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
+  const obj2 = { source: AssetRegistryDefault, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
   const Icon = native.Icon;
   items = [metroRequire(Icon, obj2), ];
   const obj3 = { style: tmp.extraMediaCount, lineClamp: 1, variant: "body-xs/normal", color: "text-default", children: "+" + extraMediaCount };
@@ -111,14 +111,14 @@ export default function ForumPostGridBody(thread) {
   const hasUnreads = thread.hasUnreads;
   let tmp = closure_8();
   let tmp2 = thread;
-  let obj = thread(7553);
+  let obj = thread(11158);
   [first, tmp5] = obj.useSomeAppliedTags(thread, 2);
   let tmp16Result = first.length > 0;
   items = [media];
   const memo = react.useMemo(() => media.slice(0, 4), items);
   const bound = Math.max(0, media.length - 4);
   const isMediaPostResult = thread.isMediaPost();
-  const tmp10 = media(11732)();
+  const tmp10 = media(12423)();
   dependencyMap = tmp10;
   const items1 = [memo];
   const memo1 = react.useMemo(() => {
@@ -186,7 +186,7 @@ export default function ForumPostGridBody(thread) {
   items5[1] = tmp17;
   items6 = [closure_6(View, obj3), , , ];
   if (tmp16Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(14041).ForumPostAppliedTagPills, obj5) };
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(14624).ForumPostAppliedTagPills, obj5) };
     obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
     tmp16Result = tmp16(tmp14, obj4);
   }

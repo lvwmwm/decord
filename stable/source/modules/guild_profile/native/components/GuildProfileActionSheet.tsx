@@ -1,31 +1,31 @@
-// Module ID: 9409
-// Function ID: 9410
+// Module ID: 10655
+// Function ID: 10656
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 1072, 21, 5170, 575, 5401, 5756, 8845, 671, 9410, 15002, 14996, 5420, 5747, 5424, 5755, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5537, 5892, 8559, 671, 10656, 10802, 10673, 5556, 5883, 5560, 5891, 2]
 // Exports: default
 
-// Module 9409 (GuildProfileActionSheet)
+// Module 10655 (GuildProfileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
-import useThemeDefault from "useTheme" /* 5401 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5420 */;
-import BottomSheetModal from "BottomSheetModal" /* 5424 */;
-import LinearGradientDefault from "LinearGradient" /* 5747 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5755 */;
-import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 9410 */;
-import GuildProfileCTADefault from "GuildProfileCTA" /* 15002 */;
+import useThemeDefault from "useTheme" /* 5537 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
+import BottomSheetModal from "BottomSheetModal" /* 5560 */;
+import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5891 */;
+import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 10656 */;
+import GuildProfileCTADefault from "GuildProfileCTA" /* 10802 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp4;
-const GuildProfileCreateTagUpsellDefault = tmp4(14996);
+const GuildProfileCreateTagUpsellDefault = tmp4(10673);
 let react = react_mod;
 const View = react_native.View;
 const VerticalGradient = Constants.VerticalGradient;
@@ -49,12 +49,12 @@ export default function GuildProfileActionSheet(guildId) {
   let colors;
   react = colors();
   let tmp = useThemeDefault();
-  let obj = guildId(5756);
+  let obj = guildId(5892);
   const backgroundColor = obj.useToken(nativeDefault.colors.INTERACTIVE_TEXT_HOVER, tmp);
-  let obj2 = guildId(8845);
+  let obj2 = guildId(8559);
   const bottomSheetRef = obj2.useBottomSheetRef();
   ({ bottomSheetRef: c5, bottomSheetClose } = bottomSheetRef);
-  let obj3 = guildId(5756);
+  let obj3 = guildId(5892);
   const token = obj3.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   colors = react.useMemo(() => {

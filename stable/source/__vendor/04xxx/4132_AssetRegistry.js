@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "4f2c01ec9a36430249777e5b9aa77a72", name: "es-ES.messages.4f2c01ec9a36430249777e5b9aa77a72.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conjure/intl", scales: [1], hash: "a6ffa1c320d6b3b4fad346701b1aee77", name: "ConjureUntranslated.compiled.messages", type: "jsona" });

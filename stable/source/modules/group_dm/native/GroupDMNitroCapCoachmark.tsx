@@ -1,27 +1,27 @@
-// Module ID: 14844
-// Function ID: 14845
+// Module ID: 15647
+// Function ID: 15648
 // Name: GroupDMNitroCapCoachmark
-// Dependencies: [32, 19, 17, 11820, 5016, 21, 5170, 11818, 11825, 11821, 7674, 5003, 1113, 7083, 11140, 9645, 575, 11817, 10109, 2]
+// Dependencies: [32, 19, 17, 12545, 5152, 21, 5306, 12543, 12550, 12546, 9560, 5139, 1113, 7459, 10982, 9436, 575, 12542, 9567, 2]
 // Exports: default
 
-// Module 14844 (GroupDMNitroCapCoachmark)
+// Module 15647 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11140 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11818 */;
-import GroupDMConstants from "GroupDMConstants" /* 11820 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10982 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12543 */;
+import GroupDMConstants from "GroupDMConstants" /* 12545 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let tmp;
-const NitroWheelIcon2 = tmp(9645);
+const NitroWheelIcon2 = tmp(9436);
 let react = react_mod;
 const View = react_native.View;
 let closure_6 = GroupDMConstants.MAX_GROUP_DM_NITRO_PARTICIPANTS;
@@ -44,25 +44,25 @@ export default function GroupDMNitroCapCoachmark(channelId) {
   let obj = react;
   const ref = react.useRef(null);
   const tmp3 = channelId;
-  let obj2 = channelId(11818);
+  let obj2 = channelId(12543);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   const tmp6 = "entitled" === groupDMNitroAudience;
   react = tmp6;
-  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(11818).GroupDMNitroAcquisitionStrategy.MARKETING };
-  let tmp7 = _location(11825);
+  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(12543).GroupDMNitroAcquisitionStrategy.MARKETING };
+  let tmp7 = _location(12550);
   const tmp7Result = tmp7(obj3);
   let closure_5 = tmp7Result;
-  const obj4 = _location(11821);
+  const obj4 = _location(12546);
   const enabled = obj4.useConfig({ location: _location }).enabled;
-  channelId(7674);
+  channelId(9560);
   if (enabled) {
     let str = "staff";
     if ("staff" !== groupDMNitroAudience) {
-      const items = [tmp3(5003).DismissibleContent.NITRO_GDM_CAP_COACHMARK];
+      const items = [tmp3(5139).DismissibleContent.NITRO_GDM_CAP_COACHMARK];
     }
     const tmp13 = groupDMNitroAudience(tmp10([]), 2);
     number = tmp14;
-    const tmp15 = tmp13[0] === tmp3(5003).DismissibleContent.NITRO_GDM_CAP_COACHMARK;
+    const tmp15 = tmp13[0] === tmp3(5139).DismissibleContent.NITRO_GDM_CAP_COACHMARK;
     visible = tmp15;
     const items1 = [groupDMNitroAudience, tmp6, tmp15, tmp13[1], channelId, _location, tmp, tmp7Result];
     const memo = obj.useMemo(() => {
@@ -118,7 +118,7 @@ export default function GroupDMNitroCapCoachmark(channelId) {
       }
       return obj;
     }, items1);
-    const tmp3Result = tmp3(10109);
+    const tmp3Result = tmp3(9567);
     const coachmark = tmp3Result.useCoachmark(ref, memo);
     return <closure_5 ref={ref} collapsable={false}>{children}</closure_5>;
   }

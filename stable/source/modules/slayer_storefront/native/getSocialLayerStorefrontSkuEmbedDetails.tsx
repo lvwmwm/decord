@@ -1,14 +1,14 @@
-// Module ID: 15434
-// Function ID: 15435
+// Module ID: 15579
+// Function ID: 15580
 // Name: getSocialLayerStorefrontSkuEmbedDetails
-// Dependencies: [17, 1113, 7501, 10837, 2]
+// Dependencies: [17, 1113, 7244, 11740, 2]
 // Exports: getSocialLayerStorefrontSkuEmbedDetails
 
-// Module 15434 (getSocialLayerStorefrontSkuEmbedDetails)
+// Module 15579 (getSocialLayerStorefrontSkuEmbedDetails)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7501 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10837 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7244 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11740 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;

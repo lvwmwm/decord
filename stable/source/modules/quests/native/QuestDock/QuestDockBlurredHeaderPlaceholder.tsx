@@ -1,18 +1,18 @@
-// Module ID: 17521
-// Function ID: 17522
+// Module ID: 17803
+// Function ID: 17804
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 6869, 17427, 21, 5170, 17428, 17522, 1652, 5874, 2]
+// Dependencies: [19, 17, 6954, 17700, 21, 5306, 17701, 17804, 1655, 6010, 2]
 
-// Module 17521 (QuestDockBlurredHeaderPlaceholder)
+// Module 17803 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
-import _modDef1652 from "module_1652" /* 1652 */;
-import FastImageDefault from "FastImage" /* 5874 */;
-import QuestConstants from "QuestConstants" /* 6869 */;
-import _slicedToArray from "_slicedToArray" /* 17522 */;
+import _modDef1655 from "module_1655" /* 1655 */;
+import FastImageDefault from "FastImage" /* 6010 */;
+import QuestConstants from "QuestConstants" /* 6954 */;
+import _slicedToArray from "_slicedToArray" /* 17804 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 17427 */;
+import QuestDockConstants from "QuestDockConstants" /* 17700 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
@@ -53,7 +53,7 @@ const memoResult = react.memo(function QuestDockBlurredHeaderPlaceholder(arg0) {
   let tmp9;
   ({ opacityAnimatedStyle, placeholder } = arg0);
   ({ layoutAnimation, layoutAnimatedStyle } = arg0);
-  const context = react.useContext(placeholder(17428).QuestDockGestureContext);
+  const context = react.useContext(placeholder(17701).QuestDockGestureContext);
   const items = [placeholder];
   ({ questDockWrapperSpecs, activeQuestDockMode } = context);
   const memo = react.useMemo(() => {
@@ -63,7 +63,7 @@ const memoResult = react.memo(function QuestDockBlurredHeaderPlaceholder(arg0) {
     return obj;
   }, items);
   const tmp4 = closure_10();
-  let obj = placeholder(1652);
+  let obj = placeholder(1655);
   const items1 = [closure_11, activeQuestDockMode, QuestDockMode, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED, questDockWrapperSpecs];
   let c0;
   let c1;
@@ -88,12 +88,12 @@ const memoResult = react.memo(function QuestDockBlurredHeaderPlaceholder(arg0) {
   const animatedStyle = obj.useAnimatedStyle(QuestDockBlurredHeaderPlaceholderTsx1);
   const obj3 = { style: items3, layout: layoutAnimation, children: closure_7(FastImageDefault, obj4) };
   items3 = [tmp4.imageContainer, layoutAnimatedStyle, animatedStyle, opacityAnimatedStyle];
-  const View = _modDef1652.View;
+  const View = _modDef1655.View;
   obj4 = { source: memo, style: StyleSheet.absoluteFill };
   items4 = [closure_7(View, obj3), ];
   const obj5 = { style: items5 };
   items5 = [tmp4.overlay, opacityAnimatedStyle];
-  items4[1] = closure_7(_modDef1652.View, obj5);
+  items4[1] = closure_7(_modDef1655.View, obj5);
   return closure_9(closure_8, obj2);
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBlurredHeaderPlaceholder.tsx");

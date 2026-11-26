@@ -1,17 +1,17 @@
-// Module ID: 12820
-// Function ID: 12821
+// Module ID: 13798
+// Function ID: 13799
 // Name: ConjureChatActionCreators
 // Dependencies: [572, 2]
 // Exports: setComposerDraft
 
-// Module 12820 (ConjureChatActionCreators)
+// Module 13798 (ConjureChatActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureChatActionCreators.tsx");
 
-export function setComposerDraft(CONJURE_HOME_DRAFT_KEY, message) {
+export function setComposerDraft(CONJURE_HOME_DRAFT_KEY, draft) {
   const obj = DispatcherDefault;
-  const obj2 = { type: "CONJURE_COMPOSER_DRAFT_SET", projectId: CONJURE_HOME_DRAFT_KEY, draft: message };
+  const obj2 = { type: "CONJURE_COMPOSER_DRAFT_SET", projectId: CONJURE_HOME_DRAFT_KEY, draft };
   obj.dispatch(obj2);
 }

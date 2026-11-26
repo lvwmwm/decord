@@ -1,26 +1,26 @@
-// Module ID: 20598
-// Function ID: 20599
+// Module ID: 20937
+// Function ID: 20938
 // Name: TTITestAction
-// Dependencies: [5, 19799, 5386, 7020, 502, 5019, 5207, 5041, 1072, 3, 572, 5353, 11260, 19959, 1371, 1376, 1252, 5346, 7745, 13597, 9953, 5917, 6827, 9058, 5918, 12261, 17933, 1197, 2]
+// Dependencies: [5, 20139, 5522, 7661, 502, 5155, 5343, 5177, 1072, 3, 572, 5489, 11109, 20301, 1374, 1379, 1256, 5482, 8660, 14203, 9069, 6053, 6834, 7660, 6054, 13122, 18210, 1197, 2]
 
-// Module 20598 (TTITestAction)
+// Module 20937 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtils from "AnalyticsUtils" /* 1252 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1371 */;
-import react_native from "react-native" /* 1376 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5346 */;
-import react_nativeDefault from "react-native" /* 5353 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6827 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7020 */;
-import ComponentProfiler from "ComponentProfiler" /* 11260 */;
-import NativeAppStartup from "NativeAppStartup" /* 19799 */;
-import react_nativeDefault2 from "react-native" /* 19959 */;
+import AnalyticsUtils from "AnalyticsUtils" /* 1256 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1374 */;
+import react_native from "react-native" /* 1379 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
+import react_nativeDefault from "react-native" /* 5489 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7661 */;
+import ComponentProfiler from "ComponentProfiler" /* 11109 */;
+import NativeAppStartup from "NativeAppStartup" /* 20139 */;
+import react_nativeDefault2 from "react-native" /* 20301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 5386 */;
+import ExperimentStore from "ExperimentStore" /* 5522 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5019 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5207 */;
-import GuildStore from "GuildStore" /* 5041 */;
+import ChannelStore from "ChannelStore" /* 5155 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5343 */;
+import GuildStore from "GuildStore" /* 5177 */;
 import Constants from "Constants" /* 1072 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -300,15 +300,15 @@ obj = function _navigateToDMs() {
   });
   return obj(...arguments);
 };
-function getErrorDetails(headers) {
-  if (null != headers) {
-    if (typeof headers === "object") {
+function getErrorDetails(exports) {
+  if (null != exports) {
+    if (typeof exports === "object") {
       const _Set = Set;
       const self = this;
       const self2 = this;
-      let prototypeOf = headers;
+      let prototypeOf = exports;
       set = new Set();
-      if (null != headers) {
+      if (null != exports) {
         const _Object = Object;
         const ownPropertyNames = Object.getOwnPropertyNames(prototypeOf);
         const tmp3 = ownPropertyNames[Symbol.iterator]();
@@ -323,13 +323,13 @@ function getErrorDetails(headers) {
       }
       obj = {};
       for (const item10021 of tmp13) {
-        obj[item10021] = headers[item10021];
+        obj[item10021] = exports[item10021];
         continue;
       }
       return obj;
     }
   }
-  return headers;
+  return exports;
 }
 function setupTTITest() {
   return obj(...arguments);
@@ -433,7 +433,7 @@ obj = function _setupTTITest() {
               error2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "Path", done: true };
             }
             break;
           }
@@ -1034,13 +1034,13 @@ obj = function _apiLogin() {
             closure_0 = iter;
             obj = password(closure_2_2[10]);
             closure_1 = iter;
-            const f143729 = () => {
+            const f146889 = () => {
               const error = new Error("Unable to login " + closure_0 + ". Login failed with action '" + obj + "'");
               closure_2_1(error);
             };
             function handler(arg0) {
               obj.unsubscribe(closure_1, handler);
-              return f143729(arg0);
+              return f146889(arg0);
             }
             const subscription = obj.subscribe(iter, handler);
           }
@@ -1072,7 +1072,7 @@ function subscribeOnce(subscribe, arg1, arg2) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f143729(arg0);
+    return f146889(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }

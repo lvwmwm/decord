@@ -1,25 +1,25 @@
-// Module ID: 17619
-// Function ID: 17620
+// Module ID: 17896
+// Function ID: 17897
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [32, 19, 17, 17620, 1072, 5195, 21, 1652, 1187, 5170, 575, 5422, 5398, 16808, 6872, 1624, 5200, 5402, 5405, 12, 17621, 10169, 5783, 10780, 5408, 1113, 17366, 5231, 16831, 17624, 2]
+// Dependencies: [32, 19, 17, 17897, 1072, 5331, 21, 1655, 1187, 5306, 575, 5558, 5534, 17087, 6957, 1627, 5336, 5538, 5541, 12, 17898, 11214, 5919, 11689, 5544, 1113, 17640, 5367, 17110, 17901, 2]
 // Exports: default
 
-// Module 17619 (SettingsAppearanceThemeCarousel)
+// Module 17896 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5398 */;
-import timing_timing from "timing/timing" /* 5402 */;
-import HapticUtils from "HapticUtils" /* 5408 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5534 */;
+import timing_timing from "timing/timing" /* 5538 */;
+import HapticUtils from "HapticUtils" /* 5544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17620 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17897 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import module_1655 from "module_1655" /* 1655 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
 let constants, set, set2;
@@ -42,12 +42,12 @@ let obj9;
 let size;
 let tmp2;
 let unpackModuleId;
-const timingPresets = tmp2(5405);
+const timingPresets = tmp2(5541);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 let ThemeTypes = Constants.ThemeTypes;
 ({ HexagonCampaignPerk: c9, HexagonCampaignPerkAvailability: c10 } = HexagonCampaignConstants);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
-let closure_14 = module_1652.createAnimatedComponent(native.Icon);
+let closure_14 = module_1655.createAnimatedComponent(native.Icon);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, textCentered: { textAlign: "center" }, hintContainer: { alignSelf: "stretch" }, hintOverlay: { position: "absolute", top: 0, left: 0, right: 0 }, hidden: { opacity: 0 }, labelGroup: obj3, swatchesGroup: obj4, badgeSlot: obj5, titleContainer: obj6, floatingNuxContainer: obj7, floatingNux: obj8, arrowLeft: obj9, uppercase: { textTransform: "uppercase" }, selectionBorder: size, a11yThemeList: { flexDirection: "row" }, a11yThemeListScroll: { flexGrow: 0 } };
 obj2 = { gap: nativeDefault.space.PX_24, alignItems: "center" };

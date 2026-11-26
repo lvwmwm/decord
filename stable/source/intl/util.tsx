@@ -85,9 +85,9 @@ export function getNormalizedLocale(Language, arg1) {
     }
   }
 }
-export function parseRuntimeIcuAsIntlMessage(acknowledgedBadgeLabel, currentLocale) {
+export function parseRuntimeIcuAsIntlMessage(header, currentLocale) {
   const obj = _Parser;
-  const parsed = obj.parse(acknowledgedBadgeLabel, { ignoreTag: true });
+  const parsed = obj.parse(header, { ignoreTag: true });
   const internalIntlMessage = new _mod1152.InternalIntlMessage(parsed, currentLocale);
   return internalIntlMessage;
 }

@@ -1,24 +1,24 @@
-// Module ID: 12444
-// Function ID: 12445
+// Module ID: 13332
+// Function ID: 13333
 // Name: ConjureShareSheet
-// Dependencies: [5, 32, 19, 17, 6932, 21, 5170, 575, 504, 12445, 12446, 11028, 1113, 4026, 6933, 5406, 12448, 2118, 12448, 7459, 7415, 7159, 7071, 6191, 5783, 5790, 12449, 12334, 12452, 7451, 5868, 7079, 5883, 2]
+// Dependencies: [5, 32, 19, 17, 7017, 21, 5306, 575, 504, 13333, 13334, 7329, 1113, 4131, 7018, 5542, 13336, 2121, 13336, 7951, 7913, 7746, 7443, 6327, 5919, 5926, 13337, 13206, 13340, 7943, 6004, 7455, 6019, 2]
 // Exports: default
 
-// Module 12444 (ConjureShareSheet)
+// Module 13332 (ConjureShareSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 2118 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5406 */;
-import ToastUtils from "ToastUtils" /* 5868 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6932 */;
-import ClipboardUtils from "ClipboardUtils" /* 7451 */;
-import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 12448 */;
-import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 12452 */;
+import asyncRequire from "asyncRequire" /* 2121 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import ToastUtils from "ToastUtils" /* 6004 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
+import ClipboardUtils from "ClipboardUtils" /* 7943 */;
+import ConjureSharingModeSheet from "ConjureSharingModeSheet" /* 13336 */;
+import buildConjureProjectLinkDefault from "buildConjureProjectLink" /* 13340 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -288,7 +288,7 @@ export default function ConjureShareSheet(projectId) {
         return ref.current(AUTO_DISMISS);
       }
     };
-    const tmp2 = asyncRequire(12448, dependencyMap.paths);
+    const tmp2 = asyncRequire(13336, dependencyMap.paths);
     openLazy(tmp2, ConjureSharingModeSheet.CONJURE_SHARING_MODE_SHEET_KEY, obj, "stack");
   }, items4);
   let obj3 = { header: closure_9(BottomSheetTitleHeader, obj4), children: tmp23Result2 };

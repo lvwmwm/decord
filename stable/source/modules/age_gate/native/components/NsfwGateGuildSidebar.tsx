@@ -1,22 +1,22 @@
-// Module ID: 18725
-// Function ID: 18726
+// Module ID: 19062
+// Function ID: 19063
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 5082, 5041, 1385, 7481, 1072, 21, 5170, 575, 504, 1252, 7482, 18563, 1187, 6810, 1113, 2185, 2]
+// Dependencies: [19, 17, 5218, 5177, 1388, 10807, 1072, 21, 5306, 575, 504, 1256, 10808, 18857, 1187, 6816, 1113, 2188, 2]
 // Exports: default
 
-// Module 18725 (NsfwGateGuildSidebar)
+// Module 19062 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 7481 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7482 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Constants2 from "Constants" /* 10807 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10808 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5082 */;
-import GuildStore from "GuildStore" /* 5041 */;
-import UserStore from "UserStore" /* 1385 */;
+import GuildMemberStore from "GuildMemberStore" /* 5218 */;
+import GuildStore from "GuildStore" /* 5177 */;
+import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5170 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let c10;

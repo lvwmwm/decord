@@ -1,11 +1,11 @@
-// Module ID: 11990
-// Function ID: 11991
+// Module ID: 12851
+// Function ID: 12852
 // Name: doesOrientationMatchLockState
-// Dependencies: [2143, 2]
+// Dependencies: [2146, 2]
 // Exports: default
 
-// Module 11990 (doesOrientationMatchLockState)
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
+// Module 12851 (doesOrientationMatchLockState)
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2146 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/native/doesOrientationMatchLockState.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 18790
-// Function ID: 18791
+// Module ID: 19126
+// Function ID: 19127
 // Name: GuildsBarFooterWrapper
-// Dependencies: [18727, 21, 5170, 575, 5756, 18452, 7056, 2]
+// Dependencies: [19064, 21, 5306, 575, 5892, 18746, 7722, 2]
 // Exports: default
 
-// Module 18790 (GuildsBarFooterWrapper)
+// Module 19126 (GuildsBarFooterWrapper)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5756 */;
-import NativeViewDefault from "NativeView" /* 7056 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18452 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18727 */;
-import createStyles from "createStyles" /* 5170 */;
+import useToken from "useToken" /* 5892 */;
+import NativeViewDefault from "NativeView" /* 7722 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18746 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19064 */;
+import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,11 +1,12 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 13142
+// Function ID: 13143
 // Name: ConjureInstallTarget
-// Dependencies: [5, 11028, 2]
+// Dependencies: [5, 7018, 7329, 2]
 // Exports: conjureInstallGuildId, repairConjureGuildHints
 
-// Module 12283 (ConjureInstallTarget)
-import ConjureActionCreators from "ConjureActionCreators" /* 11028 */;
+// Module 13142 (ConjureInstallTarget)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -67,25 +68,34 @@ let obj = function _repairConjureGuildHints() {
   });
   return obj(...arguments);
 };
-const result = size.fileFinishedImporting("modules/conjure/publish/ConjureInstallTarget.tsx");
+let result = size.fileFinishedImporting("modules/conjure/publish/ConjureInstallTarget.tsx");
 
 export function conjureInstallGuildId(project, integrationStatus, guildId) {
-  let prop;
-  if (integrationStatus != null) {
-    prop = integrationStatus.integration_installed;
+  let guild_id1;
+  if (project != null) {
+    guild_id1 = project.guild_id;
   }
-  let guild_id = guildId;
-  if (true === prop) {
-    let guild_id1;
-    if (project != null) {
-      guild_id1 = project.guild_id;
+  if (null == guild_id1) {
+    return guildId;
+  } else {
+    let guild_id;
+    let hasItem = guildId !== project.guild_id;
+    if (hasItem) {
+      obj = ConjureProjectTypes;
+      const result = obj.conjureProjectServerIds(project);
+      hasItem = result.includes(guildId);
     }
-    guild_id = guildId;
-    if (null != guild_id1) {
+    let prop;
+    if (integrationStatus != null) {
+      prop = integrationStatus.integration_installed;
+    }
+    if (true === prop) {
       guild_id = project.guild_id;
+    } else {
+      guild_id = guildId;
     }
+    return guild_id;
   }
-  return guild_id;
 }
 export function repairConjureGuildHints() {
   return obj(...arguments);

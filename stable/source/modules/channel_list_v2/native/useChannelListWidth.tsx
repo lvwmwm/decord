@@ -1,15 +1,15 @@
-// Module ID: 18449
-// Function ID: 18450
+// Module ID: 18743
+// Function ID: 18744
 // Name: useChannelListWidth
-// Dependencies: [11734, 5349, 5756, 575, 1092, 2]
+// Dependencies: [12425, 5485, 5892, 575, 1092, 2]
 // Exports: default
 
-// Module 18449 (useChannelListWidth)
+// Module 18743 (useChannelListWidth)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useChatLayoutDefault from "useChatLayout" /* 5349 */;
-import useToken from "useToken" /* 5756 */;
-import useDrawerWidth from "useDrawerWidth" /* 11734 */;
+import useChatLayoutDefault from "useChatLayout" /* 5485 */;
+import useToken from "useToken" /* 5892 */;
+import useDrawerWidth from "useDrawerWidth" /* 12425 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/useChannelListWidth.tsx");

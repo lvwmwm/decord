@@ -1,12 +1,12 @@
-// Module ID: 15057
-// Function ID: 15058
+// Module ID: 15224
+// Function ID: 15225
 // Name: EmbedIFrameConfig
-// Dependencies: [1072, 1378, 2]
+// Dependencies: [1072, 1381, 2]
 // Exports: formatProviderSrc
 
-// Module 15057 (EmbedIFrameConfig)
+// Module 15224 (EmbedIFrameConfig)
 import Constants from "Constants" /* 1072 */;
-import URLUtilsDefault from "URLUtils" /* 1378 */;
+import URLUtilsDefault from "URLUtils" /* 1381 */;
 import size from "module_2" /* 2 */;
 
 function dynamicParams(autoMute) {

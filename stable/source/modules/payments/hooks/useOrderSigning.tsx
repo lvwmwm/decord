@@ -1,13 +1,13 @@
-// Module ID: 9681
-// Function ID: 9682
+// Module ID: 10440
+// Function ID: 10441
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5904, 4990, 4983, 7515, 9682, 1113, 9684, 2]
+// Dependencies: [5, 32, 19, 6040, 5126, 5118, 7258, 10441, 1113, 10443, 2]
 // Exports: useOrderSigning
 
-// Module 9681 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4983 */;
-import BillingErrorDefault from "BillingError" /* 4990 */;
-import PaymentConstants from "PaymentConstants" /* 5904 */;
+// Module 10440 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 5118 */;
+import BillingErrorDefault from "BillingError" /* 5126 */;
+import PaymentConstants from "PaymentConstants" /* 6040 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,13 +49,13 @@ export function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4990)(error);
+      tmp3 = new tmp(5126)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4983).captureBillingException;
+      const captureBillingException = tmp5(5118).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4990)(arg2);
+      tmp3 = new tmp(5126)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -124,7 +124,7 @@ export function useOrderSigning(order) {
                 orderSigningError = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "Path", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

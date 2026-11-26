@@ -1,13 +1,13 @@
-// Module ID: 15280
-// Function ID: 15281
+// Module ID: 15844
+// Function ID: 15845
 // Name: useIsGameFriends
-// Dependencies: [32, 7909, 1072, 504, 6854, 2]
+// Dependencies: [32, 8765, 1072, 504, 6940, 2]
 // Exports: useIsGameFriends
 
-// Module 15280 (useIsGameFriends)
+// Module 15844 (useIsGameFriends)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7909 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 8765 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

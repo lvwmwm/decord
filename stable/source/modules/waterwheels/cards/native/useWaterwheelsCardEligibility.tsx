@@ -1,26 +1,41 @@
-// Module ID: 18946
-// Function ID: 18947
+// Module ID: 19010
+// Function ID: 19011
 // Name: useWaterwheelsCardEligibility
-// Dependencies: [19, 14239, 504, 18947, 2]
+// Dependencies: [19, 7085, 14827, 504, 19011, 2]
 // Exports: default
 
-// Module 18946 (useWaterwheelsCardEligibility)
-import WaterwheelsCard from "WaterwheelsCard" /* 18947 */;
+// Module 19010 (useWaterwheelsCardEligibility)
+import WaterwheelsCard from "WaterwheelsCard" /* 19011 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14239 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14827 */;
 import size from "module_2" /* 2 */;
+
+let accounts;
 
 const result = size.fileFinishedImporting("modules/waterwheels/cards/native/useWaterwheelsCardEligibility.tsx");
 
 export default function useWaterwheelsCardEligibility() {
   let authorizationStatus;
+  let memo;
   let stateFromStores;
-  let obj = stateFromStores(504);
+  let stateFromStores1;
+  let obj = stateFromStores(stateFromStores1[3]);
   const items = [PushNotificationPermissionStore];
   stateFromStores = obj.useStateFromStores(items, () => authorizationStatus.authorizationStatus);
-  const items1 = [stateFromStores];
-  return react.useCallback((clientEligibility) => {
+  const items1 = [ConnectedAccountsStore];
+  const obj2 = stateFromStores(stateFromStores1[3]);
+  stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    accounts = accounts.getAccounts();
+    const found = accounts.filter((revoked) => !revoked.revoked);
+    const mapped = found.map((type) => type.type);
+    return stringify(mapped.sort());
+  });
+  const items2 = [stateFromStores1];
+  memo = memo.useMemo(() => JSON.parse(stateFromStores1), items2);
+  const items3 = [stateFromStores, memo];
+  return memo.useCallback((actions) => {
     const obj = WaterwheelsCard;
-    return obj.getWaterwheelsCardEligible(clientEligibility, stateFromStores);
-  }, items1);
+    return obj.getWaterwheelsCardEligible(actions, stateFromStores, memo);
+  }, items3);
 };

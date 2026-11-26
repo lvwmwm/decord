@@ -1,17 +1,17 @@
-// Module ID: 10821
-// Function ID: 10822
+// Module ID: 10018
+// Function ID: 10019
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 9598, 7503, 1072, 1089, 572, 7501, 9678, 1282, 2150, 559, 2]
+// Dependencies: [5, 9414, 7246, 1072, 1089, 572, 7244, 9931, 1285, 2153, 559, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 10821 (SocialLayerStorefrontActionCreators)
+// Module 10018 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9598 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7503 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9414 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7246 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -181,7 +181,7 @@ let obj = function _fetchSocialLayerStorefront2() {
       if (closure_2 === undefined) {
         obj6 = {};
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -284,7 +284,7 @@ obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
       if (closure_2 === undefined) {
         obj7 = {};
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -728,7 +728,7 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           if (storefronts != null) {
             mapped = storefronts.map((guildId) => {
               let excluded_platforms;
-              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking, allowOrbsSpending: true === guildId.allow_orbs_spending };
+              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking };
               excluded_platforms = guildId.excluded_platforms;
               if (excluded_platforms == null) {
                 excluded_platforms = [];

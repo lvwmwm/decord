@@ -1,11 +1,11 @@
-// Module ID: 19410
-// Function ID: 19411
+// Module ID: 19788
+// Function ID: 19789
 // Name: getPIPBottomOffsetForPIPMode
-// Dependencies: [11396, 2]
+// Dependencies: [11986, 2]
 // Exports: default
 
-// Module 19410 (getPIPBottomOffsetForPIPMode)
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11396 */;
+// Module 19788 (getPIPBottomOffsetForPIPMode)
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

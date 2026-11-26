@@ -1,22 +1,22 @@
-// Module ID: 18542
-// Function ID: 18543
+// Module ID: 18836
+// Function ID: 18837
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 5022, 5032, 21, 5170, 575, 1499, 504, 5044, 10982, 9935, 1113, 6122, 1187, 6191, 7181, 7159, 7071, 5894, 10294, 10296, 2]
+// Dependencies: [32, 19, 17, 5158, 5168, 21, 5306, 575, 1502, 504, 5180, 10944, 9051, 1113, 6258, 1187, 6327, 7619, 7746, 7443, 6030, 10905, 10907, 2]
 // Exports: default
 
-// Module 18542 (FavoritesGuildCategorySettingsModal)
+// Module 18836 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import FavoritesConstants from "FavoritesConstants" /* 5032 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6122 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10982 */;
+import FavoritesConstants from "FavoritesConstants" /* 5168 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 5022 */;
+import FavoriteStore from "FavoriteStore" /* 5158 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5170 */;
+import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -167,7 +167,7 @@ export default function FavoritesGuildCategorySettingsModal(categoryId) {
   let intl;
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(10294)().onGoBack;
+  onGoBack = onGoBack(10905)().onGoBack;
   let obj = {
     screenKey: "favoritesGuildCategorySettings",
     title: intl.string(categoryId(1113).t["/uELTj"]),
@@ -176,7 +176,7 @@ export default function FavoritesGuildCategorySettingsModal(categoryId) {
       return metroImportAll(FavoritesGuildCategorySettings, obj);
     }
   };
-  const tmp = onGoBack(10296);
+  const tmp = onGoBack(10907);
   intl = categoryId(1113).intl;
   return closure_8(tmp, obj);
 };

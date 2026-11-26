@@ -1,17 +1,19 @@
-// Module ID: 17858
-// Function ID: 17859
+// Module ID: 18137
+// Function ID: 18138
 // Name: FriendAnniversaryNotificationSetting
-// Dependencies: [8536, 11717, 1113, 4995, 17859, 2]
+// Dependencies: [9202, 12408, 1113, 5131, 18138, 18115, 2]
 
-// Module 17858 (FriendAnniversaryNotificationSetting)
+// Module 18137 (FriendAnniversaryNotificationSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4995 */;
-import SettingsConstants from "SettingsConstants" /* 8536 */;
-import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 17859 */;
-import SettingBuilders from "SettingBuilders" /* 11717 */;
+import UserSettings from "UserSettings" /* 5131 */;
+import SettingsConstants from "SettingsConstants" /* 9202 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
+import FriendAnniversaryNotificationUtils from "FriendAnniversaryNotificationUtils" /* 18138 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
+let SettingBuilders = SettingBuilders_mod;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -26,6 +28,12 @@ const obj = {
   onValueChange: FriendAnniversaryNotificationUtils.onFriendAnniversaryNotificationSettingsChanged
 };
 const toggle = SettingBuilders.createToggle(obj);
+SettingBuilders = SettingBuilders_mod;
+const createToggle = SettingBuilders.createToggle;
+const obj2 = { parent: MobileNotifSettings.MobileNotifSettings.NOTIF_CATEGORY_FRIENDS_ACTIVITY };
+const merged = Object.assign(toggle);
+const toggle1 = createToggle(obj2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/FriendAnniversaryNotificationSetting.tsx");
 
 export default toggle;
+export const RedesignFriendAnniversaryNotificationSetting = toggle1;

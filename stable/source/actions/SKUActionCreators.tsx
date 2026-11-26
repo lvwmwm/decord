@@ -1,20 +1,20 @@
-// Module ID: 10834
-// Function ID: 10835
+// Module ID: 9930
+// Function ID: 9931
 // Name: SKUActionCreators
-// Dependencies: [5, 9598, 6984, 1072, 572, 6620, 1282, 4991, 9678, 7871, 6611, 4990, 4983, 6621, 6640, 1380, 2]
+// Dependencies: [5, 9414, 7070, 1072, 572, 6756, 1285, 5127, 9931, 8528, 6747, 5126, 5118, 6757, 6775, 1255, 2]
 // Exports: clearPurchaseError, fetchPublicSKU, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10834 (SKUActionCreators)
+// Module 9930 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import BillingUtils from "BillingUtils" /* 4983 */;
-import StoreUtils from "StoreUtils" /* 6620 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6640 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7871 */;
-import TestModeUtils from "TestModeUtils" /* 9678 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import BillingUtils from "BillingUtils" /* 5118 */;
+import StoreUtils from "StoreUtils" /* 6756 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6775 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 8528 */;
+import TestModeUtils from "TestModeUtils" /* 9931 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9598 */;
-import SKUStore from "SKUStore" /* 6984 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9414 */;
+import SKUStore from "SKUStore" /* 7070 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -363,7 +363,7 @@ obj = function _fetchTestSKUsForApplication() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -474,7 +474,7 @@ obj = function _previewPurchaseSku() {
             billingError = undefined;
             apply_wallet_balance = 1;
             previous_total = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "Path", done: true };
           }
         } else if (1 === apply_wallet_balance) {
           if (arg0 === 1) {
@@ -849,7 +849,7 @@ obj = function _purchaseSKU() {
                 obj16.dispatch(obj12);
               }
               prop = closure_136_1(closure_136_2[4]);
-              const obj13 = { type: "SKU_PURCHASE_FAIL", applicationId, skuId, error: billingError };
+              const obj13 = { type: "SKU_PURCHASE_FAIL", loadId, applicationId, skuId, error: billingError };
               prop.dispatch(obj13);
               if (billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED) {
                 throw billingError;
@@ -995,11 +995,11 @@ obj = function _purchaseSKU() {
               }
             }
           }
-        } catch (tmp144) {
-          closure_10 = tmp144;
+        } catch (tmp145) {
+          closure_10 = tmp145;
           if (0 === country_code) {
             c12 = 3;
-            throw tmp144;
+            throw tmp145;
           } else {
             c11 = 1;
           }

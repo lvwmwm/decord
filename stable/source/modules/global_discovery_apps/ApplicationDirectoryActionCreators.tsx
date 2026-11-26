@@ -1,26 +1,26 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 13404
+// Function ID: 13405
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 5786, 2186, 1359, 6970, 12634, 12635, 12630, 12636, 12637, 1072, 572, 559, 1282, 12631, 1377, 12638, 12639, 12640, 2]
+// Dependencies: [5, 5922, 2189, 1362, 7056, 13405, 13406, 13401, 13407, 13408, 1072, 572, 559, 1285, 13402, 1380, 13409, 13410, 13411, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 12633 (ApplicationDirectoryActionCreators)
+// Module 13404 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6970 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12630 */;
-import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 12635 */;
-import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 12636 */;
-import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 12637 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12639 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12640 */;
+import HTTPUtils from "HTTPUtils" /* 1285 */;
+import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 7056 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 13401 */;
+import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 13406 */;
+import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 13407 */;
+import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 13408 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 13410 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 13411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5786 */;
-import LocaleStore from "LocaleStore" /* 2186 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1359 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12634 */;
+import DevSettingsStore from "DevSettingsStore" /* 5922 */;
+import LocaleStore from "LocaleStore" /* 2189 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 13405 */;
 import size from "module_2" /* 2 */;
 
 const MyGuildApplicationsStore = MyGuildApplicationsStore2;
@@ -214,7 +214,7 @@ obj = function _getApplication() {
       if (closure_1 === undefined) {
         obj5 = {};
       }
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -361,7 +361,7 @@ obj = function _getSimilarApplications() {
       }
       await "HermesInternal";
       ({ applicationId: c0, guildId: c1, options: c2 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -468,7 +468,7 @@ obj = function _search() {
       }
       await "HermesInternal";
       ({ query: c0, guildId: c1, options: c2, onSuccessCallback: c3 } = closure_0);
-      return "flexDirection";
+      return "Path";
     })();
     iter.next();
     return iter;
@@ -557,7 +557,7 @@ obj = function _fetchCollections() {
     }
     APPLICATION_DIRECTORY = obj5.surface ?? ApplicationCollectionSurface.ApplicationCollectionSurface.APPLICATION_DIRECTORY;
     ACTIVE = obj5.activeState ?? ApplicationCollectionActiveState.ApplicationCollectionActiveState.ACTIVE;
-    return "flexDirection";
+    return "Path";
   });
   return obj(...arguments);
 };

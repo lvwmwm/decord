@@ -1,19 +1,19 @@
-// Module ID: 11619
-// Function ID: 11620
+// Module ID: 10080
+// Function ID: 10081
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7881, 1385, 504, 7890, 2]
+// Dependencies: [7352, 1388, 504, 7361, 10081, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 11619 (useTieredTenureBadgeForUser)
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7890 */;
-import UserProfileStore from "UserProfileStore" /* 7881 */;
-import UserStore from "UserStore" /* 1385 */;
+// Module 10080 (useTieredTenureBadgeForUser)
+import PremiumPerkGates from "PremiumPerkGates" /* 10081 */;
+import UserProfileStore from "UserProfileStore" /* 7352 */;
+import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");
+const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");
 
 export function useTieredTenureBadgeForUser(id) {
   _require = id;
@@ -50,14 +50,12 @@ export function useTieredTenureBadgeForUser(id) {
           }
           let earnedTenureBadge = null;
           if (closure_0 === id) {
-            let result;
-            if (currentUser != null) {
-              result = currentUser.hasPaidTier2Subscription();
-            }
+            let obj = PremiumPerkGates;
             earnedTenureBadge = null;
-            if (result) {
-              const obj2 = TieredTenureBadgeUtils;
-              earnedTenureBadge = obj2.getEarnedTenureBadge(premiumSince);
+            const tmp10 = require;
+            if (obj.canUseTenureBadge(currentUser)) {
+              const tmp10Result = tmp10(7361);
+              earnedTenureBadge = tmp10Result.getEarnedTenureBadge(premiumSince);
             }
           }
           return earnedTenureBadge;
